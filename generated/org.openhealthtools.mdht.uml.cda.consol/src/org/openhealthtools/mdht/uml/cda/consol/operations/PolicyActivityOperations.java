@@ -161,6 +161,7 @@ public class PolicyActivityOperations extends ClinicalStatementOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
+	 * self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.4.61')
 	 * @param policyActivity The receiving '<em><b>Policy Activity</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -217,6 +218,7 @@ public class PolicyActivityOperations extends ClinicalStatementOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
+	 * self.classCode=vocab::x_ActClassDocumentEntryAct::ACT
 	 * @param policyActivity The receiving '<em><b>Policy Activity</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -253,6 +255,9 @@ public class PolicyActivityOperations extends ClinicalStatementOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
+	 * (self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and 
+	 * let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in 
+	 * value.code = '12' or value.code = '13' or value.code = '14' or value.code = '15' or value.code = '16' or value.code = '41' or value.code = '42' or value.code = '43' or value.code = '47' or value.code = 'AP' or value.code = 'C1' or value.code = 'CO' or value.code = 'CP' or value.code = 'D' or value.code = 'DB' or value.code = 'EP' or value.code = 'FF' or value.code = 'GP' or value.code = 'HM' or value.code = 'HN' or value.code = 'HS' or value.code = 'IN' or value.code = 'IP' or value.code = 'LC' or value.code = 'LD' or value.code = 'LI' or value.code = 'LT' or value.code = 'MA' or value.code = 'MB' or value.code = 'MC' or value.code = 'MH' or value.code = 'MI' or value.code = 'MP' or value.code = 'OT' or value.code = 'PE' or value.code = 'PL' or value.code = 'PP' or value.code = 'PR' or value.code = 'PS' or value.code = 'QM' or value.code = 'RP' or value.code = 'SP' or value.code = 'TF' or value.code = 'WC' or value.code = 'WU')
 	 * @param policyActivity The receiving '<em><b>Policy Activity</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -323,7 +328,7 @@ public class PolicyActivityOperations extends ClinicalStatementOperations {
 	 */
 	protected static final String VALIDATE_POLICY_ACTIVITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "
 			+ "let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "
-			+ "value.codeSystem = '2.16.840.1.113883.6.1' and (value.code = '12' or value.code = '13' or value.code = '14' or value.code = '15' or value.code = '16' or value.code = '41' or value.code = '42' or value.code = '43' or value.code = '47' or value.code = 'AP' or value.code = 'C1' or value.code = 'CO' or value.code = 'CP' or value.code = 'D' or value.code = 'DB' or value.code = 'EP' or value.code = 'FF' or value.code = 'GP' or value.code = 'HM' or value.code = 'HN' or value.code = 'HS' or value.code = 'IN' or value.code = 'IP' or value.code = 'LC' or value.code = 'LD' or value.code = 'LI' or value.code = 'LT' or value.code = 'MA' or value.code = 'MB' or value.code = 'MC' or value.code = 'MH' or value.code = 'MI' or value.code = 'MP' or value.code = 'OT' or value.code = 'PE' or value.code = 'PL' or value.code = 'PP' or value.code = 'PR' or value.code = 'PS' or value.code = 'QM' or value.code = 'RP' or value.code = 'SP' or value.code = 'TF' or value.code = 'WC' or value.code = 'WU'))";
+			+ "value.code = '12' or value.code = '13' or value.code = '14' or value.code = '15' or value.code = '16' or value.code = '41' or value.code = '42' or value.code = '43' or value.code = '47' or value.code = 'AP' or value.code = 'C1' or value.code = 'CO' or value.code = 'CP' or value.code = 'D' or value.code = 'DB' or value.code = 'EP' or value.code = 'FF' or value.code = 'GP' or value.code = 'HM' or value.code = 'HN' or value.code = 'HS' or value.code = 'IN' or value.code = 'IP' or value.code = 'LC' or value.code = 'LD' or value.code = 'LI' or value.code = 'LT' or value.code = 'MA' or value.code = 'MB' or value.code = 'MC' or value.code = 'MH' or value.code = 'MI' or value.code = 'MP' or value.code = 'OT' or value.code = 'PE' or value.code = 'PL' or value.code = 'PP' or value.code = 'PR' or value.code = 'PS' or value.code = 'QM' or value.code = 'RP' or value.code = 'SP' or value.code = 'TF' or value.code = 'WC' or value.code = 'WU')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validatePolicyActivityCode(PolicyActivity, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Policy Activity Code</em>}' invariant operation.
@@ -339,6 +344,7 @@ public class PolicyActivityOperations extends ClinicalStatementOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
+	 * (self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined())
 	 * @param policyActivity The receiving '<em><b>Policy Activity</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -407,6 +413,7 @@ public class PolicyActivityOperations extends ClinicalStatementOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
+	 * (self.id->isEmpty() or self.id->exists(element | element.isNullFlavorUndefined())) implies (not self.id->isEmpty())
 	 * @param policyActivity The receiving '<em><b>Policy Activity</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -462,6 +469,7 @@ public class PolicyActivityOperations extends ClinicalStatementOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
+	 * self.moodCode=vocab::x_DocumentActMood::EVN
 	 * @param policyActivity The receiving '<em><b>Policy Activity</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -520,6 +528,9 @@ public class PolicyActivityOperations extends ClinicalStatementOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
+	 * (self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and 
+	 * let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in 
+	 * value.code = 'completed')
 	 * @param policyActivity The receiving '<em><b>Policy Activity</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -578,6 +589,7 @@ public class PolicyActivityOperations extends ClinicalStatementOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
+	 * self.performer->select(performer : cda::Performer2 | not performer.oclIsUndefined() and performer.oclIsKindOf(cda::Performer2))->select(assignedEntity->excluding(null).code->excluding(null).code->excludes('GUAR'))->size() = 1
 	 * @param policyActivity The receiving '<em><b>Policy Activity</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -635,6 +647,7 @@ public class PolicyActivityOperations extends ClinicalStatementOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
+	 * self.performer->select(performer : cda::Performer2 | not performer.oclIsUndefined() and performer.oclIsKindOf(cda::Performer2))->select(assignedEntity->asSequence()->excluding(null).code->excluding(null).code = Sequence{'GUAR'})->size() = 1
 	 * @param policyActivity The receiving '<em><b>Policy Activity</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -693,6 +706,7 @@ public class PolicyActivityOperations extends ClinicalStatementOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
+	 * self.participant->select(participant : cda::Participant2 | not participant.oclIsUndefined() and participant.oclIsKindOf(cda::Participant2))->select(typeCode=vocab::ParticipationType::COV)->size() = 1
 	 * @param policyActivity The receiving '<em><b>Policy Activity</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -751,6 +765,7 @@ public class PolicyActivityOperations extends ClinicalStatementOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
+	 * self.participant->select(participant : cda::Participant2 | not participant.oclIsUndefined() and participant.oclIsKindOf(cda::Participant2))->select(typeCode=vocab::ParticipationType::HLD)->size() = 1
 	 * @param policyActivity The receiving '<em><b>Policy Activity</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -808,6 +823,7 @@ public class PolicyActivityOperations extends ClinicalStatementOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
+	 * self.entryRelationship->select(entryRelationship : cda::EntryRelationship | not entryRelationship.oclIsUndefined() and entryRelationship.oclIsKindOf(cda::EntryRelationship))->select(typeCode=vocab::x_ActRelationshipEntryRelationship::REFR)->notEmpty()
 	 * @param policyActivity The receiving '<em><b>Policy Activity</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -866,6 +882,7 @@ public class PolicyActivityOperations extends ClinicalStatementOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
+	 * self.performer->excluding(null)->select(assignedEntity->excluding(null).code->excluding(null).code->excludes('GUAR')).assignedEntity->excluding(null).addr->excluding(null)->reject(streetAddressLine->size() >=1 and streetAddressLine->size() <=4)
 	 * @param policyActivity The receiving '<em><b>Policy Activity</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -930,6 +947,7 @@ public class PolicyActivityOperations extends ClinicalStatementOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
+	 * self.performer->excluding(null)->select(assignedEntity->excluding(null).code->excluding(null).code->excludes('GUAR')).assignedEntity->excluding(null).addr->excluding(null)->reject((city->isEmpty() or city->exists(element | element.isNullFlavorUndefined())) implies (city->size() = 1))
 	 * @param policyActivity The receiving '<em><b>Policy Activity</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -994,6 +1012,7 @@ public class PolicyActivityOperations extends ClinicalStatementOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
+	 * self.performer->excluding(null)->select(assignedEntity->excluding(null).code->excluding(null).code->excludes('GUAR')).assignedEntity->excluding(null).addr->excluding(null)->reject((country->isEmpty() or country->exists(element | element.isNullFlavorUndefined())) implies (not country->isEmpty()))
 	 * @param policyActivity The receiving '<em><b>Policy Activity</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -1058,6 +1077,7 @@ public class PolicyActivityOperations extends ClinicalStatementOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
+	 * self.performer->excluding(null)->select(assignedEntity->excluding(null).code->excluding(null).code->excludes('GUAR')).assignedEntity->excluding(null).addr->excluding(null)->reject((postalCode->isEmpty() or postalCode->exists(element | element.isNullFlavorUndefined())) implies (not postalCode->isEmpty()))
 	 * @param policyActivity The receiving '<em><b>Policy Activity</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -1122,6 +1142,7 @@ public class PolicyActivityOperations extends ClinicalStatementOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
+	 * self.performer->excluding(null)->select(assignedEntity->excluding(null).code->excluding(null).code->excludes('GUAR')).assignedEntity->excluding(null).addr->excluding(null)->reject((state->isEmpty() or state->exists(element | element.isNullFlavorUndefined())) implies (not state->isEmpty()))
 	 * @param policyActivity The receiving '<em><b>Policy Activity</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -1186,6 +1207,7 @@ public class PolicyActivityOperations extends ClinicalStatementOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
+	 * self.performer->excluding(null)->select(assignedEntity->excluding(null).code->excluding(null).code->excludes('GUAR')).assignedEntity->excluding(null).addr->excluding(null)->reject((streetAddressLine->isEmpty() or streetAddressLine->exists(element | element.isNullFlavorUndefined())) implies (not streetAddressLine->isEmpty()))
 	 * @param policyActivity The receiving '<em><b>Policy Activity</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -1250,6 +1272,7 @@ public class PolicyActivityOperations extends ClinicalStatementOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
+	 * self.performer->excluding(null)->select(assignedEntity->excluding(null).code->excluding(null).code->excludes('GUAR')).assignedEntity->excluding(null).addr->excluding(null)->reject(not use->isEmpty())
 	 * @param policyActivity The receiving '<em><b>Policy Activity</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -1329,6 +1352,9 @@ public class PolicyActivityOperations extends ClinicalStatementOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
+	 * self.performer->excluding(null)->select(assignedEntity->excluding(null).code->excluding(null).code->excludes('GUAR')).assignedEntity->excluding(null).addr->excluding(null)->reject(use->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(vocab::PostalAddressUse) and 
+	 * let value : vocab::PostalAddressUse = element.oclAsType(vocab::PostalAddressUse) in 
+	 * value = vocab::PostalAddressUse::BAD or value = vocab::PostalAddressUse::DIR or value = vocab::PostalAddressUse::H or value = vocab::PostalAddressUse::HP or value = vocab::PostalAddressUse::HV or value = vocab::PostalAddressUse::PHYS or value = vocab::PostalAddressUse::PST or value = vocab::PostalAddressUse::PUB or value = vocab::PostalAddressUse::TMP or value = vocab::PostalAddressUse::WP))
 	 * @param policyActivity The receiving '<em><b>Policy Activity</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -1402,6 +1428,7 @@ public class PolicyActivityOperations extends ClinicalStatementOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
+	 * self.performer->excluding(null)->select(assignedEntity->excluding(null).code->excluding(null).code->excludes('GUAR')).assignedEntity->excluding(null).representedOrganization->excluding(null)->reject((name->isEmpty() or name->exists(element | element.isNullFlavorUndefined())) implies (not name->isEmpty()))
 	 * @param policyActivity The receiving '<em><b>Policy Activity</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -1467,6 +1494,7 @@ public class PolicyActivityOperations extends ClinicalStatementOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
+	 * self.performer->excluding(null)->select(assignedEntity->excluding(null).code->excluding(null).code->excludes('GUAR')).assignedEntity->excluding(null)->reject((id->isEmpty() or id->exists(element | element.isNullFlavorUndefined())) implies (not id->isEmpty()))
 	 * @param policyActivity The receiving '<em><b>Policy Activity</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -1516,7 +1544,7 @@ public class PolicyActivityOperations extends ClinicalStatementOperations {
 	 */
 	protected static final String VALIDATE_POLICY_ACTIVITY_PAYER_PAYER_ASSIGNED_ENTITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.performer->excluding(null)->select(assignedEntity->excluding(null).code->excluding(null).code->excludes('GUAR')).assignedEntity->excluding(null)->reject((code.oclIsUndefined() or code.isNullFlavorUndefined()) implies (not code.oclIsUndefined() and code.oclIsKindOf(datatypes::CE) and "
 			+ "let value : datatypes::CE = code.oclAsType(datatypes::CE) in "
-			+ "value.codeSystem = '2.16.840.1.113883.5.110' and not value.code.oclIsUndefined()))";
+			+ "value.codeSystem = '2.16.840.1.113883.5.110' and (value.code = 'AFFL' or value.code = 'AGNT' or value.code = 'CIT' or value.code = 'CRINV' or value.code = 'CRSPNSR' or value.code = 'SPNSR' or value.code = 'COVPTY' or value.code = 'EMP' or value.code = 'GUAR' or value.code = 'INVSBJ' or value.code = 'PAYOR' or value.code = 'LIC' or value.code = 'PAT' or value.code = 'PAYEE' or value.code = 'POLHOLD' or value.code = 'QUAL' or value.code = 'STD' or value.code = 'UNDWRT')))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validatePolicyActivityPayerPayerAssignedEntityCode(PolicyActivity, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Policy Activity Payer Payer Assigned Entity Code</em>}' invariant operation.
@@ -1533,6 +1561,9 @@ public class PolicyActivityOperations extends ClinicalStatementOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
+	 * self.performer->excluding(null)->select(assignedEntity->excluding(null).code->excluding(null).code->excludes('GUAR')).assignedEntity->excluding(null)->reject((code.oclIsUndefined() or code.isNullFlavorUndefined()) implies (not code.oclIsUndefined() and code.oclIsKindOf(datatypes::CE) and 
+	 * let value : datatypes::CE = code.oclAsType(datatypes::CE) in 
+	 * value.codeSystem = '2.16.840.1.113883.5.110' and (value.code = 'AFFL' or value.code = 'AGNT' or value.code = 'CIT' or value.code = 'CRINV' or value.code = 'CRSPNSR' or value.code = 'SPNSR' or value.code = 'COVPTY' or value.code = 'EMP' or value.code = 'GUAR' or value.code = 'INVSBJ' or value.code = 'PAYOR' or value.code = 'LIC' or value.code = 'PAT' or value.code = 'PAYEE' or value.code = 'POLHOLD' or value.code = 'QUAL' or value.code = 'STD' or value.code = 'UNDWRT')))
 	 * @param policyActivity The receiving '<em><b>Policy Activity</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -1597,6 +1628,7 @@ public class PolicyActivityOperations extends ClinicalStatementOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
+	 * self.performer->excluding(null)->select(assignedEntity->excluding(null).code->excluding(null).code->excludes('GUAR')).assignedEntity->excluding(null)->reject((code.oclIsUndefined() or code.isNullFlavorUndefined()) implies (not code.oclIsUndefined()))
 	 * @param policyActivity The receiving '<em><b>Policy Activity</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -1660,6 +1692,7 @@ public class PolicyActivityOperations extends ClinicalStatementOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
+	 * self.performer->excluding(null)->select(assignedEntity->excluding(null).code->excluding(null).code->excludes('GUAR')).assignedEntity->excluding(null)->reject((addr->isEmpty() or addr->exists(element | element.isNullFlavorUndefined())) implies (not addr->isEmpty()))
 	 * @param policyActivity The receiving '<em><b>Policy Activity</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -1724,6 +1757,7 @@ public class PolicyActivityOperations extends ClinicalStatementOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
+	 * self.performer->excluding(null)->select(assignedEntity->excluding(null).code->excluding(null).code->excludes('GUAR')).assignedEntity->excluding(null)->reject((telecom->isEmpty() or telecom->exists(element | element.isNullFlavorUndefined())) implies (not telecom->isEmpty()))
 	 * @param policyActivity The receiving '<em><b>Policy Activity</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -1788,6 +1822,7 @@ public class PolicyActivityOperations extends ClinicalStatementOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
+	 * self.performer->excluding(null)->select(assignedEntity->excluding(null).code->excluding(null).code->excludes('GUAR')).assignedEntity->excluding(null)->reject(representedOrganization->one(representedOrganization : cda::Organization | not representedOrganization.oclIsUndefined() and representedOrganization.oclIsKindOf(cda::Organization)))
 	 * @param policyActivity The receiving '<em><b>Policy Activity</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -1853,6 +1888,7 @@ public class PolicyActivityOperations extends ClinicalStatementOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
+	 * self.performer->excluding(null)->select(assignedEntity->excluding(null).code->excluding(null).code->excludes('GUAR'))->reject(templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.4.87'))
 	 * @param policyActivity The receiving '<em><b>Policy Activity</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -1915,6 +1951,7 @@ public class PolicyActivityOperations extends ClinicalStatementOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
+	 * self.performer->excluding(null)->select(assignedEntity->excluding(null).code->excluding(null).code->excludes('GUAR'))->reject(isDefined('typeCode') and typeCode=vocab::ParticipationPhysicalPerformer::PRF)
 	 * @param policyActivity The receiving '<em><b>Policy Activity</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -1978,6 +2015,7 @@ public class PolicyActivityOperations extends ClinicalStatementOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
+	 * self.performer->excluding(null)->select(assignedEntity->excluding(null).code->excluding(null).code->excludes('GUAR'))->reject(assignedEntity->one(assignedEntity : cda::AssignedEntity | not assignedEntity.oclIsUndefined() and assignedEntity.oclIsKindOf(cda::AssignedEntity)))
 	 * @param policyActivity The receiving '<em><b>Policy Activity</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -2042,6 +2080,7 @@ public class PolicyActivityOperations extends ClinicalStatementOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
+	 * self.performer->excluding(null)->select(assignedEntity->asSequence()->excluding(null).code->excluding(null).code = Sequence{'GUAR'}).assignedEntity->excluding(null).addr->excluding(null)->reject(streetAddressLine->size() >=1 and streetAddressLine->size() <=4)
 	 * @param policyActivity The receiving '<em><b>Policy Activity</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -2106,6 +2145,7 @@ public class PolicyActivityOperations extends ClinicalStatementOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
+	 * self.performer->excluding(null)->select(assignedEntity->asSequence()->excluding(null).code->excluding(null).code = Sequence{'GUAR'}).assignedEntity->excluding(null).addr->excluding(null)->reject((city->isEmpty() or city->exists(element | element.isNullFlavorUndefined())) implies (city->size() = 1))
 	 * @param policyActivity The receiving '<em><b>Policy Activity</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -2170,6 +2210,7 @@ public class PolicyActivityOperations extends ClinicalStatementOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
+	 * self.performer->excluding(null)->select(assignedEntity->asSequence()->excluding(null).code->excluding(null).code = Sequence{'GUAR'}).assignedEntity->excluding(null).addr->excluding(null)->reject((country->isEmpty() or country->exists(element | element.isNullFlavorUndefined())) implies (not country->isEmpty()))
 	 * @param policyActivity The receiving '<em><b>Policy Activity</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -2234,6 +2275,7 @@ public class PolicyActivityOperations extends ClinicalStatementOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
+	 * self.performer->excluding(null)->select(assignedEntity->asSequence()->excluding(null).code->excluding(null).code = Sequence{'GUAR'}).assignedEntity->excluding(null).addr->excluding(null)->reject((postalCode->isEmpty() or postalCode->exists(element | element.isNullFlavorUndefined())) implies (not postalCode->isEmpty()))
 	 * @param policyActivity The receiving '<em><b>Policy Activity</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -2298,6 +2340,7 @@ public class PolicyActivityOperations extends ClinicalStatementOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
+	 * self.performer->excluding(null)->select(assignedEntity->asSequence()->excluding(null).code->excluding(null).code = Sequence{'GUAR'}).assignedEntity->excluding(null).addr->excluding(null)->reject((state->isEmpty() or state->exists(element | element.isNullFlavorUndefined())) implies (not state->isEmpty()))
 	 * @param policyActivity The receiving '<em><b>Policy Activity</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -2362,6 +2405,7 @@ public class PolicyActivityOperations extends ClinicalStatementOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
+	 * self.performer->excluding(null)->select(assignedEntity->asSequence()->excluding(null).code->excluding(null).code = Sequence{'GUAR'}).assignedEntity->excluding(null).addr->excluding(null)->reject((streetAddressLine->isEmpty() or streetAddressLine->exists(element | element.isNullFlavorUndefined())) implies (not streetAddressLine->isEmpty()))
 	 * @param policyActivity The receiving '<em><b>Policy Activity</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -2426,6 +2470,7 @@ public class PolicyActivityOperations extends ClinicalStatementOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
+	 * self.performer->excluding(null)->select(assignedEntity->asSequence()->excluding(null).code->excluding(null).code = Sequence{'GUAR'}).assignedEntity->excluding(null).addr->excluding(null)->reject(not use->isEmpty())
 	 * @param policyActivity The receiving '<em><b>Policy Activity</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -2505,6 +2550,9 @@ public class PolicyActivityOperations extends ClinicalStatementOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
+	 * self.performer->excluding(null)->select(assignedEntity->asSequence()->excluding(null).code->excluding(null).code = Sequence{'GUAR'}).assignedEntity->excluding(null).addr->excluding(null)->reject(use->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(vocab::PostalAddressUse) and 
+	 * let value : vocab::PostalAddressUse = element.oclAsType(vocab::PostalAddressUse) in 
+	 * value = vocab::PostalAddressUse::BAD or value = vocab::PostalAddressUse::DIR or value = vocab::PostalAddressUse::H or value = vocab::PostalAddressUse::HP or value = vocab::PostalAddressUse::HV or value = vocab::PostalAddressUse::PHYS or value = vocab::PostalAddressUse::PST or value = vocab::PostalAddressUse::PUB or value = vocab::PostalAddressUse::TMP or value = vocab::PostalAddressUse::WP))
 	 * @param policyActivity The receiving '<em><b>Policy Activity</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -2578,6 +2626,7 @@ public class PolicyActivityOperations extends ClinicalStatementOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
+	 * self.performer->excluding(null)->select(assignedEntity->asSequence()->excluding(null).code->excluding(null).code = Sequence{'GUAR'}).assignedEntity->excluding(null)->reject((performer.assignedEntity.assignedPerson->exists(not oclIsUndefined()) and performer.assignedEntity.assignedPerson.name->size() >0) or (performer.assignedEntity.representedOrganization->exists(not oclIsUndefined()) and performer.assignedEntity.representedOrganization.name->size() >0 ))
 	 * @param policyActivity The receiving '<em><b>Policy Activity</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -2645,6 +2694,9 @@ public class PolicyActivityOperations extends ClinicalStatementOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
+	 * self.performer->excluding(null)->select(assignedEntity->asSequence()->excluding(null).code->excluding(null).code = Sequence{'GUAR'}).assignedEntity->excluding(null)->reject((code.oclIsUndefined() or code.isNullFlavorUndefined()) implies (not code.oclIsUndefined() and code.oclIsKindOf(datatypes::CE) and 
+	 * let value : datatypes::CE = code.oclAsType(datatypes::CE) in 
+	 * value.code = 'GUAR' and value.codeSystem = '2.16.840.1.113883.5.111'))
 	 * @param policyActivity The receiving '<em><b>Policy Activity</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -2709,6 +2761,7 @@ public class PolicyActivityOperations extends ClinicalStatementOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
+	 * self.performer->excluding(null)->select(assignedEntity->asSequence()->excluding(null).code->excluding(null).code = Sequence{'GUAR'}).assignedEntity->excluding(null)->reject((code.oclIsUndefined() or code.isNullFlavorUndefined()) implies (not code.oclIsUndefined()))
 	 * @param policyActivity The receiving '<em><b>Policy Activity</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -2772,6 +2825,7 @@ public class PolicyActivityOperations extends ClinicalStatementOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
+	 * self.performer->excluding(null)->select(assignedEntity->asSequence()->excluding(null).code->excluding(null).code = Sequence{'GUAR'}).assignedEntity->excluding(null)->reject((addr->isEmpty() or addr->exists(element | element.isNullFlavorUndefined())) implies (not addr->isEmpty()))
 	 * @param policyActivity The receiving '<em><b>Policy Activity</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -2836,6 +2890,7 @@ public class PolicyActivityOperations extends ClinicalStatementOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
+	 * self.performer->excluding(null)->select(assignedEntity->asSequence()->excluding(null).code->excluding(null).code = Sequence{'GUAR'}).assignedEntity->excluding(null)->reject((telecom->isEmpty() or telecom->exists(element | element.isNullFlavorUndefined())) implies (not telecom->isEmpty()))
 	 * @param policyActivity The receiving '<em><b>Policy Activity</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -2900,6 +2955,7 @@ public class PolicyActivityOperations extends ClinicalStatementOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
+	 * self.performer->excluding(null)->select(assignedEntity->asSequence()->excluding(null).code->excluding(null).code = Sequence{'GUAR'})->reject(templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.4.88'))
 	 * @param policyActivity The receiving '<em><b>Policy Activity</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -2962,6 +3018,7 @@ public class PolicyActivityOperations extends ClinicalStatementOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
+	 * self.performer->excluding(null)->select(assignedEntity->asSequence()->excluding(null).code->excluding(null).code = Sequence{'GUAR'})->reject((time.oclIsUndefined() or time.isNullFlavorUndefined()) implies (not time.oclIsUndefined()))
 	 * @param policyActivity The receiving '<em><b>Policy Activity</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -3025,6 +3082,7 @@ public class PolicyActivityOperations extends ClinicalStatementOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
+	 * self.performer->excluding(null)->select(assignedEntity->asSequence()->excluding(null).code->excluding(null).code = Sequence{'GUAR'})->reject(isDefined('typeCode') and typeCode=vocab::ParticipationPhysicalPerformer::PRF)
 	 * @param policyActivity The receiving '<em><b>Policy Activity</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -3088,6 +3146,7 @@ public class PolicyActivityOperations extends ClinicalStatementOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
+	 * self.performer->excluding(null)->select(assignedEntity->asSequence()->excluding(null).code->excluding(null).code = Sequence{'GUAR'})->reject(assignedEntity->one(assignedEntity : cda::AssignedEntity | not assignedEntity.oclIsUndefined() and assignedEntity.oclIsKindOf(cda::AssignedEntity)))
 	 * @param policyActivity The receiving '<em><b>Policy Activity</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -3152,6 +3211,7 @@ public class PolicyActivityOperations extends ClinicalStatementOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
+	 * self.participant->excluding(null)->select(typeCode=vocab::ParticipationType::COV).participantRole->excluding(null).addr->excluding(null)->reject(streetAddressLine->size() >=1 and streetAddressLine->size() <=4)
 	 * @param policyActivity The receiving '<em><b>Policy Activity</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -3216,6 +3276,7 @@ public class PolicyActivityOperations extends ClinicalStatementOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
+	 * self.participant->excluding(null)->select(typeCode=vocab::ParticipationType::COV).participantRole->excluding(null).addr->excluding(null)->reject((city->isEmpty() or city->exists(element | element.isNullFlavorUndefined())) implies (city->size() = 1))
 	 * @param policyActivity The receiving '<em><b>Policy Activity</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -3279,6 +3340,7 @@ public class PolicyActivityOperations extends ClinicalStatementOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
+	 * self.participant->excluding(null)->select(typeCode=vocab::ParticipationType::COV).participantRole->excluding(null).addr->excluding(null)->reject((country->isEmpty() or country->exists(element | element.isNullFlavorUndefined())) implies (not country->isEmpty()))
 	 * @param policyActivity The receiving '<em><b>Policy Activity</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -3343,6 +3405,7 @@ public class PolicyActivityOperations extends ClinicalStatementOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
+	 * self.participant->excluding(null)->select(typeCode=vocab::ParticipationType::COV).participantRole->excluding(null).addr->excluding(null)->reject((postalCode->isEmpty() or postalCode->exists(element | element.isNullFlavorUndefined())) implies (not postalCode->isEmpty()))
 	 * @param policyActivity The receiving '<em><b>Policy Activity</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -3407,6 +3470,7 @@ public class PolicyActivityOperations extends ClinicalStatementOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
+	 * self.participant->excluding(null)->select(typeCode=vocab::ParticipationType::COV).participantRole->excluding(null).addr->excluding(null)->reject((state->isEmpty() or state->exists(element | element.isNullFlavorUndefined())) implies (not state->isEmpty()))
 	 * @param policyActivity The receiving '<em><b>Policy Activity</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -3470,6 +3534,7 @@ public class PolicyActivityOperations extends ClinicalStatementOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
+	 * self.participant->excluding(null)->select(typeCode=vocab::ParticipationType::COV).participantRole->excluding(null).addr->excluding(null)->reject((streetAddressLine->isEmpty() or streetAddressLine->exists(element | element.isNullFlavorUndefined())) implies (not streetAddressLine->isEmpty()))
 	 * @param policyActivity The receiving '<em><b>Policy Activity</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -3534,6 +3599,7 @@ public class PolicyActivityOperations extends ClinicalStatementOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
+	 * self.participant->excluding(null)->select(typeCode=vocab::ParticipationType::COV).participantRole->excluding(null).addr->excluding(null)->reject(not use->isEmpty())
 	 * @param policyActivity The receiving '<em><b>Policy Activity</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -3612,6 +3678,9 @@ public class PolicyActivityOperations extends ClinicalStatementOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
+	 * self.participant->excluding(null)->select(typeCode=vocab::ParticipationType::COV).participantRole->excluding(null).addr->excluding(null)->reject(use->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(vocab::PostalAddressUse) and 
+	 * let value : vocab::PostalAddressUse = element.oclAsType(vocab::PostalAddressUse) in 
+	 * value = vocab::PostalAddressUse::BAD or value = vocab::PostalAddressUse::DIR or value = vocab::PostalAddressUse::H or value = vocab::PostalAddressUse::HP or value = vocab::PostalAddressUse::HV or value = vocab::PostalAddressUse::PHYS or value = vocab::PostalAddressUse::PST or value = vocab::PostalAddressUse::PUB or value = vocab::PostalAddressUse::TMP or value = vocab::PostalAddressUse::WP))
 	 * @param policyActivity The receiving '<em><b>Policy Activity</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -3684,6 +3753,7 @@ public class PolicyActivityOperations extends ClinicalStatementOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
+	 * self.participant->excluding(null)->select(typeCode=vocab::ParticipationType::COV).participantRole->excluding(null).playingEntity->excluding(null)->reject((name->isEmpty() or name->exists(element | element.isNullFlavorUndefined())) implies (name->size() = 1))
 	 * @param policyActivity The receiving '<em><b>Policy Activity</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -3749,6 +3819,7 @@ public class PolicyActivityOperations extends ClinicalStatementOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
+	 * self.participant->excluding(null)->select(typeCode=vocab::ParticipationType::COV).participantRole->excluding(null)->reject((id->isEmpty() or id->exists(element | element.isNullFlavorUndefined())) implies (not id->isEmpty()))
 	 * @param policyActivity The receiving '<em><b>Policy Activity</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -3815,6 +3886,9 @@ public class PolicyActivityOperations extends ClinicalStatementOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
+	 * self.participant->excluding(null)->select(typeCode=vocab::ParticipationType::COV).participantRole->excluding(null)->reject((code.oclIsUndefined() or code.isNullFlavorUndefined()) implies (not code.oclIsUndefined() and code.oclIsKindOf(datatypes::CE) and 
+	 * let value : datatypes::CE = code.oclAsType(datatypes::CE) in 
+	 * value.codeSystem = '2.16.840.1.113883.5.111' and (value.code = 'FAMDEP' or value.code = 'FSTUD' or value.code = 'HANDIC' or value.code = 'INJ' or value.code = 'PSTUD' or value.code = 'SELF' or value.code = 'SPON' or value.code = 'STUD')))
 	 * @param policyActivity The receiving '<em><b>Policy Activity</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -3879,6 +3953,7 @@ public class PolicyActivityOperations extends ClinicalStatementOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
+	 * self.participant->excluding(null)->select(typeCode=vocab::ParticipationType::COV).participantRole->excluding(null)->reject((code.oclIsUndefined() or code.isNullFlavorUndefined()) implies (not code.oclIsUndefined()))
 	 * @param policyActivity The receiving '<em><b>Policy Activity</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -3942,6 +4017,7 @@ public class PolicyActivityOperations extends ClinicalStatementOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
+	 * self.participant->excluding(null)->select(typeCode=vocab::ParticipationType::COV).participantRole->excluding(null)->reject((addr->isEmpty() or addr->exists(element | element.isNullFlavorUndefined())) implies (not addr->isEmpty()))
 	 * @param policyActivity The receiving '<em><b>Policy Activity</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -4006,6 +4082,7 @@ public class PolicyActivityOperations extends ClinicalStatementOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
+	 * self.participant->excluding(null)->select(typeCode=vocab::ParticipationType::COV).participantRole->excluding(null)->reject(playingEntity->one(playingEntity : cda::PlayingEntity | not playingEntity.oclIsUndefined() and playingEntity.oclIsKindOf(cda::PlayingEntity)))
 	 * @param policyActivity The receiving '<em><b>Policy Activity</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -4071,6 +4148,7 @@ public class PolicyActivityOperations extends ClinicalStatementOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
+	 * self.participant->excluding(null)->select(typeCode=vocab::ParticipationType::COV)->reject(not time.oclIsUndefined() implies not time.low.oclIsUndefined())
 	 * @param policyActivity The receiving '<em><b>Policy Activity</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -4133,6 +4211,7 @@ public class PolicyActivityOperations extends ClinicalStatementOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
+	 * self.participant->excluding(null)->select(typeCode=vocab::ParticipationType::COV)->reject(not time.oclIsUndefined() implies not time.high.oclIsUndefined())
 	 * @param policyActivity The receiving '<em><b>Policy Activity</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -4195,6 +4274,7 @@ public class PolicyActivityOperations extends ClinicalStatementOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
+	 * self.participant->excluding(null)->select(typeCode=vocab::ParticipationType::COV)->reject(templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.4.89'))
 	 * @param policyActivity The receiving '<em><b>Policy Activity</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -4257,6 +4337,7 @@ public class PolicyActivityOperations extends ClinicalStatementOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
+	 * self.participant->excluding(null)->select(typeCode=vocab::ParticipationType::COV)->reject(typeCode=vocab::ParticipationType::COV)
 	 * @param policyActivity The receiving '<em><b>Policy Activity</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -4320,6 +4401,7 @@ public class PolicyActivityOperations extends ClinicalStatementOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
+	 * self.participant->excluding(null)->select(typeCode=vocab::ParticipationType::COV)->reject((time.oclIsUndefined() or time.isNullFlavorUndefined()) implies (not time.oclIsUndefined()))
 	 * @param policyActivity The receiving '<em><b>Policy Activity</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -4383,6 +4465,7 @@ public class PolicyActivityOperations extends ClinicalStatementOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
+	 * self.participant->excluding(null)->select(typeCode=vocab::ParticipationType::COV)->reject(participantRole->one(participantRole : cda::ParticipantRole | not participantRole.oclIsUndefined() and participantRole.oclIsKindOf(cda::ParticipantRole)))
 	 * @param policyActivity The receiving '<em><b>Policy Activity</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -4446,6 +4529,7 @@ public class PolicyActivityOperations extends ClinicalStatementOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
+	 * self.participant->excluding(null)->select(typeCode=vocab::ParticipationType::HLD).participantRole->excluding(null).addr->excluding(null)->reject(streetAddressLine->size() >=1 and streetAddressLine->size() <=4)
 	 * @param policyActivity The receiving '<em><b>Policy Activity</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -4509,6 +4593,7 @@ public class PolicyActivityOperations extends ClinicalStatementOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
+	 * self.participant->excluding(null)->select(typeCode=vocab::ParticipationType::HLD).participantRole->excluding(null).addr->excluding(null)->reject((city->isEmpty() or city->exists(element | element.isNullFlavorUndefined())) implies (city->size() = 1))
 	 * @param policyActivity The receiving '<em><b>Policy Activity</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -4572,6 +4657,7 @@ public class PolicyActivityOperations extends ClinicalStatementOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
+	 * self.participant->excluding(null)->select(typeCode=vocab::ParticipationType::HLD).participantRole->excluding(null).addr->excluding(null)->reject((country->isEmpty() or country->exists(element | element.isNullFlavorUndefined())) implies (not country->isEmpty()))
 	 * @param policyActivity The receiving '<em><b>Policy Activity</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -4635,6 +4721,7 @@ public class PolicyActivityOperations extends ClinicalStatementOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
+	 * self.participant->excluding(null)->select(typeCode=vocab::ParticipationType::HLD).participantRole->excluding(null).addr->excluding(null)->reject((postalCode->isEmpty() or postalCode->exists(element | element.isNullFlavorUndefined())) implies (not postalCode->isEmpty()))
 	 * @param policyActivity The receiving '<em><b>Policy Activity</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -4699,6 +4786,7 @@ public class PolicyActivityOperations extends ClinicalStatementOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
+	 * self.participant->excluding(null)->select(typeCode=vocab::ParticipationType::HLD).participantRole->excluding(null).addr->excluding(null)->reject((state->isEmpty() or state->exists(element | element.isNullFlavorUndefined())) implies (not state->isEmpty()))
 	 * @param policyActivity The receiving '<em><b>Policy Activity</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -4762,6 +4850,7 @@ public class PolicyActivityOperations extends ClinicalStatementOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
+	 * self.participant->excluding(null)->select(typeCode=vocab::ParticipationType::HLD).participantRole->excluding(null).addr->excluding(null)->reject((streetAddressLine->isEmpty() or streetAddressLine->exists(element | element.isNullFlavorUndefined())) implies (not streetAddressLine->isEmpty()))
 	 * @param policyActivity The receiving '<em><b>Policy Activity</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -4826,6 +4915,7 @@ public class PolicyActivityOperations extends ClinicalStatementOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
+	 * self.participant->excluding(null)->select(typeCode=vocab::ParticipationType::HLD).participantRole->excluding(null).addr->excluding(null)->reject(not use->isEmpty())
 	 * @param policyActivity The receiving '<em><b>Policy Activity</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -4904,6 +4994,9 @@ public class PolicyActivityOperations extends ClinicalStatementOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
+	 * self.participant->excluding(null)->select(typeCode=vocab::ParticipationType::HLD).participantRole->excluding(null).addr->excluding(null)->reject(use->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(vocab::PostalAddressUse) and 
+	 * let value : vocab::PostalAddressUse = element.oclAsType(vocab::PostalAddressUse) in 
+	 * value = vocab::PostalAddressUse::BAD or value = vocab::PostalAddressUse::DIR or value = vocab::PostalAddressUse::H or value = vocab::PostalAddressUse::HP or value = vocab::PostalAddressUse::HV or value = vocab::PostalAddressUse::PHYS or value = vocab::PostalAddressUse::PST or value = vocab::PostalAddressUse::PUB or value = vocab::PostalAddressUse::TMP or value = vocab::PostalAddressUse::WP))
 	 * @param policyActivity The receiving '<em><b>Policy Activity</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -4976,6 +5069,7 @@ public class PolicyActivityOperations extends ClinicalStatementOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
+	 * self.participant->excluding(null)->select(typeCode=vocab::ParticipationType::HLD).participantRole->excluding(null)->reject((id->isEmpty() or id->exists(element | element.isNullFlavorUndefined())) implies (not id->isEmpty()))
 	 * @param policyActivity The receiving '<em><b>Policy Activity</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -5039,6 +5133,7 @@ public class PolicyActivityOperations extends ClinicalStatementOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
+	 * self.participant->excluding(null)->select(typeCode=vocab::ParticipationType::HLD).participantRole->excluding(null)->reject((addr->isEmpty() or addr->exists(element | element.isNullFlavorUndefined())) implies (not addr->isEmpty()))
 	 * @param policyActivity The receiving '<em><b>Policy Activity</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -5102,6 +5197,7 @@ public class PolicyActivityOperations extends ClinicalStatementOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
+	 * self.participant->excluding(null)->select(typeCode=vocab::ParticipationType::HLD)->reject(templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.4.90'))
 	 * @param policyActivity The receiving '<em><b>Policy Activity</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -5164,6 +5260,7 @@ public class PolicyActivityOperations extends ClinicalStatementOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
+	 * self.participant->excluding(null)->select(typeCode=vocab::ParticipationType::HLD)->reject(typeCode=vocab::ParticipationType::HLD)
 	 * @param policyActivity The receiving '<em><b>Policy Activity</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -5227,6 +5324,7 @@ public class PolicyActivityOperations extends ClinicalStatementOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
+	 * self.participant->excluding(null)->select(typeCode=vocab::ParticipationType::HLD)->reject((time.oclIsUndefined() or time.isNullFlavorUndefined()) implies (not time.oclIsUndefined()))
 	 * @param policyActivity The receiving '<em><b>Policy Activity</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -5290,6 +5388,7 @@ public class PolicyActivityOperations extends ClinicalStatementOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
+	 * self.participant->excluding(null)->select(typeCode=vocab::ParticipationType::HLD)->reject(participantRole->one(participantRole : cda::ParticipantRole | not participantRole.oclIsUndefined() and participantRole.oclIsKindOf(cda::ParticipantRole)))
 	 * @param policyActivity The receiving '<em><b>Policy Activity</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -5353,6 +5452,7 @@ public class PolicyActivityOperations extends ClinicalStatementOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
+	 * self.entryRelationship->excluding(null)->select(typeCode=vocab::x_ActRelationshipEntryRelationship::REFR)->reject(act->one(a : cda::Act | a.oclIsTypeOf(consol::AuthorizationActivity) or (a.classCode=vocab::x_ActClassDocumentEntryAct::ACT and a.moodCode=vocab::x_DocumentActMood::DEF)))
 	 * @param policyActivity The receiving '<em><b>Policy Activity</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -5416,6 +5516,7 @@ public class PolicyActivityOperations extends ClinicalStatementOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
+	 * self.entryRelationship->excluding(null)->select(typeCode=vocab::x_ActRelationshipEntryRelationship::REFR)->reject(act->select(a : cda::Act | a.classCode=vocab::x_ActClassDocumentEntryAct::ACT and (a.moodCode=vocab::x_DocumentActMood::DEF))->forAll(id->size() > 0 and text->size() = 1))
 	 * @param policyActivity The receiving '<em><b>Policy Activity</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -5479,6 +5580,7 @@ public class PolicyActivityOperations extends ClinicalStatementOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
+	 * self.entryRelationship->excluding(null)->select(typeCode=vocab::x_ActRelationshipEntryRelationship::REFR)->reject(typeCode=vocab::x_ActRelationshipEntryRelationship::REFR)
 	 * @param policyActivity The receiving '<em><b>Policy Activity</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.

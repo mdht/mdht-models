@@ -76,6 +76,7 @@ public class HighestPressureUlcerStageOperations extends ClinicalStatementOperat
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
+	 * self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.4.77')
 	 * @param highestPressureUlcerStage The receiving '<em><b>Highest Pressure Ulcer Stage</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -136,6 +137,7 @@ public class HighestPressureUlcerStageOperations extends ClinicalStatementOperat
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
+	 * self.classCode=vocab::ActClassObservation::OBS
 	 * @param highestPressureUlcerStage The receiving '<em><b>Highest Pressure Ulcer Stage</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -196,6 +198,7 @@ public class HighestPressureUlcerStageOperations extends ClinicalStatementOperat
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
+	 * self.moodCode=vocab::x_ActMoodDocumentObservation::EVN
 	 * @param highestPressureUlcerStage The receiving '<em><b>Highest Pressure Ulcer Stage</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -256,6 +259,7 @@ public class HighestPressureUlcerStageOperations extends ClinicalStatementOperat
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
+	 * (self.id->isEmpty() or self.id->exists(element | element.isNullFlavorUndefined())) implies (not self.id->isEmpty())
 	 * @param highestPressureUlcerStage The receiving '<em><b>Highest Pressure Ulcer Stage</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -315,6 +319,7 @@ public class HighestPressureUlcerStageOperations extends ClinicalStatementOperat
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
+	 * (self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined())
 	 * @param highestPressureUlcerStage The receiving '<em><b>Highest Pressure Ulcer Stage</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -388,6 +393,9 @@ public class HighestPressureUlcerStageOperations extends ClinicalStatementOperat
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
+	 * (self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and 
+	 * let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in 
+	 * value.code = '420905001' and value.codeSystem = '2.16.840.1.113883.6.96')
 	 * @param highestPressureUlcerStage The receiving '<em><b>Highest Pressure Ulcer Stage</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -455,6 +463,7 @@ public class HighestPressureUlcerStageOperations extends ClinicalStatementOperat
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
+	 * (self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1)
 	 * @param highestPressureUlcerStage The receiving '<em><b>Highest Pressure Ulcer Stage</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.

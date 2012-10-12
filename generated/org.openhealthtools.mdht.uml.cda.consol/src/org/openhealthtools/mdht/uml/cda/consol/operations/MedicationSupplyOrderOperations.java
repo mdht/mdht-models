@@ -92,6 +92,7 @@ public class MedicationSupplyOrderOperations extends SupplyOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
+	 * self.entryRelationship->select(er : cda::EntryRelationship | er.act.oclIsTypeOf(consol::Instructions))->forAll(ent : cda::EntryRelationship | ent.inversionInd=true)
 	 * @param medicationSupplyOrder The receiving '<em><b>Medication Supply Order</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -151,6 +152,7 @@ public class MedicationSupplyOrderOperations extends SupplyOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
+	 * self.effectiveTime->size() = 1 implies self.effectiveTime.oclAsType(datatypes::IVL_TS)->forAll(high->size() = 1)
 	 * @param medicationSupplyOrder The receiving '<em><b>Medication Supply Order</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -209,6 +211,7 @@ public class MedicationSupplyOrderOperations extends SupplyOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
+	 * self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.4.17')
 	 * @param medicationSupplyOrder The receiving '<em><b>Medication Supply Order</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -266,6 +269,7 @@ public class MedicationSupplyOrderOperations extends SupplyOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
+	 * self.classCode=vocab::ActClassSupply::SPLY
 	 * @param medicationSupplyOrder The receiving '<em><b>Medication Supply Order</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -323,6 +327,7 @@ public class MedicationSupplyOrderOperations extends SupplyOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
+	 * (self.effectiveTime->isEmpty() or self.effectiveTime->exists(element | element.isNullFlavorUndefined())) implies (not self.effectiveTime->isEmpty())
 	 * @param medicationSupplyOrder The receiving '<em><b>Medication Supply Order</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -380,6 +385,7 @@ public class MedicationSupplyOrderOperations extends SupplyOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
+	 * self.moodCode=vocab::x_DocumentSubstanceMood::INT
 	 * @param medicationSupplyOrder The receiving '<em><b>Medication Supply Order</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -437,6 +443,7 @@ public class MedicationSupplyOrderOperations extends SupplyOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
+	 * (self.quantity.oclIsUndefined() or self.quantity.isNullFlavorUndefined()) implies (not self.quantity.oclIsUndefined())
 	 * @param medicationSupplyOrder The receiving '<em><b>Medication Supply Order</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -494,6 +501,7 @@ public class MedicationSupplyOrderOperations extends SupplyOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
+	 * (self.repeatNumber.oclIsUndefined() or self.repeatNumber.isNullFlavorUndefined()) implies (not self.repeatNumber.oclIsUndefined())
 	 * @param medicationSupplyOrder The receiving '<em><b>Medication Supply Order</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -551,6 +559,7 @@ public class MedicationSupplyOrderOperations extends SupplyOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
+	 * (self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined())
 	 * @param medicationSupplyOrder The receiving '<em><b>Medication Supply Order</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -608,6 +617,7 @@ public class MedicationSupplyOrderOperations extends SupplyOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
+	 * (self.id->isEmpty() or self.id->exists(element | element.isNullFlavorUndefined())) implies (not self.id->isEmpty())
 	 * @param medicationSupplyOrder The receiving '<em><b>Medication Supply Order</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -664,6 +674,7 @@ public class MedicationSupplyOrderOperations extends SupplyOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
+	 * self.product->one(product : cda::Product | not product.oclIsUndefined() and product.oclIsKindOf(cda::Product))
 	 * @param medicationSupplyOrder The receiving '<em><b>Medication Supply Order</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -721,6 +732,7 @@ public class MedicationSupplyOrderOperations extends SupplyOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
+	 * self.author->one(author : cda::Author | not author.oclIsUndefined() and author.oclIsKindOf(rim::Participation))
 	 * @param medicationSupplyOrder The receiving '<em><b>Medication Supply Order</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -778,6 +790,7 @@ public class MedicationSupplyOrderOperations extends SupplyOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
+	 * self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.act.oclIsUndefined() and entryRelationship.act.oclIsKindOf(consol::Instructions) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::SUBJ)
 	 * @param medicationSupplyOrder The receiving '<em><b>Medication Supply Order</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -836,6 +849,7 @@ public class MedicationSupplyOrderOperations extends SupplyOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
+	 * self.product->excluding(null)->reject(manufacturedProduct.oclIsTypeOf(consol::MedicationInformation) xor manufacturedProduct.oclIsTypeOf(consol::ImmunizationMedicationInformation))
 	 * @param medicationSupplyOrder The receiving '<em><b>Medication Supply Order</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -898,6 +912,10 @@ public class MedicationSupplyOrderOperations extends SupplyOperations {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::Instructions))->asSequence()->any(true).oclAsType(consol::Instructions)
+	 * @param medicationSupplyOrder The receiving '<em><b>Medication Supply Order</b></em>' model object.
+	 * <!-- end-model-doc -->
 	 * @generated
 	 */
 	public static Instructions getInstructions(MedicationSupplyOrder medicationSupplyOrder) {
