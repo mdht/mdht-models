@@ -1127,7 +1127,7 @@ MU2 170.314(b)(7) Export Summary  - For Inpatient Care</body>
         <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-results.uml#_2J1d4BSVEeGGzu7fmW9pXw"/>
       </generalization>
       <ownedAttribute xmi:id="_ub5J0AJuEeKIhvHOhwsFvA" name="code" visibility="private">
-        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
+        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
         <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-results.uml#_2J1d6hSVEeGGzu7fmW9pXw"/>
       </ownedAttribute>
     </packagedElement>
@@ -1202,7 +1202,7 @@ MU2 170.314(b)(7) Export Summary  - For Inpatient Care</body>
         <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-procedures.uml#_2OG58RSVEeGGzu7fmW9pXw"/>
       </generalization>
       <ownedAttribute xmi:id="_MyjWsAKlEeKIhvHOhwsFvA" name="code" visibility="private" aggregation="composite">
-        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
+        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
         <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-procedures.uml#_2OTHKhSVEeGGzu7fmW9pXw"/>
       </ownedAttribute>
     </packagedElement>
