@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Language Code</title>
+<prolog id="prolog">
+<resourceid id="not specified"/>
+</prolog>
+<body>
+<!-- THIS IS GENERATED CONTENT, DO NOT EDIT -->
+<section id="definition">
+<table><tgroup cols="2">
+<colspec colname="col1" colwidth="1*"/>
+<colspec colname="col2" colwidth="4*"/>
+<tbody>
+<row><entry>Value Set</entry><entry>LanguageCode - (OID not specified)</entry></row>
+<row><entry>Code System</entry><entry>LOINC - 2.16.840.1.113883.6.1</entry></row>
+</tbody></tgroup></table>
+<table><tgroup cols="3">
+<colspec colname="col1" colwidth="1*"/>
+<colspec colname="col2" colwidth="1*"/>
+<colspec colname="col3" colwidth="2*"/>
+<thead><row>
+<entry>Code</entry><entry>Code System</entry><entry>Print Name</entry>
+</row></thead><tbody>
+<row><entry>aar</entry><entry>LOINC</entry><entry>Afar</entry></row>
+<row><entry>abk</entry><entry>LOINC</entry><entry>Abkhazian</entry></row>
+<row><entry>afr</entry><entry>LOINC</entry><entry>Afrikaans</entry></row>
+<row><entry>aka</entry><entry>LOINC</entry><entry>Akan</entry></row>
+<row><entry>sqi</entry><entry>LOINC</entry><entry>Albanian</entry></row>
+<row><entry>amh</entry><entry>LOINC</entry><entry>Amharic</entry></row>
+<row><entry>ara</entry><entry>LOINC</entry><entry>Arabic</entry></row>
+<row><entry>arg</entry><entry>LOINC</entry><entry>Aragonese</entry></row>
+<row><entry>hye</entry><entry>LOINC</entry><entry>Armenian</entry></row>
+<row><entry>asm</entry><entry>LOINC</entry><entry>Assamese</entry></row>
+<row><entry>ava</entry><entry>LOINC</entry><entry>Avaric</entry></row>
+<row><entry>ave</entry><entry>LOINC</entry><entry>Avestan</entry></row>
+<row><entry>aym</entry><entry>LOINC</entry><entry>Aymara</entry></row>
+<row><entry>aze</entry><entry>LOINC</entry><entry>Azerbaijani</entry></row>
+<row><entry>bak</entry><entry>LOINC</entry><entry>Bashkir</entry></row>
+<row><entry>bam</entry><entry>LOINC</entry><entry>Bambara</entry></row>
+<row><entry>eus</entry><entry>LOINC</entry><entry>Basque</entry></row>
+<row><entry>bel</entry><entry>LOINC</entry><entry>Belarusian</entry></row>
+<row><entry>ben</entry><entry>LOINC</entry><entry>Bengali</entry></row>
+<row><entry>bih</entry><entry>LOINC</entry><entry>Bihari languages</entry></row>
+<row><entry>bis</entry><entry>LOINC</entry><entry>Bislama</entry></row>
+<row><entry>bod</entry><entry>LOINC</entry><entry>Tibetan</entry></row>
+<row><entry>bos</entry><entry>LOINC</entry><entry>Bosnian</entry></row>
+<row><entry>bre</entry><entry>LOINC</entry><entry>Breton</entry></row>
+<row><entry>bul</entry><entry>LOINC</entry><entry>Bulgarian</entry></row>
+<row><entry>mya</entry><entry>LOINC</entry><entry>Burmese</entry></row>
+<row><entry>cat</entry><entry>LOINC</entry><entry>Catalan; Valencian</entry></row>
+<row><entry>ces</entry><entry>LOINC</entry><entry>Czech</entry></row>
+<row><entry>cha</entry><entry>LOINC</entry><entry>Chamorro</entry></row>
+<row><entry>che</entry><entry>LOINC</entry><entry>Chechen</entry></row>
+<row><entry>zho</entry><entry>LOINC</entry><entry>Chinese</entry></row>
+<row><entry>chu</entry><entry>LOINC</entry><entry>Church Slavic; Old Slavonic; Church Slavonic; Old Bulgarian; Old Church Slavonic</entry></row>
+<row><entry>chv</entry><entry>LOINC</entry><entry>Chuvash</entry></row>
+<row><entry>cor</entry><entry>LOINC</entry><entry>Cornish</entry></row>
+<row><entry>cos</entry><entry>LOINC</entry><entry>Corsican</entry></row>
+<row><entry>cre</entry><entry>LOINC</entry><entry>Cree</entry></row>
+<row><entry>cym</entry><entry>LOINC</entry><entry>Welsh</entry></row>
+<row><entry>dan</entry><entry>LOINC</entry><entry>Danish</entry></row>
+<row><entry>deu</entry><entry>LOINC</entry><entry>German</entry></row>
+<row><entry>div</entry><entry>LOINC</entry><entry>Divehi; Dhivehi; Maldivian</entry></row>
+<row><entry>nld</entry><entry>LOINC</entry><entry>Dutch; Flemish</entry></row>
+<row><entry>dzo</entry><entry>LOINC</entry><entry>Dzongkha</entry></row>
+<row><entry>ell</entry><entry>LOINC</entry><entry>Greek, Modern (1453-)</entry></row>
+<row><entry>eng</entry><entry>LOINC</entry><entry>English</entry></row>
+<row><entry>epo</entry><entry>LOINC</entry><entry>Esperanto</entry></row>
+<row><entry>est</entry><entry>LOINC</entry><entry>Estonian</entry></row>
+<row><entry>ewe</entry><entry>LOINC</entry><entry>Ewe</entry></row>
+<row><entry>fao</entry><entry>LOINC</entry><entry>Faroese</entry></row>
+<row><entry>fas</entry><entry>LOINC</entry><entry>Persian</entry></row>
+<row><entry>fij</entry><entry>LOINC</entry><entry>Fijian</entry></row>
+<row><entry>fin</entry><entry>LOINC</entry><entry>Finnish</entry></row>
+<row><entry>fra</entry><entry>LOINC</entry><entry>French</entry></row>
+<row><entry>fry</entry><entry>LOINC</entry><entry>Western Frisian</entry></row>
+<row><entry>ful</entry><entry>LOINC</entry><entry>Fulah</entry></row>
+<row><entry>kat</entry><entry>LOINC</entry><entry>Georgian</entry></row>
+<row><entry>ger</entry><entry>LOINC</entry><entry>German</entry></row>
+<row><entry>gla</entry><entry>LOINC</entry><entry>Gaelic; Scottish Gaelic</entry></row>
+<row><entry>gle</entry><entry>LOINC</entry><entry>Irish</entry></row>
+<row><entry>glg</entry><entry>LOINC</entry><entry>Galician</entry></row>
+<row><entry>glv</entry><entry>LOINC</entry><entry>Manx</entry></row>
+<row><entry>grn</entry><entry>LOINC</entry><entry>Guarani</entry></row>
+<row><entry>guj</entry><entry>LOINC</entry><entry>Gujarati</entry></row>
+<row><entry>hat</entry><entry>LOINC</entry><entry>Haitian; Haitian Creole</entry></row>
+<row><entry>hau</entry><entry>LOINC</entry><entry>Hausa</entry></row>
+<row><entry>heb</entry><entry>LOINC</entry><entry>Hebrew</entry></row>
+<row><entry>her</entry><entry>LOINC</entry><entry>Herero</entry></row>
+<row><entry>hin</entry><entry>LOINC</entry><entry>Hindi</entry></row>
+<row><entry>hmo</entry><entry>LOINC</entry><entry>Hiri Motu</entry></row>
+<row><entry>hrv</entry><entry>LOINC</entry><entry>Croatian</entry></row>
+<row><entry>hun</entry><entry>LOINC</entry><entry>Hungarian</entry></row>
+<row><entry>ibo</entry><entry>LOINC</entry><entry>Igbo</entry></row>
+<row><entry>isl</entry><entry>LOINC</entry><entry>Icelandic</entry></row>
+<row><entry>ido</entry><entry>LOINC</entry><entry>Ido</entry></row>
+<row><entry>iii</entry><entry>LOINC</entry><entry>Sichuan Yi; Nuosu</entry></row>
+<row><entry>iku</entry><entry>LOINC</entry><entry>Inuktitut</entry></row>
+<row><entry>ile</entry><entry>LOINC</entry><entry>Interlingue; Occidental</entry></row>
+<row><entry>ina</entry><entry>LOINC</entry><entry>Interlingua (International Auxiliary Language Association)</entry></row>
+<row><entry>ind</entry><entry>LOINC</entry><entry>Indonesian</entry></row>
+<row><entry>ipk</entry><entry>LOINC</entry><entry>Inupiaq</entry></row>
+<row><entry>ita</entry><entry>LOINC</entry><entry>Italian</entry></row>
+<row><entry>jav</entry><entry>LOINC</entry><entry>Javanese</entry></row>
+<row><entry>jpn</entry><entry>LOINC</entry><entry>Japanese</entry></row>
+<row><entry>kal</entry><entry>LOINC</entry><entry>Kalaallisut; Greenlandic</entry></row>
+<row><entry>kan</entry><entry>LOINC</entry><entry>Kannada</entry></row>
+<row><entry>kas</entry><entry>LOINC</entry><entry>Kashmiri</entry></row>
+<row><entry>kau</entry><entry>LOINC</entry><entry>Kanuri</entry></row>
+<row><entry>kaz</entry><entry>LOINC</entry><entry>Kazakh</entry></row>
+<row><entry>khm</entry><entry>LOINC</entry><entry>Central Khmer</entry></row>
+<row><entry>kik</entry><entry>LOINC</entry><entry>Kikuyu; Gikuyu</entry></row>
+<row><entry>kin</entry><entry>LOINC</entry><entry>Kinyarwanda</entry></row>
+<row><entry>kir</entry><entry>LOINC</entry><entry>Kirghiz; Kyrgyz</entry></row>
+<row><entry>kom</entry><entry>LOINC</entry><entry>Komi</entry></row>
+<row><entry>kon</entry><entry>LOINC</entry><entry>Kongo</entry></row>
+<row><entry>kor</entry><entry>LOINC</entry><entry>Korean</entry></row>
+<row><entry>kua</entry><entry>LOINC</entry><entry>Kuanyama; Kwanyama</entry></row>
+<row><entry>kur</entry><entry>LOINC</entry><entry>Kurdish</entry></row>
+<row><entry>lao</entry><entry>LOINC</entry><entry>Lao</entry></row>
+<row><entry>lat</entry><entry>LOINC</entry><entry>Latin</entry></row>
+<row><entry>lav</entry><entry>LOINC</entry><entry>Latvian</entry></row>
+<row><entry>lim</entry><entry>LOINC</entry><entry>Limburgan; Limburger; Limburgish</entry></row>
+<row><entry>lin</entry><entry>LOINC</entry><entry>Lingala</entry></row>
+<row><entry>lit</entry><entry>LOINC</entry><entry>Lithuanian</entry></row>
+<row><entry>ltz</entry><entry>LOINC</entry><entry>Luxembourgish; Letzeburgesch</entry></row>
+<row><entry>lub</entry><entry>LOINC</entry><entry>Luba-Katanga</entry></row>
+<row><entry>lug</entry><entry>LOINC</entry><entry>Ganda</entry></row>
+<row><entry>mkd</entry><entry>LOINC</entry><entry>Macedonian</entry></row>
+<row><entry>mah</entry><entry>LOINC</entry><entry>Marshallese</entry></row>
+<row><entry>mal</entry><entry>LOINC</entry><entry>Malayalam</entry></row>
+<row><entry>mri</entry><entry>LOINC</entry><entry>Maori</entry></row>
+<row><entry>mar</entry><entry>LOINC</entry><entry>Marathi</entry></row>
+<row><entry>msa</entry><entry>LOINC</entry><entry>Malay</entry></row>
+<row><entry>mlg</entry><entry>LOINC</entry><entry>Malagasy</entry></row>
+<row><entry>mlt</entry><entry>LOINC</entry><entry>Maltese</entry></row>
+<row><entry>mon</entry><entry>LOINC</entry><entry>Mongolian</entry></row>
+<row><entry>nau</entry><entry>LOINC</entry><entry>Nauru</entry></row>
+<row><entry>nav</entry><entry>LOINC</entry><entry>Navajo; Navaho</entry></row>
+<row><entry>nbl</entry><entry>LOINC</entry><entry>Ndebele, South; South Ndebele</entry></row>
+<row><entry>nde</entry><entry>LOINC</entry><entry>Ndebele, North; North Ndebele</entry></row>
+<row><entry>ndo</entry><entry>LOINC</entry><entry>Ndonga</entry></row>
+<row><entry>nep</entry><entry>LOINC</entry><entry>Nepali</entry></row>
+<row><entry>nno</entry><entry>LOINC</entry><entry>Norwegian Nynorsk; Nynorsk, Norwegian</entry></row>
+<row><entry>nob</entry><entry>LOINC</entry><entry>Bokmål, Norwegian; Norwegian Bokmål</entry></row>
+<row><entry>nor</entry><entry>LOINC</entry><entry>Norwegian</entry></row>
+<row><entry>nya</entry><entry>LOINC</entry><entry>Chichewa; Chewa; Nyanja</entry></row>
+<row><entry>oci</entry><entry>LOINC</entry><entry>Occitan (post 1500)</entry></row>
+<row><entry>oji</entry><entry>LOINC</entry><entry>Ojibwa</entry></row>
+<row><entry>ori</entry><entry>LOINC</entry><entry>Oriya</entry></row>
+<row><entry>orm</entry><entry>LOINC</entry><entry>Oromo</entry></row>
+<row><entry>oss</entry><entry>LOINC</entry><entry>Ossetian; Ossetic</entry></row>
+<row><entry>pan</entry><entry>LOINC</entry><entry>Panjabi; Punjabi</entry></row>
+<row><entry>pli</entry><entry>LOINC</entry><entry>Pali</entry></row>
+<row><entry>pol</entry><entry>LOINC</entry><entry>Polish</entry></row>
+<row><entry>por</entry><entry>LOINC</entry><entry>Portuguese</entry></row>
+<row><entry>pus</entry><entry>LOINC</entry><entry>Pushto; Pashto</entry></row>
+<row><entry>que</entry><entry>LOINC</entry><entry>Quechua</entry></row>
+<row><entry>roh</entry><entry>LOINC</entry><entry>Romansh</entry></row>
+<row><entry>ron</entry><entry>LOINC</entry><entry>Romanian; Moldavian; Moldovan</entry></row>
+<row><entry>run</entry><entry>LOINC</entry><entry>Rundi</entry></row>
+<row><entry>rus</entry><entry>LOINC</entry><entry>Russian</entry></row>
+<row><entry>sag</entry><entry>LOINC</entry><entry>Sango</entry></row>
+<row><entry>san</entry><entry>LOINC</entry><entry>Sanskrit</entry></row>
+<row><entry>sin</entry><entry>LOINC</entry><entry>Sinhala; Sinhalese</entry></row>
+<row><entry>slk</entry><entry>LOINC</entry><entry>Slovak</entry></row>
+<row><entry>slv</entry><entry>LOINC</entry><entry>Slovenian</entry></row>
+<row><entry>sme</entry><entry>LOINC</entry><entry>Northern Sami</entry></row>
+<row><entry>smo</entry><entry>LOINC</entry><entry>Samoan</entry></row>
+<row><entry>sna</entry><entry>LOINC</entry><entry>Shona</entry></row>
+<row><entry>snd</entry><entry>LOINC</entry><entry>Sindhi</entry></row>
+<row><entry>som</entry><entry>LOINC</entry><entry>Somali</entry></row>
+<row><entry>sot</entry><entry>LOINC</entry><entry>Sotho, Southern</entry></row>
+<row><entry>spa</entry><entry>LOINC</entry><entry>Spanish; Castilian</entry></row>
+<row><entry>srd</entry><entry>LOINC</entry><entry>Sardinian</entry></row>
+<row><entry>srp</entry><entry>LOINC</entry><entry>Serbian</entry></row>
+<row><entry>ssw</entry><entry>LOINC</entry><entry>Swati</entry></row>
+<row><entry>sun</entry><entry>LOINC</entry><entry>Sundanese</entry></row>
+<row><entry>swa</entry><entry>LOINC</entry><entry>Swahili</entry></row>
+<row><entry>swe</entry><entry>LOINC</entry><entry>Swedish</entry></row>
+<row><entry>tah</entry><entry>LOINC</entry><entry>Tahitian</entry></row>
+<row><entry>tam</entry><entry>LOINC</entry><entry>Tamil</entry></row>
+<row><entry>tat</entry><entry>LOINC</entry><entry>Tatar</entry></row>
+<row><entry>tel</entry><entry>LOINC</entry><entry>Telugu</entry></row>
+<row><entry>tgk</entry><entry>LOINC</entry><entry>Tajik</entry></row>
+<row><entry>tgl</entry><entry>LOINC</entry><entry>Tagalog</entry></row>
+<row><entry>tha</entry><entry>LOINC</entry><entry>Thai</entry></row>
+<row><entry>tir</entry><entry>LOINC</entry><entry>Tigrinya</entry></row>
+<row><entry>ton</entry><entry>LOINC</entry><entry>Tonga (Tonga Islands)</entry></row>
+<row><entry>tsn</entry><entry>LOINC</entry><entry>Tswana</entry></row>
+<row><entry>tso</entry><entry>LOINC</entry><entry>Tsonga</entry></row>
+<row><entry>tuk</entry><entry>LOINC</entry><entry>Turkmen</entry></row>
+<row><entry>tur</entry><entry>LOINC</entry><entry>Turkish</entry></row>
+<row><entry>twi</entry><entry>LOINC</entry><entry>Twi</entry></row>
+<row><entry>uig</entry><entry>LOINC</entry><entry>Uighur; Uyghur</entry></row>
+<row><entry>ukr</entry><entry>LOINC</entry><entry>Ukrainian</entry></row>
+<row><entry>urd</entry><entry>LOINC</entry><entry>Urdu</entry></row>
+<row><entry>uzb</entry><entry>LOINC</entry><entry>Uzbek</entry></row>
+<row><entry>ven</entry><entry>LOINC</entry><entry>Venda</entry></row>
+<row><entry>vie</entry><entry>LOINC</entry><entry>Vietnamese</entry></row>
+<row><entry>vol</entry><entry>LOINC</entry><entry>Volapük</entry></row>
+<row><entry>wln</entry><entry>LOINC</entry><entry>Walloon</entry></row>
+<row><entry>wol</entry><entry>LOINC</entry><entry>Wolof</entry></row>
+<row><entry>xho</entry><entry>LOINC</entry><entry>Xhosa</entry></row>
+<row><entry>yid</entry><entry>LOINC</entry><entry>Yiddish</entry></row>
+<row><entry>yor</entry><entry>LOINC</entry><entry>Yoruba</entry></row>
+<row><entry>zha</entry><entry>LOINC</entry><entry>Zhuang; Chuang</entry></row>
+<row><entry>zul</entry><entry>LOINC</entry><entry>Zulu</entry></row>
+</tbody></tgroup></table>
+</section>
+</body>
+</topic>
