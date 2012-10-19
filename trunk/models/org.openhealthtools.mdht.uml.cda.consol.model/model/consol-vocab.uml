@@ -708,7 +708,62 @@ http://www.fda.gov/ForIndustry/DataStandards/StructuredProductLabeling/ucm162523
       <ownedLiteral xmi:id="_kUBQ8Dr3EeG-aJb2h_4S8w" name="WC"/>
       <ownedLiteral xmi:id="_mP2EcDr3EeG-aJb2h_4S8w" name="WU"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Enumeration" xmi:id="_Z8iQMDstEeGvzMYhXuqAEA" name="ConsultDocumentType"/>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_Z8iQMDstEeGvzMYhXuqAEA" name="ConsultDocumentType">
+      <ownedLiteral xmi:id="_l_edwBfQEeKlBPC3X0poXg" name="11488-4"/>
+      <ownedLiteral xmi:id="_6zSq8BfQEeKlBPC3X0poXg" name="34100-8"/>
+      <ownedLiteral xmi:id="_70wH8BfQEeKlBPC3X0poXg" name="34104-0"/>
+      <ownedLiteral xmi:id="_9GbLMBfQEeKlBPC3X0poXg" name="51845-6"/>
+      <ownedLiteral xmi:id="_9bs3oBfQEeKlBPC3X0poXg" name="51853-0"/>
+      <ownedLiteral xmi:id="_-wNMcBfQEeKlBPC3X0poXg" name="51846-4"/>
+      <ownedLiteral xmi:id="__ImeUBfQEeKlBPC3X0poXg" name="34101-6"/>
+      <ownedLiteral xmi:id="_AEQ1UBfREeKlBPC3X0poXg" name="34749-2"/>
+      <ownedLiteral xmi:id="_Av2wABfREeKlBPC3X0poXg" name="34102-4"/>
+      <ownedLiteral xmi:id="_E_9TQBfREeKlBPC3X0poXg" name="34099-2"/>
+      <ownedLiteral xmi:id="_F76lMBfREeKlBPC3X0poXg" name="34756-7"/>
+      <ownedLiteral xmi:id="_G333IBfREeKlBPC3X0poXg" name="34758-3"/>
+      <ownedLiteral xmi:id="_HjKP0BfREeKlBPC3X0poXg" name="34760-9"/>
+      <ownedLiteral xmi:id="_ITqfsBfREeKlBPC3X0poXg" name="34879-7"/>
+      <ownedLiteral xmi:id="_I9xMoBfREeKlBPC3X0poXg" name="34761-7"/>
+      <ownedLiteral xmi:id="_JnuIkBfREeKlBPC3X0poXg" name="34764-1"/>
+      <ownedLiteral xmi:id="_KRh6kBfREeKlBPC3X0poXg" name="34771-6"/>
+      <ownedLiteral xmi:id="_K6SjsBfREeKlBPC3X0poXg" name="34776-5"/>
+      <ownedLiteral xmi:id="_LrFugBfREeKlBPC3X0poXg" name="34777-3"/>
+      <ownedLiteral xmi:id="_Mpa_ABfREeKlBPC3X0poXg" name="34779-9"/>
+      <ownedLiteral xmi:id="_NZoT8BfREeKlBPC3X0poXg" name="34781-5"/>
+      <ownedLiteral xmi:id="_OExisBfREeKlBPC3X0poXg" name="34783-1"/>
+      <ownedLiteral xmi:id="_O01GoBfREeKlBPC3X0poXg" name="34785-6"/>
+      <ownedLiteral xmi:id="_PkSNoBfREeKlBPC3X0poXg" name="34795-5"/>
+      <ownedLiteral xmi:id="_QtB-YBfREeKlBPC3X0poXg" name="34797-1"/>
+      <ownedLiteral xmi:id="_RYxqEBfREeKlBPC3X0poXg" name="34798-9"/>
+      <ownedLiteral xmi:id="_SEECwBfREeKlBPC3X0poXg" name="34800-3"/>
+      <ownedLiteral xmi:id="_SsFsEBfREeKlBPC3X0poXg" name="34803-7"/>
+      <ownedLiteral xmi:id="_TWod4BfREeKlBPC3X0poXg" name="34855-7"/>
+      <ownedLiteral xmi:id="_T68E0BfREeKlBPC3X0poXg" name="34805-2"/>
+      <ownedLiteral xmi:id="_X2qTgBfREeKlBPC3X0poXg" name="34807-8"/>
+      <ownedLiteral xmi:id="_YtHaYBfREeKlBPC3X0poXg" name="34810-2"/>
+      <ownedLiteral xmi:id="_ZYZzEBfREeKlBPC3X0poXg" name="34812-8"/>
+      <ownedLiteral xmi:id="_aP5bwBfREeKlBPC3X0poXg" name="34814-4"/>
+      <ownedLiteral xmi:id="_a_XJ0BfREeKlBPC3X0poXg" name="34816-9"/>
+      <ownedLiteral xmi:id="_bwwKgBfREeKlBPC3X0poXg" name="34820-1"/>
+      <ownedLiteral xmi:id="_dBic8BfREeKlBPC3X0poXg" name="34822-7"/>
+      <ownedLiteral xmi:id="_dwZuEBfREeKlBPC3X0poXg" name="34824-3"/>
+      <ownedLiteral xmi:id="_ecbtoBfREeKlBPC3X0poXg" name="34826-8"/>
+      <ownedLiteral xmi:id="_fvTDsBfREeKlBPC3X0poXg" name="34828-4"/>
+      <ownedLiteral xmi:id="_gav0cBfREeKlBPC3X0poXg" name="34788-0"/>
+      <ownedLiteral xmi:id="_hEswYBfREeKlBPC3X0poXg" name="34791-4"/>
+      <ownedLiteral xmi:id="_huNAYBfREeKlBPC3X0poXg" name="34103-2"/>
+      <ownedLiteral xmi:id="_jDTLEBfREeKlBPC3X0poXg" name="34831-8"/>
+      <ownedLiteral xmi:id="_jyUNMBfREeKlBPC3X0poXg" name="34833-4"/>
+      <ownedLiteral xmi:id="_kdnM8BfREeKlBPC3X0poXg" name="34835-9"/>
+      <ownedLiteral xmi:id="_lSuQABfREeKlBPC3X0poXg" name="34837-5"/>
+      <ownedLiteral xmi:id="_mE23kBfREeKlBPC3X0poXg" name="34839-1"/>
+      <ownedLiteral xmi:id="_muzzgBfREeKlBPC3X0poXg" name="34841-7"/>
+      <ownedLiteral xmi:id="_nmTcMBfREeKlBPC3X0poXg" name="34845-8"/>
+      <ownedLiteral xmi:id="_oX_X0BfREeKlBPC3X0poXg" name="34847-4"/>
+      <ownedLiteral xmi:id="_pCGEwBfREeKlBPC3X0poXg" name="34849-0"/>
+      <ownedLiteral xmi:id="_pw0L8BfREeKlBPC3X0poXg" name="34851-6"/>
+      <ownedLiteral xmi:id="_qaxH4BfREeKlBPC3X0poXg" name="34853-2"/>
+    </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_R_D60DzDEeGMk58Mp9-wVA" name="DischargeSummaryDocumentTypeCode">
       <ownedLiteral xmi:id="_hWkQsPt7EeG3vphfH83rmA" name="18842-5"/>
       <ownedLiteral xmi:id="_k3_wEPt7EeG3vphfH83rmA" name="11490-0"/>
@@ -770,7 +825,35 @@ http://www.fda.gov/ForIndustry/DataStandards/StructuredProductLabeling/ucm162523
       <ownedLiteral xmi:id="_M3BKcPwXEeGXDIdcQJhgtg" name="48807-2"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_-bWMgD-UEeGvOdejHZ7dYg" name="Healthcare Provider Taxonomy (NUCC - HIPAA)"/>
-    <packagedElement xmi:type="uml:Enumeration" xmi:id="_6yjb4D_LEeGXieeKs7NJjA" name="ProgressNoteDocumentTypeCode"/>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_6yjb4D_LEeGXieeKs7NJjA" name="ProgressNoteDocumentTypeCode">
+      <ownedLiteral xmi:id="_40kfABfREeKlBPC3X0poXg" name="11506-3"/>
+      <ownedLiteral xmi:id="_6G1YIBfREeKlBPC3X0poXg" name="18733-6"/>
+      <ownedLiteral xmi:id="_7Jyp8BfREeKlBPC3X0poXg" name="18762-5"/>
+      <ownedLiteral xmi:id="_8D0CMBfREeKlBPC3X0poXg" name="28569-2"/>
+      <ownedLiteral xmi:id="_89h4cBfREeKlBPC3X0poXg" name="28617-9"/>
+      <ownedLiteral xmi:id="_9wHL8BfREeKlBPC3X0poXg" name="34900-1"/>
+      <ownedLiteral xmi:id="_-Z698BfREeKlBPC3X0poXg" name="34904-3"/>
+      <ownedLiteral xmi:id="__NGHUBfREeKlBPC3X0poXg" name="18764-1"/>
+      <ownedLiteral xmi:id="_ALlI0BfSEeKlBPC3X0poXg" name="28623-7"/>
+      <ownedLiteral xmi:id="_A3xgcBfSEeKlBPC3X0poXg" name="11507-1"/>
+      <ownedLiteral xmi:id="_Bg1EgBfSEeKlBPC3X0poXg" name="11508-9"/>
+      <ownedLiteral xmi:id="_CNwb8BfSEeKlBPC3X0poXg" name="11509-7"/>
+      <ownedLiteral xmi:id="_DJtt4BfSEeKlBPC3X0poXg" name="28627-8"/>
+      <ownedLiteral xmi:id="_EABDwBfSEeKlBPC3X0poXg" name="11510-5"/>
+      <ownedLiteral xmi:id="_EqkcoBfSEeKlBPC3X0poXg" name="28656-7"/>
+      <ownedLiteral xmi:id="_GPcIsBfSEeKlBPC3X0poXg" name="11512-1"/>
+      <ownedLiteral xmi:id="_HCBcMBfSEeKlBPC3X0poXg" name="34126-3"/>
+      <ownedLiteral xmi:id="_HugHsBfSEeKlBPC3X0poXg" name="15507-7"/>
+      <ownedLiteral xmi:id="_IgMDUBfSEeKlBPC3X0poXg" name="34129-7"/>
+      <ownedLiteral xmi:id="_JO6KgBfSEeKlBPC3X0poXg" name="34125-5"/>
+      <ownedLiteral xmi:id="_J14q8BfSEeKlBPC3X0poXg" name="34130-5"/>
+      <ownedLiteral xmi:id="_KheloBfSEeKlBPC3X0poXg" name="34131-3"/>
+      <ownedLiteral xmi:id="_LcPkwBfSEeKlBPC3X0poXg" name="34124-8"/>
+      <ownedLiteral xmi:id="_MDhAIBfSEeKlBPC3X0poXg" name="34127-1"/>
+      <ownedLiteral xmi:id="_QJqWIBfSEeKlBPC3X0poXg" name="34128-9"/>
+      <ownedLiteral xmi:id="_Rpd8ABfSEeKlBPC3X0poXg" name="34901-9"/>
+      <ownedLiteral xmi:id="_SYe-IBfSEeKlBPC3X0poXg" name="34132-1"/>
+    </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_hJA70EUvEeGdQ4KWAmnbhw" name="DIRDocumentTypeCodes">
       <ownedLiteral xmi:id="_VcDRYPt5EeG3vphfH83rmA" name="18748-4"/>
       <ownedLiteral xmi:id="_XiYEsPt5EeG3vphfH83rmA" name="18747-6"/>
@@ -2243,4 +2326,85 @@ http://www.fda.gov/ForIndustry/DataStandards/StructuredProductLabeling/ucm162523
   <term:ValueSetCode xmi:id="_m61JkBMsEeK4go_VqYg1Bw" conceptName="varicella zoster immune globulin (Investigational New Drug)" usageNote="Vaccines administered (CVX)" base_EnumerationLiteral="_m60ihRMsEeK4go_VqYg1Bw"/>
   <term:ValueSetCode xmi:id="_m61JkhMsEeK4go_VqYg1Bw" conceptName="yellow fever vaccine" usageNote="Vaccines administered (CVX)" base_EnumerationLiteral="_m61JkRMsEeK4go_VqYg1Bw"/>
   <term:ValueSetCode xmi:id="_m61JlBMsEeK4go_VqYg1Bw" conceptName="zoster vaccine, live" usageNote="Vaccines administered (CVX)" base_EnumerationLiteral="_m61JkxMsEeK4go_VqYg1Bw"/>
+  <term:ValueSetCode xmi:id="_mBZwYBfQEeKlBPC3X0poXg" base_EnumerationLiteral="_l_edwBfQEeKlBPC3X0poXg"/>
+  <term:ValueSetCode xmi:id="_6zSq8RfQEeKlBPC3X0poXg" base_EnumerationLiteral="_6zSq8BfQEeKlBPC3X0poXg"/>
+  <term:ValueSetCode xmi:id="_70wH8RfQEeKlBPC3X0poXg" base_EnumerationLiteral="_70wH8BfQEeKlBPC3X0poXg"/>
+  <term:ValueSetCode xmi:id="_9GbLMRfQEeKlBPC3X0poXg" base_EnumerationLiteral="_9GbLMBfQEeKlBPC3X0poXg"/>
+  <term:ValueSetCode xmi:id="_9bs3oRfQEeKlBPC3X0poXg" base_EnumerationLiteral="_9bs3oBfQEeKlBPC3X0poXg"/>
+  <term:ValueSetCode xmi:id="_-wNMcRfQEeKlBPC3X0poXg" base_EnumerationLiteral="_-wNMcBfQEeKlBPC3X0poXg"/>
+  <term:ValueSetCode xmi:id="__ImeURfQEeKlBPC3X0poXg" base_EnumerationLiteral="__ImeUBfQEeKlBPC3X0poXg"/>
+  <term:ValueSetCode xmi:id="_AEQ1URfREeKlBPC3X0poXg" base_EnumerationLiteral="_AEQ1UBfREeKlBPC3X0poXg"/>
+  <term:ValueSetCode xmi:id="_Av2wARfREeKlBPC3X0poXg" base_EnumerationLiteral="_Av2wABfREeKlBPC3X0poXg"/>
+  <term:ValueSetCode xmi:id="_E_9TQRfREeKlBPC3X0poXg" base_EnumerationLiteral="_E_9TQBfREeKlBPC3X0poXg"/>
+  <term:ValueSetCode xmi:id="_F76lMRfREeKlBPC3X0poXg" base_EnumerationLiteral="_F76lMBfREeKlBPC3X0poXg"/>
+  <term:ValueSetCode xmi:id="_G333IRfREeKlBPC3X0poXg" base_EnumerationLiteral="_G333IBfREeKlBPC3X0poXg"/>
+  <term:ValueSetCode xmi:id="_HjKP0RfREeKlBPC3X0poXg" base_EnumerationLiteral="_HjKP0BfREeKlBPC3X0poXg"/>
+  <term:ValueSetCode xmi:id="_ITqfsRfREeKlBPC3X0poXg" base_EnumerationLiteral="_ITqfsBfREeKlBPC3X0poXg"/>
+  <term:ValueSetCode xmi:id="_I9xMoRfREeKlBPC3X0poXg" base_EnumerationLiteral="_I9xMoBfREeKlBPC3X0poXg"/>
+  <term:ValueSetCode xmi:id="_JnuIkRfREeKlBPC3X0poXg" base_EnumerationLiteral="_JnuIkBfREeKlBPC3X0poXg"/>
+  <term:ValueSetCode xmi:id="_KRh6kRfREeKlBPC3X0poXg" base_EnumerationLiteral="_KRh6kBfREeKlBPC3X0poXg"/>
+  <term:ValueSetCode xmi:id="_K6SjsRfREeKlBPC3X0poXg" base_EnumerationLiteral="_K6SjsBfREeKlBPC3X0poXg"/>
+  <term:ValueSetCode xmi:id="_LrFugRfREeKlBPC3X0poXg" base_EnumerationLiteral="_LrFugBfREeKlBPC3X0poXg"/>
+  <term:ValueSetCode xmi:id="_Mpa_ARfREeKlBPC3X0poXg" base_EnumerationLiteral="_Mpa_ABfREeKlBPC3X0poXg"/>
+  <term:ValueSetCode xmi:id="_NZoT8RfREeKlBPC3X0poXg" base_EnumerationLiteral="_NZoT8BfREeKlBPC3X0poXg"/>
+  <term:ValueSetCode xmi:id="_OExisRfREeKlBPC3X0poXg" base_EnumerationLiteral="_OExisBfREeKlBPC3X0poXg"/>
+  <term:ValueSetCode xmi:id="_O01GoRfREeKlBPC3X0poXg" base_EnumerationLiteral="_O01GoBfREeKlBPC3X0poXg"/>
+  <term:ValueSetCode xmi:id="_PkSNoRfREeKlBPC3X0poXg" base_EnumerationLiteral="_PkSNoBfREeKlBPC3X0poXg"/>
+  <term:ValueSetCode xmi:id="_QtB-YRfREeKlBPC3X0poXg" base_EnumerationLiteral="_QtB-YBfREeKlBPC3X0poXg"/>
+  <term:ValueSetCode xmi:id="_RYxqERfREeKlBPC3X0poXg" base_EnumerationLiteral="_RYxqEBfREeKlBPC3X0poXg"/>
+  <term:ValueSetCode xmi:id="_SEECwRfREeKlBPC3X0poXg" base_EnumerationLiteral="_SEECwBfREeKlBPC3X0poXg"/>
+  <term:ValueSetCode xmi:id="_SsFsERfREeKlBPC3X0poXg" base_EnumerationLiteral="_SsFsEBfREeKlBPC3X0poXg"/>
+  <term:ValueSetCode xmi:id="_TWod4RfREeKlBPC3X0poXg" base_EnumerationLiteral="_TWod4BfREeKlBPC3X0poXg"/>
+  <term:ValueSetCode xmi:id="_T68E0RfREeKlBPC3X0poXg" base_EnumerationLiteral="_T68E0BfREeKlBPC3X0poXg"/>
+  <term:ValueSetCode xmi:id="_X2qTgRfREeKlBPC3X0poXg" base_EnumerationLiteral="_X2qTgBfREeKlBPC3X0poXg"/>
+  <term:ValueSetCode xmi:id="_YtHaYRfREeKlBPC3X0poXg" base_EnumerationLiteral="_YtHaYBfREeKlBPC3X0poXg"/>
+  <term:ValueSetCode xmi:id="_ZYZzERfREeKlBPC3X0poXg" base_EnumerationLiteral="_ZYZzEBfREeKlBPC3X0poXg"/>
+  <term:ValueSetCode xmi:id="_aP5bwRfREeKlBPC3X0poXg" base_EnumerationLiteral="_aP5bwBfREeKlBPC3X0poXg"/>
+  <term:ValueSetCode xmi:id="_a_XJ0RfREeKlBPC3X0poXg" base_EnumerationLiteral="_a_XJ0BfREeKlBPC3X0poXg"/>
+  <term:ValueSetCode xmi:id="_bwwKgRfREeKlBPC3X0poXg" base_EnumerationLiteral="_bwwKgBfREeKlBPC3X0poXg"/>
+  <term:ValueSetCode xmi:id="_dBrm4BfREeKlBPC3X0poXg" base_EnumerationLiteral="_dBic8BfREeKlBPC3X0poXg"/>
+  <term:ValueSetCode xmi:id="_dwZuERfREeKlBPC3X0poXg" base_EnumerationLiteral="_dwZuEBfREeKlBPC3X0poXg"/>
+  <term:ValueSetCode xmi:id="_ecbtoRfREeKlBPC3X0poXg" base_EnumerationLiteral="_ecbtoBfREeKlBPC3X0poXg"/>
+  <term:ValueSetCode xmi:id="_fvc0sBfREeKlBPC3X0poXg" base_EnumerationLiteral="_fvTDsBfREeKlBPC3X0poXg"/>
+  <term:ValueSetCode xmi:id="_gav0cRfREeKlBPC3X0poXg" base_EnumerationLiteral="_gav0cBfREeKlBPC3X0poXg"/>
+  <term:ValueSetCode xmi:id="_hEswYRfREeKlBPC3X0poXg" base_EnumerationLiteral="_hEswYBfREeKlBPC3X0poXg"/>
+  <term:ValueSetCode xmi:id="_huNAYRfREeKlBPC3X0poXg" base_EnumerationLiteral="_huNAYBfREeKlBPC3X0poXg"/>
+  <term:ValueSetCode xmi:id="_jDTLERfREeKlBPC3X0poXg" base_EnumerationLiteral="_jDTLEBfREeKlBPC3X0poXg"/>
+  <term:ValueSetCode xmi:id="_jyUNMRfREeKlBPC3X0poXg" base_EnumerationLiteral="_jyUNMBfREeKlBPC3X0poXg"/>
+  <term:ValueSetCode xmi:id="_kdwW4BfREeKlBPC3X0poXg" base_EnumerationLiteral="_kdnM8BfREeKlBPC3X0poXg"/>
+  <term:ValueSetCode xmi:id="_lSuQARfREeKlBPC3X0poXg" base_EnumerationLiteral="_lSuQABfREeKlBPC3X0poXg"/>
+  <term:ValueSetCode xmi:id="_mE23kRfREeKlBPC3X0poXg" base_EnumerationLiteral="_mE23kBfREeKlBPC3X0poXg"/>
+  <term:ValueSetCode xmi:id="_muzzgRfREeKlBPC3X0poXg" base_EnumerationLiteral="_muzzgBfREeKlBPC3X0poXg"/>
+  <term:ValueSetCode xmi:id="_nmTcMRfREeKlBPC3X0poXg" base_EnumerationLiteral="_nmTcMBfREeKlBPC3X0poXg"/>
+  <term:ValueSetCode xmi:id="_oX_X0RfREeKlBPC3X0poXg" base_EnumerationLiteral="_oX_X0BfREeKlBPC3X0poXg"/>
+  <term:ValueSetCode xmi:id="_pCGEwRfREeKlBPC3X0poXg" base_EnumerationLiteral="_pCGEwBfREeKlBPC3X0poXg"/>
+  <term:ValueSetCode xmi:id="_pw9V4BfREeKlBPC3X0poXg" base_EnumerationLiteral="_pw0L8BfREeKlBPC3X0poXg"/>
+  <term:ValueSetCode xmi:id="_qaxH4RfREeKlBPC3X0poXg" base_EnumerationLiteral="_qaxH4BfREeKlBPC3X0poXg"/>
+  <term:ValueSetCode xmi:id="_40kfARfREeKlBPC3X0poXg" base_EnumerationLiteral="_40kfABfREeKlBPC3X0poXg"/>
+  <term:ValueSetCode xmi:id="_6G1YIRfREeKlBPC3X0poXg" base_EnumerationLiteral="_6G1YIBfREeKlBPC3X0poXg"/>
+  <term:ValueSetCode xmi:id="_7Jyp8RfREeKlBPC3X0poXg" base_EnumerationLiteral="_7Jyp8BfREeKlBPC3X0poXg"/>
+  <term:ValueSetCode xmi:id="_8D0CMRfREeKlBPC3X0poXg" base_EnumerationLiteral="_8D0CMBfREeKlBPC3X0poXg"/>
+  <term:ValueSetCode xmi:id="_89h4cRfREeKlBPC3X0poXg" base_EnumerationLiteral="_89h4cBfREeKlBPC3X0poXg"/>
+  <term:ValueSetCode xmi:id="_9wHL8RfREeKlBPC3X0poXg" base_EnumerationLiteral="_9wHL8BfREeKlBPC3X0poXg"/>
+  <term:ValueSetCode xmi:id="_-aEu8BfREeKlBPC3X0poXg" base_EnumerationLiteral="_-Z698BfREeKlBPC3X0poXg"/>
+  <term:ValueSetCode xmi:id="__NGHURfREeKlBPC3X0poXg" base_EnumerationLiteral="__NGHUBfREeKlBPC3X0poXg"/>
+  <term:ValueSetCode xmi:id="_ALlI0RfSEeKlBPC3X0poXg" base_EnumerationLiteral="_ALlI0BfSEeKlBPC3X0poXg"/>
+  <term:ValueSetCode xmi:id="_A3xgcRfSEeKlBPC3X0poXg" base_EnumerationLiteral="_A3xgcBfSEeKlBPC3X0poXg"/>
+  <term:ValueSetCode xmi:id="_Bg1EgRfSEeKlBPC3X0poXg" base_EnumerationLiteral="_Bg1EgBfSEeKlBPC3X0poXg"/>
+  <term:ValueSetCode xmi:id="_CNwb8RfSEeKlBPC3X0poXg" base_EnumerationLiteral="_CNwb8BfSEeKlBPC3X0poXg"/>
+  <term:ValueSetCode xmi:id="_DJtt4RfSEeKlBPC3X0poXg" base_EnumerationLiteral="_DJtt4BfSEeKlBPC3X0poXg"/>
+  <term:ValueSetCode xmi:id="_EABDwRfSEeKlBPC3X0poXg" base_EnumerationLiteral="_EABDwBfSEeKlBPC3X0poXg"/>
+  <term:ValueSetCode xmi:id="_EqkcoRfSEeKlBPC3X0poXg" base_EnumerationLiteral="_EqkcoBfSEeKlBPC3X0poXg"/>
+  <term:ValueSetCode xmi:id="_GPcIsRfSEeKlBPC3X0poXg" base_EnumerationLiteral="_GPcIsBfSEeKlBPC3X0poXg"/>
+  <term:ValueSetCode xmi:id="_HCBcMRfSEeKlBPC3X0poXg" base_EnumerationLiteral="_HCBcMBfSEeKlBPC3X0poXg"/>
+  <term:ValueSetCode xmi:id="_HugHsRfSEeKlBPC3X0poXg" base_EnumerationLiteral="_HugHsBfSEeKlBPC3X0poXg"/>
+  <term:ValueSetCode xmi:id="_IgMDURfSEeKlBPC3X0poXg" base_EnumerationLiteral="_IgMDUBfSEeKlBPC3X0poXg"/>
+  <term:ValueSetCode xmi:id="_JO6KgRfSEeKlBPC3X0poXg" base_EnumerationLiteral="_JO6KgBfSEeKlBPC3X0poXg"/>
+  <term:ValueSetCode xmi:id="_J14q8RfSEeKlBPC3X0poXg" base_EnumerationLiteral="_J14q8BfSEeKlBPC3X0poXg"/>
+  <term:ValueSetCode xmi:id="_KheloRfSEeKlBPC3X0poXg" base_EnumerationLiteral="_KheloBfSEeKlBPC3X0poXg"/>
+  <term:ValueSetCode xmi:id="_LcPkwRfSEeKlBPC3X0poXg" base_EnumerationLiteral="_LcPkwBfSEeKlBPC3X0poXg"/>
+  <term:ValueSetCode xmi:id="_MDhAIRfSEeKlBPC3X0poXg" base_EnumerationLiteral="_MDhAIBfSEeKlBPC3X0poXg"/>
+  <term:ValueSetCode xmi:id="_QJqWIRfSEeKlBPC3X0poXg" base_EnumerationLiteral="_QJqWIBfSEeKlBPC3X0poXg"/>
+  <term:ValueSetCode xmi:id="_Rpd8ARfSEeKlBPC3X0poXg" base_EnumerationLiteral="_Rpd8ABfSEeKlBPC3X0poXg"/>
+  <term:ValueSetCode xmi:id="_SYe-IRfSEeKlBPC3X0poXg" base_EnumerationLiteral="_SYe-IBfSEeKlBPC3X0poXg"/>
 </xmi:XMI>
