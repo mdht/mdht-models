@@ -1,0 +1,512 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ClinicalDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd">
+  <typeId extension="POCD_HD000040" root="2.16.840.1.113883.1.3"/>
+  <templateId root="1.3.6.1.4.1.19376.1.12.1.1.1"/>
+  <id root="1.1261979838" extension="MDHT"/>
+  <code code="70947-7" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="General eye evaluation"/>
+  <title>TEXT FOR TITLE</title>
+  <effectiveTime/>
+  <confidentialityCode code="101324852"/>
+  <recordTarget>
+    <patientRole>
+      <id extension="20_2010-1" root="1.3.6.1.4.1.21367.2010.1.2.777.2"/>
+      <addr>
+        <streetAddressLine>2 John Adams Street</streetAddressLine>
+        <city>Chicago</city>
+        <state>IL</state>
+        <postalCode>12345</postalCode>
+        <country>US</country>
+      </addr>
+      <telecom nullFlavor="UNK" use="HP"/>
+      <patient>
+        <name use="L">
+          <given qualifier="CL">George</given>
+          <family>Washington</family>
+        </name>
+        <administrativeGenderCode code="M" codeSystem="2.16.840.1.113883.5.1"/>
+        <birthTime value="19271127"/>
+        <raceCode code="101" codeSystem="2.16.840.1.113883.6.238" displayName="White"/>
+        <languageCommunication>
+          <languageCode nullFlavor="UNK"/>
+        </languageCommunication>
+      </patient>
+      <providerOrganization>
+        <id extension="21_2010-1" root="1.3.6.1.4.1.21367.2010.1.2.777.3"/>
+        <name>Mount Vernon Hospital</name>
+        <telecom value="tel:+1-(345)999-8765" use="WP"/>
+        <addr>
+          <streetAddressLine>456 Estate Street</streetAddressLine>
+          <city>Chicago</city>
+          <state>IL</state>
+          <postalCode>12345</postalCode>
+          <country>US</country>
+        </addr>
+      </providerOrganization>
+    </patientRole>
+  </recordTarget>
+  <author>
+    <time value="20101013161200-0600"/>
+    <assignedAuthor>
+      <id root="1.3.6.1.4.1.21367.2010.1.2.777.3" extension="22_2010-1"/>
+      <code code="SELF" codeSystem="2.16.840.1.113883.5.111" displayName="Self" codeSystemName="HL7"/>
+      <addr nullFlavor="UNK"/>
+      <telecom nullFlavor="UNK" use="WP"/>
+      <assignedPerson>
+        <name>
+          <prefix>Dr.</prefix>
+          <given>Thomas</given>
+          <family>Jefferson</family>
+        </name>
+      </assignedPerson>
+    </assignedAuthor>
+  </author>
+  
+  <custodian>
+    <assignedCustodian>
+      <representedCustodianOrganization>
+        <id extension="26_2010-1" root="1.3.6.1.4.1.21367.2010.1.2.777.3"/>
+        <name>Greater Chicago HIE</name>
+        <telecom value="tel:+1-(555)777-1234" use="WP"/>
+        <addr>
+          <streetAddressLine>790 Jorie Blvd</streetAddressLine>
+          <city>Oak Brook</city>
+          <state>IL</state>
+          <postalCode>60523</postalCode>
+          <country>US</country>
+        </addr>
+      </representedCustodianOrganization>
+    </assignedCustodian>
+  </custodian>
+  <component>
+    <structuredBody>
+      <component>
+        <section>
+          <templateId root="1.3.6.1.4.1.19376.1.5.3.1.1.13.2.1"/>
+          <id root="1739649647" extension="MDHT"/>
+          <code code="10154-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="CHIEF COMPLAINT"/>
+          <title>TEXT FOR TITLE</title>
+        </section>
+      </component>
+      <component>
+        <section>
+          <templateId root="2.16.840.1.113883.10.20.1.5"/>
+          <templateId root="1.3.6.1.4.1.19376.1.5.3.1.3.17"/>
+          <id root="804567867" extension="MDHT"/>
+          <code code="47420-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Functional status assessment"/>
+          <title>TEXT FOR TITLE</title>
+        </section>
+      </component>
+      <component>
+        <section>
+          <templateId root="1.3.6.1.4.1.19376.1.5.3.1.3.4"/>
+          <id root="1.1361514246" extension="MDHT"/>
+          <code code="10164-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="HISTORY OF PRESENT ILLNESS"/>
+          <title>TEXT FOR TITLE</title>
+        </section>
+      </component>
+      <component>
+        <section>
+          <templateId root="1.3.6.1.4.1.19376.1.5.3.1.3.8"/>
+          <templateId root="1.3.6.1.4.1.19376.1.12.1.2.3"/>
+          <id root="1296752046" extension="MDHT"/>
+          <code code="70934-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Ocular history"/>
+          <title>TEXT FOR TITLE</title>
+          <component>
+            <section>
+              <templateId root="2.16.840.1.113883.10.20.1.12"/>
+              <templateId root="1.3.6.1.4.1.19376.1.5.3.1.3.11"/>
+              <templateId root="1.3.6.1.4.1.19376.1.12.1.2.1"/>
+              <id root="558934095" extension="MDHT"/>
+              <code code="47519-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="History of procedures"/>
+              <title>TEXT FOR TITLE</title>
+            </section>
+          </component>
+          <component>
+            <section>
+              <templateId root="2.16.840.1.113883.10.20.1.12"/>
+              <templateId root="1.3.6.1.4.1.19376.1.5.3.1.3.11"/>
+              <templateId root="1.3.6.1.4.1.19376.1.5.3.1.3.12"/>
+              <templateId root="1.3.6.1.4.1.19376.1.12.1.2.2"/>
+              <id root="1149282659" extension="MDHT"/>
+              <code code="47519-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="History of procedures"/>
+              <title>TEXT FOR TITLE</title>
+              <entry>
+                <act classCode="ACT" moodCode="EVN">
+                  <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.4"/>
+                  <id root="1593474405" extension="MDHT"/>
+                  <code code="660515924"/>
+                  <effectiveTime>
+                    <low value="2012"/>
+                    <high value="2012"/>
+                  </effectiveTime>
+                </act>
+              </entry>
+            </section>
+          </component>
+        </section>
+      </component>
+      <component>
+        <section>
+          <templateId root="1.3.6.1.4.1.19376.1.5.3.1.3.8"/>
+          <id root="1471628905" extension="MDHT"/>
+          <code code="11348-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="HISTORY OF PAST ILLNESS"/>
+          <title>TEXT FOR TITLE</title>
+        </section>
+      </component>
+      <component>
+        <section>
+          <templateId root="2.16.840.1.113883.10.20.1.12"/>
+          <templateId root="1.3.6.1.4.1.19376.1.5.3.1.3.11"/>
+          <id root="1686986477" extension="MDHT"/>
+          <code code="47519-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="History of procedures"/>
+          <title>TEXT FOR TITLE</title>
+        </section>
+      </component>
+      <component>
+        <section>
+          <templateId root="2.16.840.1.113883.10.20.1.12"/>
+          <templateId root="1.3.6.1.4.1.19376.1.5.3.1.3.11"/>
+          <templateId root="1.3.6.1.4.1.19376.1.5.3.1.3.12"/>
+          <id root="1262579548" extension="MDHT"/>
+          <code code="47519-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="History of procedures"/>
+          <title>TEXT FOR TITLE</title>
+          <entry>
+            <act classCode="ACT" moodCode="EVN">
+              <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.4"/>
+              <id root="389760559" extension="MDHT"/>
+              <code code="1821127470"/>
+              <effectiveTime>
+                <low value="2012"/>
+                <high value="2012"/>
+              </effectiveTime>
+            </act>
+          </entry>
+          <entry>
+            <procedure classCode="PROC" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.1.29"/>
+              <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.19"/>
+              <id root="1141283962" extension="MDHT"/>
+              <effectiveTime>
+                <low value="2012"/>
+                <high value="2012"/>
+              </effectiveTime>
+            </procedure>
+          </entry>
+        </section>
+      </component>
+      <component>
+        <section>
+          <templateId root="1.3.6.1.4.1.19376.1.5.3.1.3.18"/>
+          <id root="1440883528" extension="MDHT"/>
+          <code code="10187-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="REVIEW OF SYSTEMS"/>
+          <title>TEXT FOR TITLE</title>
+        </section>
+      </component>
+      <component>
+        <section>
+          <templateId root="2.16.840.1.113883.10.20.1.8"/>
+          <templateId root="1.3.6.1.4.1.19376.1.5.3.1.3.19"/>
+          <id root="6502402" extension="MDHT"/>
+          <code code="10160-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="History of medication use"/>
+          <title>TEXT FOR TITLE</title>
+        </section>
+      </component>
+      <component>
+        <section>
+          <templateId root="2.16.840.1.113883.10.20.1.8"/>
+          <templateId root="1.3.6.1.4.1.19376.1.5.3.1.3.19"/>
+          <templateId root="1.3.6.1.4.1.19376.1.12.1.2.4"/>
+          <id root="504841445" extension="MDHT"/>
+          <code code="70935-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Ophthalmic medications"/>
+          <title>TEXT FOR TITLE</title>
+        </section>
+      </component>
+      <component>
+        <section>
+          <templateId root="2.16.840.1.113883.10.20.1.2"/>
+          <templateId root="1.3.6.1.4.1.19376.1.5.3.1.3.13"/>
+          <id root="1689316764" extension="MDHT"/>
+          <code code="48765-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Allergies, adverse reactions, alerts"/>
+          <title>TEXT FOR TITLE</title>
+          <entry>
+            <act classCode="ACT" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.1.27"/>
+              <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.5.1"/>
+              <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.5.3"/>
+              <id root="1770056549" extension="MDHT"/>
+              <code nullFlavor="NA"/>
+              <effectiveTime>
+                <low value="2012"/>
+                <high value="2012"/>
+              </effectiveTime>
+              <entryRelationship>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.1.28"/>
+                  <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.5"/>
+                  <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.6"/>
+                  <id root="1215561696" extension="MDHT"/>
+                  <code codeSystem="2.16.840.1.113883.5.4" codeSystemName="ObservationIntoleranceType"/>
+                  <statusCode code="completed"/>
+                  <effectiveTime>
+                    <low value="2012"/>
+                    <high value="2012"/>
+                  </effectiveTime>
+                  <entryRelationship>
+                    <observation classCode="OBS" moodCode="EVN">
+                      <templateId root="2.16.840.1.113883.10.20.1.28"/>
+                      <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.5"/>
+                      <templateId root="2.16.840.1.113883.10.20.1.54"/>
+                      <id root="1224711726" extension="MDHT"/>
+                      <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
+                      <statusCode code="completed"/>
+                      <effectiveTime>
+                        <low value="2012"/>
+                        <high value="2012"/>
+                      </effectiveTime>
+                    </observation>
+                  </entryRelationship>
+                  <entryRelationship>
+                    <observation classCode="OBS" moodCode="EVN">
+                      <templateId root="2.16.840.1.113883.10.20.1.55"/>
+                      <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.1"/>
+                      <id root="232389319" extension="MDHT"/>
+                      <code code="SEV" codeSystem="2.16.840.1.113883.5.4" codeSystemName="HL7ActCode" displayName="Severity observation"/>
+                      <statusCode code="completed"/>
+                      <effectiveTime>
+                        <low value="2012"/>
+                        <high value="2012"/>
+                      </effectiveTime>
+                    </observation>
+                  </entryRelationship>
+                  <entryRelationship>
+                    <observation classCode="OBS" moodCode="EVN">
+                      <templateId root="2.16.840.1.113883.10.20.1.57"/>
+                      <templateId root="2.16.840.1.113883.10.20.1.50"/>
+                      <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.1.1"/>
+                      <id root="882333667" extension="MDHT"/>
+                      <code code="33999-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Status"/>
+                      <statusCode code="completed"/>
+                      <effectiveTime>
+                        <low value="2012"/>
+                        <high value="2012"/>
+                      </effectiveTime>
+                    </observation>
+                  </entryRelationship>
+                  <entryRelationship>
+                    <act classCode="ACT" moodCode="EVN">
+                      <templateId root="2.16.840.1.113883.10.20.1.40"/>
+                      <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.2"/>
+                      <id root="293381229" extension="MDHT"/>
+                      <code code="48767-8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Annotation comment"/>
+                      <statusCode code="completed"/>
+                      <effectiveTime>
+                        <low value="2012"/>
+                        <high value="2012"/>
+                      </effectiveTime>
+                      <author/>
+                    </act>
+                  </entryRelationship>
+                </observation>
+              </entryRelationship>
+            </act>
+          </entry>
+        </section>
+      </component>
+      <component>
+        <section>
+          <templateId root="2.16.840.1.113883.10.20.1.11"/>
+          <templateId root="1.3.6.1.4.1.19376.1.5.3.1.3.6"/>
+          <id root="743380609" extension="MDHT"/>
+          <code code="11450-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Problem list"/>
+          <title>TEXT FOR TITLE</title>
+          <entry>
+            <act classCode="ACT" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.1.27"/>
+              <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.5.1"/>
+              <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.5.2"/>
+              <id root="1089130785" extension="MDHT"/>
+              <code nullFlavor="NA"/>
+              <effectiveTime>
+                <low value="2012"/>
+                <high value="2012"/>
+              </effectiveTime>
+              <entryRelationship>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.1.28"/>
+                  <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.5"/>
+                  <id root="497763026" extension="MDHT"/>
+                  <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
+                  <statusCode code="completed"/>
+                  <effectiveTime>
+                    <low value="2012"/>
+                    <high value="2012"/>
+                  </effectiveTime>
+                  <entryRelationship>
+                    <observation classCode="OBS" moodCode="EVN">
+                      <templateId root="2.16.840.1.113883.10.20.1.55"/>
+                      <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.1"/>
+                      <id root="121449074" extension="MDHT"/>
+                      <code code="SEV" codeSystem="2.16.840.1.113883.5.4" codeSystemName="HL7ActCode" displayName="Severity observation"/>
+                      <statusCode code="completed"/>
+                      <effectiveTime>
+                        <low value="2012"/>
+                        <high value="2012"/>
+                      </effectiveTime>
+                    </observation>
+                  </entryRelationship>
+                  <entryRelationship>
+                    <observation classCode="OBS" moodCode="EVN">
+                      <templateId root="2.16.840.1.113883.10.20.1.57"/>
+                      <templateId root="2.16.840.1.113883.10.20.1.50"/>
+                      <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.1.1"/>
+                      <id root="710879456" extension="MDHT"/>
+                      <code code="33999-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Status"/>
+                      <statusCode code="completed"/>
+                      <effectiveTime>
+                        <low value="2012"/>
+                        <high value="2012"/>
+                      </effectiveTime>
+                    </observation>
+                  </entryRelationship>
+                  <entryRelationship>
+                    <observation classCode="OBS" moodCode="EVN">
+                      <templateId root="2.16.840.1.113883.10.20.1.57"/>
+                      <templateId root="2.16.840.1.113883.10.20.1.51"/>
+                      <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.1.2"/>
+                      <id root="1157627648" extension="MDHT"/>
+                      <code code="11323-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Health status"/>
+                      <statusCode code="completed"/>
+                      <effectiveTime>
+                        <low value="2012"/>
+                        <high value="2012"/>
+                      </effectiveTime>
+                    </observation>
+                  </entryRelationship>
+                  <entryRelationship>
+                    <act classCode="ACT" moodCode="EVN">
+                      <templateId root="2.16.840.1.113883.10.20.1.40"/>
+                      <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.2"/>
+                      <id root="715951188" extension="MDHT"/>
+                      <code code="48767-8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Annotation comment"/>
+                      <statusCode code="completed"/>
+                      <effectiveTime>
+                        <low value="2012"/>
+                        <high value="2012"/>
+                      </effectiveTime>
+                      <author/>
+                    </act>
+                  </entryRelationship>
+                </observation>
+              </entryRelationship>
+            </act>
+          </entry>
+        </section>
+      </component>
+      <component>
+        <section>
+          <templateId root="2.16.840.1.113883.10.20.1.4"/>
+          <templateId root="1.3.6.1.4.1.19376.1.5.3.1.3.14"/>
+          <id root="299069485" extension="MDHT"/>
+          <code code="10157-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="History of family member diseases"/>
+          <title>TEXT FOR TITLE</title>
+        </section>
+      </component>
+      <component>
+        <section>
+          <templateId root="2.16.840.1.113883.10.20.1.4"/>
+          <templateId root="1.3.6.1.4.1.19376.1.5.3.1.3.14"/>
+          <templateId root="1.3.6.1.4.1.19376.1.5.3.1.3.15"/>
+          <id root="12703604" extension="MDHT"/>
+          <code code="10157-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="History of family member diseases"/>
+          <title>TEXT FOR TITLE</title>
+          <entry>
+            <organizer classCode="CLUSTER" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.1.23"/>
+              <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.15"/>
+              <id root="1098386735" extension="MDHT"/>
+              <code codeSystem="2.16.840.1.113883.5.111" codeSystemName="RoleCode"/>
+              <statusCode code="completed"/>
+              <effectiveTime>
+                <low value="2012"/>
+                <high value="2012"/>
+              </effectiveTime>
+              <component>
+                <observation moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.1.22"/>
+                  <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13"/>
+                  <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13.3"/>
+                  <id root="1587451224" extension="MDHT"/>
+                  <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
+                  <statusCode code="completed"/>
+                  <effectiveTime>
+                    <low value="2012"/>
+                    <high value="2012"/>
+                  </effectiveTime>
+                </observation>
+              </component>
+            </organizer>
+          </entry>
+        </section>
+      </component>
+      <component>
+        <section>
+          <templateId root="2.16.840.1.113883.10.20.1.15"/>
+          <templateId root="1.3.6.1.4.1.19376.1.5.3.1.3.16"/>
+          <id root="1276188996" extension="MDHT"/>
+          <code code="29762-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Social history"/>
+          <title>TEXT FOR TITLE</title>
+        </section>
+      </component>
+      <component>
+        <section>
+          <templateId root="2.16.840.1.113883.10.20.1.15"/>
+          <templateId root="1.3.6.1.4.1.19376.1.5.3.1.3.16.1"/>
+          <id root="818690261" extension="MDHT"/>
+          <code code="29762-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Social history"/>
+          <title>TEXT FOR TITLE</title>
+          <entry>
+            <observation classCode="OBS" moodCode="EVN">
+              <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13"/>
+              <templateId root="2.16.840.1.113883.10.20.1.33"/>
+              <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13.4"/>
+              <id root="1708773165" extension="MDHT"/>
+              <code code="641648100"/>
+              <statusCode code="completed"/>
+              <effectiveTime>
+                <low value="2012"/>
+                <high value="2012"/>
+              </effectiveTime>
+            </observation>
+          </entry>
+        </section>
+      </component>
+      <component>
+        <section>
+          <templateId root="1.3.6.1.4.1.19376.1.5.3.1.3.24"/>
+          <templateId root="1.3.6.1.4.1.19376.1.5.3.1.1.9.15"/>
+          <templateId root="1.3.6.1.4.1.19376.1.12.1.2.5"/>
+          <id root="2077169378" extension="MDHT"/>
+          <code code="70948-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Ocular physical exam"/>
+          <title>TEXT FOR TITLE</title>
+          <component>
+            <section>
+              <templateId root="1.3.6.1.4.1.19376.1.5.3.1.1.9.19"/>
+              <templateId root="1.3.6.1.4.1.19376.1.12.1.2.6"/>
+              <id root="1826642915" extension="MDHT"/>
+              <code code="10197-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="EYE"/>
+              <title>TEXT FOR TITLE</title>
+            </section>
+          </component>
+        </section>
+      </component>
+      <component>
+        <section>
+          <templateId root="1.3.6.1.4.1.19376.1.5.3.1.1.13.2.5"/>
+          <id root="1695538985" extension="MDHT"/>
+          <code code="51847-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="ASSESSMENT AND PLAN"/>
+          <title>TEXT FOR TITLE</title>
+        </section>
+      </component>
+    </structuredBody>
+  </component>
+</ClinicalDocument>
