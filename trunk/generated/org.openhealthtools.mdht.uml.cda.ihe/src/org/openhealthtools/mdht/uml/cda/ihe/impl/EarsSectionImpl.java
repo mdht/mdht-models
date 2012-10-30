@@ -22,7 +22,6 @@ import org.openhealthtools.mdht.uml.cda.ihe.IHEPackage;
 import org.openhealthtools.mdht.uml.cda.ihe.ProblemEntry;
 import org.openhealthtools.mdht.uml.cda.ihe.operations.EarsSectionOperations;
 import org.openhealthtools.mdht.uml.cda.impl.SectionImpl;
-import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 
 /**
  * <!-- begin-user-doc -->
@@ -35,76 +34,76 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  */
 public class EarsSectionImpl extends SectionImpl implements EarsSection {
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	protected EarsSectionImpl() {
-    super();
-  }
+		super();
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	@Override
 	protected EClass eStaticClass() {
-    return IHEPackage.Literals.EARS_SECTION;
-  }
+		return IHEPackage.Literals.EARS_SECTION;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public boolean validateEarsSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return EarsSectionOperations.validateEarsSectionTemplateId(this, diagnostics, context);
-  }
+		return EarsSectionOperations.validateEarsSectionTemplateId(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public boolean validateEarsSectionCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return EarsSectionOperations.validateEarsSectionCode(this, diagnostics, context);
-  }
+		return EarsSectionOperations.validateEarsSectionCode(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public boolean validateEarsSectionProblemEntry(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return EarsSectionOperations.validateEarsSectionProblemEntry(this, diagnostics, context);
-  }
+		return EarsSectionOperations.validateEarsSectionProblemEntry(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public ProblemEntry getProblemEntry() {
-    return EarsSectionOperations.getProblemEntry(this);
-  }
+		return EarsSectionOperations.getProblemEntry(this);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public EarsSection init() {
-      return Initializer.Util.init(this);
-  }
+		return Initializer.Util.init(this);
+	}
 
-  /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public EarsSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
+	/**
+	   * <!-- begin-user-doc -->
+	   * <!-- end-user-doc -->
+	   * @generated
+	   */
+	public EarsSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+		Initializer.Util.init(this, initializers);
+		return this;
+	}
 } // EarsSectionImpl

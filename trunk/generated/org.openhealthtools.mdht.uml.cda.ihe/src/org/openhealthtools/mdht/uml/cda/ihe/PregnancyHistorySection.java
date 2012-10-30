@@ -31,61 +31,61 @@ import org.openhealthtools.mdht.uml.cda.Section;
  */
 public interface PregnancyHistorySection extends Section {
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * <!-- begin-model-doc -->
-   * @param diagnostics The chain of diagnostics to which problems are to be appended.
-   * @param context The cache of context-specific information.
-   * <!-- end-model-doc -->
-   * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.templateId->exists(id : datatypes::II | id.root = \'1.3.6.1.4.1.19376.1.5.3.1.1.5.3.4\')'"
-   * @generated
-   */
+	* <!-- begin-model-doc -->
+	* @param diagnostics The chain of diagnostics to which problems are to be appended.
+	* @param context The cache of context-specific information.
+	* <!-- end-model-doc -->
+	* @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.templateId->exists(id : datatypes::II | id.root = \'1.3.6.1.4.1.19376.1.5.3.1.1.5.3.4\')'"
+	* @generated
+	*/
 	boolean validatePregnancyHistorySectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * <!-- begin-model-doc -->
-   * @param diagnostics The chain of diagnostics to which problems are to be appended.
-   * @param context The cache of context-specific information.
-   * <!-- end-model-doc -->
-   * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and \nlet value : datatypes::CE = self.code.oclAsType(datatypes::CE) in \nvalue.code = \'10162-6\' and value.codeSystem = \'2.16.840.1.113883.6.1\')'"
-   * @generated
-   */
+	* <!-- begin-model-doc -->
+	* @param diagnostics The chain of diagnostics to which problems are to be appended.
+	* @param context The cache of context-specific information.
+	* <!-- end-model-doc -->
+	* @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and \nlet value : datatypes::CE = self.code.oclAsType(datatypes::CE) in \nvalue.code = \'10162-6\' and value.codeSystem = \'2.16.840.1.113883.6.1\')'"
+	* @generated
+	*/
 	boolean validatePregnancyHistorySectionCode(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * <!-- begin-model-doc -->
-   * @param diagnostics The chain of diagnostics to which problems are to be appended.
-   * @param context The cache of context-specific information.
-   * <!-- end-model-doc -->
-   * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entry->exists(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(ihe::PregnancyObservation))'"
-   * @generated
-   */
+	* <!-- begin-model-doc -->
+	* @param diagnostics The chain of diagnostics to which problems are to be appended.
+	* @param context The cache of context-specific information.
+	* <!-- end-model-doc -->
+	* @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entry->exists(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(ihe::PregnancyObservation))'"
+	* @generated
+	*/
 	boolean validatePregnancyHistorySectionPregnancyObservation(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @model kind="operation" required="true" ordered="false"
-   *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(ihe::PregnancyObservation)).oclAsType(ihe::PregnancyObservation)'"
-   * @generated
-   */
+	* @model kind="operation" required="true" ordered="false"
+	*        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(ihe::PregnancyObservation)).oclAsType(ihe::PregnancyObservation)'"
+	* @generated
+	*/
 	EList<PregnancyObservation> getPregnancyObservations();
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public PregnancyHistorySection init();
 
-  /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public PregnancyHistorySection init(Iterable<? extends Initializer<? extends EObject>> initializers);
+	/**
+	   * <!-- begin-user-doc -->
+	   * <!-- end-user-doc -->
+	   * @generated
+	   */
+	public PregnancyHistorySection init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // PregnancyHistorySection

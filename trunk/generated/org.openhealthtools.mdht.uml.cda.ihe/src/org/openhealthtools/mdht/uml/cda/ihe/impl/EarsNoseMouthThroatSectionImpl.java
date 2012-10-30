@@ -22,7 +22,6 @@ import org.openhealthtools.mdht.uml.cda.ihe.IHEPackage;
 import org.openhealthtools.mdht.uml.cda.ihe.ProblemEntry;
 import org.openhealthtools.mdht.uml.cda.ihe.operations.EarsNoseMouthThroatSectionOperations;
 import org.openhealthtools.mdht.uml.cda.impl.SectionImpl;
-import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 
 /**
  * <!-- begin-user-doc -->
@@ -35,77 +34,79 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  */
 public class EarsNoseMouthThroatSectionImpl extends SectionImpl implements EarsNoseMouthThroatSection {
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	protected EarsNoseMouthThroatSectionImpl() {
-    super();
-  }
+		super();
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	@Override
 	protected EClass eStaticClass() {
-    return IHEPackage.Literals.EARS_NOSE_MOUTH_THROAT_SECTION;
-  }
+		return IHEPackage.Literals.EARS_NOSE_MOUTH_THROAT_SECTION;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public boolean validateEarsNoseMouthThroatSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return EarsNoseMouthThroatSectionOperations.validateEarsNoseMouthThroatSectionTemplateId(this, diagnostics, context);
-  }
+		return EarsNoseMouthThroatSectionOperations.validateEarsNoseMouthThroatSectionTemplateId(
+			this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public boolean validateEarsNoseMouthThroatSectionCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return EarsNoseMouthThroatSectionOperations.validateEarsNoseMouthThroatSectionCode(this, diagnostics, context);
-  }
+		return EarsNoseMouthThroatSectionOperations.validateEarsNoseMouthThroatSectionCode(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public boolean validateEarsNoseMouthThroatSectionProblemEntry(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-    return EarsNoseMouthThroatSectionOperations.validateEarsNoseMouthThroatSectionProblemEntry(this, diagnostics, context);
-  }
+		return EarsNoseMouthThroatSectionOperations.validateEarsNoseMouthThroatSectionProblemEntry(
+			this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public ProblemEntry getProblemEntry() {
-    return EarsNoseMouthThroatSectionOperations.getProblemEntry(this);
-  }
+		return EarsNoseMouthThroatSectionOperations.getProblemEntry(this);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public EarsNoseMouthThroatSection init() {
-      return Initializer.Util.init(this);
-  }
+		return Initializer.Util.init(this);
+	}
 
-  /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public EarsNoseMouthThroatSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
+	/**
+	   * <!-- begin-user-doc -->
+	   * <!-- end-user-doc -->
+	   * @generated
+	   */
+	public EarsNoseMouthThroatSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+		Initializer.Util.init(this, initializers);
+		return this;
+	}
 } // EarsNoseMouthThroatSectionImpl

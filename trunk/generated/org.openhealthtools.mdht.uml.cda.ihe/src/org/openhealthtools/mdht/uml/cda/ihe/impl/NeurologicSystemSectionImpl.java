@@ -22,7 +22,6 @@ import org.openhealthtools.mdht.uml.cda.ihe.NeurologicSystemSection;
 import org.openhealthtools.mdht.uml.cda.ihe.ProblemEntry;
 import org.openhealthtools.mdht.uml.cda.ihe.operations.NeurologicSystemSectionOperations;
 import org.openhealthtools.mdht.uml.cda.impl.SectionImpl;
-import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 
 /**
  * <!-- begin-user-doc -->
@@ -35,76 +34,76 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  */
 public class NeurologicSystemSectionImpl extends SectionImpl implements NeurologicSystemSection {
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	protected NeurologicSystemSectionImpl() {
-    super();
-  }
+		super();
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	@Override
 	protected EClass eStaticClass() {
-    return IHEPackage.Literals.NEUROLOGIC_SYSTEM_SECTION;
-  }
+		return IHEPackage.Literals.NEUROLOGIC_SYSTEM_SECTION;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public boolean validateNeurologicSystemSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return NeurologicSystemSectionOperations.validateNeurologicSystemSectionTemplateId(this, diagnostics, context);
-  }
+		return NeurologicSystemSectionOperations.validateNeurologicSystemSectionTemplateId(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public boolean validateNeurologicSystemSectionCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return NeurologicSystemSectionOperations.validateNeurologicSystemSectionCode(this, diagnostics, context);
-  }
+		return NeurologicSystemSectionOperations.validateNeurologicSystemSectionCode(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public boolean validateNeurologicSystemSectionProblemEntry(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return NeurologicSystemSectionOperations.validateNeurologicSystemSectionProblemEntry(this, diagnostics, context);
-  }
+		return NeurologicSystemSectionOperations.validateNeurologicSystemSectionProblemEntry(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public ProblemEntry getProblemEntry() {
-    return NeurologicSystemSectionOperations.getProblemEntry(this);
-  }
+		return NeurologicSystemSectionOperations.getProblemEntry(this);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public NeurologicSystemSection init() {
-      return Initializer.Util.init(this);
-  }
+		return Initializer.Util.init(this);
+	}
 
-  /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public NeurologicSystemSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
+	/**
+	   * <!-- begin-user-doc -->
+	   * <!-- end-user-doc -->
+	   * @generated
+	   */
+	public NeurologicSystemSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+		Initializer.Util.init(this, initializers);
+		return this;
+	}
 } // NeurologicSystemSectionImpl

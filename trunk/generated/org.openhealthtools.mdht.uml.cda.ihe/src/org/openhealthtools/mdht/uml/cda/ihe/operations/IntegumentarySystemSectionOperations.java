@@ -46,248 +46,228 @@ import org.openhealthtools.mdht.uml.cda.operations.SectionOperations;
  */
 public class IntegumentarySystemSectionOperations extends SectionOperations {
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	protected IntegumentarySystemSectionOperations() {
-    super();
-  }
+		super();
+	}
 
 	/**
-   * The cached OCL expression body for the '{@link #validateIntegumentarySystemSectionTemplateId(IntegumentarySystemSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Integumentary System Section Template Id</em>}' operation.
-   * <!-- begin-user-doc -->
+	* The cached OCL expression body for the '{@link #validateIntegumentarySystemSectionTemplateId(IntegumentarySystemSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Integumentary System Section Template Id</em>}' operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @see #validateIntegumentarySystemSectionTemplateId(IntegumentarySystemSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-   * @generated
-   * @ordered
-   */
+	* @see #validateIntegumentarySystemSectionTemplateId(IntegumentarySystemSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 	protected static final String VALIDATE_INTEGUMENTARY_SYSTEM_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.templateId->exists(id : datatypes::II | id.root = '1.3.6.1.4.1.19376.1.5.3.1.1.9.17')";
 
 	/**
-   * The cached OCL invariant for the '{@link #validateIntegumentarySystemSectionTemplateId(IntegumentarySystemSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Integumentary System Section Template Id</em>}' invariant operation.
-   * <!-- begin-user-doc -->
+	* The cached OCL invariant for the '{@link #validateIntegumentarySystemSectionTemplateId(IntegumentarySystemSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Integumentary System Section Template Id</em>}' invariant operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @see #validateIntegumentarySystemSectionTemplateId(IntegumentarySystemSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-   * @generated
-   * @ordered
-   */
+	* @see #validateIntegumentarySystemSectionTemplateId(IntegumentarySystemSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 	protected static Constraint VALIDATE_INTEGUMENTARY_SYSTEM_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * <!-- begin-model-doc -->
-   * @param integumentarySystemSection The receiving '<em><b>Integumentary System Section</b></em>' model object.
-   * @param diagnostics The chain of diagnostics to which problems are to be appended.
-   * @param context The cache of context-specific information.
-   * <!-- end-model-doc -->
-   * @generated
-   */
+	* <!-- begin-model-doc -->
+	* @param integumentarySystemSection The receiving '<em><b>Integumentary System Section</b></em>' model object.
+	* @param diagnostics The chain of diagnostics to which problems are to be appended.
+	* @param context The cache of context-specific information.
+	* <!-- end-model-doc -->
+	* @generated
+	*/
 	public static boolean validateIntegumentarySystemSectionTemplateId(
 			IntegumentarySystemSection integumentarySystemSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-  	  
-    if (VALIDATE_INTEGUMENTARY_SYSTEM_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-      OCL.Helper helper = EOCL_ENV.createOCLHelper();
-      helper.setContext(IHEPackage.Literals.INTEGUMENTARY_SYSTEM_SECTION);
-      try
-      {
-        VALIDATE_INTEGUMENTARY_SYSTEM_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_INTEGUMENTARY_SYSTEM_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-      }
-      catch (ParserException pe)
-      {
-        throw new UnsupportedOperationException(pe.getLocalizedMessage());
-      }
-    }
-    if (!EOCL_ENV.createQuery(VALIDATE_INTEGUMENTARY_SYSTEM_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(integumentarySystemSection))
-    {
-      if (diagnostics != null)
-      {
-        diagnostics.add
-          (new BasicDiagnostic
-            (Diagnostic.ERROR,
-             IHEValidator.DIAGNOSTIC_SOURCE,
-             IHEValidator.INTEGUMENTARY_SYSTEM_SECTION__INTEGUMENTARY_SYSTEM_SECTION_TEMPLATE_ID,
-             IHEPlugin.INSTANCE.getString("IntegumentarySystemSectionTemplateId"),
-             new Object [] { integumentarySystemSection }));
-      }
-       
-      return false;
-    }
-    return true;
-  }
+
+		if (VALIDATE_INTEGUMENTARY_SYSTEM_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setContext(IHEPackage.Literals.INTEGUMENTARY_SYSTEM_SECTION);
+			try {
+				VALIDATE_INTEGUMENTARY_SYSTEM_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_INTEGUMENTARY_SYSTEM_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+			} catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		if (!EOCL_ENV.createQuery(VALIDATE_INTEGUMENTARY_SYSTEM_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			integumentarySystemSection)) {
+			if (diagnostics != null) {
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, IHEValidator.DIAGNOSTIC_SOURCE,
+					IHEValidator.INTEGUMENTARY_SYSTEM_SECTION__INTEGUMENTARY_SYSTEM_SECTION_TEMPLATE_ID,
+					IHEPlugin.INSTANCE.getString("IntegumentarySystemSectionTemplateId"),
+					new Object[] { integumentarySystemSection }));
+			}
+
+			return false;
+		}
+		return true;
+	}
 
 	/**
-   * The cached OCL expression body for the '{@link #validateIntegumentarySystemSectionCode(IntegumentarySystemSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Integumentary System Section Code</em>}' operation.
-   * <!-- begin-user-doc -->
+	* The cached OCL expression body for the '{@link #validateIntegumentarySystemSectionCode(IntegumentarySystemSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Integumentary System Section Code</em>}' operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @see #validateIntegumentarySystemSectionCode(IntegumentarySystemSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-   * @generated
-   * @ordered
-   */
-	protected static final String VALIDATE_INTEGUMENTARY_SYSTEM_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and "+
-"let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in "+
-"value.code = '29302-7' and value.codeSystem = '2.16.840.1.113883.6.1')";
+	* @see #validateIntegumentarySystemSectionCode(IntegumentarySystemSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
+	protected static final String VALIDATE_INTEGUMENTARY_SYSTEM_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and "
+			+ "let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in "
+			+ "value.code = '29302-7' and value.codeSystem = '2.16.840.1.113883.6.1')";
 
 	/**
-   * The cached OCL invariant for the '{@link #validateIntegumentarySystemSectionCode(IntegumentarySystemSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Integumentary System Section Code</em>}' invariant operation.
-   * <!-- begin-user-doc -->
+	* The cached OCL invariant for the '{@link #validateIntegumentarySystemSectionCode(IntegumentarySystemSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Integumentary System Section Code</em>}' invariant operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @see #validateIntegumentarySystemSectionCode(IntegumentarySystemSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-   * @generated
-   * @ordered
-   */
+	* @see #validateIntegumentarySystemSectionCode(IntegumentarySystemSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 	protected static Constraint VALIDATE_INTEGUMENTARY_SYSTEM_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * <!-- begin-model-doc -->
-   * @param integumentarySystemSection The receiving '<em><b>Integumentary System Section</b></em>' model object.
-   * @param diagnostics The chain of diagnostics to which problems are to be appended.
-   * @param context The cache of context-specific information.
-   * <!-- end-model-doc -->
-   * @generated
-   */
+	* <!-- begin-model-doc -->
+	* @param integumentarySystemSection The receiving '<em><b>Integumentary System Section</b></em>' model object.
+	* @param diagnostics The chain of diagnostics to which problems are to be appended.
+	* @param context The cache of context-specific information.
+	* <!-- end-model-doc -->
+	* @generated
+	*/
 	public static boolean validateIntegumentarySystemSectionCode(IntegumentarySystemSection integumentarySystemSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
-    if (VALIDATE_INTEGUMENTARY_SYSTEM_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-      OCL.Helper helper = EOCL_ENV.createOCLHelper();
-      helper.setContext(IHEPackage.Literals.INTEGUMENTARY_SYSTEM_SECTION);
-      try
-      {
-        VALIDATE_INTEGUMENTARY_SYSTEM_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_INTEGUMENTARY_SYSTEM_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-      }
-      catch (ParserException pe)
-      {
-        throw new UnsupportedOperationException(pe.getLocalizedMessage());
-      }
-    }
-    if (!EOCL_ENV.createQuery(VALIDATE_INTEGUMENTARY_SYSTEM_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(integumentarySystemSection))
-    {
-      if (diagnostics != null)
-      {
-        diagnostics.add
-          (new BasicDiagnostic
-            (Diagnostic.ERROR,
-             IHEValidator.DIAGNOSTIC_SOURCE,
-             IHEValidator.INTEGUMENTARY_SYSTEM_SECTION__INTEGUMENTARY_SYSTEM_SECTION_CODE,
-             IHEPlugin.INSTANCE.getString("IntegumentarySystemSectionCode"),
-             new Object [] { integumentarySystemSection }));
-      }
-       
-      return false;
-    }
-    return true;
-  }
+
+		if (VALIDATE_INTEGUMENTARY_SYSTEM_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setContext(IHEPackage.Literals.INTEGUMENTARY_SYSTEM_SECTION);
+			try {
+				VALIDATE_INTEGUMENTARY_SYSTEM_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_INTEGUMENTARY_SYSTEM_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+			} catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		if (!EOCL_ENV.createQuery(VALIDATE_INTEGUMENTARY_SYSTEM_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			integumentarySystemSection)) {
+			if (diagnostics != null) {
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, IHEValidator.DIAGNOSTIC_SOURCE,
+					IHEValidator.INTEGUMENTARY_SYSTEM_SECTION__INTEGUMENTARY_SYSTEM_SECTION_CODE,
+					IHEPlugin.INSTANCE.getString("IntegumentarySystemSectionCode"),
+					new Object[] { integumentarySystemSection }));
+			}
+
+			return false;
+		}
+		return true;
+	}
 
 	/**
-   * The cached OCL expression body for the '{@link #validateIntegumentarySystemSectionProblemEntry(IntegumentarySystemSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Integumentary System Section Problem Entry</em>}' operation.
-   * <!-- begin-user-doc -->
+	* The cached OCL expression body for the '{@link #validateIntegumentarySystemSectionProblemEntry(IntegumentarySystemSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Integumentary System Section Problem Entry</em>}' operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @see #validateIntegumentarySystemSectionProblemEntry(IntegumentarySystemSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-   * @generated
-   * @ordered
-   */
+	* @see #validateIntegumentarySystemSectionProblemEntry(IntegumentarySystemSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 	protected static final String VALIDATE_INTEGUMENTARY_SYSTEM_SECTION_PROBLEM_ENTRY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->one(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(ihe::ProblemEntry))";
 
 	/**
-   * The cached OCL invariant for the '{@link #validateIntegumentarySystemSectionProblemEntry(IntegumentarySystemSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Integumentary System Section Problem Entry</em>}' invariant operation.
-   * <!-- begin-user-doc -->
+	* The cached OCL invariant for the '{@link #validateIntegumentarySystemSectionProblemEntry(IntegumentarySystemSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Integumentary System Section Problem Entry</em>}' invariant operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @see #validateIntegumentarySystemSectionProblemEntry(IntegumentarySystemSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-   * @generated
-   * @ordered
-   */
+	* @see #validateIntegumentarySystemSectionProblemEntry(IntegumentarySystemSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 	protected static Constraint VALIDATE_INTEGUMENTARY_SYSTEM_SECTION_PROBLEM_ENTRY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * <!-- begin-model-doc -->
-   * @param integumentarySystemSection The receiving '<em><b>Integumentary System Section</b></em>' model object.
-   * @param diagnostics The chain of diagnostics to which problems are to be appended.
-   * @param context The cache of context-specific information.
-   * <!-- end-model-doc -->
-   * @generated
-   */
+	* <!-- begin-model-doc -->
+	* @param integumentarySystemSection The receiving '<em><b>Integumentary System Section</b></em>' model object.
+	* @param diagnostics The chain of diagnostics to which problems are to be appended.
+	* @param context The cache of context-specific information.
+	* <!-- end-model-doc -->
+	* @generated
+	*/
 	public static boolean validateIntegumentarySystemSectionProblemEntry(
 			IntegumentarySystemSection integumentarySystemSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-  	  
-    if (VALIDATE_INTEGUMENTARY_SYSTEM_SECTION_PROBLEM_ENTRY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-      OCL.Helper helper = EOCL_ENV.createOCLHelper();
-      helper.setContext(IHEPackage.Literals.INTEGUMENTARY_SYSTEM_SECTION);
-      try
-      {
-        VALIDATE_INTEGUMENTARY_SYSTEM_SECTION_PROBLEM_ENTRY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_INTEGUMENTARY_SYSTEM_SECTION_PROBLEM_ENTRY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-      }
-      catch (ParserException pe)
-      {
-        throw new UnsupportedOperationException(pe.getLocalizedMessage());
-      }
-    }
-    if (!EOCL_ENV.createQuery(VALIDATE_INTEGUMENTARY_SYSTEM_SECTION_PROBLEM_ENTRY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(integumentarySystemSection))
-    {
-      if (diagnostics != null)
-      {
-        diagnostics.add
-          (new BasicDiagnostic
-            (Diagnostic.INFO,
-             IHEValidator.DIAGNOSTIC_SOURCE,
-             IHEValidator.INTEGUMENTARY_SYSTEM_SECTION__INTEGUMENTARY_SYSTEM_SECTION_PROBLEM_ENTRY,
-             IHEPlugin.INSTANCE.getString("IntegumentarySystemSectionProblemEntry"),
-             new Object [] { integumentarySystemSection }));
-      }
-       
-      return false;
-    }
-    return true;
-  }
+
+		if (VALIDATE_INTEGUMENTARY_SYSTEM_SECTION_PROBLEM_ENTRY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setContext(IHEPackage.Literals.INTEGUMENTARY_SYSTEM_SECTION);
+			try {
+				VALIDATE_INTEGUMENTARY_SYSTEM_SECTION_PROBLEM_ENTRY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_INTEGUMENTARY_SYSTEM_SECTION_PROBLEM_ENTRY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+			} catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		if (!EOCL_ENV.createQuery(VALIDATE_INTEGUMENTARY_SYSTEM_SECTION_PROBLEM_ENTRY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			integumentarySystemSection)) {
+			if (diagnostics != null) {
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.INFO, IHEValidator.DIAGNOSTIC_SOURCE,
+					IHEValidator.INTEGUMENTARY_SYSTEM_SECTION__INTEGUMENTARY_SYSTEM_SECTION_PROBLEM_ENTRY,
+					IHEPlugin.INSTANCE.getString("IntegumentarySystemSectionProblemEntry"),
+					new Object[] { integumentarySystemSection }));
+			}
+
+			return false;
+		}
+		return true;
+	}
 
 	/**
-   * The cached OCL expression body for the '{@link #getProblemEntry(IntegumentarySystemSection) <em>Get Problem Entry</em>}' operation.
-   * <!-- begin-user-doc -->
+	* The cached OCL expression body for the '{@link #getProblemEntry(IntegumentarySystemSection) <em>Get Problem Entry</em>}' operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @see #getProblemEntry(IntegumentarySystemSection)
-   * @generated
-   * @ordered
-   */
+	* @see #getProblemEntry(IntegumentarySystemSection)
+	* @generated
+	* @ordered
+	*/
 	protected static final String GET_PROBLEM_ENTRY__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(ihe::ProblemEntry))->asSequence()->any(true).oclAsType(ihe::ProblemEntry)";
 
 	/**
-   * The cached OCL query for the '{@link #getProblemEntry(IntegumentarySystemSection) <em>Get Problem Entry</em>}' query operation.
-   * <!-- begin-user-doc -->
+	* The cached OCL query for the '{@link #getProblemEntry(IntegumentarySystemSection) <em>Get Problem Entry</em>}' query operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @see #getProblemEntry(IntegumentarySystemSection)
-   * @generated
-   * @ordered
-   */
+	* @see #getProblemEntry(IntegumentarySystemSection)
+	* @generated
+	* @ordered
+	*/
 	protected static OCLExpression<EClassifier> GET_PROBLEM_ENTRY__EOCL_QRY;
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public static ProblemEntry getProblemEntry(IntegumentarySystemSection integumentarySystemSection) {
-    if (GET_PROBLEM_ENTRY__EOCL_QRY == null)
-    {
-      OCL.Helper helper = EOCL_ENV.createOCLHelper();
-      helper.setOperationContext(IHEPackage.Literals.INTEGUMENTARY_SYSTEM_SECTION, IHEPackage.Literals.INTEGUMENTARY_SYSTEM_SECTION.getEAllOperations().get(58));
-      try
-      {
-        GET_PROBLEM_ENTRY__EOCL_QRY = helper.createQuery(GET_PROBLEM_ENTRY__EOCL_EXP);
-      }
-      catch (ParserException pe)
-      {
-        throw new UnsupportedOperationException(pe.getLocalizedMessage());
-      }
-    }
-    OCL.Query query = EOCL_ENV.createQuery(GET_PROBLEM_ENTRY__EOCL_QRY);
-    return (ProblemEntry) query.evaluate(integumentarySystemSection);
-  }
+		if (GET_PROBLEM_ENTRY__EOCL_QRY == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setOperationContext(
+				IHEPackage.Literals.INTEGUMENTARY_SYSTEM_SECTION,
+				IHEPackage.Literals.INTEGUMENTARY_SYSTEM_SECTION.getEAllOperations().get(58));
+			try {
+				GET_PROBLEM_ENTRY__EOCL_QRY = helper.createQuery(GET_PROBLEM_ENTRY__EOCL_EXP);
+			} catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		OCL.Query query = EOCL_ENV.createQuery(GET_PROBLEM_ENTRY__EOCL_QRY);
+		return (ProblemEntry) query.evaluate(integumentarySystemSection);
+	}
 
 } // IntegumentarySystemSectionOperations

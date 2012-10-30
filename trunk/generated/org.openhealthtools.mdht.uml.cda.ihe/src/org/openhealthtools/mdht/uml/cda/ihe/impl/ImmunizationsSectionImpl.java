@@ -22,7 +22,6 @@ import org.openhealthtools.mdht.uml.cda.ihe.IHEPackage;
 import org.openhealthtools.mdht.uml.cda.ihe.Immunization;
 import org.openhealthtools.mdht.uml.cda.ihe.ImmunizationsSection;
 import org.openhealthtools.mdht.uml.cda.ihe.operations.ImmunizationsSectionOperations;
-import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 
 /**
  * <!-- begin-user-doc -->
@@ -36,68 +35,69 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 public class ImmunizationsSectionImpl extends org.openhealthtools.mdht.uml.cda.ccd.impl.ImmunizationsSectionImpl
 		implements ImmunizationsSection {
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	protected ImmunizationsSectionImpl() {
-    super();
-  }
+		super();
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	@Override
 	protected EClass eStaticClass() {
-    return IHEPackage.Literals.IMMUNIZATIONS_SECTION;
-  }
+		return IHEPackage.Literals.IMMUNIZATIONS_SECTION;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public boolean validateIHEImmunizationsSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return ImmunizationsSectionOperations.validateIHEImmunizationsSectionTemplateId(this, diagnostics, context);
-  }
+		return ImmunizationsSectionOperations.validateIHEImmunizationsSectionTemplateId(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public boolean validateIHEImmunizationsSectionImmunization(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return ImmunizationsSectionOperations.validateIHEImmunizationsSectionImmunization(this, diagnostics, context);
-  }
+		return ImmunizationsSectionOperations.validateIHEImmunizationsSectionImmunization(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public EList<Immunization> getImmunizations() {
-    return ImmunizationsSectionOperations.getImmunizations(this);
-  }
+		return ImmunizationsSectionOperations.getImmunizations(this);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	@Override
 	public ImmunizationsSection init() {
-      return Initializer.Util.init(this);
-  }
+		return Initializer.Util.init(this);
+	}
 
-  /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public ImmunizationsSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
+	/**
+	   * <!-- begin-user-doc -->
+	   * <!-- end-user-doc -->
+	   * @generated
+	   */
+	@Override
+	public ImmunizationsSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+		Initializer.Util.init(this, initializers);
+		return this;
+	}
 } // ImmunizationsSectionImpl

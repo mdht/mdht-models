@@ -21,7 +21,6 @@ import org.openhealthtools.mdht.uml.cda.ihe.IHEPackage;
 import org.openhealthtools.mdht.uml.cda.ihe.MedicationsAdministeredSection;
 import org.openhealthtools.mdht.uml.cda.ihe.operations.MedicationsAdministeredSectionOperations;
 import org.openhealthtools.mdht.uml.cda.impl.SectionImpl;
-import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 
 /**
  * <!-- begin-user-doc -->
@@ -34,59 +33,61 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  */
 public class MedicationsAdministeredSectionImpl extends SectionImpl implements MedicationsAdministeredSection {
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	protected MedicationsAdministeredSectionImpl() {
-    super();
-  }
+		super();
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	@Override
 	protected EClass eStaticClass() {
-    return IHEPackage.Literals.MEDICATIONS_ADMINISTERED_SECTION;
-  }
+		return IHEPackage.Literals.MEDICATIONS_ADMINISTERED_SECTION;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public boolean validateMedicationsAdministeredSectionTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-    return MedicationsAdministeredSectionOperations.validateMedicationsAdministeredSectionTemplateId(this, diagnostics, context);
-  }
+		return MedicationsAdministeredSectionOperations.validateMedicationsAdministeredSectionTemplateId(
+			this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public boolean validateMedicationsAdministeredSectionCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return MedicationsAdministeredSectionOperations.validateMedicationsAdministeredSectionCode(this, diagnostics, context);
-  }
+		return MedicationsAdministeredSectionOperations.validateMedicationsAdministeredSectionCode(
+			this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public MedicationsAdministeredSection init() {
-      return Initializer.Util.init(this);
-  }
+		return Initializer.Util.init(this);
+	}
 
-  /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public MedicationsAdministeredSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
+	/**
+	   * <!-- begin-user-doc -->
+	   * <!-- end-user-doc -->
+	   * @generated
+	   */
+	public MedicationsAdministeredSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+		Initializer.Util.init(this, initializers);
+		return this;
+	}
 } // MedicationsAdministeredSectionImpl

@@ -22,7 +22,6 @@ import org.openhealthtools.mdht.uml.cda.ihe.IHEPackage;
 import org.openhealthtools.mdht.uml.cda.ihe.ProblemEntry;
 import org.openhealthtools.mdht.uml.cda.ihe.operations.GeneralAppearanceSectionOperations;
 import org.openhealthtools.mdht.uml.cda.impl.SectionImpl;
-import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 
 /**
  * <!-- begin-user-doc -->
@@ -35,76 +34,77 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  */
 public class GeneralAppearanceSectionImpl extends SectionImpl implements GeneralAppearanceSection {
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	protected GeneralAppearanceSectionImpl() {
-    super();
-  }
+		super();
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	@Override
 	protected EClass eStaticClass() {
-    return IHEPackage.Literals.GENERAL_APPEARANCE_SECTION;
-  }
+		return IHEPackage.Literals.GENERAL_APPEARANCE_SECTION;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public boolean validateGeneralAppearanceSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return GeneralAppearanceSectionOperations.validateGeneralAppearanceSectionTemplateId(this, diagnostics, context);
-  }
+		return GeneralAppearanceSectionOperations.validateGeneralAppearanceSectionTemplateId(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public boolean validateGeneralAppearanceSectionCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return GeneralAppearanceSectionOperations.validateGeneralAppearanceSectionCode(this, diagnostics, context);
-  }
+		return GeneralAppearanceSectionOperations.validateGeneralAppearanceSectionCode(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public boolean validateGeneralAppearanceSectionProblemEntry(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return GeneralAppearanceSectionOperations.validateGeneralAppearanceSectionProblemEntry(this, diagnostics, context);
-  }
+		return GeneralAppearanceSectionOperations.validateGeneralAppearanceSectionProblemEntry(
+			this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public ProblemEntry getProblemEntry() {
-    return GeneralAppearanceSectionOperations.getProblemEntry(this);
-  }
+		return GeneralAppearanceSectionOperations.getProblemEntry(this);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public GeneralAppearanceSection init() {
-      return Initializer.Util.init(this);
-  }
+		return Initializer.Util.init(this);
+	}
 
-  /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public GeneralAppearanceSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
+	/**
+	   * <!-- begin-user-doc -->
+	   * <!-- end-user-doc -->
+	   * @generated
+	   */
+	public GeneralAppearanceSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+		Initializer.Util.init(this, initializers);
+		return this;
+	}
 } // GeneralAppearanceSectionImpl

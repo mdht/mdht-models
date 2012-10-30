@@ -21,7 +21,6 @@ import org.openhealthtools.mdht.uml.cda.ccd.impl.FamilyHistorySectionImpl;
 import org.openhealthtools.mdht.uml.cda.ihe.FamilyMedicalHistorySection;
 import org.openhealthtools.mdht.uml.cda.ihe.IHEPackage;
 import org.openhealthtools.mdht.uml.cda.ihe.operations.FamilyMedicalHistorySectionOperations;
-import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 
 /**
  * <!-- begin-user-doc -->
@@ -34,51 +33,53 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  */
 public class FamilyMedicalHistorySectionImpl extends FamilyHistorySectionImpl implements FamilyMedicalHistorySection {
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	protected FamilyMedicalHistorySectionImpl() {
-    super();
-  }
+		super();
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	@Override
 	protected EClass eStaticClass() {
-    return IHEPackage.Literals.FAMILY_MEDICAL_HISTORY_SECTION;
-  }
+		return IHEPackage.Literals.FAMILY_MEDICAL_HISTORY_SECTION;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public boolean validateFamilyMedicalHistorySectionTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-    return FamilyMedicalHistorySectionOperations.validateFamilyMedicalHistorySectionTemplateId(this, diagnostics, context);
-  }
+		return FamilyMedicalHistorySectionOperations.validateFamilyMedicalHistorySectionTemplateId(
+			this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	@Override
 	public FamilyMedicalHistorySection init() {
-      return Initializer.Util.init(this);
-  }
+		return Initializer.Util.init(this);
+	}
 
-  /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public FamilyMedicalHistorySection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
+	/**
+	   * <!-- begin-user-doc -->
+	   * <!-- end-user-doc -->
+	   * @generated
+	   */
+	@Override
+	public FamilyMedicalHistorySection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+		Initializer.Util.init(this, initializers);
+		return this;
+	}
 } // FamilyMedicalHistorySectionImpl

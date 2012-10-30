@@ -22,7 +22,6 @@ import org.openhealthtools.mdht.uml.cda.ihe.CoverageEntry;
 import org.openhealthtools.mdht.uml.cda.ihe.IHEPackage;
 import org.openhealthtools.mdht.uml.cda.ihe.PayersSection;
 import org.openhealthtools.mdht.uml.cda.ihe.operations.PayersSectionOperations;
-import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 
 /**
  * <!-- begin-user-doc -->
@@ -36,68 +35,69 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 public class PayersSectionImpl extends org.openhealthtools.mdht.uml.cda.ccd.impl.PayersSectionImpl implements
 		PayersSection {
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	protected PayersSectionImpl() {
-    super();
-  }
+		super();
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	@Override
 	protected EClass eStaticClass() {
-    return IHEPackage.Literals.PAYERS_SECTION;
-  }
+		return IHEPackage.Literals.PAYERS_SECTION;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public boolean validateIHEPayersSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return PayersSectionOperations.validateIHEPayersSectionTemplateId(this, diagnostics, context);
-  }
+		return PayersSectionOperations.validateIHEPayersSectionTemplateId(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public boolean validateIHEPayersSectionCoverageEntry(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return PayersSectionOperations.validateIHEPayersSectionCoverageEntry(this, diagnostics, context);
-  }
+		return PayersSectionOperations.validateIHEPayersSectionCoverageEntry(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public EList<CoverageEntry> getCoverageEntries() {
-    return PayersSectionOperations.getCoverageEntries(this);
-  }
+		return PayersSectionOperations.getCoverageEntries(this);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	@Override
 	public PayersSection init() {
-      return Initializer.Util.init(this);
-  }
+		return Initializer.Util.init(this);
+	}
 
-  /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public PayersSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
+	/**
+	   * <!-- begin-user-doc -->
+	   * <!-- end-user-doc -->
+	   * @generated
+	   */
+	@Override
+	public PayersSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+		Initializer.Util.init(this, initializers);
+		return this;
+	}
 } // PayersSectionImpl

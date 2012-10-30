@@ -21,7 +21,6 @@ import org.openhealthtools.mdht.uml.cda.ccd.impl.MedicalEquipmentSectionImpl;
 import org.openhealthtools.mdht.uml.cda.ihe.IHEPackage;
 import org.openhealthtools.mdht.uml.cda.ihe.MedicalDevicesSection;
 import org.openhealthtools.mdht.uml.cda.ihe.operations.MedicalDevicesSectionOperations;
-import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 
 /**
  * <!-- begin-user-doc -->
@@ -34,50 +33,51 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  */
 public class MedicalDevicesSectionImpl extends MedicalEquipmentSectionImpl implements MedicalDevicesSection {
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	protected MedicalDevicesSectionImpl() {
-    super();
-  }
+		super();
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	@Override
 	protected EClass eStaticClass() {
-    return IHEPackage.Literals.MEDICAL_DEVICES_SECTION;
-  }
+		return IHEPackage.Literals.MEDICAL_DEVICES_SECTION;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public boolean validateMedicalDevicesSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return MedicalDevicesSectionOperations.validateMedicalDevicesSectionTemplateId(this, diagnostics, context);
-  }
+		return MedicalDevicesSectionOperations.validateMedicalDevicesSectionTemplateId(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	@Override
 	public MedicalDevicesSection init() {
-      return Initializer.Util.init(this);
-  }
+		return Initializer.Util.init(this);
+	}
 
-  /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public MedicalDevicesSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
+	/**
+	   * <!-- begin-user-doc -->
+	   * <!-- end-user-doc -->
+	   * @generated
+	   */
+	@Override
+	public MedicalDevicesSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+		Initializer.Util.init(this, initializers);
+		return this;
+	}
 } // MedicalDevicesSectionImpl

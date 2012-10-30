@@ -21,7 +21,6 @@ import org.openhealthtools.mdht.uml.cda.ihe.FamilyHistoryObservation;
 import org.openhealthtools.mdht.uml.cda.ihe.IHEPackage;
 import org.openhealthtools.mdht.uml.cda.ihe.operations.FamilyHistoryObservationOperations;
 import org.openhealthtools.mdht.uml.cda.ihe.operations.SimpleObservationOperations;
-import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 
 /**
  * <!-- begin-user-doc -->
@@ -35,86 +34,87 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 public class FamilyHistoryObservationImpl extends
 		org.openhealthtools.mdht.uml.cda.ccd.impl.FamilyHistoryObservationImpl implements FamilyHistoryObservation {
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	protected FamilyHistoryObservationImpl() {
-    super();
-  }
+		super();
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	@Override
 	protected EClass eStaticClass() {
-    return IHEPackage.Literals.FAMILY_HISTORY_OBSERVATION;
-  }
+		return IHEPackage.Literals.FAMILY_HISTORY_OBSERVATION;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public boolean validateSimpleObservationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return FamilyHistoryObservationOperations.validateSimpleObservationTemplateId(this, diagnostics, context);
-  }
+		return FamilyHistoryObservationOperations.validateSimpleObservationTemplateId(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public boolean validateSimpleObservationId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return SimpleObservationOperations.validateSimpleObservationId(this, diagnostics, context);
-  }
+		return SimpleObservationOperations.validateSimpleObservationId(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public boolean validateSimpleObservationStatusCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return SimpleObservationOperations.validateSimpleObservationStatusCode(this, diagnostics, context);
-  }
+		return SimpleObservationOperations.validateSimpleObservationStatusCode(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public boolean validateIHEFamilyHistoryObservationCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return FamilyHistoryObservationOperations.validateIHEFamilyHistoryObservationCode(this, diagnostics, context);
-  }
+		return FamilyHistoryObservationOperations.validateIHEFamilyHistoryObservationCode(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public boolean validateIHEFamilyHistoryObservationValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return FamilyHistoryObservationOperations.validateIHEFamilyHistoryObservationValue(this, diagnostics, context);
-  }
+		return FamilyHistoryObservationOperations.validateIHEFamilyHistoryObservationValue(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	@Override
 	public FamilyHistoryObservation init() {
-      return Initializer.Util.init(this);
-  }
+		return Initializer.Util.init(this);
+	}
 
-  /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public FamilyHistoryObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
+	/**
+	   * <!-- begin-user-doc -->
+	   * <!-- end-user-doc -->
+	   * @generated
+	   */
+	@Override
+	public FamilyHistoryObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+		Initializer.Util.init(this, initializers);
+		return this;
+	}
 } // FamilyHistoryObservationImpl

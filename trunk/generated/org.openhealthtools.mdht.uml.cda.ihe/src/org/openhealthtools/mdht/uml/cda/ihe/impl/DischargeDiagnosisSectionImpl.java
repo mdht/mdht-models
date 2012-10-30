@@ -22,7 +22,6 @@ import org.openhealthtools.mdht.uml.cda.ihe.IHEPackage;
 import org.openhealthtools.mdht.uml.cda.ihe.ProblemConcernEntry;
 import org.openhealthtools.mdht.uml.cda.ihe.operations.DischargeDiagnosisSectionOperations;
 import org.openhealthtools.mdht.uml.cda.impl.SectionImpl;
-import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 
 /**
  * <!-- begin-user-doc -->
@@ -35,77 +34,79 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  */
 public class DischargeDiagnosisSectionImpl extends SectionImpl implements DischargeDiagnosisSection {
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	protected DischargeDiagnosisSectionImpl() {
-    super();
-  }
+		super();
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	@Override
 	protected EClass eStaticClass() {
-    return IHEPackage.Literals.DISCHARGE_DIAGNOSIS_SECTION;
-  }
+		return IHEPackage.Literals.DISCHARGE_DIAGNOSIS_SECTION;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public boolean validateDischargeDiagnosisSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return DischargeDiagnosisSectionOperations.validateDischargeDiagnosisSectionTemplateId(this, diagnostics, context);
-  }
+		return DischargeDiagnosisSectionOperations.validateDischargeDiagnosisSectionTemplateId(
+			this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public boolean validateDischargeDiagnosisSectionCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return DischargeDiagnosisSectionOperations.validateDischargeDiagnosisSectionCode(this, diagnostics, context);
-  }
+		return DischargeDiagnosisSectionOperations.validateDischargeDiagnosisSectionCode(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public boolean validateDischargeDiagnosisSectionProblemConcernEntry(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-    return DischargeDiagnosisSectionOperations.validateDischargeDiagnosisSectionProblemConcernEntry(this, diagnostics, context);
-  }
+		return DischargeDiagnosisSectionOperations.validateDischargeDiagnosisSectionProblemConcernEntry(
+			this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public ProblemConcernEntry getProblemConcernEntry() {
-    return DischargeDiagnosisSectionOperations.getProblemConcernEntry(this);
-  }
+		return DischargeDiagnosisSectionOperations.getProblemConcernEntry(this);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public DischargeDiagnosisSection init() {
-      return Initializer.Util.init(this);
-  }
+		return Initializer.Util.init(this);
+	}
 
-  /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public DischargeDiagnosisSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
+	/**
+	   * <!-- begin-user-doc -->
+	   * <!-- end-user-doc -->
+	   * @generated
+	   */
+	public DischargeDiagnosisSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+		Initializer.Util.init(this, initializers);
+		return this;
+	}
 } // DischargeDiagnosisSectionImpl

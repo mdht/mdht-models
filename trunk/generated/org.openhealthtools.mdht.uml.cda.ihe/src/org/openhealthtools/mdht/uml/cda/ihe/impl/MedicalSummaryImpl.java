@@ -20,7 +20,6 @@ import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.ihe.IHEPackage;
 import org.openhealthtools.mdht.uml.cda.ihe.MedicalSummary;
 import org.openhealthtools.mdht.uml.cda.ihe.operations.MedicalSummaryOperations;
-import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 
 /**
  * <!-- begin-user-doc -->
@@ -33,87 +32,87 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  */
 public class MedicalSummaryImpl extends MedicalDocumentImpl implements MedicalSummary {
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	protected MedicalSummaryImpl() {
-    super();
-  }
+		super();
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	@Override
 	protected EClass eStaticClass() {
-    return IHEPackage.Literals.MEDICAL_SUMMARY;
-  }
+		return IHEPackage.Literals.MEDICAL_SUMMARY;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public boolean validateMedicalSummaryProblemConcernEntry(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return MedicalSummaryOperations.validateMedicalSummaryProblemConcernEntry(this, diagnostics, context);
-  }
+		return MedicalSummaryOperations.validateMedicalSummaryProblemConcernEntry(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public boolean validateMedicalSummaryAllergyConcernEntry(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return MedicalSummaryOperations.validateMedicalSummaryAllergyConcernEntry(this, diagnostics, context);
-  }
+		return MedicalSummaryOperations.validateMedicalSummaryAllergyConcernEntry(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public boolean validateMedicalSummaryMedications(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return MedicalSummaryOperations.validateMedicalSummaryMedications(this, diagnostics, context);
-  }
+		return MedicalSummaryOperations.validateMedicalSummaryMedications(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public boolean validateMedicalSummaryTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return MedicalSummaryOperations.validateMedicalSummaryTemplateId(this, diagnostics, context);
-  }
+		return MedicalSummaryOperations.validateMedicalSummaryTemplateId(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateMedicalSummaryCode(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return MedicalSummaryOperations.validateMedicalSummaryCode(this, diagnostics, context);
-  }
+	* <!-- begin-user-doc -->
+	* <!-- end-user-doc -->
+	* @generated
+	*/
+	public boolean validateMedicalSummaryCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return MedicalSummaryOperations.validateMedicalSummaryCode(this, diagnostics, context);
+	}
 
-  /**
-   * <!-- begin-user-doc -->
+	/**
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	public MedicalSummary init() {
-      return Initializer.Util.init(this);
-  }
+		return Initializer.Util.init(this);
+	}
 
-  /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public MedicalSummary init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
+	/**
+	   * <!-- begin-user-doc -->
+	   * <!-- end-user-doc -->
+	   * @generated
+	   */
+	@Override
+	public MedicalSummary init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+		Initializer.Util.init(this, initializers);
+		return this;
+	}
 } // MedicalSummaryImpl

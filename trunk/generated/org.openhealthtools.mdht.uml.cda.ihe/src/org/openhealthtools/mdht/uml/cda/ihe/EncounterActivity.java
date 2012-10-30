@@ -27,16 +27,16 @@ import org.openhealthtools.mdht.uml.cda.ccd.EncountersActivity;
  */
 public interface EncounterActivity extends EncounterEntry, EncountersActivity {
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public EncounterActivity init();
 
-  /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public EncounterActivity init(Iterable<? extends Initializer<? extends EObject>> initializers);
+	/**
+	   * <!-- begin-user-doc -->
+	   * <!-- end-user-doc -->
+	   * @generated
+	   */
+	public EncounterActivity init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // EncounterActivity

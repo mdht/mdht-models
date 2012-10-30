@@ -23,7 +23,6 @@ import org.openhealthtools.mdht.uml.cda.ihe.CoverageEntry;
 import org.openhealthtools.mdht.uml.cda.ihe.IHEPackage;
 import org.openhealthtools.mdht.uml.cda.ihe.PayerEntry;
 import org.openhealthtools.mdht.uml.cda.ihe.operations.CoverageEntryOperations;
-import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 
 /**
  * <!-- begin-user-doc -->
@@ -36,68 +35,69 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  */
 public class CoverageEntryImpl extends CoverageActivityImpl implements CoverageEntry {
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	protected CoverageEntryImpl() {
-    super();
-  }
+		super();
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	@Override
 	protected EClass eStaticClass() {
-    return IHEPackage.Literals.COVERAGE_ENTRY;
-  }
+		return IHEPackage.Literals.COVERAGE_ENTRY;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public boolean validateCoverageEntryTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return CoverageEntryOperations.validateCoverageEntryTemplateId(this, diagnostics, context);
-  }
+		return CoverageEntryOperations.validateCoverageEntryTemplateId(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public boolean validateCoverageEntryPayerEntry(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return CoverageEntryOperations.validateCoverageEntryPayerEntry(this, diagnostics, context);
-  }
+		return CoverageEntryOperations.validateCoverageEntryPayerEntry(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public EList<PayerEntry> getPayerEntries() {
-    return CoverageEntryOperations.getPayerEntries(this);
-  }
+		return CoverageEntryOperations.getPayerEntries(this);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	@Override
 	public CoverageEntry init() {
-      return Initializer.Util.init(this);
-  }
+		return Initializer.Util.init(this);
+	}
 
-  /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public CoverageEntry init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
+	/**
+	   * <!-- begin-user-doc -->
+	   * <!-- end-user-doc -->
+	   * @generated
+	   */
+	@Override
+	public CoverageEntry init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+		Initializer.Util.init(this, initializers);
+		return this;
+	}
 } // CoverageEntryImpl

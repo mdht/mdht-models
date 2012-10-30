@@ -21,7 +21,6 @@ import org.openhealthtools.mdht.uml.cda.ccd.impl.ProblemActImpl;
 import org.openhealthtools.mdht.uml.cda.ihe.ConcernEntry;
 import org.openhealthtools.mdht.uml.cda.ihe.IHEPackage;
 import org.openhealthtools.mdht.uml.cda.ihe.operations.ConcernEntryOperations;
-import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 
 /**
  * <!-- begin-user-doc -->
@@ -34,97 +33,98 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  */
 public class ConcernEntryImpl extends ProblemActImpl implements ConcernEntry {
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	protected ConcernEntryImpl() {
-    super();
-  }
+		super();
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	@Override
 	protected EClass eStaticClass() {
-    return IHEPackage.Literals.CONCERN_ENTRY;
-  }
+		return IHEPackage.Literals.CONCERN_ENTRY;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public boolean validateConcernEntryEffectiveTimeLowHigh(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return ConcernEntryOperations.validateConcernEntryEffectiveTimeLowHigh(this, diagnostics, context);
-  }
+		return ConcernEntryOperations.validateConcernEntryEffectiveTimeLowHigh(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public boolean validateConcernEntryHasRelatedObservations(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return ConcernEntryOperations.validateConcernEntryHasRelatedObservations(this, diagnostics, context);
-  }
+		return ConcernEntryOperations.validateConcernEntryHasRelatedObservations(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public boolean validateConcernEntryRelatedObservationsTypeCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-    return ConcernEntryOperations.validateConcernEntryRelatedObservationsTypeCode(this, diagnostics, context);
-  }
+		return ConcernEntryOperations.validateConcernEntryRelatedObservationsTypeCode(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public boolean validateConcernEntryHasRelatedReferencesTypeCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-    return ConcernEntryOperations.validateConcernEntryHasRelatedReferencesTypeCode(this, diagnostics, context);
-  }
+		return ConcernEntryOperations.validateConcernEntryHasRelatedReferencesTypeCode(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public boolean validateConcernEntryTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return ConcernEntryOperations.validateConcernEntryTemplateId(this, diagnostics, context);
-  }
+		return ConcernEntryOperations.validateConcernEntryTemplateId(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public boolean validateConcernEntryEffectiveTime(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return ConcernEntryOperations.validateConcernEntryEffectiveTime(this, diagnostics, context);
-  }
+		return ConcernEntryOperations.validateConcernEntryEffectiveTime(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	@Override
 	public ConcernEntry init() {
-      return Initializer.Util.init(this);
-  }
+		return Initializer.Util.init(this);
+	}
 
-  /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public ConcernEntry init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
+	/**
+	   * <!-- begin-user-doc -->
+	   * <!-- end-user-doc -->
+	   * @generated
+	   */
+	@Override
+	public ConcernEntry init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+		Initializer.Util.init(this, initializers);
+		return this;
+	}
 } // ConcernEntryImpl

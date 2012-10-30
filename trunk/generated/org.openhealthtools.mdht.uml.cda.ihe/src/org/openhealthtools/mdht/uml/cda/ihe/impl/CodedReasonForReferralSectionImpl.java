@@ -23,7 +23,6 @@ import org.openhealthtools.mdht.uml.cda.ihe.IHEPackage;
 import org.openhealthtools.mdht.uml.cda.ihe.ProblemEntry;
 import org.openhealthtools.mdht.uml.cda.ihe.SimpleObservation;
 import org.openhealthtools.mdht.uml.cda.ihe.operations.CodedReasonForReferralSectionOperations;
-import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 
 /**
  * <!-- begin-user-doc -->
@@ -37,89 +36,93 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 public class CodedReasonForReferralSectionImpl extends ReasonForReferralSectionImpl implements
 		CodedReasonForReferralSection {
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	protected CodedReasonForReferralSectionImpl() {
-    super();
-  }
+		super();
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	@Override
 	protected EClass eStaticClass() {
-    return IHEPackage.Literals.CODED_REASON_FOR_REFERRAL_SECTION;
-  }
+		return IHEPackage.Literals.CODED_REASON_FOR_REFERRAL_SECTION;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public boolean validateCodedReasonForReferralSectionTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-    return CodedReasonForReferralSectionOperations.validateCodedReasonForReferralSectionTemplateId(this, diagnostics, context);
-  }
+		return CodedReasonForReferralSectionOperations.validateCodedReasonForReferralSectionTemplateId(
+			this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public boolean validateCodedReasonForReferralSectionSimpleObservation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-    return CodedReasonForReferralSectionOperations.validateCodedReasonForReferralSectionSimpleObservation(this, diagnostics, context);
-  }
+		return CodedReasonForReferralSectionOperations.validateCodedReasonForReferralSectionSimpleObservation(
+			this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public boolean validateCodedReasonForReferralSectionProblemEntry(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-    return CodedReasonForReferralSectionOperations.validateCodedReasonForReferralSectionProblemEntry(this, diagnostics, context);
-  }
+		return CodedReasonForReferralSectionOperations.validateCodedReasonForReferralSectionProblemEntry(
+			this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public EList<SimpleObservation> getSimpleObservations() {
-    return CodedReasonForReferralSectionOperations.getSimpleObservations(this);
-  }
+		return CodedReasonForReferralSectionOperations.getSimpleObservations(this);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public EList<ProblemEntry> getProblemEntries() {
-    return CodedReasonForReferralSectionOperations.getProblemEntries(this);
-  }
+		return CodedReasonForReferralSectionOperations.getProblemEntries(this);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	@Override
 	public CodedReasonForReferralSection init() {
-      return Initializer.Util.init(this);
-  }
+		return Initializer.Util.init(this);
+	}
 
-  /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public CodedReasonForReferralSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
+	/**
+	   * <!-- begin-user-doc -->
+	   * <!-- end-user-doc -->
+	   * @generated
+	   */
+	@Override
+	public CodedReasonForReferralSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+		Initializer.Util.init(this, initializers);
+		return this;
+	}
 } // CodedReasonForReferralSectionImpl
