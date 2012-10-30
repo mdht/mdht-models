@@ -1052,7 +1052,7 @@ resolved</body>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_I06IEMhGEeCHk-lvWGDTdA" name="SocialHistory">
       <generalization xmi:id="_I06vIMhGEeCHk-lvWGDTdA">
-        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.ihe.model/model/ihe.uml#_oapRoMhEEeCHk-lvWGDTdA"/>
+        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.ihe.model/model/.controlled/ihe-socialHistory.uml#_oapRoMhEEeCHk-lvWGDTdA"/>
       </generalization>
       <ownedAttribute xmi:id="_UNRugMhGEeCHk-lvWGDTdA" name="code" visibility="private" aggregation="composite">
         <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>

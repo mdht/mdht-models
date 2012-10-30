@@ -11,4 +11,18 @@ known, the diseases they suffered from, their ages at death, and other relevant 
   </uml:Class>
   <CDA:CDATemplate xmi:id="_ooeSkMigEd6mWrHPmrIIfQ" base_Class="_kKnAIMigEd6mWrHPmrIIfQ" templateId="1.3.6.1.4.1.19376.1.5.3.1.3.14" assigningAuthorityName="IHE PCC"/>
   <CDA:ConformsTo xmi:id="_6wrVoFF6Ed-Lud-5SYZhMw" base_Generalization="_nplocMigEd6mWrHPmrIIfQ" requiresParentId="true"/>
+  <uml:Class xmi:id="_cSezgMgkEeCHk-lvWGDTdA" name="CodedFamilyMedicalHistorySection">
+    <generalization xmi:id="_cSokgMgkEeCHk-lvWGDTdA" general="_kKnAIMigEd6mWrHPmrIIfQ"/>
+    <ownedAttribute xmi:id="_1gM-EMnCEeCDOYZyQPaRHg" name="familyHistoryOrganizer" association="_1gOzQMnCEeCDOYZyQPaRHg">
+      <type xmi:type="uml:Class" href="../ihe.uml#_7wLKkMkCEeChgrgmBsw26A"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_3jcoMMnCEeCDOYZyQPaRHg" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_3jcoMcnCEeCDOYZyQPaRHg" value="1"/>
+    </ownedAttribute>
+  </uml:Class>
+  <uml:Association xmi:id="_1gOzQMnCEeCDOYZyQPaRHg" memberEnd="_1gM-EMnCEeCDOYZyQPaRHg _1gPaUMnCEeCDOYZyQPaRHg">
+    <ownedEnd xmi:id="_1gPaUMnCEeCDOYZyQPaRHg" type="_cSezgMgkEeCHk-lvWGDTdA" association="_1gOzQMnCEeCDOYZyQPaRHg"/>
+  </uml:Association>
+  <CDA:CDATemplate xmi:id="_evb-IMgkEeCHk-lvWGDTdA" base_Class="_cSezgMgkEeCHk-lvWGDTdA" templateId="1.3.6.1.4.1.19376.1.5.3.1.3.15"/>
+  <CDA:ConformsTo xmi:id="_fqWuQMgkEeCHk-lvWGDTdA" base_Generalization="_cSokgMgkEeCHk-lvWGDTdA" requiresParentId="true"/>
+  <CDA:AssociationValidation xmi:id="_30mpoMnCEeCDOYZyQPaRHg" base_Association="_1gOzQMnCEeCDOYZyQPaRHg"/>
 </xmi:XMI>

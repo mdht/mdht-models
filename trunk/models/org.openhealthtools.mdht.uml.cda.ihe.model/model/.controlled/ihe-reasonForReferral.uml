@@ -15,4 +15,27 @@
   <CDA:CodeSystemConstraint xmi:id="_N0Ai0CfdEd-4R4ealYN1gQ" code="42349-1" displayName="REASON FOR REFERRAL" base_Property="_sBqCoMilEd6NKIaf5H7MFg">
     <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
   </CDA:CodeSystemConstraint>
+  <uml:Class xmi:id="_b0JLIM9KEeCBIMy4xFlonQ" name="CodedReasonForReferralSection">
+    <generalization xmi:id="_b0JLIc9KEeCBIMy4xFlonQ" general="_XicJUMfdEd6VjLXh4DcWSg"/>
+    <ownedAttribute xmi:id="_n-OiYM9KEeCBIMy4xFlonQ" name="simpleObservation" association="_n-OiYs9KEeCBIMy4xFlonQ">
+      <type xmi:type="uml:Class" href="../ihe.uml#_dLvb0K4NEd6_ioDelDcPPg"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_saiVoM9KEeCBIMy4xFlonQ" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_saiVoc9KEeCBIMy4xFlonQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_w1p2EM9KEeCBIMy4xFlonQ" name="problemEntry" association="_w1p2Es9KEeCBIMy4xFlonQ">
+      <type xmi:type="uml:Class" href="ihe-activeProblems.uml#_3ZiEwGdIEd6Hk_bPOfEjYA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xypp0M9KEeCBIMy4xFlonQ" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xypp0c9KEeCBIMy4xFlonQ" value="1"/>
+    </ownedAttribute>
+  </uml:Class>
+  <uml:Association xmi:id="_n-OiYs9KEeCBIMy4xFlonQ" memberEnd="_n-OiYM9KEeCBIMy4xFlonQ _n-OiY89KEeCBIMy4xFlonQ">
+    <ownedEnd xmi:id="_n-OiY89KEeCBIMy4xFlonQ" type="_b0JLIM9KEeCBIMy4xFlonQ" association="_n-OiYs9KEeCBIMy4xFlonQ"/>
+  </uml:Association>
+  <uml:Association xmi:id="_w1p2Es9KEeCBIMy4xFlonQ" memberEnd="_w1p2EM9KEeCBIMy4xFlonQ _w1p2E89KEeCBIMy4xFlonQ">
+    <ownedEnd xmi:id="_w1p2E89KEeCBIMy4xFlonQ" type="_b0JLIM9KEeCBIMy4xFlonQ" association="_w1p2Es9KEeCBIMy4xFlonQ"/>
+  </uml:Association>
+  <CDA:CDATemplate xmi:id="_fmDWgM9KEeCBIMy4xFlonQ" base_Class="_b0JLIM9KEeCBIMy4xFlonQ" templateId="1.3.6.1.4.1.19376.1.5.3.1.3.2" assigningAuthorityName="IHE PCC"/>
+  <CDA:ConformsTo xmi:id="_GcNHwM9LEeCBIMy4xFlonQ" base_Generalization="_b0JLIc9KEeCBIMy4xFlonQ" requiresParentId="true"/>
+  <CDA:AssociationValidation xmi:id="_ygK3IM9KEeCBIMy4xFlonQ" base_Association="_n-OiYs9KEeCBIMy4xFlonQ"/>
+  <CDA:AssociationValidation xmi:id="_y8b8YM9KEeCBIMy4xFlonQ" base_Association="_w1p2Es9KEeCBIMy4xFlonQ"/>
 </xmi:XMI>
