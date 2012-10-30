@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Ophthalmic Medications Section - conformance rules</title>
+<shortdesc id="shortdesc">[Section: templateId <tt>1.3.6.1.4.1.19376.1.12.1.2.4</tt>]</shortdesc>
+<prolog id="prolog">
+<metadata><category>Section</category></metadata>
+<resourceid id="1.3.6.1.4.1.19376.1.12.1.2.4"/>
+</prolog>
+<body>
+<section id="knownSubclasses">
+</section>
+<section id="description">
+</section>
+<ol id="conformance">
+<li><b>SHALL</b> conform to <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.ihe.doc/classes/MedicationsSection.html">IHE Medications Section</xref> template (templateId: <tt>1.3.6.1.4.1.19376.1.5.3.1.3.19</tt>)</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="70935-2" </tt><i>Ophthalmic medications</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF-300, CONF-301)
+</li>
+<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>entry</b></tt>
+<ol>
+<li>Contains exactly one [1..1] <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.ihe.doc/classes/Medication.html">IHE Medication</xref> (templateId: <tt>1.3.6.1.4.1.19376.1.5.3.1.4.7</tt>)</li></ol></li>
+</ol>
+<ol id="aggregate">
+<li><b>SHALL</b> conform to <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.ccd.doc/classes/MedicationsSection.html">CCD Medications Section</xref> template (templateId: <tt>2.16.840.1.113883.10.20.1.8</tt>)</li>
+<li><b>SHALL</b> conform to <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.ihe.doc/classes/MedicationsSection.html">IHE Medications Section</xref> template (templateId: <tt>1.3.6.1.4.1.19376.1.5.3.1.3.19</tt>)</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="70935-2" </tt><i>Ophthalmic medications</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF-300, CONF-301)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>title</b></tt> (CONF-302)
+</li>
+<li><b>SHALL</b> contain zero or one [0..1] <tt><b>text</b></tt> (CONF-298)
+</li>
+<li><b>SHOULD</b> contain zero or more [0..*] <tt><b>entry</b></tt> (CONF-298)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../SupplyActivity.dita">Supply Activity</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.34</tt>)</li></ol></li>
+<li><b>SHALL</b> contain at least one [1..*] <tt><b>entry</b></tt>
+<ol>
+<li>Contains exactly one [1..1] <xref href="../Medication.dita">Medication</xref> (templateId: <tt>1.3.6.1.4.1.19376.1.5.3.1.4.7</tt>)</li></ol></li>
+<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>entry</b></tt>
+<ol>
+<li>Contains exactly one [1..1] <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.ihe.doc/classes/Medication.html">IHE Medication</xref> (templateId: <tt>1.3.6.1.4.1.19376.1.5.3.1.4.7</tt>)</li></ol></li>
+<li><b>SHOULD</b> satisfy: Clinical statements include one or more Medication Activity and/or one or more Supply Activity. (CONF-298)</li>
+<li><b>SHALL</b> satisfy: The absence of known medications is explicitly asserted. (CONF-299)</li>
+<li><b>SHOULD</b> satisfy: Valued with a case-insensitive language-insensitive string containing 'medication'. (CONF-303)</li>
+<li><b>SHALL</b> satisfy: Contains one dosing template to identify this as a particular type of medication event. Possible dosing templates: 1.3.6.1.4.1.19376.1.5.3.1.4.7.1 Normal Dosing, 1.3.6.1.4.1.19376.1.5.3.1.4.8, Tapered Dosing, 1.3.6.1.4.1.19376.1.5.3.1.4.9 Split Dosing, 1.3.6.1.4.1.19376.1.5.3.1.4.10 Conditional Dosing, 1.3.6.1.4.1.19376.1.5.3.1.4.11 Combination Dosing.</li>
+<li><b>MAY</b> satisfy: contains one or more related components (&lt;entryRelationship typeCode='COMP'&gt;, either to handle split, tapered or conditional dosing, or to support combination medications.</li>
+</ol>
+<codeblock id="example"><![CDATA[Error: Missing Runtime Class]]></codeblock>
+<section id="changes">
+</section>
+<p><ph id="classformalname">Ophthalmic Medications Section</ph></p>
+<p id="shortdesc">[Section: templateId <tt>1.3.6.1.4.1.19376.1.12.1.2.4</tt>]</p>
+</body>
+</topic>
