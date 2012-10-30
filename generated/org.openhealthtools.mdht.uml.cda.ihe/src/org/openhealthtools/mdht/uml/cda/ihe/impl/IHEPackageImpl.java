@@ -852,6 +852,20 @@ public class IHEPackageImpl extends EPackageImpl implements IHEPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	private EClass codedSocialHistorySectionEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass functionalStatusSectionEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	private EClass iheRegistryDelegateEClass = null;
 
 	/**
@@ -2431,10 +2445,36 @@ public class IHEPackageImpl extends EPackageImpl implements IHEPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public EClass getCodedSocialHistorySection() {
+		if (codedSocialHistorySectionEClass == null) {
+			codedSocialHistorySectionEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(IHEPackage.eNS_URI).getEClassifiers().get(
+				115);
+		}
+		return codedSocialHistorySectionEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getFunctionalStatusSection() {
+		if (functionalStatusSectionEClass == null) {
+			functionalStatusSectionEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(IHEPackage.eNS_URI).getEClassifiers().get(
+				116);
+		}
+		return functionalStatusSectionEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public EClass getIHERegistryDelegate() {
 		if (iheRegistryDelegateEClass == null) {
 			iheRegistryDelegateEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(IHEPackage.eNS_URI).getEClassifiers().get(
-				115);
+				117);
 		}
 		return iheRegistryDelegateEClass;
 	}

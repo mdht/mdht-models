@@ -8,7 +8,7 @@
 &lt;/p></body>
     </ownedComment>
     <generalization xmi:id="_K4z18M9LEeCBIMy4xFlonQ">
-      <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda.ihe.model/model/ihe.uml#_b0JLIM9KEeCBIMy4xFlonQ"/>
+      <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda.ihe.model/model/.controlled/ihe-reasonForReferral.uml#_b0JLIM9KEeCBIMy4xFlonQ"/>
     </generalization>
     <generalization xmi:id="_QREUEM9LEeCBIMy4xFlonQ">
       <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda.cdt.model/model/cdt.uml#_A0ab0GhHEd-ilOLYnIx0jA"/>

@@ -2089,6 +2089,14 @@
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="ihe.ecore#//CodedReasonForReferralSection/getSimpleObservations"/>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="ihe.ecore#//CodedReasonForReferralSection/getProblemEntries"/>
     </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="ihe.ecore#//CodedSocialHistorySection">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="ihe.ecore#//CodedSocialHistorySection/CodedSocialHistorySectionSocialHistoryObservation">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//CodedSocialHistorySection/CodedSocialHistorySectionSocialHistoryObservation/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//CodedSocialHistorySection/CodedSocialHistorySectionSocialHistoryObservation/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="ihe.ecore#//CodedSocialHistorySection/getIHESocialHistoryObservations"/>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="ihe.ecore#//FunctionalStatusSection"/>
     <genClasses xsi:type="genmodel:GenClass" ecoreClass="ihe.ecore#//IHERegistryDelegate"/>
   </genPackages>
 </genmodel:GenModel>

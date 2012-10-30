@@ -34,29 +34,29 @@ import org.openhealthtools.mdht.uml.cda.ihe.operations.CodedFamilyMedicalHistory
 public class CodedFamilyMedicalHistorySectionImpl extends FamilyMedicalHistorySectionImpl implements
 		CodedFamilyMedicalHistorySection {
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	protected CodedFamilyMedicalHistorySectionImpl() {
 		super();
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
 		return IHEPackage.Literals.CODED_FAMILY_MEDICAL_HISTORY_SECTION;
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateCodedFamilyMedicalHistorySectionTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return CodedFamilyMedicalHistorySectionOperations.validateCodedFamilyMedicalHistorySectionTemplateId(
@@ -64,10 +64,10 @@ public class CodedFamilyMedicalHistorySectionImpl extends FamilyMedicalHistorySe
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateCodedFamilyMedicalHistorySectionFamilyHistoryOrganizer(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return CodedFamilyMedicalHistorySectionOperations.validateCodedFamilyMedicalHistorySectionFamilyHistoryOrganizer(
@@ -75,29 +75,29 @@ public class CodedFamilyMedicalHistorySectionImpl extends FamilyMedicalHistorySe
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public FamilyHistoryOrganizer getIHEFamilyHistoryOrganizer() {
 		return CodedFamilyMedicalHistorySectionOperations.getIHEFamilyHistoryOrganizer(this);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	@Override
 	public CodedFamilyMedicalHistorySection init() {
 		return Initializer.Util.init(this);
 	}
 
 	/**
-	   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	   * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	@Override
 	public CodedFamilyMedicalHistorySection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
 		Initializer.Util.init(this, initializers);
