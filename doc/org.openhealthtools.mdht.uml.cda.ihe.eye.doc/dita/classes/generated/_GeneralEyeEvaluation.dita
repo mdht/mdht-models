@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>General Eye Evaluation - conformance rules</title>
+<shortdesc id="shortdesc">[ClinicalDocument: templateId <tt>1.3.6.1.4.1.19376.1.12.1.1.1</tt>]</shortdesc>
+<prolog id="prolog">
+<metadata><category>ClinicalDocument</category></metadata>
+<resourceid id="1.3.6.1.4.1.19376.1.12.1.1.1"/>
+</prolog>
+<body>
+<section id="knownSubclasses">
+</section>
+<section id="description">
+</section>
+<ol id="conformance">
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="70947-7" </tt><i>General eye evaluation</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>component</b></tt>
+<ol>
+<li>Contains exactly one [1..1] <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.ihe.doc/classes/ChiefComplaintSection.html">IHE Chief Complaint Section</xref> (templateId: <tt>1.3.6.1.4.1.19376.1.5.3.1.1.13.2.1</tt>)</li></ol></li>
+<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>component</b></tt>
+<ol>
+<li>Contains exactly one [1..1] <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.ccd.doc/classes/FunctionalStatusSection.html">CCD Functional Status Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.5</tt>)</li></ol></li>
+<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>component</b></tt>
+<ol>
+<li>Contains exactly one [1..1] <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.cdt.doc/classes/HistoryOfPresentIllness.html">CDT History Of Present Illness</xref> (templateId: <tt>1.3.6.1.4.1.19376.1.5.3.1.3.4</tt>)</li></ol></li>
+<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>component</b></tt>
+<ol>
+<li>Contains exactly one [1..1] <xref href="../OcularHistorySection.dita">Ocular History Section</xref> (templateId: <tt>1.3.6.1.4.1.19376.1.12.1.2.3</tt>)</li></ol></li>
+<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>component</b></tt>
+<ol>
+<li>Contains exactly one [1..1] <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.ihe.doc/classes/HistoryOfPastIllnessSection.html">IHE History Of Past Illness Section</xref> (templateId: <tt>1.3.6.1.4.1.19376.1.5.3.1.3.8</tt>)</li></ol></li>
+<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>component</b></tt>
+<ol>
+<li>Contains exactly one [1..1] <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.ihe.doc/classes/SurgeriesSection.html">IHE Surgeries Section</xref> (templateId: <tt>1.3.6.1.4.1.19376.1.5.3.1.3.11</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>component</b></tt>
+<ol>
+<li>Contains exactly one [1..1] <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.ihe.doc/classes/CodedSurgeriesSection.html">IHE Coded Surgeries Section</xref> (templateId: <tt>1.3.6.1.4.1.19376.1.5.3.1.3.12</tt>)</li></ol></li>
+<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>component</b></tt>
+<ol>
+<li>Contains exactly one [1..1] <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.ihe.doc/classes/ReviewOfSystemsSection.html">IHE Review Of Systems Section</xref> (templateId: <tt>1.3.6.1.4.1.19376.1.5.3.1.3.18</tt>)</li></ol></li>
+<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>component</b></tt>
+<ol>
+<li>Contains exactly one [1..1] <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.ihe.doc/classes/MedicationsSection.html">IHE Medications Section</xref> (templateId: <tt>1.3.6.1.4.1.19376.1.5.3.1.3.19</tt>)</li></ol></li>
+<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>component</b></tt>
+<ol>
+<li>Contains exactly one [1..1] <xref href="../OphthalmicMedicationsSection.dita">Ophthalmic Medications Section</xref> (templateId: <tt>1.3.6.1.4.1.19376.1.12.1.2.4</tt>)</li></ol></li>
+<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>component</b></tt>
+<ol>
+<li>Contains exactly one [1..1] <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.ihe.doc/classes/AllergiesReactionsSection.html">IHE Allergies Reactions Section</xref> (templateId: <tt>1.3.6.1.4.1.19376.1.5.3.1.3.13</tt>)</li></ol></li>
+<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>component</b></tt>
+<ol>
+<li>Contains exactly one [1..1] <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.ihe.doc/classes/ActiveProblemsSection.html">IHE Active Problems Section</xref> (templateId: <tt>1.3.6.1.4.1.19376.1.5.3.1.3.6</tt>)</li></ol></li>
+<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>component</b></tt>
+<ol>
+<li>Contains exactly one [1..1] <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.ihe.doc/classes/FamilyMedicalHistorySection.html">IHE Family Medical History Section</xref> (templateId: <tt>1.3.6.1.4.1.19376.1.5.3.1.3.14</tt>)</li></ol></li>
+<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>component</b></tt>
+<ol>
+<li>Contains exactly one [1..1] <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.ihe.doc/classes/CodedFamilyMedicalHistorySection.html">IHE Coded Family Medical History Section</xref> (templateId: <tt>1.3.6.1.4.1.19376.1.5.3.1.3.15</tt>)</li></ol></li>
+<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>component</b></tt>
+<ol>
+<li>Contains exactly one [1..1] <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.ihe.doc/classes/SocialHistorySection.html">IHE Social History Section</xref> (templateId: <tt>1.3.6.1.4.1.19376.1.5.3.1.3.16</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>component</b></tt>
+<ol>
+<li>Contains exactly one [1..1] <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.ihe.doc/classes/CodedSocialHistorySection.html">IHE Coded Social History Section</xref> (templateId: <tt>1.3.6.1.4.1.19376.1.5.3.1.3.16.1</tt>)</li></ol></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>component</b></tt>
+<ol>
+<li>Contains exactly one [1..1] <xref href="../OcularPhysicalExamSection.dita">Ocular Physical Exam Section</xref> (templateId: <tt>1.3.6.1.4.1.19376.1.12.1.2.5</tt>)</li></ol></li>
+<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>component</b></tt>
+<ol>
+<li>Contains exactly one [1..1] <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.ihe.doc/classes/AssessmentAndPlanSection.html">IHE Assessment And Plan Section</xref> (templateId: <tt>1.3.6.1.4.1.19376.1.5.3.1.1.13.2.5</tt>)</li></ol></li>
+</ol>
+<ol id="aggregate">
+<li>Contains exactly one [1..1] <tt><b>typeId</b></tt> with data type <xref href="../InfrastructureRootTypeId.dita">Infrastructure Root Type Id</xref>
+</li>
+<li>Contains exactly one [1..1] <tt><b>id</b></tt> with data type II
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="70947-7" </tt><i>General eye evaluation</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>)
+</li>
+<li>Contains exactly one [1..1] <tt><b>effectiveTime</b></tt> with data type TS
+</li>
+<li>Contains exactly one [1..1] <tt><b>confidentialityCode</b></tt> with data type CE
+</li>
+<li>Contains at least one [1..*] <tt><b>recordTarget</b></tt>, where its type is <xref href="../RecordTarget.dita">Record Target</xref>
+<ol>
+<li>Contains exactly one [1..1] <xref href="../RecordTarget.dita">Record Target</xref></li></ol></li>
+<li>Contains at least one [1..*] <tt><b>author</b></tt>, where its type is <xref href="../Author.dita">Author</xref>
+<ol>
+<li>Contains exactly one [1..1] <xref href="../Author.dita">Author</xref></li></ol></li>
+<li>Contains exactly one [1..1] <tt><b>custodian</b></tt>, where its type is <xref href="../Custodian.dita">Custodian</xref>
+<ol>
+<li>Contains exactly one [1..1] <xref href="../Custodian.dita">Custodian</xref></li></ol></li>
+<li>Contains exactly one [1..1] <tt><b>component</b></tt>, where its type is <xref href="../Component2.dita">Component2</xref>
+<ol>
+<li>Contains exactly one [1..1] <xref href="../Component2.dita">Component2</xref></li></ol></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>component</b></tt>
+<ol>
+<li>Contains exactly one [1..1] <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.ihe.doc/classes/ChiefComplaintSection.html">IHE Chief Complaint Section</xref> (templateId: <tt>1.3.6.1.4.1.19376.1.5.3.1.1.13.2.1</tt>)</li></ol></li>
+<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>component</b></tt>
+<ol>
+<li>Contains exactly one [1..1] <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.ccd.doc/classes/FunctionalStatusSection.html">CCD Functional Status Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.5</tt>)</li></ol></li>
+<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>component</b></tt>
+<ol>
+<li>Contains exactly one [1..1] <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.cdt.doc/classes/HistoryOfPresentIllness.html">CDT History Of Present Illness</xref> (templateId: <tt>1.3.6.1.4.1.19376.1.5.3.1.3.4</tt>)</li></ol></li>
+<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>component</b></tt>
+<ol>
+<li>Contains exactly one [1..1] <xref href="../OcularHistorySection.dita">Ocular History Section</xref> (templateId: <tt>1.3.6.1.4.1.19376.1.12.1.2.3</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>component</b></tt>
+<ol>
+<li>Contains exactly one [1..1] <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.ihe.doc/classes/CodedSurgeriesSection.html">IHE Coded Surgeries Section</xref> (templateId: <tt>1.3.6.1.4.1.19376.1.5.3.1.3.12</tt>)</li></ol></li>
+<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>component</b></tt>
+<ol>
+<li>Contains exactly one [1..1] <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.ihe.doc/classes/ReviewOfSystemsSection.html">IHE Review Of Systems Section</xref> (templateId: <tt>1.3.6.1.4.1.19376.1.5.3.1.3.18</tt>)</li></ol></li>
+<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>component</b></tt>
+<ol>
+<li>Contains exactly one [1..1] <xref href="../OphthalmicMedicationsSection.dita">Ophthalmic Medications Section</xref> (templateId: <tt>1.3.6.1.4.1.19376.1.12.1.2.4</tt>)</li></ol></li>
+<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>component</b></tt>
+<ol>
+<li>Contains exactly one [1..1] <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.ihe.doc/classes/AllergiesReactionsSection.html">IHE Allergies Reactions Section</xref> (templateId: <tt>1.3.6.1.4.1.19376.1.5.3.1.3.13</tt>)</li></ol></li>
+<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>component</b></tt>
+<ol>
+<li>Contains exactly one [1..1] <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.ihe.doc/classes/ActiveProblemsSection.html">IHE Active Problems Section</xref> (templateId: <tt>1.3.6.1.4.1.19376.1.5.3.1.3.6</tt>)</li></ol></li>
+<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>component</b></tt>
+<ol>
+<li>Contains exactly one [1..1] <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.ihe.doc/classes/CodedFamilyMedicalHistorySection.html">IHE Coded Family Medical History Section</xref> (templateId: <tt>1.3.6.1.4.1.19376.1.5.3.1.3.15</tt>)</li></ol></li>
+<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>component</b></tt>
+<ol>
+<li>Contains exactly one [1..1] <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.ihe.doc/classes/SocialHistorySection.html">IHE Social History Section</xref> (templateId: <tt>1.3.6.1.4.1.19376.1.5.3.1.3.16</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>component</b></tt>
+<ol>
+<li>Contains exactly one [1..1] <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.ihe.doc/classes/CodedSocialHistorySection.html">IHE Coded Social History Section</xref> (templateId: <tt>1.3.6.1.4.1.19376.1.5.3.1.3.16.1</tt>)</li></ol></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>component</b></tt>
+<ol>
+<li>Contains exactly one [1..1] <xref href="../OcularPhysicalExamSection.dita">Ocular Physical Exam Section</xref> (templateId: <tt>1.3.6.1.4.1.19376.1.12.1.2.5</tt>)</li></ol></li>
+<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>component</b></tt>
+<ol>
+<li>Contains exactly one [1..1] <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.ihe.doc/classes/AssessmentAndPlanSection.html">IHE Assessment And Plan Section</xref> (templateId: <tt>1.3.6.1.4.1.19376.1.5.3.1.1.13.2.5</tt>)</li></ol></li>
+</ol>
+<codeblock id="example"><![CDATA[Error: Missing Runtime Class]]></codeblock>
+<section id="changes">
+</section>
+<p><ph id="classformalname">General Eye Evaluation</ph></p>
+<p id="shortdesc">[ClinicalDocument: templateId <tt>1.3.6.1.4.1.19376.1.12.1.1.1</tt>]</p>
+</body>
+</topic>
