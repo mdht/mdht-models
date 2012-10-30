@@ -21,7 +21,6 @@ import org.openhealthtools.mdht.uml.cda.ihe.IHEPackage;
 import org.openhealthtools.mdht.uml.cda.ihe.ScanDataEnterer;
 import org.openhealthtools.mdht.uml.cda.ihe.operations.ScanDataEntererOperations;
 import org.openhealthtools.mdht.uml.cda.impl.DataEntererImpl;
-import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 
 /**
  * <!-- begin-user-doc -->
@@ -34,77 +33,78 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  */
 public class ScanDataEntererImpl extends DataEntererImpl implements ScanDataEnterer {
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	protected ScanDataEntererImpl() {
-    super();
-  }
+		super();
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	@Override
 	protected EClass eStaticClass() {
-    return IHEPackage.Literals.SCAN_DATA_ENTERER;
-  }
+		return IHEPackage.Literals.SCAN_DATA_ENTERER;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public boolean validateScanDataEntererTimeEqualsDocumentEffectiveTime(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-    return ScanDataEntererOperations.validateScanDataEntererTimeEqualsDocumentEffectiveTime(this, diagnostics, context);
-  }
+		return ScanDataEntererOperations.validateScanDataEntererTimeEqualsDocumentEffectiveTime(
+			this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public boolean validateScanDataEntererHasAssignedEntityId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return ScanDataEntererOperations.validateScanDataEntererHasAssignedEntityId(this, diagnostics, context);
-  }
+		return ScanDataEntererOperations.validateScanDataEntererHasAssignedEntityId(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public boolean validateScanDataEntererTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return ScanDataEntererOperations.validateScanDataEntererTemplateId(this, diagnostics, context);
-  }
+		return ScanDataEntererOperations.validateScanDataEntererTemplateId(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public boolean validateScanDataEntererTime(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return ScanDataEntererOperations.validateScanDataEntererTime(this, diagnostics, context);
-  }
+		return ScanDataEntererOperations.validateScanDataEntererTime(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public ScanDataEnterer init() {
-      return Initializer.Util.init(this);
-  }
+		return Initializer.Util.init(this);
+	}
 
-  /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public ScanDataEnterer init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
+	/**
+	   * <!-- begin-user-doc -->
+	   * <!-- end-user-doc -->
+	   * @generated
+	   */
+	public ScanDataEnterer init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+		Initializer.Util.init(this, initializers);
+		return this;
+	}
 } // ScanDataEntererImpl

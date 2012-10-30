@@ -20,7 +20,6 @@ import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.ihe.IHEPackage;
 import org.openhealthtools.mdht.uml.cda.ihe.PregnancyObservation;
 import org.openhealthtools.mdht.uml.cda.ihe.operations.PregnancyObservationOperations;
-import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 
 /**
  * <!-- begin-user-doc -->
@@ -33,106 +32,107 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  */
 public class PregnancyObservationImpl extends SimpleObservationImpl implements PregnancyObservation {
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	protected PregnancyObservationImpl() {
-    super();
-  }
+		super();
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	@Override
 	protected EClass eStaticClass() {
-    return IHEPackage.Literals.PREGNANCY_OBSERVATION;
-  }
+		return IHEPackage.Literals.PREGNANCY_OBSERVATION;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public boolean validatePregnancyObservationCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return PregnancyObservationOperations.validatePregnancyObservationCode(this, diagnostics, context);
-  }
+		return PregnancyObservationOperations.validatePregnancyObservationCode(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public boolean validatePregnancyObservationInterpretationCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-    return PregnancyObservationOperations.validatePregnancyObservationInterpretationCode(this, diagnostics, context);
-  }
+		return PregnancyObservationOperations.validatePregnancyObservationInterpretationCode(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public boolean validatePregnancyObservationMethodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return PregnancyObservationOperations.validatePregnancyObservationMethodCode(this, diagnostics, context);
-  }
+		return PregnancyObservationOperations.validatePregnancyObservationMethodCode(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public boolean validatePregnancyObservationRepeatNumber(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return PregnancyObservationOperations.validatePregnancyObservationRepeatNumber(this, diagnostics, context);
-  }
+		return PregnancyObservationOperations.validatePregnancyObservationRepeatNumber(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public boolean validatePregnancyObservationTargetSiteCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return PregnancyObservationOperations.validatePregnancyObservationTargetSiteCode(this, diagnostics, context);
-  }
+		return PregnancyObservationOperations.validatePregnancyObservationTargetSiteCode(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public boolean validatePregnancyObservationValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return PregnancyObservationOperations.validatePregnancyObservationValue(this, diagnostics, context);
-  }
+		return PregnancyObservationOperations.validatePregnancyObservationValue(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	@Override
 	public boolean validateSimpleObservationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return PregnancyObservationOperations.validateSimpleObservationTemplateId(this, diagnostics, context);
-  }
+		return PregnancyObservationOperations.validateSimpleObservationTemplateId(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	@Override
 	public PregnancyObservation init() {
-      return Initializer.Util.init(this);
-  }
+		return Initializer.Util.init(this);
+	}
 
-  /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public PregnancyObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
+	/**
+	   * <!-- begin-user-doc -->
+	   * <!-- end-user-doc -->
+	   * @generated
+	   */
+	@Override
+	public PregnancyObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+		Initializer.Util.init(this, initializers);
+		return this;
+	}
 } // PregnancyObservationImpl

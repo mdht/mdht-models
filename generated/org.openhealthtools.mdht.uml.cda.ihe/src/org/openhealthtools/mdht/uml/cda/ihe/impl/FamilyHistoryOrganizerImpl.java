@@ -22,7 +22,6 @@ import org.openhealthtools.mdht.uml.cda.ihe.FamilyHistoryObservation;
 import org.openhealthtools.mdht.uml.cda.ihe.FamilyHistoryOrganizer;
 import org.openhealthtools.mdht.uml.cda.ihe.IHEPackage;
 import org.openhealthtools.mdht.uml.cda.ihe.operations.FamilyHistoryOrganizerOperations;
-import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 
 /**
  * <!-- begin-user-doc -->
@@ -36,118 +35,124 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 public class FamilyHistoryOrganizerImpl extends org.openhealthtools.mdht.uml.cda.ccd.impl.FamilyHistoryOrganizerImpl
 		implements FamilyHistoryOrganizer {
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	protected FamilyHistoryOrganizerImpl() {
-    super();
-  }
+		super();
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	@Override
 	protected EClass eStaticClass() {
-    return IHEPackage.Literals.FAMILY_HISTORY_ORGANIZER;
-  }
+		return IHEPackage.Literals.FAMILY_HISTORY_ORGANIZER;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public boolean validateIHEFamilyHistoryOrganizerHasParticipant(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-    return FamilyHistoryOrganizerOperations.validateIHEFamilyHistoryOrganizerHasParticipant(this, diagnostics, context);
-  }
+		return FamilyHistoryOrganizerOperations.validateIHEFamilyHistoryOrganizerHasParticipant(
+			this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public boolean validateIHEFamilyHistoryOrganizerHasParticipantParticipantRole(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-    return FamilyHistoryOrganizerOperations.validateIHEFamilyHistoryOrganizerHasParticipantParticipantRole(this, diagnostics, context);
-  }
+		return FamilyHistoryOrganizerOperations.validateIHEFamilyHistoryOrganizerHasParticipantParticipantRole(
+			this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public boolean validateIHEFamilyHistoryOrganizerHasParticipantRoleCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-    return FamilyHistoryOrganizerOperations.validateIHEFamilyHistoryOrganizerHasParticipantRoleCode(this, diagnostics, context);
-  }
+		return FamilyHistoryOrganizerOperations.validateIHEFamilyHistoryOrganizerHasParticipantRoleCode(
+			this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public boolean validateIHEFamilyHistoryOrganizerHasParticipantRolePlayingEntity(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-    return FamilyHistoryOrganizerOperations.validateIHEFamilyHistoryOrganizerHasParticipantRolePlayingEntity(this, diagnostics, context);
-  }
+		return FamilyHistoryOrganizerOperations.validateIHEFamilyHistoryOrganizerHasParticipantRolePlayingEntity(
+			this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public boolean validateIHEFamilyHistoryOrganizerTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return FamilyHistoryOrganizerOperations.validateIHEFamilyHistoryOrganizerTemplateId(this, diagnostics, context);
-  }
+		return FamilyHistoryOrganizerOperations.validateIHEFamilyHistoryOrganizerTemplateId(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public boolean validateIHEFamilyHistoryOrganizerCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return FamilyHistoryOrganizerOperations.validateIHEFamilyHistoryOrganizerCode(this, diagnostics, context);
-  }
+		return FamilyHistoryOrganizerOperations.validateIHEFamilyHistoryOrganizerCode(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public boolean validateIHEFamilyHistoryOrganizerFamilyHistoryObservation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-    return FamilyHistoryOrganizerOperations.validateIHEFamilyHistoryOrganizerFamilyHistoryObservation(this, diagnostics, context);
-  }
+		return FamilyHistoryOrganizerOperations.validateIHEFamilyHistoryOrganizerFamilyHistoryObservation(
+			this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public EList<FamilyHistoryObservation> getIHEFamilyHistoryObservations() {
-    return FamilyHistoryOrganizerOperations.getIHEFamilyHistoryObservations(this);
-  }
+		return FamilyHistoryOrganizerOperations.getIHEFamilyHistoryObservations(this);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	@Override
 	public FamilyHistoryOrganizer init() {
-      return Initializer.Util.init(this);
-  }
+		return Initializer.Util.init(this);
+	}
 
-  /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public FamilyHistoryOrganizer init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
+	/**
+	   * <!-- begin-user-doc -->
+	   * <!-- end-user-doc -->
+	   * @generated
+	   */
+	@Override
+	public FamilyHistoryOrganizer init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+		Initializer.Util.init(this, initializers);
+		return this;
+	}
 } // FamilyHistoryOrganizerImpl

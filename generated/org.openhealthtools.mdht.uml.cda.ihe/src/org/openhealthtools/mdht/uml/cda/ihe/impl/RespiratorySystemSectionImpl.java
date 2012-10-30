@@ -22,7 +22,6 @@ import org.openhealthtools.mdht.uml.cda.ihe.ProblemEntry;
 import org.openhealthtools.mdht.uml.cda.ihe.RespiratorySystemSection;
 import org.openhealthtools.mdht.uml.cda.ihe.operations.RespiratorySystemSectionOperations;
 import org.openhealthtools.mdht.uml.cda.impl.SectionImpl;
-import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 
 /**
  * <!-- begin-user-doc -->
@@ -35,76 +34,77 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  */
 public class RespiratorySystemSectionImpl extends SectionImpl implements RespiratorySystemSection {
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	protected RespiratorySystemSectionImpl() {
-    super();
-  }
+		super();
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	@Override
 	protected EClass eStaticClass() {
-    return IHEPackage.Literals.RESPIRATORY_SYSTEM_SECTION;
-  }
+		return IHEPackage.Literals.RESPIRATORY_SYSTEM_SECTION;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public boolean validateRespiratorySystemSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return RespiratorySystemSectionOperations.validateRespiratorySystemSectionTemplateId(this, diagnostics, context);
-  }
+		return RespiratorySystemSectionOperations.validateRespiratorySystemSectionTemplateId(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public boolean validateRespiratorySystemSectionCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return RespiratorySystemSectionOperations.validateRespiratorySystemSectionCode(this, diagnostics, context);
-  }
+		return RespiratorySystemSectionOperations.validateRespiratorySystemSectionCode(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public boolean validateRespiratorySystemSectionProblemEntry(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return RespiratorySystemSectionOperations.validateRespiratorySystemSectionProblemEntry(this, diagnostics, context);
-  }
+		return RespiratorySystemSectionOperations.validateRespiratorySystemSectionProblemEntry(
+			this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public ProblemEntry getProblemEntry() {
-    return RespiratorySystemSectionOperations.getProblemEntry(this);
-  }
+		return RespiratorySystemSectionOperations.getProblemEntry(this);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public RespiratorySystemSection init() {
-      return Initializer.Util.init(this);
-  }
+		return Initializer.Util.init(this);
+	}
 
-  /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public RespiratorySystemSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
+	/**
+	   * <!-- begin-user-doc -->
+	   * <!-- end-user-doc -->
+	   * @generated
+	   */
+	public RespiratorySystemSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+		Initializer.Util.init(this, initializers);
+		return this;
+	}
 } // RespiratorySystemSectionImpl

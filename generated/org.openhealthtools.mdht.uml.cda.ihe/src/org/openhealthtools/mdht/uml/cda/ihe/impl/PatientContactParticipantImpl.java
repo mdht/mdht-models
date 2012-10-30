@@ -21,7 +21,6 @@ import org.openhealthtools.mdht.uml.cda.ccd.impl.SupportParticipantImpl;
 import org.openhealthtools.mdht.uml.cda.ihe.IHEPackage;
 import org.openhealthtools.mdht.uml.cda.ihe.PatientContactParticipant;
 import org.openhealthtools.mdht.uml.cda.ihe.operations.PatientContactParticipantOperations;
-import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 
 /**
  * <!-- begin-user-doc -->
@@ -34,68 +33,70 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  */
 public class PatientContactParticipantImpl extends SupportParticipantImpl implements PatientContactParticipant {
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	protected PatientContactParticipantImpl() {
-    super();
-  }
+		super();
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	@Override
 	protected EClass eStaticClass() {
-    return IHEPackage.Literals.PATIENT_CONTACT_PARTICIPANT;
-  }
+		return IHEPackage.Literals.PATIENT_CONTACT_PARTICIPANT;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public boolean validatePatientContactParticipantTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return PatientContactParticipantOperations.validatePatientContactParticipantTemplateId(this, diagnostics, context);
-  }
+		return PatientContactParticipantOperations.validatePatientContactParticipantTemplateId(
+			this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public boolean validatePatientContactParticipantTime(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return PatientContactParticipantOperations.validatePatientContactParticipantTime(this, diagnostics, context);
-  }
+		return PatientContactParticipantOperations.validatePatientContactParticipantTime(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public boolean validatePatientContactParticipantTypeCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return PatientContactParticipantOperations.validatePatientContactParticipantTypeCode(this, diagnostics, context);
-  }
+		return PatientContactParticipantOperations.validatePatientContactParticipantTypeCode(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	@Override
 	public PatientContactParticipant init() {
-      return Initializer.Util.init(this);
-  }
+		return Initializer.Util.init(this);
+	}
 
-  /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public PatientContactParticipant init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
+	/**
+	   * <!-- begin-user-doc -->
+	   * <!-- end-user-doc -->
+	   * @generated
+	   */
+	@Override
+	public PatientContactParticipant init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+		Initializer.Util.init(this, initializers);
+		return this;
+	}
 } // PatientContactParticipantImpl

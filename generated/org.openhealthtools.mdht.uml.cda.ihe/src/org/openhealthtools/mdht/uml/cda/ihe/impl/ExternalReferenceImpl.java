@@ -21,7 +21,6 @@ import org.openhealthtools.mdht.uml.cda.ihe.ExternalReference;
 import org.openhealthtools.mdht.uml.cda.ihe.IHEPackage;
 import org.openhealthtools.mdht.uml.cda.ihe.operations.ExternalReferenceOperations;
 import org.openhealthtools.mdht.uml.cda.impl.ActImpl;
-import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 
 /**
  * <!-- begin-user-doc -->
@@ -34,133 +33,136 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  */
 public class ExternalReferenceImpl extends ActImpl implements ExternalReference {
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	protected ExternalReferenceImpl() {
-    super();
-  }
+		super();
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	@Override
 	protected EClass eStaticClass() {
-    return IHEPackage.Literals.EXTERNAL_REFERENCE;
-  }
+		return IHEPackage.Literals.EXTERNAL_REFERENCE;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public boolean validateExternalReferenceHasNoCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return ExternalReferenceOperations.validateExternalReferenceHasNoCode(this, diagnostics, context);
-  }
+		return ExternalReferenceOperations.validateExternalReferenceHasNoCode(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public boolean validateExternalReferenceHasReference(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return ExternalReferenceOperations.validateExternalReferenceHasReference(this, diagnostics, context);
-  }
+		return ExternalReferenceOperations.validateExternalReferenceHasReference(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public boolean validateExternalReferenceHasReferenceExternalDocument(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-    return ExternalReferenceOperations.validateExternalReferenceHasReferenceExternalDocument(this, diagnostics, context);
-  }
+		return ExternalReferenceOperations.validateExternalReferenceHasReferenceExternalDocument(
+			this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public boolean validateExternalReferenceHasReferenceExternalDocumentID(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-    return ExternalReferenceOperations.validateExternalReferenceHasReferenceExternalDocumentID(this, diagnostics, context);
-  }
+		return ExternalReferenceOperations.validateExternalReferenceHasReferenceExternalDocumentID(
+			this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public boolean validateExternalReferenceHasReferenceExternalDocumentText(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-    return ExternalReferenceOperations.validateExternalReferenceHasReferenceExternalDocumentText(this, diagnostics, context);
-  }
+		return ExternalReferenceOperations.validateExternalReferenceHasReferenceExternalDocumentText(
+			this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public boolean validateExternalReferenceTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return ExternalReferenceOperations.validateExternalReferenceTemplateId(this, diagnostics, context);
-  }
+		return ExternalReferenceOperations.validateExternalReferenceTemplateId(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public boolean validateExternalReferenceClassCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return ExternalReferenceOperations.validateExternalReferenceClassCode(this, diagnostics, context);
-  }
+		return ExternalReferenceOperations.validateExternalReferenceClassCode(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public boolean validateExternalReferenceMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return ExternalReferenceOperations.validateExternalReferenceMoodCode(this, diagnostics, context);
-  }
+		return ExternalReferenceOperations.validateExternalReferenceMoodCode(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public boolean validateExternalReferenceId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return ExternalReferenceOperations.validateExternalReferenceId(this, diagnostics, context);
-  }
+		return ExternalReferenceOperations.validateExternalReferenceId(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public boolean validateExternalReferenceText(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return ExternalReferenceOperations.validateExternalReferenceText(this, diagnostics, context);
-  }
+		return ExternalReferenceOperations.validateExternalReferenceText(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public ExternalReference init() {
-      return Initializer.Util.init(this);
-  }
+		return Initializer.Util.init(this);
+	}
 
-  /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public ExternalReference init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
+	/**
+	   * <!-- begin-user-doc -->
+	   * <!-- end-user-doc -->
+	   * @generated
+	   */
+	public ExternalReference init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+		Initializer.Util.init(this, initializers);
+		return this;
+	}
 } // ExternalReferenceImpl
