@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:CDA="http://www.openhealthtools.org/mdht/schemas/cda/4" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML">
+  <uml:Package xmi:id="_DnNFACKwEeK5JP-MLMm9CQ" name="eye">
+    <packageImport xmi:id="_Us1TwCKxEeK5JP-MLMm9CQ">
+      <importedPackage href="../../org.openhealthtools.mdht.uml.cda.ihe.model/model/ihe.uml#_qQyD8jxVEd6JwqSGecoePg"/>
+    </packageImport>
+    <packageImport xmi:id="_Dst3ICKwEeK5JP-MLMm9CQ">
+      <importedPackage href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_ii81kjxVEd6JwqSGecoePg"/>
+    </packageImport>
+    <packageImport xmi:id="_Dst3ISKwEeK5JP-MLMm9CQ">
+      <importedPackage href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_XgMSwzxVEd6JwqSGecoePg"/>
+    </packageImport>
+    <packageImport xmi:id="_nee3ECLAEeKZiI94kDVqXw">
+      <importedPackage href="../../org.openhealthtools.mdht.uml.cda.cdt.model/model/cdt.uml#_qQyD8jxVEd6JwqSGecoePg"/>
+    </packageImport>
+    <packageImport xmi:id="_qVKwUCLAEeKZiI94kDVqXw">
+      <importedPackage href="../../org.openhealthtools.mdht.uml.cda.ccd.model/model/ccd.uml#_qQyD8jxVEd6JwqSGecoePg"/>
+    </packageImport>
+    <packagedElement xmi:type="uml:Class" xmi:id="_HGfxkNnOEeGdpJagDOqCZQ" name="OcularListOfSurgeriesSection">
+      <generalization xmi:id="_nAawgNnOEeGdpJagDOqCZQ">
+        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.ihe.model/model/.controlled/ihe-surgeries.uml#_jgutAMftEd6VjLXh4DcWSg"/>
+      </generalization>
+      <ownedAttribute xmi:id="_KiiaoNnOEeGdpJagDOqCZQ" name="code" visibility="private" aggregation="composite">
+        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_MzS8UNnOEeGdpJagDOqCZQ" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_MzS8UdnOEeGdpJagDOqCZQ" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_Kiiao9nOEeGdpJagDOqCZQ" name="text" visibility="private" aggregation="composite">
+        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_0jvq8E8AEd6ohP_YEXs4Wg"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_UeY_wNnOEeGdpJagDOqCZQ" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_UeY_wdnOEeGdpJagDOqCZQ" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_xv5K8NnOEeGdpJagDOqCZQ" name="OcularCodedListOfSurgeriesSection">
+      <generalization xmi:id="_xv5K8dnOEeGdpJagDOqCZQ">
+        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.ihe.model/model/.controlled/ihe-codedSurgeries.uml#_9fsJYMftEd6VjLXh4DcWSg"/>
+      </generalization>
+      <ownedAttribute xmi:id="_HyHsANnPEeGdpJagDOqCZQ" name="procedureEntry" association="_HyHsAtnPEeGdpJagDOqCZQ">
+        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.ihe.model/model/ihe.uml#_uP4tkDuMEd-B8KE6Jx0UNQ"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_JxBosNnPEeGdpJagDOqCZQ" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_JxBosdnPEeGdpJagDOqCZQ" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_xEb9sNnPEeGdpJagDOqCZQ" name="externalReference" association="_xEb9stnPEeGdpJagDOqCZQ">
+        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.ihe.model/model/.controlled/ihe-codedResults.uml#_hBLMcBj6EeCf9aMNaCAtDQ"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xEb9sdnPEeGdpJagDOqCZQ"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_HyHsAtnPEeGdpJagDOqCZQ" memberEnd="_HyHsANnPEeGdpJagDOqCZQ _HyHsA9nPEeGdpJagDOqCZQ">
+      <ownedEnd xmi:id="_HyHsA9nPEeGdpJagDOqCZQ" type="_xv5K8NnOEeGdpJagDOqCZQ" association="_HyHsAtnPEeGdpJagDOqCZQ"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_xEb9stnPEeGdpJagDOqCZQ" memberEnd="_xEb9sNnPEeGdpJagDOqCZQ _xEb9s9nPEeGdpJagDOqCZQ">
+      <ownedEnd xmi:id="_xEb9s9nPEeGdpJagDOqCZQ" type="_xv5K8NnOEeGdpJagDOqCZQ" association="_xEb9stnPEeGdpJagDOqCZQ"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_VVgK8NnvEeGdpJagDOqCZQ" name="OcularHistorySection">
+      <generalization xmi:id="_VVp78NnvEeGdpJagDOqCZQ">
+        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.ihe.model/model/.controlled/ihe-historyOfPastIllness.uml#_QD0tkMfbEd6VjLXh4DcWSg"/>
+      </generalization>
+      <ownedAttribute xmi:id="_WYTEsNnvEeGdpJagDOqCZQ" name="code" visibility="private">
+        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_pHH7UNnvEeGdpJagDOqCZQ" name="ocularListOfSurgeriesSection" type="_HGfxkNnOEeGdpJagDOqCZQ" association="_pHH7UtnvEeGdpJagDOqCZQ">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_pHH7UdnvEeGdpJagDOqCZQ"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_soqIYNnvEeGdpJagDOqCZQ" name="ocularCodedListOfSurgeriesSection" type="_xv5K8NnOEeGdpJagDOqCZQ" association="_soqIYtnvEeGdpJagDOqCZQ">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_soqIYdnvEeGdpJagDOqCZQ"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_pHH7UtnvEeGdpJagDOqCZQ" memberEnd="_pHH7UNnvEeGdpJagDOqCZQ _pHH7U9nvEeGdpJagDOqCZQ">
+      <ownedEnd xmi:id="_pHH7U9nvEeGdpJagDOqCZQ" type="_VVgK8NnvEeGdpJagDOqCZQ" association="_pHH7UtnvEeGdpJagDOqCZQ"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_soqIYtnvEeGdpJagDOqCZQ" memberEnd="_soqIYNnvEeGdpJagDOqCZQ _soqIY9nvEeGdpJagDOqCZQ">
+      <ownedEnd xmi:id="_soqIY9nvEeGdpJagDOqCZQ" type="_VVgK8NnvEeGdpJagDOqCZQ" association="_soqIYtnvEeGdpJagDOqCZQ"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_-QP0sNnwEeGdpJagDOqCZQ" name="OphthalmicMedicationsSection">
+      <generalization xmi:id="_-QP0sdnwEeGdpJagDOqCZQ">
+        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.ihe.model/model/.controlled/ihe-medications.uml#_8YbB4HomEd6WAZ28-5wkSg"/>
+      </generalization>
+      <ownedAttribute xmi:id="_A1jDANnxEeGdpJagDOqCZQ" name="code" visibility="private">
+        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_UMOj0NnxEeGdpJagDOqCZQ" name="medication" association="_UMYU0NnxEeGdpJagDOqCZQ">
+        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.ihe.model/model/.controlled/ihe-medications.uml#_sFGZUHGfEd6bf47ZOcft4w"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_UMOj0dnxEeGdpJagDOqCZQ"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_UMYU0NnxEeGdpJagDOqCZQ" memberEnd="_UMOj0NnxEeGdpJagDOqCZQ _UMYU0dnxEeGdpJagDOqCZQ">
+      <ownedEnd xmi:id="_UMYU0dnxEeGdpJagDOqCZQ" type="_-QP0sNnwEeGdpJagDOqCZQ" association="_UMYU0NnxEeGdpJagDOqCZQ"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_2-S0kNnxEeGdpJagDOqCZQ" name="RoutineEyeExamSection">
+      <generalization xmi:id="_2-clkNnxEeGdpJagDOqCZQ">
+        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.ihe.model/model/ihe.uml#_AieTQM9WEeCBIMy4xFlonQ"/>
+      </generalization>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_WeqOkNnzEeGdpJagDOqCZQ" name="OcularPhysicalExamSection">
+      <generalization xmi:id="_WeqOkdnzEeGdpJagDOqCZQ">
+        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.ihe.model/model/.controlled/ihe-physicalExam.uml#_LGf5IMf1Ed6VjLXh4DcWSg"/>
+      </generalization>
+      <ownedAttribute xmi:id="_XbNWYNnzEeGdpJagDOqCZQ" name="code" visibility="private">
+        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_kqxH8NnzEeGdpJagDOqCZQ" name="routineEyeExamSection" type="_2-S0kNnxEeGdpJagDOqCZQ" association="_kqxH8tnzEeGdpJagDOqCZQ">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_kqxH8dnzEeGdpJagDOqCZQ"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_kqxH8tnzEeGdpJagDOqCZQ" memberEnd="_kqxH8NnzEeGdpJagDOqCZQ _kqxH89nzEeGdpJagDOqCZQ">
+      <ownedEnd xmi:id="_kqxH89nzEeGdpJagDOqCZQ" type="_WeqOkNnzEeGdpJagDOqCZQ" association="_kqxH8tnzEeGdpJagDOqCZQ"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_uRDUAAjKEeK_lrVnVRWcGA" name="GeneralEyeEvaluation">
+      <generalization xmi:id="_vw254AjKEeK_lrVnVRWcGA">
+        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_S9OzADxXEd6JwqSGecoePg"/>
+      </generalization>
+      <ownedAttribute xmi:id="_wcJ5oAjKEeK_lrVnVRWcGA" name="code" visibility="private" aggregation="composite">
+        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wcTDkAjKEeK_lrVnVRWcGA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wcTDkQjKEeK_lrVnVRWcGA" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_r65fgAjLEeK_lrVnVRWcGA" name="chiefComplaintSection" association="_r65fggjLEeK_lrVnVRWcGA">
+        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.ihe.model/model/.controlled/ihe-chiefComplaint.uml#_iVB-oMfcEd6VjLXh4DcWSg"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_BM9H4AjMEeK_lrVnVRWcGA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_BM9H4QjMEeK_lrVnVRWcGA" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_nTZTUCK-EeKZiI94kDVqXw" name="functionalStatusSection" association="_nTZTUiK-EeKZiI94kDVqXw">
+        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.ccd.model/model/.controlled/ccd-functionalStatus.uml#_GoctIKPdEd6t_4WfM070fA"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_nTZTUSK-EeKZiI94kDVqXw"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_rDqrcAsOEeKAd5dSKLtS-Q" name="historyOfPresentIllness" association="_rDqrcgsOEeKAd5dSKLtS-Q">
+        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.cdt.model/model/cdt.uml#_g_KRcGm6Ed-lxvPE33eETg"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_sKPHUAvREeKOtsv6kfmqqQ" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_sKPHUQvREeKOtsv6kfmqqQ"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_U5RaIAjPEeKPSalU5OhmXw" name="ocularHistorySection" type="_VVgK8NnvEeGdpJagDOqCZQ" association="_U5SBMQjPEeKPSalU5OhmXw">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_s51_UAvREeKOtsv6kfmqqQ" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_s51_UQvREeKOtsv6kfmqqQ"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_ZZFNUAjPEeKPSalU5OhmXw" name="historyOfPastIllnessSection" association="_ZZFNUgjPEeKPSalU5OhmXw">
+        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.ihe.model/model/.controlled/ihe-historyOfPastIllness.uml#_QD0tkMfbEd6VjLXh4DcWSg"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_vhzgEAvREeKOtsv6kfmqqQ" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_vhzgEQvREeKOtsv6kfmqqQ"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_e9pCEAjPEeKPSalU5OhmXw" name="surgeriesSection" association="_e9ppIAjPEeKPSalU5OhmXw">
+        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.ihe.model/model/.controlled/ihe-surgeries.uml#_jgutAMftEd6VjLXh4DcWSg"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xqrREAvREeKOtsv6kfmqqQ" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xqrREQvREeKOtsv6kfmqqQ"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_6XoSAAjPEeKPSalU5OhmXw" name="codedSurgeriesSection" association="_6Xo5EQjPEeKPSalU5OhmXw">
+        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.ihe.model/model/.controlled/ihe-codedSurgeries.uml#_9fsJYMftEd6VjLXh4DcWSg"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_8nQTYAvREeKOtsv6kfmqqQ" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_8nQTYQvREeKOtsv6kfmqqQ"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_weSyIAwAEeKOtsv6kfmqqQ" name="reviewOfSystemsSection" association="_weSyIgwAEeKOtsv6kfmqqQ">
+        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.ihe.model/model/.controlled/ihe-reviewOfSystems.uml#_6fSusMiWEd6mWrHPmrIIfQ"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_weSyIQwAEeKOtsv6kfmqqQ"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_CqybAAjQEeKPSalU5OhmXw" name="medicationsSection" association="_CqzCEQjQEeKPSalU5OhmXw">
+        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.ihe.model/model/.controlled/ihe-medications.uml#_8YbB4HomEd6WAZ28-5wkSg"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="__xurUAvREeKOtsv6kfmqqQ" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="__xurUQvREeKOtsv6kfmqqQ"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_GptusAjQEeKPSalU5OhmXw" name="ophthalmicMedicationsSection" type="_-QP0sNnwEeGdpJagDOqCZQ" association="_GpuVwAjQEeKPSalU5OhmXw">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_CCo-AAvSEeKOtsv6kfmqqQ" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_CCo-AQvSEeKOtsv6kfmqqQ"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_KG2j8AjQEeKPSalU5OhmXw" name="allergiesReactionsSection" association="_KG3LAAjQEeKPSalU5OhmXw">
+        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.ihe.model/model/.controlled/ihe-allergiesReactions.uml#_O7-UAHrUEd68l9lQ-TLEBQ"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_DVDoIAvSEeKOtsv6kfmqqQ" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_DVDoIQvSEeKOtsv6kfmqqQ"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_-uiycAjQEeKoNIRGpuEf1Q" name="activeProblemsSection" association="_-usjcQjQEeKoNIRGpuEf1Q">
+        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.ihe.model/model/.controlled/ihe-activeProblems.uml#_vz5koGGsEd6bFO5yxRh3Nw"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_EzYnUAvSEeKOtsv6kfmqqQ" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_EzYnUQvSEeKOtsv6kfmqqQ"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_DeViYAjREeKoNIRGpuEf1Q" name="familyMedicalHistorySection" association="_DeViYgjREeKoNIRGpuEf1Q">
+        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.ihe.model/model/.controlled/ihe-familyMedicalHistory.uml#_kKnAIMigEd6mWrHPmrIIfQ"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_GGP9YAvSEeKOtsv6kfmqqQ" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_GGP9YQvSEeKOtsv6kfmqqQ"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_8GNa8CK-EeKZiI94kDVqXw" name="codedFamilyMedicalHistorySection" association="_8GNa8iK-EeKZiI94kDVqXw">
+        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.ihe.model/model/.controlled/ihe-familyMedicalHistory.uml#_cSezgMgkEeCHk-lvWGDTdA"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_8GNa8SK-EeKZiI94kDVqXw"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_NM88wAjREeKoNIRGpuEf1Q" name="socialHistorySection" association="_NM88wgjREeKoNIRGpuEf1Q">
+        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.ihe.model/model/.controlled/ihe-socialHistory.uml#_Kv5q4MihEd6mWrHPmrIIfQ"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_m8RYMAvSEeKOtsv6kfmqqQ" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_m8RYMQvSEeKOtsv6kfmqqQ"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_jU4PUCK-EeKZiI94kDVqXw" name="codedSocialHistorySection" association="_jU4PUiK-EeKZiI94kDVqXw">
+        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.ihe.model/model/.controlled/ihe-socialHistory.uml#_jwnfMCK1EeK5JP-MLMm9CQ"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_jU4PUSK-EeKZiI94kDVqXw"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_sEobkAjREeKoNIRGpuEf1Q" name="ocularPhysicalExamSection" type="_WeqOkNnzEeGdpJagDOqCZQ" association="_sEobkgjREeKoNIRGpuEf1Q">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_tsLoMAjREeKoNIRGpuEf1Q" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_tsLoMQjREeKoNIRGpuEf1Q" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_xHU5YAjREeKoNIRGpuEf1Q" name="assessmentAndPlanSection" association="_xHU5YgjREeKoNIRGpuEf1Q">
+        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.ihe.model/model/.controlled/ihe-assessmentAndPlan.uml#_SNPREMifEd6mWrHPmrIIfQ"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_-V-CgAvSEeKOtsv6kfmqqQ" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_-V-CgQvSEeKOtsv6kfmqqQ"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_r65fggjLEeK_lrVnVRWcGA" memberEnd="_r65fgAjLEeK_lrVnVRWcGA _r65fgwjLEeK_lrVnVRWcGA">
+      <ownedEnd xmi:id="_r65fgwjLEeK_lrVnVRWcGA" type="_uRDUAAjKEeK_lrVnVRWcGA" association="_r65fggjLEeK_lrVnVRWcGA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_U5SBMQjPEeKPSalU5OhmXw" memberEnd="_U5RaIAjPEeKPSalU5OhmXw _U5SBMgjPEeKPSalU5OhmXw">
+      <ownedEnd xmi:id="_U5SBMgjPEeKPSalU5OhmXw" type="_uRDUAAjKEeK_lrVnVRWcGA" association="_U5SBMQjPEeKPSalU5OhmXw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_ZZFNUgjPEeKPSalU5OhmXw" memberEnd="_ZZFNUAjPEeKPSalU5OhmXw _ZZF0YAjPEeKPSalU5OhmXw">
+      <ownedEnd xmi:id="_ZZF0YAjPEeKPSalU5OhmXw" type="_uRDUAAjKEeK_lrVnVRWcGA" association="_ZZFNUgjPEeKPSalU5OhmXw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_e9ppIAjPEeKPSalU5OhmXw" memberEnd="_e9pCEAjPEeKPSalU5OhmXw _e9ppIQjPEeKPSalU5OhmXw">
+      <ownedEnd xmi:id="_e9ppIQjPEeKPSalU5OhmXw" type="_uRDUAAjKEeK_lrVnVRWcGA" association="_e9ppIAjPEeKPSalU5OhmXw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_6Xo5EQjPEeKPSalU5OhmXw" memberEnd="_6XoSAAjPEeKPSalU5OhmXw _6XpgIAjPEeKPSalU5OhmXw">
+      <ownedEnd xmi:id="_6XpgIAjPEeKPSalU5OhmXw" type="_uRDUAAjKEeK_lrVnVRWcGA" association="_6Xo5EQjPEeKPSalU5OhmXw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_CqzCEQjQEeKPSalU5OhmXw" memberEnd="_CqybAAjQEeKPSalU5OhmXw _CqzpIAjQEeKPSalU5OhmXw">
+      <ownedEnd xmi:id="_CqzpIAjQEeKPSalU5OhmXw" type="_uRDUAAjKEeK_lrVnVRWcGA" association="_CqzCEQjQEeKPSalU5OhmXw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_GpuVwAjQEeKPSalU5OhmXw" memberEnd="_GptusAjQEeKPSalU5OhmXw _GpuVwQjQEeKPSalU5OhmXw">
+      <ownedEnd xmi:id="_GpuVwQjQEeKPSalU5OhmXw" type="_uRDUAAjKEeK_lrVnVRWcGA" association="_GpuVwAjQEeKPSalU5OhmXw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_KG3LAAjQEeKPSalU5OhmXw" memberEnd="_KG2j8AjQEeKPSalU5OhmXw _KG3LAQjQEeKPSalU5OhmXw">
+      <ownedEnd xmi:id="_KG3LAQjQEeKPSalU5OhmXw" type="_uRDUAAjKEeK_lrVnVRWcGA" association="_KG3LAAjQEeKPSalU5OhmXw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_-usjcQjQEeKoNIRGpuEf1Q" memberEnd="_-uiycAjQEeKoNIRGpuEf1Q _-usjcgjQEeKoNIRGpuEf1Q">
+      <ownedEnd xmi:id="_-usjcgjQEeKoNIRGpuEf1Q" type="_uRDUAAjKEeK_lrVnVRWcGA" association="_-usjcQjQEeKoNIRGpuEf1Q"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_DeViYgjREeKoNIRGpuEf1Q" memberEnd="_DeViYAjREeKoNIRGpuEf1Q _DeViYwjREeKoNIRGpuEf1Q">
+      <ownedEnd xmi:id="_DeViYwjREeKoNIRGpuEf1Q" type="_uRDUAAjKEeK_lrVnVRWcGA" association="_DeViYgjREeKoNIRGpuEf1Q"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_NM88wgjREeKoNIRGpuEf1Q" memberEnd="_NM88wAjREeKoNIRGpuEf1Q _NM88wwjREeKoNIRGpuEf1Q">
+      <ownedEnd xmi:id="_NM88wwjREeKoNIRGpuEf1Q" type="_uRDUAAjKEeK_lrVnVRWcGA" association="_NM88wgjREeKoNIRGpuEf1Q"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_sEobkgjREeKoNIRGpuEf1Q" memberEnd="_sEobkAjREeKoNIRGpuEf1Q _sEobkwjREeKoNIRGpuEf1Q">
+      <ownedEnd xmi:id="_sEobkwjREeKoNIRGpuEf1Q" type="_uRDUAAjKEeK_lrVnVRWcGA" association="_sEobkgjREeKoNIRGpuEf1Q"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_xHU5YgjREeKoNIRGpuEf1Q" memberEnd="_xHU5YAjREeKoNIRGpuEf1Q _xHU5YwjREeKoNIRGpuEf1Q">
+      <ownedEnd xmi:id="_xHU5YwjREeKoNIRGpuEf1Q" type="_uRDUAAjKEeK_lrVnVRWcGA" association="_xHU5YgjREeKoNIRGpuEf1Q"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_rDqrcgsOEeKAd5dSKLtS-Q" memberEnd="_rDqrcAsOEeKAd5dSKLtS-Q _rDqrcwsOEeKAd5dSKLtS-Q">
+      <ownedEnd xmi:id="_rDqrcwsOEeKAd5dSKLtS-Q" type="_uRDUAAjKEeK_lrVnVRWcGA" association="_rDqrcgsOEeKAd5dSKLtS-Q"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_weSyIgwAEeKOtsv6kfmqqQ" memberEnd="_weSyIAwAEeKOtsv6kfmqqQ _weSyIwwAEeKOtsv6kfmqqQ">
+      <ownedEnd xmi:id="_weSyIwwAEeKOtsv6kfmqqQ" type="_uRDUAAjKEeK_lrVnVRWcGA" association="_weSyIgwAEeKOtsv6kfmqqQ"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_jU4PUiK-EeKZiI94kDVqXw" memberEnd="_jU4PUCK-EeKZiI94kDVqXw _jU4PUyK-EeKZiI94kDVqXw">
+      <ownedEnd xmi:id="_jU4PUyK-EeKZiI94kDVqXw" type="_uRDUAAjKEeK_lrVnVRWcGA" association="_jU4PUiK-EeKZiI94kDVqXw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_nTZTUiK-EeKZiI94kDVqXw" memberEnd="_nTZTUCK-EeKZiI94kDVqXw _nTZTUyK-EeKZiI94kDVqXw">
+      <ownedEnd xmi:id="_nTZTUyK-EeKZiI94kDVqXw" type="_uRDUAAjKEeK_lrVnVRWcGA" association="_nTZTUiK-EeKZiI94kDVqXw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_8GNa8iK-EeKZiI94kDVqXw" memberEnd="_8GNa8CK-EeKZiI94kDVqXw _8GNa8yK-EeKZiI94kDVqXw">
+      <ownedEnd xmi:id="_8GNa8yK-EeKZiI94kDVqXw" type="_uRDUAAjKEeK_lrVnVRWcGA" association="_8GNa8iK-EeKZiI94kDVqXw"/>
+    </packagedElement>
+    <profileApplication xmi:id="_DnNFASKwEeK5JP-MLMm9CQ">
+      <eAnnotations xmi:id="_DnNFAiKwEeK5JP-MLMm9CQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://UML_PROFILES/Standard.profile.uml#_yzU58YinEdqtvbnfB2L_5w"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://UML_PROFILES/Standard.profile.uml#_0"/>
+    </profileApplication>
+    <profileApplication xmi:id="_DnNFAyKwEeK5JP-MLMm9CQ">
+      <eAnnotations xmi:id="_DnNFBCKwEeK5JP-MLMm9CQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.openhealthtools.org/mdht/schemas/cda/4#/"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://CDA_PROFILES/CDA.profile.uml#_cxOJEIEVEd6H8o-hO3-B4Q"/>
+    </profileApplication>
+  </uml:Package>
+  <CDA:PropertyValidation xmi:id="_dkt4ARuVEeG6kfZwwf5nmQ">
+    <ruleId>CONF-487</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_Nfn20NnOEeGdpJagDOqCZQ" base_Property="_KiiaoNnOEeGdpJagDOqCZQ"/>
+  <CDA:CodeSystemConstraint xmi:id="_OFHwkNnOEeGdpJagDOqCZQ" code="47519-4" displayName="History of procedures" base_Property="_KiiaoNnOEeGdpJagDOqCZQ">
+    <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+  </CDA:CodeSystemConstraint>
+  <CDA:PropertyValidation xmi:id="_UvWz8NnOEeGdpJagDOqCZQ" base_Property="_Kiiao9nOEeGdpJagDOqCZQ"/>
+  <CDA:CDATemplate xmi:id="_ZAf5ANnOEeGdpJagDOqCZQ" base_Class="_HGfxkNnOEeGdpJagDOqCZQ" templateId="1.3.6.1.4.1.19376.1.12.1.2.1" assigningAuthorityName="IHE Eye Care"/>
+  <CDA:CDATemplate xmi:id="_38rdUNnOEeGdpJagDOqCZQ" base_Class="_xv5K8NnOEeGdpJagDOqCZQ" templateId="1.3.6.1.4.1.19376.1.12.1.2.2" assigningAuthorityName="IHE Eye Care"/>
+  <CDA:AssociationValidation xmi:id="_KTPk8NnPEeGdpJagDOqCZQ" base_Association="_HyHsAtnPEeGdpJagDOqCZQ"/>
+  <CDA:AssociationValidation xmi:id="_ypJ4wNnPEeGdpJagDOqCZQ" severity="WARNING" base_Association="_xEb9stnPEeGdpJagDOqCZQ"/>
+  <CDA:CodeSystemConstraint xmi:id="_WYTEsdnvEeGdpJagDOqCZQ" code="70934-5" displayName="Ocular history" base_Property="_WYTEsNnvEeGdpJagDOqCZQ">
+    <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+  </CDA:CodeSystemConstraint>
+  <CDA:CDATemplate xmi:id="_cbHiwNnvEeGdpJagDOqCZQ" base_Class="_VVgK8NnvEeGdpJagDOqCZQ" templateId="1.3.6.1.4.1.19376.1.12.1.2.3" assigningAuthorityName="IHE Eye Care"/>
+  <CDA:AssociationValidation xmi:id="_qpAk0NnvEeGdpJagDOqCZQ" severity="WARNING" base_Association="_pHH7UtnvEeGdpJagDOqCZQ"/>
+  <CDA:AssociationValidation xmi:id="_uTU6cNnvEeGdpJagDOqCZQ" severity="INFO" base_Association="_soqIYtnvEeGdpJagDOqCZQ"/>
+  <CDA:CodeSystemConstraint xmi:id="_A1jDAdnxEeGdpJagDOqCZQ" code="70935-2" displayName="Ophthalmic medications" base_Property="_A1jDANnxEeGdpJagDOqCZQ">
+    <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF-300</ruleId>
+    <ruleId>CONF-301</ruleId>
+  </CDA:CodeSystemConstraint>
+  <CDA:CDATemplate xmi:id="_OUR5ANnxEeGdpJagDOqCZQ" base_Class="_-QP0sNnwEeGdpJagDOqCZQ" templateId="1.3.6.1.4.1.19376.1.12.1.2.4" assigningAuthorityName="IHE Eye Care"/>
+  <CDA:AssociationValidation xmi:id="_Vz7hcNnxEeGdpJagDOqCZQ" severity="WARNING" base_Association="_UMYU0NnxEeGdpJagDOqCZQ"/>
+  <CDA:CDATemplate xmi:id="_CYVO8NnyEeGdpJagDOqCZQ" base_Class="_2-S0kNnxEeGdpJagDOqCZQ" templateId="1.3.6.1.4.1.19376.1.12.1.2.6"/>
+  <CDA:CodeSystemConstraint xmi:id="_XbNWYdnzEeGdpJagDOqCZQ" code="70948-5" displayName="Ocular physical exam" base_Property="_XbNWYNnzEeGdpJagDOqCZQ">
+    <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+  </CDA:CodeSystemConstraint>
+  <CDA:CDATemplate xmi:id="_aRwFsNnzEeGdpJagDOqCZQ" base_Class="_WeqOkNnzEeGdpJagDOqCZQ" templateId="1.3.6.1.4.1.19376.1.12.1.2.5" assigningAuthorityName="IHE Eye Care"/>
+  <CDA:AssociationValidation xmi:id="_lSWFUNnzEeGdpJagDOqCZQ" severity="WARNING" base_Association="_kqxH8tnzEeGdpJagDOqCZQ"/>
+  <CDA:CDATemplate xmi:id="__GOhYAjKEeK_lrVnVRWcGA" base_Class="_uRDUAAjKEeK_lrVnVRWcGA" templateId="1.3.6.1.4.1.19376.1.12.1.1.1" assigningAuthorityName="IHE Eye Care"/>
+  <CDA:CodeSystemConstraint xmi:id="_De9cMAjLEeK_lrVnVRWcGA" code="70947-7" displayName="General eye evaluation" base_Property="_wcJ5oAjKEeK_lrVnVRWcGA">
+    <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+  </CDA:CodeSystemConstraint>
+  <CDA:AssociationValidation xmi:id="_CFCmcAjMEeK_lrVnVRWcGA" base_Association="_r65fggjLEeK_lrVnVRWcGA"/>
+  <CDA:AssociationValidation xmi:id="_W3bv8AjPEeKPSalU5OhmXw" severity="WARNING" base_Association="_U5SBMQjPEeKPSalU5OhmXw"/>
+  <CDA:AssociationValidation xmi:id="_a5Sb0AjPEeKPSalU5OhmXw" severity="WARNING" base_Association="_ZZFNUgjPEeKPSalU5OhmXw"/>
+  <CDA:AssociationValidation xmi:id="_g9vRkAjPEeKPSalU5OhmXw" severity="WARNING" base_Association="_e9ppIAjPEeKPSalU5OhmXw"/>
+  <CDA:AssociationValidation xmi:id="_8jklIAjPEeKPSalU5OhmXw" severity="INFO" base_Association="_6Xo5EQjPEeKPSalU5OhmXw"/>
+  <CDA:AssociationValidation xmi:id="_EI1GUAjQEeKPSalU5OhmXw" severity="WARNING" base_Association="_CqzCEQjQEeKPSalU5OhmXw"/>
+  <CDA:AssociationValidation xmi:id="_IBbvkAjQEeKPSalU5OhmXw" severity="WARNING" base_Association="_GpuVwAjQEeKPSalU5OhmXw"/>
+  <CDA:AssociationValidation xmi:id="_LkdKYAjQEeKPSalU5OhmXw" severity="WARNING" base_Association="_KG3LAAjQEeKPSalU5OhmXw"/>
+  <CDA:AssociationValidation xmi:id="_AK738AjREeKoNIRGpuEf1Q" severity="WARNING" base_Association="_-usjcQjQEeKoNIRGpuEf1Q"/>
+  <CDA:AssociationValidation xmi:id="_EGz3oAjREeKoNIRGpuEf1Q" severity="WARNING" base_Association="_DeViYgjREeKoNIRGpuEf1Q"/>
+  <CDA:AssociationValidation xmi:id="_OV2egAjREeKoNIRGpuEf1Q" severity="WARNING" base_Association="_NM88wgjREeKoNIRGpuEf1Q"/>
+  <CDA:AssociationValidation xmi:id="_uOiuYAjREeKoNIRGpuEf1Q" base_Association="_sEobkgjREeKoNIRGpuEf1Q"/>
+  <CDA:AssociationValidation xmi:id="_y3f2gAjREeKoNIRGpuEf1Q" severity="WARNING" base_Association="_xHU5YgjREeKoNIRGpuEf1Q"/>
+  <CDA:AssociationValidation xmi:id="_y-P8YAsOEeKAd5dSKLtS-Q" severity="WARNING" base_Association="_rDqrcgsOEeKAd5dSKLtS-Q"/>
+  <CDA:AssociationValidation xmi:id="_wrBKACK-EeKZiI94kDVqXw" severity="WARNING" base_Association="_nTZTUiK-EeKZiI94kDVqXw"/>
+  <CDA:AssociationValidation xmi:id="_9hHSsCK-EeKZiI94kDVqXw" severity="WARNING" base_Association="_8GNa8iK-EeKZiI94kDVqXw"/>
+  <CDA:AssociationValidation xmi:id="_QO3LQCK_EeKZiI94kDVqXw" severity="INFO" base_Association="_jU4PUiK-EeKZiI94kDVqXw"/>
+  <CDA:AssociationValidation xmi:id="_fqEVACK_EeKZiI94kDVqXw" severity="WARNING" base_Association="_weSyIgwAEeKOtsv6kfmqqQ"/>
+  <CDA:CodegenSupport xmi:id="_iNokUCLHEeKZiI94kDVqXw" basePackage="org.openhealthtools.mdht.uml.cda.ihe" nsPrefix="eye" nsURI="http://www.openhealthtools.org/mdht/uml/cda/ihe/eye" packageName="eye" prefix="Eye" base_Namespace="_DnNFACKwEeK5JP-MLMm9CQ"/>
+</xmi:XMI>
