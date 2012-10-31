@@ -10,6 +10,12 @@
     <packageImport xmi:id="_ETmFQHrCEd68l9lQ-TLEBQ">
       <importedPackage href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_XgMSwzxVEd6JwqSGecoePg"/>
     </packageImport>
+    <packageImport xmi:id="_48nVECN0EeKZiI94kDVqXw">
+      <importedPackage href="../../org.openhealthtools.mdht.uml.cda.cdt.model/model/cdt.uml#_qQyD8jxVEd6JwqSGecoePg"/>
+    </packageImport>
+    <packageImport xmi:id="_7sv6YCN0EeKZiI94kDVqXw">
+      <importedPackage href="../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__yVbeUDcEd6xYZuu1VKCVw"/>
+    </packageImport>
     <packagedElement xmi:type="uml:Class" href=".controlled/ihe-immunizations.uml#_ZEjk4Mf0Ed6VjLXh4DcWSg"/>
     <packagedElement xmi:type="uml:Class" href=".controlled/ihe-medicationsAdministered.uml#_quPDQMfyEd6VjLXh4DcWSg"/>
     <packagedElement xmi:type="uml:Class" xmi:id="_GgvgUDxbEd6JwqSGecoePg" name="ConcernEntry">
@@ -1887,6 +1893,22 @@ patient's extremities.</body>
     <packagedElement xmi:type="uml:Class" href=".controlled/ihe-socialHistory.uml#_jwnfMCK1EeK5JP-MLMm9CQ"/>
     <packagedElement xmi:type="uml:Association" href=".controlled/ihe-socialHistory.uml#_rnhxEiK1EeK5JP-MLMm9CQ"/>
     <packagedElement xmi:type="uml:Class" href=".controlled/ihe-functionalStatus.uml#_imIzoCK2EeK5JP-MLMm9CQ"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_QExgQCNxEeKZiI94kDVqXw" name="ProceduresAndInterventionsSection">
+      <generalization xmi:id="_QExgQSNxEeKZiI94kDVqXw">
+        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_qIf_wDxXEd6JwqSGecoePg"/>
+      </generalization>
+      <ownedAttribute xmi:id="_YEehwCNxEeKZiI94kDVqXw" name="code" visibility="private" aggregation="composite">
+        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_PAeDQCN0EeKZiI94kDVqXw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_PAeDQSN0EeKZiI94kDVqXw"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_iK4xECNxEeKZiI94kDVqXw" name="procedureEntry" type="_uP4tkDuMEd-B8KE6Jx0UNQ" association="_iK4xEiNxEeKZiI94kDVqXw">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_I7ZicSN0EeKZiI94kDVqXw"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_iK4xEiNxEeKZiI94kDVqXw" memberEnd="_iK4xECNxEeKZiI94kDVqXw _iK4xEyNxEeKZiI94kDVqXw">
+      <ownedEnd xmi:id="_iK4xEyNxEeKZiI94kDVqXw" type="_QExgQCNxEeKZiI94kDVqXw" association="_iK4xEiNxEeKZiI94kDVqXw"/>
+    </packagedElement>
     <profileApplication xmi:id="_qQyD9zxVEd6JwqSGecoePg">
       <eAnnotations xmi:id="_qQyD-DxVEd6JwqSGecoePg" source="http://www.eclipse.org/uml2/2.0.0/UML">
         <references xmi:type="ecore:EPackage" href="pathmap://UML_PROFILES/Standard.profile.uml#_yzU58YinEdqtvbnfB2L_5w"/>
@@ -2267,4 +2289,9 @@ patient's extremities.</body>
   <CDA:PropertyValidation xmi:id="_dkt4ARuVEeG6kfZwwf5nmQ" base_Property="_dkt4ABuVEeG6kfZwwf5nmQ">
     <ruleId>CONF-487</ruleId>
   </CDA:PropertyValidation>
+  <CDA:CDATemplate xmi:id="_wg83sCNxEeKZiI94kDVqXw" base_Class="_QExgQCNxEeKZiI94kDVqXw" templateId="1.3.6.1.4.1.19376.1.5.3.1.1.13.2.11" assigningAuthorityName="IHE"/>
+  <CDA:PropertyValidation xmi:id="_2Xc7kCNyEeKZiI94kDVqXw"/>
+  <CDA:CodeSystemConstraint xmi:id="_LkrR0CN0EeKZiI94kDVqXw" code="29544-3" displayName="PROCEDURES" base_Property="_YEehwCNxEeKZiI94kDVqXw">
+    <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+  </CDA:CodeSystemConstraint>
 </xmi:XMI>

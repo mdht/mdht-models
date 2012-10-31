@@ -284,6 +284,8 @@ public class IHEFactoryImpl extends EFactoryImpl implements IHEFactory {
 				return createCodedSocialHistorySection();
 			case IHEPackage.FUNCTIONAL_STATUS_SECTION:
 				return createFunctionalStatusSection();
+			case IHEPackage.PROCEDURES_AND_INTERVENTIONS_SECTION:
+				return createProceduresAndInterventionsSection();
 			case IHEPackage.IHE_REGISTRY_DELEGATE:
 				return createIHERegistryDelegate();
 			default:
@@ -1409,6 +1411,16 @@ public class IHEFactoryImpl extends EFactoryImpl implements IHEFactory {
 	public FunctionalStatusSection createFunctionalStatusSection() {
 		FunctionalStatusSectionImpl functionalStatusSection = new FunctionalStatusSectionImpl();
 		return functionalStatusSection;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ProceduresAndInterventionsSection createProceduresAndInterventionsSection() {
+		ProceduresAndInterventionsSectionImpl proceduresAndInterventionsSection = new ProceduresAndInterventionsSectionImpl();
+		return proceduresAndInterventionsSection;
 	}
 
 	/**
