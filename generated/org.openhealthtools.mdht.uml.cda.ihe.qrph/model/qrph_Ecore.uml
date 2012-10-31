@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:CDA="http://www.openhealthtools.org/mdht/schemas/cda/4" xmlns:Ecore="http://www.eclipse.org/uml2/schemas/Ecore/5" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xsi:schemaLocation="http://www.eclipse.org/uml2/schemas/Ecore/5 pathmap://UML_PROFILES/Ecore.profile.uml#_z1OFcHjqEdy8S4Cr8Rc_NA">
+  <uml:Package xmi:id="_mbOR8CN-EeK79INyp4G_AA" name="qrph">
+    <packageImport xmi:id="_mezKYCN-EeK79INyp4G_AA">
+      <importedPackage href="../../org.openhealthtools.mdht.uml.cda.ihe/model/ihe_Ecore.uml#_qQyD8jxVEd6JwqSGecoePg"/>
+    </packageImport>
+    <packageImport xmi:id="_mezKYSN-EeK79INyp4G_AA">
+      <importedPackage href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_ii81kjxVEd6JwqSGecoePg"/>
+    </packageImport>
+    <packageImport xmi:id="_mezKYiN-EeK79INyp4G_AA">
+      <importedPackage href="../../org.openhealthtools.mdht.uml.cda.ccd/model/ccd_Ecore.uml#_qQyD8jxVEd6JwqSGecoePg"/>
+    </packageImport>
+    <packageImport xmi:id="_mezKYyN-EeK79INyp4G_AA">
+      <importedPackage href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_XgMSwzxVEd6JwqSGecoePg"/>
+    </packageImport>
+    <packageImport xmi:id="_mezKZCN-EeK79INyp4G_AA">
+      <importedPackage href="../../org.openhealthtools.mdht.uml.cda.cdt/model/cdt_Ecore.uml#_qQyD8jxVEd6JwqSGecoePg"/>
+    </packageImport>
+    <packageImport xmi:id="_mezKZSN-EeK79INyp4G_AA">
+      <importedPackage href="../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__yVbeUDcEd6xYZuu1VKCVw"/>
+    </packageImport>
+    <packageImport xmi:id="_mezKZiN-EeK79INyp4G_AA">
+      <importedPackage href="../../org.openhealthtools.mdht.uml.cda.ihe.qrph.model/model/qrph-vocab.uml#_mbhz8CN-EeK79INyp4G_AA"/>
+    </packageImport>
+    <packagedElement xmi:type="uml:Class" xmi:id="_mdm3kSN-EeK79INyp4G_AA" name="EarlyHearingCarePlanDocument">
+      <ownedRule xmi:id="_trfTNCOBEeK79INyp4G_AA" name="MedicalDocumentTemplateId" constrainedElement="_mdm3kSN-EeK79INyp4G_AA">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_trfTNSOBEeK79INyp4G_AA">
+          <language>OCL</language>
+          <body>self.templateId->exists(id : datatypes::II | id.root = '1.3.6.1.4.1.19376.1.7.3.1.1.15.4.1')</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_trpEMCOBEeK79INyp4G_AA" name="EarlyHearingCarePlanDocumentCodeP" constrainedElement="_mdm3kSN-EeK79INyp4G_AA">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_trpEMSOBEeK79INyp4G_AA">
+          <language>OCL</language>
+          <body>(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined())</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_trfTNyOBEeK79INyp4G_AA" name="EarlyHearingCarePlanDocumentCode" constrainedElement="_mdm3kSN-EeK79INyp4G_AA">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_trfTOCOBEeK79INyp4G_AA">
+          <language>OCL</language>
+          <body>(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and &#xD;&#xA;let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in &#xD;&#xA;value.code = '34817-7' and value.codeSystem = '2.16.840.1.113883.6.1')</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:id="_mdm3kyN-EeK79INyp4G_AA">
+        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.ihe/model/ihe_Ecore.uml#_wDMM0GEHEd6bFO5yxRh3Nw"/>
+      </generalization>
+      <ownedOperation xmi:id="_trpESCOBEeK79INyp4G_AA" name="getRiskIndicatorsForHearingLossSection" isQuery="true" bodyCondition="_trpESyOBEeK79INyp4G_AA">
+        <ownedRule xmi:id="_trpESyOBEeK79INyp4G_AA" name="body" constrainedElement="_trpESCOBEeK79INyp4G_AA">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_trpETCOBEeK79INyp4G_AA">
+            <language>OCL</language>
+            <body>self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(qrph::RiskIndicatorsForHearingLossSection))->asSequence()->any(true).oclAsType(qrph::RiskIndicatorsForHearingLossSection)</body>
+          </specification>
+        </ownedRule>
+        <ownedParameter xmi:id="_trpESSOBEeK79INyp4G_AA" type="_rMSXwCN_EeK79INyp4G_AA" direction="return">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_trpESiOBEeK79INyp4G_AA" value="1"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_try1MCOBEeK79INyp4G_AA" name="getActiveProblemsSection" isQuery="true" bodyCondition="_try1MyOBEeK79INyp4G_AA">
+        <ownedRule xmi:id="_try1MyOBEeK79INyp4G_AA" name="body" constrainedElement="_try1MCOBEeK79INyp4G_AA">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_try1NCOBEeK79INyp4G_AA">
+            <language>OCL</language>
+            <body>self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ihe::ActiveProblemsSection))->asSequence()->any(true).oclAsType(ihe::ActiveProblemsSection)</body>
+          </specification>
+        </ownedRule>
+        <ownedParameter xmi:id="_try1MSOBEeK79INyp4G_AA" direction="return">
+          <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.ihe/model/ihe_Ecore.uml#_vz5koGGsEd6bFO5yxRh3Nw"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_try1MiOBEeK79INyp4G_AA" value="1"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_try1NSOBEeK79INyp4G_AA" name="getPhysicalExamSection" isQuery="true" bodyCondition="_try1OCOBEeK79INyp4G_AA">
+        <ownedRule xmi:id="_try1OCOBEeK79INyp4G_AA" name="body" constrainedElement="_try1NSOBEeK79INyp4G_AA">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_try1OSOBEeK79INyp4G_AA">
+            <language>OCL</language>
+            <body>self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ihe::PhysicalExamSection))->asSequence()->any(true).oclAsType(ihe::PhysicalExamSection)</body>
+          </specification>
+        </ownedRule>
+        <ownedParameter xmi:id="_try1NiOBEeK79INyp4G_AA" direction="return">
+          <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.ihe/model/ihe_Ecore.uml#_LGf5IMf1Ed6VjLXh4DcWSg"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_try1NyOBEeK79INyp4G_AA" value="1"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_try1OiOBEeK79INyp4G_AA" name="getReviewOfSystemsSection" isQuery="true" bodyCondition="_try1PSOBEeK79INyp4G_AA">
+        <ownedRule xmi:id="_try1PSOBEeK79INyp4G_AA" name="body" constrainedElement="_try1OiOBEeK79INyp4G_AA">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_try1PiOBEeK79INyp4G_AA">
+            <language>OCL</language>
+            <body>self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ihe::ReviewOfSystemsSection))->asSequence()->any(true).oclAsType(ihe::ReviewOfSystemsSection)</body>
+          </specification>
+        </ownedRule>
+        <ownedParameter xmi:id="_try1OyOBEeK79INyp4G_AA" direction="return">
+          <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.ihe/model/ihe_Ecore.uml#_6fSusMiWEd6mWrHPmrIIfQ"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_try1PCOBEeK79INyp4G_AA" value="1"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_try1PyOBEeK79INyp4G_AA" name="getProceduresAndInterventionsSection" isQuery="true" bodyCondition="_try1QiOBEeK79INyp4G_AA">
+        <ownedRule xmi:id="_try1QiOBEeK79INyp4G_AA" name="body" constrainedElement="_try1PyOBEeK79INyp4G_AA">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_try1QyOBEeK79INyp4G_AA">
+            <language>OCL</language>
+            <body>self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ihe::ProceduresAndInterventionsSection))->asSequence()->any(true).oclAsType(ihe::ProceduresAndInterventionsSection)</body>
+          </specification>
+        </ownedRule>
+        <ownedParameter xmi:id="_try1QCOBEeK79INyp4G_AA" direction="return">
+          <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.ihe/model/ihe_Ecore.uml#_QExgQCNxEeKZiI94kDVqXw"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_try1QSOBEeK79INyp4G_AA" value="1"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_try1RCOBEeK79INyp4G_AA" name="getHearingScreeningCodedResultsSection" isQuery="true" bodyCondition="_try1RyOBEeK79INyp4G_AA">
+        <ownedRule xmi:id="_try1RyOBEeK79INyp4G_AA" name="body" constrainedElement="_try1RCOBEeK79INyp4G_AA">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_try1SCOBEeK79INyp4G_AA">
+            <language>OCL</language>
+            <body>self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(qrph::HearingScreeningCodedResultsSection))->asSequence()->any(true).oclAsType(qrph::HearingScreeningCodedResultsSection)</body>
+          </specification>
+        </ownedRule>
+        <ownedParameter xmi:id="_try1RSOBEeK79INyp4G_AA" type="_MAAsgCOAEeK79INyp4G_AA" direction="return">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_try1RiOBEeK79INyp4G_AA" value="1"/>
+        </ownedParameter>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_rMSXwCN_EeK79INyp4G_AA" name="RiskIndicatorsForHearingLossSection">
+      <ownedComment xmi:id="_0QtwMCOAEeK79INyp4G_AA">
+        <body>This section SHALL include at least one entry describing hearing risk indicators for the subject.</body>
+      </ownedComment>
+      <ownedRule xmi:id="_trpEMiOBEeK79INyp4G_AA" name="RiskIndicatorsForHearingLossSectionTemplateId" constrainedElement="_rMSXwCN_EeK79INyp4G_AA">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_trpEMyOBEeK79INyp4G_AA">
+          <language>OCL</language>
+          <body>self.templateId->exists(id : datatypes::II | id.root = '1.3.6.1.4.1.19376.1.7.3.1.1.15.3.1')</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:id="_rMSXwSN_EeK79INyp4G_AA">
+        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_qIf_wDxXEd6JwqSGecoePg"/>
+      </generalization>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_MAAsgCOAEeK79INyp4G_AA" name="HearingScreeningCodedResultsSection">
+      <ownedComment xmi:id="_r-1ZkCOAEeK79INyp4G_AA">
+        <body>The Hearing Screening Code Results section SHALL include at least one observation entry describing the hearing screening results as described in the Entry Content Module.&#xD;
+Where there are no hearing screening results performed, then the reason SHALL be indicated.</body>
+      </ownedComment>
+      <ownedRule xmi:id="_trpENiOBEeK79INyp4G_AA" name="CodedResultsSectionTemplateId" constrainedElement="_MAAsgCOAEeK79INyp4G_AA">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_trpENyOBEeK79INyp4G_AA">
+          <language>OCL</language>
+          <body>self.templateId->exists(id : datatypes::II | id.root = '1.3.6.1.4.1.19376.1.7.3.1.1.15.3.2')</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:id="_MAAsgSOAEeK79INyp4G_AA">
+        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.ihe/model/ihe_Ecore.uml#_-OeSAMidEd6mWrHPmrIIfQ"/>
+      </generalization>
+      <ownedOperation xmi:id="_trpEOSOBEeK79INyp4G_AA" name="getQrphProcedureEntry" isQuery="true" bodyCondition="_trpEPCOBEeK79INyp4G_AA">
+        <ownedRule xmi:id="_trpEPCOBEeK79INyp4G_AA" name="body" constrainedElement="_trpEOSOBEeK79INyp4G_AA">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_trpEPSOBEeK79INyp4G_AA">
+            <language>OCL</language>
+            <body>self.getProcedures()->select(procedure : cda::Procedure | not procedure.oclIsUndefined() and procedure.oclIsKindOf(ihe::ProcedureEntry))->asSequence()->any(true).oclAsType(ihe::ProcedureEntry)</body>
+          </specification>
+        </ownedRule>
+        <ownedParameter xmi:id="_trpEOiOBEeK79INyp4G_AA" direction="return">
+          <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.ihe/model/ihe_Ecore.uml#_uP4tkDuMEd-B8KE6Jx0UNQ"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_trpEOyOBEeK79INyp4G_AA" value="1"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_trpEPiOBEeK79INyp4G_AA" name="getQrphExternalReference" isQuery="true" bodyCondition="_trpEQSOBEeK79INyp4G_AA">
+        <ownedRule xmi:id="_trpEQSOBEeK79INyp4G_AA" name="body" constrainedElement="_trpEPiOBEeK79INyp4G_AA">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_trpEQiOBEeK79INyp4G_AA">
+            <language>OCL</language>
+            <body>self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(ihe::ExternalReference))->asSequence()->any(true).oclAsType(ihe::ExternalReference)</body>
+          </specification>
+        </ownedRule>
+        <ownedParameter xmi:id="_trpEPyOBEeK79INyp4G_AA" direction="return">
+          <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.ihe/model/ihe_Ecore.uml#_hBLMcBj6EeCf9aMNaCAtDQ"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_trpEQCOBEeK79INyp4G_AA" value="1"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_trpEQyOBEeK79INyp4G_AA" name="getQrphSimpleObservation" isQuery="true" bodyCondition="_trpERiOBEeK79INyp4G_AA">
+        <ownedRule xmi:id="_trpERiOBEeK79INyp4G_AA" name="body" constrainedElement="_trpEQyOBEeK79INyp4G_AA">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_trpERyOBEeK79INyp4G_AA">
+            <language>OCL</language>
+            <body>self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(ihe::SimpleObservation))->asSequence()->any(true).oclAsType(ihe::SimpleObservation)</body>
+          </specification>
+        </ownedRule>
+        <ownedParameter xmi:id="_trpERCOBEeK79INyp4G_AA" direction="return">
+          <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.ihe/model/ihe_Ecore.uml#_dLvb0K4NEd6_ioDelDcPPg"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_trpERSOBEeK79INyp4G_AA" value="1"/>
+        </ownedParameter>
+      </ownedOperation>
+    </packagedElement>
+    <profileApplication xmi:id="_mbOR8SN-EeK79INyp4G_AA">
+      <eAnnotations xmi:id="_mbOR8iN-EeK79INyp4G_AA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://UML_PROFILES/Standard.profile.uml#_yzU58YinEdqtvbnfB2L_5w"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://UML_PROFILES/Standard.profile.uml#_0"/>
+    </profileApplication>
+    <profileApplication xmi:id="_mbOR8yN-EeK79INyp4G_AA">
+      <eAnnotations xmi:id="_mbOR9CN-EeK79INyp4G_AA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.openhealthtools.org/mdht/schemas/cda/4#/"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://CDA_PROFILES/CDA.profile.uml#_cxOJEIEVEd6H8o-hO3-B4Q"/>
+    </profileApplication>
+    <profileApplication xmi:id="_trfTMCOBEeK79INyp4G_AA">
+      <eAnnotations xmi:id="_trfTMSOBEeK79INyp4G_AA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://UML_PROFILES/Ecore.profile.uml#_z1OFcHjqEdy8S4Cr8Rc_NA"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://UML_PROFILES/Ecore.profile.uml#_0"/>
+    </profileApplication>
+  </uml:Package>
+  <CDA:CodegenSupport xmi:id="_mdm3kCN-EeK79INyp4G_AA" basePackage="org.openhealthtools.mdht.uml.cda.ihe" nsPrefix="qrph" nsURI="http://www.openhealthtools.org/mdht/uml/cda/ihe/qrph" packageName="qrph" prefix="Qrph" base_Namespace="_mbOR8CN-EeK79INyp4G_AA"/>
+  <CDA:CDATemplate xmi:id="_mdm3kiN-EeK79INyp4G_AA" base_Class="_mdm3kSN-EeK79INyp4G_AA" templateId="1.3.6.1.4.1.19376.1.7.3.1.1.15.4.1" assigningAuthorityName="IHE QRPH"/>
+  <CDA:CDATemplate xmi:id="_BSjrUCOAEeK79INyp4G_AA" base_Class="_rMSXwCN_EeK79INyp4G_AA" templateId="1.3.6.1.4.1.19376.1.7.3.1.1.15.3.1" assigningAuthorityName="IHE QRPH"/>
+  <CDA:CodeSystemConstraint xmi:id="_MzHkcSOAEeK79INyp4G_AA" code="30954-2" displayName="STUDIES SUMMARY">
+    <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+  </CDA:CodeSystemConstraint>
+  <CDA:CDATemplate xmi:id="_V9qL8COBEeK79INyp4G_AA" base_Class="_MAAsgCOAEeK79INyp4G_AA" templateId="1.3.6.1.4.1.19376.1.7.3.1.1.15.3.2" assigningAuthorityName="IHE QRPH"/>
+  <Ecore:EPackage xmi:id="_trfTMiOBEeK79INyp4G_AA" base_Package="_mbOR8CN-EeK79INyp4G_AA" packageName="qrph" nsPrefix="qrph" nsURI="http://www.openhealthtools.org/mdht/uml/cda/ihe/qrph" basePackage="org.openhealthtools.mdht.uml.cda.ihe" prefix="Qrph">
+    <annotation>http://www.openhealthtools.org/mdht/uml initializers='org.openhealthtools.mdht.uml.cda.ihe.qrph'</annotation>
+  </Ecore:EPackage>
+  <CDA:ConformsTo xmi:id="_trfTMyOBEeK79INyp4G_AA" base_Generalization="_mdm3kyN-EeK79INyp4G_AA"/>
+  <Ecore:EClass xmi:id="_trfTNiOBEeK79INyp4G_AA" base_Class="_mdm3kSN-EeK79INyp4G_AA">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='EarlyHearingCarePlanDocumentTemplateId EarlyHearingCarePlanDocumentCode EarlyHearingCarePlanDocumentCodeP' templateId.root='1.3.6.1.4.1.19376.1.7.3.1.1.15.4.1' code.code='34817-7' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='Otorhinolaryngology Evaluation and management' constraints.validation.dependOn.EarlyHearingCarePlanDocumentCode='EarlyHearingCarePlanDocumentCodeP'</annotation>
+  </Ecore:EClass>
+  <Ecore:EClass xmi:id="_trpENCOBEeK79INyp4G_AA" base_Class="_rMSXwCN_EeK79INyp4G_AA">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='RiskIndicatorsForHearingLossSectionTemplateId' templateId.root='1.3.6.1.4.1.19376.1.7.3.1.1.15.3.1'</annotation>
+  </Ecore:EClass>
+  <CDA:ConformsTo xmi:id="_trpENSOBEeK79INyp4G_AA" base_Generalization="_MAAsgSOAEeK79INyp4G_AA"/>
+  <Ecore:EClass xmi:id="_trpEOCOBEeK79INyp4G_AA" base_Class="_MAAsgCOAEeK79INyp4G_AA">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='HearingScreeningCodedResultsSectionTemplateId' templateId.root='1.3.6.1.4.1.19376.1.7.3.1.1.15.3.2'</annotation>
+  </Ecore:EClass>
+</xmi:XMI>
