@@ -2544,6 +2544,23 @@ public class IHESwitch<T> {
 				}
 				return result;
 			}
+			case IHEPackage.PROCEDURES_AND_INTERVENTIONS_SECTION: {
+				ProceduresAndInterventionsSection proceduresAndInterventionsSection = (ProceduresAndInterventionsSection) theEObject;
+				T result = caseProceduresAndInterventionsSection(proceduresAndInterventionsSection);
+				if (result == null) {
+					result = caseSection(proceduresAndInterventionsSection);
+				}
+				if (result == null) {
+					result = caseAct(proceduresAndInterventionsSection);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(proceduresAndInterventionsSection);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
 			case IHEPackage.IHE_REGISTRY_DELEGATE: {
 				IHERegistryDelegate iheRegistryDelegate = (IHERegistryDelegate) theEObject;
 				T result = caseIHERegistryDelegate(iheRegistryDelegate);
@@ -4312,6 +4329,21 @@ public class IHESwitch<T> {
 	 * @generated
 	 */
 	public T caseFunctionalStatusSection(FunctionalStatusSection object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Procedures And Interventions Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Procedures And Interventions Section</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseProceduresAndInterventionsSection(ProceduresAndInterventionsSection object) {
 		return null;
 	}
 

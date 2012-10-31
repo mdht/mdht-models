@@ -2097,6 +2097,17 @@
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="ihe.ecore#//CodedSocialHistorySection/getIHESocialHistoryObservations"/>
     </genClasses>
     <genClasses xsi:type="genmodel:GenClass" ecoreClass="ihe.ecore#//FunctionalStatusSection"/>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="ihe.ecore#//ProceduresAndInterventionsSection">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="ihe.ecore#//ProceduresAndInterventionsSection/ProceduresAndInterventionsSectionTemplateId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//ProceduresAndInterventionsSection/ProceduresAndInterventionsSectionTemplateId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//ProceduresAndInterventionsSection/ProceduresAndInterventionsSectionTemplateId/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="ihe.ecore#//ProceduresAndInterventionsSection/ProceduresAndInterventionsSectionCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//ProceduresAndInterventionsSection/ProceduresAndInterventionsSectionCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="ihe.ecore#//ProceduresAndInterventionsSection/ProceduresAndInterventionsSectionCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="ihe.ecore#//ProceduresAndInterventionsSection/getProcedureEntry"/>
+    </genClasses>
     <genClasses xsi:type="genmodel:GenClass" ecoreClass="ihe.ecore#//IHERegistryDelegate"/>
   </genPackages>
 </genmodel:GenModel>

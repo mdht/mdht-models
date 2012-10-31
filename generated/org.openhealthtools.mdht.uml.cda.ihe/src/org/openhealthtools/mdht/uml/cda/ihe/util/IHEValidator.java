@@ -3608,12 +3608,28 @@ public class IHEValidator extends EObjectValidator {
 	public static final int FUNCTIONAL_STATUS_SECTION__FUNCTIONAL_STATUS_SECTION_TEMPLATE_ID = 445;
 
 	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Procedures And Interventions Section Template Id' of 'Procedures And Interventions Section'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int PROCEDURES_AND_INTERVENTIONS_SECTION__PROCEDURES_AND_INTERVENTIONS_SECTION_TEMPLATE_ID = 446;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Procedures And Interventions Section Code' of 'Procedures And Interventions Section'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int PROCEDURES_AND_INTERVENTIONS_SECTION__PROCEDURES_AND_INTERVENTIONS_SECTION_CODE = 447;
+
+	/**
 	 * A constant with a fixed name that can be used as the base value for additional hand written constants.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private static final int GENERATED_DIAGNOSTIC_CODE_COUNT = 445;
+	private static final int GENERATED_DIAGNOSTIC_CODE_COUNT = 447;
 
 	/**
 	 * A constant with a fixed name that can be used as the base value for additional hand written constants in a derived class.
@@ -3927,6 +3943,9 @@ public class IHEValidator extends EObjectValidator {
 				return validateCodedSocialHistorySection((CodedSocialHistorySection) value, diagnostics, context);
 			case IHEPackage.FUNCTIONAL_STATUS_SECTION:
 				return validateFunctionalStatusSection((FunctionalStatusSection) value, diagnostics, context);
+			case IHEPackage.PROCEDURES_AND_INTERVENTIONS_SECTION:
+				return validateProceduresAndInterventionsSection(
+					(ProceduresAndInterventionsSection) value, diagnostics, context);
 			case IHEPackage.IHE_REGISTRY_DELEGATE:
 				return validateIHERegistryDelegate((IHERegistryDelegate) value, diagnostics, context);
 			default:
@@ -18353,6 +18372,80 @@ public class IHEValidator extends EObjectValidator {
 	public boolean validateFunctionalStatusSection_validateFunctionalStatusSectionTemplateId(
 			FunctionalStatusSection functionalStatusSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return functionalStatusSection.validateFunctionalStatusSectionTemplateId(diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateProceduresAndInterventionsSection(
+			ProceduresAndInterventionsSection proceduresAndInterventionsSection, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		if (!validate_NoCircularContainment(proceduresAndInterventionsSection, diagnostics, context)) {
+			return false;
+		}
+		boolean result = validate_EveryMultiplicityConforms(proceduresAndInterventionsSection, diagnostics, context);
+		if (result || diagnostics != null) {
+			result &= validate_EveryDataValueConforms(proceduresAndInterventionsSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryReferenceIsContained(proceduresAndInterventionsSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryProxyResolves(proceduresAndInterventionsSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_UniqueID(proceduresAndInterventionsSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryKeyUnique(proceduresAndInterventionsSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryMapEntryUnique(proceduresAndInterventionsSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= cdaValidator.validateSection_validateClassCode(
+				proceduresAndInterventionsSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= cdaValidator.validateSection_validateMoodCode(
+				proceduresAndInterventionsSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateProceduresAndInterventionsSection_validateProceduresAndInterventionsSectionTemplateId(
+				proceduresAndInterventionsSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateProceduresAndInterventionsSection_validateProceduresAndInterventionsSectionCode(
+				proceduresAndInterventionsSection, diagnostics, context);
+		}
+		return result;
+	}
+
+	/**
+	 * Validates the validateProceduresAndInterventionsSectionTemplateId constraint of '<em>Procedures And Interventions Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateProceduresAndInterventionsSection_validateProceduresAndInterventionsSectionTemplateId(
+			ProceduresAndInterventionsSection proceduresAndInterventionsSection, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return proceduresAndInterventionsSection.validateProceduresAndInterventionsSectionTemplateId(
+			diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateProceduresAndInterventionsSectionCode constraint of '<em>Procedures And Interventions Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateProceduresAndInterventionsSection_validateProceduresAndInterventionsSectionCode(
+			ProceduresAndInterventionsSection proceduresAndInterventionsSection, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return proceduresAndInterventionsSection.validateProceduresAndInterventionsSectionCode(diagnostics, context);
 	}
 
 	/**

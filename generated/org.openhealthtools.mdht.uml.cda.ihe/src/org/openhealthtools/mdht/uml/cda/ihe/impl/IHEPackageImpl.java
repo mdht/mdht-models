@@ -866,6 +866,13 @@ public class IHEPackageImpl extends EPackageImpl implements IHEPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	private EClass proceduresAndInterventionsSectionEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	private EClass iheRegistryDelegateEClass = null;
 
 	/**
@@ -2471,10 +2478,23 @@ public class IHEPackageImpl extends EPackageImpl implements IHEPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public EClass getProceduresAndInterventionsSection() {
+		if (proceduresAndInterventionsSectionEClass == null) {
+			proceduresAndInterventionsSectionEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(
+				IHEPackage.eNS_URI).getEClassifiers().get(117);
+		}
+		return proceduresAndInterventionsSectionEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public EClass getIHERegistryDelegate() {
 		if (iheRegistryDelegateEClass == null) {
 			iheRegistryDelegateEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(IHEPackage.eNS_URI).getEClassifiers().get(
-				117);
+				118);
 		}
 		return iheRegistryDelegateEClass;
 	}

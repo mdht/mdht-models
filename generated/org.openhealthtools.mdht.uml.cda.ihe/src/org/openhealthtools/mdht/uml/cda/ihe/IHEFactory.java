@@ -1038,6 +1038,15 @@ public interface IHEFactory extends EFactory {
 	FunctionalStatusSection createFunctionalStatusSection();
 
 	/**
+	 * Returns a new object of class '<em>Procedures And Interventions Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Procedures And Interventions Section</em>'.
+	 * @generated
+	 */
+	ProceduresAndInterventionsSection createProceduresAndInterventionsSection();
+
+	/**
 	 * Returns a new object of class '<em>Registry Delegate</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
