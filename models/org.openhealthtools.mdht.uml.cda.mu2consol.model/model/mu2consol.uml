@@ -1286,14 +1286,14 @@ MU2 170.314(b)(7) Export Summary  - For Inpatient Care</body>
   <CDA:CDATemplate xmi:id="_TC_sAPM5EeGkZPcEpuFP6w" base_Class="_9frdwO1UEeGT-eFu7Ghgjw" templateId="2.16.840.1.113883.10.20.22.2.17"/>
   <CDA:AssociationValidation xmi:id="_eDAjUPabEeGi99B_x568TQ" base_Association="_aVRGQvabEeGi99B_x568TQ"/>
   <CDA:AssociationValidation xmi:id="_Fy-4tfbBEeGulbiehZqi1g" base_Association="_Fy-4s_bBEeGulbiehZqi1g"/>
-  <CDA:ValueSetConstraint xmi:id="_SFkru_bBEeGulbiehZqi1g" base_Property="_SFkruPbBEeGulbiehZqi1g">
+  <CDA:ValueSetConstraint xmi:id="_SFkru_bBEeGulbiehZqi1g" name="" base_Property="_SFkruPbBEeGulbiehZqi1g" message="Mu2consol Patient SHALL contain exactly one [1..1] ethnicGroupCode, where the @code SHALL be selected from OMB Standards for the Classification of Federal Data on Race and Ethnicity.">
     <reference href="mu2consol-vocab.uml#_GE2YsALeEeK7TpEj_YCJGQ"/>
   </CDA:ValueSetConstraint>
-  <CDA:PropertyValidation xmi:id="_SFkrvPbBEeGulbiehZqi1g" base_Property="_SFkruPbBEeGulbiehZqi1g"/>
-  <CDA:ValueSetConstraint xmi:id="_SFucsPbBEeGulbiehZqi1g" base_Property="_SFkrwfbBEeGulbiehZqi1g">
+  <CDA:PropertyValidation xmi:id="_SFkrvPbBEeGulbiehZqi1g" message="Mu2consol Patient SHALL contain exactly one [1..1] ethnicGroupCode, where the @code SHALL be selected from OMB Standards for the Classification of Federal Data on Race and Ethnicity." base_Property="_SFkruPbBEeGulbiehZqi1g"/>
+  <CDA:ValueSetConstraint xmi:id="_SFucsPbBEeGulbiehZqi1g" base_Property="_SFkrwfbBEeGulbiehZqi1g" message="Mu2consol Patient SHALL contain exactly one [1..1] raceCode, where the @code SHALL be selected from OMB Standards for the Classification of Federal Data on Race and Ethnicity.">
     <reference href="mu2consol-vocab.uml#_iw_0EALeEeK7TpEj_YCJGQ"/>
   </CDA:ValueSetConstraint>
-  <CDA:PropertyValidation xmi:id="_SFucsfbBEeGulbiehZqi1g" base_Property="_SFkrwfbBEeGulbiehZqi1g"/>
+  <CDA:PropertyValidation xmi:id="_SFucsfbBEeGulbiehZqi1g" message="Mu2consol Patient SHALL contain exactly one [1..1] raceCode, where the @code SHALL be selected from OMB Standards for the Classification of Federal Data on Race and Ethnicity." base_Property="_SFkrwfbBEeGulbiehZqi1g"/>
   <CDA:AssociationValidation xmi:id="_SFuctvbBEeGulbiehZqi1g" base_Association="_SFuctPbBEeGulbiehZqi1g"/>
   <CDA:ConstraintValidation xmi:id="_0YItAPdxEeG_npP0e3OOEw" base_Constraint="_vSLf0PdxEeG_npP0e3OOEw"/>
   <CDA:AssociationValidation xmi:id="_db8dEPd8EeG_npP0e3OOEw" base_Association="_b_iJcPd8EeG_npP0e3OOEw"/>
@@ -1391,10 +1391,9 @@ MU2 170.314(b)(7) Export Summary  - For Inpatient Care</body>
   <CDA:ConstraintValidation xmi:id="_3NehAAQrEeKNWa1y_3e0dw" base_Constraint="_jVFaQAQrEeKNWa1y_3e0dw"/>
   <CDA:ConstraintValidation xmi:id="_gIu8wARcEeKNWa1y_3e0dw" base_Constraint="_0v2AIARbEeKNWa1y_3e0dw"/>
   <CDA:ConstraintValidation xmi:id="_CkmaYARlEeKNWa1y_3e0dw" base_Constraint="_2PJgoARkEeKNWa1y_3e0dw"/>
-  <CDA:PropertyValidation xmi:id="_CTt_UAeSEeK0r-pCA5uczw" base_Property="_CTtYQAeSEeK0r-pCA5uczw"/>
-  <CDA:ValueSetConstraint xmi:id="_CUD9kAeSEeK0r-pCA5uczw" base_Property="_CTtYQAeSEeK0r-pCA5uczw">
+  <CDA:PropertyValidation xmi:id="_CTt_UAeSEeK0r-pCA5uczw" message="Mu2consol Language Communication SHALL contain exactly one [1..1] languageCode, where the @code SHALL be selected from the set of alpha-3 codes of ISO 639-2 that are in ISO 639-1." base_Property="_CTtYQAeSEeK0r-pCA5uczw"/>
+  <CDA:ValueSetConstraint xmi:id="_CUD9kAeSEeK0r-pCA5uczw" base_Property="_CTtYQAeSEeK0r-pCA5uczw" message="Mu2consol Language Communication SHALL contain exactly one [1..1] languageCode, where the @code SHALL be selected from the set of alpha-3 codes of ISO 639-2 that are in ISO 639-1.">
     <reference href="mu2consol-vocab.uml#_bjYjEAQsEeKhXbyWShxPyQ"/>
-    <ruleId>CONF:5407</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:ConstraintValidation xmi:id="_MLMM8ArCEeK-rsV_B2slTA" base_Constraint="_UuuwwArBEeK-rsV_B2slTA"/>
   <CDA:ConstraintValidation xmi:id="_OZHdEArCEeK-rsV_B2slTA" base_Constraint="_tV2F4ArAEeK-rsV_B2slTA"/>
