@@ -3148,8 +3148,7 @@ UNK.  If the code is something other than SNOMED, @nullFlavor SHOULD be OTH and 
   <CDA:PropertyValidation xmi:id="_DKoucCzDEeGMXrZ0DiQwGg" severity="INFO">
     <base_Property href=".controlled/consol-documents.uml#_NmVGtSzCEeGMXrZ0DiQwGg"/>
   </CDA:PropertyValidation>
-  <CDA:PropertyValidation xmi:id="_XiM58CzCEeGMXrZ0DiQwGg" severity="WARNING">
-    <ruleId>a.</ruleId>
+  <CDA:PropertyValidation xmi:id="_XiM58CzCEeGMXrZ0DiQwGg">
     <ruleId>CONF:9945</ruleId>
     <base_Property href=".controlled/consol-documents.uml#_NmVGuCzCEeGMXrZ0DiQwGg"/>
   </CDA:PropertyValidation>
@@ -4554,7 +4553,7 @@ UNK.  If the code is something other than SNOMED, @nullFlavor SHOULD be OTH and 
   <CDA:AssociationValidation xmi:id="_As7u0PI1EeGu1M-cCXg0Dg" base_Association="__ZAo0PI0EeGu1M-cCXg0Dg">
     <ruleId>CONF:16793</ruleId>
   </CDA:AssociationValidation>
-  <CDA:AssociationValidation xmi:id="_BWuHsPKuEeGFUPBL8qS7yQ" severity="WARNING" base_Association="_9_jXk_KtEeGFUPBL8qS7yQ">
+  <CDA:AssociationValidation xmi:id="_BWuHsPKuEeGFUPBL8qS7yQ" base_Association="_9_jXk_KtEeGFUPBL8qS7yQ">
     <ruleId>CONF:8385</ruleId>
   </CDA:AssociationValidation>
   <CDA:CDATemplate xmi:id="_alEUkPKwEeGFUPBL8qS7yQ" base_Class="_TkyvwPKwEeGFUPBL8qS7yQ" templateId="2.16.840.1.113883.10.20.6.2.3">

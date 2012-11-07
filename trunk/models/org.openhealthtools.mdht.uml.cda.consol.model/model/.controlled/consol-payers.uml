@@ -75,8 +75,8 @@ with respect to the payer, so that the identifiers can be recorded.&#xD;
     </ownedAttribute>
     <ownedAttribute xmi:id="_UdHpMBUlEeGvPruliC3crg" name="code" visibility="private" aggregation="composite">
       <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0I3lMOWaEeGKmvzED_He2w" value="1"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0I3lMeWaEeGKmvzED_He2w"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_dkaiACefEeKFA9nMp1YYPg" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_dkbJECefEeKFA9nMp1YYPg" value="1"/>
       <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_HUTHQEocEd6c3qsAxlFHaQ"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_UdHpMhUlEeGvPruliC3crg" name="id" visibility="private" aggregation="composite">
@@ -581,7 +581,7 @@ self.supply->forAll((moodCode = vocab::x_DocumentSubstanceMood::PRMS and perform
     <ruleId>CONF:8901</ruleId>
     <ruleId>CONF:10119</ruleId>
   </CDA:PropertyValidation>
-  <CDA:PropertyValidation xmi:id="_s5Fb8DZaEeGUovy31cP2ng" severity="WARNING" base_Property="_UdHpMBUlEeGvPruliC3crg">
+  <CDA:PropertyValidation xmi:id="_s5Fb8DZaEeGUovy31cP2ng" base_Property="_UdHpMBUlEeGvPruliC3crg">
     <ruleId>CONF:8903</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_sHmwUDaJEeGUovy31cP2ng">

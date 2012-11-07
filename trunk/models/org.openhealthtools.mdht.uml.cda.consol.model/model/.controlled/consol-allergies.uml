@@ -156,9 +156,6 @@ NOTE: The agent responsible for an allergy or adverse reaction is not always a m
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_oguNAANMEeKJMbqTnrzczw" name="allergyPlayingEntityCodeSystems" constrainedElement="_2EaLUBSVEeGGzu7fmW9pXw">
-      <ownedComment xmi:id="_xhGoYANMEeKJMbqTnrzczw">
-        <body>QUERY</body>
-      </ownedComment>
       <ownedComment xmi:id="_zzqg4ANMEeKJMbqTnrzczw">
         <body>Duplicated constraint to make OCL easier to write. Check AllergyObservationParticipant->ParticipantRole->PlayingEntity for original conformance rules.</body>
       </ownedComment>
@@ -166,8 +163,10 @@ NOTE: The agent responsible for an allergy or adverse reaction is not always a m
         <language>Analysis</language>
         <language>OCL</language>
         <body>In an allergy to a specific medication the code SHALL be selected from the ValueSet 2.16.840.1.113883.3.88.12.80.16 Medication Brand Name DYNAMIC or the ValueSet 2.16.840.1.113883.3.88.12.80.17 Medication Clinical Drug DYNAMIC. In an allergy to a class of medications the code SHALL be selected from the ValueSet 2.16.840.1.113883.3.88.12.80.18 Medication Drug Class DYNAMIC. In an allergy to a food or other substance the code SHALL be selected from the ValueSet 2.16.840.1.113883.3.88.12.80.20 Ingredient Name DYNAMIC</body>
-        <body>if (self.value->forAll(value | value.oclAsType(datatypes::CD).code = '419511003' or value.oclAsType(datatypes::CD).code = '416098002' or value.oclAsType(datatypes::CD).code = '59037007')) then self.participant->excluding(null).participantRole->excluding(null).playingEntity->excluding(null)->reject(code.codeSystem = '2.16.840.1.113883.6.88' or code.codeSystem='2.16.840.1.113883.3.26.1.5')&#xD;
-else self.participant->excluding(null).participantRole->excluding(null).playingEntity->excluding(null)->reject(code.codeSystem = '2.16.840.1.113883.4.9') endif</body>
+        <body>(self.value->forAll(value | value.isNullFlavorUndefined())) implies &#xD;
+((self.value->forAll(value | value.oclAsType(datatypes::CD).code = '419511003' or value.oclAsType(datatypes::CD).code = '416098002' or value.oclAsType(datatypes::CD).code = '59037007')) and (self.participant.participantRole.playingEntity->forAll(code.codeSystem = '2.16.840.1.113883.6.88' or code.codeSystem='2.16.840.1.113883.3.26.1.5')) &#xD;
+or (self.value->forAll(value | value.oclAsType(datatypes::CD).code = '418471000' or value.oclAsType(datatypes::CD).code = '414285001' or value.oclAsType(datatypes::CD).code = '235719002')) and (self.participant.participantRole.playingEntity->forAll(code.codeSystem = '2.16.840.1.113883.4.9'))&#xD;
+or (self.value->forAll(value | value.oclAsType(datatypes::CD).code = '420134006' or value.oclAsType(datatypes::CD).code = '418038007' or value.oclAsType(datatypes::CD).code = '419199007')) and (self.participant.participantRole.playingEntity->forAll(code.codeSystem = '2.16.840.1.113883.6.88' or code.codeSystem='2.16.840.1.113883.3.26.1.5' or code.codeSystem = '2.16.840.1.113883.4.9')))</body>
       </specification>
     </ownedRule>
     <generalization xmi:id="_2F5ZERSVEeGGzu7fmW9pXw">

@@ -1064,8 +1064,8 @@ In a CCD the encompassingEncounter may be used when documenting a specific encou
         </ownedAttribute>
         <ownedAttribute xmi:id="_NmVGuCzCEeGMXrZ0DiQwGg" name="id" visibility="private" aggregation="composite">
           <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_culQ8DxaEd6JwqSGecoePg"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="__OOLkPIoEeGu1M-cCXg0Dg" value="*"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="__OPZsPIoEeGu1M-cCXg0Dg"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_nYwJ4CefEeKFA9nMp1YYPg" value="*"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_nYww8CefEeKFA9nMp1YYPg" value="1"/>
           <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_9JenIEodEd6c3qsAxlFHaQ"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_f4q_sOxvEeG7k4bbVdXbXw" name="assignedPerson" visibility="private" type="_gidjkOxvEeG7k4bbVdXbXw" aggregation="composite">
@@ -1209,19 +1209,15 @@ In a CCD the encompassingEncounter may be used when documenting a specific encou
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NMTVQuxxEeG7k4bbVdXbXw"/>
             <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_xEWTMErfEd6FXKclYGEDCw"/>
           </ownedAttribute>
-          <ownedAttribute xmi:id="_NMTVQ-xxEeG7k4bbVdXbXw" name="typeCode" visibility="private" isReadOnly="true">
-            <ownedComment xmi:id="_CkYOEPI0EeGu1M-cCXg0Dg">
-              <body>The performer participant represents clinicians who actually and principally carry out the serviceEvent. In a transfer of care this represents the healthcare providers involved in the current or pertinent historical care of the patient. Preferably, the patient's key healthcare care team members would be listed, particularly their primary physician and any active consulting physicians, therapists, and counselors (CONF:16753).</body>
-            </ownedComment>
-            <type xmi:type="uml:Enumeration" href="../../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__zOqckDcEd6xYZuu1VKCVw"/>
-            <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_3_p4cErfEd6FXKclYGEDCw"/>
-            <defaultValue xmi:type="uml:LiteralString" xmi:id="_qwCUsAEREeKL0Ohby4AyRg" value="PRF"/>
-          </ownedAttribute>
           <ownedAttribute xmi:id="_NMT8UOxxEeG7k4bbVdXbXw" name="assignedEntity" visibility="private" type="_YzQKQOxxEeG7k4bbVdXbXw" aggregation="composite">
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NMT8UexxEeG7k4bbVdXbXw" value="1"/>
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NMT8UuxxEeG7k4bbVdXbXw" value="1"/>
             <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_670WYUoVEd6c3qsAxlFHaQ"/>
             <association href="../consol.uml#_NMUjYOxxEeG7k4bbVdXbXw"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_wsF2ICeiEeKFA9nMp1YYPg" name="typeCode" visibility="private">
+            <type xmi:type="uml:Enumeration" href="../../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__zOqckDcEd6xYZuu1VKCVw"/>
+            <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_3_p4cErfEd6FXKclYGEDCw"/>
           </ownedAttribute>
           <nestedClassifier xmi:type="uml:Class" xmi:id="_YzQKQOxxEeG7k4bbVdXbXw" name="AssignedEntity">
             <ownedRule xmi:id="_jsztwOxxEeG7k4bbVdXbXw" name="hasNationalProviderIdentifier" constrainedElement="_6j680CytEeGMXrZ0DiQwGg">
@@ -2544,8 +2540,8 @@ The Consultation Note recommends use of a single document type code, 11488-4 &qu
         <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_Li14oEcZEd6besF9iFIJkQ"/>
       </generalization>
       <ownedAttribute xmi:id="_9_jXkPKtEeGFUPBL8qS7yQ" name="order" visibility="private" type="_AIbvoPKuEeGFUPBL8qS7yQ" aggregation="composite">
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Cs4CUPKuEeGFUPBL8qS7yQ" value="1"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Cs4CUfKuEeGFUPBL8qS7yQ"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xXpb8CefEeKFA9nMp1YYPg" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xXpb8SefEeKFA9nMp1YYPg" value="1"/>
         <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_eMcycUoWEd6c3qsAxlFHaQ"/>
         <association href="../consol.uml#_9_jXk_KtEeGFUPBL8qS7yQ"/>
       </ownedAttribute>
@@ -5136,9 +5132,6 @@ OIDs SHALL be no more than 64 characters in length..</body>
   <CDA:PropertyValidation xmi:id="_PoV54OxxEeG7k4bbVdXbXw" severity="INFO" base_Property="_NMTVQOxxEeG7k4bbVdXbXw">
     <ruleId>CONF:16818</ruleId>
   </CDA:PropertyValidation>
-  <CDA:PropertyValidation xmi:id="_RFWqcOxxEeG7k4bbVdXbXw" base_Property="_NMTVQ-xxEeG7k4bbVdXbXw">
-    <ruleId>CONF:14840</ruleId>
-  </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_cFxq8OxxEeG7k4bbVdXbXw" severity="WARNING" base_Property="_Zphq8OxxEeG7k4bbVdXbXw">
     <ruleId>CONF:14842</ruleId>
   </CDA:PropertyValidation>
@@ -5431,4 +5424,7 @@ OIDs SHALL be no more than 64 characters in length..</body>
   <CDA:ValueSetConstraint xmi:id="_KITSEPeQEeGE6_g8dRyaRg" base_Property="_qB12z_IPEeGu1M-cCXg0Dg">
     <reference href="../consol-vocab.uml#_x6zGAG1HEeGCevFpokwODw"/>
   </CDA:ValueSetConstraint>
+  <CDA:PropertyValidation xmi:id="_xY4DoCeiEeKFA9nMp1YYPg" base_Property="_wsF2ICeiEeKFA9nMp1YYPg">
+    <ruleId>CONF:14840</ruleId>
+  </CDA:PropertyValidation>
 </xmi:XMI>
