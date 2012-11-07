@@ -1730,7 +1730,7 @@ public class Mu2consolPackageImpl extends EPackageImpl implements
            source, 
            new String[] {
              "constraints.validation.error", "SmokingStatusObservationTemplateId SmokingStatusObservationValue SmokingStatusObservationValueP",
-             "templateId.root", "2.16.840.1.113883.10.22.4.78",
+             "templateId.root", "2.16.840.1.113883.10.20.22.4.78",
              "value.codeSystem", "2.16.840.1.113883.6.96",
              "value.codeSystemName", "SNOMEDCT",
              "constraints.validation.dependOn.SmokingStatusObservationValue", "SmokingStatusObservationValueP"
