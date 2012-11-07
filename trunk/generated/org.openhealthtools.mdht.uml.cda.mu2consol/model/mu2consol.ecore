@@ -1540,7 +1540,7 @@
   <eClassifiers xsi:type="ecore:EClass" name="SmokingStatusObservation" eSuperTypes="../../org.openhealthtools.mdht.uml.cda.consol/model/consol.ecore#//TobaccoUse">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="constraints.validation.error" value="SmokingStatusObservationTemplateId SmokingStatusObservationValue SmokingStatusObservationValueP"/>
-      <details key="templateId.root" value="2.16.840.1.113883.10.22.4.78"/>
+      <details key="templateId.root" value="2.16.840.1.113883.10.20.22.4.78"/>
       <details key="value.codeSystem" value="2.16.840.1.113883.6.96"/>
       <details key="value.codeSystemName" value="SNOMEDCT"/>
       <details key="constraints.validation.dependOn.SmokingStatusObservationValue"
@@ -1549,10 +1549,10 @@
     <eAnnotations source="duplicates">
       <contents xsi:type="ecore:EOperation" name="TobaccoUseTemplateId" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
         <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
-          <details key="body" value="self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.22.4.78')"/>
+          <details key="body" value="self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.4.78')"/>
         </eAnnotations>
         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-          <details key="documentation" value="self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.22.4.78')"/>
+          <details key="documentation" value="self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.4.78')"/>
         </eAnnotations>
         <eAnnotations source="redefines" references="../../org.openhealthtools.mdht.uml.cda.consol/model/consol.ecore#//TobaccoUse/TobaccoUseTemplateId"/>
         <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">

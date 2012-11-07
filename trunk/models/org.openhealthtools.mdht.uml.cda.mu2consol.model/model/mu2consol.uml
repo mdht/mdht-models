@@ -1351,7 +1351,7 @@ MU2 170.314(b)(7) Export Summary  - For Inpatient Care</body>
     <reference href="mu2consol-vocab.uml#_ezB0kPuJEeGx4ophOjh2tw"/>
   </CDA:ValueSetConstraint>
   <CDA:PropertyValidation xmi:id="__5bnwPwYEeGx4ophOjh2tw" base_Property="__5ZLgPwYEeGx4ophOjh2tw"/>
-  <CDA:CDATemplate xmi:id="_JW-gQPwZEeGx4ophOjh2tw" base_Class="_xbrkwPwYEeGx4ophOjh2tw" templateId="2.16.840.1.113883.10.22.4.78"/>
+  <CDA:CDATemplate xmi:id="_JW-gQPwZEeGx4ophOjh2tw" base_Class="_xbrkwPwYEeGx4ophOjh2tw" templateId="2.16.840.1.113883.10.20.22.4.78"/>
   <CDA:CDATemplate xmi:id="_Mm36EP3iEeGmWJiRRvMaXA" base_Class="_v-6qsNkMEeGsqcJR8eqiMw" templateId="2.16.840.1.113883.10.20.22.1.1"/>
   <CDA:PropertyValidation xmi:id="_ub5J0QJuEeKIhvHOhwsFvA" base_Property="_ub5J0AJuEeKIhvHOhwsFvA">
     <ruleId>CONF:7133</ruleId>
