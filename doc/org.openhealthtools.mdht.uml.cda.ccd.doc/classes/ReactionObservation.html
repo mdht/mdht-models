@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html
   PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html lang="en-us" xml:lang="en-us">
+<html xml:lang="en-us" lang="en-us">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 <meta name="copyright" content="(C) Copyright 2005"/>
@@ -18,7 +18,7 @@
 <link rel="stylesheet" type="text/css" href="../css/commonltr.css"/>
 <title>Reaction Observation</title>
 </head>
-<body id="classId"><a name="classId"><!-- --></a>
+<body id="classId">
 <div>
 	<p><b>Development Only.</b> The Normative content for these specifications
 	may be found on the HL7, IHE, and HITSP web sites.</p>
@@ -32,9 +32,11 @@
 
 
 <div class="section">
-<p class="p">A reaction represents an adverse event due to an administered or exposed substance. A reaction can be defined with respect to its severity, and can have been treated by one or more interventions. Significant reactions are to be listed in the Alerts section. Reactions in the Medications section can be used to track reactions associated with individual substance administrations or to track routine follow up to an administration (e.g. "no adverse reaction 30 minutes post administration").</p>
+<div class="p"><p class="lines"><em class="ph i">A reaction represents an adverse event due to an administered or exposed substance. A reaction can be defined with respect to its severity, and can have been treated by one or more interventions. Significant reactions are to be listed in the Alerts section. Reactions in the Medications section can be used to track reactions associated with individual substance administrations or to track routine follow up to an administration (e.g. "no adverse reaction 30 minutes post administration").</em></p>
+</div>
 
 </div>
+
 
 
 
@@ -45,34 +47,27 @@
 <li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@moodCode</strong>="EVN" </tt><em class="ph i">Event</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF-284)
 </li>
 
-<li class="li"><strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">entryRelationship</strong></tt> (CONF-348, CONF-288), such that
+<li class="li">Contains exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt> with data type CD
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">statusCode</strong></tt><tt class="ph tt"><strong class="ph b">/@code</strong>="completed" </tt> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.5.14 ActStatus</tt>) (CONF-285, CONF-286)
+</li>
+
+<li class="li"><strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">entryRelationship</strong></tt> (CONF-348, CONF-288)
 <ol class="ol" type="a">
-<li class="li">Contains <tt class="ph tt"><strong class="ph b">@typeCode="</strong>SUBJ" </tt><em class="ph i">SUBJ (has subject)</em></li>
+<li class="li">Contains <tt class="ph tt"><strong class="ph b">@typeCode="</strong>SUBJ" </tt><em class="ph i">SUBJ</em></li>
 
 <li class="li">Contains exactly one [1..1] <a class="xref" href="SeverityObservation.html" title="[Observation: templateId 2.16.840.1.113883.10.20.1.55]">Severity Observation</a> (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.1.55</tt>)</li>
 </ol>
 </li>
 
-<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">statusCode</strong></tt><tt class="ph tt"><strong class="ph b">/@code</strong>="completed" </tt> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.5.14 HL7ActStatus</tt>) (CONF-285, CONF-286)
-</li>
+<li class="li">A reaction observation <strong class="ph b">MAY</strong> contain one or more reation interventions. (CONF-280)</li>
 
-<li class="li">A reaction observation <strong class="ph b">MAY</strong> contain one or more reation interventions. (CONF-280)<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: not self.getEntryRelationshipTargets(vocab::x_ActRelationshipEntryRelationship::RSON, cda::ClinicalStatement)-&gt;isEmpty()</pre>
-</li>
-</ul>
-</li>
+<li class="li">The value for entryRelationship / @typeCode in a relationship between a reaction observation and reaction intervention <strong class="ph b">SHALL</strong> be "RSON" "Has reason" 2.16.840.1.113883.5.1002 ActRelationshipType STATIC. (CONF-296)</li>
 
-<li class="li">The value for entryRelationship / @typeCode in a relationship between a reaction observation and reaction intervention <strong class="ph b">SHALL</strong> be "RSON" "Has reason" 2.16.840.1.113883.5.1002 ActRelationshipType STATIC. (CONF-296)<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: self.getEntryRelationshipTargets(vocab::x_ActRelationshipEntryRelationship::RSON, cda::ClinicalStatement)-&gt;exists(entry : cda::ClinicalStatement | entry.oclIsKindOf(ccd::ProcedureActivity) or entry.oclIsKindOf(ccd::MedicationActivity))</pre>
-</li>
-</ul>
-</li>
-
-<li class="li">A reaction intervention <strong class="ph b">SHALL</strong> be represented as a procedure activity (templateId 2.16.840.1.113883.10.20.1.29), a medication activity (templateId 2.16.840.1.113883.10.20.1.24), or some other clinical statement. (CONF-297)<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: self.getEntryRelationshipTargets(vocab::x_ActRelationshipEntryRelationship::RSON, cda::ClinicalStatement)-&gt;exists(entry : cda::ClinicalStatement | entry.oclIsKindOf(ccd::ProcedureActivity) or entry.oclIsKindOf(ccd::MedicationActivity))</pre>
-</li>
-</ul>
-</li>
+<li class="li">A reaction intervention <strong class="ph b">SHALL</strong> be represented as a procedure activity (templateId 2.16.840.1.113883.10.20.1.29), a medication activity (templateId 2.16.840.1.113883.10.20.1.24), or some other clinical statement. (CONF-297)</li>
 
 </ol>
-
 
 <p class="p"> </p>
 
@@ -81,24 +76,20 @@
 
 
 <pre class="pre codeblock">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
-&lt;observation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd" classCode="OBS" moodCode="EVN"&gt;
-  &lt;templateId root="2.16.840.1.113883.10.20.1.54"/&gt;
-  &lt;id root="2020290277"/&gt;
-  &lt;code code="2144010405"/&gt;
-  &lt;statusCode code="completed"/&gt;
+&lt;observation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd"&gt;
+  &lt;id root="MDHT" extension="764140969"/&gt;
+  &lt;code code="769945741"/&gt;
   &lt;effectiveTime&gt;
-    &lt;low value="2011"/&gt;
-    &lt;high value="2011"/&gt;
+    &lt;low value="2012"/&gt;
+    &lt;high value="2012"/&gt;
   &lt;/effectiveTime&gt;
   &lt;entryRelationship&gt;
-    &lt;observation classCode="OBS" moodCode="EVN"&gt;
-      &lt;templateId root="2.16.840.1.113883.10.20.1.55"/&gt;
-      &lt;id root="1574202514"/&gt;
-      &lt;code code="SEV" codeSystem="2.16.840.1.113883.5.4" codeSystemName="HL7ActCode" displayName="Severity observation"/&gt;
-      &lt;statusCode code="completed"/&gt;
+    &lt;observation&gt;
+      &lt;id root="MDHT" extension="515870481"/&gt;
+      &lt;code code="853259536"/&gt;
       &lt;effectiveTime&gt;
-        &lt;low value="2011"/&gt;
-        &lt;high value="2011"/&gt;
+        &lt;low value="2012"/&gt;
+        &lt;high value="2012"/&gt;
       &lt;/effectiveTime&gt;
     &lt;/observation&gt;
   &lt;/entryRelationship&gt;

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html
   PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html lang="en-us" xml:lang="en-us">
+<html xml:lang="en-us" lang="en-us">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 <meta name="copyright" content="(C) Copyright 2005"/>
@@ -18,7 +18,7 @@
 <link rel="stylesheet" type="text/css" href="../css/commonltr.css"/>
 <title>Encounters Activity</title>
 </head>
-<body id="classId"><a name="classId"><!-- --></a>
+<body id="classId">
 <div>
 	<p><b>Development Only.</b> The Normative content for these specifications
 	may be found on the HL7, IHE, and HITSP web sites.</p>
@@ -36,6 +36,7 @@
 
 
 
+
 <ol class="ol">
 <li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@classCode</strong>="ENC" </tt> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.5.6 HL7ActClass</tt>) (CONF-459)
 </li>
@@ -46,53 +47,41 @@
 <li class="li"><strong class="ph b">SHALL</strong> contain at least one [1..*] <tt class="ph tt"><strong class="ph b">id</strong></tt> (CONF-461)
 </li>
 
-<li class="li"><strong class="ph b">SHOULD</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt>, which <strong class="ph b">SHOULD</strong> be selected from ValueSet<tt class="ph tt"> 2.16.840.1.113883.1.11.13955 EncounterCode</tt><strong class="ph b"> STATIC</strong> (CONF-462, CONF-463)
+<li class="li"><strong class="ph b">SHOULD</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt>, where the @code <strong class="ph b">SHOULD</strong> be selected from ValueSet<tt class="ph tt"> EncounterCode 2.16.840.1.113883.1.11.13955</tt><strong class="ph b"> STATIC</strong> (CONF-462, CONF-463)
 </li>
 
 <li class="li"><strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">effectiveTime</strong></tt> (CONF-464)
 </li>
 
-<li class="li"><strong class="ph b">MAY</strong> contain zero or more [0..*] <tt class="ph tt"><strong class="ph b">entryRelationship</strong></tt>, such that
+<li class="li"><strong class="ph b">MAY</strong> contain zero or more [0..*] <tt class="ph tt"><strong class="ph b">entryRelationship</strong></tt>
 <ol class="ol" type="a">
 <li class="li">Contains exactly one [1..1] <a class="xref" href="PatientInstruction.html" title="[Act: templateId 2.16.840.1.113883.10.20.1.49]">Patient Instruction</a> (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.1.49</tt>)</li>
 </ol>
 </li>
 
-<li class="li"><strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">entryRelationship</strong></tt>, such that
+<li class="li"><strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">entryRelationship</strong></tt>
 <ol class="ol" type="a">
-<li class="li">Contains <tt class="ph tt"><strong class="ph b">@typeCode="</strong>SUBJ" </tt><em class="ph i">SUBJ (has subject)</em></li>
+<li class="li">Contains <tt class="ph tt"><strong class="ph b">@typeCode="</strong>SUBJ" </tt><em class="ph i">SUBJ</em></li>
 
 <li class="li">Contains exactly one [1..1] <a class="xref" href="AgeObservation.html" title="[Observation: templateId 2.16.840.1.113883.10.20.1.38]">Age Observation</a> (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.1.38</tt>)</li>
 </ol>
 </li>
 
-<li class="li"><strong class="ph b">MAY</strong> contain zero or more [0..*] <tt class="ph tt"><strong class="ph b">encounterLocation</strong></tt> (CONF-471), such that
+<li class="li"><strong class="ph b">MAY</strong> contain zero or more [0..*] <tt class="ph tt"><strong class="ph b">participant</strong></tt> (CONF-471)
 <ol class="ol" type="a">
 <li class="li">Contains exactly one [1..1] <a class="xref" href="EncounterLocation.html" title="[Participant2: templateId 2.16.840.1.113883.10.20.1.45]">Encounter Location</a> (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.1.45</tt>)</li>
 </ol>
 </li>
 
-<li class="li"><strong class="ph b">MAY</strong> contain one or more [1..*] entryRelationship with @typecode='RSON' where target represents the indication for the activity<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: self.entryRelationship-&gt;exists(er : cda::EntryRelationship | er.typeCode = vocab::x_ActRelationshipEntryRelationship::RSON)</pre>
-</li>
-</ul>
-</li>
+<li class="li"><strong class="ph b">MAY</strong> contain one or more [1..*] entryRelationship with @typecode='RSON' where target represents the indication for the activity</li>
 
-<li class="li"><strong class="ph b">MAY</strong> contain zero or more [0..*] performer, used to define the practioners involved in an encounter<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: self.performer-&gt;size() &gt;= 0</pre>
-</li>
-</ul>
-</li>
+<li class="li"><strong class="ph b">MAY</strong> contain zero or more [0..*] performer, used to define the practioners involved in an encounter</li>
 
-<li class="li"><strong class="ph b">MAY</strong> contain one [0..1] performer / assignedEntity / code, to define the role of the practioner<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: self.performer.assignedEntity.code-&gt;size() = 1</pre>
-</li>
-</ul>
-</li>
+<li class="li"><strong class="ph b">MAY</strong> contain one [0..1] performer / assignedEntity / code, to define the role of the practioner</li>
 
-<li class="li"><strong class="ph b">SHALL</strong> contain one or more sources of information (CONF-470)<ul class="ul"><li class="li">UNIMPLEMENTABLE</li>
-</ul>
-</li>
+<li class="li"><strong class="ph b">SHALL</strong> contain one or more sources of information (CONF-470)</li>
 
 </ol>
-
 
 <p class="p"> </p>
 
@@ -101,27 +90,34 @@
 
 
 <pre class="pre codeblock">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
-&lt;encounter xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd" classCode="ENC" moodCode="EVN"&gt;
-  &lt;templateId root="2.16.840.1.113883.10.20.1.21"/&gt;
-  &lt;id root="1766240225"/&gt;
-  &lt;code code="1528505427"/&gt;
+&lt;encounter xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd"&gt;
+  &lt;id root="MDHT" extension="1578707858"/&gt;
   &lt;effectiveTime&gt;
-    &lt;low value="2011"/&gt;
-    &lt;high value="2011"/&gt;
+    &lt;low value="2012"/&gt;
+    &lt;high value="2012"/&gt;
   &lt;/effectiveTime&gt;
+  &lt;participant&gt;
+    &lt;participantRole/&gt;
+  &lt;/participant&gt;
   &lt;entryRelationship&gt;
-    &lt;act moodCode="INT"&gt;
-      &lt;templateId root="2.16.840.1.113883.10.20.1.49"/&gt;
-      &lt;id root="1009967752"/&gt;
-      &lt;code code="2026321176"/&gt;
+    &lt;act&gt;
+      &lt;id root="MDHT" extension="947774536"/&gt;
+      &lt;code code="1881036675"/&gt;
       &lt;effectiveTime&gt;
-        &lt;low value="2011"/&gt;
-        &lt;high value="2011"/&gt;
+        &lt;low value="2012"/&gt;
+        &lt;high value="2012"/&gt;
       &lt;/effectiveTime&gt;
     &lt;/act&gt;
   &lt;/entryRelationship&gt;
   &lt;entryRelationship&gt;
-    &lt;observation/&gt;
+    &lt;observation&gt;
+      &lt;id root="MDHT" extension="149075214"/&gt;
+      &lt;code code="1328704938"/&gt;
+      &lt;effectiveTime&gt;
+        &lt;low value="2012"/&gt;
+        &lt;high value="2012"/&gt;
+      &lt;/effectiveTime&gt;
+    &lt;/observation&gt;
   &lt;/entryRelationship&gt;
 &lt;/encounter&gt;</pre>
 

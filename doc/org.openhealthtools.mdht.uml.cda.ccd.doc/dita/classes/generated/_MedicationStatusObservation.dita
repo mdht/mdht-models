@@ -8,11 +8,14 @@
 <resourceid id="2.16.840.1.113883.10.20.1.47"/>
 </prolog>
 <body>
+<section id="knownSubclasses">
+</section>
 <section id="description">
 </section>
 <ol id="conformance">
+<li><b>SHALL</b> contain exactly one [1..1] templateId (  ) such that it <ol><li><b>SHALL</b> contain exactly one [1..1] <b>@root</b>="2.16.840.1.113883.10.20.1.47"</li></ol></li>
 <li><b>SHALL</b> conform to <xref href="../StatusObservation.dita">Status Observation</xref> template (templateId: <tt>2.16.840.1.113883.10.20.1.57</tt>) (CONF-352)</li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt>, which <b>SHALL</b> be selected from ValueSet<tt> 2.16.840.1.113883.1.11.20.7 MedicationStatusCode</tt><b> STATIC</b> 20061017 (CONF-353)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt>, where the @code <b>SHALL</b> be selected from ValueSet<tt> MedicationStatusCode 2.16.840.1.113883.1.11.20.7</tt><b> STATIC</b> 20061017 (CONF-353)
 </li>
 </ol>
 <ol id="aggregate">
@@ -23,26 +26,31 @@
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="33999-4" </tt><i>Status</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF-512, CONF-513)
 </li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>statusCode</b></tt><tt><b>/@code</b>="completed" </tt> (CodeSystem:<tt> 2.16.840.1.113883.5.14 HL7ActStatus</tt>) (CONF-514, CONF-515)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>statusCode</b></tt><tt><b>/@code</b>="completed" </tt> (CodeSystem:<tt> 2.16.840.1.113883.5.14 ActStatus</tt>) (CONF-514, CONF-515)
 </li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt>, which <b>SHALL</b> be selected from ValueSet<tt> 2.16.840.1.113883.1.11.20.7 MedicationStatusCode</tt><b> STATIC</b> 20061017 (CONF-353)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt>, where the @code <b>SHALL</b> be selected from ValueSet<tt> MedicationStatusCode 2.16.840.1.113883.1.11.20.7</tt><b> STATIC</b> 20061017 (CONF-353)
 </li>
-<li>Target of an entryRelationship whose value for "entryRelationship / @typeCode" <b>SHALL</b> be "REFR" 2.16.840.1.113883.5.1002 ActRelationshipType STATIC. (CONF-509)<ul><li><codeblock>[OCL]: self.entryRelationship-&gt;exists(entry : cda::EntryRelationship | entry.typeCode = vocab::x_ActRelationshipEntryRelationship::REFR)</codeblock></li></ul></li>
-<li><b>SHALL NOT</b> contain any additional Observation attributes. (CONF-517)<ul><li>UNIMPLEMENTABLE</li></ul></li>
-<li><b>SHALL NOT</b> contain any Observation participants. (CONF-518)<ul><li><codeblock>[OCL]: self.participant-&gt;isEmpty()</codeblock></li></ul></li>
-<li><b>SHALL NOT</b> be the source of any Observation relationships. (CONF-519)<ul><li><codeblock>[OCL]: self.entryRelationship-&gt;select(er|not er.observation.oclIsUndefined())-&gt;isEmpty()</codeblock></li></ul></li>
+<li>Target of an entryRelationship whose value for "entryRelationship / @typeCode" <b>SHALL</b> be "REFR" 2.16.840.1.113883.5.1002 ActRelationshipType STATIC. (CONF-509)</li>
+<li><b>SHALL NOT</b> contain any additional Observation attributes. (CONF-517)</li>
+<li><b>SHALL NOT</b> contain any Observation participants. (CONF-518)</li>
+<li><b>SHALL NOT</b> be the source of any Observation relationships. (CONF-519)</li>
 </ol>
+<section id="tableconformance"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="8" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><colspec colname="col2" colnum="2" /><colspec colname="col3" colnum="3" /><colspec colname="col4" colnum="4" /><colspec colname="col5" colnum="5" /><colspec colname="col6" colnum="6" /><colspec colname="col7" colnum="7" /><thead> <row><entry namest="col0" nameend="col7" >ccd::MedicationStatusObservation</entry>  </row>  <row><entry namest="col0" nameend="col7" >cda::observation[cda:templateId/@root = ]/</entry>  </row>  <row><entry>Name</entry><entry>XPath</entry><entry>Cardinality</entry><entry>Severity</entry><entry>Nullable</entry><entry>Data Type</entry><entry>Conformance</entry><entry>Value(s)</entry></row></thead><tbody><row><entry>value</entry><entry>value</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>CE</entry><entry>CONF-353</entry><entry> </entry></row> 
+<row><entry>medicationStatusObservation</entry><entry>medicationStatusObservation</entry><entry>1..1</entry><entry>MAY</entry><entry>YES</entry><entry>MedicationStatusObservation</entry><entry>CONF-350</entry><entry> </entry></row> 
+</tbody></tgroup></table></p></section>
 <codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
-<observation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd" classCode="OBS" moodCode="EVN">
-  <templateId root="2.16.840.1.113883.10.20.1.57"/>
-  <templateId root="2.16.840.1.113883.10.20.1.47"/>
-  <id root="427954829"/>
-  <code code="33999-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Status"/>
-  <statusCode code="completed"/>
+<observation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd">
+  <id root="MDHT" extension="1155451815"/>
+  <code code="1443167026"/>
   <effectiveTime>
-    <low value="2011"/>
-    <high value="2011"/>
+    <low value="2012"/>
+    <high value="2012"/>
   </effectiveTime>
+  <value xsi:type="CE" code="1850009439"/>
 </observation>]]></codeblock>
+<section id="changes">
+</section>
+<p><ph id="classformalname">Medication Status Observation</ph></p>
+<p id="shortdesc">[Observation: templateId <tt>2.16.840.1.113883.10.20.1.47</tt>]</p>
 </body>
 </topic>

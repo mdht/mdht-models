@@ -8,16 +8,17 @@
 <resourceid id="2.16.840.1.113883.10.20.1.48"/>
 </prolog>
 <body>
+<section id="knownSubclasses">
+</section>
 <section id="description">
 </section>
 <ol id="conformance">
+<li><b>SHALL</b> contain exactly one [1..1] templateId (  ) such that it <ol><li><b>SHALL</b> contain exactly one [1..1] <b>@root</b>="2.16.840.1.113883.10.20.1.48"</li></ol></li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>@typeCode</b>="SBJ" </tt> (CONF-181)
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>awarenessCode</b></tt> (CONF-182)
 </li>
-<li>Patient awareness <b>SHALL</b> contain exactly one participant / participantRole / id, which <b>SHALL</b> have exactly one value, which <b>SHALL</b> also be present in ClinicalDocument / recordTarget / patientRole / id. (CONF-183)<ul><li><codeblock>[OCL]: self.participantRole.id-&gt;one(id : datatypes::II |
-  not id.root.oclIsUndefined())
--- TODO compare with ClinicalDocument/recordTarget/patientRole/id</codeblock></li></ul></li>
+<li>Patient awareness <b>SHALL</b> contain exactly one participant / participantRole / id, which <b>SHALL</b> have exactly one value, which <b>SHALL</b> also be present in ClinicalDocument / recordTarget / patientRole / id. (CONF-183)</li>
 </ol>
 <ol id="aggregate">
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>@typeCode</b>="SBJ" </tt> (CONF-181)
@@ -25,20 +26,25 @@
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>awarenessCode</b></tt> (CONF-182)
 </li>
 <li>Contains exactly one [1..1] <tt><b>participantRole</b></tt>, where its type is <xref href="../ParticipantRole.dita">Participant Role</xref>
-</li>
-<li>Patient awareness <b>SHALL</b> contain exactly one participant / participantRole / id, which <b>SHALL</b> have exactly one value, which <b>SHALL</b> also be present in ClinicalDocument / recordTarget / patientRole / id. (CONF-183)<ul><li><codeblock>[OCL]: self.participantRole.id-&gt;one(id : datatypes::II |
-  not id.root.oclIsUndefined())
--- TODO compare with ClinicalDocument/recordTarget/patientRole/id</codeblock></li></ul></li>
+<ol>
+<li>Contains exactly one [1..1] <xref href="../ParticipantRole.dita">Participant Role</xref></li></ol></li>
+<li>Patient awareness <b>SHALL</b> contain exactly one participant / participantRole / id, which <b>SHALL</b> have exactly one value, which <b>SHALL</b> also be present in ClinicalDocument / recordTarget / patientRole / id. (CONF-183)</li>
 </ol>
+<section id="tableconformance"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="8" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><colspec colname="col2" colnum="2" /><colspec colname="col3" colnum="3" /><colspec colname="col4" colnum="4" /><colspec colname="col5" colnum="5" /><colspec colname="col6" colnum="6" /><colspec colname="col7" colnum="7" /><thead> <row><entry namest="col0" nameend="col7" >ccd::PatientAwareness</entry>  </row>  <row><entry namest="col0" nameend="col7" >cda::participant2[cda:templateId/@root = ]/</entry>  </row>  <row><entry>Name</entry><entry>XPath</entry><entry>Cardinality</entry><entry>Severity</entry><entry>Nullable</entry><entry>Data Type</entry><entry>Conformance</entry><entry>Value(s)</entry></row></thead><tbody><row><entry>typeCode</entry><entry>@typeCode</entry><entry>1..1</entry><entry>SHALL</entry><entry>NO</entry><entry>ParticipationType</entry><entry>CONF-181</entry><entry> ADM</entry></row> 
+<row><entry>awarenessCode</entry><entry>awarenessCode</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>CE</entry><entry>CONF-182</entry><entry> </entry></row> 
+</tbody></tgroup></table></p></section>
 <codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
-<participant2 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd" typeCode="SBJ">
-  <templateId root="2.16.840.1.113883.10.20.1.48"/>
+<participant2 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd">
   <time>
-    <low value="2011"/>
-    <high value="2011"/>
+    <low value="2012"/>
+    <high value="2012"/>
   </time>
-  <awarenessCode code="Value"/>
+  <awarenessCode code="2055949795"/>
   <participantRole/>
 </participant2>]]></codeblock>
+<section id="changes">
+</section>
+<p><ph id="classformalname">Patient Awareness</ph></p>
+<p id="shortdesc">[Participant2: templateId <tt>2.16.840.1.113883.10.20.1.48</tt>]</p>
 </body>
 </topic>

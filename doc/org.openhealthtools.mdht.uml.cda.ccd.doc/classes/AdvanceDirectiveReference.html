@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html
   PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html lang="en-us" xml:lang="en-us">
+<html xml:lang="en-us" lang="en-us">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 <meta name="copyright" content="(C) Copyright 2005"/>
@@ -18,7 +18,7 @@
 <link rel="stylesheet" type="text/css" href="../css/commonltr.css"/>
 <title>Advance Directive Reference</title>
 </head>
-<body id="classId"><a name="classId"><!-- --></a>
+<body id="classId">
 <div>
 	<p><b>Development Only.</b> The Normative content for these specifications
 	may be found on the HL7, IHE, and HITSP web sites.</p>
@@ -36,37 +36,79 @@
 
 
 
+
 <ol class="ol">
 <li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@typeCode</strong>="REFR" </tt> (CONF-104)
 </li>
 
-<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">externalDocument</strong></tt> (CONF-102), such that
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">externalDocument</strong></tt> (CONF-102)
+<ol class="ol" type="a">
+<li class="li">Contains exactly one [1..1] CDA External Document</li>
+</ol>
 </li>
 
-<li class="li">The URL of a referenced advance directive document <strong class="ph b">MAY</strong> be present, and <strong class="ph b">SHALL</strong> be represented in Observation / reference / ExternalDocument / text / reference. A &lt;linkHTML&gt; element containing the same URL <strong class="ph b">SHOULD</strong> be present in the associated CDA Narrative Block (CONF-106)<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: self.externalDocument.text.reference.hasContent()</pre>
-</li>
-</ul>
-</li>
+<li class="li">The URL of a referenced advance directive document <strong class="ph b">MAY</strong> be present, and <strong class="ph b">SHALL</strong> be represented in Observation / reference / ExternalDocument / text / reference. A &lt;linkHTML&gt; element containing the same URL <strong class="ph b">SHOULD</strong> be present in the associated CDA Narrative Block (CONF-106)</li>
 
-<li class="li">The MIME type of a referenced advance directive document <strong class="ph b">MAY</strong> be present, and <strong class="ph b">SHALL</strong> be represented in Observation / reference / ExternalDocument / text / @mediaType (CONF-107)<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: self.externalDocument.text.isDefined('mediaType')</pre>
-</li>
-</ul>
-</li>
+<li class="li">The MIME type of a referenced advance directive document <strong class="ph b">MAY</strong> be present, and <strong class="ph b">SHALL</strong> be represented in Observation / reference / ExternalDocument / text / @mediaType (CONF-107)</li>
 
-<li class="li">Where the value of Observation / reference / seperatableInd is "false", the referenced advance directive document <strong class="ph b">SHOULD</strong> be included in the CCD exchange package. The exchange mechanism <strong class="ph b">SHOULD</strong> be based on Internet standard RFC 2557 "MIME Encapsulation of Aggregate Documents, such as HTML (MHTML)" (http://www.ietf.org/rfc/rfc2557.txt) (CONF-108)<ul class="ul"><li class="li">UNIMPLEMENTABLE</li>
-</ul>
-</li>
+<li class="li">Where the value of Observation / reference / seperatableInd is "false", the referenced advance directive document <strong class="ph b">SHOULD</strong> be included in the CCD exchange package. The exchange mechanism <strong class="ph b">SHOULD</strong> be based on Internet standard RFC 2557 "MIME Encapsulation of Aggregate Documents, such as HTML (MHTML)" (http://www.ietf.org/rfc/rfc2557.txt) (CONF-108)</li>
 
-<li class="li">CONF-105: ExternalDocument <strong class="ph b">SHALL</strong> contain at least one ExternalDocument / id. (CONF-105)<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: not self.externalDocument.id-&gt;isEmpty()</pre>
-</li>
-</ul>
-</li>
+<li class="li">CONF-105: ExternalDocument <strong class="ph b">SHALL</strong> contain at least one ExternalDocument / id. (CONF-105)</li>
 
 </ol>
 
-
 <p class="p"> </p>
 
+<div class="section"><div class="p">
+<div class="tablenoborder"><table cellpadding="4" cellspacing="0" summary="" class="table" width="100%" frame="border" border="1" rules="all"> <thead class="thead" align="left"> <tr class="row"><th class="entry" colspan="8" align="left" valign="top" id="d792e111">ccd::AdvanceDirectiveReference</th>
+  </tr>
+  <tr class="row"><th class="entry" colspan="8" align="left" valign="top" id="d792e116">cda::reference[cda:templateId/@root = ]/</th>
+  </tr>
+  <tr class="row"><th class="entry" align="left" valign="top" id="d792e121">Name</th>
+<th class="entry" align="left" valign="top" id="d792e123">XPath</th>
+<th class="entry" align="left" valign="top" id="d792e125">Cardinality</th>
+<th class="entry" align="left" valign="top" id="d792e127">Severity</th>
+<th class="entry" align="left" valign="top" id="d792e129">Nullable</th>
+<th class="entry" align="left" valign="top" id="d792e131">Data Type</th>
+<th class="entry" align="left" valign="top" id="d792e133">Conformance</th>
+<th class="entry" align="left" valign="top" id="d792e135">Value(s)</th>
+</tr>
+</thead>
+<tbody class="tbody"><tr class="row"><td class="entry" align="left" valign="top" headers="d792e111 d792e116 d792e121 ">typeCode</td>
+<td class="entry" align="left" valign="top" headers="d792e111 d792e116 d792e123 ">@typeCode</td>
+<td class="entry" align="left" valign="top" headers="d792e111 d792e116 d792e125 ">1..1</td>
+<td class="entry" align="left" valign="top" headers="d792e111 d792e116 d792e127 ">SHALL</td>
+<td class="entry" align="left" valign="top" headers="d792e111 d792e116 d792e129 ">NO</td>
+<td class="entry" align="left" valign="top" headers="d792e111 d792e116 d792e131 ">x_ActRelationshipExternalReference</td>
+<td class="entry" align="left" valign="top" headers="d792e111 d792e116 d792e133 ">CONF-104</td>
+<td class="entry" align="left" valign="top" headers="d792e111 d792e116 d792e135 "> ELNK</td>
+</tr>
+ 
+<tr class="row"><td class="entry" align="left" valign="top" headers="d792e111 d792e116 d792e121 ">advanceDirectiveReference</td>
+<td class="entry" align="left" valign="top" headers="d792e111 d792e116 d792e123 ">advanceDirectiveReference</td>
+<td class="entry" align="left" valign="top" headers="d792e111 d792e116 d792e125 ">0..1</td>
+<td class="entry" align="left" valign="top" headers="d792e111 d792e116 d792e127 ">MAY</td>
+<td class="entry" align="left" valign="top" headers="d792e111 d792e116 d792e129 ">YES</td>
+<td class="entry" align="left" valign="top" headers="d792e111 d792e116 d792e131 ">AdvanceDirectiveReference</td>
+<td class="entry" align="left" valign="top" headers="d792e111 d792e116 d792e133 ">CONF-102CONF-103</td>
+<td class="entry" align="left" valign="top" headers="d792e111 d792e116 d792e135 "> </td>
+</tr>
+ 
+<tr class="row"><td class="entry" align="left" valign="top" headers="d792e111 d792e116 d792e121 ">externalDocument</td>
+<td class="entry" align="left" valign="top" headers="d792e111 d792e116 d792e123 ">externalDocument</td>
+<td class="entry" align="left" valign="top" headers="d792e111 d792e116 d792e125 ">1..1</td>
+<td class="entry" align="left" valign="top" headers="d792e111 d792e116 d792e127 ">SHALL</td>
+<td class="entry" align="left" valign="top" headers="d792e111 d792e116 d792e129 ">YES</td>
+<td class="entry" align="left" valign="top" headers="d792e111 d792e116 d792e131 ">ExternalDocument</td>
+<td class="entry" align="left" valign="top" headers="d792e111 d792e116 d792e133 ">CONF-102</td>
+<td class="entry" align="left" valign="top" headers="d792e111 d792e116 d792e135 "> </td>
+</tr>
+ 
+</tbody>
+</table>
+</div>
+</div>
+</div>
 
 <p class="p"> </p>
 
@@ -77,8 +119,8 @@
 
 
 <pre class="pre codeblock">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
-&lt;reference xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd" typeCode="REFR"&gt;
-  &lt;templateId root="2.16.840.1.113883.10.20.1.36"/&gt;
+&lt;reference xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd"&gt;
+  &lt;externalDocument/&gt;
 &lt;/reference&gt;</pre>
 
 </div>

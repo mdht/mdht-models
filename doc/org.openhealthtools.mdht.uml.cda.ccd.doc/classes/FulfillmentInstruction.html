@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html
   PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html lang="en-us" xml:lang="en-us">
+<html xml:lang="en-us" lang="en-us">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 <meta name="copyright" content="(C) Copyright 2005"/>
@@ -18,7 +18,7 @@
 <link rel="stylesheet" type="text/css" href="../css/commonltr.css"/>
 <title>Fulfillment Instruction</title>
 </head>
-<body id="classId"><a name="classId"><!-- --></a>
+<body id="classId">
 <div>
 	<p><b>Development Only.</b> The Normative content for these specifications
 	may be found on the HL7, IHE, and HITSP web sites.</p>
@@ -41,12 +41,18 @@
 
 
 
+
 <ol class="ol">
+<li class="li">Contains exactly one [1..1] <tt class="ph tt"><strong class="ph b">@classCode</strong></tt> with data type x_ActClassDocumentEntryAct
+</li>
+
 <li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@moodCode</strong>="INT" </tt> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF-336)
 </li>
 
-</ol>
+<li class="li">Contains exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt> with data type CD
+</li>
 
+</ol>
 
 <p class="p"> </p>
 
@@ -55,13 +61,12 @@
 
 
 <pre class="pre codeblock">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
-&lt;act xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd" moodCode="INT"&gt;
-  &lt;templateId root="2.16.840.1.113883.10.20.1.43"/&gt;
-  &lt;id root="373768223"/&gt;
-  &lt;code code="734901143"/&gt;
+&lt;act xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd"&gt;
+  &lt;id root="MDHT" extension="24778215"/&gt;
+  &lt;code code="363777701"/&gt;
   &lt;effectiveTime&gt;
-    &lt;low value="2011"/&gt;
-    &lt;high value="2011"/&gt;
+    &lt;low value="2012"/&gt;
+    &lt;high value="2012"/&gt;
   &lt;/effectiveTime&gt;
 &lt;/act&gt;</pre>
 

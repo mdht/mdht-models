@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html
   PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html lang="en-us" xml:lang="en-us">
+<html xml:lang="en-us" lang="en-us">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 <meta name="copyright" content="(C) Copyright 2005"/>
@@ -18,7 +18,7 @@
 <link rel="stylesheet" type="text/css" href="../css/commonltr.css"/>
 <title>Alert Observation</title>
 </head>
-<body id="classId"><a name="classId"><!-- --></a>
+<body id="classId">
 <div>
 	<p><b>Development Only.</b> The Normative content for these specifications
 	may be found on the HL7, IHE, and HITSP web sites.</p>
@@ -36,88 +36,59 @@
 
 
 
+
 <ol class="ol">
+<li class="li">Contains exactly one [1..1] <tt class="ph tt"><strong class="ph b">@classCode</strong></tt> with data type ActClassObservation
+</li>
+
 <li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@moodCode</strong>="EVN" </tt><em class="ph i">Event</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF-263)
 </li>
 
-<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">statusCode</strong></tt><tt class="ph tt"><strong class="ph b">/@code</strong>="completed" </tt> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.5.14 HL7ActStatus</tt>) (CONF-264, CONF-265)
+<li class="li">Contains exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt> with data type CD
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">statusCode</strong></tt><tt class="ph tt"><strong class="ph b">/@code</strong>="completed" </tt> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.5.14 ActStatus</tt>) (CONF-264, CONF-265)
 </li>
 
 <li class="li"><strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">effectiveTime</strong></tt> (CONF-266)
 </li>
 
-<li class="li"><strong class="ph b">MAY</strong> contain zero or more [0..*] <tt class="ph tt"><strong class="ph b">value</strong></tt>, which <strong class="ph b">MAY</strong> be selected from ValueSet<tt class="ph tt"> 2.16.840.1.113883.1.11.20.4 AlertTypeCode</tt><strong class="ph b"> STATIC</strong> 20061017, where its data type is CE (CONF-267)
+<li class="li"><strong class="ph b">MAY</strong> contain zero or more [0..*] <tt class="ph tt"><strong class="ph b">value</strong></tt> with data type CE, where the @code <strong class="ph b">MAY</strong> be selected from ValueSet<tt class="ph tt"> AlertTypeCode 2.16.840.1.113883.1.11.20.4</tt><strong class="ph b"> STATIC</strong> 20061017 (CONF-267)
 </li>
 
-<li class="li"><strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">entryRelationship</strong></tt> (CONF-270, CONF-271), such that
+<li class="li"><strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">entryRelationship</strong></tt> (CONF-270, CONF-271)
 <ol class="ol" type="a">
 <li class="li">Contains exactly one [1..1] <a class="xref" href="AlertStatusObservation.html" title="[Observation: templateId 2.16.840.1.113883.10.20.1.39]">Alert Status Observation</a> (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.1.39</tt>)</li>
 </ol>
 </li>
 
-<li class="li"><strong class="ph b">MAY</strong> contain at least one [1..*] <tt class="ph tt"><strong class="ph b">entryRelationship</strong></tt> (CONF-281), such that
+<li class="li"><strong class="ph b">MAY</strong> contain at least one [1..*] <tt class="ph tt"><strong class="ph b">entryRelationship</strong></tt> (CONF-281)
 <ol class="ol" type="a">
-<li class="li">Contains <tt class="ph tt"><strong class="ph b">@typeCode="</strong>MFST" </tt><em class="ph i">MFST (is manifestation of)</em></li>
+<li class="li">Contains <tt class="ph tt"><strong class="ph b">@typeCode="</strong>MFST" </tt><em class="ph i">MFST</em></li>
 
 <li class="li">Contains exactly one [1..1] <a class="xref" href="ReactionObservation.html" title="[Observation: templateId 2.16.840.1.113883.10.20.1.54]">Reaction Observation</a> (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.1.54</tt>)</li>
 </ol>
 </li>
 
-<li class="li">The absence of known allergies <strong class="ph b">SHOULD</strong> be represented in an alert observation by valuing Observation / value with 160244002 "No known allergies" 2.16.840.1.113883.6.96 SNOMED CT STATIC. (CONF-268)<ul class="ul"><li class="li">UNIMPLEMENTABLE</li>
-</ul>
-</li>
+<li class="li">The absence of known allergies <strong class="ph b">SHOULD</strong> be represented in an alert observation by valuing Observation / value with 160244002 "No known allergies" 2.16.840.1.113883.6.96 SNOMED CT STATIC. (CONF-268)</li>
 
-<li class="li"><strong class="ph b">SHALL</strong> satisfy: An alert observation contains one or more sources of information. (CONF-269)<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: not self.informant-&gt;isEmpty() 
-or not self.getSection().informant-&gt;isEmpty()
-or not self.getClinicalDocument().informant-&gt;isEmpty()
-or self.reference-&gt;exists(ref : cda::Reference | ref.typeCode = vocab::x_ActRelationshipExternalReference::XCRPT)
-or (self.entryRelationship-&gt;exists(rel : cda::EntryRelationship | 
-   rel.typeCode = vocab::x_ActRelationshipEntryRelationship::REFR
-   and rel.observation.code.code = '48766-0'))</pre>
-</li>
-</ul>
-</li>
+<li class="li"><strong class="ph b">SHALL</strong> satisfy: An alert observation contains one or more sources of information. (CONF-269)</li>
 
-<li class="li">An alert observation <strong class="ph b">SHOULD</strong> contain at least one Observation / participant, representing the agent that is the cause of the allergy or adverse reaction. (CONF-273)<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: self.participant-&gt;exists(participant : cda::Participant2 | participant.typeCode = vocab::ParticipationType::CSM )</pre>
-</li>
-</ul>
-</li>
+<li class="li">An alert observation <strong class="ph b">SHOULD</strong> contain at least one Observation / participant, representing the agent that is the cause of the allergy or adverse reaction. (CONF-273)</li>
 
-<li class="li"><strong class="ph b">SHALL</strong> satisfy: Contains exactly one participant / participantRole / playingEntity. (CONF-274)<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: self.participant.participantRole.playingEntity-&gt;size() &gt; 0</pre>
-</li>
-</ul>
-</li>
+<li class="li"><strong class="ph b">SHALL</strong> satisfy: Contains exactly one participant / participantRole / playingEntity. (CONF-274)</li>
 
-<li class="li">The value for participant / @typeCode in an agent participation <strong class="ph b">SHALL</strong> be "CSM" "Consumable" 2.16.840.1.113883.5.90 ParticipationType STATIC. (CONF-275)<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: self.participant-&gt;one(entity : cda::Participant2 |
-  entity.typeCode = vocab::ParticipationType::CSM)</pre>
-</li>
-</ul>
-</li>
+<li class="li">The value for participant / @typeCode in an agent participation <strong class="ph b">SHALL</strong> be "CSM" "Consumable" 2.16.840.1.113883.5.90 ParticipationType STATIC. (CONF-275)</li>
 
-<li class="li">The value for Observation / participant / participantRole / @classCode in an agent participation <strong class="ph b">SHALL</strong> be "MANU" "Manufactured" 2.16.840.1.113883.5.110 RoleClass STATIC. (CONF-276)<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: self.participant.participantRole-&gt;one(entity : cda::ParticipantRole |
-  entity.classCode = vocab::RoleClassRoot::MANU)</pre>
-</li>
-</ul>
-</li>
+<li class="li">The value for Observation / participant / participantRole / @classCode in an agent participation <strong class="ph b">SHALL</strong> be "MANU" "Manufactured" 2.16.840.1.113883.5.110 RoleClass STATIC. (CONF-276)</li>
 
-<li class="li">The value for participant / participantRole / playingEntity / @classCode in an agent participation <strong class="ph b">SHALL</strong> be "MMAT" "Manufactured material" 2.16.840.1.113883.5.41 EntityClass STATIC. (CONF-277)<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: self.participant.participantRole.playingEntity-&gt;one(entity : cda::PlayingEntity |
-  entity.classCode = vocab::EntityClassRoot::MMAT and not entity.code.oclIsUndefined())</pre>
-</li>
-</ul>
-</li>
+<li class="li">The value for participant / participantRole / playingEntity / @classCode in an agent participation <strong class="ph b">SHALL</strong> be "MMAT" "Manufactured material" 2.16.840.1.113883.5.41 EntityClass STATIC. (CONF-277)</li>
 
-<li class="li"><strong class="ph b">SHALL</strong> satisfy: Contains exactly one participant / participantRole / playingEntity / code. (CONF-278)<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: self.participant.participantRole.playingEntity-&gt;one(entity : cda::PlayingEntity |  not entity.code.oclIsUndefined())</pre>
-</li>
-</ul>
-</li>
+<li class="li"><strong class="ph b">SHALL</strong> satisfy: Contains exactly one participant / participantRole / playingEntity / code. (CONF-278)</li>
 
-<li class="li">The value for participant / participantRole / playingEntity / code in an agent participation <strong class="ph b">SHOULD</strong> be selected from the RxNorm (2.16.840.1.113883.6.88) code system for medications, and from the CDC Vaccine Code (2.16.840.1.113883.6.59) code system for immunizations. (CONF-279)<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: self.participant.participantRole.playingEntity-&gt;one(entity : cda::PlayingEntity | not entity.code.oclIsUndefined() and (entity.code.codeSystem='2.16.840.1.113883.6.88' xor entity.code.codeSystem='2.16.840.1.113883.6.59'))</pre>
-</li>
-</ul>
-</li>
+<li class="li">The value for participant / participantRole / playingEntity / code in an agent participation <strong class="ph b">SHOULD</strong> be selected from the RxNorm (2.16.840.1.113883.6.88) code system for medications, and from the CDC Vaccine Code (2.16.840.1.113883.6.59) code system for immunizations. (CONF-279)</li>
 
 </ol>
-
 
 <p class="p"> </p>
 
@@ -126,30 +97,42 @@ or (self.entryRelationship-&gt;exists(rel : cda::EntryRelationship |
 
 
 <pre class="pre codeblock">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
-&lt;observation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd" moodCode="EVN"&gt;
-  &lt;templateId root="2.16.840.1.113883.10.20.1.18"/&gt;
-  &lt;id root="1903728321"/&gt;
-  &lt;code code="327604461"/&gt;
-  &lt;statusCode code="completed"/&gt;
+&lt;observation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd"&gt;
+  &lt;id root="MDHT" extension="1535819475"/&gt;
+  &lt;code code="1079429656"/&gt;
   &lt;effectiveTime&gt;
-    &lt;low value="2011"/&gt;
-    &lt;high value="2011"/&gt;
+    &lt;low value="2012"/&gt;
+    &lt;high value="2012"/&gt;
   &lt;/effectiveTime&gt;
   &lt;entryRelationship&gt;
-    &lt;observation classCode="OBS" moodCode="EVN"&gt;
-      &lt;templateId root="2.16.840.1.113883.10.20.1.57"/&gt;
-      &lt;templateId root="2.16.840.1.113883.10.20.1.39"/&gt;
-      &lt;id root="667506419"/&gt;
-      &lt;code code="33999-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Status"/&gt;
-      &lt;statusCode code="completed"/&gt;
+    &lt;observation&gt;
+      &lt;id root="MDHT" extension="296281979"/&gt;
+      &lt;code code="1457481570"/&gt;
       &lt;effectiveTime&gt;
-        &lt;low value="2011"/&gt;
-        &lt;high value="2011"/&gt;
+        &lt;low value="2012"/&gt;
+        &lt;high value="2012"/&gt;
       &lt;/effectiveTime&gt;
     &lt;/observation&gt;
   &lt;/entryRelationship&gt;
   &lt;entryRelationship&gt;
-    &lt;observation/&gt;
+    &lt;observation&gt;
+      &lt;id root="MDHT" extension="901040496"/&gt;
+      &lt;code code="959481957"/&gt;
+      &lt;effectiveTime&gt;
+        &lt;low value="2012"/&gt;
+        &lt;high value="2012"/&gt;
+      &lt;/effectiveTime&gt;
+      &lt;entryRelationship&gt;
+        &lt;observation&gt;
+          &lt;id root="MDHT" extension="424195059"/&gt;
+          &lt;code code="537980009"/&gt;
+          &lt;effectiveTime&gt;
+            &lt;low value="2012"/&gt;
+            &lt;high value="2012"/&gt;
+          &lt;/effectiveTime&gt;
+        &lt;/observation&gt;
+      &lt;/entryRelationship&gt;
+    &lt;/observation&gt;
   &lt;/entryRelationship&gt;
 &lt;/observation&gt;</pre>
 

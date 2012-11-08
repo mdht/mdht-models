@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html
   PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html lang="en-us" xml:lang="en-us">
+<html xml:lang="en-us" lang="en-us">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 <meta name="copyright" content="(C) Copyright 2005"/>
@@ -18,7 +18,7 @@
 <link rel="stylesheet" type="text/css" href="../css/commonltr.css"/>
 <title>Support Participant</title>
 </head>
-<body id="classId"><a name="classId"><!-- --></a>
+<body id="classId">
 <div>
 	<p><b>Development Only.</b> The Normative content for these specifications
 	may be found on the HL7, IHE, and HITSP web sites.</p>
@@ -36,11 +36,20 @@
 
 
 
+
 <ol class="ol">
-<li class="li"><strong class="ph b">SHALL</strong> conform to <a class="xref" href="Support.html">Support</a></li>
+<li class="li">Extends <a class="xref" href="Support.html" title="Abstract">Support</a></li>
+
+<li class="li">Contains exactly one [1..1] <tt class="ph tt"><strong class="ph b">@typeCode</strong></tt> with data type ParticipationType
+</li>
+
+<li class="li">Contains exactly one [1..1] <tt class="ph tt"><strong class="ph b">associatedEntity</strong></tt>, where its type is <a class="xref" href="generated/../AssociatedEntity.html">Associated Entity</a>
+<ol class="ol" type="a">
+<li class="li">Contains exactly one [1..1] <a class="xref" href="generated/../AssociatedEntity.html">Associated Entity</a></li>
+</ol>
+</li>
 
 </ol>
-
 
 <p class="p"> </p>
 
@@ -51,8 +60,8 @@
 <pre class="pre codeblock">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
 &lt;participant1 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd"&gt;
   &lt;time&gt;
-    &lt;low value="2011"/&gt;
-    &lt;high value="2011"/&gt;
+    &lt;low value="2012"/&gt;
+    &lt;high value="2012"/&gt;
   &lt;/time&gt;
   &lt;associatedEntity/&gt;
 &lt;/participant1&gt;</pre>

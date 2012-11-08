@@ -8,26 +8,29 @@
 <resourceid id="2.16.840.1.113883.10.20.1.33"/>
 </prolog>
 <body>
+<section id="knownSubclasses">
+</section>
 <section id="description">
 </section>
 <ol id="conformance">
+<li><b>SHALL</b> contain exactly one [1..1] templateId (  ) such that it <ol><li><b>SHALL</b> contain exactly one [1..1] <b>@root</b>="2.16.840.1.113883.10.20.1.33"</li></ol></li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="OBS" </tt><i>Observation</i> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>) (CONF-238)
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF-239)
 </li>
 <li><b>SHALL</b> contain at least one [1..*] <tt><b>id</b></tt> (CONF-240)
 </li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>statusCode</b></tt><tt><b>/@code</b>="completed" </tt><i></i> (CodeSystem:<tt> 2.16.840.1.113883.5.14 HL7ActStatus</tt>) (CONF-241, CONF-242)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>statusCode</b></tt><tt><b>/@code</b>="completed" </tt><i></i> (CodeSystem:<tt> 2.16.840.1.113883.5.14 ActStatus</tt>) (CONF-241, CONF-242)
 </li>
-<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> (CONF-246), such that
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> (CONF-246)
 <ol>
 <li>Contains exactly one [1..1] <xref href="../SocialHistoryStatusObservation.dita">Social History Status Observation</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.56</tt>)</li></ol></li>
-<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> (CONF-249), such that
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> (CONF-249)
 <ol>
 <li>Contains exactly one [1..1] <xref href="../EpisodeObservation.dita">Episode Observation</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.41</tt>)</li></ol></li>
-<li>The value for Observation / code in a social history observation <b>SHOULD</b> be selected from LOINC (codeSystem 2.16.840.1.113883.6.1) or SNOMED CT (codeSystem 2.16.840.1.113883.6.96), or <b>MAY</b> be selected from ValueSet 2.16.840.1.113883.1.11.20.18 SocialHistoryTypeCode STATIC 20061017 (CONF-243)<ul><li><codeblock>[OCL]: self.code.codeSystem = '2.16.840.1.113883.6.1' or self.code.codeSystem = '2.16.840.1.113883.6.96' or self.code.codeSystem = '2.16.840.1.113883.1.11.20.18'</codeblock></li></ul></li>
-<li>Observation / value can be any datatype. Where Observation / value is a physical quantity, the unit of measure <b>SHALL</b> be expressed using a valid Unified Code for Units of Measure (UCUM) expression (CONF-244)<ul><li>UNIMPLEMENTABLE</li></ul></li>
-<li><b>SHALL</b> satisfy: Contains one or more sources of information (CONF-245)<ul><li>UNIMPLEMENTABLE</li></ul></li>
+<li>The value for Observation / code in a social history observation <b>SHOULD</b> be selected from LOINC (codeSystem 2.16.840.1.113883.6.1) or SNOMED CT (codeSystem 2.16.840.1.113883.6.96), or <b>MAY</b> be selected from ValueSet 2.16.840.1.113883.1.11.20.18 SocialHistoryTypeCode STATIC 20061017 (CONF-243)</li>
+<li>Observation / value can be any datatype. Where Observation / value is a physical quantity, the unit of measure <b>SHALL</b> be expressed using a valid Unified Code for Units of Measure (UCUM) expression (CONF-244)</li>
+<li><b>SHALL</b> satisfy: Contains one or more sources of information (CONF-245)</li>
 </ol>
 <ol id="aggregate">
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="OBS" </tt><i>Observation</i> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>) (CONF-238)
@@ -36,46 +39,60 @@
 </li>
 <li><b>SHALL</b> contain at least one [1..*] <tt><b>id</b></tt> (CONF-240)
 </li>
-<li>Contains exactly one [1..1] <tt><b>code</b></tt>, where its data type is CD
+<li>Contains exactly one [1..1] <tt><b>code</b></tt> with data type CD
 </li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>statusCode</b></tt><tt><b>/@code</b>="completed" </tt><i></i> (CodeSystem:<tt> 2.16.840.1.113883.5.14 HL7ActStatus</tt>) (CONF-241, CONF-242)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>statusCode</b></tt><tt><b>/@code</b>="completed" </tt><i></i> (CodeSystem:<tt> 2.16.840.1.113883.5.14 ActStatus</tt>) (CONF-241, CONF-242)
 </li>
-<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> (CONF-246), such that
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> (CONF-246)
 <ol>
 <li>Contains exactly one [1..1] <xref href="../SocialHistoryStatusObservation.dita">Social History Status Observation</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.56</tt>)</li></ol></li>
-<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> (CONF-249), such that
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> (CONF-249)
 <ol>
 <li>Contains exactly one [1..1] <xref href="../EpisodeObservation.dita">Episode Observation</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.41</tt>)</li></ol></li>
-<li>The value for Observation / code in a social history observation <b>SHOULD</b> be selected from LOINC (codeSystem 2.16.840.1.113883.6.1) or SNOMED CT (codeSystem 2.16.840.1.113883.6.96), or <b>MAY</b> be selected from ValueSet 2.16.840.1.113883.1.11.20.18 SocialHistoryTypeCode STATIC 20061017 (CONF-243)<ul><li><codeblock>[OCL]: self.code.codeSystem = '2.16.840.1.113883.6.1' or self.code.codeSystem = '2.16.840.1.113883.6.96' or self.code.codeSystem = '2.16.840.1.113883.1.11.20.18'</codeblock></li></ul></li>
-<li>Observation / value can be any datatype. Where Observation / value is a physical quantity, the unit of measure <b>SHALL</b> be expressed using a valid Unified Code for Units of Measure (UCUM) expression (CONF-244)<ul><li>UNIMPLEMENTABLE</li></ul></li>
-<li><b>SHALL</b> satisfy: Contains one or more sources of information (CONF-245)<ul><li>UNIMPLEMENTABLE</li></ul></li>
+<li>The value for Observation / code in a social history observation <b>SHOULD</b> be selected from LOINC (codeSystem 2.16.840.1.113883.6.1) or SNOMED CT (codeSystem 2.16.840.1.113883.6.96), or <b>MAY</b> be selected from ValueSet 2.16.840.1.113883.1.11.20.18 SocialHistoryTypeCode STATIC 20061017 (CONF-243)</li>
+<li>Observation / value can be any datatype. Where Observation / value is a physical quantity, the unit of measure <b>SHALL</b> be expressed using a valid Unified Code for Units of Measure (UCUM) expression (CONF-244)</li>
+<li><b>SHALL</b> satisfy: Contains one or more sources of information (CONF-245)</li>
 </ol>
+<section id="tableconformance"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="8" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><colspec colname="col2" colnum="2" /><colspec colname="col3" colnum="3" /><colspec colname="col4" colnum="4" /><colspec colname="col5" colnum="5" /><colspec colname="col6" colnum="6" /><colspec colname="col7" colnum="7" /><thead> <row><entry namest="col0" nameend="col7" >ccd::SocialHistoryObservation</entry>  </row>  <row><entry namest="col0" nameend="col7" >cda::observation[cda:templateId/@root = ]/</entry>  </row>  <row><entry>Name</entry><entry>XPath</entry><entry>Cardinality</entry><entry>Severity</entry><entry>Nullable</entry><entry>Data Type</entry><entry>Conformance</entry><entry>Value(s)</entry></row></thead><tbody><row><entry>classCode</entry><entry>@classCode</entry><entry>1..1</entry><entry>SHALL</entry><entry>NO</entry><entry>ActClassObservation</entry><entry>CONF-238</entry><entry> ALRT</entry></row> 
+<row><entry>moodCode</entry><entry>@moodCode</entry><entry>1..1</entry><entry>SHALL</entry><entry>NO</entry><entry>x_ActMoodDocumentObservation</entry><entry>CONF-239</entry><entry> DEF</entry></row> 
+<row><entry>id</entry><entry>id</entry><entry>1..*</entry><entry>SHALL</entry><entry>YES</entry><entry>II</entry><entry>CONF-240</entry><entry> </entry></row> 
+<row><entry>statusCode</entry><entry>statusCode</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>CS</entry><entry>CONF-241CONF-242</entry><entry>ActStatus 2.16.840.1.113883.5.14 </entry></row> 
+<row><entry>episodeObservation</entry><entry>episodeObservation</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>EpisodeObservation</entry><entry>CONF-249</entry><entry> </entry></row> 
+<row><entry>socialHistoryObservation</entry><entry>socialHistoryObservation</entry><entry>0..*</entry><entry>SHOULD</entry><entry>YES</entry><entry>SocialHistoryObservation</entry><entry></entry><entry> </entry></row> 
+<row><entry>socialHistoryStatusObservation</entry><entry>socialHistoryStatusObservation</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>SocialHistoryStatusObservation</entry><entry>CONF-246</entry><entry> </entry></row> 
+</tbody></tgroup></table></p></section>
 <codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
-<observation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd" classCode="OBS" moodCode="EVN">
-  <templateId root="2.16.840.1.113883.10.20.1.33"/>
-  <id root="346061771"/>
-  <code code="1203750133"/>
-  <statusCode code="completed"/>
+<observation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd">
+  <id root="MDHT" extension="1335277298"/>
+  <code code="1213158257"/>
   <effectiveTime>
-    <low value="2011"/>
-    <high value="2011"/>
+    <low value="2012"/>
+    <high value="2012"/>
   </effectiveTime>
   <entryRelationship>
-    <observation classCode="OBS" moodCode="EVN">
-      <templateId root="2.16.840.1.113883.10.20.1.57"/>
-      <templateId root="2.16.840.1.113883.10.20.1.56"/>
-      <id root="327161458"/>
-      <code code="33999-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Status"/>
-      <statusCode code="completed"/>
+    <observation>
+      <id root="MDHT" extension="1999607832"/>
+      <code code="800552288"/>
       <effectiveTime>
-        <low value="2011"/>
-        <high value="2011"/>
+        <low value="2012"/>
+        <high value="2012"/>
       </effectiveTime>
     </observation>
   </entryRelationship>
   <entryRelationship>
-    <observation/>
+    <observation>
+      <id root="MDHT" extension="1528881647"/>
+      <code code="124187280"/>
+      <effectiveTime>
+        <low value="2012"/>
+        <high value="2012"/>
+      </effectiveTime>
+    </observation>
   </entryRelationship>
 </observation>]]></codeblock>
+<section id="changes">
+</section>
+<p><ph id="classformalname">Social History Observation</ph></p>
+<p id="shortdesc">[Observation: templateId <tt>2.16.840.1.113883.10.20.1.33</tt>]</p>
 </body>
 </topic>

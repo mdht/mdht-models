@@ -8,6 +8,8 @@
 <resourceid id="2.16.840.1.113883.10.20.1.30"/>
 </prolog>
 <body>
+<section id="knownSubclasses">
+</section>
 <section id="description">
 <p>
     CCD represents the ASTM CCR &lt;Purpose&gt; object as a relationship between two classes -- the source
@@ -17,21 +19,17 @@
 </p>
 </section>
 <ol id="conformance">
+<li><b>SHALL</b> contain exactly one [1..1] templateId ( CONF-20 ) such that it <ol><li><b>SHALL</b> contain exactly one [1..1] <b>@root</b>="2.16.840.1.113883.10.20.1.30"</li></ol></li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="ACT" </tt><i>Act</i> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>) (CONF-21)
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF-22)
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="23745001" </tt><i>Documentation procedure</i> (CodeSystem:<tt> 2.16.840.1.113883.6.96 SNOMEDCT</tt>) (CONF-25)
 </li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>statusCode</b></tt><tt><b>/@code</b>="completed" </tt> (CodeSystem:<tt> 2.16.840.1.113883.5.14 HL7ActStatus</tt>) (CONF-23, CONF-24)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>statusCode</b></tt><tt><b>/@code</b>="completed" </tt> (CodeSystem:<tt> 2.16.840.1.113883.5.14 ActStatus</tt>) (CONF-23, CONF-24)
 </li>
-<li><b>SHALL</b> satisfy: Contains exactly one entryRelationship / @typeCode, with a value of 'RSON' 'Has reason' 2.16.840.1.113883.5.1002 ActRelationshipType STATIC, to indicate the reason or purpose for creating the CCD. (CONF-26)<ul><li><codeblock>[OCL]: self.entryRelationship-&gt;one(entryRelationship : cda::EntryRelationship | 
-  entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::RSON)</codeblock></li></ul></li>
-<li>The target of entryRelationship <b>SHALL</b> be an Act, Encounter, Observation, Procedure, SubstanceAdministration, or Supply. (CONF-27)<ul><li><codeblock>[OCL]: self.entryRelationship-&gt;forAll(entryRelationship : cda::EntryRelationship |
-  entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::RSON implies( 
-  not (entryRelationship.act.oclIsUndefined() and entryRelationship.encounter.oclIsUndefined()
-       and entryRelationship.observation.oclIsUndefined() and entryRelationship.procedure.oclIsUndefined()
-       and entryRelationship.substanceAdministration.oclIsUndefined() and entryRelationship.supply.oclIsUndefined())))</codeblock></li></ul></li>
+<li><b>SHALL</b> satisfy: Contains exactly one entryRelationship / @typeCode, with a value of 'RSON' 'Has reason' 2.16.840.1.113883.5.1002 ActRelationshipType STATIC, to indicate the reason or purpose for creating the CCD. (CONF-26)</li>
+<li>The target of entryRelationship <b>SHALL</b> be an Act, Encounter, Observation, Procedure, SubstanceAdministration, or Supply. (CONF-27)</li>
 </ol>
 <ol id="aggregate">
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="ACT" </tt><i>Act</i> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>) (CONF-21)
@@ -40,26 +38,29 @@
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="23745001" </tt><i>Documentation procedure</i> (CodeSystem:<tt> 2.16.840.1.113883.6.96 SNOMEDCT</tt>) (CONF-25)
 </li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>statusCode</b></tt><tt><b>/@code</b>="completed" </tt> (CodeSystem:<tt> 2.16.840.1.113883.5.14 HL7ActStatus</tt>) (CONF-23, CONF-24)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>statusCode</b></tt><tt><b>/@code</b>="completed" </tt> (CodeSystem:<tt> 2.16.840.1.113883.5.14 ActStatus</tt>) (CONF-23, CONF-24)
 </li>
-<li><b>SHALL</b> satisfy: Contains exactly one entryRelationship / @typeCode, with a value of 'RSON' 'Has reason' 2.16.840.1.113883.5.1002 ActRelationshipType STATIC, to indicate the reason or purpose for creating the CCD. (CONF-26)<ul><li><codeblock>[OCL]: self.entryRelationship-&gt;one(entryRelationship : cda::EntryRelationship | 
-  entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::RSON)</codeblock></li></ul></li>
-<li>The target of entryRelationship <b>SHALL</b> be an Act, Encounter, Observation, Procedure, SubstanceAdministration, or Supply. (CONF-27)<ul><li><codeblock>[OCL]: self.entryRelationship-&gt;forAll(entryRelationship : cda::EntryRelationship |
-  entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::RSON implies( 
-  not (entryRelationship.act.oclIsUndefined() and entryRelationship.encounter.oclIsUndefined()
-       and entryRelationship.observation.oclIsUndefined() and entryRelationship.procedure.oclIsUndefined()
-       and entryRelationship.substanceAdministration.oclIsUndefined() and entryRelationship.supply.oclIsUndefined())))</codeblock></li></ul></li>
+<li><b>SHALL</b> satisfy: Contains exactly one entryRelationship / @typeCode, with a value of 'RSON' 'Has reason' 2.16.840.1.113883.5.1002 ActRelationshipType STATIC, to indicate the reason or purpose for creating the CCD. (CONF-26)</li>
+<li>The target of entryRelationship <b>SHALL</b> be an Act, Encounter, Observation, Procedure, SubstanceAdministration, or Supply. (CONF-27)</li>
 </ol>
+<section id="tableconformance"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="8" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><colspec colname="col2" colnum="2" /><colspec colname="col3" colnum="3" /><colspec colname="col4" colnum="4" /><colspec colname="col5" colnum="5" /><colspec colname="col6" colnum="6" /><colspec colname="col7" colnum="7" /><thead> <row><entry namest="col0" nameend="col7" >ccd::PurposeActivity</entry>  </row>  <row><entry namest="col0" nameend="col7" >cda::act[cda:templateId/@root = ]/</entry>  </row>  <row><entry>Name</entry><entry>XPath</entry><entry>Cardinality</entry><entry>Severity</entry><entry>Nullable</entry><entry>Data Type</entry><entry>Conformance</entry><entry>Value(s)</entry></row></thead><tbody><row><entry>classCode</entry><entry>@classCode</entry><entry>1..1</entry><entry>SHALL</entry><entry>NO</entry><entry>ActClass</entry><entry>CONF-21</entry><entry> ACCM</entry></row> 
+<row><entry>moodCode</entry><entry>@moodCode</entry><entry>1..1</entry><entry>SHALL</entry><entry>NO</entry><entry>ActMood</entry><entry>CONF-22</entry><entry> APT</entry></row> 
+<row><entry>code</entry><entry>code</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>CD</entry><entry>CONF-25</entry><entry>SNOMEDCT 2.16.840.1.113883.6.96 </entry></row> 
+<row><entry>statusCode</entry><entry>statusCode</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>CS</entry><entry>CONF-23CONF-24</entry><entry>ActStatus 2.16.840.1.113883.5.14 </entry></row> 
+<row><entry>purposeActivity</entry><entry>purposeActivity</entry><entry>1..*</entry><entry>SHOULD</entry><entry>YES</entry><entry>PurposeActivity</entry><entry></entry><entry> </entry></row> 
+</tbody></tgroup></table></p></section>
 <codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
-<act xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd" classCode="ACT" moodCode="EVN">
-  <templateId root="2.16.840.1.113883.10.20.1.30"/>
-  <id root="80045707"/>
-  <code code="23745001" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT" displayName="Documentation procedure"/>
-  <statusCode code="completed"/>
+<act xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd">
+  <id root="MDHT" extension="493420531"/>
+  <code code="1604660712"/>
   <effectiveTime>
-    <low value="2011"/>
-    <high value="2011"/>
+    <low value="2012"/>
+    <high value="2012"/>
   </effectiveTime>
 </act>]]></codeblock>
+<section id="changes">
+</section>
+<p><ph id="classformalname">Purpose Activity</ph></p>
+<p id="shortdesc">[Act: templateId <tt>2.16.840.1.113883.10.20.1.30</tt>]</p>
 </body>
 </topic>

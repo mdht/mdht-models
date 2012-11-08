@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html
   PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html lang="en-us" xml:lang="en-us">
+<html xml:lang="en-us" lang="en-us">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 <meta name="copyright" content="(C) Copyright 2005"/>
@@ -18,7 +18,7 @@
 <link rel="stylesheet" type="text/css" href="../css/commonltr.css"/>
 <title>Medications Section</title>
 </head>
-<body id="classId"><a name="classId"><!-- --></a>
+<body id="classId">
 <div>
 	<p><b>Development Only.</b> The Normative content for these specifications
 	may be found on the HL7, IHE, and HITSP web sites.</p>
@@ -46,45 +46,39 @@
 
 
 
+
 <ol class="ol">
 <li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt><tt class="ph tt"><strong class="ph b">/@code</strong>="10160-0" </tt><em class="ph i">History of medication use</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF-300, CONF-301)
 </li>
 
 <li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">title</strong></tt> (CONF-302)
 <ol class="ol" type="a">
-<li class="li"><strong class="ph b">SHOULD</strong> satisfy: Valued with a case-insensitive language-insensitive string containing 'medication'. (CONF-303)<ul class="ul"><li class="li">UNIMPLEMENTABLE</li>
-</ul>
-</li>
+<li class="li"><strong class="ph b">SHOULD</strong> satisfy: Valued with a case-insensitive language-insensitive string containing 'medication'. (CONF-303)</li>
 </ol>
 </li>
 
 <li class="li"><strong class="ph b">SHALL</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">text</strong></tt> (CONF-298)
 </li>
 
-<li class="li"><strong class="ph b">SHOULD</strong> contain zero or more [0..*] <tt class="ph tt"><strong class="ph b">entry</strong></tt> (CONF-298), such that
+<li class="li"><strong class="ph b">SHOULD</strong> contain zero or more [0..*] <tt class="ph tt"><strong class="ph b">entry</strong></tt> (CONF-298)
 <ol class="ol" type="a">
 <li class="li">Contains exactly one [1..1] <a class="xref" href="MedicationActivity.html" title="[SubstanceAdministration: templateId 2.16.840.1.113883.10.20.1.24]">Medication Activity</a> (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.1.24</tt>)</li>
 </ol>
 </li>
 
-<li class="li"><strong class="ph b">SHOULD</strong> contain zero or more [0..*] <tt class="ph tt"><strong class="ph b">entry</strong></tt> (CONF-298), such that
+<li class="li"><strong class="ph b">SHOULD</strong> contain zero or more [0..*] <tt class="ph tt"><strong class="ph b">entry</strong></tt> (CONF-298)
 <ol class="ol" type="a">
 <li class="li">Contains exactly one [1..1] <a class="xref" href="SupplyActivity.html" title="[Supply: templateId 2.16.840.1.113883.10.20.1.34]">Supply Activity</a> (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.1.34</tt>)</li>
 </ol>
 </li>
 
-<li class="li"><strong class="ph b">SHOULD</strong> satisfy: Clinical statements include one or more Medication Activity and/or one or more Supply Activity. (CONF-298)<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: self.getSubstanceAdministrations()-&gt;exists(activity : cda::SubstanceAdministration | activity.oclIsKindOf(ccd::MedicationActivity))
-   or self.getSupplies()-&gt;exists(activity : cda::Supply | activity.oclIsKindOf(ccd::SupplyActivity))</pre>
-</li>
-</ul>
-</li>
+<li class="li"><strong class="ph b">SHOULD</strong> satisfy: Clinical statements include one or more Medication Activity and/or one or more Supply Activity. (CONF-298)</li>
 
-<li class="li"><strong class="ph b">SHALL</strong> satisfy: The absence of known medications is explicitly asserted. (CONF-299)<ul class="ul"><li class="li">UNIMPLEMENTABLE</li>
-</ul>
-</li>
+<li class="li"><strong class="ph b">SHALL</strong> satisfy: The absence of known medications is explicitly asserted. (CONF-299)</li>
+
+<li class="li"><strong class="ph b">SHOULD</strong> satisfy: Valued with a case-insensitive language-insensitive string containing 'medication'. (CONF-303)</li>
 
 </ol>
-
 
 <p class="p"> </p>
 
@@ -94,36 +88,93 @@
 
 <pre class="pre codeblock">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
 &lt;section xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd"&gt;
-  &lt;templateId root="2.16.840.1.113883.10.20.1.8"/&gt;
-  &lt;id root="1394694804"/&gt;
-  &lt;code code="10160-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="History of medication use"/&gt;
-  &lt;title/&gt;
+  &lt;id root="MDHT" extension="589059368"/&gt;
+  &lt;title&gt;TEXT FOR TITLE&lt;/title&gt;
   &lt;text/&gt;
   &lt;entry&gt;
     &lt;substanceAdministration&gt;
-      &lt;templateId root="2.16.840.1.113883.10.20.1.24"/&gt;
-      &lt;id root="2065056780"/&gt;
-      &lt;code code="759423299"/&gt;
-      &lt;text/&gt;
-      &lt;effectiveTime value="20111114"/&gt;
-      &lt;routeCode codeSystem="2.16.840.1.113883.5.112" codeSystemName="HL7 RouteOfAdministration"/&gt;
+      &lt;id root="MDHT" extension="1313250167"/&gt;
+      &lt;text&gt;Text Value&lt;/text&gt;
+      &lt;effectiveTime value="20121108"/&gt;
       &lt;consumable/&gt;
+      &lt;performer/&gt;
       &lt;entryRelationship&gt;
-        &lt;observation/&gt;
+        &lt;observation&gt;
+          &lt;id root="MDHT" extension="1822444505"/&gt;
+          &lt;code code="608279990"/&gt;
+          &lt;text&gt;Text Value&lt;/text&gt;
+          &lt;effectiveTime&gt;
+            &lt;low value="2012"/&gt;
+            &lt;high value="2012"/&gt;
+          &lt;/effectiveTime&gt;
+        &lt;/observation&gt;
       &lt;/entryRelationship&gt;
       &lt;entryRelationship&gt;
-        &lt;observation/&gt;
+        &lt;observation&gt;
+          &lt;id root="MDHT" extension="1429882149"/&gt;
+          &lt;code code="1742656745"/&gt;
+          &lt;text&gt;Text Value&lt;/text&gt;
+          &lt;effectiveTime&gt;
+            &lt;low value="2012"/&gt;
+            &lt;high value="2012"/&gt;
+          &lt;/effectiveTime&gt;
+        &lt;/observation&gt;
       &lt;/entryRelationship&gt;
       &lt;entryRelationship&gt;
-        &lt;act/&gt;
+        &lt;act&gt;
+          &lt;id root="MDHT" extension="153825722"/&gt;
+          &lt;code code="676863919"/&gt;
+          &lt;text&gt;Text Value&lt;/text&gt;
+          &lt;effectiveTime&gt;
+            &lt;low value="2012"/&gt;
+            &lt;high value="2012"/&gt;
+          &lt;/effectiveTime&gt;
+        &lt;/act&gt;
       &lt;/entryRelationship&gt;
       &lt;entryRelationship&gt;
-        &lt;observation/&gt;
+        &lt;observation&gt;
+          &lt;id root="MDHT" extension="1832894333"/&gt;
+          &lt;code code="1257825618"/&gt;
+          &lt;text&gt;Text Value&lt;/text&gt;
+          &lt;effectiveTime&gt;
+            &lt;low value="2012"/&gt;
+            &lt;high value="2012"/&gt;
+          &lt;/effectiveTime&gt;
+          &lt;entryRelationship&gt;
+            &lt;observation/&gt;
+          &lt;/entryRelationship&gt;
+        &lt;/observation&gt;
       &lt;/entryRelationship&gt;
     &lt;/substanceAdministration&gt;
   &lt;/entry&gt;
   &lt;entry&gt;
-    &lt;supply/&gt;
+    &lt;supply&gt;
+      &lt;id root="MDHT" extension="301631047"/&gt;
+      &lt;text&gt;Text Value&lt;/text&gt;
+      &lt;effectiveTime value="20121108"/&gt;
+      &lt;entryRelationship&gt;
+        &lt;observation&gt;
+          &lt;id root="MDHT" extension="151518093"/&gt;
+          &lt;code code="1490416124"/&gt;
+          &lt;text&gt;Text Value&lt;/text&gt;
+          &lt;effectiveTime&gt;
+            &lt;low value="2012"/&gt;
+            &lt;high value="2012"/&gt;
+          &lt;/effectiveTime&gt;
+        &lt;/observation&gt;
+      &lt;/entryRelationship&gt;
+      &lt;entryRelationship&gt;
+        &lt;act&gt;
+          &lt;id root="MDHT" extension="1006053320"/&gt;
+          &lt;code code="497060238"/&gt;
+          &lt;text&gt;Text Value&lt;/text&gt;
+          &lt;effectiveTime&gt;
+            &lt;low value="2012"/&gt;
+            &lt;high value="2012"/&gt;
+          &lt;/effectiveTime&gt;
+        &lt;/act&gt;
+      &lt;/entryRelationship&gt;
+    &lt;/supply&gt;
   &lt;/entry&gt;
 &lt;/section&gt;</pre>
 

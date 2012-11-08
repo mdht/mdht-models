@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html
   PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html lang="en-us" xml:lang="en-us">
+<html xml:lang="en-us" lang="en-us">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 <meta name="copyright" content="(C) Copyright 2005"/>
@@ -18,7 +18,7 @@
 <link rel="stylesheet" type="text/css" href="../css/commonltr.css"/>
 <title>Family History Organizer</title>
 </head>
-<body id="classId"><a name="classId"><!-- --></a>
+<body id="classId">
 <div>
 	<p><b>Development Only.</b> The Normative content for these specifications
 	may be found on the HL7, IHE, and HITSP web sites.</p>
@@ -36,6 +36,7 @@
 
 
 
+
 <ol class="ol">
 <li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@classCode</strong>="CLUSTER" </tt> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.5.6 HL7ActClass</tt>) (CONF-201)
 </li>
@@ -43,87 +44,46 @@
 <li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@moodCode</strong>="EVN" </tt><em class="ph i">Event</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF-202)
 </li>
 
-<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">statusCode</strong></tt><tt class="ph tt"><strong class="ph b">/@code</strong>="completed" </tt> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.5.14 HL7ActStatus</tt>) (CONF-203, CONF-204)
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">statusCode</strong></tt><tt class="ph tt"><strong class="ph b">/@code</strong>="completed" </tt> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.5.14 ActStatus</tt>) (CONF-203, CONF-204)
 </li>
 
-<li class="li"><strong class="ph b">SHOULD</strong> contain at least one [1..*] <tt class="ph tt"><strong class="ph b">component</strong></tt> (CONF-206), such that
+<li class="li"><strong class="ph b">SHOULD</strong> contain at least one [1..*] <tt class="ph tt"><strong class="ph b">component</strong></tt> (CONF-206)
 <ol class="ol" type="a">
 <li class="li">Contains exactly one [1..1] <a class="xref" href="FamilyHistoryObservation.html" title="[Observation: templateId 2.16.840.1.113883.10.20.1.22]">Family History Observation</a> (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.1.22</tt>)</li>
 </ol>
 </li>
 
-<li class="li">A family history organizer <strong class="ph b">SHALL</strong> contain one or more Organizer / component. (CONF-205)<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: self.component-&gt;size() &gt;= 1</pre>
-</li>
-</ul>
-</li>
+<li class="li">A family history organizer <strong class="ph b">SHALL</strong> contain one or more Organizer / component. (CONF-205)</li>
 
-<li class="li">The target of a family history organizer Organizer / component relationship <strong class="ph b">SHOULD</strong> be a family history observation, but <strong class="ph b">MAY</strong> be some other clinical statement<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: self.component-&gt;exists (comp : cda::Component4 | comp.observation-&gt;exists(obs : cda::Observation | obs.oclIsKindOf(ccd::FamilyHistoryObservation)))</pre>
-</li>
-</ul>
-</li>
+<li class="li">The target of a family history organizer Organizer / component relationship <strong class="ph b">SHOULD</strong> be a family history observation, but <strong class="ph b">MAY</strong> be some other clinical statement</li>
 
-<li class="li">A family history organizer <strong class="ph b">SHALL</strong> contain exactly one subject participant, representing the family member who is the subject of the family history observations (CONF-208)<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: self.subject-&gt;size() = 1</pre>
-</li>
-</ul>
-</li>
+<li class="li">A family history organizer <strong class="ph b">SHALL</strong> contain exactly one subject participant, representing the family member who is the subject of the family history observations (CONF-208)</li>
 
-<li class="li">A subject participant <strong class="ph b">SHALL</strong> contain exactly one RelatedSubject, representing the relationship of the subject to the patient (CONF-212)<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: self.subject.relatedSubject-&gt;size() = 1</pre>
-</li>
-</ul>
-</li>
+<li class="li">A subject participant <strong class="ph b">SHALL</strong> contain exactly one RelatedSubject, representing the relationship of the subject to the patient (CONF-212)</li>
 
-<li class="li">The value for RelatedSubject / @classCode <strong class="ph b">SHALL</strong> be "PRS" "Personal relationship" 2.16.840.1.113883.5.110 RoleClass STATIC (CONF-213)<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: self.subject.relatedSubject.classCode = vocab::x_DocumentSubject::PRS</pre>
-</li>
-</ul>
-</li>
+<li class="li">The value for RelatedSubject / @classCode <strong class="ph b">SHALL</strong> be "PRS" "Personal relationship" 2.16.840.1.113883.5.110 RoleClass STATIC (CONF-213)</li>
 
-<li class="li">RelatedSubject <strong class="ph b">SHALL</strong> contain exactly one RelatedSubject / code<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: self.subject.relatedSubject.code-&gt;size() = 1</pre>
-</li>
-</ul>
-</li>
+<li class="li">RelatedSubject <strong class="ph b">SHALL</strong> contain exactly one RelatedSubject / code</li>
 
-<li class="li">The value for "RelatedSubject / code" <strong class="ph b">SHOULD</strong> be selected from ValueSet 2.16.840.1.113883.1.11.19579 FamilyHistoryRelatedSubjectCode DYNAMIC or 2.16.840.1.113883.1.11.20.21 FamilyHistoryPersonCode DYNAMIC (CONF-215)<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: self.subject.relatedSubject.code.codeSystem = '2.16.840.1.113883.1.11.19579' or self.subject.relatedSubject.code.codeSystem = '2.16.840.1.113883.1.11.20.21'</pre>
-</li>
-</ul>
-</li>
+<li class="li">The value for "RelatedSubject / code" <strong class="ph b">SHOULD</strong> be selected from ValueSet 2.16.840.1.113883.1.11.19579 FamilyHistoryRelatedSubjectCode DYNAMIC or 2.16.840.1.113883.1.11.20.21 FamilyHistoryPersonCode DYNAMIC (CONF-215)</li>
 
-<li class="li">Representation of a pedigree graph <strong class="ph b">SHALL</strong> be done using RelatedSubject / code values (e.g. "great grandfather") to designate a hierarchical family tree. (CONF-216)<ul class="ul"><li class="li">UNIMPLEMENTABLE</li>
-</ul>
-</li>
+<li class="li">Representation of a pedigree graph <strong class="ph b">SHALL</strong> be done using RelatedSubject / code values (e.g. "great grandfather") to designate a hierarchical family tree. (CONF-216)</li>
 
-<li class="li">RelatedSubject <strong class="ph b">SHOULD</strong> contain exactly one RelatedSubject / subject (CONF-217)<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: self.subject.relatedSubject.subject-&gt;size() = 1</pre>
-</li>
-</ul>
-</li>
+<li class="li">RelatedSubject <strong class="ph b">SHOULD</strong> contain exactly one RelatedSubject / subject (CONF-217)</li>
 
-<li class="li">RelatedSubject / subject <strong class="ph b">SHOULD</strong> contain exactly one RelatedSubject / subject / administrativeGenderCode. (CONF-218)<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: self.subject.relatedSubject.subject.administrativeGenderCode-&gt;size() = 1</pre>
-</li>
-</ul>
-</li>
+<li class="li">RelatedSubject / subject <strong class="ph b">SHOULD</strong> contain exactly one RelatedSubject / subject / administrativeGenderCode. (CONF-218)</li>
 
-<li class="li"><strong class="ph b">SHOULD</strong> satisfy: subject/relatedSubject/subject contains exactly one birthTime (CONF-219)<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: not self.subject.relatedSubject.subject.birthTime.oclIsUndefined()</pre>
-</li>
-</ul>
-</li>
+<li class="li"><strong class="ph b">SHOULD</strong> satisfy: subject/relatedSubject/subject contains exactly one birthTime (CONF-219)</li>
 
-<li class="li"><strong class="ph b">MAY</strong> satisfy: subject/relatedSubject/subject contains exactly one sdtc:deceasedInd<ul class="ul"><li class="li">UNIMPLEMENTABLE The CCD requirements are convuluted on time and indicator but are more precises under consolidated.</li>
-</ul>
-</li>
+<li class="li"><strong class="ph b">MAY</strong> satisfy: subject/relatedSubject/subject contains exactly one sdtc:deceasedInd</li>
 
-<li class="li"><strong class="ph b">MAY</strong> satisfy: subject/relatedSubject/subject contains exactly one sdtc:deceasedTime<ul class="ul"><li class="li">UNIMPLEMENTABLE The CCD requirements are convuluted on time and indicator but are more precises under consolidated.</li>
-</ul>
-</li>
+<li class="li"><strong class="ph b">MAY</strong> satisfy: subject/relatedSubject/subject contains exactly one sdtc:deceasedTime</li>
 
-<li class="li"><strong class="ph b">SHOULD</strong> satisfy: The age of a relative at the time of observation is inferred by comparing subject/relatedSubject/subject/birthTime with Observation/effectiveTime<ul class="ul"><li class="li">UNIMPLEMENTABLE</li>
-</ul>
-</li>
+<li class="li"><strong class="ph b">SHOULD</strong> satisfy: The age of a relative at the time of observation is inferred by comparing subject/relatedSubject/subject/birthTime with Observation/effectiveTime</li>
 
-<li class="li"><strong class="ph b">MAY</strong> satisfy: The age of a relative at the time of death is inferred by comparing subject/relatedSubject/subject/birthTime with subject/relatedSubject/subject/sdtc:deceasedTime.<ul class="ul"><li class="li">UNIMPLEMENTABLE</li>
-</ul>
-</li>
+<li class="li"><strong class="ph b">MAY</strong> satisfy: The age of a relative at the time of death is inferred by comparing subject/relatedSubject/subject/birthTime with subject/relatedSubject/subject/sdtc:deceasedTime.</li>
 
 </ol>
-
 
 <p class="p"> </p>
 
@@ -132,32 +92,40 @@
 
 
 <pre class="pre codeblock">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
-&lt;organizer xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd" classCode="CLUSTER" moodCode="EVN"&gt;
-  &lt;templateId root="2.16.840.1.113883.10.20.1.23"/&gt;
-  &lt;id root="860389660"/&gt;
+&lt;organizer xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd"&gt;
+  &lt;id root="MDHT" extension="175274524"/&gt;
   &lt;statusCode code="completed"/&gt;
   &lt;effectiveTime&gt;
-    &lt;low value="2011"/&gt;
-    &lt;high value="2011"/&gt;
+    &lt;low value="2012"/&gt;
+    &lt;high value="2012"/&gt;
   &lt;/effectiveTime&gt;
   &lt;component&gt;
-    &lt;observation moodCode="EVN"&gt;
-      &lt;templateId root="2.16.840.1.113883.10.20.1.22"/&gt;
-      &lt;id root="1739986574"/&gt;
-      &lt;code code="1763094570"/&gt;
-      &lt;statusCode code="completed"/&gt;
+    &lt;observation&gt;
+      &lt;id root="MDHT" extension="945666060"/&gt;
+      &lt;code code="1471736366"/&gt;
       &lt;effectiveTime&gt;
-        &lt;low value="2011"/&gt;
-        &lt;high value="2011"/&gt;
+        &lt;low value="2012"/&gt;
+        &lt;high value="2012"/&gt;
       &lt;/effectiveTime&gt;
       &lt;entryRelationship&gt;
-        &lt;observation/&gt;
+        &lt;observation&gt;
+          &lt;id root="MDHT" extension="367559795"/&gt;
+          &lt;code code="94787721"/&gt;
+          &lt;effectiveTime&gt;
+            &lt;low value="2012"/&gt;
+            &lt;high value="2012"/&gt;
+          &lt;/effectiveTime&gt;
+        &lt;/observation&gt;
       &lt;/entryRelationship&gt;
       &lt;entryRelationship&gt;
-        &lt;observation/&gt;
-      &lt;/entryRelationship&gt;
-      &lt;entryRelationship&gt;
-        &lt;observation/&gt;
+        &lt;observation&gt;
+          &lt;id root="MDHT" extension="2116336014"/&gt;
+          &lt;code code="1763834674"/&gt;
+          &lt;effectiveTime&gt;
+            &lt;low value="2012"/&gt;
+            &lt;high value="2012"/&gt;
+          &lt;/effectiveTime&gt;
+        &lt;/observation&gt;
       &lt;/entryRelationship&gt;
     &lt;/observation&gt;
   &lt;/component&gt;

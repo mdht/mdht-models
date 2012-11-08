@@ -8,108 +8,116 @@
 <resourceid id="2.16.840.1.113883.10.20.1.18"/>
 </prolog>
 <body>
+<section id="knownSubclasses">
+</section>
 <section id="description">
 </section>
 <ol id="conformance">
+<li><b>SHALL</b> contain exactly one [1..1] templateId (  ) such that it <ol><li><b>SHALL</b> contain exactly one [1..1] <b>@root</b>="2.16.840.1.113883.10.20.1.18"</li></ol></li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF-263)
 </li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>statusCode</b></tt><tt><b>/@code</b>="completed" </tt> (CodeSystem:<tt> 2.16.840.1.113883.5.14 HL7ActStatus</tt>) (CONF-264, CONF-265)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>statusCode</b></tt><tt><b>/@code</b>="completed" </tt> (CodeSystem:<tt> 2.16.840.1.113883.5.14 ActStatus</tt>) (CONF-264, CONF-265)
 </li>
 <li><b>MAY</b> contain zero or one [0..1] <tt><b>effectiveTime</b></tt> (CONF-266)
 </li>
-<li><b>MAY</b> contain zero or more [0..*] <tt><b>value</b></tt>, which <b>MAY</b> be selected from ValueSet<tt> 2.16.840.1.113883.1.11.20.4 AlertTypeCode</tt><b> STATIC</b> 20061017, where its data type is CE (CONF-267)
+<li><b>MAY</b> contain zero or more [0..*] <tt><b>value</b></tt> with data type CE, where the @code <b>MAY</b> be selected from ValueSet<tt> AlertTypeCode 2.16.840.1.113883.1.11.20.4</tt><b> STATIC</b> 20061017 (CONF-267)
 </li>
-<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> (CONF-270, CONF-271), such that
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> (CONF-270, CONF-271)
 <ol>
 <li>Contains exactly one [1..1] <xref href="../AlertStatusObservation.dita">Alert Status Observation</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.39</tt>)</li></ol></li>
-<li><b>MAY</b> contain at least one [1..*] <tt><b>entryRelationship</b></tt> (CONF-281), such that
+<li><b>MAY</b> contain at least one [1..*] <tt><b>entryRelationship</b></tt> (CONF-281)
 <ol>
-<li>Contains <tt><b>@typeCode="</b>MFST" </tt><i>MFST (is manifestation of)</i></li>
+<li>Contains <tt><b>@typeCode="</b>MFST" </tt><i>MFST</i></li>
 <li>Contains exactly one [1..1] <xref href="../ReactionObservation.dita">Reaction Observation</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.54</tt>)</li></ol></li>
-<li>The absence of known allergies <b>SHOULD</b> be represented in an alert observation by valuing Observation / value with 160244002 "No known allergies" 2.16.840.1.113883.6.96 SNOMED CT STATIC. (CONF-268)<ul><li>UNIMPLEMENTABLE</li></ul></li>
-<li><b>SHALL</b> satisfy: An alert observation contains one or more sources of information. (CONF-269)<ul><li><codeblock>[OCL]: not self.informant-&gt;isEmpty() 
-or not self.getSection().informant-&gt;isEmpty()
-or not self.getClinicalDocument().informant-&gt;isEmpty()
-or self.reference-&gt;exists(ref : cda::Reference | ref.typeCode = vocab::x_ActRelationshipExternalReference::XCRPT)
-or (self.entryRelationship-&gt;exists(rel : cda::EntryRelationship | 
-   rel.typeCode = vocab::x_ActRelationshipEntryRelationship::REFR
-   and rel.observation.code.code = '48766-0'))</codeblock></li></ul></li>
-<li>An alert observation <b>SHOULD</b> contain at least one Observation / participant, representing the agent that is the cause of the allergy or adverse reaction. (CONF-273)<ul><li><codeblock>[OCL]: self.participant-&gt;exists(participant : cda::Participant2 | participant.typeCode = vocab::ParticipationType::CSM )</codeblock></li></ul></li>
-<li><b>SHALL</b> satisfy: Contains exactly one participant / participantRole / playingEntity. (CONF-274)<ul><li><codeblock>[OCL]: self.participant.participantRole.playingEntity-&gt;size() &gt; 0</codeblock></li></ul></li>
-<li>The value for participant / @typeCode in an agent participation <b>SHALL</b> be "CSM" "Consumable" 2.16.840.1.113883.5.90 ParticipationType STATIC. (CONF-275)<ul><li><codeblock>[OCL]: self.participant-&gt;one(entity : cda::Participant2 |
-  entity.typeCode = vocab::ParticipationType::CSM)</codeblock></li></ul></li>
-<li>The value for Observation / participant / participantRole / @classCode in an agent participation <b>SHALL</b> be "MANU" "Manufactured" 2.16.840.1.113883.5.110 RoleClass STATIC. (CONF-276)<ul><li><codeblock>[OCL]: self.participant.participantRole-&gt;one(entity : cda::ParticipantRole |
-  entity.classCode = vocab::RoleClassRoot::MANU)</codeblock></li></ul></li>
-<li>The value for participant / participantRole / playingEntity / @classCode in an agent participation <b>SHALL</b> be "MMAT" "Manufactured material" 2.16.840.1.113883.5.41 EntityClass STATIC. (CONF-277)<ul><li><codeblock>[OCL]: self.participant.participantRole.playingEntity-&gt;one(entity : cda::PlayingEntity |
-  entity.classCode = vocab::EntityClassRoot::MMAT and not entity.code.oclIsUndefined())</codeblock></li></ul></li>
-<li><b>SHALL</b> satisfy: Contains exactly one participant / participantRole / playingEntity / code. (CONF-278)<ul><li><codeblock>[OCL]: self.participant.participantRole.playingEntity-&gt;one(entity : cda::PlayingEntity |  not entity.code.oclIsUndefined())</codeblock></li></ul></li>
-<li>The value for participant / participantRole / playingEntity / code in an agent participation <b>SHOULD</b> be selected from the RxNorm (2.16.840.1.113883.6.88) code system for medications, and from the CDC Vaccine Code (2.16.840.1.113883.6.59) code system for immunizations. (CONF-279)<ul><li><codeblock>[OCL]: self.participant.participantRole.playingEntity-&gt;one(entity : cda::PlayingEntity | not entity.code.oclIsUndefined() and (entity.code.codeSystem='2.16.840.1.113883.6.88' xor entity.code.codeSystem='2.16.840.1.113883.6.59'))</codeblock></li></ul></li>
+<li>The absence of known allergies <b>SHOULD</b> be represented in an alert observation by valuing Observation / value with 160244002 "No known allergies" 2.16.840.1.113883.6.96 SNOMED CT STATIC. (CONF-268)</li>
+<li><b>SHALL</b> satisfy: An alert observation contains one or more sources of information. (CONF-269)</li>
+<li>An alert observation <b>SHOULD</b> contain at least one Observation / participant, representing the agent that is the cause of the allergy or adverse reaction. (CONF-273)</li>
+<li><b>SHALL</b> satisfy: Contains exactly one participant / participantRole / playingEntity. (CONF-274)</li>
+<li>The value for participant / @typeCode in an agent participation <b>SHALL</b> be "CSM" "Consumable" 2.16.840.1.113883.5.90 ParticipationType STATIC. (CONF-275)</li>
+<li>The value for Observation / participant / participantRole / @classCode in an agent participation <b>SHALL</b> be "MANU" "Manufactured" 2.16.840.1.113883.5.110 RoleClass STATIC. (CONF-276)</li>
+<li>The value for participant / participantRole / playingEntity / @classCode in an agent participation <b>SHALL</b> be "MMAT" "Manufactured material" 2.16.840.1.113883.5.41 EntityClass STATIC. (CONF-277)</li>
+<li><b>SHALL</b> satisfy: Contains exactly one participant / participantRole / playingEntity / code. (CONF-278)</li>
+<li>The value for participant / participantRole / playingEntity / code in an agent participation <b>SHOULD</b> be selected from the RxNorm (2.16.840.1.113883.6.88) code system for medications, and from the CDC Vaccine Code (2.16.840.1.113883.6.59) code system for immunizations. (CONF-279)</li>
 </ol>
 <ol id="aggregate">
-<li>Contains exactly one [1..1] <tt><b>@classCode</b></tt>, where its data type is ActClassObservation
+<li>Contains exactly one [1..1] <tt><b>@classCode</b></tt> with data type ActClassObservation
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF-263)
 </li>
-<li>Contains exactly one [1..1] <tt><b>code</b></tt>, where its data type is CD
+<li>Contains exactly one [1..1] <tt><b>code</b></tt> with data type CD
 </li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>statusCode</b></tt><tt><b>/@code</b>="completed" </tt> (CodeSystem:<tt> 2.16.840.1.113883.5.14 HL7ActStatus</tt>) (CONF-264, CONF-265)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>statusCode</b></tt><tt><b>/@code</b>="completed" </tt> (CodeSystem:<tt> 2.16.840.1.113883.5.14 ActStatus</tt>) (CONF-264, CONF-265)
 </li>
 <li><b>MAY</b> contain zero or one [0..1] <tt><b>effectiveTime</b></tt> (CONF-266)
 </li>
-<li><b>MAY</b> contain zero or more [0..*] <tt><b>value</b></tt>, which <b>MAY</b> be selected from ValueSet<tt> 2.16.840.1.113883.1.11.20.4 AlertTypeCode</tt><b> STATIC</b> 20061017, where its data type is CE (CONF-267)
+<li><b>MAY</b> contain zero or more [0..*] <tt><b>value</b></tt> with data type CE, where the @code <b>MAY</b> be selected from ValueSet<tt> AlertTypeCode 2.16.840.1.113883.1.11.20.4</tt><b> STATIC</b> 20061017 (CONF-267)
 </li>
-<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> (CONF-270, CONF-271), such that
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> (CONF-270, CONF-271)
 <ol>
 <li>Contains exactly one [1..1] <xref href="../AlertStatusObservation.dita">Alert Status Observation</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.39</tt>)</li></ol></li>
-<li><b>MAY</b> contain at least one [1..*] <tt><b>entryRelationship</b></tt> (CONF-281), such that
+<li><b>MAY</b> contain at least one [1..*] <tt><b>entryRelationship</b></tt> (CONF-281)
 <ol>
-<li>Contains <tt><b>@typeCode="</b>MFST" </tt><i>MFST (is manifestation of)</i></li>
+<li>Contains <tt><b>@typeCode="</b>MFST" </tt><i>MFST</i></li>
 <li>Contains exactly one [1..1] <xref href="../ReactionObservation.dita">Reaction Observation</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.54</tt>)</li></ol></li>
-<li>The absence of known allergies <b>SHOULD</b> be represented in an alert observation by valuing Observation / value with 160244002 "No known allergies" 2.16.840.1.113883.6.96 SNOMED CT STATIC. (CONF-268)<ul><li>UNIMPLEMENTABLE</li></ul></li>
-<li><b>SHALL</b> satisfy: An alert observation contains one or more sources of information. (CONF-269)<ul><li><codeblock>[OCL]: not self.informant-&gt;isEmpty() 
-or not self.getSection().informant-&gt;isEmpty()
-or not self.getClinicalDocument().informant-&gt;isEmpty()
-or self.reference-&gt;exists(ref : cda::Reference | ref.typeCode = vocab::x_ActRelationshipExternalReference::XCRPT)
-or (self.entryRelationship-&gt;exists(rel : cda::EntryRelationship | 
-   rel.typeCode = vocab::x_ActRelationshipEntryRelationship::REFR
-   and rel.observation.code.code = '48766-0'))</codeblock></li></ul></li>
-<li>An alert observation <b>SHOULD</b> contain at least one Observation / participant, representing the agent that is the cause of the allergy or adverse reaction. (CONF-273)<ul><li><codeblock>[OCL]: self.participant-&gt;exists(participant : cda::Participant2 | participant.typeCode = vocab::ParticipationType::CSM )</codeblock></li></ul></li>
-<li><b>SHALL</b> satisfy: Contains exactly one participant / participantRole / playingEntity. (CONF-274)<ul><li><codeblock>[OCL]: self.participant.participantRole.playingEntity-&gt;size() &gt; 0</codeblock></li></ul></li>
-<li>The value for participant / @typeCode in an agent participation <b>SHALL</b> be "CSM" "Consumable" 2.16.840.1.113883.5.90 ParticipationType STATIC. (CONF-275)<ul><li><codeblock>[OCL]: self.participant-&gt;one(entity : cda::Participant2 |
-  entity.typeCode = vocab::ParticipationType::CSM)</codeblock></li></ul></li>
-<li>The value for Observation / participant / participantRole / @classCode in an agent participation <b>SHALL</b> be "MANU" "Manufactured" 2.16.840.1.113883.5.110 RoleClass STATIC. (CONF-276)<ul><li><codeblock>[OCL]: self.participant.participantRole-&gt;one(entity : cda::ParticipantRole |
-  entity.classCode = vocab::RoleClassRoot::MANU)</codeblock></li></ul></li>
-<li>The value for participant / participantRole / playingEntity / @classCode in an agent participation <b>SHALL</b> be "MMAT" "Manufactured material" 2.16.840.1.113883.5.41 EntityClass STATIC. (CONF-277)<ul><li><codeblock>[OCL]: self.participant.participantRole.playingEntity-&gt;one(entity : cda::PlayingEntity |
-  entity.classCode = vocab::EntityClassRoot::MMAT and not entity.code.oclIsUndefined())</codeblock></li></ul></li>
-<li><b>SHALL</b> satisfy: Contains exactly one participant / participantRole / playingEntity / code. (CONF-278)<ul><li><codeblock>[OCL]: self.participant.participantRole.playingEntity-&gt;one(entity : cda::PlayingEntity |  not entity.code.oclIsUndefined())</codeblock></li></ul></li>
-<li>The value for participant / participantRole / playingEntity / code in an agent participation <b>SHOULD</b> be selected from the RxNorm (2.16.840.1.113883.6.88) code system for medications, and from the CDC Vaccine Code (2.16.840.1.113883.6.59) code system for immunizations. (CONF-279)<ul><li><codeblock>[OCL]: self.participant.participantRole.playingEntity-&gt;one(entity : cda::PlayingEntity | not entity.code.oclIsUndefined() and (entity.code.codeSystem='2.16.840.1.113883.6.88' xor entity.code.codeSystem='2.16.840.1.113883.6.59'))</codeblock></li></ul></li>
+<li>The absence of known allergies <b>SHOULD</b> be represented in an alert observation by valuing Observation / value with 160244002 "No known allergies" 2.16.840.1.113883.6.96 SNOMED CT STATIC. (CONF-268)</li>
+<li><b>SHALL</b> satisfy: An alert observation contains one or more sources of information. (CONF-269)</li>
+<li>An alert observation <b>SHOULD</b> contain at least one Observation / participant, representing the agent that is the cause of the allergy or adverse reaction. (CONF-273)</li>
+<li><b>SHALL</b> satisfy: Contains exactly one participant / participantRole / playingEntity. (CONF-274)</li>
+<li>The value for participant / @typeCode in an agent participation <b>SHALL</b> be "CSM" "Consumable" 2.16.840.1.113883.5.90 ParticipationType STATIC. (CONF-275)</li>
+<li>The value for Observation / participant / participantRole / @classCode in an agent participation <b>SHALL</b> be "MANU" "Manufactured" 2.16.840.1.113883.5.110 RoleClass STATIC. (CONF-276)</li>
+<li>The value for participant / participantRole / playingEntity / @classCode in an agent participation <b>SHALL</b> be "MMAT" "Manufactured material" 2.16.840.1.113883.5.41 EntityClass STATIC. (CONF-277)</li>
+<li><b>SHALL</b> satisfy: Contains exactly one participant / participantRole / playingEntity / code. (CONF-278)</li>
+<li>The value for participant / participantRole / playingEntity / code in an agent participation <b>SHOULD</b> be selected from the RxNorm (2.16.840.1.113883.6.88) code system for medications, and from the CDC Vaccine Code (2.16.840.1.113883.6.59) code system for immunizations. (CONF-279)</li>
 </ol>
+<section id="tableconformance"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="8" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><colspec colname="col2" colnum="2" /><colspec colname="col3" colnum="3" /><colspec colname="col4" colnum="4" /><colspec colname="col5" colnum="5" /><colspec colname="col6" colnum="6" /><colspec colname="col7" colnum="7" /><thead> <row><entry namest="col0" nameend="col7" >ccd::AlertObservation</entry>  </row>  <row><entry namest="col0" nameend="col7" >cda::observation[cda:templateId/@root = ]/</entry>  </row>  <row><entry>Name</entry><entry>XPath</entry><entry>Cardinality</entry><entry>Severity</entry><entry>Nullable</entry><entry>Data Type</entry><entry>Conformance</entry><entry>Value(s)</entry></row></thead><tbody><row><entry>moodCode</entry><entry>@moodCode</entry><entry>1..1</entry><entry>SHALL</entry><entry>NO</entry><entry>x_ActMoodDocumentObservation</entry><entry>CONF-263</entry><entry> DEF</entry></row> 
+<row><entry>effectiveTime</entry><entry>effectiveTime</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>IVL_TS</entry><entry>CONF-266</entry><entry> </entry></row> 
+<row><entry>statusCode</entry><entry>statusCode</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>CS</entry><entry>CONF-264CONF-265</entry><entry>ActStatus 2.16.840.1.113883.5.14 </entry></row> 
+<row><entry>value</entry><entry>value</entry><entry>0..*</entry><entry>MAY</entry><entry>YES</entry><entry>CE</entry><entry>CONF-267</entry><entry> </entry></row> 
+<row><entry>alertStatusObservation</entry><entry>alertStatusObservation</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>AlertStatusObservation</entry><entry>CONF-270CONF-271</entry><entry> </entry></row> 
+<row><entry>reactionObservation</entry><entry>reactionObservation</entry><entry>1..*</entry><entry>MAY</entry><entry>YES</entry><entry>ReactionObservation</entry><entry>CONF-281</entry><entry> </entry></row> 
+</tbody></tgroup></table></p></section>
 <codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
-<observation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd" moodCode="EVN">
-  <templateId root="2.16.840.1.113883.10.20.1.18"/>
-  <id root="1903728321"/>
-  <code code="327604461"/>
-  <statusCode code="completed"/>
+<observation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd">
+  <id root="MDHT" extension="1535819475"/>
+  <code code="1079429656"/>
   <effectiveTime>
-    <low value="2011"/>
-    <high value="2011"/>
+    <low value="2012"/>
+    <high value="2012"/>
   </effectiveTime>
   <entryRelationship>
-    <observation classCode="OBS" moodCode="EVN">
-      <templateId root="2.16.840.1.113883.10.20.1.57"/>
-      <templateId root="2.16.840.1.113883.10.20.1.39"/>
-      <id root="667506419"/>
-      <code code="33999-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Status"/>
-      <statusCode code="completed"/>
+    <observation>
+      <id root="MDHT" extension="296281979"/>
+      <code code="1457481570"/>
       <effectiveTime>
-        <low value="2011"/>
-        <high value="2011"/>
+        <low value="2012"/>
+        <high value="2012"/>
       </effectiveTime>
     </observation>
   </entryRelationship>
   <entryRelationship>
-    <observation/>
+    <observation>
+      <id root="MDHT" extension="901040496"/>
+      <code code="959481957"/>
+      <effectiveTime>
+        <low value="2012"/>
+        <high value="2012"/>
+      </effectiveTime>
+      <entryRelationship>
+        <observation>
+          <id root="MDHT" extension="424195059"/>
+          <code code="537980009"/>
+          <effectiveTime>
+            <low value="2012"/>
+            <high value="2012"/>
+          </effectiveTime>
+        </observation>
+      </entryRelationship>
+    </observation>
   </entryRelationship>
 </observation>]]></codeblock>
+<section id="changes">
+</section>
+<p><ph id="classformalname">Alert Observation</ph></p>
+<p id="shortdesc">[Observation: templateId <tt>2.16.840.1.113883.10.20.1.18</tt>]</p>
 </body>
 </topic>

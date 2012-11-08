@@ -8,101 +8,114 @@
 <resourceid id="2.16.840.1.113883.10.20.1.28"/>
 </prolog>
 <body>
+<section id="knownSubclasses">
+</section>
 <section id="description">
 </section>
 <ol id="conformance">
+<li><b>SHALL</b> contain exactly one [1..1] templateId (  ) such that it <ol><li><b>SHALL</b> contain exactly one [1..1] <b>@root</b>="2.16.840.1.113883.10.20.1.28"</li></ol></li>
 <li>Contains exactly one [1..1] <tt><b>@classCode</b>="OBS" </tt><i>Observation</i> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>)
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF-155)
 </li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>statusCode</b></tt><tt><b>/@code</b>="completed" </tt> (CodeSystem:<tt> 2.16.840.1.113883.5.14 HL7ActStatus</tt>) (CONF-156, CONF-157)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>statusCode</b></tt><tt><b>/@code</b>="completed" </tt> (CodeSystem:<tt> 2.16.840.1.113883.5.14 ActStatus</tt>) (CONF-156, CONF-157)
 </li>
 <li><b>SHOULD</b> contain exactly one [1..1] <tt><b>effectiveTime</b></tt> (CONF-158)
-<ul><li>Indicates the biological timing of condition (e.g. the time the condition started, the onset of the illness or symptom, the duration of a condition).</li></ul></li>
-<li><b>MAY</b> contain exactly one [1..1] <tt><b>code</b></tt>, which <b>MAY</b> be selected from ValueSet<tt> 2.16.840.1.113883.1.11.20.14 ProblemTypeCode</tt><b> STATIC</b> 20061017 (CONF-159)
-<ul><li>code SHALL be present (per CDA schema), by MAY use specified value set.</li></ul></li>
-<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> (CONF-162), such that
+<ul><li><p><lines><i>Indicates the biological timing of condition (e.g. the time the condition started, the onset of the illness or symptom, the duration of a condition).</i></lines></p></li></ul></li>
+<li><b>MAY</b> contain exactly one [1..1] <tt><b>code</b></tt>, where the @code <b>MAY</b> be selected from ValueSet<tt> ProblemTypeCode 2.16.840.1.113883.1.11.20.14</tt><b> STATIC</b> 20061017 (CONF-159)
+<ul><li><p><lines><i>code SHALL be present (per CDA schema), by MAY use specified value set.</i></lines></p></li></ul></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> (CONF-162)
 <ol>
-<li>Contains <tt><b>@typeCode="</b>REFR" </tt><i>REFR (refers to)</i></li>
+<li>Contains <tt><b>@typeCode="</b>REFR" </tt><i>REFR</i></li>
 <li>Contains exactly one [1..1] <xref href="../ProblemStatusObservation.dita">Problem Status Observation</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.50</tt>)</li></ol></li>
-<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> (CONF-165), such that
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> (CONF-165)
 <ol>
-<li>Contains <tt><b>@typeCode="</b>REFR" </tt><i>REFR (refers to)</i></li>
+<li>Contains <tt><b>@typeCode="</b>REFR" </tt><i>REFR</i></li>
 <li>Contains exactly one [1..1] <xref href="../ProblemHealthStatusObservation.dita">Problem Health Status Observation</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.51</tt>)</li></ol></li>
-<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> (CONF-160), such that
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> (CONF-160)
 <ol>
-<li>Contains <tt><b>@typeCode="</b>SUBJ" </tt><i>SUBJ (has subject)</i></li>
+<li>Contains <tt><b>@typeCode="</b>SUBJ" </tt><i>SUBJ</i></li>
 <li>Contains exactly one [1..1] <xref href="../AgeObservation.dita">Age Observation</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.38</tt>)</li></ol></li>
-<li><b>SHALL</b> contain one or more sources of information. (CONF-161)<ul><li><codeblock>[OCL]: not self.informant-&gt;isEmpty() 
-or not self.getSection().informant-&gt;isEmpty()
-or not self.getClinicalDocument().informant-&gt;isEmpty()
-or self.reference-&gt;exists(ref : cda::Reference | ref.typeCode = vocab::x_ActRelationshipExternalReference::XCRPT)
-or (self.entryRelationship-&gt;exists(rel : cda::EntryRelationship | 
-   rel.typeCode = vocab::x_ActRelationshipEntryRelationship::REFR
-   and rel.observation.code.code = '48766-0'))</codeblock></li></ul></li>
-<li><b>MAY</b> contain exactly one Patient Awareness (CONF-180)<ul><li><codeblock>[OCL]: self.participant-&gt;one(partic : cda::Participant2 | partic.oclIsKindOf(ccd::PatientAwareness))</codeblock></li></ul></li>
+<li><b>SHALL</b> contain one or more sources of information. (CONF-161)</li>
+<li><b>MAY</b> contain exactly one Patient Awareness (CONF-180)</li>
 </ol>
 <ol id="aggregate">
 <li>Contains exactly one [1..1] <tt><b>@classCode</b>="OBS" </tt><i>Observation</i> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>)
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF-155)
 </li>
-<li><b>MAY</b> contain exactly one [1..1] <tt><b>code</b></tt>, which <b>MAY</b> be selected from ValueSet<tt> 2.16.840.1.113883.1.11.20.14 ProblemTypeCode</tt><b> STATIC</b> 20061017 (CONF-159)
-<ul><li>code SHALL be present (per CDA schema), by MAY use specified value set.</li></ul></li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>statusCode</b></tt><tt><b>/@code</b>="completed" </tt> (CodeSystem:<tt> 2.16.840.1.113883.5.14 HL7ActStatus</tt>) (CONF-156, CONF-157)
+<li><b>MAY</b> contain exactly one [1..1] <tt><b>code</b></tt>, where the @code <b>MAY</b> be selected from ValueSet<tt> ProblemTypeCode 2.16.840.1.113883.1.11.20.14</tt><b> STATIC</b> 20061017 (CONF-159)
+<ul><li><p><lines><i>code SHALL be present (per CDA schema), by MAY use specified value set.</i></lines></p></li></ul></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>statusCode</b></tt><tt><b>/@code</b>="completed" </tt> (CodeSystem:<tt> 2.16.840.1.113883.5.14 ActStatus</tt>) (CONF-156, CONF-157)
 </li>
 <li><b>SHOULD</b> contain exactly one [1..1] <tt><b>effectiveTime</b></tt> (CONF-158)
-<ul><li>Indicates the biological timing of condition (e.g. the time the condition started, the onset of the illness or symptom, the duration of a condition).</li></ul></li>
-<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> (CONF-162), such that
+<ul><li><p><lines><i>Indicates the biological timing of condition (e.g. the time the condition started, the onset of the illness or symptom, the duration of a condition).</i></lines></p></li></ul></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> (CONF-162)
 <ol>
-<li>Contains <tt><b>@typeCode="</b>REFR" </tt><i>REFR (refers to)</i></li>
+<li>Contains <tt><b>@typeCode="</b>REFR" </tt><i>REFR</i></li>
 <li>Contains exactly one [1..1] <xref href="../ProblemStatusObservation.dita">Problem Status Observation</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.50</tt>)</li></ol></li>
-<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> (CONF-165), such that
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> (CONF-165)
 <ol>
-<li>Contains <tt><b>@typeCode="</b>REFR" </tt><i>REFR (refers to)</i></li>
+<li>Contains <tt><b>@typeCode="</b>REFR" </tt><i>REFR</i></li>
 <li>Contains exactly one [1..1] <xref href="../ProblemHealthStatusObservation.dita">Problem Health Status Observation</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.51</tt>)</li></ol></li>
-<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> (CONF-160), such that
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> (CONF-160)
 <ol>
-<li>Contains <tt><b>@typeCode="</b>SUBJ" </tt><i>SUBJ (has subject)</i></li>
+<li>Contains <tt><b>@typeCode="</b>SUBJ" </tt><i>SUBJ</i></li>
 <li>Contains exactly one [1..1] <xref href="../AgeObservation.dita">Age Observation</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.38</tt>)</li></ol></li>
-<li><b>SHALL</b> contain one or more sources of information. (CONF-161)<ul><li><codeblock>[OCL]: not self.informant-&gt;isEmpty() 
-or not self.getSection().informant-&gt;isEmpty()
-or not self.getClinicalDocument().informant-&gt;isEmpty()
-or self.reference-&gt;exists(ref : cda::Reference | ref.typeCode = vocab::x_ActRelationshipExternalReference::XCRPT)
-or (self.entryRelationship-&gt;exists(rel : cda::EntryRelationship | 
-   rel.typeCode = vocab::x_ActRelationshipEntryRelationship::REFR
-   and rel.observation.code.code = '48766-0'))</codeblock></li></ul></li>
-<li><b>MAY</b> contain exactly one Patient Awareness (CONF-180)<ul><li><codeblock>[OCL]: self.participant-&gt;one(partic : cda::Participant2 | partic.oclIsKindOf(ccd::PatientAwareness))</codeblock></li></ul></li>
+<li><b>SHALL</b> contain one or more sources of information. (CONF-161)</li>
+<li><b>MAY</b> contain exactly one Patient Awareness (CONF-180)</li>
 </ol>
+<section id="tableconformance"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="8" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><colspec colname="col2" colnum="2" /><colspec colname="col3" colnum="3" /><colspec colname="col4" colnum="4" /><colspec colname="col5" colnum="5" /><colspec colname="col6" colnum="6" /><colspec colname="col7" colnum="7" /><thead> <row><entry namest="col0" nameend="col7" >ccd::ProblemObservation</entry>  </row>  <row><entry namest="col0" nameend="col7" >cda::observation[cda:templateId/@root = ]/</entry>  </row>  <row><entry>Name</entry><entry>XPath</entry><entry>Cardinality</entry><entry>Severity</entry><entry>Nullable</entry><entry>Data Type</entry><entry>Conformance</entry><entry>Value(s)</entry></row></thead><tbody><row><entry>moodCode</entry><entry>@moodCode</entry><entry>1..1</entry><entry>SHALL</entry><entry>NO</entry><entry>ActMood</entry><entry>CONF-155</entry><entry> DEF</entry></row> 
+<row><entry>code</entry><entry>code</entry><entry>1..1</entry><entry>MAY</entry><entry>YES</entry><entry>CD</entry><entry>CONF-159</entry><entry> </entry></row> 
+<row><entry>effectiveTime</entry><entry>effectiveTime</entry><entry>1..1</entry><entry>SHOULD</entry><entry>YES</entry><entry>IVL_TS</entry><entry>CONF-158</entry><entry> </entry></row> 
+<row><entry>statusCode</entry><entry>statusCode</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>CS</entry><entry>CONF-156CONF-157</entry><entry>ActStatus 2.16.840.1.113883.5.14 </entry></row> 
+<row><entry>ageObservation</entry><entry>ageObservation</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>AgeObservation</entry><entry>CONF-160</entry><entry> </entry></row> 
+<row><entry>problemHealthStatus</entry><entry>problemHealthStatus</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>ProblemHealthStatusObservation</entry><entry>CONF-165</entry><entry> </entry></row> 
+<row><entry>problemObservation</entry><entry>problemObservation</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>ProblemObservation</entry><entry>CONF-439CONF-440</entry><entry> </entry></row> 
+<row><entry>problemStatus</entry><entry>problemStatus</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>ProblemStatusObservation</entry><entry>CONF-162</entry><entry> </entry></row> 
+</tbody></tgroup></table></p></section>
 <codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
-<observation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd" classCode="OBS" moodCode="EVN">
-  <templateId root="2.16.840.1.113883.10.20.1.28"/>
-  <id root="1852175"/>
-  <code code="511730040"/>
-  <statusCode code="completed"/>
+<observation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd">
+  <id root="MDHT" extension="1004132247"/>
+  <code code="450323931"/>
   <effectiveTime>
-    <low value="2011"/>
-    <high value="2011"/>
+    <low value="2012"/>
+    <high value="2012"/>
   </effectiveTime>
   <entryRelationship>
-    <observation classCode="OBS" moodCode="EVN">
-      <templateId root="2.16.840.1.113883.10.20.1.57"/>
-      <templateId root="2.16.840.1.113883.10.20.1.50"/>
-      <id root="1635645958"/>
-      <code code="33999-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Status"/>
-      <statusCode code="completed"/>
+    <observation>
+      <id root="MDHT" extension="100319257"/>
+      <code code="300134019"/>
       <effectiveTime>
-        <low value="2011"/>
-        <high value="2011"/>
+        <low value="2012"/>
+        <high value="2012"/>
       </effectiveTime>
     </observation>
   </entryRelationship>
   <entryRelationship>
-    <observation/>
+    <observation>
+      <id root="MDHT" extension="2090675700"/>
+      <code code="1899410080"/>
+      <effectiveTime>
+        <low value="2012"/>
+        <high value="2012"/>
+      </effectiveTime>
+    </observation>
   </entryRelationship>
   <entryRelationship>
-    <observation/>
+    <observation>
+      <id root="MDHT" extension="1878142710"/>
+      <code code="1881401575"/>
+      <effectiveTime>
+        <low value="2012"/>
+        <high value="2012"/>
+      </effectiveTime>
+    </observation>
   </entryRelationship>
 </observation>]]></codeblock>
+<section id="changes">
+</section>
+<p><ph id="classformalname">Problem Observation</ph></p>
+<p id="shortdesc">[Observation: templateId <tt>2.16.840.1.113883.10.20.1.28</tt>]</p>
 </body>
 </topic>

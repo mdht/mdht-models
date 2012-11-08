@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html
   PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html lang="en-us" xml:lang="en-us">
+<html xml:lang="en-us" lang="en-us">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 <meta name="copyright" content="(C) Copyright 2005"/>
@@ -18,7 +18,7 @@
 <link rel="stylesheet" type="text/css" href="../css/commonltr.css"/>
 <title>Policy Activity</title>
 </head>
-<body id="classId"><a name="classId"><!-- --></a>
+<body id="classId">
 <div>
 	<p><b>Development Only.</b> The Normative content for these specifications
 	may be found on the HL7, IHE, and HITSP web sites.</p>
@@ -32,9 +32,11 @@
 
 
 <div class="section">
-<p class="p">A policy activity represents the policy or program providing the coverage. The person for whom payment is being provided (i.e. the patient) is the covered party. The subscriber of the policy or program is represented as a participant that is the holder the coverage. The payer is represented as the performer of the policy activity.</p>
+<div class="p"><p class="lines"><em class="ph i">A policy activity represents the policy or program providing the coverage. The person for whom payment is being provided (i.e. the patient) is the covered party. The subscriber of the policy or program is represented as a participant that is the holder the coverage. The payer is represented as the performer of the policy activity.</em></p>
+</div>
 
 </div>
+
 
 
 
@@ -48,65 +50,47 @@
 <li class="li"><strong class="ph b">SHALL</strong> contain at least one [1..*] <tt class="ph tt"><strong class="ph b">id</strong></tt> (CONF-51)
 </li>
 
-<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">statusCode</strong></tt><tt class="ph tt"><strong class="ph b">/@code</strong>="completed" </tt> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.5.14 HL7ActStatus</tt>) (CONF-52, CONF-53)
+<li class="li"><strong class="ph b">SHOULD</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt>, where the @code <strong class="ph b">SHOULD</strong> be selected from ValueSet<tt class="ph tt"> ActCoverageType 2.16.840.1.113883.1.11.19832</tt><strong class="ph b"> DYNAMIC</strong> (CONF-54, CONF-55)
 </li>
 
-<li class="li"><strong class="ph b">SHOULD</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt>, which <strong class="ph b">SHOULD</strong> be selected from ValueSet<tt class="ph tt"> 2.16.840.1.113883.1.11.19832 ActCoverageType</tt><strong class="ph b"> DYNAMIC</strong> (CONF-54, CONF-55)
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">statusCode</strong></tt><tt class="ph tt"><strong class="ph b">/@code</strong>="completed" </tt> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.5.14 ActStatus</tt>) (CONF-52, CONF-53)
 </li>
 
-<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">performer</strong></tt> (CONF-56), such that
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">performer</strong></tt> (CONF-56)
+<ol class="ol" type="a">
+<li class="li">Contains exactly one [1..1] <a class="xref" href="PayerEntity.html" title="[AssignedEntity: templateId null]">Payer Entity</a></li>
+</ol>
 </li>
 
-<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">participant</strong></tt> (CONF-58), such that
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">participant</strong></tt> (CONF-58)
+<ol class="ol" type="a">
+<li class="li">Contains exactly one [1..1] <a class="xref" href="CoveredParty.html" title="[ParticipantRole: templateId null]">Covered Party</a></li>
+</ol>
 </li>
 
-<li class="li"><strong class="ph b">MAY</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">participant</strong></tt> (CONF-63), such that
+<li class="li"><strong class="ph b">MAY</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">participant</strong></tt> (CONF-63)
+<ol class="ol" type="a">
+<li class="li">Contains exactly one [1..1] <a class="xref" href="PolicySubscriber.html" title="[ParticipantRole: templateId null]">Policy Subscriber</a></li>
+</ol>
 </li>
 
-<li class="li"><strong class="ph b">SHALL</strong> satisfy: A policy activity contains exactly one performer [@typeCode='PRF'], representing the payer. (CONF-56)<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: self.performer-&gt;one(perf : cda::Performer2 | perf.typeCode = vocab::ParticipationPhysicalPerformer::PRF)</pre>
-</li>
-</ul>
-</li>
+<li class="li"><strong class="ph b">SHALL</strong> satisfy: A policy activity contains exactly one performer [@typeCode='PRF'], representing the payer. (CONF-56)</li>
 
-<li class="li"><strong class="ph b">SHALL</strong> satisfy: A policy activity contains exactly one participant [@typeCode='COV'], representing the covered party. (CONF-58)<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: self.participant-&gt;one(part : cda::Participant2 | part.typeCode = vocab::ParticipationType::COV)</pre>
-</li>
-</ul>
-</li>
+<li class="li"><strong class="ph b">SHALL</strong> satisfy: A policy activity contains exactly one participant [@typeCode='COV'], representing the covered party. (CONF-58)</li>
 
-<li class="li">The value for participant / participantRole / code in a policy activity's covered party <strong class="ph b">MAY</strong> be selected from ValueSet 2.16.840.1.113883.1.11.19809 PolicyOrProgramCoverageRoleType DYNAMIC. (CONF-61)<ul class="ul"><li class="li">UNIMPLEMENTABLE</li>
-</ul>
-</li>
+<li class="li">The value for participant / participantRole / code in a policy activity's covered party <strong class="ph b">MAY</strong> be selected from ValueSet 2.16.840.1.113883.1.11.19809 PolicyOrProgramCoverageRoleType DYNAMIC. (CONF-61)</li>
 
-<li class="li">A covered party in a policy activity <strong class="ph b">MAY</strong> contain exactly one participant / time, to represent the time period over which the patient is covered. (CONF-62)<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: self.participant-&gt;one(part : cda::Participant2 | part.typeCode = vocab::ParticipationType::COV
-  implies not part.time.oclIsUndefined())</pre>
-</li>
-</ul>
-</li>
+<li class="li">A covered party in a policy activity <strong class="ph b">MAY</strong> contain exactly one participant / time, to represent the time period over which the patient is covered. (CONF-62)</li>
 
-<li class="li">A policy activity <strong class="ph b">MAY</strong> contain exactly one participant [@typeCode='HLD'], representing the subscriber. (CONF-63)<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: self.participant-&gt;one(part : cda::Participant2 | part.typeCode = vocab::ParticipationType::HLD)</pre>
-</li>
-</ul>
-</li>
+<li class="li">A policy activity <strong class="ph b">MAY</strong> contain exactly one participant [@typeCode='HLD'], representing the subscriber. (CONF-63)</li>
 
-<li class="li">A subscriber in a policy activity <strong class="ph b">MAY</strong> contain exactly one participant / time, to represent the time period for which the subscriber is enrolled. (CONF-65)<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: self.participant-&gt;one(part : cda::Participant2 | part.typeCode = vocab::ParticipationType::HLD
-  implies not part.time.oclIsUndefined())</pre>
-</li>
-</ul>
-</li>
+<li class="li">A subscriber in a policy activity <strong class="ph b">MAY</strong> contain exactly one participant / time, to represent the time period for which the subscriber is enrolled. (CONF-65)</li>
 
-<li class="li">The value for entryRelationship / @typeCode in a policy activity <strong class="ph b">SHALL</strong> be 'REFR' 2.16.840.1.113883.5.1002 ActRelationshipType STATIC. (CONF-66)<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: self.entryRelationship-&gt;forAll(rel : cda::EntryRelationship | rel.typeCode = vocab::x_ActRelationshipEntryRelationship::REFR)</pre>
-</li>
-</ul>
-</li>
+<li class="li">The value for entryRelationship / @typeCode in a policy activity <strong class="ph b">SHALL</strong> be 'REFR' 2.16.840.1.113883.5.1002 ActRelationshipType STATIC. (CONF-66)</li>
 
-<li class="li">The target of a policy activity with entryRelationship / @typeCode='REFR' <strong class="ph b">SHALL</strong> be an Authorization Activity or an Act, with Act [@classCode = 'ACT'] and Act [@moodCode = 'DEF'], representing a description of the coverage plan. (CONF-67)<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: self.entryRelationship-&gt;forAll(rel : cda::EntryRelationship | rel.act.oclIsKindOf(ccd::AuthorizationActivity)
-  or rel.act.oclIsKindOf(ccd::CoveragePlanDescription))</pre>
-</li>
-</ul>
-</li>
+<li class="li">The target of a policy activity with entryRelationship / @typeCode='REFR' <strong class="ph b">SHALL</strong> be an Authorization Activity or an Act, with Act [@classCode = 'ACT'] and Act [@moodCode = 'DEF'], representing a description of the coverage plan. (CONF-67)</li>
 
 </ol>
-
 
 <p class="p"> </p>
 
@@ -115,14 +99,12 @@
 
 
 <pre class="pre codeblock">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
-&lt;act xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd" classCode="ACT" moodCode="EVN"&gt;
-  &lt;templateId root="2.16.840.1.113883.10.20.1.26"/&gt;
-  &lt;id root="966459209"/&gt;
-  &lt;code code="265160177"/&gt;
-  &lt;statusCode code="completed"/&gt;
+&lt;act xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd"&gt;
+  &lt;id root="MDHT" extension="1166567333"/&gt;
+  &lt;code code="2033646390"/&gt;
   &lt;effectiveTime&gt;
-    &lt;low value="2011"/&gt;
-    &lt;high value="2011"/&gt;
+    &lt;low value="2012"/&gt;
+    &lt;high value="2012"/&gt;
   &lt;/effectiveTime&gt;
 &lt;/act&gt;</pre>
 

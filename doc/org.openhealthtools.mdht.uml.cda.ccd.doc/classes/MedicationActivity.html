@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html
   PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html lang="en-us" xml:lang="en-us">
+<html xml:lang="en-us" lang="en-us">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 <meta name="copyright" content="(C) Copyright 2005"/>
@@ -18,7 +18,7 @@
 <link rel="stylesheet" type="text/css" href="../css/commonltr.css"/>
 <title>Medication Activity</title>
 </head>
-<body id="classId"><a name="classId"><!-- --></a>
+<body id="classId">
 <div>
 	<p><b>Development Only.</b> The Normative content for these specifications
 	may be found on the HL7, IHE, and HITSP web sites.</p>
@@ -42,65 +42,28 @@
 
 
 
+
 <ol class="ol">
+<li class="li">Contains exactly one [1..1] <tt class="ph tt"><strong class="ph b">@classCode</strong>="SBADM" </tt> with data type ActClass (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.5.6 HL7ActClass</tt>)
+</li>
+
+<li class="li">Contains exactly one [1..1] <tt class="ph tt"><strong class="ph b">@moodCode</strong></tt> with data type x_DocumentSubstanceMood
+</li>
+
 <li class="li"><strong class="ph b">SHALL</strong> contain at least one [1..*] <tt class="ph tt"><strong class="ph b">id</strong></tt> (CONF-306)
 </li>
 
 <li class="li"><strong class="ph b">SHOULD</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">statusCode</strong></tt> (CONF-307)
 </li>
 
-<li class="li"><strong class="ph b">MAY</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">entryRelationship</strong></tt> (CONF-338, CONF-339), such that
-<ol class="ol" type="a">
-<li class="li">Contains <tt class="ph tt"><strong class="ph b">@typeCode="</strong>SUBJ" </tt><em class="ph i">SUBJ (has subject)</em></li>
-
-<li class="li">Contains exactly one [1..1] <a class="xref" href="MedicationSeriesNumberObservation.html" title="[Observation: templateId 2.16.840.1.113883.10.20.1.46]">Medication Series Number Observation</a> (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.1.46</tt>)</li>
-</ol>
-</li>
-
-<li class="li"><strong class="ph b">MAY</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">entryRelationship</strong></tt> (CONF-350), such that
-<ol class="ol" type="a">
-<li class="li">Contains exactly one [1..1] <a class="xref" href="MedicationStatusObservation.html" title="[Observation: templateId 2.16.840.1.113883.10.20.1.47]">Medication Status Observation</a> (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.1.47</tt>)</li>
-</ol>
-</li>
-
-<li class="li"><strong class="ph b">MAY</strong> contain at least one [1..*] <tt class="ph tt"><strong class="ph b">entryRelationship</strong></tt> (CONF-330, CONF-333), such that
-<ol class="ol" type="a">
-<li class="li">Contains <tt class="ph tt"><strong class="ph b">@typeCode="</strong>SUBJ" </tt><em class="ph i">SUBJ (has subject)</em></li>
-
-<li class="li">Contains exactly one [1..1] <a class="xref" href="PatientInstruction.html" title="[Act: templateId 2.16.840.1.113883.10.20.1.49]">Patient Instruction</a> (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.1.49</tt>)</li>
-</ol>
-</li>
-
 <li class="li"><strong class="ph b">SHOULD</strong> contain at least one [1..*] <tt class="ph tt"><strong class="ph b">effectiveTime</strong></tt> (CONF-308)
-<ul class="ul"><li class="li">Used to indicate the actual or intended start and stop date of a medication, and the frequency of administration.</li>
+<ul class="ul"><li class="li"><div class="p"><p class="lines"><em class="ph i">Used to indicate the actual or intended start and stop date of a medication, and the frequency of administration.</em></p>
+</div>
+</li>
 </ul>
 </li>
 
-<li class="li"><strong class="ph b">MAY</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">maxDoseQuantity</strong></tt> (CONF-312)
-<ul class="ul"><li class="li">represents a maximum dose limit</li>
-</ul>
-</li>
-
-<li class="li"><strong class="ph b">SHOULD</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">routeCode</strong></tt> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.5.112 HL7 RouteOfAdministration</tt>) (CONF-309, CONF-310)
-</li>
-
-<li class="li"><strong class="ph b">MAY</strong> contain at least one [1..*] <tt class="ph tt"><strong class="ph b">performer</strong></tt> (CONF-313), such that
-<ul class="ul"><li class="li">Indicates the person administering a substance.</li>
-</ul>
-</li>
-
-<li class="li"><strong class="ph b">MAY</strong> contain at least one [1..*] <tt class="ph tt"><strong class="ph b">entryRelationship</strong></tt> (CONF-348, CONF-349), such that
-<ol class="ol" type="a">
-<li class="li">Contains <tt class="ph tt"><strong class="ph b">@typeCode="</strong>CAUS" </tt><em class="ph i">CAUS (is etiology for)</em></li>
-
-<li class="li">Contains exactly one [1..1] <a class="xref" href="ReactionObservation.html" title="[Observation: templateId 2.16.840.1.113883.10.20.1.54]">Reaction Observation</a> (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.1.54</tt>)</li>
-</ol>
-</li>
-
-<li class="li"><strong class="ph b">MAY</strong> contain at least one [1..*] <tt class="ph tt"><strong class="ph b">participant</strong></tt> (CONF-368), such that
-<ol class="ol" type="a">
-<li class="li">Contains exactly one [1..1] <a class="xref" href="ProductInstance.html" title="[ParticipantRole: templateId 2.16.840.1.113883.10.20.1.52]">Product Instance</a> (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.1.52</tt>)</li>
-</ol>
+<li class="li"><strong class="ph b">SHOULD</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">routeCode</strong></tt>, where the @code <strong class="ph b">SHOULD</strong> be selected from (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.5.112 HL7 RouteOfAdministration</tt>) (CONF-309, CONF-310)
 </li>
 
 <li class="li"><strong class="ph b">SHOULD</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">doseQuantity</strong></tt>
@@ -109,61 +72,82 @@
 <li class="li"><strong class="ph b">SHOULD</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">rateQuantity</strong></tt>
 </li>
 
-<li class="li"><strong class="ph b">SHALL</strong> satisfy: Value for moodCode is "EVN" or "INT" 2.16.840.1.113883.5.1001 ActMood STATIC (CONF-305)<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: self.moodCode=vocab::x_DocumentSubstanceMood::EVN or self.moodCode=vocab::x_DocumentSubstanceMood::INT </pre>
+<li class="li"><strong class="ph b">MAY</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">maxDoseQuantity</strong></tt> (CONF-312)
+<ul class="ul"><li class="li"><div class="p"><p class="lines"><em class="ph i">represents a maximum dose limit</em></p>
+</div>
 </li>
 </ul>
 </li>
 
-<li class="li"><strong class="ph b">SHOULD</strong> satisfy: Contains exactly one doseQuantity or rateQuantity. (CONF-311)<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: not self.doseQuantity.oclIsUndefined() or not self.rateQuantity.oclIsUndefined()</pre>
+<li class="li">Contains exactly one [1..1] <tt class="ph tt"><strong class="ph b">consumable</strong></tt>, where its type is <a class="xref" href="generated/../Consumable.html">Consumable</a>
+<ol class="ol" type="a">
+<li class="li">Contains exactly one [1..1] <a class="xref" href="generated/../Consumable.html">Consumable</a></li>
+</ol>
+</li>
+
+<li class="li"><strong class="ph b">MAY</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">entryRelationship</strong></tt> (CONF-338, CONF-339)
+<ol class="ol" type="a">
+<li class="li">Contains <tt class="ph tt"><strong class="ph b">@typeCode="</strong>SUBJ" </tt><em class="ph i">SUBJ</em></li>
+
+<li class="li">Contains exactly one [1..1] <a class="xref" href="MedicationSeriesNumberObservation.html" title="[Observation: templateId 2.16.840.1.113883.10.20.1.46]">Medication Series Number Observation</a> (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.1.46</tt>)</li>
+</ol>
+</li>
+
+<li class="li"><strong class="ph b">MAY</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">entryRelationship</strong></tt> (CONF-350)
+<ol class="ol" type="a">
+<li class="li">Contains exactly one [1..1] <a class="xref" href="MedicationStatusObservation.html" title="[Observation: templateId 2.16.840.1.113883.10.20.1.47]">Medication Status Observation</a> (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.1.47</tt>)</li>
+</ol>
+</li>
+
+<li class="li"><strong class="ph b">MAY</strong> contain at least one [1..*] <tt class="ph tt"><strong class="ph b">entryRelationship</strong></tt> (CONF-330, CONF-333)
+<ol class="ol" type="a">
+<li class="li">Contains <tt class="ph tt"><strong class="ph b">@typeCode="</strong>SUBJ" </tt><em class="ph i">SUBJ</em></li>
+
+<li class="li">Contains exactly one [1..1] <a class="xref" href="PatientInstruction.html" title="[Act: templateId 2.16.840.1.113883.10.20.1.49]">Patient Instruction</a> (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.1.49</tt>)</li>
+</ol>
+</li>
+
+<li class="li"><strong class="ph b">MAY</strong> contain at least one [1..*] <tt class="ph tt"><strong class="ph b">performer</strong></tt> (CONF-313)
+<ol class="ol" type="a">
+<li class="li">Contains exactly one [1..1] CDA Performer2</li>
+</ol>
+<ul class="ul"><li class="li"><div class="p"><p class="lines"><em class="ph i">Indicates the person administering a substance.</em></p>
+</div>
 </li>
 </ul>
 </li>
 
-<li class="li"><strong class="ph b">MAY</strong> satisfy: Has one or more associated consents, represented in the CCD Header as ClinicalDocument / authorization / consent. (CONF-314)<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: self.getClinicalDocument().authorization-&gt;size() &gt; 0 and self.getClinicalDocument().authorization.consent-&gt;size() &gt; 0</pre>
-</li>
-</ul>
+<li class="li"><strong class="ph b">MAY</strong> contain at least one [1..*] <tt class="ph tt"><strong class="ph b">entryRelationship</strong></tt> (CONF-348, CONF-349)
+<ol class="ol" type="a">
+<li class="li">Contains <tt class="ph tt"><strong class="ph b">@typeCode="</strong>CAUS" </tt><em class="ph i">CAUS</em></li>
+
+<li class="li">Contains exactly one [1..1] <a class="xref" href="ReactionObservation.html" title="[Observation: templateId 2.16.840.1.113883.10.20.1.54]">Reaction Observation</a> (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.1.54</tt>)</li>
+</ol>
 </li>
 
-<li class="li"><strong class="ph b">SHALL</strong> satisfy: Contains one or more sources of information. (CONF-315)<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: not self.informant-&gt;isEmpty() 
-or not self.getSection().informant-&gt;isEmpty()
-or not self.getClinicalDocument().informant-&gt;isEmpty()
-or self.reference-&gt;exists(ref : cda::Reference | ref.typeCode = vocab::x_ActRelationshipExternalReference::XCRPT)
-or (self.entryRelationship-&gt;exists(rel : cda::EntryRelationship | 
-   rel.typeCode = vocab::x_ActRelationshipEntryRelationship::REFR
-   and rel.observation.code.code = '48766-0'))</pre>
-</li>
-</ul>
+<li class="li"><strong class="ph b">MAY</strong> contain at least one [1..*] <tt class="ph tt"><strong class="ph b">participant</strong></tt> (CONF-368)
+<ol class="ol" type="a">
+<li class="li">Contains exactly one [1..1] <a class="xref" href="ProductInstance.html" title="[ParticipantRole: templateId 2.16.840.1.113883.10.20.1.52]">Product Instance</a> (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.1.52</tt>)</li>
+</ol>
 </li>
 
-<li class="li"><strong class="ph b">MAY</strong> satisfy: Contains one or more precondition / Criterion, to indicate that the medication is administered only when the associated (coded or free text) criteria are met. (CONF-327)<ul class="ul"><li class="li">Indicates that the medication is administered only when the associated (coded or free text) criteria are met.</li>
-</ul>
-<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: self.precondition-&gt;exists(precondition : cda::Precondition | not precondition.criterion.oclIsUndefined())</pre>
-</li>
-</ul>
-</li>
+<li class="li"><strong class="ph b">SHALL</strong> satisfy: Value for moodCode is "EVN" or "INT" 2.16.840.1.113883.5.1001 ActMood STATIC (CONF-305)</li>
 
-<li class="li"><strong class="ph b">MAY</strong> satisfy: Contains one or more entryRelationship, where the value for @typeCode is "RSON" "Has reason" 2.16.840.1.113883.5.1002 ActRelationshipType STATIC. (CONF-328)<ul class="ul"><li class="li">The target of the relationship represents the indication for the activity.</li>
-</ul>
-<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: self.entryRelationship-&gt;exists(entryRel : cda::EntryRelationship | entryRel.typeCode = vocab::x_ActRelationshipEntryRelationship::RSON)</pre>
-</li>
-</ul>
-</li>
+<li class="li"><strong class="ph b">SHOULD</strong> satisfy: Contains exactly one doseQuantity or rateQuantity. (CONF-311)</li>
 
-<li class="li"><strong class="ph b">SHALL</strong> satisfy: entryRelationship / @typeCode="RSON" in a medication activity has a target of problem act (templateId 2.16.840.1.113883.10.20.1.27), problem observation (templateId 2.16.840.1.113883.10.20.1.28), or some other clinical statement. (CONF-329)<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: self.getEntryRelationshipTargets(vocab::x_ActRelationshipEntryRelationship::RSON, cda::ClinicalStatement)-&gt;forAll(target : 
+<li class="li"><strong class="ph b">MAY</strong> satisfy: Has one or more associated consents, represented in the CCD Header as ClinicalDocument / authorization / consent. (CONF-314)</li>
 
-cda::ClinicalStatement | not target.oclIsUndefined() and 
-  (target.oclIsKindOf(ccd::ProblemAct) or target.oclIsKindOf(ccd::ProblemObservation)))</pre>
-</li>
-</ul>
-</li>
+<li class="li"><strong class="ph b">SHALL</strong> satisfy: Contains one or more sources of information. (CONF-315)</li>
 
-<li class="li"><strong class="ph b">SHALL</strong> satisfy: Contains exactly one consumable, the target of which is a Product template. (CONF-354)<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: self.consumable.manufacturedProduct.oclIsKindOf(ccd::Product)</pre>
-</li>
-</ul>
-</li>
+<li class="li"><strong class="ph b">MAY</strong> satisfy: Contains one or more precondition / Criterion, to indicate that the medication is administered only when the associated (coded or free text) criteria are met. (CONF-327)</li>
+
+<li class="li"><strong class="ph b">MAY</strong> satisfy: Contains one or more entryRelationship, where the value for @typeCode is "RSON" "Has reason" 2.16.840.1.113883.5.1002 ActRelationshipType STATIC. (CONF-328)</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> satisfy: entryRelationship / @typeCode="RSON" in a medication activity has a target of problem act (templateId 2.16.840.1.113883.10.20.1.27), problem observation (templateId 2.16.840.1.113883.10.20.1.28), or some other clinical statement. (CONF-329)</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> satisfy: Contains exactly one consumable, the target of which is a Product template. (CONF-354)</li>
 
 </ol>
-
 
 <p class="p"> </p>
 
@@ -173,35 +157,68 @@ cda::ClinicalStatement | not target.oclIsUndefined() and
 
 <pre class="pre codeblock">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
 &lt;substanceadministration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd"&gt;
-  &lt;templateId root="2.16.840.1.113883.10.20.1.24"/&gt;
-  &lt;id root="674721397"/&gt;
+  &lt;id root="MDHT" extension="652444141"/&gt;
   &lt;statusCode code="completed"/&gt;
-  &lt;effectiveTime value="20111114"/&gt;
-  &lt;routeCode codeSystem="2.16.840.1.113883.5.112" codeSystemName="HL7 RouteOfAdministration"/&gt;
+  &lt;effectiveTime value="20121108"/&gt;
   &lt;doseQuantity/&gt;
   &lt;rateQuantity/&gt;
   &lt;maxDoseQuantity/&gt;
   &lt;consumable/&gt;
+  &lt;performer/&gt;
   &lt;entryRelationship&gt;
-    &lt;observation classCode="OBS" moodCode="EVN"&gt;
-      &lt;templateId root="2.16.840.1.113883.10.20.1.46"/&gt;
-      &lt;id root="1998297778"/&gt;
-      &lt;code code="30973-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Dose number"/&gt;
+    &lt;observation&gt;
+      &lt;id root="MDHT" extension="449496075"/&gt;
+      &lt;code code="145267197"/&gt;
       &lt;statusCode code="completed"/&gt;
       &lt;effectiveTime&gt;
-        &lt;low value="2011"/&gt;
-        &lt;high value="2011"/&gt;
+        &lt;low value="2012"/&gt;
+        &lt;high value="2012"/&gt;
       &lt;/effectiveTime&gt;
     &lt;/observation&gt;
   &lt;/entryRelationship&gt;
   &lt;entryRelationship&gt;
-    &lt;observation/&gt;
+    &lt;observation&gt;
+      &lt;id root="MDHT" extension="2101262497"/&gt;
+      &lt;code code="1595082125"/&gt;
+      &lt;statusCode code="completed"/&gt;
+      &lt;effectiveTime&gt;
+        &lt;low value="2012"/&gt;
+        &lt;high value="2012"/&gt;
+      &lt;/effectiveTime&gt;
+    &lt;/observation&gt;
   &lt;/entryRelationship&gt;
   &lt;entryRelationship&gt;
-    &lt;act/&gt;
+    &lt;act&gt;
+      &lt;id root="MDHT" extension="1361024227"/&gt;
+      &lt;code code="1398972290"/&gt;
+      &lt;statusCode code="completed"/&gt;
+      &lt;effectiveTime&gt;
+        &lt;low value="2012"/&gt;
+        &lt;high value="2012"/&gt;
+      &lt;/effectiveTime&gt;
+    &lt;/act&gt;
   &lt;/entryRelationship&gt;
   &lt;entryRelationship&gt;
-    &lt;observation/&gt;
+    &lt;observation&gt;
+      &lt;id root="MDHT" extension="796833892"/&gt;
+      &lt;code code="1924830959"/&gt;
+      &lt;statusCode code="completed"/&gt;
+      &lt;effectiveTime&gt;
+        &lt;low value="2012"/&gt;
+        &lt;high value="2012"/&gt;
+      &lt;/effectiveTime&gt;
+      &lt;entryRelationship&gt;
+        &lt;observation&gt;
+          &lt;id root="MDHT" extension="1443305634"/&gt;
+          &lt;code code="1197246372"/&gt;
+          &lt;statusCode code="completed"/&gt;
+          &lt;effectiveTime&gt;
+            &lt;low value="2012"/&gt;
+            &lt;high value="2012"/&gt;
+          &lt;/effectiveTime&gt;
+        &lt;/observation&gt;
+      &lt;/entryRelationship&gt;
+    &lt;/observation&gt;
   &lt;/entryRelationship&gt;
 &lt;/substanceadministration&gt;</pre>
 
