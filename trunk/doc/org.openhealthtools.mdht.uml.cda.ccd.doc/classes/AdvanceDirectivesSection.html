@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html
   PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html lang="en-us" xml:lang="en-us">
+<html xml:lang="en-us" lang="en-us">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 <meta name="copyright" content="(C) Copyright 2005"/>
@@ -18,7 +18,7 @@
 <link rel="stylesheet" type="text/css" href="../css/commonltr.css"/>
 <title>Advance Directives Section</title>
 </head>
-<body id="classId"><a name="classId"><!-- --></a>
+<body id="classId">
 <div>
 	<p><b>Development Only.</b> The Normative content for these specifications
 	may be found on the HL7, IHE, and HITSP web sites.</p>
@@ -36,6 +36,7 @@
 
 
 
+
 <ol class="ol">
 <li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt><tt class="ph tt"><strong class="ph b">/@code</strong>="42348-3" </tt><em class="ph i">Advance directives</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF-78, CONF-79)
 </li>
@@ -43,21 +44,18 @@
 <li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">title</strong></tt> (CONF-80)
 </li>
 
-<li class="li"><strong class="ph b">SHALL</strong> contain at least one [1..*] <tt class="ph tt"><strong class="ph b">entry</strong></tt>, such that
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">text</strong></tt>
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain at least one [1..*] <tt class="ph tt"><strong class="ph b">entry</strong></tt>
 <ol class="ol" type="a">
 <li class="li">Contains exactly one [1..1] <a class="xref" href="AdvanceDirectiveObservation.html" title="[Observation: templateId 2.16.840.1.113883.10.20.1.17]">Advance Directive Observation</a> (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.1.17</tt>)</li>
 </ol>
 </li>
 
-<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">text</strong></tt>
-</li>
-
-<li class="li"><strong class="ph b">SHOULD</strong> satisfy: Contains a case-insensitive language-insensitive text string containing 'advance directives'. (CONF-81)<ul class="ul"><li class="li">UNIMPLEMENTABLE</li>
-</ul>
-</li>
+<li class="li"><strong class="ph b">SHOULD</strong> satisfy: Contains a case-insensitive language-insensitive text string containing 'advance directives'. (CONF-81)</li>
 
 </ol>
-
 
 <p class="p"> </p>
 
@@ -67,25 +65,39 @@
 
 <pre class="pre codeblock">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
 &lt;section xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd"&gt;
-  &lt;templateId root="2.16.840.1.113883.10.20.1.1"/&gt;
-  &lt;id root="1530694453"/&gt;
-  &lt;code code="42348-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Advance directives"/&gt;
-  &lt;title/&gt;
+  &lt;id root="MDHT" extension="777522901"/&gt;
+  &lt;title&gt;TEXT FOR TITLE&lt;/title&gt;
   &lt;text/&gt;
   &lt;entry&gt;
-    &lt;observation classCode="OBS" moodCode="EVN"&gt;
-      &lt;templateId root="2.16.840.1.113883.10.20.1.17"/&gt;
-      &lt;id root="1316482905"/&gt;
-      &lt;code code="862749367"/&gt;
-      &lt;text/&gt;
-      &lt;statusCode code="completed"/&gt;
+    &lt;observation&gt;
+      &lt;id root="MDHT" extension="1215080141"/&gt;
+      &lt;code code="574050092"/&gt;
+      &lt;text&gt;Text Value&lt;/text&gt;
       &lt;effectiveTime&gt;
-        &lt;low value="2011"/&gt;
-        &lt;high value="2011"/&gt;
+        &lt;low value="2012"/&gt;
+        &lt;high value="2012"/&gt;
       &lt;/effectiveTime&gt;
+      &lt;participant&gt;
+        &lt;time&gt;
+          &lt;low value="2012"/&gt;
+          &lt;high value="2012"/&gt;
+        &lt;/time&gt;
+        &lt;participantRole/&gt;
+      &lt;/participant&gt;
       &lt;entryRelationship&gt;
-        &lt;observation/&gt;
+        &lt;observation&gt;
+          &lt;id root="MDHT" extension="1918311613"/&gt;
+          &lt;code code="23915214"/&gt;
+          &lt;text&gt;Text Value&lt;/text&gt;
+          &lt;effectiveTime&gt;
+            &lt;low value="2012"/&gt;
+            &lt;high value="2012"/&gt;
+          &lt;/effectiveTime&gt;
+        &lt;/observation&gt;
       &lt;/entryRelationship&gt;
+      &lt;reference&gt;
+        &lt;externalDocument/&gt;
+      &lt;/reference&gt;
     &lt;/observation&gt;
   &lt;/entry&gt;
 &lt;/section&gt;</pre>

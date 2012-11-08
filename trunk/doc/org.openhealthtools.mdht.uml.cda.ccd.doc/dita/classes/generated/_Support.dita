@@ -2,17 +2,27 @@
 <!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
 <topic id="classId" xml:lang="en-us">
 <title>Support - conformance rules</title>
+<shortdesc id="shortdesc"><i>Abstract</i> </shortdesc>
+<prolog id="prolog">
+</prolog>
 <body>
+<section id="knownSubclasses">
+<p>Known Subclasses: <xref href="../SupportParticipant.dita">Support Participant</xref>, <xref href="../SupportGuardian.dita">Support Guardian</xref></p>
+</section>
 <section id="description">
 <p>Represents the patient's sources of support such as immediate family, relatives, and guardian at the time the summarization is generated. Support information also includes next of kin, caregivers, and support organizations. At a minimum, key support contacts relative to healthcare decisions, including next of kin, should be included.</p>
 <p>CDA R2 represents a patient's guardian with the CDA Header Guardian class. Other Supporters are represented as participant participations in the CDA Header.</p>
 </section>
 <ol id="conformance">
+<li><b>SHALL</b> contain exactly one [1..1] templateId (  ) such that it <ol><li><b>SHALL</b> contain exactly one [1..1] <b>@root</b>=""</li></ol></li>
 <li></li>
 </ol>
 <ol id="aggregate">
 <li></li>
 </ol>
-<codeblock id="example"><![CDATA[]]></codeblock>
+<codeblock id="example"><![CDATA[Error: Missing Runtime Class]]></codeblock>
+<section id="changes">
+</section>
+<p><ph id="classformalname">Support</ph></p>
 </body>
 </topic>

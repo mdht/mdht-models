@@ -8,9 +8,12 @@
 <resourceid id="2.16.840.1.113883.10.20.1.29"/>
 </prolog>
 <body>
+<section id="knownSubclasses">
+</section>
 <section id="description">
 </section>
 <ol id="conformance">
+<li><b>SHALL</b> contain exactly one [1..1] templateId ( CONF-427 ) such that it <ol><li><b>SHALL</b> contain exactly one [1..1] <b>@root</b>="2.16.840.1.113883.10.20.1.29"</li></ol></li>
 <li><b>SHALL</b> conform to <xref href="../ProcedureActivity.dita">Procedure Activity</xref></li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF-428)
 </li>
@@ -20,37 +23,38 @@
 </li>
 <li><b>SHALL</b> contain at least one [1..*] <tt><b>id</b></tt> (CONF-429)
 </li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>statusCode</b></tt>, which <b>SHALL</b> be selected from ValueSet<tt></tt><b> STATIC</b> (CONF-430, CONF-431)
-<ul><li>Need to add value set to term model for 
-The value for "[Act | Observation | Procedure] / statusCode" in a procedure activity  SHALL be selected from ValueSet 2.16.840.1.113883.1.11.20.15 ProcedureStatusCode   STATIC 20061017.</li></ul></li>
-<li><b>MAY</b> contain at least one [1..*] <tt><b>encounterLocation</b></tt> (CONF-437), such that
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>statusCode</b></tt>, where the @code <b>SHALL</b> be selected from ValueSet<tt></tt><b> STATIC</b> (CONF-430, CONF-431)
+<ul><li><p><lines><i>Need to add value set to term model for 
+The value for "[Act | Observation | Procedure] / statusCode" in a procedure activity  SHALL be selected from ValueSet 2.16.840.1.113883.1.11.20.15 ProcedureStatusCode   STATIC 20061017.</i></lines></p></li></ul></li>
+<li><b>MAY</b> contain at least one [1..*] <tt><b>participant</b></tt> (CONF-437)
 <ol>
 <li>Contains exactly one [1..1] <xref href="../EncounterLocation.dita">Encounter Location</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.45</tt>)</li></ol></li>
-<li><b>MAY</b> contain at least one [1..*] <tt><b>performer2</b></tt> (CONF-438), such that
-</li>
-<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> (CONF-439, CONF-440), such that
+<li><b>MAY</b> contain at least one [1..*] <tt><b>performer</b></tt> (CONF-438)
 <ol>
-<li>Contains <tt><b>@typeCode="</b>RSON" </tt><i>RSON (has reason)</i></li>
+<li>Contains exactly one [1..1] CDA Performer2</li></ol></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> (CONF-439, CONF-440)
+<ol>
+<li>Contains <tt><b>@typeCode="</b>RSON" </tt><i>RSON</i></li>
 <li>Contains exactly one [1..1] <xref href="../ProblemAct.dita">Problem Act</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.27</tt>)</li></ol></li>
-<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> (CONF-439, CONF-440), such that
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> (CONF-439, CONF-440)
 <ol>
-<li>Contains <tt><b>@typeCode="</b>RSON" </tt><i>RSON (has reason)</i></li>
+<li>Contains <tt><b>@typeCode="</b>RSON" </tt><i>RSON</i></li>
 <li>Contains exactly one [1..1] <xref href="../ProblemObservation.dita">Problem Observation</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.28</tt>)</li></ol></li>
-<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> (CONF-445), such that
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> (CONF-445)
 <ol>
-<li>Contains <tt><b>@typeCode="</b>SUBJ" </tt><i>SUBJ (has subject)</i></li>
+<li>Contains <tt><b>@typeCode="</b>SUBJ" </tt><i>SUBJ</i></li>
 <li>Contains exactly one [1..1] <xref href="../AgeObservation.dita">Age Observation</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.38</tt>)</li></ol></li>
-<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> (CONF-446), such that
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> (CONF-446)
 <ol>
-<li>Contains <tt><b>@typeCode="</b>COMP" </tt><i>COMP (has component)</i></li>
+<li>Contains <tt><b>@typeCode="</b>COMP" </tt><i>COMP</i></li>
 <li>Contains exactly one [1..1] <xref href="../MedicationActivity.dita">Medication Activity</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.24</tt>)</li></ol></li>
-<li><b>MAY</b> contain at least one [1..*] <tt><b>entryRelationship</b></tt> (CONF-441), such that
+<li><b>MAY</b> contain at least one [1..*] <tt><b>entryRelationship</b></tt> (CONF-441)
 <ol>
 <li>Contains exactly one [1..1] <xref href="../PatientInstruction.dita">Patient Instruction</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.49</tt>)</li></ol></li>
 </ol>
 <ol id="aggregate">
 <li><b>SHALL</b> conform to <xref href="../ProcedureActivity.dita">Procedure Activity</xref></li>
-<li>Contains exactly one [1..1] <tt><b>@classCode</b></tt>, where its data type is x_ActClassDocumentEntryAct
+<li>Contains exactly one [1..1] <tt><b>@classCode</b></tt> with data type x_ActClassDocumentEntryAct
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF-428)
 </li>
@@ -58,75 +62,200 @@ The value for "[Act | Observation | Procedure] / statusCode" in a procedure acti
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF-433, CONF-434)
 </li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>statusCode</b></tt>, which <b>SHALL</b> be selected from ValueSet<tt></tt><b> STATIC</b> (CONF-430, CONF-431)
-<ul><li>Need to add value set to term model for 
-The value for "[Act | Observation | Procedure] / statusCode" in a procedure activity  SHALL be selected from ValueSet 2.16.840.1.113883.1.11.20.15 ProcedureStatusCode   STATIC 20061017.</li></ul></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>statusCode</b></tt>, where the @code <b>SHALL</b> be selected from ValueSet<tt></tt><b> STATIC</b> (CONF-430, CONF-431)
+<ul><li><p><lines><i>Need to add value set to term model for 
+The value for "[Act | Observation | Procedure] / statusCode" in a procedure activity  SHALL be selected from ValueSet 2.16.840.1.113883.1.11.20.15 ProcedureStatusCode   STATIC 20061017.</i></lines></p></li></ul></li>
 <li><b>SHOULD</b> contain zero or one [0..1] <tt><b>effectiveTime</b></tt> (CONF-432)
 </li>
-<li><b>MAY</b> contain at least one [1..*] <tt><b>encounterLocation</b></tt> (CONF-437), such that
+<li><b>MAY</b> contain at least one [1..*] <tt><b>participant</b></tt> (CONF-437)
 <ol>
 <li>Contains exactly one [1..1] <xref href="../EncounterLocation.dita">Encounter Location</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.45</tt>)</li></ol></li>
-<li><b>MAY</b> contain at least one [1..*] <tt><b>performer2</b></tt> (CONF-438), such that
-</li>
-<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> (CONF-439, CONF-440), such that
+<li><b>MAY</b> contain at least one [1..*] <tt><b>performer</b></tt> (CONF-438)
 <ol>
-<li>Contains <tt><b>@typeCode="</b>RSON" </tt><i>RSON (has reason)</i></li>
+<li>Contains exactly one [1..1] CDA Performer2</li></ol></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> (CONF-439, CONF-440)
+<ol>
+<li>Contains <tt><b>@typeCode="</b>RSON" </tt><i>RSON</i></li>
 <li>Contains exactly one [1..1] <xref href="../ProblemAct.dita">Problem Act</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.27</tt>)</li></ol></li>
-<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> (CONF-439, CONF-440), such that
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> (CONF-439, CONF-440)
 <ol>
-<li>Contains <tt><b>@typeCode="</b>RSON" </tt><i>RSON (has reason)</i></li>
+<li>Contains <tt><b>@typeCode="</b>RSON" </tt><i>RSON</i></li>
 <li>Contains exactly one [1..1] <xref href="../ProblemObservation.dita">Problem Observation</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.28</tt>)</li></ol></li>
-<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> (CONF-445), such that
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> (CONF-445)
 <ol>
-<li>Contains <tt><b>@typeCode="</b>SUBJ" </tt><i>SUBJ (has subject)</i></li>
+<li>Contains <tt><b>@typeCode="</b>SUBJ" </tt><i>SUBJ</i></li>
 <li>Contains exactly one [1..1] <xref href="../AgeObservation.dita">Age Observation</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.38</tt>)</li></ol></li>
-<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> (CONF-446), such that
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> (CONF-446)
 <ol>
-<li>Contains <tt><b>@typeCode="</b>COMP" </tt><i>COMP (has component)</i></li>
+<li>Contains <tt><b>@typeCode="</b>COMP" </tt><i>COMP</i></li>
 <li>Contains exactly one [1..1] <xref href="../MedicationActivity.dita">Medication Activity</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.24</tt>)</li></ol></li>
-<li><b>MAY</b> contain at least one [1..*] <tt><b>entryRelationship</b></tt> (CONF-441), such that
+<li><b>MAY</b> contain at least one [1..*] <tt><b>entryRelationship</b></tt> (CONF-441)
 <ol>
 <li>Contains exactly one [1..1] <xref href="../PatientInstruction.dita">Patient Instruction</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.49</tt>)</li></ol></li>
 <li>A procedure activity <b>MAY</b> have one or more associated consents, represented in the CCD Header as ClinicalDocument / authorization / consent. (CONF-442)</li>
-<li>A procedure activity <b>SHALL</b> contain one or more sources of information, as defined in section 5.2 Source. (CONF-447)<ul><li>UNIMPLEMENTABLE</li></ul></li>
+<li>A procedure activity <b>SHALL</b> contain one or more sources of information, as defined in section 5.2 Source. (CONF-447)</li>
 </ol>
+<section id="tableconformance"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="8" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><colspec colname="col2" colnum="2" /><colspec colname="col3" colnum="3" /><colspec colname="col4" colnum="4" /><colspec colname="col5" colnum="5" /><colspec colname="col6" colnum="6" /><colspec colname="col7" colnum="7" /><thead> <row><entry namest="col0" nameend="col7" >ccd::ProcedureActivityAct</entry>  </row>  <row><entry namest="col0" nameend="col7" >cda::act[cda:templateId/@root = ]/</entry>  </row>  <row><entry>Name</entry><entry>XPath</entry><entry>Cardinality</entry><entry>Severity</entry><entry>Nullable</entry><entry>Data Type</entry><entry>Conformance</entry><entry>Value(s)</entry></row></thead><tbody><row><entry>moodCode</entry><entry>@moodCode</entry><entry>1..1</entry><entry>SHALL</entry><entry>NO</entry><entry>x_DocumentActMood</entry><entry>CONF-428</entry><entry> APT</entry></row> 
+<row><entry>code</entry><entry>code</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>CD</entry><entry>CONF-433CONF-434</entry><entry> </entry></row> 
+<row><entry>effectiveTime</entry><entry>effectiveTime</entry><entry>0..1</entry><entry>SHOULD</entry><entry>YES</entry><entry>IVL_TS</entry><entry>CONF-432</entry><entry> </entry></row> 
+<row><entry>id</entry><entry>id</entry><entry>1..*</entry><entry>SHALL</entry><entry>YES</entry><entry>II</entry><entry>CONF-429</entry><entry> </entry></row> 
+<row><entry>statusCode</entry><entry>statusCode</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>CS</entry><entry>CONF-430CONF-431</entry><entry> </entry></row> 
+<row><entry>ageObservation</entry><entry>ageObservation</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>AgeObservation</entry><entry>CONF-445</entry><entry> </entry></row> 
+<row><entry>encounterLocation</entry><entry>encounterLocation</entry><entry>1..*</entry><entry>MAY</entry><entry>YES</entry><entry>EncounterLocation</entry><entry>CONF-437</entry><entry> </entry></row> 
+<row><entry>medicationActivity</entry><entry>medicationActivity</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>MedicationActivity</entry><entry>CONF-446</entry><entry> </entry></row> 
+<row><entry>patientInstruction</entry><entry>patientInstruction</entry><entry>1..*</entry><entry>MAY</entry><entry>YES</entry><entry>PatientInstruction</entry><entry>CONF-441</entry><entry> </entry></row> 
+<row><entry>performer2</entry><entry>performer2</entry><entry>1..*</entry><entry>MAY</entry><entry>YES</entry><entry>Performer2</entry><entry>CONF-438</entry><entry> </entry></row> 
+<row><entry>problemAct</entry><entry>problemAct</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>ProblemAct</entry><entry>CONF-439CONF-440</entry><entry> </entry></row> 
+<row><entry>problemObservation</entry><entry>problemObservation</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>ProblemObservation</entry><entry>CONF-439CONF-440</entry><entry> </entry></row> 
+</tbody></tgroup></table></p></section>
 <codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
-<act xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd" moodCode="EVN">
-  <templateId root="2.16.840.1.113883.10.20.1.29"/>
-  <id root="888622953"/>
-  <code code="1175023912"/>
-  <statusCode code="completed"/>
+<act xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd">
+  <id root="MDHT" extension="703989219"/>
+  <code code="660928613"/>
   <effectiveTime>
-    <low value="2011"/>
-    <high value="2011"/>
+    <low value="2012"/>
+    <high value="2012"/>
   </effectiveTime>
+  <performer/>
+  <participant>
+    <participantRole/>
+  </participant>
   <entryRelationship>
-    <act classCode="ACT" moodCode="EVN">
-      <templateId root="2.16.840.1.113883.10.20.1.27"/>
-      <id root="351165966"/>
-      <code nullFlavor="NA"/>
-      <statusCode code="completed"/>
+    <act>
+      <id root="MDHT" extension="1617067314"/>
+      <code code="1725133380"/>
       <effectiveTime>
-        <low value="2011"/>
-        <high value="2011"/>
+        <low value="2012"/>
+        <high value="2012"/>
       </effectiveTime>
       <entryRelationship>
-        <observation/>
+        <observation>
+          <id root="MDHT" extension="323871582"/>
+          <code code="1672122934"/>
+          <effectiveTime>
+            <low value="2012"/>
+            <high value="2012"/>
+          </effectiveTime>
+        </observation>
       </entryRelationship>
     </act>
   </entryRelationship>
   <entryRelationship>
-    <observation/>
+    <observation>
+      <id root="MDHT" extension="10066393"/>
+      <code code="1221984521"/>
+      <effectiveTime>
+        <low value="2012"/>
+        <high value="2012"/>
+      </effectiveTime>
+      <entryRelationship>
+        <observation>
+          <id root="MDHT" extension="1552206215"/>
+          <code code="191136640"/>
+          <effectiveTime>
+            <low value="2012"/>
+            <high value="2012"/>
+          </effectiveTime>
+        </observation>
+      </entryRelationship>
+      <entryRelationship>
+        <observation>
+          <id root="MDHT" extension="1930307114"/>
+          <code code="216105106"/>
+          <effectiveTime>
+            <low value="2012"/>
+            <high value="2012"/>
+          </effectiveTime>
+        </observation>
+      </entryRelationship>
+      <entryRelationship>
+        <observation>
+          <id root="MDHT" extension="27619823"/>
+          <code code="420169819"/>
+          <effectiveTime>
+            <low value="2012"/>
+            <high value="2012"/>
+          </effectiveTime>
+        </observation>
+      </entryRelationship>
+    </observation>
   </entryRelationship>
   <entryRelationship>
-    <observation/>
+    <observation>
+      <id root="MDHT" extension="135543796"/>
+      <code code="1028113092"/>
+      <effectiveTime>
+        <low value="2012"/>
+        <high value="2012"/>
+      </effectiveTime>
+    </observation>
   </entryRelationship>
   <entryRelationship>
-    <substanceAdministration/>
+    <substanceAdministration>
+      <id root="MDHT" extension="1474543897"/>
+      <code code="1069607371"/>
+      <effectiveTime value="20121108"/>
+      <consumable/>
+      <performer/>
+      <entryRelationship>
+        <observation>
+          <id root="MDHT" extension="767040455"/>
+          <code code="1605497826"/>
+          <effectiveTime>
+            <low value="2012"/>
+            <high value="2012"/>
+          </effectiveTime>
+        </observation>
+      </entryRelationship>
+      <entryRelationship>
+        <observation>
+          <id root="MDHT" extension="1321231555"/>
+          <code code="331313309"/>
+          <effectiveTime>
+            <low value="2012"/>
+            <high value="2012"/>
+          </effectiveTime>
+        </observation>
+      </entryRelationship>
+      <entryRelationship>
+        <act>
+          <id root="MDHT" extension="410742716"/>
+          <code code="1733297435"/>
+          <effectiveTime>
+            <low value="2012"/>
+            <high value="2012"/>
+          </effectiveTime>
+        </act>
+      </entryRelationship>
+      <entryRelationship>
+        <observation>
+          <id root="MDHT" extension="117010216"/>
+          <code code="2027100134"/>
+          <effectiveTime>
+            <low value="2012"/>
+            <high value="2012"/>
+          </effectiveTime>
+          <entryRelationship>
+            <observation/>
+          </entryRelationship>
+        </observation>
+      </entryRelationship>
+    </substanceAdministration>
   </entryRelationship>
   <entryRelationship>
-    <act/>
+    <act>
+      <id root="MDHT" extension="87209896"/>
+      <code code="239934128"/>
+      <effectiveTime>
+        <low value="2012"/>
+        <high value="2012"/>
+      </effectiveTime>
+    </act>
   </entryRelationship>
 </act>]]></codeblock>
+<section id="changes">
+</section>
+<p><ph id="classformalname">Procedure Activity Act</ph></p>
+<p id="shortdesc">[Act: templateId <tt>2.16.840.1.113883.10.20.1.29</tt>]</p>
 </body>
 </topic>

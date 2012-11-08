@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html
   PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html lang="en-us" xml:lang="en-us">
+<html xml:lang="en-us" lang="en-us">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 <meta name="copyright" content="(C) Copyright 2005"/>
@@ -18,7 +18,7 @@
 <link rel="stylesheet" type="text/css" href="../css/commonltr.css"/>
 <title>Functional Status Section</title>
 </head>
-<body id="classId"><a name="classId"><!-- --></a>
+<body id="classId">
 <div>
 	<p><b>Development Only.</b> The Normative content for these specifications
 	may be found on the HL7, IHE, and HITSP web sites.</p>
@@ -76,6 +76,7 @@
 
 
 
+
 <ol class="ol">
 <li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt><tt class="ph tt"><strong class="ph b">/@code</strong>="47420-5" </tt><em class="ph i">Functional status assessment</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF-124, CONF-125)
 </li>
@@ -86,67 +87,31 @@
 <li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">text</strong></tt>
 </li>
 
-<li class="li"><strong class="ph b">SHOULD</strong> satisfy: Contains one or more Problem Act and/or Result Organizer (CONF-123)<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: self.getEntryTargets(ccd::ProblemAct)-&gt;size() &gt; 0
-  or self.getEntryTargets(ccd::ResultOrganizer)-&gt;size() &gt; 0</pre>
-</li>
-</ul>
-</li>
+<li class="li"><strong class="ph b">SHOULD</strong> satisfy: Contains one or more Problem Act and/or Result Organizer (CONF-123)</li>
 
-<li class="li"><strong class="ph b">SHOULD</strong> satisfy: Contains a case-insensitive language-insensitive string containing 'functional status'. (CONF-127)<ul class="ul"><li class="li">UNIMPLEMENTABLE</li>
-</ul>
-</li>
+<li class="li"><strong class="ph b">SHOULD</strong> satisfy: Contains a case-insensitive language-insensitive string containing 'functional status'. (CONF-127)</li>
 
-<li class="li">problem observation or result observation in the functional status section <strong class="ph b">SHALL</strong> contain exactly one observation / code (CONF-128)<ul class="ul"><li class="li">UNIMPLEMENTABLE</li>
-</ul>
-<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: self.getObservations()-&gt;select(obs : cda::Observation | obs.oclIsKindOf(ccd::ProblemObservation) or obs.oclIsKindOf(ccd::ResultObservation))-&gt;forAll(ob : cda::Observation| ob.code-&gt;size() = 1)</pre>
-</li>
-</ul>
-</li>
+<li class="li">problem observation or result observation in the functional status section <strong class="ph b">SHALL</strong> contain exactly one observation / code (CONF-128)</li>
 
-<li class="li">The value for Observation / code in a problem observation or result observation in the functional status section <strong class="ph b">MAY</strong> be selected from ValueSet 2.16.840.1.113883.1.11.20.6 FunctionalStatusTypeCode STATIC 20061017 (CONF-129)<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: self.getObservations()-&gt;select(obs : cda::Observation | obs.oclIsKindOf(ccd::ProblemObservation) or obs.oclIsKindOf(ccd::ResultObservation))-&gt;forAll(ob : cda::Observation| ob.code.codeSystem = '2.16.840.1.113883.6.96')</pre>
-</li>
-</ul>
-</li>
+<li class="li">The value for Observation / code in a problem observation or result observation in the functional status section <strong class="ph b">MAY</strong> be selected from ValueSet 2.16.840.1.113883.1.11.20.6 FunctionalStatusTypeCode STATIC 20061017 (CONF-129)</li>
 
-<li class="li">If the functional status was collected using a standardized assessment instrument, then the instrument itself <strong class="ph b">SHOULD</strong> be represented in the Organizer / code of a result organizer, with a value selected from LOINC (codeSystem 2.16.840.1.113883.6.1) or SNOMED CT (codeSystem 2.16.840.1.113883.6.96) (CONF-130)<ul class="ul"><li class="li">UNIMPLEMENTABLE</li>
-</ul>
-</li>
+<li class="li">If the functional status was collected using a standardized assessment instrument, then the instrument itself <strong class="ph b">SHOULD</strong> be represented in the Organizer / code of a result organizer, with a value selected from LOINC (codeSystem 2.16.840.1.113883.6.1) or SNOMED CT (codeSystem 2.16.840.1.113883.6.96) (CONF-130)</li>
 
-<li class="li">If the functional status was collected using a standardized assessment instrument, then the question within that instrument <strong class="ph b">SHOULD</strong> be represented in the Observation / code of a result observation, with a value selected from LOINC (codeSystem 2.16.840.1.113883.6.1) or SNOMED CT (codeSystem 2.16.840.1.113883.6.96). (CONF-131)<ul class="ul"><li class="li">UNIMPLEMENTABLE</li>
-</ul>
-</li>
+<li class="li">If the functional status was collected using a standardized assessment instrument, then the question within that instrument <strong class="ph b">SHOULD</strong> be represented in the Observation / code of a result observation, with a value selected from LOINC (codeSystem 2.16.840.1.113883.6.1) or SNOMED CT (codeSystem 2.16.840.1.113883.6.96). (CONF-131)</li>
 
-<li class="li">If the functional status was collected using a standardized assessment instrument containing questions with enumerated values as answers, then the answer <strong class="ph b">SHOULD</strong> be represented in the Observation / value of a result observation (CONF-132)<ul class="ul"><li class="li">UNIMPLEMENTABLE</li>
-</ul>
-</li>
+<li class="li">If the functional status was collected using a standardized assessment instrument containing questions with enumerated values as answers, then the answer <strong class="ph b">SHOULD</strong> be represented in the Observation / value of a result observation (CONF-132)</li>
 
-<li class="li">If Observation / value in a result observation in the functional status section is of data type CE or CD, then it <strong class="ph b">SHOULD</strong> use the same code system used to code the question in Observation / code. (CONF-133)<ul class="ul"><li class="li">UNIMPLEMENTABLE</li>
-</ul>
-</li>
+<li class="li">If Observation / value in a result observation in the functional status section is of data type CE or CD, then it <strong class="ph b">SHOULD</strong> use the same code system used to code the question in Observation / code. (CONF-133)</li>
 
-<li class="li">Observation / value in a result observation in the functional status section <strong class="ph b">MAY</strong> be of datatype CE or CD and <strong class="ph b">MAY</strong> contain one or more Observation / value / translation, to represent equivalent values from other code systems. (CONF-134)<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: self.getObservations()-&gt;select(o | o.value-&gt;select(v | v.oclIsKindOf(datatypes::CD)  or  v.oclIsKindOf(datatypes::CE) ) -&gt;isEmpty())-&gt;isEmpty()</pre>
-</li>
-</ul>
-</li>
+<li class="li">Observation / value in a result observation in the functional status section <strong class="ph b">MAY</strong> be of datatype CE or CD and <strong class="ph b">MAY</strong> contain one or more Observation / value / translation, to represent equivalent values from other code systems. (CONF-134)</li>
 
-<li class="li">A problem observation or result observation in the functional status section <strong class="ph b">MAY</strong> use codes from the International Classification of Functioning, Disability, and Health (ICF, http://www.who.int/classifications/icf/en/) (codeSystem 2.16.840.1.113883.6.254). (CONF-135)<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: self.getObservations()-&gt;select(o|o.code.codeSystem &lt;&gt; '2.16.840.1.113883.6.254')-&gt;isEmpty()</pre>
-</li>
-</ul>
-</li>
+<li class="li">A problem observation or result observation in the functional status section <strong class="ph b">MAY</strong> use codes from the International Classification of Functioning, Disability, and Health (ICF, http://www.who.int/classifications/icf/en/) (codeSystem 2.16.840.1.113883.6.254). (CONF-135)</li>
 
-<li class="li">A problem observation in the functional status section <strong class="ph b">SHALL</strong> contain exactly one status of functional status observation (CONF-136)<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: self.getObservations()-&gt;select(obs : cda::Observation | (obs.oclIsKindOf(ccd::ResultObservation) or obs.oclIsKindOf(ccd::ProblemObservation)))-&gt;forAll(ob : cda::Observation | ob.getObservations()-&gt;select(o: cda::Observation | o.oclIsKindOf(ccd::FunctionalStatusObservation))-&gt;size() = 1)</pre>
-</li>
-</ul>
-</li>
+<li class="li">A problem observation in the functional status section <strong class="ph b">SHALL</strong> contain exactly one status of functional status observation (CONF-136)</li>
 
-<li class="li">A result observation in the functional status section <strong class="ph b">SHALL</strong> contain exactly one status of functional status observation. (CONF-137)<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: self.getObservations()-&gt;select(obs : cda::Observation | (obs.oclIsKindOf(ccd::ResultObservation) or obs.oclIsKindOf(ccd::ProblemObservation)))-&gt;
-forAll(ob : cda::Observation | ob.getObservations()-&gt;select(o: cda::Observation | o.oclIsKindOf(ccd::FunctionalStatusObservation))-&gt;size() = 1)</pre>
-</li>
-</ul>
-</li>
+<li class="li">A result observation in the functional status section <strong class="ph b">SHALL</strong> contain exactly one status of functional status observation. (CONF-137)</li>
 
 </ol>
-
 
 <p class="p"> </p>
 
@@ -156,10 +121,8 @@ forAll(ob : cda::Observation | ob.getObservations()-&gt;select(o: cda::Observati
 
 <pre class="pre codeblock">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
 &lt;section xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd"&gt;
-  &lt;templateId root="2.16.840.1.113883.10.20.1.5"/&gt;
-  &lt;id root="1797220716"/&gt;
-  &lt;code code="47420-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Functional status assessment"/&gt;
-  &lt;title/&gt;
+  &lt;id root="MDHT" extension="13552874"/&gt;
+  &lt;title&gt;TEXT FOR TITLE&lt;/title&gt;
   &lt;text/&gt;
 &lt;/section&gt;</pre>
 

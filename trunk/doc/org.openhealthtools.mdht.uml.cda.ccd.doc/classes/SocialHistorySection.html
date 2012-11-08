@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html
   PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html lang="en-us" xml:lang="en-us">
+<html xml:lang="en-us" lang="en-us">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 <meta name="copyright" content="(C) Copyright 2005"/>
@@ -18,7 +18,7 @@
 <link rel="stylesheet" type="text/css" href="../css/commonltr.css"/>
 <title>Social History Section</title>
 </head>
-<body id="classId"><a name="classId"><!-- --></a>
+<body id="classId">
 <div>
 	<p><b>Development Only.</b> The Normative content for these specifications
 	may be found on the HL7, IHE, and HITSP web sites.</p>
@@ -48,6 +48,7 @@ The ASTM CCR includes 'administrative data (ADT) such as marital status, ethnici
 
 
 
+
 <ol class="ol">
 <li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt><tt class="ph tt"><strong class="ph b">/@code</strong>="29762-2" </tt><em class="ph i">Social history</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF-233, CONF-234)
 </li>
@@ -58,48 +59,27 @@ The ASTM CCR includes 'administrative data (ADT) such as marital status, ethnici
 <li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">text</strong></tt>
 </li>
 
-<li class="li"><strong class="ph b">SHOULD</strong> contain zero or more [0..*] <tt class="ph tt"><strong class="ph b">entry</strong></tt>, such that
+<li class="li"><strong class="ph b">SHOULD</strong> contain zero or more [0..*] <tt class="ph tt"><strong class="ph b">entry</strong></tt>
 <ol class="ol" type="a">
 <li class="li">Contains exactly one [1..1] <a class="xref" href="SocialHistoryObservation.html" title="[Observation: templateId 2.16.840.1.113883.10.20.1.33]">Social History Observation</a> (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.1.33</tt>)</li>
 </ol>
 </li>
 
-<li class="li"><strong class="ph b">SHOULD</strong> satisfy: Contains a case-insensitive language-insensitive string containing 'social history'. (CONF-236)<ul class="ul"><li class="li">UNIMPLEMENTABLE</li>
-</ul>
-</li>
+<li class="li"><strong class="ph b">SHOULD</strong> satisfy: Contains a case-insensitive language-insensitive string containing 'social history'. (CONF-236)</li>
 
-<li class="li">Marital status <strong class="ph b">SHOULD</strong> be represented as ClinicalDocument / recordTarget / patientRole / patient / maritalStatusCode. Additional information <strong class="ph b">MAY</strong> be represented as social history observations (CONF-250)<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: self.getClinicalDocument().recordTarget-&gt;select(r | not r.patientRole.patient.maritalStatusCode.hasContent() )-&gt;isEmpty()</pre>
-</li>
-</ul>
-</li>
+<li class="li">Marital status <strong class="ph b">SHOULD</strong> be represented as ClinicalDocument / recordTarget / patientRole / patient / maritalStatusCode. Additional information <strong class="ph b">MAY</strong> be represented as social history observations (CONF-250)</li>
 
-<li class="li">Religious affiliation <strong class="ph b">SHOULD</strong> be represented as ClinicalDocument / recordTarget / patientRole / patient / religiousAffiliationCode. Additional information <strong class="ph b">MAY</strong> be represented as social history observations (CONF-251)<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: self.getClinicalDocument().recordTarget-&gt;select(r | not r.patientRole.patient.religiousAffiliationCode.hasContent() )-&gt;isEmpty()</pre>
-</li>
-</ul>
-</li>
+<li class="li">Religious affiliation <strong class="ph b">SHOULD</strong> be represented as ClinicalDocument / recordTarget / patientRole / patient / religiousAffiliationCode. Additional information <strong class="ph b">MAY</strong> be represented as social history observations (CONF-251)</li>
 
-<li class="li">A patients race <strong class="ph b">SHOULD</strong> be represented as ClinicalDocument / recordTarget / patientRole / patient / raceCode. Additional information <strong class="ph b">MAY</strong> be represented as social history observations (CONF-252)<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: self.getClinicalDocument().recordTarget-&gt;select(r | not r.patientRole.patient.raceCode.hasContent() )-&gt;isEmpty()</pre>
-</li>
-</ul>
-</li>
+<li class="li">A patients race <strong class="ph b">SHOULD</strong> be represented as ClinicalDocument / recordTarget / patientRole / patient / raceCode. Additional information <strong class="ph b">MAY</strong> be represented as social history observations (CONF-252)</li>
 
-<li class="li">The value for ClinicalDocument / recordTarget / patientRole / patient / raceCode <strong class="ph b">MAY</strong> be selected from codeSystem 2.16.840.1.113883.5.104 (Race) (CONF-253)<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: self.getClinicalDocument().recordTarget-&gt;forAll(r | r.patientRole.patient.raceCode.codeSystem = '2.16.840.1.113883.5.104' )</pre>
-</li>
-</ul>
-</li>
+<li class="li">The value for ClinicalDocument / recordTarget / patientRole / patient / raceCode <strong class="ph b">MAY</strong> be selected from codeSystem 2.16.840.1.113883.5.104 (Race) (CONF-253)</li>
 
-<li class="li">A patients ethnicity <strong class="ph b">SHOULD</strong> be represented as ClinicalDocument / recordTarget / patientRole / patient / ethnicGroupCode. Additional information <strong class="ph b">MAY</strong> be represented as social history observations. (CONF-254)<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: self.getClinicalDocument().recordTarget-&gt;select(r | not r.patientRole.patient.ethnicGroupCode.hasContent() )-&gt;isEmpty()</pre>
-</li>
-</ul>
-</li>
+<li class="li">A patients ethnicity <strong class="ph b">SHOULD</strong> be represented as ClinicalDocument / recordTarget / patientRole / patient / ethnicGroupCode. Additional information <strong class="ph b">MAY</strong> be represented as social history observations. (CONF-254)</li>
 
-<li class="li">The value for ClinicalDocument / recordTarget / patientRole / patient / ethnicGroupCode <strong class="ph b">MAY</strong> be selected from codeSystem 2.16.840.1.113883.5.50 (Ethnicity). (CONF-255)<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: self.getClinicalDocument().recordTarget-&gt;forAll(r | r.patientRole.patient.ethnicGroupCode.codeSystem = '2.16.840.1.113883.5.50' )</pre>
-</li>
-</ul>
-</li>
+<li class="li">The value for ClinicalDocument / recordTarget / patientRole / patient / ethnicGroupCode <strong class="ph b">MAY</strong> be selected from codeSystem 2.16.840.1.113883.5.50 (Ethnicity). (CONF-255)</li>
 
 </ol>
-
 
 <p class="p"> </p>
 
@@ -109,27 +89,39 @@ The ASTM CCR includes 'administrative data (ADT) such as marital status, ethnici
 
 <pre class="pre codeblock">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
 &lt;section xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd"&gt;
-  &lt;templateId root="2.16.840.1.113883.10.20.1.15"/&gt;
-  &lt;id root="199682421"/&gt;
-  &lt;code code="29762-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Social history"/&gt;
-  &lt;title/&gt;
+  &lt;id root="MDHT" extension="473858150"/&gt;
+  &lt;title&gt;TEXT FOR TITLE&lt;/title&gt;
   &lt;text/&gt;
   &lt;entry&gt;
-    &lt;observation classCode="OBS" moodCode="EVN"&gt;
-      &lt;templateId root="2.16.840.1.113883.10.20.1.33"/&gt;
-      &lt;id root="3274948"/&gt;
-      &lt;code code="546177710"/&gt;
-      &lt;text/&gt;
-      &lt;statusCode code="completed"/&gt;
+    &lt;observation&gt;
+      &lt;id root="MDHT" extension="906157366"/&gt;
+      &lt;code code="2059672324"/&gt;
+      &lt;text&gt;Text Value&lt;/text&gt;
       &lt;effectiveTime&gt;
-        &lt;low value="2011"/&gt;
-        &lt;high value="2011"/&gt;
+        &lt;low value="2012"/&gt;
+        &lt;high value="2012"/&gt;
       &lt;/effectiveTime&gt;
       &lt;entryRelationship&gt;
-        &lt;observation/&gt;
+        &lt;observation&gt;
+          &lt;id root="MDHT" extension="1420291706"/&gt;
+          &lt;code code="1262789964"/&gt;
+          &lt;text&gt;Text Value&lt;/text&gt;
+          &lt;effectiveTime&gt;
+            &lt;low value="2012"/&gt;
+            &lt;high value="2012"/&gt;
+          &lt;/effectiveTime&gt;
+        &lt;/observation&gt;
       &lt;/entryRelationship&gt;
       &lt;entryRelationship&gt;
-        &lt;observation/&gt;
+        &lt;observation&gt;
+          &lt;id root="MDHT" extension="1132407584"/&gt;
+          &lt;code code="1246604305"/&gt;
+          &lt;text&gt;Text Value&lt;/text&gt;
+          &lt;effectiveTime&gt;
+            &lt;low value="2012"/&gt;
+            &lt;high value="2012"/&gt;
+          &lt;/effectiveTime&gt;
+        &lt;/observation&gt;
       &lt;/entryRelationship&gt;
     &lt;/observation&gt;
   &lt;/entry&gt;

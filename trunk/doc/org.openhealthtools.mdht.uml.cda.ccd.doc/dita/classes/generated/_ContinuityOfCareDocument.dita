@@ -8,240 +8,614 @@
 <resourceid id="2.16.840.1.113883.10.20.1"/>
 </prolog>
 <body>
+<section id="knownSubclasses">
+</section>
 <section id="description">
 </section>
 <ol id="conformance">
-<li><b>SHOULD</b> contain exactly one [1..1] <tt><b>component</b></tt> (CONF-140), such that
+<li><b>SHALL</b> contain exactly one [1..1] templateId ( CONF-7, CONF-8 ) such that it <ol><li><b>SHALL</b> contain exactly one [1..1] <b>@root</b>="2.16.840.1.113883.10.20.1"</li></ol></li>
+<li><b>SHOULD</b> contain exactly one [1..1] <tt><b>component</b></tt> (CONF-140)
 <ol>
 <li>Contains exactly one [1..1] <xref href="../ProblemSection.dita">Problem Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.11</tt>)</li></ol></li>
-<li><b>SHOULD</b> contain exactly one [1..1] <tt><b>component</b></tt> (CONF-184), such that
+<li><b>SHOULD</b> contain exactly one [1..1] <tt><b>component</b></tt> (CONF-184)
 <ol>
 <li>Contains exactly one [1..1] <xref href="../FamilyHistorySection.dita">Family History Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.4</tt>)</li></ol></li>
-<li><b>SHOULD</b> contain exactly one [1..1] <tt><b>component</b></tt> (CONF-232), such that
+<li><b>SHOULD</b> contain exactly one [1..1] <tt><b>component</b></tt> (CONF-232)
 <ol>
 <li>Contains exactly one [1..1] <xref href="../SocialHistorySection.dita">Social History Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.15</tt>)</li></ol></li>
-<li><b>SHOULD</b> contain exactly one [1..1] <tt><b>component</b></tt>, such that
+<li><b>SHOULD</b> contain exactly one [1..1] <tt><b>component</b></tt>
 <ol>
 <li>Contains exactly one [1..1] <xref href="../AlertsSection.dita">Alerts Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.2</tt>)</li></ol></li>
-<li><b>SHOULD</b> contain exactly one [1..1] <tt><b>component</b></tt> (CONF-298), such that
+<li><b>SHOULD</b> contain exactly one [1..1] <tt><b>component</b></tt> (CONF-298)
 <ol>
 <li>Contains exactly one [1..1] <xref href="../MedicationsSection.dita">Medications Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.8</tt>)</li></ol></li>
-<li><b>SHOULD</b> contain exactly one [1..1] <tt><b>component</b></tt> (CONF-388), such that
+<li><b>SHOULD</b> contain exactly one [1..1] <tt><b>component</b></tt> (CONF-388)
 <ol>
 <li>Contains exactly one [1..1] <xref href="../ResultsSection.dita">Results Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.14</tt>)</li></ol></li>
-<li><b>SHOULD</b> contain exactly one [1..1] <tt><b>component</b></tt>, such that
+<li><b>SHOULD</b> contain exactly one [1..1] <tt><b>component</b></tt>
 <ol>
 <li>Contains exactly one [1..1] <xref href="../ProceduresSection.dita">Procedures Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.12</tt>)</li></ol></li>
-<li><b>SHOULD</b> contain exactly one [1..1] <tt><b>component</b></tt>, such that
+<li><b>SHOULD</b> contain exactly one [1..1] <tt><b>component</b></tt>
 <ol>
 <li>Contains exactly one [1..1] <xref href="../EncountersSection.dita">Encounters Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.3</tt>)</li></ol></li>
-<li><b>SHOULD</b> contain exactly one [1..1] <tt><b>component</b></tt>, such that
+<li><b>SHOULD</b> contain exactly one [1..1] <tt><b>component</b></tt>
 <ol>
 <li>Contains exactly one [1..1] <xref href="../PlanOfCareSection.dita">Plan Of Care Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.10</tt>)</li></ol></li>
-<li><b>SHOULD</b> contain exactly one [1..1] <tt><b>component</b></tt> (CONF-376), such that
+<li><b>SHOULD</b> contain exactly one [1..1] <tt><b>component</b></tt> (CONF-376)
 <ol>
 <li>Contains exactly one [1..1] <xref href="../ImmunizationsSection.dita">Immunizations Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.6</tt>)</li></ol></li>
-<li><b>SHOULD</b> contain exactly one [1..1] <tt><b>component</b></tt> (CONF-381), such that
+<li><b>SHOULD</b> contain exactly one [1..1] <tt><b>component</b></tt> (CONF-381)
 <ol>
 <li>Contains exactly one [1..1] <xref href="../VitalSignsSection.dita">Vital Signs Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.16</tt>)</li></ol></li>
-<li><b>SHOULD</b> contain exactly one [1..1] <tt><b>component</b></tt> (CONF-371), such that
+<li><b>SHOULD</b> contain exactly one [1..1] <tt><b>component</b></tt> (CONF-371)
 <ol>
 <li>Contains exactly one [1..1] <xref href="../MedicalEquipmentSection.dita">Medical Equipment Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.7</tt>)</li></ol></li>
-<li><b>SHOULD</b> contain exactly one [1..1] <tt><b>component</b></tt> (CONF-123), such that
+<li><b>SHOULD</b> contain exactly one [1..1] <tt><b>component</b></tt> (CONF-123)
 <ol>
 <li>Contains exactly one [1..1] <xref href="../FunctionalStatusSection.dita">Functional Status Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.5</tt>)</li></ol></li>
-<li><b>SHOULD</b> contain exactly one [1..1] <tt><b>component</b></tt> (CONF-77), such that
+<li><b>SHOULD</b> contain exactly one [1..1] <tt><b>component</b></tt> (CONF-77)
 <ol>
 <li>Contains exactly one [1..1] <xref href="../AdvanceDirectivesSection.dita">Advance Directives Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.1</tt>)</li></ol></li>
-<li><b>SHOULD</b> contain exactly one [1..1] <tt><b>component</b></tt>, such that
+<li><b>SHOULD</b> contain exactly one [1..1] <tt><b>component</b></tt>
 <ol>
 <li>Contains exactly one [1..1] <xref href="../PayersSection.dita">Payers Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.9</tt>)</li></ol></li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="34133-9" </tt><i>Summarization of episode note</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF-1)
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>languageCode</b></tt> (CONF-5)
 <ol>
-<li>languageCode has the form nn, or nn-CC. The nn portion <b>SHALL</b> be an ISO-639-1 language code in lower case. The CC portion, if present, <b>SHALL</b> be an ISO-3166 country code in upper case (CONF-6)<ul><li><codeblock>[OCL]: self.languageCode.matches('code','(([a-z]{2})(\\\\-[A-Z]{2})?)')</codeblock></li></ul></li></ol></li>
-<li><b>MAY</b> contain exactly one [1..1] <tt><b>component</b></tt> (CONF-15), such that
+<li>languageCode has the form nn, or nn-CC. The nn portion <b>SHALL</b> be an ISO-639-1 language code in lower case. The CC portion, if present, <b>SHALL</b> be an ISO-3166 country code in upper case (CONF-6)</li></ol></li>
+<li><b>MAY</b> contain exactly one [1..1] <tt><b>component</b></tt> (CONF-15)
 <ol>
 <li>Contains exactly one [1..1] <xref href="../PurposeSection.dita">Purpose Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.13</tt>)</li></ol></li>
-<li><b>SHALL</b> satisfy: Contains exactly one documentationOf / serviceEvent (CONF-2)<ul><li><codeblock>[OCL]: self.documentationOf-&gt;one(doc : cda::DocumentationOf | not doc.serviceEvent.oclIsUndefined())</codeblock></li></ul></li>
-<li>documentationOf / serviceEvent / @classCode <b>SHALL</b> be 'PCPR' (CONF-3)<ul><li><codeblock>[OCL]: self.documentationOf-&gt;one(doc : cda::DocumentationOf | doc.serviceEvent.classCode = vocab::ActClassRoot::PCPR)</codeblock></li></ul></li>
-<li><b>SHALL</b> satisfy: documentationOf / serviceEvent contains exactly one serviceEvent / effectiveTime / low and exactly one serviveEvent / effectiveTime / high (CONF-4)<ul><li><codeblock>[OCL]: self.documentationOf-&gt;one(doc : cda::DocumentationOf | 
-   not doc.serviceEvent.effectiveTime.low.oclIsUndefined() and not doc.serviceEvent.effectiveTime.high.oclIsUndefined())</codeblock></li></ul></li>
-<li><b>SHALL NOT</b> contain templateId / @extension (CONF-8)<ul><li><codeblock>[OCL]: self.templateId-&gt;forAll(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.1' implies id.extension.oclIsUndefined())</codeblock></li></ul></li>
-<li><b>SHALL</b> satisfy: effectiveTime is expressed with precision to include seconds (CONF-9)<ul><li><codeblock>[OCL]: self.effectiveTime.value.size() &gt;= 4</codeblock></li></ul></li>
-<li><b>SHALL</b> satisfy: effectiveTime includes an explicit time zone offset (CONF-10)<ul><li><codeblock>[OCL]: self.effectiveTime.value.size() &gt;= 19</codeblock></li></ul></li>
-<li><b>SHALL</b> satisfy: Contains one or two recordTarget (CONF-11)<ul><li><codeblock>[OCL]: self.recordTarget-&gt;size() = 1 or self.recordTarget-&gt;size() =2</codeblock></li></ul></li>
-<li><b>SHOULD</b> satisfy: Contains one or more author / assignedAuthor / assignedPerson and/or author / assignedAuthor / representedOrganization (CONF-12)<ul><li><codeblock>[OCL]: self.author-&gt;exists(author : cda::Author | not author.assignedAuthor.assignedPerson.oclIsUndefined() 
-   or not author.assignedAuthor.representedOrganization.oclIsUndefined())</codeblock></li></ul></li>
-<li>If author has an associated representedOrganization with no assignedPerson or assignedAuthoringDevice, then the value for author / assignedAuthor / id / @NullFlavor <b>SHALL</b> be 'NA' (CONF-13)<ul><li><codeblock>[OCL]: self.author-&gt;exists(author : cda::Author | (not author.assignedAuthor.representedOrganization.oclIsUndefined()
-      and author.assignedAuthor.assignedPerson.oclIsUndefined() and author.assignedAuthor.assignedAuthoringDevice.oclIsUndefined())
-   implies author.assignedAuthor.id-&gt;one(id : datatypes::II | id.nullFlavor = vocab::NullFlavor::NA))</codeblock></li></ul></li>
-<li><b>MAY</b> satisfy: Contains one or more informationRecipient (CONF-14)<ul><li><codeblock>[OCL]: self.informationRecipient-&gt;size() &gt; 0</codeblock></li></ul></li>
-<li>The value for component / structuredBody / component / section / entry / @typeCode <b>MAY</b> be 'DRIV' "is derived from" 2.16.840.1.113883.5.1002 ActRelationshipType STATIC, to indicate that the CDA Narrative Block is fully derived from the structured entries. (CONF-28)<ul><li>UNIMPLEMENTABLE</li></ul></li>
-<li>A CCD entry <b>SHOULD</b> explicitly reference its corresponding narrative (using the approach defined in CDA Release 2, section 4.3.5.1 &lt;content&gt;). (CONF-29)<ul><li>UNIMPLEMENTABLE</li></ul></li>
-<li>A section <b>MAY</b> contain one or more comments, either as a clinical statement or nested under another clinical statement. (CONF-502)<ul><li>UNIMPLEMENTABLE</li></ul></li>
+<li><b>SHALL</b> satisfy: Contains exactly one documentationOf / serviceEvent (CONF-2)</li>
+<li>documentationOf / serviceEvent / @classCode <b>SHALL</b> be 'PCPR' (CONF-3)</li>
+<li><b>SHALL</b> satisfy: documentationOf / serviceEvent contains exactly one serviceEvent / effectiveTime / low and exactly one serviveEvent / effectiveTime / high (CONF-4)</li>
+<li><b>SHALL NOT</b> contain templateId / @extension (CONF-8)</li>
+<li><b>SHALL</b> satisfy: effectiveTime is expressed with precision to include seconds (CONF-9)</li>
+<li><b>SHALL</b> satisfy: effectiveTime includes an explicit time zone offset (CONF-10)</li>
+<li><b>SHALL</b> satisfy: Contains one or two recordTarget (CONF-11)</li>
+<li><b>SHOULD</b> satisfy: Contains one or more author / assignedAuthor / assignedPerson and/or author / assignedAuthor / representedOrganization (CONF-12)</li>
+<li>If author has an associated representedOrganization with no assignedPerson or assignedAuthoringDevice, then the value for author / assignedAuthor / id / @NullFlavor <b>SHALL</b> be 'NA' (CONF-13)</li>
+<li><b>MAY</b> satisfy: Contains one or more informationRecipient (CONF-14)</li>
+<li>The value for component / structuredBody / component / section / entry / @typeCode <b>MAY</b> be 'DRIV' "is derived from" 2.16.840.1.113883.5.1002 ActRelationshipType STATIC, to indicate that the CDA Narrative Block is fully derived from the structured entries. (CONF-28)</li>
+<li>A CCD entry <b>SHOULD</b> explicitly reference its corresponding narrative (using the approach defined in CDA Release 2, section 4.3.5.1 &lt;content&gt;). (CONF-29)</li>
+<li>A section <b>MAY</b> contain one or more comments, either as a clinical statement or nested under another clinical statement. (CONF-502)</li>
 </ol>
 <ol id="aggregate">
-<li>Contains exactly one [1..1] <tt><b>typeId</b></tt>, where its data type is InfrastructureRootTypeId
+<li>Contains exactly one [1..1] <tt><b>typeId</b></tt> with data type <xref href="../InfrastructureRootTypeId.dita">Infrastructure Root Type Id</xref>
 </li>
-<li>Contains exactly one [1..1] <tt><b>id</b></tt>, where its data type is II
+<li>Contains exactly one [1..1] <tt><b>id</b></tt> with data type II
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="34133-9" </tt><i>Summarization of episode note</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF-1)
 </li>
-<li>Contains exactly one [1..1] <tt><b>effectiveTime</b></tt>, where its data type is TS
+<li>Contains exactly one [1..1] <tt><b>effectiveTime</b></tt> with data type TS
 </li>
-<li>Contains exactly one [1..1] <tt><b>confidentialityCode</b></tt>, where its data type is CE
+<li>Contains exactly one [1..1] <tt><b>confidentialityCode</b></tt> with data type CE
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>languageCode</b></tt> (CONF-5)
 <ol>
-<li>languageCode has the form nn, or nn-CC. The nn portion <b>SHALL</b> be an ISO-639-1 language code in lower case. The CC portion, if present, <b>SHALL</b> be an ISO-3166 country code in upper case (CONF-6)<ul><li><codeblock>[OCL]: self.languageCode.matches('code','(([a-z]{2})(\\\\-[A-Z]{2})?)')</codeblock></li></ul></li></ol></li>
+<li>languageCode has the form nn, or nn-CC. The nn portion <b>SHALL</b> be an ISO-639-1 language code in lower case. The CC portion, if present, <b>SHALL</b> be an ISO-3166 country code in upper case (CONF-6)</li></ol></li>
 <li>Contains at least one [1..*] <tt><b>recordTarget</b></tt>, where its type is <xref href="../RecordTarget.dita">Record Target</xref>
-</li>
+<ol>
+<li>Contains exactly one [1..1] <xref href="../RecordTarget.dita">Record Target</xref></li></ol></li>
 <li>Contains at least one [1..*] <tt><b>author</b></tt>, where its type is <xref href="../Author.dita">Author</xref>
-</li>
+<ol>
+<li>Contains exactly one [1..1] <xref href="../Author.dita">Author</xref></li></ol></li>
 <li>Contains exactly one [1..1] <tt><b>custodian</b></tt>, where its type is <xref href="../Custodian.dita">Custodian</xref>
-</li>
+<ol>
+<li>Contains exactly one [1..1] <xref href="../Custodian.dita">Custodian</xref></li></ol></li>
 <li>Contains exactly one [1..1] <tt><b>component</b></tt>, where its type is <xref href="../Component2.dita">Component2</xref>
-</li>
-<li><b>SHOULD</b> contain exactly one [1..1] <tt><b>component</b></tt> (CONF-140), such that
+<ol>
+<li>Contains exactly one [1..1] <xref href="../Component2.dita">Component2</xref></li></ol></li>
+<li><b>SHOULD</b> contain exactly one [1..1] <tt><b>component</b></tt> (CONF-140)
 <ol>
 <li>Contains exactly one [1..1] <xref href="../ProblemSection.dita">Problem Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.11</tt>)</li></ol></li>
-<li><b>SHOULD</b> contain exactly one [1..1] <tt><b>component</b></tt> (CONF-184), such that
+<li><b>SHOULD</b> contain exactly one [1..1] <tt><b>component</b></tt> (CONF-184)
 <ol>
 <li>Contains exactly one [1..1] <xref href="../FamilyHistorySection.dita">Family History Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.4</tt>)</li></ol></li>
-<li><b>SHOULD</b> contain exactly one [1..1] <tt><b>component</b></tt> (CONF-232), such that
+<li><b>SHOULD</b> contain exactly one [1..1] <tt><b>component</b></tt> (CONF-232)
 <ol>
 <li>Contains exactly one [1..1] <xref href="../SocialHistorySection.dita">Social History Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.15</tt>)</li></ol></li>
-<li><b>SHOULD</b> contain exactly one [1..1] <tt><b>component</b></tt>, such that
+<li><b>SHOULD</b> contain exactly one [1..1] <tt><b>component</b></tt>
 <ol>
 <li>Contains exactly one [1..1] <xref href="../AlertsSection.dita">Alerts Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.2</tt>)</li></ol></li>
-<li><b>SHOULD</b> contain exactly one [1..1] <tt><b>component</b></tt> (CONF-388), such that
+<li><b>SHOULD</b> contain exactly one [1..1] <tt><b>component</b></tt> (CONF-298)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../MedicationsSection.dita">Medications Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.8</tt>)</li></ol></li>
+<li><b>SHOULD</b> contain exactly one [1..1] <tt><b>component</b></tt> (CONF-388)
 <ol>
 <li>Contains exactly one [1..1] <xref href="../ResultsSection.dita">Results Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.14</tt>)</li></ol></li>
-<li><b>SHOULD</b> contain exactly one [1..1] <tt><b>component</b></tt>, such that
+<li><b>SHOULD</b> contain exactly one [1..1] <tt><b>component</b></tt>
 <ol>
 <li>Contains exactly one [1..1] <xref href="../ProceduresSection.dita">Procedures Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.12</tt>)</li></ol></li>
-<li><b>SHOULD</b> contain exactly one [1..1] <tt><b>component</b></tt>, such that
+<li><b>SHOULD</b> contain exactly one [1..1] <tt><b>component</b></tt>
 <ol>
 <li>Contains exactly one [1..1] <xref href="../EncountersSection.dita">Encounters Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.3</tt>)</li></ol></li>
-<li><b>SHOULD</b> contain exactly one [1..1] <tt><b>component</b></tt>, such that
+<li><b>SHOULD</b> contain exactly one [1..1] <tt><b>component</b></tt>
 <ol>
 <li>Contains exactly one [1..1] <xref href="../PlanOfCareSection.dita">Plan Of Care Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.10</tt>)</li></ol></li>
-<li><b>SHOULD</b> contain exactly one [1..1] <tt><b>component</b></tt> (CONF-376), such that
+<li><b>SHOULD</b> contain exactly one [1..1] <tt><b>component</b></tt> (CONF-376)
 <ol>
 <li>Contains exactly one [1..1] <xref href="../ImmunizationsSection.dita">Immunizations Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.6</tt>)</li></ol></li>
-<li><b>SHOULD</b> contain exactly one [1..1] <tt><b>component</b></tt> (CONF-381), such that
+<li><b>SHOULD</b> contain exactly one [1..1] <tt><b>component</b></tt> (CONF-381)
 <ol>
 <li>Contains exactly one [1..1] <xref href="../VitalSignsSection.dita">Vital Signs Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.16</tt>)</li></ol></li>
-<li><b>SHOULD</b> contain exactly one [1..1] <tt><b>component</b></tt> (CONF-371), such that
+<li><b>SHOULD</b> contain exactly one [1..1] <tt><b>component</b></tt> (CONF-371)
 <ol>
 <li>Contains exactly one [1..1] <xref href="../MedicalEquipmentSection.dita">Medical Equipment Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.7</tt>)</li></ol></li>
-<li><b>SHOULD</b> contain exactly one [1..1] <tt><b>component</b></tt> (CONF-123), such that
+<li><b>SHOULD</b> contain exactly one [1..1] <tt><b>component</b></tt> (CONF-123)
 <ol>
 <li>Contains exactly one [1..1] <xref href="../FunctionalStatusSection.dita">Functional Status Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.5</tt>)</li></ol></li>
-<li><b>SHOULD</b> contain exactly one [1..1] <tt><b>component</b></tt> (CONF-77), such that
+<li><b>SHOULD</b> contain exactly one [1..1] <tt><b>component</b></tt> (CONF-77)
 <ol>
 <li>Contains exactly one [1..1] <xref href="../AdvanceDirectivesSection.dita">Advance Directives Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.1</tt>)</li></ol></li>
-<li><b>SHOULD</b> contain exactly one [1..1] <tt><b>component</b></tt>, such that
+<li><b>SHOULD</b> contain exactly one [1..1] <tt><b>component</b></tt>
 <ol>
 <li>Contains exactly one [1..1] <xref href="../PayersSection.dita">Payers Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.9</tt>)</li></ol></li>
-<li><b>MAY</b> contain exactly one [1..1] <tt><b>component</b></tt> (CONF-15), such that
+<li><b>MAY</b> contain exactly one [1..1] <tt><b>component</b></tt> (CONF-15)
 <ol>
 <li>Contains exactly one [1..1] <xref href="../PurposeSection.dita">Purpose Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.13</tt>)</li></ol></li>
-<li><b>SHALL</b> satisfy: Contains exactly one documentationOf / serviceEvent (CONF-2)<ul><li><codeblock>[OCL]: self.documentationOf-&gt;one(doc : cda::DocumentationOf | not doc.serviceEvent.oclIsUndefined())</codeblock></li></ul></li>
-<li>documentationOf / serviceEvent / @classCode <b>SHALL</b> be 'PCPR' (CONF-3)<ul><li><codeblock>[OCL]: self.documentationOf-&gt;one(doc : cda::DocumentationOf | doc.serviceEvent.classCode = vocab::ActClassRoot::PCPR)</codeblock></li></ul></li>
-<li><b>SHALL</b> satisfy: documentationOf / serviceEvent contains exactly one serviceEvent / effectiveTime / low and exactly one serviveEvent / effectiveTime / high (CONF-4)<ul><li><codeblock>[OCL]: self.documentationOf-&gt;one(doc : cda::DocumentationOf | 
-   not doc.serviceEvent.effectiveTime.low.oclIsUndefined() and not doc.serviceEvent.effectiveTime.high.oclIsUndefined())</codeblock></li></ul></li>
-<li>languageCode has the form nn, or nn-CC. The nn portion <b>SHALL</b> be an ISO-639-1 language code in lower case. The CC portion, if present, <b>SHALL</b> be an ISO-3166 country code in upper case (CONF-6)<ul><li><codeblock>[OCL]: self.languageCode.matches('code','(([a-z]{2})(\\\\-[A-Z]{2})?)')</codeblock></li></ul></li>
-<li><b>SHALL NOT</b> contain templateId / @extension (CONF-8)<ul><li><codeblock>[OCL]: self.templateId-&gt;forAll(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.1' implies id.extension.oclIsUndefined())</codeblock></li></ul></li>
-<li><b>SHALL</b> satisfy: effectiveTime is expressed with precision to include seconds (CONF-9)<ul><li><codeblock>[OCL]: self.effectiveTime.value.size() &gt;= 4</codeblock></li></ul></li>
-<li><b>SHALL</b> satisfy: effectiveTime includes an explicit time zone offset (CONF-10)<ul><li><codeblock>[OCL]: self.effectiveTime.value.size() &gt;= 19</codeblock></li></ul></li>
-<li><b>SHALL</b> satisfy: Contains one or two recordTarget (CONF-11)<ul><li><codeblock>[OCL]: self.recordTarget-&gt;size() = 1 or self.recordTarget-&gt;size() =2</codeblock></li></ul></li>
-<li><b>SHOULD</b> satisfy: Contains one or more author / assignedAuthor / assignedPerson and/or author / assignedAuthor / representedOrganization (CONF-12)<ul><li><codeblock>[OCL]: self.author-&gt;exists(author : cda::Author | not author.assignedAuthor.assignedPerson.oclIsUndefined() 
-   or not author.assignedAuthor.representedOrganization.oclIsUndefined())</codeblock></li></ul></li>
-<li>If author has an associated representedOrganization with no assignedPerson or assignedAuthoringDevice, then the value for author / assignedAuthor / id / @NullFlavor <b>SHALL</b> be 'NA' (CONF-13)<ul><li><codeblock>[OCL]: self.author-&gt;exists(author : cda::Author | (not author.assignedAuthor.representedOrganization.oclIsUndefined()
-      and author.assignedAuthor.assignedPerson.oclIsUndefined() and author.assignedAuthor.assignedAuthoringDevice.oclIsUndefined())
-   implies author.assignedAuthor.id-&gt;one(id : datatypes::II | id.nullFlavor = vocab::NullFlavor::NA))</codeblock></li></ul></li>
-<li><b>MAY</b> satisfy: Contains one or more informationRecipient (CONF-14)<ul><li><codeblock>[OCL]: self.informationRecipient-&gt;size() &gt; 0</codeblock></li></ul></li>
-<li>The value for component / structuredBody / component / section / entry / @typeCode <b>MAY</b> be 'DRIV' "is derived from" 2.16.840.1.113883.5.1002 ActRelationshipType STATIC, to indicate that the CDA Narrative Block is fully derived from the structured entries. (CONF-28)<ul><li>UNIMPLEMENTABLE</li></ul></li>
-<li>A CCD entry <b>SHOULD</b> explicitly reference its corresponding narrative (using the approach defined in CDA Release 2, section 4.3.5.1 &lt;content&gt;). (CONF-29)<ul><li>UNIMPLEMENTABLE</li></ul></li>
-<li>A section <b>MAY</b> contain one or more comments, either as a clinical statement or nested under another clinical statement. (CONF-502)<ul><li>UNIMPLEMENTABLE</li></ul></li>
+<li><b>SHALL</b> satisfy: Contains exactly one documentationOf / serviceEvent (CONF-2)</li>
+<li>documentationOf / serviceEvent / @classCode <b>SHALL</b> be 'PCPR' (CONF-3)</li>
+<li><b>SHALL</b> satisfy: documentationOf / serviceEvent contains exactly one serviceEvent / effectiveTime / low and exactly one serviveEvent / effectiveTime / high (CONF-4)</li>
+<li>languageCode has the form nn, or nn-CC. The nn portion <b>SHALL</b> be an ISO-639-1 language code in lower case. The CC portion, if present, <b>SHALL</b> be an ISO-3166 country code in upper case (CONF-6)</li>
+<li><b>SHALL NOT</b> contain templateId / @extension (CONF-8)</li>
+<li><b>SHALL</b> satisfy: effectiveTime is expressed with precision to include seconds (CONF-9)</li>
+<li><b>SHALL</b> satisfy: effectiveTime includes an explicit time zone offset (CONF-10)</li>
+<li><b>SHALL</b> satisfy: Contains one or two recordTarget (CONF-11)</li>
+<li><b>SHOULD</b> satisfy: Contains one or more author / assignedAuthor / assignedPerson and/or author / assignedAuthor / representedOrganization (CONF-12)</li>
+<li>If author has an associated representedOrganization with no assignedPerson or assignedAuthoringDevice, then the value for author / assignedAuthor / id / @NullFlavor <b>SHALL</b> be 'NA' (CONF-13)</li>
+<li><b>MAY</b> satisfy: Contains one or more informationRecipient (CONF-14)</li>
+<li>The value for component / structuredBody / component / section / entry / @typeCode <b>MAY</b> be 'DRIV' "is derived from" 2.16.840.1.113883.5.1002 ActRelationshipType STATIC, to indicate that the CDA Narrative Block is fully derived from the structured entries. (CONF-28)</li>
+<li>A CCD entry <b>SHOULD</b> explicitly reference its corresponding narrative (using the approach defined in CDA Release 2, section 4.3.5.1 &lt;content&gt;). (CONF-29)</li>
+<li>A section <b>MAY</b> contain one or more comments, either as a clinical statement or nested under another clinical statement. (CONF-502)</li>
 </ol>
+<section id="tableconformance"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="8" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><colspec colname="col2" colnum="2" /><colspec colname="col3" colnum="3" /><colspec colname="col4" colnum="4" /><colspec colname="col5" colnum="5" /><colspec colname="col6" colnum="6" /><colspec colname="col7" colnum="7" /><thead> <row><entry namest="col0" nameend="col7" >ccd::ContinuityOfCareDocument</entry>  </row>  <row><entry namest="col0" nameend="col7" >cda::clinicaldocument[cda:templateId/@root = ]/</entry>  </row>  <row><entry>Name</entry><entry>XPath</entry><entry>Cardinality</entry><entry>Severity</entry><entry>Nullable</entry><entry>Data Type</entry><entry>Conformance</entry><entry>Value(s)</entry></row></thead><tbody><row><entry>code</entry><entry>code</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>CE</entry><entry>CONF-1</entry><entry>LOINC 2.16.840.1.113883.6.1 </entry></row> 
+<row><entry>languageCode</entry><entry>languageCode</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>CS</entry><entry>CONF-5</entry><entry> </entry></row> 
+<row><entry>advanceDirectivesSection</entry><entry>advanceDirectivesSection</entry><entry>1..1</entry><entry>SHOULD</entry><entry>YES</entry><entry>AdvanceDirectivesSection</entry><entry>CONF-77</entry><entry> </entry></row> 
+<row><entry>alertsSection</entry><entry>alertsSection</entry><entry>1..1</entry><entry>SHOULD</entry><entry>YES</entry><entry>AlertsSection</entry><entry></entry><entry> </entry></row> 
+<row><entry>encountersSection</entry><entry>encountersSection</entry><entry>1..1</entry><entry>SHOULD</entry><entry>YES</entry><entry>EncountersSection</entry><entry></entry><entry> </entry></row> 
+<row><entry>familyHistorySection</entry><entry>familyHistorySection</entry><entry>1..1</entry><entry>SHOULD</entry><entry>YES</entry><entry>FamilyHistorySection</entry><entry>CONF-184</entry><entry> </entry></row> 
+<row><entry>functionalStatusSection</entry><entry>functionalStatusSection</entry><entry>1..1</entry><entry>SHOULD</entry><entry>YES</entry><entry>FunctionalStatusSection</entry><entry>CONF-123</entry><entry> </entry></row> 
+<row><entry>immunizationsSection</entry><entry>immunizationsSection</entry><entry>1..1</entry><entry>SHOULD</entry><entry>YES</entry><entry>ImmunizationsSection</entry><entry>CONF-376</entry><entry> </entry></row> 
+<row><entry>medicalEquipmentSection</entry><entry>medicalEquipmentSection</entry><entry>1..1</entry><entry>SHOULD</entry><entry>YES</entry><entry>MedicalEquipmentSection</entry><entry>CONF-371</entry><entry> </entry></row> 
+<row><entry>medicationsSection</entry><entry>medicationsSection</entry><entry>1..1</entry><entry>SHOULD</entry><entry>YES</entry><entry>MedicationsSection</entry><entry>CONF-298</entry><entry> </entry></row> 
+<row><entry>payersSection</entry><entry>payersSection</entry><entry>1..1</entry><entry>SHOULD</entry><entry>YES</entry><entry>PayersSection</entry><entry></entry><entry> </entry></row> 
+<row><entry>planOfCareSection</entry><entry>planOfCareSection</entry><entry>1..1</entry><entry>SHOULD</entry><entry>YES</entry><entry>PlanOfCareSection</entry><entry></entry><entry> </entry></row> 
+<row><entry>problemSection</entry><entry>problemSection</entry><entry>1..1</entry><entry>SHOULD</entry><entry>YES</entry><entry>ProblemSection</entry><entry>CONF-140</entry><entry> </entry></row> 
+<row><entry>proceduresSection</entry><entry>proceduresSection</entry><entry>1..1</entry><entry>SHOULD</entry><entry>YES</entry><entry>ProceduresSection</entry><entry></entry><entry> </entry></row> 
+<row><entry>purposeSection</entry><entry>purposeSection</entry><entry>1..1</entry><entry>MAY</entry><entry>YES</entry><entry>PurposeSection</entry><entry>CONF-15</entry><entry> </entry></row> 
+<row><entry>resultsSection</entry><entry>resultsSection</entry><entry>1..1</entry><entry>SHOULD</entry><entry>YES</entry><entry>ResultsSection</entry><entry>CONF-388</entry><entry> </entry></row> 
+<row><entry>socialHistorySection</entry><entry>socialHistorySection</entry><entry>1..1</entry><entry>SHOULD</entry><entry>YES</entry><entry>SocialHistorySection</entry><entry>CONF-232</entry><entry> </entry></row> 
+<row><entry>vitalSignsSection</entry><entry>vitalSignsSection</entry><entry>1..1</entry><entry>SHOULD</entry><entry>YES</entry><entry>VitalSignsSection</entry><entry>CONF-381</entry><entry> </entry></row> 
+</tbody></tgroup></table></p></section>
 <codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
 <ClinicalDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd">
   <typeId root="2.16.840.1.113883.1.3"/>
-  <templateId root="2.16.840.1.113883.10.20.1"/>
-  <id root="2097335606"/>
-  <code code="34133-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Summarization of episode note"/>
-  <title/>
+  <id root="MDHT" extension="1459274710"/>
+  <code code="686491152"/>
+  <title>TEXT FOR TITLE</title>
   <effectiveTime/>
-  <confidentialityCode code="Value"/>
-  <languageCode/>
-  <recordTarget/>
-  <author/>
+  <confidentialityCode code="1939984420"/>
+  <languageCode code="Code forlanguageCode"/>
+  <recordTarget>
+    <patientRole/>
+  </recordTarget>
+  <author>
+    <time/>
+    <assignedAuthor/>
+  </author>
   <custodian/>
   <component>
     <structuredBody>
       <component>
         <section>
-          <templateId root="2.16.840.1.113883.10.20.1.11"/>
-          <id root="127333809"/>
-          <code code="11450-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Problem list"/>
-          <title/>
-          <languageCode/>
+          <id root="MDHT" extension="26551856"/>
+          <title>TEXT FOR TITLE</title>
+          <languageCode code="Code forlanguageCode"/>
           <entry>
-            <act/>
+            <act>
+              <id root="MDHT" extension="618574647"/>
+              <code code="543607525"/>
+              <effectiveTime>
+                <low value="2012"/>
+                <high value="2012"/>
+              </effectiveTime>
+              <languageCode code="Code forlanguageCode"/>
+              <entryRelationship>
+                <observation/>
+              </entryRelationship>
+            </act>
           </entry>
         </section>
       </component>
       <component>
-        <section/>
+        <section>
+          <id root="MDHT" extension="1614824322"/>
+          <title>TEXT FOR TITLE</title>
+          <languageCode code="Code forlanguageCode"/>
+          <entry>
+            <organizer>
+              <id root="MDHT" extension="229219818"/>
+              <statusCode code="completed"/>
+              <effectiveTime>
+                <low value="2012"/>
+                <high value="2012"/>
+              </effectiveTime>
+              <component>
+                <observation/>
+              </component>
+            </organizer>
+          </entry>
+        </section>
       </component>
       <component>
-        <section/>
+        <section>
+          <id root="MDHT" extension="1544530020"/>
+          <title>TEXT FOR TITLE</title>
+          <languageCode code="Code forlanguageCode"/>
+          <entry>
+            <observation>
+              <id root="MDHT" extension="912203909"/>
+              <code code="2069862313"/>
+              <effectiveTime>
+                <low value="2012"/>
+                <high value="2012"/>
+              </effectiveTime>
+              <languageCode code="Code forlanguageCode"/>
+              <entryRelationship>
+                <observation/>
+              </entryRelationship>
+              <entryRelationship>
+                <observation/>
+              </entryRelationship>
+            </observation>
+          </entry>
+        </section>
       </component>
       <component>
-        <section/>
+        <section>
+          <id root="MDHT" extension="1380525251"/>
+          <title>TEXT FOR TITLE</title>
+          <languageCode code="Code forlanguageCode"/>
+          <entry>
+            <act>
+              <id root="MDHT" extension="1751368472"/>
+              <code code="484435290"/>
+              <effectiveTime>
+                <low value="2012"/>
+                <high value="2012"/>
+              </effectiveTime>
+              <languageCode code="Code forlanguageCode"/>
+              <entryRelationship>
+                <observation/>
+              </entryRelationship>
+            </act>
+          </entry>
+        </section>
       </component>
       <component>
-        <section/>
+        <section>
+          <id root="MDHT" extension="1222317430"/>
+          <title>TEXT FOR TITLE</title>
+          <languageCode code="Code forlanguageCode"/>
+          <entry>
+            <substanceAdministration classCode="SBADM">
+              <id root="MDHT" extension="372026771"/>
+              <effectiveTime value="20121108"/>
+              <consumable/>
+              <performer/>
+              <entryRelationship>
+                <observation/>
+              </entryRelationship>
+              <entryRelationship>
+                <observation/>
+              </entryRelationship>
+              <entryRelationship>
+                <act/>
+              </entryRelationship>
+              <entryRelationship>
+                <observation/>
+              </entryRelationship>
+            </substanceAdministration>
+          </entry>
+          <entry>
+            <supply classCode="SPLY">
+              <id root="MDHT" extension="424067441"/>
+              <effectiveTime value="20121108"/>
+              <entryRelationship>
+                <observation/>
+              </entryRelationship>
+              <entryRelationship>
+                <act/>
+              </entryRelationship>
+            </supply>
+          </entry>
+        </section>
       </component>
       <component>
-        <section/>
+        <section>
+          <id root="MDHT" extension="1090311248"/>
+          <title>TEXT FOR TITLE</title>
+          <languageCode code="Code forlanguageCode"/>
+          <entry>
+            <organizer>
+              <id root="MDHT" extension="601164056"/>
+              <statusCode code="completed"/>
+              <effectiveTime>
+                <low value="2012"/>
+                <high value="2012"/>
+              </effectiveTime>
+              <specimen/>
+              <component>
+                <observation/>
+              </component>
+            </organizer>
+          </entry>
+        </section>
       </component>
       <component>
-        <section/>
+        <section>
+          <id root="MDHT" extension="726261349"/>
+          <title>TEXT FOR TITLE</title>
+          <languageCode code="Code forlanguageCode"/>
+        </section>
       </component>
       <component>
-        <section/>
+        <section>
+          <id root="MDHT" extension="1234921813"/>
+          <title>TEXT FOR TITLE</title>
+          <languageCode code="Code forlanguageCode"/>
+          <entry>
+            <encounter>
+              <id root="MDHT" extension="1077428173"/>
+              <effectiveTime>
+                <low value="2012"/>
+                <high value="2012"/>
+              </effectiveTime>
+              <participant/>
+              <entryRelationship>
+                <act/>
+              </entryRelationship>
+              <entryRelationship>
+                <observation/>
+              </entryRelationship>
+            </encounter>
+          </entry>
+        </section>
       </component>
       <component>
-        <section/>
+        <section>
+          <realmCode/>
+          <id root="MDHT" extension="1721870351"/>
+          <title>TEXT FOR TITLE</title>
+          <languageCode code="Code forlanguageCode"/>
+          <entry>
+            <act>
+              <id root="MDHT" extension="490466408"/>
+              <code code="784350019"/>
+              <effectiveTime>
+                <low value="2012"/>
+                <high value="2012"/>
+              </effectiveTime>
+              <languageCode code="Code forlanguageCode"/>
+            </act>
+          </entry>
+          <entry>
+            <encounter>
+              <id root="MDHT" extension="669265806"/>
+              <effectiveTime>
+                <low value="2012"/>
+                <high value="2012"/>
+              </effectiveTime>
+            </encounter>
+          </entry>
+          <entry>
+            <observation>
+              <id root="MDHT" extension="1400601125"/>
+              <code code="1469201869"/>
+              <effectiveTime>
+                <low value="2012"/>
+                <high value="2012"/>
+              </effectiveTime>
+              <languageCode code="Code forlanguageCode"/>
+            </observation>
+          </entry>
+          <entry>
+            <procedure>
+              <id root="MDHT" extension="1113588991"/>
+              <effectiveTime>
+                <low value="2012"/>
+                <high value="2012"/>
+              </effectiveTime>
+              <languageCode code="Code forlanguageCode"/>
+            </procedure>
+          </entry>
+          <entry>
+            <substanceAdministration classCode="SBADM">
+              <id root="MDHT" extension="1716457104"/>
+              <effectiveTime value="20121108"/>
+              <consumable/>
+            </substanceAdministration>
+          </entry>
+          <entry>
+            <supply classCode="SPLY">
+              <id root="MDHT" extension="870129915"/>
+              <effectiveTime value="20121108"/>
+            </supply>
+          </entry>
+        </section>
       </component>
       <component>
-        <section/>
+        <section>
+          <id root="MDHT" extension="1821603857"/>
+          <title>TEXT FOR TITLE</title>
+          <languageCode code="Code forlanguageCode"/>
+          <entry>
+            <substanceAdministration classCode="SBADM">
+              <id root="MDHT" extension="1833916821"/>
+              <effectiveTime value="20121108"/>
+              <consumable/>
+              <performer/>
+              <entryRelationship>
+                <observation/>
+              </entryRelationship>
+              <entryRelationship>
+                <observation/>
+              </entryRelationship>
+              <entryRelationship>
+                <act/>
+              </entryRelationship>
+              <entryRelationship>
+                <observation/>
+              </entryRelationship>
+            </substanceAdministration>
+          </entry>
+          <entry>
+            <supply classCode="SPLY">
+              <id root="MDHT" extension="1751960896"/>
+              <effectiveTime value="20121108"/>
+              <entryRelationship>
+                <observation/>
+              </entryRelationship>
+              <entryRelationship>
+                <act/>
+              </entryRelationship>
+            </supply>
+          </entry>
+        </section>
       </component>
       <component>
-        <section/>
+        <section>
+          <id root="MDHT" extension="455063741"/>
+          <title>TEXT FOR TITLE</title>
+          <languageCode code="Code forlanguageCode"/>
+          <entry>
+            <organizer>
+              <id root="MDHT" extension="1358486935"/>
+              <statusCode code="completed"/>
+              <effectiveTime>
+                <low value="2012"/>
+                <high value="2012"/>
+              </effectiveTime>
+            </organizer>
+          </entry>
+        </section>
       </component>
       <component>
-        <section/>
+        <section>
+          <id root="MDHT" extension="1568342686"/>
+          <title>TEXT FOR TITLE</title>
+          <languageCode code="Code forlanguageCode"/>
+          <entry>
+            <supply classCode="SPLY">
+              <id root="MDHT" extension="1842589340"/>
+              <effectiveTime value="20121108"/>
+              <entryRelationship>
+                <observation/>
+              </entryRelationship>
+              <entryRelationship>
+                <act/>
+              </entryRelationship>
+            </supply>
+          </entry>
+          <entry>
+            <substanceAdministration classCode="SBADM">
+              <id root="MDHT" extension="622308082"/>
+              <effectiveTime value="20121108"/>
+              <consumable/>
+              <performer/>
+              <entryRelationship>
+                <observation/>
+              </entryRelationship>
+              <entryRelationship>
+                <observation/>
+              </entryRelationship>
+              <entryRelationship>
+                <act/>
+              </entryRelationship>
+              <entryRelationship>
+                <observation/>
+              </entryRelationship>
+            </substanceAdministration>
+          </entry>
+        </section>
       </component>
       <component>
-        <section/>
+        <section>
+          <id root="MDHT" extension="723950714"/>
+          <title>TEXT FOR TITLE</title>
+          <languageCode code="Code forlanguageCode"/>
+        </section>
       </component>
       <component>
-        <section/>
+        <section>
+          <id root="MDHT" extension="289298032"/>
+          <title>TEXT FOR TITLE</title>
+          <languageCode code="Code forlanguageCode"/>
+          <entry>
+            <observation>
+              <id root="MDHT" extension="200455916"/>
+              <code code="1110201400"/>
+              <effectiveTime>
+                <low value="2012"/>
+                <high value="2012"/>
+              </effectiveTime>
+              <languageCode code="Code forlanguageCode"/>
+              <participant/>
+              <entryRelationship>
+                <observation/>
+              </entryRelationship>
+              <reference/>
+            </observation>
+          </entry>
+        </section>
       </component>
       <component>
-        <section/>
+        <section>
+          <id root="MDHT" extension="855834619"/>
+          <title>TEXT FOR TITLE</title>
+          <languageCode code="Code forlanguageCode"/>
+          <entry>
+            <act>
+              <id root="MDHT" extension="1710587209"/>
+              <code code="374395619"/>
+              <effectiveTime>
+                <low value="2012"/>
+                <high value="2012"/>
+              </effectiveTime>
+              <languageCode code="Code forlanguageCode"/>
+              <entryRelationship>
+                <act/>
+              </entryRelationship>
+            </act>
+          </entry>
+        </section>
       </component>
       <component>
-        <section/>
+        <section>
+          <id root="MDHT" extension="1337813688"/>
+          <title>TEXT FOR TITLE</title>
+          <languageCode code="Code forlanguageCode"/>
+          <entry>
+            <act>
+              <id root="MDHT" extension="1352263610"/>
+              <code code="1359889369"/>
+              <effectiveTime>
+                <low value="2012"/>
+                <high value="2012"/>
+              </effectiveTime>
+              <languageCode code="Code forlanguageCode"/>
+            </act>
+          </entry>
+        </section>
       </component>
     </structuredBody>
   </component>
 </ClinicalDocument>]]></codeblock>
+<section id="changes">
+</section>
+<p><ph id="classformalname">Continuity Of Care Document</ph></p>
+<p id="shortdesc">[ClinicalDocument: templateId <tt>2.16.840.1.113883.10.20.1</tt>]</p>
 </body>
 </topic>
