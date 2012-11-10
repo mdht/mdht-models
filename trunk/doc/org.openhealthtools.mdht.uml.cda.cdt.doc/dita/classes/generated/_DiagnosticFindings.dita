@@ -36,12 +36,12 @@ procedure, such as where a gastroenterologist reports the size of a polyp observ
 during a colonoscopy.</p>
 </section>
 <ol id="conformance">
-<li><b>SHALL</b> conform to <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.ccd.doc/classes/ResultsSection.html">CCD Results Section</xref> template (templateId: <tt>2.16.840.1.113883.10.20.1.14</tt>)</li>
+<li><b>SHALL</b> conform to <xref format="html" href="PLUGINS_ROOT/org.openhealthtools.mdht.uml.cda.ccd.doc/classes/ResultsSection.html">CCD Results Section</xref> template (templateId: <tt>2.16.840.1.113883.10.20.1.14</tt>)</li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>title</b></tt>
 </li>
 </ol>
 <ol id="aggregate">
-<li><b>SHALL</b> conform to <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.ccd.doc/classes/ResultsSection.html">CCD Results Section</xref> template (templateId: <tt>2.16.840.1.113883.10.20.1.14</tt>)</li>
+<li><b>SHALL</b> conform to <xref format="html" href="PLUGINS_ROOT/org.openhealthtools.mdht.uml.cda.ccd.doc/classes/ResultsSection.html">CCD Results Section</xref> template (templateId: <tt>2.16.840.1.113883.10.20.1.14</tt>)</li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="30954-2" </tt><i>Relevant diagnostic tests and/or laboratory data</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF-389, CONF-390)
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>title</b></tt>

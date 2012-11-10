@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html
   PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html lang="en-us" xml:lang="en-us">
+<html xml:lang="en-us" lang="en-us">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 <meta name="copyright" content="(C) Copyright 2005"/>
@@ -18,9 +18,9 @@
 <link rel="stylesheet" type="text/css" href="../css/commonltr.css"/>
 <title>Diagnostic Findings</title>
 </head>
-<body id="classId"><a name="classId"><!-- --></a>
+<body id="classId">
 <div>
-	<p><b>Development Only.</b> The Normative content for these specifications
+	<p><b>Non-Normative Content</b> The Normative content for these specifications
 	may be found on the HL7, IHE, and HITSP web sites.</p>
 </div>
 
@@ -66,36 +66,13 @@ during a colonoscopy.</p>
 
 
 <ol class="ol">
-<li class="li"><strong class="ph b">SHALL</strong> conform to <a class="xref" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.ccd.doc/classes/ResultsSection.html">CCD Results Section</a> template (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.1.14</tt>)</li>
+<li class="li"><strong class="ph b">SHALL</strong> conform to <a class="xref" href="generated/PLUGINS_ROOT/org.openhealthtools.mdht.uml.cda.ccd.doc/classes/ResultsSection.html">CCD Results Section</a> template (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.1.14</tt>)</li>
 
 <li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">title</strong></tt>
 </li>
 
 </ol>
 
-<ol class="ol">
-<li class="li"><strong class="ph b">SHALL</strong> conform to <a class="xref" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.ccd.doc/classes/ResultsSection.html">CCD Results Section</a> template (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.1.14</tt>)</li>
-
-<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt><tt class="ph tt"><strong class="ph b">/@code</strong>="30954-2" </tt><em class="ph i">Relevant diagnostic tests and/or laboratory data</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF-389, CONF-390)
-</li>
-
-<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">title</strong></tt>
-</li>
-
-<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">text</strong></tt> (CONF-388)
-</li>
-
-<li class="li"><strong class="ph b">SHOULD</strong> contain at least one [1..*] <tt class="ph tt"><strong class="ph b">entry</strong></tt> (CONF-388), such that
-<ol class="ol" type="a">
-<li class="li">Contains exactly one [1..1] <a class="xref" href="generated/../ResultOrganizer.html">Result Organizer</a> (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.1.32</tt>)</li>
-</ol>
-</li>
-
-<li class="li"><strong class="ph b">SHOULD</strong> satisfy: Contains a case-insensitive language-insensitive string containing 'results'. (CONF-392)<ul class="ul"><li class="li">UNIMPLEMENTABLE</li>
-</ul>
-</li>
-
-</ol>
 
 <div class="fig fignone"><span class="figcap">Figure 1. Diagnostic Findings example</span>
 
