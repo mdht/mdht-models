@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="en-us" lang="en-us">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="copyright" content="(C) Copyright 2005"/>
+<meta name="DC.rights.owner" content="(C) Copyright 2005"/>
+<meta name="DC.Type" content="topic"/>
+<meta name="DC.Title" content="Transition Of Care Ambulatory Summary"/>
+<meta name="abstract" content="[ClinicalDocument: templateId 2.16.840.1.113883.10.20.22.1.1]"/>
+<meta name="description" content="[ClinicalDocument: templateId 2.16.840.1.113883.10.20.22.1.1]"/>
+<meta name="DC.Coverage" content="ClinicalDocument"/>
+<meta name="DC.Relation" scheme="URI" content="../content/DocumentTemplates.html"/>
+<meta name="DC.Format" content="XHTML"/>
+<meta name="DC.Identifier" content="classId"/>
+<meta name="DC.Language" content="en-us"/>
+<link rel="stylesheet" type="text/css" href="../css/commonltr.css"/>
+<title>Transition Of Care Ambulatory Summary</title>
+</head>
+<body id="classId">
+<div>
+	<p><b>Note</b> This Implementation Guide is an extension of Consolidated Implementation Guide to support Meaning Use Stage 2, Final Rule Certification. The same guide used by NIST for certification.</p>
+</div>
+
+<h1 class="title topictitle1">Transition Of Care Ambulatory Summary</h1>
+
+
+
+<div class="body"><p class="shortdesc">[ClinicalDocument: templateId <tt class="ph tt">2.16.840.1.113883.10.20.22.1.1</tt>]</p>
+
+<div class="section">
+</div>
+
+
+<div class="section">
+<div class="p"><p class="lines"><em class="ph i">MU2 170.314(b)(2) Transition of Care/Referral Summary - For Ambulatory Care<br/>
+MU2 170.314(b)(7) Export Summary  - For Ambulatory Care</em></p>
+</div>
+
+</div>
+
+
+
+<ol class="ol">
+<li class="li"><strong class="ph b">SHALL</strong> conform to <a class="xref" href="SummaryOfCareRecord.html" title="[ClinicalDocument: templateId 2.16.840.1.113883.10.20.22.1.1]">Summary Of Care Record</a> template (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.22.1.1</tt>)</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">component</strong></tt>
+<ol class="ol" type="a">
+<li class="li">Contains exactly one [1..1] <a class="xref" href="generated/PLUGINS_ROOT/org.openhealthtools.mdht.uml.cda.consol.doc/classes/ReasonForReferralSection.html">Consol Reason For Referral Section</a> (templateId: <tt class="ph tt">1.3.6.1.4.1.19376.1.5.3.1.3.1</tt>)</li>
+</ol>
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> satisfy: responsibleParty</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> have one of Assessment (2.16.840.1.113883.10.20.22.2.8) or Assessment and Plan (2.16.840.1.113883.10.20.22.2.9) or Postoperative Diagnosis (2.16.840.1.113883.10.20.22.2.35)  or  Postprocedure Diagnosis (2.16.840.1.113883.10.20.22.2.36) or Encounters (entries required: 2.16.840.1.113883.10.20.22.2.22.1) or Problem (entries required: 2.16.840.1.113883.10.20.22.2.5.1)</li>
+
+</ol>
+
+
+<p class="p"> </p>
+
+<p class="p"><strong class="ph b">Transition Of Care Ambulatory Summary example</strong></p>
+
+
+
+<pre class="pre codeblock">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;ClinicalDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd"&gt;
+  &lt;realmCode code="US"/&gt;
+  &lt;typeId root="2.16.840.1.113883.1.3"/&gt;
+  &lt;templateId root="2.16.840.1.113883.10.20.22.1.1"/&gt;
+  &lt;templateId root="2.16.840.1.113883.10.20.22.1.1"/&gt;
+  &lt;id root="MDHT" extension="1592600758"/&gt;
+  &lt;code code="823761260"/&gt;
+  &lt;title&gt;TEXT FOR TITLE&lt;/title&gt;
+  &lt;effectiveTime/&gt;
+  &lt;confidentialityCode codeSystem="2.16.840.1.113883.5.25" codeSystemName="ConfidentialityCode"/&gt;
+  &lt;setId root="MDHT" extension="8b1b310a-c1c6-4144-a431-394d2a47515f"/&gt;
+  &lt;versionNumber value="1"/&gt;
+  &lt;recordTarget&gt;
+    &lt;typeId root="2.16.840.1.113883.1.3"/&gt;
+    &lt;patientRole/&gt;
+  &lt;/recordTarget&gt;
+  &lt;author&gt;
+    &lt;typeId root="2.16.840.1.113883.1.3"/&gt;
+    &lt;time/&gt;
+    &lt;assignedAuthor/&gt;
+  &lt;/author&gt;
+  &lt;custodian/&gt;
+  &lt;component&gt;
+    &lt;structuredBody&gt;
+      &lt;component&gt;
+        &lt;section/&gt;
+      &lt;/component&gt;
+    &lt;/structuredBody&gt;
+  &lt;/component&gt;
+&lt;/ClinicalDocument&gt;</pre>
+
+</div>
+
+<div class="related-links">
+<div class="familylinks">
+<div class="parentlink"><strong>Parent topic:</strong> <a class="link" href="../content/DocumentTemplates.html">DOCUMENT TEMPLATES</a></div>
+</div>
+</div>
+
+</body>
+</html>
