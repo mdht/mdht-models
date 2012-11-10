@@ -3,6 +3,7 @@
 	<name>org.openhealthtools.mdht.uml.cda.ihe.doc</name>
 	<comment></comment>
 	<projects>
+		<project>org.openhealthtools.mdht.uml.cda.ihe</project>
 	</projects>
 	<buildSpec>
 	</buildSpec>

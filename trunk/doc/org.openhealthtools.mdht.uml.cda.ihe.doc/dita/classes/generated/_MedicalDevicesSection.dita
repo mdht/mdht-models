@@ -12,10 +12,10 @@
 <p>The medical devices section contains narrative text describing the patient history of medical device use.</p>
 </section>
 <ol id="conformance">
-<li><b>SHALL</b> conform to <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.ccd.doc/classes/MedicalEquipmentSection.html">CCD Medical Equipment Section</xref> template (templateId: <tt>2.16.840.1.113883.10.20.1.7</tt>)</li>
+<li><b>SHALL</b> conform to <xref format="html" href="PLUGINS_ROOT/org.openhealthtools.mdht.uml.cda.ccd.doc/classes/MedicalEquipmentSection.html">CCD Medical Equipment Section</xref> template (templateId: <tt>2.16.840.1.113883.10.20.1.7</tt>)</li>
 </ol>
 <ol id="aggregate">
-<li><b>SHALL</b> conform to <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.ccd.doc/classes/MedicalEquipmentSection.html">CCD Medical Equipment Section</xref> template (templateId: <tt>2.16.840.1.113883.10.20.1.7</tt>)</li>
+<li><b>SHALL</b> conform to <xref format="html" href="PLUGINS_ROOT/org.openhealthtools.mdht.uml.cda.ccd.doc/classes/MedicalEquipmentSection.html">CCD Medical Equipment Section</xref> template (templateId: <tt>2.16.840.1.113883.10.20.1.7</tt>)</li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="46264-8" </tt><i>History of medical device use</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF-372, CONF-373)
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>title</b></tt> (CONF-374)

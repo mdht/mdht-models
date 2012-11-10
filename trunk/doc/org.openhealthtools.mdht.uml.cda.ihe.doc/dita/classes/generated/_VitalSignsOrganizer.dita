@@ -14,7 +14,7 @@ A vital signs organizer collects vital signs observations.
 </p>
 </section>
 <ol id="conformance">
-<li><b>SHALL</b> conform to <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.ccd.doc/classes/VitalSignsOrganizer.html">CCD Vital Signs Organizer</xref> template (templateId: <tt>2.16.840.1.113883.10.20.1.35</tt>) (6.3.4.21.3)</li>
+<li><b>SHALL</b> conform to <xref format="html" href="PLUGINS_ROOT/org.openhealthtools.mdht.uml.cda.ccd.doc/classes/VitalSignsOrganizer.html">CCD Vital Signs Organizer</xref> template (templateId: <tt>2.16.840.1.113883.10.20.1.35</tt>) (6.3.4.21.3)</li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="CLUSTER" </tt> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>) (6.3.4.21.2)
 <ul><li><p>
 The vital signs organizer is a cluster of vital signs observations.
@@ -35,8 +35,8 @@ The vital signs organizer is a cluster of vital signs observations.
 <li><b>SHALL</b> satisfy: ccd::ResultOrganizer template ID (2.16.840.1.113883.10.20.1.32) is included (6.3.4.21.3)<ul><li><codeblock>[OCL]: self.templateId-&gt;exists(id : datatypes::II | id.root ='2.16.840.1.113883.10.20.1.32')</codeblock></li></ul></li>
 </ol>
 <ol id="aggregate">
-<li><b>SHALL</b> conform to <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.ccd.doc/classes/ResultOrganizer.html">CCD Result Organizer</xref> template (templateId: <tt>2.16.840.1.113883.10.20.1.32</tt>)</li>
-<li><b>SHALL</b> conform to <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.ccd.doc/classes/VitalSignsOrganizer.html">CCD Vital Signs Organizer</xref> template (templateId: <tt>2.16.840.1.113883.10.20.1.35</tt>)</li>
+<li><b>SHALL</b> conform to <xref format="html" href="PLUGINS_ROOT/org.openhealthtools.mdht.uml.cda.ccd.doc/classes/ResultOrganizer.html">CCD Result Organizer</xref> template (templateId: <tt>2.16.840.1.113883.10.20.1.32</tt>)</li>
+<li><b>SHALL</b> conform to <xref format="html" href="PLUGINS_ROOT/org.openhealthtools.mdht.uml.cda.ccd.doc/classes/VitalSignsOrganizer.html">CCD Vital Signs Organizer</xref> template (templateId: <tt>2.16.840.1.113883.10.20.1.35</tt>)</li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="CLUSTER" </tt> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>) (6.3.4.21.2)
 <ul><li><p>
 The vital signs organizer is a cluster of vital signs observations.

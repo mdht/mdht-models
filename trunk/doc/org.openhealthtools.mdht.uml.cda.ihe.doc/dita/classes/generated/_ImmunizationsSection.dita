@@ -13,14 +13,14 @@
 past. It shall include entries for medication administration as described in the Entry Content Modules.</p>
 </section>
 <ol id="conformance">
-<li><b>SHALL</b> conform to <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.ccd.doc/classes/ImmunizationsSection.html">CCD Immunizations Section</xref> template (templateId: <tt>2.16.840.1.113883.10.20.1.6</tt>)</li>
+<li><b>SHALL</b> conform to <xref format="html" href="PLUGINS_ROOT/org.openhealthtools.mdht.uml.cda.ccd.doc/classes/ImmunizationsSection.html">CCD Immunizations Section</xref> template (templateId: <tt>2.16.840.1.113883.10.20.1.6</tt>)</li>
 <li><b>SHALL</b> contain at least one [1..*] <tt><b>entry</b></tt>, such that
 <ol>
 <li>Contains exactly one [1..1] <xref href="../Immunization.dita">Immunization</xref> (templateId: <tt>1.3.6.1.4.1.19376.1.5.3.1.4.12</tt>)</li></ol></li>
 </ol>
 <ol id="aggregate">
-<li><b>SHALL</b> conform to <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.ccd.doc/classes/MedicationsSection.html">CCD Medications Section</xref> template (templateId: <tt>2.16.840.1.113883.10.20.1.8</tt>)</li>
-<li><b>SHALL</b> conform to <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.ccd.doc/classes/ImmunizationsSection.html">CCD Immunizations Section</xref> template (templateId: <tt>2.16.840.1.113883.10.20.1.6</tt>)</li>
+<li><b>SHALL</b> conform to <xref format="html" href="PLUGINS_ROOT/org.openhealthtools.mdht.uml.cda.ccd.doc/classes/MedicationsSection.html">CCD Medications Section</xref> template (templateId: <tt>2.16.840.1.113883.10.20.1.8</tt>)</li>
+<li><b>SHALL</b> conform to <xref format="html" href="PLUGINS_ROOT/org.openhealthtools.mdht.uml.cda.ccd.doc/classes/ImmunizationsSection.html">CCD Immunizations Section</xref> template (templateId: <tt>2.16.840.1.113883.10.20.1.6</tt>)</li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="11369-6" </tt><i>History of immunizations</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF-377, CONF-378)
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>title</b></tt> (CONF-379)

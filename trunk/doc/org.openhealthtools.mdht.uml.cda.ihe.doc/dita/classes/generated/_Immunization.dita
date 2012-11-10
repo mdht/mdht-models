@@ -11,7 +11,7 @@
 <section id="description">
 </section>
 <ol id="conformance">
-<li><b>SHALL</b> conform to <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.ccd.doc/classes/MedicationActivity.html">CCD Medication Activity</xref> template (templateId: <tt>2.16.840.1.113883.10.20.1.24</tt>)</li>
+<li><b>SHALL</b> conform to <xref format="html" href="PLUGINS_ROOT/org.openhealthtools.mdht.uml.cda.ccd.doc/classes/MedicationActivity.html">CCD Medication Activity</xref> template (templateId: <tt>2.16.840.1.113883.10.20.1.24</tt>)</li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (6.3.4.17.2)
 </li>
 <li><b>SHALL</b> contain zero or one [0..1] <tt><b>code</b></tt><tt><b>/@code</b>="IMMUNIZ" </tt> (CodeSystem:<tt> 2.16.840.1.113883.5.4 HL7ActCode</tt>) (6.3.4.17.5)
@@ -35,7 +35,7 @@ identifying the site.</li></ul></li>
 <li><b>SHALL</b> satisfy: If negationInd is set to TRUE atleast one comment shall exist that provides an explanation for why the immunization did not take place. Other comments may also be present<ul><li><codeblock>[OCL]: self.negationInd=true implies not self.entryRelationship.act-&gt;select( act | act.oclIsKindOf(ccd::Comment) )-&gt;isEmpty()</codeblock></li></ul></li>
 </ol>
 <ol id="aggregate">
-<li><b>SHALL</b> conform to <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.ccd.doc/classes/MedicationActivity.html">CCD Medication Activity</xref> template (templateId: <tt>2.16.840.1.113883.10.20.1.24</tt>)</li>
+<li><b>SHALL</b> conform to <xref format="html" href="PLUGINS_ROOT/org.openhealthtools.mdht.uml.cda.ccd.doc/classes/MedicationActivity.html">CCD Medication Activity</xref> template (templateId: <tt>2.16.840.1.113883.10.20.1.24</tt>)</li>
 <li>Contains exactly one [1..1] <tt><b>@classCode</b>="SBADM" </tt> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>), where its data type is ActClass
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (6.3.4.17.2)

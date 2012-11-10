@@ -11,7 +11,7 @@
 <section id="description">
 </section>
 <ol id="conformance">
-<li><b>SHALL</b> conform to <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.ccd.doc/classes/SupportGuardian.html">CCD Support Guardian</xref></li>
+<li><b>SHALL</b> conform to <xref format="html" href="PLUGINS_ROOT/org.openhealthtools.mdht.uml.cda.ccd.doc/classes/SupportGuardian.html">CCD Support Guardian</xref></li>
 <li><b>SHALL</b> conform to <xref href="../PatientContact.dita">Patient Contact</xref></li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="GUAR" </tt>
 </li>
@@ -24,8 +24,8 @@
 </ol>
 <ol id="aggregate">
 <li><b>SHALL</b> conform to <xref href="../PatientContact.dita">Patient Contact</xref></li>
-<li><b>SHALL</b> conform to <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.ccd.doc/classes/Support.html">CCD Support</xref></li>
-<li><b>SHALL</b> conform to <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.ccd.doc/classes/SupportGuardian.html">CCD Support Guardian</xref></li>
+<li><b>SHALL</b> conform to <xref format="html" href="PLUGINS_ROOT/org.openhealthtools.mdht.uml.cda.ccd.doc/classes/Support.html">CCD Support</xref></li>
+<li><b>SHALL</b> conform to <xref format="html" href="PLUGINS_ROOT/org.openhealthtools.mdht.uml.cda.ccd.doc/classes/SupportGuardian.html">CCD Support Guardian</xref></li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="GUAR" </tt>
 </li>
 <li><b>SHALL</b> contain zero or one [0..1] <tt><b>code</b></tt> (CodeSystem:<tt> 2.16.840.1.113883.5.111 RoleCode</tt>)

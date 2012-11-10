@@ -12,11 +12,11 @@
 </section>
 <ol id="conformance">
 <li><b>SHALL</b> conform to <xref href="../ProblemEntry.dita">Problem Entry</xref> template (templateId: <tt>1.3.6.1.4.1.19376.1.5.3.1.4.5</tt>)</li>
-<li><b>SHALL</b> conform to <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.ccd.doc/classes/ReactionObservation.html">CCD Reaction Observation</xref> template (templateId: <tt>2.16.840.1.113883.10.20.1.54</tt>)</li>
+<li><b>SHALL</b> conform to <xref format="html" href="PLUGINS_ROOT/org.openhealthtools.mdht.uml.cda.ccd.doc/classes/ReactionObservation.html">CCD Reaction Observation</xref> template (templateId: <tt>2.16.840.1.113883.10.20.1.54</tt>)</li>
 </ol>
 <ol id="aggregate">
-<li><b>SHALL</b> conform to <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.ccd.doc/classes/ReactionObservation.html">CCD Reaction Observation</xref> template (templateId: <tt>2.16.840.1.113883.10.20.1.54</tt>)</li>
-<li><b>SHALL</b> conform to <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.ccd.doc/classes/ProblemObservation.html">CCD Problem Observation</xref> template (templateId: <tt>2.16.840.1.113883.10.20.1.28</tt>)</li>
+<li><b>SHALL</b> conform to <xref format="html" href="PLUGINS_ROOT/org.openhealthtools.mdht.uml.cda.ccd.doc/classes/ReactionObservation.html">CCD Reaction Observation</xref> template (templateId: <tt>2.16.840.1.113883.10.20.1.54</tt>)</li>
+<li><b>SHALL</b> conform to <xref format="html" href="PLUGINS_ROOT/org.openhealthtools.mdht.uml.cda.ccd.doc/classes/ProblemObservation.html">CCD Problem Observation</xref> template (templateId: <tt>2.16.840.1.113883.10.20.1.28</tt>)</li>
 <li><b>SHALL</b> conform to <xref href="../ProblemEntry.dita">Problem Entry</xref> template (templateId: <tt>1.3.6.1.4.1.19376.1.5.3.1.4.5</tt>)</li>
 <li>Contains exactly one [1..1] <tt><b>@classCode</b>="OBS" </tt><i>Observation</i> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>)
 </li>

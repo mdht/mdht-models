@@ -29,10 +29,10 @@ relevant.
 </p>
 </section>
 <ol id="conformance">
-<li><b>SHALL</b> conform to <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.ccd.doc/classes/Product.html">CCD Product</xref> template (templateId: <tt>2.16.840.1.113883.10.20.1.53</tt>)</li>
+<li><b>SHALL</b> conform to <xref format="html" href="PLUGINS_ROOT/org.openhealthtools.mdht.uml.cda.ccd.doc/classes/Product.html">CCD Product</xref> template (templateId: <tt>2.16.840.1.113883.10.20.1.53</tt>)</li>
 </ol>
 <ol id="aggregate">
-<li><b>SHALL</b> conform to <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.ccd.doc/classes/Product.html">CCD Product</xref> template (templateId: <tt>2.16.840.1.113883.10.20.1.53</tt>)</li>
+<li><b>SHALL</b> conform to <xref format="html" href="PLUGINS_ROOT/org.openhealthtools.mdht.uml.cda.ccd.doc/classes/Product.html">CCD Product</xref> template (templateId: <tt>2.16.840.1.113883.10.20.1.53</tt>)</li>
 <li><b>MAY</b> contain at least one [1..*] <tt><b>id</b></tt> (CONF-366)
 <ul><li>uniquely represents a particular kind of product</li></ul></li>
 <li><b>SHALL</b> satisfy: Contain exactly one manufacturedMaterial. (CONF-357)<ul><li><codeblock>[OCL]: not self.manufacturedMaterial.oclIsUndefined()</codeblock></li></ul></li>

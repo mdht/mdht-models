@@ -13,10 +13,10 @@
 expectations and requests for care along with the locations of the documents.</p>
 </section>
 <ol id="conformance">
-<li><b>SHALL</b> conform to <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.ccd.doc/classes/AdvanceDirectivesSection.html">CCD Advance Directives Section</xref> template (templateId: <tt>2.16.840.1.113883.10.20.1.1</tt>)</li>
+<li><b>SHALL</b> conform to <xref format="html" href="PLUGINS_ROOT/org.openhealthtools.mdht.uml.cda.ccd.doc/classes/AdvanceDirectivesSection.html">CCD Advance Directives Section</xref> template (templateId: <tt>2.16.840.1.113883.10.20.1.1</tt>)</li>
 </ol>
 <ol id="aggregate">
-<li><b>SHALL</b> conform to <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.ccd.doc/classes/AdvanceDirectivesSection.html">CCD Advance Directives Section</xref> template (templateId: <tt>2.16.840.1.113883.10.20.1.1</tt>)</li>
+<li><b>SHALL</b> conform to <xref format="html" href="PLUGINS_ROOT/org.openhealthtools.mdht.uml.cda.ccd.doc/classes/AdvanceDirectivesSection.html">CCD Advance Directives Section</xref> template (templateId: <tt>2.16.840.1.113883.10.20.1.1</tt>)</li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="42348-3" </tt><i>Advance directives</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF-78, CONF-79)
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>title</b></tt> (CONF-80)
