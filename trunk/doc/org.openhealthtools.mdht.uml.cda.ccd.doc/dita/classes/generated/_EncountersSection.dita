@@ -54,12 +54,12 @@
 </tbody></tgroup></table></p></section>
 <codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
 <section xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd">
-  <id root="MDHT" extension="1062569786"/>
+  <id root="MDHT" extension="1996276166"/>
   <title>TEXT FOR TITLE</title>
   <text/>
   <entry>
     <encounter>
-      <id root="MDHT" extension="1979874105"/>
+      <id root="MDHT" extension="1976700629"/>
       <text>Text Value</text>
       <effectiveTime>
         <low value="2012"/>
@@ -70,8 +70,8 @@
       </participant>
       <entryRelationship>
         <act>
-          <id root="MDHT" extension="1135465622"/>
-          <code code="1018460879"/>
+          <id root="MDHT" extension="2134972425"/>
+          <code code="169244420"/>
           <text>Text Value</text>
           <effectiveTime>
             <low value="2012"/>
@@ -81,8 +81,8 @@
       </entryRelationship>
       <entryRelationship>
         <observation>
-          <id root="MDHT" extension="1382280274"/>
-          <code code="422869393"/>
+          <id root="MDHT" extension="2016746123"/>
+          <code code="1438488858"/>
           <text>Text Value</text>
           <effectiveTime>
             <low value="2012"/>

@@ -20,7 +20,7 @@
 </head>
 <body id="classId">
 <div>
-	<p><b>Development Only.</b> The Normative content for these specifications
+	<p><b>Non-Normative Content</b> The Normative content for these specifications
 	may be found on the HL7, IHE, and HITSP web sites.</p>
 </div>
 
@@ -39,39 +39,15 @@
 
 
 
-
 <ol class="ol">
-<li class="li">Contains exactly one [1..1] <tt class="ph tt"><strong class="ph b">@classCode</strong>="SPLY" </tt> with data type ActClassSupply (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.5.6 HL7ActClass</tt>)
-</li>
-
-<li class="li">Contains exactly one [1..1] <tt class="ph tt"><strong class="ph b">@moodCode</strong></tt> with data type x_DocumentSubstanceMood
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] templateId (  ) such that it <ol class="ol" type="a"><li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <strong class="ph b">@root</strong>="2.16.840.1.113883.10.20.1.34"</li>
+</ol>
 </li>
 
 <li class="li"><strong class="ph b">SHALL</strong> contain at least one [1..*] <tt class="ph tt"><strong class="ph b">id</strong></tt> (CONF-318)
 </li>
 
 <li class="li"><strong class="ph b">SHOULD</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">statusCode</strong></tt> (CONF-319)
-</li>
-
-<li class="li"><strong class="ph b">SHOULD</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">effectiveTime</strong></tt> (CONF-320)
-<ul class="ul"><li class="li"><div class="p"><p class="lines"><em class="ph i">Indicates the actual or intended time of dispensing.</em></p>
-</div>
-</li>
-</ul>
-</li>
-
-<li class="li"><strong class="ph b">MAY</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">repeatNumber</strong></tt> (CONF-321)
-<ul class="ul"><li class="li"><div class="p"><p class="lines"><em class="ph i">Indicates the number of fills. (Note that repeatNumber corresponds to the number of "fills", as opposed to the number of "refills").</em></p>
-</div>
-</li>
-</ul>
-</li>
-
-<li class="li"><strong class="ph b">MAY</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">quantity</strong></tt> (CONF-322)
-<ul class="ul"><li class="li"><div class="p"><p class="lines"><em class="ph i">Indicates the actual or intended supply quantity.</em></p>
-</div>
-</li>
-</ul>
 </li>
 
 <li class="li"><strong class="ph b">MAY</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">entryRelationship</strong></tt> (CONF-351)
@@ -86,6 +62,27 @@
 
 <li class="li">Contains exactly one [1..1] <a class="xref" href="FulfillmentInstruction.html" title="[Act: templateId 2.16.840.1.113883.10.20.1.43]">Fulfillment Instruction</a> (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.1.43</tt>)</li>
 </ol>
+</li>
+
+<li class="li"><strong class="ph b">SHOULD</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">effectiveTime</strong></tt> (CONF-320)
+<ul class="ul"><li class="li"><div class="p"><p class="lines"><em class="ph i">Indicates the actual or intended time of dispensing.</em></p>
+</div>
+</li>
+</ul>
+</li>
+
+<li class="li"><strong class="ph b">MAY</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">quantity</strong></tt> (CONF-322)
+<ul class="ul"><li class="li"><div class="p"><p class="lines"><em class="ph i">Indicates the actual or intended supply quantity.</em></p>
+</div>
+</li>
+</ul>
+</li>
+
+<li class="li"><strong class="ph b">MAY</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">repeatNumber</strong></tt> (CONF-321)
+<ul class="ul"><li class="li"><div class="p"><p class="lines"><em class="ph i">Indicates the number of fills. (Note that repeatNumber corresponds to the number of "fills", as opposed to the number of "refills").</em></p>
+</div>
+</li>
+</ul>
 </li>
 
 <li class="li"><strong class="ph b">MAY</strong> contain at least one [1..*] <tt class="ph tt"><strong class="ph b">participant</strong></tt> (CONF-369)
@@ -110,6 +107,7 @@
 
 </ol>
 
+
 <p class="p"> </p>
 
 <p class="p"><strong class="ph b">Supply Activity example</strong></p>
@@ -118,15 +116,15 @@
 
 <pre class="pre codeblock">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
 &lt;supply xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd"&gt;
-  &lt;id root="MDHT" extension="2090432183"/&gt;
+  &lt;id root="MDHT" extension="487573545"/&gt;
   &lt;statusCode code="completed"/&gt;
-  &lt;effectiveTime value="20121108"/&gt;
+  &lt;effectiveTime value="20121109"/&gt;
   &lt;repeatNumber value="1"/&gt;
   &lt;quantity/&gt;
   &lt;entryRelationship&gt;
     &lt;observation&gt;
-      &lt;id root="MDHT" extension="1872649301"/&gt;
-      &lt;code code="824664834"/&gt;
+      &lt;id root="MDHT" extension="479354780"/&gt;
+      &lt;code code="713403067"/&gt;
       &lt;statusCode code="completed"/&gt;
       &lt;effectiveTime&gt;
         &lt;low value="2012"/&gt;
@@ -137,8 +135,8 @@
   &lt;/entryRelationship&gt;
   &lt;entryRelationship&gt;
     &lt;act&gt;
-      &lt;id root="MDHT" extension="1327420395"/&gt;
-      &lt;code code="450919491"/&gt;
+      &lt;id root="MDHT" extension="2107587911"/&gt;
+      &lt;code code="644670132"/&gt;
       &lt;statusCode code="completed"/&gt;
       &lt;effectiveTime&gt;
         &lt;low value="2012"/&gt;

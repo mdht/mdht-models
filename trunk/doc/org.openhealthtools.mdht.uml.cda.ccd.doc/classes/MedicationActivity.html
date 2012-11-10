@@ -20,7 +20,7 @@
 </head>
 <body id="classId">
 <div>
-	<p><b>Development Only.</b> The Normative content for these specifications
+	<p><b>Non-Normative Content</b> The Normative content for these specifications
 	may be found on the HL7, IHE, and HITSP web sites.</p>
 </div>
 
@@ -42,47 +42,15 @@
 
 
 
-
 <ol class="ol">
-<li class="li">Contains exactly one [1..1] <tt class="ph tt"><strong class="ph b">@classCode</strong>="SBADM" </tt> with data type ActClass (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.5.6 HL7ActClass</tt>)
-</li>
-
-<li class="li">Contains exactly one [1..1] <tt class="ph tt"><strong class="ph b">@moodCode</strong></tt> with data type x_DocumentSubstanceMood
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] templateId (  ) such that it <ol class="ol" type="a"><li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <strong class="ph b">@root</strong>="2.16.840.1.113883.10.20.1.24"</li>
+</ol>
 </li>
 
 <li class="li"><strong class="ph b">SHALL</strong> contain at least one [1..*] <tt class="ph tt"><strong class="ph b">id</strong></tt> (CONF-306)
 </li>
 
 <li class="li"><strong class="ph b">SHOULD</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">statusCode</strong></tt> (CONF-307)
-</li>
-
-<li class="li"><strong class="ph b">SHOULD</strong> contain at least one [1..*] <tt class="ph tt"><strong class="ph b">effectiveTime</strong></tt> (CONF-308)
-<ul class="ul"><li class="li"><div class="p"><p class="lines"><em class="ph i">Used to indicate the actual or intended start and stop date of a medication, and the frequency of administration.</em></p>
-</div>
-</li>
-</ul>
-</li>
-
-<li class="li"><strong class="ph b">SHOULD</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">routeCode</strong></tt>, where the @code <strong class="ph b">SHOULD</strong> be selected from (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.5.112 HL7 RouteOfAdministration</tt>) (CONF-309, CONF-310)
-</li>
-
-<li class="li"><strong class="ph b">SHOULD</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">doseQuantity</strong></tt>
-</li>
-
-<li class="li"><strong class="ph b">SHOULD</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">rateQuantity</strong></tt>
-</li>
-
-<li class="li"><strong class="ph b">MAY</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">maxDoseQuantity</strong></tt> (CONF-312)
-<ul class="ul"><li class="li"><div class="p"><p class="lines"><em class="ph i">represents a maximum dose limit</em></p>
-</div>
-</li>
-</ul>
-</li>
-
-<li class="li">Contains exactly one [1..1] <tt class="ph tt"><strong class="ph b">consumable</strong></tt>, where its type is <a class="xref" href="generated/../Consumable.html">Consumable</a>
-<ol class="ol" type="a">
-<li class="li">Contains exactly one [1..1] <a class="xref" href="generated/../Consumable.html">Consumable</a></li>
-</ol>
 </li>
 
 <li class="li"><strong class="ph b">MAY</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">entryRelationship</strong></tt> (CONF-338, CONF-339)
@@ -107,14 +75,31 @@
 </ol>
 </li>
 
+<li class="li"><strong class="ph b">SHOULD</strong> contain at least one [1..*] <tt class="ph tt"><strong class="ph b">effectiveTime</strong></tt> (CONF-308)
+<ul class="ul"><li class="li"><div class="p"><p class="lines"><em class="ph i">Used to indicate the actual or intended start and stop date of a medication, and the frequency of administration.</em></p>
+</div>
+</li>
+</ul>
+</li>
+
+<li class="li"><strong class="ph b">MAY</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">maxDoseQuantity</strong></tt> (CONF-312)
+<ul class="ul"><li class="li"><div class="p"><p class="lines"><em class="ph i">represents a maximum dose limit</em></p>
+</div>
+</li>
+</ul>
+</li>
+
+<li class="li"><strong class="ph b">SHOULD</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">routeCode</strong></tt>, where the @code <strong class="ph b">SHOULD</strong> be selected from (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.5.112 HL7 RouteOfAdministration</tt>) (CONF-309, CONF-310)
+</li>
+
 <li class="li"><strong class="ph b">MAY</strong> contain at least one [1..*] <tt class="ph tt"><strong class="ph b">performer</strong></tt> (CONF-313)
-<ol class="ol" type="a">
-<li class="li">Contains exactly one [1..1] CDA Performer2</li>
-</ol>
 <ul class="ul"><li class="li"><div class="p"><p class="lines"><em class="ph i">Indicates the person administering a substance.</em></p>
 </div>
 </li>
 </ul>
+<ol class="ol" type="a">
+<li class="li">Contains exactly one [1..1] CDA Performer2</li>
+</ol>
 </li>
 
 <li class="li"><strong class="ph b">MAY</strong> contain at least one [1..*] <tt class="ph tt"><strong class="ph b">entryRelationship</strong></tt> (CONF-348, CONF-349)
@@ -129,6 +114,12 @@
 <ol class="ol" type="a">
 <li class="li">Contains exactly one [1..1] <a class="xref" href="ProductInstance.html" title="[ParticipantRole: templateId 2.16.840.1.113883.10.20.1.52]">Product Instance</a> (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.1.52</tt>)</li>
 </ol>
+</li>
+
+<li class="li"><strong class="ph b">SHOULD</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">doseQuantity</strong></tt>
+</li>
+
+<li class="li"><strong class="ph b">SHOULD</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">rateQuantity</strong></tt>
 </li>
 
 <li class="li"><strong class="ph b">SHALL</strong> satisfy: Value for moodCode is "EVN" or "INT" 2.16.840.1.113883.5.1001 ActMood STATIC (CONF-305)</li>
@@ -149,6 +140,7 @@
 
 </ol>
 
+
 <p class="p"> </p>
 
 <p class="p"><strong class="ph b">Medication Activity example</strong></p>
@@ -157,9 +149,9 @@
 
 <pre class="pre codeblock">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
 &lt;substanceadministration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd"&gt;
-  &lt;id root="MDHT" extension="652444141"/&gt;
+  &lt;id root="MDHT" extension="2005975780"/&gt;
   &lt;statusCode code="completed"/&gt;
-  &lt;effectiveTime value="20121108"/&gt;
+  &lt;effectiveTime value="20121109"/&gt;
   &lt;doseQuantity/&gt;
   &lt;rateQuantity/&gt;
   &lt;maxDoseQuantity/&gt;
@@ -167,8 +159,8 @@
   &lt;performer/&gt;
   &lt;entryRelationship&gt;
     &lt;observation&gt;
-      &lt;id root="MDHT" extension="449496075"/&gt;
-      &lt;code code="145267197"/&gt;
+      &lt;id root="MDHT" extension="1779813470"/&gt;
+      &lt;code code="2024791505"/&gt;
       &lt;statusCode code="completed"/&gt;
       &lt;effectiveTime&gt;
         &lt;low value="2012"/&gt;
@@ -178,8 +170,8 @@
   &lt;/entryRelationship&gt;
   &lt;entryRelationship&gt;
     &lt;observation&gt;
-      &lt;id root="MDHT" extension="2101262497"/&gt;
-      &lt;code code="1595082125"/&gt;
+      &lt;id root="MDHT" extension="1121317475"/&gt;
+      &lt;code code="801113385"/&gt;
       &lt;statusCode code="completed"/&gt;
       &lt;effectiveTime&gt;
         &lt;low value="2012"/&gt;
@@ -189,8 +181,8 @@
   &lt;/entryRelationship&gt;
   &lt;entryRelationship&gt;
     &lt;act&gt;
-      &lt;id root="MDHT" extension="1361024227"/&gt;
-      &lt;code code="1398972290"/&gt;
+      &lt;id root="MDHT" extension="234735060"/&gt;
+      &lt;code code="221401649"/&gt;
       &lt;statusCode code="completed"/&gt;
       &lt;effectiveTime&gt;
         &lt;low value="2012"/&gt;
@@ -200,8 +192,8 @@
   &lt;/entryRelationship&gt;
   &lt;entryRelationship&gt;
     &lt;observation&gt;
-      &lt;id root="MDHT" extension="796833892"/&gt;
-      &lt;code code="1924830959"/&gt;
+      &lt;id root="MDHT" extension="652717385"/&gt;
+      &lt;code code="92929305"/&gt;
       &lt;statusCode code="completed"/&gt;
       &lt;effectiveTime&gt;
         &lt;low value="2012"/&gt;
@@ -209,8 +201,8 @@
       &lt;/effectiveTime&gt;
       &lt;entryRelationship&gt;
         &lt;observation&gt;
-          &lt;id root="MDHT" extension="1443305634"/&gt;
-          &lt;code code="1197246372"/&gt;
+          &lt;id root="MDHT" extension="303911756"/&gt;
+          &lt;code code="680364651"/&gt;
           &lt;statusCode code="completed"/&gt;
           &lt;effectiveTime&gt;
             &lt;low value="2012"/&gt;

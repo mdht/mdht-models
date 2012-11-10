@@ -20,7 +20,7 @@
 </head>
 <body id="classId">
 <div>
-	<p><b>Development Only.</b> The Normative content for these specifications
+	<p><b>Non-Normative Content</b> The Normative content for these specifications
 	may be found on the HL7, IHE, and HITSP web sites.</p>
 </div>
 
@@ -48,8 +48,11 @@ The ASTM CCR includes 'administrative data (ADT) such as marital status, ethnici
 
 
 
-
 <ol class="ol">
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] templateId ( CONF-232 ) such that it <ol class="ol" type="a"><li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <strong class="ph b">@root</strong>="2.16.840.1.113883.10.20.1.15"</li>
+</ol>
+</li>
+
 <li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt><tt class="ph tt"><strong class="ph b">/@code</strong>="29762-2" </tt><em class="ph i">Social history</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF-233, CONF-234)
 </li>
 
@@ -81,6 +84,7 @@ The ASTM CCR includes 'administrative data (ADT) such as marital status, ethnici
 
 </ol>
 
+
 <p class="p"> </p>
 
 <p class="p"><strong class="ph b">Social History Section example</strong></p>
@@ -89,13 +93,13 @@ The ASTM CCR includes 'administrative data (ADT) such as marital status, ethnici
 
 <pre class="pre codeblock">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
 &lt;section xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd"&gt;
-  &lt;id root="MDHT" extension="473858150"/&gt;
+  &lt;id root="MDHT" extension="702098738"/&gt;
   &lt;title&gt;TEXT FOR TITLE&lt;/title&gt;
   &lt;text/&gt;
   &lt;entry&gt;
     &lt;observation&gt;
-      &lt;id root="MDHT" extension="906157366"/&gt;
-      &lt;code code="2059672324"/&gt;
+      &lt;id root="MDHT" extension="1749523162"/&gt;
+      &lt;code code="1289851433"/&gt;
       &lt;text&gt;Text Value&lt;/text&gt;
       &lt;effectiveTime&gt;
         &lt;low value="2012"/&gt;
@@ -103,8 +107,8 @@ The ASTM CCR includes 'administrative data (ADT) such as marital status, ethnici
       &lt;/effectiveTime&gt;
       &lt;entryRelationship&gt;
         &lt;observation&gt;
-          &lt;id root="MDHT" extension="1420291706"/&gt;
-          &lt;code code="1262789964"/&gt;
+          &lt;id root="MDHT" extension="1858222687"/&gt;
+          &lt;code code="168041688"/&gt;
           &lt;text&gt;Text Value&lt;/text&gt;
           &lt;effectiveTime&gt;
             &lt;low value="2012"/&gt;
@@ -114,8 +118,8 @@ The ASTM CCR includes 'administrative data (ADT) such as marital status, ethnici
       &lt;/entryRelationship&gt;
       &lt;entryRelationship&gt;
         &lt;observation&gt;
-          &lt;id root="MDHT" extension="1132407584"/&gt;
-          &lt;code code="1246604305"/&gt;
+          &lt;id root="MDHT" extension="1584649250"/&gt;
+          &lt;code code="2024143485"/&gt;
           &lt;text&gt;Text Value&lt;/text&gt;
           &lt;effectiveTime&gt;
             &lt;low value="2012"/&gt;

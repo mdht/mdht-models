@@ -20,7 +20,7 @@
 </head>
 <body id="classId">
 <div>
-	<p><b>Development Only.</b> The Normative content for these specifications
+	<p><b>Non-Normative Content</b> The Normative content for these specifications
 	may be found on the HL7, IHE, and HITSP web sites.</p>
 </div>
 
@@ -36,8 +36,11 @@
 
 
 
-
 <ol class="ol">
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] templateId ( CONF-35 ) such that it <ol class="ol" type="a"><li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <strong class="ph b">@root</strong>="2.16.840.1.113883.10.20.1.20"</li>
+</ol>
+</li>
+
 <li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@classCode</strong>="ACT" </tt><em class="ph i">Act</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.5.6 HL7ActClass</tt>) (CONF-36)
 </li>
 
@@ -47,10 +50,10 @@
 <li class="li"><strong class="ph b">SHALL</strong> contain at least one [1..*] <tt class="ph tt"><strong class="ph b">id</strong></tt> (CONF-38)
 </li>
 
-<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt><tt class="ph tt"><strong class="ph b">/@code</strong>="48768-6" </tt><em class="ph i">Payment sources</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF-41, CONF-42)
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">statusCode</strong></tt><tt class="ph tt"><strong class="ph b">/@code</strong>="completed" </tt> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.5.14 ActStatus</tt>) (CONF-39, CONF-40)
 </li>
 
-<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">statusCode</strong></tt><tt class="ph tt"><strong class="ph b">/@code</strong>="completed" </tt> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.5.14 ActStatus</tt>) (CONF-39, CONF-40)
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt><tt class="ph tt"><strong class="ph b">/@code</strong>="48768-6" </tt><em class="ph i">Payment sources</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF-41, CONF-42)
 </li>
 
 <li class="li"><strong class="ph b">SHALL</strong> contain at least one [1..*] <tt class="ph tt"><strong class="ph b">entryRelationship</strong></tt> (CONF-43, CONF-45, CONF-46)
@@ -67,6 +70,7 @@
 
 </ol>
 
+
 <p class="p"> </p>
 
 <p class="p"><strong class="ph b">Coverage Activity example</strong></p>
@@ -75,16 +79,16 @@
 
 <pre class="pre codeblock">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
 &lt;act xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd"&gt;
-  &lt;id root="MDHT" extension="1004141118"/&gt;
-  &lt;code code="943842913"/&gt;
+  &lt;id root="MDHT" extension="990481079"/&gt;
+  &lt;code code="1252942632"/&gt;
   &lt;effectiveTime&gt;
     &lt;low value="2012"/&gt;
     &lt;high value="2012"/&gt;
   &lt;/effectiveTime&gt;
   &lt;entryRelationship&gt;
     &lt;act&gt;
-      &lt;id root="MDHT" extension="1756602450"/&gt;
-      &lt;code code="1340148822"/&gt;
+      &lt;id root="MDHT" extension="2021782155"/&gt;
+      &lt;code code="1614862034"/&gt;
       &lt;effectiveTime&gt;
         &lt;low value="2012"/&gt;
         &lt;high value="2012"/&gt;

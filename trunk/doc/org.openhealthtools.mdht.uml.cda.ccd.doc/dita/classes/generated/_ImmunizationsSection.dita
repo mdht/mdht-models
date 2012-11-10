@@ -58,20 +58,20 @@
 </tbody></tgroup></table></p></section>
 <codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
 <section xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd">
-  <id root="MDHT" extension="249531675"/>
+  <id root="MDHT" extension="537704013"/>
   <title>TEXT FOR TITLE</title>
   <text/>
   <entry>
     <substanceAdministration>
-      <id root="MDHT" extension="704108196"/>
+      <id root="MDHT" extension="1315540614"/>
       <text>Text Value</text>
-      <effectiveTime value="20121108"/>
+      <effectiveTime value="20121109"/>
       <consumable/>
       <performer/>
       <entryRelationship>
         <observation>
-          <id root="MDHT" extension="246270161"/>
-          <code code="807033475"/>
+          <id root="MDHT" extension="1089653932"/>
+          <code code="2111609435"/>
           <text>Text Value</text>
           <effectiveTime>
             <low value="2012"/>
@@ -81,8 +81,8 @@
       </entryRelationship>
       <entryRelationship>
         <observation>
-          <id root="MDHT" extension="2069152008"/>
-          <code code="1210001377"/>
+          <id root="MDHT" extension="1561095572"/>
+          <code code="695341020"/>
           <text>Text Value</text>
           <effectiveTime>
             <low value="2012"/>
@@ -92,8 +92,8 @@
       </entryRelationship>
       <entryRelationship>
         <act>
-          <id root="MDHT" extension="492773944"/>
-          <code code="1901870383"/>
+          <id root="MDHT" extension="864510923"/>
+          <code code="1405379874"/>
           <text>Text Value</text>
           <effectiveTime>
             <low value="2012"/>
@@ -103,8 +103,8 @@
       </entryRelationship>
       <entryRelationship>
         <observation>
-          <id root="MDHT" extension="1156287201"/>
-          <code code="1484727895"/>
+          <id root="MDHT" extension="1386412993"/>
+          <code code="185140792"/>
           <text>Text Value</text>
           <effectiveTime>
             <low value="2012"/>
@@ -119,13 +119,13 @@
   </entry>
   <entry>
     <supply>
-      <id root="MDHT" extension="559193545"/>
+      <id root="MDHT" extension="1180804960"/>
       <text>Text Value</text>
-      <effectiveTime value="20121108"/>
+      <effectiveTime value="20121109"/>
       <entryRelationship>
         <observation>
-          <id root="MDHT" extension="92216239"/>
-          <code code="358022091"/>
+          <id root="MDHT" extension="493334175"/>
+          <code code="1862558455"/>
           <text>Text Value</text>
           <effectiveTime>
             <low value="2012"/>
@@ -135,8 +135,8 @@
       </entryRelationship>
       <entryRelationship>
         <act>
-          <id root="MDHT" extension="36180227"/>
-          <code code="1059734770"/>
+          <id root="MDHT" extension="1994700481"/>
+          <code code="1802966089"/>
           <text>Text Value</text>
           <effectiveTime>
             <low value="2012"/>

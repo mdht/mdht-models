@@ -20,7 +20,7 @@
 </head>
 <body id="classId">
 <div>
-	<p><b>Development Only.</b> The Normative content for these specifications
+	<p><b>Non-Normative Content</b> The Normative content for these specifications
 	may be found on the HL7, IHE, and HITSP web sites.</p>
 </div>
 
@@ -36,50 +36,8 @@
 
 
 
-
 <ol class="ol">
-<li class="li">Contains exactly one [1..1] <tt class="ph tt"><strong class="ph b">typeId</strong></tt> with data type <a class="xref" href="generated/../InfrastructureRootTypeId.html">Infrastructure Root Type Id</a>
-</li>
-
-<li class="li">Contains exactly one [1..1] <tt class="ph tt"><strong class="ph b">id</strong></tt> with data type II
-</li>
-
-<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt><tt class="ph tt"><strong class="ph b">/@code</strong>="34133-9" </tt><em class="ph i">Summarization of episode note</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF-1)
-</li>
-
-<li class="li">Contains exactly one [1..1] <tt class="ph tt"><strong class="ph b">effectiveTime</strong></tt> with data type TS
-</li>
-
-<li class="li">Contains exactly one [1..1] <tt class="ph tt"><strong class="ph b">confidentialityCode</strong></tt> with data type CE
-</li>
-
-<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">languageCode</strong></tt> (CONF-5)
-<ol class="ol" type="a">
-<li class="li">languageCode has the form nn, or nn-CC. The nn portion <strong class="ph b">SHALL</strong> be an ISO-639-1 language code in lower case. The CC portion, if present, <strong class="ph b">SHALL</strong> be an ISO-3166 country code in upper case (CONF-6)</li>
-</ol>
-</li>
-
-<li class="li">Contains at least one [1..*] <tt class="ph tt"><strong class="ph b">recordTarget</strong></tt>, where its type is <a class="xref" href="generated/../RecordTarget.html">Record Target</a>
-<ol class="ol" type="a">
-<li class="li">Contains exactly one [1..1] <a class="xref" href="generated/../RecordTarget.html">Record Target</a></li>
-</ol>
-</li>
-
-<li class="li">Contains at least one [1..*] <tt class="ph tt"><strong class="ph b">author</strong></tt>, where its type is <a class="xref" href="generated/../Author.html">Author</a>
-<ol class="ol" type="a">
-<li class="li">Contains exactly one [1..1] <a class="xref" href="generated/../Author.html">Author</a></li>
-</ol>
-</li>
-
-<li class="li">Contains exactly one [1..1] <tt class="ph tt"><strong class="ph b">custodian</strong></tt>, where its type is <a class="xref" href="generated/../Custodian.html">Custodian</a>
-<ol class="ol" type="a">
-<li class="li">Contains exactly one [1..1] <a class="xref" href="generated/../Custodian.html">Custodian</a></li>
-</ol>
-</li>
-
-<li class="li">Contains exactly one [1..1] <tt class="ph tt"><strong class="ph b">component</strong></tt>, where its type is <a class="xref" href="generated/../Component2.html">Component2</a>
-<ol class="ol" type="a">
-<li class="li">Contains exactly one [1..1] <a class="xref" href="generated/../Component2.html">Component2</a></li>
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] templateId ( CONF-7, CONF-8 ) such that it <ol class="ol" type="a"><li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <strong class="ph b">@root</strong>="2.16.840.1.113883.10.20.1"</li>
 </ol>
 </li>
 
@@ -173,6 +131,15 @@
 </ol>
 </li>
 
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt><tt class="ph tt"><strong class="ph b">/@code</strong>="34133-9" </tt><em class="ph i">Summarization of episode note</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF-1)
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">languageCode</strong></tt> (CONF-5)
+<ol class="ol" type="a">
+<li class="li">languageCode has the form nn, or nn-CC. The nn portion <strong class="ph b">SHALL</strong> be an ISO-639-1 language code in lower case. The CC portion, if present, <strong class="ph b">SHALL</strong> be an ISO-3166 country code in upper case (CONF-6)</li>
+</ol>
+</li>
+
 <li class="li"><strong class="ph b">MAY</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">component</strong></tt> (CONF-15)
 <ol class="ol" type="a">
 <li class="li">Contains exactly one [1..1] <a class="xref" href="PurposeSection.html" title="[Section: templateId 2.16.840.1.113883.10.20.1.13]">Purpose Section</a> (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.1.13</tt>)</li>
@@ -184,8 +151,6 @@
 <li class="li">documentationOf / serviceEvent / @classCode <strong class="ph b">SHALL</strong> be 'PCPR' (CONF-3)</li>
 
 <li class="li"><strong class="ph b">SHALL</strong> satisfy: documentationOf / serviceEvent contains exactly one serviceEvent / effectiveTime / low and exactly one serviveEvent / effectiveTime / high (CONF-4)</li>
-
-<li class="li">languageCode has the form nn, or nn-CC. The nn portion <strong class="ph b">SHALL</strong> be an ISO-639-1 language code in lower case. The CC portion, if present, <strong class="ph b">SHALL</strong> be an ISO-3166 country code in upper case (CONF-6)</li>
 
 <li class="li"><strong class="ph b">SHALL NOT</strong> contain templateId / @extension (CONF-8)</li>
 
@@ -209,6 +174,7 @@
 
 </ol>
 
+
 <p class="p"> </p>
 
 <p class="p"><strong class="ph b">Continuity Of Care Document example</strong></p>
@@ -218,11 +184,11 @@
 <pre class="pre codeblock">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
 &lt;ClinicalDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd"&gt;
   &lt;typeId root="2.16.840.1.113883.1.3"/&gt;
-  &lt;id root="MDHT" extension="1459274710"/&gt;
-  &lt;code code="686491152"/&gt;
+  &lt;id root="MDHT" extension="36485350"/&gt;
+  &lt;code code="1936512750"/&gt;
   &lt;title&gt;TEXT FOR TITLE&lt;/title&gt;
   &lt;effectiveTime/&gt;
-  &lt;confidentialityCode code="1939984420"/&gt;
+  &lt;confidentialityCode code="664599952"/&gt;
   &lt;languageCode code="Code forlanguageCode"/&gt;
   &lt;recordTarget&gt;
     &lt;patientRole/&gt;
@@ -236,13 +202,13 @@
     &lt;structuredBody&gt;
       &lt;component&gt;
         &lt;section&gt;
-          &lt;id root="MDHT" extension="26551856"/&gt;
+          &lt;id root="MDHT" extension="14296515"/&gt;
           &lt;title&gt;TEXT FOR TITLE&lt;/title&gt;
           &lt;languageCode code="Code forlanguageCode"/&gt;
           &lt;entry&gt;
             &lt;act&gt;
-              &lt;id root="MDHT" extension="618574647"/&gt;
-              &lt;code code="543607525"/&gt;
+              &lt;id root="MDHT" extension="1478394589"/&gt;
+              &lt;code code="960060900"/&gt;
               &lt;effectiveTime&gt;
                 &lt;low value="2012"/&gt;
                 &lt;high value="2012"/&gt;
@@ -257,12 +223,12 @@
       &lt;/component&gt;
       &lt;component&gt;
         &lt;section&gt;
-          &lt;id root="MDHT" extension="1614824322"/&gt;
+          &lt;id root="MDHT" extension="1784875747"/&gt;
           &lt;title&gt;TEXT FOR TITLE&lt;/title&gt;
           &lt;languageCode code="Code forlanguageCode"/&gt;
           &lt;entry&gt;
             &lt;organizer&gt;
-              &lt;id root="MDHT" extension="229219818"/&gt;
+              &lt;id root="MDHT" extension="1182939350"/&gt;
               &lt;statusCode code="completed"/&gt;
               &lt;effectiveTime&gt;
                 &lt;low value="2012"/&gt;
@@ -277,13 +243,13 @@
       &lt;/component&gt;
       &lt;component&gt;
         &lt;section&gt;
-          &lt;id root="MDHT" extension="1544530020"/&gt;
+          &lt;id root="MDHT" extension="1760695778"/&gt;
           &lt;title&gt;TEXT FOR TITLE&lt;/title&gt;
           &lt;languageCode code="Code forlanguageCode"/&gt;
           &lt;entry&gt;
             &lt;observation&gt;
-              &lt;id root="MDHT" extension="912203909"/&gt;
-              &lt;code code="2069862313"/&gt;
+              &lt;id root="MDHT" extension="264081685"/&gt;
+              &lt;code code="1970723744"/&gt;
               &lt;effectiveTime&gt;
                 &lt;low value="2012"/&gt;
                 &lt;high value="2012"/&gt;
@@ -301,13 +267,13 @@
       &lt;/component&gt;
       &lt;component&gt;
         &lt;section&gt;
-          &lt;id root="MDHT" extension="1380525251"/&gt;
+          &lt;id root="MDHT" extension="576381932"/&gt;
           &lt;title&gt;TEXT FOR TITLE&lt;/title&gt;
           &lt;languageCode code="Code forlanguageCode"/&gt;
           &lt;entry&gt;
             &lt;act&gt;
-              &lt;id root="MDHT" extension="1751368472"/&gt;
-              &lt;code code="484435290"/&gt;
+              &lt;id root="MDHT" extension="1808072075"/&gt;
+              &lt;code code="1393624099"/&gt;
               &lt;effectiveTime&gt;
                 &lt;low value="2012"/&gt;
                 &lt;high value="2012"/&gt;
@@ -322,13 +288,13 @@
       &lt;/component&gt;
       &lt;component&gt;
         &lt;section&gt;
-          &lt;id root="MDHT" extension="1222317430"/&gt;
+          &lt;id root="MDHT" extension="1400180757"/&gt;
           &lt;title&gt;TEXT FOR TITLE&lt;/title&gt;
           &lt;languageCode code="Code forlanguageCode"/&gt;
           &lt;entry&gt;
             &lt;substanceAdministration classCode="SBADM"&gt;
-              &lt;id root="MDHT" extension="372026771"/&gt;
-              &lt;effectiveTime value="20121108"/&gt;
+              &lt;id root="MDHT" extension="1703563226"/&gt;
+              &lt;effectiveTime value="20121109"/&gt;
               &lt;consumable/&gt;
               &lt;performer/&gt;
               &lt;entryRelationship&gt;
@@ -347,8 +313,8 @@
           &lt;/entry&gt;
           &lt;entry&gt;
             &lt;supply classCode="SPLY"&gt;
-              &lt;id root="MDHT" extension="424067441"/&gt;
-              &lt;effectiveTime value="20121108"/&gt;
+              &lt;id root="MDHT" extension="663462711"/&gt;
+              &lt;effectiveTime value="20121109"/&gt;
               &lt;entryRelationship&gt;
                 &lt;observation/&gt;
               &lt;/entryRelationship&gt;
@@ -361,12 +327,12 @@
       &lt;/component&gt;
       &lt;component&gt;
         &lt;section&gt;
-          &lt;id root="MDHT" extension="1090311248"/&gt;
+          &lt;id root="MDHT" extension="1552075074"/&gt;
           &lt;title&gt;TEXT FOR TITLE&lt;/title&gt;
           &lt;languageCode code="Code forlanguageCode"/&gt;
           &lt;entry&gt;
             &lt;organizer&gt;
-              &lt;id root="MDHT" extension="601164056"/&gt;
+              &lt;id root="MDHT" extension="165968327"/&gt;
               &lt;statusCode code="completed"/&gt;
               &lt;effectiveTime&gt;
                 &lt;low value="2012"/&gt;
@@ -382,19 +348,19 @@
       &lt;/component&gt;
       &lt;component&gt;
         &lt;section&gt;
-          &lt;id root="MDHT" extension="726261349"/&gt;
+          &lt;id root="MDHT" extension="841145686"/&gt;
           &lt;title&gt;TEXT FOR TITLE&lt;/title&gt;
           &lt;languageCode code="Code forlanguageCode"/&gt;
         &lt;/section&gt;
       &lt;/component&gt;
       &lt;component&gt;
         &lt;section&gt;
-          &lt;id root="MDHT" extension="1234921813"/&gt;
+          &lt;id root="MDHT" extension="1132996160"/&gt;
           &lt;title&gt;TEXT FOR TITLE&lt;/title&gt;
           &lt;languageCode code="Code forlanguageCode"/&gt;
           &lt;entry&gt;
             &lt;encounter&gt;
-              &lt;id root="MDHT" extension="1077428173"/&gt;
+              &lt;id root="MDHT" extension="1177945820"/&gt;
               &lt;effectiveTime&gt;
                 &lt;low value="2012"/&gt;
                 &lt;high value="2012"/&gt;
@@ -413,13 +379,13 @@
       &lt;component&gt;
         &lt;section&gt;
           &lt;realmCode/&gt;
-          &lt;id root="MDHT" extension="1721870351"/&gt;
+          &lt;id root="MDHT" extension="724156093"/&gt;
           &lt;title&gt;TEXT FOR TITLE&lt;/title&gt;
           &lt;languageCode code="Code forlanguageCode"/&gt;
           &lt;entry&gt;
             &lt;act&gt;
-              &lt;id root="MDHT" extension="490466408"/&gt;
-              &lt;code code="784350019"/&gt;
+              &lt;id root="MDHT" extension="1297738659"/&gt;
+              &lt;code code="1542395559"/&gt;
               &lt;effectiveTime&gt;
                 &lt;low value="2012"/&gt;
                 &lt;high value="2012"/&gt;
@@ -429,7 +395,7 @@
           &lt;/entry&gt;
           &lt;entry&gt;
             &lt;encounter&gt;
-              &lt;id root="MDHT" extension="669265806"/&gt;
+              &lt;id root="MDHT" extension="512915977"/&gt;
               &lt;effectiveTime&gt;
                 &lt;low value="2012"/&gt;
                 &lt;high value="2012"/&gt;
@@ -438,8 +404,8 @@
           &lt;/entry&gt;
           &lt;entry&gt;
             &lt;observation&gt;
-              &lt;id root="MDHT" extension="1400601125"/&gt;
-              &lt;code code="1469201869"/&gt;
+              &lt;id root="MDHT" extension="1449457447"/&gt;
+              &lt;code code="1700842430"/&gt;
               &lt;effectiveTime&gt;
                 &lt;low value="2012"/&gt;
                 &lt;high value="2012"/&gt;
@@ -449,7 +415,7 @@
           &lt;/entry&gt;
           &lt;entry&gt;
             &lt;procedure&gt;
-              &lt;id root="MDHT" extension="1113588991"/&gt;
+              &lt;id root="MDHT" extension="891865419"/&gt;
               &lt;effectiveTime&gt;
                 &lt;low value="2012"/&gt;
                 &lt;high value="2012"/&gt;
@@ -459,28 +425,28 @@
           &lt;/entry&gt;
           &lt;entry&gt;
             &lt;substanceAdministration classCode="SBADM"&gt;
-              &lt;id root="MDHT" extension="1716457104"/&gt;
-              &lt;effectiveTime value="20121108"/&gt;
+              &lt;id root="MDHT" extension="1784304032"/&gt;
+              &lt;effectiveTime value="20121109"/&gt;
               &lt;consumable/&gt;
             &lt;/substanceAdministration&gt;
           &lt;/entry&gt;
           &lt;entry&gt;
             &lt;supply classCode="SPLY"&gt;
-              &lt;id root="MDHT" extension="870129915"/&gt;
-              &lt;effectiveTime value="20121108"/&gt;
+              &lt;id root="MDHT" extension="317432178"/&gt;
+              &lt;effectiveTime value="20121109"/&gt;
             &lt;/supply&gt;
           &lt;/entry&gt;
         &lt;/section&gt;
       &lt;/component&gt;
       &lt;component&gt;
         &lt;section&gt;
-          &lt;id root="MDHT" extension="1821603857"/&gt;
+          &lt;id root="MDHT" extension="1624913968"/&gt;
           &lt;title&gt;TEXT FOR TITLE&lt;/title&gt;
           &lt;languageCode code="Code forlanguageCode"/&gt;
           &lt;entry&gt;
             &lt;substanceAdministration classCode="SBADM"&gt;
-              &lt;id root="MDHT" extension="1833916821"/&gt;
-              &lt;effectiveTime value="20121108"/&gt;
+              &lt;id root="MDHT" extension="1480172881"/&gt;
+              &lt;effectiveTime value="20121109"/&gt;
               &lt;consumable/&gt;
               &lt;performer/&gt;
               &lt;entryRelationship&gt;
@@ -499,8 +465,8 @@
           &lt;/entry&gt;
           &lt;entry&gt;
             &lt;supply classCode="SPLY"&gt;
-              &lt;id root="MDHT" extension="1751960896"/&gt;
-              &lt;effectiveTime value="20121108"/&gt;
+              &lt;id root="MDHT" extension="2058872861"/&gt;
+              &lt;effectiveTime value="20121109"/&gt;
               &lt;entryRelationship&gt;
                 &lt;observation/&gt;
               &lt;/entryRelationship&gt;
@@ -513,12 +479,12 @@
       &lt;/component&gt;
       &lt;component&gt;
         &lt;section&gt;
-          &lt;id root="MDHT" extension="455063741"/&gt;
+          &lt;id root="MDHT" extension="103456923"/&gt;
           &lt;title&gt;TEXT FOR TITLE&lt;/title&gt;
           &lt;languageCode code="Code forlanguageCode"/&gt;
           &lt;entry&gt;
             &lt;organizer&gt;
-              &lt;id root="MDHT" extension="1358486935"/&gt;
+              &lt;id root="MDHT" extension="1302029164"/&gt;
               &lt;statusCode code="completed"/&gt;
               &lt;effectiveTime&gt;
                 &lt;low value="2012"/&gt;
@@ -530,13 +496,13 @@
       &lt;/component&gt;
       &lt;component&gt;
         &lt;section&gt;
-          &lt;id root="MDHT" extension="1568342686"/&gt;
+          &lt;id root="MDHT" extension="2089435845"/&gt;
           &lt;title&gt;TEXT FOR TITLE&lt;/title&gt;
           &lt;languageCode code="Code forlanguageCode"/&gt;
           &lt;entry&gt;
             &lt;supply classCode="SPLY"&gt;
-              &lt;id root="MDHT" extension="1842589340"/&gt;
-              &lt;effectiveTime value="20121108"/&gt;
+              &lt;id root="MDHT" extension="2125716089"/&gt;
+              &lt;effectiveTime value="20121109"/&gt;
               &lt;entryRelationship&gt;
                 &lt;observation/&gt;
               &lt;/entryRelationship&gt;
@@ -547,8 +513,8 @@
           &lt;/entry&gt;
           &lt;entry&gt;
             &lt;substanceAdministration classCode="SBADM"&gt;
-              &lt;id root="MDHT" extension="622308082"/&gt;
-              &lt;effectiveTime value="20121108"/&gt;
+              &lt;id root="MDHT" extension="16929794"/&gt;
+              &lt;effectiveTime value="20121109"/&gt;
               &lt;consumable/&gt;
               &lt;performer/&gt;
               &lt;entryRelationship&gt;
@@ -569,20 +535,20 @@
       &lt;/component&gt;
       &lt;component&gt;
         &lt;section&gt;
-          &lt;id root="MDHT" extension="723950714"/&gt;
+          &lt;id root="MDHT" extension="1530250151"/&gt;
           &lt;title&gt;TEXT FOR TITLE&lt;/title&gt;
           &lt;languageCode code="Code forlanguageCode"/&gt;
         &lt;/section&gt;
       &lt;/component&gt;
       &lt;component&gt;
         &lt;section&gt;
-          &lt;id root="MDHT" extension="289298032"/&gt;
+          &lt;id root="MDHT" extension="1611868265"/&gt;
           &lt;title&gt;TEXT FOR TITLE&lt;/title&gt;
           &lt;languageCode code="Code forlanguageCode"/&gt;
           &lt;entry&gt;
             &lt;observation&gt;
-              &lt;id root="MDHT" extension="200455916"/&gt;
-              &lt;code code="1110201400"/&gt;
+              &lt;id root="MDHT" extension="1536527000"/&gt;
+              &lt;code code="91699901"/&gt;
               &lt;effectiveTime&gt;
                 &lt;low value="2012"/&gt;
                 &lt;high value="2012"/&gt;
@@ -599,13 +565,13 @@
       &lt;/component&gt;
       &lt;component&gt;
         &lt;section&gt;
-          &lt;id root="MDHT" extension="855834619"/&gt;
+          &lt;id root="MDHT" extension="679679960"/&gt;
           &lt;title&gt;TEXT FOR TITLE&lt;/title&gt;
           &lt;languageCode code="Code forlanguageCode"/&gt;
           &lt;entry&gt;
             &lt;act&gt;
-              &lt;id root="MDHT" extension="1710587209"/&gt;
-              &lt;code code="374395619"/&gt;
+              &lt;id root="MDHT" extension="34087258"/&gt;
+              &lt;code code="1293788567"/&gt;
               &lt;effectiveTime&gt;
                 &lt;low value="2012"/&gt;
                 &lt;high value="2012"/&gt;
@@ -620,13 +586,13 @@
       &lt;/component&gt;
       &lt;component&gt;
         &lt;section&gt;
-          &lt;id root="MDHT" extension="1337813688"/&gt;
+          &lt;id root="MDHT" extension="189547789"/&gt;
           &lt;title&gt;TEXT FOR TITLE&lt;/title&gt;
           &lt;languageCode code="Code forlanguageCode"/&gt;
           &lt;entry&gt;
             &lt;act&gt;
-              &lt;id root="MDHT" extension="1352263610"/&gt;
-              &lt;code code="1359889369"/&gt;
+              &lt;id root="MDHT" extension="2064804930"/&gt;
+              &lt;code code="342763587"/&gt;
               &lt;effectiveTime&gt;
                 &lt;low value="2012"/&gt;
                 &lt;high value="2012"/&gt;

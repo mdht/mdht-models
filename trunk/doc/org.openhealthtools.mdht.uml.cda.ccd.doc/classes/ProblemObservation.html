@@ -20,7 +20,7 @@
 </head>
 <body id="classId">
 <div>
-	<p><b>Development Only.</b> The Normative content for these specifications
+	<p><b>Non-Normative Content</b> The Normative content for these specifications
 	may be found on the HL7, IHE, and HITSP web sites.</p>
 </div>
 
@@ -36,19 +36,15 @@
 
 
 
-
 <ol class="ol">
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] templateId (  ) such that it <ol class="ol" type="a"><li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <strong class="ph b">@root</strong>="2.16.840.1.113883.10.20.1.28"</li>
+</ol>
+</li>
+
 <li class="li">Contains exactly one [1..1] <tt class="ph tt"><strong class="ph b">@classCode</strong>="OBS" </tt><em class="ph i">Observation</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.5.6 HL7ActClass</tt>)
 </li>
 
 <li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@moodCode</strong>="EVN" </tt><em class="ph i">Event</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF-155)
-</li>
-
-<li class="li"><strong class="ph b">MAY</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt>, where the @code <strong class="ph b">MAY</strong> be selected from ValueSet<tt class="ph tt"> ProblemTypeCode 2.16.840.1.113883.1.11.20.14</tt><strong class="ph b"> STATIC</strong> 20061017 (CONF-159)
-<ul class="ul"><li class="li"><div class="p"><p class="lines"><em class="ph i">code SHALL be present (per CDA schema), by MAY use specified value set.</em></p>
-</div>
-</li>
-</ul>
 </li>
 
 <li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">statusCode</strong></tt><tt class="ph tt"><strong class="ph b">/@code</strong>="completed" </tt> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.5.14 ActStatus</tt>) (CONF-156, CONF-157)
@@ -56,6 +52,13 @@
 
 <li class="li"><strong class="ph b">SHOULD</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">effectiveTime</strong></tt> (CONF-158)
 <ul class="ul"><li class="li"><div class="p"><p class="lines"><em class="ph i">Indicates the biological timing of condition (e.g. the time the condition started, the onset of the illness or symptom, the duration of a condition).</em></p>
+</div>
+</li>
+</ul>
+</li>
+
+<li class="li"><strong class="ph b">MAY</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt>, where the @code <strong class="ph b">MAY</strong> be selected from ValueSet<tt class="ph tt"> ProblemTypeCode 2.16.840.1.113883.1.11.20.14</tt><strong class="ph b"> STATIC</strong> 20061017 (CONF-159)
+<ul class="ul"><li class="li"><div class="p"><p class="lines"><em class="ph i">code SHALL be present (per CDA schema), by MAY use specified value set.</em></p>
 </div>
 </li>
 </ul>
@@ -91,6 +94,7 @@
 
 </ol>
 
+
 <p class="p"> </p>
 
 <p class="p"><strong class="ph b">Problem Observation example</strong></p>
@@ -99,16 +103,16 @@
 
 <pre class="pre codeblock">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
 &lt;observation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd"&gt;
-  &lt;id root="MDHT" extension="1004132247"/&gt;
-  &lt;code code="450323931"/&gt;
+  &lt;id root="MDHT" extension="1087238122"/&gt;
+  &lt;code code="241918448"/&gt;
   &lt;effectiveTime&gt;
     &lt;low value="2012"/&gt;
     &lt;high value="2012"/&gt;
   &lt;/effectiveTime&gt;
   &lt;entryRelationship&gt;
     &lt;observation&gt;
-      &lt;id root="MDHT" extension="100319257"/&gt;
-      &lt;code code="300134019"/&gt;
+      &lt;id root="MDHT" extension="1682730970"/&gt;
+      &lt;code code="766662098"/&gt;
       &lt;effectiveTime&gt;
         &lt;low value="2012"/&gt;
         &lt;high value="2012"/&gt;
@@ -117,8 +121,8 @@
   &lt;/entryRelationship&gt;
   &lt;entryRelationship&gt;
     &lt;observation&gt;
-      &lt;id root="MDHT" extension="2090675700"/&gt;
-      &lt;code code="1899410080"/&gt;
+      &lt;id root="MDHT" extension="1461153581"/&gt;
+      &lt;code code="280394641"/&gt;
       &lt;effectiveTime&gt;
         &lt;low value="2012"/&gt;
         &lt;high value="2012"/&gt;
@@ -127,8 +131,8 @@
   &lt;/entryRelationship&gt;
   &lt;entryRelationship&gt;
     &lt;observation&gt;
-      &lt;id root="MDHT" extension="1878142710"/&gt;
-      &lt;code code="1881401575"/&gt;
+      &lt;id root="MDHT" extension="955255871"/&gt;
+      &lt;code code="410245955"/&gt;
       &lt;effectiveTime&gt;
         &lt;low value="2012"/&gt;
         &lt;high value="2012"/&gt;

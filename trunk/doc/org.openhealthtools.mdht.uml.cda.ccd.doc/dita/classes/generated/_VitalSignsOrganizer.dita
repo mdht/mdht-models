@@ -48,8 +48,8 @@
 </tbody></tgroup></table></p></section>
 <codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
 <organizer xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd">
-  <id root="MDHT" extension="538369650"/>
-  <code code="1016345791"/>
+  <id root="MDHT" extension="1359940616"/>
+  <code code="1394369437"/>
   <statusCode code="completed"/>
   <effectiveTime>
     <low value="2012"/>

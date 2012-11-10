@@ -20,7 +20,7 @@
 </head>
 <body id="classId">
 <div>
-	<p><b>Development Only.</b> The Normative content for these specifications
+	<p><b>Non-Normative Content</b> The Normative content for these specifications
 	may be found on the HL7, IHE, and HITSP web sites.</p>
 </div>
 
@@ -39,8 +39,11 @@
 
 
 
-
 <ol class="ol">
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] templateId (  ) such that it <ol class="ol" type="a"><li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <strong class="ph b">@root</strong>="2.16.840.1.113883.10.20.1.4"</li>
+</ol>
+</li>
+
 <li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt><tt class="ph tt"><strong class="ph b">/@code</strong>="10157-6" </tt><em class="ph i">History of family member diseases</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF-185, CONF-186)
 </li>
 
@@ -64,6 +67,7 @@
 
 </ol>
 
+
 <p class="p"> </p>
 
 <p class="p"><strong class="ph b">Family History Section example</strong></p>
@@ -72,12 +76,12 @@
 
 <pre class="pre codeblock">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
 &lt;section xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd"&gt;
-  &lt;id root="MDHT" extension="2076327668"/&gt;
+  &lt;id root="MDHT" extension="1515549482"/&gt;
   &lt;title&gt;TEXT FOR TITLE&lt;/title&gt;
   &lt;text/&gt;
   &lt;entry&gt;
     &lt;organizer&gt;
-      &lt;id root="MDHT" extension="1947160951"/&gt;
+      &lt;id root="MDHT" extension="1819666878"/&gt;
       &lt;statusCode code="completed"/&gt;
       &lt;effectiveTime&gt;
         &lt;low value="2012"/&gt;
@@ -85,8 +89,8 @@
       &lt;/effectiveTime&gt;
       &lt;component&gt;
         &lt;observation&gt;
-          &lt;id root="MDHT" extension="1404637643"/&gt;
-          &lt;code code="896464930"/&gt;
+          &lt;id root="MDHT" extension="208761616"/&gt;
+          &lt;code code="875044886"/&gt;
           &lt;text&gt;Text Value&lt;/text&gt;
           &lt;effectiveTime&gt;
             &lt;low value="2012"/&gt;

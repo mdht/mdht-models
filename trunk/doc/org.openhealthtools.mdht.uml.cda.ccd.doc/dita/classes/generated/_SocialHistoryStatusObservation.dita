@@ -40,13 +40,13 @@
 </tbody></tgroup></table></p></section>
 <codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
 <observation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd">
-  <id root="MDHT" extension="779534714"/>
-  <code code="1621477099"/>
+  <id root="MDHT" extension="1694979474"/>
+  <code code="2012703967"/>
   <effectiveTime>
     <low value="2012"/>
     <high value="2012"/>
   </effectiveTime>
-  <value xsi:type="CE" code="1694167638"/>
+  <value xsi:type="CE" code="799413072"/>
 </observation>]]></codeblock>
 <section id="changes">
 </section>

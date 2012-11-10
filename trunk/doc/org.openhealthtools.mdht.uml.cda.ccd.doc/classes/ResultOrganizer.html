@@ -20,7 +20,7 @@
 </head>
 <body id="classId">
 <div>
-	<p><b>Development Only.</b> The Normative content for these specifications
+	<p><b>Non-Normative Content</b> The Normative content for these specifications
 	may be found on the HL7, IHE, and HITSP web sites.</p>
 </div>
 
@@ -38,12 +38,28 @@
 
 
 
-
 <ol class="ol">
-<li class="li">Contains exactly one [1..1] <tt class="ph tt"><strong class="ph b">@classCode</strong></tt> with data type x_ActClassDocumentEntryOrganizer
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] templateId (  ) such that it <ol class="ol" type="a"><li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <strong class="ph b">@root</strong>="2.16.840.1.113883.10.20.1.32"</li>
+</ol>
 </li>
 
 <li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@moodCode</strong>="EVN" </tt><em class="ph i">Event</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF-394)
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain at least one [1..*] <tt class="ph tt"><strong class="ph b">component</strong></tt> (CONF-405)
+<ol class="ol" type="a">
+<li class="li">Contains exactly one [1..1] <a class="xref" href="ResultObservation.html" title="[Observation: templateId 2.16.840.1.113883.10.20.1.31]">Result Observation</a> (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.1.31</tt>)</li>
+</ol>
+</li>
+
+<li class="li"><strong class="ph b">SHOULD</strong> contain at least one [1..*] <tt class="ph tt"><strong class="ph b">specimen</strong></tt> (CONF-399)
+<ul class="ul"><li class="li"><div class="p"><p class="lines"><em class="ph i">Should be included if the specimen isn't inherent in code value.</em></p>
+</div>
+</li>
+</ul>
+<ol class="ol" type="a">
+<li class="li">Contains exactly one [1..1] CDA Specimen</li>
+</ol>
 </li>
 
 <li class="li"><strong class="ph b">SHALL</strong> contain at least one [1..*] <tt class="ph tt"><strong class="ph b">id</strong></tt> (CONF-395)
@@ -57,24 +73,6 @@
 
 <li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">statusCode</strong></tt> (CONF-396)
 </li>
-
-<li class="li"><strong class="ph b">SHALL</strong> contain at least one [1..*] <tt class="ph tt"><strong class="ph b">component</strong></tt> (CONF-405)
-<ol class="ol" type="a">
-<li class="li">Contains exactly one [1..1] <a class="xref" href="ResultObservation.html" title="[Observation: templateId 2.16.840.1.113883.10.20.1.31]">Result Observation</a> (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.1.31</tt>)</li>
-</ol>
-</li>
-
-<li class="li"><strong class="ph b">SHOULD</strong> contain at least one [1..*] <tt class="ph tt"><strong class="ph b">specimen</strong></tt> (CONF-399)
-<ol class="ol" type="a">
-<li class="li">Contains exactly one [1..1] CDA Specimen</li>
-</ol>
-<ul class="ul"><li class="li"><div class="p"><p class="lines"><em class="ph i">Should be included if the specimen isn't inherent in code value.</em></p>
-</div>
-</li>
-</ul>
-</li>
-
-<li class="li">The value for 'code' in a result organizer <strong class="ph b">SHOULD</strong> be selected from LOINC (codeSystem 2.16.840.1.113883.6.1) or SNOMED CT (codeSystem 2.16.840.1.113883.6.96), and <strong class="ph b">MAY</strong> be selected from CPT-4 (codeSystem 2.16.840.1.113883.6.12) or ValueSet 2.16.840.1.113883.1.11.20.16 ResultTypeCode STATIC. (CONF-398)</li>
 
 <li class="li">The specimen element <strong class="ph b">SHALL NOT</strong> conflict with the specimen inherent in code (CONF-400)</li>
 
@@ -90,6 +88,7 @@
 
 </ol>
 
+
 <p class="p"> </p>
 
 <p class="p"><strong class="ph b">Result Organizer example</strong></p>
@@ -98,8 +97,8 @@
 
 <pre class="pre codeblock">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
 &lt;organizer xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd"&gt;
-  &lt;id root="MDHT" extension="1892062849"/&gt;
-  &lt;code code="420706062"/&gt;
+  &lt;id root="MDHT" extension="1245203613"/&gt;
+  &lt;code code="2079856033"/&gt;
   &lt;statusCode code="completed"/&gt;
   &lt;effectiveTime&gt;
     &lt;low value="2012"/&gt;
@@ -108,8 +107,8 @@
   &lt;specimen/&gt;
   &lt;component&gt;
     &lt;observation&gt;
-      &lt;id root="MDHT" extension="2084317994"/&gt;
-      &lt;code code="590600353"/&gt;
+      &lt;id root="MDHT" extension="359681855"/&gt;
+      &lt;code code="1570397962"/&gt;
       &lt;statusCode code="completed"/&gt;
       &lt;effectiveTime&gt;
         &lt;low value="2012"/&gt;

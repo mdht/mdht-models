@@ -78,8 +78,8 @@
 </tbody></tgroup></table></p></section>
 <codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
 <observation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd">
-  <id root="MDHT" extension="2063262517"/>
-  <code code="2044999650"/>
+  <id root="MDHT" extension="282169162"/>
+  <code code="294313122"/>
   <effectiveTime>
     <low value="2012"/>
     <high value="2012"/>
@@ -93,8 +93,8 @@
   </participant>
   <entryRelationship>
     <observation>
-      <id root="MDHT" extension="1535665015"/>
-      <code code="1523459861"/>
+      <id root="MDHT" extension="594016630"/>
+      <code code="1145089639"/>
       <effectiveTime>
         <low value="2012"/>
         <high value="2012"/>

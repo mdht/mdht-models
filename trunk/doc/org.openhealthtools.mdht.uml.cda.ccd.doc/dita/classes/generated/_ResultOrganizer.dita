@@ -74,8 +74,8 @@
 </tbody></tgroup></table></p></section>
 <codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
 <organizer xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd">
-  <id root="MDHT" extension="1892062849"/>
-  <code code="420706062"/>
+  <id root="MDHT" extension="1245203613"/>
+  <code code="2079856033"/>
   <statusCode code="completed"/>
   <effectiveTime>
     <low value="2012"/>
@@ -84,8 +84,8 @@
   <specimen/>
   <component>
     <observation>
-      <id root="MDHT" extension="2084317994"/>
-      <code code="590600353"/>
+      <id root="MDHT" extension="359681855"/>
+      <code code="1570397962"/>
       <statusCode code="completed"/>
       <effectiveTime>
         <low value="2012"/>

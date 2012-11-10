@@ -43,8 +43,8 @@
 </tbody></tgroup></table></p></section>
 <codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
 <substanceadministration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd">
-  <id root="MDHT" extension="1832640201"/>
-  <effectiveTime value="20121108"/>
+  <id root="MDHT" extension="227864226"/>
+  <effectiveTime value="20121109"/>
   <consumable/>
 </substanceadministration>]]></codeblock>
 <section id="changes">

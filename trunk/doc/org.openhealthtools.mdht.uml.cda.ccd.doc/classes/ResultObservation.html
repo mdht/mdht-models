@@ -20,7 +20,7 @@
 </head>
 <body id="classId">
 <div>
-	<p><b>Development Only.</b> The Normative content for these specifications
+	<p><b>Non-Normative Content</b> The Normative content for these specifications
 	may be found on the HL7, IHE, and HITSP web sites.</p>
 </div>
 
@@ -36,8 +36,11 @@
 
 
 
-
 <ol class="ol">
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] templateId (  ) such that it <ol class="ol" type="a"><li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <strong class="ph b">@root</strong>="2.16.840.1.113883.10.20.1.31"</li>
+</ol>
+</li>
+
 <li class="li">Contains exactly one [1..1] <tt class="ph tt"><strong class="ph b">@classCode</strong>="OBS" </tt><em class="ph i">Observation</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.5.6 HL7ActClass</tt>)
 </li>
 
@@ -47,12 +50,6 @@
 <li class="li"><strong class="ph b">SHALL</strong> contain at least one [1..*] <tt class="ph tt"><strong class="ph b">id</strong></tt> (CONF-409)
 </li>
 
-<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt> (CONF-412)
-</li>
-
-<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">statusCode</strong></tt> (CONF-410)
-</li>
-
 <li class="li"><strong class="ph b">SHOULD</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">effectiveTime</strong></tt> (CONF-411)
 <ul class="ul"><li class="li"><div class="p"><p class="lines"><em class="ph i">Represents the biologically relevant time (e.g. time the specimen was obtained from the patient).</em></p>
 </div>
@@ -60,7 +57,17 @@
 </ul>
 </li>
 
-<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">value</strong></tt> (CONF-416)
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">statusCode</strong></tt> (CONF-410)
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt> (CONF-412)
+</li>
+
+<li class="li"><strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">methodCode</strong></tt> (CONF-414)
+<ul class="ul"><li class="li"><div class="p"><p class="lines"><em class="ph i">Included if the method isn't inherent in code or if there is a need to further specialize the method in code.</em></p>
+</div>
+</li>
+</ul>
 </li>
 
 <li class="li"><strong class="ph b">SHOULD</strong> contain zero or more [0..*] <tt class="ph tt"><strong class="ph b">interpretationCode</strong></tt> (CONF-418)
@@ -70,11 +77,7 @@
 </ul>
 </li>
 
-<li class="li"><strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">methodCode</strong></tt> (CONF-414)
-<ul class="ul"><li class="li"><div class="p"><p class="lines"><em class="ph i">Included if the method isn't inherent in code or if there is a need to further specialize the method in code.</em></p>
-</div>
-</li>
-</ul>
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">value</strong></tt> (CONF-416)
 </li>
 
 <li class="li">The value for 'code' <strong class="ph b">SHOULD</strong> be selected from LOINC (codeSystem 2.16.840.1.113883.6.1) or SNOMED CT (codeSystem 2.16.840.1.113883.6.96), and <strong class="ph b">MAY</strong> be selected from CPT-4 (codeSystem 2.16.840.1.113883.6.12). (CONF-413)</li>
@@ -91,6 +94,7 @@
 
 </ol>
 
+
 <p class="p"> </p>
 
 <p class="p"><strong class="ph b">Result Observation example</strong></p>
@@ -99,15 +103,15 @@
 
 <pre class="pre codeblock">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
 &lt;observation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd"&gt;
-  &lt;id root="MDHT" extension="776988922"/&gt;
-  &lt;code code="1781289384"/&gt;
+  &lt;id root="MDHT" extension="1363470439"/&gt;
+  &lt;code code="1431279090"/&gt;
   &lt;statusCode code="completed"/&gt;
   &lt;effectiveTime&gt;
     &lt;low value="2012"/&gt;
     &lt;high value="2012"/&gt;
   &lt;/effectiveTime&gt;
-  &lt;interpretationCode code="1985990251"/&gt;
-  &lt;methodCode code="1015510626"/&gt;
+  &lt;interpretationCode code="247363372"/&gt;
+  &lt;methodCode code="224383519"/&gt;
 &lt;/observation&gt;</pre>
 
 </div>
