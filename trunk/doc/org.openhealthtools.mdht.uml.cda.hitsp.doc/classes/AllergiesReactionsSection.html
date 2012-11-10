@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html
   PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html lang="en-us" xml:lang="en-us">
+<html xml:lang="en-us" lang="en-us">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 <meta name="copyright" content="(C) Copyright 2005"/>
@@ -18,9 +18,9 @@
 <link rel="stylesheet" type="text/css" href="../css/commonltr.css"/>
 <title>Allergies Reactions Section</title>
 </head>
-<body id="classId"><a name="classId"><!-- --></a>
+<body id="classId">
 <div>
-	<p><b>Development Only.</b> The Normative content for these specifications
+	<p><b>Non-Normative Content</b> The Normative content for these specifications
 	may be found on the HL7, IHE, and HITSP web sites.</p>
 </div>
 
@@ -43,9 +43,13 @@
 
 
 <ol class="ol">
-<li class="li"><strong class="ph b">SHALL</strong> conform to <a class="xref" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.ihe.doc/classes/AllergiesReactionsSection.html">IHE Allergies Reactions Section</a> template (templateId: <tt class="ph tt">1.3.6.1.4.1.19376.1.5.3.1.3.13</tt>) (C83-[CT-102-2])</li>
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] templateId (  ) such that it <ol class="ol" type="a"><li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <strong class="ph b">@root</strong>="2.16.840.1.113883.3.88.11.83.102"</li>
+</ol>
+</li>
 
-<li class="li"><strong class="ph b">SHALL</strong> contain at least one [1..*] <tt class="ph tt"><strong class="ph b">entry</strong></tt>, such that
+<li class="li"><strong class="ph b">SHALL</strong> conform to <a class="xref" href="generated/PLUGINS_ROOT/org.openhealthtools.mdht.uml.cda.ihe.doc/classes/AllergiesReactionsSection.html">IHE Allergies Reactions Section</a> template (templateId: <tt class="ph tt">1.3.6.1.4.1.19376.1.5.3.1.3.13</tt>) (C83-[CT-102-2])</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain at least one [1..*] <tt class="ph tt"><strong class="ph b">entry</strong></tt>
 <ol class="ol" type="a">
 <li class="li">Contains exactly one [1..1] <a class="xref" href="AllergyDrugSensitivity.html" title="[Act: templateId 2.16.840.1.113883.3.88.11.83.6]">Allergy Drug Sensitivity</a> (templateId: <tt class="ph tt">2.16.840.1.113883.3.88.11.83.6</tt>)</li>
 </ol>
@@ -62,25 +66,17 @@
 
 <pre class="pre codeblock">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
 &lt;section xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd"&gt;
-  &lt;templateId root="2.16.840.1.113883.10.20.1.2"/&gt;
-  &lt;templateId root="1.3.6.1.4.1.19376.1.5.3.1.3.13"/&gt;
-  &lt;templateId root="2.16.840.1.113883.3.88.11.83.102"/&gt;
-  &lt;id root="2047096078"/&gt;
-  &lt;code code="48765-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Allergies, adverse reactions, alerts"/&gt;
-  &lt;title/&gt;
+  &lt;id root="MDHT" extension="1863782106"/&gt;
+  &lt;title&gt;TEXT FOR TITLE&lt;/title&gt;
   &lt;text/&gt;
   &lt;entry&gt;
-    &lt;act classCode="ACT" moodCode="EVN"&gt;
-      &lt;templateId root="2.16.840.1.113883.10.20.1.27"/&gt;
-      &lt;templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.5.1"/&gt;
-      &lt;templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.5.3"/&gt;
-      &lt;templateId root="2.16.840.1.113883.3.88.11.83.6"/&gt;
-      &lt;id root="637719818"/&gt;
-      &lt;code nullFlavor="NA"/&gt;
-      &lt;text/&gt;
+    &lt;act&gt;
+      &lt;id root="MDHT" extension="1180502789"/&gt;
+      &lt;code code="1292751891"/&gt;
+      &lt;text&gt;Text Value&lt;/text&gt;
       &lt;effectiveTime&gt;
-        &lt;low value="2011"/&gt;
-        &lt;high value="2011"/&gt;
+        &lt;low value="2012"/&gt;
+        &lt;high value="2012"/&gt;
       &lt;/effectiveTime&gt;
     &lt;/act&gt;
   &lt;/entry&gt;

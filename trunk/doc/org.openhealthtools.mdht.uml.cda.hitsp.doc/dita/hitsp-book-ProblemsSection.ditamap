@@ -2,7 +2,7 @@
 <!DOCTYPE bookmap PUBLIC "-//OASIS//DTD DITA BookMap//EN" "bookmap.dtd">
 <bookmap id="cdabook">
 	<booktitle>
-		<booklibrary>Implementation Guide for CDA Release 2</booklibrary>
+		<booklibrary>Implementation Guide for CDA R2</booklibrary>
 		<mainbooktitle>ONC/HL7/IHE Consolidation Project</mainbooktitle>
 		<booktitlealt>Problems Section (working draft)</booktitlealt>
 		<booktitlealt><image href="images/ONC_logo.png"/></booktitlealt>

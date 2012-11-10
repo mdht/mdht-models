@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html
   PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html lang="en-us" xml:lang="en-us">
+<html xml:lang="en-us" lang="en-us">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 <meta name="copyright" content="(C) Copyright 2005"/>
@@ -25,6 +25,8 @@
 <meta name="DC.Relation" scheme="URI" content="../classes/MedicationSplitDose.html"/>
 <meta name="DC.Relation" scheme="URI" content="../classes/MedicationTaperedDose.html"/>
 <meta name="DC.Relation" scheme="URI" content="../classes/MedicationType.html"/>
+<meta name="DC.Relation" scheme="URI" content="../classes/PastProcedure.html"/>
+<meta name="DC.Relation" scheme="URI" content="../classes/PlannedProcedure.html"/>
 <meta name="DC.Relation" scheme="URI" content="../classes/Procedure.html"/>
 <meta name="DC.Relation" scheme="URI" content="../classes/Result.html"/>
 <meta name="DC.Relation" scheme="URI" content="../classes/ResultOrganizer.html"/>
@@ -36,9 +38,9 @@
 <link rel="stylesheet" type="text/css" href="../css/commonltr.css"/>
 <title>CLINICAL STATEMENT TEMPLATES</title>
 </head>
-<body id="topicId"><a name="topicId"><!-- --></a>
+<body id="topicId">
 <div>
-	<p><b>Development Only.</b> The Normative content for these specifications
+	<p><b>Non-Normative Content</b> The Normative content for these specifications
 	may be found on the HL7, IHE, and HITSP web sites.</p>
 </div>
 
@@ -87,14 +89,18 @@
 [SubstanceAdministration: templateId <tt class="ph tt">null</tt>]</li>
 <li class="link ulchildlink"><strong><a href="../classes/MedicationType.html">Medication Type</a></strong><br/>
 [Observation: templateId <tt class="ph tt">2.16.840.1.113883.3.88.11.83.8.1</tt>]</li>
+<li class="link ulchildlink"><strong><a href="../classes/PastProcedure.html">Past Procedure</a></strong><br/>
+[Procedure: templateId <tt class="ph tt">2.16.840.1.113883.10.20.1.29</tt>]</li>
+<li class="link ulchildlink"><strong><a href="../classes/PlannedProcedure.html">Planned Procedure</a></strong><br/>
+[Procedure: templateId <tt class="ph tt">2.16.840.1.113883.10.20.1.25</tt>]</li>
 <li class="link ulchildlink"><strong><a href="../classes/Procedure.html">Procedure</a></strong><br/>
-[Procedure: templateId <tt class="ph tt">2.16.840.1.113883.3.88.11.83.17</tt>]</li>
+<em class="ph i">Abstract</em> [Procedure: templateId <tt class="ph tt">2.16.840.1.113883.3.88.11.83.17</tt>]</li>
 <li class="link ulchildlink"><strong><a href="../classes/Result.html">Result</a></strong><br/>
-[Observation: templateId <tt class="ph tt">2.16.840.1.113883.3.88.11.83.15</tt>]</li>
+[Observation: templateId <tt class="ph tt">2.16.840.1.113883.3.88.11.83.15.1</tt>]</li>
 <li class="link ulchildlink"><strong><a href="../classes/ResultOrganizer.html">Result Organizer</a></strong><br/>
 [Organizer: templateId <tt class="ph tt">2.16.840.1.113883.10.20.1.32</tt>]</li>
 <li class="link ulchildlink"><strong><a href="../classes/SocialHistory.html">Social History</a></strong><br/>
-[Observation: templateId <tt class="ph tt">2.16.840.1.113883.10.20.1.33</tt>]</li>
+[Observation: templateId <tt class="ph tt">2.16.840.1.113883.3.88.11.83.19</tt>]</li>
 <li class="link ulchildlink"><strong><a href="../classes/VitalSign.html">Vital Sign</a></strong><br/>
 [Observation: templateId <tt class="ph tt">2.16.840.1.113883.3.88.11.83.14</tt>]</li>
 </ul>
