@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Health Status</title>
+<prolog id="prolog">
+<resourceid id="2.16.840.1.113883.1.11.20.12"/>
+</prolog>
+<body>
+<!-- THIS IS GENERATED CONTENT, DO NOT EDIT -->
+<section id="definition">
+<table><tgroup cols="2">
+<colspec colname="col1" colwidth="1*"/>
+<colspec colname="col2" colwidth="4*"/>
+<tbody>
+<row><entry>Value Set</entry><entry>HealthStatus - 2.16.840.1.113883.1.11.20.12</entry></row>
+<row><entry>Code System</entry><entry>SNOMEDCT - 2.16.840.1.113883.6.96</entry></row>
+<row><entry>Definition</entry><entry>Represents the general health status of the patient.</entry></row>
+</tbody></tgroup></table>
+<table><tgroup cols="3">
+<colspec colname="col1" colwidth="1*"/>
+<colspec colname="col2" colwidth="1*"/>
+<colspec colname="col3" colwidth="2*"/>
+<thead><row>
+<entry>Code</entry><entry>Code System</entry><entry>Print Name</entry>
+</row></thead><tbody>
+<row><entry>81323004</entry><entry>SNOMEDCT</entry><entry>Alive and well</entry></row>
+<row><entry>313386006</entry><entry>SNOMEDCT</entry><entry>In remission</entry></row>
+<row><entry>162467007</entry><entry>SNOMEDCT</entry><entry>Symptom free</entry></row>
+<row><entry>161901003</entry><entry>SNOMEDCT</entry><entry>Chronically ill</entry></row>
+<row><entry>271593001</entry><entry>SNOMEDCT</entry><entry>Severely ill</entry></row>
+<row><entry>21134002</entry><entry>SNOMEDCT</entry><entry>Disabled</entry></row>
+<row><entry>161045001</entry><entry>SNOMEDCT</entry><entry>Severely disabled</entry></row>
+</tbody></tgroup></table>
+</section>
+</body>
+</topic>
