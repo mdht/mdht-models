@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html
   PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html lang="en-us" xml:lang="en-us">
+<html xml:lang="en-us" lang="en-us">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 <meta name="copyright" content="(C) Copyright 2005"/>
@@ -17,10 +17,10 @@
 <link rel="stylesheet" type="text/css" href="../css/commonltr.css"/>
 <title>Study Act</title>
 </head>
-<body id="classId"><a name="classId"><!-- --></a>
+<body id="classId">
 <div>
-	<p><b>For Discussion and Demonstration Only</b> The Normative content for these specifications
-	may be found on the HL7 web site.</p>
+	<p><b>Non-Normative Content</b> The Normative content for these specifications
+	may be found on the HL7, IHE, and HITSP web sites.</p>
 </div>
 
 	<h1 class="title topictitle1"><span class="ph">Study Act</span></h1>
@@ -31,13 +31,18 @@
 
 		
 		<div class="section">
-<p class="p">A Study Act contains the DICOM study information that defines the characteristics of a referenced medical study performed on a patient. A study is a collection of one or more series of medical images, presentation states, SR documents, overlays, and/or curves that are logically related for the purpose of diagnosing a patient. Each study is associated with exactly one patient. A study may include composite instances that are created by a single modality, multiple modalities, or by multiple devices of the same modality. The study information is modality-independent. Study Act clinical statements are only instantiated in the DICOM Object Catalog section; in other sections, the SOP Instance Observation is included directly.</p>
+<div class="p"><p class="lines"><em class="ph i">A Study Act contains the DICOM study information that defines the characteristics of a referenced medical study performed on a patient. A study is a collection of one or more series of medical images, presentation states, SR documents, overlays, and/or curves that are logically related for the purpose of diagnosing a patient. Each study is associated with exactly one patient. A study may include composite instances that are created by a single modality, multiple modalities, or by multiple devices of the same modality. The study information is modality-independent. Study Act clinical statements are only instantiated in the DICOM Object Catalog section; in other sections, the SOP Instance Observation is included directly.</em></p>
+</div>
 
 </div>
 
 		
 
 		<ol class="ol">
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] templateId ( CONF:10533 ) such that it <ol class="ol" type="a"><li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <strong class="ph b">@root</strong>="2.16.840.1.113883.10.20.6.2.6"</li>
+</ol>
+</li>
+
 <li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@classCode</strong>="ACT" </tt><em class="ph i">Act</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.5.6 HL7ActClass</tt>) (CONF:9207)
 </li>
 
@@ -51,16 +56,29 @@
 </li>
 
 <li class="li"><strong class="ph b">SHOULD</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">effectiveTime</strong></tt> (CONF:9216)
-<ul class="ul"><li class="li">If present, the effectiveTime contains the time the study was started</li>
+<ul class="ul"><li class="li"><div class="p"><p class="lines"><em class="ph i">If present, the effectiveTime contains the time the study was started</em></p>
+</div>
+</li>
 </ul>
 </li>
 
 <li class="li"><strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">text</strong></tt> (CONF:9215)
-<ul class="ul"><li class="li">If present, the text element contains the description of the study</li>
+<ul class="ul"><li class="li"><div class="p"><p class="lines"><em class="ph i">If present, the text element contains the description of the study</em></p>
+</div>
+</li>
 </ul>
+<ol class="ol" type="a">
+<li class="li">text, if present, <strong class="ph b">SHOULD</strong> contain zero or one [0..1] reference (CONF:15995)<ol class="ol" type="i">
+<li class="li">reference, if present, <strong class="ph b">SHOULD</strong> contain zero or one [0..1] @value (CONF:15996)<ol class="ol">
+<li class="li">reference/@value <strong class="ph b">SHALL</strong> begin with a '#' and <strong class="ph b">SHALL</strong> point to its corresponding narrative (using the approach defined in CDA Release 2, section 4.3.5.1) (CONF:15997)</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
 </li>
 
-<li class="li"><strong class="ph b">SHALL</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">entryRelationship</strong></tt> (CONF:9219, CONF:9220, CONF:9221)
+<li class="li"><strong class="ph b">SHALL</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">entryRelationship</strong></tt> (CONF:9219, CONF:9220, CONF:15937)
 <ol class="ol" type="a">
 <li class="li">Contains <tt class="ph tt"><strong class="ph b">@typeCode="</strong>COMP" </tt><em class="ph i">COMP</em></li>
 
@@ -69,8 +87,6 @@
 </li>
 
 <li class="li">ids <strong class="ph b">SHALL</strong> contain exactly one [1..1] @root (CONF:9213)</li>
-
-<li class="li"><strong class="ph b">SHALL</strong> satisfy: The @root contains the OID of the study instance UID since DICOM study ids consist only of an OID (CONF:9212)</li>
 
 <li class="li">Such ids <strong class="ph b">SHALL NOT</strong> contain [0..0] @extension (CONF:9211)</li>
 
@@ -87,7 +103,7 @@
 		<pre class="pre codeblock">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
 &lt;act xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd" classCode="ACT" moodCode="EVN"&gt;
   &lt;templateId root="2.16.840.1.113883.10.20.6.2.6"/&gt;
-  &lt;id root="553236276"/&gt;
+  &lt;id root="MDHT" extension="176044654"/&gt;
   &lt;code code="113014" codeSystem="1.2.840.10008.2.16.4" codeSystemName="DCM"/&gt;
   &lt;text&gt;Text Value&lt;/text&gt;
   &lt;effectiveTime&gt;
@@ -97,7 +113,7 @@
   &lt;entryRelationship&gt;
     &lt;act classCode="ACT" moodCode="EVN"&gt;
       &lt;templateId root="2.16.840.1.113883.10.20.22.4.63"/&gt;
-      &lt;id root="664600738"/&gt;
+      &lt;id root="MDHT" extension="381240056"/&gt;
       &lt;code code="113015" codeSystem="1.2.840.10008.2.16.4" codeSystemName="DCM"/&gt;
       &lt;text&gt;Text Value&lt;/text&gt;
       &lt;effectiveTime&gt;
@@ -107,8 +123,8 @@
       &lt;entryRelationship&gt;
         &lt;observation classCode="DGIMG" moodCode="EVN"&gt;
           &lt;templateId root="2.16.840.1.113883.10.20.6.2.8"/&gt;
-          &lt;id root="1542675994"/&gt;
-          &lt;code code="1607467331"/&gt;
+          &lt;id root="MDHT" extension="580486912"/&gt;
+          &lt;code codeSystem="1.2.840.10008.2.6.1" codeSystemName="DCMUID"/&gt;
           &lt;text&gt;Text Value&lt;/text&gt;
           &lt;effectiveTime&gt;
             &lt;low value="2012"/&gt;
@@ -117,37 +133,12 @@
           &lt;entryRelationship&gt;
             &lt;observation classCode="OBS" moodCode="EVN"&gt;
               &lt;templateId root="2.16.840.1.113883.10.20.6.2.9"/&gt;
-              &lt;id root="1373764649"/&gt;
-              &lt;code code="944867647"/&gt;
-              &lt;text&gt;Text Value&lt;/text&gt;
-              &lt;effectiveTime&gt;
-                &lt;low value="2012"/&gt;
-                &lt;high value="2012"/&gt;
-              &lt;/effectiveTime&gt;
             &lt;/observation&gt;
           &lt;/entryRelationship&gt;
           &lt;entryRelationship&gt;
             &lt;observation classCode="ROIBND" moodCode="EVN"&gt;
               &lt;templateId root="2.16.840.1.113883.10.20.6.2.10"/&gt;
-              &lt;id root="264834596"/&gt;
               &lt;code code="121190" codeSystem="1.2.840.10008.2.16.4" codeSystemName="DCM" displayName="Referenced Frames"/&gt;
-              &lt;text&gt;Text Value&lt;/text&gt;
-              &lt;effectiveTime&gt;
-                &lt;low value="2012"/&gt;
-                &lt;high value="2012"/&gt;
-              &lt;/effectiveTime&gt;
-              &lt;entryRelationship&gt;
-                &lt;observation classCode="OBS" moodCode="EVN"&gt;
-                  &lt;templateId root="2.16.840.1.113883.10.20.6.2.11"/&gt;
-                  &lt;id root="1717137456"/&gt;
-                  &lt;code code="113036" codeSystem="1.2.840.10008.2.16.4" codeSystemName="DCM" displayName="Frames for Display"/&gt;
-                  &lt;text&gt;Text Value&lt;/text&gt;
-                  &lt;effectiveTime&gt;
-                    &lt;low value="2012"/&gt;
-                    &lt;high value="2012"/&gt;
-                  &lt;/effectiveTime&gt;
-                &lt;/observation&gt;
-              &lt;/entryRelationship&gt;
             &lt;/observation&gt;
           &lt;/entryRelationship&gt;
         &lt;/observation&gt;

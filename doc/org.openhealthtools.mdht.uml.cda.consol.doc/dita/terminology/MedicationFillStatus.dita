@@ -17,16 +17,15 @@
 <row><entry>Version</entry><entry>1</entry></row>
 <row><entry>Definition</entry><entry>The HL7 ActStatus has been limited by HITSP. This identifies whether the medication has been fulfilled, such as completed and aborted</entry></row>
 </tbody></tgroup></table>
-<table><tgroup cols="4">
+<table><tgroup cols="3">
 <colspec colname="col1" colwidth="1*"/>
-<colspec colname="col2" colwidth="2*"/>
-<colspec colname="col3" colwidth="1*"/>
-<colspec colname="col4" colwidth="3*"/>
+<colspec colname="col2" colwidth="1*"/>
+<colspec colname="col3" colwidth="2*"/>
 <thead><row>
-<entry>Concept Code</entry><entry>Concept Name</entry><entry>Code System</entry><entry>Description</entry>
+<entry>Code</entry><entry>Code System</entry><entry>Print Name</entry>
 </row></thead><tbody>
-<row><entry>aborted</entry><entry>Aborted</entry><entry>ActStatus</entry><entry></entry></row>
-<row><entry>completed</entry><entry>Completed</entry><entry>ActStatus</entry><entry></entry></row>
+<row><entry>aborted</entry><entry>ActStatus</entry><entry>Aborted</entry></row>
+<row><entry>completed</entry><entry>ActStatus</entry><entry>Completed</entry></row>
 </tbody></tgroup></table>
 </section>
 </body>

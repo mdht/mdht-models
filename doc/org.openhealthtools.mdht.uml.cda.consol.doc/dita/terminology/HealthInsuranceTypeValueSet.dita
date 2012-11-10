@@ -13,65 +13,63 @@
 <colspec colname="col2" colwidth="4*"/>
 <tbody>
 <row><entry>Value Set</entry><entry>Health Insurance Type Value Set - 2.16.840.1.113883.3.88.12.3221.5.2</entry></row>
-<row><entry>Code System</entry><entry>LOINC - 2.16.840.1.113883.6.1</entry></row>
 <row><entry>Version</entry><entry>20081218</entry></row>
 <row><entry>Source</entry><entry>HITSP</entry></row>
 <row><entry>Definition</entry><entry>This value set uses the ACS X12 vocabulary for Insurance Type Code (ASC X12 Data Element 1336) and has been limited by HITSP to the value set reproduced below in Table 2-52 Health Insurance Type Value Set Definition
 The type of health plan covering the individual, e.g., an HMO, PPO, POS, etc.</entry></row>
 </tbody></tgroup></table>
-<table><tgroup cols="4">
+<table><tgroup cols="3">
 <colspec colname="col1" colwidth="1*"/>
-<colspec colname="col2" colwidth="2*"/>
-<colspec colname="col3" colwidth="1*"/>
-<colspec colname="col4" colwidth="3*"/>
+<colspec colname="col2" colwidth="1*"/>
+<colspec colname="col3" colwidth="2*"/>
 <thead><row>
-<entry>Concept Code</entry><entry>Concept Name</entry><entry>Code System</entry><entry>Description</entry>
+<entry>Code</entry><entry>Code System</entry><entry>Print Name</entry>
 </row></thead><tbody>
-<row><entry>12</entry><entry>Medicare Secondary Working Aged Beneficiary or Spouse with Employer Group Health Plan</entry><entry>LOINC</entry><entry></entry></row>
-<row><entry>13</entry><entry>Medicare Secondary End-Stage Renal Disease Beneficiary in the 12 month coordination period with an employer's group health plan</entry><entry>LOINC</entry><entry></entry></row>
-<row><entry>14</entry><entry>Medicare Secondary, No-fault Insurance including Auto is Primary</entry><entry>LOINC</entry><entry></entry></row>
-<row><entry>15</entry><entry>Medicare Secondary Worker's Compensation</entry><entry>LOINC</entry><entry></entry></row>
-<row><entry>16</entry><entry>Medicare Secondary Public Health Service (PHS)or Other Federal Agency</entry><entry>LOINC</entry><entry></entry></row>
-<row><entry>41</entry><entry>Medicare Secondary Black Lung</entry><entry>LOINC</entry><entry></entry></row>
-<row><entry>42</entry><entry>Medicare Secondary Veteran's Administration</entry><entry>LOINC</entry><entry></entry></row>
-<row><entry>43</entry><entry>Medicare Secondary Disabled Beneficiary Under Age 65 with Large Group Health Plan (LGHP)</entry><entry>LOINC</entry><entry></entry></row>
-<row><entry>47</entry><entry>Medicare Secondary, Other Liability Insurance is Primary</entry><entry>LOINC</entry><entry></entry></row>
-<row><entry>AP</entry><entry>Auto Insurance Policy</entry><entry>LOINC</entry><entry></entry></row>
-<row><entry>C1</entry><entry>Commercial</entry><entry>LOINC</entry><entry></entry></row>
-<row><entry>CO</entry><entry>Consolidated Omnibus Budget Reconciliation Act (COBRA)</entry><entry>LOINC</entry><entry></entry></row>
-<row><entry>CP</entry><entry>Medicare Conditionally Primary</entry><entry>LOINC</entry><entry></entry></row>
-<row><entry>D</entry><entry>Disability</entry><entry>LOINC</entry><entry></entry></row>
-<row><entry>DB</entry><entry>Disability Benefits</entry><entry>LOINC</entry><entry></entry></row>
-<row><entry>EP</entry><entry>Exclusive Provider Organization</entry><entry>LOINC</entry><entry></entry></row>
-<row><entry>FF</entry><entry>Family or Friends</entry><entry>LOINC</entry><entry></entry></row>
-<row><entry>GP</entry><entry>Group Policy</entry><entry>LOINC</entry><entry></entry></row>
-<row><entry>HM</entry><entry>Health Maintenance Organization (HMO)</entry><entry>LOINC</entry><entry></entry></row>
-<row><entry>HN</entry><entry>Health Maintenance Organization (HMO) - Medicare Risk</entry><entry>LOINC</entry><entry></entry></row>
-<row><entry>HS</entry><entry>Special Low Income Medicare Beneficiary</entry><entry>LOINC</entry><entry></entry></row>
-<row><entry>IN</entry><entry>Indemnity</entry><entry>LOINC</entry><entry></entry></row>
-<row><entry>IP</entry><entry>Individual Policy</entry><entry>LOINC</entry><entry></entry></row>
-<row><entry>LC</entry><entry>Long Term Care</entry><entry>LOINC</entry><entry></entry></row>
-<row><entry>LD</entry><entry>Long Term Policy</entry><entry>LOINC</entry><entry></entry></row>
-<row><entry>LI</entry><entry>Life Insurance</entry><entry>LOINC</entry><entry></entry></row>
-<row><entry>LT</entry><entry>Litigation</entry><entry>LOINC</entry><entry></entry></row>
-<row><entry>MA</entry><entry>Medicare Part A</entry><entry>LOINC</entry><entry></entry></row>
-<row><entry>MB</entry><entry>Medicare Part B</entry><entry>LOINC</entry><entry></entry></row>
-<row><entry>MC</entry><entry>Medicaid</entry><entry>LOINC</entry><entry></entry></row>
-<row><entry>MH</entry><entry>Medigap Part A</entry><entry>LOINC</entry><entry></entry></row>
-<row><entry>MI</entry><entry>Medigap Part B</entry><entry>LOINC</entry><entry></entry></row>
-<row><entry>MP</entry><entry>Medicare Primary</entry><entry>LOINC</entry><entry></entry></row>
-<row><entry>OT</entry><entry>Other</entry><entry>LOINC</entry><entry></entry></row>
-<row><entry>PE</entry><entry>Property Insurance - Personal</entry><entry>LOINC</entry><entry></entry></row>
-<row><entry>PL</entry><entry>Personal</entry><entry>LOINC</entry><entry></entry></row>
-<row><entry>PP</entry><entry>Personal Payment (Cash - No Insurance)</entry><entry>LOINC</entry><entry></entry></row>
-<row><entry>PR</entry><entry>Preferred Provider Organization (PPO)</entry><entry>LOINC</entry><entry></entry></row>
-<row><entry>PS</entry><entry>Point of Service (POS)</entry><entry>LOINC</entry><entry></entry></row>
-<row><entry>QM</entry><entry>Qualified Medicare Beneficiary</entry><entry>LOINC</entry><entry></entry></row>
-<row><entry>RP</entry><entry>Property Insurance - Real</entry><entry>LOINC</entry><entry></entry></row>
-<row><entry>SP</entry><entry>Supplemental Policy</entry><entry>LOINC</entry><entry></entry></row>
-<row><entry>TF</entry><entry>Tax Equity Fiscal Responsibility Act (TEFRA)</entry><entry>LOINC</entry><entry></entry></row>
-<row><entry>WC</entry><entry>Workers Compensation</entry><entry>LOINC</entry><entry></entry></row>
-<row><entry>WU</entry><entry>Wrap Up Policy</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>12</entry><entry></entry><entry>Medicare Secondary Working Aged Beneficiary or Spouse with Employer Group Health Plan</entry></row>
+<row><entry>13</entry><entry></entry><entry>Medicare Secondary End-Stage Renal Disease Beneficiary in the 12 month coordination period with an employer's group health plan</entry></row>
+<row><entry>14</entry><entry></entry><entry>Medicare Secondary, No-fault Insurance including Auto is Primary</entry></row>
+<row><entry>15</entry><entry></entry><entry>Medicare Secondary Worker's Compensation</entry></row>
+<row><entry>16</entry><entry></entry><entry>Medicare Secondary Public Health Service (PHS)or Other Federal Agency</entry></row>
+<row><entry>41</entry><entry></entry><entry>Medicare Secondary Black Lung</entry></row>
+<row><entry>42</entry><entry></entry><entry>Medicare Secondary Veteran's Administration</entry></row>
+<row><entry>43</entry><entry></entry><entry>Medicare Secondary Disabled Beneficiary Under Age 65 with Large Group Health Plan (LGHP)</entry></row>
+<row><entry>47</entry><entry></entry><entry>Medicare Secondary, Other Liability Insurance is Primary</entry></row>
+<row><entry>AP</entry><entry></entry><entry>Auto Insurance Policy</entry></row>
+<row><entry>C1</entry><entry></entry><entry>Commercial</entry></row>
+<row><entry>CO</entry><entry></entry><entry>Consolidated Omnibus Budget Reconciliation Act (COBRA)</entry></row>
+<row><entry>CP</entry><entry></entry><entry>Medicare Conditionally Primary</entry></row>
+<row><entry>D</entry><entry></entry><entry>Disability</entry></row>
+<row><entry>DB</entry><entry></entry><entry>Disability Benefits</entry></row>
+<row><entry>EP</entry><entry></entry><entry>Exclusive Provider Organization</entry></row>
+<row><entry>FF</entry><entry></entry><entry>Family or Friends</entry></row>
+<row><entry>GP</entry><entry></entry><entry>Group Policy</entry></row>
+<row><entry>HM</entry><entry></entry><entry>Health Maintenance Organization (HMO)</entry></row>
+<row><entry>HN</entry><entry></entry><entry>Health Maintenance Organization (HMO) - Medicare Risk</entry></row>
+<row><entry>HS</entry><entry></entry><entry>Special Low Income Medicare Beneficiary</entry></row>
+<row><entry>IN</entry><entry></entry><entry>Indemnity</entry></row>
+<row><entry>IP</entry><entry></entry><entry>Individual Policy</entry></row>
+<row><entry>LC</entry><entry></entry><entry>Long Term Care</entry></row>
+<row><entry>LD</entry><entry></entry><entry>Long Term Policy</entry></row>
+<row><entry>LI</entry><entry></entry><entry>Life Insurance</entry></row>
+<row><entry>LT</entry><entry></entry><entry>Litigation</entry></row>
+<row><entry>MA</entry><entry></entry><entry>Medicare Part A</entry></row>
+<row><entry>MB</entry><entry></entry><entry>Medicare Part B</entry></row>
+<row><entry>MC</entry><entry></entry><entry>Medicaid</entry></row>
+<row><entry>MH</entry><entry></entry><entry>Medigap Part A</entry></row>
+<row><entry>MI</entry><entry></entry><entry>Medigap Part B</entry></row>
+<row><entry>MP</entry><entry></entry><entry>Medicare Primary</entry></row>
+<row><entry>OT</entry><entry></entry><entry>Other</entry></row>
+<row><entry>PE</entry><entry></entry><entry>Property Insurance - Personal</entry></row>
+<row><entry>PL</entry><entry></entry><entry>Personal</entry></row>
+<row><entry>PP</entry><entry></entry><entry>Personal Payment (Cash - No Insurance)</entry></row>
+<row><entry>PR</entry><entry></entry><entry>Preferred Provider Organization (PPO)</entry></row>
+<row><entry>PS</entry><entry></entry><entry>Point of Service (POS)</entry></row>
+<row><entry>QM</entry><entry></entry><entry>Qualified Medicare Beneficiary</entry></row>
+<row><entry>RP</entry><entry></entry><entry>Property Insurance - Real</entry></row>
+<row><entry>SP</entry><entry></entry><entry>Supplemental Policy</entry></row>
+<row><entry>TF</entry><entry></entry><entry>Tax Equity Fiscal Responsibility Act (TEFRA)</entry></row>
+<row><entry>WC</entry><entry></entry><entry>Workers Compensation</entry></row>
+<row><entry>WU</entry><entry></entry><entry>Wrap Up Policy</entry></row>
 </tbody></tgroup></table>
 </section>
 </body>

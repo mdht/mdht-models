@@ -17,20 +17,21 @@
 <row><entry>Version</entry><entry>1</entry></row>
 <row><entry>Definition</entry><entry>This identifies the type of the Advance Directive. Uses the AdvanceDirectiveTypeCode vocabulary defined by CCD.</entry></row>
 </tbody></tgroup></table>
-<table><tgroup cols="4">
+<table><tgroup cols="3">
 <colspec colname="col1" colwidth="1*"/>
-<colspec colname="col2" colwidth="2*"/>
-<colspec colname="col3" colwidth="1*"/>
-<colspec colname="col4" colwidth="3*"/>
+<colspec colname="col2" colwidth="1*"/>
+<colspec colname="col3" colwidth="2*"/>
 <thead><row>
-<entry>Concept Code</entry><entry>Concept Name</entry><entry>Code System</entry><entry>Description</entry>
+<entry>Code</entry><entry>Code System</entry><entry>Print Name</entry>
 </row></thead><tbody>
-<row><entry>281789004</entry><entry>Antibiotics</entry><entry>SNOMEDCT</entry><entry></entry></row>
-<row><entry>89666000</entry><entry>CPR</entry><entry>SNOMEDCT</entry><entry></entry></row>
-<row><entry>225204009</entry><entry>IV Fluid and Support</entry><entry>SNOMEDCT</entry><entry></entry></row>
-<row><entry>52765003</entry><entry>Intubation</entry><entry>SNOMEDCT</entry><entry></entry></row>
-<row><entry>78823007</entry><entry>Life Support</entry><entry>SNOMEDCT</entry><entry></entry></row>
-<row><entry>304251008</entry><entry>Resuscitation</entry><entry>SNOMEDCT</entry><entry></entry></row>
+<row><entry>281789004</entry><entry>SNOMEDCT</entry><entry>Antibiotics</entry></row>
+<row><entry>89666000</entry><entry>SNOMEDCT</entry><entry>CPR</entry></row>
+<row><entry>225204009</entry><entry>SNOMEDCT</entry><entry>IV Fluid and Support</entry></row>
+<row><entry>52765003</entry><entry>SNOMEDCT</entry><entry>Intubation</entry></row>
+<row><entry>78823007</entry><entry>SNOMEDCT</entry><entry>Life Support</entry></row>
+<row><entry>304251008</entry><entry>SNOMEDCT</entry><entry>Resuscitation</entry></row>
+<row><entry>61420007</entry><entry>SNOMEDCT</entry><entry>Tube Feedings</entry></row>
+<row><entry>71388002</entry><entry>SNOMEDCT</entry><entry>Other Directive</entry></row>
 </tbody></tgroup></table>
 </section>
 </body>

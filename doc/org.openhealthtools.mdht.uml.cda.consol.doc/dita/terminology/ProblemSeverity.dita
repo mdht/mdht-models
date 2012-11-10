@@ -17,20 +17,19 @@
 <row><entry>Description</entry><entry>This is a description of the level of the severity of the problem.
 </entry></row>
 </tbody></tgroup></table>
-<table><tgroup cols="4">
+<table><tgroup cols="3">
 <colspec colname="col1" colwidth="1*"/>
-<colspec colname="col2" colwidth="2*"/>
-<colspec colname="col3" colwidth="1*"/>
-<colspec colname="col4" colwidth="3*"/>
+<colspec colname="col2" colwidth="1*"/>
+<colspec colname="col3" colwidth="2*"/>
 <thead><row>
-<entry>Concept Code</entry><entry>Concept Name</entry><entry>Code System</entry><entry>Description</entry>
+<entry>Code</entry><entry>Code System</entry><entry>Print Name</entry>
 </row></thead><tbody>
-<row><entry>255604002</entry><entry>Mild</entry><entry>SNOMEDCT</entry><entry></entry></row>
-<row><entry>371923003</entry><entry>Mild to moderate</entry><entry>SNOMEDCT</entry><entry></entry></row>
-<row><entry>6736007</entry><entry>Moderate</entry><entry>SNOMEDCT</entry><entry></entry></row>
-<row><entry>371924009</entry><entry>Moderate to severe</entry><entry>SNOMEDCT</entry><entry></entry></row>
-<row><entry>24484000</entry><entry>Severe</entry><entry>SNOMEDCT</entry><entry></entry></row>
-<row><entry>399166001</entry><entry>Fatal</entry><entry>SNOMEDCT</entry><entry></entry></row>
+<row><entry>255604002</entry><entry>SNOMEDCT</entry><entry>Mild</entry></row>
+<row><entry>371923003</entry><entry>SNOMEDCT</entry><entry>Mild to moderate</entry></row>
+<row><entry>6736007</entry><entry>SNOMEDCT</entry><entry>Moderate</entry></row>
+<row><entry>371924009</entry><entry>SNOMEDCT</entry><entry>Moderate to severe</entry></row>
+<row><entry>24484000</entry><entry>SNOMEDCT</entry><entry>Severe</entry></row>
+<row><entry>399166001</entry><entry>SNOMEDCT</entry><entry>Fatal</entry></row>
 </tbody></tgroup></table>
 </section>
 </body>

@@ -8,9 +8,12 @@
 <resourceid id="2.16.840.1.113883.10.20.22.4.60"/>
 </prolog>
 <body>
+<section id="knownSubclasses">
+</section>
 <section id="description">
 </section>
 <ol id="conformance">
+<li><b>SHALL</b> contain exactly one [1..1] templateId ( CONF:8897, CONF:10492 ) such that it <ol><li><b>SHALL</b> contain exactly one [1..1] <b>@root</b>="2.16.840.1.113883.10.20.22.4.60"</li></ol></li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="ACT" </tt><i>Act</i> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>) (CONF:8872)
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF:8873)
@@ -21,7 +24,7 @@
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>statusCode</b></tt><tt><b>/@code</b>="completed" </tt> (CodeSystem:<tt> 2.16.840.1.113883.5.14 ActStatus</tt>) (CONF:8875)
 </li>
-<li><b>SHALL</b> contain at least one [1..*] <tt><b>entryRelationship</b></tt> (CONF:8878, CONF:8879, CONF:8880)
+<li><b>SHALL</b> contain at least one [1..*] <tt><b>entryRelationship</b></tt> (CONF:8878, CONF:8879, CONF:15528)
 <ol>
 <li>Contains <tt><b>@typeCode="</b>COMP" </tt><i>COMP</i></li>
 <li>Contains exactly one [1..1] <xref href="../PolicyActivity.dita">Policy Activity</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.61</tt>)</li></ol></li>
@@ -38,7 +41,7 @@
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>statusCode</b></tt><tt><b>/@code</b>="completed" </tt> (CodeSystem:<tt> 2.16.840.1.113883.5.14 ActStatus</tt>) (CONF:8875)
 </li>
-<li><b>SHALL</b> contain at least one [1..*] <tt><b>entryRelationship</b></tt> (CONF:8878, CONF:8879, CONF:8880)
+<li><b>SHALL</b> contain at least one [1..*] <tt><b>entryRelationship</b></tt> (CONF:8878, CONF:8879, CONF:15528)
 <ol>
 <li>Contains <tt><b>@typeCode="</b>COMP" </tt><i>COMP</i></li>
 <li>Contains exactly one [1..1] <xref href="../PolicyActivity.dita">Policy Activity</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.61</tt>)</li></ol></li>
@@ -46,33 +49,16 @@
 </ol>
 <section id="tableconformance"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="8" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><colspec colname="col2" colnum="2" /><colspec colname="col3" colnum="3" /><colspec colname="col4" colnum="4" /><colspec colname="col5" colnum="5" /><colspec colname="col6" colnum="6" /><colspec colname="col7" colnum="7" /><thead> <row><entry namest="col0" nameend="col7" >consol::CoverageActivity</entry>  </row>  <row><entry namest="col0" nameend="col7" >cda::act[cda:templateId/@root = 2.16.840.1.113883.10.20.22.4.60]/</entry>  </row>  <row><entry>Name</entry><entry>XPath</entry><entry>Cardinality</entry><entry>Severity</entry><entry>Nullable</entry><entry>Data Type</entry><entry>Conformance</entry><entry>Value(s)</entry></row></thead><tbody><row><entry>classCode</entry><entry>@classCode</entry><entry>1..1</entry><entry>SHALL</entry><entry>NO</entry><entry>x_ActClassDocumentEntryAct</entry><entry>CONF:8872</entry><entry> ACCM</entry></row> 
 <row><entry>moodCode</entry><entry>@moodCode</entry><entry>1..1</entry><entry>SHALL</entry><entry>NO</entry><entry>x_DocumentActMood</entry><entry>CONF:8873</entry><entry> APT</entry></row> 
-<row><entry>negationInd</entry><entry>@negationInd</entry><entry>0..1</entry><entry></entry><entry>NO</entry><entry>Boolean</entry><entry></entry><entry> </entry></row> 
-<row><entry>nullFlavor</entry><entry>@nullFlavor</entry><entry>0..1</entry><entry></entry><entry>NO</entry><entry>NullFlavor</entry><entry></entry><entry> ASKU</entry></row> 
 <row><entry>code</entry><entry>code</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>CD</entry><entry>CONF:8876</entry><entry>LOINC 2.16.840.1.113883.6.1 48768-6</entry></row> 
-<row><entry>effectiveTime</entry><entry>effectiveTime</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>IVL_TS</entry><entry></entry><entry> </entry></row> 
 <row><entry>id</entry><entry>id</entry><entry>1..*</entry><entry>SHALL</entry><entry>YES</entry><entry>II</entry><entry>CONF:8874</entry><entry> </entry></row> 
-<row><entry>languageCode</entry><entry>languageCode</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>CS</entry><entry></entry><entry> </entry></row> 
-<row><entry>priorityCode</entry><entry>priorityCode</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>CE</entry><entry></entry><entry> </entry></row> 
-<row><entry>realmCode</entry><entry>realmCode</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>CS</entry><entry></entry><entry> </entry></row> 
 <row><entry>statusCode</entry><entry>statusCode</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>CS</entry><entry>CONF:8875</entry><entry>ActStatus 2.16.840.1.113883.5.14 completed</entry></row> 
-<row><entry>templateId</entry><entry>templateId</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>II</entry><entry></entry><entry> 2.16.840.1.113883.10.20.22.4.60</entry></row> 
-<row><entry>text</entry><entry>text</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>ED</entry><entry></entry><entry> </entry></row> 
-<row><entry>author</entry><entry>author</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>Author</entry><entry></entry><entry> </entry></row> 
-<row><entry>entryRelationship</entry><entry>entryRelationship</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>EntryRelationship</entry><entry></entry><entry> </entry></row> 
-<row><entry>informant</entry><entry>informant</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>Informant12</entry><entry></entry><entry> </entry></row> 
-<row><entry>participant</entry><entry>participant</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>Participant2</entry><entry></entry><entry> </entry></row> 
-<row><entry>performer</entry><entry>performer</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>Performer2</entry><entry></entry><entry> </entry></row> 
-<row><entry>policyActivity</entry><entry>policyActivity</entry><entry>1..*</entry><entry>SHALL</entry><entry>YES</entry><entry>PolicyActivity</entry><entry>CONF:8878CONF:8879CONF:8880</entry><entry> </entry></row> 
-<row><entry>precondition</entry><entry>precondition</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>Precondition</entry><entry></entry><entry> </entry></row> 
-<row><entry>reference</entry><entry>reference</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>Reference</entry><entry></entry><entry> </entry></row> 
-<row><entry>specimen</entry><entry>specimen</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>Specimen</entry><entry></entry><entry> </entry></row> 
-<row><entry>subject</entry><entry>subject</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>Subject</entry><entry></entry><entry> </entry></row> 
-<row><entry>typeId</entry><entry>typeId</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>InfrastructureRootTypeId</entry><entry></entry><entry> </entry></row> 
+<row><entry>coverageActivity</entry><entry>coverageActivity</entry><entry>0..*</entry><entry>SHOULD</entry><entry>YES</entry><entry>CoverageActivity</entry><entry>CONF:7959CONF:8905</entry><entry> </entry></row> 
+<row><entry>policyActivity</entry><entry>policyActivity</entry><entry>1..*</entry><entry>SHALL</entry><entry>YES</entry><entry>PolicyActivity</entry><entry>CONF:8878CONF:8879CONF:15528</entry><entry> </entry></row> 
 </tbody></tgroup></table></p></section>
 <codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
 <act xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd" classCode="ACT" moodCode="EVN">
   <templateId root="2.16.840.1.113883.10.20.22.4.60"/>
-  <id root="925146673"/>
+  <id root="MDHT" extension="806558256"/>
   <code code="48768-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Payment Sources"/>
   <statusCode code="completed"/>
   <effectiveTime>
@@ -82,24 +68,48 @@
   <entryRelationship>
     <act classCode="ACT" moodCode="EVN">
       <templateId root="2.16.840.1.113883.10.20.22.4.61"/>
-      <id root="731241670"/>
-      <code codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+      <id root="MDHT" extension="1448545348"/>
+      <code codeSystemName=""/>
       <statusCode code="completed"/>
       <effectiveTime>
         <low value="2012"/>
         <high value="2012"/>
       </effectiveTime>
-      <entryRelationship>
-        <act classCode="ACT" moodCode="EVN">
-          <templateId root="2.16.840.1.113883.10.20.1.19"/>
-          <id root="342274212"/>
-          <code code="1155650330"/>
-          <effectiveTime>
-            <low value="2012"/>
-            <high value="2012"/>
-          </effectiveTime>
-        </act>
-      </entryRelationship>
+      <performer typeCode="PRF">
+        <templateId root="2.16.840.1.113883.10.20.22.4.87"/>
+        <assignedEntity>
+          <code codeSystem="2.16.840.1.113883.5.110" codeSystemName="HL7RoleClass"/>
+        </assignedEntity>
+      </performer>
+      <performer typeCode="PRF">
+        <templateId root="2.16.840.1.113883.10.20.22.4.88"/>
+        <time>
+          <low value="2012"/>
+          <high value="2012"/>
+        </time>
+        <assignedEntity>
+          <code code="GUAR" codeSystem="2.16.840.1.113883.5.111" codeSystemName="RoleCode"/>
+        </assignedEntity>
+      </performer>
+      <participant typeCode="COV">
+        <templateId root="2.16.840.1.113883.10.20.22.4.89"/>
+        <time>
+          <low value="2012"/>
+          <high value="2012"/>
+        </time>
+        <participantRole>
+          <code codeSystem="2.16.840.1.113883.5.111" codeSystemName="RoleCode"/>
+        </participantRole>
+      </participant>
+      <participant typeCode="HLD">
+        <templateId root="2.16.840.1.113883.10.20.22.4.90"/>
+        <time>
+          <low value="2012"/>
+          <high value="2012"/>
+        </time>
+        <participantRole/>
+      </participant>
+      <entryRelationship typeCode="REFR"/>
     </act>
   </entryRelationship>
 </act>]]></codeblock>

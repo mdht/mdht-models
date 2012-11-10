@@ -15,6 +15,25 @@
 <row><entry>Value Set</entry><entry>DIRDocumentTypeCodes - 2.16.840.1.113883.11.20.9.32</entry></row>
 <row><entry>Code System</entry><entry>LOINC - 2.16.840.1.113883.6.1</entry></row>
 </tbody></tgroup></table>
+<table><tgroup cols="3">
+<colspec colname="col1" colwidth="1*"/>
+<colspec colname="col2" colwidth="1*"/>
+<colspec colname="col3" colwidth="2*"/>
+<thead><row>
+<entry>Code</entry><entry>Code System</entry><entry>Print Name</entry>
+</row></thead><tbody>
+<row><entry>18748-4</entry><entry>LOINC</entry><entry>Diagnositic Imaging Report</entry></row>
+<row><entry>18747-6</entry><entry>LOINC</entry><entry>CT Report</entry></row>
+<row><entry>18755-9</entry><entry>LOINC</entry><entry>MRI Report</entry></row>
+<row><entry>18760-9</entry><entry>LOINC</entry><entry>Ultrasound Report</entry></row>
+<row><entry>18757-5</entry><entry>LOINC</entry><entry>Nuclear Medicine Report</entry></row>
+<row><entry>18758-3</entry><entry>LOINC</entry><entry>PET Scan Report</entry></row>
+<row><entry>18745-0</entry><entry>LOINC</entry><entry>Cardiac Catheterization Report</entry></row>
+<row><entry>11522-0</entry><entry>LOINC</entry><entry>Echocardiography Report</entry></row>
+<row><entry>18746-8</entry><entry>LOINC</entry><entry>Colonoscopy Report</entry></row>
+<row><entry>18751-8</entry><entry>LOINC</entry><entry>Endoscopy Report</entry></row>
+<row><entry>11525-3</entry><entry>LOINC</entry><entry>Obstetrical Ultrasound Report</entry></row>
+</tbody></tgroup></table>
 </section>
 </body>
 </topic>

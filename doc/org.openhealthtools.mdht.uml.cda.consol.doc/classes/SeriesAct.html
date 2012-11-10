@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html
   PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html lang="en-us" xml:lang="en-us">
+<html xml:lang="en-us" lang="en-us">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 <meta name="copyright" content="(C) Copyright 2005"/>
@@ -17,10 +17,10 @@
 <link rel="stylesheet" type="text/css" href="../css/commonltr.css"/>
 <title>Series Act</title>
 </head>
-<body id="classId"><a name="classId"><!-- --></a>
+<body id="classId">
 <div>
-	<p><b>For Discussion and Demonstration Only</b> The Normative content for these specifications
-	may be found on the HL7 web site.</p>
+	<p><b>Non-Normative Content</b> The Normative content for these specifications
+	may be found on the HL7, IHE, and HITSP web sites.</p>
 </div>
 
 	<h1 class="title topictitle1"><span class="ph">Series Act</span></h1>
@@ -31,13 +31,18 @@
 
 		
 		<div class="section">
-<p class="p">A Series Act contains the DICOM series information for referenced DICOM composite objects. The series information defines the attributes that are used to group composite instances into distinct logical sets. Each series is associated with exactly one study. Series Act clinical statements are only instantiated in the DICOM Object Catalog section inside a Study Act, and thus do not require a separate templateId; in other sections, the SOP Instance Observation is included directly.</p>
+<div class="p"><p class="lines"><em class="ph i">A Series Act contains the DICOM series information for referenced DICOM composite objects. The series information defines the attributes that are used to group composite instances into distinct logical sets. Each series is associated with exactly one study. Series Act clinical statements are only instantiated in the DICOM Object Catalog section inside a Study Act, and thus do not require a separate templateId; in other sections, the SOP Instance Observation is included directly.</em></p>
+</div>
 
 </div>
 
 		
 
 		<ol class="ol">
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] templateId ( CONF:10918, CONF:10919 ) such that it <ol class="ol" type="a"><li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <strong class="ph b">@root</strong>="2.16.840.1.113883.10.20.22.4.63"</li>
+</ol>
+</li>
+
 <li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@classCode</strong>="ACT" </tt><em class="ph i">Act</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.5.6 HL7ActClass</tt>) (CONF:9222)
 </li>
 
@@ -48,7 +53,9 @@
 </li>
 
 <li class="li"><strong class="ph b">SHOULD</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">effectiveTime</strong></tt> (CONF:9235)
-<ul class="ul"><li class="li">If present, the effectiveTime contains the time the series was started</li>
+<ul class="ul"><li class="li"><div class="p"><p class="lines"><em class="ph i">If present, the effectiveTime contains the time the series was started</em></p>
+</div>
+</li>
 </ul>
 </li>
 
@@ -56,11 +63,13 @@
 </li>
 
 <li class="li"><strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">text</strong></tt> (CONF:9233)
-<ul class="ul"><li class="li">If present, the text element contains the description of the series</li>
+<ul class="ul"><li class="li"><div class="p"><p class="lines"><em class="ph i">If present, the text element contains the description of the series</em></p>
+</div>
+</li>
 </ul>
 </li>
 
-<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">entryRelationship</strong></tt> (CONF:9237, CONF:9238, CONF:9239)
+<li class="li"><strong class="ph b">SHALL</strong> contain at least one [1..*] <tt class="ph tt"><strong class="ph b">entryRelationship</strong></tt> (CONF:9237, CONF:9238, CONF:15927)
 <ol class="ol" type="a">
 <li class="li">Contains <tt class="ph tt"><strong class="ph b">@typeCode="</strong>COMP" </tt><em class="ph i">COMP</em></li>
 
@@ -69,8 +78,6 @@
 </li>
 
 <li class="li">ids <strong class="ph b">SHALL</strong> contain exactly one [1..1] @root (CONF:9225)</li>
-
-<li class="li"><strong class="ph b">SHALL</strong> satisfy: The @root contains the OID of the study instance UID since DICOM study ids consist only of an OID (CONF:9227)</li>
 
 <li class="li">ids <strong class="ph b">SHALL NOT</strong> contain [0..0] @extension (CONF:9226)</li>
 
@@ -95,7 +102,7 @@
 		<pre class="pre codeblock">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
 &lt;act xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd" classCode="ACT" moodCode="EVN"&gt;
   &lt;templateId root="2.16.840.1.113883.10.20.22.4.63"/&gt;
-  &lt;id root="1134119093"/&gt;
+  &lt;id root="MDHT" extension="718496714"/&gt;
   &lt;code code="113015" codeSystem="1.2.840.10008.2.16.4" codeSystemName="DCM"/&gt;
   &lt;text&gt;Text Value&lt;/text&gt;
   &lt;effectiveTime&gt;
@@ -105,8 +112,8 @@
   &lt;entryRelationship&gt;
     &lt;observation classCode="DGIMG" moodCode="EVN"&gt;
       &lt;templateId root="2.16.840.1.113883.10.20.6.2.8"/&gt;
-      &lt;id root="1788655237"/&gt;
-      &lt;code code="1540689759"/&gt;
+      &lt;id root="MDHT" extension="1672026467"/&gt;
+      &lt;code codeSystem="1.2.840.10008.2.6.1" codeSystemName="DCMUID"/&gt;
       &lt;text&gt;Text Value&lt;/text&gt;
       &lt;effectiveTime&gt;
         &lt;low value="2012"/&gt;
@@ -115,8 +122,8 @@
       &lt;entryRelationship&gt;
         &lt;observation classCode="OBS" moodCode="EVN"&gt;
           &lt;templateId root="2.16.840.1.113883.10.20.6.2.9"/&gt;
-          &lt;id root="112570203"/&gt;
-          &lt;code code="746999941"/&gt;
+          &lt;id root="MDHT" extension="1245928834"/&gt;
+          &lt;code code="2075148006"/&gt;
           &lt;text&gt;Text Value&lt;/text&gt;
           &lt;effectiveTime&gt;
             &lt;low value="2012"/&gt;
@@ -127,7 +134,7 @@
       &lt;entryRelationship&gt;
         &lt;observation classCode="ROIBND" moodCode="EVN"&gt;
           &lt;templateId root="2.16.840.1.113883.10.20.6.2.10"/&gt;
-          &lt;id root="349416347"/&gt;
+          &lt;id root="MDHT" extension="2043341449"/&gt;
           &lt;code code="121190" codeSystem="1.2.840.10008.2.16.4" codeSystemName="DCM" displayName="Referenced Frames"/&gt;
           &lt;text&gt;Text Value&lt;/text&gt;
           &lt;effectiveTime&gt;
@@ -137,13 +144,7 @@
           &lt;entryRelationship&gt;
             &lt;observation classCode="OBS" moodCode="EVN"&gt;
               &lt;templateId root="2.16.840.1.113883.10.20.6.2.11"/&gt;
-              &lt;id root="1403254455"/&gt;
               &lt;code code="113036" codeSystem="1.2.840.10008.2.16.4" codeSystemName="DCM" displayName="Frames for Display"/&gt;
-              &lt;text&gt;Text Value&lt;/text&gt;
-              &lt;effectiveTime&gt;
-                &lt;low value="2012"/&gt;
-                &lt;high value="2012"/&gt;
-              &lt;/effectiveTime&gt;
             &lt;/observation&gt;
           &lt;/entryRelationship&gt;
         &lt;/observation&gt;

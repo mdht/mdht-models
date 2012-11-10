@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html
   PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html lang="en-us" xml:lang="en-us">
+<html xml:lang="en-us" lang="en-us">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 <meta name="copyright" content="(C) Copyright 2005"/>
@@ -17,10 +17,10 @@
 <link rel="stylesheet" type="text/css" href="../css/commonltr.css"/>
 <title>Encounter Activities</title>
 </head>
-<body id="classId"><a name="classId"><!-- --></a>
+<body id="classId">
 <div>
-	<p><b>For Discussion and Demonstration Only</b> The Normative content for these specifications
-	may be found on the HL7 web site.</p>
+	<p><b>Non-Normative Content</b> The Normative content for these specifications
+	may be found on the HL7, IHE, and HITSP web sites.</p>
 </div>
 
 	<h1 class="title topictitle1"><span class="ph">Encounter Activities</span></h1>
@@ -31,13 +31,18 @@
 
 		
 		<div class="section">
-<p class="p">This clinical statement describes the interactions between the patient and clinicians. Interactions include in-person encounters, telephone conversations, and email exchanges.</p>
+<div class="p"><p class="lines"><em class="ph i">This clinical statement describes the interactions between the patient and clinicians. Interactions include in-person encounters, telephone conversations, and email exchanges.</em></p>
+</div>
 
 </div>
 
 		
 
 		<ol class="ol">
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] templateId ( CONF:10494 ) such that it <ol class="ol" type="a"><li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <strong class="ph b">@root</strong>="2.16.840.1.113883.10.20.22.4.49"</li>
+</ol>
+</li>
+
 <li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@classCode</strong>="ENC" </tt> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.5.6 HL7ActClass</tt>) (CONF:8710)
 </li>
 
@@ -53,13 +58,13 @@
 <li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">effectiveTime</strong></tt> (CONF:8715)
 </li>
 
-<li class="li"><strong class="ph b">MAY</strong> contain zero or more [0..*] <tt class="ph tt"><strong class="ph b">participant</strong></tt> (CONF:8739)
+<li class="li"><strong class="ph b">MAY</strong> contain zero or more [0..*] <tt class="ph tt"><strong class="ph b">participant</strong></tt> (CONF:8738, CONF:14903)
 <ol class="ol" type="a">
 <li class="li">Contains exactly one [1..1] <a class="xref" href="generated/../ServiceDeliveryLocation.html">Service Delivery Location</a> (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.22.4.32</tt>)</li>
 </ol>
 </li>
 
-<li class="li"><strong class="ph b">MAY</strong> contain zero or more [0..*] <tt class="ph tt"><strong class="ph b">entryRelationship</strong></tt> (CONF:8724)
+<li class="li"><strong class="ph b">MAY</strong> contain zero or more [0..*] <tt class="ph tt"><strong class="ph b">entryRelationship</strong></tt> (CONF:8722, CONF:8723, CONF:14899)
 <ol class="ol" type="a">
 <li class="li">Contains <tt class="ph tt"><strong class="ph b">@typeCode="</strong>RSON" </tt><em class="ph i">RSON</em></li>
 
@@ -67,16 +72,28 @@
 </ol>
 </li>
 
-<li class="li"><strong class="ph b">MAY</strong> contain zero or more [0..*] <tt class="ph tt"><strong class="ph b">performer</strong></tt> (CONF:8725)
+<li class="li"><strong class="ph b">MAY</strong> contain zero or more [0..*] <tt class="ph tt"><strong class="ph b">performer</strong></tt> (CONF:8725) <ol class="ol" type="a"><li class="li"> Such performers <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">assignedEntity</strong></tt> (CONF:8726) <ol class="ol" type="i"><li class="li"> This assignedEntity <strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">code</strong></tt> (CONF:8727)</li>
+</ol>
+ </li>
+</ol>
+
+</li>
+
+<li class="li"><strong class="ph b">MAY</strong> contain zero or more [0..*] <tt class="ph tt"><strong class="ph b">entryRelationship</strong></tt> (CONF:15492, CONF:15973)
+<ol class="ol" type="a">
+<li class="li">Contains exactly one [1..1] <a class="xref" href="generated/../EncounterDiagnosis.html" title="[Act: templateId 2.16.840.1.113883.10.20.22.4.80]">Encounter Diagnosis</a> (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.22.4.80</tt>)</li>
+</ol>
 </li>
 
 <li class="li">code, if present, <strong class="ph b">SHOULD</strong> contain zero or one [0..1] originalText (CONF:8719)</li>
 
-<li class="li">originalText, if present, <strong class="ph b">SHOULD</strong> contain zero or one [0..1] reference/@value (CONF:8720)</li>
+<li class="li">originalText, if present, <strong class="ph b">SHOULD</strong> contain zero or one [0..1] reference (CONF:15970)</li>
 
-<li class="li">reference/@value <strong class="ph b">SHALL</strong> begin with a '#' and <strong class="ph b">SHALL</strong> point to its corresponding narrative (using the approach defined in CDA Release 2, section 4.3.5.1) (CONF:8721)</li>
+<li class="li">reference, if present, <strong class="ph b">SHOULD</strong> contain zero or one [0..1] @value (CONF:15971)</li>
 
-<li class="li"><strong class="ph b">MAY</strong> have a sdtc:dischargeDispositionCode which <strong class="ph b">SHALL</strong> be  selected from ValueSet 2.16.840.1.113883.3.88.12.80.33 NUBC UB-04 FL17-Patient Status DYNAMIC or, if access to NUBC is unavailable, from CodeSystem 2.16.840.1.113883.12.112 HL7 Discharge Disposition. The prefix sdtc: <strong class="ph b">SHALL</strong> be bound to the namespace "urn:hl7-org:sdtc??. The use of the namespace provides a necessary extension to CDA R2 for the use of the dischargeDispositionCode element (CONF:9929)</li>
+<li class="li">reference/@value <strong class="ph b">SHALL</strong> begin with a '#' and <strong class="ph b">SHALL</strong> point to its corresponding narrative (using the approach defined in CDA Release 2, section 4.3.5.1) (CONF:15972)</li>
+
+<li class="li"><strong class="ph b">MAY</strong> contain zero or one [0..1] sdtc:dischargeDispositionCode, which <strong class="ph b">SHALL</strong> be selected from ValueSet 2.16.840.1.113883.3.88.12.80.33 NUBC UB-04 FL17-Patient Status DYNAMIC or, if access to NUBC is unavailable, from CodeSystem 2.16.840.1.113883.12.112 HL7 Discharge Disposition. The prefix sdtc: <strong class="ph b">SHALL</strong> be bound to the namespace "urn:hl7-org:sdtc". The use of the namespace provides a necessary extension to CDA R2 for the use of the dischargeDispositionCode element (CONF:9929) (CONF:9929)</li>
 
 <li class="li">EncounterActivities with target entry Service Delivery Location <strong class="ph b">SHALL</strong> contain exactly one [1..1] @typeCode="LOC" Location (CodeSystem: 2.16.840.1.113883.5.1002 HL7ActRelationshipType) STATIC (CONF:8740)</li>
 
@@ -93,7 +110,7 @@
 		<pre class="pre codeblock">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
 &lt;encounter xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd" classCode="ENC" moodCode="EVN"&gt;
   &lt;templateId root="2.16.840.1.113883.10.20.22.4.49"/&gt;
-  &lt;id root="1973215464"/&gt;
+  &lt;id root="MDHT" extension="87490210"/&gt;
   &lt;code codeSystem="2.16.840.1.113883.6.12" codeSystemName="CPT-4"/&gt;
   &lt;effectiveTime&gt;
     &lt;low value="2012"/&gt;
@@ -101,27 +118,65 @@
   &lt;/effectiveTime&gt;
   &lt;performer&gt;
     &lt;assignedEntity&gt;
-      &lt;id root="349447055"/&gt;
-      &lt;code code="Value"/&gt;
+      &lt;id root="MDHT" extension="454755722"/&gt;
+      &lt;code code="763958632"/&gt;
     &lt;/assignedEntity&gt;
   &lt;/performer&gt;
   &lt;entryRelationship&gt;
     &lt;observation classCode="OBS" moodCode="EVN"&gt;
       &lt;templateId root="2.16.840.1.113883.10.20.22.4.19"/&gt;
-      &lt;id root="506276822"/&gt;
+      &lt;id root="MDHT" extension="144873532"/&gt;
       &lt;code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/&gt;
       &lt;statusCode code="completed"/&gt;
       &lt;effectiveTime&gt;
         &lt;low value="2012"/&gt;
         &lt;high value="2012"/&gt;
       &lt;/effectiveTime&gt;
-      &lt;performer&gt;
-        &lt;assignedEntity&gt;
-          &lt;id root="2067986124"/&gt;
-          &lt;code code="Value"/&gt;
-        &lt;/assignedEntity&gt;
-      &lt;/performer&gt;
     &lt;/observation&gt;
+  &lt;/entryRelationship&gt;
+  &lt;entryRelationship&gt;
+    &lt;act classCode="ACT" moodCode="EVN"&gt;
+      &lt;templateId root="2.16.840.1.113883.10.20.22.4.80"/&gt;
+      &lt;id root="MDHT" extension="2078610096"/&gt;
+      &lt;code code="29308-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Diagnosis"/&gt;
+      &lt;effectiveTime&gt;
+        &lt;low value="2012"/&gt;
+        &lt;high value="2012"/&gt;
+      &lt;/effectiveTime&gt;
+      &lt;entryRelationship&gt;
+        &lt;observation classCode="OBS" moodCode="EVN"&gt;
+          &lt;templateId root="2.16.840.1.113883.10.20.22.4.4"/&gt;
+          &lt;id root="MDHT" extension="1481352696"/&gt;
+          &lt;code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/&gt;
+          &lt;statusCode code="completed"/&gt;
+          &lt;effectiveTime&gt;
+            &lt;low value="2012"/&gt;
+            &lt;high value="2012"/&gt;
+          &lt;/effectiveTime&gt;
+          &lt;entryRelationship&gt;
+            &lt;observation classCode="OBS" moodCode="EVN"&gt;
+              &lt;templateId root="2.16.840.1.113883.10.20.22.4.31"/&gt;
+              &lt;code code="445518008" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT" displayName="Age At Onset"/&gt;
+              &lt;statusCode code="completed"/&gt;
+            &lt;/observation&gt;
+          &lt;/entryRelationship&gt;
+          &lt;entryRelationship&gt;
+            &lt;observation classCode="OBS" moodCode="EVN"&gt;
+              &lt;templateId root="2.16.840.1.113883.10.20.22.4.5"/&gt;
+              &lt;code code="11323-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Health status"/&gt;
+              &lt;statusCode code="completed"/&gt;
+            &lt;/observation&gt;
+          &lt;/entryRelationship&gt;
+          &lt;entryRelationship&gt;
+            &lt;observation classCode="OBS" moodCode="EVN"&gt;
+              &lt;templateId root="2.16.840.1.113883.10.20.22.4.6"/&gt;
+              &lt;code code="33999-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Status"/&gt;
+              &lt;statusCode code="completed"/&gt;
+            &lt;/observation&gt;
+          &lt;/entryRelationship&gt;
+        &lt;/observation&gt;
+      &lt;/entryRelationship&gt;
+    &lt;/act&gt;
   &lt;/entryRelationship&gt;
 &lt;/encounter&gt;</pre>
 

@@ -2,24 +2,8 @@
 <!DOCTYPE bookmap PUBLIC "-//OASIS//DTD DITA BookMap//EN" "bookmap.dtd">
 <bookmap id="cdabook">
 	<booktitle>
-		<booklibrary>Implementation Guide for CDA Release 2.0</booklibrary>
-		<mainbooktitle>Consolidated CDA Templates</mainbooktitle>
-		<booktitlealt>US Realm</booktitlealt>
-		<booktitlealt></booktitlealt>
-		<booktitlealt>
-			<image height="100" width="100" href="images/hl7_logo.gif" />
-		</booktitlealt>
-		<booktitlealt>
-			<ph>Produced in collaboration with:</ph>
-			<ph>
-				<image height="100" width="100" href="images/ihe.png" />
-				<image height="100" width="100" href="images/hsp.jpg" />
-				<image height="100" width="100" href="images/sandi.jpg" />
-			</ph>
-
-		</booktitlealt>
-		<booktitlealt audience="developer">(Consolidated Developer
-			Documentation)</booktitlealt>
+		<booklibrary>Implementation Guide for CDA R2</booklibrary>
+		<mainbooktitle>Consolidated CDA Templates</mainbooktitle>	
 	</booktitle>
 	<bookmeta>
 		<bookid>

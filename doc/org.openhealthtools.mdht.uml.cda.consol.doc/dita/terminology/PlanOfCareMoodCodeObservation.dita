@@ -15,6 +15,19 @@
 <row><entry>Value Set</entry><entry>Plan of Care moodCode (Observation) - 2.16.840.1.113883.11.20.9.25</entry></row>
 <row><entry>Code System</entry><entry>HL7ActMood - 2.16.840.1.113883.5.1001</entry></row>
 </tbody></tgroup></table>
+<table><tgroup cols="3">
+<colspec colname="col1" colwidth="1*"/>
+<colspec colname="col2" colwidth="1*"/>
+<colspec colname="col3" colwidth="2*"/>
+<thead><row>
+<entry>Code</entry><entry>Code System</entry><entry>Print Name</entry>
+</row></thead><tbody>
+<row><entry>INT</entry><entry>HL7ActMood</entry><entry>Intent</entry></row>
+<row><entry>GOL</entry><entry>HL7ActMood</entry><entry>Goal</entry></row>
+<row><entry>PRMS</entry><entry>HL7ActMood</entry><entry>Promise</entry></row>
+<row><entry>PRP</entry><entry>HL7ActMood</entry><entry>Proposal</entry></row>
+<row><entry>RQO</entry><entry>HL7ActMood</entry><entry>Request</entry></row>
+</tbody></tgroup></table>
 </section>
 </body>
 </topic>

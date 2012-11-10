@@ -8,60 +8,111 @@
 <resourceid id="2.16.840.1.113883.10.20.6.2.14"/>
 </prolog>
 <body>
+<section id="knownSubclasses">
+</section>
 <section id="description">
-<p>A Quantity Measurement Observation records quantity measurements based on image data such as linear, area, volume, and numeric measurements. The codes in DIRQuantityMeasurementTypeCodes (ValueSet: 2.16.840.1.113883.11.20.9.29) are from the qualifier hierarchy of SNOMED CT and are not valid for observation/code according to the Term Info guidelines. These codes can be used for backwards compatibility, but going forward, codes from the observable entity hierarchy will be requested and used.</p>
+<p><lines><i>A Quantity Measurement Observation records quantity measurements based on image data such as linear, area, volume, and numeric measurements. The codes in DIRQuantityMeasurementTypeCodes (ValueSet: 2.16.840.1.113883.11.20.9.29) are from the qualifier hierarchy of SNOMED CT and are not valid for observation/code according to the Term Info guidelines. These codes can be used for backwards compatibility, but going forward, codes from the observable entity hierarchy will be requested and used.</i></lines></p>
 </section>
 <ol id="conformance">
-<li></li>
+<li><b>SHALL</b> contain exactly one [1..1] templateId ( CONF:9319, CONF:10532 ) such that it <ol><li><b>SHALL</b> contain exactly one [1..1] <b>@root</b>="2.16.840.1.113883.10.20.6.2.14"</li></ol></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="OBS" </tt><i>Observation</i> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>) (CONF:9317)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF:9318)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:9320)
+<ol>
+<li>code <b>SHOULD</b> contain zero or one [0..1] code, which <b>SHALL</b> be selected from ValueSet DIRQuantityMeasurementTypeCodes 2.16.840.1.113883.11.20.9.29 DYNAMIC (CONF:9322)<ol>
+<li>code <b>SHOULD</b> contain zero or one [0..1] code, which <b>SHALL</b> be selected from ValueSet DICOMQuantityMeasurementTypeCodes 2.16.840.1.113883.11.20.9.30 DYNAMIC (CONF:9323)<ol>
+<li><b>SHOULD</b> satisfy: value set of the observation/code includes numeric measurement types for linear dimensions, areas, volumes, and other numeric measurements. This value set is extensible and comprises the union of SNOMED codes for observable entities as reproduced in DIRQuantityMeasurementTypeCodes (ValueSet: 2.16.840.1.113883.11.20.9.29) and DICOM Codes in DICOMQuantityMeasurementTypeCodes (ValueSet: 2.16.840.1.113883.11.20.9.30) (CONF:9330).</li></ol></li></ol></li></ol></li>
+<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>effectiveTime</b></tt> (CONF:9326)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type PQ (CONF:9324, CONF:932)
+</li>
+<li><b>MAY</b> contain zero or more [0..*] <tt><b>entryRelationship</b></tt> (CONF:9327, CONF:9328, CONF:9329)
+<ol>
+<li>Contains <tt><b>@typeCode="</b>SPRT" </tt><i>SPRT</i></li>
+<li>Contains exactly one [1..1] <xref href="../SOPInstanceObservation.dita">SOP Instance Observation</xref> (templateId: <tt>2.16.840.1.113883.10.20.6.2.8</tt>)</li></ol></li>
 </ol>
 <ol id="aggregate">
-<li>Contains exactly one [1..1] <tt><b>@classCode</b></tt> with data type ActClassObservation
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="OBS" </tt><i>Observation</i> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>) (CONF:9317)
 </li>
-<li>Contains exactly one [1..1] <tt><b>@moodCode</b></tt> with data type x_ActMoodDocumentObservation
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF:9318)
 </li>
-<li>Contains exactly one [1..1] <tt><b>code</b></tt> with data type CD
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:9320)
+<ol>
+<li>code <b>SHOULD</b> contain zero or one [0..1] code, which <b>SHALL</b> be selected from ValueSet DIRQuantityMeasurementTypeCodes 2.16.840.1.113883.11.20.9.29 DYNAMIC (CONF:9322)<ol>
+<li>code <b>SHOULD</b> contain zero or one [0..1] code, which <b>SHALL</b> be selected from ValueSet DICOMQuantityMeasurementTypeCodes 2.16.840.1.113883.11.20.9.30 DYNAMIC (CONF:9323)<ol>
+<li><b>SHOULD</b> satisfy: value set of the observation/code includes numeric measurement types for linear dimensions, areas, volumes, and other numeric measurements. This value set is extensible and comprises the union of SNOMED codes for observable entities as reproduced in DIRQuantityMeasurementTypeCodes (ValueSet: 2.16.840.1.113883.11.20.9.29) and DICOM Codes in DICOMQuantityMeasurementTypeCodes (ValueSet: 2.16.840.1.113883.11.20.9.30) (CONF:9330).</li></ol></li></ol></li></ol></li>
+<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>effectiveTime</b></tt> (CONF:9326)
 </li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type PQ (CONF:9324, CONF:932)
+</li>
+<li><b>MAY</b> contain zero or more [0..*] <tt><b>entryRelationship</b></tt> (CONF:9327, CONF:9328, CONF:9329)
+<ol>
+<li>Contains <tt><b>@typeCode="</b>SPRT" </tt><i>SPRT</i></li>
+<li>Contains exactly one [1..1] <xref href="../SOPInstanceObservation.dita">SOP Instance Observation</xref> (templateId: <tt>2.16.840.1.113883.10.20.6.2.8</tt>)</li></ol></li>
+<li>code <b>SHOULD</b> contain zero or one [0..1] code, which <b>SHALL</b> be selected from ValueSet DIRQuantityMeasurementTypeCodes 2.16.840.1.113883.11.20.9.29 DYNAMIC (CONF:9322)</li>
+<li>code <b>SHOULD</b> contain zero or one [0..1] code, which <b>SHALL</b> be selected from ValueSet DICOMQuantityMeasurementTypeCodes 2.16.840.1.113883.11.20.9.30 DYNAMIC (CONF:9323)</li>
+<li><b>SHOULD</b> satisfy: value set of the observation/code includes numeric measurement types for linear dimensions, areas, volumes, and other numeric measurements. This value set is extensible and comprises the union of SNOMED codes for observable entities as reproduced in DIRQuantityMeasurementTypeCodes (ValueSet: 2.16.840.1.113883.11.20.9.29) and DICOM Codes in DICOMQuantityMeasurementTypeCodes (ValueSet: 2.16.840.1.113883.11.20.9.30) (CONF:9330).</li>
 </ol>
-<section id="tableconformance"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="8" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><colspec colname="col2" colnum="2" /><colspec colname="col3" colnum="3" /><colspec colname="col4" colnum="4" /><colspec colname="col5" colnum="5" /><colspec colname="col6" colnum="6" /><colspec colname="col7" colnum="7" /><thead> <row><entry namest="col0" nameend="col7" >consol::QuantityMeasurementObservation</entry>  </row>  <row><entry namest="col0" nameend="col7" >cda::observation[cda:templateId/@root = 2.16.840.1.113883.10.20.6.2.14]/</entry>  </row>  <row><entry>Name</entry><entry>XPath</entry><entry>Cardinality</entry><entry>Severity</entry><entry>Nullable</entry><entry>Data Type</entry><entry>Conformance</entry><entry>Value(s)</entry></row></thead><tbody><row><entry>classCode</entry><entry>@classCode</entry><entry>1..1</entry><entry></entry><entry>NO</entry><entry>ActClassObservation</entry><entry></entry><entry> ALRT</entry></row> 
-<row><entry>moodCode</entry><entry>@moodCode</entry><entry>1..1</entry><entry></entry><entry>NO</entry><entry>x_ActMoodDocumentObservation</entry><entry></entry><entry> DEF</entry></row> 
-<row><entry>negationInd</entry><entry>@negationInd</entry><entry>0..1</entry><entry></entry><entry>NO</entry><entry>Boolean</entry><entry></entry><entry> </entry></row> 
-<row><entry>nullFlavor</entry><entry>@nullFlavor</entry><entry>0..1</entry><entry></entry><entry>NO</entry><entry>NullFlavor</entry><entry></entry><entry> ASKU</entry></row> 
-<row><entry>code</entry><entry>code</entry><entry>1..1</entry><entry></entry><entry>YES</entry><entry>CD</entry><entry></entry><entry> </entry></row> 
-<row><entry>derivationExpr</entry><entry>derivationExpr</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>ST</entry><entry></entry><entry> </entry></row> 
-<row><entry>effectiveTime</entry><entry>effectiveTime</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>IVL_TS</entry><entry></entry><entry> </entry></row> 
-<row><entry>id</entry><entry>id</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>II</entry><entry></entry><entry> </entry></row> 
-<row><entry>interpretationCode</entry><entry>interpretationCode</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>CE</entry><entry></entry><entry> </entry></row> 
-<row><entry>languageCode</entry><entry>languageCode</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>CS</entry><entry></entry><entry> </entry></row> 
-<row><entry>methodCode</entry><entry>methodCode</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>CE</entry><entry></entry><entry> </entry></row> 
-<row><entry>priorityCode</entry><entry>priorityCode</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>CE</entry><entry></entry><entry> </entry></row> 
-<row><entry>realmCode</entry><entry>realmCode</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>CS</entry><entry></entry><entry> </entry></row> 
-<row><entry>repeatNumber</entry><entry>repeatNumber</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>IVL_INT</entry><entry></entry><entry> </entry></row> 
-<row><entry>statusCode</entry><entry>statusCode</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>CS</entry><entry></entry><entry> </entry></row> 
-<row><entry>targetSiteCode</entry><entry>targetSiteCode</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>CD</entry><entry></entry><entry> </entry></row> 
-<row><entry>templateId</entry><entry>templateId</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>II</entry><entry></entry><entry> 2.16.840.1.113883.10.20.6.2.14</entry></row> 
-<row><entry>text</entry><entry>text</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>ED</entry><entry></entry><entry> </entry></row> 
-<row><entry>value</entry><entry>value</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>ANY</entry><entry></entry><entry> </entry></row> 
-<row><entry>author</entry><entry>author</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>Author</entry><entry></entry><entry> </entry></row> 
-<row><entry>entryRelationship</entry><entry>entryRelationship</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>EntryRelationship</entry><entry></entry><entry> </entry></row> 
-<row><entry>informant</entry><entry>informant</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>Informant12</entry><entry></entry><entry> </entry></row> 
-<row><entry>participant</entry><entry>participant</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>Participant2</entry><entry></entry><entry> </entry></row> 
-<row><entry>performer</entry><entry>performer</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>Performer2</entry><entry></entry><entry> </entry></row> 
-<row><entry>precondition</entry><entry>precondition</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>Precondition</entry><entry></entry><entry> </entry></row> 
-<row><entry>reference</entry><entry>reference</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>Reference</entry><entry></entry><entry> </entry></row> 
-<row><entry>referenceRange</entry><entry>referenceRange</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>ReferenceRange</entry><entry></entry><entry> </entry></row> 
-<row><entry>specimen</entry><entry>specimen</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>Specimen</entry><entry></entry><entry> </entry></row> 
-<row><entry>subject</entry><entry>subject</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>Subject</entry><entry></entry><entry> </entry></row> 
-<row><entry>typeId</entry><entry>typeId</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>InfrastructureRootTypeId</entry><entry></entry><entry> </entry></row> 
+<section id="tableconformance"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="8" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><colspec colname="col2" colnum="2" /><colspec colname="col3" colnum="3" /><colspec colname="col4" colnum="4" /><colspec colname="col5" colnum="5" /><colspec colname="col6" colnum="6" /><colspec colname="col7" colnum="7" /><thead> <row><entry namest="col0" nameend="col7" >consol::QuantityMeasurementObservation</entry>  </row>  <row><entry namest="col0" nameend="col7" >cda::observation[cda:templateId/@root = 2.16.840.1.113883.10.20.6.2.14]/</entry>  </row>  <row><entry>Name</entry><entry>XPath</entry><entry>Cardinality</entry><entry>Severity</entry><entry>Nullable</entry><entry>Data Type</entry><entry>Conformance</entry><entry>Value(s)</entry></row></thead><tbody><row><entry>classCode</entry><entry>@classCode</entry><entry>1..1</entry><entry>SHALL</entry><entry>NO</entry><entry>ActClassObservation</entry><entry>CONF:9317</entry><entry> ALRT</entry></row> 
+<row><entry>moodCode</entry><entry>@moodCode</entry><entry>1..1</entry><entry>SHALL</entry><entry>NO</entry><entry>x_ActMoodDocumentObservation</entry><entry>CONF:9318</entry><entry> DEF</entry></row> 
+<row><entry>code</entry><entry>code</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>CD</entry><entry>CONF:9320</entry><entry> </entry></row> 
+<row><entry>effectiveTime</entry><entry>effectiveTime</entry><entry>0..1</entry><entry>SHOULD</entry><entry>YES</entry><entry>IVL_TS</entry><entry>CONF:9326</entry><entry> </entry></row> 
+<row><entry>value</entry><entry>value</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>PQ</entry><entry>CONF:9324CONF:932</entry><entry> </entry></row> 
+<row><entry>quantityMeasurementObservation</entry><entry>quantityMeasurementObservation</entry><entry>0..*</entry><entry>MAY</entry><entry>YES</entry><entry>QuantityMeasurementObservation</entry><entry>CONF:9314CONF:9315CONF:9316</entry><entry> </entry></row> 
+<row><entry>sOPInstanceObservation</entry><entry>sOPInstanceObservation</entry><entry>0..*</entry><entry>MAY</entry><entry>YES</entry><entry>SOPInstanceObservation</entry><entry>CONF:9327CONF:9328CONF:9329</entry><entry> </entry></row> 
 </tbody></tgroup></table></p></section>
 <codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
-<observation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd">
+<observation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd" classCode="OBS" moodCode="EVN">
   <templateId root="2.16.840.1.113883.10.20.6.2.14"/>
-  <id root="613072959"/>
-  <code code="548844098"/>
+  <id root="MDHT" extension="1604078034"/>
+  <code code="2147070887"/>
   <effectiveTime>
     <low value="2012"/>
     <high value="2012"/>
   </effectiveTime>
+  <value xsi:type="PQ"/>
+  <entryRelationship>
+    <observation classCode="DGIMG" moodCode="EVN">
+      <templateId root="2.16.840.1.113883.10.20.6.2.8"/>
+      <id root="MDHT" extension="369254747"/>
+      <code codeSystem="1.2.840.10008.2.6.1" codeSystemName="DCMUID"/>
+      <effectiveTime>
+        <low value="2012"/>
+        <high value="2012"/>
+      </effectiveTime>
+      <entryRelationship>
+        <observation classCode="OBS" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.6.2.9"/>
+          <id root="MDHT" extension="314369759"/>
+          <code code="1470957045"/>
+          <effectiveTime>
+            <low value="2012"/>
+            <high value="2012"/>
+          </effectiveTime>
+          <value xsi:type="CD" code="824027555"/>
+        </observation>
+      </entryRelationship>
+      <entryRelationship>
+        <observation classCode="ROIBND" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.6.2.10"/>
+          <id root="MDHT" extension="1847955763"/>
+          <code code="121190" codeSystem="1.2.840.10008.2.16.4" codeSystemName="DCM" displayName="Referenced Frames"/>
+          <effectiveTime>
+            <low value="2012"/>
+            <high value="2012"/>
+          </effectiveTime>
+          <entryRelationship>
+            <observation classCode="OBS" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.6.2.11"/>
+              <code code="113036" codeSystem="1.2.840.10008.2.16.4" codeSystemName="DCM" displayName="Frames for Display"/>
+            </observation>
+          </entryRelationship>
+        </observation>
+      </entryRelationship>
+    </observation>
+  </entryRelationship>
 </observation>]]></codeblock>
 <section id="changes">
 </section>

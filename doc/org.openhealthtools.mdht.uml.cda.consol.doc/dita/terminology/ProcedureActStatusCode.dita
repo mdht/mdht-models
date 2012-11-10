@@ -16,18 +16,17 @@
 <row><entry>Code System</entry><entry>ActStatus - 2.16.840.1.113883.5.14</entry></row>
 <row><entry>Definition</entry><entry>A ValueSet of HL7 actStatus codes for use with a procedure activity</entry></row>
 </tbody></tgroup></table>
-<table><tgroup cols="4">
+<table><tgroup cols="3">
 <colspec colname="col1" colwidth="1*"/>
-<colspec colname="col2" colwidth="2*"/>
-<colspec colname="col3" colwidth="1*"/>
-<colspec colname="col4" colwidth="3*"/>
+<colspec colname="col2" colwidth="1*"/>
+<colspec colname="col3" colwidth="2*"/>
 <thead><row>
-<entry>Concept Code</entry><entry>Concept Name</entry><entry>Code System</entry><entry>Description</entry>
+<entry>Code</entry><entry>Code System</entry><entry>Print Name</entry>
 </row></thead><tbody>
-<row><entry>completed</entry><entry>Completed</entry><entry>ActStatus</entry><entry></entry></row>
-<row><entry>active</entry><entry>Active</entry><entry>ActStatus</entry><entry></entry></row>
-<row><entry>aborted</entry><entry>Aborted</entry><entry>ActStatus</entry><entry></entry></row>
-<row><entry>cancelled</entry><entry>Cancelled</entry><entry>ActStatus</entry><entry></entry></row>
+<row><entry>completed</entry><entry>ActStatus</entry><entry>Completed</entry></row>
+<row><entry>active</entry><entry>ActStatus</entry><entry>Active</entry></row>
+<row><entry>aborted</entry><entry>ActStatus</entry><entry>Aborted</entry></row>
+<row><entry>cancelled</entry><entry>ActStatus</entry><entry>Cancelled</entry></row>
 </tbody></tgroup></table>
 </section>
 </body>

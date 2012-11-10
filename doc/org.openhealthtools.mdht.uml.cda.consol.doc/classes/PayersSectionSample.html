@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html
   PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html lang="en-us" xml:lang="en-us">
+<html xml:lang="en-us" lang="en-us">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 <meta name="copyright" content="(C) Copyright 2005"/>
@@ -15,10 +15,10 @@
 <link rel="stylesheet" type="text/css" href="../css/commonltr.css"/>
 <title>Payers Section Sample</title>
 </head>
-<body id="classId"><a name="classId"><!-- --></a>
+<body id="classId">
 <div>
-	<p><b>For Discussion and Demonstration Only</b> The Normative content for these specifications
-	may be found on the HL7 web site.</p>
+	<p><b>Non-Normative Content</b> The Normative content for these specifications
+	may be found on the HL7, IHE, and HITSP web sites.</p>
 </div>
 
 	<h1 class="title topictitle1"><span class="ph">Payers Section</span> Sample</h1>
@@ -39,14 +39,14 @@
 			<pre class="pre codeblock">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
 &lt;section xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd"&gt;
   &lt;templateId root="2.16.840.1.113883.10.20.22.2.18"/&gt;
-  &lt;id root="116952411"/&gt;
+  &lt;id root="MDHT" extension="1799549164"/&gt;
   &lt;code code="48768-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Payers"/&gt;
-  &lt;title/&gt;
+  &lt;title&gt;TEXT FOR TITLE&lt;/title&gt;
   &lt;text/&gt;
   &lt;entry&gt;
     &lt;act classCode="ACT" moodCode="EVN"&gt;
       &lt;templateId root="2.16.840.1.113883.10.20.22.4.60"/&gt;
-      &lt;id root="911950907"/&gt;
+      &lt;id root="MDHT" extension="1798903904"/&gt;
       &lt;code code="48768-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Payment Sources"/&gt;
       &lt;text&gt;Text Value&lt;/text&gt;
       &lt;statusCode code="completed"/&gt;
@@ -57,26 +57,27 @@
       &lt;entryRelationship&gt;
         &lt;act classCode="ACT" moodCode="EVN"&gt;
           &lt;templateId root="2.16.840.1.113883.10.20.22.4.61"/&gt;
-          &lt;id root="719028684"/&gt;
-          &lt;code codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/&gt;
+          &lt;id root="MDHT" extension="459760963"/&gt;
+          &lt;code codeSystemName=""/&gt;
           &lt;text&gt;Text Value&lt;/text&gt;
           &lt;statusCode code="completed"/&gt;
           &lt;effectiveTime&gt;
             &lt;low value="2012"/&gt;
             &lt;high value="2012"/&gt;
           &lt;/effectiveTime&gt;
-          &lt;entryRelationship&gt;
-            &lt;act classCode="ACT" moodCode="EVN"&gt;
-              &lt;templateId root="2.16.840.1.113883.10.20.1.19"/&gt;
-              &lt;id root="866998312"/&gt;
-              &lt;code code="1772331738"/&gt;
-              &lt;text&gt;Text Value&lt;/text&gt;
-              &lt;effectiveTime&gt;
-                &lt;low value="2012"/&gt;
-                &lt;high value="2012"/&gt;
-              &lt;/effectiveTime&gt;
-            &lt;/act&gt;
-          &lt;/entryRelationship&gt;
+          &lt;performer typeCode="PRF"&gt;
+            &lt;templateId root="2.16.840.1.113883.10.20.22.4.87"/&gt;
+          &lt;/performer&gt;
+          &lt;performer typeCode="PRF"&gt;
+            &lt;templateId root="2.16.840.1.113883.10.20.22.4.88"/&gt;
+          &lt;/performer&gt;
+          &lt;participant typeCode="COV"&gt;
+            &lt;templateId root="2.16.840.1.113883.10.20.22.4.89"/&gt;
+          &lt;/participant&gt;
+          &lt;participant typeCode="HLD"&gt;
+            &lt;templateId root="2.16.840.1.113883.10.20.22.4.90"/&gt;
+          &lt;/participant&gt;
+          &lt;entryRelationship typeCode="REFR"/&gt;
         &lt;/act&gt;
       &lt;/entryRelationship&gt;
     &lt;/act&gt;

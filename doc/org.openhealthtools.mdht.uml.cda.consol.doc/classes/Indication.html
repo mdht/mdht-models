@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html
   PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html lang="en-us" xml:lang="en-us">
+<html xml:lang="en-us" lang="en-us">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 <meta name="copyright" content="(C) Copyright 2005"/>
@@ -17,10 +17,10 @@
 <link rel="stylesheet" type="text/css" href="../css/commonltr.css"/>
 <title>Indication</title>
 </head>
-<body id="classId"><a name="classId"><!-- --></a>
+<body id="classId">
 <div>
-	<p><b>For Discussion and Demonstration Only</b> The Normative content for these specifications
-	may be found on the HL7 web site.</p>
+	<p><b>Non-Normative Content</b> The Normative content for these specifications
+	may be found on the HL7, IHE, and HITSP web sites.</p>
 </div>
 
 	<h1 class="title topictitle1"><span class="ph">Indication</span></h1>
@@ -31,13 +31,18 @@
 
 		
 		<div class="section">
-<p class="p">The Indication Observation documents the rationale for an activity. It can do this with the id element to reference a problem recorded elsewhere in the document or with a code and value to record the problem type and problem within the Indication. For example, the indication for a prescription of a painkiller might be a headache that is documented in the Problems Section</p>
+<div class="p"><p class="lines"><em class="ph i">The Indication Observation documents the rationale for an activity. It can do this with the id element to reference a problem recorded elsewhere in the document or with a code and value to record the problem type and problem within the Indication. For example, the indication for a prescription of a painkiller might be a headache that is documented in the Problems Section</em></p>
+</div>
 
 </div>
 
 		
 
 		<ol class="ol">
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] templateId ( CONF:7482, CONF:10502 ) such that it <ol class="ol" type="a"><li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <strong class="ph b">@root</strong>="2.16.840.1.113883.10.20.22.4.19"</li>
+</ol>
+</li>
+
 <li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@classCode</strong>="OBS" </tt><em class="ph i">Observation</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.5.6 HL7ActClass</tt>) (CONF:7480)
 </li>
 
@@ -47,7 +52,7 @@
 <li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">id</strong></tt> (CONF:7483)
 </li>
 
-<li class="li"><strong class="ph b">SHOULD</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">code</strong></tt>, where the @code <strong class="ph b">SHOULD</strong> be selected from ValueSet<tt class="ph tt"> <a class="xref" href="../terminology/ProblemType.html">Problem Type</a> 2.16.840.1.113883.3.88.12.3221.7.2</tt><strong class="ph b"> STATIC</strong> 2008-12-18 (CONF:7484)
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt>, where the @code <strong class="ph b">SHOULD</strong> be selected from ValueSet<tt class="ph tt"> <a class="xref" href="../terminology/ProblemType.html">Problem Type</a> 2.16.840.1.113883.3.88.12.3221.7.2</tt><strong class="ph b"> STATIC</strong> 2008-12-18 (CONF:16886)
 </li>
 
 <li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">statusCode</strong></tt><tt class="ph tt"><strong class="ph b">/@code</strong>="completed" </tt> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.5.14 ActStatus</tt>) (CONF:7487)
@@ -56,14 +61,14 @@
 <li class="li"><strong class="ph b">SHOULD</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">effectiveTime</strong></tt> (CONF:7488)
 </li>
 
-<li class="li"><strong class="ph b">SHOULD</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">value</strong></tt> with data type CD (CONF:7489), where the @code <strong class="ph b">SHOULD</strong> be selected from ValueSet<tt class="ph tt"> <a class="xref" href="../terminology/Problem.html">Problem</a> 2.16.840.1.113883.3.88.12.3221.7.4</tt><strong class="ph b"> DYNAMIC</strong> (CONF:7991)
+<li class="li"><strong class="ph b">SHOULD</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">value</strong></tt> with data type CD (CONF:7489), where the @code <strong class="ph b">SHOULD</strong> be selected from ValueSet<tt class="ph tt"> <a class="xref" href="../terminology/Problem.html">Problem</a> 2.16.840.1.113883.3.88.12.3221.7.4</tt><strong class="ph b"> DYNAMIC</strong> (CONF:CONF:15985)
 </li>
 
-<li class="li"><strong class="ph b">MAY</strong> satisfy: Set the observation/id equal to an ID on the problem list to signify that problem as an indication (CONF:9321)</li>
+<li class="li"><strong class="ph b">MAY</strong> satisfy: Set the observation/id equal to an ID on the problem list to signify that problem as an indication (CONF:16885)</li>
 
-<li class="li">The value element <strong class="ph b">MAY</strong> contain @nullFlavor (CONF:10088)</li>
+<li class="li">The value element <strong class="ph b">MAY</strong> contain @nullFlavor (CONF:15990)</li>
 
-<li class="li">If the diagnosis is unkown or the SNOMED code is unknown, @nullFlavor <strong class="ph b">SHOULD</strong> be "UNK".  If the code is something other than SNOMED, @nullFlavor <strong class="ph b">SHOULD</strong> be "OTH" and the other code <strong class="ph b">SHOULD</strong> be placed in the translation element. (CONF:10089)</li>
+<li class="li">If the diagnosis is unkown or the SNOMED code is unknown, @nullFlavor <strong class="ph b">SHOULD</strong> be "UNK".  If the code is something other than SNOMED, @nullFlavor <strong class="ph b">SHOULD</strong> be "OTH" and the other code <strong class="ph b">SHOULD</strong> be placed in the translation element. (CONF:15991)</li>
 
 </ol>
 
@@ -78,14 +83,14 @@
 		<pre class="pre codeblock">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
 &lt;observation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd" classCode="OBS" moodCode="EVN"&gt;
   &lt;templateId root="2.16.840.1.113883.10.20.22.4.19"/&gt;
-  &lt;id root="812252561"/&gt;
+  &lt;id root="MDHT" extension="1368001219"/&gt;
   &lt;code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/&gt;
   &lt;statusCode code="completed"/&gt;
   &lt;effectiveTime&gt;
     &lt;low value="2012"/&gt;
     &lt;high value="2012"/&gt;
   &lt;/effectiveTime&gt;
-  &lt;value xsi:type="CD" code="1013423257"/&gt;
+  &lt;value xsi:type="CD" code="1803401611"/&gt;
 &lt;/observation&gt;</pre>
 
 	</div>

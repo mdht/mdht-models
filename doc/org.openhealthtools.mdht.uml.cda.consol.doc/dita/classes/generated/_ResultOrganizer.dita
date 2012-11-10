@@ -8,25 +8,33 @@
 <resourceid id="2.16.840.1.113883.10.20.22.4.1"/>
 </prolog>
 <body>
+<section id="knownSubclasses">
+<p>Known Subclasses: <xref href="../CognitiveStatusResultOrganizer.dita">Cognitive Status Result Organizer</xref>, <xref href="../FunctionalStatusResultOrganizer.dita">Functional Status Result Organizer</xref></p>
+</section>
 <section id="description">
 <p>
 This clinical statement identifies set of result observations. It contains information applicable to all of the contained result observations. Result type codes categorize a result into one of several commonly accepted values (e.g., "Hematology", "Chemistry", "Nuclear Medicine"). These values are often implicit in the Organizer/code (e.g., an Organizer/code of "complete blood count" implies a ResultTypeCode of "Hematology"). This template requires Organizer/code to include a ResultTypeCode either directly or as a translation of a code from some other code system.
 </p>
 
 <p>
-An appropriate nullFlavor can be used when a single result observation is contained in the organizer, and organizer/code or organizer/id is unknown.
+An appropriate nullFlavor can be used when the organizer/code or organizer/id is unknown.
+</p>
+
+<p>
+If any Results Observation within the organizer has a statusCode of 'active', the Result Organizer must also have as statusCode of 'active.
 </p>
 </section>
 <ol id="conformance">
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b></tt><tt><b>/@code</b>="" </tt> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>) (CONF:7121, CONF:7165)
+<li><b>SHALL</b> contain exactly one [1..1] templateId ( CONF:7126, CONF:9134 ) such that it <ol><li><b>SHALL</b> contain exactly one [1..1] <b>@root</b>="2.16.840.1.113883.10.20.22.4.1"</li></ol></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b></tt> (CONF:7121)
 </li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b></tt><tt><b>/@code</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF:7122)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF:7122)
 </li>
 <li><b>SHALL</b> contain at least one [1..*] <tt><b>id</b></tt> (CONF:7127)
 </li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>statusCode</b></tt><tt><b>/@code</b>="completed" </tt><i>Completed</i> (CodeSystem:<tt> 2.16.840.1.113883.5.14 ActStatus</tt>) (CONF:7123)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>statusCode</b></tt> (CONF:7123), where the @code <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/ResultStatus.dita">Result Status</xref> 2.16.840.1.113883.11.20.9.39</tt><b> STATIC</b> 2012-04-27 (CONF:14848)
 </li>
-<li><b>SHALL</b> contain at least one [1..*] <tt><b>component</b></tt> (CONF:7124, CONF:7125)
+<li><b>SHALL</b> contain at least one [1..*] <tt><b>component</b></tt> (CONF:7124, CONF:14850)
 <ol>
 <li>Contains exactly one [1..1] <xref href="../ResultObservation.dita">Result Observation</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.2</tt>)</li></ol></li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:7128)
@@ -35,48 +43,35 @@ An appropriate nullFlavor can be used when a single result observation is contai
 <li><b>SHOULD</b> contain zero or one [0..1] @classCode="CLUSTER" Cluster (CodeSystem: 2.16.840.1.113883.5.6 HL7ActClass) OR <b>SHOULD</b> contain zero or one [0..1] @classCode="BATTERY" Battery (CodeSystem: 2.16.840.1.113883.5.6 HL7ActClass) (CONF:7165)</li>
 </ol>
 <ol id="aggregate">
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b></tt><tt><b>/@code</b>="" </tt> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>) (CONF:7121, CONF:7165)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b></tt> (CONF:7121)
 </li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b></tt><tt><b>/@code</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF:7122)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF:7122)
 </li>
 <li><b>SHALL</b> contain at least one [1..*] <tt><b>id</b></tt> (CONF:7127)
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:7128)
 </li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>statusCode</b></tt><tt><b>/@code</b>="completed" </tt><i>Completed</i> (CodeSystem:<tt> 2.16.840.1.113883.5.14 ActStatus</tt>) (CONF:7123)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>statusCode</b></tt> (CONF:7123), where the @code <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/ResultStatus.dita">Result Status</xref> 2.16.840.1.113883.11.20.9.39</tt><b> STATIC</b> 2012-04-27 (CONF:14848)
 </li>
-<li><b>SHALL</b> contain at least one [1..*] <tt><b>component</b></tt> (CONF:7124, CONF:7125)
+<li><b>SHALL</b> contain at least one [1..*] <tt><b>component</b></tt> (CONF:7124, CONF:14850)
 <ol>
 <li>Contains exactly one [1..1] <xref href="../ResultObservation.dita">Result Observation</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.2</tt>)</li></ol></li>
 <li>The value for 'code' in a result organizer <b>SHOULD</b> be selected from LOINC (codeSystem 2.16.840.1.113883.6.1) or SNOMED CT (codeSystem 2.16.840.1.113883.6.96) and <b>MAY</b> be selected from CPT-4 (codeSystem 2.16.840.1.113883.6.12).  Laboratory results <b>SHOULD</b> be from LOINC (CodeSystem: 2.16.840.1.113883.6.1) or other constrained terminology named by the US Department of Health and Human Services Office of National Coordinator or other federal agency. Local and/or regional codes for laboratory results <b>SHOULD</b> also be allowed. (CONF:7164)</li>
 <li><b>SHOULD</b> contain zero or one [0..1] @classCode="CLUSTER" Cluster (CodeSystem: 2.16.840.1.113883.5.6 HL7ActClass) OR <b>SHOULD</b> contain zero or one [0..1] @classCode="BATTERY" Battery (CodeSystem: 2.16.840.1.113883.5.6 HL7ActClass) (CONF:7165)</li>
 </ol>
-<section id="tableconformance"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="8" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><colspec colname="col2" colnum="2" /><colspec colname="col3" colnum="3" /><colspec colname="col4" colnum="4" /><colspec colname="col5" colnum="5" /><colspec colname="col6" colnum="6" /><colspec colname="col7" colnum="7" /><thead> <row><entry namest="col0" nameend="col7" >consol::ResultOrganizer</entry>  </row>  <row><entry namest="col0" nameend="col7" >cda::organizer[cda:templateId/@root = 2.16.840.1.113883.10.20.22.4.1]/</entry>  </row>  <row><entry>Name</entry><entry>XPath</entry><entry>Cardinality</entry><entry>Severity</entry><entry>Nullable</entry><entry>Data Type</entry><entry>Conformance</entry><entry>Value(s)</entry></row></thead><tbody><row><entry>classCode</entry><entry>@classCode</entry><entry>1..1</entry><entry>SHALL</entry><entry>NO</entry><entry>x_ActClassDocumentEntryOrganizer</entry><entry>CONF:7121CONF:7165</entry><entry>HL7ActClass 2.16.840.1.113883.5.6 BATTERY</entry></row> 
-<row><entry>moodCode</entry><entry>@moodCode</entry><entry>1..1</entry><entry>SHALL</entry><entry>NO</entry><entry>ActMood</entry><entry>CONF:7122</entry><entry>HL7ActMood 2.16.840.1.113883.5.1001 APT</entry></row> 
-<row><entry>nullFlavor</entry><entry>@nullFlavor</entry><entry>0..1</entry><entry></entry><entry>NO</entry><entry>NullFlavor</entry><entry></entry><entry> ASKU</entry></row> 
+<section id="tableconformance"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="8" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><colspec colname="col2" colnum="2" /><colspec colname="col3" colnum="3" /><colspec colname="col4" colnum="4" /><colspec colname="col5" colnum="5" /><colspec colname="col6" colnum="6" /><colspec colname="col7" colnum="7" /><thead> <row><entry namest="col0" nameend="col7" >consol::ResultOrganizer</entry>  </row>  <row><entry namest="col0" nameend="col7" >cda::organizer[cda:templateId/@root = 2.16.840.1.113883.10.20.22.4.1]/</entry>  </row>  <row><entry>Name</entry><entry>XPath</entry><entry>Cardinality</entry><entry>Severity</entry><entry>Nullable</entry><entry>Data Type</entry><entry>Conformance</entry><entry>Value(s)</entry></row></thead><tbody><row><entry>classCode</entry><entry>@classCode</entry><entry>1..1</entry><entry>SHALL</entry><entry>NO</entry><entry>x_ActClassDocumentEntryOrganizer</entry><entry>CONF:7121</entry><entry> BATTERY</entry></row> 
+<row><entry>moodCode</entry><entry>@moodCode</entry><entry>1..1</entry><entry>SHALL</entry><entry>NO</entry><entry>ActMood</entry><entry>CONF:7122</entry><entry> APT</entry></row> 
 <row><entry>code</entry><entry>code</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>CD</entry><entry>CONF:7128</entry><entry> </entry></row> 
-<row><entry>effectiveTime</entry><entry>effectiveTime</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>IVL_TS</entry><entry></entry><entry> </entry></row> 
 <row><entry>id</entry><entry>id</entry><entry>1..*</entry><entry>SHALL</entry><entry>YES</entry><entry>II</entry><entry>CONF:7127</entry><entry> </entry></row> 
-<row><entry>realmCode</entry><entry>realmCode</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>CS</entry><entry></entry><entry> </entry></row> 
-<row><entry>statusCode</entry><entry>statusCode</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>CS</entry><entry>CONF:7123</entry><entry>ActStatus 2.16.840.1.113883.5.14 completed</entry></row> 
-<row><entry>templateId</entry><entry>templateId</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>II</entry><entry></entry><entry> 2.16.840.1.113883.10.20.22.4.1</entry></row> 
-<row><entry>author</entry><entry>author</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>Author</entry><entry></entry><entry> </entry></row> 
-<row><entry>component</entry><entry>component</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>Component4</entry><entry></entry><entry> </entry></row> 
-<row><entry>informant</entry><entry>informant</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>Informant12</entry><entry></entry><entry> </entry></row> 
-<row><entry>participant</entry><entry>participant</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>Participant2</entry><entry></entry><entry> </entry></row> 
-<row><entry>performer</entry><entry>performer</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>Performer2</entry><entry></entry><entry> </entry></row> 
-<row><entry>precondition</entry><entry>precondition</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>Precondition</entry><entry></entry><entry> </entry></row> 
-<row><entry>reference</entry><entry>reference</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>Reference</entry><entry></entry><entry> </entry></row> 
-<row><entry>result ( resultObservation )</entry><entry>resultObservation</entry><entry>1..*</entry><entry>SHALL</entry><entry>YES</entry><entry>ResultObservation</entry><entry>CONF:7124CONF:7125</entry><entry> </entry></row> 
-<row><entry>specimen</entry><entry>specimen</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>Specimen</entry><entry></entry><entry> </entry></row> 
-<row><entry>subject</entry><entry>subject</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>Subject</entry><entry></entry><entry> </entry></row> 
-<row><entry>typeId</entry><entry>typeId</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>InfrastructureRootTypeId</entry><entry></entry><entry> </entry></row> 
+<row><entry>statusCode</entry><entry>statusCode</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>CS</entry><entry>CONF:14848</entry><entry> </entry></row> 
+<row><entry>result ( resultObservation )</entry><entry>resultObservation</entry><entry>1..*</entry><entry>SHALL</entry><entry>YES</entry><entry>ResultObservation</entry><entry>CONF:7124CONF:14850</entry><entry> </entry></row> 
+<row><entry>resultOrganizer</entry><entry>resultOrganizer</entry><entry>1..*</entry><entry>SHALL</entry><entry>YES</entry><entry>ResultOrganizer</entry><entry>CONF:7112CONF:7113</entry><entry> </entry></row> 
 </tbody></tgroup></table></p></section>
 <codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
 <organizer xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd" moodCode="EVN">
   <templateId root="2.16.840.1.113883.10.20.22.4.1"/>
-  <id root="1262165258"/>
-  <code code="1162341198"/>
+  <id root="MDHT" extension="727849886"/>
+  <code code="1245247175"/>
   <statusCode code="completed"/>
   <effectiveTime>
     <low value="2012"/>
@@ -85,8 +80,8 @@ An appropriate nullFlavor can be used when a single result observation is contai
   <component>
     <observation classCode="OBS" moodCode="EVN">
       <templateId root="2.16.840.1.113883.10.20.22.4.2"/>
-      <id root="542454952"/>
-      <code code="1121877051"/>
+      <id root="MDHT" extension="1710728440"/>
+      <code code="1282250520"/>
       <statusCode code="completed"/>
       <effectiveTime>
         <low value="2012"/>

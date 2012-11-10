@@ -15,6 +15,17 @@
 <row><entry>Value Set</entry><entry>DICOMPurposeOfReference  - 2.16.840.1.113883.11.20.9.28</entry></row>
 <row><entry>Code System</entry><entry>DCM - 1.2.840.10008.2.16.4</entry></row>
 </tbody></tgroup></table>
+<table><tgroup cols="3">
+<colspec colname="col1" colwidth="1*"/>
+<colspec colname="col2" colwidth="1*"/>
+<colspec colname="col3" colwidth="2*"/>
+<thead><row>
+<entry>Code</entry><entry>Code System</entry><entry>Print Name</entry>
+</row></thead><tbody>
+<row><entry>121079</entry><entry>DCM</entry><entry>Baseline</entry></row>
+<row><entry>121080</entry><entry>DCM</entry><entry>Best illustration of finding</entry></row>
+<row><entry>121112</entry><entry>DCM</entry><entry>Source of Measurement</entry></row>
+</tbody></tgroup></table>
 </section>
 </body>
 </topic>

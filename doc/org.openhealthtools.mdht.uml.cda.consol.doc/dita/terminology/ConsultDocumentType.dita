@@ -15,6 +15,68 @@
 <row><entry>Value Set</entry><entry>ConsultDocumentType - 2.16.840.1.113883.11.20.9.31</entry></row>
 <row><entry>Code System</entry><entry>LOINC - 2.16.840.1.113883.6.1</entry></row>
 </tbody></tgroup></table>
+<table><tgroup cols="3">
+<colspec colname="col1" colwidth="1*"/>
+<colspec colname="col2" colwidth="1*"/>
+<colspec colname="col3" colwidth="2*"/>
+<thead><row>
+<entry>Code</entry><entry>Code System</entry><entry>Print Name</entry>
+</row></thead><tbody>
+<row><entry>11488-4</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>34100-8</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>34104-0</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>51845-6</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>51853-0</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>51846-4</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>34101-6</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>34749-2</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>34102-4</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>34099-2</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>34756-7</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>34758-3</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>34760-9</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>34879-7</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>34761-7</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>34764-1</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>34771-6</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>34776-5</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>34777-3</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>34779-9</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>34781-5</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>34783-1</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>34785-6</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>34795-5</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>34797-1</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>34798-9</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>34800-3</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>34803-7</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>34855-7</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>34805-2</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>34807-8</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>34810-2</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>34812-8</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>34814-4</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>34816-9</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>34820-1</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>34822-7</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>34824-3</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>34826-8</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>34828-4</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>34788-0</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>34791-4</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>34103-2</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>34831-8</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>34833-4</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>34835-9</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>34837-5</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>34839-1</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>34841-7</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>34845-8</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>34847-4</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>34849-0</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>34851-6</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>34853-2</entry><entry>LOINC</entry><entry></entry></row>
+</tbody></tgroup></table>
 </section>
 </body>
 </topic>

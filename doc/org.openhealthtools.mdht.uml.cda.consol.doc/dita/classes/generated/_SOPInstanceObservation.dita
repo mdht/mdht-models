@@ -8,10 +8,13 @@
 <resourceid id="2.16.840.1.113883.10.20.6.2.8"/>
 </prolog>
 <body>
+<section id="knownSubclasses">
+</section>
 <section id="description">
-<p>A SOP Instance Observation contains the DICOM Service Object Pair (SOP) Instance information for referenced DICOM composite objects. The SOP Instance act class is used to reference both image and non-image DICOM instances. The text attribute contains the DICOM WADO reference.</p>
+<p><lines><i>A SOP Instance Observation contains the DICOM Service Object Pair (SOP) Instance information for referenced DICOM composite objects. The SOP Instance act class is used to reference both image and non-image DICOM instances. The text attribute contains the DICOM WADO reference.</i></lines></p>
 </section>
 <ol id="conformance">
+<li><b>SHALL</b> contain exactly one [1..1] templateId (  ) such that it <ol><li><b>SHALL</b> contain exactly one [1..1] <b>@root</b>="2.16.840.1.113883.10.20.6.2.8"</li></ol></li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="DGIMG" </tt> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>) (CONF:9240)
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>)
@@ -19,22 +22,22 @@
 <li><b>SHOULD</b> contain zero or one [0..1] <tt><b>effectiveTime</b></tt> (CONF:9250)
 </li>
 <li><b>SHALL</b> contain at least one [1..*] <tt><b>id</b></tt> (CONF:9242)
-<ul><li>The @root contains an OID representing the DICOM SOP Instance UID</li></ul></li>
+<ul><li><p><lines><i>The @root contains an OID representing the DICOM SOP Instance UID</i></lines></p></li></ul></li>
 <li><b>SHOULD</b> contain zero or one [0..1] <tt><b>text</b></tt> (CONF:9246)
 </li>
 <li><b>MAY</b> contain zero or more [0..*] <tt><b>entryRelationship</b></tt> (CONF:9254, CONF:9255, CONF:9256)
 <ol>
 <li>Contains <tt><b>@typeCode="</b>SUBJ" </tt><i>SUBJ</i></li>
 <li>Contains exactly one [1..1] <xref href="../SOPInstanceObservation.dita">SOP Instance Observation</xref> (templateId: <tt>2.16.840.1.113883.10.20.6.2.8</tt>)</li></ol></li>
-<li><b>MAY</b> contain zero or more [0..*] <tt><b>entryRelationship</b></tt> (CONF:9257, CONF:9258, CONF:9259)
+<li><b>MAY</b> contain zero or more [0..*] <tt><b>entryRelationship</b></tt> (CONF:9257, CONF:9258, CONF:15935)
 <ol>
 <li>Contains <tt><b>@typeCode="</b>RSON" </tt><i>RSON</i></li>
 <li>Contains exactly one [1..1] <xref href="../PurposeofReferenceObservation.dita">Purposeof Reference Observation</xref> (templateId: <tt>2.16.840.1.113883.10.20.6.2.9</tt>)</li></ol></li>
-<li><b>MAY</b> contain zero or more [0..*] <tt><b>entryRelationship</b></tt> (CONF:9260, CONF:9261, CONF:9262)
-<ul><li>This entryRelationship SHALL be present if the referenced DICOM object is a multiframe object and the reference does not apply to all frames</li></ul><ol>
+<li><b>MAY</b> contain zero or more [0..*] <tt><b>entryRelationship</b></tt> (CONF:9260, CONF:9261, CONF:15936)
+<ul><li><p><lines><i>This entryRelationship SHALL be present if the referenced DICOM object is a multiframe object and the reference does not apply to all frames</i></lines></p></li></ul><ol>
 <li>Contains <tt><b>@typeCode="</b>COMP" </tt><i>COMP</i></li>
 <li>Contains exactly one [1..1] <xref href="../ReferencedFramesObservation.dita">Referenced Frames Observation</xref> (templateId: <tt>2.16.840.1.113883.10.20.6.2.10</tt>)</li></ol></li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:9244)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:9244), where the @code <b>SHALL</b> be selected from (CodeSystem:<tt> 1.2.840.10008.2.6.1 DCMUID</tt>)
 </li>
 <li>The effectiveTime, if present, <b>SHALL</b> contain exactly one [1..1] @value (CONF:9251)</li>
 <li>The effectiveTime, if present, <b>SHALL NOT</b> contain [0..0] low (CONF:9252)</li>
@@ -42,7 +45,7 @@
 <li>code <b>SHALL</b> contain codeSystem 1.2.840.10008.2.6.1 DCMUID and @code is an OID for a valid SOP class name UID (CONF:9245)</li>
 <li>text, if present, <b>SHALL</b> contain exactly one [1..1] @mediaType="application/dicom" (CONF:9247)</li>
 <li>The text, if present, <b>SHALL</b> contain exactly one [1..1] reference (CONF:9248)</li>
-<li><b>SHALL</b> contain a @value which contains a WADO reference as a URI (CONF:9249)</li>
+<li>text/reference <b>SHALL</b> contain a @value which contains a WADO reference as a URI (CONF:9249)</li>
 </ol>
 <ol id="aggregate">
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="DGIMG" </tt> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>) (CONF:9240)
@@ -50,8 +53,8 @@
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>)
 </li>
 <li><b>SHALL</b> contain at least one [1..*] <tt><b>id</b></tt> (CONF:9242)
-<ul><li>The @root contains an OID representing the DICOM SOP Instance UID</li></ul></li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:9244)
+<ul><li><p><lines><i>The @root contains an OID representing the DICOM SOP Instance UID</i></lines></p></li></ul></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:9244), where the @code <b>SHALL</b> be selected from (CodeSystem:<tt> 1.2.840.10008.2.6.1 DCMUID</tt>)
 </li>
 <li><b>SHOULD</b> contain zero or one [0..1] <tt><b>text</b></tt> (CONF:9246)
 </li>
@@ -61,61 +64,37 @@
 <ol>
 <li>Contains <tt><b>@typeCode="</b>SUBJ" </tt><i>SUBJ</i></li>
 <li>Contains exactly one [1..1] <xref href="../SOPInstanceObservation.dita">SOP Instance Observation</xref> (templateId: <tt>2.16.840.1.113883.10.20.6.2.8</tt>)</li></ol></li>
-<li><b>MAY</b> contain zero or more [0..*] <tt><b>entryRelationship</b></tt> (CONF:9257, CONF:9258, CONF:9259)
+<li><b>MAY</b> contain zero or more [0..*] <tt><b>entryRelationship</b></tt> (CONF:9257, CONF:9258, CONF:15935)
 <ol>
 <li>Contains <tt><b>@typeCode="</b>RSON" </tt><i>RSON</i></li>
 <li>Contains exactly one [1..1] <xref href="../PurposeofReferenceObservation.dita">Purposeof Reference Observation</xref> (templateId: <tt>2.16.840.1.113883.10.20.6.2.9</tt>)</li></ol></li>
-<li><b>MAY</b> contain zero or more [0..*] <tt><b>entryRelationship</b></tt> (CONF:9260, CONF:9261, CONF:9262)
+<li><b>MAY</b> contain zero or more [0..*] <tt><b>entryRelationship</b></tt> (CONF:9260, CONF:9261, CONF:15936)
 <ol>
 <li>Contains <tt><b>@typeCode="</b>COMP" </tt><i>COMP</i></li>
-<li>Contains exactly one [1..1] <xref href="../ReferencedFramesObservation.dita">Referenced Frames Observation</xref> (templateId: <tt>2.16.840.1.113883.10.20.6.2.10</tt>)</li></ol><ul><li>This entryRelationship SHALL be present if the referenced DICOM object is a multiframe object and the reference does not apply to all frames</li></ul></li>
+<li>Contains exactly one [1..1] <xref href="../ReferencedFramesObservation.dita">Referenced Frames Observation</xref> (templateId: <tt>2.16.840.1.113883.10.20.6.2.10</tt>)</li></ol><ul><li><p><lines><i>This entryRelationship SHALL be present if the referenced DICOM object is a multiframe object and the reference does not apply to all frames</i></lines></p></li></ul></li>
 <li>The effectiveTime, if present, <b>SHALL</b> contain exactly one [1..1] @value (CONF:9251)</li>
 <li>The effectiveTime, if present, <b>SHALL NOT</b> contain [0..0] low (CONF:9252)</li>
 <li>The effectiveTime, if present, <b>SHALL NOT</b> contain [0..0] high (CONF:9253)</li>
 <li>code <b>SHALL</b> contain codeSystem 1.2.840.10008.2.6.1 DCMUID and @code is an OID for a valid SOP class name UID (CONF:9245)</li>
 <li>text, if present, <b>SHALL</b> contain exactly one [1..1] @mediaType="application/dicom" (CONF:9247)</li>
 <li>The text, if present, <b>SHALL</b> contain exactly one [1..1] reference (CONF:9248)</li>
-<li><b>SHALL</b> contain a @value which contains a WADO reference as a URI (CONF:9249)</li>
+<li>text/reference <b>SHALL</b> contain a @value which contains a WADO reference as a URI (CONF:9249)</li>
 </ol>
 <section id="tableconformance"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="8" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><colspec colname="col2" colnum="2" /><colspec colname="col3" colnum="3" /><colspec colname="col4" colnum="4" /><colspec colname="col5" colnum="5" /><colspec colname="col6" colnum="6" /><colspec colname="col7" colnum="7" /><thead> <row><entry namest="col0" nameend="col7" >consol::SOPInstanceObservation</entry>  </row>  <row><entry namest="col0" nameend="col7" >cda::observation[cda:templateId/@root = 2.16.840.1.113883.10.20.6.2.8]/</entry>  </row>  <row><entry>Name</entry><entry>XPath</entry><entry>Cardinality</entry><entry>Severity</entry><entry>Nullable</entry><entry>Data Type</entry><entry>Conformance</entry><entry>Value(s)</entry></row></thead><tbody><row><entry>classCode</entry><entry>@classCode</entry><entry>1..1</entry><entry>SHALL</entry><entry>NO</entry><entry>ActClassObservation</entry><entry>CONF:9240</entry><entry> ALRT</entry></row> 
 <row><entry>moodCode</entry><entry>@moodCode</entry><entry>1..1</entry><entry>SHALL</entry><entry>NO</entry><entry>x_ActMoodDocumentObservation</entry><entry></entry><entry> DEF</entry></row> 
-<row><entry>negationInd</entry><entry>@negationInd</entry><entry>0..1</entry><entry></entry><entry>NO</entry><entry>Boolean</entry><entry></entry><entry> </entry></row> 
-<row><entry>nullFlavor</entry><entry>@nullFlavor</entry><entry>0..1</entry><entry></entry><entry>NO</entry><entry>NullFlavor</entry><entry></entry><entry> ASKU</entry></row> 
-<row><entry>code</entry><entry>code</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>CD</entry><entry>CONF:9244</entry><entry> </entry></row> 
-<row><entry>derivationExpr</entry><entry>derivationExpr</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>ST</entry><entry></entry><entry> </entry></row> 
+<row><entry>code</entry><entry>code</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>CD</entry><entry>CONF:9244</entry><entry>DCMUID 1.2.840.10008.2.6.1 null</entry></row> 
 <row><entry>effectiveTime</entry><entry>effectiveTime</entry><entry>0..1</entry><entry>SHOULD</entry><entry>YES</entry><entry>IVL_TS</entry><entry>CONF:9250</entry><entry> </entry></row> 
 <row><entry>id</entry><entry>id</entry><entry>1..*</entry><entry>SHALL</entry><entry>YES</entry><entry>II</entry><entry>CONF:9242</entry><entry> </entry></row> 
-<row><entry>interpretationCode</entry><entry>interpretationCode</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>CE</entry><entry></entry><entry> </entry></row> 
-<row><entry>languageCode</entry><entry>languageCode</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>CS</entry><entry></entry><entry> </entry></row> 
-<row><entry>methodCode</entry><entry>methodCode</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>CE</entry><entry></entry><entry> </entry></row> 
-<row><entry>priorityCode</entry><entry>priorityCode</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>CE</entry><entry></entry><entry> </entry></row> 
-<row><entry>realmCode</entry><entry>realmCode</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>CS</entry><entry></entry><entry> </entry></row> 
-<row><entry>repeatNumber</entry><entry>repeatNumber</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>IVL_INT</entry><entry></entry><entry> </entry></row> 
-<row><entry>statusCode</entry><entry>statusCode</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>CS</entry><entry></entry><entry> </entry></row> 
-<row><entry>targetSiteCode</entry><entry>targetSiteCode</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>CD</entry><entry></entry><entry> </entry></row> 
-<row><entry>templateId</entry><entry>templateId</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>II</entry><entry></entry><entry> 2.16.840.1.113883.10.20.6.2.8</entry></row> 
 <row><entry>text</entry><entry>text</entry><entry>0..1</entry><entry>SHOULD</entry><entry>YES</entry><entry>ED</entry><entry>CONF:9246</entry><entry> </entry></row> 
-<row><entry>value</entry><entry>value</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>ANY</entry><entry></entry><entry> </entry></row> 
-<row><entry>author</entry><entry>author</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>Author</entry><entry></entry><entry> </entry></row> 
-<row><entry>entryRelationship</entry><entry>entryRelationship</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>EntryRelationship</entry><entry></entry><entry> </entry></row> 
-<row><entry>informant</entry><entry>informant</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>Informant12</entry><entry></entry><entry> </entry></row> 
-<row><entry>participant</entry><entry>participant</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>Participant2</entry><entry></entry><entry> </entry></row> 
-<row><entry>performer</entry><entry>performer</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>Performer2</entry><entry></entry><entry> </entry></row> 
-<row><entry>precondition</entry><entry>precondition</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>Precondition</entry><entry></entry><entry> </entry></row> 
-<row><entry>purposeofReferenceObservation</entry><entry>purposeofReferenceObservation</entry><entry>0..*</entry><entry>MAY</entry><entry>YES</entry><entry>PurposeofReferenceObservation</entry><entry>CONF:9257CONF:9258CONF:9259</entry><entry> </entry></row> 
-<row><entry>reference</entry><entry>reference</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>Reference</entry><entry></entry><entry> </entry></row> 
-<row><entry>referencedFramesObservation</entry><entry>referencedFramesObservation</entry><entry>0..*</entry><entry>MAY</entry><entry>YES</entry><entry>ReferencedFramesObservation</entry><entry>CONF:9260CONF:9261CONF:9262</entry><entry> </entry></row> 
-<row><entry>referenceRange</entry><entry>referenceRange</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>ReferenceRange</entry><entry></entry><entry> </entry></row> 
-<row><entry>sOPInstanceObservation</entry><entry>sOPInstanceObservation</entry><entry>0..*</entry><entry>MAY</entry><entry>YES</entry><entry>SOPInstanceObservation</entry><entry>CONF:9254CONF:9255CONF:9256</entry><entry> </entry></row> 
-<row><entry>specimen</entry><entry>specimen</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>Specimen</entry><entry></entry><entry> </entry></row> 
-<row><entry>subject</entry><entry>subject</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>Subject</entry><entry></entry><entry> </entry></row> 
-<row><entry>typeId</entry><entry>typeId</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>InfrastructureRootTypeId</entry><entry></entry><entry> </entry></row> 
+<row><entry>purposeofReferenceObservation</entry><entry>purposeofReferenceObservation</entry><entry>0..*</entry><entry>MAY</entry><entry>YES</entry><entry>PurposeofReferenceObservation</entry><entry>CONF:9257CONF:9258CONF:15935</entry><entry> </entry></row> 
+<row><entry>referencedFramesObservation</entry><entry>referencedFramesObservation</entry><entry>0..*</entry><entry>MAY</entry><entry>YES</entry><entry>ReferencedFramesObservation</entry><entry>CONF:9260CONF:9261CONF:15936</entry><entry> </entry></row> 
+<row><entry>sOPInstanceObservation</entry><entry>sOPInstanceObservation</entry><entry>0..*</entry><entry>MAY</entry><entry>YES</entry><entry>SOPInstanceObservation</entry><entry>CONF:9311CONF:9312CONF:9313</entry><entry> </entry></row> 
 </tbody></tgroup></table></p></section>
 <codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
 <observation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd" classCode="DGIMG" moodCode="EVN">
   <templateId root="2.16.840.1.113883.10.20.6.2.8"/>
-  <id root="1224745518"/>
-  <code code="869555686"/>
+  <id root="MDHT" extension="1916083226"/>
+  <code codeSystem="1.2.840.10008.2.6.1" codeSystemName="DCMUID"/>
   <text>Text Value</text>
   <effectiveTime>
     <low value="2012"/>
@@ -124,8 +103,8 @@
   <entryRelationship>
     <observation classCode="OBS" moodCode="EVN">
       <templateId root="2.16.840.1.113883.10.20.6.2.9"/>
-      <id root="1407443237"/>
-      <code code="1333019534"/>
+      <id root="MDHT" extension="728023942"/>
+      <code code="204819174"/>
       <text>Text Value</text>
       <effectiveTime>
         <low value="2012"/>
@@ -136,7 +115,7 @@
   <entryRelationship>
     <observation classCode="ROIBND" moodCode="EVN">
       <templateId root="2.16.840.1.113883.10.20.6.2.10"/>
-      <id root="1506167174"/>
+      <id root="MDHT" extension="10913942"/>
       <code code="121190" codeSystem="1.2.840.10008.2.16.4" codeSystemName="DCM" displayName="Referenced Frames"/>
       <text>Text Value</text>
       <effectiveTime>
@@ -146,7 +125,7 @@
       <entryRelationship>
         <observation classCode="OBS" moodCode="EVN">
           <templateId root="2.16.840.1.113883.10.20.6.2.11"/>
-          <id root="1682593420"/>
+          <id root="MDHT" extension="1369994189"/>
           <code code="113036" codeSystem="1.2.840.10008.2.16.4" codeSystemName="DCM" displayName="Frames for Display"/>
           <text>Text Value</text>
           <effectiveTime>

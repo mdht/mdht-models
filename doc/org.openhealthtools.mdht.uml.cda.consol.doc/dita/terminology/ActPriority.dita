@@ -15,6 +15,29 @@
 <row><entry>Value Set</entry><entry>ActPriority - 2.16.840.1.113883.1.11.16866</entry></row>
 <row><entry>Code System</entry><entry>ActPriority - 2.16.840.1.113883.5.7</entry></row>
 </tbody></tgroup></table>
+<table><tgroup cols="3">
+<colspec colname="col1" colwidth="1*"/>
+<colspec colname="col2" colwidth="1*"/>
+<colspec colname="col3" colwidth="2*"/>
+<thead><row>
+<entry>Code</entry><entry>Code System</entry><entry>Print Name</entry>
+</row></thead><tbody>
+<row><entry>A</entry><entry>ActPriority</entry><entry>ASAP</entry></row>
+<row><entry>CR</entry><entry>ActPriority</entry><entry>Callback results</entry></row>
+<row><entry>CS</entry><entry>ActPriority</entry><entry>Callback for scheduling</entry></row>
+<row><entry>CSP</entry><entry>ActPriority</entry><entry>Callback placer for scheduling</entry></row>
+<row><entry>CSR</entry><entry>ActPriority</entry><entry>Contact recipient for scheduling</entry></row>
+<row><entry>EL</entry><entry>ActPriority</entry><entry>Elective</entry></row>
+<row><entry>EM</entry><entry>ActPriority</entry><entry>Emergency</entry></row>
+<row><entry>P</entry><entry>ActPriority</entry><entry>Preoperative</entry></row>
+<row><entry>PRN</entry><entry>ActPriority</entry><entry>As needed</entry></row>
+<row><entry>R</entry><entry>ActPriority</entry><entry>Routine</entry></row>
+<row><entry>RR</entry><entry>ActPriority</entry><entry>Rush reporting</entry></row>
+<row><entry>S</entry><entry>ActPriority</entry><entry>Stat</entry></row>
+<row><entry>T</entry><entry>ActPriority</entry><entry>Timing critical</entry></row>
+<row><entry>UD</entry><entry>ActPriority</entry><entry>Use as directed</entry></row>
+<row><entry>UR</entry><entry>ActPriority</entry><entry>Urgent</entry></row>
+</tbody></tgroup></table>
 </section>
 </body>
 </topic>

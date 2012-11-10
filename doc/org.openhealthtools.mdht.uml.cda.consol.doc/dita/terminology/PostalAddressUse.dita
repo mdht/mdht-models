@@ -15,6 +15,24 @@
 <row><entry>Value Set</entry><entry>PostalAddressUse - 2.16.840.1.113883.1.11.10637</entry></row>
 <row><entry>Code System</entry><entry>AddressUse - 2.16.840.1.113883.5.1119</entry></row>
 </tbody></tgroup></table>
+<table><tgroup cols="3">
+<colspec colname="col1" colwidth="1*"/>
+<colspec colname="col2" colwidth="1*"/>
+<colspec colname="col3" colwidth="2*"/>
+<thead><row>
+<entry>Code</entry><entry>Code System</entry><entry>Print Name</entry>
+</row></thead><tbody>
+<row><entry>BAD</entry><entry>AddressUse</entry><entry>bad address</entry></row>
+<row><entry>DIR</entry><entry>AddressUse</entry><entry>direct</entry></row>
+<row><entry>H</entry><entry>AddressUse</entry><entry>home address</entry></row>
+<row><entry>HP</entry><entry>AddressUse</entry><entry>primary home</entry></row>
+<row><entry>HV</entry><entry>AddressUse</entry><entry>vacation home</entry></row>
+<row><entry>PHYS</entry><entry>AddressUse</entry><entry>physical visit address</entry></row>
+<row><entry>PST</entry><entry>AddressUse</entry><entry>postal address</entry></row>
+<row><entry>PUB</entry><entry>AddressUse</entry><entry>public</entry></row>
+<row><entry>TMP</entry><entry>AddressUse</entry><entry>temporary</entry></row>
+<row><entry>WP</entry><entry>AddressUse</entry><entry>work place</entry></row>
+</tbody></tgroup></table>
 </section>
 </body>
 </topic>

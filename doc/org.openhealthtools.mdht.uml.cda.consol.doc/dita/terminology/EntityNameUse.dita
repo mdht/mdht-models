@@ -15,6 +15,27 @@
 <row><entry>Value Set</entry><entry>EntityNameUse - 2.16.840.1.113883.1.11.15913</entry></row>
 <row><entry>Code System</entry><entry>EntityNameUse - 2.16.840.1.113883.5.45</entry></row>
 </tbody></tgroup></table>
+<table><tgroup cols="3">
+<colspec colname="col1" colwidth="1*"/>
+<colspec colname="col2" colwidth="1*"/>
+<colspec colname="col3" colwidth="2*"/>
+<thead><row>
+<entry>Code</entry><entry>Code System</entry><entry>Print Name</entry>
+</row></thead><tbody>
+<row><entry>A</entry><entry>EntityNameUse</entry><entry>Artist/Stage</entry></row>
+<row><entry>ABC</entry><entry>EntityNameUse</entry><entry>Alphabetic</entry></row>
+<row><entry>ASGN</entry><entry>EntityNameUse</entry><entry>Assigned</entry></row>
+<row><entry>C</entry><entry>EntityNameUse</entry><entry>License</entry></row>
+<row><entry>I</entry><entry>EntityNameUse</entry><entry>Indigenous/Tribal</entry></row>
+<row><entry>IDE</entry><entry>EntityNameUse</entry><entry>Ideographic</entry></row>
+<row><entry>L</entry><entry>EntityNameUse</entry><entry>Legal</entry></row>
+<row><entry>P</entry><entry>EntityNameUse</entry><entry>Pseudonym</entry></row>
+<row><entry>PHON</entry><entry>EntityNameUse</entry><entry>Phonetic</entry></row>
+<row><entry>R</entry><entry>EntityNameUse</entry><entry>Religious</entry></row>
+<row><entry>SNDX</entry><entry>EntityNameUse</entry><entry>Soundex</entry></row>
+<row><entry>SRCH</entry><entry>EntityNameUse</entry><entry>Search</entry></row>
+<row><entry>SYL</entry><entry>EntityNameUse</entry><entry>Syllabic</entry></row>
+</tbody></tgroup></table>
 </section>
 </body>
 </topic>

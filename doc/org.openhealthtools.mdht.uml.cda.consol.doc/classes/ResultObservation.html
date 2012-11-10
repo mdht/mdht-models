@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html
   PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html lang="en-us" xml:lang="en-us">
+<html xml:lang="en-us" lang="en-us">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 <meta name="copyright" content="(C) Copyright 2005"/>
@@ -17,10 +17,10 @@
 <link rel="stylesheet" type="text/css" href="../css/commonltr.css"/>
 <title>Result Observation</title>
 </head>
-<body id="classId"><a name="classId"><!-- --></a>
+<body id="classId">
 <div>
-	<p><b>For Discussion and Demonstration Only</b> The Normative content for these specifications
-	may be found on the HL7 web site.</p>
+	<p><b>Non-Normative Content</b> The Normative content for these specifications
+	may be found on the HL7, IHE, and HITSP web sites.</p>
 </div>
 
 	<h1 class="title topictitle1"><span class="ph">Result Observation</span></h1>
@@ -31,17 +31,27 @@
 
 		
 		<div class="section">
-<p class="p">This clinical statement represents details of a lab, radiology, or other study performed on a patient.</p>
+<div class="p"><p class="lines"><em class="ph i">This clinical statement represents details of a lab, radiology, or other study performed on a patient.<br/>
+<br/>
+<p class="p"><br/>
+The result observation includes a statusCode to allow recording the status of an observation. If a Results Observation is not completed, the Result Organizer must include corresponding statusCode. "Pending" results (e.g., a test has been run but results have not been reported yet) should be represented as "active" ActStatus.<br/>
+</p>
+</em></p>
+</div>
 
 </div>
 
 		
 
 		<ol class="ol">
-<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@classCode</strong>="OBS" </tt><tt class="ph tt"><strong class="ph b">/@code</strong>="OBS" </tt><em class="ph i">Observation</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.5.6 HL7ActClass</tt>) (CONF:7130)
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] templateId ( CONF:9138 ) such that it <ol class="ol" type="a"><li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <strong class="ph b">@root</strong>="2.16.840.1.113883.10.20.22.4.2"</li>
+</ol>
 </li>
 
-<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@moodCode</strong>="EVN" </tt><tt class="ph tt"><strong class="ph b">/@code</strong>="EVN" </tt><em class="ph i">Event</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF:7131)
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@classCode</strong>="OBS" </tt><em class="ph i">Observation</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.5.6 HL7ActClass</tt>) (CONF:7130)
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@moodCode</strong>="EVN" </tt><em class="ph i">Event</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF:7131)
 </li>
 
 <li class="li"><strong class="ph b">SHALL</strong> contain at least one [1..*] <tt class="ph tt"><strong class="ph b">id</strong></tt> (CONF:7137)
@@ -52,18 +62,22 @@
 
 <li class="li"><strong class="ph b">SHOULD</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">text</strong></tt> (CONF:7138)
 <ol class="ol" type="a">
-<li class="li">text, if present, <strong class="ph b">SHOULD</strong> contain zero or one [0..1] reference/@value (CONF:7138)<ol class="ol" type="i">
-<li class="li">This reference/@value <strong class="ph b">SHALL</strong> begin with a '#' and <strong class="ph b">SHALL</strong> point to its corresponding narrative (using the approach defined in CDA Release 2, section 4.3.5.1) (CONF:7139)</li>
+<li class="li">text, if present, <strong class="ph b">SHOULD</strong> contain zero or one [0..1] reference (CONF:15924)<ol class="ol" type="i">
+<li class="li">reference, if present, <strong class="ph b">SHOULD</strong> contain zero or one [0..1] @value (CONF:15925)</li>
+
+<li class="li">This reference/@value <strong class="ph b">SHALL</strong> begin with a '#' and <strong class="ph b">SHALL</strong> point to its corresponding narrative (using the approach defined in CDA Release 2, section 4.3.5.1) (CONF:15926)</li>
 </ol>
 </li>
 </ol>
 </li>
 
-<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">statusCode</strong></tt><tt class="ph tt"><strong class="ph b">/@code</strong>="completed" </tt><em class="ph i">Completed</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.5.14 ActStatus</tt>) (CONF:7134)
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">statusCode</strong></tt> (CONF:7134), where the @code <strong class="ph b">SHALL</strong> be selected from ValueSet<tt class="ph tt"> <a class="xref" href="generated/../../terminology/ResultStatus.html">Result Status</a> 2.16.840.1.113883.11.20.9.39</tt><strong class="ph b"> STATIC</strong> 2012-04-27 (CONF:14849)
 </li>
 
 <li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">effectiveTime</strong></tt> (CONF:7140, CONF:7141)
-<ul class="ul"><li class="li">Represents clinically effective time of the measurement, which may be when the measurement was performed (e.g., a BP measurement), or may be when sample was taken (and measured some time afterwards).</li>
+<ul class="ul"><li class="li"><div class="p"><p class="lines"><em class="ph i">Represents clinically effective time of the measurement, which may be when the measurement was performed (e.g., a BP measurement), or may be when sample was taken (and measured some time afterwards) CONF:16838</em></p>
+</div>
+</li>
 </ul>
 </li>
 
@@ -99,17 +113,17 @@ Laboratory results <strong class="ph b">SHOULD</strong> be from LOINC (CodeSyste
 		<pre class="pre codeblock">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
 &lt;observation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd" classCode="OBS" moodCode="EVN"&gt;
   &lt;templateId root="2.16.840.1.113883.10.20.22.4.2"/&gt;
-  &lt;id root="1883567309"/&gt;
-  &lt;code code="1298548280"/&gt;
+  &lt;id root="MDHT" extension="549961166"/&gt;
+  &lt;code code="1586299376"/&gt;
   &lt;text&gt;Text Value&lt;/text&gt;
   &lt;statusCode code="completed"/&gt;
   &lt;effectiveTime&gt;
     &lt;low value="2012"/&gt;
     &lt;high value="2012"/&gt;
   &lt;/effectiveTime&gt;
-  &lt;interpretationCode code="Value"/&gt;
-  &lt;methodCode code="Value"/&gt;
-  &lt;targetSiteCode xsi:type="CE" code="Value"/&gt;
+  &lt;interpretationCode code="1832597432"/&gt;
+  &lt;methodCode code="327398526"/&gt;
+  &lt;targetSiteCode xsi:type="CE" code="301087186"/&gt;
 &lt;/observation&gt;</pre>
 
 	</div>

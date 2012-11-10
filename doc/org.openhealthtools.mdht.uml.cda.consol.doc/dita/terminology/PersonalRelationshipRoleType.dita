@@ -17,54 +17,53 @@
 <row><entry>Version</entry><entry>1</entry></row>
 <row><entry>Definition</entry><entry>A Personal Relationship records the role of a person in relation to another person. This value set is to be used when recording the relationships between different people who are not necessarily related by family ties, but also includes family relationships</entry></row>
 </tbody></tgroup></table>
-<table><tgroup cols="4">
+<table><tgroup cols="3">
 <colspec colname="col1" colwidth="1*"/>
-<colspec colname="col2" colwidth="2*"/>
-<colspec colname="col3" colwidth="1*"/>
-<colspec colname="col4" colwidth="3*"/>
+<colspec colname="col2" colwidth="1*"/>
+<colspec colname="col3" colwidth="2*"/>
 <thead><row>
-<entry>Concept Code</entry><entry>Concept Name</entry><entry>Code System</entry><entry>Description</entry>
+<entry>Code</entry><entry>Code System</entry><entry>Print Name</entry>
 </row></thead><tbody>
-<row><entry>ADOPT</entry><entry>adopted child</entry><entry>RoleCode</entry><entry></entry></row>
-<row><entry>AUNT</entry><entry>aunt</entry><entry>RoleCode</entry><entry></entry></row>
-<row><entry>CHILD</entry><entry>Child</entry><entry>RoleCode</entry><entry></entry></row>
-<row><entry>CHLDINLAW</entry><entry>child in-law</entry><entry>RoleCode</entry><entry></entry></row>
-<row><entry>COUSN</entry><entry>cousin</entry><entry>RoleCode</entry><entry></entry></row>
-<row><entry>DOMPART</entry><entry>domestic partner</entry><entry>RoleCode</entry><entry></entry></row>
-<row><entry>FAMMEMB</entry><entry>Family Member</entry><entry>RoleCode</entry><entry></entry></row>
-<row><entry>CHLDFOST</entry><entry>foster child</entry><entry>RoleCode</entry><entry></entry></row>
-<row><entry>GRNDCHILD</entry><entry>grandchild</entry><entry>RoleCode</entry><entry></entry></row>
-<row><entry>GPARNT</entry><entry>grandparent</entry><entry>RoleCode</entry><entry></entry></row>
-<row><entry>GRPRN</entry><entry>Grandparent</entry><entry>RoleCode</entry><entry></entry></row>
-<row><entry>GGRPRN</entry><entry>great grandparent</entry><entry>RoleCode</entry><entry></entry></row>
-<row><entry>HSIB</entry><entry>half-sibling</entry><entry>RoleCode</entry><entry></entry></row>
-<row><entry>MAUNT</entry><entry>MaternalAunt</entry><entry>RoleCode</entry><entry></entry></row>
-<row><entry>MCOUSN</entry><entry>MaternalCousin</entry><entry>RoleCode</entry><entry></entry></row>
-<row><entry>MGRPRN</entry><entry>MaternalGrandparent</entry><entry>RoleCode</entry><entry></entry></row>
-<row><entry>MGGRPRN</entry><entry>MaternalGreatgrandparent</entry><entry>RoleCode</entry><entry></entry></row>
-<row><entry>MUNCLE</entry><entry>MaternalUncle</entry><entry>RoleCode</entry><entry></entry></row>
-<row><entry>NCHILD</entry><entry>natural child</entry><entry>RoleCode</entry><entry></entry></row>
-<row><entry>NPRN</entry><entry>natural parent</entry><entry>RoleCode</entry><entry></entry></row>
-<row><entry>NSIB</entry><entry>natural sibling</entry><entry>RoleCode</entry><entry></entry></row>
-<row><entry>NBOR</entry><entry>neighbor</entry><entry>RoleCode</entry><entry></entry></row>
-<row><entry>NIENEPH</entry><entry>niece/nephew</entry><entry>RoleCode</entry><entry></entry></row>
-<row><entry>PRN</entry><entry>Parent</entry><entry>RoleCode</entry><entry></entry></row>
-<row><entry>PRNINLAW</entry><entry>parent in-law</entry><entry>RoleCode</entry><entry></entry></row>
-<row><entry>PAUNT</entry><entry>PaternalAunt</entry><entry>RoleCode</entry><entry></entry></row>
-<row><entry>PCOUSN</entry><entry>PaternalCousin</entry><entry>RoleCode</entry><entry></entry></row>
-<row><entry>PGRPRN</entry><entry>PaternalGrandparent</entry><entry>RoleCode</entry><entry></entry></row>
-<row><entry>PGGRPRN</entry><entry>PaternalGreatgrandparent</entry><entry>RoleCode</entry><entry></entry></row>
-<row><entry>PUNCLE</entry><entry>PaternalUncle</entry><entry>RoleCode</entry><entry></entry></row>
-<row><entry>ROOM</entry><entry>Roommate</entry><entry>RoleCode</entry><entry></entry></row>
-<row><entry>SIB</entry><entry>Sibling</entry><entry>RoleCode</entry><entry></entry></row>
-<row><entry>SIBINLAW</entry><entry>sibling in-law</entry><entry>RoleCode</entry><entry></entry></row>
-<row><entry>SIGOTHR</entry><entry>significant other</entry><entry>RoleCode</entry><entry></entry></row>
-<row><entry>SPS</entry><entry>spouse</entry><entry>RoleCode</entry><entry></entry></row>
-<row><entry>STEP</entry><entry>step child</entry><entry>RoleCode</entry><entry></entry></row>
-<row><entry>STPPRN</entry><entry>step parent</entry><entry>RoleCode</entry><entry></entry></row>
-<row><entry>STPSIB</entry><entry>step sibling</entry><entry>RoleCode</entry><entry></entry></row>
-<row><entry>UNCLE</entry><entry>uncle</entry><entry>RoleCode</entry><entry></entry></row>
-<row><entry>FRND</entry><entry>unrelated friend</entry><entry>RoleCode</entry><entry></entry></row>
+<row><entry>ADOPT</entry><entry>RoleCode</entry><entry>adopted child</entry></row>
+<row><entry>AUNT</entry><entry>RoleCode</entry><entry>aunt</entry></row>
+<row><entry>CHILD</entry><entry>RoleCode</entry><entry>Child</entry></row>
+<row><entry>CHLDINLAW</entry><entry>RoleCode</entry><entry>child in-law</entry></row>
+<row><entry>COUSN</entry><entry>RoleCode</entry><entry>cousin</entry></row>
+<row><entry>DOMPART</entry><entry>RoleCode</entry><entry>domestic partner</entry></row>
+<row><entry>FAMMEMB</entry><entry>RoleCode</entry><entry>Family Member</entry></row>
+<row><entry>CHLDFOST</entry><entry>RoleCode</entry><entry>foster child</entry></row>
+<row><entry>GRNDCHILD</entry><entry>RoleCode</entry><entry>grandchild</entry></row>
+<row><entry>GPARNT</entry><entry>RoleCode</entry><entry>grandparent</entry></row>
+<row><entry>GRPRN</entry><entry>RoleCode</entry><entry>Grandparent</entry></row>
+<row><entry>GGRPRN</entry><entry>RoleCode</entry><entry>great grandparent</entry></row>
+<row><entry>HSIB</entry><entry>RoleCode</entry><entry>half-sibling</entry></row>
+<row><entry>MAUNT</entry><entry>RoleCode</entry><entry>MaternalAunt</entry></row>
+<row><entry>MCOUSN</entry><entry>RoleCode</entry><entry>MaternalCousin</entry></row>
+<row><entry>MGRPRN</entry><entry>RoleCode</entry><entry>MaternalGrandparent</entry></row>
+<row><entry>MGGRPRN</entry><entry>RoleCode</entry><entry>MaternalGreatgrandparent</entry></row>
+<row><entry>MUNCLE</entry><entry>RoleCode</entry><entry>MaternalUncle</entry></row>
+<row><entry>NCHILD</entry><entry>RoleCode</entry><entry>natural child</entry></row>
+<row><entry>NPRN</entry><entry>RoleCode</entry><entry>natural parent</entry></row>
+<row><entry>NSIB</entry><entry>RoleCode</entry><entry>natural sibling</entry></row>
+<row><entry>NBOR</entry><entry>RoleCode</entry><entry>neighbor</entry></row>
+<row><entry>NIENEPH</entry><entry>RoleCode</entry><entry>niece/nephew</entry></row>
+<row><entry>PRN</entry><entry>RoleCode</entry><entry>Parent</entry></row>
+<row><entry>PRNINLAW</entry><entry>RoleCode</entry><entry>parent in-law</entry></row>
+<row><entry>PAUNT</entry><entry>RoleCode</entry><entry>PaternalAunt</entry></row>
+<row><entry>PCOUSN</entry><entry>RoleCode</entry><entry>PaternalCousin</entry></row>
+<row><entry>PGRPRN</entry><entry>RoleCode</entry><entry>PaternalGrandparent</entry></row>
+<row><entry>PGGRPRN</entry><entry>RoleCode</entry><entry>PaternalGreatgrandparent</entry></row>
+<row><entry>PUNCLE</entry><entry>RoleCode</entry><entry>PaternalUncle</entry></row>
+<row><entry>ROOM</entry><entry>RoleCode</entry><entry>Roommate</entry></row>
+<row><entry>SIB</entry><entry>RoleCode</entry><entry>Sibling</entry></row>
+<row><entry>SIBINLAW</entry><entry>RoleCode</entry><entry>sibling in-law</entry></row>
+<row><entry>SIGOTHR</entry><entry>RoleCode</entry><entry>significant other</entry></row>
+<row><entry>SPS</entry><entry>RoleCode</entry><entry>spouse</entry></row>
+<row><entry>STEP</entry><entry>RoleCode</entry><entry>step child</entry></row>
+<row><entry>STPPRN</entry><entry>RoleCode</entry><entry>step parent</entry></row>
+<row><entry>STPSIB</entry><entry>RoleCode</entry><entry>step sibling</entry></row>
+<row><entry>UNCLE</entry><entry>RoleCode</entry><entry>uncle</entry></row>
+<row><entry>FRND</entry><entry>RoleCode</entry><entry>unrelated friend</entry></row>
 </tbody></tgroup></table>
 </section>
 </body>

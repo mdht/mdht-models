@@ -18,23 +18,22 @@
 http://phinvads.cdc.gov/vads/ViewValueSet.action?id=7AFDBFB5-A277-DE11-9B52-0015173D1785
 </entry></row>
 </tbody></tgroup></table>
-<table><tgroup cols="4">
+<table><tgroup cols="3">
 <colspec colname="col1" colwidth="1*"/>
-<colspec colname="col2" colwidth="2*"/>
-<colspec colname="col3" colwidth="1*"/>
-<colspec colname="col4" colwidth="3*"/>
+<colspec colname="col2" colwidth="1*"/>
+<colspec colname="col3" colwidth="2*"/>
 <thead><row>
-<entry>Concept Code</entry><entry>Concept Name</entry><entry>Code System</entry><entry>Description</entry>
+<entry>Code</entry><entry>Code System</entry><entry>Print Name</entry>
 </row></thead><tbody>
-<row><entry>420134006</entry><entry>Propensity to adverse reactions</entry><entry>SNOMEDCT</entry><entry></entry></row>
-<row><entry>418038007</entry><entry>Propensity to adverse reactions to substance</entry><entry>SNOMEDCT</entry><entry></entry></row>
-<row><entry>419511003</entry><entry>Propensity to adverse reactions to drug</entry><entry>SNOMEDCT</entry><entry></entry></row>
-<row><entry>418471000</entry><entry>Propensity to adverse reactions to food</entry><entry>SNOMEDCT</entry><entry></entry></row>
-<row><entry>419199007</entry><entry>Allergy to substance</entry><entry>SNOMEDCT</entry><entry></entry></row>
-<row><entry>416098002</entry><entry>Drug allergy</entry><entry>SNOMEDCT</entry><entry></entry></row>
-<row><entry>414285001</entry><entry>Food allergy</entry><entry>SNOMEDCT</entry><entry></entry></row>
-<row><entry>59037007</entry><entry>Drug intolerance</entry><entry>SNOMEDCT</entry><entry></entry></row>
-<row><entry>235719002</entry><entry>Food intolerance</entry><entry>SNOMEDCT</entry><entry></entry></row>
+<row><entry>420134006</entry><entry>SNOMEDCT</entry><entry>Propensity to adverse reactions</entry></row>
+<row><entry>418038007</entry><entry>SNOMEDCT</entry><entry>Propensity to adverse reactions to substance</entry></row>
+<row><entry>419511003</entry><entry>SNOMEDCT</entry><entry>Propensity to adverse reactions to drug</entry></row>
+<row><entry>418471000</entry><entry>SNOMEDCT</entry><entry>Propensity to adverse reactions to food</entry></row>
+<row><entry>419199007</entry><entry>SNOMEDCT</entry><entry>Allergy to substance</entry></row>
+<row><entry>416098002</entry><entry>SNOMEDCT</entry><entry>Drug allergy</entry></row>
+<row><entry>414285001</entry><entry>SNOMEDCT</entry><entry>Food allergy</entry></row>
+<row><entry>59037007</entry><entry>SNOMEDCT</entry><entry>Drug intolerance</entry></row>
+<row><entry>235719002</entry><entry>SNOMEDCT</entry><entry>Food intolerance</entry></row>
 </tbody></tgroup></table>
 </section>
 </body>

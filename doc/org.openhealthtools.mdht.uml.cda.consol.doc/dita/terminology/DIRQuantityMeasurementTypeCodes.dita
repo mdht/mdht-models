@@ -15,6 +15,30 @@
 <row><entry>Value Set</entry><entry>DIRQuantityMeasurementTypeCodes - 2.16.840.1.113883.11.20.9.29</entry></row>
 <row><entry>Code System</entry><entry>SNOMEDCT - 2.16.840.1.113883.6.96</entry></row>
 </tbody></tgroup></table>
+<table><tgroup cols="3">
+<colspec colname="col1" colwidth="1*"/>
+<colspec colname="col2" colwidth="1*"/>
+<colspec colname="col3" colwidth="2*"/>
+<thead><row>
+<entry>Code</entry><entry>Code System</entry><entry>Print Name</entry>
+</row></thead><tbody>
+<row><entry>439932008</entry><entry>SNOMEDCT</entry><entry>Length of structure</entry></row>
+<row><entry>440357003</entry><entry>SNOMEDCT</entry><entry>Width of structure</entry></row>
+<row><entry>439934009</entry><entry>SNOMEDCT</entry><entry>Depth of structure</entry></row>
+<row><entry>439984002</entry><entry>SNOMEDCT</entry><entry>Diameter of structure</entry></row>
+<row><entry>439933003</entry><entry>SNOMEDCT</entry><entry>Long axis length of structure</entry></row>
+<row><entry>439428006</entry><entry>SNOMEDCT</entry><entry>Short axis length of structure</entry></row>
+<row><entry>439982003</entry><entry>SNOMEDCT</entry><entry>Major axis length of structure</entry></row>
+<row><entry>439983008</entry><entry>SNOMEDCT</entry><entry>Minor axis length of structure</entry></row>
+<row><entry>440356007</entry><entry>SNOMEDCT</entry><entry>Perpendicular axis length of structure</entry></row>
+<row><entry>439429003</entry><entry>SNOMEDCT</entry><entry>Radius of structure</entry></row>
+<row><entry>440433004</entry><entry>SNOMEDCT</entry><entry>Perimeter of non-circular structure</entry></row>
+<row><entry>439747008</entry><entry>SNOMEDCT</entry><entry>Circumference of circular structure</entry></row>
+<row><entry>439748003</entry><entry>SNOMEDCT</entry><entry>Diameter of circular structure</entry></row>
+<row><entry>439746004</entry><entry>SNOMEDCT</entry><entry>Area of structure</entry></row>
+<row><entry>439985001</entry><entry>SNOMEDCT</entry><entry>Area of body region</entry></row>
+<row><entry>439749006</entry><entry>SNOMEDCT</entry><entry>Volume of structure</entry></row>
+</tbody></tgroup></table>
 </section>
 </body>
 </topic>

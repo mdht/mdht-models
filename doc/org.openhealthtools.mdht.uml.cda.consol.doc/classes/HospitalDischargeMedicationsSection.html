@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html
   PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html lang="en-us" xml:lang="en-us">
+<html xml:lang="en-us" lang="en-us">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 <meta name="copyright" content="(C) Copyright 2005"/>
@@ -17,10 +17,10 @@
 <link rel="stylesheet" type="text/css" href="../css/commonltr.css"/>
 <title>Hospital Discharge Medications Section</title>
 </head>
-<body id="classId"><a name="classId"><!-- --></a>
+<body id="classId">
 <div>
-	<p><b>For Discussion and Demonstration Only</b> The Normative content for these specifications
-	may be found on the HL7 web site.</p>
+	<p><b>Non-Normative Content</b> The Normative content for these specifications
+	may be found on the HL7, IHE, and HITSP web sites.</p>
 </div>
 
 	<h1 class="title topictitle1"><span class="ph">Hospital Discharge Medications Section</span></h1>
@@ -31,13 +31,15 @@
 	<div class="body">		
 	
 		<div class="section">
-<p class="p">The Hospital Discharge Medications section defines the medications that the patient is intended to take (or stop) after discharge. The currently active medications must be listed. The section may also include a patient's prescription history and indicate the source of the medication list, for example, from a pharmacy system versus from the patient.</p>
+<div class="p"><p class="lines"><em class="ph i">The Hospital Discharge Medications section defines the medications that the patient is intended to take (or stop) after discharge. The currently active medications must be listed. The section may also include a patient's prescription history and indicate the source of the medication list, for example, from a pharmacy system versus from the patient.</em></p>
+</div>
 
 </div>
 
 	
 		<div class="section">
-<p class="p">The Hospital Discharge Medications section defines the medications that the patient is intended to take (or stop) after discharge. The currently active medications must be listed. The section may also include a patient's prescription history and indicate the source of the medication list, for example, from a pharmacy system versus from the patient.</p>
+<div class="p"><p class="lines"><em class="ph i">The Hospital Discharge Medications section defines the medications that the patient is intended to take (or stop) after discharge. The currently active medications must be listed. The section may also include a patient's prescription history and indicate the source of the medication list, for example, from a pharmacy system versus from the patient.</em></p>
+</div>
 
 </div>
 
@@ -60,7 +62,11 @@
 
 
 		<ol class="ol">
-<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt><tt class="ph tt"><strong class="ph b">/@code</strong>="10183-2" </tt><em class="ph i">HOSPITAL DISCHARGE MEDICATIONS</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:7817)
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] templateId ( CONF:10396 ) such that it <ol class="ol" type="a"><li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <strong class="ph b">@root</strong>="2.16.840.1.113883.10.20.22.2.11"</li>
+</ol>
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt> (CONF:15359)<tt class="ph tt"><strong class="ph b">/@code</strong>="10183-2" </tt><em class="ph i">HOSPITAL DISCHARGE MEDICATIONS</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:15360)
 </li>
 
 <li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">title</strong></tt> (CONF:7818)
@@ -89,6 +95,10 @@
 
 
 		<ol class="ol">
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] templateId ( CONF:10397 ) such that it <ol class="ol" type="a"><li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <strong class="ph b">@root</strong>="2.16.840.1.113883.10.20.22.2.11.1"</li>
+</ol>
+</li>
+
 <li class="li"><strong class="ph b">SHALL</strong> conform to <a class="xref" href="generated/../HospitalDischargeMedicationsSectionEntriesOptional.html" title="[Section: templateId 2.16.840.1.113883.10.20.22.2.11]">Hospital Discharge Medications Section Entries Optional</a> template (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.22.2.11</tt>)</li>
 
 <li class="li"><strong class="ph b">SHALL</strong> contain at least one [1..*] <tt class="ph tt"><strong class="ph b">entry</strong></tt> (CONF:7827)
@@ -97,7 +107,7 @@
 </ol>
 </li>
 
-<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt><tt class="ph tt"><strong class="ph b">/@code</strong>="10183-2" </tt><em class="ph i">HOSPITAL DISCHARGE MEDICATIONS</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:7823)
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt> (CONF:15361)<tt class="ph tt"><strong class="ph b">/@code</strong>="10183-2" </tt><em class="ph i">HOSPITAL DISCHARGE MEDICATIONS</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:15362)
 </li>
 
 <li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">text</strong></tt> (CONF:7825)

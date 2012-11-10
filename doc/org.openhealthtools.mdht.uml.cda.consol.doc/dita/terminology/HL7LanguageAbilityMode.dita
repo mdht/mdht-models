@@ -17,20 +17,19 @@
 <row><entry>Version</entry><entry>1</entry></row>
 <row><entry>Definition</entry><entry>This identifies the language ability of the individual. A value representing the method of expression of the language.</entry></row>
 </tbody></tgroup></table>
-<table><tgroup cols="4">
+<table><tgroup cols="3">
 <colspec colname="col1" colwidth="1*"/>
-<colspec colname="col2" colwidth="2*"/>
-<colspec colname="col3" colwidth="1*"/>
-<colspec colname="col4" colwidth="3*"/>
+<colspec colname="col2" colwidth="1*"/>
+<colspec colname="col3" colwidth="2*"/>
 <thead><row>
-<entry>Concept Code</entry><entry>Concept Name</entry><entry>Code System</entry><entry>Description</entry>
+<entry>Code</entry><entry>Code System</entry><entry>Print Name</entry>
 </row></thead><tbody>
-<row><entry>ESGN</entry><entry>Expressed signed</entry><entry>LanguageAbilityMode</entry><entry></entry></row>
-<row><entry>ESP</entry><entry>Expressed spoken</entry><entry>LanguageAbilityMode</entry><entry></entry></row>
-<row><entry>EWR</entry><entry>Expressed written</entry><entry>LanguageAbilityMode</entry><entry></entry></row>
-<row><entry>RSGN</entry><entry>Received signed</entry><entry>LanguageAbilityMode</entry><entry></entry></row>
-<row><entry>RSP</entry><entry>Received spoken</entry><entry>LanguageAbilityMode</entry><entry></entry></row>
-<row><entry>RWR</entry><entry>Received written</entry><entry>LanguageAbilityMode</entry><entry></entry></row>
+<row><entry>ESGN</entry><entry>LanguageAbilityMode</entry><entry>Expressed signed</entry></row>
+<row><entry>ESP</entry><entry>LanguageAbilityMode</entry><entry>Expressed spoken</entry></row>
+<row><entry>EWR</entry><entry>LanguageAbilityMode</entry><entry>Expressed written</entry></row>
+<row><entry>RSGN</entry><entry>LanguageAbilityMode</entry><entry>Received signed</entry></row>
+<row><entry>RSP</entry><entry>LanguageAbilityMode</entry><entry>Received spoken</entry></row>
+<row><entry>RWR</entry><entry>LanguageAbilityMode</entry><entry>Received written</entry></row>
 </tbody></tgroup></table>
 </section>
 </body>

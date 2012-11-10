@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html
   PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html lang="en-us" xml:lang="en-us">
+<html xml:lang="en-us" lang="en-us">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 <meta name="copyright" content="(C) Copyright 2005"/>
@@ -17,10 +17,10 @@
 <link rel="stylesheet" type="text/css" href="../css/commonltr.css"/>
 <title>Authorization Activity</title>
 </head>
-<body id="classId"><a name="classId"><!-- --></a>
+<body id="classId">
 <div>
-	<p><b>For Discussion and Demonstration Only</b> The Normative content for these specifications
-	may be found on the HL7 web site.</p>
+	<p><b>Non-Normative Content</b> The Normative content for these specifications
+	may be found on the HL7, IHE, and HITSP web sites.</p>
 </div>
 
 	<h1 class="title topictitle1"><span class="ph">Authorization Activity</span></h1>
@@ -31,14 +31,19 @@
 
 		
 		<div class="section">
-<p class="p">An Authorization Activity represents authorizations or pre-authorizations currently active for the patient for the particular payer. 
-Authorizations are represented using an act subordinate to the policy or program that provided it.  The authorization refers to the policy or program. Authorized treatments can be grouped into an organizer class, where common properties, such as the reason for the authorization, can be expressed. Subordinate acts represent what was authorized.</p>
+<div class="p"><p class="lines"><em class="ph i">An Authorization Activity represents authorizations or pre-authorizations currently active for the patient for the particular payer. <br/>
+Authorizations are represented using an act subordinate to the policy or program that provided it.  The authorization refers to the policy or program. Authorized treatments can be grouped into an organizer class, where common properties, such as the reason for the authorization, can be expressed. Subordinate acts represent what was authorized.</em></p>
+</div>
 
 </div>
 
 		
 
 		<ol class="ol">
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] templateId ( CONF:8946, CONF:10529 ) such that it <ol class="ol" type="a"><li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <strong class="ph b">@root</strong>="2.16.840.1.113883.10.20.1.19"</li>
+</ol>
+</li>
+
 <li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@classCode</strong>="ACT" </tt><em class="ph i">Act</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.5.6 HL7ActClass</tt>) (CONF:8944)
 </li>
 
@@ -68,8 +73,8 @@ Authorizations are represented using an act subordinate to the policy or program
 		<pre class="pre codeblock">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
 &lt;act xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd" classCode="ACT" moodCode="EVN"&gt;
   &lt;templateId root="2.16.840.1.113883.10.20.1.19"/&gt;
-  &lt;id root="1471951552"/&gt;
-  &lt;code code="427524961"/&gt;
+  &lt;id root="MDHT" extension="749372837"/&gt;
+  &lt;code code="1022629303"/&gt;
   &lt;effectiveTime&gt;
     &lt;low value="2012"/&gt;
     &lt;high value="2012"/&gt;
