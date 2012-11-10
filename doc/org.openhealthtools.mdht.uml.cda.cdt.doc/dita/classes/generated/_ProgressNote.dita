@@ -25,16 +25,16 @@
 <li>Contains exactly one [1..1] <xref href="../AssessmentSectionProcNote.dita">Assessment Section Proc Note</xref> (templateId: <tt>2.16.840.1.113883.10.20.18.2.13</tt>)</li></ol></li>
 <li>Contains zero or one [0..1] <tt><b>component</b></tt>, such that
 <ol>
-<li>Contains exactly one [1..1] <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.ccd.doc/classes/PlanOfCareSection.html">CCD Plan Of Care Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.10</tt>)</li></ol></li>
+<li>Contains exactly one [1..1] <xref format="html" href="PLUGINS_ROOT/org.openhealthtools.mdht.uml.cda.ccd.doc/classes/PlanOfCareSection.html">CCD Plan Of Care Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.10</tt>)</li></ol></li>
 <li><b>MAY</b> contain zero or one [0..1] <tt><b>component</b></tt> (CONF-PRGN-21), such that
 <ol>
-<li>Contains exactly one [1..1] <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.ccd.doc/classes/AlertsSection.html">CCD Alerts Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.2</tt>)</li></ol></li>
+<li>Contains exactly one [1..1] <xref format="html" href="PLUGINS_ROOT/org.openhealthtools.mdht.uml.cda.ccd.doc/classes/AlertsSection.html">CCD Alerts Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.2</tt>)</li></ol></li>
 <li><b>MAY</b> contain zero or one [0..1] <tt><b>component</b></tt> (CONF-PRGN-22), such that
 <ol>
 <li>Contains exactly one [1..1] <xref href="../ChiefComplaintSectionProcNote.dita">Chief Complaint Section Proc Note</xref> (templateId: <tt>2.16.840.1.113883.10.20.18.2.16</tt>)</li></ol></li>
 <li><b>MAY</b> contain zero or one [0..1] <tt><b>component</b></tt> (CONF-PRGN-23), such that
 <ol>
-<li>Contains exactly one [1..1] <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.ccd.doc/classes/MedicationsSection.html">CCD Medications Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.8</tt>)</li></ol></li>
+<li>Contains exactly one [1..1] <xref format="html" href="PLUGINS_ROOT/org.openhealthtools.mdht.uml.cda.ccd.doc/classes/MedicationsSection.html">CCD Medications Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.8</tt>)</li></ol></li>
 <li><b>MAY</b> contain zero or one [0..1] <tt><b>component</b></tt> (CONF-PRGN-24), such that
 <ol>
 <li>Contains exactly one [1..1] <xref href="../ObjectiveSection.dita">Objective Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.21.2.1</tt>)</li></ol></li>
@@ -43,10 +43,10 @@
 <li>Contains exactly one [1..1] <xref href="../PhysicalExaminationSection.dita">Physical Examination Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.2.10</tt>)</li></ol></li>
 <li><b>MAY</b> contain zero or one [0..1] <tt><b>component</b></tt> (CONF-PRGN-27), such that
 <ol>
-<li>Contains exactly one [1..1] <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.ccd.doc/classes/ProblemSection.html">CCD Problem Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.11</tt>)</li></ol></li>
+<li>Contains exactly one [1..1] <xref format="html" href="PLUGINS_ROOT/org.openhealthtools.mdht.uml.cda.ccd.doc/classes/ProblemSection.html">CCD Problem Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.11</tt>)</li></ol></li>
 <li><b>MAY</b> contain zero or one [0..1] <tt><b>component</b></tt> (CONF-PRGN-28), such that
 <ol>
-<li>Contains exactly one [1..1] <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.ccd.doc/classes/ResultsSection.html">CCD Results Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.14</tt>)</li></ol></li>
+<li>Contains exactly one [1..1] <xref format="html" href="PLUGINS_ROOT/org.openhealthtools.mdht.uml.cda.ccd.doc/classes/ResultsSection.html">CCD Results Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.14</tt>)</li></ol></li>
 <li><b>MAY</b> contain zero or one [0..1] <tt><b>component</b></tt> (CONF-PRGN-29), such that
 <ol>
 <li>Contains exactly one [1..1] <xref href="../VitalSignsSection.dita">Vital Signs Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.2.4</tt>)</li></ol></li>
@@ -166,16 +166,16 @@ document may come from sources or contain information that the author cannot val
 <li>Contains exactly one [1..1] <xref href="../AssessmentSectionProcNote.dita">Assessment Section Proc Note</xref> (templateId: <tt>2.16.840.1.113883.10.20.18.2.13</tt>)</li></ol></li>
 <li>Contains zero or one [0..1] <tt><b>component</b></tt>, such that
 <ol>
-<li>Contains exactly one [1..1] <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.ccd.doc/classes/PlanOfCareSection.html">CCD Plan Of Care Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.10</tt>)</li></ol></li>
+<li>Contains exactly one [1..1] <xref format="html" href="PLUGINS_ROOT/org.openhealthtools.mdht.uml.cda.ccd.doc/classes/PlanOfCareSection.html">CCD Plan Of Care Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.10</tt>)</li></ol></li>
 <li><b>MAY</b> contain zero or one [0..1] <tt><b>component</b></tt> (CONF-PRGN-21), such that
 <ol>
-<li>Contains exactly one [1..1] <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.ccd.doc/classes/AlertsSection.html">CCD Alerts Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.2</tt>)</li></ol></li>
+<li>Contains exactly one [1..1] <xref format="html" href="PLUGINS_ROOT/org.openhealthtools.mdht.uml.cda.ccd.doc/classes/AlertsSection.html">CCD Alerts Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.2</tt>)</li></ol></li>
 <li><b>MAY</b> contain zero or one [0..1] <tt><b>component</b></tt> (CONF-PRGN-22), such that
 <ol>
 <li>Contains exactly one [1..1] <xref href="../ChiefComplaintSectionProcNote.dita">Chief Complaint Section Proc Note</xref> (templateId: <tt>2.16.840.1.113883.10.20.18.2.16</tt>)</li></ol></li>
 <li><b>MAY</b> contain zero or one [0..1] <tt><b>component</b></tt> (CONF-PRGN-23), such that
 <ol>
-<li>Contains exactly one [1..1] <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.ccd.doc/classes/MedicationsSection.html">CCD Medications Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.8</tt>)</li></ol></li>
+<li>Contains exactly one [1..1] <xref format="html" href="PLUGINS_ROOT/org.openhealthtools.mdht.uml.cda.ccd.doc/classes/MedicationsSection.html">CCD Medications Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.8</tt>)</li></ol></li>
 <li><b>MAY</b> contain zero or one [0..1] <tt><b>component</b></tt> (CONF-PRGN-24), such that
 <ol>
 <li>Contains exactly one [1..1] <xref href="../ObjectiveSection.dita">Objective Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.21.2.1</tt>)</li></ol></li>
@@ -184,10 +184,10 @@ document may come from sources or contain information that the author cannot val
 <li>Contains exactly one [1..1] <xref href="../PhysicalExaminationSection.dita">Physical Examination Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.2.10</tt>)</li></ol></li>
 <li><b>MAY</b> contain zero or one [0..1] <tt><b>component</b></tt> (CONF-PRGN-27), such that
 <ol>
-<li>Contains exactly one [1..1] <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.ccd.doc/classes/ProblemSection.html">CCD Problem Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.11</tt>)</li></ol></li>
+<li>Contains exactly one [1..1] <xref format="html" href="PLUGINS_ROOT/org.openhealthtools.mdht.uml.cda.ccd.doc/classes/ProblemSection.html">CCD Problem Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.11</tt>)</li></ol></li>
 <li><b>MAY</b> contain zero or one [0..1] <tt><b>component</b></tt> (CONF-PRGN-28), such that
 <ol>
-<li>Contains exactly one [1..1] <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.ccd.doc/classes/ResultsSection.html">CCD Results Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.14</tt>)</li></ol></li>
+<li>Contains exactly one [1..1] <xref format="html" href="PLUGINS_ROOT/org.openhealthtools.mdht.uml.cda.ccd.doc/classes/ResultsSection.html">CCD Results Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.14</tt>)</li></ol></li>
 <li><b>MAY</b> contain zero or one [0..1] <tt><b>component</b></tt> (CONF-PRGN-29), such that
 <ol>
 <li>Contains exactly one [1..1] <xref href="../VitalSignsSection.dita">Vital Signs Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.2.4</tt>)</li></ol></li>

@@ -22,7 +22,7 @@ under Physical Exam.</p>
 </li>
 <li><b>SHOULD</b> contain zero or one [0..1] <tt><b>entry</b></tt> (CONF-HP-87), such that
 <ol>
-<li>Contains exactly one [1..1] <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.ccd.doc/classes/VitalSignsOrganizer.html">CCD Vital Signs Organizer</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.35</tt>)</li></ol></li>
+<li>Contains exactly one [1..1] <xref format="html" href="PLUGINS_ROOT/org.openhealthtools.mdht.uml.cda.ccd.doc/classes/VitalSignsOrganizer.html">CCD Vital Signs Organizer</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.35</tt>)</li></ol></li>
 <li><b>SHOULD</b> satisfy: Contains clinical statements. (CONF-HP-87)<ul><li><codeblock>[OCL]: not self.entry-&gt;isEmpty()</codeblock></li></ul></li>
 </ol>
 <ol id="aggregate">
@@ -32,7 +32,7 @@ under Physical Exam.</p>
 </li>
 <li><b>SHOULD</b> contain zero or one [0..1] <tt><b>entry</b></tt> (CONF-HP-87), such that
 <ol>
-<li>Contains exactly one [1..1] <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.ccd.doc/classes/VitalSignsOrganizer.html">CCD Vital Signs Organizer</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.35</tt>)</li></ol></li>
+<li>Contains exactly one [1..1] <xref format="html" href="PLUGINS_ROOT/org.openhealthtools.mdht.uml.cda.ccd.doc/classes/VitalSignsOrganizer.html">CCD Vital Signs Organizer</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.35</tt>)</li></ol></li>
 <li><b>SHOULD</b> satisfy: Contains clinical statements. (CONF-HP-87)<ul><li><codeblock>[OCL]: not self.entry-&gt;isEmpty()</codeblock></li></ul></li>
 </ol>
 <codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>

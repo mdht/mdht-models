@@ -38,7 +38,7 @@ currently active medications should be listed with an entire medication history 
 option, particularly when the document is used for comprehensive data export. The
 section may also include a patient's prescription history and enable the determination
 of the source of a medication list, e.g., from a pharmacy system versus from the patient.</li></ul><ol>
-<li>Contains exactly one [1..1] <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.ccd.doc/classes/MedicationsSection.html">CCD Medications Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.8</tt>)</li></ol></li>
+<li>Contains exactly one [1..1] <xref format="html" href="PLUGINS_ROOT/org.openhealthtools.mdht.uml.cda.ccd.doc/classes/MedicationsSection.html">CCD Medications Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.8</tt>)</li></ol></li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>component</b></tt> (CONF-HP-80), such that
 <ul><li>This section is used to list and describe any medication allergies, adverse reactions,
 idiosyncratic reactions, anaphylaxis/anaphylactoid reactions to food items, and
@@ -47,18 +47,18 @@ iodine, tape adhesives) used to assure the safety of health care delivery. In ge
 environmental allergies, even if severe, should not be included in the Alerts section
 since they constitute a medical problem and should be listed in the problem list and
 past medical history, even if directly related to the presenting problem.</li></ul><ol>
-<li>Contains exactly one [1..1] <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.ccd.doc/classes/AlertsSection.html">CCD Alerts Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.2</tt>)</li></ol></li>
+<li>Contains exactly one [1..1] <xref format="html" href="PLUGINS_ROOT/org.openhealthtools.mdht.uml.cda.ccd.doc/classes/AlertsSection.html">CCD Alerts Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.2</tt>)</li></ol></li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>component</b></tt> (CONF-HP-81), such that
 <ul><li>This section contains data defining the patient's occupational, personal (i.e., lifestyle),
 social, and environmental history and health risk factors, as well as administrative data
 such as marital status, race, ethnicity, and religious affiliation. Social history can have
 a significant influence on a patient's physical, psychological, and emotional health and
 wellbeing, so should be considered in the development of a complete health record.</li></ul><ol>
-<li>Contains exactly one [1..1] <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.ccd.doc/classes/SocialHistorySection.html">CCD Social History Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.15</tt>)</li></ol></li>
+<li>Contains exactly one [1..1] <xref format="html" href="PLUGINS_ROOT/org.openhealthtools.mdht.uml.cda.ccd.doc/classes/SocialHistorySection.html">CCD Social History Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.15</tt>)</li></ol></li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>component</b></tt> (CONF-HP-82), such that
 <ul><li>This section contains data defining the patient's genetic relatives in terms of relevant
 health-risk factors that have a potential impact on the patient's health care profile.</li></ul><ol>
-<li>Contains exactly one [1..1] <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.ccd.doc/classes/FamilyHistorySection.html">CCD Family History Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.4</tt>)</li></ol></li>
+<li>Contains exactly one [1..1] <xref format="html" href="PLUGINS_ROOT/org.openhealthtools.mdht.uml.cda.ccd.doc/classes/FamilyHistorySection.html">CCD Family History Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.4</tt>)</li></ol></li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>component</b></tt> (CONF-HP-83), such that
 <ul><li>The review of systems is a relevant collection of symptoms and function systematically
 gathered by a clinician. It includes symptoms the patient is currently experiencing,
@@ -106,15 +106,15 @@ should be listed.
 This section is optional because the information contained in it may also appear in the
 Past Medical History section or the History of Present Illness section. When a problem
 list is inserted into either of these sections, it should use the CCD template.</li></ul><ol>
-<li>Contains exactly one [1..1] <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.ccd.doc/classes/ProblemSection.html">CCD Problem Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.11</tt>)</li></ol></li>
+<li>Contains exactly one [1..1] <xref format="html" href="PLUGINS_ROOT/org.openhealthtools.mdht.uml.cda.ccd.doc/classes/ProblemSection.html">CCD Problem Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.11</tt>)</li></ol></li>
 <li><b>MAY</b> contain zero or one [0..1] <tt><b>component</b></tt> (CONF-HP-94), such that
 <ol>
-<li>Contains exactly one [1..1] <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.ccd.doc/classes/ProceduresSection.html">CCD Procedures Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.12</tt>)</li></ol></li>
+<li>Contains exactly one [1..1] <xref format="html" href="PLUGINS_ROOT/org.openhealthtools.mdht.uml.cda.ccd.doc/classes/ProceduresSection.html">CCD Procedures Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.12</tt>)</li></ol></li>
 <li><b>MAY</b> contain zero or one [0..1] <tt><b>component</b></tt> (CONF-HP-96), such that
 <ul><li>The Immunizations section provides a patient's pertinent immunization history. The
 Immunizations section is optional, however it is recommended that it be present when
 such information is available.</li></ul><ol>
-<li>Contains exactly one [1..1] <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.ccd.doc/classes/ImmunizationsSection.html">CCD Immunizations Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.6</tt>)</li></ol></li>
+<li>Contains exactly one [1..1] <xref format="html" href="PLUGINS_ROOT/org.openhealthtools.mdht.uml.cda.ccd.doc/classes/ImmunizationsSection.html">CCD Immunizations Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.6</tt>)</li></ol></li>
 <li>If pre-coordinated document type codes are used, values used in the
 assignedAuthor/code and assignedAuthor/author/functionCode elements <b>SHALL NOT</b>
 conflict with ClinicalDocument/code. (CONF-HP-56)<ul><li>UNIMPLEMENTABLE</li></ul></li>
@@ -236,7 +236,7 @@ section. Wherever used, procedures and problems should conform to the CCD templa
 for CDA entries cited in the Problems section.</li></ul></li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>component</b></tt> (CONF-HP-80), such that
 <ol>
-<li>Contains exactly one [1..1] <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.ccd.doc/classes/AlertsSection.html">CCD Alerts Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.2</tt>)</li></ol><ul><li>This section is used to list and describe any medication allergies, adverse reactions,
+<li>Contains exactly one [1..1] <xref format="html" href="PLUGINS_ROOT/org.openhealthtools.mdht.uml.cda.ccd.doc/classes/AlertsSection.html">CCD Alerts Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.2</tt>)</li></ol><ul><li>This section is used to list and describe any medication allergies, adverse reactions,
 idiosyncratic reactions, anaphylaxis/anaphylactoid reactions to food items, and
 metabolic variations or adverse reactions/allergies to other substances (such as latex,
 iodine, tape adhesives) used to assure the safety of health care delivery. In general,
@@ -245,14 +245,14 @@ since they constitute a medical problem and should be listed in the problem list
 past medical history, even if directly related to the presenting problem.</li></ul></li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>component</b></tt> (CONF-HP-81), such that
 <ol>
-<li>Contains exactly one [1..1] <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.ccd.doc/classes/SocialHistorySection.html">CCD Social History Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.15</tt>)</li></ol><ul><li>This section contains data defining the patient's occupational, personal (i.e., lifestyle),
+<li>Contains exactly one [1..1] <xref format="html" href="PLUGINS_ROOT/org.openhealthtools.mdht.uml.cda.ccd.doc/classes/SocialHistorySection.html">CCD Social History Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.15</tt>)</li></ol><ul><li>This section contains data defining the patient's occupational, personal (i.e., lifestyle),
 social, and environmental history and health risk factors, as well as administrative data
 such as marital status, race, ethnicity, and religious affiliation. Social history can have
 a significant influence on a patient's physical, psychological, and emotional health and
 wellbeing, so should be considered in the development of a complete health record.</li></ul></li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>component</b></tt> (CONF-HP-82), such that
 <ol>
-<li>Contains exactly one [1..1] <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.ccd.doc/classes/FamilyHistorySection.html">CCD Family History Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.4</tt>)</li></ol><ul><li>This section contains data defining the patient's genetic relatives in terms of relevant
+<li>Contains exactly one [1..1] <xref format="html" href="PLUGINS_ROOT/org.openhealthtools.mdht.uml.cda.ccd.doc/classes/FamilyHistorySection.html">CCD Family History Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.4</tt>)</li></ol><ul><li>This section contains data defining the patient's genetic relatives in terms of relevant
 health-risk factors that have a potential impact on the patient's health care profile.</li></ul></li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>component</b></tt> (CONF-HP-83), such that
 <ol>
@@ -296,7 +296,7 @@ procedure, such as where a gastroenterologist reports the size of a polyp observ
 during a colonoscopy.</li></ul></li>
 <li><b>MAY</b> contain zero or one [0..1] <tt><b>component</b></tt> (CONF-HP-93), such that
 <ol>
-<li>Contains exactly one [1..1] <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.ccd.doc/classes/ProblemSection.html">CCD Problem Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.11</tt>)</li></ol><ul><li>This section lists and describes all relevant clinical problems at the time the History
+<li>Contains exactly one [1..1] <xref format="html" href="PLUGINS_ROOT/org.openhealthtools.mdht.uml.cda.ccd.doc/classes/ProblemSection.html">CCD Problem Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.11</tt>)</li></ol><ul><li>This section lists and describes all relevant clinical problems at the time the History
 and Physical is generated. At a minimum, all pertinent current and historical problems
 should be listed.
 This section is optional because the information contained in it may also appear in the
@@ -304,10 +304,10 @@ Past Medical History section or the History of Present Illness section. When a p
 list is inserted into either of these sections, it should use the CCD template.</li></ul></li>
 <li><b>MAY</b> contain zero or one [0..1] <tt><b>component</b></tt> (CONF-HP-94), such that
 <ol>
-<li>Contains exactly one [1..1] <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.ccd.doc/classes/ProceduresSection.html">CCD Procedures Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.12</tt>)</li></ol></li>
+<li>Contains exactly one [1..1] <xref format="html" href="PLUGINS_ROOT/org.openhealthtools.mdht.uml.cda.ccd.doc/classes/ProceduresSection.html">CCD Procedures Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.12</tt>)</li></ol></li>
 <li><b>MAY</b> contain zero or one [0..1] <tt><b>component</b></tt> (CONF-HP-96), such that
 <ol>
-<li>Contains exactly one [1..1] <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.ccd.doc/classes/ImmunizationsSection.html">CCD Immunizations Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.6</tt>)</li></ol><ul><li>The Immunizations section provides a patient's pertinent immunization history. The
+<li>Contains exactly one [1..1] <xref format="html" href="PLUGINS_ROOT/org.openhealthtools.mdht.uml.cda.ccd.doc/classes/ImmunizationsSection.html">CCD Immunizations Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.6</tt>)</li></ol><ul><li>The Immunizations section provides a patient's pertinent immunization history. The
 Immunizations section is optional, however it is recommended that it be present when
 such information is available.</li></ul></li>
 <li><b>SHALL</b> satisfy: All patient, guardianPerson, assignedPerson, maintainingPerson, relatedPerson, intendedRecipient/informationRecipient, associatedPerson, and relatedSubject/subject elements have a name. (CONF-HP-6)<ul><li><codeblock>[OCL]: -- implemented in Java using XPath selector</codeblock></li><li><codeblock>[XPath]: *[self::cda:patient or self::cda:guardianPerson or self::cda:assignedPerson
