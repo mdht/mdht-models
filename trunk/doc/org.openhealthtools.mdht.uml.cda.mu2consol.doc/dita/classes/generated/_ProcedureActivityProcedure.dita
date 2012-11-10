@@ -13,13 +13,13 @@
 <section id="description">
 </section>
 <ol id="conformance">
-<li><b>SHALL</b> conform to <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.consol.doc/classes/ProcedureActivityProcedure.html">Consol Procedure Activity Procedure</xref> template (templateId: <tt>2.16.840.1.113883.10.20.22.4.14</tt>)</li>
+<li><b>SHALL</b> conform to <xref format="html" href="PLUGINS_ROOT/org.openhealthtools.mdht.uml.cda.consol.doc/classes/ProcedureActivityProcedure.html">Consol Procedure Activity Procedure</xref> template (templateId: <tt>2.16.840.1.113883.10.20.22.4.14</tt>)</li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:7656)
 </li>
 <li>'code' <b>SHOULD</b> be selected from SNOMED CT (codeSystem 2.16.840.1.113883.6.96) or CPT-4 (CodeSystem 2.16.840.1.113883.6.12)</li>
 </ol>
 <ol id="aggregate">
-<li><b>SHALL</b> conform to <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.consol.doc/classes/ProcedureActivityProcedure.html">Consol Procedure Activity Procedure</xref> template (templateId: <tt>2.16.840.1.113883.10.20.22.4.14</tt>)</li>
+<li><b>SHALL</b> conform to <xref format="html" href="PLUGINS_ROOT/org.openhealthtools.mdht.uml.cda.consol.doc/classes/ProcedureActivityProcedure.html">Consol Procedure Activity Procedure</xref> template (templateId: <tt>2.16.840.1.113883.10.20.22.4.14</tt>)</li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="PROC" </tt> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>) (CONF:7652)
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b></tt>, where the @code <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/MoodCodeEvnInt.dita">MoodCodeEvnInt</xref> 2.16.840.1.113883.11.20.9.18</tt><b> STATIC</b> 2011-04-03 (CONF:7653)

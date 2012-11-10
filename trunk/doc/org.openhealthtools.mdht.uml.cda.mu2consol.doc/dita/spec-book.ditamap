@@ -2,12 +2,8 @@
 <!DOCTYPE bookmap PUBLIC "-//OASIS//DTD DITA BookMap//EN" "bookmap.dtd">
 <bookmap id="cdabook">
 	<booktitle>
-		<booklibrary>Implementation Guide for CDA Release 2</booklibrary>
-		<mainbooktitle>MDHT Example Project</mainbooktitle>
-		<booktitlealt>Optional Subtitle</booktitlealt>
-		<booktitlealt><image href="images/CDAToolsLogo.png"/></booktitlealt>
-		<booktitlealt>PROTOTYPE: FOR DISCUSSION AND DEMONSTRATION USE ONLY</booktitlealt>
-		<booktitlealt audience="developer">(Consolidated Developer Documentation)</booktitlealt>
+		<booklibrary>Implementation Guide for CDA R2</booklibrary>
+		<mainbooktitle>Meaningful Use, Stage 2</mainbooktitle>
 	</booktitle>
 	<bookmeta>
 		<bookid><booknumber></booknumber>

@@ -13,13 +13,13 @@
 <section id="description">
 </section>
 <ol id="conformance">
-<li><b>SHALL</b> conform to <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.consol.doc/classes/ResultOrganizer.html">Consol Result Organizer</xref> template (templateId: <tt>2.16.840.1.113883.10.20.22.4.1</tt>)</li>
+<li><b>SHALL</b> conform to <xref format="html" href="PLUGINS_ROOT/org.openhealthtools.mdht.uml.cda.consol.doc/classes/ResultOrganizer.html">Consol Result Organizer</xref> template (templateId: <tt>2.16.840.1.113883.10.20.22.4.1</tt>)</li>
 <li><b>SHALL</b> contain at least one [1..*] <tt><b>component</b></tt> (CONF:7124, CONF:14850)
 <ol>
 <li>Contains exactly one [1..1] <xref href="../ResultObservation.dita">Result Observation</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.2</tt>)</li></ol></li>
 </ol>
 <ol id="aggregate">
-<li><b>SHALL</b> conform to <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.consol.doc/classes/ResultOrganizer.html">Consol Result Organizer</xref> template (templateId: <tt>2.16.840.1.113883.10.20.22.4.1</tt>)</li>
+<li><b>SHALL</b> conform to <xref format="html" href="PLUGINS_ROOT/org.openhealthtools.mdht.uml.cda.consol.doc/classes/ResultOrganizer.html">Consol Result Organizer</xref> template (templateId: <tt>2.16.840.1.113883.10.20.22.4.1</tt>)</li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b></tt> (CONF:7121)
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF:7122)

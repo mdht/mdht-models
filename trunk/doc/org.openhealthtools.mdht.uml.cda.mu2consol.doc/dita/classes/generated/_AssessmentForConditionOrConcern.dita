@@ -13,20 +13,20 @@
 <section id="description">
 </section>
 <ol id="conformance">
-<li><b>SHALL</b> conform to <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.consol.doc/classes/AssessmentSection.html">Consol Assessment Section</xref> template (templateId: <tt>2.16.840.1.113883.10.20.22.2.8</tt>)</li>
+<li><b>SHALL</b> conform to <xref format="html" href="PLUGINS_ROOT/org.openhealthtools.mdht.uml.cda.consol.doc/classes/AssessmentSection.html">Consol Assessment Section</xref> template (templateId: <tt>2.16.840.1.113883.10.20.22.2.8</tt>)</li>
 <li>Contains zero or one [0..1] <tt><b>entry</b></tt>
 <ol>
-<li>Contains exactly one [1..1] <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.consol.doc/classes/ProblemObservation.html">Consol Problem Observation</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.4</tt>)</li></ol></li>
+<li>Contains exactly one [1..1] <xref format="html" href="PLUGINS_ROOT/org.openhealthtools.mdht.uml.cda.consol.doc/classes/ProblemObservation.html">Consol Problem Observation</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.4</tt>)</li></ol></li>
 </ol>
 <ol id="aggregate">
-<li><b>SHALL</b> conform to <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.consol.doc/classes/AssessmentSection.html">Consol Assessment Section</xref> template (templateId: <tt>2.16.840.1.113883.10.20.22.2.8</tt>)</li>
+<li><b>SHALL</b> conform to <xref format="html" href="PLUGINS_ROOT/org.openhealthtools.mdht.uml.cda.consol.doc/classes/AssessmentSection.html">Consol Assessment Section</xref> template (templateId: <tt>2.16.840.1.113883.10.20.22.2.8</tt>)</li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="51848-0" </tt><i>Assessments</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10382)
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt> (CONF:7713)
 </li>
 <li>Contains zero or one [0..1] <tt><b>entry</b></tt>
 <ol>
-<li>Contains exactly one [1..1] <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.consol.doc/classes/ProblemObservation.html">Consol Problem Observation</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.4</tt>)</li></ol></li>
+<li>Contains exactly one [1..1] <xref format="html" href="PLUGINS_ROOT/org.openhealthtools.mdht.uml.cda.consol.doc/classes/ProblemObservation.html">Consol Problem Observation</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.4</tt>)</li></ol></li>
 </ol>
 <codeblock id="example"><![CDATA[]]></codeblock>
 <section id="changes">

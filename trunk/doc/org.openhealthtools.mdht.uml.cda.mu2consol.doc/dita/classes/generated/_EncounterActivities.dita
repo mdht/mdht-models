@@ -13,13 +13,13 @@
 <section id="description">
 </section>
 <ol id="conformance">
-<li><b>SHALL</b> conform to <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.consol.doc/classes/EncounterActivities.html">Consol Encounter Activities</xref> template (templateId: <tt>2.16.840.1.113883.10.20.22.4.49</tt>)</li>
+<li><b>SHALL</b> conform to <xref format="html" href="PLUGINS_ROOT/org.openhealthtools.mdht.uml.cda.consol.doc/classes/EncounterActivities.html">Consol Encounter Activities</xref> template (templateId: <tt>2.16.840.1.113883.10.20.22.4.49</tt>)</li>
 <li>Contains zero or one [0..1] <tt><b>code</b></tt>
 </li>
 <li>The value for 'code' for encounter activities  <b>SHOULD</b> be selected from ICD-10(codeSystem 2.16.840.1.113883.6.3) or SNOMED CT (codeSystem 2.16.840.1.113883.6.96)</li>
 </ol>
 <ol id="aggregate">
-<li><b>SHALL</b> conform to <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.consol.doc/classes/EncounterActivities.html">Consol Encounter Activities</xref> template (templateId: <tt>2.16.840.1.113883.10.20.22.4.49</tt>)</li>
+<li><b>SHALL</b> conform to <xref format="html" href="PLUGINS_ROOT/org.openhealthtools.mdht.uml.cda.consol.doc/classes/EncounterActivities.html">Consol Encounter Activities</xref> template (templateId: <tt>2.16.840.1.113883.10.20.22.4.49</tt>)</li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="ENC" </tt> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>) (CONF:8710)
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF:8711)

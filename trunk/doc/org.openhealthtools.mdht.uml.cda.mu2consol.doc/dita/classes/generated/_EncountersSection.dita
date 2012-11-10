@@ -13,14 +13,14 @@
 <section id="description">
 </section>
 <ol id="conformance">
-<li><b>SHALL</b> conform to <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.consol.doc/classes/EncountersSection.html">Consol Encounters Section</xref> template (templateId: <tt>2.16.840.1.113883.10.20.22.2.22.1</tt>)</li>
+<li><b>SHALL</b> conform to <xref format="html" href="PLUGINS_ROOT/org.openhealthtools.mdht.uml.cda.consol.doc/classes/EncountersSection.html">Consol Encounters Section</xref> template (templateId: <tt>2.16.840.1.113883.10.20.22.2.22.1</tt>)</li>
 <li><b>SHALL</b> contain at least one [1..*] <tt><b>entry</b></tt> (CONF:8709, CONF:8803)
 <ol>
 <li>Contains exactly one [1..1] <xref href="../EncounterActivities.dita">Encounter Activities</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.49</tt>)</li></ol></li>
 </ol>
 <ol id="aggregate">
-<li><b>SHALL</b> conform to <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.consol.doc/classes/EncountersSectionEntriesOptional.html">Consol Encounters Section Entries Optional</xref> template (templateId: <tt>2.16.840.1.113883.10.20.22.2.22</tt>)</li>
-<li><b>SHALL</b> conform to <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.consol.doc/classes/EncountersSection.html">Consol Encounters Section</xref> template (templateId: <tt>2.16.840.1.113883.10.20.22.2.22.1</tt>)</li>
+<li><b>SHALL</b> conform to <xref format="html" href="PLUGINS_ROOT/org.openhealthtools.mdht.uml.cda.consol.doc/classes/EncountersSectionEntriesOptional.html">Consol Encounters Section Entries Optional</xref> template (templateId: <tt>2.16.840.1.113883.10.20.22.2.22</tt>)</li>
+<li><b>SHALL</b> conform to <xref format="html" href="PLUGINS_ROOT/org.openhealthtools.mdht.uml.cda.consol.doc/classes/EncountersSection.html">Consol Encounters Section</xref> template (templateId: <tt>2.16.840.1.113883.10.20.22.2.22.1</tt>)</li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:15466)<tt><b>/@code</b>="46240-8" </tt><i>Encounters</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:15467)
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>title</b></tt> (CONF:8707)

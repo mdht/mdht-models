@@ -14,30 +14,30 @@
 <p><lines><i>INLINE</i></lines></p>
 </section>
 <ol id="conformance">
-<li><b>SHALL</b> conform to <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.consol.doc/classes/FunctionalStatusSection.html">Consol Functional Status Section</xref> template (templateId: <tt>2.16.840.1.113883.10.20.22.2.14</tt>)</li>
+<li><b>SHALL</b> conform to <xref format="html" href="PLUGINS_ROOT/org.openhealthtools.mdht.uml.cda.consol.doc/classes/FunctionalStatusSection.html">Consol Functional Status Section</xref> template (templateId: <tt>2.16.840.1.113883.10.20.22.2.14</tt>)</li>
 <li>Contains zero or more [0..*] <tt><b>entry</b></tt>
 <ol>
-<li>Contains exactly one [1..1] <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.consol.doc/classes/CognitiveStatusProblemObservation.html">Consol Cognitive Status Problem Observation</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.73</tt>)</li></ol></li>
+<li>Contains exactly one [1..1] <xref format="html" href="PLUGINS_ROOT/org.openhealthtools.mdht.uml.cda.consol.doc/classes/CognitiveStatusProblemObservation.html">Consol Cognitive Status Problem Observation</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.73</tt>)</li></ol></li>
 <li>Contains zero or more [0..*] <tt><b>entry</b></tt>
 <ol>
-<li>Contains exactly one [1..1] <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.consol.doc/classes/CognitiveStatusResultObservation.html">Consol Cognitive Status Result Observation</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.74</tt>)</li></ol></li>
+<li>Contains exactly one [1..1] <xref format="html" href="PLUGINS_ROOT/org.openhealthtools.mdht.uml.cda.consol.doc/classes/CognitiveStatusResultObservation.html">Consol Cognitive Status Result Observation</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.74</tt>)</li></ol></li>
 <li>Contains zero or more [0..*] <tt><b>entry</b></tt>
 <ol>
-<li>Contains exactly one [1..1] <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.consol.doc/classes/CognitiveStatusResultOrganizer.html">Consol Cognitive Status Result Organizer</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.75</tt>)</li></ol></li>
+<li>Contains exactly one [1..1] <xref format="html" href="PLUGINS_ROOT/org.openhealthtools.mdht.uml.cda.consol.doc/classes/CognitiveStatusResultOrganizer.html">Consol Cognitive Status Result Organizer</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.75</tt>)</li></ol></li>
 <li>Contains zero or more [0..*] <tt><b>entry</b></tt>
 <ol>
-<li>Contains exactly one [1..1] <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.consol.doc/classes/FunctionalStatusProblemObservation.html">Consol Functional Status Problem Observation</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.68</tt>)</li></ol></li>
+<li>Contains exactly one [1..1] <xref format="html" href="PLUGINS_ROOT/org.openhealthtools.mdht.uml.cda.consol.doc/classes/FunctionalStatusProblemObservation.html">Consol Functional Status Problem Observation</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.68</tt>)</li></ol></li>
 <li>Contains zero or more [0..*] <tt><b>entry</b></tt>
 <ol>
-<li>Contains exactly one [1..1] <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.consol.doc/classes/FunctionalStatusResultObservation.html">Consol Functional Status Result Observation</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.67</tt>)</li></ol></li>
+<li>Contains exactly one [1..1] <xref format="html" href="PLUGINS_ROOT/org.openhealthtools.mdht.uml.cda.consol.doc/classes/FunctionalStatusResultObservation.html">Consol Functional Status Result Observation</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.67</tt>)</li></ol></li>
 <li>Contains zero or more [0..*] <tt><b>entry</b></tt>
 <ol>
-<li>Contains exactly one [1..1] <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.consol.doc/classes/FunctionalStatusResultOrganizer.html">Consol Functional Status Result Organizer</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.66</tt>)</li></ol></li>
+<li>Contains exactly one [1..1] <xref format="html" href="PLUGINS_ROOT/org.openhealthtools.mdht.uml.cda.consol.doc/classes/FunctionalStatusResultOrganizer.html">Consol Functional Status Result Organizer</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.66</tt>)</li></ol></li>
 <li><b>SHALL</b> satisfy: cognitiveStatus</li>
 <li><b>SHALL</b> satisfy: functionalStatus</li>
 </ol>
 <ol id="aggregate">
-<li><b>SHALL</b> conform to <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.consol.doc/classes/FunctionalStatusSection.html">Consol Functional Status Section</xref> template (templateId: <tt>2.16.840.1.113883.10.20.22.2.14</tt>)</li>
+<li><b>SHALL</b> conform to <xref format="html" href="PLUGINS_ROOT/org.openhealthtools.mdht.uml.cda.consol.doc/classes/FunctionalStatusSection.html">Consol Functional Status Section</xref> template (templateId: <tt>2.16.840.1.113883.10.20.22.2.14</tt>)</li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="47420-5" </tt><i>Functional status assessment</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:7921)
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>title</b></tt> (CONF:7922)
@@ -82,22 +82,22 @@
 <li>Contains exactly one [1..1] <xref href="../HighestPressureUlcerStage.dita">Highest Pressure Ulcer Stage</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.77</tt>)</li></ol></li>
 <li>Contains zero or more [0..*] <tt><b>entry</b></tt>
 <ol>
-<li>Contains exactly one [1..1] <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.consol.doc/classes/CognitiveStatusProblemObservation.html">Consol Cognitive Status Problem Observation</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.73</tt>)</li></ol></li>
+<li>Contains exactly one [1..1] <xref format="html" href="PLUGINS_ROOT/org.openhealthtools.mdht.uml.cda.consol.doc/classes/CognitiveStatusProblemObservation.html">Consol Cognitive Status Problem Observation</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.73</tt>)</li></ol></li>
 <li>Contains zero or more [0..*] <tt><b>entry</b></tt>
 <ol>
-<li>Contains exactly one [1..1] <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.consol.doc/classes/CognitiveStatusResultObservation.html">Consol Cognitive Status Result Observation</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.74</tt>)</li></ol></li>
+<li>Contains exactly one [1..1] <xref format="html" href="PLUGINS_ROOT/org.openhealthtools.mdht.uml.cda.consol.doc/classes/CognitiveStatusResultObservation.html">Consol Cognitive Status Result Observation</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.74</tt>)</li></ol></li>
 <li>Contains zero or more [0..*] <tt><b>entry</b></tt>
 <ol>
-<li>Contains exactly one [1..1] <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.consol.doc/classes/CognitiveStatusResultOrganizer.html">Consol Cognitive Status Result Organizer</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.75</tt>)</li></ol></li>
+<li>Contains exactly one [1..1] <xref format="html" href="PLUGINS_ROOT/org.openhealthtools.mdht.uml.cda.consol.doc/classes/CognitiveStatusResultOrganizer.html">Consol Cognitive Status Result Organizer</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.75</tt>)</li></ol></li>
 <li>Contains zero or more [0..*] <tt><b>entry</b></tt>
 <ol>
-<li>Contains exactly one [1..1] <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.consol.doc/classes/FunctionalStatusProblemObservation.html">Consol Functional Status Problem Observation</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.68</tt>)</li></ol></li>
+<li>Contains exactly one [1..1] <xref format="html" href="PLUGINS_ROOT/org.openhealthtools.mdht.uml.cda.consol.doc/classes/FunctionalStatusProblemObservation.html">Consol Functional Status Problem Observation</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.68</tt>)</li></ol></li>
 <li>Contains zero or more [0..*] <tt><b>entry</b></tt>
 <ol>
-<li>Contains exactly one [1..1] <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.consol.doc/classes/FunctionalStatusResultObservation.html">Consol Functional Status Result Observation</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.67</tt>)</li></ol></li>
+<li>Contains exactly one [1..1] <xref format="html" href="PLUGINS_ROOT/org.openhealthtools.mdht.uml.cda.consol.doc/classes/FunctionalStatusResultObservation.html">Consol Functional Status Result Observation</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.67</tt>)</li></ol></li>
 <li>Contains zero or more [0..*] <tt><b>entry</b></tt>
 <ol>
-<li>Contains exactly one [1..1] <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.consol.doc/classes/FunctionalStatusResultOrganizer.html">Consol Functional Status Result Organizer</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.66</tt>)</li></ol></li>
+<li>Contains exactly one [1..1] <xref format="html" href="PLUGINS_ROOT/org.openhealthtools.mdht.uml.cda.consol.doc/classes/FunctionalStatusResultOrganizer.html">Consol Functional Status Result Organizer</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.66</tt>)</li></ol></li>
 <li><b>SHALL</b> satisfy: cognitiveStatus</li>
 <li><b>SHALL</b> satisfy: functionalStatus</li>
 </ol>
