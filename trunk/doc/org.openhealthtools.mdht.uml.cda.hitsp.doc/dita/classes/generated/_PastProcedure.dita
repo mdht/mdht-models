@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Past Procedure - conformance rules</title>
+<shortdesc id="shortdesc">[Procedure: templateId <tt>2.16.840.1.113883.10.20.1.29</tt>]</shortdesc>
+<prolog id="prolog">
+<metadata><category>Procedure</category></metadata>
+<resourceid id="2.16.840.1.113883.10.20.1.29"/>
+</prolog>
+<body>
+<section id="knownSubclasses">
+</section>
+<section id="description">
+</section>
+<ol id="conformance">
+<li><b>SHALL</b> contain exactly one [1..1] templateId (  ) such that it <ol><li><b>SHALL</b> contain exactly one [1..1] <b>@root</b>="2.16.840.1.113883.10.20.1.29"</li></ol></li>
+<li><b>SHALL</b> conform to <xref format="html" href="PLUGINS_ROOT/org.openhealthtools.mdht.uml.cda.ihe.doc/classes/ProcedureEntryProcedureActivityProcedure.html">IHE Procedure Entry Procedure Activity Procedure</xref> template (templateId: <tt>2.16.840.1.113883.10.20.1.29</tt>)</li>
+<li><b>SHALL</b> conform to <xref href="../Procedure.dita">Procedure</xref> template (templateId: <tt>2.16.840.1.113883.3.88.11.83.17</tt>)</li>
+</ol>
+<ol id="aggregate">
+<li><b>SHALL</b> conform to <xref href="../Procedure.dita">Procedure</xref> template (templateId: <tt>2.16.840.1.113883.3.88.11.83.17</tt>)</li>
+<li><b>SHALL</b> conform to <xref format="html" href="PLUGINS_ROOT/org.openhealthtools.mdht.uml.cda.ihe.doc/classes/ProcedureEntry.html">IHE Procedure Entry</xref> template (templateId: <tt>1.3.6.1.4.1.19376.1.5.3.1.4.19</tt>)</li>
+<li><b>SHALL</b> conform to <xref format="html" href="PLUGINS_ROOT/org.openhealthtools.mdht.uml.cda.ccd.doc/classes/ProcedureActivity.html">CCD Procedure Activity</xref></li>
+<li><b>SHALL</b> conform to <xref format="html" href="PLUGINS_ROOT/org.openhealthtools.mdht.uml.cda.ccd.doc/classes/ProcedureActivityProcedure.html">CCD Procedure Activity Procedure</xref> template (templateId: <tt>2.16.840.1.113883.10.20.1.29</tt>)</li>
+<li><b>SHALL</b> conform to <xref format="html" href="PLUGINS_ROOT/org.openhealthtools.mdht.uml.cda.ihe.doc/classes/ProcedureEntryProcedureActivityProcedure.html">IHE Procedure Entry Procedure Activity Procedure</xref> template (templateId: <tt>2.16.840.1.113883.10.20.1.29</tt>)</li>
+<li>Contains exactly one [1..1] <tt><b>@classCode</b></tt> with data type ActClass
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt>
+</li>
+<li>Contains exactly one [1..1] <tt><b>statusCode</b></tt>
+<ul><li><p><lines><i>Need to add value set to term model for 
+The value for "[Act | Observation | Procedure] / statusCode" in a procedure activity  SHALL be selected from ValueSet 2.16.840.1.113883.1.11.20.15 ProcedureStatusCode   STATIC 20061017.</i></lines></p></li></ul></li>
+<li><b>SHALL</b> contain at least one [1..*] <tt><b>id</b></tt>
+</li>
+<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>effectiveTime</b></tt>
+</li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt>
+<ol>
+<li>Contains <tt><b>@typeCode="</b>COMP" </tt><i>COMP</i></li>
+<li>Contains exactly one [1..1] <xref href="../InternalReference.dita">Internal Reference</xref> (templateId: <tt>1.3.6.1.4.1.19376.1.5.3.1.4.4.1</tt>)</li></ol><ul><li><p><lines><i>This element may be present to point the encounter in which the procedure was performed, and shall contain an internal reference to the encounter.</i></lines></p></li></ul></li>
+<li><b>MAY</b> contain at least one [1..*] <tt><b>entryRelationship</b></tt>
+<ol>
+<li>Contains <tt><b>@typeCode="</b>RSON" </tt><i>RSON</i></li>
+<li>Contains exactly one [1..1] <xref href="../InternalReference.dita">Internal Reference</xref> (templateId: <tt>1.3.6.1.4.1.19376.1.5.3.1.4.4.1</tt>)</li></ol><ul><li><p><lines><i>A &lt;procedure> act may indicate one or more reasons for the procedure. These reasons identify the concern that was the reason for use via the Internal Reference entry content module. The extension and root of each observation present must match the identifier of a concern entry contained elsewhere within the CDA document.</i></lines></p></li></ul></li>
+<li><b>MAY</b> contain at least one [1..*] <tt><b>specimen</b></tt> (CONF-443)
+<ol>
+<li>Contains exactly one [1..1] CDA Specimen</li></ol></li>
+<li><b>MAY</b> contain at least one [1..*] <tt><b>participant</b></tt>
+<ol>
+<li>Contains exactly one [1..1] <xref href="../EncounterLocation.dita">Encounter Location</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.45</tt>)</li></ol></li>
+<li><b>MAY</b> contain at least one [1..*] <tt><b>performer</b></tt>
+<ol>
+<li>Contains exactly one [1..1] CDA Performer2</li></ol></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt>
+<ol>
+<li>Contains <tt><b>@typeCode="</b>RSON" </tt><i>RSON</i></li>
+<li>Contains exactly one [1..1] <xref href="../ProblemObservation.dita">Problem Observation</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.28</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt>
+<ol>
+<li>Contains <tt><b>@typeCode="</b>RSON" </tt><i>RSON</i></li>
+<li>Contains exactly one [1..1] <xref href="../ProblemAct.dita">Problem Act</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.27</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt>
+<ol>
+<li>Contains <tt><b>@typeCode="</b>SUBJ" </tt><i>SUBJ</i></li>
+<li>Contains exactly one [1..1] <xref href="../AgeObservation.dita">Age Observation</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.38</tt>)</li></ol></li>
+<li><b>MAY</b> contain at least one [1..*] <tt><b>entryRelationship</b></tt>
+<ol>
+<li>Contains <tt><b>@typeCode="</b>COMP" </tt><i>COMP</i></li>
+<li>Contains exactly one [1..1] <xref href="../MedicationActivity.dita">Medication Activity</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.24</tt>)</li></ol></li>
+<li><b>MAY</b> contain at least one [1..*] <tt><b>entryRelationship</b></tt>
+<ol>
+<li>Contains exactly one [1..1] <xref href="../PatientInstruction.dita">Patient Instruction</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.49</tt>)</li></ol></li>
+<li><b>SHALL</b> satisfy: The code/originalText/reference/@value is present.</li>
+<li><b>SHOULD</b> satisfy: Contains the procedure provider in performer / assignedEntity.</li>
+<li><b>SHALL</b> satisfy: Value for moodCode is 'INT' to indicate a planned procedure or 'EVN' to describe a procedure that has already occured.</li>
+<li><b>SHALL</b> satisfy: The &lt;text&gt; element shall contain a reference to the narrative text describing the procedure.</li>
+<li><b>SHALL</b> satisfy: When the procedure is in event mood (moodCode='EVN'), this entry conforms to the CCD template 2.16.840.1.113883.10.20.1.29, and when in intent mood, this entry conforms to the CCD template 2.16.840.1.113883.10.20.1.25</li>
+<li>&lt;priorityCode&gt; <b>SHALL</b> be present in INT mood when effectiveTime is not provided, it <b>MAY</b> be present in other moods</li>
+<li><b>SHALL</b> satisfy: The entryRelationship/@inversionInd attribute is 'true' for the reference to encounter (typecode=COMP)</li>
+<li>A procedure activity <b>MAY</b> have one or more associated consents, represented in the CCD Header as ClinicalDocument / authorization / consent. (CONF-442)</li>
+<li>A procedure activity <b>SHALL</b> contain one or more sources of information, as defined in section 5.2 Source. (CONF-447)</li>
+<li>contains one or more Procedure / methodCode if the method isn't inherent in Procedure / code or if there is a need to further specialize the method in Procedure / code. Procedure / methodCode <b>SHALL NOT</b> conflict with the method inherent in Procedure / code. (CONF-435)</li>
+<li>contains one or more Procedure / targetSiteCode to indicate the anatomical site or system that is the focus of the procedure, if the site isn't inherent in Procedure / code or if there is a need to further specialize the site in Procedure / code. Procedure / targetSiteCode <b>SHALL NOT</b> conflict with the site inherent in Procedure / code (CONF-436)</li>
+<li>specimen / specimenRole / id <b>SHOULD</b> be set to equal an Organizer / specimen / specimenRole / id to indicate that the Procedure and the Results are referring to the same specimen. (CONF-444)</li>
+</ol>
+<section id="tableconformance"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="8" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><colspec colname="col2" colnum="2" /><colspec colname="col3" colnum="3" /><colspec colname="col4" colnum="4" /><colspec colname="col5" colnum="5" /><colspec colname="col6" colnum="6" /><colspec colname="col7" colnum="7" /><thead> <row><entry namest="col0" nameend="col7" >hitsp::PastProcedure</entry>  </row>  <row><entry namest="col0" nameend="col7" >cda::procedure[cda:templateId/@root = ]/</entry>  </row>  <row><entry>Name</entry><entry>XPath</entry><entry>Cardinality</entry><entry>Severity</entry><entry>Nullable</entry><entry>Data Type</entry><entry>Conformance</entry><entry>Value(s)</entry></row></thead><tbody></tbody></tgroup></table></p></section>
+<codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<procedure xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd">
+  <id root="MDHT" extension="983645078"/>
+  <code code="882319637"/>
+  <text>Text Value</text>
+  <effectiveTime>
+    <low value="2012"/>
+    <high value="2012"/>
+  </effectiveTime>
+  <approachSiteCode code="196239479"/>
+</procedure>]]></codeblock>
+<section id="changes">
+</section>
+<p><ph id="classformalname">Past Procedure</ph></p>
+<p id="shortdesc">[Procedure: templateId <tt>2.16.840.1.113883.10.20.1.29</tt>]</p>
+</body>
+</topic>
