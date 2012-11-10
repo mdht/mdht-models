@@ -77,15 +77,15 @@
 </tbody></tgroup></table></p></section>
 <codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
 <observation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd">
-  <id root="MDHT" extension="776988922"/>
-  <code code="1781289384"/>
+  <id root="MDHT" extension="1363470439"/>
+  <code code="1431279090"/>
   <statusCode code="completed"/>
   <effectiveTime>
     <low value="2012"/>
     <high value="2012"/>
   </effectiveTime>
-  <interpretationCode code="1985990251"/>
-  <methodCode code="1015510626"/>
+  <interpretationCode code="247363372"/>
+  <methodCode code="224383519"/>
 </observation>]]></codeblock>
 <section id="changes">
 </section>

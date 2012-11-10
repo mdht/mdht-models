@@ -130,9 +130,9 @@
 </tbody></tgroup></table></p></section>
 <codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
 <substanceadministration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd">
-  <id root="MDHT" extension="652444141"/>
+  <id root="MDHT" extension="2005975780"/>
   <statusCode code="completed"/>
-  <effectiveTime value="20121108"/>
+  <effectiveTime value="20121109"/>
   <doseQuantity/>
   <rateQuantity/>
   <maxDoseQuantity/>
@@ -140,8 +140,8 @@
   <performer/>
   <entryRelationship>
     <observation>
-      <id root="MDHT" extension="449496075"/>
-      <code code="145267197"/>
+      <id root="MDHT" extension="1779813470"/>
+      <code code="2024791505"/>
       <statusCode code="completed"/>
       <effectiveTime>
         <low value="2012"/>
@@ -151,8 +151,8 @@
   </entryRelationship>
   <entryRelationship>
     <observation>
-      <id root="MDHT" extension="2101262497"/>
-      <code code="1595082125"/>
+      <id root="MDHT" extension="1121317475"/>
+      <code code="801113385"/>
       <statusCode code="completed"/>
       <effectiveTime>
         <low value="2012"/>
@@ -162,8 +162,8 @@
   </entryRelationship>
   <entryRelationship>
     <act>
-      <id root="MDHT" extension="1361024227"/>
-      <code code="1398972290"/>
+      <id root="MDHT" extension="234735060"/>
+      <code code="221401649"/>
       <statusCode code="completed"/>
       <effectiveTime>
         <low value="2012"/>
@@ -173,8 +173,8 @@
   </entryRelationship>
   <entryRelationship>
     <observation>
-      <id root="MDHT" extension="796833892"/>
-      <code code="1924830959"/>
+      <id root="MDHT" extension="652717385"/>
+      <code code="92929305"/>
       <statusCode code="completed"/>
       <effectiveTime>
         <low value="2012"/>
@@ -182,8 +182,8 @@
       </effectiveTime>
       <entryRelationship>
         <observation>
-          <id root="MDHT" extension="1443305634"/>
-          <code code="1197246372"/>
+          <id root="MDHT" extension="303911756"/>
+          <code code="680364651"/>
           <statusCode code="completed"/>
           <effectiveTime>
             <low value="2012"/>

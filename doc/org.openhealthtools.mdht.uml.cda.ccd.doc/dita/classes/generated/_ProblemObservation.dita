@@ -76,16 +76,16 @@
 </tbody></tgroup></table></p></section>
 <codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
 <observation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd">
-  <id root="MDHT" extension="1004132247"/>
-  <code code="450323931"/>
+  <id root="MDHT" extension="1087238122"/>
+  <code code="241918448"/>
   <effectiveTime>
     <low value="2012"/>
     <high value="2012"/>
   </effectiveTime>
   <entryRelationship>
     <observation>
-      <id root="MDHT" extension="100319257"/>
-      <code code="300134019"/>
+      <id root="MDHT" extension="1682730970"/>
+      <code code="766662098"/>
       <effectiveTime>
         <low value="2012"/>
         <high value="2012"/>
@@ -94,8 +94,8 @@
   </entryRelationship>
   <entryRelationship>
     <observation>
-      <id root="MDHT" extension="2090675700"/>
-      <code code="1899410080"/>
+      <id root="MDHT" extension="1461153581"/>
+      <code code="280394641"/>
       <effectiveTime>
         <low value="2012"/>
         <high value="2012"/>
@@ -104,8 +104,8 @@
   </entryRelationship>
   <entryRelationship>
     <observation>
-      <id root="MDHT" extension="1878142710"/>
-      <code code="1881401575"/>
+      <id root="MDHT" extension="955255871"/>
+      <code code="410245955"/>
       <effectiveTime>
         <low value="2012"/>
         <high value="2012"/>

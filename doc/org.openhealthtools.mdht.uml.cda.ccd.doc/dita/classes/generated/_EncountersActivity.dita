@@ -77,7 +77,7 @@
 </tbody></tgroup></table></p></section>
 <codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
 <encounter xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd">
-  <id root="MDHT" extension="1578707858"/>
+  <id root="MDHT" extension="36940118"/>
   <effectiveTime>
     <low value="2012"/>
     <high value="2012"/>
@@ -87,8 +87,8 @@
   </participant>
   <entryRelationship>
     <act>
-      <id root="MDHT" extension="947774536"/>
-      <code code="1881036675"/>
+      <id root="MDHT" extension="1985019033"/>
+      <code code="2038079608"/>
       <effectiveTime>
         <low value="2012"/>
         <high value="2012"/>
@@ -97,8 +97,8 @@
   </entryRelationship>
   <entryRelationship>
     <observation>
-      <id root="MDHT" extension="149075214"/>
-      <code code="1328704938"/>
+      <id root="MDHT" extension="1055756850"/>
+      <code code="1862110997"/>
       <effectiveTime>
         <low value="2012"/>
         <high value="2012"/>

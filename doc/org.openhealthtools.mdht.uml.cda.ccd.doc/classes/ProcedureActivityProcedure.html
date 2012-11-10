@@ -20,7 +20,7 @@
 </head>
 <body id="classId">
 <div>
-	<p><b>Development Only.</b> The Normative content for these specifications
+	<p><b>Non-Normative Content</b> The Normative content for these specifications
 	may be found on the HL7, IHE, and HITSP web sites.</p>
 </div>
 
@@ -36,20 +36,29 @@
 
 
 
-
 <ol class="ol">
-<li class="li"><strong class="ph b">SHALL</strong> conform to <a class="xref" href="ProcedureActivity.html" title="Abstract [ClinicalStatement: templateId null]">Procedure Activity</a></li>
-
-<li class="li">Contains exactly one [1..1] <tt class="ph tt"><strong class="ph b">@classCode</strong></tt> with data type ActClass
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] templateId ( CONF-427 ) such that it <ol class="ol" type="a"><li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <strong class="ph b">@root</strong>="2.16.840.1.113883.10.20.1.29"</li>
+</ol>
 </li>
+
+<li class="li"><strong class="ph b">SHALL</strong> conform to <a class="xref" href="ProcedureActivity.html" title="Abstract [ClinicalStatement: templateId null]">Procedure Activity</a></li>
 
 <li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@moodCode</strong>="EVN" </tt><em class="ph i">Event</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.5.1001 HL7ActMood</tt>)
 </li>
 
-<li class="li"><strong class="ph b">SHALL</strong> contain at least one [1..*] <tt class="ph tt"><strong class="ph b">id</strong></tt>
+<li class="li"><strong class="ph b">MAY</strong> contain at least one [1..*] <tt class="ph tt"><strong class="ph b">specimen</strong></tt> (CONF-443)
+<ol class="ol" type="a">
+<li class="li">Contains exactly one [1..1] CDA Specimen</li>
+</ol>
 </li>
 
 <li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt>
+</li>
+
+<li class="li"><strong class="ph b">SHOULD</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">effectiveTime</strong></tt>
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain at least one [1..*] <tt class="ph tt"><strong class="ph b">id</strong></tt>
 </li>
 
 <li class="li">Contains exactly one [1..1] <tt class="ph tt"><strong class="ph b">statusCode</strong></tt>
@@ -58,15 +67,6 @@ The value for "[Act | Observation | Procedure] / statusCode" in a procedure acti
 </div>
 </li>
 </ul>
-</li>
-
-<li class="li"><strong class="ph b">SHOULD</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">effectiveTime</strong></tt>
-</li>
-
-<li class="li"><strong class="ph b">MAY</strong> contain at least one [1..*] <tt class="ph tt"><strong class="ph b">specimen</strong></tt> (CONF-443)
-<ol class="ol" type="a">
-<li class="li">Contains exactly one [1..1] CDA Specimen</li>
-</ol>
 </li>
 
 <li class="li"><strong class="ph b">MAY</strong> contain at least one [1..*] <tt class="ph tt"><strong class="ph b">participant</strong></tt>
@@ -119,10 +119,6 @@ The value for "[Act | Observation | Procedure] / statusCode" in a procedure acti
 </ol>
 </li>
 
-<li class="li">A procedure activity <strong class="ph b">MAY</strong> have one or more associated consents, represented in the CCD Header as ClinicalDocument / authorization / consent. (CONF-442)</li>
-
-<li class="li">A procedure activity <strong class="ph b">SHALL</strong> contain one or more sources of information, as defined in section 5.2 Source. (CONF-447)</li>
-
 <li class="li">contains one or more Procedure / methodCode if the method isn't inherent in Procedure / code or if there is a need to further specialize the method in Procedure / code. Procedure / methodCode <strong class="ph b">SHALL NOT</strong> conflict with the method inherent in Procedure / code. (CONF-435)</li>
 
 <li class="li">contains one or more Procedure / targetSiteCode to indicate the anatomical site or system that is the focus of the procedure, if the site isn't inherent in Procedure / code or if there is a need to further specialize the site in Procedure / code. Procedure / targetSiteCode <strong class="ph b">SHALL NOT</strong> conflict with the site inherent in Procedure / code (CONF-436)</li>
@@ -130,6 +126,7 @@ The value for "[Act | Observation | Procedure] / statusCode" in a procedure acti
 <li class="li">specimen / specimenRole / id <strong class="ph b">SHOULD</strong> be set to equal an Organizer / specimen / specimenRole / id to indicate that the Procedure and the Results are referring to the same specimen. (CONF-444)</li>
 
 </ol>
+
 
 <p class="p"> </p>
 
@@ -139,8 +136,8 @@ The value for "[Act | Observation | Procedure] / statusCode" in a procedure acti
 
 <pre class="pre codeblock">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
 &lt;procedure xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd"&gt;
-  &lt;id root="MDHT" extension="1932022890"/&gt;
-  &lt;code code="1376495947"/&gt;
+  &lt;id root="MDHT" extension="645454647"/&gt;
+  &lt;code code="1006298509"/&gt;
   &lt;effectiveTime&gt;
     &lt;low value="2012"/&gt;
     &lt;high value="2012"/&gt;
@@ -152,16 +149,16 @@ The value for "[Act | Observation | Procedure] / statusCode" in a procedure acti
   &lt;/participant&gt;
   &lt;entryRelationship&gt;
     &lt;observation&gt;
-      &lt;id root="MDHT" extension="1280257786"/&gt;
-      &lt;code code="848484790"/&gt;
+      &lt;id root="MDHT" extension="2002353347"/&gt;
+      &lt;code code="908722056"/&gt;
       &lt;effectiveTime&gt;
         &lt;low value="2012"/&gt;
         &lt;high value="2012"/&gt;
       &lt;/effectiveTime&gt;
       &lt;entryRelationship&gt;
         &lt;observation&gt;
-          &lt;id root="MDHT" extension="1926891385"/&gt;
-          &lt;code code="1776423498"/&gt;
+          &lt;id root="MDHT" extension="188767980"/&gt;
+          &lt;code code="2071230972"/&gt;
           &lt;effectiveTime&gt;
             &lt;low value="2012"/&gt;
             &lt;high value="2012"/&gt;
@@ -170,8 +167,8 @@ The value for "[Act | Observation | Procedure] / statusCode" in a procedure acti
       &lt;/entryRelationship&gt;
       &lt;entryRelationship&gt;
         &lt;observation&gt;
-          &lt;id root="MDHT" extension="2120854093"/&gt;
-          &lt;code code="1100376382"/&gt;
+          &lt;id root="MDHT" extension="1842627947"/&gt;
+          &lt;code code="1692476540"/&gt;
           &lt;effectiveTime&gt;
             &lt;low value="2012"/&gt;
             &lt;high value="2012"/&gt;
@@ -180,8 +177,8 @@ The value for "[Act | Observation | Procedure] / statusCode" in a procedure acti
       &lt;/entryRelationship&gt;
       &lt;entryRelationship&gt;
         &lt;observation&gt;
-          &lt;id root="MDHT" extension="1712592956"/&gt;
-          &lt;code code="1043342553"/&gt;
+          &lt;id root="MDHT" extension="638249930"/&gt;
+          &lt;code code="1470168967"/&gt;
           &lt;effectiveTime&gt;
             &lt;low value="2012"/&gt;
             &lt;high value="2012"/&gt;
@@ -192,16 +189,16 @@ The value for "[Act | Observation | Procedure] / statusCode" in a procedure acti
   &lt;/entryRelationship&gt;
   &lt;entryRelationship&gt;
     &lt;act&gt;
-      &lt;id root="MDHT" extension="465508915"/&gt;
-      &lt;code code="1572570713"/&gt;
+      &lt;id root="MDHT" extension="455256117"/&gt;
+      &lt;code code="2044131432"/&gt;
       &lt;effectiveTime&gt;
         &lt;low value="2012"/&gt;
         &lt;high value="2012"/&gt;
       &lt;/effectiveTime&gt;
       &lt;entryRelationship&gt;
         &lt;observation&gt;
-          &lt;id root="MDHT" extension="1273821558"/&gt;
-          &lt;code code="791330664"/&gt;
+          &lt;id root="MDHT" extension="428505940"/&gt;
+          &lt;code code="1164790969"/&gt;
           &lt;effectiveTime&gt;
             &lt;low value="2012"/&gt;
             &lt;high value="2012"/&gt;
@@ -212,8 +209,8 @@ The value for "[Act | Observation | Procedure] / statusCode" in a procedure acti
   &lt;/entryRelationship&gt;
   &lt;entryRelationship&gt;
     &lt;observation&gt;
-      &lt;id root="MDHT" extension="728038013"/&gt;
-      &lt;code code="450875567"/&gt;
+      &lt;id root="MDHT" extension="1227201973"/&gt;
+      &lt;code code="1160028904"/&gt;
       &lt;effectiveTime&gt;
         &lt;low value="2012"/&gt;
         &lt;high value="2012"/&gt;
@@ -222,15 +219,15 @@ The value for "[Act | Observation | Procedure] / statusCode" in a procedure acti
   &lt;/entryRelationship&gt;
   &lt;entryRelationship&gt;
     &lt;substanceAdministration&gt;
-      &lt;id root="MDHT" extension="1533825327"/&gt;
-      &lt;code code="2028827978"/&gt;
-      &lt;effectiveTime value="20121108"/&gt;
+      &lt;id root="MDHT" extension="93200300"/&gt;
+      &lt;code code="1292815262"/&gt;
+      &lt;effectiveTime value="20121109"/&gt;
       &lt;consumable/&gt;
       &lt;performer/&gt;
       &lt;entryRelationship&gt;
         &lt;observation&gt;
-          &lt;id root="MDHT" extension="865931828"/&gt;
-          &lt;code code="500404095"/&gt;
+          &lt;id root="MDHT" extension="1068471000"/&gt;
+          &lt;code code="1372728486"/&gt;
           &lt;effectiveTime&gt;
             &lt;low value="2012"/&gt;
             &lt;high value="2012"/&gt;
@@ -239,8 +236,8 @@ The value for "[Act | Observation | Procedure] / statusCode" in a procedure acti
       &lt;/entryRelationship&gt;
       &lt;entryRelationship&gt;
         &lt;observation&gt;
-          &lt;id root="MDHT" extension="243350100"/&gt;
-          &lt;code code="1229358146"/&gt;
+          &lt;id root="MDHT" extension="1350154176"/&gt;
+          &lt;code code="1497177098"/&gt;
           &lt;effectiveTime&gt;
             &lt;low value="2012"/&gt;
             &lt;high value="2012"/&gt;
@@ -249,8 +246,8 @@ The value for "[Act | Observation | Procedure] / statusCode" in a procedure acti
       &lt;/entryRelationship&gt;
       &lt;entryRelationship&gt;
         &lt;act&gt;
-          &lt;id root="MDHT" extension="1164614635"/&gt;
-          &lt;code code="1314698737"/&gt;
+          &lt;id root="MDHT" extension="1546190580"/&gt;
+          &lt;code code="419055698"/&gt;
           &lt;effectiveTime&gt;
             &lt;low value="2012"/&gt;
             &lt;high value="2012"/&gt;
@@ -259,8 +256,8 @@ The value for "[Act | Observation | Procedure] / statusCode" in a procedure acti
       &lt;/entryRelationship&gt;
       &lt;entryRelationship&gt;
         &lt;observation&gt;
-          &lt;id root="MDHT" extension="1109571528"/&gt;
-          &lt;code code="2096688014"/&gt;
+          &lt;id root="MDHT" extension="1516393696"/&gt;
+          &lt;code code="1569894397"/&gt;
           &lt;effectiveTime&gt;
             &lt;low value="2012"/&gt;
             &lt;high value="2012"/&gt;
@@ -274,8 +271,8 @@ The value for "[Act | Observation | Procedure] / statusCode" in a procedure acti
   &lt;/entryRelationship&gt;
   &lt;entryRelationship&gt;
     &lt;act&gt;
-      &lt;id root="MDHT" extension="1091766333"/&gt;
-      &lt;code code="1975256777"/&gt;
+      &lt;id root="MDHT" extension="814483539"/&gt;
+      &lt;code code="956502002"/&gt;
       &lt;effectiveTime&gt;
         &lt;low value="2012"/&gt;
         &lt;high value="2012"/&gt;

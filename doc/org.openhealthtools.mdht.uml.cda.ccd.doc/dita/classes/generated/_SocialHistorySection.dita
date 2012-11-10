@@ -67,13 +67,13 @@ The ASTM CCR includes 'administrative data (ADT) such as marital status, ethnici
 </tbody></tgroup></table></p></section>
 <codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
 <section xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd">
-  <id root="MDHT" extension="473858150"/>
+  <id root="MDHT" extension="702098738"/>
   <title>TEXT FOR TITLE</title>
   <text/>
   <entry>
     <observation>
-      <id root="MDHT" extension="906157366"/>
-      <code code="2059672324"/>
+      <id root="MDHT" extension="1749523162"/>
+      <code code="1289851433"/>
       <text>Text Value</text>
       <effectiveTime>
         <low value="2012"/>
@@ -81,8 +81,8 @@ The ASTM CCR includes 'administrative data (ADT) such as marital status, ethnici
       </effectiveTime>
       <entryRelationship>
         <observation>
-          <id root="MDHT" extension="1420291706"/>
-          <code code="1262789964"/>
+          <id root="MDHT" extension="1858222687"/>
+          <code code="168041688"/>
           <text>Text Value</text>
           <effectiveTime>
             <low value="2012"/>
@@ -92,8 +92,8 @@ The ASTM CCR includes 'administrative data (ADT) such as marital status, ethnici
       </entryRelationship>
       <entryRelationship>
         <observation>
-          <id root="MDHT" extension="1132407584"/>
-          <code code="1246604305"/>
+          <id root="MDHT" extension="1584649250"/>
+          <code code="2024143485"/>
           <text>Text Value</text>
           <effectiveTime>
             <low value="2012"/>

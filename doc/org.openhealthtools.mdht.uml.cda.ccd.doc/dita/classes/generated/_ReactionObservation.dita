@@ -54,16 +54,16 @@
 </tbody></tgroup></table></p></section>
 <codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
 <observation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd">
-  <id root="MDHT" extension="764140969"/>
-  <code code="769945741"/>
+  <id root="MDHT" extension="296238147"/>
+  <code code="718827038"/>
   <effectiveTime>
     <low value="2012"/>
     <high value="2012"/>
   </effectiveTime>
   <entryRelationship>
     <observation>
-      <id root="MDHT" extension="515870481"/>
-      <code code="853259536"/>
+      <id root="MDHT" extension="302915151"/>
+      <code code="477755499"/>
       <effectiveTime>
         <low value="2012"/>
         <high value="2012"/>

@@ -192,11 +192,11 @@
 <codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
 <ClinicalDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd">
   <typeId root="2.16.840.1.113883.1.3"/>
-  <id root="MDHT" extension="1459274710"/>
-  <code code="686491152"/>
+  <id root="MDHT" extension="36485350"/>
+  <code code="1936512750"/>
   <title>TEXT FOR TITLE</title>
   <effectiveTime/>
-  <confidentialityCode code="1939984420"/>
+  <confidentialityCode code="664599952"/>
   <languageCode code="Code forlanguageCode"/>
   <recordTarget>
     <patientRole/>
@@ -210,13 +210,13 @@
     <structuredBody>
       <component>
         <section>
-          <id root="MDHT" extension="26551856"/>
+          <id root="MDHT" extension="14296515"/>
           <title>TEXT FOR TITLE</title>
           <languageCode code="Code forlanguageCode"/>
           <entry>
             <act>
-              <id root="MDHT" extension="618574647"/>
-              <code code="543607525"/>
+              <id root="MDHT" extension="1478394589"/>
+              <code code="960060900"/>
               <effectiveTime>
                 <low value="2012"/>
                 <high value="2012"/>
@@ -231,12 +231,12 @@
       </component>
       <component>
         <section>
-          <id root="MDHT" extension="1614824322"/>
+          <id root="MDHT" extension="1784875747"/>
           <title>TEXT FOR TITLE</title>
           <languageCode code="Code forlanguageCode"/>
           <entry>
             <organizer>
-              <id root="MDHT" extension="229219818"/>
+              <id root="MDHT" extension="1182939350"/>
               <statusCode code="completed"/>
               <effectiveTime>
                 <low value="2012"/>
@@ -251,13 +251,13 @@
       </component>
       <component>
         <section>
-          <id root="MDHT" extension="1544530020"/>
+          <id root="MDHT" extension="1760695778"/>
           <title>TEXT FOR TITLE</title>
           <languageCode code="Code forlanguageCode"/>
           <entry>
             <observation>
-              <id root="MDHT" extension="912203909"/>
-              <code code="2069862313"/>
+              <id root="MDHT" extension="264081685"/>
+              <code code="1970723744"/>
               <effectiveTime>
                 <low value="2012"/>
                 <high value="2012"/>
@@ -275,13 +275,13 @@
       </component>
       <component>
         <section>
-          <id root="MDHT" extension="1380525251"/>
+          <id root="MDHT" extension="576381932"/>
           <title>TEXT FOR TITLE</title>
           <languageCode code="Code forlanguageCode"/>
           <entry>
             <act>
-              <id root="MDHT" extension="1751368472"/>
-              <code code="484435290"/>
+              <id root="MDHT" extension="1808072075"/>
+              <code code="1393624099"/>
               <effectiveTime>
                 <low value="2012"/>
                 <high value="2012"/>
@@ -296,13 +296,13 @@
       </component>
       <component>
         <section>
-          <id root="MDHT" extension="1222317430"/>
+          <id root="MDHT" extension="1400180757"/>
           <title>TEXT FOR TITLE</title>
           <languageCode code="Code forlanguageCode"/>
           <entry>
             <substanceAdministration classCode="SBADM">
-              <id root="MDHT" extension="372026771"/>
-              <effectiveTime value="20121108"/>
+              <id root="MDHT" extension="1703563226"/>
+              <effectiveTime value="20121109"/>
               <consumable/>
               <performer/>
               <entryRelationship>
@@ -321,8 +321,8 @@
           </entry>
           <entry>
             <supply classCode="SPLY">
-              <id root="MDHT" extension="424067441"/>
-              <effectiveTime value="20121108"/>
+              <id root="MDHT" extension="663462711"/>
+              <effectiveTime value="20121109"/>
               <entryRelationship>
                 <observation/>
               </entryRelationship>
@@ -335,12 +335,12 @@
       </component>
       <component>
         <section>
-          <id root="MDHT" extension="1090311248"/>
+          <id root="MDHT" extension="1552075074"/>
           <title>TEXT FOR TITLE</title>
           <languageCode code="Code forlanguageCode"/>
           <entry>
             <organizer>
-              <id root="MDHT" extension="601164056"/>
+              <id root="MDHT" extension="165968327"/>
               <statusCode code="completed"/>
               <effectiveTime>
                 <low value="2012"/>
@@ -356,19 +356,19 @@
       </component>
       <component>
         <section>
-          <id root="MDHT" extension="726261349"/>
+          <id root="MDHT" extension="841145686"/>
           <title>TEXT FOR TITLE</title>
           <languageCode code="Code forlanguageCode"/>
         </section>
       </component>
       <component>
         <section>
-          <id root="MDHT" extension="1234921813"/>
+          <id root="MDHT" extension="1132996160"/>
           <title>TEXT FOR TITLE</title>
           <languageCode code="Code forlanguageCode"/>
           <entry>
             <encounter>
-              <id root="MDHT" extension="1077428173"/>
+              <id root="MDHT" extension="1177945820"/>
               <effectiveTime>
                 <low value="2012"/>
                 <high value="2012"/>
@@ -387,13 +387,13 @@
       <component>
         <section>
           <realmCode/>
-          <id root="MDHT" extension="1721870351"/>
+          <id root="MDHT" extension="724156093"/>
           <title>TEXT FOR TITLE</title>
           <languageCode code="Code forlanguageCode"/>
           <entry>
             <act>
-              <id root="MDHT" extension="490466408"/>
-              <code code="784350019"/>
+              <id root="MDHT" extension="1297738659"/>
+              <code code="1542395559"/>
               <effectiveTime>
                 <low value="2012"/>
                 <high value="2012"/>
@@ -403,7 +403,7 @@
           </entry>
           <entry>
             <encounter>
-              <id root="MDHT" extension="669265806"/>
+              <id root="MDHT" extension="512915977"/>
               <effectiveTime>
                 <low value="2012"/>
                 <high value="2012"/>
@@ -412,8 +412,8 @@
           </entry>
           <entry>
             <observation>
-              <id root="MDHT" extension="1400601125"/>
-              <code code="1469201869"/>
+              <id root="MDHT" extension="1449457447"/>
+              <code code="1700842430"/>
               <effectiveTime>
                 <low value="2012"/>
                 <high value="2012"/>
@@ -423,7 +423,7 @@
           </entry>
           <entry>
             <procedure>
-              <id root="MDHT" extension="1113588991"/>
+              <id root="MDHT" extension="891865419"/>
               <effectiveTime>
                 <low value="2012"/>
                 <high value="2012"/>
@@ -433,28 +433,28 @@
           </entry>
           <entry>
             <substanceAdministration classCode="SBADM">
-              <id root="MDHT" extension="1716457104"/>
-              <effectiveTime value="20121108"/>
+              <id root="MDHT" extension="1784304032"/>
+              <effectiveTime value="20121109"/>
               <consumable/>
             </substanceAdministration>
           </entry>
           <entry>
             <supply classCode="SPLY">
-              <id root="MDHT" extension="870129915"/>
-              <effectiveTime value="20121108"/>
+              <id root="MDHT" extension="317432178"/>
+              <effectiveTime value="20121109"/>
             </supply>
           </entry>
         </section>
       </component>
       <component>
         <section>
-          <id root="MDHT" extension="1821603857"/>
+          <id root="MDHT" extension="1624913968"/>
           <title>TEXT FOR TITLE</title>
           <languageCode code="Code forlanguageCode"/>
           <entry>
             <substanceAdministration classCode="SBADM">
-              <id root="MDHT" extension="1833916821"/>
-              <effectiveTime value="20121108"/>
+              <id root="MDHT" extension="1480172881"/>
+              <effectiveTime value="20121109"/>
               <consumable/>
               <performer/>
               <entryRelationship>
@@ -473,8 +473,8 @@
           </entry>
           <entry>
             <supply classCode="SPLY">
-              <id root="MDHT" extension="1751960896"/>
-              <effectiveTime value="20121108"/>
+              <id root="MDHT" extension="2058872861"/>
+              <effectiveTime value="20121109"/>
               <entryRelationship>
                 <observation/>
               </entryRelationship>
@@ -487,12 +487,12 @@
       </component>
       <component>
         <section>
-          <id root="MDHT" extension="455063741"/>
+          <id root="MDHT" extension="103456923"/>
           <title>TEXT FOR TITLE</title>
           <languageCode code="Code forlanguageCode"/>
           <entry>
             <organizer>
-              <id root="MDHT" extension="1358486935"/>
+              <id root="MDHT" extension="1302029164"/>
               <statusCode code="completed"/>
               <effectiveTime>
                 <low value="2012"/>
@@ -504,13 +504,13 @@
       </component>
       <component>
         <section>
-          <id root="MDHT" extension="1568342686"/>
+          <id root="MDHT" extension="2089435845"/>
           <title>TEXT FOR TITLE</title>
           <languageCode code="Code forlanguageCode"/>
           <entry>
             <supply classCode="SPLY">
-              <id root="MDHT" extension="1842589340"/>
-              <effectiveTime value="20121108"/>
+              <id root="MDHT" extension="2125716089"/>
+              <effectiveTime value="20121109"/>
               <entryRelationship>
                 <observation/>
               </entryRelationship>
@@ -521,8 +521,8 @@
           </entry>
           <entry>
             <substanceAdministration classCode="SBADM">
-              <id root="MDHT" extension="622308082"/>
-              <effectiveTime value="20121108"/>
+              <id root="MDHT" extension="16929794"/>
+              <effectiveTime value="20121109"/>
               <consumable/>
               <performer/>
               <entryRelationship>
@@ -543,20 +543,20 @@
       </component>
       <component>
         <section>
-          <id root="MDHT" extension="723950714"/>
+          <id root="MDHT" extension="1530250151"/>
           <title>TEXT FOR TITLE</title>
           <languageCode code="Code forlanguageCode"/>
         </section>
       </component>
       <component>
         <section>
-          <id root="MDHT" extension="289298032"/>
+          <id root="MDHT" extension="1611868265"/>
           <title>TEXT FOR TITLE</title>
           <languageCode code="Code forlanguageCode"/>
           <entry>
             <observation>
-              <id root="MDHT" extension="200455916"/>
-              <code code="1110201400"/>
+              <id root="MDHT" extension="1536527000"/>
+              <code code="91699901"/>
               <effectiveTime>
                 <low value="2012"/>
                 <high value="2012"/>
@@ -573,13 +573,13 @@
       </component>
       <component>
         <section>
-          <id root="MDHT" extension="855834619"/>
+          <id root="MDHT" extension="679679960"/>
           <title>TEXT FOR TITLE</title>
           <languageCode code="Code forlanguageCode"/>
           <entry>
             <act>
-              <id root="MDHT" extension="1710587209"/>
-              <code code="374395619"/>
+              <id root="MDHT" extension="34087258"/>
+              <code code="1293788567"/>
               <effectiveTime>
                 <low value="2012"/>
                 <high value="2012"/>
@@ -594,13 +594,13 @@
       </component>
       <component>
         <section>
-          <id root="MDHT" extension="1337813688"/>
+          <id root="MDHT" extension="189547789"/>
           <title>TEXT FOR TITLE</title>
           <languageCode code="Code forlanguageCode"/>
           <entry>
             <act>
-              <id root="MDHT" extension="1352263610"/>
-              <code code="1359889369"/>
+              <id root="MDHT" extension="2064804930"/>
+              <code code="342763587"/>
               <effectiveTime>
                 <low value="2012"/>
                 <high value="2012"/>

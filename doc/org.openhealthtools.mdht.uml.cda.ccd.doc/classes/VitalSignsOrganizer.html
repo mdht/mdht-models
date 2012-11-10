@@ -20,7 +20,7 @@
 </head>
 <body id="classId">
 <div>
-	<p><b>Development Only.</b> The Normative content for these specifications
+	<p><b>Non-Normative Content</b> The Normative content for these specifications
 	may be found on the HL7, IHE, and HITSP web sites.</p>
 </div>
 
@@ -36,58 +36,17 @@
 
 
 
-
 <ol class="ol">
-<li class="li"><strong class="ph b">SHALL</strong> conform to <a class="xref" href="ResultOrganizer.html" title="[Organizer: templateId 2.16.840.1.113883.10.20.1.32]">Result Organizer</a> template (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.1.32</tt>)</li>
-
-<li class="li">Contains exactly one [1..1] <tt class="ph tt"><strong class="ph b">@classCode</strong></tt> with data type x_ActClassDocumentEntryOrganizer
-</li>
-
-<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@moodCode</strong>="EVN" </tt><em class="ph i">Event</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF-394)
-</li>
-
-<li class="li"><strong class="ph b">SHALL</strong> contain at least one [1..*] <tt class="ph tt"><strong class="ph b">id</strong></tt> (CONF-395)
-</li>
-
-<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt> (CONF-397)
-</li>
-
-<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">statusCode</strong></tt> (CONF-396)
-</li>
-
-<li class="li"><strong class="ph b">SHALL</strong> contain at least one [1..*] <tt class="ph tt"><strong class="ph b">component</strong></tt> (CONF-405)
-<ol class="ol" type="a">
-<li class="li">Contains exactly one [1..1] <a class="xref" href="ResultObservation.html" title="[Observation: templateId 2.16.840.1.113883.10.20.1.31]">Result Observation</a> (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.1.31</tt>)</li>
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] templateId (  ) such that it <ol class="ol" type="a"><li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <strong class="ph b">@root</strong>="2.16.840.1.113883.10.20.1.35"</li>
 </ol>
 </li>
 
-<li class="li"><strong class="ph b">SHOULD</strong> contain at least one [1..*] <tt class="ph tt"><strong class="ph b">specimen</strong></tt> (CONF-399)
-<ol class="ol" type="a">
-<li class="li">Contains exactly one [1..1] CDA Specimen</li>
-</ol>
-<ul class="ul"><li class="li"><div class="p"><p class="lines"><em class="ph i">Should be included if the specimen isn't inherent in code value.</em></p>
-</div>
-</li>
-</ul>
-</li>
-
-<li class="li">The value for 'code' in a result organizer <strong class="ph b">SHOULD</strong> be selected from LOINC (codeSystem 2.16.840.1.113883.6.1) or SNOMED CT (codeSystem 2.16.840.1.113883.6.96), and <strong class="ph b">MAY</strong> be selected from CPT-4 (codeSystem 2.16.840.1.113883.6.12) or ValueSet 2.16.840.1.113883.1.11.20.16 ResultTypeCode STATIC. (CONF-398)</li>
-
-<li class="li">The specimen element <strong class="ph b">SHALL NOT</strong> conflict with the specimen inherent in code (CONF-400)</li>
-
-<li class="li">specimen / specimenRole / id <strong class="ph b">SHOULD</strong> be set to equal a Procedure / specimen / specimenRole / id to indicate that the Results and the Procedure are referring to the same specimen. (CONF-401)</li>
-
-<li class="li"><strong class="ph b">SHALL</strong> satisfy: Contains one or more component (CONF-402)</li>
-
-<li class="li">The target of one or more result organizer component relationships <strong class="ph b">MAY</strong> be a procedure, to indicate the means or technique by which a result is obtained, particularly if the means or technique isn't inherent in code or if there is a need to further specialize the code value. (CONF-403)</li>
-
-<li class="li">A result organizer component / procedure <strong class="ph b">MAY</strong> be a reference to a procedure described in the Procedure section. (CONF-404)</li>
-
-<li class="li"><strong class="ph b">SHALL</strong> satisfy: Contains one or more sources of information. (CONF-406)</li>
+<li class="li"><strong class="ph b">SHALL</strong> conform to <a class="xref" href="ResultOrganizer.html" title="[Organizer: templateId 2.16.840.1.113883.10.20.1.32]">Result Organizer</a> template (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.1.32</tt>) (CONF-386)</li>
 
 <li class="li"><strong class="ph b">SHALL</strong> satisfy: Contains one or more sources of information. (CONF-387)</li>
 
 </ol>
+
 
 <p class="p"> </p>
 
@@ -97,8 +56,8 @@
 
 <pre class="pre codeblock">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
 &lt;organizer xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd"&gt;
-  &lt;id root="MDHT" extension="538369650"/&gt;
-  &lt;code code="1016345791"/&gt;
+  &lt;id root="MDHT" extension="1359940616"/&gt;
+  &lt;code code="1394369437"/&gt;
   &lt;statusCode code="completed"/&gt;
   &lt;effectiveTime&gt;
     &lt;low value="2012"/&gt;

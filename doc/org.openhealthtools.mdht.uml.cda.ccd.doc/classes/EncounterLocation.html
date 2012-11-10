@@ -20,7 +20,7 @@
 </head>
 <body id="classId">
 <div>
-	<p><b>Development Only.</b> The Normative content for these specifications
+	<p><b>Non-Normative Content</b> The Normative content for these specifications
 	may be found on the HL7, IHE, and HITSP web sites.</p>
 </div>
 
@@ -36,8 +36,11 @@
 
 
 
-
 <ol class="ol">
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] templateId (  ) such that it <ol class="ol" type="a"><li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <strong class="ph b">@root</strong>="2.16.840.1.113883.10.20.1.45"</li>
+</ol>
+</li>
+
 <li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@typeCode</strong>="LOC" </tt> (CONF-473)
 <ol class="ol" type="a">
 <li class="li"><strong class="ph b">SHALL</strong> satisfy: contains exactly one participant / participantRole (CONF-474)<ol class="ol" type="i">
@@ -59,25 +62,8 @@
 </ol>
 </li>
 
-<li class="li">Contains exactly one [1..1] <tt class="ph tt"><strong class="ph b">participantRole</strong></tt>, where its type is <a class="xref" href="generated/../ParticipantRole.html">Participant Role</a>
-<ol class="ol" type="a">
-<li class="li">Contains exactly one [1..1] <a class="xref" href="generated/../ParticipantRole.html">Participant Role</a></li>
 </ol>
-</li>
 
-<li class="li"><strong class="ph b">SHALL</strong> satisfy: contains exactly one participant / participantRole (CONF-474)</li>
-
-<li class="li">The value for participant/participantRole/@classCode in a location participation <strong class="ph b">SHALL</strong> be "SDLOC" "Service delivery location" 2.16.840.1.113883.5.110 RoleClass. (CONF-475)</li>
-
-<li class="li">Participant / participantRole in a location participation <strong class="ph b">MAY</strong> contain exactly one participant / participantRole / code. (CONF-476)</li>
-
-<li class="li">The value for participant/participantRole/code in a location participation <strong class="ph b">SHOULD</strong> be selected from ValueSet 2.16.840.1.113883.1.11.17660 ServiceDeliveryLocationRoleType 2.16.840.1.113883.5.111 RoleCode DYNAMIC. (CONF-477)</li>
-
-<li class="li">Participant / participantRole in a location participation <strong class="ph b">MAY</strong> contain exactly one participant / participantRole / playingEntity (CONF-478)</li>
-
-<li class="li">The value for participant/participantRole/playingEntity/@classCode in a location participation <strong class="ph b">SHALL</strong> be "PLC" "Place" 2.16.840.1.113883.5.41 EntityClass. (CONF-479)</li>
-
-</ol>
 
 <p class="p"> </p>
 

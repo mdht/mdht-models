@@ -20,7 +20,7 @@
 </head>
 <body id="classId">
 <div>
-	<p><b>Development Only.</b> The Normative content for these specifications
+	<p><b>Non-Normative Content</b> The Normative content for these specifications
 	may be found on the HL7, IHE, and HITSP web sites.</p>
 </div>
 
@@ -36,23 +36,21 @@
 
 
 
-
 <ol class="ol">
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] templateId (  ) such that it <ol class="ol" type="a"><li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <strong class="ph b">@root</strong>="2.16.840.1.113883.10.20.1.48"</li>
+</ol>
+</li>
+
 <li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@typeCode</strong>="SBJ" </tt> (CONF-181)
 </li>
 
 <li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">awarenessCode</strong></tt> (CONF-182)
 </li>
 
-<li class="li">Contains exactly one [1..1] <tt class="ph tt"><strong class="ph b">participantRole</strong></tt>, where its type is <a class="xref" href="generated/../ParticipantRole.html">Participant Role</a>
-<ol class="ol" type="a">
-<li class="li">Contains exactly one [1..1] <a class="xref" href="generated/../ParticipantRole.html">Participant Role</a></li>
-</ol>
-</li>
-
 <li class="li">Patient awareness <strong class="ph b">SHALL</strong> contain exactly one participant / participantRole / id, which <strong class="ph b">SHALL</strong> have exactly one value, which <strong class="ph b">SHALL</strong> also be present in ClinicalDocument / recordTarget / patientRole / id. (CONF-183)</li>
 
 </ol>
+
 
 <p class="p"> </p>
 
@@ -66,7 +64,7 @@
     &lt;low value="2012"/&gt;
     &lt;high value="2012"/&gt;
   &lt;/time&gt;
-  &lt;awarenessCode code="2055949795"/&gt;
+  &lt;awarenessCode code="407783148"/&gt;
   &lt;participantRole/&gt;
 &lt;/participant2&gt;</pre>
 

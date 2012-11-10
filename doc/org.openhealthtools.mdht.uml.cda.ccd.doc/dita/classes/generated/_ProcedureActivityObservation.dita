@@ -114,8 +114,8 @@ The value for "[Act | Observation | Procedure] / statusCode" in a procedure acti
 </tbody></tgroup></table></p></section>
 <codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
 <observation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd">
-  <id root="MDHT" extension="1624610842"/>
-  <code code="464163822"/>
+  <id root="MDHT" extension="642495553"/>
+  <code code="1906134244"/>
   <statusCode code="completed"/>
   <effectiveTime>
     <low value="2012"/>
@@ -127,8 +127,8 @@ The value for "[Act | Observation | Procedure] / statusCode" in a procedure acti
   </participant>
   <entryRelationship>
     <observation>
-      <id root="MDHT" extension="621335188"/>
-      <code code="1412383657"/>
+      <id root="MDHT" extension="385804498"/>
+      <code code="1246865426"/>
       <statusCode code="completed"/>
       <effectiveTime>
         <low value="2012"/>
@@ -136,8 +136,8 @@ The value for "[Act | Observation | Procedure] / statusCode" in a procedure acti
       </effectiveTime>
       <entryRelationship>
         <observation>
-          <id root="MDHT" extension="1594737870"/>
-          <code code="246070003"/>
+          <id root="MDHT" extension="765987569"/>
+          <code code="1962112745"/>
           <statusCode code="completed"/>
           <effectiveTime>
             <low value="2012"/>
@@ -147,8 +147,8 @@ The value for "[Act | Observation | Procedure] / statusCode" in a procedure acti
       </entryRelationship>
       <entryRelationship>
         <observation>
-          <id root="MDHT" extension="614018381"/>
-          <code code="2047200796"/>
+          <id root="MDHT" extension="558396411"/>
+          <code code="197672076"/>
           <statusCode code="completed"/>
           <effectiveTime>
             <low value="2012"/>
@@ -158,8 +158,8 @@ The value for "[Act | Observation | Procedure] / statusCode" in a procedure acti
       </entryRelationship>
       <entryRelationship>
         <observation>
-          <id root="MDHT" extension="1854893236"/>
-          <code code="670750299"/>
+          <id root="MDHT" extension="1586774109"/>
+          <code code="2005417729"/>
           <statusCode code="completed"/>
           <effectiveTime>
             <low value="2012"/>
@@ -171,8 +171,8 @@ The value for "[Act | Observation | Procedure] / statusCode" in a procedure acti
   </entryRelationship>
   <entryRelationship>
     <observation>
-      <id root="MDHT" extension="138349960"/>
-      <code code="1517505364"/>
+      <id root="MDHT" extension="1752318472"/>
+      <code code="1712949878"/>
       <statusCode code="completed"/>
       <effectiveTime>
         <low value="2012"/>
@@ -182,16 +182,16 @@ The value for "[Act | Observation | Procedure] / statusCode" in a procedure acti
   </entryRelationship>
   <entryRelationship>
     <substanceAdministration>
-      <id root="MDHT" extension="1921970287"/>
-      <code code="1606285655"/>
+      <id root="MDHT" extension="1216010547"/>
+      <code code="566758392"/>
       <statusCode code="completed"/>
-      <effectiveTime value="20121108"/>
+      <effectiveTime value="20121109"/>
       <consumable/>
       <performer/>
       <entryRelationship>
         <observation>
-          <id root="MDHT" extension="29124479"/>
-          <code code="1438773657"/>
+          <id root="MDHT" extension="1277646122"/>
+          <code code="671721199"/>
           <statusCode code="completed"/>
           <effectiveTime>
             <low value="2012"/>
@@ -201,8 +201,8 @@ The value for "[Act | Observation | Procedure] / statusCode" in a procedure acti
       </entryRelationship>
       <entryRelationship>
         <observation>
-          <id root="MDHT" extension="206656831"/>
-          <code code="415443801"/>
+          <id root="MDHT" extension="270033080"/>
+          <code code="829553954"/>
           <statusCode code="completed"/>
           <effectiveTime>
             <low value="2012"/>
@@ -212,8 +212,8 @@ The value for "[Act | Observation | Procedure] / statusCode" in a procedure acti
       </entryRelationship>
       <entryRelationship>
         <act>
-          <id root="MDHT" extension="2092895400"/>
-          <code code="1469564322"/>
+          <id root="MDHT" extension="2014699478"/>
+          <code code="2081166148"/>
           <statusCode code="completed"/>
           <effectiveTime>
             <low value="2012"/>
@@ -223,8 +223,8 @@ The value for "[Act | Observation | Procedure] / statusCode" in a procedure acti
       </entryRelationship>
       <entryRelationship>
         <observation>
-          <id root="MDHT" extension="1938842074"/>
-          <code code="349291431"/>
+          <id root="MDHT" extension="1863267110"/>
+          <code code="1577186712"/>
           <statusCode code="completed"/>
           <effectiveTime>
             <low value="2012"/>
@@ -239,8 +239,8 @@ The value for "[Act | Observation | Procedure] / statusCode" in a procedure acti
   </entryRelationship>
   <entryRelationship>
     <act>
-      <id root="MDHT" extension="146609167"/>
-      <code code="407464983"/>
+      <id root="MDHT" extension="404454942"/>
+      <code code="145291785"/>
       <statusCode code="completed"/>
       <effectiveTime>
         <low value="2012"/>
@@ -250,8 +250,8 @@ The value for "[Act | Observation | Procedure] / statusCode" in a procedure acti
   </entryRelationship>
   <entryRelationship>
     <act>
-      <id root="MDHT" extension="1176485388"/>
-      <code code="1909562913"/>
+      <id root="MDHT" extension="2142473517"/>
+      <code code="1652573432"/>
       <statusCode code="completed"/>
       <effectiveTime>
         <low value="2012"/>
@@ -259,8 +259,8 @@ The value for "[Act | Observation | Procedure] / statusCode" in a procedure acti
       </effectiveTime>
       <entryRelationship>
         <observation>
-          <id root="MDHT" extension="1954648229"/>
-          <code code="169834453"/>
+          <id root="MDHT" extension="1535834882"/>
+          <code code="1380417513"/>
           <statusCode code="completed"/>
           <effectiveTime>
             <low value="2012"/>

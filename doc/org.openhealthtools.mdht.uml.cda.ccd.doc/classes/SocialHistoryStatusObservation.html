@@ -20,7 +20,7 @@
 </head>
 <body id="classId">
 <div>
-	<p><b>Development Only.</b> The Normative content for these specifications
+	<p><b>Non-Normative Content</b> The Normative content for these specifications
 	may be found on the HL7, IHE, and HITSP web sites.</p>
 </div>
 
@@ -36,70 +36,54 @@
 
 
 
-
 <ol class="ol">
-<li class="li"><strong class="ph b">SHALL</strong> conform to <a class="xref" href="StatusObservation.html" title="[Observation: templateId 2.16.840.1.113883.10.20.1.57]">Status Observation</a> template (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.1.57</tt>)</li>
-
-<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@classCode</strong>="OBS" </tt><em class="ph i">Observation</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.5.6 HL7ActClass</tt>) (CONF-510)
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] templateId (  ) such that it <ol class="ol" type="a"><li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <strong class="ph b">@root</strong>="2.16.840.1.113883.10.20.1.56"</li>
+</ol>
 </li>
 
-<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@moodCode</strong>="EVN" </tt><em class="ph i">Event</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF-511)
-</li>
-
-<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt><tt class="ph tt"><strong class="ph b">/@code</strong>="33999-4" </tt><em class="ph i">Status</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF-512, CONF-513)
-</li>
-
-<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">statusCode</strong></tt><tt class="ph tt"><strong class="ph b">/@code</strong>="completed" </tt> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.5.14 ActStatus</tt>) (CONF-514, CONF-515)
-</li>
+<li class="li"><strong class="ph b">SHALL</strong> conform to <a class="xref" href="StatusObservation.html" title="[Observation: templateId 2.16.840.1.113883.10.20.1.57]">Status Observation</a> template (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.1.57</tt>) (CONF-247)</li>
 
 <li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">value</strong></tt>, where the @code <strong class="ph b">SHALL</strong> be selected from (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.1.11.20.17 SocialHistoryStatusCode</tt>) (CONF-248)
 </li>
 
-<li class="li">Target of an entryRelationship whose value for "entryRelationship / @typeCode" <strong class="ph b">SHALL</strong> be "REFR" 2.16.840.1.113883.5.1002 ActRelationshipType STATIC. (CONF-509)</li>
-
-<li class="li"><strong class="ph b">SHALL NOT</strong> contain any additional Observation attributes. (CONF-517)</li>
-
-<li class="li"><strong class="ph b">SHALL NOT</strong> contain any Observation participants. (CONF-518)</li>
-
-<li class="li"><strong class="ph b">SHALL NOT</strong> be the source of any Observation relationships. (CONF-519)</li>
-
 </ol>
+
 
 <p class="p"> </p>
 
 <div class="section"><div class="p">
-<div class="tablenoborder"><table cellpadding="4" cellspacing="0" summary="" class="table" width="100%" frame="border" border="1" rules="all"> <thead class="thead" align="left"> <tr class="row"><th class="entry" colspan="8" align="left" valign="top" id="d30277e170">ccd::SocialHistoryStatusObservation</th>
+<div class="tablenoborder"><table cellpadding="4" cellspacing="0" summary="" class="table" width="100%" frame="border" border="1" rules="all"> <thead class="thead" align="left"> <tr class="row"><th class="entry" colspan="8" align="left" valign="top" id="d29045e97">ccd::SocialHistoryStatusObservation</th>
   </tr>
-  <tr class="row"><th class="entry" colspan="8" align="left" valign="top" id="d30277e175">cda::observation[cda:templateId/@root = ]/</th>
+  <tr class="row"><th class="entry" colspan="8" align="left" valign="top" id="d29045e102">cda::observation[cda:templateId/@root = ]/</th>
   </tr>
-  <tr class="row"><th class="entry" align="left" valign="top" id="d30277e180">Name</th>
-<th class="entry" align="left" valign="top" id="d30277e182">XPath</th>
-<th class="entry" align="left" valign="top" id="d30277e184">Cardinality</th>
-<th class="entry" align="left" valign="top" id="d30277e186">Severity</th>
-<th class="entry" align="left" valign="top" id="d30277e188">Nullable</th>
-<th class="entry" align="left" valign="top" id="d30277e190">Data Type</th>
-<th class="entry" align="left" valign="top" id="d30277e192">Conformance</th>
-<th class="entry" align="left" valign="top" id="d30277e194">Value(s)</th>
+  <tr class="row"><th class="entry" align="left" valign="top" id="d29045e107">Name</th>
+<th class="entry" align="left" valign="top" id="d29045e109">XPath</th>
+<th class="entry" align="left" valign="top" id="d29045e111">Cardinality</th>
+<th class="entry" align="left" valign="top" id="d29045e113">Severity</th>
+<th class="entry" align="left" valign="top" id="d29045e115">Nullable</th>
+<th class="entry" align="left" valign="top" id="d29045e117">Data Type</th>
+<th class="entry" align="left" valign="top" id="d29045e119">Conformance</th>
+<th class="entry" align="left" valign="top" id="d29045e121">Value(s)</th>
 </tr>
 </thead>
-<tbody class="tbody"><tr class="row"><td class="entry" align="left" valign="top" headers="d30277e170 d30277e175 d30277e180 ">value</td>
-<td class="entry" align="left" valign="top" headers="d30277e170 d30277e175 d30277e182 ">value</td>
-<td class="entry" align="left" valign="top" headers="d30277e170 d30277e175 d30277e184 ">1..1</td>
-<td class="entry" align="left" valign="top" headers="d30277e170 d30277e175 d30277e186 ">SHALL</td>
-<td class="entry" align="left" valign="top" headers="d30277e170 d30277e175 d30277e188 ">YES</td>
-<td class="entry" align="left" valign="top" headers="d30277e170 d30277e175 d30277e190 ">CE</td>
-<td class="entry" align="left" valign="top" headers="d30277e170 d30277e175 d30277e192 ">CONF-248</td>
-<td class="entry" align="left" valign="top" headers="d30277e170 d30277e175 d30277e194 ">SocialHistoryStatusCode 2.16.840.1.113883.1.11.20.17 </td>
+<tbody class="tbody"><tr class="row"><td class="entry" align="left" valign="top" headers="d29045e97 d29045e102 d29045e107 ">value</td>
+<td class="entry" align="left" valign="top" headers="d29045e97 d29045e102 d29045e109 ">value</td>
+<td class="entry" align="left" valign="top" headers="d29045e97 d29045e102 d29045e111 ">1..1</td>
+<td class="entry" align="left" valign="top" headers="d29045e97 d29045e102 d29045e113 ">SHALL</td>
+<td class="entry" align="left" valign="top" headers="d29045e97 d29045e102 d29045e115 ">YES</td>
+<td class="entry" align="left" valign="top" headers="d29045e97 d29045e102 d29045e117 ">CE</td>
+<td class="entry" align="left" valign="top" headers="d29045e97 d29045e102 d29045e119 ">CONF-248</td>
+<td class="entry" align="left" valign="top" headers="d29045e97 d29045e102 d29045e121 ">SocialHistoryStatusCode 2.16.840.1.113883.1.11.20.17 </td>
 </tr>
  
-<tr class="row"><td class="entry" align="left" valign="top" headers="d30277e170 d30277e175 d30277e180 ">socialHistoryStatusObservation</td>
-<td class="entry" align="left" valign="top" headers="d30277e170 d30277e175 d30277e182 ">socialHistoryStatusObservation</td>
-<td class="entry" align="left" valign="top" headers="d30277e170 d30277e175 d30277e184 ">0..1</td>
-<td class="entry" align="left" valign="top" headers="d30277e170 d30277e175 d30277e186 ">MAY</td>
-<td class="entry" align="left" valign="top" headers="d30277e170 d30277e175 d30277e188 ">YES</td>
-<td class="entry" align="left" valign="top" headers="d30277e170 d30277e175 d30277e190 ">SocialHistoryStatusObservation</td>
-<td class="entry" align="left" valign="top" headers="d30277e170 d30277e175 d30277e192 ">CONF-246</td>
-<td class="entry" align="left" valign="top" headers="d30277e170 d30277e175 d30277e194 "> </td>
+<tr class="row"><td class="entry" align="left" valign="top" headers="d29045e97 d29045e102 d29045e107 ">socialHistoryStatusObservation</td>
+<td class="entry" align="left" valign="top" headers="d29045e97 d29045e102 d29045e109 ">socialHistoryStatusObservation</td>
+<td class="entry" align="left" valign="top" headers="d29045e97 d29045e102 d29045e111 ">0..1</td>
+<td class="entry" align="left" valign="top" headers="d29045e97 d29045e102 d29045e113 ">MAY</td>
+<td class="entry" align="left" valign="top" headers="d29045e97 d29045e102 d29045e115 ">YES</td>
+<td class="entry" align="left" valign="top" headers="d29045e97 d29045e102 d29045e117 ">SocialHistoryStatusObservation</td>
+<td class="entry" align="left" valign="top" headers="d29045e97 d29045e102 d29045e119 ">CONF-246</td>
+<td class="entry" align="left" valign="top" headers="d29045e97 d29045e102 d29045e121 "> </td>
 </tr>
  
 </tbody>
@@ -118,13 +102,13 @@
 
 <pre class="pre codeblock">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
 &lt;observation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd"&gt;
-  &lt;id root="MDHT" extension="779534714"/&gt;
-  &lt;code code="1621477099"/&gt;
+  &lt;id root="MDHT" extension="1694979474"/&gt;
+  &lt;code code="2012703967"/&gt;
   &lt;effectiveTime&gt;
     &lt;low value="2012"/&gt;
     &lt;high value="2012"/&gt;
   &lt;/effectiveTime&gt;
-  &lt;value xsi:type="CE" code="1694167638"/&gt;
+  &lt;value xsi:type="CE" code="799413072"/&gt;
 &lt;/observation&gt;</pre>
 
 </div>

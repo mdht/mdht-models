@@ -110,8 +110,8 @@ The value for "[Act | Observation | Procedure] / statusCode" in a procedure acti
 </tbody></tgroup></table></p></section>
 <codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
 <act xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd">
-  <id root="MDHT" extension="703989219"/>
-  <code code="660928613"/>
+  <id root="MDHT" extension="183340392"/>
+  <code code="369768946"/>
   <effectiveTime>
     <low value="2012"/>
     <high value="2012"/>
@@ -122,16 +122,16 @@ The value for "[Act | Observation | Procedure] / statusCode" in a procedure acti
   </participant>
   <entryRelationship>
     <act>
-      <id root="MDHT" extension="1617067314"/>
-      <code code="1725133380"/>
+      <id root="MDHT" extension="1614671726"/>
+      <code code="1633865166"/>
       <effectiveTime>
         <low value="2012"/>
         <high value="2012"/>
       </effectiveTime>
       <entryRelationship>
         <observation>
-          <id root="MDHT" extension="323871582"/>
-          <code code="1672122934"/>
+          <id root="MDHT" extension="1526058530"/>
+          <code code="728090760"/>
           <effectiveTime>
             <low value="2012"/>
             <high value="2012"/>
@@ -142,16 +142,16 @@ The value for "[Act | Observation | Procedure] / statusCode" in a procedure acti
   </entryRelationship>
   <entryRelationship>
     <observation>
-      <id root="MDHT" extension="10066393"/>
-      <code code="1221984521"/>
+      <id root="MDHT" extension="678742612"/>
+      <code code="463569398"/>
       <effectiveTime>
         <low value="2012"/>
         <high value="2012"/>
       </effectiveTime>
       <entryRelationship>
         <observation>
-          <id root="MDHT" extension="1552206215"/>
-          <code code="191136640"/>
+          <id root="MDHT" extension="1728462166"/>
+          <code code="1620498580"/>
           <effectiveTime>
             <low value="2012"/>
             <high value="2012"/>
@@ -160,8 +160,8 @@ The value for "[Act | Observation | Procedure] / statusCode" in a procedure acti
       </entryRelationship>
       <entryRelationship>
         <observation>
-          <id root="MDHT" extension="1930307114"/>
-          <code code="216105106"/>
+          <id root="MDHT" extension="610594964"/>
+          <code code="1928172834"/>
           <effectiveTime>
             <low value="2012"/>
             <high value="2012"/>
@@ -170,8 +170,8 @@ The value for "[Act | Observation | Procedure] / statusCode" in a procedure acti
       </entryRelationship>
       <entryRelationship>
         <observation>
-          <id root="MDHT" extension="27619823"/>
-          <code code="420169819"/>
+          <id root="MDHT" extension="1659209532"/>
+          <code code="2108448387"/>
           <effectiveTime>
             <low value="2012"/>
             <high value="2012"/>
@@ -182,8 +182,8 @@ The value for "[Act | Observation | Procedure] / statusCode" in a procedure acti
   </entryRelationship>
   <entryRelationship>
     <observation>
-      <id root="MDHT" extension="135543796"/>
-      <code code="1028113092"/>
+      <id root="MDHT" extension="161025479"/>
+      <code code="1543047187"/>
       <effectiveTime>
         <low value="2012"/>
         <high value="2012"/>
@@ -192,15 +192,15 @@ The value for "[Act | Observation | Procedure] / statusCode" in a procedure acti
   </entryRelationship>
   <entryRelationship>
     <substanceAdministration>
-      <id root="MDHT" extension="1474543897"/>
-      <code code="1069607371"/>
-      <effectiveTime value="20121108"/>
+      <id root="MDHT" extension="2069506746"/>
+      <code code="1433948487"/>
+      <effectiveTime value="20121109"/>
       <consumable/>
       <performer/>
       <entryRelationship>
         <observation>
-          <id root="MDHT" extension="767040455"/>
-          <code code="1605497826"/>
+          <id root="MDHT" extension="1766452140"/>
+          <code code="1378797579"/>
           <effectiveTime>
             <low value="2012"/>
             <high value="2012"/>
@@ -209,8 +209,8 @@ The value for "[Act | Observation | Procedure] / statusCode" in a procedure acti
       </entryRelationship>
       <entryRelationship>
         <observation>
-          <id root="MDHT" extension="1321231555"/>
-          <code code="331313309"/>
+          <id root="MDHT" extension="1917566196"/>
+          <code code="2051572141"/>
           <effectiveTime>
             <low value="2012"/>
             <high value="2012"/>
@@ -219,8 +219,8 @@ The value for "[Act | Observation | Procedure] / statusCode" in a procedure acti
       </entryRelationship>
       <entryRelationship>
         <act>
-          <id root="MDHT" extension="410742716"/>
-          <code code="1733297435"/>
+          <id root="MDHT" extension="46441994"/>
+          <code code="648506149"/>
           <effectiveTime>
             <low value="2012"/>
             <high value="2012"/>
@@ -229,8 +229,8 @@ The value for "[Act | Observation | Procedure] / statusCode" in a procedure acti
       </entryRelationship>
       <entryRelationship>
         <observation>
-          <id root="MDHT" extension="117010216"/>
-          <code code="2027100134"/>
+          <id root="MDHT" extension="851368986"/>
+          <code code="1347487235"/>
           <effectiveTime>
             <low value="2012"/>
             <high value="2012"/>
@@ -244,8 +244,8 @@ The value for "[Act | Observation | Procedure] / statusCode" in a procedure acti
   </entryRelationship>
   <entryRelationship>
     <act>
-      <id root="MDHT" extension="87209896"/>
-      <code code="239934128"/>
+      <id root="MDHT" extension="211193910"/>
+      <code code="194037825"/>
       <effectiveTime>
         <low value="2012"/>
         <high value="2012"/>

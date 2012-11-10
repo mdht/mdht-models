@@ -20,7 +20,7 @@
 </head>
 <body id="classId">
 <div>
-	<p><b>Development Only.</b> The Normative content for these specifications
+	<p><b>Non-Normative Content</b> The Normative content for these specifications
 	may be found on the HL7, IHE, and HITSP web sites.</p>
 </div>
 
@@ -36,34 +36,18 @@
 
 
 
-
 <ol class="ol">
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] templateId (  ) such that it <ol class="ol" type="a"><li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <strong class="ph b">@root</strong>="2.16.840.1.113883.10.20.1.39"</li>
+</ol>
+</li>
+
 <li class="li"><strong class="ph b">SHALL</strong> conform to <a class="xref" href="StatusObservation.html" title="[Observation: templateId 2.16.840.1.113883.10.20.1.57]">Status Observation</a> template (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.1.57</tt>)</li>
-
-<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@classCode</strong>="OBS" </tt><em class="ph i">Observation</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.5.6 HL7ActClass</tt>) (CONF-510)
-</li>
-
-<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@moodCode</strong>="EVN" </tt><em class="ph i">Event</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF-511)
-</li>
-
-<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt><tt class="ph tt"><strong class="ph b">/@code</strong>="33999-4" </tt><em class="ph i">Status</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF-512, CONF-513)
-</li>
-
-<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">statusCode</strong></tt><tt class="ph tt"><strong class="ph b">/@code</strong>="completed" </tt> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.5.14 ActStatus</tt>) (CONF-514, CONF-515)
-</li>
 
 <li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">value</strong></tt>, where the @code <strong class="ph b">SHALL</strong> be selected from ValueSet<tt class="ph tt"> AlertStatusCode 2.16.840.1.113883.1.11.20.3</tt><strong class="ph b"> STATIC</strong> 20061017 (CONF-272)
 </li>
 
-<li class="li">Target of an entryRelationship whose value for "entryRelationship / @typeCode" <strong class="ph b">SHALL</strong> be "REFR" 2.16.840.1.113883.5.1002 ActRelationshipType STATIC. (CONF-509)</li>
-
-<li class="li"><strong class="ph b">SHALL NOT</strong> contain any additional Observation attributes. (CONF-517)</li>
-
-<li class="li"><strong class="ph b">SHALL NOT</strong> contain any Observation participants. (CONF-518)</li>
-
-<li class="li"><strong class="ph b">SHALL NOT</strong> be the source of any Observation relationships. (CONF-519)</li>
-
 </ol>
+
 
 <p class="p"> </p>
 
@@ -73,13 +57,13 @@
 
 <pre class="pre codeblock">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
 &lt;observation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd"&gt;
-  &lt;id root="MDHT" extension="1781613928"/&gt;
-  &lt;code code="1715632489"/&gt;
+  &lt;id root="MDHT" extension="224055895"/&gt;
+  &lt;code code="1073925240"/&gt;
   &lt;effectiveTime&gt;
     &lt;low value="2012"/&gt;
     &lt;high value="2012"/&gt;
   &lt;/effectiveTime&gt;
-  &lt;value xsi:type="CE" code="1257817286"/&gt;
+  &lt;value xsi:type="CE" code="819923284"/&gt;
 &lt;/observation&gt;</pre>
 
 </div>

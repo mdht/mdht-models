@@ -20,7 +20,7 @@
 </head>
 <body id="classId">
 <div>
-	<p><b>Development Only.</b> The Normative content for these specifications
+	<p><b>Non-Normative Content</b> The Normative content for these specifications
 	may be found on the HL7, IHE, and HITSP web sites.</p>
 </div>
 
@@ -36,77 +36,15 @@
 
 
 
-
 <ol class="ol">
-<li class="li"><strong class="ph b">SHALL</strong> conform to <a class="xref" href="FamilyHistoryObservation.html" title="[Observation: templateId 2.16.840.1.113883.10.20.1.22]">Family History Observation</a> template (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.1.22</tt>)</li>
-
-<li class="li">Contains exactly one [1..1] <tt class="ph tt"><strong class="ph b">@classCode</strong></tt> with data type ActClassObservation
-</li>
-
-<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@moodCode</strong>="EVN" </tt><em class="ph i">Event</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF-191)
-</li>
-
-<li class="li"><strong class="ph b">SHALL</strong> contain at least one [1..*] <tt class="ph tt"><strong class="ph b">id</strong></tt> (CONF-192)
-</li>
-
-<li class="li">Contains exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt> with data type CD
-</li>
-
-<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">statusCode</strong></tt><tt class="ph tt"><strong class="ph b">/@code</strong>="completed" </tt> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.5.14 ActStatus</tt>) (CONF-193, CONF-194)
-</li>
-
-<li class="li"><strong class="ph b">SHOULD</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">effectiveTime</strong></tt> (CONF-195)
-</li>
-
-<li class="li"><strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">entryRelationship</strong></tt> (CONF-224)
-<ol class="ol" type="a">
-<li class="li">Contains <tt class="ph tt"><strong class="ph b">@typeCode="</strong>SUBJ" </tt><em class="ph i">SUBJ</em></li>
-
-<li class="li">Contains exactly one [1..1] <a class="xref" href="AgeObservation.html" title="[Observation: templateId 2.16.840.1.113883.10.20.1.38]">Age Observation</a> (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.1.38</tt>)</li>
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] templateId (  ) such that it <ol class="ol" type="a"><li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <strong class="ph b">@root</strong>="2.16.840.1.113883.10.20.1.42"</li>
 </ol>
 </li>
 
-<li class="li"><strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">entryRelationship</strong></tt> (CONF-207)
-<ol class="ol" type="a">
-<li class="li">Contains exactly one [1..1] <a class="xref" href="ProblemStatusObservation.html" title="[Observation: templateId 2.16.840.1.113883.10.20.1.50]">Problem Status Observation</a> (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.1.50</tt>)</li>
-</ol>
-</li>
-
-<li class="li">A family history observation not contained within a family history organizer <strong class="ph b">SHALL</strong> contain exactly one subject participant, representing the family member who is the subject of the observation (CONF-209)</li>
-
-<li class="li">Where the subject of an observation is explicit in a family history observation code (e.g. SNOMED CT concept 417001009 "Family history of tuberous sclerosis"), the subject participant <strong class="ph b">SHALL</strong> be equivalent to or further specialize the code (CONF-210)</li>
-
-<li class="li">Where the subject of an observation is not explicit in a family history observation code (e.g. SNOMED CT concept 44054006 "Diabetes Mellitus type 2"), the subject participant <strong class="ph b">SHALL</strong> be used to assert the affected relative (CONF-211)</li>
-
-<li class="li">A subject participant <strong class="ph b">SHALL</strong> contain exactly one RelatedSubject, representing the relationship of the subject to the patient</li>
-
-<li class="li">The value for RelatedSubject / @classCode <strong class="ph b">SHALL</strong> be "PRS" "Personal relationship" 2.16.840.1.113883.5.110 RoleClass STATIC</li>
-
-<li class="li">RelatedSubject <strong class="ph b">SHALL</strong> contain exactly one RelatedSubject / code (CONF-214)</li>
-
-<li class="li">The value for "RelatedSubject / code" <strong class="ph b">SHOULD</strong> be selected from ValueSet 2.16.840.1.113883.1.11.19579 FamilyHistoryRelatedSubjectCode DYNAMIC or 2.16.840.1.113883.1.11.20.21 FamilyHistoryPersonCode DYNAMIC</li>
-
-<li class="li">Representation of a pedigree graph <strong class="ph b">SHALL</strong> be done using RelatedSubject / code values (e.g. "great grandfather") to designate a hierarchical family tree.</li>
-
-<li class="li">RelatedSubject <strong class="ph b">SHOULD</strong> contain exactly one RelatedSubject / subject</li>
-
-<li class="li">RelatedSubject / subject <strong class="ph b">SHOULD</strong> contain exactly one RelatedSubject / subject / administrativeGenderCode.</li>
-
-<li class="li"><strong class="ph b">SHOULD</strong> satisfy: subject/relatedSubject/subject contains exactly one birthTime (CONF-219)</li>
-
-<li class="li"><strong class="ph b">MAY</strong> satisfy: subject/relatedSubject/subject contains exactly one sdtc:deceasedInd (CONF-220)</li>
-
-<li class="li"><strong class="ph b">MAY</strong> satisfy: subject/relatedSubject/subject contains exactly one sdtc:deceasedTime (CONF-221)</li>
-
-<li class="li"><strong class="ph b">SHOULD</strong> satisfy: The age of a relative at the time of observation is inferred by comparing subject/relatedSubject/subject/birthTime with Observation/effectiveTime (CONF-222)</li>
-
-<li class="li"><strong class="ph b">MAY</strong> satisfy: The age of a relative at the time of death is inferred by comparing subject/relatedSubject/subject/birthTime with subject/relatedSubject/subject/sdtc:deceasedTime. (CONF-223)</li>
-
-<li class="li"><strong class="ph b">SHALL</strong> satisfy: Contains one or more sources of information (CONF-199)</li>
-
-<li class="li">A family history cause of death observation <strong class="ph b">SHALL</strong> contain one or more entryRelationship / @typeCode</li>
+<li class="li"><strong class="ph b">SHALL</strong> conform to <a class="xref" href="FamilyHistoryObservation.html" title="[Observation: templateId 2.16.840.1.113883.10.20.1.22]">Family History Observation</a> template (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.1.22</tt>) (CONF-196)</li>
 
 </ol>
+
 
 <p class="p"> </p>
 
@@ -116,8 +54,8 @@
 
 <pre class="pre codeblock">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
 &lt;observation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd"&gt;
-  &lt;id root="MDHT" extension="2023224602"/&gt;
-  &lt;code code="244410167"/&gt;
+  &lt;id root="MDHT" extension="1872626961"/&gt;
+  &lt;code code="1576873613"/&gt;
   &lt;effectiveTime&gt;
     &lt;low value="2012"/&gt;
     &lt;high value="2012"/&gt;

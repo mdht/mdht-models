@@ -59,16 +59,16 @@
 </tbody></tgroup></table></p></section>
 <codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
 <act xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd">
-  <id root="MDHT" extension="1004141118"/>
-  <code code="943842913"/>
+  <id root="MDHT" extension="990481079"/>
+  <code code="1252942632"/>
   <effectiveTime>
     <low value="2012"/>
     <high value="2012"/>
   </effectiveTime>
   <entryRelationship>
     <act>
-      <id root="MDHT" extension="1756602450"/>
-      <code code="1340148822"/>
+      <id root="MDHT" extension="2021782155"/>
+      <code code="1614862034"/>
       <effectiveTime>
         <low value="2012"/>
         <high value="2012"/>

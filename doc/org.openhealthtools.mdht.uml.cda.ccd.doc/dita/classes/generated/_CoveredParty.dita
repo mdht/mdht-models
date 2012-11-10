@@ -31,8 +31,8 @@
 </tbody></tgroup></table></p></section>
 <codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
 <participantrole xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd">
-  <id root="MDHT" extension="1775448463"/>
-  <code code="1002230976"/>
+  <id root="MDHT" extension="405247103"/>
+  <code code="750991553"/>
 </participantrole>]]></codeblock>
 <section id="changes">
 </section>

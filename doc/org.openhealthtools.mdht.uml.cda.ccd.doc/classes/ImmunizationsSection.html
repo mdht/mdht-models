@@ -20,7 +20,7 @@
 </head>
 <body id="classId">
 <div>
-	<p><b>Development Only.</b> The Normative content for these specifications
+	<p><b>Non-Normative Content</b> The Normative content for these specifications
 	may be found on the HL7, IHE, and HITSP web sites.</p>
 </div>
 
@@ -40,8 +40,11 @@
 
 
 
-
 <ol class="ol">
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] templateId (  ) such that it <ol class="ol" type="a"><li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <strong class="ph b">@root</strong>="2.16.840.1.113883.10.20.1.6"</li>
+</ol>
+</li>
+
 <li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt><tt class="ph tt"><strong class="ph b">/@code</strong>="11369-6" </tt><em class="ph i">History of immunizations</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF-377, CONF-378)
 </li>
 
@@ -71,6 +74,7 @@
 
 </ol>
 
+
 <p class="p"> </p>
 
 <p class="p"><strong class="ph b">Immunizations Section example</strong></p>
@@ -79,20 +83,20 @@
 
 <pre class="pre codeblock">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
 &lt;section xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd"&gt;
-  &lt;id root="MDHT" extension="249531675"/&gt;
+  &lt;id root="MDHT" extension="537704013"/&gt;
   &lt;title&gt;TEXT FOR TITLE&lt;/title&gt;
   &lt;text/&gt;
   &lt;entry&gt;
     &lt;substanceAdministration&gt;
-      &lt;id root="MDHT" extension="704108196"/&gt;
+      &lt;id root="MDHT" extension="1315540614"/&gt;
       &lt;text&gt;Text Value&lt;/text&gt;
-      &lt;effectiveTime value="20121108"/&gt;
+      &lt;effectiveTime value="20121109"/&gt;
       &lt;consumable/&gt;
       &lt;performer/&gt;
       &lt;entryRelationship&gt;
         &lt;observation&gt;
-          &lt;id root="MDHT" extension="246270161"/&gt;
-          &lt;code code="807033475"/&gt;
+          &lt;id root="MDHT" extension="1089653932"/&gt;
+          &lt;code code="2111609435"/&gt;
           &lt;text&gt;Text Value&lt;/text&gt;
           &lt;effectiveTime&gt;
             &lt;low value="2012"/&gt;
@@ -102,8 +106,8 @@
       &lt;/entryRelationship&gt;
       &lt;entryRelationship&gt;
         &lt;observation&gt;
-          &lt;id root="MDHT" extension="2069152008"/&gt;
-          &lt;code code="1210001377"/&gt;
+          &lt;id root="MDHT" extension="1561095572"/&gt;
+          &lt;code code="695341020"/&gt;
           &lt;text&gt;Text Value&lt;/text&gt;
           &lt;effectiveTime&gt;
             &lt;low value="2012"/&gt;
@@ -113,8 +117,8 @@
       &lt;/entryRelationship&gt;
       &lt;entryRelationship&gt;
         &lt;act&gt;
-          &lt;id root="MDHT" extension="492773944"/&gt;
-          &lt;code code="1901870383"/&gt;
+          &lt;id root="MDHT" extension="864510923"/&gt;
+          &lt;code code="1405379874"/&gt;
           &lt;text&gt;Text Value&lt;/text&gt;
           &lt;effectiveTime&gt;
             &lt;low value="2012"/&gt;
@@ -124,8 +128,8 @@
       &lt;/entryRelationship&gt;
       &lt;entryRelationship&gt;
         &lt;observation&gt;
-          &lt;id root="MDHT" extension="1156287201"/&gt;
-          &lt;code code="1484727895"/&gt;
+          &lt;id root="MDHT" extension="1386412993"/&gt;
+          &lt;code code="185140792"/&gt;
           &lt;text&gt;Text Value&lt;/text&gt;
           &lt;effectiveTime&gt;
             &lt;low value="2012"/&gt;
@@ -140,13 +144,13 @@
   &lt;/entry&gt;
   &lt;entry&gt;
     &lt;supply&gt;
-      &lt;id root="MDHT" extension="559193545"/&gt;
+      &lt;id root="MDHT" extension="1180804960"/&gt;
       &lt;text&gt;Text Value&lt;/text&gt;
-      &lt;effectiveTime value="20121108"/&gt;
+      &lt;effectiveTime value="20121109"/&gt;
       &lt;entryRelationship&gt;
         &lt;observation&gt;
-          &lt;id root="MDHT" extension="92216239"/&gt;
-          &lt;code code="358022091"/&gt;
+          &lt;id root="MDHT" extension="493334175"/&gt;
+          &lt;code code="1862558455"/&gt;
           &lt;text&gt;Text Value&lt;/text&gt;
           &lt;effectiveTime&gt;
             &lt;low value="2012"/&gt;
@@ -156,8 +160,8 @@
       &lt;/entryRelationship&gt;
       &lt;entryRelationship&gt;
         &lt;act&gt;
-          &lt;id root="MDHT" extension="36180227"/&gt;
-          &lt;code code="1059734770"/&gt;
+          &lt;id root="MDHT" extension="1994700481"/&gt;
+          &lt;code code="1802966089"/&gt;
           &lt;text&gt;Text Value&lt;/text&gt;
           &lt;effectiveTime&gt;
             &lt;low value="2012"/&gt;
