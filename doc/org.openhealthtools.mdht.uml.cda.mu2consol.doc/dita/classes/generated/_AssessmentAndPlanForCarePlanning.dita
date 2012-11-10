@@ -14,20 +14,20 @@
 <p><lines><i>INLINE</i></lines></p>
 </section>
 <ol id="conformance">
-<li><b>SHALL</b> conform to <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.consol.doc/classes/AssessmentAndPlanSection.html">Consol Assessment And Plan Section</xref> template (templateId: <tt>2.16.840.1.113883.10.20.22.2.9</tt>)</li>
+<li><b>SHALL</b> conform to <xref format="html" href="PLUGINS_ROOT/org.openhealthtools.mdht.uml.cda.consol.doc/classes/AssessmentAndPlanSection.html">Consol Assessment And Plan Section</xref> template (templateId: <tt>2.16.840.1.113883.10.20.22.2.9</tt>)</li>
 <li>Contains zero or one [0..1] <tt><b>entry</b></tt>
 <ol>
-<li>Contains exactly one [1..1] <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.consol.doc/classes/PlanOfCareActivityProcedure.html">Consol Plan Of Care Activity Procedure</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.41</tt>)</li></ol></li>
+<li>Contains exactly one [1..1] <xref format="html" href="PLUGINS_ROOT/org.openhealthtools.mdht.uml.cda.consol.doc/classes/PlanOfCareActivityProcedure.html">Consol Plan Of Care Activity Procedure</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.41</tt>)</li></ol></li>
 <li>Contains zero or one [0..1] <tt><b>entry</b></tt>
 <ol>
-<li>Contains exactly one [1..1] <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.consol.doc/classes/PlanOfCareActivitySubstanceAdministration.html">Consol Plan Of Care Activity Substance Administration</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.25</tt>)</li></ol></li>
+<li>Contains exactly one [1..1] <xref format="html" href="PLUGINS_ROOT/org.openhealthtools.mdht.uml.cda.consol.doc/classes/PlanOfCareActivitySubstanceAdministration.html">Consol Plan Of Care Activity Substance Administration</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.25</tt>)</li></ol></li>
 <li>Contains zero or one [0..1] <tt><b>entry</b></tt>
 <ol>
-<li>Contains exactly one [1..1] <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.consol.doc/classes/PlanOfCareActivitySupply.html">Consol Plan Of Care Activity Supply</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.43</tt>)</li></ol></li>
+<li>Contains exactly one [1..1] <xref format="html" href="PLUGINS_ROOT/org.openhealthtools.mdht.uml.cda.consol.doc/classes/PlanOfCareActivitySupply.html">Consol Plan Of Care Activity Supply</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.43</tt>)</li></ol></li>
 <li><b>SHALL</b> satisfy: oneOfPlanOfCareEntry</li>
 </ol>
 <ol id="aggregate">
-<li><b>SHALL</b> conform to <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.consol.doc/classes/AssessmentAndPlanSection.html">Consol Assessment And Plan Section</xref> template (templateId: <tt>2.16.840.1.113883.10.20.22.2.9</tt>)</li>
+<li><b>SHALL</b> conform to <xref format="html" href="PLUGINS_ROOT/org.openhealthtools.mdht.uml.cda.consol.doc/classes/AssessmentAndPlanSection.html">Consol Assessment And Plan Section</xref> template (templateId: <tt>2.16.840.1.113883.10.20.22.2.9</tt>)</li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:15353)<tt><b>/@code</b>="51847-2" </tt><i>ASSESSMENT AND PLAN</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:15354)
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt> (CONF:7707)
@@ -37,13 +37,13 @@
 <li>Contains exactly one [1..1] <xref href="../PlanOfCareActivityAct.dita">Plan Of Care Activity Act</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.39</tt>)</li></ol></li>
 <li>Contains zero or one [0..1] <tt><b>entry</b></tt>
 <ol>
-<li>Contains exactly one [1..1] <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.consol.doc/classes/PlanOfCareActivityProcedure.html">Consol Plan Of Care Activity Procedure</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.41</tt>)</li></ol></li>
+<li>Contains exactly one [1..1] <xref format="html" href="PLUGINS_ROOT/org.openhealthtools.mdht.uml.cda.consol.doc/classes/PlanOfCareActivityProcedure.html">Consol Plan Of Care Activity Procedure</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.41</tt>)</li></ol></li>
 <li>Contains zero or one [0..1] <tt><b>entry</b></tt>
 <ol>
-<li>Contains exactly one [1..1] <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.consol.doc/classes/PlanOfCareActivitySubstanceAdministration.html">Consol Plan Of Care Activity Substance Administration</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.25</tt>)</li></ol></li>
+<li>Contains exactly one [1..1] <xref format="html" href="PLUGINS_ROOT/org.openhealthtools.mdht.uml.cda.consol.doc/classes/PlanOfCareActivitySubstanceAdministration.html">Consol Plan Of Care Activity Substance Administration</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.25</tt>)</li></ol></li>
 <li>Contains zero or one [0..1] <tt><b>entry</b></tt>
 <ol>
-<li>Contains exactly one [1..1] <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.consol.doc/classes/PlanOfCareActivitySupply.html">Consol Plan Of Care Activity Supply</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.43</tt>)</li></ol></li>
+<li>Contains exactly one [1..1] <xref format="html" href="PLUGINS_ROOT/org.openhealthtools.mdht.uml.cda.consol.doc/classes/PlanOfCareActivitySupply.html">Consol Plan Of Care Activity Supply</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.43</tt>)</li></ol></li>
 <li><b>SHALL</b> satisfy: oneOfPlanOfCareEntry</li>
 </ol>
 <section id="tableconformance"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="8" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><colspec colname="col2" colnum="2" /><colspec colname="col3" colnum="3" /><colspec colname="col4" colnum="4" /><colspec colname="col5" colnum="5" /><colspec colname="col6" colnum="6" /><colspec colname="col7" colnum="7" /><thead> <row><entry namest="col0" nameend="col7" >mu2consol::AssessmentAndPlanForCarePlanning</entry>  </row>  <row><entry namest="col0" nameend="col7" >/cda:ClinicalDocument/cda:component/cda:structuredBody/cda:component/cda:section/</entry>  </row>  <row><entry>Name</entry><entry>XPath</entry><entry>Cardinality</entry><entry>Severity</entry><entry>Nullable</entry><entry>Data Type</entry><entry>Conformance</entry><entry>Value(s)</entry></row></thead><tbody><row><entry>planOfCareActivityProcedure</entry><entry>cda:entry/cda:procedure</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>PlanOfCareActivityProcedure</entry><entry></entry><entry> </entry></row> 

@@ -14,13 +14,13 @@
 <p><lines><i>INLINE</i></lines></p>
 </section>
 <ol id="conformance">
-<li><b>SHALL</b> conform to <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.consol.doc/classes/SocialHistorySection.html">Consol Social History Section</xref> template (templateId: <tt>2.16.840.1.113883.10.20.22.2.17</tt>)</li>
+<li><b>SHALL</b> conform to <xref format="html" href="PLUGINS_ROOT/org.openhealthtools.mdht.uml.cda.consol.doc/classes/SocialHistorySection.html">Consol Social History Section</xref> template (templateId: <tt>2.16.840.1.113883.10.20.22.2.17</tt>)</li>
 <li><b>SHALL</b> contain at least one [1..*] <tt><b>entry</b></tt>
 <ol>
 <li>Contains exactly one [1..1] <xref href="../SmokingStatusObservation.dita">Smoking Status Observation</xref> (templateId: <tt>2.16.840.1.113883.10.22.4.78</tt>)</li></ol></li>
 </ol>
 <ol id="aggregate">
-<li><b>SHALL</b> conform to <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.consol.doc/classes/SocialHistorySection.html">Consol Social History Section</xref> template (templateId: <tt>2.16.840.1.113883.10.20.22.2.17</tt>)</li>
+<li><b>SHALL</b> conform to <xref format="html" href="PLUGINS_ROOT/org.openhealthtools.mdht.uml.cda.consol.doc/classes/SocialHistorySection.html">Consol Social History Section</xref> template (templateId: <tt>2.16.840.1.113883.10.20.22.2.17</tt>)</li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:14819)<tt><b>/@code</b>="29762-2" </tt><i>Social history</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:14820)
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>title</b></tt> (CONF:7938)
