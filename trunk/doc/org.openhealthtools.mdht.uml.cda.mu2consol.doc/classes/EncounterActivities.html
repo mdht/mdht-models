@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="en-us" lang="en-us">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="copyright" content="(C) Copyright 2005"/>
+<meta name="DC.rights.owner" content="(C) Copyright 2005"/>
+<meta name="DC.Type" content="topic"/>
+<meta name="DC.Title" content="Encounter Activities"/>
+<meta name="abstract" content="[Encounter: templateId 2.16.840.1.113883.10.20.22.4.49]"/>
+<meta name="description" content="[Encounter: templateId 2.16.840.1.113883.10.20.22.4.49]"/>
+<meta name="DC.Coverage" content="Encounter"/>
+<meta name="DC.Relation" scheme="URI" content="../content/ClinicalStatementTemplates.html"/>
+<meta name="DC.Format" content="XHTML"/>
+<meta name="DC.Identifier" content="classId"/>
+<meta name="DC.Language" content="en-us"/>
+<link rel="stylesheet" type="text/css" href="../css/commonltr.css"/>
+<title>Encounter Activities</title>
+</head>
+<body id="classId">
+<div>
+	<p><b>Note</b> This Implementation Guide is an extension of Consolidated Implementation Guide to support Meaning Use Stage 2, Final Rule Certification. The same guide used by NIST for certification.</p>
+</div>
+
+<h1 class="title topictitle1">Encounter Activities</h1>
+
+
+
+<div class="body"><p class="shortdesc">[Encounter: templateId <tt class="ph tt">2.16.840.1.113883.10.20.22.4.49</tt>]</p>
+
+<div class="section">
+</div>
+
+
+<div class="section">
+</div>
+
+
+
+<ol class="ol">
+<li class="li"><strong class="ph b">SHALL</strong> conform to <a class="xref" href="generated/PLUGINS_ROOT/org.openhealthtools.mdht.uml.cda.consol.doc/classes/EncounterActivities.html">Consol Encounter Activities</a> template (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.22.4.49</tt>)</li>
+
+<li class="li">Contains zero or one [0..1] <tt class="ph tt"><strong class="ph b">code</strong></tt>
+</li>
+
+<li class="li">The value for 'code' for encounter activities  <strong class="ph b">SHOULD</strong> be selected from ICD-10(codeSystem 2.16.840.1.113883.6.3) or SNOMED CT (codeSystem 2.16.840.1.113883.6.96)</li>
+
+</ol>
+
+
+<p class="p"> </p>
+
+<p class="p"><strong class="ph b">Encounter Activities example</strong></p>
+
+
+
+<pre class="pre codeblock">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;encounter xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd" classCode="ENC" moodCode="EVN"&gt;
+  &lt;templateId root="2.16.840.1.113883.10.20.22.4.49"/&gt;
+  &lt;templateId root="2.16.840.1.113883.10.20.22.4.49"/&gt;
+  &lt;id root="MDHT" extension="2107440793"/&gt;
+  &lt;code codeSystem="2.16.840.1.113883.6.12" codeSystemName="CPT-4"/&gt;
+  &lt;effectiveTime&gt;
+    &lt;low value="2012"/&gt;
+    &lt;high value="2012"/&gt;
+  &lt;/effectiveTime&gt;
+&lt;/encounter&gt;</pre>
+
+</div>
+
+<div class="related-links">
+<div class="familylinks">
+<div class="parentlink"><strong>Parent topic:</strong> <a class="link" href="../content/ClinicalStatementTemplates.html">CLINICAL STATEMENT TEMPLATES</a></div>
+</div>
+</div>
+
+</body>
+</html>
