@@ -1,8 +1,8 @@
 Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
-Bundle-Version: 0.7.0.qualifier
+Bundle-Version: 1.2.0.qualifier
 Bundle-Name: %pluginName
-Bundle-SymbolicName: org.openhealthtools.mdht.uml.cda.mu2consol.doc;singleton:=true
 Bundle-Vendor: %providerName
+Bundle-SymbolicName: org.openhealthtools.mdht.uml.cda.mu2consol.doc;singleton:=true
 Bundle-Localization: plugin
 Bundle-ActivationPolicy: lazy
