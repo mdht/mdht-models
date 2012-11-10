@@ -18,7 +18,7 @@
 <li>Contains exactly one [1..1] <xref href="../VitalSignsOrganizer.dita">Vital Signs Organizer</xref> (templateId: <tt>1.3.6.1.4.1.19376.1.5.3.1.4.13.1</tt>)</li></ol></li>
 </ol>
 <ol id="aggregate">
-<li><b>SHALL</b> conform to <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.ccd.doc/classes/VitalSignsSection.html">CCD Vital Signs Section</xref> template (templateId: <tt>2.16.840.1.113883.10.20.1.16</tt>)</li>
+<li><b>SHALL</b> conform to <xref format="html" href="PLUGINS_ROOT/org.openhealthtools.mdht.uml.cda.ccd.doc/classes/VitalSignsSection.html">CCD Vital Signs Section</xref> template (templateId: <tt>2.16.840.1.113883.10.20.1.16</tt>)</li>
 <li><b>SHALL</b> conform to <xref href="../VitalSignsSection.dita">Vital Signs Section</xref> template (templateId: <tt>1.3.6.1.4.1.19376.1.5.3.1.3.25</tt>)</li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="8716-3" </tt><i>Vital signs</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF-382, CONF-383)
 </li>

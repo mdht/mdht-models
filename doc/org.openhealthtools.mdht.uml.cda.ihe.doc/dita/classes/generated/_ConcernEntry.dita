@@ -23,7 +23,7 @@ of being concerned about a problem, allergy or other issue about the patient con
 </p>
 </section>
 <ol id="conformance">
-<li><b>SHALL</b> conform to <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.ccd.doc/classes/ProblemAct.html">CCD Problem Act</xref> template (templateId: <tt>2.16.840.1.113883.10.20.1.27</tt>)</li>
+<li><b>SHALL</b> conform to <xref format="html" href="PLUGINS_ROOT/org.openhealthtools.mdht.uml.cda.ccd.doc/classes/ProblemAct.html">CCD Problem Act</xref> template (templateId: <tt>2.16.840.1.113883.10.20.1.27</tt>)</li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>effectiveTime</b></tt>
 <ul><li>The effectiveTime element records the starting and ending times during which the concern was active.</li></ul></li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>statusCode</b></tt>, which <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/ConcernEntryStatus.dita">ConcernEntryStatus</xref></tt><b> STATIC</b>
@@ -49,7 +49,7 @@ historical purposes.
 <li>Related References <b>SHALL</b> be represented using entryRelationship with typeCode = 'REFR'.<ul><li><codeblock>[OCL]: self.reference-&gt;forAll(r | r.typeCode = vocab::x_ActRelationshipExternalReference)</codeblock></li></ul></li>
 </ol>
 <ol id="aggregate">
-<li><b>SHALL</b> conform to <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.ccd.doc/classes/ProblemAct.html">CCD Problem Act</xref> template (templateId: <tt>2.16.840.1.113883.10.20.1.27</tt>)</li>
+<li><b>SHALL</b> conform to <xref format="html" href="PLUGINS_ROOT/org.openhealthtools.mdht.uml.cda.ccd.doc/classes/ProblemAct.html">CCD Problem Act</xref> template (templateId: <tt>2.16.840.1.113883.10.20.1.27</tt>)</li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="ACT" </tt><i>Act</i> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>) (CONF-146)
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF-147)

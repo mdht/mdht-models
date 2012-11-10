@@ -14,7 +14,7 @@
 <p>Any condition or allergy may be the subject of a comment.</p>
 </section>
 <ol id="conformance">
-<li><b>SHALL</b> conform to <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.ccd.doc/classes/Comment.html">CCD Comment</xref> template (templateId: <tt>2.16.840.1.113883.10.20.1.40</tt>)</li>
+<li><b>SHALL</b> conform to <xref format="html" href="PLUGINS_ROOT/org.openhealthtools.mdht.uml.cda.ccd.doc/classes/Comment.html">CCD Comment</xref> template (templateId: <tt>2.16.840.1.113883.10.20.1.40</tt>)</li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>statusCode</b></tt><tt><b>/@code</b>="completed" </tt> (CodeSystem:<tt> 2.16.840.1.113883.5.14 HL7ActStatus</tt>) (CONF-6.3.4.6.8)
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt>
@@ -28,7 +28,7 @@
 <li><b>SHALL</b> satisfy: The author's and/or the organization's name must be present when the 'author' element is present. (CONF-6.3.4.6.12)<ul><li><codeblock>[OCL]: not self.author-&gt;isEmpty() implies ( self.author-&gt;exists( a : cda::Author | ( (not a.assignedAuthor.assignedPerson.oclIsUndefined()) and not a.assignedAuthor.assignedPerson.name-&gt;isEmpty()) or (not a.assignedAuthor.representedOrganization.name-&gt;isEmpty())  ) )</codeblock></li></ul></li>
 </ol>
 <ol id="aggregate">
-<li><b>SHALL</b> conform to <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.ccd.doc/classes/Comment.html">CCD Comment</xref> template (templateId: <tt>2.16.840.1.113883.10.20.1.40</tt>)</li>
+<li><b>SHALL</b> conform to <xref format="html" href="PLUGINS_ROOT/org.openhealthtools.mdht.uml.cda.ccd.doc/classes/Comment.html">CCD Comment</xref> template (templateId: <tt>2.16.840.1.113883.10.20.1.40</tt>)</li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="ACT" </tt><i>Act</i> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>) (CONF-504)
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF-505)

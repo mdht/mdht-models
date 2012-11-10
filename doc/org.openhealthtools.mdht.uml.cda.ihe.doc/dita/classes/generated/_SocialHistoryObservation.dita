@@ -12,7 +12,7 @@
 </section>
 <ol id="conformance">
 <li><b>SHALL</b> conform to <xref href="../SimpleObservation.dita">Simple Observation</xref> template (templateId: <tt>1.3.6.1.4.1.19376.1.5.3.1.4.13</tt>)</li>
-<li><b>SHALL</b> conform to <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.ccd.doc/classes/SocialHistoryObservation.html">CCD Social History Observation</xref> template (templateId: <tt>2.16.840.1.113883.10.20.1.33</tt>)</li>
+<li><b>SHALL</b> conform to <xref format="html" href="PLUGINS_ROOT/org.openhealthtools.mdht.uml.cda.ccd.doc/classes/SocialHistoryObservation.html">CCD Social History Observation</xref> template (templateId: <tt>2.16.840.1.113883.10.20.1.33</tt>)</li>
 <li><b>MAY</b> contain zero or more [0..*] <tt><b>value</b></tt>
 <ul><li><p>
 The data type to use for each observation should be drawn from the table below.
@@ -40,7 +40,7 @@ a social history observation<ul><li><codeblock>[OCL]: self.methodCode-&gt;size()
 a social history observation<ul><li><codeblock>[OCL]: self.targetSiteCode-&gt;size() = 0</codeblock></li></ul></li>
 </ol>
 <ol id="aggregate">
-<li><b>SHALL</b> conform to <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.ccd.doc/classes/SocialHistoryObservation.html">CCD Social History Observation</xref> template (templateId: <tt>2.16.840.1.113883.10.20.1.33</tt>)</li>
+<li><b>SHALL</b> conform to <xref format="html" href="PLUGINS_ROOT/org.openhealthtools.mdht.uml.cda.ccd.doc/classes/SocialHistoryObservation.html">CCD Social History Observation</xref> template (templateId: <tt>2.16.840.1.113883.10.20.1.33</tt>)</li>
 <li><b>SHALL</b> conform to <xref href="../SimpleObservation.dita">Simple Observation</xref> template (templateId: <tt>1.3.6.1.4.1.19376.1.5.3.1.4.13</tt>)</li>
 <li>Contains exactly one [1..1] <tt><b>@classCode</b></tt>, where its data type is ActClassObservation
 </li>
