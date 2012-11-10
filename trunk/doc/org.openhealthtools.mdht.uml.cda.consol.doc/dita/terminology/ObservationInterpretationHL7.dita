@@ -14,6 +14,33 @@
 <tbody>
 <row><entry>Value Set</entry><entry>Observation Interpretation (HL7) - 2.16.840.1.113883.1.11.78</entry></row>
 <row><entry>Code System</entry><entry>ObservationInterpretation - 2.16.840.1.113883.5.83</entry></row>
+<row><entry>Version</entry><entry>1</entry></row>
+<row><entry>Definition</entry><entry>Observation interpretation concepts that are based upon HL7 V3 vocabulary.</entry></row>
+</tbody></tgroup></table>
+<table><tgroup cols="3">
+<colspec colname="col1" colwidth="1*"/>
+<colspec colname="col2" colwidth="1*"/>
+<colspec colname="col3" colwidth="2*"/>
+<thead><row>
+<entry>Code</entry><entry>Code System</entry><entry>Print Name</entry>
+</row></thead><tbody>
+<row><entry>A</entry><entry>ObservationInterpretation</entry><entry>Abnormal</entry></row>
+<row><entry>HX</entry><entry>ObservationInterpretation</entry><entry>above high threshold</entry></row>
+<row><entry>LX</entry><entry>ObservationInterpretation</entry><entry>below low threshold</entry></row>
+<row><entry>B</entry><entry>ObservationInterpretation</entry><entry>better</entry></row>
+<row><entry>Carrier</entry><entry>ObservationInterpretation</entry><entry>Carrier</entry></row>
+<row><entry>D</entry><entry>ObservationInterpretation</entry><entry>decreased</entry></row>
+<row><entry>U</entry><entry>ObservationInterpretation</entry><entry>increased</entry></row>
+<row><entry>IND</entry><entry>ObservationInterpretation</entry><entry>Indeterminate</entry></row>
+<row><entry>I</entry><entry>ObservationInterpretation</entry><entry>intermediate</entry></row>
+<row><entry>MS</entry><entry>ObservationInterpretation</entry><entry>moderately susceptible</entry></row>
+<row><entry>NEG</entry><entry>ObservationInterpretation</entry><entry>Negative</entry></row>
+<row><entry>N</entry><entry>ObservationInterpretation</entry><entry>Normal</entry></row>
+<row><entry>POS</entry><entry>ObservationInterpretation</entry><entry>Positive</entry></row>
+<row><entry>R</entry><entry>ObservationInterpretation</entry><entry>resistent</entry></row>
+<row><entry>S</entry><entry>ObservationInterpretation</entry><entry>susceptible</entry></row>
+<row><entry>VS</entry><entry>ObservationInterpretation</entry><entry>Very susceptible</entry></row>
+<row><entry>W</entry><entry>ObservationInterpretation</entry><entry>worse</entry></row>
 </tbody></tgroup></table>
 </section>
 </body>

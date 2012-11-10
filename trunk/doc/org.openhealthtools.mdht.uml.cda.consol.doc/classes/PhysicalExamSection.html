@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html
   PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html lang="en-us" xml:lang="en-us">
+<html xml:lang="en-us" lang="en-us">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 <meta name="copyright" content="(C) Copyright 2005"/>
@@ -19,10 +19,10 @@
 <link rel="stylesheet" type="text/css" href="../css/commonltr.css"/>
 <title>Physical Exam Section</title>
 </head>
-<body id="classId"><a name="classId"><!-- --></a>
+<body id="classId">
 <div>
-	<p><b>For Discussion and Demonstration Only</b> The Normative content for these specifications
-	may be found on the HL7 web site.</p>
+	<p><b>Non-Normative Content</b> The Normative content for these specifications
+	may be found on the HL7, IHE, and HITSP web sites.</p>
 </div>
 
 	<h1 class="title topictitle1">
@@ -35,21 +35,44 @@
 
 		
 		<div class="section">
-<p class="p">The Physical Exam section includes direct observations made by the clinician. The examination may include the use of simple instruments and may also describe simple maneuvers performed directly on the patient's body. This section includes only observations made by the examining clinician using inspection, palpation, auscultation, and percussion; it does not include laboratory or imaging findings. The exam may be limited to pertinent body systems based on the patient's chief complaint or it may include a comprehensive examination. The examination may be reported as a collection of random clinical statements or it may be reported categorically. 
-The Physical Exam section may contain multiple nested subsections: Vital Signs, General Status, and those listed in the Additional Physical Examination Subsections appendix.</p>
+<div class="p"><p class="lines"><em class="ph i">The Physical Exam section includes direct observations made by the clinician. The examination may include the use of simple instruments and may also describe simple maneuvers performed directly on the patient's body. This section includes only observations made by the examining clinician using inspection, palpation, auscultation, and percussion; it does not include laboratory or imaging findings. The exam may be limited to pertinent body systems based on the patient's chief complaint or it may include a comprehensive examination. The examination may be reported as a collection of random clinical statements or it may be reported categorically. <br/>
+The Physical Exam section may contain multiple nested subsections: Vital Signs, General Status, and those listed in the Additional Physical Examination Subsections appendix.</em></p>
+</div>
 
 </div>
 
 		
 
 		<ol class="ol">
-<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt><tt class="ph tt"><strong class="ph b">/@code</strong>="29545-1" </tt><em class="ph i">PHYSICAL EXAMINATION</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:7807)
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] templateId ( CONF:10465 ) such that it <ol class="ol" type="a"><li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <strong class="ph b">@root</strong>="2.16.840.1.113883.10.20.2.10"</li>
+</ol>
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt> (CONF:15397)<tt class="ph tt"><strong class="ph b">/@code</strong>="29545-1" </tt><em class="ph i">PHYSICAL EXAMINATION</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:15398)
 </li>
 
 <li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">title</strong></tt> (CONF:7808)
 </li>
 
 <li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">text</strong></tt> (CONF:7809)
+</li>
+
+<li class="li"><strong class="ph b">MAY</strong> contain zero or more [0..*] <tt class="ph tt"><strong class="ph b">entry</strong></tt> (CONF:17094, CONF:17095)
+<ol class="ol" type="a">
+<li class="li">Contains exactly one [1..1] <a class="xref" href="generated/../PressureUlcerObservation.html" title="[Observation: templateId 2.16.840.1.113883.10.20.22.4.70]">Pressure Ulcer Observation</a> (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.22.4.70</tt>)</li>
+</ol>
+</li>
+
+<li class="li"><strong class="ph b">MAY</strong> contain zero or more [0..*] <tt class="ph tt"><strong class="ph b">entry</strong></tt> (CONF:17096, CONF:17097)
+<ol class="ol" type="a">
+<li class="li">Contains exactly one [1..1] <a class="xref" href="generated/../NumberOfPressureUlcersObservation.html" title="[Observation: templateId 2.16.840.1.113883.10.20.22.4.76]">Number Of Pressure Ulcers Observation</a> (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.22.4.76</tt>)</li>
+</ol>
+</li>
+
+<li class="li"><strong class="ph b">MAY</strong> contain zero or more [0..*] <tt class="ph tt"><strong class="ph b">entry</strong></tt> (CONF:17098, CONF:17099)
+<ol class="ol" type="a">
+<li class="li">Contains exactly one [1..1] <a class="xref" href="generated/../HighestPressureUlcerStage.html" title="[Observation: templateId 2.16.840.1.113883.10.20.22.4.77]">Highest Pressure Ulcer Stage</a> (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.22.4.77</tt>)</li>
+</ol>
 </li>
 
 </ol>

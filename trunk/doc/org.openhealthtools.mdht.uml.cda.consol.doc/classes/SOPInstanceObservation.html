@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html
   PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html lang="en-us" xml:lang="en-us">
+<html xml:lang="en-us" lang="en-us">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 <meta name="copyright" content="(C) Copyright 2005"/>
@@ -17,10 +17,10 @@
 <link rel="stylesheet" type="text/css" href="../css/commonltr.css"/>
 <title>SOP Instance Observation</title>
 </head>
-<body id="classId"><a name="classId"><!-- --></a>
+<body id="classId">
 <div>
-	<p><b>For Discussion and Demonstration Only</b> The Normative content for these specifications
-	may be found on the HL7 web site.</p>
+	<p><b>Non-Normative Content</b> The Normative content for these specifications
+	may be found on the HL7, IHE, and HITSP web sites.</p>
 </div>
 
 	<h1 class="title topictitle1"><span class="ph">SOP Instance Observation</span></h1>
@@ -31,13 +31,18 @@
 
 		
 		<div class="section">
-<p class="p">A SOP Instance Observation contains the DICOM Service Object Pair (SOP) Instance information for referenced DICOM composite objects. The SOP Instance act class is used to reference both image and non-image DICOM instances. The text attribute contains the DICOM WADO reference.</p>
+<div class="p"><p class="lines"><em class="ph i">A SOP Instance Observation contains the DICOM Service Object Pair (SOP) Instance information for referenced DICOM composite objects. The SOP Instance act class is used to reference both image and non-image DICOM instances. The text attribute contains the DICOM WADO reference.</em></p>
+</div>
 
 </div>
 
 		
 
 		<ol class="ol">
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] templateId (  ) such that it <ol class="ol" type="a"><li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <strong class="ph b">@root</strong>="2.16.840.1.113883.10.20.6.2.8"</li>
+</ol>
+</li>
+
 <li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@classCode</strong>="DGIMG" </tt> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.5.6 HL7ActClass</tt>) (CONF:9240)
 </li>
 
@@ -48,7 +53,9 @@
 </li>
 
 <li class="li"><strong class="ph b">SHALL</strong> contain at least one [1..*] <tt class="ph tt"><strong class="ph b">id</strong></tt> (CONF:9242)
-<ul class="ul"><li class="li">The @root contains an OID representing the DICOM SOP Instance UID</li>
+<ul class="ul"><li class="li"><div class="p"><p class="lines"><em class="ph i">The @root contains an OID representing the DICOM SOP Instance UID</em></p>
+</div>
+</li>
 </ul>
 </li>
 
@@ -63,7 +70,7 @@
 </ol>
 </li>
 
-<li class="li"><strong class="ph b">MAY</strong> contain zero or more [0..*] <tt class="ph tt"><strong class="ph b">entryRelationship</strong></tt> (CONF:9257, CONF:9258, CONF:9259)
+<li class="li"><strong class="ph b">MAY</strong> contain zero or more [0..*] <tt class="ph tt"><strong class="ph b">entryRelationship</strong></tt> (CONF:9257, CONF:9258, CONF:15935)
 <ol class="ol" type="a">
 <li class="li">Contains <tt class="ph tt"><strong class="ph b">@typeCode="</strong>RSON" </tt><em class="ph i">RSON</em></li>
 
@@ -71,8 +78,10 @@
 </ol>
 </li>
 
-<li class="li"><strong class="ph b">MAY</strong> contain zero or more [0..*] <tt class="ph tt"><strong class="ph b">entryRelationship</strong></tt> (CONF:9260, CONF:9261, CONF:9262)
-<ul class="ul"><li class="li">This entryRelationship SHALL be present if the referenced DICOM object is a multiframe object and the reference does not apply to all frames</li>
+<li class="li"><strong class="ph b">MAY</strong> contain zero or more [0..*] <tt class="ph tt"><strong class="ph b">entryRelationship</strong></tt> (CONF:9260, CONF:9261, CONF:15936)
+<ul class="ul"><li class="li"><div class="p"><p class="lines"><em class="ph i">This entryRelationship SHALL be present if the referenced DICOM object is a multiframe object and the reference does not apply to all frames</em></p>
+</div>
+</li>
 </ul>
 <ol class="ol" type="a">
 <li class="li">Contains <tt class="ph tt"><strong class="ph b">@typeCode="</strong>COMP" </tt><em class="ph i">COMP</em></li>
@@ -81,7 +90,7 @@
 </ol>
 </li>
 
-<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt> (CONF:9244)
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt> (CONF:9244), where the @code <strong class="ph b">SHALL</strong> be selected from (CodeSystem:<tt class="ph tt"> 1.2.840.10008.2.6.1 DCMUID</tt>)
 </li>
 
 <li class="li">The effectiveTime, if present, <strong class="ph b">SHALL</strong> contain exactly one [1..1] @value (CONF:9251)</li>
@@ -96,7 +105,7 @@
 
 <li class="li">The text, if present, <strong class="ph b">SHALL</strong> contain exactly one [1..1] reference (CONF:9248)</li>
 
-<li class="li"><strong class="ph b">SHALL</strong> contain a @value which contains a WADO reference as a URI (CONF:9249)</li>
+<li class="li">text/reference <strong class="ph b">SHALL</strong> contain a @value which contains a WADO reference as a URI (CONF:9249)</li>
 
 </ol>
 
@@ -111,8 +120,8 @@
 		<pre class="pre codeblock">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
 &lt;observation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd" classCode="DGIMG" moodCode="EVN"&gt;
   &lt;templateId root="2.16.840.1.113883.10.20.6.2.8"/&gt;
-  &lt;id root="1224745518"/&gt;
-  &lt;code code="869555686"/&gt;
+  &lt;id root="MDHT" extension="1916083226"/&gt;
+  &lt;code codeSystem="1.2.840.10008.2.6.1" codeSystemName="DCMUID"/&gt;
   &lt;text&gt;Text Value&lt;/text&gt;
   &lt;effectiveTime&gt;
     &lt;low value="2012"/&gt;
@@ -121,8 +130,8 @@
   &lt;entryRelationship&gt;
     &lt;observation classCode="OBS" moodCode="EVN"&gt;
       &lt;templateId root="2.16.840.1.113883.10.20.6.2.9"/&gt;
-      &lt;id root="1407443237"/&gt;
-      &lt;code code="1333019534"/&gt;
+      &lt;id root="MDHT" extension="728023942"/&gt;
+      &lt;code code="204819174"/&gt;
       &lt;text&gt;Text Value&lt;/text&gt;
       &lt;effectiveTime&gt;
         &lt;low value="2012"/&gt;
@@ -133,7 +142,7 @@
   &lt;entryRelationship&gt;
     &lt;observation classCode="ROIBND" moodCode="EVN"&gt;
       &lt;templateId root="2.16.840.1.113883.10.20.6.2.10"/&gt;
-      &lt;id root="1506167174"/&gt;
+      &lt;id root="MDHT" extension="10913942"/&gt;
       &lt;code code="121190" codeSystem="1.2.840.10008.2.16.4" codeSystemName="DCM" displayName="Referenced Frames"/&gt;
       &lt;text&gt;Text Value&lt;/text&gt;
       &lt;effectiveTime&gt;
@@ -143,7 +152,7 @@
       &lt;entryRelationship&gt;
         &lt;observation classCode="OBS" moodCode="EVN"&gt;
           &lt;templateId root="2.16.840.1.113883.10.20.6.2.11"/&gt;
-          &lt;id root="1682593420"/&gt;
+          &lt;id root="MDHT" extension="1369994189"/&gt;
           &lt;code code="113036" codeSystem="1.2.840.10008.2.16.4" codeSystemName="DCM" displayName="Frames for Display"/&gt;
           &lt;text&gt;Text Value&lt;/text&gt;
           &lt;effectiveTime&gt;

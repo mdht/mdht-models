@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html
   PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html lang="en-us" xml:lang="en-us">
+<html xml:lang="en-us" lang="en-us">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 <meta name="copyright" content="(C) Copyright 2005"/>
@@ -17,10 +17,10 @@
 <link rel="stylesheet" type="text/css" href="../css/commonltr.css"/>
 <title>General Header Constraints</title>
 </head>
-<body id="classId"><a name="classId"><!-- --></a>
+<body id="classId">
 <div>
-	<p><b>For Discussion and Demonstration Only</b> The Normative content for these specifications
-	may be found on the HL7 web site.</p>
+	<p><b>Non-Normative Content</b> The Normative content for these specifications
+	may be found on the HL7, IHE, and HITSP web sites.</p>
 </div>
 
 	<h1 class="title topictitle1">
@@ -33,10 +33,11 @@
 
 		
 		<div class="section">
-<p class="p">This section describes constraints that apply to the header for all documents within the scope of this implementation guide. Header constraints specific to each document type are described in the appropriate document-specific section below
-
-Document Type Codes
-CDA R2 states that LOINC is the preferred vocabulary for document type codes, which specify the type of document being exchanged (e.g., History and Physical). Each document type in this guide recommends a single preferred clinicalDocument/code, with further specification provided by author or performer, setting, or specialty</p>
+<div class="p"><p class="lines"><em class="ph i">This section describes constraints that apply to the header for all documents within the scope of this implementation guide. Header constraints specific to each document type are described in the appropriate document-specific section below<br/>
+<br/>
+Document Type Codes<br/>
+CDA R2 states that LOINC is the preferred vocabulary for document type codes, which specify the type of document being exchanged (e.g., History and Physical). Each document type in this guide recommends a single preferred clinicalDocument/code, with further specification provided by author or performer, setting, or specialty</em></p>
+</div>
 
 </div>
 
@@ -52,7 +53,11 @@ CDA R2 states that LOINC is the preferred vocabulary for document type codes, wh
 			
 				<div class="p">
 				<ol class="ol">
-<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">realmCode</strong></tt><tt class="ph tt"><strong class="ph b">/@code</strong>="US" </tt> (CONF:5249)
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] templateId ( CONF:5252, CONF:10036 ) such that it <ol class="ol" type="a"><li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <strong class="ph b">@root</strong>="2.16.840.1.113883.10.20.22.1.1"</li>
+</ol>
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">realmCode</strong></tt><tt class="ph tt"><strong class="ph b">/@code</strong>="US" </tt> (CONF:16791)
 </li>
 
 <li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">typeId</strong></tt> (CONF:5361)
@@ -68,6 +73,10 @@ CDA R2 states that LOINC is the preferred vocabulary for document type codes, wh
 </li>
 
 <li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">effectiveTime</strong></tt> (CONF:5256)
+<ul class="ul"><li class="li"><div class="p"><p class="lines"><em class="ph i">Signifies the document creation time, when the document first came into being. Where the CDA document is a transform from an original document in some other format, the ClinicalDocument.effectiveTime is the time the original document is created. The time when the transform occurred is not currently represented in CDA (CONF:9995)</em></p>
+</div>
+</li>
+</ul>
 </li>
 
 <li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">confidentialityCode</strong></tt>, where the @code <strong class="ph b">SHALL</strong> be selected from ValueSet<tt class="ph tt"> <a class="xref" href="../terminology/HL7BasicConfidentialityKind.html">HL7 BasicConfidentialityKind</a> 2.16.840.1.113883.1.11.16926</tt><strong class="ph b"> STATIC</strong> (CONF:5259)
@@ -76,44 +85,50 @@ CDA R2 states that LOINC is the preferred vocabulary for document type codes, wh
 <li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">languageCode</strong></tt>, where the @code <strong class="ph b">SHALL</strong> be selected from ValueSet<tt class="ph tt"> <a class="xref" href="../terminology/Language.html">Language</a> 2.16.840.1.113883.1.11.11526</tt><strong class="ph b"> DYNAMIC</strong> (CONF:5372)
 </li>
 
-<li class="li"><strong class="ph b">SHALL</strong> contain at least one [1..*] <tt class="ph tt"><strong class="ph b">recordTarget</strong></tt> (CONF:5266) <p class="p"><em class="ph i">The recordTarget records the patient whose health information is described by the clinical document; it must contain at least one patientRole element.</em></p>
-<ol class="ol" type="a"><li class="li"> Such recordTargets <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">patientRole</strong></tt> (CONF:5268) <ol class="ol" type="i"><li class="li"> This patientRole <strong class="ph b">SHALL</strong> contain at least one [1..*] <tt class="ph tt"><strong class="ph b">addr</strong></tt> (CONF:5271)</li>
+<li class="li"><strong class="ph b">SHALL</strong> contain at least one [1..*] <tt class="ph tt"><strong class="ph b">recordTarget</strong></tt> (CONF:5266) <div class="p"><p class="lines"><em class="ph i">The recordTarget records the patient whose health information is described by the clinical document; it must contain at least one patientRole element.</em></p>
+</div>
+<ol class="ol" type="a"><li class="li"> Such recordTargets <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">patientRole</strong></tt> (CONF:5268) <ol class="ol" type="i"><li class="li"> This patientRole <strong class="ph b">SHALL</strong> contain at least one [1..*] <tt class="ph tt"><strong class="ph b">addr</strong></tt> with data type <a class="xref" href="generated/../USRealmAddress.html">US Realm Address</a> (CONF:5271)</li>
 <li class="li"> This patientRole <strong class="ph b">SHALL</strong> contain at least one [1..*] <tt class="ph tt"><strong class="ph b">id</strong></tt> (CONF:5268)</li>
-<li class="li"> This patientRole <strong class="ph b">SHALL</strong> contain at least one [1..*] <tt class="ph tt"><strong class="ph b">telecom</strong></tt> (CONF:5280)</li>
+<li class="li"> This patientRole <strong class="ph b">SHALL</strong> contain at least one [1..*] <tt class="ph tt"><strong class="ph b">telecom</strong></tt> with data type <a class="xref" href="generated/../TEL.html">TEL</a> (CONF:5280)</li>
 <li class="li"> This patientRole <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">patient</strong></tt> (CONF:5283) <ol class="ol"><li class="li"> This patient <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">administrativeGenderCode</strong></tt>, where the @code <strong class="ph b">SHALL</strong> be selected from ValueSet<tt class="ph tt"> <a class="xref" href="../terminology/AdministrativeGenderHL7V3.html">Administrative Gender (HL7 V3)</a> 2.16.840.1.113883.1.11.1</tt><strong class="ph b"> DYNAMIC</strong> (CONF:6394)</li>
-<li class="li"> This patient <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">birthTime</strong></tt></li>
-<li class="li"> This patient <strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">ethnicGroupCode</strong></tt>, where the @code <strong class="ph b">SHALL</strong> be selected from ValueSet<tt class="ph tt"> <a class="xref" href="../terminology/HITSPEthnicityValueSet.html">HITSP Ethnicity Value Set</a> 2.16.840.1.113883.1.11.15836</tt><strong class="ph b"> STATIC</strong> (CONF:5323)</li>
-<li class="li"> This patient <strong class="ph b">SHOULD</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">maritalStatusCode</strong></tt>, where the @code <strong class="ph b">SHOULD</strong> be selected from ValueSet<tt class="ph tt"> <a class="xref" href="../terminology/HL7MaritalStatus.html">HL7 Marital Status</a> 2.16.840.1.113883.1.11.12212</tt><strong class="ph b"> STATIC</strong> 1</li>
-<li class="li"> This patient <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">name</strong></tt> (CONF:5284)</li>
-<li class="li"> This patient <strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">raceCode</strong></tt>, where the @code <strong class="ph b">MAY</strong> be selected from ValueSet<tt class="ph tt"> <a class="xref" href="../terminology/Race.html">Race</a> 2.16.840.1.113883.1.11.14914</tt><strong class="ph b"> STATIC</strong> 1</li>
-<li class="li"> This patient <strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">religiousAffiliationCode</strong></tt>, where the @code <strong class="ph b">MAY</strong> be selected from ValueSet<tt class="ph tt"> <a class="xref" href="../terminology/HL7ReligiousAffiliation.html">HL7 Religious Affiliation</a> 2.16.840.1.113883.1.11.19185</tt><strong class="ph b"> STATIC</strong> 1</li>
-<li class="li"> This patient <strong class="ph b">MAY</strong> contain zero or more [0..*] <tt class="ph tt"><strong class="ph b">guardian</strong></tt> (CONF:5325) <ol class="ol" type="a"><li class="li"> Such guardians <strong class="ph b">SHOULD</strong> contain zero or more [0..*] <tt class="ph tt"><strong class="ph b">addr</strong></tt></li>
+<li class="li"> This patient <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">birthTime</strong></tt> (CONF:5298)</li>
+<li class="li"> This patient <strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">ethnicGroupCode</strong></tt>, where the @code <strong class="ph b">SHALL</strong> be selected from ValueSet<tt class="ph tt"> <a class="xref" href="generated/../../terminology/EthnicityValueSet.html">Ethnicity Value Set</a> 2.16.840.1.114222.4.11.837</tt><strong class="ph b"> STATIC</strong> (CONF:5323)</li>
+<li class="li"> This patient <strong class="ph b">SHOULD</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">maritalStatusCode</strong></tt> (CONF:5303), where the @code <strong class="ph b">SHALL</strong> be selected from ValueSet<tt class="ph tt"> <a class="xref" href="../terminology/HL7MaritalStatus.html">HL7 Marital Status</a> 2.16.840.1.113883.1.11.12212</tt><strong class="ph b"> STATIC</strong> 1</li>
+<li class="li"> This patient <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">name</strong></tt> with data type <a class="xref" href="generated/../USRealmPatientName.html">US Realm Patient Name</a> (CONF:5284)</li>
+<li class="li"> This patient <strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">raceCode</strong></tt>, where the @code <strong class="ph b">SHALL</strong> be selected from ValueSet<tt class="ph tt"> <a class="xref" href="../terminology/Race.html">Race</a> 2.16.840.1.113883.1.11.14914</tt><strong class="ph b"> STATIC</strong> 1 (CONF:5322)</li>
+<li class="li"> This patient <strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">religiousAffiliationCode</strong></tt> (CONF:5317), where the @code <strong class="ph b">SHALL</strong> be selected from ValueSet<tt class="ph tt"> <a class="xref" href="../terminology/HL7ReligiousAffiliation.html">HL7 Religious Affiliation</a> 2.16.840.1.113883.1.11.19185</tt><strong class="ph b"> STATIC</strong> 1</li>
+<li class="li"> This patient <strong class="ph b">MAY</strong> contain zero or more [0..*] <tt class="ph tt"><strong class="ph b">guardian</strong></tt> (CONF:5325) <ol class="ol" type="a"><li class="li"> Such guardians <strong class="ph b">SHOULD</strong> contain zero or more [0..*] <tt class="ph tt"><strong class="ph b">addr</strong></tt> with data type <a class="xref" href="generated/../USRealmAddress.html">US Realm Address</a></li>
 <li class="li"> Such guardians <strong class="ph b">SHOULD</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">code</strong></tt>, where the @code <strong class="ph b">SHALL</strong> be selected from ValueSet<tt class="ph tt"> <a class="xref" href="../terminology/PersonalRelationshipRoleType.html">Personal Relationship Role Type</a> 2.16.840.1.113883.1.11.19563</tt><strong class="ph b"> STATIC</strong> 1 (CONF:5326)</li>
-<li class="li"> Such guardians <strong class="ph b">MAY</strong> contain zero or more [0..*] <tt class="ph tt"><strong class="ph b">telecom</strong></tt></li>
-<li class="li"> Such guardians <strong class="ph b">SHALL</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">guardianPerson</strong></tt> (CONF:5385) <ol class="ol" type="i"><li class="li"> This guardianPerson <strong class="ph b">SHALL</strong> contain at least one [1..*] <tt class="ph tt"><strong class="ph b">name</strong></tt> (CONF:5470)</li>
+<li class="li"> Such guardians <strong class="ph b">MAY</strong> contain zero or more [0..*] <tt class="ph tt"><strong class="ph b">telecom</strong></tt> with data type <a class="xref" href="generated/../TEL.html">TEL</a></li>
+<li class="li"> Such guardians <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">guardianPerson</strong></tt> <ol class="ol" type="i"><li class="li"> This guardianPerson <strong class="ph b">SHALL</strong> contain at least one [1..*] <tt class="ph tt"><strong class="ph b">name</strong></tt></li>
+<li class="li"> This guardianPerson The content of name <strong class="ph b">SHALL</strong> be a conformant US Realm Person Name (PTN.US.FIELDED) (2.16.840.1.113883.10.20.22.5.1.1) (CONF:10414)</li>
 </ol>
  </li>
 </ol>
  </li>
-<li class="li"> This patient <strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">birthplace</strong></tt> (CONF:5395) <ol class="ol" type="a"><li class="li"> This birthplace <strong class="ph b">SHALL</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">place</strong></tt> (CONF:5396) <ol class="ol" type="i"><li class="li"> This place <strong class="ph b">SHALL</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">addr</strong></tt> (CONF:5397)</li>
+<li class="li"> This patient <strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">birthplace</strong></tt> (CONF:5395) <ol class="ol" type="a"><li class="li"> This birthplace <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">place</strong></tt> (CONF:5396) <ol class="ol" type="i"><li class="li"> This place <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">addr</strong></tt> (CONF:5397)</li>
+<li class="li"> This place If country is US, this addr <strong class="ph b">SHALL</strong> contain exactly one [1..1] state, which <strong class="ph b">SHALL</strong> be selected from ValueSet StateValueSet 2.16.840.1.113883.3.88.12.80.1 DYNAMIC</li>
+<li class="li"> This place This addr <strong class="ph b">MAY</strong> contain zero or one [0..1] postalCode, which <strong class="ph b">SHALL</strong> be selected from ValueSet PostalCodeValueSet 2.16.840.1.113883.3.88.12.80.2 DYNAMIC</li>
+<li class="li"> This place This addr <strong class="ph b">SHOULD</strong> contain zero or one [0..1] country, which <strong class="ph b">SHALL</strong> be selected from ValueSet CountryValueSet 2.16.840.1.113883.3.88.12.80.63 DYNAMIC</li>
 </ol>
  </li>
 </ol>
  </li>
-<li class="li"> This patient <strong class="ph b">SHOULD</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">languageCommunication</strong></tt> (CONF:5406) <ol class="ol" type="a"><li class="li"> This languageCommunication <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">languageCode</strong></tt>, where the @code <strong class="ph b">SHALL</strong> be selected from ValueSet<tt class="ph tt"> <a class="xref" href="../terminology/Language.html">Language</a> 2.16.840.1.113883.1.11.11526</tt><strong class="ph b"> DYNAMIC</strong> (CONF:5407)</li>
-<li class="li"> This languageCommunication <strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">preferenceInd</strong></tt> (CONF:5414)</li>
-<li class="li"> This languageCommunication <strong class="ph b">SHOULD</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">proficiencyLevelCode</strong></tt>, where the @code <strong class="ph b">SHALL</strong> be selected from ValueSet<tt class="ph tt"> <a class="xref" href="../terminology/LanguageAbilityProficiency.html">LanguageAbilityProficiency</a> 2.16.840.1.113883.1.11.12199</tt><strong class="ph b"> STATIC</strong> (CONF:9965)</li>
-<li class="li"> This languageCommunication <strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">modeCode</strong></tt>, where the @code <strong class="ph b">SHALL</strong> be selected from ValueSet<tt class="ph tt"> <a class="xref" href="../terminology/HL7LanguageAbilityMode.html">HL7 LanguageAbilityMode</a> 2.16.840.1.113883.1.11.12249</tt><strong class="ph b"> STATIC</strong> 1 (CONF:5409)</li>
+<li class="li"> This patient <strong class="ph b">SHOULD</strong> contain zero or more [0..*] <tt class="ph tt"><strong class="ph b">languageCommunication</strong></tt> (CONF:5406) <ol class="ol" type="a"><li class="li"> Such languageCommunications <strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">preferenceInd</strong></tt> (CONF:5414)</li>
+<li class="li"> Such languageCommunications <strong class="ph b">SHOULD</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">proficiencyLevelCode</strong></tt>, where the @code <strong class="ph b">SHALL</strong> be selected from ValueSet<tt class="ph tt"> <a class="xref" href="../terminology/LanguageAbilityProficiency.html">LanguageAbilityProficiency</a> 2.16.840.1.113883.1.11.12199</tt><strong class="ph b"> STATIC</strong> (CONF:9965)</li>
+<li class="li"> Such languageCommunications <strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">modeCode</strong></tt>, where the @code <strong class="ph b">SHALL</strong> be selected from ValueSet<tt class="ph tt"> <a class="xref" href="../terminology/HL7LanguageAbilityMode.html">HL7 LanguageAbilityMode</a> 2.16.840.1.113883.1.11.12249</tt><strong class="ph b"> STATIC</strong> 1 (CONF:5409)</li>
+<li class="li"> Such languageCommunications <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">languageCode</strong></tt>, where the @code <strong class="ph b">SHALL</strong> be selected from ValueSet<tt class="ph tt"> <a class="xref" href="../terminology/Language.html">Language</a> 2.16.840.1.113883.1.11.11526</tt><strong class="ph b"> DYNAMIC</strong> (CONF:5407)</li>
 </ol>
  </li>
+<li class="li"> This patient <strong class="ph b">MAY</strong> contain zero or more [0..*] <tt class="ph tt"><strong class="ph b">sDTCRaceCode</strong></tt>, where the @code <strong class="ph b">SHALL</strong> be selected from ValueSet<tt class="ph tt"> <a class="xref" href="../terminology/Race.html">Race</a> 2.16.840.1.113883.1.11.14914</tt><strong class="ph b"> STATIC</strong> 1 (CONF:7263)</li>
 <li class="li"> This patient <strong class="ph b">SHALL</strong> satisfy: BirthTime precise to year</li>
 <li class="li"> This patient <strong class="ph b">SHOULD</strong> satisfy: BirthTime precise to day</li>
 </ol>
  </li>
-<li class="li"> This patientRole Contains zero or one [0..1] <tt class="ph tt"><strong class="ph b">providerOrganization</strong></tt> <ol class="ol"><li class="li"> This providerOrganization <strong class="ph b">SHALL</strong> contain at least one [1..*] <tt class="ph tt"><strong class="ph b">addr</strong></tt> (CONF:5422)</li>
+<li class="li"> This patientRole <strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">providerOrganization</strong></tt> (CONF:5416) <ol class="ol"><li class="li"> This providerOrganization <strong class="ph b">SHALL</strong> contain at least one [1..*] <tt class="ph tt"><strong class="ph b">addr</strong></tt> with data type <a class="xref" href="generated/../USRealmAddress.html">US Realm Address</a> (CONF:5422)</li>
 <li class="li"> This providerOrganization <strong class="ph b">SHALL</strong> contain at least one [1..*] <tt class="ph tt"><strong class="ph b">id</strong></tt> (CONF:5417)</li>
 <li class="li"> This providerOrganization <strong class="ph b">SHALL</strong> contain at least one [1..*] <tt class="ph tt"><strong class="ph b">name</strong></tt> (CONF:5419)</li>
-<li class="li"> This providerOrganization <strong class="ph b">SHALL</strong> contain at least one [1..*] <tt class="ph tt"><strong class="ph b">telecom</strong></tt> (CONF:5420)</li>
+<li class="li"> This providerOrganization <strong class="ph b">SHALL</strong> contain at least one [1..*] <tt class="ph tt"><strong class="ph b">telecom</strong></tt> with data type <a class="xref" href="generated/../TEL.html">TEL</a> (CONF:5420)</li>
 <li class="li"> This providerOrganization The id <strong class="ph b">SHOULD</strong> include zero or one [0..1] id where id/@root ="2.16.840.1.113883.4.6" National Provider Identifier (CONF:9996) (CONF:9996)</li>
 </ol>
  </li>
@@ -131,45 +146,46 @@ CDA R2 states that LOINC is the preferred vocabulary for document type codes, wh
 
 </li>
 
-<li class="li"><strong class="ph b">SHALL</strong> contain at least one [1..*] <tt class="ph tt"><strong class="ph b">author</strong></tt> (CONF:5444) <ol class="ol" type="a"><li class="li"> Such authors Contains exactly one [1..1] <tt class="ph tt"><strong class="ph b">time</strong></tt></li>
-<li class="li"> Such authors <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">assignedAuthor</strong></tt> (CONF:5448) <ol class="ol" type="i"><li class="li"> This assignedAuthor <strong class="ph b">SHALL</strong> contain at least one [1..*] <tt class="ph tt"><strong class="ph b">addr</strong></tt> (CONF:5452)</li>
-<li class="li"> This assignedAuthor <strong class="ph b">SHOULD</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">code</strong></tt>, where the @code <strong class="ph b">SHOULD</strong> be selected from (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.101 NUCC Health Care Provider Taxonomy</tt>) (CONF:9942)</li>
-<li class="li"> This assignedAuthor <strong class="ph b">SHALL</strong> contain at least one [1..*] <tt class="ph tt"><strong class="ph b">id</strong></tt> (CONF:5449)</li>
-<li class="li"> This assignedAuthor <strong class="ph b">SHALL</strong> contain at least one [1..*] <tt class="ph tt"><strong class="ph b">telecom</strong></tt> (CONF:5428)</li>
-<li class="li"> This assignedAuthor Contains zero or one [0..1] <tt class="ph tt"><strong class="ph b">assignedPerson</strong></tt> <ol class="ol"><li class="li"> This assignedPerson <strong class="ph b">SHALL</strong> contain at least one [1..*] <tt class="ph tt"><strong class="ph b">name</strong></tt> (CONF:5470)</li>
+<li class="li"><strong class="ph b">SHALL</strong> contain at least one [1..*] <tt class="ph tt"><strong class="ph b">author</strong></tt> (CONF:5444) <ol class="ol" type="a"><li class="li"> Such authors <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">time</strong></tt> (CONF:5445)</li>
+<li class="li"> Such authors <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">assignedAuthor</strong></tt> (CONF:5448) <ol class="ol" type="i"><li class="li"> This assignedAuthor <strong class="ph b">SHALL</strong> contain at least one [1..*] <tt class="ph tt"><strong class="ph b">addr</strong></tt> with data type <a class="xref" href="generated/../USRealmAddress.html">US Realm Address</a> (CONF:5452)</li>
+<li class="li"> This assignedAuthor <strong class="ph b">SHOULD</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">code</strong></tt> (CONF:16787), where the @code <strong class="ph b">SHOULD</strong> be selected from ValueSet<tt class="ph tt"> <a class="xref" href="../terminology/HealthcareProviderTaxonomyNUCCHIPAA.html">Healthcare Provider Taxonomy (NUCC - HIPAA)</a> 2.16.840.1.114222.4.11.1066</tt><strong class="ph b"> DYNAMIC</strong> (CONF:16788)</li>
+<li class="li"> This assignedAuthor <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">id</strong></tt> (CONF:5449)</li>
+<li class="li"> This assignedAuthor <strong class="ph b">SHALL</strong> contain at least one [1..*] <tt class="ph tt"><strong class="ph b">telecom</strong></tt> with data type <a class="xref" href="generated/../TEL.html">TEL</a> (CONF:5428)</li>
+<li class="li"> This assignedAuthor <strong class="ph b">SHOULD</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">assignedAuthoringDevice</strong></tt> <ol class="ol"><li class="li"> This assignedAuthoringDevice <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">manufacturerModelName</strong></tt> (CONF:16784)</li>
+<li class="li"> This assignedAuthoringDevice <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">softwareName</strong></tt> (CONF:16785)</li>
 </ol>
  </li>
-<li class="li"> This assignedAuthor Contains zero or one [0..1] <tt class="ph tt"><strong class="ph b">assignedAuthoringDevice</strong></tt> <ol class="ol"><li class="li"> This assignedAuthoringDevice <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">manufacturerModelName</strong></tt> (CONF:9936)</li>
-<li class="li"> This assignedAuthoringDevice <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">softwareName</strong></tt> (CONF:9999)</li>
+<li class="li"> This assignedAuthor <strong class="ph b">SHOULD</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">assignedPerson</strong></tt> <ol class="ol"><li class="li"> This assignedPerson <strong class="ph b">SHALL</strong> contain at least one [1..*] <tt class="ph tt"><strong class="ph b">name</strong></tt> (CONF:16789)</li>
 </ol>
  </li>
-<li class="li"> This assignedAuthor This assignedAuthor <strong class="ph b">SHALL</strong> contain exactly one  [1..1] assignedPerson or assignedAuthoringDevice</li>
-<li class="li"> This assignedAuthor The id <strong class="ph b">SHOULD</strong> include zero or one [0..1] id where id/@root ="2.16.840.1.113883.4.6" National Provider Identifier (CONF:9996)</li>
+<li class="li"> This assignedAuthor This assignedAuthor <strong class="ph b">SHALL</strong> contain exactly one  [1..1] assignedPerson or assignedAuthoringDevice (CONF:16790)</li>
+<li class="li"> This assignedAuthor The id <strong class="ph b">SHALL</strong> contain exactly one root ="2.16.840.1.113883.4.6" National Provider Identifier (CONF:9996) (CONF:16786)</li>
 </ol>
  </li>
+<li class="li"> Such authors This time <strong class="ph b">SHALL</strong> contain exactly one [1..1] US Realm Date and Time (DTM.US.FIELDED) (2.16.840.1.113883.10.20.22.5.4) (CONF:5446)</li>
 </ol>
 
 </li>
 
-<li class="li"><strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">dataEnterer</strong></tt> (CONF:5441) <ol class="ol" type="a"><li class="li"> This dataEnterer <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">assignedEntity</strong></tt> (CONF:5442) <ol class="ol" type="i"><li class="li"> This assignedEntity <strong class="ph b">SHALL</strong> contain at least one [1..*] <tt class="ph tt"><strong class="ph b">addr</strong></tt> (CONF:5460)</li>
+<li class="li"><strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">dataEnterer</strong></tt> (CONF:5441) <ol class="ol" type="a"><li class="li"> This dataEnterer <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">assignedEntity</strong></tt> (CONF:5442) <ol class="ol" type="i"><li class="li"> This assignedEntity <strong class="ph b">SHALL</strong> contain at least one [1..*] <tt class="ph tt"><strong class="ph b">addr</strong></tt> with data type <a class="xref" href="generated/../USRealmAddress.html">US Realm Address</a> (CONF:5460)</li>
 <li class="li"> This assignedEntity <strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">code</strong></tt>, where the @code <strong class="ph b">SHOULD</strong> be selected from (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.101 NUCC Health Care Provider Taxonomy</tt>) (CONF:9944)</li>
 <li class="li"> This assignedEntity <strong class="ph b">SHALL</strong> contain at least one [1..*] <tt class="ph tt"><strong class="ph b">id</strong></tt> (CONF:5443)</li>
-<li class="li"> This assignedEntity <strong class="ph b">SHALL</strong> contain at least one [1..*] <tt class="ph tt"><strong class="ph b">telecom</strong></tt> (CONF:5466)</li>
-<li class="li"> This assignedEntity <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">assignedPerson</strong></tt> (CONF:5469) <ol class="ol"><li class="li"> This assignedPerson <strong class="ph b">SHALL</strong> contain at least one [1..*] <tt class="ph tt"><strong class="ph b">name</strong></tt> (CONF:5470)</li>
+<li class="li"> This assignedEntity <strong class="ph b">SHALL</strong> contain at least one [1..*] <tt class="ph tt"><strong class="ph b">telecom</strong></tt> with data type <a class="xref" href="generated/../TEL.html">TEL</a> (CONF:5466)</li>
+<li class="li"> This assignedEntity <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">assignedPerson</strong></tt> (CONF:5469) <ol class="ol"><li class="li"> This assignedPerson <strong class="ph b">SHALL</strong> contain at least one [1..*] <tt class="ph tt"><strong class="ph b">name</strong></tt></li>
 </ol>
  </li>
-<li class="li"> This assignedEntity id <strong class="ph b">SHOULD</strong> include zero or one [0..1] id where id/@root ="2.16.840.1.113883.4.6" National Provider Identifier (CONF:9943)</li>
+<li class="li"> This assignedEntity id <strong class="ph b">SHOULD</strong> include zero or one [0..1] @root ="2.16.840.1.113883.4.6" National Provider Identifier (CONF:16821)</li>
 </ol>
  </li>
 </ol>
 
 </li>
 
-<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">custodian</strong></tt> (iv., CONF:5519) <ol class="ol" type="a"><li class="li"> This custodian <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">assignedCustodian</strong></tt> (CONF:5520) <ol class="ol" type="i"><li class="li"> This assignedCustodian <strong class="ph b">SHALL</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">representedCustodianOrganization</strong></tt> (CONF:5521) <ol class="ol"><li class="li"> This representedCustodianOrganization <strong class="ph b">SHALL</strong> contain at least one [1..*] <tt class="ph tt"><strong class="ph b">addr</strong></tt> (CONF:5559)</li>
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">custodian</strong></tt> (iv., CONF:5519) <ol class="ol" type="a"><li class="li"> This custodian <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">assignedCustodian</strong></tt> (CONF:5520) <ol class="ol" type="i"><li class="li"> This assignedCustodian <strong class="ph b">SHALL</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">representedCustodianOrganization</strong></tt> (CONF:5521) <ol class="ol"><li class="li"> This representedCustodianOrganization <strong class="ph b">SHALL</strong> contain at least one [1..*] <tt class="ph tt"><strong class="ph b">addr</strong></tt> with data type <a class="xref" href="generated/../USRealmAddress.html">US Realm Address</a> (CONF:5559)</li>
 <li class="li"> This representedCustodianOrganization <strong class="ph b">SHALL</strong> contain at least one [1..*] <tt class="ph tt"><strong class="ph b">id</strong></tt> (CONF:5522)</li>
 <li class="li"> This representedCustodianOrganization <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">name</strong></tt> (CONF:5524)</li>
-<li class="li"> This representedCustodianOrganization <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">telecom</strong></tt> (CONF:5525)</li>
-<li class="li"> This representedCustodianOrganization The id <strong class="ph b">SHOULD</strong> include zero or one [0..1] id where id/@root ="2.16.840.1.113883.4.6" National Provider Identifier (CONF:9996)</li>
+<li class="li"> This representedCustodianOrganization <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">telecom</strong></tt> with data type <a class="xref" href="generated/../TEL.html">TEL</a> (CONF:5525)</li>
+<li class="li"> This representedCustodianOrganization The id <strong class="ph b">SHOULD</strong> include zero or one [0..1] @root ="2.16.840.1.113883.4.6" National Provider Identifier (CONF:9996)</li>
 </ol>
  </li>
 </ol>
@@ -178,10 +194,10 @@ CDA R2 states that LOINC is the preferred vocabulary for document type codes, wh
 
 </li>
 
-<li class="li"><strong class="ph b">MAY</strong> contain zero or more [0..*] <tt class="ph tt"><strong class="ph b">informationRecipient</strong></tt> (CONF:5565) <ol class="ol" type="a"><li class="li"> Such informationRecipients <strong class="ph b">SHALL</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">intendedRecipient</strong></tt> (CONF:5566) <ol class="ol" type="i"><li class="li"> This intendedRecipient <strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">informationRecipient</strong></tt> (CONF:5568) <ol class="ol"><li class="li"> This informationRecipient <strong class="ph b">SHALL</strong> contain at least one [1..*] <tt class="ph tt"><strong class="ph b">name</strong></tt> (CONF:5470)</li>
+<li class="li"><strong class="ph b">MAY</strong> contain zero or more [0..*] <tt class="ph tt"><strong class="ph b">informationRecipient</strong></tt> (CONF:5565) <ol class="ol" type="a"><li class="li"> Such informationRecipients <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">intendedRecipient</strong></tt> (CONF:5566) <ol class="ol" type="i"><li class="li"> This intendedRecipient <strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">informationRecipient</strong></tt> (CONF:5568) <ol class="ol"><li class="li"> This informationRecipient <strong class="ph b">SHALL</strong> contain at least one [1..*] <tt class="ph tt"><strong class="ph b">name</strong></tt> (CONF:5470)</li>
 </ol>
  </li>
-<li class="li"> This intendedRecipient <strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">receivedOrganization</strong></tt> (CONF:5577) <ol class="ol"><li class="li"> This receivedOrganization <strong class="ph b">SHALL</strong> contain zero or more [0..*] <tt class="ph tt"><strong class="ph b">name</strong></tt> (CONF:5578)</li>
+<li class="li"> This intendedRecipient <strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">receivedOrganization</strong></tt> (CONF:5577) <ol class="ol"><li class="li"> This receivedOrganization <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">name</strong></tt> (CONF:5578)</li>
 </ol>
  </li>
 </ol>
@@ -192,14 +208,14 @@ CDA R2 states that LOINC is the preferred vocabulary for document type codes, wh
 
 <li class="li"><strong class="ph b">SHOULD</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">legalAuthenticator</strong></tt> (CONF:5579) <ol class="ol" type="a"><li class="li"> This legalAuthenticator <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">time</strong></tt> (CONF:5580)</li>
 <li class="li"> This legalAuthenticator <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">signatureCode</strong></tt><tt class="ph tt"><strong class="ph b">/@code</strong>="S" </tt> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.5.89 Participationsignature</tt>) (CONF:5583, CONF:5584)</li>
-<li class="li"> This legalAuthenticator Contains zero or one [0..1] <tt class="ph tt"><strong class="ph b">assignedEntity</strong></tt> <ol class="ol" type="i"><li class="li"> This assignedEntity <strong class="ph b">SHALL</strong> contain at least one [1..*] <tt class="ph tt"><strong class="ph b">addr</strong></tt></li>
-<li class="li"> This assignedEntity <strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">code</strong></tt>, where the @code <strong class="ph b">SHOULD</strong> be selected from (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.101 NUCC Health Care Provider Taxonomy</tt>) (CONF:9949)</li>
-<li class="li"> This assignedEntity <strong class="ph b">SHALL</strong> contain at least one [1..*] <tt class="ph tt"><strong class="ph b">id</strong></tt></li>
-<li class="li"> This assignedEntity <strong class="ph b">SHALL</strong> contain at least one [1..*] <tt class="ph tt"><strong class="ph b">telecom</strong></tt></li>
-<li class="li"> This assignedEntity <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">assignedPerson</strong></tt> (CONF:5597) <ol class="ol"><li class="li"> This assignedPerson <strong class="ph b">SHALL</strong> contain at least one [1..*] <tt class="ph tt"><strong class="ph b">name</strong></tt> (CONF:5470)</li>
+<li class="li"> This legalAuthenticator Contains zero or one [0..1] <tt class="ph tt"><strong class="ph b">assignedEntity</strong></tt> <ol class="ol" type="i"><li class="li"> This assignedEntity <strong class="ph b">SHALL</strong> contain at least one [1..*] <tt class="ph tt"><strong class="ph b">addr</strong></tt> with data type <a class="xref" href="generated/../USRealmAddress.html">US Realm Address</a> (CONF:5589)</li>
+<li class="li"> This assignedEntity <strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">code</strong></tt> (CONF:17000), where the @code <strong class="ph b">SHOULD</strong> be selected from ValueSet<tt class="ph tt"> <a class="xref" href="../terminology/HealthcareProviderTaxonomyNUCCHIPAA.html">Healthcare Provider Taxonomy (NUCC - HIPAA)</a> 2.16.840.1.114222.4.11.1066</tt><strong class="ph b"> DYNAMIC</strong></li>
+<li class="li"> This assignedEntity <strong class="ph b">SHALL</strong> contain at least one [1..*] <tt class="ph tt"><strong class="ph b">id</strong></tt> (CONF:5586)</li>
+<li class="li"> This assignedEntity <strong class="ph b">SHALL</strong> contain at least one [1..*] <tt class="ph tt"><strong class="ph b">telecom</strong></tt> with data type <a class="xref" href="generated/../TEL.html">TEL</a> (CONF:5595)</li>
+<li class="li"> This assignedEntity <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">assignedPerson</strong></tt> (CONF:5597) <ol class="ol"><li class="li"> This assignedPerson <strong class="ph b">SHALL</strong> contain at least one [1..*] <tt class="ph tt"><strong class="ph b">name</strong></tt> (CONF:5598)</li>
 </ol>
  </li>
-<li class="li"> This assignedEntity The id <strong class="ph b">SHOULD</strong> include zero or one [0..1] id where id/@root ="2.16.840.1.113883.4.6" National Provider Identifier (CONF:9996)</li>
+<li class="li"> This assignedEntity The id <strong class="ph b">MAY</strong> include zero or one [0..1] root ="2.16.840.1.113883.4.6" National Provider Identifier (CONF:9996) (CONF:16823)</li>
 </ol>
  </li>
 </ol>
@@ -208,14 +224,14 @@ CDA R2 states that LOINC is the preferred vocabulary for document type codes, wh
 
 <li class="li"><strong class="ph b">MAY</strong> contain zero or more [0..*] <tt class="ph tt"><strong class="ph b">authenticator</strong></tt> (CONF:5607) <ol class="ol" type="a"><li class="li"> Such authenticators <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">time</strong></tt> (CONF:5608)</li>
 <li class="li"> Such authenticators <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">signatureCode</strong></tt><tt class="ph tt"><strong class="ph b">/@code</strong>="S" </tt> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.5.89 Participationsignature</tt>) (CONF:5610)</li>
-<li class="li"> Such authenticators <strong class="ph b">SHALL</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">assignedEntity</strong></tt> (CONF:5612) <ol class="ol" type="i"><li class="li"> This assignedEntity <strong class="ph b">SHALL</strong> contain at least one [1..*] <tt class="ph tt"><strong class="ph b">addr</strong></tt> (CONF:5616)</li>
-<li class="li"> This assignedEntity <strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">code</strong></tt>, where the @code <strong class="ph b">SHOULD</strong> be selected from (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.101 NUCC Health Care Provider Taxonomy</tt>) (CONF:9951)</li>
+<li class="li"> Such authenticators <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">assignedEntity</strong></tt> (CONF:5612) <ol class="ol" type="i"><li class="li"> This assignedEntity <strong class="ph b">SHALL</strong> contain at least one [1..*] <tt class="ph tt"><strong class="ph b">addr</strong></tt> with data type <a class="xref" href="generated/../USRealmAddress.html">US Realm Address</a> (CONF:5616)</li>
+<li class="li"> This assignedEntity <strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">code</strong></tt> (CONF:16825), where the @code <strong class="ph b">SHOULD</strong> be selected from ValueSet<tt class="ph tt"> <a class="xref" href="../terminology/HealthcareProviderTaxonomyNUCCHIPAA.html">Healthcare Provider Taxonomy (NUCC - HIPAA)</a> 2.16.840.1.114222.4.11.1066</tt><strong class="ph b"> DYNAMIC</strong> (CONF:16826)</li>
 <li class="li"> This assignedEntity <strong class="ph b">SHALL</strong> contain at least one [1..*] <tt class="ph tt"><strong class="ph b">id</strong></tt> (CONF:5613)</li>
-<li class="li"> This assignedEntity <strong class="ph b">SHALL</strong> contain at least one [1..*] <tt class="ph tt"><strong class="ph b">telecom</strong></tt> (CONF:5622)</li>
-<li class="li"> This assignedEntity Contains zero or one [0..1] <tt class="ph tt"><strong class="ph b">assignedPerson</strong></tt> <ol class="ol"><li class="li"> This assignedPerson <strong class="ph b">SHALL</strong> contain at least one [1..*] <tt class="ph tt"><strong class="ph b">name</strong></tt> (CONF:5470)</li>
+<li class="li"> This assignedEntity <strong class="ph b">SHALL</strong> contain at least one [1..*] <tt class="ph tt"><strong class="ph b">telecom</strong></tt> with data type <a class="xref" href="generated/../TEL.html">TEL</a> (CONF:5622)</li>
+<li class="li"> This assignedEntity <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">assignedPerson</strong></tt> (CONF:5624) <ol class="ol"><li class="li"> This assignedPerson <strong class="ph b">SHALL</strong> contain at least one [1..*] <tt class="ph tt"><strong class="ph b">name</strong></tt> (CONF:5625)</li>
 </ol>
  </li>
-<li class="li"> This assignedEntity The id <strong class="ph b">SHOULD</strong> include zero or one [0..1] id where id/@root ="2.16.840.1.113883.4.6" National Provider Identifier (CONF:9996)</li>
+<li class="li"> This assignedEntity The id <strong class="ph b">SHOULD</strong> include zero or one [0..1] root ="2.16.840.1.113883.4.6" National Provider Identifier (CONF:9996)</li>
 </ol>
  </li>
 </ol>
@@ -228,17 +244,17 @@ CDA R2 states that LOINC is the preferred vocabulary for document type codes, wh
 <li class="li"><strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">versionNumber</strong></tt> (CONF:5264)
 </li>
 
-<li class="li"><strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">informant</strong></tt> (CONF:8001) <ol class="ol" type="a"><li class="li"> This informant Contains zero or one [0..1] <tt class="ph tt"><strong class="ph b">assignedEntity</strong></tt> <ol class="ol" type="i"><li class="li"> This assignedEntity <strong class="ph b">SHOULD</strong> contain zero or more [0..*] <tt class="ph tt"><strong class="ph b">addr</strong></tt> (CONF:8220)</li>
+<li class="li"><strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">informant</strong></tt> (CONF:8001) <ol class="ol" type="a"><li class="li"> This informant <strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">assignedEntity</strong></tt> <ol class="ol" type="i"><li class="li"> This assignedEntity <strong class="ph b">SHOULD</strong> contain zero or more [0..*] <tt class="ph tt"><strong class="ph b">addr</strong></tt> with data type <a class="xref" href="generated/../USRealmAddress.html">US Realm Address</a> (CONF:8220)</li>
 <li class="li"> This assignedEntity <strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">code</strong></tt>, where the @code <strong class="ph b">SHOULD</strong> be selected from (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.101 NUCC Health Care Provider Taxonomy</tt>) (CONF:9947)</li>
-<li class="li"> This assignedEntity <strong class="ph b">SHOULD</strong> contain at least one [1..*] <tt class="ph tt"><strong class="ph b">id</strong></tt> (a., CONF:9945)</li>
-<li class="li"> This assignedEntity <strong class="ph b">SHALL</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">assignedPerson</strong></tt> (CONF:8221) <ol class="ol"><li class="li"> This assignedPerson <strong class="ph b">SHALL</strong> contain at least one [1..*] <tt class="ph tt"><strong class="ph b">name</strong></tt> (CONF:5470)</li>
+<li class="li"> This assignedEntity <strong class="ph b">SHOULD</strong> contain zero or more [0..*] <tt class="ph tt"><strong class="ph b">id</strong></tt> (a., CONF:9945)</li>
+<li class="li"> This assignedEntity <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">assignedPerson</strong></tt> (CONF:8221) <ol class="ol"><li class="li"> This assignedPerson <strong class="ph b">SHALL</strong> contain at least one [1..*] <tt class="ph tt"><strong class="ph b">name</strong></tt></li>
 </ol>
  </li>
 <li class="li"> This assignedEntity The id <strong class="ph b">SHOULD</strong> include zero or one [0..1] id where id/@root ="2.16.840.1.113883.4.6" National Provider Identifier (CONF:9996)</li>
 </ol>
  </li>
-<li class="li"> This informant Contains zero or one [0..1] <tt class="ph tt"><strong class="ph b">relatedEntity</strong></tt> <ol class="ol" type="i"><li class="li"> This relatedEntity <strong class="ph b">SHOULD</strong> contain zero or more [0..*] <tt class="ph tt"><strong class="ph b">addr</strong></tt> (CONF:8220)</li>
-<li class="li"> This relatedEntity <strong class="ph b">SHALL</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">relatedPerson</strong></tt> (CONF:8221) <ol class="ol"><li class="li"> This relatedPerson <strong class="ph b">SHALL</strong> contain at least one [1..*] <tt class="ph tt"><strong class="ph b">name</strong></tt> (CONF:5470)</li>
+<li class="li"> This informant <strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">relatedEntity</strong></tt> <ol class="ol" type="i"><li class="li"> This relatedEntity <strong class="ph b">SHOULD</strong> contain zero or more [0..*] <tt class="ph tt"><strong class="ph b">addr</strong></tt> with data type <a class="xref" href="generated/../USRealmAddress.html">US Realm Address</a> (CONF:8220)</li>
+<li class="li"> This relatedEntity <strong class="ph b">SHALL</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">relatedPerson</strong></tt> (CONF:8221) <ol class="ol"><li class="li"> This relatedPerson <strong class="ph b">SHALL</strong> contain at least one [1..*] <tt class="ph tt"><strong class="ph b">name</strong></tt></li>
 </ol>
  </li>
 </ol>
@@ -262,17 +278,57 @@ CDA R2 states that LOINC is the preferred vocabulary for document type codes, wh
 
 </li>
 
-<li class="li"><strong class="ph b">SHALL</strong> satisfy: The US Realm Clinical Document Address datatype flavor is used by US Realm Clinical Document Header for the patient or any other person or organization mentioned within it.</li>
+<li class="li"><strong class="ph b">MAY</strong> contain zero or more [0..*] <tt class="ph tt"><strong class="ph b">documentationOf</strong></tt> (CONF:14835) <ol class="ol" type="a"><li class="li"> Such documentationOfs <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">serviceEvent</strong></tt> (CONF:14836) <ol class="ol" type="i"><li class="li"> This serviceEvent <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">effectiveTime</strong></tt> (CONF:14837)</li>
+<li class="li"> This serviceEvent <strong class="ph b">SHOULD</strong> contain zero or more [0..*] <tt class="ph tt"><strong class="ph b">performer</strong></tt> (CONF:14839) <ol class="ol"><li class="li"> Such performers <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@typeCode</strong>="PRF" </tt> (CONF:14840)<div class="p"><p class="lines"><em class="ph i">The performer participant represents clinicians who actually and principally carry out the serviceEvent. In a transfer of care this represents the healthcare providers involved in the current or pertinent historical care of the patient. Preferably, the patient's key healthcare care team members would be listed, particularly their primary physician and any active consulting physicians, therapists, and counselors (CONF:16753).</em></p>
+</div>
+</li>
+<li class="li"> Such performers <strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">functionCode</strong></tt> (CONF:16818), where the @code <strong class="ph b">SHOULD</strong> be selected from (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.5.88 ParticipationFunction</tt>) (CONF:16819)</li>
+<li class="li"> Such performers <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">assignedEntity</strong></tt> (CONF:14841) <ol class="ol" type="a"><li class="li"> This assignedEntity <strong class="ph b">SHOULD</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">code</strong></tt> (CONF:14842), where the @code <strong class="ph b">SHALL</strong> be selected from (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.101 NUCC Health Care Provider Taxonomy</tt>) (CONF:14843)</li>
+<li class="li"> This assignedEntity <strong class="ph b">SHALL</strong> contain at least one [1..*] <tt class="ph tt"><strong class="ph b">id</strong></tt> (CONF:14846)</li>
+<li class="li"> This assignedEntity The id <strong class="ph b">SHOULD</strong> include zero or one [0..1]root ="2.16.840.1.113883.4.6" National Provider Identifier (CONF:9996) (CONF:14847)</li>
+</ol>
+ </li>
+</ol>
+ </li>
+<li class="li"> This serviceEvent effectiveTime <strong class="ph b">SHALL</strong> contain exactly one [1..1] low (CONF:14838)</li>
+</ol>
+ </li>
+</ol>
+
+</li>
+
+<li class="li"><strong class="ph b">MAY</strong> contain zero or more [0..*] <tt class="ph tt"><strong class="ph b">authorization</strong></tt> (CONF:16792) <ol class="ol" type="a"><li class="li"> Such authorizations <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">consent</strong></tt> (CONF:16793) <ol class="ol" type="i"><li class="li"> This consent <strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">code</strong></tt> (CONF:16795)<div class="p"><p class="lines"><em class="ph i">The type of consent (e.g., a consent to perform the related serviceEvent) is conveyed in consent/code (CONF:16796).</em></p>
+</div>
+</li>
+<li class="li"> This consent <strong class="ph b">MAY</strong> contain zero or more [0..*] <tt class="ph tt"><strong class="ph b">id</strong></tt> (CONF:16794)</li>
+<li class="li"> This consent <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">statusCode</strong></tt> (CONF:16797)<tt class="ph tt"><strong class="ph b">/@code</strong>="completed" </tt><em class="ph i">Completed</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.5.6 HL7ActClass</tt>) (CONF:16798)</li>
+</ol>
+ </li>
+</ol>
+
+</li>
 
 <li class="li"><strong class="ph b">SHALL</strong> satisfy: The US Realm Clinical Document Date and Time datatype flavor records date and time information. If no time zone offset 
 is provided, you can make no assumption about time, unless you have made a local exchange agreement.
 This data type uses the same rules as US Realm Date and Time (DTM.US.FIELDED),  but is used with the effectiveTime 
 element.</li>
 
-<li class="li"><strong class="ph b">SHALL</strong> satisfy: The US Realm Patient Name datatype flavor is a set of reusable constraints that can be used for the patient or any other
- person. It requires a first (given) and last (family) name. If a patient or person has only one name part (e.g., 
-patient with first name only) place the name part in the field required by the organization. Use the appropriate 
-nullFlavor, "Not Applicable" (NA), in the other field.</li>
+<li class="li"><strong class="ph b">SHALL</strong> satisfy: The US Realm Clinical Document Date and Time datatype flavor records date and time information. If no time zone offset 
+is provided, you can make no assumption about time, unless you have made a local exchange agreement.
+This data type uses the same rules as US Realm Date and Time (DTM.US.FIELDED),  but is used with the effectiveTime 
+element.</li>
+
+<li class="li">typeId <strong class="ph b">SHALL</strong> contain exactly one [1..1] @root="2.16.840.1.113883.1.3" (CONF:5250)</li>
+
+<li class="li">typeId <strong class="ph b">SHALL</strong> contain exactly one [1..1] @extension="POCD_HD000040" (CONF:5251)</li>
+
+<li class="li">id <strong class="ph b">SHALL</strong> be a globally unique identifier for the document (CONF:9991)</li>
+
+<li class="li">code <strong class="ph b">SHALL</strong> specify the particular kind of document (e.g. History and Physical, Discharge Summary, Progress Note). (CONF:9992)</li>
+
+<li class="li">If setId is present versionNumber <strong class="ph b">SHALL</strong> be present (CONF:6380)</li>
+
+<li class="li">If versionNumber is present setId <strong class="ph b">SHALL</strong> be present (CONF:6387)</li>
 
 </ol>
 
@@ -287,140 +343,84 @@ nullFlavor, "Not Applicable" (NA), in the other field.</li>
 			
 			<div class="p">
 			<pre class="pre codeblock">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
-&lt;ClinicalDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd"&gt;
+&lt;ClinicalDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xmlns:sdtc="urn:hl7-org:sdtc" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd"&gt;
   &lt;realmCode code="US"/&gt;
   &lt;typeId root="2.16.840.1.113883.1.3"/&gt;
   &lt;templateId root="2.16.840.1.113883.10.20.22.1.1"/&gt;
-  &lt;id root="706333280"/&gt;
-  &lt;code code="Value"/&gt;
-  &lt;title/&gt;
+  &lt;id root="MDHT" extension="1693949132"/&gt;
+  &lt;code code="1359869146"/&gt;
+  &lt;title&gt;TEXT FOR TITLE&lt;/title&gt;
   &lt;effectiveTime/&gt;
   &lt;confidentialityCode codeSystem="2.16.840.1.113883.5.25" codeSystemName="ConfidentialityCode"/&gt;
-  &lt;setId root="1c11521b-0f5e-47b3-bb5f-a497e6184fe6"/&gt;
+  &lt;setId root="MDHT" extension="925c643d-a3c6-48e0-a634-9d5e72170de6"/&gt;
   &lt;versionNumber value="1"/&gt;
   &lt;recordTarget&gt;
     &lt;patientRole&gt;
-      &lt;id root="918205428"/&gt;
-      &lt;addr/&gt;
-      &lt;telecom/&gt;
+      &lt;id root="MDHT" extension="1133522785"/&gt;
       &lt;patient&gt;
-        &lt;name/&gt;
         &lt;administrativeGenderCode codeSystem="2.16.840.1.113883.5.1" codeSystemName="AdministrativeGenderCode"/&gt;
-        &lt;birthTime/&gt;
         &lt;maritalStatusCode codeSystem="2.16.840.1.113883.5.2" codeSystemName="MaritalStatus"/&gt;
         &lt;religiousAffiliationCode codeSystem="2.16.840.1.113883.5.1076" codeSystemName="ReligiousAffiliation"/&gt;
         &lt;raceCode codeSystem="2.16.840.1.113883.6.238" codeSystemName="Race and Ethnicity - CDC"/&gt;
-        &lt;ethnicGroupCode code="Value"/&gt;
-        &lt;guardian&gt;
-          &lt;code codeSystem="2.16.840.1.113883.5.111" codeSystemName="RoleCode"/&gt;
-          &lt;addr/&gt;
-          &lt;telecom/&gt;
-          &lt;guardianPerson/&gt;
-        &lt;/guardian&gt;
-        &lt;birthplace&gt;
-          &lt;place/&gt;
-        &lt;/birthplace&gt;
-        &lt;languageCommunication&gt;
-          &lt;modeCode code="Value"/&gt;
-          &lt;proficiencyLevelCode codeSystem="2.16.840.1.113883.5.61" codeSystemName="LanguageAbilityProficiency"/&gt;
-          &lt;preferenceInd/&gt;
-        &lt;/languageCommunication&gt;
+        &lt;sdtc:raceCode codeSystem="2.16.840.1.113883.6.238" codeSystemName="Race and Ethnicity - CDC"/&gt;
+        &lt;ethnicGroupCode codeSystem="2.16.840.1.113883.6.238" codeSystemName="Race and Ethnicity - CDC"/&gt;
       &lt;/patient&gt;
-      &lt;providerOrganization&gt;
-        &lt;id root="1774454644"/&gt;
-        &lt;name/&gt;
-        &lt;telecom/&gt;
-        &lt;addr/&gt;
-      &lt;/providerOrganization&gt;
+      &lt;providerOrganization/&gt;
     &lt;/patientRole&gt;
   &lt;/recordTarget&gt;
   &lt;author&gt;
     &lt;time/&gt;
     &lt;assignedAuthor&gt;
-      &lt;id root="188748652"/&gt;
+      &lt;id root="MDHT" extension="2132354550"/&gt;
       &lt;code codeSystem="2.16.840.1.113883.6.101" codeSystemName="NUCC Health Care Provider Taxonomy"/&gt;
-      &lt;addr/&gt;
-      &lt;telecom/&gt;
-      &lt;assignedPerson&gt;
-        &lt;name/&gt;
-      &lt;/assignedPerson&gt;
-      &lt;assignedAuthoringDevice&gt;
-        &lt;manufacturerModelName/&gt;
-        &lt;softwareName/&gt;
-      &lt;/assignedAuthoringDevice&gt;
+      &lt;assignedPerson/&gt;
+      &lt;assignedAuthoringDevice/&gt;
     &lt;/assignedAuthor&gt;
   &lt;/author&gt;
   &lt;dataEnterer&gt;
     &lt;assignedEntity&gt;
-      &lt;id root="1649561253"/&gt;
-      &lt;code code="Value"/&gt;
-      &lt;addr/&gt;
-      &lt;telecom/&gt;
-      &lt;assignedPerson&gt;
-        &lt;name/&gt;
-      &lt;/assignedPerson&gt;
+      &lt;id root="MDHT" extension="1963701901"/&gt;
+      &lt;code codeSystem="2.16.840.1.113883.6.101" codeSystemName="NUCC Health Care Provider Taxonomy"/&gt;
+      &lt;assignedPerson/&gt;
     &lt;/assignedEntity&gt;
   &lt;/dataEnterer&gt;
   &lt;informant&gt;
     &lt;assignedEntity&gt;
-      &lt;id root="1267689088"/&gt;
-      &lt;code code="Value"/&gt;
-      &lt;addr/&gt;
-      &lt;assignedPerson&gt;
-        &lt;name/&gt;
-      &lt;/assignedPerson&gt;
+      &lt;id root="MDHT" extension="1600551793"/&gt;
+      &lt;code codeSystem="2.16.840.1.113883.6.101" codeSystemName="NUCC Health Care Provider Taxonomy"/&gt;
+      &lt;assignedPerson/&gt;
     &lt;/assignedEntity&gt;
     &lt;relatedEntity&gt;
-      &lt;relatedPerson&gt;
-        &lt;name/&gt;
-      &lt;/relatedPerson&gt;
-      &lt;addr/&gt;
+      &lt;relatedPerson/&gt;
     &lt;/relatedEntity&gt;
   &lt;/informant&gt;
   &lt;custodian&gt;
     &lt;assignedCustodian&gt;
-      &lt;representedCustodianOrganization&gt;
-        &lt;id root="1466120236"/&gt;
-        &lt;name/&gt;
-        &lt;telecom/&gt;
-        &lt;addr/&gt;
-      &lt;/representedCustodianOrganization&gt;
+      &lt;representedCustodianOrganization/&gt;
     &lt;/assignedCustodian&gt;
   &lt;/custodian&gt;
   &lt;informationRecipient&gt;
     &lt;intendedRecipient&gt;
-      &lt;informationRecipient&gt;
-        &lt;name/&gt;
-      &lt;/informationRecipient&gt;
-      &lt;receivedOrganization&gt;
-        &lt;name/&gt;
-      &lt;/receivedOrganization&gt;
+      &lt;informationRecipient/&gt;
+      &lt;receivedOrganization/&gt;
     &lt;/intendedRecipient&gt;
   &lt;/informationRecipient&gt;
   &lt;legalAuthenticator&gt;
     &lt;time/&gt;
     &lt;signatureCode code="S"/&gt;
     &lt;assignedEntity&gt;
-      &lt;id root="1647304705"/&gt;
-      &lt;code code="Value"/&gt;
-      &lt;addr/&gt;
-      &lt;telecom/&gt;
-      &lt;assignedPerson&gt;
-        &lt;name/&gt;
-      &lt;/assignedPerson&gt;
+      &lt;id root="MDHT" extension="1562361728"/&gt;
+      &lt;code codeSystem="2.16.840.1.113883.6.101" codeSystemName="NUCC Health Care Provider Taxonomy"/&gt;
+      &lt;assignedPerson/&gt;
     &lt;/assignedEntity&gt;
   &lt;/legalAuthenticator&gt;
   &lt;authenticator&gt;
     &lt;time/&gt;
     &lt;signatureCode code="S"/&gt;
     &lt;assignedEntity&gt;
-      &lt;id root="1359039720"/&gt;
-      &lt;code code="Value"/&gt;
-      &lt;addr/&gt;
-      &lt;telecom/&gt;
-      &lt;assignedPerson&gt;
-        &lt;name/&gt;
-      &lt;/assignedPerson&gt;
+      &lt;id root="MDHT" extension="952174640"/&gt;
+      &lt;code codeSystem="2.16.840.1.113883.6.101" codeSystemName="NUCC Health Care Provider Taxonomy"/&gt;
+      &lt;assignedPerson/&gt;
     &lt;/assignedEntity&gt;
   &lt;/authenticator&gt;
   &lt;participant&gt;
@@ -432,12 +432,30 @@ nullFlavor, "Not Applicable" (NA), in the other field.</li>
   &lt;/participant&gt;
   &lt;inFulfillmentOf&gt;
     &lt;order&gt;
-      &lt;id root="1116262030"/&gt;
+      &lt;id root="MDHT" extension="722697971"/&gt;
     &lt;/order&gt;
   &lt;/inFulfillmentOf&gt;
+  &lt;documentationOf&gt;
+    &lt;serviceEvent&gt;
+      &lt;effectiveTime&gt;
+        &lt;low value="2012"/&gt;
+        &lt;high value="2012"/&gt;
+      &lt;/effectiveTime&gt;
+      &lt;performer typeCode="PRF"&gt;
+        &lt;functionCode codeSystem="2.16.840.1.113883.5.88" codeSystemName="ParticipationFunction"/&gt;
+      &lt;/performer&gt;
+    &lt;/serviceEvent&gt;
+  &lt;/documentationOf&gt;
+  &lt;authorization&gt;
+    &lt;consent&gt;
+      &lt;id root="MDHT" extension="986118714"/&gt;
+      &lt;code code="511846562"/&gt;
+      &lt;statusCode code="completed"/&gt;
+    &lt;/consent&gt;
+  &lt;/authorization&gt;
   &lt;componentOf&gt;
     &lt;encompassingEncounter&gt;
-      &lt;id root="1670851173"/&gt;
+      &lt;id root="MDHT" extension="297760019"/&gt;
       &lt;effectiveTime&gt;
         &lt;low value="2012"/&gt;
         &lt;high value="2012"/&gt;

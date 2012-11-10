@@ -15,17 +15,16 @@
 <row><entry>Value Set</entry><entry>HITSP Problem Status - 2.16.840.1.113883.3.88.12.80.68</entry></row>
 <row><entry>Code System</entry><entry>SNOMEDCT - 2.16.840.1.113883.6.96</entry></row>
 </tbody></tgroup></table>
-<table><tgroup cols="4">
+<table><tgroup cols="3">
 <colspec colname="col1" colwidth="1*"/>
-<colspec colname="col2" colwidth="2*"/>
-<colspec colname="col3" colwidth="1*"/>
-<colspec colname="col4" colwidth="3*"/>
+<colspec colname="col2" colwidth="1*"/>
+<colspec colname="col3" colwidth="2*"/>
 <thead><row>
-<entry>Concept Code</entry><entry>Concept Name</entry><entry>Code System</entry><entry>Description</entry>
+<entry>Code</entry><entry>Code System</entry><entry>Print Name</entry>
 </row></thead><tbody>
-<row><entry>55561003</entry><entry>Active</entry><entry>SNOMEDCT</entry><entry></entry></row>
-<row><entry>73425007</entry><entry>Inactive</entry><entry>SNOMEDCT</entry><entry>An inactive problems refers to one that is quiescent, and may appear again in future.</entry></row>
-<row><entry>413322009</entry><entry>Resolved</entry><entry>SNOMEDCT</entry><entry>A resolved problem refers to one that used to affect a patient, but does not any more.</entry></row>
+<row><entry>55561003</entry><entry>SNOMEDCT</entry><entry>Active</entry></row>
+<row><entry>73425007</entry><entry>SNOMEDCT</entry><entry>Inactive</entry></row>
+<row><entry>413322009</entry><entry>SNOMEDCT</entry><entry>Resolved</entry></row>
 </tbody></tgroup></table>
 </section>
 </body>

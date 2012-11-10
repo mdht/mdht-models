@@ -15,6 +15,24 @@
 <row><entry>Value Set</entry><entry>DICOMQuantityMeasurementTypeCodes - 2.16.840.1.113883.11.20.9.30</entry></row>
 <row><entry>Code System</entry><entry>DCM - 1.2.840.10008.2.16.4</entry></row>
 </tbody></tgroup></table>
+<table><tgroup cols="3">
+<colspec colname="col1" colwidth="1*"/>
+<colspec colname="col2" colwidth="1*"/>
+<colspec colname="col3" colwidth="2*"/>
+<thead><row>
+<entry>Code</entry><entry>Code System</entry><entry>Print Name</entry>
+</row></thead><tbody>
+<row><entry>121211</entry><entry>DCM</entry><entry>Path length</entry></row>
+<row><entry>121206</entry><entry>DCM</entry><entry>Distance</entry></row>
+<row><entry>121207</entry><entry>DCM</entry><entry>Height</entry></row>
+<row><entry>121216</entry><entry>DCM</entry><entry>Volume estimated from single 2D region</entry></row>
+<row><entry>121218</entry><entry>DCM</entry><entry>Volume estimated from two non-coplanar 2D regions</entry></row>
+<row><entry>121217</entry><entry>DCM</entry><entry>Volume estimated from three or more non-coplanar 2D regions</entry></row>
+<row><entry>121222</entry><entry>DCM</entry><entry>Volume of sphere</entry></row>
+<row><entry>121221</entry><entry>DCM</entry><entry>Volume of ellipsoid</entry></row>
+<row><entry>121220</entry><entry>DCM</entry><entry>Volume of circumscribed sphere</entry></row>
+<row><entry>121219</entry><entry>DCM</entry><entry>Volume of bounding three dimensional region</entry></row>
+</tbody></tgroup></table>
 </section>
 </body>
 </topic>

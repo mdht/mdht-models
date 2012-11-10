@@ -15,6 +15,18 @@
 <row><entry>Value Set</entry><entry>Telecom Use (US Realm Header) - 2.16.840.1.113883.11.20.9.20</entry></row>
 <row><entry>Code System</entry><entry>AddressUse - 2.16.840.1.113883.5.1119</entry></row>
 </tbody></tgroup></table>
+<table><tgroup cols="3">
+<colspec colname="col1" colwidth="1*"/>
+<colspec colname="col2" colwidth="1*"/>
+<colspec colname="col3" colwidth="2*"/>
+<thead><row>
+<entry>Code</entry><entry>Code System</entry><entry>Print Name</entry>
+</row></thead><tbody>
+<row><entry>HP</entry><entry>AddressUse</entry><entry>primary home</entry></row>
+<row><entry>WP</entry><entry>AddressUse</entry><entry>work place</entry></row>
+<row><entry>MC</entry><entry>AddressUse</entry><entry>mobile contact</entry></row>
+<row><entry>HV</entry><entry>AddressUse</entry><entry>vacation home</entry></row>
+</tbody></tgroup></table>
 </section>
 </body>
 </topic>

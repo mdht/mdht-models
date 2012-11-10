@@ -17,6 +17,120 @@
 <row><entry>Version</entry><entry>1</entry></row>
 <row><entry>Definition</entry><entry>Route of Administration value set is based upon FDA Drug Registration and Listing Database (FDA Orange Book) which are used in FDA structured product and labelling (SPL).</entry></row>
 </tbody></tgroup></table>
+<table><tgroup cols="3">
+<colspec colname="col1" colwidth="1*"/>
+<colspec colname="col2" colwidth="1*"/>
+<colspec colname="col3" colwidth="2*"/>
+<thead><row>
+<entry>Code</entry><entry>Code System</entry><entry>Print Name</entry>
+</row></thead><tbody>
+<row><entry>C38192</entry><entry>NCI Thesaurus</entry><entry>AURICULAR (OTIC)</entry></row>
+<row><entry>C38193</entry><entry>NCI Thesaurus</entry><entry>BUCCAL</entry></row>
+<row><entry>C38194</entry><entry>NCI Thesaurus</entry><entry>CONJUNCTIVAL</entry></row>
+<row><entry>C38675</entry><entry>NCI Thesaurus</entry><entry>CUTANEOUS</entry></row>
+<row><entry>C38197</entry><entry>NCI Thesaurus</entry><entry>DENTAL</entry></row>
+<row><entry>C38633</entry><entry>NCI Thesaurus</entry><entry>ELECTRO-OSMOSIS</entry></row>
+<row><entry>C38205</entry><entry>NCI Thesaurus</entry><entry>ENDOCERVICAL</entry></row>
+<row><entry>C38206</entry><entry>NCI Thesaurus</entry><entry>ENDOSINUSIAL</entry></row>
+<row><entry>C38208</entry><entry>NCI Thesaurus</entry><entry>ENDOTRACHEAL</entry></row>
+<row><entry>C38209</entry><entry>NCI Thesaurus</entry><entry>ENTERAL</entry></row>
+<row><entry>C38210</entry><entry>NCI Thesaurus</entry><entry>EPIDURAL</entry></row>
+<row><entry>C38211</entry><entry>NCI Thesaurus</entry><entry>EXTRA-AMNIOTIC</entry></row>
+<row><entry>C38212</entry><entry>NCI Thesaurus</entry><entry>EXTRACORPOREAL</entry></row>
+<row><entry>C38200</entry><entry>NCI Thesaurus</entry><entry>HEMODIALYSIS</entry></row>
+<row><entry>C38215</entry><entry>NCI Thesaurus</entry><entry>INFILTRATION</entry></row>
+<row><entry>C38219</entry><entry>NCI Thesaurus</entry><entry>INTERSTITIAL</entry></row>
+<row><entry>C38220</entry><entry>NCI Thesaurus</entry><entry>INTRA-ABDOMINAL</entry></row>
+<row><entry>C38221</entry><entry>NCI Thesaurus</entry><entry>INTRA-AMNIOTIC</entry></row>
+<row><entry>C38222</entry><entry>NCI Thesaurus</entry><entry>INTRA-ARTERIAL</entry></row>
+<row><entry>C38223</entry><entry>NCI Thesaurus</entry><entry>INTRA-ARTICULAR</entry></row>
+<row><entry>C38224</entry><entry>NCI Thesaurus</entry><entry>INTRABILIARY</entry></row>
+<row><entry>C38225</entry><entry>NCI Thesaurus</entry><entry>INTRABRONCHIAL</entry></row>
+<row><entry>C38226</entry><entry>NCI Thesaurus</entry><entry>INTRABURSAL</entry></row>
+<row><entry>C38227</entry><entry>NCI Thesaurus</entry><entry>INTRACARDIAC</entry></row>
+<row><entry>C38228</entry><entry>NCI Thesaurus</entry><entry>INTRACARTILAGINOUS</entry></row>
+<row><entry>C38229</entry><entry>NCI Thesaurus</entry><entry>INTRACAUDAL</entry></row>
+<row><entry>C38230</entry><entry>NCI Thesaurus</entry><entry>INTRACAVERNOUS</entry></row>
+<row><entry>C38231</entry><entry>NCI Thesaurus</entry><entry>INTRACAVITARY</entry></row>
+<row><entry>C38232</entry><entry>NCI Thesaurus</entry><entry>INTRACEREBRAL</entry></row>
+<row><entry>C38233</entry><entry>NCI Thesaurus</entry><entry>INTRACISTERNAL</entry></row>
+<row><entry>C38234</entry><entry>NCI Thesaurus</entry><entry>INTRACORNEAL</entry></row>
+<row><entry>C38217</entry><entry>NCI Thesaurus</entry><entry>INTRACORONAL, DENTAL</entry></row>
+<row><entry>C38218</entry><entry>NCI Thesaurus</entry><entry>INTRACORONARY</entry></row>
+<row><entry>C38235</entry><entry>NCI Thesaurus</entry><entry>INTRACORPORUS CAVERNOSUM</entry></row>
+<row><entry>C38238</entry><entry>NCI Thesaurus</entry><entry>INTRADERMAL</entry></row>
+<row><entry>C38239</entry><entry>NCI Thesaurus</entry><entry>INTRADISCAL</entry></row>
+<row><entry>C38240</entry><entry>NCI Thesaurus</entry><entry>INTRADUCTAL</entry></row>
+<row><entry>C38241</entry><entry>NCI Thesaurus</entry><entry>INTRADUODENAL</entry></row>
+<row><entry>C38242</entry><entry>NCI Thesaurus</entry><entry>INTRADURAL</entry></row>
+<row><entry>C38243</entry><entry>NCI Thesaurus</entry><entry>INTRAEPIDERMAL</entry></row>
+<row><entry>C38245</entry><entry>NCI Thesaurus</entry><entry>INTRAESOPHAGEAL</entry></row>
+<row><entry>C38246</entry><entry>NCI Thesaurus</entry><entry>INTRAGASTRIC</entry></row>
+<row><entry>C38247</entry><entry>NCI Thesaurus</entry><entry>INTRAGINGIVAL</entry></row>
+<row><entry>C38249</entry><entry>NCI Thesaurus</entry><entry>INTRAILEAL</entry></row>
+<row><entry>C38250</entry><entry>NCI Thesaurus</entry><entry>INTRALESIONAL</entry></row>
+<row><entry>C38251</entry><entry>NCI Thesaurus</entry><entry>INTRALUMINAL</entry></row>
+<row><entry>C38252</entry><entry>NCI Thesaurus</entry><entry>INTRALYMPHATIC</entry></row>
+<row><entry>C38253</entry><entry>NCI Thesaurus</entry><entry>INTRAMEDULLARY</entry></row>
+<row><entry>C38254</entry><entry>NCI Thesaurus</entry><entry>INTRAMENINGEAL</entry></row>
+<row><entry>C28161</entry><entry>NCI Thesaurus</entry><entry>INTRAMUSCULAR</entry></row>
+<row><entry>C38255</entry><entry>NCI Thesaurus</entry><entry>INTRAOCULAR</entry></row>
+<row><entry>C38256</entry><entry>NCI Thesaurus</entry><entry>INTRAOVARIAN</entry></row>
+<row><entry>C38257</entry><entry>NCI Thesaurus</entry><entry>INTRAPERICARDIAL</entry></row>
+<row><entry>C38258</entry><entry>NCI Thesaurus</entry><entry>INTRAPERITONEAL</entry></row>
+<row><entry>C38259</entry><entry>NCI Thesaurus</entry><entry>INTRAPLEURAL</entry></row>
+<row><entry>C38260</entry><entry>NCI Thesaurus</entry><entry>INTRAPROSTATIC</entry></row>
+<row><entry>C38261</entry><entry>NCI Thesaurus</entry><entry>INTRAPULMONARY</entry></row>
+<row><entry>C38262</entry><entry>NCI Thesaurus</entry><entry>INTRASINAL</entry></row>
+<row><entry>C38263</entry><entry>NCI Thesaurus</entry><entry>INTRASPINAL</entry></row>
+<row><entry>C38264</entry><entry>NCI Thesaurus</entry><entry>INTRASYNOVIAL</entry></row>
+<row><entry>C38265</entry><entry>NCI Thesaurus</entry><entry>INTRATENDINOUS</entry></row>
+<row><entry>C38266</entry><entry>NCI Thesaurus</entry><entry>INTRATESTICULAR</entry></row>
+<row><entry>C38267</entry><entry>NCI Thesaurus</entry><entry>INTRATHECAL</entry></row>
+<row><entry>C38207</entry><entry>NCI Thesaurus</entry><entry>INTRATHORACIC</entry></row>
+<row><entry>C38268</entry><entry>NCI Thesaurus</entry><entry>INTRATUBULAR</entry></row>
+<row><entry>C38269</entry><entry>NCI Thesaurus</entry><entry>INTRATUMOR</entry></row>
+<row><entry>C38270</entry><entry>NCI Thesaurus</entry><entry>INTRATYMPANIC</entry></row>
+<row><entry>C38272</entry><entry>NCI Thesaurus</entry><entry>INTRAUTERINE</entry></row>
+<row><entry>C38273</entry><entry>NCI Thesaurus</entry><entry>INTRAVASCULAR</entry></row>
+<row><entry>C38276</entry><entry>NCI Thesaurus</entry><entry>INTRAVENOUS</entry></row>
+<row><entry>C38277</entry><entry>NCI Thesaurus</entry><entry>INTRAVENTRICULAR</entry></row>
+<row><entry>C38278</entry><entry>NCI Thesaurus</entry><entry>INTRAVESICAL</entry></row>
+<row><entry>C38280</entry><entry>NCI Thesaurus</entry><entry>INTRAVITREAL</entry></row>
+<row><entry>C38203</entry><entry>NCI Thesaurus</entry><entry>IONTOPHORESIS</entry></row>
+<row><entry>C38281</entry><entry>NCI Thesaurus</entry><entry>IRRIGATION</entry></row>
+<row><entry>C38282</entry><entry>NCI Thesaurus</entry><entry>LARYNGEAL</entry></row>
+<row><entry>C38284</entry><entry>NCI Thesaurus</entry><entry>NASAL</entry></row>
+<row><entry>C38285</entry><entry>NCI Thesaurus</entry><entry>NASOGASTRIC</entry></row>
+<row><entry>C48623</entry><entry>NCI Thesaurus</entry><entry>NOT APPLICABLE</entry></row>
+<row><entry>C38286</entry><entry>NCI Thesaurus</entry><entry>OCCLUSIVE DRESSING TECHNIQUE</entry></row>
+<row><entry>C38287</entry><entry>NCI Thesaurus</entry><entry>OPHTHALMIC</entry></row>
+<row><entry>C38288</entry><entry>NCI Thesaurus</entry><entry>ORAL</entry></row>
+<row><entry>C38289</entry><entry>NCI Thesaurus</entry><entry>OROPHARYNGEAL</entry></row>
+<row><entry>C38291</entry><entry>NCI Thesaurus</entry><entry>PARENTERAL</entry></row>
+<row><entry>C38676</entry><entry>NCI Thesaurus</entry><entry>PERCUTANEOUS</entry></row>
+<row><entry>C38292</entry><entry>NCI Thesaurus</entry><entry>PERIARTICULAR</entry></row>
+<row><entry>C38677</entry><entry>NCI Thesaurus</entry><entry>PERIDURAL</entry></row>
+<row><entry>C38293</entry><entry>NCI Thesaurus</entry><entry>PERINEURAL</entry></row>
+<row><entry>C38294</entry><entry>NCI Thesaurus</entry><entry>PERIODONTAL</entry></row>
+<row><entry>C38295</entry><entry>NCI Thesaurus</entry><entry>RECTAL</entry></row>
+<row><entry>C38216</entry><entry>NCI Thesaurus</entry><entry>RESPIRATORY (INHALATION)</entry></row>
+<row><entry>C38296</entry><entry>NCI Thesaurus</entry><entry>RETROBULBAR</entry></row>
+<row><entry>C38198</entry><entry>NCI Thesaurus</entry><entry>SOFT TISSUE</entry></row>
+<row><entry>C38297</entry><entry>NCI Thesaurus</entry><entry>SUBARACHNOID</entry></row>
+<row><entry>C38298</entry><entry>NCI Thesaurus</entry><entry>SUBCONJUNCTIVAL</entry></row>
+<row><entry>C38299</entry><entry>NCI Thesaurus</entry><entry>SUBCUTANEOUS</entry></row>
+<row><entry>C38300</entry><entry>NCI Thesaurus</entry><entry>SUBLINGUAL</entry></row>
+<row><entry>C38301</entry><entry>NCI Thesaurus</entry><entry>SUBMUCOSAL</entry></row>
+<row><entry>C38304</entry><entry>NCI Thesaurus</entry><entry>TOPICAL</entry></row>
+<row><entry>C38305</entry><entry>NCI Thesaurus</entry><entry>TRANSDERMAL</entry></row>
+<row><entry>C38283</entry><entry>NCI Thesaurus</entry><entry>TRANSMUCOSAL</entry></row>
+<row><entry>C38307</entry><entry>NCI Thesaurus</entry><entry>TRANSPLACENTAL</entry></row>
+<row><entry>C38308</entry><entry>NCI Thesaurus</entry><entry>TRANSTRACHEAL</entry></row>
+<row><entry>C38309</entry><entry>NCI Thesaurus</entry><entry>TRANSTYMPANIC</entry></row>
+<row><entry>C38312</entry><entry>NCI Thesaurus</entry><entry>URETERAL</entry></row>
+<row><entry>C38271</entry><entry>NCI Thesaurus</entry><entry>URETHRAL</entry></row>
+</tbody></tgroup></table>
 </section>
 </body>
 </topic>

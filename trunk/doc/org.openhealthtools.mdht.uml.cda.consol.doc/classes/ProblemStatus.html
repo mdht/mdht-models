@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html
   PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html lang="en-us" xml:lang="en-us">
+<html xml:lang="en-us" lang="en-us">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 <meta name="copyright" content="(C) Copyright 2005"/>
@@ -17,10 +17,10 @@
 <link rel="stylesheet" type="text/css" href="../css/commonltr.css"/>
 <title>Problem Status</title>
 </head>
-<body id="classId"><a name="classId"><!-- --></a>
+<body id="classId">
 <div>
-	<p><b>For Discussion and Demonstration Only</b> The Normative content for these specifications
-	may be found on the HL7 web site.</p>
+	<p><b>Non-Normative Content</b> The Normative content for these specifications
+	may be found on the HL7, IHE, and HITSP web sites.</p>
 </div>
 
 	<h1 class="title topictitle1"><span class="ph">Problem Status</span></h1>
@@ -31,13 +31,18 @@
 
 		
 		<div class="section">
-<p class="p">The Problem Status records whether the indicated problem is active, inactive, or resolved.</p>
+<div class="p"><p class="lines"><em class="ph i">The Problem Status records whether the indicated problem is active, inactive, or resolved.</em></p>
+</div>
 
 </div>
 
 		
 
 		<ol class="ol">
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] templateId ( CONF:7359 ) such that it <ol class="ol" type="a"><li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <strong class="ph b">@root</strong>="2.16.840.1.113883.10.20.22.4.6"</li>
+</ol>
+</li>
+
 <li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@classCode</strong>="OBS" </tt><em class="ph i">Observation</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.5.6 HL7ActClass</tt>) (CONF:7357)
 </li>
 
@@ -56,9 +61,11 @@
 <li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">value</strong></tt> with data type CD, where the @code <strong class="ph b">SHALL</strong> be selected from ValueSet<tt class="ph tt"> <a class="xref" href="../terminology/HITSPProblemStatus.html">HITSP Problem Status</a> 2.16.840.1.113883.3.88.12.80.68</tt><strong class="ph b"> STATIC</strong> (CONF:7365)
 </li>
 
-<li class="li">text, if present, <strong class="ph b">SHOULD</strong> contain zero or one [0..1] reference/@value (CONF:7363)</li>
+<li class="li">text, if present, <strong class="ph b">SHOULD</strong> contain zero or one [0..1] reference (CONF:15593)</li>
 
-<li class="li">reference/@value <strong class="ph b">SHALL</strong> begin with a '#' and <strong class="ph b">SHALL</strong> point to its corresponding narrative (using the approach defined in CDA Release 2, section 4.3.5.1) (CONF:7375)</li>
+<li class="li">reference, if present, <strong class="ph b">SHALL</strong> contain exactly one [1..1] @value (CONF:15594)</li>
+
+<li class="li">reference/@value <strong class="ph b">SHALL</strong> begin with a '#' and <strong class="ph b">SHALL</strong> point to its corresponding narrative (using the approach defined in CDA Release 2, section 4.3.5.1) (CONF:15595)</li>
 
 </ol>
 
@@ -73,7 +80,7 @@
 		<pre class="pre codeblock">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
 &lt;observation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd" classCode="OBS" moodCode="EVN"&gt;
   &lt;templateId root="2.16.840.1.113883.10.20.22.4.6"/&gt;
-  &lt;id root="372451425"/&gt;
+  &lt;id root="MDHT" extension="1845223764"/&gt;
   &lt;code code="33999-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Status"/&gt;
   &lt;text&gt;Text Value&lt;/text&gt;
   &lt;statusCode code="completed"/&gt;

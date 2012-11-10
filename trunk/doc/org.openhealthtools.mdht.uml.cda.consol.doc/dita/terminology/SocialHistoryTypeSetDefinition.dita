@@ -17,22 +17,22 @@
 <row><entry>Version</entry><entry>1</entry></row>
 <row><entry>Definition</entry><entry>This indicates the type of social history observation</entry></row>
 </tbody></tgroup></table>
-<table><tgroup cols="4">
+<table><tgroup cols="3">
 <colspec colname="col1" colwidth="1*"/>
-<colspec colname="col2" colwidth="2*"/>
-<colspec colname="col3" colwidth="1*"/>
-<colspec colname="col4" colwidth="3*"/>
+<colspec colname="col2" colwidth="1*"/>
+<colspec colname="col3" colwidth="2*"/>
 <thead><row>
-<entry>Concept Code</entry><entry>Concept Name</entry><entry>Code System</entry><entry>Description</entry>
+<entry>Code</entry><entry>Code System</entry><entry>Print Name</entry>
 </row></thead><tbody>
-<row><entry>160573003</entry><entry>ETOH (Alcohol) Use</entry><entry>SNOMEDCT</entry><entry></entry></row>
-<row><entry>363908000</entry><entry>Drug Use</entry><entry>SNOMEDCT</entry><entry></entry></row>
-<row><entry>364703007</entry><entry>Employment</entry><entry>SNOMEDCT</entry><entry></entry></row>
-<row><entry>256235009</entry><entry>Exercise</entry><entry>SNOMEDCT</entry><entry></entry></row>
-<row><entry>228272008</entry><entry>Other Social History</entry><entry>SNOMEDCT</entry><entry></entry></row>
-<row><entry>364393001</entry><entry>Diet</entry><entry>SNOMEDCT</entry><entry></entry></row>
-<row><entry>229819007</entry><entry>Smoking</entry><entry>SNOMEDCT</entry><entry></entry></row>
-<row><entry>425400000</entry><entry>Toxic Exposure</entry><entry>SNOMEDCT</entry><entry></entry></row>
+<row><entry>229819007</entry><entry>SNOMEDCT</entry><entry>Tobacco use and exposure</entry></row>
+<row><entry>256235009</entry><entry>SNOMEDCT</entry><entry>Exercise</entry></row>
+<row><entry>160573003</entry><entry>SNOMEDCT</entry><entry>Alcohol intake</entry></row>
+<row><entry>364393001</entry><entry>SNOMEDCT</entry><entry>Nutritional observable</entry></row>
+<row><entry>364703007</entry><entry>SNOMEDCT</entry><entry>Employment detail</entry></row>
+<row><entry>425400000</entry><entry>SNOMEDCT</entry><entry>Toxic exposure status</entry></row>
+<row><entry>363908000</entry><entry>SNOMEDCT</entry><entry>Details of drug misuse behavior</entry></row>
+<row><entry>228272008</entry><entry>SNOMEDCT</entry><entry>Health-related behavior</entry></row>
+<row><entry>105421008</entry><entry>SNOMEDCT</entry><entry>Educational Achievement</entry></row>
 </tbody></tgroup></table>
 </section>
 </body>

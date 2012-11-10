@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html
   PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html lang="en-us" xml:lang="en-us">
+<html xml:lang="en-us" lang="en-us">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 <meta name="copyright" content="(C) Copyright 2005"/>
@@ -17,10 +17,10 @@
 <link rel="stylesheet" type="text/css" href="../css/commonltr.css"/>
 <title>Medication Dispense</title>
 </head>
-<body id="classId"><a name="classId"><!-- --></a>
+<body id="classId">
 <div>
-	<p><b>For Discussion and Demonstration Only</b> The Normative content for these specifications
-	may be found on the HL7 web site.</p>
+	<p><b>Non-Normative Content</b> The Normative content for these specifications
+	may be found on the HL7, IHE, and HITSP web sites.</p>
 </div>
 
 	<h1 class="title topictitle1"><span class="ph">Medication Dispense</span></h1>
@@ -36,6 +36,10 @@
 		
 
 		<ol class="ol">
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] templateId ( CONF:7453, CONF:10505 ) such that it <ol class="ol" type="a"><li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <strong class="ph b">@root</strong>="2.16.840.1.113883.10.20.22.4.18"</li>
+</ol>
+</li>
+
 <li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@classCode</strong>="SPLY" </tt> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.5.6 HL7ActClass</tt>) (CONF:7451)
 </li>
 
@@ -49,17 +53,16 @@
 </li>
 
 <li class="li"><strong class="ph b">SHOULD</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">repeatNumber</strong></tt> (CONF:7457)
-<ul class="ul"><li class="li">In "EVN" (event) mood, the repeatNumber is the number of occurrences. For example, a repeatNumber of "3" in a dispense act means that the current dispensation is the 3rd</li>
+<ul class="ul"><li class="li"><div class="p"><p class="lines"><em class="ph i">In "EVN" (event) mood, the repeatNumber is the number of occurrences. For example, a repeatNumber of "3" in a dispense act means that the current dispensation is the 3rd (CONF: 16876)</em></p>
+</div>
+</li>
 </ul>
 </li>
 
 <li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">statusCode</strong></tt>, where the @code <strong class="ph b">SHALL</strong> be selected from ValueSet<tt class="ph tt"> <a class="xref" href="../terminology/MedicationFillStatus.html">Medication Fill Status</a> 2.16.840.1.113883.3.88.12.80.64</tt><strong class="ph b"> STATIC</strong> 1 (CONF:7455)
 </li>
 
-<li class="li"><strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">performer</strong></tt>
-</li>
-
-<li class="li"><strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">entryRelationship</strong></tt> (CONF:7473, CONF:7474, CONF:7476)
+<li class="li"><strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">entryRelationship</strong></tt> (CONF:7473, CONF:7474, CONF:15606)
 <ol class="ol" type="a">
 <li class="li">Contains <tt class="ph tt"><strong class="ph b">@typeCode="</strong>REFR" </tt><em class="ph i">REFR</em></li>
 
@@ -70,10 +73,14 @@
 <li class="li"><strong class="ph b">SHOULD</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">quantity</strong></tt> (CONF:7458)
 </li>
 
-<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">performer</strong></tt> (CONF:7467)
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">product</strong></tt> (CONF:7459, CONF:9331) <ol class="ol" type="a"><li class="li"> This product supply act <strong class="ph b">SHALL</strong> contain one product/Medication Information or one product/Immunization Medication Information template (CONF:15607, CONF:15608, CONF:9333)</li>
+</ol>
+
 </li>
 
-<li class="li"><strong class="ph b">SHALL</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">product</strong></tt> (CONF:7459, CONF:9331) <ol class="ol" type="a"><li class="li"> This product supply act <strong class="ph b">SHALL</strong> contain one product/Medication Information or one product/Immunization Medication Information template (CONF:7460, CONF:9332, CONF:9333)</li>
+<li class="li"><strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">performer</strong></tt> (CONF:7461) <ol class="ol" type="a"><li class="li"> This performer <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">assignedEntity</strong></tt> (CONF:7467) <ol class="ol" type="i"><li class="li"> This assignedEntity <strong class="ph b">SHOULD</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">addr</strong></tt> with data type <a class="xref" href="generated/../USRealmAddress.html">US Realm Address</a> (CONF:7468)</li>
+</ol>
+ </li>
 </ol>
 
 </li>
@@ -91,8 +98,8 @@
 		<pre class="pre codeblock">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
 &lt;supply xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd" classCode="SPLY" moodCode="EVN"&gt;
   &lt;templateId root="2.16.840.1.113883.10.20.22.4.18"/&gt;
-  &lt;id root="1700157101"/&gt;
-  &lt;effectiveTime value="20120405"/&gt;
+  &lt;id root="MDHT" extension="2110240059"/&gt;
+  &lt;effectiveTime value="20121102"/&gt;
   &lt;repeatNumber value="1"/&gt;
   &lt;quantity/&gt;
   &lt;product&gt;
@@ -100,51 +107,30 @@
   &lt;/product&gt;
   &lt;performer&gt;
     &lt;assignedEntity&gt;
-      &lt;id root="457213034"/&gt;
-      &lt;assignedPerson/&gt;
-      &lt;representedOrganization&gt;
-        &lt;asOrganizationPartOf&gt;
-          &lt;wholeOrganization/&gt;
-        &lt;/asOrganizationPartOf&gt;
-      &lt;/representedOrganization&gt;
+      &lt;id root="MDHT" extension="642897188"/&gt;
     &lt;/assignedEntity&gt;
   &lt;/performer&gt;
   &lt;entryRelationship&gt;
     &lt;supply classCode="SPLY" moodCode="INT"&gt;
       &lt;templateId root="2.16.840.1.113883.10.20.22.4.17"/&gt;
-      &lt;id root="678131260"/&gt;
-      &lt;effectiveTime value="20120405"/&gt;
+      &lt;id root="MDHT" extension="1516094168"/&gt;
+      &lt;effectiveTime value="20121102"/&gt;
       &lt;repeatNumber value="1"/&gt;
       &lt;quantity/&gt;
       &lt;product&gt;
         &lt;manufacturedProduct/&gt;
       &lt;/product&gt;
-      &lt;performer&gt;
-        &lt;assignedEntity&gt;
-          &lt;id root="1349751766"/&gt;
-          &lt;assignedPerson/&gt;
-          &lt;representedOrganization&gt;
-            &lt;asOrganizationPartOf/&gt;
-          &lt;/representedOrganization&gt;
-        &lt;/assignedEntity&gt;
-      &lt;/performer&gt;
+      &lt;author/&gt;
       &lt;entryRelationship&gt;
         &lt;act classCode="ACT" moodCode="INT"&gt;
           &lt;templateId root="2.16.840.1.113883.10.20.22.4.20"/&gt;
-          &lt;id root="2105147962"/&gt;
+          &lt;id root="MDHT" extension="1252677444"/&gt;
           &lt;code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/&gt;
           &lt;statusCode code="completed"/&gt;
           &lt;effectiveTime&gt;
             &lt;low value="2012"/&gt;
             &lt;high value="2012"/&gt;
           &lt;/effectiveTime&gt;
-          &lt;performer&gt;
-            &lt;assignedEntity&gt;
-              &lt;id root="728732581"/&gt;
-              &lt;assignedPerson/&gt;
-              &lt;representedOrganization/&gt;
-            &lt;/assignedEntity&gt;
-          &lt;/performer&gt;
         &lt;/act&gt;
       &lt;/entryRelationship&gt;
     &lt;/supply&gt;

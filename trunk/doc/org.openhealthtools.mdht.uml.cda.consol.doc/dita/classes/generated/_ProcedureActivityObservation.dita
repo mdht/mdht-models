@@ -8,11 +8,14 @@
 <resourceid id="2.16.840.1.113883.10.20.22.4.13"/>
 </prolog>
 <body>
+<section id="knownSubclasses">
+</section>
 <section id="description">
-<p>The common notion of "procedure" is broader than that specified by the HL7 Version 3 Reference Information Model (RIM). Therefore procedure templates can be represented with various RIM classes: act (e.g., dressing change), observation (e.g., EEG), procedure (e.g. splenectomy). 
-This clinical statement represents procedures that result in new information about the patient that cannot be classified as a procedure according to the HL7 RIM. Examples of these procedures are diagnostic imaging procedures, EEGs and EKGs.</p>
+<p><lines><i>The common notion of "procedure" is broader than that specified by the HL7 Version 3 Reference Information Model (RIM). Therefore procedure templates can be represented with various RIM classes: act (e.g., dressing change), observation (e.g., EEG), procedure (e.g. splenectomy). 
+This clinical statement represents procedures that result in new information about the patient that cannot be classified as a procedure according to the HL7 RIM. Examples of these procedures are diagnostic imaging procedures, EEGs and EKGs.</i></lines></p>
 </section>
 <ol id="conformance">
+<li><b>SHALL</b> contain exactly one [1..1] templateId ( CONF:10520 ) such that it <ol><li><b>SHALL</b> contain exactly one [1..1] <b>@root</b>="2.16.840.1.113883.10.20.22.4.13"</li></ol></li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="OBS" </tt><i>Observation</i> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>) (CONF:8282)
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b></tt>, where the @code <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/MoodCodeEvnInt.dita">MoodCodeEvnInt</xref> 2.16.840.1.113883.11.20.9.18</tt><b> STATIC</b> 2011-04-03 (CONF:8237)
@@ -23,7 +26,7 @@ This clinical statement represents procedures that result in new information abo
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>statusCode</b></tt>, where the @code <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/ProcedureActStatusCode.dita">ProcedureActStatusCode</xref> 2.16.840.1.113883.11.20.9.22</tt><b> DYNAMIC</b> (CONF:8245)
 </li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> (CONF:8368)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> (CONF:16846)
 </li>
 <li><b>SHOULD</b> contain zero or one [0..1] <tt><b>effectiveTime</b></tt> (CONF:8246)
 </li>
@@ -33,30 +36,30 @@ This clinical statement represents procedures that result in new information abo
 </li>
 <li><b>SHOULD</b> contain zero or more [0..*] <tt><b>targetSiteCode</b></tt> (CONF:8250), where the @code <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/BodySiteValueSet.dita">Body Site Value Set</xref> 2.16.840.1.113883.3.88.12.3221.8.9</tt><b> STATIC</b> 2 (CONF:10121)
 </li>
-<li><b>SHOULD</b> contain zero or more [0..*] <tt><b>performer</b></tt> (CONF:8251)
+<li><b>SHOULD</b> contain zero or more [0..*] <tt><b>performer</b></tt> (CONF:8251) <ol><li> Such performers <b>SHALL</b> contain exactly one [1..1] assignedEntity (CONF:7720)</li><li> Such performers assignedEntity <b>SHALL</b> contain at least one [1..*] id (CONF:7722)</li><li> Such performers assignedEntity <b>SHALL</b> contain exactly one [1..1] addr (CONF:7731)</li><li> Such performers assignedEntity <b>SHALL</b> contain exactly one [1..1] telecom (CONF:7732)</li><li> Such performers assignedEntity <b>SHOULD</b> contain zero or one [0..1] representedOrganization (CONF:7733)</li><li> Such performers representedOrganization, if present, <b>SHOULD</b> contain zero or more [0..*] id (CONF:7734)</li><li> Such performers representedOrganization, if present, <b>MAY</b> contain zero or more [0..*] name (CONF:7735)</li><li> Such performers representedOrganization, if present, <b>SHALL</b> contain exactly one [1..1] addr (CONF:7736)</li><li> Such performers representedOrganization, if present, <b>SHALL</b> contain exactly one [1..1] telecom (CONF:7737)</li></ol>
 </li>
-<li><b>MAY</b> contain zero or more [0..*] <tt><b>participant</b></tt> (CONF:8263)
+<li><b>MAY</b> contain zero or more [0..*] <tt><b>participant</b></tt> (CONF:8261, CONF:8262, CONF:15904)
 <ol>
 <li>Contains exactly one [1..1] <xref href="../ServiceDeliveryLocation.dita">Service Delivery Location</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.32</tt>)</li></ol></li>
-<li><b>MAY</b> contain zero or more [0..*] <tt><b>entryRelationship</b></tt> (CONF:8264)
-<ol>
-<li>Contains <tt><b>@typeCode="</b>COMP" </tt><i>COMP</i></li></ol></li>
-<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> (CONF:8275)
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> (CONF:8272, CONF:8273, CONF:15905)
 <ol>
 <li>Contains <tt><b>@typeCode="</b>SUBJ" </tt><i>SUBJ</i></li>
 <li>Contains exactly one [1..1] <xref href="../Instructions.dita">Instructions</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.20</tt>)</li></ol></li>
-<li><b>MAY</b> contain zero or more [0..*] <tt><b>entryRelationship</b></tt> (CONF:8278)
+<li><b>MAY</b> contain zero or more [0..*] <tt><b>entryRelationship</b></tt> (CONF:8276, CONF:8277, CONF:15906)
 <ol>
 <li>Contains <tt><b>@typeCode="</b>RSON" </tt><i>RSON</i></li>
 <li>Contains exactly one [1..1] <xref href="../Indication.dita">Indication</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.19</tt>)</li></ol></li>
-<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> (CONF:8281)
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> (CONF:8279, CONF:8280, CONF:15907)
 <ol>
 <li>Contains <tt><b>@typeCode="</b>COMP" </tt><i>COMP</i></li>
 <li>Contains exactly one [1..1] <xref href="../MedicationActivity.dita">Medication Activity</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.16</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or more [0..*] <tt><b>entryRelationship</b></tt> (CONF:8264) <ol><li> Such entryRelationships <b>SHALL</b> contain exactly one [1..1] <tt><b>@inversionInd</b>="true" </tt> (CONF:8266)</li><li> Such entryRelationships <b>SHALL</b> contain exactly one [1..1] <tt><b>@typeCode</b>="COMP" </tt> (CONF:8265)</li><li> Such entryRelationships <b>SHALL</b> contain exactly one [1..1] <tt><b>encounter</b></tt> (CONF:8267) <ol><li> This encounter <b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="ENC" </tt> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>) (CONF:8268)</li><li> This encounter <b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF:8269)</li><li> This encounter <b>SHALL</b> contain exactly one [1..1] <tt><b>id</b></tt> (CONF:8270)</li><li> This encounter <b>MAY</b> satisfy: Set the encounter ID to the ID of an encounter in another section to signify they are the same encounter. (CONF:16847)</li></ol> </li></ol>
+</li>
 <li>code in a procedure activity <b>SHOULD</b> be selected from LOINC (codeSystem 2.16.840.1.113883.6.1) or SNOMED CT (codeSystem 2.16.840.1.113883.6.96), and <b>MAY</b> be selected from CPT-4 (codeSystem 2.16.840.1.113883.6.12), ICD9 Procedures (codeSystem 2.16.840.1.113883.6.4) (CONF:8241)</li>
 <li>code <b>SHOULD</b> contain zero or one [0..1] originalText (CONF:8242)</li>
-<li>originalText, if present, <b>SHOULD</b> contain zero or one [0..1] reference/@value (CONF:8243)</li>
-<li>reference/@value <b>SHALL</b> begin with a '#' and <b>SHALL</b> point to its corresponding narrative (using the approach defined in CDA Release 2, section 4.3.5.1) (CONF:8244)</li>
+<li>originalText, if present, <b>SHOULD</b> contain zero or one [0..1] reference (CONF:15901)</li>
+<li>reference, if present, <b>SHOULD</b> contain zero or one [0..1] @value (CONF:15902)</li>
+<li>reference/@value <b>SHALL</b> begin with a '#' and <b>SHALL</b> point to its corresponding narrative (using the approach defined in CDA Release 2, section 4.3.5.1) (CONF:15903)</li>
 <li>methodCode <b>SHALL NOT</b> conflict with the method inherent in Procedure / code (CONF:8249)</li>
 <li>entryRelationship with target class encounter <b>SHALL</b> contain exactly one [1..1] @inversionInd="true" (CONF:8266)</li>
 <li>participant with target class Service Delivery Location <b>SHALL</b> contain exactly one [1..1] @typeCode="LOC" Location (CodeSystem: 2.16.840.1.113883.5.1002 HL7ActRelationshipType) STATIC (CONF:8262)</li>
@@ -77,36 +80,36 @@ This clinical statement represents procedures that result in new information abo
 </li>
 <li><b>MAY</b> contain zero or one [0..1] <tt><b>priorityCode</b></tt>, where the @code <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/ActPriority.dita">ActPriority</xref> 2.16.840.1.113883.1.11.16866</tt><b> STATIC</b> (CONF:8247)
 </li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> (CONF:8368)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> (CONF:16846)
 </li>
 <li><b>MAY</b> contain zero or one [0..1] <tt><b>methodCode</b></tt> (CONF:8248)
 </li>
 <li><b>SHOULD</b> contain zero or more [0..*] <tt><b>targetSiteCode</b></tt> (CONF:8250), where the @code <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/BodySiteValueSet.dita">Body Site Value Set</xref> 2.16.840.1.113883.3.88.12.3221.8.9</tt><b> STATIC</b> 2 (CONF:10121)
 </li>
-<li><b>SHOULD</b> contain zero or more [0..*] <tt><b>performer</b></tt> (CONF:8251)
+<li><b>SHOULD</b> contain zero or more [0..*] <tt><b>performer</b></tt> (CONF:8251) <ol><li> Such performers <b>SHALL</b> contain exactly one [1..1] assignedEntity (CONF:7720)</li><li> Such performers assignedEntity <b>SHALL</b> contain at least one [1..*] id (CONF:7722)</li><li> Such performers assignedEntity <b>SHALL</b> contain exactly one [1..1] addr (CONF:7731)</li><li> Such performers assignedEntity <b>SHALL</b> contain exactly one [1..1] telecom (CONF:7732)</li><li> Such performers assignedEntity <b>SHOULD</b> contain zero or one [0..1] representedOrganization (CONF:7733)</li><li> Such performers representedOrganization, if present, <b>SHOULD</b> contain zero or more [0..*] id (CONF:7734)</li><li> Such performers representedOrganization, if present, <b>MAY</b> contain zero or more [0..*] name (CONF:7735)</li><li> Such performers representedOrganization, if present, <b>SHALL</b> contain exactly one [1..1] addr (CONF:7736)</li><li> Such performers representedOrganization, if present, <b>SHALL</b> contain exactly one [1..1] telecom (CONF:7737)</li></ol>
 </li>
-<li><b>MAY</b> contain zero or more [0..*] <tt><b>participant</b></tt> (CONF:8263)
+<li><b>MAY</b> contain zero or more [0..*] <tt><b>participant</b></tt> (CONF:8261, CONF:8262, CONF:15904)
 <ol>
 <li>Contains exactly one [1..1] <xref href="../ServiceDeliveryLocation.dita">Service Delivery Location</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.32</tt>)</li></ol></li>
-<li><b>MAY</b> contain zero or more [0..*] <tt><b>entryRelationship</b></tt> (CONF:8264)
-<ol>
-<li>Contains <tt><b>@typeCode="</b>COMP" </tt><i>COMP</i></li></ol></li>
-<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> (CONF:8275)
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> (CONF:8272, CONF:8273, CONF:15905)
 <ol>
 <li>Contains <tt><b>@typeCode="</b>SUBJ" </tt><i>SUBJ</i></li>
 <li>Contains exactly one [1..1] <xref href="../Instructions.dita">Instructions</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.20</tt>)</li></ol></li>
-<li><b>MAY</b> contain zero or more [0..*] <tt><b>entryRelationship</b></tt> (CONF:8278)
+<li><b>MAY</b> contain zero or more [0..*] <tt><b>entryRelationship</b></tt> (CONF:8276, CONF:8277, CONF:15906)
 <ol>
 <li>Contains <tt><b>@typeCode="</b>RSON" </tt><i>RSON</i></li>
 <li>Contains exactly one [1..1] <xref href="../Indication.dita">Indication</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.19</tt>)</li></ol></li>
-<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> (CONF:8281)
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> (CONF:8279, CONF:8280, CONF:15907)
 <ol>
 <li>Contains <tt><b>@typeCode="</b>COMP" </tt><i>COMP</i></li>
 <li>Contains exactly one [1..1] <xref href="../MedicationActivity.dita">Medication Activity</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.16</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or more [0..*] <tt><b>entryRelationship</b></tt> (CONF:8264) <ol><li> Such entryRelationships <b>SHALL</b> contain exactly one [1..1] <tt><b>@inversionInd</b>="true" </tt> (CONF:8266)</li><li> Such entryRelationships <b>SHALL</b> contain exactly one [1..1] <tt><b>@typeCode</b>="COMP" </tt> (CONF:8265)</li><li> Such entryRelationships <b>SHALL</b> contain exactly one [1..1] <tt><b>encounter</b></tt> (CONF:8267) <ol><li> This encounter <b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="ENC" </tt> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>) (CONF:8268)</li><li> This encounter <b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF:8269)</li><li> This encounter <b>SHALL</b> contain exactly one [1..1] <tt><b>id</b></tt> (CONF:8270)</li><li> This encounter <b>MAY</b> satisfy: Set the encounter ID to the ID of an encounter in another section to signify they are the same encounter. (CONF:16847)</li></ol> </li></ol>
+</li>
 <li>code in a procedure activity <b>SHOULD</b> be selected from LOINC (codeSystem 2.16.840.1.113883.6.1) or SNOMED CT (codeSystem 2.16.840.1.113883.6.96), and <b>MAY</b> be selected from CPT-4 (codeSystem 2.16.840.1.113883.6.12), ICD9 Procedures (codeSystem 2.16.840.1.113883.6.4) (CONF:8241)</li>
 <li>code <b>SHOULD</b> contain zero or one [0..1] originalText (CONF:8242)</li>
-<li>originalText, if present, <b>SHOULD</b> contain zero or one [0..1] reference/@value (CONF:8243)</li>
-<li>reference/@value <b>SHALL</b> begin with a '#' and <b>SHALL</b> point to its corresponding narrative (using the approach defined in CDA Release 2, section 4.3.5.1) (CONF:8244)</li>
+<li>originalText, if present, <b>SHOULD</b> contain zero or one [0..1] reference (CONF:15901)</li>
+<li>reference, if present, <b>SHOULD</b> contain zero or one [0..1] @value (CONF:15902)</li>
+<li>reference/@value <b>SHALL</b> begin with a '#' and <b>SHALL</b> point to its corresponding narrative (using the approach defined in CDA Release 2, section 4.3.5.1) (CONF:15903)</li>
 <li>methodCode <b>SHALL NOT</b> conflict with the method inherent in Procedure / code (CONF:8249)</li>
 <li>entryRelationship with target class encounter <b>SHALL</b> contain exactly one [1..1] @inversionInd="true" (CONF:8266)</li>
 <li>participant with target class Service Delivery Location <b>SHALL</b> contain exactly one [1..1] @typeCode="LOC" Location (CodeSystem: 2.16.840.1.113883.5.1002 HL7ActRelationshipType) STATIC (CONF:8262)</li>
@@ -114,145 +117,99 @@ This clinical statement represents procedures that result in new information abo
 </ol>
 <section id="tableconformance"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="8" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><colspec colname="col2" colnum="2" /><colspec colname="col3" colnum="3" /><colspec colname="col4" colnum="4" /><colspec colname="col5" colnum="5" /><colspec colname="col6" colnum="6" /><colspec colname="col7" colnum="7" /><thead> <row><entry namest="col0" nameend="col7" >consol::ProcedureActivityObservation</entry>  </row>  <row><entry namest="col0" nameend="col7" >cda::observation[cda:templateId/@root = 2.16.840.1.113883.10.20.22.4.13]/</entry>  </row>  <row><entry>Name</entry><entry>XPath</entry><entry>Cardinality</entry><entry>Severity</entry><entry>Nullable</entry><entry>Data Type</entry><entry>Conformance</entry><entry>Value(s)</entry></row></thead><tbody><row><entry>classCode</entry><entry>@classCode</entry><entry>1..1</entry><entry>SHALL</entry><entry>NO</entry><entry>ActClassObservation</entry><entry>CONF:8282</entry><entry> ALRT</entry></row> 
 <row><entry>moodCode</entry><entry>@moodCode</entry><entry>1..1</entry><entry>SHALL</entry><entry>NO</entry><entry>x_ActMoodDocumentObservation</entry><entry>CONF:8237</entry><entry> DEF</entry></row> 
-<row><entry>negationInd</entry><entry>@negationInd</entry><entry>0..1</entry><entry></entry><entry>NO</entry><entry>Boolean</entry><entry></entry><entry> </entry></row> 
-<row><entry>nullFlavor</entry><entry>@nullFlavor</entry><entry>0..1</entry><entry></entry><entry>NO</entry><entry>NullFlavor</entry><entry></entry><entry> ASKU</entry></row> 
 <row><entry>code</entry><entry>code</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>CD</entry><entry>CONF:8240</entry><entry> </entry></row> 
-<row><entry>derivationExpr</entry><entry>derivationExpr</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>ST</entry><entry></entry><entry> </entry></row> 
 <row><entry>effectiveTime</entry><entry>effectiveTime</entry><entry>0..1</entry><entry>SHOULD</entry><entry>YES</entry><entry>IVL_TS</entry><entry>CONF:8246</entry><entry> </entry></row> 
 <row><entry>id</entry><entry>id</entry><entry>1..*</entry><entry>SHALL</entry><entry>YES</entry><entry>II</entry><entry>CONF:8239</entry><entry> </entry></row> 
-<row><entry>interpretationCode</entry><entry>interpretationCode</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>CE</entry><entry></entry><entry> </entry></row> 
-<row><entry>languageCode</entry><entry>languageCode</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>CS</entry><entry></entry><entry> </entry></row> 
 <row><entry>methodCode</entry><entry>methodCode</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>CE</entry><entry>CONF:8248</entry><entry> </entry></row> 
-<row><entry>priorityCode</entry><entry>priorityCode</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>CE</entry><entry></entry><entry> </entry></row> 
-<row><entry>realmCode</entry><entry>realmCode</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>CS</entry><entry></entry><entry> </entry></row> 
-<row><entry>repeatNumber</entry><entry>repeatNumber</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>IVL_INT</entry><entry></entry><entry> </entry></row> 
+<row><entry>priorityCode</entry><entry>priorityCode</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>CE</entry><entry></entry><entry> null</entry></row> 
 <row><entry>statusCode</entry><entry>statusCode</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>CS</entry><entry>CONF:8245</entry><entry> </entry></row> 
 <row><entry>targetSiteCode</entry><entry>targetSiteCode</entry><entry>0..*</entry><entry>SHOULD</entry><entry>YES</entry><entry>CD</entry><entry>CONF:8250</entry><entry> null</entry></row> 
-<row><entry>templateId</entry><entry>templateId</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>II</entry><entry></entry><entry> 2.16.840.1.113883.10.20.22.4.13</entry></row> 
-<row><entry>text</entry><entry>text</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>ED</entry><entry></entry><entry> </entry></row> 
-<row><entry>value</entry><entry>value</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>ANY</entry><entry>CONF:8368</entry><entry> </entry></row> 
-<row><entry>author</entry><entry>author</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>Author</entry><entry></entry><entry> </entry></row> 
-<row><entry>entryRelationship</entry><entry>entryRelationship</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>EntryRelationship</entry><entry></entry><entry> </entry></row> 
-<row><entry>indication</entry><entry>indication</entry><entry>0..*</entry><entry>MAY</entry><entry>YES</entry><entry>Indication</entry><entry>CONF:8278</entry><entry> </entry></row> 
-<row><entry>informant</entry><entry>informant</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>Informant12</entry><entry></entry><entry> </entry></row> 
-<row><entry>instructions</entry><entry>instructions</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>Instructions</entry><entry>CONF:8275</entry><entry> </entry></row> 
-<row><entry>medicationActivity</entry><entry>medicationActivity</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>MedicationActivity</entry><entry>CONF:8281</entry><entry> </entry></row> 
-<row><entry>participant</entry><entry>participant</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>Participant2</entry><entry></entry><entry> </entry></row> 
-<row><entry>performer</entry><entry>performer</entry><entry>0..*</entry><entry>SHOULD</entry><entry>YES</entry><entry>ProcedurePerformer</entry><entry>CONF:8251</entry><entry> </entry></row> 
-<row><entry>precondition</entry><entry>precondition</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>Precondition</entry><entry></entry><entry> </entry></row> 
-<row><entry>procedureEncounter</entry><entry>procedureEncounter</entry><entry>0..*</entry><entry>MAY</entry><entry>YES</entry><entry>ProcedureEncounter</entry><entry>CONF:8264</entry><entry> </entry></row> 
-<row><entry>reference</entry><entry>reference</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>Reference</entry><entry></entry><entry> </entry></row> 
-<row><entry>referenceRange</entry><entry>referenceRange</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>ReferenceRange</entry><entry></entry><entry> </entry></row> 
-<row><entry>serviceDeliveryLocation</entry><entry>serviceDeliveryLocation</entry><entry>0..*</entry><entry>MAY</entry><entry>YES</entry><entry>ServiceDeliveryLocation</entry><entry>CONF:8263</entry><entry> </entry></row> 
-<row><entry>specimen</entry><entry>specimen</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>Specimen</entry><entry></entry><entry> </entry></row> 
-<row><entry>subject</entry><entry>subject</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>Subject</entry><entry></entry><entry> </entry></row> 
-<row><entry>typeId</entry><entry>typeId</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>InfrastructureRootTypeId</entry><entry></entry><entry> </entry></row> 
+<row><entry>value</entry><entry>value</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>ANY</entry><entry>CONF:16846</entry><entry> </entry></row> 
+<row><entry>entryRelationship</entry><entry>entryRelationship</entry><entry>0..*</entry><entry>MAY</entry><entry>YES</entry><entry>EntryRelationship</entry><entry>CONF:8264</entry><entry> </entry></row> 
+<row><entry>indication</entry><entry>indication</entry><entry>0..*</entry><entry>MAY</entry><entry>YES</entry><entry>Indication</entry><entry>CONF:8276CONF:8277CONF:15906</entry><entry> </entry></row> 
+<row><entry>instructions</entry><entry>instructions</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>Instructions</entry><entry>CONF:8272CONF:8273CONF:15905</entry><entry> </entry></row> 
+<row><entry>medicationActivity</entry><entry>medicationActivity</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>MedicationActivity</entry><entry>CONF:8279CONF:8280CONF:15907</entry><entry> </entry></row> 
+<row><entry>performer</entry><entry>performer</entry><entry>0..*</entry><entry>SHOULD</entry><entry>YES</entry><entry>ProcedureObservationPerformer</entry><entry>CONF:8251</entry><entry> </entry></row> 
+<row><entry>procedureAcivityObservation</entry><entry>procedureAcivityObservation</entry><entry>0..*</entry><entry>MAY</entry><entry>YES</entry><entry>ProcedureActivityObservation</entry><entry>CONF:6278CONF:15510</entry><entry> </entry></row> 
+<row><entry>procedureActivityObservation</entry><entry>procedureActivityObservation</entry><entry>0..*</entry><entry>MAY</entry><entry>YES</entry><entry>ProcedureActivityObservation</entry><entry>CONF:8017CONF:8018</entry><entry> </entry></row> 
+<row><entry>serviceDeliveryLocation</entry><entry>serviceDeliveryLocation</entry><entry>0..*</entry><entry>MAY</entry><entry>YES</entry><entry>ServiceDeliveryLocation</entry><entry>CONF:8261CONF:8262CONF:15904</entry><entry> </entry></row> 
 </tbody></tgroup></table></p></section>
 <codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
 <observation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd" classCode="OBS">
   <templateId root="2.16.840.1.113883.10.20.22.4.13"/>
-  <id root="1472862236"/>
-  <code code="144241999"/>
+  <id root="MDHT" extension="1308003631"/>
+  <code code="757070831"/>
   <effectiveTime>
     <low value="2012"/>
     <high value="2012"/>
   </effectiveTime>
-  <priorityCode code="Value"/>
-  <methodCode code="Value"/>
+  <priorityCode codeSystem="2.16.840.1.113883.5.7" codeSystemName="ActPriority"/>
+  <methodCode code="1234502427"/>
   <targetSiteCode codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
   <performer>
     <assignedEntity/>
   </performer>
-  <entryRelationship>
-    <encounter>
-      <id root="508577410"/>
-      <code code="391015425"/>
-      <effectiveTime>
-        <low value="2012"/>
-        <high value="2012"/>
-      </effectiveTime>
-      <priorityCode code="Value"/>
-      <performer>
-        <assignedEntity/>
-      </performer>
+  <entryRelationship typeCode="COMP" inversionInd="true">
+    <encounter classCode="ENC" moodCode="EVN">
+      <id root="MDHT" extension="1592693968"/>
     </encounter>
   </entryRelationship>
   <entryRelationship>
     <act classCode="ACT" moodCode="INT">
       <templateId root="2.16.840.1.113883.10.20.22.4.20"/>
-      <id root="456031060"/>
+      <id root="MDHT" extension="1670278617"/>
       <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
       <statusCode code="completed"/>
       <effectiveTime>
         <low value="2012"/>
         <high value="2012"/>
       </effectiveTime>
-      <priorityCode code="Value"/>
-      <performer>
-        <assignedEntity/>
-      </performer>
+      <priorityCode code="426807335"/>
     </act>
   </entryRelationship>
   <entryRelationship>
     <observation classCode="OBS" moodCode="EVN">
       <templateId root="2.16.840.1.113883.10.20.22.4.19"/>
-      <id root="982787886"/>
+      <id root="MDHT" extension="1492701937"/>
       <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
       <statusCode code="completed"/>
       <effectiveTime>
         <low value="2012"/>
         <high value="2012"/>
       </effectiveTime>
-      <priorityCode code="Value"/>
-      <methodCode code="Value"/>
-      <targetSiteCode code="2052550602"/>
-      <performer>
-        <assignedEntity/>
-      </performer>
+      <priorityCode code="1663974214"/>
+      <value xsi:type="CD" code="205986718"/>
+      <methodCode code="1448114451"/>
+      <targetSiteCode code="1585987159"/>
     </observation>
   </entryRelationship>
   <entryRelationship>
     <substanceAdministration classCode="SBADM">
       <templateId root="2.16.840.1.113883.10.20.22.4.16"/>
-      <id root="854449804"/>
-      <code code="1202829170"/>
-      <effectiveTime xsi:type="IVL_TS">
-        <low value="2012"/>
-        <high value="2012"/>
-      </effectiveTime>
-      <priorityCode code="Value"/>
-      <administrationUnitCode codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus"/>
-      <consumable/>
-      <performer>
-        <assignedEntity/>
-      </performer>
+      <id root="MDHT" extension="1591177177"/>
+      <code code="1078742619"/>
+      <effectiveTime value="20121102"/>
+      <priorityCode code="1289220916"/>
+      <routeCode codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus"/>
+      <approachSiteCode codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
+      <consumable>
+        <manufacturedProduct/>
+      </consumable>
+      <performer/>
       <entryRelationship>
         <supply classCode="SPLY" moodCode="INT">
           <templateId root="2.16.840.1.113883.10.20.22.4.17"/>
-          <id root="2117200546"/>
-          <code code="274177592"/>
-          <effectiveTime xsi:type="IVL_TS">
-            <low value="2012"/>
-            <high value="2012"/>
-          </effectiveTime>
-          <priorityCode code="Value"/>
-          <performer>
-            <assignedEntity/>
-          </performer>
+          <id root="MDHT" extension="1168235497"/>
+          <code code="1586463738"/>
+          <effectiveTime value="20121102"/>
+          <priorityCode code="1347269241"/>
+          <product/>
+          <author/>
           <entryRelationship>
             <act classCode="ACT" moodCode="INT">
               <templateId root="2.16.840.1.113883.10.20.22.4.20"/>
-              <id root="1478224044"/>
               <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
               <statusCode code="completed"/>
-              <effectiveTime>
-                <low value="2012"/>
-                <high value="2012"/>
-              </effectiveTime>
-              <priorityCode code="Value"/>
-              <performer>
-                <assignedEntity/>
-              </performer>
             </act>
           </entryRelationship>
         </supply>
@@ -260,229 +217,37 @@ This clinical statement represents procedures that result in new information abo
       <entryRelationship>
         <observation classCode="OBS" moodCode="EVN">
           <templateId root="2.16.840.1.113883.10.20.22.4.9"/>
-          <id root="967435010"/>
-          <code code="1872059687"/>
+          <id root="MDHT" extension="468678504"/>
+          <code code="1483428251"/>
           <statusCode code="completed"/>
           <effectiveTime>
             <low value="2012"/>
             <high value="2012"/>
           </effectiveTime>
-          <priorityCode code="Value"/>
-          <methodCode code="Value"/>
-          <targetSiteCode code="27502904"/>
-          <performer>
-            <assignedEntity/>
-          </performer>
+          <priorityCode code="1969619350"/>
+          <value xsi:type="CD" code="650655243"/>
+          <methodCode code="225667656"/>
+          <targetSiteCode code="250811352"/>
           <entryRelationship>
             <observation classCode="OBS" moodCode="EVN">
               <templateId root="2.16.840.1.113883.10.20.22.4.8"/>
-              <id root="46976152"/>
               <code code="SEV" codeSystem="2.16.840.1.113883.5.4" codeSystemName="HL7ActCode" displayName="Severity observation"/>
               <statusCode code="completed"/>
-              <effectiveTime>
-                <low value="2012"/>
-                <high value="2012"/>
-              </effectiveTime>
-              <priorityCode code="Value"/>
               <interpretationCode codeSystem="2.16.840.1.113883.5.83" codeSystemName="ObservationInterpretation"/>
-              <methodCode code="Value"/>
-              <targetSiteCode code="599053910"/>
-              <performer>
-                <assignedEntity/>
-              </performer>
             </observation>
           </entryRelationship>
           <entryRelationship>
             <procedure classCode="PROC">
               <templateId root="2.16.840.1.113883.10.20.22.4.14"/>
-              <id root="1805837921"/>
-              <code code="1407979106"/>
-              <effectiveTime>
-                <low value="2012"/>
-                <high value="2012"/>
-              </effectiveTime>
-              <priorityCode code="Value"/>
-              <methodCode code="Value"/>
+              <priorityCode codeSystem="2.16.840.1.113883.5.7" codeSystemName="ActPriority"/>
               <targetSiteCode codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
-              <performer>
-                <assignedEntity/>
-              </performer>
-              <entryRelationship>
-                <observation classCode="OBS" moodCode="EVN">
-                  <templateId root="2.16.840.1.113883.10.20.22.4.19"/>
-                  <id root="588531629"/>
-                  <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
-                  <statusCode code="completed"/>
-                  <effectiveTime>
-                    <low value="2012"/>
-                    <high value="2012"/>
-                  </effectiveTime>
-                  <priorityCode code="Value"/>
-                  <methodCode code="Value"/>
-                  <targetSiteCode code="1542458274"/>
-                  <performer/>
-                </observation>
-              </entryRelationship>
-              <entryRelationship>
-                <substanceAdministration classCode="SBADM">
-                  <templateId root="2.16.840.1.113883.10.20.22.4.16"/>
-                  <id root="936464703"/>
-                  <code code="1960487108"/>
-                  <effectiveTime xsi:type="IVL_TS">
-                    <low value="2012"/>
-                    <high value="2012"/>
-                  </effectiveTime>
-                  <priorityCode code="Value"/>
-                  <administrationUnitCode codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus"/>
-                  <consumable/>
-                  <performer/>
-                  <entryRelationship>
-                    <supply/>
-                  </entryRelationship>
-                  <entryRelationship>
-                    <observation/>
-                  </entryRelationship>
-                  <entryRelationship>
-                    <act/>
-                  </entryRelationship>
-                  <entryRelationship>
-                    <observation/>
-                  </entryRelationship>
-                  <entryRelationship>
-                    <supply/>
-                  </entryRelationship>
-                </substanceAdministration>
-              </entryRelationship>
-              <entryRelationship>
-                <act classCode="ACT" moodCode="INT">
-                  <templateId root="2.16.840.1.113883.10.20.22.4.20"/>
-                  <id root="1581901502"/>
-                  <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
-                  <statusCode code="completed"/>
-                  <effectiveTime>
-                    <low value="2012"/>
-                    <high value="2012"/>
-                  </effectiveTime>
-                  <priorityCode code="Value"/>
-                  <performer/>
-                </act>
-              </entryRelationship>
-              <entryRelationship>
-                <encounter>
-                  <id root="1030970605"/>
-                  <code code="299764545"/>
-                  <effectiveTime>
-                    <low value="2012"/>
-                    <high value="2012"/>
-                  </effectiveTime>
-                  <priorityCode code="Value"/>
-                  <performer/>
-                </encounter>
-              </entryRelationship>
             </procedure>
           </entryRelationship>
           <entryRelationship>
             <substanceAdministration classCode="SBADM">
               <templateId root="2.16.840.1.113883.10.20.22.4.16"/>
-              <id root="1219893229"/>
-              <code code="2020459313"/>
-              <effectiveTime xsi:type="IVL_TS">
-                <low value="2012"/>
-                <high value="2012"/>
-              </effectiveTime>
-              <priorityCode code="Value"/>
-              <administrationUnitCode codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus"/>
-              <consumable/>
-              <performer>
-                <assignedEntity/>
-              </performer>
-              <entryRelationship>
-                <supply classCode="SPLY" moodCode="INT">
-                  <templateId root="2.16.840.1.113883.10.20.22.4.17"/>
-                  <id root="106297882"/>
-                  <code code="261637186"/>
-                  <effectiveTime xsi:type="IVL_TS">
-                    <low value="2012"/>
-                    <high value="2012"/>
-                  </effectiveTime>
-                  <priorityCode code="Value"/>
-                  <performer/>
-                  <entryRelationship>
-                    <act/>
-                  </entryRelationship>
-                </supply>
-              </entryRelationship>
-              <entryRelationship>
-                <observation classCode="OBS" moodCode="EVN">
-                  <templateId root="2.16.840.1.113883.10.20.22.4.9"/>
-                  <id root="514745374"/>
-                  <code code="1971778144"/>
-                  <statusCode code="completed"/>
-                  <effectiveTime>
-                    <low value="2012"/>
-                    <high value="2012"/>
-                  </effectiveTime>
-                  <priorityCode code="Value"/>
-                  <methodCode code="Value"/>
-                  <targetSiteCode code="1286062364"/>
-                  <performer/>
-                  <entryRelationship>
-                    <observation/>
-                  </entryRelationship>
-                  <entryRelationship>
-                    <procedure/>
-                  </entryRelationship>
-                  <entryRelationship>
-                    <substanceAdministration/>
-                  </entryRelationship>
-                </observation>
-              </entryRelationship>
-              <entryRelationship>
-                <act classCode="ACT" moodCode="INT">
-                  <templateId root="2.16.840.1.113883.10.20.22.4.20"/>
-                  <id root="2026893395"/>
-                  <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
-                  <statusCode code="completed"/>
-                  <effectiveTime>
-                    <low value="2012"/>
-                    <high value="2012"/>
-                  </effectiveTime>
-                  <priorityCode code="Value"/>
-                  <performer/>
-                </act>
-              </entryRelationship>
-              <entryRelationship>
-                <observation classCode="OBS" moodCode="EVN">
-                  <templateId root="2.16.840.1.113883.10.20.22.4.19"/>
-                  <id root="1597690841"/>
-                  <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
-                  <statusCode code="completed"/>
-                  <effectiveTime>
-                    <low value="2012"/>
-                    <high value="2012"/>
-                  </effectiveTime>
-                  <priorityCode code="Value"/>
-                  <methodCode code="Value"/>
-                  <targetSiteCode code="2115877843"/>
-                  <performer/>
-                </observation>
-              </entryRelationship>
-              <entryRelationship>
-                <supply classCode="SPLY" moodCode="EVN">
-                  <templateId root="2.16.840.1.113883.10.20.22.4.18"/>
-                  <id root="657407306"/>
-                  <code code="1859610460"/>
-                  <effectiveTime xsi:type="IVL_TS">
-                    <low value="2012"/>
-                    <high value="2012"/>
-                  </effectiveTime>
-                  <priorityCode code="Value"/>
-                  <performer/>
-                  <entryRelationship>
-                    <supply/>
-                  </entryRelationship>
-                </supply>
-              </entryRelationship>
+              <routeCode codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus"/>
+              <approachSiteCode codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
             </substanceAdministration>
           </entryRelationship>
         </observation>
@@ -490,81 +255,51 @@ This clinical statement represents procedures that result in new information abo
       <entryRelationship>
         <act classCode="ACT" moodCode="INT">
           <templateId root="2.16.840.1.113883.10.20.22.4.20"/>
-          <id root="1545869936"/>
+          <id root="MDHT" extension="1671806927"/>
           <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
           <statusCode code="completed"/>
           <effectiveTime>
             <low value="2012"/>
             <high value="2012"/>
           </effectiveTime>
-          <priorityCode code="Value"/>
-          <performer>
-            <assignedEntity/>
-          </performer>
+          <priorityCode code="1171575993"/>
         </act>
       </entryRelationship>
       <entryRelationship>
         <observation classCode="OBS" moodCode="EVN">
           <templateId root="2.16.840.1.113883.10.20.22.4.19"/>
-          <id root="1495392808"/>
+          <id root="MDHT" extension="341627274"/>
           <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
           <statusCode code="completed"/>
           <effectiveTime>
             <low value="2012"/>
             <high value="2012"/>
           </effectiveTime>
-          <priorityCode code="Value"/>
-          <methodCode code="Value"/>
-          <targetSiteCode code="1538969839"/>
-          <performer>
-            <assignedEntity/>
-          </performer>
+          <priorityCode code="173369396"/>
+          <value xsi:type="CD" code="1668003736"/>
+          <methodCode code="1849025120"/>
+          <targetSiteCode code="889076345"/>
         </observation>
       </entryRelationship>
       <entryRelationship>
         <supply classCode="SPLY" moodCode="EVN">
           <templateId root="2.16.840.1.113883.10.20.22.4.18"/>
-          <id root="1827217736"/>
-          <code code="1772769951"/>
-          <effectiveTime xsi:type="IVL_TS">
-            <low value="2012"/>
-            <high value="2012"/>
-          </effectiveTime>
-          <priorityCode code="Value"/>
-          <performer>
-            <assignedEntity/>
-          </performer>
+          <id root="MDHT" extension="1240426266"/>
+          <code code="670694038"/>
+          <effectiveTime value="20121102"/>
+          <priorityCode code="1113427870"/>
+          <product/>
+          <performer/>
           <entryRelationship>
             <supply classCode="SPLY" moodCode="INT">
               <templateId root="2.16.840.1.113883.10.20.22.4.17"/>
-              <id root="2072872427"/>
-              <code code="424529775"/>
-              <effectiveTime xsi:type="IVL_TS">
-                <low value="2012"/>
-                <high value="2012"/>
-              </effectiveTime>
-              <priorityCode code="Value"/>
-              <performer>
-                <assignedEntity/>
-              </performer>
-              <entryRelationship>
-                <act classCode="ACT" moodCode="INT">
-                  <templateId root="2.16.840.1.113883.10.20.22.4.20"/>
-                  <id root="1626239772"/>
-                  <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
-                  <statusCode code="completed"/>
-                  <effectiveTime>
-                    <low value="2012"/>
-                    <high value="2012"/>
-                  </effectiveTime>
-                  <priorityCode code="Value"/>
-                  <performer/>
-                </act>
-              </entryRelationship>
             </supply>
           </entryRelationship>
         </supply>
       </entryRelationship>
+      <precondition>
+        <criterion/>
+      </precondition>
     </substanceAdministration>
   </entryRelationship>
 </observation>]]></codeblock>

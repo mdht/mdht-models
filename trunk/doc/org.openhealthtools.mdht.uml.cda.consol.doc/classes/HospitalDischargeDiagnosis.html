@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html
   PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html lang="en-us" xml:lang="en-us">
+<html xml:lang="en-us" lang="en-us">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 <meta name="copyright" content="(C) Copyright 2005"/>
@@ -17,10 +17,10 @@
 <link rel="stylesheet" type="text/css" href="../css/commonltr.css"/>
 <title>Hospital Discharge Diagnosis</title>
 </head>
-<body id="classId"><a name="classId"><!-- --></a>
+<body id="classId">
 <div>
-	<p><b>For Discussion and Demonstration Only</b> The Normative content for these specifications
-	may be found on the HL7 web site.</p>
+	<p><b>Non-Normative Content</b> The Normative content for these specifications
+	may be found on the HL7, IHE, and HITSP web sites.</p>
 </div>
 
 	<h1 class="title topictitle1"><span class="ph">Hospital Discharge Diagnosis</span></h1>
@@ -31,13 +31,18 @@
 
 		
 		<div class="section">
-<p class="p">The Hospital Discharge Diagnosis act wraps relevant problems or diagnoses at the time of discharge that occurred during the hospitalization or that need to be followed after hospitalization. This entry requires at least one Problem Observation entry.</p>
+<div class="p"><p class="lines"><em class="ph i">The Hospital Discharge Diagnosis act wraps relevant problems or diagnoses at the time of discharge that occurred during the hospitalization or that need to be followed after hospitalization. This entry requires at least one Problem Observation entry.</em></p>
+</div>
 
 </div>
 
 		
 
 		<ol class="ol">
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] templateId ( CONF:16764, CONF:16765 ) such that it <ol class="ol" type="a"><li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <strong class="ph b">@root</strong>="2.16.840.1.113883.10.20.22.4.33"</li>
+</ol>
+</li>
+
 <li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@classCode</strong>="ACT" </tt><em class="ph i">Act</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.5.6 HL7ActClass</tt>) (CONF:7663)
 </li>
 
@@ -47,7 +52,7 @@
 <li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt><tt class="ph tt"><strong class="ph b">/@code</strong>="11535-2" </tt><em class="ph i">Hospital Discharge Diagnosis</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:7665)
 </li>
 
-<li class="li"><strong class="ph b">SHALL</strong> contain at least one [1..*] <tt class="ph tt"><strong class="ph b">entryRelationship</strong></tt> (CONF:7669)
+<li class="li"><strong class="ph b">SHALL</strong> contain at least one [1..*] <tt class="ph tt"><strong class="ph b">entryRelationship</strong></tt> (CONF:7666, CONF:7667, CONF:15536)
 <ol class="ol" type="a">
 <li class="li">Contains <tt class="ph tt"><strong class="ph b">@typeCode="</strong>SUBJ" </tt><em class="ph i">SUBJ</em></li>
 
@@ -68,16 +73,16 @@
 		<pre class="pre codeblock">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
 &lt;act xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd" classCode="ACT" moodCode="EVN"&gt;
   &lt;templateId root="2.16.840.1.113883.10.20.22.4.33"/&gt;
-  &lt;id root="995238409"/&gt;
+  &lt;id root="MDHT" extension="42703283"/&gt;
   &lt;code code="11535-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Hospital Discharge Diagnosis"/&gt;
   &lt;effectiveTime&gt;
     &lt;low value="2012"/&gt;
     &lt;high value="2012"/&gt;
   &lt;/effectiveTime&gt;
   &lt;entryRelationship&gt;
-    &lt;observation moodCode="EVN"&gt;
+    &lt;observation classCode="OBS" moodCode="EVN"&gt;
       &lt;templateId root="2.16.840.1.113883.10.20.22.4.4"/&gt;
-      &lt;id root="1348622886"/&gt;
+      &lt;id root="MDHT" extension="1700869819"/&gt;
       &lt;code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/&gt;
       &lt;statusCode code="completed"/&gt;
       &lt;effectiveTime&gt;
@@ -87,7 +92,7 @@
       &lt;entryRelationship&gt;
         &lt;observation classCode="OBS" moodCode="EVN"&gt;
           &lt;templateId root="2.16.840.1.113883.10.20.22.4.31"/&gt;
-          &lt;id root="575071052"/&gt;
+          &lt;id root="MDHT" extension="689300907"/&gt;
           &lt;code code="445518008" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT" displayName="Age At Onset"/&gt;
           &lt;statusCode code="completed"/&gt;
           &lt;effectiveTime&gt;
@@ -99,7 +104,7 @@
       &lt;entryRelationship&gt;
         &lt;observation classCode="OBS" moodCode="EVN"&gt;
           &lt;templateId root="2.16.840.1.113883.10.20.22.4.5"/&gt;
-          &lt;id root="1352858961"/&gt;
+          &lt;id root="MDHT" extension="2026695774"/&gt;
           &lt;code code="11323-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Health status"/&gt;
           &lt;statusCode code="completed"/&gt;
           &lt;effectiveTime&gt;
@@ -111,7 +116,7 @@
       &lt;entryRelationship&gt;
         &lt;observation classCode="OBS" moodCode="EVN"&gt;
           &lt;templateId root="2.16.840.1.113883.10.20.22.4.6"/&gt;
-          &lt;id root="1118286346"/&gt;
+          &lt;id root="MDHT" extension="52777385"/&gt;
           &lt;code code="33999-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Status"/&gt;
           &lt;statusCode code="completed"/&gt;
           &lt;effectiveTime&gt;

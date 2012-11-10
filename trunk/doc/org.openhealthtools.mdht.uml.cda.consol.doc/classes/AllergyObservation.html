@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html
   PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html lang="en-us" xml:lang="en-us">
+<html xml:lang="en-us" lang="en-us">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 <meta name="copyright" content="(C) Copyright 2005"/>
@@ -17,10 +17,10 @@
 <link rel="stylesheet" type="text/css" href="../css/commonltr.css"/>
 <title>Allergy Observation</title>
 </head>
-<body id="classId"><a name="classId"><!-- --></a>
+<body id="classId">
 <div>
-	<p><b>For Discussion and Demonstration Only</b> The Normative content for these specifications
-	may be found on the HL7 web site.</p>
+	<p><b>Non-Normative Content</b> The Normative content for these specifications
+	may be found on the HL7, IHE, and HITSP web sites.</p>
 </div>
 
 	<h1 class="title topictitle1"><span class="ph">Allergy Observation</span></h1>
@@ -31,14 +31,19 @@
 
 		
 		<div class="section">
-<p class="p">This clinical statement represents that an allergy or adverse reaction exists or does not exist. The agent that is the cause of the allergy or adverse reaction is represented as a manufactured material participant playing entity in the allergy observation. While the agent is often implicit in the alert observation (e.g. "allergy to penicillin"), it should also be asserted explicitly as an entity. The manufactured material participant is used to represent natural and non-natural occuring substances.
-NOTE: The agent responsible for an allergy or adverse reaction is not always a manufactured material (for example, food allergies), nor is it necessarily consumed. The following constraints reflect limitations in the base CDA R2 specification, and should be used to represent any type of responsible agent.</p>
+<div class="p"><p class="lines"><em class="ph i">This clinical statement represents that an allergy or adverse reaction exists or does not exist. The agent that is the cause of the allergy or adverse reaction is represented as a manufactured material participant playing entity in the allergy - intolerance observation. While the agent is often implicit in the alert observation (e.g. "allergy to penicillin"), it should also be asserted explicitly as an entity. The manufactured material participant is used to represent natural and non-natural occurring substances.<br/>
+NOTE: The agent responsible for an allergy or adverse reaction is not always a manufactured material (for example, food allergies), nor is it necessarily consumed. The following constraints reflect limitations in the base CDA R2 specification, and should be used to represent any type of responsible agent.</em></p>
+</div>
 
 </div>
 
 		
 
 		<ol class="ol">
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] templateId ( CONF:7381, CONF:10488 ) such that it <ol class="ol" type="a"><li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <strong class="ph b">@root</strong>="2.16.840.1.113883.10.20.22.4.7"</li>
+</ol>
+</li>
+
 <li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@classCode</strong>="OBS" </tt><em class="ph i">Observation</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.5.6 HL7ActClass</tt>) (CONF:7379)
 </li>
 
@@ -48,7 +53,7 @@ NOTE: The agent responsible for an allergy or adverse reaction is not always a m
 <li class="li"><strong class="ph b">SHALL</strong> contain at least one [1..*] <tt class="ph tt"><strong class="ph b">id</strong></tt> (CONF:7382)
 </li>
 
-<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt><tt class="ph tt"><strong class="ph b">/@code</strong>="ASSERTION" </tt> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.5.4 HL7ActCode</tt>) (CONF:7383)
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt> (CONF:15947)<tt class="ph tt"><strong class="ph b">/@code</strong>="ASSERTION" </tt> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.5.4 HL7ActCode</tt>) (CONF:15948)
 </li>
 
 <li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">statusCode</strong></tt><tt class="ph tt"><strong class="ph b">/@code</strong>="completed" </tt> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.5.14 ActStatus</tt>) (CONF:7386)
@@ -60,7 +65,7 @@ NOTE: The agent responsible for an allergy or adverse reaction is not always a m
 <li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">value</strong></tt> with data type CD, where the @code <strong class="ph b">SHALL</strong> be selected from ValueSet<tt class="ph tt"> <a class="xref" href="../terminology/AllergyAdverseEventType.html">Allergy/Adverse Event Type</a> 2.16.840.1.113883.3.88.12.3221.6.2</tt><strong class="ph b"> DYNAMIC</strong> (CONF:7390, CONF:9139)
 </li>
 
-<li class="li"><strong class="ph b">SHOULD</strong> contain at least one [1..*] <tt class="ph tt"><strong class="ph b">entryRelationship</strong></tt> (CONF:7447, CONF:7907, CONF:7450)
+<li class="li"><strong class="ph b">SHOULD</strong> contain zero or more [0..*] <tt class="ph tt"><strong class="ph b">entryRelationship</strong></tt> (CONF:7447, CONF:7907, CONF:15955)
 <ol class="ol" type="a">
 <li class="li">Contains <tt class="ph tt"><strong class="ph b">@typeCode="</strong>MFST" </tt><em class="ph i">MFST</em></li>
 
@@ -68,7 +73,7 @@ NOTE: The agent responsible for an allergy or adverse reaction is not always a m
 </ol>
 </li>
 
-<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">entryRelationship</strong></tt> (CONF:9961, CONF:9962, CONF:9963)
+<li class="li"><strong class="ph b">SHOULD</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">entryRelationship</strong></tt> (CONF:9961, CONF:9962, CONF:15956)
 <ol class="ol" type="a">
 <li class="li">Contains <tt class="ph tt"><strong class="ph b">@typeCode="</strong>SUBJ" </tt><em class="ph i">SUBJ</em></li>
 
@@ -76,7 +81,7 @@ NOTE: The agent responsible for an allergy or adverse reaction is not always a m
 </ol>
 </li>
 
-<li class="li"><strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">entryRelationship</strong></tt> (CONF:7440, CONF:7906, CONF:7441)
+<li class="li"><strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">entryRelationship</strong></tt> (CONF:7440, CONF:7906, CONF:15954)
 <ol class="ol" type="a">
 <li class="li">Contains <tt class="ph tt"><strong class="ph b">@typeCode="</strong>SUBJ" </tt><em class="ph i">SUBJ</em></li>
 
@@ -93,7 +98,8 @@ NOTE: The agent responsible for an allergy or adverse reaction is not always a m
 <li class="li"> This playingEntity In an allergy to a food or other substance the code <strong class="ph b">SHALL</strong> be selected from the ValueSet 2.16.840.1.113883.3.88.12.80.20 Ingredient Name DYNAMIC (CONF:10084)</li>
 <li class="li"> This playingEntity code <strong class="ph b">SHOULD</strong> contain zero or one [0..1] originalText (CONF:7424)</li>
 <li class="li"> This playingEntity originalText, if present, <strong class="ph b">SHOULD</strong> contain zero or one [0..1] reference (CONF:7425)</li>
-<li class="li"> This playingEntity reference/@value <strong class="ph b">SHALL</strong> begin with a '#' and <strong class="ph b">SHALL</strong> point to its corresponding narrative (using the approach defined in CDA Release 2, section 4.3.5.1 (CONF:7426)</li>
+<li class="li"> This playingEntity reference, if present, <strong class="ph b">SHOULD</strong> contain zero or one [0..1] @value (CONF:15952)</li>
+<li class="li"> This playingEntity reference/@value <strong class="ph b">SHALL</strong> begin with a '#' and <strong class="ph b">SHALL</strong> point to its corresponding narrative (using the approach defined in CDA Release 2, section 4.3.5.1 (CONF:15953)</li>
 <li class="li"> This playingEntity code <strong class="ph b">MAY</strong> contain zero or more [0..*] translation (CONF:7431)</li>
 </ol>
  </li>
@@ -109,15 +115,19 @@ NOTE: The agent responsible for an allergy or adverse reaction is not always a m
 
 <li class="li">value <strong class="ph b">SHOULD</strong> contain zero or one [0..1] originalText (CONF:7422)</li>
 
-<li class="li">originalText, if present, <strong class="ph b">SHOULD</strong> contain zero or one [0..1] reference/@value (CONF:7400)</li>
+<li class="li">originalText, if present, <strong class="ph b">MAY</strong> contain zero or one [0..1] reference (CONF:15949)</li>
 
-<li class="li">reference/@value <strong class="ph b">SHALL</strong> begin with a '#' and <strong class="ph b">SHALL</strong> point to its corresponding narrative (CONF:7401)</li>
+<li class="li">reference, if present, <strong class="ph b">SHOULD</strong> contain zero or one [0..1] reference/@value (CONF:15950)</li>
 
-<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] @inversionInd="true" True (CONF:7446)</li>
+<li class="li">reference/@value <strong class="ph b">SHALL</strong> begin with a '#' and <strong class="ph b">SHALL</strong> point to its corresponding narrative (CONF:15951)</li>
 
-<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] @inversionInd="true" True (CONF:7449)</li>
+<li class="li">entryRelationship with target entry AllergyStatusObservation <strong class="ph b">SHALL</strong> contain exactly one [1..1] @inversionInd="true" True (CONF:7446)</li>
 
-<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] @inversionInd="true" True (CONF:9964)</li>
+<li class="li">entryRelationship with target entry Reaction Observation <strong class="ph b">SHALL</strong> contain exactly one [1..1] @inversionInd="true" True (CONF:7449)</li>
+
+<li class="li">entryRelationship with target entry Severity Observation <strong class="ph b">SHALL</strong> contain exactly one [1..1] @inversionInd="true" True (CONF:9964)</li>
+
+<li class="li">In an allergy to a specific medication the code <strong class="ph b">SHALL</strong> be selected from the ValueSet 2.16.840.1.113883.3.88.12.80.16 Medication Brand Name DYNAMIC or the ValueSet 2.16.840.1.113883.3.88.12.80.17 Medication Clinical Drug DYNAMIC. In an allergy to a class of medications the code <strong class="ph b">SHALL</strong> be selected from the ValueSet 2.16.840.1.113883.3.88.12.80.18 Medication Drug Class DYNAMIC. In an allergy to a food or other substance the code <strong class="ph b">SHALL</strong> be selected from the ValueSet 2.16.840.1.113883.3.88.12.80.20 Ingredient Name DYNAMIC (CONF:7421, CONF:10083, CONF:10084)</li>
 
 </ol>
 
@@ -132,7 +142,7 @@ NOTE: The agent responsible for an allergy or adverse reaction is not always a m
 		<pre class="pre codeblock">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
 &lt;observation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd" classCode="OBS" moodCode="EVN"&gt;
   &lt;templateId root="2.16.840.1.113883.10.20.22.4.7"/&gt;
-  &lt;id root="2007281136"/&gt;
+  &lt;id root="MDHT" extension="1266909917"/&gt;
   &lt;code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4" codeSystemName="HL7ActCode"/&gt;
   &lt;statusCode code="completed"/&gt;
   &lt;effectiveTime&gt;
@@ -141,32 +151,23 @@ NOTE: The agent responsible for an allergy or adverse reaction is not always a m
   &lt;/effectiveTime&gt;
   &lt;participant typeCode="CSM"&gt;
     &lt;participantRole classCode="MANU"&gt;
-      &lt;playingEntity classCode="MMAT"&gt;
-        &lt;code code="Value"/&gt;
-      &lt;/playingEntity&gt;
+      &lt;playingEntity classCode="MMAT"/&gt;
     &lt;/participantRole&gt;
   &lt;/participant&gt;
   &lt;entryRelationship&gt;
     &lt;observation classCode="OBS" moodCode="EVN"&gt;
       &lt;templateId root="2.16.840.1.113883.10.20.22.4.9"/&gt;
-      &lt;id root="1875572545"/&gt;
-      &lt;code code="390655548"/&gt;
+      &lt;id root="MDHT" extension="1831097945"/&gt;
+      &lt;code code="176778839"/&gt;
       &lt;statusCode code="completed"/&gt;
       &lt;effectiveTime&gt;
         &lt;low value="2012"/&gt;
         &lt;high value="2012"/&gt;
       &lt;/effectiveTime&gt;
-      &lt;participant typeCode="CSM"&gt;
-        &lt;participantRole classCode="MANU"&gt;
-          &lt;playingEntity classCode="MMAT"&gt;
-            &lt;code code="Value"/&gt;
-          &lt;/playingEntity&gt;
-        &lt;/participantRole&gt;
-      &lt;/participant&gt;
       &lt;entryRelationship&gt;
         &lt;observation classCode="OBS" moodCode="EVN"&gt;
           &lt;templateId root="2.16.840.1.113883.10.20.22.4.8"/&gt;
-          &lt;id root="1191694130"/&gt;
+          &lt;id root="MDHT" extension="787256983"/&gt;
           &lt;code code="SEV" codeSystem="2.16.840.1.113883.5.4" codeSystemName="HL7ActCode" displayName="Severity observation"/&gt;
           &lt;statusCode code="completed"/&gt;
           &lt;effectiveTime&gt;
@@ -174,341 +175,86 @@ NOTE: The agent responsible for an allergy or adverse reaction is not always a m
             &lt;high value="2012"/&gt;
           &lt;/effectiveTime&gt;
           &lt;interpretationCode codeSystem="2.16.840.1.113883.5.83" codeSystemName="ObservationInterpretation"/&gt;
-          &lt;participant typeCode="CSM"&gt;
-            &lt;participantRole classCode="MANU"&gt;
-              &lt;playingEntity classCode="MMAT"/&gt;
-            &lt;/participantRole&gt;
-          &lt;/participant&gt;
         &lt;/observation&gt;
       &lt;/entryRelationship&gt;
       &lt;entryRelationship&gt;
         &lt;procedure classCode="PROC"&gt;
           &lt;templateId root="2.16.840.1.113883.10.20.22.4.14"/&gt;
-          &lt;id root="1532177753"/&gt;
+          &lt;id root="MDHT" extension="1624219354"/&gt;
+          &lt;code code="1248840498"/&gt;
           &lt;effectiveTime&gt;
             &lt;low value="2012"/&gt;
             &lt;high value="2012"/&gt;
           &lt;/effectiveTime&gt;
+          &lt;priorityCode codeSystem="2.16.840.1.113883.5.7" codeSystemName="ActPriority"/&gt;
           &lt;targetSiteCode codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/&gt;
-          &lt;participant typeCode="CSM"&gt;
-            &lt;participantRole classCode="MANU"&gt;
-              &lt;playingEntity classCode="MMAT"/&gt;
-            &lt;/participantRole&gt;
-          &lt;/participant&gt;
+          &lt;specimen/&gt;
+          &lt;performer/&gt;
+          &lt;entryRelationship typeCode="COMP" inversionInd="true"/&gt;
           &lt;entryRelationship&gt;
             &lt;observation classCode="OBS" moodCode="EVN"&gt;
               &lt;templateId root="2.16.840.1.113883.10.20.22.4.19"/&gt;
-              &lt;id root="17098781"/&gt;
               &lt;code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/&gt;
               &lt;statusCode code="completed"/&gt;
-              &lt;effectiveTime&gt;
-                &lt;low value="2012"/&gt;
-                &lt;high value="2012"/&gt;
-              &lt;/effectiveTime&gt;
-              &lt;participant typeCode="CSM"&gt;
-                &lt;participantRole classCode="MANU"/&gt;
-              &lt;/participant&gt;
             &lt;/observation&gt;
           &lt;/entryRelationship&gt;
           &lt;entryRelationship&gt;
             &lt;substanceAdministration classCode="SBADM"&gt;
               &lt;templateId root="2.16.840.1.113883.10.20.22.4.16"/&gt;
-              &lt;id root="2121617478"/&gt;
-              &lt;effectiveTime xsi:type="IVL_TS"&gt;
-                &lt;low value="2012"/&gt;
-                &lt;high value="2012"/&gt;
-              &lt;/effectiveTime&gt;
-              &lt;administrationUnitCode codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus"/&gt;
-              &lt;consumable/&gt;
-              &lt;participant typeCode="CSM"&gt;
-                &lt;participantRole classCode="MANU"/&gt;
-              &lt;/participant&gt;
-              &lt;entryRelationship&gt;
-                &lt;supply classCode="SPLY" moodCode="INT"&gt;
-                  &lt;templateId root="2.16.840.1.113883.10.20.22.4.17"/&gt;
-                  &lt;id root="2054892826"/&gt;
-                  &lt;effectiveTime xsi:type="IVL_TS"&gt;
-                    &lt;low value="2012"/&gt;
-                    &lt;high value="2012"/&gt;
-                  &lt;/effectiveTime&gt;
-                  &lt;participant typeCode="CSM"/&gt;
-                  &lt;entryRelationship&gt;
-                    &lt;act/&gt;
-                  &lt;/entryRelationship&gt;
-                &lt;/supply&gt;
-              &lt;/entryRelationship&gt;
-              &lt;entryRelationship&gt;
-                &lt;observation classCode="OBS" moodCode="EVN"&gt;
-                  &lt;templateId root="2.16.840.1.113883.10.20.22.4.9"/&gt;
-                  &lt;id root="802497407"/&gt;
-                  &lt;code code="517179101"/&gt;
-                  &lt;statusCode code="completed"/&gt;
-                  &lt;effectiveTime&gt;
-                    &lt;low value="2012"/&gt;
-                    &lt;high value="2012"/&gt;
-                  &lt;/effectiveTime&gt;
-                  &lt;participant typeCode="CSM"/&gt;
-                  &lt;entryRelationship&gt;
-                    &lt;observation/&gt;
-                  &lt;/entryRelationship&gt;
-                  &lt;entryRelationship&gt;
-                    &lt;procedure/&gt;
-                  &lt;/entryRelationship&gt;
-                  &lt;entryRelationship&gt;
-                    &lt;substanceAdministration/&gt;
-                  &lt;/entryRelationship&gt;
-                &lt;/observation&gt;
-              &lt;/entryRelationship&gt;
-              &lt;entryRelationship&gt;
-                &lt;act classCode="ACT" moodCode="INT"&gt;
-                  &lt;templateId root="2.16.840.1.113883.10.20.22.4.20"/&gt;
-                  &lt;id root="2064629789"/&gt;
-                  &lt;code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/&gt;
-                  &lt;statusCode code="completed"/&gt;
-                  &lt;effectiveTime&gt;
-                    &lt;low value="2012"/&gt;
-                    &lt;high value="2012"/&gt;
-                  &lt;/effectiveTime&gt;
-                  &lt;participant typeCode="CSM"/&gt;
-                &lt;/act&gt;
-              &lt;/entryRelationship&gt;
-              &lt;entryRelationship&gt;
-                &lt;observation classCode="OBS" moodCode="EVN"&gt;
-                  &lt;templateId root="2.16.840.1.113883.10.20.22.4.19"/&gt;
-                  &lt;id root="157390097"/&gt;
-                  &lt;code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/&gt;
-                  &lt;statusCode code="completed"/&gt;
-                  &lt;effectiveTime&gt;
-                    &lt;low value="2012"/&gt;
-                    &lt;high value="2012"/&gt;
-                  &lt;/effectiveTime&gt;
-                  &lt;participant typeCode="CSM"/&gt;
-                &lt;/observation&gt;
-              &lt;/entryRelationship&gt;
-              &lt;entryRelationship&gt;
-                &lt;supply classCode="SPLY" moodCode="EVN"&gt;
-                  &lt;templateId root="2.16.840.1.113883.10.20.22.4.18"/&gt;
-                  &lt;id root="1115811365"/&gt;
-                  &lt;effectiveTime xsi:type="IVL_TS"&gt;
-                    &lt;low value="2012"/&gt;
-                    &lt;high value="2012"/&gt;
-                  &lt;/effectiveTime&gt;
-                  &lt;participant typeCode="CSM"/&gt;
-                  &lt;entryRelationship&gt;
-                    &lt;supply/&gt;
-                  &lt;/entryRelationship&gt;
-                &lt;/supply&gt;
-              &lt;/entryRelationship&gt;
+              &lt;routeCode codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus"/&gt;
+              &lt;approachSiteCode codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/&gt;
             &lt;/substanceAdministration&gt;
           &lt;/entryRelationship&gt;
           &lt;entryRelationship&gt;
             &lt;act classCode="ACT" moodCode="INT"&gt;
               &lt;templateId root="2.16.840.1.113883.10.20.22.4.20"/&gt;
-              &lt;id root="1544700444"/&gt;
               &lt;code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/&gt;
               &lt;statusCode code="completed"/&gt;
-              &lt;effectiveTime&gt;
-                &lt;low value="2012"/&gt;
-                &lt;high value="2012"/&gt;
-              &lt;/effectiveTime&gt;
-              &lt;participant typeCode="CSM"&gt;
-                &lt;participantRole classCode="MANU"/&gt;
-              &lt;/participant&gt;
             &lt;/act&gt;
-          &lt;/entryRelationship&gt;
-          &lt;entryRelationship&gt;
-            &lt;encounter&gt;
-              &lt;id root="101556581"/&gt;
-              &lt;effectiveTime&gt;
-                &lt;low value="2012"/&gt;
-                &lt;high value="2012"/&gt;
-              &lt;/effectiveTime&gt;
-              &lt;participant typeCode="CSM"&gt;
-                &lt;participantRole classCode="MANU"/&gt;
-              &lt;/participant&gt;
-            &lt;/encounter&gt;
           &lt;/entryRelationship&gt;
         &lt;/procedure&gt;
       &lt;/entryRelationship&gt;
       &lt;entryRelationship&gt;
         &lt;substanceAdministration classCode="SBADM"&gt;
           &lt;templateId root="2.16.840.1.113883.10.20.22.4.16"/&gt;
-          &lt;id root="1900263228"/&gt;
-          &lt;effectiveTime xsi:type="IVL_TS"&gt;
-            &lt;low value="2012"/&gt;
-            &lt;high value="2012"/&gt;
-          &lt;/effectiveTime&gt;
-          &lt;administrationUnitCode codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus"/&gt;
+          &lt;id root="MDHT" extension="1494151498"/&gt;
+          &lt;code code="2069729244"/&gt;
+          &lt;effectiveTime value="20121102"/&gt;
+          &lt;routeCode codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus"/&gt;
+          &lt;approachSiteCode codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/&gt;
           &lt;consumable/&gt;
-          &lt;participant typeCode="CSM"&gt;
-            &lt;participantRole classCode="MANU"&gt;
-              &lt;playingEntity classCode="MMAT"/&gt;
-            &lt;/participantRole&gt;
-          &lt;/participant&gt;
+          &lt;performer/&gt;
           &lt;entryRelationship&gt;
             &lt;supply classCode="SPLY" moodCode="INT"&gt;
               &lt;templateId root="2.16.840.1.113883.10.20.22.4.17"/&gt;
-              &lt;id root="1221614751"/&gt;
-              &lt;effectiveTime xsi:type="IVL_TS"&gt;
-                &lt;low value="2012"/&gt;
-                &lt;high value="2012"/&gt;
-              &lt;/effectiveTime&gt;
-              &lt;participant typeCode="CSM"&gt;
-                &lt;participantRole classCode="MANU"/&gt;
-              &lt;/participant&gt;
-              &lt;entryRelationship&gt;
-                &lt;act classCode="ACT" moodCode="INT"&gt;
-                  &lt;templateId root="2.16.840.1.113883.10.20.22.4.20"/&gt;
-                  &lt;id root="1346339494"/&gt;
-                  &lt;code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/&gt;
-                  &lt;statusCode code="completed"/&gt;
-                  &lt;effectiveTime&gt;
-                    &lt;low value="2012"/&gt;
-                    &lt;high value="2012"/&gt;
-                  &lt;/effectiveTime&gt;
-                  &lt;participant typeCode="CSM"/&gt;
-                &lt;/act&gt;
-              &lt;/entryRelationship&gt;
             &lt;/supply&gt;
           &lt;/entryRelationship&gt;
           &lt;entryRelationship&gt;
             &lt;observation classCode="OBS" moodCode="EVN"&gt;
               &lt;templateId root="2.16.840.1.113883.10.20.22.4.9"/&gt;
-              &lt;id root="1795540208"/&gt;
-              &lt;code code="1438910826"/&gt;
               &lt;statusCode code="completed"/&gt;
-              &lt;effectiveTime&gt;
-                &lt;low value="2012"/&gt;
-                &lt;high value="2012"/&gt;
-              &lt;/effectiveTime&gt;
-              &lt;participant typeCode="CSM"&gt;
-                &lt;participantRole classCode="MANU"/&gt;
-              &lt;/participant&gt;
-              &lt;entryRelationship&gt;
-                &lt;observation classCode="OBS" moodCode="EVN"&gt;
-                  &lt;templateId root="2.16.840.1.113883.10.20.22.4.8"/&gt;
-                  &lt;id root="1956254167"/&gt;
-                  &lt;code code="SEV" codeSystem="2.16.840.1.113883.5.4" codeSystemName="HL7ActCode" displayName="Severity observation"/&gt;
-                  &lt;statusCode code="completed"/&gt;
-                  &lt;effectiveTime&gt;
-                    &lt;low value="2012"/&gt;
-                    &lt;high value="2012"/&gt;
-                  &lt;/effectiveTime&gt;
-                  &lt;interpretationCode codeSystem="2.16.840.1.113883.5.83" codeSystemName="ObservationInterpretation"/&gt;
-                  &lt;participant typeCode="CSM"/&gt;
-                &lt;/observation&gt;
-              &lt;/entryRelationship&gt;
-              &lt;entryRelationship&gt;
-                &lt;procedure classCode="PROC"&gt;
-                  &lt;templateId root="2.16.840.1.113883.10.20.22.4.14"/&gt;
-                  &lt;id root="847582980"/&gt;
-                  &lt;effectiveTime&gt;
-                    &lt;low value="2012"/&gt;
-                    &lt;high value="2012"/&gt;
-                  &lt;/effectiveTime&gt;
-                  &lt;targetSiteCode codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/&gt;
-                  &lt;participant typeCode="CSM"/&gt;
-                  &lt;entryRelationship&gt;
-                    &lt;observation/&gt;
-                  &lt;/entryRelationship&gt;
-                  &lt;entryRelationship&gt;
-                    &lt;substanceAdministration/&gt;
-                  &lt;/entryRelationship&gt;
-                  &lt;entryRelationship&gt;
-                    &lt;act/&gt;
-                  &lt;/entryRelationship&gt;
-                  &lt;entryRelationship&gt;
-                    &lt;encounter/&gt;
-                  &lt;/entryRelationship&gt;
-                &lt;/procedure&gt;
-              &lt;/entryRelationship&gt;
-              &lt;entryRelationship&gt;
-                &lt;substanceAdministration classCode="SBADM"&gt;
-                  &lt;templateId root="2.16.840.1.113883.10.20.22.4.16"/&gt;
-                  &lt;id root="866722966"/&gt;
-                  &lt;effectiveTime xsi:type="IVL_TS"&gt;
-                    &lt;low value="2012"/&gt;
-                    &lt;high value="2012"/&gt;
-                  &lt;/effectiveTime&gt;
-                  &lt;administrationUnitCode codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus"/&gt;
-                  &lt;consumable/&gt;
-                  &lt;participant typeCode="CSM"/&gt;
-                  &lt;entryRelationship&gt;
-                    &lt;supply/&gt;
-                  &lt;/entryRelationship&gt;
-                  &lt;entryRelationship&gt;
-                    &lt;observation/&gt;
-                  &lt;/entryRelationship&gt;
-                  &lt;entryRelationship&gt;
-                    &lt;act/&gt;
-                  &lt;/entryRelationship&gt;
-                  &lt;entryRelationship&gt;
-                    &lt;observation/&gt;
-                  &lt;/entryRelationship&gt;
-                  &lt;entryRelationship&gt;
-                    &lt;supply/&gt;
-                  &lt;/entryRelationship&gt;
-                &lt;/substanceAdministration&gt;
-              &lt;/entryRelationship&gt;
             &lt;/observation&gt;
           &lt;/entryRelationship&gt;
           &lt;entryRelationship&gt;
             &lt;act classCode="ACT" moodCode="INT"&gt;
               &lt;templateId root="2.16.840.1.113883.10.20.22.4.20"/&gt;
-              &lt;id root="1751421923"/&gt;
               &lt;code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/&gt;
               &lt;statusCode code="completed"/&gt;
-              &lt;effectiveTime&gt;
-                &lt;low value="2012"/&gt;
-                &lt;high value="2012"/&gt;
-              &lt;/effectiveTime&gt;
-              &lt;participant typeCode="CSM"&gt;
-                &lt;participantRole classCode="MANU"/&gt;
-              &lt;/participant&gt;
             &lt;/act&gt;
           &lt;/entryRelationship&gt;
           &lt;entryRelationship&gt;
             &lt;observation classCode="OBS" moodCode="EVN"&gt;
               &lt;templateId root="2.16.840.1.113883.10.20.22.4.19"/&gt;
-              &lt;id root="175750415"/&gt;
               &lt;code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/&gt;
               &lt;statusCode code="completed"/&gt;
-              &lt;effectiveTime&gt;
-                &lt;low value="2012"/&gt;
-                &lt;high value="2012"/&gt;
-              &lt;/effectiveTime&gt;
-              &lt;participant typeCode="CSM"&gt;
-                &lt;participantRole classCode="MANU"/&gt;
-              &lt;/participant&gt;
             &lt;/observation&gt;
           &lt;/entryRelationship&gt;
           &lt;entryRelationship&gt;
             &lt;supply classCode="SPLY" moodCode="EVN"&gt;
               &lt;templateId root="2.16.840.1.113883.10.20.22.4.18"/&gt;
-              &lt;id root="304700425"/&gt;
-              &lt;effectiveTime xsi:type="IVL_TS"&gt;
-                &lt;low value="2012"/&gt;
-                &lt;high value="2012"/&gt;
-              &lt;/effectiveTime&gt;
-              &lt;participant typeCode="CSM"&gt;
-                &lt;participantRole classCode="MANU"/&gt;
-              &lt;/participant&gt;
-              &lt;entryRelationship&gt;
-                &lt;supply classCode="SPLY" moodCode="INT"&gt;
-                  &lt;templateId root="2.16.840.1.113883.10.20.22.4.17"/&gt;
-                  &lt;id root="1852128209"/&gt;
-                  &lt;effectiveTime xsi:type="IVL_TS"&gt;
-                    &lt;low value="2012"/&gt;
-                    &lt;high value="2012"/&gt;
-                  &lt;/effectiveTime&gt;
-                  &lt;participant typeCode="CSM"/&gt;
-                  &lt;entryRelationship&gt;
-                    &lt;act/&gt;
-                  &lt;/entryRelationship&gt;
-                &lt;/supply&gt;
-              &lt;/entryRelationship&gt;
             &lt;/supply&gt;
           &lt;/entryRelationship&gt;
+          &lt;precondition/&gt;
         &lt;/substanceAdministration&gt;
       &lt;/entryRelationship&gt;
     &lt;/observation&gt;
@@ -516,7 +262,7 @@ NOTE: The agent responsible for an allergy or adverse reaction is not always a m
   &lt;entryRelationship&gt;
     &lt;observation classCode="OBS" moodCode="EVN"&gt;
       &lt;templateId root="2.16.840.1.113883.10.20.22.4.8"/&gt;
-      &lt;id root="1619745698"/&gt;
+      &lt;id root="MDHT" extension="2089350944"/&gt;
       &lt;code code="SEV" codeSystem="2.16.840.1.113883.5.4" codeSystemName="HL7ActCode" displayName="Severity observation"/&gt;
       &lt;statusCode code="completed"/&gt;
       &lt;effectiveTime&gt;
@@ -524,32 +270,18 @@ NOTE: The agent responsible for an allergy or adverse reaction is not always a m
         &lt;high value="2012"/&gt;
       &lt;/effectiveTime&gt;
       &lt;interpretationCode codeSystem="2.16.840.1.113883.5.83" codeSystemName="ObservationInterpretation"/&gt;
-      &lt;participant typeCode="CSM"&gt;
-        &lt;participantRole classCode="MANU"&gt;
-          &lt;playingEntity classCode="MMAT"&gt;
-            &lt;code code="Value"/&gt;
-          &lt;/playingEntity&gt;
-        &lt;/participantRole&gt;
-      &lt;/participant&gt;
     &lt;/observation&gt;
   &lt;/entryRelationship&gt;
   &lt;entryRelationship&gt;
     &lt;observation classCode="OBS" moodCode="EVN"&gt;
       &lt;templateId root="2.16.840.1.113883.10.20.22.4.28"/&gt;
-      &lt;id root="1857153786"/&gt;
+      &lt;id root="MDHT" extension="2112971777"/&gt;
       &lt;code code="33999-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Status"/&gt;
       &lt;statusCode code="completed"/&gt;
       &lt;effectiveTime&gt;
         &lt;low value="2012"/&gt;
         &lt;high value="2012"/&gt;
       &lt;/effectiveTime&gt;
-      &lt;participant typeCode="CSM"&gt;
-        &lt;participantRole classCode="MANU"&gt;
-          &lt;playingEntity classCode="MMAT"&gt;
-            &lt;code code="Value"/&gt;
-          &lt;/playingEntity&gt;
-        &lt;/participantRole&gt;
-      &lt;/participant&gt;
     &lt;/observation&gt;
   &lt;/entryRelationship&gt;
 &lt;/observation&gt;</pre>

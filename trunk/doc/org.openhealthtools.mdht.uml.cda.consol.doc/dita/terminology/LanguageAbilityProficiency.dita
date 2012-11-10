@@ -15,18 +15,17 @@
 <row><entry>Value Set</entry><entry>LanguageAbilityProficiency - 2.16.840.1.113883.1.11.12199</entry></row>
 <row><entry>Code System</entry><entry>LanguageAbilityProficiency - 2.16.840.1.113883.5.61</entry></row>
 </tbody></tgroup></table>
-<table><tgroup cols="4">
+<table><tgroup cols="3">
 <colspec colname="col1" colwidth="1*"/>
-<colspec colname="col2" colwidth="2*"/>
-<colspec colname="col3" colwidth="1*"/>
-<colspec colname="col4" colwidth="3*"/>
+<colspec colname="col2" colwidth="1*"/>
+<colspec colname="col3" colwidth="2*"/>
 <thead><row>
-<entry>Concept Code</entry><entry>Concept Name</entry><entry>Code System</entry><entry>Description</entry>
+<entry>Code</entry><entry>Code System</entry><entry>Print Name</entry>
 </row></thead><tbody>
-<row><entry>E</entry><entry>Excellent</entry><entry>LanguageAbilityProficiency</entry><entry></entry></row>
-<row><entry>F</entry><entry>Fair</entry><entry>LanguageAbilityProficiency</entry><entry></entry></row>
-<row><entry>G</entry><entry>Good</entry><entry>LanguageAbilityProficiency</entry><entry></entry></row>
-<row><entry>P</entry><entry>Poor</entry><entry>LanguageAbilityProficiency</entry><entry></entry></row>
+<row><entry>E</entry><entry>LanguageAbilityProficiency</entry><entry>Excellent</entry></row>
+<row><entry>F</entry><entry>LanguageAbilityProficiency</entry><entry>Fair</entry></row>
+<row><entry>G</entry><entry>LanguageAbilityProficiency</entry><entry>Good</entry></row>
+<row><entry>P</entry><entry>LanguageAbilityProficiency</entry><entry>Poor</entry></row>
 </tbody></tgroup></table>
 </section>
 </body>

@@ -13,7 +13,7 @@
 <colspec colname="col2" colwidth="4*"/>
 <tbody>
 <row><entry>Value Set</entry><entry>HealthcareServiceLocation - 2.16.840.1.113883.1.11.20275</entry></row>
-<row><entry>Code System</entry><entry>LOINC - 2.16.840.1.113883.6.1</entry></row>
+<row><entry>Code System</entry><entry>HealthcareServiceLocation - 2.16.840.1.113883.6.259</entry></row>
 </tbody></tgroup></table>
 </section>
 </body>

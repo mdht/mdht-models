@@ -8,10 +8,13 @@
 <resourceid id="2.16.840.1.113883.10.20.6.2.10"/>
 </prolog>
 <body>
+<section id="knownSubclasses">
+</section>
 <section id="description">
-<p>A Referenced Frames Observation is used if the referenced DICOM SOP instance is a multiframe image and the reference does not apply to all frames. The list of integer values for the referenced frames of a DICOM multiframe image SOP instance is contained in a Boundary Observation nested inside this class.</p>
+<p><lines><i>A Referenced Frames Observation is used if the referenced DICOM SOP instance is a multiframe image and the reference does not apply to all frames. The list of integer values for the referenced frames of a DICOM multiframe image SOP instance is contained in a Boundary Observation nested inside this class.</i></lines></p>
 </section>
 <ol id="conformance">
+<li><b>SHALL</b> contain exactly one [1..1] templateId (  ) such that it <ol><li><b>SHALL</b> contain exactly one [1..1] <b>@root</b>="2.16.840.1.113883.10.20.6.2.10"</li></ol></li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="ROIBND" </tt> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>) (CONF:9276)
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF:9277)
@@ -37,40 +40,14 @@
 </ol>
 <section id="tableconformance"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="8" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><colspec colname="col2" colnum="2" /><colspec colname="col3" colnum="3" /><colspec colname="col4" colnum="4" /><colspec colname="col5" colnum="5" /><colspec colname="col6" colnum="6" /><colspec colname="col7" colnum="7" /><thead> <row><entry namest="col0" nameend="col7" >consol::ReferencedFramesObservation</entry>  </row>  <row><entry namest="col0" nameend="col7" >cda::observation[cda:templateId/@root = 2.16.840.1.113883.10.20.6.2.10]/</entry>  </row>  <row><entry>Name</entry><entry>XPath</entry><entry>Cardinality</entry><entry>Severity</entry><entry>Nullable</entry><entry>Data Type</entry><entry>Conformance</entry><entry>Value(s)</entry></row></thead><tbody><row><entry>classCode</entry><entry>@classCode</entry><entry>1..1</entry><entry>SHALL</entry><entry>NO</entry><entry>ActClassObservation</entry><entry>CONF:9276</entry><entry> ALRT</entry></row> 
 <row><entry>moodCode</entry><entry>@moodCode</entry><entry>1..1</entry><entry>SHALL</entry><entry>NO</entry><entry>x_ActMoodDocumentObservation</entry><entry>CONF:9277</entry><entry> DEF</entry></row> 
-<row><entry>negationInd</entry><entry>@negationInd</entry><entry>0..1</entry><entry></entry><entry>NO</entry><entry>Boolean</entry><entry></entry><entry> </entry></row> 
-<row><entry>nullFlavor</entry><entry>@nullFlavor</entry><entry>0..1</entry><entry></entry><entry>NO</entry><entry>NullFlavor</entry><entry></entry><entry> ASKU</entry></row> 
 <row><entry>code</entry><entry>code</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>CD</entry><entry>CONF:9278</entry><entry>DCM 1.2.840.10008.2.16.4 121190</entry></row> 
-<row><entry>derivationExpr</entry><entry>derivationExpr</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>ST</entry><entry></entry><entry> </entry></row> 
-<row><entry>effectiveTime</entry><entry>effectiveTime</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>IVL_TS</entry><entry></entry><entry> </entry></row> 
-<row><entry>id</entry><entry>id</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>II</entry><entry></entry><entry> </entry></row> 
-<row><entry>interpretationCode</entry><entry>interpretationCode</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>CE</entry><entry></entry><entry> </entry></row> 
-<row><entry>languageCode</entry><entry>languageCode</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>CS</entry><entry></entry><entry> </entry></row> 
-<row><entry>methodCode</entry><entry>methodCode</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>CE</entry><entry></entry><entry> </entry></row> 
-<row><entry>priorityCode</entry><entry>priorityCode</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>CE</entry><entry></entry><entry> </entry></row> 
-<row><entry>realmCode</entry><entry>realmCode</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>CS</entry><entry></entry><entry> </entry></row> 
-<row><entry>repeatNumber</entry><entry>repeatNumber</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>IVL_INT</entry><entry></entry><entry> </entry></row> 
-<row><entry>statusCode</entry><entry>statusCode</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>CS</entry><entry></entry><entry> </entry></row> 
-<row><entry>targetSiteCode</entry><entry>targetSiteCode</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>CD</entry><entry></entry><entry> </entry></row> 
-<row><entry>templateId</entry><entry>templateId</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>II</entry><entry></entry><entry> 2.16.840.1.113883.10.20.6.2.10</entry></row> 
-<row><entry>text</entry><entry>text</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>ED</entry><entry></entry><entry> </entry></row> 
-<row><entry>value</entry><entry>value</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>ANY</entry><entry></entry><entry> </entry></row> 
-<row><entry>author</entry><entry>author</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>Author</entry><entry></entry><entry> </entry></row> 
 <row><entry>boundaryObservation</entry><entry>boundaryObservation</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>BoundaryObservation</entry><entry>CONF:9279CONF:9280CONF:9281</entry><entry> </entry></row> 
-<row><entry>entryRelationship</entry><entry>entryRelationship</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>EntryRelationship</entry><entry></entry><entry> </entry></row> 
-<row><entry>informant</entry><entry>informant</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>Informant12</entry><entry></entry><entry> </entry></row> 
-<row><entry>participant</entry><entry>participant</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>Participant2</entry><entry></entry><entry> </entry></row> 
-<row><entry>performer</entry><entry>performer</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>Performer2</entry><entry></entry><entry> </entry></row> 
-<row><entry>precondition</entry><entry>precondition</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>Precondition</entry><entry></entry><entry> </entry></row> 
-<row><entry>reference</entry><entry>reference</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>Reference</entry><entry></entry><entry> </entry></row> 
-<row><entry>referenceRange</entry><entry>referenceRange</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>ReferenceRange</entry><entry></entry><entry> </entry></row> 
-<row><entry>specimen</entry><entry>specimen</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>Specimen</entry><entry></entry><entry> </entry></row> 
-<row><entry>subject</entry><entry>subject</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>Subject</entry><entry></entry><entry> </entry></row> 
-<row><entry>typeId</entry><entry>typeId</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>InfrastructureRootTypeId</entry><entry></entry><entry> </entry></row> 
+<row><entry>referencedFramesObservation</entry><entry>referencedFramesObservation</entry><entry>0..*</entry><entry>MAY</entry><entry>YES</entry><entry>ReferencedFramesObservation</entry><entry>CONF:9260CONF:9261CONF:15936</entry><entry> </entry></row> 
 </tbody></tgroup></table></p></section>
 <codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
 <observation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd" classCode="ROIBND" moodCode="EVN">
   <templateId root="2.16.840.1.113883.10.20.6.2.10"/>
-  <id root="1000727528"/>
+  <id root="MDHT" extension="910658418"/>
   <code code="121190" codeSystem="1.2.840.10008.2.16.4" codeSystemName="DCM" displayName="Referenced Frames"/>
   <effectiveTime>
     <low value="2012"/>
@@ -79,7 +56,7 @@
   <entryRelationship>
     <observation classCode="OBS" moodCode="EVN">
       <templateId root="2.16.840.1.113883.10.20.6.2.11"/>
-      <id root="236149885"/>
+      <id root="MDHT" extension="928121547"/>
       <code code="113036" codeSystem="1.2.840.10008.2.16.4" codeSystemName="DCM" displayName="Frames for Display"/>
       <effectiveTime>
         <low value="2012"/>

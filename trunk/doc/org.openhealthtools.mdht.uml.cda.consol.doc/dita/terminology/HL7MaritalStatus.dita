@@ -17,23 +17,22 @@
 <row><entry>Version</entry><entry>1</entry></row>
 <row><entry>Definition</entry><entry>Marital Status is the domestic partnership status of a person.</entry></row>
 </tbody></tgroup></table>
-<table><tgroup cols="4">
+<table><tgroup cols="3">
 <colspec colname="col1" colwidth="1*"/>
-<colspec colname="col2" colwidth="2*"/>
-<colspec colname="col3" colwidth="1*"/>
-<colspec colname="col4" colwidth="3*"/>
+<colspec colname="col2" colwidth="1*"/>
+<colspec colname="col3" colwidth="2*"/>
 <thead><row>
-<entry>Concept Code</entry><entry>Concept Name</entry><entry>Code System</entry><entry>Description</entry>
+<entry>Code</entry><entry>Code System</entry><entry>Print Name</entry>
 </row></thead><tbody>
-<row><entry>A</entry><entry></entry><entry>MaritalStatus</entry><entry></entry></row>
-<row><entry>D</entry><entry></entry><entry>MaritalStatus</entry><entry></entry></row>
-<row><entry>T</entry><entry></entry><entry>MaritalStatus</entry><entry></entry></row>
-<row><entry>I</entry><entry></entry><entry>MaritalStatus</entry><entry></entry></row>
-<row><entry>L</entry><entry></entry><entry>MaritalStatus</entry><entry></entry></row>
-<row><entry>M</entry><entry></entry><entry>MaritalStatus</entry><entry></entry></row>
-<row><entry>S</entry><entry></entry><entry>MaritalStatus</entry><entry></entry></row>
-<row><entry>P</entry><entry></entry><entry>MaritalStatus</entry><entry></entry></row>
-<row><entry>W</entry><entry></entry><entry>MaritalStatus</entry><entry></entry></row>
+<row><entry>A</entry><entry>MaritalStatus</entry><entry>Annulled</entry></row>
+<row><entry>D</entry><entry>MaritalStatus</entry><entry>Divorced</entry></row>
+<row><entry>I</entry><entry>MaritalStatus</entry><entry>Interlocutory</entry></row>
+<row><entry>L</entry><entry>MaritalStatus</entry><entry>Legally Separated</entry></row>
+<row><entry>M</entry><entry>MaritalStatus</entry><entry>Married</entry></row>
+<row><entry>P</entry><entry>MaritalStatus</entry><entry>Polygamous</entry></row>
+<row><entry>S</entry><entry>MaritalStatus</entry><entry>Never Married</entry></row>
+<row><entry>T</entry><entry>MaritalStatus</entry><entry>Domestic partner</entry></row>
+<row><entry>W</entry><entry>MaritalStatus</entry><entry>Widowed</entry></row>
 </tbody></tgroup></table>
 </section>
 </body>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html
   PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html lang="en-us" xml:lang="en-us">
+<html xml:lang="en-us" lang="en-us">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 <meta name="copyright" content="(C) Copyright 2005"/>
@@ -15,10 +15,10 @@
 <link rel="stylesheet" type="text/css" href="../css/commonltr.css"/>
 <title>Allergies Section Sample</title>
 </head>
-<body id="classId"><a name="classId"><!-- --></a>
+<body id="classId">
 <div>
-	<p><b>For Discussion and Demonstration Only</b> The Normative content for these specifications
-	may be found on the HL7 web site.</p>
+	<p><b>Non-Normative Content</b> The Normative content for these specifications
+	may be found on the HL7, IHE, and HITSP web sites.</p>
 </div>
 
 	<h1 class="title topictitle1"><span class="ph">Allergies Section</span> Sample</h1>
@@ -38,16 +38,16 @@
 			
 			<pre class="pre codeblock">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
 &lt;section xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd"&gt;
-  &lt;templateId root="2.16.840.1.113883.10.20.22.2.6"/&gt;
   &lt;templateId root="2.16.840.1.113883.10.20.22.2.6.1"/&gt;
-  &lt;id root="1736907330"/&gt;
+  &lt;templateId root="2.16.840.1.113883.10.20.22.2.6"/&gt;
+  &lt;id root="MDHT" extension="595810296"/&gt;
   &lt;code code="48765-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Allergies, adverse reactions, alerts"/&gt;
-  &lt;title/&gt;
+  &lt;title&gt;TEXT FOR TITLE&lt;/title&gt;
   &lt;text/&gt;
   &lt;entry&gt;
     &lt;act classCode="ACT" moodCode="EVN"&gt;
       &lt;templateId root="2.16.840.1.113883.10.20.22.4.30"/&gt;
-      &lt;id root="1129162203"/&gt;
+      &lt;id root="MDHT" extension="463109676"/&gt;
       &lt;code code="48765-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Allergies, adverse reactions, alerts"/&gt;
       &lt;text&gt;Text Value&lt;/text&gt;
       &lt;effectiveTime&gt;
@@ -57,7 +57,7 @@
       &lt;entryRelationship&gt;
         &lt;observation classCode="OBS" moodCode="EVN"&gt;
           &lt;templateId root="2.16.840.1.113883.10.20.22.4.7"/&gt;
-          &lt;id root="1143290643"/&gt;
+          &lt;id root="MDHT" extension="621049784"/&gt;
           &lt;code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4" codeSystemName="HL7ActCode"/&gt;
           &lt;text&gt;Text Value&lt;/text&gt;
           &lt;statusCode code="completed"/&gt;
@@ -65,107 +65,26 @@
             &lt;low value="2012"/&gt;
             &lt;high value="2012"/&gt;
           &lt;/effectiveTime&gt;
+          &lt;participant typeCode="CSM"/&gt;
           &lt;entryRelationship&gt;
             &lt;observation classCode="OBS" moodCode="EVN"&gt;
               &lt;templateId root="2.16.840.1.113883.10.20.22.4.9"/&gt;
-              &lt;id root="1755080305"/&gt;
-              &lt;code code="875734399"/&gt;
-              &lt;text&gt;Text Value&lt;/text&gt;
               &lt;statusCode code="completed"/&gt;
-              &lt;effectiveTime&gt;
-                &lt;low value="2012"/&gt;
-                &lt;high value="2012"/&gt;
-              &lt;/effectiveTime&gt;
-              &lt;entryRelationship&gt;
-                &lt;observation classCode="OBS" moodCode="EVN"&gt;
-                  &lt;templateId root="2.16.840.1.113883.10.20.22.4.8"/&gt;
-                  &lt;id root="2096328396"/&gt;
-                  &lt;code code="SEV" codeSystem="2.16.840.1.113883.5.4" codeSystemName="HL7ActCode" displayName="Severity observation"/&gt;
-                  &lt;text&gt;Text Value&lt;/text&gt;
-                  &lt;statusCode code="completed"/&gt;
-                  &lt;effectiveTime&gt;
-                    &lt;low value="2012"/&gt;
-                    &lt;high value="2012"/&gt;
-                  &lt;/effectiveTime&gt;
-                  &lt;interpretationCode codeSystem="2.16.840.1.113883.5.83" codeSystemName="ObservationInterpretation"/&gt;
-                &lt;/observation&gt;
-              &lt;/entryRelationship&gt;
-              &lt;entryRelationship&gt;
-                &lt;procedure classCode="PROC"&gt;
-                  &lt;templateId root="2.16.840.1.113883.10.20.22.4.14"/&gt;
-                  &lt;id root="431437940"/&gt;
-                  &lt;text&gt;Text Value&lt;/text&gt;
-                  &lt;effectiveTime&gt;
-                    &lt;low value="2012"/&gt;
-                    &lt;high value="2012"/&gt;
-                  &lt;/effectiveTime&gt;
-                  &lt;targetSiteCode codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/&gt;
-                  &lt;entryRelationship&gt;
-                    &lt;observation/&gt;
-                  &lt;/entryRelationship&gt;
-                  &lt;entryRelationship&gt;
-                    &lt;substanceAdministration/&gt;
-                  &lt;/entryRelationship&gt;
-                  &lt;entryRelationship&gt;
-                    &lt;act/&gt;
-                  &lt;/entryRelationship&gt;
-                  &lt;entryRelationship&gt;
-                    &lt;encounter/&gt;
-                  &lt;/entryRelationship&gt;
-                &lt;/procedure&gt;
-              &lt;/entryRelationship&gt;
-              &lt;entryRelationship&gt;
-                &lt;substanceAdministration classCode="SBADM"&gt;
-                  &lt;templateId root="2.16.840.1.113883.10.20.22.4.16"/&gt;
-                  &lt;id root="69230413"/&gt;
-                  &lt;text&gt;Text Value&lt;/text&gt;
-                  &lt;effectiveTime value="20120405"/&gt;
-                  &lt;administrationUnitCode codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus"/&gt;
-                  &lt;consumable/&gt;
-                  &lt;entryRelationship&gt;
-                    &lt;supply/&gt;
-                  &lt;/entryRelationship&gt;
-                  &lt;entryRelationship&gt;
-                    &lt;observation/&gt;
-                  &lt;/entryRelationship&gt;
-                  &lt;entryRelationship&gt;
-                    &lt;act/&gt;
-                  &lt;/entryRelationship&gt;
-                  &lt;entryRelationship&gt;
-                    &lt;observation/&gt;
-                  &lt;/entryRelationship&gt;
-                  &lt;entryRelationship&gt;
-                    &lt;supply/&gt;
-                  &lt;/entryRelationship&gt;
-                &lt;/substanceAdministration&gt;
-              &lt;/entryRelationship&gt;
             &lt;/observation&gt;
           &lt;/entryRelationship&gt;
           &lt;entryRelationship&gt;
             &lt;observation classCode="OBS" moodCode="EVN"&gt;
               &lt;templateId root="2.16.840.1.113883.10.20.22.4.8"/&gt;
-              &lt;id root="1288095308"/&gt;
               &lt;code code="SEV" codeSystem="2.16.840.1.113883.5.4" codeSystemName="HL7ActCode" displayName="Severity observation"/&gt;
-              &lt;text&gt;Text Value&lt;/text&gt;
               &lt;statusCode code="completed"/&gt;
-              &lt;effectiveTime&gt;
-                &lt;low value="2012"/&gt;
-                &lt;high value="2012"/&gt;
-              &lt;/effectiveTime&gt;
               &lt;interpretationCode codeSystem="2.16.840.1.113883.5.83" codeSystemName="ObservationInterpretation"/&gt;
             &lt;/observation&gt;
           &lt;/entryRelationship&gt;
           &lt;entryRelationship&gt;
             &lt;observation classCode="OBS" moodCode="EVN"&gt;
               &lt;templateId root="2.16.840.1.113883.10.20.22.4.28"/&gt;
-              &lt;id root="435886885"/&gt;
               &lt;code code="33999-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Status"/&gt;
-              &lt;text&gt;Text Value&lt;/text&gt;
               &lt;statusCode code="completed"/&gt;
-              &lt;effectiveTime&gt;
-                &lt;low value="2012"/&gt;
-                &lt;high value="2012"/&gt;
-              &lt;/effectiveTime&gt;
             &lt;/observation&gt;
           &lt;/entryRelationship&gt;
         &lt;/observation&gt;

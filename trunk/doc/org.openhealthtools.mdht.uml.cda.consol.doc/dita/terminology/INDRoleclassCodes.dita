@@ -17,6 +17,20 @@
 <row><entry>Description</entry><entry>Specific classification codes for further qualifying RoleClass codes.
 </entry></row>
 </tbody></tgroup></table>
+<table><tgroup cols="3">
+<colspec colname="col1" colwidth="1*"/>
+<colspec colname="col2" colwidth="1*"/>
+<colspec colname="col3" colwidth="2*"/>
+<thead><row>
+<entry>Code</entry><entry>Code System</entry><entry>Print Name</entry>
+</row></thead><tbody>
+<row><entry>PRS</entry><entry>HL7RoleClass</entry><entry>personal relationship</entry></row>
+<row><entry>NOK</entry><entry>HL7RoleClass</entry><entry>next of kin</entry></row>
+<row><entry>CAREGIVER</entry><entry>HL7RoleClass</entry><entry>caregiver</entry></row>
+<row><entry>AGNT</entry><entry>HL7RoleClass</entry><entry>agent</entry></row>
+<row><entry>GUAR</entry><entry>HL7RoleClass</entry><entry>guarantor</entry></row>
+<row><entry>ECON</entry><entry>HL7RoleClass</entry><entry>emergency contact</entry></row>
+</tbody></tgroup></table>
 </section>
 </body>
 </topic>

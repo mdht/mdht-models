@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html
   PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html lang="en-us" xml:lang="en-us">
+<html xml:lang="en-us" lang="en-us">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 <meta name="copyright" content="(C) Copyright 2005"/>
@@ -17,10 +17,10 @@
 <link rel="stylesheet" type="text/css" href="../css/commonltr.css"/>
 <title>Procedure Context</title>
 </head>
-<body id="classId"><a name="classId"><!-- --></a>
+<body id="classId">
 <div>
-	<p><b>For Discussion and Demonstration Only</b> The Normative content for these specifications
-	may be found on the HL7 web site.</p>
+	<p><b>Non-Normative Content</b> The Normative content for these specifications
+	may be found on the HL7, IHE, and HITSP web sites.</p>
 </div>
 
 	<h1 class="title topictitle1"><span class="ph">Procedure Context</span></h1>
@@ -31,14 +31,26 @@
 
 		
 		<div class="section">
-<p class="p">The ServiceEvent Procedure Context of the document header may be overridden in the CDA structured body if there is a need to refer to multiple imaging procedures or acts. The selection of the Procedure or Act entry from the clinical statement choice box depends on the nature of the imaging service that has been performed. The Procedure entry shall be used for image-guided interventions and minimal invasive imaging services, whereas the Act entry shall be used for diagnostic imaging services.</p>
+<div class="p"><p class="lines"><em class="ph i">The ServiceEvent Procedure Context of the document header may be overridden in the CDA structured body if there is a need to refer to multiple imaging procedures or acts. The selection of the Procedure or Act entry from the clinical statement choice box depends on the nature of the imaging service that has been performed. The Procedure entry shall be used for image-guided interventions and minimal invasive imaging services, whereas the Act entry shall be used for diagnostic imaging services.</em></p>
+</div>
 
 </div>
 
 		
 
 		<ol class="ol">
-<li class="li"/>
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] templateId ( CONF:9200, CONF:10530 ) such that it <ol class="ol" type="a"><li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <strong class="ph b">@root</strong>="2.16.840.1.113883.10.20.6.2.5"</li>
+</ol>
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt> (CONF:9201)
+</li>
+
+<li class="li"><strong class="ph b">SHOULD</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">effectiveTime</strong></tt> (CONF:9203)
+<ol class="ol" type="a">
+<li class="li">effectiveTime, if present, <strong class="ph b">SHALL</strong> contain exactly one [1..1] @value (CONF:17173)</li>
+</ol>
+</li>
 
 </ol>
 
@@ -53,8 +65,8 @@
 		<pre class="pre codeblock">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
 &lt;act xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd"&gt;
   &lt;templateId root="2.16.840.1.113883.10.20.6.2.5"/&gt;
-  &lt;id root="1771153418"/&gt;
-  &lt;code code="1604451826"/&gt;
+  &lt;id root="MDHT" extension="793691520"/&gt;
+  &lt;code code="68554126"/&gt;
   &lt;effectiveTime&gt;
     &lt;low value="2012"/&gt;
     &lt;high value="2012"/&gt;

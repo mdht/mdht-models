@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html
   PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html lang="en-us" xml:lang="en-us">
+<html xml:lang="en-us" lang="en-us">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 <meta name="copyright" content="(C) Copyright 2005"/>
@@ -17,10 +17,10 @@
 <link rel="stylesheet" type="text/css" href="../css/commonltr.css"/>
 <title>Advance Directive Observation</title>
 </head>
-<body id="classId"><a name="classId"><!-- --></a>
+<body id="classId">
 <div>
-	<p><b>For Discussion and Demonstration Only</b> The Normative content for these specifications
-	may be found on the HL7 web site.</p>
+	<p><b>Non-Normative Content</b> The Normative content for these specifications
+	may be found on the HL7, IHE, and HITSP web sites.</p>
 </div>
 
 	<h1 class="title topictitle1"><span class="ph">Advance Directive Observation</span></h1>
@@ -31,13 +31,18 @@
 
 		
 		<div class="section">
-<p class="p">Advance Directives Observatations assert findings (e.g., "resuscitation status is Full Code") rather than orders, and should not be considered legal documents. A legal document can be referenced using the reference/externalReference construct.</p>
+<div class="p"><p class="lines"><em class="ph i">Advance Directives Observatations assert findings (e.g., "resuscitation status is Full Code") rather than orders, and should not be considered legal documents. A legal document can be referenced using the reference/externalReference construct.</em></p>
+</div>
 
 </div>
 
 		
 
 		<ol class="ol">
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] templateId ( CONF:8655, CONF:10485 ) such that it <ol class="ol" type="a"><li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <strong class="ph b">@root</strong>="2.16.840.1.113883.10.20.22.4.48"</li>
+</ol>
+</li>
+
 <li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@classCode</strong>="OBS" </tt><em class="ph i">Observation</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.5.6 HL7ActClass</tt>) (CONF:8648)
 </li>
 
@@ -58,13 +63,16 @@
 
 <li class="li"><strong class="ph b">SHOULD</strong> contain at least one [1..*] <tt class="ph tt"><strong class="ph b">participant</strong></tt> (CONF:8662) <ol class="ol" type="a"><li class="li"> Such participants <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@typeCode</strong>="VRF" </tt> (CONF:8663)</li>
 <li class="li"> Such participants <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">time</strong></tt> (CONF:8665)</li>
-<li class="li"> Such participants <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">participantRole</strong></tt>, where its type is CDA Participant Role (CONF:8666)</li>
+<li class="li"> Such participants <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">participantRole</strong></tt>, where its type is CDA Participant Role (CONF:8666)<ol class="ol" type="i">
+<li class="li">Contains exactly one [1..1] CDA Participant Role</li>
+</ol>
+</li>
 </ol>
 
 </li>
 
 <li class="li"><strong class="ph b">SHOULD</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">participant</strong></tt> (CONF:8667) <ol class="ol" type="a"><li class="li"> This participant <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@typeCode</strong>="CST" </tt> (CONF:8668)</li>
-<li class="li"> This participant <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">participantRole</strong></tt> (CONF:8669) <ol class="ol" type="i"><li class="li"> This participantRole <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@classCode</strong>="ROL" </tt> (CONF:8670)</li>
+<li class="li"> This participant <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">participantRole</strong></tt> (CONF:8669) <ol class="ol" type="i"><li class="li"> This participantRole <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@classCode</strong>="AGNT" </tt> (CONF:8670)</li>
 <li class="li"> This participantRole <strong class="ph b">SHOULD</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">addr</strong></tt> (CONF:8671)</li>
 <li class="li"> This participantRole <strong class="ph b">SHOULD</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">telecom</strong></tt> (CONF:8672)</li>
 <li class="li"> This participantRole <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">playingEntity</strong></tt> (ii., CONF:8824) <ol class="ol"><li class="li"> This playingEntity <strong class="ph b">SHALL</strong> contain at least one [1..*] <tt class="ph tt"><strong class="ph b">name</strong></tt> (CONF:8673)</li>
@@ -110,7 +118,7 @@ ii. If the Advance Directive does not have a specified ending time, the &lt;high
 		<pre class="pre codeblock">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
 &lt;observation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd" classCode="OBS" moodCode="EVN"&gt;
   &lt;templateId root="2.16.840.1.113883.10.20.22.4.48"/&gt;
-  &lt;id root="948154805"/&gt;
+  &lt;id root="MDHT" extension="1282415972"/&gt;
   &lt;code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/&gt;
   &lt;statusCode code="completed"/&gt;
   &lt;effectiveTime&gt;
@@ -122,24 +130,18 @@ ii. If the Advance Directive does not have a specified ending time, the &lt;high
       &lt;low value="2012"/&gt;
       &lt;high value="2012"/&gt;
     &lt;/time&gt;
-    &lt;participantRole&gt;
-      &lt;playingDevice/&gt;
-      &lt;playingEntity/&gt;
-      &lt;scopingEntity/&gt;
-    &lt;/participantRole&gt;
+    &lt;participantRole/&gt;
   &lt;/participant&gt;
   &lt;participant typeCode="CST"&gt;
-    &lt;participantRole classCode="ROL"&gt;
+    &lt;participantRole classCode="AGNT"&gt;
       &lt;addr/&gt;
       &lt;telecom/&gt;
-      &lt;playingEntity&gt;
-        &lt;name/&gt;
-      &lt;/playingEntity&gt;
+      &lt;playingEntity/&gt;
     &lt;/participantRole&gt;
   &lt;/participant&gt;
   &lt;reference typeCode="REFR"&gt;
     &lt;externalDocument&gt;
-      &lt;id root="288574241"/&gt;
+      &lt;id root="MDHT" extension="414973581"/&gt;
       &lt;text&gt;Text Value&lt;/text&gt;
     &lt;/externalDocument&gt;
   &lt;/reference&gt;

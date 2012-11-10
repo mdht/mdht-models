@@ -8,17 +8,20 @@
 <resourceid id="2.16.840.1.113883.10.20.22.4.24"/>
 </prolog>
 <body>
+<section id="knownSubclasses">
+</section>
 <section id="description">
 </section>
 <ol id="conformance">
+<li><b>SHALL</b> contain exactly one [1..1] templateId ( CONF:7495 ) such that it <ol><li><b>SHALL</b> contain exactly one [1..1] <b>@root</b>="2.16.840.1.113883.10.20.22.4.24"</li></ol></li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="MANU" </tt> (CONF:7490)
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="412307009" </tt> (CodeSystem:<tt> 2.16.840.1.113883.6.96 SNOMEDCT</tt>) (CONF:7491)
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>playingEntity</b></tt> (CONF:7492)
-</li>
-<li>This playingEntity <b>SHALL</b> contain exactly one [1..1] code (CONF:7493). 
-	This playingEntity/code is used to supply a coded term for the drug  vehicle (CONF:10086) (CONF:7493, CONF:10086)</li>
+<ol>
+<li>Contains exactly one [1..1] CDA Playing Entity</li></ol></li>
+<li>This playingEntity <b>SHALL</b> contain exactly one [1..1] code (CONF:7493, CONF:10086)</li>
 <li>This playingEntity <b>MAY</b> contain zero or one [0..1] name (CONF:7494). 
 	This playingEntity/name <b>MAY</b> be used for the vehicle name in text, such as Normal Saline (CONF:10087) (CONF:7494, CONF:10087)</li>
 </ol>
@@ -28,29 +31,21 @@
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="412307009" </tt> (CodeSystem:<tt> 2.16.840.1.113883.6.96 SNOMEDCT</tt>) (CONF:7491)
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>playingEntity</b></tt> (CONF:7492)
-</li>
-<li>This playingEntity <b>SHALL</b> contain exactly one [1..1] code (CONF:7493). 
-	This playingEntity/code is used to supply a coded term for the drug  vehicle (CONF:10086) (CONF:7493, CONF:10086)</li>
+<ol>
+<li>Contains exactly one [1..1] CDA Playing Entity</li></ol></li>
+<li>This playingEntity <b>SHALL</b> contain exactly one [1..1] code (CONF:7493, CONF:10086)</li>
 <li>This playingEntity <b>MAY</b> contain zero or one [0..1] name (CONF:7494). 
 	This playingEntity/name <b>MAY</b> be used for the vehicle name in text, such as Normal Saline (CONF:10087) (CONF:7494, CONF:10087)</li>
 </ol>
 <section id="tableconformance"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="8" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><colspec colname="col2" colnum="2" /><colspec colname="col3" colnum="3" /><colspec colname="col4" colnum="4" /><colspec colname="col5" colnum="5" /><colspec colname="col6" colnum="6" /><colspec colname="col7" colnum="7" /><thead> <row><entry namest="col0" nameend="col7" >consol::DrugVehicle</entry>  </row>  <row><entry namest="col0" nameend="col7" >cda::participantrole[cda:templateId/@root = 2.16.840.1.113883.10.20.22.4.24]/</entry>  </row>  <row><entry>Name</entry><entry>XPath</entry><entry>Cardinality</entry><entry>Severity</entry><entry>Nullable</entry><entry>Data Type</entry><entry>Conformance</entry><entry>Value(s)</entry></row></thead><tbody><row><entry>classCode</entry><entry>@classCode</entry><entry>1..1</entry><entry>SHALL</entry><entry>NO</entry><entry>RoleClassRoot</entry><entry>CONF:7490</entry><entry> ROL</entry></row> 
-<row><entry>nullFlavor</entry><entry>@nullFlavor</entry><entry>0..1</entry><entry></entry><entry>NO</entry><entry>NullFlavor</entry><entry></entry><entry> ASKU</entry></row> 
-<row><entry>addr</entry><entry>addr</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>AD</entry><entry></entry><entry> </entry></row> 
 <row><entry>code</entry><entry>code</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>CE</entry><entry>CONF:7491</entry><entry>SNOMEDCT 2.16.840.1.113883.6.96 412307009</entry></row> 
-<row><entry>id</entry><entry>id</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>II</entry><entry></entry><entry> </entry></row> 
-<row><entry>realmCode</entry><entry>realmCode</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>CS</entry><entry></entry><entry> </entry></row> 
-<row><entry>telecom</entry><entry>telecom</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>TEL</entry><entry></entry><entry> </entry></row> 
-<row><entry>templateId</entry><entry>templateId</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>II</entry><entry></entry><entry> 2.16.840.1.113883.10.20.22.4.24</entry></row> 
-<row><entry>playingDevice</entry><entry>playingDevice</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>Device</entry><entry></entry><entry> </entry></row> 
+<row><entry>drugVehicle</entry><entry>drugVehicle</entry><entry>0..*</entry><entry>MAY</entry><entry>YES</entry><entry>DrugVehicle</entry><entry>CONF:7523CONF:7524CONF:16086</entry><entry> </entry></row> 
 <row><entry>playingEntity</entry><entry>playingEntity</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>PlayingEntity</entry><entry>CONF:7492</entry><entry> </entry></row> 
-<row><entry>scopingEntity</entry><entry>scopingEntity</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>Entity</entry><entry></entry><entry> </entry></row> 
-<row><entry>typeId</entry><entry>typeId</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>InfrastructureRootTypeId</entry><entry></entry><entry> </entry></row> 
 </tbody></tgroup></table></p></section>
 <codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
 <participantrole xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd" classCode="MANU">
   <templateId root="2.16.840.1.113883.10.20.22.4.24"/>
-  <id root="963909923"/>
+  <id root="MDHT" extension="966974763"/>
   <code code="412307009" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
   <playingEntity/>
 </participantrole>]]></codeblock>

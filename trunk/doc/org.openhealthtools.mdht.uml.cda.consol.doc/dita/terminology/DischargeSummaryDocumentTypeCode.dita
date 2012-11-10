@@ -15,6 +15,21 @@
 <row><entry>Value Set</entry><entry>DischargeSummaryDocumentTypeCode - 2.16.840.1.113883.11.20.4.1</entry></row>
 <row><entry>Code System</entry><entry>LOINC - 2.16.840.1.113883.6.1</entry></row>
 </tbody></tgroup></table>
+<table><tgroup cols="3">
+<colspec colname="col1" colwidth="1*"/>
+<colspec colname="col2" colwidth="1*"/>
+<colspec colname="col3" colwidth="2*"/>
+<thead><row>
+<entry>Code</entry><entry>Code System</entry><entry>Print Name</entry>
+</row></thead><tbody>
+<row><entry>18842-5</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>11490-0</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>28655-9</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>29761-4</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>34745-0</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>34105-7</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>34106-5</entry><entry>LOINC</entry><entry></entry></row>
+</tbody></tgroup></table>
 </section>
 </body>
 </topic>

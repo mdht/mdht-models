@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html
   PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html lang="en-us" xml:lang="en-us">
+<html xml:lang="en-us" lang="en-us">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 <meta name="copyright" content="(C) Copyright 2005"/>
@@ -17,10 +17,10 @@
 <link rel="stylesheet" type="text/css" href="../css/commonltr.css"/>
 <title>Quantity Measurement Observation</title>
 </head>
-<body id="classId"><a name="classId"><!-- --></a>
+<body id="classId">
 <div>
-	<p><b>For Discussion and Demonstration Only</b> The Normative content for these specifications
-	may be found on the HL7 web site.</p>
+	<p><b>Non-Normative Content</b> The Normative content for these specifications
+	may be found on the HL7, IHE, and HITSP web sites.</p>
 </div>
 
 	<h1 class="title topictitle1"><span class="ph">Quantity Measurement Observation</span></h1>
@@ -31,14 +31,49 @@
 
 		
 		<div class="section">
-<p class="p">A Quantity Measurement Observation records quantity measurements based on image data such as linear, area, volume, and numeric measurements. The codes in DIRQuantityMeasurementTypeCodes (ValueSet: 2.16.840.1.113883.11.20.9.29) are from the qualifier hierarchy of SNOMED CT and are not valid for observation/code according to the Term Info guidelines. These codes can be used for backwards compatibility, but going forward, codes from the observable entity hierarchy will be requested and used.</p>
+<div class="p"><p class="lines"><em class="ph i">A Quantity Measurement Observation records quantity measurements based on image data such as linear, area, volume, and numeric measurements. The codes in DIRQuantityMeasurementTypeCodes (ValueSet: 2.16.840.1.113883.11.20.9.29) are from the qualifier hierarchy of SNOMED CT and are not valid for observation/code according to the Term Info guidelines. These codes can be used for backwards compatibility, but going forward, codes from the observable entity hierarchy will be requested and used.</em></p>
+</div>
 
 </div>
 
 		
 
 		<ol class="ol">
-<li class="li"/>
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] templateId ( CONF:9319, CONF:10532 ) such that it <ol class="ol" type="a"><li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <strong class="ph b">@root</strong>="2.16.840.1.113883.10.20.6.2.14"</li>
+</ol>
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@classCode</strong>="OBS" </tt><em class="ph i">Observation</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.5.6 HL7ActClass</tt>) (CONF:9317)
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@moodCode</strong>="EVN" </tt><em class="ph i">Event</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF:9318)
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt> (CONF:9320)
+<ol class="ol" type="a">
+<li class="li">code <strong class="ph b">SHOULD</strong> contain zero or one [0..1] code, which <strong class="ph b">SHALL</strong> be selected from ValueSet DIRQuantityMeasurementTypeCodes 2.16.840.1.113883.11.20.9.29 DYNAMIC (CONF:9322)<ol class="ol" type="i">
+<li class="li">code <strong class="ph b">SHOULD</strong> contain zero or one [0..1] code, which <strong class="ph b">SHALL</strong> be selected from ValueSet DICOMQuantityMeasurementTypeCodes 2.16.840.1.113883.11.20.9.30 DYNAMIC (CONF:9323)<ol class="ol">
+<li class="li"><strong class="ph b">SHOULD</strong> satisfy: value set of the observation/code includes numeric measurement types for linear dimensions, areas, volumes, and other numeric measurements. This value set is extensible and comprises the union of SNOMED codes for observable entities as reproduced in DIRQuantityMeasurementTypeCodes (ValueSet: 2.16.840.1.113883.11.20.9.29) and DICOM Codes in DICOMQuantityMeasurementTypeCodes (ValueSet: 2.16.840.1.113883.11.20.9.30) (CONF:9330).</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+
+<li class="li"><strong class="ph b">SHOULD</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">effectiveTime</strong></tt> (CONF:9326)
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">value</strong></tt> with data type PQ (CONF:9324, CONF:932)
+</li>
+
+<li class="li"><strong class="ph b">MAY</strong> contain zero or more [0..*] <tt class="ph tt"><strong class="ph b">entryRelationship</strong></tt> (CONF:9327, CONF:9328, CONF:9329)
+<ol class="ol" type="a">
+<li class="li">Contains <tt class="ph tt"><strong class="ph b">@typeCode="</strong>SPRT" </tt><em class="ph i">SPRT</em></li>
+
+<li class="li">Contains exactly one [1..1] <a class="xref" href="SOPInstanceObservation.html" title="[Observation: templateId 2.16.840.1.113883.10.20.6.2.8]">SOP Instance Observation</a> (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.6.2.8</tt>)</li>
+</ol>
+</li>
 
 </ol>
 
@@ -51,14 +86,55 @@
 		</p>
 		
 		<pre class="pre codeblock">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
-&lt;observation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd"&gt;
+&lt;observation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd" classCode="OBS" moodCode="EVN"&gt;
   &lt;templateId root="2.16.840.1.113883.10.20.6.2.14"/&gt;
-  &lt;id root="613072959"/&gt;
-  &lt;code code="548844098"/&gt;
+  &lt;id root="MDHT" extension="1604078034"/&gt;
+  &lt;code code="2147070887"/&gt;
   &lt;effectiveTime&gt;
     &lt;low value="2012"/&gt;
     &lt;high value="2012"/&gt;
   &lt;/effectiveTime&gt;
+  &lt;value xsi:type="PQ"/&gt;
+  &lt;entryRelationship&gt;
+    &lt;observation classCode="DGIMG" moodCode="EVN"&gt;
+      &lt;templateId root="2.16.840.1.113883.10.20.6.2.8"/&gt;
+      &lt;id root="MDHT" extension="369254747"/&gt;
+      &lt;code codeSystem="1.2.840.10008.2.6.1" codeSystemName="DCMUID"/&gt;
+      &lt;effectiveTime&gt;
+        &lt;low value="2012"/&gt;
+        &lt;high value="2012"/&gt;
+      &lt;/effectiveTime&gt;
+      &lt;entryRelationship&gt;
+        &lt;observation classCode="OBS" moodCode="EVN"&gt;
+          &lt;templateId root="2.16.840.1.113883.10.20.6.2.9"/&gt;
+          &lt;id root="MDHT" extension="314369759"/&gt;
+          &lt;code code="1470957045"/&gt;
+          &lt;effectiveTime&gt;
+            &lt;low value="2012"/&gt;
+            &lt;high value="2012"/&gt;
+          &lt;/effectiveTime&gt;
+          &lt;value xsi:type="CD" code="824027555"/&gt;
+        &lt;/observation&gt;
+      &lt;/entryRelationship&gt;
+      &lt;entryRelationship&gt;
+        &lt;observation classCode="ROIBND" moodCode="EVN"&gt;
+          &lt;templateId root="2.16.840.1.113883.10.20.6.2.10"/&gt;
+          &lt;id root="MDHT" extension="1847955763"/&gt;
+          &lt;code code="121190" codeSystem="1.2.840.10008.2.16.4" codeSystemName="DCM" displayName="Referenced Frames"/&gt;
+          &lt;effectiveTime&gt;
+            &lt;low value="2012"/&gt;
+            &lt;high value="2012"/&gt;
+          &lt;/effectiveTime&gt;
+          &lt;entryRelationship&gt;
+            &lt;observation classCode="OBS" moodCode="EVN"&gt;
+              &lt;templateId root="2.16.840.1.113883.10.20.6.2.11"/&gt;
+              &lt;code code="113036" codeSystem="1.2.840.10008.2.16.4" codeSystemName="DCM" displayName="Frames for Display"/&gt;
+            &lt;/observation&gt;
+          &lt;/entryRelationship&gt;
+        &lt;/observation&gt;
+      &lt;/entryRelationship&gt;
+    &lt;/observation&gt;
+  &lt;/entryRelationship&gt;
 &lt;/observation&gt;</pre>
 
 	</div>

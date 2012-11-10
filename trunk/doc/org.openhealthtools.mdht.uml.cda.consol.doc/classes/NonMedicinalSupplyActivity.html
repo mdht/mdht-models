@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html
   PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html lang="en-us" xml:lang="en-us">
+<html xml:lang="en-us" lang="en-us">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 <meta name="copyright" content="(C) Copyright 2005"/>
@@ -17,10 +17,10 @@
 <link rel="stylesheet" type="text/css" href="../css/commonltr.css"/>
 <title>Non Medicinal Supply Activity</title>
 </head>
-<body id="classId"><a name="classId"><!-- --></a>
+<body id="classId">
 <div>
-	<p><b>For Discussion and Demonstration Only</b> The Normative content for these specifications
-	may be found on the HL7 web site.</p>
+	<p><b>Non-Normative Content</b> The Normative content for these specifications
+	may be found on the HL7, IHE, and HITSP web sites.</p>
 </div>
 
 	<h1 class="title topictitle1"><span class="ph">Non Medicinal Supply Activity</span></h1>
@@ -31,13 +31,18 @@
 
 		
 		<div class="section">
-<p class="p">This template records non-medicinal supplies provided, such as medical equipment</p>
+<div class="p"><p class="lines"><em class="ph i">This template records non-medicinal supplies provided, such as medical equipment</em></p>
+</div>
 
 </div>
 
 		
 
 		<ol class="ol">
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] templateId ( CONF:8747, CONF:10509 ) such that it <ol class="ol" type="a"><li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <strong class="ph b">@root</strong>="2.16.840.1.113883.10.20.22.4.50"</li>
+</ol>
+</li>
+
 <li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@classCode</strong>="SPLY" </tt> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.5.6 HL7ActClass</tt>) (CONF:8745)
 </li>
 
@@ -50,19 +55,19 @@
 <li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">statusCode</strong></tt> (CONF:8749)
 </li>
 
-<li class="li"><strong class="ph b">SHOULD</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">effectiveTime</strong></tt> (CONF:8750)
+<li class="li"><strong class="ph b">SHOULD</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">effectiveTime</strong></tt> (CONF:15498)
 </li>
 
 <li class="li"><strong class="ph b">SHOULD</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">quantity</strong></tt> (CONF:8751)
 </li>
 
-<li class="li"><strong class="ph b">SHALL</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">participant</strong></tt> (CONF:8753)
+<li class="li"><strong class="ph b">SHALL</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">participant</strong></tt> (CONF:8752, CONF:15900)
 <ol class="ol" type="a">
 <li class="li">Contains exactly one [1..1] <a class="xref" href="generated/../ProductInstance.html">Product Instance</a> (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.22.4.37</tt>)</li>
 </ol>
 </li>
 
-<li class="li"><strong class="ph b">SHOULD</strong> contain zero or one [0..1] effectiveTime/high (CONF:8750)</li>
+<li class="li"><strong class="ph b">SHOULD</strong> contain zero or one [0..1] effectiveTime/high (CONF:16867)</li>
 
 <li class="li">participant with target entry Product Instance <strong class="ph b">SHALL</strong> contain exactly one [1..1] @typeCode="PRD" Product (CodeSystem: HL7ParticipationType 2.16.840.1.113883.5.90) (CONF:8754)</li>
 
@@ -79,9 +84,9 @@
 		<pre class="pre codeblock">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
 &lt;supply xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd" classCode="SPLY"&gt;
   &lt;templateId root="2.16.840.1.113883.10.20.22.4.50"/&gt;
-  &lt;id root="509718951"/&gt;
+  &lt;id root="MDHT" extension="1470492796"/&gt;
   &lt;statusCode code="completed"/&gt;
-  &lt;effectiveTime value="20120405"/&gt;
+  &lt;effectiveTime value="20121102"/&gt;
   &lt;quantity/&gt;
 &lt;/supply&gt;</pre>
 

@@ -17,16 +17,15 @@
 <row><entry>Version</entry><entry>2011-04-03</entry></row>
 <row><entry>Definition</entry><entry>Subset of HL7 ActMood codes, constrained to represent event (EVN) and intent (INT) moodes</entry></row>
 </tbody></tgroup></table>
-<table><tgroup cols="4">
+<table><tgroup cols="3">
 <colspec colname="col1" colwidth="1*"/>
-<colspec colname="col2" colwidth="2*"/>
-<colspec colname="col3" colwidth="1*"/>
-<colspec colname="col4" colwidth="3*"/>
+<colspec colname="col2" colwidth="1*"/>
+<colspec colname="col3" colwidth="2*"/>
 <thead><row>
-<entry>Concept Code</entry><entry>Concept Name</entry><entry>Code System</entry><entry>Description</entry>
+<entry>Code</entry><entry>Code System</entry><entry>Print Name</entry>
 </row></thead><tbody>
-<row><entry>EVN</entry><entry>Event</entry><entry>HL7ActMood</entry><entry></entry></row>
-<row><entry>INT</entry><entry>Intent</entry><entry>HL7ActMood</entry><entry></entry></row>
+<row><entry>EVN</entry><entry>HL7ActMood</entry><entry>Event</entry></row>
+<row><entry>INT</entry><entry>HL7ActMood</entry><entry>Intent</entry></row>
 </tbody></tgroup></table>
 </section>
 </body>

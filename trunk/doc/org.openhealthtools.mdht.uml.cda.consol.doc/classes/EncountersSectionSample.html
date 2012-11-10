@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html
   PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html lang="en-us" xml:lang="en-us">
+<html xml:lang="en-us" lang="en-us">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 <meta name="copyright" content="(C) Copyright 2005"/>
@@ -15,10 +15,10 @@
 <link rel="stylesheet" type="text/css" href="../css/commonltr.css"/>
 <title>Encounters Section Sample</title>
 </head>
-<body id="classId"><a name="classId"><!-- --></a>
+<body id="classId">
 <div>
-	<p><b>For Discussion and Demonstration Only</b> The Normative content for these specifications
-	may be found on the HL7 web site.</p>
+	<p><b>Non-Normative Content</b> The Normative content for these specifications
+	may be found on the HL7, IHE, and HITSP web sites.</p>
 </div>
 
 	<h1 class="title topictitle1"><span class="ph">Encounters Section</span> Sample</h1>
@@ -38,26 +38,29 @@
 			
 			<pre class="pre codeblock">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
 &lt;section xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd"&gt;
-  &lt;templateId root="2.16.840.1.113883.10.20.22.2.22"/&gt;
   &lt;templateId root="2.16.840.1.113883.10.20.22.2.22.1"/&gt;
-  &lt;id root="1336041823"/&gt;
+  &lt;templateId root="2.16.840.1.113883.10.20.22.2.22"/&gt;
+  &lt;id root="MDHT" extension="1985919254"/&gt;
   &lt;code code="46240-8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Encounters"/&gt;
-  &lt;title/&gt;
+  &lt;title&gt;TEXT FOR TITLE&lt;/title&gt;
   &lt;text/&gt;
   &lt;entry&gt;
     &lt;encounter classCode="ENC" moodCode="EVN"&gt;
       &lt;templateId root="2.16.840.1.113883.10.20.22.4.49"/&gt;
-      &lt;id root="717625212"/&gt;
+      &lt;id root="MDHT" extension="1349147154"/&gt;
       &lt;code codeSystem="2.16.840.1.113883.6.12" codeSystemName="CPT-4"/&gt;
       &lt;text&gt;Text Value&lt;/text&gt;
       &lt;effectiveTime&gt;
         &lt;low value="2012"/&gt;
         &lt;high value="2012"/&gt;
       &lt;/effectiveTime&gt;
+      &lt;performer&gt;
+        &lt;assignedEntity/&gt;
+      &lt;/performer&gt;
       &lt;entryRelationship&gt;
         &lt;observation classCode="OBS" moodCode="EVN"&gt;
           &lt;templateId root="2.16.840.1.113883.10.20.22.4.19"/&gt;
-          &lt;id root="979119082"/&gt;
+          &lt;id root="MDHT" extension="1875297591"/&gt;
           &lt;code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/&gt;
           &lt;text&gt;Text Value&lt;/text&gt;
           &lt;statusCode code="completed"/&gt;
@@ -66,6 +69,25 @@
             &lt;high value="2012"/&gt;
           &lt;/effectiveTime&gt;
         &lt;/observation&gt;
+      &lt;/entryRelationship&gt;
+      &lt;entryRelationship&gt;
+        &lt;act classCode="ACT" moodCode="EVN"&gt;
+          &lt;templateId root="2.16.840.1.113883.10.20.22.4.80"/&gt;
+          &lt;id root="MDHT" extension="173494077"/&gt;
+          &lt;code code="29308-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Diagnosis"/&gt;
+          &lt;text&gt;Text Value&lt;/text&gt;
+          &lt;effectiveTime&gt;
+            &lt;low value="2012"/&gt;
+            &lt;high value="2012"/&gt;
+          &lt;/effectiveTime&gt;
+          &lt;entryRelationship&gt;
+            &lt;observation classCode="OBS" moodCode="EVN"&gt;
+              &lt;templateId root="2.16.840.1.113883.10.20.22.4.4"/&gt;
+              &lt;code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/&gt;
+              &lt;statusCode code="completed"/&gt;
+            &lt;/observation&gt;
+          &lt;/entryRelationship&gt;
+        &lt;/act&gt;
       &lt;/entryRelationship&gt;
     &lt;/encounter&gt;
   &lt;/entry&gt;

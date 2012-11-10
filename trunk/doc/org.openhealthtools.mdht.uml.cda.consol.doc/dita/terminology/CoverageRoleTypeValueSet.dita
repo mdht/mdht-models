@@ -16,22 +16,21 @@
 <row><entry>Code System</entry><entry>RoleCode - 2.16.840.1.113883.5.111</entry></row>
 <row><entry>Version</entry><entry>1.0</entry></row>
 </tbody></tgroup></table>
-<table><tgroup cols="4">
+<table><tgroup cols="3">
 <colspec colname="col1" colwidth="1*"/>
-<colspec colname="col2" colwidth="2*"/>
-<colspec colname="col3" colwidth="1*"/>
-<colspec colname="col4" colwidth="3*"/>
+<colspec colname="col2" colwidth="1*"/>
+<colspec colname="col3" colwidth="2*"/>
 <thead><row>
-<entry>Concept Code</entry><entry>Concept Name</entry><entry>Code System</entry><entry>Description</entry>
+<entry>Code</entry><entry>Code System</entry><entry>Print Name</entry>
 </row></thead><tbody>
-<row><entry>FAMDEP</entry><entry>Family dependent</entry><entry>RoleCode</entry><entry></entry></row>
-<row><entry>FSTUD</entry><entry>Full-time student</entry><entry>RoleCode</entry><entry></entry></row>
-<row><entry>HANDIC</entry><entry>Handicapped dependent</entry><entry>RoleCode</entry><entry></entry></row>
-<row><entry>INJ</entry><entry>Injured plaintiff</entry><entry>RoleCode</entry><entry></entry></row>
-<row><entry>PSTUD</entry><entry>Part-time student</entry><entry>RoleCode</entry><entry></entry></row>
-<row><entry>SELF</entry><entry>Self</entry><entry>RoleCode</entry><entry></entry></row>
-<row><entry>SPON</entry><entry></entry><entry>RoleCode</entry><entry></entry></row>
-<row><entry>STUD</entry><entry>Student</entry><entry>RoleCode</entry><entry></entry></row>
+<row><entry>FAMDEP</entry><entry>RoleCode</entry><entry>Family dependent</entry></row>
+<row><entry>FSTUD</entry><entry>RoleCode</entry><entry>Full-time student</entry></row>
+<row><entry>HANDIC</entry><entry>RoleCode</entry><entry>Handicapped dependent</entry></row>
+<row><entry>INJ</entry><entry>RoleCode</entry><entry>Injured plaintiff</entry></row>
+<row><entry>PSTUD</entry><entry>RoleCode</entry><entry>Part-time student</entry></row>
+<row><entry>SELF</entry><entry>RoleCode</entry><entry>Self</entry></row>
+<row><entry>SPON</entry><entry>RoleCode</entry><entry>Sponsored dependent</entry></row>
+<row><entry>STUD</entry><entry>RoleCode</entry><entry>Student</entry></row>
 </tbody></tgroup></table>
 </section>
 </body>

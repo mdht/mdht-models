@@ -18,22 +18,21 @@
 <row><entry>Source</entry><entry></entry></row>
 <row><entry>Definition</entry><entry>This identifies the reason why the immunization did not occur</entry></row>
 </tbody></tgroup></table>
-<table><tgroup cols="4">
+<table><tgroup cols="3">
 <colspec colname="col1" colwidth="1*"/>
-<colspec colname="col2" colwidth="2*"/>
-<colspec colname="col3" colwidth="1*"/>
-<colspec colname="col4" colwidth="3*"/>
+<colspec colname="col2" colwidth="1*"/>
+<colspec colname="col3" colwidth="2*"/>
 <thead><row>
-<entry>Concept Code</entry><entry>Concept Name</entry><entry>Code System</entry><entry>Description</entry>
+<entry>Code</entry><entry>Code System</entry><entry>Print Name</entry>
 </row></thead><tbody>
-<row><entry>IMMUNE</entry><entry>Immunity</entry><entry>ActReason</entry><entry></entry></row>
-<row><entry>MEDPREC</entry><entry>medical precaution</entry><entry>ActReason</entry><entry></entry></row>
-<row><entry>OSTOCK</entry><entry>Out of stock</entry><entry>ActReason</entry><entry></entry></row>
-<row><entry>PATOBJ</entry><entry>patient objection</entry><entry>ActReason</entry><entry></entry></row>
-<row><entry>PHILISOP</entry><entry>philosophical objection</entry><entry>ActReason</entry><entry></entry></row>
-<row><entry>RELIG</entry><entry>religious objection</entry><entry>ActReason</entry><entry></entry></row>
-<row><entry>VACEFF</entry><entry>vaccine efficacy concerns</entry><entry>ActReason</entry><entry></entry></row>
-<row><entry>VACSAF</entry><entry>vaccine safety concerns</entry><entry>ActReason</entry><entry></entry></row>
+<row><entry>IMMUNE</entry><entry>ActReason</entry><entry>Immunity</entry></row>
+<row><entry>MEDPREC</entry><entry>ActReason</entry><entry>medical precaution</entry></row>
+<row><entry>OSTOCK</entry><entry>ActReason</entry><entry>Out of stock</entry></row>
+<row><entry>PATOBJ</entry><entry>ActReason</entry><entry>patient objection</entry></row>
+<row><entry>PHILISOP</entry><entry>ActReason</entry><entry>philosophical objection</entry></row>
+<row><entry>RELIG</entry><entry>ActReason</entry><entry>religious objection</entry></row>
+<row><entry>VACEFF</entry><entry>ActReason</entry><entry>vaccine efficacy concerns</entry></row>
+<row><entry>VACSAF</entry><entry>ActReason</entry><entry>vaccine safety concerns</entry></row>
 </tbody></tgroup></table>
 </section>
 </body>
