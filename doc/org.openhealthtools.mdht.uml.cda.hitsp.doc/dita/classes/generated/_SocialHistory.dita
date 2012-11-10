@@ -2,17 +2,20 @@
 <!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
 <topic id="classId" xml:lang="en-us">
 <title>Social History - conformance rules</title>
-<shortdesc id="shortdesc">[Observation: templateId <tt>2.16.840.1.113883.10.20.1.33</tt>]</shortdesc>
+<shortdesc id="shortdesc">[Observation: templateId <tt>2.16.840.1.113883.3.88.11.83.19</tt>]</shortdesc>
 <prolog id="prolog">
 <metadata><category>Observation</category></metadata>
-<resourceid id="2.16.840.1.113883.10.20.1.33"/>
+<resourceid id="2.16.840.1.113883.3.88.11.83.19"/>
 </prolog>
 <body>
+<section id="knownSubclasses">
+</section>
 <section id="description">
 </section>
 <ol id="conformance">
-<li><b>SHALL</b> conform to <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.ihe.doc/classes/SocialHistoryObservation.html">IHE Social History Observation</xref> template (templateId: <tt>1.3.6.1.4.1.19376.1.5.3.1.4.13.4</tt>)</li>
-<li><b>SHOULD</b> contain zero or more [0..*] <tt><b>code</b></tt>, which <b>SHOULD</b> be selected from ValueSet<tt> 2.16.840.1.113883.3.88.12.80.60 Social History Type</tt><b> STATIC</b> 1
+<li><b>SHALL</b> contain exactly one [1..1] templateId (  ) such that it <ol><li><b>SHALL</b> contain exactly one [1..1] <b>@root</b>="2.16.840.1.113883.3.88.11.83.19"</li></ol></li>
+<li><b>SHALL</b> conform to <xref format="html" href="PLUGINS_ROOT/org.openhealthtools.mdht.uml.cda.ihe.doc/classes/SocialHistoryObservation.html">IHE Social History Observation</xref> template (templateId: <tt>1.3.6.1.4.1.19376.1.5.3.1.4.13.4</tt>)</li>
+<li><b>SHOULD</b> contain zero or more [0..*] <tt><b>code</b></tt>, where the @code <b>SHALL</b> be selected from ValueSet<tt> Social History Type 2.16.840.1.113883.3.88.12.80.60</tt><b> STATIC</b> 1
 </li>
 <li><b>SHOULD</b> contain zero or one [0..1] <tt><b>effectiveTime</b></tt>
 </li>
@@ -20,25 +23,25 @@
 </li>
 </ol>
 <ol id="aggregate">
-<li><b>SHALL</b> conform to <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.ccd.doc/classes/SocialHistoryObservation.html">CCD Social History Observation</xref> template (templateId: <tt>2.16.840.1.113883.10.20.1.33</tt>)</li>
-<li><b>SHALL</b> conform to <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.ihe.doc/classes/SimpleObservation.html">IHE Simple Observation</xref> template (templateId: <tt>1.3.6.1.4.1.19376.1.5.3.1.4.13</tt>)</li>
-<li><b>SHALL</b> conform to <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.ihe.doc/classes/SocialHistoryObservation.html">IHE Social History Observation</xref> template (templateId: <tt>1.3.6.1.4.1.19376.1.5.3.1.4.13.4</tt>)</li>
-<li>Contains exactly one [1..1] <tt><b>@classCode</b></tt>, where its data type is ActClassObservation
+<li><b>SHALL</b> conform to <xref format="html" href="PLUGINS_ROOT/org.openhealthtools.mdht.uml.cda.ccd.doc/classes/SocialHistoryObservation.html">CCD Social History Observation</xref> template (templateId: <tt>2.16.840.1.113883.10.20.1.33</tt>)</li>
+<li><b>SHALL</b> conform to <xref format="html" href="PLUGINS_ROOT/org.openhealthtools.mdht.uml.cda.ihe.doc/classes/SimpleObservation.html">IHE Simple Observation</xref> template (templateId: <tt>1.3.6.1.4.1.19376.1.5.3.1.4.13</tt>)</li>
+<li><b>SHALL</b> conform to <xref format="html" href="PLUGINS_ROOT/org.openhealthtools.mdht.uml.cda.ihe.doc/classes/SocialHistoryObservation.html">IHE Social History Observation</xref> template (templateId: <tt>1.3.6.1.4.1.19376.1.5.3.1.4.13.4</tt>)</li>
+<li>Contains exactly one [1..1] <tt><b>@classCode</b></tt> with data type ActClassObservation
 </li>
-<li>Contains exactly one [1..1] <tt><b>@moodCode</b></tt>, where its data type is x_ActMoodDocumentObservation
+<li>Contains exactly one [1..1] <tt><b>@moodCode</b></tt> with data type x_ActMoodDocumentObservation
 </li>
 <li><b>SHALL</b> contain at least one [1..*] <tt><b>id</b></tt>
 </li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>statusCode</b></tt><tt><b>/@code</b>="completed" </tt> (CodeSystem:<tt> 2.16.840.1.113883.5.14 HL7ActStatus</tt>)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>statusCode</b></tt><tt><b>/@code</b>="completed" </tt> (CodeSystem:<tt> 2.16.840.1.113883.5.14 ActStatus</tt>)
 </li>
-<li><b>SHOULD</b> contain zero or more [0..*] <tt><b>code</b></tt>, which <b>SHOULD</b> be selected from ValueSet<tt> 2.16.840.1.113883.3.88.12.80.60 Social History Type</tt><b> STATIC</b> 1
+<li><b>SHOULD</b> contain zero or more [0..*] <tt><b>code</b></tt>, where the @code <b>SHALL</b> be selected from ValueSet<tt> Social History Type 2.16.840.1.113883.3.88.12.80.60</tt><b> STATIC</b> 1
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt>
 </li>
 <li><b>SHOULD</b> contain zero or one [0..1] <tt><b>effectiveTime</b></tt>
 </li>
 <li><b>MAY</b> contain zero or more [0..*] <tt><b>value</b></tt>
-<ul><li><p>
+<ul><li><p><lines><i><p>
 The data type to use for each observation should be drawn from the table below.
 Observations in the table above using the PQ data type have a unit in the form {xxx}/d,
 {xxx}/wk or {xxx}/a represent the number of items per day, week or year respectively. The value attribute indicates the number of times of the act performed, and the units represent the
@@ -54,38 +57,42 @@ frequency.
 425400000 Toxic Exposure CD  N/A
 363908000 Drug Use CD  N/A
 228272008 Other Social History ANY N/A
-</p></li></ul></li>
-<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> (CONF-246), such that
+</p></i></lines></p></li></ul></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> (CONF-246)
 <ol>
 <li>Contains exactly one [1..1] <xref href="../SocialHistoryStatusObservation.dita">Social History Status Observation</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.56</tt>)</li></ol></li>
-<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> (CONF-249), such that
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> (CONF-249)
 <ol>
 <li>Contains exactly one [1..1] <xref href="../EpisodeObservation.dita">Episode Observation</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.41</tt>)</li></ol></li>
-<li>The value for Observation / code in a social history observation <b>SHOULD</b> be selected from LOINC (codeSystem 2.16.840.1.113883.6.1) or SNOMED CT (codeSystem 2.16.840.1.113883.6.96), or <b>MAY</b> be selected from ValueSet 2.16.840.1.113883.1.11.20.18 SocialHistoryTypeCode STATIC 20061017 (CONF-243)<ul><li><codeblock>[OCL]: self.code.codeSystem = '2.16.840.1.113883.6.1' or self.code.codeSystem = '2.16.840.1.113883.6.96' or self.code.codeSystem = '2.16.840.1.113883.1.11.20.18'</codeblock></li></ul></li>
-<li>Observation / value can be any datatype. Where Observation / value is a physical quantity, the unit of measure <b>SHALL</b> be expressed using a valid Unified Code for Units of Measure (UCUM) expression (CONF-244)<ul><li>UNIMPLEMENTABLE</li></ul></li>
-<li><b>SHALL</b> satisfy: Contains one or more sources of information (CONF-245)<ul><li>UNIMPLEMENTABLE</li></ul></li>
-<li><b>SHOULD</b> satisfy: The &lt;repeatNumber&gt; element should not be used in a social history observation<ul><li><codeblock>[OCL]: self.repeatNumber-&gt;size() = 0</codeblock></li></ul></li>
+<li>The value for Observation / code in a social history observation <b>SHOULD</b> be selected from LOINC (codeSystem 2.16.840.1.113883.6.1) or SNOMED CT (codeSystem 2.16.840.1.113883.6.96), or <b>MAY</b> be selected from ValueSet 2.16.840.1.113883.1.11.20.18 SocialHistoryTypeCode STATIC 20061017 (CONF-243)</li>
+<li>Observation / value can be any datatype. Where Observation / value is a physical quantity, the unit of measure <b>SHALL</b> be expressed using a valid Unified Code for Units of Measure (UCUM) expression (CONF-244)</li>
+<li><b>SHALL</b> satisfy: Contains one or more sources of information (CONF-245)</li>
+<li><b>SHOULD</b> satisfy: The &lt;repeatNumber&gt; element should not be used in a social history observation</li>
 <li><b>SHOULD</b> satisfy: The &lt;interpretationCode&gt; element should not be used in
-a social history observation<ul><li><codeblock>[OCL]: self.interpretationCode-&gt;size() = 0</codeblock></li></ul></li>
+a social history observation</li>
 <li><b>SHOULD</b> satisfy: The &lt;methodCode&gt; element should not be used in
-a social history observation<ul><li><codeblock>[OCL]: self.methodCode-&gt;size() = 0</codeblock></li></ul></li>
+a social history observation</li>
 <li><b>SHOULD</b> satisfy: The targetSiteCode element should not be used in
-a social history observation<ul><li><codeblock>[OCL]: self.targetSiteCode-&gt;size() = 0</codeblock></li></ul></li>
+a social history observation</li>
 </ol>
+<section id="tableconformance"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="8" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><colspec colname="col2" colnum="2" /><colspec colname="col3" colnum="3" /><colspec colname="col4" colnum="4" /><colspec colname="col5" colnum="5" /><colspec colname="col6" colnum="6" /><colspec colname="col7" colnum="7" /><thead> <row><entry namest="col0" nameend="col7" >hitsp::SocialHistory</entry>  </row>  <row><entry namest="col0" nameend="col7" >cda::observation[cda:templateId/@root = ]/</entry>  </row>  <row><entry>Name</entry><entry>XPath</entry><entry>Cardinality</entry><entry>Severity</entry><entry>Nullable</entry><entry>Data Type</entry><entry>Conformance</entry><entry>Value(s)</entry></row></thead><tbody><row><entry>code</entry><entry>code</entry><entry>0..*</entry><entry>SHOULD</entry><entry>YES</entry><entry>CD</entry><entry></entry><entry> </entry></row> 
+<row><entry>effectiveTime</entry><entry>effectiveTime</entry><entry>0..1</entry><entry>SHOULD</entry><entry>YES</entry><entry>IVL_TS</entry><entry></entry><entry> </entry></row> 
+<row><entry>text</entry><entry>text</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>ED</entry><entry></entry><entry> </entry></row> 
+<row><entry>socialHistory</entry><entry>socialHistory</entry><entry>0..*</entry><entry>MAY</entry><entry>YES</entry><entry>SocialHistory</entry><entry></entry><entry> </entry></row> 
+</tbody></tgroup></table></p></section>
 <codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
-<observation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd" classCode="OBS" moodCode="EVN">
-  <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13"/>
-  <templateId root="2.16.840.1.113883.10.20.1.33"/>
-  <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13.4"/>
-  <templateId root="2.16.840.1.113883.10.20.1.33"/>
-  <id root="497144448"/>
-  <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
-  <text/>
-  <statusCode code="completed"/>
+<observation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd">
+  <id root="MDHT" extension="181989624"/>
+  <code code="1552210322"/>
+  <text>Text Value</text>
   <effectiveTime>
-    <low value="2011"/>
-    <high value="2011"/>
+    <low value="2012"/>
+    <high value="2012"/>
   </effectiveTime>
 </observation>]]></codeblock>
+<section id="changes">
+</section>
+<p><ph id="classformalname">Social History</ph></p>
+<p id="shortdesc">[Observation: templateId <tt>2.16.840.1.113883.3.88.11.83.19</tt>]</p>
 </body>
 </topic>

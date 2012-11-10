@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html
   PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html lang="en-us" xml:lang="en-us">
+<html xml:lang="en-us" lang="en-us">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 <meta name="copyright" content="(C) Copyright 2005"/>
@@ -18,9 +18,9 @@
 <link rel="stylesheet" type="text/css" href="../css/commonltr.css"/>
 <title>Physical Exam Section</title>
 </head>
-<body id="classId"><a name="classId"><!-- --></a>
+<body id="classId">
 <div>
-	<p><b>Development Only.</b> The Normative content for these specifications
+	<p><b>Non-Normative Content</b> The Normative content for these specifications
 	may be found on the HL7, IHE, and HITSP web sites.</p>
 </div>
 
@@ -41,19 +41,21 @@
 
 
 <ol class="ol">
-<li class="li"><strong class="ph b">SHALL</strong> conform to <a class="xref" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.ihe.doc/classes/PhysicalExamSection.html">IHE Physical Exam Section</a> template (templateId: <tt class="ph tt">1.3.6.1.4.1.19376.1.5.3.1.1.9.15</tt>)</li>
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] templateId (  ) such that it <ol class="ol" type="a"><li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <strong class="ph b">@root</strong>="2.16.840.1.113883.3.88.11.83.118"</li>
+</ol>
+</li>
 
-<li class="li"><strong class="ph b">SHALL</strong> conform to <a class="xref" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.cdt.doc/classes/PhysicalExaminationSection.html">CDT Physical Examination Section</a> template (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.2.10</tt>)</li>
+<li class="li"><strong class="ph b">SHALL</strong> conform to <a class="xref" href="generated/PLUGINS_ROOT/org.openhealthtools.mdht.uml.cda.ihe.doc/classes/PhysicalExamSection.html">IHE Physical Exam Section</a> template (templateId: <tt class="ph tt">1.3.6.1.4.1.19376.1.5.3.1.1.9.15</tt>)</li>
 
-<li class="li"><strong class="ph b">SHALL</strong> contain at least one [1..*] <tt class="ph tt"><strong class="ph b">entry</strong></tt>, such that
+<li class="li"><strong class="ph b">SHALL</strong> conform to <a class="xref" href="generated/PLUGINS_ROOT/org.openhealthtools.mdht.uml.cda.cdt.doc/classes/PhysicalExaminationSection.html">CDT Physical Examination Section</a> template (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.2.10</tt>)</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain at least one [1..*] <tt class="ph tt"><strong class="ph b">entry</strong></tt>
 <ol class="ol" type="a">
 <li class="li">Contains exactly one [1..1] <a class="xref" href="Condition.html" title="[Act: templateId 2.16.840.1.113883.3.88.11.83.7]">Condition</a> (templateId: <tt class="ph tt">2.16.840.1.113883.3.88.11.83.7</tt>)</li>
 </ol>
 </li>
 
-<li class="li"><strong class="ph b">SHOULD</strong> satisfy: Restrict the Condition Type (code) as FINDING (404684003)or FUNCTIONAL LIMITATION (248536006) from the SNOMED CT Code System<ul class="ul"><li class="li">UNIMPLEMENTABLE</li>
-</ul>
-</li>
+<li class="li"><strong class="ph b">SHOULD</strong> satisfy: Restrict the Condition Type (code) as FINDING (404684003)or FUNCTIONAL LIMITATION (248536006) from the SNOMED CT Code System</li>
 
 </ol>
 
@@ -66,24 +68,15 @@
 
 <pre class="pre codeblock">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
 &lt;section xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd"&gt;
-  &lt;templateId root="2.16.840.1.113883.10.20.2.10"/&gt;
-  &lt;templateId root="1.3.6.1.4.1.19376.1.5.3.1.3.24"/&gt;
-  &lt;templateId root="1.3.6.1.4.1.19376.1.5.3.1.1.9.15"/&gt;
-  &lt;templateId root="2.16.840.1.113883.3.88.11.83.118"/&gt;
-  &lt;id root="255228841"/&gt;
-  &lt;code code="29545-1" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="PHYSICAL EXAMINATION"/&gt;
-  &lt;title/&gt;
+  &lt;id root="MDHT" extension="940844493"/&gt;
+  &lt;title&gt;TEXT FOR TITLE&lt;/title&gt;
   &lt;entry&gt;
-    &lt;act classCode="ACT" moodCode="EVN"&gt;
-      &lt;templateId root="2.16.840.1.113883.10.20.1.27"/&gt;
-      &lt;templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.5.1"/&gt;
-      &lt;templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.5.2"/&gt;
-      &lt;templateId root="2.16.840.1.113883.3.88.11.83.7"/&gt;
-      &lt;id root="1006292632"/&gt;
-      &lt;code nullFlavor="NA"/&gt;
+    &lt;act&gt;
+      &lt;id root="MDHT" extension="891130555"/&gt;
+      &lt;code code="1343691164"/&gt;
       &lt;effectiveTime&gt;
-        &lt;low value="2011"/&gt;
-        &lt;high value="2011"/&gt;
+        &lt;low value="2012"/&gt;
+        &lt;high value="2012"/&gt;
       &lt;/effectiveTime&gt;
       &lt;entryRelationship&gt;
         &lt;observation/&gt;
