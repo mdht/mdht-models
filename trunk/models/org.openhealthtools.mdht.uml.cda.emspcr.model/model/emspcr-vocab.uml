@@ -1793,7 +1793,7 @@
   <term:ValueSetCode xmi:id="_cjlN8cFTEeGyGv5RKvEgDA" conceptName="Laceration" base_EnumerationLiteral="_cjlN8MFTEeGyGv5RKvEgDA" xxxxx="LA7452-1"/>
   <term:ValueSetCode xmi:id="_cjrUkcFTEeGyGv5RKvEgDA" conceptName="Pain" base_EnumerationLiteral="_cjrUkMFTEeGyGv5RKvEgDA" xxxxx="LA7460-4"/>
   <term:ValueSetCode xmi:id="_cjyCQcFTEeGyGv5RKvEgDA" conceptName="Glasgow Coma Score less than 14" base_EnumerationLiteral="_cjyCQMFTEeGyGv5RKvEgDA" xxxxx="LA17337-9"/>
-  <term:ValueSetCode xmi:id="_cj4I4cFTEeGyGv5RKvEgDA" conceptName="Respiratory rate &lt; 10 or >29 or (&lt;20 in infant &lt; one year)" base_EnumerationLiteral="_cj4I4MFTEeGyGv5RKvEgDA" xxxxx="LA17338-7"/>
+  <term:ValueSetCode xmi:id="_cj4I4cFTEeGyGv5RKvEgDA" conceptName="Respiratory rate &amp;lt; 10 or &amp;gt;29 or (&amp;lt;20 in infant &amp;lt; one year)" base_EnumerationLiteral="_cj4I4MFTEeGyGv5RKvEgDA" xxxxx="LA17338-7"/>
   <term:ValueSetCode xmi:id="_cj-PgcFTEeGyGv5RKvEgDA" conceptName="Systolic blood pressure less than 90" base_EnumerationLiteral="_cj-PgMFTEeGyGv5RKvEgDA" xxxxx="LA17339-5"/>
   <term:ValueSetCode xmi:id="_ckE9MMFTEeGyGv5RKvEgDA" conceptName="Amputation proximal to wrist and ankle" base_EnumerationLiteral="_ckEWIMFTEeGyGv5RKvEgDA" xxxxx="LA17340-3"/>
   <term:ValueSetCode xmi:id="_ckLD0cFTEeGyGv5RKvEgDA" conceptName="Crushed, degloved, or mangled extremity" base_EnumerationLiteral="_ckLD0MFTEeGyGv5RKvEgDA" xxxxx="LA17341-1"/>
@@ -2703,7 +2703,7 @@
   <term:ValueSetCode xmi:id="_eBDRgcFTEeGyGv5RKvEgDA" conceptName="Contraindicated" base_EnumerationLiteral="_eBDRgMFTEeGyGv5RKvEgDA" xxxxx="LA4216-3"/>
   <term:ValueSetCode xmi:id="_eBJ_McFTEeGyGv5RKvEgDA" conceptName="Refused" base_EnumerationLiteral="_eBJ_MMFTEeGyGv5RKvEgDA" xxxxx="LA4389-8"/>
   <term:ValueSetCode xmi:id="_eBQs4cFTEeGyGv5RKvEgDA" conceptName="Withdrawal from pain" base_EnumerationLiteral="_eBQs4MFTEeGyGv5RKvEgDA" xxxxx="LA17727-1"/>
-  <term:ValueSetCode xmi:id="_eBXakMFTEeGyGv5RKvEgDA" conceptName="Obeys commands (>2 yrs); Appropriate response to stimulation (&lt;=2 yrs)" base_EnumerationLiteral="_eBWzgMFTEeGyGv5RKvEgDA" xxxxx="LA17797-4"/>
+  <term:ValueSetCode xmi:id="_eBXakMFTEeGyGv5RKvEgDA" conceptName="Obeys commands (&amp;gt;2 yrs); Appropriate response to stimulation (&amp;lt;=2 yrs)" base_EnumerationLiteral="_eBWzgMFTEeGyGv5RKvEgDA" xxxxx="LA17797-4"/>
   <term:ValueSetCode xmi:id="_eBdhMcFTEeGyGv5RKvEgDA" conceptName="No motor response" base_EnumerationLiteral="_eBdhMMFTEeGyGv5RKvEgDA" xxxxx="LA6562-8"/>
   <term:ValueSetCode xmi:id="_eBkO4cFTEeGyGv5RKvEgDA" conceptName="Extension to pain" base_EnumerationLiteral="_eBkO4MFTEeGyGv5RKvEgDA" xxxxx="LA6563-6"/>
   <term:ValueSetCode xmi:id="_eBq8kcFTEeGyGv5RKvEgDA" conceptName="Flexion to pain" base_EnumerationLiteral="_eBq8kMFTEeGyGv5RKvEgDA" xxxxx="LA6564-4"/>
@@ -2711,11 +2711,11 @@
   <term:ValueSetCode xmi:id="_eB4X8cFTEeGyGv5RKvEgDA" conceptName="Attempted defibrillation" base_EnumerationLiteral="_eB4X8MFTEeGyGv5RKvEgDA" xxxxx="LA17060-7"/>
   <term:ValueSetCode xmi:id="_eB_FocFTEeGyGv5RKvEgDA" conceptName="Attempted ventilation" base_EnumerationLiteral="_eB_FoMFTEeGyGv5RKvEgDA" xxxxx="LA17061-5"/>
   <term:ValueSetCode xmi:id="_eCFzUMFTEeGyGv5RKvEgDA" conceptName="Initiated chest compressions" base_EnumerationLiteral="_eCFMQMFTEeGyGv5RKvEgDA" xxxxx="LA17062-3"/>
-  <term:ValueSetCode xmi:id="_eCL58cFTEeGyGv5RKvEgDA" conceptName="Incomprehensible sounds (>2 yrs); Inconsolable, agitated (&lt;=2 yrs)" base_EnumerationLiteral="_eCL58MFTEeGyGv5RKvEgDA" xxxxx="LA17793-3"/>
-  <term:ValueSetCode xmi:id="_eCSnocFTEeGyGv5RKvEgDA" conceptName="Inappropriate words (>2 yrs); Inconsistently consolable, moaning (&lt;=2 yrs)" base_EnumerationLiteral="_eCSnoMFTEeGyGv5RKvEgDA" xxxxx="LA17794-1"/>
-  <term:ValueSetCode xmi:id="_eCZVUcFTEeGyGv5RKvEgDA" conceptName="Confused (>2 yrs); Cries but is consolable, inappropriate interactions (&lt;=2 yrs)" base_EnumerationLiteral="_eCZVUMFTEeGyGv5RKvEgDA" xxxxx="LA17795-8"/>
-  <term:ValueSetCode xmi:id="_eCgDAcFTEeGyGv5RKvEgDA" conceptName="Oriented (>2 yrs); Smiles, oriented to sounds, follows objects, interacts (&lt;=2 yrs)" base_EnumerationLiteral="_eCgDAMFTEeGyGv5RKvEgDA" xxxxx="LA17796-6"/>
-  <term:ValueSetCode xmi:id="_eCmwscFTEeGyGv5RKvEgDA" conceptName="No verbal response (>2 yrs); no vocal response (&lt;=2 yrs)" base_EnumerationLiteral="_eCmwsMFTEeGyGv5RKvEgDA" xxxxx="LA6557-8"/>
+  <term:ValueSetCode xmi:id="_eCL58cFTEeGyGv5RKvEgDA" conceptName="Incomprehensible sounds (&amp;gt;2 yrs); Inconsolable, agitated (&amp;lt;=2 yrs)" base_EnumerationLiteral="_eCL58MFTEeGyGv5RKvEgDA" xxxxx="LA17793-3"/>
+  <term:ValueSetCode xmi:id="_eCSnocFTEeGyGv5RKvEgDA" conceptName="Inappropriate words (&amp;gt;2 yrs); Inconsistently consolable, moaning (&amp;lt;=2 yrs)" base_EnumerationLiteral="_eCSnoMFTEeGyGv5RKvEgDA" xxxxx="LA17794-1"/>
+  <term:ValueSetCode xmi:id="_eCZVUcFTEeGyGv5RKvEgDA" conceptName="Confused (&amp;gt;2 yrs); Cries but is consolable, inappropriate interactions (&amp;lt;=2 yrs)" base_EnumerationLiteral="_eCZVUMFTEeGyGv5RKvEgDA" xxxxx="LA17795-8"/>
+  <term:ValueSetCode xmi:id="_eCgDAcFTEeGyGv5RKvEgDA" conceptName="Oriented (&amp;gt;2 yrs); Smiles, oriented to sounds, follows objects, interacts (&amp;lt;=2 yrs)" base_EnumerationLiteral="_eCgDAMFTEeGyGv5RKvEgDA" xxxxx="LA17796-6"/>
+  <term:ValueSetCode xmi:id="_eCmwscFTEeGyGv5RKvEgDA" conceptName="No verbal response (&amp;gt;2 yrs); no vocal response (&amp;lt;=2 yrs)" base_EnumerationLiteral="_eCmwsMFTEeGyGv5RKvEgDA" xxxxx="LA6557-8"/>
   <term:ValueSetCode xmi:id="_eCteYcFTEeGyGv5RKvEgDA" conceptName="No eye movement when assessed" base_EnumerationLiteral="_eCteYMFTEeGyGv5RKvEgDA" xxxxx="LA17798-2"/>
   <term:ValueSetCode xmi:id="_eC0MEcFTEeGyGv5RKvEgDA" conceptName="Opens eyes in response to painful stimulation" base_EnumerationLiteral="_eC0MEMFTEeGyGv5RKvEgDA" xxxxx="LA9345-5"/>
   <term:ValueSetCode xmi:id="_eC65wcFTEeGyGv5RKvEgDA" conceptName="Opens eyes in response to verbal stimulation" base_EnumerationLiteral="_eC65wMFTEeGyGv5RKvEgDA" xxxxx="LA9346-3"/>
