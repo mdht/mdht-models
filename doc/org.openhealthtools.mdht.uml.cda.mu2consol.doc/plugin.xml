@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <plugin>
-   <extension point="org.eclipse.help.toc">
+   <extension
+         point="org.eclipse.help.toc">
       <toc
             file="spec-book.xml"
-            primary="true"/>
+            primary="true">
+      </toc>
    </extension>
-   <extension point="org.eclipse.help.index">
+  <extension point="org.eclipse.help.index">
       <index file="index.xml"/>
    </extension>
 </plugin>
