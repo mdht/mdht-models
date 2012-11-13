@@ -2,7 +2,6 @@
 <plugin>
    <extension point="org.eclipse.help.toc">
       <toc
-            category="CDA Guides"
             file="spec-book.xml"
             primary="true"/>
    </extension>
