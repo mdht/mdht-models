@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <plugin>
    <extension point="org.eclipse.help.toc">
-      <toc
-            category="CDA Guides"
+      <toc            
             file="ccd-book.xml"
             primary="true"/>
    </extension>
