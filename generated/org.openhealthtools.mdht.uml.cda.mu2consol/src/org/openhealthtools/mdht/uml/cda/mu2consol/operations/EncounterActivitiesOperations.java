@@ -38,29 +38,29 @@ public class EncounterActivitiesOperations
 		extends
 		org.openhealthtools.mdht.uml.cda.consol.operations.EncounterActivitiesOperations {
 	/**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * @generated
-   */
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * @generated
+	 */
 	protected EncounterActivitiesOperations() {
-    super();
-  }
+		super();
+	}
 
 	/**
-   * The cached OCL expression body for the '{@link #validateMu2consolEncounterActivitiesCodeValue(EncounterActivities, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Mu2consol Encounter Activities Code Value</em>}' operation.
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * @see #validateMu2consolEncounterActivitiesCodeValue(EncounterActivities, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-   * @generated
-   * @ordered
-   */
+	 * The cached OCL expression body for the '{@link #validateMu2consolEncounterActivitiesCodeValue(EncounterActivities, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Mu2consol Encounter Activities Code Value</em>}' operation.
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * @see #validateMu2consolEncounterActivitiesCodeValue(EncounterActivities, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_MU2CONSOL_ENCOUNTER_ACTIVITIES_CODE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.code.codeSystem = '2.16.840.1.113883.6.3' xor self.code.codeSystem = '2.16.840.1.113883.6.96'";
 
 	/**
-   * The cached OCL invariant for the '{@link #validateMu2consolEncounterActivitiesCodeValue(EncounterActivities, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Mu2consol Encounter Activities Code Value</em>}' invariant operation.
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * @see #validateMu2consolEncounterActivitiesCodeValue(EncounterActivities, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-   * @generated
-   * @ordered
-   */
+	 * The cached OCL invariant for the '{@link #validateMu2consolEncounterActivitiesCodeValue(EncounterActivities, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Mu2consol Encounter Activities Code Value</em>}' invariant operation.
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * @see #validateMu2consolEncounterActivitiesCodeValue(EncounterActivities, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 
 	protected static Constraint VALIDATE_MU2CONSOL_ENCOUNTER_ACTIVITIES_CODE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
@@ -84,35 +84,31 @@ public class EncounterActivitiesOperations
 			EncounterActivities encounterActivities,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
   	  
-    if (VALIDATE_MU2CONSOL_ENCOUNTER_ACTIVITIES_CODE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-      OCL.Helper helper = EOCL_ENV.createOCLHelper();
-      helper.setContext(Mu2consolPackage.Literals.ENCOUNTER_ACTIVITIES);
-      try
-      {
-        VALIDATE_MU2CONSOL_ENCOUNTER_ACTIVITIES_CODE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MU2CONSOL_ENCOUNTER_ACTIVITIES_CODE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-      }
-      catch (ParserException pe)
-      {
-        throw new UnsupportedOperationException(pe.getLocalizedMessage());
-      }
-    }
-    if (!EOCL_ENV.createQuery(VALIDATE_MU2CONSOL_ENCOUNTER_ACTIVITIES_CODE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(encounterActivities))
-    {
-      if (diagnostics != null)
-      {
-        diagnostics.add
-          (new BasicDiagnostic
-            (Diagnostic.WARNING,
-             Mu2consolValidator.DIAGNOSTIC_SOURCE,
-             Mu2consolValidator.ENCOUNTER_ACTIVITIES__MU2CONSOL_ENCOUNTER_ACTIVITIES_CODE_VALUE,
-             Mu2consolPlugin.INSTANCE.getString("Mu2consolEncounterActivitiesCodeValue"),
-             new Object [] { encounterActivities }));
-      }
-       
-      return false;
-    }
-    return true;
-  }
+		if (VALIDATE_MU2CONSOL_ENCOUNTER_ACTIVITIES_CODE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setContext(Mu2consolPackage.Literals.ENCOUNTER_ACTIVITIES);
+			try {
+				VALIDATE_MU2CONSOL_ENCOUNTER_ACTIVITIES_CODE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MU2CONSOL_ENCOUNTER_ACTIVITIES_CODE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+			}
+			catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		if (!EOCL_ENV.createQuery(VALIDATE_MU2CONSOL_ENCOUNTER_ACTIVITIES_CODE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(encounterActivities)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.WARNING,
+						 Mu2consolValidator.DIAGNOSTIC_SOURCE,
+						 Mu2consolValidator.ENCOUNTER_ACTIVITIES__MU2CONSOL_ENCOUNTER_ACTIVITIES_CODE_VALUE,
+						 Mu2consolPlugin.INSTANCE.getString("Mu2consolEncounterActivitiesCodeValue"),
+						 new Object [] { encounterActivities }));
+			}
+			 
+			return false;
+		}
+		return true;
+	}
 
 	/**
 	 * The cached OCL expression body for the '
@@ -128,12 +124,12 @@ public class EncounterActivitiesOperations
 	protected static final String VALIDATE_ENCOUNTER_ACTIVITIES_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.4.49')";
 
 	/**
-   * The cached OCL invariant for the '{@link #validateEncounterActivitiesTemplateId(EncounterActivities, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Encounter Activities Template Id</em>}' invariant operation.
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * @see #validateEncounterActivitiesTemplateId(EncounterActivities, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-   * @generated
-   * @ordered
-   */
+	 * The cached OCL invariant for the '{@link #validateEncounterActivitiesTemplateId(EncounterActivities, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Encounter Activities Template Id</em>}' invariant operation.
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * @see #validateEncounterActivitiesTemplateId(EncounterActivities, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 
 	protected static Constraint VALIDATE_ENCOUNTER_ACTIVITIES_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
@@ -157,34 +153,30 @@ public class EncounterActivitiesOperations
 			EncounterActivities encounterActivities,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
   	  
-    if (VALIDATE_ENCOUNTER_ACTIVITIES_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-      OCL.Helper helper = EOCL_ENV.createOCLHelper();
-      helper.setContext(Mu2consolPackage.Literals.ENCOUNTER_ACTIVITIES);
-      try
-      {
-        VALIDATE_ENCOUNTER_ACTIVITIES_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ENCOUNTER_ACTIVITIES_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-      }
-      catch (ParserException pe)
-      {
-        throw new UnsupportedOperationException(pe.getLocalizedMessage());
-      }
-    }
-    if (!EOCL_ENV.createQuery(VALIDATE_ENCOUNTER_ACTIVITIES_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(encounterActivities))
-    {
-      if (diagnostics != null)
-      {
-        diagnostics.add
-          (new BasicDiagnostic
-            (Diagnostic.ERROR,
-             Mu2consolValidator.DIAGNOSTIC_SOURCE,
-             Mu2consolValidator.ENCOUNTER_ACTIVITIES__ENCOUNTER_ACTIVITIES_TEMPLATE_ID,
-             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "EncounterActivitiesTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(encounterActivities, context) }),
-             new Object [] { encounterActivities }));
-      }
-       
-      return false;
-    }
-    return true;
-  }
+		if (VALIDATE_ENCOUNTER_ACTIVITIES_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setContext(Mu2consolPackage.Literals.ENCOUNTER_ACTIVITIES);
+			try {
+				VALIDATE_ENCOUNTER_ACTIVITIES_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ENCOUNTER_ACTIVITIES_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+			}
+			catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		if (!EOCL_ENV.createQuery(VALIDATE_ENCOUNTER_ACTIVITIES_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(encounterActivities)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 Mu2consolValidator.DIAGNOSTIC_SOURCE,
+						 Mu2consolValidator.ENCOUNTER_ACTIVITIES__ENCOUNTER_ACTIVITIES_TEMPLATE_ID,
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "EncounterActivitiesTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(encounterActivities, context) }),
+						 new Object [] { encounterActivities }));
+			}
+			 
+			return false;
+		}
+		return true;
+	}
 
 } // EncounterActivitiesOperations

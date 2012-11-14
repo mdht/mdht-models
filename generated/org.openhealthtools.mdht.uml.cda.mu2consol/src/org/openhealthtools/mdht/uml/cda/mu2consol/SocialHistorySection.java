@@ -56,9 +56,9 @@ public interface SocialHistorySection extends
 	EList<SmokingStatusObservation> getMu2consolSmokingStatusObservations();
 
 	/**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * @generated
-   */
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * @generated
+	 */
 	public SocialHistorySection init();
 
 	/**
