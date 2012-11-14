@@ -10,7 +10,6 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.hitsp.impl;
 
-import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
@@ -20,7 +19,6 @@ import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.hitsp.HITSPPackage;
 import org.openhealthtools.mdht.uml.cda.hitsp.MedicationsAdministeredSection;
 import org.openhealthtools.mdht.uml.cda.hitsp.operations.MedicationsAdministeredSectionOperations;
-import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 
 /**
  * <!-- begin-user-doc -->
@@ -35,51 +33,53 @@ public class MedicationsAdministeredSectionImpl extends
 		org.openhealthtools.mdht.uml.cda.ihe.impl.MedicationsAdministeredSectionImpl implements
 		MedicationsAdministeredSection {
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	protected MedicationsAdministeredSectionImpl() {
-    super();
-  }
+		super();
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	@Override
 	protected EClass eStaticClass() {
-    return HITSPPackage.Literals.MEDICATIONS_ADMINISTERED_SECTION;
-  }
+		return HITSPPackage.Literals.MEDICATIONS_ADMINISTERED_SECTION;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public boolean validateHITSPMedicationsAdministeredSectionTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-    return MedicationsAdministeredSectionOperations.validateHITSPMedicationsAdministeredSectionTemplateId(this, diagnostics, context);
-  }
+		return MedicationsAdministeredSectionOperations.validateHITSPMedicationsAdministeredSectionTemplateId(
+			this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	@Override
 	public MedicationsAdministeredSection init() {
-      return Initializer.Util.init(this);
-  }
+		return Initializer.Util.init(this);
+	}
 
-  /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public MedicationsAdministeredSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
+	/**
+	   * <!-- begin-user-doc -->
+	   * <!-- end-user-doc -->
+	   * @generated
+	   */
+	@Override
+	public MedicationsAdministeredSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+		Initializer.Util.init(this, initializers);
+		return this;
+	}
 } // MedicationsAdministeredSectionImpl

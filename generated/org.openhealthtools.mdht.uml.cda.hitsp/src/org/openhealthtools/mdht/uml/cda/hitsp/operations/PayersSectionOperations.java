@@ -47,183 +47,167 @@ import org.openhealthtools.mdht.uml.cda.hitsp.util.HITSPValidator;
  */
 public class PayersSectionOperations extends org.openhealthtools.mdht.uml.cda.ihe.operations.PayersSectionOperations {
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	protected PayersSectionOperations() {
-    super();
-  }
+		super();
+	}
 
 	/**
-   * The cached OCL expression body for the '{@link #validateHITSPPayersSectionTemplateId(PayersSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate HITSP Payers Section Template Id</em>}' operation.
-   * <!-- begin-user-doc -->
+	* The cached OCL expression body for the '{@link #validateHITSPPayersSectionTemplateId(PayersSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate HITSP Payers Section Template Id</em>}' operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @see #validateHITSPPayersSectionTemplateId(PayersSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-   * @generated
-   * @ordered
-   */
+	* @see #validateHITSPPayersSectionTemplateId(PayersSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 	protected static final String VALIDATE_HITSP_PAYERS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.3.88.11.83.101')";
 
 	/**
-   * The cached OCL invariant for the '{@link #validateHITSPPayersSectionTemplateId(PayersSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate HITSP Payers Section Template Id</em>}' invariant operation.
-   * <!-- begin-user-doc -->
+	* The cached OCL invariant for the '{@link #validateHITSPPayersSectionTemplateId(PayersSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate HITSP Payers Section Template Id</em>}' invariant operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @see #validateHITSPPayersSectionTemplateId(PayersSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-   * @generated
-   * @ordered
-   */
+	* @see #validateHITSPPayersSectionTemplateId(PayersSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 	protected static Constraint VALIDATE_HITSP_PAYERS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * <!-- begin-model-doc -->
-   * @param payersSection The receiving '<em><b>Payers Section</b></em>' model object.
-   * @param diagnostics The chain of diagnostics to which problems are to be appended.
-   * @param context The cache of context-specific information.
-   * <!-- end-model-doc -->
-   * @generated
-   */
+	* <!-- begin-model-doc -->
+	* @param payersSection The receiving '<em><b>Payers Section</b></em>' model object.
+	* @param diagnostics The chain of diagnostics to which problems are to be appended.
+	* @param context The cache of context-specific information.
+	* <!-- end-model-doc -->
+	* @generated
+	*/
 	public static boolean validateHITSPPayersSectionTemplateId(PayersSection payersSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
-    if (VALIDATE_HITSP_PAYERS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-      OCL.Helper helper = EOCL_ENV.createOCLHelper();
-      helper.setContext(HITSPPackage.Literals.PAYERS_SECTION);
-      try
-      {
-        VALIDATE_HITSP_PAYERS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_HITSP_PAYERS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-      }
-      catch (ParserException pe)
-      {
-        throw new UnsupportedOperationException(pe.getLocalizedMessage());
-      }
-    }
-    if (!EOCL_ENV.createQuery(VALIDATE_HITSP_PAYERS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(payersSection))
-    {
-      if (diagnostics != null)
-      {
-        diagnostics.add
-          (new BasicDiagnostic
-            (Diagnostic.ERROR,
-             HITSPValidator.DIAGNOSTIC_SOURCE,
-             HITSPValidator.PAYERS_SECTION__HITSP_PAYERS_SECTION_TEMPLATE_ID,
-             HITSPPlugin.INSTANCE.getString("HITSPPayersSectionTemplateId"),
-             new Object [] { payersSection }));
-      }
-       
-      return false;
-    }
-    return true;
-  }
+
+		if (VALIDATE_HITSP_PAYERS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setContext(HITSPPackage.Literals.PAYERS_SECTION);
+			try {
+				VALIDATE_HITSP_PAYERS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_HITSP_PAYERS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+			} catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		if (!EOCL_ENV.createQuery(VALIDATE_HITSP_PAYERS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			payersSection)) {
+			if (diagnostics != null) {
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, HITSPValidator.DIAGNOSTIC_SOURCE,
+					HITSPValidator.PAYERS_SECTION__HITSP_PAYERS_SECTION_TEMPLATE_ID,
+					HITSPPlugin.INSTANCE.getString("HITSPPayersSectionTemplateId"), new Object[] { payersSection }));
+			}
+
+			return false;
+		}
+		return true;
+	}
 
 	/**
-   * The cached OCL expression body for the '{@link #validateHITSPPayersSectionInsuranceProvider(PayersSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate HITSP Payers Section Insurance Provider</em>}' operation.
-   * <!-- begin-user-doc -->
+	* The cached OCL expression body for the '{@link #validateHITSPPayersSectionInsuranceProvider(PayersSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate HITSP Payers Section Insurance Provider</em>}' operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @see #validateHITSPPayersSectionInsuranceProvider(PayersSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-   * @generated
-   * @ordered
-   */
+	* @see #validateHITSPPayersSectionInsuranceProvider(PayersSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 	protected static final String VALIDATE_HITSP_PAYERS_SECTION_INSURANCE_PROVIDER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->exists(entry : cda::Entry | not entry.act.oclIsUndefined() and entry.act.oclIsKindOf(hitsp::InsuranceProvider))";
 
 	/**
-   * The cached OCL invariant for the '{@link #validateHITSPPayersSectionInsuranceProvider(PayersSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate HITSP Payers Section Insurance Provider</em>}' invariant operation.
-   * <!-- begin-user-doc -->
+	* The cached OCL invariant for the '{@link #validateHITSPPayersSectionInsuranceProvider(PayersSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate HITSP Payers Section Insurance Provider</em>}' invariant operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @see #validateHITSPPayersSectionInsuranceProvider(PayersSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-   * @generated
-   * @ordered
-   */
+	* @see #validateHITSPPayersSectionInsuranceProvider(PayersSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 	protected static Constraint VALIDATE_HITSP_PAYERS_SECTION_INSURANCE_PROVIDER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * <!-- begin-model-doc -->
-   * @param payersSection The receiving '<em><b>Payers Section</b></em>' model object.
-   * @param diagnostics The chain of diagnostics to which problems are to be appended.
-   * @param context The cache of context-specific information.
-   * <!-- end-model-doc -->
-   * @generated
-   */
+	* <!-- begin-model-doc -->
+	* @param payersSection The receiving '<em><b>Payers Section</b></em>' model object.
+	* @param diagnostics The chain of diagnostics to which problems are to be appended.
+	* @param context The cache of context-specific information.
+	* <!-- end-model-doc -->
+	* @generated
+	*/
 	public static boolean validateHITSPPayersSectionInsuranceProvider(PayersSection payersSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
-    if (VALIDATE_HITSP_PAYERS_SECTION_INSURANCE_PROVIDER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-      OCL.Helper helper = EOCL_ENV.createOCLHelper();
-      helper.setContext(HITSPPackage.Literals.PAYERS_SECTION);
-      try
-      {
-        VALIDATE_HITSP_PAYERS_SECTION_INSURANCE_PROVIDER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_HITSP_PAYERS_SECTION_INSURANCE_PROVIDER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-      }
-      catch (ParserException pe)
-      {
-        throw new UnsupportedOperationException(pe.getLocalizedMessage());
-      }
-    }
-    if (!EOCL_ENV.createQuery(VALIDATE_HITSP_PAYERS_SECTION_INSURANCE_PROVIDER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(payersSection))
-    {
-      if (diagnostics != null)
-      {
-        diagnostics.add
-          (new BasicDiagnostic
-            (Diagnostic.ERROR,
-             HITSPValidator.DIAGNOSTIC_SOURCE,
-             HITSPValidator.PAYERS_SECTION__HITSP_PAYERS_SECTION_INSURANCE_PROVIDER,
-             HITSPPlugin.INSTANCE.getString("HITSPPayersSectionInsuranceProvider"),
-             new Object [] { payersSection }));
-      }
-       
-      return false;
-    }
-    return true;
-  }
+
+		if (VALIDATE_HITSP_PAYERS_SECTION_INSURANCE_PROVIDER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setContext(HITSPPackage.Literals.PAYERS_SECTION);
+			try {
+				VALIDATE_HITSP_PAYERS_SECTION_INSURANCE_PROVIDER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_HITSP_PAYERS_SECTION_INSURANCE_PROVIDER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+			} catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		if (!EOCL_ENV.createQuery(VALIDATE_HITSP_PAYERS_SECTION_INSURANCE_PROVIDER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			payersSection)) {
+			if (diagnostics != null) {
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, HITSPValidator.DIAGNOSTIC_SOURCE,
+					HITSPValidator.PAYERS_SECTION__HITSP_PAYERS_SECTION_INSURANCE_PROVIDER,
+					HITSPPlugin.INSTANCE.getString("HITSPPayersSectionInsuranceProvider"),
+					new Object[] { payersSection }));
+			}
+
+			return false;
+		}
+		return true;
+	}
 
 	/**
-   * The cached OCL expression body for the '{@link #getInsuranceProviders(PayersSection) <em>Get Insurance Providers</em>}' operation.
-   * <!-- begin-user-doc -->
+	* The cached OCL expression body for the '{@link #getInsuranceProviders(PayersSection) <em>Get Insurance Providers</em>}' operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @see #getInsuranceProviders(PayersSection)
-   * @generated
-   * @ordered
-   */
+	* @see #getInsuranceProviders(PayersSection)
+	* @generated
+	* @ordered
+	*/
 	protected static final String GET_INSURANCE_PROVIDERS__EOCL_EXP = "self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(hitsp::InsuranceProvider)).oclAsType(hitsp::InsuranceProvider)";
 
 	/**
-   * The cached OCL query for the '{@link #getInsuranceProviders(PayersSection) <em>Get Insurance Providers</em>}' query operation.
-   * <!-- begin-user-doc -->
+	* The cached OCL query for the '{@link #getInsuranceProviders(PayersSection) <em>Get Insurance Providers</em>}' query operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @see #getInsuranceProviders(PayersSection)
-   * @generated
-   * @ordered
-   */
+	* @see #getInsuranceProviders(PayersSection)
+	* @generated
+	* @ordered
+	*/
 	protected static OCLExpression<EClassifier> GET_INSURANCE_PROVIDERS__EOCL_QRY;
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public static EList<InsuranceProvider> getInsuranceProviders(PayersSection payersSection) {
-    if (GET_INSURANCE_PROVIDERS__EOCL_QRY == null)
-    {
-      OCL.Helper helper = EOCL_ENV.createOCLHelper();
-      helper.setOperationContext(HITSPPackage.Literals.PAYERS_SECTION, HITSPPackage.Literals.PAYERS_SECTION.getEAllOperations().get(66));
-      try
-      {
-        GET_INSURANCE_PROVIDERS__EOCL_QRY = helper.createQuery(GET_INSURANCE_PROVIDERS__EOCL_EXP);
-      }
-      catch (ParserException pe)
-      {
-        throw new UnsupportedOperationException(pe.getLocalizedMessage());
-      }
-    }
-    OCL.Query query = EOCL_ENV.createQuery(GET_INSURANCE_PROVIDERS__EOCL_QRY);
-    @SuppressWarnings("unchecked")
-    Collection<InsuranceProvider> result = (Collection<InsuranceProvider>) query.evaluate(payersSection);
-    return new BasicEList.UnmodifiableEList<InsuranceProvider>(result.size(), result.toArray());
-  }
+		if (GET_INSURANCE_PROVIDERS__EOCL_QRY == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setOperationContext(
+				HITSPPackage.Literals.PAYERS_SECTION, HITSPPackage.Literals.PAYERS_SECTION.getEAllOperations().get(66));
+			try {
+				GET_INSURANCE_PROVIDERS__EOCL_QRY = helper.createQuery(GET_INSURANCE_PROVIDERS__EOCL_EXP);
+			} catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		OCL.Query query = EOCL_ENV.createQuery(GET_INSURANCE_PROVIDERS__EOCL_QRY);
+		@SuppressWarnings("unchecked")
+		Collection<InsuranceProvider> result = (Collection<InsuranceProvider>) query.evaluate(payersSection);
+		return new BasicEList.UnmodifiableEList<InsuranceProvider>(result.size(), result.toArray());
+	}
 
 } // PayersSectionOperations

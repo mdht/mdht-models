@@ -10,7 +10,6 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.ccd.impl;
 
-import java.lang.Iterable;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
 import org.openhealthtools.mdht.emf.runtime.util.Initializer;

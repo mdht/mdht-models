@@ -10,7 +10,6 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.hitsp;
 
-import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
@@ -37,51 +36,51 @@ import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 public interface HospitalAdmissionDiagnosisSection extends
 		org.openhealthtools.mdht.uml.cda.ihe.HospitalAdmissionDiagnosisSection {
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * <!-- begin-model-doc -->
-   * @param diagnostics The chain of diagnostics to which problems are to be appended.
-   * @param context The cache of context-specific information.
-   * <!-- end-model-doc -->
-   * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.templateId->exists(id : datatypes::II | id.root = \'2.16.840.1.113883.3.88.11.83.110\')'"
-   * @generated
-   */
+	* <!-- begin-model-doc -->
+	* @param diagnostics The chain of diagnostics to which problems are to be appended.
+	* @param context The cache of context-specific information.
+	* <!-- end-model-doc -->
+	* @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.templateId->exists(id : datatypes::II | id.root = \'2.16.840.1.113883.3.88.11.83.110\')'"
+	* @generated
+	*/
 	boolean validateHITSPHospitalAdmissionDiagnosisSectionTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context);
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * <!-- begin-model-doc -->
-   * @param diagnostics The chain of diagnostics to which problems are to be appended.
-   * @param context The cache of context-specific information.
-   * <!-- end-model-doc -->
-   * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entry->one(entry : cda::Entry | not entry.act.oclIsUndefined() and entry.act.oclIsKindOf(hitsp::Condition))'"
-   * @generated
-   */
+	* <!-- begin-model-doc -->
+	* @param diagnostics The chain of diagnostics to which problems are to be appended.
+	* @param context The cache of context-specific information.
+	* <!-- end-model-doc -->
+	* @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entry->one(entry : cda::Entry | not entry.act.oclIsUndefined() and entry.act.oclIsKindOf(hitsp::Condition))'"
+	* @generated
+	*/
 	boolean validateHITSPHospitalAdmissionDiagnosisSectionCondition(DiagnosticChain diagnostics,
 			Map<Object, Object> context);
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @model kind="operation" required="true" ordered="false"
-   *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(hitsp::Condition))->asSequence()->any(true).oclAsType(hitsp::Condition)'"
-   * @generated
-   */
+	* @model kind="operation" required="true" ordered="false"
+	*        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(hitsp::Condition))->asSequence()->any(true).oclAsType(hitsp::Condition)'"
+	* @generated
+	*/
 	Condition getCondition();
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public HospitalAdmissionDiagnosisSection init();
 
-  /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public HospitalAdmissionDiagnosisSection init(Iterable<? extends Initializer<? extends EObject>> initializers);
+	/**
+	   * <!-- begin-user-doc -->
+	   * <!-- end-user-doc -->
+	   * @generated
+	   */
+	public HospitalAdmissionDiagnosisSection init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // HospitalAdmissionDiagnosisSection

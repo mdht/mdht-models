@@ -12,6 +12,7 @@ package org.openhealthtools.mdht.uml.cda.ihe.impl;
 
 import java.io.IOException;
 import java.net.URL;
+
 import org.eclipse.emf.common.util.URI;
 import org.eclipse.emf.common.util.WrappedException;
 import org.eclipse.emf.ecore.EClass;

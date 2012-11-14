@@ -10,7 +10,6 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.hitsp.impl;
 
-import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
@@ -21,7 +20,6 @@ import org.openhealthtools.mdht.uml.cda.hitsp.HITSPPackage;
 import org.openhealthtools.mdht.uml.cda.hitsp.VitalSign;
 import org.openhealthtools.mdht.uml.cda.hitsp.operations.VitalSignOperations;
 import org.openhealthtools.mdht.uml.cda.ihe.impl.VitalSignObservationImpl;
-import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 
 /**
  * <!-- begin-user-doc -->
@@ -34,60 +32,60 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  */
 public class VitalSignImpl extends VitalSignObservationImpl implements VitalSign {
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	protected VitalSignImpl() {
-    super();
-  }
+		super();
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	@Override
 	protected EClass eStaticClass() {
-    return HITSPPackage.Literals.VITAL_SIGN;
-  }
+		return HITSPPackage.Literals.VITAL_SIGN;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public boolean validateVitalSignTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return VitalSignOperations.validateVitalSignTemplateId(this, diagnostics, context);
-  }
+		return VitalSignOperations.validateVitalSignTemplateId(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateVitalSignCode(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return VitalSignOperations.validateVitalSignCode(this, diagnostics, context);
-  }
+	* <!-- begin-user-doc -->
+	* <!-- end-user-doc -->
+	* @generated
+	*/
+	public boolean validateVitalSignCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return VitalSignOperations.validateVitalSignCode(this, diagnostics, context);
+	}
 
-  /**
-   * <!-- begin-user-doc -->
+	/**
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	public VitalSign init() {
-      return Initializer.Util.init(this);
-  }
+		return Initializer.Util.init(this);
+	}
 
-  /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public VitalSign init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
+	/**
+	   * <!-- begin-user-doc -->
+	   * <!-- end-user-doc -->
+	   * @generated
+	   */
+	@Override
+	public VitalSign init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+		Initializer.Util.init(this, initializers);
+		return this;
+	}
 } // VitalSignImpl

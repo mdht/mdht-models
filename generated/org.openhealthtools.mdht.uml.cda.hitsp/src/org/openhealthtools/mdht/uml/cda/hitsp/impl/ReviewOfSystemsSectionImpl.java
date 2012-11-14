@@ -10,7 +10,6 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.hitsp.impl;
 
-import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
@@ -20,7 +19,6 @@ import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.cdt.operations.ReviewOfSystemsSectionOperations;
 import org.openhealthtools.mdht.uml.cda.hitsp.HITSPPackage;
 import org.openhealthtools.mdht.uml.cda.hitsp.ReviewOfSystemsSection;
-import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 
 /**
  * <!-- begin-user-doc -->
@@ -34,71 +32,73 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 public class ReviewOfSystemsSectionImpl extends org.openhealthtools.mdht.uml.cda.ihe.impl.ReviewOfSystemsSectionImpl
 		implements ReviewOfSystemsSection {
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	protected ReviewOfSystemsSectionImpl() {
-    super();
-  }
+		super();
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	@Override
 	protected EClass eStaticClass() {
-    return HITSPPackage.Literals.REVIEW_OF_SYSTEMS_SECTION;
-  }
+		return HITSPPackage.Literals.REVIEW_OF_SYSTEMS_SECTION;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	@Override
 	public boolean validateReviewOfSystemsSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return ReviewOfSystemsSectionOperations.validateReviewOfSystemsSectionTemplateId(this, diagnostics, context);
-  }
+		return ReviewOfSystemsSectionOperations.validateReviewOfSystemsSectionTemplateId(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	@Override
 	public boolean validateReviewOfSystemsSectionCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return ReviewOfSystemsSectionOperations.validateReviewOfSystemsSectionCode(this, diagnostics, context);
-  }
+		return ReviewOfSystemsSectionOperations.validateReviewOfSystemsSectionCode(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public boolean validateHITSPReviewOfSystemsSectionTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-    return org.openhealthtools.mdht.uml.cda.hitsp.operations.ReviewOfSystemsSectionOperations.validateHITSPReviewOfSystemsSectionTemplateId(this, diagnostics, context);
-  }
+		return org.openhealthtools.mdht.uml.cda.hitsp.operations.ReviewOfSystemsSectionOperations.validateHITSPReviewOfSystemsSectionTemplateId(
+			this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	@Override
 	public ReviewOfSystemsSection init() {
-      return Initializer.Util.init(this);
-  }
+		return Initializer.Util.init(this);
+	}
 
-  /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public ReviewOfSystemsSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
+	/**
+	   * <!-- begin-user-doc -->
+	   * <!-- end-user-doc -->
+	   * @generated
+	   */
+	@Override
+	public ReviewOfSystemsSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+		Initializer.Util.init(this, initializers);
+		return this;
+	}
 } // ReviewOfSystemsSectionImpl

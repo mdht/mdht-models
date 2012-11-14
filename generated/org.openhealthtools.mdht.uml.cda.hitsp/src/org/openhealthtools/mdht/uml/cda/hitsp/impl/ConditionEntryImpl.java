@@ -10,7 +10,6 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.hitsp.impl;
 
-import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
@@ -24,7 +23,6 @@ import org.openhealthtools.mdht.uml.cda.hitsp.HITSPPackage;
 import org.openhealthtools.mdht.uml.cda.hitsp.operations.ConditionEntryOperations;
 import org.openhealthtools.mdht.uml.cda.ihe.ProblemStatusObservation;
 import org.openhealthtools.mdht.uml.cda.ihe.impl.ProblemEntryImpl;
-import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 
 /**
  * <!-- begin-user-doc -->
@@ -37,163 +35,162 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  */
 public class ConditionEntryImpl extends ProblemEntryImpl implements ConditionEntry {
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	protected ConditionEntryImpl() {
-    super();
-  }
+		super();
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	@Override
 	protected EClass eStaticClass() {
-    return HITSPPackage.Literals.CONDITION_ENTRY;
-  }
+		return HITSPPackage.Literals.CONDITION_ENTRY;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public boolean validateConditionEntryHasOnsetDate(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return ConditionEntryOperations.validateConditionEntryHasOnsetDate(this, diagnostics, context);
-  }
+		return ConditionEntryOperations.validateConditionEntryHasOnsetDate(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public boolean validateConditionEntryHasResolutionDate(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return ConditionEntryOperations.validateConditionEntryHasResolutionDate(this, diagnostics, context);
-  }
+		return ConditionEntryOperations.validateConditionEntryHasResolutionDate(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public boolean validateConditionEntryHasUnknownResolutionDate(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-    return ConditionEntryOperations.validateConditionEntryHasUnknownResolutionDate(this, diagnostics, context);
-  }
+		return ConditionEntryOperations.validateConditionEntryHasUnknownResolutionDate(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateConditionEntryCodeP(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return ConditionEntryOperations.validateConditionEntryCodeP(this, diagnostics, context);
-  }
+	* <!-- begin-user-doc -->
+	* <!-- end-user-doc -->
+	* @generated
+	*/
+	public boolean validateConditionEntryCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ConditionEntryOperations.validateConditionEntryCodeP(this, diagnostics, context);
+	}
 
-  /**
-   * <!-- begin-user-doc -->
+	/**
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validateConditionEntryCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return ConditionEntryOperations.validateConditionEntryCode(this, diagnostics, context);
-  }
+		return ConditionEntryOperations.validateConditionEntryCode(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public boolean validateConditionEntryText(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return ConditionEntryOperations.validateConditionEntryText(this, diagnostics, context);
-  }
+		return ConditionEntryOperations.validateConditionEntryText(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateConditionEntryValue(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return ConditionEntryOperations.validateConditionEntryValue(this, diagnostics, context);
-  }
+	* <!-- begin-user-doc -->
+	* <!-- end-user-doc -->
+	* @generated
+	*/
+	public boolean validateConditionEntryValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ConditionEntryOperations.validateConditionEntryValue(this, diagnostics, context);
+	}
 
-  /**
-   * <!-- begin-user-doc -->
+	/**
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validateConditionEntryAgeObservation(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return ConditionEntryOperations.validateConditionEntryAgeObservation(this, diagnostics, context);
-  }
+		return ConditionEntryOperations.validateConditionEntryAgeObservation(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public boolean validateConditionEntryProblemStatusObservation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-    return ConditionEntryOperations.validateConditionEntryProblemStatusObservation(this, diagnostics, context);
-  }
+		return ConditionEntryOperations.validateConditionEntryProblemStatusObservation(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public boolean validateConditionEntryCauseOfDeathObservation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-    return ConditionEntryOperations.validateConditionEntryCauseOfDeathObservation(this, diagnostics, context);
-  }
+		return ConditionEntryOperations.validateConditionEntryCauseOfDeathObservation(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public AgeObservation getHITSPAgeObservation() {
-    return ConditionEntryOperations.getHITSPAgeObservation(this);
-  }
+		return ConditionEntryOperations.getHITSPAgeObservation(this);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public ProblemStatusObservation getHITSPProblemStatusObservation() {
-    return ConditionEntryOperations.getHITSPProblemStatusObservation(this);
-  }
+		return ConditionEntryOperations.getHITSPProblemStatusObservation(this);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public CauseOfDeathObservation getCauseOfDeathObservation() {
-    return ConditionEntryOperations.getCauseOfDeathObservation(this);
-  }
+		return ConditionEntryOperations.getCauseOfDeathObservation(this);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	@Override
 	public ConditionEntry init() {
-      return Initializer.Util.init(this);
-  }
+		return Initializer.Util.init(this);
+	}
 
-  /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public ConditionEntry init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
+	/**
+	   * <!-- begin-user-doc -->
+	   * <!-- end-user-doc -->
+	   * @generated
+	   */
+	@Override
+	public ConditionEntry init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+		Initializer.Util.init(this, initializers);
+		return this;
+	}
 } // ConditionEntryImpl
