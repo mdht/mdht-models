@@ -27,31 +27,31 @@ import org.openhealthtools.mdht.uml.cda.hitsp.operations.HITSPRegistryDelegateOp
  */
 public class HITSPRegistryDelegateImpl extends EObjectImpl implements HITSPRegistryDelegate {
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	protected HITSPRegistryDelegateImpl() {
-    super();
-  }
+		super();
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	@Override
 	protected EClass eStaticClass() {
-    return HITSPPackage.Literals.HITSP_REGISTRY_DELEGATE;
-  }
+		return HITSPPackage.Literals.HITSP_REGISTRY_DELEGATE;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public EClass getEClass(String templateId, Object context) {
-    return HITSPRegistryDelegateOperations.getEClass(this, templateId, context);
-  }
+		return HITSPRegistryDelegateOperations.getEClass(this, templateId, context);
+	}
 
 } // HITSPRegistryDelegateImpl

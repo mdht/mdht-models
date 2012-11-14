@@ -6,23 +6,16 @@
  */
 package org.openhealthtools.mdht.uml.cda.ihe.impl;
 
-import java.lang.Iterable;
-
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
-
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-
 import org.openhealthtools.mdht.emf.runtime.util.Initializer;
-
 import org.openhealthtools.mdht.uml.cda.ihe.IHEPackage;
 import org.openhealthtools.mdht.uml.cda.ihe.ProcedureEntry;
 import org.openhealthtools.mdht.uml.cda.ihe.ProceduresAndInterventionsSection;
-
 import org.openhealthtools.mdht.uml.cda.ihe.operations.ProceduresAndInterventionsSectionOperations;
-
 import org.openhealthtools.mdht.uml.cda.impl.SectionImpl;
 
 /**

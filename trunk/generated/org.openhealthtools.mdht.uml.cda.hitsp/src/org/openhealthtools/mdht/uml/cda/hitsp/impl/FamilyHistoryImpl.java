@@ -10,7 +10,6 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.hitsp.impl;
 
-import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
@@ -23,7 +22,6 @@ import org.openhealthtools.mdht.uml.cda.hitsp.HITSPPackage;
 import org.openhealthtools.mdht.uml.cda.hitsp.operations.FamilyHistoryOperations;
 import org.openhealthtools.mdht.uml.cda.ihe.ProblemStatusObservation;
 import org.openhealthtools.mdht.uml.cda.ihe.impl.FamilyHistoryOrganizerImpl;
-import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 
 /**
  * <!-- begin-user-doc -->
@@ -36,115 +34,116 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  */
 public class FamilyHistoryImpl extends FamilyHistoryOrganizerImpl implements FamilyHistory {
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	protected FamilyHistoryImpl() {
-    super();
-  }
+		super();
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	@Override
 	protected EClass eStaticClass() {
-    return HITSPPackage.Literals.FAMILY_HISTORY;
-  }
+		return HITSPPackage.Literals.FAMILY_HISTORY;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public boolean validateFamilyHistoryRelatedSubjectCodeValueSet(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-    return FamilyHistoryOperations.validateFamilyHistoryRelatedSubjectCodeValueSet(this, diagnostics, context);
-  }
+		return FamilyHistoryOperations.validateFamilyHistoryRelatedSubjectCodeValueSet(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public boolean validateFamilyHistoryHasSDTCid(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return FamilyHistoryOperations.validateFamilyHistoryHasSDTCid(this, diagnostics, context);
-  }
+		return FamilyHistoryOperations.validateFamilyHistoryHasSDTCid(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public boolean validateFamilyHistoryHasFamilyName(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return FamilyHistoryOperations.validateFamilyHistoryHasFamilyName(this, diagnostics, context);
-  }
+		return FamilyHistoryOperations.validateFamilyHistoryHasFamilyName(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public boolean validateFamilyHistoryHasGenderCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return FamilyHistoryOperations.validateFamilyHistoryHasGenderCode(this, diagnostics, context);
-  }
+		return FamilyHistoryOperations.validateFamilyHistoryHasGenderCode(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public boolean validateFamilyHistoryFamilyMemberCondition(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return FamilyHistoryOperations.validateFamilyHistoryFamilyMemberCondition(this, diagnostics, context);
-  }
+		return FamilyHistoryOperations.validateFamilyHistoryFamilyMemberCondition(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public boolean validateFamilyHistoryTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return FamilyHistoryOperations.validateFamilyHistoryTemplateId(this, diagnostics, context);
-  }
+		return FamilyHistoryOperations.validateFamilyHistoryTemplateId(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public boolean validateFamilyHistoryProblemStatusObservation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-    return FamilyHistoryOperations.validateFamilyHistoryProblemStatusObservation(this, diagnostics, context);
-  }
+		return FamilyHistoryOperations.validateFamilyHistoryProblemStatusObservation(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public EList<ProblemStatusObservation> getProblemStatusObservations() {
-    return FamilyHistoryOperations.getProblemStatusObservations(this);
-  }
+		return FamilyHistoryOperations.getProblemStatusObservations(this);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	@Override
 	public FamilyHistory init() {
-      return Initializer.Util.init(this);
-  }
+		return Initializer.Util.init(this);
+	}
 
-  /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public FamilyHistory init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
+	/**
+	   * <!-- begin-user-doc -->
+	   * <!-- end-user-doc -->
+	   * @generated
+	   */
+	@Override
+	public FamilyHistory init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+		Initializer.Util.init(this, initializers);
+		return this;
+	}
 } // FamilyHistoryImpl

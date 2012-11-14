@@ -10,7 +10,6 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.hitsp.impl;
 
-import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
@@ -21,7 +20,6 @@ import org.openhealthtools.mdht.uml.cda.cdt.operations.ChiefComplaintSectionOper
 import org.openhealthtools.mdht.uml.cda.hitsp.ChiefComplaintSection;
 import org.openhealthtools.mdht.uml.cda.hitsp.Condition;
 import org.openhealthtools.mdht.uml.cda.hitsp.HITSPPackage;
-import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 
 /**
  * <!-- begin-user-doc -->
@@ -35,88 +33,91 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 public class ChiefComplaintSectionImpl extends org.openhealthtools.mdht.uml.cda.ihe.impl.ChiefComplaintSectionImpl
 		implements ChiefComplaintSection {
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	protected ChiefComplaintSectionImpl() {
-    super();
-  }
+		super();
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	@Override
 	protected EClass eStaticClass() {
-    return HITSPPackage.Literals.CHIEF_COMPLAINT_SECTION;
-  }
+		return HITSPPackage.Literals.CHIEF_COMPLAINT_SECTION;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	@Override
 	public boolean validateChiefComplaintSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return ChiefComplaintSectionOperations.validateChiefComplaintSectionTemplateId(this, diagnostics, context);
-  }
+		return ChiefComplaintSectionOperations.validateChiefComplaintSectionTemplateId(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	@Override
 	public boolean validateChiefComplaintSectionCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return ChiefComplaintSectionOperations.validateChiefComplaintSectionCode(this, diagnostics, context);
-  }
+		return ChiefComplaintSectionOperations.validateChiefComplaintSectionCode(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public boolean validateHITSPChiefComplaintSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return org.openhealthtools.mdht.uml.cda.hitsp.operations.ChiefComplaintSectionOperations.validateHITSPChiefComplaintSectionTemplateId(this, diagnostics, context);
-  }
+		return org.openhealthtools.mdht.uml.cda.hitsp.operations.ChiefComplaintSectionOperations.validateHITSPChiefComplaintSectionTemplateId(
+			this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public boolean validateHITSPChiefComplaintSectionCondition(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return org.openhealthtools.mdht.uml.cda.hitsp.operations.ChiefComplaintSectionOperations.validateHITSPChiefComplaintSectionCondition(this, diagnostics, context);
-  }
+		return org.openhealthtools.mdht.uml.cda.hitsp.operations.ChiefComplaintSectionOperations.validateHITSPChiefComplaintSectionCondition(
+			this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public Condition getCondition() {
-    return org.openhealthtools.mdht.uml.cda.hitsp.operations.ChiefComplaintSectionOperations.getCondition(this);
-  }
+		return org.openhealthtools.mdht.uml.cda.hitsp.operations.ChiefComplaintSectionOperations.getCondition(this);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	@Override
 	public ChiefComplaintSection init() {
-      return Initializer.Util.init(this);
-  }
+		return Initializer.Util.init(this);
+	}
 
-  /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public ChiefComplaintSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
+	/**
+	   * <!-- begin-user-doc -->
+	   * <!-- end-user-doc -->
+	   * @generated
+	   */
+	@Override
+	public ChiefComplaintSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+		Initializer.Util.init(this, initializers);
+		return this;
+	}
 } // ChiefComplaintSectionImpl
