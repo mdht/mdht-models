@@ -39,381 +39,381 @@ import org.openhealthtools.mdht.uml.cda.mu2consol.operations.SummaryOfCareRecord
 public class SummaryOfCareRecordImpl extends GeneralHeaderConstraintsImpl
 		implements SummaryOfCareRecord {
 	/**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * @generated
-   */
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * @generated
+	 */
 	protected SummaryOfCareRecordImpl() {
-    super();
-  }
+		super();
+	}
 
 	/**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * @generated
-   */
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
-    return Mu2consolPackage.Literals.SUMMARY_OF_CARE_RECORD;
-  }
+		return Mu2consolPackage.Literals.SUMMARY_OF_CARE_RECORD;
+	}
 
 	/**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * @generated
-   */
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * @generated
+	 */
 	public boolean validateSummaryOfCareRecordCarePlanning(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return SummaryOfCareRecordOperations.validateSummaryOfCareRecordCarePlanning(this, diagnostics, context);
-  }
+		return SummaryOfCareRecordOperations.validateSummaryOfCareRecordCarePlanning(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * @generated
-   */
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * @generated
+	 */
 	public boolean validateSummaryOfCareRecordCognitiveStatusEntries(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return SummaryOfCareRecordOperations.validateSummaryOfCareRecordCognitiveStatusEntries(this, diagnostics, context);
-  }
+		return SummaryOfCareRecordOperations.validateSummaryOfCareRecordCognitiveStatusEntries(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * @generated
-   */
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * @generated
+	 */
 	public boolean validateSummaryOfCareRecordFunctionalStatusEntries(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return SummaryOfCareRecordOperations.validateSummaryOfCareRecordFunctionalStatusEntries(this, diagnostics, context);
-  }
+		return SummaryOfCareRecordOperations.validateSummaryOfCareRecordFunctionalStatusEntries(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * @generated
-   */
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * @generated
+	 */
 	public boolean validateSummaryOfCareRecordPlanOfCareSection(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return SummaryOfCareRecordOperations.validateSummaryOfCareRecordPlanOfCareSection(this, diagnostics, context);
-  }
+		return SummaryOfCareRecordOperations.validateSummaryOfCareRecordPlanOfCareSection(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * @generated
-   */
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * @generated
+	 */
 	public boolean validateSummaryOfCareRecordProblemSection(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return SummaryOfCareRecordOperations.validateSummaryOfCareRecordProblemSection(this, diagnostics, context);
-  }
+		return SummaryOfCareRecordOperations.validateSummaryOfCareRecordProblemSection(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * @generated
-   */
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * @generated
+	 */
 	public boolean validateSummaryOfCareRecordAllergiesSection(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return SummaryOfCareRecordOperations.validateSummaryOfCareRecordAllergiesSection(this, diagnostics, context);
-  }
+		return SummaryOfCareRecordOperations.validateSummaryOfCareRecordAllergiesSection(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * @generated
-   */
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * @generated
+	 */
 	public boolean validateSummaryOfCareRecordImmunizationsSection(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return SummaryOfCareRecordOperations.validateSummaryOfCareRecordImmunizationsSection(this, diagnostics, context);
-  }
+		return SummaryOfCareRecordOperations.validateSummaryOfCareRecordImmunizationsSection(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * @generated
-   */
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * @generated
+	 */
 	public boolean validateSummaryOfCareRecordMedicationsSection(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return SummaryOfCareRecordOperations.validateSummaryOfCareRecordMedicationsSection(this, diagnostics, context);
-  }
+		return SummaryOfCareRecordOperations.validateSummaryOfCareRecordMedicationsSection(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * @generated
-   */
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * @generated
+	 */
 	public boolean validateSummaryOfCareRecordSocialHistorySection(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return SummaryOfCareRecordOperations.validateSummaryOfCareRecordSocialHistorySection(this, diagnostics, context);
-  }
+		return SummaryOfCareRecordOperations.validateSummaryOfCareRecordSocialHistorySection(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * @generated
-   */
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * @generated
+	 */
 	public boolean validateSummaryOfCareRecordResultsSection(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return SummaryOfCareRecordOperations.validateSummaryOfCareRecordResultsSection(this, diagnostics, context);
-  }
+		return SummaryOfCareRecordOperations.validateSummaryOfCareRecordResultsSection(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * @generated
-   */
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * @generated
+	 */
 	public boolean validateSummaryOfCareRecordVitalSignsSection(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return SummaryOfCareRecordOperations.validateSummaryOfCareRecordVitalSignsSection(this, diagnostics, context);
-  }
+		return SummaryOfCareRecordOperations.validateSummaryOfCareRecordVitalSignsSection(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * @generated
-   */
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * @generated
+	 */
 	public boolean validateSummaryOfCareRecordProceduresSection(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return SummaryOfCareRecordOperations.validateSummaryOfCareRecordProceduresSection(this, diagnostics, context);
-  }
+		return SummaryOfCareRecordOperations.validateSummaryOfCareRecordProceduresSection(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * @generated
-   */
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * @generated
+	 */
 	public boolean validateSummaryOfCareRecordSocialHistorySectionTemplateId(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return SummaryOfCareRecordOperations.validateSummaryOfCareRecordSocialHistorySectionTemplateId(this, diagnostics, context);
-  }
+		return SummaryOfCareRecordOperations.validateSummaryOfCareRecordSocialHistorySectionTemplateId(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * @generated
-   */
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * @generated
+	 */
 	public boolean validateSummaryOfCareRecordMu2consolSocialHistorySectionSmokingStatusObservation(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return SummaryOfCareRecordOperations.validateSummaryOfCareRecordMu2consolSocialHistorySectionSmokingStatusObservation(this, diagnostics, context);
-  }
+		return SummaryOfCareRecordOperations.validateSummaryOfCareRecordMu2consolSocialHistorySectionSmokingStatusObservation(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * @generated
-   */
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * @generated
+	 */
 	public boolean validateSummaryOfCareRecordMu2consolPlanOfCareSectionCarePlanningForPlanOfCare(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return SummaryOfCareRecordOperations.validateSummaryOfCareRecordMu2consolPlanOfCareSectionCarePlanningForPlanOfCare(this, diagnostics, context);
-  }
+		return SummaryOfCareRecordOperations.validateSummaryOfCareRecordMu2consolPlanOfCareSectionCarePlanningForPlanOfCare(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * @generated
-   */
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * @generated
+	 */
 	public boolean validateSummaryOfCareRecordMu2consolPlanOfCareSectionPlanOfCareActivityObservation(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return SummaryOfCareRecordOperations.validateSummaryOfCareRecordMu2consolPlanOfCareSectionPlanOfCareActivityObservation(this, diagnostics, context);
-  }
+		return SummaryOfCareRecordOperations.validateSummaryOfCareRecordMu2consolPlanOfCareSectionPlanOfCareActivityObservation(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * @generated
-   */
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * @generated
+	 */
 	public boolean validateSummaryOfCareRecordPlanOfCareSectionTemplateId(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return SummaryOfCareRecordOperations.validateSummaryOfCareRecordPlanOfCareSectionTemplateId(this, diagnostics, context);
-  }
+		return SummaryOfCareRecordOperations.validateSummaryOfCareRecordPlanOfCareSectionTemplateId(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * @generated
-   */
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * @generated
+	 */
 	public boolean validateSummaryOfCareRecordAssessmentAndPlanSectionTemplateId(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return SummaryOfCareRecordOperations.validateSummaryOfCareRecordAssessmentAndPlanSectionTemplateId(this, diagnostics, context);
-  }
+		return SummaryOfCareRecordOperations.validateSummaryOfCareRecordAssessmentAndPlanSectionTemplateId(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * @generated
-   */
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * @generated
+	 */
 	public boolean validateSummaryOfCareRecordAssessmentSectionTemplateId(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return SummaryOfCareRecordOperations.validateSummaryOfCareRecordAssessmentSectionTemplateId(this, diagnostics, context);
-  }
+		return SummaryOfCareRecordOperations.validateSummaryOfCareRecordAssessmentSectionTemplateId(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * @generated
-   */
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * @generated
+	 */
 	public boolean validateSummaryOfCareRecordMu2consolAssessmentSectionProblemObservation(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return SummaryOfCareRecordOperations.validateSummaryOfCareRecordMu2consolAssessmentSectionProblemObservation(this, diagnostics, context);
-  }
+		return SummaryOfCareRecordOperations.validateSummaryOfCareRecordMu2consolAssessmentSectionProblemObservation(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * @generated
-   */
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * @generated
+	 */
 	public FunctionalStatusSection retrieveFunctionalStatusSection() {
-    return SummaryOfCareRecordOperations.retrieveFunctionalStatusSection(this);
-  }
+		return SummaryOfCareRecordOperations.retrieveFunctionalStatusSection(this);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public HospitalDischargeDiagnosisSection retrieveHospitalDischargeDiagnosisSection() {
-    return SummaryOfCareRecordOperations.retrieveHospitalDischargeDiagnosisSection(this);
-  }
+		return SummaryOfCareRecordOperations.retrieveHospitalDischargeDiagnosisSection(this);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public PostoperativeDiagnosisSection retrievePostoperativeDiagnosisSection() {
-    return SummaryOfCareRecordOperations.retrievePostoperativeDiagnosisSection(this);
-  }
+		return SummaryOfCareRecordOperations.retrievePostoperativeDiagnosisSection(this);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public PostprocedureDiagnosisSection retrievePostprocedureDiagnosisSection() {
-    return SummaryOfCareRecordOperations.retrievePostprocedureDiagnosisSection(this);
-  }
+		return SummaryOfCareRecordOperations.retrievePostprocedureDiagnosisSection(this);
+	}
 
 	/**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * @generated
-   */
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * @generated
+	 */
 	public EncountersSection getEncountersSection() {
-    return SummaryOfCareRecordOperations.getEncountersSection(this);
-  }
+		return SummaryOfCareRecordOperations.getEncountersSection(this);
+	}
 
 	/**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * @generated
-   */
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * @generated
+	 */
 	public PlanOfCareSection getPlanOfCareSection() {
-    return SummaryOfCareRecordOperations.getPlanOfCareSection(this);
-  }
+		return SummaryOfCareRecordOperations.getPlanOfCareSection(this);
+	}
 
 	/**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * @generated
-   */
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * @generated
+	 */
 	public AssessmentAndPlanSection getAssessmentAndPlanSection() {
-    return SummaryOfCareRecordOperations.getAssessmentAndPlanSection(this);
-  }
+		return SummaryOfCareRecordOperations.getAssessmentAndPlanSection(this);
+	}
 
 	/**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * @generated
-   */
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * @generated
+	 */
 	public AssessmentSection getAssessmentSection() {
-    return SummaryOfCareRecordOperations.getAssessmentSection(this);
-  }
+		return SummaryOfCareRecordOperations.getAssessmentSection(this);
+	}
 
 	/**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * @generated
-   */
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * @generated
+	 */
 	public PostoperativeDiagnosisSection getPostoperativeDiagnosisSection() {
-    return SummaryOfCareRecordOperations.getPostoperativeDiagnosisSection(this);
-  }
+		return SummaryOfCareRecordOperations.getPostoperativeDiagnosisSection(this);
+	}
 
 	/**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * @generated
-   */
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * @generated
+	 */
 	public ProblemSection getProblemSection() {
-    return SummaryOfCareRecordOperations.getProblemSection(this);
-  }
+		return SummaryOfCareRecordOperations.getProblemSection(this);
+	}
 
 	/**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * @generated
-   */
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * @generated
+	 */
 	public AllergiesSection getAllergiesSection() {
-    return SummaryOfCareRecordOperations.getAllergiesSection(this);
-  }
+		return SummaryOfCareRecordOperations.getAllergiesSection(this);
+	}
 
 	/**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * @generated
-   */
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * @generated
+	 */
 	public HistoryOfPastIllnessSection getHistoryOfPastIllnessSection() {
-    return SummaryOfCareRecordOperations.getHistoryOfPastIllnessSection(this);
-  }
+		return SummaryOfCareRecordOperations.getHistoryOfPastIllnessSection(this);
+	}
 
 	/**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * @generated
-   */
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * @generated
+	 */
 	public PreoperativeDiagnosisSection getPreoperativeDiagnosisSection() {
-    return SummaryOfCareRecordOperations.getPreoperativeDiagnosisSection(this);
-  }
+		return SummaryOfCareRecordOperations.getPreoperativeDiagnosisSection(this);
+	}
 
 	/**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * @generated
-   */
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * @generated
+	 */
 	public ImmunizationsSection getImmunizationsSection() {
-    return SummaryOfCareRecordOperations.getImmunizationsSection(this);
-  }
+		return SummaryOfCareRecordOperations.getImmunizationsSection(this);
+	}
 
 	/**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * @generated
-   */
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * @generated
+	 */
 	public MedicationsSection getMedicationsSection() {
-    return SummaryOfCareRecordOperations.getMedicationsSection(this);
-  }
+		return SummaryOfCareRecordOperations.getMedicationsSection(this);
+	}
 
 	/**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * @generated
-   */
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * @generated
+	 */
 	public SocialHistorySection getSocialHistorySection() {
-    return SummaryOfCareRecordOperations.getSocialHistorySection(this);
-  }
+		return SummaryOfCareRecordOperations.getSocialHistorySection(this);
+	}
 
 	/**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * @generated
-   */
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * @generated
+	 */
 	public ResultsSection getResultsSection() {
-    return SummaryOfCareRecordOperations.getResultsSection(this);
-  }
+		return SummaryOfCareRecordOperations.getResultsSection(this);
+	}
 
 	/**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * @generated
-   */
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * @generated
+	 */
 	public VitalSignsSection getVitalSignsSection() {
-    return SummaryOfCareRecordOperations.getVitalSignsSection(this);
-  }
+		return SummaryOfCareRecordOperations.getVitalSignsSection(this);
+	}
 
 	/**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * @generated
-   */
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * @generated
+	 */
 	public ProceduresSection getProceduresSection() {
-    return SummaryOfCareRecordOperations.getProceduresSection(this);
-  }
+		return SummaryOfCareRecordOperations.getProceduresSection(this);
+	}
 
 	/**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * @generated
-   */
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * @generated
+	 */
 	public PostprocedureDiagnosisSection getPostprocedureDiagnosisSection() {
-    return SummaryOfCareRecordOperations.getPostprocedureDiagnosisSection(this);
-  }
+		return SummaryOfCareRecordOperations.getPostprocedureDiagnosisSection(this);
+	}
 
 	/**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * @generated
-   */
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * @generated
+	 */
 	public FunctionalStatusSection getFunctionalStatusSection() {
-    return SummaryOfCareRecordOperations.getFunctionalStatusSection(this);
-  }
+		return SummaryOfCareRecordOperations.getFunctionalStatusSection(this);
+	}
 
 	/**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * @generated
-   */
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public SummaryOfCareRecord init() {
-      return Initializer.Util.init(this);
-  }
+	    return Initializer.Util.init(this);
+	}
 
 	/**
      * <!-- begin-user-doc --> <!-- end-user-doc -->

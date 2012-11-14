@@ -35,168 +35,168 @@ import org.openhealthtools.mdht.uml.cda.mu2consol.operations.VDTInpatientSummary
 public class VDTInpatientSummaryImpl extends ViewDownloadTransmitSummaryImpl
 		implements VDTInpatientSummary {
 	/**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * @generated
-   */
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * @generated
+	 */
 	protected VDTInpatientSummaryImpl() {
-    super();
-  }
+		super();
+	}
 
 	/**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * @generated
-   */
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
-    return Mu2consolPackage.Literals.VDT_INPATIENT_SUMMARY;
-  }
+		return Mu2consolPackage.Literals.VDT_INPATIENT_SUMMARY;
+	}
 
 	/**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * @generated
-   */
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * @generated
+	 */
 	public boolean validateVDTInpatientSummaryEffectiveTime(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return VDTInpatientSummaryOperations.validateVDTInpatientSummaryEffectiveTime(this, diagnostics, context);
-  }
+		return VDTInpatientSummaryOperations.validateVDTInpatientSummaryEffectiveTime(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * @generated
-   */
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * @generated
+	 */
 	public boolean validateVDTInpatientSummaryLocation(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return VDTInpatientSummaryOperations.validateVDTInpatientSummaryLocation(this, diagnostics, context);
-  }
+		return VDTInpatientSummaryOperations.validateVDTInpatientSummaryLocation(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * @generated
-   */
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * @generated
+	 */
 	public boolean validateVDTInpatientSummaryChiefComplaintOrReasonForVisit(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return VDTInpatientSummaryOperations.validateVDTInpatientSummaryChiefComplaintOrReasonForVisit(this, diagnostics, context);
-  }
+		return VDTInpatientSummaryOperations.validateVDTInpatientSummaryChiefComplaintOrReasonForVisit(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * @generated
-   */
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * @generated
+	 */
 	public boolean validateVDTInpatientSummaryHospitalAdmissionDiagnosisEntry(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return VDTInpatientSummaryOperations.validateVDTInpatientSummaryHospitalAdmissionDiagnosisEntry(this, diagnostics, context);
-  }
+		return VDTInpatientSummaryOperations.validateVDTInpatientSummaryHospitalAdmissionDiagnosisEntry(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validateVDTInpatientSummaryPreoperativeDiagnosisEntry(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return VDTInpatientSummaryOperations.validateVDTInpatientSummaryPreoperativeDiagnosisEntry(this, diagnostics, context);
-  }
+		return VDTInpatientSummaryOperations.validateVDTInpatientSummaryPreoperativeDiagnosisEntry(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * @generated
-   */
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * @generated
+	 */
 	public boolean validateVDTInpatientSummaryHospitalDischargeInstructionsSection(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return VDTInpatientSummaryOperations.validateVDTInpatientSummaryHospitalDischargeInstructionsSection(this, diagnostics, context);
-  }
+		return VDTInpatientSummaryOperations.validateVDTInpatientSummaryHospitalDischargeInstructionsSection(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * @generated
-   */
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * @generated
+	 */
 	public boolean validateVDTInpatientSummaryHospitalAdmissionDiagnosisSection(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return VDTInpatientSummaryOperations.validateVDTInpatientSummaryHospitalAdmissionDiagnosisSection(this, diagnostics, context);
-  }
+		return VDTInpatientSummaryOperations.validateVDTInpatientSummaryHospitalAdmissionDiagnosisSection(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * @generated
-   */
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * @generated
+	 */
 	public boolean validateVDTInpatientSummaryHospitalDischargeMedicationsSection(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return VDTInpatientSummaryOperations.validateVDTInpatientSummaryHospitalDischargeMedicationsSection(this, diagnostics, context);
-  }
+		return VDTInpatientSummaryOperations.validateVDTInpatientSummaryHospitalDischargeMedicationsSection(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * @generated
-   */
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * @generated
+	 */
 	public HospitalDischargeInstructionsSection getHospitalDischargeInstructionsSection() {
-    return VDTInpatientSummaryOperations.getHospitalDischargeInstructionsSection(this);
-  }
+		return VDTInpatientSummaryOperations.getHospitalDischargeInstructionsSection(this);
+	}
 
 	/**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * @generated
-   */
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * @generated
+	 */
 	public HospitalAdmissionDiagnosisSection getHospitalAdmissionDiagnosisSection() {
-    return VDTInpatientSummaryOperations.getHospitalAdmissionDiagnosisSection(this);
-  }
+		return VDTInpatientSummaryOperations.getHospitalAdmissionDiagnosisSection(this);
+	}
 
 	/**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * @generated
-   */
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * @generated
+	 */
 	public ChiefComplaintSection getChiefComplaintSection() {
-    return VDTInpatientSummaryOperations.getChiefComplaintSection(this);
-  }
+		return VDTInpatientSummaryOperations.getChiefComplaintSection(this);
+	}
 
 	/**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * @generated
-   */
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * @generated
+	 */
 	public ReasonForVisitSection getReasonForVisitSection() {
-    return VDTInpatientSummaryOperations.getReasonForVisitSection(this);
-  }
+		return VDTInpatientSummaryOperations.getReasonForVisitSection(this);
+	}
 
 	/**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * @generated
-   */
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * @generated
+	 */
 	public ChiefComplaintAndReasonForVisitSection getChiefComplaintAndReasonForVisitSection() {
-    return VDTInpatientSummaryOperations.getChiefComplaintAndReasonForVisitSection(this);
-  }
+		return VDTInpatientSummaryOperations.getChiefComplaintAndReasonForVisitSection(this);
+	}
 
 	/**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * @generated
-   */
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * @generated
+	 */
 	public HospitalDischargeMedicationsSection getHospitalDischargeMedicationsSection() {
-    return VDTInpatientSummaryOperations.getHospitalDischargeMedicationsSection(this);
-  }
+		return VDTInpatientSummaryOperations.getHospitalDischargeMedicationsSection(this);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public PreoperativeDiagnosisSection getPreoperativeDiagnosisSection() {
-    return VDTInpatientSummaryOperations.getPreoperativeDiagnosisSection(this);
-  }
+		return VDTInpatientSummaryOperations.getPreoperativeDiagnosisSection(this);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public HospitalAdmissionMedicationsSectionEntriesOptional getHospitalAdmissionMedicationsSectionEntriesOptional() {
-    return VDTInpatientSummaryOperations.getHospitalAdmissionMedicationsSectionEntriesOptional(this);
-  }
+		return VDTInpatientSummaryOperations.getHospitalAdmissionMedicationsSectionEntriesOptional(this);
+	}
 
 	/**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * @generated
-   */
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public VDTInpatientSummary init() {
-      return Initializer.Util.init(this);
-  }
+	    return Initializer.Util.init(this);
+	}
 
 	/**
      * <!-- begin-user-doc --> <!-- end-user-doc -->

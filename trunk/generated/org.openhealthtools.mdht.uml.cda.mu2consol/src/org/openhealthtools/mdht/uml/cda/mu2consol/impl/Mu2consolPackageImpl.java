@@ -40,173 +40,191 @@ import org.openhealthtools.mdht.uml.cda.mu2consol.util.Mu2consolValidator;
 import org.openhealthtools.mdht.uml.cda.util.AnnotationBasedInitializer;
 
 /**
- * <!-- begin-user-doc --> An implementation of the model <b>Package</b>. <!--
- * end-user-doc -->
+ * <!-- begin-user-doc -->
+ * An implementation of the model <b>Package</b>.
+ * <!-- end-user-doc -->
  * @generated
  */
-public class Mu2consolPackageImpl extends EPackageImpl implements
-		Mu2consolPackage {
-	/**
-     * <!-- begin-user-doc --> <!-- end-user-doc -->
+public class Mu2consolPackageImpl extends EPackageImpl implements Mu2consolPackage {
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
      * @generated
      */
-	private EClass generalHeaderConstraintsEClass = null;
+    private EClass generalHeaderConstraintsEClass = null;
 
-	/**
-     * <!-- begin-user-doc --> <!-- end-user-doc -->
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
      * @generated
      */
-	private EClass summaryOfCareRecordEClass = null;
+    private EClass summaryOfCareRecordEClass = null;
 
-	/**
-     * <!-- begin-user-doc --> <!-- end-user-doc -->
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
      * @generated
      */
-	private EClass encountersSectionEClass = null;
+    private EClass encountersSectionEClass = null;
 
-	/**
-     * <!-- begin-user-doc --> <!-- end-user-doc -->
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
      * @generated
      */
-	private EClass encounterActivitiesEClass = null;
+    private EClass encounterActivitiesEClass = null;
 
-	/**
-     * <!-- begin-user-doc --> <!-- end-user-doc -->
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
      * @generated
      */
-	private EClass planOfCareSectionEClass = null;
+    private EClass planOfCareSectionEClass = null;
 
-	/**
-     * <!-- begin-user-doc --> <!-- end-user-doc -->
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
      * @generated
      */
-	private EClass assessmentAndPlanSectionEClass = null;
+    private EClass assessmentAndPlanSectionEClass = null;
 
-	/**
-     * <!-- begin-user-doc --> <!-- end-user-doc -->
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
      * @generated
      */
-	private EClass clinicalOfficeVisitSummaryEClass = null;
+    private EClass assessmentSectionEClass = null;
 
-	/**
-     * <!-- begin-user-doc --> <!-- end-user-doc -->
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
      * @generated
      */
-	private EClass transitionOfCareAmbulatorySummaryEClass = null;
+    private EClass socialHistorySectionEClass = null;
 
-	/**
-     * <!-- begin-user-doc --> <!-- end-user-doc -->
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
      * @generated
      */
-	private EClass transitionOfCareInpatientSummaryEClass = null;
+    private EClass smokingStatusObservationEClass = null;
 
-	/**
-     * <!-- begin-user-doc --> <!-- end-user-doc -->
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
      * @generated
      */
-	private EClass viewDownloadTransmitSummaryEClass = null;
+    private EClass resultsSectionEClass = null;
 
-	/**
-     * <!-- begin-user-doc --> <!-- end-user-doc -->
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
      * @generated
      */
-	private EClass vdtInpatientSummaryEClass = null;
+    private EClass resultOrganizerEClass = null;
 
-	/**
-     * <!-- begin-user-doc --> <!-- end-user-doc -->
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
      * @generated
      */
-	private EClass vdtAmbulatorySummaryEClass = null;
+    private EClass resultObservationEClass = null;
 
-	/**
-     * <!-- begin-user-doc --> <!-- end-user-doc -->
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
      * @generated
      */
-	private EClass resultObservationEClass = null;
+    private EClass proceduresSectionEClass = null;
 
-	/**
-     * <!-- begin-user-doc --> <!-- end-user-doc -->
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
      * @generated
      */
-	private EClass proceduresSectionEClass = null;
+    private EClass procedureActivityProcedureEClass = null;
 
-	/**
-     * <!-- begin-user-doc --> <!-- end-user-doc -->
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
      * @generated
      */
-	private EClass procedureActivityProcedureEClass = null;
+    private EClass clinicalOfficeVisitSummaryEClass = null;
 
-	/**
-     * <!-- begin-user-doc --> <!-- end-user-doc -->
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
      * @generated
      */
-	private EClass resultOrganizerEClass = null;
+    private EClass transitionOfCareAmbulatorySummaryEClass = null;
 
-	/**
-     * <!-- begin-user-doc --> <!-- end-user-doc -->
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
      * @generated
      */
-	private EClass resultsSectionEClass = null;
+    private EClass transitionOfCareInpatientSummaryEClass = null;
 
-	/**
-     * <!-- begin-user-doc --> <!-- end-user-doc -->
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
      * @generated
      */
-	private EClass assessmentSectionEClass = null;
+    private EClass viewDownloadTransmitSummaryEClass = null;
 
-	/**
-     * <!-- begin-user-doc --> <!-- end-user-doc -->
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
      * @generated
      */
-	private EClass socialHistorySectionEClass = null;
+    private EClass vdtInpatientSummaryEClass = null;
 
-	/**
-     * <!-- begin-user-doc --> <!-- end-user-doc -->
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
      * @generated
      */
-	private EClass smokingStatusObservationEClass = null;
+    private EClass vdtAmbulatorySummaryEClass = null;
 
-	/**
-	 * Creates an instance of the model <b>Package</b>, registered with
-	 * {@link org.eclipse.emf.ecore.EPackage.Registry EPackage.Registry} by the
-	 * package package URI value.
-	 * <p>
-	 * Note: the correct way to create the package is via the static factory
-	 * method {@link #init init()}, which also performs initialization of the
-	 * package, or returns the registered package, if one already exists. <!--
-	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
-	 * @see org.eclipse.emf.ecore.EPackage.Registry
-	 * @see org.openhealthtools.mdht.uml.cda.mu2consol.Mu2consolPackage#eNS_URI
-	 * @see #init()
-	 * @generated
-	 */
-	private Mu2consolPackageImpl() {
+    /**
+     * Creates an instance of the model <b>Package</b>, registered with
+     * {@link org.eclipse.emf.ecore.EPackage.Registry EPackage.Registry} by the package
+     * package URI value.
+     * <p>Note: the correct way to create the package is via the static
+     * factory method {@link #init init()}, which also performs
+     * initialization of the package, or returns the registered package,
+     * if one already exists.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @see org.eclipse.emf.ecore.EPackage.Registry
+     * @see org.openhealthtools.mdht.uml.cda.mu2consol.Mu2consolPackage#eNS_URI
+     * @see #init()
+     * @generated
+     */
+    private Mu2consolPackageImpl() {
         super(eNS_URI, Mu2consolFactory.eINSTANCE);
     }
 
-	/**
-     * <!-- begin-user-doc --> <!-- end-user-doc -->
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
      * @generated
      */
-	private static boolean isInited = false;
+    private static boolean isInited = false;
 
-	/**
-	 * Creates, registers, and initializes the <b>Package</b> for this model,
-	 * and for any others upon which it depends.
-	 * 
-	 * <p>
-	 * This method is used to initialize {@link Mu2consolPackage#eINSTANCE} when
-	 * that field is accessed. Clients should not invoke it directly. Instead,
-	 * they should simply access that field to obtain the package. <!--
-	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
-	 * @see #eNS_URI
-	 * @see #createPackageContents()
-	 * @see #initializePackageContents()
-	 * @generated
-	 */
-	public static Mu2consolPackage init() {
+    /**
+     * Creates, registers, and initializes the <b>Package</b> for this model, and for any others upon which it depends.
+     * 
+     * <p>This method is used to initialize {@link Mu2consolPackage#eINSTANCE} when that field is accessed.
+     * Clients should not invoke it directly. Instead, they should simply access that field to obtain the package.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @see #eNS_URI
+     * @see #createPackageContents()
+     * @see #initializePackageContents()
+     * @generated
+     */
+    public static Mu2consolPackage init() {
         if (isInited) return (Mu2consolPackage)EPackage.Registry.INSTANCE.getEPackage(Mu2consolPackage.eNS_URI);
 
         // Obtain or create and register package
@@ -226,10 +244,8 @@ public class Mu2consolPackageImpl extends EPackageImpl implements
         // Register package validator
         EValidator.Registry.INSTANCE.put
             (theMu2consolPackage, 
-             new EValidator.Descriptor()
-             {
-                 public EValidator getEValidator()
-                 {
+             new EValidator.Descriptor() {
+                 public EValidator getEValidator() {
                      return Mu2consolValidator.INSTANCE;
                  }
              });
@@ -247,188 +263,210 @@ public class Mu2consolPackageImpl extends EPackageImpl implements
         return theMu2consolPackage;
     }
 
-	/**
-     * <!-- begin-user-doc --> <!-- end-user-doc -->
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
      * @generated
      */
-	public EClass getGeneralHeaderConstraints() {
+    public EClass getGeneralHeaderConstraints() {
         return generalHeaderConstraintsEClass;
     }
 
-	/**
-     * <!-- begin-user-doc --> <!-- end-user-doc -->
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
      * @generated
      */
-	public EClass getSummaryOfCareRecord() {
+    public EClass getSummaryOfCareRecord() {
         return summaryOfCareRecordEClass;
     }
 
-	/**
-     * <!-- begin-user-doc --> <!-- end-user-doc -->
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
      * @generated
      */
-	public EClass getEncountersSection() {
+    public EClass getEncountersSection() {
         return encountersSectionEClass;
     }
 
-	/**
-     * <!-- begin-user-doc --> <!-- end-user-doc -->
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
      * @generated
      */
-	public EClass getEncounterActivities() {
+    public EClass getEncounterActivities() {
         return encounterActivitiesEClass;
     }
 
-	/**
-     * <!-- begin-user-doc --> <!-- end-user-doc -->
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
      * @generated
      */
-	public EClass getPlanOfCareSection() {
+    public EClass getPlanOfCareSection() {
         return planOfCareSectionEClass;
     }
 
-	/**
-     * <!-- begin-user-doc --> <!-- end-user-doc -->
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
      * @generated
      */
-	public EClass getAssessmentAndPlanSection() {
+    public EClass getAssessmentAndPlanSection() {
         return assessmentAndPlanSectionEClass;
     }
 
-	/**
-     * <!-- begin-user-doc --> <!-- end-user-doc -->
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
      * @generated
      */
-	public EClass getClinicalOfficeVisitSummary() {
-        return clinicalOfficeVisitSummaryEClass;
-    }
-
-	/**
-     * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * @generated
-     */
-	public EClass getTransitionOfCareAmbulatorySummary() {
-        return transitionOfCareAmbulatorySummaryEClass;
-    }
-
-	/**
-     * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * @generated
-     */
-	public EClass getTransitionOfCareInpatientSummary() {
-        return transitionOfCareInpatientSummaryEClass;
-    }
-
-	/**
-     * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * @generated
-     */
-	public EClass getViewDownloadTransmitSummary() {
-        return viewDownloadTransmitSummaryEClass;
-    }
-
-	/**
-     * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * @generated
-     */
-	public EClass getVDTInpatientSummary() {
-        return vdtInpatientSummaryEClass;
-    }
-
-	/**
-     * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * @generated
-     */
-	public EClass getVDTAmbulatorySummary() {
-        return vdtAmbulatorySummaryEClass;
-    }
-
-	/**
-     * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * @generated
-     */
-	public EClass getResultObservation() {
-        return resultObservationEClass;
-    }
-
-	/**
-     * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * @generated
-     */
-	public EClass getProceduresSection() {
-        return proceduresSectionEClass;
-    }
-
-	/**
-     * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * @generated
-     */
-	public EClass getProcedureActivityProcedure() {
-        return procedureActivityProcedureEClass;
-    }
-
-	/**
-     * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * @generated
-     */
-	public EClass getResultOrganizer() {
-        return resultOrganizerEClass;
-    }
-
-	/**
-     * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * @generated
-     */
-	public EClass getResultsSection() {
-        return resultsSectionEClass;
-    }
-
-	/**
-     * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * @generated
-     */
-	public EClass getAssessmentSection() {
+    public EClass getAssessmentSection() {
         return assessmentSectionEClass;
     }
 
-	/**
-     * <!-- begin-user-doc --> <!-- end-user-doc -->
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
      * @generated
      */
-	public EClass getSocialHistorySection() {
+    public EClass getSocialHistorySection() {
         return socialHistorySectionEClass;
     }
 
-	/**
-     * <!-- begin-user-doc --> <!-- end-user-doc -->
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
      * @generated
      */
-	public EClass getSmokingStatusObservation() {
+    public EClass getSmokingStatusObservation() {
         return smokingStatusObservationEClass;
     }
 
-	/**
-     * <!-- begin-user-doc --> <!-- end-user-doc -->
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
      * @generated
      */
-	public Mu2consolFactory getMu2consolFactory() {
+    public EClass getResultsSection() {
+        return resultsSectionEClass;
+    }
+
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public EClass getResultOrganizer() {
+        return resultOrganizerEClass;
+    }
+
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public EClass getResultObservation() {
+        return resultObservationEClass;
+    }
+
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public EClass getProceduresSection() {
+        return proceduresSectionEClass;
+    }
+
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public EClass getProcedureActivityProcedure() {
+        return procedureActivityProcedureEClass;
+    }
+
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public EClass getClinicalOfficeVisitSummary() {
+        return clinicalOfficeVisitSummaryEClass;
+    }
+
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public EClass getTransitionOfCareAmbulatorySummary() {
+        return transitionOfCareAmbulatorySummaryEClass;
+    }
+
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public EClass getTransitionOfCareInpatientSummary() {
+        return transitionOfCareInpatientSummaryEClass;
+    }
+
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public EClass getViewDownloadTransmitSummary() {
+        return viewDownloadTransmitSummaryEClass;
+    }
+
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public EClass getVDTInpatientSummary() {
+        return vdtInpatientSummaryEClass;
+    }
+
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public EClass getVDTAmbulatorySummary() {
+        return vdtAmbulatorySummaryEClass;
+    }
+
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public Mu2consolFactory getMu2consolFactory() {
         return (Mu2consolFactory)getEFactoryInstance();
     }
 
-	/**
-     * <!-- begin-user-doc --> <!-- end-user-doc -->
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
      * @generated
      */
-	private boolean isCreated = false;
+    private boolean isCreated = false;
 
-	/**
+    /**
      * Creates the meta-model objects for the package.  This method is
      * guarded to have no affect on any invocation but its first.
      * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+     * <!-- end-user-doc -->
      * @generated
      */
-	public void createPackageContents() {
+    public void createPackageContents() {
         if (isCreated) return;
         isCreated = true;
 
@@ -474,20 +512,21 @@ public class Mu2consolPackageImpl extends EPackageImpl implements
         vdtAmbulatorySummaryEClass = createEClass(VDT_AMBULATORY_SUMMARY);
     }
 
-	/**
-     * <!-- begin-user-doc --> <!-- end-user-doc -->
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
      * @generated
      */
-	private boolean isInitialized = false;
+    private boolean isInitialized = false;
 
-	/**
-	 * Complete the initialization of the package and its meta-model. This
-	 * method is guarded to have no affect on any invocation but its first. <!--
-	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
-	 * @generated
-	 */
-	public void initializePackageContents() {
+    /**
+     * Complete the initialization of the package and its meta-model.  This
+     * method is guarded to have no affect on any invocation but its first.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public void initializePackageContents() {
         if (isInitialized) return;
         isInitialized = true;
 
@@ -1643,37 +1682,34 @@ public class Mu2consolPackageImpl extends EPackageImpl implements
         createDuplicatesAnnotations();
     }
 
-	/**
+    /**
      * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml</b>.
      * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+     * <!-- end-user-doc -->
      * @generated
      */
-	protected void createUmlAnnotations() {
+    protected void createUmlAnnotations() {
         String source = "http://www.openhealthtools.org/mdht/uml";     
         addAnnotation
           (this, 
            source, 
-           new String[] 
-           {
+           new String[] {
              "initializers", "org.openhealthtools.mdht.uml.cda.mu2consol"
            });                                                                                                                                                                                                                                                                                                                                                                                                                                 
     }
 
-	/**
-	 * Initializes the annotations for
-	 * <b>http://www.openhealthtools.org/mdht/uml/cda/annotation</b>. <!--
-	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
-	 * @generated
-	 */
-	protected void createAnnotationAnnotations() {
+    /**
+     * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation</b>.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    protected void createAnnotationAnnotations() {
         String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation";      
         addAnnotation
           (generalHeaderConstraintsEClass, 
            source, 
-           new String[] 
-           {
+           new String[] {
              "constraints.validation.error", "Mu2consolGeneralHeaderConstraintsTemplateId Mu2consolGeneralHeaderConstraintsRecordTarget Mu2consolGeneralHeaderConstraintsDocumentationOf GeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationLanguageCodeP GeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationLanguageCode GeneralHeaderConstraintsRecordTargetPatientRolePatientEthnicGroupCode GeneralHeaderConstraintsRecordTargetPatientRolePatientEthnicGroupCodeP GeneralHeaderConstraintsRecordTargetPatientRolePatientRaceCode GeneralHeaderConstraintsRecordTargetPatientRolePatientRaceCodeP GeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunication GeneralHeaderConstraintsRecordTargetPatientRolePatient GeneralHeaderConstraintsRecordTargetPatientRole GeneralHeaderConstraintsDocumentationOfServiceEventPerformer1AssignedEntityAssignedPerson GeneralHeaderConstraintsDocumentationOfServiceEventPerformer1AssignedEntity GeneralHeaderConstraintsDocumentationOfServiceEventPerformer GeneralHeaderConstraintsDocumentationOfServiceEvent GeneralHeaderConstraintsComponent1EncompassingEncounterEncounterParticipant GeneralHeaderConstraintsComponent1EncompassingEncounter",
              "templateId.root", "2.16.840.1.113883.10.20.22.1.1",
              "constraints.validation.query", "GeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationLanguageCodeP GeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationLanguageCode GeneralHeaderConstraintsRecordTargetPatientRolePatientEthnicGroupCode GeneralHeaderConstraintsRecordTargetPatientRolePatientEthnicGroupCodeP GeneralHeaderConstraintsRecordTargetPatientRolePatientRaceCode GeneralHeaderConstraintsRecordTargetPatientRolePatientRaceCodeP GeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunication GeneralHeaderConstraintsRecordTargetPatientRolePatient GeneralHeaderConstraintsRecordTargetPatientRole GeneralHeaderConstraintsDocumentationOfServiceEventPerformer1AssignedEntityAssignedPerson GeneralHeaderConstraintsDocumentationOfServiceEventPerformer1AssignedEntity GeneralHeaderConstraintsDocumentationOfServiceEventPerformer GeneralHeaderConstraintsDocumentationOfServiceEvent GeneralHeaderConstraintsComponent1EncompassingEncounterEncounterParticipant GeneralHeaderConstraintsComponent1EncompassingEncounter",
@@ -1682,24 +1718,21 @@ public class Mu2consolPackageImpl extends EPackageImpl implements
         addAnnotation
           (summaryOfCareRecordEClass, 
            source, 
-           new String[] 
-           {
+           new String[] {
              "constraints.validation.error", "SummaryOfCareRecordCarePlanning SummaryOfCareRecordCognitiveStatusEntries SummaryOfCareRecordFunctionalStatusEntries SummaryOfCareRecordPlanOfCareSection SummaryOfCareRecordProblemSection SummaryOfCareRecordAllergiesSection SummaryOfCareRecordImmunizationsSection SummaryOfCareRecordMedicationsSection SummaryOfCareRecordSocialHistorySection SummaryOfCareRecordResultsSection SummaryOfCareRecordVitalSignsSection SummaryOfCareRecordProceduresSection SummaryOfCareRecordSocialHistorySectionTemplateId SummaryOfCareRecordMu2consolSocialHistorySectionSmokingStatusObservation SummaryOfCareRecordMu2consolPlanOfCareSectionCarePlanningForPlanOfCare SummaryOfCareRecordMu2consolPlanOfCareSectionPlanOfCareActivityObservation SummaryOfCareRecordPlanOfCareSectionTemplateId SummaryOfCareRecordAssessmentAndPlanSectionTemplateId SummaryOfCareRecordAssessmentSectionTemplateId SummaryOfCareRecordMu2consolAssessmentSectionProblemObservation",
              "constraints.validation.query", "SummaryOfCareRecordCognitiveStatusEntries SummaryOfCareRecordFunctionalStatusEntries SummaryOfCareRecordSocialHistorySectionTemplateId SummaryOfCareRecordMu2consolSocialHistorySectionSmokingStatusObservation SummaryOfCareRecordMu2consolPlanOfCareSectionCarePlanningForPlanOfCare SummaryOfCareRecordMu2consolPlanOfCareSectionPlanOfCareActivityObservation SummaryOfCareRecordPlanOfCareSectionTemplateId SummaryOfCareRecordAssessmentAndPlanSectionTemplateId SummaryOfCareRecordAssessmentSectionTemplateId SummaryOfCareRecordMu2consolAssessmentSectionProblemObservation"
            });                                                                                      
         addAnnotation
           (encountersSectionEClass, 
            source, 
-           new String[] 
-           {
+           new String[] {
              "constraints.validation.error", "Mu2consolEncountersSectionTemplateId Mu2consolEncountersSectionEncounterActivities",
              "templateId.root", "2.16.840.1.113883.10.20.22.2.22.1"
            });          
         addAnnotation
           (encounterActivitiesEClass, 
            source, 
-           new String[] 
-           {
+           new String[] {
              "constraints.validation.error", "Mu2consolEncounterActivitiesTemplateId",
              "templateId.root", "2.16.840.1.113883.10.20.22.4.49",
              "constraints.validation.warning", "Mu2consolEncounterActivitiesCodeValue"
@@ -1707,40 +1740,35 @@ public class Mu2consolPackageImpl extends EPackageImpl implements
         addAnnotation
           (planOfCareSectionEClass, 
            source, 
-           new String[] 
-           {
+           new String[] {
              "constraints.validation.error", "Mu2consolPlanOfCareSectionPlanOfCareActivityObservation Mu2consolPlanOfCareSectionTemplateId Mu2consolPlanOfCareSectionCarePlanningForPlanOfCare",
              "templateId.root", "2.16.840.1.113883.10.20.22.2.10"
            });               
         addAnnotation
           (assessmentAndPlanSectionEClass, 
            source, 
-           new String[] 
-           {
+           new String[] {
              "constraints.validation.error", "Mu2consolAssessmentAndPlanSectionTemplateId",
              "templateId.root", "2.16.840.1.113883.10.20.22.2.9"
            });          
         addAnnotation
           (assessmentSectionEClass, 
            source, 
-           new String[] 
-           {
+           new String[] {
              "constraints.validation.error", "Mu2consolAssessmentSectionTemplateId Mu2consolAssessmentSectionProblemObservation",
              "templateId.root", "2.16.840.1.113883.10.20.22.2.8"
            });          
         addAnnotation
           (socialHistorySectionEClass, 
            source, 
-           new String[] 
-           {
+           new String[] {
              "constraints.validation.error", "Mu2consolSocialHistorySectionTemplateId Mu2consolSocialHistorySectionSmokingStatusObservation",
              "templateId.root", "2.16.840.1.113883.10.20.22.2.17"
            });          
         addAnnotation
           (smokingStatusObservationEClass, 
            source, 
-           new String[] 
-           {
+           new String[] {
              "constraints.validation.error", "SmokingStatusObservationTemplateId SmokingStatusObservationValue SmokingStatusObservationValueP",
              "templateId.root", "2.16.840.1.113883.10.20.22.4.78",
              "value.codeSystem", "2.16.840.1.113883.6.96",
@@ -1750,32 +1778,28 @@ public class Mu2consolPackageImpl extends EPackageImpl implements
         addAnnotation
           (resultsSectionEClass, 
            source, 
-           new String[] 
-           {
+           new String[] {
              "constraints.validation.error", "Mu2consolResultsSectionTemplateId Mu2consolResultsSectionResultOrganizer",
              "templateId.root", "2.16.840.1.113883.10.20.22.2.3.1"
            });          
         addAnnotation
           (resultOrganizerEClass, 
            source, 
-           new String[] 
-           {
+           new String[] {
              "constraints.validation.error", "Mu2consolResultOrganizerTemplateId Mu2consolResultOrganizerResultObservation",
              "templateId.root", "2.16.840.1.113883.10.20.22.4.1"
            });          
         addAnnotation
           (resultObservationEClass, 
            source, 
-           new String[] 
-           {
+           new String[] {
              "constraints.validation.error", "Mu2consolResultObservationTemplateId Mu2consolResultObservationResultObservationCodeValue Mu2consolResultObservationCode",
              "templateId.root", "2.16.840.1.113883.10.20.22.4.2"
            });            
         addAnnotation
           (proceduresSectionEClass, 
            source, 
-           new String[] 
-           {
+           new String[] {
              "constraints.validation.error", "Mu2consolProceduresSectionTemplateId",
              "templateId.root", "2.16.840.1.113883.10.20.22.2.7.1",
              "constraints.validation.info", "Mu2consolProceduresSectionProcedureActivityProcedure"
@@ -1783,8 +1807,7 @@ public class Mu2consolPackageImpl extends EPackageImpl implements
         addAnnotation
           (procedureActivityProcedureEClass, 
            source, 
-           new String[] 
-           {
+           new String[] {
              "constraints.validation.error", "Mu2consolProcedureActivityProcedureTemplateId Mu2consolProcedureActivityProcedureCode",
              "templateId.root", "2.16.840.1.113883.10.20.22.4.14",
              "constraints.validation.warning", "Mu2consolProcedureActivityProcedureCodeValue"
@@ -1792,107 +1815,95 @@ public class Mu2consolPackageImpl extends EPackageImpl implements
         addAnnotation
           (clinicalOfficeVisitSummaryEClass, 
            source, 
-           new String[] 
-           {
+           new String[] {
              "constraints.validation.query", "ClinicalOfficeVisitSummaryResponsibleParty ClinicalOfficeVisitSummaryEffectiveTime ClinicalOfficeVisitSummaryLocation ClinicalOfficeVisitSummaryPlanOfCareActOrEncounter ClinicalOfficeVisitSummaryInstructionsEntry ClinicalOfficeVisitSummaryMedicationsAdministeredEntry ClinicalOfficeVisitSummaryMu2consolPlanOfCareSectionCarePlanningForPlanOfCare ClinicalOfficeVisitSummaryMu2consolPlanOfCareSectionPlanOfCareActivityObservation ClinicalOfficeVisitSummaryPlanOfCareSectionTemplateId ClinicalOfficeVisitSummaryAssessmentAndPlanSectionTemplateId ClinicalOfficeVisitSummarySocialHistorySectionTemplateId ClinicalOfficeVisitSummaryMu2consolSocialHistorySectionSmokingStatusObservation",
              "constraints.validation.error", "ClinicalOfficeVisitSummaryResponsibleParty ClinicalOfficeVisitSummaryReasonForOfficeVisit ClinicalOfficeVisitSummaryCarePlanning ClinicalOfficeVisitSummaryEffectiveTime ClinicalOfficeVisitSummaryLocation ClinicalOfficeVisitSummaryPlanOfCareActOrEncounter ClinicalOfficeVisitSummaryInstructionsEntry ClinicalOfficeVisitSummaryMedicationsAdministeredEntry ClinicalOfficeVisitSummaryProblemSection ClinicalOfficeVisitSummaryMedicationsSection ClinicalOfficeVisitSummaryAllergiesSection ClinicalOfficeVisitSummaryResultsSection ClinicalOfficeVisitSummaryVitalSignsSection ClinicalOfficeVisitSummaryPlanOfCareSection ClinicalOfficeVisitSummaryProceduresSection ClinicalOfficeVisitSummaryImmunizationsSection ClinicalOfficeVisitSummaryMedicationsAdministeredSection ClinicalOfficeVisitSummaryInstructionsSection ClinicalOfficeVisitSummarySocialHistorySection ClinicalOfficeVisitSummaryMu2consolPlanOfCareSectionCarePlanningForPlanOfCare ClinicalOfficeVisitSummaryMu2consolPlanOfCareSectionPlanOfCareActivityObservation ClinicalOfficeVisitSummaryPlanOfCareSectionTemplateId ClinicalOfficeVisitSummaryAssessmentAndPlanSectionTemplateId ClinicalOfficeVisitSummarySocialHistorySectionTemplateId ClinicalOfficeVisitSummaryMu2consolSocialHistorySectionSmokingStatusObservation"
            });                                                                                                  
         addAnnotation
           (transitionOfCareAmbulatorySummaryEClass, 
            source, 
-           new String[] 
-           {
+           new String[] {
              "constraints.validation.query", "TransitionOfCareAmbulatorySummaryResponsibleParty",
              "constraints.validation.error", "TransitionOfCareAmbulatorySummaryResponsibleParty TransitionOfCareAmbulatorySummaryAmbulatoryEncounterDiagnoses TransitionOfCareAmbulatorySummaryReasonForReferralSection"
            });               
         addAnnotation
           (transitionOfCareInpatientSummaryEClass, 
            source, 
-           new String[] 
-           {
+           new String[] {
              "constraints.validation.error", "TransitionOfCareInpatientSummaryInpatientEncounterDiagnoses TransitionOfCareInpatientSummaryHospitalAdmissionDiagnosisEntry TransitionOfCareInpatientSummaryHospitalDischargeDiagnosesEntry TransitionOfCareInpatientSummaryPostoperativeDiagnosisEntry TransitionOfCareInpatientSummaryPostprocedureDiagnosisEntry TransitionOfCareInpatientSummaryHospitalDischargeInstructionsSection TransitionOfCareInpatientSummaryHospitalDischargeMedicationsSection",
              "constraints.validation.query", "TransitionOfCareInpatientSummaryHospitalAdmissionDiagnosisEntry TransitionOfCareInpatientSummaryHospitalDischargeDiagnosesEntry TransitionOfCareInpatientSummaryPostoperativeDiagnosisEntry TransitionOfCareInpatientSummaryPostprocedureDiagnosisEntry"
            });                               
         addAnnotation
           (viewDownloadTransmitSummaryEClass, 
            source, 
-           new String[] 
-           {
+           new String[] {
              "constraints.validation.error", "ViewDownloadTransmitSummaryCarePlanFields ViewDownloadTransmitSummaryAllergiesSection ViewDownloadTransmitSummaryMedicationsSection ViewDownloadTransmitSummaryProblemSection ViewDownloadTransmitSummaryProceduresSection ViewDownloadTransmitSummaryVitalSignsSection ViewDownloadTransmitSummaryResultsSection ViewDownloadTransmitSummaryPlanOfCareSection ViewDownloadTransmitSummarySocialHistorySection ViewDownloadTransmitSummaryAssessmentAndPlanSectionTemplateId ViewDownloadTransmitSummaryMu2consolPlanOfCareSectionCarePlanningForPlanOfCare ViewDownloadTransmitSummaryMu2consolPlanOfCareSectionPlanOfCareActivityObservation ViewDownloadTransmitSummaryPlanOfCareSectionTemplateId ViewDownloadTransmitSummarySocialHistorySectionTemplateId ViewDownloadTransmitSummaryMu2consolSocialHistorySectionSmokingStatusObservation",
              "constraints.validation.query", "ViewDownloadTransmitSummaryAssessmentAndPlanSectionTemplateId ViewDownloadTransmitSummaryMu2consolPlanOfCareSectionCarePlanningForPlanOfCare ViewDownloadTransmitSummaryMu2consolPlanOfCareSectionPlanOfCareActivityObservation ViewDownloadTransmitSummaryPlanOfCareSectionTemplateId ViewDownloadTransmitSummarySocialHistorySectionTemplateId ViewDownloadTransmitSummaryMu2consolSocialHistorySectionSmokingStatusObservation"
            });                                                            
         addAnnotation
           (vdtInpatientSummaryEClass, 
            source, 
-           new String[] 
-           {
+           new String[] {
              "constraints.validation.query", "VDTInpatientSummaryEffectiveTime VDTInpatientSummaryLocation VDTInpatientSummaryHospitalAdmissionDiagnosisEntry VDTInpatientSummaryPreoperativeDiagnosisEntry",
              "constraints.validation.error", "VDTInpatientSummaryEffectiveTime VDTInpatientSummaryLocation VDTInpatientSummaryChiefComplaintOrReasonForVisit VDTInpatientSummaryHospitalAdmissionDiagnosisEntry VDTInpatientSummaryPreoperativeDiagnosisEntry VDTInpatientSummaryHospitalDischargeInstructionsSection VDTInpatientSummaryHospitalAdmissionDiagnosisSection VDTInpatientSummaryHospitalDischargeMedicationsSection"
            });                                     
         addAnnotation
           (vdtAmbulatorySummaryEClass, 
            source, 
-           new String[] 
-           {
+           new String[] {
              "constraints.validation.query", "VDTAmbulatorySummaryResponsibleParty",
              "constraints.validation.error", "VDTAmbulatorySummaryResponsibleParty"
            });   
     }
 
-	/**
-	 * Initializes the annotations for
-	 * <b>http://www.openhealthtools.org/mdht/uml
-	 * /cda/annotation/mu2consolGeneralHeaderConstraintsRecordTarget</b>. <!--
-	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
-	 * @generated
-	 */
-	protected void createMu2consolGeneralHeaderConstraintsRecordTargetAnnotations() {
+    /**
+     * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/mu2consolGeneralHeaderConstraintsRecordTarget</b>.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    protected void createMu2consolGeneralHeaderConstraintsRecordTargetAnnotations() {
         String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/mu2consolGeneralHeaderConstraintsRecordTarget";       
         addAnnotation
           (generalHeaderConstraintsEClass, 
            source, 
-           new String[] 
-           {
+           new String[] {
              "constraints.validation.error", "RecordTargetPatientRole RecordTargetPatientRolePatientLanguageCommunicationLanguageCodeP RecordTargetPatientRolePatientLanguageCommunicationLanguageCode RecordTargetPatientRolePatientEthnicGroupCode RecordTargetPatientRolePatientEthnicGroupCodeP RecordTargetPatientRolePatientRaceCode RecordTargetPatientRolePatientRaceCodeP RecordTargetPatientRolePatientLanguageCommunication RecordTargetPatientRolePatient",
              "constraints.validation.query", "RecordTargetPatientRolePatientLanguageCommunicationLanguageCodeP RecordTargetPatientRolePatientLanguageCommunicationLanguageCode RecordTargetPatientRolePatientEthnicGroupCode RecordTargetPatientRolePatientEthnicGroupCodeP RecordTargetPatientRolePatientRaceCode RecordTargetPatientRolePatientRaceCodeP RecordTargetPatientRolePatientLanguageCommunication RecordTargetPatientRolePatient",
              "constraints.validation.dependOn.RecordTargetPatientRolePatientLanguageCommunicationLanguageCode", "RecordTargetPatientRolePatientLanguageCommunicationLanguageCodeP"
            });                                                                                                                                                                                                                                                                                                                                                                                                                               
     }
 
-	/**
+    /**
      * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/mu2consolGeneralHeaderConstraintsRecordTargetPatientRole</b>.
-     * <!-- begin-user-doc --> <!-- end-user-doc -->
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
      * @generated
      */
-	protected void createMu2consolGeneralHeaderConstraintsRecordTargetPatientRoleAnnotations() {
+    protected void createMu2consolGeneralHeaderConstraintsRecordTargetPatientRoleAnnotations() {
         String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/mu2consolGeneralHeaderConstraintsRecordTargetPatientRole";        
         addAnnotation
           (generalHeaderConstraintsEClass, 
            source, 
-           new String[] 
-           {
+           new String[] {
              "constraints.validation.error", "PatientRolePatient PatientRolePatientLanguageCommunicationLanguageCodeP PatientRolePatientLanguageCommunicationLanguageCode PatientRolePatientEthnicGroupCode PatientRolePatientEthnicGroupCodeP PatientRolePatientRaceCode PatientRolePatientRaceCodeP PatientRolePatientLanguageCommunication",
              "constraints.validation.query", "PatientRolePatientLanguageCommunicationLanguageCodeP PatientRolePatientLanguageCommunicationLanguageCode PatientRolePatientEthnicGroupCode PatientRolePatientEthnicGroupCodeP PatientRolePatientRaceCode PatientRolePatientRaceCodeP PatientRolePatientLanguageCommunication",
              "constraints.validation.dependOn.PatientRolePatientLanguageCommunicationLanguageCode", "PatientRolePatientLanguageCommunicationLanguageCodeP"
            });                                                                                                                                                                                                                                                                                                                                                                                                                              
     }
 
-	/**
-	 * Initializes the annotations for
-	 * <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/
-	 * mu2consolGeneralHeaderConstraintsRecordTargetPatientRolePatient</b>. <!--
-	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
-	 * @generated
-	 */
-	protected void createMu2consolGeneralHeaderConstraintsRecordTargetPatientRolePatientAnnotations() {
+    /**
+     * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/mu2consolGeneralHeaderConstraintsRecordTargetPatientRolePatient</b>.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    protected void createMu2consolGeneralHeaderConstraintsRecordTargetPatientRolePatientAnnotations() {
         String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/mu2consolGeneralHeaderConstraintsRecordTargetPatientRolePatient";         
         addAnnotation
           (generalHeaderConstraintsEClass, 
            source, 
-           new String[] 
-           {
+           new String[] {
              "ethnicGroupCode.codeSystem", "2.16.840.1.113883.6.238",
              "ethnicGroupCode.codeSystemName", "Race and Ethnicity - CDC",
              "constraints.validation.error", "PatientEthnicGroupCode PatientEthnicGroupCodeP PatientRaceCode PatientRaceCodeP PatientLanguageCommunication PatientLanguageCommunicationLanguageCodeP PatientLanguageCommunicationLanguageCode",
@@ -1903,215 +1914,196 @@ public class Mu2consolPackageImpl extends EPackageImpl implements
            });                                                                                                                                                                                                                                                                                                                                                                                                                             
     }
 
-	/**
+    /**
      * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/mu2consolGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunication</b>.
-     * <!-- begin-user-doc --> <!-- end-user-doc -->
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
      * @generated
      */
-	protected void createMu2consolGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationAnnotations() {
+    protected void createMu2consolGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationAnnotations() {
         String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/mu2consolGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunication";          
         addAnnotation
           (generalHeaderConstraintsEClass, 
            source, 
-           new String[] 
-           {
+           new String[] {
              "constraints.validation.error", "LanguageCommunicationLanguageCode LanguageCommunicationLanguageCodeP",
              "constraints.validation.dependOn.LanguageCommunicationLanguageCode", "LanguageCommunicationLanguageCodeP"
            });                                                                                                                                                                                                                                                                                                                                                                                                                            
     }
 
-	/**
+    /**
      * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/mu2consolGeneralHeaderConstraintsDocumentationOf</b>.
-     * <!-- begin-user-doc --> <!-- end-user-doc -->
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
      * @generated
      */
-	protected void createMu2consolGeneralHeaderConstraintsDocumentationOfAnnotations() {
+    protected void createMu2consolGeneralHeaderConstraintsDocumentationOfAnnotations() {
         String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/mu2consolGeneralHeaderConstraintsDocumentationOf";           
         addAnnotation
           (generalHeaderConstraintsEClass, 
            source, 
-           new String[] 
-           {
+           new String[] {
              "constraints.validation.error", "DocumentationOfServiceEvent DocumentationOfServiceEventPerformer1AssignedEntityAssignedPerson DocumentationOfServiceEventPerformer1AssignedEntity DocumentationOfServiceEventPerformer",
              "constraints.validation.query", "DocumentationOfServiceEventPerformer1AssignedEntityAssignedPerson DocumentationOfServiceEventPerformer1AssignedEntity DocumentationOfServiceEventPerformer"
            });                                                                                                                                                                                                                                                                                                                                                                                                                           
     }
 
-	/**
-	 * Initializes the annotations for
-	 * <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/
-	 * mu2consolGeneralHeaderConstraintsDocumentationOfServiceEvent</b>. <!--
-	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
-	 * @generated
-	 */
-	protected void createMu2consolGeneralHeaderConstraintsDocumentationOfServiceEventAnnotations() {
+    /**
+     * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/mu2consolGeneralHeaderConstraintsDocumentationOfServiceEvent</b>.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    protected void createMu2consolGeneralHeaderConstraintsDocumentationOfServiceEventAnnotations() {
         String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/mu2consolGeneralHeaderConstraintsDocumentationOfServiceEvent";            
         addAnnotation
           (generalHeaderConstraintsEClass, 
            source, 
-           new String[] 
-           {
+           new String[] {
              "constraints.validation.error", "ServiceEventPerformer ServiceEventPerformer1AssignedEntityAssignedPerson ServiceEventPerformer1AssignedEntity",
              "constraints.validation.query", "ServiceEventPerformer1AssignedEntityAssignedPerson ServiceEventPerformer1AssignedEntity"
            });                                                                                                                                                                                                                                                                                                                                                                                                                          
     }
 
-	/**
+    /**
      * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/mu2consolGeneralHeaderConstraintsDocumentationOfServiceEventPerformer1</b>.
-     * <!-- begin-user-doc --> <!-- end-user-doc -->
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
      * @generated
      */
-	protected void createMu2consolGeneralHeaderConstraintsDocumentationOfServiceEventPerformer1Annotations() {
+    protected void createMu2consolGeneralHeaderConstraintsDocumentationOfServiceEventPerformer1Annotations() {
         String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/mu2consolGeneralHeaderConstraintsDocumentationOfServiceEventPerformer1";             
         addAnnotation
           (generalHeaderConstraintsEClass, 
            source, 
-           new String[] 
-           {
+           new String[] {
              "constraints.validation.error", "Performer1AssignedEntity Performer1AssignedEntityAssignedPerson",
              "constraints.validation.query", "Performer1AssignedEntityAssignedPerson"
            });                                                                                                                                                                                                                                                                                                                                                                                                                         
     }
 
-	/**
+    /**
      * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/mu2consolGeneralHeaderConstraintsDocumentationOfServiceEventPerformer1AssignedEntity</b>.
-     * <!-- begin-user-doc --> <!-- end-user-doc -->
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
      * @generated
      */
-	protected void createMu2consolGeneralHeaderConstraintsDocumentationOfServiceEventPerformer1AssignedEntityAnnotations() {
+    protected void createMu2consolGeneralHeaderConstraintsDocumentationOfServiceEventPerformer1AssignedEntityAnnotations() {
         String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/mu2consolGeneralHeaderConstraintsDocumentationOfServiceEventPerformer1AssignedEntity";              
         addAnnotation
           (generalHeaderConstraintsEClass, 
            source, 
-           new String[] 
-           {
+           new String[] {
              "constraints.validation.error", "AssignedEntityAssignedPerson"
            });                                                                                                                                                                                                                                                                                                                                                                                                                        
     }
 
-	/**
-	 * Initializes the annotations for
-	 * <b>http://www.openhealthtools.org/mdht/uml
-	 * /cda/annotation/mu2consolGeneralHeaderConstraintsComponent1</b>. <!--
-	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
-	 * @generated
-	 */
-	protected void createMu2consolGeneralHeaderConstraintsComponent1Annotations() {
+    /**
+     * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/mu2consolGeneralHeaderConstraintsComponent1</b>.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    protected void createMu2consolGeneralHeaderConstraintsComponent1Annotations() {
         String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/mu2consolGeneralHeaderConstraintsComponent1";               
         addAnnotation
           (generalHeaderConstraintsEClass, 
            source, 
-           new String[] 
-           {
+           new String[] {
              "constraints.validation.error", "Component1EncompassingEncounter Component1EncompassingEncounterEncounterParticipant",
              "constraints.validation.query", "Component1EncompassingEncounterEncounterParticipant"
            });                                                                                                                                                                                                                                                                                                                                                                                                                       
     }
 
-	/**
+    /**
      * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/mu2consolGeneralHeaderConstraintsComponent1EncompassingEncounter</b>.
-     * <!-- begin-user-doc --> <!-- end-user-doc -->
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
      * @generated
      */
-	protected void createMu2consolGeneralHeaderConstraintsComponent1EncompassingEncounterAnnotations() {
+    protected void createMu2consolGeneralHeaderConstraintsComponent1EncompassingEncounterAnnotations() {
         String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/mu2consolGeneralHeaderConstraintsComponent1EncompassingEncounter";                
         addAnnotation
           (generalHeaderConstraintsEClass, 
            source, 
-           new String[] 
-           {
+           new String[] {
              "constraints.validation.error", "EncompassingEncounterEncounterParticipant"
            });                                                                                                                                                                                                                                                                                                                                                                                                                      
     }
 
-	/**
+    /**
      * Initializes the annotations for <b>duplicates</b>.
-     * <!-- begin-user-doc
-	 * --> <!-- end-user-doc -->
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
      * @generated
      */
-	protected void createDuplicatesAnnotations() {
+    protected void createDuplicatesAnnotations() {
         String source = "duplicates";                 
         addAnnotation
           (generalHeaderConstraintsEClass, 
            source, 
-           new String[] 
-           {
+           new String[] {
            });                                                                                                        
         addAnnotation
           (encountersSectionEClass, 
            source, 
-           new String[] 
-           {
+           new String[] {
            });          
         addAnnotation
           (encounterActivitiesEClass, 
            source, 
-           new String[] 
-           {
+           new String[] {
            });         
         addAnnotation
           (planOfCareSectionEClass, 
            source, 
-           new String[] 
-           {
+           new String[] {
            });               
         addAnnotation
           (assessmentAndPlanSectionEClass, 
            source, 
-           new String[] 
-           {
+           new String[] {
            });          
         addAnnotation
           (assessmentSectionEClass, 
            source, 
-           new String[] 
-           {
+           new String[] {
            });          
         addAnnotation
           (socialHistorySectionEClass, 
            source, 
-           new String[] 
-           {
+           new String[] {
            });          
         addAnnotation
           (smokingStatusObservationEClass, 
            source, 
-           new String[] 
-           {
+           new String[] {
            });            
         addAnnotation
           (resultsSectionEClass, 
            source, 
-           new String[] 
-           {
+           new String[] {
            });          
         addAnnotation
           (resultOrganizerEClass, 
            source, 
-           new String[] 
-           {
+           new String[] {
            });          
         addAnnotation
           (resultObservationEClass, 
            source, 
-           new String[] 
-           {
+           new String[] {
            });            
         addAnnotation
           (proceduresSectionEClass, 
            source, 
-           new String[] 
-           {
+           new String[] {
            });          
         addAnnotation
           (procedureActivityProcedureEClass, 
            source, 
-           new String[] 
-           {
+           new String[] {
            });                                                                                                                                                                                                                                       
     }
 
-} // Mu2consolPackageImpl
+} //Mu2consolPackageImpl
