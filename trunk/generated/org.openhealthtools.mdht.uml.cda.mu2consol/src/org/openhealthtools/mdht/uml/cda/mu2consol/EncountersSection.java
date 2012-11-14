@@ -6,15 +6,11 @@
  */
 package org.openhealthtools.mdht.uml.cda.mu2consol;
 
-import java.lang.Iterable;
-
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
-
 import org.eclipse.emf.ecore.EObject;
-
 import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 
 /**
@@ -60,9 +56,9 @@ public interface EncountersSection extends
 	EList<EncounterActivities> getMu2consolEncounterActivitiess();
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
 	public EncountersSection init();
 
 	/**

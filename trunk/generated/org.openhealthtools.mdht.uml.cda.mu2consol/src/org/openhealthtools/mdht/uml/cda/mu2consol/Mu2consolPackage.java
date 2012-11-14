@@ -8,7 +8,6 @@ package org.openhealthtools.mdht.uml.cda.mu2consol;
 
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EPackage;
-
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 
 /**
