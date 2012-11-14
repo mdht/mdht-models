@@ -14,23 +14,15 @@ import org.eclipse.emf.common.util.BasicEList;
 import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
-
 import org.eclipse.emf.ecore.EClassifier;
-
 import org.eclipse.ocl.ParserException;
-
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
-
 import org.eclipse.ocl.expressions.OCLExpression;
-
-//import org.openhealthtools.mdht.uml.cda.consol.SmokingStatusObservation;
-
 import org.openhealthtools.mdht.uml.cda.mu2consol.Mu2consolPackage;
 import org.openhealthtools.mdht.uml.cda.mu2consol.Mu2consolPlugin;
 import org.openhealthtools.mdht.uml.cda.mu2consol.SmokingStatusObservation;
 import org.openhealthtools.mdht.uml.cda.mu2consol.SocialHistorySection;
-
 import org.openhealthtools.mdht.uml.cda.mu2consol.util.Mu2consolValidator;
 
 /**
@@ -53,29 +45,29 @@ public class SocialHistorySectionOperations
 		extends
 		org.openhealthtools.mdht.uml.cda.consol.operations.SocialHistorySectionOperations {
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
 	protected SocialHistorySectionOperations() {
-		super();
-	}
+    super();
+  }
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateMu2consolSocialHistorySectionSmokingStatusObservation(SocialHistorySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Mu2consol Social History Section Smoking Status Observation</em>}' operation.
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @see #validateMu2consolSocialHistorySectionSmokingStatusObservation(SocialHistorySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+   * The cached OCL expression body for the '{@link #validateMu2consolSocialHistorySectionSmokingStatusObservation(SocialHistorySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Mu2consol Social History Section Smoking Status Observation</em>}' operation.
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @see #validateMu2consolSocialHistorySectionSmokingStatusObservation(SocialHistorySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
 	protected static final String VALIDATE_MU2CONSOL_SOCIAL_HISTORY_SECTION_SMOKING_STATUS_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->exists(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(mu2consol::SmokingStatusObservation))";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validateMu2consolSocialHistorySectionSmokingStatusObservation(SocialHistorySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Mu2consol Social History Section Smoking Status Observation</em>}' invariant operation.
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @see #validateMu2consolSocialHistorySectionSmokingStatusObservation(SocialHistorySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+   * The cached OCL invariant for the '{@link #validateMu2consolSocialHistorySectionSmokingStatusObservation(SocialHistorySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Mu2consol Social History Section Smoking Status Observation</em>}' invariant operation.
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @see #validateMu2consolSocialHistorySectionSmokingStatusObservation(SocialHistorySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
 
 	protected static Constraint VALIDATE_MU2CONSOL_SOCIAL_HISTORY_SECTION_SMOKING_STATUS_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
@@ -100,31 +92,35 @@ public class SocialHistorySectionOperations
 			SocialHistorySection socialHistorySection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
   	  
-		if (VALIDATE_MU2CONSOL_SOCIAL_HISTORY_SECTION_SMOKING_STATUS_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(Mu2consolPackage.Literals.SOCIAL_HISTORY_SECTION);
-			try {
-				VALIDATE_MU2CONSOL_SOCIAL_HISTORY_SECTION_SMOKING_STATUS_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MU2CONSOL_SOCIAL_HISTORY_SECTION_SMOKING_STATUS_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_MU2CONSOL_SOCIAL_HISTORY_SECTION_SMOKING_STATUS_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(socialHistorySection)) {
-			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 Mu2consolValidator.DIAGNOSTIC_SOURCE,
-						 Mu2consolValidator.SOCIAL_HISTORY_SECTION__MU2CONSOL_SOCIAL_HISTORY_SECTION_SMOKING_STATUS_OBSERVATION,
-						 Mu2consolPlugin.INSTANCE.getString("Mu2consolSocialHistorySectionSmokingStatusObservation"),
-						 new Object [] { socialHistorySection }));
-			}
-			 
-			return false;
-		}
-		return true;
-	}
+    if (VALIDATE_MU2CONSOL_SOCIAL_HISTORY_SECTION_SMOKING_STATUS_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+      OCL.Helper helper = EOCL_ENV.createOCLHelper();
+      helper.setContext(Mu2consolPackage.Literals.SOCIAL_HISTORY_SECTION);
+      try
+      {
+        VALIDATE_MU2CONSOL_SOCIAL_HISTORY_SECTION_SMOKING_STATUS_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MU2CONSOL_SOCIAL_HISTORY_SECTION_SMOKING_STATUS_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+      }
+      catch (ParserException pe)
+      {
+        throw new UnsupportedOperationException(pe.getLocalizedMessage());
+      }
+    }
+    if (!EOCL_ENV.createQuery(VALIDATE_MU2CONSOL_SOCIAL_HISTORY_SECTION_SMOKING_STATUS_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(socialHistorySection))
+    {
+      if (diagnostics != null)
+      {
+        diagnostics.add
+          (new BasicDiagnostic
+            (Diagnostic.ERROR,
+             Mu2consolValidator.DIAGNOSTIC_SOURCE,
+             Mu2consolValidator.SOCIAL_HISTORY_SECTION__MU2CONSOL_SOCIAL_HISTORY_SECTION_SMOKING_STATUS_OBSERVATION,
+             Mu2consolPlugin.INSTANCE.getString("Mu2consolSocialHistorySectionSmokingStatusObservation"),
+             new Object [] { socialHistorySection }));
+      }
+       
+      return false;
+    }
+    return true;
+  }
 
 	/**
 	 * The cached OCL expression body for the '
@@ -139,12 +135,12 @@ public class SocialHistorySectionOperations
 	protected static final String GET_MU2CONSOL_SMOKING_STATUS_OBSERVATIONS__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(mu2consol::SmokingStatusObservation)).oclAsType(mu2consol::SmokingStatusObservation)";
 
 	/**
-	 * The cached OCL query for the '{@link #getMu2consolSmokingStatusObservations(SocialHistorySection) <em>Get Mu2consol Smoking Status Observations</em>}' query operation.
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @see #getMu2consolSmokingStatusObservations(SocialHistorySection)
-	 * @generated
-	 * @ordered
-	 */
+   * The cached OCL query for the '{@link #getMu2consolSmokingStatusObservations(SocialHistorySection) <em>Get Mu2consol Smoking Status Observations</em>}' query operation.
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @see #getMu2consolSmokingStatusObservations(SocialHistorySection)
+   * @generated
+   * @ordered
+   */
 	protected static OCLExpression<EClassifier> GET_MU2CONSOL_SMOKING_STATUS_OBSERVATIONS__EOCL_QRY;
 
 	/**
@@ -162,21 +158,24 @@ public class SocialHistorySectionOperations
 
 	public static EList<SmokingStatusObservation> getMu2consolSmokingStatusObservations(
 			SocialHistorySection socialHistorySection) {
-		if (GET_MU2CONSOL_SMOKING_STATUS_OBSERVATIONS__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(Mu2consolPackage.Literals.SOCIAL_HISTORY_SECTION, Mu2consolPackage.Literals.SOCIAL_HISTORY_SECTION.getEAllOperations().get(69));
-			try {
-				GET_MU2CONSOL_SMOKING_STATUS_OBSERVATIONS__EOCL_QRY = helper.createQuery(GET_MU2CONSOL_SMOKING_STATUS_OBSERVATIONS__EOCL_EXP);
-			}
-			catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_MU2CONSOL_SMOKING_STATUS_OBSERVATIONS__EOCL_QRY);
-		@SuppressWarnings("unchecked")
-		Collection<SmokingStatusObservation> result = (Collection<SmokingStatusObservation>) query.evaluate(socialHistorySection);
-		return new BasicEList.UnmodifiableEList<SmokingStatusObservation>(result.size(), result.toArray());
-	}
+    if (GET_MU2CONSOL_SMOKING_STATUS_OBSERVATIONS__EOCL_QRY == null)
+    {
+      OCL.Helper helper = EOCL_ENV.createOCLHelper();
+      helper.setOperationContext(Mu2consolPackage.Literals.SOCIAL_HISTORY_SECTION, Mu2consolPackage.Literals.SOCIAL_HISTORY_SECTION.getEAllOperations().get(69));
+      try
+      {
+        GET_MU2CONSOL_SMOKING_STATUS_OBSERVATIONS__EOCL_QRY = helper.createQuery(GET_MU2CONSOL_SMOKING_STATUS_OBSERVATIONS__EOCL_EXP);
+      }
+      catch (ParserException pe)
+      {
+        throw new UnsupportedOperationException(pe.getLocalizedMessage());
+      }
+    }
+    OCL.Query query = EOCL_ENV.createQuery(GET_MU2CONSOL_SMOKING_STATUS_OBSERVATIONS__EOCL_QRY);
+    @SuppressWarnings("unchecked")
+    Collection<SmokingStatusObservation> result = (Collection<SmokingStatusObservation>) query.evaluate(socialHistorySection);
+    return new BasicEList.UnmodifiableEList<SmokingStatusObservation>(result.size(), result.toArray());
+  }
 
 	/**
 	 * The cached OCL expression body for the '
@@ -192,12 +191,12 @@ public class SocialHistorySectionOperations
 	protected static final String VALIDATE_SOCIAL_HISTORY_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.2.17')";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validateSocialHistorySectionTemplateId(SocialHistorySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Social History Section Template Id</em>}' invariant operation.
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @see #validateSocialHistorySectionTemplateId(SocialHistorySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+   * The cached OCL invariant for the '{@link #validateSocialHistorySectionTemplateId(SocialHistorySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Social History Section Template Id</em>}' invariant operation.
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @see #validateSocialHistorySectionTemplateId(SocialHistorySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
 
 	protected static Constraint VALIDATE_SOCIAL_HISTORY_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
@@ -221,30 +220,34 @@ public class SocialHistorySectionOperations
 			SocialHistorySection socialHistorySection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
   	  
-		if (VALIDATE_SOCIAL_HISTORY_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(Mu2consolPackage.Literals.SOCIAL_HISTORY_SECTION);
-			try {
-				VALIDATE_SOCIAL_HISTORY_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SOCIAL_HISTORY_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_SOCIAL_HISTORY_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(socialHistorySection)) {
-			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 Mu2consolValidator.DIAGNOSTIC_SOURCE,
-						 Mu2consolValidator.SOCIAL_HISTORY_SECTION__SOCIAL_HISTORY_SECTION_TEMPLATE_ID,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SocialHistorySectionTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(socialHistorySection, context) }),
-						 new Object [] { socialHistorySection }));
-			}
-			 
-			return false;
-		}
-		return true;
-	}
+    if (VALIDATE_SOCIAL_HISTORY_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+      OCL.Helper helper = EOCL_ENV.createOCLHelper();
+      helper.setContext(Mu2consolPackage.Literals.SOCIAL_HISTORY_SECTION);
+      try
+      {
+        VALIDATE_SOCIAL_HISTORY_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SOCIAL_HISTORY_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+      }
+      catch (ParserException pe)
+      {
+        throw new UnsupportedOperationException(pe.getLocalizedMessage());
+      }
+    }
+    if (!EOCL_ENV.createQuery(VALIDATE_SOCIAL_HISTORY_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(socialHistorySection))
+    {
+      if (diagnostics != null)
+      {
+        diagnostics.add
+          (new BasicDiagnostic
+            (Diagnostic.ERROR,
+             Mu2consolValidator.DIAGNOSTIC_SOURCE,
+             Mu2consolValidator.SOCIAL_HISTORY_SECTION__SOCIAL_HISTORY_SECTION_TEMPLATE_ID,
+             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SocialHistorySectionTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(socialHistorySection, context) }),
+             new Object [] { socialHistorySection }));
+      }
+       
+      return false;
+    }
+    return true;
+  }
 
 } // SocialHistorySectionOperations
