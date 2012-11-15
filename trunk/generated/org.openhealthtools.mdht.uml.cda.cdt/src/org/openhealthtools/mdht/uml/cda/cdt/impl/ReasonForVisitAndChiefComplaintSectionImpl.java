@@ -33,29 +33,29 @@ import org.openhealthtools.mdht.uml.cda.impl.SectionImpl;
 public class ReasonForVisitAndChiefComplaintSectionImpl extends SectionImpl implements
 		ReasonForVisitAndChiefComplaintSection {
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	protected ReasonForVisitAndChiefComplaintSectionImpl() {
 		super();
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	@Override
 	protected EClass eStaticClass() {
 		return CDTPackage.Literals.REASON_FOR_VISIT_AND_CHIEF_COMPLAINT_SECTION;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateReasonForVisitAndChiefComplaintSectionTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ReasonForVisitAndChiefComplaintSectionOperations.validateReasonForVisitAndChiefComplaintSectionTemplateId(
@@ -63,10 +63,10 @@ public class ReasonForVisitAndChiefComplaintSectionImpl extends SectionImpl impl
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateReasonForVisitAndChiefComplaintSectionCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ReasonForVisitAndChiefComplaintSectionOperations.validateReasonForVisitAndChiefComplaintSectionCode(
@@ -74,19 +74,19 @@ public class ReasonForVisitAndChiefComplaintSectionImpl extends SectionImpl impl
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public ReasonForVisitAndChiefComplaintSection init() {
 		return Initializer.Util.init(this);
 	}
 
 	/**
-	   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	   * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	public ReasonForVisitAndChiefComplaintSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
 		Initializer.Util.init(this, initializers);
 		return this;
