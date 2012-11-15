@@ -107,9 +107,9 @@ public interface PlanOfCareSection extends
 	EList<PlanOfCareActivityObservation> getMu2consolPlanOfCareActivityObservations();
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
 	public PlanOfCareSection init();
 
 	/**

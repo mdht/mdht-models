@@ -145,9 +145,9 @@ public interface GeneralHeaderConstraints extends
 	HospitalAdmissionDiagnosisSection retrieveHospitalAdmissionDiagnosisSection();
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
 	public GeneralHeaderConstraints init();
 
 	/**

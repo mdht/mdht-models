@@ -40,30 +40,30 @@ import org.openhealthtools.mdht.uml.cda.mu2consol.util.Mu2consolValidator;
 public class VDTAmbulatorySummaryOperations extends
 		ViewDownloadTransmitSummaryOperations {
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
 	protected VDTAmbulatorySummaryOperations() {
-		super();
-	}
+    super();
+  }
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateVDTAmbulatorySummaryResponsibleParty(VDTAmbulatorySummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate VDT Ambulatory Summary Responsible Party</em>}' operation.
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @see #validateVDTAmbulatorySummaryResponsibleParty(VDTAmbulatorySummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+   * The cached OCL expression body for the '{@link #validateVDTAmbulatorySummaryResponsibleParty(VDTAmbulatorySummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate VDT Ambulatory Summary Responsible Party</em>}' operation.
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @see #validateVDTAmbulatorySummaryResponsibleParty(VDTAmbulatorySummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
 	protected static final String VALIDATE_VDT_AMBULATORY_SUMMARY_RESPONSIBLE_PARTY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.componentOf->excluding(null).encompassingEncounter->excluding(null)->reject(responsibleParty->one(responsibleParty : "+
 "cda::ResponsibleParty | not responsibleParty.oclIsUndefined() and responsibleParty.oclIsKindOf(rim::Participation)))";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validateVDTAmbulatorySummaryResponsibleParty(VDTAmbulatorySummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate VDT Ambulatory Summary Responsible Party</em>}' invariant operation.
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @see #validateVDTAmbulatorySummaryResponsibleParty(VDTAmbulatorySummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+   * The cached OCL invariant for the '{@link #validateVDTAmbulatorySummaryResponsibleParty(VDTAmbulatorySummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate VDT Ambulatory Summary Responsible Party</em>}' invariant operation.
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @see #validateVDTAmbulatorySummaryResponsibleParty(VDTAmbulatorySummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
 
 	protected static Query<?, ?, ?> VALIDATE_VDT_AMBULATORY_SUMMARY_RESPONSIBLE_PARTY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
 
@@ -91,36 +91,38 @@ public class VDTAmbulatorySummaryOperations extends
 			VDTAmbulatorySummary vdtAmbulatorySummary,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
   	  
-		
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(Mu2consolPackage.Literals.VDT_AMBULATORY_SUMMARY);
-			try {
-				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_VDT_AMBULATORY_SUMMARY_RESPONSIBLE_PARTY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-				VALIDATE_VDT_AMBULATORY_SUMMARY_RESPONSIBLE_PARTY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
-			}
-			catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		
-		Object oclResult = VALIDATE_VDT_AMBULATORY_SUMMARY_RESPONSIBLE_PARTY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(vdtAmbulatorySummary);		
-		if (oclResult != null && oclResult instanceof Collection) {
-			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
+    
+      OCL.Helper helper = EOCL_ENV.createOCLHelper();
+      helper.setContext(Mu2consolPackage.Literals.VDT_AMBULATORY_SUMMARY);
+      try
+      {
+        OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_VDT_AMBULATORY_SUMMARY_RESPONSIBLE_PARTY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+        VALIDATE_VDT_AMBULATORY_SUMMARY_RESPONSIBLE_PARTY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+      }
+      catch (ParserException pe)
+      {
+        throw new UnsupportedOperationException(pe.getLocalizedMessage());
+      }
+    
+    Object oclResult = VALIDATE_VDT_AMBULATORY_SUMMARY_RESPONSIBLE_PARTY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(vdtAmbulatorySummary);		
+    if (oclResult != null && oclResult instanceof Collection) {
+      Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
   			
-			if (diagnostics != null) {
-				for (EObject eObject : oclResultSet) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 Mu2consolValidator.DIAGNOSTIC_SOURCE,
-						 Mu2consolValidator.VDT_AMBULATORY_SUMMARY__VDT_AMBULATORY_SUMMARY_RESPONSIBLE_PARTY,
-						 Mu2consolPlugin.INSTANCE.getString("VDTAmbulatorySummaryResponsibleParty"),
-						 new Object [] { eObject }));
-				}
-				 
-			}
-			return oclResultSet.isEmpty();
-		}
-		return true;
-	}
+      if (diagnostics != null) {
+        for (EObject eObject : oclResultSet) {
+        diagnostics.add
+          (new BasicDiagnostic
+            (Diagnostic.ERROR,
+             Mu2consolValidator.DIAGNOSTIC_SOURCE,
+             Mu2consolValidator.VDT_AMBULATORY_SUMMARY__VDT_AMBULATORY_SUMMARY_RESPONSIBLE_PARTY,
+             Mu2consolPlugin.INSTANCE.getString("VDTAmbulatorySummaryResponsibleParty"),
+             new Object [] { eObject }));
+        }
+         
+      }
+      return oclResultSet.isEmpty();
+    }
+    return true;
+  }
 
 } // VDTAmbulatorySummaryOperations
