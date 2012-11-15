@@ -32,29 +32,29 @@ import org.openhealthtools.mdht.uml.cda.impl.SectionImpl;
  */
 public class ChiefComplaintSectionProcNoteImpl extends SectionImpl implements ChiefComplaintSectionProcNote {
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	protected ChiefComplaintSectionProcNoteImpl() {
 		super();
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	@Override
 	protected EClass eStaticClass() {
 		return CDTPackage.Literals.CHIEF_COMPLAINT_SECTION_PROC_NOTE;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateChiefComplaintSectionProcNoteTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ChiefComplaintSectionProcNoteOperations.validateChiefComplaintSectionProcNoteTemplateId(
@@ -62,29 +62,29 @@ public class ChiefComplaintSectionProcNoteImpl extends SectionImpl implements Ch
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateChiefComplaintSectionProcNoteCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ChiefComplaintSectionProcNoteOperations.validateChiefComplaintSectionProcNoteCode(
 			this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public ChiefComplaintSectionProcNote init() {
 		return Initializer.Util.init(this);
 	}
 
 	/**
-	   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	   * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	public ChiefComplaintSectionProcNote init(Iterable<? extends Initializer<? extends EObject>> initializers) {
 		Initializer.Util.init(this, initializers);
 		return this;
