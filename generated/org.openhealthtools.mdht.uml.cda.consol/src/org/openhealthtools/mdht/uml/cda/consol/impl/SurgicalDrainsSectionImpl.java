@@ -32,74 +32,74 @@ import org.openhealthtools.mdht.uml.cda.impl.SectionImpl;
  */
 public class SurgicalDrainsSectionImpl extends SectionImpl implements SurgicalDrainsSection {
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	protected SurgicalDrainsSectionImpl() {
 		super();
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	@Override
 	protected EClass eStaticClass() {
 		return ConsolPackage.Literals.SURGICAL_DRAINS_SECTION;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateSurgicalDrainsSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return SurgicalDrainsSectionOperations.validateSurgicalDrainsSectionTemplateId(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateSurgicalDrainsSectionCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return SurgicalDrainsSectionOperations.validateSurgicalDrainsSectionCode(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	* <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateSurgicalDrainsSectionCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return SurgicalDrainsSectionOperations.validateSurgicalDrainsSectionCodeP(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateSurgicalDrainsSectionText(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return SurgicalDrainsSectionOperations.validateSurgicalDrainsSectionText(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateSurgicalDrainsSectionTitle(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return SurgicalDrainsSectionOperations.validateSurgicalDrainsSectionTitle(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public SurgicalDrainsSection init() {
 		return Initializer.Util.init(this);
 	}

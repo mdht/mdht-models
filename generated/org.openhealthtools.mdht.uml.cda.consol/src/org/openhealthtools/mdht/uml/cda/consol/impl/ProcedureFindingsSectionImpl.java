@@ -34,74 +34,74 @@ import org.openhealthtools.mdht.uml.cda.impl.SectionImpl;
  */
 public class ProcedureFindingsSectionImpl extends SectionImpl implements ProcedureFindingsSection {
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	protected ProcedureFindingsSectionImpl() {
 		super();
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	@Override
 	protected EClass eStaticClass() {
 		return ConsolPackage.Literals.PROCEDURE_FINDINGS_SECTION;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateProcedureFindingsSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProcedureFindingsSectionOperations.validateProcedureFindingsSectionTemplateId(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateProcedureFindingsSectionCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProcedureFindingsSectionOperations.validateProcedureFindingsSectionCode(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	* <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateProcedureFindingsSectionCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProcedureFindingsSectionOperations.validateProcedureFindingsSectionCodeP(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateProcedureFindingsSectionText(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProcedureFindingsSectionOperations.validateProcedureFindingsSectionText(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateProcedureFindingsSectionTitle(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProcedureFindingsSectionOperations.validateProcedureFindingsSectionTitle(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateProcedureFindingsSectionProblemObservation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ProcedureFindingsSectionOperations.validateProcedureFindingsSectionProblemObservation(
@@ -109,19 +109,19 @@ public class ProcedureFindingsSectionImpl extends SectionImpl implements Procedu
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public EList<ProblemObservation> getProblemObservations() {
 		return ProcedureFindingsSectionOperations.getProblemObservations(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public ProcedureFindingsSection init() {
 		return Initializer.Util.init(this);
 	}

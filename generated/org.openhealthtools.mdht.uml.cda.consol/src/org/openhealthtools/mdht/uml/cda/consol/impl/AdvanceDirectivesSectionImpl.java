@@ -34,65 +34,65 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.AdvanceDirectivesSecti
 public class AdvanceDirectivesSectionImpl extends AdvanceDirectivesSectionEntriesOptionalImpl implements
 		AdvanceDirectivesSection {
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	protected AdvanceDirectivesSectionImpl() {
 		super();
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	@Override
 	protected EClass eStaticClass() {
 		return ConsolPackage.Literals.ADVANCE_DIRECTIVES_SECTION;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	* <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateAdvanceDirectivesSectionCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return AdvanceDirectivesSectionOperations.validateAdvanceDirectivesSectionCodeP(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateAdvanceDirectivesSectionCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return AdvanceDirectivesSectionOperations.validateAdvanceDirectivesSectionCode(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateAdvanceDirectivesSectionTitle(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return AdvanceDirectivesSectionOperations.validateAdvanceDirectivesSectionTitle(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateAdvanceDirectivesSectionText(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return AdvanceDirectivesSectionOperations.validateAdvanceDirectivesSectionText(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateAdvanceDirectivesSectionAdvanceDirectiveObservation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return AdvanceDirectivesSectionOperations.validateAdvanceDirectivesSectionAdvanceDirectiveObservation(
@@ -100,19 +100,19 @@ public class AdvanceDirectivesSectionImpl extends AdvanceDirectivesSectionEntrie
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public EList<AdvanceDirectiveObservation> getConsolAdvanceDirectiveObservations() {
 		return AdvanceDirectivesSectionOperations.getConsolAdvanceDirectiveObservations(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	@Override
 	public boolean validateAdvanceDirectivesSectionEntriesOptionalTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
@@ -121,10 +121,10 @@ public class AdvanceDirectivesSectionImpl extends AdvanceDirectivesSectionEntrie
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	@Override
 	public AdvanceDirectivesSection init() {
 		return Initializer.Util.init(this);

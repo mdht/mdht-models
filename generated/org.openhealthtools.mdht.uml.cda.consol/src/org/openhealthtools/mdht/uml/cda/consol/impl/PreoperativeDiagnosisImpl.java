@@ -34,65 +34,65 @@ import org.openhealthtools.mdht.uml.cda.impl.ActImpl;
  */
 public class PreoperativeDiagnosisImpl extends ActImpl implements PreoperativeDiagnosis {
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	protected PreoperativeDiagnosisImpl() {
 		super();
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	@Override
 	protected EClass eStaticClass() {
 		return ConsolPackage.Literals.PREOPERATIVE_DIAGNOSIS;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validatePreoperativeDiagnosisTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PreoperativeDiagnosisOperations.validatePreoperativeDiagnosisTemplateId(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validatePreoperativeDiagnosisClassCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PreoperativeDiagnosisOperations.validatePreoperativeDiagnosisClassCode(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validatePreoperativeDiagnosisCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PreoperativeDiagnosisOperations.validatePreoperativeDiagnosisCode(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validatePreoperativeDiagnosisMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PreoperativeDiagnosisOperations.validatePreoperativeDiagnosisMoodCode(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validatePreoperativeDiagnosisProblemObservation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return PreoperativeDiagnosisOperations.validatePreoperativeDiagnosisProblemObservation(
@@ -100,19 +100,19 @@ public class PreoperativeDiagnosisImpl extends ActImpl implements PreoperativeDi
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	* <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public EList<ProblemObservation> getProblemObservations() {
 		return PreoperativeDiagnosisOperations.getProblemObservations(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public PreoperativeDiagnosis init() {
 		return Initializer.Util.init(this);
 	}

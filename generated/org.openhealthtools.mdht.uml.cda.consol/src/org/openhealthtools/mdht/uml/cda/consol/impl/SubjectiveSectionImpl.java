@@ -32,74 +32,74 @@ import org.openhealthtools.mdht.uml.cda.impl.SectionImpl;
  */
 public class SubjectiveSectionImpl extends SectionImpl implements SubjectiveSection {
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	protected SubjectiveSectionImpl() {
 		super();
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	@Override
 	protected EClass eStaticClass() {
 		return ConsolPackage.Literals.SUBJECTIVE_SECTION;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateSubjectiveSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return SubjectiveSectionOperations.validateSubjectiveSectionTemplateId(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateSubjectiveSectionCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return SubjectiveSectionOperations.validateSubjectiveSectionCode(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	* <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateSubjectiveSectionCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return SubjectiveSectionOperations.validateSubjectiveSectionCodeP(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateSubjectiveSectionText(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return SubjectiveSectionOperations.validateSubjectiveSectionText(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateSubjectiveSectionTitle(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return SubjectiveSectionOperations.validateSubjectiveSectionTitle(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public SubjectiveSection init() {
 		return Initializer.Util.init(this);
 	}

@@ -34,111 +34,111 @@ import org.openhealthtools.mdht.uml.cda.impl.OrganizerImpl;
  */
 public class VitalSignsOrganizerImpl extends OrganizerImpl implements VitalSignsOrganizer {
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	protected VitalSignsOrganizerImpl() {
 		super();
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	@Override
 	protected EClass eStaticClass() {
 		return ConsolPackage.Literals.VITAL_SIGNS_ORGANIZER;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateVitalSignsOrganizerTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return VitalSignsOrganizerOperations.validateVitalSignsOrganizerTemplateId(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateVitalSignsOrganizerClassCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return VitalSignsOrganizerOperations.validateVitalSignsOrganizerClassCode(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateVitalSignsOrganizerMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return VitalSignsOrganizerOperations.validateVitalSignsOrganizerMoodCode(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateVitalSignsOrganizerId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return VitalSignsOrganizerOperations.validateVitalSignsOrganizerId(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateVitalSignsOrganizerCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return VitalSignsOrganizerOperations.validateVitalSignsOrganizerCode(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateVitalSignsOrganizerStatusCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return VitalSignsOrganizerOperations.validateVitalSignsOrganizerStatusCode(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateVitalSignsOrganizerEffectiveTime(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return VitalSignsOrganizerOperations.validateVitalSignsOrganizerEffectiveTime(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateVitalSignsOrganizerVitalSignObservation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return VitalSignsOrganizerOperations.validateVitalSignsOrganizerVitalSignObservation(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public EList<VitalSignObservation> getVitalSignObservations() {
 		return VitalSignsOrganizerOperations.getVitalSignObservations(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public VitalSignsOrganizer init() {
 		return Initializer.Util.init(this);
 	}

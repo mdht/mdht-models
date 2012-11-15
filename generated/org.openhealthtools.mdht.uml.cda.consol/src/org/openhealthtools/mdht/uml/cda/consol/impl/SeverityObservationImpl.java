@@ -32,130 +32,130 @@ import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
  */
 public class SeverityObservationImpl extends ObservationImpl implements SeverityObservation {
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	protected SeverityObservationImpl() {
 		super();
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	@Override
 	protected EClass eStaticClass() {
 		return ConsolPackage.Literals.SEVERITY_OBSERVATION;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateSeverityObservationTextReference(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return SeverityObservationOperations.validateSeverityObservationTextReference(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	* <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateSeverityObservationTextReferenceValue(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return SeverityObservationOperations.validateSeverityObservationTextReferenceValue(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateSeverityObservationReferenceValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return SeverityObservationOperations.validateSeverityObservationReferenceValue(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateSeverityObservationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return SeverityObservationOperations.validateSeverityObservationTemplateId(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateSeverityObservationClassCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return SeverityObservationOperations.validateSeverityObservationClassCode(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateSeverityObservationMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return SeverityObservationOperations.validateSeverityObservationMoodCode(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateSeverityObservationCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return SeverityObservationOperations.validateSeverityObservationCode(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateSeverityObservationText(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return SeverityObservationOperations.validateSeverityObservationText(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateSeverityObservationStatusCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return SeverityObservationOperations.validateSeverityObservationStatusCode(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateSeverityObservationValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return SeverityObservationOperations.validateSeverityObservationValue(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateSeverityObservationInterpretationCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return SeverityObservationOperations.validateSeverityObservationInterpretationCode(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public SeverityObservation init() {
 		return Initializer.Util.init(this);
 	}

@@ -33,29 +33,29 @@ import org.openhealthtools.mdht.uml.cda.impl.SupplyImpl;
  */
 public class MedicationSupplyOrderImpl extends SupplyImpl implements MedicationSupplyOrder {
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	protected MedicationSupplyOrderImpl() {
 		super();
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	@Override
 	protected EClass eStaticClass() {
 		return ConsolPackage.Literals.MEDICATION_SUPPLY_ORDER;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateMedicationSupplyOrderInstructionInversionInd(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return MedicationSupplyOrderOperations.validateMedicationSupplyOrderInstructionInversionInd(
@@ -63,10 +63,10 @@ public class MedicationSupplyOrderImpl extends SupplyImpl implements MedicationS
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	* <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateMedicationSupplyOrderEffectiveTimeHigh(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return MedicationSupplyOrderOperations.validateMedicationSupplyOrderEffectiveTimeHigh(
@@ -74,109 +74,109 @@ public class MedicationSupplyOrderImpl extends SupplyImpl implements MedicationS
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateMedicationSupplyOrderTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return MedicationSupplyOrderOperations.validateMedicationSupplyOrderTemplateId(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateMedicationSupplyOrderClassCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return MedicationSupplyOrderOperations.validateMedicationSupplyOrderClassCode(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateMedicationSupplyOrderEffectiveTime(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return MedicationSupplyOrderOperations.validateMedicationSupplyOrderEffectiveTime(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateMedicationSupplyOrderMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return MedicationSupplyOrderOperations.validateMedicationSupplyOrderMoodCode(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateMedicationSupplyOrderQuantity(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return MedicationSupplyOrderOperations.validateMedicationSupplyOrderQuantity(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateMedicationSupplyOrderRepeatNumber(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return MedicationSupplyOrderOperations.validateMedicationSupplyOrderRepeatNumber(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateMedicationSupplyOrderStatusCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return MedicationSupplyOrderOperations.validateMedicationSupplyOrderStatusCode(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateMedicationSupplyOrderId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return MedicationSupplyOrderOperations.validateMedicationSupplyOrderId(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateMedicationSupplyOrderProduct(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return MedicationSupplyOrderOperations.validateMedicationSupplyOrderProduct(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateMedicationSupplyOrderAuthor(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return MedicationSupplyOrderOperations.validateMedicationSupplyOrderAuthor(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateMedicationSupplyOrderInstructions(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return MedicationSupplyOrderOperations.validateMedicationSupplyOrderInstructions(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateMedicationSupplyOrderProductContainsMedicationOrImmunization(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return MedicationSupplyOrderOperations.validateMedicationSupplyOrderProductContainsMedicationOrImmunization(
@@ -184,19 +184,19 @@ public class MedicationSupplyOrderImpl extends SupplyImpl implements MedicationS
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public Instructions getInstructions() {
 		return MedicationSupplyOrderOperations.getInstructions(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public MedicationSupplyOrder init() {
 		return Initializer.Util.init(this);
 	}

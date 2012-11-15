@@ -33,119 +33,119 @@ import org.openhealthtools.mdht.uml.cda.impl.SupplyImpl;
  */
 public class MedicationDispenseImpl extends SupplyImpl implements MedicationDispense {
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	protected MedicationDispenseImpl() {
 		super();
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	@Override
 	protected EClass eStaticClass() {
 		return ConsolPackage.Literals.MEDICATION_DISPENSE;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateMedicationDispenseTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return MedicationDispenseOperations.validateMedicationDispenseTemplateId(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateMedicationDispenseClassCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return MedicationDispenseOperations.validateMedicationDispenseClassCode(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateMedicationDispenseEffectiveTime(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return MedicationDispenseOperations.validateMedicationDispenseEffectiveTime(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateMedicationDispenseId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return MedicationDispenseOperations.validateMedicationDispenseId(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateMedicationDispenseMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return MedicationDispenseOperations.validateMedicationDispenseMoodCode(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateMedicationDispenseRepeatNumber(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return MedicationDispenseOperations.validateMedicationDispenseRepeatNumber(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateMedicationDispenseStatusCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return MedicationDispenseOperations.validateMedicationDispenseStatusCode(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateMedicationDispenseQuantity(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return MedicationDispenseOperations.validateMedicationDispenseQuantity(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateMedicationDispenseProduct(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return MedicationDispenseOperations.validateMedicationDispenseProduct(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	* <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateMedicationDispensePerformer(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return MedicationDispenseOperations.validateMedicationDispensePerformer(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateMedicationDispenseProductContainsMedicationOrImmunization(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return MedicationDispenseOperations.validateMedicationDispenseProductContainsMedicationOrImmunization(
@@ -153,10 +153,10 @@ public class MedicationDispenseImpl extends SupplyImpl implements MedicationDisp
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateMedicationDispensePerformerMedicationDispenseAssignedEntityUSRealmAddressStreet(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return MedicationDispenseOperations.validateMedicationDispensePerformerMedicationDispenseAssignedEntityUSRealmAddressStreet(
@@ -164,10 +164,10 @@ public class MedicationDispenseImpl extends SupplyImpl implements MedicationDisp
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateMedicationDispensePerformerMedicationDispenseAssignedEntityUSRealmAddressCity(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return MedicationDispenseOperations.validateMedicationDispensePerformerMedicationDispenseAssignedEntityUSRealmAddressCity(
@@ -175,10 +175,10 @@ public class MedicationDispenseImpl extends SupplyImpl implements MedicationDisp
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateMedicationDispensePerformerMedicationDispenseAssignedEntityUSRealmAddressCountry(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return MedicationDispenseOperations.validateMedicationDispensePerformerMedicationDispenseAssignedEntityUSRealmAddressCountry(
@@ -186,10 +186,10 @@ public class MedicationDispenseImpl extends SupplyImpl implements MedicationDisp
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateMedicationDispensePerformerMedicationDispenseAssignedEntityUSRealmAddressPostalCode(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return MedicationDispenseOperations.validateMedicationDispensePerformerMedicationDispenseAssignedEntityUSRealmAddressPostalCode(
@@ -197,10 +197,10 @@ public class MedicationDispenseImpl extends SupplyImpl implements MedicationDisp
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateMedicationDispensePerformerMedicationDispenseAssignedEntityUSRealmAddressState(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return MedicationDispenseOperations.validateMedicationDispensePerformerMedicationDispenseAssignedEntityUSRealmAddressState(
@@ -208,10 +208,10 @@ public class MedicationDispenseImpl extends SupplyImpl implements MedicationDisp
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateMedicationDispensePerformerMedicationDispenseAssignedEntityUSRealmAddressStreetAddressLine(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return MedicationDispenseOperations.validateMedicationDispensePerformerMedicationDispenseAssignedEntityUSRealmAddressStreetAddressLine(
@@ -219,10 +219,10 @@ public class MedicationDispenseImpl extends SupplyImpl implements MedicationDisp
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateMedicationDispensePerformerMedicationDispenseAssignedEntityUSRealmAddressUseP(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return MedicationDispenseOperations.validateMedicationDispensePerformerMedicationDispenseAssignedEntityUSRealmAddressUseP(
@@ -230,10 +230,10 @@ public class MedicationDispenseImpl extends SupplyImpl implements MedicationDisp
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateMedicationDispensePerformerMedicationDispenseAssignedEntityUSRealmAddressUse(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return MedicationDispenseOperations.validateMedicationDispensePerformerMedicationDispenseAssignedEntityUSRealmAddressUse(
@@ -241,10 +241,10 @@ public class MedicationDispenseImpl extends SupplyImpl implements MedicationDisp
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	* <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateMedicationDispensePerformerMedicationDispenseAssignedEntityAddr(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return MedicationDispenseOperations.validateMedicationDispensePerformerMedicationDispenseAssignedEntityAddr(
@@ -252,10 +252,10 @@ public class MedicationDispenseImpl extends SupplyImpl implements MedicationDisp
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateMedicationDispensePerformerMedicationDispenseAssignedEntity(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return MedicationDispenseOperations.validateMedicationDispensePerformerMedicationDispenseAssignedEntity(
@@ -263,29 +263,29 @@ public class MedicationDispenseImpl extends SupplyImpl implements MedicationDisp
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateMedicationDispenseMedicationSupplyOrder(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return MedicationDispenseOperations.validateMedicationDispenseMedicationSupplyOrder(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public MedicationSupplyOrder getMedicationSupplyOrder() {
 		return MedicationDispenseOperations.getMedicationSupplyOrder(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public MedicationDispense init() {
 		return Initializer.Util.init(this);
 	}

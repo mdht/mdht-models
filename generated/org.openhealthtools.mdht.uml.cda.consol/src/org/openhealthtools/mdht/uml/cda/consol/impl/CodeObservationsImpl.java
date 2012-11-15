@@ -35,93 +35,93 @@ import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
  */
 public class CodeObservationsImpl extends ObservationImpl implements CodeObservations {
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	protected CodeObservationsImpl() {
 		super();
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	@Override
 	protected EClass eStaticClass() {
 		return ConsolPackage.Literals.CODE_OBSERVATIONS;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateCodeObservationsTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return CodeObservationsOperations.validateCodeObservationsTemplateId(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	* <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateCodeObservationsClassCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return CodeObservationsOperations.validateCodeObservationsClassCode(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateCodeObservationsMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return CodeObservationsOperations.validateCodeObservationsMoodCode(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateCodeObservationsCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return CodeObservationsOperations.validateCodeObservationsCode(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateCodeObservationsEffectiveTime(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return CodeObservationsOperations.validateCodeObservationsEffectiveTime(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateCodeObservationsValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return CodeObservationsOperations.validateCodeObservationsValue(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateCodeObservationsSOPInstanceObservation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return CodeObservationsOperations.validateCodeObservationsSOPInstanceObservation(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateCodeObservationsQuantityMeasurementObservation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return CodeObservationsOperations.validateCodeObservationsQuantityMeasurementObservation(
@@ -129,28 +129,28 @@ public class CodeObservationsImpl extends ObservationImpl implements CodeObserva
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public EList<SOPInstanceObservation> getSOPInstanceObservations() {
 		return CodeObservationsOperations.getSOPInstanceObservations(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public EList<QuantityMeasurementObservation> getQuantityMeasurementObservations() {
 		return CodeObservationsOperations.getQuantityMeasurementObservations(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public CodeObservations init() {
 		return Initializer.Util.init(this);
 	}

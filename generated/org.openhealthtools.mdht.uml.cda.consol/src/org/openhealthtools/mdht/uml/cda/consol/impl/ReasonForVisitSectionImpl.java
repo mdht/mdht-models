@@ -32,74 +32,74 @@ import org.openhealthtools.mdht.uml.cda.impl.SectionImpl;
  */
 public class ReasonForVisitSectionImpl extends SectionImpl implements ReasonForVisitSection {
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	protected ReasonForVisitSectionImpl() {
 		super();
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	@Override
 	protected EClass eStaticClass() {
 		return ConsolPackage.Literals.REASON_FOR_VISIT_SECTION;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateReasonForVisitSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ReasonForVisitSectionOperations.validateReasonForVisitSectionTemplateId(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateReasonForVisitSectionCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ReasonForVisitSectionOperations.validateReasonForVisitSectionCode(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	* <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateReasonForVisitSectionCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ReasonForVisitSectionOperations.validateReasonForVisitSectionCodeP(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateReasonForVisitSectionText(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ReasonForVisitSectionOperations.validateReasonForVisitSectionText(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateReasonForVisitSectionTitle(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ReasonForVisitSectionOperations.validateReasonForVisitSectionTitle(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public ReasonForVisitSection init() {
 		return Initializer.Util.init(this);
 	}

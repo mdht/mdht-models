@@ -32,29 +32,29 @@ import org.openhealthtools.mdht.uml.cda.impl.SectionImpl;
  */
 public class ProcedureEstimatedBloodLossSectionImpl extends SectionImpl implements ProcedureEstimatedBloodLossSection {
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	protected ProcedureEstimatedBloodLossSectionImpl() {
 		super();
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	@Override
 	protected EClass eStaticClass() {
 		return ConsolPackage.Literals.PROCEDURE_ESTIMATED_BLOOD_LOSS_SECTION;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateProcedureEstimatedBloodLossSectionTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ProcedureEstimatedBloodLossSectionOperations.validateProcedureEstimatedBloodLossSectionTemplateId(
@@ -62,10 +62,10 @@ public class ProcedureEstimatedBloodLossSectionImpl extends SectionImpl implemen
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateProcedureEstimatedBloodLossSectionCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ProcedureEstimatedBloodLossSectionOperations.validateProcedureEstimatedBloodLossSectionCode(
@@ -73,10 +73,10 @@ public class ProcedureEstimatedBloodLossSectionImpl extends SectionImpl implemen
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	* <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateProcedureEstimatedBloodLossSectionCodeP(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ProcedureEstimatedBloodLossSectionOperations.validateProcedureEstimatedBloodLossSectionCodeP(
@@ -84,10 +84,10 @@ public class ProcedureEstimatedBloodLossSectionImpl extends SectionImpl implemen
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateProcedureEstimatedBloodLossSectionText(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ProcedureEstimatedBloodLossSectionOperations.validateProcedureEstimatedBloodLossSectionText(
@@ -95,10 +95,10 @@ public class ProcedureEstimatedBloodLossSectionImpl extends SectionImpl implemen
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateProcedureEstimatedBloodLossSectionTitle(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ProcedureEstimatedBloodLossSectionOperations.validateProcedureEstimatedBloodLossSectionTitle(
@@ -106,10 +106,10 @@ public class ProcedureEstimatedBloodLossSectionImpl extends SectionImpl implemen
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public ProcedureEstimatedBloodLossSection init() {
 		return Initializer.Util.init(this);
 	}

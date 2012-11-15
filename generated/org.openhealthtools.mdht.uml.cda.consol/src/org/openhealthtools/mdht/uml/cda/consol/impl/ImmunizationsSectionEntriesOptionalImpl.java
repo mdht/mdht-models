@@ -34,29 +34,29 @@ import org.openhealthtools.mdht.uml.cda.impl.SectionImpl;
  */
 public class ImmunizationsSectionEntriesOptionalImpl extends SectionImpl implements ImmunizationsSectionEntriesOptional {
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	protected ImmunizationsSectionEntriesOptionalImpl() {
 		super();
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	@Override
 	protected EClass eStaticClass() {
 		return ConsolPackage.Literals.IMMUNIZATIONS_SECTION_ENTRIES_OPTIONAL;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateImmunizationsSectionEntriesOptionalTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ImmunizationsSectionEntriesOptionalOperations.validateImmunizationsSectionEntriesOptionalTemplateId(
@@ -64,10 +64,10 @@ public class ImmunizationsSectionEntriesOptionalImpl extends SectionImpl impleme
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateImmunizationsSectionEntriesOptionalCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ImmunizationsSectionEntriesOptionalOperations.validateImmunizationsSectionEntriesOptionalCode(
@@ -75,10 +75,10 @@ public class ImmunizationsSectionEntriesOptionalImpl extends SectionImpl impleme
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	* <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateImmunizationsSectionEntriesOptionalCodeP(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ImmunizationsSectionEntriesOptionalOperations.validateImmunizationsSectionEntriesOptionalCodeP(
@@ -86,10 +86,10 @@ public class ImmunizationsSectionEntriesOptionalImpl extends SectionImpl impleme
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateImmunizationsSectionEntriesOptionalTitle(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ImmunizationsSectionEntriesOptionalOperations.validateImmunizationsSectionEntriesOptionalTitle(
@@ -97,10 +97,10 @@ public class ImmunizationsSectionEntriesOptionalImpl extends SectionImpl impleme
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateImmunizationsSectionEntriesOptionalText(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ImmunizationsSectionEntriesOptionalOperations.validateImmunizationsSectionEntriesOptionalText(
@@ -108,10 +108,10 @@ public class ImmunizationsSectionEntriesOptionalImpl extends SectionImpl impleme
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateImmunizationsSectionEntriesOptionalImmunizationActivity(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ImmunizationsSectionEntriesOptionalOperations.validateImmunizationsSectionEntriesOptionalImmunizationActivity(
@@ -119,19 +119,19 @@ public class ImmunizationsSectionEntriesOptionalImpl extends SectionImpl impleme
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public EList<ImmunizationActivity> getImmunizationActivities() {
 		return ImmunizationsSectionEntriesOptionalOperations.getImmunizationActivities(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public ImmunizationsSectionEntriesOptional init() {
 		return Initializer.Util.init(this);
 	}
