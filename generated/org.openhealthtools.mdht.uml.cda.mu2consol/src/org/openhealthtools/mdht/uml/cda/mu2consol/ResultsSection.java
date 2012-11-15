@@ -56,9 +56,9 @@ public interface ResultsSection extends
 	EList<ResultOrganizer> getMu2consolResultOrganizers();
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
 	public ResultsSection init();
 
 	/**

@@ -56,9 +56,9 @@ public interface EncountersSection extends
 	EList<EncounterActivities> getMu2consolEncounterActivitiess();
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
 	public EncountersSection init();
 
 	/**

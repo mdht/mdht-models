@@ -42,262 +42,266 @@ import org.openhealthtools.mdht.uml.cda.mu2consol.ViewDownloadTransmitSummary;
 public class Mu2consolFactoryImpl extends EFactoryImpl implements
 		Mu2consolFactory {
 	/**
-	 * Creates the default factory implementation.
-	 * <!-- begin-user-doc --> <!--
+   * Creates the default factory implementation.
+   * <!-- begin-user-doc --> <!--
 	 * end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public static Mu2consolFactory init() {
-		try {
-			Mu2consolFactory theMu2consolFactory = (Mu2consolFactory)EPackage.Registry.INSTANCE.getEFactory("http://www.openhealthtools.org/mdht/uml/cda/mu2consol"); 
-			if (theMu2consolFactory != null) {
-				return theMu2consolFactory;
-			}
-		}
-		catch (Exception exception) {
-			EcorePlugin.INSTANCE.log(exception);
-		}
-		return new Mu2consolFactoryImpl();
-	}
+    try
+    {
+      Mu2consolFactory theMu2consolFactory = (Mu2consolFactory)EPackage.Registry.INSTANCE.getEFactory("http://www.openhealthtools.org/mdht/uml/cda/mu2consol"); 
+      if (theMu2consolFactory != null)
+      {
+        return theMu2consolFactory;
+      }
+    }
+    catch (Exception exception)
+    {
+      EcorePlugin.INSTANCE.log(exception);
+    }
+    return new Mu2consolFactoryImpl();
+  }
 
 	/**
-	 * Creates an instance of the factory.
-	 * <!-- begin-user-doc --> <!--
+   * Creates an instance of the factory.
+   * <!-- begin-user-doc --> <!--
 	 * end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public Mu2consolFactoryImpl() {
-		super();
-	}
+    super();
+  }
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
 	@Override
 	public EObject create(EClass eClass) {
-		switch (eClass.getClassifierID()) {
-			case Mu2consolPackage.GENERAL_HEADER_CONSTRAINTS: return createGeneralHeaderConstraints();
-			case Mu2consolPackage.SUMMARY_OF_CARE_RECORD: return createSummaryOfCareRecord();
-			case Mu2consolPackage.ENCOUNTERS_SECTION: return createEncountersSection();
-			case Mu2consolPackage.ENCOUNTER_ACTIVITIES: return createEncounterActivities();
-			case Mu2consolPackage.PLAN_OF_CARE_SECTION: return createPlanOfCareSection();
-			case Mu2consolPackage.ASSESSMENT_AND_PLAN_SECTION: return createAssessmentAndPlanSection();
-			case Mu2consolPackage.ASSESSMENT_SECTION: return createAssessmentSection();
-			case Mu2consolPackage.SOCIAL_HISTORY_SECTION: return createSocialHistorySection();
-			case Mu2consolPackage.SMOKING_STATUS_OBSERVATION: return createSmokingStatusObservation();
-			case Mu2consolPackage.RESULTS_SECTION: return createResultsSection();
-			case Mu2consolPackage.RESULT_ORGANIZER: return createResultOrganizer();
-			case Mu2consolPackage.RESULT_OBSERVATION: return createResultObservation();
-			case Mu2consolPackage.PROCEDURES_SECTION: return createProceduresSection();
-			case Mu2consolPackage.PROCEDURE_ACTIVITY_PROCEDURE: return createProcedureActivityProcedure();
-			case Mu2consolPackage.CLINICAL_OFFICE_VISIT_SUMMARY: return createClinicalOfficeVisitSummary();
-			case Mu2consolPackage.TRANSITION_OF_CARE_AMBULATORY_SUMMARY: return createTransitionOfCareAmbulatorySummary();
-			case Mu2consolPackage.TRANSITION_OF_CARE_INPATIENT_SUMMARY: return createTransitionOfCareInpatientSummary();
-			case Mu2consolPackage.VIEW_DOWNLOAD_TRANSMIT_SUMMARY: return createViewDownloadTransmitSummary();
-			case Mu2consolPackage.VDT_INPATIENT_SUMMARY: return createVDTInpatientSummary();
-			case Mu2consolPackage.VDT_AMBULATORY_SUMMARY: return createVDTAmbulatorySummary();
-			default:
-				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
-		}
-	}
+    switch (eClass.getClassifierID())
+    {
+      case Mu2consolPackage.GENERAL_HEADER_CONSTRAINTS: return createGeneralHeaderConstraints();
+      case Mu2consolPackage.SUMMARY_OF_CARE_RECORD: return createSummaryOfCareRecord();
+      case Mu2consolPackage.ENCOUNTERS_SECTION: return createEncountersSection();
+      case Mu2consolPackage.ENCOUNTER_ACTIVITIES: return createEncounterActivities();
+      case Mu2consolPackage.PLAN_OF_CARE_SECTION: return createPlanOfCareSection();
+      case Mu2consolPackage.ASSESSMENT_AND_PLAN_SECTION: return createAssessmentAndPlanSection();
+      case Mu2consolPackage.ASSESSMENT_SECTION: return createAssessmentSection();
+      case Mu2consolPackage.SOCIAL_HISTORY_SECTION: return createSocialHistorySection();
+      case Mu2consolPackage.SMOKING_STATUS_OBSERVATION: return createSmokingStatusObservation();
+      case Mu2consolPackage.RESULTS_SECTION: return createResultsSection();
+      case Mu2consolPackage.RESULT_ORGANIZER: return createResultOrganizer();
+      case Mu2consolPackage.RESULT_OBSERVATION: return createResultObservation();
+      case Mu2consolPackage.PROCEDURES_SECTION: return createProceduresSection();
+      case Mu2consolPackage.PROCEDURE_ACTIVITY_PROCEDURE: return createProcedureActivityProcedure();
+      case Mu2consolPackage.CLINICAL_OFFICE_VISIT_SUMMARY: return createClinicalOfficeVisitSummary();
+      case Mu2consolPackage.TRANSITION_OF_CARE_AMBULATORY_SUMMARY: return createTransitionOfCareAmbulatorySummary();
+      case Mu2consolPackage.TRANSITION_OF_CARE_INPATIENT_SUMMARY: return createTransitionOfCareInpatientSummary();
+      case Mu2consolPackage.VIEW_DOWNLOAD_TRANSMIT_SUMMARY: return createViewDownloadTransmitSummary();
+      case Mu2consolPackage.VDT_INPATIENT_SUMMARY: return createVDTInpatientSummary();
+      case Mu2consolPackage.VDT_AMBULATORY_SUMMARY: return createVDTAmbulatorySummary();
+      default:
+        throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
+    }
+  }
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
 	public GeneralHeaderConstraints createGeneralHeaderConstraints() {
-		GeneralHeaderConstraintsImpl generalHeaderConstraints = new GeneralHeaderConstraintsImpl();
-		return generalHeaderConstraints;
-	}
+    GeneralHeaderConstraintsImpl generalHeaderConstraints = new GeneralHeaderConstraintsImpl();
+    return generalHeaderConstraints;
+  }
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
 	public SummaryOfCareRecord createSummaryOfCareRecord() {
-		SummaryOfCareRecordImpl summaryOfCareRecord = new SummaryOfCareRecordImpl();
-		return summaryOfCareRecord;
-	}
+    SummaryOfCareRecordImpl summaryOfCareRecord = new SummaryOfCareRecordImpl();
+    return summaryOfCareRecord;
+  }
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
 	public EncountersSection createEncountersSection() {
-		EncountersSectionImpl encountersSection = new EncountersSectionImpl();
-		return encountersSection;
-	}
+    EncountersSectionImpl encountersSection = new EncountersSectionImpl();
+    return encountersSection;
+  }
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
 	public EncounterActivities createEncounterActivities() {
-		EncounterActivitiesImpl encounterActivities = new EncounterActivitiesImpl();
-		return encounterActivities;
-	}
+    EncounterActivitiesImpl encounterActivities = new EncounterActivitiesImpl();
+    return encounterActivities;
+  }
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
 	public PlanOfCareSection createPlanOfCareSection() {
-		PlanOfCareSectionImpl planOfCareSection = new PlanOfCareSectionImpl();
-		return planOfCareSection;
-	}
+    PlanOfCareSectionImpl planOfCareSection = new PlanOfCareSectionImpl();
+    return planOfCareSection;
+  }
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
 	public AssessmentAndPlanSection createAssessmentAndPlanSection() {
-		AssessmentAndPlanSectionImpl assessmentAndPlanSection = new AssessmentAndPlanSectionImpl();
-		return assessmentAndPlanSection;
-	}
+    AssessmentAndPlanSectionImpl assessmentAndPlanSection = new AssessmentAndPlanSectionImpl();
+    return assessmentAndPlanSection;
+  }
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
 	public ClinicalOfficeVisitSummary createClinicalOfficeVisitSummary() {
-		ClinicalOfficeVisitSummaryImpl clinicalOfficeVisitSummary = new ClinicalOfficeVisitSummaryImpl();
-		return clinicalOfficeVisitSummary;
-	}
+    ClinicalOfficeVisitSummaryImpl clinicalOfficeVisitSummary = new ClinicalOfficeVisitSummaryImpl();
+    return clinicalOfficeVisitSummary;
+  }
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
 	public TransitionOfCareAmbulatorySummary createTransitionOfCareAmbulatorySummary() {
-		TransitionOfCareAmbulatorySummaryImpl transitionOfCareAmbulatorySummary = new TransitionOfCareAmbulatorySummaryImpl();
-		return transitionOfCareAmbulatorySummary;
-	}
+    TransitionOfCareAmbulatorySummaryImpl transitionOfCareAmbulatorySummary = new TransitionOfCareAmbulatorySummaryImpl();
+    return transitionOfCareAmbulatorySummary;
+  }
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
 	public TransitionOfCareInpatientSummary createTransitionOfCareInpatientSummary() {
-		TransitionOfCareInpatientSummaryImpl transitionOfCareInpatientSummary = new TransitionOfCareInpatientSummaryImpl();
-		return transitionOfCareInpatientSummary;
-	}
+    TransitionOfCareInpatientSummaryImpl transitionOfCareInpatientSummary = new TransitionOfCareInpatientSummaryImpl();
+    return transitionOfCareInpatientSummary;
+  }
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
 	public ViewDownloadTransmitSummary createViewDownloadTransmitSummary() {
-		ViewDownloadTransmitSummaryImpl viewDownloadTransmitSummary = new ViewDownloadTransmitSummaryImpl();
-		return viewDownloadTransmitSummary;
-	}
+    ViewDownloadTransmitSummaryImpl viewDownloadTransmitSummary = new ViewDownloadTransmitSummaryImpl();
+    return viewDownloadTransmitSummary;
+  }
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
 	public VDTInpatientSummary createVDTInpatientSummary() {
-		VDTInpatientSummaryImpl vdtInpatientSummary = new VDTInpatientSummaryImpl();
-		return vdtInpatientSummary;
-	}
+    VDTInpatientSummaryImpl vdtInpatientSummary = new VDTInpatientSummaryImpl();
+    return vdtInpatientSummary;
+  }
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
 	public VDTAmbulatorySummary createVDTAmbulatorySummary() {
-		VDTAmbulatorySummaryImpl vdtAmbulatorySummary = new VDTAmbulatorySummaryImpl();
-		return vdtAmbulatorySummary;
-	}
+    VDTAmbulatorySummaryImpl vdtAmbulatorySummary = new VDTAmbulatorySummaryImpl();
+    return vdtAmbulatorySummary;
+  }
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
 	public ResultObservation createResultObservation() {
-		ResultObservationImpl resultObservation = new ResultObservationImpl();
-		return resultObservation;
-	}
+    ResultObservationImpl resultObservation = new ResultObservationImpl();
+    return resultObservation;
+  }
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
 	public ProceduresSection createProceduresSection() {
-		ProceduresSectionImpl proceduresSection = new ProceduresSectionImpl();
-		return proceduresSection;
-	}
+    ProceduresSectionImpl proceduresSection = new ProceduresSectionImpl();
+    return proceduresSection;
+  }
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
 	public ProcedureActivityProcedure createProcedureActivityProcedure() {
-		ProcedureActivityProcedureImpl procedureActivityProcedure = new ProcedureActivityProcedureImpl();
-		return procedureActivityProcedure;
-	}
+    ProcedureActivityProcedureImpl procedureActivityProcedure = new ProcedureActivityProcedureImpl();
+    return procedureActivityProcedure;
+  }
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
 	public ResultOrganizer createResultOrganizer() {
-		ResultOrganizerImpl resultOrganizer = new ResultOrganizerImpl();
-		return resultOrganizer;
-	}
+    ResultOrganizerImpl resultOrganizer = new ResultOrganizerImpl();
+    return resultOrganizer;
+  }
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
 	public ResultsSection createResultsSection() {
-		ResultsSectionImpl resultsSection = new ResultsSectionImpl();
-		return resultsSection;
-	}
+    ResultsSectionImpl resultsSection = new ResultsSectionImpl();
+    return resultsSection;
+  }
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
 	public AssessmentSection createAssessmentSection() {
-		AssessmentSectionImpl assessmentSection = new AssessmentSectionImpl();
-		return assessmentSection;
-	}
+    AssessmentSectionImpl assessmentSection = new AssessmentSectionImpl();
+    return assessmentSection;
+  }
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
 	public SocialHistorySection createSocialHistorySection() {
-		SocialHistorySectionImpl socialHistorySection = new SocialHistorySectionImpl();
-		return socialHistorySection;
-	}
+    SocialHistorySectionImpl socialHistorySection = new SocialHistorySectionImpl();
+    return socialHistorySection;
+  }
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
 	public SmokingStatusObservation createSmokingStatusObservation() {
-		SmokingStatusObservationImpl smokingStatusObservation = new SmokingStatusObservationImpl();
-		return smokingStatusObservation;
-	}
+    SmokingStatusObservationImpl smokingStatusObservation = new SmokingStatusObservationImpl();
+    return smokingStatusObservation;
+  }
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
 	public Mu2consolPackage getMu2consolPackage() {
-		return (Mu2consolPackage)getEPackage();
-	}
+    return (Mu2consolPackage)getEPackage();
+  }
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @deprecated
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @deprecated
+   * @generated
+   */
 	@Deprecated
 	public static Mu2consolPackage getPackage() {
-		return Mu2consolPackage.eINSTANCE;
-	}
+    return Mu2consolPackage.eINSTANCE;
+  }
 
 } // Mu2consolFactoryImpl
