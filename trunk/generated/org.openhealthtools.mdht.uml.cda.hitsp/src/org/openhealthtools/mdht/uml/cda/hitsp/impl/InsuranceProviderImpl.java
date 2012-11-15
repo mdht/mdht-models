@@ -32,86 +32,86 @@ import org.openhealthtools.mdht.uml.cda.ihe.impl.CoverageEntryImpl;
  */
 public class InsuranceProviderImpl extends CoverageEntryImpl implements InsuranceProvider {
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	protected InsuranceProviderImpl() {
 		super();
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
 		return HITSPPackage.Literals.INSURANCE_PROVIDER;
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateInsuranceProviderPaymentProviders(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return InsuranceProviderOperations.validateInsuranceProviderPaymentProviders(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateInsuranceProviderPayerEntryID(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return InsuranceProviderOperations.validateInsuranceProviderPayerEntryID(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateInsuranceProviderHealthInsuranceType(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return InsuranceProviderOperations.validateInsuranceProviderHealthInsuranceType(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateInsuranceProviderInsuranceInformation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return InsuranceProviderOperations.validateInsuranceProviderInsuranceInformation(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateInsuranceProviderInsuranceInfoSourceID(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return InsuranceProviderOperations.validateInsuranceProviderInsuranceInfoSourceID(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateInsuranceProviderInsuranceInfoSourceAddr(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return InsuranceProviderOperations.validateInsuranceProviderInsuranceInfoSourceAddr(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateInsuranceProviderHealthPlanCoverageStartTime(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return InsuranceProviderOperations.validateInsuranceProviderHealthPlanCoverageStartTime(
@@ -119,10 +119,10 @@ public class InsuranceProviderImpl extends CoverageEntryImpl implements Insuranc
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateInsuranceProviderHealthPlanCoverageStopTime(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return InsuranceProviderOperations.validateInsuranceProviderHealthPlanCoverageStopTime(
@@ -130,47 +130,47 @@ public class InsuranceProviderImpl extends CoverageEntryImpl implements Insuranc
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateInsuranceProviderPatientInformation(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return InsuranceProviderOperations.validateInsuranceProviderPatientInformation(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateInsuranceProviderMemberId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return InsuranceProviderOperations.validateInsuranceProviderMemberId(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateInsuranceProviderMemberIdRoot(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return InsuranceProviderOperations.validateInsuranceProviderMemberIdRoot(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateInsuranceProviderRelationshipToSubscriber(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return InsuranceProviderOperations.validateInsuranceProviderRelationshipToSubscriber(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateInsuranceProviderRelationshipToSubscriberCodeSystem(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return InsuranceProviderOperations.validateInsuranceProviderRelationshipToSubscriberCodeSystem(
@@ -178,56 +178,56 @@ public class InsuranceProviderImpl extends CoverageEntryImpl implements Insuranc
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateInsuranceProviderPatientName(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return InsuranceProviderOperations.validateInsuranceProviderPatientName(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateInsuranceProviderSubscriberInformation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return InsuranceProviderOperations.validateInsuranceProviderSubscriberInformation(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateInsuranceProviderSubscriberId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return InsuranceProviderOperations.validateInsuranceProviderSubscriberId(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateInsuranceProviderSubscriberIdRoot(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return InsuranceProviderOperations.validateInsuranceProviderSubscriberIdRoot(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateInsuranceProviderSubscriberAddress(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return InsuranceProviderOperations.validateInsuranceProviderSubscriberAddress(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateInsuranceProviderFinancialResponsibilityPartyType(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return InsuranceProviderOperations.validateInsuranceProviderFinancialResponsibilityPartyType(
@@ -235,10 +235,10 @@ public class InsuranceProviderImpl extends CoverageEntryImpl implements Insuranc
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateInsuranceProviderFinancialResponsibilityPartyTypeCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return InsuranceProviderOperations.validateInsuranceProviderFinancialResponsibilityPartyTypeCode(
@@ -246,10 +246,10 @@ public class InsuranceProviderImpl extends CoverageEntryImpl implements Insuranc
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateInsuranceProviderFinancialResponsibilityPartyAddress(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return InsuranceProviderOperations.validateInsuranceProviderFinancialResponsibilityPartyAddress(
@@ -257,19 +257,19 @@ public class InsuranceProviderImpl extends CoverageEntryImpl implements Insuranc
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateInsuranceProviderTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return InsuranceProviderOperations.validateInsuranceProviderTemplateId(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	* <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateInsuranceProviderCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return InsuranceProviderOperations.validateInsuranceProviderCode(this, diagnostics, context);
 	}
@@ -285,10 +285,10 @@ public class InsuranceProviderImpl extends CoverageEntryImpl implements Insuranc
 	}
 
 	/**
-	   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	   * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	@Override
 	public InsuranceProvider init(Iterable<? extends Initializer<? extends EObject>> initializers) {
 		Initializer.Util.init(this, initializers);

@@ -32,29 +32,29 @@ import org.openhealthtools.mdht.uml.cda.ihe.impl.SupplyEntryImpl;
  */
 public class MedicationOrderInformationImpl extends SupplyEntryImpl implements MedicationOrderInformation {
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	protected MedicationOrderInformationImpl() {
 		super();
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
 		return HITSPPackage.Literals.MEDICATION_ORDER_INFORMATION;
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateMedicationOrderInformationOrderNumber(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return MedicationOrderInformationOperations.validateMedicationOrderInformationOrderNumber(
@@ -62,10 +62,10 @@ public class MedicationOrderInformationImpl extends SupplyEntryImpl implements M
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateMedicationOrderInformationOrderExpiration(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return MedicationOrderInformationOperations.validateMedicationOrderInformationOrderExpiration(
@@ -73,10 +73,10 @@ public class MedicationOrderInformationImpl extends SupplyEntryImpl implements M
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateMedicationOrderInformationQuantityOrdered(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return MedicationOrderInformationOperations.validateMedicationOrderInformationQuantityOrdered(
@@ -84,10 +84,10 @@ public class MedicationOrderInformationImpl extends SupplyEntryImpl implements M
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateMedicationOrderInformationQuantityUnit(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return MedicationOrderInformationOperations.validateMedicationOrderInformationQuantityUnit(
@@ -95,10 +95,10 @@ public class MedicationOrderInformationImpl extends SupplyEntryImpl implements M
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateMedicationOrderInformationPrescriptionNumber(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return MedicationOrderInformationOperations.validateMedicationOrderInformationPrescriptionNumber(
@@ -106,10 +106,10 @@ public class MedicationOrderInformationImpl extends SupplyEntryImpl implements M
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateMedicationOrderInformationAssigningAuthority(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return MedicationOrderInformationOperations.validateMedicationOrderInformationAssigningAuthority(
@@ -117,10 +117,10 @@ public class MedicationOrderInformationImpl extends SupplyEntryImpl implements M
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateMedicationOrderInformationDispenseDate(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return MedicationOrderInformationOperations.validateMedicationOrderInformationDispenseDate(
@@ -128,10 +128,10 @@ public class MedicationOrderInformationImpl extends SupplyEntryImpl implements M
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateMedicationOrderInformationDispensingPharmacyLocation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return MedicationOrderInformationOperations.validateMedicationOrderInformationDispensingPharmacyLocation(
@@ -139,10 +139,10 @@ public class MedicationOrderInformationImpl extends SupplyEntryImpl implements M
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateMedicationOrderInformationQuantityDispensed(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return MedicationOrderInformationOperations.validateMedicationOrderInformationQuantityDispensed(
@@ -150,10 +150,10 @@ public class MedicationOrderInformationImpl extends SupplyEntryImpl implements M
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateMedicationOrderInformationHasFillNumber(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return MedicationOrderInformationOperations.validateMedicationOrderInformationHasFillNumber(
@@ -161,20 +161,20 @@ public class MedicationOrderInformationImpl extends SupplyEntryImpl implements M
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateMedicationOrderInformationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return MedicationOrderInformationOperations.validateMedicationOrderInformationTemplateId(
 			this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateMedicationOrderInformationRepeatNumber(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return MedicationOrderInformationOperations.validateMedicationOrderInformationRepeatNumber(
@@ -182,10 +182,10 @@ public class MedicationOrderInformationImpl extends SupplyEntryImpl implements M
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	* <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateMedicationOrderInformationStatusCodeP(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return MedicationOrderInformationOperations.validateMedicationOrderInformationStatusCodeP(
@@ -203,20 +203,20 @@ public class MedicationOrderInformationImpl extends SupplyEntryImpl implements M
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	@Override
 	public MedicationOrderInformation init() {
 		return Initializer.Util.init(this);
 	}
 
 	/**
-	   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	   * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	@Override
 	public MedicationOrderInformation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
 		Initializer.Util.init(this, initializers);

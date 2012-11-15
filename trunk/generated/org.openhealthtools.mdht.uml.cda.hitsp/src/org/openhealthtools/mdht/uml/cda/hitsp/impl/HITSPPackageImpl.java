@@ -4766,11 +4766,11 @@ public class HITSPPackageImpl extends EPackageImpl implements HITSPPackage {
 	}
 
 	/**
-	   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation</b>.
-	   * <!-- begin-user-doc -->
+	 * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation</b>.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	protected void createAnnotationAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation";
 		addAnnotation(this, source, new String[] { "registryDelegate", "HITSPRegistryDelegate" });

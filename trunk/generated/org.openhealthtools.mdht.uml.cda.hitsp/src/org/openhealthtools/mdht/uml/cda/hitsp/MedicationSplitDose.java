@@ -26,16 +26,16 @@ import org.openhealthtools.mdht.uml.cda.ihe.SplitDose;
  */
 public interface MedicationSplitDose extends Medication, SplitDose {
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public MedicationSplitDose init();
 
 	/**
-	   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	   * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	public MedicationSplitDose init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // MedicationSplitDose

@@ -34,29 +34,29 @@ import org.openhealthtools.mdht.uml.cda.hitsp.operations.AllergiesReactionsSecti
 public class AllergiesReactionsSectionImpl extends
 		org.openhealthtools.mdht.uml.cda.ihe.impl.AllergiesReactionsSectionImpl implements AllergiesReactionsSection {
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	protected AllergiesReactionsSectionImpl() {
 		super();
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
 		return HITSPPackage.Literals.ALLERGIES_REACTIONS_SECTION;
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateHITSPAllergiesReactionsSectionTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return AllergiesReactionsSectionOperations.validateHITSPAllergiesReactionsSectionTemplateId(
@@ -64,10 +64,10 @@ public class AllergiesReactionsSectionImpl extends
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateHITSPAllergiesReactionsSectionAllergyDrugSensitivity(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return AllergiesReactionsSectionOperations.validateHITSPAllergiesReactionsSectionAllergyDrugSensitivity(
@@ -75,29 +75,29 @@ public class AllergiesReactionsSectionImpl extends
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public EList<AllergyDrugSensitivity> getAllergyDrugSensitivities() {
 		return AllergiesReactionsSectionOperations.getAllergyDrugSensitivities(this);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	@Override
 	public AllergiesReactionsSection init() {
 		return Initializer.Util.init(this);
 	}
 
 	/**
-	   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	   * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	@Override
 	public AllergiesReactionsSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
 		Initializer.Util.init(this, initializers);

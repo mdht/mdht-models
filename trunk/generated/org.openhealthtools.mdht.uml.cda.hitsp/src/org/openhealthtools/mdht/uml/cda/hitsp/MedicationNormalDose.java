@@ -26,16 +26,16 @@ import org.openhealthtools.mdht.uml.cda.ihe.NormalDose;
  */
 public interface MedicationNormalDose extends Medication, NormalDose {
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public MedicationNormalDose init();
 
 	/**
-	   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	   * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	public MedicationNormalDose init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // MedicationNormalDose

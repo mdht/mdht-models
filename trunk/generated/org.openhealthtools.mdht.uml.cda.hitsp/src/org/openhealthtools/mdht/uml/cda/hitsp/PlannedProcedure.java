@@ -26,16 +26,16 @@ import org.openhealthtools.mdht.uml.cda.ihe.ProcedureEntryPlanOfCareActivityProc
  */
 public interface PlannedProcedure extends Procedure, ProcedureEntryPlanOfCareActivityProcedure {
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public PlannedProcedure init();
 
 	/**
-	   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	   * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	public PlannedProcedure init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // PlannedProcedure
