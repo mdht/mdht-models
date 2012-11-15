@@ -171,9 +171,9 @@ public interface ProblemObservation extends Observation {
 	public ProblemObservation init();
 
 	/**
-	   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	   * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	public ProblemObservation init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // ProblemObservation

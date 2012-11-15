@@ -106,9 +106,9 @@ public interface ProblemSection extends Section {
 	public ProblemSection init();
 
 	/**
-	   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	   * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	public ProblemSection init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // ProblemSection

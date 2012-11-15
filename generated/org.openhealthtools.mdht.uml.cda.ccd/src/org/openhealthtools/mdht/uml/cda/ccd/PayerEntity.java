@@ -48,9 +48,9 @@ public interface PayerEntity extends AssignedEntity {
 	public PayerEntity init();
 
 	/**
-	   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	   * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	public PayerEntity init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // PayerEntity

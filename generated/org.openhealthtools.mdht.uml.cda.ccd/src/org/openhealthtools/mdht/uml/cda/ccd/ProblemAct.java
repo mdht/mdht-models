@@ -189,9 +189,9 @@ public interface ProblemAct extends Act {
 	public ProblemAct init();
 
 	/**
-	   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	   * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	public ProblemAct init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // ProblemAct

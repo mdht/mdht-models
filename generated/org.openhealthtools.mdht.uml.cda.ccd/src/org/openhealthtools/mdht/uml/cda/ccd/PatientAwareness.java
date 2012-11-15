@@ -84,9 +84,9 @@ public interface PatientAwareness extends Participant2 {
 	public PatientAwareness init();
 
 	/**
-	   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	   * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	public PatientAwareness init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // PatientAwareness

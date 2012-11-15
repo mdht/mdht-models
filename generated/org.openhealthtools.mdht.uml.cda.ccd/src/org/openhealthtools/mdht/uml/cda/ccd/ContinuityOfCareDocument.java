@@ -555,9 +555,9 @@ public interface ContinuityOfCareDocument extends ClinicalDocument {
 	public ContinuityOfCareDocument init();
 
 	/**
-	   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	   * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	public ContinuityOfCareDocument init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // ContinuityOfCareDocument

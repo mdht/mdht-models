@@ -134,9 +134,9 @@ public interface FamilyHistorySection extends Section {
 	public FamilyHistorySection init();
 
 	/**
-	   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	   * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	public FamilyHistorySection init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // FamilyHistorySection

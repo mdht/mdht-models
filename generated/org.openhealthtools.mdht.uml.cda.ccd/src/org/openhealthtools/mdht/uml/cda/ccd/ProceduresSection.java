@@ -104,9 +104,9 @@ public interface ProceduresSection extends Section {
 	public ProceduresSection init();
 
 	/**
-	   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	   * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	public ProceduresSection init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // ProceduresSection

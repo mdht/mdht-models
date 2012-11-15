@@ -84,9 +84,9 @@ public interface Comment extends Act {
 	public Comment init();
 
 	/**
-	   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	   * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	public Comment init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // Comment

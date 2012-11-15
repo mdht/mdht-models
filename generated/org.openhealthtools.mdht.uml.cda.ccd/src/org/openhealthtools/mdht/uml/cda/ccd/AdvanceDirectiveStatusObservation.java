@@ -32,9 +32,9 @@ public interface AdvanceDirectiveStatusObservation extends StatusObservation {
 	public AdvanceDirectiveStatusObservation init();
 
 	/**
-	   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	   * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	public AdvanceDirectiveStatusObservation init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // AdvanceDirectiveStatusObservation

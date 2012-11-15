@@ -109,9 +109,9 @@ public interface AdvanceDirectiveReference extends Reference {
 	public AdvanceDirectiveReference init();
 
 	/**
-	   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	   * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	public AdvanceDirectiveReference init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // AdvanceDirectiveReference

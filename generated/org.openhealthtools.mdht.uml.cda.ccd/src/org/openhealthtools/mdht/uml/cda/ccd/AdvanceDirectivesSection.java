@@ -107,9 +107,9 @@ public interface AdvanceDirectivesSection extends Section {
 	public AdvanceDirectivesSection init();
 
 	/**
-	   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	   * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	public AdvanceDirectivesSection init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // AdvanceDirectivesSection

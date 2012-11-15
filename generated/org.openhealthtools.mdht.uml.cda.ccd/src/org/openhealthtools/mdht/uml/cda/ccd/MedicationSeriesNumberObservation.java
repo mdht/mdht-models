@@ -115,9 +115,9 @@ public interface MedicationSeriesNumberObservation extends Observation {
 	public MedicationSeriesNumberObservation init();
 
 	/**
-	   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	   * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	public MedicationSeriesNumberObservation init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // MedicationSeriesNumberObservation

@@ -596,11 +596,11 @@ public class CCDValidator extends EObjectValidator {
 	public static final int PROBLEM_HEALTH_STATUS_OBSERVATION__PROBLEM_HEALTH_STATUS_OBSERVATION_CODE = 388;
 
 	/**
-	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Problem Section Template Id' of 'Problem Section'.
-	 * <!-- begin-user-doc -->
+	* The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Problem Section Template Id' of 'Problem Section'.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public static final int PROBLEM_SECTION__PROBLEM_SECTION_TEMPLATE_ID = 112;
 
 	/**
@@ -1388,11 +1388,11 @@ public class CCDValidator extends EObjectValidator {
 	public static final int SOCIAL_HISTORY_STATUS_OBSERVATION__SOCIAL_HISTORY_STATUS_OBSERVATION_VALUE = 199;
 
 	/**
-	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Status Observation Template Id' of 'Social History Status Observation'.
-	 * <!-- begin-user-doc -->
+	* The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Status Observation Template Id' of 'Social History Status Observation'.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public static final int SOCIAL_HISTORY_STATUS_OBSERVATION__STATUS_OBSERVATION_TEMPLATE_ID = 200;
 
 	/**
@@ -5742,11 +5742,11 @@ public class CCDValidator extends EObjectValidator {
 	}
 
 	/**
-	 * Validates the validateStatusObservationTemplateId constraint of '<em>Problem Health Status Observation</em>'.
-	 * <!-- begin-user-doc -->
+	* Validates the validateStatusObservationTemplateId constraint of '<em>Problem Health Status Observation</em>'.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateProblemHealthStatusObservation_validateStatusObservationTemplateId(
 			ProblemHealthStatusObservation problemHealthStatusObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
@@ -7484,11 +7484,11 @@ public class CCDValidator extends EObjectValidator {
 	}
 
 	/**
-	 * Validates the validateStatusObservationTemplateId constraint of '<em>Social History Status Observation</em>'.
-	 * <!-- begin-user-doc -->
+	* Validates the validateStatusObservationTemplateId constraint of '<em>Social History Status Observation</em>'.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateSocialHistoryStatusObservation_validateStatusObservationTemplateId(
 			SocialHistoryStatusObservation socialHistoryStatusObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {

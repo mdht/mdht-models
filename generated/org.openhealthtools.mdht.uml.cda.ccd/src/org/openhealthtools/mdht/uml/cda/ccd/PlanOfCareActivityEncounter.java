@@ -84,9 +84,9 @@ public interface PlanOfCareActivityEncounter extends Encounter, PlanOfCareActivi
 	public PlanOfCareActivityEncounter init();
 
 	/**
-	   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	   * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	public PlanOfCareActivityEncounter init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // PlanOfCareActivityEncounter

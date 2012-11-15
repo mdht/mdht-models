@@ -40,16 +40,16 @@ public interface SocialHistoryStatusObservation extends StatusObservation {
 	boolean validateSocialHistoryStatusObservationValue(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public SocialHistoryStatusObservation init();
 
 	/**
-	   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	   * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	public SocialHistoryStatusObservation init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // SocialHistoryStatusObservation

@@ -193,9 +193,9 @@ public interface SocialHistorySection extends Section {
 	public SocialHistorySection init();
 
 	/**
-	   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	   * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	public SocialHistorySection init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // SocialHistorySection

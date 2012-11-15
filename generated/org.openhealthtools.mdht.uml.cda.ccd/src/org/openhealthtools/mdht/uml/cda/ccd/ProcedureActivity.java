@@ -33,9 +33,9 @@ public interface ProcedureActivity extends ClinicalStatement {
 	public ProcedureActivity init();
 
 	/**
-	   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	   * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	public ProcedureActivity init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // ProcedureActivity

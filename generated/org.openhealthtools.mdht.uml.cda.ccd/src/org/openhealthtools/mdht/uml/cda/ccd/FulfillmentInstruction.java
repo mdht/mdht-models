@@ -67,9 +67,9 @@ public interface FulfillmentInstruction extends Act {
 	public FulfillmentInstruction init();
 
 	/**
-	   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	   * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	public FulfillmentInstruction init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // FulfillmentInstruction

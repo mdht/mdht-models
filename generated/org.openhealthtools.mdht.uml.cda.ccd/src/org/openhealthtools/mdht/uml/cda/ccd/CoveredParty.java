@@ -60,9 +60,9 @@ public interface CoveredParty extends ParticipantRole {
 	public CoveredParty init();
 
 	/**
-	   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	   * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	public CoveredParty init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // CoveredParty

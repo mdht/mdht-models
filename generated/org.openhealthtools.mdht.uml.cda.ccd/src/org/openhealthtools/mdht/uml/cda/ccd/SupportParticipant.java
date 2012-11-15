@@ -33,9 +33,9 @@ public interface SupportParticipant extends Participant1, Support {
 	public SupportParticipant init();
 
 	/**
-	   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	   * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	public SupportParticipant init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // SupportParticipant

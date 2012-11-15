@@ -133,9 +133,9 @@ public interface EncounterLocation extends Participant2 {
 	public EncounterLocation init();
 
 	/**
-	   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	   * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	public EncounterLocation init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // EncounterLocation

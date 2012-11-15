@@ -84,9 +84,9 @@ public interface PlanOfCareActivitySupply extends Supply, PlanOfCareActivity {
 	public PlanOfCareActivitySupply init();
 
 	/**
-	   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	   * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	public PlanOfCareActivitySupply init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // PlanOfCareActivitySupply

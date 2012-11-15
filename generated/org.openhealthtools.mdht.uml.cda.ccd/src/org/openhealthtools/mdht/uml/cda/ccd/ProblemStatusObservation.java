@@ -32,9 +32,9 @@ public interface ProblemStatusObservation extends StatusObservation {
 	public ProblemStatusObservation init();
 
 	/**
-	   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	   * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	public ProblemStatusObservation init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // ProblemStatusObservation

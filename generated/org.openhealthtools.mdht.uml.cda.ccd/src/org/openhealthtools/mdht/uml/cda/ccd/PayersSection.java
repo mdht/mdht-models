@@ -128,9 +128,9 @@ public interface PayersSection extends Section {
 	public PayersSection init();
 
 	/**
-	   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	   * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	public PayersSection init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // PayersSection

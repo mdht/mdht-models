@@ -48,9 +48,9 @@ public interface PolicySubscriber extends ParticipantRole {
 	public PolicySubscriber init();
 
 	/**
-	   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	   * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	public PolicySubscriber init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // PolicySubscriber

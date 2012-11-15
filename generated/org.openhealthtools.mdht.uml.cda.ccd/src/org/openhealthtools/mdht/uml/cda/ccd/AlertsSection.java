@@ -110,9 +110,9 @@ public interface AlertsSection extends Section {
 	public AlertsSection init();
 
 	/**
-	   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	   * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	public AlertsSection init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // AlertsSection
