@@ -80,7 +80,6 @@ public class ActiveProblemsSectionOperations extends ProblemSectionOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.templateId->exists(id : datatypes::II | id.root = '1.3.6.1.4.1.19376.1.5.3.1.3.6')
 	 * @param activeProblemsSection The receiving '<em><b>Active Problems Section</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -138,7 +137,6 @@ public class ActiveProblemsSectionOperations extends ProblemSectionOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.entry->exists(entry : cda::Entry | not entry.act.oclIsUndefined() and entry.act.oclIsKindOf(ihe::ProblemConcernEntry))
 	 * @param activeProblemsSection The receiving '<em><b>Active Problems Section</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -196,10 +194,6 @@ public class ActiveProblemsSectionOperations extends ProblemSectionOperations {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(ihe::ProblemConcernEntry)).oclAsType(ihe::ProblemConcernEntry)
-	 * @param activeProblemsSection The receiving '<em><b>Active Problems Section</b></em>' model object.
-	 * <!-- end-model-doc -->
 	 * @generated
 	 */
 	public static EList<ProblemConcernEntry> getProblemConcernEntries(ActiveProblemsSection activeProblemsSection) {

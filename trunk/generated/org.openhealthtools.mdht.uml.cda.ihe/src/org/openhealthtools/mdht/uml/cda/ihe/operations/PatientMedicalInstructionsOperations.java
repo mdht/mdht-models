@@ -78,7 +78,6 @@ public class PatientMedicalInstructionsOperations extends PatientInstructionOper
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.templateId->exists(id : datatypes::II | id.root = '1.3.6.1.4.1.19376.1.5.3.1.4.3')
 	 * @param patientMedicalInstructions The receiving '<em><b>Patient Medical Instructions</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -137,7 +136,6 @@ public class PatientMedicalInstructionsOperations extends PatientInstructionOper
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * isDefined('classCode')
 	 * @param patientMedicalInstructions The receiving '<em><b>Patient Medical Instructions</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -197,7 +195,6 @@ public class PatientMedicalInstructionsOperations extends PatientInstructionOper
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * (self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined())
 	 * @param patientMedicalInstructions The receiving '<em><b>Patient Medical Instructions</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -271,9 +268,6 @@ public class PatientMedicalInstructionsOperations extends PatientInstructionOper
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * (self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and 
-	 * let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in 
-	 * value.code = 'PINSTRUCT' and value.codeSystem = '1.3.6.1.4.1.19376.1.5.3.2')
 	 * @param patientMedicalInstructions The receiving '<em><b>Patient Medical Instructions</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -339,7 +333,6 @@ public class PatientMedicalInstructionsOperations extends PatientInstructionOper
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * (self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined())
 	 * @param patientMedicalInstructions The receiving '<em><b>Patient Medical Instructions</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -398,7 +391,6 @@ public class PatientMedicalInstructionsOperations extends PatientInstructionOper
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * (self.text.oclIsUndefined() or self.text.isNullFlavorUndefined()) implies (not self.text.oclIsUndefined())
 	 * @param patientMedicalInstructions The receiving '<em><b>Patient Medical Instructions</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.

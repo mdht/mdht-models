@@ -78,7 +78,6 @@ public class ScanningDeviceOperations extends AuthorOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.time.value = self.getClinicalDocument().effectiveTime.value
 	 * @param scanningDevice The receiving '<em><b>Scanning Device</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -137,7 +136,6 @@ public class ScanningDeviceOperations extends AuthorOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.assignedAuthor.id->forAll(ident : datatypes::II | not ident.root.oclIsUndefined())
 	 * @param scanningDevice The receiving '<em><b>Scanning Device</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -196,9 +194,6 @@ public class ScanningDeviceOperations extends AuthorOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.assignedAuthor.assignedAuthoringDevice.code.codeSystem = '1.2.840.10008.2.16.4'
-	 *    and not self.assignedAuthor.assignedAuthoringDevice.code.code.oclIsUndefined()
-	 *    and not self.assignedAuthor.assignedAuthoringDevice.code.displayName.oclIsUndefined()
 	 * @param scanningDevice The receiving '<em><b>Scanning Device</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -257,7 +252,6 @@ public class ScanningDeviceOperations extends AuthorOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * not self.assignedAuthor.assignedAuthoringDevice.manufacturerModelName.oclIsUndefined()
 	 * @param scanningDevice The receiving '<em><b>Scanning Device</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -316,7 +310,6 @@ public class ScanningDeviceOperations extends AuthorOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * not self.assignedAuthor.assignedAuthoringDevice.softwareName.oclIsUndefined()
 	 * @param scanningDevice The receiving '<em><b>Scanning Device</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -374,7 +367,6 @@ public class ScanningDeviceOperations extends AuthorOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.assignedAuthor.representedOrganization.id->forAll(ident : datatypes::II | not ident.root.oclIsUndefined())
 	 * @param scanningDevice The receiving '<em><b>Scanning Device</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -433,7 +425,6 @@ public class ScanningDeviceOperations extends AuthorOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.templateId->exists(id : datatypes::II | id.root = '1.3.6.1.4.1.19376.1.2.20.2')
 	 * @param scanningDevice The receiving '<em><b>Scanning Device</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.

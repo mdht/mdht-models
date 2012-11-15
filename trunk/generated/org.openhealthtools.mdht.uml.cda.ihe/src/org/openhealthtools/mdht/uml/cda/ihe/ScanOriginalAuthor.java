@@ -32,8 +32,6 @@ public interface ScanOriginalAuthor extends Author {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.assignedAuthor.id->forAll(ident : datatypes::II |
-	 *    not ident.root.oclIsUndefined() and not ident.extension.oclIsUndefined())
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
@@ -46,8 +44,6 @@ public interface ScanOriginalAuthor extends Author {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.assignedAuthor.representedOrganization.id->forAll(ident : datatypes::II |
-	 *    not ident.root.oclIsUndefined() and not ident.extension.oclIsUndefined())
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
@@ -61,7 +57,6 @@ public interface ScanOriginalAuthor extends Author {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.templateId->exists(id : datatypes::II | id.root = '1.3.6.1.4.1.19376.1.2.20.1')
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
