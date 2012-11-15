@@ -29,156 +29,156 @@ import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
  */
 public class DeceasedObservationImpl extends ObservationImpl implements DeceasedObservation {
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	protected DeceasedObservationImpl() {
 		super();
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	@Override
 	protected EClass eStaticClass() {
 		return ConsolPackage.Literals.DECEASED_OBSERVATION;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateDeceasedObservationEffectiveTimeLow(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return DeceasedObservationOperations.validateDeceasedObservationEffectiveTimeLow(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateDeceasedObservationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return DeceasedObservationOperations.validateDeceasedObservationTemplateId(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateDeceasedObservationClassCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return DeceasedObservationOperations.validateDeceasedObservationClassCode(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateDeceasedObservationMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return DeceasedObservationOperations.validateDeceasedObservationMoodCode(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateDeceasedObservationId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return DeceasedObservationOperations.validateDeceasedObservationId(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateDeceasedObservationCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return DeceasedObservationOperations.validateDeceasedObservationCodeP(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateDeceasedObservationCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return DeceasedObservationOperations.validateDeceasedObservationCode(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateDeceasedObservationStatusCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return DeceasedObservationOperations.validateDeceasedObservationStatusCode(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateDeceasedObservationStatusCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return DeceasedObservationOperations.validateDeceasedObservationStatusCodeP(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateDeceasedObservationEffectiveTime(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return DeceasedObservationOperations.validateDeceasedObservationEffectiveTime(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateDeceasedObservationValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return DeceasedObservationOperations.validateDeceasedObservationValue(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateDeceasedObservationValueP(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return DeceasedObservationOperations.validateDeceasedObservationValueP(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateDeceasedObservationProblemObservation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return DeceasedObservationOperations.validateDeceasedObservationProblemObservation(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public ProblemObservation getProblemObservation() {
 		return DeceasedObservationOperations.getProblemObservation(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public DeceasedObservation init() {
 		return Initializer.Util.init(this);
 	}

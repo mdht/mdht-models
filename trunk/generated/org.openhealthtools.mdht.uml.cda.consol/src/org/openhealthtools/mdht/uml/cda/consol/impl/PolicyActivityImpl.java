@@ -32,137 +32,137 @@ import org.openhealthtools.mdht.uml.cda.impl.ActImpl;
  */
 public class PolicyActivityImpl extends ActImpl implements PolicyActivity {
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	protected PolicyActivityImpl() {
 		super();
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	@Override
 	protected EClass eStaticClass() {
 		return ConsolPackage.Literals.POLICY_ACTIVITY;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validatePolicyActivityTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PolicyActivityOperations.validatePolicyActivityTemplateId(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validatePolicyActivityClassCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PolicyActivityOperations.validatePolicyActivityClassCode(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validatePolicyActivityCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PolicyActivityOperations.validatePolicyActivityCode(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validatePolicyActivityCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PolicyActivityOperations.validatePolicyActivityCodeP(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validatePolicyActivityId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PolicyActivityOperations.validatePolicyActivityId(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validatePolicyActivityMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PolicyActivityOperations.validatePolicyActivityMoodCode(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validatePolicyActivityStatusCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PolicyActivityOperations.validatePolicyActivityStatusCode(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validatePolicyActivityPayer(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PolicyActivityOperations.validatePolicyActivityPayer(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validatePolicyActivityGuarantor(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PolicyActivityOperations.validatePolicyActivityGuarantor(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validatePolicyActivityCoverage(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PolicyActivityOperations.validatePolicyActivityCoverage(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validatePolicyActivityHolder(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PolicyActivityOperations.validatePolicyActivityHolder(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	* <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validatePolicyActivityEntryRelationship(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PolicyActivityOperations.validatePolicyActivityEntryRelationship(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validatePolicyActivityPayerPayerAssignedEntityUSRealmAddressStreet(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return PolicyActivityOperations.validatePolicyActivityPayerPayerAssignedEntityUSRealmAddressStreet(
@@ -170,10 +170,10 @@ public class PolicyActivityImpl extends ActImpl implements PolicyActivity {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validatePolicyActivityPayerPayerAssignedEntityUSRealmAddressCity(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return PolicyActivityOperations.validatePolicyActivityPayerPayerAssignedEntityUSRealmAddressCity(
@@ -181,10 +181,10 @@ public class PolicyActivityImpl extends ActImpl implements PolicyActivity {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validatePolicyActivityPayerPayerAssignedEntityUSRealmAddressCountry(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return PolicyActivityOperations.validatePolicyActivityPayerPayerAssignedEntityUSRealmAddressCountry(
@@ -192,10 +192,10 @@ public class PolicyActivityImpl extends ActImpl implements PolicyActivity {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validatePolicyActivityPayerPayerAssignedEntityUSRealmAddressPostalCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return PolicyActivityOperations.validatePolicyActivityPayerPayerAssignedEntityUSRealmAddressPostalCode(
@@ -203,10 +203,10 @@ public class PolicyActivityImpl extends ActImpl implements PolicyActivity {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validatePolicyActivityPayerPayerAssignedEntityUSRealmAddressState(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return PolicyActivityOperations.validatePolicyActivityPayerPayerAssignedEntityUSRealmAddressState(
@@ -214,10 +214,10 @@ public class PolicyActivityImpl extends ActImpl implements PolicyActivity {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validatePolicyActivityPayerPayerAssignedEntityUSRealmAddressStreetAddressLine(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PolicyActivityOperations.validatePolicyActivityPayerPayerAssignedEntityUSRealmAddressStreetAddressLine(
@@ -225,10 +225,10 @@ public class PolicyActivityImpl extends ActImpl implements PolicyActivity {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validatePolicyActivityPayerPayerAssignedEntityUSRealmAddressUseP(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return PolicyActivityOperations.validatePolicyActivityPayerPayerAssignedEntityUSRealmAddressUseP(
@@ -236,10 +236,10 @@ public class PolicyActivityImpl extends ActImpl implements PolicyActivity {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validatePolicyActivityPayerPayerAssignedEntityUSRealmAddressUse(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return PolicyActivityOperations.validatePolicyActivityPayerPayerAssignedEntityUSRealmAddressUse(
@@ -247,10 +247,10 @@ public class PolicyActivityImpl extends ActImpl implements PolicyActivity {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validatePolicyActivityPayerPayerAssignedEntityPayerOrganizationName(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return PolicyActivityOperations.validatePolicyActivityPayerPayerAssignedEntityPayerOrganizationName(
@@ -258,50 +258,50 @@ public class PolicyActivityImpl extends ActImpl implements PolicyActivity {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validatePolicyActivityPayerPayerAssignedEntityId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return PolicyActivityOperations.validatePolicyActivityPayerPayerAssignedEntityId(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validatePolicyActivityPayerPayerAssignedEntityCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return PolicyActivityOperations.validatePolicyActivityPayerPayerAssignedEntityCode(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	* <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validatePolicyActivityPayerPayerAssignedEntityCodeP(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return PolicyActivityOperations.validatePolicyActivityPayerPayerAssignedEntityCodeP(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validatePolicyActivityPayerPayerAssignedEntityAddr(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return PolicyActivityOperations.validatePolicyActivityPayerPayerAssignedEntityAddr(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validatePolicyActivityPayerPayerAssignedEntityTelecom(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return PolicyActivityOperations.validatePolicyActivityPayerPayerAssignedEntityTelecom(
@@ -309,10 +309,10 @@ public class PolicyActivityImpl extends ActImpl implements PolicyActivity {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validatePolicyActivityPayerPayerAssignedEntityPayerOrganization(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return PolicyActivityOperations.validatePolicyActivityPayerPayerAssignedEntityPayerOrganization(
@@ -320,38 +320,38 @@ public class PolicyActivityImpl extends ActImpl implements PolicyActivity {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	* <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validatePolicyActivityPayerTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PolicyActivityOperations.validatePolicyActivityPayerTemplateId(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validatePolicyActivityPayerTypeCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PolicyActivityOperations.validatePolicyActivityPayerTypeCode(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validatePolicyActivityPayerPayerAssignedEntity(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return PolicyActivityOperations.validatePolicyActivityPayerPayerAssignedEntity(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validatePolicyActivityGuarantorGuarantorAssignedEntityUSRealmAddressStreet(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PolicyActivityOperations.validatePolicyActivityGuarantorGuarantorAssignedEntityUSRealmAddressStreet(
@@ -359,10 +359,10 @@ public class PolicyActivityImpl extends ActImpl implements PolicyActivity {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validatePolicyActivityGuarantorGuarantorAssignedEntityUSRealmAddressCity(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PolicyActivityOperations.validatePolicyActivityGuarantorGuarantorAssignedEntityUSRealmAddressCity(
@@ -370,10 +370,10 @@ public class PolicyActivityImpl extends ActImpl implements PolicyActivity {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validatePolicyActivityGuarantorGuarantorAssignedEntityUSRealmAddressCountry(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PolicyActivityOperations.validatePolicyActivityGuarantorGuarantorAssignedEntityUSRealmAddressCountry(
@@ -381,10 +381,10 @@ public class PolicyActivityImpl extends ActImpl implements PolicyActivity {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validatePolicyActivityGuarantorGuarantorAssignedEntityUSRealmAddressPostalCode(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PolicyActivityOperations.validatePolicyActivityGuarantorGuarantorAssignedEntityUSRealmAddressPostalCode(
@@ -392,10 +392,10 @@ public class PolicyActivityImpl extends ActImpl implements PolicyActivity {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validatePolicyActivityGuarantorGuarantorAssignedEntityUSRealmAddressState(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PolicyActivityOperations.validatePolicyActivityGuarantorGuarantorAssignedEntityUSRealmAddressState(
@@ -403,10 +403,10 @@ public class PolicyActivityImpl extends ActImpl implements PolicyActivity {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validatePolicyActivityGuarantorGuarantorAssignedEntityUSRealmAddressStreetAddressLine(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PolicyActivityOperations.validatePolicyActivityGuarantorGuarantorAssignedEntityUSRealmAddressStreetAddressLine(
@@ -414,10 +414,10 @@ public class PolicyActivityImpl extends ActImpl implements PolicyActivity {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validatePolicyActivityGuarantorGuarantorAssignedEntityUSRealmAddressUseP(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PolicyActivityOperations.validatePolicyActivityGuarantorGuarantorAssignedEntityUSRealmAddressUseP(
@@ -425,10 +425,10 @@ public class PolicyActivityImpl extends ActImpl implements PolicyActivity {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validatePolicyActivityGuarantorGuarantorAssignedEntityUSRealmAddressUse(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return PolicyActivityOperations.validatePolicyActivityGuarantorGuarantorAssignedEntityUSRealmAddressUse(
@@ -436,10 +436,10 @@ public class PolicyActivityImpl extends ActImpl implements PolicyActivity {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validatePolicyActivityGuarantorGuarantorAssignedEntityPersonNameAndOrOrgName(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PolicyActivityOperations.validatePolicyActivityGuarantorGuarantorAssignedEntityPersonNameAndOrOrgName(
@@ -447,10 +447,10 @@ public class PolicyActivityImpl extends ActImpl implements PolicyActivity {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validatePolicyActivityGuarantorGuarantorAssignedEntityCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return PolicyActivityOperations.validatePolicyActivityGuarantorGuarantorAssignedEntityCode(
@@ -458,10 +458,10 @@ public class PolicyActivityImpl extends ActImpl implements PolicyActivity {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	* <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validatePolicyActivityGuarantorGuarantorAssignedEntityCodeP(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return PolicyActivityOperations.validatePolicyActivityGuarantorGuarantorAssignedEntityCodeP(
@@ -469,10 +469,10 @@ public class PolicyActivityImpl extends ActImpl implements PolicyActivity {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validatePolicyActivityGuarantorGuarantorAssignedEntityAddr(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return PolicyActivityOperations.validatePolicyActivityGuarantorGuarantorAssignedEntityAddr(
@@ -480,10 +480,10 @@ public class PolicyActivityImpl extends ActImpl implements PolicyActivity {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validatePolicyActivityGuarantorGuarantorAssignedEntityTelecom(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return PolicyActivityOperations.validatePolicyActivityGuarantorGuarantorAssignedEntityTelecom(
@@ -491,37 +491,37 @@ public class PolicyActivityImpl extends ActImpl implements PolicyActivity {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	* <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validatePolicyActivityGuarantorTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PolicyActivityOperations.validatePolicyActivityGuarantorTemplateId(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validatePolicyActivityGuarantorTime(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PolicyActivityOperations.validatePolicyActivityGuarantorTime(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validatePolicyActivityGuarantorTypeCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PolicyActivityOperations.validatePolicyActivityGuarantorTypeCode(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validatePolicyActivityGuarantorGuarantorAssignedEntity(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return PolicyActivityOperations.validatePolicyActivityGuarantorGuarantorAssignedEntity(
@@ -529,10 +529,10 @@ public class PolicyActivityImpl extends ActImpl implements PolicyActivity {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validatePolicyActivityCoverageCoverageRoleUSRealmAddressStreet(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return PolicyActivityOperations.validatePolicyActivityCoverageCoverageRoleUSRealmAddressStreet(
@@ -540,10 +540,10 @@ public class PolicyActivityImpl extends ActImpl implements PolicyActivity {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validatePolicyActivityCoverageCoverageRoleUSRealmAddressCity(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return PolicyActivityOperations.validatePolicyActivityCoverageCoverageRoleUSRealmAddressCity(
@@ -551,10 +551,10 @@ public class PolicyActivityImpl extends ActImpl implements PolicyActivity {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validatePolicyActivityCoverageCoverageRoleUSRealmAddressCountry(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return PolicyActivityOperations.validatePolicyActivityCoverageCoverageRoleUSRealmAddressCountry(
@@ -562,10 +562,10 @@ public class PolicyActivityImpl extends ActImpl implements PolicyActivity {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validatePolicyActivityCoverageCoverageRoleUSRealmAddressPostalCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return PolicyActivityOperations.validatePolicyActivityCoverageCoverageRoleUSRealmAddressPostalCode(
@@ -573,10 +573,10 @@ public class PolicyActivityImpl extends ActImpl implements PolicyActivity {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validatePolicyActivityCoverageCoverageRoleUSRealmAddressState(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return PolicyActivityOperations.validatePolicyActivityCoverageCoverageRoleUSRealmAddressState(
@@ -584,10 +584,10 @@ public class PolicyActivityImpl extends ActImpl implements PolicyActivity {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validatePolicyActivityCoverageCoverageRoleUSRealmAddressStreetAddressLine(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PolicyActivityOperations.validatePolicyActivityCoverageCoverageRoleUSRealmAddressStreetAddressLine(
@@ -595,10 +595,10 @@ public class PolicyActivityImpl extends ActImpl implements PolicyActivity {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validatePolicyActivityCoverageCoverageRoleUSRealmAddressUseP(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return PolicyActivityOperations.validatePolicyActivityCoverageCoverageRoleUSRealmAddressUseP(
@@ -606,10 +606,10 @@ public class PolicyActivityImpl extends ActImpl implements PolicyActivity {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validatePolicyActivityCoverageCoverageRoleUSRealmAddressUse(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return PolicyActivityOperations.validatePolicyActivityCoverageCoverageRoleUSRealmAddressUse(
@@ -617,10 +617,10 @@ public class PolicyActivityImpl extends ActImpl implements PolicyActivity {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validatePolicyActivityCoverageCoverageRoleCoveragePlayingEntityName(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return PolicyActivityOperations.validatePolicyActivityCoverageCoverageRoleCoveragePlayingEntityName(
@@ -628,49 +628,49 @@ public class PolicyActivityImpl extends ActImpl implements PolicyActivity {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validatePolicyActivityCoverageCoverageRoleId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PolicyActivityOperations.validatePolicyActivityCoverageCoverageRoleId(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validatePolicyActivityCoverageCoverageRoleCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return PolicyActivityOperations.validatePolicyActivityCoverageCoverageRoleCode(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	* <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validatePolicyActivityCoverageCoverageRoleCodeP(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return PolicyActivityOperations.validatePolicyActivityCoverageCoverageRoleCodeP(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validatePolicyActivityCoverageCoverageRoleAddr(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return PolicyActivityOperations.validatePolicyActivityCoverageCoverageRoleAddr(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validatePolicyActivityCoverageCoverageRoleCoveragePlayingEntity(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return PolicyActivityOperations.validatePolicyActivityCoverageCoverageRoleCoveragePlayingEntity(
@@ -678,64 +678,64 @@ public class PolicyActivityImpl extends ActImpl implements PolicyActivity {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validatePolicyActivityCoverageLowTime(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PolicyActivityOperations.validatePolicyActivityCoverageLowTime(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validatePolicyActivityCoverageHighTime(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PolicyActivityOperations.validatePolicyActivityCoverageHighTime(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	* <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validatePolicyActivityCoverageTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PolicyActivityOperations.validatePolicyActivityCoverageTemplateId(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validatePolicyActivityCoverageTypeCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PolicyActivityOperations.validatePolicyActivityCoverageTypeCode(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validatePolicyActivityCoverageTime(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PolicyActivityOperations.validatePolicyActivityCoverageTime(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validatePolicyActivityCoverageCoverageRole(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PolicyActivityOperations.validatePolicyActivityCoverageCoverageRole(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validatePolicyActivityHolderHolderRoleUSRealmAddressStreet(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return PolicyActivityOperations.validatePolicyActivityHolderHolderRoleUSRealmAddressStreet(
@@ -743,10 +743,10 @@ public class PolicyActivityImpl extends ActImpl implements PolicyActivity {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validatePolicyActivityHolderHolderRoleUSRealmAddressCity(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return PolicyActivityOperations.validatePolicyActivityHolderHolderRoleUSRealmAddressCity(
@@ -754,10 +754,10 @@ public class PolicyActivityImpl extends ActImpl implements PolicyActivity {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validatePolicyActivityHolderHolderRoleUSRealmAddressCountry(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return PolicyActivityOperations.validatePolicyActivityHolderHolderRoleUSRealmAddressCountry(
@@ -765,10 +765,10 @@ public class PolicyActivityImpl extends ActImpl implements PolicyActivity {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validatePolicyActivityHolderHolderRoleUSRealmAddressPostalCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return PolicyActivityOperations.validatePolicyActivityHolderHolderRoleUSRealmAddressPostalCode(
@@ -776,10 +776,10 @@ public class PolicyActivityImpl extends ActImpl implements PolicyActivity {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validatePolicyActivityHolderHolderRoleUSRealmAddressState(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return PolicyActivityOperations.validatePolicyActivityHolderHolderRoleUSRealmAddressState(
@@ -787,10 +787,10 @@ public class PolicyActivityImpl extends ActImpl implements PolicyActivity {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validatePolicyActivityHolderHolderRoleUSRealmAddressStreetAddressLine(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return PolicyActivityOperations.validatePolicyActivityHolderHolderRoleUSRealmAddressStreetAddressLine(
@@ -798,10 +798,10 @@ public class PolicyActivityImpl extends ActImpl implements PolicyActivity {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validatePolicyActivityHolderHolderRoleUSRealmAddressUseP(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return PolicyActivityOperations.validatePolicyActivityHolderHolderRoleUSRealmAddressUseP(
@@ -809,10 +809,10 @@ public class PolicyActivityImpl extends ActImpl implements PolicyActivity {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validatePolicyActivityHolderHolderRoleUSRealmAddressUse(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return PolicyActivityOperations.validatePolicyActivityHolderHolderRoleUSRealmAddressUse(
@@ -820,64 +820,64 @@ public class PolicyActivityImpl extends ActImpl implements PolicyActivity {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validatePolicyActivityHolderHolderRoleId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PolicyActivityOperations.validatePolicyActivityHolderHolderRoleId(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validatePolicyActivityHolderHolderRoleAddr(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PolicyActivityOperations.validatePolicyActivityHolderHolderRoleAddr(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	* <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validatePolicyActivityHolderTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PolicyActivityOperations.validatePolicyActivityHolderTemplateId(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validatePolicyActivityHolderTypeCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PolicyActivityOperations.validatePolicyActivityHolderTypeCode(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validatePolicyActivityHolderTime(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PolicyActivityOperations.validatePolicyActivityHolderTime(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validatePolicyActivityHolderHolderRole(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PolicyActivityOperations.validatePolicyActivityHolderHolderRole(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	* <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validatePolicyActivityEntryRelationshipTargetActActivity(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return PolicyActivityOperations.validatePolicyActivityEntryRelationshipTargetActActivity(
@@ -885,10 +885,10 @@ public class PolicyActivityImpl extends ActImpl implements PolicyActivity {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validatePolicyActivityEntryRelationshipDescriptionCoveragePlan(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return PolicyActivityOperations.validatePolicyActivityEntryRelationshipDescriptionCoveragePlan(
@@ -896,20 +896,20 @@ public class PolicyActivityImpl extends ActImpl implements PolicyActivity {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validatePolicyActivityEntryRelationshipTypeCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return PolicyActivityOperations.validatePolicyActivityEntryRelationshipTypeCode(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public PolicyActivity init() {
 		return Initializer.Util.init(this);
 	}

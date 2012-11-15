@@ -33,29 +33,29 @@ import org.openhealthtools.mdht.uml.cda.impl.SectionImpl;
 public class ChiefComplaintAndReasonForVisitSectionImpl extends SectionImpl implements
 		ChiefComplaintAndReasonForVisitSection {
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	protected ChiefComplaintAndReasonForVisitSectionImpl() {
 		super();
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	@Override
 	protected EClass eStaticClass() {
 		return ConsolPackage.Literals.CHIEF_COMPLAINT_AND_REASON_FOR_VISIT_SECTION;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateChiefComplaintAndReasonForVisitSectionTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ChiefComplaintAndReasonForVisitSectionOperations.validateChiefComplaintAndReasonForVisitSectionTemplateId(
@@ -63,10 +63,10 @@ public class ChiefComplaintAndReasonForVisitSectionImpl extends SectionImpl impl
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateChiefComplaintAndReasonForVisitSectionCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ChiefComplaintAndReasonForVisitSectionOperations.validateChiefComplaintAndReasonForVisitSectionCode(
@@ -74,10 +74,10 @@ public class ChiefComplaintAndReasonForVisitSectionImpl extends SectionImpl impl
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	* <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateChiefComplaintAndReasonForVisitSectionCodeP(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ChiefComplaintAndReasonForVisitSectionOperations.validateChiefComplaintAndReasonForVisitSectionCodeP(
@@ -85,10 +85,10 @@ public class ChiefComplaintAndReasonForVisitSectionImpl extends SectionImpl impl
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateChiefComplaintAndReasonForVisitSectionText(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ChiefComplaintAndReasonForVisitSectionOperations.validateChiefComplaintAndReasonForVisitSectionText(
@@ -96,10 +96,10 @@ public class ChiefComplaintAndReasonForVisitSectionImpl extends SectionImpl impl
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateChiefComplaintAndReasonForVisitSectionTitle(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ChiefComplaintAndReasonForVisitSectionOperations.validateChiefComplaintAndReasonForVisitSectionTitle(
@@ -107,10 +107,10 @@ public class ChiefComplaintAndReasonForVisitSectionImpl extends SectionImpl impl
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public ChiefComplaintAndReasonForVisitSection init() {
 		return Initializer.Util.init(this);
 	}

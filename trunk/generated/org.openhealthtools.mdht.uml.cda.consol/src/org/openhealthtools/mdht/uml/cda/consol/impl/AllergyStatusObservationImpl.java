@@ -32,83 +32,83 @@ import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
  */
 public class AllergyStatusObservationImpl extends ObservationImpl implements AllergyStatusObservation {
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	protected AllergyStatusObservationImpl() {
 		super();
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	@Override
 	protected EClass eStaticClass() {
 		return ConsolPackage.Literals.ALLERGY_STATUS_OBSERVATION;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateAllergyStatusObservationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return AllergyStatusObservationOperations.validateAllergyStatusObservationTemplateId(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateAllergyStatusObservationClassCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return AllergyStatusObservationOperations.validateAllergyStatusObservationClassCode(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateAllergyStatusObservationMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return AllergyStatusObservationOperations.validateAllergyStatusObservationMoodCode(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateAllergyStatusObservationCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return AllergyStatusObservationOperations.validateAllergyStatusObservationCode(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateAllergyStatusObservationStatusCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return AllergyStatusObservationOperations.validateAllergyStatusObservationStatusCode(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateAllergyStatusObservationValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return AllergyStatusObservationOperations.validateAllergyStatusObservationValue(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public AllergyStatusObservation init() {
 		return Initializer.Util.init(this);
 	}

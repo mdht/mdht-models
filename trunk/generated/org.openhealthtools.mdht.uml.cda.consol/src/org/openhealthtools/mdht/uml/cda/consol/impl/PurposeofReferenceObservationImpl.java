@@ -32,29 +32,29 @@ import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
  */
 public class PurposeofReferenceObservationImpl extends ObservationImpl implements PurposeofReferenceObservation {
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	protected PurposeofReferenceObservationImpl() {
 		super();
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	@Override
 	protected EClass eStaticClass() {
 		return ConsolPackage.Literals.PURPOSEOF_REFERENCE_OBSERVATION;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validatePurposeofReferenceObservationCodeCodeSystem(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return PurposeofReferenceObservationOperations.validatePurposeofReferenceObservationCodeCodeSystem(
@@ -62,10 +62,10 @@ public class PurposeofReferenceObservationImpl extends ObservationImpl implement
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validatePurposeofReferenceObservationTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return PurposeofReferenceObservationOperations.validatePurposeofReferenceObservationTemplateId(
@@ -73,10 +73,10 @@ public class PurposeofReferenceObservationImpl extends ObservationImpl implement
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validatePurposeofReferenceObservationClassCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return PurposeofReferenceObservationOperations.validatePurposeofReferenceObservationClassCode(
@@ -84,20 +84,20 @@ public class PurposeofReferenceObservationImpl extends ObservationImpl implement
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validatePurposeofReferenceObservationCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PurposeofReferenceObservationOperations.validatePurposeofReferenceObservationCode(
 			this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validatePurposeofReferenceObservationMoodCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return PurposeofReferenceObservationOperations.validatePurposeofReferenceObservationMoodCode(
@@ -105,20 +105,20 @@ public class PurposeofReferenceObservationImpl extends ObservationImpl implement
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validatePurposeofReferenceObservationValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PurposeofReferenceObservationOperations.validatePurposeofReferenceObservationValue(
 			this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public PurposeofReferenceObservation init() {
 		return Initializer.Util.init(this);
 	}

@@ -32,29 +32,29 @@ import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
  */
 public class PlanOfCareActivityObservationImpl extends ObservationImpl implements PlanOfCareActivityObservation {
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	protected PlanOfCareActivityObservationImpl() {
 		super();
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	@Override
 	protected EClass eStaticClass() {
 		return ConsolPackage.Literals.PLAN_OF_CARE_ACTIVITY_OBSERVATION;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validatePlanOfCareActivityObservationTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return PlanOfCareActivityObservationOperations.validatePlanOfCareActivityObservationTemplateId(
@@ -62,10 +62,10 @@ public class PlanOfCareActivityObservationImpl extends ObservationImpl implement
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validatePlanOfCareActivityObservationClassCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return PlanOfCareActivityObservationOperations.validatePlanOfCareActivityObservationClassCode(
@@ -73,10 +73,10 @@ public class PlanOfCareActivityObservationImpl extends ObservationImpl implement
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validatePlanOfCareActivityObservationMoodCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return PlanOfCareActivityObservationOperations.validatePlanOfCareActivityObservationMoodCode(
@@ -84,20 +84,20 @@ public class PlanOfCareActivityObservationImpl extends ObservationImpl implement
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validatePlanOfCareActivityObservationId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PlanOfCareActivityObservationOperations.validatePlanOfCareActivityObservationId(
 			this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public PlanOfCareActivityObservation init() {
 		return Initializer.Util.init(this);
 	}
