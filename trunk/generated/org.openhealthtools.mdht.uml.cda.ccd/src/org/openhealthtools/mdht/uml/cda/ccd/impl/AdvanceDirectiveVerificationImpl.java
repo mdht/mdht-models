@@ -91,10 +91,10 @@ public class AdvanceDirectiveVerificationImpl extends Participant2Impl implement
 	}
 
 	/**
-	   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	   * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	public AdvanceDirectiveVerification init(Iterable<? extends Initializer<? extends EObject>> initializers) {
 		Initializer.Util.init(this, initializers);
 		return this;

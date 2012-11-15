@@ -105,10 +105,10 @@ public class PlanOfCareActivitySubstanceAdministrationImpl extends SubstanceAdmi
 	}
 
 	/**
-	   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	   * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	public PlanOfCareActivitySubstanceAdministration init(
 			Iterable<? extends Initializer<? extends EObject>> initializers) {
 		Initializer.Util.init(this, initializers);

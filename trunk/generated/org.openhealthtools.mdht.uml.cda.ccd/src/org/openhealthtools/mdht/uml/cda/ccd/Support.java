@@ -32,9 +32,9 @@ public interface Support extends EObject {
 	public Support init();
 
 	/**
-	   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	   * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	public Support init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // Support

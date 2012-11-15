@@ -32,9 +32,9 @@ public interface MedicationStatusObservation extends StatusObservation {
 	public MedicationStatusObservation init();
 
 	/**
-	   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	   * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	public MedicationStatusObservation init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // MedicationStatusObservation

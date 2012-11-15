@@ -152,9 +152,9 @@ public interface StatusObservation extends Observation {
 	public StatusObservation init();
 
 	/**
-	   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	   * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	public StatusObservation init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // StatusObservation

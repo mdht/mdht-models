@@ -226,9 +226,9 @@ public interface ProcedureActivityAct extends Act, ProcedureActivity {
 	public ProcedureActivityAct init();
 
 	/**
-	   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	   * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	public ProcedureActivityAct init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // ProcedureActivityAct

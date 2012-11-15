@@ -133,9 +133,9 @@ public interface EpisodeObservation extends Observation {
 	public EpisodeObservation init();
 
 	/**
-	   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	   * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	public EpisodeObservation init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // EpisodeObservation

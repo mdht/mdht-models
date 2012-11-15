@@ -131,9 +131,9 @@ public interface ResultsSection extends Section {
 	public ResultsSection init();
 
 	/**
-	   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	   * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	public ResultsSection init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // ResultsSection

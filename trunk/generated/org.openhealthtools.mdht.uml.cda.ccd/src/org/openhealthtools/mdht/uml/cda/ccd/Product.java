@@ -144,9 +144,9 @@ public interface Product extends ManufacturedProduct {
 	public Product init();
 
 	/**
-	   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	   * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	public Product init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // Product

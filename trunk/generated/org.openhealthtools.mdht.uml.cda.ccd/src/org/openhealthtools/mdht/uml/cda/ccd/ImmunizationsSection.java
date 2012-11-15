@@ -140,9 +140,9 @@ public interface ImmunizationsSection extends Section {
 	public ImmunizationsSection init();
 
 	/**
-	   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	   * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	public ImmunizationsSection init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // ImmunizationsSection

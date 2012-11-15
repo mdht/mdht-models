@@ -241,9 +241,9 @@ public interface ProcedureActivityProcedure extends Procedure, ProcedureActivity
 	public ProcedureActivityProcedure init();
 
 	/**
-	   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	   * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	public ProcedureActivityProcedure init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // ProcedureActivityProcedure

@@ -32,9 +32,9 @@ public interface AlertStatusObservation extends StatusObservation {
 	public AlertStatusObservation init();
 
 	/**
-	   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	   * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	public AlertStatusObservation init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // AlertStatusObservation

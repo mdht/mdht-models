@@ -60,10 +60,10 @@ public class ProblemHealthStatusObservationImpl extends StatusObservationImpl im
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	@Override
 	public boolean validateStatusObservationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProblemHealthStatusObservationOperations.validateStatusObservationTemplateId(this, diagnostics, context);
@@ -80,10 +80,10 @@ public class ProblemHealthStatusObservationImpl extends StatusObservationImpl im
 	}
 
 	/**
-	   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	   * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	@Override
 	public ProblemHealthStatusObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
 		Initializer.Util.init(this, initializers);

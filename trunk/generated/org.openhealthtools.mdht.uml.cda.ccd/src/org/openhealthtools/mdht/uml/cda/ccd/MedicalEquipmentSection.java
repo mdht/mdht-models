@@ -136,9 +136,9 @@ public interface MedicalEquipmentSection extends Section {
 	public MedicalEquipmentSection init();
 
 	/**
-	   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	   * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	public MedicalEquipmentSection init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // MedicalEquipmentSection

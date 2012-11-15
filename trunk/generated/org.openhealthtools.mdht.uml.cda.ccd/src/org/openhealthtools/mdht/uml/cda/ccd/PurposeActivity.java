@@ -129,9 +129,9 @@ public interface PurposeActivity extends Act {
 	public PurposeActivity init();
 
 	/**
-	   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	   * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	public PurposeActivity init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // PurposeActivity

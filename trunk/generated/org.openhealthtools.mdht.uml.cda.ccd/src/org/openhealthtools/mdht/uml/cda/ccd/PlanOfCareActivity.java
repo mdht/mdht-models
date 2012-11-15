@@ -32,9 +32,9 @@ public interface PlanOfCareActivity extends EObject {
 	public PlanOfCareActivity init();
 
 	/**
-	   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	   * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	public PlanOfCareActivity init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // PlanOfCareActivity

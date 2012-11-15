@@ -134,9 +134,9 @@ public interface AuthorizationActivity extends Act {
 	public AuthorizationActivity init();
 
 	/**
-	   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	   * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	public AuthorizationActivity init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // AuthorizationActivity

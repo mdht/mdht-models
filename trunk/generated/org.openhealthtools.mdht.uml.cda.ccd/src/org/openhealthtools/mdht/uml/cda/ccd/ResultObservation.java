@@ -192,9 +192,9 @@ public interface ResultObservation extends Observation {
 	public ResultObservation init();
 
 	/**
-	   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	   * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	public ResultObservation init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // ResultObservation

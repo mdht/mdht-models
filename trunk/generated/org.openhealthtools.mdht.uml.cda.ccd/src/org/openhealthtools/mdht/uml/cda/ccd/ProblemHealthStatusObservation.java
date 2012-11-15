@@ -40,16 +40,16 @@ public interface ProblemHealthStatusObservation extends StatusObservation {
 	boolean validateProblemHealthStatusObservationCode(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public ProblemHealthStatusObservation init();
 
 	/**
-	   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	   * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	public ProblemHealthStatusObservation init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // ProblemHealthStatusObservation

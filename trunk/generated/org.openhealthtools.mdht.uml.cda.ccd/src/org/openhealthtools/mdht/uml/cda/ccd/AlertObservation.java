@@ -223,9 +223,9 @@ public interface AlertObservation extends Observation {
 	public AlertObservation init();
 
 	/**
-	   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	   * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	public AlertObservation init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // AlertObservation

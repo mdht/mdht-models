@@ -154,9 +154,9 @@ public interface CoverageActivity extends Act {
 	public CoverageActivity init();
 
 	/**
-	   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	   * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	public CoverageActivity init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // CoverageActivity

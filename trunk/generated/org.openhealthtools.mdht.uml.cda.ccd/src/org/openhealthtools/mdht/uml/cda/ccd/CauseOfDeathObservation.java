@@ -32,9 +32,9 @@ public interface CauseOfDeathObservation extends FamilyHistoryObservation {
 	public CauseOfDeathObservation init();
 
 	/**
-	   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	   * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	public CauseOfDeathObservation init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // CauseOfDeathObservation

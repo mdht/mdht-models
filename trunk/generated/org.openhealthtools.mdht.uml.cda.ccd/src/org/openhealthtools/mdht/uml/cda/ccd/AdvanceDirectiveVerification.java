@@ -72,9 +72,9 @@ public interface AdvanceDirectiveVerification extends Participant2 {
 	public AdvanceDirectiveVerification init();
 
 	/**
-	   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	   * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	public AdvanceDirectiveVerification init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // AdvanceDirectiveVerification

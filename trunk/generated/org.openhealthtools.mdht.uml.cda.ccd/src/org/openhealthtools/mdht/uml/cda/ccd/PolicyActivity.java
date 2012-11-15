@@ -245,9 +245,9 @@ public interface PolicyActivity extends Act {
 	public PolicyActivity init();
 
 	/**
-	   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	   * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	public PolicyActivity init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // PolicyActivity

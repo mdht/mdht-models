@@ -201,9 +201,9 @@ public interface FunctionalStatusSection extends Section {
 	public FunctionalStatusSection init();
 
 	/**
-	   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	   * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	public FunctionalStatusSection init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // FunctionalStatusSection
