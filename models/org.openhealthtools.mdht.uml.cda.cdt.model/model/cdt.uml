@@ -46,7 +46,9 @@ a small fee anywhere in the world and is located at:&lt;/p>&#xD;
           <language>XPath</language>
           <body>All patient, guardianPerson, assignedPerson, maintainingPerson, relatedPerson, intendedRecipient/informationRecipient, associatedPerson, and relatedSubject/subject elements have a name.</body>
           <body>-- implemented in Java using XPath selector</body>
-          <body>*[self::cda:patient or self::cda:guardianPerson or self::cda:assignedPerson&#xD;&#xA;   or self::cda:maintainingPerson or self::cda:relatedPerson or self::cda:associatedPerson&#xD;&#xA;   or self::cda:intendedRecipient/cda:informationRecipient or self::cda:relatedSubject/cda:subject]</body>
+          <body>*[self::cda:patient or self::cda:guardianPerson or self::cda:assignedPerson&#xD;
+   or self::cda:maintainingPerson or self::cda:relatedPerson or self::cda:associatedPerson&#xD;
+   or self::cda:intendedRecipient/cda:informationRecipient or self::cda:relatedSubject/cda:subject]</body>
         </specification>
       </ownedRule>
       <ownedRule xmi:id="_1NhIQPzSEd-9y7w_HH-hnA" name="rolesShallHaveAddrAndTelecom" constrainedElement="_MwGRIGeLEd-ilOLYnIx0jA">
@@ -91,7 +93,11 @@ vocabulary.</body>
           <language>Analysis</language>
           <language>XPath</language>
           <language>OCL</language>
-          <body>Times or time intervals found in the ClinicalDocument/effectiveTime,&#xD;&#xA;author/time, dataEnterer/time, legalAuthenticator/time, authenticator/time and&#xD;&#xA;encompassingEncounter/effectiveTime elements SHALL be precise to the day, SHALL&#xD;&#xA;include a time zone if more precise than to the day, and SHOULD be precise to the&#xD;&#xA;second.</body>
+          <body>Times or time intervals found in the ClinicalDocument/effectiveTime,&#xD;
+author/time, dataEnterer/time, legalAuthenticator/time, authenticator/time and&#xD;
+encompassingEncounter/effectiveTime elements SHALL be precise to the day, SHALL&#xD;
+include a time zone if more precise than to the day, and SHOULD be precise to the&#xD;
+second.</body>
           <body>/cda:ClinicalDocument/cda:effectiveTime | //cda:author/cda:time | //cda:dataEnterer/cda:time | //cda:encompassingEncounter/cda:effectiveTime</body>
           <body>-- implemented in Java using XPath selector</body>
         </specification>
@@ -100,7 +106,11 @@ vocabulary.</body>
         <specification xmi:type="uml:OpaqueExpression" xmi:id="_kI_84AbOEeC15aCUY_wo_g">
           <language>Analysis</language>
           <language>OCL</language>
-          <body>Times or time intervals found in the asOrganizationPartOf/effectiveTime,&#xD;&#xA;asMaintainedEntity/effectiveTime, relatedEntity/effectiveTime,&#xD;&#xA;serviceEvent/effectiveTime, ClinicalDocument/participant/time,&#xD;&#xA;serviceEvent/performer/time and encounterParticipant/time SHALL be precise at&#xD;&#xA;least to the year, SHOULD be precise to the day, and MAY omit time zone.</body>
+          <body>Times or time intervals found in the asOrganizationPartOf/effectiveTime,&#xD;
+asMaintainedEntity/effectiveTime, relatedEntity/effectiveTime,&#xD;
+serviceEvent/effectiveTime, ClinicalDocument/participant/time,&#xD;
+serviceEvent/performer/time and encounterParticipant/time SHALL be precise at&#xD;
+least to the year, SHOULD be precise to the day, and MAY omit time zone.</body>
           <body>cda::OrganizationPartOf.allInstances()->select( effectiveTime.oclIsUndefined()).oclAsType( ecore::EObject)-> union(  cda::MaintainedEntity.allInstances()->select( effectiveTime.oclIsUndefined()).oclAsType( ecore::EObject) )->union( cda::RelatedEntity.allInstances()->select( effectiveTime.oclIsUndefined()).oclAsType( ecore::EObject) )->union(cda::RelatedEntity.allInstances()->select( effectiveTime.oclIsUndefined()).oclAsType( ecore::EObject) )->union(cda::RelatedEntity.allInstances()->select( effectiveTime.oclIsUndefined()).oclAsType( ecore::EObject) )->union(cda::ServiceEvent.allInstances()->select( effectiveTime.oclIsUndefined()).oclAsType( ecore::EObject) )->union(cda::EncounterParticipant.allInstances()->select( time.oclIsUndefined()).oclAsType( ecore::EObject))->union(self.participant->select( time.oclIsUndefined()).oclAsType( ecore::EObject))->union(cda::OrganizationPartOf.allInstances().effectiveTime->union(cda::MaintainedEntity.allInstances().effectiveTime)->union( cda::RelatedEntity.allInstances().effectiveTime)->union(cda::RelatedEntity.allInstances().effectiveTime)->union(cda::RelatedEntity.allInstances().effectiveTime)->union(cda::ServiceEvent.allInstances().effectiveTime)->union(cda::EncounterParticipant.allInstances().time)->union(self.participant.time)->select(current : datatypes::IVL_TS  |  ((not current.low.oclIsUndefined()) and (current.low.value.oclIsUndefined() or current.low.value.size() &lt; 4)) or ((not current.center.oclIsUndefined()) and (current.center.value.oclIsUndefined() or current.center.value.size() &lt; 4)) or ((not current.high.oclIsUndefined()) and (current.high.value.oclIsUndefined() or current.high.value.size() &lt; 4)) or (current.low.oclIsUndefined() and current.center.oclIsUndefined() and current.high.oclIsUndefined()) ).oclAsType( ecore::EObject))</body>
         </specification>
       </ownedRule>
@@ -249,7 +259,8 @@ element.</body>
           <language>Analysis</language>
           <language>OCL</language>
           <body>Both setId and versionNumber SHALL be present or both SHALL be absent.</body>
-          <body>(self.setId.oclIsUndefined() and self.versionNumber.oclIsUndefined())&#xD;&#xA;   xor (not self.setId.oclIsUndefined() and not self.versionNumber.oclIsUndefined())</body>
+          <body>(self.setId.oclIsUndefined() and self.versionNumber.oclIsUndefined())&#xD;
+   xor (not self.setId.oclIsUndefined() and not self.versionNumber.oclIsUndefined())</body>
         </specification>
       </ownedRule>
       <ownedRule xmi:id="_pLdlEHPtEd-9_cvcE5QEwg" name="setIdAndIdAreUnique" constrainedElement="_MwGRIGeLEd-ilOLYnIx0jA">
@@ -257,7 +268,8 @@ element.</body>
           <language>Analysis</language>
           <language>OCL</language>
           <body>The @extension and/or @root of setId and id SHALL be different when both are present.</body>
-          <body>(not self.setId.oclIsUndefined() and not self.id.oclIsUndefined())&#xD;&#xA;   implies (self.setId.root &lt;> self.id.root or self.setId.extension &lt;> self.id.extension)</body>
+          <body>(not self.setId.oclIsUndefined() and not self.id.oclIsUndefined())&#xD;
+   implies (self.setId.root &lt;> self.id.root or self.setId.extension &lt;> self.id.extension)</body>
         </specification>
       </ownedRule>
       <ownedRule xmi:id="_GI9PIHPuEd-9_cvcE5QEwg" name="copyTimeNotPresent" constrainedElement="_MwGRIGeLEd-ilOLYnIx0jA">
@@ -283,8 +295,13 @@ element.</body>
         <specification xmi:type="uml:OpaqueExpression" xmi:id="_IJul4AbfEeC15aCUY_wo_g">
           <language>Analysis</language>
           <language>OCL</language>
-          <body>A patient/birthTime element SHALL be present. The patient/birthTime&#xD;&#xA;element SHALL be precise at least to the year, and SHOULD be precise at least to the&#xD;&#xA;day, and MAY omit time zone. If unknown, it SHALL be represented using a flavor of&#xD;&#xA;null.</body>
-          <body>self.recordTarget->forAll(target : cda::RecordTarget | not target.patientRole.oclIsUndefined()&#xD;&#xA;   implies (not target.patientRole.patient.birthTime.value.oclIsUndefined()&#xD;&#xA;      or not target.patientRole.patient.birthTime.nullFlavor.oclIsUndefined()))</body>
+          <body>A patient/birthTime element SHALL be present. The patient/birthTime&#xD;
+element SHALL be precise at least to the year, and SHOULD be precise at least to the&#xD;
+day, and MAY omit time zone. If unknown, it SHALL be represented using a flavor of&#xD;
+null.</body>
+          <body>self.recordTarget->forAll(target : cda::RecordTarget | not target.patientRole.oclIsUndefined()&#xD;
+   implies (not target.patientRole.patient.birthTime.value.oclIsUndefined()&#xD;
+      or not target.patientRole.patient.birthTime.nullFlavor.oclIsUndefined()))</body>
         </specification>
       </ownedRule>
       <ownedRule xmi:id="_XSql0AbdEeC15aCUY_wo_g" name="hasAdministrativeGenderCode" constrainedElement="_MwGRIGeLEd-ilOLYnIx0jA">
@@ -294,14 +311,22 @@ element.</body>
         <specification xmi:type="uml:OpaqueExpression" xmi:id="_sIuN4AcNEeC15aCUY_wo_g">
           <language>Analysis</language>
           <language>OCL</language>
-          <body>A patient/administrativeGenderCode element SHALL be present. If&#xD;&#xA;unknown, it SHALL be represented using a flavor of null. Values for&#xD;&#xA;administrativeGenderCode SHOULD be drawn from the HL7 AdministrativeGender&#xD;&#xA;vocabulary.</body>
-          <body>self.recordTarget->forAll(target : cda::RecordTarget | not target.patientRole.oclIsUndefined()&#xD;&#xA;   implies (not target.patientRole.patient.administrativeGenderCode.code.oclIsUndefined()&#xD;&#xA;      or not target.patientRole.patient.administrativeGenderCode.nullFlavor.oclIsUndefined()))</body>
+          <body>A patient/administrativeGenderCode element SHALL be present. If&#xD;
+unknown, it SHALL be represented using a flavor of null. Values for&#xD;
+administrativeGenderCode SHOULD be drawn from the HL7 AdministrativeGender&#xD;
+vocabulary.</body>
+          <body>self.recordTarget->forAll(target : cda::RecordTarget | not target.patientRole.oclIsUndefined()&#xD;
+   implies (not target.patientRole.patient.administrativeGenderCode.code.oclIsUndefined()&#xD;
+      or not target.patientRole.patient.administrativeGenderCode.nullFlavor.oclIsUndefined()))</body>
         </specification>
       </ownedRule>
       <ownedRule xmi:id="_YGnLQAbdEeC15aCUY_wo_g" name="hasOptionalCodes" constrainedElement="_MwGRIGeLEd-ilOLYnIx0jA">
         <specification xmi:type="uml:OpaqueExpression" xmi:id="_aAfyUAcPEeC15aCUY_wo_g">
           <language>Analysis</language>
-          <body>The maritalStatusCode, religiousAffiliationCode, raceCode and&#xD;&#xA;ethnicGroupCode MAY be present. If maritalStatusCode, religiousAffiliationCode,&#xD;&#xA;raceCode and ethnicGroupCode elements are present, they SHOULD be encoded using&#xD;&#xA;the appropriate HL7 vocabularies.</body>
+          <body>The maritalStatusCode, religiousAffiliationCode, raceCode and&#xD;
+ethnicGroupCode MAY be present. If maritalStatusCode, religiousAffiliationCode,&#xD;
+raceCode and ethnicGroupCode elements are present, they SHOULD be encoded using&#xD;
+the appropriate HL7 vocabularies.</body>
         </specification>
       </ownedRule>
       <ownedRule xmi:id="_Y6zoUAbdEeC15aCUY_wo_g" name="hasGuardianForMinors" constrainedElement="_MwGRIGeLEd-ilOLYnIx0jA">
@@ -345,8 +370,10 @@ participation in the creation of the clinical document.</body>
         <specification xmi:type="uml:OpaqueExpression" xmi:id="_YTl5sAcREeC15aCUY_wo_g">
           <language>Analysis</language>
           <language>OCL</language>
-          <body>An assignedAuthor element contains at least one assignedPerson&#xD;&#xA;or assignedAuthoringDevice elements.</body>
-          <body>self.author->forAll(author : cda::Author | not author.assignedAuthor.assignedPerson.oclIsUndefined() &#xD;&#xA;   or not author.assignedAuthor.assignedAuthoringDevice.oclIsUndefined())</body>
+          <body>An assignedAuthor element contains at least one assignedPerson&#xD;
+or assignedAuthoringDevice elements.</body>
+          <body>self.author->forAll(author : cda::Author | not author.assignedAuthor.assignedPerson.oclIsUndefined() &#xD;
+   or not author.assignedAuthor.assignedAuthoringDevice.oclIsUndefined())</body>
         </specification>
       </ownedRule>
       <ownedRule xmi:id="_A8mTMAcTEeC15aCUY_wo_g" name="hasDataEntererAssignedPerson" constrainedElement="_MwGRIGeLEd-ilOLYnIx0jA">
@@ -377,8 +404,10 @@ participation in the creation of the clinical document.</body>
         <specification xmi:type="uml:OpaqueExpression" xmi:id="_0rifUAcUEeC15aCUY_wo_g">
           <language>Analysis</language>
           <language>OCL</language>
-          <body>When informant is present, an assignedEntity/assignedPerson or&#xD;&#xA;relatedEntity/relatedPerson element SHALL be present.</body>
-          <body>self.informant->forAll(i : cda::Informant12 | not i.assignedEntity.assignedPerson.oclIsUndefined()&#xD;&#xA;   or not i.relatedEntity.relatedPerson.oclIsUndefined())</body>
+          <body>When informant is present, an assignedEntity/assignedPerson or&#xD;
+relatedEntity/relatedPerson element SHALL be present.</body>
+          <body>self.informant->forAll(i : cda::Informant12 | not i.assignedEntity.assignedPerson.oclIsUndefined()&#xD;
+   or not i.relatedEntity.relatedPerson.oclIsUndefined())</body>
         </specification>
       </ownedRule>
       <ownedRule xmi:id="_1h84AAcWEeC15aCUY_wo_g" name="informantHealthcareProvider" constrainedElement="_MwGRIGeLEd-ilOLYnIx0jA">
@@ -393,7 +422,8 @@ assignedEntity element is used.</body>
         </ownedComment>
         <specification xmi:type="uml:OpaqueExpression" xmi:id="_7BitMAcWEeC15aCUY_wo_g">
           <language>Analysis</language>
-          <body>When the informant is a healthcare provider with an assigned role, the&#xD;&#xA;informant SHALL be represented using the assignedEntity element</body>
+          <body>When the informant is a healthcare provider with an assigned role, the&#xD;
+informant SHALL be represented using the assignedEntity element</body>
         </specification>
       </ownedRule>
       <ownedRule xmi:id="_yknHsAcXEeC15aCUY_wo_g" name="informantRelatedEntityClassCode" constrainedElement="_MwGRIGeLEd-ilOLYnIx0jA">
@@ -409,13 +439,16 @@ the receiver of the clinical document understand the information in the document
         </ownedComment>
         <specification xmi:type="uml:OpaqueExpression" xmi:id="_8L5yEAcXEeC15aCUY_wo_g">
           <language>Analysis</language>
-          <body>Allowable values for informant/relatedEntity/@classCode SHALL be CON,&#xD;&#xA;PRS, CAREGIVER, AGNT or PROV from the RoleClass vocabulary.</body>
+          <body>Allowable values for informant/relatedEntity/@classCode SHALL be CON,&#xD;
+PRS, CAREGIVER, AGNT or PROV from the RoleClass vocabulary.</body>
         </specification>
       </ownedRule>
       <ownedRule xmi:id="_zdLucAcXEeC15aCUY_wo_g" name="informantRelatedEntityClassCodePRS" constrainedElement="_MwGRIGeLEd-ilOLYnIx0jA">
         <specification xmi:type="uml:OpaqueExpression" xmi:id="_B2YooAcYEeC15aCUY_wo_g">
           <language>Analysis</language>
-          <body>When relatedEntity/@classCode is PRS, values in relatedEntity/code&#xD;&#xA;SHALL come from the HL7 PersonalRelationshipRoleType vocabulary or from&#xD;&#xA;SNOMED, any subtype of “Person in the family” (303071001).</body>
+          <body>When relatedEntity/@classCode is PRS, values in relatedEntity/code&#xD;
+SHALL come from the HL7 PersonalRelationshipRoleType vocabulary or from&#xD;
+SNOMED, any subtype of “Person in the family” (303071001).</body>
         </specification>
       </ownedRule>
       <ownedRule xmi:id="_YZSN0AcYEeC15aCUY_wo_g" name="informantIsContact" constrainedElement="_MwGRIGeLEd-ilOLYnIx0jA">
@@ -428,7 +461,9 @@ significant health care event) may provide information about the patient.</body>
         </ownedComment>
         <specification xmi:type="uml:OpaqueExpression" xmi:id="_deplIAcYEeC15aCUY_wo_g">
           <language>Analysis</language>
-          <body>When an informant is an unrelated person not otherwise specified, the&#xD;&#xA;value relatedEntity/@classCode SHALL be set to CON to indicate that this person is a&#xD;&#xA;contact.</body>
+          <body>When an informant is an unrelated person not otherwise specified, the&#xD;
+value relatedEntity/@classCode SHALL be set to CON to indicate that this person is a&#xD;
+contact.</body>
         </specification>
       </ownedRule>
       <ownedRule xmi:id="_sRJToAcZEeC15aCUY_wo_g" name="healthcareProviderRelatedEntityClassCode" constrainedElement="_MwGRIGeLEd-ilOLYnIx0jA">
@@ -444,7 +479,9 @@ will be set to PROV.</body>
         </ownedComment>
         <specification xmi:type="uml:OpaqueExpression" xmi:id="_3tJc4AcZEeC15aCUY_wo_g">
           <language>Analysis</language>
-          <body>When the informant is a healthcare provider without an assigned role,&#xD;&#xA;the informant SHALL be represented using the relatedEntity element and the value of&#xD;&#xA;relatedEntity/@classCode SHALL be set to PROV.</body>
+          <body>When the informant is a healthcare provider without an assigned role,&#xD;
+the informant SHALL be represented using the relatedEntity element and the value of&#xD;
+relatedEntity/@classCode SHALL be set to PROV.</body>
         </specification>
       </ownedRule>
       <ownedRule xmi:id="_tJssQAcZEeC15aCUY_wo_g" name="healthcareProviderRelatedEntityCode" constrainedElement="_MwGRIGeLEd-ilOLYnIx0jA">
@@ -459,7 +496,10 @@ will be set to PROV.</body>
       <ownedRule xmi:id="_C_I5EAcbEeC15aCUY_wo_g" name="hasInformationRecipientIntendedRecipient" constrainedElement="_MwGRIGeLEd-ilOLYnIx0jA">
         <specification xmi:type="uml:OpaqueExpression" xmi:id="_GNQa4AcbEeC15aCUY_wo_g">
           <language>Analysis</language>
-          <body>The ClinicalDocument/informationRecipient element MAY be present.&#xD;&#xA;When informationRecipient is used, at least one&#xD;&#xA;informationRecipient/intendedRecipient/informationRecipient or&#xD;&#xA;informationRecipient/intendedRecipient/receivedOrganization SHALL be present.</body>
+          <body>The ClinicalDocument/informationRecipient element MAY be present.&#xD;
+When informationRecipient is used, at least one&#xD;
+informationRecipient/intendedRecipient/informationRecipient or&#xD;
+informationRecipient/intendedRecipient/receivedOrganization SHALL be present.</body>
         </specification>
       </ownedRule>
       <ownedRule xmi:id="_l7M94AccEeC15aCUY_wo_g" name="legalAuthenticatorHasAssignedPerson" constrainedElement="_MwGRIGeLEd-ilOLYnIx0jA">
@@ -475,7 +515,8 @@ will be set to PROV.</body>
           <language>Analysis</language>
           <language>OCL</language>
           <body>The assignedEntity/assignedPerson element SHALL be present in an authenticator element.</body>
-          <body>self.authenticator->forAll(auth : cda::Authenticator | auth.assignedEntity->forAll(entity : cda::AssignedEntity |&#xD;&#xA;   not entity.assignedPerson.oclIsUndefined()))</body>
+          <body>self.authenticator->forAll(auth : cda::Authenticator | auth.assignedEntity->forAll(entity : cda::AssignedEntity |&#xD;
+   not entity.assignedPerson.oclIsUndefined()))</body>
         </specification>
       </ownedRule>
       <ownedRule xmi:id="_mEGlYAlEEeCb3JSiaNKEKA" name="timePreciseToSecond" constrainedElement="_MwGRIGeLEd-ilOLYnIx0jA">
@@ -486,7 +527,11 @@ will be set to PROV.</body>
           <language>Analysis</language>
           <language>XPath</language>
           <language>OCL</language>
-          <body>Times or time intervals found in the ClinicalDocument/effectiveTime,&#xD;&#xA;author/time, dataEnterer/time, legalAuthenticator/time, authenticator/time and&#xD;&#xA;encompassingEncounter/effectiveTime elements SHALL be precise to the day, SHALL&#xD;&#xA;include a time zone if more precise than to the day, and SHOULD be precise to the&#xD;&#xA;second.</body>
+          <body>Times or time intervals found in the ClinicalDocument/effectiveTime,&#xD;
+author/time, dataEnterer/time, legalAuthenticator/time, authenticator/time and&#xD;
+encompassingEncounter/effectiveTime elements SHALL be precise to the day, SHALL&#xD;
+include a time zone if more precise than to the day, and SHOULD be precise to the&#xD;
+second.</body>
           <body>/cda:ClinicalDocument/cda:effectiveTime | //cda:author/cda:time | //cda:dataEnterer/cda:time | //cda:encompassingEncounter/cda:effectiveTime</body>
           <body>-- implemented in Java using XPath selector</body>
         </specification>
@@ -498,7 +543,11 @@ will be set to PROV.</body>
         <specification xmi:type="uml:OpaqueExpression" xmi:id="_ETtpcAx4EeCbT6kkmQhJPQ">
           <language>Analysis</language>
           <language>OCL</language>
-          <body>Times or time intervals found in the asOrganizationPartOf/effectiveTime,&#xD;&#xA;asMaintainedEntity/effectiveTime, relatedEntity/effectiveTime,&#xD;&#xA;serviceEvent/effectiveTime, ClinicalDocument/participant/time,&#xD;&#xA;serviceEvent/performer/time and encounterParticipant/time SHALL be precise at&#xD;&#xA;least to the year, SHOULD be precise to the day, and MAY omit time zone.</body>
+          <body>Times or time intervals found in the asOrganizationPartOf/effectiveTime,&#xD;
+asMaintainedEntity/effectiveTime, relatedEntity/effectiveTime,&#xD;
+serviceEvent/effectiveTime, ClinicalDocument/participant/time,&#xD;
+serviceEvent/performer/time and encounterParticipant/time SHALL be precise at&#xD;
+least to the year, SHOULD be precise to the day, and MAY omit time zone.</body>
           <body>cda::OrganizationPartOf.allInstances()->select( effectiveTime.oclIsUndefined()).oclAsType( ecore::EObject)-> union(  cda::MaintainedEntity.allInstances()->select( effectiveTime.oclIsUndefined()).oclAsType( ecore::EObject) )->union( cda::RelatedEntity.allInstances()->select( effectiveTime.oclIsUndefined()).oclAsType( ecore::EObject) )->union(cda::RelatedEntity.allInstances()->select( effectiveTime.oclIsUndefined()).oclAsType( ecore::EObject) )->union(cda::RelatedEntity.allInstances()->select( effectiveTime.oclIsUndefined()).oclAsType( ecore::EObject) )->union(cda::ServiceEvent.allInstances()->select( effectiveTime.oclIsUndefined()).oclAsType( ecore::EObject) )->union(cda::EncounterParticipant.allInstances()->select( time.oclIsUndefined()).oclAsType( ecore::EObject))->union(self.participant->select( time.oclIsUndefined()).oclAsType( ecore::EObject))->union(cda::OrganizationPartOf.allInstances().effectiveTime->union(cda::MaintainedEntity.allInstances().effectiveTime)->union( cda::RelatedEntity.allInstances().effectiveTime)->union(cda::RelatedEntity.allInstances().effectiveTime)->union(cda::RelatedEntity.allInstances().effectiveTime)->union(cda::ServiceEvent.allInstances().effectiveTime)->union(cda::EncounterParticipant.allInstances().time)->union(self.participant.time)->select(current : datatypes::IVL_TS  |  ((not current.low.oclIsUndefined()) and (current.low.value.oclIsUndefined() or current.low.value.size() &lt; 8)) or ((not current.center.oclIsUndefined()) and (current.center.value.oclIsUndefined() or current.center.value.size() &lt; 8)) or ((not current.high.oclIsUndefined()) and (current.high.value.oclIsUndefined() or current.high.value.size() &lt; 8)) or (current.low.oclIsUndefined() and current.center.oclIsUndefined() and current.high.oclIsUndefined()) ).oclAsType( ecore::EObject))</body>
         </specification>
       </ownedRule>
@@ -625,7 +674,9 @@ content, essentially acting as a version identifier.</body>
         </ownedComment>
         <specification xmi:type="uml:OpaqueExpression" xmi:id="_mbTNQWj6Ed-tUpkWYQgJlQ">
           <language>Analysis</language>
-          <body>If pre-coordinated document type codes are used, values used in the&#xD;&#xA;assignedAuthor/code and assignedAuthor/author/functionCode elements SHALL NOT&#xD;&#xA;conflict with ClinicalDocument/code.</body>
+          <body>If pre-coordinated document type codes are used, values used in the&#xD;
+assignedAuthor/code and assignedAuthor/author/functionCode elements SHALL NOT&#xD;
+conflict with ClinicalDocument/code.</body>
         </specification>
       </ownedRule>
       <ownedRule xmi:id="_nKM6oGj6Ed-tUpkWYQgJlQ" name="encompassingEncounterCode" constrainedElement="_f4_NkGeLEd-ilOLYnIx0jA">
@@ -634,7 +685,9 @@ content, essentially acting as a version identifier.</body>
         </ownedComment>
         <specification xmi:type="uml:OpaqueExpression" xmi:id="_nKM6oWj6Ed-tUpkWYQgJlQ">
           <language>Analysis</language>
-          <body>If pre-coordinated document type codes are used, values used in&#xD;&#xA;encompassingEncounter/location/healthCareFacility/code SHALL NOT conflict with&#xD;&#xA;ClinicalDocument/code.</body>
+          <body>If pre-coordinated document type codes are used, values used in&#xD;
+encompassingEncounter/location/healthCareFacility/code SHALL NOT conflict with&#xD;
+ClinicalDocument/code.</body>
         </specification>
       </ownedRule>
       <ownedRule xmi:id="_XkPTYGjvEd-tUpkWYQgJlQ" name="assessmentAndPlan" constrainedElement="_XtmggGeLEd-ilOLYnIx0jA">
@@ -642,7 +695,9 @@ content, essentially acting as a version identifier.</body>
           <language>Analysis</language>
           <language>OCL</language>
           <body>Either combined Assessment + Plan section is included, or separate Assessment section and Plan section included, but not both combined and separate sections.</body>
-          <body>self.getSections()->exists(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(cdt::AssessmentAndPlanSection))&#xD;&#xA;   xor (self.getSections()->exists(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(cdt::AssessmentSection))&#xD;&#xA;      and self.getSections()->exists(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(cdt::PlanSection)))</body>
+          <body>self.getSections()->exists(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(cdt::AssessmentAndPlanSection))&#xD;
+   xor (self.getSections()->exists(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(cdt::AssessmentSection))&#xD;
+      and self.getSections()->exists(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(cdt::PlanSection)))</body>
         </specification>
       </ownedRule>
       <ownedRule xmi:id="_d7dDAHKFEd-yJfEpFEwdpw" name="bothAssessmentAndPlan" constrainedElement="_XtmggGeLEd-ilOLYnIx0jA">
@@ -650,7 +705,9 @@ content, essentially acting as a version identifier.</body>
           <language>Analysis</language>
           <language>OCL</language>
           <body>When Assessment section or Plan section is included, then both sections SHALL be included.</body>
-          <body>let assessmentExists : Boolean = self.getSections()->exists(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(cdt::AssessmentSection)) in&#xD;&#xA;  let planExists : Boolean = self.getSections()->exists(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(cdt::PlanSection))&#xD;&#xA;    in (assessmentExists or planExists) implies (assessmentExists and planExists)</body>
+          <body>let assessmentExists : Boolean = self.getSections()->exists(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(cdt::AssessmentSection)) in&#xD;
+  let planExists : Boolean = self.getSections()->exists(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(cdt::PlanSection))&#xD;
+    in (assessmentExists or planExists) implies (assessmentExists and planExists)</body>
         </specification>
       </ownedRule>
       <ownedRule xmi:id="_8uY8MGj3Ed-tUpkWYQgJlQ" name="reasonForVisitAndChiefComplaint" constrainedElement="_XtmggGeLEd-ilOLYnIx0jA">
@@ -658,7 +715,7 @@ content, essentially acting as a version identifier.</body>
           <language>Analysis</language>
           <language>OCL</language>
           <body>Either combined Reason for Visit and Chief Complaint section is included, or separate Reason for Visit section and Chief Complaint section included, but not both combined and separate sections.</body>
-          <body>self.getSections()->exists(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(cdt::ReasonForVisitAndChiefComplaintSection))&#xD;&#xA;   xor (self.getSections()->exists(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(cdt::ReasonForVisitSection))&#xD;&#xA;      and self.getSections()->exists(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(cdt::ChiefComplaintSection)))</body>
+          <body>(self.getSections()->exists(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(cdt::ReasonForVisitAndChiefComplaintSection)) and not self.getSections()->exists(section : cda::Section | not  section.oclIsUndefined() and section.oclIsKindOf(cdt::ReasonForVisitSection)) and not self.getSections()->exists(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(cdt::ChiefComplaintSection))) or ( self.getSections()->exists(section : cda::Section | not  section.oclIsUndefined() and section.oclIsKindOf(cdt::ReasonForVisitSection)) and self.getSections()->exists(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(cdt::ChiefComplaintSection)) and not self.getSections()->exists(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(cdt::ReasonForVisitAndChiefComplaintSection)))</body>
         </specification>
       </ownedRule>
       <ownedRule xmi:id="_PuJ2AHBEEd-yJfEpFEwdpw" name="bothReasonForVisitAndChiefComplaint" constrainedElement="_XtmggGeLEd-ilOLYnIx0jA">
@@ -666,7 +723,9 @@ content, essentially acting as a version identifier.</body>
           <language>Analysis</language>
           <language>OCL</language>
           <body>When Reason for Visit section or Chief Complaint section is included, then both sections SHALL be included.</body>
-          <body>let reasonExists : Boolean = self.getSections()->exists(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(cdt::ReasonForVisitSection)) in&#xD;&#xA;  let complaintExists : Boolean = self.getSections()->exists(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(cdt::ChiefComplaintSection))&#xD;&#xA;    in (reasonExists or complaintExists) implies (reasonExists and complaintExists)</body>
+          <body>let reasonExists : Boolean = self.getSections()->exists(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(cdt::ReasonForVisitSection)) in&#xD;
+  let complaintExists : Boolean = self.getSections()->exists(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(cdt::ChiefComplaintSection))&#xD;
+    in (reasonExists or complaintExists) implies (reasonExists and complaintExists)</body>
         </specification>
       </ownedRule>
       <generalization xmi:id="_XtmggWeLEd-ilOLYnIx0jA" general="_MwGRIGeLEd-ilOLYnIx0jA"/>
@@ -744,7 +803,9 @@ content, essentially acting as a version identifier.</body>
         </ownedComment>
         <specification xmi:type="uml:OpaqueExpression" xmi:id="_27voMGgzEd-ilOLYnIx0jA">
           <language>Analysis</language>
-          <body>Implementations MAY use local codes in translation elements to specify&#xD;&#xA;a local code that is equivalent to the document type. An example of this is shown&#xD;&#xA;below.</body>
+          <body>Implementations MAY use local codes in translation elements to specify&#xD;
+a local code that is equivalent to the document type. An example of this is shown&#xD;
+below.</body>
         </specification>
       </ownedRule>
       <ownedRule xmi:id="_wMCEYGgyEd-ilOLYnIx0jA" name="assignedAuthorCode" constrainedElement="_f4_NkGeLEd-ilOLYnIx0jA">
@@ -753,7 +814,9 @@ content, essentially acting as a version identifier.</body>
         </ownedComment>
         <specification xmi:type="uml:OpaqueExpression" xmi:id="_yiSxIGgyEd-ilOLYnIx0jA">
           <language>Analysis</language>
-          <body>If pre-coordinated document type codes are used, values used in the&#xD;&#xA;assignedAuthor/code and assignedAuthor/author/functionCode elements SHALL NOT&#xD;&#xA;conflict with ClinicalDocument/code.</body>
+          <body>If pre-coordinated document type codes are used, values used in the&#xD;
+assignedAuthor/code and assignedAuthor/author/functionCode elements SHALL NOT&#xD;
+conflict with ClinicalDocument/code.</body>
         </specification>
       </ownedRule>
       <ownedRule xmi:id="_PoC_UGgzEd-ilOLYnIx0jA" name="encompassingEncounterCode" constrainedElement="_f4_NkGeLEd-ilOLYnIx0jA">
@@ -762,7 +825,9 @@ content, essentially acting as a version identifier.</body>
         </ownedComment>
         <specification xmi:type="uml:OpaqueExpression" xmi:id="_YVURcGgzEd-ilOLYnIx0jA">
           <language>Analysis</language>
-          <body>If pre-coordinated document type codes are used, values used in&#xD;&#xA;encompassingEncounter/location/healthCareFacility/code SHALL NOT conflict with&#xD;&#xA;ClinicalDocument/code.</body>
+          <body>If pre-coordinated document type codes are used, values used in&#xD;
+encompassingEncounter/location/healthCareFacility/code SHALL NOT conflict with&#xD;
+ClinicalDocument/code.</body>
         </specification>
       </ownedRule>
       <ownedRule xmi:id="_sZjrwGhHEd-ilOLYnIx0jA" name="referralOrVisit" constrainedElement="_f4_NkGeLEd-ilOLYnIx0jA">
@@ -770,7 +835,8 @@ content, essentially acting as a version identifier.</body>
           <language>Analysis</language>
           <language>OCL</language>
           <body>A Consultation Note contains either ReasonForReferral or ReasonForVisit, but not both.</body>
-          <body>self.getSections()->exists(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(cdt::ReasonForReferralSection))&#xD;&#xA;   xor self.getSections()->exists(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(cdt::ReasonForVisitSectionConsult))</body>
+          <body>self.getSections()->exists(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(cdt::ReasonForReferralSection))&#xD;
+   xor self.getSections()->exists(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(cdt::ReasonForVisitSectionConsult))</body>
         </specification>
       </ownedRule>
       <generalization xmi:id="_f4_0oGeLEd-ilOLYnIx0jA" general="_MwGRIGeLEd-ilOLYnIx0jA"/>
@@ -1373,7 +1439,9 @@ denied experiencing.</body>
           <language>Analysis</language>
           <language>OCL</language>
           <body>Either combined Assessment + Plan section is included, or separate Assessment section and Plan section included, but not both combined and separate sections.</body>
-          <body>self.getSections()->exists(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(cdt::AssessmentAndPlanSectionProcNote))&#xD;&#xA;   xor (self.getSections()->exists(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(cdt::AssessmentSectionProcNote))&#xD;&#xA;      and self.getSections()->exists(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ccd::PlanOfCareSection)))</body>
+          <body>self.getSections()->exists(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(cdt::AssessmentAndPlanSectionProcNote))&#xD;
+   xor (self.getSections()->exists(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(cdt::AssessmentSectionProcNote))&#xD;
+      and self.getSections()->exists(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ccd::PlanOfCareSection)))</body>
         </specification>
       </ownedRule>
       <ownedRule xmi:id="_Uav0kMvkEd-hi-1hHmWxvw" name="bothAssessmentAndPlan" constrainedElement="_XtmggGeLEd-ilOLYnIx0jA">
@@ -1381,7 +1449,9 @@ denied experiencing.</body>
           <language>Analysis</language>
           <language>OCL</language>
           <body>When Assessment section or Plan section is included, then both sections SHALL be included.</body>
-          <body>let assessmentExists : Boolean = self.getSections()->exists(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(cdt::AssessmentSectionProcNote)) in&#xD;&#xA;  let planExists : Boolean = self.getSections()->exists(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ccd::PlanOfCareSection))&#xD;&#xA;    in (assessmentExists or planExists) implies (assessmentExists and planExists)</body>
+          <body>let assessmentExists : Boolean = self.getSections()->exists(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(cdt::AssessmentSectionProcNote)) in&#xD;
+  let planExists : Boolean = self.getSections()->exists(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ccd::PlanOfCareSection))&#xD;
+    in (assessmentExists or planExists) implies (assessmentExists and planExists)</body>
         </specification>
       </ownedRule>
       <ownedRule xmi:id="_TsDR0MwAEd-hi-1hHmWxvw" name="hasServiceEvent" constrainedElement="_Xijk8MviEd-hi-1hHmWxvw">
@@ -1392,7 +1462,8 @@ denied experiencing.</body>
           <language>Analysis</language>
           <language>OCL</language>
           <body>Contains a serviceEvent element.</body>
-          <body>self.documentationOf->exists(doc : cda::DocumentationOf | not doc.oclIsUndefined() &#xD;&#xA;  and not doc.serviceEvent.oclIsUndefined())</body>
+          <body>self.documentationOf->exists(doc : cda::DocumentationOf | not doc.oclIsUndefined() &#xD;
+  and not doc.serviceEvent.oclIsUndefined())</body>
         </specification>
       </ownedRule>
       <ownedRule xmi:id="_PhWgEMwNEd-RYrNQjqkPtg" name="hasServiceEventCode" constrainedElement="_Xijk8MviEd-hi-1hHmWxvw">
@@ -1400,7 +1471,8 @@ denied experiencing.</body>
           <language>Analysis</language>
           <language>OCL</language>
           <body>The documentationOf/serviceEvent/code SHALL be 371532007 Progress Report 2.16.840.1.113883.6.96 SNOMED CT STATIC.</body>
-          <body>self.documentationOf->exists(doc : cda::DocumentationOf | not doc.oclIsUndefined() and not doc.serviceEvent.oclIsUndefined()&#xD;&#xA;  and doc.serviceEvent.code.code = '371532007' and doc.serviceEvent.code.codeSystem = '2.16.840.1.113883.6.96' )</body>
+          <body>self.documentationOf->exists(doc : cda::DocumentationOf | not doc.oclIsUndefined() and not doc.serviceEvent.oclIsUndefined()&#xD;
+  and doc.serviceEvent.code.code = '371532007' and doc.serviceEvent.code.codeSystem = '2.16.840.1.113883.6.96' )</body>
         </specification>
       </ownedRule>
       <ownedRule xmi:id="_xVz5EMwNEd-RYrNQjqkPtg" name="hasServiceEventEffectiveTime" constrainedElement="_Xijk8MviEd-hi-1hHmWxvw">
@@ -1411,7 +1483,8 @@ denied experiencing.</body>
           <language>Analysis</language>
           <language>OCL</language>
           <body>The serviceEvent/effectiveTime element SHOULD be present with effectiveTime/low element and SHALL include effectiveTime/high element if a width element is not present. The serviceEvent/effectiveTime element SHALLL be accurate to the day, and MAY be accurate to the second.</body>
-          <body>self.documentationOf->exists(doc : cda::DocumentationOf | not doc.oclIsUndefined() and not doc.serviceEvent.oclIsUndefined()&#xD;&#xA; and not doc.serviceEvent.effectiveTime.oclIsUndefined() and not doc.serviceEvent.effectiveTime.low.oclIsUndefined() )</body>
+          <body>self.documentationOf->exists(doc : cda::DocumentationOf | not doc.oclIsUndefined() and not doc.serviceEvent.oclIsUndefined()&#xD;
+ and not doc.serviceEvent.effectiveTime.oclIsUndefined() and not doc.serviceEvent.effectiveTime.low.oclIsUndefined() )</body>
         </specification>
       </ownedRule>
       <ownedRule xmi:id="_-UrCIMyPEd-RYrNQjqkPtg" name="hasComponentOfElement" constrainedElement="_Xijk8MviEd-hi-1hHmWxvw">
