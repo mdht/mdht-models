@@ -33,29 +33,29 @@ public class AdmissionMedicationHistorySectionImpl extends
 		org.openhealthtools.mdht.uml.cda.ihe.impl.AdmissionMedicationHistorySectionImpl implements
 		AdmissionMedicationHistorySection {
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	protected AdmissionMedicationHistorySectionImpl() {
 		super();
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
 		return HITSPPackage.Literals.ADMISSION_MEDICATION_HISTORY_SECTION;
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateHITSPAdmissionMedicationHistorySectionTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return AdmissionMedicationHistorySectionOperations.validateHITSPAdmissionMedicationHistorySectionTemplateId(
@@ -63,20 +63,20 @@ public class AdmissionMedicationHistorySectionImpl extends
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	@Override
 	public AdmissionMedicationHistorySection init() {
 		return Initializer.Util.init(this);
 	}
 
 	/**
-	   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	   * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	@Override
 	public AdmissionMedicationHistorySection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
 		Initializer.Util.init(this, initializers);

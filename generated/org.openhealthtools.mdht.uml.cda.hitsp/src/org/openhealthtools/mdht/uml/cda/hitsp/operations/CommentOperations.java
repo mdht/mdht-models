@@ -40,44 +40,44 @@ import org.openhealthtools.mdht.uml.cda.hitsp.util.HITSPValidator;
  */
 public class CommentOperations extends org.openhealthtools.mdht.uml.cda.ihe.operations.CommentOperations {
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	protected CommentOperations() {
 		super();
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateHITSPCommentTemplateId(Comment, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate HITSP Comment Template Id</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateHITSPCommentTemplateId(Comment, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate HITSP Comment Template Id</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateHITSPCommentTemplateId(Comment, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateHITSPCommentTemplateId(Comment, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_HITSP_COMMENT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.3.88.11.83.11')";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateHITSPCommentTemplateId(Comment, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate HITSP Comment Template Id</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateHITSPCommentTemplateId(Comment, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate HITSP Comment Template Id</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateHITSPCommentTemplateId(Comment, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateHITSPCommentTemplateId(Comment, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static Constraint VALIDATE_HITSP_COMMENT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param comment The receiving '<em><b>Comment</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param comment The receiving '<em><b>Comment</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 	public static boolean validateHITSPCommentTemplateId(Comment comment, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
@@ -104,36 +104,36 @@ public class CommentOperations extends org.openhealthtools.mdht.uml.cda.ihe.oper
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateHITSPCommentAuthor(Comment, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate HITSP Comment Author</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateHITSPCommentAuthor(Comment, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate HITSP Comment Author</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateHITSPCommentAuthor(Comment, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateHITSPCommentAuthor(Comment, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_HITSP_COMMENT_AUTHOR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.author->one(author : cda::Author | not author.oclIsUndefined() and author.oclIsKindOf(rim::Participation))";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateHITSPCommentAuthor(Comment, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate HITSP Comment Author</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateHITSPCommentAuthor(Comment, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate HITSP Comment Author</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateHITSPCommentAuthor(Comment, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateHITSPCommentAuthor(Comment, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 
 	protected static Constraint VALIDATE_HITSP_COMMENT_AUTHOR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param comment The receiving '<em><b>Comment</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param comment The receiving '<em><b>Comment</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 
 	public static boolean validateHITSPCommentAuthor(Comment comment, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {

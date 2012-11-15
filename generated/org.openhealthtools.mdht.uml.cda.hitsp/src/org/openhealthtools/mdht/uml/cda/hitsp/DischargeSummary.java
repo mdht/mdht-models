@@ -30,419 +30,419 @@ import org.openhealthtools.mdht.uml.cda.ihe.MedicalSummary;
  */
 public interface DischargeSummary extends MedicalSummary {
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::ProblemListSection))'"
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::ProblemListSection))'"
+	 * @generated
+	 */
 	boolean validateDischargeSummaryProblemListSection(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::AdmissionMedicationHistorySection))'"
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::AdmissionMedicationHistorySection))'"
+	 * @generated
+	 */
 	boolean validateDischargeSummaryAdmissionMedicationHistorySection(DiagnosticChain diagnostics,
 			Map<Object, Object> context);
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::HospitalAdmissionDiagnosisSection))'"
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::HospitalAdmissionDiagnosisSection))'"
+	 * @generated
+	 */
 	boolean validateDischargeSummaryHospitalAdmissionDiagnosisSection(DiagnosticChain diagnostics,
 			Map<Object, Object> context);
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::AdvanceDirectivesSection))'"
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::AdvanceDirectivesSection))'"
+	 * @generated
+	 */
 	boolean validateDischargeSummaryAdvanceDirectivesSection(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::AllergiesReactionsSection))'"
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::AllergiesReactionsSection))'"
+	 * @generated
+	 */
 	boolean validateDischargeSummaryAllergiesReactionsSection(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::DischargeDiagnosisSection))'"
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::DischargeDiagnosisSection))'"
+	 * @generated
+	 */
 	boolean validateDischargeSummaryDischargeDiagnosisSection(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ihe::DischargeDiet))'"
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ihe::DischargeDiet))'"
+	 * @generated
+	 */
 	boolean validateDischargeSummaryDischargeDiet(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::HospitalDischargeMedicationsSection))'"
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::HospitalDischargeMedicationsSection))'"
+	 * @generated
+	 */
 	boolean validateDischargeSummaryHospitalDischargeMedicationsSection(DiagnosticChain diagnostics,
 			Map<Object, Object> context);
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::DiagnosticResultsSection))'"
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::DiagnosticResultsSection))'"
+	 * @generated
+	 */
 	boolean validateDischargeSummaryDiagnosticResultsSection(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::FunctionalStatusSection))'"
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::FunctionalStatusSection))'"
+	 * @generated
+	 */
 	boolean validateDischargeSummaryFunctionalStatusSection(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::HistoryOfPresentIllness))'"
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::HistoryOfPresentIllness))'"
+	 * @generated
+	 */
 	boolean validateDischargeSummaryHistoryOfPresentIllness(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::HospitalCourseSection))'"
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::HospitalCourseSection))'"
+	 * @generated
+	 */
 	boolean validateDischargeSummaryHospitalCourseSection(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::MedicalEquipmentSection))'"
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::MedicalEquipmentSection))'"
+	 * @generated
+	 */
 	boolean validateDischargeSummaryMedicalEquipmentSection(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::PhysicalExamSection))'"
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::PhysicalExamSection))'"
+	 * @generated
+	 */
 	boolean validateDischargeSummaryPhysicalExamSection(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::PlanOfCareSection))'"
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::PlanOfCareSection))'"
+	 * @generated
+	 */
 	boolean validateDischargeSummaryPlanOfCareSection(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::HistoryOfPastIllnessSection))'"
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::HistoryOfPastIllnessSection))'"
+	 * @generated
+	 */
 	boolean validateDischargeSummaryHistoryOfPastIllnessSection(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::ReviewOfSystemsSection))'"
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::ReviewOfSystemsSection))'"
+	 * @generated
+	 */
 	boolean validateDischargeSummaryReviewOfSystemsSection(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::MedicationsAdministeredSection))'"
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::MedicationsAdministeredSection))'"
+	 * @generated
+	 */
 	boolean validateDischargeSummaryMedicationsAdministeredSection(DiagnosticChain diagnostics,
 			Map<Object, Object> context);
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::VitalSignsSection))'"
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::VitalSignsSection))'"
+	 * @generated
+	 */
 	boolean validateDischargeSummaryVitalSignsSection(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @model kind="operation" required="true" ordered="false"
-	*        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::ProblemListSection))->asSequence()->any(true).oclAsType(hitsp::ProblemListSection)'"
-	* @generated
-	*/
+	 * @model kind="operation" required="true" ordered="false"
+	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::ProblemListSection))->asSequence()->any(true).oclAsType(hitsp::ProblemListSection)'"
+	 * @generated
+	 */
 	ProblemListSection getProblemListSection();
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @model kind="operation" required="true" ordered="false"
-	*        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::AdmissionMedicationHistorySection))->asSequence()->any(true).oclAsType(hitsp::AdmissionMedicationHistorySection)'"
-	* @generated
-	*/
+	 * @model kind="operation" required="true" ordered="false"
+	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::AdmissionMedicationHistorySection))->asSequence()->any(true).oclAsType(hitsp::AdmissionMedicationHistorySection)'"
+	 * @generated
+	 */
 	AdmissionMedicationHistorySection getAdmissionMedicationHistorySection();
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @model kind="operation" required="true" ordered="false"
-	*        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::HospitalAdmissionDiagnosisSection))->asSequence()->any(true).oclAsType(hitsp::HospitalAdmissionDiagnosisSection)'"
-	* @generated
-	*/
+	 * @model kind="operation" required="true" ordered="false"
+	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::HospitalAdmissionDiagnosisSection))->asSequence()->any(true).oclAsType(hitsp::HospitalAdmissionDiagnosisSection)'"
+	 * @generated
+	 */
 	HospitalAdmissionDiagnosisSection getHospitalAdmissionDiagnosisSection();
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @model kind="operation" required="true" ordered="false"
-	*        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::AdvanceDirectivesSection))->asSequence()->any(true).oclAsType(hitsp::AdvanceDirectivesSection)'"
-	* @generated
-	*/
+	 * @model kind="operation" required="true" ordered="false"
+	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::AdvanceDirectivesSection))->asSequence()->any(true).oclAsType(hitsp::AdvanceDirectivesSection)'"
+	 * @generated
+	 */
 	AdvanceDirectivesSection getAdvanceDirectivesSection();
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @model kind="operation" required="true" ordered="false"
-	*        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::AllergiesReactionsSection))->asSequence()->any(true).oclAsType(hitsp::AllergiesReactionsSection)'"
-	* @generated
-	*/
+	 * @model kind="operation" required="true" ordered="false"
+	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::AllergiesReactionsSection))->asSequence()->any(true).oclAsType(hitsp::AllergiesReactionsSection)'"
+	 * @generated
+	 */
 	AllergiesReactionsSection getAllergiesReactionsSection();
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @model kind="operation" required="true" ordered="false"
-	*        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::DischargeDiagnosisSection))->asSequence()->any(true).oclAsType(hitsp::DischargeDiagnosisSection)'"
-	* @generated
-	*/
+	 * @model kind="operation" required="true" ordered="false"
+	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::DischargeDiagnosisSection))->asSequence()->any(true).oclAsType(hitsp::DischargeDiagnosisSection)'"
+	 * @generated
+	 */
 	DischargeDiagnosisSection getDischargeDiagnosisSection();
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @model kind="operation" required="true" ordered="false"
-	*        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ihe::DischargeDiet))->asSequence()->any(true).oclAsType(ihe::DischargeDiet)'"
-	* @generated
-	*/
+	 * @model kind="operation" required="true" ordered="false"
+	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ihe::DischargeDiet))->asSequence()->any(true).oclAsType(ihe::DischargeDiet)'"
+	 * @generated
+	 */
 	DischargeDiet getDischargeDiet();
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @model kind="operation" required="true" ordered="false"
-	*        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::HospitalDischargeMedicationsSection))->asSequence()->any(true).oclAsType(hitsp::HospitalDischargeMedicationsSection)'"
-	* @generated
-	*/
+	 * @model kind="operation" required="true" ordered="false"
+	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::HospitalDischargeMedicationsSection))->asSequence()->any(true).oclAsType(hitsp::HospitalDischargeMedicationsSection)'"
+	 * @generated
+	 */
 	HospitalDischargeMedicationsSection getHospitalDischargeMedicationsSection();
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @model kind="operation" required="true" ordered="false"
-	*        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::DiagnosticResultsSection))->asSequence()->any(true).oclAsType(hitsp::DiagnosticResultsSection)'"
-	* @generated
-	*/
+	 * @model kind="operation" required="true" ordered="false"
+	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::DiagnosticResultsSection))->asSequence()->any(true).oclAsType(hitsp::DiagnosticResultsSection)'"
+	 * @generated
+	 */
 	DiagnosticResultsSection getDiagnosticResultsSection();
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @model kind="operation" required="true" ordered="false"
-	*        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::FunctionalStatusSection))->asSequence()->any(true).oclAsType(hitsp::FunctionalStatusSection)'"
-	* @generated
-	*/
+	 * @model kind="operation" required="true" ordered="false"
+	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::FunctionalStatusSection))->asSequence()->any(true).oclAsType(hitsp::FunctionalStatusSection)'"
+	 * @generated
+	 */
 	FunctionalStatusSection getFunctionalStatusSection();
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @model kind="operation" required="true" ordered="false"
-	*        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::HistoryOfPresentIllness))->asSequence()->any(true).oclAsType(hitsp::HistoryOfPresentIllness)'"
-	* @generated
-	*/
+	 * @model kind="operation" required="true" ordered="false"
+	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::HistoryOfPresentIllness))->asSequence()->any(true).oclAsType(hitsp::HistoryOfPresentIllness)'"
+	 * @generated
+	 */
 	HistoryOfPresentIllness getHistoryOfPresentIllness();
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @model kind="operation" required="true" ordered="false"
-	*        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::HospitalCourseSection))->asSequence()->any(true).oclAsType(hitsp::HospitalCourseSection)'"
-	* @generated
-	*/
+	 * @model kind="operation" required="true" ordered="false"
+	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::HospitalCourseSection))->asSequence()->any(true).oclAsType(hitsp::HospitalCourseSection)'"
+	 * @generated
+	 */
 	HospitalCourseSection getHospitalCourseSection();
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @model kind="operation" required="true" ordered="false"
-	*        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::MedicalEquipmentSection))->asSequence()->any(true).oclAsType(hitsp::MedicalEquipmentSection)'"
-	* @generated
-	*/
+	 * @model kind="operation" required="true" ordered="false"
+	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::MedicalEquipmentSection))->asSequence()->any(true).oclAsType(hitsp::MedicalEquipmentSection)'"
+	 * @generated
+	 */
 	MedicalEquipmentSection getMedicalEquipmentSection();
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @model kind="operation" required="true" ordered="false"
-	*        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::PhysicalExamSection))->asSequence()->any(true).oclAsType(hitsp::PhysicalExamSection)'"
-	* @generated
-	*/
+	 * @model kind="operation" required="true" ordered="false"
+	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::PhysicalExamSection))->asSequence()->any(true).oclAsType(hitsp::PhysicalExamSection)'"
+	 * @generated
+	 */
 	PhysicalExamSection getPhysicalExamSection();
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @model kind="operation" required="true" ordered="false"
-	*        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::PlanOfCareSection))->asSequence()->any(true).oclAsType(hitsp::PlanOfCareSection)'"
-	* @generated
-	*/
+	 * @model kind="operation" required="true" ordered="false"
+	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::PlanOfCareSection))->asSequence()->any(true).oclAsType(hitsp::PlanOfCareSection)'"
+	 * @generated
+	 */
 	PlanOfCareSection getPlanOfCareSection();
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @model kind="operation" required="true" ordered="false"
-	*        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::HistoryOfPastIllnessSection))->asSequence()->any(true).oclAsType(hitsp::HistoryOfPastIllnessSection)'"
-	* @generated
-	*/
+	 * @model kind="operation" required="true" ordered="false"
+	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::HistoryOfPastIllnessSection))->asSequence()->any(true).oclAsType(hitsp::HistoryOfPastIllnessSection)'"
+	 * @generated
+	 */
 	HistoryOfPastIllnessSection getHistoryOfPastIllnessSection();
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @model kind="operation" required="true" ordered="false"
-	*        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::ReviewOfSystemsSection))->asSequence()->any(true).oclAsType(hitsp::ReviewOfSystemsSection)'"
-	* @generated
-	*/
+	 * @model kind="operation" required="true" ordered="false"
+	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::ReviewOfSystemsSection))->asSequence()->any(true).oclAsType(hitsp::ReviewOfSystemsSection)'"
+	 * @generated
+	 */
 	ReviewOfSystemsSection getReviewOfSystemsSection();
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @model kind="operation" required="true" ordered="false"
-	*        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::MedicationsAdministeredSection))->asSequence()->any(true).oclAsType(hitsp::MedicationsAdministeredSection)'"
-	* @generated
-	*/
+	 * @model kind="operation" required="true" ordered="false"
+	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::MedicationsAdministeredSection))->asSequence()->any(true).oclAsType(hitsp::MedicationsAdministeredSection)'"
+	 * @generated
+	 */
 	MedicationsAdministeredSection getMedicationsAdministeredSection();
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @model kind="operation" required="true" ordered="false"
-	*        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::VitalSignsSection))->asSequence()->any(true).oclAsType(hitsp::VitalSignsSection)'"
-	* @generated
-	*/
+	 * @model kind="operation" required="true" ordered="false"
+	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::VitalSignsSection))->asSequence()->any(true).oclAsType(hitsp::VitalSignsSection)'"
+	 * @generated
+	 */
 	VitalSignsSection getVitalSignsSection();
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public DischargeSummary init();
 
 	/**
-	   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	   * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	public DischargeSummary init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // DischargeSummary

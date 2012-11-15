@@ -26,16 +26,16 @@ import org.openhealthtools.mdht.uml.cda.ihe.ConditionalDose;
  */
 public interface MedicationConditionalDose extends ConditionalDose, Medication {
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public MedicationConditionalDose init();
 
 	/**
-	   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	   * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	public MedicationConditionalDose init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // MedicationConditionalDose

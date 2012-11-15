@@ -54,44 +54,44 @@ import org.openhealthtools.mdht.uml.cda.ihe.operations.SupplyEntryOperations;
  */
 public class MedicationOrderInformationOperations extends SupplyEntryOperations {
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	protected MedicationOrderInformationOperations() {
 		super();
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateMedicationOrderInformationOrderNumber(MedicationOrderInformation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Order Information Order Number</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateMedicationOrderInformationOrderNumber(MedicationOrderInformation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Order Information Order Number</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateMedicationOrderInformationOrderNumber(MedicationOrderInformation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateMedicationOrderInformationOrderNumber(MedicationOrderInformation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_MEDICATION_ORDER_INFORMATION_ORDER_NUMBER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.moodCode = vocab::x_DocumentSubstanceMood::INT implies self.id->size() > 0";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateMedicationOrderInformationOrderNumber(MedicationOrderInformation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Order Information Order Number</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateMedicationOrderInformationOrderNumber(MedicationOrderInformation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Order Information Order Number</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateMedicationOrderInformationOrderNumber(MedicationOrderInformation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateMedicationOrderInformationOrderNumber(MedicationOrderInformation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static Constraint VALIDATE_MEDICATION_ORDER_INFORMATION_ORDER_NUMBER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param medicationOrderInformation The receiving '<em><b>Medication Order Information</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param medicationOrderInformation The receiving '<em><b>Medication Order Information</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 	public static boolean validateMedicationOrderInformationOrderNumber(
 			MedicationOrderInformation medicationOrderInformation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
@@ -121,35 +121,35 @@ public class MedicationOrderInformationOperations extends SupplyEntryOperations 
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateMedicationOrderInformationOrderExpiration(MedicationOrderInformation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Order Information Order Expiration</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateMedicationOrderInformationOrderExpiration(MedicationOrderInformation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Order Information Order Expiration</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateMedicationOrderInformationOrderExpiration(MedicationOrderInformation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateMedicationOrderInformationOrderExpiration(MedicationOrderInformation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_MEDICATION_ORDER_INFORMATION_ORDER_EXPIRATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.moodCode =  vocab::x_DocumentSubstanceMood::INT implies not self.effectiveTime->select(et | et.value.oclIsUndefined())->isEmpty()";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateMedicationOrderInformationOrderExpiration(MedicationOrderInformation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Order Information Order Expiration</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateMedicationOrderInformationOrderExpiration(MedicationOrderInformation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Order Information Order Expiration</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateMedicationOrderInformationOrderExpiration(MedicationOrderInformation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateMedicationOrderInformationOrderExpiration(MedicationOrderInformation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static Constraint VALIDATE_MEDICATION_ORDER_INFORMATION_ORDER_EXPIRATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param medicationOrderInformation The receiving '<em><b>Medication Order Information</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param medicationOrderInformation The receiving '<em><b>Medication Order Information</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 	public static boolean validateMedicationOrderInformationOrderExpiration(
 			MedicationOrderInformation medicationOrderInformation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
@@ -180,35 +180,35 @@ public class MedicationOrderInformationOperations extends SupplyEntryOperations 
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateMedicationOrderInformationQuantityOrdered(MedicationOrderInformation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Order Information Quantity Ordered</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateMedicationOrderInformationQuantityOrdered(MedicationOrderInformation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Order Information Quantity Ordered</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateMedicationOrderInformationQuantityOrdered(MedicationOrderInformation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateMedicationOrderInformationQuantityOrdered(MedicationOrderInformation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_MEDICATION_ORDER_INFORMATION_QUANTITY_ORDERED__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "not self.quantity.value.oclIsUndefined()";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateMedicationOrderInformationQuantityOrdered(MedicationOrderInformation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Order Information Quantity Ordered</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateMedicationOrderInformationQuantityOrdered(MedicationOrderInformation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Order Information Quantity Ordered</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateMedicationOrderInformationQuantityOrdered(MedicationOrderInformation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateMedicationOrderInformationQuantityOrdered(MedicationOrderInformation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static Constraint VALIDATE_MEDICATION_ORDER_INFORMATION_QUANTITY_ORDERED__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param medicationOrderInformation The receiving '<em><b>Medication Order Information</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param medicationOrderInformation The receiving '<em><b>Medication Order Information</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 	public static boolean validateMedicationOrderInformationQuantityOrdered(
 			MedicationOrderInformation medicationOrderInformation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
@@ -239,35 +239,35 @@ public class MedicationOrderInformationOperations extends SupplyEntryOperations 
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateMedicationOrderInformationQuantityUnit(MedicationOrderInformation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Order Information Quantity Unit</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateMedicationOrderInformationQuantityUnit(MedicationOrderInformation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Order Information Quantity Unit</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateMedicationOrderInformationQuantityUnit(MedicationOrderInformation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateMedicationOrderInformationQuantityUnit(MedicationOrderInformation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_MEDICATION_ORDER_INFORMATION_QUANTITY_UNIT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "not self.quantity.unit.oclIsUndefined()";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateMedicationOrderInformationQuantityUnit(MedicationOrderInformation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Order Information Quantity Unit</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateMedicationOrderInformationQuantityUnit(MedicationOrderInformation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Order Information Quantity Unit</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateMedicationOrderInformationQuantityUnit(MedicationOrderInformation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateMedicationOrderInformationQuantityUnit(MedicationOrderInformation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static Constraint VALIDATE_MEDICATION_ORDER_INFORMATION_QUANTITY_UNIT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param medicationOrderInformation The receiving '<em><b>Medication Order Information</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param medicationOrderInformation The receiving '<em><b>Medication Order Information</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 	public static boolean validateMedicationOrderInformationQuantityUnit(
 			MedicationOrderInformation medicationOrderInformation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
@@ -297,35 +297,35 @@ public class MedicationOrderInformationOperations extends SupplyEntryOperations 
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateMedicationOrderInformationPrescriptionNumber(MedicationOrderInformation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Order Information Prescription Number</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateMedicationOrderInformationPrescriptionNumber(MedicationOrderInformation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Order Information Prescription Number</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateMedicationOrderInformationPrescriptionNumber(MedicationOrderInformation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateMedicationOrderInformationPrescriptionNumber(MedicationOrderInformation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_MEDICATION_ORDER_INFORMATION_PRESCRIPTION_NUMBER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.moodCode = vocab::x_DocumentSubstanceMood::EVN implies not self.id->isEmpty()";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateMedicationOrderInformationPrescriptionNumber(MedicationOrderInformation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Order Information Prescription Number</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateMedicationOrderInformationPrescriptionNumber(MedicationOrderInformation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Order Information Prescription Number</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateMedicationOrderInformationPrescriptionNumber(MedicationOrderInformation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateMedicationOrderInformationPrescriptionNumber(MedicationOrderInformation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static Constraint VALIDATE_MEDICATION_ORDER_INFORMATION_PRESCRIPTION_NUMBER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param medicationOrderInformation The receiving '<em><b>Medication Order Information</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param medicationOrderInformation The receiving '<em><b>Medication Order Information</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 	public static boolean validateMedicationOrderInformationPrescriptionNumber(
 			MedicationOrderInformation medicationOrderInformation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
@@ -356,35 +356,35 @@ public class MedicationOrderInformationOperations extends SupplyEntryOperations 
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateMedicationOrderInformationAssigningAuthority(MedicationOrderInformation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Order Information Assigning Authority</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateMedicationOrderInformationAssigningAuthority(MedicationOrderInformation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Order Information Assigning Authority</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateMedicationOrderInformationAssigningAuthority(MedicationOrderInformation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateMedicationOrderInformationAssigningAuthority(MedicationOrderInformation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_MEDICATION_ORDER_INFORMATION_ASSIGNING_AUTHORITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.id.root->size() > 0";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateMedicationOrderInformationAssigningAuthority(MedicationOrderInformation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Order Information Assigning Authority</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateMedicationOrderInformationAssigningAuthority(MedicationOrderInformation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Order Information Assigning Authority</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateMedicationOrderInformationAssigningAuthority(MedicationOrderInformation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateMedicationOrderInformationAssigningAuthority(MedicationOrderInformation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static Constraint VALIDATE_MEDICATION_ORDER_INFORMATION_ASSIGNING_AUTHORITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param medicationOrderInformation The receiving '<em><b>Medication Order Information</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param medicationOrderInformation The receiving '<em><b>Medication Order Information</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 	public static boolean validateMedicationOrderInformationAssigningAuthority(
 			MedicationOrderInformation medicationOrderInformation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
@@ -415,35 +415,35 @@ public class MedicationOrderInformationOperations extends SupplyEntryOperations 
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateMedicationOrderInformationDispenseDate(MedicationOrderInformation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Order Information Dispense Date</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateMedicationOrderInformationDispenseDate(MedicationOrderInformation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Order Information Dispense Date</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateMedicationOrderInformationDispenseDate(MedicationOrderInformation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateMedicationOrderInformationDispenseDate(MedicationOrderInformation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_MEDICATION_ORDER_INFORMATION_DISPENSE_DATE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.moodCode = vocab::x_DocumentSubstanceMood::EVN implies self.effectiveTime->size() > 0";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateMedicationOrderInformationDispenseDate(MedicationOrderInformation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Order Information Dispense Date</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateMedicationOrderInformationDispenseDate(MedicationOrderInformation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Order Information Dispense Date</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateMedicationOrderInformationDispenseDate(MedicationOrderInformation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateMedicationOrderInformationDispenseDate(MedicationOrderInformation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static Constraint VALIDATE_MEDICATION_ORDER_INFORMATION_DISPENSE_DATE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param medicationOrderInformation The receiving '<em><b>Medication Order Information</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param medicationOrderInformation The receiving '<em><b>Medication Order Information</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 	public static boolean validateMedicationOrderInformationDispenseDate(
 			MedicationOrderInformation medicationOrderInformation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
@@ -473,35 +473,35 @@ public class MedicationOrderInformationOperations extends SupplyEntryOperations 
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateMedicationOrderInformationDispensingPharmacyLocation(MedicationOrderInformation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Order Information Dispensing Pharmacy Location</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateMedicationOrderInformationDispensingPharmacyLocation(MedicationOrderInformation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Order Information Dispensing Pharmacy Location</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateMedicationOrderInformationDispensingPharmacyLocation(MedicationOrderInformation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateMedicationOrderInformationDispensingPharmacyLocation(MedicationOrderInformation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_MEDICATION_ORDER_INFORMATION_DISPENSING_PHARMACY_LOCATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.moodCode =  vocab::x_DocumentSubstanceMood::EVN  implies self.performer->select(p | p.assignedEntity.addr->isEmpty())->isEmpty()";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateMedicationOrderInformationDispensingPharmacyLocation(MedicationOrderInformation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Order Information Dispensing Pharmacy Location</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateMedicationOrderInformationDispensingPharmacyLocation(MedicationOrderInformation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Order Information Dispensing Pharmacy Location</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateMedicationOrderInformationDispensingPharmacyLocation(MedicationOrderInformation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateMedicationOrderInformationDispensingPharmacyLocation(MedicationOrderInformation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static Constraint VALIDATE_MEDICATION_ORDER_INFORMATION_DISPENSING_PHARMACY_LOCATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param medicationOrderInformation The receiving '<em><b>Medication Order Information</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param medicationOrderInformation The receiving '<em><b>Medication Order Information</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 	public static boolean validateMedicationOrderInformationDispensingPharmacyLocation(
 			MedicationOrderInformation medicationOrderInformation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
@@ -533,35 +533,35 @@ public class MedicationOrderInformationOperations extends SupplyEntryOperations 
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateMedicationOrderInformationQuantityDispensed(MedicationOrderInformation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Order Information Quantity Dispensed</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateMedicationOrderInformationQuantityDispensed(MedicationOrderInformation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Order Information Quantity Dispensed</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateMedicationOrderInformationQuantityDispensed(MedicationOrderInformation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateMedicationOrderInformationQuantityDispensed(MedicationOrderInformation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_MEDICATION_ORDER_INFORMATION_QUANTITY_DISPENSED__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.moodCode = vocab::x_DocumentSubstanceMood::EVN implies not self.quantity.value.oclIsUndefined()";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateMedicationOrderInformationQuantityDispensed(MedicationOrderInformation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Order Information Quantity Dispensed</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateMedicationOrderInformationQuantityDispensed(MedicationOrderInformation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Order Information Quantity Dispensed</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateMedicationOrderInformationQuantityDispensed(MedicationOrderInformation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateMedicationOrderInformationQuantityDispensed(MedicationOrderInformation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static Constraint VALIDATE_MEDICATION_ORDER_INFORMATION_QUANTITY_DISPENSED__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param medicationOrderInformation The receiving '<em><b>Medication Order Information</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param medicationOrderInformation The receiving '<em><b>Medication Order Information</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 	public static boolean validateMedicationOrderInformationQuantityDispensed(
 			MedicationOrderInformation medicationOrderInformation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
@@ -592,35 +592,35 @@ public class MedicationOrderInformationOperations extends SupplyEntryOperations 
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateMedicationOrderInformationHasFillNumber(MedicationOrderInformation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Order Information Has Fill Number</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateMedicationOrderInformationHasFillNumber(MedicationOrderInformation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Order Information Has Fill Number</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateMedicationOrderInformationHasFillNumber(MedicationOrderInformation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateMedicationOrderInformationHasFillNumber(MedicationOrderInformation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_MEDICATION_ORDER_INFORMATION_HAS_FILL_NUMBER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->select(er | er.typeCode = vocab::x_ActRelationshipEntryRelationship::COMP and er.sequenceNumber.oclIsUndefined())->isEmpty()";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateMedicationOrderInformationHasFillNumber(MedicationOrderInformation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Order Information Has Fill Number</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateMedicationOrderInformationHasFillNumber(MedicationOrderInformation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Order Information Has Fill Number</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateMedicationOrderInformationHasFillNumber(MedicationOrderInformation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateMedicationOrderInformationHasFillNumber(MedicationOrderInformation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static Constraint VALIDATE_MEDICATION_ORDER_INFORMATION_HAS_FILL_NUMBER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param medicationOrderInformation The receiving '<em><b>Medication Order Information</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param medicationOrderInformation The receiving '<em><b>Medication Order Information</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 	public static boolean validateMedicationOrderInformationHasFillNumber(
 			MedicationOrderInformation medicationOrderInformation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
@@ -650,35 +650,35 @@ public class MedicationOrderInformationOperations extends SupplyEntryOperations 
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateMedicationOrderInformationTemplateId(MedicationOrderInformation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Order Information Template Id</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateMedicationOrderInformationTemplateId(MedicationOrderInformation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Order Information Template Id</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateMedicationOrderInformationTemplateId(MedicationOrderInformation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateMedicationOrderInformationTemplateId(MedicationOrderInformation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_MEDICATION_ORDER_INFORMATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.3.88.11.83.8.3')";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateMedicationOrderInformationTemplateId(MedicationOrderInformation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Order Information Template Id</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateMedicationOrderInformationTemplateId(MedicationOrderInformation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Order Information Template Id</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateMedicationOrderInformationTemplateId(MedicationOrderInformation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateMedicationOrderInformationTemplateId(MedicationOrderInformation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static Constraint VALIDATE_MEDICATION_ORDER_INFORMATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param medicationOrderInformation The receiving '<em><b>Medication Order Information</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param medicationOrderInformation The receiving '<em><b>Medication Order Information</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 	public static boolean validateMedicationOrderInformationTemplateId(
 			MedicationOrderInformation medicationOrderInformation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
@@ -708,35 +708,35 @@ public class MedicationOrderInformationOperations extends SupplyEntryOperations 
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateMedicationOrderInformationRepeatNumber(MedicationOrderInformation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Order Information Repeat Number</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateMedicationOrderInformationRepeatNumber(MedicationOrderInformation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Order Information Repeat Number</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateMedicationOrderInformationRepeatNumber(MedicationOrderInformation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateMedicationOrderInformationRepeatNumber(MedicationOrderInformation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_MEDICATION_ORDER_INFORMATION_REPEAT_NUMBER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.repeatNumber.oclIsUndefined() or self.repeatNumber.isNullFlavorUndefined()) implies (not self.repeatNumber.oclIsUndefined())";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateMedicationOrderInformationRepeatNumber(MedicationOrderInformation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Order Information Repeat Number</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateMedicationOrderInformationRepeatNumber(MedicationOrderInformation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Order Information Repeat Number</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateMedicationOrderInformationRepeatNumber(MedicationOrderInformation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateMedicationOrderInformationRepeatNumber(MedicationOrderInformation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static Constraint VALIDATE_MEDICATION_ORDER_INFORMATION_REPEAT_NUMBER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param medicationOrderInformation The receiving '<em><b>Medication Order Information</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param medicationOrderInformation The receiving '<em><b>Medication Order Information</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 	public static boolean validateMedicationOrderInformationRepeatNumber(
 			MedicationOrderInformation medicationOrderInformation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
@@ -766,13 +766,13 @@ public class MedicationOrderInformationOperations extends SupplyEntryOperations 
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateMedicationOrderInformationStatusCodeP(MedicationOrderInformation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Order Information Status Code P</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateMedicationOrderInformationStatusCodeP(MedicationOrderInformation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Order Information Status Code P</em>}' operation.
+	 * <!-- begin-user-doc -->
 	* <!-- end-user-doc -->
-	* @see #validateMedicationOrderInformationStatusCodeP(MedicationOrderInformation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateMedicationOrderInformationStatusCodeP(MedicationOrderInformation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_MEDICATION_ORDER_INFORMATION_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined())";
 
 	/**
@@ -851,25 +851,25 @@ public class MedicationOrderInformationOperations extends SupplyEntryOperations 
 			+ "value.code = 'aborted' or value.code = 'completed')";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateMedicationOrderInformationStatusCode(MedicationOrderInformation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Order Information Status Code</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateMedicationOrderInformationStatusCode(MedicationOrderInformation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Order Information Status Code</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateMedicationOrderInformationStatusCode(MedicationOrderInformation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateMedicationOrderInformationStatusCode(MedicationOrderInformation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static Constraint VALIDATE_MEDICATION_ORDER_INFORMATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param medicationOrderInformation The receiving '<em><b>Medication Order Information</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param medicationOrderInformation The receiving '<em><b>Medication Order Information</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 	public static boolean validateMedicationOrderInformationStatusCode(
 			MedicationOrderInformation medicationOrderInformation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {

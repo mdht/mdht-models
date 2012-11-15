@@ -83,44 +83,44 @@ import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
  */
 public class PatientSummaryOperations extends ContinuityOfCareDocumentOperations {
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	protected PatientSummaryOperations() {
 		super();
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validatePatientSummaryHealthcareProvider(PatientSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Summary Healthcare Provider</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validatePatientSummaryHealthcareProvider(PatientSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Summary Healthcare Provider</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validatePatientSummaryHealthcareProvider(PatientSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validatePatientSummaryHealthcareProvider(PatientSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_PATIENT_SUMMARY_HEALTHCARE_PROVIDER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.documentationOf.serviceEvent.performer->size() > 0";
 
 	/**
-	* The cached OCL invariant for the '{@link #validatePatientSummaryHealthcareProvider(PatientSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Summary Healthcare Provider</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validatePatientSummaryHealthcareProvider(PatientSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Summary Healthcare Provider</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validatePatientSummaryHealthcareProvider(PatientSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validatePatientSummaryHealthcareProvider(PatientSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static Constraint VALIDATE_PATIENT_SUMMARY_HEALTHCARE_PROVIDER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param patientSummary The receiving '<em><b>Patient Summary</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param patientSummary The receiving '<em><b>Patient Summary</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 	public static boolean validatePatientSummaryHealthcareProvider(PatientSummary patientSummary,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -148,35 +148,35 @@ public class PatientSummaryOperations extends ContinuityOfCareDocumentOperations
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validatePatientSummaryTemplateId(PatientSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Summary Template Id</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validatePatientSummaryTemplateId(PatientSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Summary Template Id</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validatePatientSummaryTemplateId(PatientSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validatePatientSummaryTemplateId(PatientSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_PATIENT_SUMMARY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.3.88.11.32.1')";
 
 	/**
-	* The cached OCL invariant for the '{@link #validatePatientSummaryTemplateId(PatientSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Summary Template Id</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validatePatientSummaryTemplateId(PatientSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Summary Template Id</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validatePatientSummaryTemplateId(PatientSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validatePatientSummaryTemplateId(PatientSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static Constraint VALIDATE_PATIENT_SUMMARY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param patientSummary The receiving '<em><b>Patient Summary</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param patientSummary The receiving '<em><b>Patient Summary</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 	public static boolean validatePatientSummaryTemplateId(PatientSummary patientSummary, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
@@ -204,35 +204,35 @@ public class PatientSummaryOperations extends ContinuityOfCareDocumentOperations
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validatePatientSummaryAdvanceDirectivesSection(PatientSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Summary Advance Directives Section</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validatePatientSummaryAdvanceDirectivesSection(PatientSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Summary Advance Directives Section</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validatePatientSummaryAdvanceDirectivesSection(PatientSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validatePatientSummaryAdvanceDirectivesSection(PatientSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_PATIENT_SUMMARY_ADVANCE_DIRECTIVES_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::AdvanceDirectivesSection))";
 
 	/**
-	* The cached OCL invariant for the '{@link #validatePatientSummaryAdvanceDirectivesSection(PatientSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Summary Advance Directives Section</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validatePatientSummaryAdvanceDirectivesSection(PatientSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Summary Advance Directives Section</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validatePatientSummaryAdvanceDirectivesSection(PatientSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validatePatientSummaryAdvanceDirectivesSection(PatientSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static Constraint VALIDATE_PATIENT_SUMMARY_ADVANCE_DIRECTIVES_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param patientSummary The receiving '<em><b>Patient Summary</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param patientSummary The receiving '<em><b>Patient Summary</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 	public static boolean validatePatientSummaryAdvanceDirectivesSection(PatientSummary patientSummary,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -261,35 +261,35 @@ public class PatientSummaryOperations extends ContinuityOfCareDocumentOperations
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validatePatientSummaryAllergiesReactionsSection(PatientSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Summary Allergies Reactions Section</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validatePatientSummaryAllergiesReactionsSection(PatientSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Summary Allergies Reactions Section</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validatePatientSummaryAllergiesReactionsSection(PatientSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validatePatientSummaryAllergiesReactionsSection(PatientSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_PATIENT_SUMMARY_ALLERGIES_REACTIONS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::AllergiesReactionsSection))";
 
 	/**
-	* The cached OCL invariant for the '{@link #validatePatientSummaryAllergiesReactionsSection(PatientSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Summary Allergies Reactions Section</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validatePatientSummaryAllergiesReactionsSection(PatientSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Summary Allergies Reactions Section</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validatePatientSummaryAllergiesReactionsSection(PatientSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validatePatientSummaryAllergiesReactionsSection(PatientSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static Constraint VALIDATE_PATIENT_SUMMARY_ALLERGIES_REACTIONS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param patientSummary The receiving '<em><b>Patient Summary</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param patientSummary The receiving '<em><b>Patient Summary</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 	public static boolean validatePatientSummaryAllergiesReactionsSection(PatientSummary patientSummary,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -318,35 +318,35 @@ public class PatientSummaryOperations extends ContinuityOfCareDocumentOperations
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validatePatientSummaryProblemListSection(PatientSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Summary Problem List Section</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validatePatientSummaryProblemListSection(PatientSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Summary Problem List Section</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validatePatientSummaryProblemListSection(PatientSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validatePatientSummaryProblemListSection(PatientSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_PATIENT_SUMMARY_PROBLEM_LIST_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::ProblemListSection))";
 
 	/**
-	* The cached OCL invariant for the '{@link #validatePatientSummaryProblemListSection(PatientSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Summary Problem List Section</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validatePatientSummaryProblemListSection(PatientSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Summary Problem List Section</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validatePatientSummaryProblemListSection(PatientSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validatePatientSummaryProblemListSection(PatientSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static Constraint VALIDATE_PATIENT_SUMMARY_PROBLEM_LIST_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param patientSummary The receiving '<em><b>Patient Summary</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param patientSummary The receiving '<em><b>Patient Summary</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 	public static boolean validatePatientSummaryProblemListSection(PatientSummary patientSummary,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -374,35 +374,35 @@ public class PatientSummaryOperations extends ContinuityOfCareDocumentOperations
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validatePatientSummaryEncountersSection(PatientSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Summary Encounters Section</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validatePatientSummaryEncountersSection(PatientSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Summary Encounters Section</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validatePatientSummaryEncountersSection(PatientSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validatePatientSummaryEncountersSection(PatientSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_PATIENT_SUMMARY_ENCOUNTERS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::EncountersSection))";
 
 	/**
-	* The cached OCL invariant for the '{@link #validatePatientSummaryEncountersSection(PatientSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Summary Encounters Section</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validatePatientSummaryEncountersSection(PatientSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Summary Encounters Section</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validatePatientSummaryEncountersSection(PatientSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validatePatientSummaryEncountersSection(PatientSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static Constraint VALIDATE_PATIENT_SUMMARY_ENCOUNTERS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param patientSummary The receiving '<em><b>Patient Summary</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param patientSummary The receiving '<em><b>Patient Summary</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 	public static boolean validatePatientSummaryEncountersSection(PatientSummary patientSummary,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -430,35 +430,35 @@ public class PatientSummaryOperations extends ContinuityOfCareDocumentOperations
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validatePatientSummaryImmunizationsSection(PatientSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Summary Immunizations Section</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validatePatientSummaryImmunizationsSection(PatientSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Summary Immunizations Section</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validatePatientSummaryImmunizationsSection(PatientSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validatePatientSummaryImmunizationsSection(PatientSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_PATIENT_SUMMARY_IMMUNIZATIONS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::ImmunizationsSection))";
 
 	/**
-	* The cached OCL invariant for the '{@link #validatePatientSummaryImmunizationsSection(PatientSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Summary Immunizations Section</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validatePatientSummaryImmunizationsSection(PatientSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Summary Immunizations Section</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validatePatientSummaryImmunizationsSection(PatientSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validatePatientSummaryImmunizationsSection(PatientSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static Constraint VALIDATE_PATIENT_SUMMARY_IMMUNIZATIONS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param patientSummary The receiving '<em><b>Patient Summary</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param patientSummary The receiving '<em><b>Patient Summary</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 	public static boolean validatePatientSummaryImmunizationsSection(PatientSummary patientSummary,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -487,35 +487,35 @@ public class PatientSummaryOperations extends ContinuityOfCareDocumentOperations
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validatePatientSummaryPayersSection(PatientSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Summary Payers Section</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validatePatientSummaryPayersSection(PatientSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Summary Payers Section</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validatePatientSummaryPayersSection(PatientSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validatePatientSummaryPayersSection(PatientSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_PATIENT_SUMMARY_PAYERS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::PayersSection))";
 
 	/**
-	* The cached OCL invariant for the '{@link #validatePatientSummaryPayersSection(PatientSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Summary Payers Section</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validatePatientSummaryPayersSection(PatientSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Summary Payers Section</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validatePatientSummaryPayersSection(PatientSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validatePatientSummaryPayersSection(PatientSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static Constraint VALIDATE_PATIENT_SUMMARY_PAYERS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param patientSummary The receiving '<em><b>Patient Summary</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param patientSummary The receiving '<em><b>Patient Summary</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 	public static boolean validatePatientSummaryPayersSection(PatientSummary patientSummary,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -543,35 +543,35 @@ public class PatientSummaryOperations extends ContinuityOfCareDocumentOperations
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validatePatientSummaryMedicationsSection(PatientSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Summary Medications Section</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validatePatientSummaryMedicationsSection(PatientSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Summary Medications Section</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validatePatientSummaryMedicationsSection(PatientSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validatePatientSummaryMedicationsSection(PatientSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_PATIENT_SUMMARY_MEDICATIONS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::MedicationsSection))";
 
 	/**
-	* The cached OCL invariant for the '{@link #validatePatientSummaryMedicationsSection(PatientSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Summary Medications Section</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validatePatientSummaryMedicationsSection(PatientSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Summary Medications Section</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validatePatientSummaryMedicationsSection(PatientSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validatePatientSummaryMedicationsSection(PatientSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static Constraint VALIDATE_PATIENT_SUMMARY_MEDICATIONS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param patientSummary The receiving '<em><b>Patient Summary</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param patientSummary The receiving '<em><b>Patient Summary</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 	public static boolean validatePatientSummaryMedicationsSection(PatientSummary patientSummary,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -599,35 +599,35 @@ public class PatientSummaryOperations extends ContinuityOfCareDocumentOperations
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validatePatientSummarySurgeriesSection(PatientSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Summary Surgeries Section</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validatePatientSummarySurgeriesSection(PatientSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Summary Surgeries Section</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validatePatientSummarySurgeriesSection(PatientSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validatePatientSummarySurgeriesSection(PatientSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_PATIENT_SUMMARY_SURGERIES_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::SurgeriesSection))";
 
 	/**
-	* The cached OCL invariant for the '{@link #validatePatientSummarySurgeriesSection(PatientSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Summary Surgeries Section</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validatePatientSummarySurgeriesSection(PatientSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Summary Surgeries Section</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validatePatientSummarySurgeriesSection(PatientSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validatePatientSummarySurgeriesSection(PatientSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static Constraint VALIDATE_PATIENT_SUMMARY_SURGERIES_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param patientSummary The receiving '<em><b>Patient Summary</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param patientSummary The receiving '<em><b>Patient Summary</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 	public static boolean validatePatientSummarySurgeriesSection(PatientSummary patientSummary,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -655,35 +655,35 @@ public class PatientSummaryOperations extends ContinuityOfCareDocumentOperations
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validatePatientSummaryPlanOfCareSection(PatientSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Summary Plan Of Care Section</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validatePatientSummaryPlanOfCareSection(PatientSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Summary Plan Of Care Section</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validatePatientSummaryPlanOfCareSection(PatientSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validatePatientSummaryPlanOfCareSection(PatientSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_PATIENT_SUMMARY_PLAN_OF_CARE_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::PlanOfCareSection))";
 
 	/**
-	* The cached OCL invariant for the '{@link #validatePatientSummaryPlanOfCareSection(PatientSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Summary Plan Of Care Section</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validatePatientSummaryPlanOfCareSection(PatientSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Summary Plan Of Care Section</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validatePatientSummaryPlanOfCareSection(PatientSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validatePatientSummaryPlanOfCareSection(PatientSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static Constraint VALIDATE_PATIENT_SUMMARY_PLAN_OF_CARE_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param patientSummary The receiving '<em><b>Patient Summary</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param patientSummary The receiving '<em><b>Patient Summary</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 	public static boolean validatePatientSummaryPlanOfCareSection(PatientSummary patientSummary,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -711,35 +711,35 @@ public class PatientSummaryOperations extends ContinuityOfCareDocumentOperations
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validatePatientSummaryPregnancyHistorySection(PatientSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Summary Pregnancy History Section</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validatePatientSummaryPregnancyHistorySection(PatientSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Summary Pregnancy History Section</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validatePatientSummaryPregnancyHistorySection(PatientSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validatePatientSummaryPregnancyHistorySection(PatientSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_PATIENT_SUMMARY_PREGNANCY_HISTORY_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ihe::PregnancyHistorySection))";
 
 	/**
-	* The cached OCL invariant for the '{@link #validatePatientSummaryPregnancyHistorySection(PatientSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Summary Pregnancy History Section</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validatePatientSummaryPregnancyHistorySection(PatientSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Summary Pregnancy History Section</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validatePatientSummaryPregnancyHistorySection(PatientSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validatePatientSummaryPregnancyHistorySection(PatientSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static Constraint VALIDATE_PATIENT_SUMMARY_PREGNANCY_HISTORY_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param patientSummary The receiving '<em><b>Patient Summary</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param patientSummary The receiving '<em><b>Patient Summary</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 	public static boolean validatePatientSummaryPregnancyHistorySection(PatientSummary patientSummary,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -768,35 +768,35 @@ public class PatientSummaryOperations extends ContinuityOfCareDocumentOperations
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validatePatientSummaryVitalSignsSection(PatientSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Summary Vital Signs Section</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validatePatientSummaryVitalSignsSection(PatientSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Summary Vital Signs Section</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validatePatientSummaryVitalSignsSection(PatientSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validatePatientSummaryVitalSignsSection(PatientSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_PATIENT_SUMMARY_VITAL_SIGNS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::VitalSignsSection))";
 
 	/**
-	* The cached OCL invariant for the '{@link #validatePatientSummaryVitalSignsSection(PatientSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Summary Vital Signs Section</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validatePatientSummaryVitalSignsSection(PatientSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Summary Vital Signs Section</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validatePatientSummaryVitalSignsSection(PatientSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validatePatientSummaryVitalSignsSection(PatientSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static Constraint VALIDATE_PATIENT_SUMMARY_VITAL_SIGNS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param patientSummary The receiving '<em><b>Patient Summary</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param patientSummary The receiving '<em><b>Patient Summary</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 	public static boolean validatePatientSummaryVitalSignsSection(PatientSummary patientSummary,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -824,35 +824,35 @@ public class PatientSummaryOperations extends ContinuityOfCareDocumentOperations
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validatePatientSummaryDiagnosticResultsSection(PatientSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Summary Diagnostic Results Section</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validatePatientSummaryDiagnosticResultsSection(PatientSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Summary Diagnostic Results Section</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validatePatientSummaryDiagnosticResultsSection(PatientSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validatePatientSummaryDiagnosticResultsSection(PatientSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_PATIENT_SUMMARY_DIAGNOSTIC_RESULTS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::DiagnosticResultsSection))";
 
 	/**
-	* The cached OCL invariant for the '{@link #validatePatientSummaryDiagnosticResultsSection(PatientSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Summary Diagnostic Results Section</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validatePatientSummaryDiagnosticResultsSection(PatientSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Summary Diagnostic Results Section</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validatePatientSummaryDiagnosticResultsSection(PatientSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validatePatientSummaryDiagnosticResultsSection(PatientSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static Constraint VALIDATE_PATIENT_SUMMARY_DIAGNOSTIC_RESULTS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param patientSummary The receiving '<em><b>Patient Summary</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param patientSummary The receiving '<em><b>Patient Summary</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 	public static boolean validatePatientSummaryDiagnosticResultsSection(PatientSummary patientSummary,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -907,30 +907,30 @@ public class PatientSummaryOperations extends ContinuityOfCareDocumentOperations
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #getHITSPAdvanceDirectivesSection(PatientSummary) <em>Get HITSP Advance Directives Section</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #getHITSPAdvanceDirectivesSection(PatientSummary) <em>Get HITSP Advance Directives Section</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #getHITSPAdvanceDirectivesSection(PatientSummary)
-	* @generated
-	* @ordered
-	*/
+	 * @see #getHITSPAdvanceDirectivesSection(PatientSummary)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String GET_HITSP_ADVANCE_DIRECTIVES_SECTION__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::AdvanceDirectivesSection))->asSequence()->any(true).oclAsType(hitsp::AdvanceDirectivesSection)";
 
 	/**
-	* The cached OCL query for the '{@link #getHITSPAdvanceDirectivesSection(PatientSummary) <em>Get HITSP Advance Directives Section</em>}' query operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL query for the '{@link #getHITSPAdvanceDirectivesSection(PatientSummary) <em>Get HITSP Advance Directives Section</em>}' query operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #getHITSPAdvanceDirectivesSection(PatientSummary)
-	* @generated
-	* @ordered
-	*/
+	 * @see #getHITSPAdvanceDirectivesSection(PatientSummary)
+	 * @generated
+	 * @ordered
+	 */
 	protected static OCLExpression<EClassifier> GET_HITSP_ADVANCE_DIRECTIVES_SECTION__EOCL_QRY;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public static AdvanceDirectivesSection getHITSPAdvanceDirectivesSection(PatientSummary patientSummary) {
 		if (GET_HITSP_ADVANCE_DIRECTIVES_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
@@ -948,30 +948,30 @@ public class PatientSummaryOperations extends ContinuityOfCareDocumentOperations
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #getAllergiesReactionsSection(PatientSummary) <em>Get Allergies Reactions Section</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #getAllergiesReactionsSection(PatientSummary) <em>Get Allergies Reactions Section</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #getAllergiesReactionsSection(PatientSummary)
-	* @generated
-	* @ordered
-	*/
+	 * @see #getAllergiesReactionsSection(PatientSummary)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String GET_ALLERGIES_REACTIONS_SECTION__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::AllergiesReactionsSection))->asSequence()->any(true).oclAsType(hitsp::AllergiesReactionsSection)";
 
 	/**
-	* The cached OCL query for the '{@link #getAllergiesReactionsSection(PatientSummary) <em>Get Allergies Reactions Section</em>}' query operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL query for the '{@link #getAllergiesReactionsSection(PatientSummary) <em>Get Allergies Reactions Section</em>}' query operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #getAllergiesReactionsSection(PatientSummary)
-	* @generated
-	* @ordered
-	*/
+	 * @see #getAllergiesReactionsSection(PatientSummary)
+	 * @generated
+	 * @ordered
+	 */
 	protected static OCLExpression<EClassifier> GET_ALLERGIES_REACTIONS_SECTION__EOCL_QRY;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public static AllergiesReactionsSection getAllergiesReactionsSection(PatientSummary patientSummary) {
 		if (GET_ALLERGIES_REACTIONS_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
@@ -989,30 +989,30 @@ public class PatientSummaryOperations extends ContinuityOfCareDocumentOperations
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #getProblemListSection(PatientSummary) <em>Get Problem List Section</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #getProblemListSection(PatientSummary) <em>Get Problem List Section</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #getProblemListSection(PatientSummary)
-	* @generated
-	* @ordered
-	*/
+	 * @see #getProblemListSection(PatientSummary)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String GET_PROBLEM_LIST_SECTION__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::ProblemListSection))->asSequence()->any(true).oclAsType(hitsp::ProblemListSection)";
 
 	/**
-	* The cached OCL query for the '{@link #getProblemListSection(PatientSummary) <em>Get Problem List Section</em>}' query operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL query for the '{@link #getProblemListSection(PatientSummary) <em>Get Problem List Section</em>}' query operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #getProblemListSection(PatientSummary)
-	* @generated
-	* @ordered
-	*/
+	 * @see #getProblemListSection(PatientSummary)
+	 * @generated
+	 * @ordered
+	 */
 	protected static OCLExpression<EClassifier> GET_PROBLEM_LIST_SECTION__EOCL_QRY;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public static ProblemListSection getProblemListSection(PatientSummary patientSummary) {
 		if (GET_PROBLEM_LIST_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
@@ -1030,30 +1030,30 @@ public class PatientSummaryOperations extends ContinuityOfCareDocumentOperations
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #getHITSPEncountersSection(PatientSummary) <em>Get HITSP Encounters Section</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #getHITSPEncountersSection(PatientSummary) <em>Get HITSP Encounters Section</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #getHITSPEncountersSection(PatientSummary)
-	* @generated
-	* @ordered
-	*/
+	 * @see #getHITSPEncountersSection(PatientSummary)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String GET_HITSP_ENCOUNTERS_SECTION__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::EncountersSection))->asSequence()->any(true).oclAsType(hitsp::EncountersSection)";
 
 	/**
-	* The cached OCL query for the '{@link #getHITSPEncountersSection(PatientSummary) <em>Get HITSP Encounters Section</em>}' query operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL query for the '{@link #getHITSPEncountersSection(PatientSummary) <em>Get HITSP Encounters Section</em>}' query operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #getHITSPEncountersSection(PatientSummary)
-	* @generated
-	* @ordered
-	*/
+	 * @see #getHITSPEncountersSection(PatientSummary)
+	 * @generated
+	 * @ordered
+	 */
 	protected static OCLExpression<EClassifier> GET_HITSP_ENCOUNTERS_SECTION__EOCL_QRY;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public static EncountersSection getHITSPEncountersSection(PatientSummary patientSummary) {
 		if (GET_HITSP_ENCOUNTERS_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
@@ -1071,30 +1071,30 @@ public class PatientSummaryOperations extends ContinuityOfCareDocumentOperations
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #getHITSPImmunizationsSection(PatientSummary) <em>Get HITSP Immunizations Section</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #getHITSPImmunizationsSection(PatientSummary) <em>Get HITSP Immunizations Section</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #getHITSPImmunizationsSection(PatientSummary)
-	* @generated
-	* @ordered
-	*/
+	 * @see #getHITSPImmunizationsSection(PatientSummary)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String GET_HITSP_IMMUNIZATIONS_SECTION__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::ImmunizationsSection))->asSequence()->any(true).oclAsType(hitsp::ImmunizationsSection)";
 
 	/**
-	* The cached OCL query for the '{@link #getHITSPImmunizationsSection(PatientSummary) <em>Get HITSP Immunizations Section</em>}' query operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL query for the '{@link #getHITSPImmunizationsSection(PatientSummary) <em>Get HITSP Immunizations Section</em>}' query operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #getHITSPImmunizationsSection(PatientSummary)
-	* @generated
-	* @ordered
-	*/
+	 * @see #getHITSPImmunizationsSection(PatientSummary)
+	 * @generated
+	 * @ordered
+	 */
 	protected static OCLExpression<EClassifier> GET_HITSP_IMMUNIZATIONS_SECTION__EOCL_QRY;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public static ImmunizationsSection getHITSPImmunizationsSection(PatientSummary patientSummary) {
 		if (GET_HITSP_IMMUNIZATIONS_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
@@ -1112,30 +1112,30 @@ public class PatientSummaryOperations extends ContinuityOfCareDocumentOperations
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #getHITSPPayersSection(PatientSummary) <em>Get HITSP Payers Section</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #getHITSPPayersSection(PatientSummary) <em>Get HITSP Payers Section</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #getHITSPPayersSection(PatientSummary)
-	* @generated
-	* @ordered
-	*/
+	 * @see #getHITSPPayersSection(PatientSummary)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String GET_HITSP_PAYERS_SECTION__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::PayersSection))->asSequence()->any(true).oclAsType(hitsp::PayersSection)";
 
 	/**
-	* The cached OCL query for the '{@link #getHITSPPayersSection(PatientSummary) <em>Get HITSP Payers Section</em>}' query operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL query for the '{@link #getHITSPPayersSection(PatientSummary) <em>Get HITSP Payers Section</em>}' query operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #getHITSPPayersSection(PatientSummary)
-	* @generated
-	* @ordered
-	*/
+	 * @see #getHITSPPayersSection(PatientSummary)
+	 * @generated
+	 * @ordered
+	 */
 	protected static OCLExpression<EClassifier> GET_HITSP_PAYERS_SECTION__EOCL_QRY;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public static PayersSection getHITSPPayersSection(PatientSummary patientSummary) {
 		if (GET_HITSP_PAYERS_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
@@ -1153,30 +1153,30 @@ public class PatientSummaryOperations extends ContinuityOfCareDocumentOperations
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #getHITSPMedicationsSection(PatientSummary) <em>Get HITSP Medications Section</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #getHITSPMedicationsSection(PatientSummary) <em>Get HITSP Medications Section</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #getHITSPMedicationsSection(PatientSummary)
-	* @generated
-	* @ordered
-	*/
+	 * @see #getHITSPMedicationsSection(PatientSummary)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String GET_HITSP_MEDICATIONS_SECTION__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::MedicationsSection))->asSequence()->any(true).oclAsType(hitsp::MedicationsSection)";
 
 	/**
-	* The cached OCL query for the '{@link #getHITSPMedicationsSection(PatientSummary) <em>Get HITSP Medications Section</em>}' query operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL query for the '{@link #getHITSPMedicationsSection(PatientSummary) <em>Get HITSP Medications Section</em>}' query operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #getHITSPMedicationsSection(PatientSummary)
-	* @generated
-	* @ordered
-	*/
+	 * @see #getHITSPMedicationsSection(PatientSummary)
+	 * @generated
+	 * @ordered
+	 */
 	protected static OCLExpression<EClassifier> GET_HITSP_MEDICATIONS_SECTION__EOCL_QRY;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public static MedicationsSection getHITSPMedicationsSection(PatientSummary patientSummary) {
 		if (GET_HITSP_MEDICATIONS_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
@@ -1194,30 +1194,30 @@ public class PatientSummaryOperations extends ContinuityOfCareDocumentOperations
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #getSurgeriesSection(PatientSummary) <em>Get Surgeries Section</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #getSurgeriesSection(PatientSummary) <em>Get Surgeries Section</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #getSurgeriesSection(PatientSummary)
-	* @generated
-	* @ordered
-	*/
+	 * @see #getSurgeriesSection(PatientSummary)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String GET_SURGERIES_SECTION__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::SurgeriesSection))->asSequence()->any(true).oclAsType(hitsp::SurgeriesSection)";
 
 	/**
-	* The cached OCL query for the '{@link #getSurgeriesSection(PatientSummary) <em>Get Surgeries Section</em>}' query operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL query for the '{@link #getSurgeriesSection(PatientSummary) <em>Get Surgeries Section</em>}' query operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #getSurgeriesSection(PatientSummary)
-	* @generated
-	* @ordered
-	*/
+	 * @see #getSurgeriesSection(PatientSummary)
+	 * @generated
+	 * @ordered
+	 */
 	protected static OCLExpression<EClassifier> GET_SURGERIES_SECTION__EOCL_QRY;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public static SurgeriesSection getSurgeriesSection(PatientSummary patientSummary) {
 		if (GET_SURGERIES_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
@@ -1235,30 +1235,30 @@ public class PatientSummaryOperations extends ContinuityOfCareDocumentOperations
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #getHITSPPlanOfCareSection(PatientSummary) <em>Get HITSP Plan Of Care Section</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #getHITSPPlanOfCareSection(PatientSummary) <em>Get HITSP Plan Of Care Section</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #getHITSPPlanOfCareSection(PatientSummary)
-	* @generated
-	* @ordered
-	*/
+	 * @see #getHITSPPlanOfCareSection(PatientSummary)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String GET_HITSP_PLAN_OF_CARE_SECTION__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::PlanOfCareSection))->asSequence()->any(true).oclAsType(hitsp::PlanOfCareSection)";
 
 	/**
-	* The cached OCL query for the '{@link #getHITSPPlanOfCareSection(PatientSummary) <em>Get HITSP Plan Of Care Section</em>}' query operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL query for the '{@link #getHITSPPlanOfCareSection(PatientSummary) <em>Get HITSP Plan Of Care Section</em>}' query operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #getHITSPPlanOfCareSection(PatientSummary)
-	* @generated
-	* @ordered
-	*/
+	 * @see #getHITSPPlanOfCareSection(PatientSummary)
+	 * @generated
+	 * @ordered
+	 */
 	protected static OCLExpression<EClassifier> GET_HITSP_PLAN_OF_CARE_SECTION__EOCL_QRY;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public static PlanOfCareSection getHITSPPlanOfCareSection(PatientSummary patientSummary) {
 		if (GET_HITSP_PLAN_OF_CARE_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
@@ -1276,30 +1276,30 @@ public class PatientSummaryOperations extends ContinuityOfCareDocumentOperations
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #getPregnancyHistorySection(PatientSummary) <em>Get Pregnancy History Section</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #getPregnancyHistorySection(PatientSummary) <em>Get Pregnancy History Section</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #getPregnancyHistorySection(PatientSummary)
-	* @generated
-	* @ordered
-	*/
+	 * @see #getPregnancyHistorySection(PatientSummary)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String GET_PREGNANCY_HISTORY_SECTION__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ihe::PregnancyHistorySection))->asSequence()->any(true).oclAsType(ihe::PregnancyHistorySection)";
 
 	/**
-	* The cached OCL query for the '{@link #getPregnancyHistorySection(PatientSummary) <em>Get Pregnancy History Section</em>}' query operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL query for the '{@link #getPregnancyHistorySection(PatientSummary) <em>Get Pregnancy History Section</em>}' query operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #getPregnancyHistorySection(PatientSummary)
-	* @generated
-	* @ordered
-	*/
+	 * @see #getPregnancyHistorySection(PatientSummary)
+	 * @generated
+	 * @ordered
+	 */
 	protected static OCLExpression<EClassifier> GET_PREGNANCY_HISTORY_SECTION__EOCL_QRY;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public static PregnancyHistorySection getPregnancyHistorySection(PatientSummary patientSummary) {
 		if (GET_PREGNANCY_HISTORY_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
@@ -1317,30 +1317,30 @@ public class PatientSummaryOperations extends ContinuityOfCareDocumentOperations
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #getHITSPVitalSignsSection(PatientSummary) <em>Get HITSP Vital Signs Section</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #getHITSPVitalSignsSection(PatientSummary) <em>Get HITSP Vital Signs Section</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #getHITSPVitalSignsSection(PatientSummary)
-	* @generated
-	* @ordered
-	*/
+	 * @see #getHITSPVitalSignsSection(PatientSummary)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String GET_HITSP_VITAL_SIGNS_SECTION__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::VitalSignsSection))->asSequence()->any(true).oclAsType(hitsp::VitalSignsSection)";
 
 	/**
-	* The cached OCL query for the '{@link #getHITSPVitalSignsSection(PatientSummary) <em>Get HITSP Vital Signs Section</em>}' query operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL query for the '{@link #getHITSPVitalSignsSection(PatientSummary) <em>Get HITSP Vital Signs Section</em>}' query operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #getHITSPVitalSignsSection(PatientSummary)
-	* @generated
-	* @ordered
-	*/
+	 * @see #getHITSPVitalSignsSection(PatientSummary)
+	 * @generated
+	 * @ordered
+	 */
 	protected static OCLExpression<EClassifier> GET_HITSP_VITAL_SIGNS_SECTION__EOCL_QRY;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public static VitalSignsSection getHITSPVitalSignsSection(PatientSummary patientSummary) {
 		if (GET_HITSP_VITAL_SIGNS_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
@@ -1358,30 +1358,30 @@ public class PatientSummaryOperations extends ContinuityOfCareDocumentOperations
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #getDiagnosticResultsSection(PatientSummary) <em>Get Diagnostic Results Section</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #getDiagnosticResultsSection(PatientSummary) <em>Get Diagnostic Results Section</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #getDiagnosticResultsSection(PatientSummary)
-	* @generated
-	* @ordered
-	*/
+	 * @see #getDiagnosticResultsSection(PatientSummary)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String GET_DIAGNOSTIC_RESULTS_SECTION__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::DiagnosticResultsSection))->asSequence()->any(true).oclAsType(hitsp::DiagnosticResultsSection)";
 
 	/**
-	* The cached OCL query for the '{@link #getDiagnosticResultsSection(PatientSummary) <em>Get Diagnostic Results Section</em>}' query operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL query for the '{@link #getDiagnosticResultsSection(PatientSummary) <em>Get Diagnostic Results Section</em>}' query operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #getDiagnosticResultsSection(PatientSummary)
-	* @generated
-	* @ordered
-	*/
+	 * @see #getDiagnosticResultsSection(PatientSummary)
+	 * @generated
+	 * @ordered
+	 */
 	protected static OCLExpression<EClassifier> GET_DIAGNOSTIC_RESULTS_SECTION__EOCL_QRY;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public static DiagnosticResultsSection getDiagnosticResultsSection(PatientSummary patientSummary) {
 		if (GET_DIAGNOSTIC_RESULTS_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();

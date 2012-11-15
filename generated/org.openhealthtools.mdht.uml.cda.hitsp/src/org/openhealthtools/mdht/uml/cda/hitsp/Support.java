@@ -26,16 +26,16 @@ import org.openhealthtools.mdht.uml.cda.ihe.PatientContact;
  */
 public interface Support extends PatientContact {
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public Support init();
 
 	/**
-	   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	   * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	public Support init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // Support

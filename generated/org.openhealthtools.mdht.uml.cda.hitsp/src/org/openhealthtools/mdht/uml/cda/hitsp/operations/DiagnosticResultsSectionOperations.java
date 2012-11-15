@@ -55,44 +55,44 @@ import org.openhealthtools.mdht.uml.cda.ihe.operations.CodedResultsSectionOperat
  */
 public class DiagnosticResultsSectionOperations extends CodedResultsSectionOperations {
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	protected DiagnosticResultsSectionOperations() {
 		super();
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateDiagnosticResultsSectionHasResult(DiagnosticResultsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Diagnostic Results Section Has Result</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateDiagnosticResultsSectionHasResult(DiagnosticResultsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Diagnostic Results Section Has Result</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateDiagnosticResultsSectionHasResult(DiagnosticResultsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateDiagnosticResultsSectionHasResult(DiagnosticResultsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_DIAGNOSTIC_RESULTS_SECTION_HAS_RESULT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->exists(entry : cda::Entry | entry.observation.oclIsKindOf(hitsp::Result)) or self.entry->exists(entry : cda::Entry | entry.organizer.oclIsKindOf(ccd::ResultOrganizer) and entry.organizer.component.observation->exists(obs : cda::Observation | obs.oclIsKindOf(hitsp::Result)))";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateDiagnosticResultsSectionHasResult(DiagnosticResultsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Diagnostic Results Section Has Result</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateDiagnosticResultsSectionHasResult(DiagnosticResultsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Diagnostic Results Section Has Result</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateDiagnosticResultsSectionHasResult(DiagnosticResultsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateDiagnosticResultsSectionHasResult(DiagnosticResultsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static Constraint VALIDATE_DIAGNOSTIC_RESULTS_SECTION_HAS_RESULT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param diagnosticResultsSection The receiving '<em><b>Diagnostic Results Section</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param diagnosticResultsSection The receiving '<em><b>Diagnostic Results Section</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 	public static boolean validateDiagnosticResultsSectionHasResult(DiagnosticResultsSection diagnosticResultsSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -121,35 +121,35 @@ public class DiagnosticResultsSectionOperations extends CodedResultsSectionOpera
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateDiagnosticResultsSectionTemplateId(DiagnosticResultsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Diagnostic Results Section Template Id</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateDiagnosticResultsSectionTemplateId(DiagnosticResultsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Diagnostic Results Section Template Id</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateDiagnosticResultsSectionTemplateId(DiagnosticResultsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateDiagnosticResultsSectionTemplateId(DiagnosticResultsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_DIAGNOSTIC_RESULTS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.3.88.11.83.122')";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateDiagnosticResultsSectionTemplateId(DiagnosticResultsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Diagnostic Results Section Template Id</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateDiagnosticResultsSectionTemplateId(DiagnosticResultsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Diagnostic Results Section Template Id</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateDiagnosticResultsSectionTemplateId(DiagnosticResultsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateDiagnosticResultsSectionTemplateId(DiagnosticResultsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static Constraint VALIDATE_DIAGNOSTIC_RESULTS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param diagnosticResultsSection The receiving '<em><b>Diagnostic Results Section</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param diagnosticResultsSection The receiving '<em><b>Diagnostic Results Section</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 	public static boolean validateDiagnosticResultsSectionTemplateId(DiagnosticResultsSection diagnosticResultsSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -178,35 +178,35 @@ public class DiagnosticResultsSectionOperations extends CodedResultsSectionOpera
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateDiagnosticResultsSectionDiagnosticProcedure(DiagnosticResultsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Diagnostic Results Section Diagnostic Procedure</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateDiagnosticResultsSectionDiagnosticProcedure(DiagnosticResultsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Diagnostic Results Section Diagnostic Procedure</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateDiagnosticResultsSectionDiagnosticProcedure(DiagnosticResultsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateDiagnosticResultsSectionDiagnosticProcedure(DiagnosticResultsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_DIAGNOSTIC_RESULTS_SECTION_DIAGNOSTIC_PROCEDURE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->exists(entry : cda::Entry | not entry.procedure.oclIsUndefined() and entry.procedure.oclIsKindOf(hitsp::Procedure))";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateDiagnosticResultsSectionDiagnosticProcedure(DiagnosticResultsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Diagnostic Results Section Diagnostic Procedure</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateDiagnosticResultsSectionDiagnosticProcedure(DiagnosticResultsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Diagnostic Results Section Diagnostic Procedure</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateDiagnosticResultsSectionDiagnosticProcedure(DiagnosticResultsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateDiagnosticResultsSectionDiagnosticProcedure(DiagnosticResultsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static Constraint VALIDATE_DIAGNOSTIC_RESULTS_SECTION_DIAGNOSTIC_PROCEDURE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param diagnosticResultsSection The receiving '<em><b>Diagnostic Results Section</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param diagnosticResultsSection The receiving '<em><b>Diagnostic Results Section</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 	public static boolean validateDiagnosticResultsSectionDiagnosticProcedure(
 			DiagnosticResultsSection diagnosticResultsSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -236,35 +236,35 @@ public class DiagnosticResultsSectionOperations extends CodedResultsSectionOpera
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateDiagnosticResultsSectionResult(DiagnosticResultsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Diagnostic Results Section Result</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateDiagnosticResultsSectionResult(DiagnosticResultsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Diagnostic Results Section Result</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateDiagnosticResultsSectionResult(DiagnosticResultsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateDiagnosticResultsSectionResult(DiagnosticResultsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_DIAGNOSTIC_RESULTS_SECTION_RESULT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->exists(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(hitsp::Result))";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateDiagnosticResultsSectionResult(DiagnosticResultsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Diagnostic Results Section Result</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateDiagnosticResultsSectionResult(DiagnosticResultsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Diagnostic Results Section Result</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateDiagnosticResultsSectionResult(DiagnosticResultsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateDiagnosticResultsSectionResult(DiagnosticResultsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static Constraint VALIDATE_DIAGNOSTIC_RESULTS_SECTION_RESULT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param diagnosticResultsSection The receiving '<em><b>Diagnostic Results Section</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param diagnosticResultsSection The receiving '<em><b>Diagnostic Results Section</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 	public static boolean validateDiagnosticResultsSectionResult(DiagnosticResultsSection diagnosticResultsSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -293,35 +293,35 @@ public class DiagnosticResultsSectionOperations extends CodedResultsSectionOpera
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateDiagnosticResultsSectionResultOrganizer(DiagnosticResultsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Diagnostic Results Section Result Organizer</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateDiagnosticResultsSectionResultOrganizer(DiagnosticResultsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Diagnostic Results Section Result Organizer</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateDiagnosticResultsSectionResultOrganizer(DiagnosticResultsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateDiagnosticResultsSectionResultOrganizer(DiagnosticResultsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_DIAGNOSTIC_RESULTS_SECTION_RESULT_ORGANIZER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->exists(entry : cda::Entry | not entry.organizer.oclIsUndefined() and entry.organizer.oclIsKindOf(hitsp::ResultOrganizer))";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateDiagnosticResultsSectionResultOrganizer(DiagnosticResultsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Diagnostic Results Section Result Organizer</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateDiagnosticResultsSectionResultOrganizer(DiagnosticResultsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Diagnostic Results Section Result Organizer</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateDiagnosticResultsSectionResultOrganizer(DiagnosticResultsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateDiagnosticResultsSectionResultOrganizer(DiagnosticResultsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static Constraint VALIDATE_DIAGNOSTIC_RESULTS_SECTION_RESULT_ORGANIZER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param diagnosticResultsSection The receiving '<em><b>Diagnostic Results Section</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param diagnosticResultsSection The receiving '<em><b>Diagnostic Results Section</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 	public static boolean validateDiagnosticResultsSectionResultOrganizer(
 			DiagnosticResultsSection diagnosticResultsSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -350,30 +350,30 @@ public class DiagnosticResultsSectionOperations extends CodedResultsSectionOpera
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #getDiagnosticProcedures(DiagnosticResultsSection) <em>Get Diagnostic Procedures</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #getDiagnosticProcedures(DiagnosticResultsSection) <em>Get Diagnostic Procedures</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #getDiagnosticProcedures(DiagnosticResultsSection)
-	* @generated
-	* @ordered
-	*/
+	 * @see #getDiagnosticProcedures(DiagnosticResultsSection)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String GET_DIAGNOSTIC_PROCEDURES__EOCL_EXP = "self.getProcedures()->select(procedure : cda::Procedure | not procedure.oclIsUndefined() and procedure.oclIsKindOf(hitsp::Procedure)).oclAsType(hitsp::Procedure)";
 
 	/**
-	* The cached OCL query for the '{@link #getDiagnosticProcedures(DiagnosticResultsSection) <em>Get Diagnostic Procedures</em>}' query operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL query for the '{@link #getDiagnosticProcedures(DiagnosticResultsSection) <em>Get Diagnostic Procedures</em>}' query operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #getDiagnosticProcedures(DiagnosticResultsSection)
-	* @generated
-	* @ordered
-	*/
+	 * @see #getDiagnosticProcedures(DiagnosticResultsSection)
+	 * @generated
+	 * @ordered
+	 */
 	protected static OCLExpression<EClassifier> GET_DIAGNOSTIC_PROCEDURES__EOCL_QRY;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public static EList<Procedure> getDiagnosticProcedures(DiagnosticResultsSection diagnosticResultsSection) {
 		if (GET_DIAGNOSTIC_PROCEDURES__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
@@ -393,30 +393,30 @@ public class DiagnosticResultsSectionOperations extends CodedResultsSectionOpera
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #getResults(DiagnosticResultsSection) <em>Get Results</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #getResults(DiagnosticResultsSection) <em>Get Results</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #getResults(DiagnosticResultsSection)
-	* @generated
-	* @ordered
-	*/
+	 * @see #getResults(DiagnosticResultsSection)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String GET_RESULTS__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(hitsp::Result)).oclAsType(hitsp::Result)";
 
 	/**
-	* The cached OCL query for the '{@link #getResults(DiagnosticResultsSection) <em>Get Results</em>}' query operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL query for the '{@link #getResults(DiagnosticResultsSection) <em>Get Results</em>}' query operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #getResults(DiagnosticResultsSection)
-	* @generated
-	* @ordered
-	*/
+	 * @see #getResults(DiagnosticResultsSection)
+	 * @generated
+	 * @ordered
+	 */
 	protected static OCLExpression<EClassifier> GET_RESULTS__EOCL_QRY;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public static EList<Result> getResults(DiagnosticResultsSection diagnosticResultsSection) {
 		if (GET_RESULTS__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
@@ -436,30 +436,30 @@ public class DiagnosticResultsSectionOperations extends CodedResultsSectionOpera
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #getResultOrganizers(DiagnosticResultsSection) <em>Get Result Organizers</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #getResultOrganizers(DiagnosticResultsSection) <em>Get Result Organizers</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #getResultOrganizers(DiagnosticResultsSection)
-	* @generated
-	* @ordered
-	*/
+	 * @see #getResultOrganizers(DiagnosticResultsSection)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String GET_RESULT_ORGANIZERS__EOCL_EXP = "self.getOrganizers()->select(organizer : cda::Organizer | not organizer.oclIsUndefined() and organizer.oclIsKindOf(hitsp::ResultOrganizer)).oclAsType(hitsp::ResultOrganizer)";
 
 	/**
-	* The cached OCL query for the '{@link #getResultOrganizers(DiagnosticResultsSection) <em>Get Result Organizers</em>}' query operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL query for the '{@link #getResultOrganizers(DiagnosticResultsSection) <em>Get Result Organizers</em>}' query operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #getResultOrganizers(DiagnosticResultsSection)
-	* @generated
-	* @ordered
-	*/
+	 * @see #getResultOrganizers(DiagnosticResultsSection)
+	 * @generated
+	 * @ordered
+	 */
 	protected static OCLExpression<EClassifier> GET_RESULT_ORGANIZERS__EOCL_QRY;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public static EList<ResultOrganizer> getResultOrganizers(DiagnosticResultsSection diagnosticResultsSection) {
 		if (GET_RESULT_ORGANIZERS__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();

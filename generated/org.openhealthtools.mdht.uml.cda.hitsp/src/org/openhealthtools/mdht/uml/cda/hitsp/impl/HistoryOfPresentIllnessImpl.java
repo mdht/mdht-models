@@ -32,29 +32,29 @@ import org.openhealthtools.mdht.uml.cda.hitsp.operations.HistoryOfPresentIllness
 public class HistoryOfPresentIllnessImpl extends org.openhealthtools.mdht.uml.cda.ihe.impl.HistoryOfPresentIllnessImpl
 		implements HistoryOfPresentIllness {
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	protected HistoryOfPresentIllnessImpl() {
 		super();
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
 		return HITSPPackage.Literals.HISTORY_OF_PRESENT_ILLNESS;
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateHITSPHistoryOfPresentIllnessTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return HistoryOfPresentIllnessOperations.validateHITSPHistoryOfPresentIllnessTemplateId(
@@ -62,20 +62,20 @@ public class HistoryOfPresentIllnessImpl extends org.openhealthtools.mdht.uml.cd
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	@Override
 	public HistoryOfPresentIllness init() {
 		return Initializer.Util.init(this);
 	}
 
 	/**
-	   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	   * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	@Override
 	public HistoryOfPresentIllness init(Iterable<? extends Initializer<? extends EObject>> initializers) {
 		Initializer.Util.init(this, initializers);
