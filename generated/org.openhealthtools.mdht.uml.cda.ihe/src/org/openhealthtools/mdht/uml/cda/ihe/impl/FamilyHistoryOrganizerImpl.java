@@ -34,29 +34,29 @@ import org.openhealthtools.mdht.uml.cda.ihe.operations.FamilyHistoryOrganizerOpe
 public class FamilyHistoryOrganizerImpl extends org.openhealthtools.mdht.uml.cda.ccd.impl.FamilyHistoryOrganizerImpl
 		implements FamilyHistoryOrganizer {
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	protected FamilyHistoryOrganizerImpl() {
 		super();
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	@Override
 	protected EClass eStaticClass() {
 		return IHEPackage.Literals.FAMILY_HISTORY_ORGANIZER;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateIHEFamilyHistoryOrganizerHasParticipant(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return FamilyHistoryOrganizerOperations.validateIHEFamilyHistoryOrganizerHasParticipant(
@@ -64,10 +64,10 @@ public class FamilyHistoryOrganizerImpl extends org.openhealthtools.mdht.uml.cda
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateIHEFamilyHistoryOrganizerHasParticipantParticipantRole(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return FamilyHistoryOrganizerOperations.validateIHEFamilyHistoryOrganizerHasParticipantParticipantRole(
@@ -75,10 +75,10 @@ public class FamilyHistoryOrganizerImpl extends org.openhealthtools.mdht.uml.cda
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateIHEFamilyHistoryOrganizerHasParticipantRoleCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return FamilyHistoryOrganizerOperations.validateIHEFamilyHistoryOrganizerHasParticipantRoleCode(
@@ -86,10 +86,10 @@ public class FamilyHistoryOrganizerImpl extends org.openhealthtools.mdht.uml.cda
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateIHEFamilyHistoryOrganizerHasParticipantRolePlayingEntity(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return FamilyHistoryOrganizerOperations.validateIHEFamilyHistoryOrganizerHasParticipantRolePlayingEntity(
@@ -97,28 +97,28 @@ public class FamilyHistoryOrganizerImpl extends org.openhealthtools.mdht.uml.cda
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateIHEFamilyHistoryOrganizerTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return FamilyHistoryOrganizerOperations.validateIHEFamilyHistoryOrganizerTemplateId(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateIHEFamilyHistoryOrganizerCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return FamilyHistoryOrganizerOperations.validateIHEFamilyHistoryOrganizerCode(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateIHEFamilyHistoryOrganizerFamilyHistoryObservation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return FamilyHistoryOrganizerOperations.validateIHEFamilyHistoryOrganizerFamilyHistoryObservation(
@@ -126,19 +126,19 @@ public class FamilyHistoryOrganizerImpl extends org.openhealthtools.mdht.uml.cda
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public EList<FamilyHistoryObservation> getIHEFamilyHistoryObservations() {
 		return FamilyHistoryOrganizerOperations.getIHEFamilyHistoryObservations(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	@Override
 	public FamilyHistoryOrganizer init() {
 		return Initializer.Util.init(this);

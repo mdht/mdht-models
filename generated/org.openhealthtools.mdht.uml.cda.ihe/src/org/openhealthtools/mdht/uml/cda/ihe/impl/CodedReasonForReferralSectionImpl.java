@@ -35,29 +35,29 @@ import org.openhealthtools.mdht.uml.cda.ihe.operations.CodedReasonForReferralSec
 public class CodedReasonForReferralSectionImpl extends ReasonForReferralSectionImpl implements
 		CodedReasonForReferralSection {
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	protected CodedReasonForReferralSectionImpl() {
 		super();
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	@Override
 	protected EClass eStaticClass() {
 		return IHEPackage.Literals.CODED_REASON_FOR_REFERRAL_SECTION;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateCodedReasonForReferralSectionTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return CodedReasonForReferralSectionOperations.validateCodedReasonForReferralSectionTemplateId(
@@ -65,10 +65,10 @@ public class CodedReasonForReferralSectionImpl extends ReasonForReferralSectionI
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateCodedReasonForReferralSectionSimpleObservation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return CodedReasonForReferralSectionOperations.validateCodedReasonForReferralSectionSimpleObservation(
@@ -76,10 +76,10 @@ public class CodedReasonForReferralSectionImpl extends ReasonForReferralSectionI
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateCodedReasonForReferralSectionProblemEntry(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return CodedReasonForReferralSectionOperations.validateCodedReasonForReferralSectionProblemEntry(
@@ -87,28 +87,28 @@ public class CodedReasonForReferralSectionImpl extends ReasonForReferralSectionI
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public EList<SimpleObservation> getSimpleObservations() {
 		return CodedReasonForReferralSectionOperations.getSimpleObservations(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public EList<ProblemEntry> getProblemEntries() {
 		return CodedReasonForReferralSectionOperations.getProblemEntries(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	@Override
 	public CodedReasonForReferralSection init() {
 		return Initializer.Util.init(this);

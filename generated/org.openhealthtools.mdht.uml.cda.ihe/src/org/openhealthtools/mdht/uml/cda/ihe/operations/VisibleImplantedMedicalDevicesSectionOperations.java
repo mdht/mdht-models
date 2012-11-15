@@ -46,44 +46,44 @@ import org.openhealthtools.mdht.uml.cda.operations.SectionOperations;
  */
 public class VisibleImplantedMedicalDevicesSectionOperations extends SectionOperations {
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	protected VisibleImplantedMedicalDevicesSectionOperations() {
 		super();
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateVisibleImplantedMedicalDevicesSectionTemplateId(VisibleImplantedMedicalDevicesSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Visible Implanted Medical Devices Section Template Id</em>}' operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL expression body for the '{@link #validateVisibleImplantedMedicalDevicesSectionTemplateId(VisibleImplantedMedicalDevicesSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Visible Implanted Medical Devices Section Template Id</em>}' operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateVisibleImplantedMedicalDevicesSectionTemplateId(VisibleImplantedMedicalDevicesSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validateVisibleImplantedMedicalDevicesSectionTemplateId(VisibleImplantedMedicalDevicesSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 	protected static final String VALIDATE_VISIBLE_IMPLANTED_MEDICAL_DEVICES_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.templateId->exists(id : datatypes::II | id.root = '1.3.6.1.4.1.19376.1.5.3.1.1.9.48')";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validateVisibleImplantedMedicalDevicesSectionTemplateId(VisibleImplantedMedicalDevicesSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Visible Implanted Medical Devices Section Template Id</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL invariant for the '{@link #validateVisibleImplantedMedicalDevicesSectionTemplateId(VisibleImplantedMedicalDevicesSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Visible Implanted Medical Devices Section Template Id</em>}' invariant operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateVisibleImplantedMedicalDevicesSectionTemplateId(VisibleImplantedMedicalDevicesSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validateVisibleImplantedMedicalDevicesSectionTemplateId(VisibleImplantedMedicalDevicesSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 	protected static Constraint VALIDATE_VISIBLE_IMPLANTED_MEDICAL_DEVICES_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param visibleImplantedMedicalDevicesSection The receiving '<em><b>Visible Implanted Medical Devices Section</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
+	* <!-- begin-model-doc -->
+	* @param visibleImplantedMedicalDevicesSection The receiving '<em><b>Visible Implanted Medical Devices Section</b></em>' model object.
+	* @param diagnostics The chain of diagnostics to which problems are to be appended.
+	* @param context The cache of context-specific information.
+	* <!-- end-model-doc -->
+	* @generated
+	*/
 	public static boolean validateVisibleImplantedMedicalDevicesSectionTemplateId(
 			VisibleImplantedMedicalDevicesSection visibleImplantedMedicalDevicesSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
@@ -115,37 +115,37 @@ public class VisibleImplantedMedicalDevicesSectionOperations extends SectionOper
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateVisibleImplantedMedicalDevicesSectionCode(VisibleImplantedMedicalDevicesSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Visible Implanted Medical Devices Section Code</em>}' operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL expression body for the '{@link #validateVisibleImplantedMedicalDevicesSectionCode(VisibleImplantedMedicalDevicesSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Visible Implanted Medical Devices Section Code</em>}' operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateVisibleImplantedMedicalDevicesSectionCode(VisibleImplantedMedicalDevicesSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validateVisibleImplantedMedicalDevicesSectionCode(VisibleImplantedMedicalDevicesSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 	protected static final String VALIDATE_VISIBLE_IMPLANTED_MEDICAL_DEVICES_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and "
 			+ "let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in "
 			+ "value.code = 'XX-VisibleImplantedDevices' and value.codeSystem = '2.16.840.1.113883.6.1')";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validateVisibleImplantedMedicalDevicesSectionCode(VisibleImplantedMedicalDevicesSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Visible Implanted Medical Devices Section Code</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL invariant for the '{@link #validateVisibleImplantedMedicalDevicesSectionCode(VisibleImplantedMedicalDevicesSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Visible Implanted Medical Devices Section Code</em>}' invariant operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateVisibleImplantedMedicalDevicesSectionCode(VisibleImplantedMedicalDevicesSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validateVisibleImplantedMedicalDevicesSectionCode(VisibleImplantedMedicalDevicesSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 	protected static Constraint VALIDATE_VISIBLE_IMPLANTED_MEDICAL_DEVICES_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param visibleImplantedMedicalDevicesSection The receiving '<em><b>Visible Implanted Medical Devices Section</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
+	* <!-- begin-model-doc -->
+	* @param visibleImplantedMedicalDevicesSection The receiving '<em><b>Visible Implanted Medical Devices Section</b></em>' model object.
+	* @param diagnostics The chain of diagnostics to which problems are to be appended.
+	* @param context The cache of context-specific information.
+	* <!-- end-model-doc -->
+	* @generated
+	*/
 	public static boolean validateVisibleImplantedMedicalDevicesSectionCode(
 			VisibleImplantedMedicalDevicesSection visibleImplantedMedicalDevicesSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
@@ -177,35 +177,35 @@ public class VisibleImplantedMedicalDevicesSectionOperations extends SectionOper
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateVisibleImplantedMedicalDevicesSectionProblemEntry(VisibleImplantedMedicalDevicesSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Visible Implanted Medical Devices Section Problem Entry</em>}' operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL expression body for the '{@link #validateVisibleImplantedMedicalDevicesSectionProblemEntry(VisibleImplantedMedicalDevicesSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Visible Implanted Medical Devices Section Problem Entry</em>}' operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateVisibleImplantedMedicalDevicesSectionProblemEntry(VisibleImplantedMedicalDevicesSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validateVisibleImplantedMedicalDevicesSectionProblemEntry(VisibleImplantedMedicalDevicesSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 	protected static final String VALIDATE_VISIBLE_IMPLANTED_MEDICAL_DEVICES_SECTION_PROBLEM_ENTRY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->one(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(ihe::ProblemEntry))";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validateVisibleImplantedMedicalDevicesSectionProblemEntry(VisibleImplantedMedicalDevicesSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Visible Implanted Medical Devices Section Problem Entry</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL invariant for the '{@link #validateVisibleImplantedMedicalDevicesSectionProblemEntry(VisibleImplantedMedicalDevicesSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Visible Implanted Medical Devices Section Problem Entry</em>}' invariant operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateVisibleImplantedMedicalDevicesSectionProblemEntry(VisibleImplantedMedicalDevicesSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validateVisibleImplantedMedicalDevicesSectionProblemEntry(VisibleImplantedMedicalDevicesSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 	protected static Constraint VALIDATE_VISIBLE_IMPLANTED_MEDICAL_DEVICES_SECTION_PROBLEM_ENTRY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param visibleImplantedMedicalDevicesSection The receiving '<em><b>Visible Implanted Medical Devices Section</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
+	* <!-- begin-model-doc -->
+	* @param visibleImplantedMedicalDevicesSection The receiving '<em><b>Visible Implanted Medical Devices Section</b></em>' model object.
+	* @param diagnostics The chain of diagnostics to which problems are to be appended.
+	* @param context The cache of context-specific information.
+	* <!-- end-model-doc -->
+	* @generated
+	*/
 	public static boolean validateVisibleImplantedMedicalDevicesSectionProblemEntry(
 			VisibleImplantedMedicalDevicesSection visibleImplantedMedicalDevicesSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
@@ -237,30 +237,30 @@ public class VisibleImplantedMedicalDevicesSectionOperations extends SectionOper
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #getProblemEntry(VisibleImplantedMedicalDevicesSection) <em>Get Problem Entry</em>}' operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL expression body for the '{@link #getProblemEntry(VisibleImplantedMedicalDevicesSection) <em>Get Problem Entry</em>}' operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getProblemEntry(VisibleImplantedMedicalDevicesSection)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #getProblemEntry(VisibleImplantedMedicalDevicesSection)
+	* @generated
+	* @ordered
+	*/
 	protected static final String GET_PROBLEM_ENTRY__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(ihe::ProblemEntry))->asSequence()->any(true).oclAsType(ihe::ProblemEntry)";
 
 	/**
-	 * The cached OCL query for the '{@link #getProblemEntry(VisibleImplantedMedicalDevicesSection) <em>Get Problem Entry</em>}' query operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL query for the '{@link #getProblemEntry(VisibleImplantedMedicalDevicesSection) <em>Get Problem Entry</em>}' query operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getProblemEntry(VisibleImplantedMedicalDevicesSection)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #getProblemEntry(VisibleImplantedMedicalDevicesSection)
+	* @generated
+	* @ordered
+	*/
 	protected static OCLExpression<EClassifier> GET_PROBLEM_ENTRY__EOCL_QRY;
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public static ProblemEntry getProblemEntry(
 			VisibleImplantedMedicalDevicesSection visibleImplantedMedicalDevicesSection) {
 		if (GET_PROBLEM_ENTRY__EOCL_QRY == null) {

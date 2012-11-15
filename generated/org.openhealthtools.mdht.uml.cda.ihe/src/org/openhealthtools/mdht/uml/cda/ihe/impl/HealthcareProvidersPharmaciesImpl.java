@@ -32,29 +32,29 @@ import org.openhealthtools.mdht.uml.cda.impl.Performer1Impl;
  */
 public class HealthcareProvidersPharmaciesImpl extends Performer1Impl implements HealthcareProvidersPharmacies {
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	protected HealthcareProvidersPharmaciesImpl() {
 		super();
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	@Override
 	protected EClass eStaticClass() {
 		return IHEPackage.Literals.HEALTHCARE_PROVIDERS_PHARMACIES;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateHealthcareProvidersPharmaciesTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return HealthcareProvidersPharmaciesOperations.validateHealthcareProvidersPharmaciesTemplateId(
@@ -62,10 +62,10 @@ public class HealthcareProvidersPharmaciesImpl extends Performer1Impl implements
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public HealthcareProvidersPharmacies init() {
 		return Initializer.Util.init(this);
 	}

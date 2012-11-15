@@ -32,29 +32,29 @@ import org.openhealthtools.mdht.uml.cda.impl.SectionImpl;
  */
 public class AdmissionMedicationHistorySectionImpl extends SectionImpl implements AdmissionMedicationHistorySection {
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	protected AdmissionMedicationHistorySectionImpl() {
 		super();
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	@Override
 	protected EClass eStaticClass() {
 		return IHEPackage.Literals.ADMISSION_MEDICATION_HISTORY_SECTION;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateAdmissionMedicationHistorySectionTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return AdmissionMedicationHistorySectionOperations.validateAdmissionMedicationHistorySectionTemplateId(
@@ -62,10 +62,10 @@ public class AdmissionMedicationHistorySectionImpl extends SectionImpl implement
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateAdmissionMedicationHistorySectionCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return AdmissionMedicationHistorySectionOperations.validateAdmissionMedicationHistorySectionCode(
@@ -73,10 +73,10 @@ public class AdmissionMedicationHistorySectionImpl extends SectionImpl implement
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public AdmissionMedicationHistorySection init() {
 		return Initializer.Util.init(this);
 	}
