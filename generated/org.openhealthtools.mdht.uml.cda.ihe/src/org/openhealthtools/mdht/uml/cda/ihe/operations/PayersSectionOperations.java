@@ -79,7 +79,6 @@ public class PayersSectionOperations extends org.openhealthtools.mdht.uml.cda.cc
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.templateId->exists(id : datatypes::II | id.root = '1.3.6.1.4.1.19376.1.5.3.1.1.5.3.7')
 	 * @param payersSection The receiving '<em><b>Payers Section</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -136,7 +135,6 @@ public class PayersSectionOperations extends org.openhealthtools.mdht.uml.cda.cc
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.entry->exists(entry : cda::Entry | not entry.act.oclIsUndefined() and entry.act.oclIsKindOf(ihe::CoverageEntry))
 	 * @param payersSection The receiving '<em><b>Payers Section</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -192,10 +190,6 @@ public class PayersSectionOperations extends org.openhealthtools.mdht.uml.cda.cc
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(ihe::CoverageEntry)).oclAsType(ihe::CoverageEntry)
-	 * @param payersSection The receiving '<em><b>Payers Section</b></em>' model object.
-	 * <!-- end-model-doc -->
 	 * @generated
 	 */
 	public static EList<CoverageEntry> getCoverageEntries(PayersSection payersSection) {

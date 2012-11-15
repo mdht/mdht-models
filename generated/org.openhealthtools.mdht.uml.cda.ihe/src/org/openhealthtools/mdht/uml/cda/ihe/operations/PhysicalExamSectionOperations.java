@@ -148,7 +148,6 @@ public class PhysicalExamSectionOperations extends PhysicalExamNarrativeSectionO
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.templateId->exists(id : datatypes::II | id.root = '1.3.6.1.4.1.19376.1.5.3.1.1.9.15')
 	 * @param physicalExamSection The receiving '<em><b>Physical Exam Section</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -205,7 +204,6 @@ public class PhysicalExamSectionOperations extends PhysicalExamNarrativeSectionO
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ihe::VitalSignsSection))
 	 * @param physicalExamSection The receiving '<em><b>Physical Exam Section</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -263,7 +261,6 @@ public class PhysicalExamSectionOperations extends PhysicalExamNarrativeSectionO
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ihe::GeneralAppearanceSection))
 	 * @param physicalExamSection The receiving '<em><b>Physical Exam Section</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -322,7 +319,6 @@ public class PhysicalExamSectionOperations extends PhysicalExamNarrativeSectionO
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ihe::VisibleImplantedMedicalDevicesSection))
 	 * @param physicalExamSection The receiving '<em><b>Physical Exam Section</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -382,7 +378,6 @@ public class PhysicalExamSectionOperations extends PhysicalExamNarrativeSectionO
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ihe::IntegumentarySystemSection))
 	 * @param physicalExamSection The receiving '<em><b>Physical Exam Section</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -441,7 +436,6 @@ public class PhysicalExamSectionOperations extends PhysicalExamNarrativeSectionO
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ihe::HeadSection))
 	 * @param physicalExamSection The receiving '<em><b>Physical Exam Section</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -499,7 +493,6 @@ public class PhysicalExamSectionOperations extends PhysicalExamNarrativeSectionO
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ihe::EyesSection))
 	 * @param physicalExamSection The receiving '<em><b>Physical Exam Section</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -557,7 +550,6 @@ public class PhysicalExamSectionOperations extends PhysicalExamNarrativeSectionO
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ihe::EarsNoseMouthThroatSection))
 	 * @param physicalExamSection The receiving '<em><b>Physical Exam Section</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -616,7 +608,6 @@ public class PhysicalExamSectionOperations extends PhysicalExamNarrativeSectionO
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ihe::EarsSection))
 	 * @param physicalExamSection The receiving '<em><b>Physical Exam Section</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -674,7 +665,6 @@ public class PhysicalExamSectionOperations extends PhysicalExamNarrativeSectionO
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ihe::NoseSection))
 	 * @param physicalExamSection The receiving '<em><b>Physical Exam Section</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -732,7 +722,6 @@ public class PhysicalExamSectionOperations extends PhysicalExamNarrativeSectionO
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ihe::MouthThroatTeethSection))
 	 * @param physicalExamSection The receiving '<em><b>Physical Exam Section</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -791,7 +780,6 @@ public class PhysicalExamSectionOperations extends PhysicalExamNarrativeSectionO
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ihe::NeckSection))
 	 * @param physicalExamSection The receiving '<em><b>Physical Exam Section</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -849,7 +837,6 @@ public class PhysicalExamSectionOperations extends PhysicalExamNarrativeSectionO
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ihe::EndocrineSystemSection))
 	 * @param physicalExamSection The receiving '<em><b>Physical Exam Section</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -908,7 +895,6 @@ public class PhysicalExamSectionOperations extends PhysicalExamNarrativeSectionO
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ihe::ThoraxLungsSection))
 	 * @param physicalExamSection The receiving '<em><b>Physical Exam Section</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -966,7 +952,6 @@ public class PhysicalExamSectionOperations extends PhysicalExamNarrativeSectionO
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ihe::ChestWallSection))
 	 * @param physicalExamSection The receiving '<em><b>Physical Exam Section</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -1024,7 +1009,6 @@ public class PhysicalExamSectionOperations extends PhysicalExamNarrativeSectionO
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ihe::BreastSection))
 	 * @param physicalExamSection The receiving '<em><b>Physical Exam Section</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -1082,7 +1066,6 @@ public class PhysicalExamSectionOperations extends PhysicalExamNarrativeSectionO
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ihe::HeartSection))
 	 * @param physicalExamSection The receiving '<em><b>Physical Exam Section</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -1140,7 +1123,6 @@ public class PhysicalExamSectionOperations extends PhysicalExamNarrativeSectionO
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ihe::RespiratorySystemSection))
 	 * @param physicalExamSection The receiving '<em><b>Physical Exam Section</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -1199,7 +1181,6 @@ public class PhysicalExamSectionOperations extends PhysicalExamNarrativeSectionO
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ihe::AbdomenSection))
 	 * @param physicalExamSection The receiving '<em><b>Physical Exam Section</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -1257,7 +1238,6 @@ public class PhysicalExamSectionOperations extends PhysicalExamNarrativeSectionO
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ihe::LymphaticSection))
 	 * @param physicalExamSection The receiving '<em><b>Physical Exam Section</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -1315,7 +1295,6 @@ public class PhysicalExamSectionOperations extends PhysicalExamNarrativeSectionO
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ihe::VesselsSection))
 	 * @param physicalExamSection The receiving '<em><b>Physical Exam Section</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -1373,7 +1352,6 @@ public class PhysicalExamSectionOperations extends PhysicalExamNarrativeSectionO
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ihe::MusculoskeletalSystemSection))
 	 * @param physicalExamSection The receiving '<em><b>Physical Exam Section</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -1432,7 +1410,6 @@ public class PhysicalExamSectionOperations extends PhysicalExamNarrativeSectionO
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ihe::NeurologicSystemSection))
 	 * @param physicalExamSection The receiving '<em><b>Physical Exam Section</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -1491,7 +1468,6 @@ public class PhysicalExamSectionOperations extends PhysicalExamNarrativeSectionO
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ihe::GenitaliaSection))
 	 * @param physicalExamSection The receiving '<em><b>Physical Exam Section</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -1549,7 +1525,6 @@ public class PhysicalExamSectionOperations extends PhysicalExamNarrativeSectionO
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ihe::RectumSection))
 	 * @param physicalExamSection The receiving '<em><b>Physical Exam Section</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -1607,7 +1582,6 @@ public class PhysicalExamSectionOperations extends PhysicalExamNarrativeSectionO
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ihe::ExtremitiesSection))
 	 * @param physicalExamSection The receiving '<em><b>Physical Exam Section</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -1664,10 +1638,6 @@ public class PhysicalExamSectionOperations extends PhysicalExamNarrativeSectionO
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ihe::VitalSignsSection))->asSequence()->any(true).oclAsType(ihe::VitalSignsSection)
-	 * @param physicalExamSection The receiving '<em><b>Physical Exam Section</b></em>' model object.
-	 * <!-- end-model-doc -->
 	 * @generated
 	 */
 	public static VitalSignsSection getVitalSignsSection(PhysicalExamSection physicalExamSection) {
@@ -1709,10 +1679,6 @@ public class PhysicalExamSectionOperations extends PhysicalExamNarrativeSectionO
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ihe::GeneralAppearanceSection))->asSequence()->any(true).oclAsType(ihe::GeneralAppearanceSection)
-	 * @param physicalExamSection The receiving '<em><b>Physical Exam Section</b></em>' model object.
-	 * <!-- end-model-doc -->
 	 * @generated
 	 */
 	public static GeneralAppearanceSection getGeneralAppearanceSection(PhysicalExamSection physicalExamSection) {
@@ -1754,10 +1720,6 @@ public class PhysicalExamSectionOperations extends PhysicalExamNarrativeSectionO
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ihe::VisibleImplantedMedicalDevicesSection))->asSequence()->any(true).oclAsType(ihe::VisibleImplantedMedicalDevicesSection)
-	 * @param physicalExamSection The receiving '<em><b>Physical Exam Section</b></em>' model object.
-	 * <!-- end-model-doc -->
 	 * @generated
 	 */
 	public static VisibleImplantedMedicalDevicesSection getVisibleImplantedMedicalDevicesSection(
@@ -1800,10 +1762,6 @@ public class PhysicalExamSectionOperations extends PhysicalExamNarrativeSectionO
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ihe::IntegumentarySystemSection))->asSequence()->any(true).oclAsType(ihe::IntegumentarySystemSection)
-	 * @param physicalExamSection The receiving '<em><b>Physical Exam Section</b></em>' model object.
-	 * <!-- end-model-doc -->
 	 * @generated
 	 */
 	public static IntegumentarySystemSection getIntegumentarySystemSection(PhysicalExamSection physicalExamSection) {
@@ -1845,10 +1803,6 @@ public class PhysicalExamSectionOperations extends PhysicalExamNarrativeSectionO
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ihe::HeadSection))->asSequence()->any(true).oclAsType(ihe::HeadSection)
-	 * @param physicalExamSection The receiving '<em><b>Physical Exam Section</b></em>' model object.
-	 * <!-- end-model-doc -->
 	 * @generated
 	 */
 	public static HeadSection getHeadSection(PhysicalExamSection physicalExamSection) {
@@ -1890,10 +1844,6 @@ public class PhysicalExamSectionOperations extends PhysicalExamNarrativeSectionO
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ihe::EyesSection))->asSequence()->any(true).oclAsType(ihe::EyesSection)
-	 * @param physicalExamSection The receiving '<em><b>Physical Exam Section</b></em>' model object.
-	 * <!-- end-model-doc -->
 	 * @generated
 	 */
 	public static EyesSection getEyesSection(PhysicalExamSection physicalExamSection) {
@@ -1935,10 +1885,6 @@ public class PhysicalExamSectionOperations extends PhysicalExamNarrativeSectionO
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ihe::EarsNoseMouthThroatSection))->asSequence()->any(true).oclAsType(ihe::EarsNoseMouthThroatSection)
-	 * @param physicalExamSection The receiving '<em><b>Physical Exam Section</b></em>' model object.
-	 * <!-- end-model-doc -->
 	 * @generated
 	 */
 	public static EarsNoseMouthThroatSection getEarsNoseMouthThroatSection(PhysicalExamSection physicalExamSection) {
@@ -1980,10 +1926,6 @@ public class PhysicalExamSectionOperations extends PhysicalExamNarrativeSectionO
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ihe::EarsSection))->asSequence()->any(true).oclAsType(ihe::EarsSection)
-	 * @param physicalExamSection The receiving '<em><b>Physical Exam Section</b></em>' model object.
-	 * <!-- end-model-doc -->
 	 * @generated
 	 */
 	public static EarsSection getEarsSection(PhysicalExamSection physicalExamSection) {
@@ -2025,10 +1967,6 @@ public class PhysicalExamSectionOperations extends PhysicalExamNarrativeSectionO
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ihe::NoseSection))->asSequence()->any(true).oclAsType(ihe::NoseSection)
-	 * @param physicalExamSection The receiving '<em><b>Physical Exam Section</b></em>' model object.
-	 * <!-- end-model-doc -->
 	 * @generated
 	 */
 	public static NoseSection getNoseSection(PhysicalExamSection physicalExamSection) {
@@ -2070,10 +2008,6 @@ public class PhysicalExamSectionOperations extends PhysicalExamNarrativeSectionO
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ihe::MouthThroatTeethSection))->asSequence()->any(true).oclAsType(ihe::MouthThroatTeethSection)
-	 * @param physicalExamSection The receiving '<em><b>Physical Exam Section</b></em>' model object.
-	 * <!-- end-model-doc -->
 	 * @generated
 	 */
 	public static MouthThroatTeethSection getMouthThroatTeethSection(PhysicalExamSection physicalExamSection) {
@@ -2115,10 +2049,6 @@ public class PhysicalExamSectionOperations extends PhysicalExamNarrativeSectionO
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ihe::NeckSection))->asSequence()->any(true).oclAsType(ihe::NeckSection)
-	 * @param physicalExamSection The receiving '<em><b>Physical Exam Section</b></em>' model object.
-	 * <!-- end-model-doc -->
 	 * @generated
 	 */
 	public static NeckSection getNeckSection(PhysicalExamSection physicalExamSection) {
@@ -2160,10 +2090,6 @@ public class PhysicalExamSectionOperations extends PhysicalExamNarrativeSectionO
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ihe::EndocrineSystemSection))->asSequence()->any(true).oclAsType(ihe::EndocrineSystemSection)
-	 * @param physicalExamSection The receiving '<em><b>Physical Exam Section</b></em>' model object.
-	 * <!-- end-model-doc -->
 	 * @generated
 	 */
 	public static EndocrineSystemSection getEndocrineSystemSection(PhysicalExamSection physicalExamSection) {
@@ -2205,10 +2131,6 @@ public class PhysicalExamSectionOperations extends PhysicalExamNarrativeSectionO
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ihe::ThoraxLungsSection))->asSequence()->any(true).oclAsType(ihe::ThoraxLungsSection)
-	 * @param physicalExamSection The receiving '<em><b>Physical Exam Section</b></em>' model object.
-	 * <!-- end-model-doc -->
 	 * @generated
 	 */
 	public static ThoraxLungsSection getThoraxLungsSection(PhysicalExamSection physicalExamSection) {
@@ -2250,10 +2172,6 @@ public class PhysicalExamSectionOperations extends PhysicalExamNarrativeSectionO
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ihe::ChestWallSection))->asSequence()->any(true).oclAsType(ihe::ChestWallSection)
-	 * @param physicalExamSection The receiving '<em><b>Physical Exam Section</b></em>' model object.
-	 * <!-- end-model-doc -->
 	 * @generated
 	 */
 	public static ChestWallSection getChestWallSection(PhysicalExamSection physicalExamSection) {
@@ -2295,10 +2213,6 @@ public class PhysicalExamSectionOperations extends PhysicalExamNarrativeSectionO
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ihe::BreastSection))->asSequence()->any(true).oclAsType(ihe::BreastSection)
-	 * @param physicalExamSection The receiving '<em><b>Physical Exam Section</b></em>' model object.
-	 * <!-- end-model-doc -->
 	 * @generated
 	 */
 	public static BreastSection getBreastSection(PhysicalExamSection physicalExamSection) {
@@ -2340,10 +2254,6 @@ public class PhysicalExamSectionOperations extends PhysicalExamNarrativeSectionO
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ihe::HeartSection))->asSequence()->any(true).oclAsType(ihe::HeartSection)
-	 * @param physicalExamSection The receiving '<em><b>Physical Exam Section</b></em>' model object.
-	 * <!-- end-model-doc -->
 	 * @generated
 	 */
 	public static HeartSection getHeartSection(PhysicalExamSection physicalExamSection) {
@@ -2385,10 +2295,6 @@ public class PhysicalExamSectionOperations extends PhysicalExamNarrativeSectionO
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ihe::RespiratorySystemSection))->asSequence()->any(true).oclAsType(ihe::RespiratorySystemSection)
-	 * @param physicalExamSection The receiving '<em><b>Physical Exam Section</b></em>' model object.
-	 * <!-- end-model-doc -->
 	 * @generated
 	 */
 	public static RespiratorySystemSection getRespiratorySystemSection(PhysicalExamSection physicalExamSection) {
@@ -2430,10 +2336,6 @@ public class PhysicalExamSectionOperations extends PhysicalExamNarrativeSectionO
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ihe::AbdomenSection))->asSequence()->any(true).oclAsType(ihe::AbdomenSection)
-	 * @param physicalExamSection The receiving '<em><b>Physical Exam Section</b></em>' model object.
-	 * <!-- end-model-doc -->
 	 * @generated
 	 */
 	public static AbdomenSection getAbdomenSection(PhysicalExamSection physicalExamSection) {
@@ -2475,10 +2377,6 @@ public class PhysicalExamSectionOperations extends PhysicalExamNarrativeSectionO
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ihe::LymphaticSection))->asSequence()->any(true).oclAsType(ihe::LymphaticSection)
-	 * @param physicalExamSection The receiving '<em><b>Physical Exam Section</b></em>' model object.
-	 * <!-- end-model-doc -->
 	 * @generated
 	 */
 	public static LymphaticSection getLymphaticSection(PhysicalExamSection physicalExamSection) {
@@ -2520,10 +2418,6 @@ public class PhysicalExamSectionOperations extends PhysicalExamNarrativeSectionO
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ihe::VesselsSection))->asSequence()->any(true).oclAsType(ihe::VesselsSection)
-	 * @param physicalExamSection The receiving '<em><b>Physical Exam Section</b></em>' model object.
-	 * <!-- end-model-doc -->
 	 * @generated
 	 */
 	public static VesselsSection getVesselsSection(PhysicalExamSection physicalExamSection) {
@@ -2565,10 +2459,6 @@ public class PhysicalExamSectionOperations extends PhysicalExamNarrativeSectionO
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ihe::MusculoskeletalSystemSection))->asSequence()->any(true).oclAsType(ihe::MusculoskeletalSystemSection)
-	 * @param physicalExamSection The receiving '<em><b>Physical Exam Section</b></em>' model object.
-	 * <!-- end-model-doc -->
 	 * @generated
 	 */
 	public static MusculoskeletalSystemSection getMusculoskeletalSystemSection(PhysicalExamSection physicalExamSection) {
@@ -2610,10 +2500,6 @@ public class PhysicalExamSectionOperations extends PhysicalExamNarrativeSectionO
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ihe::NeurologicSystemSection))->asSequence()->any(true).oclAsType(ihe::NeurologicSystemSection)
-	 * @param physicalExamSection The receiving '<em><b>Physical Exam Section</b></em>' model object.
-	 * <!-- end-model-doc -->
 	 * @generated
 	 */
 	public static NeurologicSystemSection getNeurologicSystemSection(PhysicalExamSection physicalExamSection) {
@@ -2655,10 +2541,6 @@ public class PhysicalExamSectionOperations extends PhysicalExamNarrativeSectionO
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ihe::GenitaliaSection))->asSequence()->any(true).oclAsType(ihe::GenitaliaSection)
-	 * @param physicalExamSection The receiving '<em><b>Physical Exam Section</b></em>' model object.
-	 * <!-- end-model-doc -->
 	 * @generated
 	 */
 	public static GenitaliaSection getGenitaliaSection(PhysicalExamSection physicalExamSection) {
@@ -2700,10 +2582,6 @@ public class PhysicalExamSectionOperations extends PhysicalExamNarrativeSectionO
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ihe::RectumSection))->asSequence()->any(true).oclAsType(ihe::RectumSection)
-	 * @param physicalExamSection The receiving '<em><b>Physical Exam Section</b></em>' model object.
-	 * <!-- end-model-doc -->
 	 * @generated
 	 */
 	public static RectumSection getRectumSection(PhysicalExamSection physicalExamSection) {
@@ -2745,10 +2623,6 @@ public class PhysicalExamSectionOperations extends PhysicalExamNarrativeSectionO
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ihe::ExtremitiesSection))->asSequence()->any(true).oclAsType(ihe::ExtremitiesSection)
-	 * @param physicalExamSection The receiving '<em><b>Physical Exam Section</b></em>' model object.
-	 * <!-- end-model-doc -->
 	 * @generated
 	 */
 	public static ExtremitiesSection getExtremitiesSection(PhysicalExamSection physicalExamSection) {

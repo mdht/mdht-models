@@ -71,7 +71,6 @@ public class EncounterPlanOfCareOperations extends EncounterEntryOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.templateId->exists(id : datatypes::II | id.root = '1.3.6.1.4.1.19376.1.5.3.1.4.14')
 	 * @param encounterPlanOfCare The receiving '<em><b>Encounter Plan Of Care</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -135,8 +134,6 @@ public class EncounterPlanOfCareOperations extends EncounterEntryOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.moodCode = vocab::x_DocumentEncounterMood::ARQ
-	 *   or self.moodCode = vocab::x_DocumentEncounterMood::PRMS
 	 * @param encounterPlanOfCare The receiving '<em><b>Encounter Plan Of Care</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
