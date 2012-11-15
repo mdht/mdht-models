@@ -27,10 +27,10 @@ import org.openhealthtools.mdht.uml.cda.ccd.Support;
 public interface PatientContact extends Support {
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public PatientContact init();
 
 	/**

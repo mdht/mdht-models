@@ -2961,14 +2961,6 @@ public class HITSPValidator extends EObjectValidator {
 				medication, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= iheValidator.validateMedication_validateMedicationHasDescriptionNoMedNotKnown(
-				medication, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= iheValidator.validateMedication_validateMedicationReasonClassMood(
-				medication, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
 			result &= iheValidator.validateMedication_validateMedicationHasProductEntry(
 				medication, diagnostics, context);
 		}
@@ -9813,14 +9805,6 @@ public class HITSPValidator extends EObjectValidator {
 				medicationNormalDose, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= iheValidator.validateMedication_validateMedicationHasDescriptionNoMedNotKnown(
-				medicationNormalDose, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= iheValidator.validateMedication_validateMedicationReasonClassMood(
-				medicationNormalDose, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
 			result &= iheValidator.validateMedication_validateMedicationHasProductEntry(
 				medicationNormalDose, diagnostics, context);
 		}
@@ -10114,14 +10098,6 @@ public class HITSPValidator extends EObjectValidator {
 				medicationSplitDose, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= iheValidator.validateMedication_validateMedicationHasDescriptionNoMedNotKnown(
-				medicationSplitDose, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= iheValidator.validateMedication_validateMedicationReasonClassMood(
-				medicationSplitDose, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
 			result &= iheValidator.validateMedication_validateMedicationHasProductEntry(
 				medicationSplitDose, diagnostics, context);
 		}
@@ -10410,14 +10386,6 @@ public class HITSPValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= iheValidator.validateMedication_validateMedicationDosingRelationship(
-				medicationTaperedDose, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= iheValidator.validateMedication_validateMedicationHasDescriptionNoMedNotKnown(
-				medicationTaperedDose, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= iheValidator.validateMedication_validateMedicationReasonClassMood(
 				medicationTaperedDose, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -10728,14 +10696,6 @@ public class HITSPValidator extends EObjectValidator {
 				medicationConditionalDose, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= iheValidator.validateMedication_validateMedicationHasDescriptionNoMedNotKnown(
-				medicationConditionalDose, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= iheValidator.validateMedication_validateMedicationReasonClassMood(
-				medicationConditionalDose, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
 			result &= iheValidator.validateMedication_validateMedicationHasProductEntry(
 				medicationConditionalDose, diagnostics, context);
 		}
@@ -11033,14 +10993,6 @@ public class HITSPValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= iheValidator.validateMedication_validateMedicationDosingRelationship(
-				medicationCombinationMedication, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= iheValidator.validateMedication_validateMedicationHasDescriptionNoMedNotKnown(
-				medicationCombinationMedication, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= iheValidator.validateMedication_validateMedicationReasonClassMood(
 				medicationCombinationMedication, diagnostics, context);
 		}
 		if (result || diagnostics != null) {

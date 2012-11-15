@@ -33,29 +33,29 @@ import org.openhealthtools.mdht.uml.cda.impl.SectionImpl;
  */
 public class MusculoskeletalSystemSectionImpl extends SectionImpl implements MusculoskeletalSystemSection {
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	protected MusculoskeletalSystemSectionImpl() {
 		super();
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	@Override
 	protected EClass eStaticClass() {
 		return IHEPackage.Literals.MUSCULOSKELETAL_SYSTEM_SECTION;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateMusculoskeletalSystemSectionTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return MusculoskeletalSystemSectionOperations.validateMusculoskeletalSystemSectionTemplateId(
@@ -63,20 +63,20 @@ public class MusculoskeletalSystemSectionImpl extends SectionImpl implements Mus
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateMusculoskeletalSystemSectionCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return MusculoskeletalSystemSectionOperations.validateMusculoskeletalSystemSectionCode(
 			this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateMusculoskeletalSystemSectionProblemEntry(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return MusculoskeletalSystemSectionOperations.validateMusculoskeletalSystemSectionProblemEntry(
@@ -84,19 +84,19 @@ public class MusculoskeletalSystemSectionImpl extends SectionImpl implements Mus
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public ProblemEntry getProblemEntry() {
 		return MusculoskeletalSystemSectionOperations.getProblemEntry(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public MusculoskeletalSystemSection init() {
 		return Initializer.Util.init(this);
 	}

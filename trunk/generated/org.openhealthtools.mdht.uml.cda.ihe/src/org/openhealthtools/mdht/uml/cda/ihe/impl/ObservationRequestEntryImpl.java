@@ -32,38 +32,38 @@ import org.openhealthtools.mdht.uml.cda.ihe.operations.ObservationRequestEntryOp
  */
 public class ObservationRequestEntryImpl extends PlanOfCareActivityObservationImpl implements ObservationRequestEntry {
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	protected ObservationRequestEntryImpl() {
 		super();
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	@Override
 	protected EClass eStaticClass() {
 		return IHEPackage.Literals.OBSERVATION_REQUEST_ENTRY;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateObservationRequestEntryTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ObservationRequestEntryOperations.validateObservationRequestEntryTemplateId(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	@Override
 	public ObservationRequestEntry init() {
 		return Initializer.Util.init(this);

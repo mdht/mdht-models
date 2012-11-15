@@ -21,10 +21,10 @@ import org.openhealthtools.mdht.emf.runtime.util.Initializer;
  */
 public interface FunctionalStatusSection extends org.openhealthtools.mdht.uml.cda.ccd.FunctionalStatusSection {
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public FunctionalStatusSection init();
 
 	/**
