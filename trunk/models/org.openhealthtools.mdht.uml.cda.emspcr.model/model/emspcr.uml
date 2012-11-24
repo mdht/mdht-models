@@ -4373,7 +4373,7 @@ Required conditionally if procedure code is intravenous catheterization (E303)</
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_UGon08H4EeGOXu0EprM3pw" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_UGon1MH4EeGOXu0EprM3pw" value="1"/>
       </ownedAttribute>
-      <nestedClassifier xmi:type="uml:Class" xmi:id="_ooQqEMH-EeGOXu0EprM3pw" name="DerivedEntry">
+      <nestedClassifier xmi:type="uml:Class" xmi:id="_ooQqEMH-EeGOXu0EprM3pw" name="EMSDelayEntry">
         <generalization xmi:id="_ooQqEcH-EeGOXu0EprM3pw" general="_9YwisMHsEeGOXu0EprM3pw"/>
         <ownedAttribute xmi:id="_cFsE4sH_EeGOXu0EprM3pw" name="eMSDelayOrganizer" type="_0padgJ99EeGw9ZRnaFfEZQ" association="_cFsE4MH_EeGOXu0EprM3pw">
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_cFsE48H_EeGOXu0EprM3pw" value="1"/>
@@ -4530,7 +4530,7 @@ Required conditionally if procedure code is intravenous catheterization (E303)</
           </nestedClassifier>
         </nestedClassifier>
       </nestedClassifier>
-      <nestedClassifier xmi:type="uml:Class" xmi:id="_pQ4wUMH-EeGOXu0EprM3pw" name="DerivedEntry">
+      <nestedClassifier xmi:type="uml:Class" xmi:id="_pQ4wUMH-EeGOXu0EprM3pw" name="EMSDispatchLocationEntry">
         <generalization xmi:id="_pQ4wUcH-EeGOXu0EprM3pw" general="_9YwisMHsEeGOXu0EprM3pw"/>
         <ownedAttribute xmi:id="_dLnLIsH_EeGOXu0EprM3pw" name="eMSDispatchLocationOrganizer" type="_MiN-UJ-BEeGw9ZRnaFfEZQ" association="_dLnLIMH_EeGOXu0EprM3pw">
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_dLnLI8H_EeGOXu0EprM3pw"/>
@@ -4635,7 +4635,7 @@ Required conditionally if procedure code is intravenous catheterization (E303)</
           </nestedClassifier>
         </nestedClassifier>
       </nestedClassifier>
-      <nestedClassifier xmi:type="uml:Class" xmi:id="_p5NUkMH-EeGOXu0EprM3pw" name="DerivedEntry">
+      <nestedClassifier xmi:type="uml:Class" xmi:id="_p5NUkMH-EeGOXu0EprM3pw" name="EMSOdometerReadingEntry">
         <generalization xmi:id="_p5NUkcH-EeGOXu0EprM3pw" general="_9YwisMHsEeGOXu0EprM3pw"/>
         <ownedAttribute xmi:id="_eZ3uAsH_EeGOXu0EprM3pw" name="eMSResponseOdometerReadingsOrganizer" type="_yVviAJ-OEeGorI3CPDW2ww" association="_eZ3uAMH_EeGOXu0EprM3pw">
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_eZ3uA8H_EeGOXu0EprM3pw" value="1"/>
@@ -4771,7 +4771,7 @@ Required conditionally if procedure code is intravenous catheterization (E303)</
           </nestedClassifier>
         </nestedClassifier>
       </nestedClassifier>
-      <nestedClassifier xmi:type="uml:Class" xmi:id="_qyCaAMH-EeGOXu0EprM3pw" name="DerivedEntry">
+      <nestedClassifier xmi:type="uml:Class" xmi:id="_qyCaAMH-EeGOXu0EprM3pw" name="EMSResponseModeEntry">
         <generalization xmi:id="_qyCaAcH-EeGOXu0EprM3pw" general="_9YwisMHsEeGOXu0EprM3pw"/>
         <ownedAttribute xmi:id="_fnFIAsH_EeGOXu0EprM3pw" name="eMSResponseModeToScene" type="_l_V6IJ-bEeGorI3CPDW2ww" association="_fnFIAMH_EeGOXu0EprM3pw">
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_fnFIA8H_EeGOXu0EprM3pw" value="1"/>
@@ -5177,15 +5177,11 @@ Required if value is TRUE</body>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_U-IQg8H4EeGOXu0EprM3pw" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_U-IQhMH4EeGOXu0EprM3pw" value="1"/>
       </ownedAttribute>
-      <ownedAttribute xmi:id="_VVMFosH4EeGOXu0EprM3pw" name="entry2" type="_MV8ZEMIAEeGOXu0EprM3pw" association="_VVMFoMH4EeGOXu0EprM3pw">
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_VVMFo8H4EeGOXu0EprM3pw" value="1"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_VVMFpMH4EeGOXu0EprM3pw" value="1"/>
-      </ownedAttribute>
       <ownedAttribute xmi:id="_Vljc4sH4EeGOXu0EprM3pw" name="entry3" type="_NFZgEMIAEeGOXu0EprM3pw" association="_Vljc4MH4EeGOXu0EprM3pw">
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Vljc48H4EeGOXu0EprM3pw" value="1"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Vljc5MH4EeGOXu0EprM3pw" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_uArdIDZmEeKLbZOfNmD-hA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_uArdITZmEeKLbZOfNmD-hA"/>
       </ownedAttribute>
-      <nestedClassifier xmi:type="uml:Class" xmi:id="_LpT8kMIAEeGOXu0EprM3pw" name="DerivedEntry">
+      <nestedClassifier xmi:type="uml:Class" xmi:id="_LpT8kMIAEeGOXu0EprM3pw" name="EMSProtocolEntry">
         <generalization xmi:id="_LpT8kcIAEeGOXu0EprM3pw" general="_9YwisMHsEeGOXu0EprM3pw"/>
         <ownedAttribute xmi:id="_Q0ox8sIAEeGOXu0EprM3pw" name="eMSProtocolObservation" type="_rDpggp-mEeGorI3CPDW2ww" association="_Q0ox8MIAEeGOXu0EprM3pw">
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Q0ox88IAEeGOXu0EprM3pw" value="1"/>
@@ -5206,32 +5202,37 @@ Required if value is TRUE</body>
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_rDpgh5-mEeGorI3CPDW2ww" value="1"/>
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_rDpgiJ-mEeGorI3CPDW2ww" value="1"/>
           </ownedAttribute>
+          <ownedAttribute xmi:id="_7_4i8DZmEeKLbZOfNmD-hA" name="eMSProtocolAgeCategoryRelationship" type="_9vPdMDZlEeKLbZOfNmD-hA" association="_7_5xEDZmEeKLbZOfNmD-hA">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_7_5KADZmEeKLbZOfNmD-hA"/>
+          </ownedAttribute>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_9vPdMDZlEeKLbZOfNmD-hA" name="EMSProtocolAgeCategoryRelationship">
+            <generalization xmi:id="_-dbY4DZlEeKLbZOfNmD-hA">
+              <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_BoxMQEcFEd6besF9iFIJkQ"/>
+            </generalization>
+            <ownedAttribute xmi:id="_HKG1IDZmEeKLbZOfNmD-hA" name="eMSProtocolAgeCategory" type="_MjD2kJ-nEeGorI3CPDW2ww" association="_HKIDQDZmEeKLbZOfNmD-hA">
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_LD-psDZmEeKLbZOfNmD-hA" value="1"/>
+              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_LD-psTZmEeKLbZOfNmD-hA" value="1"/>
+            </ownedAttribute>
+            <nestedClassifier xmi:type="uml:Class" xmi:id="_MjD2kJ-nEeGorI3CPDW2ww" name="EMSProtocolAgeCategory">
+              <ownedComment xmi:id="_QqEvQJ-nEeGorI3CPDW2ww">
+                <body>NEMSIS Trace: EProtocols.02</body>
+              </ownedComment>
+              <generalization xmi:id="_NEM0wJ-nEeGorI3CPDW2ww">
+                <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
+              </generalization>
+              <ownedAttribute xmi:id="_N9AsEJ-nEeGorI3CPDW2ww" name="code" visibility="private" aggregation="composite">
+                <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+              </ownedAttribute>
+              <ownedAttribute xmi:id="_N9AsEZ-nEeGorI3CPDW2ww" name="value" visibility="private" aggregation="composite">
+                <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+                <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_TK_M0J-nEeGorI3CPDW2ww" value="1"/>
+                <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_TK_z4J-nEeGorI3CPDW2ww" value="1"/>
+              </ownedAttribute>
+            </nestedClassifier>
+          </nestedClassifier>
         </nestedClassifier>
       </nestedClassifier>
-      <nestedClassifier xmi:type="uml:Class" xmi:id="_MV8ZEMIAEeGOXu0EprM3pw" name="DerivedEntry">
-        <generalization xmi:id="_MV8ZEcIAEeGOXu0EprM3pw" general="_9YwisMHsEeGOXu0EprM3pw"/>
-        <ownedAttribute xmi:id="_R8o70sIAEeGOXu0EprM3pw" name="eMSProtocolAgeCategory" type="_MjD2kJ-nEeGorI3CPDW2ww" association="_R8o70MIAEeGOXu0EprM3pw">
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_R8o708IAEeGOXu0EprM3pw" value="1"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_R8o71MIAEeGOXu0EprM3pw" value="1"/>
-        </ownedAttribute>
-        <nestedClassifier xmi:type="uml:Class" xmi:id="_MjD2kJ-nEeGorI3CPDW2ww" name="EMSProtocolAgeCategory">
-          <ownedComment xmi:id="_QqEvQJ-nEeGorI3CPDW2ww">
-            <body>NEMSIS Trace: EProtocols.02</body>
-          </ownedComment>
-          <generalization xmi:id="_NEM0wJ-nEeGorI3CPDW2ww">
-            <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
-          </generalization>
-          <ownedAttribute xmi:id="_N9AsEJ-nEeGorI3CPDW2ww" name="code" visibility="private" aggregation="composite">
-            <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
-          </ownedAttribute>
-          <ownedAttribute xmi:id="_N9AsEZ-nEeGorI3CPDW2ww" name="value" visibility="private" aggregation="composite">
-            <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
-            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_TK_M0J-nEeGorI3CPDW2ww" value="1"/>
-            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_TK_z4J-nEeGorI3CPDW2ww" value="1"/>
-          </ownedAttribute>
-        </nestedClassifier>
-      </nestedClassifier>
-      <nestedClassifier xmi:type="uml:Class" xmi:id="_NFZgEMIAEeGOXu0EprM3pw" name="DerivedEntry">
+      <nestedClassifier xmi:type="uml:Class" xmi:id="_NFZgEMIAEeGOXu0EprM3pw" name="EMSCandidatePatientRegistryEntry">
         <generalization xmi:id="_NFZgEcIAEeGOXu0EprM3pw" general="_9YwisMHsEeGOXu0EprM3pw"/>
         <ownedAttribute xmi:id="_SsZk0sIAEeGOXu0EprM3pw" name="eMSCandidatePatientRegistryType" type="_n-zaBZ-nEeGorI3CPDW2ww" association="_SsZk0MIAEeGOXu0EprM3pw">
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_SsZk08IAEeGOXu0EprM3pw" value="1"/>
@@ -5290,7 +5291,7 @@ Required if value is TRUE</body>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_O5raw8H4EeGOXu0EprM3pw" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_O5raxMH4EeGOXu0EprM3pw" value="1"/>
       </ownedAttribute>
-      <nestedClassifier xmi:type="uml:Class" xmi:id="_9JHCgMH_EeGOXu0EprM3pw" name="DerivedEntry">
+      <nestedClassifier xmi:type="uml:Class" xmi:id="_9JHCgMH_EeGOXu0EprM3pw" name="EMSFirstUnitEntry">
         <generalization xmi:id="_9JHCgcH_EeGOXu0EprM3pw" general="_9YwisMHsEeGOXu0EprM3pw"/>
         <ownedAttribute xmi:id="_Dcu8ssIAEeGOXu0EprM3pw" name="eMSFirstUnitIndicator" type="_Ox86UKK4EeGOxth0BgV-QA" association="_Dcu8sMIAEeGOXu0EprM3pw">
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Dcu8s8IAEeGOXu0EprM3pw" value="1"/>
@@ -6217,9 +6218,6 @@ This is the value represented in the header for the encompassing encounter</body
     <packagedElement xmi:type="uml:Association" xmi:id="_U-IQgMH4EeGOXu0EprM3pw" memberEnd="_U-IQgsH4EeGOXu0EprM3pw _U-IQgcH4EeGOXu0EprM3pw">
       <ownedEnd xmi:id="_U-IQgcH4EeGOXu0EprM3pw" type="_aK7P4J-mEeGorI3CPDW2ww" association="_U-IQgMH4EeGOXu0EprM3pw"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_VVMFoMH4EeGOXu0EprM3pw" memberEnd="_VVMFosH4EeGOXu0EprM3pw _VVMFocH4EeGOXu0EprM3pw">
-      <ownedEnd xmi:id="_VVMFocH4EeGOXu0EprM3pw" type="_aK7P4J-mEeGorI3CPDW2ww" association="_VVMFoMH4EeGOXu0EprM3pw"/>
-    </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_Vljc4MH4EeGOXu0EprM3pw" memberEnd="_Vljc4sH4EeGOXu0EprM3pw _Vljc4cH4EeGOXu0EprM3pw">
       <ownedEnd xmi:id="_Vljc4cH4EeGOXu0EprM3pw" type="_aK7P4J-mEeGorI3CPDW2ww" association="_Vljc4MH4EeGOXu0EprM3pw"/>
     </packagedElement>
@@ -6439,9 +6437,6 @@ This is the value represented in the header for the encompassing encounter</body
     <packagedElement xmi:type="uml:Association" xmi:id="_Q0ox8MIAEeGOXu0EprM3pw" memberEnd="_Q0ox8sIAEeGOXu0EprM3pw _Q0ox8cIAEeGOXu0EprM3pw">
       <ownedEnd xmi:id="_Q0ox8cIAEeGOXu0EprM3pw" type="_LpT8kMIAEeGOXu0EprM3pw" association="_Q0ox8MIAEeGOXu0EprM3pw"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_R8o70MIAEeGOXu0EprM3pw" memberEnd="_R8o70sIAEeGOXu0EprM3pw _R8o70cIAEeGOXu0EprM3pw">
-      <ownedEnd xmi:id="_R8o70cIAEeGOXu0EprM3pw" type="_MV8ZEMIAEeGOXu0EprM3pw" association="_R8o70MIAEeGOXu0EprM3pw"/>
-    </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_SsZk0MIAEeGOXu0EprM3pw" memberEnd="_SsZk0sIAEeGOXu0EprM3pw _SsZk0cIAEeGOXu0EprM3pw">
       <ownedEnd xmi:id="_SsZk0cIAEeGOXu0EprM3pw" type="_NFZgEMIAEeGOXu0EprM3pw" association="_SsZk0MIAEeGOXu0EprM3pw"/>
     </packagedElement>
@@ -6588,6 +6583,12 @@ This is the value represented in the header for the encompassing encounter</body
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_5x80UCpIEeK1vdrMJapHMg" memberEnd="_5x6_ICpIEeK1vdrMJapHMg _5x80USpIEeK1vdrMJapHMg">
       <ownedEnd xmi:id="_5x80USpIEeK1vdrMJapHMg" type="_HLO9kIzgEeGnhceUMXltng" association="_5x80UCpIEeK1vdrMJapHMg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_HKIDQDZmEeKLbZOfNmD-hA" memberEnd="_HKG1IDZmEeKLbZOfNmD-hA _HKIDQTZmEeKLbZOfNmD-hA">
+      <ownedEnd xmi:id="_HKIDQTZmEeKLbZOfNmD-hA" type="_9vPdMDZlEeKLbZOfNmD-hA" association="_HKIDQDZmEeKLbZOfNmD-hA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_7_5xEDZmEeKLbZOfNmD-hA" memberEnd="_7_4i8DZmEeKLbZOfNmD-hA _7_5xETZmEeKLbZOfNmD-hA">
+      <ownedEnd xmi:id="_7_5xETZmEeKLbZOfNmD-hA" type="_rDpggp-mEeGorI3CPDW2ww" association="_7_5xEDZmEeKLbZOfNmD-hA"/>
     </packagedElement>
     <profileApplication xmi:id="_xpUkQWeQEeGtXKebdWh3hg">
       <eAnnotations xmi:id="_xpUkQmeQEeGtXKebdWh3hg" source="http://www.eclipse.org/uml2/2.0.0/UML">
@@ -7603,9 +7604,6 @@ This is the value represented in the header for the encompassing encounter</body
   </CDA:AssociationValidation>
   <CDA:AssociationValidation xmi:id="_U-IQhcH4EeGOXu0EprM3pw" base_Association="_U-IQgMH4EeGOXu0EprM3pw">
     <ruleId>CONF:10714</ruleId>
-  </CDA:AssociationValidation>
-  <CDA:AssociationValidation xmi:id="_VVMFpcH4EeGOXu0EprM3pw" base_Association="_VVMFoMH4EeGOXu0EprM3pw">
-    <ruleId>CONF:10715</ruleId>
   </CDA:AssociationValidation>
   <CDA:AssociationValidation xmi:id="_Vljc5cH4EeGOXu0EprM3pw" base_Association="_Vljc4MH4EeGOXu0EprM3pw">
     <ruleId>CONF:10716</ruleId>
@@ -8842,20 +8840,6 @@ This is the value represented in the header for the encompassing encounter</body
     <reference href="emspcr-vocab.uml#_yg9nwHSSEeGa4IXs2ghZEw"/>
     <ruleId>CONF:10721</ruleId>
   </CDA:ValueSetConstraint>
-  <CDA:PropertyValidation xmi:id="_VDrz0J-nEeGorI3CPDW2ww" base_Property="_N9AsEJ-nEeGorI3CPDW2ww">
-    <ruleId>CONF:10723</ruleId>
-  </CDA:PropertyValidation>
-  <CDA:CodeSystemConstraint xmi:id="_Vi6tgJ-nEeGorI3CPDW2ww" code="67538-9" displayName="EMS Protocol age category" base_Property="_N9AsEJ-nEeGorI3CPDW2ww">
-    <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
-    <ruleId>CONF:10724</ruleId>
-  </CDA:CodeSystemConstraint>
-  <CDA:PropertyValidation xmi:id="_T-uW4J-nEeGorI3CPDW2ww" base_Property="_N9AsEZ-nEeGorI3CPDW2ww">
-    <ruleId>CONF:10725</ruleId>
-  </CDA:PropertyValidation>
-  <CDA:ValueSetConstraint xmi:id="_ayo6sJ-nEeGorI3CPDW2ww" base_Property="_N9AsEZ-nEeGorI3CPDW2ww">
-    <reference href="emspcr-vocab.uml#_7FZ4kHSTEeGa4IXs2ghZEw"/>
-    <ruleId>CONF:10726</ruleId>
-  </CDA:ValueSetConstraint>
   <CDA:PropertyValidation xmi:id="_n-0oIJ-nEeGorI3CPDW2ww" base_Property="_n-zaCJ-nEeGorI3CPDW2ww">
     <ruleId>CONF:10728</ruleId>
   </CDA:PropertyValidation>
@@ -8872,9 +8856,6 @@ This is the value represented in the header for the encompassing encounter</body
   </CDA:ValueSetConstraint>
   <CDA:AssociationValidation xmi:id="_Q0x74MIAEeGOXu0EprM3pw" base_Association="_Q0ox8MIAEeGOXu0EprM3pw">
     <ruleId>CONF:10717</ruleId>
-  </CDA:AssociationValidation>
-  <CDA:AssociationValidation xmi:id="_R8o71cIAEeGOXu0EprM3pw" base_Association="_R8o70MIAEeGOXu0EprM3pw">
-    <ruleId>CONF:10722</ruleId>
   </CDA:AssociationValidation>
   <CDA:AssociationValidation xmi:id="_SsZk1cIAEeGOXu0EprM3pw" base_Association="_SsZk0MIAEeGOXu0EprM3pw">
     <ruleId>CONF:10727</ruleId>
@@ -9688,4 +9669,19 @@ This is the value represented in the header for the encompassing encounter</body
   </CDA:CodeSystemConstraint>
   <CDA:AssociationValidation xmi:id="_18keMCpIEeK1vdrMJapHMg" base_Association="_03rSsSpIEeK1vdrMJapHMg"/>
   <CDA:AssociationValidation xmi:id="_6cUnACpIEeK1vdrMJapHMg" severity="INFO" base_Association="_5x80UCpIEeK1vdrMJapHMg"/>
+  <CDA:PropertyValidation xmi:id="_VDrz0J-nEeGorI3CPDW2ww" base_Property="_N9AsEJ-nEeGorI3CPDW2ww">
+    <ruleId>CONF:10723</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:CodeSystemConstraint xmi:id="_Vi6tgJ-nEeGorI3CPDW2ww" code="67538-9" displayName="EMS Protocol age category" base_Property="_N9AsEJ-nEeGorI3CPDW2ww">
+    <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF:10724</ruleId>
+  </CDA:CodeSystemConstraint>
+  <CDA:PropertyValidation xmi:id="_T-uW4J-nEeGorI3CPDW2ww" base_Property="_N9AsEZ-nEeGorI3CPDW2ww">
+    <ruleId>CONF:10725</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:ValueSetConstraint xmi:id="_ayo6sJ-nEeGorI3CPDW2ww" base_Property="_N9AsEZ-nEeGorI3CPDW2ww">
+    <reference href="emspcr-vocab.uml#_7FZ4kHSTEeGa4IXs2ghZEw"/>
+    <ruleId>CONF:10726</ruleId>
+  </CDA:ValueSetConstraint>
+  <CDA:AssociationValidation xmi:id="_IkRGADZmEeKLbZOfNmD-hA" base_Association="_HKIDQDZmEeKLbZOfNmD-hA"/>
 </xmi:XMI>
