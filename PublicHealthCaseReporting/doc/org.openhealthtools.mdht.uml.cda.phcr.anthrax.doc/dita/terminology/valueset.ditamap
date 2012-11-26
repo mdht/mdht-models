@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
-<map title="Value Sets">
-<topicref href="Disease Type (Anthrax).dita" type="topic" />
-<topicref href="Lab Test Result Name (Anthrax).dita" type="topic" />
-<topicref href="Medication Treatment (Anthrax).dita" type="topic" />
-<topicref href="Signs and Symptoms (Anthrax).dita" type="topic" />
-</map>
