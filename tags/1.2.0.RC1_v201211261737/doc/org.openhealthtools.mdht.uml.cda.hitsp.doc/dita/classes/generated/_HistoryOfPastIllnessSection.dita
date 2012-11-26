@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>History Of Past Illness Section - conformance rules</title>
+<shortdesc id="shortdesc">[Section: templateId <tt>2.16.840.1.113883.3.88.11.83.104</tt>]</shortdesc>
+<prolog id="prolog">
+<metadata><category>Section</category></metadata>
+<resourceid id="2.16.840.1.113883.3.88.11.83.104"/>
+</prolog>
+<body>
+<section id="knownSubclasses">
+</section>
+<section id="description">
+<p>
+    The History of Past Illness Section contains data about problems the patient suffered in the
+    past. 
+</p>
+</section>
+<ol id="conformance">
+<li><b>SHALL</b> contain exactly one [1..1] templateId (  ) such that it <ol><li><b>SHALL</b> contain exactly one [1..1] <b>@root</b>="2.16.840.1.113883.3.88.11.83.104"</li></ol></li>
+<li><b>SHALL</b> conform to <xref format="html" href="PLUGINS_ROOT/org.openhealthtools.mdht.uml.cda.ihe.doc/classes/HistoryOfPastIllnessSection.html">IHE History Of Past Illness Section</xref> template (templateId: <tt>1.3.6.1.4.1.19376.1.5.3.1.3.8</tt>)</li>
+<li><b>SHALL</b> conform to <xref format="html" href="PLUGINS_ROOT/org.openhealthtools.mdht.uml.cda.cdt.doc/classes/PastMedicalHistorySection.html">CDT Past Medical History Section</xref> template (templateId: <tt>2.16.840.1.113883.10.20.2.9</tt>)</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt>
+<ol>
+<li>Contains exactly one [1..1] <xref href="../Condition.dita">Condition</xref> (templateId: <tt>2.16.840.1.113883.3.88.11.83.7</tt>)</li></ol></li>
+</ol>
+<ol id="aggregate">
+<li><b>SHALL</b> conform to <xref format="html" href="PLUGINS_ROOT/org.openhealthtools.mdht.uml.cda.cdt.doc/classes/PastMedicalHistorySection.html">CDT Past Medical History Section</xref> template (templateId: <tt>2.16.840.1.113883.10.20.2.9</tt>)</li>
+<li><b>SHALL</b> conform to <xref format="html" href="PLUGINS_ROOT/org.openhealthtools.mdht.uml.cda.ihe.doc/classes/HistoryOfPastIllnessSection.html">IHE History Of Past Illness Section</xref> template (templateId: <tt>1.3.6.1.4.1.19376.1.5.3.1.3.8</tt>)</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="11348-0" </tt><i>HISTORY OF PAST ILLNESS</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt>
+<ol>
+<li>Contains exactly one [1..1] <xref href="../Condition.dita">Condition</xref> (templateId: <tt>2.16.840.1.113883.3.88.11.83.7</tt>)</li></ol></li>
+<li><b>SHOULD</b> satisfy: Contains clinical statements.</li>
+</ol>
+<section id="tableconformance"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="8" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><colspec colname="col2" colnum="2" /><colspec colname="col3" colnum="3" /><colspec colname="col4" colnum="4" /><colspec colname="col5" colnum="5" /><colspec colname="col6" colnum="6" /><colspec colname="col7" colnum="7" /><thead> <row><entry namest="col0" nameend="col7" >hitsp::HistoryOfPastIllnessSection</entry>  </row>  <row><entry namest="col0" nameend="col7" >/cda:ClinicalDocument/cda:component/cda:structuredBody/cda:component/cda:section/</entry>  </row>  <row><entry>Name</entry><entry>XPath</entry><entry>Cardinality</entry><entry>Severity</entry><entry>Nullable</entry><entry>Data Type</entry><entry>Conformance</entry><entry>Value(s)</entry></row></thead><tbody><row><entry>condition</entry><entry>cda:entry/cda:act</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>Condition</entry><entry></entry><entry> </entry></row> 
+<row><entry>resolvedProblems ( historyOfPastIllnessSection )</entry><entry>historyOfPastIllnessSection</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>HistoryOfPastIllnessSection</entry><entry>C48-[CT2-17]</entry><entry> </entry></row> 
+</tbody></tgroup></table></p></section>
+<codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<section xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd">
+  <id root="MDHT" extension="595491630"/>
+  <title>TEXT FOR TITLE</title>
+  <text/>
+  <entry>
+    <act>
+      <id root="MDHT" extension="44563498"/>
+      <code code="65020950"/>
+      <text>Text Value</text>
+      <effectiveTime>
+        <low value="2012"/>
+        <high value="2012"/>
+      </effectiveTime>
+      <entryRelationship>
+        <observation/>
+      </entryRelationship>
+    </act>
+  </entry>
+</section>]]></codeblock>
+<section id="changes">
+</section>
+<p><ph id="classformalname">History Of Past Illness Section</ph></p>
+<p id="shortdesc">[Section: templateId <tt>2.16.840.1.113883.3.88.11.83.104</tt>]</p>
+</body>
+</topic>

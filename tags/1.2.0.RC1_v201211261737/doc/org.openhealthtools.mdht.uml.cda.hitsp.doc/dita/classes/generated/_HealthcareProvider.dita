@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Healthcare Provider - conformance rules</title>
+<shortdesc id="shortdesc">[Performer1: templateId <tt>2.16.840.1.113883.3.88.11.83.4</tt>]</shortdesc>
+<prolog id="prolog">
+<metadata><category>Performer1</category></metadata>
+<resourceid id="2.16.840.1.113883.3.88.11.83.4"/>
+</prolog>
+<body>
+<section id="knownSubclasses">
+</section>
+<section id="description">
+</section>
+<ol id="conformance">
+<li><b>SHALL</b> contain exactly one [1..1] templateId (  ) such that it <ol><li><b>SHALL</b> contain exactly one [1..1] <b>@root</b>="2.16.840.1.113883.3.88.11.83.4"</li></ol></li>
+<li><b>SHALL</b> conform to <xref format="html" href="PLUGINS_ROOT/org.openhealthtools.mdht.uml.cda.ihe.doc/classes/HealthcareProvidersPharmacies.html">IHE Healthcare Providers Pharmacies</xref> template (templateId: <tt>1.3.6.1.4.1.19376.1.5.3.1.2.3</tt>)</li>
+</ol>
+<ol id="aggregate">
+<li><b>SHALL</b> conform to <xref format="html" href="PLUGINS_ROOT/org.openhealthtools.mdht.uml.cda.ihe.doc/classes/HealthcareProvidersPharmacies.html">IHE Healthcare Providers Pharmacies</xref> template (templateId: <tt>1.3.6.1.4.1.19376.1.5.3.1.2.3</tt>)</li>
+<li>Contains exactly one [1..1] <tt><b>@typeCode</b></tt> with data type x_ServiceEventPerformer
+</li>
+<li>Contains exactly one [1..1] <tt><b>assignedEntity</b></tt>, where its type is <xref href="../AssignedEntity.dita">Assigned Entity</xref>
+<ol>
+<li>Contains exactly one [1..1] <xref href="../AssignedEntity.dita">Assigned Entity</xref></li></ol></li>
+</ol>
+<section id="tableconformance"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="8" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><colspec colname="col2" colnum="2" /><colspec colname="col3" colnum="3" /><colspec colname="col4" colnum="4" /><colspec colname="col5" colnum="5" /><colspec colname="col6" colnum="6" /><colspec colname="col7" colnum="7" /><thead> <row><entry namest="col0" nameend="col7" >hitsp::HealthcareProvider</entry>  </row>  <row><entry namest="col0" nameend="col7" >cda::performer1[cda:templateId/@root = ]/</entry>  </row>  <row><entry>Name</entry><entry>XPath</entry><entry>Cardinality</entry><entry>Severity</entry><entry>Nullable</entry><entry>Data Type</entry><entry>Conformance</entry><entry>Value(s)</entry></row></thead><tbody></tbody></tgroup></table></p></section>
+<codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<performer1 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd">
+  <time>
+    <low value="2012"/>
+    <high value="2012"/>
+  </time>
+  <assignedEntity/>
+</performer1>]]></codeblock>
+<section id="changes">
+</section>
+<p><ph id="classformalname">Healthcare Provider</ph></p>
+<p id="shortdesc">[Performer1: templateId <tt>2.16.840.1.113883.3.88.11.83.4</tt>]</p>
+</body>
+</topic>

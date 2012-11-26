@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Toxicity</title>
+<shortdesc conref="generated/_Toxicity.dita#classId/shortdesc"></shortdesc>
+<prolog conref="generated/_Toxicity.dita#classId/prolog"></prolog>
+<body>
+<!-- TODO: insert non-model class description markup here -->
+<section conref="generated/_Toxicity.dita#classId/description">
+</section>
+<!-- TODO: insert UML class diagram here -->
+
+<ol audience="standards" conref="generated/_Toxicity.dita#classId/conformance">
+<li></li>
+</ol>
+<ol audience="developer" conref="generated/_Toxicity.dita#classId/aggregate">
+<li></li>
+</ol>
+<!-- Comment out the sample table
+<section conref="generated/_Toxicity.dita#classId/tableconformance">
+</section>
+-->
+<p> </p>
+<p><b>Toxicity example</b></p>
+<!-- TODO: insert custom instance example here -->
+<!-- generated instance example follows -->
+<codeblock conref="generated/_Toxicity.dita#classId/example">
+</codeblock>
+</body>
+</topic>

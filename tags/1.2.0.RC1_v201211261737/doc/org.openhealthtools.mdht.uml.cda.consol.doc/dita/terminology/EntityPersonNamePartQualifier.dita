@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Entity Person Name Part Qualifier</title>
+<prolog id="prolog">
+<resourceid id="2.16.840.1.113883.11.20.9.26"/>
+</prolog>
+<body>
+<!-- THIS IS GENERATED CONTENT, DO NOT EDIT -->
+<section id="definition">
+<table><tgroup cols="2">
+<colspec colname="col1" colwidth="1*"/>
+<colspec colname="col2" colwidth="4*"/>
+<tbody>
+<row><entry>Value Set</entry><entry>EntityPersonNamePartQualifier - 2.16.840.1.113883.11.20.9.26</entry></row>
+<row><entry>Code System</entry><entry>EntityNamePartQualifier - 2.16.840.1.113883.5.43</entry></row>
+</tbody></tgroup></table>
+<table><tgroup cols="3">
+<colspec colname="col1" colwidth="1*"/>
+<colspec colname="col2" colwidth="1*"/>
+<colspec colname="col3" colwidth="2*"/>
+<thead><row>
+<entry>Code</entry><entry>Code System</entry><entry>Print Name</entry>
+</row></thead><tbody>
+<row><entry>AC</entry><entry>EntityNamePartQualifier</entry><entry>academic</entry></row>
+<row><entry>AD</entry><entry>EntityNamePartQualifier</entry><entry>adopted</entry></row>
+<row><entry>BR</entry><entry>EntityNamePartQualifier</entry><entry>birth</entry></row>
+<row><entry>CL</entry><entry>EntityNamePartQualifier</entry><entry>callme</entry></row>
+<row><entry>IN</entry><entry>EntityNamePartQualifier</entry><entry>initial</entry></row>
+<row><entry>NB</entry><entry>EntityNamePartQualifier</entry><entry>nobility</entry></row>
+<row><entry>PR</entry><entry>EntityNamePartQualifier</entry><entry>professional</entry></row>
+<row><entry>SP</entry><entry>EntityNamePartQualifier</entry><entry>spouse</entry></row>
+<row><entry>TITLE</entry><entry>EntityNamePartQualifier</entry><entry>title</entry></row>
+<row><entry>VV</entry><entry>EntityNamePartQualifier</entry><entry>voorvoegsel</entry></row>
+</tbody></tgroup></table>
+</section>
+</body>
+</topic>

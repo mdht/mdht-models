@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Patient Contact Participant - conformance rules</title>
+<shortdesc id="shortdesc">[Participant1: templateId <tt>1.3.6.1.4.1.19376.1.5.3.1.2.4</tt>]</shortdesc>
+<prolog id="prolog">
+<metadata><category>Participant1</category></metadata>
+<resourceid id="1.3.6.1.4.1.19376.1.5.3.1.2.4"/>
+</prolog>
+<body>
+<section id="description">
+</section>
+<ol id="conformance">
+<li><b>SHALL</b> conform to <xref format="html" href="PLUGINS_ROOT/org.openhealthtools.mdht.uml.cda.ccd.doc/classes/SupportParticipant.html">CCD Support Participant</xref></li>
+<li><b>SHALL</b> conform to <xref href="../PatientContact.dita">Patient Contact</xref></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@typeCode</b>="IND" </tt>
+</li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>time</b></tt>
+<ul><li>Indicates the time of the participation.</li></ul></li>
+</ol>
+<ol id="aggregate">
+<li><b>SHALL</b> conform to <xref href="../PatientContact.dita">Patient Contact</xref></li>
+<li><b>SHALL</b> conform to <xref format="html" href="PLUGINS_ROOT/org.openhealthtools.mdht.uml.cda.ccd.doc/classes/Support.html">CCD Support</xref></li>
+<li><b>SHALL</b> conform to <xref format="html" href="PLUGINS_ROOT/org.openhealthtools.mdht.uml.cda.ccd.doc/classes/SupportParticipant.html">CCD Support Participant</xref></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@typeCode</b>="IND" </tt>
+</li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>time</b></tt>
+<ul><li>Indicates the time of the participation.</li></ul></li>
+<li>Contains exactly one [1..1] <tt><b>associatedEntity</b></tt>, where its type is <xref href="../AssociatedEntity.dita">Associated Entity</xref>
+</li>
+</ol>
+<codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<participant1 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd" typeCode="IND">
+  <templateId root="1.3.6.1.4.1.19376.1.5.3.1.2.4"/>
+  <time>
+    <low value="2011"/>
+    <high value="2011"/>
+  </time>
+  <associatedEntity/>
+</participant1>]]></codeblock>
+</body>
+</topic>

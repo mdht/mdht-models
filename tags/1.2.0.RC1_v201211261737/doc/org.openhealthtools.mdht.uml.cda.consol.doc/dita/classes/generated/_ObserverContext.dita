@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Observer Context - conformance rules</title>
+<shortdesc id="shortdesc">[Author: templateId <tt>2.16.840.1.113883.10.20.6.2.4</tt>]</shortdesc>
+<prolog id="prolog">
+<metadata><category>Author</category></metadata>
+<resourceid id="2.16.840.1.113883.10.20.6.2.4"/>
+</prolog>
+<body>
+<section id="knownSubclasses">
+</section>
+<section id="description">
+</section>
+<ol id="conformance">
+<li><b>SHALL</b> contain exactly one [1..1] templateId ( CONF:9194, CONF:10536 ) such that it <ol><li><b>SHALL</b> contain exactly one [1..1] <b>@root</b>="2.16.840.1.113883.10.20.6.2.4"</li></ol></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>assignedAuthor</b></tt> (CONF:9195) <ol><li> This assignedAuthor <b>SHALL</b> contain at least one [1..*] <tt><b>id</b></tt> (CONF:9196)</li><li> This assignedAuthor Either assignedPerson or assignedAuthoringDevice <b>SHALL</b> be present (CONF:9198)</li></ol>
+</li>
+</ol>
+<ol id="aggregate">
+<li>Contains exactly one [1..1] <tt><b>time</b></tt> with data type TS
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>assignedAuthor</b></tt> (CONF:9195) <ol><li> This assignedAuthor <b>SHALL</b> contain at least one [1..*] <tt><b>id</b></tt> (CONF:9196)</li><li> This assignedAuthor Either assignedPerson or assignedAuthoringDevice <b>SHALL</b> be present (CONF:9198)</li></ol>
+</li>
+</ol>
+<section id="tableconformance"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="8" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><colspec colname="col2" colnum="2" /><colspec colname="col3" colnum="3" /><colspec colname="col4" colnum="4" /><colspec colname="col5" colnum="5" /><colspec colname="col6" colnum="6" /><colspec colname="col7" colnum="7" /><thead> <row><entry namest="col0" nameend="col7" >consol::ObserverContext</entry>  </row>  <row><entry namest="col0" nameend="col7" >cda::author[cda:templateId/@root = 2.16.840.1.113883.10.20.6.2.4]/</entry>  </row>  <row><entry>Name</entry><entry>XPath</entry><entry>Cardinality</entry><entry>Severity</entry><entry>Nullable</entry><entry>Data Type</entry><entry>Conformance</entry><entry>Value(s)</entry></row></thead><tbody><row><entry>assignedAuthor</entry><entry>assignedAuthor</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>AssignedAuthor</entry><entry>CONF:9195</entry><entry> </entry></row> 
+</tbody></tgroup></table></p></section>
+<codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<author xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd">
+  <templateId root="2.16.840.1.113883.10.20.6.2.4"/>
+  <time/>
+  <assignedAuthor>
+    <id root="MDHT" extension="577426910"/>
+  </assignedAuthor>
+</author>]]></codeblock>
+<section id="changes">
+</section>
+<p><ph id="classformalname">Observer Context</ph></p>
+<p id="shortdesc">[Author: templateId <tt>2.16.840.1.113883.10.20.6.2.4</tt>]</p>
+</body>
+</topic>

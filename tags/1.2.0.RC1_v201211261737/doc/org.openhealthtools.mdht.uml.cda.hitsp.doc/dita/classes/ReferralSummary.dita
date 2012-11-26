@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Referral Summary</title>
+<shortdesc conref="generated/_ReferralSummary.dita#classId/shortdesc"></shortdesc>
+<prolog conref="generated/_ReferralSummary.dita#classId/prolog"></prolog>
+<body>
+<!-- TODO: insert non-model class description markup here -->
+<section conref="generated/_ReferralSummary.dita#classId/description">
+</section>
+<!-- TODO: insert UML class diagram here -->
+
+<ol audience="standards" conref="generated/_ReferralSummary.dita#classId/conformance">
+<li></li>
+</ol>
+<ol audience="developer" conref="generated/_ReferralSummary.dita#classId/aggregate">
+<li></li>
+</ol>
+<p> </p>
+<section conref="generated/_ReferralSummary.dita#classId/tableconformance">
+</section>
+<p> </p>
+<p> </p>
+<p><b>Referral Summary example</b></p>
+<!-- TODO: insert custom instance example here -->
+<!-- generated instance example follows -->
+<codeblock conref="generated/_ReferralSummary.dita#classId/example">
+</codeblock>
+</body>
+</topic>

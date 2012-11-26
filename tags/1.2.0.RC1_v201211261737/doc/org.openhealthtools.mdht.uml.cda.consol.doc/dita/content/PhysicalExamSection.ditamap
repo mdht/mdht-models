@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<map>
+	<title>Physical Exam Section</title>
+	<topicref href="../classes/PhysicalExamSection.dita" type="topic" >
+		<topicref href="../classes/PhysicalExamSectionTable.dita" type="topic" />
+		<topicref href="../classes/PhysicalExamSectionSample.dita" type="topic" />	
+	</topicref>
+</map>
+

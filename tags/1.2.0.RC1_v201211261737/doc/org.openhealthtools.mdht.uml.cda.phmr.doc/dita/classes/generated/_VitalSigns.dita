@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Vital Signs - conformance rules</title>
+<shortdesc id="shortdesc">[Section: templateId <tt>2.16.840.1.113883.10.20.9.2</tt>]</shortdesc>
+<prolog id="prolog">
+<metadata><category>Section</category></metadata>
+<resourceid id="2.16.840.1.113883.10.20.9.2"/>
+</prolog>
+<body>
+<section id="description">
+<p>The Vital Signs section is only required if there is no Results section.
+
+If the following values are present in the PHMR, they SHOULD be recorded in the Vital Signs section: blood pressure, temperature, O2 saturation, respiratory rate, pulse.  All other values SHOULD be recorded in the Results section.</p>
+</section>
+<ol id="conformance">
+<li><b>SHALL</b> conform to <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.ccd.doc/classes/VitalSignsSection.html">CCD Vital Signs Section</xref> template (templateId: <tt>2.16.840.1.113883.10.20.1.16</tt>)</li>
+<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>entry</b></tt>, such that
+<ol>
+<li>Contains <tt><b>@typeCode="</b>COMP" </tt><i>COMP (component)</i></li></ol></li>
+</ol>
+<ol id="aggregate">
+<li><b>SHALL</b> conform to <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.ccd.doc/classes/VitalSignsSection.html">CCD Vital Signs Section</xref> template (templateId: <tt>2.16.840.1.113883.10.20.1.16</tt>)</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="8716-3" </tt><i>Vital signs</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF-382, CONF-383)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>title</b></tt> (CONF-384)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt> (CONF-381)
+</li>
+<li><b>SHOULD</b> contain at least one [1..*] <tt><b>entry</b></tt> (CONF-381), such that
+<ol>
+<li>Contains exactly one [1..1] <xref href="../VitalSignsOrganizer.dita">Vital Signs Organizer</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.35</tt>)</li></ol></li>
+<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>entry</b></tt>, such that
+<ol>
+<li>Contains <tt><b>@typeCode="</b>COMP" </tt><i>COMP (component)</i></li></ol></li>
+<li><b>SHOULD</b> satisfy: title Contains a case-insensitive language-insensitive string containing 'vital signs'. (CONF-385)<ul><li>UNIMPLEMENTABLE</li></ul></li>
+</ol>
+
+<codeblock id="example"><![CDATA[]]></codeblock>
+<section id="changes">
+</section>
+<p><ph id="classformalname">Vital Signs</ph></p>
+<p id="shortdesc">[Section: templateId <tt>2.16.840.1.113883.10.20.9.2</tt>]</p>
+</body>
+</topic>

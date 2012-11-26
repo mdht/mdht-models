@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Plan Of Care Activity - conformance rules</title>
+<shortdesc id="shortdesc"><i>Abstract</i> </shortdesc>
+<prolog id="prolog">
+</prolog>
+<body>
+<section id="knownSubclasses">
+<p>Known Subclasses: <xref href="../PlanOfCareActivityAct.dita">Plan Of Care Activity Act</xref>, <xref href="../PlanOfCareActivityObservation.dita">Plan Of Care Activity Observation</xref>, <xref href="../PlanOfCareActivityEncounter.dita">Plan Of Care Activity Encounter</xref>, <xref href="../PlanOfCareActivityProcedure.dita">Plan Of Care Activity Procedure</xref>, <xref href="../PlanOfCareActivitySubstanceAdministration.dita">Plan Of Care Activity Substance Administration</xref>, <xref href="../PlanOfCareActivitySupply.dita">Plan Of Care Activity Supply</xref></p>
+</section>
+<section id="description">
+</section>
+<ol id="conformance">
+<li><b>SHALL</b> contain exactly one [1..1] templateId (  ) such that it <ol><li><b>SHALL</b> contain exactly one [1..1] <b>@root</b>=""</li></ol></li>
+<li></li>
+</ol>
+<ol id="aggregate">
+<li></li>
+</ol>
+<codeblock id="example"><![CDATA[Error: Missing Runtime Class]]></codeblock>
+<section id="changes">
+</section>
+<p><ph id="classformalname">Plan Of Care Activity</ph></p>
+</body>
+</topic>

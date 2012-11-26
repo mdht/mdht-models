@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Problem</title>
+<prolog id="prolog">
+<resourceid id="2.16.840.1.113883.3.88.12.3221.7.4"/>
+</prolog>
+<body>
+<!-- THIS IS GENERATED CONTENT, DO NOT EDIT -->
+<section id="definition">
+<table><tgroup cols="2">
+<colspec colname="col1" colwidth="1*"/>
+<colspec colname="col2" colwidth="4*"/>
+<tbody>
+<row><entry>Value Set</entry><entry>Problem - 2.16.840.1.113883.3.88.12.3221.7.4</entry></row>
+<row><entry>Code System</entry><entry>SNOMEDCT - 2.16.840.1.113883.6.96</entry></row>
+<row><entry>Version</entry><entry>DYNAMIC</entry></row>
+<row><entry>Source</entry><entry>http://phinvads.cdc.gov/vads/ViewValueSet.action?id=70FDBFB5-A277-DE11-9B52-0015173D1785</entry></row>
+<row><entry>Description</entry><entry>Problems and diagnoses. Limited to terms decending from the Clinical Findings (404684003) or Situation with Explicit Context (243796009) hierarchies.
+</entry></row>
+</tbody></tgroup></table>
+</section>
+</body>
+</topic>

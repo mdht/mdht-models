@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Advance Directive Observation - conformance rules</title>
+<shortdesc id="shortdesc">[Observation: templateId <tt>2.16.840.1.113883.10.20.22.4.48</tt>]</shortdesc>
+<prolog id="prolog">
+<metadata><category>Observation</category></metadata>
+<resourceid id="2.16.840.1.113883.10.20.22.4.48"/>
+</prolog>
+<body>
+<section id="knownSubclasses">
+</section>
+<section id="description">
+<p><lines><i>Advance Directives Observatations assert findings (e.g., "resuscitation status is Full Code") rather than orders, and should not be considered legal documents. A legal document can be referenced using the reference/externalReference construct.</i></lines></p>
+</section>
+<ol id="conformance">
+<li><b>SHALL</b> contain exactly one [1..1] templateId ( CONF:8655, CONF:10485 ) such that it <ol><li><b>SHALL</b> contain exactly one [1..1] <b>@root</b>="2.16.840.1.113883.10.20.22.4.48"</li></ol></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="OBS" </tt><i>Observation</i> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>) (CONF:8648)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF:8649)
+</li>
+<li><b>SHALL</b> contain at least one [1..*] <tt><b>id</b></tt> (CONF:8654)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt>, where the @code <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/AdvanceDirectiveTypeCode.dita">Advance Directive Type Code</xref> 2.16.840.1.113883.1.11.20.2</tt><b> STATIC</b> 1 (CONF:8651)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>statusCode</b></tt><tt><b>/@code</b>="completed" </tt> (CodeSystem:<tt> 2.16.840.1.113883.5.14 ActStatus</tt>) (CONF:8652)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>effectiveTime</b></tt> (CONF:8656)
+</li>
+<li><b>SHOULD</b> contain at least one [1..*] <tt><b>participant</b></tt> (CONF:8662) <ol><li> Such participants <b>SHALL</b> contain exactly one [1..1] <tt><b>@typeCode</b>="VRF" </tt> (CONF:8663)</li><li> Such participants <b>SHALL</b> contain exactly one [1..1] <tt><b>time</b></tt> (CONF:8665)</li><li> Such participants <b>SHALL</b> contain exactly one [1..1] <tt><b>participantRole</b></tt>, where its type is CDA Participant Role (CONF:8666)<ol>
+<li>Contains exactly one [1..1] CDA Participant Role</li></ol></li></ol>
+</li>
+<li><b>SHOULD</b> contain exactly one [1..1] <tt><b>participant</b></tt> (CONF:8667) <ol><li> This participant <b>SHALL</b> contain exactly one [1..1] <tt><b>@typeCode</b>="CST" </tt> (CONF:8668)</li><li> This participant <b>SHALL</b> contain exactly one [1..1] <tt><b>participantRole</b></tt> (CONF:8669) <ol><li> This participantRole <b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="AGNT" </tt> (CONF:8670)</li><li> This participantRole <b>SHOULD</b> contain exactly one [1..1] <tt><b>addr</b></tt> (CONF:8671)</li><li> This participantRole <b>SHOULD</b> contain exactly one [1..1] <tt><b>telecom</b></tt> (CONF:8672)</li><li> This participantRole <b>SHALL</b> contain exactly one [1..1] <tt><b>playingEntity</b></tt> (ii., CONF:8824) <ol><li> This playingEntity <b>SHALL</b> contain at least one [1..*] <tt><b>name</b></tt> (CONF:8673)</li><li> This playingEntity The name of the agent who can provide a copy of the Advance Directive <b>SHALL</b> be recorded in the &lt;name&gt; element inside the &lt;playingEntity&gt; element (CONF:8674)</li></ol> </li></ol> </li></ol>
+</li>
+<li><b>SHOULD</b> contain at least one [1..*] <tt><b>reference</b></tt> (CONF:8692) <ol><li> Such references <b>SHALL</b> contain exactly one [1..1] <tt><b>@typeCode</b></tt><tt><b>/@code</b>="REFR" </tt> (CodeSystem:<tt> 2.16.840.1.113883.5.1002 HL7ActRelationshipType</tt>) (CONF:8694)</li><li> Such references <b>SHALL</b> contain exactly one [1..1] <tt><b>externalDocument</b></tt> (CONF:8693) <ol><li> This externalDocument <b>SHALL</b> contain at least one [1..*] <tt><b>id</b></tt> (CONF:8695)</li><li> This externalDocument <b>MAY</b> contain zero or one [0..1] <tt><b>text</b></tt> (CONF:8696)</li><li> This externalDocument The text, if present, <b>MAY</b> contain zero or one [0..1] @mediaType (CONF:8703)</li><li> This externalDocument The text, if present, <b>MAY</b> contain zero or one [0..1] reference.
+a. The URL of a referenced advance directive document <b>MAY</b> be present, and <b>SHALL</b> be represented in Observation/reference/ExternalDocument/text/reference.
+b. If a URL is referenced, then it <b>SHOULD</b> have a corresponding linkHTML element in narrative block. (CONF:8697, CONF:8698, CONF:8699)</li></ol> </li></ol>
+</li>
+<li>This effectiveTime <b>SHALL</b> contain exactly one [1..1] low
+i. If the starting time is unknown, the &lt;low&gt; element <b>SHALL</b> have the nullFlavor attribute set to UNK (CONF:8657, CONF:8658)</li>
+<li>This effectiveTime <b>SHALL</b> contain exactly one [1..1] high.
+i. If the ending time is unknown, the &lt;high&gt; element <b>SHALL</b> have the nullFlavor attribute set to UNK.
+ii. If the Advance Directive does not have a specified ending time, the &lt;high&gt; element <b>SHALL</b> have the nullFlavor attribute set to NA. (CONF:8659, CONF:8660)</li>
+</ol>
+<ol id="aggregate">
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="OBS" </tt><i>Observation</i> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>) (CONF:8648)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF:8649)
+</li>
+<li><b>SHALL</b> contain at least one [1..*] <tt><b>id</b></tt> (CONF:8654)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt>, where the @code <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/AdvanceDirectiveTypeCode.dita">Advance Directive Type Code</xref> 2.16.840.1.113883.1.11.20.2</tt><b> STATIC</b> 1 (CONF:8651)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>statusCode</b></tt><tt><b>/@code</b>="completed" </tt> (CodeSystem:<tt> 2.16.840.1.113883.5.14 ActStatus</tt>) (CONF:8652)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>effectiveTime</b></tt> (CONF:8656)
+</li>
+<li><b>SHOULD</b> contain at least one [1..*] <tt><b>participant</b></tt> (CONF:8662) <ol><li> Such participants <b>SHALL</b> contain exactly one [1..1] <tt><b>@typeCode</b>="VRF" </tt> (CONF:8663)</li><li> Such participants <b>SHALL</b> contain exactly one [1..1] <tt><b>time</b></tt> (CONF:8665)</li><li> Such participants <b>SHALL</b> contain exactly one [1..1] <tt><b>participantRole</b></tt>, where its type is CDA Participant Role (CONF:8666)<ol>
+<li>Contains exactly one [1..1] CDA Participant Role</li></ol></li></ol>
+</li>
+<li><b>SHOULD</b> contain exactly one [1..1] <tt><b>participant</b></tt> (CONF:8667) <ol><li> This participant <b>SHALL</b> contain exactly one [1..1] <tt><b>@typeCode</b>="CST" </tt> (CONF:8668)</li><li> This participant <b>SHALL</b> contain exactly one [1..1] <tt><b>participantRole</b></tt> (CONF:8669) <ol><li> This participantRole <b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="AGNT" </tt> (CONF:8670)</li><li> This participantRole <b>SHOULD</b> contain exactly one [1..1] <tt><b>addr</b></tt> (CONF:8671)</li><li> This participantRole <b>SHOULD</b> contain exactly one [1..1] <tt><b>telecom</b></tt> (CONF:8672)</li><li> This participantRole <b>SHALL</b> contain exactly one [1..1] <tt><b>playingEntity</b></tt> (ii., CONF:8824) <ol><li> This playingEntity <b>SHALL</b> contain at least one [1..*] <tt><b>name</b></tt> (CONF:8673)</li><li> This playingEntity The name of the agent who can provide a copy of the Advance Directive <b>SHALL</b> be recorded in the &lt;name&gt; element inside the &lt;playingEntity&gt; element (CONF:8674)</li></ol> </li></ol> </li></ol>
+</li>
+<li><b>SHOULD</b> contain at least one [1..*] <tt><b>reference</b></tt> (CONF:8692) <ol><li> Such references <b>SHALL</b> contain exactly one [1..1] <tt><b>@typeCode</b></tt><tt><b>/@code</b>="REFR" </tt> (CodeSystem:<tt> 2.16.840.1.113883.5.1002 HL7ActRelationshipType</tt>) (CONF:8694)</li><li> Such references <b>SHALL</b> contain exactly one [1..1] <tt><b>externalDocument</b></tt> (CONF:8693) <ol><li> This externalDocument <b>SHALL</b> contain at least one [1..*] <tt><b>id</b></tt> (CONF:8695)</li><li> This externalDocument <b>MAY</b> contain zero or one [0..1] <tt><b>text</b></tt> (CONF:8696)</li><li> This externalDocument The text, if present, <b>MAY</b> contain zero or one [0..1] @mediaType (CONF:8703)</li><li> This externalDocument The text, if present, <b>MAY</b> contain zero or one [0..1] reference.
+a. The URL of a referenced advance directive document <b>MAY</b> be present, and <b>SHALL</b> be represented in Observation/reference/ExternalDocument/text/reference.
+b. If a URL is referenced, then it <b>SHOULD</b> have a corresponding linkHTML element in narrative block. (CONF:8697, CONF:8698, CONF:8699)</li></ol> </li></ol>
+</li>
+<li>This effectiveTime <b>SHALL</b> contain exactly one [1..1] low
+i. If the starting time is unknown, the &lt;low&gt; element <b>SHALL</b> have the nullFlavor attribute set to UNK (CONF:8657, CONF:8658)</li>
+<li>This effectiveTime <b>SHALL</b> contain exactly one [1..1] high.
+i. If the ending time is unknown, the &lt;high&gt; element <b>SHALL</b> have the nullFlavor attribute set to UNK.
+ii. If the Advance Directive does not have a specified ending time, the &lt;high&gt; element <b>SHALL</b> have the nullFlavor attribute set to NA. (CONF:8659, CONF:8660)</li>
+</ol>
+<section id="tableconformance"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="8" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><colspec colname="col2" colnum="2" /><colspec colname="col3" colnum="3" /><colspec colname="col4" colnum="4" /><colspec colname="col5" colnum="5" /><colspec colname="col6" colnum="6" /><colspec colname="col7" colnum="7" /><thead> <row><entry namest="col0" nameend="col7" >consol::AdvanceDirectiveObservation</entry>  </row>  <row><entry namest="col0" nameend="col7" >cda::observation[cda:templateId/@root = 2.16.840.1.113883.10.20.22.4.48]/</entry>  </row>  <row><entry>Name</entry><entry>XPath</entry><entry>Cardinality</entry><entry>Severity</entry><entry>Nullable</entry><entry>Data Type</entry><entry>Conformance</entry><entry>Value(s)</entry></row></thead><tbody><row><entry>classCode</entry><entry>@classCode</entry><entry>1..1</entry><entry>SHALL</entry><entry>NO</entry><entry>ActClass</entry><entry>CONF:8648</entry><entry> ALRT</entry></row> 
+<row><entry>moodCode</entry><entry>@moodCode</entry><entry>1..1</entry><entry>SHALL</entry><entry>NO</entry><entry>ActMood</entry><entry>CONF:8649</entry><entry> DEF</entry></row> 
+<row><entry>code</entry><entry>code</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>CD</entry><entry>CONF:8651</entry><entry> null</entry></row> 
+<row><entry>effectiveTime</entry><entry>effectiveTime</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>IVL_TS</entry><entry>CONF:8656</entry><entry> </entry></row> 
+<row><entry>id</entry><entry>id</entry><entry>1..*</entry><entry>SHALL</entry><entry>YES</entry><entry>II</entry><entry>CONF:8654</entry><entry> </entry></row> 
+<row><entry>statusCode</entry><entry>statusCode</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>CS</entry><entry>CONF:8652</entry><entry>ActStatus 2.16.840.1.113883.5.14 completed</entry></row> 
+<row><entry>advanceDirectiveObservation</entry><entry>advanceDirectiveObservation</entry><entry>1..*</entry><entry>SHALL</entry><entry>YES</entry><entry>AdvanceDirectiveObservation</entry><entry>CONF:8647CONF:8801</entry><entry> </entry></row> 
+<row><entry>custodian</entry><entry>custodian</entry><entry>1..1</entry><entry>SHOULD</entry><entry>YES</entry><entry>Custodian</entry><entry>CONF:8667</entry><entry> </entry></row> 
+<row><entry>reference</entry><entry>reference</entry><entry>1..*</entry><entry>SHOULD</entry><entry>YES</entry><entry>Reference</entry><entry>CONF:8692</entry><entry> </entry></row> 
+<row><entry>verifier</entry><entry>verifier</entry><entry>1..*</entry><entry>SHOULD</entry><entry>YES</entry><entry>Verifier</entry><entry>CONF:8662</entry><entry> </entry></row> 
+</tbody></tgroup></table></p></section>
+<codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<observation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd" classCode="OBS" moodCode="EVN">
+  <templateId root="2.16.840.1.113883.10.20.22.4.48"/>
+  <id root="MDHT" extension="1282415972"/>
+  <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
+  <statusCode code="completed"/>
+  <effectiveTime>
+    <low value="2012"/>
+    <high value="2012"/>
+  </effectiveTime>
+  <participant typeCode="VRF">
+    <time>
+      <low value="2012"/>
+      <high value="2012"/>
+    </time>
+    <participantRole/>
+  </participant>
+  <participant typeCode="CST">
+    <participantRole classCode="AGNT">
+      <addr/>
+      <telecom/>
+      <playingEntity/>
+    </participantRole>
+  </participant>
+  <reference typeCode="REFR">
+    <externalDocument>
+      <id root="MDHT" extension="414973581"/>
+      <text>Text Value</text>
+    </externalDocument>
+  </reference>
+</observation>]]></codeblock>
+<section id="changes">
+</section>
+<p><ph id="classformalname">Advance Directive Observation</ph></p>
+<p id="shortdesc">[Observation: templateId <tt>2.16.840.1.113883.10.20.22.4.48</tt>]</p>
+</body>
+</topic>

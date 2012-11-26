@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Progress Note Document Type Code</title>
+<prolog id="prolog">
+<resourceid id="2.16.840.1.113883.11.20.8.1"/>
+</prolog>
+<body>
+<!-- THIS IS GENERATED CONTENT, DO NOT EDIT -->
+<section id="definition">
+<table><tgroup cols="2">
+<colspec colname="col1" colwidth="1*"/>
+<colspec colname="col2" colwidth="4*"/>
+<tbody>
+<row><entry>Value Set</entry><entry>ProgressNoteDocumentTypeCode - 2.16.840.1.113883.11.20.8.1</entry></row>
+<row><entry>Code System</entry><entry>LOINC - 2.16.840.1.113883.6.1</entry></row>
+</tbody></tgroup></table>
+<table><tgroup cols="3">
+<colspec colname="col1" colwidth="1*"/>
+<colspec colname="col2" colwidth="1*"/>
+<colspec colname="col3" colwidth="2*"/>
+<thead><row>
+<entry>Code</entry><entry>Code System</entry><entry>Print Name</entry>
+</row></thead><tbody>
+<row><entry>11506-3</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>18733-6</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>18762-5</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>28569-2</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>28617-9</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>34900-1</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>34904-3</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>18764-1</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>28623-7</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>11507-1</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>11508-9</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>11509-7</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>28627-8</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>11510-5</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>28656-7</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>11512-1</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>34126-3</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>15507-7</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>34129-7</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>34125-5</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>34130-5</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>34131-3</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>34124-8</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>34127-1</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>34128-9</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>34901-9</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>34132-1</entry><entry>LOINC</entry><entry></entry></row>
+</tbody></tgroup></table>
+</section>
+</body>
+</topic>

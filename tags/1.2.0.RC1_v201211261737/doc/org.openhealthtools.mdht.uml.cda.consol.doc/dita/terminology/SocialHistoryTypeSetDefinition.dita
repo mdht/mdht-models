@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Social History Type Set Definition</title>
+<prolog id="prolog">
+<resourceid id="2.16.840.1.113883.3.88.12.80.60"/>
+</prolog>
+<body>
+<!-- THIS IS GENERATED CONTENT, DO NOT EDIT -->
+<section id="definition">
+<table><tgroup cols="2">
+<colspec colname="col1" colwidth="1*"/>
+<colspec colname="col2" colwidth="4*"/>
+<tbody>
+<row><entry>Value Set</entry><entry>Social History Type Set Definition - 2.16.840.1.113883.3.88.12.80.60</entry></row>
+<row><entry>Code System</entry><entry>SNOMEDCT - 2.16.840.1.113883.6.96</entry></row>
+<row><entry>Version</entry><entry>1</entry></row>
+<row><entry>Definition</entry><entry>This indicates the type of social history observation</entry></row>
+</tbody></tgroup></table>
+<table><tgroup cols="3">
+<colspec colname="col1" colwidth="1*"/>
+<colspec colname="col2" colwidth="1*"/>
+<colspec colname="col3" colwidth="2*"/>
+<thead><row>
+<entry>Code</entry><entry>Code System</entry><entry>Print Name</entry>
+</row></thead><tbody>
+<row><entry>229819007</entry><entry>SNOMEDCT</entry><entry>Tobacco use and exposure</entry></row>
+<row><entry>256235009</entry><entry>SNOMEDCT</entry><entry>Exercise</entry></row>
+<row><entry>160573003</entry><entry>SNOMEDCT</entry><entry>Alcohol intake</entry></row>
+<row><entry>364393001</entry><entry>SNOMEDCT</entry><entry>Nutritional observable</entry></row>
+<row><entry>364703007</entry><entry>SNOMEDCT</entry><entry>Employment detail</entry></row>
+<row><entry>425400000</entry><entry>SNOMEDCT</entry><entry>Toxic exposure status</entry></row>
+<row><entry>363908000</entry><entry>SNOMEDCT</entry><entry>Details of drug misuse behavior</entry></row>
+<row><entry>228272008</entry><entry>SNOMEDCT</entry><entry>Health-related behavior</entry></row>
+<row><entry>105421008</entry><entry>SNOMEDCT</entry><entry>Educational Achievement</entry></row>
+</tbody></tgroup></table>
+</section>
+</body>
+</topic>

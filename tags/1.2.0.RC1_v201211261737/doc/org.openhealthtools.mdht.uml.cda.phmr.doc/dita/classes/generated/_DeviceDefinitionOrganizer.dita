@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Device Definition Organizer - conformance rules</title>
+<shortdesc id="shortdesc">[Organizer: templateId <tt>2.16.840.1.113883.10.20.9.4</tt>]</shortdesc>
+<prolog id="prolog">
+<metadata><category>Organizer</category></metadata>
+<resourceid id="2.16.840.1.113883.10.20.9.4"/>
+</prolog>
+<body>
+<section id="description">
+</section>
+<ol id="conformance">
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="CLUSTER" </tt> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>)
+</li>
+<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>effectiveTime</b></tt>
+</li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>component</b></tt>, such that
+<ol>
+<li>Contains exactly one [1..1] <xref href="../SamplingFrequencyObservation.dita">Sampling Frequency Observation</xref> (templateId: <tt>2.16.840.1.113883.10.20.9.10</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>component</b></tt>, such that
+<ol>
+<li>Contains exactly one [1..1] <xref href="../DeviceMeasurementRangeObservation.dita">Device Measurement Range Observation</xref> (templateId: <tt>2.16.840.1.113883.10.20.9.5</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>component</b></tt>, such that
+<ol>
+<li>Contains exactly one [1..1] <xref href="../DeviceResolutionObservation.dita">Device Resolution Observation</xref> (templateId: <tt>2.16.840.1.113883.10.20.9.6</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>component</b></tt>, such that
+<ol>
+<li>Contains exactly one [1..1] <xref href="../DeviceAccuracyObservation.dita">Device Accuracy Observation</xref> (templateId: <tt>2.16.840.1.113883.10.20.9.3</tt>)</li></ol></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>participant</b></tt>, such that
+</li>
+</ol>
+<ol id="aggregate">
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="CLUSTER" </tt> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>)
+</li>
+<li>Contains exactly one [1..1] <tt><b>statusCode</b></tt>, where its data type is CS
+</li>
+<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>effectiveTime</b></tt>
+</li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>component</b></tt>, such that
+<ol>
+<li>Contains exactly one [1..1] <xref href="../SamplingFrequencyObservation.dita">Sampling Frequency Observation</xref> (templateId: <tt>2.16.840.1.113883.10.20.9.10</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>component</b></tt>, such that
+<ol>
+<li>Contains exactly one [1..1] <xref href="../DeviceMeasurementRangeObservation.dita">Device Measurement Range Observation</xref> (templateId: <tt>2.16.840.1.113883.10.20.9.5</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>component</b></tt>, such that
+<ol>
+<li>Contains exactly one [1..1] <xref href="../DeviceResolutionObservation.dita">Device Resolution Observation</xref> (templateId: <tt>2.16.840.1.113883.10.20.9.6</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>component</b></tt>, such that
+<ol>
+<li>Contains exactly one [1..1] <xref href="../DeviceAccuracyObservation.dita">Device Accuracy Observation</xref> (templateId: <tt>2.16.840.1.113883.10.20.9.3</tt>)</li></ol></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>participant</b></tt>, such that
+</li>
+</ol>
+
+<codeblock id="example"><![CDATA[]]></codeblock>
+<section id="changes">
+</section>
+<p><ph id="classformalname">Device Definition Organizer</ph></p>
+<p id="shortdesc">[Organizer: templateId <tt>2.16.840.1.113883.10.20.9.4</tt>]</p>
+</body>
+</topic>

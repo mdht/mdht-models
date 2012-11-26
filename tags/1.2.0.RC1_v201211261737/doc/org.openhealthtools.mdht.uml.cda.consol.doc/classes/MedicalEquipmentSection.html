@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="en-us" lang="en-us">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="copyright" content="(C) Copyright 2005"/>
+<meta name="DC.rights.owner" content="(C) Copyright 2005"/>
+<meta name="DC.Type" content="topic"/>
+<meta name="DC.Title" content="Medical Equipment Section"/>
+<meta name="abstract" content="[Section: templateId 2.16.840.1.113883.10.20.22.2.23]"/>
+<meta name="description" content="[Section: templateId 2.16.840.1.113883.10.20.22.2.23]"/>
+<meta name="DC.Coverage" content="Section"/>
+<meta name="DC.Relation" scheme="URI" content="../classes/MedicalEquipmentSectionTable.html"/>
+<meta name="DC.Relation" scheme="URI" content="../classes/MedicalEquipmentSectionSample.html"/>
+<meta name="DC.Format" content="XHTML"/>
+<meta name="DC.Identifier" content="classId"/>
+<meta name="DC.Language" content="en-us"/>
+<link rel="stylesheet" type="text/css" href="../css/commonltr.css"/>
+<title>Medical Equipment Section</title>
+</head>
+<body id="classId">
+<div>
+	<p><b>Non-Normative Content</b> The Normative content for these specifications
+	may be found on the HL7, IHE, and HITSP web sites.</p>
+</div>
+
+	<h1 class="title topictitle1">
+		<span class="ph">Medical Equipment Section</span>
+	</h1>
+
+	
+	
+	<div class="body"><p class="shortdesc">[Section: templateId <tt class="ph tt">2.16.840.1.113883.10.20.22.2.23</tt>]</p>
+
+		
+		<div class="section">
+<div class="p"><p class="lines"><em class="ph i">The Medical Equipment section defines a patient's implanted and external medical devices and equipment that their health status depends on, as well as any pertinent equipment or device history. This section is also used to itemize any pertinent current or historical durable medical equipment (DME) used to help maintain the patient's health status. All pertinent equipment relevant to the diagnosis, care, and treatment of a patient should be included.</em></p>
+</div>
+
+</div>
+
+		
+
+		<ol class="ol">
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] templateId ( CONF:7944.CONF:10404 ) such that it <ol class="ol" type="a"><li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <strong class="ph b">@root</strong>="2.16.840.1.113883.10.20.22.2.23"</li>
+</ol>
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt> (CONF:15381)<tt class="ph tt"><strong class="ph b">/@code</strong>="46264-8" </tt><em class="ph i">Medical Equipment</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:15382)
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">title</strong></tt> (CONF:7946)
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">text</strong></tt> (CONF:7947)
+</li>
+
+<li class="li"><strong class="ph b">SHOULD</strong> contain zero or more [0..*] <tt class="ph tt"><strong class="ph b">entry</strong></tt> (CONF:7948.CONF:8755)
+<ol class="ol" type="a">
+<li class="li">Contains exactly one [1..1] <a class="xref" href="NonMedicinalSupplyActivity.html" title="[Supply: templateId 2.16.840.1.113883.10.20.22.4.50]">Non Medicinal Supply Activity</a> (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.22.4.50</tt>)</li>
+</ol>
+</li>
+
+</ol>
+
+		
+		<p class="p">
+		</p>
+
+	</div>
+
+<div class="related-links">
+<ul class="ullinks">
+<li class="link ulchildlink"><strong><a href="../classes/MedicalEquipmentSectionTable.html">Medical Equipment Section Table</a></strong><br/>
+</li>
+<li class="link ulchildlink"><strong><a href="../classes/MedicalEquipmentSectionSample.html">Medical Equipment Section Sample</a></strong><br/>
+</li>
+</ul>
+</div>
+
+</body>
+</html>

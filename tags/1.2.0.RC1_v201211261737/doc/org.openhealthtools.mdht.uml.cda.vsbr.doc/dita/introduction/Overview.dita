@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN"
+ "dtd/topic.dtd">
+<topic id="topicId" xml:lang="en-us">
+	<title>Overview</title>
+	<body>
+		<p>This implementation guide provides a format for using HL7's Clinical Document Architecture to
+		 transmit medical/health information on live births and fetal deaths from a birthing facility setting
+		  to a jurisdictional vital records electronic registration system. Vital Records birth certificates and
+		   fetal death reports include important demographic, medical and key information about the antepartum
+		    period, the labor and delivery process and the newborn/fetal death .  Medical and health information
+		     collected from Electronic Health Record (EHR) and data for the birth certificate and fetal death
+		      report once gathered, can be provided public health agencies to track maternal and infant health
+		       to target interventions for at risk populations.</p>
+		 
+		 <p>The document is generated from UML models developed in
+			the Open Health Tools (OHT) Model-Driven Health Tools (MDHT) project.
+			</p>
+	</body>
+</topic>

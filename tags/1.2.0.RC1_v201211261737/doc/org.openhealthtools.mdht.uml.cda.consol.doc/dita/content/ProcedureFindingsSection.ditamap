@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<map>
+	<title>Procedure Findings Section</title>
+	<topicref href="../classes/ProcedureFindingsSection.dita" type="topic" >
+		<topicref href="../classes/ProcedureFindingsSectionTable.dita" type="topic" />
+		<topicref href="../classes/ProcedureFindingsSectionSample.dita" type="topic" />	
+	</topicref>
+</map>
+

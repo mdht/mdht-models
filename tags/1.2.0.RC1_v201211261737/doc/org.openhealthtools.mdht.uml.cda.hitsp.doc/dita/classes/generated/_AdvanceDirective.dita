@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Advance Directive - conformance rules</title>
+<shortdesc id="shortdesc">[Observation: templateId <tt>2.16.840.1.113883.3.88.11.83.12</tt>]</shortdesc>
+<prolog id="prolog">
+<metadata><category>Observation</category></metadata>
+<resourceid id="2.16.840.1.113883.3.88.11.83.12"/>
+</prolog>
+<body>
+<section id="knownSubclasses">
+</section>
+<section id="description">
+<p><lines><i>This module contains data describing the patient's Advance Directives and any reference to supporting documentation. This section contains data such as the existence of living wills, healthcare proxies and CPR and resuscitation status. The custodian of these documents may be described.</i></lines></p>
+</section>
+<ol id="conformance">
+<li><b>SHALL</b> contain exactly one [1..1] templateId (  ) such that it <ol><li><b>SHALL</b> contain exactly one [1..1] <b>@root</b>="2.16.840.1.113883.3.88.11.83.12"</li></ol></li>
+<li><b>SHALL</b> conform to <xref format="html" href="PLUGINS_ROOT/org.openhealthtools.mdht.uml.cda.ihe.doc/classes/AdvanceDirectiveObservation.html">IHE Advance Directive Observation</xref> template (templateId: <tt>1.3.6.1.4.1.19376.1.5.3.1.4.13.7</tt>)</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt>, where the @code <b>SHALL</b> be selected from ValueSet<tt> Advance Directive Type 2.16.840.1.113883.1.11.20.2</tt><b> STATIC</b> 1
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>effectiveTime</b></tt>
+</li>
+<li>The human readable description of the type of Advance Directive <b>SHALL</b> appear in the narrative text and <b>SHALL</b> be pointed to by the value attribute of the &lt;reference&gt; element inside the &lt;originalText&gt; element of the &lt;code&gt;</li>
+<li>The starting time of the Advance Directive <b>SHALL</b> be recorded in the &lt;low&gt; element of the &lt;effectiveTime&gt; element in the Advance Directive &lt;observation&gt;</li>
+<li>If the starting time is unknown, the &lt;low&gt; element <b>SHALL</b> have the nullFlavor attribute set to UNK</li>
+<li>The ending time of the Advance Directive <b>SHALL</b> be recorded in the &lt;high&gt; element of the &lt;effectiveTime&gt; element in the Advance Directive &lt;observation&gt;</li>
+<li>If the ending time is unknown, the &lt;high&gt; element <b>SHALL</b> have the nullFlavor attribute set to UNK.</li>
+<li>If the Advance Directive does not have a specified ending time, the &lt;high&gt; element <b>SHALL</b> have the nullFlavor attribute set to NA</li>
+<li>Information required to obtain a copy of the Advance Directive <b>SHALL</b> be recorded in a &lt;participantRole&gt; element within a &lt;participant&gt; element of the Advance Directive &lt;observation&gt;</li>
+<li>The typeCode attribute of the participant element <b>SHALL</b> be CST</li>
+<li>The classCode of the participant/participantRole element <b>SHALL</b> be AGNT</li>
+<li>The address of the agent <b>SHALL</b> be recorded in an participant/participantRole/addr element when known</li>
+<li>The telephone number or other electronic communications address for the agent <b>SHALL</b> be recorded in a participant/participantRole/telecom element when known</li>
+<li>The name of the agent who can provide a copy of the Advance Directive <b>SHALL</b> be recorded in the &lt;name&gt; element inside the participant/participantRole/playingEntity element</li>
+</ol>
+<ol id="aggregate">
+<li><b>SHALL</b> conform to <xref format="html" href="PLUGINS_ROOT/org.openhealthtools.mdht.uml.cda.ihe.doc/classes/SimpleObservation.html">IHE Simple Observation</xref> template (templateId: <tt>1.3.6.1.4.1.19376.1.5.3.1.4.13</tt>)</li>
+<li><b>SHALL</b> conform to <xref format="html" href="PLUGINS_ROOT/org.openhealthtools.mdht.uml.cda.ccd.doc/classes/AdvanceDirectiveObservation.html">CCD Advance Directive Observation</xref> template (templateId: <tt>2.16.840.1.113883.10.20.1.17</tt>)</li>
+<li><b>SHALL</b> conform to <xref format="html" href="PLUGINS_ROOT/org.openhealthtools.mdht.uml.cda.ihe.doc/classes/AdvanceDirectiveObservation.html">IHE Advance Directive Observation</xref> template (templateId: <tt>1.3.6.1.4.1.19376.1.5.3.1.4.13.7</tt>)</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="OBS" </tt><i>Observation</i> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>) (CONF-83)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF-84)
+</li>
+<li><b>SHALL</b> contain at least one [1..*] <tt><b>id</b></tt> (CONF-85)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>statusCode</b></tt><tt><b>/@code</b>="completed" </tt> (CodeSystem:<tt> 2.16.840.1.113883.5.14 ActStatus</tt>) (CONF-86, CONF-87)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt>, where the @code <b>SHALL</b> be selected from ValueSet<tt> Advance Directive Type 2.16.840.1.113883.1.11.20.2</tt><b> STATIC</b> 1
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>effectiveTime</b></tt>
+</li>
+<li><b>SHALL</b> contain  [0..0] <tt><b>repeatNumber</b></tt>
+</li>
+<li>Contains zero or more [0..*] <tt><b>value</b></tt> with data type BL
+<ul><li><p><lines><i>The advance directive observation may include a <value> element using the Boolean (xsi:type='BL') data type to indicate simply whether the procedure described is permitted. Absence of the the <value> element indicates that an advance directive of the specified type has been recorded, and must be examined to determine what type of treatment should be performed. The value element is not permitted when the <code> element describes an Other directive</i></lines></p></li></ul></li>
+<li><b>SHALL</b> contain  [0..0] <tt><b>interpretationCode</b></tt>
+</li>
+<li><b>SHALL</b> contain  [0..0] <tt><b>targetSiteCode</b></tt>
+</li>
+<li><b>MAY</b> contain at least one [1..*] <tt><b>participant</b></tt> (CONF-93)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../AdvanceDirectiveVerification.dita">Advance Directive Verification</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.58</tt>)</li></ol></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entryRelationship</b></tt> (CONF-98)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../AdvanceDirectiveStatusObservation.dita">Advance Directive Status Observation</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.37</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>reference</b></tt> (CONF-102, CONF-103)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../AdvanceDirectiveReference.dita">Advance Directive Reference</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.36</tt>)</li></ol><ul><li><p><lines><i>ddddd</i></lines></p></li></ul></li>
+<li>The value for Observation / code in an advance directive observation <b>MAY</b> be selected from ValueSet 2.16.840.1.113883.1.11.20.2 AdvanceDirectiveTypeCode STATIC 20061017. (CONF-90)</li>
+<li>There <b>SHOULD</b> be an advance directive observation whose value for Observation / code is '304251008' 'Resuscitation status' 2.16.840.1.113883.6.96 SNOMED CT STATIC (CONF-91)</li>
+<li><b>SHALL</b> satisfy: Contains one or more sources of information (CONF-97)</li>
+<li><b>MAY</b> satisfy: The advanced directive observation may contain a single reference to an external document. The reference may be recorded using CCD :: Advance Directive Reference (2.16.840.1.113883.10.20.1.36)</li>
+<li><b>SHALL NOT</b> contain any &lt;repeatNumber&gt;, &lt;interpretationCode&gt;, &lt;methodCode&gt; or &lt;targetSiteCode&gt; elements</li>
+<li>The human readable description of the type of Advance Directive <b>SHALL</b> appear in the narrative text and <b>SHALL</b> be pointed to by the value attribute of the &lt;reference&gt; element inside the &lt;originalText&gt; element of the &lt;code&gt;</li>
+<li>The starting time of the Advance Directive <b>SHALL</b> be recorded in the &lt;low&gt; element of the &lt;effectiveTime&gt; element in the Advance Directive &lt;observation&gt;</li>
+<li>If the starting time is unknown, the &lt;low&gt; element <b>SHALL</b> have the nullFlavor attribute set to UNK</li>
+<li>The ending time of the Advance Directive <b>SHALL</b> be recorded in the &lt;high&gt; element of the &lt;effectiveTime&gt; element in the Advance Directive &lt;observation&gt;</li>
+<li>If the ending time is unknown, the &lt;high&gt; element <b>SHALL</b> have the nullFlavor attribute set to UNK.</li>
+<li>If the Advance Directive does not have a specified ending time, the &lt;high&gt; element <b>SHALL</b> have the nullFlavor attribute set to NA</li>
+<li>Information required to obtain a copy of the Advance Directive <b>SHALL</b> be recorded in a &lt;participantRole&gt; element within a &lt;participant&gt; element of the Advance Directive &lt;observation&gt;</li>
+<li>The typeCode attribute of the participant element <b>SHALL</b> be CST</li>
+<li>The classCode of the participant/participantRole element <b>SHALL</b> be AGNT</li>
+<li>The address of the agent <b>SHALL</b> be recorded in an participant/participantRole/addr element when known</li>
+<li>The telephone number or other electronic communications address for the agent <b>SHALL</b> be recorded in a participant/participantRole/telecom element when known</li>
+<li>The name of the agent who can provide a copy of the Advance Directive <b>SHALL</b> be recorded in the &lt;name&gt; element inside the participant/participantRole/playingEntity element</li>
+</ol>
+<section id="tableconformance"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="8" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><colspec colname="col2" colnum="2" /><colspec colname="col3" colnum="3" /><colspec colname="col4" colnum="4" /><colspec colname="col5" colnum="5" /><colspec colname="col6" colnum="6" /><colspec colname="col7" colnum="7" /><thead> <row><entry namest="col0" nameend="col7" >hitsp::AdvanceDirective</entry>  </row>  <row><entry namest="col0" nameend="col7" >cda::observation[cda:templateId/@root = ]/</entry>  </row>  <row><entry>Name</entry><entry>XPath</entry><entry>Cardinality</entry><entry>Severity</entry><entry>Nullable</entry><entry>Data Type</entry><entry>Conformance</entry><entry>Value(s)</entry></row></thead><tbody><row><entry>code</entry><entry>code</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>CD</entry><entry></entry><entry>SNOMEDCT 2.16.840.1.113883.6.96 </entry></row> 
+<row><entry>effectiveTime</entry><entry>effectiveTime</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>IVL_TS</entry><entry></entry><entry> </entry></row> 
+<row><entry>advanceDirective</entry><entry>advanceDirective</entry><entry>1..*</entry><entry>SHALL</entry><entry>YES</entry><entry>AdvanceDirective</entry><entry></entry><entry> </entry></row> 
+</tbody></tgroup></table></p></section>
+<codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<observation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd">
+  <id root="MDHT" extension="2045270487"/>
+  <code code="1002701360"/>
+  <effectiveTime>
+    <low value="2012"/>
+    <high value="2012"/>
+  </effectiveTime>
+  <repeatNumber value="1"/>
+  <interpretationCode code="814307034"/>
+  <targetSiteCode code="28700770"/>
+</observation>]]></codeblock>
+<section id="changes">
+</section>
+<p><ph id="classformalname">Advance Directive</ph></p>
+<p id="shortdesc">[Observation: templateId <tt>2.16.840.1.113883.3.88.11.83.12</tt>]</p>
+</body>
+</topic>

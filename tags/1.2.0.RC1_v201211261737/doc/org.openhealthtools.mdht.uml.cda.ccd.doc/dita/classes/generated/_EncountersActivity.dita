@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Encounters Activity - conformance rules</title>
+<shortdesc id="shortdesc">[Encounter: templateId <tt>2.16.840.1.113883.10.20.1.21</tt>]</shortdesc>
+<prolog id="prolog">
+<metadata><category>Encounter</category></metadata>
+<resourceid id="2.16.840.1.113883.10.20.1.21"/>
+</prolog>
+<body>
+<section id="knownSubclasses">
+</section>
+<section id="description">
+</section>
+<ol id="conformance">
+<li><b>SHALL</b> contain exactly one [1..1] templateId (  ) such that it <ol><li><b>SHALL</b> contain exactly one [1..1] <b>@root</b>="2.16.840.1.113883.10.20.1.21"</li></ol></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="ENC" </tt> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>) (CONF-459)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF-460)
+</li>
+<li><b>SHALL</b> contain at least one [1..*] <tt><b>id</b></tt> (CONF-461)
+</li>
+<li><b>SHOULD</b> contain exactly one [1..1] <tt><b>code</b></tt>, where the @code <b>SHOULD</b> be selected from ValueSet<tt> EncounterCode 2.16.840.1.113883.1.11.13955</tt><b> STATIC</b> (CONF-462, CONF-463)
+</li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>effectiveTime</b></tt> (CONF-464)
+</li>
+<li><b>MAY</b> contain zero or more [0..*] <tt><b>entryRelationship</b></tt>
+<ol>
+<li>Contains exactly one [1..1] <xref href="../PatientInstruction.dita">Patient Instruction</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.49</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt>
+<ol>
+<li>Contains <tt><b>@typeCode="</b>SUBJ" </tt><i>SUBJ</i></li>
+<li>Contains exactly one [1..1] <xref href="../AgeObservation.dita">Age Observation</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.38</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or more [0..*] <tt><b>participant</b></tt> (CONF-471)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../EncounterLocation.dita">Encounter Location</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.45</tt>)</li></ol></li>
+<li><b>MAY</b> contain one or more [1..*] entryRelationship with @typecode='RSON' where target represents the indication for the activity</li>
+<li><b>MAY</b> contain zero or more [0..*] performer, used to define the practioners involved in an encounter</li>
+<li><b>MAY</b> contain one [0..1] performer / assignedEntity / code, to define the role of the practioner</li>
+<li><b>SHALL</b> contain one or more sources of information (CONF-470)</li>
+</ol>
+<ol id="aggregate">
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="ENC" </tt> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>) (CONF-459)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF-460)
+</li>
+<li><b>SHALL</b> contain at least one [1..*] <tt><b>id</b></tt> (CONF-461)
+</li>
+<li><b>SHOULD</b> contain exactly one [1..1] <tt><b>code</b></tt>, where the @code <b>SHOULD</b> be selected from ValueSet<tt> EncounterCode 2.16.840.1.113883.1.11.13955</tt><b> STATIC</b> (CONF-462, CONF-463)
+</li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>effectiveTime</b></tt> (CONF-464)
+</li>
+<li><b>MAY</b> contain zero or more [0..*] <tt><b>entryRelationship</b></tt>
+<ol>
+<li>Contains exactly one [1..1] <xref href="../PatientInstruction.dita">Patient Instruction</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.49</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt>
+<ol>
+<li>Contains <tt><b>@typeCode="</b>SUBJ" </tt><i>SUBJ</i></li>
+<li>Contains exactly one [1..1] <xref href="../AgeObservation.dita">Age Observation</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.38</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or more [0..*] <tt><b>participant</b></tt> (CONF-471)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../EncounterLocation.dita">Encounter Location</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.45</tt>)</li></ol></li>
+<li><b>MAY</b> contain one or more [1..*] entryRelationship with @typecode='RSON' where target represents the indication for the activity</li>
+<li><b>MAY</b> contain zero or more [0..*] performer, used to define the practioners involved in an encounter</li>
+<li><b>MAY</b> contain one [0..1] performer / assignedEntity / code, to define the role of the practioner</li>
+<li><b>SHALL</b> contain one or more sources of information (CONF-470)</li>
+</ol>
+<section id="tableconformance"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="8" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><colspec colname="col2" colnum="2" /><colspec colname="col3" colnum="3" /><colspec colname="col4" colnum="4" /><colspec colname="col5" colnum="5" /><colspec colname="col6" colnum="6" /><colspec colname="col7" colnum="7" /><thead> <row><entry namest="col0" nameend="col7" >ccd::EncountersActivity</entry>  </row>  <row><entry namest="col0" nameend="col7" >cda::encounter[cda:templateId/@root = ]/</entry>  </row>  <row><entry>Name</entry><entry>XPath</entry><entry>Cardinality</entry><entry>Severity</entry><entry>Nullable</entry><entry>Data Type</entry><entry>Conformance</entry><entry>Value(s)</entry></row></thead><tbody><row><entry>classCode</entry><entry>@classCode</entry><entry>1..1</entry><entry>SHALL</entry><entry>NO</entry><entry>ActClass</entry><entry>CONF-459</entry><entry> ACCM</entry></row> 
+<row><entry>moodCode</entry><entry>@moodCode</entry><entry>1..1</entry><entry>SHALL</entry><entry>NO</entry><entry>ActMood</entry><entry>CONF-460</entry><entry> APT</entry></row> 
+<row><entry>code</entry><entry>code</entry><entry>1..1</entry><entry>SHOULD</entry><entry>YES</entry><entry>CD</entry><entry>CONF-462CONF-463</entry><entry> </entry></row> 
+<row><entry>effectiveTime</entry><entry>effectiveTime</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>IVL_TS</entry><entry>CONF-464</entry><entry> </entry></row> 
+<row><entry>id</entry><entry>id</entry><entry>1..*</entry><entry>SHALL</entry><entry>YES</entry><entry>II</entry><entry>CONF-461</entry><entry> </entry></row> 
+<row><entry>ageObservation</entry><entry>ageObservation</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>AgeObservation</entry><entry></entry><entry> </entry></row> 
+<row><entry>encounterLocation</entry><entry>encounterLocation</entry><entry>0..*</entry><entry>MAY</entry><entry>YES</entry><entry>EncounterLocation</entry><entry>CONF-471</entry><entry> </entry></row> 
+<row><entry>encountersActivity</entry><entry>encountersActivity</entry><entry>1..*</entry><entry>SHOULD</entry><entry>YES</entry><entry>EncountersActivity</entry><entry></entry><entry> </entry></row> 
+<row><entry>patientInstruction</entry><entry>patientInstruction</entry><entry>0..*</entry><entry>MAY</entry><entry>YES</entry><entry>PatientInstruction</entry><entry></entry><entry> </entry></row> 
+</tbody></tgroup></table></p></section>
+<codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<encounter xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd">
+  <id root="MDHT" extension="36940118"/>
+  <effectiveTime>
+    <low value="2012"/>
+    <high value="2012"/>
+  </effectiveTime>
+  <participant>
+    <participantRole/>
+  </participant>
+  <entryRelationship>
+    <act>
+      <id root="MDHT" extension="1985019033"/>
+      <code code="2038079608"/>
+      <effectiveTime>
+        <low value="2012"/>
+        <high value="2012"/>
+      </effectiveTime>
+    </act>
+  </entryRelationship>
+  <entryRelationship>
+    <observation>
+      <id root="MDHT" extension="1055756850"/>
+      <code code="1862110997"/>
+      <effectiveTime>
+        <low value="2012"/>
+        <high value="2012"/>
+      </effectiveTime>
+    </observation>
+  </entryRelationship>
+</encounter>]]></codeblock>
+<section id="changes">
+</section>
+<p><ph id="classformalname">Encounters Activity</ph></p>
+<p id="shortdesc">[Encounter: templateId <tt>2.16.840.1.113883.10.20.1.21</tt>]</p>
+</body>
+</topic>

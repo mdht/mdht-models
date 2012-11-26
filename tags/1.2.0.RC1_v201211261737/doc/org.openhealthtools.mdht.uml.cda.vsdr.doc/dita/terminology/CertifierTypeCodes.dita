@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Certifier Type Codes</title>
+<prolog id="prolog">
+<resourceid id="2.16.840.1.114222.4.11.6001"/>
+</prolog>
+<body>
+<!-- THIS IS GENERATED CONTENT, DO NOT EDIT -->
+<section id="definition">
+<table><tgroup cols="2">
+<colspec colname="col1" colwidth="1*"/>
+<colspec colname="col2" colwidth="4*"/>
+<tbody>
+<row><entry>Value Set</entry><entry>CertifierTypeCodes - 2.16.840.1.114222.4.11.6001</entry></row>
+<row><entry>Code System</entry><entry>Certifier Types - 2.16.840.1.114222.4.11.6001</entry></row>
+<row><entry>Description</entry><entry>The value set collects all the codes defined within the Certifier Types coding system.
+</entry></row>
+</tbody></tgroup></table>
+<table><tgroup cols="4">
+<colspec colname="col1" colwidth="1*"/>
+<colspec colname="col2" colwidth="2*"/>
+<colspec colname="col3" colwidth="1*"/>
+<colspec colname="col4" colwidth="3*"/>
+<thead><row>
+<entry>Concept Code</entry><entry>Concept Name</entry><entry>Code System</entry><entry>Description</entry>
+</row></thead><tbody>
+<row><entry>C</entry><entry>Coroner</entry><entry>Certifier Types</entry><entry></entry></row>
+<row><entry>CA</entry><entry>County Attorney</entry><entry>Certifier Types</entry><entry></entry></row>
+<row><entry>ME</entry><entry>Medical Examiner</entry><entry>Certifier Types</entry><entry></entry></row>
+<row><entry>NP</entry><entry>Nurse Practitioner</entry><entry>Certifier Types</entry><entry></entry></row>
+<row><entry>PHY</entry><entry>Physician</entry><entry>Certifier Types</entry><entry></entry></row>
+<row><entry>PA</entry><entry>Physician Assistant</entry><entry>Certifier Types</entry><entry></entry></row>
+</tbody></tgroup></table>
+</section>
+</body>
+</topic>

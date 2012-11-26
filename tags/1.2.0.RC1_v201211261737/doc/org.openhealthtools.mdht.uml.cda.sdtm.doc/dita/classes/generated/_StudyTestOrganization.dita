@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Study Test Organization - conformance rules</title>
+<shortdesc id="shortdesc">[Participant2: templateId <tt>2.16.840.1.113883.10.20.23.88</tt>]</shortdesc>
+<prolog id="prolog">
+<metadata><category>Participant2</category></metadata>
+<resourceid id="2.16.840.1.113883.10.20.23.88"/>
+</prolog>
+<body>
+<section id="description">
+<p>The template is used to record information on the organization performing a test or other activity within the context of the study.  Within SDTM, this is referred to as a "vendor".</p>
+</section>
+<ol id="conformance">
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@typeCode</b>="AUT" </tt> (CONF:611)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>participantRole</b></tt> (CONF:612) <ol><li> This participantRole <b>SHALL</b> contain zero or one [0..1] <tt><b>@classCode</b>="ASSIGNED" </tt> (CONF:613)</li><li> This participantRole <b>SHALL</b> contain zero or one [0..1] <tt><b>performer</b></tt> (CONF:614) <ol><li> This performer <b>SHALL</b> contain zero or one [0..1] <tt><b>@classCode</b>="ORG" </tt> (CONF:615)</li><li> This performer <b>SHALL</b> contain zero or one [0..1] <tt><b>@determinerCode</b>="INSTANCE" </tt> (CONF:616)</li><li> This performer <b>SHALL</b> contain exactly one [1..1] <tt><b>name</b></tt> (CONF:617)<p><i>The name of the organization ("vendor") that performed the test.  [SDTM: LBNAM, EGNAM, MBNAM, MSNAM, PCNAM],  [SEND: LBNAM, MANAM, MINAM, PCNAM, EGNAM, TSTFNAM], [Study Data Tabulation Model: -NAM]</i></p></li></ol> </li></ol>
+</li>
+</ol>
+<ol id="aggregate">
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@typeCode</b>="AUT" </tt> (CONF:611)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>participantRole</b></tt> (CONF:612) <ol><li> This participantRole <b>SHALL</b> contain zero or one [0..1] <tt><b>@classCode</b>="ASSIGNED" </tt> (CONF:613)</li><li> This participantRole <b>SHALL</b> contain zero or one [0..1] <tt><b>performer</b></tt> (CONF:614) <ol><li> This performer <b>SHALL</b> contain zero or one [0..1] <tt><b>@classCode</b>="ORG" </tt> (CONF:615)</li><li> This performer <b>SHALL</b> contain zero or one [0..1] <tt><b>@determinerCode</b>="INSTANCE" </tt> (CONF:616)</li><li> This performer <b>SHALL</b> contain exactly one [1..1] <tt><b>name</b></tt> (CONF:617)<p><i>The name of the organization ("vendor") that performed the test.  [SDTM: LBNAM, EGNAM, MBNAM, MSNAM, PCNAM],  [SEND: LBNAM, MANAM, MINAM, PCNAM, EGNAM, TSTFNAM], [Study Data Tabulation Model: -NAM]</i></p></li></ol> </li></ol>
+</li>
+</ol>
+<section id="tableconformance"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="8" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><colspec colname="col2" colnum="2" /><colspec colname="col3" colnum="3" /><colspec colname="col4" colnum="4" /><colspec colname="col5" colnum="5" /><colspec colname="col6" colnum="6" /><colspec colname="col7" colnum="7" /><thead> <row><entry namest="col0" nameend="col7" >sdtm::Study Test Organization</entry>  </row>  <row><entry namest="col0" nameend="col7" >cda::participant2[cda:templateId/@root = 2.16.840.1.113883.10.20.23.88]/</entry>  </row>  <row><entry>Name</entry><entry>XPath</entry><entry>Cardinality</entry><entry>Severity</entry><entry>Nullable</entry><entry>Data Type</entry><entry>Conformance</entry><entry>Value(s)</entry></row></thead><tbody><row><entry>contextControlCode</entry><entry>@contextControlCode</entry><entry>0..1</entry><entry></entry><entry>NO</entry><entry>ContextControl</entry><entry></entry><entry> OP</entry></row> 
+<row><entry>nullFlavor</entry><entry>@nullFlavor</entry><entry>0..1</entry><entry></entry><entry>NO</entry><entry>NullFlavor</entry><entry></entry><entry> ASKU</entry></row> 
+<row><entry>typeCode</entry><entry>@typeCode</entry><entry>1..1</entry><entry>SHALL</entry><entry>NO</entry><entry>ParticipationType</entry><entry>CONF:611</entry><entry> ADM</entry></row> 
+<row><entry>awarenessCode</entry><entry>awarenessCode</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>CE</entry><entry></entry><entry> </entry></row> 
+<row><entry>realmCode</entry><entry>realmCode</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>CS</entry><entry></entry><entry> </entry></row> 
+<row><entry>templateId</entry><entry>templateId</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>II</entry><entry></entry><entry> 2.16.840.1.113883.10.20.23.88</entry></row> 
+<row><entry>time</entry><entry>time</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>IVL_TS</entry><entry></entry><entry> </entry></row> 
+<row><entry>participantRole</entry><entry>participantRole</entry><entry>1..1</entry><entry></entry><entry>YES</entry><entry>ParticipantRole</entry><entry></entry><entry> </entry></row> 
+<row><entry>roleOfPerformer</entry><entry>roleOfPerformer</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>roleOfPerformer</entry><entry>CONF:612</entry><entry> </entry></row> 
+<row><entry>typeId</entry><entry>typeId</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>InfrastructureRootTypeId</entry><entry></entry><entry> </entry></row> 
+</tbody></tgroup></table></p></section>
+<codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<participant2 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd" typeCode="AUT">
+  <templateId root="2.16.840.1.113883.10.20.23.88"/>
+  <time>
+    <low value="2012"/>
+    <high value="2012"/>
+  </time>
+  <participantRole classCode="ASSIGNED">
+    <templateId root="null"/>
+  </participantRole>
+</participant2>]]></codeblock>
+<section id="changes">
+</section>
+<p><ph id="classformalname">Study Test Organization</ph></p>
+<p id="shortdesc">[Participant2: templateId <tt>2.16.840.1.113883.10.20.23.88</tt>]</p>
+</body>
+</topic>

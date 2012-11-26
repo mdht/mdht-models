@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN"
+ "dtd/topic.dtd">
+<topic id="topicId" xml:lang="en-us">
+	<title>Implementation Guide Scope</title>
+	<body>
+<p> The scope of this Implementation Guide, which relies on the
+ Clinical Document Architecture, is intended to allow communication of the
+ relevant information captured for a study subject during the conduct of the
+ study.  Although this specification can be used for company-to-company 
+communication, the initial intent is for communication from
+ applicant to regulatory authority. 
+</p>
+
+</body>
+</topic>

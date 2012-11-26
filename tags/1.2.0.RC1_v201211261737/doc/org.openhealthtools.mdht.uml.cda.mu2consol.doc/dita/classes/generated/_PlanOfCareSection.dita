@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Plan Of Care Section - conformance rules</title>
+<shortdesc id="shortdesc">[Section: templateId <tt>2.16.840.1.113883.10.20.22.2.10</tt>]</shortdesc>
+<prolog id="prolog">
+<metadata><category>Section</category></metadata>
+<resourceid id="2.16.840.1.113883.10.20.22.2.10"/>
+</prolog>
+<body>
+<section id="knownSubclasses">
+</section>
+<section id="description">
+<p><lines><i>INLINE</i></lines></p>
+</section>
+<ol id="conformance">
+<li><b>SHALL</b> conform to <xref format="html" href="PLUGINS_ROOT/org.openhealthtools.mdht.uml.cda.consol.doc/classes/PlanOfCareSection.html">Consol Plan Of Care Section</xref> template (templateId: <tt>2.16.840.1.113883.10.20.22.2.10</tt>)</li>
+<li>Contains zero or more [0..*] <tt><b>entry</b></tt>
+<ol>
+<li>Contains exactly one [1..1] <xref format="html" href="PLUGINS_ROOT/org.openhealthtools.mdht.uml.cda.consol.doc/classes/PlanOfCareActivityAct.html">Consol Plan Of Care Activity Act</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.39</tt>)</li></ol></li>
+<li>Contains zero or more [0..*] <tt><b>entry</b></tt>
+<ol>
+<li>Contains exactly one [1..1] <xref format="html" href="PLUGINS_ROOT/org.openhealthtools.mdht.uml.cda.consol.doc/classes/PlanOfCareActivityEncounter.html">Consol Plan Of Care Activity Encounter</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.40</tt>)</li></ol></li>
+<li><b>SHALL</b> contain at least one [1..*] <tt><b>entry</b></tt>
+<ol>
+<li>Contains exactly one [1..1] <xref format="html" href="PLUGINS_ROOT/org.openhealthtools.mdht.uml.cda.consol.doc/classes/PlanOfCareActivityObservation.html">Consol Plan Of Care Activity Observation</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.44</tt>)</li></ol></li>
+<li><b>SHALL</b> contain one of Plan of Care Activity Act (2.16.840.1.113883.10.20.22.4.39) or  Plan of Care Activity Encounter  (2.16.840.1.113883.10.20.22.4.40) or Plan of Care Activity Observation (2.16.840.1.113883.10.20.22.4.44)</li>
+</ol>
+<ol id="aggregate">
+<li><b>SHALL</b> conform to <xref format="html" href="PLUGINS_ROOT/org.openhealthtools.mdht.uml.cda.consol.doc/classes/PlanOfCareSection.html">Consol Plan Of Care Section</xref> template (templateId: <tt>2.16.840.1.113883.10.20.22.2.10</tt>)</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:14749)<tt><b>/@code</b>="18776-5" </tt><i>Treatment plan</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:14750)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>title</b></tt> (CONF:16986)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt> (CONF:7725)
+</li>
+<li><b>MAY</b> contain zero or more [0..*] <tt><b>entry</b></tt> (CONF:7726.CONF:8804)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../PlanOfCareActivityAct.dita">Plan Of Care Activity Act</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.39</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or more [0..*] <tt><b>entry</b></tt> (CONF:8805, CONF:8806)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../PlanOfCareActivityEncounter.dita">Plan Of Care Activity Encounter</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.40</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or more [0..*] <tt><b>entry</b></tt> (CONF:8808, CONF:8807)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../PlanOfCareActivityObservation.dita">Plan Of Care Activity Observation</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.44</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or more [0..*] <tt><b>entry</b></tt> (CONF:8809, CONF:8810)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../PlanOfCareActivityProcedure.dita">Plan Of Care Activity Procedure</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.41</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or more [0..*] <tt><b>entry</b></tt> (CONF:8811, CONF:8812)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../PlanOfCareActivitySubstanceAdministration.dita">Plan Of Care Activity Substance Administration</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.42</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or more [0..*] <tt><b>entry</b></tt> (CONF:8813, CONF:14756)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../PlanOfCareActivitySupply.dita">Plan Of Care Activity Supply</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.43</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or more [0..*] <tt><b>entry</b></tt> (CONF:14695, CONF:16751)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../Instructions.dita">Instructions</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.20</tt>)</li></ol></li>
+<li>Contains zero or more [0..*] <tt><b>entry</b></tt>
+<ol>
+<li>Contains exactly one [1..1] <xref format="html" href="PLUGINS_ROOT/org.openhealthtools.mdht.uml.cda.consol.doc/classes/PlanOfCareActivityAct.html">Consol Plan Of Care Activity Act</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.39</tt>)</li></ol></li>
+<li>Contains zero or more [0..*] <tt><b>entry</b></tt>
+<ol>
+<li>Contains exactly one [1..1] <xref format="html" href="PLUGINS_ROOT/org.openhealthtools.mdht.uml.cda.consol.doc/classes/PlanOfCareActivityEncounter.html">Consol Plan Of Care Activity Encounter</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.40</tt>)</li></ol></li>
+<li><b>SHALL</b> contain at least one [1..*] <tt><b>entry</b></tt>
+<ol>
+<li>Contains exactly one [1..1] <xref format="html" href="PLUGINS_ROOT/org.openhealthtools.mdht.uml.cda.consol.doc/classes/PlanOfCareActivityObservation.html">Consol Plan Of Care Activity Observation</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.44</tt>)</li></ol></li>
+<li><b>SHALL</b> contain one of Plan of Care Activity Act (2.16.840.1.113883.10.20.22.4.39) or  Plan of Care Activity Encounter  (2.16.840.1.113883.10.20.22.4.40) or Plan of Care Activity Observation (2.16.840.1.113883.10.20.22.4.44)</li>
+</ol>
+<section id="tableconformance"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="8" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><colspec colname="col2" colnum="2" /><colspec colname="col3" colnum="3" /><colspec colname="col4" colnum="4" /><colspec colname="col5" colnum="5" /><colspec colname="col6" colnum="6" /><colspec colname="col7" colnum="7" /><thead> <row><entry namest="col0" nameend="col7" >mu2consol::PlanOfCareSection</entry>  </row>  <row><entry namest="col0" nameend="col7" >/cda:ClinicalDocument/cda:component/cda:structuredBody/cda:component/cda:section[cda:templateId/@root = 2.16.840.1.113883.10.20.22.2.10]/</entry>  </row>  <row><entry>Name</entry><entry>XPath</entry><entry>Cardinality</entry><entry>Severity</entry><entry>Nullable</entry><entry>Data Type</entry><entry>Conformance</entry><entry>Value(s)</entry></row></thead><tbody><row><entry>planOfCareActivityAct</entry><entry>cda:entry/cda:act[cda:templateId/@root = 2.16.840.1.113883.10.20.22.4.39]</entry><entry>0..*</entry><entry>MAY</entry><entry>YES</entry><entry>PlanOfCareActivityAct</entry><entry>CONF:7726.CONF:8804</entry><entry> </entry></row> 
+<row><entry>planOfCareActivityEncounter</entry><entry>cda:entry/cda:encounter[cda:templateId/@root = 2.16.840.1.113883.10.20.22.4.40]</entry><entry>0..*</entry><entry>MAY</entry><entry>YES</entry><entry>PlanOfCareActivityEncounter</entry><entry>CONF:8805CONF:8806</entry><entry> </entry></row> 
+<row><entry>planOfCareActivityObservation</entry><entry>cda:entry/cda:observation[cda:templateId/@root = 2.16.840.1.113883.10.20.22.4.44]</entry><entry>1..*</entry><entry>SHALL</entry><entry>YES</entry><entry>PlanOfCareActivityObservation</entry><entry></entry><entry> </entry></row> 
+<row><entry>planOfCareSection</entry><entry>planOfCareSection</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>PlanOfCareSection</entry><entry></entry><entry> </entry></row> 
+</tbody></tgroup></table></p></section>
+<codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<section xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd">
+  <templateId root="2.16.840.1.113883.10.20.22.2.10"/>
+  <templateId root="2.16.840.1.113883.10.20.22.2.10"/>
+  <id root="MDHT" extension="672397649"/>
+  <code code="18776-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Treatment plan"/>
+  <title>TEXT FOR TITLE</title>
+  <text/>
+  <entry>
+    <act/>
+  </entry>
+  <entry>
+    <encounter/>
+  </entry>
+  <entry>
+    <observation/>
+  </entry>
+</section>]]></codeblock>
+<section id="changes">
+</section>
+<p><ph id="classformalname">Plan Of Care Section</ph></p>
+<p id="shortdesc">[Section: templateId <tt>2.16.840.1.113883.10.20.22.2.10</tt>]</p>
+</body>
+</topic>

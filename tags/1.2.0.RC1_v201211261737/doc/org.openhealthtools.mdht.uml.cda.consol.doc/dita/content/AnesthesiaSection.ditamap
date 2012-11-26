@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<map>
+	<title>Anesthesia Section</title>
+	<topicref href="../classes/AnesthesiaSection.dita" type="topic" >
+		<topicref href="../classes/AnesthesiaSectionTable.dita" type="topic" />
+		<topicref href="../classes/AnesthesiaSectionSample.dita" type="topic" />	
+	</topicref>
+</map>
+

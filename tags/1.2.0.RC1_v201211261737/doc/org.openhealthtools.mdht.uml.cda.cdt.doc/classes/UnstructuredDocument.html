@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="en-us" lang="en-us">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="copyright" content="(C) Copyright 2005"/>
+<meta name="DC.rights.owner" content="(C) Copyright 2005"/>
+<meta name="DC.Type" content="topic"/>
+<meta name="DC.Title" content="Unstructured Document"/>
+<meta name="abstract" content="[ClinicalDocument: templateId 2.16.840.1.113883.10.20.19.1]"/>
+<meta name="description" content="[ClinicalDocument: templateId 2.16.840.1.113883.10.20.19.1]"/>
+<meta name="DC.Coverage" content="ClinicalDocument"/>
+<meta name="DC.Relation" scheme="URI" content="../content/DocumentTemplates.html"/>
+<meta name="DC.Format" content="XHTML"/>
+<meta name="DC.Identifier" content="classId"/>
+<meta name="DC.Language" content="en-us"/>
+<link rel="stylesheet" type="text/css" href="../css/commonltr.css"/>
+<title>Unstructured Document</title>
+</head>
+<body id="classId">
+<div>
+	<p><b>Non-Normative Content</b> The Normative content for these specifications
+	may be found on the HL7, IHE, and HITSP web sites.</p>
+</div>
+
+<h1 class="title topictitle1">Unstructured Document</h1>
+
+
+
+<div class="body"><p class="shortdesc">[ClinicalDocument: templateId <tt class="ph tt">2.16.840.1.113883.10.20.19.1</tt>]</p>
+
+
+<div class="section">
+<p class="p">This document type is not intended to be a replacement for IHE's XDS-SD (Cross-Transaction Specifications and Content Specifications, Scanned Documents Module) profile. Rather, it serves a more generic use case. XDS-SD is specifically for scanned documents, and limits content to PDF-A or text. This Unstructured Documents implementation guide is applicable not only for scanned documents in non-PDF formats, but also for clinical documents produced through word processing applications, etc.</p>
+
+</div>
+
+
+
+<ol class="ol">
+<li class="li"><strong class="ph b">SHALL</strong> conform to <a class="xref" href="GeneralHeaderConstraints.html" title="[ClinicalDocument: templateId 2.16.840.1.113883.10.20.3]">General Header Constraints</a> template (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.3</tt>)</li>
+
+<li class="li">Contains exactly one [1..1] <tt class="ph tt"><strong class="ph b">confidentialityCode</strong></tt>
+<ul class="ul"><li class="li">If the confidentialityCode cannot be determined for an Unstructured Document instance, the HL7 code "N" (normal confidentiality) is recommended.</li>
+</ul>
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">effectiveTime</strong></tt> (CONF-UD-11)
+<ul class="ul"><li class="li">The effectiveTime records the time of creation of the original document. If the referenced document is a scan, the date of scan can be recorded in dataEnterer. If the date of creation of the original document is not known, CDA allows the document effectiveTime to have a  nullFlavor.</li>
+</ul>
+</li>
+
+<li class="li">Contains at least one [1..*] <tt class="ph tt"><strong class="ph b">author</strong></tt>, such that
+<ul class="ul"><li class="li">The author represents the person who created the original document. If the referenced document is a scan, the person who did the scan must be recorded in dataEnterer. If address and telecom are not known, they can be represented with nullFlavors.</li>
+</ul>
+<ol class="ol" type="a">
+<li class="li">An assignedAuthor element contains an addr element. If addr is unknown it <strong class="ph b">SHALL</strong> be represented using the appropriate flavor of null. (CONF-UD-25)<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: not author.assignedAuthor.addr-&gt;isEmpty()</pre>
+</li>
+</ul>
+</li>
+
+<li class="li">An assignedAuthor element contains a telecom element. If telecom is unknown it <strong class="ph b">SHALL</strong> be represented using the appropriate flavor of null. (CONF-UD-26)<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: not author.assignedAuthor.telecom-&gt;isEmpty()</pre>
+</li>
+</ul>
+</li>
+</ol>
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">custodian</strong></tt> (CONF-UD-27), such that
+<ol class="ol" type="a">
+<li class="li">The custodian element <strong class="ph b">SHALL</strong> contain an assignedCustodian/representedCustodianOrganization element. (CONF-UD-28)<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: not custodian.assignedCustodian.representedCustodianOrganization.oclIsUndefined()</pre>
+</li>
+</ul>
+</li>
+
+<li class="li">A representedCustodianOrganization element <strong class="ph b">SHALL</strong> contain an id element. (CONF-UD-29)<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: not custodian.assignedCustodian.representedCustodianOrganization.id-&gt;isEmpty()</pre>
+</li>
+</ul>
+</li>
+
+<li class="li">A representedCustodianOrganization element <strong class="ph b">SHALL</strong> contain a name element. (CONF-UD-30)<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: not custodian.assignedCustodian.representedCustodianOrganization.name.oclIsUndefined()</pre>
+</li>
+</ul>
+</li>
+
+<li class="li">A representedCustodianOrganization element <strong class="ph b">SHALL</strong> contain a telecom element. (CONF-UD-31)<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: not custodian.assignedCustodian.representedCustodianOrganization.telecom.oclIsUndefined()</pre>
+</li>
+</ul>
+</li>
+
+<li class="li">A representedCustodianOrganization element <strong class="ph b">SHALL</strong> contain an addr element. (CONF-UD-32)<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: not custodian.assignedCustodian.representedCustodianOrganization.addr.oclIsUndefined()</pre>
+</li>
+</ul>
+</li>
+</ol>
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> satisfy: A patientRole element contains an id element. (CONF-UD-17)<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: not recordTarget.patientRole.id-&gt;isEmpty()</pre>
+</li>
+</ul>
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> satisfy: Contains component/nonXMLBody/text element. (CONF-UD-34)<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: not self.component.nonXMLBody.text.oclIsUndefined()</pre>
+</li>
+</ul>
+</li>
+
+<li class="li">The text element <strong class="ph b">SHALL</strong> either contain a reference element with a value attribute, or have a representation attribute with the value of B64, a mediaType attribute, and contain the media content (CONF-UD-35)<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: (not self.component.nonXMLBody.text.reference.oclIsUndefined() and self.component.nonXMLBody.text.reference.isDefined('value')) or (self.component.nonXMLBody.text.representation = datatypes::BinaryDataEncoding::B64 and self.component.nonXMLBody.text.isDefined('mediaType') and self.component.nonXMLBody.text.getText().size() &gt; 0)</pre>
+</li>
+</ul>
+</li>
+
+<li class="li">The value of @mediaType <strong class="ph b">SHALL</strong> be drawn from the value set 2.16.840.1.113883.11.20.7.1 SupportedFileFormats STATIC 20100512 (CONF-UD-36)<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: self.component.nonXMLBody.text.isDefined('mediaType') implies (self.component.nonXMLBody.text.mediaType = 'application/msword' or self.component.nonXMLBody.text.mediaType = 'application/pdf' or self.component.nonXMLBody.text.mediaType = 'text/plain' or self.component.nonXMLBody.text.mediaType = 'text/rtf' or self.component.nonXMLBody.text.mediaType = 'text/html' or self.component.nonXMLBody.text.mediaType = 'image/gif' or self.component.nonXMLBody.text.mediaType = 'image/tiff' or self.component.nonXMLBody.text.mediaType = 'image/jpeg' or self.component.nonXMLBody.text.mediaType = 'image/png')</pre>
+</li>
+</ul>
+</li>
+
+</ol>
+
+
+<p class="p"> </p>
+
+
+<p class="p"> </p>
+
+<p class="p"> </p>
+
+<p class="p"><strong class="ph b">Unstructured Document example</strong></p>
+
+
+
+<pre class="pre codeblock">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;ClinicalDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd"&gt;
+  &lt;realmCode code="US"/&gt;
+  &lt;typeId root="2.16.840.1.113883.1.3"/&gt;
+  &lt;templateId root="2.16.840.1.113883.10.20.3"/&gt;
+  &lt;templateId root="2.16.840.1.113883.10.20.19.1"/&gt;
+  &lt;id root="133386236"/&gt;
+  &lt;code code="Value"/&gt;
+  &lt;title/&gt;
+  &lt;effectiveTime/&gt;
+  &lt;confidentialityCode code="Value"/&gt;
+  &lt;languageCode/&gt;
+  &lt;recordTarget&gt;
+    &lt;realmCode/&gt;
+    &lt;typeId root="2.16.840.1.113883.1.3"/&gt;
+    &lt;patientRole/&gt;
+  &lt;/recordTarget&gt;
+  &lt;author&gt;
+    &lt;realmCode/&gt;
+    &lt;typeId root="2.16.840.1.113883.1.3"/&gt;
+    &lt;time/&gt;
+    &lt;assignedAuthor/&gt;
+  &lt;/author&gt;
+  &lt;custodian/&gt;
+  &lt;component/&gt;
+&lt;/ClinicalDocument&gt;</pre>
+
+</div>
+
+<div class="related-links">
+<div class="familylinks">
+<div class="parentlink"><strong>Parent topic:</strong> <a class="link" href="../content/DocumentTemplates.html">DOCUMENT TEMPLATES</a></div>
+</div>
+</div>
+
+</body>
+</html>

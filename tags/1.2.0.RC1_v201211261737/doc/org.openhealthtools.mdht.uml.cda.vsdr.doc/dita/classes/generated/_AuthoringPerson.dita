@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Authoring Person - conformance rules</title>
+<shortdesc id="shortdesc">[Person: templateId <tt>null</tt>]</shortdesc>
+<prolog id="prolog">
+<metadata><category>Person</category></metadata>
+<resourceid id="null"/>
+</prolog>
+<body>
+<section id="description">
+<p>INLINE</p>
+</section>
+<ol id="conformance">
+<li><b>SHALL</b> contain zero or one [0..1] <tt><b>@classCode</b>="PSN" </tt>
+</li>
+<li><b>SHALL</b> contain zero or one [0..1] <tt><b>@determinerCode</b>="INSTANCE" </tt>
+</li>
+<li><b>SHALL</b> contain zero or more [0..*] <tt><b>name</b></tt>
+<ul><li>Provide the name of the clinician authoring the report.</li></ul></li>
+</ol>
+<ol id="aggregate">
+<li><b>SHALL</b> contain zero or one [0..1] <tt><b>@classCode</b>="PSN" </tt>
+</li>
+<li><b>SHALL</b> contain zero or one [0..1] <tt><b>@determinerCode</b>="INSTANCE" </tt>
+</li>
+<li><b>SHALL</b> contain zero or more [0..*] <tt><b>name</b></tt>
+<ul><li>Provide the name of the clinician authoring the report.</li></ul></li>
+</ol>
+
+<codeblock id="example"><![CDATA[]]></codeblock>
+<section id="changes">
+</section>
+<p><ph id="classformalname">Authoring Person</ph></p>
+<p id="shortdesc">[Person: templateId <tt>null</tt>]</p>
+</body>
+</topic>

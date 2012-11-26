@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN"
+ "dtd/topic.dtd">
+<topic id="topicId" xml:lang="en-us">
+	<title>Overview</title>
+	<body>
+		<p>This implementation guide provides constraints to allow implementers to develop CDA-compliant
+			documents that support a common set of information in the emergency medical services
+			(EMS) domain. </p>
+		<p>This release covers the provision of information from an EMS crew to a receiving hospital
+			or emergency department.</p>
+	</body>
+</topic>

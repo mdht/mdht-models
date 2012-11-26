@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="topic_id" xml:lang="en-us">
+  <title>Object Identifiers for US State Departments of Motor Vehicles</title>
+  <body>
+    <p>These OIDs have been assigned to US state DMVs by HL7 for the purpose of providing namespaces
+      for driver's license numbers.</p>
+    <p>
+      <table id="table_u3q_qjz_sg">
+        <tgroup cols="2">
+          <colspec colnum="1" colname="col1" colwidth="1*"/>
+          <colspec colnum="2" colname="col2" colwidth="1.94*"/>
+          <tbody>
+            <row>
+              <entry><b>OID</b></entry>
+              <entry><b>State Administrator</b></entry>
+            </row>
+            <row>
+              <entry>2.16.840.1.113883.4.3.1</entry>
+              <entry>Alabama Motor Vehicle Bureau</entry>
+            </row>
+            <row>
+              <entry>2.16.840.1.113883.4.3.2</entry>
+              <entry>Alaska Motor Vehicle Bureau</entry>
+            </row>
+            <row>
+              <entry>2.16.840.1.113883.4.3.4</entry>
+              <entry>Arizona Motor Vehicle Bureau</entry>
+            </row>
+            <row>
+              <entry>2.16.840.1.113883.4.3.5</entry>
+              <entry>Arkansas Motor Vehicle Bureau</entry>
+            </row>
+            <row>
+              <entry>2.16.840.1.113883.4.3.6</entry>
+              <entry>California Motor Vehicle Bureau</entry>
+            </row>
+            <row>
+              <entry>2.16.840.1.113883.4.3.8</entry>
+              <entry>Colorado Motor Vehicle Bureau</entry>
+            </row>
+            <row>
+              <entry>2.16.840.1.113883.4.3.9</entry>
+              <entry>Connecticut Motor Vehicle Bureau</entry>
+            </row>
+            <row>
+              <entry>2.16.840.1.113883.4.3.10</entry>
+              <entry>Delaware Motor Vehicle Bureau</entry>
+            </row>
+            <row>
+              <entry>2.16.840.1.113883.4.3.11</entry>
+              <entry>District of Columbia Motor Vehicle Bureau</entry>
+            </row>
+            <row>
+              <entry>2.16.840.1.113883.4.3.12</entry>
+              <entry>Florida Motor Vehicle Bureau</entry>
+            </row>
+            <row>
+              <entry>2.16.840.1.113883.4.3.13</entry>
+              <entry>Georgia Motor Vehicle Bureau</entry>
+            </row>
+            <row>
+              <entry>2.16.840.1.113883.4.3.15</entry>
+              <entry>Hawaii Motor Vehicle Bureau</entry>
+            </row>
+            <row>
+              <entry>2.16.840.1.113883.4.3.16</entry>
+              <entry>Idaho Motor Vehicle Bureau</entry>
+            </row>
+            <row>
+              <entry>2.16.840.1.113883.4.3.17</entry>
+              <entry>Illinois Motor Vehicle Bureau</entry>
+            </row>
+            <row>
+              <entry>2.16.840.1.113883.4.3.18</entry>
+              <entry>Indiana Bureau for Motor Vehicles (BMV)</entry>
+            </row>
+            <row>
+              <entry>2.16.840.1.113883.4.3.19</entry>
+              <entry>Iowa Motor Vehicle Bureau</entry>
+            </row>
+            <row>
+              <entry>2.16.840.1.113883.4.3.20</entry>
+              <entry>Kansas Motor Vehicle Bureau</entry>
+            </row>
+            <row>
+              <entry>2.16.840.1.113883.4.3.21</entry>
+              <entry>Kentucky Motor Vehicle Bureau</entry>
+            </row>
+            <row>
+              <entry>2.16.840.1.113883.4.3.22</entry>
+              <entry>Louisiana Motor Vehicle Bureau</entry>
+            </row>
+            <row>
+              <entry>2.16.840.1.113883.4.3.23</entry>
+              <entry>Maine Motor Vehicle Bureau</entry>
+            </row>
+            <row>
+              <entry>2.16.840.1.113883.4.3.24</entry>
+              <entry>Maryland Motor Vehicle Bureau</entry>
+            </row>
+            <row>
+              <entry>2.16.840.1.113883.4.3.25</entry>
+              <entry>Massachusetts Motor Vehicle Bureau</entry>
+            </row>
+            <row>
+              <entry>2.16.840.1.113883.4.3.26</entry>
+              <entry>Michigan Motor Vehicle Bureau</entry>
+            </row>
+            <row>
+              <entry>2.16.840.1.113883.4.3.27</entry>
+              <entry>Minnesota Motor Vehicle Bureau</entry>
+            </row>
+            <row>
+              <entry>2.16.840.1.113883.4.3.28</entry>
+              <entry>Mississippi Motor Vehicle Bureau</entry>
+            </row>
+            <row>
+              <entry>2.16.840.1.113883.4.3.29</entry>
+              <entry>Missouri Motor Vehicle Bureau</entry>
+            </row>
+            <row>
+              <entry>2.16.840.1.113883.4.3.30</entry>
+              <entry>Montana Motor Vehicle Bureau</entry>
+            </row>
+            <row>
+              <entry>2.16.840.1.113883.4.3.31</entry>
+              <entry>Nebraska Motor Vehicle Bureau</entry>
+            </row>
+            <row>
+              <entry>2.16.840.1.113883.4.3.32</entry>
+              <entry>Nevada Motor Vehicle Bureau</entry>
+            </row>
+            <row>
+              <entry>2.16.840.1.113883.4.3.33</entry>
+              <entry>New Hampshire Motor Vehicle Bureau</entry>
+            </row>
+            <row>
+              <entry>2.16.840.1.113883.4.3.34</entry>
+              <entry>New Jersey Motor Vehicle Bureau</entry>
+            </row>
+            <row>
+              <entry>2.16.840.1.113883.4.3.35</entry>
+              <entry>New Mexico Motor Vehicle Bureau</entry>
+            </row>
+            <row>
+              <entry>2.16.840.1.113883.4.3.36</entry>
+              <entry>New York Motor Vehicle Bureau</entry>
+            </row>
+            <row>
+              <entry>2.16.840.1.113883.4.3.37</entry>
+              <entry>North Carolina Motor Vehicle Bureau</entry>
+            </row>
+            <row>
+              <entry>2.16.840.1.113883.4.3.38</entry>
+              <entry>North Dakota Motor Vehicle Bureau</entry>
+            </row>
+            <row>
+              <entry>2.16.840.1.113883.4.3.39</entry>
+              <entry>Ohio Motor Vehicle Bureau</entry>
+            </row>
+            <row>
+              <entry>2.16.840.1.113883.4.3.40</entry>
+              <entry>Oklahoma Motor Vehicle Bureau</entry>
+            </row>
+            <row>
+              <entry>2.16.840.1.113883.4.3.41</entry>
+              <entry>Oregon Motor Vehicle Bureau</entry>
+            </row>
+            <row>
+              <entry>2.16.840.1.113883.4.3.42</entry>
+              <entry>Pennsylvania Motor Vehicle Bureau</entry>
+            </row>
+            <row>
+              <entry>2.16.840.1.113883.4.3.44</entry>
+              <entry>Rhode Island Motor Vehicle Bureau</entry>
+            </row>
+            <row>
+              <entry>2.16.840.1.113883.4.3.45</entry>
+              <entry>South Carolina Motor Vehicle Bureau</entry>
+            </row>
+            <row>
+              <entry>2.16.840.1.113883.4.3.46</entry>
+              <entry>South Dakota Motor Vehicle Bureau</entry>
+            </row>
+            <row>
+              <entry>2.16.840.1.113883.4.3.47</entry>
+              <entry>Tennessee Motor Vehicle Bureau</entry>
+            </row>
+            <row>
+              <entry>2.16.840.1.113883.4.3.48</entry>
+              <entry>Texas Motor Vehicle Bureau</entry>
+            </row>
+            <row>
+              <entry>2.16.840.1.113883.4.3.49</entry>
+              <entry>Utah Motor Vehicle Bureau</entry>
+            </row>
+            <row>
+              <entry>2.16.840.1.113883.4.3.50</entry>
+              <entry>Vermont Motor Vehicle Bureau</entry>
+            </row>
+            <row>
+              <entry>2.16.840.1.113883.4.3.51</entry>
+              <entry>Virginia Motor Vehicle Bureau</entry>
+            </row>
+            <row>
+              <entry>2.16.840.1.113883.4.3.53</entry>
+              <entry>Washington Motor Vehicle Bureau</entry>
+            </row>
+            <row>
+              <entry>2.16.840.1.113883.4.3.54</entry>
+              <entry>West Virginia Motor Vehicle Bureau</entry>
+            </row>
+            <row>
+              <entry>2.16.840.1.113883.4.3.55</entry>
+              <entry>Wisconsin Motor Vehicle Bureau</entry>
+            </row>
+            <row>
+              <entry>2.16.840.1.113883.4.3.56</entry>
+              <entry>Wyoming Motor Vehicle Bureau</entry>
+            </row>
+          </tbody>
+        </tgroup>
+      </table>
+    </p>
+  </body>
+</topic>

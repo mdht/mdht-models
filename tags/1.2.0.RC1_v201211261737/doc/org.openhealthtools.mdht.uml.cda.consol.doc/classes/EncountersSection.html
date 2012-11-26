@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="en-us" lang="en-us">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="copyright" content="(C) Copyright 2005"/>
+<meta name="DC.rights.owner" content="(C) Copyright 2005"/>
+<meta name="DC.Type" content="topic"/>
+<meta name="DC.Title" content="Encounters Section"/>
+<meta name="DC.Coverage" content="Section"/>
+<meta name="DC.Relation" scheme="URI" content="../classes/EncountersSectionTable.html"/>
+<meta name="DC.Relation" scheme="URI" content="../classes/EncountersSectionSample.html"/>
+<meta name="DC.Format" content="XHTML"/>
+<meta name="DC.Identifier" content="classId"/>
+<meta name="DC.Language" content="en-us"/>
+<link rel="stylesheet" type="text/css" href="../css/commonltr.css"/>
+<title>Encounters Section</title>
+</head>
+<body id="classId">
+<div>
+	<p><b>Non-Normative Content</b> The Normative content for these specifications
+	may be found on the HL7, IHE, and HITSP web sites.</p>
+</div>
+
+	<h1 class="title topictitle1"><span class="ph">Encounters Section</span></h1>
+
+					
+					
+					
+	<div class="body">		
+	
+		<div class="section">
+<div class="p"><p class="lines"><em class="ph i">This section lists and describes any healthcare encounters pertinent to the patient's current health status or historical health history. An Encounter is an interaction, regardless of the setting, between a patient and a practitioner who is vested with primary responsibility for diagnosing, evaluating, or treating the patient's condition. It may include visits, appointments, as well as non face-to-face interactions. It is also a contact between a patient and a practitioner who has primary responsibility for assessing and treating the patient at a given contact, exercising independent judgment. This section may contain all encounters for the time period being summarized, but should include notable encounters.</em></p>
+</div>
+
+</div>
+
+	
+		<div class="section">
+<div class="p"><p class="lines"><em class="ph i">This section lists and describes any healthcare encounters pertinent to the patient's current health status or historical health history. An Encounter is an interaction, regardless of the setting, between a patient and a practitioner who is vested with primary responsibility for diagnosing, evaluating, or treating the patient's condition. It may include visits, appointments, as well as non face-to-face interactions. It is also a contact between a patient and a practitioner who has primary responsibility for assessing and treating the patient at a given contact, exercising independent judgment. This section may contain all encounters for the time period being summarized, but should include notable encounters.</em></p>
+</div>
+
+</div>
+
+
+		<p class="p">
+			<strong class="ph b">Optional Entries</strong>
+		</p>
+
+		
+
+		<p class="p">[Section: templateId <tt class="ph tt">2.16.840.1.113883.10.20.22.2.22</tt>]</p>
+
+
+		<p class="p">
+			The following constraints apply to a
+			<span class="ph">Encounters Section</span>
+			in which entries are not required.
+		</p>
+
+
+
+		<ol class="ol">
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] templateId ( CONF:10386 ) such that it <ol class="ol" type="a"><li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <strong class="ph b">@root</strong>="2.16.840.1.113883.10.20.22.2.22"</li>
+</ol>
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt> (CONF:15461)<tt class="ph tt"><strong class="ph b">/@code</strong>="46240-8" </tt><em class="ph i">Encounters</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:15462)
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">title</strong></tt> (CONF:7942)
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">text</strong></tt> (CONF:7943)
+</li>
+
+<li class="li"><strong class="ph b">SHOULD</strong> contain zero or more [0..*] <tt class="ph tt"><strong class="ph b">entry</strong></tt> (CONF:7951, CONF:8802)
+<ol class="ol" type="a">
+<li class="li">Contains exactly one [1..1] <a class="xref" href="EncounterActivities.html" title="[Encounter: templateId 2.16.840.1.113883.10.20.22.4.49]">Encounter Activities</a> (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.22.4.49</tt>)</li>
+</ol>
+</li>
+
+</ol>
+
+		<p class="p">
+			<strong class="ph b">Required Entries</strong>
+		</p>
+
+		<p class="p">
+			The following constraints apply to a
+			<span class="ph">Encounters Section</span>
+			in which entries are required.
+		</p>
+
+
+		<ol class="ol">
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] templateId ( CONF:10387 ) such that it <ol class="ol" type="a"><li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <strong class="ph b">@root</strong>="2.16.840.1.113883.10.20.22.2.22.1"</li>
+</ol>
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> conform to <a class="xref" href="generated/../EncountersSectionEntriesOptional.html" title="[Section: templateId 2.16.840.1.113883.10.20.22.2.22]">Encounters Section Entries Optional</a> template (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.22.2.22</tt>)</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain at least one [1..*] <tt class="ph tt"><strong class="ph b">entry</strong></tt> (CONF:8709, CONF:8803)
+<ol class="ol" type="a">
+<li class="li">Contains exactly one [1..1] <a class="xref" href="EncounterActivities.html" title="[Encounter: templateId 2.16.840.1.113883.10.20.22.4.49]">Encounter Activities</a> (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.22.4.49</tt>)</li>
+</ol>
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt> (CONF:15466)<tt class="ph tt"><strong class="ph b">/@code</strong>="46240-8" </tt><em class="ph i">Encounters</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:15467)
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">text</strong></tt> (CONF:8708)
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">title</strong></tt> (CONF:8707)
+</li>
+
+</ol>
+
+	</div>
+
+<div class="related-links">
+<ul class="ullinks">
+<li class="link ulchildlink"><strong><a href="../classes/EncountersSectionTable.html">Encounters Section Table</a></strong><br/>
+</li>
+<li class="link ulchildlink"><strong><a href="../classes/EncountersSectionSample.html">Encounters Section Sample</a></strong><br/>
+</li>
+</ul>
+</div>
+
+</body>
+</html>

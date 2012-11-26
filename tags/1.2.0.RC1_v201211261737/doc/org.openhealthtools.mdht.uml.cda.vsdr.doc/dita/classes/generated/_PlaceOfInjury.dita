@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Place Of Injury - conformance rules</title>
+<shortdesc id="shortdesc">[Entity: templateId <tt>null</tt>]</shortdesc>
+<prolog id="prolog">
+<metadata><category>Entity</category></metadata>
+<resourceid id="null"/>
+</prolog>
+<body>
+<section id="description">
+<p>INLINE</p>
+</section>
+<ol id="conformance">
+<li><b>SHALL</b> contain zero or one [0..1] <tt><b>@classCode</b>="PLC" </tt>
+</li>
+<li>Contains zero or one [0..1] <tt><b>@determinerCode</b>="INSTANCE" </tt>
+</li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>desc</b></tt>
+<ul><li>A description of the type of place where the injury occurred. Possible entries are "at home", "farm", "factory", "office building", "restaurant".
+Required if the decedent suffered an injury leading to death.</li></ul></li>
+</ol>
+<ol id="aggregate">
+<li><b>SHALL</b> contain zero or one [0..1] <tt><b>@classCode</b>="PLC" </tt>
+</li>
+<li>Contains zero or one [0..1] <tt><b>@determinerCode</b>="INSTANCE" </tt>
+</li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>desc</b></tt>
+<ul><li>A description of the type of place where the injury occurred. Possible entries are "at home", "farm", "factory", "office building", "restaurant".
+Required if the decedent suffered an injury leading to death.</li></ul></li>
+</ol>
+
+<codeblock id="example"><![CDATA[]]></codeblock>
+<section id="changes">
+</section>
+<p><ph id="classformalname">Place Of Injury</ph></p>
+<p id="shortdesc">[Entity: templateId <tt>null</tt>]</p>
+</body>
+</topic>

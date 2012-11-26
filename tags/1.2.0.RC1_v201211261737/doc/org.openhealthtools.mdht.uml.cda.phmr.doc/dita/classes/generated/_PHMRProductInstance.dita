@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>PHMR Product Instance - conformance rules</title>
+<shortdesc id="shortdesc">[ParticipantRole: templateId <tt>2.16.840.1.113883.10.20.9.9</tt>]</shortdesc>
+<prolog id="prolog">
+<metadata><category>ParticipantRole</category></metadata>
+<resourceid id="2.16.840.1.113883.10.20.9.9"/>
+</prolog>
+<body>
+<section id="description">
+</section>
+<ol id="conformance">
+<li><b>SHALL</b> conform to <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.ccd.doc/classes/ProductInstance.html">CCD Product Instance</xref> template (templateId: <tt>2.16.840.1.113883.10.20.1.52</tt>)</li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>code</b></tt>
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>id</b></tt>
+</li>
+<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>scopingEntity</b></tt>, such that
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>playingDevice</b></tt>, such that
+</li>
+<li><b>SHALL</b> satisfy: A code elemen containing an originalText element describing the regulatory status of the device in plain text (e.g., " Regulated Device " or " Unregulated Device").</li>
+<li>A code element <b>MAY</b> be present where @nullFlavor is OTH (other).</li>
+<li>An id element <b>SHALL</b> be present where @root is OID of device numbering space and @extension is a valid device ID within that space. (e.g. @root is 1.2.840.10004.1.1.1.0.0.1.0.0.1.2680 and @extension is a valid EUI-64 device ID).</li>
+</ol>
+<ol id="aggregate">
+<li><b>SHALL</b> conform to <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.ccd.doc/classes/ProductInstance.html">CCD Product Instance</xref> template (templateId: <tt>2.16.840.1.113883.10.20.1.52</tt>)</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="MANU" </tt>
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>id</b></tt>
+</li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>code</b></tt>
+</li>
+<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>scopingEntity</b></tt>, such that
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>playingDevice</b></tt>, such that
+</li>
+<li>If participantRole in a product instance contains participantRole / id, then participantRole <b>SHOULD</b> also contain participantRole / scopingEntity. (CONF-451)<ul><li><codeblock>[OCL]: self.id-&gt;size() &gt; 0 implies self.scopingEntity-&gt;size() &gt; 0</codeblock></li></ul></li>
+<li><b>SHALL</b> satisfy: A code elemen containing an originalText element describing the regulatory status of the device in plain text (e.g., " Regulated Device " or " Unregulated Device").</li>
+<li>A code element <b>MAY</b> be present where @nullFlavor is OTH (other).</li>
+<li>An id element <b>SHALL</b> be present where @root is OID of device numbering space and @extension is a valid device ID within that space. (e.g. @root is 1.2.840.10004.1.1.1.0.0.1.0.0.1.2680 and @extension is a valid EUI-64 device ID).</li>
+</ol>
+
+<codeblock id="example"><![CDATA[]]></codeblock>
+<section id="changes">
+</section>
+<p><ph id="classformalname">PHMR Product Instance</ph></p>
+<p id="shortdesc">[ParticipantRole: templateId <tt>2.16.840.1.113883.10.20.9.9</tt>]</p>
+</body>
+</topic>

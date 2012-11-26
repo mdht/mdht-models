@@ -1,0 +1,2938 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Human Clinical Subject Data Document Sectioin - conformance rules</title>
+<shortdesc id="shortdesc">[Section: templateId <tt>2.16.840.1.113883.10.20.23.13</tt>]</shortdesc>
+<prolog id="prolog">
+<metadata><category>Section</category></metadata>
+<resourceid id="2.16.840.1.113883.10.20.23.13"/>
+</prolog>
+<body>
+<section id="description">
+<p>The document is divided into sections as defined by the user.  It is reccomended that each section contain a single type of the possible listed templates.  In the case of visit and pharmokinetic parameters, this allows for inclusion of data from other SDTM  defined data structures (domain) to be included within the section.  The user is also free to create custom sections based on the included generic templates: Study Subject Finding, Study Subject Event, Study Subject Intervention.</p>
+</section>
+<ol id="conformance">
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="DOCSECT" </tt> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>)
+</li>
+<li><b>SHALL</b> contain zero or one [0..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="TBD" </tt> (CodeSystem:<tt> 2.16.840.1.113883.3.26.1.1 NCI Thesaurus</tt>)
+<ul><li>A code to indicate the nature of the section.  This code should indicate the primary domain association for the section.</li></ul></li>
+<li><b>MAY</b> contain exactly one [1..1] <tt><b>entry</b></tt>
+<ol>
+<li>Contains exactly one [1..1] <xref href="../HumanClinicalSubjectDemographics.dita">Human Clinical Subject Demographics</xref> (templateId: <tt>2.16.840.1.113883.10.20.23.14</tt>)</li></ol></li>
+<li><b>SHOULD</b> contain zero or more [0..*] <tt><b>entry</b></tt>
+<ol>
+<li>Contains exactly one [1..1] <xref href="../Visit.dita">Visit</xref> (templateId: <tt>2.16.840.1.113883.10.20.23.18</tt>)</li></ol></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt>
+<ol>
+<li>Contains exactly one [1..1] <xref href="../StudyArm.dita">Study Arm</xref> (templateId: <tt>2.16.840.1.113883.10.20.23.68</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or more [0..*] <tt><b>entry</b></tt> <ol><li> Such entrys <b>SHALL</b> contain exactly one [1..1] <tt><b>@typeCode</b>="COMP" </tt></li><li> Such entrys <b>SHALL</b> contain exactly one [1..1] <tt><b>substanceAdministration</b></tt>, where its type is <xref href="../HumanClinicalExposure.dita">Human Clinical Exposure</xref><ol>
+<li>Contains exactly one [1..1] <xref href="../HumanClinicalExposure.dita">Human Clinical Exposure</xref> (templateId: <tt>2.16.840.1.113883.10.20.23.20</tt>)</li></ol></li></ol>
+</li>
+<li><b>SHOULD</b> contain zero or more [0..*] <tt><b>entry</b></tt>
+<ol>
+<li>Contains exactly one [1..1] <xref href="../SubjectElement.dita">Subject Element</xref> (templateId: <tt>2.16.840.1.113883.10.20.23.17</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or more [0..*] <tt><b>entry</b></tt>
+<ol>
+<li>Contains exactly one [1..1] <xref href="../SubstanceUse.dita">Substance Use</xref> (templateId: <tt>2.16.840.1.113883.10.20.23.22</tt>)</li></ol></li>
+<li><b>SHOULD</b> contain zero or more [0..*] <tt><b>entry</b></tt>
+<ol>
+<li>Contains exactly one [1..1] <xref href="../HumanClinicalDisposition.dita">Human Clinical Disposition</xref> (templateId: <tt>2.16.840.1.113883.10.20.23.24</tt>)</li></ol></li>
+<li><b>SHOULD</b> contain zero or more [0..*] <tt><b>entry</b></tt>
+<ol>
+<li>Contains exactly one [1..1] <xref href="../MedicalHistoryItem.dita">Medical History Item</xref> (templateId: <tt>2.16.840.1.113883.10.20.23.26</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or more [0..*] <tt><b>entry</b></tt>
+<ol>
+<li>Contains exactly one [1..1] <xref href="../ProtocolDeviation.dita">Protocol Deviation</xref> (templateId: <tt>2.16.840.1.113883.10.20.23.27</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or more [0..*] <tt><b>entry</b></tt>
+<ol>
+<li>Contains exactly one [1..1] <xref href="../ClinicalEvent.dita">Clinical Event</xref> (templateId: <tt>2.16.840.1.113883.10.20.23.28</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or more [0..*] <tt><b>entry</b></tt>
+<ol>
+<li>Contains exactly one [1..1] <xref href="../ECGTestResult.dita">ECG Test Result</xref> (templateId: <tt>2.16.840.1.113883.10.20.23.29</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>entry</b></tt>
+<ol>
+<li>Contains exactly one [1..1] <xref href="../SubjectCharacteristic.dita">Subject Characteristic</xref> (templateId: <tt>2.16.840.1.113883.10.20.23.35</tt>)</li></ol></li>
+<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>entry</b></tt>
+<ol>
+<li>Contains exactly one [1..1] <xref href="../PharmacokineticParameterFinding.dita">Pharmacokinetic Parameter Finding</xref> (templateId: <tt>2.16.840.1.113883.10.20.23.40</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or more [0..*] <tt><b>entry</b></tt>
+<ol>
+<li>Contains exactly one [1..1] <xref href="../StudySubjectEvent.dita">Study Subject Event</xref> (templateId: <tt>2.16.840.1.113883.10.20.23.102</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or more [0..*] <tt><b>entry</b></tt>
+<ol>
+<li>Contains exactly one [1..1] <xref href="../StudySubjectFinding.dita">Study Subject Finding</xref> (templateId: <tt>2.16.840.1.113883.10.20.23.103</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or more [0..*] <tt><b>entry</b></tt>
+<ol>
+<li>Contains exactly one [1..1] <xref href="../StudySubjectIntervention.dita">Study Subject Intervention</xref> (templateId: <tt>2.16.840.1.113883.10.20.23.101</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or more [0..*] <tt><b>entry</b></tt>
+<ol>
+<li>Contains exactly one [1..1] <xref href="../Comment.dita">Comment</xref> (templateId: <tt>2.16.840.1.113883.10.20.23.xxxx</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or more [0..*] <tt><b>entry</b></tt>
+<ol>
+<li>Contains exactly one [1..1] <xref href="../AdverseEvent.dita">Adverse Event</xref> (templateId: <tt>2.16.840.1.113883.10.20.23.23</tt>)</li></ol></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt>
+<ul><li>A text representation of the structured content within the section.</li></ul></li>
+</ol>
+<ol id="aggregate">
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="DOCSECT" </tt> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>)
+</li>
+<li><b>SHALL</b> contain zero or one [0..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="TBD" </tt> (CodeSystem:<tt> 2.16.840.1.113883.3.26.1.1 NCI Thesaurus</tt>)
+<ul><li>A code to indicate the nature of the section.  This code should indicate the primary domain association for the section.</li></ul></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt>
+<ul><li>A text representation of the structured content within the section.</li></ul></li>
+<li><b>MAY</b> contain exactly one [1..1] <tt><b>entry</b></tt>
+<ol>
+<li>Contains exactly one [1..1] <xref href="../HumanClinicalSubjectDemographics.dita">Human Clinical Subject Demographics</xref> (templateId: <tt>2.16.840.1.113883.10.20.23.14</tt>)</li></ol></li>
+<li><b>SHOULD</b> contain zero or more [0..*] <tt><b>entry</b></tt>
+<ol>
+<li>Contains exactly one [1..1] <xref href="../Visit.dita">Visit</xref> (templateId: <tt>2.16.840.1.113883.10.20.23.18</tt>)</li></ol></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt>
+<ol>
+<li>Contains exactly one [1..1] <xref href="../StudyArm.dita">Study Arm</xref> (templateId: <tt>2.16.840.1.113883.10.20.23.68</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or more [0..*] <tt><b>entry</b></tt> <ol><li> Such entrys <b>SHALL</b> contain exactly one [1..1] <tt><b>@typeCode</b>="COMP" </tt></li><li> Such entrys <b>SHALL</b> contain exactly one [1..1] <tt><b>substanceAdministration</b></tt>, where its type is <xref href="../HumanClinicalExposure.dita">Human Clinical Exposure</xref><ol>
+<li>Contains exactly one [1..1] <xref href="../HumanClinicalExposure.dita">Human Clinical Exposure</xref> (templateId: <tt>2.16.840.1.113883.10.20.23.20</tt>)</li></ol></li></ol>
+</li>
+<li><b>SHOULD</b> contain zero or more [0..*] <tt><b>entry</b></tt>
+<ol>
+<li>Contains exactly one [1..1] <xref href="../SubjectElement.dita">Subject Element</xref> (templateId: <tt>2.16.840.1.113883.10.20.23.17</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or more [0..*] <tt><b>entry</b></tt>
+<ol>
+<li>Contains exactly one [1..1] <xref href="../SubstanceUse.dita">Substance Use</xref> (templateId: <tt>2.16.840.1.113883.10.20.23.22</tt>)</li></ol></li>
+<li><b>SHOULD</b> contain zero or more [0..*] <tt><b>entry</b></tt>
+<ol>
+<li>Contains exactly one [1..1] <xref href="../HumanClinicalDisposition.dita">Human Clinical Disposition</xref> (templateId: <tt>2.16.840.1.113883.10.20.23.24</tt>)</li></ol></li>
+<li><b>SHOULD</b> contain zero or more [0..*] <tt><b>entry</b></tt>
+<ol>
+<li>Contains exactly one [1..1] <xref href="../MedicalHistoryItem.dita">Medical History Item</xref> (templateId: <tt>2.16.840.1.113883.10.20.23.26</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or more [0..*] <tt><b>entry</b></tt>
+<ol>
+<li>Contains exactly one [1..1] <xref href="../ProtocolDeviation.dita">Protocol Deviation</xref> (templateId: <tt>2.16.840.1.113883.10.20.23.27</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or more [0..*] <tt><b>entry</b></tt>
+<ol>
+<li>Contains exactly one [1..1] <xref href="../ClinicalEvent.dita">Clinical Event</xref> (templateId: <tt>2.16.840.1.113883.10.20.23.28</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or more [0..*] <tt><b>entry</b></tt>
+<ol>
+<li>Contains exactly one [1..1] <xref href="../ECGTestResult.dita">ECG Test Result</xref> (templateId: <tt>2.16.840.1.113883.10.20.23.29</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>entry</b></tt>
+<ol>
+<li>Contains exactly one [1..1] <xref href="../SubjectCharacteristic.dita">Subject Characteristic</xref> (templateId: <tt>2.16.840.1.113883.10.20.23.35</tt>)</li></ol></li>
+<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>entry</b></tt>
+<ol>
+<li>Contains exactly one [1..1] <xref href="../PharmacokineticParameterFinding.dita">Pharmacokinetic Parameter Finding</xref> (templateId: <tt>2.16.840.1.113883.10.20.23.40</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or more [0..*] <tt><b>entry</b></tt>
+<ol>
+<li>Contains exactly one [1..1] <xref href="../StudySubjectEvent.dita">Study Subject Event</xref> (templateId: <tt>2.16.840.1.113883.10.20.23.102</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or more [0..*] <tt><b>entry</b></tt>
+<ol>
+<li>Contains exactly one [1..1] <xref href="../StudySubjectFinding.dita">Study Subject Finding</xref> (templateId: <tt>2.16.840.1.113883.10.20.23.103</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or more [0..*] <tt><b>entry</b></tt>
+<ol>
+<li>Contains exactly one [1..1] <xref href="../StudySubjectIntervention.dita">Study Subject Intervention</xref> (templateId: <tt>2.16.840.1.113883.10.20.23.101</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or more [0..*] <tt><b>entry</b></tt>
+<ol>
+<li>Contains exactly one [1..1] <xref href="../Comment.dita">Comment</xref> (templateId: <tt>2.16.840.1.113883.10.20.23.xxxx</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or more [0..*] <tt><b>entry</b></tt>
+<ol>
+<li>Contains exactly one [1..1] <xref href="../AdverseEvent.dita">Adverse Event</xref> (templateId: <tt>2.16.840.1.113883.10.20.23.23</tt>)</li></ol></li>
+</ol>
+<section id="tableconformance"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="8" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><colspec colname="col2" colnum="2" /><colspec colname="col3" colnum="3" /><colspec colname="col4" colnum="4" /><colspec colname="col5" colnum="5" /><colspec colname="col6" colnum="6" /><colspec colname="col7" colnum="7" /><thead> <row><entry namest="col0" nameend="col7" >sdtm::Human Clinical Subject Data Document Sectioin</entry>  </row>  <row><entry namest="col0" nameend="col7" >/cda:ClinicalDocument/cda:component/cda:structuredBody/cda:component/cda:section[cda:templateId/@root = 2.16.840.1.113883.10.20.23.13]/</entry>  </row>  <row><entry>Name</entry><entry>XPath</entry><entry>Cardinality</entry><entry>Severity</entry><entry>Nullable</entry><entry>Data Type</entry><entry>Conformance</entry><entry>Value(s)</entry></row></thead><tbody><row><entry>classCode</entry><entry>@classCode</entry><entry>1..1</entry><entry>SHALL</entry><entry>NO</entry><entry>ActClass</entry><entry></entry><entry> DOCSECT</entry></row> 
+<row><entry>moodCode</entry><entry>@moodCode</entry><entry>0..1</entry><entry>SHALL</entry><entry>NO</entry><entry>ActMood</entry><entry></entry><entry> EVN</entry></row> 
+<row><entry>nullFlavor</entry><entry>@nullFlavor</entry><entry>0..1</entry><entry></entry><entry>NO</entry><entry>NullFlavor</entry><entry></entry><entry> ASKU</entry></row> 
+<row><entry>sectionId</entry><entry>@sectionId</entry><entry>0..1</entry><entry></entry><entry>NO</entry><entry>String</entry><entry></entry><entry> </entry></row> 
+<row><entry>code</entry><entry>code</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>CE</entry><entry></entry><entry>NCI Thesaurus 2.16.840.1.113883.3.26.1.1 TBD</entry></row> 
+<row><entry>confidentialityCode</entry><entry>confidentialityCode</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>CE</entry><entry></entry><entry> </entry></row> 
+<row><entry>id</entry><entry>id</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>II</entry><entry></entry><entry> </entry></row> 
+<row><entry>languageCode</entry><entry>languageCode</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>CS</entry><entry></entry><entry> </entry></row> 
+<row><entry>realmCode</entry><entry>realmCode</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>CS</entry><entry></entry><entry> </entry></row> 
+<row><entry>templateId</entry><entry>templateId</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>II</entry><entry></entry><entry> 2.16.840.1.113883.10.20.23.13</entry></row> 
+<row><entry>title</entry><entry>title</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>ST</entry><entry></entry><entry> </entry></row> 
+<row><entry>adverse Event</entry><entry>cda:entry/cda:observation[cda:templateId/@root = 2.16.840.1.113883.10.20.23.23]</entry><entry>0..*</entry><entry>MAY</entry><entry>YES</entry><entry>Adverse Event</entry><entry></entry><entry> </entry></row> 
+<row><entry>author</entry><entry>author</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>Author</entry><entry></entry><entry> </entry></row> 
+<row><entry>clinical Event</entry><entry>cda:entry/cda:observation[cda:templateId/@root = 2.16.840.1.113883.10.20.23.28]</entry><entry>0..*</entry><entry>MAY</entry><entry>YES</entry><entry>Clinical Event</entry><entry></entry><entry> </entry></row> 
+<row><entry>comment</entry><entry>cda:entry/cda:observation[cda:templateId/@root = 2.16.840.1.113883.10.20.23.xxxx]</entry><entry>0..*</entry><entry>MAY</entry><entry>YES</entry><entry>Comment</entry><entry></entry><entry> </entry></row> 
+<row><entry>component</entry><entry>component</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>Component5</entry><entry></entry><entry> </entry></row> 
+<row><entry>disposition</entry><entry>cda:entry/cda:act</entry><entry>0..*</entry><entry>SHOULD</entry><entry>YES</entry><entry>Human Clinical Disposition</entry><entry></entry><entry> </entry></row> 
+<row><entry>eCG Test Result</entry><entry>cda:entry/cda:observation[cda:templateId/@root = 2.16.840.1.113883.10.20.23.29]</entry><entry>0..*</entry><entry>MAY</entry><entry>YES</entry><entry>ECG Test Result</entry><entry></entry><entry> </entry></row> 
+<row><entry>entry</entry><entry>entry</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>Entry</entry><entry></entry><entry> MISSINGTYPE</entry></row> 
+<row><entry>exposureAssociation</entry><entry>exposureAssociation</entry><entry>0..*</entry><entry>MAY</entry><entry>YES</entry><entry>exposureAssociation</entry><entry></entry><entry> </entry></row> 
+<row><entry>human Clinical Subject Demographics</entry><entry>cda:entry/cda:act</entry><entry>1..1</entry><entry>MAY</entry><entry>YES</entry><entry>Human Clinical Subject Demographics</entry><entry></entry><entry> </entry></row> 
+<row><entry>human Clinical Visit</entry><entry>cda:entry/cda:encounter[cda:templateId/@root = 2.16.840.1.113883.10.20.23.18]</entry><entry>0..*</entry><entry>SHOULD</entry><entry>YES</entry><entry>Visit</entry><entry></entry><entry> </entry></row> 
+<row><entry>informant</entry><entry>informant</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>Informant12</entry><entry></entry><entry> </entry></row> 
+<row><entry>medical History</entry><entry>cda:entry/cda:observation[cda:templateId/@root = 2.16.840.1.113883.10.20.23.26]</entry><entry>0..*</entry><entry>SHOULD</entry><entry>YES</entry><entry>Medical History Item</entry><entry></entry><entry> </entry></row> 
+<row><entry>pharmacokinetic Parameter Finding</entry><entry>cda:entry/cda:observation[cda:templateId/@root = 2.16.840.1.113883.10.20.23.40]</entry><entry>0..1</entry><entry>SHOULD</entry><entry>YES</entry><entry>Pharmacokinetic Parameter Finding</entry><entry></entry><entry> </entry></row> 
+<row><entry>protocol Deviation</entry><entry>cda:entry/cda:observation[cda:templateId/@root = 2.16.840.1.113883.10.20.23.27]</entry><entry>0..*</entry><entry>MAY</entry><entry>YES</entry><entry>Protocol Deviation</entry><entry></entry><entry> </entry></row> 
+<row><entry>study Arm</entry><entry>cda:entry/cda:act[cda:templateId/@root = 2.16.840.1.113883.10.20.23.68]</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>Study Arm</entry><entry></entry><entry> </entry></row> 
+<row><entry>study Subject Event</entry><entry>cda:entry/cda:observation[cda:templateId/@root = 2.16.840.1.113883.10.20.23.102]</entry><entry>0..*</entry><entry>MAY</entry><entry>YES</entry><entry>Study Subject Event</entry><entry></entry><entry> </entry></row> 
+<row><entry>study Subject Finding</entry><entry>cda:entry/cda:observation</entry><entry>0..*</entry><entry>MAY</entry><entry>YES</entry><entry>Study Subject Finding</entry><entry></entry><entry> </entry></row> 
+<row><entry>study Subject Intervention</entry><entry>cda:entry/cda:substanceAdministration</entry><entry>0..*</entry><entry>MAY</entry><entry>YES</entry><entry>Study Subject Intervention</entry><entry></entry><entry> </entry></row> 
+<row><entry>subject</entry><entry>subject</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>Subject</entry><entry></entry><entry> </entry></row> 
+<row><entry>subject Characteristic</entry><entry>cda:entry/cda:observation[cda:templateId/@root = 2.16.840.1.113883.10.20.23.35]</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>Subject Characteristic</entry><entry></entry><entry> </entry></row> 
+<row><entry>subject Element</entry><entry>cda:entry/cda:act[cda:templateId/@root = 2.16.840.1.113883.10.20.23.17]</entry><entry>0..*</entry><entry>SHOULD</entry><entry>YES</entry><entry>Subject Element</entry><entry></entry><entry> </entry></row> 
+<row><entry>substance Use</entry><entry>cda:entry/cda:substanceAdministration[cda:templateId/@root = 2.16.840.1.113883.10.20.23.22]</entry><entry>0..*</entry><entry>MAY</entry><entry>YES</entry><entry>Substance Use</entry><entry></entry><entry> </entry></row> 
+<row><entry>text</entry><entry>text</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>StrucDocText</entry><entry></entry><entry> </entry></row> 
+<row><entry>typeId</entry><entry>typeId</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>InfrastructureRootTypeId</entry><entry></entry><entry> </entry></row> 
+</tbody></tgroup></table></p></section>
+<codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<section xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd" classCode="DOCSECT" moodCode="EVN">
+  <templateId root="2.16.840.1.113883.10.20.23.13"/>
+  <id root="822187876" extension="MDHT"/>
+  <code code="TBD" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus"/>
+  <title>TEXT FOR TITLE</title>
+  <text/>
+  <entry typeCode="COMP">
+    <substanceAdministration>
+      <id root="1148092001" extension="MDHT"/>
+      <text>Text Value</text>
+      <effectiveTime value="20120806"/>
+      <routeCode code="1993665218"/>
+      <approachSiteCode xsi:type="CE" code="1787048767"/>
+      <doseQuantity/>
+      <maxDoseQuantity/>
+      <consumable/>
+      <entryRelationship typeCode="COMP"/>
+    </substanceAdministration>
+  </entry>
+  <entry>
+    <act>
+      <id root="671127919" extension="MDHT"/>
+      <code code="1515275888"/>
+      <text>Text Value</text>
+      <effectiveTime>
+        <low value="2012"/>
+        <high value="2012"/>
+      </effectiveTime>
+      <participant typeCode="LOC">
+        <participantRole classCode="SDLOC"/>
+      </participant>
+      <entryRelationship>
+        <act>
+          <id root="874271854" extension="MDHT"/>
+          <code code="86959972"/>
+          <text>Text Value</text>
+          <effectiveTime>
+            <low value="2012"/>
+            <high value="2012"/>
+          </effectiveTime>
+          <entryRelationship>
+            <observation/>
+          </entryRelationship>
+        </act>
+      </entryRelationship>
+      <entryRelationship>
+        <act>
+          <templateId root="2.16.840.1.113883.10.20.23.68"/>
+          <id root="1290692460" extension="MDHT"/>
+          <code codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus"/>
+          <text>Text Value</text>
+          <effectiveTime>
+            <low value="2012"/>
+            <high value="2012"/>
+          </effectiveTime>
+        </act>
+      </entryRelationship>
+      <entryRelationship>
+        <observation classCode="OBS" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.23.xxxx"/>
+          <id root="1025469511" extension="MDHT"/>
+          <code code="1262687885"/>
+          <text>Text Value</text>
+          <effectiveTime>
+            <low value="2012"/>
+            <high value="2012"/>
+          </effectiveTime>
+          <participant/>
+          <entryRelationship/>
+        </observation>
+      </entryRelationship>
+      <entryRelationship>
+        <organizer classCode="CLUSTER" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.23.xxxx"/>
+          <id root="261174969" extension="MDHT"/>
+          <code code="805853033"/>
+          <statusCode code="completed"/>
+          <effectiveTime>
+            <low value="2012"/>
+            <high value="2012"/>
+          </effectiveTime>
+        </organizer>
+      </entryRelationship>
+      <entryRelationship>
+        <act classCode="ACT" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.23.xxxx"/>
+          <id root="1348630054" extension="MDHT"/>
+          <code code="875715089"/>
+          <text>Text Value</text>
+          <effectiveTime>
+            <low value="2012"/>
+            <high value="2012"/>
+          </effectiveTime>
+        </act>
+      </entryRelationship>
+      <entryRelationship>
+        <observation classCode="OBS" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.23.xxxx"/>
+          <id root="1046157995" extension="MDHT"/>
+          <code code="1278638151"/>
+          <text>Text Value</text>
+          <effectiveTime>
+            <low value="2012"/>
+            <high value="2012"/>
+          </effectiveTime>
+          <participant/>
+          <entryRelationship/>
+        </observation>
+      </entryRelationship>
+      <entryRelationship>
+        <act classCode="ACT" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.23.xxxx"/>
+          <id root="14075840" extension="MDHT"/>
+          <code code="654554568"/>
+          <text>Text Value</text>
+          <effectiveTime>
+            <low value="2012"/>
+            <high value="2012"/>
+          </effectiveTime>
+        </act>
+      </entryRelationship>
+    </act>
+  </entry>
+  <entry>
+    <encounter classCode="ENC" moodCode="EVN">
+      <templateId root="2.16.840.1.113883.10.20.23.18"/>
+      <id root="2139397168" extension="MDHT"/>
+      <code code="637934036"/>
+      <text>Text Value</text>
+      <effectiveTime>
+        <low value="2012"/>
+        <high value="2012"/>
+      </effectiveTime>
+      <entryRelationship typeCode="COMP">
+        <substanceAdministration/>
+      </entryRelationship>
+      <entryRelationship typeCode="COMP">
+        <substanceAdministration/>
+      </entryRelationship>
+      <entryRelationship>
+        <observation>
+          <id root="934793356" extension="MDHT"/>
+          <code codeSystem="2.16.840.1.113883.3.26.1.1"/>
+          <text>Text Value</text>
+          <effectiveTime>
+            <low value="2012"/>
+            <high value="2012"/>
+          </effectiveTime>
+          <interpretationCode codeSystemName="TrialDataIntepretations"/>
+          <entryRelationship>
+            <observation/>
+          </entryRelationship>
+          <entryRelationship>
+            <act>
+              <templateId root="2.16.840.1.113883.10.20.23.74"/>
+              <code codeSystem="2.16.840.1.113883.3.26.1.1"/>
+            </act>
+          </entryRelationship>
+          <entryRelationship>
+            <observation classCode="OBS">
+              <templateId root="2.16.840.1.113883.10.20.23.64"/>
+              <code codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus" displayName="Reason for non completion"/>
+            </observation>
+          </entryRelationship>
+          <entryRelationship>
+            <observation/>
+          </entryRelationship>
+          <entryRelationship>
+            <observation/>
+          </entryRelationship>
+          <entryRelationship>
+            <observation/>
+          </entryRelationship>
+          <entryRelationship>
+            <observation classCode="OBS">
+              <templateId root="2.16.840.1.113883.10.20.23.76"/>
+              <code code="TBD" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus" displayName="Baseline Indicator"/>
+            </observation>
+          </entryRelationship>
+          <entryRelationship>
+            <act classCode="ACT">
+              <templateId root="2.16.840.1.113883.10.20.23.63"/>
+              <code code="TBD" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus"/>
+            </act>
+          </entryRelationship>
+          <entryRelationship>
+            <observation classCode="OBS" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.23.xxxx"/>
+            </observation>
+          </entryRelationship>
+          <entryRelationship>
+            <organizer classCode="CLUSTER" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.23.xxxx"/>
+            </organizer>
+          </entryRelationship>
+          <entryRelationship>
+            <act classCode="ACT" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.23.xxxx"/>
+            </act>
+          </entryRelationship>
+          <entryRelationship>
+            <observation classCode="OBS" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.23.xxxx"/>
+            </observation>
+          </entryRelationship>
+          <entryRelationship>
+            <observation>
+              <templateId root="2.16.840.1.113883.10.20.23.xxxx"/>
+              <code codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus" displayName="Adverse Event Category"/>
+            </observation>
+          </entryRelationship>
+          <entryRelationship>
+            <observation/>
+          </entryRelationship>
+          <entryRelationship>
+            <observation/>
+          </entryRelationship>
+        </observation>
+      </entryRelationship>
+      <entryRelationship>
+        <observation>
+          <id root="1761188031" extension="MDHT"/>
+          <code code="34040668"/>
+          <text>Text Value</text>
+          <effectiveTime>
+            <low value="2012"/>
+            <high value="2012"/>
+          </effectiveTime>
+        </observation>
+      </entryRelationship>
+      <entryRelationship>
+        <observation>
+          <templateId root="2.16.840.1.113883.10.20.23.29"/>
+          <id root="2031433290" extension="MDHT"/>
+          <code code="371791048"/>
+          <text>Text Value</text>
+          <effectiveTime>
+            <low value="2012"/>
+            <high value="2012"/>
+          </effectiveTime>
+          <participant/>
+          <participant/>
+          <entryRelationship typeCode="COMP"/>
+          <entryRelationship typeCode="COMP"/>
+          <entryRelationship>
+            <act classCode="ACT">
+              <templateId root="2.16.840.1.113883.10.20.23.63"/>
+              <code code="TBD" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus"/>
+            </act>
+          </entryRelationship>
+          <entryRelationship>
+            <observation classCode="OBS">
+              <templateId root="2.16.840.1.113883.10.20.23.64"/>
+              <code codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus" displayName="Reason for non completion"/>
+            </observation>
+          </entryRelationship>
+          <entryRelationship>
+            <act>
+              <templateId root="2.16.840.1.113883.10.20.23.74"/>
+              <code codeSystem="2.16.840.1.113883.3.26.1.1"/>
+            </act>
+          </entryRelationship>
+          <entryRelationship>
+            <observation/>
+          </entryRelationship>
+          <entryRelationship>
+            <observation/>
+          </entryRelationship>
+          <entryRelationship>
+            <observation classCode="OBS" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.23.xxxx"/>
+            </observation>
+          </entryRelationship>
+          <entryRelationship>
+            <organizer classCode="CLUSTER" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.23.xxxx"/>
+            </organizer>
+          </entryRelationship>
+          <entryRelationship>
+            <act classCode="ACT" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.23.xxxx"/>
+            </act>
+          </entryRelationship>
+          <entryRelationship>
+            <observation classCode="OBS" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.23.xxxx"/>
+            </observation>
+          </entryRelationship>
+          <entryRelationship>
+            <observation>
+              <templateId root="2.16.840.1.113883.10.20.23.xxxx"/>
+              <code codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus" displayName="Adverse Event Category"/>
+            </observation>
+          </entryRelationship>
+          <entryRelationship>
+            <observation/>
+          </entryRelationship>
+          <entryRelationship>
+            <observation/>
+          </entryRelationship>
+        </observation>
+      </entryRelationship>
+      <entryRelationship>
+        <observation/>
+      </entryRelationship>
+      <entryRelationship>
+        <observation classCode="OBS" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.23.33"/>
+          <id root="1270314257" extension="MDHT"/>
+          <code code="1844546474"/>
+          <text>Text Value</text>
+          <effectiveTime>
+            <low value="2012"/>
+            <high value="2012"/>
+          </effectiveTime>
+          <participant/>
+          <entryRelationship>
+            <act classCode="ACT">
+              <templateId root="2.16.840.1.113883.10.20.23.63"/>
+              <code code="TBD" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus"/>
+            </act>
+          </entryRelationship>
+          <entryRelationship>
+            <observation/>
+          </entryRelationship>
+          <entryRelationship>
+            <observation classCode="OBS">
+              <templateId root="2.16.840.1.113883.10.20.23.64"/>
+              <code codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus" displayName="Reason for non completion"/>
+            </observation>
+          </entryRelationship>
+          <entryRelationship>
+            <act/>
+          </entryRelationship>
+          <entryRelationship>
+            <observation classCode="OBS" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.23.xxxx"/>
+            </observation>
+          </entryRelationship>
+          <entryRelationship>
+            <organizer classCode="CLUSTER" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.23.xxxx"/>
+            </organizer>
+          </entryRelationship>
+          <entryRelationship>
+            <act classCode="ACT" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.23.xxxx"/>
+            </act>
+          </entryRelationship>
+          <entryRelationship>
+            <observation classCode="OBS" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.23.xxxx"/>
+            </observation>
+          </entryRelationship>
+          <entryRelationship>
+            <observation>
+              <templateId root="2.16.840.1.113883.10.20.23.xxxx"/>
+              <code codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus" displayName="Adverse Event Category"/>
+            </observation>
+          </entryRelationship>
+          <entryRelationship>
+            <observation/>
+          </entryRelationship>
+        </observation>
+      </entryRelationship>
+      <entryRelationship>
+        <observation classCode="OBS" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.23.38"/>
+          <id root="1621476905" extension="MDHT"/>
+          <code code="120167640"/>
+          <text>Text Value</text>
+          <effectiveTime>
+            <low value="2012"/>
+            <high value="2012"/>
+          </effectiveTime>
+          <participant/>
+          <entryRelationship>
+            <act classCode="ACT">
+              <templateId root="2.16.840.1.113883.10.20.23.63"/>
+              <code code="TBD" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus"/>
+            </act>
+          </entryRelationship>
+          <entryRelationship>
+            <observation classCode="OBS">
+              <templateId root="2.16.840.1.113883.10.20.23.64"/>
+              <code codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus" displayName="Reason for non completion"/>
+            </observation>
+          </entryRelationship>
+          <entryRelationship>
+            <procedure/>
+          </entryRelationship>
+          <entryRelationship>
+            <observation classCode="OBS" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.23.xxxx"/>
+            </observation>
+          </entryRelationship>
+          <entryRelationship>
+            <organizer classCode="CLUSTER" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.23.xxxx"/>
+            </organizer>
+          </entryRelationship>
+          <entryRelationship>
+            <act classCode="ACT" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.23.xxxx"/>
+            </act>
+          </entryRelationship>
+          <entryRelationship>
+            <observation classCode="OBS" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.23.xxxx"/>
+            </observation>
+          </entryRelationship>
+          <entryRelationship>
+            <observation>
+              <templateId root="2.16.840.1.113883.10.20.23.xxxx"/>
+              <code codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus" displayName="Adverse Event Category"/>
+            </observation>
+          </entryRelationship>
+          <entryRelationship>
+            <observation/>
+          </entryRelationship>
+          <entryRelationship>
+            <observation classCode="OBS" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.23.xxxx"/>
+            </observation>
+          </entryRelationship>
+        </observation>
+      </entryRelationship>
+      <entryRelationship>
+        <observation classCode="OBS" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.23.39"/>
+          <id root="1755368082" extension="MDHT"/>
+          <code code="2050492504"/>
+          <text>Text Value</text>
+          <effectiveTime>
+            <low value="2012"/>
+            <high value="2012"/>
+          </effectiveTime>
+          <participant/>
+          <entryRelationship>
+            <observation/>
+          </entryRelationship>
+          <entryRelationship>
+            <act>
+              <templateId root="2.16.840.1.113883.10.20.23.74"/>
+              <code codeSystem="2.16.840.1.113883.3.26.1.1"/>
+            </act>
+          </entryRelationship>
+          <entryRelationship>
+            <act classCode="ACT">
+              <templateId root="2.16.840.1.113883.10.20.23.63"/>
+              <code code="TBD" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus"/>
+            </act>
+          </entryRelationship>
+          <entryRelationship>
+            <observation classCode="OBS">
+              <templateId root="2.16.840.1.113883.10.20.23.64"/>
+              <code codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus" displayName="Reason for non completion"/>
+            </observation>
+          </entryRelationship>
+          <entryRelationship>
+            <observation classCode="OBS" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.23.xxxx"/>
+            </observation>
+          </entryRelationship>
+          <entryRelationship>
+            <organizer classCode="CLUSTER" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.23.xxxx"/>
+            </organizer>
+          </entryRelationship>
+          <entryRelationship>
+            <act classCode="ACT" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.23.xxxx"/>
+            </act>
+          </entryRelationship>
+          <entryRelationship>
+            <observation classCode="OBS" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.23.xxxx"/>
+            </observation>
+          </entryRelationship>
+          <entryRelationship>
+            <observation>
+              <templateId root="2.16.840.1.113883.10.20.23.xxxx"/>
+              <code codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus" displayName="Adverse Event Category"/>
+            </observation>
+          </entryRelationship>
+          <entryRelationship>
+            <observation/>
+          </entryRelationship>
+          <entryRelationship>
+            <observation classCode="OBS" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.23.xxxx"/>
+            </observation>
+          </entryRelationship>
+        </observation>
+      </entryRelationship>
+      <entryRelationship>
+        <observation classCode="OBS" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.23.41"/>
+          <id root="1641552800" extension="MDHT"/>
+          <code code="1917902915"/>
+          <text>Text Value</text>
+          <effectiveTime>
+            <low value="2012"/>
+            <high value="2012"/>
+          </effectiveTime>
+          <participant/>
+          <entryRelationship>
+            <act classCode="ACT">
+              <templateId root="2.16.840.1.113883.10.20.23.63"/>
+              <code code="TBD" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus"/>
+            </act>
+          </entryRelationship>
+          <entryRelationship>
+            <procedure/>
+          </entryRelationship>
+          <entryRelationship>
+            <observation classCode="OBS">
+              <templateId root="2.16.840.1.113883.10.20.23.64"/>
+              <code codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus" displayName="Reason for non completion"/>
+            </observation>
+          </entryRelationship>
+          <entryRelationship>
+            <observation/>
+          </entryRelationship>
+          <entryRelationship>
+            <observation classCode="OBS">
+              <templateId root="2.16.840.1.113883.10.20.23.76"/>
+              <code code="TBD" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus" displayName="Baseline Indicator"/>
+            </observation>
+          </entryRelationship>
+          <entryRelationship>
+            <observation classCode="OBS" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.23.xxxx"/>
+            </observation>
+          </entryRelationship>
+          <entryRelationship>
+            <organizer classCode="CLUSTER" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.23.xxxx"/>
+            </organizer>
+          </entryRelationship>
+          <entryRelationship>
+            <act classCode="ACT" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.23.xxxx"/>
+            </act>
+          </entryRelationship>
+          <entryRelationship>
+            <observation classCode="OBS" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.23.xxxx"/>
+            </observation>
+          </entryRelationship>
+          <entryRelationship>
+            <observation>
+              <templateId root="2.16.840.1.113883.10.20.23.xxxx"/>
+              <code codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus" displayName="Adverse Event Category"/>
+            </observation>
+          </entryRelationship>
+          <entryRelationship>
+            <observation/>
+          </entryRelationship>
+          <entryRelationship>
+            <observation classCode="OBS">
+              <templateId root="2.16.840.1.113883.10.20.23.xxxx"/>
+              <code codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus"/>
+            </observation>
+          </entryRelationship>
+          <entryRelationship>
+            <observation/>
+          </entryRelationship>
+          <entryRelationship>
+            <observation classCode="OBS" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.23.40"/>
+            </observation>
+          </entryRelationship>
+        </observation>
+      </entryRelationship>
+      <entryRelationship>
+        <observation>
+          <id root="1997260177" extension="MDHT"/>
+          <code code="1454393273"/>
+          <text>Text Value</text>
+          <effectiveTime>
+            <low value="2012"/>
+            <high value="2012"/>
+          </effectiveTime>
+          <participant/>
+          <entryRelationship typeCode="REFR"/>
+          <entryRelationship>
+            <act classCode="ACT">
+              <templateId root="2.16.840.1.113883.10.20.23.63"/>
+              <code code="TBD" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus"/>
+            </act>
+          </entryRelationship>
+          <entryRelationship>
+            <observation classCode="OBS">
+              <templateId root="2.16.840.1.113883.10.20.23.64"/>
+              <code codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus" displayName="Reason for non completion"/>
+            </observation>
+          </entryRelationship>
+          <entryRelationship>
+            <act/>
+          </entryRelationship>
+          <entryRelationship>
+            <observation>
+              <templateId root="2.16.840.1.113883.10.20.23.xxxx"/>
+              <code codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus" displayName="Adverse Event Category"/>
+            </observation>
+          </entryRelationship>
+          <entryRelationship>
+            <observation/>
+          </entryRelationship>
+        </observation>
+      </entryRelationship>
+      <entryRelationship>
+        <observation classCode="OBS" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.23.37"/>
+          <id root="234052346" extension="MDHT"/>
+          <code code="1929000953"/>
+          <text>Text Value</text>
+          <effectiveTime>
+            <low value="2012"/>
+            <high value="2012"/>
+          </effectiveTime>
+          <entryRelationship>
+            <act classCode="ACT">
+              <templateId root="2.16.840.1.113883.10.20.23.63"/>
+              <code code="TBD" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus"/>
+            </act>
+          </entryRelationship>
+          <entryRelationship>
+            <observation classCode="OBS">
+              <templateId root="2.16.840.1.113883.10.20.23.64"/>
+              <code codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus" displayName="Reason for non completion"/>
+            </observation>
+          </entryRelationship>
+          <entryRelationship>
+            <observation/>
+          </entryRelationship>
+          <entryRelationship>
+            <observation>
+              <templateId root="2.16.840.1.113883.10.20.23.xxxx"/>
+              <code codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus" displayName="Adverse Event Category"/>
+            </observation>
+          </entryRelationship>
+          <entryRelationship>
+            <observation/>
+          </entryRelationship>
+        </observation>
+      </entryRelationship>
+      <entryRelationship>
+        <observation>
+          <id root="691207556" extension="MDHT"/>
+          <code code="1778220757"/>
+          <text>Text Value</text>
+          <effectiveTime>
+            <low value="2012"/>
+            <high value="2012"/>
+          </effectiveTime>
+        </observation>
+      </entryRelationship>
+      <entryRelationship>
+        <observation classCode="OBS" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.23.xxxx"/>
+          <id root="1138722401" extension="MDHT"/>
+          <code code="1976760604"/>
+          <text>Text Value</text>
+          <effectiveTime>
+            <low value="2012"/>
+            <high value="2012"/>
+          </effectiveTime>
+          <participant/>
+          <entryRelationship/>
+        </observation>
+      </entryRelationship>
+      <entryRelationship>
+        <organizer classCode="CLUSTER" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.23.xxxx"/>
+          <id root="1261566905" extension="MDHT"/>
+          <code code="447811134"/>
+          <statusCode code="completed"/>
+          <effectiveTime>
+            <low value="2012"/>
+            <high value="2012"/>
+          </effectiveTime>
+        </organizer>
+      </entryRelationship>
+      <entryRelationship>
+        <act classCode="ACT" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.23.xxxx"/>
+          <id root="1382075968" extension="MDHT"/>
+          <code code="1044074997"/>
+          <text>Text Value</text>
+          <effectiveTime>
+            <low value="2012"/>
+            <high value="2012"/>
+          </effectiveTime>
+        </act>
+      </entryRelationship>
+      <entryRelationship>
+        <observation classCode="OBS" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.23.xxxx"/>
+          <id root="878252954" extension="MDHT"/>
+          <code code="1759611184"/>
+          <text>Text Value</text>
+          <effectiveTime>
+            <low value="2012"/>
+            <high value="2012"/>
+          </effectiveTime>
+          <participant/>
+          <entryRelationship/>
+        </observation>
+      </entryRelationship>
+      <entryRelationship>
+        <observation classCode="OBS" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.23.31"/>
+          <id root="675363870" extension="MDHT"/>
+          <code code="1175574552"/>
+          <text>Text Value</text>
+          <effectiveTime>
+            <low value="2012"/>
+            <high value="2012"/>
+          </effectiveTime>
+          <participant/>
+          <entryRelationship>
+            <act classCode="ACT">
+              <templateId root="2.16.840.1.113883.10.20.23.63"/>
+              <code code="TBD" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus"/>
+            </act>
+          </entryRelationship>
+          <entryRelationship>
+            <procedure/>
+          </entryRelationship>
+          <entryRelationship>
+            <observation classCode="OBS">
+              <templateId root="2.16.840.1.113883.10.20.23.64"/>
+              <code codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus" displayName="Reason for non completion"/>
+            </observation>
+          </entryRelationship>
+          <entryRelationship>
+            <act>
+              <templateId root="2.16.840.1.113883.10.20.23.74"/>
+              <code codeSystem="2.16.840.1.113883.3.26.1.1"/>
+            </act>
+          </entryRelationship>
+          <entryRelationship>
+            <observation classCode="OBS" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.23.xxxx"/>
+            </observation>
+          </entryRelationship>
+          <entryRelationship>
+            <organizer classCode="CLUSTER" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.23.xxxx"/>
+            </organizer>
+          </entryRelationship>
+          <entryRelationship>
+            <act classCode="ACT" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.23.xxxx"/>
+            </act>
+          </entryRelationship>
+          <entryRelationship>
+            <observation classCode="OBS" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.23.xxxx"/>
+            </observation>
+          </entryRelationship>
+          <entryRelationship>
+            <observation classCode="OBS" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.23.xxxx"/>
+              <code code="C78605" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus" displayName="Adverse Event Toxicity Grade"/>
+            </observation>
+          </entryRelationship>
+          <entryRelationship>
+            <observation>
+              <templateId root="2.16.840.1.113883.10.20.23.xxxx"/>
+              <code codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus" displayName="Adverse Event Category"/>
+            </observation>
+          </entryRelationship>
+          <entryRelationship>
+            <observation/>
+          </entryRelationship>
+          <entryRelationship>
+            <observation classCode="OBS">
+              <templateId root="2.16.840.1.113883.10.20.23.xxxx"/>
+              <code codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus"/>
+            </observation>
+          </entryRelationship>
+        </observation>
+      </entryRelationship>
+    </encounter>
+  </entry>
+  <entry>
+    <act>
+      <templateId root="2.16.840.1.113883.10.20.23.68"/>
+      <id root="46730959" extension="MDHT"/>
+      <code codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus"/>
+      <text>Text Value</text>
+      <effectiveTime>
+        <low value="2012"/>
+        <high value="2012"/>
+      </effectiveTime>
+    </act>
+  </entry>
+  <entry>
+    <act>
+      <templateId root="2.16.840.1.113883.10.20.23.17"/>
+      <id root="335114173" extension="MDHT"/>
+      <code codeSystem="2.16.840.1.113883.3.26.1.1"/>
+      <text>Text Value</text>
+      <effectiveTime>
+        <low value="2012"/>
+        <high value="2012"/>
+      </effectiveTime>
+      <entryRelationship typeCode="COMP">
+        <observation classCode="OBS" moodCode="EVN">
+          <code codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus"/>
+        </observation>
+      </entryRelationship>
+      <entryRelationship>
+        <act>
+          <templateId root="2.16.840.1.113883.10.20.23.71"/>
+          <id root="160124444" extension="MDHT"/>
+          <code codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus"/>
+          <text>Text Value</text>
+          <effectiveTime>
+            <low value="2012"/>
+            <high value="2012"/>
+          </effectiveTime>
+        </act>
+      </entryRelationship>
+      <entryRelationship>
+        <observation classCode="OBS" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.23.xxxx"/>
+          <id root="199453716" extension="MDHT"/>
+          <code code="1893540742"/>
+          <text>Text Value</text>
+          <effectiveTime>
+            <low value="2012"/>
+            <high value="2012"/>
+          </effectiveTime>
+          <participant/>
+          <entryRelationship/>
+        </observation>
+      </entryRelationship>
+      <entryRelationship>
+        <organizer classCode="CLUSTER" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.23.xxxx"/>
+          <id root="174817545" extension="MDHT"/>
+          <code code="1718962321"/>
+          <statusCode code="completed"/>
+          <effectiveTime>
+            <low value="2012"/>
+            <high value="2012"/>
+          </effectiveTime>
+        </organizer>
+      </entryRelationship>
+      <entryRelationship>
+        <act classCode="ACT" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.23.xxxx"/>
+          <id root="1993462126" extension="MDHT"/>
+          <code code="1203581636"/>
+          <text>Text Value</text>
+          <effectiveTime>
+            <low value="2012"/>
+            <high value="2012"/>
+          </effectiveTime>
+        </act>
+      </entryRelationship>
+      <entryRelationship>
+        <observation classCode="OBS" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.23.xxxx"/>
+          <id root="1566237721" extension="MDHT"/>
+          <code code="1878709970"/>
+          <text>Text Value</text>
+          <effectiveTime>
+            <low value="2012"/>
+            <high value="2012"/>
+          </effectiveTime>
+          <participant/>
+          <entryRelationship/>
+        </observation>
+      </entryRelationship>
+    </act>
+  </entry>
+  <entry>
+    <substanceAdministration classCode="SBADM" moodCode="EVN">
+      <templateId root="2.16.840.1.113883.10.20.23.22"/>
+      <id root="43493035" extension="MDHT"/>
+      <code code="1578587291"/>
+      <text>Text Value</text>
+      <effectiveTime value="20120806"/>
+      <consumable>
+        <manufacturedProduct classCode="MANU"/>
+      </consumable>
+      <entryRelationship>
+        <observation/>
+      </entryRelationship>
+      <entryRelationship>
+        <observation classCode="OBS">
+          <templateId root="2.16.840.1.113883.10.20.23.64"/>
+          <id root="594783235" extension="MDHT"/>
+          <code codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus" displayName="Reason for non completion"/>
+          <text>Text Value</text>
+          <effectiveTime>
+            <low value="2012"/>
+            <high value="2012"/>
+          </effectiveTime>
+        </observation>
+      </entryRelationship>
+      <entryRelationship>
+        <act>
+          <id root="417927473" extension="MDHT"/>
+          <code code="642130520"/>
+          <text>Text Value</text>
+          <effectiveTime>
+            <low value="2012"/>
+            <high value="2012"/>
+          </effectiveTime>
+          <entryRelationship>
+            <observation/>
+          </entryRelationship>
+        </act>
+      </entryRelationship>
+      <entryRelationship>
+        <observation>
+          <id root="824637400" extension="MDHT"/>
+          <code code="1983878819"/>
+          <text>Text Value</text>
+          <effectiveTime>
+            <low value="2012"/>
+            <high value="2012"/>
+          </effectiveTime>
+        </observation>
+      </entryRelationship>
+      <entryRelationship>
+        <observation classCode="OBS" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.23.xxxx"/>
+          <id root="705481701" extension="MDHT"/>
+          <code code="1979662017"/>
+          <text>Text Value</text>
+          <effectiveTime>
+            <low value="2012"/>
+            <high value="2012"/>
+          </effectiveTime>
+          <participant/>
+          <entryRelationship/>
+        </observation>
+      </entryRelationship>
+      <entryRelationship>
+        <organizer classCode="CLUSTER" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.23.xxxx"/>
+          <id root="1522874865" extension="MDHT"/>
+          <code code="528079744"/>
+          <statusCode code="completed"/>
+          <effectiveTime>
+            <low value="2012"/>
+            <high value="2012"/>
+          </effectiveTime>
+        </organizer>
+      </entryRelationship>
+      <entryRelationship>
+        <act classCode="ACT" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.23.xxxx"/>
+          <id root="1771343550" extension="MDHT"/>
+          <code code="1717916454"/>
+          <text>Text Value</text>
+          <effectiveTime>
+            <low value="2012"/>
+            <high value="2012"/>
+          </effectiveTime>
+        </act>
+      </entryRelationship>
+      <entryRelationship>
+        <observation classCode="OBS" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.23.xxxx"/>
+          <id root="937315241" extension="MDHT"/>
+          <code code="823258437"/>
+          <text>Text Value</text>
+          <effectiveTime>
+            <low value="2012"/>
+            <high value="2012"/>
+          </effectiveTime>
+          <participant/>
+          <entryRelationship/>
+        </observation>
+      </entryRelationship>
+      <entryRelationship>
+        <observation/>
+      </entryRelationship>
+      <entryRelationship>
+        <observation/>
+      </entryRelationship>
+      <entryRelationship>
+        <observation>
+          <templateId root="2.16.840.1.113883.10.20.23.xxxx"/>
+          <id root="266633812" extension="MDHT"/>
+          <code codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus" displayName="Adverse Event Category"/>
+          <text>Text Value</text>
+          <effectiveTime>
+            <low value="2012"/>
+            <high value="2012"/>
+          </effectiveTime>
+        </observation>
+      </entryRelationship>
+      <entryRelationship>
+        <observation/>
+      </entryRelationship>
+    </substanceAdministration>
+  </entry>
+  <entry>
+    <act>
+      <id root="968686154" extension="MDHT"/>
+      <code code="629379609"/>
+      <text>Text Value</text>
+      <effectiveTime>
+        <low value="2012"/>
+        <high value="2012"/>
+      </effectiveTime>
+      <entryRelationship>
+        <act>
+          <templateId root="2.16.840.1.113883.10.20.23.71"/>
+          <id root="1548128057" extension="MDHT"/>
+          <code codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus"/>
+          <text>Text Value</text>
+          <effectiveTime>
+            <low value="2012"/>
+            <high value="2012"/>
+          </effectiveTime>
+        </act>
+      </entryRelationship>
+      <entryRelationship>
+        <act>
+          <id root="1112068952" extension="MDHT"/>
+          <code code="1137789444"/>
+          <text>Text Value</text>
+          <effectiveTime>
+            <low value="2012"/>
+            <high value="2012"/>
+          </effectiveTime>
+          <entryRelationship>
+            <observation/>
+          </entryRelationship>
+        </act>
+      </entryRelationship>
+      <entryRelationship>
+        <act classCode="ACT">
+          <templateId root="2.16.840.1.113883.10.20.23.63"/>
+          <id root="257361865" extension="MDHT"/>
+          <code code="TBD" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus"/>
+          <text>Text Value</text>
+          <effectiveTime>
+            <low value="2012"/>
+            <high value="2012"/>
+          </effectiveTime>
+        </act>
+      </entryRelationship>
+      <entryRelationship>
+        <observation>
+          <id root="38825557" extension="MDHT"/>
+          <code code="899294188"/>
+          <text>Text Value</text>
+          <effectiveTime>
+            <low value="2012"/>
+            <high value="2012"/>
+          </effectiveTime>
+        </observation>
+      </entryRelationship>
+      <entryRelationship>
+        <observation classCode="OBS" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.23.xxxx"/>
+          <id root="1926474137" extension="MDHT"/>
+          <code code="1340164802"/>
+          <text>Text Value</text>
+          <effectiveTime>
+            <low value="2012"/>
+            <high value="2012"/>
+          </effectiveTime>
+          <participant/>
+          <entryRelationship/>
+        </observation>
+      </entryRelationship>
+      <entryRelationship>
+        <organizer classCode="CLUSTER" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.23.xxxx"/>
+          <id root="450326244" extension="MDHT"/>
+          <code code="1601240473"/>
+          <statusCode code="completed"/>
+          <effectiveTime>
+            <low value="2012"/>
+            <high value="2012"/>
+          </effectiveTime>
+        </organizer>
+      </entryRelationship>
+      <entryRelationship>
+        <act classCode="ACT" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.23.xxxx"/>
+          <id root="1093810810" extension="MDHT"/>
+          <code code="1795834846"/>
+          <text>Text Value</text>
+          <effectiveTime>
+            <low value="2012"/>
+            <high value="2012"/>
+          </effectiveTime>
+        </act>
+      </entryRelationship>
+      <entryRelationship>
+        <observation classCode="OBS" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.23.xxxx"/>
+          <id root="1357813295" extension="MDHT"/>
+          <code code="1579690488"/>
+          <text>Text Value</text>
+          <effectiveTime>
+            <low value="2012"/>
+            <high value="2012"/>
+          </effectiveTime>
+          <participant/>
+          <entryRelationship/>
+        </observation>
+      </entryRelationship>
+      <entryRelationship>
+        <observation>
+          <templateId root="2.16.840.1.113883.10.20.23.xxxx"/>
+          <id root="1483819936" extension="MDHT"/>
+          <code codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus" displayName="Adverse Event Category"/>
+          <text>Text Value</text>
+          <effectiveTime>
+            <low value="2012"/>
+            <high value="2012"/>
+          </effectiveTime>
+        </observation>
+      </entryRelationship>
+      <entryRelationship>
+        <observation/>
+      </entryRelationship>
+    </act>
+  </entry>
+  <entry>
+    <observation classCode="OBS" moodCode="EVN">
+      <templateId root="2.16.840.1.113883.10.20.23.26"/>
+      <id root="549383556" extension="MDHT"/>
+      <code code="2059133601"/>
+      <text>Text Value</text>
+      <effectiveTime>
+        <low value="2012"/>
+        <high value="2012"/>
+      </effectiveTime>
+      <entryRelationship>
+        <act classCode="ACT">
+          <templateId root="2.16.840.1.113883.10.20.23.63"/>
+          <id root="96661268" extension="MDHT"/>
+          <code code="TBD" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus"/>
+          <text>Text Value</text>
+          <effectiveTime>
+            <low value="2012"/>
+            <high value="2012"/>
+          </effectiveTime>
+        </act>
+      </entryRelationship>
+      <entryRelationship>
+        <observation/>
+      </entryRelationship>
+      <entryRelationship>
+        <observation classCode="OBS">
+          <templateId root="2.16.840.1.113883.10.20.23.64"/>
+          <id root="620863783" extension="MDHT"/>
+          <code codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus" displayName="Reason for non completion"/>
+          <text>Text Value</text>
+          <effectiveTime>
+            <low value="2012"/>
+            <high value="2012"/>
+          </effectiveTime>
+        </observation>
+      </entryRelationship>
+      <entryRelationship>
+        <observation/>
+      </entryRelationship>
+      <entryRelationship>
+        <act>
+          <id root="948856038" extension="MDHT"/>
+          <code code="1872623028"/>
+          <text>Text Value</text>
+          <effectiveTime>
+            <low value="2012"/>
+            <high value="2012"/>
+          </effectiveTime>
+          <entryRelationship>
+            <observation/>
+          </entryRelationship>
+        </act>
+      </entryRelationship>
+      <entryRelationship>
+        <observation classCode="OBS" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.23.xxxx"/>
+          <id root="163501553" extension="MDHT"/>
+          <code code="1132666008"/>
+          <text>Text Value</text>
+          <effectiveTime>
+            <low value="2012"/>
+            <high value="2012"/>
+          </effectiveTime>
+          <participant/>
+          <entryRelationship/>
+        </observation>
+      </entryRelationship>
+      <entryRelationship>
+        <organizer classCode="CLUSTER" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.23.xxxx"/>
+          <id root="1990823077" extension="MDHT"/>
+          <code code="902260037"/>
+          <statusCode code="completed"/>
+          <effectiveTime>
+            <low value="2012"/>
+            <high value="2012"/>
+          </effectiveTime>
+        </organizer>
+      </entryRelationship>
+      <entryRelationship>
+        <act classCode="ACT" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.23.xxxx"/>
+          <id root="621685045" extension="MDHT"/>
+          <code code="942374291"/>
+          <text>Text Value</text>
+          <effectiveTime>
+            <low value="2012"/>
+            <high value="2012"/>
+          </effectiveTime>
+        </act>
+      </entryRelationship>
+      <entryRelationship>
+        <observation classCode="OBS" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.23.xxxx"/>
+          <id root="1665409842" extension="MDHT"/>
+          <code code="1819124795"/>
+          <text>Text Value</text>
+          <effectiveTime>
+            <low value="2012"/>
+            <high value="2012"/>
+          </effectiveTime>
+          <participant/>
+          <entryRelationship/>
+        </observation>
+      </entryRelationship>
+      <entryRelationship>
+        <observation/>
+      </entryRelationship>
+      <entryRelationship>
+        <observation/>
+      </entryRelationship>
+      <entryRelationship>
+        <observation>
+          <templateId root="2.16.840.1.113883.10.20.23.xxxx"/>
+          <id root="1279785618" extension="MDHT"/>
+          <code codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus" displayName="Adverse Event Category"/>
+          <text>Text Value</text>
+          <effectiveTime>
+            <low value="2012"/>
+            <high value="2012"/>
+          </effectiveTime>
+        </observation>
+      </entryRelationship>
+      <entryRelationship>
+        <observation/>
+      </entryRelationship>
+    </observation>
+  </entry>
+  <entry>
+    <observation>
+      <templateId root="2.16.840.1.113883.10.20.23.27"/>
+      <id root="476483019" extension="MDHT"/>
+      <code code="147890647"/>
+      <text>Text Value</text>
+      <effectiveTime>
+        <low value="2012"/>
+        <high value="2012"/>
+      </effectiveTime>
+      <entryRelationship>
+        <act>
+          <templateId root="2.16.840.1.113883.10.20.23.71"/>
+          <id root="1302120400" extension="MDHT"/>
+          <code codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus"/>
+          <text>Text Value</text>
+          <effectiveTime>
+            <low value="2012"/>
+            <high value="2012"/>
+          </effectiveTime>
+        </act>
+      </entryRelationship>
+      <entryRelationship>
+        <observation classCode="OBS" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.23.xxxx"/>
+          <id root="119452677" extension="MDHT"/>
+          <code code="788948983"/>
+          <text>Text Value</text>
+          <effectiveTime>
+            <low value="2012"/>
+            <high value="2012"/>
+          </effectiveTime>
+          <participant/>
+          <entryRelationship/>
+        </observation>
+      </entryRelationship>
+      <entryRelationship>
+        <organizer classCode="CLUSTER" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.23.xxxx"/>
+          <id root="1826957692" extension="MDHT"/>
+          <code code="942686575"/>
+          <statusCode code="completed"/>
+          <effectiveTime>
+            <low value="2012"/>
+            <high value="2012"/>
+          </effectiveTime>
+        </organizer>
+      </entryRelationship>
+      <entryRelationship>
+        <act classCode="ACT" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.23.xxxx"/>
+          <id root="746129676" extension="MDHT"/>
+          <code code="1149655491"/>
+          <text>Text Value</text>
+          <effectiveTime>
+            <low value="2012"/>
+            <high value="2012"/>
+          </effectiveTime>
+        </act>
+      </entryRelationship>
+      <entryRelationship>
+        <observation classCode="OBS" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.23.xxxx"/>
+          <id root="145621469" extension="MDHT"/>
+          <code code="1737841522"/>
+          <text>Text Value</text>
+          <effectiveTime>
+            <low value="2012"/>
+            <high value="2012"/>
+          </effectiveTime>
+          <participant/>
+          <entryRelationship/>
+        </observation>
+      </entryRelationship>
+      <entryRelationship>
+        <observation>
+          <templateId root="2.16.840.1.113883.10.20.23.xxxx"/>
+          <id root="1525547345" extension="MDHT"/>
+          <code codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus" displayName="Adverse Event Category"/>
+          <text>Text Value</text>
+          <effectiveTime>
+            <low value="2012"/>
+            <high value="2012"/>
+          </effectiveTime>
+        </observation>
+      </entryRelationship>
+      <entryRelationship>
+        <observation/>
+      </entryRelationship>
+    </observation>
+  </entry>
+  <entry>
+    <observation classCode="OBS" moodCode="EVN">
+      <templateId root="2.16.840.1.113883.10.20.23.28"/>
+      <id root="667309657" extension="MDHT"/>
+      <code code="1111747531"/>
+      <text>Text Value</text>
+      <effectiveTime>
+        <low value="2012"/>
+        <high value="2012"/>
+      </effectiveTime>
+      <entryRelationship>
+        <observation/>
+      </entryRelationship>
+      <entryRelationship>
+        <observation classCode="OBS">
+          <templateId root="2.16.840.1.113883.10.20.23.64"/>
+          <id root="2134619341" extension="MDHT"/>
+          <code codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus" displayName="Reason for non completion"/>
+          <text>Text Value</text>
+          <effectiveTime>
+            <low value="2012"/>
+            <high value="2012"/>
+          </effectiveTime>
+        </observation>
+      </entryRelationship>
+      <entryRelationship>
+        <observation/>
+      </entryRelationship>
+      <entryRelationship>
+        <act>
+          <id root="1786830291" extension="MDHT"/>
+          <code code="471388271"/>
+          <text>Text Value</text>
+          <effectiveTime>
+            <low value="2012"/>
+            <high value="2012"/>
+          </effectiveTime>
+          <entryRelationship>
+            <observation/>
+          </entryRelationship>
+        </act>
+      </entryRelationship>
+      <entryRelationship>
+        <observation/>
+      </entryRelationship>
+      <entryRelationship>
+        <observation classCode="OBS" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.23.xxxx"/>
+          <id root="1425224728" extension="MDHT"/>
+          <code code="613566071"/>
+          <text>Text Value</text>
+          <effectiveTime>
+            <low value="2012"/>
+            <high value="2012"/>
+          </effectiveTime>
+          <participant/>
+          <entryRelationship/>
+        </observation>
+      </entryRelationship>
+      <entryRelationship>
+        <organizer classCode="CLUSTER" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.23.xxxx"/>
+          <id root="851540192" extension="MDHT"/>
+          <code code="1838059223"/>
+          <statusCode code="completed"/>
+          <effectiveTime>
+            <low value="2012"/>
+            <high value="2012"/>
+          </effectiveTime>
+        </organizer>
+      </entryRelationship>
+      <entryRelationship>
+        <act classCode="ACT" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.23.xxxx"/>
+          <id root="1573933056" extension="MDHT"/>
+          <code code="1654859131"/>
+          <text>Text Value</text>
+          <effectiveTime>
+            <low value="2012"/>
+            <high value="2012"/>
+          </effectiveTime>
+        </act>
+      </entryRelationship>
+      <entryRelationship>
+        <observation classCode="OBS" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.23.xxxx"/>
+          <id root="1854134207" extension="MDHT"/>
+          <code code="301301451"/>
+          <text>Text Value</text>
+          <effectiveTime>
+            <low value="2012"/>
+            <high value="2012"/>
+          </effectiveTime>
+          <participant/>
+          <entryRelationship/>
+        </observation>
+      </entryRelationship>
+      <entryRelationship>
+        <observation/>
+      </entryRelationship>
+      <entryRelationship>
+        <observation/>
+      </entryRelationship>
+      <entryRelationship>
+        <observation>
+          <templateId root="2.16.840.1.113883.10.20.23.xxxx"/>
+          <id root="123276163" extension="MDHT"/>
+          <code codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus" displayName="Adverse Event Category"/>
+          <text>Text Value</text>
+          <effectiveTime>
+            <low value="2012"/>
+            <high value="2012"/>
+          </effectiveTime>
+        </observation>
+      </entryRelationship>
+      <entryRelationship>
+        <observation/>
+      </entryRelationship>
+    </observation>
+  </entry>
+  <entry>
+    <observation>
+      <templateId root="2.16.840.1.113883.10.20.23.29"/>
+      <id root="1966850471" extension="MDHT"/>
+      <code code="850199999"/>
+      <text>Text Value</text>
+      <effectiveTime>
+        <low value="2012"/>
+        <high value="2012"/>
+      </effectiveTime>
+      <participant>
+        <participantRole classCode="ASSIGNED">
+          <templateId root="null"/>
+        </participantRole>
+      </participant>
+      <participant>
+        <participantRole classCode="ASSIGNED">
+          <templateId root="null"/>
+        </participantRole>
+      </participant>
+      <entryRelationship typeCode="COMP">
+        <observation classCode="OBS" moodCode="EVN">
+          <code code="C87881" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus"/>
+        </observation>
+      </entryRelationship>
+      <entryRelationship typeCode="COMP">
+        <observation>
+          <code codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus"/>
+        </observation>
+      </entryRelationship>
+      <entryRelationship>
+        <act classCode="ACT">
+          <templateId root="2.16.840.1.113883.10.20.23.63"/>
+          <id root="1948536621" extension="MDHT"/>
+          <code code="TBD" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus"/>
+          <text>Text Value</text>
+          <effectiveTime>
+            <low value="2012"/>
+            <high value="2012"/>
+          </effectiveTime>
+        </act>
+      </entryRelationship>
+      <entryRelationship>
+        <observation classCode="OBS">
+          <templateId root="2.16.840.1.113883.10.20.23.64"/>
+          <id root="322488094" extension="MDHT"/>
+          <code codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus" displayName="Reason for non completion"/>
+          <text>Text Value</text>
+          <effectiveTime>
+            <low value="2012"/>
+            <high value="2012"/>
+          </effectiveTime>
+        </observation>
+      </entryRelationship>
+      <entryRelationship>
+        <act>
+          <templateId root="2.16.840.1.113883.10.20.23.74"/>
+          <id root="963829242" extension="MDHT"/>
+          <code codeSystem="2.16.840.1.113883.3.26.1.1"/>
+          <text>Text Value</text>
+          <effectiveTime>
+            <low value="2012"/>
+            <high value="2012"/>
+          </effectiveTime>
+          <entryRelationship typeCode="COMP"/>
+        </act>
+      </entryRelationship>
+      <entryRelationship>
+        <observation>
+          <id root="589707417" extension="MDHT"/>
+          <code code="1225344298"/>
+          <text>Text Value</text>
+          <effectiveTime>
+            <low value="2012"/>
+            <high value="2012"/>
+          </effectiveTime>
+        </observation>
+      </entryRelationship>
+      <entryRelationship>
+        <observation>
+          <id root="1994119466" extension="MDHT"/>
+          <code code="1973109751"/>
+          <text>Text Value</text>
+          <effectiveTime>
+            <low value="2012"/>
+            <high value="2012"/>
+          </effectiveTime>
+        </observation>
+      </entryRelationship>
+      <entryRelationship>
+        <observation classCode="OBS" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.23.xxxx"/>
+          <id root="689547365" extension="MDHT"/>
+          <code code="1873560722"/>
+          <text>Text Value</text>
+          <effectiveTime>
+            <low value="2012"/>
+            <high value="2012"/>
+          </effectiveTime>
+          <participant/>
+          <entryRelationship/>
+        </observation>
+      </entryRelationship>
+      <entryRelationship>
+        <organizer classCode="CLUSTER" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.23.xxxx"/>
+          <id root="824934342" extension="MDHT"/>
+          <code code="1156425991"/>
+          <statusCode code="completed"/>
+          <effectiveTime>
+            <low value="2012"/>
+            <high value="2012"/>
+          </effectiveTime>
+        </organizer>
+      </entryRelationship>
+      <entryRelationship>
+        <act classCode="ACT" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.23.xxxx"/>
+          <id root="1074144126" extension="MDHT"/>
+          <code code="2116489012"/>
+          <text>Text Value</text>
+          <effectiveTime>
+            <low value="2012"/>
+            <high value="2012"/>
+          </effectiveTime>
+        </act>
+      </entryRelationship>
+      <entryRelationship>
+        <observation classCode="OBS" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.23.xxxx"/>
+          <id root="450734377" extension="MDHT"/>
+          <code code="889659734"/>
+          <text>Text Value</text>
+          <effectiveTime>
+            <low value="2012"/>
+            <high value="2012"/>
+          </effectiveTime>
+          <participant/>
+          <entryRelationship/>
+        </observation>
+      </entryRelationship>
+      <entryRelationship>
+        <observation>
+          <templateId root="2.16.840.1.113883.10.20.23.xxxx"/>
+          <id root="1708357304" extension="MDHT"/>
+          <code codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus" displayName="Adverse Event Category"/>
+          <text>Text Value</text>
+          <effectiveTime>
+            <low value="2012"/>
+            <high value="2012"/>
+          </effectiveTime>
+        </observation>
+      </entryRelationship>
+      <entryRelationship>
+        <observation/>
+      </entryRelationship>
+      <entryRelationship>
+        <observation/>
+      </entryRelationship>
+    </observation>
+  </entry>
+  <entry>
+    <observation classCode="OBS" moodCode="EVN">
+      <templateId root="2.16.840.1.113883.10.20.23.35"/>
+      <id root="2048263173" extension="MDHT"/>
+      <code code="687961241"/>
+      <text>Text Value</text>
+      <effectiveTime>
+        <low value="2012"/>
+        <high value="2012"/>
+      </effectiveTime>
+      <entryRelationship>
+        <act>
+          <id root="1103998200" extension="MDHT"/>
+          <code code="1672503562"/>
+          <text>Text Value</text>
+          <effectiveTime>
+            <low value="2012"/>
+            <high value="2012"/>
+          </effectiveTime>
+          <entryRelationship>
+            <observation/>
+          </entryRelationship>
+        </act>
+      </entryRelationship>
+      <entryRelationship>
+        <observation classCode="OBS">
+          <templateId root="2.16.840.1.113883.10.20.23.64"/>
+          <id root="2127668919" extension="MDHT"/>
+          <code codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus" displayName="Reason for non completion"/>
+          <text>Text Value</text>
+          <effectiveTime>
+            <low value="2012"/>
+            <high value="2012"/>
+          </effectiveTime>
+        </observation>
+      </entryRelationship>
+      <entryRelationship>
+        <act classCode="ACT">
+          <templateId root="2.16.840.1.113883.10.20.23.63"/>
+          <id root="785234282" extension="MDHT"/>
+          <code code="TBD" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus"/>
+          <text>Text Value</text>
+          <effectiveTime>
+            <low value="2012"/>
+            <high value="2012"/>
+          </effectiveTime>
+        </act>
+      </entryRelationship>
+      <entryRelationship>
+        <observation classCode="OBS" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.23.xxxx"/>
+          <id root="1464927645" extension="MDHT"/>
+          <code code="950183133"/>
+          <text>Text Value</text>
+          <effectiveTime>
+            <low value="2012"/>
+            <high value="2012"/>
+          </effectiveTime>
+          <participant/>
+          <entryRelationship/>
+        </observation>
+      </entryRelationship>
+      <entryRelationship>
+        <organizer classCode="CLUSTER" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.23.xxxx"/>
+          <id root="317150069" extension="MDHT"/>
+          <code code="1847661148"/>
+          <statusCode code="completed"/>
+          <effectiveTime>
+            <low value="2012"/>
+            <high value="2012"/>
+          </effectiveTime>
+        </organizer>
+      </entryRelationship>
+      <entryRelationship>
+        <act classCode="ACT" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.23.xxxx"/>
+          <id root="623177375" extension="MDHT"/>
+          <code code="1085656517"/>
+          <text>Text Value</text>
+          <effectiveTime>
+            <low value="2012"/>
+            <high value="2012"/>
+          </effectiveTime>
+        </act>
+      </entryRelationship>
+      <entryRelationship>
+        <observation classCode="OBS" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.23.xxxx"/>
+          <id root="994685980" extension="MDHT"/>
+          <code code="1668059575"/>
+          <text>Text Value</text>
+          <effectiveTime>
+            <low value="2012"/>
+            <high value="2012"/>
+          </effectiveTime>
+          <participant/>
+          <entryRelationship/>
+        </observation>
+      </entryRelationship>
+      <entryRelationship>
+        <observation>
+          <templateId root="2.16.840.1.113883.10.20.23.xxxx"/>
+          <id root="212038845" extension="MDHT"/>
+          <code codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus" displayName="Adverse Event Category"/>
+          <text>Text Value</text>
+          <effectiveTime>
+            <low value="2012"/>
+            <high value="2012"/>
+          </effectiveTime>
+        </observation>
+      </entryRelationship>
+      <entryRelationship>
+        <observation/>
+      </entryRelationship>
+    </observation>
+  </entry>
+  <entry>
+    <observation classCode="OBS" moodCode="EVN">
+      <templateId root="2.16.840.1.113883.10.20.23.40"/>
+      <id root="885594421" extension="MDHT"/>
+      <code code="141734589"/>
+      <text>Text Value</text>
+      <effectiveTime>
+        <low value="2012"/>
+        <high value="2012"/>
+      </effectiveTime>
+      <entryRelationship>
+        <act classCode="ACT">
+          <templateId root="2.16.840.1.113883.10.20.23.63"/>
+          <id root="1680080641" extension="MDHT"/>
+          <code code="TBD" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus"/>
+          <text>Text Value</text>
+          <effectiveTime>
+            <low value="2012"/>
+            <high value="2012"/>
+          </effectiveTime>
+        </act>
+      </entryRelationship>
+      <entryRelationship>
+        <procedure>
+          <id root="888513467" extension="MDHT"/>
+          <code code="1385255520"/>
+          <text>Text Value</text>
+          <effectiveTime>
+            <low value="2012"/>
+            <high value="2012"/>
+          </effectiveTime>
+          <specimen typeCode="SPC">
+            <templateId root="null"/>
+          </specimen>
+          <entryRelationship typeCode="COMP"/>
+          <entryRelationship typeCode="COMP"/>
+          <entryRelationship typeCode="COMP"/>
+          <entryRelationship>
+            <observation/>
+          </entryRelationship>
+          <entryRelationship>
+            <act>
+              <templateId root="2.16.840.1.113883.10.20.23.74"/>
+              <code codeSystem="2.16.840.1.113883.3.26.1.1"/>
+            </act>
+          </entryRelationship>
+        </procedure>
+      </entryRelationship>
+      <entryRelationship>
+        <observation classCode="OBS">
+          <templateId root="2.16.840.1.113883.10.20.23.64"/>
+          <id root="69966309" extension="MDHT"/>
+          <code codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus" displayName="Reason for non completion"/>
+          <text>Text Value</text>
+          <effectiveTime>
+            <low value="2012"/>
+            <high value="2012"/>
+          </effectiveTime>
+        </observation>
+      </entryRelationship>
+      <entryRelationship>
+        <act>
+          <templateId root="2.16.840.1.113883.10.20.23.74"/>
+          <id root="576090615" extension="MDHT"/>
+          <code codeSystem="2.16.840.1.113883.3.26.1.1"/>
+          <text>Text Value</text>
+          <effectiveTime>
+            <low value="2012"/>
+            <high value="2012"/>
+          </effectiveTime>
+          <entryRelationship typeCode="COMP"/>
+        </act>
+      </entryRelationship>
+      <entryRelationship>
+        <observation classCode="OBS" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.23.xxxx"/>
+          <id root="136945565" extension="MDHT"/>
+          <code code="2040144102"/>
+          <text>Text Value</text>
+          <effectiveTime>
+            <low value="2012"/>
+            <high value="2012"/>
+          </effectiveTime>
+          <participant/>
+          <entryRelationship/>
+        </observation>
+      </entryRelationship>
+      <entryRelationship>
+        <organizer classCode="CLUSTER" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.23.xxxx"/>
+          <id root="1864176304" extension="MDHT"/>
+          <code code="23452824"/>
+          <statusCode code="completed"/>
+          <effectiveTime>
+            <low value="2012"/>
+            <high value="2012"/>
+          </effectiveTime>
+        </organizer>
+      </entryRelationship>
+      <entryRelationship>
+        <act classCode="ACT" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.23.xxxx"/>
+          <id root="1818537033" extension="MDHT"/>
+          <code code="766106929"/>
+          <text>Text Value</text>
+          <effectiveTime>
+            <low value="2012"/>
+            <high value="2012"/>
+          </effectiveTime>
+        </act>
+      </entryRelationship>
+      <entryRelationship>
+        <observation classCode="OBS" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.23.xxxx"/>
+          <id root="955705618" extension="MDHT"/>
+          <code code="562135730"/>
+          <text>Text Value</text>
+          <effectiveTime>
+            <low value="2012"/>
+            <high value="2012"/>
+          </effectiveTime>
+          <participant/>
+          <entryRelationship/>
+        </observation>
+      </entryRelationship>
+      <entryRelationship>
+        <observation>
+          <templateId root="2.16.840.1.113883.10.20.23.xxxx"/>
+          <id root="1732803306" extension="MDHT"/>
+          <code codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus" displayName="Adverse Event Category"/>
+          <text>Text Value</text>
+          <effectiveTime>
+            <low value="2012"/>
+            <high value="2012"/>
+          </effectiveTime>
+        </observation>
+      </entryRelationship>
+      <entryRelationship>
+        <observation/>
+      </entryRelationship>
+    </observation>
+  </entry>
+  <entry>
+    <observation classCode="OBS">
+      <templateId root="2.16.840.1.113883.10.20.23.102"/>
+      <id root="1689080583" extension="MDHT"/>
+      <code codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus"/>
+      <text>Text Value</text>
+      <effectiveTime>
+        <low value="2012"/>
+        <high value="2012"/>
+      </effectiveTime>
+      <entryRelationship>
+        <act classCode="ACT">
+          <templateId root="2.16.840.1.113883.10.20.23.63"/>
+          <id root="13361116" extension="MDHT"/>
+          <code code="TBD" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus"/>
+          <text>Text Value</text>
+          <effectiveTime>
+            <low value="2012"/>
+            <high value="2012"/>
+          </effectiveTime>
+        </act>
+      </entryRelationship>
+      <entryRelationship>
+        <observation/>
+      </entryRelationship>
+      <entryRelationship>
+        <observation/>
+      </entryRelationship>
+      <entryRelationship>
+        <observation>
+          <id root="2057314290" extension="MDHT"/>
+          <code code="624802929"/>
+          <text>Text Value</text>
+          <effectiveTime>
+            <low value="2012"/>
+            <high value="2012"/>
+          </effectiveTime>
+        </observation>
+      </entryRelationship>
+      <entryRelationship>
+        <observation/>
+      </entryRelationship>
+      <entryRelationship>
+        <observation classCode="OBS" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.23.xxxx"/>
+          <id root="1304373073" extension="MDHT"/>
+          <code code="960112774"/>
+          <text>Text Value</text>
+          <effectiveTime>
+            <low value="2012"/>
+            <high value="2012"/>
+          </effectiveTime>
+          <participant/>
+          <entryRelationship/>
+        </observation>
+      </entryRelationship>
+      <entryRelationship>
+        <organizer classCode="CLUSTER" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.23.xxxx"/>
+          <id root="1793425219" extension="MDHT"/>
+          <code code="1640830218"/>
+          <statusCode code="completed"/>
+          <effectiveTime>
+            <low value="2012"/>
+            <high value="2012"/>
+          </effectiveTime>
+        </organizer>
+      </entryRelationship>
+      <entryRelationship>
+        <act classCode="ACT" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.23.xxxx"/>
+          <id root="569046175" extension="MDHT"/>
+          <code code="251216802"/>
+          <text>Text Value</text>
+          <effectiveTime>
+            <low value="2012"/>
+            <high value="2012"/>
+          </effectiveTime>
+        </act>
+      </entryRelationship>
+      <entryRelationship>
+        <observation classCode="OBS" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.23.xxxx"/>
+          <id root="238948014" extension="MDHT"/>
+          <code code="911328400"/>
+          <text>Text Value</text>
+          <effectiveTime>
+            <low value="2012"/>
+            <high value="2012"/>
+          </effectiveTime>
+          <participant/>
+          <entryRelationship/>
+        </observation>
+      </entryRelationship>
+      <entryRelationship>
+        <act>
+          <id root="1222502089" extension="MDHT"/>
+          <code code="215108254"/>
+          <text>Text Value</text>
+          <effectiveTime>
+            <low value="2012"/>
+            <high value="2012"/>
+          </effectiveTime>
+          <entryRelationship>
+            <observation/>
+          </entryRelationship>
+        </act>
+      </entryRelationship>
+      <entryRelationship>
+        <observation classCode="OBS">
+          <templateId root="2.16.840.1.113883.10.20.23.64"/>
+          <id root="700699379" extension="MDHT"/>
+          <code codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus" displayName="Reason for non completion"/>
+          <text>Text Value</text>
+          <effectiveTime>
+            <low value="2012"/>
+            <high value="2012"/>
+          </effectiveTime>
+        </observation>
+      </entryRelationship>
+      <entryRelationship>
+        <observation>
+          <templateId root="2.16.840.1.113883.10.20.23.xxxx"/>
+          <id root="1505082879" extension="MDHT"/>
+          <code codeSystem="2.16.840.1.113883.3.26.1.1" displayName="Serious Event"/>
+          <text>Text Value</text>
+          <effectiveTime>
+            <low value="2012"/>
+            <high value="2012"/>
+          </effectiveTime>
+          <entryRelationship typeCode="COMP"/>
+        </observation>
+      </entryRelationship>
+      <entryRelationship>
+        <observation classCode="OBS" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.23.xxxx"/>
+          <id root="780841369" extension="MDHT"/>
+          <code code="NCI" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus"/>
+          <text>Text Value</text>
+          <effectiveTime>
+            <low value="2012"/>
+            <high value="2012"/>
+          </effectiveTime>
+        </observation>
+      </entryRelationship>
+      <entryRelationship>
+        <observation classCode="OBS" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.23.xxxx"/>
+          <id root="1952906518" extension="MDHT"/>
+          <code code="308189448"/>
+          <text>Text Value</text>
+          <effectiveTime>
+            <low value="2012"/>
+            <high value="2012"/>
+          </effectiveTime>
+        </observation>
+      </entryRelationship>
+      <entryRelationship>
+        <observation>
+          <id root="1369524146" extension="MDHT"/>
+          <code codeSystem="2.16.840.1.113883.3.26.1.1"/>
+          <text>Text Value</text>
+          <effectiveTime>
+            <low value="2012"/>
+            <high value="2012"/>
+          </effectiveTime>
+        </observation>
+      </entryRelationship>
+      <entryRelationship>
+        <observation/>
+      </entryRelationship>
+      <entryRelationship>
+        <observation classCode="OBS" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.23.xxxx"/>
+          <id root="229159055" extension="MDHT"/>
+          <code code="C83208" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus" displayName="Adverse Event Pattern"/>
+          <text>Text Value</text>
+          <effectiveTime>
+            <low value="2012"/>
+            <high value="2012"/>
+          </effectiveTime>
+        </observation>
+      </entryRelationship>
+      <entryRelationship>
+        <observation>
+          <templateId root="2.16.840.1.113883.10.20.23.xxxx"/>
+          <id root="331684344" extension="MDHT"/>
+          <code codeSystem="2.16.840.1.113883.3.26.1.1" displayName="Adverse Event Outcome"/>
+          <text>Text Value</text>
+          <effectiveTime>
+            <low value="2012"/>
+            <high value="2012"/>
+          </effectiveTime>
+        </observation>
+      </entryRelationship>
+      <entryRelationship>
+        <observation>
+          <templateId root="2.16.840.1.113883.10.20.25.xxxx"/>
+          <id root="594754389" extension="MDHT"/>
+          <code codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus" displayName="Adverse Event Concommitant Treatment"/>
+          <text>Text Value</text>
+          <effectiveTime>
+            <low value="2012"/>
+            <high value="2012"/>
+          </effectiveTime>
+        </observation>
+      </entryRelationship>
+      <entryRelationship>
+        <observation classCode="OBS" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.23.xxxx"/>
+          <id root="1085431488" extension="MDHT"/>
+          <code code="C78605" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus" displayName="Adverse Event Toxicity Grade"/>
+          <text>Text Value</text>
+          <effectiveTime>
+            <low value="2012"/>
+            <high value="2012"/>
+          </effectiveTime>
+        </observation>
+      </entryRelationship>
+      <entryRelationship>
+        <observation>
+          <templateId root="2.16.840.1.113883.10.20.23.xxxx"/>
+          <id root="56482725" extension="MDHT"/>
+          <code codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus" displayName="Adverse Event Category"/>
+          <text>Text Value</text>
+          <effectiveTime>
+            <low value="2012"/>
+            <high value="2012"/>
+          </effectiveTime>
+        </observation>
+      </entryRelationship>
+      <entryRelationship>
+        <observation/>
+      </entryRelationship>
+    </observation>
+  </entry>
+  <entry>
+    <observation>
+      <id root="2017627815" extension="MDHT"/>
+      <code code="1193627969"/>
+      <text>Text Value</text>
+      <effectiveTime>
+        <low value="2012"/>
+        <high value="2012"/>
+      </effectiveTime>
+      <participant>
+        <participantRole classCode="ASSIGNED">
+          <templateId root="null"/>
+        </participantRole>
+      </participant>
+      <participant>
+        <participantRole classCode="ASSIGNED">
+          <templateId root="null"/>
+        </participantRole>
+      </participant>
+      <entryRelationship>
+        <observation classCode="OBS">
+          <templateId root="2.16.840.1.113883.10.20.23.64"/>
+          <id root="1371055883" extension="MDHT"/>
+          <code codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus" displayName="Reason for non completion"/>
+          <text>Text Value</text>
+          <effectiveTime>
+            <low value="2012"/>
+            <high value="2012"/>
+          </effectiveTime>
+        </observation>
+      </entryRelationship>
+      <entryRelationship>
+        <act classCode="ACT">
+          <templateId root="2.16.840.1.113883.10.20.23.63"/>
+          <id root="1008737431" extension="MDHT"/>
+          <code code="TBD" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus"/>
+          <text>Text Value</text>
+          <effectiveTime>
+            <low value="2012"/>
+            <high value="2012"/>
+          </effectiveTime>
+        </act>
+      </entryRelationship>
+      <entryRelationship>
+        <procedure>
+          <id root="1710385032" extension="MDHT"/>
+          <code code="19276822"/>
+          <text>Text Value</text>
+          <effectiveTime>
+            <low value="2012"/>
+            <high value="2012"/>
+          </effectiveTime>
+          <specimen typeCode="SPC">
+            <templateId root="null"/>
+          </specimen>
+          <entryRelationship typeCode="COMP"/>
+          <entryRelationship typeCode="COMP"/>
+          <entryRelationship typeCode="COMP"/>
+          <entryRelationship>
+            <observation/>
+          </entryRelationship>
+          <entryRelationship>
+            <act>
+              <templateId root="2.16.840.1.113883.10.20.23.74"/>
+              <code codeSystem="2.16.840.1.113883.3.26.1.1"/>
+            </act>
+          </entryRelationship>
+        </procedure>
+      </entryRelationship>
+      <entryRelationship>
+        <observation classCode="OBS" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.23.xxxx"/>
+          <id root="1469726620" extension="MDHT"/>
+          <code code="2130416648"/>
+          <text>Text Value</text>
+          <effectiveTime>
+            <low value="2012"/>
+            <high value="2012"/>
+          </effectiveTime>
+          <participant/>
+          <entryRelationship/>
+        </observation>
+      </entryRelationship>
+      <entryRelationship>
+        <organizer classCode="CLUSTER" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.23.xxxx"/>
+          <id root="802632014" extension="MDHT"/>
+          <code code="1344139866"/>
+          <statusCode code="completed"/>
+          <effectiveTime>
+            <low value="2012"/>
+            <high value="2012"/>
+          </effectiveTime>
+        </organizer>
+      </entryRelationship>
+      <entryRelationship>
+        <act classCode="ACT" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.23.xxxx"/>
+          <id root="98320522" extension="MDHT"/>
+          <code code="1904085982"/>
+          <text>Text Value</text>
+          <effectiveTime>
+            <low value="2012"/>
+            <high value="2012"/>
+          </effectiveTime>
+        </act>
+      </entryRelationship>
+      <entryRelationship>
+        <observation classCode="OBS" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.23.xxxx"/>
+          <id root="2143064601" extension="MDHT"/>
+          <code code="1088806277"/>
+          <text>Text Value</text>
+          <effectiveTime>
+            <low value="2012"/>
+            <high value="2012"/>
+          </effectiveTime>
+          <participant/>
+          <entryRelationship/>
+        </observation>
+      </entryRelationship>
+      <entryRelationship>
+        <observation classCode="OBS" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.23.xxxx"/>
+          <id root="1602978787" extension="MDHT"/>
+          <code code="C78605" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus" displayName="Adverse Event Toxicity Grade"/>
+          <text>Text Value</text>
+          <effectiveTime>
+            <low value="2012"/>
+            <high value="2012"/>
+          </effectiveTime>
+        </observation>
+      </entryRelationship>
+      <entryRelationship>
+        <observation>
+          <templateId root="2.16.840.1.113883.10.20.23.xxxx"/>
+          <id root="2040102230" extension="MDHT"/>
+          <code codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus" displayName="Adverse Event Category"/>
+          <text>Text Value</text>
+          <effectiveTime>
+            <low value="2012"/>
+            <high value="2012"/>
+          </effectiveTime>
+        </observation>
+      </entryRelationship>
+      <entryRelationship>
+        <observation/>
+      </entryRelationship>
+      <entryRelationship>
+        <observation/>
+      </entryRelationship>
+      <entryRelationship>
+        <observation/>
+      </entryRelationship>
+      <entryRelationship>
+        <observation classCode="OBS">
+          <templateId root="2.16.840.1.113883.10.20.23.xxxx"/>
+          <id root="2109176287" extension="MDHT"/>
+          <code codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus"/>
+          <text>Text Value</text>
+          <effectiveTime>
+            <low value="2012"/>
+            <high value="2012"/>
+          </effectiveTime>
+        </observation>
+      </entryRelationship>
+      <entryRelationship>
+        <observation/>
+      </entryRelationship>
+      <entryRelationship>
+        <observation classCode="OBS" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.23.xxxx"/>
+          <id root="1036149654" extension="MDHT"/>
+          <code codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus"/>
+          <text>Text Value</text>
+          <effectiveTime>
+            <low value="2012"/>
+            <high value="2012"/>
+          </effectiveTime>
+        </observation>
+      </entryRelationship>
+      <entryRelationship>
+        <observation>
+          <id root="849433215" extension="MDHT"/>
+          <code code="364177701"/>
+          <text>Text Value</text>
+          <effectiveTime>
+            <low value="2012"/>
+            <high value="2012"/>
+          </effectiveTime>
+        </observation>
+      </entryRelationship>
+    </observation>
+  </entry>
+  <entry>
+    <substanceAdministration>
+      <id root="884766957" extension="MDHT"/>
+      <code code="163992830"/>
+      <text>Text Value</text>
+      <effectiveTime value="20120806"/>
+      <consumable/>
+      <entryRelationship typeCode="COMP">
+        <observation classCode="OBS" moodCode="EVN">
+          <code codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus"/>
+        </observation>
+      </entryRelationship>
+      <entryRelationship>
+        <act classCode="ACT">
+          <templateId root="2.16.840.1.113883.10.20.23.63"/>
+          <id root="1935162661" extension="MDHT"/>
+          <code code="TBD" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus"/>
+          <text>Text Value</text>
+          <effectiveTime>
+            <low value="2012"/>
+            <high value="2012"/>
+          </effectiveTime>
+        </act>
+      </entryRelationship>
+      <entryRelationship>
+        <act>
+          <templateId root="2.16.840.1.113883.10.20.23.71"/>
+          <id root="1361921051" extension="MDHT"/>
+          <code codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus"/>
+          <text>Text Value</text>
+          <effectiveTime>
+            <low value="2012"/>
+            <high value="2012"/>
+          </effectiveTime>
+        </act>
+      </entryRelationship>
+      <entryRelationship>
+        <act>
+          <templateId root="2.16.840.1.113883.10.20.23.74"/>
+          <id root="2025233720" extension="MDHT"/>
+          <code codeSystem="2.16.840.1.113883.3.26.1.1"/>
+          <text>Text Value</text>
+          <effectiveTime>
+            <low value="2012"/>
+            <high value="2012"/>
+          </effectiveTime>
+          <entryRelationship typeCode="COMP"/>
+        </act>
+      </entryRelationship>
+      <entryRelationship>
+        <observation>
+          <id root="1179372059" extension="MDHT"/>
+          <code code="1745757489"/>
+          <text>Text Value</text>
+          <effectiveTime>
+            <low value="2012"/>
+            <high value="2012"/>
+          </effectiveTime>
+        </observation>
+      </entryRelationship>
+      <entryRelationship>
+        <observation/>
+      </entryRelationship>
+      <entryRelationship>
+        <act>
+          <id root="1277633115" extension="MDHT"/>
+          <code code="1072808184"/>
+          <text>Text Value</text>
+          <effectiveTime>
+            <low value="2012"/>
+            <high value="2012"/>
+          </effectiveTime>
+          <entryRelationship>
+            <observation/>
+          </entryRelationship>
+        </act>
+      </entryRelationship>
+      <entryRelationship>
+        <observation classCode="OBS">
+          <templateId root="2.16.840.1.113883.10.20.23.64"/>
+          <id root="1761724306" extension="MDHT"/>
+          <code codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus" displayName="Reason for non completion"/>
+          <text>Text Value</text>
+          <effectiveTime>
+            <low value="2012"/>
+            <high value="2012"/>
+          </effectiveTime>
+        </observation>
+      </entryRelationship>
+      <entryRelationship>
+        <observation classCode="OBS" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.23.xxxx"/>
+          <id root="1882032969" extension="MDHT"/>
+          <code code="573279443"/>
+          <text>Text Value</text>
+          <effectiveTime>
+            <low value="2012"/>
+            <high value="2012"/>
+          </effectiveTime>
+          <participant/>
+          <entryRelationship/>
+        </observation>
+      </entryRelationship>
+      <entryRelationship>
+        <organizer classCode="CLUSTER" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.23.xxxx"/>
+          <id root="1142243218" extension="MDHT"/>
+          <code code="1806323410"/>
+          <statusCode code="completed"/>
+          <effectiveTime>
+            <low value="2012"/>
+            <high value="2012"/>
+          </effectiveTime>
+        </organizer>
+      </entryRelationship>
+      <entryRelationship>
+        <act classCode="ACT" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.23.xxxx"/>
+          <id root="105859310" extension="MDHT"/>
+          <code code="1879662106"/>
+          <text>Text Value</text>
+          <effectiveTime>
+            <low value="2012"/>
+            <high value="2012"/>
+          </effectiveTime>
+        </act>
+      </entryRelationship>
+      <entryRelationship>
+        <observation classCode="OBS" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.23.xxxx"/>
+          <id root="1049848130" extension="MDHT"/>
+          <code code="1408669707"/>
+          <text>Text Value</text>
+          <effectiveTime>
+            <low value="2012"/>
+            <high value="2012"/>
+          </effectiveTime>
+          <participant/>
+          <entryRelationship/>
+        </observation>
+      </entryRelationship>
+      <entryRelationship>
+        <observation classCode="OBS" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.23.xxxx"/>
+          <id root="2106216984" extension="MDHT"/>
+          <code code="C83085" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus" displayName="Concomitant Medication Indication"/>
+          <text>Text Value</text>
+          <effectiveTime>
+            <low value="2012"/>
+            <high value="2012"/>
+          </effectiveTime>
+        </observation>
+      </entryRelationship>
+      <entryRelationship>
+        <observation>
+          <templateId root="2.16.840.1.113883.10.20.23.xxxx"/>
+          <id root="1272058697" extension="MDHT"/>
+          <code codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus"/>
+          <text>Text Value</text>
+          <effectiveTime>
+            <low value="2012"/>
+            <high value="2012"/>
+          </effectiveTime>
+        </observation>
+      </entryRelationship>
+      <entryRelationship>
+        <observation>
+          <id root="2140614229" extension="MDHT"/>
+          <code code="258421523"/>
+          <text>Text Value</text>
+          <effectiveTime>
+            <low value="2012"/>
+            <high value="2012"/>
+          </effectiveTime>
+        </observation>
+      </entryRelationship>
+      <entryRelationship>
+        <observation>
+          <templateId root="2.16.840.1.113883.10.20.23.xxxx"/>
+          <id root="1934382554" extension="MDHT"/>
+          <code codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus" displayName="Adverse Event Category"/>
+          <text>Text Value</text>
+          <effectiveTime>
+            <low value="2012"/>
+            <high value="2012"/>
+          </effectiveTime>
+        </observation>
+      </entryRelationship>
+      <entryRelationship>
+        <observation/>
+      </entryRelationship>
+    </substanceAdministration>
+  </entry>
+  <entry>
+    <observation classCode="OBS" moodCode="EVN">
+      <templateId root="2.16.840.1.113883.10.20.23.xxxx"/>
+      <id root="1679904229" extension="MDHT"/>
+      <code code="361723276"/>
+      <text>Text Value</text>
+      <effectiveTime>
+        <low value="2012"/>
+        <high value="2012"/>
+      </effectiveTime>
+      <participant>
+        <participantRole classCode="ASSIGNED">
+          <templateId root="null"/>
+        </participantRole>
+      </participant>
+      <entryRelationship>
+        <act classCode="ACT" moodCode="EVN"/>
+      </entryRelationship>
+    </observation>
+  </entry>
+  <entry>
+    <observation>
+      <templateId root="2.16.840.1.113883.10.20.23.23"/>
+      <id root="229011417" extension="MDHT"/>
+      <code codeSystem="2.16.840.1.113883.3.26.1.1" displayName="Adverse Event - Reported"/>
+      <text>Text Value</text>
+      <effectiveTime>
+        <low value="2012"/>
+        <high value="2012"/>
+      </effectiveTime>
+      <entryRelationship>
+        <act classCode="ACT">
+          <templateId root="2.16.840.1.113883.10.20.23.63"/>
+          <id root="574064796" extension="MDHT"/>
+          <code code="TBD" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus"/>
+          <text>Text Value</text>
+          <effectiveTime>
+            <low value="2012"/>
+            <high value="2012"/>
+          </effectiveTime>
+        </act>
+      </entryRelationship>
+      <entryRelationship>
+        <observation/>
+      </entryRelationship>
+      <entryRelationship>
+        <observation/>
+      </entryRelationship>
+      <entryRelationship>
+        <observation/>
+      </entryRelationship>
+      <entryRelationship>
+        <observation>
+          <id root="781716772" extension="MDHT"/>
+          <code code="1973242902"/>
+          <text>Text Value</text>
+          <effectiveTime>
+            <low value="2012"/>
+            <high value="2012"/>
+          </effectiveTime>
+        </observation>
+      </entryRelationship>
+      <entryRelationship>
+        <organizer classCode="CLUSTER" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.23.xxxx"/>
+          <id root="1955366724" extension="MDHT"/>
+          <code code="1911929047"/>
+          <statusCode code="completed"/>
+          <effectiveTime>
+            <low value="2012"/>
+            <high value="2012"/>
+          </effectiveTime>
+        </organizer>
+      </entryRelationship>
+      <entryRelationship>
+        <observation classCode="OBS" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.23.xxxx"/>
+          <id root="303461326" extension="MDHT"/>
+          <code code="1638567882"/>
+          <text>Text Value</text>
+          <effectiveTime>
+            <low value="2012"/>
+            <high value="2012"/>
+          </effectiveTime>
+          <participant/>
+          <entryRelationship/>
+        </observation>
+      </entryRelationship>
+      <entryRelationship>
+        <act classCode="ACT" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.23.xxxx"/>
+          <id root="336279453" extension="MDHT"/>
+          <code code="1683328051"/>
+          <text>Text Value</text>
+          <effectiveTime>
+            <low value="2012"/>
+            <high value="2012"/>
+          </effectiveTime>
+        </act>
+      </entryRelationship>
+      <entryRelationship>
+        <observation classCode="OBS" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.23.xxxx"/>
+          <id root="1297709454" extension="MDHT"/>
+          <code code="846523390"/>
+          <text>Text Value</text>
+          <effectiveTime>
+            <low value="2012"/>
+            <high value="2012"/>
+          </effectiveTime>
+          <participant/>
+          <entryRelationship/>
+        </observation>
+      </entryRelationship>
+      <entryRelationship>
+        <observation/>
+      </entryRelationship>
+      <entryRelationship>
+        <observation/>
+      </entryRelationship>
+      <entryRelationship>
+        <observation>
+          <templateId root="2.16.840.1.113883.10.20.23.xxxx"/>
+          <id root="681674897" extension="MDHT"/>
+          <code codeSystem="2.16.840.1.113883.3.26.1.1" displayName="Serious Event"/>
+          <text>Text Value</text>
+          <effectiveTime>
+            <low value="2012"/>
+            <high value="2012"/>
+          </effectiveTime>
+          <entryRelationship typeCode="COMP"/>
+        </observation>
+      </entryRelationship>
+      <entryRelationship>
+        <observation classCode="OBS" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.23.xxxx"/>
+          <id root="709972808" extension="MDHT"/>
+          <code code="NCI" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus"/>
+          <text>Text Value</text>
+          <effectiveTime>
+            <low value="2012"/>
+            <high value="2012"/>
+          </effectiveTime>
+        </observation>
+      </entryRelationship>
+      <entryRelationship>
+        <observation classCode="OBS" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.23.xxxx"/>
+          <id root="1299269589" extension="MDHT"/>
+          <code code="1298047566"/>
+          <text>Text Value</text>
+          <effectiveTime>
+            <low value="2012"/>
+            <high value="2012"/>
+          </effectiveTime>
+        </observation>
+      </entryRelationship>
+      <entryRelationship>
+        <observation>
+          <id root="1630950075" extension="MDHT"/>
+          <code codeSystem="2.16.840.1.113883.3.26.1.1"/>
+          <text>Text Value</text>
+          <effectiveTime>
+            <low value="2012"/>
+            <high value="2012"/>
+          </effectiveTime>
+        </observation>
+      </entryRelationship>
+      <entryRelationship>
+        <observation/>
+      </entryRelationship>
+      <entryRelationship>
+        <observation classCode="OBS" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.23.xxxx"/>
+          <id root="589866716" extension="MDHT"/>
+          <code code="C83208" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus" displayName="Adverse Event Pattern"/>
+          <text>Text Value</text>
+          <effectiveTime>
+            <low value="2012"/>
+            <high value="2012"/>
+          </effectiveTime>
+        </observation>
+      </entryRelationship>
+      <entryRelationship>
+        <observation>
+          <templateId root="2.16.840.1.113883.10.20.23.xxxx"/>
+          <id root="793180971" extension="MDHT"/>
+          <code codeSystem="2.16.840.1.113883.3.26.1.1" displayName="Adverse Event Outcome"/>
+          <text>Text Value</text>
+          <effectiveTime>
+            <low value="2012"/>
+            <high value="2012"/>
+          </effectiveTime>
+        </observation>
+      </entryRelationship>
+      <entryRelationship>
+        <observation>
+          <templateId root="2.16.840.1.113883.10.20.25.xxxx"/>
+          <id root="1280383313" extension="MDHT"/>
+          <code codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus" displayName="Adverse Event Concommitant Treatment"/>
+          <text>Text Value</text>
+          <effectiveTime>
+            <low value="2012"/>
+            <high value="2012"/>
+          </effectiveTime>
+        </observation>
+      </entryRelationship>
+      <entryRelationship>
+        <observation classCode="OBS" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.23.xxxx"/>
+          <id root="1012652295" extension="MDHT"/>
+          <code code="C78605" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus" displayName="Adverse Event Toxicity Grade"/>
+          <text>Text Value</text>
+          <effectiveTime>
+            <low value="2012"/>
+            <high value="2012"/>
+          </effectiveTime>
+        </observation>
+      </entryRelationship>
+      <entryRelationship>
+        <observation>
+          <templateId root="2.16.840.1.113883.10.20.23.xxxx"/>
+          <id root="710223558" extension="MDHT"/>
+          <code codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus" displayName="Adverse Event Category"/>
+          <text>Text Value</text>
+          <effectiveTime>
+            <low value="2012"/>
+            <high value="2012"/>
+          </effectiveTime>
+        </observation>
+      </entryRelationship>
+      <entryRelationship>
+        <observation/>
+      </entryRelationship>
+    </observation>
+  </entry>
+</section>]]></codeblock>
+<section id="changes">
+</section>
+<p><ph id="classformalname">Human Clinical Subject Data Document Sectioin</ph></p>
+<p id="shortdesc">[Section: templateId <tt>2.16.840.1.113883.10.20.23.13</tt>]</p>
+</body>
+</topic>

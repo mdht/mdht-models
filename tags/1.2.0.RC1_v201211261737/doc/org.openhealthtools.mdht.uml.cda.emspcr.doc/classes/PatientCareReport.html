@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en-us" xml:lang="en-us">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="copyright" content="(C) Copyright 2005"/>
+<meta name="DC.rights.owner" content="(C) Copyright 2005"/>
+<meta name="DC.Type" content="topic"/>
+<meta name="DC.Title" content="Patient Care Report"/>
+<meta name="abstract" content="[ClinicalDocument: templateId 2.16.840.1.113883.17.3.10.1]"/>
+<meta name="description" content="[ClinicalDocument: templateId 2.16.840.1.113883.17.3.10.1]"/>
+<meta name="DC.Coverage" content="ClinicalDocument"/>
+<meta name="DC.Relation" scheme="URI" content="../content/DocumentTemplates.html"/>
+<meta name="DC.Format" content="XHTML"/>
+<meta name="DC.Identifier" content="classId"/>
+<meta name="DC.Language" content="en-us"/>
+<link rel="stylesheet" type="text/css" href="../css/commonltr.css"/>
+<title>Patient Care Report</title>
+</head>
+<body id="classId"><a name="classId"><!-- --></a>
+<div>
+	<p><b>For Discussion and Demonstration Only</b> The Normative content for these specifications
+	may be found on the HL7, IHE, and HITSP web sites.</p>
+</div>
+
+<h1 class="title topictitle1">Patient Care Report</h1>
+
+
+
+<div class="body"><p class="shortdesc">[ClinicalDocument: templateId <tt class="ph tt">2.16.840.1.113883.17.3.10.1</tt>]</p>
+
+
+<div class="section">
+</div>
+
+
+
+<ol class="ol">
+<li class="li"><strong class="ph b">SHALL</strong> conform to <a class="xref" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.consol.doc/classes/GeneralHeaderConstraints.html">Consol General Header Constraints</a> template (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.22.1.1</tt>)</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@classCode</strong>="DOCCLIN" </tt> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.5.6 HL7ActClass</tt>)
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@moodCode</strong>="EVN" </tt><em class="ph i">Event</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.5.1001 HL7ActMood</tt>)
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt> (CONF:5253)<tt class="ph tt"><strong class="ph b">/@code</strong>="67796-3" </tt><em class="ph i">EMS Patient Care Report</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.1 LOINC</tt>)
+</li>
+
+<li class="li">Contains zero or one [0..1] <tt class="ph tt"><strong class="ph b">author</strong></tt> <ol class="ol" type="a"><li class="li"> This author <strong class="ph b">SHALL</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">@typeCode</strong>="AUT" </tt></li>
+<li class="li"> This author Contains zero or one [0..1] <tt class="ph tt"><strong class="ph b">assignedAuthor</strong></tt> <ol class="ol" type="i"><li class="li"> This assignedAuthor <strong class="ph b">SHALL</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">@classCode</strong>="ASSIGNED" </tt></li>
+<li class="li"> This assignedAuthor Contains zero or one [0..1] <tt class="ph tt"><strong class="ph b">assignedAuthoringDevice</strong></tt> <ol class="ol"><li class="li"> This assignedAuthoringDevice <strong class="ph b">SHALL</strong> conform to <a class="xref" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.consol.doc/classes/AuthoringDevice.html">Consol Authoring Device</a></li>
+<li class="li"> This assignedAuthoringDevice <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">manufacturerModelName</strong></tt> (CONF:9936)<p class="p"><em class="ph i">NEMSIS Trace: ERecord.02</em></p>
+</li>
+<li class="li"> This assignedAuthoringDevice <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">softwareName</strong></tt> (CONF:9999)<p class="p"><em class="ph i">NEMSIS Trace: ERecord.03 and ERecord.04 (version), concatenated with an intervening space</em></p>
+</li>
+</ol>
+ </li>
+</ol>
+ </li>
+</ol>
+
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">recordTarget</strong></tt> <ol class="ol" type="a"><li class="li"> This recordTarget <strong class="ph b">SHALL</strong> conform to <a class="xref" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.consol.doc/classes/RecordTarget.html">Consol Record Target</a></li>
+<li class="li"> This recordTarget Contains zero or one [0..1] <tt class="ph tt"><strong class="ph b">patientRole</strong></tt> <ol class="ol" type="i"><li class="li"> This patientRole <strong class="ph b">SHALL</strong> contain at least one [1..*] <tt class="ph tt"><strong class="ph b">addr</strong></tt><p class="p"><em class="ph i">NEMSIS Trace
+EPatient.05 . . . /PatientRole/addr/streetAddressLine
+EPatient.06 . . . /PatientRole/addr/city
+EPatient.07 . . . /PatientRole/addr/county
+EPatient.08 . . . /PatientRole/addr/state
+Paatient.09 . . . /PatientRole/addr/postalCode
+EPatient.10 . . . /PatientRole/addr/country</em></p>
+</li>
+<li class="li"> This patientRole Contains at least one [1..*] <tt class="ph tt"><strong class="ph b">id</strong></tt><p class="p"><em class="ph i">NEMSIS Trace
+EPatient.01: root= the OID for the generating EMS agency, or "NI"
+EPatient.12: root=" 2.16.840.1.113883.3.184" (Social Security Administration)
+EPatient.20 and EPatient.21: root= the OID for the state department of motor
+vehicles, found at HL7.org, and reproduced as found in March of 2011 in
+appendix A.</em></p>
+</li>
+<li class="li"> This patientRole Contains zero or more [0..*] <tt class="ph tt"><strong class="ph b">telecom</strong></tt><p class="p"><em class="ph i">NEMSIS Trace: EPatient.18</em></p>
+</li>
+<li class="li"> This patientRole Contains zero or one [0..1] <tt class="ph tt"><strong class="ph b">patient</strong></tt> <ol class="ol"><li class="li"> This patient Contains zero or one [0..1] <tt class="ph tt"><strong class="ph b">birthTime</strong></tt><p class="p"><em class="ph i">NEMSIS Trace
+EPatient.17</em></p>
+</li>
+<li class="li"> This patient <strong class="ph b">SHALL</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">ethnicGroupCode</strong></tt>, where the @code <strong class="ph b">SHALL</strong> be selected from (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.238 Race and Ethnicity - CDC</tt>)<p class="p"><em class="ph i">NEMSIS Trace: EPatient.14</em></p>
+</li>
+<li class="li"> This patient Contains zero or more [0..*] <tt class="ph tt"><strong class="ph b">name</strong></tt><p class="p"><em class="ph i">NEMSIS Trace
+EPatient.02 . . . /PatientRole/Patient/name/family
+EPatient.03 . . . /PatientRole/Patient/name/given
+EPatient.04 . . . /PatientRole/Patient/name/given
+Name sub-elements SHOULD be in the following order: family, given, middle (also "given").
+For names from cultures not following the order assumed above, the "family" name SHOULD be populated with whatever name component should be used to sort by. E.g., for a person with a single name, "family" should be used.</em></p>
+</li>
+<li class="li"> This patient <strong class="ph b">SHALL</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">raceCode</strong></tt>, where the @code <strong class="ph b">SHALL</strong> be selected from (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.238 Race and Ethnicity - CDC</tt>)<p class="p"><em class="ph i">NEMSIS Trace: EPatient.14
+NEMSIS collects race and ethnicity in the one-question format (see guidance at http://www.whitehouse.gov/omb/fedreg_1997standards), but the HL7 RIM and, therefore, the CDA schema contain separate elements. It is necessary to populate both CDA fields based on the values
+selected for the NEMSIS question. Further, the CDA model includes a single race code. In order to support multiple race codes as required by OMB, we adopt a second race code entry from the HL7 SDWG namespace. All documents with a race code must populate the CDA race code; if more than one race code is recorded, then the SDWG element may also be populated. No semantic priority is implied by the element selection.</em></p>
+</li>
+<li class="li"> This patient <strong class="ph b">SHALL</strong> contain zero or more [0..*] <tt class="ph tt"><strong class="ph b">sDTCRaceCode</strong></tt>, where the @code <strong class="ph b">SHALL</strong> be selected from (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.238 Race and Ethnicity - CDC</tt>)<p class="p"><em class="ph i">NEMSIS Trace: EPatient.14</em></p>
+</li>
+<li class="li"> This patient <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">administrativeGenderCode</strong></tt>, where the @code <strong class="ph b">SHALL</strong> be selected from (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.5.1 AdministrativeGenderCode</tt>)<p class="p"><em class="ph i">NEMSIS Trace: EPatient.13</em></p>
+</li>
+</ol>
+ </li>
+</ol>
+ </li>
+</ol>
+
+</li>
+
+<li class="li"><strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">author</strong></tt> <ol class="ol" type="a"><li class="li"> This author Contains zero or one [0..1] <tt class="ph tt"><strong class="ph b">assignedAuthor</strong></tt> <ol class="ol" type="i"><li class="li"> This assignedAuthor <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">id</strong></tt><p class="p"><em class="ph i">NEMSIS Trace: EOther.08</em></p>
+</li>
+<li class="li"> This assignedAuthor <strong class="ph b">SHALL</strong> contain zero or more [0..*] <tt class="ph tt"><strong class="ph b">addr</strong></tt><p class="p"><em class="ph i">NEMSIS Trace
+DProfessional.04. . . / AssignedAuthor/addr/streetAddressLine
+DProfessional.05 . . . / AssignedAuthor/addr/city
+DProfessional.06. . . / AssignedAuthor/addr/state
+DProfessional.07. . . / AssignedAuthor/addr/postalCode
+DProfessional.08. . . / AssignedAuthor/addr/country</em></p>
+</li>
+<li class="li"> This assignedAuthor <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">telecom</strong></tt><p class="p"><em class="ph i">NEMSIS Trace: DProfessional.09</em></p>
+</li>
+<li class="li"> This assignedAuthor Contains zero or one [0..1] <tt class="ph tt"><strong class="ph b">assignedPerson</strong></tt> <ol class="ol"><li class="li"> This assignedPerson <strong class="ph b">SHALL</strong> conform to <a class="xref" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.consol.doc/classes/Person.html">Consol Person</a></li>
+<li class="li"> This assignedPerson <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">name</strong></tt> (CONF:9406)<p class="p"><em class="ph i">NEMSIS Trace
+DProfessional.01 . . . Person/name/family
+DProfessional.02 . . . Person/name/given
+DProfessional.03 . . . Person/name/given</em></p>
+</li>
+</ol>
+ </li>
+</ol>
+ </li>
+</ol>
+
+</li>
+
+<li class="li"><strong class="ph b">MAY</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">componentOf</strong></tt> (CONF:9955) <ol class="ol" type="a"><li class="li"> This componentOf <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">encompassingEncounter</strong></tt> (CONF:9956) <ol class="ol" type="i"><li class="li"> This encompassingEncounter <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">effectiveTime</strong></tt> (CONF:9958)</li>
+<li class="li"> This encompassingEncounter <strong class="ph b">SHALL</strong> contain at least one [1..*] <tt class="ph tt"><strong class="ph b">id</strong></tt> (CONF:9959)</li>
+</ol>
+ </li>
+</ol>
+
+</li>
+
+<li class="li">Contains zero or one [0..1] <tt class="ph tt"><strong class="ph b">componentOf</strong></tt> <ol class="ol" type="a"><li class="li"> This componentOf <strong class="ph b">SHALL</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">@typeCode</strong>="COMP" </tt></li>
+<li class="li"> This componentOf Contains zero or one [0..1] <tt class="ph tt"><strong class="ph b">encompassingEncounter</strong></tt> <ol class="ol" type="i"><li class="li"> This encompassingEncounter <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">effectiveTime</strong></tt><p class="p"><em class="ph i">NEMSIS Trace: ETimes.03, the date the responding unit was notified by dispatch</em></p>
+</li>
+<li class="li"> This encompassingEncounter Contains zero or one [0..1] <tt class="ph tt"><strong class="ph b">location</strong></tt> <ol class="ol"><li class="li"> This location <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">healthCareFacility</strong></tt> <ol class="ol" type="a"><li class="li"> This healthCareFacility <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">id</strong></tt><p class="p"><em class="ph i">NEMSIS Trace: EResponse.04</em></p>
+</li>
+<li class="li"> This healthCareFacility <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">location</strong></tt> <ol class="ol" type="i"><li class="li"> This location <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@classCode</strong>="PLC" </tt>, where the @code <strong class="ph b">SHALL</strong> be selected from (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.3 ICD-10</tt>)<p class="p"><em class="ph i">NEMSIS Trace: EScene.09; Code under ICD-10 Y92</em></p>
+</li>
+<li class="li"> This location <strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">name</strong></tt><p class="p"><em class="ph i">NEMSIS Trace: EScene.13</em></p>
+</li>
+<li class="li"> This location <strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">addr</strong></tt><p class="p"><em class="ph i">NEMSIS Trace: EScene.15-21</em></p>
+</li>
+</ol>
+ </li>
+<li class="li"> This healthCareFacility <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt>, where the @code <strong class="ph b">SHALL</strong> be selected from ValueSet<tt class="ph tt"> <a class="xref" href="../terminology/UnitResponseRole.html">UnitResponseRole</a> 2.16.840.1.113883.17.3.5.82</tt><strong class="ph b"> STATIC</strong><p class="p"><em class="ph i">NEMSIS Trace: EResponse.07</em></p>
+</li>
+</ol>
+ </li>
+</ol>
+ </li>
+</ol>
+ </li>
+</ol>
+
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">component</strong></tt>
+<ol class="ol" type="a">
+<li class="li">Contains exactly one [1..1] <a class="xref" href="EMSBillingSection.html" title="[Section: templateId 2.16.840.1.113883.17.3.10.1.5]">EMS Billing Section</a> (templateId: <tt class="ph tt">2.16.840.1.113883.17.3.10.1.5</tt>)</li>
+</ol>
+</li>
+
+<li class="li"><strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">versionNumber</strong></tt> (CONF:5264)
+<ul class="ul"><li class="li">May be null, and in most cases will not be used. In circumstances where updates are likely, it may be advantageous to default to "1" in the first instance.</li>
+</ul>
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">id</strong></tt> (CONF:5363)
+<ul class="ul"><li class="li">NEMSIS trace: ERecord.01</li>
+</ul>
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">title</strong></tt> = "EMS Patient Care Report" (CONF:5254)
+</li>
+
+<li class="li"><strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">component</strong></tt>
+<ol class="ol" type="a">
+<li class="li">Contains exactly one [1..1] <a class="xref" href="EMSInjuryIncidentDescriptionSection.html" title="[Section: templateId 2.16.840.1.113883.17.3.10.1.17]">EMS Injury Incident Description Section</a> (templateId: <tt class="ph tt">2.16.840.1.113883.17.3.10.1.17</tt>)</li>
+</ol>
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">component</strong></tt> <ol class="ol" type="a"><li class="li"> This component Contains zero or one [0..1] <tt class="ph tt"><strong class="ph b">@negationInd</strong></tt><p class="p"><em class="ph i">If EHistory.12 has the value "None Reported," the value is "True"
+This negation of a notional class is parallel to the explicit question "patient on medication"</em></p>
+</li>
+<li class="li"> This component Contains zero or one [0..1] <tt class="ph tt"><strong class="ph b">@nullFlavor</strong></tt><p class="p"><em class="ph i">If EHistory.12 has the value "Refused" or "Unable to Complete," the value is "NI"; the
+original value may be recorded in SubstanceAdministration.text.
+This nulled notional class is parallel to the explicit question "patient on medication"</em></p>
+</li>
+<li class="li"> This component Contains zero or one [0..1] <tt class="ph tt"><strong class="ph b">doseQuantity</strong></tt><p class="p"><em class="ph i">NEMSIS Trace: EHistory.13, EHistory.14</em></p>
+</li>
+<li class="li"> This component <strong class="ph b">SHALL</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">routeCode</strong></tt>, where the @code <strong class="ph b">SHALL</strong> be selected from ValueSet<tt class="ph tt"> <a class="xref" href="../terminology/CurrentMedicationAdministrationRoute.html">CurrentMedicationAdministrationRoute</a> 2.16.840.1.113883.17.3.5.17</tt><strong class="ph b"> STATIC</strong><p class="p"><em class="ph i">NEMSIS Trace: EMedication.15</em></p>
+</li>
+</ol>
+
+</li>
+
+<li class="li"><strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">component</strong></tt>
+<ol class="ol" type="a">
+<li class="li">Contains exactly one [1..1] <a class="xref" href="EMSCardiacArrestEventSection.html" title="[Section: templateId 2.16.840.1.113883.17.3.10.1.14]">EMS Cardiac Arrest Event Section</a> (templateId: <tt class="ph tt">2.16.840.1.113883.17.3.10.1.14</tt>)</li>
+</ol>
+</li>
+
+<li class="li"><strong class="ph b">SHOULD</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">component</strong></tt>
+<ol class="ol" type="a">
+<li class="li">Contains exactly one [1..1] <a class="xref" href="EMSAdvanceDirectivesSection.html" title="[Section: templateId 2.16.840.1.113883.17.3.10.1.12]">EMS Advance Directives Section</a> (templateId: <tt class="ph tt">2.16.840.1.113883.17.3.10.1.12</tt>)</li>
+</ol>
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">component</strong></tt>
+<ol class="ol" type="a">
+<li class="li">Contains exactly one [1..1] <a class="xref" href="EMSAllergiesAndAdverseReactionsSection.html" title="[Section: templateId 2.16.840.1.113883.17.3.10.1.13]">EMS Allergies And Adverse Reactions Section</a> (templateId: <tt class="ph tt">2.16.840.1.113883.17.3.10.1.13</tt>)</li>
+</ol>
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">component</strong></tt>
+<ol class="ol" type="a">
+<li class="li">Contains exactly one [1..1] <a class="xref" href="EMSPastMedicalHistory.html" title="[Section: templateId 2.16.840.1.113883.17.3.10.1.19]">EMS Past Medical History</a> (templateId: <tt class="ph tt">2.16.840.1.113883.17.3.10.1.19</tt>)</li>
+</ol>
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">component</strong></tt>
+<ol class="ol" type="a">
+<li class="li">Contains exactly one [1..1] <a class="xref" href="EMSSocialHistory.html" title="[Section: templateId 2.16.840.1.113883.17.3.10.1.22]">EMS Social History</a> (templateId: <tt class="ph tt">2.16.840.1.113883.17.3.10.1.22</tt>)</li>
+</ol>
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">component</strong></tt>
+<ol class="ol" type="a">
+<li class="li">Contains exactly one [1..1] <a class="xref" href="EMSPhysicalAssessmentSection.html" title="[Section: templateId 2.16.840.1.113883.17.3.10.1.20]">EMS Physical Assessment Section</a> (templateId: <tt class="ph tt">2.16.840.1.113883.17.3.10.1.20</tt>)</li>
+</ol>
+</li>
+
+<li class="li"><strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">component</strong></tt>
+<ol class="ol" type="a">
+<li class="li">Contains exactly one [1..1] <a class="xref" href="EMSMedicationsAdministeredSection.html">EMS Medications Administered Section</a> (templateId: <tt class="ph tt">2.16.840.1.113883.17.3.10.1.18</tt>)</li>
+</ol>
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">component</strong></tt>
+<ol class="ol" type="a">
+<li class="li">Contains exactly one [1..1] <a class="xref" href="EMSProceduresPerformedSection.html" title="[Section: templateId 2.16.840.1.113883.17.3.10.1.21]">EMS Procedures Performed Section</a> (templateId: <tt class="ph tt">2.16.840.1.113883.17.3.10.1.21</tt>)</li>
+</ol>
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">component</strong></tt>
+<ol class="ol" type="a">
+<li class="li">Contains exactly one [1..1] <a class="xref" href="EMSPatientCareNarrative.html" title="[Section: templateId 2.16.840.1.113883.17.3.10.1.1]">EMS Patient Care Narrative</a> (templateId: <tt class="ph tt">2.16.840.1.113883.17.3.10.1.1</tt>)</li>
+</ol>
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">component</strong></tt>
+<ol class="ol" type="a">
+<li class="li">Contains exactly one [1..1] <a class="xref" href="EMSSceneSection.html" title="[Section: templateId 2.16.840.1.113883.17.3.10.1.8]">EMS Scene Section</a> (templateId: <tt class="ph tt">2.16.840.1.113883.17.3.10.1.8</tt>)</li>
+</ol>
+</li>
+
+</ol>
+
+
+<p class="p"> </p>
+
+
+<p class="p"> </p>
+
+<p class="p"> </p>
+
+<p class="p"><strong class="ph b">Patient Care Report example</strong></p>
+
+
+
+<pre class="pre codeblock"/>
+
+</div>
+
+<div class="related-links">
+<div class="familylinks">
+<div class="parentlink"><strong>Parent topic:</strong> <a class="link" href="../content/DocumentTemplates.html">DOCUMENT TEMPLATES</a></div>
+</div>
+</div>
+
+</body>
+</html>

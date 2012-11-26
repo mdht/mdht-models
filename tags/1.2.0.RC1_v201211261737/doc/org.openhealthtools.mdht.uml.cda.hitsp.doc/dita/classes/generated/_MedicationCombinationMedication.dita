@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Medication Combination Medication - conformance rules</title>
+<shortdesc id="shortdesc">[SubstanceAdministration: templateId <tt>2.16.840.1.113883.3.88.11.83.8</tt>]</shortdesc>
+<prolog id="prolog">
+<metadata><category>SubstanceAdministration</category></metadata>
+<resourceid id="2.16.840.1.113883.3.88.11.83.8"/>
+</prolog>
+<body>
+<section id="knownSubclasses">
+</section>
+<section id="description">
+</section>
+<ol id="conformance">
+<li><b>SHALL</b> contain exactly one [1..1] templateId (  ) such that it <ol><li><b>SHALL</b> contain exactly one [1..1] <b>@root</b>="2.16.840.1.113883.3.88.11.83.8"</li></ol></li>
+<li><b>SHALL</b> conform to <xref href="../Medication.dita">Medication</xref> template (templateId: <tt>2.16.840.1.113883.3.88.11.83.8</tt>)</li>
+<li><b>SHALL</b> conform to <xref format="html" href="PLUGINS_ROOT/org.openhealthtools.mdht.uml.cda.ihe.doc/classes/CombinationMedication.html">IHE Combination Medication</xref> template (templateId: <tt>1.3.6.1.4.1.19376.1.5.3.1.4.11</tt>)</li>
+</ol>
+<ol id="aggregate">
+<li><b>SHALL</b> conform to <xref format="html" href="PLUGINS_ROOT/org.openhealthtools.mdht.uml.cda.ihe.doc/classes/CombinationMedication.html">IHE Combination Medication</xref> template (templateId: <tt>1.3.6.1.4.1.19376.1.5.3.1.4.11</tt>)</li>
+<li><b>SHALL</b> conform to <xref format="html" href="PLUGINS_ROOT/org.openhealthtools.mdht.uml.cda.ccd.doc/classes/MedicationActivity.html">CCD Medication Activity</xref> template (templateId: <tt>2.16.840.1.113883.10.20.1.24</tt>)</li>
+<li><b>SHALL</b> conform to <xref format="html" href="PLUGINS_ROOT/org.openhealthtools.mdht.uml.cda.ihe.doc/classes/Medication.html">IHE Medication</xref> template (templateId: <tt>1.3.6.1.4.1.19376.1.5.3.1.4.7</tt>)</li>
+<li><b>SHALL</b> conform to <xref href="../Medication.dita">Medication</xref> template (templateId: <tt>2.16.840.1.113883.3.88.11.83.8</tt>)</li>
+<li>Contains exactly one [1..1] <tt><b>@classCode</b>="SBADM" </tt> with data type ActClass (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>)
+</li>
+<li>Contains exactly one [1..1] <tt><b>@moodCode</b></tt> with data type x_DocumentSubstanceMood
+</li>
+<li><b>SHALL</b> contain at least one [1..*] <tt><b>id</b></tt> (CONF-306)
+</li>
+<li><b>MAY</b> contain zero or more [0..*] <tt><b>code</b></tt> (C83-[DE-8.12-CDA-1])
+<ul><li><p><lines><i>Delivery Method: A description of how the product is
+administered/consumed</i></lines></p></li></ul></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>statusCode</b></tt> (CONF-307)
+<ul><li><p><lines><i>The status of all 'substanceAdministration' elements must be "completed". The act has either
+occurred, or the request or order has been placed.</i></lines></p></li></ul></li>
+<li><b>MAY</b> contain at least one [1..*] <tt><b>effectiveTime</b></tt> with data type IVL_TS (CONF-308)
+<ul><li><p><lines><i>Indicate Medication Stopped: Used to express a "hard stop," such as the last Sig sequence in a tapering dose, where the last sequence is 'then D/C' or where the therapy/drug is used to treat a condition and that treatment is for a fixed duration with a hard stop, such as antibiotic treatment, etc.</i></lines></p></li><li><p><lines><i>Administration Timing: defines a specific administration or use time. Can be a text string (Morning, Evening, Before Meals, 1 Hour After Meals, 3 Hours After Meals, Before Bed) or an exact time.</i></lines></p></li><li><p><lines><i>Frequency: defines how often the medication is to be administered as events per unit of time. Often expressed as the number of times per day (e.g., four times a day), but may also include event-related information (e.g., 1 hour before meals, in the morning, at bedtime). Complimentary to Interval, although equivalent expressions may have different implications (e.g., every 8 hours versus 3 times a day).</i></lines></p></li><li><p><lines><i>Interval: defines how the product is to be administered as an interval of time. For example, every 8 hours. Complimentary to Frequency, although equivalent expressions may have different implications (e.g., every 8 hours versus 3 times a day).</i></lines></p></li><li><p><lines><i>Duration: for non-instantaneous administrations, indicates the length of time the administration should be continued. For example, (infuse) over 30 minutes.</i></lines></p></li></ul></li>
+<li><b>MAY</b> contain at least one [1..*] <tt><b>routeCode</b></tt> (CONF-309, CONF-310), where the @code <b>SHALL</b> be selected from ValueSet<tt> Medication Route FDA 2.16.840.1.113883.3.88.12.3221.8.7</tt><b> STATIC</b> 1
+<ul><li><p><lines><i>The route is a coded value, and indicates how the medication is received by the patient (by mouth, intravenously, topically, et cetera).</i></lines></p></li></ul></li>
+<li><b>MAY</b> contain zero or more [0..*] <tt><b>approachSiteCode</b></tt> (C154-[DE-8.09-1]), where the @code <b>SHALL</b> be selected from ValueSet<tt> Body Site 2.16.840.1.113883.3.88.12.3221.8.9</tt><b> STATIC</b> 2
+<ul><li><p><lines><i>The anatomic site where the
+medication is administered. Usually applicable to
+injected or topical products</i></lines></p></li></ul></li>
+<li><b>MAY</b> contain at least one [1..*] <tt><b>doseQuantity</b></tt>
+<ul><li><p><lines><i>the amount of the product to be
+given. This may be a known, measurable unit (e.g.,
+milliliters), an administration unit (e.g., tablet), or an
+amount of active ingredient (e.g., 250 mg). May define
+a variable dose, dose range or dose options based
+upon identified criteria (see Dose Indicator)</i></lines></p></li></ul></li>
+<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>rateQuantity</b></tt>
+<ul><li><p><lines><i>The rate is a measurement of how fast the dose is given to the patient over time (e.g., .5 liter / 1 hr), and is often used with IV drugs.</i></lines></p></li></ul></li>
+<li><b>MAY</b> contain at least one [1..*] <tt><b>maxDoseQuantity</b></tt> (CONF-312)
+<ul><li><p><lines><i>defines a maximum or dose limit.
+This segment can repeat for more than one dose
+restriction</i></lines></p></li></ul></li>
+<li><b>MAY</b> contain exactly one [1..1] <tt><b>administrationUnitCode</b></tt>, where the @code <b>MAY</b> be selected from ValueSet<tt> Medication Product Form 2.16.840.1.113883.3.88.12.3221.8.11</tt><b> STATIC</b> 1 (C154-[DE-8.11-1])
+<ul><li><p><lines><i>The physical form of the product as presented to the
+patient. For example: tablet, capsule, liquid or
+ointment</i></lines></p></li></ul></li>
+<li>Contains exactly one [1..1] <tt><b>consumable</b></tt>, where its type is <xref href="../Consumable.dita">Consumable</xref>
+<ol>
+<li>Contains exactly one [1..1] <xref href="../Consumable.dita">Consumable</xref></li></ol></li>
+<li><b>MAY</b> contain exactly one [1..1] <tt><b>entryRelationship</b></tt> (CONF-338, CONF-339)
+<ol>
+<li>Contains <tt><b>@typeCode="</b>SUBJ" </tt><i>SUBJ</i></li>
+<li>Contains exactly one [1..1] <xref href="../MedicationSeriesNumberObservation.dita">Medication Series Number Observation</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.46</tt>)</li></ol></li>
+<li><b>MAY</b> contain exactly one [1..1] <tt><b>entryRelationship</b></tt> (CONF-350)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../MedicationStatusObservation.dita">Medication Status Observation</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.47</tt>)</li></ol></li>
+<li><b>MAY</b> contain at least one [1..*] <tt><b>performer</b></tt> (CONF-313)
+<ol>
+<li>Contains exactly one [1..1] CDA Performer2</li></ol><ul><li><p><lines><i>Indicates the person administering a substance.</i></lines></p></li></ul></li>
+<li><b>MAY</b> contain at least one [1..*] <tt><b>entryRelationship</b></tt> (CONF-348, CONF-349)
+<ol>
+<li>Contains <tt><b>@typeCode="</b>CAUS" </tt><i>CAUS</i></li>
+<li>Contains exactly one [1..1] <xref href="../ReactionObservation.dita">Reaction Observation</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.54</tt>)</li></ol></li>
+<li><b>MAY</b> contain at least one [1..*] <tt><b>participant</b></tt> (CONF-368)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../ProductInstance.dita">Product Instance</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.52</tt>)</li></ol></li>
+<li>Contains at least one [1..*] <tt><b>entryRelationship</b></tt>
+<ol>
+<li>Contains exactly one [1..1] <xref href="../InternalReference.dita">Internal Reference</xref> (templateId: <tt>1.3.6.1.4.1.19376.1.5.3.1.4.4.1</tt>)</li></ol><ul><li><p><lines><i>Entry may indicate one or more reasons for the use of the
+medication. The extension and root of each observation present must match the identifier of a concern entry
+contained elsewhere within the CDA document.
+A consumer of the Medical Summary is encouraged, but not required to maintain these links on
+import.</i></lines></p></li></ul></li>
+<li>Contains at least one [1..*] <tt><b>entryRelationship</b></tt>
+<ol>
+<li>Contains exactly one [1..1] <xref href="../PatientMedicalInstructions.dita">Patient Medical Instructions</xref> (templateId: <tt>1.3.6.1.4.1.19376.1.5.3.1.4.3</tt>)</li></ol><ul><li><p><lines><i>At most one instruction may be provided for each &lt;substanceAdministration> entry. The instructions
+shall contain any special case dosing instructions (e.g., split, tapered, or conditional dosing), and
+may contain other information (take with food, et cetera).</i></lines></p></li></ul></li>
+<li>Contains zero or one [0..1] <tt><b>entryRelationship</b></tt>
+<ol>
+<li>Contains exactly one [1..1] <xref href="../MedicationType.dita">Medication Type</xref> (templateId: <tt>2.16.840.1.113883.3.88.11.83.8.1</tt>)</li></ol></li>
+<li>Contains at least one [1..*] <tt><b>entryRelationship</b></tt>
+<ol>
+<li>Contains exactly one [1..1] <xref href="../MedicationOrderInformation.dita">Medication Order Information</xref> (templateId: <tt>2.16.840.1.113883.3.88.11.83.8.3</tt>)</li></ol></li>
+<li>Contains zero or one [0..1] <tt><b>entryRelationship</b></tt>
+<ol>
+<li>Contains exactly one [1..1] <xref format="html" href="PLUGINS_ROOT/org.openhealthtools.mdht.uml.cda.ccd.doc/classes/ReactionObservation.html">CCD Reaction Observation</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.54</tt>)</li></ol><ul><li><p><lines><i>Any noted intended or unintended effects of the
+product. For example: full body rash, nausea, rash
+resolved</i></lines></p></li></ul></li>
+<li><b>SHALL</b> satisfy: Subordinate &lt;substanceAdminstration&gt; entries are included to record the components of the prepared mixture. If medication is a prepackaged mixture, a single &lt;substanceAdministration&gt; entry is sufficient.</li>
+<li><b>SHALL</b> satisfy: Value for moodCode is "EVN" or "INT" 2.16.840.1.113883.5.1001 ActMood STATIC (CONF-305)</li>
+<li><b>SHOULD</b> satisfy: Contains exactly one doseQuantity or rateQuantity. (CONF-311)</li>
+<li><b>MAY</b> satisfy: Has one or more associated consents, represented in the CCD Header as ClinicalDocument / authorization / consent. (CONF-314)</li>
+<li><b>SHALL</b> satisfy: Contains one or more sources of information. (CONF-315)</li>
+<li><b>MAY</b> satisfy: Contains one or more precondition / Criterion, to indicate that the medication is administered only when the associated (coded or free text) criteria are met. (CONF-327)</li>
+<li><b>MAY</b> satisfy: Contains one or more entryRelationship, where the value for @typeCode is "RSON" "Has reason" 2.16.840.1.113883.5.1002 ActRelationshipType STATIC. (CONF-328)</li>
+<li><b>SHALL</b> satisfy: entryRelationship / @typeCode="RSON" in a medication activity has a target of problem act (templateId 2.16.840.1.113883.10.20.1.27), problem observation (templateId 2.16.840.1.113883.10.20.1.28), or some other clinical statement. (CONF-329)</li>
+<li><b>SHALL</b> satisfy: Contains exactly one consumable, the target of which is a Product template. (CONF-354)</li>
+<li><b>SHALL</b> satisfy: Contains one dosing template to identify this entry as a particular type of medication event. Possible dosing templates: 1.3.6.1.4.1.19376.1.5.3.1.4.7.1 Normal Dosing, 1.3.6.1.4.1.19376.1.5.3.1.4.8, Tapered Dosing, 1.3.6.1.4.1.19376.1.5.3.1.4.9 Split Dosing, 1.3.6.1.4.1.19376.1.5.3.1.4.10 Conditional Dosing, 1.3.6.1.4.1.19376.1.5.3.1.4.11 Combination Dosing.</li>
+<li><b>SHALL</b> satisfy: contains one or more related components (&lt;entryRelationship typeCode='COMP'&gt;, either to handle split, tapered or conditional dosing, or to support combination medications.</li>
+<li><b>SHALL</b> satisfy: Values from SNOMED CT shall be used in the &lt;code&gt; element to record that a patient is either not on medications, or that medications are not known.</li>
+<li><b>SHALL</b> satisfy: The act/@classCode='ACT' and act/@moodCode='EVN' when recording reason for medication in InternalReference Template. (6.3.4.16.22)</li>
+<li><b>SHALL</b> satisfy: The &lt;consumable&gt; element shall be present, and shall contain a Product Entry template</li>
+<li><b>SHALL</b> satisfy: The entryRelationship/@inversionInd attribute is 'true' for Patient Medical Instructions relationship</li>
+<li><b>SHOULD</b> satisfy: The name and strength of the medication is recorded in consumable/manufacturedProduct/manufacturedMaterial/code/originalText</li>
+<li><b>SHALL</b> satisfy: Name of the substance or product is recorded in consumable/manufacturedProduct/manufacturedMaterial/name</li>
+<li><b>MAY</b> satisfy: the preconditions for use of the medication are recorded in the
+&lt;precondition&gt; element. element. The value attribute of the &lt;reference&gt; element is a URL that points to
+the CDA narrative describing those preconditions.</li>
+<li><b>SHALL</b> satisfy: The entryRelationship/@inversionInd attribute is 'false' for Supply Entry relationship</li>
+<li><b>SHOULD</b> satisfy: entryRelationship/sequenceNumber element should be present when the embedded 'supply' element has a
+moodCode attribute of EVN.</li>
+<li><b>SHALL</b> satisfy: The time at which the medication was stopped is determined based on the content of the &lt;high&gt; element of the first &lt;effectiveTime&gt; element. (2.2.2.8.3)</li>
+<li><b>SHALL</b> satisfy: The HL7 data type for PIVL_TS uses the institutionSpecified attribute to indicate whether it is the interval (time between dosing), or frequency (number of doses in a time period) that is important. If instititutionSpecified is not present or is set to false, then the time between dosing is important (every 8 hours). If true, then the frequency of administration is important (e.g., 3 times per day). (2.2.2.8.4)</li>
+<li>The first &lt;effectiveTime&gt; <b>SHALL</b> use the IVL_TS data type unless for a single administration, in which case, it <b>SHALL</b> use the TS data type. (C83-[DE-8-CDA-3])</li>
+<li>Medications that are administered based on activities of daily living <b>SHALL</b> identify the events that trigger administration in the &lt;event&gt; element beneath the &lt;effectiveTime&gt; element. The &lt;effectiveTime&gt; element <b>SHALL</b> be of type EIVL_TS. (C83-[DE-8.03-CDA-1])</li>
+<li>Medications that are administered at a specified frequency <b>SHALL</b> record the expected interval between doses in the &lt;period&gt; element beneath an &lt;effectiveTime&gt; of type PIVL_TS. The &lt;effectiveTime&gt; element <b>SHALL</b> have an institutionSpecified attribute value of "true". (C83-[DE-8.04-CDA-1])</li>
+<li>Medications that are administered at a specified interval <b>SHALL</b> record interval between doses in the &lt;period&gt; element beneath an &lt;effectiveTime&gt; element of type PIVL_TS. The &lt;effectiveTime&gt; element <b>SHALL</b> have an institutionSpecified attribute value of "false". (C83-[DE-8.05-CDA-1])</li>
+<li>doseQuantity/@unit, Dose Units <b>MAY</b> be present when needed. If present it <b>SHALL</b> be coded as 2.16.840.1.113883.3.88.12.80.29 Unit of Measure (C154-[DE-8.08-1])</li>
+<li>When the coded product or brand name describes the strength or concentration of the medication, and the dosing is in administration units (e.g., 1 tablet, 2 capsules), units <b>SHOULD</b> contain the preferred name of the presentation units within braces { } using the units of presentation from the NCI Thesaurus (C154-[DE-8.08-2])</li>
+<li>The free text description of the delivery method <b>MAY</b> be included within a &lt;originalText&gt; element beneath the &lt;code&gt; element (C83-[DE-8.12-CDA-2])</li>
+<li><b>SHALL</b> satisfy: Contains one consumable element which contains the Medication Information template. The name and code for the medication are recorded in the &lt;consumable&gt; element.</li>
+<li>The medication status <b>MAY</b> be recorded using the CCD Medication Status observation using the value set defined in the CCD (C154-[DE-8.20-1])</li>
+<li><b>MAY</b> contain [0..*] indications which <b>SHALL</b> be recorded using the Indication problem observation (templateID 2.16.840.1.113883.10.20.1.28) described in the CCD Implementation Guide. (C83-[DE-8.20-CDA-1])</li>
+<li>The indication problem observation <b>SHALL</b> contain a &lt;text&gt; element that includes a &lt;reference&gt; element whose value attribute points to the narrative text that is the indication for the medication (C83-[DE-8.20-CDA-2])</li>
+<li>The indication <b>SHALL</b> be coded as 2.16.840.1.113883.3.88.12.3221.7.4, Problem Value Set, version: 20100125, Dynamic (C154-[DE-8.20-1])</li>
+<li><b>MAY</b> contain Patient Instructions which <b>SHALL</b> be recorded using the Patient Medication Instructions template (templateID 1.3.6.1.4.1.19376.1.5.3.1.4.3) (C83-[DE-8.22-CDA-1])</li>
+<li>The vehicle for administering a medication <b>MAY</b> be recorded in a &lt;participantRole&gt; element inside a &lt;participant&gt; element in the &lt;substanceAdministration&gt; element (C83-[DE-8.24-CDA-1])</li>
+<li>The typeCode attribute of the &lt;participant&gt; element <b>SHALL</b> be CSM (C83-[DE-8.24-CDA-2])</li>
+<li>The classCode of the &lt;participantRole&gt; <b>SHALL</b> be MANU (C83-[DE-8.24-CDA-3])</li>
+<li>A &lt;code&gt; element for the &lt;participantRole&gt; <b>SHALL</b> be present and <b>SHALL</b> contain the code 412307009 from the SNOMED CT code system (C83-[DE-8.24-CDA-4])</li>
+<li>The &lt;name&gt; element in the &lt;playingEntity&gt; element <b>SHALL</b> record the name of the drug vehicle (C83-[DE-8.24-CDA-5])</li>
+<li>The &lt;code&gt; element in the &lt;playingEntity&gt; element <b>MAY</b> be used to supply a coded term for the drug vehicle (C83-[DE-8.24-CDA-6])</li>
+<li><b>SHALL</b> satisfy: The Medication Vehicle shall be coded as 2.16.840.1.113883.3.88.12.80.21, Medication Vehicle Value Set, version: 20081218, Dynamic (C154-[DE-8.24-1])</li>
+</ol>
+<section id="tableconformance"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="8" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><colspec colname="col2" colnum="2" /><colspec colname="col3" colnum="3" /><colspec colname="col4" colnum="4" /><colspec colname="col5" colnum="5" /><colspec colname="col6" colnum="6" /><colspec colname="col7" colnum="7" /><thead> <row><entry namest="col0" nameend="col7" >hitsp::MedicationCombinationMedication</entry>  </row>  <row><entry namest="col0" nameend="col7" >cda::substanceadministration[cda:templateId/@root = ]/</entry>  </row>  <row><entry>Name</entry><entry>XPath</entry><entry>Cardinality</entry><entry>Severity</entry><entry>Nullable</entry><entry>Data Type</entry><entry>Conformance</entry><entry>Value(s)</entry></row></thead><tbody></tbody></tgroup></table></p></section>
+<codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<substanceadministration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd">
+  <id root="MDHT" extension="1594223488"/>
+  <code code="1861484405"/>
+  <statusCode code="completed"/>
+  <effectiveTime value="20121102"/>
+  <routeCode code="1410875891"/>
+  <approachSiteCode code="541685163"/>
+  <doseQuantity/>
+  <rateQuantity/>
+  <maxDoseQuantity/>
+  <consumable/>
+</substanceadministration>]]></codeblock>
+<section id="changes">
+</section>
+<p><ph id="classformalname">Medication Combination Medication</ph></p>
+<p id="shortdesc">[SubstanceAdministration: templateId <tt>2.16.840.1.113883.3.88.11.83.8</tt>]</p>
+</body>
+</topic>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<map>
+	<title>Plan Of Care Section</title>
+	<topicref href="../classes/PlanOfCareSection.dita" type="topic" >
+		<topicref href="../classes/PlanOfCareSectionTable.dita" type="topic" />
+		<topicref href="../classes/PlanOfCareSectionSample.dita" type="topic" />	
+	</topicref>
+</map>
+

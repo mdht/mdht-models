@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<map>
+	<title>Procedure Disposition Section</title>
+	<topicref href="../classes/ProcedureDispositionSection.dita" type="topic" >
+		<topicref href="../classes/ProcedureDispositionSectionTable.dita" type="topic" />
+		<topicref href="../classes/ProcedureDispositionSectionSample.dita" type="topic" />	
+	</topicref>
+</map>
+

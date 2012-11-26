@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Covered Party - conformance rules</title>
+<shortdesc id="shortdesc">[ParticipantRole: templateId <tt>null</tt>]</shortdesc>
+<prolog id="prolog">
+<metadata><category>ParticipantRole</category></metadata>
+<resourceid id="null"/>
+</prolog>
+<body>
+<section id="knownSubclasses">
+</section>
+<section id="description">
+</section>
+<ol id="conformance">
+<li><b>SHALL</b> contain exactly one [1..1] templateId (  ) such that it <ol><li><b>SHALL</b> contain exactly one [1..1] <b>@root</b>=""</li></ol></li>
+<li><b>SHOULD</b> contain at least one [1..*] <tt><b>id</b></tt> (CONF-59)
+</li>
+<li><b>SHOULD</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF-60)
+</li>
+</ol>
+<ol id="aggregate">
+<li><b>SHOULD</b> contain at least one [1..*] <tt><b>id</b></tt> (CONF-59)
+</li>
+<li><b>SHOULD</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF-60)
+</li>
+</ol>
+<section id="tableconformance"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="8" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><colspec colname="col2" colnum="2" /><colspec colname="col3" colnum="3" /><colspec colname="col4" colnum="4" /><colspec colname="col5" colnum="5" /><colspec colname="col6" colnum="6" /><colspec colname="col7" colnum="7" /><thead> <row><entry namest="col0" nameend="col7" >ccd::CoveredParty</entry>  </row>  <row><entry namest="col0" nameend="col7" >cda::participantrole[cda:templateId/@root = ]/</entry>  </row>  <row><entry>Name</entry><entry>XPath</entry><entry>Cardinality</entry><entry>Severity</entry><entry>Nullable</entry><entry>Data Type</entry><entry>Conformance</entry><entry>Value(s)</entry></row></thead><tbody><row><entry>code</entry><entry>code</entry><entry>1..1</entry><entry>SHOULD</entry><entry>YES</entry><entry>CE</entry><entry>CONF-60</entry><entry> </entry></row> 
+<row><entry>id</entry><entry>id</entry><entry>1..*</entry><entry>SHOULD</entry><entry>YES</entry><entry>II</entry><entry>CONF-59</entry><entry> </entry></row> 
+<row><entry>coveredParty</entry><entry>coveredParty</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>CoveredParty</entry><entry>CONF-58</entry><entry> </entry></row> 
+</tbody></tgroup></table></p></section>
+<codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<participantrole xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd">
+  <id root="MDHT" extension="405247103"/>
+  <code code="750991553"/>
+</participantrole>]]></codeblock>
+<section id="changes">
+</section>
+<p><ph id="classformalname">Covered Party</ph></p>
+<p id="shortdesc">[ParticipantRole: templateId <tt>null</tt>]</p>
+</body>
+</topic>

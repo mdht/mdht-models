@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<map title="Document Templates">
+<topicref href="ConsultationNote.dita" type="topic" />
+<topicref href="ContinuityOfCareDocument.dita" type="topic" />
+<topicref href="DiagnosticImagingReport.dita" type="topic" />
+<topicref href="DischargeSummary.dita" type="topic" />
+<topicref href="GeneralHeaderConstraints.dita" type="topic" />
+<topicref href="HistoryAndPhysicalNote.dita" type="topic" />
+<topicref href="OperativeNote.dita" type="topic" />
+<topicref href="ProcedureNote.dita" type="topic" />
+<topicref href="ProgressNote.dita" type="topic" />
+<topicref href="UnstructuredDocument.dita" type="topic" />
+</map>

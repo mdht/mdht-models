@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Advance Directive Type</title>
+<prolog id="prolog">
+<resourceid id="2.16.840.1.113883.17.3.5.63"/>
+</prolog>
+<body>
+<!-- THIS IS GENERATED CONTENT, DO NOT EDIT -->
+<section id="definition">
+<table><tgroup cols="2">
+<colspec colname="col1" colwidth="1*"/>
+<colspec colname="col2" colwidth="4*"/>
+<tbody>
+<row><entry>Value Set</entry><entry>AdvanceDirectiveType - 2.16.840.1.113883.17.3.5.63</entry></row>
+<row><entry>Code System</entry><entry>LOINC - 2.16.840.1.113883.6.1</entry></row>
+</tbody></tgroup></table>
+<table><tgroup cols="3">
+<colspec colname="col1" colwidth="1*"/>
+<colspec colname="col2" colwidth="1*"/>
+<colspec colname="col3" colwidth="2*"/>
+<thead><row>
+<entry>Code</entry><entry>Code System</entry><entry>Print Name</entry>
+</row></thead><tbody>
+<row><entry>LA137-2</entry><entry>LOINC</entry><entry>None</entry></row>
+<row><entry>LA17059-9</entry><entry>LOINC</entry><entry>Other (not listed)</entry></row>
+<row><entry>LA17319-7</entry><entry>LOINC</entry><entry>State EMS DNR or medical order form</entry></row>
+<row><entry>LA17320-5</entry><entry>LOINC</entry><entry>Other healthcare advanced directive form</entry></row>
+<row><entry>LA17321-3</entry><entry>LOINC</entry><entry>Living will</entry></row>
+<row><entry>LA17322-1</entry><entry>LOINC</entry><entry>Family/guardian request DNR (but no documentation)</entry></row>
+</tbody></tgroup></table>
+</section>
+</body>
+</topic>

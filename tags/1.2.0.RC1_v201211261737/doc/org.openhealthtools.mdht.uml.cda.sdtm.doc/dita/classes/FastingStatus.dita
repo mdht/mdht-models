@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Fasting Status</title>
+<shortdesc conref="generated/_FastingStatus.dita#classId/shortdesc"></shortdesc>
+<prolog conref="generated/_FastingStatus.dita#classId/prolog"></prolog>
+<body>
+<!-- TODO: insert non-model class description markup here -->
+<section conref="generated/_FastingStatus.dita#classId/description">
+</section>
+<!-- TODO: insert UML class diagram here -->
+
+<ol audience="standards" conref="generated/_FastingStatus.dita#classId/conformance">
+<li></li>
+</ol>
+<ol audience="developer" conref="generated/_FastingStatus.dita#classId/aggregate">
+<li></li>
+</ol>
+<!-- Comment out the section for tables 
+<section conref="generated/_FastingStatus.dita#classId/tableconformance">
+</section>
+-->
+<p> </p>
+<p><b>Fasting Status example</b></p>
+<!-- TODO: insert custom instance example here -->
+<!-- generated instance example follows -->
+<codeblock conref="generated/_FastingStatus.dita#classId/example">
+</codeblock>
+</body>
+</topic>

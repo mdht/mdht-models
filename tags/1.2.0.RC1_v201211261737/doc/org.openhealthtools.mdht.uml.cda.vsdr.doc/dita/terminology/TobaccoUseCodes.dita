@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Tobacco Use Codes</title>
+<prolog id="prolog">
+<resourceid id="2.16.840.1.114222.4.11.6004"/>
+</prolog>
+<body>
+<!-- THIS IS GENERATED CONTENT, DO NOT EDIT -->
+<section id="definition">
+<table><tgroup cols="2">
+<colspec colname="col1" colwidth="1*"/>
+<colspec colname="col2" colwidth="4*"/>
+<tbody>
+<row><entry>Value Set</entry><entry>TobaccoUseCodes - 2.16.840.1.114222.4.11.6004</entry></row>
+<row><entry>Code System</entry><entry>Tobacco Use - 2.16.840.1.114222.4.11.6004</entry></row>
+<row><entry>Description</entry><entry>The value set includes the entire content of the Tobacco Use coding system.
+</entry></row>
+</tbody></tgroup></table>
+<table><tgroup cols="4">
+<colspec colname="col1" colwidth="1*"/>
+<colspec colname="col2" colwidth="2*"/>
+<colspec colname="col3" colwidth="1*"/>
+<colspec colname="col4" colwidth="3*"/>
+<thead><row>
+<entry>Concept Code</entry><entry>Concept Name</entry><entry>Code System</entry><entry>Description</entry>
+</row></thead><tbody>
+<row><entry>N</entry><entry>No</entry><entry>Tobacco Use</entry><entry>No, use of tobacco did not contribute to the person's death.</entry></row>
+<row><entry>P</entry><entry>Probable</entry><entry>Tobacco Use</entry><entry>It is probable that use of tobacco contributed to the person's death.</entry></row>
+<row><entry>Y</entry><entry>Yes</entry><entry>Tobacco Use</entry><entry>Yes, use of tobacco contributed to the person's death.</entry></row>
+<row><entry>U</entry><entry>Unknown</entry><entry>Tobacco Use</entry><entry>The extent to which tobacco use contributed to the person's death is not known.</entry></row>
+<row><entry>C</entry><entry>Not on Certificate</entry><entry>Tobacco Use</entry><entry></entry></row>
+</tbody></tgroup></table>
+</section>
+</body>
+</topic>

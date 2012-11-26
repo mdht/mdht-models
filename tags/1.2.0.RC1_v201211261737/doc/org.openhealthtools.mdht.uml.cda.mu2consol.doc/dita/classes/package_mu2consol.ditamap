@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<map title="Package: mu2consol">
+<topicref href="AssessmentAndPlanSection.dita" type="topic" />
+<topicref href="AssessmentSection.dita" type="topic" />
+<topicref href="ClinicalOfficeVisitSummary.dita" type="topic" />
+<topicref href="EncounterActivities.dita" type="topic" />
+<topicref href="EncountersSection.dita" type="topic" />
+<topicref href="GeneralHeaderConstraints.dita" type="topic" />
+<topicref href="PlanOfCareSection.dita" type="topic" />
+<topicref href="ProcedureActivityProcedure.dita" type="topic" />
+<topicref href="ProceduresSection.dita" type="topic" />
+<topicref href="ResultObservation.dita" type="topic" />
+<topicref href="ResultOrganizer.dita" type="topic" />
+<topicref href="ResultsSection.dita" type="topic" />
+<topicref href="SmokingStatusObservation.dita" type="topic" />
+<topicref href="SocialHistorySection.dita" type="topic" />
+<topicref href="SummaryOfCareRecord.dita" type="topic" />
+<topicref href="TransitionOfCareAmbulatorySummary.dita" type="topic" />
+<topicref href="TransitionOfCareInpatientSummary.dita" type="topic" />
+<topicref href="VDTAmbulatorySummary.dita" type="topic" />
+<topicref href="VDTInpatientSummary.dita" type="topic" />
+<topicref href="ViewDownloadTransmitSummary.dita" type="topic" />
+</map>

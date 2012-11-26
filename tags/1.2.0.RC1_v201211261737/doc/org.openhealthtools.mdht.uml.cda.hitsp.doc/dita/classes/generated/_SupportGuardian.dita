@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Support Guardian - conformance rules</title>
+<shortdesc id="shortdesc">[Guardian: templateId <tt>2.16.840.1.113883.3.88.11.83.3</tt>]</shortdesc>
+<prolog id="prolog">
+<metadata><category>Guardian</category></metadata>
+<resourceid id="2.16.840.1.113883.3.88.11.83.3"/>
+</prolog>
+<body>
+<section id="knownSubclasses">
+</section>
+<section id="description">
+<p><lines><i>At a minimum, key support contacts relative to healthcare decisions, including next of kin, should be included. If no healthcare providers are supplied, the reason should be supplied as free text in the narrative block (e.g., Unknown, etc).</i></lines></p>
+</section>
+<ol id="conformance">
+<li><b>SHALL</b> contain exactly one [1..1] templateId (  ) such that it <ol><li><b>SHALL</b> contain exactly one [1..1] <b>@root</b>="2.16.840.1.113883.3.88.11.83.3"</li></ol></li>
+<li><b>SHALL</b> conform to <xref format="html" href="PLUGINS_ROOT/org.openhealthtools.mdht.uml.cda.ihe.doc/classes/PatientContactGuardian.html">IHE Patient Contact Guardian</xref> template (templateId: <tt>1.3.6.1.4.1.19376.1.5.3.1.2.4</tt>)</li>
+<li>Extends <xref href="../Support.dita">Support</xref></li>
+</ol>
+<ol id="aggregate">
+<li>Extends <xref href="../Support.dita">Support</xref></li>
+<li>Extends <xref format="html" href="PLUGINS_ROOT/org.openhealthtools.mdht.uml.cda.ihe.doc/classes/PatientContact.html">IHE Patient Contact</xref></li>
+<li>Extends <xref format="html" href="PLUGINS_ROOT/org.openhealthtools.mdht.uml.cda.ccd.doc/classes/Support.html">CCD Support</xref></li>
+<li><b>SHALL</b> conform to <xref format="html" href="PLUGINS_ROOT/org.openhealthtools.mdht.uml.cda.ccd.doc/classes/SupportGuardian.html">CCD Support Guardian</xref></li>
+<li><b>SHALL</b> conform to <xref format="html" href="PLUGINS_ROOT/org.openhealthtools.mdht.uml.cda.ihe.doc/classes/PatientContactGuardian.html">IHE Patient Contact Guardian</xref> template (templateId: <tt>1.3.6.1.4.1.19376.1.5.3.1.2.4</tt>)</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="GUAR" </tt>
+</li>
+<li><b>SHALL</b> contain zero or one [0..1] <tt><b>code</b></tt>, where the @code <b>SHALL</b> be selected from (CodeSystem:<tt> 2.16.840.1.113883.5.111 RoleCode</tt>)
+</li>
+<li><b>SHOULD</b> contain zero or more [0..*] <tt><b>addr</b></tt>
+</li>
+<li><b>SHOULD</b> contain zero or more [0..*] <tt><b>telecom</b></tt>
+</li>
+</ol>
+<section id="tableconformance"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="8" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><colspec colname="col2" colnum="2" /><colspec colname="col3" colnum="3" /><colspec colname="col4" colnum="4" /><colspec colname="col5" colnum="5" /><colspec colname="col6" colnum="6" /><colspec colname="col7" colnum="7" /><thead> <row><entry namest="col0" nameend="col7" >hitsp::SupportGuardian</entry>  </row>  <row><entry namest="col0" nameend="col7" >cda::guardian[cda:templateId/@root = ]/</entry>  </row>  <row><entry>Name</entry><entry>XPath</entry><entry>Cardinality</entry><entry>Severity</entry><entry>Nullable</entry><entry>Data Type</entry><entry>Conformance</entry><entry>Value(s)</entry></row></thead><tbody></tbody></tgroup></table></p></section>
+<codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<guardian xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd">
+  <id root="MDHT" extension="2022308020"/>
+  <addr/>
+  <telecom/>
+</guardian>]]></codeblock>
+<section id="changes">
+</section>
+<p><ph id="classformalname">Support Guardian</ph></p>
+<p id="shortdesc">[Guardian: templateId <tt>2.16.840.1.113883.3.88.11.83.3</tt>]</p>
+</body>
+</topic>

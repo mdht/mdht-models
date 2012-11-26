@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Medication Dispense - conformance rules</title>
+<shortdesc id="shortdesc">[Supply: templateId <tt>2.16.840.1.113883.10.20.22.4.18</tt>]</shortdesc>
+<prolog id="prolog">
+<metadata><category>Supply</category></metadata>
+<resourceid id="2.16.840.1.113883.10.20.22.4.18"/>
+</prolog>
+<body>
+<section id="knownSubclasses">
+</section>
+<section id="description">
+</section>
+<ol id="conformance">
+<li><b>SHALL</b> contain exactly one [1..1] templateId ( CONF:7453, CONF:10505 ) such that it <ol><li><b>SHALL</b> contain exactly one [1..1] <b>@root</b>="2.16.840.1.113883.10.20.22.4.18"</li></ol></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="SPLY" </tt> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>) (CONF:7451)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF:7452)
+</li>
+<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>effectiveTime</b></tt> (CONF:7456)
+</li>
+<li><b>SHALL</b> contain at least one [1..*] <tt><b>id</b></tt> (CONF:7454)
+</li>
+<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>repeatNumber</b></tt> (CONF:7457)
+<ul><li><p><lines><i>In "EVN" (event) mood, the repeatNumber is the number of occurrences. For example, a repeatNumber of "3" in a dispense act means that the current dispensation is the 3rd (CONF: 16876)</i></lines></p></li></ul></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>statusCode</b></tt>, where the @code <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/MedicationFillStatus.dita">Medication Fill Status</xref> 2.16.840.1.113883.3.88.12.80.64</tt><b> STATIC</b> 1 (CONF:7455)
+</li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> (CONF:7473, CONF:7474, CONF:15606)
+<ol>
+<li>Contains <tt><b>@typeCode="</b>REFR" </tt><i>REFR</i></li>
+<li>Contains exactly one [1..1] <xref href="../MedicationSupplyOrder.dita">Medication Supply Order</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.17</tt>)</li></ol></li>
+<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>quantity</b></tt> (CONF:7458)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>product</b></tt> (CONF:7459, CONF:9331) <ol><li> This product supply act <b>SHALL</b> contain one product/Medication Information or one product/Immunization Medication Information template (CONF:15607, CONF:15608, CONF:9333)</li></ol>
+</li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>performer</b></tt> (CONF:7461) <ol><li> This performer <b>SHALL</b> contain exactly one [1..1] <tt><b>assignedEntity</b></tt> (CONF:7467) <ol><li> This assignedEntity <b>SHOULD</b> contain zero or one [0..1] <tt><b>addr</b></tt> with data type <xref href="../USRealmAddress.dita">US Realm Address</xref> (CONF:7468)</li></ol> </li></ol>
+</li>
+</ol>
+<ol id="aggregate">
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="SPLY" </tt> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>) (CONF:7451)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF:7452)
+</li>
+<li><b>SHALL</b> contain at least one [1..*] <tt><b>id</b></tt> (CONF:7454)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>statusCode</b></tt>, where the @code <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/MedicationFillStatus.dita">Medication Fill Status</xref> 2.16.840.1.113883.3.88.12.80.64</tt><b> STATIC</b> 1 (CONF:7455)
+</li>
+<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>effectiveTime</b></tt> (CONF:7456)
+</li>
+<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>repeatNumber</b></tt> (CONF:7457)
+<ul><li><p><lines><i>In "EVN" (event) mood, the repeatNumber is the number of occurrences. For example, a repeatNumber of "3" in a dispense act means that the current dispensation is the 3rd (CONF: 16876)</i></lines></p></li></ul></li>
+<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>quantity</b></tt> (CONF:7458)
+</li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> (CONF:7473, CONF:7474, CONF:15606)
+<ol>
+<li>Contains <tt><b>@typeCode="</b>REFR" </tt><i>REFR</i></li>
+<li>Contains exactly one [1..1] <xref href="../MedicationSupplyOrder.dita">Medication Supply Order</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.17</tt>)</li></ol></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>product</b></tt> (CONF:7459, CONF:9331) <ol><li> This product supply act <b>SHALL</b> contain one product/Medication Information or one product/Immunization Medication Information template (CONF:15607, CONF:15608, CONF:9333)</li></ol>
+</li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>performer</b></tt> (CONF:7461) <ol><li> This performer <b>SHALL</b> contain exactly one [1..1] <tt><b>assignedEntity</b></tt> (CONF:7467) <ol><li> This assignedEntity <b>SHOULD</b> contain zero or one [0..1] <tt><b>addr</b></tt> with data type <xref href="../USRealmAddress.dita">US Realm Address</xref> (CONF:7468)</li></ol> </li></ol>
+</li>
+</ol>
+<section id="tableconformance"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="8" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><colspec colname="col2" colnum="2" /><colspec colname="col3" colnum="3" /><colspec colname="col4" colnum="4" /><colspec colname="col5" colnum="5" /><colspec colname="col6" colnum="6" /><colspec colname="col7" colnum="7" /><thead> <row><entry namest="col0" nameend="col7" >consol::MedicationDispense</entry>  </row>  <row><entry namest="col0" nameend="col7" >cda::supply[cda:templateId/@root = 2.16.840.1.113883.10.20.22.4.18]/</entry>  </row>  <row><entry>Name</entry><entry>XPath</entry><entry>Cardinality</entry><entry>Severity</entry><entry>Nullable</entry><entry>Data Type</entry><entry>Conformance</entry><entry>Value(s)</entry></row></thead><tbody><row><entry>classCode</entry><entry>@classCode</entry><entry>1..1</entry><entry>SHALL</entry><entry>NO</entry><entry>ActClassSupply</entry><entry>CONF:7451</entry><entry> SPLY</entry></row> 
+<row><entry>moodCode</entry><entry>@moodCode</entry><entry>1..1</entry><entry>SHALL</entry><entry>NO</entry><entry>x_DocumentSubstanceMood</entry><entry>CONF:7452</entry><entry> EVN</entry></row> 
+<row><entry>Dispense Date ( effectiveTime )</entry><entry>effectiveTime</entry><entry>0..1</entry><entry>SHOULD</entry><entry>YES</entry><entry>SXCM_TS</entry><entry>CONF:7456</entry><entry> </entry></row> 
+<row><entry>Fill Number ( repeatNumber )</entry><entry>repeatNumber</entry><entry>0..1</entry><entry>SHOULD</entry><entry>YES</entry><entry>IVL_INT</entry><entry>CONF:7457</entry><entry> </entry></row> 
+<row><entry>Prescription Number ( id )</entry><entry>id</entry><entry>1..*</entry><entry>SHALL</entry><entry>YES</entry><entry>II</entry><entry>CONF:7454</entry><entry> </entry></row> 
+<row><entry>Quantity Dispensed ( quantity )</entry><entry>quantity</entry><entry>0..1</entry><entry>SHOULD</entry><entry>YES</entry><entry>PQ</entry><entry>CONF:7458</entry><entry> </entry></row> 
+<row><entry>statusCode</entry><entry>statusCode</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>CS</entry><entry>CONF:7455</entry><entry> </entry></row> 
+<row><entry>Fulfillment Instructions ( medicationDispense )</entry><entry>medicationDispense</entry><entry>0..*</entry><entry>MAY</entry><entry>YES</entry><entry>MedicationDispense</entry><entry>CONF:7549CONF:7553CONF:16090</entry><entry> </entry></row> 
+<row><entry>Order Information ( medicationSupplyOrder )</entry><entry>medicationSupplyOrder</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>MedicationSupplyOrder</entry><entry>CONF:7473CONF:7474CONF:15606</entry><entry> </entry></row> 
+<row><entry>performer</entry><entry>performer</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>Performer</entry><entry>CONF:7461</entry><entry> </entry></row> 
+<row><entry>product</entry><entry>product</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>Product</entry><entry>CONF:7459CONF:9331</entry><entry> </entry></row> 
+</tbody></tgroup></table></p></section>
+<codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<supply xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd" classCode="SPLY" moodCode="EVN">
+  <templateId root="2.16.840.1.113883.10.20.22.4.18"/>
+  <id root="MDHT" extension="2110240059"/>
+  <effectiveTime value="20121102"/>
+  <repeatNumber value="1"/>
+  <quantity/>
+  <product>
+    <manufacturedProduct/>
+  </product>
+  <performer>
+    <assignedEntity>
+      <id root="MDHT" extension="642897188"/>
+    </assignedEntity>
+  </performer>
+  <entryRelationship>
+    <supply classCode="SPLY" moodCode="INT">
+      <templateId root="2.16.840.1.113883.10.20.22.4.17"/>
+      <id root="MDHT" extension="1516094168"/>
+      <effectiveTime value="20121102"/>
+      <repeatNumber value="1"/>
+      <quantity/>
+      <product>
+        <manufacturedProduct/>
+      </product>
+      <author/>
+      <entryRelationship>
+        <act classCode="ACT" moodCode="INT">
+          <templateId root="2.16.840.1.113883.10.20.22.4.20"/>
+          <id root="MDHT" extension="1252677444"/>
+          <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
+          <statusCode code="completed"/>
+          <effectiveTime>
+            <low value="2012"/>
+            <high value="2012"/>
+          </effectiveTime>
+        </act>
+      </entryRelationship>
+    </supply>
+  </entryRelationship>
+</supply>]]></codeblock>
+<section id="changes">
+</section>
+<p><ph id="classformalname">Medication Dispense</ph></p>
+<p id="shortdesc">[Supply: templateId <tt>2.16.840.1.113883.10.20.22.4.18</tt>]</p>
+</body>
+</topic>

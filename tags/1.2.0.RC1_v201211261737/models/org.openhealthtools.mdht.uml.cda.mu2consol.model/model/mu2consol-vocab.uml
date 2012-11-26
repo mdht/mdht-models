@@ -1,0 +1,431 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:term="http://www.openhealthtools.org/mdht/schemas/term/1" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML">
+  <uml:Package xmi:id="_mZ-K0Nd5EeGtNLA6W-IQeQ" name="mu2consol-vocab">
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_ey3cgPuJEeGx4ophOjh2tw" name="Smoking Status">
+      <ownedLiteral xmi:id="_oFwkMPuJEeGx4ophOjh2tw" name="449868002"/>
+      <ownedLiteral xmi:id="_7HAnkPuJEeGx4ophOjh2tw" name="428041000124106"/>
+      <ownedLiteral xmi:id="__7lJ0PuJEeGx4ophOjh2tw" name="8517006"/>
+      <ownedLiteral xmi:id="_DvgHYPuKEeGx4ophOjh2tw" name="266919005"/>
+      <ownedLiteral xmi:id="_LxIbgPuKEeGx4ophOjh2tw" name="77176002"/>
+      <ownedLiteral xmi:id="_P00TYPuKEeGx4ophOjh2tw" name="266927001"/>
+      <ownedLiteral xmi:id="_YzPQ0PuTEeGx4ophOjh2tw" name="428071000124103"/>
+      <ownedLiteral xmi:id="_eBxyQPuTEeGx4ophOjh2tw" name="428061000124105"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_GE1KkALeEeK7TpEj_YCJGQ" name="Ethnicity Category ValueSet">
+      <ownedLiteral xmi:id="_R4yg0ALeEeK7TpEj_YCJGQ" name="2135-2"/>
+      <ownedLiteral xmi:id="_YkRhYALeEeK7TpEj_YCJGQ" name="2186-5"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_iw_NAALeEeK7TpEj_YCJGQ" name="Race Category ValueSet">
+      <ownedLiteral xmi:id="_vxkucALeEeK7TpEj_YCJGQ" name="1002-5"/>
+      <ownedLiteral xmi:id="_8m3l4ALeEeK7TpEj_YCJGQ" name="2028-9"/>
+      <ownedLiteral xmi:id="_AYSCAALfEeK7TpEj_YCJGQ" name="2076-8"/>
+      <ownedLiteral xmi:id="_FnfR0ALfEeK7TpEj_YCJGQ" name="2106-3"/>
+      <ownedLiteral xmi:id="_SNCf0ANdEeKNWa1y_3e0dw" name="2054-5"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_bjPZIAQsEeKhXbyWShxPyQ" name="LanguageCode">
+      <ownedLiteral xmi:id="_9617EAZTEeKw_PsLFI_pog" name="aar"/>
+      <ownedLiteral xmi:id="_kmD8wAZWEeKw_PsLFI_pog" name="abk"/>
+      <ownedLiteral xmi:id="_mf5MMAZWEeKw_PsLFI_pog" name="afr"/>
+      <ownedLiteral xmi:id="_rP2UMAZWEeKw_PsLFI_pog" name="aka"/>
+      <ownedLiteral xmi:id="_tLI8MAZWEeKw_PsLFI_pog" name="sqi"/>
+      <ownedLiteral xmi:id="_vcpEwAZWEeKw_PsLFI_pog" name="amh"/>
+      <ownedLiteral xmi:id="_wZXLsAZWEeKw_PsLFI_pog" name="ara"/>
+      <ownedLiteral xmi:id="_xZmgsAZWEeKw_PsLFI_pog" name="arg"/>
+      <ownedLiteral xmi:id="_00ViMAZWEeKw_PsLFI_pog" name="hye"/>
+      <ownedLiteral xmi:id="_29-vQAZWEeKw_PsLFI_pog" name="asm"/>
+      <ownedLiteral xmi:id="_4eGeMAZWEeKw_PsLFI_pog" name="ava"/>
+      <ownedLiteral xmi:id="_5qG-UAZWEeKw_PsLFI_pog" name="ave"/>
+      <ownedLiteral xmi:id="_6qe2MAZWEeKw_PsLFI_pog" name="aym"/>
+      <ownedLiteral xmi:id="_3LGncAZlEeKw_PsLFI_pog" name="aze"/>
+      <ownedLiteral xmi:id="_4WcZMAZlEeKw_PsLFI_pog" name="bak"/>
+      <ownedLiteral xmi:id="_5SGwMAZlEeKw_PsLFI_pog" name="bam"/>
+      <ownedLiteral xmi:id="_7HwDMAZlEeKw_PsLFI_pog" name="eus"/>
+      <ownedLiteral xmi:id="_9LNIsAZlEeKw_PsLFI_pog" name="bel"/>
+      <ownedLiteral xmi:id="_-Z2tIAZlEeKw_PsLFI_pog" name="ben"/>
+      <ownedLiteral xmi:id="__0gGMAZlEeKw_PsLFI_pog" name="bih"/>
+      <ownedLiteral xmi:id="_Ayc8MAZmEeKw_PsLFI_pog" name="bis"/>
+      <ownedLiteral xmi:id="_BosAoAZmEeKw_PsLFI_pog" name="bod"/>
+      <ownedLiteral xmi:id="_D5gMsAZmEeKw_PsLFI_pog" name="bos"/>
+      <ownedLiteral xmi:id="_FYQpsAZmEeKw_PsLFI_pog" name="bre"/>
+      <ownedLiteral xmi:id="_GRU_sAZmEeKw_PsLFI_pog" name="bul"/>
+      <ownedLiteral xmi:id="_HQ8poAZmEeKw_PsLFI_pog" name="mya"/>
+      <ownedLiteral xmi:id="_Iod2MAZmEeKw_PsLFI_pog" name="cat"/>
+      <ownedLiteral xmi:id="_JuCXIAZmEeKw_PsLFI_pog" name="ces"/>
+      <ownedLiteral xmi:id="_K92ZMAZmEeKw_PsLFI_pog" name="cha"/>
+      <ownedLiteral xmi:id="_O4UDoAZmEeKw_PsLFI_pog" name="che"/>
+      <ownedLiteral xmi:id="_Q9OhsAZmEeKw_PsLFI_pog" name="zho"/>
+      <ownedLiteral xmi:id="_SEtuMAZmEeKw_PsLFI_pog" name="chu"/>
+      <ownedLiteral xmi:id="_TK1BsAZmEeKw_PsLFI_pog" name="chv"/>
+      <ownedLiteral xmi:id="_UncwsAZmEeKw_PsLFI_pog" name="cor"/>
+      <ownedLiteral xmi:id="_V6OnMAZmEeKw_PsLFI_pog" name="cos"/>
+      <ownedLiteral xmi:id="_ai73sAZmEeKw_PsLFI_pog" name="cre"/>
+      <ownedLiteral xmi:id="_bl6XoAZmEeKw_PsLFI_pog" name="cym"/>
+      <ownedLiteral xmi:id="_c_CGsAZmEeKw_PsLFI_pog" name="dan"/>
+      <ownedLiteral xmi:id="_OT7HsAZnEeKw_PsLFI_pog" name="deu"/>
+      <ownedLiteral xmi:id="_PKKzMAZnEeKw_PsLFI_pog" name="div"/>
+      <ownedLiteral xmi:id="_QDiEIAZnEeKw_PsLFI_pog" name="nld"/>
+      <ownedLiteral xmi:id="_Q9EUMAZnEeKw_PsLFI_pog" name="dzo"/>
+      <ownedLiteral xmi:id="_SOYyIAZnEeKw_PsLFI_pog" name="ell"/>
+      <ownedLiteral xmi:id="_rjagsAZnEeKw_PsLFI_pog" name="eng"/>
+      <ownedLiteral xmi:id="_s6r1oAZnEeKw_PsLFI_pog" name="epo"/>
+      <ownedLiteral xmi:id="_uJM3MAZnEeKw_PsLFI_pog" name="est"/>
+      <ownedLiteral xmi:id="_xZF6oAZnEeKw_PsLFI_pog" name="ewe"/>
+      <ownedLiteral xmi:id="_ydnSsAZnEeKw_PsLFI_pog" name="fao"/>
+      <ownedLiteral xmi:id="_znKUsAZnEeKw_PsLFI_pog" name="fas"/>
+      <ownedLiteral xmi:id="_1DK_sAZnEeKw_PsLFI_pog" name="fij"/>
+      <ownedLiteral xmi:id="_19AKsAZnEeKw_PsLFI_pog" name="fin"/>
+      <ownedLiteral xmi:id="_2-TPoAZnEeKw_PsLFI_pog" name="fra"/>
+      <ownedLiteral xmi:id="_4XzZMAZnEeKw_PsLFI_pog" name="fry"/>
+      <ownedLiteral xmi:id="_5gMkoAZnEeKw_PsLFI_pog" name="ful"/>
+      <ownedLiteral xmi:id="_6vjTsAZnEeKw_PsLFI_pog" name="kat"/>
+      <ownedLiteral xmi:id="_7-DHIAZnEeKw_PsLFI_pog" name="ger"/>
+      <ownedLiteral xmi:id="_9GANsAZnEeKw_PsLFI_pog" name="gla"/>
+      <ownedLiteral xmi:id="_-AccsAZnEeKw_PsLFI_pog" name="gle"/>
+      <ownedLiteral xmi:id="_-_1dIAZnEeKw_PsLFI_pog" name="glg"/>
+      <ownedLiteral xmi:id="___PrsAZnEeKw_PsLFI_pog" name="glv"/>
+      <ownedLiteral xmi:id="_A_PwIAZoEeKw_PsLFI_pog" name="grn"/>
+      <ownedLiteral xmi:id="_DDjKMAZoEeKw_PsLFI_pog" name="guj"/>
+      <ownedLiteral xmi:id="_EKMCIAZoEeKw_PsLFI_pog" name="hat"/>
+      <ownedLiteral xmi:id="_E9sisAZoEeKw_PsLFI_pog" name="hau"/>
+      <ownedLiteral xmi:id="_F599sAZoEeKw_PsLFI_pog" name="heb"/>
+      <ownedLiteral xmi:id="_G_65IAZoEeKw_PsLFI_pog" name="her"/>
+      <ownedLiteral xmi:id="_CBeMsAZpEeKw_PsLFI_pog" name="hin"/>
+      <ownedLiteral xmi:id="_DN6xsAZpEeKw_PsLFI_pog" name="hmo"/>
+      <ownedLiteral xmi:id="_ESvEsAZpEeKw_PsLFI_pog" name="hrv"/>
+      <ownedLiteral xmi:id="_FX2SoAZpEeKw_PsLFI_pog" name="hun"/>
+      <ownedLiteral xmi:id="_WjHr0AZpEeKw_PsLFI_pog" name="ibo"/>
+      <ownedLiteral xmi:id="_aBB9IAZpEeKw_PsLFI_pog" name="isl"/>
+      <ownedLiteral xmi:id="_cAYlwAZpEeKw_PsLFI_pog" name="ido"/>
+      <ownedLiteral xmi:id="_kbNyIAZrEeKw_PsLFI_pog" name="iii"/>
+      <ownedLiteral xmi:id="_loSCMAZrEeKw_PsLFI_pog" name="iku"/>
+      <ownedLiteral xmi:id="_mfDSIAZrEeKw_PsLFI_pog" name="ile"/>
+      <ownedLiteral xmi:id="_napXsAZrEeKw_PsLFI_pog" name="ina"/>
+      <ownedLiteral xmi:id="_plamIAZrEeKw_PsLFI_pog" name="ind"/>
+      <ownedLiteral xmi:id="_qrsRsAZrEeKw_PsLFI_pog" name="ipk"/>
+      <ownedLiteral xmi:id="_r8UzIAZrEeKw_PsLFI_pog" name="ita"/>
+      <ownedLiteral xmi:id="_tseiIAZrEeKw_PsLFI_pog" name="jav"/>
+      <ownedLiteral xmi:id="_u2tgoAZrEeKw_PsLFI_pog" name="jpn"/>
+      <ownedLiteral xmi:id="_vwiroAZrEeKw_PsLFI_pog" name="kal"/>
+      <ownedLiteral xmi:id="_yMfwsAZrEeKw_PsLFI_pog" name="kan"/>
+      <ownedLiteral xmi:id="_zSXzoAZrEeKw_PsLFI_pog" name="kas"/>
+      <ownedLiteral xmi:id="_14xOIAZrEeKw_PsLFI_pog" name="kau"/>
+      <ownedLiteral xmi:id="_3NnhMAZrEeKw_PsLFI_pog" name="kaz"/>
+      <ownedLiteral xmi:id="_4O_eoAZrEeKw_PsLFI_pog" name="khm"/>
+      <ownedLiteral xmi:id="_5MGnIAZrEeKw_PsLFI_pog" name="kik"/>
+      <ownedLiteral xmi:id="_6HKhMAZrEeKw_PsLFI_pog" name="kin"/>
+      <ownedLiteral xmi:id="_6_TqIAZrEeKw_PsLFI_pog" name="kir"/>
+      <ownedLiteral xmi:id="_7_FsIAZrEeKw_PsLFI_pog" name="kom"/>
+      <ownedLiteral xmi:id="_8_8sMAZrEeKw_PsLFI_pog" name="kon"/>
+      <ownedLiteral xmi:id="_-Dw5oAZrEeKw_PsLFI_pog" name="kor"/>
+      <ownedLiteral xmi:id="_-_SGsAZrEeKw_PsLFI_pog" name="kua"/>
+      <ownedLiteral xmi:id="_ACG1oAZsEeKw_PsLFI_pog" name="kur"/>
+      <ownedLiteral xmi:id="_A8PioAZsEeKw_PsLFI_pog" name="lao"/>
+      <ownedLiteral xmi:id="_B1ZYMAZsEeKw_PsLFI_pog" name="lat"/>
+      <ownedLiteral xmi:id="_DChSoAZsEeKw_PsLFI_pog" name="lav"/>
+      <ownedLiteral xmi:id="_D-CfsAZsEeKw_PsLFI_pog" name="lim"/>
+      <ownedLiteral xmi:id="_FEYcsAZsEeKw_PsLFI_pog" name="lin"/>
+      <ownedLiteral xmi:id="_F6iooAZsEeKw_PsLFI_pog" name="lit"/>
+      <ownedLiteral xmi:id="_HbgsIAZsEeKw_PsLFI_pog" name="ltz"/>
+      <ownedLiteral xmi:id="_IPxaoAZsEeKw_PsLFI_pog" name="lub"/>
+      <ownedLiteral xmi:id="_IsADoAZsEeKw_PsLFI_pog" name="lug"/>
+      <ownedLiteral xmi:id="_O59asAZsEeKw_PsLFI_pog" name="mkd"/>
+      <ownedLiteral xmi:id="_Q50ZoAZsEeKw_PsLFI_pog" name="mah"/>
+      <ownedLiteral xmi:id="_Sh4joAZsEeKw_PsLFI_pog" name="mal"/>
+      <ownedLiteral xmi:id="_UgiBoAZsEeKw_PsLFI_pog" name="mri"/>
+      <ownedLiteral xmi:id="_WT5csAZsEeKw_PsLFI_pog" name="mar"/>
+      <ownedLiteral xmi:id="_XlJCIAZsEeKw_PsLFI_pog" name="msa"/>
+      <ownedLiteral xmi:id="_ZqIYsAZsEeKw_PsLFI_pog" name="mlg"/>
+      <ownedLiteral xmi:id="_aorroAZsEeKw_PsLFI_pog" name="mlt"/>
+      <ownedLiteral xmi:id="_bfFvMAZsEeKw_PsLFI_pog" name="mon"/>
+      <ownedLiteral xmi:id="_ekKCsAZsEeKw_PsLFI_pog" name="nau"/>
+      <ownedLiteral xmi:id="_gTFCoAZsEeKw_PsLFI_pog" name="nav"/>
+      <ownedLiteral xmi:id="_hPH0IAZsEeKw_PsLFI_pog" name="nbl"/>
+      <ownedLiteral xmi:id="_iLPeIAZsEeKw_PsLFI_pog" name="nde"/>
+      <ownedLiteral xmi:id="_jB3kIAZsEeKw_PsLFI_pog" name="ndo"/>
+      <ownedLiteral xmi:id="_j7odsAZsEeKw_PsLFI_pog" name="nep"/>
+      <ownedLiteral xmi:id="_k9PEoAZsEeKw_PsLFI_pog" name="nno"/>
+      <ownedLiteral xmi:id="_mNWosAZsEeKw_PsLFI_pog" name="nob"/>
+      <ownedLiteral xmi:id="_nVv0IAZsEeKw_PsLFI_pog" name="nor"/>
+      <ownedLiteral xmi:id="_oi91MAZsEeKw_PsLFI_pog" name="nya"/>
+      <ownedLiteral xmi:id="_pVs5sAZsEeKw_PsLFI_pog" name="oci"/>
+      <ownedLiteral xmi:id="_qKudMAZsEeKw_PsLFI_pog" name="oji"/>
+      <ownedLiteral xmi:id="_sidwoAZsEeKw_PsLFI_pog" name="ori"/>
+      <ownedLiteral xmi:id="_toSJMAZsEeKw_PsLFI_pog" name="orm"/>
+      <ownedLiteral xmi:id="_wgq2IAZtEeKw_PsLFI_pog" name="oss"/>
+      <ownedLiteral xmi:id="_x3CzMAZtEeKw_PsLFI_pog" name="pan"/>
+      <ownedLiteral xmi:id="_zB4OoAZtEeKw_PsLFI_pog" name="pli"/>
+      <ownedLiteral xmi:id="_0FfAsAZtEeKw_PsLFI_pog" name="pol"/>
+      <ownedLiteral xmi:id="_1O3qoAZtEeKw_PsLFI_pog" name="por"/>
+      <ownedLiteral xmi:id="_3M1zMAZtEeKw_PsLFI_pog" name="pus"/>
+      <ownedLiteral xmi:id="_4ileIAZtEeKw_PsLFI_pog" name="que"/>
+      <ownedLiteral xmi:id="_6bncUAZtEeKw_PsLFI_pog" name="roh"/>
+      <ownedLiteral xmi:id="_8Y3zMAZtEeKw_PsLFI_pog" name="ron"/>
+      <ownedLiteral xmi:id="_9qRJoAZtEeKw_PsLFI_pog" name="run"/>
+      <ownedLiteral xmi:id="_-zv6MAZtEeKw_PsLFI_pog" name="rus"/>
+      <ownedLiteral xmi:id="_ADiuIAZuEeKw_PsLFI_pog" name="sag"/>
+      <ownedLiteral xmi:id="_BHwkMAZuEeKw_PsLFI_pog" name="san"/>
+      <ownedLiteral xmi:id="_CLMXIAZuEeKw_PsLFI_pog" name="sin"/>
+      <ownedLiteral xmi:id="_DdDnoAZuEeKw_PsLFI_pog" name="slk"/>
+      <ownedLiteral xmi:id="_E5wPIAZuEeKw_PsLFI_pog" name="slv"/>
+      <ownedLiteral xmi:id="_GJexoAZuEeKw_PsLFI_pog" name="sme"/>
+      <ownedLiteral xmi:id="_HA9MMAZuEeKw_PsLFI_pog" name="smo"/>
+      <ownedLiteral xmi:id="_IKMFIAZuEeKw_PsLFI_pog" name="sna"/>
+      <ownedLiteral xmi:id="_JLH9sAZuEeKw_PsLFI_pog" name="snd"/>
+      <ownedLiteral xmi:id="_KB5NoAZuEeKw_PsLFI_pog" name="som"/>
+      <ownedLiteral xmi:id="_LDDIoAZuEeKw_PsLFI_pog" name="sot"/>
+      <ownedLiteral xmi:id="_M8qVoAZuEeKw_PsLFI_pog" name="spa"/>
+      <ownedLiteral xmi:id="_N9lnIAZuEeKw_PsLFI_pog" name="srd"/>
+      <ownedLiteral xmi:id="_PQNsoAZuEeKw_PsLFI_pog" name="srp"/>
+      <ownedLiteral xmi:id="_fEtgIAZuEeKw_PsLFI_pog" name="ssw"/>
+      <ownedLiteral xmi:id="_grU4oAZuEeKw_PsLFI_pog" name="sun"/>
+      <ownedLiteral xmi:id="_hwOEIAZuEeKw_PsLFI_pog" name="swa"/>
+      <ownedLiteral xmi:id="_i3aVsAZuEeKw_PsLFI_pog" name="swe"/>
+      <ownedLiteral xmi:id="_jutxIAZuEeKw_PsLFI_pog" name="tah"/>
+      <ownedLiteral xmi:id="_lGEloAZuEeKw_PsLFI_pog" name="tam"/>
+      <ownedLiteral xmi:id="_mZPdsAZuEeKw_PsLFI_pog" name="tat"/>
+      <ownedLiteral xmi:id="_ncxXQAZuEeKw_PsLFI_pog" name="tel"/>
+      <ownedLiteral xmi:id="_oWSZMAZuEeKw_PsLFI_pog" name="tgk"/>
+      <ownedLiteral xmi:id="_pRQMoAZuEeKw_PsLFI_pog" name="tgl"/>
+      <ownedLiteral xmi:id="_qWJYIAZuEeKw_PsLFI_pog" name="tha"/>
+      <ownedLiteral xmi:id="_rgTeIAZuEeKw_PsLFI_pog" name="tir"/>
+      <ownedLiteral xmi:id="_sc4bIAZuEeKw_PsLFI_pog" name="ton"/>
+      <ownedLiteral xmi:id="_tXaJsAZuEeKw_PsLFI_pog" name="tsn"/>
+      <ownedLiteral xmi:id="_uT0uoAZuEeKw_PsLFI_pog" name="tso"/>
+      <ownedLiteral xmi:id="_vSnSIAZuEeKw_PsLFI_pog" name="tuk"/>
+      <ownedLiteral xmi:id="_wP9rMAZuEeKw_PsLFI_pog" name="tur"/>
+      <ownedLiteral xmi:id="_xLPAoAZuEeKw_PsLFI_pog" name="twi"/>
+      <ownedLiteral xmi:id="_yUGGIAZuEeKw_PsLFI_pog" name="uig"/>
+      <ownedLiteral xmi:id="_3m6qoAZuEeKw_PsLFI_pog" name="ukr"/>
+      <ownedLiteral xmi:id="_4igJIAZuEeKw_PsLFI_pog" name="urd"/>
+      <ownedLiteral xmi:id="_AFc9MAZvEeKw_PsLFI_pog" name="uzb"/>
+      <ownedLiteral xmi:id="_BFdBoAZvEeKw_PsLFI_pog" name="ven"/>
+      <ownedLiteral xmi:id="_CLHpMAZvEeKw_PsLFI_pog" name="vie"/>
+      <ownedLiteral xmi:id="_DGUGIAZvEeKw_PsLFI_pog" name="vol"/>
+      <ownedLiteral xmi:id="_EEpWoAZvEeKw_PsLFI_pog" name="wln"/>
+      <ownedLiteral xmi:id="_E8u1MAZvEeKw_PsLFI_pog" name="wol"/>
+      <ownedLiteral xmi:id="_GGMXoAZvEeKw_PsLFI_pog" name="xho"/>
+      <ownedLiteral xmi:id="_G4eJIAZvEeKw_PsLFI_pog" name="yid"/>
+      <ownedLiteral xmi:id="_Hx7gsAZvEeKw_PsLFI_pog" name="yor"/>
+      <ownedLiteral xmi:id="_IzJtIAZvEeKw_PsLFI_pog" name="zha"/>
+      <ownedLiteral xmi:id="_Jz7NoAZvEeKw_PsLFI_pog" name="zul"/>
+    </packagedElement>
+    <profileApplication xmi:id="_mZ-K0dd5EeGtNLA6W-IQeQ">
+      <eAnnotations xmi:id="_mZ-K0td5EeGtNLA6W-IQeQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.openhealthtools.org/mdht/schemas/term/1#/"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://MDHT_TERM_PROFILES/Terminology.profile.uml#_cxOJEIEVEd6H8o-hO3-B4Q"/>
+    </profileApplication>
+  </uml:Package>
+  <term:ValueSetVersion xmi:id="_ezB0kPuJEeGx4ophOjh2tw" base_Enumeration="_ey3cgPuJEeGx4ophOjh2tw">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
+  </term:ValueSetVersion>
+  <term:ValueSetCode xmi:id="_zhFYAPuJEeGx4ophOjh2tw" conceptName="Current every day smoker" base_EnumerationLiteral="_oFwkMPuJEeGx4ophOjh2tw"/>
+  <term:ValueSetCode xmi:id="_7HBOoPuJEeGx4ophOjh2tw" conceptName="Current some day smoker" base_EnumerationLiteral="_7HAnkPuJEeGx4ophOjh2tw"/>
+  <term:ValueSetCode xmi:id="__7lw4PuJEeGx4ophOjh2tw" conceptName="Former smoker" base_EnumerationLiteral="__7lJ0PuJEeGx4ophOjh2tw"/>
+  <term:ValueSetCode xmi:id="_DvgHYfuKEeGx4ophOjh2tw" conceptName="Never smoker (Never Smoked)" base_EnumerationLiteral="_DvgHYPuKEeGx4ophOjh2tw"/>
+  <term:ValueSetCode xmi:id="_LxK3wPuKEeGx4ophOjh2tw" conceptName="Smoker, current status unknown" base_EnumerationLiteral="_LxIbgPuKEeGx4ophOjh2tw"/>
+  <term:ValueSetCode xmi:id="_P006cPuKEeGx4ophOjh2tw" conceptName="Unknown if ever smoked" base_EnumerationLiteral="_P00TYPuKEeGx4ophOjh2tw"/>
+  <term:ValueSetCode xmi:id="_YzP34PuTEeGx4ophOjh2tw" conceptName="Heavy tobacco smoker" base_EnumerationLiteral="_YzPQ0PuTEeGx4ophOjh2tw"/>
+  <term:ValueSetCode xmi:id="_eByZUPuTEeGx4ophOjh2tw" conceptName="Light tobacco smoker" base_EnumerationLiteral="_eBxyQPuTEeGx4ophOjh2tw"/>
+  <term:ValueSetVersion xmi:id="_GE2YsALeEeK7TpEj_YCJGQ" base_Enumeration="_GE1KkALeEeK7TpEj_YCJGQ">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_dfdYoKDqEd-dVeaMP0XXQw"/>
+  </term:ValueSetVersion>
+  <term:ValueSetCode xmi:id="_R4zH4ALeEeK7TpEj_YCJGQ" conceptName="Hispanic or Latino" base_EnumerationLiteral="_R4yg0ALeEeK7TpEj_YCJGQ"/>
+  <term:ValueSetCode xmi:id="_YkSIcALeEeK7TpEj_YCJGQ" conceptName="Not Hispanic or Latino" base_EnumerationLiteral="_YkRhYALeEeK7TpEj_YCJGQ"/>
+  <term:ValueSetVersion xmi:id="_iw_0EALeEeK7TpEj_YCJGQ" base_Enumeration="_iw_NAALeEeK7TpEj_YCJGQ">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_dfdYoKDqEd-dVeaMP0XXQw"/>
+  </term:ValueSetVersion>
+  <term:ValueSetCode xmi:id="_vxlVgALeEeK7TpEj_YCJGQ" conceptName="American Indian or Alaska Native" base_EnumerationLiteral="_vxkucALeEeK7TpEj_YCJGQ"/>
+  <term:ValueSetCode xmi:id="_8m3l4QLeEeK7TpEj_YCJGQ" conceptName="Asian" base_EnumerationLiteral="_8m3l4ALeEeK7TpEj_YCJGQ"/>
+  <term:ValueSetCode xmi:id="_AYSpEALfEeK7TpEj_YCJGQ" conceptName="Native Hawaiian or Other Pacific Islander" base_EnumerationLiteral="_AYSCAALfEeK7TpEj_YCJGQ"/>
+  <term:ValueSetCode xmi:id="_Fnf44ALfEeK7TpEj_YCJGQ" conceptName="White" base_EnumerationLiteral="_FnfR0ALfEeK7TpEj_YCJGQ"/>
+  <term:ValueSetCode xmi:id="_SNDt8ANdEeKNWa1y_3e0dw" conceptName="Black or African American" base_EnumerationLiteral="_SNCf0ANdEeKNWa1y_3e0dw"/>
+  <term:ValueSetVersion xmi:id="_bjYjEAQsEeKhXbyWShxPyQ" base_Enumeration="_bjPZIAQsEeKhXbyWShxPyQ">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+  </term:ValueSetVersion>
+  <term:ValueSetCode xmi:id="_-OczkAZTEeKw_PsLFI_pog" conceptName="Afar" base_EnumerationLiteral="_9617EAZTEeKw_PsLFI_pog"/>
+  <term:ValueSetCode xmi:id="_kmEj0AZWEeKw_PsLFI_pog" conceptName="Abkhazian" base_EnumerationLiteral="_kmD8wAZWEeKw_PsLFI_pog"/>
+  <term:ValueSetCode xmi:id="_mf5MMQZWEeKw_PsLFI_pog" conceptName="Afrikaans" base_EnumerationLiteral="_mf5MMAZWEeKw_PsLFI_pog"/>
+  <term:ValueSetCode xmi:id="_rP27QAZWEeKw_PsLFI_pog" conceptName="Akan" base_EnumerationLiteral="_rP2UMAZWEeKw_PsLFI_pog"/>
+  <term:ValueSetCode xmi:id="_tLJjQAZWEeKw_PsLFI_pog" conceptName="Albanian" base_EnumerationLiteral="_tLI8MAZWEeKw_PsLFI_pog"/>
+  <term:ValueSetCode xmi:id="_vcpEwQZWEeKw_PsLFI_pog" conceptName="Amharic" base_EnumerationLiteral="_vcpEwAZWEeKw_PsLFI_pog"/>
+  <term:ValueSetCode xmi:id="_wZXLsQZWEeKw_PsLFI_pog" conceptName="Arabic" base_EnumerationLiteral="_wZXLsAZWEeKw_PsLFI_pog"/>
+  <term:ValueSetCode xmi:id="_xZnHwAZWEeKw_PsLFI_pog" conceptName="Aragonese" base_EnumerationLiteral="_xZmgsAZWEeKw_PsLFI_pog"/>
+  <term:ValueSetCode xmi:id="_00WJQAZWEeKw_PsLFI_pog" conceptName="Armenian" base_EnumerationLiteral="_00ViMAZWEeKw_PsLFI_pog"/>
+  <term:ValueSetCode xmi:id="_29-vQQZWEeKw_PsLFI_pog" conceptName="Assamese" base_EnumerationLiteral="_29-vQAZWEeKw_PsLFI_pog"/>
+  <term:ValueSetCode xmi:id="_4eGeMQZWEeKw_PsLFI_pog" conceptName="Avaric" base_EnumerationLiteral="_4eGeMAZWEeKw_PsLFI_pog"/>
+  <term:ValueSetCode xmi:id="_5qHlYAZWEeKw_PsLFI_pog" conceptName="Avestan" base_EnumerationLiteral="_5qG-UAZWEeKw_PsLFI_pog"/>
+  <term:ValueSetCode xmi:id="_6qfdQAZWEeKw_PsLFI_pog" conceptName="Aymara" base_EnumerationLiteral="_6qe2MAZWEeKw_PsLFI_pog"/>
+  <term:ValueSetCode xmi:id="_3LHOgAZlEeKw_PsLFI_pog" conceptName="Azerbaijani" base_EnumerationLiteral="_3LGncAZlEeKw_PsLFI_pog"/>
+  <term:ValueSetCode xmi:id="_4WcZMQZlEeKw_PsLFI_pog" conceptName="Bashkir" base_EnumerationLiteral="_4WcZMAZlEeKw_PsLFI_pog"/>
+  <term:ValueSetCode xmi:id="_5SGwMQZlEeKw_PsLFI_pog" conceptName="Bambara" base_EnumerationLiteral="_5SGwMAZlEeKw_PsLFI_pog"/>
+  <term:ValueSetCode xmi:id="_7HwqQAZlEeKw_PsLFI_pog" conceptName="Basque" base_EnumerationLiteral="_7HwDMAZlEeKw_PsLFI_pog"/>
+  <term:ValueSetCode xmi:id="_9LNvwAZlEeKw_PsLFI_pog" conceptName="Belarusian" base_EnumerationLiteral="_9LNIsAZlEeKw_PsLFI_pog"/>
+  <term:ValueSetCode xmi:id="_-Z3UMAZlEeKw_PsLFI_pog" conceptName="Bengali" base_EnumerationLiteral="_-Z2tIAZlEeKw_PsLFI_pog"/>
+  <term:ValueSetCode xmi:id="__0gtQAZlEeKw_PsLFI_pog" conceptName="Bihari languages" base_EnumerationLiteral="__0gGMAZlEeKw_PsLFI_pog"/>
+  <term:ValueSetCode xmi:id="_AydjQAZmEeKw_PsLFI_pog" conceptName="Bislama" base_EnumerationLiteral="_Ayc8MAZmEeKw_PsLFI_pog"/>
+  <term:ValueSetCode xmi:id="_BosnsAZmEeKw_PsLFI_pog" conceptName="Tibetan" base_EnumerationLiteral="_BosAoAZmEeKw_PsLFI_pog"/>
+  <term:ValueSetCode xmi:id="_D5gMsQZmEeKw_PsLFI_pog" conceptName="Bosnian" base_EnumerationLiteral="_D5gMsAZmEeKw_PsLFI_pog"/>
+  <term:ValueSetCode xmi:id="_FYQpsQZmEeKw_PsLFI_pog" conceptName="Breton" base_EnumerationLiteral="_FYQpsAZmEeKw_PsLFI_pog"/>
+  <term:ValueSetCode xmi:id="_GRU_sQZmEeKw_PsLFI_pog" conceptName="Bulgarian" base_EnumerationLiteral="_GRU_sAZmEeKw_PsLFI_pog"/>
+  <term:ValueSetCode xmi:id="_HQ9QsAZmEeKw_PsLFI_pog" conceptName="Burmese" base_EnumerationLiteral="_HQ8poAZmEeKw_PsLFI_pog"/>
+  <term:ValueSetCode xmi:id="_IoedQAZmEeKw_PsLFI_pog" conceptName="Catalan; Valencian" base_EnumerationLiteral="_Iod2MAZmEeKw_PsLFI_pog"/>
+  <term:ValueSetCode xmi:id="_JuC-MAZmEeKw_PsLFI_pog" conceptName="Czech" base_EnumerationLiteral="_JuCXIAZmEeKw_PsLFI_pog"/>
+  <term:ValueSetCode xmi:id="_K93AQAZmEeKw_PsLFI_pog" conceptName="Chamorro" base_EnumerationLiteral="_K92ZMAZmEeKw_PsLFI_pog"/>
+  <term:ValueSetCode xmi:id="_O4UqsAZmEeKw_PsLFI_pog" conceptName="Chechen" base_EnumerationLiteral="_O4UDoAZmEeKw_PsLFI_pog"/>
+  <term:ValueSetCode xmi:id="_Q9OhsQZmEeKw_PsLFI_pog" conceptName="Chinese" base_EnumerationLiteral="_Q9OhsAZmEeKw_PsLFI_pog"/>
+  <term:ValueSetCode xmi:id="_SEuVQAZmEeKw_PsLFI_pog" conceptName="Church Slavic; Old Slavonic; Church Slavonic; Old Bulgarian; Old Church Slavonic" base_EnumerationLiteral="_SEtuMAZmEeKw_PsLFI_pog"/>
+  <term:ValueSetCode xmi:id="_TK1BsQZmEeKw_PsLFI_pog" conceptName="Chuvash" base_EnumerationLiteral="_TK1BsAZmEeKw_PsLFI_pog"/>
+  <term:ValueSetCode xmi:id="_UndXwAZmEeKw_PsLFI_pog" conceptName="Cornish" base_EnumerationLiteral="_UncwsAZmEeKw_PsLFI_pog"/>
+  <term:ValueSetCode xmi:id="_V6OnMQZmEeKw_PsLFI_pog" conceptName="Corsican" base_EnumerationLiteral="_V6OnMAZmEeKw_PsLFI_pog"/>
+  <term:ValueSetCode xmi:id="_ai73sQZmEeKw_PsLFI_pog" conceptName="Cree" base_EnumerationLiteral="_ai73sAZmEeKw_PsLFI_pog"/>
+  <term:ValueSetCode xmi:id="_bl6-sAZmEeKw_PsLFI_pog" conceptName="Welsh" base_EnumerationLiteral="_bl6XoAZmEeKw_PsLFI_pog"/>
+  <term:ValueSetCode xmi:id="_c_CtwAZmEeKw_PsLFI_pog" conceptName="Danish" base_EnumerationLiteral="_c_CGsAZmEeKw_PsLFI_pog"/>
+  <term:ValueSetCode xmi:id="_OT7uwAZnEeKw_PsLFI_pog" conceptName="German" base_EnumerationLiteral="_OT7HsAZnEeKw_PsLFI_pog"/>
+  <term:ValueSetCode xmi:id="_PKKzMQZnEeKw_PsLFI_pog" conceptName="Divehi; Dhivehi; Maldivian" base_EnumerationLiteral="_PKKzMAZnEeKw_PsLFI_pog"/>
+  <term:ValueSetCode xmi:id="_QDirMAZnEeKw_PsLFI_pog" conceptName="Dutch; Flemish" base_EnumerationLiteral="_QDiEIAZnEeKw_PsLFI_pog"/>
+  <term:ValueSetCode xmi:id="_Q9EUMQZnEeKw_PsLFI_pog" conceptName="Dzongkha" base_EnumerationLiteral="_Q9EUMAZnEeKw_PsLFI_pog"/>
+  <term:ValueSetCode xmi:id="_SOZZMAZnEeKw_PsLFI_pog" conceptName="Greek, Modern (1453-)" base_EnumerationLiteral="_SOYyIAZnEeKw_PsLFI_pog"/>
+  <term:ValueSetCode xmi:id="_rjbHwAZnEeKw_PsLFI_pog" conceptName="English" base_EnumerationLiteral="_rjagsAZnEeKw_PsLFI_pog"/>
+  <term:ValueSetCode xmi:id="_s6scsAZnEeKw_PsLFI_pog" conceptName="Esperanto" base_EnumerationLiteral="_s6r1oAZnEeKw_PsLFI_pog"/>
+  <term:ValueSetCode xmi:id="_uJM3MQZnEeKw_PsLFI_pog" conceptName="Estonian" base_EnumerationLiteral="_uJM3MAZnEeKw_PsLFI_pog"/>
+  <term:ValueSetCode xmi:id="_xZGhsAZnEeKw_PsLFI_pog" conceptName="Ewe" base_EnumerationLiteral="_xZF6oAZnEeKw_PsLFI_pog"/>
+  <term:ValueSetCode xmi:id="_ydn5wAZnEeKw_PsLFI_pog" conceptName="Faroese" base_EnumerationLiteral="_ydnSsAZnEeKw_PsLFI_pog"/>
+  <term:ValueSetCode xmi:id="_znKUsQZnEeKw_PsLFI_pog" conceptName="Persian" base_EnumerationLiteral="_znKUsAZnEeKw_PsLFI_pog"/>
+  <term:ValueSetCode xmi:id="_1DLmwAZnEeKw_PsLFI_pog" conceptName="Fijian" base_EnumerationLiteral="_1DK_sAZnEeKw_PsLFI_pog"/>
+  <term:ValueSetCode xmi:id="_19AKsQZnEeKw_PsLFI_pog" conceptName="Finnish" base_EnumerationLiteral="_19AKsAZnEeKw_PsLFI_pog"/>
+  <term:ValueSetCode xmi:id="_2-T2sAZnEeKw_PsLFI_pog" conceptName="French" base_EnumerationLiteral="_2-TPoAZnEeKw_PsLFI_pog"/>
+  <term:ValueSetCode xmi:id="_4XzZMQZnEeKw_PsLFI_pog" conceptName="Western Frisian" base_EnumerationLiteral="_4XzZMAZnEeKw_PsLFI_pog"/>
+  <term:ValueSetCode xmi:id="_5gNLsAZnEeKw_PsLFI_pog" conceptName="Fulah" base_EnumerationLiteral="_5gMkoAZnEeKw_PsLFI_pog"/>
+  <term:ValueSetCode xmi:id="_6vjTsQZnEeKw_PsLFI_pog" conceptName="Georgian" base_EnumerationLiteral="_6vjTsAZnEeKw_PsLFI_pog"/>
+  <term:ValueSetCode xmi:id="_7-DuMAZnEeKw_PsLFI_pog" conceptName="German" base_EnumerationLiteral="_7-DHIAZnEeKw_PsLFI_pog"/>
+  <term:ValueSetCode xmi:id="_9GA0wAZnEeKw_PsLFI_pog" conceptName="Gaelic; Scottish Gaelic" base_EnumerationLiteral="_9GANsAZnEeKw_PsLFI_pog"/>
+  <term:ValueSetCode xmi:id="_-AccsQZnEeKw_PsLFI_pog" conceptName="Irish" base_EnumerationLiteral="_-AccsAZnEeKw_PsLFI_pog"/>
+  <term:ValueSetCode xmi:id="_-_2EMAZnEeKw_PsLFI_pog" conceptName="Galician" base_EnumerationLiteral="_-_1dIAZnEeKw_PsLFI_pog"/>
+  <term:ValueSetCode xmi:id="___QSwAZnEeKw_PsLFI_pog" conceptName="Manx" base_EnumerationLiteral="___PrsAZnEeKw_PsLFI_pog"/>
+  <term:ValueSetCode xmi:id="_A_QXMAZoEeKw_PsLFI_pog" conceptName="Guarani" base_EnumerationLiteral="_A_PwIAZoEeKw_PsLFI_pog"/>
+  <term:ValueSetCode xmi:id="_DDjKMQZoEeKw_PsLFI_pog" conceptName="Gujarati" base_EnumerationLiteral="_DDjKMAZoEeKw_PsLFI_pog"/>
+  <term:ValueSetCode xmi:id="_EKMpMAZoEeKw_PsLFI_pog" conceptName="Haitian; Haitian Creole" base_EnumerationLiteral="_EKMCIAZoEeKw_PsLFI_pog"/>
+  <term:ValueSetCode xmi:id="_E9sisQZoEeKw_PsLFI_pog" conceptName="Hausa" base_EnumerationLiteral="_E9sisAZoEeKw_PsLFI_pog"/>
+  <term:ValueSetCode xmi:id="_F599sQZoEeKw_PsLFI_pog" conceptName="Hebrew" base_EnumerationLiteral="_F599sAZoEeKw_PsLFI_pog"/>
+  <term:ValueSetCode xmi:id="_G_7gMAZoEeKw_PsLFI_pog" conceptName="Herero" base_EnumerationLiteral="_G_65IAZoEeKw_PsLFI_pog"/>
+  <term:ValueSetCode xmi:id="_CBeMsQZpEeKw_PsLFI_pog" conceptName="Hindi" base_EnumerationLiteral="_CBeMsAZpEeKw_PsLFI_pog"/>
+  <term:ValueSetCode xmi:id="_DN7YwAZpEeKw_PsLFI_pog" conceptName="Hiri Motu" base_EnumerationLiteral="_DN6xsAZpEeKw_PsLFI_pog"/>
+  <term:ValueSetCode xmi:id="_ESvEsQZpEeKw_PsLFI_pog" conceptName="Croatian" base_EnumerationLiteral="_ESvEsAZpEeKw_PsLFI_pog"/>
+  <term:ValueSetCode xmi:id="_FX25sAZpEeKw_PsLFI_pog" conceptName="Hungarian" base_EnumerationLiteral="_FX2SoAZpEeKw_PsLFI_pog"/>
+  <term:ValueSetCode xmi:id="_WjIS4AZpEeKw_PsLFI_pog" conceptName="Igbo" base_EnumerationLiteral="_WjHr0AZpEeKw_PsLFI_pog"/>
+  <term:ValueSetCode xmi:id="_aBCkMAZpEeKw_PsLFI_pog" conceptName="Icelandic" base_EnumerationLiteral="_aBB9IAZpEeKw_PsLFI_pog"/>
+  <term:ValueSetCode xmi:id="_cAYlwQZpEeKw_PsLFI_pog" conceptName="Ido" base_EnumerationLiteral="_cAYlwAZpEeKw_PsLFI_pog"/>
+  <term:ValueSetCode xmi:id="_kbNyIQZrEeKw_PsLFI_pog" conceptName="Sichuan Yi; Nuosu" base_EnumerationLiteral="_kbNyIAZrEeKw_PsLFI_pog"/>
+  <term:ValueSetCode xmi:id="_loSCMQZrEeKw_PsLFI_pog" conceptName="Inuktitut" base_EnumerationLiteral="_loSCMAZrEeKw_PsLFI_pog"/>
+  <term:ValueSetCode xmi:id="_mfD5MAZrEeKw_PsLFI_pog" conceptName="Interlingue; Occidental" base_EnumerationLiteral="_mfDSIAZrEeKw_PsLFI_pog"/>
+  <term:ValueSetCode xmi:id="_nap-wAZrEeKw_PsLFI_pog" conceptName="Interlingua (International Auxiliary Language Association)" base_EnumerationLiteral="_napXsAZrEeKw_PsLFI_pog"/>
+  <term:ValueSetCode xmi:id="_plbNMAZrEeKw_PsLFI_pog" conceptName="Indonesian" base_EnumerationLiteral="_plamIAZrEeKw_PsLFI_pog"/>
+  <term:ValueSetCode xmi:id="_qrs4wAZrEeKw_PsLFI_pog" conceptName="Inupiaq" base_EnumerationLiteral="_qrsRsAZrEeKw_PsLFI_pog"/>
+  <term:ValueSetCode xmi:id="_r8VaMAZrEeKw_PsLFI_pog" conceptName="Italian" base_EnumerationLiteral="_r8UzIAZrEeKw_PsLFI_pog"/>
+  <term:ValueSetCode xmi:id="_tsfJMAZrEeKw_PsLFI_pog" conceptName="Javanese" base_EnumerationLiteral="_tseiIAZrEeKw_PsLFI_pog"/>
+  <term:ValueSetCode xmi:id="_u2uHsAZrEeKw_PsLFI_pog" conceptName="Japanese" base_EnumerationLiteral="_u2tgoAZrEeKw_PsLFI_pog"/>
+  <term:ValueSetCode xmi:id="_vwjSsAZrEeKw_PsLFI_pog" conceptName="Kalaallisut; Greenlandic" base_EnumerationLiteral="_vwiroAZrEeKw_PsLFI_pog"/>
+  <term:ValueSetCode xmi:id="_yMgXwAZrEeKw_PsLFI_pog" conceptName="Kannada" base_EnumerationLiteral="_yMfwsAZrEeKw_PsLFI_pog"/>
+  <term:ValueSetCode xmi:id="_zSYasAZrEeKw_PsLFI_pog" conceptName="Kashmiri" base_EnumerationLiteral="_zSXzoAZrEeKw_PsLFI_pog"/>
+  <term:ValueSetCode xmi:id="_14x1MAZrEeKw_PsLFI_pog" conceptName="Kanuri" base_EnumerationLiteral="_14xOIAZrEeKw_PsLFI_pog"/>
+  <term:ValueSetCode xmi:id="_3NoIQAZrEeKw_PsLFI_pog" conceptName="Kazakh" base_EnumerationLiteral="_3NnhMAZrEeKw_PsLFI_pog"/>
+  <term:ValueSetCode xmi:id="_4PAFsAZrEeKw_PsLFI_pog" conceptName="Central Khmer" base_EnumerationLiteral="_4O_eoAZrEeKw_PsLFI_pog"/>
+  <term:ValueSetCode xmi:id="_5MGnIQZrEeKw_PsLFI_pog" conceptName="Kikuyu; Gikuyu" base_EnumerationLiteral="_5MGnIAZrEeKw_PsLFI_pog"/>
+  <term:ValueSetCode xmi:id="_6HKhMQZrEeKw_PsLFI_pog" conceptName="Kinyarwanda" base_EnumerationLiteral="_6HKhMAZrEeKw_PsLFI_pog"/>
+  <term:ValueSetCode xmi:id="_6_URMAZrEeKw_PsLFI_pog" conceptName="Kirghiz; Kyrgyz" base_EnumerationLiteral="_6_TqIAZrEeKw_PsLFI_pog"/>
+  <term:ValueSetCode xmi:id="_7_GTMAZrEeKw_PsLFI_pog" conceptName="Komi" base_EnumerationLiteral="_7_FsIAZrEeKw_PsLFI_pog"/>
+  <term:ValueSetCode xmi:id="_8_8sMQZrEeKw_PsLFI_pog" conceptName="Kongo" base_EnumerationLiteral="_8_8sMAZrEeKw_PsLFI_pog"/>
+  <term:ValueSetCode xmi:id="_-DxgsAZrEeKw_PsLFI_pog" conceptName="Korean" base_EnumerationLiteral="_-Dw5oAZrEeKw_PsLFI_pog"/>
+  <term:ValueSetCode xmi:id="_-_SGsQZrEeKw_PsLFI_pog" conceptName="Kuanyama; Kwanyama" base_EnumerationLiteral="_-_SGsAZrEeKw_PsLFI_pog"/>
+  <term:ValueSetCode xmi:id="_ACHcsAZsEeKw_PsLFI_pog" conceptName="Kurdish" base_EnumerationLiteral="_ACG1oAZsEeKw_PsLFI_pog"/>
+  <term:ValueSetCode xmi:id="_A8QJsAZsEeKw_PsLFI_pog" conceptName="Lao" base_EnumerationLiteral="_A8PioAZsEeKw_PsLFI_pog"/>
+  <term:ValueSetCode xmi:id="_B1Z_QAZsEeKw_PsLFI_pog" conceptName="Latin" base_EnumerationLiteral="_B1ZYMAZsEeKw_PsLFI_pog"/>
+  <term:ValueSetCode xmi:id="_DCh5sAZsEeKw_PsLFI_pog" conceptName="Latvian" base_EnumerationLiteral="_DChSoAZsEeKw_PsLFI_pog"/>
+  <term:ValueSetCode xmi:id="_D-DGwAZsEeKw_PsLFI_pog" conceptName="Limburgan; Limburger; Limburgish" base_EnumerationLiteral="_D-CfsAZsEeKw_PsLFI_pog"/>
+  <term:ValueSetCode xmi:id="_FEYcsQZsEeKw_PsLFI_pog" conceptName="Lingala" base_EnumerationLiteral="_FEYcsAZsEeKw_PsLFI_pog"/>
+  <term:ValueSetCode xmi:id="_F6jPsAZsEeKw_PsLFI_pog" conceptName="Lithuanian" base_EnumerationLiteral="_F6iooAZsEeKw_PsLFI_pog"/>
+  <term:ValueSetCode xmi:id="_HbhTMAZsEeKw_PsLFI_pog" conceptName="Luxembourgish; Letzeburgesch" base_EnumerationLiteral="_HbgsIAZsEeKw_PsLFI_pog"/>
+  <term:ValueSetCode xmi:id="_IPyBsAZsEeKw_PsLFI_pog" conceptName="Luba-Katanga" base_EnumerationLiteral="_IPxaoAZsEeKw_PsLFI_pog"/>
+  <term:ValueSetCode xmi:id="_IsAqsAZsEeKw_PsLFI_pog" conceptName="Ganda" base_EnumerationLiteral="_IsADoAZsEeKw_PsLFI_pog"/>
+  <term:ValueSetCode xmi:id="_O5-BwAZsEeKw_PsLFI_pog" conceptName="Macedonian" base_EnumerationLiteral="_O59asAZsEeKw_PsLFI_pog"/>
+  <term:ValueSetCode xmi:id="_Q51AsAZsEeKw_PsLFI_pog" conceptName="Marshallese" base_EnumerationLiteral="_Q50ZoAZsEeKw_PsLFI_pog"/>
+  <term:ValueSetCode xmi:id="_Sh5KsAZsEeKw_PsLFI_pog" conceptName="Malayalam" base_EnumerationLiteral="_Sh4joAZsEeKw_PsLFI_pog"/>
+  <term:ValueSetCode xmi:id="_UgiosAZsEeKw_PsLFI_pog" conceptName="Maori" base_EnumerationLiteral="_UgiBoAZsEeKw_PsLFI_pog"/>
+  <term:ValueSetCode xmi:id="_WT6DwAZsEeKw_PsLFI_pog" conceptName="Marathi" base_EnumerationLiteral="_WT5csAZsEeKw_PsLFI_pog"/>
+  <term:ValueSetCode xmi:id="_XlJpMAZsEeKw_PsLFI_pog" conceptName="Malay" base_EnumerationLiteral="_XlJCIAZsEeKw_PsLFI_pog"/>
+  <term:ValueSetCode xmi:id="_ZqI_wAZsEeKw_PsLFI_pog" conceptName="Malagasy" base_EnumerationLiteral="_ZqIYsAZsEeKw_PsLFI_pog"/>
+  <term:ValueSetCode xmi:id="_aosSsAZsEeKw_PsLFI_pog" conceptName="Maltese" base_EnumerationLiteral="_aorroAZsEeKw_PsLFI_pog"/>
+  <term:ValueSetCode xmi:id="_bfGWQAZsEeKw_PsLFI_pog" conceptName="Mongolian" base_EnumerationLiteral="_bfFvMAZsEeKw_PsLFI_pog"/>
+  <term:ValueSetCode xmi:id="_ekKCsQZsEeKw_PsLFI_pog" conceptName="Nauru" base_EnumerationLiteral="_ekKCsAZsEeKw_PsLFI_pog"/>
+  <term:ValueSetCode xmi:id="_gTFpsAZsEeKw_PsLFI_pog" conceptName="Navajo; Navaho" base_EnumerationLiteral="_gTFCoAZsEeKw_PsLFI_pog"/>
+  <term:ValueSetCode xmi:id="_hPIbMAZsEeKw_PsLFI_pog" conceptName="Ndebele, South; South Ndebele" base_EnumerationLiteral="_hPH0IAZsEeKw_PsLFI_pog"/>
+  <term:ValueSetCode xmi:id="_iLQFMAZsEeKw_PsLFI_pog" conceptName="Ndebele, North; North Ndebele" base_EnumerationLiteral="_iLPeIAZsEeKw_PsLFI_pog"/>
+  <term:ValueSetCode xmi:id="_jB4LMAZsEeKw_PsLFI_pog" conceptName="Ndonga" base_EnumerationLiteral="_jB3kIAZsEeKw_PsLFI_pog"/>
+  <term:ValueSetCode xmi:id="_j7odsQZsEeKw_PsLFI_pog" conceptName="Nepali" base_EnumerationLiteral="_j7odsAZsEeKw_PsLFI_pog"/>
+  <term:ValueSetCode xmi:id="_k9PrsAZsEeKw_PsLFI_pog" conceptName="Norwegian Nynorsk; Nynorsk, Norwegian" base_EnumerationLiteral="_k9PEoAZsEeKw_PsLFI_pog"/>
+  <term:ValueSetCode xmi:id="_mNXPwAZsEeKw_PsLFI_pog" conceptName="BokmÃ¥l, Norwegian; Norwegian BokmÃ¥l" base_EnumerationLiteral="_mNWosAZsEeKw_PsLFI_pog"/>
+  <term:ValueSetCode xmi:id="_nVwbMAZsEeKw_PsLFI_pog" conceptName="Norwegian" base_EnumerationLiteral="_nVv0IAZsEeKw_PsLFI_pog"/>
+  <term:ValueSetCode xmi:id="_oi91MQZsEeKw_PsLFI_pog" conceptName="Chichewa; Chewa; Nyanja" base_EnumerationLiteral="_oi91MAZsEeKw_PsLFI_pog"/>
+  <term:ValueSetCode xmi:id="_pVs5sQZsEeKw_PsLFI_pog" conceptName="Occitan (post 1500)" base_EnumerationLiteral="_pVs5sAZsEeKw_PsLFI_pog"/>
+  <term:ValueSetCode xmi:id="_qKvEQAZsEeKw_PsLFI_pog" conceptName="Ojibwa" base_EnumerationLiteral="_qKudMAZsEeKw_PsLFI_pog"/>
+  <term:ValueSetCode xmi:id="_sieXsAZsEeKw_PsLFI_pog" conceptName="Oriya" base_EnumerationLiteral="_sidwoAZsEeKw_PsLFI_pog"/>
+  <term:ValueSetCode xmi:id="_toSwQAZsEeKw_PsLFI_pog" conceptName="Oromo" base_EnumerationLiteral="_toSJMAZsEeKw_PsLFI_pog"/>
+  <term:ValueSetCode xmi:id="_wgrdMAZtEeKw_PsLFI_pog" conceptName="Ossetian; Ossetic" base_EnumerationLiteral="_wgq2IAZtEeKw_PsLFI_pog"/>
+  <term:ValueSetCode xmi:id="_x3CzMQZtEeKw_PsLFI_pog" conceptName="Panjabi; Punjabi" base_EnumerationLiteral="_x3CzMAZtEeKw_PsLFI_pog"/>
+  <term:ValueSetCode xmi:id="_zB41sAZtEeKw_PsLFI_pog" conceptName="Pali" base_EnumerationLiteral="_zB4OoAZtEeKw_PsLFI_pog"/>
+  <term:ValueSetCode xmi:id="_0FfAsQZtEeKw_PsLFI_pog" conceptName="Polish" base_EnumerationLiteral="_0FfAsAZtEeKw_PsLFI_pog"/>
+  <term:ValueSetCode xmi:id="_1O4RsAZtEeKw_PsLFI_pog" conceptName="Portuguese" base_EnumerationLiteral="_1O3qoAZtEeKw_PsLFI_pog"/>
+  <term:ValueSetCode xmi:id="_3M2aQAZtEeKw_PsLFI_pog" conceptName="Pushto; Pashto" base_EnumerationLiteral="_3M1zMAZtEeKw_PsLFI_pog"/>
+  <term:ValueSetCode xmi:id="_4imFMAZtEeKw_PsLFI_pog" conceptName="Quechua" base_EnumerationLiteral="_4ileIAZtEeKw_PsLFI_pog"/>
+  <term:ValueSetCode xmi:id="_6boDYAZtEeKw_PsLFI_pog" conceptName="Romansh" base_EnumerationLiteral="_6bncUAZtEeKw_PsLFI_pog"/>
+  <term:ValueSetCode xmi:id="_8Y3zMQZtEeKw_PsLFI_pog" conceptName="Romanian; Moldavian; Moldovan" base_EnumerationLiteral="_8Y3zMAZtEeKw_PsLFI_pog"/>
+  <term:ValueSetCode xmi:id="_9qRwsAZtEeKw_PsLFI_pog" conceptName="Rundi" base_EnumerationLiteral="_9qRJoAZtEeKw_PsLFI_pog"/>
+  <term:ValueSetCode xmi:id="_-zv6MQZtEeKw_PsLFI_pog" conceptName="Russian" base_EnumerationLiteral="_-zv6MAZtEeKw_PsLFI_pog"/>
+  <term:ValueSetCode xmi:id="_ADjVMAZuEeKw_PsLFI_pog" conceptName="Sango" base_EnumerationLiteral="_ADiuIAZuEeKw_PsLFI_pog"/>
+  <term:ValueSetCode xmi:id="_BHxLQAZuEeKw_PsLFI_pog" conceptName="Sanskrit" base_EnumerationLiteral="_BHwkMAZuEeKw_PsLFI_pog"/>
+  <term:ValueSetCode xmi:id="_CLM-MAZuEeKw_PsLFI_pog" conceptName="Sinhala; Sinhalese" base_EnumerationLiteral="_CLMXIAZuEeKw_PsLFI_pog"/>
+  <term:ValueSetCode xmi:id="_DdDnoQZuEeKw_PsLFI_pog" conceptName="Slovak" base_EnumerationLiteral="_DdDnoAZuEeKw_PsLFI_pog"/>
+  <term:ValueSetCode xmi:id="_E5w2MAZuEeKw_PsLFI_pog" conceptName="Slovenian" base_EnumerationLiteral="_E5wPIAZuEeKw_PsLFI_pog"/>
+  <term:ValueSetCode xmi:id="_GJfYsAZuEeKw_PsLFI_pog" conceptName="Northern Sami" base_EnumerationLiteral="_GJexoAZuEeKw_PsLFI_pog"/>
+  <term:ValueSetCode xmi:id="_HA9zQAZuEeKw_PsLFI_pog" conceptName="Samoan" base_EnumerationLiteral="_HA9MMAZuEeKw_PsLFI_pog"/>
+  <term:ValueSetCode xmi:id="_IKMsMAZuEeKw_PsLFI_pog" conceptName="Shona" base_EnumerationLiteral="_IKMFIAZuEeKw_PsLFI_pog"/>
+  <term:ValueSetCode xmi:id="_JLH9sQZuEeKw_PsLFI_pog" conceptName="Sindhi" base_EnumerationLiteral="_JLH9sAZuEeKw_PsLFI_pog"/>
+  <term:ValueSetCode xmi:id="_KB50sAZuEeKw_PsLFI_pog" conceptName="Somali" base_EnumerationLiteral="_KB5NoAZuEeKw_PsLFI_pog"/>
+  <term:ValueSetCode xmi:id="_LDDvsAZuEeKw_PsLFI_pog" conceptName="Sotho, Southern" base_EnumerationLiteral="_LDDIoAZuEeKw_PsLFI_pog"/>
+  <term:ValueSetCode xmi:id="_M8q8sAZuEeKw_PsLFI_pog" conceptName="Spanish; Castilian" base_EnumerationLiteral="_M8qVoAZuEeKw_PsLFI_pog"/>
+  <term:ValueSetCode xmi:id="_N9mOMAZuEeKw_PsLFI_pog" conceptName="Sardinian" base_EnumerationLiteral="_N9lnIAZuEeKw_PsLFI_pog"/>
+  <term:ValueSetCode xmi:id="_PQOTsAZuEeKw_PsLFI_pog" conceptName="Serbian" base_EnumerationLiteral="_PQNsoAZuEeKw_PsLFI_pog"/>
+  <term:ValueSetCode xmi:id="_fEuHMAZuEeKw_PsLFI_pog" conceptName="Swati" base_EnumerationLiteral="_fEtgIAZuEeKw_PsLFI_pog"/>
+  <term:ValueSetCode xmi:id="_grVfsAZuEeKw_PsLFI_pog" conceptName="Sundanese" base_EnumerationLiteral="_grU4oAZuEeKw_PsLFI_pog"/>
+  <term:ValueSetCode xmi:id="_hwOrMAZuEeKw_PsLFI_pog" conceptName="Swahili" base_EnumerationLiteral="_hwOEIAZuEeKw_PsLFI_pog"/>
+  <term:ValueSetCode xmi:id="_i3aVsQZuEeKw_PsLFI_pog" conceptName="Swedish" base_EnumerationLiteral="_i3aVsAZuEeKw_PsLFI_pog"/>
+  <term:ValueSetCode xmi:id="_juuYMAZuEeKw_PsLFI_pog" conceptName="Tahitian" base_EnumerationLiteral="_jutxIAZuEeKw_PsLFI_pog"/>
+  <term:ValueSetCode xmi:id="_lGFMsAZuEeKw_PsLFI_pog" conceptName="Tamil" base_EnumerationLiteral="_lGEloAZuEeKw_PsLFI_pog"/>
+  <term:ValueSetCode xmi:id="_mZPdsQZuEeKw_PsLFI_pog" conceptName="Tatar" base_EnumerationLiteral="_mZPdsAZuEeKw_PsLFI_pog"/>
+  <term:ValueSetCode xmi:id="_ncx-UAZuEeKw_PsLFI_pog" conceptName="Telugu" base_EnumerationLiteral="_ncxXQAZuEeKw_PsLFI_pog"/>
+  <term:ValueSetCode xmi:id="_oWSZMQZuEeKw_PsLFI_pog" conceptName="Tajik" base_EnumerationLiteral="_oWSZMAZuEeKw_PsLFI_pog"/>
+  <term:ValueSetCode xmi:id="_pRQzsAZuEeKw_PsLFI_pog" conceptName="Tagalog" base_EnumerationLiteral="_pRQMoAZuEeKw_PsLFI_pog"/>
+  <term:ValueSetCode xmi:id="_qWJ_MAZuEeKw_PsLFI_pog" conceptName="Thai" base_EnumerationLiteral="_qWJYIAZuEeKw_PsLFI_pog"/>
+  <term:ValueSetCode xmi:id="_rgUFMAZuEeKw_PsLFI_pog" conceptName="Tigrinya" base_EnumerationLiteral="_rgTeIAZuEeKw_PsLFI_pog"/>
+  <term:ValueSetCode xmi:id="_sc5CMAZuEeKw_PsLFI_pog" conceptName="Tonga (Tonga Islands)" base_EnumerationLiteral="_sc4bIAZuEeKw_PsLFI_pog"/>
+  <term:ValueSetCode xmi:id="_tXaJsQZuEeKw_PsLFI_pog" conceptName="Tswana" base_EnumerationLiteral="_tXaJsAZuEeKw_PsLFI_pog"/>
+  <term:ValueSetCode xmi:id="_uT1VsAZuEeKw_PsLFI_pog" conceptName="Tsonga" base_EnumerationLiteral="_uT0uoAZuEeKw_PsLFI_pog"/>
+  <term:ValueSetCode xmi:id="_vSn5MAZuEeKw_PsLFI_pog" conceptName="Turkmen" base_EnumerationLiteral="_vSnSIAZuEeKw_PsLFI_pog"/>
+  <term:ValueSetCode xmi:id="_wP9rMQZuEeKw_PsLFI_pog" conceptName="Turkish" base_EnumerationLiteral="_wP9rMAZuEeKw_PsLFI_pog"/>
+  <term:ValueSetCode xmi:id="_xLPnsAZuEeKw_PsLFI_pog" conceptName="Twi" base_EnumerationLiteral="_xLPAoAZuEeKw_PsLFI_pog"/>
+  <term:ValueSetCode xmi:id="_yUGGIQZuEeKw_PsLFI_pog" conceptName="Uighur; Uyghur" base_EnumerationLiteral="_yUGGIAZuEeKw_PsLFI_pog"/>
+  <term:ValueSetCode xmi:id="_3m7RsAZuEeKw_PsLFI_pog" conceptName="Ukrainian" base_EnumerationLiteral="_3m6qoAZuEeKw_PsLFI_pog"/>
+  <term:ValueSetCode xmi:id="_4igwMAZuEeKw_PsLFI_pog" conceptName="Urdu" base_EnumerationLiteral="_4igJIAZuEeKw_PsLFI_pog"/>
+  <term:ValueSetCode xmi:id="_AFdkQAZvEeKw_PsLFI_pog" conceptName="Uzbek" base_EnumerationLiteral="_AFc9MAZvEeKw_PsLFI_pog"/>
+  <term:ValueSetCode xmi:id="_BFdosAZvEeKw_PsLFI_pog" conceptName="Venda" base_EnumerationLiteral="_BFdBoAZvEeKw_PsLFI_pog"/>
+  <term:ValueSetCode xmi:id="_CLIQQAZvEeKw_PsLFI_pog" conceptName="Vietnamese" base_EnumerationLiteral="_CLHpMAZvEeKw_PsLFI_pog"/>
+  <term:ValueSetCode xmi:id="_DGUtMAZvEeKw_PsLFI_pog" conceptName="VolapÃ¼k" base_EnumerationLiteral="_DGUGIAZvEeKw_PsLFI_pog"/>
+  <term:ValueSetCode xmi:id="_EEp9sAZvEeKw_PsLFI_pog" conceptName="Walloon" base_EnumerationLiteral="_EEpWoAZvEeKw_PsLFI_pog"/>
+  <term:ValueSetCode xmi:id="_E8u1MQZvEeKw_PsLFI_pog" conceptName="Wolof" base_EnumerationLiteral="_E8u1MAZvEeKw_PsLFI_pog"/>
+  <term:ValueSetCode xmi:id="_GGM-sAZvEeKw_PsLFI_pog" conceptName="Xhosa" base_EnumerationLiteral="_GGMXoAZvEeKw_PsLFI_pog"/>
+  <term:ValueSetCode xmi:id="_G4ewMAZvEeKw_PsLFI_pog" conceptName="Yiddish" base_EnumerationLiteral="_G4eJIAZvEeKw_PsLFI_pog"/>
+  <term:ValueSetCode xmi:id="_Hx7gsQZvEeKw_PsLFI_pog" conceptName="Yoruba" base_EnumerationLiteral="_Hx7gsAZvEeKw_PsLFI_pog"/>
+  <term:ValueSetCode xmi:id="_IzKUMAZvEeKw_PsLFI_pog" conceptName="Zhuang; Chuang" base_EnumerationLiteral="_IzJtIAZvEeKw_PsLFI_pog"/>
+  <term:ValueSetCode xmi:id="_Jz70sAZvEeKw_PsLFI_pog" conceptName="Zulu" base_EnumerationLiteral="_Jz7NoAZvEeKw_PsLFI_pog"/>
+</xmi:XMI>

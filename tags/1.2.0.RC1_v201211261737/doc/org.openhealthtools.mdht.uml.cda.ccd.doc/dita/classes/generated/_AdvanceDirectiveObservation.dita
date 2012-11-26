@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Advance Directive Observation - conformance rules</title>
+<shortdesc id="shortdesc">[Observation: templateId <tt>2.16.840.1.113883.10.20.1.17</tt>]</shortdesc>
+<prolog id="prolog">
+<metadata><category>Observation</category></metadata>
+<resourceid id="2.16.840.1.113883.10.20.1.17"/>
+</prolog>
+<body>
+<section id="knownSubclasses">
+</section>
+<section id="description">
+</section>
+<ol id="conformance">
+<li><b>SHALL</b> contain exactly one [1..1] templateId (  ) such that it <ol><li><b>SHALL</b> contain exactly one [1..1] <b>@root</b>="2.16.840.1.113883.10.20.1.17"</li></ol></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="OBS" </tt><i>Observation</i> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>) (CONF-83)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF-84)
+</li>
+<li><b>SHALL</b> contain at least one [1..*] <tt><b>id</b></tt> (CONF-85)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>statusCode</b></tt><tt><b>/@code</b>="completed" </tt> (CodeSystem:<tt> 2.16.840.1.113883.5.14 ActStatus</tt>) (CONF-86, CONF-87)
+</li>
+<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>effectiveTime</b></tt> (CONF-88)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF-89)
+</li>
+<li><b>MAY</b> contain at least one [1..*] <tt><b>participant</b></tt> (CONF-93)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../AdvanceDirectiveVerification.dita">Advance Directive Verification</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.58</tt>)</li></ol></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entryRelationship</b></tt> (CONF-98)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../AdvanceDirectiveStatusObservation.dita">Advance Directive Status Observation</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.37</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>reference</b></tt> (CONF-102, CONF-103)
+<ul><li><p><lines><i>ddddd</i></lines></p></li></ul><ol>
+<li>Contains exactly one [1..1] <xref href="../AdvanceDirectiveReference.dita">Advance Directive Reference</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.36</tt>)</li></ol></li>
+<li>The value for Observation / code in an advance directive observation <b>MAY</b> be selected from ValueSet 2.16.840.1.113883.1.11.20.2 AdvanceDirectiveTypeCode STATIC 20061017. (CONF-90)</li>
+<li>There <b>SHOULD</b> be an advance directive observation whose value for Observation / code is '304251008' 'Resuscitation status' 2.16.840.1.113883.6.96 SNOMED CT STATIC (CONF-91)</li>
+<li><b>SHALL</b> satisfy: Contains one or more sources of information (CONF-97)</li>
+</ol>
+<ol id="aggregate">
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="OBS" </tt><i>Observation</i> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>) (CONF-83)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF-84)
+</li>
+<li><b>SHALL</b> contain at least one [1..*] <tt><b>id</b></tt> (CONF-85)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF-89)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>statusCode</b></tt><tt><b>/@code</b>="completed" </tt> (CodeSystem:<tt> 2.16.840.1.113883.5.14 ActStatus</tt>) (CONF-86, CONF-87)
+</li>
+<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>effectiveTime</b></tt> (CONF-88)
+</li>
+<li><b>MAY</b> contain at least one [1..*] <tt><b>participant</b></tt> (CONF-93)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../AdvanceDirectiveVerification.dita">Advance Directive Verification</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.58</tt>)</li></ol></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entryRelationship</b></tt> (CONF-98)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../AdvanceDirectiveStatusObservation.dita">Advance Directive Status Observation</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.37</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>reference</b></tt> (CONF-102, CONF-103)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../AdvanceDirectiveReference.dita">Advance Directive Reference</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.36</tt>)</li></ol><ul><li><p><lines><i>ddddd</i></lines></p></li></ul></li>
+<li>The value for Observation / code in an advance directive observation <b>MAY</b> be selected from ValueSet 2.16.840.1.113883.1.11.20.2 AdvanceDirectiveTypeCode STATIC 20061017. (CONF-90)</li>
+<li>There <b>SHOULD</b> be an advance directive observation whose value for Observation / code is '304251008' 'Resuscitation status' 2.16.840.1.113883.6.96 SNOMED CT STATIC (CONF-91)</li>
+<li><b>SHALL</b> satisfy: Contains one or more sources of information (CONF-97)</li>
+</ol>
+<section id="tableconformance"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="8" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><colspec colname="col2" colnum="2" /><colspec colname="col3" colnum="3" /><colspec colname="col4" colnum="4" /><colspec colname="col5" colnum="5" /><colspec colname="col6" colnum="6" /><colspec colname="col7" colnum="7" /><thead> <row><entry namest="col0" nameend="col7" >ccd::AdvanceDirectiveObservation</entry>  </row>  <row><entry namest="col0" nameend="col7" >cda::observation[cda:templateId/@root = ]/</entry>  </row>  <row><entry>Name</entry><entry>XPath</entry><entry>Cardinality</entry><entry>Severity</entry><entry>Nullable</entry><entry>Data Type</entry><entry>Conformance</entry><entry>Value(s)</entry></row></thead><tbody><row><entry>classCode</entry><entry>@classCode</entry><entry>1..1</entry><entry>SHALL</entry><entry>NO</entry><entry>ActClass</entry><entry>CONF-83</entry><entry> ALRT</entry></row> 
+<row><entry>moodCode</entry><entry>@moodCode</entry><entry>1..1</entry><entry>SHALL</entry><entry>NO</entry><entry>ActMood</entry><entry>CONF-84</entry><entry> DEF</entry></row> 
+<row><entry>code</entry><entry>code</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>CD</entry><entry>CONF-89</entry><entry> </entry></row> 
+<row><entry>effectiveTime</entry><entry>effectiveTime</entry><entry>0..1</entry><entry>SHOULD</entry><entry>YES</entry><entry>IVL_TS</entry><entry>CONF-88</entry><entry> </entry></row> 
+<row><entry>id</entry><entry>id</entry><entry>1..*</entry><entry>SHALL</entry><entry>YES</entry><entry>II</entry><entry>CONF-85</entry><entry> </entry></row> 
+<row><entry>statusCode</entry><entry>statusCode</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>CS</entry><entry>CONF-86CONF-87</entry><entry>ActStatus 2.16.840.1.113883.5.14 </entry></row> 
+<row><entry>advanceDirectiveObservation</entry><entry>advanceDirectiveObservation</entry><entry>1..*</entry><entry>SHOULD</entry><entry>YES</entry><entry>AdvanceDirectiveObservation</entry><entry></entry><entry> </entry></row> 
+<row><entry>advanceDirectiveReference</entry><entry>advanceDirectiveReference</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>AdvanceDirectiveReference</entry><entry>CONF-102CONF-103</entry><entry> </entry></row> 
+<row><entry>advanceDirectiveStatusObservation</entry><entry>advanceDirectiveStatusObservation</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>AdvanceDirectiveStatusObservation</entry><entry>CONF-98</entry><entry> </entry></row> 
+<row><entry>advanceDirectiveVerification</entry><entry>advanceDirectiveVerification</entry><entry>1..*</entry><entry>MAY</entry><entry>YES</entry><entry>AdvanceDirectiveVerification</entry><entry>CONF-93</entry><entry> </entry></row> 
+</tbody></tgroup></table></p></section>
+<codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<observation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd">
+  <id root="MDHT" extension="282169162"/>
+  <code code="294313122"/>
+  <effectiveTime>
+    <low value="2012"/>
+    <high value="2012"/>
+  </effectiveTime>
+  <participant>
+    <time>
+      <low value="2012"/>
+      <high value="2012"/>
+    </time>
+    <participantRole/>
+  </participant>
+  <entryRelationship>
+    <observation>
+      <id root="MDHT" extension="594016630"/>
+      <code code="1145089639"/>
+      <effectiveTime>
+        <low value="2012"/>
+        <high value="2012"/>
+      </effectiveTime>
+    </observation>
+  </entryRelationship>
+  <reference>
+    <externalDocument/>
+  </reference>
+</observation>]]></codeblock>
+<section id="changes">
+</section>
+<p><ph id="classformalname">Advance Directive Observation</ph></p>
+<p id="shortdesc">[Observation: templateId <tt>2.16.840.1.113883.10.20.1.17</tt>]</p>
+</body>
+</topic>

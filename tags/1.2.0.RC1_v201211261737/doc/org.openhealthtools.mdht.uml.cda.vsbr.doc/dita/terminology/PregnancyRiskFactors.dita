@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Pregnancy Risk Factors</title>
+<prolog id="prolog">
+<resourceid id="not specified"/>
+</prolog>
+<body>
+<!-- THIS IS GENERATED CONTENT, DO NOT EDIT -->
+<section id="definition">
+<table><tgroup cols="2">
+<colspec colname="col1" colwidth="1*"/>
+<colspec colname="col2" colwidth="4*"/>
+<tbody>
+<row><entry>Value Set</entry><entry>Pregnancy Risk Factors - (OID not specified)</entry></row>
+<row><entry>Description</entry><entry>A list of risk factors for a pregnancy.  Note, the codes used are imaginary and will be replaced with code values from a widely used code system.
+</entry></row>
+</tbody></tgroup></table>
+<table><tgroup cols="4">
+<colspec colname="col1" colwidth="1*"/>
+<colspec colname="col2" colwidth="2*"/>
+<colspec colname="col3" colwidth="1*"/>
+<colspec colname="col4" colwidth="3*"/>
+<thead><row>
+<entry>Concept Code</entry><entry>Concept Name</entry><entry>Code System</entry><entry>Description</entry>
+</row></thead><tbody>
+<row><entry>DIA</entry><entry>Diabetes</entry><entry></entry><entry></entry></row>
+<row><entry>GD</entry><entry>Gestational Diabetes</entry><entry></entry><entry></entry></row>
+<row><entry>PPHP</entry><entry>PrePregnancy Hypertension</entry><entry></entry><entry></entry></row>
+<row><entry>GSPP</entry><entry>Gestational Hypertension</entry><entry></entry><entry></entry></row>
+<row><entry>EC</entry><entry>Eclampsia</entry><entry></entry><entry></entry></row>
+<row><entry>PPB</entry><entry>Previous PreTerm Birth</entry><entry></entry><entry></entry></row>
+<row><entry>OPPO</entry><entry>Other Poor Pregnancy Outcome</entry><entry></entry><entry></entry></row>
+<row><entry>IFT</entry><entry>Pregnancy Resulted from Infertility Treatment</entry><entry></entry><entry></entry></row>
+<row><entry>IFT-FED</entry><entry>Fertility Enhancing Drugs</entry><entry></entry><entry></entry></row>
+<row><entry>IFT-ART</entry><entry>Assisted Reproductive Technology</entry><entry></entry><entry></entry></row>
+<row><entry>PC</entry><entry>Previous Cesarian</entry><entry></entry><entry></entry></row>
+<row><entry>NONE</entry><entry>None of the Cited Factors</entry><entry></entry><entry></entry></row>
+</tbody></tgroup></table>
+</section>
+</body>
+</topic>

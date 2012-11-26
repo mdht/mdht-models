@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en-us" xml:lang="en-us">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="copyright" content="(C) Copyright 2005"/>
+<meta name="DC.rights.owner" content="(C) Copyright 2005"/>
+<meta name="DC.Type" content="topic"/>
+<meta name="DC.Title" content="Immunizations Section"/>
+<meta name="abstract" content="[Section: templateId 2.16.840.1.113883.3.88.11.83.117]"/>
+<meta name="description" content="[Section: templateId 2.16.840.1.113883.3.88.11.83.117]"/>
+<meta name="DC.Coverage" content="Section"/>
+<meta name="DC.Relation" scheme="URI" content="../content/SectionTemplates.html"/>
+<meta name="DC.Format" content="XHTML"/>
+<meta name="DC.Identifier" content="classId"/>
+<meta name="DC.Language" content="en-us"/>
+<link rel="stylesheet" type="text/css" href="../css/commonltr.css"/>
+<title>Immunizations Section</title>
+</head>
+<body id="classId"><a name="classId"><!-- --></a>
+<div>
+	<p><b>Development Only.</b> The Normative content for these specifications
+	may be found on the HL7, IHE, and HITSP web sites.</p>
+</div>
+
+<h1 class="title topictitle1">Immunizations Section</h1>
+
+
+
+<div class="body"><p class="shortdesc">[Section: templateId <tt class="ph tt">2.16.840.1.113883.3.88.11.83.117</tt>]</p>
+
+
+<div class="section">
+<p class="p">
+    The Immunizations Section contains information describing the immunizations administered to the
+    patient. 
+</p>
+
+</div>
+
+
+
+
+<ol class="ol">
+<li class="li"><strong class="ph b">SHALL</strong> conform to <a class="xref" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.ccd.doc/classes/MedicationsSection.html">CCD Medications Section</a> template (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.1.8</tt>)</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> conform to <a class="xref" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.ccd.doc/classes/ImmunizationsSection.html">CCD Immunizations Section</a> template (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.1.6</tt>)</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> conform to <a class="xref" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.ihe.doc/classes/ImmunizationsSection.html">IHE Immunizations Section</a> template (templateId: <tt class="ph tt">1.3.6.1.4.1.19376.1.5.3.1.3.23</tt>)</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt><tt class="ph tt"><strong class="ph b">/@code</strong>="11369-6" </tt><em class="ph i">History of immunizations</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF-377, CONF-378)
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">title</strong></tt> (CONF-379)
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">text</strong></tt> (CONF-376)
+</li>
+
+<li class="li"><strong class="ph b">SHOULD</strong> contain zero or more [0..*] <tt class="ph tt"><strong class="ph b">entry</strong></tt> (CONF-298), such that
+<ol class="ol" type="a">
+<li class="li">Contains exactly one [1..1] <a class="xref" href="generated/../SupplyActivity.html">Supply Activity</a> (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.1.34</tt>)</li>
+</ol>
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain at least one [1..*] <tt class="ph tt"><strong class="ph b">entry</strong></tt>, such that
+<ol class="ol" type="a">
+<li class="li">Contains exactly one [1..1] <a class="xref" href="Immunization.html" title="[SubstanceAdministration: templateId 2.16.840.1.113883.3.88.11.83.13]">Immunization</a> (templateId: <tt class="ph tt">2.16.840.1.113883.3.88.11.83.13</tt>)</li>
+</ol>
+</li>
+
+<li class="li"><strong class="ph b">SHOULD</strong> satisfy: Clinical statements include one or more Medication Activity and/or one or more Supply Activity. (CONF-298)<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: self.getSubstanceAdministrations()-&gt;exists(activity : cda::SubstanceAdministration | activity.oclIsKindOf(ccd::MedicationActivity))
+   or self.getSupplies()-&gt;exists(activity : cda::Supply | activity.oclIsKindOf(ccd::SupplyActivity))</pre>
+</li>
+</ul>
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> satisfy: The absence of known medications is explicitly asserted. (CONF-299)<ul class="ul"><li class="li">UNIMPLEMENTABLE</li>
+</ul>
+</li>
+
+<li class="li"><strong class="ph b">SHOULD</strong> satisfy: Valued with a case-insensitive language-insensitive string containing 'medication'. (CONF-303)<ul class="ul"><li class="li">UNIMPLEMENTABLE</li>
+</ul>
+</li>
+
+<li class="li"><strong class="ph b">SHOULD</strong> satisfy: Contains a case-insensitive language-insensitive string containing 'immunization'. (CONF-380)<ul class="ul"><li class="li">UNIMPLEMENTABLE</li>
+</ul>
+</li>
+
+</ol>
+
+<p class="p"> </p>
+
+<p class="p"><strong class="ph b">Immunizations Section example</strong></p>
+
+
+
+<pre class="pre codeblock">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;section xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd"&gt;
+  &lt;templateId root="2.16.840.1.113883.10.20.1.8"/&gt;
+  &lt;templateId root="2.16.840.1.113883.10.20.1.6"/&gt;
+  &lt;templateId root="1.3.6.1.4.1.19376.1.5.3.1.3.23"/&gt;
+  &lt;templateId root="2.16.840.1.113883.3.88.11.83.117"/&gt;
+  &lt;id root="443084808"/&gt;
+  &lt;code code="11369-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="History of immunizations"/&gt;
+  &lt;title/&gt;
+  &lt;text/&gt;
+  &lt;entry&gt;
+    &lt;substanceAdministration moodCode="EVN"&gt;
+      &lt;templateId root="2.16.840.1.113883.10.20.1.24"/&gt;
+      &lt;templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.12"/&gt;
+      &lt;templateId root="2.16.840.1.113883.3.88.11.83.13"/&gt;
+      &lt;id root="1497590288"/&gt;
+      &lt;code code="IMMUNIZ" codeSystem="2.16.840.1.113883.12.292" codeSystemName="Vaccines administered (CVX)"/&gt;
+      &lt;text/&gt;
+      &lt;effectiveTime value="20111114"/&gt;
+      &lt;routeCode codeSystem="2.16.840.1.113883.5.112" codeSystemName="HL7 RouteOfAdministration"/&gt;
+      &lt;consumable/&gt;
+    &lt;/substanceAdministration&gt;
+  &lt;/entry&gt;
+&lt;/section&gt;</pre>
+
+</div>
+
+<div class="related-links">
+<div class="familylinks">
+<div class="parentlink"><strong>Parent topic:</strong> <a class="link" href="../content/SectionTemplates.html">SECTION TEMPLATES</a></div>
+</div>
+</div>
+
+</body>
+</html>

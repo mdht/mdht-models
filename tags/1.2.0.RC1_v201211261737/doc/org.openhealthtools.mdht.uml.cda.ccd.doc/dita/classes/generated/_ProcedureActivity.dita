@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Procedure Activity - conformance rules</title>
+<shortdesc id="shortdesc"><i>Abstract</i> [ClinicalStatement: templateId <tt>null</tt>]</shortdesc>
+<prolog id="prolog">
+<metadata><category>ClinicalStatement</category></metadata>
+<resourceid id="null"/>
+</prolog>
+<body>
+<section id="knownSubclasses">
+<p>Known Subclasses: <xref href="../ProcedureActivityAct.dita">Procedure Activity Act</xref>, <xref href="../ProcedureActivityObservation.dita">Procedure Activity Observation</xref>, <xref href="../ProcedureActivityProcedure.dita">Procedure Activity Procedure</xref></p>
+</section>
+<section id="description">
+</section>
+<ol id="conformance">
+<li><b>SHALL</b> contain exactly one [1..1] templateId (  ) such that it <ol><li><b>SHALL</b> contain exactly one [1..1] <b>@root</b>=""</li></ol></li>
+<li>A procedure activity <b>MAY</b> have one or more associated consents, represented in the CCD Header as ClinicalDocument / authorization / consent. (CONF-442)</li>
+<li>A procedure activity <b>SHALL</b> contain one or more sources of information, as defined in section 5.2 Source. (CONF-447)</li>
+</ol>
+<ol id="aggregate">
+<li>A procedure activity <b>MAY</b> have one or more associated consents, represented in the CCD Header as ClinicalDocument / authorization / consent. (CONF-442)</li>
+<li>A procedure activity <b>SHALL</b> contain one or more sources of information, as defined in section 5.2 Source. (CONF-447)</li>
+</ol>
+<codeblock id="example"><![CDATA[Error: Missing Runtime Class]]></codeblock>
+<section id="changes">
+</section>
+<p><ph id="classformalname">Procedure Activity</ph></p>
+<p id="shortdesc">[ClinicalStatement: templateId <tt>null</tt>]</p>
+</body>
+</topic>

@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Labor and Delivery Information - conformance rules</title>
+<shortdesc id="shortdesc">[Act: templateId <tt>2.16.840.1.113883.10.20.26.22</tt>]</shortdesc>
+<prolog id="prolog">
+<metadata><category>Act</category></metadata>
+<resourceid id="2.16.840.1.113883.10.20.26.22"/>
+</prolog>
+<body>
+<section id="description">
+<p>Information directly associated with the labor and delivery process.</p>
+</section>
+<ol id="conformance">
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="ACT" </tt><i>Act</i> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt>
+<ul><li>A code value that indicates the nature of the observation - it contains information regarding the labor and delivery process.</li></ul></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>performer</b></tt> <ol><li> This performer <b>SHALL</b> conform to <xref href="../AttendantParticipation.dita">attendant Participation</xref></li><li> This performer <b>SHALL</b> contain exactly one [1..1] <tt><b>@typeCode</b>="PRF" </tt></li><li> This performer <b>SHALL</b> contain exactly one [1..1] <tt><b>assignedEntity</b></tt> <ol><li> This assignedEntity <b>SHALL</b> conform to <xref href="../AttendantRole.dita">attendant Role</xref></li></ol> </li></ol>
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>performer</b></tt> <ol><li> This performer <b>SHALL</b> contain exactly one [1..1] <tt><b>@typeCode</b>="PRF" </tt></li><li> This performer <b>SHALL</b> contain exactly one [1..1] <tt><b>assignedEntity</b></tt> <ol><li> This assignedEntity <b>SHALL</b> contain zero or one [0..1] <tt><b>@classCode</b>="ASSIGNED" </tt></li><li> This assignedEntity <b>SHALL</b> contain zero or more [0..*] <tt><b>id</b></tt><p><i>An identifier for the birth attendant.  The national provider id is expected.  A state registration id may be provided as well.</i></p></li><li> This assignedEntity <b>SHALL</b> contain exactly one [1..1] <tt><b>assignedPerson</b></tt> <ol><li> This assignedPerson <b>SHALL</b> conform to <xref href="../Attendant.dita">Attendant</xref></li></ol> </li><li> This assignedEntity <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt>, where the @code <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/BirthAttendantTitles.dita">Birth Attendant Titles</xref></tt><b> STATIC</b><p><i>An indication of the professional qualification of the birth attendant.  Their title.</i></p></li></ol> </li></ol>
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entryRelationship</b></tt> <p><i>Information on the source of payment for the delivery.  Not collected for a fetal death report.</i></p><ol><li> This entryRelationship <b>SHALL</b> contain exactly one [1..1] <tt><b>@typeCode</b>="COMP" </tt></li><li> This entryRelationship <b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt> <ol><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="OBS" </tt><i>Observation</i> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>)</li><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>)</li><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><p><i>A code value that indicates the nature of the observation - that it includes payment source information.</i></p></li><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type CD<p><i>Information to identify the source of payment for charges associated with delivering the baby.</i></p></li></ol> </li></ol>
+</li>
+<li><b>SHALL</b> contain at least one [1..*] <tt><b>entryRelationship</b></tt>
+<ol>
+<li>Contains <tt><b>@typeCode="</b>COMP" </tt><i>COMP</i></li>
+<li>Contains exactly one [1..1] <xref href="../CharacteristicsOfLaborAndDelivery.dita">Characteristics of Labor and Delivery</xref> (templateId: <tt>2.16.840.1.113883.10.20.26.15</tt>)</li></ol></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entryRelationship</b></tt>
+<ol>
+<li>Contains <tt><b>@typeCode="</b>COMP" </tt><i>COMP</i></li>
+<li>Contains exactly one [1..1] <xref href="../FetalPresentation.dita">Fetal Presentation</xref> (templateId: <tt>2.16.840.1.113883.10.20.26.20</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> <p><i>The information is only collected in cases where fetal death is reported.  In case of fetal death reporting, it is required.</i></p><ol><li> This entryRelationship <b>SHALL</b> contain exactly one [1..1] <tt><b>@typeCode</b>="COMP" </tt></li><li> This entryRelationship <b>SHALL</b> contain zero or one [0..1] <tt><b>observation</b></tt> <ol><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="OBS" </tt><i>Observation</i> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>)</li><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>)</li><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><p><i>A code value that indicates the nature of the observation - that it indicates whether a hysterotomy or hysterectomy was performed.</i></p></li><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type BL<p><i>Information to identify whether a hysterotomy or hysterectomy was performed as a method of delivering the fetus.</i></p></li></ol> </li></ol>
+</li>
+<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt>
+<ol>
+<li>Contains <tt><b>@typeCode="</b>COMP" </tt><i>COMP</i></li>
+<li>Contains exactly one [1..1] <xref href="../HomeBirthPlan.dita">home Birth Plan</xref> (templateId: <tt>2.16.840.1.113883.10.20.26.xxx</tt>)</li></ol></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entryRelationship</b></tt>
+<ol>
+<li>Contains <tt><b>@typeCode="</b>COMP" </tt><i>COMP</i></li>
+<li>Contains exactly one [1..1] <xref href="../MaternalTransfer.dita">Maternal Transfer</xref> (templateId: <tt>2.16.840.1.113883.10.20.xxxx</tt>)</li></ol></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>participant</b></tt> <ol><li> This participant <b>SHALL</b> contain exactly one [1..1] <tt><b>@typeCode</b>="LOC" </tt></li><li> This participant <b>SHALL</b> contain exactly one [1..1] <tt><b>participantRole</b></tt> <ol><li> This participantRole <b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="ROL" </tt></li><li> This participantRole <b>MAY</b> contain zero or one [0..1] <tt><b>addr</b></tt><p><i>The address for the place where the delivery took place.  It is collected in those cases where the delivery did not occur within a healthcare facility.</i></p></li><li> This participantRole <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt>, where the @code <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/PlaceWhereBirthDeliveryOccurred.dita">Place where Birth/Delivery Occurred</xref></tt><b> STATIC</b><p><i>A code that indicates the type of facility or place at which the delivery took place.</i></p></li><li> This participantRole <b>SHOULD</b> contain zero or more [0..*] <tt><b>id</b></tt><p><i>An identifer for the facility within which the delivery took place.  This attribute is not relevant if the birth took place outside of a health care facility.  The attribute repeats to allow entry of both state and nationally assigned identifiers.</i></p></li><li> This participantRole <b>SHOULD</b> contain zero or one [0..1] <tt><b>playingEntity</b></tt> <ol><li> This playingEntity <b>SHALL</b> contain zero or one [0..1] <tt><b>@classCode</b>="PLC" </tt></li><li> This playingEntity <b>SHALL</b> contain zero or one [0..1] <tt><b>@determinerCode</b>="INSTANCE" </tt></li><li> This playingEntity <b>MAY</b> contain zero or one [0..1] <tt><b>desc</b></tt><p><i>A description of the place where the birth took place.  The attribute is used for those cases in which the delivery occurred neither at a healthcare facility, nor at a place with a defined postal address.</i></p></li><li> This playingEntity <b>SHOULD</b> contain zero or more [0..*] <tt><b>name</b></tt><p><i>The name of the facility at which the delivery took place.</i></p></li></ol> </li></ol> </li></ol>
+</li>
+</ol>
+<ol id="aggregate">
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="ACT" </tt><i>Act</i> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt>
+<ul><li>A code value that indicates the nature of the observation - it contains information regarding the labor and delivery process.</li></ul></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>performer</b></tt> <ol><li> This performer <b>SHALL</b> conform to <xref href="../AttendantParticipation.dita">attendant Participation</xref></li><li> This performer <b>SHALL</b> contain exactly one [1..1] <tt><b>@typeCode</b>="PRF" </tt></li><li> This performer <b>SHALL</b> contain exactly one [1..1] <tt><b>assignedEntity</b></tt> <ol><li> This assignedEntity <b>SHALL</b> conform to <xref href="../AttendantRole.dita">attendant Role</xref></li></ol> </li></ol>
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entryRelationship</b></tt> <p><i>Information on the source of payment for the delivery.  Not collected for a fetal death report.</i></p><ol><li> This entryRelationship <b>SHALL</b> contain exactly one [1..1] <tt><b>@typeCode</b>="COMP" </tt></li><li> This entryRelationship <b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt> <ol><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="OBS" </tt><i>Observation</i> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>)</li><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>)</li><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><p><i>A code value that indicates the nature of the observation - that it includes payment source information.</i></p></li><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type CD<p><i>Information to identify the source of payment for charges associated with delivering the baby.</i></p></li></ol> </li></ol>
+</li>
+<li><b>SHALL</b> contain at least one [1..*] <tt><b>entryRelationship</b></tt>
+<ol>
+<li>Contains <tt><b>@typeCode="</b>COMP" </tt><i>COMP</i></li>
+<li>Contains exactly one [1..1] <xref href="../CharacteristicsOfLaborAndDelivery.dita">Characteristics of Labor and Delivery</xref> (templateId: <tt>2.16.840.1.113883.10.20.26.15</tt>)</li></ol></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entryRelationship</b></tt>
+<ol>
+<li>Contains <tt><b>@typeCode="</b>COMP" </tt><i>COMP</i></li>
+<li>Contains exactly one [1..1] <xref href="../FetalPresentation.dita">Fetal Presentation</xref> (templateId: <tt>2.16.840.1.113883.10.20.26.20</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> <p><i>The information is only collected in cases where fetal death is reported.  In case of fetal death reporting, it is required.</i></p><ol><li> This entryRelationship <b>SHALL</b> contain exactly one [1..1] <tt><b>@typeCode</b>="COMP" </tt></li><li> This entryRelationship <b>SHALL</b> contain zero or one [0..1] <tt><b>observation</b></tt> <ol><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="OBS" </tt><i>Observation</i> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>)</li><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>)</li><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><p><i>A code value that indicates the nature of the observation - that it indicates whether a hysterotomy or hysterectomy was performed.</i></p></li><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type BL<p><i>Information to identify whether a hysterotomy or hysterectomy was performed as a method of delivering the fetus.</i></p></li></ol> </li></ol>
+</li>
+<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt>
+<ol>
+<li>Contains <tt><b>@typeCode="</b>COMP" </tt><i>COMP</i></li>
+<li>Contains exactly one [1..1] <xref href="../HomeBirthPlan.dita">home Birth Plan</xref> (templateId: <tt>2.16.840.1.113883.10.20.26.xxx</tt>)</li></ol></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entryRelationship</b></tt>
+<ol>
+<li>Contains <tt><b>@typeCode="</b>COMP" </tt><i>COMP</i></li>
+<li>Contains exactly one [1..1] <xref href="../MaternalTransfer.dita">Maternal Transfer</xref> (templateId: <tt>2.16.840.1.113883.10.20.xxxx</tt>)</li></ol></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>participant</b></tt> <ol><li> This participant <b>SHALL</b> contain exactly one [1..1] <tt><b>@typeCode</b>="LOC" </tt></li><li> This participant <b>SHALL</b> contain exactly one [1..1] <tt><b>participantRole</b></tt> <ol><li> This participantRole <b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="ROL" </tt></li><li> This participantRole <b>MAY</b> contain zero or one [0..1] <tt><b>addr</b></tt><p><i>The address for the place where the delivery took place.  It is collected in those cases where the delivery did not occur within a healthcare facility.</i></p></li><li> This participantRole <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt>, where the @code <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/PlaceWhereBirthDeliveryOccurred.dita">Place where Birth/Delivery Occurred</xref></tt><b> STATIC</b><p><i>A code that indicates the type of facility or place at which the delivery took place.</i></p></li><li> This participantRole <b>SHOULD</b> contain zero or more [0..*] <tt><b>id</b></tt><p><i>An identifer for the facility within which the delivery took place.  This attribute is not relevant if the birth took place outside of a health care facility.  The attribute repeats to allow entry of both state and nationally assigned identifiers.</i></p></li><li> This participantRole <b>SHOULD</b> contain zero or one [0..1] <tt><b>playingEntity</b></tt> <ol><li> This playingEntity <b>SHALL</b> contain zero or one [0..1] <tt><b>@classCode</b>="PLC" </tt></li><li> This playingEntity <b>SHALL</b> contain zero or one [0..1] <tt><b>@determinerCode</b>="INSTANCE" </tt></li><li> This playingEntity <b>MAY</b> contain zero or one [0..1] <tt><b>desc</b></tt><p><i>A description of the place where the birth took place.  The attribute is used for those cases in which the delivery occurred neither at a healthcare facility, nor at a place with a defined postal address.</i></p></li><li> This playingEntity <b>SHOULD</b> contain zero or more [0..*] <tt><b>name</b></tt><p><i>The name of the facility at which the delivery took place.</i></p></li></ol> </li></ol> </li></ol>
+</li>
+</ol>
+<section id="tableconformance"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="8" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><colspec colname="col2" colnum="2" /><colspec colname="col3" colnum="3" /><colspec colname="col4" colnum="4" /><colspec colname="col5" colnum="5" /><colspec colname="col6" colnum="6" /><colspec colname="col7" colnum="7" /><thead> <row><entry namest="col0" nameend="col7" >vsbr::Labor and Delivery Information</entry>  </row>  <row><entry namest="col0" nameend="col7" >cda::act[cda:templateId/@root = 2.16.840.1.113883.10.20.26.22]/</entry>  </row>  <row><entry>Name</entry><entry>XPath</entry><entry>Cardinality</entry><entry>Severity</entry><entry>Nullable</entry><entry>Data Type</entry><entry>Conformance</entry><entry>Value(s)</entry></row></thead><tbody><row><entry>classCode</entry><entry>@classCode</entry><entry>1..1</entry><entry>SHALL</entry><entry>NO</entry><entry>x_ActClassDocumentEntryAct</entry><entry></entry><entry> ACCM</entry></row> 
+<row><entry>moodCode</entry><entry>@moodCode</entry><entry>1..1</entry><entry>SHALL</entry><entry>NO</entry><entry>x_DocumentActMood</entry><entry></entry><entry> APT</entry></row> 
+<row><entry>negationInd</entry><entry>@negationInd</entry><entry>0..1</entry><entry></entry><entry>NO</entry><entry>Boolean</entry><entry></entry><entry> </entry></row> 
+<row><entry>nullFlavor</entry><entry>@nullFlavor</entry><entry>0..1</entry><entry></entry><entry>NO</entry><entry>NullFlavor</entry><entry></entry><entry> ASKU</entry></row> 
+<row><entry>code</entry><entry>code</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>CD</entry><entry></entry><entry> </entry></row> 
+<row><entry>effectiveTime</entry><entry>effectiveTime</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>IVL_TS</entry><entry></entry><entry> </entry></row> 
+<row><entry>id</entry><entry>id</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>II</entry><entry></entry><entry> </entry></row> 
+<row><entry>languageCode</entry><entry>languageCode</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>CS</entry><entry></entry><entry> </entry></row> 
+<row><entry>priorityCode</entry><entry>priorityCode</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>CE</entry><entry></entry><entry> </entry></row> 
+<row><entry>realmCode</entry><entry>realmCode</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>CS</entry><entry></entry><entry> </entry></row> 
+<row><entry>statusCode</entry><entry>statusCode</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>CS</entry><entry></entry><entry> </entry></row> 
+<row><entry>templateId</entry><entry>templateId</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>II</entry><entry></entry><entry> 2.16.840.1.113883.10.20.26.22</entry></row> 
+<row><entry>text</entry><entry>text</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>ED</entry><entry></entry><entry> </entry></row> 
+<row><entry>attendantParticipation</entry><entry>attendantParticipation</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>attendantParticipation</entry><entry></entry><entry> </entry></row> 
+<row><entry>author</entry><entry>author</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>Author</entry><entry></entry><entry> </entry></row> 
+<row><entry>characteristics of Labor and Delivery</entry><entry>characteristics of Labor and Delivery</entry><entry>1..*</entry><entry>SHALL</entry><entry>YES</entry><entry>Characteristics of Labor and Delivery</entry><entry></entry><entry> </entry></row> 
+<row><entry>entryRelationship</entry><entry>entryRelationship</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>paymentSourceAssociation</entry><entry></entry><entry> </entry></row> 
+<row><entry>fetal Presentation</entry><entry>fetal Presentation</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>Fetal Presentation</entry><entry></entry><entry> </entry></row> 
+<row><entry>homeBirthPlan</entry><entry>homeBirthPlan</entry><entry>0..1</entry><entry>SHOULD</entry><entry>YES</entry><entry>homeBirthPlan</entry><entry></entry><entry> </entry></row> 
+<row><entry>hysterotomyHysterectomyAssociation</entry><entry>hysterotomyHysterectomyAssociation</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>hysterotomyHysterectomyAssociation</entry><entry></entry><entry> </entry></row> 
+<row><entry>informant</entry><entry>informant</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>Informant12</entry><entry></entry><entry> </entry></row> 
+<row><entry>maternalTransfer</entry><entry>maternalTransfer</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>Maternal Transfer</entry><entry></entry><entry> </entry></row> 
+<row><entry>participant</entry><entry>participant</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>Participant2</entry><entry></entry><entry> </entry></row> 
+<row><entry>participatingLocation</entry><entry>participatingLocation</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>participatingLocation</entry><entry></entry><entry> </entry></row> 
+<row><entry>performer</entry><entry>performer</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>certifierParticipation</entry><entry></entry><entry> </entry></row> 
+<row><entry>precondition</entry><entry>precondition</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>Precondition</entry><entry></entry><entry> </entry></row> 
+<row><entry>reference</entry><entry>reference</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>Reference</entry><entry></entry><entry> </entry></row> 
+<row><entry>specimen</entry><entry>specimen</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>Specimen</entry><entry></entry><entry> </entry></row> 
+<row><entry>subject</entry><entry>subject</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>Subject</entry><entry></entry><entry> </entry></row> 
+<row><entry>typeId</entry><entry>typeId</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>InfrastructureRootTypeId</entry><entry></entry><entry> </entry></row> 
+</tbody></tgroup></table></p></section>
+<codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<act xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd" classCode="ACT" moodCode="EVN">
+  <templateId root="2.16.840.1.113883.10.20.26.22"/>
+  <id root="1203224204" extension="MDHT"/>
+  <code code="2097054261"/>
+  <effectiveTime>
+    <low value="2012"/>
+    <high value="2012"/>
+  </effectiveTime>
+  <performer typeCode="PRF">
+    <assignedEntity>
+      <id root="1053900414" extension="MDHT"/>
+      <code code="320932578"/>
+    </assignedEntity>
+  </performer>
+  <performer typeCode="PRF">
+    <assignedEntity classCode="ASSIGNED">
+      <id root="512885691" extension="MDHT"/>
+      <code code="1390383769"/>
+      <assignedPerson/>
+    </assignedEntity>
+  </performer>
+  <participant typeCode="LOC">
+    <participantRole classCode="ROL">
+      <id root="679133436" extension="MDHT"/>
+      <code code="1983589150"/>
+      <addr/>
+      <playingEntity classCode="PLC" determinerCode="INSTANCE"/>
+    </participantRole>
+  </participant>
+  <entryRelationship typeCode="COMP">
+    <observation classCode="OBS" moodCode="EVN">
+      <code code="169148699"/>
+      <value xsi:type="CD" code="145081011"/>
+    </observation>
+  </entryRelationship>
+  <entryRelationship typeCode="COMP">
+    <observation classCode="OBS" moodCode="EVN">
+      <code code="922223721"/>
+      <value xsi:type="BL"/>
+    </observation>
+  </entryRelationship>
+  <entryRelationship>
+    <observation/>
+  </entryRelationship>
+  <entryRelationship>
+    <observation classCode="OBS" moodCode="EVN">
+      <templateId root="2.16.840.1.113883.10.20.26.20"/>
+      <id root="554504597" extension="MDHT"/>
+      <code code="1369254626"/>
+      <effectiveTime>
+        <low value="2012"/>
+        <high value="2012"/>
+      </effectiveTime>
+    </observation>
+  </entryRelationship>
+  <entryRelationship>
+    <observation classCode="OBS" moodCode="EVN">
+      <templateId root="2.16.840.1.113883.10.20.26.xxx"/>
+      <id root="1383911059" extension="MDHT"/>
+      <code code="2068355119"/>
+      <effectiveTime>
+        <low value="2012"/>
+        <high value="2012"/>
+      </effectiveTime>
+    </observation>
+  </entryRelationship>
+  <entryRelationship>
+    <observation classCode="OBS" moodCode="EVN">
+      <templateId root="2.16.840.1.113883.10.20.xxxx"/>
+      <id root="167828172" extension="MDHT"/>
+      <code code="1063273932"/>
+      <effectiveTime>
+        <low value="2012"/>
+        <high value="2012"/>
+      </effectiveTime>
+      <participant typeCode="ORG">
+        <participantRole classCode="SDLOC"/>
+      </participant>
+    </observation>
+  </entryRelationship>
+</act>]]></codeblock>
+<section id="changes">
+</section>
+<p><ph id="classformalname">Labor and Delivery Information</ph></p>
+<p id="shortdesc">[Act: templateId <tt>2.16.840.1.113883.10.20.26.22</tt>]</p>
+</body>
+</topic>

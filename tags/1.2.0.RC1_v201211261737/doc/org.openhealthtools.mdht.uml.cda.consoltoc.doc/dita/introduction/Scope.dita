@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN"
+ "dtd/topic.dtd">
+<topic id="topicId" xml:lang="en-us">
+	<title>Scope</title>
+	<body>
+		<p>This document is scoped by the content of the ONC's Standards and Interoperability
+			 (S&amp;I) Framework Transition of Care (ToC) Initiative and the Implementation Guide
+			 for CDA Release 2.0 Consolidated CDA Templates (US Realm).</p>  
+		<p>The four CDA Document templates required for ToC are included in this guide. The conformance 
+			rules for these document templates are in accordance to the specifications required by 
+			the ToC Initiative. The definitions and the conformance requirements for the section 
+			level and entry level templates are to be drawn directly from the Implementation Guide 
+			for CDA Release 2.0 Consolidated CDA Templates (US Realm).</p>
+		<p>This guide fully specifies a compliant CDA R2 document for each document type.</p>
+		<p>Additional optional CDA elements, not included here, can be included and the result will 
+			be compliant with the documents in this standard.</p>
+	</body>
+</topic>

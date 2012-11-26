@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<projectDescription>
+	<name>org.openhealthtools.mdht.uml.cda.hitsp.doc</name>
+	<comment></comment>
+	<projects>
+		<project>org.openhealthtools.mdht.uml.cda.hitsp</project>
+	</projects>
+	<buildSpec>
+		<buildCommand>
+			<name>org.openhealthtools.mdht.uml.cda.ui.org.openhealthtools.mdht.uml.cda.builder.id</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+	</buildSpec>
+	<natures>
+		<nature>org.openhealthtools.mdht.uml.cda.ui.org.openhealthtools.mdht.uml.cda.nature.id</nature>
+	</natures>
+</projectDescription>

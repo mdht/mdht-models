@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Provider Adverse Event Type</title>
+<prolog id="prolog">
+<resourceid id="2.16.840.1.113883.17.3.5.72"/>
+</prolog>
+<body>
+<!-- THIS IS GENERATED CONTENT, DO NOT EDIT -->
+<section id="definition">
+<table><tgroup cols="2">
+<colspec colname="col1" colwidth="1*"/>
+<colspec colname="col2" colwidth="4*"/>
+<tbody>
+<row><entry>Value Set</entry><entry>ProviderAdverseEventType - 2.16.840.1.113883.17.3.5.72</entry></row>
+<row><entry>Code System</entry><entry>LOINC - 2.16.840.1.113883.6.1</entry></row>
+</tbody></tgroup></table>
+<table><tgroup cols="3">
+<colspec colname="col1" colwidth="1*"/>
+<colspec colname="col2" colwidth="1*"/>
+<colspec colname="col3" colwidth="2*"/>
+<thead><row>
+<entry>Code</entry><entry>Code System</entry><entry>Print Name</entry>
+</row></thead><tbody>
+<row><entry>LA137-2</entry><entry>LOINC</entry><entry>None</entry></row>
+<row><entry>LA17059-9</entry><entry>LOINC</entry><entry>Other (not listed)</entry></row>
+<row><entry>LA17402-1</entry><entry>LOINC</entry><entry>Death-cardiac arrest</entry></row>
+<row><entry>LA17403-9</entry><entry>LOINC</entry><entry>Death-injury related</entry></row>
+<row><entry>LA17404-7</entry><entry>LOINC</entry><entry>Death-other (not listed)</entry></row>
+<row><entry>LA17405-4</entry><entry>LOINC</entry><entry>Exposure-airborne respiratory/biological/aerosolized secretions</entry></row>
+<row><entry>LA17406-2</entry><entry>LOINC</entry><entry>Exposure-body fluid contact to broken skin</entry></row>
+<row><entry>LA17407-0</entry><entry>LOINC</entry><entry>Exposure-body fluid contact with eye</entry></row>
+<row><entry>LA17408-8</entry><entry>LOINC</entry><entry>Exposure-body fluid contact with intact skin</entry></row>
+<row><entry>LA17409-6</entry><entry>LOINC</entry><entry>Exposure-body fluid contact with mucosal surface</entry></row>
+<row><entry>LA17410-4</entry><entry>LOINC</entry><entry>Exposure-needle stick with body fluid injection</entry></row>
+<row><entry>LA17411-2</entry><entry>LOINC</entry><entry>Exposure-needle stick without body fluid injection</entry></row>
+<row><entry>LA17412-0</entry><entry>LOINC</entry><entry>Exposure-toxin/chemical/hazmat</entry></row>
+<row><entry>LA17413-8</entry><entry>LOINC</entry><entry>Injury-lifting/back/musculoskeletal</entry></row>
+<row><entry>LA17414-6</entry><entry>LOINC</entry><entry>Injury-other (not listed)</entry></row>
+</tbody></tgroup></table>
+</section>
+</body>
+</topic>

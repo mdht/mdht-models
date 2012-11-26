@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Policy Activity - conformance rules</title>
+<shortdesc id="shortdesc">[Act: templateId <tt>2.16.840.1.113883.10.20.1.26</tt>]</shortdesc>
+<prolog id="prolog">
+<metadata><category>Act</category></metadata>
+<resourceid id="2.16.840.1.113883.10.20.1.26"/>
+</prolog>
+<body>
+<section id="knownSubclasses">
+</section>
+<section id="description">
+<p><lines><i>A policy activity represents the policy or program providing the coverage. The person for whom payment is being provided (i.e. the patient) is the covered party. The subscriber of the policy or program is represented as a participant that is the holder the coverage. The payer is represented as the performer of the policy activity.</i></lines></p>
+</section>
+<ol id="conformance">
+<li><b>SHALL</b> contain exactly one [1..1] templateId ( CONF-48 ) such that it <ol><li><b>SHALL</b> contain exactly one [1..1] <b>@root</b>="2.16.840.1.113883.10.20.1.26"</li></ol></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="ACT" </tt><i>Act</i> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>) (CONF-49)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF-50)
+</li>
+<li><b>SHALL</b> contain at least one [1..*] <tt><b>id</b></tt> (CONF-51)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>statusCode</b></tt><tt><b>/@code</b>="completed" </tt> (CodeSystem:<tt> 2.16.840.1.113883.5.14 ActStatus</tt>) (CONF-52, CONF-53)
+</li>
+<li><b>SHOULD</b> contain exactly one [1..1] <tt><b>code</b></tt>, where the @code <b>SHOULD</b> be selected from ValueSet<tt> ActCoverageType 2.16.840.1.113883.1.11.19832</tt><b> DYNAMIC</b> (CONF-54, CONF-55)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>performer</b></tt> (CONF-56)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../PayerEntity.dita">Payer Entity</xref></li></ol></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>participant</b></tt> (CONF-58)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../CoveredParty.dita">Covered Party</xref></li></ol></li>
+<li><b>MAY</b> contain exactly one [1..1] <tt><b>participant</b></tt> (CONF-63)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../PolicySubscriber.dita">Policy Subscriber</xref></li></ol></li>
+<li><b>SHALL</b> satisfy: A policy activity contains exactly one performer [@typeCode='PRF'], representing the payer. (CONF-56)</li>
+<li><b>SHALL</b> satisfy: A policy activity contains exactly one participant [@typeCode='COV'], representing the covered party. (CONF-58)</li>
+<li>The value for participant / participantRole / code in a policy activity's covered party <b>MAY</b> be selected from ValueSet 2.16.840.1.113883.1.11.19809 PolicyOrProgramCoverageRoleType DYNAMIC. (CONF-61)</li>
+<li>A covered party in a policy activity <b>MAY</b> contain exactly one participant / time, to represent the time period over which the patient is covered. (CONF-62)</li>
+<li>A policy activity <b>MAY</b> contain exactly one participant [@typeCode='HLD'], representing the subscriber. (CONF-63)</li>
+<li>A subscriber in a policy activity <b>MAY</b> contain exactly one participant / time, to represent the time period for which the subscriber is enrolled. (CONF-65)</li>
+<li>The value for entryRelationship / @typeCode in a policy activity <b>SHALL</b> be 'REFR' 2.16.840.1.113883.5.1002 ActRelationshipType STATIC. (CONF-66)</li>
+<li>The target of a policy activity with entryRelationship / @typeCode='REFR' <b>SHALL</b> be an Authorization Activity or an Act, with Act [@classCode = 'ACT'] and Act [@moodCode = 'DEF'], representing a description of the coverage plan. (CONF-67)</li>
+</ol>
+<ol id="aggregate">
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="ACT" </tt><i>Act</i> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>) (CONF-49)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF-50)
+</li>
+<li><b>SHALL</b> contain at least one [1..*] <tt><b>id</b></tt> (CONF-51)
+</li>
+<li><b>SHOULD</b> contain exactly one [1..1] <tt><b>code</b></tt>, where the @code <b>SHOULD</b> be selected from ValueSet<tt> ActCoverageType 2.16.840.1.113883.1.11.19832</tt><b> DYNAMIC</b> (CONF-54, CONF-55)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>statusCode</b></tt><tt><b>/@code</b>="completed" </tt> (CodeSystem:<tt> 2.16.840.1.113883.5.14 ActStatus</tt>) (CONF-52, CONF-53)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>performer</b></tt> (CONF-56)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../PayerEntity.dita">Payer Entity</xref></li></ol></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>participant</b></tt> (CONF-58)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../CoveredParty.dita">Covered Party</xref></li></ol></li>
+<li><b>MAY</b> contain exactly one [1..1] <tt><b>participant</b></tt> (CONF-63)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../PolicySubscriber.dita">Policy Subscriber</xref></li></ol></li>
+<li><b>SHALL</b> satisfy: A policy activity contains exactly one performer [@typeCode='PRF'], representing the payer. (CONF-56)</li>
+<li><b>SHALL</b> satisfy: A policy activity contains exactly one participant [@typeCode='COV'], representing the covered party. (CONF-58)</li>
+<li>The value for participant / participantRole / code in a policy activity's covered party <b>MAY</b> be selected from ValueSet 2.16.840.1.113883.1.11.19809 PolicyOrProgramCoverageRoleType DYNAMIC. (CONF-61)</li>
+<li>A covered party in a policy activity <b>MAY</b> contain exactly one participant / time, to represent the time period over which the patient is covered. (CONF-62)</li>
+<li>A policy activity <b>MAY</b> contain exactly one participant [@typeCode='HLD'], representing the subscriber. (CONF-63)</li>
+<li>A subscriber in a policy activity <b>MAY</b> contain exactly one participant / time, to represent the time period for which the subscriber is enrolled. (CONF-65)</li>
+<li>The value for entryRelationship / @typeCode in a policy activity <b>SHALL</b> be 'REFR' 2.16.840.1.113883.5.1002 ActRelationshipType STATIC. (CONF-66)</li>
+<li>The target of a policy activity with entryRelationship / @typeCode='REFR' <b>SHALL</b> be an Authorization Activity or an Act, with Act [@classCode = 'ACT'] and Act [@moodCode = 'DEF'], representing a description of the coverage plan. (CONF-67)</li>
+</ol>
+<section id="tableconformance"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="8" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><colspec colname="col2" colnum="2" /><colspec colname="col3" colnum="3" /><colspec colname="col4" colnum="4" /><colspec colname="col5" colnum="5" /><colspec colname="col6" colnum="6" /><colspec colname="col7" colnum="7" /><thead> <row><entry namest="col0" nameend="col7" >ccd::PolicyActivity</entry>  </row>  <row><entry namest="col0" nameend="col7" >cda::act[cda:templateId/@root = ]/</entry>  </row>  <row><entry>Name</entry><entry>XPath</entry><entry>Cardinality</entry><entry>Severity</entry><entry>Nullable</entry><entry>Data Type</entry><entry>Conformance</entry><entry>Value(s)</entry></row></thead><tbody><row><entry>classCode</entry><entry>@classCode</entry><entry>1..1</entry><entry>SHALL</entry><entry>NO</entry><entry>ActClass</entry><entry>CONF-49</entry><entry> ACCM</entry></row> 
+<row><entry>moodCode</entry><entry>@moodCode</entry><entry>1..1</entry><entry>SHALL</entry><entry>NO</entry><entry>ActMood</entry><entry>CONF-50</entry><entry> APT</entry></row> 
+<row><entry>code</entry><entry>code</entry><entry>1..1</entry><entry>SHOULD</entry><entry>YES</entry><entry>CD</entry><entry>CONF-54CONF-55</entry><entry> </entry></row> 
+<row><entry>id</entry><entry>id</entry><entry>1..*</entry><entry>SHALL</entry><entry>YES</entry><entry>II</entry><entry>CONF-51</entry><entry> </entry></row> 
+<row><entry>statusCode</entry><entry>statusCode</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>CS</entry><entry>CONF-52CONF-53</entry><entry>ActStatus 2.16.840.1.113883.5.14 </entry></row> 
+<row><entry>coveredParty</entry><entry>coveredParty</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>CoveredParty</entry><entry>CONF-58</entry><entry> </entry></row> 
+<row><entry>payerEntity</entry><entry>payerEntity</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>PayerEntity</entry><entry>CONF-56</entry><entry> </entry></row> 
+<row><entry>policyActivity</entry><entry>policyActivity</entry><entry>1..*</entry><entry>SHALL</entry><entry>YES</entry><entry>PolicyActivity</entry><entry>CONF-43CONF-45CONF-46</entry><entry> </entry></row> 
+<row><entry>subscriber</entry><entry>subscriber</entry><entry>1..1</entry><entry>MAY</entry><entry>YES</entry><entry>PolicySubscriber</entry><entry>CONF-63</entry><entry> </entry></row> 
+</tbody></tgroup></table></p></section>
+<codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<act xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd">
+  <id root="MDHT" extension="603740568"/>
+  <code code="1435226480"/>
+  <effectiveTime>
+    <low value="2012"/>
+    <high value="2012"/>
+  </effectiveTime>
+</act>]]></codeblock>
+<section id="changes">
+</section>
+<p><ph id="classformalname">Policy Activity</ph></p>
+<p id="shortdesc">[Act: templateId <tt>2.16.840.1.113883.10.20.1.26</tt>]</p>
+</body>
+</topic>

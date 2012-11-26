@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Protocol Deviation</title>
+<shortdesc conref="generated/_ProtocolDeviation.dita#classId/shortdesc"></shortdesc>
+<prolog conref="generated/_ProtocolDeviation.dita#classId/prolog"></prolog>
+<body>
+<!-- TODO: insert non-model class description markup here -->
+<section conref="generated/_ProtocolDeviation.dita#classId/description">
+</section>
+<!-- TODO: insert UML class diagram here -->
+
+<ol audience="standards" conref="generated/_ProtocolDeviation.dita#classId/conformance">
+<li></li>
+</ol>
+<ol audience="developer" conref="generated/_ProtocolDeviation.dita#classId/aggregate">
+<li></li>
+</ol>
+<!-- Comment out the sample table
+<section conref="generated/_ProtocolDeviation.dita#classId/tableconformance">
+</section>
+-->
+<p> </p>
+<p><b>Protocol Deviation example</b></p>
+<!-- TODO: insert custom instance example here -->
+<!-- generated instance example follows -->
+<codeblock conref="generated/_ProtocolDeviation.dita#classId/example">
+</codeblock>
+</body>
+</topic>

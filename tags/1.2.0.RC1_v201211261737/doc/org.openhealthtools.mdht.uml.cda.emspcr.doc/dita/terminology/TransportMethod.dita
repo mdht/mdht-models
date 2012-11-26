@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Transport Method</title>
+<prolog id="prolog">
+<resourceid id="2.16.840.1.113883.17.3.5.65"/>
+</prolog>
+<body>
+<!-- THIS IS GENERATED CONTENT, DO NOT EDIT -->
+<section id="definition">
+<table><tgroup cols="2">
+<colspec colname="col1" colwidth="1*"/>
+<colspec colname="col2" colwidth="4*"/>
+<tbody>
+<row><entry>Value Set</entry><entry>TransportMethod - 2.16.840.1.113883.17.3.5.65</entry></row>
+<row><entry>Code System</entry><entry>LOINC - 2.16.840.1.113883.6.1</entry></row>
+</tbody></tgroup></table>
+<table><tgroup cols="3">
+<colspec colname="col1" colwidth="1*"/>
+<colspec colname="col2" colwidth="1*"/>
+<colspec colname="col3" colwidth="2*"/>
+<thead><row>
+<entry>Code</entry><entry>Code System</entry><entry>Print Name</entry>
+</row></thead><tbody>
+<row><entry>LA17168-8</entry><entry>LOINC</entry><entry>Ground-ambulance</entry></row>
+<row><entry>LA17169-6</entry><entry>LOINC</entry><entry>Air medical-fixed wing</entry></row>
+<row><entry>LA17170-4</entry><entry>LOINC</entry><entry>Air medical-rotor craft</entry></row>
+<row><entry>LA17171-2</entry><entry>LOINC</entry><entry>Ground-ATV or rescue vehicle</entry></row>
+<row><entry>LA17172-0</entry><entry>LOINC</entry><entry>Ground-bariatric</entry></row>
+<row><entry>LA17173-8</entry><entry>LOINC</entry><entry>Ground-mass casualty bus/vehicle</entry></row>
+<row><entry>LA17174-6</entry><entry>LOINC</entry><entry>Ground-wheelchair van</entry></row>
+<row><entry>LA17175-3</entry><entry>LOINC</entry><entry>Ground-other not listed</entry></row>
+<row><entry>LA17176-1</entry><entry>LOINC</entry><entry>Water-boat</entry></row>
+</tbody></tgroup></table>
+</section>
+</body>
+</topic>

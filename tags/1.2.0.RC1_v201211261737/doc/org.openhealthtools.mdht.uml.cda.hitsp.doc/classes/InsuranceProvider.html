@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="en-us" lang="en-us">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="copyright" content="(C) Copyright 2005"/>
+<meta name="DC.rights.owner" content="(C) Copyright 2005"/>
+<meta name="DC.Type" content="topic"/>
+<meta name="DC.Title" content="Insurance Provider"/>
+<meta name="abstract" content="[Act: templateId 2.16.840.1.113883.3.88.11.83.5]"/>
+<meta name="description" content="[Act: templateId 2.16.840.1.113883.3.88.11.83.5]"/>
+<meta name="DC.Coverage" content="Act"/>
+<meta name="DC.Relation" scheme="URI" content="../content/ClinicalStatementTemplates.html"/>
+<meta name="DC.Format" content="XHTML"/>
+<meta name="DC.Identifier" content="classId"/>
+<meta name="DC.Language" content="en-us"/>
+<link rel="stylesheet" type="text/css" href="../css/commonltr.css"/>
+<title>Insurance Provider</title>
+</head>
+<body id="classId">
+<div>
+	<p><b>Non-Normative Content</b> The Normative content for these specifications
+	may be found on the HL7, IHE, and HITSP web sites.</p>
+</div>
+
+<h1 class="title topictitle1">Insurance Provider</h1>
+
+
+
+<div class="body"><p class="shortdesc">[Act: templateId <tt class="ph tt">2.16.840.1.113883.3.88.11.83.5</tt>]</p>
+
+
+<div class="section">
+</div>
+
+
+
+<ol class="ol">
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] templateId (  ) such that it <ol class="ol" type="a"><li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <strong class="ph b">@root</strong>="2.16.840.1.113883.3.88.11.83.5"</li>
+</ol>
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> conform to <a class="xref" href="generated/PLUGINS_ROOT/org.openhealthtools.mdht.uml.cda.ihe.doc/classes/CoverageEntry.html">IHE Coverage Entry</a> template (templateId: <tt class="ph tt">1.3.6.1.4.1.19376.1.5.3.1.4.17</tt>)</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt><tt class="ph tt"><strong class="ph b">/@code</strong>="48768-6" </tt><em class="ph i">Payment sources</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF-41, CONF-42)
+</li>
+
+<li class="li">Information for payment providers <strong class="ph b">SHALL</strong> be recorded as a policy act inside the coverage act.</li>
+
+<li class="li">All Insurance Provider modules <strong class="ph b">SHALL</strong> declare conformance to the IHE Payer Entry by including a &lt;templateID&gt; element with the root attribute set to the value 1.3.6.1.4.1.19376.1.5.3.1.4.18</li>
+
+<li class="li">The id/@root attribute of a Payer Entry <strong class="ph b">SHOULD</strong> be the OID of the assigning authority for the identifier; however, determining the assigning authority is not feasible in all settings. A GUID <strong class="ph b">MAY</strong> be used in place of the OID of the assigning authority. Implementers <strong class="ph b">SHOULD</strong> use the same GUID for each instance of the same group or contract number</li>
+
+<li class="li">The code/@code element <strong class="ph b">SHOULD</strong> be present in a Payer Entry and <strong class="ph b">SHALL</strong> be coded as 2.16.840.1.113883.3.88.12.3221.5.2, Health Insurance Type Value Set, 20081218, STATIC</li>
+
+<li class="li">performer/@typeCode='PRF'/assignedEntity <strong class="ph b">SHALL</strong> be present to record Payer Information/Health Insurance Information</li>
+
+<li class="li">performer/@typeCode='PRF'/assignedEntity/id elements <strong class="ph b">MAY</strong> be present. The ID element corresponds to the RxBIN and RxPCN fields found on pharmacy benefit cards. When a national payer identifier is standardized, it would also go in this field.
+The OID for RxBIN is 2.16.840.1.113883.3.88.3.1. The OID for an RxPCN is 2.16.840.1.113883.3.88.3.1 plus the numeric identifier used in the RxBIN.</li>
+
+<li class="li">The performer/@typeCode='PRF'/assignedEntity/addr <strong class="ph b">MAY</strong> be present.</li>
+
+<li class="li">The state part of performer/@typeCode='PRF'/assignedEntity/addr <strong class="ph b">SHALL</strong> be recorded using 2.16.840.1.113883.3.88.12.80.1, State Value Set, 20081218, Dynamic</li>
+
+<li class="li">The country part of performer/@typeCode='PRF'/assignedEntity/addr <strong class="ph b">SHALL</strong> be recorded using 2.16.840.1.113883.3.88.12.80.63, Country Value Set, 20081218, Dynamic</li>
+
+<li class="li">The state part of performer/@typeCode='PRF'/assignedEntity/addr <strong class="ph b">SHALL</strong> be recorded using 2.16.840.1.113883.3.88.12.80.2, Postal Code Value Set, 20081218, Dynamic</li>
+
+<li class="li">The date when the plan began covering the member <strong class="ph b">SHOULD</strong> be recorded in the &lt;low&gt; element of the &lt;time&gt; element beneath the participant/@typeCode='COV' element</li>
+
+<li class="li">The date when the plan stops covering the member <strong class="ph b">SHOULD</strong> be recorded in the &lt;high&gt; element of the &lt;time&gt; element beneath the participant/@typeCode='COV' element</li>
+
+<li class="li">participant/@typeCode='COV'/participantRole/@classCode='PAT' <strong class="ph b">SHALL</strong> be present to record Patient information.</li>
+
+<li class="li">The member identifier number <strong class="ph b">SHALL</strong> be recorded in the extension attribute of the &lt;id&gt; element found in the &lt;participant/@typeCode='COV'/participantRole/@classCode='PAT'&gt; element</li>
+
+<li class="li">The root attribute of a participant/@typeCode='COV'/participantRole/@classCode='PAT'/id element <strong class="ph b">SHOULD</strong> be the OID of the assigning authority for the identifier; however, determining the assigning authority is not feasible in all settings</li>
+
+<li class="li">A GUID <strong class="ph b">MAY</strong> be used in place of the OID of the assigning authority</li>
+
+<li class="li">Implementers <strong class="ph b">SHOULD</strong> use the same GUID for each instance of a member identifier from the same health plan</li>
+
+<li class="li">The relationship to the subscriber <strong class="ph b">SHALL</strong> be present and <strong class="ph b">SHALL</strong> be recorded in the &lt;code&gt; element underneath the &lt;participantRole&gt; element recording the member information</li>
+
+<li class="li">The Patient Relationship to Subscriber <strong class="ph b">SHALL</strong> be coded as 2.16.840.1.113883.1.11.18877, Coverage Role Type Value, V3NE08, STATIC</li>
+
+<li class="li">The state part of participant/@typeCode='COV'/participantRole/@classCode='PAT'/addr element <strong class="ph b">SHALL</strong> be coded as 2.16.840.1.113883.3.88.12.80.1, State Value Set, 20081218, Dynamic</li>
+
+<li class="li">The state part of participant/@typeCode='COV'/participantRole/@classCode='PAT'/addr element <strong class="ph b">SHALL</strong> be coded as 2.16.840.1.113883.3.88.12.80.63, Country Value Set, 20081218, Dynamic</li>
+
+<li class="li">The state part of participant/@typeCode='COV'/participantRole/@classCode='PAT'/addr element <strong class="ph b">SHALL</strong> be coded as 2.16.840.1.113883.3.88.12.80.2, Postal Code Value Set, 20081218, Dynamic</li>
+
+<li class="li">If the member name as recorded by the health plan differs from the patient name as recorded in the registration/medication summary (e.g., due to marriage or for other reasons), then the member name <strong class="ph b">SHALL</strong> be recorded in the &lt;name&gt; element of the &lt;playingEntity&gt; element beneath the &lt;participant/@typeCode='COV'/participantRole/@classCode='PAT'&gt; element</li>
+
+<li class="li">If the member date of birth as recorded by the health plan differs from the patient date of birth as recorded in the registration/medication summary, then the member date of birth <strong class="ph b">SHALL</strong> be recorded in the &lt;sdtc:birthTime&gt; element of the &lt;playingEntity&gt; element beneath the &lt;participant/@typeCode='COV'/participantRole/@classCode='PAT'&gt; element</li>
+
+<li class="li">The &lt;participant/@typeCode='HLD'&gt; element <strong class="ph b">SHOULD</strong> be present to record Subscriber Information.</li>
+
+<li class="li">When the Subscriber is the patient, the &lt;participant/@typeCode='HLD'&gt; element describing the subscriber <strong class="ph b">SHALL NOT</strong> be present. This information will be recorded instead in the data elements used to record member information</li>
+
+<li class="li">The participant/@typeCode='HLD'/participantRole/id element <strong class="ph b">SHALL</strong> be present.</li>
+
+<li class="li">The root attribute <strong class="ph b">SHOULD</strong> be the OID of the assigning authority for the identifier; however, determining the assigning authority is not feasible in all settings. A GUID <strong class="ph b">MAY</strong> be used in place of the OID of the assigning authority. Implementers <strong class="ph b">SHOULD</strong> use the same GUID for each instance of a subscriber identifier from the same health plan</li>
+
+<li class="li">The participant/@typeCode='HLD'/participantRole/addr element <strong class="ph b">SHALL</strong> be present to record the Subscriber Address.</li>
+
+<li class="li">The state part of participant/@typeCode='HLD'/participantRole/addr element <strong class="ph b">SHALL</strong> be coded as  2.16.840.1.113883.3.88.12.80.1, State Value Set, 20081218, Dynamic</li>
+
+<li class="li">The country part of participant/@typeCode='HLD'/participantRole/addr element <strong class="ph b">SHALL</strong> be coded as 2.16.840.1.113883.3.88.12.80.63, Country Value Set, 20081218, Dynamic</li>
+
+<li class="li">The postal code part of participant/@typeCode='HLD'/participantRole/addr element <strong class="ph b">SHALL</strong> be coded as 2.16.840.1.113883.3.88.12.80.2, Postal Code Value Set, 20081218, Dynamic</li>
+
+<li class="li">The subscriber date of birth <strong class="ph b">SHALL</strong> be recorded in the &lt;sdtc:birthTime&gt; element of the &lt;playingEntity&gt; element beneath the &lt;performer/@typeCode='HLD'/participantRole&gt; element.</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> satisfy: performer/assignedEntity/code element is used to denote the financial Responsibility Party Type.</li>
+
+<li class="li">performer/assignedEntity/code/@code attribute <strong class="ph b">SHALL</strong> be coded as 2.16.840.1.113883.1.11.10416, Financially Responsible Party Type Value Set, V3NE08, STATIC</li>
+
+<li class="li">When the code of the encompassing act is PP, the code attribute value <strong class="ph b">SHALL</strong> be set to GUAR or PAT to represent a guarantor or self-paying patient respectively</li>
+
+<li class="li">The code attribute <strong class="ph b">SHALL</strong> be set to PAYOR when the code of the encompassing act is other than PP</li>
+
+<li class="li">performer/assignedEntity/addr <strong class="ph b">SHOULD</strong> be present to record Financial Responsibility Party Address</li>
+
+<li class="li">The state part of a performer/assignedEntity/addr/ element <strong class="ph b">SHALL</strong> be coded as 2.16.840.1.113883.3.88.12.80.1, State Value Set, 20081218, Dynamic</li>
+
+<li class="li">The country part of a performer/assignedEntity/addr/ element <strong class="ph b">SHALL</strong> be coded as 2.16.840.1.113883.3.88.12.80.63, Country Value Set, 20081218, Dynamic</li>
+
+<li class="li">The postal code part of a performer/assignedEntity/addr/ element <strong class="ph b">SHALL</strong> be coded as 2.16.840.1.113883.3.88.12.80.2, Postal Code Value Set, 20081218, Dynamic</li>
+
+</ol>
+
+
+<p class="p"> </p>
+
+<p class="p"><strong class="ph b">Insurance Provider example</strong></p>
+
+
+
+<pre class="pre codeblock">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;act xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd"&gt;
+  &lt;id root="MDHT" extension="875389452"/&gt;
+  &lt;code code="384508013"/&gt;
+  &lt;effectiveTime&gt;
+    &lt;low value="2012"/&gt;
+    &lt;high value="2012"/&gt;
+  &lt;/effectiveTime&gt;
+&lt;/act&gt;</pre>
+
+</div>
+
+<div class="related-links">
+<div class="familylinks">
+<div class="parentlink"><strong>Parent topic:</strong> <a class="link" href="../content/ClinicalStatementTemplates.html">CLINICAL STATEMENT TEMPLATES</a></div>
+</div>
+</div>
+
+</body>
+</html>

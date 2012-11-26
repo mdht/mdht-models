@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN"
+ "topic.dtd">
+<topic id="topicId" xml:lang="en-us">
+	<title>Acknowledgments</title>
+	<body>
+		<p>This document contains specifications for using HL7's Clinical Document Architecture for reporting
+		death information to vital records.</p>
+
+		<p>The content defined within this implementation guide is drawn from the US Standard
+		Certificate of Death as revised November 2003. </p>
+
+			
+		<p>This material contains content from LOINC&#174; (http://loinc.org). The LOINC table, LOINC codes, and
+		LOINC panels and forms file are copyright &#169; 1995-2010, Regenstrief Institute, Inc. and the Logical
+		Observation Identifiers Names and Codes (LOINC) Committee and available at no cost under the
+		license at http://loinc.org/terms-of-use .</p>
+
+		<p>Certain materials contained in this Interoperability Specification
+			are reproduced from .... (<i>A list of contained materials needs to be added.</i>} 
+			No part of the material may be
+			copied or reproduced in any form outside of the Interoperability
+			Specification documents, including an electronic retrieval system, or
+			made available on the Internet without the prior written permission
+			of Health Level Seven, Inc. Copies of standards included in this
+			interoperability specification may be purchased from the Health Level
+			Seven, Inc. Material drawn from these standards is credited where used.</p>
+	</body>
+</topic>

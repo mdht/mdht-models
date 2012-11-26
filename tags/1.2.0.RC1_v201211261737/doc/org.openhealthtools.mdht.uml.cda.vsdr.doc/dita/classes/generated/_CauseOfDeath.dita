@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Cause of Death - conformance rules</title>
+<shortdesc id="shortdesc">[Organizer: templateId <tt>2.16.840.1.113883.10.20.24.1.6</tt>]</shortdesc>
+<prolog id="prolog">
+<metadata><category>Organizer</category></metadata>
+<resourceid id="2.16.840.1.113883.10.20.24.1.6"/>
+</prolog>
+<body>
+<section id="description">
+<p>Information provided by the clinican that indicates the cause of the person's death.</p>
+</section>
+<ol id="conformance">
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="CLUSTER" </tt> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="LOINC TBD" </tt><i>Cause Of Death Cluster</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>statusCode</b></tt> (CodeSystem:<tt> 2.16.840.1.113883.5.14 HL7ActStatus</tt>)
+</li>
+<li><b>SHALL</b> contain zero or one [0..1] <tt><b>component</b></tt> <ol><li> This component <b>SHALL</b> contain zero or one [0..1] <tt><b>@typeCode</b>="COMP" </tt></li><li> This component <b>SHALL</b> contain exactly one [1..1] <tt><b>sequenceNumber</b></tt></li><li> This component <b>SHALL</b> contain zero or one [0..1] <tt><b>observation</b></tt> <ol><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="OBS" </tt><i>Observation</i> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>)</li><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>)</li><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="21984-0" </tt><i>Cause of Death</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>)</li><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt>, where its data type is ED<p><i>Descriptive text that indicates one or more diseases, injuries, or complications that were implicated as a cause of the person's death.   In order to comply with NCHS edit specifications, the maximum length is 120 characters. 
+The immediate cause of death and the underlying cause of death must be reported.  Additional causes of death up to two may be recorded.  Death causes are ordered sequentially with the immediate cause of death given the sequence number "1", and the underlying cause of death being given the highest sequence number among the set of cited causes.
+Each cause of death is associated with a numeric observation Death Cause Interval which captures the approximate interval between the onset of the death cause (condition) and death.  This linkage is implemented through the use of actRelationship.sequenceNumber.</i></p></li></ol> </li></ol>
+</li>
+<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>component</b></tt> <ol><li> This component <b>SHALL</b> contain zero or one [0..1] <tt><b>@typeCode</b>="COMP" </tt></li><li> This component <b>SHALL</b> contain zero or one [0..1] <tt><b>observation</b></tt> <ol><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="OBS" </tt><i>Observation</i> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>)</li><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>)</li><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="LOINC TBD" </tt><i>Other Significant Condition</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>)</li><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt>, where its data type is ED<p><i>Descriptive text that provides information on a significant condition or conditions that contributed to death, but did not result in the underlying cause that is elsewhere described.  In order to comply with NCHS edit specifications, the maximum length is 240 characters.</i></p></li></ol> </li></ol>
+</li>
+<li><b>SHALL</b> contain zero or one [0..1] <tt><b>component</b></tt> <ol><li> This component <b>SHALL</b> contain zero or one [0..1] <tt><b>@typeCode</b>="COMP" </tt></li><li> This component <b>SHALL</b> contain zero or one [0..1] <tt><b>sequenceNumber</b></tt></li><li> This component <b>SHALL</b> contain zero or one [0..1] <tt><b>observation</b></tt> <ol><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="OBS" </tt><i>Observation</i> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>)</li><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>)</li><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="LOINC TBD" </tt><i>Death Cause Interval</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>)</li><li> This observation <b>SHALL</b> contain zero or more [0..*] <tt><b>value</b></tt>, where its data type is ED<p><i>A measure of the time interval between the onset of the disease, injury or complication, and the person's death.  The data to be included will vary from statements of time intervals to text statements such as "many months", "days", "unknown".
+Each death cause interval value is associated with a cause of death observation Cause of Death - that identifies the condition associated with the time interval.  This linkage is implemented through the use of actRelationship.sequenceNumber.</i></p></li></ol> </li></ol>
+</li>
+</ol>
+<ol id="aggregate">
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="CLUSTER" </tt> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="LOINC TBD" </tt><i>Cause Of Death Cluster</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>statusCode</b></tt> (CodeSystem:<tt> 2.16.840.1.113883.5.14 HL7ActStatus</tt>)
+</li>
+<li><b>SHALL</b> contain zero or one [0..1] <tt><b>component</b></tt> <ol><li> This component <b>SHALL</b> contain zero or one [0..1] <tt><b>@typeCode</b>="COMP" </tt></li><li> This component <b>SHALL</b> contain exactly one [1..1] <tt><b>sequenceNumber</b></tt></li><li> This component <b>SHALL</b> contain zero or one [0..1] <tt><b>observation</b></tt> <ol><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="OBS" </tt><i>Observation</i> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>)</li><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>)</li><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="21984-0" </tt><i>Cause of Death</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>)</li><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt>, where its data type is ED<p><i>Descriptive text that indicates one or more diseases, injuries, or complications that were implicated as a cause of the person's death.   In order to comply with NCHS edit specifications, the maximum length is 120 characters. 
+The immediate cause of death and the underlying cause of death must be reported.  Additional causes of death up to two may be recorded.  Death causes are ordered sequentially with the immediate cause of death given the sequence number "1", and the underlying cause of death being given the highest sequence number among the set of cited causes.
+Each cause of death is associated with a numeric observation Death Cause Interval which captures the approximate interval between the onset of the death cause (condition) and death.  This linkage is implemented through the use of actRelationship.sequenceNumber.</i></p></li></ol> </li></ol>
+</li>
+<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>component</b></tt> <ol><li> This component <b>SHALL</b> contain zero or one [0..1] <tt><b>@typeCode</b>="COMP" </tt></li><li> This component <b>SHALL</b> contain zero or one [0..1] <tt><b>observation</b></tt> <ol><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="OBS" </tt><i>Observation</i> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>)</li><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>)</li><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="LOINC TBD" </tt><i>Other Significant Condition</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>)</li><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt>, where its data type is ED<p><i>Descriptive text that provides information on a significant condition or conditions that contributed to death, but did not result in the underlying cause that is elsewhere described.  In order to comply with NCHS edit specifications, the maximum length is 240 characters.</i></p></li></ol> </li></ol>
+</li>
+<li><b>SHALL</b> contain zero or one [0..1] <tt><b>component</b></tt> <ol><li> This component <b>SHALL</b> contain zero or one [0..1] <tt><b>@typeCode</b>="COMP" </tt></li><li> This component <b>SHALL</b> contain zero or one [0..1] <tt><b>sequenceNumber</b></tt></li><li> This component <b>SHALL</b> contain zero or one [0..1] <tt><b>observation</b></tt> <ol><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="OBS" </tt><i>Observation</i> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>)</li><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>)</li><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="LOINC TBD" </tt><i>Death Cause Interval</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>)</li><li> This observation <b>SHALL</b> contain zero or more [0..*] <tt><b>value</b></tt>, where its data type is ED<p><i>A measure of the time interval between the onset of the disease, injury or complication, and the person's death.  The data to be included will vary from statements of time intervals to text statements such as "many months", "days", "unknown".
+Each death cause interval value is associated with a cause of death observation Cause of Death - that identifies the condition associated with the time interval.  This linkage is implemented through the use of actRelationship.sequenceNumber.</i></p></li></ol> </li></ol>
+</li>
+</ol>
+
+<codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<organizer xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd" classCode="CLUSTER" moodCode="EVN">
+  <templateId root="2.16.840.1.113883.10.20.24.1.6"/>
+  <id root="1058834251"/>
+  <code code="LOINC TBD" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Cause Of Death Cluster"/>
+  <statusCode code="completed"/>
+  <effectiveTime>
+    <low value="2012"/>
+    <high value="2012"/>
+  </effectiveTime>
+  <component typeCode="COMP">
+    <sequenceNumber value="1"/>
+    <observation classCode="OBS" moodCode="EVN">
+      <code code="21984-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Cause of Death"/>
+      <value xsi:type="ED">Text Value</value>
+    </observation>
+  </component>
+  <component typeCode="COMP">
+    <observation classCode="OBS" moodCode="EVN">
+      <code code="LOINC TBD" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Other Significant Condition"/>
+      <value xsi:type="ED">Text Value</value>
+    </observation>
+  </component>
+  <component typeCode="COMP">
+    <sequenceNumber value="1"/>
+    <observation classCode="OBS" moodCode="EVN">
+      <code code="LOINC TBD" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Death Cause Interval"/>
+      <value xsi:type="ED">Text Value</value>
+    </observation>
+  </component>
+</organizer>]]></codeblock>
+<section id="changes">
+</section>
+<p><ph id="classformalname">Cause of Death</ph></p>
+<p id="shortdesc">[Organizer: templateId <tt>2.16.840.1.113883.10.20.24.1.6</tt>]</p>
+</body>
+</topic>

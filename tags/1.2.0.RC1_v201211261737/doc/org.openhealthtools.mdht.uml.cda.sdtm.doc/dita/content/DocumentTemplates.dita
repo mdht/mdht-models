@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN"
+ "topic.dtd">
+<topic id="topicId" xml:lang="en-us">
+	<title>DOCUMENT TEMPLATES</title>
+	<body>
+		<p>This section those templates used to define documents conformant to 
+		the implementation guide.  Currently, only a single document type - either
+		a human clinical report or a non-human subject report - has been defined
+		for each Implementation Guide.</p>
+	</body>
+</topic>
