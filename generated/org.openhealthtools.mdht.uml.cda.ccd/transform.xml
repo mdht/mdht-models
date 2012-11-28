@@ -20,5 +20,7 @@
 		</sequential>
 	</macrodef>
 	
+	<property name="validation.failOnError" value="false"/>
+	
 	<import file="${cdaPluginPath}/transform-common.xml"/>
 </project>
