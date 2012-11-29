@@ -6,6 +6,7 @@
  */
 package org.openhealthtools.mdht.uml.cda.consol.impl;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
@@ -28,38 +29,38 @@ import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
  */
 public class MedicationUseNoneKnownImpl extends ObservationImpl implements MedicationUseNoneKnown {
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	protected MedicationUseNoneKnownImpl() {
 		super();
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
 		return ConsolPackage.Literals.MEDICATION_USE_NONE_KNOWN;
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateMedicationUseNoneKnownTextReference(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return MedicationUseNoneKnownOperations.validateMedicationUseNoneKnownTextReference(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateMedicationUseNoneKnownTextReferenceValue(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return MedicationUseNoneKnownOperations.validateMedicationUseNoneKnownTextReferenceValue(
@@ -67,118 +68,118 @@ public class MedicationUseNoneKnownImpl extends ObservationImpl implements Medic
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateMedicationUseNoneKnownReferenceValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return MedicationUseNoneKnownOperations.validateMedicationUseNoneKnownReferenceValue(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateMedicationUseNoneKnownTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return MedicationUseNoneKnownOperations.validateMedicationUseNoneKnownTemplateId(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateMedicationUseNoneKnownClassCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return MedicationUseNoneKnownOperations.validateMedicationUseNoneKnownClassCode(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateMedicationUseNoneKnownMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return MedicationUseNoneKnownOperations.validateMedicationUseNoneKnownMoodCode(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateMedicationUseNoneKnownId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return MedicationUseNoneKnownOperations.validateMedicationUseNoneKnownId(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateMedicationUseNoneKnownCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return MedicationUseNoneKnownOperations.validateMedicationUseNoneKnownCodeP(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateMedicationUseNoneKnownCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return MedicationUseNoneKnownOperations.validateMedicationUseNoneKnownCode(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateMedicationUseNoneKnownEffectiveTime(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return MedicationUseNoneKnownOperations.validateMedicationUseNoneKnownEffectiveTime(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateMedicationUseNoneKnownStatusCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return MedicationUseNoneKnownOperations.validateMedicationUseNoneKnownStatusCode(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateMedicationUseNoneKnownStatusCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return MedicationUseNoneKnownOperations.validateMedicationUseNoneKnownStatusCodeP(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateMedicationUseNoneKnownText(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return MedicationUseNoneKnownOperations.validateMedicationUseNoneKnownText(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateMedicationUseNoneKnownValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return MedicationUseNoneKnownOperations.validateMedicationUseNoneKnownValue(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public MedicationUseNoneKnown init() {
 		return Initializer.Util.init(this);
 	}

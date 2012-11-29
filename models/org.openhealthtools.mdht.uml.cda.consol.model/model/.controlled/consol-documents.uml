@@ -13,10 +13,7 @@ CDA R2 states that LOINC is the preferred vocabulary for document type codes, wh
       </ownedComment>
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_U7RnAFcfEeGCdLgBm6VHOQ">
         <language>Analysis</language>
-        <body>The US Realm Clinical Document Date and Time datatype flavor records date and time information. If no time zone offset &#xD;
-is provided, you can make no assumption about time, unless you have made a local exchange agreement.&#xD;
-This data type uses the same rules as US Realm Date and Time (DTM.US.FIELDED),  but is used with the effectiveTime &#xD;
-element.</body>
+        <body>The US Realm Clinical Document Date and Time datatype flavor records date and time information. If no time zone offset &#xD;&#xA;is provided, you can make no assumption about time, unless you have made a local exchange agreement.&#xD;&#xA;This data type uses the same rules as US Realm Date and Time (DTM.US.FIELDED),  but is used with the effectiveTime &#xD;&#xA;element.</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_GTIrwOx2EeG7k4bbVdXbXw" name="USRealmDateAndTime" constrainedElement="_2DNRcBSVEeGGzu7fmW9pXw">
@@ -25,10 +22,7 @@ element.</body>
       </ownedComment>
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_GTIrwux2EeG7k4bbVdXbXw">
         <language>Analysis</language>
-        <body>The US Realm Clinical Document Date and Time datatype flavor records date and time information. If no time zone offset &#xD;
-is provided, you can make no assumption about time, unless you have made a local exchange agreement.&#xD;
-This data type uses the same rules as US Realm Date and Time (DTM.US.FIELDED),  but is used with the effectiveTime &#xD;
-element.</body>
+        <body>The US Realm Clinical Document Date and Time datatype flavor records date and time information. If no time zone offset &#xD;&#xA;is provided, you can make no assumption about time, unless you have made a local exchange agreement.&#xD;&#xA;This data type uses the same rules as US Realm Date and Time (DTM.US.FIELDED),  but is used with the effectiveTime &#xD;&#xA;element.</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_jXOYoMa8EeGp28IjMvW3Ag" name="typeIdRoot" constrainedElement="_2DNRcBSVEeGGzu7fmW9pXw">
@@ -1274,7 +1268,7 @@ In a CCD the encompassingEncounter may be used when documenting a specific encou
           <language>Analysis</language>
           <language>OCL</language>
           <body>SHALL contain at least one and not more than 4 streetAddressLine</body>
-          <body>self.streetAddressLine->size() >=1 and self.streetAddressLine->size() &lt;=4</body>
+          <body>self.isNullFlavorUndefined() implies ( self.streetAddressLine->size() >=1 and self.streetAddressLine->size() &lt;=4)</body>
         </specification>
       </ownedRule>
       <generalization xmi:id="_j0nfgPIPEeGu1M-cCXg0Dg">
