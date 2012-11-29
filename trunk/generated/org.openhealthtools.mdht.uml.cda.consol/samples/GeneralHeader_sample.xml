@@ -64,7 +64,7 @@
                 <state>MA</state>
                 <postalCode>02368</postalCode>
                 <country>USA</country>
-            </addr>
+            </addr>            <addr nullFlavor="UNK"></addr>
 			<telecom use="WP" value="tel:(555)555-1003"/>
             <telecom use="MC" value="tel:(555)555-2003"/>
 			<assignedPerson>

@@ -6,6 +6,7 @@
  */
 package org.openhealthtools.mdht.uml.cda.consol.impl;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
@@ -28,56 +29,56 @@ import org.openhealthtools.mdht.uml.cda.impl.RelatedSubjectImpl;
  */
 public class FetusSubjectContextImpl extends RelatedSubjectImpl implements FetusSubjectContext {
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	protected FetusSubjectContextImpl() {
 		super();
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
 		return ConsolPackage.Literals.FETUS_SUBJECT_CONTEXT;
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateFetusSubjectContextTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return FetusSubjectContextOperations.validateFetusSubjectContextTemplateId(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateFetusSubjectContextCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return FetusSubjectContextOperations.validateFetusSubjectContextCode(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateFetusSubjectContextSubject(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return FetusSubjectContextOperations.validateFetusSubjectContextSubject(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public FetusSubjectContext init() {
 		return Initializer.Util.init(this);
 	}
