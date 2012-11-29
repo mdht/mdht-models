@@ -718,7 +718,7 @@ Any deviation from normal function displayed by the patient and recorded in the 
     <reference href="../consol-vocab.uml#_2SVSkRSVEeGGzu7fmW9pXw"/>
     <ruleId>CONF:CONF:15985</ruleId>
   </CDA:ValueSetConstraint>
-  <CDA:ValueSetConstraint xmi:id="_hBSO8Bq4EeGo461UQq-B1g" base_Property="_2G8h-hSVEeGGzu7fmW9pXw">
+  <CDA:ValueSetConstraint xmi:id="_hBSO8Bq4EeGo461UQq-B1g" base_Property="_2G8h-hSVEeGGzu7fmW9pXw" severity="WARNING">
     <reference href="../consol-vocab.uml#_DhjiABueEeGnMahsPjlwOw"/>
     <ruleId>CONF:7394</ruleId>
   </CDA:ValueSetConstraint>
@@ -1391,4 +1391,5 @@ Any deviation from normal function displayed by the patient and recorded in the 
     <ruleId>CONF:16781</ruleId>
     <ruleId>CONF:16782</ruleId>
   </CDA:AssociationValidation>
+  <CDA:PropertyValidation xmi:id="_yXl5cDgbEeKtNIpGZbPfUA" base_Property="_2G8h-hSVEeGGzu7fmW9pXw"/>
 </xmi:XMI>
