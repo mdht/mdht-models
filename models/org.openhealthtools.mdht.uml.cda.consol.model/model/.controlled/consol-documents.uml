@@ -553,7 +553,7 @@ In a CCD the encompassingEncounter may be used when documenting a specific encou
             <language>Analysis</language>
             <language>OCL</language>
             <body>The id SHALL contain exactly one root =&quot;2.16.840.1.113883.4.6&quot; National Provider Identifier (CONF:9996)</body>
-            <body>self.id->exists( root='2.16.840.1.113883.4.6' )</body>
+            <body>not assignedPerson.oclIsUndefined() implies self.id->exists( root='2.16.840.1.113883.4.6' )</body>
           </specification>
         </ownedRule>
         <generalization xmi:id="_345lMCymEeGMXrZ0DiQwGg">
@@ -572,8 +572,8 @@ In a CCD the encompassingEncounter may be used when documenting a specific encou
         </ownedAttribute>
         <ownedAttribute xmi:id="_93hfxCymEeGMXrZ0DiQwGg" name="id" visibility="private" aggregation="composite">
           <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_culQ8DxaEd6JwqSGecoePg"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_-xZpgPIkEeGu1M-cCXg0Dg" value="1"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_-xa3oPIkEeGu1M-cCXg0Dg" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_PIuNYDgaEeKtNIpGZbPfUA" value="*"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_PIuNYTgaEeKtNIpGZbPfUA" value="1"/>
           <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_IccloEodEd6c3qsAxlFHaQ"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_93iG0SymEeGMXrZ0DiQwGg" name="telecom" visibility="private" type="_qP30QPImEeGu1M-cCXg0Dg" aggregation="composite">
@@ -1935,7 +1935,9 @@ The CCD is a core data set of the most relevant administrative, demographic, and
           </ownedComment>
           <specification xmi:type="uml:OpaqueExpression" xmi:id="_jklH8EIREeGfG6GbxF_VQQ">
             <language>Analysis</language>
+            <language>OCL</language>
             <body>If assignedAuthor has an associated representedOrganization with no assignedPerson or assignedAuthoringDevice, then the value for &quot;ClinicalDocument/author/assignedAuthor/id/@NullFlavor&quot; SHALL be &quot;NA&quot; &quot;Not applicable&quot; 2.16.840.1.113883.5.1008 NullFlavor STATIC.</body>
+            <body>(not self.representedOrganization.oclIsUndefined() and self.assignedPerson.oclIsUndefined() and self.assignedAuthoringDevice.oclIsUndefined()) implies self.id->exists(id | not id.isNullFlavorUndefined() and id.nullFlavor = vocab::NullFlavor::NA)</body>
           </specification>
         </ownedRule>
         <generalization xmi:id="_Uw3cAEIREeGfG6GbxF_VQQ">
