@@ -25,13 +25,26 @@ import org.openhealthtools.mdht.uml.cda.Supply;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getMedicationDispense()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='MedicationDispenseTemplateId MedicationDispenseClassCode MedicationDispenseId MedicationDispenseMoodCode MedicationDispenseStatusCode MedicationDispenseProduct MedicationDispenseProductContainsMedicationOrImmunization MedicationDispensePerformerMedicationDispenseAssignedEntityUSRealmAddressStreet MedicationDispensePerformerMedicationDispenseAssignedEntityUSRealmAddressCity MedicationDispensePerformerMedicationDispenseAssignedEntityUSRealmAddressStreetAddressLine MedicationDispensePerformerMedicationDispenseAssignedEntityUSRealmAddressUse MedicationDispensePerformerMedicationDispenseAssignedEntity' templateId.root='2.16.840.1.113883.10.20.22.4.18' classCode='SPLY' constraints.validation.warning='MedicationDispenseEffectiveTime MedicationDispenseRepeatNumber MedicationDispenseQuantity MedicationDispensePerformerMedicationDispenseAssignedEntityUSRealmAddressCountry MedicationDispensePerformerMedicationDispenseAssignedEntityUSRealmAddressPostalCode MedicationDispensePerformerMedicationDispenseAssignedEntityUSRealmAddressState MedicationDispensePerformerMedicationDispenseAssignedEntityUSRealmAddressUseP MedicationDispensePerformerMedicationDispenseAssignedEntityAddr' moodCode='EVN' constraints.validation.info='MedicationDispenseMedicationSupplyOrder MedicationDispensePerformer' constraints.validation.query='MedicationDispenseProductContainsMedicationOrImmunization MedicationDispensePerformerMedicationDispenseAssignedEntityUSRealmAddressStreet MedicationDispensePerformerMedicationDispenseAssignedEntityUSRealmAddressCity MedicationDispensePerformerMedicationDispenseAssignedEntityUSRealmAddressCountry MedicationDispensePerformerMedicationDispenseAssignedEntityUSRealmAddressPostalCode MedicationDispensePerformerMedicationDispenseAssignedEntityUSRealmAddressState MedicationDispensePerformerMedicationDispenseAssignedEntityUSRealmAddressStreetAddressLine MedicationDispensePerformerMedicationDispenseAssignedEntityUSRealmAddressUseP MedicationDispensePerformerMedicationDispenseAssignedEntityUSRealmAddressUse MedicationDispensePerformerMedicationDispenseAssignedEntityAddr MedicationDispensePerformerMedicationDispenseAssignedEntity' constraints.validation.dependOn.MedicationDispensePerformerMedicationDispenseAssignedEntityUSRealmAddressUse='MedicationDispensePerformerMedicationDispenseAssignedEntityUSRealmAddressUseP'"
- *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolMedicationDispenseProduct constraints.validation.error='ProductContainsMedicationOrImmunization'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='MedicationDispenseTemplateId MedicationDispenseContainsMedicationOrImmunization MedicationDispenseClassCode MedicationDispenseId MedicationDispenseMoodCode MedicationDispenseStatusCode MedicationDispensePerformerMedicationDispenseAssignedEntityUSRealmAddressStreet MedicationDispensePerformerMedicationDispenseAssignedEntityUSRealmAddressCity MedicationDispensePerformerMedicationDispenseAssignedEntityUSRealmAddressStreetAddressLine MedicationDispensePerformerMedicationDispenseAssignedEntityUSRealmAddressUse MedicationDispensePerformerMedicationDispenseAssignedEntity' templateId.root='2.16.840.1.113883.10.20.22.4.18' classCode='SPLY' constraints.validation.warning='MedicationDispenseEffectiveTime MedicationDispenseRepeatNumber MedicationDispenseQuantity MedicationDispensePerformerMedicationDispenseAssignedEntityUSRealmAddressCountry MedicationDispensePerformerMedicationDispenseAssignedEntityUSRealmAddressPostalCode MedicationDispensePerformerMedicationDispenseAssignedEntityUSRealmAddressState MedicationDispensePerformerMedicationDispenseAssignedEntityUSRealmAddressUseP MedicationDispensePerformerMedicationDispenseAssignedEntityAddr' moodCode='EVN' constraints.validation.info='MedicationDispenseMedicationSupplyOrder MedicationDispensePerformer' constraints.validation.query='MedicationDispensePerformerMedicationDispenseAssignedEntityUSRealmAddressStreet MedicationDispensePerformerMedicationDispenseAssignedEntityUSRealmAddressCity MedicationDispensePerformerMedicationDispenseAssignedEntityUSRealmAddressCountry MedicationDispensePerformerMedicationDispenseAssignedEntityUSRealmAddressPostalCode MedicationDispensePerformerMedicationDispenseAssignedEntityUSRealmAddressState MedicationDispensePerformerMedicationDispenseAssignedEntityUSRealmAddressStreetAddressLine MedicationDispensePerformerMedicationDispenseAssignedEntityUSRealmAddressUseP MedicationDispensePerformerMedicationDispenseAssignedEntityUSRealmAddressUse MedicationDispensePerformerMedicationDispenseAssignedEntityAddr MedicationDispensePerformerMedicationDispenseAssignedEntity' constraints.validation.dependOn.MedicationDispensePerformerMedicationDispenseAssignedEntityUSRealmAddressUse='MedicationDispensePerformerMedicationDispenseAssignedEntityUSRealmAddressUseP'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolMedicationDispensePerformer constraints.validation.error='PerformerMedicationDispenseAssignedEntity'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolMedicationDispensePerformerMedicationDispenseAssignedEntity constraints.validation.warning='MedicationDispenseAssignedEntityAddr MedicationDispenseAssignedEntityUSRealmAddressCountry MedicationDispenseAssignedEntityUSRealmAddressPostalCode MedicationDispenseAssignedEntityUSRealmAddressState MedicationDispenseAssignedEntityUSRealmAddressUseP' constraints.validation.error='MedicationDispenseAssignedEntityUSRealmAddressStreet MedicationDispenseAssignedEntityUSRealmAddressCity MedicationDispenseAssignedEntityUSRealmAddressStreetAddressLine MedicationDispenseAssignedEntityUSRealmAddressUse' constraints.validation.query='MedicationDispenseAssignedEntityUSRealmAddressStreet MedicationDispenseAssignedEntityUSRealmAddressCity MedicationDispenseAssignedEntityUSRealmAddressCountry MedicationDispenseAssignedEntityUSRealmAddressPostalCode MedicationDispenseAssignedEntityUSRealmAddressState MedicationDispenseAssignedEntityUSRealmAddressStreetAddressLine MedicationDispenseAssignedEntityUSRealmAddressUseP MedicationDispenseAssignedEntityUSRealmAddressUse' constraints.validation.dependOn.MedicationDispenseAssignedEntityUSRealmAddressUse='MedicationDispenseAssignedEntityUSRealmAddressUseP'"
  * @generated
  */
 public interface MedicationDispense extends Supply {
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * self.product.manufacturedProduct.oclIsTypeOf(consol::MedicationInformation) xor self.product.manufacturedProduct.oclIsTypeOf(consol::ImmunizationMedicationInformation)
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.product.manufacturedProduct.oclIsTypeOf(consol::MedicationInformation) xor self.product.manufacturedProduct.oclIsTypeOf(consol::ImmunizationMedicationInformation)'"
+	 * @generated
+	 */
+	boolean validateMedicationDispenseContainsMedicationOrImmunization(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
+
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -140,19 +153,6 @@ public interface MedicationDispense extends Supply {
 
 	/**
 	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.product->one(product : cda::Product | not product.oclIsUndefined() and product.oclIsKindOf(cda::Product))
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.product->one(product : cda::Product | not product.oclIsUndefined() and product.oclIsKindOf(cda::Product))'"
-	 * @generated
-	 */
-	boolean validateMedicationDispenseProduct(DiagnosticChain diagnostics, Map<Object, Object> context);
-
-	/**
-	 * <!-- begin-user-doc -->
 	* <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
 	 * self.performer->one(performer : cda::Performer2 | not performer.oclIsUndefined() and performer.oclIsKindOf(cda::Performer2))
@@ -163,20 +163,6 @@ public interface MedicationDispense extends Supply {
 	 * @generated
 	 */
 	boolean validateMedicationDispensePerformer(DiagnosticChain diagnostics, Map<Object, Object> context);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.product->excluding(null)->reject(manufacturedProduct.oclIsTypeOf(consol::MedicationInformation) xor manufacturedProduct.oclIsTypeOf(consol::ImmunizationMedicationInformation))
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.product->excluding(null)->reject(manufacturedProduct.oclIsTypeOf(consol::MedicationInformation) xor manufacturedProduct.oclIsTypeOf(consol::ImmunizationMedicationInformation))'"
-	 * @generated
-	 */
-	boolean validateMedicationDispenseProductContainsMedicationOrImmunization(DiagnosticChain diagnostics,
-			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->

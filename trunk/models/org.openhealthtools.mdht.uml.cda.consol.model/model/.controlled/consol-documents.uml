@@ -13,7 +13,10 @@ CDA R2 states that LOINC is the preferred vocabulary for document type codes, wh
       </ownedComment>
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_U7RnAFcfEeGCdLgBm6VHOQ">
         <language>Analysis</language>
-        <body>The US Realm Clinical Document Date and Time datatype flavor records date and time information. If no time zone offset &#xD;&#xA;is provided, you can make no assumption about time, unless you have made a local exchange agreement.&#xD;&#xA;This data type uses the same rules as US Realm Date and Time (DTM.US.FIELDED),  but is used with the effectiveTime &#xD;&#xA;element.</body>
+        <body>The US Realm Clinical Document Date and Time datatype flavor records date and time information. If no time zone offset &#xD;
+is provided, you can make no assumption about time, unless you have made a local exchange agreement.&#xD;
+This data type uses the same rules as US Realm Date and Time (DTM.US.FIELDED),  but is used with the effectiveTime &#xD;
+element.</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_GTIrwOx2EeG7k4bbVdXbXw" name="USRealmDateAndTime" constrainedElement="_2DNRcBSVEeGGzu7fmW9pXw">
@@ -22,7 +25,10 @@ CDA R2 states that LOINC is the preferred vocabulary for document type codes, wh
       </ownedComment>
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_GTIrwux2EeG7k4bbVdXbXw">
         <language>Analysis</language>
-        <body>The US Realm Clinical Document Date and Time datatype flavor records date and time information. If no time zone offset &#xD;&#xA;is provided, you can make no assumption about time, unless you have made a local exchange agreement.&#xD;&#xA;This data type uses the same rules as US Realm Date and Time (DTM.US.FIELDED),  but is used with the effectiveTime &#xD;&#xA;element.</body>
+        <body>The US Realm Clinical Document Date and Time datatype flavor records date and time information. If no time zone offset &#xD;
+is provided, you can make no assumption about time, unless you have made a local exchange agreement.&#xD;
+This data type uses the same rules as US Realm Date and Time (DTM.US.FIELDED),  but is used with the effectiveTime &#xD;
+element.</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_jXOYoMa8EeGp28IjMvW3Ag" name="typeIdRoot" constrainedElement="_2DNRcBSVEeGGzu7fmW9pXw">
@@ -553,7 +559,7 @@ In a CCD the encompassingEncounter may be used when documenting a specific encou
             <language>Analysis</language>
             <language>OCL</language>
             <body>The id SHALL contain exactly one root =&quot;2.16.840.1.113883.4.6&quot; National Provider Identifier (CONF:9996)</body>
-            <body>not assignedPerson.oclIsUndefined() implies self.id->exists( root='2.16.840.1.113883.4.6' )</body>
+            <body>not assignedPerson.oclIsUndefined() implies self.id->exists(id| id.isNullFlavorDefined() or id.root='2.16.840.1.113883.4.6' )</body>
           </specification>
         </ownedRule>
         <generalization xmi:id="_345lMCymEeGMXrZ0DiQwGg">
@@ -3538,10 +3544,6 @@ A History and Physical Examination is required upon hospital admission as well a
     <ownedAttribute xmi:id="_sZDVsD7ZEeGvOdejHZ7dYg" name="componentOf" type="_5JnTkD7YEeGvOdejHZ7dYg" association="_sZD8wT7ZEeGvOdejHZ7dYg">
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_sZD8wD7ZEeGvOdejHZ7dYg"/>
     </ownedAttribute>
-    <ownedAttribute xmi:id="_qAKwgD-OEeGvOdejHZ7dYg" name="primaryCarePhysician" type="_UAm-YD-NEeGvOdejHZ7dYg" association="_qALXkT-OEeGvOdejHZ7dYg">
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_dMCLQPK6EeGFUPBL8qS7yQ" value="*"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_dMCyUPK6EeGFUPBL8qS7yQ"/>
-    </ownedAttribute>
     <ownedAttribute xmi:id="_T3V-kD-WEeGvOdejHZ7dYg" name="assessmentSection" association="_T3V-kj-WEeGvOdejHZ7dYg">
       <type xmi:type="uml:Class" href="consol-other.uml#_W8pI4DszEeGvzMYhXuqAEA"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_T3V-kT-WEeGvOdejHZ7dYg"/>
@@ -3729,51 +3731,6 @@ A History and Physical Examination is required upon hospital admission as well a
         </nestedClassifier>
       </nestedClassifier>
     </nestedClassifier>
-    <nestedClassifier xmi:type="uml:Class" xmi:id="_UAm-YD-NEeGvOdejHZ7dYg" name="PrimaryCarePhysician">
-      <ownedComment xmi:id="_ybOGsD-NEeGvOdejHZ7dYg">
-        <body>INLINE&amp;typeCode=vocab::ParticipationType::IND</body>
-      </ownedComment>
-      <ownedComment xmi:id="_4jAjcPK6EeGFUPBL8qS7yQ">
-        <body>The participant element in the Procedure Note header follows the General Header Constraints for participants.  The Participant Scenarios table shows a number of scenarios and the values for various participants.</body>
-      </ownedComment>
-      <generalization xmi:id="_ZbTFcD-NEeGvOdejHZ7dYg">
-        <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_4_GbMEcZEd6besF9iFIJkQ"/>
-      </generalization>
-      <ownedAttribute xmi:id="_lDmkcPK6EeGFUPBL8qS7yQ" name="functionCode" visibility="private" aggregation="composite">
-        <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xrLI8PK6EeGFUPBL8qS7yQ" value="1"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xrM-IPK6EeGFUPBL8qS7yQ" value="1"/>
-        <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_RpEqAErdEd6FXKclYGEDCw"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:id="_lDnLgPK6EeGFUPBL8qS7yQ" name="typeCode" visibility="private" isReadOnly="true">
-        <type xmi:type="uml:Enumeration" href="../../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__y7BekDcEd6xYZuu1VKCVw"/>
-        <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bmsJsErdEd6FXKclYGEDCw"/>
-        <defaultValue xmi:type="uml:LiteralString" xmi:id="_oTdysPK6EeGFUPBL8qS7yQ" value="IND"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:id="_lDnLgfK6EeGFUPBL8qS7yQ" name="associatedEntity" visibility="private" type="_PyCO0PK7EeGFUPBL8qS7yQ" aggregation="composite">
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_lDnLgvK6EeGFUPBL8qS7yQ" value="1"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_lDnLg_K6EeGFUPBL8qS7yQ" value="1"/>
-        <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_mV9NcUcnEd6besF9iFIJkQ"/>
-        <association href="../consol.uml#_lDoZoPK6EeGFUPBL8qS7yQ"/>
-      </ownedAttribute>
-      <nestedClassifier xmi:type="uml:Class" xmi:id="_PyCO0PK7EeGFUPBL8qS7yQ" name="AssociatedEntity">
-        <generalization xmi:id="_PyCO0fK7EeGFUPBL8qS7yQ">
-          <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_8OcHAEcDEd6besF9iFIJkQ"/>
-        </generalization>
-        <ownedAttribute xmi:id="_QXuV0PK7EeGFUPBL8qS7yQ" name="classCode" visibility="private" isReadOnly="true">
-          <type xmi:type="uml:Enumeration" href="../../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__zE3C0DcEd6xYZuu1VKCVw"/>
-          <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_AkaAcEofEd6c3qsAxlFHaQ"/>
-          <defaultValue xmi:type="uml:LiteralString" xmi:id="_U6DRgPK7EeGFUPBL8qS7yQ" value="PROV"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:id="_QXu84PK7EeGFUPBL8qS7yQ" name="associatedPerson" visibility="private" aggregation="composite">
-          <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_Je2yMEcaEd6besF9iFIJkQ"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_RNGeoPK7EeGFUPBL8qS7yQ" value="1"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_RNGeofK7EeGFUPBL8qS7yQ" value="1"/>
-          <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_3pHXUUcnEd6besF9iFIJkQ"/>
-          <association href="../consol.uml#_QXvj8PK7EeGFUPBL8qS7yQ"/>
-        </ownedAttribute>
-      </nestedClassifier>
-    </nestedClassifier>
     <nestedClassifier xmi:type="uml:Class" xmi:id="_aYrE8D-TEeGvOdejHZ7dYg" name="DocumentationOf">
       <ownedComment xmi:id="_hpGU4D-vEeGtTIIxHid14Q">
         <body>INLINE</body>
@@ -3881,9 +3838,6 @@ A History and Physical Examination is required upon hospital admission as well a
   </uml:Class>
   <uml:Association xmi:id="_sZD8wT7ZEeGvOdejHZ7dYg" memberEnd="_sZDVsD7ZEeGvOdejHZ7dYg _sZD8wj7ZEeGvOdejHZ7dYg">
     <ownedEnd xmi:id="_sZD8wj7ZEeGvOdejHZ7dYg" type="_LuYEsD7YEeGvOdejHZ7dYg" association="_sZD8wT7ZEeGvOdejHZ7dYg"/>
-  </uml:Association>
-  <uml:Association xmi:id="_qALXkT-OEeGvOdejHZ7dYg" memberEnd="_qAKwgD-OEeGvOdejHZ7dYg _qALXkj-OEeGvOdejHZ7dYg">
-    <ownedEnd xmi:id="_qALXkj-OEeGvOdejHZ7dYg" type="_LuYEsD7YEeGvOdejHZ7dYg" association="_qALXkT-OEeGvOdejHZ7dYg"/>
   </uml:Association>
   <uml:Association xmi:id="_T3V-kj-WEeGvOdejHZ7dYg" memberEnd="_T3V-kD-WEeGvOdejHZ7dYg _T3WloD-WEeGvOdejHZ7dYg">
     <ownedEnd xmi:id="_T3WloD-WEeGvOdejHZ7dYg" type="_LuYEsD7YEeGvOdejHZ7dYg" association="_T3V-kj-WEeGvOdejHZ7dYg"/>
@@ -4015,9 +3969,6 @@ A History and Physical Examination is required upon hospital admission as well a
   </CDA:PropertyValidation>
   <CDA:AssociationValidation xmi:id="_vUABoD-OEeGvOdejHZ7dYg" severity="WARNING" base_Association="_sZD8wT7ZEeGvOdejHZ7dYg">
     <ruleId>CONF:8499</ruleId>
-  </CDA:AssociationValidation>
-  <CDA:AssociationValidation xmi:id="_rZX_ID-OEeGvOdejHZ7dYg" severity="INFO" base_Association="_qALXkT-OEeGvOdejHZ7dYg">
-    <ruleId>CONF:8504</ruleId>
   </CDA:AssociationValidation>
   <CDA:AssociationValidation xmi:id="_UE3nwD-XEeGvOdejHZ7dYg" severity="INFO" base_Association="_T3V-kj-WEeGvOdejHZ7dYg">
     <ruleId>CONF:9645</ruleId>
@@ -5313,16 +5264,6 @@ OIDs SHALL be no more than 64 characters in length..</body>
   </CDA:AssociationValidation>
   <CDA:PropertyValidation xmi:id="_8v4pAPK5EeGFUPBL8qS7yQ" base_Property="_S9Np8D7YEeGvOdejHZ7dYg">
     <ruleId>CONF:17182</ruleId>
-  </CDA:PropertyValidation>
-  <CDA:PropertyValidation xmi:id="_uGrugPK6EeGFUPBL8qS7yQ" base_Property="_lDnLgPK6EeGFUPBL8qS7yQ">
-    <ruleId>CONF:8505</ruleId>
-  </CDA:PropertyValidation>
-  <CDA:PropertyValidation xmi:id="_xNEQoPK6EeGFUPBL8qS7yQ" base_Property="_lDmkcPK6EeGFUPBL8qS7yQ"/>
-  <CDA:CodeSystemConstraint xmi:id="_z2r-QPK6EeGFUPBL8qS7yQ" code="PCP" displayName="Primary Care Physician" base_Property="_lDmkcPK6EeGFUPBL8qS7yQ">
-    <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_Si0RgOxyEeG7k4bbVdXbXw"/>
-  </CDA:CodeSystemConstraint>
-  <CDA:PropertyValidation xmi:id="_RdPzcPK7EeGFUPBL8qS7yQ" base_Property="_QXuV0PK7EeGFUPBL8qS7yQ">
-    <ruleId>CONF:8507</ruleId>
   </CDA:PropertyValidation>
   <uml:Association xmi:id="_hvpq8PK7EeGFUPBL8qS7yQ" memberEnd="_hvn1wPK7EeGFUPBL8qS7yQ _hvpq8fK7EeGFUPBL8qS7yQ">
     <ownedEnd xmi:id="_hvpq8fK7EeGFUPBL8qS7yQ" type="_LuYEsD7YEeGvOdejHZ7dYg" association="_hvpq8PK7EeGFUPBL8qS7yQ"/>

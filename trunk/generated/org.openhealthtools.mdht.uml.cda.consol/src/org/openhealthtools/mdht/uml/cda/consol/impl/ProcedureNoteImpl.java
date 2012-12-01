@@ -161,15 +161,6 @@ public class ProcedureNoteImpl extends GeneralHeaderConstraintsImpl implements P
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateProcedureNotePrimaryCarePhysician(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProcedureNoteOperations.validateProcedureNotePrimaryCarePhysician(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public boolean validateProcedureNoteAssessmentSection(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProcedureNoteOperations.validateProcedureNoteAssessmentSection(this, diagnostics, context);
 	}
@@ -528,70 +519,6 @@ public class ProcedureNoteImpl extends GeneralHeaderConstraintsImpl implements P
 	public boolean validateProcedureNoteComponentOfEncompassingEncounter5(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ProcedureNoteOperations.validateProcedureNoteComponentOfEncompassingEncounter5(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateProcedureNotePrimaryCarePhysicianAssociatedEntityClassCode(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return ProcedureNoteOperations.validateProcedureNotePrimaryCarePhysicianAssociatedEntityClassCode(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateProcedureNotePrimaryCarePhysicianAssociatedEntityAssociatedPerson(
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProcedureNoteOperations.validateProcedureNotePrimaryCarePhysicianAssociatedEntityAssociatedPerson(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateProcedureNotePrimaryCarePhysicianFunctionCode(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return ProcedureNoteOperations.validateProcedureNotePrimaryCarePhysicianFunctionCode(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateProcedureNotePrimaryCarePhysicianFunctionCodeP(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return ProcedureNoteOperations.validateProcedureNotePrimaryCarePhysicianFunctionCodeP(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateProcedureNotePrimaryCarePhysicianTypeCode(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return ProcedureNoteOperations.validateProcedureNotePrimaryCarePhysicianTypeCode(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateProcedureNotePrimaryCarePhysicianAssociatedEntity(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return ProcedureNoteOperations.validateProcedureNotePrimaryCarePhysicianAssociatedEntity(
 			this, diagnostics, context);
 	}
 

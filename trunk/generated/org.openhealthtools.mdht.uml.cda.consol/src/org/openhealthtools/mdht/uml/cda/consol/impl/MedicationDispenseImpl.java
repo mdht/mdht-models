@@ -57,6 +57,17 @@ public class MedicationDispenseImpl extends SupplyImpl implements MedicationDisp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateMedicationDispenseContainsMedicationOrImmunization(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return MedicationDispenseOperations.validateMedicationDispenseContainsMedicationOrImmunization(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public boolean validateMedicationDispenseTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return MedicationDispenseOperations.validateMedicationDispenseTemplateId(this, diagnostics, context);
 	}
@@ -126,31 +137,11 @@ public class MedicationDispenseImpl extends SupplyImpl implements MedicationDisp
 
 	/**
 	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateMedicationDispenseProduct(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return MedicationDispenseOperations.validateMedicationDispenseProduct(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
 	* <!-- end-user-doc -->
 	 * @generated
 	 */
 	public boolean validateMedicationDispensePerformer(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return MedicationDispenseOperations.validateMedicationDispensePerformer(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateMedicationDispenseProductContainsMedicationOrImmunization(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return MedicationDispenseOperations.validateMedicationDispenseProductContainsMedicationOrImmunization(
-			this, diagnostics, context);
 	}
 
 	/**

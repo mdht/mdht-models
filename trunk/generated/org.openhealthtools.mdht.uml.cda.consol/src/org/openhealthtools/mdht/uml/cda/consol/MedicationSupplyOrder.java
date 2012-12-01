@@ -25,8 +25,7 @@ import org.openhealthtools.mdht.uml.cda.Supply;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getMedicationSupplyOrder()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='MedicationSupplyOrderTemplateId MedicationSupplyOrderInstructionInversionInd MedicationSupplyOrderEffectiveTimeHigh MedicationSupplyOrderClassCode MedicationSupplyOrderMoodCode MedicationSupplyOrderStatusCode MedicationSupplyOrderId MedicationSupplyOrderProduct MedicationSupplyOrderProductContainsMedicationOrImmunization' templateId.root='2.16.840.1.113883.10.20.22.4.17' classCode='SPLY' constraints.validation.warning='MedicationSupplyOrderEffectiveTime MedicationSupplyOrderQuantity MedicationSupplyOrderRepeatNumber' moodCode='INT' constraints.validation.info='MedicationSupplyOrderAuthor MedicationSupplyOrderInstructions' constraints.validation.query='MedicationSupplyOrderProductContainsMedicationOrImmunization'"
- *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolMedicationSupplyOrderProduct constraints.validation.error='ProductContainsMedicationOrImmunization'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='MedicationSupplyOrderTemplateId MedicationSupplyOrderInstructionInversionInd MedicationSupplyOrderEffectiveTimeHigh MedicationSupplyOrderContainsMedicationOrImmunization MedicationSupplyOrderClassCode MedicationSupplyOrderMoodCode MedicationSupplyOrderStatusCode MedicationSupplyOrderId' templateId.root='2.16.840.1.113883.10.20.22.4.17' classCode='SPLY' constraints.validation.warning='MedicationSupplyOrderEffectiveTime MedicationSupplyOrderQuantity MedicationSupplyOrderRepeatNumber' moodCode='INT' constraints.validation.info='MedicationSupplyOrderAuthor MedicationSupplyOrderInstructions'"
  * @generated
  */
 public interface MedicationSupplyOrder extends Supply {
@@ -56,6 +55,20 @@ public interface MedicationSupplyOrder extends Supply {
 	 * @generated
 	 */
 	boolean validateMedicationSupplyOrderEffectiveTimeHigh(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * self.product.manufacturedProduct.oclIsTypeOf(consol::MedicationInformation) xor self.product.manufacturedProduct.oclIsTypeOf(consol::ImmunizationMedicationInformation)
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.product.manufacturedProduct.oclIsTypeOf(consol::MedicationInformation) xor self.product.manufacturedProduct.oclIsTypeOf(consol::ImmunizationMedicationInformation)'"
+	 * @generated
+	 */
+	boolean validateMedicationSupplyOrderContainsMedicationOrImmunization(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -165,19 +178,6 @@ public interface MedicationSupplyOrder extends Supply {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.product->one(product : cda::Product | not product.oclIsUndefined() and product.oclIsKindOf(cda::Product))
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.product->one(product : cda::Product | not product.oclIsUndefined() and product.oclIsKindOf(cda::Product))'"
-	 * @generated
-	 */
-	boolean validateMedicationSupplyOrderProduct(DiagnosticChain diagnostics, Map<Object, Object> context);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
 	 * self.author->one(author : cda::Author | not author.oclIsUndefined() and author.oclIsKindOf(rim::Participation))
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -199,20 +199,6 @@ public interface MedicationSupplyOrder extends Supply {
 	 * @generated
 	 */
 	boolean validateMedicationSupplyOrderInstructions(DiagnosticChain diagnostics, Map<Object, Object> context);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.product->excluding(null)->reject(manufacturedProduct.oclIsTypeOf(consol::MedicationInformation) xor manufacturedProduct.oclIsTypeOf(consol::ImmunizationMedicationInformation))
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.product->excluding(null)->reject(manufacturedProduct.oclIsTypeOf(consol::MedicationInformation) xor manufacturedProduct.oclIsTypeOf(consol::ImmunizationMedicationInformation))'"
-	 * @generated
-	 */
-	boolean validateMedicationSupplyOrderProductContainsMedicationOrImmunization(DiagnosticChain diagnostics,
-			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
