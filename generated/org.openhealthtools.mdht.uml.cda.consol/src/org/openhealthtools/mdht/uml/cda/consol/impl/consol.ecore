@@ -4703,16 +4703,12 @@
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="MedicationSupplyOrder" eSuperTypes="urn:hl7-org:v3#//Supply">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
-      <details key="constraints.validation.error" value="MedicationSupplyOrderTemplateId MedicationSupplyOrderInstructionInversionInd MedicationSupplyOrderEffectiveTimeHigh MedicationSupplyOrderClassCode MedicationSupplyOrderMoodCode MedicationSupplyOrderStatusCode MedicationSupplyOrderId MedicationSupplyOrderProduct MedicationSupplyOrderProductContainsMedicationOrImmunization"/>
+      <details key="constraints.validation.error" value="MedicationSupplyOrderTemplateId MedicationSupplyOrderInstructionInversionInd MedicationSupplyOrderEffectiveTimeHigh MedicationSupplyOrderContainsMedicationOrImmunization MedicationSupplyOrderClassCode MedicationSupplyOrderMoodCode MedicationSupplyOrderStatusCode MedicationSupplyOrderId"/>
       <details key="templateId.root" value="2.16.840.1.113883.10.20.22.4.17"/>
       <details key="classCode" value="SPLY"/>
       <details key="constraints.validation.warning" value="MedicationSupplyOrderEffectiveTime MedicationSupplyOrderQuantity MedicationSupplyOrderRepeatNumber"/>
       <details key="moodCode" value="INT"/>
       <details key="constraints.validation.info" value="MedicationSupplyOrderAuthor MedicationSupplyOrderInstructions"/>
-      <details key="constraints.validation.query" value="MedicationSupplyOrderProductContainsMedicationOrImmunization"/>
-    </eAnnotations>
-    <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolMedicationSupplyOrderProduct">
-      <details key="constraints.validation.error" value="ProductContainsMedicationOrImmunization"/>
     </eAnnotations>
     <eOperations name="MedicationSupplyOrderInstructionInversionInd" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
@@ -4724,6 +4720,15 @@
       </eParameters>
     </eOperations>
     <eOperations name="MedicationSupplyOrderEffectiveTimeHigh" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
+      <eParameters name="context">
+        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations name="MedicationSupplyOrderContainsMedicationOrImmunization" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
       <eParameters name="context">
         <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
@@ -4804,15 +4809,6 @@
         </eGenericType>
       </eParameters>
     </eOperations>
-    <eOperations name="MedicationSupplyOrderProduct" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
-      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
-      <eParameters name="context">
-        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
-          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
-          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
-        </eGenericType>
-      </eParameters>
-    </eOperations>
     <eOperations name="MedicationSupplyOrderAuthor" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
       <eParameters name="context">
@@ -4823,16 +4819,6 @@
       </eParameters>
     </eOperations>
     <eOperations name="MedicationSupplyOrderInstructions" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
-      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
-      <eParameters name="context">
-        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
-          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
-          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
-        </eGenericType>
-      </eParameters>
-    </eOperations>
-    <eOperations name="MedicationSupplyOrderProductContainsMedicationOrImmunization"
-        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
       <eParameters name="context">
         <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
@@ -4948,18 +4934,15 @@
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="MedicationDispense" eSuperTypes="urn:hl7-org:v3#//Supply">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
-      <details key="constraints.validation.error" value="MedicationDispenseTemplateId MedicationDispenseClassCode MedicationDispenseId MedicationDispenseMoodCode MedicationDispenseStatusCode MedicationDispenseProduct MedicationDispenseProductContainsMedicationOrImmunization MedicationDispensePerformerMedicationDispenseAssignedEntityUSRealmAddressStreet MedicationDispensePerformerMedicationDispenseAssignedEntityUSRealmAddressCity MedicationDispensePerformerMedicationDispenseAssignedEntityUSRealmAddressStreetAddressLine MedicationDispensePerformerMedicationDispenseAssignedEntityUSRealmAddressUse MedicationDispensePerformerMedicationDispenseAssignedEntity"/>
+      <details key="constraints.validation.error" value="MedicationDispenseTemplateId MedicationDispenseContainsMedicationOrImmunization MedicationDispenseClassCode MedicationDispenseId MedicationDispenseMoodCode MedicationDispenseStatusCode MedicationDispensePerformerMedicationDispenseAssignedEntityUSRealmAddressStreet MedicationDispensePerformerMedicationDispenseAssignedEntityUSRealmAddressCity MedicationDispensePerformerMedicationDispenseAssignedEntityUSRealmAddressStreetAddressLine MedicationDispensePerformerMedicationDispenseAssignedEntityUSRealmAddressUse MedicationDispensePerformerMedicationDispenseAssignedEntity"/>
       <details key="templateId.root" value="2.16.840.1.113883.10.20.22.4.18"/>
       <details key="classCode" value="SPLY"/>
       <details key="constraints.validation.warning" value="MedicationDispenseEffectiveTime MedicationDispenseRepeatNumber MedicationDispenseQuantity MedicationDispensePerformerMedicationDispenseAssignedEntityUSRealmAddressCountry MedicationDispensePerformerMedicationDispenseAssignedEntityUSRealmAddressPostalCode MedicationDispensePerformerMedicationDispenseAssignedEntityUSRealmAddressState MedicationDispensePerformerMedicationDispenseAssignedEntityUSRealmAddressUseP MedicationDispensePerformerMedicationDispenseAssignedEntityAddr"/>
       <details key="moodCode" value="EVN"/>
       <details key="constraints.validation.info" value="MedicationDispenseMedicationSupplyOrder MedicationDispensePerformer"/>
-      <details key="constraints.validation.query" value="MedicationDispenseProductContainsMedicationOrImmunization MedicationDispensePerformerMedicationDispenseAssignedEntityUSRealmAddressStreet MedicationDispensePerformerMedicationDispenseAssignedEntityUSRealmAddressCity MedicationDispensePerformerMedicationDispenseAssignedEntityUSRealmAddressCountry MedicationDispensePerformerMedicationDispenseAssignedEntityUSRealmAddressPostalCode MedicationDispensePerformerMedicationDispenseAssignedEntityUSRealmAddressState MedicationDispensePerformerMedicationDispenseAssignedEntityUSRealmAddressStreetAddressLine MedicationDispensePerformerMedicationDispenseAssignedEntityUSRealmAddressUseP MedicationDispensePerformerMedicationDispenseAssignedEntityUSRealmAddressUse MedicationDispensePerformerMedicationDispenseAssignedEntityAddr MedicationDispensePerformerMedicationDispenseAssignedEntity"/>
+      <details key="constraints.validation.query" value="MedicationDispensePerformerMedicationDispenseAssignedEntityUSRealmAddressStreet MedicationDispensePerformerMedicationDispenseAssignedEntityUSRealmAddressCity MedicationDispensePerformerMedicationDispenseAssignedEntityUSRealmAddressCountry MedicationDispensePerformerMedicationDispenseAssignedEntityUSRealmAddressPostalCode MedicationDispensePerformerMedicationDispenseAssignedEntityUSRealmAddressState MedicationDispensePerformerMedicationDispenseAssignedEntityUSRealmAddressStreetAddressLine MedicationDispensePerformerMedicationDispenseAssignedEntityUSRealmAddressUseP MedicationDispensePerformerMedicationDispenseAssignedEntityUSRealmAddressUse MedicationDispensePerformerMedicationDispenseAssignedEntityAddr MedicationDispensePerformerMedicationDispenseAssignedEntity"/>
       <details key="constraints.validation.dependOn.MedicationDispensePerformerMedicationDispenseAssignedEntityUSRealmAddressUse"
           value="MedicationDispensePerformerMedicationDispenseAssignedEntityUSRealmAddressUseP"/>
-    </eAnnotations>
-    <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolMedicationDispenseProduct">
-      <details key="constraints.validation.error" value="ProductContainsMedicationOrImmunization"/>
     </eAnnotations>
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolMedicationDispensePerformer">
       <details key="constraints.validation.error" value="PerformerMedicationDispenseAssignedEntity"/>
@@ -4971,6 +4954,15 @@
       <details key="constraints.validation.dependOn.MedicationDispenseAssignedEntityUSRealmAddressUse"
           value="MedicationDispenseAssignedEntityUSRealmAddressUseP"/>
     </eAnnotations>
+    <eOperations name="MedicationDispenseContainsMedicationOrImmunization" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
+      <eParameters name="context">
+        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
     <eOperations name="MedicationDispenseTemplateId" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
       <eParameters name="context">
@@ -5052,26 +5044,7 @@
         </eGenericType>
       </eParameters>
     </eOperations>
-    <eOperations name="MedicationDispenseProduct" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
-      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
-      <eParameters name="context">
-        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
-          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
-          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
-        </eGenericType>
-      </eParameters>
-    </eOperations>
     <eOperations name="MedicationDispensePerformer" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
-      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
-      <eParameters name="context">
-        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
-          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
-          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
-        </eGenericType>
-      </eParameters>
-    </eOperations>
-    <eOperations name="MedicationDispenseProductContainsMedicationOrImmunization"
-        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
       <eParameters name="context">
         <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
@@ -21465,14 +21438,14 @@
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="ProcedureNote" eSuperTypes="#//GeneralHeaderConstraints">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
-      <details key="constraints.validation.error" value="ProcedureNoteTemplateId ProcedureNoteHasAnAssementAndPlanSectionOrIndividualAssementAndPlanSections ProcedureNoteDoesNotHaveIndividualAssementAndPlanSectionsWhenAssementAndPlanSectionPresent ProcedureNoteDoesNotHaveChiefComplaintAndReasonForVisitWithChiefComplaintSectionOrReasonSection ProcedureNoteSectionTitles ProcedureNoteCode ProcedureNoteCodeP ProcedureNoteComplicationsSection ProcedureNotePostprocedureDiagnosisSection ProcedureNoteProcedureDescriptionSection ProcedureNoteProcedureIndicationsSection ProcedureNoteDocumentationOf ProcedureNoteComponentOfEncompassingEncounter5LocationHealthCareFacilityId ProcedureNoteComponentOfEncompassingEncounter5LocationHealthCareFacility ProcedureNoteComponentOfEncompassingEncounter5EncounterParticipantTypeCode ProcedureNoteComponentOfEncompassingEncounter5Code ProcedureNoteComponentOfEncompassingEncounter5Location ProcedureNotePrimaryCarePhysicianAssociatedEntityClassCode ProcedureNotePrimaryCarePhysicianAssociatedEntityAssociatedPerson ProcedureNotePrimaryCarePhysicianFunctionCode ProcedureNotePrimaryCarePhysicianFunctionCodeP ProcedureNotePrimaryCarePhysicianTypeCode ProcedureNotePrimaryCarePhysicianAssociatedEntity ProcedureNoteDocumentationOfServiceEvent1PrimaryPerformerAssignedEntityCode ProcedureNoteDocumentationOfServiceEvent1PrimaryPerformerTypeCode ProcedureNoteDocumentationOfServiceEvent1PrimaryPerformerAssignedEntity ProcedureNoteDocumentationOfServiceEvent1ProcedureCodes ProcedureNoteDocumentationOfServiceEvent1EffectiveTimeHasLow ProcedureNoteDocumentationOfServiceEvent1EffectiveTimeHasHighWhenNoWidth ProcedureNoteDocumentationOfServiceEvent1EffectiveTimeNoHighIfWidth ProcedureNoteDocumentationOfServiceEvent1Code ProcedureNoteDocumentationOfServiceEvent1EffectiveTime ProcedureNoteDocumentationOfServiceEvent1PrimaryPerformer ProcedureNoteDocumentationOfServiceEvent1"/>
+      <details key="constraints.validation.error" value="ProcedureNoteTemplateId ProcedureNoteHasAnAssementAndPlanSectionOrIndividualAssementAndPlanSections ProcedureNoteDoesNotHaveIndividualAssementAndPlanSectionsWhenAssementAndPlanSectionPresent ProcedureNoteDoesNotHaveChiefComplaintAndReasonForVisitWithChiefComplaintSectionOrReasonSection ProcedureNoteSectionTitles ProcedureNoteCode ProcedureNoteCodeP ProcedureNoteComplicationsSection ProcedureNotePostprocedureDiagnosisSection ProcedureNoteProcedureDescriptionSection ProcedureNoteProcedureIndicationsSection ProcedureNoteDocumentationOf ProcedureNoteComponentOfEncompassingEncounter5LocationHealthCareFacilityId ProcedureNoteComponentOfEncompassingEncounter5LocationHealthCareFacility ProcedureNoteComponentOfEncompassingEncounter5EncounterParticipantTypeCode ProcedureNoteComponentOfEncompassingEncounter5Code ProcedureNoteComponentOfEncompassingEncounter5Location ProcedureNoteDocumentationOfServiceEvent1PrimaryPerformerAssignedEntityCode ProcedureNoteDocumentationOfServiceEvent1PrimaryPerformerTypeCode ProcedureNoteDocumentationOfServiceEvent1PrimaryPerformerAssignedEntity ProcedureNoteDocumentationOfServiceEvent1ProcedureCodes ProcedureNoteDocumentationOfServiceEvent1EffectiveTimeHasLow ProcedureNoteDocumentationOfServiceEvent1EffectiveTimeHasHighWhenNoWidth ProcedureNoteDocumentationOfServiceEvent1EffectiveTimeNoHighIfWidth ProcedureNoteDocumentationOfServiceEvent1Code ProcedureNoteDocumentationOfServiceEvent1EffectiveTime ProcedureNoteDocumentationOfServiceEvent1PrimaryPerformer ProcedureNoteDocumentationOfServiceEvent1"/>
       <details key="templateId.root" value="2.16.840.1.113883.10.20.22.1.6"/>
       <details key="code.codeSystem" value="2.16.840.1.113883.6.1"/>
       <details key="code.codeSystemName" value="LOINC"/>
       <details key="constraints.validation.dependOn.ProcedureNoteCode" value="ProcedureNoteCodeP"/>
       <details key="constraints.validation.warning" value="ProcedureNoteComponentOf ProcedureNoteComponentOfEncompassingEncounter5 ProcedureNoteDocumentationOfServiceEvent1PrimaryPerformerAssignedEntityCodeP"/>
-      <details key="constraints.validation.info" value="ProcedureNotePrimaryCarePhysician ProcedureNoteAssessmentSection ProcedureNotePlanOfCareSection ProcedureNoteAssessmentAndPlanSection ProcedureNoteAllergiesSectionEntriesOptional ProcedureNoteAnesthesiaSection ProcedureNoteChiefComplaintSection ProcedureNoteChiefComplaintAndReasonForVisitSection ProcedureNoteFamilyHistorySection ProcedureNoteHistoryOfPastIllnessSection ProcedureNoteHistoryOfPresentIllnessSection ProcedureNoteMedicalHistorySection ProcedureNoteMedicationsSectionEntriesOptional ProcedureNoteMedicationsAdministeredSection ProcedureNotePhysicalExamSection ProcedureNotePlannedProcedureSection ProcedureNoteProcedureDispositionSection ProcedureNoteProcedureEstimatedBloodLossSection ProcedureNoteProcedureFindingsSection ProcedureNoteProcedureImplantsSection ProcedureNoteProcedureSpecimensTakenSection ProcedureNoteProceduresSectionEntriesOptional ProcedureNoteReasonForVisitSection ProcedureNoteReviewOfSystemsSection ProcedureNoteSocialHistorySection ProcedureNoteParticipant1 ProcedureNoteComponentOfEncompassingEncounter5EncounterParticipant"/>
-      <details key="constraints.validation.query" value="ProcedureNoteComponentOfEncompassingEncounter5LocationHealthCareFacilityId ProcedureNoteComponentOfEncompassingEncounter5LocationHealthCareFacility ProcedureNoteComponentOfEncompassingEncounter5EncounterParticipantTypeCode ProcedureNoteComponentOfEncompassingEncounter5Code ProcedureNoteComponentOfEncompassingEncounter5Location ProcedureNoteComponentOfEncompassingEncounter5EncounterParticipant ProcedureNoteComponentOfEncompassingEncounter5 ProcedureNotePrimaryCarePhysicianAssociatedEntityClassCode ProcedureNotePrimaryCarePhysicianAssociatedEntityAssociatedPerson ProcedureNotePrimaryCarePhysicianFunctionCode ProcedureNotePrimaryCarePhysicianFunctionCodeP ProcedureNotePrimaryCarePhysicianTypeCode ProcedureNotePrimaryCarePhysicianAssociatedEntity ProcedureNoteDocumentationOfServiceEvent1PrimaryPerformerAssignedEntityCodeP ProcedureNoteDocumentationOfServiceEvent1PrimaryPerformerAssignedEntityCode ProcedureNoteDocumentationOfServiceEvent1PrimaryPerformerTypeCode ProcedureNoteDocumentationOfServiceEvent1PrimaryPerformerAssignedEntity ProcedureNoteDocumentationOfServiceEvent1ProcedureCodes ProcedureNoteDocumentationOfServiceEvent1EffectiveTimeHasLow ProcedureNoteDocumentationOfServiceEvent1EffectiveTimeHasHighWhenNoWidth ProcedureNoteDocumentationOfServiceEvent1EffectiveTimeNoHighIfWidth ProcedureNoteDocumentationOfServiceEvent1Code ProcedureNoteDocumentationOfServiceEvent1EffectiveTime ProcedureNoteDocumentationOfServiceEvent1PrimaryPerformer ProcedureNoteDocumentationOfServiceEvent1"/>
+      <details key="constraints.validation.info" value="ProcedureNoteAssessmentSection ProcedureNotePlanOfCareSection ProcedureNoteAssessmentAndPlanSection ProcedureNoteAllergiesSectionEntriesOptional ProcedureNoteAnesthesiaSection ProcedureNoteChiefComplaintSection ProcedureNoteChiefComplaintAndReasonForVisitSection ProcedureNoteFamilyHistorySection ProcedureNoteHistoryOfPastIllnessSection ProcedureNoteHistoryOfPresentIllnessSection ProcedureNoteMedicalHistorySection ProcedureNoteMedicationsSectionEntriesOptional ProcedureNoteMedicationsAdministeredSection ProcedureNotePhysicalExamSection ProcedureNotePlannedProcedureSection ProcedureNoteProcedureDispositionSection ProcedureNoteProcedureEstimatedBloodLossSection ProcedureNoteProcedureFindingsSection ProcedureNoteProcedureImplantsSection ProcedureNoteProcedureSpecimensTakenSection ProcedureNoteProceduresSectionEntriesOptional ProcedureNoteReasonForVisitSection ProcedureNoteReviewOfSystemsSection ProcedureNoteSocialHistorySection ProcedureNoteParticipant1 ProcedureNoteComponentOfEncompassingEncounter5EncounterParticipant"/>
+      <details key="constraints.validation.query" value="ProcedureNoteComponentOfEncompassingEncounter5LocationHealthCareFacilityId ProcedureNoteComponentOfEncompassingEncounter5LocationHealthCareFacility ProcedureNoteComponentOfEncompassingEncounter5EncounterParticipantTypeCode ProcedureNoteComponentOfEncompassingEncounter5Code ProcedureNoteComponentOfEncompassingEncounter5Location ProcedureNoteComponentOfEncompassingEncounter5EncounterParticipant ProcedureNoteComponentOfEncompassingEncounter5 ProcedureNoteDocumentationOfServiceEvent1PrimaryPerformerAssignedEntityCodeP ProcedureNoteDocumentationOfServiceEvent1PrimaryPerformerAssignedEntityCode ProcedureNoteDocumentationOfServiceEvent1PrimaryPerformerTypeCode ProcedureNoteDocumentationOfServiceEvent1PrimaryPerformerAssignedEntity ProcedureNoteDocumentationOfServiceEvent1ProcedureCodes ProcedureNoteDocumentationOfServiceEvent1EffectiveTimeHasLow ProcedureNoteDocumentationOfServiceEvent1EffectiveTimeHasHighWhenNoWidth ProcedureNoteDocumentationOfServiceEvent1EffectiveTimeNoHighIfWidth ProcedureNoteDocumentationOfServiceEvent1Code ProcedureNoteDocumentationOfServiceEvent1EffectiveTime ProcedureNoteDocumentationOfServiceEvent1PrimaryPerformer ProcedureNoteDocumentationOfServiceEvent1"/>
       <details key="constraints.validation.dependOn.ProcedureNoteDocumentationOfServiceEvent1PrimaryPerformerAssignedEntityCode"
           value="ProcedureNoteDocumentationOfServiceEvent1PrimaryPerformerAssignedEntityCodeP"/>
     </eAnnotations>
@@ -21492,18 +21465,6 @@
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolProcedureNoteComponentOfEncompassingEncounter5EncounterParticipant">
       <details key="typeCode" value="REF"/>
       <details key="constraints.validation.error" value="EncounterParticipantTypeCode"/>
-    </eAnnotations>
-    <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolProcedureNotePrimaryCarePhysician">
-      <details key="functionCode.code" value="PCP"/>
-      <details key="functionCode.codeSystem" value="2.16.840.1.113883.5.88"/>
-      <details key="functionCode.codeSystemName" value="ParticipationFunction"/>
-      <details key="functionCode.displayName" value="Primary Care Physician"/>
-      <details key="constraints.validation.error" value="PrimaryCarePhysicianFunctionCode PrimaryCarePhysicianFunctionCodeP PrimaryCarePhysicianTypeCode PrimaryCarePhysicianAssociatedEntity"/>
-      <details key="typeCode" value="IND"/>
-    </eAnnotations>
-    <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolProcedureNotePrimaryCarePhysicianAssociatedEntity">
-      <details key="classCode" value="PROV"/>
-      <details key="constraints.validation.error" value="AssociatedEntityClassCode AssociatedEntityAssociatedPerson"/>
     </eAnnotations>
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolProcedureNoteDocumentationOf">
       <details key="constraints.validation.error" value="DocumentationOfServiceEvent1"/>
@@ -21593,15 +21554,6 @@
       </eParameters>
     </eOperations>
     <eOperations name="ProcedureNoteComponentOf" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
-      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
-      <eParameters name="context">
-        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
-          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
-          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
-        </eGenericType>
-      </eParameters>
-    </eOperations>
-    <eOperations name="ProcedureNotePrimaryCarePhysician" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
       <eParameters name="context">
         <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
@@ -21939,62 +21891,6 @@
       </eParameters>
     </eOperations>
     <eOperations name="ProcedureNoteComponentOfEncompassingEncounter5" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
-      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
-      <eParameters name="context">
-        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
-          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
-          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
-        </eGenericType>
-      </eParameters>
-    </eOperations>
-    <eOperations name="ProcedureNotePrimaryCarePhysicianAssociatedEntityClassCode"
-        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
-      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
-      <eParameters name="context">
-        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
-          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
-          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
-        </eGenericType>
-      </eParameters>
-    </eOperations>
-    <eOperations name="ProcedureNotePrimaryCarePhysicianAssociatedEntityAssociatedPerson"
-        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
-      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
-      <eParameters name="context">
-        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
-          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
-          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
-        </eGenericType>
-      </eParameters>
-    </eOperations>
-    <eOperations name="ProcedureNotePrimaryCarePhysicianFunctionCode" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
-      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
-      <eParameters name="context">
-        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
-          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
-          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
-        </eGenericType>
-      </eParameters>
-    </eOperations>
-    <eOperations name="ProcedureNotePrimaryCarePhysicianFunctionCodeP" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
-      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
-      <eParameters name="context">
-        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
-          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
-          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
-        </eGenericType>
-      </eParameters>
-    </eOperations>
-    <eOperations name="ProcedureNotePrimaryCarePhysicianTypeCode" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
-      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
-      <eParameters name="context">
-        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
-          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
-          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
-        </eGenericType>
-      </eParameters>
-    </eOperations>
-    <eOperations name="ProcedureNotePrimaryCarePhysicianAssociatedEntity" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
       <eParameters name="context">
         <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">

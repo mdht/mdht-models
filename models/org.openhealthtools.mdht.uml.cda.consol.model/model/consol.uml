@@ -175,7 +175,6 @@
     <packagedElement xmi:type="uml:Association" href=".controlled/consol-immunizations.uml#_CtfWwRqsEeGo461UQq-B1g"/>
     <packagedElement xmi:type="uml:Association" href=".controlled/consol-immunizations.uml#_A3suQRq2EeGo461UQq-B1g"/>
     <packagedElement xmi:type="uml:Class" href=".controlled/consol-medications.uml#_j3aTQBrTEeGo461UQq-B1g"/>
-    <packagedElement xmi:type="uml:Association" href=".controlled/consol-medications.uml#__4pwcRrTEeGo461UQq-B1g"/>
     <packagedElement xmi:type="uml:Association" href=".controlled/consol-medications.uml#_IxDUgBrUEeGo461UQq-B1g"/>
     <packagedElement xmi:type="uml:Association" href=".controlled/consol-medications.uml#_PrLOARrUEeGo461UQq-B1g"/>
     <packagedElement xmi:type="uml:Association" href=".controlled/consol-medications.uml#_3-ztEBrYEeGo461UQq-B1g"/>
@@ -388,7 +387,6 @@
     <packagedElement xmi:type="uml:Association" href=".controlled/consol-documents.uml#_mJ6YUj4oEeGtCLm-c2g23Q"/>
     <packagedElement xmi:type="uml:Class" href=".controlled/consol-documents.uml#_LuYEsD7YEeGvOdejHZ7dYg"/>
     <packagedElement xmi:type="uml:Association" href=".controlled/consol-documents.uml#_sZD8wT7ZEeGvOdejHZ7dYg"/>
-    <packagedElement xmi:type="uml:Association" href=".controlled/consol-documents.uml#_qALXkT-OEeGvOdejHZ7dYg"/>
     <packagedElement xmi:type="uml:Association" href=".controlled/consol-documents.uml#_0WBKAT-OEeGvOdejHZ7dYg"/>
     <packagedElement xmi:type="uml:Association" href=".controlled/consol-documents.uml#_2cq4AT-PEeGvOdejHZ7dYg"/>
     <packagedElement xmi:type="uml:Association" href=".controlled/consol-documents.uml#_644koT-PEeGvOdejHZ7dYg"/>
@@ -489,7 +487,6 @@
     <packagedElement xmi:type="uml:Association" href=".controlled/consol-medications.uml#_6Tr-UEIrEeG4bZAl2IGXmQ"/>
     <packagedElement xmi:type="uml:Association" href=".controlled/consol-medications.uml#_abVpYEOvEeG2teg5w9C5Rg"/>
     <packagedElement xmi:type="uml:Association" href=".controlled/consol-medications.uml#_ooc9QEX9EeG6e5lG0YsSyQ"/>
-    <packagedElement xmi:type="uml:Association" href=".controlled/consol-medications.uml#_ikMTkEhUEeGoJ-JrsiBorA"/>
     <packagedElement xmi:type="uml:Class" href=".controlled/consol-documents.uml#_XwBooEUuEeGdQ4KWAmnbhw"/>
     <packagedElement xmi:type="uml:Association" href=".controlled/consol-dicom.uml#_0kSW0UUxEeGAh_iQGJvI5w"/>
     <packagedElement xmi:type="uml:Association" href=".controlled/consol-dicom.uml#_EHrzQkUyEeGAh_iQGJvI5w"/>
@@ -2434,20 +2431,6 @@ UNK.  If the code is something other than SNOMED, @nullFlavor SHOULD be OTH and 
       <memberEnd href=".controlled/consol-documents.uml#_vrOKwPK3EeGFUPBL8qS7yQ"/>
       <memberEnd href="#_vrOKxPK3EeGFUPBL8qS7yQ"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_lDoZoPK6EeGFUPBL8qS7yQ">
-      <ownedEnd xmi:id="_lDoZofK6EeGFUPBL8qS7yQ" association="_lDoZoPK6EeGFUPBL8qS7yQ">
-        <type xmi:type="uml:Class" href=".controlled/consol-documents.uml#_UAm-YD-NEeGvOdejHZ7dYg"/>
-      </ownedEnd>
-      <memberEnd href=".controlled/consol-documents.uml#_lDnLgfK6EeGFUPBL8qS7yQ"/>
-      <memberEnd href="#_lDoZofK6EeGFUPBL8qS7yQ"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_QXvj8PK7EeGFUPBL8qS7yQ">
-      <ownedEnd xmi:id="_QXvj8fK7EeGFUPBL8qS7yQ" association="_QXvj8PK7EeGFUPBL8qS7yQ">
-        <type xmi:type="uml:Class" href=".controlled/consol-documents.uml#_PyCO0PK7EeGFUPBL8qS7yQ"/>
-      </ownedEnd>
-      <memberEnd href=".controlled/consol-documents.uml#_QXu84PK7EeGFUPBL8qS7yQ"/>
-      <memberEnd href="#_QXvj8fK7EeGFUPBL8qS7yQ"/>
-    </packagedElement>
     <packagedElement xmi:type="uml:Association" href=".controlled/consol-documents.uml#_hvpq8PK7EeGFUPBL8qS7yQ"/>
     <packagedElement xmi:type="uml:Association" xmi:id="_6k9XoPK7EeGFUPBL8qS7yQ">
       <ownedEnd xmi:id="_6k9-sPK7EeGFUPBL8qS7yQ" association="_6k9XoPK7EeGFUPBL8qS7yQ">
@@ -3567,11 +3550,6 @@ UNK.  If the code is something other than SNOMED, @nullFlavor SHOULD be OTH and 
     <ruleId>CONF:9006</ruleId>
     <base_Association href=".controlled/consol-medications.uml#_ooc9QEX9EeG6e5lG0YsSyQ"/>
   </CDA:AssociationValidation>
-  <CDA:AssociationValidation xmi:id="_HNDt4EhVEeGoJ-JrsiBorA">
-    <ruleId>CONF:7459</ruleId>
-    <ruleId>CONF:9331</ruleId>
-    <base_Association href=".controlled/consol-medications.uml#_ikMTkEhUEeGoJ-JrsiBorA"/>
-  </CDA:AssociationValidation>
   <CDA:AssociationValidation xmi:id="_1MN5gEUxEeGAh_iQGJvI5w">
     <ruleId>CONF:8410</ruleId>
     <base_Association href=".controlled/consol-dicom.uml#_0kSW0UUxEeGAh_iQGJvI5w"/>
@@ -4584,10 +4562,6 @@ UNK.  If the code is something other than SNOMED, @nullFlavor SHOULD be OTH and 
   </CDA:ConstraintValidation>
   <CDA:AssociationValidation xmi:id="_w0HsgPK3EeGFUPBL8qS7yQ" base_Association="_vrOKw_K3EeGFUPBL8qS7yQ">
     <ruleId>CONF:10917</ruleId>
-  </CDA:AssociationValidation>
-  <CDA:AssociationValidation xmi:id="_EEKScPK7EeGFUPBL8qS7yQ" base_Association="_lDoZoPK6EeGFUPBL8qS7yQ"/>
-  <CDA:AssociationValidation xmi:id="_V80WEPK7EeGFUPBL8qS7yQ" base_Association="_QXvj8PK7EeGFUPBL8qS7yQ">
-    <ruleId>CONF:8508</ruleId>
   </CDA:AssociationValidation>
   <CDA:AssociationValidation xmi:id="_-kHU0PK7EeGFUPBL8qS7yQ" base_Association="_6k9XoPK7EeGFUPBL8qS7yQ">
     <ruleId>CONF:14911</ruleId>

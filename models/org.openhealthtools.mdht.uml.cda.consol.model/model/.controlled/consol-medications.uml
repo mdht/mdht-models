@@ -383,6 +383,14 @@ Medication timing is complex. This template requires that there be a substanceAd
     <ruleId>CONF:16086</ruleId>
   </CDA:AssociationValidation>
   <uml:Class xmi:id="_DpoGkBUUEeG6PvUxSTZnaw" name="MedicationDispense">
+    <ownedRule xmi:id="_M6fUoDsiEeKK96MV1iYPgQ" name="containsMedicationOrImmunization" constrainedElement="_iZPioB7lEeGEaLkc3UAsAg">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_M6fUoTsiEeKK96MV1iYPgQ">
+        <language>Analysis</language>
+        <language>OCL</language>
+        <body>supply act SHALL contain one product/Medication Information or one product/Immunization Medication Information template</body>
+        <body>self.product.manufacturedProduct.oclIsTypeOf(consol::MedicationInformation) xor self.product.manufacturedProduct.oclIsTypeOf(consol::ImmunizationMedicationInformation)</body>
+      </specification>
+    </ownedRule>
     <generalization xmi:id="_DpoGkRUUEeG6PvUxSTZnaw">
       <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_3gL0sEbuEd6besF9iFIJkQ"/>
     </generalization>
@@ -435,32 +443,9 @@ Medication timing is complex. This template requires that there be a substanceAd
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_IQt9EkIwEeG4bZAl2IGXmQ"/>
       <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_KwFJMEruEd6FXKclYGEDCw"/>
     </ownedAttribute>
-    <ownedAttribute xmi:id="_ikLsgEhUEeGoJ-JrsiBorA" name="product" type="_cJ5wsEhUEeGoJ-JrsiBorA" association="_ikMTkEhUEeGoJ-JrsiBorA">
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Y8xJUNg-EeGHOoVvEzXcpg" value="1"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Y8xJUdg-EeGHOoVvEzXcpg" value="1"/>
-    </ownedAttribute>
     <ownedAttribute xmi:id="_vTfZoOATEeGlGcipF_0y2A" name="performer" type="_VvuEcOATEeGlGcipF_0y2A" association="_vTgnwOATEeGlGcipF_0y2A">
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_vTfZoeATEeGlGcipF_0y2A"/>
     </ownedAttribute>
-    <nestedClassifier xmi:type="uml:Class" xmi:id="_cJ5wsEhUEeGoJ-JrsiBorA" name="Product">
-      <ownedComment xmi:id="_Z1CVoEhVEeGoJ-JrsiBorA">
-        <body>NOTE:  We do not follow the exact constraints in the guide, we are following up to change the verbage from the confusing MAY have product to a SHALL have product</body>
-      </ownedComment>
-      <ownedComment xmi:id="_oo5ykEhVEeGoJ-JrsiBorA">
-        <body>INLINE</body>
-      </ownedComment>
-      <ownedRule xmi:id="_cJ5wsUhUEeGoJ-JrsiBorA" name="containsMedicationOrImmunization" constrainedElement="_iZPioB7lEeGEaLkc3UAsAg">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_cJ5wskhUEeGoJ-JrsiBorA">
-          <language>Analysis</language>
-          <language>OCL</language>
-          <body>supply act SHALL contain one product/Medication Information or one product/Immunization Medication Information template</body>
-          <body>self.manufacturedProduct.oclIsTypeOf(consol::MedicationInformation) xor self.manufacturedProduct.oclIsTypeOf(consol::ImmunizationMedicationInformation)</body>
-        </specification>
-      </ownedRule>
-      <generalization xmi:id="_cJ5ws0hUEeGoJ-JrsiBorA">
-        <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_UCUw8EcaEd6besF9iFIJkQ"/>
-      </generalization>
-    </nestedClassifier>
     <nestedClassifier xmi:type="uml:Class" xmi:id="_VvuEcOATEeGlGcipF_0y2A" name="Performer">
       <ownedComment xmi:id="_qjToIOATEeGlGcipF_0y2A">
         <body>INLINE</body>
@@ -1011,6 +996,14 @@ The UDI should be sent in the participantRole/id.</body>
         <body>self.effectiveTime->size() = 1 implies self.effectiveTime.oclAsType(datatypes::IVL_TS)->forAll(high->size() = 1)</body>
       </specification>
     </ownedRule>
+    <ownedRule xmi:id="_tJNe4DsiEeKK96MV1iYPgQ" name="containsMedicationOrImmunization" constrainedElement="_iZPioB7lEeGEaLkc3UAsAg">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_tJNe4TsiEeKK96MV1iYPgQ">
+        <language>Analysis</language>
+        <language>OCL</language>
+        <body>supply act SHALL contain one product/Medication Information or one product/Immunization Medication Information template</body>
+        <body>self.product.manufacturedProduct.oclIsTypeOf(consol::MedicationInformation) xor self.product.manufacturedProduct.oclIsTypeOf(consol::ImmunizationMedicationInformation)</body>
+      </specification>
+    </ownedRule>
     <generalization xmi:id="_j3aTQRrTEeGo461UQq-B1g">
       <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_3gL0sEbuEd6besF9iFIJkQ"/>
     </generalization>
@@ -1060,10 +1053,6 @@ The UDI should be sent in the participantRole/id.</body>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_no1zkSRBEeG4DdjGPr5_Vg" value="1"/>
       <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_x1NnEErtEd6FXKclYGEDCw"/>
     </ownedAttribute>
-    <ownedAttribute xmi:id="__4pJYBrTEeGo461UQq-B1g" name="product" type="_UIaqgEgoEeGdscQrYjYKFw" association="__4pwcRrTEeGo461UQq-B1g">
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_btu1ENg-EeGHOoVvEzXcpg" value="1"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_btu1Edg-EeGHOoVvEzXcpg" value="1"/>
-    </ownedAttribute>
     <ownedAttribute xmi:id="_IxCtcBrUEeGo461UQq-B1g" name="author" association="_IxDUgBrUEeGo461UQq-B1g">
       <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_ChEisEcEEd6besF9iFIJkQ"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_IxCtcRrUEeGo461UQq-B1g"/>
@@ -1072,29 +1061,7 @@ The UDI should be sent in the participantRole/id.</body>
       <type xmi:type="uml:Class" href="consol-other.uml#_2G8h9RSVEeGGzu7fmW9pXw"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_PrLOABrUEeGo461UQq-B1g"/>
     </ownedAttribute>
-    <nestedClassifier xmi:type="uml:Class" xmi:id="_UIaqgEgoEeGdscQrYjYKFw" name="Product">
-      <ownedComment xmi:id="_XmMfgEhVEeGoJ-JrsiBorA">
-        <body>NOTE:  We do not follow the exact constraints in the guide, we are following up to change the verbage from the confusing MAY have product to a SHALL have product</body>
-      </ownedComment>
-      <ownedComment xmi:id="_rsSrEEhVEeGoJ-JrsiBorA">
-        <body>INLINE</body>
-      </ownedComment>
-      <ownedRule xmi:id="_pvZ9UELTEeGo1o5_NrjDhQ" name="containsMedicationOrImmunization" constrainedElement="_iZPioB7lEeGEaLkc3UAsAg">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_1GULMELTEeGo1o5_NrjDhQ">
-          <language>Analysis</language>
-          <language>OCL</language>
-          <body>supply act SHALL contain one product/Medication Information or one product/Immunization Medication Information template</body>
-          <body>self.manufacturedProduct.oclIsTypeOf(consol::MedicationInformation) xor self.manufacturedProduct.oclIsTypeOf(consol::ImmunizationMedicationInformation)</body>
-        </specification>
-      </ownedRule>
-      <generalization xmi:id="_c7HPMEgoEeGdscQrYjYKFw">
-        <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_UCUw8EcaEd6besF9iFIJkQ"/>
-      </generalization>
-    </nestedClassifier>
   </uml:Class>
-  <uml:Association xmi:id="__4pwcRrTEeGo461UQq-B1g" memberEnd="__4pJYBrTEeGo461UQq-B1g __4pwchrTEeGo461UQq-B1g">
-    <ownedEnd xmi:id="__4pwchrTEeGo461UQq-B1g" type="_j3aTQBrTEeGo461UQq-B1g" association="__4pwcRrTEeGo461UQq-B1g"/>
-  </uml:Association>
   <uml:Association xmi:id="_IxDUgBrUEeGo461UQq-B1g" memberEnd="_IxCtcBrUEeGo461UQq-B1g _IxDUgRrUEeGo461UQq-B1g">
     <ownedEnd xmi:id="_IxDUgRrUEeGo461UQq-B1g" type="_j3aTQBrTEeGo461UQq-B1g" association="_IxDUgBrUEeGo461UQq-B1g"/>
   </uml:Association>
@@ -1123,10 +1090,6 @@ The UDI should be sent in the participantRole/id.</body>
   <CDA:PropertyValidation xmi:id="_0eFKkBrTEeGo461UQq-B1g" base_Property="_z3ymoBrTEeGo461UQq-B1g">
     <ruleId>CONF:7430</ruleId>
   </CDA:PropertyValidation>
-  <CDA:AssociationValidation xmi:id="_BEWukBrUEeGo461UQq-B1g" base_Association="__4pwcRrTEeGo461UQq-B1g">
-    <ruleId>CONF:7439</ruleId>
-    <ruleId>CONF:9334</ruleId>
-  </CDA:AssociationValidation>
   <CDA:AssociationValidation xmi:id="_MwV0kBrUEeGo461UQq-B1g" severity="INFO" base_Association="_IxDUgBrUEeGo461UQq-B1g">
     <ruleId>CONF:7438</ruleId>
   </CDA:AssociationValidation>
@@ -1349,11 +1312,6 @@ The UDI should be sent in the participantRole/id.</body>
   <CDA:PropertyValidation xmi:id="_I_lOMEIwEeG4bZAl2IGXmQ" severity="WARNING" base_Property="_IQt9EEIwEeG4bZAl2IGXmQ">
     <ruleId>CONF:7458</ruleId>
   </CDA:PropertyValidation>
-  <CDA:ConstraintValidation xmi:id="_1l1YwELTEeGo1o5_NrjDhQ" base_Constraint="_pvZ9UELTEeGo1o5_NrjDhQ">
-    <ruleId>CONF:16093</ruleId>
-    <ruleId>CONF:16094</ruleId>
-    <ruleId>CONF:16870</ruleId>
-  </CDA:ConstraintValidation>
   <CDA:ConstraintValidation xmi:id="_Dl9JoEa7EeG7gbamepbPeA" severity="WARNING" base_Constraint="_uejSEEa6EeG7gbamepbPeA">
     <ruleId>CONF:16867</ruleId>
   </CDA:ConstraintValidation>
@@ -1372,14 +1330,6 @@ The UDI should be sent in the participantRole/id.</body>
     </ownedEnd>
     <memberEnd href="consol-immunizations.uml#_ooahAEX9EeG6e5lG0YsSyQ"/>
     <memberEnd href="#_oodkUEX9EeG6e5lG0YsSyQ"/>
-  </uml:Association>
-  <CDA:ConstraintValidation xmi:id="_S8AoUEhVEeGoJ-JrsiBorA" base_Constraint="_cJ5wsUhUEeGoJ-JrsiBorA">
-    <ruleId>CONF:15607</ruleId>
-    <ruleId>CONF:15608</ruleId>
-    <ruleId>CONF:9333</ruleId>
-  </CDA:ConstraintValidation>
-  <uml:Association xmi:id="_ikMTkEhUEeGoJ-JrsiBorA" memberEnd="_ikLsgEhUEeGoJ-JrsiBorA _ikMTkUhUEeGoJ-JrsiBorA">
-    <ownedEnd xmi:id="_ikMTkUhUEeGoJ-JrsiBorA" type="_DpoGkBUUEeG6PvUxSTZnaw" association="_ikMTkEhUEeGoJ-JrsiBorA"/>
   </uml:Association>
   <CDA:TextValue xmi:id="_FqrhEFmsEeGRqYkwoeymcA" base_Property="_CrfzIFmsEeGRqYkwoeymcA">
     <ruleId>CONF:8154</ruleId>
@@ -1445,4 +1395,14 @@ The UDI should be sent in the participantRole/id.</body>
   <CDA:PropertyValidation xmi:id="_3kdjEOYuEeGINOJ_SD9_dA" base_Property="_OJAbcUFGEeGorO80f-Cppg">
     <ruleId>CONF:15518</ruleId>
   </CDA:PropertyValidation>
+  <CDA:ConstraintValidation xmi:id="_M6f7sDsiEeKK96MV1iYPgQ" base_Constraint="_M6fUoDsiEeKK96MV1iYPgQ">
+    <ruleId>CONF:15607</ruleId>
+    <ruleId>CONF:15608</ruleId>
+    <ruleId>CONF:9333</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_tJOF8DsiEeKK96MV1iYPgQ" base_Constraint="_tJNe4DsiEeKK96MV1iYPgQ">
+    <ruleId>CONF:16093</ruleId>
+    <ruleId>CONF:16094</ruleId>
+    <ruleId>CONF:16870</ruleId>
+  </CDA:ConstraintValidation>
 </xmi:XMI>

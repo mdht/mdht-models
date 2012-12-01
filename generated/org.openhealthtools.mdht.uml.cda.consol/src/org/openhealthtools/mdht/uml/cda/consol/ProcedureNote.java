@@ -24,14 +24,12 @@ import org.openhealthtools.mdht.emf.runtime.util.Initializer;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getProcedureNote()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='ProcedureNoteTemplateId ProcedureNoteHasAnAssementAndPlanSectionOrIndividualAssementAndPlanSections ProcedureNoteDoesNotHaveIndividualAssementAndPlanSectionsWhenAssementAndPlanSectionPresent ProcedureNoteDoesNotHaveChiefComplaintAndReasonForVisitWithChiefComplaintSectionOrReasonSection ProcedureNoteSectionTitles ProcedureNoteCode ProcedureNoteCodeP ProcedureNoteComplicationsSection ProcedureNotePostprocedureDiagnosisSection ProcedureNoteProcedureDescriptionSection ProcedureNoteProcedureIndicationsSection ProcedureNoteDocumentationOf ProcedureNoteComponentOfEncompassingEncounter5LocationHealthCareFacilityId ProcedureNoteComponentOfEncompassingEncounter5LocationHealthCareFacility ProcedureNoteComponentOfEncompassingEncounter5EncounterParticipantTypeCode ProcedureNoteComponentOfEncompassingEncounter5Code ProcedureNoteComponentOfEncompassingEncounter5Location ProcedureNotePrimaryCarePhysicianAssociatedEntityClassCode ProcedureNotePrimaryCarePhysicianAssociatedEntityAssociatedPerson ProcedureNotePrimaryCarePhysicianFunctionCode ProcedureNotePrimaryCarePhysicianFunctionCodeP ProcedureNotePrimaryCarePhysicianTypeCode ProcedureNotePrimaryCarePhysicianAssociatedEntity ProcedureNoteDocumentationOfServiceEvent1PrimaryPerformerAssignedEntityCode ProcedureNoteDocumentationOfServiceEvent1PrimaryPerformerTypeCode ProcedureNoteDocumentationOfServiceEvent1PrimaryPerformerAssignedEntity ProcedureNoteDocumentationOfServiceEvent1ProcedureCodes ProcedureNoteDocumentationOfServiceEvent1EffectiveTimeHasLow ProcedureNoteDocumentationOfServiceEvent1EffectiveTimeHasHighWhenNoWidth ProcedureNoteDocumentationOfServiceEvent1EffectiveTimeNoHighIfWidth ProcedureNoteDocumentationOfServiceEvent1Code ProcedureNoteDocumentationOfServiceEvent1EffectiveTime ProcedureNoteDocumentationOfServiceEvent1PrimaryPerformer ProcedureNoteDocumentationOfServiceEvent1' templateId.root='2.16.840.1.113883.10.20.22.1.6' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' constraints.validation.dependOn.ProcedureNoteCode='ProcedureNoteCodeP' constraints.validation.warning='ProcedureNoteComponentOf ProcedureNoteComponentOfEncompassingEncounter5 ProcedureNoteDocumentationOfServiceEvent1PrimaryPerformerAssignedEntityCodeP' constraints.validation.info='ProcedureNotePrimaryCarePhysician ProcedureNoteAssessmentSection ProcedureNotePlanOfCareSection ProcedureNoteAssessmentAndPlanSection ProcedureNoteAllergiesSectionEntriesOptional ProcedureNoteAnesthesiaSection ProcedureNoteChiefComplaintSection ProcedureNoteChiefComplaintAndReasonForVisitSection ProcedureNoteFamilyHistorySection ProcedureNoteHistoryOfPastIllnessSection ProcedureNoteHistoryOfPresentIllnessSection ProcedureNoteMedicalHistorySection ProcedureNoteMedicationsSectionEntriesOptional ProcedureNoteMedicationsAdministeredSection ProcedureNotePhysicalExamSection ProcedureNotePlannedProcedureSection ProcedureNoteProcedureDispositionSection ProcedureNoteProcedureEstimatedBloodLossSection ProcedureNoteProcedureFindingsSection ProcedureNoteProcedureImplantsSection ProcedureNoteProcedureSpecimensTakenSection ProcedureNoteProceduresSectionEntriesOptional ProcedureNoteReasonForVisitSection ProcedureNoteReviewOfSystemsSection ProcedureNoteSocialHistorySection ProcedureNoteParticipant1 ProcedureNoteComponentOfEncompassingEncounter5EncounterParticipant' constraints.validation.query='ProcedureNoteComponentOfEncompassingEncounter5LocationHealthCareFacilityId ProcedureNoteComponentOfEncompassingEncounter5LocationHealthCareFacility ProcedureNoteComponentOfEncompassingEncounter5EncounterParticipantTypeCode ProcedureNoteComponentOfEncompassingEncounter5Code ProcedureNoteComponentOfEncompassingEncounter5Location ProcedureNoteComponentOfEncompassingEncounter5EncounterParticipant ProcedureNoteComponentOfEncompassingEncounter5 ProcedureNotePrimaryCarePhysicianAssociatedEntityClassCode ProcedureNotePrimaryCarePhysicianAssociatedEntityAssociatedPerson ProcedureNotePrimaryCarePhysicianFunctionCode ProcedureNotePrimaryCarePhysicianFunctionCodeP ProcedureNotePrimaryCarePhysicianTypeCode ProcedureNotePrimaryCarePhysicianAssociatedEntity ProcedureNoteDocumentationOfServiceEvent1PrimaryPerformerAssignedEntityCodeP ProcedureNoteDocumentationOfServiceEvent1PrimaryPerformerAssignedEntityCode ProcedureNoteDocumentationOfServiceEvent1PrimaryPerformerTypeCode ProcedureNoteDocumentationOfServiceEvent1PrimaryPerformerAssignedEntity ProcedureNoteDocumentationOfServiceEvent1ProcedureCodes ProcedureNoteDocumentationOfServiceEvent1EffectiveTimeHasLow ProcedureNoteDocumentationOfServiceEvent1EffectiveTimeHasHighWhenNoWidth ProcedureNoteDocumentationOfServiceEvent1EffectiveTimeNoHighIfWidth ProcedureNoteDocumentationOfServiceEvent1Code ProcedureNoteDocumentationOfServiceEvent1EffectiveTime ProcedureNoteDocumentationOfServiceEvent1PrimaryPerformer ProcedureNoteDocumentationOfServiceEvent1' constraints.validation.dependOn.ProcedureNoteDocumentationOfServiceEvent1PrimaryPerformerAssignedEntityCode='ProcedureNoteDocumentationOfServiceEvent1PrimaryPerformerAssignedEntityCodeP'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='ProcedureNoteTemplateId ProcedureNoteHasAnAssementAndPlanSectionOrIndividualAssementAndPlanSections ProcedureNoteDoesNotHaveIndividualAssementAndPlanSectionsWhenAssementAndPlanSectionPresent ProcedureNoteDoesNotHaveChiefComplaintAndReasonForVisitWithChiefComplaintSectionOrReasonSection ProcedureNoteSectionTitles ProcedureNoteCode ProcedureNoteCodeP ProcedureNoteComplicationsSection ProcedureNotePostprocedureDiagnosisSection ProcedureNoteProcedureDescriptionSection ProcedureNoteProcedureIndicationsSection ProcedureNoteDocumentationOf ProcedureNoteComponentOfEncompassingEncounter5LocationHealthCareFacilityId ProcedureNoteComponentOfEncompassingEncounter5LocationHealthCareFacility ProcedureNoteComponentOfEncompassingEncounter5EncounterParticipantTypeCode ProcedureNoteComponentOfEncompassingEncounter5Code ProcedureNoteComponentOfEncompassingEncounter5Location ProcedureNoteDocumentationOfServiceEvent1PrimaryPerformerAssignedEntityCode ProcedureNoteDocumentationOfServiceEvent1PrimaryPerformerTypeCode ProcedureNoteDocumentationOfServiceEvent1PrimaryPerformerAssignedEntity ProcedureNoteDocumentationOfServiceEvent1ProcedureCodes ProcedureNoteDocumentationOfServiceEvent1EffectiveTimeHasLow ProcedureNoteDocumentationOfServiceEvent1EffectiveTimeHasHighWhenNoWidth ProcedureNoteDocumentationOfServiceEvent1EffectiveTimeNoHighIfWidth ProcedureNoteDocumentationOfServiceEvent1Code ProcedureNoteDocumentationOfServiceEvent1EffectiveTime ProcedureNoteDocumentationOfServiceEvent1PrimaryPerformer ProcedureNoteDocumentationOfServiceEvent1' templateId.root='2.16.840.1.113883.10.20.22.1.6' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' constraints.validation.dependOn.ProcedureNoteCode='ProcedureNoteCodeP' constraints.validation.warning='ProcedureNoteComponentOf ProcedureNoteComponentOfEncompassingEncounter5 ProcedureNoteDocumentationOfServiceEvent1PrimaryPerformerAssignedEntityCodeP' constraints.validation.info='ProcedureNoteAssessmentSection ProcedureNotePlanOfCareSection ProcedureNoteAssessmentAndPlanSection ProcedureNoteAllergiesSectionEntriesOptional ProcedureNoteAnesthesiaSection ProcedureNoteChiefComplaintSection ProcedureNoteChiefComplaintAndReasonForVisitSection ProcedureNoteFamilyHistorySection ProcedureNoteHistoryOfPastIllnessSection ProcedureNoteHistoryOfPresentIllnessSection ProcedureNoteMedicalHistorySection ProcedureNoteMedicationsSectionEntriesOptional ProcedureNoteMedicationsAdministeredSection ProcedureNotePhysicalExamSection ProcedureNotePlannedProcedureSection ProcedureNoteProcedureDispositionSection ProcedureNoteProcedureEstimatedBloodLossSection ProcedureNoteProcedureFindingsSection ProcedureNoteProcedureImplantsSection ProcedureNoteProcedureSpecimensTakenSection ProcedureNoteProceduresSectionEntriesOptional ProcedureNoteReasonForVisitSection ProcedureNoteReviewOfSystemsSection ProcedureNoteSocialHistorySection ProcedureNoteParticipant1 ProcedureNoteComponentOfEncompassingEncounter5EncounterParticipant' constraints.validation.query='ProcedureNoteComponentOfEncompassingEncounter5LocationHealthCareFacilityId ProcedureNoteComponentOfEncompassingEncounter5LocationHealthCareFacility ProcedureNoteComponentOfEncompassingEncounter5EncounterParticipantTypeCode ProcedureNoteComponentOfEncompassingEncounter5Code ProcedureNoteComponentOfEncompassingEncounter5Location ProcedureNoteComponentOfEncompassingEncounter5EncounterParticipant ProcedureNoteComponentOfEncompassingEncounter5 ProcedureNoteDocumentationOfServiceEvent1PrimaryPerformerAssignedEntityCodeP ProcedureNoteDocumentationOfServiceEvent1PrimaryPerformerAssignedEntityCode ProcedureNoteDocumentationOfServiceEvent1PrimaryPerformerTypeCode ProcedureNoteDocumentationOfServiceEvent1PrimaryPerformerAssignedEntity ProcedureNoteDocumentationOfServiceEvent1ProcedureCodes ProcedureNoteDocumentationOfServiceEvent1EffectiveTimeHasLow ProcedureNoteDocumentationOfServiceEvent1EffectiveTimeHasHighWhenNoWidth ProcedureNoteDocumentationOfServiceEvent1EffectiveTimeNoHighIfWidth ProcedureNoteDocumentationOfServiceEvent1Code ProcedureNoteDocumentationOfServiceEvent1EffectiveTime ProcedureNoteDocumentationOfServiceEvent1PrimaryPerformer ProcedureNoteDocumentationOfServiceEvent1' constraints.validation.dependOn.ProcedureNoteDocumentationOfServiceEvent1PrimaryPerformerAssignedEntityCode='ProcedureNoteDocumentationOfServiceEvent1PrimaryPerformerAssignedEntityCodeP'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolProcedureNoteComponentOf constraints.validation.warning='ComponentOfEncompassingEncounter5'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolProcedureNoteComponentOfEncompassingEncounter5 constraints.validation.error='EncompassingEncounter5Code EncompassingEncounter5Location' constraints.validation.info='EncompassingEncounter5EncounterParticipant'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolProcedureNoteComponentOfEncompassingEncounter5Location constraints.validation.error='LocationHealthCareFacility'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolProcedureNoteComponentOfEncompassingEncounter5LocationHealthCareFacility constraints.validation.error='HealthCareFacilityId'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolProcedureNoteComponentOfEncompassingEncounter5EncounterParticipant typeCode='REF' constraints.validation.error='EncounterParticipantTypeCode'"
- *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolProcedureNotePrimaryCarePhysician functionCode.code='PCP' functionCode.codeSystem='2.16.840.1.113883.5.88' functionCode.codeSystemName='ParticipationFunction' functionCode.displayName='Primary Care Physician' constraints.validation.error='PrimaryCarePhysicianFunctionCode PrimaryCarePhysicianFunctionCodeP PrimaryCarePhysicianTypeCode PrimaryCarePhysicianAssociatedEntity' typeCode='IND'"
- *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolProcedureNotePrimaryCarePhysicianAssociatedEntity classCode='PROV' constraints.validation.error='AssociatedEntityClassCode AssociatedEntityAssociatedPerson'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolProcedureNoteDocumentationOf constraints.validation.error='DocumentationOfServiceEvent1'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolProcedureNoteDocumentationOfServiceEvent1 constraints.validation.error='ServiceEvent1ProcedureCodes ServiceEvent1EffectiveTimeHasLow ServiceEvent1EffectiveTimeHasHighWhenNoWidth ServiceEvent1EffectiveTimeNoHighIfWidth ServiceEvent1Code ServiceEvent1EffectiveTime ServiceEvent1PrimaryPerformer ServiceEvent1PrimaryPerformerAssignedEntityCode ServiceEvent1PrimaryPerformerTypeCode ServiceEvent1PrimaryPerformerAssignedEntity' constraints.validation.warning='ServiceEvent1PrimaryPerformerAssignedEntityCodeP' constraints.validation.query='ServiceEvent1PrimaryPerformerAssignedEntityCodeP ServiceEvent1PrimaryPerformerAssignedEntityCode ServiceEvent1PrimaryPerformerTypeCode ServiceEvent1PrimaryPerformerAssignedEntity' constraints.validation.dependOn.ServiceEvent1PrimaryPerformerAssignedEntityCode='ServiceEvent1PrimaryPerformerAssignedEntityCodeP'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolProcedureNoteDocumentationOfServiceEvent1PrimaryPerformer typeCode='PPRF' constraints.validation.error='PrimaryPerformerTypeCode PrimaryPerformerAssignedEntity'"
@@ -147,19 +145,6 @@ public interface ProcedureNote extends GeneralHeaderConstraints {
 	 * @generated
 	 */
 	boolean validateProcedureNoteComponentOf(DiagnosticChain diagnostics, Map<Object, Object> context);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.participant->select(participant : cda::Participant1 | not participant.oclIsUndefined() and participant.oclIsKindOf(cda::Participant1))->select(typeCode=vocab::ParticipationType::IND)->notEmpty()
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.participant->select(participant : cda::Participant1 | not participant.oclIsUndefined() and participant.oclIsKindOf(cda::Participant1))->select(typeCode=vocab::ParticipationType::IND)->notEmpty()'"
-	 * @generated
-	 */
-	boolean validateProcedureNotePrimaryCarePhysician(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -652,91 +637,6 @@ public interface ProcedureNote extends GeneralHeaderConstraints {
 	 * @generated
 	 */
 	boolean validateProcedureNoteComponentOfEncompassingEncounter5(DiagnosticChain diagnostics,
-			Map<Object, Object> context);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.participant->excluding(null)->select(typeCode=vocab::ParticipationType::IND).associatedEntity->excluding(null)->reject(classCode=vocab::RoleClassAssociative::PROV)
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.participant->excluding(null)->select(typeCode=vocab::ParticipationType::IND).associatedEntity->excluding(null)->reject(classCode=vocab::RoleClassAssociative::PROV)'"
-	 * @generated
-	 */
-	boolean validateProcedureNotePrimaryCarePhysicianAssociatedEntityClassCode(DiagnosticChain diagnostics,
-			Map<Object, Object> context);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.participant->excluding(null)->select(typeCode=vocab::ParticipationType::IND).associatedEntity->excluding(null)->reject(associatedPerson->one(associatedPerson : cda::Person | not associatedPerson.oclIsUndefined() and associatedPerson.oclIsKindOf(rim::Entity)))
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.participant->excluding(null)->select(typeCode=vocab::ParticipationType::IND).associatedEntity->excluding(null)->reject(associatedPerson->one(associatedPerson : cda::Person | not associatedPerson.oclIsUndefined() and associatedPerson.oclIsKindOf(rim::Entity)))'"
-	 * @generated
-	 */
-	boolean validateProcedureNotePrimaryCarePhysicianAssociatedEntityAssociatedPerson(DiagnosticChain diagnostics,
-			Map<Object, Object> context);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.participant->excluding(null)->select(typeCode=vocab::ParticipationType::IND)->reject((functionCode.oclIsUndefined() or functionCode.isNullFlavorUndefined()) implies (not functionCode.oclIsUndefined() and functionCode.oclIsKindOf(datatypes::CE) and 
-	 * let value : datatypes::CE = functionCode.oclAsType(datatypes::CE) in 
-	 * value.code = 'PCP' and value.codeSystem = '2.16.840.1.113883.5.88'))
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.participant->excluding(null)->select(typeCode=vocab::ParticipationType::IND)->reject((functionCode.oclIsUndefined() or functionCode.isNullFlavorUndefined()) implies (not functionCode.oclIsUndefined() and functionCode.oclIsKindOf(datatypes::CE) and \r\nlet value : datatypes::CE = functionCode.oclAsType(datatypes::CE) in \r\nvalue.code = \'PCP\' and value.codeSystem = \'2.16.840.1.113883.5.88\'))'"
-	 * @generated
-	 */
-	boolean validateProcedureNotePrimaryCarePhysicianFunctionCode(DiagnosticChain diagnostics,
-			Map<Object, Object> context);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.participant->excluding(null)->select(typeCode=vocab::ParticipationType::IND)->reject((functionCode.oclIsUndefined() or functionCode.isNullFlavorUndefined()) implies (not functionCode.oclIsUndefined()))
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.participant->excluding(null)->select(typeCode=vocab::ParticipationType::IND)->reject((functionCode.oclIsUndefined() or functionCode.isNullFlavorUndefined()) implies (not functionCode.oclIsUndefined()))'"
-	 * @generated
-	 */
-	boolean validateProcedureNotePrimaryCarePhysicianFunctionCodeP(DiagnosticChain diagnostics,
-			Map<Object, Object> context);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.participant->excluding(null)->select(typeCode=vocab::ParticipationType::IND)->reject(typeCode=vocab::ParticipationType::IND)
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.participant->excluding(null)->select(typeCode=vocab::ParticipationType::IND)->reject(typeCode=vocab::ParticipationType::IND)'"
-	 * @generated
-	 */
-	boolean validateProcedureNotePrimaryCarePhysicianTypeCode(DiagnosticChain diagnostics, Map<Object, Object> context);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.participant->excluding(null)->select(typeCode=vocab::ParticipationType::IND)->reject(associatedEntity->one(associatedEntity : cda::AssociatedEntity | not associatedEntity.oclIsUndefined() and associatedEntity.oclIsKindOf(cda::AssociatedEntity)))
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.participant->excluding(null)->select(typeCode=vocab::ParticipationType::IND)->reject(associatedEntity->one(associatedEntity : cda::AssociatedEntity | not associatedEntity.oclIsUndefined() and associatedEntity.oclIsKindOf(cda::AssociatedEntity)))'"
-	 * @generated
-	 */
-	boolean validateProcedureNotePrimaryCarePhysicianAssociatedEntity(DiagnosticChain diagnostics,
 			Map<Object, Object> context);
 
 	/**
