@@ -10,6 +10,9 @@
     <packageImport xmi:id="_q3SeUD49EeKUq_Bmx5Topg">
       <importedPackage href="../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__yVbeUDcEd6xYZuu1VKCVw"/>
     </packageImport>
+    <packageImport xmi:id="_FEFdMD5QEeKUq_Bmx5Topg">
+      <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#_0"/>
+    </packageImport>
     <packagedElement xmi:type="uml:Class" href=".controlled/consol-documents.uml#_2DNRcBSVEeGGzu7fmW9pXw"/>
     <packagedElement xmi:type="uml:Association" href=".controlled/consol-documents.uml#_2DzuYRSVEeGGzu7fmW9pXw"/>
     <packagedElement xmi:type="uml:Association" href=".controlled/consol-documents.uml#_2D0VcBSVEeGGzu7fmW9pXw"/>
