@@ -6,7 +6,6 @@
  */
 package org.openhealthtools.mdht.uml.cda.consol.impl;
 
-import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
@@ -63,8 +62,7 @@ public class MedicationUseNoneKnownImpl extends ObservationImpl implements Medic
 	 */
 	public boolean validateMedicationUseNoneKnownTextReferenceValue(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return MedicationUseNoneKnownOperations.validateMedicationUseNoneKnownTextReferenceValue(
-			this, diagnostics, context);
+		return MedicationUseNoneKnownOperations.validateMedicationUseNoneKnownTextReferenceValue(this, diagnostics, context);
 	}
 
 	/**
@@ -181,16 +179,16 @@ public class MedicationUseNoneKnownImpl extends ObservationImpl implements Medic
 	 * @generated
 	 */
 	public MedicationUseNoneKnown init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public MedicationUseNoneKnown init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // MedicationUseNoneKnownImpl

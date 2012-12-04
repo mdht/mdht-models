@@ -10,7 +10,6 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.consol.impl;
 
-import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
@@ -65,8 +64,7 @@ public class MedicationActivityImpl extends SubstanceAdministrationImpl implemen
 	 */
 	public boolean validateMedicationActivityDoseQuantityorrateQuantity(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return MedicationActivityOperations.validateMedicationActivityDoseQuantityorrateQuantity(
-			this, diagnostics, context);
+		return MedicationActivityOperations.validateMedicationActivityDoseQuantityorrateQuantity(this, diagnostics, context);
 	}
 
 	/**
@@ -169,8 +167,7 @@ public class MedicationActivityImpl extends SubstanceAdministrationImpl implemen
 	 */
 	public boolean validateMedicationActivityInstructionsInversionInd(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return MedicationActivityOperations.validateMedicationActivityInstructionsInversionInd(
-			this, diagnostics, context);
+		return MedicationActivityOperations.validateMedicationActivityInstructionsInversionInd(this, diagnostics, context);
 	}
 
 	/**
@@ -180,8 +177,7 @@ public class MedicationActivityImpl extends SubstanceAdministrationImpl implemen
 	 */
 	public boolean validateMedicationActivityPreconditionSubstanceAdmTypeCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return MedicationActivityOperations.validateMedicationActivityPreconditionSubstanceAdmTypeCode(
-			this, diagnostics, context);
+		return MedicationActivityOperations.validateMedicationActivityPreconditionSubstanceAdmTypeCode(this, diagnostics, context);
 	}
 
 	/**
@@ -365,8 +361,7 @@ public class MedicationActivityImpl extends SubstanceAdministrationImpl implemen
 	 */
 	public boolean validateMedicationActivityConsumableMedicationInformation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return MedicationActivityOperations.validateMedicationActivityConsumableMedicationInformation(
-			this, diagnostics, context);
+		return MedicationActivityOperations.validateMedicationActivityConsumableMedicationInformation(this, diagnostics, context);
 	}
 
 	/**
@@ -483,16 +478,16 @@ public class MedicationActivityImpl extends SubstanceAdministrationImpl implemen
 	 * @generated
 	 */
 	public MedicationActivity init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	   * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public MedicationActivity init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // MedicationActivityImpl

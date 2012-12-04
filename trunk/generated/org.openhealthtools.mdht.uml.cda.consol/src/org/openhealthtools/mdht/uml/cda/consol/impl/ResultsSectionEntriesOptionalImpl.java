@@ -10,7 +10,6 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.consol.impl;
 
-import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
@@ -60,8 +59,7 @@ public class ResultsSectionEntriesOptionalImpl extends SectionImpl implements Re
 	 */
 	public boolean validateResultsSectionEntriesOptionalTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ResultsSectionEntriesOptionalOperations.validateResultsSectionEntriesOptionalTemplateId(
-			this, diagnostics, context);
+		return ResultsSectionEntriesOptionalOperations.validateResultsSectionEntriesOptionalTemplateId(this, diagnostics, context);
 	}
 
 	/**
@@ -70,8 +68,7 @@ public class ResultsSectionEntriesOptionalImpl extends SectionImpl implements Re
 	 * @generated
 	 */
 	public boolean validateResultsSectionEntriesOptionalCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ResultsSectionEntriesOptionalOperations.validateResultsSectionEntriesOptionalCode(
-			this, diagnostics, context);
+		return ResultsSectionEntriesOptionalOperations.validateResultsSectionEntriesOptionalCode(this, diagnostics, context);
 	}
 
 	/**
@@ -80,8 +77,7 @@ public class ResultsSectionEntriesOptionalImpl extends SectionImpl implements Re
 	 * @generated
 	 */
 	public boolean validateResultsSectionEntriesOptionalCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ResultsSectionEntriesOptionalOperations.validateResultsSectionEntriesOptionalCodeP(
-			this, diagnostics, context);
+		return ResultsSectionEntriesOptionalOperations.validateResultsSectionEntriesOptionalCodeP(this, diagnostics, context);
 	}
 
 	/**
@@ -90,8 +86,7 @@ public class ResultsSectionEntriesOptionalImpl extends SectionImpl implements Re
 	 * @generated
 	 */
 	public boolean validateResultsSectionEntriesOptionalTitle(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ResultsSectionEntriesOptionalOperations.validateResultsSectionEntriesOptionalTitle(
-			this, diagnostics, context);
+		return ResultsSectionEntriesOptionalOperations.validateResultsSectionEntriesOptionalTitle(this, diagnostics, context);
 	}
 
 	/**
@@ -100,8 +95,7 @@ public class ResultsSectionEntriesOptionalImpl extends SectionImpl implements Re
 	 * @generated
 	 */
 	public boolean validateResultsSectionEntriesOptionalText(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ResultsSectionEntriesOptionalOperations.validateResultsSectionEntriesOptionalText(
-			this, diagnostics, context);
+		return ResultsSectionEntriesOptionalOperations.validateResultsSectionEntriesOptionalText(this, diagnostics, context);
 	}
 
 	/**
@@ -111,8 +105,7 @@ public class ResultsSectionEntriesOptionalImpl extends SectionImpl implements Re
 	 */
 	public boolean validateResultsSectionEntriesOptionalResultOrganizer(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ResultsSectionEntriesOptionalOperations.validateResultsSectionEntriesOptionalResultOrganizer(
-			this, diagnostics, context);
+		return ResultsSectionEntriesOptionalOperations.validateResultsSectionEntriesOptionalResultOrganizer(this, diagnostics, context);
 	}
 
 	/**
@@ -130,16 +123,16 @@ public class ResultsSectionEntriesOptionalImpl extends SectionImpl implements Re
 	 * @generated
 	 */
 	public ResultsSectionEntriesOptional init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	   * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public ResultsSectionEntriesOptional init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // ResultsSectionEntriesOptionalImpl

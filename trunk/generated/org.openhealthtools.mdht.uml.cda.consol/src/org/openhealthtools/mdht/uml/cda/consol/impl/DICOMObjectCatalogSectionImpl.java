@@ -10,7 +10,6 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.consol.impl;
 
-import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
@@ -59,8 +58,7 @@ public class DICOMObjectCatalogSectionImpl extends SectionImpl implements DICOMO
 	 * @generated
 	 */
 	public boolean validateDICOMObjectCatalogSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return DICOMObjectCatalogSectionOperations.validateDICOMObjectCatalogSectionTemplateId(
-			this, diagnostics, context);
+		return DICOMObjectCatalogSectionOperations.validateDICOMObjectCatalogSectionTemplateId(this, diagnostics, context);
 	}
 
 	/**
@@ -105,16 +103,16 @@ public class DICOMObjectCatalogSectionImpl extends SectionImpl implements DICOMO
 	 * @generated
 	 */
 	public DICOMObjectCatalogSection init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	   * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public DICOMObjectCatalogSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // DICOMObjectCatalogSectionImpl

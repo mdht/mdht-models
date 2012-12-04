@@ -10,7 +10,6 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.consol.impl;
 
-import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
@@ -67,8 +66,7 @@ public class GeneralHeaderConstraintsImpl extends ClinicalDocumentImpl implement
 	 */
 	public boolean validateGeneralHeaderConstraintsTypeIdExtension(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsTypeIdExtension(
-			this, diagnostics, context);
+		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsTypeIdExtension(this, diagnostics, context);
 	}
 
 	/**
@@ -78,8 +76,7 @@ public class GeneralHeaderConstraintsImpl extends ClinicalDocumentImpl implement
 	 */
 	public boolean validateGeneralHeaderConstraintsSetIdVersionNumber(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsSetIdVersionNumber(
-			this, diagnostics, context);
+		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsSetIdVersionNumber(this, diagnostics, context);
 	}
 
 	/**
@@ -89,8 +86,7 @@ public class GeneralHeaderConstraintsImpl extends ClinicalDocumentImpl implement
 	 */
 	public boolean validateGeneralHeaderConstraintsVersionNumberSetId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsVersionNumberSetId(
-			this, diagnostics, context);
+		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsVersionNumberSetId(this, diagnostics, context);
 	}
 
 	/**
@@ -154,8 +150,7 @@ public class GeneralHeaderConstraintsImpl extends ClinicalDocumentImpl implement
 	 */
 	public boolean validateGeneralHeaderConstraintsEffectiveTime(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsEffectiveTime(
-			this, diagnostics, context);
+		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsEffectiveTime(this, diagnostics, context);
 	}
 
 	/**
@@ -165,8 +160,7 @@ public class GeneralHeaderConstraintsImpl extends ClinicalDocumentImpl implement
 	 */
 	public boolean validateGeneralHeaderConstraintsConfidentialityCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsConfidentialityCode(
-			this, diagnostics, context);
+		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsConfidentialityCode(this, diagnostics, context);
 	}
 
 	/**
@@ -175,8 +169,7 @@ public class GeneralHeaderConstraintsImpl extends ClinicalDocumentImpl implement
 	 * @generated
 	 */
 	public boolean validateGeneralHeaderConstraintsLanguageCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsLanguageCode(
-			this, diagnostics, context);
+		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsLanguageCode(this, diagnostics, context);
 	}
 
 	/**
@@ -195,8 +188,7 @@ public class GeneralHeaderConstraintsImpl extends ClinicalDocumentImpl implement
 	 */
 	public boolean validateGeneralHeaderConstraintsVersionNumber(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsVersionNumber(
-			this, diagnostics, context);
+		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsVersionNumber(this, diagnostics, context);
 	}
 
 	/**
@@ -214,8 +206,7 @@ public class GeneralHeaderConstraintsImpl extends ClinicalDocumentImpl implement
 	 * @generated
 	 */
 	public boolean validateGeneralHeaderConstraintsDataEnterer(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsDataEnterer(
-			this, diagnostics, context);
+		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsDataEnterer(this, diagnostics, context);
 	}
 
 	/**
@@ -234,8 +225,7 @@ public class GeneralHeaderConstraintsImpl extends ClinicalDocumentImpl implement
 	 */
 	public boolean validateGeneralHeaderConstraintsInformationRecipient(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsInformationRecipient(
-			this, diagnostics, context);
+		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsInformationRecipient(this, diagnostics, context);
 	}
 
 	/**
@@ -245,8 +235,7 @@ public class GeneralHeaderConstraintsImpl extends ClinicalDocumentImpl implement
 	 */
 	public boolean validateGeneralHeaderConstraintsLegalAuthenticator(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsLegalAuthenticator(
-			this, diagnostics, context);
+		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsLegalAuthenticator(this, diagnostics, context);
 	}
 
 	/**
@@ -256,8 +245,7 @@ public class GeneralHeaderConstraintsImpl extends ClinicalDocumentImpl implement
 	 */
 	public boolean validateGeneralHeaderConstraintsAuthenticator(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsAuthenticator(
-			this, diagnostics, context);
+		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsAuthenticator(this, diagnostics, context);
 	}
 
 	/**
@@ -266,8 +254,7 @@ public class GeneralHeaderConstraintsImpl extends ClinicalDocumentImpl implement
 	 * @generated
 	 */
 	public boolean validateGeneralHeaderConstraintsRecordTarget(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsRecordTarget(
-			this, diagnostics, context);
+		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsRecordTarget(this, diagnostics, context);
 	}
 
 	/**
@@ -276,8 +263,7 @@ public class GeneralHeaderConstraintsImpl extends ClinicalDocumentImpl implement
 	 * @generated
 	 */
 	public boolean validateGeneralHeaderConstraintsComponentOf(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsComponentOf(
-			this, diagnostics, context);
+		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsComponentOf(this, diagnostics, context);
 	}
 
 	/**
@@ -296,8 +282,7 @@ public class GeneralHeaderConstraintsImpl extends ClinicalDocumentImpl implement
 	 */
 	public boolean validateGeneralHeaderConstraintsSupportParticipant(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsSupportParticipant(
-			this, diagnostics, context);
+		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsSupportParticipant(this, diagnostics, context);
 	}
 
 	/**
@@ -307,8 +292,7 @@ public class GeneralHeaderConstraintsImpl extends ClinicalDocumentImpl implement
 	 */
 	public boolean validateGeneralHeaderConstraintsInFulfillmentOf(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsInFulfillmentOf(
-			this, diagnostics, context);
+		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsInFulfillmentOf(this, diagnostics, context);
 	}
 
 	/**
@@ -318,8 +302,7 @@ public class GeneralHeaderConstraintsImpl extends ClinicalDocumentImpl implement
 	 */
 	public boolean validateGeneralHeaderConstraintsDocumentationOf(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsDocumentationOf(
-			this, diagnostics, context);
+		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsDocumentationOf(this, diagnostics, context);
 	}
 
 	/**
@@ -329,8 +312,7 @@ public class GeneralHeaderConstraintsImpl extends ClinicalDocumentImpl implement
 	 */
 	public boolean validateGeneralHeaderConstraintsAuthorization(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsAuthorization(
-			this, diagnostics, context);
+		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsAuthorization(this, diagnostics, context);
 	}
 
 	/**
@@ -340,8 +322,7 @@ public class GeneralHeaderConstraintsImpl extends ClinicalDocumentImpl implement
 	 */
 	public boolean validateGeneralHeaderConstraintsRecordTargetPatientRoleUSRealmAddressStreet(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsRecordTargetPatientRoleUSRealmAddressStreet(
-			this, diagnostics, context);
+		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsRecordTargetPatientRoleUSRealmAddressStreet(this, diagnostics, context);
 	}
 
 	/**
@@ -351,8 +332,7 @@ public class GeneralHeaderConstraintsImpl extends ClinicalDocumentImpl implement
 	 */
 	public boolean validateGeneralHeaderConstraintsRecordTargetPatientRoleUSRealmAddressCity(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsRecordTargetPatientRoleUSRealmAddressCity(
-			this, diagnostics, context);
+		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsRecordTargetPatientRoleUSRealmAddressCity(this, diagnostics, context);
 	}
 
 	/**
@@ -362,8 +342,7 @@ public class GeneralHeaderConstraintsImpl extends ClinicalDocumentImpl implement
 	 */
 	public boolean validateGeneralHeaderConstraintsRecordTargetPatientRoleUSRealmAddressCountry(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsRecordTargetPatientRoleUSRealmAddressCountry(
-			this, diagnostics, context);
+		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsRecordTargetPatientRoleUSRealmAddressCountry(this, diagnostics, context);
 	}
 
 	/**
@@ -373,8 +352,7 @@ public class GeneralHeaderConstraintsImpl extends ClinicalDocumentImpl implement
 	 */
 	public boolean validateGeneralHeaderConstraintsRecordTargetPatientRoleUSRealmAddressPostalCode(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsRecordTargetPatientRoleUSRealmAddressPostalCode(
-			this, diagnostics, context);
+		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsRecordTargetPatientRoleUSRealmAddressPostalCode(this, diagnostics, context);
 	}
 
 	/**
@@ -384,8 +362,7 @@ public class GeneralHeaderConstraintsImpl extends ClinicalDocumentImpl implement
 	 */
 	public boolean validateGeneralHeaderConstraintsRecordTargetPatientRoleUSRealmAddressState(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsRecordTargetPatientRoleUSRealmAddressState(
-			this, diagnostics, context);
+		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsRecordTargetPatientRoleUSRealmAddressState(this, diagnostics, context);
 	}
 
 	/**
@@ -395,8 +372,7 @@ public class GeneralHeaderConstraintsImpl extends ClinicalDocumentImpl implement
 	 */
 	public boolean validateGeneralHeaderConstraintsRecordTargetPatientRoleUSRealmAddressStreetAddressLine(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsRecordTargetPatientRoleUSRealmAddressStreetAddressLine(
-			this, diagnostics, context);
+		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsRecordTargetPatientRoleUSRealmAddressStreetAddressLine(this, diagnostics, context);
 	}
 
 	/**
@@ -406,8 +382,7 @@ public class GeneralHeaderConstraintsImpl extends ClinicalDocumentImpl implement
 	 */
 	public boolean validateGeneralHeaderConstraintsRecordTargetPatientRoleUSRealmAddressUseP(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsRecordTargetPatientRoleUSRealmAddressUseP(
-			this, diagnostics, context);
+		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsRecordTargetPatientRoleUSRealmAddressUseP(this, diagnostics, context);
 	}
 
 	/**
@@ -417,8 +392,7 @@ public class GeneralHeaderConstraintsImpl extends ClinicalDocumentImpl implement
 	 */
 	public boolean validateGeneralHeaderConstraintsRecordTargetPatientRoleUSRealmAddressUse(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsRecordTargetPatientRoleUSRealmAddressUse(
-			this, diagnostics, context);
+		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsRecordTargetPatientRoleUSRealmAddressUse(this, diagnostics, context);
 	}
 
 	/**
@@ -428,8 +402,7 @@ public class GeneralHeaderConstraintsImpl extends ClinicalDocumentImpl implement
 	 */
 	public boolean validateGeneralHeaderConstraintsRecordTargetPatientRoleTELUse(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsRecordTargetPatientRoleTELUse(
-			this, diagnostics, context);
+		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsRecordTargetPatientRoleTELUse(this, diagnostics, context);
 	}
 
 	/**
@@ -439,8 +412,7 @@ public class GeneralHeaderConstraintsImpl extends ClinicalDocumentImpl implement
 	 */
 	public boolean validateGeneralHeaderConstraintsRecordTargetPatientRolePatientUSRealmPatientNameMixedContent(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsRecordTargetPatientRolePatientUSRealmPatientNameMixedContent(
-			this, diagnostics, context);
+		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsRecordTargetPatientRolePatientUSRealmPatientNameMixedContent(this, diagnostics, context);
 	}
 
 	/**
@@ -450,8 +422,7 @@ public class GeneralHeaderConstraintsImpl extends ClinicalDocumentImpl implement
 	 */
 	public boolean validateGeneralHeaderConstraintsRecordTargetPatientRolePatientUSRealmPatientNameFamily(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsRecordTargetPatientRolePatientUSRealmPatientNameFamily(
-			this, diagnostics, context);
+		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsRecordTargetPatientRolePatientUSRealmPatientNameFamily(this, diagnostics, context);
 	}
 
 	/**
@@ -461,8 +432,7 @@ public class GeneralHeaderConstraintsImpl extends ClinicalDocumentImpl implement
 	 */
 	public boolean validateGeneralHeaderConstraintsRecordTargetPatientRolePatientUSRealmPatientNameGiven(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsRecordTargetPatientRolePatientUSRealmPatientNameGiven(
-			this, diagnostics, context);
+		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsRecordTargetPatientRolePatientUSRealmPatientNameGiven(this, diagnostics, context);
 	}
 
 	/**
@@ -472,8 +442,7 @@ public class GeneralHeaderConstraintsImpl extends ClinicalDocumentImpl implement
 	 */
 	public boolean validateGeneralHeaderConstraintsRecordTargetPatientRolePatientUSRealmPatientNamePrefix(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsRecordTargetPatientRolePatientUSRealmPatientNamePrefix(
-			this, diagnostics, context);
+		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsRecordTargetPatientRolePatientUSRealmPatientNamePrefix(this, diagnostics, context);
 	}
 
 	/**
@@ -483,8 +452,7 @@ public class GeneralHeaderConstraintsImpl extends ClinicalDocumentImpl implement
 	 */
 	public boolean validateGeneralHeaderConstraintsRecordTargetPatientRolePatientUSRealmPatientNameSuffix(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsRecordTargetPatientRolePatientUSRealmPatientNameSuffix(
-			this, diagnostics, context);
+		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsRecordTargetPatientRolePatientUSRealmPatientNameSuffix(this, diagnostics, context);
 	}
 
 	/**
@@ -494,8 +462,7 @@ public class GeneralHeaderConstraintsImpl extends ClinicalDocumentImpl implement
 	 */
 	public boolean validateGeneralHeaderConstraintsRecordTargetPatientRolePatientUSRealmPatientNameUseP(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsRecordTargetPatientRolePatientUSRealmPatientNameUseP(
-			this, diagnostics, context);
+		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsRecordTargetPatientRolePatientUSRealmPatientNameUseP(this, diagnostics, context);
 	}
 
 	/**
@@ -505,8 +472,7 @@ public class GeneralHeaderConstraintsImpl extends ClinicalDocumentImpl implement
 	 */
 	public boolean validateGeneralHeaderConstraintsRecordTargetPatientRolePatientUSRealmPatientNameUse(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsRecordTargetPatientRolePatientUSRealmPatientNameUse(
-			this, diagnostics, context);
+		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsRecordTargetPatientRolePatientUSRealmPatientNameUse(this, diagnostics, context);
 	}
 
 	/**
@@ -516,8 +482,7 @@ public class GeneralHeaderConstraintsImpl extends ClinicalDocumentImpl implement
 	 */
 	public boolean validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianUSRealmAddressStreet(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianUSRealmAddressStreet(
-			this, diagnostics, context);
+		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianUSRealmAddressStreet(this, diagnostics, context);
 	}
 
 	/**
@@ -527,8 +492,7 @@ public class GeneralHeaderConstraintsImpl extends ClinicalDocumentImpl implement
 	 */
 	public boolean validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianUSRealmAddressCity(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianUSRealmAddressCity(
-			this, diagnostics, context);
+		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianUSRealmAddressCity(this, diagnostics, context);
 	}
 
 	/**
@@ -538,8 +502,7 @@ public class GeneralHeaderConstraintsImpl extends ClinicalDocumentImpl implement
 	 */
 	public boolean validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianUSRealmAddressCountry(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianUSRealmAddressCountry(
-			this, diagnostics, context);
+		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianUSRealmAddressCountry(this, diagnostics, context);
 	}
 
 	/**
@@ -549,8 +512,7 @@ public class GeneralHeaderConstraintsImpl extends ClinicalDocumentImpl implement
 	 */
 	public boolean validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianUSRealmAddressPostalCode(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianUSRealmAddressPostalCode(
-			this, diagnostics, context);
+		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianUSRealmAddressPostalCode(this, diagnostics, context);
 	}
 
 	/**
@@ -560,8 +522,7 @@ public class GeneralHeaderConstraintsImpl extends ClinicalDocumentImpl implement
 	 */
 	public boolean validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianUSRealmAddressState(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianUSRealmAddressState(
-			this, diagnostics, context);
+		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianUSRealmAddressState(this, diagnostics, context);
 	}
 
 	/**
@@ -571,8 +532,7 @@ public class GeneralHeaderConstraintsImpl extends ClinicalDocumentImpl implement
 	 */
 	public boolean validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianUSRealmAddressStreetAddressLine(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianUSRealmAddressStreetAddressLine(
-			this, diagnostics, context);
+		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianUSRealmAddressStreetAddressLine(this, diagnostics, context);
 	}
 
 	/**
@@ -582,8 +542,7 @@ public class GeneralHeaderConstraintsImpl extends ClinicalDocumentImpl implement
 	 */
 	public boolean validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianUSRealmAddressUseP(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianUSRealmAddressUseP(
-			this, diagnostics, context);
+		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianUSRealmAddressUseP(this, diagnostics, context);
 	}
 
 	/**
@@ -593,8 +552,7 @@ public class GeneralHeaderConstraintsImpl extends ClinicalDocumentImpl implement
 	 */
 	public boolean validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianUSRealmAddressUse(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianUSRealmAddressUse(
-			this, diagnostics, context);
+		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianUSRealmAddressUse(this, diagnostics, context);
 	}
 
 	/**
@@ -604,8 +562,7 @@ public class GeneralHeaderConstraintsImpl extends ClinicalDocumentImpl implement
 	 */
 	public boolean validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianTELUse(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianTELUse(
-			this, diagnostics, context);
+		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianTELUse(this, diagnostics, context);
 	}
 
 	/**
@@ -615,8 +572,7 @@ public class GeneralHeaderConstraintsImpl extends ClinicalDocumentImpl implement
 	 */
 	public boolean validateGeneralHeaderConstraintsAuthorAssignedAuthorAuthoringDeviceManufacturerModelName(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsAuthorAssignedAuthorAuthoringDeviceManufacturerModelName(
-			this, diagnostics, context);
+		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsAuthorAssignedAuthorAuthoringDeviceManufacturerModelName(this, diagnostics, context);
 	}
 
 	/**
@@ -626,8 +582,7 @@ public class GeneralHeaderConstraintsImpl extends ClinicalDocumentImpl implement
 	 */
 	public boolean validateGeneralHeaderConstraintsAuthorAssignedAuthorAuthoringDeviceSoftwareName(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsAuthorAssignedAuthorAuthoringDeviceSoftwareName(
-			this, diagnostics, context);
+		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsAuthorAssignedAuthorAuthoringDeviceSoftwareName(this, diagnostics, context);
 	}
 
 	/**
@@ -637,8 +592,7 @@ public class GeneralHeaderConstraintsImpl extends ClinicalDocumentImpl implement
 	 */
 	public boolean validateGeneralHeaderConstraintsAuthorAssignedAuthorPersonName(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsAuthorAssignedAuthorPersonName(
-			this, diagnostics, context);
+		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsAuthorAssignedAuthorPersonName(this, diagnostics, context);
 	}
 
 	/**
@@ -648,8 +602,7 @@ public class GeneralHeaderConstraintsImpl extends ClinicalDocumentImpl implement
 	 */
 	public boolean validateGeneralHeaderConstraintsAuthorAssignedAuthorHasAssignedPersonOrAssignedAuthoringDevice(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsAuthorAssignedAuthorHasAssignedPersonOrAssignedAuthoringDevice(
-			this, diagnostics, context);
+		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsAuthorAssignedAuthorHasAssignedPersonOrAssignedAuthoringDevice(this, diagnostics, context);
 	}
 
 	/**
@@ -659,8 +612,7 @@ public class GeneralHeaderConstraintsImpl extends ClinicalDocumentImpl implement
 	 */
 	public boolean validateGeneralHeaderConstraintsAuthorAssignedAuthorHasNationalProviderIdentifier(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsAuthorAssignedAuthorHasNationalProviderIdentifier(
-			this, diagnostics, context);
+		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsAuthorAssignedAuthorHasNationalProviderIdentifier(this, diagnostics, context);
 	}
 
 	/**
@@ -670,8 +622,7 @@ public class GeneralHeaderConstraintsImpl extends ClinicalDocumentImpl implement
 	 */
 	public boolean validateGeneralHeaderConstraintsAuthorAssignedAuthorAddr(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsAuthorAssignedAuthorAddr(
-			this, diagnostics, context);
+		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsAuthorAssignedAuthorAddr(this, diagnostics, context);
 	}
 
 	/**
@@ -681,8 +632,7 @@ public class GeneralHeaderConstraintsImpl extends ClinicalDocumentImpl implement
 	 */
 	public boolean validateGeneralHeaderConstraintsAuthorAssignedAuthorCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsAuthorAssignedAuthorCode(
-			this, diagnostics, context);
+		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsAuthorAssignedAuthorCode(this, diagnostics, context);
 	}
 
 	/**
@@ -692,8 +642,7 @@ public class GeneralHeaderConstraintsImpl extends ClinicalDocumentImpl implement
 	 */
 	public boolean validateGeneralHeaderConstraintsAuthorAssignedAuthorCodeP(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsAuthorAssignedAuthorCodeP(
-			this, diagnostics, context);
+		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsAuthorAssignedAuthorCodeP(this, diagnostics, context);
 	}
 
 	/**
@@ -703,8 +652,7 @@ public class GeneralHeaderConstraintsImpl extends ClinicalDocumentImpl implement
 	 */
 	public boolean validateGeneralHeaderConstraintsAuthorAssignedAuthorId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsAuthorAssignedAuthorId(
-			this, diagnostics, context);
+		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsAuthorAssignedAuthorId(this, diagnostics, context);
 	}
 
 	/**
@@ -714,8 +662,7 @@ public class GeneralHeaderConstraintsImpl extends ClinicalDocumentImpl implement
 	 */
 	public boolean validateGeneralHeaderConstraintsAuthorAssignedAuthorTelecom(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsAuthorAssignedAuthorTelecom(
-			this, diagnostics, context);
+		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsAuthorAssignedAuthorTelecom(this, diagnostics, context);
 	}
 
 	/**
@@ -725,8 +672,7 @@ public class GeneralHeaderConstraintsImpl extends ClinicalDocumentImpl implement
 	 */
 	public boolean validateGeneralHeaderConstraintsAuthorAssignedAuthorAssignedAuthoringDevice(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsAuthorAssignedAuthorAssignedAuthoringDevice(
-			this, diagnostics, context);
+		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsAuthorAssignedAuthorAssignedAuthoringDevice(this, diagnostics, context);
 	}
 
 	/**
@@ -736,8 +682,7 @@ public class GeneralHeaderConstraintsImpl extends ClinicalDocumentImpl implement
 	 */
 	public boolean validateGeneralHeaderConstraintsAuthorAssignedAuthorAssignedPerson(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsAuthorAssignedAuthorAssignedPerson(
-			this, diagnostics, context);
+		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsAuthorAssignedAuthorAssignedPerson(this, diagnostics, context);
 	}
 
 	/**
@@ -756,8 +701,7 @@ public class GeneralHeaderConstraintsImpl extends ClinicalDocumentImpl implement
 	 */
 	public boolean validateGeneralHeaderConstraintsAuthorAssignedAuthor(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsAuthorAssignedAuthor(
-			this, diagnostics, context);
+		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsAuthorAssignedAuthor(this, diagnostics, context);
 	}
 
 	/**
@@ -767,8 +711,7 @@ public class GeneralHeaderConstraintsImpl extends ClinicalDocumentImpl implement
 	 */
 	public boolean validateGeneralHeaderConstraintsDataEntererAssignedEntityUSRealmAddressStreet(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsDataEntererAssignedEntityUSRealmAddressStreet(
-			this, diagnostics, context);
+		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsDataEntererAssignedEntityUSRealmAddressStreet(this, diagnostics, context);
 	}
 
 	/**
@@ -778,8 +721,7 @@ public class GeneralHeaderConstraintsImpl extends ClinicalDocumentImpl implement
 	 */
 	public boolean validateGeneralHeaderConstraintsDataEntererAssignedEntityUSRealmAddressCity(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsDataEntererAssignedEntityUSRealmAddressCity(
-			this, diagnostics, context);
+		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsDataEntererAssignedEntityUSRealmAddressCity(this, diagnostics, context);
 	}
 
 	/**
@@ -789,8 +731,7 @@ public class GeneralHeaderConstraintsImpl extends ClinicalDocumentImpl implement
 	 */
 	public boolean validateGeneralHeaderConstraintsDataEntererAssignedEntityUSRealmAddressCountry(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsDataEntererAssignedEntityUSRealmAddressCountry(
-			this, diagnostics, context);
+		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsDataEntererAssignedEntityUSRealmAddressCountry(this, diagnostics, context);
 	}
 
 	/**
@@ -800,8 +741,7 @@ public class GeneralHeaderConstraintsImpl extends ClinicalDocumentImpl implement
 	 */
 	public boolean validateGeneralHeaderConstraintsDataEntererAssignedEntityUSRealmAddressPostalCode(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsDataEntererAssignedEntityUSRealmAddressPostalCode(
-			this, diagnostics, context);
+		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsDataEntererAssignedEntityUSRealmAddressPostalCode(this, diagnostics, context);
 	}
 
 	/**
@@ -811,8 +751,7 @@ public class GeneralHeaderConstraintsImpl extends ClinicalDocumentImpl implement
 	 */
 	public boolean validateGeneralHeaderConstraintsDataEntererAssignedEntityUSRealmAddressState(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsDataEntererAssignedEntityUSRealmAddressState(
-			this, diagnostics, context);
+		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsDataEntererAssignedEntityUSRealmAddressState(this, diagnostics, context);
 	}
 
 	/**
@@ -822,8 +761,7 @@ public class GeneralHeaderConstraintsImpl extends ClinicalDocumentImpl implement
 	 */
 	public boolean validateGeneralHeaderConstraintsDataEntererAssignedEntityUSRealmAddressStreetAddressLine(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsDataEntererAssignedEntityUSRealmAddressStreetAddressLine(
-			this, diagnostics, context);
+		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsDataEntererAssignedEntityUSRealmAddressStreetAddressLine(this, diagnostics, context);
 	}
 
 	/**
@@ -833,8 +771,7 @@ public class GeneralHeaderConstraintsImpl extends ClinicalDocumentImpl implement
 	 */
 	public boolean validateGeneralHeaderConstraintsDataEntererAssignedEntityUSRealmAddressUseP(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsDataEntererAssignedEntityUSRealmAddressUseP(
-			this, diagnostics, context);
+		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsDataEntererAssignedEntityUSRealmAddressUseP(this, diagnostics, context);
 	}
 
 	/**
@@ -844,8 +781,7 @@ public class GeneralHeaderConstraintsImpl extends ClinicalDocumentImpl implement
 	 */
 	public boolean validateGeneralHeaderConstraintsDataEntererAssignedEntityUSRealmAddressUse(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsDataEntererAssignedEntityUSRealmAddressUse(
-			this, diagnostics, context);
+		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsDataEntererAssignedEntityUSRealmAddressUse(this, diagnostics, context);
 	}
 
 	/**
@@ -855,8 +791,7 @@ public class GeneralHeaderConstraintsImpl extends ClinicalDocumentImpl implement
 	 */
 	public boolean validateGeneralHeaderConstraintsDataEntererAssignedEntityTELUse(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsDataEntererAssignedEntityTELUse(
-			this, diagnostics, context);
+		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsDataEntererAssignedEntityTELUse(this, diagnostics, context);
 	}
 
 	/**
@@ -866,8 +801,7 @@ public class GeneralHeaderConstraintsImpl extends ClinicalDocumentImpl implement
 	 */
 	public boolean validateGeneralHeaderConstraintsDataEntererAssignedEntityPersonName(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsDataEntererAssignedEntityPersonName(
-			this, diagnostics, context);
+		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsDataEntererAssignedEntityPersonName(this, diagnostics, context);
 	}
 
 	/**
@@ -877,8 +811,7 @@ public class GeneralHeaderConstraintsImpl extends ClinicalDocumentImpl implement
 	 */
 	public boolean validateGeneralHeaderConstraintsDataEntererAssignedEntityHasNationalProviderIdentifier(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsDataEntererAssignedEntityHasNationalProviderIdentifier(
-			this, diagnostics, context);
+		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsDataEntererAssignedEntityHasNationalProviderIdentifier(this, diagnostics, context);
 	}
 
 	/**
@@ -888,8 +821,7 @@ public class GeneralHeaderConstraintsImpl extends ClinicalDocumentImpl implement
 	 */
 	public boolean validateGeneralHeaderConstraintsDataEntererAssignedEntityAddr(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsDataEntererAssignedEntityAddr(
-			this, diagnostics, context);
+		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsDataEntererAssignedEntityAddr(this, diagnostics, context);
 	}
 
 	/**
@@ -899,8 +831,7 @@ public class GeneralHeaderConstraintsImpl extends ClinicalDocumentImpl implement
 	 */
 	public boolean validateGeneralHeaderConstraintsDataEntererAssignedEntityCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsDataEntererAssignedEntityCode(
-			this, diagnostics, context);
+		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsDataEntererAssignedEntityCode(this, diagnostics, context);
 	}
 
 	/**
@@ -910,8 +841,7 @@ public class GeneralHeaderConstraintsImpl extends ClinicalDocumentImpl implement
 	 */
 	public boolean validateGeneralHeaderConstraintsDataEntererAssignedEntityCodeP(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsDataEntererAssignedEntityCodeP(
-			this, diagnostics, context);
+		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsDataEntererAssignedEntityCodeP(this, diagnostics, context);
 	}
 
 	/**
@@ -921,8 +851,7 @@ public class GeneralHeaderConstraintsImpl extends ClinicalDocumentImpl implement
 	 */
 	public boolean validateGeneralHeaderConstraintsDataEntererAssignedEntityId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsDataEntererAssignedEntityId(
-			this, diagnostics, context);
+		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsDataEntererAssignedEntityId(this, diagnostics, context);
 	}
 
 	/**
@@ -932,8 +861,7 @@ public class GeneralHeaderConstraintsImpl extends ClinicalDocumentImpl implement
 	 */
 	public boolean validateGeneralHeaderConstraintsDataEntererAssignedEntityTelecom(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsDataEntererAssignedEntityTelecom(
-			this, diagnostics, context);
+		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsDataEntererAssignedEntityTelecom(this, diagnostics, context);
 	}
 
 	/**
@@ -943,8 +871,7 @@ public class GeneralHeaderConstraintsImpl extends ClinicalDocumentImpl implement
 	 */
 	public boolean validateGeneralHeaderConstraintsDataEntererAssignedEntityAssignedPerson(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsDataEntererAssignedEntityAssignedPerson(
-			this, diagnostics, context);
+		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsDataEntererAssignedEntityAssignedPerson(this, diagnostics, context);
 	}
 
 	/**
@@ -954,8 +881,7 @@ public class GeneralHeaderConstraintsImpl extends ClinicalDocumentImpl implement
 	 */
 	public boolean validateGeneralHeaderConstraintsDataEntererAssignedEntity(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsDataEntererAssignedEntity(
-			this, diagnostics, context);
+		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsDataEntererAssignedEntity(this, diagnostics, context);
 	}
 
 	/**
@@ -965,8 +891,7 @@ public class GeneralHeaderConstraintsImpl extends ClinicalDocumentImpl implement
 	 */
 	public boolean validateGeneralHeaderConstraintsCustodianAssignedCustodianCustodianOrganizationUSRealmAddressStreet(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsCustodianAssignedCustodianCustodianOrganizationUSRealmAddressStreet(
-			this, diagnostics, context);
+		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsCustodianAssignedCustodianCustodianOrganizationUSRealmAddressStreet(this, diagnostics, context);
 	}
 
 	/**
@@ -976,8 +901,7 @@ public class GeneralHeaderConstraintsImpl extends ClinicalDocumentImpl implement
 	 */
 	public boolean validateGeneralHeaderConstraintsCustodianAssignedCustodianCustodianOrganizationUSRealmAddressCity(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsCustodianAssignedCustodianCustodianOrganizationUSRealmAddressCity(
-			this, diagnostics, context);
+		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsCustodianAssignedCustodianCustodianOrganizationUSRealmAddressCity(this, diagnostics, context);
 	}
 
 	/**
@@ -987,8 +911,7 @@ public class GeneralHeaderConstraintsImpl extends ClinicalDocumentImpl implement
 	 */
 	public boolean validateGeneralHeaderConstraintsCustodianAssignedCustodianCustodianOrganizationUSRealmAddressCountry(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsCustodianAssignedCustodianCustodianOrganizationUSRealmAddressCountry(
-			this, diagnostics, context);
+		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsCustodianAssignedCustodianCustodianOrganizationUSRealmAddressCountry(this, diagnostics, context);
 	}
 
 	/**
@@ -998,8 +921,7 @@ public class GeneralHeaderConstraintsImpl extends ClinicalDocumentImpl implement
 	 */
 	public boolean validateGeneralHeaderConstraintsCustodianAssignedCustodianCustodianOrganizationUSRealmAddressPostalCode(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsCustodianAssignedCustodianCustodianOrganizationUSRealmAddressPostalCode(
-			this, diagnostics, context);
+		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsCustodianAssignedCustodianCustodianOrganizationUSRealmAddressPostalCode(this, diagnostics, context);
 	}
 
 	/**
@@ -1009,8 +931,7 @@ public class GeneralHeaderConstraintsImpl extends ClinicalDocumentImpl implement
 	 */
 	public boolean validateGeneralHeaderConstraintsCustodianAssignedCustodianCustodianOrganizationUSRealmAddressState(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsCustodianAssignedCustodianCustodianOrganizationUSRealmAddressState(
-			this, diagnostics, context);
+		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsCustodianAssignedCustodianCustodianOrganizationUSRealmAddressState(this, diagnostics, context);
 	}
 
 	/**
@@ -1020,8 +941,7 @@ public class GeneralHeaderConstraintsImpl extends ClinicalDocumentImpl implement
 	 */
 	public boolean validateGeneralHeaderConstraintsCustodianAssignedCustodianCustodianOrganizationUSRealmAddressStreetAddressLine(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsCustodianAssignedCustodianCustodianOrganizationUSRealmAddressStreetAddressLine(
-			this, diagnostics, context);
+		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsCustodianAssignedCustodianCustodianOrganizationUSRealmAddressStreetAddressLine(this, diagnostics, context);
 	}
 
 	/**
@@ -1031,8 +951,7 @@ public class GeneralHeaderConstraintsImpl extends ClinicalDocumentImpl implement
 	 */
 	public boolean validateGeneralHeaderConstraintsCustodianAssignedCustodianCustodianOrganizationUSRealmAddressUseP(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsCustodianAssignedCustodianCustodianOrganizationUSRealmAddressUseP(
-			this, diagnostics, context);
+		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsCustodianAssignedCustodianCustodianOrganizationUSRealmAddressUseP(this, diagnostics, context);
 	}
 
 	/**
@@ -1042,8 +961,7 @@ public class GeneralHeaderConstraintsImpl extends ClinicalDocumentImpl implement
 	 */
 	public boolean validateGeneralHeaderConstraintsCustodianAssignedCustodianCustodianOrganizationUSRealmAddressUse(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsCustodianAssignedCustodianCustodianOrganizationUSRealmAddressUse(
-			this, diagnostics, context);
+		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsCustodianAssignedCustodianCustodianOrganizationUSRealmAddressUse(this, diagnostics, context);
 	}
 
 	/**
@@ -1053,8 +971,7 @@ public class GeneralHeaderConstraintsImpl extends ClinicalDocumentImpl implement
 	 */
 	public boolean validateGeneralHeaderConstraintsCustodianAssignedCustodianCustodianOrganizationTELUse(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsCustodianAssignedCustodianCustodianOrganizationTELUse(
-			this, diagnostics, context);
+		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsCustodianAssignedCustodianCustodianOrganizationTELUse(this, diagnostics, context);
 	}
 
 	/**
@@ -1064,8 +981,7 @@ public class GeneralHeaderConstraintsImpl extends ClinicalDocumentImpl implement
 	 */
 	public boolean validateGeneralHeaderConstraintsCustodianAssignedCustodianCustodianOrganizationHasNationalProviderIdentifier(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsCustodianAssignedCustodianCustodianOrganizationHasNationalProviderIdentifier(
-			this, diagnostics, context);
+		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsCustodianAssignedCustodianCustodianOrganizationHasNationalProviderIdentifier(this, diagnostics, context);
 	}
 
 	/**
@@ -1075,8 +991,7 @@ public class GeneralHeaderConstraintsImpl extends ClinicalDocumentImpl implement
 	 */
 	public boolean validateGeneralHeaderConstraintsCustodianAssignedCustodianCustodianOrganizationAddr(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsCustodianAssignedCustodianCustodianOrganizationAddr(
-			this, diagnostics, context);
+		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsCustodianAssignedCustodianCustodianOrganizationAddr(this, diagnostics, context);
 	}
 
 	/**
@@ -1086,8 +1001,7 @@ public class GeneralHeaderConstraintsImpl extends ClinicalDocumentImpl implement
 	 */
 	public boolean validateGeneralHeaderConstraintsCustodianAssignedCustodianCustodianOrganizationId(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsCustodianAssignedCustodianCustodianOrganizationId(
-			this, diagnostics, context);
+		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsCustodianAssignedCustodianCustodianOrganizationId(this, diagnostics, context);
 	}
 
 	/**
@@ -1097,8 +1011,7 @@ public class GeneralHeaderConstraintsImpl extends ClinicalDocumentImpl implement
 	 */
 	public boolean validateGeneralHeaderConstraintsCustodianAssignedCustodianCustodianOrganizationName(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsCustodianAssignedCustodianCustodianOrganizationName(
-			this, diagnostics, context);
+		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsCustodianAssignedCustodianCustodianOrganizationName(this, diagnostics, context);
 	}
 
 	/**
@@ -1108,8 +1021,7 @@ public class GeneralHeaderConstraintsImpl extends ClinicalDocumentImpl implement
 	 */
 	public boolean validateGeneralHeaderConstraintsCustodianAssignedCustodianCustodianOrganizationTelecom(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsCustodianAssignedCustodianCustodianOrganizationTelecom(
-			this, diagnostics, context);
+		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsCustodianAssignedCustodianCustodianOrganizationTelecom(this, diagnostics, context);
 	}
 
 	/**
@@ -1119,8 +1031,7 @@ public class GeneralHeaderConstraintsImpl extends ClinicalDocumentImpl implement
 	 */
 	public boolean validateGeneralHeaderConstraintsCustodianAssignedCustodianRepresentedCustodianOrganization(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsCustodianAssignedCustodianRepresentedCustodianOrganization(
-			this, diagnostics, context);
+		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsCustodianAssignedCustodianRepresentedCustodianOrganization(this, diagnostics, context);
 	}
 
 	/**
@@ -1130,8 +1041,7 @@ public class GeneralHeaderConstraintsImpl extends ClinicalDocumentImpl implement
 	 */
 	public boolean validateGeneralHeaderConstraintsCustodianAssignedCustodian(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsCustodianAssignedCustodian(
-			this, diagnostics, context);
+		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsCustodianAssignedCustodian(this, diagnostics, context);
 	}
 
 	/**
@@ -1141,8 +1051,7 @@ public class GeneralHeaderConstraintsImpl extends ClinicalDocumentImpl implement
 	 */
 	public boolean validateGeneralHeaderConstraintsInformationRecipientIntendedRecipientOrganizationName(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsInformationRecipientIntendedRecipientOrganizationName(
-			this, diagnostics, context);
+		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsInformationRecipientIntendedRecipientOrganizationName(this, diagnostics, context);
 	}
 
 	/**
@@ -1152,8 +1061,7 @@ public class GeneralHeaderConstraintsImpl extends ClinicalDocumentImpl implement
 	 */
 	public boolean validateGeneralHeaderConstraintsInformationRecipientIntendedRecipientPersonName(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsInformationRecipientIntendedRecipientPersonName(
-			this, diagnostics, context);
+		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsInformationRecipientIntendedRecipientPersonName(this, diagnostics, context);
 	}
 
 	/**
@@ -1163,8 +1071,7 @@ public class GeneralHeaderConstraintsImpl extends ClinicalDocumentImpl implement
 	 */
 	public boolean validateGeneralHeaderConstraintsInformationRecipientIntendedRecipientInformationRecipient(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsInformationRecipientIntendedRecipientInformationRecipient(
-			this, diagnostics, context);
+		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsInformationRecipientIntendedRecipientInformationRecipient(this, diagnostics, context);
 	}
 
 	/**
@@ -1174,8 +1081,7 @@ public class GeneralHeaderConstraintsImpl extends ClinicalDocumentImpl implement
 	 */
 	public boolean validateGeneralHeaderConstraintsInformationRecipientIntendedRecipientRecievedOrganization(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsInformationRecipientIntendedRecipientRecievedOrganization(
-			this, diagnostics, context);
+		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsInformationRecipientIntendedRecipientRecievedOrganization(this, diagnostics, context);
 	}
 
 	/**
@@ -1185,8 +1091,7 @@ public class GeneralHeaderConstraintsImpl extends ClinicalDocumentImpl implement
 	 */
 	public boolean validateGeneralHeaderConstraintsInformationRecipientIntendedRecipient(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsInformationRecipientIntendedRecipient(
-			this, diagnostics, context);
+		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsInformationRecipientIntendedRecipient(this, diagnostics, context);
 	}
 
 	/**
@@ -1196,8 +1101,7 @@ public class GeneralHeaderConstraintsImpl extends ClinicalDocumentImpl implement
 	 */
 	public boolean validateGeneralHeaderConstraintsLegalAuthenticatorAssignedEntityUSRealmAddressStreet(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsLegalAuthenticatorAssignedEntityUSRealmAddressStreet(
-			this, diagnostics, context);
+		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsLegalAuthenticatorAssignedEntityUSRealmAddressStreet(this, diagnostics, context);
 	}
 
 	/**
@@ -1207,8 +1111,7 @@ public class GeneralHeaderConstraintsImpl extends ClinicalDocumentImpl implement
 	 */
 	public boolean validateGeneralHeaderConstraintsLegalAuthenticatorAssignedEntityUSRealmAddressCity(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsLegalAuthenticatorAssignedEntityUSRealmAddressCity(
-			this, diagnostics, context);
+		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsLegalAuthenticatorAssignedEntityUSRealmAddressCity(this, diagnostics, context);
 	}
 
 	/**
@@ -1218,8 +1121,7 @@ public class GeneralHeaderConstraintsImpl extends ClinicalDocumentImpl implement
 	 */
 	public boolean validateGeneralHeaderConstraintsLegalAuthenticatorAssignedEntityUSRealmAddressCountry(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsLegalAuthenticatorAssignedEntityUSRealmAddressCountry(
-			this, diagnostics, context);
+		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsLegalAuthenticatorAssignedEntityUSRealmAddressCountry(this, diagnostics, context);
 	}
 
 	/**
@@ -1229,8 +1131,7 @@ public class GeneralHeaderConstraintsImpl extends ClinicalDocumentImpl implement
 	 */
 	public boolean validateGeneralHeaderConstraintsLegalAuthenticatorAssignedEntityUSRealmAddressPostalCode(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsLegalAuthenticatorAssignedEntityUSRealmAddressPostalCode(
-			this, diagnostics, context);
+		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsLegalAuthenticatorAssignedEntityUSRealmAddressPostalCode(this, diagnostics, context);
 	}
 
 	/**
@@ -1240,8 +1141,7 @@ public class GeneralHeaderConstraintsImpl extends ClinicalDocumentImpl implement
 	 */
 	public boolean validateGeneralHeaderConstraintsLegalAuthenticatorAssignedEntityUSRealmAddressState(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsLegalAuthenticatorAssignedEntityUSRealmAddressState(
-			this, diagnostics, context);
+		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsLegalAuthenticatorAssignedEntityUSRealmAddressState(this, diagnostics, context);
 	}
 
 	/**
@@ -1251,8 +1151,7 @@ public class GeneralHeaderConstraintsImpl extends ClinicalDocumentImpl implement
 	 */
 	public boolean validateGeneralHeaderConstraintsLegalAuthenticatorAssignedEntityUSRealmAddressStreetAddressLine(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsLegalAuthenticatorAssignedEntityUSRealmAddressStreetAddressLine(
-			this, diagnostics, context);
+		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsLegalAuthenticatorAssignedEntityUSRealmAddressStreetAddressLine(this, diagnostics, context);
 	}
 
 	/**
@@ -1262,8 +1161,7 @@ public class GeneralHeaderConstraintsImpl extends ClinicalDocumentImpl implement
 	 */
 	public boolean validateGeneralHeaderConstraintsLegalAuthenticatorAssignedEntityUSRealmAddressUseP(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsLegalAuthenticatorAssignedEntityUSRealmAddressUseP(
-			this, diagnostics, context);
+		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsLegalAuthenticatorAssignedEntityUSRealmAddressUseP(this, diagnostics, context);
 	}
 
 	/**
@@ -1273,8 +1171,7 @@ public class GeneralHeaderConstraintsImpl extends ClinicalDocumentImpl implement
 	 */
 	public boolean validateGeneralHeaderConstraintsLegalAuthenticatorAssignedEntityUSRealmAddressUse(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsLegalAuthenticatorAssignedEntityUSRealmAddressUse(
-			this, diagnostics, context);
+		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsLegalAuthenticatorAssignedEntityUSRealmAddressUse(this, diagnostics, context);
 	}
 
 	/**
@@ -1284,8 +1181,7 @@ public class GeneralHeaderConstraintsImpl extends ClinicalDocumentImpl implement
 	 */
 	public boolean validateGeneralHeaderConstraintsLegalAuthenticatorAssignedEntityTELUse(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsLegalAuthenticatorAssignedEntityTELUse(
-			this, diagnostics, context);
+		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsLegalAuthenticatorAssignedEntityTELUse(this, diagnostics, context);
 	}
 
 	/**
@@ -1295,8 +1191,7 @@ public class GeneralHeaderConstraintsImpl extends ClinicalDocumentImpl implement
 	 */
 	public boolean validateGeneralHeaderConstraintsLegalAuthenticatorAssignedEntityPersonName(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsLegalAuthenticatorAssignedEntityPersonName(
-			this, diagnostics, context);
+		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsLegalAuthenticatorAssignedEntityPersonName(this, diagnostics, context);
 	}
 
 	/**
@@ -1306,8 +1201,7 @@ public class GeneralHeaderConstraintsImpl extends ClinicalDocumentImpl implement
 	 */
 	public boolean validateGeneralHeaderConstraintsLegalAuthenticatorAssignedEntityHasNationalProviderIdentifier(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsLegalAuthenticatorAssignedEntityHasNationalProviderIdentifier(
-			this, diagnostics, context);
+		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsLegalAuthenticatorAssignedEntityHasNationalProviderIdentifier(this, diagnostics, context);
 	}
 
 	/**
@@ -1317,8 +1211,7 @@ public class GeneralHeaderConstraintsImpl extends ClinicalDocumentImpl implement
 	 */
 	public boolean validateGeneralHeaderConstraintsLegalAuthenticatorAssignedEntityAddr(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsLegalAuthenticatorAssignedEntityAddr(
-			this, diagnostics, context);
+		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsLegalAuthenticatorAssignedEntityAddr(this, diagnostics, context);
 	}
 
 	/**
@@ -1328,8 +1221,7 @@ public class GeneralHeaderConstraintsImpl extends ClinicalDocumentImpl implement
 	 */
 	public boolean validateGeneralHeaderConstraintsLegalAuthenticatorAssignedEntityCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsLegalAuthenticatorAssignedEntityCode(
-			this, diagnostics, context);
+		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsLegalAuthenticatorAssignedEntityCode(this, diagnostics, context);
 	}
 
 	/**
@@ -1339,8 +1231,7 @@ public class GeneralHeaderConstraintsImpl extends ClinicalDocumentImpl implement
 	 */
 	public boolean validateGeneralHeaderConstraintsLegalAuthenticatorAssignedEntityCodeP(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsLegalAuthenticatorAssignedEntityCodeP(
-			this, diagnostics, context);
+		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsLegalAuthenticatorAssignedEntityCodeP(this, diagnostics, context);
 	}
 
 	/**
@@ -1350,8 +1241,7 @@ public class GeneralHeaderConstraintsImpl extends ClinicalDocumentImpl implement
 	 */
 	public boolean validateGeneralHeaderConstraintsLegalAuthenticatorAssignedEntityId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsLegalAuthenticatorAssignedEntityId(
-			this, diagnostics, context);
+		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsLegalAuthenticatorAssignedEntityId(this, diagnostics, context);
 	}
 
 	/**
@@ -1361,8 +1251,7 @@ public class GeneralHeaderConstraintsImpl extends ClinicalDocumentImpl implement
 	 */
 	public boolean validateGeneralHeaderConstraintsLegalAuthenticatorAssignedEntityTelecom(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsLegalAuthenticatorAssignedEntityTelecom(
-			this, diagnostics, context);
+		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsLegalAuthenticatorAssignedEntityTelecom(this, diagnostics, context);
 	}
 
 	/**
@@ -1372,8 +1261,7 @@ public class GeneralHeaderConstraintsImpl extends ClinicalDocumentImpl implement
 	 */
 	public boolean validateGeneralHeaderConstraintsLegalAuthenticatorAssignedEntityAssignedPerson(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsLegalAuthenticatorAssignedEntityAssignedPerson(
-			this, diagnostics, context);
+		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsLegalAuthenticatorAssignedEntityAssignedPerson(this, diagnostics, context);
 	}
 
 	/**
@@ -1383,8 +1271,7 @@ public class GeneralHeaderConstraintsImpl extends ClinicalDocumentImpl implement
 	 */
 	public boolean validateGeneralHeaderConstraintsLegalAuthenticatorTime(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsLegalAuthenticatorTime(
-			this, diagnostics, context);
+		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsLegalAuthenticatorTime(this, diagnostics, context);
 	}
 
 	/**
@@ -1394,8 +1281,7 @@ public class GeneralHeaderConstraintsImpl extends ClinicalDocumentImpl implement
 	 */
 	public boolean validateGeneralHeaderConstraintsLegalAuthenticatorSignatureCodeP(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsLegalAuthenticatorSignatureCodeP(
-			this, diagnostics, context);
+		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsLegalAuthenticatorSignatureCodeP(this, diagnostics, context);
 	}
 
 	/**
@@ -1405,8 +1291,7 @@ public class GeneralHeaderConstraintsImpl extends ClinicalDocumentImpl implement
 	 */
 	public boolean validateGeneralHeaderConstraintsLegalAuthenticatorSignatureCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsLegalAuthenticatorSignatureCode(
-			this, diagnostics, context);
+		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsLegalAuthenticatorSignatureCode(this, diagnostics, context);
 	}
 
 	/**
@@ -1416,8 +1301,7 @@ public class GeneralHeaderConstraintsImpl extends ClinicalDocumentImpl implement
 	 */
 	public boolean validateGeneralHeaderConstraintsAuthenticatorAssignedEntityUSRealmAddressStreet(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsAuthenticatorAssignedEntityUSRealmAddressStreet(
-			this, diagnostics, context);
+		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsAuthenticatorAssignedEntityUSRealmAddressStreet(this, diagnostics, context);
 	}
 
 	/**
@@ -1427,8 +1311,7 @@ public class GeneralHeaderConstraintsImpl extends ClinicalDocumentImpl implement
 	 */
 	public boolean validateGeneralHeaderConstraintsAuthenticatorAssignedEntityUSRealmAddressCity(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsAuthenticatorAssignedEntityUSRealmAddressCity(
-			this, diagnostics, context);
+		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsAuthenticatorAssignedEntityUSRealmAddressCity(this, diagnostics, context);
 	}
 
 	/**
@@ -1438,8 +1321,7 @@ public class GeneralHeaderConstraintsImpl extends ClinicalDocumentImpl implement
 	 */
 	public boolean validateGeneralHeaderConstraintsAuthenticatorAssignedEntityUSRealmAddressCountry(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsAuthenticatorAssignedEntityUSRealmAddressCountry(
-			this, diagnostics, context);
+		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsAuthenticatorAssignedEntityUSRealmAddressCountry(this, diagnostics, context);
 	}
 
 	/**
@@ -1449,8 +1331,7 @@ public class GeneralHeaderConstraintsImpl extends ClinicalDocumentImpl implement
 	 */
 	public boolean validateGeneralHeaderConstraintsAuthenticatorAssignedEntityUSRealmAddressPostalCode(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsAuthenticatorAssignedEntityUSRealmAddressPostalCode(
-			this, diagnostics, context);
+		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsAuthenticatorAssignedEntityUSRealmAddressPostalCode(this, diagnostics, context);
 	}
 
 	/**
@@ -1460,8 +1341,7 @@ public class GeneralHeaderConstraintsImpl extends ClinicalDocumentImpl implement
 	 */
 	public boolean validateGeneralHeaderConstraintsAuthenticatorAssignedEntityUSRealmAddressState(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsAuthenticatorAssignedEntityUSRealmAddressState(
-			this, diagnostics, context);
+		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsAuthenticatorAssignedEntityUSRealmAddressState(this, diagnostics, context);
 	}
 
 	/**
@@ -1471,8 +1351,7 @@ public class GeneralHeaderConstraintsImpl extends ClinicalDocumentImpl implement
 	 */
 	public boolean validateGeneralHeaderConstraintsAuthenticatorAssignedEntityUSRealmAddressStreetAddressLine(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsAuthenticatorAssignedEntityUSRealmAddressStreetAddressLine(
-			this, diagnostics, context);
+		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsAuthenticatorAssignedEntityUSRealmAddressStreetAddressLine(this, diagnostics, context);
 	}
 
 	/**
@@ -1482,8 +1361,7 @@ public class GeneralHeaderConstraintsImpl extends ClinicalDocumentImpl implement
 	 */
 	public boolean validateGeneralHeaderConstraintsAuthenticatorAssignedEntityUSRealmAddressUseP(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsAuthenticatorAssignedEntityUSRealmAddressUseP(
-			this, diagnostics, context);
+		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsAuthenticatorAssignedEntityUSRealmAddressUseP(this, diagnostics, context);
 	}
 
 	/**
@@ -1493,8 +1371,7 @@ public class GeneralHeaderConstraintsImpl extends ClinicalDocumentImpl implement
 	 */
 	public boolean validateGeneralHeaderConstraintsAuthenticatorAssignedEntityUSRealmAddressUse(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsAuthenticatorAssignedEntityUSRealmAddressUse(
-			this, diagnostics, context);
+		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsAuthenticatorAssignedEntityUSRealmAddressUse(this, diagnostics, context);
 	}
 
 	/**
@@ -1504,8 +1381,7 @@ public class GeneralHeaderConstraintsImpl extends ClinicalDocumentImpl implement
 	 */
 	public boolean validateGeneralHeaderConstraintsAuthenticatorAssignedEntityTELUse(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsAuthenticatorAssignedEntityTELUse(
-			this, diagnostics, context);
+		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsAuthenticatorAssignedEntityTELUse(this, diagnostics, context);
 	}
 
 	/**
@@ -1515,8 +1391,7 @@ public class GeneralHeaderConstraintsImpl extends ClinicalDocumentImpl implement
 	 */
 	public boolean validateGeneralHeaderConstraintsAuthenticatorAssignedEntityPersonName(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsAuthenticatorAssignedEntityPersonName(
-			this, diagnostics, context);
+		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsAuthenticatorAssignedEntityPersonName(this, diagnostics, context);
 	}
 
 	/**
@@ -1526,8 +1401,7 @@ public class GeneralHeaderConstraintsImpl extends ClinicalDocumentImpl implement
 	 */
 	public boolean validateGeneralHeaderConstraintsAuthenticatorAssignedEntityHasNationalProviderIdentifier(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsAuthenticatorAssignedEntityHasNationalProviderIdentifier(
-			this, diagnostics, context);
+		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsAuthenticatorAssignedEntityHasNationalProviderIdentifier(this, diagnostics, context);
 	}
 
 	/**
@@ -1537,8 +1411,7 @@ public class GeneralHeaderConstraintsImpl extends ClinicalDocumentImpl implement
 	 */
 	public boolean validateGeneralHeaderConstraintsAuthenticatorAssignedEntityAddr(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsAuthenticatorAssignedEntityAddr(
-			this, diagnostics, context);
+		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsAuthenticatorAssignedEntityAddr(this, diagnostics, context);
 	}
 
 	/**
@@ -1548,8 +1421,7 @@ public class GeneralHeaderConstraintsImpl extends ClinicalDocumentImpl implement
 	 */
 	public boolean validateGeneralHeaderConstraintsAuthenticatorAssignedEntityCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsAuthenticatorAssignedEntityCode(
-			this, diagnostics, context);
+		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsAuthenticatorAssignedEntityCode(this, diagnostics, context);
 	}
 
 	/**
@@ -1559,8 +1431,7 @@ public class GeneralHeaderConstraintsImpl extends ClinicalDocumentImpl implement
 	 */
 	public boolean validateGeneralHeaderConstraintsAuthenticatorAssignedEntityCodeP(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsAuthenticatorAssignedEntityCodeP(
-			this, diagnostics, context);
+		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsAuthenticatorAssignedEntityCodeP(this, diagnostics, context);
 	}
 
 	/**
@@ -1570,8 +1441,7 @@ public class GeneralHeaderConstraintsImpl extends ClinicalDocumentImpl implement
 	 */
 	public boolean validateGeneralHeaderConstraintsAuthenticatorAssignedEntityId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsAuthenticatorAssignedEntityId(
-			this, diagnostics, context);
+		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsAuthenticatorAssignedEntityId(this, diagnostics, context);
 	}
 
 	/**
@@ -1581,8 +1451,7 @@ public class GeneralHeaderConstraintsImpl extends ClinicalDocumentImpl implement
 	 */
 	public boolean validateGeneralHeaderConstraintsAuthenticatorAssignedEntityTelecom(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsAuthenticatorAssignedEntityTelecom(
-			this, diagnostics, context);
+		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsAuthenticatorAssignedEntityTelecom(this, diagnostics, context);
 	}
 
 	/**
@@ -1592,8 +1461,7 @@ public class GeneralHeaderConstraintsImpl extends ClinicalDocumentImpl implement
 	 */
 	public boolean validateGeneralHeaderConstraintsAuthenticatorAssignedEntityAssignedPerson(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsAuthenticatorAssignedEntityAssignedPerson(
-			this, diagnostics, context);
+		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsAuthenticatorAssignedEntityAssignedPerson(this, diagnostics, context);
 	}
 
 	/**
@@ -1603,8 +1471,7 @@ public class GeneralHeaderConstraintsImpl extends ClinicalDocumentImpl implement
 	 */
 	public boolean validateGeneralHeaderConstraintsAuthenticatorTime(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsAuthenticatorTime(
-			this, diagnostics, context);
+		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsAuthenticatorTime(this, diagnostics, context);
 	}
 
 	/**
@@ -1614,8 +1481,7 @@ public class GeneralHeaderConstraintsImpl extends ClinicalDocumentImpl implement
 	 */
 	public boolean validateGeneralHeaderConstraintsAuthenticatorSignatureCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsAuthenticatorSignatureCode(
-			this, diagnostics, context);
+		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsAuthenticatorSignatureCode(this, diagnostics, context);
 	}
 
 	/**
@@ -1625,8 +1491,7 @@ public class GeneralHeaderConstraintsImpl extends ClinicalDocumentImpl implement
 	 */
 	public boolean validateGeneralHeaderConstraintsAuthenticatorAssignedEntity(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsAuthenticatorAssignedEntity(
-			this, diagnostics, context);
+		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsAuthenticatorAssignedEntity(this, diagnostics, context);
 	}
 
 	/**
@@ -1636,8 +1501,7 @@ public class GeneralHeaderConstraintsImpl extends ClinicalDocumentImpl implement
 	 */
 	public boolean validateGeneralHeaderConstraintsInformantAssignedEntityUSRealmAddressStreet(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsInformantAssignedEntityUSRealmAddressStreet(
-			this, diagnostics, context);
+		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsInformantAssignedEntityUSRealmAddressStreet(this, diagnostics, context);
 	}
 
 	/**
@@ -1647,8 +1511,7 @@ public class GeneralHeaderConstraintsImpl extends ClinicalDocumentImpl implement
 	 */
 	public boolean validateGeneralHeaderConstraintsInformantAssignedEntityUSRealmAddressCity(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsInformantAssignedEntityUSRealmAddressCity(
-			this, diagnostics, context);
+		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsInformantAssignedEntityUSRealmAddressCity(this, diagnostics, context);
 	}
 
 	/**
@@ -1658,8 +1521,7 @@ public class GeneralHeaderConstraintsImpl extends ClinicalDocumentImpl implement
 	 */
 	public boolean validateGeneralHeaderConstraintsInformantAssignedEntityUSRealmAddressCountry(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsInformantAssignedEntityUSRealmAddressCountry(
-			this, diagnostics, context);
+		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsInformantAssignedEntityUSRealmAddressCountry(this, diagnostics, context);
 	}
 
 	/**
@@ -1669,8 +1531,7 @@ public class GeneralHeaderConstraintsImpl extends ClinicalDocumentImpl implement
 	 */
 	public boolean validateGeneralHeaderConstraintsInformantAssignedEntityUSRealmAddressPostalCode(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsInformantAssignedEntityUSRealmAddressPostalCode(
-			this, diagnostics, context);
+		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsInformantAssignedEntityUSRealmAddressPostalCode(this, diagnostics, context);
 	}
 
 	/**
@@ -1680,8 +1541,7 @@ public class GeneralHeaderConstraintsImpl extends ClinicalDocumentImpl implement
 	 */
 	public boolean validateGeneralHeaderConstraintsInformantAssignedEntityUSRealmAddressState(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsInformantAssignedEntityUSRealmAddressState(
-			this, diagnostics, context);
+		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsInformantAssignedEntityUSRealmAddressState(this, diagnostics, context);
 	}
 
 	/**
@@ -1691,8 +1551,7 @@ public class GeneralHeaderConstraintsImpl extends ClinicalDocumentImpl implement
 	 */
 	public boolean validateGeneralHeaderConstraintsInformantAssignedEntityUSRealmAddressStreetAddressLine(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsInformantAssignedEntityUSRealmAddressStreetAddressLine(
-			this, diagnostics, context);
+		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsInformantAssignedEntityUSRealmAddressStreetAddressLine(this, diagnostics, context);
 	}
 
 	/**
@@ -1702,8 +1561,7 @@ public class GeneralHeaderConstraintsImpl extends ClinicalDocumentImpl implement
 	 */
 	public boolean validateGeneralHeaderConstraintsInformantAssignedEntityUSRealmAddressUseP(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsInformantAssignedEntityUSRealmAddressUseP(
-			this, diagnostics, context);
+		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsInformantAssignedEntityUSRealmAddressUseP(this, diagnostics, context);
 	}
 
 	/**
@@ -1713,8 +1571,7 @@ public class GeneralHeaderConstraintsImpl extends ClinicalDocumentImpl implement
 	 */
 	public boolean validateGeneralHeaderConstraintsInformantAssignedEntityUSRealmAddressUse(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsInformantAssignedEntityUSRealmAddressUse(
-			this, diagnostics, context);
+		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsInformantAssignedEntityUSRealmAddressUse(this, diagnostics, context);
 	}
 
 	/**
@@ -1724,8 +1581,7 @@ public class GeneralHeaderConstraintsImpl extends ClinicalDocumentImpl implement
 	 */
 	public boolean validateGeneralHeaderConstraintsRecordTargetPatientRoleProviderOrganizationHasNationalProviderIdentifier(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsRecordTargetPatientRoleProviderOrganizationHasNationalProviderIdentifier(
-			this, diagnostics, context);
+		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsRecordTargetPatientRoleProviderOrganizationHasNationalProviderIdentifier(this, diagnostics, context);
 	}
 
 	/**
@@ -1735,8 +1591,7 @@ public class GeneralHeaderConstraintsImpl extends ClinicalDocumentImpl implement
 	 */
 	public boolean validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianAddr(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianAddr(
-			this, diagnostics, context);
+		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianAddr(this, diagnostics, context);
 	}
 
 	/**
@@ -1746,8 +1601,7 @@ public class GeneralHeaderConstraintsImpl extends ClinicalDocumentImpl implement
 	 */
 	public boolean validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianCode(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianCode(
-			this, diagnostics, context);
+		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianCode(this, diagnostics, context);
 	}
 
 	/**
@@ -1757,8 +1611,7 @@ public class GeneralHeaderConstraintsImpl extends ClinicalDocumentImpl implement
 	 */
 	public boolean validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianCodeP(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianCodeP(
-			this, diagnostics, context);
+		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianCodeP(this, diagnostics, context);
 	}
 
 	/**
@@ -1768,8 +1621,7 @@ public class GeneralHeaderConstraintsImpl extends ClinicalDocumentImpl implement
 	 */
 	public boolean validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianTelecom(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianTelecom(
-			this, diagnostics, context);
+		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianTelecom(this, diagnostics, context);
 	}
 
 	/**
@@ -1779,8 +1631,7 @@ public class GeneralHeaderConstraintsImpl extends ClinicalDocumentImpl implement
 	 */
 	public boolean validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianGuardianPerson(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianGuardianPerson(
-			this, diagnostics, context);
+		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianGuardianPerson(this, diagnostics, context);
 	}
 
 	/**
@@ -1790,8 +1641,7 @@ public class GeneralHeaderConstraintsImpl extends ClinicalDocumentImpl implement
 	 */
 	public boolean validateGeneralHeaderConstraintsRecordTargetPatientRolePatientBirthTimePreciseToYear(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsRecordTargetPatientRolePatientBirthTimePreciseToYear(
-			this, diagnostics, context);
+		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsRecordTargetPatientRolePatientBirthTimePreciseToYear(this, diagnostics, context);
 	}
 
 	/**
@@ -1801,8 +1651,7 @@ public class GeneralHeaderConstraintsImpl extends ClinicalDocumentImpl implement
 	 */
 	public boolean validateGeneralHeaderConstraintsRecordTargetPatientRolePatientBirthTimePreciseToDay(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsRecordTargetPatientRolePatientBirthTimePreciseToDay(
-			this, diagnostics, context);
+		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsRecordTargetPatientRolePatientBirthTimePreciseToDay(this, diagnostics, context);
 	}
 
 	/**
@@ -1812,8 +1661,7 @@ public class GeneralHeaderConstraintsImpl extends ClinicalDocumentImpl implement
 	 */
 	public boolean validateGeneralHeaderConstraintsRecordTargetPatientRolePatientAdministrativeGenderCode(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsRecordTargetPatientRolePatientAdministrativeGenderCode(
-			this, diagnostics, context);
+		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsRecordTargetPatientRolePatientAdministrativeGenderCode(this, diagnostics, context);
 	}
 
 	/**
@@ -1823,8 +1671,7 @@ public class GeneralHeaderConstraintsImpl extends ClinicalDocumentImpl implement
 	 */
 	public boolean validateGeneralHeaderConstraintsRecordTargetPatientRolePatientBirthplacePlaceAddr(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsRecordTargetPatientRolePatientBirthplacePlaceAddr(
-			this, diagnostics, context);
+		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsRecordTargetPatientRolePatientBirthplacePlaceAddr(this, diagnostics, context);
 	}
 
 	/**
@@ -1834,8 +1681,7 @@ public class GeneralHeaderConstraintsImpl extends ClinicalDocumentImpl implement
 	 */
 	public boolean validateGeneralHeaderConstraintsRecordTargetPatientRolePatientBirthplacePlace(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsRecordTargetPatientRolePatientBirthplacePlace(
-			this, diagnostics, context);
+		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsRecordTargetPatientRolePatientBirthplacePlace(this, diagnostics, context);
 	}
 
 	/**
@@ -1845,8 +1691,7 @@ public class GeneralHeaderConstraintsImpl extends ClinicalDocumentImpl implement
 	 */
 	public boolean validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianPersonName(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianPersonName(
-			this, diagnostics, context);
+		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianPersonName(this, diagnostics, context);
 	}
 
 	/**
@@ -1856,8 +1701,7 @@ public class GeneralHeaderConstraintsImpl extends ClinicalDocumentImpl implement
 	 */
 	public boolean validateGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationPreferenceInd(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationPreferenceInd(
-			this, diagnostics, context);
+		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationPreferenceInd(this, diagnostics, context);
 	}
 
 	/**
@@ -1867,8 +1711,7 @@ public class GeneralHeaderConstraintsImpl extends ClinicalDocumentImpl implement
 	 */
 	public boolean validateGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationProficiencyLevelCode(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationProficiencyLevelCode(
-			this, diagnostics, context);
+		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationProficiencyLevelCode(this, diagnostics, context);
 	}
 
 	/**
@@ -1878,8 +1721,7 @@ public class GeneralHeaderConstraintsImpl extends ClinicalDocumentImpl implement
 	 */
 	public boolean validateGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationProficiencyLevelCodeP(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationProficiencyLevelCodeP(
-			this, diagnostics, context);
+		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationProficiencyLevelCodeP(this, diagnostics, context);
 	}
 
 	/**
@@ -1889,8 +1731,7 @@ public class GeneralHeaderConstraintsImpl extends ClinicalDocumentImpl implement
 	 */
 	public boolean validateGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationModeCode(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationModeCode(
-			this, diagnostics, context);
+		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationModeCode(this, diagnostics, context);
 	}
 
 	/**
@@ -1900,8 +1741,7 @@ public class GeneralHeaderConstraintsImpl extends ClinicalDocumentImpl implement
 	 */
 	public boolean validateGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationModeCodeP(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationModeCodeP(
-			this, diagnostics, context);
+		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationModeCodeP(this, diagnostics, context);
 	}
 
 	/**
@@ -1911,8 +1751,7 @@ public class GeneralHeaderConstraintsImpl extends ClinicalDocumentImpl implement
 	 */
 	public boolean validateGeneralHeaderConstraintsRecordTargetPatientRolePatientBirthTime(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsRecordTargetPatientRolePatientBirthTime(
-			this, diagnostics, context);
+		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsRecordTargetPatientRolePatientBirthTime(this, diagnostics, context);
 	}
 
 	/**
@@ -1922,8 +1761,7 @@ public class GeneralHeaderConstraintsImpl extends ClinicalDocumentImpl implement
 	 */
 	public boolean validateGeneralHeaderConstraintsRecordTargetPatientRolePatientEthnicGroupCode(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsRecordTargetPatientRolePatientEthnicGroupCode(
-			this, diagnostics, context);
+		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsRecordTargetPatientRolePatientEthnicGroupCode(this, diagnostics, context);
 	}
 
 	/**
@@ -1933,8 +1771,7 @@ public class GeneralHeaderConstraintsImpl extends ClinicalDocumentImpl implement
 	 */
 	public boolean validateGeneralHeaderConstraintsRecordTargetPatientRolePatientMaritalStatusCodeP(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsRecordTargetPatientRolePatientMaritalStatusCodeP(
-			this, diagnostics, context);
+		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsRecordTargetPatientRolePatientMaritalStatusCodeP(this, diagnostics, context);
 	}
 
 	/**
@@ -1944,8 +1781,7 @@ public class GeneralHeaderConstraintsImpl extends ClinicalDocumentImpl implement
 	 */
 	public boolean validateGeneralHeaderConstraintsRecordTargetPatientRolePatientEthnicGroupCodeP(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsRecordTargetPatientRolePatientEthnicGroupCodeP(
-			this, diagnostics, context);
+		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsRecordTargetPatientRolePatientEthnicGroupCodeP(this, diagnostics, context);
 	}
 
 	/**
@@ -1955,8 +1791,7 @@ public class GeneralHeaderConstraintsImpl extends ClinicalDocumentImpl implement
 	 */
 	public boolean validateGeneralHeaderConstraintsRecordTargetPatientRolePatientMaritalStatusCode(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsRecordTargetPatientRolePatientMaritalStatusCode(
-			this, diagnostics, context);
+		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsRecordTargetPatientRolePatientMaritalStatusCode(this, diagnostics, context);
 	}
 
 	/**
@@ -1966,8 +1801,7 @@ public class GeneralHeaderConstraintsImpl extends ClinicalDocumentImpl implement
 	 */
 	public boolean validateGeneralHeaderConstraintsRecordTargetPatientRolePatientName(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsRecordTargetPatientRolePatientName(
-			this, diagnostics, context);
+		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsRecordTargetPatientRolePatientName(this, diagnostics, context);
 	}
 
 	/**
@@ -1977,8 +1811,7 @@ public class GeneralHeaderConstraintsImpl extends ClinicalDocumentImpl implement
 	 */
 	public boolean validateGeneralHeaderConstraintsRecordTargetPatientRolePatientRaceCodeP(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsRecordTargetPatientRolePatientRaceCodeP(
-			this, diagnostics, context);
+		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsRecordTargetPatientRolePatientRaceCodeP(this, diagnostics, context);
 	}
 
 	/**
@@ -1988,8 +1821,7 @@ public class GeneralHeaderConstraintsImpl extends ClinicalDocumentImpl implement
 	 */
 	public boolean validateGeneralHeaderConstraintsRecordTargetPatientRolePatientRaceCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsRecordTargetPatientRolePatientRaceCode(
-			this, diagnostics, context);
+		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsRecordTargetPatientRolePatientRaceCode(this, diagnostics, context);
 	}
 
 	/**
@@ -1999,8 +1831,7 @@ public class GeneralHeaderConstraintsImpl extends ClinicalDocumentImpl implement
 	 */
 	public boolean validateGeneralHeaderConstraintsRecordTargetPatientRolePatientReligiousAffiliationCodeP(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsRecordTargetPatientRolePatientReligiousAffiliationCodeP(
-			this, diagnostics, context);
+		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsRecordTargetPatientRolePatientReligiousAffiliationCodeP(this, diagnostics, context);
 	}
 
 	/**
@@ -2010,8 +1841,7 @@ public class GeneralHeaderConstraintsImpl extends ClinicalDocumentImpl implement
 	 */
 	public boolean validateGeneralHeaderConstraintsRecordTargetPatientRolePatientReligiousAffiliationCode(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsRecordTargetPatientRolePatientReligiousAffiliationCode(
-			this, diagnostics, context);
+		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsRecordTargetPatientRolePatientReligiousAffiliationCode(this, diagnostics, context);
 	}
 
 	/**
@@ -2021,8 +1851,7 @@ public class GeneralHeaderConstraintsImpl extends ClinicalDocumentImpl implement
 	 */
 	public boolean validateGeneralHeaderConstraintsRecordTargetPatientRolePatientSDTCRaceCodeP(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsRecordTargetPatientRolePatientSDTCRaceCodeP(
-			this, diagnostics, context);
+		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsRecordTargetPatientRolePatientSDTCRaceCodeP(this, diagnostics, context);
 	}
 
 	/**
@@ -2032,8 +1861,7 @@ public class GeneralHeaderConstraintsImpl extends ClinicalDocumentImpl implement
 	 */
 	public boolean validateGeneralHeaderConstraintsRecordTargetPatientRolePatientSDTCRaceCode(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsRecordTargetPatientRolePatientSDTCRaceCode(
-			this, diagnostics, context);
+		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsRecordTargetPatientRolePatientSDTCRaceCode(this, diagnostics, context);
 	}
 
 	/**
@@ -2043,8 +1871,7 @@ public class GeneralHeaderConstraintsImpl extends ClinicalDocumentImpl implement
 	 */
 	public boolean validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardian(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardian(
-			this, diagnostics, context);
+		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardian(this, diagnostics, context);
 	}
 
 	/**
@@ -2054,8 +1881,7 @@ public class GeneralHeaderConstraintsImpl extends ClinicalDocumentImpl implement
 	 */
 	public boolean validateGeneralHeaderConstraintsRecordTargetPatientRolePatientBirthplace(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsRecordTargetPatientRolePatientBirthplace(
-			this, diagnostics, context);
+		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsRecordTargetPatientRolePatientBirthplace(this, diagnostics, context);
 	}
 
 	/**
@@ -2065,8 +1891,7 @@ public class GeneralHeaderConstraintsImpl extends ClinicalDocumentImpl implement
 	 */
 	public boolean validateGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunication(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunication(
-			this, diagnostics, context);
+		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunication(this, diagnostics, context);
 	}
 
 	/**
@@ -2076,8 +1901,7 @@ public class GeneralHeaderConstraintsImpl extends ClinicalDocumentImpl implement
 	 */
 	public boolean validateGeneralHeaderConstraintsRecordTargetPatientRoleProviderOrganizationUSRealmAddressStreet(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsRecordTargetPatientRoleProviderOrganizationUSRealmAddressStreet(
-			this, diagnostics, context);
+		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsRecordTargetPatientRoleProviderOrganizationUSRealmAddressStreet(this, diagnostics, context);
 	}
 
 	/**
@@ -2087,8 +1911,7 @@ public class GeneralHeaderConstraintsImpl extends ClinicalDocumentImpl implement
 	 */
 	public boolean validateGeneralHeaderConstraintsRecordTargetPatientRoleProviderOrganizationUSRealmAddressCity(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsRecordTargetPatientRoleProviderOrganizationUSRealmAddressCity(
-			this, diagnostics, context);
+		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsRecordTargetPatientRoleProviderOrganizationUSRealmAddressCity(this, diagnostics, context);
 	}
 
 	/**
@@ -2098,8 +1921,7 @@ public class GeneralHeaderConstraintsImpl extends ClinicalDocumentImpl implement
 	 */
 	public boolean validateGeneralHeaderConstraintsRecordTargetPatientRoleProviderOrganizationUSRealmAddressCountry(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsRecordTargetPatientRoleProviderOrganizationUSRealmAddressCountry(
-			this, diagnostics, context);
+		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsRecordTargetPatientRoleProviderOrganizationUSRealmAddressCountry(this, diagnostics, context);
 	}
 
 	/**
@@ -2109,8 +1931,7 @@ public class GeneralHeaderConstraintsImpl extends ClinicalDocumentImpl implement
 	 */
 	public boolean validateGeneralHeaderConstraintsRecordTargetPatientRoleProviderOrganizationUSRealmAddressPostalCode(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsRecordTargetPatientRoleProviderOrganizationUSRealmAddressPostalCode(
-			this, diagnostics, context);
+		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsRecordTargetPatientRoleProviderOrganizationUSRealmAddressPostalCode(this, diagnostics, context);
 	}
 
 	/**
@@ -2120,8 +1941,7 @@ public class GeneralHeaderConstraintsImpl extends ClinicalDocumentImpl implement
 	 */
 	public boolean validateGeneralHeaderConstraintsRecordTargetPatientRoleProviderOrganizationUSRealmAddressState(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsRecordTargetPatientRoleProviderOrganizationUSRealmAddressState(
-			this, diagnostics, context);
+		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsRecordTargetPatientRoleProviderOrganizationUSRealmAddressState(this, diagnostics, context);
 	}
 
 	/**
@@ -2131,8 +1951,7 @@ public class GeneralHeaderConstraintsImpl extends ClinicalDocumentImpl implement
 	 */
 	public boolean validateGeneralHeaderConstraintsRecordTargetPatientRoleProviderOrganizationUSRealmAddressStreetAddressLine(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsRecordTargetPatientRoleProviderOrganizationUSRealmAddressStreetAddressLine(
-			this, diagnostics, context);
+		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsRecordTargetPatientRoleProviderOrganizationUSRealmAddressStreetAddressLine(this, diagnostics, context);
 	}
 
 	/**
@@ -2142,8 +1961,7 @@ public class GeneralHeaderConstraintsImpl extends ClinicalDocumentImpl implement
 	 */
 	public boolean validateGeneralHeaderConstraintsRecordTargetPatientRoleProviderOrganizationUSRealmAddressUseP(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsRecordTargetPatientRoleProviderOrganizationUSRealmAddressUseP(
-			this, diagnostics, context);
+		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsRecordTargetPatientRoleProviderOrganizationUSRealmAddressUseP(this, diagnostics, context);
 	}
 
 	/**
@@ -2153,8 +1971,7 @@ public class GeneralHeaderConstraintsImpl extends ClinicalDocumentImpl implement
 	 */
 	public boolean validateGeneralHeaderConstraintsRecordTargetPatientRoleProviderOrganizationUSRealmAddressUse(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsRecordTargetPatientRoleProviderOrganizationUSRealmAddressUse(
-			this, diagnostics, context);
+		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsRecordTargetPatientRoleProviderOrganizationUSRealmAddressUse(this, diagnostics, context);
 	}
 
 	/**
@@ -2164,8 +1981,7 @@ public class GeneralHeaderConstraintsImpl extends ClinicalDocumentImpl implement
 	 */
 	public boolean validateGeneralHeaderConstraintsRecordTargetPatientRoleProviderOrganizationTELUse(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsRecordTargetPatientRoleProviderOrganizationTELUse(
-			this, diagnostics, context);
+		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsRecordTargetPatientRoleProviderOrganizationTELUse(this, diagnostics, context);
 	}
 
 	/**
@@ -2175,8 +1991,7 @@ public class GeneralHeaderConstraintsImpl extends ClinicalDocumentImpl implement
 	 */
 	public boolean validateGeneralHeaderConstraintsRecordTargetPatientRoleProviderOrganizationAddr(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsRecordTargetPatientRoleProviderOrganizationAddr(
-			this, diagnostics, context);
+		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsRecordTargetPatientRoleProviderOrganizationAddr(this, diagnostics, context);
 	}
 
 	/**
@@ -2186,8 +2001,7 @@ public class GeneralHeaderConstraintsImpl extends ClinicalDocumentImpl implement
 	 */
 	public boolean validateGeneralHeaderConstraintsRecordTargetPatientRoleProviderOrganizationId(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsRecordTargetPatientRoleProviderOrganizationId(
-			this, diagnostics, context);
+		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsRecordTargetPatientRoleProviderOrganizationId(this, diagnostics, context);
 	}
 
 	/**
@@ -2197,8 +2011,7 @@ public class GeneralHeaderConstraintsImpl extends ClinicalDocumentImpl implement
 	 */
 	public boolean validateGeneralHeaderConstraintsRecordTargetPatientRoleProviderOrganizationName(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsRecordTargetPatientRoleProviderOrganizationName(
-			this, diagnostics, context);
+		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsRecordTargetPatientRoleProviderOrganizationName(this, diagnostics, context);
 	}
 
 	/**
@@ -2208,8 +2021,7 @@ public class GeneralHeaderConstraintsImpl extends ClinicalDocumentImpl implement
 	 */
 	public boolean validateGeneralHeaderConstraintsRecordTargetPatientRoleProviderOrganizationTelecom(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsRecordTargetPatientRoleProviderOrganizationTelecom(
-			this, diagnostics, context);
+		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsRecordTargetPatientRoleProviderOrganizationTelecom(this, diagnostics, context);
 	}
 
 	/**
@@ -2219,8 +2031,7 @@ public class GeneralHeaderConstraintsImpl extends ClinicalDocumentImpl implement
 	 */
 	public boolean validateGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationLanguageCode(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationLanguageCode(
-			this, diagnostics, context);
+		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationLanguageCode(this, diagnostics, context);
 	}
 
 	/**
@@ -2230,8 +2041,7 @@ public class GeneralHeaderConstraintsImpl extends ClinicalDocumentImpl implement
 	 */
 	public boolean validateGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationLanguageCodeP(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationLanguageCodeP(
-			this, diagnostics, context);
+		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationLanguageCodeP(this, diagnostics, context);
 	}
 
 	/**
@@ -2241,8 +2051,7 @@ public class GeneralHeaderConstraintsImpl extends ClinicalDocumentImpl implement
 	 */
 	public boolean validateGeneralHeaderConstraintsRecordTargetPatientRoleAddr(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsRecordTargetPatientRoleAddr(
-			this, diagnostics, context);
+		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsRecordTargetPatientRoleAddr(this, diagnostics, context);
 	}
 
 	/**
@@ -2252,8 +2061,7 @@ public class GeneralHeaderConstraintsImpl extends ClinicalDocumentImpl implement
 	 */
 	public boolean validateGeneralHeaderConstraintsRecordTargetPatientRoleId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsRecordTargetPatientRoleId(
-			this, diagnostics, context);
+		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsRecordTargetPatientRoleId(this, diagnostics, context);
 	}
 
 	/**
@@ -2263,8 +2071,7 @@ public class GeneralHeaderConstraintsImpl extends ClinicalDocumentImpl implement
 	 */
 	public boolean validateGeneralHeaderConstraintsRecordTargetPatientRoleTelecom(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsRecordTargetPatientRoleTelecom(
-			this, diagnostics, context);
+		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsRecordTargetPatientRoleTelecom(this, diagnostics, context);
 	}
 
 	/**
@@ -2274,8 +2081,7 @@ public class GeneralHeaderConstraintsImpl extends ClinicalDocumentImpl implement
 	 */
 	public boolean validateGeneralHeaderConstraintsRecordTargetPatientRolePatient(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsRecordTargetPatientRolePatient(
-			this, diagnostics, context);
+		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsRecordTargetPatientRolePatient(this, diagnostics, context);
 	}
 
 	/**
@@ -2285,8 +2091,7 @@ public class GeneralHeaderConstraintsImpl extends ClinicalDocumentImpl implement
 	 */
 	public boolean validateGeneralHeaderConstraintsRecordTargetPatientRoleProviderOrganization(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsRecordTargetPatientRoleProviderOrganization(
-			this, diagnostics, context);
+		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsRecordTargetPatientRoleProviderOrganization(this, diagnostics, context);
 	}
 
 	/**
@@ -2296,8 +2101,7 @@ public class GeneralHeaderConstraintsImpl extends ClinicalDocumentImpl implement
 	 */
 	public boolean validateGeneralHeaderConstraintsRecordTargetPatientRole(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsRecordTargetPatientRole(
-			this, diagnostics, context);
+		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsRecordTargetPatientRole(this, diagnostics, context);
 	}
 
 	/**
@@ -2307,8 +2111,7 @@ public class GeneralHeaderConstraintsImpl extends ClinicalDocumentImpl implement
 	 */
 	public boolean validateGeneralHeaderConstraintsComponentOfEncompassingEncounterEffectiveTime(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsComponentOfEncompassingEncounterEffectiveTime(
-			this, diagnostics, context);
+		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsComponentOfEncompassingEncounterEffectiveTime(this, diagnostics, context);
 	}
 
 	/**
@@ -2318,8 +2121,7 @@ public class GeneralHeaderConstraintsImpl extends ClinicalDocumentImpl implement
 	 */
 	public boolean validateGeneralHeaderConstraintsComponentOfEncompassingEncounterId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsComponentOfEncompassingEncounterId(
-			this, diagnostics, context);
+		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsComponentOfEncompassingEncounterId(this, diagnostics, context);
 	}
 
 	/**
@@ -2329,8 +2131,7 @@ public class GeneralHeaderConstraintsImpl extends ClinicalDocumentImpl implement
 	 */
 	public boolean validateGeneralHeaderConstraintsComponentOfEncompassingEncounter(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsComponentOfEncompassingEncounter(
-			this, diagnostics, context);
+		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsComponentOfEncompassingEncounter(this, diagnostics, context);
 	}
 
 	/**
@@ -2340,8 +2141,7 @@ public class GeneralHeaderConstraintsImpl extends ClinicalDocumentImpl implement
 	 */
 	public boolean validateGeneralHeaderConstraintsAuthorAssignedAuthorUSRealmAddressStreet(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsAuthorAssignedAuthorUSRealmAddressStreet(
-			this, diagnostics, context);
+		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsAuthorAssignedAuthorUSRealmAddressStreet(this, diagnostics, context);
 	}
 
 	/**
@@ -2351,8 +2151,7 @@ public class GeneralHeaderConstraintsImpl extends ClinicalDocumentImpl implement
 	 */
 	public boolean validateGeneralHeaderConstraintsAuthorAssignedAuthorUSRealmAddressCity(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsAuthorAssignedAuthorUSRealmAddressCity(
-			this, diagnostics, context);
+		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsAuthorAssignedAuthorUSRealmAddressCity(this, diagnostics, context);
 	}
 
 	/**
@@ -2362,8 +2161,7 @@ public class GeneralHeaderConstraintsImpl extends ClinicalDocumentImpl implement
 	 */
 	public boolean validateGeneralHeaderConstraintsAuthorAssignedAuthorUSRealmAddressCountry(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsAuthorAssignedAuthorUSRealmAddressCountry(
-			this, diagnostics, context);
+		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsAuthorAssignedAuthorUSRealmAddressCountry(this, diagnostics, context);
 	}
 
 	/**
@@ -2373,8 +2171,7 @@ public class GeneralHeaderConstraintsImpl extends ClinicalDocumentImpl implement
 	 */
 	public boolean validateGeneralHeaderConstraintsAuthorAssignedAuthorUSRealmAddressPostalCode(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsAuthorAssignedAuthorUSRealmAddressPostalCode(
-			this, diagnostics, context);
+		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsAuthorAssignedAuthorUSRealmAddressPostalCode(this, diagnostics, context);
 	}
 
 	/**
@@ -2384,8 +2181,7 @@ public class GeneralHeaderConstraintsImpl extends ClinicalDocumentImpl implement
 	 */
 	public boolean validateGeneralHeaderConstraintsAuthorAssignedAuthorUSRealmAddressState(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsAuthorAssignedAuthorUSRealmAddressState(
-			this, diagnostics, context);
+		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsAuthorAssignedAuthorUSRealmAddressState(this, diagnostics, context);
 	}
 
 	/**
@@ -2395,8 +2191,7 @@ public class GeneralHeaderConstraintsImpl extends ClinicalDocumentImpl implement
 	 */
 	public boolean validateGeneralHeaderConstraintsAuthorAssignedAuthorUSRealmAddressStreetAddressLine(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsAuthorAssignedAuthorUSRealmAddressStreetAddressLine(
-			this, diagnostics, context);
+		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsAuthorAssignedAuthorUSRealmAddressStreetAddressLine(this, diagnostics, context);
 	}
 
 	/**
@@ -2406,8 +2201,7 @@ public class GeneralHeaderConstraintsImpl extends ClinicalDocumentImpl implement
 	 */
 	public boolean validateGeneralHeaderConstraintsAuthorAssignedAuthorUSRealmAddressUseP(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsAuthorAssignedAuthorUSRealmAddressUseP(
-			this, diagnostics, context);
+		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsAuthorAssignedAuthorUSRealmAddressUseP(this, diagnostics, context);
 	}
 
 	/**
@@ -2417,8 +2211,7 @@ public class GeneralHeaderConstraintsImpl extends ClinicalDocumentImpl implement
 	 */
 	public boolean validateGeneralHeaderConstraintsAuthorAssignedAuthorUSRealmAddressUse(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsAuthorAssignedAuthorUSRealmAddressUse(
-			this, diagnostics, context);
+		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsAuthorAssignedAuthorUSRealmAddressUse(this, diagnostics, context);
 	}
 
 	/**
@@ -2428,8 +2221,7 @@ public class GeneralHeaderConstraintsImpl extends ClinicalDocumentImpl implement
 	 */
 	public boolean validateGeneralHeaderConstraintsAuthorAssignedAuthorTELUse(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsAuthorAssignedAuthorTELUse(
-			this, diagnostics, context);
+		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsAuthorAssignedAuthorTELUse(this, diagnostics, context);
 	}
 
 	/**
@@ -2439,8 +2231,7 @@ public class GeneralHeaderConstraintsImpl extends ClinicalDocumentImpl implement
 	 */
 	public boolean validateGeneralHeaderConstraintsInformantRelatedEntityPersonName(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsInformantRelatedEntityPersonName(
-			this, diagnostics, context);
+		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsInformantRelatedEntityPersonName(this, diagnostics, context);
 	}
 
 	/**
@@ -2450,8 +2241,7 @@ public class GeneralHeaderConstraintsImpl extends ClinicalDocumentImpl implement
 	 */
 	public boolean validateGeneralHeaderConstraintsInformantAssignedEntityAddr(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsInformantAssignedEntityAddr(
-			this, diagnostics, context);
+		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsInformantAssignedEntityAddr(this, diagnostics, context);
 	}
 
 	/**
@@ -2461,8 +2251,7 @@ public class GeneralHeaderConstraintsImpl extends ClinicalDocumentImpl implement
 	 */
 	public boolean validateGeneralHeaderConstraintsInformantAssignedEntityCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsInformantAssignedEntityCode(
-			this, diagnostics, context);
+		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsInformantAssignedEntityCode(this, diagnostics, context);
 	}
 
 	/**
@@ -2472,8 +2261,7 @@ public class GeneralHeaderConstraintsImpl extends ClinicalDocumentImpl implement
 	 */
 	public boolean validateGeneralHeaderConstraintsInformantAssignedEntityCodeP(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsInformantAssignedEntityCodeP(
-			this, diagnostics, context);
+		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsInformantAssignedEntityCodeP(this, diagnostics, context);
 	}
 
 	/**
@@ -2483,8 +2271,7 @@ public class GeneralHeaderConstraintsImpl extends ClinicalDocumentImpl implement
 	 */
 	public boolean validateGeneralHeaderConstraintsInformantAssignedEntityId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsInformantAssignedEntityId(
-			this, diagnostics, context);
+		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsInformantAssignedEntityId(this, diagnostics, context);
 	}
 
 	/**
@@ -2494,8 +2281,7 @@ public class GeneralHeaderConstraintsImpl extends ClinicalDocumentImpl implement
 	 */
 	public boolean validateGeneralHeaderConstraintsInformantAssignedEntityAssignedPerson(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsInformantAssignedEntityAssignedPerson(
-			this, diagnostics, context);
+		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsInformantAssignedEntityAssignedPerson(this, diagnostics, context);
 	}
 
 	/**
@@ -2505,8 +2291,7 @@ public class GeneralHeaderConstraintsImpl extends ClinicalDocumentImpl implement
 	 */
 	public boolean validateGeneralHeaderConstraintsInformantRelatedEntityUSRealmAddressStreet(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsInformantRelatedEntityUSRealmAddressStreet(
-			this, diagnostics, context);
+		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsInformantRelatedEntityUSRealmAddressStreet(this, diagnostics, context);
 	}
 
 	/**
@@ -2516,8 +2301,7 @@ public class GeneralHeaderConstraintsImpl extends ClinicalDocumentImpl implement
 	 */
 	public boolean validateGeneralHeaderConstraintsInformantRelatedEntityUSRealmAddressCity(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsInformantRelatedEntityUSRealmAddressCity(
-			this, diagnostics, context);
+		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsInformantRelatedEntityUSRealmAddressCity(this, diagnostics, context);
 	}
 
 	/**
@@ -2527,8 +2311,7 @@ public class GeneralHeaderConstraintsImpl extends ClinicalDocumentImpl implement
 	 */
 	public boolean validateGeneralHeaderConstraintsInformantRelatedEntityUSRealmAddressCountry(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsInformantRelatedEntityUSRealmAddressCountry(
-			this, diagnostics, context);
+		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsInformantRelatedEntityUSRealmAddressCountry(this, diagnostics, context);
 	}
 
 	/**
@@ -2538,8 +2321,7 @@ public class GeneralHeaderConstraintsImpl extends ClinicalDocumentImpl implement
 	 */
 	public boolean validateGeneralHeaderConstraintsInformantRelatedEntityUSRealmAddressPostalCode(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsInformantRelatedEntityUSRealmAddressPostalCode(
-			this, diagnostics, context);
+		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsInformantRelatedEntityUSRealmAddressPostalCode(this, diagnostics, context);
 	}
 
 	/**
@@ -2549,8 +2331,7 @@ public class GeneralHeaderConstraintsImpl extends ClinicalDocumentImpl implement
 	 */
 	public boolean validateGeneralHeaderConstraintsInformantRelatedEntityUSRealmAddressState(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsInformantRelatedEntityUSRealmAddressState(
-			this, diagnostics, context);
+		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsInformantRelatedEntityUSRealmAddressState(this, diagnostics, context);
 	}
 
 	/**
@@ -2560,8 +2341,7 @@ public class GeneralHeaderConstraintsImpl extends ClinicalDocumentImpl implement
 	 */
 	public boolean validateGeneralHeaderConstraintsInformantRelatedEntityUSRealmAddressStreetAddressLine(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsInformantRelatedEntityUSRealmAddressStreetAddressLine(
-			this, diagnostics, context);
+		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsInformantRelatedEntityUSRealmAddressStreetAddressLine(this, diagnostics, context);
 	}
 
 	/**
@@ -2571,8 +2351,7 @@ public class GeneralHeaderConstraintsImpl extends ClinicalDocumentImpl implement
 	 */
 	public boolean validateGeneralHeaderConstraintsInformantRelatedEntityUSRealmAddressUseP(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsInformantRelatedEntityUSRealmAddressUseP(
-			this, diagnostics, context);
+		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsInformantRelatedEntityUSRealmAddressUseP(this, diagnostics, context);
 	}
 
 	/**
@@ -2582,8 +2361,7 @@ public class GeneralHeaderConstraintsImpl extends ClinicalDocumentImpl implement
 	 */
 	public boolean validateGeneralHeaderConstraintsInformantRelatedEntityUSRealmAddressUse(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsInformantRelatedEntityUSRealmAddressUse(
-			this, diagnostics, context);
+		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsInformantRelatedEntityUSRealmAddressUse(this, diagnostics, context);
 	}
 
 	/**
@@ -2593,8 +2371,7 @@ public class GeneralHeaderConstraintsImpl extends ClinicalDocumentImpl implement
 	 */
 	public boolean validateGeneralHeaderConstraintsInformantHasAssignedEntityOrRelatedEntity(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsInformantHasAssignedEntityOrRelatedEntity(
-			this, diagnostics, context);
+		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsInformantHasAssignedEntityOrRelatedEntity(this, diagnostics, context);
 	}
 
 	/**
@@ -2604,8 +2381,7 @@ public class GeneralHeaderConstraintsImpl extends ClinicalDocumentImpl implement
 	 */
 	public boolean validateGeneralHeaderConstraintsInformantAssignedEntity(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsInformantAssignedEntity(
-			this, diagnostics, context);
+		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsInformantAssignedEntity(this, diagnostics, context);
 	}
 
 	/**
@@ -2615,8 +2391,7 @@ public class GeneralHeaderConstraintsImpl extends ClinicalDocumentImpl implement
 	 */
 	public boolean validateGeneralHeaderConstraintsInformantRelatedEntity(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsInformantRelatedEntity(
-			this, diagnostics, context);
+		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsInformantRelatedEntity(this, diagnostics, context);
 	}
 
 	/**
@@ -2626,8 +2401,7 @@ public class GeneralHeaderConstraintsImpl extends ClinicalDocumentImpl implement
 	 */
 	public boolean validateGeneralHeaderConstraintsParticipantSupportAssociatedEntityHasAssociatedPersonOrScopingOrganization(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsParticipantSupportAssociatedEntityHasAssociatedPersonOrScopingOrganization(
-			this, diagnostics, context);
+		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsParticipantSupportAssociatedEntityHasAssociatedPersonOrScopingOrganization(this, diagnostics, context);
 	}
 
 	/**
@@ -2637,8 +2411,7 @@ public class GeneralHeaderConstraintsImpl extends ClinicalDocumentImpl implement
 	 */
 	public boolean validateGeneralHeaderConstraintsInformantRelatedEntityAddr(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsInformantRelatedEntityAddr(
-			this, diagnostics, context);
+		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsInformantRelatedEntityAddr(this, diagnostics, context);
 	}
 
 	/**
@@ -2648,8 +2421,7 @@ public class GeneralHeaderConstraintsImpl extends ClinicalDocumentImpl implement
 	 */
 	public boolean validateGeneralHeaderConstraintsInformantRelatedEntityPerson(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsInformantRelatedEntityPerson(
-			this, diagnostics, context);
+		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsInformantRelatedEntityPerson(this, diagnostics, context);
 	}
 
 	/**
@@ -2659,8 +2431,7 @@ public class GeneralHeaderConstraintsImpl extends ClinicalDocumentImpl implement
 	 */
 	public boolean validateGeneralHeaderConstraintsInformantAssignedEntityPersonName(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsInformantAssignedEntityPersonName(
-			this, diagnostics, context);
+		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsInformantAssignedEntityPersonName(this, diagnostics, context);
 	}
 
 	/**
@@ -2670,8 +2441,7 @@ public class GeneralHeaderConstraintsImpl extends ClinicalDocumentImpl implement
 	 */
 	public boolean validateGeneralHeaderConstraintsInformantAssignedEntityHasNationalProviderIdentifier(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsInformantAssignedEntityHasNationalProviderIdentifier(
-			this, diagnostics, context);
+		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsInformantAssignedEntityHasNationalProviderIdentifier(this, diagnostics, context);
 	}
 
 	/**
@@ -2681,8 +2451,7 @@ public class GeneralHeaderConstraintsImpl extends ClinicalDocumentImpl implement
 	 */
 	public boolean validateGeneralHeaderConstraintsParticipantSupportTime(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsParticipantSupportTime(
-			this, diagnostics, context);
+		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsParticipantSupportTime(this, diagnostics, context);
 	}
 
 	/**
@@ -2692,8 +2461,7 @@ public class GeneralHeaderConstraintsImpl extends ClinicalDocumentImpl implement
 	 */
 	public boolean validateGeneralHeaderConstraintsInFulfillmentOfOrderId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsInFulfillmentOfOrderId(
-			this, diagnostics, context);
+		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsInFulfillmentOfOrderId(this, diagnostics, context);
 	}
 
 	/**
@@ -2703,8 +2471,7 @@ public class GeneralHeaderConstraintsImpl extends ClinicalDocumentImpl implement
 	 */
 	public boolean validateGeneralHeaderConstraintsInFulfillmentOfOrder(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsInFulfillmentOfOrder(
-			this, diagnostics, context);
+		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsInFulfillmentOfOrder(this, diagnostics, context);
 	}
 
 	/**
@@ -2714,8 +2481,7 @@ public class GeneralHeaderConstraintsImpl extends ClinicalDocumentImpl implement
 	 */
 	public boolean validateGeneralHeaderConstraintsDocumentationOfServiceEventPerformer1AssignedEntityHasNationalProviderIdentifier(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsDocumentationOfServiceEventPerformer1AssignedEntityHasNationalProviderIdentifier(
-			this, diagnostics, context);
+		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsDocumentationOfServiceEventPerformer1AssignedEntityHasNationalProviderIdentifier(this, diagnostics, context);
 	}
 
 	/**
@@ -2725,8 +2491,7 @@ public class GeneralHeaderConstraintsImpl extends ClinicalDocumentImpl implement
 	 */
 	public boolean validateGeneralHeaderConstraintsDocumentationOfServiceEventPerformer1AssignedEntityCodeP(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsDocumentationOfServiceEventPerformer1AssignedEntityCodeP(
-			this, diagnostics, context);
+		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsDocumentationOfServiceEventPerformer1AssignedEntityCodeP(this, diagnostics, context);
 	}
 
 	/**
@@ -2736,8 +2501,7 @@ public class GeneralHeaderConstraintsImpl extends ClinicalDocumentImpl implement
 	 */
 	public boolean validateGeneralHeaderConstraintsDocumentationOfServiceEventPerformer1AssignedEntityCode(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsDocumentationOfServiceEventPerformer1AssignedEntityCode(
-			this, diagnostics, context);
+		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsDocumentationOfServiceEventPerformer1AssignedEntityCode(this, diagnostics, context);
 	}
 
 	/**
@@ -2747,8 +2511,7 @@ public class GeneralHeaderConstraintsImpl extends ClinicalDocumentImpl implement
 	 */
 	public boolean validateGeneralHeaderConstraintsDocumentationOfServiceEventPerformer1AssignedEntityId(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsDocumentationOfServiceEventPerformer1AssignedEntityId(
-			this, diagnostics, context);
+		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsDocumentationOfServiceEventPerformer1AssignedEntityId(this, diagnostics, context);
 	}
 
 	/**
@@ -2758,8 +2521,7 @@ public class GeneralHeaderConstraintsImpl extends ClinicalDocumentImpl implement
 	 */
 	public boolean validateGeneralHeaderConstraintsDocumentationOfServiceEventPerformer1FunctionCodeP(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsDocumentationOfServiceEventPerformer1FunctionCodeP(
-			this, diagnostics, context);
+		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsDocumentationOfServiceEventPerformer1FunctionCodeP(this, diagnostics, context);
 	}
 
 	/**
@@ -2769,8 +2531,7 @@ public class GeneralHeaderConstraintsImpl extends ClinicalDocumentImpl implement
 	 */
 	public boolean validateGeneralHeaderConstraintsDocumentationOfServiceEventPerformer1FunctionCode(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsDocumentationOfServiceEventPerformer1FunctionCode(
-			this, diagnostics, context);
+		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsDocumentationOfServiceEventPerformer1FunctionCode(this, diagnostics, context);
 	}
 
 	/**
@@ -2780,8 +2541,7 @@ public class GeneralHeaderConstraintsImpl extends ClinicalDocumentImpl implement
 	 */
 	public boolean validateGeneralHeaderConstraintsDocumentationOfServiceEventPerformer1TypeCode(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsDocumentationOfServiceEventPerformer1TypeCode(
-			this, diagnostics, context);
+		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsDocumentationOfServiceEventPerformer1TypeCode(this, diagnostics, context);
 	}
 
 	/**
@@ -2791,8 +2551,7 @@ public class GeneralHeaderConstraintsImpl extends ClinicalDocumentImpl implement
 	 */
 	public boolean validateGeneralHeaderConstraintsDocumentationOfServiceEventPerformer1AssignedEntity(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsDocumentationOfServiceEventPerformer1AssignedEntity(
-			this, diagnostics, context);
+		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsDocumentationOfServiceEventPerformer1AssignedEntity(this, diagnostics, context);
 	}
 
 	/**
@@ -2802,8 +2561,7 @@ public class GeneralHeaderConstraintsImpl extends ClinicalDocumentImpl implement
 	 */
 	public boolean validateGeneralHeaderConstraintsDocumentationOfServiceEventEffectiveTimeLow(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsDocumentationOfServiceEventEffectiveTimeLow(
-			this, diagnostics, context);
+		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsDocumentationOfServiceEventEffectiveTimeLow(this, diagnostics, context);
 	}
 
 	/**
@@ -2813,8 +2571,7 @@ public class GeneralHeaderConstraintsImpl extends ClinicalDocumentImpl implement
 	 */
 	public boolean validateGeneralHeaderConstraintsDocumentationOfServiceEventEffectiveTime(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsDocumentationOfServiceEventEffectiveTime(
-			this, diagnostics, context);
+		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsDocumentationOfServiceEventEffectiveTime(this, diagnostics, context);
 	}
 
 	/**
@@ -2824,8 +2581,7 @@ public class GeneralHeaderConstraintsImpl extends ClinicalDocumentImpl implement
 	 */
 	public boolean validateGeneralHeaderConstraintsDocumentationOfServiceEventPerformer(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsDocumentationOfServiceEventPerformer(
-			this, diagnostics, context);
+		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsDocumentationOfServiceEventPerformer(this, diagnostics, context);
 	}
 
 	/**
@@ -2835,8 +2591,7 @@ public class GeneralHeaderConstraintsImpl extends ClinicalDocumentImpl implement
 	 */
 	public boolean validateGeneralHeaderConstraintsDocumentationOfServiceEvent(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsDocumentationOfServiceEvent(
-			this, diagnostics, context);
+		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsDocumentationOfServiceEvent(this, diagnostics, context);
 	}
 
 	/**
@@ -2846,8 +2601,7 @@ public class GeneralHeaderConstraintsImpl extends ClinicalDocumentImpl implement
 	 */
 	public boolean validateGeneralHeaderConstraintsAuthorizationConsentCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsAuthorizationConsentCode(
-			this, diagnostics, context);
+		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsAuthorizationConsentCode(this, diagnostics, context);
 	}
 
 	/**
@@ -2857,8 +2611,7 @@ public class GeneralHeaderConstraintsImpl extends ClinicalDocumentImpl implement
 	 */
 	public boolean validateGeneralHeaderConstraintsAuthorizationConsentId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsAuthorizationConsentId(
-			this, diagnostics, context);
+		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsAuthorizationConsentId(this, diagnostics, context);
 	}
 
 	/**
@@ -2868,8 +2621,7 @@ public class GeneralHeaderConstraintsImpl extends ClinicalDocumentImpl implement
 	 */
 	public boolean validateGeneralHeaderConstraintsAuthorizationConsentStatusCodeP(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsAuthorizationConsentStatusCodeP(
-			this, diagnostics, context);
+		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsAuthorizationConsentStatusCodeP(this, diagnostics, context);
 	}
 
 	/**
@@ -2879,8 +2631,7 @@ public class GeneralHeaderConstraintsImpl extends ClinicalDocumentImpl implement
 	 */
 	public boolean validateGeneralHeaderConstraintsAuthorizationConsentStatusCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsAuthorizationConsentStatusCode(
-			this, diagnostics, context);
+		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsAuthorizationConsentStatusCode(this, diagnostics, context);
 	}
 
 	/**
@@ -2890,8 +2641,7 @@ public class GeneralHeaderConstraintsImpl extends ClinicalDocumentImpl implement
 	 */
 	public boolean validateGeneralHeaderConstraintsAuthorizationConsent(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsAuthorizationConsent(
-			this, diagnostics, context);
+		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsAuthorizationConsent(this, diagnostics, context);
 	}
 
 	/**
@@ -2900,16 +2650,16 @@ public class GeneralHeaderConstraintsImpl extends ClinicalDocumentImpl implement
 	 * @generated
 	 */
 	public GeneralHeaderConstraints init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	   * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public GeneralHeaderConstraints init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // GeneralHeaderConstraintsImpl

@@ -78,7 +78,6 @@ public class AssessmentScaleSupportingObservationOperations extends ClinicalStat
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.code.codeSystem = '2.16.840.1.113883.6.1' or self.code.codeSystem = '2.16.840.1.113883.6.96'
 	 * @param assessmentScaleSupportingObservation The receiving '<em><b>Assessment Scale Supporting Observation</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -89,28 +88,28 @@ public class AssessmentScaleSupportingObservationOperations extends ClinicalStat
 	public static boolean validateAssessmentScaleSupportingObservationCodeCodeSystem(
 			AssessmentScaleSupportingObservation assessmentScaleSupportingObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_ASSESSMENT_SCALE_SUPPORTING_OBSERVATION_CODE_CODE_SYSTEM__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.ASSESSMENT_SCALE_SUPPORTING_OBSERVATION);
 			try {
 				VALIDATE_ASSESSMENT_SCALE_SUPPORTING_OBSERVATION_CODE_CODE_SYSTEM__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ASSESSMENT_SCALE_SUPPORTING_OBSERVATION_CODE_CODE_SYSTEM__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_ASSESSMENT_SCALE_SUPPORTING_OBSERVATION_CODE_CODE_SYSTEM__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			assessmentScaleSupportingObservation)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_ASSESSMENT_SCALE_SUPPORTING_OBSERVATION_CODE_CODE_SYSTEM__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(assessmentScaleSupportingObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.ASSESSMENT_SCALE_SUPPORTING_OBSERVATION__ASSESSMENT_SCALE_SUPPORTING_OBSERVATION_CODE_CODE_SYSTEM,
-					ConsolPlugin.INSTANCE.getString("AssessmentScaleSupportingObservationCodeCodeSystem"),
-					new Object[] { assessmentScaleSupportingObservation }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.ASSESSMENT_SCALE_SUPPORTING_OBSERVATION__ASSESSMENT_SCALE_SUPPORTING_OBSERVATION_CODE_CODE_SYSTEM,
+						 ConsolPlugin.INSTANCE.getString("AssessmentScaleSupportingObservationCodeCodeSystem"),
+						 new Object [] { assessmentScaleSupportingObservation }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -141,7 +140,6 @@ public class AssessmentScaleSupportingObservationOperations extends ClinicalStat
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.value.oclAsType(datatypes::CD).translation->size() = 1
 	 * @param assessmentScaleSupportingObservation The receiving '<em><b>Assessment Scale Supporting Observation</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -152,28 +150,28 @@ public class AssessmentScaleSupportingObservationOperations extends ClinicalStat
 	public static boolean validateAssessmentScaleSupportingObservationValueTranslation(
 			AssessmentScaleSupportingObservation assessmentScaleSupportingObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_ASSESSMENT_SCALE_SUPPORTING_OBSERVATION_VALUE_TRANSLATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.ASSESSMENT_SCALE_SUPPORTING_OBSERVATION);
 			try {
 				VALIDATE_ASSESSMENT_SCALE_SUPPORTING_OBSERVATION_VALUE_TRANSLATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ASSESSMENT_SCALE_SUPPORTING_OBSERVATION_VALUE_TRANSLATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_ASSESSMENT_SCALE_SUPPORTING_OBSERVATION_VALUE_TRANSLATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			assessmentScaleSupportingObservation)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_ASSESSMENT_SCALE_SUPPORTING_OBSERVATION_VALUE_TRANSLATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(assessmentScaleSupportingObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.ASSESSMENT_SCALE_SUPPORTING_OBSERVATION__ASSESSMENT_SCALE_SUPPORTING_OBSERVATION_VALUE_TRANSLATION,
-					ConsolPlugin.INSTANCE.getString("AssessmentScaleSupportingObservationValueTranslation"),
-					new Object[] { assessmentScaleSupportingObservation }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.INFO,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.ASSESSMENT_SCALE_SUPPORTING_OBSERVATION__ASSESSMENT_SCALE_SUPPORTING_OBSERVATION_VALUE_TRANSLATION,
+						 ConsolPlugin.INSTANCE.getString("AssessmentScaleSupportingObservationValueTranslation"),
+						 new Object [] { assessmentScaleSupportingObservation }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -204,7 +202,6 @@ public class AssessmentScaleSupportingObservationOperations extends ClinicalStat
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.4.86')
 	 * @param assessmentScaleSupportingObservation The receiving '<em><b>Assessment Scale Supporting Observation</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -215,28 +212,28 @@ public class AssessmentScaleSupportingObservationOperations extends ClinicalStat
 	public static boolean validateAssessmentScaleSupportingObservationTemplateId(
 			AssessmentScaleSupportingObservation assessmentScaleSupportingObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_ASSESSMENT_SCALE_SUPPORTING_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.ASSESSMENT_SCALE_SUPPORTING_OBSERVATION);
 			try {
 				VALIDATE_ASSESSMENT_SCALE_SUPPORTING_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ASSESSMENT_SCALE_SUPPORTING_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_ASSESSMENT_SCALE_SUPPORTING_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			assessmentScaleSupportingObservation)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_ASSESSMENT_SCALE_SUPPORTING_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(assessmentScaleSupportingObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.ASSESSMENT_SCALE_SUPPORTING_OBSERVATION__ASSESSMENT_SCALE_SUPPORTING_OBSERVATION_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("AssessmentScaleSupportingObservationTemplateId"),
-					new Object[] { assessmentScaleSupportingObservation }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.ASSESSMENT_SCALE_SUPPORTING_OBSERVATION__ASSESSMENT_SCALE_SUPPORTING_OBSERVATION_TEMPLATE_ID,
+						 ConsolPlugin.INSTANCE.getString("AssessmentScaleSupportingObservationTemplateId"),
+						 new Object [] { assessmentScaleSupportingObservation }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -267,7 +264,6 @@ public class AssessmentScaleSupportingObservationOperations extends ClinicalStat
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.classCode=vocab::ActClassObservation::OBS
 	 * @param assessmentScaleSupportingObservation The receiving '<em><b>Assessment Scale Supporting Observation</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -278,28 +274,28 @@ public class AssessmentScaleSupportingObservationOperations extends ClinicalStat
 	public static boolean validateAssessmentScaleSupportingObservationClassCode(
 			AssessmentScaleSupportingObservation assessmentScaleSupportingObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_ASSESSMENT_SCALE_SUPPORTING_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.ASSESSMENT_SCALE_SUPPORTING_OBSERVATION);
 			try {
 				VALIDATE_ASSESSMENT_SCALE_SUPPORTING_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ASSESSMENT_SCALE_SUPPORTING_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_ASSESSMENT_SCALE_SUPPORTING_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			assessmentScaleSupportingObservation)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_ASSESSMENT_SCALE_SUPPORTING_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(assessmentScaleSupportingObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.ASSESSMENT_SCALE_SUPPORTING_OBSERVATION__ASSESSMENT_SCALE_SUPPORTING_OBSERVATION_CLASS_CODE,
-					ConsolPlugin.INSTANCE.getString("AssessmentScaleSupportingObservationClassCode"),
-					new Object[] { assessmentScaleSupportingObservation }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.ASSESSMENT_SCALE_SUPPORTING_OBSERVATION__ASSESSMENT_SCALE_SUPPORTING_OBSERVATION_CLASS_CODE,
+						 ConsolPlugin.INSTANCE.getString("AssessmentScaleSupportingObservationClassCode"),
+						 new Object [] { assessmentScaleSupportingObservation }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -330,7 +326,6 @@ public class AssessmentScaleSupportingObservationOperations extends ClinicalStat
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.moodCode=vocab::x_ActMoodDocumentObservation::EVN
 	 * @param assessmentScaleSupportingObservation The receiving '<em><b>Assessment Scale Supporting Observation</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -341,28 +336,28 @@ public class AssessmentScaleSupportingObservationOperations extends ClinicalStat
 	public static boolean validateAssessmentScaleSupportingObservationMoodCode(
 			AssessmentScaleSupportingObservation assessmentScaleSupportingObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_ASSESSMENT_SCALE_SUPPORTING_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.ASSESSMENT_SCALE_SUPPORTING_OBSERVATION);
 			try {
 				VALIDATE_ASSESSMENT_SCALE_SUPPORTING_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ASSESSMENT_SCALE_SUPPORTING_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_ASSESSMENT_SCALE_SUPPORTING_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			assessmentScaleSupportingObservation)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_ASSESSMENT_SCALE_SUPPORTING_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(assessmentScaleSupportingObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.ASSESSMENT_SCALE_SUPPORTING_OBSERVATION__ASSESSMENT_SCALE_SUPPORTING_OBSERVATION_MOOD_CODE,
-					ConsolPlugin.INSTANCE.getString("AssessmentScaleSupportingObservationMoodCode"),
-					new Object[] { assessmentScaleSupportingObservation }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.ASSESSMENT_SCALE_SUPPORTING_OBSERVATION__ASSESSMENT_SCALE_SUPPORTING_OBSERVATION_MOOD_CODE,
+						 ConsolPlugin.INSTANCE.getString("AssessmentScaleSupportingObservationMoodCode"),
+						 new Object [] { assessmentScaleSupportingObservation }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -393,7 +388,6 @@ public class AssessmentScaleSupportingObservationOperations extends ClinicalStat
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * (self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined())
 	 * @param assessmentScaleSupportingObservation The receiving '<em><b>Assessment Scale Supporting Observation</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -404,27 +398,28 @@ public class AssessmentScaleSupportingObservationOperations extends ClinicalStat
 	public static boolean validateAssessmentScaleSupportingObservationCode(
 			AssessmentScaleSupportingObservation assessmentScaleSupportingObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_ASSESSMENT_SCALE_SUPPORTING_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.ASSESSMENT_SCALE_SUPPORTING_OBSERVATION);
 			try {
 				VALIDATE_ASSESSMENT_SCALE_SUPPORTING_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ASSESSMENT_SCALE_SUPPORTING_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ASSESSMENT_SCALE_SUPPORTING_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			assessmentScaleSupportingObservation)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_ASSESSMENT_SCALE_SUPPORTING_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(assessmentScaleSupportingObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.ASSESSMENT_SCALE_SUPPORTING_OBSERVATION__ASSESSMENT_SCALE_SUPPORTING_OBSERVATION_CODE,
-					ConsolPlugin.INSTANCE.getString("AssessmentScaleSupportingObservationCode"),
-					new Object[] { assessmentScaleSupportingObservation }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.ASSESSMENT_SCALE_SUPPORTING_OBSERVATION__ASSESSMENT_SCALE_SUPPORTING_OBSERVATION_CODE,
+						 ConsolPlugin.INSTANCE.getString("AssessmentScaleSupportingObservationCode"),
+						 new Object [] { assessmentScaleSupportingObservation }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -455,7 +450,6 @@ public class AssessmentScaleSupportingObservationOperations extends ClinicalStat
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * (self.id->isEmpty() or self.id->exists(element | element.isNullFlavorUndefined())) implies (not self.id->isEmpty())
 	 * @param assessmentScaleSupportingObservation The receiving '<em><b>Assessment Scale Supporting Observation</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -466,27 +460,28 @@ public class AssessmentScaleSupportingObservationOperations extends ClinicalStat
 	public static boolean validateAssessmentScaleSupportingObservationId(
 			AssessmentScaleSupportingObservation assessmentScaleSupportingObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_ASSESSMENT_SCALE_SUPPORTING_OBSERVATION_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.ASSESSMENT_SCALE_SUPPORTING_OBSERVATION);
 			try {
 				VALIDATE_ASSESSMENT_SCALE_SUPPORTING_OBSERVATION_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ASSESSMENT_SCALE_SUPPORTING_OBSERVATION_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ASSESSMENT_SCALE_SUPPORTING_OBSERVATION_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			assessmentScaleSupportingObservation)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_ASSESSMENT_SCALE_SUPPORTING_OBSERVATION_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(assessmentScaleSupportingObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.ASSESSMENT_SCALE_SUPPORTING_OBSERVATION__ASSESSMENT_SCALE_SUPPORTING_OBSERVATION_ID,
-					ConsolPlugin.INSTANCE.getString("AssessmentScaleSupportingObservationId"),
-					new Object[] { assessmentScaleSupportingObservation }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.ASSESSMENT_SCALE_SUPPORTING_OBSERVATION__ASSESSMENT_SCALE_SUPPORTING_OBSERVATION_ID,
+						 ConsolPlugin.INSTANCE.getString("AssessmentScaleSupportingObservationId"),
+						 new Object [] { assessmentScaleSupportingObservation }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -500,8 +495,9 @@ public class AssessmentScaleSupportingObservationOperations extends ClinicalStat
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_ASSESSMENT_SCALE_SUPPORTING_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and "
-			+ "let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in " + "value.code = 'completed')";
+	protected static final String VALIDATE_ASSESSMENT_SCALE_SUPPORTING_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and "+
+"let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in "+
+"value.code = 'completed')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateAssessmentScaleSupportingObservationStatusCode(AssessmentScaleSupportingObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Assessment Scale Supporting Observation Status Code</em>}' invariant operation.
@@ -518,9 +514,6 @@ public class AssessmentScaleSupportingObservationOperations extends ClinicalStat
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * (self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and 
-	 * let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in 
-	 * value.code = 'completed')
 	 * @param assessmentScaleSupportingObservation The receiving '<em><b>Assessment Scale Supporting Observation</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -531,28 +524,28 @@ public class AssessmentScaleSupportingObservationOperations extends ClinicalStat
 	public static boolean validateAssessmentScaleSupportingObservationStatusCode(
 			AssessmentScaleSupportingObservation assessmentScaleSupportingObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_ASSESSMENT_SCALE_SUPPORTING_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.ASSESSMENT_SCALE_SUPPORTING_OBSERVATION);
 			try {
 				VALIDATE_ASSESSMENT_SCALE_SUPPORTING_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ASSESSMENT_SCALE_SUPPORTING_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_ASSESSMENT_SCALE_SUPPORTING_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			assessmentScaleSupportingObservation)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_ASSESSMENT_SCALE_SUPPORTING_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(assessmentScaleSupportingObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.ASSESSMENT_SCALE_SUPPORTING_OBSERVATION__ASSESSMENT_SCALE_SUPPORTING_OBSERVATION_STATUS_CODE,
-					ConsolPlugin.INSTANCE.getString("AssessmentScaleSupportingObservationStatusCode"),
-					new Object[] { assessmentScaleSupportingObservation }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.ASSESSMENT_SCALE_SUPPORTING_OBSERVATION__ASSESSMENT_SCALE_SUPPORTING_OBSERVATION_STATUS_CODE,
+						 ConsolPlugin.INSTANCE.getString("AssessmentScaleSupportingObservationStatusCode"),
+						 new Object [] { assessmentScaleSupportingObservation }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -583,7 +576,6 @@ public class AssessmentScaleSupportingObservationOperations extends ClinicalStat
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * (self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined())
 	 * @param assessmentScaleSupportingObservation The receiving '<em><b>Assessment Scale Supporting Observation</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -594,28 +586,28 @@ public class AssessmentScaleSupportingObservationOperations extends ClinicalStat
 	public static boolean validateAssessmentScaleSupportingObservationStatusCodeP(
 			AssessmentScaleSupportingObservation assessmentScaleSupportingObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_ASSESSMENT_SCALE_SUPPORTING_OBSERVATION_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.ASSESSMENT_SCALE_SUPPORTING_OBSERVATION);
 			try {
 				VALIDATE_ASSESSMENT_SCALE_SUPPORTING_OBSERVATION_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ASSESSMENT_SCALE_SUPPORTING_OBSERVATION_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_ASSESSMENT_SCALE_SUPPORTING_OBSERVATION_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			assessmentScaleSupportingObservation)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_ASSESSMENT_SCALE_SUPPORTING_OBSERVATION_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(assessmentScaleSupportingObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.ASSESSMENT_SCALE_SUPPORTING_OBSERVATION__ASSESSMENT_SCALE_SUPPORTING_OBSERVATION_STATUS_CODE_P,
-					ConsolPlugin.INSTANCE.getString("AssessmentScaleSupportingObservationStatusCodeP"),
-					new Object[] { assessmentScaleSupportingObservation }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.ASSESSMENT_SCALE_SUPPORTING_OBSERVATION__ASSESSMENT_SCALE_SUPPORTING_OBSERVATION_STATUS_CODE_P,
+						 ConsolPlugin.INSTANCE.getString("AssessmentScaleSupportingObservationStatusCodeP"),
+						 new Object [] { assessmentScaleSupportingObservation }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -646,7 +638,6 @@ public class AssessmentScaleSupportingObservationOperations extends ClinicalStat
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * (self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (not self.value->isEmpty())
 	 * @param assessmentScaleSupportingObservation The receiving '<em><b>Assessment Scale Supporting Observation</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -657,28 +648,28 @@ public class AssessmentScaleSupportingObservationOperations extends ClinicalStat
 	public static boolean validateAssessmentScaleSupportingObservationValue(
 			AssessmentScaleSupportingObservation assessmentScaleSupportingObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_ASSESSMENT_SCALE_SUPPORTING_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.ASSESSMENT_SCALE_SUPPORTING_OBSERVATION);
 			try {
 				VALIDATE_ASSESSMENT_SCALE_SUPPORTING_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ASSESSMENT_SCALE_SUPPORTING_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_ASSESSMENT_SCALE_SUPPORTING_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			assessmentScaleSupportingObservation)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_ASSESSMENT_SCALE_SUPPORTING_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(assessmentScaleSupportingObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.ASSESSMENT_SCALE_SUPPORTING_OBSERVATION__ASSESSMENT_SCALE_SUPPORTING_OBSERVATION_VALUE,
-					ConsolPlugin.INSTANCE.getString("AssessmentScaleSupportingObservationValue"),
-					new Object[] { assessmentScaleSupportingObservation }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.ASSESSMENT_SCALE_SUPPORTING_OBSERVATION__ASSESSMENT_SCALE_SUPPORTING_OBSERVATION_VALUE,
+						 ConsolPlugin.INSTANCE.getString("AssessmentScaleSupportingObservationValue"),
+						 new Object [] { assessmentScaleSupportingObservation }));
 			}
-
+			 
 			return false;
 		}
 		return true;

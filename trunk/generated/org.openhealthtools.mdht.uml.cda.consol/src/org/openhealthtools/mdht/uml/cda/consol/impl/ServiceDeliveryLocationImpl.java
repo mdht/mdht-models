@@ -10,7 +10,6 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.consol.impl;
 
-import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
@@ -58,8 +57,7 @@ public class ServiceDeliveryLocationImpl extends ParticipantRoleImpl implements 
 	 */
 	public boolean validateServiceDeliveryLocationHasPlayingEntity(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ServiceDeliveryLocationOperations.validateServiceDeliveryLocationHasPlayingEntity(
-			this, diagnostics, context);
+		return ServiceDeliveryLocationOperations.validateServiceDeliveryLocationHasPlayingEntity(this, diagnostics, context);
 	}
 
 	/**
@@ -69,8 +67,7 @@ public class ServiceDeliveryLocationImpl extends ParticipantRoleImpl implements 
 	 */
 	public boolean validateServiceDeliveryLocationHasPlayingEntityClassCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ServiceDeliveryLocationOperations.validateServiceDeliveryLocationHasPlayingEntityClassCode(
-			this, diagnostics, context);
+		return ServiceDeliveryLocationOperations.validateServiceDeliveryLocationHasPlayingEntityClassCode(this, diagnostics, context);
 	}
 
 	/**
@@ -80,8 +77,7 @@ public class ServiceDeliveryLocationImpl extends ParticipantRoleImpl implements 
 	 */
 	public boolean validateServiceDeliveryLocationHasPlayingEntityName(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ServiceDeliveryLocationOperations.validateServiceDeliveryLocationHasPlayingEntityName(
-			this, diagnostics, context);
+		return ServiceDeliveryLocationOperations.validateServiceDeliveryLocationHasPlayingEntityName(this, diagnostics, context);
 	}
 
 	/**
@@ -135,16 +131,16 @@ public class ServiceDeliveryLocationImpl extends ParticipantRoleImpl implements 
 	 * @generated
 	 */
 	public ServiceDeliveryLocation init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	   * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public ServiceDeliveryLocation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // ServiceDeliveryLocationImpl

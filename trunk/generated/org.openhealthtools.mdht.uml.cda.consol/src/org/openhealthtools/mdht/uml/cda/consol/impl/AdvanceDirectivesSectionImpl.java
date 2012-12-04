@@ -10,7 +10,6 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.consol.impl;
 
-import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
@@ -96,8 +95,7 @@ public class AdvanceDirectivesSectionImpl extends AdvanceDirectivesSectionEntrie
 	 */
 	public boolean validateAdvanceDirectivesSectionAdvanceDirectiveObservation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return AdvanceDirectivesSectionOperations.validateAdvanceDirectivesSectionAdvanceDirectiveObservation(
-			this, diagnostics, context);
+		return AdvanceDirectivesSectionOperations.validateAdvanceDirectivesSectionAdvanceDirectiveObservation(this, diagnostics, context);
 	}
 
 	/**
@@ -117,8 +115,7 @@ public class AdvanceDirectivesSectionImpl extends AdvanceDirectivesSectionEntrie
 	@Override
 	public boolean validateAdvanceDirectivesSectionEntriesOptionalTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return AdvanceDirectivesSectionOperations.validateAdvanceDirectivesSectionEntriesOptionalTemplateId(
-			this, diagnostics, context);
+		return AdvanceDirectivesSectionOperations.validateAdvanceDirectivesSectionEntriesOptionalTemplateId(this, diagnostics, context);
 	}
 
 	/**
@@ -128,17 +125,17 @@ public class AdvanceDirectivesSectionImpl extends AdvanceDirectivesSectionEntrie
 	 */
 	@Override
 	public AdvanceDirectivesSection init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	   * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public AdvanceDirectivesSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // AdvanceDirectivesSectionImpl

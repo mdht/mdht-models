@@ -10,7 +10,6 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.consol.impl;
 
-import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
@@ -131,8 +130,7 @@ public class PregnancyObservationImpl extends ObservationImpl implements Pregnan
 	 */
 	public boolean validatePregnancyObservationEstimatedDateOfDelivery(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PregnancyObservationOperations.validatePregnancyObservationEstimatedDateOfDelivery(
-			this, diagnostics, context);
+		return PregnancyObservationOperations.validatePregnancyObservationEstimatedDateOfDelivery(this, diagnostics, context);
 	}
 
 	/**
@@ -150,16 +148,16 @@ public class PregnancyObservationImpl extends ObservationImpl implements Pregnan
 	 * @generated
 	 */
 	public PregnancyObservation init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	   * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public PregnancyObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // PregnancyObservationImpl

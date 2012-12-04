@@ -88,7 +88,6 @@ public class CaregiverCharacteristicsOperations extends ClinicalStatementOperati
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.value->forAll(val | val.oclAsType(datatypes::CD).codeSystem = '2.16.840.1.113883.6.1' or val.oclAsType(datatypes::CD).codeSystem = '2.16.840.1.113883.6.96')
 	 * @param caregiverCharacteristics The receiving '<em><b>Caregiver Characteristics</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -98,26 +97,28 @@ public class CaregiverCharacteristicsOperations extends ClinicalStatementOperati
 
 	public static boolean validateCaregiverCharacteristicsValueCodeSystem(
 			CaregiverCharacteristics caregiverCharacteristics, DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_CAREGIVER_CHARACTERISTICS_VALUE_CODE_SYSTEM__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.CAREGIVER_CHARACTERISTICS);
 			try {
 				VALIDATE_CAREGIVER_CHARACTERISTICS_VALUE_CODE_SYSTEM__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CAREGIVER_CHARACTERISTICS_VALUE_CODE_SYSTEM__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_CAREGIVER_CHARACTERISTICS_VALUE_CODE_SYSTEM__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			caregiverCharacteristics)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_CAREGIVER_CHARACTERISTICS_VALUE_CODE_SYSTEM__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(caregiverCharacteristics)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.CAREGIVER_CHARACTERISTICS__CAREGIVER_CHARACTERISTICS_VALUE_CODE_SYSTEM,
-					ConsolPlugin.INSTANCE.getString("CaregiverCharacteristicsValueCodeSystem"),
-					new Object[] { caregiverCharacteristics }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.CAREGIVER_CHARACTERISTICS__CAREGIVER_CHARACTERISTICS_VALUE_CODE_SYSTEM,
+						 ConsolPlugin.INSTANCE.getString("CaregiverCharacteristicsValueCodeSystem"),
+						 new Object [] { caregiverCharacteristics }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -148,7 +149,6 @@ public class CaregiverCharacteristicsOperations extends ClinicalStatementOperati
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.4.72')
 	 * @param caregiverCharacteristics The receiving '<em><b>Caregiver Characteristics</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -158,26 +158,28 @@ public class CaregiverCharacteristicsOperations extends ClinicalStatementOperati
 
 	public static boolean validateCaregiverCharacteristicsTemplateId(CaregiverCharacteristics caregiverCharacteristics,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_CAREGIVER_CHARACTERISTICS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.CAREGIVER_CHARACTERISTICS);
 			try {
 				VALIDATE_CAREGIVER_CHARACTERISTICS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CAREGIVER_CHARACTERISTICS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_CAREGIVER_CHARACTERISTICS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			caregiverCharacteristics)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_CAREGIVER_CHARACTERISTICS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(caregiverCharacteristics)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.CAREGIVER_CHARACTERISTICS__CAREGIVER_CHARACTERISTICS_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("CaregiverCharacteristicsTemplateId"),
-					new Object[] { caregiverCharacteristics }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.CAREGIVER_CHARACTERISTICS__CAREGIVER_CHARACTERISTICS_TEMPLATE_ID,
+						 ConsolPlugin.INSTANCE.getString("CaregiverCharacteristicsTemplateId"),
+						 new Object [] { caregiverCharacteristics }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -208,7 +210,6 @@ public class CaregiverCharacteristicsOperations extends ClinicalStatementOperati
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.classCode=vocab::ActClassObservation::OBS
 	 * @param caregiverCharacteristics The receiving '<em><b>Caregiver Characteristics</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -218,26 +219,28 @@ public class CaregiverCharacteristicsOperations extends ClinicalStatementOperati
 
 	public static boolean validateCaregiverCharacteristicsClassCode(CaregiverCharacteristics caregiverCharacteristics,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_CAREGIVER_CHARACTERISTICS_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.CAREGIVER_CHARACTERISTICS);
 			try {
 				VALIDATE_CAREGIVER_CHARACTERISTICS_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CAREGIVER_CHARACTERISTICS_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_CAREGIVER_CHARACTERISTICS_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			caregiverCharacteristics)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_CAREGIVER_CHARACTERISTICS_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(caregiverCharacteristics)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.CAREGIVER_CHARACTERISTICS__CAREGIVER_CHARACTERISTICS_CLASS_CODE,
-					ConsolPlugin.INSTANCE.getString("CaregiverCharacteristicsClassCode"),
-					new Object[] { caregiverCharacteristics }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.CAREGIVER_CHARACTERISTICS__CAREGIVER_CHARACTERISTICS_CLASS_CODE,
+						 ConsolPlugin.INSTANCE.getString("CaregiverCharacteristicsClassCode"),
+						 new Object [] { caregiverCharacteristics }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -268,7 +271,6 @@ public class CaregiverCharacteristicsOperations extends ClinicalStatementOperati
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.moodCode=vocab::x_ActMoodDocumentObservation::EVN
 	 * @param caregiverCharacteristics The receiving '<em><b>Caregiver Characteristics</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -278,26 +280,28 @@ public class CaregiverCharacteristicsOperations extends ClinicalStatementOperati
 
 	public static boolean validateCaregiverCharacteristicsMoodCode(CaregiverCharacteristics caregiverCharacteristics,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_CAREGIVER_CHARACTERISTICS_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.CAREGIVER_CHARACTERISTICS);
 			try {
 				VALIDATE_CAREGIVER_CHARACTERISTICS_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CAREGIVER_CHARACTERISTICS_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_CAREGIVER_CHARACTERISTICS_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			caregiverCharacteristics)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_CAREGIVER_CHARACTERISTICS_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(caregiverCharacteristics)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.CAREGIVER_CHARACTERISTICS__CAREGIVER_CHARACTERISTICS_MOOD_CODE,
-					ConsolPlugin.INSTANCE.getString("CaregiverCharacteristicsMoodCode"),
-					new Object[] { caregiverCharacteristics }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.CAREGIVER_CHARACTERISTICS__CAREGIVER_CHARACTERISTICS_MOOD_CODE,
+						 ConsolPlugin.INSTANCE.getString("CaregiverCharacteristicsMoodCode"),
+						 new Object [] { caregiverCharacteristics }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -328,7 +332,6 @@ public class CaregiverCharacteristicsOperations extends ClinicalStatementOperati
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * (self.id->isEmpty() or self.id->exists(element | element.isNullFlavorUndefined())) implies (not self.id->isEmpty())
 	 * @param caregiverCharacteristics The receiving '<em><b>Caregiver Characteristics</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -338,26 +341,28 @@ public class CaregiverCharacteristicsOperations extends ClinicalStatementOperati
 
 	public static boolean validateCaregiverCharacteristicsId(CaregiverCharacteristics caregiverCharacteristics,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_CAREGIVER_CHARACTERISTICS_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.CAREGIVER_CHARACTERISTICS);
 			try {
 				VALIDATE_CAREGIVER_CHARACTERISTICS_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CAREGIVER_CHARACTERISTICS_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_CAREGIVER_CHARACTERISTICS_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			caregiverCharacteristics)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_CAREGIVER_CHARACTERISTICS_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(caregiverCharacteristics)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.CAREGIVER_CHARACTERISTICS__CAREGIVER_CHARACTERISTICS_ID,
-					ConsolPlugin.INSTANCE.getString("CaregiverCharacteristicsId"),
-					new Object[] { caregiverCharacteristics }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.CAREGIVER_CHARACTERISTICS__CAREGIVER_CHARACTERISTICS_ID,
+						 ConsolPlugin.INSTANCE.getString("CaregiverCharacteristicsId"),
+						 new Object [] { caregiverCharacteristics }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -388,7 +393,6 @@ public class CaregiverCharacteristicsOperations extends ClinicalStatementOperati
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * (self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined())
 	 * @param caregiverCharacteristics The receiving '<em><b>Caregiver Characteristics</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -398,26 +402,28 @@ public class CaregiverCharacteristicsOperations extends ClinicalStatementOperati
 
 	public static boolean validateCaregiverCharacteristicsCode(CaregiverCharacteristics caregiverCharacteristics,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_CAREGIVER_CHARACTERISTICS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.CAREGIVER_CHARACTERISTICS);
 			try {
 				VALIDATE_CAREGIVER_CHARACTERISTICS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CAREGIVER_CHARACTERISTICS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_CAREGIVER_CHARACTERISTICS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			caregiverCharacteristics)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_CAREGIVER_CHARACTERISTICS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(caregiverCharacteristics)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.CAREGIVER_CHARACTERISTICS__CAREGIVER_CHARACTERISTICS_CODE,
-					ConsolPlugin.INSTANCE.getString("CaregiverCharacteristicsCode"),
-					new Object[] { caregiverCharacteristics }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.CAREGIVER_CHARACTERISTICS__CAREGIVER_CHARACTERISTICS_CODE,
+						 ConsolPlugin.INSTANCE.getString("CaregiverCharacteristicsCode"),
+						 new Object [] { caregiverCharacteristics }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -431,8 +437,9 @@ public class CaregiverCharacteristicsOperations extends ClinicalStatementOperati
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_CAREGIVER_CHARACTERISTICS_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and "
-			+ "let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in " + "value.code = 'completed')";
+	protected static final String VALIDATE_CAREGIVER_CHARACTERISTICS_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and "+
+"let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in "+
+"value.code = 'completed')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateCaregiverCharacteristicsStatusCode(CaregiverCharacteristics, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Caregiver Characteristics Status Code</em>}' invariant operation.
@@ -449,9 +456,6 @@ public class CaregiverCharacteristicsOperations extends ClinicalStatementOperati
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * (self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and 
-	 * let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in 
-	 * value.code = 'completed')
 	 * @param caregiverCharacteristics The receiving '<em><b>Caregiver Characteristics</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -461,26 +465,28 @@ public class CaregiverCharacteristicsOperations extends ClinicalStatementOperati
 
 	public static boolean validateCaregiverCharacteristicsStatusCode(CaregiverCharacteristics caregiverCharacteristics,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_CAREGIVER_CHARACTERISTICS_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.CAREGIVER_CHARACTERISTICS);
 			try {
 				VALIDATE_CAREGIVER_CHARACTERISTICS_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CAREGIVER_CHARACTERISTICS_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_CAREGIVER_CHARACTERISTICS_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			caregiverCharacteristics)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_CAREGIVER_CHARACTERISTICS_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(caregiverCharacteristics)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.CAREGIVER_CHARACTERISTICS__CAREGIVER_CHARACTERISTICS_STATUS_CODE,
-					ConsolPlugin.INSTANCE.getString("CaregiverCharacteristicsStatusCode"),
-					new Object[] { caregiverCharacteristics }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.CAREGIVER_CHARACTERISTICS__CAREGIVER_CHARACTERISTICS_STATUS_CODE,
+						 ConsolPlugin.INSTANCE.getString("CaregiverCharacteristicsStatusCode"),
+						 new Object [] { caregiverCharacteristics }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -511,7 +517,6 @@ public class CaregiverCharacteristicsOperations extends ClinicalStatementOperati
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * (self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined())
 	 * @param caregiverCharacteristics The receiving '<em><b>Caregiver Characteristics</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -521,26 +526,28 @@ public class CaregiverCharacteristicsOperations extends ClinicalStatementOperati
 
 	public static boolean validateCaregiverCharacteristicsStatusCodeP(
 			CaregiverCharacteristics caregiverCharacteristics, DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_CAREGIVER_CHARACTERISTICS_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.CAREGIVER_CHARACTERISTICS);
 			try {
 				VALIDATE_CAREGIVER_CHARACTERISTICS_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CAREGIVER_CHARACTERISTICS_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_CAREGIVER_CHARACTERISTICS_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			caregiverCharacteristics)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_CAREGIVER_CHARACTERISTICS_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(caregiverCharacteristics)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.CAREGIVER_CHARACTERISTICS__CAREGIVER_CHARACTERISTICS_STATUS_CODE_P,
-					ConsolPlugin.INSTANCE.getString("CaregiverCharacteristicsStatusCodeP"),
-					new Object[] { caregiverCharacteristics }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.CAREGIVER_CHARACTERISTICS__CAREGIVER_CHARACTERISTICS_STATUS_CODE_P,
+						 ConsolPlugin.INSTANCE.getString("CaregiverCharacteristicsStatusCodeP"),
+						 new Object [] { caregiverCharacteristics }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -571,7 +578,6 @@ public class CaregiverCharacteristicsOperations extends ClinicalStatementOperati
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * (self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | element.oclIsTypeOf(datatypes::CD)))
 	 * @param caregiverCharacteristics The receiving '<em><b>Caregiver Characteristics</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -581,26 +587,28 @@ public class CaregiverCharacteristicsOperations extends ClinicalStatementOperati
 
 	public static boolean validateCaregiverCharacteristicsValue(CaregiverCharacteristics caregiverCharacteristics,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_CAREGIVER_CHARACTERISTICS_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.CAREGIVER_CHARACTERISTICS);
 			try {
 				VALIDATE_CAREGIVER_CHARACTERISTICS_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CAREGIVER_CHARACTERISTICS_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_CAREGIVER_CHARACTERISTICS_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			caregiverCharacteristics)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_CAREGIVER_CHARACTERISTICS_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(caregiverCharacteristics)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.CAREGIVER_CHARACTERISTICS__CAREGIVER_CHARACTERISTICS_VALUE,
-					ConsolPlugin.INSTANCE.getString("CaregiverCharacteristicsValue"),
-					new Object[] { caregiverCharacteristics }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.CAREGIVER_CHARACTERISTICS__CAREGIVER_CHARACTERISTICS_VALUE,
+						 ConsolPlugin.INSTANCE.getString("CaregiverCharacteristicsValue"),
+						 new Object [] { caregiverCharacteristics }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -631,7 +639,6 @@ public class CaregiverCharacteristicsOperations extends ClinicalStatementOperati
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.participant->exists(participant : cda::Participant2 | not participant.oclIsUndefined() and participant.oclIsKindOf(cda::Participant2))
 	 * @param caregiverCharacteristics The receiving '<em><b>Caregiver Characteristics</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -641,26 +648,28 @@ public class CaregiverCharacteristicsOperations extends ClinicalStatementOperati
 
 	public static boolean validateCaregiverCharacteristicsParticipant(
 			CaregiverCharacteristics caregiverCharacteristics, DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_CAREGIVER_CHARACTERISTICS_PARTICIPANT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.CAREGIVER_CHARACTERISTICS);
 			try {
 				VALIDATE_CAREGIVER_CHARACTERISTICS_PARTICIPANT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CAREGIVER_CHARACTERISTICS_PARTICIPANT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_CAREGIVER_CHARACTERISTICS_PARTICIPANT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			caregiverCharacteristics)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_CAREGIVER_CHARACTERISTICS_PARTICIPANT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(caregiverCharacteristics)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.CAREGIVER_CHARACTERISTICS__CAREGIVER_CHARACTERISTICS_PARTICIPANT,
-					ConsolPlugin.INSTANCE.getString("CaregiverCharacteristicsParticipant"),
-					new Object[] { caregiverCharacteristics }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.CAREGIVER_CHARACTERISTICS__CAREGIVER_CHARACTERISTICS_PARTICIPANT,
+						 ConsolPlugin.INSTANCE.getString("CaregiverCharacteristicsParticipant"),
+						 new Object [] { caregiverCharacteristics }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -691,7 +700,6 @@ public class CaregiverCharacteristicsOperations extends ClinicalStatementOperati
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.participant->excluding(null).participantRole->excluding(null)->reject(isDefined('classCode'))
 	 * @param caregiverCharacteristics The receiving '<em><b>Caregiver Characteristics</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -701,30 +709,33 @@ public class CaregiverCharacteristicsOperations extends ClinicalStatementOperati
 	@SuppressWarnings("unchecked")
 	public static boolean validateCaregiverCharacteristicsParticipantParticipantRoleClassCode(
 			CaregiverCharacteristics caregiverCharacteristics, DiagnosticChain diagnostics, Map<Object, Object> context) {
-
-		OCL.Helper helper = EOCL_ENV.createOCLHelper();
-		helper.setContext(ConsolPackage.Literals.CAREGIVER_CHARACTERISTICS);
-		try {
-			OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_CAREGIVER_CHARACTERISTICS_PARTICIPANT_PARTICIPANT_ROLE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			VALIDATE_CAREGIVER_CHARACTERISTICS_PARTICIPANT_PARTICIPANT_ROLE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
-		} catch (ParserException pe) {
-			throw new UnsupportedOperationException(pe.getLocalizedMessage());
-		}
-
-		Object oclResult = VALIDATE_CAREGIVER_CHARACTERISTICS_PARTICIPANT_PARTICIPANT_ROLE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(caregiverCharacteristics);
+  	  
+		
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setContext(ConsolPackage.Literals.CAREGIVER_CHARACTERISTICS);
+			try {
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_CAREGIVER_CHARACTERISTICS_PARTICIPANT_PARTICIPANT_ROLE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_CAREGIVER_CHARACTERISTICS_PARTICIPANT_PARTICIPANT_ROLE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+			}
+			catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		
+		Object oclResult = VALIDATE_CAREGIVER_CHARACTERISTICS_PARTICIPANT_PARTICIPANT_ROLE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(caregiverCharacteristics);		
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
-
+  			
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.ERROR,
-						ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.CAREGIVER_CHARACTERISTICS__CAREGIVER_CHARACTERISTICS_PARTICIPANT_PARTICIPANT_ROLE_CLASS_CODE,
-						ConsolPlugin.INSTANCE.getString("CaregiverCharacteristicsParticipantParticipantRoleClassCode"),
-						new Object[] { eObject }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.CAREGIVER_CHARACTERISTICS__CAREGIVER_CHARACTERISTICS_PARTICIPANT_PARTICIPANT_ROLE_CLASS_CODE,
+						 ConsolPlugin.INSTANCE.getString("CaregiverCharacteristicsParticipantParticipantRoleClassCode"),
+						 new Object [] { eObject }));
 				}
-
+				 
 			}
 			return oclResultSet.isEmpty();
 		}
@@ -756,7 +767,6 @@ public class CaregiverCharacteristicsOperations extends ClinicalStatementOperati
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.participant->excluding(null)->reject(not time.oclIsUndefined() implies time.low->size() = 1)
 	 * @param caregiverCharacteristics The receiving '<em><b>Caregiver Characteristics</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -766,29 +776,33 @@ public class CaregiverCharacteristicsOperations extends ClinicalStatementOperati
 	@SuppressWarnings("unchecked")
 	public static boolean validateCaregiverCharacteristicsParticipantTimeLow(
 			CaregiverCharacteristics caregiverCharacteristics, DiagnosticChain diagnostics, Map<Object, Object> context) {
-
-		OCL.Helper helper = EOCL_ENV.createOCLHelper();
-		helper.setContext(ConsolPackage.Literals.CAREGIVER_CHARACTERISTICS);
-		try {
-			OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_CAREGIVER_CHARACTERISTICS_PARTICIPANT_TIME_LOW__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			VALIDATE_CAREGIVER_CHARACTERISTICS_PARTICIPANT_TIME_LOW__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
-		} catch (ParserException pe) {
-			throw new UnsupportedOperationException(pe.getLocalizedMessage());
-		}
-
-		Object oclResult = VALIDATE_CAREGIVER_CHARACTERISTICS_PARTICIPANT_TIME_LOW__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(caregiverCharacteristics);
+  	  
+		
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setContext(ConsolPackage.Literals.CAREGIVER_CHARACTERISTICS);
+			try {
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_CAREGIVER_CHARACTERISTICS_PARTICIPANT_TIME_LOW__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_CAREGIVER_CHARACTERISTICS_PARTICIPANT_TIME_LOW__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+			}
+			catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		
+		Object oclResult = VALIDATE_CAREGIVER_CHARACTERISTICS_PARTICIPANT_TIME_LOW__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(caregiverCharacteristics);		
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
-
+  			
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.CAREGIVER_CHARACTERISTICS__CAREGIVER_CHARACTERISTICS_PARTICIPANT_TIME_LOW,
-						ConsolPlugin.INSTANCE.getString("CaregiverCharacteristicsParticipantTimeLow"),
-						new Object[] { eObject }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.CAREGIVER_CHARACTERISTICS__CAREGIVER_CHARACTERISTICS_PARTICIPANT_TIME_LOW,
+						 ConsolPlugin.INSTANCE.getString("CaregiverCharacteristicsParticipantTimeLow"),
+						 new Object [] { eObject }));
 				}
-
+				 
 			}
 			return oclResultSet.isEmpty();
 		}
@@ -820,7 +834,6 @@ public class CaregiverCharacteristicsOperations extends ClinicalStatementOperati
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.participant->excluding(null)->reject(not time.oclIsUndefined() implies time.high->size() = 1)
 	 * @param caregiverCharacteristics The receiving '<em><b>Caregiver Characteristics</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -830,29 +843,33 @@ public class CaregiverCharacteristicsOperations extends ClinicalStatementOperati
 	@SuppressWarnings("unchecked")
 	public static boolean validateCaregiverCharacteristicsParticipantTimeHigh(
 			CaregiverCharacteristics caregiverCharacteristics, DiagnosticChain diagnostics, Map<Object, Object> context) {
-
-		OCL.Helper helper = EOCL_ENV.createOCLHelper();
-		helper.setContext(ConsolPackage.Literals.CAREGIVER_CHARACTERISTICS);
-		try {
-			OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_CAREGIVER_CHARACTERISTICS_PARTICIPANT_TIME_HIGH__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			VALIDATE_CAREGIVER_CHARACTERISTICS_PARTICIPANT_TIME_HIGH__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
-		} catch (ParserException pe) {
-			throw new UnsupportedOperationException(pe.getLocalizedMessage());
-		}
-
-		Object oclResult = VALIDATE_CAREGIVER_CHARACTERISTICS_PARTICIPANT_TIME_HIGH__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(caregiverCharacteristics);
+  	  
+		
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setContext(ConsolPackage.Literals.CAREGIVER_CHARACTERISTICS);
+			try {
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_CAREGIVER_CHARACTERISTICS_PARTICIPANT_TIME_HIGH__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_CAREGIVER_CHARACTERISTICS_PARTICIPANT_TIME_HIGH__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+			}
+			catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		
+		Object oclResult = VALIDATE_CAREGIVER_CHARACTERISTICS_PARTICIPANT_TIME_HIGH__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(caregiverCharacteristics);		
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
-
+  			
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.CAREGIVER_CHARACTERISTICS__CAREGIVER_CHARACTERISTICS_PARTICIPANT_TIME_HIGH,
-						ConsolPlugin.INSTANCE.getString("CaregiverCharacteristicsParticipantTimeHigh"),
-						new Object[] { eObject }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.INFO,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.CAREGIVER_CHARACTERISTICS__CAREGIVER_CHARACTERISTICS_PARTICIPANT_TIME_HIGH,
+						 ConsolPlugin.INSTANCE.getString("CaregiverCharacteristicsParticipantTimeHigh"),
+						 new Object [] { eObject }));
 				}
-
+				 
 			}
 			return oclResultSet.isEmpty();
 		}
@@ -884,7 +901,6 @@ public class CaregiverCharacteristicsOperations extends ClinicalStatementOperati
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.participant->excluding(null)->reject((time.oclIsUndefined() or time.isNullFlavorUndefined()) implies (not time.oclIsUndefined()))
 	 * @param caregiverCharacteristics The receiving '<em><b>Caregiver Characteristics</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -894,29 +910,33 @@ public class CaregiverCharacteristicsOperations extends ClinicalStatementOperati
 	@SuppressWarnings("unchecked")
 	public static boolean validateCaregiverCharacteristicsParticipantTime(
 			CaregiverCharacteristics caregiverCharacteristics, DiagnosticChain diagnostics, Map<Object, Object> context) {
-
-		OCL.Helper helper = EOCL_ENV.createOCLHelper();
-		helper.setContext(ConsolPackage.Literals.CAREGIVER_CHARACTERISTICS);
-		try {
-			OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_CAREGIVER_CHARACTERISTICS_PARTICIPANT_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			VALIDATE_CAREGIVER_CHARACTERISTICS_PARTICIPANT_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
-		} catch (ParserException pe) {
-			throw new UnsupportedOperationException(pe.getLocalizedMessage());
-		}
-
-		Object oclResult = VALIDATE_CAREGIVER_CHARACTERISTICS_PARTICIPANT_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(caregiverCharacteristics);
+  	  
+		
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setContext(ConsolPackage.Literals.CAREGIVER_CHARACTERISTICS);
+			try {
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_CAREGIVER_CHARACTERISTICS_PARTICIPANT_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_CAREGIVER_CHARACTERISTICS_PARTICIPANT_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+			}
+			catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		
+		Object oclResult = VALIDATE_CAREGIVER_CHARACTERISTICS_PARTICIPANT_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(caregiverCharacteristics);		
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
-
+  			
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.CAREGIVER_CHARACTERISTICS__CAREGIVER_CHARACTERISTICS_PARTICIPANT_TIME,
-						ConsolPlugin.INSTANCE.getString("CaregiverCharacteristicsParticipantTime"),
-						new Object[] { eObject }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.INFO,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.CAREGIVER_CHARACTERISTICS__CAREGIVER_CHARACTERISTICS_PARTICIPANT_TIME,
+						 ConsolPlugin.INSTANCE.getString("CaregiverCharacteristicsParticipantTime"),
+						 new Object [] { eObject }));
 				}
-
+				 
 			}
 			return oclResultSet.isEmpty();
 		}
@@ -948,7 +968,6 @@ public class CaregiverCharacteristicsOperations extends ClinicalStatementOperati
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.participant->excluding(null)->reject(participantRole->one(participantRole : cda::ParticipantRole | not participantRole.oclIsUndefined() and participantRole.oclIsKindOf(cda::ParticipantRole)))
 	 * @param caregiverCharacteristics The receiving '<em><b>Caregiver Characteristics</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -958,30 +977,33 @@ public class CaregiverCharacteristicsOperations extends ClinicalStatementOperati
 	@SuppressWarnings("unchecked")
 	public static boolean validateCaregiverCharacteristicsParticipantParticipantRole(
 			CaregiverCharacteristics caregiverCharacteristics, DiagnosticChain diagnostics, Map<Object, Object> context) {
-
-		OCL.Helper helper = EOCL_ENV.createOCLHelper();
-		helper.setContext(ConsolPackage.Literals.CAREGIVER_CHARACTERISTICS);
-		try {
-			OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_CAREGIVER_CHARACTERISTICS_PARTICIPANT_PARTICIPANT_ROLE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			VALIDATE_CAREGIVER_CHARACTERISTICS_PARTICIPANT_PARTICIPANT_ROLE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
-		} catch (ParserException pe) {
-			throw new UnsupportedOperationException(pe.getLocalizedMessage());
-		}
-
-		Object oclResult = VALIDATE_CAREGIVER_CHARACTERISTICS_PARTICIPANT_PARTICIPANT_ROLE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(caregiverCharacteristics);
+  	  
+		
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setContext(ConsolPackage.Literals.CAREGIVER_CHARACTERISTICS);
+			try {
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_CAREGIVER_CHARACTERISTICS_PARTICIPANT_PARTICIPANT_ROLE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_CAREGIVER_CHARACTERISTICS_PARTICIPANT_PARTICIPANT_ROLE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+			}
+			catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		
+		Object oclResult = VALIDATE_CAREGIVER_CHARACTERISTICS_PARTICIPANT_PARTICIPANT_ROLE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(caregiverCharacteristics);		
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
-
+  			
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.ERROR,
-						ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.CAREGIVER_CHARACTERISTICS__CAREGIVER_CHARACTERISTICS_PARTICIPANT_PARTICIPANT_ROLE,
-						ConsolPlugin.INSTANCE.getString("CaregiverCharacteristicsParticipantParticipantRole"),
-						new Object[] { eObject }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.CAREGIVER_CHARACTERISTICS__CAREGIVER_CHARACTERISTICS_PARTICIPANT_PARTICIPANT_ROLE,
+						 ConsolPlugin.INSTANCE.getString("CaregiverCharacteristicsParticipantParticipantRole"),
+						 new Object [] { eObject }));
 				}
-
+				 
 			}
 			return oclResultSet.isEmpty();
 		}

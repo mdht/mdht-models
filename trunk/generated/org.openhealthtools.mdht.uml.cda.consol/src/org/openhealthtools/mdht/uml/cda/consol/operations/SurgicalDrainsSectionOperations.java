@@ -76,7 +76,6 @@ public class SurgicalDrainsSectionOperations extends SectionOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.7.13')
 	 * @param surgicalDrainsSection The receiving '<em><b>Surgical Drains Section</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -85,26 +84,28 @@ public class SurgicalDrainsSectionOperations extends SectionOperations {
 	 */
 	public static boolean validateSurgicalDrainsSectionTemplateId(SurgicalDrainsSection surgicalDrainsSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_SURGICAL_DRAINS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.SURGICAL_DRAINS_SECTION);
 			try {
 				VALIDATE_SURGICAL_DRAINS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SURGICAL_DRAINS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_SURGICAL_DRAINS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			surgicalDrainsSection)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_SURGICAL_DRAINS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(surgicalDrainsSection)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.SURGICAL_DRAINS_SECTION__SURGICAL_DRAINS_SECTION_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("SurgicalDrainsSectionTemplateId"),
-					new Object[] { surgicalDrainsSection }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.SURGICAL_DRAINS_SECTION__SURGICAL_DRAINS_SECTION_TEMPLATE_ID,
+						 ConsolPlugin.INSTANCE.getString("SurgicalDrainsSectionTemplateId"),
+						 new Object [] { surgicalDrainsSection }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -118,9 +119,9 @@ public class SurgicalDrainsSectionOperations extends SectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_SURGICAL_DRAINS_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and "
-			+ "let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in "
-			+ "value.code = '11537-8' and value.codeSystem = '2.16.840.1.113883.6.1')";
+	protected static final String VALIDATE_SURGICAL_DRAINS_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and "+
+"let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in "+
+"value.code = '11537-8' and value.codeSystem = '2.16.840.1.113883.6.1')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateSurgicalDrainsSectionCode(SurgicalDrainsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Surgical Drains Section Code</em>}' invariant operation.
@@ -136,9 +137,6 @@ public class SurgicalDrainsSectionOperations extends SectionOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * (self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and 
-	 * let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in 
-	 * value.code = '11537-8' and value.codeSystem = '2.16.840.1.113883.6.1')
 	 * @param surgicalDrainsSection The receiving '<em><b>Surgical Drains Section</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -147,26 +145,28 @@ public class SurgicalDrainsSectionOperations extends SectionOperations {
 	 */
 	public static boolean validateSurgicalDrainsSectionCode(SurgicalDrainsSection surgicalDrainsSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_SURGICAL_DRAINS_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.SURGICAL_DRAINS_SECTION);
 			try {
 				VALIDATE_SURGICAL_DRAINS_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SURGICAL_DRAINS_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_SURGICAL_DRAINS_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			surgicalDrainsSection)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_SURGICAL_DRAINS_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(surgicalDrainsSection)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.SURGICAL_DRAINS_SECTION__SURGICAL_DRAINS_SECTION_CODE,
-					ConsolPlugin.INSTANCE.getString("SurgicalDrainsSectionCode"),
-					new Object[] { surgicalDrainsSection }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.SURGICAL_DRAINS_SECTION__SURGICAL_DRAINS_SECTION_CODE,
+						 ConsolPlugin.INSTANCE.getString("SurgicalDrainsSectionCode"),
+						 new Object [] { surgicalDrainsSection }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -197,7 +197,6 @@ public class SurgicalDrainsSectionOperations extends SectionOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * (self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined())
 	 * @param surgicalDrainsSection The receiving '<em><b>Surgical Drains Section</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -207,26 +206,28 @@ public class SurgicalDrainsSectionOperations extends SectionOperations {
 
 	public static boolean validateSurgicalDrainsSectionCodeP(SurgicalDrainsSection surgicalDrainsSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_SURGICAL_DRAINS_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.SURGICAL_DRAINS_SECTION);
 			try {
 				VALIDATE_SURGICAL_DRAINS_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SURGICAL_DRAINS_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_SURGICAL_DRAINS_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			surgicalDrainsSection)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_SURGICAL_DRAINS_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(surgicalDrainsSection)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.SURGICAL_DRAINS_SECTION__SURGICAL_DRAINS_SECTION_CODE_P,
-					ConsolPlugin.INSTANCE.getString("SurgicalDrainsSectionCodeP"),
-					new Object[] { surgicalDrainsSection }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.SURGICAL_DRAINS_SECTION__SURGICAL_DRAINS_SECTION_CODE_P,
+						 ConsolPlugin.INSTANCE.getString("SurgicalDrainsSectionCodeP"),
+						 new Object [] { surgicalDrainsSection }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -256,7 +257,6 @@ public class SurgicalDrainsSectionOperations extends SectionOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * not self.text.oclIsUndefined()
 	 * @param surgicalDrainsSection The receiving '<em><b>Surgical Drains Section</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -265,26 +265,28 @@ public class SurgicalDrainsSectionOperations extends SectionOperations {
 	 */
 	public static boolean validateSurgicalDrainsSectionText(SurgicalDrainsSection surgicalDrainsSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_SURGICAL_DRAINS_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.SURGICAL_DRAINS_SECTION);
 			try {
 				VALIDATE_SURGICAL_DRAINS_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SURGICAL_DRAINS_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_SURGICAL_DRAINS_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			surgicalDrainsSection)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_SURGICAL_DRAINS_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(surgicalDrainsSection)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.SURGICAL_DRAINS_SECTION__SURGICAL_DRAINS_SECTION_TEXT,
-					ConsolPlugin.INSTANCE.getString("SurgicalDrainsSectionText"),
-					new Object[] { surgicalDrainsSection }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.SURGICAL_DRAINS_SECTION__SURGICAL_DRAINS_SECTION_TEXT,
+						 ConsolPlugin.INSTANCE.getString("SurgicalDrainsSectionText"),
+						 new Object [] { surgicalDrainsSection }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -314,7 +316,6 @@ public class SurgicalDrainsSectionOperations extends SectionOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * (self.title.oclIsUndefined() or self.title.isNullFlavorUndefined()) implies (not self.title.oclIsUndefined())
 	 * @param surgicalDrainsSection The receiving '<em><b>Surgical Drains Section</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -323,26 +324,28 @@ public class SurgicalDrainsSectionOperations extends SectionOperations {
 	 */
 	public static boolean validateSurgicalDrainsSectionTitle(SurgicalDrainsSection surgicalDrainsSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_SURGICAL_DRAINS_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.SURGICAL_DRAINS_SECTION);
 			try {
 				VALIDATE_SURGICAL_DRAINS_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SURGICAL_DRAINS_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_SURGICAL_DRAINS_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			surgicalDrainsSection)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_SURGICAL_DRAINS_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(surgicalDrainsSection)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.SURGICAL_DRAINS_SECTION__SURGICAL_DRAINS_SECTION_TITLE,
-					ConsolPlugin.INSTANCE.getString("SurgicalDrainsSectionTitle"),
-					new Object[] { surgicalDrainsSection }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.SURGICAL_DRAINS_SECTION__SURGICAL_DRAINS_SECTION_TITLE,
+						 ConsolPlugin.INSTANCE.getString("SurgicalDrainsSectionTitle"),
+						 new Object [] { surgicalDrainsSection }));
 			}
-
+			 
 			return false;
 		}
 		return true;

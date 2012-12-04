@@ -10,7 +10,6 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.consol.impl;
 
-import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
@@ -60,8 +59,7 @@ public class HospitalDischargeMedicationsSectionImpl extends HospitalDischargeMe
 	 */
 	public boolean validateHospitalDischargeMedicationsSectionCodeP(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return HospitalDischargeMedicationsSectionOperations.validateHospitalDischargeMedicationsSectionCodeP(
-			this, diagnostics, context);
+		return HospitalDischargeMedicationsSectionOperations.validateHospitalDischargeMedicationsSectionCodeP(this, diagnostics, context);
 	}
 
 	/**
@@ -71,8 +69,7 @@ public class HospitalDischargeMedicationsSectionImpl extends HospitalDischargeMe
 	 */
 	public boolean validateHospitalDischargeMedicationsSectionCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return HospitalDischargeMedicationsSectionOperations.validateHospitalDischargeMedicationsSectionCode(
-			this, diagnostics, context);
+		return HospitalDischargeMedicationsSectionOperations.validateHospitalDischargeMedicationsSectionCode(this, diagnostics, context);
 	}
 
 	/**
@@ -82,8 +79,7 @@ public class HospitalDischargeMedicationsSectionImpl extends HospitalDischargeMe
 	 */
 	public boolean validateHospitalDischargeMedicationsSectionText(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return HospitalDischargeMedicationsSectionOperations.validateHospitalDischargeMedicationsSectionText(
-			this, diagnostics, context);
+		return HospitalDischargeMedicationsSectionOperations.validateHospitalDischargeMedicationsSectionText(this, diagnostics, context);
 	}
 
 	/**
@@ -93,8 +89,7 @@ public class HospitalDischargeMedicationsSectionImpl extends HospitalDischargeMe
 	 */
 	public boolean validateHospitalDischargeMedicationsSectionTitle(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return HospitalDischargeMedicationsSectionOperations.validateHospitalDischargeMedicationsSectionTitle(
-			this, diagnostics, context);
+		return HospitalDischargeMedicationsSectionOperations.validateHospitalDischargeMedicationsSectionTitle(this, diagnostics, context);
 	}
 
 	/**
@@ -104,8 +99,7 @@ public class HospitalDischargeMedicationsSectionImpl extends HospitalDischargeMe
 	 */
 	public boolean validateHospitalDischargeMedicationsSectionDischargeMedication(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return HospitalDischargeMedicationsSectionOperations.validateHospitalDischargeMedicationsSectionDischargeMedication(
-			this, diagnostics, context);
+		return HospitalDischargeMedicationsSectionOperations.validateHospitalDischargeMedicationsSectionDischargeMedication(this, diagnostics, context);
 	}
 
 	/**
@@ -125,8 +119,7 @@ public class HospitalDischargeMedicationsSectionImpl extends HospitalDischargeMe
 	@Override
 	public boolean validateHospitalDischargeMedicationsSectionEntriesOptionalTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return HospitalDischargeMedicationsSectionOperations.validateHospitalDischargeMedicationsSectionEntriesOptionalTemplateId(
-			this, diagnostics, context);
+		return HospitalDischargeMedicationsSectionOperations.validateHospitalDischargeMedicationsSectionEntriesOptionalTemplateId(this, diagnostics, context);
 	}
 
 	/**
@@ -136,17 +129,17 @@ public class HospitalDischargeMedicationsSectionImpl extends HospitalDischargeMe
 	 */
 	@Override
 	public HospitalDischargeMedicationsSection init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	   * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public HospitalDischargeMedicationsSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // HospitalDischargeMedicationsSectionImpl

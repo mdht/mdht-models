@@ -76,7 +76,6 @@ public class ProcedureContextOperations extends ClinicalStatementOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * not self.effectiveTime.oclIsUndefined() implies self.effectiveTime.value->size() = 1
 	 * @param procedureContext The receiving '<em><b>Procedure Context</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -86,26 +85,28 @@ public class ProcedureContextOperations extends ClinicalStatementOperations {
 
 	public static boolean validateProcedureContextEffectiveTimeValue(ProcedureContext procedureContext,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_PROCEDURE_CONTEXT_EFFECTIVE_TIME_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PROCEDURE_CONTEXT);
 			try {
 				VALIDATE_PROCEDURE_CONTEXT_EFFECTIVE_TIME_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PROCEDURE_CONTEXT_EFFECTIVE_TIME_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PROCEDURE_CONTEXT_EFFECTIVE_TIME_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			procedureContext)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PROCEDURE_CONTEXT_EFFECTIVE_TIME_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(procedureContext)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.PROCEDURE_CONTEXT__PROCEDURE_CONTEXT_EFFECTIVE_TIME_VALUE,
-					ConsolPlugin.INSTANCE.getString("ProcedureContextEffectiveTimeValue"),
-					new Object[] { procedureContext }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.PROCEDURE_CONTEXT__PROCEDURE_CONTEXT_EFFECTIVE_TIME_VALUE,
+						 ConsolPlugin.INSTANCE.getString("ProcedureContextEffectiveTimeValue"),
+						 new Object [] { procedureContext }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -135,7 +136,6 @@ public class ProcedureContextOperations extends ClinicalStatementOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.6.2.5')
 	 * @param procedureContext The receiving '<em><b>Procedure Context</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -144,25 +144,28 @@ public class ProcedureContextOperations extends ClinicalStatementOperations {
 	 */
 	public static boolean validateProcedureContextTemplateId(ProcedureContext procedureContext,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_PROCEDURE_CONTEXT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PROCEDURE_CONTEXT);
 			try {
 				VALIDATE_PROCEDURE_CONTEXT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PROCEDURE_CONTEXT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PROCEDURE_CONTEXT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			procedureContext)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PROCEDURE_CONTEXT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(procedureContext)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.PROCEDURE_CONTEXT__PROCEDURE_CONTEXT_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("ProcedureContextTemplateId"), new Object[] { procedureContext }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.PROCEDURE_CONTEXT__PROCEDURE_CONTEXT_TEMPLATE_ID,
+						 ConsolPlugin.INSTANCE.getString("ProcedureContextTemplateId"),
+						 new Object [] { procedureContext }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -193,7 +196,6 @@ public class ProcedureContextOperations extends ClinicalStatementOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * (self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined())
 	 * @param procedureContext The receiving '<em><b>Procedure Context</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -203,25 +205,28 @@ public class ProcedureContextOperations extends ClinicalStatementOperations {
 
 	public static boolean validateProcedureContextCode(ProcedureContext procedureContext, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_PROCEDURE_CONTEXT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PROCEDURE_CONTEXT);
 			try {
 				VALIDATE_PROCEDURE_CONTEXT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PROCEDURE_CONTEXT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PROCEDURE_CONTEXT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			procedureContext)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PROCEDURE_CONTEXT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(procedureContext)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.PROCEDURE_CONTEXT__PROCEDURE_CONTEXT_CODE,
-					ConsolPlugin.INSTANCE.getString("ProcedureContextCode"), new Object[] { procedureContext }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.PROCEDURE_CONTEXT__PROCEDURE_CONTEXT_CODE,
+						 ConsolPlugin.INSTANCE.getString("ProcedureContextCode"),
+						 new Object [] { procedureContext }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -252,7 +257,6 @@ public class ProcedureContextOperations extends ClinicalStatementOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * (self.effectiveTime.oclIsUndefined() or self.effectiveTime.isNullFlavorUndefined()) implies (not self.effectiveTime.oclIsUndefined())
 	 * @param procedureContext The receiving '<em><b>Procedure Context</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -262,25 +266,28 @@ public class ProcedureContextOperations extends ClinicalStatementOperations {
 
 	public static boolean validateProcedureContextEffectiveTime(ProcedureContext procedureContext,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_PROCEDURE_CONTEXT_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PROCEDURE_CONTEXT);
 			try {
 				VALIDATE_PROCEDURE_CONTEXT_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PROCEDURE_CONTEXT_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PROCEDURE_CONTEXT_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			procedureContext)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PROCEDURE_CONTEXT_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(procedureContext)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.PROCEDURE_CONTEXT__PROCEDURE_CONTEXT_EFFECTIVE_TIME,
-					ConsolPlugin.INSTANCE.getString("ProcedureContextEffectiveTime"), new Object[] { procedureContext }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.WARNING,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.PROCEDURE_CONTEXT__PROCEDURE_CONTEXT_EFFECTIVE_TIME,
+						 ConsolPlugin.INSTANCE.getString("ProcedureContextEffectiveTime"),
+						 new Object [] { procedureContext }));
 			}
-
+			 
 			return false;
 		}
 		return true;

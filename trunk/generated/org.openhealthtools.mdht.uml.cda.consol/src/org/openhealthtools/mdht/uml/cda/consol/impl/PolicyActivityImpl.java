@@ -10,7 +10,6 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.consol.impl;
 
-import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
@@ -166,8 +165,7 @@ public class PolicyActivityImpl extends ActImpl implements PolicyActivity {
 	 */
 	public boolean validatePolicyActivityPayerPayerAssignedEntityUSRealmAddressStreet(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PolicyActivityOperations.validatePolicyActivityPayerPayerAssignedEntityUSRealmAddressStreet(
-			this, diagnostics, context);
+		return PolicyActivityOperations.validatePolicyActivityPayerPayerAssignedEntityUSRealmAddressStreet(this, diagnostics, context);
 	}
 
 	/**
@@ -177,8 +175,7 @@ public class PolicyActivityImpl extends ActImpl implements PolicyActivity {
 	 */
 	public boolean validatePolicyActivityPayerPayerAssignedEntityUSRealmAddressCity(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PolicyActivityOperations.validatePolicyActivityPayerPayerAssignedEntityUSRealmAddressCity(
-			this, diagnostics, context);
+		return PolicyActivityOperations.validatePolicyActivityPayerPayerAssignedEntityUSRealmAddressCity(this, diagnostics, context);
 	}
 
 	/**
@@ -188,8 +185,7 @@ public class PolicyActivityImpl extends ActImpl implements PolicyActivity {
 	 */
 	public boolean validatePolicyActivityPayerPayerAssignedEntityUSRealmAddressCountry(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PolicyActivityOperations.validatePolicyActivityPayerPayerAssignedEntityUSRealmAddressCountry(
-			this, diagnostics, context);
+		return PolicyActivityOperations.validatePolicyActivityPayerPayerAssignedEntityUSRealmAddressCountry(this, diagnostics, context);
 	}
 
 	/**
@@ -199,8 +195,7 @@ public class PolicyActivityImpl extends ActImpl implements PolicyActivity {
 	 */
 	public boolean validatePolicyActivityPayerPayerAssignedEntityUSRealmAddressPostalCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PolicyActivityOperations.validatePolicyActivityPayerPayerAssignedEntityUSRealmAddressPostalCode(
-			this, diagnostics, context);
+		return PolicyActivityOperations.validatePolicyActivityPayerPayerAssignedEntityUSRealmAddressPostalCode(this, diagnostics, context);
 	}
 
 	/**
@@ -210,8 +205,7 @@ public class PolicyActivityImpl extends ActImpl implements PolicyActivity {
 	 */
 	public boolean validatePolicyActivityPayerPayerAssignedEntityUSRealmAddressState(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PolicyActivityOperations.validatePolicyActivityPayerPayerAssignedEntityUSRealmAddressState(
-			this, diagnostics, context);
+		return PolicyActivityOperations.validatePolicyActivityPayerPayerAssignedEntityUSRealmAddressState(this, diagnostics, context);
 	}
 
 	/**
@@ -221,8 +215,7 @@ public class PolicyActivityImpl extends ActImpl implements PolicyActivity {
 	 */
 	public boolean validatePolicyActivityPayerPayerAssignedEntityUSRealmAddressStreetAddressLine(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PolicyActivityOperations.validatePolicyActivityPayerPayerAssignedEntityUSRealmAddressStreetAddressLine(
-			this, diagnostics, context);
+		return PolicyActivityOperations.validatePolicyActivityPayerPayerAssignedEntityUSRealmAddressStreetAddressLine(this, diagnostics, context);
 	}
 
 	/**
@@ -232,8 +225,7 @@ public class PolicyActivityImpl extends ActImpl implements PolicyActivity {
 	 */
 	public boolean validatePolicyActivityPayerPayerAssignedEntityUSRealmAddressUseP(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PolicyActivityOperations.validatePolicyActivityPayerPayerAssignedEntityUSRealmAddressUseP(
-			this, diagnostics, context);
+		return PolicyActivityOperations.validatePolicyActivityPayerPayerAssignedEntityUSRealmAddressUseP(this, diagnostics, context);
 	}
 
 	/**
@@ -243,8 +235,7 @@ public class PolicyActivityImpl extends ActImpl implements PolicyActivity {
 	 */
 	public boolean validatePolicyActivityPayerPayerAssignedEntityUSRealmAddressUse(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PolicyActivityOperations.validatePolicyActivityPayerPayerAssignedEntityUSRealmAddressUse(
-			this, diagnostics, context);
+		return PolicyActivityOperations.validatePolicyActivityPayerPayerAssignedEntityUSRealmAddressUse(this, diagnostics, context);
 	}
 
 	/**
@@ -254,8 +245,7 @@ public class PolicyActivityImpl extends ActImpl implements PolicyActivity {
 	 */
 	public boolean validatePolicyActivityPayerPayerAssignedEntityPayerOrganizationName(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PolicyActivityOperations.validatePolicyActivityPayerPayerAssignedEntityPayerOrganizationName(
-			this, diagnostics, context);
+		return PolicyActivityOperations.validatePolicyActivityPayerPayerAssignedEntityPayerOrganizationName(this, diagnostics, context);
 	}
 
 	/**
@@ -305,8 +295,7 @@ public class PolicyActivityImpl extends ActImpl implements PolicyActivity {
 	 */
 	public boolean validatePolicyActivityPayerPayerAssignedEntityTelecom(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PolicyActivityOperations.validatePolicyActivityPayerPayerAssignedEntityTelecom(
-			this, diagnostics, context);
+		return PolicyActivityOperations.validatePolicyActivityPayerPayerAssignedEntityTelecom(this, diagnostics, context);
 	}
 
 	/**
@@ -316,8 +305,7 @@ public class PolicyActivityImpl extends ActImpl implements PolicyActivity {
 	 */
 	public boolean validatePolicyActivityPayerPayerAssignedEntityPayerOrganization(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PolicyActivityOperations.validatePolicyActivityPayerPayerAssignedEntityPayerOrganization(
-			this, diagnostics, context);
+		return PolicyActivityOperations.validatePolicyActivityPayerPayerAssignedEntityPayerOrganization(this, diagnostics, context);
 	}
 
 	/**
@@ -355,8 +343,7 @@ public class PolicyActivityImpl extends ActImpl implements PolicyActivity {
 	 */
 	public boolean validatePolicyActivityGuarantorGuarantorAssignedEntityUSRealmAddressStreet(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PolicyActivityOperations.validatePolicyActivityGuarantorGuarantorAssignedEntityUSRealmAddressStreet(
-			this, diagnostics, context);
+		return PolicyActivityOperations.validatePolicyActivityGuarantorGuarantorAssignedEntityUSRealmAddressStreet(this, diagnostics, context);
 	}
 
 	/**
@@ -366,8 +353,7 @@ public class PolicyActivityImpl extends ActImpl implements PolicyActivity {
 	 */
 	public boolean validatePolicyActivityGuarantorGuarantorAssignedEntityUSRealmAddressCity(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PolicyActivityOperations.validatePolicyActivityGuarantorGuarantorAssignedEntityUSRealmAddressCity(
-			this, diagnostics, context);
+		return PolicyActivityOperations.validatePolicyActivityGuarantorGuarantorAssignedEntityUSRealmAddressCity(this, diagnostics, context);
 	}
 
 	/**
@@ -377,8 +363,7 @@ public class PolicyActivityImpl extends ActImpl implements PolicyActivity {
 	 */
 	public boolean validatePolicyActivityGuarantorGuarantorAssignedEntityUSRealmAddressCountry(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PolicyActivityOperations.validatePolicyActivityGuarantorGuarantorAssignedEntityUSRealmAddressCountry(
-			this, diagnostics, context);
+		return PolicyActivityOperations.validatePolicyActivityGuarantorGuarantorAssignedEntityUSRealmAddressCountry(this, diagnostics, context);
 	}
 
 	/**
@@ -388,8 +373,7 @@ public class PolicyActivityImpl extends ActImpl implements PolicyActivity {
 	 */
 	public boolean validatePolicyActivityGuarantorGuarantorAssignedEntityUSRealmAddressPostalCode(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PolicyActivityOperations.validatePolicyActivityGuarantorGuarantorAssignedEntityUSRealmAddressPostalCode(
-			this, diagnostics, context);
+		return PolicyActivityOperations.validatePolicyActivityGuarantorGuarantorAssignedEntityUSRealmAddressPostalCode(this, diagnostics, context);
 	}
 
 	/**
@@ -399,8 +383,7 @@ public class PolicyActivityImpl extends ActImpl implements PolicyActivity {
 	 */
 	public boolean validatePolicyActivityGuarantorGuarantorAssignedEntityUSRealmAddressState(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PolicyActivityOperations.validatePolicyActivityGuarantorGuarantorAssignedEntityUSRealmAddressState(
-			this, diagnostics, context);
+		return PolicyActivityOperations.validatePolicyActivityGuarantorGuarantorAssignedEntityUSRealmAddressState(this, diagnostics, context);
 	}
 
 	/**
@@ -410,8 +393,7 @@ public class PolicyActivityImpl extends ActImpl implements PolicyActivity {
 	 */
 	public boolean validatePolicyActivityGuarantorGuarantorAssignedEntityUSRealmAddressStreetAddressLine(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PolicyActivityOperations.validatePolicyActivityGuarantorGuarantorAssignedEntityUSRealmAddressStreetAddressLine(
-			this, diagnostics, context);
+		return PolicyActivityOperations.validatePolicyActivityGuarantorGuarantorAssignedEntityUSRealmAddressStreetAddressLine(this, diagnostics, context);
 	}
 
 	/**
@@ -421,8 +403,7 @@ public class PolicyActivityImpl extends ActImpl implements PolicyActivity {
 	 */
 	public boolean validatePolicyActivityGuarantorGuarantorAssignedEntityUSRealmAddressUseP(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PolicyActivityOperations.validatePolicyActivityGuarantorGuarantorAssignedEntityUSRealmAddressUseP(
-			this, diagnostics, context);
+		return PolicyActivityOperations.validatePolicyActivityGuarantorGuarantorAssignedEntityUSRealmAddressUseP(this, diagnostics, context);
 	}
 
 	/**
@@ -432,8 +413,7 @@ public class PolicyActivityImpl extends ActImpl implements PolicyActivity {
 	 */
 	public boolean validatePolicyActivityGuarantorGuarantorAssignedEntityUSRealmAddressUse(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PolicyActivityOperations.validatePolicyActivityGuarantorGuarantorAssignedEntityUSRealmAddressUse(
-			this, diagnostics, context);
+		return PolicyActivityOperations.validatePolicyActivityGuarantorGuarantorAssignedEntityUSRealmAddressUse(this, diagnostics, context);
 	}
 
 	/**
@@ -443,8 +423,7 @@ public class PolicyActivityImpl extends ActImpl implements PolicyActivity {
 	 */
 	public boolean validatePolicyActivityGuarantorGuarantorAssignedEntityPersonNameAndOrOrgName(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PolicyActivityOperations.validatePolicyActivityGuarantorGuarantorAssignedEntityPersonNameAndOrOrgName(
-			this, diagnostics, context);
+		return PolicyActivityOperations.validatePolicyActivityGuarantorGuarantorAssignedEntityPersonNameAndOrOrgName(this, diagnostics, context);
 	}
 
 	/**
@@ -454,8 +433,7 @@ public class PolicyActivityImpl extends ActImpl implements PolicyActivity {
 	 */
 	public boolean validatePolicyActivityGuarantorGuarantorAssignedEntityCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PolicyActivityOperations.validatePolicyActivityGuarantorGuarantorAssignedEntityCode(
-			this, diagnostics, context);
+		return PolicyActivityOperations.validatePolicyActivityGuarantorGuarantorAssignedEntityCode(this, diagnostics, context);
 	}
 
 	/**
@@ -465,8 +443,7 @@ public class PolicyActivityImpl extends ActImpl implements PolicyActivity {
 	 */
 	public boolean validatePolicyActivityGuarantorGuarantorAssignedEntityCodeP(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PolicyActivityOperations.validatePolicyActivityGuarantorGuarantorAssignedEntityCodeP(
-			this, diagnostics, context);
+		return PolicyActivityOperations.validatePolicyActivityGuarantorGuarantorAssignedEntityCodeP(this, diagnostics, context);
 	}
 
 	/**
@@ -476,8 +453,7 @@ public class PolicyActivityImpl extends ActImpl implements PolicyActivity {
 	 */
 	public boolean validatePolicyActivityGuarantorGuarantorAssignedEntityAddr(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PolicyActivityOperations.validatePolicyActivityGuarantorGuarantorAssignedEntityAddr(
-			this, diagnostics, context);
+		return PolicyActivityOperations.validatePolicyActivityGuarantorGuarantorAssignedEntityAddr(this, diagnostics, context);
 	}
 
 	/**
@@ -487,8 +463,7 @@ public class PolicyActivityImpl extends ActImpl implements PolicyActivity {
 	 */
 	public boolean validatePolicyActivityGuarantorGuarantorAssignedEntityTelecom(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PolicyActivityOperations.validatePolicyActivityGuarantorGuarantorAssignedEntityTelecom(
-			this, diagnostics, context);
+		return PolicyActivityOperations.validatePolicyActivityGuarantorGuarantorAssignedEntityTelecom(this, diagnostics, context);
 	}
 
 	/**
@@ -525,8 +500,7 @@ public class PolicyActivityImpl extends ActImpl implements PolicyActivity {
 	 */
 	public boolean validatePolicyActivityGuarantorGuarantorAssignedEntity(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PolicyActivityOperations.validatePolicyActivityGuarantorGuarantorAssignedEntity(
-			this, diagnostics, context);
+		return PolicyActivityOperations.validatePolicyActivityGuarantorGuarantorAssignedEntity(this, diagnostics, context);
 	}
 
 	/**
@@ -536,8 +510,7 @@ public class PolicyActivityImpl extends ActImpl implements PolicyActivity {
 	 */
 	public boolean validatePolicyActivityCoverageCoverageRoleUSRealmAddressStreet(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PolicyActivityOperations.validatePolicyActivityCoverageCoverageRoleUSRealmAddressStreet(
-			this, diagnostics, context);
+		return PolicyActivityOperations.validatePolicyActivityCoverageCoverageRoleUSRealmAddressStreet(this, diagnostics, context);
 	}
 
 	/**
@@ -547,8 +520,7 @@ public class PolicyActivityImpl extends ActImpl implements PolicyActivity {
 	 */
 	public boolean validatePolicyActivityCoverageCoverageRoleUSRealmAddressCity(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PolicyActivityOperations.validatePolicyActivityCoverageCoverageRoleUSRealmAddressCity(
-			this, diagnostics, context);
+		return PolicyActivityOperations.validatePolicyActivityCoverageCoverageRoleUSRealmAddressCity(this, diagnostics, context);
 	}
 
 	/**
@@ -558,8 +530,7 @@ public class PolicyActivityImpl extends ActImpl implements PolicyActivity {
 	 */
 	public boolean validatePolicyActivityCoverageCoverageRoleUSRealmAddressCountry(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PolicyActivityOperations.validatePolicyActivityCoverageCoverageRoleUSRealmAddressCountry(
-			this, diagnostics, context);
+		return PolicyActivityOperations.validatePolicyActivityCoverageCoverageRoleUSRealmAddressCountry(this, diagnostics, context);
 	}
 
 	/**
@@ -569,8 +540,7 @@ public class PolicyActivityImpl extends ActImpl implements PolicyActivity {
 	 */
 	public boolean validatePolicyActivityCoverageCoverageRoleUSRealmAddressPostalCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PolicyActivityOperations.validatePolicyActivityCoverageCoverageRoleUSRealmAddressPostalCode(
-			this, diagnostics, context);
+		return PolicyActivityOperations.validatePolicyActivityCoverageCoverageRoleUSRealmAddressPostalCode(this, diagnostics, context);
 	}
 
 	/**
@@ -580,8 +550,7 @@ public class PolicyActivityImpl extends ActImpl implements PolicyActivity {
 	 */
 	public boolean validatePolicyActivityCoverageCoverageRoleUSRealmAddressState(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PolicyActivityOperations.validatePolicyActivityCoverageCoverageRoleUSRealmAddressState(
-			this, diagnostics, context);
+		return PolicyActivityOperations.validatePolicyActivityCoverageCoverageRoleUSRealmAddressState(this, diagnostics, context);
 	}
 
 	/**
@@ -591,8 +560,7 @@ public class PolicyActivityImpl extends ActImpl implements PolicyActivity {
 	 */
 	public boolean validatePolicyActivityCoverageCoverageRoleUSRealmAddressStreetAddressLine(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PolicyActivityOperations.validatePolicyActivityCoverageCoverageRoleUSRealmAddressStreetAddressLine(
-			this, diagnostics, context);
+		return PolicyActivityOperations.validatePolicyActivityCoverageCoverageRoleUSRealmAddressStreetAddressLine(this, diagnostics, context);
 	}
 
 	/**
@@ -602,8 +570,7 @@ public class PolicyActivityImpl extends ActImpl implements PolicyActivity {
 	 */
 	public boolean validatePolicyActivityCoverageCoverageRoleUSRealmAddressUseP(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PolicyActivityOperations.validatePolicyActivityCoverageCoverageRoleUSRealmAddressUseP(
-			this, diagnostics, context);
+		return PolicyActivityOperations.validatePolicyActivityCoverageCoverageRoleUSRealmAddressUseP(this, diagnostics, context);
 	}
 
 	/**
@@ -613,8 +580,7 @@ public class PolicyActivityImpl extends ActImpl implements PolicyActivity {
 	 */
 	public boolean validatePolicyActivityCoverageCoverageRoleUSRealmAddressUse(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PolicyActivityOperations.validatePolicyActivityCoverageCoverageRoleUSRealmAddressUse(
-			this, diagnostics, context);
+		return PolicyActivityOperations.validatePolicyActivityCoverageCoverageRoleUSRealmAddressUse(this, diagnostics, context);
 	}
 
 	/**
@@ -624,8 +590,7 @@ public class PolicyActivityImpl extends ActImpl implements PolicyActivity {
 	 */
 	public boolean validatePolicyActivityCoverageCoverageRoleCoveragePlayingEntityName(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PolicyActivityOperations.validatePolicyActivityCoverageCoverageRoleCoveragePlayingEntityName(
-			this, diagnostics, context);
+		return PolicyActivityOperations.validatePolicyActivityCoverageCoverageRoleCoveragePlayingEntityName(this, diagnostics, context);
 	}
 
 	/**
@@ -674,8 +639,7 @@ public class PolicyActivityImpl extends ActImpl implements PolicyActivity {
 	 */
 	public boolean validatePolicyActivityCoverageCoverageRoleCoveragePlayingEntity(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PolicyActivityOperations.validatePolicyActivityCoverageCoverageRoleCoveragePlayingEntity(
-			this, diagnostics, context);
+		return PolicyActivityOperations.validatePolicyActivityCoverageCoverageRoleCoveragePlayingEntity(this, diagnostics, context);
 	}
 
 	/**
@@ -739,8 +703,7 @@ public class PolicyActivityImpl extends ActImpl implements PolicyActivity {
 	 */
 	public boolean validatePolicyActivityHolderHolderRoleUSRealmAddressStreet(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PolicyActivityOperations.validatePolicyActivityHolderHolderRoleUSRealmAddressStreet(
-			this, diagnostics, context);
+		return PolicyActivityOperations.validatePolicyActivityHolderHolderRoleUSRealmAddressStreet(this, diagnostics, context);
 	}
 
 	/**
@@ -750,8 +713,7 @@ public class PolicyActivityImpl extends ActImpl implements PolicyActivity {
 	 */
 	public boolean validatePolicyActivityHolderHolderRoleUSRealmAddressCity(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PolicyActivityOperations.validatePolicyActivityHolderHolderRoleUSRealmAddressCity(
-			this, diagnostics, context);
+		return PolicyActivityOperations.validatePolicyActivityHolderHolderRoleUSRealmAddressCity(this, diagnostics, context);
 	}
 
 	/**
@@ -761,8 +723,7 @@ public class PolicyActivityImpl extends ActImpl implements PolicyActivity {
 	 */
 	public boolean validatePolicyActivityHolderHolderRoleUSRealmAddressCountry(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PolicyActivityOperations.validatePolicyActivityHolderHolderRoleUSRealmAddressCountry(
-			this, diagnostics, context);
+		return PolicyActivityOperations.validatePolicyActivityHolderHolderRoleUSRealmAddressCountry(this, diagnostics, context);
 	}
 
 	/**
@@ -772,8 +733,7 @@ public class PolicyActivityImpl extends ActImpl implements PolicyActivity {
 	 */
 	public boolean validatePolicyActivityHolderHolderRoleUSRealmAddressPostalCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PolicyActivityOperations.validatePolicyActivityHolderHolderRoleUSRealmAddressPostalCode(
-			this, diagnostics, context);
+		return PolicyActivityOperations.validatePolicyActivityHolderHolderRoleUSRealmAddressPostalCode(this, diagnostics, context);
 	}
 
 	/**
@@ -783,8 +743,7 @@ public class PolicyActivityImpl extends ActImpl implements PolicyActivity {
 	 */
 	public boolean validatePolicyActivityHolderHolderRoleUSRealmAddressState(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PolicyActivityOperations.validatePolicyActivityHolderHolderRoleUSRealmAddressState(
-			this, diagnostics, context);
+		return PolicyActivityOperations.validatePolicyActivityHolderHolderRoleUSRealmAddressState(this, diagnostics, context);
 	}
 
 	/**
@@ -794,8 +753,7 @@ public class PolicyActivityImpl extends ActImpl implements PolicyActivity {
 	 */
 	public boolean validatePolicyActivityHolderHolderRoleUSRealmAddressStreetAddressLine(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PolicyActivityOperations.validatePolicyActivityHolderHolderRoleUSRealmAddressStreetAddressLine(
-			this, diagnostics, context);
+		return PolicyActivityOperations.validatePolicyActivityHolderHolderRoleUSRealmAddressStreetAddressLine(this, diagnostics, context);
 	}
 
 	/**
@@ -805,8 +763,7 @@ public class PolicyActivityImpl extends ActImpl implements PolicyActivity {
 	 */
 	public boolean validatePolicyActivityHolderHolderRoleUSRealmAddressUseP(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PolicyActivityOperations.validatePolicyActivityHolderHolderRoleUSRealmAddressUseP(
-			this, diagnostics, context);
+		return PolicyActivityOperations.validatePolicyActivityHolderHolderRoleUSRealmAddressUseP(this, diagnostics, context);
 	}
 
 	/**
@@ -816,8 +773,7 @@ public class PolicyActivityImpl extends ActImpl implements PolicyActivity {
 	 */
 	public boolean validatePolicyActivityHolderHolderRoleUSRealmAddressUse(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PolicyActivityOperations.validatePolicyActivityHolderHolderRoleUSRealmAddressUse(
-			this, diagnostics, context);
+		return PolicyActivityOperations.validatePolicyActivityHolderHolderRoleUSRealmAddressUse(this, diagnostics, context);
 	}
 
 	/**
@@ -881,8 +837,7 @@ public class PolicyActivityImpl extends ActImpl implements PolicyActivity {
 	 */
 	public boolean validatePolicyActivityEntryRelationshipTargetActActivity(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PolicyActivityOperations.validatePolicyActivityEntryRelationshipTargetActActivity(
-			this, diagnostics, context);
+		return PolicyActivityOperations.validatePolicyActivityEntryRelationshipTargetActActivity(this, diagnostics, context);
 	}
 
 	/**
@@ -892,8 +847,7 @@ public class PolicyActivityImpl extends ActImpl implements PolicyActivity {
 	 */
 	public boolean validatePolicyActivityEntryRelationshipDescriptionCoveragePlan(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PolicyActivityOperations.validatePolicyActivityEntryRelationshipDescriptionCoveragePlan(
-			this, diagnostics, context);
+		return PolicyActivityOperations.validatePolicyActivityEntryRelationshipDescriptionCoveragePlan(this, diagnostics, context);
 	}
 
 	/**
@@ -912,16 +866,16 @@ public class PolicyActivityImpl extends ActImpl implements PolicyActivity {
 	 * @generated
 	 */
 	public PolicyActivity init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	   * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public PolicyActivity init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // PolicyActivityImpl

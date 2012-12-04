@@ -10,7 +10,6 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.consol.impl;
 
-import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
@@ -96,8 +95,7 @@ public class PreoperativeDiagnosisImpl extends ActImpl implements PreoperativeDi
 	 */
 	public boolean validatePreoperativeDiagnosisProblemObservation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PreoperativeDiagnosisOperations.validatePreoperativeDiagnosisProblemObservation(
-			this, diagnostics, context);
+		return PreoperativeDiagnosisOperations.validatePreoperativeDiagnosisProblemObservation(this, diagnostics, context);
 	}
 
 	/**
@@ -115,16 +113,16 @@ public class PreoperativeDiagnosisImpl extends ActImpl implements PreoperativeDi
 	 * @generated
 	 */
 	public PreoperativeDiagnosis init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	   * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public PreoperativeDiagnosis init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // PreoperativeDiagnosisImpl

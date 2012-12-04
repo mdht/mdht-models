@@ -10,7 +10,6 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.consol.impl;
 
-import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
@@ -107,8 +106,7 @@ public class ProceduresSectionImpl extends ProceduresSectionEntriesOptionalImpl 
 	 */
 	public boolean validateProceduresSectionProcedureActivityProcedure(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ProceduresSectionOperations.validateProceduresSectionProcedureActivityProcedure(
-			this, diagnostics, context);
+		return ProceduresSectionOperations.validateProceduresSectionProcedureActivityProcedure(this, diagnostics, context);
 	}
 
 	/**
@@ -118,8 +116,7 @@ public class ProceduresSectionImpl extends ProceduresSectionEntriesOptionalImpl 
 	 */
 	public boolean validateProceduresSectionProcedureActivityObservation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ProceduresSectionOperations.validateProceduresSectionProcedureActivityObservation(
-			this, diagnostics, context);
+		return ProceduresSectionOperations.validateProceduresSectionProcedureActivityObservation(this, diagnostics, context);
 	}
 
 	/**
@@ -167,8 +164,7 @@ public class ProceduresSectionImpl extends ProceduresSectionEntriesOptionalImpl 
 	@Override
 	public boolean validateProceduresSectionEntriesOptionalTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ProceduresSectionOperations.validateProceduresSectionEntriesOptionalTemplateId(
-			this, diagnostics, context);
+		return ProceduresSectionOperations.validateProceduresSectionEntriesOptionalTemplateId(this, diagnostics, context);
 	}
 
 	/**
@@ -178,17 +174,17 @@ public class ProceduresSectionImpl extends ProceduresSectionEntriesOptionalImpl 
 	 */
 	@Override
 	public ProceduresSection init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	   * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public ProceduresSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // ProceduresSectionImpl

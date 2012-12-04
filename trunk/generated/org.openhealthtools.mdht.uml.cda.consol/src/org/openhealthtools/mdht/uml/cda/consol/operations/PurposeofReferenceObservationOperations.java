@@ -78,7 +78,6 @@ public class PurposeofReferenceObservationOperations extends ClinicalStatementOp
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.code.code = 'ASSERTION' and self.code.codeSystem = '2.16.840.1.113883.5.4'
 	 * @param purposeofReferenceObservation The receiving '<em><b>Purposeof Reference Observation</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -89,27 +88,28 @@ public class PurposeofReferenceObservationOperations extends ClinicalStatementOp
 	public static boolean validatePurposeofReferenceObservationCodeCodeSystem(
 			PurposeofReferenceObservation purposeofReferenceObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_PURPOSEOF_REFERENCE_OBSERVATION_CODE_CODE_SYSTEM__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PURPOSEOF_REFERENCE_OBSERVATION);
 			try {
 				VALIDATE_PURPOSEOF_REFERENCE_OBSERVATION_CODE_CODE_SYSTEM__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PURPOSEOF_REFERENCE_OBSERVATION_CODE_CODE_SYSTEM__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_PURPOSEOF_REFERENCE_OBSERVATION_CODE_CODE_SYSTEM__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			purposeofReferenceObservation)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PURPOSEOF_REFERENCE_OBSERVATION_CODE_CODE_SYSTEM__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(purposeofReferenceObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.PURPOSEOF_REFERENCE_OBSERVATION__PURPOSEOF_REFERENCE_OBSERVATION_CODE_CODE_SYSTEM,
-					ConsolPlugin.INSTANCE.getString("PurposeofReferenceObservationCodeCodeSystem"),
-					new Object[] { purposeofReferenceObservation }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.WARNING,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.PURPOSEOF_REFERENCE_OBSERVATION__PURPOSEOF_REFERENCE_OBSERVATION_CODE_CODE_SYSTEM,
+						 ConsolPlugin.INSTANCE.getString("PurposeofReferenceObservationCodeCodeSystem"),
+						 new Object [] { purposeofReferenceObservation }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -139,7 +139,6 @@ public class PurposeofReferenceObservationOperations extends ClinicalStatementOp
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.6.2.9')
 	 * @param purposeofReferenceObservation The receiving '<em><b>Purposeof Reference Observation</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -149,26 +148,28 @@ public class PurposeofReferenceObservationOperations extends ClinicalStatementOp
 	public static boolean validatePurposeofReferenceObservationTemplateId(
 			PurposeofReferenceObservation purposeofReferenceObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_PURPOSEOF_REFERENCE_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PURPOSEOF_REFERENCE_OBSERVATION);
 			try {
 				VALIDATE_PURPOSEOF_REFERENCE_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PURPOSEOF_REFERENCE_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PURPOSEOF_REFERENCE_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			purposeofReferenceObservation)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PURPOSEOF_REFERENCE_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(purposeofReferenceObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.PURPOSEOF_REFERENCE_OBSERVATION__PURPOSEOF_REFERENCE_OBSERVATION_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("PurposeofReferenceObservationTemplateId"),
-					new Object[] { purposeofReferenceObservation }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.PURPOSEOF_REFERENCE_OBSERVATION__PURPOSEOF_REFERENCE_OBSERVATION_TEMPLATE_ID,
+						 ConsolPlugin.INSTANCE.getString("PurposeofReferenceObservationTemplateId"),
+						 new Object [] { purposeofReferenceObservation }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -198,7 +199,6 @@ public class PurposeofReferenceObservationOperations extends ClinicalStatementOp
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.classCode=vocab::ActClassObservation::OBS
 	 * @param purposeofReferenceObservation The receiving '<em><b>Purposeof Reference Observation</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -208,26 +208,28 @@ public class PurposeofReferenceObservationOperations extends ClinicalStatementOp
 	public static boolean validatePurposeofReferenceObservationClassCode(
 			PurposeofReferenceObservation purposeofReferenceObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_PURPOSEOF_REFERENCE_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PURPOSEOF_REFERENCE_OBSERVATION);
 			try {
 				VALIDATE_PURPOSEOF_REFERENCE_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PURPOSEOF_REFERENCE_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PURPOSEOF_REFERENCE_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			purposeofReferenceObservation)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PURPOSEOF_REFERENCE_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(purposeofReferenceObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.PURPOSEOF_REFERENCE_OBSERVATION__PURPOSEOF_REFERENCE_OBSERVATION_CLASS_CODE,
-					ConsolPlugin.INSTANCE.getString("PurposeofReferenceObservationClassCode"),
-					new Object[] { purposeofReferenceObservation }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.PURPOSEOF_REFERENCE_OBSERVATION__PURPOSEOF_REFERENCE_OBSERVATION_CLASS_CODE,
+						 ConsolPlugin.INSTANCE.getString("PurposeofReferenceObservationClassCode"),
+						 new Object [] { purposeofReferenceObservation }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -257,7 +259,6 @@ public class PurposeofReferenceObservationOperations extends ClinicalStatementOp
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * (self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined())
 	 * @param purposeofReferenceObservation The receiving '<em><b>Purposeof Reference Observation</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -267,26 +268,28 @@ public class PurposeofReferenceObservationOperations extends ClinicalStatementOp
 	public static boolean validatePurposeofReferenceObservationCode(
 			PurposeofReferenceObservation purposeofReferenceObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_PURPOSEOF_REFERENCE_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PURPOSEOF_REFERENCE_OBSERVATION);
 			try {
 				VALIDATE_PURPOSEOF_REFERENCE_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PURPOSEOF_REFERENCE_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PURPOSEOF_REFERENCE_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			purposeofReferenceObservation)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PURPOSEOF_REFERENCE_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(purposeofReferenceObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.PURPOSEOF_REFERENCE_OBSERVATION__PURPOSEOF_REFERENCE_OBSERVATION_CODE,
-					ConsolPlugin.INSTANCE.getString("PurposeofReferenceObservationCode"),
-					new Object[] { purposeofReferenceObservation }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.PURPOSEOF_REFERENCE_OBSERVATION__PURPOSEOF_REFERENCE_OBSERVATION_CODE,
+						 ConsolPlugin.INSTANCE.getString("PurposeofReferenceObservationCode"),
+						 new Object [] { purposeofReferenceObservation }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -316,7 +319,6 @@ public class PurposeofReferenceObservationOperations extends ClinicalStatementOp
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.moodCode=vocab::x_ActMoodDocumentObservation::EVN
 	 * @param purposeofReferenceObservation The receiving '<em><b>Purposeof Reference Observation</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -326,26 +328,28 @@ public class PurposeofReferenceObservationOperations extends ClinicalStatementOp
 	public static boolean validatePurposeofReferenceObservationMoodCode(
 			PurposeofReferenceObservation purposeofReferenceObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_PURPOSEOF_REFERENCE_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PURPOSEOF_REFERENCE_OBSERVATION);
 			try {
 				VALIDATE_PURPOSEOF_REFERENCE_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PURPOSEOF_REFERENCE_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PURPOSEOF_REFERENCE_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			purposeofReferenceObservation)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PURPOSEOF_REFERENCE_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(purposeofReferenceObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.PURPOSEOF_REFERENCE_OBSERVATION__PURPOSEOF_REFERENCE_OBSERVATION_MOOD_CODE,
-					ConsolPlugin.INSTANCE.getString("PurposeofReferenceObservationMoodCode"),
-					new Object[] { purposeofReferenceObservation }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.PURPOSEOF_REFERENCE_OBSERVATION__PURPOSEOF_REFERENCE_OBSERVATION_MOOD_CODE,
+						 ConsolPlugin.INSTANCE.getString("PurposeofReferenceObservationMoodCode"),
+						 new Object [] { purposeofReferenceObservation }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -359,9 +363,9 @@ public class PurposeofReferenceObservationOperations extends ClinicalStatementOp
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_PURPOSEOF_REFERENCE_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and "
-			+ "let value : datatypes::CD = element.oclAsType(datatypes::CD) in "
-			+ "value.codeSystem = '1.2.840.10008.2.16.4' and (value.code = '121079' or value.code = '121080' or value.code = '121112')))";
+	protected static final String VALIDATE_PURPOSEOF_REFERENCE_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and "+
+"let value : datatypes::CD = element.oclAsType(datatypes::CD) in "+
+"value.codeSystem = '1.2.840.10008.2.16.4' and (value.code = '121079' or value.code = '121080' or value.code = '121112')))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validatePurposeofReferenceObservationValue(PurposeofReferenceObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Purposeof Reference Observation Value</em>}' invariant operation.
@@ -378,9 +382,6 @@ public class PurposeofReferenceObservationOperations extends ClinicalStatementOp
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * (self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and 
-	 * let value : datatypes::CD = element.oclAsType(datatypes::CD) in 
-	 * value.codeSystem = '1.2.840.10008.2.16.4' and (value.code = '121079' or value.code = '121080' or value.code = '121112')))
 	 * @param purposeofReferenceObservation The receiving '<em><b>Purposeof Reference Observation</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -391,26 +392,28 @@ public class PurposeofReferenceObservationOperations extends ClinicalStatementOp
 	public static boolean validatePurposeofReferenceObservationValue(
 			PurposeofReferenceObservation purposeofReferenceObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_PURPOSEOF_REFERENCE_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PURPOSEOF_REFERENCE_OBSERVATION);
 			try {
 				VALIDATE_PURPOSEOF_REFERENCE_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PURPOSEOF_REFERENCE_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PURPOSEOF_REFERENCE_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			purposeofReferenceObservation)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PURPOSEOF_REFERENCE_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(purposeofReferenceObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.PURPOSEOF_REFERENCE_OBSERVATION__PURPOSEOF_REFERENCE_OBSERVATION_VALUE,
-					ConsolPlugin.INSTANCE.getString("PurposeofReferenceObservationValue"),
-					new Object[] { purposeofReferenceObservation }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.WARNING,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.PURPOSEOF_REFERENCE_OBSERVATION__PURPOSEOF_REFERENCE_OBSERVATION_VALUE,
+						 ConsolPlugin.INSTANCE.getString("PurposeofReferenceObservationValue"),
+						 new Object [] { purposeofReferenceObservation }));
 			}
-
+			 
 			return false;
 		}
 		return true;

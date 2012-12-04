@@ -10,7 +10,6 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.consol.impl;
 
-import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
@@ -107,8 +106,7 @@ public class PhysicalExamSectionImpl extends SectionImpl implements PhysicalExam
 	 */
 	public boolean validatePhysicalExamSectionPressureUlcerObservation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PhysicalExamSectionOperations.validatePhysicalExamSectionPressureUlcerObservation(
-			this, diagnostics, context);
+		return PhysicalExamSectionOperations.validatePhysicalExamSectionPressureUlcerObservation(this, diagnostics, context);
 	}
 
 	/**
@@ -118,8 +116,7 @@ public class PhysicalExamSectionImpl extends SectionImpl implements PhysicalExam
 	 */
 	public boolean validatePhysicalExamSectionNumberOfPressureUlcersObservation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PhysicalExamSectionOperations.validatePhysicalExamSectionNumberOfPressureUlcersObservation(
-			this, diagnostics, context);
+		return PhysicalExamSectionOperations.validatePhysicalExamSectionNumberOfPressureUlcersObservation(this, diagnostics, context);
 	}
 
 	/**
@@ -129,8 +126,7 @@ public class PhysicalExamSectionImpl extends SectionImpl implements PhysicalExam
 	 */
 	public boolean validatePhysicalExamSectionHighestPressureUlcerStage(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PhysicalExamSectionOperations.validatePhysicalExamSectionHighestPressureUlcerStage(
-			this, diagnostics, context);
+		return PhysicalExamSectionOperations.validatePhysicalExamSectionHighestPressureUlcerStage(this, diagnostics, context);
 	}
 
 	/**
@@ -166,16 +162,16 @@ public class PhysicalExamSectionImpl extends SectionImpl implements PhysicalExam
 	 * @generated
 	 */
 	public PhysicalExamSection init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	   * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public PhysicalExamSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // PhysicalExamSectionImpl
