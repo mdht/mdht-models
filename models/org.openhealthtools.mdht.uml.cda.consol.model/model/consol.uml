@@ -7,6 +7,9 @@
     <packageImport xmi:id="_hPUsgNcZEeGfQ6frO0B-Jg">
       <importedPackage href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_XgMSwzxVEd6JwqSGecoePg"/>
     </packageImport>
+    <packageImport xmi:id="_q3SeUD49EeKUq_Bmx5Topg">
+      <importedPackage href="../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__yVbeUDcEd6xYZuu1VKCVw"/>
+    </packageImport>
     <packagedElement xmi:type="uml:Class" href=".controlled/consol-documents.uml#_2DNRcBSVEeGGzu7fmW9pXw"/>
     <packagedElement xmi:type="uml:Association" href=".controlled/consol-documents.uml#_2DzuYRSVEeGGzu7fmW9pXw"/>
     <packagedElement xmi:type="uml:Association" href=".controlled/consol-documents.uml#_2D0VcBSVEeGGzu7fmW9pXw"/>
