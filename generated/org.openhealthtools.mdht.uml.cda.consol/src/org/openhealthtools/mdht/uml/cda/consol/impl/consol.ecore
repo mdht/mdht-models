@@ -17875,7 +17875,7 @@
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolImmunizationMedicationInformationImmunizationMedicationInformationManufacturedMaterial">
       <details key="constraints.validation.warning" value="ImmunizationMedicationInformationManufacturedMaterialCodeOriginalText ImmunizationMedicationInformationManufacturedMaterialOriginalTextReference ImmunizationMedicationInformationManufacturedMaterialTextReferenceValue ImmunizationMedicationInformationManufacturedMaterialLotNumberText"/>
       <details key="constraints.validation.info" value="ImmunizationMedicationInformationManufacturedMaterialCodeTranslation"/>
-      <details key="code.codeSystem" value="2.16.840.1.113883.6.59"/>
+      <details key="code.codeSystem" value="2.16.840.1.113883.12.292"/>
       <details key="code.codeSystemName" value="Vaccines administered (CVX)"/>
       <details key="constraints.validation.error" value="ImmunizationMedicationInformationManufacturedMaterialCode"/>
     </eAnnotations>

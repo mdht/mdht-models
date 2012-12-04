@@ -10,7 +10,6 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.consol.impl;
 
-import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
@@ -139,8 +138,7 @@ public class CommentActivityImpl extends ActImpl implements CommentActivity {
 	 */
 	public boolean validateCommentActivityAuthorAssignedAuthorUSRealmAddressStreet(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return CommentActivityOperations.validateCommentActivityAuthorAssignedAuthorUSRealmAddressStreet(
-			this, diagnostics, context);
+		return CommentActivityOperations.validateCommentActivityAuthorAssignedAuthorUSRealmAddressStreet(this, diagnostics, context);
 	}
 
 	/**
@@ -150,8 +148,7 @@ public class CommentActivityImpl extends ActImpl implements CommentActivity {
 	 */
 	public boolean validateCommentActivityAuthorAssignedAuthorUSRealmAddressCity(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return CommentActivityOperations.validateCommentActivityAuthorAssignedAuthorUSRealmAddressCity(
-			this, diagnostics, context);
+		return CommentActivityOperations.validateCommentActivityAuthorAssignedAuthorUSRealmAddressCity(this, diagnostics, context);
 	}
 
 	/**
@@ -161,8 +158,7 @@ public class CommentActivityImpl extends ActImpl implements CommentActivity {
 	 */
 	public boolean validateCommentActivityAuthorAssignedAuthorUSRealmAddressCountry(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return CommentActivityOperations.validateCommentActivityAuthorAssignedAuthorUSRealmAddressCountry(
-			this, diagnostics, context);
+		return CommentActivityOperations.validateCommentActivityAuthorAssignedAuthorUSRealmAddressCountry(this, diagnostics, context);
 	}
 
 	/**
@@ -172,8 +168,7 @@ public class CommentActivityImpl extends ActImpl implements CommentActivity {
 	 */
 	public boolean validateCommentActivityAuthorAssignedAuthorUSRealmAddressPostalCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return CommentActivityOperations.validateCommentActivityAuthorAssignedAuthorUSRealmAddressPostalCode(
-			this, diagnostics, context);
+		return CommentActivityOperations.validateCommentActivityAuthorAssignedAuthorUSRealmAddressPostalCode(this, diagnostics, context);
 	}
 
 	/**
@@ -183,8 +178,7 @@ public class CommentActivityImpl extends ActImpl implements CommentActivity {
 	 */
 	public boolean validateCommentActivityAuthorAssignedAuthorUSRealmAddressState(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return CommentActivityOperations.validateCommentActivityAuthorAssignedAuthorUSRealmAddressState(
-			this, diagnostics, context);
+		return CommentActivityOperations.validateCommentActivityAuthorAssignedAuthorUSRealmAddressState(this, diagnostics, context);
 	}
 
 	/**
@@ -194,8 +188,7 @@ public class CommentActivityImpl extends ActImpl implements CommentActivity {
 	 */
 	public boolean validateCommentActivityAuthorAssignedAuthorUSRealmAddressStreetAddressLine(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return CommentActivityOperations.validateCommentActivityAuthorAssignedAuthorUSRealmAddressStreetAddressLine(
-			this, diagnostics, context);
+		return CommentActivityOperations.validateCommentActivityAuthorAssignedAuthorUSRealmAddressStreetAddressLine(this, diagnostics, context);
 	}
 
 	/**
@@ -205,8 +198,7 @@ public class CommentActivityImpl extends ActImpl implements CommentActivity {
 	 */
 	public boolean validateCommentActivityAuthorAssignedAuthorUSRealmAddressUseP(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return CommentActivityOperations.validateCommentActivityAuthorAssignedAuthorUSRealmAddressUseP(
-			this, diagnostics, context);
+		return CommentActivityOperations.validateCommentActivityAuthorAssignedAuthorUSRealmAddressUseP(this, diagnostics, context);
 	}
 
 	/**
@@ -216,8 +208,7 @@ public class CommentActivityImpl extends ActImpl implements CommentActivity {
 	 */
 	public boolean validateCommentActivityAuthorAssignedAuthorUSRealmAddressUse(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return CommentActivityOperations.validateCommentActivityAuthorAssignedAuthorUSRealmAddressUse(
-			this, diagnostics, context);
+		return CommentActivityOperations.validateCommentActivityAuthorAssignedAuthorUSRealmAddressUse(this, diagnostics, context);
 	}
 
 	/**
@@ -227,8 +218,7 @@ public class CommentActivityImpl extends ActImpl implements CommentActivity {
 	 */
 	public boolean validateCommentActivityAuthorAssignedAuthorHasPersonOrOrganization(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return CommentActivityOperations.validateCommentActivityAuthorAssignedAuthorHasPersonOrOrganization(
-			this, diagnostics, context);
+		return CommentActivityOperations.validateCommentActivityAuthorAssignedAuthorHasPersonOrOrganization(this, diagnostics, context);
 	}
 
 	/**
@@ -238,8 +228,7 @@ public class CommentActivityImpl extends ActImpl implements CommentActivity {
 	 */
 	public boolean validateCommentActivityAuthorAssignedAuthorAssignPersonName(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return CommentActivityOperations.validateCommentActivityAuthorAssignedAuthorAssignPersonName(
-			this, diagnostics, context);
+		return CommentActivityOperations.validateCommentActivityAuthorAssignedAuthorAssignPersonName(this, diagnostics, context);
 	}
 
 	/**
@@ -286,16 +275,16 @@ public class CommentActivityImpl extends ActImpl implements CommentActivity {
 	 * @generated
 	 */
 	public CommentActivity init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	   * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public CommentActivity init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // CommentActivityImpl

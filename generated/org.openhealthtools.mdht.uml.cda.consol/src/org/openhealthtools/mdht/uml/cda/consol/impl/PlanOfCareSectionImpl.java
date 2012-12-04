@@ -10,7 +10,6 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.consol.impl;
 
-import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
@@ -121,8 +120,7 @@ public class PlanOfCareSectionImpl extends SectionImpl implements PlanOfCareSect
 	 */
 	public boolean validatePlanOfCareSectionPlanOfCareActivityEncounter(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PlanOfCareSectionOperations.validatePlanOfCareSectionPlanOfCareActivityEncounter(
-			this, diagnostics, context);
+		return PlanOfCareSectionOperations.validatePlanOfCareSectionPlanOfCareActivityEncounter(this, diagnostics, context);
 	}
 
 	/**
@@ -132,8 +130,7 @@ public class PlanOfCareSectionImpl extends SectionImpl implements PlanOfCareSect
 	 */
 	public boolean validatePlanOfCareSectionPlanOfCareActivityObservation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PlanOfCareSectionOperations.validatePlanOfCareSectionPlanOfCareActivityObservation(
-			this, diagnostics, context);
+		return PlanOfCareSectionOperations.validatePlanOfCareSectionPlanOfCareActivityObservation(this, diagnostics, context);
 	}
 
 	/**
@@ -143,8 +140,7 @@ public class PlanOfCareSectionImpl extends SectionImpl implements PlanOfCareSect
 	 */
 	public boolean validatePlanOfCareSectionPlanOfCareActivityProcedure(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PlanOfCareSectionOperations.validatePlanOfCareSectionPlanOfCareActivityProcedure(
-			this, diagnostics, context);
+		return PlanOfCareSectionOperations.validatePlanOfCareSectionPlanOfCareActivityProcedure(this, diagnostics, context);
 	}
 
 	/**
@@ -154,8 +150,7 @@ public class PlanOfCareSectionImpl extends SectionImpl implements PlanOfCareSect
 	 */
 	public boolean validatePlanOfCareSectionPlanOfCareActivitySubstanceAdministration(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PlanOfCareSectionOperations.validatePlanOfCareSectionPlanOfCareActivitySubstanceAdministration(
-			this, diagnostics, context);
+		return PlanOfCareSectionOperations.validatePlanOfCareSectionPlanOfCareActivitySubstanceAdministration(this, diagnostics, context);
 	}
 
 	/**
@@ -246,16 +241,16 @@ public class PlanOfCareSectionImpl extends SectionImpl implements PlanOfCareSect
 	 * @generated
 	 */
 	public PlanOfCareSection init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	   * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public PlanOfCareSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // PlanOfCareSectionImpl

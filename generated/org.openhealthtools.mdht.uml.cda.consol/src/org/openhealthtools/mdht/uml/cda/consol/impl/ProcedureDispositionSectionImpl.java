@@ -10,7 +10,6 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.consol.impl;
 
-import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
@@ -58,8 +57,7 @@ public class ProcedureDispositionSectionImpl extends SectionImpl implements Proc
 	 */
 	public boolean validateProcedureDispositionSectionTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ProcedureDispositionSectionOperations.validateProcedureDispositionSectionTemplateId(
-			this, diagnostics, context);
+		return ProcedureDispositionSectionOperations.validateProcedureDispositionSectionTemplateId(this, diagnostics, context);
 	}
 
 	/**
@@ -77,8 +75,7 @@ public class ProcedureDispositionSectionImpl extends SectionImpl implements Proc
 	 * @generated
 	 */
 	public boolean validateProcedureDispositionSectionCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProcedureDispositionSectionOperations.validateProcedureDispositionSectionCodeP(
-			this, diagnostics, context);
+		return ProcedureDispositionSectionOperations.validateProcedureDispositionSectionCodeP(this, diagnostics, context);
 	}
 
 	/**
@@ -96,8 +93,7 @@ public class ProcedureDispositionSectionImpl extends SectionImpl implements Proc
 	 * @generated
 	 */
 	public boolean validateProcedureDispositionSectionTitle(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProcedureDispositionSectionOperations.validateProcedureDispositionSectionTitle(
-			this, diagnostics, context);
+		return ProcedureDispositionSectionOperations.validateProcedureDispositionSectionTitle(this, diagnostics, context);
 	}
 
 	/**
@@ -106,16 +102,16 @@ public class ProcedureDispositionSectionImpl extends SectionImpl implements Proc
 	 * @generated
 	 */
 	public ProcedureDispositionSection init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	   * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public ProcedureDispositionSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // ProcedureDispositionSectionImpl

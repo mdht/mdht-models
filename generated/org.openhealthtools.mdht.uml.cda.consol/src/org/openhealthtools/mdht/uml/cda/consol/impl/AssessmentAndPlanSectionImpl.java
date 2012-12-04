@@ -10,7 +10,6 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.consol.impl;
 
-import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
@@ -96,8 +95,7 @@ public class AssessmentAndPlanSectionImpl extends SectionImpl implements Assessm
 	 */
 	public boolean validateAssessmentAndPlanSectionPlanOfCareActivityAct(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return AssessmentAndPlanSectionOperations.validateAssessmentAndPlanSectionPlanOfCareActivityAct(
-			this, diagnostics, context);
+		return AssessmentAndPlanSectionOperations.validateAssessmentAndPlanSectionPlanOfCareActivityAct(this, diagnostics, context);
 	}
 
 	/**
@@ -115,16 +113,16 @@ public class AssessmentAndPlanSectionImpl extends SectionImpl implements Assessm
 	 * @generated
 	 */
 	public AssessmentAndPlanSection init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	   * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public AssessmentAndPlanSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // AssessmentAndPlanSectionImpl

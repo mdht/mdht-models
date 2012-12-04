@@ -6,7 +6,6 @@
  */
 package org.openhealthtools.mdht.uml.cda.consol.impl;
 
-import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
@@ -55,8 +54,7 @@ public class FunctionalStatusResultOrganizerImpl extends ResultOrganizerImpl imp
 	 */
 	public boolean validateFunctionalStatusResultOrganizerCodeCodeSystem(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return FunctionalStatusResultOrganizerOperations.validateFunctionalStatusResultOrganizerCodeCodeSystem(
-			this, diagnostics, context);
+		return FunctionalStatusResultOrganizerOperations.validateFunctionalStatusResultOrganizerCodeCodeSystem(this, diagnostics, context);
 	}
 
 	/**
@@ -66,8 +64,7 @@ public class FunctionalStatusResultOrganizerImpl extends ResultOrganizerImpl imp
 	 */
 	public boolean validateFunctionalStatusResultOrganizerClassCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return FunctionalStatusResultOrganizerOperations.validateFunctionalStatusResultOrganizerClassCode(
-			this, diagnostics, context);
+		return FunctionalStatusResultOrganizerOperations.validateFunctionalStatusResultOrganizerClassCode(this, diagnostics, context);
 	}
 
 	/**
@@ -77,8 +74,7 @@ public class FunctionalStatusResultOrganizerImpl extends ResultOrganizerImpl imp
 	 */
 	public boolean validateFunctionalStatusResultOrganizerMoodCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return FunctionalStatusResultOrganizerOperations.validateFunctionalStatusResultOrganizerMoodCode(
-			this, diagnostics, context);
+		return FunctionalStatusResultOrganizerOperations.validateFunctionalStatusResultOrganizerMoodCode(this, diagnostics, context);
 	}
 
 	/**
@@ -87,8 +83,7 @@ public class FunctionalStatusResultOrganizerImpl extends ResultOrganizerImpl imp
 	 * @generated
 	 */
 	public boolean validateFunctionalStatusResultOrganizerId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return FunctionalStatusResultOrganizerOperations.validateFunctionalStatusResultOrganizerId(
-			this, diagnostics, context);
+		return FunctionalStatusResultOrganizerOperations.validateFunctionalStatusResultOrganizerId(this, diagnostics, context);
 	}
 
 	/**
@@ -97,8 +92,7 @@ public class FunctionalStatusResultOrganizerImpl extends ResultOrganizerImpl imp
 	 * @generated
 	 */
 	public boolean validateFunctionalStatusResultOrganizerCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return FunctionalStatusResultOrganizerOperations.validateFunctionalStatusResultOrganizerCode(
-			this, diagnostics, context);
+		return FunctionalStatusResultOrganizerOperations.validateFunctionalStatusResultOrganizerCode(this, diagnostics, context);
 	}
 
 	/**
@@ -108,8 +102,7 @@ public class FunctionalStatusResultOrganizerImpl extends ResultOrganizerImpl imp
 	 */
 	public boolean validateFunctionalStatusResultOrganizerStatusCodeP(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return FunctionalStatusResultOrganizerOperations.validateFunctionalStatusResultOrganizerStatusCodeP(
-			this, diagnostics, context);
+		return FunctionalStatusResultOrganizerOperations.validateFunctionalStatusResultOrganizerStatusCodeP(this, diagnostics, context);
 	}
 
 	/**
@@ -119,8 +112,7 @@ public class FunctionalStatusResultOrganizerImpl extends ResultOrganizerImpl imp
 	 */
 	public boolean validateFunctionalStatusResultOrganizerStatusCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return FunctionalStatusResultOrganizerOperations.validateFunctionalStatusResultOrganizerStatusCode(
-			this, diagnostics, context);
+		return FunctionalStatusResultOrganizerOperations.validateFunctionalStatusResultOrganizerStatusCode(this, diagnostics, context);
 	}
 
 	/**
@@ -130,8 +122,7 @@ public class FunctionalStatusResultOrganizerImpl extends ResultOrganizerImpl imp
 	 */
 	public boolean validateFunctionalStatusResultOrganizerFunctionalStatusResultObservation(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return FunctionalStatusResultOrganizerOperations.validateFunctionalStatusResultOrganizerFunctionalStatusResultObservation(
-			this, diagnostics, context);
+		return FunctionalStatusResultOrganizerOperations.validateFunctionalStatusResultOrganizerFunctionalStatusResultObservation(this, diagnostics, context);
 	}
 
 	/**
@@ -160,17 +151,17 @@ public class FunctionalStatusResultOrganizerImpl extends ResultOrganizerImpl imp
 	 */
 	@Override
 	public FunctionalStatusResultOrganizer init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public FunctionalStatusResultOrganizer init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // FunctionalStatusResultOrganizerImpl

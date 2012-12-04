@@ -10,7 +10,6 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.consol.impl;
 
-import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
@@ -59,8 +58,7 @@ public class HospitalAdmissionDiagnosisImpl extends ActImpl implements HospitalA
 	 * @generated
 	 */
 	public boolean validateHospitalAdmissionDiagnosisTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return HospitalAdmissionDiagnosisOperations.validateHospitalAdmissionDiagnosisTemplateId(
-			this, diagnostics, context);
+		return HospitalAdmissionDiagnosisOperations.validateHospitalAdmissionDiagnosisTemplateId(this, diagnostics, context);
 	}
 
 	/**
@@ -69,8 +67,7 @@ public class HospitalAdmissionDiagnosisImpl extends ActImpl implements HospitalA
 	 * @generated
 	 */
 	public boolean validateHospitalAdmissionDiagnosisClassCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return HospitalAdmissionDiagnosisOperations.validateHospitalAdmissionDiagnosisClassCode(
-			this, diagnostics, context);
+		return HospitalAdmissionDiagnosisOperations.validateHospitalAdmissionDiagnosisClassCode(this, diagnostics, context);
 	}
 
 	/**
@@ -88,8 +85,7 @@ public class HospitalAdmissionDiagnosisImpl extends ActImpl implements HospitalA
 	 * @generated
 	 */
 	public boolean validateHospitalAdmissionDiagnosisMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return HospitalAdmissionDiagnosisOperations.validateHospitalAdmissionDiagnosisMoodCode(
-			this, diagnostics, context);
+		return HospitalAdmissionDiagnosisOperations.validateHospitalAdmissionDiagnosisMoodCode(this, diagnostics, context);
 	}
 
 	/**
@@ -99,8 +95,7 @@ public class HospitalAdmissionDiagnosisImpl extends ActImpl implements HospitalA
 	 */
 	public boolean validateHospitalAdmissionDiagnosisProblemObservation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return HospitalAdmissionDiagnosisOperations.validateHospitalAdmissionDiagnosisProblemObservation(
-			this, diagnostics, context);
+		return HospitalAdmissionDiagnosisOperations.validateHospitalAdmissionDiagnosisProblemObservation(this, diagnostics, context);
 	}
 
 	/**
@@ -118,16 +113,16 @@ public class HospitalAdmissionDiagnosisImpl extends ActImpl implements HospitalA
 	 * @generated
 	 */
 	public HospitalAdmissionDiagnosis init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	   * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public HospitalAdmissionDiagnosis init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // HospitalAdmissionDiagnosisImpl

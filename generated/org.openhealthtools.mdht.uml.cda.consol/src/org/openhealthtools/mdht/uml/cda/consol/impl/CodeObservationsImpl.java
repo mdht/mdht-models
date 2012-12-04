@@ -10,7 +10,6 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.consol.impl;
 
-import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
@@ -125,8 +124,7 @@ public class CodeObservationsImpl extends ObservationImpl implements CodeObserva
 	 */
 	public boolean validateCodeObservationsQuantityMeasurementObservation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return CodeObservationsOperations.validateCodeObservationsQuantityMeasurementObservation(
-			this, diagnostics, context);
+		return CodeObservationsOperations.validateCodeObservationsQuantityMeasurementObservation(this, diagnostics, context);
 	}
 
 	/**
@@ -153,16 +151,16 @@ public class CodeObservationsImpl extends ObservationImpl implements CodeObserva
 	 * @generated
 	 */
 	public CodeObservations init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	   * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public CodeObservations init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // CodeObservationsImpl

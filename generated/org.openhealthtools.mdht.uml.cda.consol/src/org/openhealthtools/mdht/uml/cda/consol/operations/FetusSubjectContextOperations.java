@@ -71,7 +71,6 @@ public class FetusSubjectContextOperations extends RoleOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.6.2.3')
 	 * @param fetusSubjectContext The receiving '<em><b>Fetus Subject Context</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -81,26 +80,28 @@ public class FetusSubjectContextOperations extends RoleOperations {
 
 	public static boolean validateFetusSubjectContextTemplateId(FetusSubjectContext fetusSubjectContext,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_FETUS_SUBJECT_CONTEXT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.FETUS_SUBJECT_CONTEXT);
 			try {
 				VALIDATE_FETUS_SUBJECT_CONTEXT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_FETUS_SUBJECT_CONTEXT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_FETUS_SUBJECT_CONTEXT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			fetusSubjectContext)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_FETUS_SUBJECT_CONTEXT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(fetusSubjectContext)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.FETUS_SUBJECT_CONTEXT__FETUS_SUBJECT_CONTEXT_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("FetusSubjectContextTemplateId"),
-					new Object[] { fetusSubjectContext }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.FETUS_SUBJECT_CONTEXT__FETUS_SUBJECT_CONTEXT_TEMPLATE_ID,
+						 ConsolPlugin.INSTANCE.getString("FetusSubjectContextTemplateId"),
+						 new Object [] { fetusSubjectContext }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -114,9 +115,9 @@ public class FetusSubjectContextOperations extends RoleOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_FETUS_SUBJECT_CONTEXT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and "
-			+ "let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in "
-			+ "value.code = '121026' and value.codeSystem = '1.2.840.10008.2.16.4')";
+	protected static final String VALIDATE_FETUS_SUBJECT_CONTEXT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and "+
+"let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in "+
+"value.code = '121026' and value.codeSystem = '1.2.840.10008.2.16.4')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateFetusSubjectContextCode(FetusSubjectContext, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Fetus Subject Context Code</em>}' invariant operation.
@@ -133,9 +134,6 @@ public class FetusSubjectContextOperations extends RoleOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * (self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and 
-	 * let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in 
-	 * value.code = '121026' and value.codeSystem = '1.2.840.10008.2.16.4')
 	 * @param fetusSubjectContext The receiving '<em><b>Fetus Subject Context</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -145,25 +143,28 @@ public class FetusSubjectContextOperations extends RoleOperations {
 
 	public static boolean validateFetusSubjectContextCode(FetusSubjectContext fetusSubjectContext,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_FETUS_SUBJECT_CONTEXT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.FETUS_SUBJECT_CONTEXT);
 			try {
 				VALIDATE_FETUS_SUBJECT_CONTEXT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_FETUS_SUBJECT_CONTEXT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_FETUS_SUBJECT_CONTEXT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			fetusSubjectContext)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_FETUS_SUBJECT_CONTEXT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(fetusSubjectContext)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.FETUS_SUBJECT_CONTEXT__FETUS_SUBJECT_CONTEXT_CODE,
-					ConsolPlugin.INSTANCE.getString("FetusSubjectContextCode"), new Object[] { fetusSubjectContext }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.FETUS_SUBJECT_CONTEXT__FETUS_SUBJECT_CONTEXT_CODE,
+						 ConsolPlugin.INSTANCE.getString("FetusSubjectContextCode"),
+						 new Object [] { fetusSubjectContext }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -194,7 +195,6 @@ public class FetusSubjectContextOperations extends RoleOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.subject->one(subject : cda::SubjectPerson | not subject.oclIsUndefined() and subject.oclIsKindOf(cda::SubjectPerson))
 	 * @param fetusSubjectContext The receiving '<em><b>Fetus Subject Context</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -204,25 +204,28 @@ public class FetusSubjectContextOperations extends RoleOperations {
 
 	public static boolean validateFetusSubjectContextSubject(FetusSubjectContext fetusSubjectContext,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_FETUS_SUBJECT_CONTEXT_SUBJECT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.FETUS_SUBJECT_CONTEXT);
 			try {
 				VALIDATE_FETUS_SUBJECT_CONTEXT_SUBJECT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_FETUS_SUBJECT_CONTEXT_SUBJECT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_FETUS_SUBJECT_CONTEXT_SUBJECT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			fetusSubjectContext)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_FETUS_SUBJECT_CONTEXT_SUBJECT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(fetusSubjectContext)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.FETUS_SUBJECT_CONTEXT__FETUS_SUBJECT_CONTEXT_SUBJECT,
-					ConsolPlugin.INSTANCE.getString("FetusSubjectContextSubject"), new Object[] { fetusSubjectContext }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.FETUS_SUBJECT_CONTEXT__FETUS_SUBJECT_CONTEXT_SUBJECT,
+						 ConsolPlugin.INSTANCE.getString("FetusSubjectContextSubject"),
+						 new Object [] { fetusSubjectContext }));
 			}
-
+			 
 			return false;
 		}
 		return true;

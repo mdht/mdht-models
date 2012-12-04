@@ -83,7 +83,6 @@ public class MedicationUseNoneKnownOperations extends ClinicalStatementOperation
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * not self.text.oclIsUndefined() implies self.text->forAll(reference->size() = 1)
 	 * @param medicationUseNoneKnown The receiving '<em><b>Medication Use None Known</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -93,26 +92,28 @@ public class MedicationUseNoneKnownOperations extends ClinicalStatementOperation
 
 	public static boolean validateMedicationUseNoneKnownTextReference(MedicationUseNoneKnown medicationUseNoneKnown,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_MEDICATION_USE_NONE_KNOWN_TEXT_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.MEDICATION_USE_NONE_KNOWN);
 			try {
 				VALIDATE_MEDICATION_USE_NONE_KNOWN_TEXT_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MEDICATION_USE_NONE_KNOWN_TEXT_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_USE_NONE_KNOWN_TEXT_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			medicationUseNoneKnown)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_USE_NONE_KNOWN_TEXT_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(medicationUseNoneKnown)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.MEDICATION_USE_NONE_KNOWN__MEDICATION_USE_NONE_KNOWN_TEXT_REFERENCE,
-					ConsolPlugin.INSTANCE.getString("MedicationUseNoneKnownTextReference"),
-					new Object[] { medicationUseNoneKnown }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.WARNING,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.MEDICATION_USE_NONE_KNOWN__MEDICATION_USE_NONE_KNOWN_TEXT_REFERENCE,
+						 ConsolPlugin.INSTANCE.getString("MedicationUseNoneKnownTextReference"),
+						 new Object [] { medicationUseNoneKnown }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -143,7 +144,6 @@ public class MedicationUseNoneKnownOperations extends ClinicalStatementOperation
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.text->forAll(reference->size() = 1) implies self.text->forAll(reference->one(value->size() = 1))
 	 * @param medicationUseNoneKnown The receiving '<em><b>Medication Use None Known</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -153,27 +153,28 @@ public class MedicationUseNoneKnownOperations extends ClinicalStatementOperation
 
 	public static boolean validateMedicationUseNoneKnownTextReferenceValue(
 			MedicationUseNoneKnown medicationUseNoneKnown, DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_MEDICATION_USE_NONE_KNOWN_TEXT_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.MEDICATION_USE_NONE_KNOWN);
 			try {
 				VALIDATE_MEDICATION_USE_NONE_KNOWN_TEXT_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MEDICATION_USE_NONE_KNOWN_TEXT_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_MEDICATION_USE_NONE_KNOWN_TEXT_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			medicationUseNoneKnown)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_USE_NONE_KNOWN_TEXT_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(medicationUseNoneKnown)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.MEDICATION_USE_NONE_KNOWN__MEDICATION_USE_NONE_KNOWN_TEXT_REFERENCE_VALUE,
-					ConsolPlugin.INSTANCE.getString("MedicationUseNoneKnownTextReferenceValue"),
-					new Object[] { medicationUseNoneKnown }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.WARNING,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.MEDICATION_USE_NONE_KNOWN__MEDICATION_USE_NONE_KNOWN_TEXT_REFERENCE_VALUE,
+						 ConsolPlugin.INSTANCE.getString("MedicationUseNoneKnownTextReferenceValue"),
+						 new Object [] { medicationUseNoneKnown }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -204,7 +205,6 @@ public class MedicationUseNoneKnownOperations extends ClinicalStatementOperation
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * not self.text.reference.value.oclIsUndefined() implies not self.getSection().text.getText(self.text.reference.value.substring(2, self.text.reference.value.size())).oclIsUndefined()
 	 * @param medicationUseNoneKnown The receiving '<em><b>Medication Use None Known</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -214,26 +214,28 @@ public class MedicationUseNoneKnownOperations extends ClinicalStatementOperation
 
 	public static boolean validateMedicationUseNoneKnownReferenceValue(MedicationUseNoneKnown medicationUseNoneKnown,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_MEDICATION_USE_NONE_KNOWN_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.MEDICATION_USE_NONE_KNOWN);
 			try {
 				VALIDATE_MEDICATION_USE_NONE_KNOWN_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MEDICATION_USE_NONE_KNOWN_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_USE_NONE_KNOWN_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			medicationUseNoneKnown)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_USE_NONE_KNOWN_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(medicationUseNoneKnown)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.MEDICATION_USE_NONE_KNOWN__MEDICATION_USE_NONE_KNOWN_REFERENCE_VALUE,
-					ConsolPlugin.INSTANCE.getString("MedicationUseNoneKnownReferenceValue"),
-					new Object[] { medicationUseNoneKnown }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.MEDICATION_USE_NONE_KNOWN__MEDICATION_USE_NONE_KNOWN_REFERENCE_VALUE,
+						 ConsolPlugin.INSTANCE.getString("MedicationUseNoneKnownReferenceValue"),
+						 new Object [] { medicationUseNoneKnown }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -264,7 +266,6 @@ public class MedicationUseNoneKnownOperations extends ClinicalStatementOperation
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.4.29')
 	 * @param medicationUseNoneKnown The receiving '<em><b>Medication Use None Known</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -274,26 +275,28 @@ public class MedicationUseNoneKnownOperations extends ClinicalStatementOperation
 
 	public static boolean validateMedicationUseNoneKnownTemplateId(MedicationUseNoneKnown medicationUseNoneKnown,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_MEDICATION_USE_NONE_KNOWN_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.MEDICATION_USE_NONE_KNOWN);
 			try {
 				VALIDATE_MEDICATION_USE_NONE_KNOWN_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MEDICATION_USE_NONE_KNOWN_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_USE_NONE_KNOWN_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			medicationUseNoneKnown)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_USE_NONE_KNOWN_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(medicationUseNoneKnown)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.MEDICATION_USE_NONE_KNOWN__MEDICATION_USE_NONE_KNOWN_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("MedicationUseNoneKnownTemplateId"),
-					new Object[] { medicationUseNoneKnown }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.MEDICATION_USE_NONE_KNOWN__MEDICATION_USE_NONE_KNOWN_TEMPLATE_ID,
+						 ConsolPlugin.INSTANCE.getString("MedicationUseNoneKnownTemplateId"),
+						 new Object [] { medicationUseNoneKnown }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -324,7 +327,6 @@ public class MedicationUseNoneKnownOperations extends ClinicalStatementOperation
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.classCode=vocab::ActClassObservation::OBS
 	 * @param medicationUseNoneKnown The receiving '<em><b>Medication Use None Known</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -334,26 +336,28 @@ public class MedicationUseNoneKnownOperations extends ClinicalStatementOperation
 
 	public static boolean validateMedicationUseNoneKnownClassCode(MedicationUseNoneKnown medicationUseNoneKnown,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_MEDICATION_USE_NONE_KNOWN_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.MEDICATION_USE_NONE_KNOWN);
 			try {
 				VALIDATE_MEDICATION_USE_NONE_KNOWN_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MEDICATION_USE_NONE_KNOWN_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_USE_NONE_KNOWN_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			medicationUseNoneKnown)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_USE_NONE_KNOWN_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(medicationUseNoneKnown)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.MEDICATION_USE_NONE_KNOWN__MEDICATION_USE_NONE_KNOWN_CLASS_CODE,
-					ConsolPlugin.INSTANCE.getString("MedicationUseNoneKnownClassCode"),
-					new Object[] { medicationUseNoneKnown }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.MEDICATION_USE_NONE_KNOWN__MEDICATION_USE_NONE_KNOWN_CLASS_CODE,
+						 ConsolPlugin.INSTANCE.getString("MedicationUseNoneKnownClassCode"),
+						 new Object [] { medicationUseNoneKnown }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -384,7 +388,6 @@ public class MedicationUseNoneKnownOperations extends ClinicalStatementOperation
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.moodCode=vocab::x_ActMoodDocumentObservation::EVN
 	 * @param medicationUseNoneKnown The receiving '<em><b>Medication Use None Known</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -394,26 +397,28 @@ public class MedicationUseNoneKnownOperations extends ClinicalStatementOperation
 
 	public static boolean validateMedicationUseNoneKnownMoodCode(MedicationUseNoneKnown medicationUseNoneKnown,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_MEDICATION_USE_NONE_KNOWN_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.MEDICATION_USE_NONE_KNOWN);
 			try {
 				VALIDATE_MEDICATION_USE_NONE_KNOWN_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MEDICATION_USE_NONE_KNOWN_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_USE_NONE_KNOWN_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			medicationUseNoneKnown)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_USE_NONE_KNOWN_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(medicationUseNoneKnown)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.MEDICATION_USE_NONE_KNOWN__MEDICATION_USE_NONE_KNOWN_MOOD_CODE,
-					ConsolPlugin.INSTANCE.getString("MedicationUseNoneKnownMoodCode"),
-					new Object[] { medicationUseNoneKnown }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.MEDICATION_USE_NONE_KNOWN__MEDICATION_USE_NONE_KNOWN_MOOD_CODE,
+						 ConsolPlugin.INSTANCE.getString("MedicationUseNoneKnownMoodCode"),
+						 new Object [] { medicationUseNoneKnown }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -444,7 +449,6 @@ public class MedicationUseNoneKnownOperations extends ClinicalStatementOperation
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * (self.id->isEmpty() or self.id->exists(element | element.isNullFlavorUndefined())) implies (not self.id->isEmpty())
 	 * @param medicationUseNoneKnown The receiving '<em><b>Medication Use None Known</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -454,26 +458,28 @@ public class MedicationUseNoneKnownOperations extends ClinicalStatementOperation
 
 	public static boolean validateMedicationUseNoneKnownId(MedicationUseNoneKnown medicationUseNoneKnown,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_MEDICATION_USE_NONE_KNOWN_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.MEDICATION_USE_NONE_KNOWN);
 			try {
 				VALIDATE_MEDICATION_USE_NONE_KNOWN_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MEDICATION_USE_NONE_KNOWN_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_USE_NONE_KNOWN_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			medicationUseNoneKnown)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_USE_NONE_KNOWN_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(medicationUseNoneKnown)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.MEDICATION_USE_NONE_KNOWN__MEDICATION_USE_NONE_KNOWN_ID,
-					ConsolPlugin.INSTANCE.getString("MedicationUseNoneKnownId"),
-					new Object[] { medicationUseNoneKnown }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.MEDICATION_USE_NONE_KNOWN__MEDICATION_USE_NONE_KNOWN_ID,
+						 ConsolPlugin.INSTANCE.getString("MedicationUseNoneKnownId"),
+						 new Object [] { medicationUseNoneKnown }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -504,7 +510,6 @@ public class MedicationUseNoneKnownOperations extends ClinicalStatementOperation
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * (self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined())
 	 * @param medicationUseNoneKnown The receiving '<em><b>Medication Use None Known</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -514,26 +519,28 @@ public class MedicationUseNoneKnownOperations extends ClinicalStatementOperation
 
 	public static boolean validateMedicationUseNoneKnownCodeP(MedicationUseNoneKnown medicationUseNoneKnown,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_MEDICATION_USE_NONE_KNOWN_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.MEDICATION_USE_NONE_KNOWN);
 			try {
 				VALIDATE_MEDICATION_USE_NONE_KNOWN_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MEDICATION_USE_NONE_KNOWN_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_USE_NONE_KNOWN_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			medicationUseNoneKnown)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_USE_NONE_KNOWN_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(medicationUseNoneKnown)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.MEDICATION_USE_NONE_KNOWN__MEDICATION_USE_NONE_KNOWN_CODE_P,
-					ConsolPlugin.INSTANCE.getString("MedicationUseNoneKnownCodeP"),
-					new Object[] { medicationUseNoneKnown }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.MEDICATION_USE_NONE_KNOWN__MEDICATION_USE_NONE_KNOWN_CODE_P,
+						 ConsolPlugin.INSTANCE.getString("MedicationUseNoneKnownCodeP"),
+						 new Object [] { medicationUseNoneKnown }));
 			}
-
+			
 			if (context != null) {
 				// generate a pass token for my dependent constraints to short-circuit or filter results
 				@SuppressWarnings("unchecked")
@@ -545,7 +552,7 @@ public class MedicationUseNoneKnownOperations extends ClinicalStatementOperation
 				}
 				passToken.add(medicationUseNoneKnown);
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -559,9 +566,9 @@ public class MedicationUseNoneKnownOperations extends ClinicalStatementOperation
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_MEDICATION_USE_NONE_KNOWN_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "
-			+ "let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "
-			+ "value.code = 'ASSERTION' and value.codeSystem = '2.16.840.1.113883.5.4')";
+	protected static final String VALIDATE_MEDICATION_USE_NONE_KNOWN_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "+
+"let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "+
+"value.code = 'ASSERTION' and value.codeSystem = '2.16.840.1.113883.5.4')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateMedicationUseNoneKnownCode(MedicationUseNoneKnown, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Use None Known Code</em>}' invariant operation.
@@ -578,9 +585,6 @@ public class MedicationUseNoneKnownOperations extends ClinicalStatementOperation
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * (self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and 
-	 * let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in 
-	 * value.code = 'ASSERTION' and value.codeSystem = '2.16.840.1.113883.5.4')
 	 * @param medicationUseNoneKnown The receiving '<em><b>Medication Use None Known</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -590,34 +594,34 @@ public class MedicationUseNoneKnownOperations extends ClinicalStatementOperation
 
 	public static boolean validateMedicationUseNoneKnownCode(MedicationUseNoneKnown medicationUseNoneKnown,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
-		Object passToken = (context == null)
-				? null
-				: context.get("org.openhealthtools.mdht.uml.cda.consol.MedicationUseNoneKnownCodeP");
+  	  
+		Object passToken = (context == null) ? null : context.get("org.openhealthtools.mdht.uml.cda.consol.MedicationUseNoneKnownCodeP");
 		if ((passToken instanceof Collection<?>) && ((Collection<?>) passToken).contains(medicationUseNoneKnown)) {
 			// I have a free pass to short-circuit
 			return true;
 		}
-
+  	  
 		if (VALIDATE_MEDICATION_USE_NONE_KNOWN_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.MEDICATION_USE_NONE_KNOWN);
 			try {
 				VALIDATE_MEDICATION_USE_NONE_KNOWN_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MEDICATION_USE_NONE_KNOWN_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_USE_NONE_KNOWN_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			medicationUseNoneKnown)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_USE_NONE_KNOWN_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(medicationUseNoneKnown)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.MEDICATION_USE_NONE_KNOWN__MEDICATION_USE_NONE_KNOWN_CODE,
-					ConsolPlugin.INSTANCE.getString("MedicationUseNoneKnownCode"),
-					new Object[] { medicationUseNoneKnown }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.MEDICATION_USE_NONE_KNOWN__MEDICATION_USE_NONE_KNOWN_CODE,
+						 ConsolPlugin.INSTANCE.getString("MedicationUseNoneKnownCode"),
+						 new Object [] { medicationUseNoneKnown }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -648,7 +652,6 @@ public class MedicationUseNoneKnownOperations extends ClinicalStatementOperation
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * (self.effectiveTime.oclIsUndefined() or self.effectiveTime.isNullFlavorUndefined()) implies (not self.effectiveTime.oclIsUndefined())
 	 * @param medicationUseNoneKnown The receiving '<em><b>Medication Use None Known</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -658,26 +661,28 @@ public class MedicationUseNoneKnownOperations extends ClinicalStatementOperation
 
 	public static boolean validateMedicationUseNoneKnownEffectiveTime(MedicationUseNoneKnown medicationUseNoneKnown,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_MEDICATION_USE_NONE_KNOWN_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.MEDICATION_USE_NONE_KNOWN);
 			try {
 				VALIDATE_MEDICATION_USE_NONE_KNOWN_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MEDICATION_USE_NONE_KNOWN_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_USE_NONE_KNOWN_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			medicationUseNoneKnown)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_USE_NONE_KNOWN_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(medicationUseNoneKnown)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.MEDICATION_USE_NONE_KNOWN__MEDICATION_USE_NONE_KNOWN_EFFECTIVE_TIME,
-					ConsolPlugin.INSTANCE.getString("MedicationUseNoneKnownEffectiveTime"),
-					new Object[] { medicationUseNoneKnown }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.WARNING,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.MEDICATION_USE_NONE_KNOWN__MEDICATION_USE_NONE_KNOWN_EFFECTIVE_TIME,
+						 ConsolPlugin.INSTANCE.getString("MedicationUseNoneKnownEffectiveTime"),
+						 new Object [] { medicationUseNoneKnown }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -691,8 +696,9 @@ public class MedicationUseNoneKnownOperations extends ClinicalStatementOperation
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_MEDICATION_USE_NONE_KNOWN_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and "
-			+ "let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in " + "value.code = 'completed')";
+	protected static final String VALIDATE_MEDICATION_USE_NONE_KNOWN_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and "+
+"let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in "+
+"value.code = 'completed')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateMedicationUseNoneKnownStatusCode(MedicationUseNoneKnown, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Use None Known Status Code</em>}' invariant operation.
@@ -709,9 +715,6 @@ public class MedicationUseNoneKnownOperations extends ClinicalStatementOperation
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * (self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and 
-	 * let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in 
-	 * value.code = 'completed')
 	 * @param medicationUseNoneKnown The receiving '<em><b>Medication Use None Known</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -721,26 +724,28 @@ public class MedicationUseNoneKnownOperations extends ClinicalStatementOperation
 
 	public static boolean validateMedicationUseNoneKnownStatusCode(MedicationUseNoneKnown medicationUseNoneKnown,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_MEDICATION_USE_NONE_KNOWN_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.MEDICATION_USE_NONE_KNOWN);
 			try {
 				VALIDATE_MEDICATION_USE_NONE_KNOWN_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MEDICATION_USE_NONE_KNOWN_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_USE_NONE_KNOWN_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			medicationUseNoneKnown)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_USE_NONE_KNOWN_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(medicationUseNoneKnown)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.MEDICATION_USE_NONE_KNOWN__MEDICATION_USE_NONE_KNOWN_STATUS_CODE,
-					ConsolPlugin.INSTANCE.getString("MedicationUseNoneKnownStatusCode"),
-					new Object[] { medicationUseNoneKnown }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.MEDICATION_USE_NONE_KNOWN__MEDICATION_USE_NONE_KNOWN_STATUS_CODE,
+						 ConsolPlugin.INSTANCE.getString("MedicationUseNoneKnownStatusCode"),
+						 new Object [] { medicationUseNoneKnown }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -771,7 +776,6 @@ public class MedicationUseNoneKnownOperations extends ClinicalStatementOperation
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * (self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined())
 	 * @param medicationUseNoneKnown The receiving '<em><b>Medication Use None Known</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -781,26 +785,28 @@ public class MedicationUseNoneKnownOperations extends ClinicalStatementOperation
 
 	public static boolean validateMedicationUseNoneKnownStatusCodeP(MedicationUseNoneKnown medicationUseNoneKnown,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_MEDICATION_USE_NONE_KNOWN_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.MEDICATION_USE_NONE_KNOWN);
 			try {
 				VALIDATE_MEDICATION_USE_NONE_KNOWN_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MEDICATION_USE_NONE_KNOWN_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_USE_NONE_KNOWN_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			medicationUseNoneKnown)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_USE_NONE_KNOWN_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(medicationUseNoneKnown)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.MEDICATION_USE_NONE_KNOWN__MEDICATION_USE_NONE_KNOWN_STATUS_CODE_P,
-					ConsolPlugin.INSTANCE.getString("MedicationUseNoneKnownStatusCodeP"),
-					new Object[] { medicationUseNoneKnown }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.MEDICATION_USE_NONE_KNOWN__MEDICATION_USE_NONE_KNOWN_STATUS_CODE_P,
+						 ConsolPlugin.INSTANCE.getString("MedicationUseNoneKnownStatusCodeP"),
+						 new Object [] { medicationUseNoneKnown }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -831,7 +837,6 @@ public class MedicationUseNoneKnownOperations extends ClinicalStatementOperation
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * (self.text.oclIsUndefined() or self.text.isNullFlavorUndefined()) implies (not self.text.oclIsUndefined())
 	 * @param medicationUseNoneKnown The receiving '<em><b>Medication Use None Known</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -841,26 +846,28 @@ public class MedicationUseNoneKnownOperations extends ClinicalStatementOperation
 
 	public static boolean validateMedicationUseNoneKnownText(MedicationUseNoneKnown medicationUseNoneKnown,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_MEDICATION_USE_NONE_KNOWN_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.MEDICATION_USE_NONE_KNOWN);
 			try {
 				VALIDATE_MEDICATION_USE_NONE_KNOWN_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MEDICATION_USE_NONE_KNOWN_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_USE_NONE_KNOWN_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			medicationUseNoneKnown)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_USE_NONE_KNOWN_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(medicationUseNoneKnown)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.MEDICATION_USE_NONE_KNOWN__MEDICATION_USE_NONE_KNOWN_TEXT,
-					ConsolPlugin.INSTANCE.getString("MedicationUseNoneKnownText"),
-					new Object[] { medicationUseNoneKnown }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.INFO,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.MEDICATION_USE_NONE_KNOWN__MEDICATION_USE_NONE_KNOWN_TEXT,
+						 ConsolPlugin.INSTANCE.getString("MedicationUseNoneKnownText"),
+						 new Object [] { medicationUseNoneKnown }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -874,9 +881,9 @@ public class MedicationUseNoneKnownOperations extends ClinicalStatementOperation
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_MEDICATION_USE_NONE_KNOWN_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and "
-			+ "let value : datatypes::CD = element.oclAsType(datatypes::CD) in "
-			+ "value.code = '182904002' and value.codeSystem = '2.16.840.1.113883.6.96'))";
+	protected static final String VALIDATE_MEDICATION_USE_NONE_KNOWN_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and "+
+"let value : datatypes::CD = element.oclAsType(datatypes::CD) in "+
+"value.code = '182904002' and value.codeSystem = '2.16.840.1.113883.6.96'))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateMedicationUseNoneKnownValue(MedicationUseNoneKnown, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Use None Known Value</em>}' invariant operation.
@@ -893,9 +900,6 @@ public class MedicationUseNoneKnownOperations extends ClinicalStatementOperation
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * (self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and 
-	 * let value : datatypes::CD = element.oclAsType(datatypes::CD) in 
-	 * value.code = '182904002' and value.codeSystem = '2.16.840.1.113883.6.96'))
 	 * @param medicationUseNoneKnown The receiving '<em><b>Medication Use None Known</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -905,26 +909,28 @@ public class MedicationUseNoneKnownOperations extends ClinicalStatementOperation
 
 	public static boolean validateMedicationUseNoneKnownValue(MedicationUseNoneKnown medicationUseNoneKnown,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_MEDICATION_USE_NONE_KNOWN_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.MEDICATION_USE_NONE_KNOWN);
 			try {
 				VALIDATE_MEDICATION_USE_NONE_KNOWN_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MEDICATION_USE_NONE_KNOWN_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_USE_NONE_KNOWN_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			medicationUseNoneKnown)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_USE_NONE_KNOWN_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(medicationUseNoneKnown)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.MEDICATION_USE_NONE_KNOWN__MEDICATION_USE_NONE_KNOWN_VALUE,
-					ConsolPlugin.INSTANCE.getString("MedicationUseNoneKnownValue"),
-					new Object[] { medicationUseNoneKnown }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.MEDICATION_USE_NONE_KNOWN__MEDICATION_USE_NONE_KNOWN_VALUE,
+						 ConsolPlugin.INSTANCE.getString("MedicationUseNoneKnownValue"),
+						 new Object [] { medicationUseNoneKnown }));
 			}
-
+			 
 			return false;
 		}
 		return true;
