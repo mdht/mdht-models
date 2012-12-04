@@ -1130,7 +1130,7 @@ In a CCD the encompassingEncounter may be used when documenting a specific encou
         <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_QYeW4D5-Ed6cla2oXsPtlA"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_fvjjoSzHEeGMXrZ0DiQwGg" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_fvjjoizHEeGMXrZ0DiQwGg"/>
-        <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_vWA0AErdEd6FXKclYGEDCw"/>
+        <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_VDhXoErdEd6FXKclYGEDCw"/>
       </ownedAttribute>
     </nestedClassifier>
     <nestedClassifier xmi:type="uml:Class" xmi:id="_yamekCyoEeGMXrZ0DiQwGg" name="InFulfillmentOf">
@@ -1483,7 +1483,7 @@ The type of consent (e.g., a consent to perform the related serviceEvent) is con
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2UnxmhSVEeGGzu7fmW9pXw" value="1"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2UnxmxSVEeGGzu7fmW9pXw" value="1"/>
     </ownedAttribute>
-    <ownedAttribute xmi:id="_2UnxoRSVEeGGzu7fmW9pXw" name="hospitalDischargeDiagnosisSection" association="_2Unx1xSVEeGGzu7fmW9pXw">
+    <ownedAttribute xmi:id="_2UnxoRSVEeGGzu7fmW9pXw" name="hospitalDischargeDiagnosisSection" aggregation="composite" association="_2Unx1xSVEeGGzu7fmW9pXw">
       <type xmi:type="uml:Class" href="consol-discharge.uml#_2PidURSVEeGGzu7fmW9pXw"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2UnxohSVEeGGzu7fmW9pXw" value="1"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2UnxoxSVEeGGzu7fmW9pXw" value="1"/>
@@ -1679,9 +1679,6 @@ The type of consent (e.g., a consent to perform the related serviceEvent) is con
     <ownedEnd xmi:id="_2UnxzxSVEeGGzu7fmW9pXw" type="_2UnxkRSVEeGGzu7fmW9pXw" association="_2UnxzhSVEeGGzu7fmW9pXw"/>
   </uml:Association>
   <uml:Association xmi:id="_2Unx1xSVEeGGzu7fmW9pXw" memberEnd="_2UnxoRSVEeGGzu7fmW9pXw _2Ut4MBSVEeGGzu7fmW9pXw">
-    <generalization xmi:id="_4-GdYCiuEeGhk8Yq0-SNUw">
-      <general xmi:type="uml:Class" href="consol-discharge.uml#_2PidURSVEeGGzu7fmW9pXw"/>
-    </generalization>
     <ownedEnd xmi:id="_2Ut4MBSVEeGGzu7fmW9pXw" type="_2UnxkRSVEeGGzu7fmW9pXw" association="_2Unx1xSVEeGGzu7fmW9pXw"/>
   </uml:Association>
   <uml:Association xmi:id="_2Ut4MhSVEeGGzu7fmW9pXw" memberEnd="_2UnxpBSVEeGGzu7fmW9pXw _2Ut4MxSVEeGGzu7fmW9pXw">
@@ -2311,9 +2308,6 @@ For conformance with both specifications, please review the appendix on XDS-SD a
     <memberEnd href="#_HG1IESsfEeGQ5rkpDKAt8A"/>
   </uml:Association>
   <uml:Association xmi:id="_dAIMESseEeGQ5rkpDKAt8A">
-    <generalization xmi:id="_C0DEADCgEeGKv64oQf5fow">
-      <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#__QZaIEcZEd6besF9iFIJkQ"/>
-    </generalization>
     <ownedEnd xmi:id="_dAIzICseEeGQ5rkpDKAt8A" association="_dAIMESseEeGQ5rkpDKAt8A">
       <type xmi:type="uml:Class" href="consol-advancedirectives.uml#_9HiC0CsdEeGQ5rkpDKAt8A"/>
     </ownedEnd>
