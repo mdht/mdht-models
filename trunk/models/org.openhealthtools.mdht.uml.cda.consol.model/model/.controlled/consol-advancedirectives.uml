@@ -9,14 +9,17 @@
         <language>OCL</language>
         <language>Analysis</language>
         <body>self.effectiveTime.low.hasContent()  or self.effectiveTime.low.isNullFlavorDefined()</body>
-        <body>This effectiveTime SHALL contain exactly one [1..1] low&#xA;i. If the starting time is unknown, the &lt;low> element SHALL have the nullFlavor attribute set to UNK</body>
+        <body>This effectiveTime SHALL contain exactly one [1..1] low
+i. If the starting time is unknown, the &lt;low> element SHALL have the nullFlavor attribute set to UNK</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_2KlEyhSVEeGGzu7fmW9pXw" name="hasEndingTime" constrainedElement="_2KlEwBSVEeGGzu7fmW9pXw">
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_2KlEyxSVEeGGzu7fmW9pXw">
         <language>Analysis</language>
         <language>OCL</language>
-        <body>This effectiveTime SHALL contain exactly one [1..1] high.&#xA;i. If the ending time is unknown, the &lt;high> element SHALL have the nullFlavor attribute set to UNK.&#xA;ii. If the Advance Directive does not have a specified ending time, the &lt;high> element SHALL have the nullFlavor attribute set to NA.</body>
+        <body>This effectiveTime SHALL contain exactly one [1..1] high.
+i. If the ending time is unknown, the &lt;high> element SHALL have the nullFlavor attribute set to UNK.
+ii. If the Advance Directive does not have a specified ending time, the &lt;high> element SHALL have the nullFlavor attribute set to NA.</body>
         <body>self.effectiveTime.high.hasContent() or self.effectiveTime.high.isNullFlavorDefined()</body>
       </specification>
     </ownedRule>
@@ -94,7 +97,9 @@
           <specification xmi:type="uml:OpaqueExpression" xmi:id="_5Py04CsgEeGQ5rkpDKAt8A">
             <language>Analysis</language>
             <language>OCL</language>
-            <body>The text, if present, MAY contain zero or one [0..1] reference.&#xA;a. The URL of a referenced advance directive document MAY be present, and SHALL be represented in Observation/reference/ExternalDocument/text/reference.&#xA;b. If a URL is referenced, then it SHOULD have a corresponding linkHTML element in narrative block.</body>
+            <body>The text, if present, MAY contain zero or one [0..1] reference.
+a. The URL of a referenced advance directive document MAY be present, and SHALL be represented in Observation/reference/ExternalDocument/text/reference.
+b. If a URL is referenced, then it SHOULD have a corresponding linkHTML element in narrative block.</body>
             <body>not self.text.oclIsUndefined() implies not self.text.reference.oclIsUndefined()</body>
           </specification>
         </ownedRule>
@@ -200,10 +205,11 @@
         <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_CRBsgEreEd6FXKclYGEDCw"/>
         <defaultValue xmi:type="uml:LiteralString" xmi:id="_L1UNcCtAEeGqDO62uYTlKA" value="VRF"/>
       </ownedAttribute>
-      <ownedAttribute xmi:id="_dAHlACseEeGQ5rkpDKAt8A" name="participantRole">
+      <ownedAttribute xmi:id="_dAHlACseEeGQ5rkpDKAt8A" name="participantRole" aggregation="composite">
         <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#__QZaIEcZEd6besF9iFIJkQ"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_eTpCYCseEeGQ5rkpDKAt8A" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_eTpCYSseEeGQ5rkpDKAt8A" value="1"/>
+        <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_uuZlAUoaEd6c3qsAxlFHaQ"/>
         <association href="consol-documents.uml#_dAIMESseEeGQ5rkpDKAt8A"/>
       </ownedAttribute>
     </nestedClassifier>
