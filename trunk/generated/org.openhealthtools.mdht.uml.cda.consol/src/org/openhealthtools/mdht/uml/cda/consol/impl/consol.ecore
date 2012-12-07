@@ -21453,8 +21453,9 @@
       <details key="constraints.validation.warning" value="ComponentOfEncompassingEncounter5"/>
     </eAnnotations>
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolProcedureNoteComponentOfEncompassingEncounter5">
-      <details key="constraints.validation.error" value="EncompassingEncounter5Code EncompassingEncounter5Location"/>
+      <details key="constraints.validation.error" value="EncompassingEncounter5Code EncompassingEncounter5Location EncompassingEncounter5EncounterParticipantTypeCode"/>
       <details key="constraints.validation.info" value="EncompassingEncounter5EncounterParticipant"/>
+      <details key="constraints.validation.query" value="EncompassingEncounter5EncounterParticipantTypeCode"/>
     </eAnnotations>
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolProcedureNoteComponentOfEncompassingEncounter5Location">
       <details key="constraints.validation.error" value="LocationHealthCareFacility"/>

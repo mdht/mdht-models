@@ -6,6 +6,7 @@
  */
 package org.openhealthtools.mdht.uml.cda.consol.impl;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
@@ -28,163 +29,180 @@ import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
  */
 public class CaregiverCharacteristicsImpl extends ObservationImpl implements CaregiverCharacteristics {
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	protected CaregiverCharacteristicsImpl() {
 		super();
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	@Override
 	protected EClass eStaticClass() {
 		return ConsolPackage.Literals.CAREGIVER_CHARACTERISTICS;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateCaregiverCharacteristicsValueCodeSystem(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return CaregiverCharacteristicsOperations.validateCaregiverCharacteristicsValueCodeSystem(this, diagnostics, context);
+		return CaregiverCharacteristicsOperations.validateCaregiverCharacteristicsValueCodeSystem(
+			this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateCaregiverCharacteristicsTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return CaregiverCharacteristicsOperations.validateCaregiverCharacteristicsTemplateId(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateCaregiverCharacteristicsClassCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return CaregiverCharacteristicsOperations.validateCaregiverCharacteristicsClassCode(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateCaregiverCharacteristicsMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return CaregiverCharacteristicsOperations.validateCaregiverCharacteristicsMoodCode(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateCaregiverCharacteristicsId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return CaregiverCharacteristicsOperations.validateCaregiverCharacteristicsId(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateCaregiverCharacteristicsCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return CaregiverCharacteristicsOperations.validateCaregiverCharacteristicsCode(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateCaregiverCharacteristicsStatusCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return CaregiverCharacteristicsOperations.validateCaregiverCharacteristicsStatusCode(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateCaregiverCharacteristicsStatusCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return CaregiverCharacteristicsOperations.validateCaregiverCharacteristicsStatusCodeP(this, diagnostics, context);
+		return CaregiverCharacteristicsOperations.validateCaregiverCharacteristicsStatusCodeP(
+			this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateCaregiverCharacteristicsValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return CaregiverCharacteristicsOperations.validateCaregiverCharacteristicsValue(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateCaregiverCharacteristicsParticipant(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return CaregiverCharacteristicsOperations.validateCaregiverCharacteristicsParticipant(this, diagnostics, context);
+		return CaregiverCharacteristicsOperations.validateCaregiverCharacteristicsParticipant(
+			this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateCaregiverCharacteristicsParticipantParticipantRoleClassCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return CaregiverCharacteristicsOperations.validateCaregiverCharacteristicsParticipantParticipantRoleClassCode(this, diagnostics, context);
+		return CaregiverCharacteristicsOperations.validateCaregiverCharacteristicsParticipantParticipantRoleClassCode(
+			this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateCaregiverCharacteristicsParticipantTimeLow(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return CaregiverCharacteristicsOperations.validateCaregiverCharacteristicsParticipantTimeLow(this, diagnostics, context);
+		return CaregiverCharacteristicsOperations.validateCaregiverCharacteristicsParticipantTimeLow(
+			this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateCaregiverCharacteristicsParticipantTimeHigh(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return CaregiverCharacteristicsOperations.validateCaregiverCharacteristicsParticipantTimeHigh(this, diagnostics, context);
+		return CaregiverCharacteristicsOperations.validateCaregiverCharacteristicsParticipantTimeHigh(
+			this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateCaregiverCharacteristicsParticipantTime(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return CaregiverCharacteristicsOperations.validateCaregiverCharacteristicsParticipantTime(this, diagnostics, context);
+		return CaregiverCharacteristicsOperations.validateCaregiverCharacteristicsParticipantTime(
+			this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateCaregiverCharacteristicsParticipantParticipantRole(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return CaregiverCharacteristicsOperations.validateCaregiverCharacteristicsParticipantParticipantRole(this, diagnostics, context);
+		return CaregiverCharacteristicsOperations.validateCaregiverCharacteristicsParticipantParticipantRole(
+			this, diagnostics, context);
+	}
+
+	/**
+	* <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	* @generated
+	*/
+	public CaregiverCharacteristics init() {
+		return Initializer.Util.init(this);
 	}
 
 	/**
@@ -192,17 +210,8 @@ public class CaregiverCharacteristicsImpl extends ObservationImpl implements Car
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CaregiverCharacteristics init() {
-	    return Initializer.Util.init(this);
-	}
-
-	/**
-     * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-     * @generated
-     */
 	public CaregiverCharacteristics init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
+		Initializer.Util.init(this, initializers);
+		return this;
+	}
 } // CaregiverCharacteristicsImpl
