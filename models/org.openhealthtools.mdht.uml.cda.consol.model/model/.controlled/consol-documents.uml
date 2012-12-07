@@ -3366,9 +3366,6 @@ A History and Physical Examination is required upon hospital admission as well a
         </ownedAttribute>
         <nestedClassifier xmi:type="uml:Class" xmi:id="_CNfxID4kEeGhnL_c4sBHGg" name="PrimaryPerformer">
           <ownedComment xmi:id="_czvioD62EeGtCLm-c2g23Q">
-            <body>SCOPE&amp;typeCode = vocab::x_ServiceEventPerformer::PPRF</body>
-          </ownedComment>
-          <ownedComment xmi:id="_o4bt4PLvEeGoTuv6nvWAog">
             <body>INLINE&amp;typeCode = vocab::x_ServiceEventPerformer::PPRF</body>
           </ownedComment>
           <generalization xmi:id="_GRLpAD4kEeGhnL_c4sBHGg">
@@ -3712,7 +3709,7 @@ A History and Physical Examination is required upon hospital admission as well a
         </nestedClassifier>
         <nestedClassifier xmi:type="uml:Class" xmi:id="_VK6jcD-PEeGvOdejHZ7dYg" name="EncounterParticipant">
           <ownedComment xmi:id="_r98kcD-REeGvOdejHZ7dYg">
-            <body>SCOPE&amp;typeCode = vocab::x_EncounterParticipant::REF</body>
+            <body>INLINE&amp;typeCode = vocab::x_EncounterParticipant::REF</body>
           </ownedComment>
           <generalization xmi:id="_wZmiUD-PEeGvOdejHZ7dYg">
             <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_5t1WAEcEEd6besF9iFIJkQ"/>
@@ -3796,7 +3793,7 @@ A History and Physical Examination is required upon hospital admission as well a
         </ownedAttribute>
         <nestedClassifier xmi:type="uml:Class" xmi:id="_TtkpcD-UEeGvOdejHZ7dYg" name="PrimaryPerformer">
           <ownedComment xmi:id="_TtkpcT-UEeGvOdejHZ7dYg">
-            <body>SCOPE&amp;typeCode = vocab::x_ServiceEventPerformer::PPRF</body>
+            <body>INLINE&amp;typeCode = vocab::x_ServiceEventPerformer::PPRF</body>
           </ownedComment>
           <ownedComment xmi:id="_hIbGgPL1EeG2kc3Pn1a-QA">
             <body>INLINE&amp;typeCode = vocab::x_ServiceEventPerformer::PPRF</body>
