@@ -10,6 +10,7 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.consol.impl;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
@@ -34,109 +35,115 @@ import org.openhealthtools.mdht.uml.cda.impl.SectionImpl;
  */
 public class ImmunizationsSectionEntriesOptionalImpl extends SectionImpl implements ImmunizationsSectionEntriesOptional {
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	protected ImmunizationsSectionEntriesOptionalImpl() {
 		super();
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	@Override
 	protected EClass eStaticClass() {
 		return ConsolPackage.Literals.IMMUNIZATIONS_SECTION_ENTRIES_OPTIONAL;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateImmunizationsSectionEntriesOptionalTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ImmunizationsSectionEntriesOptionalOperations.validateImmunizationsSectionEntriesOptionalTemplateId(this, diagnostics, context);
+		return ImmunizationsSectionEntriesOptionalOperations.validateImmunizationsSectionEntriesOptionalTemplateId(
+			this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateImmunizationsSectionEntriesOptionalCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ImmunizationsSectionEntriesOptionalOperations.validateImmunizationsSectionEntriesOptionalCode(this, diagnostics, context);
+		return ImmunizationsSectionEntriesOptionalOperations.validateImmunizationsSectionEntriesOptionalCode(
+			this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	* <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateImmunizationsSectionEntriesOptionalCodeP(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ImmunizationsSectionEntriesOptionalOperations.validateImmunizationsSectionEntriesOptionalCodeP(this, diagnostics, context);
+		return ImmunizationsSectionEntriesOptionalOperations.validateImmunizationsSectionEntriesOptionalCodeP(
+			this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateImmunizationsSectionEntriesOptionalTitle(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ImmunizationsSectionEntriesOptionalOperations.validateImmunizationsSectionEntriesOptionalTitle(this, diagnostics, context);
+		return ImmunizationsSectionEntriesOptionalOperations.validateImmunizationsSectionEntriesOptionalTitle(
+			this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateImmunizationsSectionEntriesOptionalText(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ImmunizationsSectionEntriesOptionalOperations.validateImmunizationsSectionEntriesOptionalText(this, diagnostics, context);
+		return ImmunizationsSectionEntriesOptionalOperations.validateImmunizationsSectionEntriesOptionalText(
+			this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateImmunizationsSectionEntriesOptionalImmunizationActivity(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ImmunizationsSectionEntriesOptionalOperations.validateImmunizationsSectionEntriesOptionalImmunizationActivity(this, diagnostics, context);
+		return ImmunizationsSectionEntriesOptionalOperations.validateImmunizationsSectionEntriesOptionalImmunizationActivity(
+			this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public EList<ImmunizationActivity> getImmunizationActivities() {
 		return ImmunizationsSectionEntriesOptionalOperations.getImmunizationActivities(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public ImmunizationsSectionEntriesOptional init() {
-	    return Initializer.Util.init(this);
+		return Initializer.Util.init(this);
 	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	   * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public ImmunizationsSectionEntriesOptional init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
+		Initializer.Util.init(this, initializers);
+		return this;
+	}
 } // ImmunizationsSectionEntriesOptionalImpl

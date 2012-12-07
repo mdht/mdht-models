@@ -10,6 +10,7 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.consol.impl;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
@@ -32,86 +33,89 @@ import org.openhealthtools.mdht.uml.cda.impl.SectionImpl;
  */
 public class ProcedureDispositionSectionImpl extends SectionImpl implements ProcedureDispositionSection {
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	protected ProcedureDispositionSectionImpl() {
 		super();
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	@Override
 	protected EClass eStaticClass() {
 		return ConsolPackage.Literals.PROCEDURE_DISPOSITION_SECTION;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateProcedureDispositionSectionTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ProcedureDispositionSectionOperations.validateProcedureDispositionSectionTemplateId(this, diagnostics, context);
+		return ProcedureDispositionSectionOperations.validateProcedureDispositionSectionTemplateId(
+			this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateProcedureDispositionSectionCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProcedureDispositionSectionOperations.validateProcedureDispositionSectionCode(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	* <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateProcedureDispositionSectionCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProcedureDispositionSectionOperations.validateProcedureDispositionSectionCodeP(this, diagnostics, context);
+		return ProcedureDispositionSectionOperations.validateProcedureDispositionSectionCodeP(
+			this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateProcedureDispositionSectionText(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProcedureDispositionSectionOperations.validateProcedureDispositionSectionText(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateProcedureDispositionSectionTitle(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProcedureDispositionSectionOperations.validateProcedureDispositionSectionTitle(this, diagnostics, context);
+		return ProcedureDispositionSectionOperations.validateProcedureDispositionSectionTitle(
+			this, diagnostics, context);
+	}
+
+	/**
+	* <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	* @generated
+	*/
+	public ProcedureDispositionSection init() {
+		return Initializer.Util.init(this);
 	}
 
 	/**
 	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	   * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ProcedureDispositionSection init() {
-	    return Initializer.Util.init(this);
-	}
-
-	/**
-     * <!-- begin-user-doc -->
-	   * <!-- end-user-doc -->
-     * @generated
-     */
 	public ProcedureDispositionSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
+		Initializer.Util.init(this, initializers);
+		return this;
+	}
 } // ProcedureDispositionSectionImpl

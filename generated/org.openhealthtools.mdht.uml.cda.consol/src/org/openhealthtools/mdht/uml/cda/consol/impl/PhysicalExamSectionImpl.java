@@ -10,6 +10,7 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.consol.impl;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
@@ -36,142 +37,145 @@ import org.openhealthtools.mdht.uml.cda.impl.SectionImpl;
  */
 public class PhysicalExamSectionImpl extends SectionImpl implements PhysicalExamSection {
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	protected PhysicalExamSectionImpl() {
 		super();
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	@Override
 	protected EClass eStaticClass() {
 		return ConsolPackage.Literals.PHYSICAL_EXAM_SECTION;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validatePhysicalExamSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PhysicalExamSectionOperations.validatePhysicalExamSectionTemplateId(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validatePhysicalExamSectionCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PhysicalExamSectionOperations.validatePhysicalExamSectionCode(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	* <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validatePhysicalExamSectionCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PhysicalExamSectionOperations.validatePhysicalExamSectionCodeP(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validatePhysicalExamSectionTitle(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PhysicalExamSectionOperations.validatePhysicalExamSectionTitle(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validatePhysicalExamSectionText(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PhysicalExamSectionOperations.validatePhysicalExamSectionText(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	* <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validatePhysicalExamSectionPressureUlcerObservation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PhysicalExamSectionOperations.validatePhysicalExamSectionPressureUlcerObservation(this, diagnostics, context);
+		return PhysicalExamSectionOperations.validatePhysicalExamSectionPressureUlcerObservation(
+			this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validatePhysicalExamSectionNumberOfPressureUlcersObservation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PhysicalExamSectionOperations.validatePhysicalExamSectionNumberOfPressureUlcersObservation(this, diagnostics, context);
+		return PhysicalExamSectionOperations.validatePhysicalExamSectionNumberOfPressureUlcersObservation(
+			this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validatePhysicalExamSectionHighestPressureUlcerStage(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PhysicalExamSectionOperations.validatePhysicalExamSectionHighestPressureUlcerStage(this, diagnostics, context);
+		return PhysicalExamSectionOperations.validatePhysicalExamSectionHighestPressureUlcerStage(
+			this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public EList<PressureUlcerObservation> getPressureUlcerObservations() {
 		return PhysicalExamSectionOperations.getPressureUlcerObservations(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public EList<NumberOfPressureUlcersObservation> getNumberOfPressureUlcersObservations() {
 		return PhysicalExamSectionOperations.getNumberOfPressureUlcersObservations(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public EList<HighestPressureUlcerStage> getHighestPressureUlcerStages() {
 		return PhysicalExamSectionOperations.getHighestPressureUlcerStages(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public PhysicalExamSection init() {
-	    return Initializer.Util.init(this);
+		return Initializer.Util.init(this);
 	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	   * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public PhysicalExamSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
+		Initializer.Util.init(this, initializers);
+		return this;
+	}
 } // PhysicalExamSectionImpl

@@ -10,6 +10,7 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.consol.impl;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
@@ -32,98 +33,104 @@ import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
  */
 public class FamilyHistoryDeathObservationImpl extends ObservationImpl implements FamilyHistoryDeathObservation {
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	protected FamilyHistoryDeathObservationImpl() {
 		super();
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	@Override
 	protected EClass eStaticClass() {
 		return ConsolPackage.Literals.FAMILY_HISTORY_DEATH_OBSERVATION;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateFamilyHistoryDeathObservationTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return FamilyHistoryDeathObservationOperations.validateFamilyHistoryDeathObservationTemplateId(this, diagnostics, context);
+		return FamilyHistoryDeathObservationOperations.validateFamilyHistoryDeathObservationTemplateId(
+			this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateFamilyHistoryDeathObservationClassCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return FamilyHistoryDeathObservationOperations.validateFamilyHistoryDeathObservationClassCode(this, diagnostics, context);
+		return FamilyHistoryDeathObservationOperations.validateFamilyHistoryDeathObservationClassCode(
+			this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateFamilyHistoryDeathObservationMoodCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return FamilyHistoryDeathObservationOperations.validateFamilyHistoryDeathObservationMoodCode(this, diagnostics, context);
+		return FamilyHistoryDeathObservationOperations.validateFamilyHistoryDeathObservationMoodCode(
+			this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateFamilyHistoryDeathObservationCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return FamilyHistoryDeathObservationOperations.validateFamilyHistoryDeathObservationCode(this, diagnostics, context);
+		return FamilyHistoryDeathObservationOperations.validateFamilyHistoryDeathObservationCode(
+			this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateFamilyHistoryDeathObservationStatusCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return FamilyHistoryDeathObservationOperations.validateFamilyHistoryDeathObservationStatusCode(this, diagnostics, context);
+		return FamilyHistoryDeathObservationOperations.validateFamilyHistoryDeathObservationStatusCode(
+			this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateFamilyHistoryDeathObservationValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return FamilyHistoryDeathObservationOperations.validateFamilyHistoryDeathObservationValue(this, diagnostics, context);
+		return FamilyHistoryDeathObservationOperations.validateFamilyHistoryDeathObservationValue(
+			this, diagnostics, context);
+	}
+
+	/**
+	* <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	* @generated
+	*/
+	public FamilyHistoryDeathObservation init() {
+		return Initializer.Util.init(this);
 	}
 
 	/**
 	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	   * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public FamilyHistoryDeathObservation init() {
-	    return Initializer.Util.init(this);
-	}
-
-	/**
-     * <!-- begin-user-doc -->
-	   * <!-- end-user-doc -->
-     * @generated
-     */
 	public FamilyHistoryDeathObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
+		Initializer.Util.init(this, initializers);
+		return this;
+	}
 } // FamilyHistoryDeathObservationImpl

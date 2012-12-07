@@ -10,6 +10,7 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.consol.impl;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
@@ -33,109 +34,115 @@ import org.openhealthtools.mdht.uml.cda.impl.SectionImpl;
  */
 public class HospitalDischargeDiagnosisSectionImpl extends SectionImpl implements HospitalDischargeDiagnosisSection {
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	protected HospitalDischargeDiagnosisSectionImpl() {
 		super();
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	@Override
 	protected EClass eStaticClass() {
 		return ConsolPackage.Literals.HOSPITAL_DISCHARGE_DIAGNOSIS_SECTION;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateHospitalDischargeDiagnosisSectionTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return HospitalDischargeDiagnosisSectionOperations.validateHospitalDischargeDiagnosisSectionTemplateId(this, diagnostics, context);
+		return HospitalDischargeDiagnosisSectionOperations.validateHospitalDischargeDiagnosisSectionTemplateId(
+			this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateHospitalDischargeDiagnosisSectionCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return HospitalDischargeDiagnosisSectionOperations.validateHospitalDischargeDiagnosisSectionCode(this, diagnostics, context);
+		return HospitalDischargeDiagnosisSectionOperations.validateHospitalDischargeDiagnosisSectionCode(
+			this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	* <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateHospitalDischargeDiagnosisSectionCodeP(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return HospitalDischargeDiagnosisSectionOperations.validateHospitalDischargeDiagnosisSectionCodeP(this, diagnostics, context);
+		return HospitalDischargeDiagnosisSectionOperations.validateHospitalDischargeDiagnosisSectionCodeP(
+			this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateHospitalDischargeDiagnosisSectionTitle(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return HospitalDischargeDiagnosisSectionOperations.validateHospitalDischargeDiagnosisSectionTitle(this, diagnostics, context);
+		return HospitalDischargeDiagnosisSectionOperations.validateHospitalDischargeDiagnosisSectionTitle(
+			this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateHospitalDischargeDiagnosisSectionText(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return HospitalDischargeDiagnosisSectionOperations.validateHospitalDischargeDiagnosisSectionText(this, diagnostics, context);
+		return HospitalDischargeDiagnosisSectionOperations.validateHospitalDischargeDiagnosisSectionText(
+			this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateHospitalDischargeDiagnosisSectionHospitalDischargeDiagnosis(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return HospitalDischargeDiagnosisSectionOperations.validateHospitalDischargeDiagnosisSectionHospitalDischargeDiagnosis(this, diagnostics, context);
+		return HospitalDischargeDiagnosisSectionOperations.validateHospitalDischargeDiagnosisSectionHospitalDischargeDiagnosis(
+			this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public HospitalDischargeDiagnosis getHospitalDischargeDiagnosis() {
 		return HospitalDischargeDiagnosisSectionOperations.getHospitalDischargeDiagnosis(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public HospitalDischargeDiagnosisSection init() {
-	    return Initializer.Util.init(this);
+		return Initializer.Util.init(this);
 	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	   * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public HospitalDischargeDiagnosisSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
+		Initializer.Util.init(this, initializers);
+		return this;
+	}
 } // HospitalDischargeDiagnosisSectionImpl

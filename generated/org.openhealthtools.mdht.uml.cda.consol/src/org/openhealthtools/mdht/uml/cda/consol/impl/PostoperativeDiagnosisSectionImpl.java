@@ -10,6 +10,7 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.consol.impl;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
@@ -32,86 +33,91 @@ import org.openhealthtools.mdht.uml.cda.impl.SectionImpl;
  */
 public class PostoperativeDiagnosisSectionImpl extends SectionImpl implements PostoperativeDiagnosisSection {
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	protected PostoperativeDiagnosisSectionImpl() {
 		super();
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	@Override
 	protected EClass eStaticClass() {
 		return ConsolPackage.Literals.POSTOPERATIVE_DIAGNOSIS_SECTION;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validatePostoperativeDiagnosisSectionTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PostoperativeDiagnosisSectionOperations.validatePostoperativeDiagnosisSectionTemplateId(this, diagnostics, context);
+		return PostoperativeDiagnosisSectionOperations.validatePostoperativeDiagnosisSectionTemplateId(
+			this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validatePostoperativeDiagnosisSectionCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PostoperativeDiagnosisSectionOperations.validatePostoperativeDiagnosisSectionCode(this, diagnostics, context);
+		return PostoperativeDiagnosisSectionOperations.validatePostoperativeDiagnosisSectionCode(
+			this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	* <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validatePostoperativeDiagnosisSectionCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PostoperativeDiagnosisSectionOperations.validatePostoperativeDiagnosisSectionCodeP(this, diagnostics, context);
+		return PostoperativeDiagnosisSectionOperations.validatePostoperativeDiagnosisSectionCodeP(
+			this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validatePostoperativeDiagnosisSectionText(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PostoperativeDiagnosisSectionOperations.validatePostoperativeDiagnosisSectionText(this, diagnostics, context);
+		return PostoperativeDiagnosisSectionOperations.validatePostoperativeDiagnosisSectionText(
+			this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validatePostoperativeDiagnosisSectionTitle(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PostoperativeDiagnosisSectionOperations.validatePostoperativeDiagnosisSectionTitle(this, diagnostics, context);
+		return PostoperativeDiagnosisSectionOperations.validatePostoperativeDiagnosisSectionTitle(
+			this, diagnostics, context);
+	}
+
+	/**
+	* <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	* @generated
+	*/
+	public PostoperativeDiagnosisSection init() {
+		return Initializer.Util.init(this);
 	}
 
 	/**
 	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	   * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public PostoperativeDiagnosisSection init() {
-	    return Initializer.Util.init(this);
-	}
-
-	/**
-     * <!-- begin-user-doc -->
-	   * <!-- end-user-doc -->
-     * @generated
-     */
 	public PostoperativeDiagnosisSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
+		Initializer.Util.init(this, initializers);
+		return this;
+	}
 } // PostoperativeDiagnosisSectionImpl

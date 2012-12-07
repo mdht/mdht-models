@@ -10,6 +10,7 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.consol.impl;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
@@ -34,107 +35,113 @@ import org.openhealthtools.mdht.uml.cda.impl.SectionImpl;
  */
 public class EncountersSectionEntriesOptionalImpl extends SectionImpl implements EncountersSectionEntriesOptional {
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	protected EncountersSectionEntriesOptionalImpl() {
 		super();
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	@Override
 	protected EClass eStaticClass() {
 		return ConsolPackage.Literals.ENCOUNTERS_SECTION_ENTRIES_OPTIONAL;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateEncountersSectionEntriesOptionalTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return EncountersSectionEntriesOptionalOperations.validateEncountersSectionEntriesOptionalTemplateId(this, diagnostics, context);
+		return EncountersSectionEntriesOptionalOperations.validateEncountersSectionEntriesOptionalTemplateId(
+			this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateEncountersSectionEntriesOptionalCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return EncountersSectionEntriesOptionalOperations.validateEncountersSectionEntriesOptionalCode(this, diagnostics, context);
+		return EncountersSectionEntriesOptionalOperations.validateEncountersSectionEntriesOptionalCode(
+			this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	* <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateEncountersSectionEntriesOptionalCodeP(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return EncountersSectionEntriesOptionalOperations.validateEncountersSectionEntriesOptionalCodeP(this, diagnostics, context);
+		return EncountersSectionEntriesOptionalOperations.validateEncountersSectionEntriesOptionalCodeP(
+			this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateEncountersSectionEntriesOptionalTitle(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return EncountersSectionEntriesOptionalOperations.validateEncountersSectionEntriesOptionalTitle(this, diagnostics, context);
+		return EncountersSectionEntriesOptionalOperations.validateEncountersSectionEntriesOptionalTitle(
+			this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateEncountersSectionEntriesOptionalText(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return EncountersSectionEntriesOptionalOperations.validateEncountersSectionEntriesOptionalText(this, diagnostics, context);
+		return EncountersSectionEntriesOptionalOperations.validateEncountersSectionEntriesOptionalText(
+			this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateEncountersSectionEntriesOptionalEncounterActivities(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return EncountersSectionEntriesOptionalOperations.validateEncountersSectionEntriesOptionalEncounterActivities(this, diagnostics, context);
+		return EncountersSectionEntriesOptionalOperations.validateEncountersSectionEntriesOptionalEncounterActivities(
+			this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public EList<EncounterActivities> getEncounterActivitiess() {
 		return EncountersSectionEntriesOptionalOperations.getEncounterActivitiess(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public EncountersSectionEntriesOptional init() {
-	    return Initializer.Util.init(this);
+		return Initializer.Util.init(this);
 	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	   * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public EncountersSectionEntriesOptional init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
+		Initializer.Util.init(this, initializers);
+		return this;
+	}
 } // EncountersSectionEntriesOptionalImpl

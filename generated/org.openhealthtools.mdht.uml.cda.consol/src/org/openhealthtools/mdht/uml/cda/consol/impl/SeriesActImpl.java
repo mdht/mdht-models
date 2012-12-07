@@ -10,6 +10,7 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.consol.impl;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
@@ -34,175 +35,175 @@ import org.openhealthtools.mdht.uml.cda.impl.ActImpl;
  */
 public class SeriesActImpl extends ActImpl implements SeriesAct {
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	protected SeriesActImpl() {
 		super();
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	@Override
 	protected EClass eStaticClass() {
 		return ConsolPackage.Literals.SERIES_ACT;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateSeriesActIdHasRoot(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return SeriesActOperations.validateSeriesActIdHasRoot(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateSeriesActIdNoExtension(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return SeriesActOperations.validateSeriesActIdNoExtension(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateSeriesActCodeQualifier(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return SeriesActOperations.validateSeriesActCodeQualifier(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateSeriesActCodeQualifierCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return SeriesActOperations.validateSeriesActCodeQualifierCode(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateSeriesActCodeQualifierValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return SeriesActOperations.validateSeriesActCodeQualifierValue(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateSeriesActCodeQualifierValueCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return SeriesActOperations.validateSeriesActCodeQualifierValueCode(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateSeriesActTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return SeriesActOperations.validateSeriesActTemplateId(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateSeriesActClassCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return SeriesActOperations.validateSeriesActClassCode(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateSeriesActMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return SeriesActOperations.validateSeriesActMoodCode(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateSeriesActCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return SeriesActOperations.validateSeriesActCode(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateSeriesActEffectiveTime(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return SeriesActOperations.validateSeriesActEffectiveTime(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateSeriesActId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return SeriesActOperations.validateSeriesActId(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateSeriesActText(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return SeriesActOperations.validateSeriesActText(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateSeriesActSOPInstanceObservation(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return SeriesActOperations.validateSeriesActSOPInstanceObservation(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	* <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public EList<SOPInstanceObservation> getSOPInstanceObservations() {
 		return SeriesActOperations.getSOPInstanceObservations(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public SeriesAct init() {
-	    return Initializer.Util.init(this);
+		return Initializer.Util.init(this);
 	}
 
 	/**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	   * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 	public SeriesAct init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
+		Initializer.Util.init(this, initializers);
+		return this;
+	}
 } // SeriesActImpl
