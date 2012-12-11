@@ -836,9 +836,6 @@ DProfessional.03 Middle: @ENXP=&quot;GIV&quot;</body>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ZCcLxMH-EeGOXu0EprM3pw"/>
         </ownedAttribute>
         <nestedClassifier xmi:type="uml:Class" xmi:id="_Rm2IMIzdEeGnhceUMXltng" name="EMSHistoryOfConditionsOrganizer">
-          <ownedComment xmi:id="_1cfV0IzdEeGnhceUMXltng">
-            <body>NEMSIS Trace: EHistory. 08</body>
-          </ownedComment>
           <generalization xmi:id="_SAewMIzdEeGnhceUMXltng">
             <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_B6aX4EbvEd6besF9iFIJkQ"/>
           </generalization>
@@ -882,9 +879,6 @@ If NEMSIS EHistory. 08 has proper values, the value should be TRUE.</body>
               <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_gpAZ8CpIEeK1vdrMJapHMg"/>
             </ownedAttribute>
             <nestedClassifier xmi:type="uml:Class" xmi:id="_5XgZ4IzdEeGnhceUMXltng" name="EMSHistoryOfCondition">
-              <ownedComment xmi:id="_-k6dcIzeEeGnhceUMXltng">
-                <body>NEMSIS Trace: EHistory.08</body>
-              </ownedComment>
               <generalization xmi:id="_5xr0cIzdEeGnhceUMXltng">
                 <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
               </generalization>
@@ -893,7 +887,8 @@ If NEMSIS EHistory. 08 has proper values, the value should be TRUE.</body>
               </ownedAttribute>
               <ownedAttribute xmi:id="_6eFncIzdEeGnhceUMXltng" name="value" visibility="private" aggregation="composite">
                 <ownedComment xmi:id="_Uv-8AIzgEeGnhceUMXltng">
-                  <body>If NEMSIS EHistory.08 is &quot;No bleeding disorder,&quot; the value should be the appropriate&#xD;
+                  <body>NEMSIS Trace: EHistory. 08&#xD;
+If NEMSIS EHistory.08 is &quot;No bleeding disorder,&quot; the value should be the appropriate&#xD;
 ICD-10 code (D66, D67, D68) and negationIndicator should be TRUE.</body>
                 </ownedComment>
                 <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
@@ -910,9 +905,6 @@ ICD-10 code (D66, D67, D68) and negationIndicator should be TRUE.</body>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ahp7wcH-EeGOXu0EprM3pw"/>
         </ownedAttribute>
         <nestedClassifier xmi:type="uml:Class" xmi:id="_HLO9kIzgEeGnhceUMXltng" name="EMSHistoryOfProceduresOrganizer">
-          <ownedComment xmi:id="_sLXBUIzgEeGnhceUMXltng">
-            <body>NEMSIS Trace: EHistory. 08</body>
-          </ownedComment>
           <generalization xmi:id="_Hx2RoIzgEeGnhceUMXltng">
             <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_B6aX4EbvEd6besF9iFIJkQ"/>
           </generalization>
@@ -964,6 +956,9 @@ If NEMSIS EHistory. 08 is &quot;None Reported,&quot; the value should be FALSE.<
                 <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_-jiisEbuEd6besF9iFIJkQ"/>
               </generalization>
               <ownedAttribute xmi:id="_FM06sIzhEeGnhceUMXltng" name="code" visibility="private" aggregation="composite">
+                <ownedComment xmi:id="_SqYLYENAEeKBoM5tGvrHVQ">
+                  <body>NEMSIS Trace: EHistory. 08</body>
+                </ownedComment>
                 <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
                 <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_RbUBgMcQEeGjDJAyT0XW9Q" value="1"/>
                 <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_RbVPoMcQEeGjDJAyT0XW9Q" value="1"/>
@@ -1018,9 +1013,6 @@ If NEMSIS EHistory. 08 is &quot;None Reported,&quot; the value should be FALSE.<
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_aNXhEcHuEeGOXu0EprM3pw" value="1"/>
         </ownedAttribute>
         <nestedClassifier xmi:type="uml:Class" xmi:id="_rNkl4GleEeG4boS-IbG8Zw" name="BillingCondition">
-          <ownedComment xmi:id="_CdrusHSJEeGa4IXs2ghZEw">
-            <body>NEMSIS Trace: EPayment.51</body>
-          </ownedComment>
           <generalization xmi:id="_rNkl4WleEeG4boS-IbG8Zw">
             <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
           </generalization>
@@ -1028,6 +1020,9 @@ If NEMSIS EHistory. 08 is &quot;None Reported,&quot; the value should be FALSE.<
             <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
           </ownedAttribute>
           <ownedAttribute xmi:id="_rNkl42leEeG4boS-IbG8Zw" name="value" visibility="private" aggregation="composite">
+            <ownedComment xmi:id="_gzIBAEM7EeKBoM5tGvrHVQ">
+              <body>NEMSIS Trace: EPayment.51</body>
+            </ownedComment>
             <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_79rqAMcJEeGjDJAyT0XW9Q" value="1"/>
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_79rqAccJEeGjDJAyT0XW9Q" value="1"/>
@@ -1041,10 +1036,10 @@ If NEMSIS EHistory. 08 is &quot;None Reported,&quot; the value should be FALSE.<
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_avD44MHuEeGOXu0EprM3pw" value="1"/>
         </ownedAttribute>
         <nestedClassifier xmi:type="uml:Class" xmi:id="_To2-YGleEeG4boS-IbG8Zw" name="LevelOfServiceObservation">
-          <ownedComment xmi:id="_zveN0HSIEeGa4IXs2ghZEw">
-            <body>NEMSIS Trace: EPayment.50</body>
-          </ownedComment>
           <generalization xmi:id="_W97cwGleEeG4boS-IbG8Zw">
+            <ownedComment xmi:id="_ifpNMEM7EeKBoM5tGvrHVQ">
+              <body>NEMSIS Trace: EPayment.50</body>
+            </ownedComment>
             <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
           </generalization>
           <ownedAttribute xmi:id="_kVy1wGleEeG4boS-IbG8Zw" name="code" visibility="private" aggregation="composite">
@@ -1130,9 +1125,6 @@ If NEMSIS EHistory. 08 is &quot;None Reported,&quot; the value should be FALSE.<
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_9cyeZMH9EeGOXu0EprM3pw" value="1"/>
         </ownedAttribute>
         <nestedClassifier xmi:type="uml:Class" xmi:id="_KEFo8HSVEeGa4IXs2ghZEw" name="InjuryCauseCategory">
-          <ownedComment xmi:id="_MPmMUHSXEeGa4IXs2ghZEw">
-            <body>NEMSIS Trace: EInjury.01</body>
-          </ownedComment>
           <generalization xmi:id="_N8NKAHSVEeGa4IXs2ghZEw">
             <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
           </generalization>
@@ -1142,7 +1134,8 @@ If NEMSIS EHistory. 08 is &quot;None Reported,&quot; the value should be FALSE.<
           </ownedAttribute>
           <ownedAttribute xmi:id="_Q2yEwXSVEeGa4IXs2ghZEw" name="value" visibility="private" aggregation="composite">
             <ownedComment xmi:id="_KGp_UHSWEeGa4IXs2ghZEw">
-              <body>Causes are in ICD-10 chapter XX</body>
+              <body>NEMSIS Trace: EInjury.01&#xD;
+Causes are in ICD-10 chapter XX</body>
             </ownedComment>
             <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_VPrFsHSXEeGa4IXs2ghZEw" value="1"/>
@@ -1157,10 +1150,10 @@ If NEMSIS EHistory. 08 is &quot;None Reported,&quot; the value should be FALSE.<
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_-q5QQ8H9EeGOXu0EprM3pw"/>
         </ownedAttribute>
         <nestedClassifier xmi:type="uml:Class" xmi:id="_aS16EHSWEeGa4IXs2ghZEw" name="InjuryMechanism">
-          <ownedComment xmi:id="_PKWtQHSXEeGa4IXs2ghZEw">
-            <body>NEMSIS Trace: EInjury.02</body>
-          </ownedComment>
           <generalization xmi:id="_dAw44HSWEeGa4IXs2ghZEw">
+            <ownedComment xmi:id="_8OISsEM9EeKBoM5tGvrHVQ">
+              <body>NEMSIS Trace: EInjury.02</body>
+            </ownedComment>
             <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
           </generalization>
           <ownedAttribute xmi:id="_e-JLkHSWEeGa4IXs2ghZEw" name="code" visibility="private" aggregation="composite">
@@ -1181,9 +1174,6 @@ If NEMSIS EHistory. 08 is &quot;None Reported,&quot; the value should be FALSE.<
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="__qazk8H9EeGOXu0EprM3pw"/>
         </ownedAttribute>
         <nestedClassifier xmi:type="uml:Class" xmi:id="_lTHsIIcXEeGqF6qfYwLiQw" name="TraumaCenterCriteria">
-          <ownedComment xmi:id="_-AyGcIccEeGqF6qfYwLiQw">
-            <body>NEMSIS Trace: EInjury.03</body>
-          </ownedComment>
           <generalization xmi:id="_orogEIcXEeGqF6qfYwLiQw">
             <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
           </generalization>
@@ -1192,6 +1182,9 @@ If NEMSIS EHistory. 08 is &quot;None Reported,&quot; the value should be FALSE.<
             <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_WEYp4Eo8Ed6c3qsAxlFHaQ"/>
           </ownedAttribute>
           <ownedAttribute xmi:id="_rAKHcIcXEeGqF6qfYwLiQw" name="value" visibility="private" aggregation="composite">
+            <ownedComment xmi:id="_-bwA0EM9EeKBoM5tGvrHVQ">
+              <body>NEMSIS Trace: EInjury.03</body>
+            </ownedComment>
             <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_uQdBQIccEeGqF6qfYwLiQw" value="*"/>
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_uQdoUIccEeGqF6qfYwLiQw" value="1"/>
@@ -1205,9 +1198,6 @@ If NEMSIS EHistory. 08 is &quot;None Reported,&quot; the value should be FALSE.<
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_A12E48H-EeGOXu0EprM3pw"/>
         </ownedAttribute>
         <nestedClassifier xmi:type="uml:Class" xmi:id="_vuraIIcZEeGqF6qfYwLiQw" name="InjuryRiskFactor">
-          <ownedComment xmi:id="__MY98IccEeGqF6qfYwLiQw">
-            <body>NEMSIS Trace: EInjury.04</body>
-          </ownedComment>
           <generalization xmi:id="_x1Ee4IcZEeGqF6qfYwLiQw">
             <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
           </generalization>
@@ -1216,6 +1206,9 @@ If NEMSIS EHistory. 08 is &quot;None Reported,&quot; the value should be FALSE.<
             <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_WEYp4Eo8Ed6c3qsAxlFHaQ"/>
           </ownedAttribute>
           <ownedAttribute xmi:id="_0TPxgYcZEeGqF6qfYwLiQw" name="value" visibility="private" aggregation="composite">
+            <ownedComment xmi:id="_AnT5cEM-EeKBoM5tGvrHVQ">
+              <body>NEMSIS Trace: EInjury.04</body>
+            </ownedComment>
             <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_vwM8wIccEeGqF6qfYwLiQw" value="*"/>
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_vwM8wYccEeGqF6qfYwLiQw" value="1"/>
@@ -1229,9 +1222,6 @@ If NEMSIS EHistory. 08 is &quot;None Reported,&quot; the value should be FALSE.<
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_CS-xQ8H-EeGOXu0EprM3pw"/>
         </ownedAttribute>
         <nestedClassifier xmi:type="uml:Class" xmi:id="_nvhVwIcaEeGqF6qfYwLiQw" name="VehicleImpactArea">
-          <ownedComment xmi:id="_AWn8cIcdEeGqF6qfYwLiQw">
-            <body>NEMSIS Trace: EInjury.05</body>
-          </ownedComment>
           <generalization xmi:id="_Kp4xcIccEeGqF6qfYwLiQw">
             <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
           </generalization>
@@ -1240,6 +1230,9 @@ If NEMSIS EHistory. 08 is &quot;None Reported,&quot; the value should be FALSE.<
             <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_WEYp4Eo8Ed6c3qsAxlFHaQ"/>
           </ownedAttribute>
           <ownedAttribute xmi:id="_MBJfUYccEeGqF6qfYwLiQw" name="value" visibility="private" aggregation="composite">
+            <ownedComment xmi:id="_CCRbkEM-EeKBoM5tGvrHVQ">
+              <body>NEMSIS Trace: EInjury.05</body>
+            </ownedComment>
             <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xL9JEIccEeGqF6qfYwLiQw" value="1"/>
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xL9wIIccEeGqF6qfYwLiQw" value="1"/>
@@ -1253,9 +1246,6 @@ If NEMSIS EHistory. 08 is &quot;None Reported,&quot; the value should be FALSE.<
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_DZftY8H-EeGOXu0EprM3pw"/>
         </ownedAttribute>
         <nestedClassifier xmi:type="uml:Class" xmi:id="_zMwjMIccEeGqF6qfYwLiQw" name="PatientLocationInVehicle">
-          <ownedComment xmi:id="_E1tW4IcdEeGqF6qfYwLiQw">
-            <body>NEMSIS Trace: EInjury.06</body>
-          </ownedComment>
           <generalization xmi:id="_1NY-MIccEeGqF6qfYwLiQw">
             <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
           </generalization>
@@ -1264,6 +1254,9 @@ If NEMSIS EHistory. 08 is &quot;None Reported,&quot; the value should be FALSE.<
             <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_WEYp4Eo8Ed6c3qsAxlFHaQ"/>
           </ownedAttribute>
           <ownedAttribute xmi:id="_HKQMYIcdEeGqF6qfYwLiQw" name="value" visibility="private" aggregation="composite">
+            <ownedComment xmi:id="_DtMsUEM-EeKBoM5tGvrHVQ">
+              <body>NEMSIS Trace: EInjury.06</body>
+            </ownedComment>
             <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_a9gUcIcdEeGqF6qfYwLiQw" value="1"/>
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_a9gUcYcdEeGqF6qfYwLiQw" value="1"/>
@@ -1277,9 +1270,6 @@ If NEMSIS EHistory. 08 is &quot;None Reported,&quot; the value should be FALSE.<
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_E_Z7Q8H-EeGOXu0EprM3pw"/>
         </ownedAttribute>
         <nestedClassifier xmi:type="uml:Class" xmi:id="_bsVJUIcdEeGqF6qfYwLiQw" name="VehicleOccupantSafetyEquipment">
-          <ownedComment xmi:id="_jSvhEIcdEeGqF6qfYwLiQw">
-            <body>NEMSIS Trace: EInjury.07</body>
-          </ownedComment>
           <generalization xmi:id="_gbauoIcdEeGqF6qfYwLiQw">
             <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
           </generalization>
@@ -1288,6 +1278,9 @@ If NEMSIS EHistory. 08 is &quot;None Reported,&quot; the value should be FALSE.<
             <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_WEYp4Eo8Ed6c3qsAxlFHaQ"/>
           </ownedAttribute>
           <ownedAttribute xmi:id="_iT6hUIcdEeGqF6qfYwLiQw" name="value" visibility="private" aggregation="composite">
+            <ownedComment xmi:id="_FgCi8EM-EeKBoM5tGvrHVQ">
+              <body>NEMSIS Trace: EInjury.07</body>
+            </ownedComment>
             <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xyK_EIcdEeGqF6qfYwLiQw" value="*"/>
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xyK_EYcdEeGqF6qfYwLiQw" value="1"/>
@@ -1301,9 +1294,6 @@ If NEMSIS EHistory. 08 is &quot;None Reported,&quot; the value should be FALSE.<
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_GNqeI8H-EeGOXu0EprM3pw"/>
         </ownedAttribute>
         <nestedClassifier xmi:type="uml:Class" xmi:id="_2lRhsIcdEeGqF6qfYwLiQw" name="AirbagDeploymentStatus">
-          <ownedComment xmi:id="_8ERhAIcdEeGqF6qfYwLiQw">
-            <body>NEMSIS Trace: EInjury.08</body>
-          </ownedComment>
           <generalization xmi:id="_4RXQEIcdEeGqF6qfYwLiQw">
             <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
           </generalization>
@@ -1312,6 +1302,9 @@ If NEMSIS EHistory. 08 is &quot;None Reported,&quot; the value should be FALSE.<
             <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_WEYp4Eo8Ed6c3qsAxlFHaQ"/>
           </ownedAttribute>
           <ownedAttribute xmi:id="_5xVOAIcdEeGqF6qfYwLiQw" name="value" visibility="private" aggregation="composite">
+            <ownedComment xmi:id="_G-nZwEM-EeKBoM5tGvrHVQ">
+              <body>NEMSIS Trace: EInjury.08</body>
+            </ownedComment>
             <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_5xVOAYcdEeGqF6qfYwLiQw" value="*"/>
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_5xVOAocdEeGqF6qfYwLiQw"/>
@@ -1325,9 +1318,6 @@ If NEMSIS EHistory. 08 is &quot;None Reported,&quot; the value should be FALSE.<
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_HVOjI8H-EeGOXu0EprM3pw"/>
         </ownedAttribute>
         <nestedClassifier xmi:type="uml:Class" xmi:id="_auKbcIceEeGqF6qfYwLiQw" name="HeightOfFall">
-          <ownedComment xmi:id="_mBWm8IceEeGqF6qfYwLiQw">
-            <body>NEMSIS Trace: EInjury.09</body>
-          </ownedComment>
           <generalization xmi:id="_cRczIIceEeGqF6qfYwLiQw">
             <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
           </generalization>
@@ -1336,6 +1326,9 @@ If NEMSIS EHistory. 08 is &quot;None Reported,&quot; the value should be FALSE.<
             <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_WEYp4Eo8Ed6c3qsAxlFHaQ"/>
           </ownedAttribute>
           <ownedAttribute xmi:id="_dj1oEIceEeGqF6qfYwLiQw" name="value" visibility="private" aggregation="composite">
+            <ownedComment xmi:id="_IfIKQEM-EeKBoM5tGvrHVQ">
+              <body>NEMSIS Trace: EInjury.09</body>
+            </ownedComment>
             <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_3mPzYD59Ed6cla2oXsPtlA"/>
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_usWBIIceEeGqF6qfYwLiQw" value="1"/>
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_usWBIYceEeGqF6qfYwLiQw" value="1"/>
@@ -1350,9 +1343,6 @@ If NEMSIS EHistory. 08 is &quot;None Reported,&quot; the value should be FALSE.<
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4IOzsccPEeGjDJAyT0XW9Q" value="1"/>
         </ownedAttribute>
         <nestedClassifier xmi:type="uml:Class" xmi:id="_wKL4IIceEeGqF6qfYwLiQw" name="DisasterType">
-          <ownedComment xmi:id="_4pdKgIceEeGqF6qfYwLiQw">
-            <body>NEMSIS Trace: EOther.07</body>
-          </ownedComment>
           <generalization xmi:id="_xljC4IceEeGqF6qfYwLiQw">
             <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
           </generalization>
@@ -1361,6 +1351,9 @@ If NEMSIS EHistory. 08 is &quot;None Reported,&quot; the value should be FALSE.<
             <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_WEYp4Eo8Ed6c3qsAxlFHaQ"/>
           </ownedAttribute>
           <ownedAttribute xmi:id="_z1sgkYceEeGqF6qfYwLiQw" name="value" visibility="private" aggregation="composite">
+            <ownedComment xmi:id="_J59wkEM-EeKBoM5tGvrHVQ">
+              <body>NEMSIS Trace: EOther.07</body>
+            </ownedComment>
             <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Ab1hsIcfEeGqF6qfYwLiQw" value="*"/>
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Ab2IwIcfEeGqF6qfYwLiQw" value="1"/>
@@ -1375,9 +1368,6 @@ If NEMSIS EHistory. 08 is &quot;None Reported,&quot; the value should be FALSE.<
     <packagedElement xmi:type="uml:Association" href="#_A8nIsnuIEeGs2I-Db78R9w"/>
     <packagedElement xmi:type="uml:Association" href="#_MQ1O8nuIEeGs2I-Db78R9w"/>
     <packagedElement xmi:type="uml:Class" xmi:id="_4zQVQDZuEeKLbZOfNmD-hA" name="EMSTESTConsolVitalSBP">
-      <ownedComment xmi:id="_dofiMDZwEeKLbZOfNmD-hA">
-        <body>NEMSIS Trace: EVitals.06</body>
-      </ownedComment>
       <generalization xmi:id="_8x5VEDZuEeKLbZOfNmD-hA">
         <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-vitalsigns.uml#_2OrhsRSVEeGGzu7fmW9pXw"/>
       </generalization>
@@ -1402,6 +1392,9 @@ If NEMSIS EHistory. 08 is &quot;None Reported,&quot; the value should be FALSE.<
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Fv0SUjZvEeKLbZOfNmD-hA" value="1"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_Fv1gcDZvEeKLbZOfNmD-hA" name="value" visibility="private">
+        <ownedComment xmi:id="_ILqCYENDEeKBoM5tGvrHVQ">
+          <body>NEMSIS Trace: EVitals.06</body>
+        </ownedComment>
         <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_3mPzYD59Ed6cla2oXsPtlA"/>
       </ownedAttribute>
     </packagedElement>
@@ -1435,7 +1428,12 @@ If NEMSIS EHistory. 08 is &quot;None Reported,&quot; the value should be FALSE.<
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_p4qjA8HzEeGOXu0EprM3pw" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_p4qjBMHzEeGOXu0EprM3pw" value="1"/>
       </ownedAttribute>
-      <nestedClassifier xmi:type="uml:Class" xmi:id="_vbOTAMH7EeGOXu0EprM3pw" name="DerivedEntry">
+      <ownedAttribute xmi:id="_Z6MsAIy9EeGnhceUMXltng" name="value" visibility="private" aggregation="composite">
+        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_b-T40Iy9EeGnhceUMXltng" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_b-T40Yy9EeGnhceUMXltng" value="1"/>
+      </ownedAttribute>
+      <nestedClassifier xmi:type="uml:Class" xmi:id="_vbOTAMH7EeGOXu0EprM3pw" name="CardiacArrestEntry">
         <generalization xmi:id="_vbPhIMH7EeGOXu0EprM3pw" general="_9YwisMHsEeGOXu0EprM3pw"/>
         <ownedAttribute xmi:id="_yFAYssH7EeGOXu0EprM3pw" name="cardiacArrestExistence" type="_Qlqj8HwGEeGW3cDolvqrTA" association="_yFAYsMH7EeGOXu0EprM3pw">
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_yFAYs8H7EeGOXu0EprM3pw"/>
@@ -1672,6 +1670,9 @@ If NEMSIS EHistory. 08 is &quot;None Reported,&quot; the value should be FALSE.<
                     <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#__QZaIEcZEd6besF9iFIJkQ"/>
                   </generalization>
                   <ownedAttribute xmi:id="_Hk6mEHwPEeGW3cDolvqrTA" name="code" visibility="private" aggregation="composite">
+                    <ownedComment xmi:id="_4t4J8EM7EeKBoM5tGvrHVQ">
+                      <body>NEMSIS Trace: eArrest.06</body>
+                    </ownedComment>
                     <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
                     <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_b2jgEMcKEeGjDJAyT0XW9Q" value="1"/>
                     <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_b2kHIMcKEeGjDJAyT0XW9Q" value="1"/>
@@ -1916,25 +1917,20 @@ If NEMSIS EHistory. 08 is &quot;None Reported,&quot; the value should be FALSE.<
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_lS1nYcHzEeGOXu0EprM3pw" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_lS1nYsHzEeGOXu0EprM3pw" value="1"/>
       </ownedAttribute>
-      <nestedClassifier xmi:type="uml:Class" xmi:id="_bvOCcMH7EeGOXu0EprM3pw" name="DerivedEntry">
+      <nestedClassifier xmi:type="uml:Class" xmi:id="_bvOCcMH7EeGOXu0EprM3pw" name="EMSAdvancedDirectiveEntry">
         <generalization xmi:id="_bvOCccH7EeGOXu0EprM3pw" general="_9YwisMHsEeGOXu0EprM3pw"/>
         <ownedAttribute xmi:id="_fTRYAMH7EeGOXu0EprM3pw" name="eMSAdvancedDirectiveObservation" type="_xCcE0Iy7EeGnhceUMXltng" association="_fTbJAMH7EeGOXu0EprM3pw">
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_fTRYAcH7EeGOXu0EprM3pw"/>
         </ownedAttribute>
         <nestedClassifier xmi:type="uml:Class" xmi:id="_xCcE0Iy7EeGnhceUMXltng" name="EMSAdvancedDirectiveObservation">
-          <ownedComment xmi:id="_vn1dIIy9EeGnhceUMXltng">
-            <body>NEMSIS Trace: EHistory.05</body>
-          </ownedComment>
           <generalization xmi:id="_xhZ4wIy7EeGnhceUMXltng">
             <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
           </generalization>
           <ownedAttribute xmi:id="_Z6ME8Iy9EeGnhceUMXltng" name="code" visibility="private" aggregation="composite">
+            <ownedComment xmi:id="_NE3YkEM5EeKBoM5tGvrHVQ">
+              <body>NEMSIS Trace: EHistory.05</body>
+            </ownedComment>
             <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
-          </ownedAttribute>
-          <ownedAttribute xmi:id="_Z6MsAIy9EeGnhceUMXltng" name="value" visibility="private" aggregation="composite">
-            <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
-            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_b-T40Iy9EeGnhceUMXltng" value="1"/>
-            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_b-T40Yy9EeGnhceUMXltng" value="1"/>
           </ownedAttribute>
         </nestedClassifier>
       </nestedClassifier>
@@ -1970,7 +1966,7 @@ If NEMSIS EHistory. 08 is &quot;None Reported,&quot; the value should be FALSE.<
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_pM63U8HzEeGOXu0EprM3pw" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_pM63VMHzEeGOXu0EprM3pw" value="1"/>
       </ownedAttribute>
-      <nestedClassifier xmi:type="uml:Class" xmi:id="_il8psMH7EeGOXu0EprM3pw" name="DerivedEntry">
+      <nestedClassifier xmi:type="uml:Class" xmi:id="_il8psMH7EeGOXu0EprM3pw" name="MedicationAllergyEntry">
         <generalization xmi:id="_il8pscH7EeGOXu0EprM3pw" general="_9YwisMHsEeGOXu0EprM3pw"/>
         <ownedAttribute xmi:id="_nCP14sH7EeGOXu0EprM3pw" name="eMSMedicationAllergies" type="_Xdx3cIy-EeGnhceUMXltng" association="_nCP14MH7EeGOXu0EprM3pw">
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_nCP148H7EeGOXu0EprM3pw" value="1"/>
@@ -2055,7 +2051,7 @@ If NEMSIS EHistory. 08 is &quot;None Reported,&quot; the value should be FALSE.<
           </nestedClassifier>
         </nestedClassifier>
       </nestedClassifier>
-      <nestedClassifier xmi:type="uml:Class" xmi:id="_jWvNcMH7EeGOXu0EprM3pw" name="DerivedEntry">
+      <nestedClassifier xmi:type="uml:Class" xmi:id="_jWvNcMH7EeGOXu0EprM3pw" name="EnvironmentalAllergyEntry">
         <generalization xmi:id="_jWvNccH7EeGOXu0EprM3pw" general="_9YwisMHsEeGOXu0EprM3pw"/>
         <ownedAttribute xmi:id="_nx2t4sH7EeGOXu0EprM3pw" name="eMSEnvironmentalAllergies" type="_CFApcIzGEeGnhceUMXltng" association="_nx2t4MH7EeGOXu0EprM3pw">
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_nx2t48H7EeGOXu0EprM3pw" value="1"/>
@@ -2093,13 +2089,13 @@ If NEMSIS EHistory. 08 is &quot;None Reported,&quot; the value should be FALSE.<
             </ownedAttribute>
           </nestedClassifier>
           <nestedClassifier xmi:type="uml:Class" xmi:id="_UleZUIzZEeGnhceUMXltng" name="EMSEnvironmentalAllergy">
-            <ownedComment xmi:id="_toyloClBEeKLlLf58wNPLQ">
-              <body>Required if Existence is True</body>
-            </ownedComment>
             <generalization xmi:id="_VJHR4IzZEeGnhceUMXltng">
               <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
             </generalization>
             <ownedAttribute xmi:id="_V8B8kIzZEeGnhceUMXltng" name="code" visibility="private" aggregation="composite">
+              <ownedComment xmi:id="_ZxM2YEM7EeKBoM5tGvrHVQ">
+                <body>Required if Existence is True</body>
+              </ownedComment>
               <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
             </ownedAttribute>
             <ownedAttribute xmi:id="_V8CjoIzZEeGnhceUMXltng" name="value" visibility="private" aggregation="composite">
@@ -2150,18 +2146,18 @@ If NEMSIS EHistory. 08 is &quot;None Reported,&quot; the value should be FALSE.<
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_rgp0g8HzEeGOXu0EprM3pw" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_rgp0hMHzEeGOXu0EprM3pw" value="1"/>
       </ownedAttribute>
-      <nestedClassifier xmi:type="uml:Class" xmi:id="_0YJgAMH7EeGOXu0EprM3pw" name="DerivedEntry">
+      <nestedClassifier xmi:type="uml:Class" xmi:id="_0YJgAMH7EeGOXu0EprM3pw" name="OnMedicationEntry">
         <generalization xmi:id="_0YJgAcH7EeGOXu0EprM3pw" general="_9YwisMHsEeGOXu0EprM3pw"/>
         <ownedAttribute xmi:id="_72wmoMH7EeGOXu0EprM3pw" name="currentlyOnMedication" type="_sUm-oIcnEeGqF6qfYwLiQw" association="_72wmosH7EeGOXu0EprM3pw">
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_72wmocH7EeGOXu0EprM3pw"/>
         </ownedAttribute>
         <nestedClassifier xmi:type="uml:Class" xmi:id="_sUm-oIcnEeGqF6qfYwLiQw" name="CurrentlyOnMedication">
-          <ownedComment xmi:id="_EXoA0IcqEeGqF6qfYwLiQw">
-            <body>If EHistory.12 has the value &quot;None Reported,&quot; the value is &quot;False&quot;&#xD;
+          <generalization xmi:id="_wcI0sIcnEeGqF6qfYwLiQw">
+            <ownedComment xmi:id="_Hz8KIEM8EeKBoM5tGvrHVQ">
+              <body>If EHistory.12 has the value &quot;None Reported,&quot; the value is &quot;False&quot;&#xD;
 If EHistory.12 has the value &quot;Refused&quot; or &quot;Unable to Complete,&quot; the value is &quot;NI&quot;; the&#xD;
 original value may be recorded in Observation.text.</body>
-          </ownedComment>
-          <generalization xmi:id="_wcI0sIcnEeGqF6qfYwLiQw">
+            </ownedComment>
             <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
           </generalization>
           <ownedAttribute xmi:id="_yPMGsIcnEeGqF6qfYwLiQw" name="code" visibility="private" isReadOnly="true" aggregation="composite">
@@ -2181,7 +2177,7 @@ original value may be recorded in Observation.text.</body>
           </ownedAttribute>
         </nestedClassifier>
       </nestedClassifier>
-      <nestedClassifier xmi:type="uml:Class" xmi:id="_1KSHkMH7EeGOXu0EprM3pw" name="DerivedEntry">
+      <nestedClassifier xmi:type="uml:Class" xmi:id="_1KSHkMH7EeGOXu0EprM3pw" name="OnAnticoagulantsEntry">
         <generalization xmi:id="_1KSHkcH7EeGOXu0EprM3pw" general="_9YwisMHsEeGOXu0EprM3pw"/>
         <ownedAttribute xmi:id="_-IagMMH7EeGOXu0EprM3pw" name="patientOnAnticoagulants" type="_RZqlsIcoEeGqF6qfYwLiQw" association="_-IagMsH7EeGOXu0EprM3pw">
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2kDoAMcLEeGjDJAyT0XW9Q" value="1"/>
@@ -2200,7 +2196,7 @@ original value may be recorded in Observation.text.</body>
           </ownedAttribute>
           <ownedAttribute xmi:id="_Ut7y0IcoEeGqF6qfYwLiQw" name="value" visibility="private" aggregation="composite">
             <ownedComment xmi:id="_d4rEEIcoEeGqF6qfYwLiQw">
-              <body>If EHistory.12 has the value &quot;No anticoagulants,&quot; the value is False</body>
+              <body>NEMSIS Trace: If EHistory.12 has the value &quot;No anticoagulants,&quot; the value is False</body>
             </ownedComment>
             <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_r1WssDxjEd6JwqSGecoePg"/>
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_52Tb4McLEeGjDJAyT0XW9Q" value="1"/>
@@ -2209,16 +2205,13 @@ original value may be recorded in Observation.text.</body>
           </ownedAttribute>
         </nestedClassifier>
       </nestedClassifier>
-      <nestedClassifier xmi:type="uml:Class" xmi:id="_1-M30MH7EeGOXu0EprM3pw" name="DerivedEntry">
+      <nestedClassifier xmi:type="uml:Class" xmi:id="_1-M30MH7EeGOXu0EprM3pw" name="CurrentMedicationEntry">
         <generalization xmi:id="_1-M30cH7EeGOXu0EprM3pw" general="_9YwisMHsEeGOXu0EprM3pw"/>
         <ownedAttribute xmi:id="_ENTa0MH8EeGOXu0EprM3pw" name="eMSCurrentMedication" type="_mwn8MIcoEeGqF6qfYwLiQw" association="_ENTa0sH8EeGOXu0EprM3pw">
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_AeZxQMcMEeGjDJAyT0XW9Q" value="*"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_AeaYUMcMEeGjDJAyT0XW9Q"/>
         </ownedAttribute>
         <nestedClassifier xmi:type="uml:Class" xmi:id="_mwn8MIcoEeGqF6qfYwLiQw" name="EMSCurrentMedication">
-          <ownedComment xmi:id="_KghRsIcqEeGqF6qfYwLiQw">
-            <body>NEMSIS Trace: EHistory.12</body>
-          </ownedComment>
           <generalization xmi:id="_pv80EIcoEeGqF6qfYwLiQw">
             <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_nazskEbuEd6besF9iFIJkQ"/>
           </generalization>
@@ -2288,6 +2281,9 @@ This nulled notional class is parallel to the explicit question &quot;patient on
                   <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_Yc0bwEcZEd6besF9iFIJkQ"/>
                 </generalization>
                 <ownedAttribute xmi:id="_sEM5MIcpEeGqF6qfYwLiQw" name="code" visibility="private" aggregation="composite">
+                  <ownedComment xmi:id="_TbL6EEM8EeKBoM5tGvrHVQ">
+                    <body>NEMSIS Trace: EHistory.12</body>
+                  </ownedComment>
                   <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
                   <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_RxnJAMcNEeGjDJAyT0XW9Q" value="1"/>
                   <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_RxoXIMcNEeGjDJAyT0XW9Q" value="1"/>
@@ -2373,9 +2369,6 @@ This nulled notional class is parallel to the explicit question &quot;patient on
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_j0l_cDZtEeKLbZOfNmD-hA"/>
         </ownedAttribute>
         <nestedClassifier xmi:type="uml:Class" xmi:id="_Mr964IzjEeGnhceUMXltng" name="EMSExistenceOfDrugUseIndication">
-          <ownedComment xmi:id="_kihgUIzjEeGnhceUMXltng">
-            <body>NEMSIS Trace: EHistory.17, positive, negative, or null values</body>
-          </ownedComment>
           <generalization xmi:id="_NOQvoIzjEeGnhceUMXltng">
             <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
           </generalization>
@@ -2383,15 +2376,15 @@ This nulled notional class is parallel to the explicit question &quot;patient on
             <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
           </ownedAttribute>
           <ownedAttribute xmi:id="_OG2kgIzjEeGnhceUMXltng" name="value" visibility="private" aggregation="composite">
+            <ownedComment xmi:id="_C1FmUENDEeKBoM5tGvrHVQ">
+              <body>NEMSIS Trace: EHistory.17, positive, negative, or null values</body>
+            </ownedComment>
             <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_r1WssDxjEd6JwqSGecoePg"/>
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_1ZWucMcWEeGjDJAyT0XW9Q" value="1"/>
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_1ZZKsMcWEeGjDJAyT0XW9Q" value="1"/>
           </ownedAttribute>
         </nestedClassifier>
         <nestedClassifier xmi:type="uml:Class" xmi:id="_oJHzkIzjEeGnhceUMXltng" name="EMSDrugUseIndication">
-          <ownedComment xmi:id="_Uzvd0IzkEeGnhceUMXltng">
-            <body>NEMSIS Trace: EHistory.17, proper values</body>
-          </ownedComment>
           <generalization xmi:id="_oiTIkIzjEeGnhceUMXltng">
             <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
           </generalization>
@@ -2399,6 +2392,9 @@ This nulled notional class is parallel to the explicit question &quot;patient on
             <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
           </ownedAttribute>
           <ownedAttribute xmi:id="_pSyxYIzjEeGnhceUMXltng" name="value" visibility="private" aggregation="composite">
+            <ownedComment xmi:id="_E2SCAENDEeKBoM5tGvrHVQ">
+              <body>NEMSIS Trace: EHistory.17, proper values</body>
+            </ownedComment>
             <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_3ez_EMcWEeGjDJAyT0XW9Q" value="*"/>
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_3e1NMMcWEeGjDJAyT0XW9Q" value="1"/>
@@ -2520,9 +2516,6 @@ This nulled notional class is parallel to the explicit question &quot;patient on
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_VV93gj1kEeKrxpQxAntppQ"/>
           </ownedAttribute>
           <nestedClassifier xmi:type="uml:Class" xmi:id="_Dq57UIzpEeGnhceUMXltng" name="EMSPriorAidVitals">
-            <ownedComment xmi:id="_OmFPcIzpEeGnhceUMXltng">
-              <body>NEMSIS Trace: EVitals.02</body>
-            </ownedComment>
             <generalization xmi:id="_EHmeYIzpEeGnhceUMXltng">
               <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
             </generalization>
@@ -2530,6 +2523,9 @@ This nulled notional class is parallel to the explicit question &quot;patient on
               <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
             </ownedAttribute>
             <ownedAttribute xmi:id="_FHspcIzpEeGnhceUMXltng" name="value" visibility="private" aggregation="composite">
+              <ownedComment xmi:id="_ZKWYIENDEeKBoM5tGvrHVQ">
+                <body>NEMSIS Trace: EVitals.02</body>
+              </ownedComment>
               <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_r1WssDxjEd6JwqSGecoePg"/>
               <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_mgEwkMcXEeGjDJAyT0XW9Q" value="1"/>
               <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_mgHz4McXEeGjDJAyT0XW9Q" value="1"/>
@@ -2560,9 +2556,6 @@ This nulled notional class is parallel to the explicit question &quot;patient on
             </ownedAttribute>
           </nestedClassifier>
           <nestedClassifier xmi:type="uml:Class" xmi:id="_Orea4IzrEeGnhceUMXltng" name="EMSSystolicBloodPressure">
-            <ownedComment xmi:id="_TJxyMIzrEeGnhceUMXltng">
-              <body>NEMSIS Trace: EVitals.06</body>
-            </ownedComment>
             <generalization xmi:id="_PIqGIIzrEeGnhceUMXltng">
               <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
             </generalization>
@@ -2571,7 +2564,8 @@ This nulled notional class is parallel to the explicit question &quot;patient on
             </ownedAttribute>
             <ownedAttribute xmi:id="_P3KK4IzrEeGnhceUMXltng" name="value" visibility="private" aggregation="composite">
               <ownedComment xmi:id="_g0CiwIzrEeGnhceUMXltng">
-                <body>UCUM units SHOULD be &quot;mm[Hg]&quot;.</body>
+                <body>NEMSIS Trace: EVitals.06&#xD;
+UCUM units SHOULD be &quot;mm[Hg]&quot;.</body>
               </ownedComment>
               <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_3mPzYD59Ed6cla2oXsPtlA"/>
               <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_VRoPgIzrEeGnhceUMXltng" value="1"/>
@@ -2579,9 +2573,6 @@ This nulled notional class is parallel to the explicit question &quot;patient on
             </ownedAttribute>
           </nestedClassifier>
           <nestedClassifier xmi:type="uml:Class" xmi:id="_l4xA4IzrEeGnhceUMXltng" name="EMSDiastolicBloodPressure">
-            <ownedComment xmi:id="_rNYVIIzrEeGnhceUMXltng">
-              <body>NEMSIS Trace: EVitals.07</body>
-            </ownedComment>
             <generalization xmi:id="_mVKpAIzrEeGnhceUMXltng">
               <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
             </generalization>
@@ -2590,7 +2581,8 @@ This nulled notional class is parallel to the explicit question &quot;patient on
             </ownedAttribute>
             <ownedAttribute xmi:id="_nlVQYYzrEeGnhceUMXltng" name="value" visibility="private" aggregation="composite">
               <ownedComment xmi:id="_0fkSMIzrEeGnhceUMXltng">
-                <body>UCUM units SHOULD be &quot;mm[Hg]&quot;.</body>
+                <body>NEMSIS Trace: EVitals.07&#xD;
+UCUM units SHOULD be &quot;mm[Hg]&quot;.</body>
               </ownedComment>
               <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_3mPzYD59Ed6cla2oXsPtlA"/>
               <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2qRPMIzrEeGnhceUMXltng" value="1"/>
@@ -2598,9 +2590,6 @@ This nulled notional class is parallel to the explicit question &quot;patient on
             </ownedAttribute>
           </nestedClassifier>
           <nestedClassifier xmi:type="uml:Class" xmi:id="__qJ7UIzrEeGnhceUMXltng" name="EMSHeartRate">
-            <ownedComment xmi:id="_CRrXMIzsEeGnhceUMXltng">
-              <body>NEMSIS Trace: EVitals.10</body>
-            </ownedComment>
             <generalization xmi:id="_AA5nYIzsEeGnhceUMXltng">
               <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
             </generalization>
@@ -2609,7 +2598,8 @@ This nulled notional class is parallel to the explicit question &quot;patient on
             </ownedAttribute>
             <ownedAttribute xmi:id="_AsBA8IzsEeGnhceUMXltng" name="value" visibility="private" aggregation="composite">
               <ownedComment xmi:id="_LQHR0IzsEeGnhceUMXltng">
-                <body>UCUM units SHOULD be &quot;/min&quot;.</body>
+                <body>NEMSIS Trace: EVitals.10&#xD;
+UCUM units SHOULD be &quot;/min&quot;.</body>
               </ownedComment>
               <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_3mPzYD59Ed6cla2oXsPtlA"/>
               <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_AsBA8YzsEeGnhceUMXltng" value="*"/>
@@ -2617,9 +2607,6 @@ This nulled notional class is parallel to the explicit question &quot;patient on
             </ownedAttribute>
           </nestedClassifier>
           <nestedClassifier xmi:type="uml:Class" xmi:id="_Q7VIMIzsEeGnhceUMXltng" name="EMSRespiratoryRate">
-            <ownedComment xmi:id="_U9CqIIzsEeGnhceUMXltng">
-              <body>NEMSIS Trace: EVitals.14</body>
-            </ownedComment>
             <generalization xmi:id="_RN10gIzsEeGnhceUMXltng">
               <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
             </generalization>
@@ -2628,7 +2615,8 @@ This nulled notional class is parallel to the explicit question &quot;patient on
             </ownedAttribute>
             <ownedAttribute xmi:id="_R8_ZgIzsEeGnhceUMXltng" name="value" visibility="private" aggregation="composite">
               <ownedComment xmi:id="_dnyMsIzsEeGnhceUMXltng">
-                <body>UCUM units SHOULD be &quot;/min&quot;.</body>
+                <body>NEMSIS Trace: EVitals.14&#xD;
+UCUM units SHOULD be &quot;/min&quot;.</body>
               </ownedComment>
               <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_3mPzYD59Ed6cla2oXsPtlA"/>
               <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_f7THcIzsEeGnhceUMXltng" value="1"/>
@@ -2636,9 +2624,6 @@ This nulled notional class is parallel to the explicit question &quot;patient on
             </ownedAttribute>
           </nestedClassifier>
           <nestedClassifier xmi:type="uml:Class" xmi:id="_koRz8IzsEeGnhceUMXltng" name="EMSBodyTemperature">
-            <ownedComment xmi:id="_oJXVEIzsEeGnhceUMXltng">
-              <body>NEMSIS Trace: EVitals.24</body>
-            </ownedComment>
             <generalization xmi:id="_k_CuIIzsEeGnhceUMXltng">
               <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
             </generalization>
@@ -2647,7 +2632,8 @@ This nulled notional class is parallel to the explicit question &quot;patient on
             </ownedAttribute>
             <ownedAttribute xmi:id="_lpOTkYzsEeGnhceUMXltng" name="value" visibility="private" aggregation="composite">
               <ownedComment xmi:id="_p_zSQIzsEeGnhceUMXltng">
-                <body>UCUM units SHOULD be &quot;Cel&quot;.</body>
+                <body>NEMSIS Trace: EVitals.24&#xD;
+UCUM units SHOULD be &quot;Cel&quot;.</body>
               </ownedComment>
               <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_3mPzYD59Ed6cla2oXsPtlA"/>
               <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_x0ldMIzsEeGnhceUMXltng" value="1"/>
@@ -2655,9 +2641,6 @@ This nulled notional class is parallel to the explicit question &quot;patient on
             </ownedAttribute>
           </nestedClassifier>
           <nestedClassifier xmi:type="uml:Class" xmi:id="_01XGkIzsEeGnhceUMXltng" name="EMSOxygenSaturation">
-            <ownedComment xmi:id="_3qbPMIzsEeGnhceUMXltng">
-              <body>NEMSIS Trace: EVitals.12</body>
-            </ownedComment>
             <generalization xmi:id="_1HuB4IzsEeGnhceUMXltng">
               <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
             </generalization>
@@ -2666,7 +2649,8 @@ This nulled notional class is parallel to the explicit question &quot;patient on
             </ownedAttribute>
             <ownedAttribute xmi:id="_10aIwIzsEeGnhceUMXltng" name="value" visibility="private" aggregation="composite">
               <ownedComment xmi:id="__FR3MIzsEeGnhceUMXltng">
-                <body>UCUM units will typically be &quot;%&quot;.</body>
+                <body>NEMSIS Trace: EVitals.12&#xD;
+UCUM units will typically be &quot;%&quot;.</body>
               </ownedComment>
               <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#__I8BwDxZEd6JwqSGecoePg"/>
               <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_9w8hgIzsEeGnhceUMXltng" value="1"/>
@@ -2674,9 +2658,6 @@ This nulled notional class is parallel to the explicit question &quot;patient on
             </ownedAttribute>
           </nestedClassifier>
           <nestedClassifier xmi:type="uml:Class" xmi:id="_IU2lIIztEeGnhceUMXltng" name="EMSCarbonDioxide">
-            <ownedComment xmi:id="_LgbJQIztEeGnhceUMXltng">
-              <body>NEMSIS Trace: EVitals.16</body>
-            </ownedComment>
             <generalization xmi:id="_I1iQUIztEeGnhceUMXltng">
               <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
             </generalization>
@@ -2685,7 +2666,8 @@ This nulled notional class is parallel to the explicit question &quot;patient on
             </ownedAttribute>
             <ownedAttribute xmi:id="_JrbWgYztEeGnhceUMXltng" name="value" visibility="private" aggregation="composite">
               <ownedComment xmi:id="_UElisIztEeGnhceUMXltng">
-                <body>UCUM units will typically be &quot;%&quot;.</body>
+                <body>NEMSIS Trace: EVitals.16&#xD;
+UCUM units will typically be &quot;%&quot;.</body>
               </ownedComment>
               <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#__I8BwDxZEd6JwqSGecoePg"/>
               <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_P4y3sIztEeGnhceUMXltng" value="1"/>
@@ -2693,9 +2675,6 @@ This nulled notional class is parallel to the explicit question &quot;patient on
             </ownedAttribute>
           </nestedClassifier>
           <nestedClassifier xmi:type="uml:Class" xmi:id="_WFit0IztEeGnhceUMXltng" name="EMSCarbonMonoxide">
-            <ownedComment xmi:id="_YgoQMIztEeGnhceUMXltng">
-              <body>NEMSIS Trace: EVitals.17</body>
-            </ownedComment>
             <generalization xmi:id="_WP_qUIztEeGnhceUMXltng">
               <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
             </generalization>
@@ -2704,7 +2683,8 @@ This nulled notional class is parallel to the explicit question &quot;patient on
             </ownedAttribute>
             <ownedAttribute xmi:id="_W79_gIztEeGnhceUMXltng" name="value" visibility="private" aggregation="composite">
               <ownedComment xmi:id="_gOCAwIztEeGnhceUMXltng">
-                <body>UCUM units will typically be &quot;[ppm]&quot;.</body>
+                <body>NEMSIS Trace: EVitals.17&#xD;
+UCUM units will typically be &quot;[ppm]&quot;.</body>
               </ownedComment>
               <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_3mPzYD59Ed6cla2oXsPtlA"/>
               <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_zGEnwMcXEeGjDJAyT0XW9Q" value="1"/>
@@ -2712,9 +2692,6 @@ This nulled notional class is parallel to the explicit question &quot;patient on
             </ownedAttribute>
           </nestedClassifier>
           <nestedClassifier xmi:type="uml:Class" xmi:id="_jmDsgIztEeGnhceUMXltng" name="EMSBloodGlucose">
-            <ownedComment xmi:id="_mgPlsIztEeGnhceUMXltng">
-              <body>NEMSIS Trace: EVitals.18</body>
-            </ownedComment>
             <generalization xmi:id="_j7fJ8IztEeGnhceUMXltng">
               <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
             </generalization>
@@ -2723,7 +2700,8 @@ This nulled notional class is parallel to the explicit question &quot;patient on
             </ownedAttribute>
             <ownedAttribute xmi:id="_kqT-0IztEeGnhceUMXltng" name="value" visibility="private" aggregation="composite">
               <ownedComment xmi:id="_tiLXYIztEeGnhceUMXltng">
-                <body>UCUM units will typically be &quot;mg/dl&quot;.</body>
+                <body>NEMSIS Trace: EVitals.18&#xD;
+UCUM units will typically be &quot;mg/dl&quot;.</body>
               </ownedComment>
               <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_3mPzYD59Ed6cla2oXsPtlA"/>
               <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_168jIMcXEeGjDJAyT0XW9Q" value="1"/>
@@ -2731,9 +2709,6 @@ This nulled notional class is parallel to the explicit question &quot;patient on
             </ownedAttribute>
           </nestedClassifier>
           <nestedClassifier xmi:type="uml:Class" xmi:id="_xgaHgIztEeGnhceUMXltng" name="EMSLevelOfResponsiveness">
-            <ownedComment xmi:id="_0qYJIIztEeGnhceUMXltng">
-              <body>NEMSIS Trace: EVitals.26</body>
-            </ownedComment>
             <generalization xmi:id="_x_aXsIztEeGnhceUMXltng">
               <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
             </generalization>
@@ -2741,15 +2716,15 @@ This nulled notional class is parallel to the explicit question &quot;patient on
               <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
             </ownedAttribute>
             <ownedAttribute xmi:id="_ysOaYIztEeGnhceUMXltng" name="value" visibility="private" aggregation="composite">
+              <ownedComment xmi:id="_qwMNcENDEeKBoM5tGvrHVQ">
+                <body>NEMSIS Trace: EVitals.26</body>
+              </ownedComment>
               <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
               <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_BNPMwIzuEeGnhceUMXltng" value="1"/>
               <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_BNPMwYzuEeGnhceUMXltng" value="1"/>
             </ownedAttribute>
           </nestedClassifier>
           <nestedClassifier xmi:type="uml:Class" xmi:id="_lnVLQIzuEeGnhceUMXltng" name="EMSPainScore">
-            <ownedComment xmi:id="_pl-yIIzuEeGnhceUMXltng">
-              <body>NEMSIS Trace: EVitals.27</body>
-            </ownedComment>
             <generalization xmi:id="_l6CE0IzuEeGnhceUMXltng">
               <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
             </generalization>
@@ -2758,7 +2733,8 @@ This nulled notional class is parallel to the explicit question &quot;patient on
             </ownedAttribute>
             <ownedAttribute xmi:id="_mpd9sIzuEeGnhceUMXltng" name="value" visibility="private" aggregation="composite">
               <ownedComment xmi:id="_2d44sIzuEeGnhceUMXltng">
-                <body>An ordinal value between 0 and 10, inclusive. There are three scales, but the values are equivalent.</body>
+                <body>NEMSIS Trace: EVitals.27&#xD;
+An ordinal value between 0 and 10, inclusive. There are three scales, but the values are equivalent.</body>
               </ownedComment>
               <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_co8uMD53Ed6cla2oXsPtlA"/>
               <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_5KTbEMcXEeGjDJAyT0XW9Q" value="1"/>
@@ -2766,9 +2742,6 @@ This nulled notional class is parallel to the explicit question &quot;patient on
             </ownedAttribute>
           </nestedClassifier>
           <nestedClassifier xmi:type="uml:Class" xmi:id="_9koR4IzuEeGnhceUMXltng" name="EMSStrokeScore">
-            <ownedComment xmi:id="_BMoTUIzvEeGnhceUMXltng">
-              <body>NEMSIS Trace: EVitals.29, 30</body>
-            </ownedComment>
             <generalization xmi:id="_95ZoAIzuEeGnhceUMXltng">
               <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
             </generalization>
@@ -2816,9 +2789,6 @@ This nulled notional class is parallel to the explicit question &quot;patient on
               <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_5IC1AIzyEeGnhceUMXltng" value="1"/>
             </ownedAttribute>
             <nestedClassifier xmi:type="uml:Class" xmi:id="_WduLAIzyEeGnhceUMXltng" name="EMSGlasgowTotal">
-              <ownedComment xmi:id="_Z2oVoIz0EeGnhceUMXltng">
-                <body>NEMSIS Trace: EVitals.23</body>
-              </ownedComment>
               <generalization xmi:id="_W9FnkIzyEeGnhceUMXltng">
                 <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
               </generalization>
@@ -2827,7 +2797,8 @@ This nulled notional class is parallel to the explicit question &quot;patient on
               </ownedAttribute>
               <ownedAttribute xmi:id="_XnTCMIzyEeGnhceUMXltng" name="value" visibility="private" aggregation="composite">
                 <ownedComment xmi:id="_LPYN0IzzEeGnhceUMXltng">
-                  <body>Integer value equal to the sum of verbal, motor, and eye</body>
+                  <body>NEMSIS Trace: EVitals.23&#xD;
+Integer value equal to the sum of verbal, motor, and eye</body>
                 </ownedComment>
                 <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_co8uMD53Ed6cla2oXsPtlA"/>
                 <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Ncm6YIzzEeGnhceUMXltng" value="1"/>
@@ -2835,9 +2806,6 @@ This nulled notional class is parallel to the explicit question &quot;patient on
               </ownedAttribute>
             </nestedClassifier>
             <nestedClassifier xmi:type="uml:Class" xmi:id="_ZLqX8IzyEeGnhceUMXltng" name="EMSGlasgowQualifier">
-              <ownedComment xmi:id="_Qo4pIIzzEeGnhceUMXltng">
-                <body>NEMSIS Trace: EVitals.22</body>
-              </ownedComment>
               <generalization xmi:id="_ZhmywIzyEeGnhceUMXltng">
                 <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
               </generalization>
@@ -2845,15 +2813,15 @@ This nulled notional class is parallel to the explicit question &quot;patient on
                 <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
               </ownedAttribute>
               <ownedAttribute xmi:id="_aL-lcIzyEeGnhceUMXltng" name="value" visibility="private" aggregation="composite">
+                <ownedComment xmi:id="_yVd8wENDEeKBoM5tGvrHVQ">
+                  <body>NEMSIS Trace: EVitals.22</body>
+                </ownedComment>
                 <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
                 <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_aL-lcYzyEeGnhceUMXltng" value="*"/>
                 <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_aL-lcozyEeGnhceUMXltng"/>
               </ownedAttribute>
             </nestedClassifier>
             <nestedClassifier xmi:type="uml:Class" xmi:id="_bxS9cIzyEeGnhceUMXltng" name="EMSGlasgowEye">
-              <ownedComment xmi:id="_hJt-MIzzEeGnhceUMXltng">
-                <body>NEMSIS Trace: EVitals.19</body>
-              </ownedComment>
               <generalization xmi:id="_cBadEIzyEeGnhceUMXltng">
                 <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
               </generalization>
@@ -2861,15 +2829,15 @@ This nulled notional class is parallel to the explicit question &quot;patient on
                 <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
               </ownedAttribute>
               <ownedAttribute xmi:id="_cteR0IzyEeGnhceUMXltng" name="value" visibility="private" aggregation="composite">
+                <ownedComment xmi:id="_zkKkgENDEeKBoM5tGvrHVQ">
+                  <body>NEMSIS Trace: EVitals.19</body>
+                </ownedComment>
                 <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_jCf_UD55Ed6cla2oXsPtlA"/>
                 <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_qM85QIzzEeGnhceUMXltng" value="1"/>
                 <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_qM9gUIzzEeGnhceUMXltng" value="1"/>
               </ownedAttribute>
             </nestedClassifier>
             <nestedClassifier xmi:type="uml:Class" xmi:id="_eKfCYIzyEeGnhceUMXltng" name="EMSGlasgowMotor">
-              <ownedComment xmi:id="_5ahPoIzzEeGnhceUMXltng">
-                <body>NEMSIS Trace: EVitals. 21</body>
-              </ownedComment>
               <generalization xmi:id="_ee3-AIzyEeGnhceUMXltng">
                 <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
               </generalization>
@@ -2877,15 +2845,15 @@ This nulled notional class is parallel to the explicit question &quot;patient on
                 <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
               </ownedAttribute>
               <ownedAttribute xmi:id="_fIlpYYzyEeGnhceUMXltng" name="value" visibility="private" aggregation="composite">
+                <ownedComment xmi:id="_1omhcENDEeKBoM5tGvrHVQ">
+                  <body>NEMSIS Trace: EVitals. 21</body>
+                </ownedComment>
                 <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_jCf_UD55Ed6cla2oXsPtlA"/>
                 <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Js7f4McYEeGjDJAyT0XW9Q" value="1"/>
                 <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Js-jMMcYEeGjDJAyT0XW9Q" value="1"/>
               </ownedAttribute>
             </nestedClassifier>
             <nestedClassifier xmi:type="uml:Class" xmi:id="_hLJ-EIzyEeGnhceUMXltng" name="EMSGlasgowVerbal">
-              <ownedComment xmi:id="_IJN4sIz0EeGnhceUMXltng">
-                <body>NEMSIS Trace: EVitals.20</body>
-              </ownedComment>
               <generalization xmi:id="_hhtc4IzyEeGnhceUMXltng">
                 <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
               </generalization>
@@ -2893,6 +2861,9 @@ This nulled notional class is parallel to the explicit question &quot;patient on
                 <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
               </ownedAttribute>
               <ownedAttribute xmi:id="_iMcb8IzyEeGnhceUMXltng" name="value" visibility="private" aggregation="composite">
+                <ownedComment xmi:id="_2sN6kENDEeKBoM5tGvrHVQ">
+                  <body>NEMSIS Trace: EVitals.20</body>
+                </ownedComment>
                 <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_jCf_UD55Ed6cla2oXsPtlA"/>
                 <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_lV6cYIz0EeGnhceUMXltng" value="1"/>
                 <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_lV6cYYz0EeGnhceUMXltng" value="1"/>
@@ -3083,9 +3054,6 @@ This nulled notional class is parallel to the explicit question &quot;patient on
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_iY2PoZosEeG_FLcaRgAa7g"/>
           </ownedAttribute>
           <nestedClassifier xmi:type="uml:Class" xmi:id="_GGe8UJojEeG_FLcaRgAa7g" name="PatientBodyWeight">
-            <ownedComment xmi:id="_Rd_AEJojEeG_FLcaRgAa7g">
-              <body>NEMSIS Trace: EExam.01</body>
-            </ownedComment>
             <generalization xmi:id="_GhZ9wJojEeG_FLcaRgAa7g">
               <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
             </generalization>
@@ -3094,7 +3062,8 @@ This nulled notional class is parallel to the explicit question &quot;patient on
             </ownedAttribute>
             <ownedAttribute xmi:id="_IKvTEZojEeG_FLcaRgAa7g" name="value" visibility="private" aggregation="composite">
               <ownedComment xmi:id="_qPBQwJojEeG_FLcaRgAa7g">
-                <body>UCUM units should be 'kg'</body>
+                <body>NEMSIS Trace: EExam.01&#xD;
+UCUM units should be 'kg'</body>
               </ownedComment>
               <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_3mPzYD59Ed6cla2oXsPtlA"/>
               <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_UDkiQJojEeG_FLcaRgAa7g" value="1"/>
@@ -3102,10 +3071,6 @@ This nulled notional class is parallel to the explicit question &quot;patient on
             </ownedAttribute>
           </nestedClassifier>
           <nestedClassifier xmi:type="uml:Class" xmi:id="_whTHIJojEeG_FLcaRgAa7g" name="LengthBasedPatientBodyWeightClass">
-            <ownedComment xmi:id="_RPusMJokEeG_FLcaRgAa7g">
-              <body>NEMSIS Trace: EExam.02.&#xD;
-Note: a license is required to implement the Broselow-Luten measure.</body>
-            </ownedComment>
             <generalization xmi:id="_xRpmAJojEeG_FLcaRgAa7g">
               <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
             </generalization>
@@ -3113,15 +3078,16 @@ Note: a license is required to implement the Broselow-Luten measure.</body>
               <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
             </ownedAttribute>
             <ownedAttribute xmi:id="_ymc1wZojEeG_FLcaRgAa7g" name="value" visibility="private" aggregation="composite">
+              <ownedComment xmi:id="_h1Ez8ENAEeKBoM5tGvrHVQ">
+                <body>NEMSIS Trace: EExam.02.&#xD;
+Note: a license is required to implement the Broselow-Luten measure.</body>
+              </ownedComment>
               <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
               <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_DSNBYJokEeG_FLcaRgAa7g" value="1"/>
               <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_DSWLUJokEeG_FLcaRgAa7g" value="1"/>
             </ownedAttribute>
           </nestedClassifier>
           <nestedClassifier xmi:type="uml:Class" xmi:id="_bFfQYJokEeG_FLcaRgAa7g" name="EMSSkinAssessment">
-            <ownedComment xmi:id="_wRjlgJokEeG_FLcaRgAa7g">
-              <body>NEMSIS Trace: EExam.04</body>
-            </ownedComment>
             <generalization xmi:id="_baeB4JokEeG_FLcaRgAa7g">
               <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
             </generalization>
@@ -3129,15 +3095,15 @@ Note: a license is required to implement the Broselow-Luten measure.</body>
               <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
             </ownedAttribute>
             <ownedAttribute xmi:id="_c64EsZokEeG_FLcaRgAa7g" name="value" visibility="private" aggregation="composite">
+              <ownedComment xmi:id="_jYRFAENAEeKBoM5tGvrHVQ">
+                <body>NEMSIS Trace: EExam.04</body>
+              </ownedComment>
               <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
               <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_idjDEJokEeG_FLcaRgAa7g" value="*"/>
               <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_idjDEZokEeG_FLcaRgAa7g" value="1"/>
             </ownedAttribute>
           </nestedClassifier>
           <nestedClassifier xmi:type="uml:Class" xmi:id="_6VcsUJokEeG_FLcaRgAa7g" name="EMSHeadAssessment">
-            <ownedComment xmi:id="_NTviUJolEeG_FLcaRgAa7g">
-              <body>NEMSIS Trace: EExam.05</body>
-            </ownedComment>
             <generalization xmi:id="_6p1n8JokEeG_FLcaRgAa7g">
               <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
             </generalization>
@@ -3145,15 +3111,15 @@ Note: a license is required to implement the Broselow-Luten measure.</body>
               <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
             </ownedAttribute>
             <ownedAttribute xmi:id="_74YesZokEeG_FLcaRgAa7g" name="value" visibility="private" aggregation="composite">
+              <ownedComment xmi:id="_lZf88ENAEeKBoM5tGvrHVQ">
+                <body>NEMSIS Trace: EExam.05</body>
+              </ownedComment>
               <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
               <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_CVFcYJolEeG_FLcaRgAa7g" value="*"/>
               <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_CVFcYZolEeG_FLcaRgAa7g" value="1"/>
             </ownedAttribute>
           </nestedClassifier>
           <nestedClassifier xmi:type="uml:Class" xmi:id="_QU_s0JolEeG_FLcaRgAa7g" name="EMSFaceAssessment">
-            <ownedComment xmi:id="_gRb7YJolEeG_FLcaRgAa7g">
-              <body>NEMSIS Trace: EExam.06</body>
-            </ownedComment>
             <generalization xmi:id="_QvxkUJolEeG_FLcaRgAa7g">
               <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
             </generalization>
@@ -3161,15 +3127,15 @@ Note: a license is required to implement the Broselow-Luten measure.</body>
               <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
             </ownedAttribute>
             <ownedAttribute xmi:id="_RoAz4ZolEeG_FLcaRgAa7g" name="value" visibility="private" aggregation="composite">
+              <ownedComment xmi:id="_oVudgENAEeKBoM5tGvrHVQ">
+                <body>NEMSIS Trace: EExam.06</body>
+              </ownedComment>
               <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
               <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_YuEQkJolEeG_FLcaRgAa7g" value="*"/>
               <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_YuEQkZolEeG_FLcaRgAa7g" value="1"/>
             </ownedAttribute>
           </nestedClassifier>
           <nestedClassifier xmi:type="uml:Class" xmi:id="_oE3bcJolEeG_FLcaRgAa7g" name="EMSNeckAssessment">
-            <ownedComment xmi:id="_9xOaMJolEeG_FLcaRgAa7g">
-              <body>NEMSIS Trace: EExam.07</body>
-            </ownedComment>
             <generalization xmi:id="_orGVAJolEeG_FLcaRgAa7g">
               <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
             </generalization>
@@ -3177,15 +3143,15 @@ Note: a license is required to implement the Broselow-Luten measure.</body>
               <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
             </ownedAttribute>
             <ownedAttribute xmi:id="_pmm7AZolEeG_FLcaRgAa7g" name="value" visibility="private" aggregation="composite">
+              <ownedComment xmi:id="_qj7acENAEeKBoM5tGvrHVQ">
+                <body>NEMSIS Trace: EExam.07</body>
+              </ownedComment>
               <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
               <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_k2m1MMcTEeGjDJAyT0XW9Q" value="*"/>
               <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_k2oDUMcTEeGjDJAyT0XW9Q" value="1"/>
             </ownedAttribute>
           </nestedClassifier>
           <nestedClassifier xmi:type="uml:Class" xmi:id="_CiNc8JomEeG_FLcaRgAa7g" name="EMSChestAndLungsAssessment">
-            <ownedComment xmi:id="_GWMr8JomEeG_FLcaRgAa7g">
-              <body>NEMSIS Trace: EExam.08</body>
-            </ownedComment>
             <generalization xmi:id="_Czwf8JomEeG_FLcaRgAa7g">
               <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
             </generalization>
@@ -3193,6 +3159,9 @@ Note: a license is required to implement the Broselow-Luten measure.</body>
               <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
             </ownedAttribute>
             <ownedAttribute xmi:id="_D1he8ZomEeG_FLcaRgAa7g" name="value" visibility="private" aggregation="composite">
+              <ownedComment xmi:id="_scsS4ENAEeKBoM5tGvrHVQ">
+                <body>NEMSIS Trace: EExam.08</body>
+              </ownedComment>
               <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
               <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Id4KIJomEeG_FLcaRgAa7g" value="*"/>
               <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Id4KIZomEeG_FLcaRgAa7g" value="1"/>
@@ -3206,15 +3175,15 @@ Note: a license is required to implement the Broselow-Luten measure.</body>
               <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
             </ownedAttribute>
             <ownedAttribute xmi:id="_bT1jgZomEeG_FLcaRgAa7g" name="value" visibility="private" aggregation="composite">
+              <ownedComment xmi:id="_xWD1kENAEeKBoM5tGvrHVQ">
+                <body>NEMSIS Trace: EExam.09</body>
+              </ownedComment>
               <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
               <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_dsn_0JomEeG_FLcaRgAa7g" value="*"/>
               <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_dsn_0ZomEeG_FLcaRgAa7g" value="1"/>
             </ownedAttribute>
           </nestedClassifier>
           <nestedClassifier xmi:type="uml:Class" xmi:id="_WMI_AJooEeG_FLcaRgAa7g" name="EMSAbdomenAssessment">
-            <ownedComment xmi:id="_fuHEgJooEeG_FLcaRgAa7g">
-              <body>NEMSIS Trace: EExam.10, 11</body>
-            </ownedComment>
             <generalization xmi:id="_WiwIMJooEeG_FLcaRgAa7g">
               <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
             </generalization>
@@ -3222,20 +3191,23 @@ Note: a license is required to implement the Broselow-Luten measure.</body>
               <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
             </ownedAttribute>
             <ownedAttribute xmi:id="_Xrf48ZooEeG_FLcaRgAa7g" name="value" visibility="private" aggregation="composite">
+              <ownedComment xmi:id="_1W-GQENAEeKBoM5tGvrHVQ">
+                <body>NEMSIS Trace: EExam.11</body>
+              </ownedComment>
               <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
               <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xyjhYJooEeG_FLcaRgAa7g" value="1"/>
               <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xyjhYZooEeG_FLcaRgAa7g" value="1"/>
             </ownedAttribute>
             <ownedAttribute xmi:id="_1jIQAJooEeG_FLcaRgAa7g" name="targetSiteCode" visibility="private" aggregation="composite">
+              <ownedComment xmi:id="_0YV60ENAEeKBoM5tGvrHVQ">
+                <body>NEMSIS Trace: EExam.10</body>
+              </ownedComment>
               <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
               <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_3LaccJooEeG_FLcaRgAa7g" value="1"/>
               <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_3LaccZooEeG_FLcaRgAa7g" value="1"/>
             </ownedAttribute>
           </nestedClassifier>
           <nestedClassifier xmi:type="uml:Class" xmi:id="_O7rMoJopEeG_FLcaRgAa7g" name="EMSPelvicAndGenitourinaryAssessment">
-            <ownedComment xmi:id="_lln1AJopEeG_FLcaRgAa7g">
-              <body>NEMSIS Trace: EExam.12</body>
-            </ownedComment>
             <generalization xmi:id="_PRiu8JopEeG_FLcaRgAa7g">
               <ownedComment xmi:id="_UFXDQJopEeG_FLcaRgAa7g">
                 <body>NEMSIS Trace: EExam.12</body>
@@ -3252,9 +3224,6 @@ Note: a license is required to implement the Broselow-Luten measure.</body>
             </ownedAttribute>
           </nestedClassifier>
           <nestedClassifier xmi:type="uml:Class" xmi:id="_pgmc0JopEeG_FLcaRgAa7g" name="EMSBackAndSpineAssessment">
-            <ownedComment xmi:id="_vFzx0JopEeG_FLcaRgAa7g">
-              <body>NEMSIS Trace: EExam.13, 14</body>
-            </ownedComment>
             <generalization xmi:id="_qFpDkJopEeG_FLcaRgAa7g">
               <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
             </generalization>
@@ -3262,20 +3231,23 @@ Note: a license is required to implement the Broselow-Luten measure.</body>
               <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
             </ownedAttribute>
             <ownedAttribute xmi:id="_sZ0ssZopEeG_FLcaRgAa7g" name="targetSiteCode" visibility="private" aggregation="composite">
+              <ownedComment xmi:id="_66W2UENAEeKBoM5tGvrHVQ">
+                <body>NEMSIS Trace: EExam.14</body>
+              </ownedComment>
               <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
               <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_3GCXwJopEeG_FLcaRgAa7g" value="1"/>
               <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_3GCXwZopEeG_FLcaRgAa7g" value="1"/>
             </ownedAttribute>
             <ownedAttribute xmi:id="_sZ0stJopEeG_FLcaRgAa7g" name="value" visibility="private" aggregation="composite">
+              <ownedComment xmi:id="_5ly3IENAEeKBoM5tGvrHVQ">
+                <body>NEMSIS Trace: EExam.14</body>
+              </ownedComment>
               <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
               <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_3yq0QJopEeG_FLcaRgAa7g" value="1"/>
               <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_3yq0QZopEeG_FLcaRgAa7g" value="1"/>
             </ownedAttribute>
           </nestedClassifier>
           <nestedClassifier xmi:type="uml:Class" xmi:id="_NK7yUJoqEeG_FLcaRgAa7g" name="EMSExtremitiesAssessment">
-            <ownedComment xmi:id="_R1OXMJoqEeG_FLcaRgAa7g">
-              <body>NEMSIS Trace: EExam.15, 16</body>
-            </ownedComment>
             <generalization xmi:id="_Nd-qIJoqEeG_FLcaRgAa7g">
               <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
             </generalization>
@@ -3283,20 +3255,23 @@ Note: a license is required to implement the Broselow-Luten measure.</body>
               <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
             </ownedAttribute>
             <ownedAttribute xmi:id="_P7YgsZoqEeG_FLcaRgAa7g" name="targetSiteCode" visibility="private" aggregation="composite">
+              <ownedComment xmi:id="_9AJeIENAEeKBoM5tGvrHVQ">
+                <body>NEMSIS Trace: EExam.15</body>
+              </ownedComment>
               <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
               <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_arwTAJoqEeG_FLcaRgAa7g" value="1"/>
               <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_arwTAZoqEeG_FLcaRgAa7g" value="1"/>
             </ownedAttribute>
             <ownedAttribute xmi:id="_P7YgtJoqEeG_FLcaRgAa7g" name="value" visibility="private" aggregation="composite">
+              <ownedComment xmi:id="_93PeMENAEeKBoM5tGvrHVQ">
+                <body>NEMSIS Trace: EExam.16</body>
+              </ownedComment>
               <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
               <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_gRQi8JoqEeG_FLcaRgAa7g" value="1"/>
               <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_gRQi8ZoqEeG_FLcaRgAa7g" value="1"/>
             </ownedAttribute>
           </nestedClassifier>
           <nestedClassifier xmi:type="uml:Class" xmi:id="_rsLuIJoqEeG_FLcaRgAa7g" name="EMSEyeAssessment">
-            <ownedComment xmi:id="_v3X8MJoqEeG_FLcaRgAa7g">
-              <body>NEMSIS Trace: EExam.17, 18</body>
-            </ownedComment>
             <generalization xmi:id="_r7ptgJoqEeG_FLcaRgAa7g">
               <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
             </generalization>
@@ -3304,20 +3279,23 @@ Note: a license is required to implement the Broselow-Luten measure.</body>
               <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
             </ownedAttribute>
             <ownedAttribute xmi:id="_tKDaUZoqEeG_FLcaRgAa7g" name="targetSiteCode" visibility="private" aggregation="composite">
+              <ownedComment xmi:id="__v8FMENAEeKBoM5tGvrHVQ">
+                <body>NEMSIS Trace: EExam.17</body>
+              </ownedComment>
               <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
               <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_1lNowJoqEeG_FLcaRgAa7g" value="1"/>
               <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_1lNowZoqEeG_FLcaRgAa7g" value="1"/>
             </ownedAttribute>
             <ownedAttribute xmi:id="_tKDaVJoqEeG_FLcaRgAa7g" name="value" visibility="private" aggregation="composite">
+              <ownedComment xmi:id="_AplqAENBEeKBoM5tGvrHVQ">
+                <body>NEMSIS Trace: EExam.18</body>
+              </ownedComment>
               <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
               <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4gEQUJoqEeG_FLcaRgAa7g" value="1"/>
               <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4gEQUZoqEeG_FLcaRgAa7g" value="1"/>
             </ownedAttribute>
           </nestedClassifier>
           <nestedClassifier xmi:type="uml:Class" xmi:id="_EyfEMJorEeG_FLcaRgAa7g" name="EMSMentalStatusAssessment">
-            <ownedComment xmi:id="_KflJ4JorEeG_FLcaRgAa7g">
-              <body>NEMSIS Trace: EExam.19</body>
-            </ownedComment>
             <generalization xmi:id="_FC2bcJorEeG_FLcaRgAa7g">
               <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
             </generalization>
@@ -3325,15 +3303,15 @@ Note: a license is required to implement the Broselow-Luten measure.</body>
               <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
             </ownedAttribute>
             <ownedAttribute xmi:id="_F8R90ZorEeG_FLcaRgAa7g" name="value" visibility="private" aggregation="composite">
+              <ownedComment xmi:id="_CVgZQENBEeKBoM5tGvrHVQ">
+                <body>NEMSIS Trace: EExam.19</body>
+              </ownedComment>
               <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
               <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_TZFhMJorEeG_FLcaRgAa7g" value="*"/>
               <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_TZFhMZorEeG_FLcaRgAa7g" value="1"/>
             </ownedAttribute>
           </nestedClassifier>
           <nestedClassifier xmi:type="uml:Class" xmi:id="_gBOGYJorEeG_FLcaRgAa7g" name="EMSNeurologicalAssessment">
-            <ownedComment xmi:id="_jEj7kJorEeG_FLcaRgAa7g">
-              <body>NEMSIS Trace: EExam.20</body>
-            </ownedComment>
             <generalization xmi:id="_gR4YkJorEeG_FLcaRgAa7g">
               <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
             </generalization>
@@ -3341,6 +3319,9 @@ Note: a license is required to implement the Broselow-Luten measure.</body>
               <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
             </ownedAttribute>
             <ownedAttribute xmi:id="_hNivkZorEeG_FLcaRgAa7g" name="value" visibility="private" aggregation="composite">
+              <ownedComment xmi:id="_EEwwYENBEeKBoM5tGvrHVQ">
+                <body>NEMSIS Trace: EExam.20</body>
+              </ownedComment>
               <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
               <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_pn6BAMcTEeGjDJAyT0XW9Q" value="*"/>
               <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_pn72MMcTEeGjDJAyT0XW9Q" value="1"/>
@@ -3354,9 +3335,6 @@ Note: a license is required to implement the Broselow-Luten measure.</body>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_k__Q88IAEeGOXu0EprM3pw"/>
         </ownedAttribute>
         <nestedClassifier xmi:type="uml:Class" xmi:id="_sW8QcJosEeG_FLcaRgAa7g" name="PatientPregnancy">
-          <ownedComment xmi:id="_JQywoJotEeG_FLcaRgAa7g">
-            <body>NEMSIS Trace: EHistory.18</body>
-          </ownedComment>
           <generalization xmi:id="_42mPEJosEeG_FLcaRgAa7g">
             <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
           </generalization>
@@ -3364,6 +3342,9 @@ Note: a license is required to implement the Broselow-Luten measure.</body>
             <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
           </ownedAttribute>
           <ownedAttribute xmi:id="_7XbNEZosEeG_FLcaRgAa7g" name="value" visibility="private" aggregation="composite">
+            <ownedComment xmi:id="_Hq8z8ENBEeKBoM5tGvrHVQ">
+              <body>NEMSIS Trace: EHistory.18</body>
+            </ownedComment>
             <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="__E3IIJosEeG_FLcaRgAa7g" value="1"/>
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="__E3IIZosEeG_FLcaRgAa7g" value="1"/>
@@ -3376,9 +3357,6 @@ Note: a license is required to implement the Broselow-Luten measure.</body>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_mHsf48IAEeGOXu0EprM3pw"/>
         </ownedAttribute>
         <nestedClassifier xmi:type="uml:Class" xmi:id="_S1I0sJotEeG_FLcaRgAa7g" name="LastOralIntake">
-          <ownedComment xmi:id="_k4g6kJotEeG_FLcaRgAa7g">
-            <body>NEMSIS Trace: EHistory.19</body>
-          </ownedComment>
           <generalization xmi:id="_TS5HsJotEeG_FLcaRgAa7g">
             <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
           </generalization>
@@ -3386,6 +3364,9 @@ Note: a license is required to implement the Broselow-Luten measure.</body>
             <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
           </ownedAttribute>
           <ownedAttribute xmi:id="_VF5WYZotEeG_FLcaRgAa7g" name="value" visibility="private" aggregation="composite">
+            <ownedComment xmi:id="_Ju8sAENBEeKBoM5tGvrHVQ">
+              <body>NEMSIS Trace: EHistory.19</body>
+            </ownedComment>
             <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_4ysYYD59Ed6cla2oXsPtlA"/>
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_hWOfkJotEeG_FLcaRgAa7g" value="1"/>
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_hWOfkZotEeG_FLcaRgAa7g" value="1"/>
@@ -3399,9 +3380,6 @@ Note: a license is required to implement the Broselow-Luten measure.</body>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_nimXpMIAEeGOXu0EprM3pw" value="1"/>
         </ownedAttribute>
         <nestedClassifier xmi:type="uml:Class" xmi:id="_rhjrIJotEeG_FLcaRgAa7g" name="EMSPatientAge">
-          <ownedComment xmi:id="_vmguUJotEeG_FLcaRgAa7g">
-            <body>NEMSIS Trace: EPatient.15, 16</body>
-          </ownedComment>
           <generalization xmi:id="_r9YrgJotEeG_FLcaRgAa7g">
             <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
           </generalization>
@@ -3410,7 +3388,8 @@ Note: a license is required to implement the Broselow-Luten measure.</body>
           </ownedAttribute>
           <ownedAttribute xmi:id="_tP9GoZotEeG_FLcaRgAa7g" name="value" visibility="private" aggregation="composite">
             <ownedComment xmi:id="_7ghpQJotEeG_FLcaRgAa7g">
-              <body>UCUM units SHOULD be 'a'</body>
+              <body>NEMSIS Trace: EPatient.15, 16&#xD;
+UCUM units SHOULD be 'a'</body>
             </ownedComment>
             <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_3mPzYD59Ed6cla2oXsPtlA"/>
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_zTNCgJotEeG_FLcaRgAa7g" value="1"/>
@@ -3424,9 +3403,6 @@ Note: a license is required to implement the Broselow-Luten measure.</body>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_oaiFM8IAEeGOXu0EprM3pw"/>
         </ownedAttribute>
         <nestedClassifier xmi:type="uml:Class" xmi:id="_HuCH8JouEeG_FLcaRgAa7g" name="EMSThrombolyticContraindications">
-          <ownedComment xmi:id="_LTcIYJouEeG_FLcaRgAa7g">
-            <body>NEMSIS Trace: EVitals.31</body>
-          </ownedComment>
           <generalization xmi:id="_IFY4AJouEeG_FLcaRgAa7g">
             <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
           </generalization>
@@ -3434,6 +3410,9 @@ Note: a license is required to implement the Broselow-Luten measure.</body>
             <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
           </ownedAttribute>
           <ownedAttribute xmi:id="_I_28MZouEeG_FLcaRgAa7g" name="value" visibility="private" aggregation="composite">
+            <ownedComment xmi:id="_NbpnQENBEeKBoM5tGvrHVQ">
+              <body>NEMSIS Trace: EVitals.31</body>
+            </ownedComment>
             <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_T_QpAJouEeG_FLcaRgAa7g" value="*"/>
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_T_QpAZouEeG_FLcaRgAa7g" value="1"/>
@@ -3447,9 +3426,6 @@ Note: a license is required to implement the Broselow-Luten measure.</body>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_pZK3tMIAEeGOXu0EprM3pw" value="1"/>
         </ownedAttribute>
         <nestedClassifier xmi:type="uml:Class" xmi:id="_qlUP4JouEeG_FLcaRgAa7g" name="EMSBarriersToPatientCare">
-          <ownedComment xmi:id="_vocykJouEeG_FLcaRgAa7g">
-            <body>NEMSIS Trace: EHistory.01</body>
-          </ownedComment>
           <generalization xmi:id="_q6vGQJouEeG_FLcaRgAa7g">
             <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
           </generalization>
@@ -3457,6 +3433,9 @@ Note: a license is required to implement the Broselow-Luten measure.</body>
             <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
           </ownedAttribute>
           <ownedAttribute xmi:id="_r59uoZouEeG_FLcaRgAa7g" name="value" visibility="private" aggregation="composite">
+            <ownedComment xmi:id="_PYJJIENBEeKBoM5tGvrHVQ">
+              <body>NEMSIS Trace: EHistory.01</body>
+            </ownedComment>
             <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_r59uopouEeG_FLcaRgAa7g" value="*"/>
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_r59uo5ouEeG_FLcaRgAa7g"/>
@@ -3539,7 +3518,8 @@ Note: a license is required to implement the Broselow-Luten measure.</body>
       <nestedClassifier xmi:type="uml:Class" xmi:id="_R-BGwMH-EeGOXu0EprM3pw" name="MedicationAdministeredEntry">
         <generalization xmi:id="_R-BGwcH-EeGOXu0EprM3pw" general="_9YwisMHsEeGOXu0EprM3pw"/>
         <ownedAttribute xmi:id="_Tk-dgsH-EeGOXu0EprM3pw" name="eMSMedicationAdministered" type="_5JQlAJovEeG_FLcaRgAa7g" association="_Tk-dgMH-EeGOXu0EprM3pw">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Tk-dg8H-EeGOXu0EprM3pw"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ALnxEENAEeKBoM5tGvrHVQ" value="*"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ALnxEUNAEeKBoM5tGvrHVQ"/>
         </ownedAttribute>
         <nestedClassifier xmi:type="uml:Class" xmi:id="_5JQlAJovEeG_FLcaRgAa7g" name="EMSMedicationAdministered">
           <generalization xmi:id="_6L6U0JovEeG_FLcaRgAa7g">
@@ -3652,6 +3632,9 @@ See appendix for mapping NEMSIS values to FDA values and for postcoordination of
                 <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
               </ownedAttribute>
               <ownedAttribute xmi:id="_GbWQsJoxEeG_FLcaRgAa7g" name="value" visibility="private" aggregation="composite">
+                <ownedComment xmi:id="_-qIloEM-EeKBoM5tGvrHVQ">
+                  <body>EMedications.03</body>
+                </ownedComment>
                 <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
                 <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_M_fTIJoxEeG_FLcaRgAa7g" value="1"/>
                 <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_M_fTIZoxEeG_FLcaRgAa7g" value="1"/>
@@ -3698,9 +3681,6 @@ See appendix for mapping NEMSIS values to FDA values and for postcoordination of
               <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Dnq8YJsnEeGzXI65shd6Fw" value="1"/>
             </ownedAttribute>
             <nestedClassifier xmi:type="uml:Class" xmi:id="_j9MusJsmEeGzXI65shd6Fw" name="MedicationResponseObservation">
-              <ownedComment xmi:id="_ATVd0JsnEeGzXI65shd6Fw">
-                <body>NEMSIS Trace: EMedications.07</body>
-              </ownedComment>
               <generalization xmi:id="_kLrPkJsmEeGzXI65shd6Fw">
                 <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
               </generalization>
@@ -3708,6 +3688,9 @@ See appendix for mapping NEMSIS values to FDA values and for postcoordination of
                 <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
               </ownedAttribute>
               <ownedAttribute xmi:id="_lZnpYJsmEeGzXI65shd6Fw" name="value" visibility="private" aggregation="composite">
+                <ownedComment xmi:id="_DyJoUEM_EeKBoM5tGvrHVQ">
+                  <body>NEMSIS Trace: EMedications.07</body>
+                </ownedComment>
                 <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
                 <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Dq93EMcQEeGjDJAyT0XW9Q" value="1"/>
                 <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Dq_FMMcQEeGjDJAyT0XW9Q" value="1"/>
@@ -3723,9 +3706,6 @@ See appendix for mapping NEMSIS values to FDA values and for postcoordination of
               <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_smxXIJsnEeGzXI65shd6Fw" value="1"/>
             </ownedAttribute>
             <nestedClassifier xmi:type="uml:Class" xmi:id="_Qzy_cJsnEeGzXI65shd6Fw" name="EMSMedicationComplicationObservation">
-              <ownedComment xmi:id="_hIFGQJsnEeGzXI65shd6Fw">
-                <body>NEMSIS Trace: EMedications.08</body>
-              </ownedComment>
               <generalization xmi:id="_R0vfEJsnEeGzXI65shd6Fw">
                 <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
               </generalization>
@@ -3733,6 +3713,9 @@ See appendix for mapping NEMSIS values to FDA values and for postcoordination of
                 <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
               </ownedAttribute>
               <ownedAttribute xmi:id="_S3wbQJsnEeGzXI65shd6Fw" name="value" visibility="private" aggregation="composite">
+                <ownedComment xmi:id="_KrPnEEM_EeKBoM5tGvrHVQ">
+                  <body>NEMSIS Trace: EMedications.08</body>
+                </ownedComment>
                 <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
                 <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_S3wbQZsnEeGzXI65shd6Fw" value="*"/>
                 <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_S3wbQpsnEeGzXI65shd6Fw"/>
@@ -3755,6 +3738,9 @@ See appendix for mapping NEMSIS values to FDA values and for postcoordination of
                 <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
               </ownedAttribute>
               <ownedAttribute xmi:id="_q-q7cJsoEeGzXI65shd6Fw" name="value" visibility="private" aggregation="composite">
+                <ownedComment xmi:id="_XW4MMEM_EeKBoM5tGvrHVQ">
+                  <body>NEMSIS Trace: EMedications.02</body>
+                </ownedComment>
                 <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_r1WssDxjEd6JwqSGecoePg"/>
                 <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_tDMX8JsoEeGzXI65shd6Fw" value="1"/>
                 <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_tDMX8ZsoEeGzXI65shd6Fw" value="1"/>
@@ -3800,9 +3786,6 @@ See appendix for mapping NEMSIS values to FDA values and for postcoordination of
               <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_K1bmwJsrEeGzXI65shd6Fw" value="1"/>
             </ownedAttribute>
             <nestedClassifier xmi:type="uml:Class" xmi:id="_xgjCIJsqEeGzXI65shd6Fw" name="EMSMedicationAuthorization">
-              <ownedComment xmi:id="_l4EtsJsrEeGzXI65shd6Fw">
-                <body>NEMSIS Trace: EMedications.11</body>
-              </ownedComment>
               <generalization xmi:id="_yYtZMJsqEeGzXI65shd6Fw">
                 <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_YiANsDxYEd6JwqSGecoePg"/>
               </generalization>
@@ -3810,6 +3793,9 @@ See appendix for mapping NEMSIS values to FDA values and for postcoordination of
                 <type xmi:type="uml:Enumeration" href="../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__zOntkDcEd6xYZuu1VKCVw"/>
               </ownedAttribute>
               <ownedAttribute xmi:id="_3MaYwJsqEeGzXI65shd6Fw" name="code" visibility="private" aggregation="composite">
+                <ownedComment xmi:id="_bDWd8EM_EeKBoM5tGvrHVQ">
+                  <body>NEMSIS Trace: EMedications.11</body>
+                </ownedComment>
                 <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
               </ownedAttribute>
             </nestedClassifier>
@@ -3940,7 +3926,7 @@ See appendix for mapping NEMSIS values to FDA values and for postcoordination of
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_WRIwg8H4EeGOXu0EprM3pw" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_WRIwhMH4EeGOXu0EprM3pw" value="1"/>
       </ownedAttribute>
-      <nestedClassifier xmi:type="uml:Class" xmi:id="_Vq-OwMIAEeGOXu0EprM3pw" name="DerivedEntry">
+      <nestedClassifier xmi:type="uml:Class" xmi:id="_Vq-OwMIAEeGOXu0EprM3pw" name="ProceduresEntry">
         <generalization xmi:id="_Vq-OwcIAEeGOXu0EprM3pw" general="_9YwisMHsEeGOXu0EprM3pw"/>
         <ownedAttribute xmi:id="_XXurgsIAEeGOXu0EprM3pw" name="eMSProcedure" type="_K8JK8JuoEeGzXI65shd6Fw" association="_XXurgMIAEeGOXu0EprM3pw">
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_XXurg8IAEeGOXu0EprM3pw" value="*"/>
@@ -4031,9 +4017,6 @@ Required conditionally if procedure code is intravenous catheterization (E303)</
               <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_oE_CAJurEeGzXI65shd6Fw" value="1"/>
             </ownedAttribute>
             <nestedClassifier xmi:type="uml:Class" xmi:id="_edpw0JuqEeGzXI65shd6Fw" name="EMSAbandonedProcedureReasonObservation">
-              <ownedComment xmi:id="_V6brMJ4eEeGzbp5zEFWdWg">
-                <body>NEMSIS Trace: EArrest.16</body>
-              </ownedComment>
               <generalization xmi:id="_fIxKYJuqEeGzXI65shd6Fw">
                 <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
               </generalization>
@@ -4041,6 +4024,9 @@ Required conditionally if procedure code is intravenous catheterization (E303)</
                 <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
               </ownedAttribute>
               <ownedAttribute xmi:id="_gTkJkZuqEeGzXI65shd6Fw" name="value" visibility="private" aggregation="composite">
+                <ownedComment xmi:id="_WPHoAENBEeKBoM5tGvrHVQ">
+                  <body>NEMSIS Trace: EArrest.16</body>
+                </ownedComment>
                 <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
                 <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_JdPcoJurEeGzXI65shd6Fw" value="1"/>
                 <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_JdQDsJurEeGzXI65shd6Fw" value="1"/>
@@ -4055,9 +4041,6 @@ Required conditionally if procedure code is intravenous catheterization (E303)</
               <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Rc8swZ0tEeGmCMENP40rhA"/>
             </ownedAttribute>
             <nestedClassifier xmi:type="uml:Class" xmi:id="_0IBaIJ0sEeGmCMENP40rhA" name="EMSProcedurePriorIndicator">
-              <ownedComment xmi:id="_FkkwkJ0tEeGmCMENP40rhA">
-                <body>NEMSIS Trace: EProcedures.02</body>
-              </ownedComment>
               <generalization xmi:id="_0ln8IJ0sEeGmCMENP40rhA">
                 <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
               </generalization>
@@ -4065,6 +4048,9 @@ Required conditionally if procedure code is intravenous catheterization (E303)</
                 <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
               </ownedAttribute>
               <ownedAttribute xmi:id="_2EixMZ0sEeGmCMENP40rhA" name="value" visibility="private" aggregation="composite">
+                <ownedComment xmi:id="_X_0JkENBEeKBoM5tGvrHVQ">
+                  <body>NEMSIS Trace: EProcedures.02</body>
+                </ownedComment>
                 <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_r1WssDxjEd6JwqSGecoePg"/>
                 <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7LZWQJ0sEeGmCMENP40rhA" value="1"/>
                 <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_7LZWQZ0sEeGmCMENP40rhA" value="1"/>
@@ -4080,9 +4066,6 @@ Required conditionally if procedure code is intravenous catheterization (E303)</
               <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0ofNcZ0tEeGmCMENP40rhA" value="1"/>
             </ownedAttribute>
             <nestedClassifier xmi:type="uml:Class" xmi:id="_iZg7kJ0tEeGmCMENP40rhA" name="EMSProcedureNumberOfAttemptsObservation">
-              <ownedComment xmi:id="_vHrQYJ4WEeGzbp5zEFWdWg">
-                <body>NEMSIS Trace: EProcedures.05</body>
-              </ownedComment>
               <generalization xmi:id="_jCIawJ0tEeGmCMENP40rhA">
                 <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
               </generalization>
@@ -4090,6 +4073,9 @@ Required conditionally if procedure code is intravenous catheterization (E303)</
                 <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
               </ownedAttribute>
               <ownedAttribute xmi:id="_khWKwZ0tEeGmCMENP40rhA" name="value" visibility="private" aggregation="composite">
+                <ownedComment xmi:id="_Zd-wsENBEeKBoM5tGvrHVQ">
+                  <body>NEMSIS Trace: EProcedures.05</body>
+                </ownedComment>
                 <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_co8uMD53Ed6cla2oXsPtlA"/>
                 <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_oRdmYJ0tEeGmCMENP40rhA" value="1"/>
                 <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_oRdmYZ0tEeGmCMENP40rhA" value="1"/>
@@ -4105,9 +4091,6 @@ Required conditionally if procedure code is intravenous catheterization (E303)</
               <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_TMHu4Z0uEeGmCMENP40rhA" value="1"/>
             </ownedAttribute>
             <nestedClassifier xmi:type="uml:Class" xmi:id="_D32TkJ0uEeGmCMENP40rhA" name="EMSProcedureSuccessfulObservation">
-              <ownedComment xmi:id="_caTVsJ0uEeGmCMENP40rhA">
-                <body>NEMSIS Trace: EProcedures.06</body>
-              </ownedComment>
               <generalization xmi:id="_EUkEwJ0uEeGmCMENP40rhA">
                 <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
               </generalization>
@@ -4115,6 +4098,9 @@ Required conditionally if procedure code is intravenous catheterization (E303)</
                 <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
               </ownedAttribute>
               <ownedAttribute xmi:id="_FuH4sZ0uEeGmCMENP40rhA" name="value" visibility="private" aggregation="composite">
+                <ownedComment xmi:id="_a6UL0ENBEeKBoM5tGvrHVQ">
+                  <body>NEMSIS Trace: EProcedures.06</body>
+                </ownedComment>
                 <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_r1WssDxjEd6JwqSGecoePg"/>
                 <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_JhhR0J0uEeGmCMENP40rhA" value="1"/>
                 <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_JhhR0Z0uEeGmCMENP40rhA" value="1"/>
@@ -4130,9 +4116,6 @@ Required conditionally if procedure code is intravenous catheterization (E303)</
               <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_RG4rQZ0vEeGmCMENP40rhA" value="1"/>
             </ownedAttribute>
             <nestedClassifier xmi:type="uml:Class" xmi:id="_lVl1sJ0uEeGmCMENP40rhA" name="EMSProcedureComplicationsObservation">
-              <ownedComment xmi:id="_qSVcgJ0uEeGmCMENP40rhA">
-                <body>NEMSIS Trace: EProcedures.07</body>
-              </ownedComment>
               <generalization xmi:id="_l6VhgJ0uEeGmCMENP40rhA">
                 <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
               </generalization>
@@ -4140,6 +4123,9 @@ Required conditionally if procedure code is intravenous catheterization (E303)</
                 <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
               </ownedAttribute>
               <ownedAttribute xmi:id="_nBv1gZ0uEeGmCMENP40rhA" name="value" visibility="private" aggregation="composite">
+                <ownedComment xmi:id="_cTwrAENBEeKBoM5tGvrHVQ">
+                  <body>NEMSIS Trace: EProcedures.07</body>
+                </ownedComment>
                 <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
                 <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_8Grn4J0uEeGmCMENP40rhA" value="*"/>
                 <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_8Grn4Z0uEeGmCMENP40rhA" value="1"/>
@@ -4155,9 +4141,6 @@ Required conditionally if procedure code is intravenous catheterization (E303)</
               <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_HeZRkZ0wEeGmCMENP40rhA" value="1"/>
             </ownedAttribute>
             <nestedClassifier xmi:type="uml:Class" xmi:id="_Z3nhEJ0vEeGmCMENP40rhA" name="EMSProcedurePatientResponseObservation">
-              <ownedComment xmi:id="_eOHnQJ0vEeGmCMENP40rhA">
-                <body>NEMSIS Trace: EProcedures.08</body>
-              </ownedComment>
               <generalization xmi:id="_aVz48J0vEeGmCMENP40rhA">
                 <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
               </generalization>
@@ -4165,6 +4148,9 @@ Required conditionally if procedure code is intravenous catheterization (E303)</
                 <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
               </ownedAttribute>
               <ownedAttribute xmi:id="_bVyIMZ0vEeGmCMENP40rhA" name="value" visibility="private" aggregation="composite">
+                <ownedComment xmi:id="_dxEWgENBEeKBoM5tGvrHVQ">
+                  <body>NEMSIS Trace: EProcedures.08</body>
+                </ownedComment>
                 <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
                 <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_gd220McUEeGjDJAyT0XW9Q" value="1"/>
                 <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_gd4sAMcUEeGjDJAyT0XW9Q" value="1"/>
@@ -4210,9 +4196,6 @@ Required conditionally if procedure code is intravenous catheterization (E303)</
               <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_O_wBMccUEeGjDJAyT0XW9Q" value="1"/>
             </ownedAttribute>
             <nestedClassifier xmi:type="uml:Class" xmi:id="_KR_lQJ4aEeGzbp5zEFWdWg" name="EMSAirwayConfirmationObservation">
-              <ownedComment xmi:id="_xiz5QJ4aEeGzbp5zEFWdWg">
-                <body>NEMSIS Trace: EAirway.04</body>
-              </ownedComment>
               <generalization xmi:id="_Kq5NcJ4aEeGzbp5zEFWdWg">
                 <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
               </generalization>
@@ -4220,11 +4203,17 @@ Required conditionally if procedure code is intravenous catheterization (E303)</
                 <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
               </ownedAttribute>
               <ownedAttribute xmi:id="_MZjusJ4aEeGzbp5zEFWdWg" name="methodCode" visibility="private" aggregation="composite">
+                <ownedComment xmi:id="_mPVjUENBEeKBoM5tGvrHVQ">
+                  <body>NEMSIS Trace: EAirway.04</body>
+                </ownedComment>
                 <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
                 <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_tNNyAJ4aEeGzbp5zEFWdWg" value="1"/>
                 <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_tNOZEJ4aEeGzbp5zEFWdWg" value="1"/>
               </ownedAttribute>
               <ownedAttribute xmi:id="_MZjus54aEeGzbp5zEFWdWg" name="value" visibility="private" aggregation="composite">
+                <ownedComment xmi:id="_h0beQENBEeKBoM5tGvrHVQ">
+                  <body>NEMSIS Trace: if EAirway.02 is populated, this is TRUE</body>
+                </ownedComment>
                 <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_r1WssDxjEd6JwqSGecoePg"/>
                 <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_sevicJ4aEeGzbp5zEFWdWg" value="1"/>
                 <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_sewJgJ4aEeGzbp5zEFWdWg" value="1"/>
@@ -4258,13 +4247,13 @@ Required conditionally if procedure code is intravenous catheterization (E303)</
                     <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_6RSvgZ4eEeGzbp5zEFWdWg" value="1"/>
                   </ownedAttribute>
                   <nestedClassifier xmi:type="uml:Class" xmi:id="_vAr98J4eEeGzbp5zEFWdWg" name="EMSAirwayDeviceParticipantType">
-                    <ownedComment xmi:id="_1wEnEJ4eEeGzbp5zEFWdWg">
-                      <body>NEMSIS Trace: EAirway.03</body>
-                    </ownedComment>
                     <generalization xmi:id="_vuVHEJ4eEeGzbp5zEFWdWg">
                       <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_u3llMEcEEd6besF9iFIJkQ"/>
                     </generalization>
                     <ownedAttribute xmi:id="_wvJD0J4eEeGzbp5zEFWdWg" name="code" visibility="private" aggregation="composite">
+                      <ownedComment xmi:id="_03YKwENBEeKBoM5tGvrHVQ">
+                        <body>NEMSIS Trace: EAirway.03</body>
+                      </ownedComment>
                       <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
                       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_EjSCUMcUEeGjDJAyT0XW9Q" value="1"/>
                       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_EjUekMcUEeGjDJAyT0XW9Q" value="1"/>
@@ -4396,15 +4385,12 @@ Required conditionally if procedure code is intravenous catheterization (E303)</
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_s_kpk8HzEeGOXu0EprM3pw" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_s_kplMHzEeGOXu0EprM3pw" value="1"/>
       </ownedAttribute>
-      <nestedClassifier xmi:type="uml:Class" xmi:id="_Gp9qgMH8EeGOXu0EprM3pw" name="DerivedEntry">
+      <nestedClassifier xmi:type="uml:Class" xmi:id="_Gp9qgMH8EeGOXu0EprM3pw" name="EMDEntry">
         <generalization xmi:id="_Gp9qgcH8EeGOXu0EprM3pw" general="_9YwisMHsEeGOXu0EprM3pw"/>
         <ownedAttribute xmi:id="_LJi0MsH8EeGOXu0EprM3pw" name="eMSEmergencyMedicalDispatchObservation" type="_46UUAJ9nEeGw9ZRnaFfEZQ" association="_LJi0MMH8EeGOXu0EprM3pw">
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_LJi0M8H8EeGOXu0EprM3pw"/>
         </ownedAttribute>
         <nestedClassifier xmi:type="uml:Class" xmi:id="_46UUAJ9nEeGw9ZRnaFfEZQ" name="EMSEmergencyMedicalDispatchObservation">
-          <ownedComment xmi:id="_LoCXYJ9oEeGw9ZRnaFfEZQ">
-            <body>NEMSIS Trace: EDispatch.02</body>
-          </ownedComment>
           <generalization xmi:id="_5cQjcJ9nEeGw9ZRnaFfEZQ">
             <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
           </generalization>
@@ -4412,22 +4398,25 @@ Required conditionally if procedure code is intravenous catheterization (E303)</
             <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
           </ownedAttribute>
           <ownedAttribute xmi:id="_-QFe0J9nEeGw9ZRnaFfEZQ" name="value" visibility="private" aggregation="composite">
+            <ownedComment xmi:id="_cjneMEM8EeKBoM5tGvrHVQ">
+              <body>NEMSIS Trace: EDispatch.02</body>
+            </ownedComment>
             <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_EU6vEJ9oEeGw9ZRnaFfEZQ" value="1"/>
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_EU6vEZ9oEeGw9ZRnaFfEZQ" value="1"/>
           </ownedAttribute>
         </nestedClassifier>
       </nestedClassifier>
-      <nestedClassifier xmi:type="uml:Class" xmi:id="_Hiyv8MH8EeGOXu0EprM3pw" name="DerivedEntry">
+      <nestedClassifier xmi:type="uml:Class" xmi:id="_Hiyv8MH8EeGOXu0EprM3pw" name="DispatchComplaintEntry">
         <generalization xmi:id="_Hiyv8cH8EeGOXu0EprM3pw" general="_9YwisMHsEeGOXu0EprM3pw"/>
         <ownedAttribute xmi:id="_MDkMcsH8EeGOXu0EprM3pw" name="eMSComplaintReportedByDispatch" type="__LltsJ97EeGw9ZRnaFfEZQ" association="_MDkMcMH8EeGOXu0EprM3pw">
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_MDkMc8H8EeGOXu0EprM3pw"/>
         </ownedAttribute>
         <nestedClassifier xmi:type="uml:Class" xmi:id="__LltsJ97EeGw9ZRnaFfEZQ" name="EMSComplaintReportedByDispatch">
-          <ownedComment xmi:id="_Jte_IJ98EeGw9ZRnaFfEZQ">
-            <body>NEMSIS Trace: EDispatch.01</body>
-          </ownedComment>
           <generalization xmi:id="_BD2P0J98EeGw9ZRnaFfEZQ">
+            <ownedComment xmi:id="_efgjIEM8EeKBoM5tGvrHVQ">
+              <body>NEMSIS Trace: EDispatch.01</body>
+            </ownedComment>
             <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
           </generalization>
           <ownedAttribute xmi:id="_CGKBYJ98EeGw9ZRnaFfEZQ" name="code" visibility="private" aggregation="composite">
@@ -4515,9 +4504,6 @@ Required conditionally if procedure code is intravenous catheterization (E303)</
               <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_dfna8Z9-EeGw9ZRnaFfEZQ" value="1"/>
             </ownedAttribute>
             <nestedClassifier xmi:type="uml:Class" xmi:id="_9i0HIJ99EeGw9ZRnaFfEZQ" name="EMSDispatchDelay">
-              <ownedComment xmi:id="_EvgXUJ9-EeGw9ZRnaFfEZQ">
-                <body>NEMSIS Trace: EResponse.08</body>
-              </ownedComment>
               <generalization xmi:id="_-MO3kJ99EeGw9ZRnaFfEZQ">
                 <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
               </generalization>
@@ -4525,6 +4511,9 @@ Required conditionally if procedure code is intravenous catheterization (E303)</
                 <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
               </ownedAttribute>
               <ownedAttribute xmi:id="__PPzwJ99EeGw9ZRnaFfEZQ" name="value" visibility="private" aggregation="composite">
+                <ownedComment xmi:id="_D4lgIENCEeKBoM5tGvrHVQ">
+                  <body>NEMSIS Trace: EResponse.08</body>
+                </ownedComment>
                 <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
                 <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_1FN8YMcUEeGjDJAyT0XW9Q" value="*"/>
                 <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_1FPxkMcUEeGjDJAyT0XW9Q" value="1"/>
@@ -4540,9 +4529,6 @@ Required conditionally if procedure code is intravenous catheterization (E303)</
               <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_GvCwsZ9_EeGw9ZRnaFfEZQ" value="1"/>
             </ownedAttribute>
             <nestedClassifier xmi:type="uml:Class" xmi:id="_pCK4JZ9-EeGw9ZRnaFfEZQ" name="EMSResponseDelay">
-              <ownedComment xmi:id="_pCK4Jp9-EeGw9ZRnaFfEZQ">
-                <body>NEMSIS Trace: EResponse.09</body>
-              </ownedComment>
               <generalization xmi:id="_pCK4J59-EeGw9ZRnaFfEZQ">
                 <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
               </generalization>
@@ -4550,6 +4536,9 @@ Required conditionally if procedure code is intravenous catheterization (E303)</
                 <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
               </ownedAttribute>
               <ownedAttribute xmi:id="_pCK4KZ9-EeGw9ZRnaFfEZQ" name="value" visibility="private" aggregation="composite">
+                <ownedComment xmi:id="_FcYOIENCEeKBoM5tGvrHVQ">
+                  <body>NEMSIS Trace: EResponse.09</body>
+                </ownedComment>
                 <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
                 <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2_wWcMcUEeGjDJAyT0XW9Q" value="*"/>
                 <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2_yLoMcUEeGjDJAyT0XW9Q" value="1"/>
@@ -4565,9 +4554,6 @@ Required conditionally if procedure code is intravenous catheterization (E303)</
               <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_u5EkoJ9_EeGw9ZRnaFfEZQ" value="1"/>
             </ownedAttribute>
             <nestedClassifier xmi:type="uml:Class" xmi:id="_Vo79JZ9_EeGw9ZRnaFfEZQ" name="EMSSceneDelay">
-              <ownedComment xmi:id="_Vo79Jp9_EeGw9ZRnaFfEZQ">
-                <body>NEMSIS Trace: EResponse.10</body>
-              </ownedComment>
               <generalization xmi:id="_Vo79J59_EeGw9ZRnaFfEZQ">
                 <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
               </generalization>
@@ -4575,6 +4561,9 @@ Required conditionally if procedure code is intravenous catheterization (E303)</
                 <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
               </ownedAttribute>
               <ownedAttribute xmi:id="_Vo79KZ9_EeGw9ZRnaFfEZQ" name="value" visibility="private" aggregation="composite">
+                <ownedComment xmi:id="_G0iT4ENCEeKBoM5tGvrHVQ">
+                  <body>NEMSIS Trace: EResponse.10</body>
+                </ownedComment>
                 <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
                 <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4kuwMMcUEeGjDJAyT0XW9Q" value="*"/>
                 <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4kwlYMcUEeGjDJAyT0XW9Q" value="1"/>
@@ -4590,9 +4579,6 @@ Required conditionally if procedure code is intravenous catheterization (E303)</
               <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_TaTs8Z-AEeGw9ZRnaFfEZQ" value="1"/>
             </ownedAttribute>
             <nestedClassifier xmi:type="uml:Class" xmi:id="_4qwhJZ9_EeGw9ZRnaFfEZQ" name="EMSTransportDelay">
-              <ownedComment xmi:id="_4qwhJp9_EeGw9ZRnaFfEZQ">
-                <body>NEMSIS Trace: EResponse.11</body>
-              </ownedComment>
               <generalization xmi:id="_4qwhJ59_EeGw9ZRnaFfEZQ">
                 <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
               </generalization>
@@ -4600,6 +4586,9 @@ Required conditionally if procedure code is intravenous catheterization (E303)</
                 <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
               </ownedAttribute>
               <ownedAttribute xmi:id="_4qwhKZ9_EeGw9ZRnaFfEZQ" name="value" visibility="private" aggregation="composite">
+                <ownedComment xmi:id="_IJxBcENCEeKBoM5tGvrHVQ">
+                  <body>NEMSIS Trace: EResponse.11</body>
+                </ownedComment>
                 <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
                 <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7CnH4McUEeGjDJAyT0XW9Q" value="*"/>
                 <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_7Co9EMcUEeGjDJAyT0XW9Q" value="1"/>
@@ -4615,9 +4604,6 @@ Required conditionally if procedure code is intravenous catheterization (E303)</
               <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xrl6IZ-AEeGw9ZRnaFfEZQ" value="1"/>
             </ownedAttribute>
             <nestedClassifier xmi:type="uml:Class" xmi:id="_e7LIFZ-AEeGw9ZRnaFfEZQ" name="EMSTurnaroundDelay">
-              <ownedComment xmi:id="_e7LIFp-AEeGw9ZRnaFfEZQ">
-                <body>NEMSIS Trace: EResponse.12</body>
-              </ownedComment>
               <generalization xmi:id="_e7LIF5-AEeGw9ZRnaFfEZQ">
                 <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
               </generalization>
@@ -4625,6 +4611,9 @@ Required conditionally if procedure code is intravenous catheterization (E303)</
                 <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
               </ownedAttribute>
               <ownedAttribute xmi:id="_e7LIGZ-AEeGw9ZRnaFfEZQ" name="value" visibility="private" aggregation="composite">
+                <ownedComment xmi:id="_JZ3-cENCEeKBoM5tGvrHVQ">
+                  <body>NEMSIS Trace: EResponse.12</body>
+                </ownedComment>
                 <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
                 <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_8n_xUMcUEeGjDJAyT0XW9Q" value="*"/>
                 <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_8oCNkMcUEeGjDJAyT0XW9Q" value="1"/>
@@ -4652,9 +4641,6 @@ Required conditionally if procedure code is intravenous catheterization (E303)</
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_mo5gYJ-OEeGorI3CPDW2ww"/>
           </ownedAttribute>
           <nestedClassifier xmi:type="uml:Class" xmi:id="_hwaaYJ-BEeGw9ZRnaFfEZQ" name="EMSDispatchLocationNameRelationship">
-            <ownedComment xmi:id="_a5VXYJ-NEeGorI3CPDW2ww">
-              <body>NEMSIS Trace: EResponse.16</body>
-            </ownedComment>
             <generalization xmi:id="_imCa0J-BEeGw9ZRnaFfEZQ">
               <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_cEUTcEcEEd6besF9iFIJkQ"/>
             </generalization>
@@ -4663,9 +4649,6 @@ Required conditionally if procedure code is intravenous catheterization (E303)</
               <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_461SkZ-BEeGw9ZRnaFfEZQ" value="1"/>
             </ownedAttribute>
             <nestedClassifier xmi:type="uml:Class" xmi:id="_lC10cJ-BEeGw9ZRnaFfEZQ" name="EMSDispatchLocationName">
-              <ownedComment xmi:id="_zlNRsJ-BEeGw9ZRnaFfEZQ">
-                <body>NEMSIS Trace: EResponse.16</body>
-              </ownedComment>
               <generalization xmi:id="_loHrwJ-BEeGw9ZRnaFfEZQ">
                 <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
               </generalization>
@@ -4673,6 +4656,9 @@ Required conditionally if procedure code is intravenous catheterization (E303)</
                 <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
               </ownedAttribute>
               <ownedAttribute xmi:id="_mwgQIZ-BEeGw9ZRnaFfEZQ" name="value" visibility="private" aggregation="composite">
+                <ownedComment xmi:id="_ayRNoENCEeKBoM5tGvrHVQ">
+                  <body>NEMSIS Trace: EResponse.16</body>
+                </ownedComment>
                 <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_EaTNsDxaEd6JwqSGecoePg"/>
                 <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_tc6dwJ-BEeGw9ZRnaFfEZQ" value="1"/>
                 <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_tc6dwZ-BEeGw9ZRnaFfEZQ" value="1"/>
@@ -4688,9 +4674,6 @@ Required conditionally if procedure code is intravenous catheterization (E303)</
               <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_HFVL8J-OEeGorI3CPDW2ww" value="1"/>
             </ownedAttribute>
             <nestedClassifier xmi:type="uml:Class" xmi:id="_sPMP9p-NEeGorI3CPDW2ww" name="EMSDispatchLocationLatitude">
-              <ownedComment xmi:id="_sPMP95-NEeGorI3CPDW2ww">
-                <body>NEMSIS Trace: EResponse.17</body>
-              </ownedComment>
               <generalization xmi:id="_sPMP-J-NEeGorI3CPDW2ww">
                 <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
               </generalization>
@@ -4699,7 +4682,8 @@ Required conditionally if procedure code is intravenous catheterization (E303)</
               </ownedAttribute>
               <ownedAttribute xmi:id="_sPMP-p-NEeGorI3CPDW2ww" name="value" visibility="private" aggregation="composite">
                 <ownedComment xmi:id="_-ec1sJ-NEeGorI3CPDW2ww">
-                  <body>UCUM units SHOULD be &quot;deg&quot;. This may require conversion from a parsed &quot;degree + minutes&quot; representation to a decimal representation.</body>
+                  <body>NEMSIS Trace: EResponse.17&#xD;
+UCUM units SHOULD be &quot;deg&quot;. This may require conversion from a parsed &quot;degree + minutes&quot; representation to a decimal representation.</body>
                 </ownedComment>
                 <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_3mPzYD59Ed6cla2oXsPtlA"/>
                 <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_sPMP-5-NEeGorI3CPDW2ww" value="1"/>
@@ -4717,9 +4701,6 @@ Required conditionally if procedure code is intravenous catheterization (E303)</
               <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_wRCcsEcKEd6besF9iFIJkQ"/>
             </ownedAttribute>
             <nestedClassifier xmi:type="uml:Class" xmi:id="_UGLMFZ-OEeGorI3CPDW2ww" name="EMSDispatchLocationLongitude">
-              <ownedComment xmi:id="_UGLMFp-OEeGorI3CPDW2ww">
-                <body>NEMSIS Trace: EResponse.17</body>
-              </ownedComment>
               <generalization xmi:id="_UGLMF5-OEeGorI3CPDW2ww">
                 <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
               </generalization>
@@ -4728,7 +4709,8 @@ Required conditionally if procedure code is intravenous catheterization (E303)</
               </ownedAttribute>
               <ownedAttribute xmi:id="_UGLMGZ-OEeGorI3CPDW2ww" name="value" visibility="private" aggregation="composite">
                 <ownedComment xmi:id="_UGLMGp-OEeGorI3CPDW2ww">
-                  <body>UCUM units SHOULD be &quot;deg&quot;. This may require conversion from a parsed &quot;degree + minutes&quot; representation to a decimal representation.</body>
+                  <body>NEMSIS Trace: EResponse.17&#xD;
+UCUM units SHOULD be &quot;deg&quot;. This may require conversion from a parsed &quot;degree + minutes&quot; representation to a decimal representation.</body>
                 </ownedComment>
                 <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_3mPzYD59Ed6cla2oXsPtlA"/>
                 <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_UGLMG5-OEeGorI3CPDW2ww" value="1"/>
@@ -4769,9 +4751,6 @@ Required conditionally if procedure code is intravenous catheterization (E303)</
               <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_YKKvgZ-aEeGorI3CPDW2ww" value="1"/>
             </ownedAttribute>
             <nestedClassifier xmi:type="uml:Class" xmi:id="_k-cIsJ-ZEeGorI3CPDW2ww" name="EMSResponseBeginningOdometerReading">
-              <ownedComment xmi:id="__PVpoJ-ZEeGorI3CPDW2ww">
-                <body>NEMSIS Trace: EResponse.19</body>
-              </ownedComment>
               <generalization xmi:id="_lfuQ0J-ZEeGorI3CPDW2ww">
                 <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
               </generalization>
@@ -4780,7 +4759,8 @@ Required conditionally if procedure code is intravenous catheterization (E303)</
               </ownedAttribute>
               <ownedAttribute xmi:id="_mrSsEZ-ZEeGorI3CPDW2ww" name="value" visibility="private" aggregation="composite">
                 <ownedComment xmi:id="_vBfiAJ-ZEeGorI3CPDW2ww">
-                  <body>UCUM units SHOULD be &quot;[mi_i]&quot;</body>
+                  <body>NEMSIS Trace: EResponse.19&#xD;
+UCUM units SHOULD be &quot;[mi_i]&quot;</body>
                 </ownedComment>
                 <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_3mPzYD59Ed6cla2oXsPtlA"/>
                 <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_rZfgkJ-ZEeGorI3CPDW2ww" value="1"/>
@@ -4797,9 +4777,6 @@ Required conditionally if procedure code is intravenous catheterization (E303)</
               <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_vlo7cZ-aEeGorI3CPDW2ww" value="1"/>
             </ownedAttribute>
             <nestedClassifier xmi:type="uml:Class" xmi:id="_ib1zpZ-aEeGorI3CPDW2ww" name="EMSResponseOnSceneOdometerReading">
-              <ownedComment xmi:id="_ib1zpp-aEeGorI3CPDW2ww">
-                <body>NEMSIS Trace: EResponse.20</body>
-              </ownedComment>
               <generalization xmi:id="_ib1zp5-aEeGorI3CPDW2ww">
                 <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
               </generalization>
@@ -4808,7 +4785,8 @@ Required conditionally if procedure code is intravenous catheterization (E303)</
               </ownedAttribute>
               <ownedAttribute xmi:id="_ib1zqZ-aEeGorI3CPDW2ww" name="value" visibility="private" aggregation="composite">
                 <ownedComment xmi:id="_ib1zqp-aEeGorI3CPDW2ww">
-                  <body>UCUM units SHOULD be &quot;[mi_i]&quot;</body>
+                  <body>NEMSIS Trace: EResponse.20&#xD;
+UCUM units SHOULD be &quot;[mi_i]&quot;</body>
                 </ownedComment>
                 <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_3mPzYD59Ed6cla2oXsPtlA"/>
                 <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ib1zq5-aEeGorI3CPDW2ww" value="1"/>
@@ -4825,9 +4803,6 @@ Required conditionally if procedure code is intravenous catheterization (E303)</
               <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_LJt7gZ-bEeGorI3CPDW2ww" value="1"/>
             </ownedAttribute>
             <nestedClassifier xmi:type="uml:Class" xmi:id="_7kghNZ-aEeGorI3CPDW2ww" name="EMSResponseDestinationOdometerReading">
-              <ownedComment xmi:id="_7kghNp-aEeGorI3CPDW2ww">
-                <body>NEMSIS Trace: EResponse.21</body>
-              </ownedComment>
               <generalization xmi:id="_7kghN5-aEeGorI3CPDW2ww">
                 <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
               </generalization>
@@ -4836,7 +4811,8 @@ Required conditionally if procedure code is intravenous catheterization (E303)</
               </ownedAttribute>
               <ownedAttribute xmi:id="_7kghOZ-aEeGorI3CPDW2ww" name="value" visibility="private" aggregation="composite">
                 <ownedComment xmi:id="_7kghOp-aEeGorI3CPDW2ww">
-                  <body>UCUM units SHOULD be &quot;[mi_i]&quot;</body>
+                  <body>NEMSIS Trace: EResponse.21&#xD;
+UCUM units SHOULD be &quot;[mi_i]&quot;</body>
                 </ownedComment>
                 <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_3mPzYD59Ed6cla2oXsPtlA"/>
                 <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7kghO5-aEeGorI3CPDW2ww" value="1"/>
@@ -4853,9 +4829,6 @@ Required conditionally if procedure code is intravenous catheterization (E303)</
               <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_iynSQMcVEeGjDJAyT0XW9Q" value="1"/>
             </ownedAttribute>
             <nestedClassifier xmi:type="uml:Class" xmi:id="_TCM6tZ-bEeGorI3CPDW2ww" name="EMSResponseEndingOdometerReading">
-              <ownedComment xmi:id="_TCM6tp-bEeGorI3CPDW2ww">
-                <body>NEMSIS Trace: EResponse.22</body>
-              </ownedComment>
               <generalization xmi:id="_TCM6t5-bEeGorI3CPDW2ww">
                 <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
               </generalization>
@@ -4864,7 +4837,8 @@ Required conditionally if procedure code is intravenous catheterization (E303)</
               </ownedAttribute>
               <ownedAttribute xmi:id="_TCM6uZ-bEeGorI3CPDW2ww" name="value" visibility="private" aggregation="composite">
                 <ownedComment xmi:id="_TCM6up-bEeGorI3CPDW2ww">
-                  <body>UCUM units SHOULD be &quot;[mi_i]&quot;</body>
+                  <body>NEMSIS Trace: EResponse.22&#xD;
+UCUM units SHOULD be &quot;[mi_i]&quot;</body>
                 </ownedComment>
                 <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_3mPzYD59Ed6cla2oXsPtlA"/>
                 <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_TCM6u5-bEeGorI3CPDW2ww" value="1"/>
@@ -4881,9 +4855,6 @@ Required conditionally if procedure code is intravenous catheterization (E303)</
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_fnFIBMH_EeGOXu0EprM3pw" value="1"/>
         </ownedAttribute>
         <nestedClassifier xmi:type="uml:Class" xmi:id="_l_V6IJ-bEeGorI3CPDW2ww" name="EMSResponseModeToScene">
-          <ownedComment xmi:id="_ezyc8J-cEeGorI3CPDW2ww">
-            <body>NEMSIS Trace: EResponse.23</body>
-          </ownedComment>
           <generalization xmi:id="_mlNAQJ-bEeGorI3CPDW2ww">
             <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
           </generalization>
@@ -4891,6 +4862,9 @@ Required conditionally if procedure code is intravenous catheterization (E303)</
             <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
           </ownedAttribute>
           <ownedAttribute xmi:id="_ngAboJ-bEeGorI3CPDW2ww" name="value" visibility="private" aggregation="composite">
+            <ownedComment xmi:id="_tKQRkENCEeKBoM5tGvrHVQ">
+              <body>NEMSIS Trace: EResponse.23</body>
+            </ownedComment>
             <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_phCfQJ-bEeGorI3CPDW2ww" value="1"/>
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_phCfQZ-bEeGorI3CPDW2ww" value="1"/>
@@ -5019,16 +4993,19 @@ Required conditionally if procedure code is intravenous catheterization (E303)</
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_kuzXJMH8EeGOXu0EprM3pw" value="1"/>
         </ownedAttribute>
         <nestedClassifier xmi:type="uml:Class" xmi:id="_Dfaa4J-eEeGorI3CPDW2ww" name="EMSNumberOfPatientsObservation">
-          <ownedComment xmi:id="_RCXpkJ-eEeGorI3CPDW2ww">
-            <body>NEMSIS Trace: EDisposition.11</body>
-          </ownedComment>
           <generalization xmi:id="_D6EWkJ-eEeGorI3CPDW2ww">
+            <ownedComment xmi:id="_p4JPUEM8EeKBoM5tGvrHVQ">
+              <body>NEMSIS Trace: EDisposition.11</body>
+            </ownedComment>
             <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
           </generalization>
           <ownedAttribute xmi:id="_E4hi4J-eEeGorI3CPDW2ww" name="code" visibility="private" aggregation="composite">
             <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
           </ownedAttribute>
           <ownedAttribute xmi:id="_E4hi4Z-eEeGorI3CPDW2ww" name="value" visibility="private" aggregation="composite">
+            <ownedComment xmi:id="_fzZ-gEM9EeKBoM5tGvrHVQ">
+              <body>NEMSIS Trace: eScene.06</body>
+            </ownedComment>
             <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_co8uMD53Ed6cla2oXsPtlA"/>
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Ls8dAJ-eEeGorI3CPDW2ww" value="1"/>
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Ls8dAZ-eEeGorI3CPDW2ww" value="1"/>
@@ -5042,9 +5019,6 @@ Required conditionally if procedure code is intravenous catheterization (E303)</
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_lnVhpMH8EeGOXu0EprM3pw" value="1"/>
         </ownedAttribute>
         <nestedClassifier xmi:type="uml:Class" xmi:id="_j3YnxZ-eEeGorI3CPDW2ww" name="EMSIncidentDispositionObservation">
-          <ownedComment xmi:id="_j3Ynxp-eEeGorI3CPDW2ww">
-            <body>NEMSIS Trace: EDisposition.12</body>
-          </ownedComment>
           <generalization xmi:id="_j3Ynx5-eEeGorI3CPDW2ww">
             <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
           </generalization>
@@ -5052,6 +5026,9 @@ Required conditionally if procedure code is intravenous catheterization (E303)</
             <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
           </ownedAttribute>
           <ownedAttribute xmi:id="_j3YnyZ-eEeGorI3CPDW2ww" name="value" visibility="private" aggregation="composite">
+            <ownedComment xmi:id="_sDJuUEM8EeKBoM5tGvrHVQ">
+              <body>NEMSIS Trace: EDisposition.12</body>
+            </ownedComment>
             <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_j3Ynyp-eEeGorI3CPDW2ww" value="1"/>
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_j3Yny5-eEeGorI3CPDW2ww" value="1"/>
@@ -5065,16 +5042,19 @@ Required conditionally if procedure code is intravenous catheterization (E303)</
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_m84YRMH8EeGOXu0EprM3pw" value="1"/>
         </ownedAttribute>
         <nestedClassifier xmi:type="uml:Class" xmi:id="_nv-0gp-fEeGorI3CPDW2ww" name="EMSTransportModeObservation">
-          <ownedComment xmi:id="_nv-0g5-fEeGorI3CPDW2ww">
-            <body>NEMSIS Trace: EDisposition.17</body>
-          </ownedComment>
           <generalization xmi:id="_nv-0hJ-fEeGorI3CPDW2ww">
+            <ownedComment xmi:id="_uDDJgEM8EeKBoM5tGvrHVQ">
+              <body>NEMSIS Trace: EDisposition.17</body>
+            </ownedComment>
             <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
           </generalization>
           <ownedAttribute xmi:id="_nv-0hZ-fEeGorI3CPDW2ww" name="code" visibility="private" aggregation="composite">
             <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
           </ownedAttribute>
           <ownedAttribute xmi:id="_nv-0hp-fEeGorI3CPDW2ww" name="value" visibility="private" aggregation="composite">
+            <ownedComment xmi:id="_oTlP0EM9EeKBoM5tGvrHVQ">
+              <body>NEMSIS Trace: EDisposition.17</body>
+            </ownedComment>
             <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_nv-0h5-fEeGorI3CPDW2ww" value="1"/>
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_nv-0iJ-fEeGorI3CPDW2ww" value="1"/>
@@ -5088,9 +5068,6 @@ Required conditionally if procedure code is intravenous catheterization (E303)</
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0ooWkMH8EeGOXu0EprM3pw" value="1"/>
         </ownedAttribute>
         <nestedClassifier xmi:type="uml:Class" xmi:id="_EagUtZ-fEeGorI3CPDW2ww" name="EMSTransportMethodObservation">
-          <ownedComment xmi:id="_EagUtp-fEeGorI3CPDW2ww">
-            <body>NEMSIS Trace: EDisposition.16</body>
-          </ownedComment>
           <generalization xmi:id="_EagUt5-fEeGorI3CPDW2ww">
             <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
           </generalization>
@@ -5098,6 +5075,9 @@ Required conditionally if procedure code is intravenous catheterization (E303)</
             <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
           </ownedAttribute>
           <ownedAttribute xmi:id="_EagUuZ-fEeGorI3CPDW2ww" name="value" visibility="private" aggregation="composite">
+            <ownedComment xmi:id="_wAxacEM8EeKBoM5tGvrHVQ">
+              <body>NEMSIS Trace: EDisposition.16</body>
+            </ownedComment>
             <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_EagUup-fEeGorI3CPDW2ww" value="1"/>
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_EagUu5-fEeGorI3CPDW2ww" value="1"/>
@@ -5111,16 +5091,19 @@ Required conditionally if procedure code is intravenous catheterization (E303)</
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_rkQzFMH8EeGOXu0EprM3pw" value="1"/>
         </ownedAttribute>
         <nestedClassifier xmi:type="uml:Class" xmi:id="_cm1D5Z-hEeGorI3CPDW2ww" name="EMSReasonForChoosingDestinationObservation">
-          <ownedComment xmi:id="_cm1q8J-hEeGorI3CPDW2ww">
-            <body>NEMSIS Trace: EDisposition.20</body>
-          </ownedComment>
           <generalization xmi:id="_cm1q8Z-hEeGorI3CPDW2ww">
+            <ownedComment xmi:id="_xob70EM8EeKBoM5tGvrHVQ">
+              <body>NEMSIS Trace: EDisposition.20</body>
+            </ownedComment>
             <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
           </generalization>
           <ownedAttribute xmi:id="_cm1q8p-hEeGorI3CPDW2ww" name="code" visibility="private" aggregation="composite">
             <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
           </ownedAttribute>
           <ownedAttribute xmi:id="_cm1q85-hEeGorI3CPDW2ww" name="value" visibility="private" aggregation="composite">
+            <ownedComment xmi:id="_uvrwkEM9EeKBoM5tGvrHVQ">
+              <body>NEMSIS Trace: EDisposition.20</body>
+            </ownedComment>
             <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_cm1q9J-hEeGorI3CPDW2ww" value="1"/>
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_cm1q9Z-hEeGorI3CPDW2ww" value="1"/>
@@ -5144,6 +5127,9 @@ Required conditionally if procedure code is intravenous catheterization (E303)</
             <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
           </ownedAttribute>
           <ownedAttribute xmi:id="_083aqZ-hEeGorI3CPDW2ww" name="value" visibility="private" aggregation="composite">
+            <ownedComment xmi:id="_LVXNAEM9EeKBoM5tGvrHVQ">
+              <body>NEMSIS Trace: EDisposition.24</body>
+            </ownedComment>
             <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_r1WssDxjEd6JwqSGecoePg"/>
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_083aqp-hEeGorI3CPDW2ww" value="1"/>
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_083aq5-hEeGorI3CPDW2ww" value="1"/>
@@ -5166,9 +5152,6 @@ Required if value is TRUE</body>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_tSqOlMH8EeGOXu0EprM3pw" value="1"/>
         </ownedAttribute>
         <nestedClassifier xmi:type="uml:Class" xmi:id="_Q4zL9Z-gEeGorI3CPDW2ww" name="EMSPatientConditionChangeAtDestinationObservation">
-          <ownedComment xmi:id="_Q4zL9p-gEeGorI3CPDW2ww">
-            <body>NEMSIS Trace: EDisposition.19</body>
-          </ownedComment>
           <generalization xmi:id="_Q4zL95-gEeGorI3CPDW2ww">
             <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
           </generalization>
@@ -5176,6 +5159,9 @@ Required if value is TRUE</body>
             <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
           </ownedAttribute>
           <ownedAttribute xmi:id="_Q4zL-Z-gEeGorI3CPDW2ww" name="value" visibility="private" aggregation="composite">
+            <ownedComment xmi:id="_RKQj0EM9EeKBoM5tGvrHVQ">
+              <body>NEMSIS Trace: EDisposition.19</body>
+            </ownedComment>
             <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Q4zL-p-gEeGorI3CPDW2ww" value="1"/>
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Q4zL-5-gEeGorI3CPDW2ww" value="1"/>
@@ -5217,9 +5203,6 @@ Required if value is TRUE</body>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_fgB6RMH-EeGOXu0EprM3pw" value="1"/>
         </ownedAttribute>
         <nestedClassifier xmi:type="uml:Class" xmi:id="_p4XEAJ-kEeGorI3CPDW2ww" name="EMSAdverseEventIndicator">
-          <ownedComment xmi:id="_BbQtoJ-lEeGorI3CPDW2ww">
-            <body>NEMSIS Trace: EOther.05</body>
-          </ownedComment>
           <generalization xmi:id="_q4E0kJ-kEeGorI3CPDW2ww">
             <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
           </generalization>
@@ -5227,6 +5210,9 @@ Required if value is TRUE</body>
             <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
           </ownedAttribute>
           <ownedAttribute xmi:id="_r13SgJ-kEeGorI3CPDW2ww" name="value" visibility="private" aggregation="composite">
+            <ownedComment xmi:id="_ZJ5zkENAEeKBoM5tGvrHVQ">
+              <body>NEMSIS Trace: EOther.05</body>
+            </ownedComment>
             <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_r1WssDxjEd6JwqSGecoePg"/>
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_uCwA0J-kEeGorI3CPDW2ww" value="1"/>
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_uCwn4J-kEeGorI3CPDW2ww" value="1"/>
@@ -5240,9 +5226,6 @@ Required if value is TRUE</body>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_gGtfxMH-EeGOXu0EprM3pw" value="1"/>
         </ownedAttribute>
         <nestedClassifier xmi:type="uml:Class" xmi:id="_gU4tMJ-lEeGorI3CPDW2ww" name="EMSAdverseEventTypeObservation">
-          <ownedComment xmi:id="_3M-fQJ-lEeGorI3CPDW2ww">
-            <body>NEMSIS Trace: EOther.06</body>
-          </ownedComment>
           <generalization xmi:id="_gwN-UJ-lEeGorI3CPDW2ww">
             <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
           </generalization>
@@ -5250,6 +5233,9 @@ Required if value is TRUE</body>
             <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
           </ownedAttribute>
           <ownedAttribute xmi:id="_hjDJcZ-lEeGorI3CPDW2ww" name="value" visibility="private" aggregation="composite">
+            <ownedComment xmi:id="_cFOVMENAEeKBoM5tGvrHVQ">
+              <body>NEMSIS Trace: EOther.06</body>
+            </ownedComment>
             <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_k71qMJ-lEeGorI3CPDW2ww" value="1"/>
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_k71qMZ-lEeGorI3CPDW2ww" value="1"/>
@@ -5291,9 +5277,6 @@ Required if value is TRUE</body>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Q0ox9MIAEeGOXu0EprM3pw" value="1"/>
         </ownedAttribute>
         <nestedClassifier xmi:type="uml:Class" xmi:id="_rDpggp-mEeGorI3CPDW2ww" name="EMSProtocolObservation">
-          <ownedComment xmi:id="_rDpgg5-mEeGorI3CPDW2ww">
-            <body>NEMSIS Trace: EProtocols.01</body>
-          </ownedComment>
           <generalization xmi:id="_rDpghJ-mEeGorI3CPDW2ww">
             <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
           </generalization>
@@ -5301,6 +5284,9 @@ Required if value is TRUE</body>
             <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
           </ownedAttribute>
           <ownedAttribute xmi:id="_rDpghp-mEeGorI3CPDW2ww" name="value" visibility="private" aggregation="composite">
+            <ownedComment xmi:id="_83ZVUENBEeKBoM5tGvrHVQ">
+              <body>NEMSIS Trace: EProtocols.01</body>
+            </ownedComment>
             <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_rDpgh5-mEeGorI3CPDW2ww" value="1"/>
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_rDpgiJ-mEeGorI3CPDW2ww" value="1"/>
@@ -5317,9 +5303,6 @@ Required if value is TRUE</body>
               <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_LD-psTZmEeKLbZOfNmD-hA" value="1"/>
             </ownedAttribute>
             <nestedClassifier xmi:type="uml:Class" xmi:id="_MjD2kJ-nEeGorI3CPDW2ww" name="EMSProtocolAgeCategory">
-              <ownedComment xmi:id="_QqEvQJ-nEeGorI3CPDW2ww">
-                <body>NEMSIS Trace: EProtocols.02</body>
-              </ownedComment>
               <generalization xmi:id="_NEM0wJ-nEeGorI3CPDW2ww">
                 <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
               </generalization>
@@ -5327,6 +5310,9 @@ Required if value is TRUE</body>
                 <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
               </ownedAttribute>
               <ownedAttribute xmi:id="_N9AsEZ-nEeGorI3CPDW2ww" name="value" visibility="private" aggregation="composite">
+                <ownedComment xmi:id="_-eiSQENBEeKBoM5tGvrHVQ">
+                  <body>NEMSIS Trace: EProtocols.02</body>
+                </ownedComment>
                 <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
                 <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_TK_M0J-nEeGorI3CPDW2ww" value="1"/>
                 <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_TK_z4J-nEeGorI3CPDW2ww" value="1"/>
@@ -5342,9 +5328,6 @@ Required if value is TRUE</body>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_SsZk1MIAEeGOXu0EprM3pw" value="1"/>
         </ownedAttribute>
         <nestedClassifier xmi:type="uml:Class" xmi:id="_n-zaBZ-nEeGorI3CPDW2ww" name="EMSCandidatePatientRegistryType">
-          <ownedComment xmi:id="_n-zaBp-nEeGorI3CPDW2ww">
-            <body>NEMSIS Trace: EOther.02</body>
-          </ownedComment>
           <generalization xmi:id="_n-zaB5-nEeGorI3CPDW2ww">
             <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
           </generalization>
@@ -5352,6 +5335,9 @@ Required if value is TRUE</body>
             <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
           </ownedAttribute>
           <ownedAttribute xmi:id="_n-zaCZ-nEeGorI3CPDW2ww" name="value" visibility="private" aggregation="composite">
+            <ownedComment xmi:id="_ArTEwENCEeKBoM5tGvrHVQ">
+              <body>NEMSIS Trace: EOther.02</body>
+            </ownedComment>
             <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_n-zaCp-nEeGorI3CPDW2ww" value="1"/>
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_n-zaC5-nEeGorI3CPDW2ww" value="1"/>
@@ -5396,9 +5382,6 @@ Required if value is TRUE</body>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_aYPWkDZpEeKLbZOfNmD-hA"/>
         </ownedAttribute>
         <nestedClassifier xmi:type="uml:Class" xmi:id="_Ox86UKK4EeGOxth0BgV-QA" name="EMSFirstUnitIndicator">
-          <ownedComment xmi:id="_hlTEkKK4EeGOxth0BgV-QA">
-            <body>NEMSIS Trace: EScene.01</body>
-          </ownedComment>
           <generalization xmi:id="_PFao4KK4EeGOxth0BgV-QA">
             <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
           </generalization>
@@ -5406,15 +5389,15 @@ Required if value is TRUE</body>
             <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
           </ownedAttribute>
           <ownedAttribute xmi:id="_P-cioaK4EeGOxth0BgV-QA" name="value" visibility="private" aggregation="composite">
+            <ownedComment xmi:id="_vc1_QENCEeKBoM5tGvrHVQ">
+              <body>NEMSIS Trace: EScene.01</body>
+            </ownedComment>
             <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_r1WssDxjEd6JwqSGecoePg"/>
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_caInQKK4EeGOxth0BgV-QA" value="1"/>
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_caInQaK4EeGOxth0BgV-QA" value="1"/>
           </ownedAttribute>
         </nestedClassifier>
         <nestedClassifier xmi:type="uml:Class" xmi:id="_JNrkAKK5EeGOxth0BgV-QA" name="EMSFirstUnitOnScene">
-          <ownedComment xmi:id="_faoHUKK5EeGOxth0BgV-QA">
-            <body>NEMSIS Trace: EScene.02</body>
-          </ownedComment>
           <generalization xmi:id="_Jj_yQKK5EeGOxth0BgV-QA">
             <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
           </generalization>
@@ -5422,6 +5405,9 @@ Required if value is TRUE</body>
             <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
           </ownedAttribute>
           <ownedAttribute xmi:id="_KR-SkaK5EeGOxth0BgV-QA" name="value" visibility="private" aggregation="composite">
+            <ownedComment xmi:id="_w8z9MENCEeKBoM5tGvrHVQ">
+              <body>NEMSIS Trace: EScene.02</body>
+            </ownedComment>
             <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_EaTNsDxaEd6JwqSGecoePg"/>
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NcE3EKK5EeGOxth0BgV-QA" value="1"/>
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NcE3EaK5EeGOxth0BgV-QA" value="1"/>
@@ -5438,9 +5424,6 @@ Required if value is TRUE</body>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_nPA0sTZpEeKLbZOfNmD-hA"/>
         </ownedAttribute>
         <nestedClassifier xmi:type="uml:Class" xmi:id="_wPLCkKK5EeGOxth0BgV-QA" name="EMSScenePatientCount">
-          <ownedComment xmi:id="_4JWq4KK5EeGOxth0BgV-QA">
-            <body>NEMSIS Trace: EScene.06</body>
-          </ownedComment>
           <generalization xmi:id="_wlAvsKK5EeGOxth0BgV-QA">
             <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
           </generalization>
@@ -5448,15 +5431,15 @@ Required if value is TRUE</body>
             <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
           </ownedAttribute>
           <ownedAttribute xmi:id="_xp-MoaK5EeGOxth0BgV-QA" name="value" visibility="private" aggregation="composite">
+            <ownedComment xmi:id="_y88B4ENCEeKBoM5tGvrHVQ">
+              <body>NEMSIS Trace: EScene.06</body>
+            </ownedComment>
             <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_co8uMD53Ed6cla2oXsPtlA"/>
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_zgPKsKK5EeGOxth0BgV-QA" value="1"/>
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zgPKsaK5EeGOxth0BgV-QA" value="1"/>
           </ownedAttribute>
         </nestedClassifier>
         <nestedClassifier xmi:type="uml:Class" xmi:id="_E-SEAKK8EeGOxth0BgV-QA" name="EMSMassCasualtyIndicator">
-          <ownedComment xmi:id="_N1-dcKK8EeGOxth0BgV-QA">
-            <body>NEMSIS Trace: EScene.04</body>
-          </ownedComment>
           <generalization xmi:id="_FW5YUKK8EeGOxth0BgV-QA">
             <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
           </generalization>
@@ -5464,6 +5447,9 @@ Required if value is TRUE</body>
             <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
           </ownedAttribute>
           <ownedAttribute xmi:id="_GKkQ8KK8EeGOxth0BgV-QA" name="value" visibility="private" aggregation="composite">
+            <ownedComment xmi:id="_0MN4cENCEeKBoM5tGvrHVQ">
+              <body>NEMSIS Trace: EScene.04</body>
+            </ownedComment>
             <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_r1WssDxjEd6JwqSGecoePg"/>
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_LtP2YKK8EeGOxth0BgV-QA" value="1"/>
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_LtP2YaK8EeGOxth0BgV-QA" value="1"/>
@@ -5532,9 +5518,6 @@ Required if value is TRUE</body>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_sW_idMH6EeGOXu0EprM3pw"/>
         </ownedAttribute>
         <nestedClassifier xmi:type="uml:Class" xmi:id="_KEZzkKg-EeG79fAvHk6H4g" name="EMSComplaint">
-          <ownedComment xmi:id="_VWXQAKg-EeG79fAvHk6H4g">
-            <body>NEMSIS Trace: ESituation.04</body>
-          </ownedComment>
           <generalization xmi:id="_Ke-PsKg-EeG79fAvHk6H4g">
             <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
           </generalization>
@@ -5542,6 +5525,9 @@ Required if value is TRUE</body>
             <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
           </ownedAttribute>
           <ownedAttribute xmi:id="_LZA2EKg-EeG79fAvHk6H4g" name="value" visibility="private" aggregation="composite">
+            <ownedComment xmi:id="_3kusYENCEeKBoM5tGvrHVQ">
+              <body>NEMSIS Trace: ESituation.04</body>
+            </ownedComment>
             <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_EaTNsDxaEd6JwqSGecoePg"/>
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_P06AUKhDEeG79fAvHk6H4g" value="1"/>
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_P06AUahDEeG79fAvHk6H4g"/>
@@ -5573,9 +5559,6 @@ Complaint site is required if complaint is type &quot;Chief complaint&quot;</bod
               <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_UpR1oahAEeG79fAvHk6H4g" value="1"/>
             </ownedAttribute>
             <nestedClassifier xmi:type="uml:Class" xmi:id="_4ZsacKg_EeG79fAvHk6H4g" name="EMSComplaintType">
-              <ownedComment xmi:id="_2gfAoKhAEeG79fAvHk6H4g">
-                <body>NEMSIS Trace: ESituation.03</body>
-              </ownedComment>
               <generalization xmi:id="_4uqk4Kg_EeG79fAvHk6H4g">
                 <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
               </generalization>
@@ -5583,6 +5566,9 @@ Complaint site is required if complaint is type &quot;Chief complaint&quot;</bod
                 <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
               </ownedAttribute>
               <ownedAttribute xmi:id="_5cbCwag_EeG79fAvHk6H4g" name="value" visibility="private" aggregation="composite">
+                <ownedComment xmi:id="_5hEdQENCEeKBoM5tGvrHVQ">
+                  <body>NEMSIS Trace: ESituation.03</body>
+                </ownedComment>
                 <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
                 <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_VqmvwKhAEeG79fAvHk6H4g" value="1"/>
                 <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_VqmvwahAEeG79fAvHk6H4g" value="1"/>
@@ -5598,9 +5584,6 @@ Complaint site is required if complaint is type &quot;Chief complaint&quot;</bod
               <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_rxwNEahAEeG79fAvHk6H4g" value="1"/>
             </ownedAttribute>
             <nestedClassifier xmi:type="uml:Class" xmi:id="_g93MsKhAEeG79fAvHk6H4g" name="EMSComplaintDuration">
-              <ownedComment xmi:id="_znZ6sKhAEeG79fAvHk6H4g">
-                <body>NEMSIS Trace: ESituation.05, 06</body>
-              </ownedComment>
               <generalization xmi:id="_hRO0oKhAEeG79fAvHk6H4g">
                 <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
               </generalization>
@@ -5609,7 +5592,8 @@ Complaint site is required if complaint is type &quot;Chief complaint&quot;</bod
               </ownedAttribute>
               <ownedAttribute xmi:id="_iC3s8KhAEeG79fAvHk6H4g" name="value" visibility="private" aggregation="composite">
                 <ownedComment xmi:id="_WdS7gKhBEeG79fAvHk6H4g">
-                  <body>Units SHALL be selected from UCUM time units (i.e., s, min, h, d, wk, mo, a)</body>
+                  <body>NEMSIS Trace: ESituation.05, 06&#xD;
+Units SHALL be selected from UCUM time units (i.e., s, min, h, d, wk, mo, a)</body>
                 </ownedComment>
                 <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_3mPzYD59Ed6cla2oXsPtlA"/>
                 <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_j9PH4KhAEeG79fAvHk6H4g" value="1"/>
@@ -5629,9 +5613,6 @@ Complaint site is required if complaint is type &quot;Chief complaint&quot;</bod
               <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_jk6nIahDEeG79fAvHk6H4g" value="1"/>
             </ownedAttribute>
             <nestedClassifier xmi:type="uml:Class" xmi:id="_YMy4UKhDEeG79fAvHk6H4g" name="EMSComplaintOrganSystem">
-              <ownedComment xmi:id="_gShh8KhGEeG79fAvHk6H4g">
-                <body>NEMSIS Trace: ESituation.08</body>
-              </ownedComment>
               <generalization xmi:id="_YmnGgKhDEeG79fAvHk6H4g">
                 <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
               </generalization>
@@ -5639,6 +5620,9 @@ Complaint site is required if complaint is type &quot;Chief complaint&quot;</bod
                 <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
               </ownedAttribute>
               <ownedAttribute xmi:id="_ZeDE0KhDEeG79fAvHk6H4g" name="value" visibility="private" aggregation="composite">
+                <ownedComment xmi:id="_9txuQENCEeKBoM5tGvrHVQ">
+                  <body>NEMSIS Trace: ESituation.08</body>
+                </ownedComment>
                 <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
                 <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_a6-V0KhDEeG79fAvHk6H4g" value="1"/>
                 <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_a6-84KhDEeG79fAvHk6H4g" value="1"/>
@@ -5883,9 +5867,6 @@ Complaint site is required if complaint is type &quot;Chief complaint&quot;</bod
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_YDf6gDZuEeKLbZOfNmD-hA"/>
         </ownedAttribute>
         <nestedClassifier xmi:type="uml:Class" xmi:id="_1u74sKxCEeGLnrdLmr5TaQ" name="EMSCallTime">
-          <ownedComment xmi:id="_HmSUwKxDEeGLnrdLmr5TaQ">
-            <body>NEMSIS Trace: ETimes.01</body>
-          </ownedComment>
           <generalization xmi:id="_4A3fEKxCEeGLnrdLmr5TaQ">
             <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
           </generalization>
@@ -5893,16 +5874,15 @@ Complaint site is required if complaint is type &quot;Chief complaint&quot;</bod
             <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
           </ownedAttribute>
           <ownedAttribute xmi:id="_9Kg5cKxCEeGLnrdLmr5TaQ" name="value" visibility="private" aggregation="composite">
+            <ownedComment xmi:id="_KsMFcENDEeKBoM5tGvrHVQ">
+              <body>NEMSIS Trace: ETimes.01</body>
+            </ownedComment>
             <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_4ysYYD59Ed6cla2oXsPtlA"/>
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="__y1mkKxCEeGLnrdLmr5TaQ" value="1"/>
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="__y2NoKxCEeGLnrdLmr5TaQ" value="1"/>
           </ownedAttribute>
         </nestedClassifier>
         <nestedClassifier xmi:type="uml:Class" xmi:id="_JKerYKxDEeGLnrdLmr5TaQ" name="EMSUnitNotifiedTime">
-          <ownedComment xmi:id="_JKerYaxDEeGLnrdLmr5TaQ">
-            <body>NEMSIS Trace: ETimes.03&#xD;
-This is the value represented in the header for the encompassing encounter</body>
-          </ownedComment>
           <generalization xmi:id="_JKerYqxDEeGLnrdLmr5TaQ">
             <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
           </generalization>
@@ -5910,15 +5890,16 @@ This is the value represented in the header for the encompassing encounter</body
             <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
           </ownedAttribute>
           <ownedAttribute xmi:id="_JKerZKxDEeGLnrdLmr5TaQ" name="value" visibility="private" aggregation="composite">
+            <ownedComment xmi:id="_MxVNAENDEeKBoM5tGvrHVQ">
+              <body>NEMSIS Trace: ETimes.03&#xD;
+This is the value represented in the header for the encompassing encounter</body>
+            </ownedComment>
             <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_4ysYYD59Ed6cla2oXsPtlA"/>
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_JKerZaxDEeGLnrdLmr5TaQ" value="1"/>
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_JKerZqxDEeGLnrdLmr5TaQ" value="1"/>
           </ownedAttribute>
         </nestedClassifier>
         <nestedClassifier xmi:type="uml:Class" xmi:id="_UyaX0KxDEeGLnrdLmr5TaQ" name="EMSUnitEnRouteTime">
-          <ownedComment xmi:id="_UyaX0axDEeGLnrdLmr5TaQ">
-            <body>NEMSIS Trace: ETimes.05</body>
-          </ownedComment>
           <generalization xmi:id="_UyaX0qxDEeGLnrdLmr5TaQ">
             <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
           </generalization>
@@ -5926,15 +5907,15 @@ This is the value represented in the header for the encompassing encounter</body
             <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
           </ownedAttribute>
           <ownedAttribute xmi:id="_UyaX1KxDEeGLnrdLmr5TaQ" name="value" visibility="private" aggregation="composite">
+            <ownedComment xmi:id="_OCwYoENDEeKBoM5tGvrHVQ">
+              <body>NEMSIS Trace: ETimes.05</body>
+            </ownedComment>
             <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_4ysYYD59Ed6cla2oXsPtlA"/>
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_UyaX1axDEeGLnrdLmr5TaQ" value="1"/>
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_UyaX1qxDEeGLnrdLmr5TaQ" value="1"/>
           </ownedAttribute>
         </nestedClassifier>
         <nestedClassifier xmi:type="uml:Class" xmi:id="_iGh5QKxDEeGLnrdLmr5TaQ" name="EMSUnitOnSceneTime">
-          <ownedComment xmi:id="_iGh5QaxDEeGLnrdLmr5TaQ">
-            <body>NEMSIS Trace: ETimes.06</body>
-          </ownedComment>
           <generalization xmi:id="_iGh5QqxDEeGLnrdLmr5TaQ">
             <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
           </generalization>
@@ -5942,15 +5923,15 @@ This is the value represented in the header for the encompassing encounter</body
             <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
           </ownedAttribute>
           <ownedAttribute xmi:id="_iGh5RKxDEeGLnrdLmr5TaQ" name="value" visibility="private" aggregation="composite">
+            <ownedComment xmi:id="_PN4H8ENDEeKBoM5tGvrHVQ">
+              <body>NEMSIS Trace: ETimes.06</body>
+            </ownedComment>
             <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_4ysYYD59Ed6cla2oXsPtlA"/>
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_iGh5RaxDEeGLnrdLmr5TaQ" value="1"/>
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_iGh5RqxDEeGLnrdLmr5TaQ" value="1"/>
           </ownedAttribute>
         </nestedClassifier>
         <nestedClassifier xmi:type="uml:Class" xmi:id="_yt7JUKxDEeGLnrdLmr5TaQ" name="EMSUnitAtPatienttTime">
-          <ownedComment xmi:id="_yt7JUaxDEeGLnrdLmr5TaQ">
-            <body>NEMSIS Trace: ETimes.07</body>
-          </ownedComment>
           <generalization xmi:id="_yt7JUqxDEeGLnrdLmr5TaQ">
             <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
           </generalization>
@@ -5958,15 +5939,15 @@ This is the value represented in the header for the encompassing encounter</body
             <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
           </ownedAttribute>
           <ownedAttribute xmi:id="_yt7JVKxDEeGLnrdLmr5TaQ" name="value" visibility="private" aggregation="composite">
+            <ownedComment xmi:id="_QtYy4ENDEeKBoM5tGvrHVQ">
+              <body>NEMSIS Trace: ETimes.07</body>
+            </ownedComment>
             <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_4ysYYD59Ed6cla2oXsPtlA"/>
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_yt7JVaxDEeGLnrdLmr5TaQ" value="1"/>
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_yt7JVqxDEeGLnrdLmr5TaQ" value="1"/>
           </ownedAttribute>
         </nestedClassifier>
         <nestedClassifier xmi:type="uml:Class" xmi:id="_6w124KxDEeGLnrdLmr5TaQ" name="EMSUnitLeftSceneTime">
-          <ownedComment xmi:id="_6w124axDEeGLnrdLmr5TaQ">
-            <body>NEMSIS Trace: ETimes.09</body>
-          </ownedComment>
           <generalization xmi:id="_6w124qxDEeGLnrdLmr5TaQ">
             <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
           </generalization>
@@ -5974,15 +5955,15 @@ This is the value represented in the header for the encompassing encounter</body
             <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
           </ownedAttribute>
           <ownedAttribute xmi:id="_6w125KxDEeGLnrdLmr5TaQ" name="value" visibility="private" aggregation="composite">
+            <ownedComment xmi:id="_R8AiIENDEeKBoM5tGvrHVQ">
+              <body>NEMSIS Trace: ETimes.09</body>
+            </ownedComment>
             <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_4ysYYD59Ed6cla2oXsPtlA"/>
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_6w125axDEeGLnrdLmr5TaQ" value="1"/>
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_6w125qxDEeGLnrdLmr5TaQ" value="1"/>
           </ownedAttribute>
         </nestedClassifier>
         <nestedClassifier xmi:type="uml:Class" xmi:id="_DaIA4KxEEeGLnrdLmr5TaQ" name="EMSPatientArrivedAtDestinationTime">
-          <ownedComment xmi:id="_DaIA4axEEeGLnrdLmr5TaQ">
-            <body>NEMSIS Trace: ETimes.11</body>
-          </ownedComment>
           <generalization xmi:id="_DaIA4qxEEeGLnrdLmr5TaQ">
             <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
           </generalization>
@@ -5990,15 +5971,15 @@ This is the value represented in the header for the encompassing encounter</body
             <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
           </ownedAttribute>
           <ownedAttribute xmi:id="_DaIA5KxEEeGLnrdLmr5TaQ" name="value" visibility="private" aggregation="composite">
+            <ownedComment xmi:id="_TAgsEENDEeKBoM5tGvrHVQ">
+              <body>NEMSIS Trace: ETimes.11</body>
+            </ownedComment>
             <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_4ysYYD59Ed6cla2oXsPtlA"/>
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_DaIA5axEEeGLnrdLmr5TaQ" value="1"/>
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_DaIA5qxEEeGLnrdLmr5TaQ" value="1"/>
           </ownedAttribute>
         </nestedClassifier>
         <nestedClassifier xmi:type="uml:Class" xmi:id="_KrhK4KxEEeGLnrdLmr5TaQ" name="EMSUnitBackInServiceTime">
-          <ownedComment xmi:id="_KrhK4axEEeGLnrdLmr5TaQ">
-            <body>NEMSIS Trace: ETimes.13</body>
-          </ownedComment>
           <generalization xmi:id="_KrhK4qxEEeGLnrdLmr5TaQ">
             <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
           </generalization>
@@ -6006,15 +5987,15 @@ This is the value represented in the header for the encompassing encounter</body
             <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
           </ownedAttribute>
           <ownedAttribute xmi:id="_KrhK5KxEEeGLnrdLmr5TaQ" name="value" visibility="private" aggregation="composite">
+            <ownedComment xmi:id="_UQIg4ENDEeKBoM5tGvrHVQ">
+              <body>NEMSIS Trace: ETimes.13</body>
+            </ownedComment>
             <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_4ysYYD59Ed6cla2oXsPtlA"/>
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_KrhK5axEEeGLnrdLmr5TaQ" value="1"/>
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_KrhK5qxEEeGLnrdLmr5TaQ" value="1"/>
           </ownedAttribute>
         </nestedClassifier>
         <nestedClassifier xmi:type="uml:Class" xmi:id="_UFgZEKxEEeGLnrdLmr5TaQ" name="EMSDispatchNotifiedTime">
-          <ownedComment xmi:id="_UFgZEaxEEeGLnrdLmr5TaQ">
-            <body>NEMSIS Trace: ETimes.02</body>
-          </ownedComment>
           <generalization xmi:id="_UFgZEqxEEeGLnrdLmr5TaQ">
             <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
           </generalization>
@@ -6022,6 +6003,9 @@ This is the value represented in the header for the encompassing encounter</body
             <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
           </ownedAttribute>
           <ownedAttribute xmi:id="_UFgZFKxEEeGLnrdLmr5TaQ" name="value" visibility="private" aggregation="composite">
+            <ownedComment xmi:id="_VbpRwENDEeKBoM5tGvrHVQ">
+              <body>NEMSIS Trace: ETimes.02</body>
+            </ownedComment>
             <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_4ysYYD59Ed6cla2oXsPtlA"/>
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_UFgZFaxEEeGLnrdLmr5TaQ" value="1"/>
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_UFgZFqxEEeGLnrdLmr5TaQ" value="1"/>
@@ -7993,10 +7977,6 @@ This is the value represented in the header for the encompassing encounter</body
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
     <ruleId>CONF:10194</ruleId>
   </CDA:CodeSystemConstraint>
-  <CDA:ValueSetConstraint xmi:id="_wO2Z0Iy9EeGnhceUMXltng" base_Property="_Z6MsAIy9EeGnhceUMXltng">
-    <reference href="emspcr-vocab.uml#_D5sVgXSQEeGa4IXs2ghZEw"/>
-    <ruleId>CONF:10195</ruleId>
-  </CDA:ValueSetConstraint>
   <CDA:CodeSystemConstraint xmi:id="_uLp9kIy-EeGnhceUMXltng" code="67794-8" displayName="Existence of drug allergy" base_Property="_lhnloIy-EeGnhceUMXltng">
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
     <ruleId>CONF:10203</ruleId>
@@ -8435,7 +8415,7 @@ This is the value represented in the header for the encompassing encounter</body
     <reference href="emspcr-vocab.uml#_e71YEHSOEeGa4IXs2ghZEw"/>
     <ruleId>CONF:10488</ruleId>
   </CDA:ValueSetConstraint>
-  <CDA:AssociationValidation xmi:id="_Tk-dhMH-EeGOXu0EprM3pw" severity="WARNING" base_Association="_Tk-dgMH-EeGOXu0EprM3pw">
+  <CDA:AssociationValidation xmi:id="_Tk-dhMH-EeGOXu0EprM3pw" severity="INFO" base_Association="_Tk-dgMH-EeGOXu0EprM3pw">
     <ruleId>CONF:10444</ruleId>
   </CDA:AssociationValidation>
   <CDA:AssociationValidation xmi:id="_ZCcLxcH-EeGOXu0EprM3pw" severity="INFO" base_Association="_ZCcLwMH-EeGOXu0EprM3pw">
@@ -9662,5 +9642,9 @@ This is the value represented in the header for the encompassing encounter</body
   <CDA:ValueSetConstraint xmi:id="_2Zt5YEJTEeK3I6jW34aYTg" base_Property="_2ZtSUEJTEeK3I6jW34aYTg">
     <reference href="../../org.openhealthtools.mdht.uml.cda.consol.model/model/consol-vocab.uml#_8K870TVPEeGIw7CntkyPQw"/>
     <ruleId>CONF:5259</ruleId>
+  </CDA:ValueSetConstraint>
+  <CDA:ValueSetConstraint xmi:id="_wO2Z0Iy9EeGnhceUMXltng" base_Property="_Z6MsAIy9EeGnhceUMXltng">
+    <reference href="emspcr-vocab.uml#_D5sVgXSQEeGa4IXs2ghZEw"/>
+    <ruleId>CONF:10195</ruleId>
   </CDA:ValueSetConstraint>
 </xmi:XMI>
