@@ -14,23 +14,25 @@
 <tbody>
 <row><entry>Value Set</entry><entry>AnatomicLocation - 2.16.840.1.113883.17.3.5.76</entry></row>
 <row><entry>Code System</entry><entry>LOINC - 2.16.840.1.113883.6.1</entry></row>
+<row><entry>Definition</entry><entry>Part of the patient body</entry></row>
 </tbody></tgroup></table>
-<table><tgroup cols="3">
+<table><tgroup cols="4">
 <colspec colname="col1" colwidth="1*"/>
-<colspec colname="col2" colwidth="1*"/>
-<colspec colname="col3" colwidth="2*"/>
+<colspec colname="col2" colwidth="2*"/>
+<colspec colname="col3" colwidth="1*"/>
+<colspec colname="col4" colwidth="3*"/>
 <thead><row>
-<entry>Code</entry><entry>Code System</entry><entry>Print Name</entry>
+<entry>Concept Code</entry><entry>Concept Name</entry><entry>Code System</entry><entry>Description</entry>
 </row></thead><tbody>
-<row><entry>LA12703-7</entry><entry>LOINC</entry><entry>Neck</entry></row>
-<row><entry>LA12705-2</entry><entry>LOINC</entry><entry>Back</entry></row>
-<row><entry>LA12706-0</entry><entry>LOINC</entry><entry>Abdomen</entry></row>
-<row><entry>LA18111-7</entry><entry>LOINC</entry><entry>Chest</entry></row>
-<row><entry>LA18112-5</entry><entry>LOINC</entry><entry>Extremity-lower</entry></row>
-<row><entry>LA18113-3</entry><entry>LOINC</entry><entry>Extremity-upper</entry></row>
-<row><entry>LA18114-1</entry><entry>LOINC</entry><entry>General/global</entry></row>
-<row><entry>LA18115-8</entry><entry>LOINC</entry><entry>Genitalia</entry></row>
-<row><entry>LA18116-6</entry><entry>LOINC</entry><entry>Head</entry></row>
+<row><entry>LA12703-7</entry><entry>Neck</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA12705-2</entry><entry>Back</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA12706-0</entry><entry>Abdomen</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA18111-7</entry><entry>Chest</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA18112-5</entry><entry>Extremity-lower</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA18113-3</entry><entry>Extremity-upper</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA18114-1</entry><entry>General/global</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA18115-8</entry><entry>Genitalia</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA18116-6</entry><entry>Head</entry><entry>LOINC</entry><entry></entry></row>
 </tbody></tgroup></table>
 </section>
 </body>

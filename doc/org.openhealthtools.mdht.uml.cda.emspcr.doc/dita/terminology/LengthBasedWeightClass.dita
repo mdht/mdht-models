@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Length Based Weight Class</title>
+<prolog id="prolog">
+<resourceid id="2.16.840.1.113883.17.3.5.24"/>
+</prolog>
+<body>
+<!-- THIS IS GENERATED CONTENT, DO NOT EDIT -->
+<section id="definition">
+<table><tgroup cols="2">
+<colspec colname="col1" colwidth="1*"/>
+<colspec colname="col2" colwidth="4*"/>
+<tbody>
+<row><entry>Value Set</entry><entry>LengthBasedWeightClass - 2.16.840.1.113883.17.3.5.24</entry></row>
+<row><entry>Code System</entry><entry>LOINC - 2.16.840.1.113883.6.1</entry></row>
+<row><entry>Definition</entry><entry>Weight category estimated by length</entry></row>
+</tbody></tgroup></table>
+<table><tgroup cols="4">
+<colspec colname="col1" colwidth="1*"/>
+<colspec colname="col2" colwidth="2*"/>
+<colspec colname="col3" colwidth="1*"/>
+<colspec colname="col4" colwidth="3*"/>
+<thead><row>
+<entry>Concept Code</entry><entry>Concept Name</entry><entry>Code System</entry><entry>Description</entry>
+</row></thead><tbody>
+<row><entry>LA15553-3</entry><entry>Blue</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA15554-1</entry><entry>Grey</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA15555-8</entry><entry>Green</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA17192-8</entry><entry>Pink</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA17193-6</entry><entry>Red</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA17194-4</entry><entry>Purple</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA17195-1</entry><entry>Yellow</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA17196-9</entry><entry>Orange</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA4457-3</entry><entry>White</entry><entry>LOINC</entry><entry></entry></row>
+</tbody></tgroup></table>
+</section>
+</body>
+</topic>

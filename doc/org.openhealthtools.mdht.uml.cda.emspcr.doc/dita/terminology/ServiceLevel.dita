@@ -14,6 +14,7 @@
 <tbody>
 <row><entry>Value Set</entry><entry>ServiceLevel - 2.16.840.1.113883.17.3.5.70</entry></row>
 <row><entry>Code System</entry><entry>LOINC - 2.16.840.1.113883.6.1</entry></row>
+<row><entry>Definition</entry><entry>Level of EMS service as defined by CMS</entry></row>
 </tbody></tgroup></table>
 </section>
 </body>

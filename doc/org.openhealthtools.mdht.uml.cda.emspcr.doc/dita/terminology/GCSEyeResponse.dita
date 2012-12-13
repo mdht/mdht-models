@@ -15,17 +15,18 @@
 <row><entry>Value Set</entry><entry>GCS eye response - 2.16.840.1.113883.17.3.5.99</entry></row>
 <row><entry>Code System</entry><entry>LOINC - 2.16.840.1.113883.6.1</entry></row>
 </tbody></tgroup></table>
-<table><tgroup cols="3">
+<table><tgroup cols="4">
 <colspec colname="col1" colwidth="1*"/>
-<colspec colname="col2" colwidth="1*"/>
-<colspec colname="col3" colwidth="2*"/>
+<colspec colname="col2" colwidth="2*"/>
+<colspec colname="col3" colwidth="1*"/>
+<colspec colname="col4" colwidth="3*"/>
 <thead><row>
-<entry>Code</entry><entry>Code System</entry><entry>Print Name</entry>
+<entry>Concept Code</entry><entry>Concept Name</entry><entry>Code System</entry><entry>Description</entry>
 </row></thead><tbody>
-<row><entry>LA17798-2</entry><entry>LOINC</entry><entry>No eye movement when assessed</entry></row>
-<row><entry>LA9345-5</entry><entry>LOINC</entry><entry>Opens eyes in response to painful stimulation</entry></row>
-<row><entry>LA9346-3</entry><entry>LOINC</entry><entry>Opens eyes in response to verbal stimulation</entry></row>
-<row><entry>LA9347-1</entry><entry>LOINC</entry><entry>Opens eyes spontaneously</entry></row>
+<row><entry>LA17798-2</entry><entry>No eye movement when assessed</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA9345-5</entry><entry>Opens eyes in response to painful stimulation</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA9346-3</entry><entry>Opens eyes in response to verbal stimulation</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA9347-1</entry><entry>Opens eyes spontaneously</entry><entry>LOINC</entry><entry></entry></row>
 </tbody></tgroup></table>
 </section>
 </body>

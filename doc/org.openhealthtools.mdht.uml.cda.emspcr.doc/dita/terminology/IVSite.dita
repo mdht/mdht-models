@@ -14,47 +14,49 @@
 <tbody>
 <row><entry>Value Set</entry><entry>IVSite - 2.16.840.1.113883.17.3.5.56</entry></row>
 <row><entry>Code System</entry><entry>LOINC - 2.16.840.1.113883.6.1</entry></row>
+<row><entry>Definition</entry><entry>Body location of puncture for intravenous substance administration</entry></row>
 </tbody></tgroup></table>
-<table><tgroup cols="3">
+<table><tgroup cols="4">
 <colspec colname="col1" colwidth="1*"/>
-<colspec colname="col2" colwidth="1*"/>
-<colspec colname="col3" colwidth="2*"/>
+<colspec colname="col2" colwidth="2*"/>
+<colspec colname="col3" colwidth="1*"/>
+<colspec colname="col4" colwidth="3*"/>
 <thead><row>
-<entry>Code</entry><entry>Code System</entry><entry>Print Name</entry>
+<entry>Concept Code</entry><entry>Concept Name</entry><entry>Code System</entry><entry>Description</entry>
 </row></thead><tbody>
-<row><entry>LA18112-5</entry><entry>LOINC</entry><entry>Extremity-lower</entry></row>
-<row><entry>LA18113-3</entry><entry>LOINC</entry><entry>Extremity-upper</entry></row>
-<row><entry>LA18757-7</entry><entry>LOINC</entry><entry>Forearm-left</entry></row>
-<row><entry>LA18758-5</entry><entry>LOINC</entry><entry>Forearm-right</entry></row>
-<row><entry>LA18790-8</entry><entry>LOINC</entry><entry>Antecubital-left</entry></row>
-<row><entry>LA18791-6</entry><entry>LOINC</entry><entry>Antecubital-right</entry></row>
-<row><entry>LA18792-4</entry><entry>LOINC</entry><entry>External jugular-left</entry></row>
-<row><entry>LA18793-2</entry><entry>LOINC</entry><entry>External jugular-right</entry></row>
-<row><entry>LA18794-0</entry><entry>LOINC</entry><entry>Femoral-left</entry></row>
-<row><entry>LA18795-7</entry><entry>LOINC</entry><entry>Femoral-right</entry></row>
-<row><entry>LA18796-5</entry><entry>LOINC</entry><entry>Foot-left</entry></row>
-<row><entry>LA18797-3</entry><entry>LOINC</entry><entry>Foot-right</entry></row>
-<row><entry>LA18798-1</entry><entry>LOINC</entry><entry>Hand-right</entry></row>
-<row><entry>LA18799-9</entry><entry>LOINC</entry><entry>Hand-left</entry></row>
-<row><entry>LA18800-5</entry><entry>LOINC</entry><entry>Internal jugular-left</entry></row>
-<row><entry>LA18801-3</entry><entry>LOINC</entry><entry>Internal jugular-right</entry></row>
-<row><entry>LA18802-1</entry><entry>LOINC</entry><entry>IO-femur-left distal</entry></row>
-<row><entry>LA18803-9</entry><entry>LOINC</entry><entry>IO-femur-right distal</entry></row>
-<row><entry>LA18804-7</entry><entry>LOINC</entry><entry>IO-humerus-left</entry></row>
-<row><entry>LA18805-4</entry><entry>LOINC</entry><entry>IO-humerus-right</entry></row>
-<row><entry>LA18806-2</entry><entry>LOINC</entry><entry>IO-iliac crest-left</entry></row>
-<row><entry>LA18807-0</entry><entry>LOINC</entry><entry>IO-iliac crest-right</entry></row>
-<row><entry>LA18808-8</entry><entry>LOINC</entry><entry>IO-sternum</entry></row>
-<row><entry>LA18809-6</entry><entry>LOINC</entry><entry>IO-tibia-left distal</entry></row>
-<row><entry>LA18810-4</entry><entry>LOINC</entry><entry>IO-tibia-right distal</entry></row>
-<row><entry>LA18811-2</entry><entry>LOINC</entry><entry>IO-tibia-left proximal</entry></row>
-<row><entry>LA18812-0</entry><entry>LOINC</entry><entry>IO-tibia-right proximal</entry></row>
-<row><entry>LA18813-8</entry><entry>LOINC</entry><entry>Other central access (PICC, portacath, not listed)</entry></row>
-<row><entry>LA18814-6</entry><entry>LOINC</entry><entry>Other peripheral access (not listed)</entry></row>
-<row><entry>LA18815-3</entry><entry>LOINC</entry><entry>Scalp</entry></row>
-<row><entry>LA18816-1</entry><entry>LOINC</entry><entry>Subclavian-left</entry></row>
-<row><entry>LA18817-9</entry><entry>LOINC</entry><entry>Subclavian-right</entry></row>
-<row><entry>LA18818-7</entry><entry>LOINC</entry><entry>Umbilical</entry></row>
+<row><entry>LA18112-5</entry><entry>Extremity-lower</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA18113-3</entry><entry>Extremity-upper</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA18757-7</entry><entry>Forearm-left</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA18758-5</entry><entry>Forearm-right</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA18790-8</entry><entry>Antecubital-left</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA18791-6</entry><entry>Antecubital-right</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA18792-4</entry><entry>External jugular-left</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA18793-2</entry><entry>External jugular-right</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA18794-0</entry><entry>Femoral-left</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA18795-7</entry><entry>Femoral-right</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA18796-5</entry><entry>Foot-left</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA18797-3</entry><entry>Foot-right</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA18798-1</entry><entry>Hand-right</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA18799-9</entry><entry>Hand-left</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA18800-5</entry><entry>Internal jugular-left</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA18801-3</entry><entry>Internal jugular-right</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA18802-1</entry><entry>IO-femur-left distal</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA18803-9</entry><entry>IO-femur-right distal</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA18804-7</entry><entry>IO-humerus-left</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA18805-4</entry><entry>IO-humerus-right</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA18806-2</entry><entry>IO-iliac crest-left</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA18807-0</entry><entry>IO-iliac crest-right</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA18808-8</entry><entry>IO-sternum</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA18809-6</entry><entry>IO-tibia-left distal</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA18810-4</entry><entry>IO-tibia-right distal</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA18811-2</entry><entry>IO-tibia-left proximal</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA18812-0</entry><entry>IO-tibia-right proximal</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA18813-8</entry><entry>Other central access (PICC, portacath, not listed)</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA18814-6</entry><entry>Other peripheral access (not listed)</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA18815-3</entry><entry>Scalp</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA18816-1</entry><entry>Subclavian-left</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA18817-9</entry><entry>Subclavian-right</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA18818-7</entry><entry>Umbilical</entry><entry>LOINC</entry><entry></entry></row>
 </tbody></tgroup></table>
 </section>
 </body>

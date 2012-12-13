@@ -14,22 +14,24 @@
 <tbody>
 <row><entry>Value Set</entry><entry>EnvironmentalAllergyType - 2.16.840.1.113883.17.3.5.83</entry></row>
 <row><entry>Code System</entry><entry>LOINC - 2.16.840.1.113883.6.1</entry></row>
+<row><entry>Definition</entry><entry>Kinds of environmental allergens</entry></row>
 </tbody></tgroup></table>
-<table><tgroup cols="3">
+<table><tgroup cols="4">
 <colspec colname="col1" colwidth="1*"/>
-<colspec colname="col2" colwidth="1*"/>
-<colspec colname="col3" colwidth="2*"/>
+<colspec colname="col2" colwidth="2*"/>
+<colspec colname="col3" colwidth="1*"/>
+<colspec colname="col4" colwidth="3*"/>
 <thead><row>
-<entry>Code</entry><entry>Code System</entry><entry>Print Name</entry>
+<entry>Concept Code</entry><entry>Concept Name</entry><entry>Code System</entry><entry>Description</entry>
 </row></thead><tbody>
-<row><entry>LA137-2</entry><entry>LOINC</entry><entry>None</entry></row>
-<row><entry>LA17059-9</entry><entry>LOINC</entry><entry>Other (not listed)</entry></row>
-<row><entry>LA18356-8</entry><entry>LOINC</entry><entry>Chemical</entry></row>
-<row><entry>LA18357-6</entry><entry>LOINC</entry><entry>Dander/dust/mold/pollen</entry></row>
-<row><entry>LA18358-4</entry><entry>LOINC</entry><entry>Food allergy</entry></row>
-<row><entry>LA18359-2</entry><entry>LOINC</entry><entry>Insect sting</entry></row>
-<row><entry>LA18360-0</entry><entry>LOINC</entry><entry>Latex</entry></row>
-<row><entry>LA18361-8</entry><entry>LOINC</entry><entry>Plant</entry></row>
+<row><entry>LA137-2</entry><entry>None</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA17059-9</entry><entry>Other (not listed)</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA18356-8</entry><entry>Chemical</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA18357-6</entry><entry>Dander/dust/mold/pollen</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA18358-4</entry><entry>Food allergy</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA18359-2</entry><entry>Insect sting</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA18360-0</entry><entry>Latex</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA18361-8</entry><entry>Plant</entry><entry>LOINC</entry><entry></entry></row>
 </tbody></tgroup></table>
 </section>
 </body>

@@ -15,19 +15,20 @@
 <row><entry>Value Set</entry><entry>Patient Status Change - 2.16.840.1.113883.17.3.5.67</entry></row>
 <row><entry>Code System</entry><entry>LOINC - 2.16.840.1.113883.6.1</entry></row>
 </tbody></tgroup></table>
-<table><tgroup cols="3">
+<table><tgroup cols="4">
 <colspec colname="col1" colwidth="1*"/>
-<colspec colname="col2" colwidth="1*"/>
-<colspec colname="col3" colwidth="2*"/>
+<colspec colname="col2" colwidth="2*"/>
+<colspec colname="col3" colwidth="1*"/>
+<colspec colname="col4" colwidth="3*"/>
 <thead><row>
-<entry>Code</entry><entry>Code System</entry><entry>Print Name</entry>
+<entry>Concept Code</entry><entry>Concept Name</entry><entry>Code System</entry><entry>Description</entry>
 </row></thead><tbody>
-<row><entry>LA11011-6</entry><entry>LOINC</entry><entry>Worse</entry></row>
-<row><entry>LA11011-6</entry><entry>LOINC</entry><entry>Worse</entry></row>
-<row><entry>LA17181-1</entry><entry>LOINC</entry><entry>Unchanged</entry></row>
-<row><entry>LA17181-1</entry><entry>LOINC</entry><entry>Unchanged</entry></row>
-<row><entry>LA65-8</entry><entry>LOINC</entry><entry>Improved</entry></row>
-<row><entry>LA65-8</entry><entry>LOINC</entry><entry>Improved</entry></row>
+<row><entry>LA11011-6</entry><entry>Worse</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA11011-6</entry><entry>Worse</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA17181-1</entry><entry>Unchanged</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA17181-1</entry><entry>Unchanged</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA65-8</entry><entry>Improved</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA65-8</entry><entry>Improved</entry><entry>LOINC</entry><entry></entry></row>
 </tbody></tgroup></table>
 </section>
 </body>

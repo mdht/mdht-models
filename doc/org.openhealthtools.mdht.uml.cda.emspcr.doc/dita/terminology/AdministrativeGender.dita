@@ -14,6 +14,7 @@
 <tbody>
 <row><entry>Value Set</entry><entry>Administrative Gender  - 2.16.840.1.113883.1.11.1</entry></row>
 <row><entry>Code System</entry><entry>HL7 Administrative Gender - 2.16.840.1.113883.5.1</entry></row>
+<row><entry>Definition</entry><entry>Gender of the patient for administrative purposes</entry></row>
 </tbody></tgroup></table>
 </section>
 </body>

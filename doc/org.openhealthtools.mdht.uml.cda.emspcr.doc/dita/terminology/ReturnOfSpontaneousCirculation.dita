@@ -14,18 +14,20 @@
 <tbody>
 <row><entry>Value Set</entry><entry>ReturnOfSpontaneousCirculation - 2.16.840.1.113883.17.3.5.15</entry></row>
 <row><entry>Code System</entry><entry>LOINC - 2.16.840.1.113883.6.1</entry></row>
+<row><entry>Definition</entry><entry>Timeframe for return of circulation to a patient</entry></row>
 </tbody></tgroup></table>
-<table><tgroup cols="3">
+<table><tgroup cols="4">
 <colspec colname="col1" colwidth="1*"/>
-<colspec colname="col2" colwidth="1*"/>
-<colspec colname="col3" colwidth="2*"/>
+<colspec colname="col2" colwidth="2*"/>
+<colspec colname="col3" colwidth="1*"/>
+<colspec colname="col4" colwidth="3*"/>
 <thead><row>
-<entry>Code</entry><entry>Code System</entry><entry>Print Name</entry>
+<entry>Concept Code</entry><entry>Concept Name</entry><entry>Code System</entry><entry>Description</entry>
 </row></thead><tbody>
-<row><entry>LA17075-5</entry><entry>LOINC</entry><entry>Yes, prior to arrival at the ED</entry></row>
-<row><entry>LA17076-3</entry><entry>LOINC</entry><entry>Yes, at arrival at the ED</entry></row>
-<row><entry>LA17077-1</entry><entry>LOINC</entry><entry>Yes, sustained for 20 consecutive minutes</entry></row>
-<row><entry>LA32-8</entry><entry>LOINC</entry><entry>No</entry></row>
+<row><entry>LA17075-5</entry><entry>Yes, prior to arrival at the ED</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA17076-3</entry><entry>Yes, at arrival at the ED</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA17077-1</entry><entry>Yes, sustained for 20 consecutive minutes</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA32-8</entry><entry>No</entry><entry>LOINC</entry><entry></entry></row>
 </tbody></tgroup></table>
 </section>
 </body>
