@@ -42,45 +42,45 @@ import org.openhealthtools.mdht.uml.cda.operations.EntryOperations;
  */
 public class DerivedEntryOperations extends EntryOperations {
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	protected DerivedEntryOperations() {
 		super();
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateDerivedEntryTemplateId(DerivedEntry, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Derived Entry Template Id</em>}' operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL expression body for the '{@link #validateDerivedEntryTemplateId(DerivedEntry, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Derived Entry Template Id</em>}' operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateDerivedEntryTemplateId(DerivedEntry, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validateDerivedEntryTemplateId(DerivedEntry, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 	protected static final String VALIDATE_DERIVED_ENTRY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.1133883.17.3.10.1.24')";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validateDerivedEntryTemplateId(DerivedEntry, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Derived Entry Template Id</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL invariant for the '{@link #validateDerivedEntryTemplateId(DerivedEntry, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Derived Entry Template Id</em>}' invariant operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateDerivedEntryTemplateId(DerivedEntry, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validateDerivedEntryTemplateId(DerivedEntry, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 
 	protected static Constraint VALIDATE_DERIVED_ENTRY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param derivedEntry The receiving '<em><b>Derived Entry</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
+	* <!-- begin-model-doc -->
+	* @param derivedEntry The receiving '<em><b>Derived Entry</b></em>' model object.
+	* @param diagnostics The chain of diagnostics to which problems are to be appended.
+	* @param context The cache of context-specific information.
+	* <!-- end-model-doc -->
+	* @generated
+	*/
 
 	public static boolean validateDerivedEntryTemplateId(DerivedEntry derivedEntry, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
@@ -109,36 +109,36 @@ public class DerivedEntryOperations extends EntryOperations {
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateDerivedEntryTypeCode(DerivedEntry, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Derived Entry Type Code</em>}' operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL expression body for the '{@link #validateDerivedEntryTypeCode(DerivedEntry, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Derived Entry Type Code</em>}' operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateDerivedEntryTypeCode(DerivedEntry, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validateDerivedEntryTypeCode(DerivedEntry, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 	protected static final String VALIDATE_DERIVED_ENTRY_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "isDefined('typeCode') and self.typeCode=vocab::x_ActRelationshipEntry::DRIV";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validateDerivedEntryTypeCode(DerivedEntry, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Derived Entry Type Code</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL invariant for the '{@link #validateDerivedEntryTypeCode(DerivedEntry, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Derived Entry Type Code</em>}' invariant operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateDerivedEntryTypeCode(DerivedEntry, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validateDerivedEntryTypeCode(DerivedEntry, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 
 	protected static Constraint VALIDATE_DERIVED_ENTRY_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param derivedEntry The receiving '<em><b>Derived Entry</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
+	* <!-- begin-model-doc -->
+	* @param derivedEntry The receiving '<em><b>Derived Entry</b></em>' model object.
+	* @param diagnostics The chain of diagnostics to which problems are to be appended.
+	* @param context The cache of context-specific information.
+	* <!-- end-model-doc -->
+	* @generated
+	*/
 
 	public static boolean validateDerivedEntryTypeCode(DerivedEntry derivedEntry, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {

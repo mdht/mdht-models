@@ -33,47 +33,47 @@ import org.openhealthtools.mdht.uml.cda.impl.EntryImpl;
  */
 public class DerivedEntryImpl extends EntryImpl implements DerivedEntry {
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	protected DerivedEntryImpl() {
 		super();
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	@Override
 	protected EClass eStaticClass() {
 		return EmspcrPackage.Literals.DERIVED_ENTRY;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateDerivedEntryTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return DerivedEntryOperations.validateDerivedEntryTemplateId(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateDerivedEntryTypeCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return DerivedEntryOperations.validateDerivedEntryTypeCode(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public DerivedEntry init() {
 		return Initializer.Util.init(this);
 	}
