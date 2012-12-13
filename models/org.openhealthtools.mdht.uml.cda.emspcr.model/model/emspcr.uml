@@ -10,6 +10,9 @@
     <packageImport xmi:id="_x1tacmeQEeGtXKebdWh3hg">
       <importedPackage href="emspcr-vocab.uml#_xpzscGeQEeGtXKebdWh3hg"/>
     </packageImport>
+    <packageImport xmi:id="_alO60EU9EeKcguOHLOhl3Q">
+      <importedPackage href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_XgMSwzxVEd6JwqSGecoePg"/>
+    </packageImport>
     <packagedElement xmi:type="uml:Class" xmi:id="_xs1LQWeQEeGtXKebdWh3hg" name="PatientCareReport">
       <generalization xmi:id="_xs3ngWeQEeGtXKebdWh3hg">
         <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-documents.uml#_2DNRcBSVEeGGzu7fmW9pXw"/>
@@ -929,12 +932,6 @@ If NEMSIS EHistory. 08 is &quot;None Reported,&quot; the value should be FALSE.<
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_tvaNUmlaEeG4boS-IbG8Zw" memberEnd="_tvaNUGlaEeG4boS-IbG8Zw _tva0YGlaEeG4boS-IbG8Zw">
       <ownedEnd xmi:id="_tva0YGlaEeG4boS-IbG8Zw" type="_o-PZ0GlZEeG4boS-IbG8Zw" association="_tvaNUmlaEeG4boS-IbG8Zw"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_cCzMMmlbEeG4boS-IbG8Zw" memberEnd="_cCzMM2lbEeG4boS-IbG8Zw">
-      <ownedEnd xmi:id="_cCzMM2lbEeG4boS-IbG8Zw" association="_cCzMMmlbEeG4boS-IbG8Zw"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_MpRoAmlcEeG4boS-IbG8Zw" memberEnd="_MpSPEGlcEeG4boS-IbG8Zw">
-      <ownedEnd xmi:id="_MpSPEGlcEeG4boS-IbG8Zw" association="_MpRoAmlcEeG4boS-IbG8Zw"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_S-YTcGldEeG4boS-IbG8Zw" name="EMSBillingSection">
       <generalization xmi:id="_S-YTcWldEeG4boS-IbG8Zw">
@@ -5954,33 +5951,6 @@ This is the value represented in the header for the encompassing encounter</body
     <packagedElement xmi:type="uml:Association" xmi:id="_qr4tg8HkEeGspaMtPNX3NA" memberEnd="_qr4tgMHkEeGspaMtPNX3NA _qr4thMHkEeGspaMtPNX3NA">
       <ownedEnd xmi:id="_qr4thMHkEeGspaMtPNX3NA" type="_pPyi8MHkEeGspaMtPNX3NA" association="_qr4tg8HkEeGspaMtPNX3NA"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_uZbEU8HmEeGspaMtPNX3NA" memberEnd="_uZbEVMHmEeGspaMtPNX3NA">
-      <ownedEnd xmi:id="_uZbEVMHmEeGspaMtPNX3NA" association="_uZbEU8HmEeGspaMtPNX3NA"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_uZbEWMHmEeGspaMtPNX3NA" memberEnd="_uZbEWcHmEeGspaMtPNX3NA">
-      <ownedEnd xmi:id="_uZbEWcHmEeGspaMtPNX3NA" association="_uZbEWMHmEeGspaMtPNX3NA"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_uZbEXcHmEeGspaMtPNX3NA" memberEnd="_uZbEXsHmEeGspaMtPNX3NA">
-      <ownedEnd xmi:id="_uZbEXsHmEeGspaMtPNX3NA" association="_uZbEXcHmEeGspaMtPNX3NA"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_uZbEYsHmEeGspaMtPNX3NA" memberEnd="_uZbEY8HmEeGspaMtPNX3NA">
-      <ownedEnd xmi:id="_uZbEY8HmEeGspaMtPNX3NA" association="_uZbEYsHmEeGspaMtPNX3NA"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_uZbEZ8HmEeGspaMtPNX3NA" memberEnd="_uZbEaMHmEeGspaMtPNX3NA">
-      <ownedEnd xmi:id="_uZbEaMHmEeGspaMtPNX3NA" association="_uZbEZ8HmEeGspaMtPNX3NA"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_uZbEbMHmEeGspaMtPNX3NA" memberEnd="_uZbEbcHmEeGspaMtPNX3NA">
-      <ownedEnd xmi:id="_uZbEbcHmEeGspaMtPNX3NA" association="_uZbEbMHmEeGspaMtPNX3NA"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_uZbEccHmEeGspaMtPNX3NA" memberEnd="_uZbEcsHmEeGspaMtPNX3NA">
-      <ownedEnd xmi:id="_uZbEcsHmEeGspaMtPNX3NA" association="_uZbEccHmEeGspaMtPNX3NA"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_uZbEdsHmEeGspaMtPNX3NA" memberEnd="_uZbEd8HmEeGspaMtPNX3NA">
-      <ownedEnd xmi:id="_uZbEd8HmEeGspaMtPNX3NA" association="_uZbEdsHmEeGspaMtPNX3NA"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_uZbEe8HmEeGspaMtPNX3NA" memberEnd="_uZbEfMHmEeGspaMtPNX3NA">
-      <ownedEnd xmi:id="_uZbEfMHmEeGspaMtPNX3NA" association="_uZbEe8HmEeGspaMtPNX3NA"/>
-    </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_9YwisMHsEeGOXu0EprM3pw" name="DerivedEntry">
       <ownedComment xmi:id="_hEwg8McjEeGJVsbJVgm-Pw">
         <body>This class asserts that the section narrative is derived from the structured data contained in the section entries.</body>
@@ -6620,10 +6590,10 @@ This is the value represented in the header for the encompassing encounter</body
   <CDA:PropertyValidation xmi:id="_zrLoMGlaEeG4boS-IbG8Zw" base_Property="_6Wp3IGlZEeG4boS-IbG8Zw">
     <ruleId>CONF:10045</ruleId>
   </CDA:PropertyValidation>
-  <CDA:AssociationValidation xmi:id="_j-FAsGlbEeG4boS-IbG8Zw" base_Association="_cCzMMmlbEeG4boS-IbG8Zw">
+  <CDA:AssociationValidation xmi:id="_j-FAsGlbEeG4boS-IbG8Zw">
     <ruleId>CONF:10078</ruleId>
   </CDA:AssociationValidation>
-  <CDA:AssociationValidation xmi:id="_QfqDsGlcEeG4boS-IbG8Zw" base_Association="_MpRoAmlcEeG4boS-IbG8Zw">
+  <CDA:AssociationValidation xmi:id="_QfqDsGlcEeG4boS-IbG8Zw">
     <ruleId>CONF:10079</ruleId>
   </CDA:AssociationValidation>
   <CDA:CDATemplate xmi:id="_WJI_QGldEeG4boS-IbG8Zw" base_Class="_S-YTcGldEeG4boS-IbG8Zw" templateId="2.16.840.1.113883.17.3.10.1.5"/>
@@ -9119,7 +9089,7 @@ This is the value represented in the header for the encompassing encounter</body
   </CDA:CodeSystemConstraint>
   <CDA:PropertyValidation xmi:id="_V_r_YEJFEeK3I6jW34aYTg" severity="INFO" base_Property="_Uejj0EJFEeK3I6jW34aYTg"/>
   <CDA:CodeSystemConstraint xmi:id="_eWU6MEJFEeK3I6jW34aYTg" code="15562006" displayName="structure of respiratory region of nose" base_Property="_Uejj0EJFEeK3I6jW34aYTg" severity="WARNING">
-    <reference href="../../gov.us.fhim.terminology/model/fhim-vocab.uml#_WwluQaRMEeGZ6ueex_Me0w"/>
+    <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
   </CDA:CodeSystemConstraint>
   <CDA:AssociationValidation xmi:id="_tEI9AEJGEeK3I6jW34aYTg" severity="INFO" base_Association="_r7R3gEJGEeK3I6jW34aYTg"/>
   <CDA:PropertyValidation xmi:id="_3lGaUEJGEeK3I6jW34aYTg" base_Property="_eG6vwEJGEeK3I6jW34aYTg"/>
