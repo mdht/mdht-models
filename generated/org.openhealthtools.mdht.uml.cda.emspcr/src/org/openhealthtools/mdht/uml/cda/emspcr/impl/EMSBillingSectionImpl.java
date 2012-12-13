@@ -33,84 +33,84 @@ import org.openhealthtools.mdht.uml.cda.impl.SectionImpl;
  */
 public class EMSBillingSectionImpl extends SectionImpl implements EMSBillingSection {
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	protected EMSBillingSectionImpl() {
 		super();
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	@Override
 	protected EClass eStaticClass() {
 		return EmspcrPackage.Literals.EMS_BILLING_SECTION;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateEMSBillingSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return EMSBillingSectionOperations.validateEMSBillingSectionTemplateId(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateEMSBillingSectionCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return EMSBillingSectionOperations.validateEMSBillingSectionCode(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateEMSBillingSectionTitle(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return EMSBillingSectionOperations.validateEMSBillingSectionTitle(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateEMSBillingSectionText(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return EMSBillingSectionOperations.validateEMSBillingSectionText(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateEMSBillingSectionBillingConditionentry(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return EMSBillingSectionOperations.validateEMSBillingSectionBillingConditionentry(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateEMSBillingSectionLosentry(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return EMSBillingSectionOperations.validateEMSBillingSectionLosentry(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public EMSBillingSection init() {
 		return Initializer.Util.init(this);
 	}

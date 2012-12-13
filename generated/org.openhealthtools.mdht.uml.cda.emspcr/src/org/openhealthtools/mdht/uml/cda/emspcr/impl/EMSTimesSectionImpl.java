@@ -33,146 +33,74 @@ import org.openhealthtools.mdht.uml.cda.impl.SectionImpl;
  */
 public class EMSTimesSectionImpl extends SectionImpl implements EMSTimesSection {
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	protected EMSTimesSectionImpl() {
 		super();
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	@Override
 	protected EClass eStaticClass() {
 		return EmspcrPackage.Literals.EMS_TIMES_SECTION;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateEMSTimesSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return EMSTimesSectionOperations.validateEMSTimesSectionTemplateId(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateEMSTimesSectionCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return EMSTimesSectionOperations.validateEMSTimesSectionCode(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateEMSTimesSectionText(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return EMSTimesSectionOperations.validateEMSTimesSectionText(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateEMSTimesSectionTitle(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return EMSTimesSectionOperations.validateEMSTimesSectionTitle(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateEMSTimesSectionEntry1(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return EMSTimesSectionOperations.validateEMSTimesSectionEntry1(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateEMSTimesSectionEntry2(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return EMSTimesSectionOperations.validateEMSTimesSectionEntry2(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateEMSTimesSectionEntry3(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return EMSTimesSectionOperations.validateEMSTimesSectionEntry3(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateEMSTimesSectionEntry4(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return EMSTimesSectionOperations.validateEMSTimesSectionEntry4(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateEMSTimesSectionEntry5(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return EMSTimesSectionOperations.validateEMSTimesSectionEntry5(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateEMSTimesSectionEntry6(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return EMSTimesSectionOperations.validateEMSTimesSectionEntry6(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateEMSTimesSectionEntry7(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return EMSTimesSectionOperations.validateEMSTimesSectionEntry7(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateEMSTimesSectionEntry8(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return EMSTimesSectionOperations.validateEMSTimesSectionEntry8(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateEMSTimesSectionEntry9(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return EMSTimesSectionOperations.validateEMSTimesSectionEntry9(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public EMSTimesSection init() {
 		return Initializer.Util.init(this);
 	}

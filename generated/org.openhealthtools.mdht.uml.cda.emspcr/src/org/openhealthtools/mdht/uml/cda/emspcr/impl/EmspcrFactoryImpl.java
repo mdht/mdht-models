@@ -24,11 +24,11 @@ import org.openhealthtools.mdht.uml.cda.emspcr.*;
  */
 public class EmspcrFactoryImpl extends EFactoryImpl implements EmspcrFactory {
 	/**
-	 * Creates the default factory implementation.
-	 * <!-- begin-user-doc -->
+	* Creates the default factory implementation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public static EmspcrFactory init() {
 		try {
 			EmspcrFactory theEmspcrFactory = (EmspcrFactory) EPackage.Registry.INSTANCE.getEFactory("http://www.openhealthtools.org/mdht/uml/cda/emspcr");
@@ -42,20 +42,20 @@ public class EmspcrFactoryImpl extends EFactoryImpl implements EmspcrFactory {
 	}
 
 	/**
-	 * Creates an instance of the factory.
-	 * <!-- begin-user-doc -->
+	* Creates an instance of the factory.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public EmspcrFactoryImpl() {
 		super();
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	@Override
 	public EObject create(EClass eClass) {
 		switch (eClass.getClassifierID()) {
@@ -111,250 +111,250 @@ public class EmspcrFactoryImpl extends EFactoryImpl implements EmspcrFactory {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public PatientCareReport createPatientCareReport() {
 		PatientCareReportImpl patientCareReport = new PatientCareReportImpl();
 		return patientCareReport;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public EMSBillingSection createEMSBillingSection() {
 		EMSBillingSectionImpl emsBillingSection = new EMSBillingSectionImpl();
 		return emsBillingSection;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public EMSInjuryIncidentDescriptionSection createEMSInjuryIncidentDescriptionSection() {
 		EMSInjuryIncidentDescriptionSectionImpl emsInjuryIncidentDescriptionSection = new EMSInjuryIncidentDescriptionSectionImpl();
 		return emsInjuryIncidentDescriptionSection;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public EMSCurrentMedicationSection createEMSCurrentMedicationSection() {
 		EMSCurrentMedicationSectionImpl emsCurrentMedicationSection = new EMSCurrentMedicationSectionImpl();
 		return emsCurrentMedicationSection;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public EMSCardiacArrestEventSection createEMSCardiacArrestEventSection() {
 		EMSCardiacArrestEventSectionImpl emsCardiacArrestEventSection = new EMSCardiacArrestEventSectionImpl();
 		return emsCardiacArrestEventSection;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public EMSAdvanceDirectivesSection createEMSAdvanceDirectivesSection() {
 		EMSAdvanceDirectivesSectionImpl emsAdvanceDirectivesSection = new EMSAdvanceDirectivesSectionImpl();
 		return emsAdvanceDirectivesSection;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public EMSAllergiesAndAdverseReactionsSection createEMSAllergiesAndAdverseReactionsSection() {
 		EMSAllergiesAndAdverseReactionsSectionImpl emsAllergiesAndAdverseReactionsSection = new EMSAllergiesAndAdverseReactionsSectionImpl();
 		return emsAllergiesAndAdverseReactionsSection;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public EMSPastMedicalHistorySection createEMSPastMedicalHistorySection() {
 		EMSPastMedicalHistorySectionImpl emsPastMedicalHistorySection = new EMSPastMedicalHistorySectionImpl();
 		return emsPastMedicalHistorySection;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public EMSSocialHistorySection createEMSSocialHistorySection() {
 		EMSSocialHistorySectionImpl emsSocialHistorySection = new EMSSocialHistorySectionImpl();
 		return emsSocialHistorySection;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public EMSPhysicalAssessmentSection createEMSPhysicalAssessmentSection() {
 		EMSPhysicalAssessmentSectionImpl emsPhysicalAssessmentSection = new EMSPhysicalAssessmentSectionImpl();
 		return emsPhysicalAssessmentSection;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public EMSMedicationsAdministeredSection createEMSMedicationsAdministeredSection() {
 		EMSMedicationsAdministeredSectionImpl emsMedicationsAdministeredSection = new EMSMedicationsAdministeredSectionImpl();
 		return emsMedicationsAdministeredSection;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public EMSProceduresPerformedSection createEMSProceduresPerformedSection() {
 		EMSProceduresPerformedSectionImpl emsProceduresPerformedSection = new EMSProceduresPerformedSectionImpl();
 		return emsProceduresPerformedSection;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public EMSPatientCareNarrativeSection createEMSPatientCareNarrativeSection() {
 		EMSPatientCareNarrativeSectionImpl emsPatientCareNarrativeSection = new EMSPatientCareNarrativeSectionImpl();
 		return emsPatientCareNarrativeSection;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public EMSSceneSection createEMSSceneSection() {
 		EMSSceneSectionImpl emsSceneSection = new EMSSceneSectionImpl();
 		return emsSceneSection;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public EMSDispatchSection createEMSDispatchSection() {
 		EMSDispatchSectionImpl emsDispatchSection = new EMSDispatchSectionImpl();
 		return emsDispatchSection;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public EMSDispositionSection createEMSDispositionSection() {
 		EMSDispositionSectionImpl emsDispositionSection = new EMSDispositionSectionImpl();
 		return emsDispositionSection;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public EMSPersonnelAdverseEventSection createEMSPersonnelAdverseEventSection() {
 		EMSPersonnelAdverseEventSectionImpl emsPersonnelAdverseEventSection = new EMSPersonnelAdverseEventSectionImpl();
 		return emsPersonnelAdverseEventSection;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public EMSProtocolSection createEMSProtocolSection() {
 		EMSProtocolSectionImpl emsProtocolSection = new EMSProtocolSectionImpl();
 		return emsProtocolSection;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public EMSResponseSection createEMSResponseSection() {
 		EMSResponseSectionImpl emsResponseSection = new EMSResponseSectionImpl();
 		return emsResponseSection;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public EMSSituationSection createEMSSituationSection() {
 		EMSSituationSectionImpl emsSituationSection = new EMSSituationSectionImpl();
 		return emsSituationSection;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public EMSTimesSection createEMSTimesSection() {
 		EMSTimesSectionImpl emsTimesSection = new EMSTimesSectionImpl();
 		return emsTimesSection;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public EMSVitalSignsSection createEMSVitalSignsSection() {
 		EMSVitalSignsSectionImpl emsVitalSignsSection = new EMSVitalSignsSectionImpl();
 		return emsVitalSignsSection;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public DerivedEntry createDerivedEntry() {
 		DerivedEntryImpl derivedEntry = new DerivedEntryImpl();
 		return derivedEntry;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public EmspcrPackage getEmspcrPackage() {
 		return (EmspcrPackage) getEPackage();
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @deprecated
-	 * @generated
-	 */
+	* @deprecated
+	* @generated
+	*/
 	@Deprecated
 	public static EmspcrPackage getPackage() {
 		return EmspcrPackage.eINSTANCE;
