@@ -14,24 +14,26 @@
 <tbody>
 <row><entry>Value Set</entry><entry>DestinationType - 2.16.840.1.113883.17.3.5.69</entry></row>
 <row><entry>Code System</entry><entry>LOINC - 2.16.840.1.113883.6.1</entry></row>
+<row><entry>Definition</entry><entry>Kind of facility</entry></row>
 </tbody></tgroup></table>
-<table><tgroup cols="3">
+<table><tgroup cols="4">
 <colspec colname="col1" colwidth="1*"/>
-<colspec colname="col2" colwidth="1*"/>
-<colspec colname="col3" colwidth="2*"/>
+<colspec colname="col2" colwidth="2*"/>
+<colspec colname="col3" colwidth="1*"/>
+<colspec colname="col4" colwidth="3*"/>
 <thead><row>
-<entry>Code</entry><entry>Code System</entry><entry>Print Name</entry>
+<entry>Concept Code</entry><entry>Concept Name</entry><entry>Code System</entry><entry>Description</entry>
 </row></thead><tbody>
-<row><entry>LA11504-0</entry><entry>LOINC</entry><entry>Hospital emergency department</entry></row>
-<row><entry>LA14084-0</entry><entry>LOINC</entry><entry>Home</entry></row>
-<row><entry>LA18686-8</entry><entry>LOINC</entry><entry>Hospital non-emergency department bed</entry></row>
-<row><entry>LA18687-6</entry><entry>LOINC</entry><entry>Medical office/clinic</entry></row>
-<row><entry>LA18688-4</entry><entry>LOINC</entry><entry>Morgue/mortuary</entry></row>
-<row><entry>LA18689-2</entry><entry>LOINC</entry><entry>Nursing home/assisted living facility</entry></row>
-<row><entry>LA18690-0</entry><entry>LOINC</entry><entry>Other destination</entry></row>
-<row><entry>LA18691-8</entry><entry>LOINC</entry><entry>Other EMS responder (air)</entry></row>
-<row><entry>LA18692-6</entry><entry>LOINC</entry><entry>Other EMS responder (ground)</entry></row>
-<row><entry>LA18693-4</entry><entry>LOINC</entry><entry>Police/jail</entry></row>
+<row><entry>LA11504-0</entry><entry>Hospital emergency department</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA14084-0</entry><entry>Home</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA18686-8</entry><entry>Hospital non-emergency department bed</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA18687-6</entry><entry>Medical office/clinic</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA18688-4</entry><entry>Morgue/mortuary</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA18689-2</entry><entry>Nursing home/assisted living facility</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA18690-0</entry><entry>Other destination</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA18691-8</entry><entry>Other EMS responder (air)</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA18692-6</entry><entry>Other EMS responder (ground)</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA18693-4</entry><entry>Police/jail</entry><entry>LOINC</entry><entry></entry></row>
 </tbody></tgroup></table>
 </section>
 </body>

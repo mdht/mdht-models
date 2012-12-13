@@ -14,36 +14,38 @@
 <tbody>
 <row><entry>Value Set</entry><entry>HeadAssessmentFinding - 2.16.840.1.113883.17.3.5.26</entry></row>
 <row><entry>Code System</entry><entry>LOINC - 2.16.840.1.113883.6.1</entry></row>
+<row><entry>Definition</entry><entry>Finding resulting from EMS head assessment</entry></row>
 </tbody></tgroup></table>
-<table><tgroup cols="3">
+<table><tgroup cols="4">
 <colspec colname="col1" colwidth="1*"/>
-<colspec colname="col2" colwidth="1*"/>
-<colspec colname="col3" colwidth="2*"/>
+<colspec colname="col2" colwidth="2*"/>
+<colspec colname="col3" colwidth="1*"/>
+<colspec colname="col4" colwidth="3*"/>
 <thead><row>
-<entry>Code</entry><entry>Code System</entry><entry>Print Name</entry>
+<entry>Concept Code</entry><entry>Concept Name</entry><entry>Code System</entry><entry>Description</entry>
 </row></thead><tbody>
-<row><entry>LA17208-2</entry><entry>LOINC</entry><entry>Bleeding controlled</entry></row>
-<row><entry>LA17209-0</entry><entry>LOINC</entry><entry>Bleeding uncontrolled</entry></row>
-<row><entry>LA17210-8</entry><entry>LOINC</entry><entry>Decapitation</entry></row>
-<row><entry>LA17211-6</entry><entry>LOINC</entry><entry>Drainage</entry></row>
-<row><entry>LA17213-2</entry><entry>LOINC</entry><entry>Mass/lesion</entry></row>
-<row><entry>LA17214-0</entry><entry>LOINC</entry><entry>Puncture/stab wound</entry></row>
-<row><entry>LA17215-7</entry><entry>LOINC</entry><entry>Swelling/bruising/contusion with pain</entry></row>
-<row><entry>LA17220-7</entry><entry>LOINC</entry><entry>Swelling/bruising/contusion without pain</entry></row>
-<row><entry>LA17244-7</entry><entry>LOINC</entry><entry>Gunshot wound-entry</entry></row>
-<row><entry>LA17245-4</entry><entry>LOINC</entry><entry>Gunshot wound-exit</entry></row>
-<row><entry>LA18220-6</entry><entry>LOINC</entry><entry>Avulsion</entry></row>
-<row><entry>LA18221-4</entry><entry>LOINC</entry><entry>Burn, blistering</entry></row>
-<row><entry>LA18222-2</entry><entry>LOINC</entry><entry>Burn, charring</entry></row>
-<row><entry>LA18223-0</entry><entry>LOINC</entry><entry>Burn, redness</entry></row>
-<row><entry>LA18224-8</entry><entry>LOINC</entry><entry>Burn, white/waxy</entry></row>
-<row><entry>LA18225-5</entry><entry>LOINC</entry><entry>Deformity</entry></row>
-<row><entry>LA18226-3</entry><entry>LOINC</entry><entry>Foreign body</entry></row>
-<row><entry>LA6626-1</entry><entry>LOINC</entry><entry>Normal</entry></row>
-<row><entry>LA6630-3</entry><entry>LOINC</entry><entry>Not done</entry></row>
-<row><entry>LA7410-9</entry><entry>LOINC</entry><entry>Abrasion</entry></row>
-<row><entry>LA7452-1</entry><entry>LOINC</entry><entry>Laceration</entry></row>
-<row><entry>LA7460-4</entry><entry>LOINC</entry><entry>Pain</entry></row>
+<row><entry>LA17208-2</entry><entry>Bleeding controlled</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA17209-0</entry><entry>Bleeding uncontrolled</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA17210-8</entry><entry>Decapitation</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA17211-6</entry><entry>Drainage</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA17213-2</entry><entry>Mass/lesion</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA17214-0</entry><entry>Puncture/stab wound</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA17215-7</entry><entry>Swelling/bruising/contusion with pain</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA17220-7</entry><entry>Swelling/bruising/contusion without pain</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA17244-7</entry><entry>Gunshot wound-entry</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA17245-4</entry><entry>Gunshot wound-exit</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA18220-6</entry><entry>Avulsion</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA18221-4</entry><entry>Burn, blistering</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA18222-2</entry><entry>Burn, charring</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA18223-0</entry><entry>Burn, redness</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA18224-8</entry><entry>Burn, white/waxy</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA18225-5</entry><entry>Deformity</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA18226-3</entry><entry>Foreign body</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA6626-1</entry><entry>Normal</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA6630-3</entry><entry>Not done</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA7410-9</entry><entry>Abrasion</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA7452-1</entry><entry>Laceration</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA7460-4</entry><entry>Pain</entry><entry>LOINC</entry><entry></entry></row>
 </tbody></tgroup></table>
 </section>
 </body>

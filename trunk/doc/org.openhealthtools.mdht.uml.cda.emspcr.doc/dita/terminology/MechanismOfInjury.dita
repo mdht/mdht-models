@@ -14,18 +14,20 @@
 <tbody>
 <row><entry>Value Set</entry><entry>MechanismOfInjury - 2.16.840.1.113883.17.3.5.1</entry></row>
 <row><entry>Code System</entry><entry>LOINC - 2.16.840.1.113883.6.1</entry></row>
+<row><entry>Definition</entry><entry>Kind of physical phenomenon causing an injury</entry></row>
 </tbody></tgroup></table>
-<table><tgroup cols="3">
+<table><tgroup cols="4">
 <colspec colname="col1" colwidth="1*"/>
-<colspec colname="col2" colwidth="1*"/>
-<colspec colname="col3" colwidth="2*"/>
+<colspec colname="col2" colwidth="2*"/>
+<colspec colname="col3" colwidth="1*"/>
+<colspec colname="col4" colwidth="3*"/>
 <thead><row>
-<entry>Code</entry><entry>Code System</entry><entry>Print Name</entry>
+<entry>Concept Code</entry><entry>Concept Name</entry><entry>Code System</entry><entry>Description</entry>
 </row></thead><tbody>
-<row><entry>LA17335-3</entry><entry>LOINC</entry><entry>Blunt</entry></row>
-<row><entry>LA17336-1</entry><entry>LOINC</entry><entry>Penetrating</entry></row>
-<row><entry>LA46-8</entry><entry>LOINC</entry><entry>Other</entry></row>
-<row><entry>LA7318-4</entry><entry>LOINC</entry><entry>Burn</entry></row>
+<row><entry>LA17335-3</entry><entry>Blunt</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA17336-1</entry><entry>Penetrating</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA46-8</entry><entry>Other</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA7318-4</entry><entry>Burn</entry><entry>LOINC</entry><entry></entry></row>
 </tbody></tgroup></table>
 </section>
 </body>

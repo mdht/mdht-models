@@ -14,27 +14,29 @@
 <tbody>
 <row><entry>Value Set</entry><entry>BackSpineFindingLocation - 2.16.840.1.113883.17.3.5.35</entry></row>
 <row><entry>Code System</entry><entry>LOINC - 2.16.840.1.113883.6.1</entry></row>
+<row><entry>Definition</entry><entry>Location of finding resulting from EMS back and spine assessment</entry></row>
 </tbody></tgroup></table>
-<table><tgroup cols="3">
+<table><tgroup cols="4">
 <colspec colname="col1" colwidth="1*"/>
-<colspec colname="col2" colwidth="1*"/>
-<colspec colname="col3" colwidth="2*"/>
+<colspec colname="col2" colwidth="2*"/>
+<colspec colname="col3" colwidth="1*"/>
+<colspec colname="col4" colwidth="3*"/>
 <thead><row>
-<entry>Code</entry><entry>Code System</entry><entry>Print Name</entry>
+<entry>Concept Code</entry><entry>Concept Name</entry><entry>Code System</entry><entry>Description</entry>
 </row></thead><tbody>
-<row><entry>LA18726-2</entry><entry>LOINC</entry><entry>Back-general</entry></row>
-<row><entry>LA18727-0</entry><entry>LOINC</entry><entry>Cervical-left</entry></row>
-<row><entry>LA18728-8</entry><entry>LOINC</entry><entry>Cervical-midline</entry></row>
-<row><entry>LA18729-6</entry><entry>LOINC</entry><entry>Cervical-right</entry></row>
-<row><entry>LA18730-4</entry><entry>LOINC</entry><entry>Lumbar-left</entry></row>
-<row><entry>LA18731-2</entry><entry>LOINC</entry><entry>Lumbar-right</entry></row>
-<row><entry>LA18732-0</entry><entry>LOINC</entry><entry>Sacral-right</entry></row>
-<row><entry>LA18733-8</entry><entry>LOINC</entry><entry>Sacral-left</entry></row>
-<row><entry>LA18734-6</entry><entry>LOINC</entry><entry>Sacral-midline</entry></row>
-<row><entry>LA18735-3</entry><entry>LOINC</entry><entry>Lumbar-midline</entry></row>
-<row><entry>LA18736-1</entry><entry>LOINC</entry><entry>Thoracic-midline</entry></row>
-<row><entry>LA18737-9</entry><entry>LOINC</entry><entry>Thoracic-left</entry></row>
-<row><entry>LA18738-7</entry><entry>LOINC</entry><entry>Thoracic-right</entry></row>
+<row><entry>LA18726-2</entry><entry>Back-general</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA18727-0</entry><entry>Cervical-left</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA18728-8</entry><entry>Cervical-midline</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA18729-6</entry><entry>Cervical-right</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA18730-4</entry><entry>Lumbar-left</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA18731-2</entry><entry>Lumbar-right</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA18732-0</entry><entry>Sacral-right</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA18733-8</entry><entry>Sacral-left</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA18734-6</entry><entry>Sacral-midline</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA18735-3</entry><entry>Lumbar-midline</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA18736-1</entry><entry>Thoracic-midline</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA18737-9</entry><entry>Thoracic-left</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA18738-7</entry><entry>Thoracic-right</entry><entry>LOINC</entry><entry></entry></row>
 </tbody></tgroup></table>
 </section>
 </body>

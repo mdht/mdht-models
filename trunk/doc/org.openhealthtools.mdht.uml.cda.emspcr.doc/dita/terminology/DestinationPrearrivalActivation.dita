@@ -14,22 +14,24 @@
 <tbody>
 <row><entry>Value Set</entry><entry>DestinationPrearrivalActivation - 2.16.840.1.113883.17.3.5.87</entry></row>
 <row><entry>Code System</entry><entry>LOINC - 2.16.840.1.113883.6.1</entry></row>
+<row><entry>Definition</entry><entry>Kind of preparation requested at destination prior to patient arrival</entry></row>
 </tbody></tgroup></table>
-<table><tgroup cols="3">
+<table><tgroup cols="4">
 <colspec colname="col1" colwidth="1*"/>
-<colspec colname="col2" colwidth="1*"/>
-<colspec colname="col3" colwidth="2*"/>
+<colspec colname="col2" colwidth="2*"/>
+<colspec colname="col3" colwidth="1*"/>
+<colspec colname="col4" colwidth="3*"/>
 <thead><row>
-<entry>Code</entry><entry>Code System</entry><entry>Print Name</entry>
+<entry>Concept Code</entry><entry>Concept Name</entry><entry>Code System</entry><entry>Description</entry>
 </row></thead><tbody>
-<row><entry>LA18117-4</entry><entry>LOINC</entry><entry>Yes, adult trauma</entry></row>
-<row><entry>LA18118-2</entry><entry>LOINC</entry><entry>Yes, cardiac arrest</entry></row>
-<row><entry>LA18119-0</entry><entry>LOINC</entry><entry>Yes, obstetrics</entry></row>
-<row><entry>LA18120-8</entry><entry>LOINC</entry><entry>Yes, other</entry></row>
-<row><entry>LA18121-6</entry><entry>LOINC</entry><entry>Yes, pediatric trauma</entry></row>
-<row><entry>LA18122-4</entry><entry>LOINC</entry><entry>Yes, STEMI</entry></row>
-<row><entry>LA18123-2</entry><entry>LOINC</entry><entry>Yes, stroke</entry></row>
-<row><entry>LA32-8</entry><entry>LOINC</entry><entry>No</entry></row>
+<row><entry>LA18117-4</entry><entry>Yes, adult trauma</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA18118-2</entry><entry>Yes, cardiac arrest</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA18119-0</entry><entry>Yes, obstetrics</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA18120-8</entry><entry>Yes, other</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA18121-6</entry><entry>Yes, pediatric trauma</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA18122-4</entry><entry>Yes, STEMI</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA18123-2</entry><entry>Yes, stroke</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA32-8</entry><entry>No</entry><entry>LOINC</entry><entry></entry></row>
 </tbody></tgroup></table>
 </section>
 </body>

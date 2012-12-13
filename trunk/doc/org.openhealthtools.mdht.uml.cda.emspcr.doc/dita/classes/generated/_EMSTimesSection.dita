@@ -8,8 +8,6 @@
 <resourceid id="2.16.840.1.113883.17.3.10.1.10"/>
 </prolog>
 <body>
-<section id="knownSubclasses">
-</section>
 <section id="description">
 </section>
 <ol id="conformance">
@@ -19,24 +17,10 @@
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt> (CONF:10821)
 </li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt> (CONF:10824) <ol><li> This entry <b>SHALL</b> conform to <xref href="../DerivedEntry.dita">Derived Entry</xref> template (templateId: <tt>2.16.840.1.1133883.17.3.10.1.24</tt>)</li><li> This entry <b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt> (CONF:10853) <ol><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:10855)<tt><b>/@code</b>="69475-2" </tt><i>Unit left scene time</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10854)</li><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type TS (CONF:10856)</li></ol></li></ol>
-</li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt> (CONF:10825) <ol><li> This entry <b>SHALL</b> conform to <xref href="../DerivedEntry.dita">Derived Entry</xref> template (templateId: <tt>2.16.840.1.1133883.17.3.10.1.24</tt>)</li><li> This entry <b>SHALL</b> contain zero or one [0..1] <tt><b>observation</b></tt> (CONF:10857) <ol><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:10859)<tt><b>/@code</b>="69476-0" </tt><i>Patient arrived at destination time</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10858)</li><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type TS (CONF:10860)</li></ol></li></ol>
-</li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt> (CONF:10826) <ol><li> This entry <b>SHALL</b> conform to <xref href="../DerivedEntry.dita">Derived Entry</xref> template (templateId: <tt>2.16.840.1.1133883.17.3.10.1.24</tt>)</li><li> This entry <b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt> (CONF:10861) <ol><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:10863)<tt><b>/@code</b>="69477-8" </tt><i>Unit back in service time</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10862)</li><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type TS (CONF:10864)</li></ol></li></ol>
-</li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt> (CONF:10827) <ol><li> This entry <b>SHALL</b> conform to <xref href="../DerivedEntry.dita">Derived Entry</xref> template (templateId: <tt>2.16.840.1.1133883.17.3.10.1.24</tt>)</li><li> This entry <b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt> (CONF:10865) <ol><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:10867)<tt><b>/@code</b>="69470-3" </tt><i>Dispatch notified time</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10866)</li><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type TS (CONF:10868)</li></ol></li></ol>
-</li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt> (CONF:10828) <ol><li> This entry <b>SHALL</b> conform to <xref href="../DerivedEntry.dita">Derived Entry</xref> template (templateId: <tt>2.16.840.1.1133883.17.3.10.1.24</tt>)</li><li> This entry <b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt> (CONF:10849) <ol><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:10851)<tt><b>/@code</b>="69474-5" </tt><i>Unit at patient time</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10850)</li><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type TS (CONF:10852)</li></ol></li></ol>
-</li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt> (CONF:10829) <ol><li> This entry <b>SHALL</b> conform to <xref href="../DerivedEntry.dita">Derived Entry</xref> template (templateId: <tt>2.16.840.1.1133883.17.3.10.1.24</tt>)</li><li> This entry <b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt> (CONF:10845) <ol><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:10847)<tt><b>/@code</b>="69473-7" </tt><i>Unit on scene time</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10846)</li><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type TS (CONF:10848)</li></ol></li></ol>
-</li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt> (CONF:10830) <ol><li> This entry <b>SHALL</b> conform to <xref href="../DerivedEntry.dita">Derived Entry</xref> template (templateId: <tt>2.16.840.1.1133883.17.3.10.1.24</tt>)</li><li> This entry <b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt> (CONF:10841) <ol><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:10843)<tt><b>/@code</b>="69472-9" </tt><i>Unit en route time</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10842)</li><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type TS (CONF:10844)</li></ol></li></ol>
-</li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt> (CONF:10831) <ol><li> This entry <b>SHALL</b> conform to <xref href="../DerivedEntry.dita">Derived Entry</xref> template (templateId: <tt>2.16.840.1.1133883.17.3.10.1.24</tt>)</li><li> This entry <b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt> (CONF:10837) <ol><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:10839)<tt><b>/@code</b>="69471-1" </tt><i>Unit notified time</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10838)</li><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type TS (CONF:10840)</li></ol></li></ol>
-</li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt> (CONF:10832) <ol><li> This entry <b>SHALL</b> conform to <xref href="../DerivedEntry.dita">Derived Entry</xref> template (templateId: <tt>2.16.840.1.1133883.17.3.10.1.24</tt>)</li><li> This entry <b>SHALL</b> contain zero or more [0..*] <tt><b>observation</b></tt> (CONF:10833) <ol><li> Such observations <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:10835)<tt><b>/@code</b>="69469-5" </tt><i>Call time</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10834)</li><li> Such observations <b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type TS (CONF:10836)</li></ol></li></ol>
-</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt> (CONF:10832) <ol><li> This entry <b>SHALL</b> conform to <xref href="../DerivedEntry.dita">Derived Entry</xref> template (templateId: <tt>2.16.840.1.1133883.17.3.10.1.24</tt>)</li><li> This entry <b>SHALL</b> contain zero or more [0..*] <tt><b>observation</b></tt> (CONF:10833) <ol><li> Such observations <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:10835)<tt><b>/@code</b>="69469-5" </tt><i>Call time</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10834)</li><li> Such observations <b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type TS (CONF:10836)<p><i>NEMSIS Trace: ETimes.01</i></p></li></ol></li><li> This entry <b>SHALL</b> contain zero or one [0..1] <tt><b>observation</b></tt> <ol><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:10839)<tt><b>/@code</b>="69471-1" </tt><i>Unit notified time</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10838)</li><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type TS (CONF:10840)<p><i>NEMSIS Trace: ETimes.03
+This is the value represented in the header for the encompassing encounter</i></p></li></ol></li><li> This entry <b>SHALL</b> contain zero or one [0..1] <tt><b>observation</b></tt> <ol><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:10843)<tt><b>/@code</b>="69472-9" </tt><i>Unit en route time</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10842)</li><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type TS (CONF:10844)<p><i>NEMSIS Trace: ETimes.05</i></p></li></ol></li><li> This entry <b>SHALL</b> contain zero or one [0..1] <tt><b>observation</b></tt> <ol><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:10847)<tt><b>/@code</b>="69473-7" </tt><i>Unit on scene time</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10846)</li><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type TS (CONF:10848)<p><i>NEMSIS Trace: ETimes.06</i></p></li></ol></li><li> This entry <b>SHALL</b> contain zero or one [0..1] <tt><b>observation</b></tt> <ol><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:10851)<tt><b>/@code</b>="69474-5" </tt><i>Unit at patient time</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10850)</li><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type TS (CONF:10852)<p><i>NEMSIS Trace: ETimes.07</i></p></li></ol></li><li> This entry <b>SHALL</b> contain zero or one [0..1] <tt><b>observation</b></tt> <ol><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:10855)<tt><b>/@code</b>="69475-2" </tt><i>Unit left scene time</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10854)</li><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type TS (CONF:10856)<p><i>NEMSIS Trace: ETimes.09</i></p></li></ol></li><li> This entry <b>SHALL</b> contain zero or one [0..1] <tt><b>observation</b></tt> <ol><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:10859)<tt><b>/@code</b>="69476-0" </tt><i>Patient arrived at destination time</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10858)</li><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type TS (CONF:10860)<p><i>NEMSIS Trace: ETimes.11</i></p></li></ol></li><li> This entry <b>SHALL</b> contain zero or one [0..1] <tt><b>observation</b></tt> <ol><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:10863)<tt><b>/@code</b>="69477-8" </tt><i>Unit back in service time</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10862)</li><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type TS (CONF:10864)<p><i>NEMSIS Trace: ETimes.13</i></p></li></ol></li><li> This entry <b>SHALL</b> contain zero or one [0..1] <tt><b>observation</b></tt> <ol><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:10867)<tt><b>/@code</b>="69470-3" </tt><i>Dispatch notified time</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10866)</li><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type TS (CONF:10868)<p><i>NEMSIS Trace: ETimes.02</i></p></li></ol></li></ol>
+<ol>
+<li>Contains exactly one [1..1] <xref href="../EMSTimesEntry.dita">EMS Times Entry</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.24</tt>)</li></ol></li>
 </ol>
 <ol id="aggregate">
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="67667-6" </tt><i>EMS Times Section</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10820)
@@ -45,115 +29,12 @@
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt> (CONF:10821)
 </li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt> (CONF:10824) <ol><li> This entry <b>SHALL</b> conform to <xref href="../DerivedEntry.dita">Derived Entry</xref> template (templateId: <tt>2.16.840.1.1133883.17.3.10.1.24</tt>)</li><li> This entry <b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt> (CONF:10853) <ol><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:10855)<tt><b>/@code</b>="69475-2" </tt><i>Unit left scene time</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10854)</li><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type TS (CONF:10856)</li></ol></li></ol>
-</li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt> (CONF:10825) <ol><li> This entry <b>SHALL</b> conform to <xref href="../DerivedEntry.dita">Derived Entry</xref> template (templateId: <tt>2.16.840.1.1133883.17.3.10.1.24</tt>)</li><li> This entry <b>SHALL</b> contain zero or one [0..1] <tt><b>observation</b></tt> (CONF:10857) <ol><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:10859)<tt><b>/@code</b>="69476-0" </tt><i>Patient arrived at destination time</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10858)</li><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type TS (CONF:10860)</li></ol></li></ol>
-</li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt> (CONF:10826) <ol><li> This entry <b>SHALL</b> conform to <xref href="../DerivedEntry.dita">Derived Entry</xref> template (templateId: <tt>2.16.840.1.1133883.17.3.10.1.24</tt>)</li><li> This entry <b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt> (CONF:10861) <ol><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:10863)<tt><b>/@code</b>="69477-8" </tt><i>Unit back in service time</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10862)</li><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type TS (CONF:10864)</li></ol></li></ol>
-</li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt> (CONF:10827) <ol><li> This entry <b>SHALL</b> conform to <xref href="../DerivedEntry.dita">Derived Entry</xref> template (templateId: <tt>2.16.840.1.1133883.17.3.10.1.24</tt>)</li><li> This entry <b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt> (CONF:10865) <ol><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:10867)<tt><b>/@code</b>="69470-3" </tt><i>Dispatch notified time</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10866)</li><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type TS (CONF:10868)</li></ol></li></ol>
-</li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt> (CONF:10828) <ol><li> This entry <b>SHALL</b> conform to <xref href="../DerivedEntry.dita">Derived Entry</xref> template (templateId: <tt>2.16.840.1.1133883.17.3.10.1.24</tt>)</li><li> This entry <b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt> (CONF:10849) <ol><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:10851)<tt><b>/@code</b>="69474-5" </tt><i>Unit at patient time</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10850)</li><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type TS (CONF:10852)</li></ol></li></ol>
-</li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt> (CONF:10829) <ol><li> This entry <b>SHALL</b> conform to <xref href="../DerivedEntry.dita">Derived Entry</xref> template (templateId: <tt>2.16.840.1.1133883.17.3.10.1.24</tt>)</li><li> This entry <b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt> (CONF:10845) <ol><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:10847)<tt><b>/@code</b>="69473-7" </tt><i>Unit on scene time</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10846)</li><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type TS (CONF:10848)</li></ol></li></ol>
-</li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt> (CONF:10830) <ol><li> This entry <b>SHALL</b> conform to <xref href="../DerivedEntry.dita">Derived Entry</xref> template (templateId: <tt>2.16.840.1.1133883.17.3.10.1.24</tt>)</li><li> This entry <b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt> (CONF:10841) <ol><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:10843)<tt><b>/@code</b>="69472-9" </tt><i>Unit en route time</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10842)</li><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type TS (CONF:10844)</li></ol></li></ol>
-</li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt> (CONF:10831) <ol><li> This entry <b>SHALL</b> conform to <xref href="../DerivedEntry.dita">Derived Entry</xref> template (templateId: <tt>2.16.840.1.1133883.17.3.10.1.24</tt>)</li><li> This entry <b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt> (CONF:10837) <ol><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:10839)<tt><b>/@code</b>="69471-1" </tt><i>Unit notified time</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10838)</li><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type TS (CONF:10840)</li></ol></li></ol>
-</li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt> (CONF:10832) <ol><li> This entry <b>SHALL</b> conform to <xref href="../DerivedEntry.dita">Derived Entry</xref> template (templateId: <tt>2.16.840.1.1133883.17.3.10.1.24</tt>)</li><li> This entry <b>SHALL</b> contain zero or more [0..*] <tt><b>observation</b></tt> (CONF:10833) <ol><li> Such observations <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:10835)<tt><b>/@code</b>="69469-5" </tt><i>Call time</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10834)</li><li> Such observations <b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type TS (CONF:10836)</li></ol></li></ol>
-</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt> (CONF:10832) <ol><li> This entry <b>SHALL</b> conform to <xref href="../DerivedEntry.dita">Derived Entry</xref> template (templateId: <tt>2.16.840.1.1133883.17.3.10.1.24</tt>)</li><li> This entry <b>SHALL</b> contain zero or more [0..*] <tt><b>observation</b></tt> (CONF:10833) <ol><li> Such observations <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:10835)<tt><b>/@code</b>="69469-5" </tt><i>Call time</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10834)</li><li> Such observations <b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type TS (CONF:10836)<p><i>NEMSIS Trace: ETimes.01</i></p></li></ol></li><li> This entry <b>SHALL</b> contain zero or one [0..1] <tt><b>observation</b></tt> <ol><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:10839)<tt><b>/@code</b>="69471-1" </tt><i>Unit notified time</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10838)</li><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type TS (CONF:10840)<p><i>NEMSIS Trace: ETimes.03
+This is the value represented in the header for the encompassing encounter</i></p></li></ol></li><li> This entry <b>SHALL</b> contain zero or one [0..1] <tt><b>observation</b></tt> <ol><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:10843)<tt><b>/@code</b>="69472-9" </tt><i>Unit en route time</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10842)</li><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type TS (CONF:10844)<p><i>NEMSIS Trace: ETimes.05</i></p></li></ol></li><li> This entry <b>SHALL</b> contain zero or one [0..1] <tt><b>observation</b></tt> <ol><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:10847)<tt><b>/@code</b>="69473-7" </tt><i>Unit on scene time</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10846)</li><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type TS (CONF:10848)<p><i>NEMSIS Trace: ETimes.06</i></p></li></ol></li><li> This entry <b>SHALL</b> contain zero or one [0..1] <tt><b>observation</b></tt> <ol><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:10851)<tt><b>/@code</b>="69474-5" </tt><i>Unit at patient time</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10850)</li><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type TS (CONF:10852)<p><i>NEMSIS Trace: ETimes.07</i></p></li></ol></li><li> This entry <b>SHALL</b> contain zero or one [0..1] <tt><b>observation</b></tt> <ol><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:10855)<tt><b>/@code</b>="69475-2" </tt><i>Unit left scene time</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10854)</li><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type TS (CONF:10856)<p><i>NEMSIS Trace: ETimes.09</i></p></li></ol></li><li> This entry <b>SHALL</b> contain zero or one [0..1] <tt><b>observation</b></tt> <ol><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:10859)<tt><b>/@code</b>="69476-0" </tt><i>Patient arrived at destination time</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10858)</li><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type TS (CONF:10860)<p><i>NEMSIS Trace: ETimes.11</i></p></li></ol></li><li> This entry <b>SHALL</b> contain zero or one [0..1] <tt><b>observation</b></tt> <ol><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:10863)<tt><b>/@code</b>="69477-8" </tt><i>Unit back in service time</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10862)</li><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type TS (CONF:10864)<p><i>NEMSIS Trace: ETimes.13</i></p></li></ol></li><li> This entry <b>SHALL</b> contain zero or one [0..1] <tt><b>observation</b></tt> <ol><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:10867)<tt><b>/@code</b>="69470-3" </tt><i>Dispatch notified time</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10866)</li><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type TS (CONF:10868)<p><i>NEMSIS Trace: ETimes.02</i></p></li></ol></li></ol>
+<ol>
+<li>Contains exactly one [1..1] <xref href="../EMSTimesEntry.dita">EMS Times Entry</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.24</tt>)</li></ol></li>
 </ol>
-<section id="tableconformance"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="8" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><colspec colname="col2" colnum="2" /><colspec colname="col3" colnum="3" /><colspec colname="col4" colnum="4" /><colspec colname="col5" colnum="5" /><colspec colname="col6" colnum="6" /><colspec colname="col7" colnum="7" /><thead> <row><entry namest="col0" nameend="col7" >emspcr::EMSTimesSection</entry>  </row>  <row><entry namest="col0" nameend="col7" >/cda:ClinicalDocument/cda:component/cda:structuredBody/cda:component/cda:section[cda:templateId/@root = 2.16.840.1.113883.17.3.10.1.10]/</entry>  </row>  <row><entry>Name</entry><entry>XPath</entry><entry>Cardinality</entry><entry>Severity</entry><entry>Nullable</entry><entry>Data Type</entry><entry>Conformance</entry><entry>Value(s)</entry></row></thead><tbody><row><entry>classCode</entry><entry>@classCode</entry><entry>0..1</entry><entry></entry><entry>NO</entry><entry>ActClass</entry><entry></entry><entry> DOCSECT</entry></row> 
-<row><entry>moodCode</entry><entry>@moodCode</entry><entry>0..1</entry><entry></entry><entry>NO</entry><entry>ActMood</entry><entry></entry><entry> EVN</entry></row> 
-<row><entry>nullFlavor</entry><entry>@nullFlavor</entry><entry>0..1</entry><entry></entry><entry>NO</entry><entry>NullFlavor</entry><entry></entry><entry> ASKU</entry></row> 
-<row><entry>sectionId</entry><entry>@sectionId</entry><entry>0..1</entry><entry></entry><entry>NO</entry><entry>String</entry><entry></entry><entry> </entry></row> 
-<row><entry>code</entry><entry>code</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>CE</entry><entry>CONF:10820</entry><entry>LOINC 2.16.840.1.113883.6.1 67667-6</entry></row> 
-<row><entry>confidentialityCode</entry><entry>confidentialityCode</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>CE</entry><entry></entry><entry> </entry></row> 
-<row><entry>id</entry><entry>id</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>II</entry><entry></entry><entry> </entry></row> 
-<row><entry>languageCode</entry><entry>languageCode</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>CS</entry><entry></entry><entry> </entry></row> 
-<row><entry>realmCode</entry><entry>realmCode</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>CS</entry><entry></entry><entry> </entry></row> 
-<row><entry>templateId</entry><entry>templateId</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>II</entry><entry></entry><entry> 2.16.840.1.113883.17.3.10.1.10</entry></row> 
-<row><entry>title</entry><entry>title</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>ST</entry><entry>CONF:10822</entry><entry> MISSINGTYPE</entry></row> 
-<row><entry>author</entry><entry>author</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>Author</entry><entry></entry><entry> </entry></row> 
-<row><entry>component</entry><entry>component</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>Component5</entry><entry></entry><entry> </entry></row> 
-<row><entry>entry</entry><entry>entry</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>Entry</entry><entry></entry><entry> </entry></row> 
-<row><entry>entry1</entry><entry>entry1</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>DerivedEntry</entry><entry>CONF:10824</entry><entry> </entry></row> 
-<row><entry>entry2</entry><entry>entry2</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>DerivedEntry</entry><entry>CONF:10825</entry><entry> </entry></row> 
-<row><entry>entry3</entry><entry>entry3</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>DerivedEntry</entry><entry>CONF:10826</entry><entry> </entry></row> 
-<row><entry>entry4</entry><entry>entry4</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>DerivedEntry</entry><entry>CONF:10827</entry><entry> </entry></row> 
-<row><entry>entry5</entry><entry>entry5</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>DerivedEntry</entry><entry>CONF:10828</entry><entry> </entry></row> 
-<row><entry>entry6</entry><entry>entry6</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>DerivedEntry</entry><entry>CONF:10829</entry><entry> </entry></row> 
-<row><entry>entry7</entry><entry>entry7</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>DerivedEntry</entry><entry>CONF:10830</entry><entry> </entry></row> 
-<row><entry>entry8</entry><entry>entry8</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>DerivedEntry</entry><entry>CONF:10831</entry><entry> </entry></row> 
-<row><entry>entry9</entry><entry>entry9</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>DerivedEntry</entry><entry>CONF:10832</entry><entry> </entry></row> 
-<row><entry>informant</entry><entry>informant</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>Informant12</entry><entry></entry><entry> </entry></row> 
-<row><entry>subject</entry><entry>subject</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>Subject</entry><entry></entry><entry> </entry></row> 
-<row><entry>text</entry><entry>text</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>StrucDocText</entry><entry>CONF:10821</entry><entry> </entry></row> 
-<row><entry>typeId</entry><entry>typeId</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>InfrastructureRootTypeId</entry><entry></entry><entry> </entry></row> 
-</tbody></tgroup></table></p></section>
-<codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
-<section xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd">
-  <templateId root="2.16.840.1.113883.17.3.10.1.10"/>
-  <id root="MDHT" extension="551241599"/>
-  <code code="67667-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="EMS Times Section"/>
-  <title>EMS Times</title>
-  <text/>
-  <entry>
-    <observation>
-      <code code="69475-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Unit left scene time"/>
-      <value xsi:type="TS"/>
-    </observation>
-  </entry>
-  <entry>
-    <observation>
-      <code code="69476-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Patient arrived at destination time"/>
-      <value xsi:type="TS"/>
-    </observation>
-  </entry>
-  <entry>
-    <observation>
-      <code code="69477-8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Unit back in service time"/>
-      <value xsi:type="TS"/>
-    </observation>
-  </entry>
-  <entry>
-    <observation>
-      <code code="69470-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Dispatch notified time"/>
-      <value xsi:type="TS"/>
-    </observation>
-  </entry>
-  <entry>
-    <observation>
-      <code code="69474-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Unit at patient time"/>
-      <value xsi:type="TS"/>
-    </observation>
-  </entry>
-  <entry>
-    <observation>
-      <code code="69473-7" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Unit on scene time"/>
-      <value xsi:type="TS"/>
-    </observation>
-  </entry>
-  <entry>
-    <observation>
-      <code code="69472-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Unit en route time"/>
-      <value xsi:type="TS"/>
-    </observation>
-  </entry>
-  <entry>
-    <observation>
-      <code code="69471-1" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Unit notified time"/>
-      <value xsi:type="TS"/>
-    </observation>
-  </entry>
-  <entry>
-    <observation>
-      <code code="69469-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Call time"/>
-      <value xsi:type="TS"/>
-    </observation>
-  </entry>
-</section>]]></codeblock>
+<codeblock id="example"><![CDATA[]]></codeblock>
 <section id="changes">
 </section>
 <p><ph id="classformalname">EMS Times Section</ph></p>

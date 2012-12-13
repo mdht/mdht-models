@@ -14,20 +14,22 @@
 <tbody>
 <row><entry>Value Set</entry><entry>ResusctitationDiscontinueReason - 2.16.840.1.113883.17.3.5.62</entry></row>
 <row><entry>Code System</entry><entry>LOINC - 2.16.840.1.113883.6.1</entry></row>
+<row><entry>Definition</entry><entry>Rationale for aborting attempt to resuscitate a patient</entry></row>
 </tbody></tgroup></table>
-<table><tgroup cols="3">
+<table><tgroup cols="4">
 <colspec colname="col1" colwidth="1*"/>
-<colspec colname="col2" colwidth="1*"/>
-<colspec colname="col3" colwidth="2*"/>
+<colspec colname="col2" colwidth="2*"/>
+<colspec colname="col3" colwidth="1*"/>
+<colspec colname="col4" colwidth="3*"/>
 <thead><row>
-<entry>Code</entry><entry>Code System</entry><entry>Print Name</entry>
+<entry>Concept Code</entry><entry>Concept Name</entry><entry>Code System</entry><entry>Description</entry>
 </row></thead><tbody>
-<row><entry>LA17078-9</entry><entry>LOINC</entry><entry>DNR</entry></row>
-<row><entry>LA17079-7</entry><entry>LOINC</entry><entry>Medical control order</entry></row>
-<row><entry>LA17080-5</entry><entry>LOINC</entry><entry>Obvious signs of death</entry></row>
-<row><entry>LA17081-3</entry><entry>LOINC</entry><entry>Protocol/policy requirements completed</entry></row>
-<row><entry>LA17082-1</entry><entry>LOINC</entry><entry>Return of spontaneous circulation (pulse or BP noted)</entry></row>
-<row><entry>LA18204-0</entry><entry>LOINC</entry><entry>Physically unable to perform</entry></row>
+<row><entry>LA17078-9</entry><entry>DNR</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA17079-7</entry><entry>Medical control order</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA17080-5</entry><entry>Obvious signs of death</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA17081-3</entry><entry>Protocol/policy requirements completed</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA17082-1</entry><entry>Return of spontaneous circulation (pulse or BP noted)</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA18204-0</entry><entry>Physically unable to perform</entry><entry>LOINC</entry><entry></entry></row>
 </tbody></tgroup></table>
 </section>
 </body>

@@ -14,24 +14,26 @@
 <tbody>
 <row><entry>Value Set</entry><entry>AirwayDeviceConfirmationMethod - 2.16.840.1.113883.17.3.5.60</entry></row>
 <row><entry>Code System</entry><entry>LOINC - 2.16.840.1.113883.6.1</entry></row>
+<row><entry>Definition</entry><entry>Procedure for confirming airway device placement</entry></row>
 </tbody></tgroup></table>
-<table><tgroup cols="3">
+<table><tgroup cols="4">
 <colspec colname="col1" colwidth="1*"/>
-<colspec colname="col2" colwidth="1*"/>
-<colspec colname="col3" colwidth="2*"/>
+<colspec colname="col2" colwidth="2*"/>
+<colspec colname="col3" colwidth="1*"/>
+<colspec colname="col4" colwidth="3*"/>
 <thead><row>
-<entry>Code</entry><entry>Code System</entry><entry>Print Name</entry>
+<entry>Concept Code</entry><entry>Concept Name</entry><entry>Code System</entry><entry>Description</entry>
 </row></thead><tbody>
-<row><entry>LA18672-8</entry><entry>LOINC</entry><entry>Auscultation</entry></row>
-<row><entry>LA18673-6</entry><entry>LOINC</entry><entry>Bulb syringe aspiration</entry></row>
-<row><entry>LA18674-4</entry><entry>LOINC</entry><entry>Colorimetric ETCO2</entry></row>
-<row><entry>LA18675-1</entry><entry>LOINC</entry><entry>Condensation in tube</entry></row>
-<row><entry>LA18676-9</entry><entry>LOINC</entry><entry>Digital (numeric) ETCO2</entry></row>
-<row><entry>LA18677-7</entry><entry>LOINC</entry><entry>Direct re-visualization of tube in place</entry></row>
-<row><entry>LA18678-5</entry><entry>LOINC</entry><entry>Endotracheal tube whistle (BAAM, etc)</entry></row>
-<row><entry>LA18679-3</entry><entry>LOINC</entry><entry>Other airway device placement confirmation</entry></row>
-<row><entry>LA18680-1</entry><entry>LOINC</entry><entry>Visualization of vocal cords</entry></row>
-<row><entry>LA18681-9</entry><entry>LOINC</entry><entry>Waveform ETCO2</entry></row>
+<row><entry>LA18672-8</entry><entry>Auscultation</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA18673-6</entry><entry>Bulb syringe aspiration</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA18674-4</entry><entry>Colorimetric ETCO2</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA18675-1</entry><entry>Condensation in tube</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA18676-9</entry><entry>Digital (numeric) ETCO2</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA18677-7</entry><entry>Direct re-visualization of tube in place</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA18678-5</entry><entry>Endotracheal tube whistle (BAAM, etc)</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA18679-3</entry><entry>Other airway device placement confirmation</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA18680-1</entry><entry>Visualization of vocal cords</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA18681-9</entry><entry>Waveform ETCO2</entry><entry>LOINC</entry><entry></entry></row>
 </tbody></tgroup></table>
 </section>
 </body>

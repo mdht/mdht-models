@@ -14,23 +14,25 @@
 <tbody>
 <row><entry>Value Set</entry><entry>DispatchDelayType - 2.16.840.1.113883.17.3.5.50</entry></row>
 <row><entry>Code System</entry><entry>LOINC - 2.16.840.1.113883.6.1</entry></row>
+<row><entry>Definition</entry><entry>Kind of circumstance delaying an EMS dispatch</entry></row>
 </tbody></tgroup></table>
-<table><tgroup cols="3">
+<table><tgroup cols="4">
 <colspec colname="col1" colwidth="1*"/>
-<colspec colname="col2" colwidth="1*"/>
-<colspec colname="col3" colwidth="2*"/>
+<colspec colname="col2" colwidth="2*"/>
+<colspec colname="col3" colwidth="1*"/>
+<colspec colname="col4" colwidth="3*"/>
 <thead><row>
-<entry>Code</entry><entry>Code System</entry><entry>Print Name</entry>
+<entry>Concept Code</entry><entry>Concept Name</entry><entry>Code System</entry><entry>Description</entry>
 </row></thead><tbody>
-<row><entry>LA17059-9</entry><entry>LOINC</entry><entry>Other (not listed)</entry></row>
-<row><entry>LA17183-7</entry><entry>LOINC</entry><entry>Diversion/failure (of previous unit)</entry></row>
-<row><entry>LA17579-6</entry><entry>LOINC</entry><entry>Caller (uncooperative)</entry></row>
-<row><entry>LA17580-4</entry><entry>LOINC</entry><entry>High call volume</entry></row>
-<row><entry>LA17581-2</entry><entry>LOINC</entry><entry>Location (inability to obtain)</entry></row>
-<row><entry>LA17582-0</entry><entry>LOINC</entry><entry>No EMS vehicles (units) available</entry></row>
-<row><entry>LA17584-6</entry><entry>LOINC</entry><entry>Technical failure (computer, phone etc.)</entry></row>
-<row><entry>LA18081-2</entry><entry>LOINC</entry><entry>None/no delay</entry></row>
-<row><entry>LA7540-3</entry><entry>LOINC</entry><entry>Language barrier</entry></row>
+<row><entry>LA17059-9</entry><entry>Other (not listed)</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA17183-7</entry><entry>Diversion/failure (of previous unit)</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA17579-6</entry><entry>Caller (uncooperative)</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA17580-4</entry><entry>High call volume</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA17581-2</entry><entry>Location (inability to obtain)</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA17582-0</entry><entry>No EMS vehicles (units) available</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA17584-6</entry><entry>Technical failure (computer, phone etc.)</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA18081-2</entry><entry>None/no delay</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA7540-3</entry><entry>Language barrier</entry><entry>LOINC</entry><entry></entry></row>
 </tbody></tgroup></table>
 </section>
 </body>

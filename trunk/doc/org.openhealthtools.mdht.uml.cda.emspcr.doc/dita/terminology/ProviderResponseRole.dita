@@ -14,21 +14,23 @@
 <tbody>
 <row><entry>Value Set</entry><entry>ProviderResponseRole - 2.16.840.1.113883.17.3.5.80</entry></row>
 <row><entry>Code System</entry><entry>LOINC - 2.16.840.1.113883.6.1</entry></row>
+<row><entry>Definition</entry><entry>Role filled by an EMS professional</entry></row>
 </tbody></tgroup></table>
-<table><tgroup cols="3">
+<table><tgroup cols="4">
 <colspec colname="col1" colwidth="1*"/>
-<colspec colname="col2" colwidth="1*"/>
-<colspec colname="col3" colwidth="2*"/>
+<colspec colname="col2" colwidth="2*"/>
+<colspec colname="col3" colwidth="1*"/>
+<colspec colname="col4" colwidth="3*"/>
 <thead><row>
-<entry>Code</entry><entry>Code System</entry><entry>Print Name</entry>
+<entry>Concept Code</entry><entry>Concept Name</entry><entry>Code System</entry><entry>Description</entry>
 </row></thead><tbody>
-<row><entry>LA18707-2</entry><entry>LOINC</entry><entry>Driver/pilot-response</entry></row>
-<row><entry>LA18708-0</entry><entry>LOINC</entry><entry>Driver/pilot-transport</entry></row>
-<row><entry>LA18709-8</entry><entry>LOINC</entry><entry>Other crew member response role</entry></row>
-<row><entry>LA18710-6</entry><entry>LOINC</entry><entry>Other patient caregiver-at scene</entry></row>
-<row><entry>LA18711-4</entry><entry>LOINC</entry><entry>Other patient caregiver-transport</entry></row>
-<row><entry>LA18712-2</entry><entry>LOINC</entry><entry>Primary patient caregiver-at scene</entry></row>
-<row><entry>LA18713-0</entry><entry>LOINC</entry><entry>Primary patient caregiver-transport</entry></row>
+<row><entry>LA18707-2</entry><entry>Driver/pilot-response</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA18708-0</entry><entry>Driver/pilot-transport</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA18709-8</entry><entry>Other crew member response role</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA18710-6</entry><entry>Other patient caregiver-at scene</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA18711-4</entry><entry>Other patient caregiver-transport</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA18712-2</entry><entry>Primary patient caregiver-at scene</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA18713-0</entry><entry>Primary patient caregiver-transport</entry><entry>LOINC</entry><entry></entry></row>
 </tbody></tgroup></table>
 </section>
 </body>

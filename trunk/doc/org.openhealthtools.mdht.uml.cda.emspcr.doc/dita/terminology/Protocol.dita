@@ -14,97 +14,99 @@
 <tbody>
 <row><entry>Value Set</entry><entry>Protocol - 2.16.840.1.113883.17.3.5.73</entry></row>
 <row><entry>Code System</entry><entry>LOINC - 2.16.840.1.113883.6.1</entry></row>
+<row><entry>Definition</entry><entry>Clincal category of formal guideline used to direct care</entry></row>
 </tbody></tgroup></table>
-<table><tgroup cols="3">
+<table><tgroup cols="4">
 <colspec colname="col1" colwidth="1*"/>
-<colspec colname="col2" colwidth="1*"/>
-<colspec colname="col3" colwidth="2*"/>
+<colspec colname="col2" colwidth="2*"/>
+<colspec colname="col3" colwidth="1*"/>
+<colspec colname="col4" colwidth="3*"/>
 <thead><row>
-<entry>Code</entry><entry>Code System</entry><entry>Print Name</entry>
+<entry>Concept Code</entry><entry>Concept Name</entry><entry>Code System</entry><entry>Description</entry>
 </row></thead><tbody>
-<row><entry>LA17398-1</entry><entry>LOINC</entry><entry>Airway</entry></row>
-<row><entry>LA17491-4</entry><entry>LOINC</entry><entry>Airway-failed</entry></row>
-<row><entry>LA17492-2</entry><entry>LOINC</entry><entry>Airway-obstruction/foreign body</entry></row>
-<row><entry>LA17494-8</entry><entry>LOINC</entry><entry>Airway-Rapid Sequence Induction (RSI-Paralytic)</entry></row>
-<row><entry>LA17495-5</entry><entry>LOINC</entry><entry>Airway-sedation assisted (nonparalytic)</entry></row>
-<row><entry>LA17496-3</entry><entry>LOINC</entry><entry>Cardiac arrest- asystole</entry></row>
-<row><entry>LA17497-1</entry><entry>LOINC</entry><entry>Cardiac arrest- pulseless electrical activity</entry></row>
-<row><entry>LA17498-9</entry><entry>LOINC</entry><entry>Cardiac arrest- ventricular fibrillation/pulseless ventricular tachycardia</entry></row>
-<row><entry>LA17499-7</entry><entry>LOINC</entry><entry>Cardiac arrest-hypothermia-therapeutic</entry></row>
-<row><entry>LA17500-2</entry><entry>LOINC</entry><entry>Cardiac arrest-post resuscitation care</entry></row>
-<row><entry>LA17501-0</entry><entry>LOINC</entry><entry>Environmental-altitude sickness</entry></row>
-<row><entry>LA17502-8</entry><entry>LOINC</entry><entry>Environmental-cold exposure</entry></row>
-<row><entry>LA17503-6</entry><entry>LOINC</entry><entry>Environmental-frostbite/cold Injury</entry></row>
-<row><entry>LA17504-4</entry><entry>LOINC</entry><entry>Environmental-heat exposure/exhaustion</entry></row>
-<row><entry>LA17505-1</entry><entry>LOINC</entry><entry>Environmental-heat stroke/hyperthermia</entry></row>
-<row><entry>LA17506-9</entry><entry>LOINC</entry><entry>Environmental-hypothermia</entry></row>
-<row><entry>LA17507-7</entry><entry>LOINC</entry><entry>Exposure-airway/inhalation irritants</entry></row>
-<row><entry>LA17508-5</entry><entry>LOINC</entry><entry>Exposure-biological/infectious</entry></row>
-<row><entry>LA17509-3</entry><entry>LOINC</entry><entry>Exposure-blistering agents</entry></row>
-<row><entry>LA17510-1</entry><entry>LOINC</entry><entry>Exposure-carbon monoxide/smoke inhalation</entry></row>
-<row><entry>LA17511-9</entry><entry>LOINC</entry><entry>Exposure-chemicals to eye</entry></row>
-<row><entry>LA17512-7</entry><entry>LOINC</entry><entry>Exposure-cyanide</entry></row>
-<row><entry>LA17513-5</entry><entry>LOINC</entry><entry>Exposure-explosive/blast injury</entry></row>
-<row><entry>LA17514-3</entry><entry>LOINC</entry><entry>Exposure-nerve agents</entry></row>
-<row><entry>LA17515-0</entry><entry>LOINC</entry><entry>Exposure-radiologic agents</entry></row>
-<row><entry>LA17516-8</entry><entry>LOINC</entry><entry>General-back pain</entry></row>
-<row><entry>LA17517-6</entry><entry>LOINC</entry><entry>General-behavioral/patient restraint</entry></row>
-<row><entry>LA17518-4</entry><entry>LOINC</entry><entry>General-dental problems</entry></row>
-<row><entry>LA17519-2</entry><entry>LOINC</entry><entry>General-epistaxis</entry></row>
-<row><entry>LA17520-0</entry><entry>LOINC</entry><entry>General-fever</entry></row>
-<row><entry>LA17521-8</entry><entry>LOINC</entry><entry>General-individualized patient protocol</entry></row>
-<row><entry>LA17522-6</entry><entry>LOINC</entry><entry>General-indwelling medical devices/equipment</entry></row>
-<row><entry>LA17523-4</entry><entry>LOINC</entry><entry>General-IV access</entry></row>
-<row><entry>LA17524-2</entry><entry>LOINC</entry><entry>General-medical device malfunction</entry></row>
-<row><entry>LA17525-9</entry><entry>LOINC</entry><entry>General-pain control</entry></row>
-<row><entry>LA17526-7</entry><entry>LOINC</entry><entry>General-spinal immobilization/clearance</entry></row>
-<row><entry>LA17527-5</entry><entry>LOINC</entry><entry>General-universal patient care/initial patient contact</entry></row>
-<row><entry>LA17528-3</entry><entry>LOINC</entry><entry>Injury-amputation</entry></row>
-<row><entry>LA17529-1</entry><entry>LOINC</entry><entry>Injury-bites and envenomations-land</entry></row>
-<row><entry>LA17530-9</entry><entry>LOINC</entry><entry>Injury-bites and envenomations-marine</entry></row>
-<row><entry>LA17531-7</entry><entry>LOINC</entry><entry>Injury-bleeding/hemorrhage control</entry></row>
-<row><entry>LA17532-5</entry><entry>LOINC</entry><entry>Injury-burns-thermal</entry></row>
-<row><entry>LA17533-3</entry><entry>LOINC</entry><entry>Injury-cardiac arrest</entry></row>
-<row><entry>LA17534-1</entry><entry>LOINC</entry><entry>Injury-crush syndrome</entry></row>
-<row><entry>LA17535-8</entry><entry>LOINC</entry><entry>Injury-diving emergencies</entry></row>
-<row><entry>LA17536-6</entry><entry>LOINC</entry><entry>Injury-drowning/near drowning</entry></row>
-<row><entry>LA17537-4</entry><entry>LOINC</entry><entry>Injury-electrical injuries</entry></row>
-<row><entry>LA17538-2</entry><entry>LOINC</entry><entry>Injury-extremity</entry></row>
-<row><entry>LA17539-0</entry><entry>LOINC</entry><entry>Injury-eye</entry></row>
-<row><entry>LA17540-8</entry><entry>LOINC</entry><entry>Injury-head</entry></row>
-<row><entry>LA17541-6</entry><entry>LOINC</entry><entry>Injury-impaled object</entry></row>
-<row><entry>LA17542-4</entry><entry>LOINC</entry><entry>Injury-multisystem</entry></row>
-<row><entry>LA17543-2</entry><entry>LOINC</entry><entry>Injury-spinal cord</entry></row>
-<row><entry>LA17544-0</entry><entry>LOINC</entry><entry>Medical-abdominal pain</entry></row>
-<row><entry>LA17545-7</entry><entry>LOINC</entry><entry>Medical-allergic reaction/anaphylaxis</entry></row>
-<row><entry>LA17546-5</entry><entry>LOINC</entry><entry>Medical-altered mental status</entry></row>
-<row><entry>LA17547-3</entry><entry>LOINC</entry><entry>Medical-bradycardia</entry></row>
-<row><entry>LA17548-1</entry><entry>LOINC</entry><entry>Medical-cardiac chest pain</entry></row>
-<row><entry>LA17549-9</entry><entry>LOINC</entry><entry>Medical-diarrhea</entry></row>
-<row><entry>LA17550-7</entry><entry>LOINC</entry><entry>Medical-hyperglycemia</entry></row>
-<row><entry>LA17551-5</entry><entry>LOINC</entry><entry>Medical-hypertension</entry></row>
-<row><entry>LA17552-3</entry><entry>LOINC</entry><entry>Medical-hypoglycemia/diabetic emergency</entry></row>
-<row><entry>LA17553-1</entry><entry>LOINC</entry><entry>Medical-hypotension/shock (non-trauma)</entry></row>
-<row><entry>LA17554-9</entry><entry>LOINC</entry><entry>Medical-influenza-like Illness/ upper respiratory infection</entry></row>
-<row><entry>LA17555-6</entry><entry>LOINC</entry><entry>Medical-nausea/vomiting</entry></row>
-<row><entry>LA17556-4</entry><entry>LOINC</entry><entry>Medical-newborn/ neonatal resuscitation</entry></row>
-<row><entry>LA17557-2</entry><entry>LOINC</entry><entry>Medical-overdose/poisoning/toxic ingestion</entry></row>
-<row><entry>LA17558-0</entry><entry>LOINC</entry><entry>Medical-pulmonary edema/CHF</entry></row>
-<row><entry>LA17559-8</entry><entry>LOINC</entry><entry>Medical-respiratory distress/asthma/COPD/croup/reactive airway disease</entry></row>
-<row><entry>LA17560-6</entry><entry>LOINC</entry><entry>Medical-seizure</entry></row>
-<row><entry>LA17561-4</entry><entry>LOINC</entry><entry>Medical-ST-elevation myocardial infarction (STEMI)</entry></row>
-<row><entry>LA17562-2</entry><entry>LOINC</entry><entry>Medical-stroke/TIA</entry></row>
-<row><entry>LA17563-0</entry><entry>LOINC</entry><entry>Medical-supraventricular tachycardia (including atrial fibrillation)</entry></row>
-<row><entry>LA17564-8</entry><entry>LOINC</entry><entry>Medical-syncope</entry></row>
-<row><entry>LA17565-5</entry><entry>LOINC</entry><entry>Medical-ventricular tachycardia (with pulse)</entry></row>
-<row><entry>LA17566-3</entry><entry>LOINC</entry><entry>OB/GYN-childbirth/labor/delivery</entry></row>
-<row><entry>LA17567-1</entry><entry>LOINC</entry><entry>OB/GYN-eclampsia</entry></row>
-<row><entry>LA17568-9</entry><entry>LOINC</entry><entry>OB/GYN-gynecologic emergencies</entry></row>
-<row><entry>LA17569-7</entry><entry>LOINC</entry><entry>OB/GYN-pregnancy related emergencies</entry></row>
-<row><entry>LA17570-5</entry><entry>LOINC</entry><entry>OB/GYN-post-partum hemorrhage</entry></row>
-<row><entry>LA18269-3</entry><entry>LOINC</entry><entry>General-cardiac arrest</entry></row>
-<row><entry>LA46-8</entry><entry>LOINC</entry><entry>Other</entry></row>
-<row><entry>LA6630-3</entry><entry>LOINC</entry><entry>Not done</entry></row>
+<row><entry>LA17398-1</entry><entry>Airway</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA17491-4</entry><entry>Airway-failed</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA17492-2</entry><entry>Airway-obstruction/foreign body</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA17494-8</entry><entry>Airway-Rapid Sequence Induction (RSI-Paralytic)</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA17495-5</entry><entry>Airway-sedation assisted (nonparalytic)</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA17496-3</entry><entry>Cardiac arrest- asystole</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA17497-1</entry><entry>Cardiac arrest- pulseless electrical activity</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA17498-9</entry><entry>Cardiac arrest- ventricular fibrillation/pulseless ventricular tachycardia</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA17499-7</entry><entry>Cardiac arrest-hypothermia-therapeutic</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA17500-2</entry><entry>Cardiac arrest-post resuscitation care</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA17501-0</entry><entry>Environmental-altitude sickness</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA17502-8</entry><entry>Environmental-cold exposure</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA17503-6</entry><entry>Environmental-frostbite/cold Injury</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA17504-4</entry><entry>Environmental-heat exposure/exhaustion</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA17505-1</entry><entry>Environmental-heat stroke/hyperthermia</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA17506-9</entry><entry>Environmental-hypothermia</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA17507-7</entry><entry>Exposure-airway/inhalation irritants</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA17508-5</entry><entry>Exposure-biological/infectious</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA17509-3</entry><entry>Exposure-blistering agents</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA17510-1</entry><entry>Exposure-carbon monoxide/smoke inhalation</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA17511-9</entry><entry>Exposure-chemicals to eye</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA17512-7</entry><entry>Exposure-cyanide</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA17513-5</entry><entry>Exposure-explosive/blast injury</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA17514-3</entry><entry>Exposure-nerve agents</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA17515-0</entry><entry>Exposure-radiologic agents</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA17516-8</entry><entry>General-back pain</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA17517-6</entry><entry>General-behavioral/patient restraint</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA17518-4</entry><entry>General-dental problems</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA17519-2</entry><entry>General-epistaxis</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA17520-0</entry><entry>General-fever</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA17521-8</entry><entry>General-individualized patient protocol</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA17522-6</entry><entry>General-indwelling medical devices/equipment</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA17523-4</entry><entry>General-IV access</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA17524-2</entry><entry>General-medical device malfunction</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA17525-9</entry><entry>General-pain control</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA17526-7</entry><entry>General-spinal immobilization/clearance</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA17527-5</entry><entry>General-universal patient care/initial patient contact</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA17528-3</entry><entry>Injury-amputation</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA17529-1</entry><entry>Injury-bites and envenomations-land</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA17530-9</entry><entry>Injury-bites and envenomations-marine</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA17531-7</entry><entry>Injury-bleeding/hemorrhage control</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA17532-5</entry><entry>Injury-burns-thermal</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA17533-3</entry><entry>Injury-cardiac arrest</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA17534-1</entry><entry>Injury-crush syndrome</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA17535-8</entry><entry>Injury-diving emergencies</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA17536-6</entry><entry>Injury-drowning/near drowning</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA17537-4</entry><entry>Injury-electrical injuries</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA17538-2</entry><entry>Injury-extremity</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA17539-0</entry><entry>Injury-eye</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA17540-8</entry><entry>Injury-head</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA17541-6</entry><entry>Injury-impaled object</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA17542-4</entry><entry>Injury-multisystem</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA17543-2</entry><entry>Injury-spinal cord</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA17544-0</entry><entry>Medical-abdominal pain</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA17545-7</entry><entry>Medical-allergic reaction/anaphylaxis</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA17546-5</entry><entry>Medical-altered mental status</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA17547-3</entry><entry>Medical-bradycardia</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA17548-1</entry><entry>Medical-cardiac chest pain</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA17549-9</entry><entry>Medical-diarrhea</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA17550-7</entry><entry>Medical-hyperglycemia</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA17551-5</entry><entry>Medical-hypertension</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA17552-3</entry><entry>Medical-hypoglycemia/diabetic emergency</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA17553-1</entry><entry>Medical-hypotension/shock (non-trauma)</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA17554-9</entry><entry>Medical-influenza-like Illness/ upper respiratory infection</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA17555-6</entry><entry>Medical-nausea/vomiting</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA17556-4</entry><entry>Medical-newborn/ neonatal resuscitation</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA17557-2</entry><entry>Medical-overdose/poisoning/toxic ingestion</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA17558-0</entry><entry>Medical-pulmonary edema/CHF</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA17559-8</entry><entry>Medical-respiratory distress/asthma/COPD/croup/reactive airway disease</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA17560-6</entry><entry>Medical-seizure</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA17561-4</entry><entry>Medical-ST-elevation myocardial infarction (STEMI)</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA17562-2</entry><entry>Medical-stroke/TIA</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA17563-0</entry><entry>Medical-supraventricular tachycardia (including atrial fibrillation)</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA17564-8</entry><entry>Medical-syncope</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA17565-5</entry><entry>Medical-ventricular tachycardia (with pulse)</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA17566-3</entry><entry>OB/GYN-childbirth/labor/delivery</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA17567-1</entry><entry>OB/GYN-eclampsia</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA17568-9</entry><entry>OB/GYN-gynecologic emergencies</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA17569-7</entry><entry>OB/GYN-pregnancy related emergencies</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA17570-5</entry><entry>OB/GYN-post-partum hemorrhage</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA18269-3</entry><entry>General-cardiac arrest</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA46-8</entry><entry>Other</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA6630-3</entry><entry>Not done</entry><entry>LOINC</entry><entry></entry></row>
 </tbody></tgroup></table>
 </section>
 </body>

@@ -15,22 +15,23 @@
 <row><entry>Value Set</entry><entry>LengthBasedTapeMeasure - 2.16.840.1.113883.17.3.5.24</entry></row>
 <row><entry>Code System</entry><entry>LOINC - 2.16.840.1.113883.6.1</entry></row>
 </tbody></tgroup></table>
-<table><tgroup cols="3">
+<table><tgroup cols="4">
 <colspec colname="col1" colwidth="1*"/>
-<colspec colname="col2" colwidth="1*"/>
-<colspec colname="col3" colwidth="2*"/>
+<colspec colname="col2" colwidth="2*"/>
+<colspec colname="col3" colwidth="1*"/>
+<colspec colname="col4" colwidth="3*"/>
 <thead><row>
-<entry>Code</entry><entry>Code System</entry><entry>Print Name</entry>
+<entry>Concept Code</entry><entry>Concept Name</entry><entry>Code System</entry><entry>Description</entry>
 </row></thead><tbody>
-<row><entry>LA15553-3</entry><entry>LOINC</entry><entry>Blue</entry></row>
-<row><entry>LA15554-1</entry><entry>LOINC</entry><entry>Grey</entry></row>
-<row><entry>LA15555-8</entry><entry>LOINC</entry><entry>Green</entry></row>
-<row><entry>LA17192-8</entry><entry>LOINC</entry><entry>Pink</entry></row>
-<row><entry>LA17193-6</entry><entry>LOINC</entry><entry>Red</entry></row>
-<row><entry>LA17194-4</entry><entry>LOINC</entry><entry>Purple</entry></row>
-<row><entry>LA17195-1</entry><entry>LOINC</entry><entry>Yellow</entry></row>
-<row><entry>LA17196-9</entry><entry>LOINC</entry><entry>Orange</entry></row>
-<row><entry>LA4457-3</entry><entry>LOINC</entry><entry>White</entry></row>
+<row><entry>LA15553-3</entry><entry>Blue</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA15554-1</entry><entry>Grey</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA15555-8</entry><entry>Green</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA17192-8</entry><entry>Pink</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA17193-6</entry><entry>Red</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA17194-4</entry><entry>Purple</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA17195-1</entry><entry>Yellow</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA17196-9</entry><entry>Orange</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA4457-3</entry><entry>White</entry><entry>LOINC</entry><entry></entry></row>
 </tbody></tgroup></table>
 </section>
 </body>

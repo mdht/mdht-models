@@ -14,25 +14,27 @@
 <tbody>
 <row><entry>Value Set</entry><entry>OrganSystem - 2.16.840.1.113883.17.3.5.77</entry></row>
 <row><entry>Code System</entry><entry>LOINC - 2.16.840.1.113883.6.1</entry></row>
+<row><entry>Definition</entry><entry>Biological systems for the classification of disorders</entry></row>
 </tbody></tgroup></table>
-<table><tgroup cols="3">
+<table><tgroup cols="4">
 <colspec colname="col1" colwidth="1*"/>
-<colspec colname="col2" colwidth="1*"/>
-<colspec colname="col3" colwidth="2*"/>
+<colspec colname="col2" colwidth="2*"/>
+<colspec colname="col3" colwidth="1*"/>
+<colspec colname="col4" colwidth="3*"/>
 <thead><row>
-<entry>Code</entry><entry>Code System</entry><entry>Print Name</entry>
+<entry>Concept Code</entry><entry>Concept Name</entry><entry>Code System</entry><entry>Description</entry>
 </row></thead><tbody>
-<row><entry>LA16968-2</entry><entry>LOINC</entry><entry>Gastrointestinal</entry></row>
-<row><entry>LA18114-1</entry><entry>LOINC</entry><entry>General/global</entry></row>
-<row><entry>LA18277-6</entry><entry>LOINC</entry><entry>Cardiovascular</entry></row>
-<row><entry>LA18278-4</entry><entry>LOINC</entry><entry>CNS/neuro</entry></row>
-<row><entry>LA18279-2</entry><entry>LOINC</entry><entry>Endocrine/metabolic</entry></row>
-<row><entry>LA18281-8</entry><entry>LOINC</entry><entry>Lymphatic/immune</entry></row>
-<row><entry>LA18282-6</entry><entry>LOINC</entry><entry>Musculoskeletal/skin</entry></row>
-<row><entry>LA18283-4</entry><entry>LOINC</entry><entry>Pulmonary</entry></row>
-<row><entry>LA18284-2</entry><entry>LOINC</entry><entry>Renal</entry></row>
-<row><entry>LA18285-9</entry><entry>LOINC</entry><entry>Reproductive</entry></row>
-<row><entry>LA9534-4</entry><entry>LOINC</entry><entry>Behavioral / psychiatric disorder</entry></row>
+<row><entry>LA16968-2</entry><entry>Gastrointestinal</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA18114-1</entry><entry>General/global</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA18277-6</entry><entry>Cardiovascular</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA18278-4</entry><entry>CNS/neuro</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA18279-2</entry><entry>Endocrine/metabolic</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA18281-8</entry><entry>Lymphatic/immune</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA18282-6</entry><entry>Musculoskeletal/skin</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA18283-4</entry><entry>Pulmonary</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA18284-2</entry><entry>Renal</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA18285-9</entry><entry>Reproductive</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA9534-4</entry><entry>Behavioral / psychiatric disorder</entry><entry>LOINC</entry><entry></entry></row>
 </tbody></tgroup></table>
 </section>
 </body>
