@@ -33,10 +33,6 @@
   <genPackages xsi:type="genmodel:GenPackage" prefix="Example" basePackage="org.openhealthtools.mdht.uml.cda"
       disposableProviderFactory="true" ecorePackage="example.ecore#/" operationsPackage="org.openhealthtools.mdht.uml.cda.example.operations">
     <genClasses xsi:type="genmodel:GenClass" ecoreClass="example.ecore#//MyDocument">
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="example.ecore#//MyDocument/MyDocumentHasPatientNameGivenAndFamily">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="example.ecore#//MyDocument/MyDocumentHasPatientNameGivenAndFamily/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="example.ecore#//MyDocument/MyDocumentHasPatientNameGivenAndFamily/context"/>
-      </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="example.ecore#//MyDocument/MyDocumentTemplateId">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="example.ecore#//MyDocument/MyDocumentTemplateId/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="example.ecore#//MyDocument/MyDocumentTemplateId/context"/>

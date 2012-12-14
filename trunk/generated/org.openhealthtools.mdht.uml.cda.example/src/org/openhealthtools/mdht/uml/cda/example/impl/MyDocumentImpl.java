@@ -57,16 +57,6 @@ public class MyDocumentImpl extends GeneralHeaderConstraintsImpl implements MyDo
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateMyDocumentHasPatientNameGivenAndFamily(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return MyDocumentOperations.validateMyDocumentHasPatientNameGivenAndFamily(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public boolean validateMyDocumentTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return MyDocumentOperations.validateMyDocumentTemplateId(this, diagnostics, context);
 	}

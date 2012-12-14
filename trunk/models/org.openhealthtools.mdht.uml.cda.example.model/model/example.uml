@@ -10,29 +10,16 @@
     <packageImport xmi:id="_lcJlYH9NEeG0JrPFX_hSGw">
       <importedPackage href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_ii81kjxVEd6JwqSGecoePg"/>
     </packageImport>
+    <packageImport xmi:id="_PMY1YEYQEeKR5csWWUNEOA">
+      <importedPackage href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_XgMSwzxVEd6JwqSGecoePg"/>
+    </packageImport>
+    <packageImport xmi:id="_xW-2cEYQEeKR5csWWUNEOA">
+      <importedPackage href="../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__yVbeUDcEd6xYZuu1VKCVw"/>
+    </packageImport>
     <packagedElement xmi:type="uml:Class" xmi:id="_wDMM0GEHEd6bFO5yxRh3Nw" name="MyDocument">
       <ownedComment xmi:id="_LN-BoAoOEeCEl6wJQrTI9w">
         <body>My Document is used for X and Y.... [explain how this CDA document is used].</body>
       </ownedComment>
-      <ownedRule xmi:id="_3tZBYBqJEeCo9-utz0Chzw" name="hasPatientNameGivenAndFamily">
-        <ownedComment xmi:id="_k3wbUBqNEeCo9-utz0Chzw">
-          <body>Explanatory guidance may be included to supplement the formal conformance rule expression.</body>
-        </ownedComment>
-        <constrainedElement xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.pilot.model/model/pilot.uml#_wDMM0GEHEd6bFO5yxRh3Nw"/>
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_3tZBYRqJEeCo9-utz0Chzw">
-          <language>Analysis</language>
-          <language>OCL</language>
-          <body>There can be any number of patient names, but at least one of them must include a given and family name.</body>
-          <body>self.recordTarget.patientRole.patient.name->exists(&#xD;&#xA;   name : datatypes::PN | not name.given->isEmpty() and not name.family->isEmpty())</body>
-        </specification>
-      </ownedRule>
-      <ownedRule xmi:id="_rHiesBqKEeCo9-utz0Chzw" name="assignedAuthorCode">
-        <constrainedElement xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.cdt.model/model/cdt.uml#_f4_NkGeLEd-ilOLYnIx0jA"/>
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_rHiesRqKEeCo9-utz0Chzw">
-          <language>Analysis</language>
-          <body>If pre-coordinated document type codes are used, values used in the&#xD;&#xA;assignedAuthor/code and assignedAuthor/author/functionCode elements SHALL NOT&#xD;&#xA;conflict with ClinicalDocument/code.</body>
-        </specification>
-      </ownedRule>
       <generalization xmi:id="_ZyMtMKX2Ed6JRdOhEffuGA">
         <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-documents.uml#_2DNRcBSVEeGGzu7fmW9pXw"/>
       </generalization>
@@ -204,12 +191,6 @@
   </CDA:PropertyValidation>
   <CDA:ConstraintValidation xmi:id="_P6aXkBnxEeCo9-utz0Chzw"/>
   <CDA:ConstraintValidation xmi:id="_82thEBqIEeCo9-utz0Chzw"/>
-  <CDA:ConstraintValidation xmi:id="_DNtp8BqKEeCo9-utz0Chzw" base_Constraint="_3tZBYBqJEeCo9-utz0Chzw">
-    <ruleId>CONF-Example-1</ruleId>
-  </CDA:ConstraintValidation>
-  <CDA:ConstraintValidation xmi:id="_r2VeYBqKEeCo9-utz0Chzw" base_Constraint="_rHiesBqKEeCo9-utz0Chzw">
-    <ruleId>CONF-Example-2</ruleId>
-  </CDA:ConstraintValidation>
   <CDA:PropertyValidation xmi:id="_K8mrcBqOEeCo9-utz0Chzw" severity="WARNING" base_Property="_I7UwMBqOEeCo9-utz0Chzw">
     <ruleId>CONF-Example-11</ruleId>
   </CDA:PropertyValidation>

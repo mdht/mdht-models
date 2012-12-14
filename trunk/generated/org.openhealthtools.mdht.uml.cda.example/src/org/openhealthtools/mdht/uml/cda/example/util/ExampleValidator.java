@@ -51,20 +51,12 @@ public class ExampleValidator extends EObjectValidator {
 	public static final String DIAGNOSTIC_SOURCE = "org.openhealthtools.mdht.uml.cda.example";
 
 	/**
-	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate My Document Has Patient Name Given And Family' of 'My Document'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public static final int MY_DOCUMENT__MY_DOCUMENT_HAS_PATIENT_NAME_GIVEN_AND_FAMILY = 1;
-
-	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate My Document Template Id' of 'My Document'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int MY_DOCUMENT__MY_DOCUMENT_TEMPLATE_ID = 2;
+	public static final int MY_DOCUMENT__MY_DOCUMENT_TEMPLATE_ID = 1;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate My Document My Section' of 'My Document'.
@@ -72,7 +64,7 @@ public class ExampleValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int MY_DOCUMENT__MY_DOCUMENT_MY_SECTION = 3;
+	public static final int MY_DOCUMENT__MY_DOCUMENT_MY_SECTION = 2;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate My Section Template Id' of 'My Section'.
@@ -80,7 +72,7 @@ public class ExampleValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int MY_SECTION__MY_SECTION_TEMPLATE_ID = 4;
+	public static final int MY_SECTION__MY_SECTION_TEMPLATE_ID = 3;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate My Section Code' of 'My Section'.
@@ -88,7 +80,7 @@ public class ExampleValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int MY_SECTION__MY_SECTION_CODE = 5;
+	public static final int MY_SECTION__MY_SECTION_CODE = 4;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate My Section Confidentiality Code' of 'My Section'.
@@ -96,7 +88,7 @@ public class ExampleValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int MY_SECTION__MY_SECTION_CONFIDENTIALITY_CODE = 6;
+	public static final int MY_SECTION__MY_SECTION_CONFIDENTIALITY_CODE = 5;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate My Section Title' of 'My Section'.
@@ -104,7 +96,7 @@ public class ExampleValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int MY_SECTION__MY_SECTION_TITLE = 7;
+	public static final int MY_SECTION__MY_SECTION_TITLE = 6;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate My Section My Observation' of 'My Section'.
@@ -112,7 +104,7 @@ public class ExampleValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int MY_SECTION__MY_SECTION_MY_OBSERVATION = 8;
+	public static final int MY_SECTION__MY_SECTION_MY_OBSERVATION = 7;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate My Section Medication' of 'My Section'.
@@ -120,7 +112,7 @@ public class ExampleValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int MY_SECTION__MY_SECTION_MEDICATION = 9;
+	public static final int MY_SECTION__MY_SECTION_MEDICATION = 8;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate My Section Encounter' of 'My Section'.
@@ -128,7 +120,7 @@ public class ExampleValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int MY_SECTION__MY_SECTION_ENCOUNTER = 10;
+	public static final int MY_SECTION__MY_SECTION_ENCOUNTER = 9;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate My Observation Class Code' of 'My Observation'.
@@ -136,7 +128,7 @@ public class ExampleValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int MY_OBSERVATION__MY_OBSERVATION_CLASS_CODE = 11;
+	public static final int MY_OBSERVATION__MY_OBSERVATION_CLASS_CODE = 10;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate My Observation Code' of 'My Observation'.
@@ -144,7 +136,7 @@ public class ExampleValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int MY_OBSERVATION__MY_OBSERVATION_CODE = 12;
+	public static final int MY_OBSERVATION__MY_OBSERVATION_CODE = 11;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate My Observation Effective Time' of 'My Observation'.
@@ -152,7 +144,7 @@ public class ExampleValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int MY_OBSERVATION__MY_OBSERVATION_EFFECTIVE_TIME = 13;
+	public static final int MY_OBSERVATION__MY_OBSERVATION_EFFECTIVE_TIME = 12;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate My Observation Value' of 'My Observation'.
@@ -160,7 +152,7 @@ public class ExampleValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int MY_OBSERVATION__MY_OBSERVATION_VALUE = 15;
+	public static final int MY_OBSERVATION__MY_OBSERVATION_VALUE = 14;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate My Observation Target Site Code' of 'My Observation'.
@@ -168,7 +160,7 @@ public class ExampleValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int MY_OBSERVATION__MY_OBSERVATION_TARGET_SITE_CODE = 14;
+	public static final int MY_OBSERVATION__MY_OBSERVATION_TARGET_SITE_CODE = 13;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Problem Observation Template Id' of 'My Observation'.
@@ -176,7 +168,7 @@ public class ExampleValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int MY_OBSERVATION__PROBLEM_OBSERVATION_TEMPLATE_ID = 16;
+	public static final int MY_OBSERVATION__PROBLEM_OBSERVATION_TEMPLATE_ID = 15;
 
 	/**
 	 * A constant with a fixed name that can be used as the base value for additional hand written constants.
@@ -184,7 +176,7 @@ public class ExampleValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private static final int GENERATED_DIAGNOSTIC_CODE_COUNT = 16;
+	private static final int GENERATED_DIAGNOSTIC_CODE_COUNT = 15;
 
 	/**
 	 * A constant with a fixed name that can be used as the base value for additional hand written constants in a derived class.
@@ -1332,27 +1324,12 @@ public class ExampleValidator extends EObjectValidator {
 				myDocument, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= validateMyDocument_validateMyDocumentHasPatientNameGivenAndFamily(
-				myDocument, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
 			result &= validateMyDocument_validateMyDocumentTemplateId(myDocument, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= validateMyDocument_validateMyDocumentMySection(myDocument, diagnostics, context);
 		}
 		return result;
-	}
-
-	/**
-	 * Validates the validateMyDocumentHasPatientNameGivenAndFamily constraint of '<em>My Document</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateMyDocument_validateMyDocumentHasPatientNameGivenAndFamily(MyDocument myDocument,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return myDocument.validateMyDocumentHasPatientNameGivenAndFamily(diagnostics, context);
 	}
 
 	/**
