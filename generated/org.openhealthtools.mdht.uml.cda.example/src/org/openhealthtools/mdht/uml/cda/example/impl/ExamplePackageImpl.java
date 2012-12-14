@@ -241,21 +241,10 @@ public class ExamplePackageImpl extends EPackageImpl implements ExamplePackage {
 			myDocumentEClass, MyDocument.class, "MyDocument", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
 		EOperation op = addEOperation(
-			myDocumentEClass, ecorePackage.getEBoolean(), "validateMyDocumentHasPatientNameGivenAndFamily", 0, 1,
-			IS_UNIQUE, IS_ORDERED);
+			myDocumentEClass, ecorePackage.getEBoolean(), "validateMyDocumentTemplateId", 0, 1, IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
 		EGenericType g1 = createEGenericType(ecorePackage.getEMap());
 		EGenericType g2 = createEGenericType(ecorePackage.getEJavaObject());
-		g1.getETypeArguments().add(g2);
-		g2 = createEGenericType(ecorePackage.getEJavaObject());
-		g1.getETypeArguments().add(g2);
-		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
-
-		op = addEOperation(
-			myDocumentEClass, ecorePackage.getEBoolean(), "validateMyDocumentTemplateId", 0, 1, IS_UNIQUE, IS_ORDERED);
-		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
-		g1 = createEGenericType(ecorePackage.getEMap());
-		g2 = createEGenericType(ecorePackage.getEJavaObject());
 		g1.getETypeArguments().add(g2);
 		g2 = createEGenericType(ecorePackage.getEJavaObject());
 		g1.getETypeArguments().add(g2);
@@ -416,10 +405,23 @@ public class ExamplePackageImpl extends EPackageImpl implements ExamplePackage {
 		createResource(eNS_URI);
 
 		// Create annotations
+		// http://www.openhealthtools.org/mdht/uml
+		createUmlAnnotations();
 		// http://www.openhealthtools.org/mdht/uml/cda/annotation
 		createAnnotationAnnotations();
 		// duplicates
 		createDuplicatesAnnotations();
+	}
+
+	/**
+	 * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml</b>.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected void createUmlAnnotations() {
+		String source = "http://www.openhealthtools.org/mdht/uml";
+		addAnnotation(this, source, new String[] { "initializers", "org.openhealthtools.mdht.uml.cda.example" });
 	}
 
 	/**
@@ -431,36 +433,26 @@ public class ExamplePackageImpl extends EPackageImpl implements ExamplePackage {
 	protected void createAnnotationAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation";
 		addAnnotation(myDocumentEClass, source, new String[] {
-				"templateId.root", "1.2.3.4", "constraints.validation.error",
-				"MyDocumentTemplateId MyDocumentHasPatientNameGivenAndFamily MyDocumentMySection" });
+				"constraints.validation.error", "MyDocumentTemplateId MyDocumentMySection", "templateId.root",
+				"1.2.3.4" });
 		addAnnotation(
 			mySectionEClass,
 			source,
 			new String[] {
-					"code.codeSystem",
-					"2.16.840.1.113883.6.1",
-					"code.displayName",
-					"Summary Purpose",
-					"templateId.root",
-					"1.2.3.4.1",
 					"constraints.validation.error",
 					"MySectionTemplateId MySectionCode MySectionTitle MySectionMyObservation MySectionMedication MySectionEncounter",
-					"code.codeSystemName", "LOINC", "constraints.validation.warning", "MySectionConfidentialityCode",
-					"code.code", "48764-5" });
+					"templateId.root", "1.2.3.4.1", "code.code", "48764-5", "code.codeSystem", "2.16.840.1.113883.6.1",
+					"code.codeSystemName", "LOINC", "code.displayName", "Summary Purpose",
+					"constraints.validation.warning", "MySectionConfidentialityCode" });
 		addAnnotation(
 			myObservationEClass,
 			source,
 			new String[] {
-					"value.codeSystemName",
-					"SNOMEDCT",
-					"code.codeSystem",
-					"2.16.840.1.113883.6.96",
-					"templateId.root",
-					"1.2.3.4.2",
 					"constraints.validation.error",
 					"MyObservationTemplateId MyObservationClassCode MyObservationCode MyObservationEffectiveTime MyObservationValue",
-					"code.codeSystemName", "SNOMEDCT", "classCode", "OBS", "constraints.validation.info",
-					"MyObservationTargetSiteCode", "value.codeSystem", "2.16.840.1.113883.6.96" });
+					"templateId.root", "1.2.3.4.2", "classCode", "OBS", "code.codeSystem", "2.16.840.1.113883.6.96",
+					"code.codeSystemName", "SNOMEDCT", "constraints.validation.info", "MyObservationTargetSiteCode",
+					"value.codeSystem", "2.16.840.1.113883.6.96", "value.codeSystemName", "SNOMEDCT" });
 	}
 
 	/**

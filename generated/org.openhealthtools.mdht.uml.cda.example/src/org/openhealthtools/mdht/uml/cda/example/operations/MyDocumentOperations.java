@@ -35,7 +35,6 @@ import org.openhealthtools.mdht.uml.cda.example.util.ExampleValidator;
  * <p>
  * The following operations are supported:
  * <ul>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.example.MyDocument#validateMyDocumentHasPatientNameGivenAndFamily(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate My Document Has Patient Name Given And Family</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.example.MyDocument#validateMyDocumentTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate My Document Template Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.example.MyDocument#validateMyDocumentMySection(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate My Document My Section</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.example.MyDocument#getMySection() <em>Get My Section</em>}</li>
@@ -52,66 +51,6 @@ public class MyDocumentOperations extends GeneralHeaderConstraintsOperations {
 	 */
 	protected MyDocumentOperations() {
 		super();
-	}
-
-	/**
-	 * The cached OCL expression body for the '{@link #validateMyDocumentHasPatientNameGivenAndFamily(MyDocument, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate My Document Has Patient Name Given And Family</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateMyDocumentHasPatientNameGivenAndFamily(MyDocument, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String VALIDATE_MY_DOCUMENT_HAS_PATIENT_NAME_GIVEN_AND_FAMILY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.recordTarget.patientRole.patient.name->exists("
-			+ "   name : datatypes::PN | not name.given->isEmpty() and not name.family->isEmpty())";
-
-	/**
-	 * The cached OCL invariant for the '{@link #validateMyDocumentHasPatientNameGivenAndFamily(MyDocument, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate My Document Has Patient Name Given And Family</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateMyDocumentHasPatientNameGivenAndFamily(MyDocument, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	protected static Constraint VALIDATE_MY_DOCUMENT_HAS_PATIENT_NAME_GIVEN_AND_FAMILY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.recordTarget.patientRole.patient.name->exists(
-	 *    name : datatypes::PN | not name.given->isEmpty() and not name.family->isEmpty())
-	 * @param myDocument The receiving '<em><b>My Document</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
-	public static boolean validateMyDocumentHasPatientNameGivenAndFamily(MyDocument myDocument,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
-		if (VALIDATE_MY_DOCUMENT_HAS_PATIENT_NAME_GIVEN_AND_FAMILY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(ExamplePackage.Literals.MY_DOCUMENT);
-			try {
-				VALIDATE_MY_DOCUMENT_HAS_PATIENT_NAME_GIVEN_AND_FAMILY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MY_DOCUMENT_HAS_PATIENT_NAME_GIVEN_AND_FAMILY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_MY_DOCUMENT_HAS_PATIENT_NAME_GIVEN_AND_FAMILY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(myDocument)) {
-			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ExampleValidator.DIAGNOSTIC_SOURCE,
-					ExampleValidator.MY_DOCUMENT__MY_DOCUMENT_HAS_PATIENT_NAME_GIVEN_AND_FAMILY,
-					ExamplePlugin.INSTANCE.getString("MyDocumentHasPatientNameGivenAndFamily"),
-					new Object[] { myDocument }));
-			}
-
-			return false;
-		}
-		return true;
 	}
 
 	/**
@@ -234,7 +173,7 @@ public class MyDocumentOperations extends GeneralHeaderConstraintsOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_MY_SECTION__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(example::MySection))->asSequence()->first().oclAsType(example::MySection)";
+	protected static final String GET_MY_SECTION__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(example::MySection))->asSequence()->any(true).oclAsType(example::MySection)";
 
 	/**
 	 * The cached OCL query for the '{@link #getMySection(MyDocument) <em>Get My Section</em>}' query operation.
@@ -250,7 +189,7 @@ public class MyDocumentOperations extends GeneralHeaderConstraintsOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(example::MySection))->asSequence()->first().oclAsType(example::MySection)
+	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(example::MySection))->asSequence()->any(true).oclAsType(example::MySection)
 	 * @param myDocument The receiving '<em><b>My Document</b></em>' model object.
 	 * <!-- end-model-doc -->
 	 * @generated
@@ -259,7 +198,7 @@ public class MyDocumentOperations extends GeneralHeaderConstraintsOperations {
 		if (GET_MY_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
-				ExamplePackage.Literals.MY_DOCUMENT, ExamplePackage.Literals.MY_DOCUMENT.getEAllOperations().get(293));
+				ExamplePackage.Literals.MY_DOCUMENT, ExamplePackage.Literals.MY_DOCUMENT.getEAllOperations().get(292));
 			try {
 				GET_MY_SECTION__EOCL_QRY = helper.createQuery(GET_MY_SECTION__EOCL_EXP);
 			} catch (ParserException pe) {

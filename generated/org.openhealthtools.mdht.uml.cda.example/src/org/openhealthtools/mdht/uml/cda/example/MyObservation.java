@@ -29,7 +29,7 @@ import org.openhealthtools.mdht.uml.cda.consol.ProblemObservation;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.example.ExamplePackage#getMyObservation()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation value.codeSystemName='SNOMEDCT' code.codeSystem='2.16.840.1.113883.6.96' templateId.root='1.2.3.4.2' constraints.validation.error='MyObservationTemplateId MyObservationClassCode MyObservationCode MyObservationEffectiveTime MyObservationValue' code.codeSystemName='SNOMEDCT' classCode='OBS' constraints.validation.info='MyObservationTargetSiteCode' value.codeSystem='2.16.840.1.113883.6.96'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='MyObservationTemplateId MyObservationClassCode MyObservationCode MyObservationEffectiveTime MyObservationValue' templateId.root='1.2.3.4.2' classCode='OBS' code.codeSystem='2.16.840.1.113883.6.96' code.codeSystemName='SNOMEDCT' constraints.validation.info='MyObservationTargetSiteCode' value.codeSystem='2.16.840.1.113883.6.96' value.codeSystemName='SNOMEDCT'"
  * @generated
  */
 public interface MyObservation extends ProblemObservation {

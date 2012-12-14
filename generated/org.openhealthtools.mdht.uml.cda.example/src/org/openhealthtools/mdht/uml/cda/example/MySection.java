@@ -28,7 +28,7 @@ import org.openhealthtools.mdht.uml.cda.consol.MedicationActivity;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.example.ExamplePackage#getMySection()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation code.codeSystem='2.16.840.1.113883.6.1' code.displayName='Summary Purpose' templateId.root='1.2.3.4.1' constraints.validation.error='MySectionTemplateId MySectionCode MySectionTitle MySectionMyObservation MySectionMedication MySectionEncounter' code.codeSystemName='LOINC' constraints.validation.warning='MySectionConfidentialityCode' code.code='48764-5'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='MySectionTemplateId MySectionCode MySectionTitle MySectionMyObservation MySectionMedication MySectionEncounter' templateId.root='1.2.3.4.1' code.code='48764-5' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='Summary Purpose' constraints.validation.warning='MySectionConfidentialityCode'"
  * @generated
  */
 public interface MySection extends Section {
@@ -141,10 +141,10 @@ public interface MySection extends Section {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getSubstanceAdministrations()->select(substanceAdministration : cda::SubstanceAdministration | not substanceAdministration.oclIsUndefined() and substanceAdministration.oclIsKindOf(consol::MedicationActivity))->asSequence()->first().oclAsType(consol::MedicationActivity)
+	 * self.getSubstanceAdministrations()->select(substanceAdministration : cda::SubstanceAdministration | not substanceAdministration.oclIsUndefined() and substanceAdministration.oclIsKindOf(consol::MedicationActivity))->asSequence()->any(true).oclAsType(consol::MedicationActivity)
 	 * <!-- end-model-doc -->
 	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getSubstanceAdministrations()->select(substanceAdministration : cda::SubstanceAdministration | not substanceAdministration.oclIsUndefined() and substanceAdministration.oclIsKindOf(consol::MedicationActivity))->asSequence()->first().oclAsType(consol::MedicationActivity)'"
+	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getSubstanceAdministrations()->select(substanceAdministration : cda::SubstanceAdministration | not substanceAdministration.oclIsUndefined() and substanceAdministration.oclIsKindOf(consol::MedicationActivity))->asSequence()->any(true).oclAsType(consol::MedicationActivity)'"
 	 * @generated
 	 */
 	MedicationActivity getMedication();
@@ -153,10 +153,10 @@ public interface MySection extends Section {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getEncounters()->select(encounter : cda::Encounter | not encounter.oclIsUndefined() and encounter.oclIsKindOf(consol::EncounterActivities))->asSequence()->first().oclAsType(consol::EncounterActivities)
+	 * self.getEncounters()->select(encounter : cda::Encounter | not encounter.oclIsUndefined() and encounter.oclIsKindOf(consol::EncounterActivities))->asSequence()->any(true).oclAsType(consol::EncounterActivities)
 	 * <!-- end-model-doc -->
 	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getEncounters()->select(encounter : cda::Encounter | not encounter.oclIsUndefined() and encounter.oclIsKindOf(consol::EncounterActivities))->asSequence()->first().oclAsType(consol::EncounterActivities)'"
+	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getEncounters()->select(encounter : cda::Encounter | not encounter.oclIsUndefined() and encounter.oclIsKindOf(consol::EncounterActivities))->asSequence()->any(true).oclAsType(consol::EncounterActivities)'"
 	 * @generated
 	 */
 	EncounterActivities getEncounter();

@@ -28,6 +28,7 @@ import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
  * <!-- end-user-doc -->
  * @see org.openhealthtools.mdht.uml.cda.example.ExampleFactory
  * @model kind="package"
+ *        annotation="http://www.openhealthtools.org/mdht/uml initializers='org.openhealthtools.mdht.uml.cda.example'"
  * @generated
  */
 public interface ExamplePackage extends EPackage {
