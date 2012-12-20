@@ -72,7 +72,7 @@ public interface ProblemObservation extends Observation {
 	* @param diagnostics The chain of diagnostics to which problems are to be appended.
 	* @param context The cache of context-specific information.
 	* <!-- end-model-doc -->
-	* @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='not self.effectiveTime.low.oclIsUndefined()'"
+	* @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='not self.effectiveTime.oclIsUndefined() implies not self.effectiveTime.low.oclIsUndefined()'"
 	* @generated
 	*/
 	boolean validateProblemObservationHasOnsetDate(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -84,7 +84,7 @@ public interface ProblemObservation extends Observation {
 	* @param diagnostics The chain of diagnostics to which problems are to be appended.
 	* @param context The cache of context-specific information.
 	* <!-- end-model-doc -->
-	* @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='not self.effectiveTime.high.oclIsUndefined()'"
+	* @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='not self.effectiveTime.oclIsUndefined() implies not self.effectiveTime.high.oclIsUndefined()'"
 	* @generated
 	*/
 	boolean validateProblemObservationHasResolutionDate(DiagnosticChain diagnostics, Map<Object, Object> context);

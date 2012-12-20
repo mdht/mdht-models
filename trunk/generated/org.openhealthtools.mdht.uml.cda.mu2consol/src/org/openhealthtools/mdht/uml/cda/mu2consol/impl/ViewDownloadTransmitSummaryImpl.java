@@ -10,6 +10,7 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.mu2consol.impl;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
@@ -124,15 +125,6 @@ public class ViewDownloadTransmitSummaryImpl extends
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * @generated
    */
-	public boolean validateViewDownloadTransmitSummaryPlanOfCareSection(
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return ViewDownloadTransmitSummaryOperations.validateViewDownloadTransmitSummaryPlanOfCareSection(this, diagnostics, context);
-  }
-
-	/**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * @generated
-   */
 	public boolean validateViewDownloadTransmitSummarySocialHistorySection(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
     return ViewDownloadTransmitSummaryOperations.validateViewDownloadTransmitSummarySocialHistorySection(this, diagnostics, context);
@@ -145,24 +137,6 @@ public class ViewDownloadTransmitSummaryImpl extends
 	public boolean validateViewDownloadTransmitSummaryAssessmentAndPlanSectionTemplateId(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
     return ViewDownloadTransmitSummaryOperations.validateViewDownloadTransmitSummaryAssessmentAndPlanSectionTemplateId(this, diagnostics, context);
-  }
-
-	/**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * @generated
-   */
-	public boolean validateViewDownloadTransmitSummaryMu2consolPlanOfCareSectionCarePlanningForPlanOfCare(
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return ViewDownloadTransmitSummaryOperations.validateViewDownloadTransmitSummaryMu2consolPlanOfCareSectionCarePlanningForPlanOfCare(this, diagnostics, context);
-  }
-
-	/**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * @generated
-   */
-	public boolean validateViewDownloadTransmitSummaryMu2consolPlanOfCareSectionPlanOfCareActivityObservation(
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return ViewDownloadTransmitSummaryOperations.validateViewDownloadTransmitSummaryMu2consolPlanOfCareSectionPlanOfCareActivityObservation(this, diagnostics, context);
   }
 
 	/**

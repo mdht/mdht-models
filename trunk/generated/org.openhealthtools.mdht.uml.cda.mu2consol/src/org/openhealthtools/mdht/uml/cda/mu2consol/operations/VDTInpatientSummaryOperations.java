@@ -710,7 +710,7 @@ public class VDTInpatientSummaryOperations extends
     if (GET_HOSPITAL_DISCHARGE_INSTRUCTIONS_SECTION__EOCL_QRY == null)
     {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
-      helper.setOperationContext(Mu2consolPackage.Literals.VDT_INPATIENT_SUMMARY, Mu2consolPackage.Literals.VDT_INPATIENT_SUMMARY.getEAllOperations().get(329));
+      helper.setOperationContext(Mu2consolPackage.Literals.VDT_INPATIENT_SUMMARY, Mu2consolPackage.Literals.VDT_INPATIENT_SUMMARY.getEAllOperations().get(326));
       try
       {
         GET_HOSPITAL_DISCHARGE_INSTRUCTIONS_SECTION__EOCL_QRY = helper.createQuery(GET_HOSPITAL_DISCHARGE_INSTRUCTIONS_SECTION__EOCL_EXP);
@@ -767,7 +767,7 @@ public class VDTInpatientSummaryOperations extends
     if (GET_HOSPITAL_ADMISSION_DIAGNOSIS_SECTION__EOCL_QRY == null)
     {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
-      helper.setOperationContext(Mu2consolPackage.Literals.VDT_INPATIENT_SUMMARY, Mu2consolPackage.Literals.VDT_INPATIENT_SUMMARY.getEAllOperations().get(330));
+      helper.setOperationContext(Mu2consolPackage.Literals.VDT_INPATIENT_SUMMARY, Mu2consolPackage.Literals.VDT_INPATIENT_SUMMARY.getEAllOperations().get(327));
       try
       {
         GET_HOSPITAL_ADMISSION_DIAGNOSIS_SECTION__EOCL_QRY = helper.createQuery(GET_HOSPITAL_ADMISSION_DIAGNOSIS_SECTION__EOCL_EXP);
@@ -821,7 +821,7 @@ public class VDTInpatientSummaryOperations extends
     if (GET_CHIEF_COMPLAINT_SECTION__EOCL_QRY == null)
     {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
-      helper.setOperationContext(Mu2consolPackage.Literals.VDT_INPATIENT_SUMMARY, Mu2consolPackage.Literals.VDT_INPATIENT_SUMMARY.getEAllOperations().get(331));
+      helper.setOperationContext(Mu2consolPackage.Literals.VDT_INPATIENT_SUMMARY, Mu2consolPackage.Literals.VDT_INPATIENT_SUMMARY.getEAllOperations().get(328));
       try
       {
         GET_CHIEF_COMPLAINT_SECTION__EOCL_QRY = helper.createQuery(GET_CHIEF_COMPLAINT_SECTION__EOCL_EXP);
@@ -875,7 +875,7 @@ public class VDTInpatientSummaryOperations extends
     if (GET_REASON_FOR_VISIT_SECTION__EOCL_QRY == null)
     {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
-      helper.setOperationContext(Mu2consolPackage.Literals.VDT_INPATIENT_SUMMARY, Mu2consolPackage.Literals.VDT_INPATIENT_SUMMARY.getEAllOperations().get(332));
+      helper.setOperationContext(Mu2consolPackage.Literals.VDT_INPATIENT_SUMMARY, Mu2consolPackage.Literals.VDT_INPATIENT_SUMMARY.getEAllOperations().get(329));
       try
       {
         GET_REASON_FOR_VISIT_SECTION__EOCL_QRY = helper.createQuery(GET_REASON_FOR_VISIT_SECTION__EOCL_EXP);
@@ -926,7 +926,7 @@ public class VDTInpatientSummaryOperations extends
     if (GET_CHIEF_COMPLAINT_AND_REASON_FOR_VISIT_SECTION__EOCL_QRY == null)
     {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
-      helper.setOperationContext(Mu2consolPackage.Literals.VDT_INPATIENT_SUMMARY, Mu2consolPackage.Literals.VDT_INPATIENT_SUMMARY.getEAllOperations().get(333));
+      helper.setOperationContext(Mu2consolPackage.Literals.VDT_INPATIENT_SUMMARY, Mu2consolPackage.Literals.VDT_INPATIENT_SUMMARY.getEAllOperations().get(330));
       try
       {
         GET_CHIEF_COMPLAINT_AND_REASON_FOR_VISIT_SECTION__EOCL_QRY = helper.createQuery(GET_CHIEF_COMPLAINT_AND_REASON_FOR_VISIT_SECTION__EOCL_EXP);
@@ -980,7 +980,7 @@ public class VDTInpatientSummaryOperations extends
     if (GET_HOSPITAL_DISCHARGE_MEDICATIONS_SECTION__EOCL_QRY == null)
     {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
-      helper.setOperationContext(Mu2consolPackage.Literals.VDT_INPATIENT_SUMMARY, Mu2consolPackage.Literals.VDT_INPATIENT_SUMMARY.getEAllOperations().get(334));
+      helper.setOperationContext(Mu2consolPackage.Literals.VDT_INPATIENT_SUMMARY, Mu2consolPackage.Literals.VDT_INPATIENT_SUMMARY.getEAllOperations().get(331));
       try
       {
         GET_HOSPITAL_DISCHARGE_MEDICATIONS_SECTION__EOCL_QRY = helper.createQuery(GET_HOSPITAL_DISCHARGE_MEDICATIONS_SECTION__EOCL_EXP);
@@ -1024,7 +1024,7 @@ public class VDTInpatientSummaryOperations extends
     if (GET_PREOPERATIVE_DIAGNOSIS_SECTION__EOCL_QRY == null)
     {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
-      helper.setOperationContext(Mu2consolPackage.Literals.VDT_INPATIENT_SUMMARY, Mu2consolPackage.Literals.VDT_INPATIENT_SUMMARY.getEAllOperations().get(335));
+      helper.setOperationContext(Mu2consolPackage.Literals.VDT_INPATIENT_SUMMARY, Mu2consolPackage.Literals.VDT_INPATIENT_SUMMARY.getEAllOperations().get(332));
       try
       {
         GET_PREOPERATIVE_DIAGNOSIS_SECTION__EOCL_QRY = helper.createQuery(GET_PREOPERATIVE_DIAGNOSIS_SECTION__EOCL_EXP);
@@ -1068,7 +1068,7 @@ public class VDTInpatientSummaryOperations extends
     if (GET_HOSPITAL_ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL__EOCL_QRY == null)
     {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
-      helper.setOperationContext(Mu2consolPackage.Literals.VDT_INPATIENT_SUMMARY, Mu2consolPackage.Literals.VDT_INPATIENT_SUMMARY.getEAllOperations().get(336));
+      helper.setOperationContext(Mu2consolPackage.Literals.VDT_INPATIENT_SUMMARY, Mu2consolPackage.Literals.VDT_INPATIENT_SUMMARY.getEAllOperations().get(333));
       try
       {
         GET_HOSPITAL_ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL__EOCL_QRY = helper.createQuery(GET_HOSPITAL_ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL__EOCL_EXP);

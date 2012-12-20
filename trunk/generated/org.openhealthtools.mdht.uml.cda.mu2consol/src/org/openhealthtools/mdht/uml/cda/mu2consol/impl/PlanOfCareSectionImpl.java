@@ -10,6 +10,7 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.mu2consol.impl;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
@@ -50,24 +51,6 @@ public class PlanOfCareSectionImpl extends
 	@Override
 	protected EClass eStaticClass() {
     return Mu2consolPackage.Literals.PLAN_OF_CARE_SECTION;
-  }
-
-	/**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * @generated
-   */
-	public boolean validateMu2consolPlanOfCareSectionCarePlanningForPlanOfCare(
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return PlanOfCareSectionOperations.validateMu2consolPlanOfCareSectionCarePlanningForPlanOfCare(this, diagnostics, context);
-  }
-
-	/**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * @generated
-   */
-	public boolean validateMu2consolPlanOfCareSectionPlanOfCareActivityObservation(
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return PlanOfCareSectionOperations.validateMu2consolPlanOfCareSectionPlanOfCareActivityObservation(this, diagnostics, context);
   }
 
 	/**

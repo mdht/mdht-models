@@ -211,30 +211,9 @@
         <specification xmi:type="uml:OpaqueExpression" xmi:id="_jopNcOvXEeGkopdZmUN1Xw">
           <language>OCL</language>
           <language>Analysis</language>
-          <body>(self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(mu2consol::PlanOfCareSection)) or &#xD;&#xA;self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(mu2consol::AssessmentAndPlanSection)))</body>
+          <body>(self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(mu2consol::PlanOfCareSection)) or &#xD;
+self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(mu2consol::AssessmentAndPlanSection)))</body>
           <body>SHALL have one of Plan of Care (2.16.840.1.113883.10.20.22.2.10) or Assessment and Plan (2.16.840.1.113883.10.20.22.2.9) or Interventions (2.16.840.1.113883.10.20.21.2.3)</body>
-        </specification>
-      </ownedRule>
-      <ownedRule xmi:id="_0v2AIARbEeKNWa1y_3e0dw" name="cognitiveStatusEntries" constrainedElement="_VG3DUNkxEeGsqcJR8eqiMw">
-        <ownedComment xmi:id="_8qlCEARbEeKNWa1y_3e0dw">
-          <body>QUERY</body>
-        </ownedComment>
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_7Dtx8ARbEeKNWa1y_3e0dw">
-          <language>OCL</language>
-          <language>Analysis</language>
-          <body>self.retrieveFunctionalStatusSection()->excluding(null)->reject( retrieveFunctionalStatusSection().getObservations()->exists(o : cda::Observation | o.oclIsKindOf(consol::CognitiveStatusProblemObservation)) or retrieveFunctionalStatusSection().getObservations()->exists(o : cda::Observation | o.oclIsKindOf(consol::CognitiveStatusResultObservation)) or retrieveFunctionalStatusSection().getOrganizers()->exists(org : cda::Organizer | org.oclIsKindOf(consol::CognitiveStatusResultOrganizer)))</body>
-          <body>SHALL have one of CognitiveStatusProblemObservation or CognitiveStatusResultObservation or CognitiveStatusResultOrganizer</body>
-        </specification>
-      </ownedRule>
-      <ownedRule xmi:id="_2PJgoARkEeKNWa1y_3e0dw" name="functionalStatusEntries" constrainedElement="_VG3DUNkxEeGsqcJR8eqiMw">
-        <ownedComment xmi:id="_7gT4QARkEeKNWa1y_3e0dw">
-          <body>QUERY</body>
-        </ownedComment>
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_50jhEARkEeKNWa1y_3e0dw">
-          <language>OCL</language>
-          <language>Analysis</language>
-          <body>self.retrieveFunctionalStatusSection()->excluding(null)->reject( retrieveFunctionalStatusSection().getObservations()->exists(o : cda::Observation | o.oclIsKindOf(consol::FunctionalStatusProblemObservation)) or retrieveFunctionalStatusSection().getObservations()->exists(o : cda::Observation | o.oclIsKindOf(consol::FunctionalStatusResultObservation)) or retrieveFunctionalStatusSection().getOrganizers()->exists(org : cda::Organizer | org.oclIsKindOf(consol::FunctionalStatusResultOrganizer)))</body>
-          <body>SHALL have one of FunctionalStatusProblemObservation or FunctionalStatusResultObservation or FunctionalStatusResultOrganizer</body>
         </specification>
       </ownedRule>
       <generalization xmi:id="_VG3qYNkxEeGsqcJR8eqiMw" general="_v-6qsNkMEeGsqcJR8eqiMw"/>
@@ -267,8 +246,8 @@
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_1hcAEfhxEeGPm7sA61ixGw" value="1"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_owEaYNk4EeGsqcJR8eqiMw" name="planOfCareSection" type="_svnagODKEeGdSJSga09Dyg" association="_owEaYtk4EeGsqcJR8eqiMw">
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_cH_74N30EeGdQcioKnmIhA" value="1"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_cH_74d30EeGdQcioKnmIhA" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_fkcqAEojEeKQ-tcU0kHXWw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_fkcqAUojEeKQ-tcU0kHXWw"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_DoUl0NpjEeGzu8-aAsCS4g" name="proceduresSection" type="_oJZzEAKlEeKIhvHOhwsFvA" association="_DoUl0tpjEeGzu8-aAsCS4g">
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_PXWB8N32EeGdQcioKnmIhA" value="1"/>
@@ -307,7 +286,8 @@
       </ownedAttribute>
       <ownedAttribute xmi:id="_fo8IwARkEeKNWa1y_3e0dw" name="functionalStatusSection" association="_fo8v0QRkEeKNWa1y_3e0dw">
         <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-other.uml#_2KKOBhSVEeGGzu7fmW9pXw"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_fo8v0ARkEeKNWa1y_3e0dw"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_WzrigEokEeKQ-tcU0kHXWw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_WzrigUokEeKQ-tcU0kHXWw" value="1"/>
       </ownedAttribute>
       <ownedOperation xmi:id="_P7O_8ARHEeKNWa1y_3e0dw" name="retrieveFunctionalStatusSection" isQuery="true" bodyCondition="_XgorEARHEeKNWa1y_3e0dw">
         <ownedRule xmi:id="_XgorEARHEeKNWa1y_3e0dw" name="body" constrainedElement="_P7O_8ARHEeKNWa1y_3e0dw">
@@ -439,14 +419,6 @@
       <ownedComment xmi:id="_wajPYOFzEeGlJOFzBdwM6w">
         <body>INLINE</body>
       </ownedComment>
-      <ownedRule xmi:id="_j1rcwOF3EeGlJOFzBdwM6w" name="carePlanningForPlanOfCare" constrainedElement="_svnagODKEeGdSJSga09Dyg">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_qaLEgOF3EeGlJOFzBdwM6w">
-          <language>OCL</language>
-          <language>Analysis</language>
-          <body>self.getActs()->exists(a : cda::Act | a.oclIsKindOf(consol::PlanOfCareActivityAct)) or self.getObservations()->exists(o : cda::Observation | o.oclIsKindOf(consol::PlanOfCareActivityObservation)) or self.getEncounters()->exists(e : cda::Encounter | e.oclIsKindOf(consol::PlanOfCareActivityEncounter))</body>
-          <body>SHALL contain one of Plan of Care Activity Act (2.16.840.1.113883.10.20.22.4.39) or  Plan of Care Activity Encounter  (2.16.840.1.113883.10.20.22.4.40) or Plan of Care Activity Observation (2.16.840.1.113883.10.20.22.4.44)</body>
-        </specification>
-      </ownedRule>
       <generalization xmi:id="_vqugwODKEeGdSJSga09Dyg">
         <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-planofcare.uml#_2NP-QxSVEeGGzu7fmW9pXw"/>
       </generalization>
@@ -464,8 +436,8 @@
       </ownedAttribute>
       <ownedAttribute xmi:id="_4lQLwODKEeGdSJSga09Dyg" name="planOfCareActivityObservation" visibility="private" association="_4lQLw-DKEeGdSJSga09Dyg">
         <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-planofcare.uml#_2NcLjhSVEeGGzu7fmW9pXw"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wf5OgAQGEeKNWa1y_3e0dw" value="*"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wf51kAQGEeKNWa1y_3e0dw" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0Zd7oEokEeKQ-tcU0kHXWw" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0Zd7oUokEeKQ-tcU0kHXWw"/>
         <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-planofcare.uml#_2NcLixSVEeGGzu7fmW9pXw"/>
       </ownedAttribute>
     </packagedElement>
@@ -531,14 +503,17 @@
         </ownedComment>
         <specification xmi:type="uml:OpaqueExpression" xmi:id="_Ke17gO1YEeGT-eFu7Ghgjw">
           <language>OCL</language>
-          <body>self.componentOf->excluding(null).encompassingEncounter->excluding(null)->reject(responsibleParty->one(responsibleParty : &#xD;&#xD;&#xA;cda::ResponsibleParty | not responsibleParty.oclIsUndefined() and responsibleParty.oclIsKindOf(rim::Participation)))</body>
+          <body>self.componentOf->excluding(null).encompassingEncounter->excluding(null)->reject(responsibleParty->one(responsibleParty : &#xD;&#xD;
+cda::ResponsibleParty | not responsibleParty.oclIsUndefined() and responsibleParty.oclIsKindOf(rim::Participation)))</body>
         </specification>
       </ownedRule>
       <ownedRule xmi:id="_kNHwMO1bEeGT-eFu7Ghgjw" name="reasonForOfficeVisit" constrainedElement="_7D0CQOzmEeGT-eFu7Ghgjw">
         <specification xmi:type="uml:OpaqueExpression" xmi:id="_miJt4O1bEeGT-eFu7Ghgjw">
           <language>OCL</language>
           <language>Analysis</language>
-          <body>(self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ChiefComplaintSection)) or &#xD;&#xA; self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ReasonForVisitSection))) xor &#xD;&#xA; self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ChiefComplaintAndReasonForVisitSection))</body>
+          <body>(self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ChiefComplaintSection)) or &#xD;
+ self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ReasonForVisitSection))) xor &#xD;
+ self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ChiefComplaintAndReasonForVisitSection))</body>
           <body>SHALL have one of Reason for Visit (2.16.840.1.113883.10.20.22.2.12)  or Chief Complaint (1.3.6.1.4.1.19376.1.5.3.1.1.13.2.1) or Chief Complaint and Reason for Visit (2.16.840.1.113883.10.20.22.2.13)</body>
         </specification>
       </ownedRule>
@@ -546,7 +521,8 @@
         <specification xmi:type="uml:OpaqueExpression" xmi:id="_DrZ8AO1cEeGT-eFu7Ghgjw">
           <language>OCL</language>
           <language>Analysis</language>
-          <body>(self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(mu2consol::PlanOfCareSection)) or &#xD;&#xA;self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(mu2consol::AssessmentAndPlanSection)))</body>
+          <body>(self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(mu2consol::PlanOfCareSection)) or &#xD;
+self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(mu2consol::AssessmentAndPlanSection)))</body>
           <body>SHALL have one of Plan of Care (2.16.840.1.113883.10.20.22.2.10) or Assessment and Plan (2.16.840.1.113883.10.20.22.2.9) or Interventions (2.16.840.1.113883.10.20.21.2.3)</body>
         </specification>
       </ownedRule>
@@ -557,7 +533,8 @@
         <specification xmi:type="uml:OpaqueExpression" xmi:id="_fRfCgvhlEeGPm7sA61ixGw">
           <language>OCL</language>
           <language>Analysis</language>
-          <body>self.componentOf->excluding(null).encompassingEncounter->excluding(null)->reject((effectiveTime.oclIsUndefined() or &#xD;&#xD;&#xA;effectiveTime.isNullFlavorUndefined()) implies (not effectiveTime.oclIsUndefined()))</body>
+          <body>self.componentOf->excluding(null).encompassingEncounter->excluding(null)->reject((effectiveTime.oclIsUndefined() or &#xD;&#xD;
+effectiveTime.isNullFlavorUndefined()) implies (not effectiveTime.oclIsUndefined()))</body>
           <body>Date of Visit</body>
         </specification>
       </ownedRule>
@@ -568,19 +545,9 @@
         <specification xmi:type="uml:OpaqueExpression" xmi:id="_-WWowPhlEeGPm7sA61ixGw">
           <language>OCL</language>
           <language>Analysis</language>
-          <body>self.componentOf->excluding(null).encompassingEncounter->excluding(null)->reject(location->one(location : cda::Location | &#xD;&#xD;&#xA;not location.oclIsUndefined() and location.oclIsKindOf(rim::Participation)))</body>
+          <body>self.componentOf->excluding(null).encompassingEncounter->excluding(null)->reject(location->one(location : cda::Location | &#xD;&#xD;
+not location.oclIsUndefined() and location.oclIsKindOf(rim::Participation)))</body>
           <body>Visit Location</body>
-        </specification>
-      </ownedRule>
-      <ownedRule xmi:id="_1Y4aoPhpEeGPm7sA61ixGw" name="planOfCareActOrEncounter" constrainedElement="_7D0CQOzmEeGT-eFu7Ghgjw">
-        <ownedComment xmi:id="_6FsIAPhpEeGPm7sA61ixGw">
-          <body>QUERY</body>
-        </ownedComment>
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_5W3TIPhpEeGPm7sA61ixGw">
-          <language>Analysis</language>
-          <language>OCL</language>
-          <body>Future Scheduled Appointments and Referrals to Other Providers</body>
-          <body>self.retrievePlanOfCareSection()->excluding(null)->reject(retrievePlanOfCareSection().getActs()->exists(a : cda::Act | a.oclIsKindOf(consol::PlanOfCareActivityAct)) or retrievePlanOfCareSection().getEncounters()->exists(e : cda::Encounter | e.oclIsKindOf(consol::PlanOfCareActivityEncounter)))</body>
         </specification>
       </ownedRule>
       <ownedRule xmi:id="_WhtMwAveEeK-rsV_B2slTA" name="instructionsEntry" constrainedElement="_7D0CQOzmEeGT-eFu7Ghgjw">
@@ -627,8 +594,8 @@
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_1a7JYPhmEeGPm7sA61ixGw" value="1"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_oCkUkO1XEeGT-eFu7Ghgjw" name="planOfCareSection" type="_svnagODKEeGdSJSga09Dyg" association="_oCk7oe1XEeGT-eFu7Ghgjw">
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_qgDqsO1XEeGT-eFu7Ghgjw" value="1"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_qgERwO1XEeGT-eFu7Ghgjw" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_uIwA8EojEeKQ-tcU0kHXWw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_uIwA8UojEeKQ-tcU0kHXWw"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_u5An8O1XEeGT-eFu7Ghgjw" name="proceduresSection" type="_oJZzEAKlEeKIhvHOhwsFvA" association="_u5BPAe1XEeGT-eFu7Ghgjw">
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_w3VV0O1XEeGT-eFu7Ghgjw" value="1"/>
@@ -777,7 +744,12 @@ MU2 170.314(b)(7) Export Summary  - For Ambulatory Care</body>
           <language>Analysis</language>
           <language>OCL</language>
           <body>SHALL have one of Assessment (2.16.840.1.113883.10.20.22.2.8) or Assessment and Plan (2.16.840.1.113883.10.20.22.2.9) or Postoperative Diagnosis (2.16.840.1.113883.10.20.22.2.35)  or  Postprocedure Diagnosis (2.16.840.1.113883.10.20.22.2.36) or Encounters (entries required: 2.16.840.1.113883.10.20.22.2.22.1) or Problem (entries required: 2.16.840.1.113883.10.20.22.2.5.1)</body>
-          <body>( self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(consol::ProblemSection)) or &#xD;&#xA;self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(consol::PostoperativeDiagnosisSection)) or  &#xD;&#xA;self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(consol::PostprocedureDiagnosisSection)) or &#xD;&#xA;self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(mu2consol::EncountersSection)) or &#xD;&#xA;self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(mu2consol::AssessmentSection)) or &#xD;&#xA;self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(mu2consol::AssessmentAndPlanSection)) )</body>
+          <body>( self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(consol::ProblemSection)) or &#xD;
+self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(consol::PostoperativeDiagnosisSection)) or  &#xD;
+self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(consol::PostprocedureDiagnosisSection)) or &#xD;
+self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(mu2consol::EncountersSection)) or &#xD;
+self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(mu2consol::AssessmentSection)) or &#xD;
+self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(mu2consol::AssessmentAndPlanSection)) )</body>
         </specification>
       </ownedRule>
       <generalization xmi:id="_WN-gwPabEeGi99B_x568TQ" general="_VG3DUNkxEeGsqcJR8eqiMw"/>
@@ -806,7 +778,14 @@ MU2 170.314(b)(7) Export Summary  - For Inpatient Care</body>
           <language>Analysis</language>
           <language>OCL</language>
           <body>SHALL have one of Assessment (2.16.840.1.113883.10.20.22.2.8) or Assessment and Plan (2.16.840.1.113883.10.20.22.2.9) or  Hospital Admission Diagnosis (2.16.840.1.113883.10.20.22.2.43) or Hospital Discharge Diagnosis (2.16.840.1.113883.10.20.22.2.24) or Postoperative Diagnosis (2.16.840.1.113883.10.20.22.2.35)  or  Postprocedure Diagnosis (2.16.840.1.113883.10.20.22.2.36) or Encounters (entries required: 2.16.840.1.113883.10.20.22.2.22.1) or Problem (entries required: 2.16.840.1.113883.10.20.22.2.5.1)</body>
-          <body>( self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(consol::ProblemSection)) or &#xD;&#xA;self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(consol::PostoperativeDiagnosisSection)) or  &#xD;&#xA;self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(consol::PostprocedureDiagnosisSection)) or &#xD;&#xA;self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(mu2consol::EncountersSection)) or &#xD;&#xA;self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(mu2consol::AssessmentSection)) or &#xD;&#xA;self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(mu2consol::AssessmentAndPlanSection)) or &#xD;&#xA;self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(consol::HospitalAdmissionDiagnosisSection)) or &#xD;&#xA;self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(consol::HospitalDischargeDiagnosisSection)) )</body>
+          <body>( self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(consol::ProblemSection)) or &#xD;
+self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(consol::PostoperativeDiagnosisSection)) or  &#xD;
+self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(consol::PostprocedureDiagnosisSection)) or &#xD;
+self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(mu2consol::EncountersSection)) or &#xD;
+self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(mu2consol::AssessmentSection)) or &#xD;
+self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(mu2consol::AssessmentAndPlanSection)) or &#xD;
+self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(consol::HospitalAdmissionDiagnosisSection)) or &#xD;
+self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(consol::HospitalDischargeDiagnosisSection)) )</body>
         </specification>
       </ownedRule>
       <ownedRule xmi:id="_UuuwwArBEeK-rsV_B2slTA" name="hospitalAdmissionDiagnosisEntry" constrainedElement="_uu2T0PdyEeG_npP0e3OOEw">
@@ -896,7 +875,8 @@ MU2 170.314(b)(7) Export Summary  - For Inpatient Care</body>
           <language>Analysis</language>
           <language>OCL</language>
           <body>SHALL have one of Assessment and Plan section or Plan of Care section</body>
-          <body>(self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(mu2consol::PlanOfCareSection)) or &#xD;&#xA;self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(mu2consol::AssessmentAndPlanSection)))</body>
+          <body>(self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(mu2consol::PlanOfCareSection)) or &#xD;
+self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(mu2consol::AssessmentAndPlanSection)))</body>
         </specification>
       </ownedRule>
       <generalization xmi:id="_kFewQPhVEeGPm7sA61ixGw" general="_v-6qsNkMEeGsqcJR8eqiMw"/>
@@ -932,8 +912,8 @@ MU2 170.314(b)(7) Export Summary  - For Inpatient Care</body>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_b1WlwPhYEeGPm7sA61ixGw"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_0595wPhYEeGPm7sA61ixGw" name="planOfCareSection" type="_svnagODKEeGdSJSga09Dyg" association="_05-g0PhYEeGPm7sA61ixGw">
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_WYWfoPhaEeGPm7sA61ixGw" value="1"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_WYb_MPhaEeGPm7sA61ixGw" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_zzU-IEojEeKQ-tcU0kHXWw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zzU-IUojEeKQ-tcU0kHXWw"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_dsyWkPhaEeGPm7sA61ixGw" name="socialHistorySection" type="_9frdwO1UEeGT-eFu7Ghgjw" association="_dsy9ofhaEeGPm7sA61ixGw">
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_e5Z6sPhaEeGPm7sA61ixGw" value="1"/>
@@ -989,7 +969,8 @@ MU2 170.314(b)(7) Export Summary  - For Inpatient Care</body>
         <specification xmi:type="uml:OpaqueExpression" xmi:id="_IaNM8PheEeGPm7sA61ixGw">
           <language>OCL</language>
           <language>Analysis</language>
-          <body>self.componentOf->excluding(null).encompassingEncounter->excluding(null)->reject((effectiveTime.oclIsUndefined() or &#xD;&#xD;&#xA;effectiveTime.isNullFlavorUndefined()) implies (not effectiveTime.oclIsUndefined()))</body>
+          <body>self.componentOf->excluding(null).encompassingEncounter->excluding(null)->reject((effectiveTime.oclIsUndefined() or &#xD;&#xD;
+effectiveTime.isNullFlavorUndefined()) implies (not effectiveTime.oclIsUndefined()))</body>
           <body>Admission and Discharge Dates</body>
         </specification>
       </ownedRule>
@@ -1001,14 +982,17 @@ MU2 170.314(b)(7) Export Summary  - For Inpatient Care</body>
           <language>Analysis</language>
           <language>OCL</language>
           <body>Admission and Discharge Location</body>
-          <body>self.componentOf->excluding(null).encompassingEncounter->excluding(null)->reject(location->one(location : cda::Location | &#xD;&#xD;&#xA;not location.oclIsUndefined() and location.oclIsKindOf(rim::Participation)))</body>
+          <body>self.componentOf->excluding(null).encompassingEncounter->excluding(null)->reject(location->one(location : cda::Location | &#xD;&#xD;
+not location.oclIsUndefined() and location.oclIsKindOf(rim::Participation)))</body>
         </specification>
       </ownedRule>
       <ownedRule xmi:id="_GUuRsPhfEeGPm7sA61ixGw" name="chiefComplaintOrReasonForVisit" constrainedElement="_rsKJkPhcEeGPm7sA61ixGw">
         <specification xmi:type="uml:OpaqueExpression" xmi:id="_JY5NUPhfEeGPm7sA61ixGw">
           <language>OCL</language>
           <language>Analysis</language>
-          <body>(self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ChiefComplaintSection)) or &#xD;&#xA; self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ReasonForVisitSection))) xor &#xD;&#xA; self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ChiefComplaintAndReasonForVisitSection))</body>
+          <body>(self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ChiefComplaintSection)) or &#xD;
+ self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ReasonForVisitSection))) xor &#xD;
+ self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ChiefComplaintAndReasonForVisitSection))</body>
           <body>SHALL have one of Reason for Visit (2.16.840.1.113883.10.20.22.2.12)  or Chief Complaint (1.3.6.1.4.1.19376.1.5.3.1.1.13.2.1) or Chief Complaint and Reason for Visit (2.16.840.1.113883.10.20.22.2.13)</body>
         </specification>
       </ownedRule>
@@ -1078,7 +1062,8 @@ MU2 170.314(b)(7) Export Summary  - For Inpatient Care</body>
         <specification xmi:type="uml:OpaqueExpression" xmi:id="_A_BqQPhdEeGPm7sA61ixGw">
           <language>OCL</language>
           <language>Analysis</language>
-          <body>self.componentOf->excluding(null).encompassingEncounter->excluding(null)->reject(responsibleParty->one(responsibleParty : &#xD;&#xD;&#xA;cda::ResponsibleParty | not responsibleParty.oclIsUndefined() and responsibleParty.oclIsKindOf(rim::Participation)))</body>
+          <body>self.componentOf->excluding(null).encompassingEncounter->excluding(null)->reject(responsibleParty->one(responsibleParty : &#xD;&#xD;
+cda::ResponsibleParty | not responsibleParty.oclIsUndefined() and responsibleParty.oclIsKindOf(rim::Participation)))</body>
           <body>Provider Name and Office Contact Information</body>
         </specification>
       </ownedRule>
@@ -1260,11 +1245,9 @@ MU2 170.314(b)(7) Export Summary  - For Inpatient Care</body>
   <CDA:AssociationValidation xmi:id="_-OBq4NpjEeGzu8-aAsCS4g" base_Association="_zQyEE9kMEeGsqcJR8eqiMw"/>
   <CDA:AssociationValidation xmi:id="_BDI20NpkEeGzu8-aAsCS4g" base_Association="_5PVGINkMEeGsqcJR8eqiMw"/>
   <CDA:PropertyValidation xmi:id="_fQJ6QN3hEeGdQcioKnmIhA" base_Property="_QFsyYNk4EeGsqcJR8eqiMw"/>
-  <CDA:AssociationValidation xmi:id="_cyEMkN30EeGdQcioKnmIhA" base_Association="_owEaYtk4EeGsqcJR8eqiMw"/>
   <CDA:AssociationValidation xmi:id="_Pwx1oN32EeGdQcioKnmIhA" base_Association="_DoUl0tpjEeGzu8-aAsCS4g"/>
   <CDA:AssociationValidation xmi:id="_2fYNYN32EeGdQcioKnmIhA" base_Association="_6x1tUdpiEeGzu8-aAsCS4g"/>
   <CDA:AssociationValidation xmi:id="_-SBDQN32EeGdQcioKnmIhA" base_Association="_2mtwsdpiEeGzu8-aAsCS4g"/>
-  <CDA:ConstraintValidation xmi:id="_39anEOF3EeGlJOFzBdwM6w" base_Constraint="_j1rcwOF3EeGlJOFzBdwM6w"/>
   <CDA:AssociationValidation xmi:id="_3nXMoOF5EeGlJOFzBdwM6w" base_Association="_GmMxceDgEeGdSJSga09Dyg"/>
   <CDA:AssociationValidation xmi:id="_d0roAOGVEeG708usbCxwpw" base_Association="_bvo0gdk5EeGsqcJR8eqiMw"/>
   <CDA:ConstraintValidation xmi:id="_7vlYQOvXEeGkopdZmUN1Xw" base_Constraint="_gfm_8OvXEeGkopdZmUN1Xw"/>
@@ -1274,7 +1257,6 @@ MU2 170.314(b)(7) Export Summary  - For Inpatient Care</body>
   <CDA:AssociationValidation xmi:id="_mZ1REOznEeGT-eFu7Ghgjw" base_Association="_jg8_ceznEeGT-eFu7Ghgjw"/>
   <CDA:AssociationValidation xmi:id="_BjMWgu1VEeGT-eFu7Ghgjw" base_Association="_BjMWgO1VEeGT-eFu7Ghgjw"/>
   <CDA:AssociationValidation xmi:id="_ekyykO1XEeGT-eFu7Ghgjw" base_Association="_cdpf4e1XEeGT-eFu7Ghgjw"/>
-  <CDA:AssociationValidation xmi:id="_rJBvMO1XEeGT-eFu7Ghgjw" base_Association="_oCk7oe1XEeGT-eFu7Ghgjw"/>
   <CDA:AssociationValidation xmi:id="_wVsoYO1XEeGT-eFu7Ghgjw" base_Association="_u5BPAe1XEeGT-eFu7Ghgjw"/>
   <CDA:ConstraintValidation xmi:id="_LX7foO1YEeGT-eFu7Ghgjw" base_Constraint="_F7KU8O1YEeGT-eFu7Ghgjw"/>
   <CDA:AssociationValidation xmi:id="_J71qMO1aEeGT-eFu7Ghgjw" base_Association="_Jd-Cce1aEeGT-eFu7Ghgjw"/>
@@ -1313,8 +1295,6 @@ MU2 170.314(b)(7) Export Summary  - For Inpatient Care</body>
   <CDA:AssociationValidation xmi:id="_84DAEPhXEeGPm7sA61ixGw" base_Association="_8M2uAfhXEeGPm7sA61ixGw"/>
   <CDA:AssociationValidation xmi:id="_R8u60PhYEeGPm7sA61ixGw" base_Association="_RSENMvhYEeGPm7sA61ixGw"/>
   <CDA:AssociationValidation xmi:id="_WVAioPhYEeGPm7sA61ixGw" base_Association="_VkkkMfhYEeGPm7sA61ixGw"/>
-  <CDA:AssociationValidation xmi:id="_DznZIPhaEeGPm7sA61ixGw" base_Association="_4lQLw-DKEeGdSJSga09Dyg"/>
-  <CDA:AssociationValidation xmi:id="_V2ZCEPhaEeGPm7sA61ixGw" base_Association="_05-g0PhYEeGPm7sA61ixGw"/>
   <CDA:AssociationValidation xmi:id="_edPjIPhaEeGPm7sA61ixGw" base_Association="_dsy9ofhaEeGPm7sA61ixGw"/>
   <CDA:ConstraintValidation xmi:id="_HrUYkPhcEeGPm7sA61ixGw" base_Constraint="_CrzxoPhcEeGPm7sA61ixGw"/>
   <CDA:ConstraintValidation xmi:id="_CUb-APhdEeGPm7sA61ixGw" base_Constraint="_-3broPhcEeGPm7sA61ixGw"/>
@@ -1331,7 +1311,6 @@ MU2 170.314(b)(7) Export Summary  - For Inpatient Care</body>
   <CDA:AssociationValidation xmi:id="_xHY3oPhmEeGPm7sA61ixGw" base_Association="_TUZm8e1YEeGT-eFu7Ghgjw"/>
   <CDA:AssociationValidation xmi:id="_1CXfcPhmEeGPm7sA61ixGw" base_Association="_jPHzsu1XEeGT-eFu7Ghgjw"/>
   <CDA:AssociationValidation xmi:id="_COQR8PhnEeGPm7sA61ixGw" base_Association="_Ba_B8PhnEeGPm7sA61ixGw"/>
-  <CDA:ConstraintValidation xmi:id="_6XGoIPhpEeGPm7sA61ixGw" base_Constraint="_1Y4aoPhpEeGPm7sA61ixGw"/>
   <CDA:AssociationValidation xmi:id="_6mfdEPhrEeGPm7sA61ixGw" base_Association="_d0vf0dk5EeGsqcJR8eqiMw"/>
   <CDA:AssociationValidation xmi:id="_06bDYPhxEeGPm7sA61ixGw" base_Association="_9j4-MNpiEeGzu8-aAsCS4g"/>
   <CDA:AssociationValidation xmi:id="_gNmZkPhyEeGPm7sA61ixGw" base_Association="_g_V_otpiEeGzu8-aAsCS4g"/>
@@ -1389,8 +1368,6 @@ MU2 170.314(b)(7) Export Summary  - For Inpatient Care</body>
   <CDA:AssociationValidation xmi:id="_H3wmoAQkEeKNWa1y_3e0dw" base_Association="_GKEVwgQkEeKNWa1y_3e0dw"/>
   <CDA:ConstraintValidation xmi:id="_15qvwAQrEeKNWa1y_3e0dw" base_Constraint="_ujInEAQrEeKNWa1y_3e0dw"/>
   <CDA:ConstraintValidation xmi:id="_3NehAAQrEeKNWa1y_3e0dw" base_Constraint="_jVFaQAQrEeKNWa1y_3e0dw"/>
-  <CDA:ConstraintValidation xmi:id="_gIu8wARcEeKNWa1y_3e0dw" base_Constraint="_0v2AIARbEeKNWa1y_3e0dw"/>
-  <CDA:ConstraintValidation xmi:id="_CkmaYARlEeKNWa1y_3e0dw" base_Constraint="_2PJgoARkEeKNWa1y_3e0dw"/>
   <CDA:PropertyValidation xmi:id="_CTt_UAeSEeK0r-pCA5uczw" message="Mu2consol Language Communication SHALL contain exactly one [1..1] languageCode, where the @code SHALL be selected from the set of alpha-3 codes of ISO 639-2 that are in ISO 639-1." base_Property="_CTtYQAeSEeK0r-pCA5uczw"/>
   <CDA:ValueSetConstraint xmi:id="_CUD9kAeSEeK0r-pCA5uczw" base_Property="_CTtYQAeSEeK0r-pCA5uczw" message="Mu2consol Language Communication SHALL contain exactly one [1..1] languageCode, where the @code SHALL be selected from the set of alpha-3 codes of ISO 639-2 that are in ISO 639-1.">
     <reference href="mu2consol-vocab.uml#_bjYjEAQsEeKhXbyWShxPyQ"/>
@@ -1403,4 +1380,5 @@ MU2 170.314(b)(7) Export Summary  - For Inpatient Care</body>
   <CDA:ConstraintValidation xmi:id="__6vOoAvXEeK-rsV_B2slTA" base_Constraint="_r-lpQAvXEeK-rsV_B2slTA"/>
   <CDA:ConstraintValidation xmi:id="_YXlJQAveEeK-rsV_B2slTA" base_Constraint="_WhtMwAveEeK-rsV_B2slTA"/>
   <CDA:ConstraintValidation xmi:id="_n-Si8AvfEeK-rsV_B2slTA" base_Constraint="_iaMBMAvfEeK-rsV_B2slTA"/>
+  <CDA:AssociationValidation xmi:id="_awsAEEojEeKQ-tcU0kHXWw" base_Association="_fo8v0QRkEeKNWa1y_3e0dw"/>
 </xmi:XMI>

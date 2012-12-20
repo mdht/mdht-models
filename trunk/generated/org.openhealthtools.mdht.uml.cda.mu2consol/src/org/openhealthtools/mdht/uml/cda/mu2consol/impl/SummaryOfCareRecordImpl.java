@@ -10,6 +10,7 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.mu2consol.impl;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
@@ -72,33 +73,6 @@ public class SummaryOfCareRecordImpl extends GeneralHeaderConstraintsImpl
 	public boolean validateSummaryOfCareRecordCarePlanning(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
     return SummaryOfCareRecordOperations.validateSummaryOfCareRecordCarePlanning(this, diagnostics, context);
-  }
-
-	/**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * @generated
-   */
-	public boolean validateSummaryOfCareRecordCognitiveStatusEntries(
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return SummaryOfCareRecordOperations.validateSummaryOfCareRecordCognitiveStatusEntries(this, diagnostics, context);
-  }
-
-	/**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * @generated
-   */
-	public boolean validateSummaryOfCareRecordFunctionalStatusEntries(
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return SummaryOfCareRecordOperations.validateSummaryOfCareRecordFunctionalStatusEntries(this, diagnostics, context);
-  }
-
-	/**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * @generated
-   */
-	public boolean validateSummaryOfCareRecordPlanOfCareSection(
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return SummaryOfCareRecordOperations.validateSummaryOfCareRecordPlanOfCareSection(this, diagnostics, context);
   }
 
 	/**
@@ -174,6 +148,16 @@ public class SummaryOfCareRecordImpl extends GeneralHeaderConstraintsImpl
   }
 
 	/**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validateSummaryOfCareRecordFunctionalStatusSection(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return SummaryOfCareRecordOperations.validateSummaryOfCareRecordFunctionalStatusSection(this, diagnostics, context);
+  }
+
+  /**
    * <!-- begin-user-doc --> <!-- end-user-doc -->
    * @generated
    */
@@ -189,24 +173,6 @@ public class SummaryOfCareRecordImpl extends GeneralHeaderConstraintsImpl
 	public boolean validateSummaryOfCareRecordMu2consolSocialHistorySectionSmokingStatusObservation(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
     return SummaryOfCareRecordOperations.validateSummaryOfCareRecordMu2consolSocialHistorySectionSmokingStatusObservation(this, diagnostics, context);
-  }
-
-	/**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * @generated
-   */
-	public boolean validateSummaryOfCareRecordMu2consolPlanOfCareSectionCarePlanningForPlanOfCare(
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return SummaryOfCareRecordOperations.validateSummaryOfCareRecordMu2consolPlanOfCareSectionCarePlanningForPlanOfCare(this, diagnostics, context);
-  }
-
-	/**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * @generated
-   */
-	public boolean validateSummaryOfCareRecordMu2consolPlanOfCareSectionPlanOfCareActivityObservation(
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return SummaryOfCareRecordOperations.validateSummaryOfCareRecordMu2consolPlanOfCareSectionPlanOfCareActivityObservation(this, diagnostics, context);
   }
 
 	/**

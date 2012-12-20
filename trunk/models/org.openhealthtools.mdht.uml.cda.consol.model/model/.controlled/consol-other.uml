@@ -112,8 +112,8 @@ The Assessment and Plan section represents both the clinician's conclusions and 
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2FmeIhSVEeGGzu7fmW9pXw" value="1"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_2FhlpxSVEeGGzu7fmW9pXw" name="author" type="_HgbLYHegEeGLwesdFe7o6w" association="_2FizwRSVEeGGzu7fmW9pXw">
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2FhlqBSVEeGGzu7fmW9pXw" value="1"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2FhlqRSVEeGGzu7fmW9pXw" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ehPigEhgEeK8B-PH0_kphA" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ehPigUhgEeK8B-PH0_kphA"/>
     </ownedAttribute>
     <nestedClassifier xmi:type="uml:Class" xmi:id="_HgbLYHegEeGLwesdFe7o6w" name="Author">
       <ownedComment xmi:id="_bnbZEHekEeGLwesdFe7o6w">
@@ -184,7 +184,7 @@ The Assessment and Plan section represents both the clinician's conclusions and 
     <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_e8ZEoCWvEd-iTYfpNb4PkQ"/>
     <ruleId>CONF-6.3.4.6.8</ruleId>
   </CDA:CodeSystemConstraint>
-  <CDA:AssociationValidation xmi:id="_2FizwxSVEeGGzu7fmW9pXw" base_Association="_2FizwRSVEeGGzu7fmW9pXw">
+  <CDA:AssociationValidation xmi:id="_2FizwxSVEeGGzu7fmW9pXw" severity="INFO" base_Association="_2FizwRSVEeGGzu7fmW9pXw">
     <ruleId>CONF:9433</ruleId>
   </CDA:AssociationValidation>
   <uml:Class xmi:id="_2KKOBhSVEeGGzu7fmW9pXw" name="FunctionalStatusSection">

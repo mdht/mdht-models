@@ -364,7 +364,7 @@ historical purposes.&#xD;
         <language>Analysis</language>
         <language>OCL</language>
         <body>The effectiveTime element , if present, SHALL contain exactly one [1..1] low</body>
-        <body>not self.effectiveTime.low.oclIsUndefined()</body>
+        <body>not self.effectiveTime.oclIsUndefined() implies not self.effectiveTime.low.oclIsUndefined()</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_6nx20CAwEeGetMjKLkqR8g" name="hasResolutionDate">
@@ -375,7 +375,7 @@ historical purposes.&#xD;
         <language>Analysis</language>
         <language>OCL</language>
         <body>effectiveTime, if present, SHOULD contain zero or one [0..1] high</body>
-        <body>not self.effectiveTime.high.oclIsUndefined()</body>
+        <body>not self.effectiveTime.oclIsUndefined() implies not self.effectiveTime.high.oclIsUndefined()</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_7ZTaYCAwEeGetMjKLkqR8g" name="hasUnknownResolutionDate">
