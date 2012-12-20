@@ -10893,7 +10893,7 @@
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="CommentActivity" eSuperTypes="platform:/plugin/org.openhealthtools.mdht.uml.cda/model/cda.ecore#//Act">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
-      <details key="constraints.validation.error" value="CommentActivityTemplateId CommentActivityTextReference CommentActivityTextReferenceValue CommentActivityReferenceValue CommentActivityClassCode CommentActivityMoodCode CommentActivityCode CommentActivityText CommentActivityAuthor CommentActivityAuthorAssignedAuthorUSRealmAddressStreet CommentActivityAuthorAssignedAuthorUSRealmAddressCity CommentActivityAuthorAssignedAuthorUSRealmAddressStreetAddressLine CommentActivityAuthorAssignedAuthorUSRealmAddressUse CommentActivityAuthorAssignedAuthorHasPersonOrOrganization CommentActivityAuthorAssignedAuthorAssignPersonName CommentActivityAuthorAssignedAuthorAddr CommentActivityAuthorAssignedAuthorId CommentActivityAuthorTime CommentActivityAuthorAssignedAuthor"/>
+      <details key="constraints.validation.error" value="CommentActivityTemplateId CommentActivityTextReference CommentActivityTextReferenceValue CommentActivityReferenceValue CommentActivityClassCode CommentActivityMoodCode CommentActivityCode CommentActivityText CommentActivityAuthorAssignedAuthorUSRealmAddressStreet CommentActivityAuthorAssignedAuthorUSRealmAddressCity CommentActivityAuthorAssignedAuthorUSRealmAddressStreetAddressLine CommentActivityAuthorAssignedAuthorUSRealmAddressUse CommentActivityAuthorAssignedAuthorHasPersonOrOrganization CommentActivityAuthorAssignedAuthorAssignPersonName CommentActivityAuthorAssignedAuthorAddr CommentActivityAuthorAssignedAuthorId CommentActivityAuthorTime CommentActivityAuthorAssignedAuthor"/>
       <details key="templateId.root" value="2.16.840.1.113883.10.20.22.4.64"/>
       <details key="classCode" value="ACT"/>
       <details key="moodCode" value="EVN"/>
@@ -10901,6 +10901,7 @@
       <details key="code.codeSystem" value="2.16.840.1.113883.6.1"/>
       <details key="code.codeSystemName" value="LOINC"/>
       <details key="code.displayName" value="Annotation comment"/>
+      <details key="constraints.validation.info" value="CommentActivityAuthor"/>
       <details key="constraints.validation.query" value="CommentActivityAuthorAssignedAuthorUSRealmAddressStreet CommentActivityAuthorAssignedAuthorUSRealmAddressCity CommentActivityAuthorAssignedAuthorUSRealmAddressCountry CommentActivityAuthorAssignedAuthorUSRealmAddressPostalCode CommentActivityAuthorAssignedAuthorUSRealmAddressState CommentActivityAuthorAssignedAuthorUSRealmAddressStreetAddressLine CommentActivityAuthorAssignedAuthorUSRealmAddressUseP CommentActivityAuthorAssignedAuthorUSRealmAddressUse CommentActivityAuthorAssignedAuthorHasPersonOrOrganization CommentActivityAuthorAssignedAuthorAssignPersonName CommentActivityAuthorAssignedAuthorAddr CommentActivityAuthorAssignedAuthorId CommentActivityAuthorTime CommentActivityAuthorAssignedAuthor"/>
       <details key="constraints.validation.warning" value="CommentActivityAuthorAssignedAuthorUSRealmAddressCountry CommentActivityAuthorAssignedAuthorUSRealmAddressPostalCode CommentActivityAuthorAssignedAuthorUSRealmAddressState CommentActivityAuthorAssignedAuthorUSRealmAddressUseP"/>
       <details key="constraints.validation.dependOn.CommentActivityAuthorAssignedAuthorUSRealmAddressUse"
@@ -11863,7 +11864,7 @@
     </eOperations>
     <eOperations name="ProblemObservationHasOnsetDate" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
-        <details key="body" value="not self.effectiveTime.low.oclIsUndefined()"/>
+        <details key="body" value="not self.effectiveTime.oclIsUndefined() implies not self.effectiveTime.low.oclIsUndefined()"/>
       </eAnnotations>
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
@@ -11882,7 +11883,7 @@
     </eOperations>
     <eOperations name="ProblemObservationHasResolutionDate" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
-        <details key="body" value="not self.effectiveTime.high.oclIsUndefined()"/>
+        <details key="body" value="not self.effectiveTime.oclIsUndefined() implies not self.effectiveTime.high.oclIsUndefined()"/>
       </eAnnotations>
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">

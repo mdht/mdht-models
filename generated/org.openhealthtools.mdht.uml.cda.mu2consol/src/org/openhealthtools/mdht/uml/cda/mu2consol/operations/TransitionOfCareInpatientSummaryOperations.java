@@ -622,7 +622,7 @@ public class TransitionOfCareInpatientSummaryOperations extends
     if (GET_HOSPITAL_DISCHARGE_INSTRUCTIONS_SECTION__EOCL_QRY == null)
     {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
-      helper.setOperationContext(Mu2consolPackage.Literals.TRANSITION_OF_CARE_INPATIENT_SUMMARY, Mu2consolPackage.Literals.TRANSITION_OF_CARE_INPATIENT_SUMMARY.getEAllOperations().get(344));
+      helper.setOperationContext(Mu2consolPackage.Literals.TRANSITION_OF_CARE_INPATIENT_SUMMARY, Mu2consolPackage.Literals.TRANSITION_OF_CARE_INPATIENT_SUMMARY.getEAllOperations().get(340));
       try
       {
         GET_HOSPITAL_DISCHARGE_INSTRUCTIONS_SECTION__EOCL_QRY = helper.createQuery(GET_HOSPITAL_DISCHARGE_INSTRUCTIONS_SECTION__EOCL_EXP);
@@ -677,7 +677,7 @@ public class TransitionOfCareInpatientSummaryOperations extends
     if (GET_HOSPITAL_DISCHARGE_MEDICATIONS_SECTION__EOCL_QRY == null)
     {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
-      helper.setOperationContext(Mu2consolPackage.Literals.TRANSITION_OF_CARE_INPATIENT_SUMMARY, Mu2consolPackage.Literals.TRANSITION_OF_CARE_INPATIENT_SUMMARY.getEAllOperations().get(345));
+      helper.setOperationContext(Mu2consolPackage.Literals.TRANSITION_OF_CARE_INPATIENT_SUMMARY, Mu2consolPackage.Literals.TRANSITION_OF_CARE_INPATIENT_SUMMARY.getEAllOperations().get(341));
       try
       {
         GET_HOSPITAL_DISCHARGE_MEDICATIONS_SECTION__EOCL_QRY = helper.createQuery(GET_HOSPITAL_DISCHARGE_MEDICATIONS_SECTION__EOCL_EXP);
@@ -735,7 +735,7 @@ public class TransitionOfCareInpatientSummaryOperations extends
     if (GET_HOSPITAL_ADMISSION_DIAGNOSIS_SECTION__EOCL_QRY == null)
     {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
-      helper.setOperationContext(Mu2consolPackage.Literals.TRANSITION_OF_CARE_INPATIENT_SUMMARY, Mu2consolPackage.Literals.TRANSITION_OF_CARE_INPATIENT_SUMMARY.getEAllOperations().get(346));
+      helper.setOperationContext(Mu2consolPackage.Literals.TRANSITION_OF_CARE_INPATIENT_SUMMARY, Mu2consolPackage.Literals.TRANSITION_OF_CARE_INPATIENT_SUMMARY.getEAllOperations().get(342));
       try
       {
         GET_HOSPITAL_ADMISSION_DIAGNOSIS_SECTION__EOCL_QRY = helper.createQuery(GET_HOSPITAL_ADMISSION_DIAGNOSIS_SECTION__EOCL_EXP);
@@ -793,7 +793,7 @@ public class TransitionOfCareInpatientSummaryOperations extends
     if (GET_HOSPITAL_DISCHARGE_DIAGNOSIS_SECTION__EOCL_QRY == null)
     {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
-      helper.setOperationContext(Mu2consolPackage.Literals.TRANSITION_OF_CARE_INPATIENT_SUMMARY, Mu2consolPackage.Literals.TRANSITION_OF_CARE_INPATIENT_SUMMARY.getEAllOperations().get(347));
+      helper.setOperationContext(Mu2consolPackage.Literals.TRANSITION_OF_CARE_INPATIENT_SUMMARY, Mu2consolPackage.Literals.TRANSITION_OF_CARE_INPATIENT_SUMMARY.getEAllOperations().get(343));
       try
       {
         GET_HOSPITAL_DISCHARGE_DIAGNOSIS_SECTION__EOCL_QRY = helper.createQuery(GET_HOSPITAL_DISCHARGE_DIAGNOSIS_SECTION__EOCL_EXP);
@@ -837,7 +837,7 @@ public class TransitionOfCareInpatientSummaryOperations extends
     if (GET_HOSPITAL_ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL__EOCL_QRY == null)
     {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
-      helper.setOperationContext(Mu2consolPackage.Literals.TRANSITION_OF_CARE_INPATIENT_SUMMARY, Mu2consolPackage.Literals.TRANSITION_OF_CARE_INPATIENT_SUMMARY.getEAllOperations().get(348));
+      helper.setOperationContext(Mu2consolPackage.Literals.TRANSITION_OF_CARE_INPATIENT_SUMMARY, Mu2consolPackage.Literals.TRANSITION_OF_CARE_INPATIENT_SUMMARY.getEAllOperations().get(344));
       try
       {
         GET_HOSPITAL_ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL__EOCL_QRY = helper.createQuery(GET_HOSPITAL_ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL__EOCL_EXP);

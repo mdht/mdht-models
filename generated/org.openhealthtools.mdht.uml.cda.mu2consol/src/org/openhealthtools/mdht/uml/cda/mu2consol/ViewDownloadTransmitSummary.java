@@ -10,6 +10,7 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.mu2consol;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
@@ -29,7 +30,7 @@ import org.openhealthtools.mdht.uml.cda.consol.VitalSignsSection;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.mu2consol.Mu2consolPackage#getViewDownloadTransmitSummary()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='ViewDownloadTransmitSummaryCarePlanFields ViewDownloadTransmitSummaryAllergiesSection ViewDownloadTransmitSummaryMedicationsSection ViewDownloadTransmitSummaryProblemSection ViewDownloadTransmitSummaryProceduresSection ViewDownloadTransmitSummaryVitalSignsSection ViewDownloadTransmitSummaryResultsSection ViewDownloadTransmitSummaryPlanOfCareSection ViewDownloadTransmitSummarySocialHistorySection ViewDownloadTransmitSummaryAssessmentAndPlanSectionTemplateId ViewDownloadTransmitSummaryMu2consolPlanOfCareSectionCarePlanningForPlanOfCare ViewDownloadTransmitSummaryMu2consolPlanOfCareSectionPlanOfCareActivityObservation ViewDownloadTransmitSummaryPlanOfCareSectionTemplateId ViewDownloadTransmitSummarySocialHistorySectionTemplateId ViewDownloadTransmitSummaryMu2consolSocialHistorySectionSmokingStatusObservation' constraints.validation.query='ViewDownloadTransmitSummaryAssessmentAndPlanSectionTemplateId ViewDownloadTransmitSummaryMu2consolPlanOfCareSectionCarePlanningForPlanOfCare ViewDownloadTransmitSummaryMu2consolPlanOfCareSectionPlanOfCareActivityObservation ViewDownloadTransmitSummaryPlanOfCareSectionTemplateId ViewDownloadTransmitSummarySocialHistorySectionTemplateId ViewDownloadTransmitSummaryMu2consolSocialHistorySectionSmokingStatusObservation'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='ViewDownloadTransmitSummaryCarePlanFields ViewDownloadTransmitSummaryAllergiesSection ViewDownloadTransmitSummaryMedicationsSection ViewDownloadTransmitSummaryProblemSection ViewDownloadTransmitSummaryProceduresSection ViewDownloadTransmitSummaryVitalSignsSection ViewDownloadTransmitSummaryResultsSection ViewDownloadTransmitSummarySocialHistorySection ViewDownloadTransmitSummaryAssessmentAndPlanSectionTemplateId ViewDownloadTransmitSummaryPlanOfCareSectionTemplateId ViewDownloadTransmitSummarySocialHistorySectionTemplateId ViewDownloadTransmitSummaryMu2consolSocialHistorySectionSmokingStatusObservation' constraints.validation.query='ViewDownloadTransmitSummaryAssessmentAndPlanSectionTemplateId ViewDownloadTransmitSummaryPlanOfCareSectionTemplateId ViewDownloadTransmitSummarySocialHistorySectionTemplateId ViewDownloadTransmitSummaryMu2consolSocialHistorySectionSmokingStatusObservation'"
  * @generated
  */
 public interface ViewDownloadTransmitSummary extends GeneralHeaderConstraints {
@@ -163,24 +164,6 @@ public interface ViewDownloadTransmitSummary extends GeneralHeaderConstraints {
 	 * <!-- begin-user-doc --> <!-- end-user-doc --> <!-- begin-model-doc -->
 	 * self.getAllSections()->one(section : cda::Section | not
 	 * section.oclIsUndefined() and
-	 * section.oclIsKindOf(mu2consol::PlanOfCareSection))
-	 * 
-	 * @param diagnostics
-	 *            The chain of diagnostics to which problems are to be appended.
-	 * @param context
-	 *            The cache of context-specific information. <!-- end-model-doc
-	 *            -->
-	 * @model annotation=
-	 *        "http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(mu2consol::PlanOfCareSection))'"
-	 * @generated
-	 */
-	boolean validateViewDownloadTransmitSummaryPlanOfCareSection(
-			DiagnosticChain diagnostics, Map<Object, Object> context);
-
-	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc --> <!-- begin-model-doc -->
-	 * self.getAllSections()->one(section : cda::Section | not
-	 * section.oclIsUndefined() and
 	 * section.oclIsKindOf(mu2consol::SocialHistorySection))
 	 * 
 	 * @param diagnostics
@@ -211,49 +194,6 @@ public interface ViewDownloadTransmitSummary extends GeneralHeaderConstraints {
 	 * @generated
 	 */
 	boolean validateViewDownloadTransmitSummaryAssessmentAndPlanSectionTemplateId(
-			DiagnosticChain diagnostics, Map<Object, Object> context);
-
-	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc --> <!-- begin-model-doc -->
-	 * self
-	 * .getPlanOfCareSection()->excluding(null)->reject(getPlanOfCareSection(
-	 * ).getActs()->exists(a : cda::Act |
-	 * a.oclIsKindOf(consol::PlanOfCareActivityAct)) or
-	 * getPlanOfCareSection().getObservations()->exists(o : cda::Observation |
-	 * o.oclIsKindOf(consol::PlanOfCareActivityObservation)) or
-	 * getPlanOfCareSection().getEncounters()->exists(e : cda::Encounter |
-	 * e.oclIsKindOf(consol::PlanOfCareActivityEncounter)))
-	 * 
-	 * @param diagnostics
-	 *            The chain of diagnostics to which problems are to be appended.
-	 * @param context
-	 *            The cache of context-specific information. <!-- end-model-doc
-	 *            -->
-	 * @model annotation=
-	 *        "http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getPlanOfCareSection()->excluding(null)->reject(getPlanOfCareSection().getActs()->exists(a : cda::Act | a.oclIsKindOf(consol::PlanOfCareActivityAct)) or getPlanOfCareSection().getObservations()->exists(o : cda::Observation | o.oclIsKindOf(consol::PlanOfCareActivityObservation)) or getPlanOfCareSection().getEncounters()->exists(e : cda::Encounter | e.oclIsKindOf(consol::PlanOfCareActivityEncounter)))'"
-	 * @generated
-	 */
-	boolean validateViewDownloadTransmitSummaryMu2consolPlanOfCareSectionCarePlanningForPlanOfCare(
-			DiagnosticChain diagnostics, Map<Object, Object> context);
-
-	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc --> <!-- begin-model-doc -->
-	 * self
-	 * .getPlanOfCareSection()->excluding(null)->reject(getPlanOfCareSection(
-	 * ).entry->exists(entry : cda::Entry | not
-	 * entry.observation.oclIsUndefined() and
-	 * entry.observation.oclIsKindOf(consol::PlanOfCareActivityObservation)))
-	 * 
-	 * @param diagnostics
-	 *            The chain of diagnostics to which problems are to be appended.
-	 * @param context
-	 *            The cache of context-specific information. <!-- end-model-doc
-	 *            -->
-	 * @model annotation=
-	 *        "http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getPlanOfCareSection()->excluding(null)->reject(getPlanOfCareSection().entry->exists(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(consol::PlanOfCareActivityObservation)))'"
-	 * @generated
-	 */
-	boolean validateViewDownloadTransmitSummaryMu2consolPlanOfCareSectionPlanOfCareActivityObservation(
 			DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**

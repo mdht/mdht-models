@@ -10,6 +10,7 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.mu2consol.impl;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
@@ -108,15 +109,6 @@ public class ClinicalOfficeVisitSummaryImpl extends
   }
 
 	/**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * @generated
-   */
-	public boolean validateClinicalOfficeVisitSummaryPlanOfCareActOrEncounter(
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return ClinicalOfficeVisitSummaryOperations.validateClinicalOfficeVisitSummaryPlanOfCareActOrEncounter(this, diagnostics, context);
-  }
-
-	/**
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * @generated
@@ -141,24 +133,6 @@ public class ClinicalOfficeVisitSummaryImpl extends
 	public boolean validateClinicalOfficeVisitSummarySocialHistorySection(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
     return ClinicalOfficeVisitSummaryOperations.validateClinicalOfficeVisitSummarySocialHistorySection(this, diagnostics, context);
-  }
-
-	/**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * @generated
-   */
-	public boolean validateClinicalOfficeVisitSummaryMu2consolPlanOfCareSectionCarePlanningForPlanOfCare(
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return ClinicalOfficeVisitSummaryOperations.validateClinicalOfficeVisitSummaryMu2consolPlanOfCareSectionCarePlanningForPlanOfCare(this, diagnostics, context);
-  }
-
-	/**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * @generated
-   */
-	public boolean validateClinicalOfficeVisitSummaryMu2consolPlanOfCareSectionPlanOfCareActivityObservation(
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return ClinicalOfficeVisitSummaryOperations.validateClinicalOfficeVisitSummaryMu2consolPlanOfCareSectionPlanOfCareActivityObservation(this, diagnostics, context);
   }
 
 	/**
@@ -204,15 +178,6 @@ public class ClinicalOfficeVisitSummaryImpl extends
 	public boolean validateClinicalOfficeVisitSummaryVitalSignsSection(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
     return ClinicalOfficeVisitSummaryOperations.validateClinicalOfficeVisitSummaryVitalSignsSection(this, diagnostics, context);
-  }
-
-	/**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * @generated
-   */
-	public boolean validateClinicalOfficeVisitSummaryPlanOfCareSection(
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return ClinicalOfficeVisitSummaryOperations.validateClinicalOfficeVisitSummaryPlanOfCareSection(this, diagnostics, context);
   }
 
 	/**

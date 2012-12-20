@@ -1,1114 +1,996 @@
-/*******************************************************************************
- * Copyright (c) 2012 Rama Ramakrishnan and others.
- * All rights reserved. This program and the accompanying materials
- * are made available under the terms of the Eclipse Public License v1.0
- * which accompanies this distribution, and is available at
- * http://www.eclipse.org/legal/epl-v10.html
- *
- * Contributors:
- *    Rama Ramakrishnan (Agilex Corporation) - initial API and implementation
- *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.mu2consol.util;
 
-import java.util.Map;
 
+import java.util.Map;
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.ResourceLocator;
 import org.eclipse.emf.ecore.EPackage;
 import org.eclipse.emf.ecore.util.EObjectValidator;
 import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
-import org.openhealthtools.mdht.uml.cda.mu2consol.AssessmentAndPlanSection;
-import org.openhealthtools.mdht.uml.cda.mu2consol.AssessmentSection;
-import org.openhealthtools.mdht.uml.cda.mu2consol.ClinicalOfficeVisitSummary;
-import org.openhealthtools.mdht.uml.cda.mu2consol.EncounterActivities;
-import org.openhealthtools.mdht.uml.cda.mu2consol.EncountersSection;
-import org.openhealthtools.mdht.uml.cda.mu2consol.GeneralHeaderConstraints;
-import org.openhealthtools.mdht.uml.cda.mu2consol.Mu2consolPackage;
-import org.openhealthtools.mdht.uml.cda.mu2consol.Mu2consolPlugin;
-import org.openhealthtools.mdht.uml.cda.mu2consol.PlanOfCareSection;
-import org.openhealthtools.mdht.uml.cda.mu2consol.ProcedureActivityProcedure;
-import org.openhealthtools.mdht.uml.cda.mu2consol.ProceduresSection;
-import org.openhealthtools.mdht.uml.cda.mu2consol.ResultObservation;
-import org.openhealthtools.mdht.uml.cda.mu2consol.ResultOrganizer;
-import org.openhealthtools.mdht.uml.cda.mu2consol.ResultsSection;
-import org.openhealthtools.mdht.uml.cda.mu2consol.SmokingStatusObservation;
-import org.openhealthtools.mdht.uml.cda.mu2consol.SocialHistorySection;
-import org.openhealthtools.mdht.uml.cda.mu2consol.SummaryOfCareRecord;
-import org.openhealthtools.mdht.uml.cda.mu2consol.TransitionOfCareAmbulatorySummary;
-import org.openhealthtools.mdht.uml.cda.mu2consol.TransitionOfCareInpatientSummary;
-import org.openhealthtools.mdht.uml.cda.mu2consol.VDTAmbulatorySummary;
-import org.openhealthtools.mdht.uml.cda.mu2consol.VDTInpatientSummary;
-import org.openhealthtools.mdht.uml.cda.mu2consol.ViewDownloadTransmitSummary;
+import org.openhealthtools.mdht.uml.cda.mu2consol.*;
 import org.openhealthtools.mdht.uml.cda.util.CDAValidator;
 
 /**
- * <!-- begin-user-doc --> The <b>Validator</b> for the model. <!-- end-user-doc
- * -->
- * 
+ * <!-- begin-user-doc -->
+ * The <b>Validator</b> for the model.
+ * <!-- end-user-doc -->
  * @see org.openhealthtools.mdht.uml.cda.mu2consol.Mu2consolPackage
  * @generated
  */
-public class Mu2consolValidator extends EObjectValidator {
-	/**
+public class Mu2consolValidator extends EObjectValidator
+{
+  /**
    * The cached model package
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
    * @generated
    */
-	public static final Mu2consolValidator INSTANCE = new Mu2consolValidator();
+  public static final Mu2consolValidator INSTANCE = new Mu2consolValidator();
 
-	/**
+  /**
    * A constant for the {@link org.eclipse.emf.common.util.Diagnostic#getSource() source} of diagnostic {@link org.eclipse.emf.common.util.Diagnostic#getCode() codes} from this package.
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
    * @see org.eclipse.emf.common.util.Diagnostic#getSource()
    * @see org.eclipse.emf.common.util.Diagnostic#getCode()
    * @generated
    */
-	public static final String DIAGNOSTIC_SOURCE = "org.openhealthtools.mdht.uml.cda.mu2consol";
+  public static final String DIAGNOSTIC_SOURCE = "org.openhealthtools.mdht.uml.cda.mu2consol";
 
-	/**
+  /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Mu2consol General Header Constraints Record Target' of 'General Header Constraints'.
-   * <!-- begin-user-doc --> <!--
-	 * end-user-doc -->
-   * @generated
-   */
-	public static final int GENERAL_HEADER_CONSTRAINTS__MU2CONSOL_GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET = 1;
-
-	/**
-   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Mu2consol General Header Constraints Documentation Of' of 'General Header Constraints'.
-   * <!-- begin-user-doc --> <!--
-	 * end-user-doc -->
-   * @generated
-   */
-	public static final int GENERAL_HEADER_CONSTRAINTS__MU2CONSOL_GENERAL_HEADER_CONSTRAINTS_DOCUMENTATION_OF = 2;
-
-	/**
-   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate General Header Constraints Documentation Of Service Event Performer1 Assigned Entity Assigned Person' of 'General Header Constraints'.
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * @generated
-   */
-	public static final int GENERAL_HEADER_CONSTRAINTS__GENERAL_HEADER_CONSTRAINTS_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER1_ASSIGNED_ENTITY_ASSIGNED_PERSON = 3;
-
-	/**
-	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for
-	 * constraint 'Validate General Header Constraints Documentation Of Service
-	 * Event Performer1 Assigned Entity' of 'General Header Constraints'. <!--
-	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
-	 * @generated
-	 */
-	public static final int GENERAL_HEADER_CONSTRAINTS__GENERAL_HEADER_CONSTRAINTS_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER1_ASSIGNED_ENTITY = 16;
-
-	/**
-   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate General Header Constraints Documentation Of Service Event Performer' of 'General Header Constraints'.
    * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+   * <!-- end-user-doc -->
    * @generated
    */
-	public static final int GENERAL_HEADER_CONSTRAINTS__GENERAL_HEADER_CONSTRAINTS_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER = 17;
+  public static final int GENERAL_HEADER_CONSTRAINTS__MU2CONSOL_GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET = 1;
 
-	/**
-   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate General Header Constraints Documentation Of Service Event' of 'General Header Constraints'.
-   * <!-- begin-user-doc --> <!--
-	 * end-user-doc -->
+  /**
+   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Mu2consol General Header Constraints Documentation Of' of 'General Header Constraints'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
    * @generated
    */
-	public static final int GENERAL_HEADER_CONSTRAINTS__GENERAL_HEADER_CONSTRAINTS_DOCUMENTATION_OF_SERVICE_EVENT = 18;
+  public static final int GENERAL_HEADER_CONSTRAINTS__MU2CONSOL_GENERAL_HEADER_CONSTRAINTS_DOCUMENTATION_OF = 2;
 
-	/**
-	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for
-	 * constraint 'Validate General Header Constraints Component1 Encompassing
-	 * Encounter Encounter Participant' of 'General Header Constraints'. <!--
-	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
-	 * @generated
-	 */
-	public static final int GENERAL_HEADER_CONSTRAINTS__GENERAL_HEADER_CONSTRAINTS_COMPONENT1_ENCOMPASSING_ENCOUNTER_ENCOUNTER_PARTICIPANT = 4;
+  /**
+   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate General Header Constraints Documentation Of Service Event Performer1 Assigned Entity Assigned Person' of 'General Header Constraints'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public static final int GENERAL_HEADER_CONSTRAINTS__GENERAL_HEADER_CONSTRAINTS_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER1_ASSIGNED_ENTITY_ASSIGNED_PERSON = 3;
 
-	/**
+  /**
+   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate General Header Constraints Component1 Encompassing Encounter Encounter Participant' of 'General Header Constraints'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public static final int GENERAL_HEADER_CONSTRAINTS__GENERAL_HEADER_CONSTRAINTS_COMPONENT1_ENCOMPASSING_ENCOUNTER_ENCOUNTER_PARTICIPANT = 4;
+
+  /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate General Header Constraints Component1 Encompassing Encounter' of 'General Header Constraints'.
-   * <!-- begin-user-doc --> <!--
-	 * end-user-doc -->
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
    * @generated
    */
-	public static final int GENERAL_HEADER_CONSTRAINTS__GENERAL_HEADER_CONSTRAINTS_COMPONENT1_ENCOMPASSING_ENCOUNTER = 5;
+  public static final int GENERAL_HEADER_CONSTRAINTS__GENERAL_HEADER_CONSTRAINTS_COMPONENT1_ENCOMPASSING_ENCOUNTER = 5;
 
-	/**
+  /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate General Header Constraints Template Id' of 'General Header Constraints'.
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
    * @generated
    */
-	public static final int GENERAL_HEADER_CONSTRAINTS__GENERAL_HEADER_CONSTRAINTS_TEMPLATE_ID = 6;
+  public static final int GENERAL_HEADER_CONSTRAINTS__GENERAL_HEADER_CONSTRAINTS_TEMPLATE_ID = 6;
 
-	/**
+  /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate General Header Constraints Record Target Patient Role Patient Language Communication Language Code P' of 'General Header Constraints'.
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
    * @generated
    */
-	public static final int GENERAL_HEADER_CONSTRAINTS__GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_LANGUAGE_COMMUNICATION_LANGUAGE_CODE_P = 7;
+  public static final int GENERAL_HEADER_CONSTRAINTS__GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_LANGUAGE_COMMUNICATION_LANGUAGE_CODE_P = 7;
 
-	/**
+  /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate General Header Constraints Record Target Patient Role Patient Language Communication Language Code' of 'General Header Constraints'.
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
    * @generated
    */
-	public static final int GENERAL_HEADER_CONSTRAINTS__GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_LANGUAGE_COMMUNICATION_LANGUAGE_CODE = 8;
+  public static final int GENERAL_HEADER_CONSTRAINTS__GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_LANGUAGE_COMMUNICATION_LANGUAGE_CODE = 8;
 
-	/**
-	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for
-	 * constraint 'Validate General Header Constraints Record Target Patient
-	 * Role Patient Ethnic Group Code' of 'General Header Constraints'. <!--
-	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
-	 * @generated
-	 */
-	public static final int GENERAL_HEADER_CONSTRAINTS__GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_ETHNIC_GROUP_CODE = 9;
+  /**
+   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate General Header Constraints Record Target Patient Role Patient Ethnic Group Code' of 'General Header Constraints'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public static final int GENERAL_HEADER_CONSTRAINTS__GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_ETHNIC_GROUP_CODE = 9;
 
-	/**
-	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for
-	 * constraint 'Validate General Header Constraints Record Target Patient
-	 * Role Patient Ethnic Group Code P' of 'General Header Constraints'. <!--
-	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
-	 * @generated
-	 */
-	public static final int GENERAL_HEADER_CONSTRAINTS__GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_ETHNIC_GROUP_CODE_P = 10;
+  /**
+   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate General Header Constraints Record Target Patient Role Patient Ethnic Group Code P' of 'General Header Constraints'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public static final int GENERAL_HEADER_CONSTRAINTS__GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_ETHNIC_GROUP_CODE_P = 10;
 
-	/**
-	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for
-	 * constraint 'Validate General Header Constraints Record Target Patient
-	 * Role Patient Race Code' of 'General Header Constraints'. <!--
-	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
-	 * @generated
-	 */
-	public static final int GENERAL_HEADER_CONSTRAINTS__GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_RACE_CODE = 11;
+  /**
+   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate General Header Constraints Record Target Patient Role Patient Race Code' of 'General Header Constraints'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public static final int GENERAL_HEADER_CONSTRAINTS__GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_RACE_CODE = 11;
 
-	/**
-	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for
-	 * constraint 'Validate General Header Constraints Record Target Patient
-	 * Role Patient Race Code P' of 'General Header Constraints'. <!--
-	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
-	 * @generated
-	 */
-	public static final int GENERAL_HEADER_CONSTRAINTS__GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_RACE_CODE_P = 12;
+  /**
+   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate General Header Constraints Record Target Patient Role Patient Race Code P' of 'General Header Constraints'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public static final int GENERAL_HEADER_CONSTRAINTS__GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_RACE_CODE_P = 12;
 
-	/**
+  /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate General Header Constraints Record Target Patient Role Patient Language Communication' of 'General Header Constraints'.
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
    * @generated
    */
-	public static final int GENERAL_HEADER_CONSTRAINTS__GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_LANGUAGE_COMMUNICATION = 13;
+  public static final int GENERAL_HEADER_CONSTRAINTS__GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_LANGUAGE_COMMUNICATION = 13;
 
-	/**
+  /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate General Header Constraints Record Target Patient Role Patient' of 'General Header Constraints'.
    * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+   * <!-- end-user-doc -->
    * @generated
    */
-	public static final int GENERAL_HEADER_CONSTRAINTS__GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT = 14;
+  public static final int GENERAL_HEADER_CONSTRAINTS__GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT = 14;
 
-	/**
+  /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate General Header Constraints Record Target Patient Role' of 'General Header Constraints'.
-   * <!-- begin-user-doc --> <!--
-	 * end-user-doc -->
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
    * @generated
    */
-	public static final int GENERAL_HEADER_CONSTRAINTS__GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE = 15;
+  public static final int GENERAL_HEADER_CONSTRAINTS__GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE = 15;
 
-	/**
+  /**
+   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate General Header Constraints Documentation Of Service Event Performer1 Assigned Entity' of 'General Header Constraints'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public static final int GENERAL_HEADER_CONSTRAINTS__GENERAL_HEADER_CONSTRAINTS_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER1_ASSIGNED_ENTITY = 16;
+
+  /**
+   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate General Header Constraints Documentation Of Service Event Performer' of 'General Header Constraints'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public static final int GENERAL_HEADER_CONSTRAINTS__GENERAL_HEADER_CONSTRAINTS_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER = 17;
+
+  /**
+   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate General Header Constraints Documentation Of Service Event' of 'General Header Constraints'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public static final int GENERAL_HEADER_CONSTRAINTS__GENERAL_HEADER_CONSTRAINTS_DOCUMENTATION_OF_SERVICE_EVENT = 18;
+
+  /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Summary Of Care Record Care Planning' of 'Summary Of Care Record'.
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
    * @generated
    */
-	public static final int SUMMARY_OF_CARE_RECORD__SUMMARY_OF_CARE_RECORD_CARE_PLANNING = 19;
+  public static final int SUMMARY_OF_CARE_RECORD__SUMMARY_OF_CARE_RECORD_CARE_PLANNING = 19;
 
-	/**
-   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Summary Of Care Record Cognitive Status Entries' of 'Summary Of Care Record'.
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * @generated
-   */
-	public static final int SUMMARY_OF_CARE_RECORD__SUMMARY_OF_CARE_RECORD_COGNITIVE_STATUS_ENTRIES = 20;
-
-	/**
-   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Summary Of Care Record Functional Status Entries' of 'Summary Of Care Record'.
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * @generated
-   */
-	public static final int SUMMARY_OF_CARE_RECORD__SUMMARY_OF_CARE_RECORD_FUNCTIONAL_STATUS_ENTRIES = 21;
-
-	/**
-   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Summary Of Care Record Plan Of Care Section' of 'Summary Of Care Record'.
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * @generated
-   */
-	public static final int SUMMARY_OF_CARE_RECORD__SUMMARY_OF_CARE_RECORD_PLAN_OF_CARE_SECTION = 22;
-
-	/**
+  /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Summary Of Care Record Problem Section' of 'Summary Of Care Record'.
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
    * @generated
    */
-	public static final int SUMMARY_OF_CARE_RECORD__SUMMARY_OF_CARE_RECORD_PROBLEM_SECTION = 23;
+  public static final int SUMMARY_OF_CARE_RECORD__SUMMARY_OF_CARE_RECORD_PROBLEM_SECTION = 20;
 
-	/**
+  /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Summary Of Care Record Allergies Section' of 'Summary Of Care Record'.
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
    * @generated
    */
-	public static final int SUMMARY_OF_CARE_RECORD__SUMMARY_OF_CARE_RECORD_ALLERGIES_SECTION = 24;
+  public static final int SUMMARY_OF_CARE_RECORD__SUMMARY_OF_CARE_RECORD_ALLERGIES_SECTION = 21;
 
-	/**
+  /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Summary Of Care Record Immunizations Section' of 'Summary Of Care Record'.
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
    * @generated
    */
-	public static final int SUMMARY_OF_CARE_RECORD__SUMMARY_OF_CARE_RECORD_IMMUNIZATIONS_SECTION = 25;
+  public static final int SUMMARY_OF_CARE_RECORD__SUMMARY_OF_CARE_RECORD_IMMUNIZATIONS_SECTION = 22;
 
-	/**
+  /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Summary Of Care Record Medications Section' of 'Summary Of Care Record'.
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
    * @generated
    */
-	public static final int SUMMARY_OF_CARE_RECORD__SUMMARY_OF_CARE_RECORD_MEDICATIONS_SECTION = 26;
+  public static final int SUMMARY_OF_CARE_RECORD__SUMMARY_OF_CARE_RECORD_MEDICATIONS_SECTION = 23;
 
-	/**
+  /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Summary Of Care Record Social History Section' of 'Summary Of Care Record'.
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
    * @generated
    */
-	public static final int SUMMARY_OF_CARE_RECORD__SUMMARY_OF_CARE_RECORD_SOCIAL_HISTORY_SECTION = 27;
+  public static final int SUMMARY_OF_CARE_RECORD__SUMMARY_OF_CARE_RECORD_SOCIAL_HISTORY_SECTION = 24;
 
-	/**
+  /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Summary Of Care Record Results Section' of 'Summary Of Care Record'.
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
    * @generated
    */
-	public static final int SUMMARY_OF_CARE_RECORD__SUMMARY_OF_CARE_RECORD_RESULTS_SECTION = 28;
+  public static final int SUMMARY_OF_CARE_RECORD__SUMMARY_OF_CARE_RECORD_RESULTS_SECTION = 25;
 
-	/**
+  /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Summary Of Care Record Vital Signs Section' of 'Summary Of Care Record'.
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
    * @generated
    */
-	public static final int SUMMARY_OF_CARE_RECORD__SUMMARY_OF_CARE_RECORD_VITAL_SIGNS_SECTION = 29;
+  public static final int SUMMARY_OF_CARE_RECORD__SUMMARY_OF_CARE_RECORD_VITAL_SIGNS_SECTION = 26;
 
-	/**
+  /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Summary Of Care Record Procedures Section' of 'Summary Of Care Record'.
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
    * @generated
    */
-	public static final int SUMMARY_OF_CARE_RECORD__SUMMARY_OF_CARE_RECORD_PROCEDURES_SECTION = 30;
+  public static final int SUMMARY_OF_CARE_RECORD__SUMMARY_OF_CARE_RECORD_PROCEDURES_SECTION = 27;
 
-	/**
+  /**
+   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Summary Of Care Record Functional Status Section' of 'Summary Of Care Record'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public static final int SUMMARY_OF_CARE_RECORD__SUMMARY_OF_CARE_RECORD_FUNCTIONAL_STATUS_SECTION = 28;
+
+  /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Summary Of Care Record Social History Section Template Id' of 'Summary Of Care Record'.
-   * <!-- begin-user-doc --> <!--
-	 * end-user-doc -->
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
    * @generated
    */
-	public static final int SUMMARY_OF_CARE_RECORD__SUMMARY_OF_CARE_RECORD_SOCIAL_HISTORY_SECTION_TEMPLATE_ID = 31;
+  public static final int SUMMARY_OF_CARE_RECORD__SUMMARY_OF_CARE_RECORD_SOCIAL_HISTORY_SECTION_TEMPLATE_ID = 29;
 
-	/**
-	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for
-	 * constraint 'Validate Summary Of Care Record Mu2consol Social History
-	 * Section Smoking Status Observation' of 'Summary Of Care Record'. <!--
-	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
-	 * @generated
-	 */
-	public static final int SUMMARY_OF_CARE_RECORD__SUMMARY_OF_CARE_RECORD_MU2CONSOL_SOCIAL_HISTORY_SECTION_SMOKING_STATUS_OBSERVATION = 32;
-
-	/**
-	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for
-	 * constraint 'Validate Summary Of Care Record Mu2consol Plan Of Care
-	 * Section Care Planning For Plan Of Care' of 'Summary Of Care Record'. <!--
-	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
-	 * @generated
-	 */
-	public static final int SUMMARY_OF_CARE_RECORD__SUMMARY_OF_CARE_RECORD_MU2CONSOL_PLAN_OF_CARE_SECTION_CARE_PLANNING_FOR_PLAN_OF_CARE = 33;
-
-	/**
-   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Summary Of Care Record Mu2consol Plan Of Care Section Plan Of Care Activity Observation' of 'Summary Of Care Record'.
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
+  /**
+   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Summary Of Care Record Mu2consol Social History Section Smoking Status Observation' of 'Summary Of Care Record'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
    * @generated
    */
-	public static final int SUMMARY_OF_CARE_RECORD__SUMMARY_OF_CARE_RECORD_MU2CONSOL_PLAN_OF_CARE_SECTION_PLAN_OF_CARE_ACTIVITY_OBSERVATION = 34;
+  public static final int SUMMARY_OF_CARE_RECORD__SUMMARY_OF_CARE_RECORD_MU2CONSOL_SOCIAL_HISTORY_SECTION_SMOKING_STATUS_OBSERVATION = 30;
 
-	/**
+  /**
+   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Summary Of Care Record Plan Of Care Section Template Id' of 'Summary Of Care Record'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public static final int SUMMARY_OF_CARE_RECORD__SUMMARY_OF_CARE_RECORD_PLAN_OF_CARE_SECTION_TEMPLATE_ID = 31;
+
+  /**
+   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Summary Of Care Record Assessment And Plan Section Template Id' of 'Summary Of Care Record'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public static final int SUMMARY_OF_CARE_RECORD__SUMMARY_OF_CARE_RECORD_ASSESSMENT_AND_PLAN_SECTION_TEMPLATE_ID = 32;
+
+  /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Summary Of Care Record Assessment Section Template Id' of 'Summary Of Care Record'.
-   * <!-- begin-user-doc --> <!--
-	 * end-user-doc -->
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
    * @generated
    */
-	public static final int SUMMARY_OF_CARE_RECORD__SUMMARY_OF_CARE_RECORD_ASSESSMENT_SECTION_TEMPLATE_ID = 37;
+  public static final int SUMMARY_OF_CARE_RECORD__SUMMARY_OF_CARE_RECORD_ASSESSMENT_SECTION_TEMPLATE_ID = 33;
 
-	/**
+  /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Summary Of Care Record Mu2consol Assessment Section Problem Observation' of 'Summary Of Care Record'.
    * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+   * <!-- end-user-doc -->
    * @generated
    */
-	public static final int SUMMARY_OF_CARE_RECORD__SUMMARY_OF_CARE_RECORD_MU2CONSOL_ASSESSMENT_SECTION_PROBLEM_OBSERVATION = 38;
+  public static final int SUMMARY_OF_CARE_RECORD__SUMMARY_OF_CARE_RECORD_MU2CONSOL_ASSESSMENT_SECTION_PROBLEM_OBSERVATION = 34;
 
-	/**
+  /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Mu2consol Encounters Section Encounter Activities' of 'Encounters Section'.
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * @generated
-   */
-	public static final int ENCOUNTERS_SECTION__MU2CONSOL_ENCOUNTERS_SECTION_ENCOUNTER_ACTIVITIES = 39;
-
-	/**
-   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Encounters Section Entries Optional Template Id' of 'Encounters Section'.
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * @generated
-   */
-	public static final int ENCOUNTERS_SECTION__ENCOUNTERS_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID = 40;
-
-	/**
-   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Mu2consol Encounter Activities Code Value' of 'Encounter Activities'.
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * @generated
-   */
-	public static final int ENCOUNTER_ACTIVITIES__MU2CONSOL_ENCOUNTER_ACTIVITIES_CODE_VALUE = 41;
-
-	/**
-   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Encounter Activities Template Id' of 'Encounter Activities'.
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * @generated
-   */
-	public static final int ENCOUNTER_ACTIVITIES__ENCOUNTER_ACTIVITIES_TEMPLATE_ID = 42;
-
-	/**
-   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Summary Of Care Record Assessment And Plan Section Template Id' of 'Summary Of Care Record'.
-   * <!-- begin-user-doc --> <!--
-	 * end-user-doc -->
-   * @generated
-   */
-	public static final int SUMMARY_OF_CARE_RECORD__SUMMARY_OF_CARE_RECORD_ASSESSMENT_AND_PLAN_SECTION_TEMPLATE_ID = 36;
-
-	/**
-   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Summary Of Care Record Plan Of Care Section Template Id' of 'Summary Of Care Record'.
-   * <!-- begin-user-doc --> <!--
-	 * end-user-doc -->
-   * @generated
-   */
-	public static final int SUMMARY_OF_CARE_RECORD__SUMMARY_OF_CARE_RECORD_PLAN_OF_CARE_SECTION_TEMPLATE_ID = 35;
-
-	/**
-   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Mu2consol Plan Of Care Section Care Planning For Plan Of Care' of 'Plan Of Care Section'.
-   * <!-- begin-user-doc --> <!--
-	 * end-user-doc -->
-   * @generated
-   */
-	public static final int PLAN_OF_CARE_SECTION__MU2CONSOL_PLAN_OF_CARE_SECTION_CARE_PLANNING_FOR_PLAN_OF_CARE = 43;
-
-	/**
-   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Mu2consol Plan Of Care Section Plan Of Care Activity Observation' of 'Plan Of Care Section'.
-   * <!-- begin-user-doc --> <!--
-	 * end-user-doc -->
-   * @generated
-   */
-	public static final int PLAN_OF_CARE_SECTION__MU2CONSOL_PLAN_OF_CARE_SECTION_PLAN_OF_CARE_ACTIVITY_OBSERVATION = 44;
-
-	/**
-   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Plan Of Care Section Template Id' of 'Plan Of Care Section'.
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * @generated
-   */
-	public static final int PLAN_OF_CARE_SECTION__PLAN_OF_CARE_SECTION_TEMPLATE_ID = 45;
-
-	/**
-	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for
-	 * constraint 'Validate Assessment And Plan Section Template Id' of
-	 * 'Assessment And Plan Section'. <!-- begin-user-doc --> <!-- end-user-doc
-	 * -->
-	 * 
-	 * @generated
-	 */
-	public static final int ASSESSMENT_AND_PLAN_SECTION__ASSESSMENT_AND_PLAN_SECTION_TEMPLATE_ID = 46;
-
-	/**
-   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Clinical Office Visit Summary Responsible Party' of 'Clinical Office Visit Summary'.
-   * <!-- begin-user-doc --> <!--
-	 * end-user-doc -->
-   * @generated
-   */
-	public static final int CLINICAL_OFFICE_VISIT_SUMMARY__CLINICAL_OFFICE_VISIT_SUMMARY_RESPONSIBLE_PARTY = 66;
-
-	/**
-   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Clinical Office Visit Summary Location' of 'Clinical Office Visit Summary'.
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * @generated
-   */
-	public static final int CLINICAL_OFFICE_VISIT_SUMMARY__CLINICAL_OFFICE_VISIT_SUMMARY_LOCATION = 70;
-
-	/**
-   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Clinical Office Visit Summary Reason For Office Visit' of 'Clinical Office Visit Summary'.
-   * <!-- begin-user-doc --> <!--
-	 * end-user-doc -->
-   * @generated
-   */
-	public static final int CLINICAL_OFFICE_VISIT_SUMMARY__CLINICAL_OFFICE_VISIT_SUMMARY_REASON_FOR_OFFICE_VISIT = 67;
-
-	/**
-   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Clinical Office Visit Summary Care Planning' of 'Clinical Office Visit Summary'.
-   * <!-- begin-user-doc --> <!--
-	 * end-user-doc -->
-   * @generated
-   */
-	public static final int CLINICAL_OFFICE_VISIT_SUMMARY__CLINICAL_OFFICE_VISIT_SUMMARY_CARE_PLANNING = 68;
-
-	/**
-   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Clinical Office Visit Summary Effective Time' of 'Clinical Office Visit Summary'.
-   * <!-- begin-user-doc --> <!--
-	 * end-user-doc -->
-   * @generated
-   */
-	public static final int CLINICAL_OFFICE_VISIT_SUMMARY__CLINICAL_OFFICE_VISIT_SUMMARY_EFFECTIVE_TIME = 69;
-
-	/**
-   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Clinical Office Visit Summary Plan Of Care Act Or Encounter' of 'Clinical Office Visit Summary'.
    * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+   * <!-- end-user-doc -->
    * @generated
    */
-	public static final int CLINICAL_OFFICE_VISIT_SUMMARY__CLINICAL_OFFICE_VISIT_SUMMARY_PLAN_OF_CARE_ACT_OR_ENCOUNTER = 71;
+  public static final int ENCOUNTERS_SECTION__MU2CONSOL_ENCOUNTERS_SECTION_ENCOUNTER_ACTIVITIES = 35;
 
-	/**
+  /**
+   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Encounters Section Entries Optional Template Id' of 'Encounters Section'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public static final int ENCOUNTERS_SECTION__ENCOUNTERS_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID = 36;
+
+  /**
+   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Mu2consol Encounter Activities Code Value' of 'Encounter Activities'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public static final int ENCOUNTER_ACTIVITIES__MU2CONSOL_ENCOUNTER_ACTIVITIES_CODE_VALUE = 37;
+
+  /**
+   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Encounter Activities Template Id' of 'Encounter Activities'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public static final int ENCOUNTER_ACTIVITIES__ENCOUNTER_ACTIVITIES_TEMPLATE_ID = 38;
+
+  /**
+   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Plan Of Care Section Template Id' of 'Plan Of Care Section'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public static final int PLAN_OF_CARE_SECTION__PLAN_OF_CARE_SECTION_TEMPLATE_ID = 39;
+
+  /**
+   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Assessment And Plan Section Template Id' of 'Assessment And Plan Section'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public static final int ASSESSMENT_AND_PLAN_SECTION__ASSESSMENT_AND_PLAN_SECTION_TEMPLATE_ID = 40;
+
+  /**
+   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Mu2consol Assessment Section Problem Observation' of 'Assessment Section'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public static final int ASSESSMENT_SECTION__MU2CONSOL_ASSESSMENT_SECTION_PROBLEM_OBSERVATION = 41;
+
+  /**
+   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Assessment Section Template Id' of 'Assessment Section'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public static final int ASSESSMENT_SECTION__ASSESSMENT_SECTION_TEMPLATE_ID = 42;
+
+  /**
+   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Mu2consol Social History Section Smoking Status Observation' of 'Social History Section'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public static final int SOCIAL_HISTORY_SECTION__MU2CONSOL_SOCIAL_HISTORY_SECTION_SMOKING_STATUS_OBSERVATION = 43;
+
+  /**
+   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Social History Section Template Id' of 'Social History Section'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public static final int SOCIAL_HISTORY_SECTION__SOCIAL_HISTORY_SECTION_TEMPLATE_ID = 44;
+
+  /**
+   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Smoking Status Observation Value P' of 'Smoking Status Observation'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public static final int SMOKING_STATUS_OBSERVATION__SMOKING_STATUS_OBSERVATION_VALUE_P = 45;
+
+  /**
+   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Smoking Status Observation Value' of 'Smoking Status Observation'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public static final int SMOKING_STATUS_OBSERVATION__SMOKING_STATUS_OBSERVATION_VALUE = 46;
+
+  /**
+   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Tobacco Use Template Id' of 'Smoking Status Observation'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public static final int SMOKING_STATUS_OBSERVATION__TOBACCO_USE_TEMPLATE_ID = 47;
+
+  /**
+   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Mu2consol Results Section Result Organizer' of 'Results Section'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public static final int RESULTS_SECTION__MU2CONSOL_RESULTS_SECTION_RESULT_ORGANIZER = 48;
+
+  /**
+   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Results Section Entries Optional Template Id' of 'Results Section'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public static final int RESULTS_SECTION__RESULTS_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID = 49;
+
+  /**
+   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Mu2consol Result Organizer Result Observation' of 'Result Organizer'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public static final int RESULT_ORGANIZER__MU2CONSOL_RESULT_ORGANIZER_RESULT_OBSERVATION = 50;
+
+  /**
+   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Result Organizer Template Id' of 'Result Organizer'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public static final int RESULT_ORGANIZER__RESULT_ORGANIZER_TEMPLATE_ID = 51;
+
+  /**
+   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Mu2consol Result Observation Result Observation Code Value' of 'Result Observation'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public static final int RESULT_OBSERVATION__MU2CONSOL_RESULT_OBSERVATION_RESULT_OBSERVATION_CODE_VALUE = 52;
+
+  /**
+   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Mu2consol Result Observation Code' of 'Result Observation'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public static final int RESULT_OBSERVATION__MU2CONSOL_RESULT_OBSERVATION_CODE = 53;
+
+  /**
+   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Result Observation Template Id' of 'Result Observation'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public static final int RESULT_OBSERVATION__RESULT_OBSERVATION_TEMPLATE_ID = 54;
+
+  /**
+   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Mu2consol Procedures Section Procedure Activity Procedure' of 'Procedures Section'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public static final int PROCEDURES_SECTION__MU2CONSOL_PROCEDURES_SECTION_PROCEDURE_ACTIVITY_PROCEDURE = 55;
+
+  /**
+   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Procedures Section Entries Optional Template Id' of 'Procedures Section'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public static final int PROCEDURES_SECTION__PROCEDURES_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID = 56;
+
+  /**
+   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Mu2consol Procedure Activity Procedure Code Value' of 'Procedure Activity Procedure'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public static final int PROCEDURE_ACTIVITY_PROCEDURE__MU2CONSOL_PROCEDURE_ACTIVITY_PROCEDURE_CODE_VALUE = 57;
+
+  /**
+   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Mu2consol Procedure Activity Procedure Code' of 'Procedure Activity Procedure'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public static final int PROCEDURE_ACTIVITY_PROCEDURE__MU2CONSOL_PROCEDURE_ACTIVITY_PROCEDURE_CODE = 58;
+
+  /**
+   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Procedure Activity Procedure Template Id' of 'Procedure Activity Procedure'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public static final int PROCEDURE_ACTIVITY_PROCEDURE__PROCEDURE_ACTIVITY_PROCEDURE_TEMPLATE_ID = 59;
+
+  /**
+   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Clinical Office Visit Summary Responsible Party' of 'Clinical Office Visit Summary'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public static final int CLINICAL_OFFICE_VISIT_SUMMARY__CLINICAL_OFFICE_VISIT_SUMMARY_RESPONSIBLE_PARTY = 60;
+
+  /**
+   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Clinical Office Visit Summary Reason For Office Visit' of 'Clinical Office Visit Summary'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public static final int CLINICAL_OFFICE_VISIT_SUMMARY__CLINICAL_OFFICE_VISIT_SUMMARY_REASON_FOR_OFFICE_VISIT = 61;
+
+  /**
+   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Clinical Office Visit Summary Care Planning' of 'Clinical Office Visit Summary'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public static final int CLINICAL_OFFICE_VISIT_SUMMARY__CLINICAL_OFFICE_VISIT_SUMMARY_CARE_PLANNING = 62;
+
+  /**
+   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Clinical Office Visit Summary Effective Time' of 'Clinical Office Visit Summary'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public static final int CLINICAL_OFFICE_VISIT_SUMMARY__CLINICAL_OFFICE_VISIT_SUMMARY_EFFECTIVE_TIME = 63;
+
+  /**
+   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Clinical Office Visit Summary Location' of 'Clinical Office Visit Summary'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public static final int CLINICAL_OFFICE_VISIT_SUMMARY__CLINICAL_OFFICE_VISIT_SUMMARY_LOCATION = 64;
+
+  /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Clinical Office Visit Summary Instructions Entry' of 'Clinical Office Visit Summary'.
    * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+   * <!-- end-user-doc -->
    * @generated
    */
-	public static final int CLINICAL_OFFICE_VISIT_SUMMARY__CLINICAL_OFFICE_VISIT_SUMMARY_INSTRUCTIONS_ENTRY = 72;
+  public static final int CLINICAL_OFFICE_VISIT_SUMMARY__CLINICAL_OFFICE_VISIT_SUMMARY_INSTRUCTIONS_ENTRY = 65;
 
-	/**
+  /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Clinical Office Visit Summary Medications Administered Entry' of 'Clinical Office Visit Summary'.
    * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+   * <!-- end-user-doc -->
    * @generated
    */
-	public static final int CLINICAL_OFFICE_VISIT_SUMMARY__CLINICAL_OFFICE_VISIT_SUMMARY_MEDICATIONS_ADMINISTERED_ENTRY = 73;
+  public static final int CLINICAL_OFFICE_VISIT_SUMMARY__CLINICAL_OFFICE_VISIT_SUMMARY_MEDICATIONS_ADMINISTERED_ENTRY = 66;
 
-	/**
-   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Clinical Office Visit Summary Social History Section' of 'Clinical Office Visit Summary'.
-   * <!-- begin-user-doc --> <!--
-	 * end-user-doc -->
-   * @generated
-   */
-	public static final int CLINICAL_OFFICE_VISIT_SUMMARY__CLINICAL_OFFICE_VISIT_SUMMARY_SOCIAL_HISTORY_SECTION = 84;
-
-	/**
-   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Clinical Office Visit Summary Mu2consol Plan Of Care Section Care Planning For Plan Of Care' of 'Clinical Office Visit Summary'.
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * @generated
-   */
-	public static final int CLINICAL_OFFICE_VISIT_SUMMARY__CLINICAL_OFFICE_VISIT_SUMMARY_MU2CONSOL_PLAN_OF_CARE_SECTION_CARE_PLANNING_FOR_PLAN_OF_CARE = 85;
-
-	/**
-   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Clinical Office Visit Summary Mu2consol Plan Of Care Section Plan Of Care Activity Observation' of 'Clinical Office Visit Summary'.
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * @generated
-   */
-	public static final int CLINICAL_OFFICE_VISIT_SUMMARY__CLINICAL_OFFICE_VISIT_SUMMARY_MU2CONSOL_PLAN_OF_CARE_SECTION_PLAN_OF_CARE_ACTIVITY_OBSERVATION = 86;
-
-	/**
+  /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Clinical Office Visit Summary Problem Section' of 'Clinical Office Visit Summary'.
-   * <!-- begin-user-doc --> <!--
-	 * end-user-doc -->
-   * @generated
-   */
-	public static final int CLINICAL_OFFICE_VISIT_SUMMARY__CLINICAL_OFFICE_VISIT_SUMMARY_PROBLEM_SECTION = 74;
-
-	/**
-   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Clinical Office Visit Summary Medications Section' of 'Clinical Office Visit Summary'.
-   * <!-- begin-user-doc --> <!--
-	 * end-user-doc -->
-   * @generated
-   */
-	public static final int CLINICAL_OFFICE_VISIT_SUMMARY__CLINICAL_OFFICE_VISIT_SUMMARY_MEDICATIONS_SECTION = 75;
-
-	/**
-   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Clinical Office Visit Summary Allergies Section' of 'Clinical Office Visit Summary'.
-   * <!-- begin-user-doc --> <!--
-	 * end-user-doc -->
-   * @generated
-   */
-	public static final int CLINICAL_OFFICE_VISIT_SUMMARY__CLINICAL_OFFICE_VISIT_SUMMARY_ALLERGIES_SECTION = 76;
-
-	/**
-   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Clinical Office Visit Summary Results Section' of 'Clinical Office Visit Summary'.
-   * <!-- begin-user-doc --> <!--
-	 * end-user-doc -->
-   * @generated
-   */
-	public static final int CLINICAL_OFFICE_VISIT_SUMMARY__CLINICAL_OFFICE_VISIT_SUMMARY_RESULTS_SECTION = 77;
-
-	/**
-   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Clinical Office Visit Summary Vital Signs Section' of 'Clinical Office Visit Summary'.
-   * <!-- begin-user-doc --> <!--
-	 * end-user-doc -->
-   * @generated
-   */
-	public static final int CLINICAL_OFFICE_VISIT_SUMMARY__CLINICAL_OFFICE_VISIT_SUMMARY_VITAL_SIGNS_SECTION = 78;
-
-	/**
-   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Clinical Office Visit Summary Plan Of Care Section' of 'Clinical Office Visit Summary'.
-   * <!-- begin-user-doc --> <!--
-	 * end-user-doc -->
-   * @generated
-   */
-	public static final int CLINICAL_OFFICE_VISIT_SUMMARY__CLINICAL_OFFICE_VISIT_SUMMARY_PLAN_OF_CARE_SECTION = 79;
-
-	/**
-   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Clinical Office Visit Summary Procedures Section' of 'Clinical Office Visit Summary'.
-   * <!-- begin-user-doc --> <!--
-	 * end-user-doc -->
-   * @generated
-   */
-	public static final int CLINICAL_OFFICE_VISIT_SUMMARY__CLINICAL_OFFICE_VISIT_SUMMARY_PROCEDURES_SECTION = 80;
-
-	/**
-   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Clinical Office Visit Summary Immunizations Section' of 'Clinical Office Visit Summary'.
-   * <!-- begin-user-doc --> <!--
-	 * end-user-doc -->
-   * @generated
-   */
-	public static final int CLINICAL_OFFICE_VISIT_SUMMARY__CLINICAL_OFFICE_VISIT_SUMMARY_IMMUNIZATIONS_SECTION = 81;
-
-	/**
-	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for
-	 * constraint 'Validate Clinical Office Visit Summary Medications
-	 * Administered Section' of 'Clinical Office Visit Summary'. <!--
-	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
-	 * @generated
-	 */
-	public static final int CLINICAL_OFFICE_VISIT_SUMMARY__CLINICAL_OFFICE_VISIT_SUMMARY_MEDICATIONS_ADMINISTERED_SECTION = 82;
-
-	/**
-   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Clinical Office Visit Summary Instructions Section' of 'Clinical Office Visit Summary'.
-   * <!-- begin-user-doc --> <!--
-	 * end-user-doc -->
-   * @generated
-   */
-	public static final int CLINICAL_OFFICE_VISIT_SUMMARY__CLINICAL_OFFICE_VISIT_SUMMARY_INSTRUCTIONS_SECTION = 83;
-
-	/**
-   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Clinical Office Visit Summary Social History Section Template Id' of 'Clinical Office Visit Summary'.
    * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+   * <!-- end-user-doc -->
    * @generated
    */
-	public static final int CLINICAL_OFFICE_VISIT_SUMMARY__CLINICAL_OFFICE_VISIT_SUMMARY_SOCIAL_HISTORY_SECTION_TEMPLATE_ID = 89;
+  public static final int CLINICAL_OFFICE_VISIT_SUMMARY__CLINICAL_OFFICE_VISIT_SUMMARY_PROBLEM_SECTION = 67;
 
-	/**
-   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Clinical Office Visit Summary Mu2consol Social History Section Smoking Status Observation' of 'Clinical Office Visit Summary'.
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
+  /**
+   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Clinical Office Visit Summary Medications Section' of 'Clinical Office Visit Summary'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
    * @generated
    */
-	public static final int CLINICAL_OFFICE_VISIT_SUMMARY__CLINICAL_OFFICE_VISIT_SUMMARY_MU2CONSOL_SOCIAL_HISTORY_SECTION_SMOKING_STATUS_OBSERVATION = 90;
+  public static final int CLINICAL_OFFICE_VISIT_SUMMARY__CLINICAL_OFFICE_VISIT_SUMMARY_MEDICATIONS_SECTION = 68;
 
-	/**
+  /**
+   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Clinical Office Visit Summary Allergies Section' of 'Clinical Office Visit Summary'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public static final int CLINICAL_OFFICE_VISIT_SUMMARY__CLINICAL_OFFICE_VISIT_SUMMARY_ALLERGIES_SECTION = 69;
+
+  /**
+   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Clinical Office Visit Summary Results Section' of 'Clinical Office Visit Summary'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public static final int CLINICAL_OFFICE_VISIT_SUMMARY__CLINICAL_OFFICE_VISIT_SUMMARY_RESULTS_SECTION = 70;
+
+  /**
+   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Clinical Office Visit Summary Vital Signs Section' of 'Clinical Office Visit Summary'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public static final int CLINICAL_OFFICE_VISIT_SUMMARY__CLINICAL_OFFICE_VISIT_SUMMARY_VITAL_SIGNS_SECTION = 71;
+
+  /**
+   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Clinical Office Visit Summary Procedures Section' of 'Clinical Office Visit Summary'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public static final int CLINICAL_OFFICE_VISIT_SUMMARY__CLINICAL_OFFICE_VISIT_SUMMARY_PROCEDURES_SECTION = 72;
+
+  /**
+   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Clinical Office Visit Summary Immunizations Section' of 'Clinical Office Visit Summary'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public static final int CLINICAL_OFFICE_VISIT_SUMMARY__CLINICAL_OFFICE_VISIT_SUMMARY_IMMUNIZATIONS_SECTION = 73;
+
+  /**
+   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Clinical Office Visit Summary Medications Administered Section' of 'Clinical Office Visit Summary'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public static final int CLINICAL_OFFICE_VISIT_SUMMARY__CLINICAL_OFFICE_VISIT_SUMMARY_MEDICATIONS_ADMINISTERED_SECTION = 74;
+
+  /**
+   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Clinical Office Visit Summary Instructions Section' of 'Clinical Office Visit Summary'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public static final int CLINICAL_OFFICE_VISIT_SUMMARY__CLINICAL_OFFICE_VISIT_SUMMARY_INSTRUCTIONS_SECTION = 75;
+
+  /**
+   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Clinical Office Visit Summary Social History Section' of 'Clinical Office Visit Summary'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public static final int CLINICAL_OFFICE_VISIT_SUMMARY__CLINICAL_OFFICE_VISIT_SUMMARY_SOCIAL_HISTORY_SECTION = 76;
+
+  /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Clinical Office Visit Summary Plan Of Care Section Template Id' of 'Clinical Office Visit Summary'.
    * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+   * <!-- end-user-doc -->
    * @generated
    */
-	public static final int CLINICAL_OFFICE_VISIT_SUMMARY__CLINICAL_OFFICE_VISIT_SUMMARY_PLAN_OF_CARE_SECTION_TEMPLATE_ID = 87;
+  public static final int CLINICAL_OFFICE_VISIT_SUMMARY__CLINICAL_OFFICE_VISIT_SUMMARY_PLAN_OF_CARE_SECTION_TEMPLATE_ID = 77;
 
-	/**
-	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for
-	 * constraint 'Validate Clinical Office Visit Summary Assessment And Plan
-	 * Section Template Id' of 'Clinical Office Visit Summary'. <!--
-	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
-	 * @generated
-	 */
-	public static final int CLINICAL_OFFICE_VISIT_SUMMARY__CLINICAL_OFFICE_VISIT_SUMMARY_ASSESSMENT_AND_PLAN_SECTION_TEMPLATE_ID = 88;
+  /**
+   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Clinical Office Visit Summary Assessment And Plan Section Template Id' of 'Clinical Office Visit Summary'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public static final int CLINICAL_OFFICE_VISIT_SUMMARY__CLINICAL_OFFICE_VISIT_SUMMARY_ASSESSMENT_AND_PLAN_SECTION_TEMPLATE_ID = 78;
 
-	/**
+  /**
+   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Clinical Office Visit Summary Social History Section Template Id' of 'Clinical Office Visit Summary'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public static final int CLINICAL_OFFICE_VISIT_SUMMARY__CLINICAL_OFFICE_VISIT_SUMMARY_SOCIAL_HISTORY_SECTION_TEMPLATE_ID = 79;
+
+  /**
+   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Clinical Office Visit Summary Mu2consol Social History Section Smoking Status Observation' of 'Clinical Office Visit Summary'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public static final int CLINICAL_OFFICE_VISIT_SUMMARY__CLINICAL_OFFICE_VISIT_SUMMARY_MU2CONSOL_SOCIAL_HISTORY_SECTION_SMOKING_STATUS_OBSERVATION = 80;
+
+  /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Transition Of Care Ambulatory Summary Responsible Party' of 'Transition Of Care Ambulatory Summary'.
-   * <!-- begin-user-doc
-	 * --> <!-- end-user-doc -->
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
    * @generated
    */
-	public static final int TRANSITION_OF_CARE_AMBULATORY_SUMMARY__TRANSITION_OF_CARE_AMBULATORY_SUMMARY_RESPONSIBLE_PARTY = 91;
+  public static final int TRANSITION_OF_CARE_AMBULATORY_SUMMARY__TRANSITION_OF_CARE_AMBULATORY_SUMMARY_RESPONSIBLE_PARTY = 81;
 
-	/**
-	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for
-	 * constraint 'Validate Transition Of Care Ambulatory Summary Ambulatory
-	 * Encounter Diagnoses' of 'Transition Of Care Ambulatory Summary'. <!--
-	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
-	 * @generated
-	 */
-	public static final int TRANSITION_OF_CARE_AMBULATORY_SUMMARY__TRANSITION_OF_CARE_AMBULATORY_SUMMARY_AMBULATORY_ENCOUNTER_DIAGNOSES = 92;
+  /**
+   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Transition Of Care Ambulatory Summary Ambulatory Encounter Diagnoses' of 'Transition Of Care Ambulatory Summary'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public static final int TRANSITION_OF_CARE_AMBULATORY_SUMMARY__TRANSITION_OF_CARE_AMBULATORY_SUMMARY_AMBULATORY_ENCOUNTER_DIAGNOSES = 82;
 
-	/**
-	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for
-	 * constraint 'Validate Transition Of Care Ambulatory Summary Reason For
-	 * Referral Section' of 'Transition Of Care Ambulatory Summary'. <!--
-	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
-	 * @generated
-	 */
-	public static final int TRANSITION_OF_CARE_AMBULATORY_SUMMARY__TRANSITION_OF_CARE_AMBULATORY_SUMMARY_REASON_FOR_REFERRAL_SECTION = 93;
+  /**
+   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Transition Of Care Ambulatory Summary Reason For Referral Section' of 'Transition Of Care Ambulatory Summary'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public static final int TRANSITION_OF_CARE_AMBULATORY_SUMMARY__TRANSITION_OF_CARE_AMBULATORY_SUMMARY_REASON_FOR_REFERRAL_SECTION = 83;
 
-	/**
-	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for
-	 * constraint 'Validate Transition Of Care Inpatient Summary Inpatient
-	 * Encounter Diagnoses' of 'Transition Of Care Inpatient Summary'. <!--
-	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
-	 * @generated
-	 */
-	public static final int TRANSITION_OF_CARE_INPATIENT_SUMMARY__TRANSITION_OF_CARE_INPATIENT_SUMMARY_INPATIENT_ENCOUNTER_DIAGNOSES = 94;
+  /**
+   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Transition Of Care Inpatient Summary Inpatient Encounter Diagnoses' of 'Transition Of Care Inpatient Summary'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public static final int TRANSITION_OF_CARE_INPATIENT_SUMMARY__TRANSITION_OF_CARE_INPATIENT_SUMMARY_INPATIENT_ENCOUNTER_DIAGNOSES = 84;
 
-	/**
+  /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Transition Of Care Inpatient Summary Hospital Admission Diagnosis Entry' of 'Transition Of Care Inpatient Summary'.
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
    * @generated
    */
-	public static final int TRANSITION_OF_CARE_INPATIENT_SUMMARY__TRANSITION_OF_CARE_INPATIENT_SUMMARY_HOSPITAL_ADMISSION_DIAGNOSIS_ENTRY = 95;
+  public static final int TRANSITION_OF_CARE_INPATIENT_SUMMARY__TRANSITION_OF_CARE_INPATIENT_SUMMARY_HOSPITAL_ADMISSION_DIAGNOSIS_ENTRY = 85;
 
-	/**
+  /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Transition Of Care Inpatient Summary Hospital Discharge Diagnoses Entry' of 'Transition Of Care Inpatient Summary'.
    * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+   * <!-- end-user-doc -->
    * @generated
    */
-	public static final int TRANSITION_OF_CARE_INPATIENT_SUMMARY__TRANSITION_OF_CARE_INPATIENT_SUMMARY_HOSPITAL_DISCHARGE_DIAGNOSES_ENTRY = 96;
+  public static final int TRANSITION_OF_CARE_INPATIENT_SUMMARY__TRANSITION_OF_CARE_INPATIENT_SUMMARY_HOSPITAL_DISCHARGE_DIAGNOSES_ENTRY = 86;
 
-	/**
+  /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Transition Of Care Inpatient Summary Postoperative Diagnosis Entry' of 'Transition Of Care Inpatient Summary'.
    * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+   * <!-- end-user-doc -->
    * @generated
    */
-	public static final int TRANSITION_OF_CARE_INPATIENT_SUMMARY__TRANSITION_OF_CARE_INPATIENT_SUMMARY_POSTOPERATIVE_DIAGNOSIS_ENTRY = 97;
+  public static final int TRANSITION_OF_CARE_INPATIENT_SUMMARY__TRANSITION_OF_CARE_INPATIENT_SUMMARY_POSTOPERATIVE_DIAGNOSIS_ENTRY = 87;
 
-	/**
+  /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Transition Of Care Inpatient Summary Postprocedure Diagnosis Entry' of 'Transition Of Care Inpatient Summary'.
    * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+   * <!-- end-user-doc -->
    * @generated
    */
-	public static final int TRANSITION_OF_CARE_INPATIENT_SUMMARY__TRANSITION_OF_CARE_INPATIENT_SUMMARY_POSTPROCEDURE_DIAGNOSIS_ENTRY = 98;
+  public static final int TRANSITION_OF_CARE_INPATIENT_SUMMARY__TRANSITION_OF_CARE_INPATIENT_SUMMARY_POSTPROCEDURE_DIAGNOSIS_ENTRY = 88;
 
-	/**
+  /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Transition Of Care Inpatient Summary Hospital Discharge Instructions Section' of 'Transition Of Care Inpatient Summary'.
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
    * @generated
    */
-	public static final int TRANSITION_OF_CARE_INPATIENT_SUMMARY__TRANSITION_OF_CARE_INPATIENT_SUMMARY_HOSPITAL_DISCHARGE_INSTRUCTIONS_SECTION = 99;
+  public static final int TRANSITION_OF_CARE_INPATIENT_SUMMARY__TRANSITION_OF_CARE_INPATIENT_SUMMARY_HOSPITAL_DISCHARGE_INSTRUCTIONS_SECTION = 89;
 
-	/**
+  /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Transition Of Care Inpatient Summary Hospital Discharge Medications Section' of 'Transition Of Care Inpatient Summary'.
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
    * @generated
    */
-	public static final int TRANSITION_OF_CARE_INPATIENT_SUMMARY__TRANSITION_OF_CARE_INPATIENT_SUMMARY_HOSPITAL_DISCHARGE_MEDICATIONS_SECTION = 100;
+  public static final int TRANSITION_OF_CARE_INPATIENT_SUMMARY__TRANSITION_OF_CARE_INPATIENT_SUMMARY_HOSPITAL_DISCHARGE_MEDICATIONS_SECTION = 90;
 
-	/**
+  /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate View Download Transmit Summary Care Plan Fields' of 'View Download Transmit Summary'.
-   * <!-- begin-user-doc --> <!--
-	 * end-user-doc -->
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
    * @generated
    */
-	public static final int VIEW_DOWNLOAD_TRANSMIT_SUMMARY__VIEW_DOWNLOAD_TRANSMIT_SUMMARY_CARE_PLAN_FIELDS = 101;
+  public static final int VIEW_DOWNLOAD_TRANSMIT_SUMMARY__VIEW_DOWNLOAD_TRANSMIT_SUMMARY_CARE_PLAN_FIELDS = 91;
 
-	/**
+  /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate View Download Transmit Summary Allergies Section' of 'View Download Transmit Summary'.
-   * <!-- begin-user-doc --> <!--
-	 * end-user-doc -->
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
    * @generated
    */
-	public static final int VIEW_DOWNLOAD_TRANSMIT_SUMMARY__VIEW_DOWNLOAD_TRANSMIT_SUMMARY_ALLERGIES_SECTION = 102;
+  public static final int VIEW_DOWNLOAD_TRANSMIT_SUMMARY__VIEW_DOWNLOAD_TRANSMIT_SUMMARY_ALLERGIES_SECTION = 92;
 
-	/**
+  /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate View Download Transmit Summary Medications Section' of 'View Download Transmit Summary'.
-   * <!-- begin-user-doc --> <!--
-	 * end-user-doc -->
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
    * @generated
    */
-	public static final int VIEW_DOWNLOAD_TRANSMIT_SUMMARY__VIEW_DOWNLOAD_TRANSMIT_SUMMARY_MEDICATIONS_SECTION = 103;
+  public static final int VIEW_DOWNLOAD_TRANSMIT_SUMMARY__VIEW_DOWNLOAD_TRANSMIT_SUMMARY_MEDICATIONS_SECTION = 93;
 
-	/**
+  /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate View Download Transmit Summary Problem Section' of 'View Download Transmit Summary'.
-   * <!-- begin-user-doc --> <!--
-	 * end-user-doc -->
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
    * @generated
    */
-	public static final int VIEW_DOWNLOAD_TRANSMIT_SUMMARY__VIEW_DOWNLOAD_TRANSMIT_SUMMARY_PROBLEM_SECTION = 104;
+  public static final int VIEW_DOWNLOAD_TRANSMIT_SUMMARY__VIEW_DOWNLOAD_TRANSMIT_SUMMARY_PROBLEM_SECTION = 94;
 
-	/**
+  /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate View Download Transmit Summary Procedures Section' of 'View Download Transmit Summary'.
-   * <!-- begin-user-doc --> <!--
-	 * end-user-doc -->
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
    * @generated
    */
-	public static final int VIEW_DOWNLOAD_TRANSMIT_SUMMARY__VIEW_DOWNLOAD_TRANSMIT_SUMMARY_PROCEDURES_SECTION = 105;
+  public static final int VIEW_DOWNLOAD_TRANSMIT_SUMMARY__VIEW_DOWNLOAD_TRANSMIT_SUMMARY_PROCEDURES_SECTION = 95;
 
-	/**
+  /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate View Download Transmit Summary Vital Signs Section' of 'View Download Transmit Summary'.
-   * <!-- begin-user-doc --> <!--
-	 * end-user-doc -->
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
    * @generated
    */
-	public static final int VIEW_DOWNLOAD_TRANSMIT_SUMMARY__VIEW_DOWNLOAD_TRANSMIT_SUMMARY_VITAL_SIGNS_SECTION = 106;
+  public static final int VIEW_DOWNLOAD_TRANSMIT_SUMMARY__VIEW_DOWNLOAD_TRANSMIT_SUMMARY_VITAL_SIGNS_SECTION = 96;
 
-	/**
+  /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate View Download Transmit Summary Results Section' of 'View Download Transmit Summary'.
-   * <!-- begin-user-doc --> <!--
-	 * end-user-doc -->
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
    * @generated
    */
-	public static final int VIEW_DOWNLOAD_TRANSMIT_SUMMARY__VIEW_DOWNLOAD_TRANSMIT_SUMMARY_RESULTS_SECTION = 107;
+  public static final int VIEW_DOWNLOAD_TRANSMIT_SUMMARY__VIEW_DOWNLOAD_TRANSMIT_SUMMARY_RESULTS_SECTION = 97;
 
-	/**
-   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate View Download Transmit Summary Plan Of Care Section' of 'View Download Transmit Summary'.
-   * <!-- begin-user-doc --> <!--
-	 * end-user-doc -->
-   * @generated
-   */
-	public static final int VIEW_DOWNLOAD_TRANSMIT_SUMMARY__VIEW_DOWNLOAD_TRANSMIT_SUMMARY_PLAN_OF_CARE_SECTION = 108;
-
-	/**
+  /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate View Download Transmit Summary Social History Section' of 'View Download Transmit Summary'.
    * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+   * <!-- end-user-doc -->
    * @generated
    */
-	public static final int VIEW_DOWNLOAD_TRANSMIT_SUMMARY__VIEW_DOWNLOAD_TRANSMIT_SUMMARY_SOCIAL_HISTORY_SECTION = 109;
+  public static final int VIEW_DOWNLOAD_TRANSMIT_SUMMARY__VIEW_DOWNLOAD_TRANSMIT_SUMMARY_SOCIAL_HISTORY_SECTION = 98;
 
-	/**
-	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for
-	 * constraint 'Validate View Download Transmit Summary Assessment And Plan
-	 * Section Template Id' of 'View Download Transmit Summary'. <!--
-	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
-	 * @generated
-	 */
-	public static final int VIEW_DOWNLOAD_TRANSMIT_SUMMARY__VIEW_DOWNLOAD_TRANSMIT_SUMMARY_ASSESSMENT_AND_PLAN_SECTION_TEMPLATE_ID = 110;
-
-	/**
-   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate View Download Transmit Summary Mu2consol Plan Of Care Section Care Planning For Plan Of Care' of 'View Download Transmit Summary'.
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
+  /**
+   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate View Download Transmit Summary Assessment And Plan Section Template Id' of 'View Download Transmit Summary'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
    * @generated
    */
-	public static final int VIEW_DOWNLOAD_TRANSMIT_SUMMARY__VIEW_DOWNLOAD_TRANSMIT_SUMMARY_MU2CONSOL_PLAN_OF_CARE_SECTION_CARE_PLANNING_FOR_PLAN_OF_CARE = 111;
+  public static final int VIEW_DOWNLOAD_TRANSMIT_SUMMARY__VIEW_DOWNLOAD_TRANSMIT_SUMMARY_ASSESSMENT_AND_PLAN_SECTION_TEMPLATE_ID = 99;
 
-	/**
-   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate View Download Transmit Summary Mu2consol Plan Of Care Section Plan Of Care Activity Observation' of 'View Download Transmit Summary'.
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * @generated
-   */
-	public static final int VIEW_DOWNLOAD_TRANSMIT_SUMMARY__VIEW_DOWNLOAD_TRANSMIT_SUMMARY_MU2CONSOL_PLAN_OF_CARE_SECTION_PLAN_OF_CARE_ACTIVITY_OBSERVATION = 112;
-
-	/**
+  /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate View Download Transmit Summary Plan Of Care Section Template Id' of 'View Download Transmit Summary'.
    * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+   * <!-- end-user-doc -->
    * @generated
    */
-	public static final int VIEW_DOWNLOAD_TRANSMIT_SUMMARY__VIEW_DOWNLOAD_TRANSMIT_SUMMARY_PLAN_OF_CARE_SECTION_TEMPLATE_ID = 113;
+  public static final int VIEW_DOWNLOAD_TRANSMIT_SUMMARY__VIEW_DOWNLOAD_TRANSMIT_SUMMARY_PLAN_OF_CARE_SECTION_TEMPLATE_ID = 100;
 
-	/**
-	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for
-	 * constraint 'Validate View Download Transmit Summary Social History
-	 * Section Template Id' of 'View Download Transmit Summary'. <!--
-	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
-	 * @generated
-	 */
-	public static final int VIEW_DOWNLOAD_TRANSMIT_SUMMARY__VIEW_DOWNLOAD_TRANSMIT_SUMMARY_SOCIAL_HISTORY_SECTION_TEMPLATE_ID = 114;
+  /**
+   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate View Download Transmit Summary Social History Section Template Id' of 'View Download Transmit Summary'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public static final int VIEW_DOWNLOAD_TRANSMIT_SUMMARY__VIEW_DOWNLOAD_TRANSMIT_SUMMARY_SOCIAL_HISTORY_SECTION_TEMPLATE_ID = 101;
 
-	/**
+  /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate View Download Transmit Summary Mu2consol Social History Section Smoking Status Observation' of 'View Download Transmit Summary'.
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
    * @generated
    */
-	public static final int VIEW_DOWNLOAD_TRANSMIT_SUMMARY__VIEW_DOWNLOAD_TRANSMIT_SUMMARY_MU2CONSOL_SOCIAL_HISTORY_SECTION_SMOKING_STATUS_OBSERVATION = 115;
+  public static final int VIEW_DOWNLOAD_TRANSMIT_SUMMARY__VIEW_DOWNLOAD_TRANSMIT_SUMMARY_MU2CONSOL_SOCIAL_HISTORY_SECTION_SMOKING_STATUS_OBSERVATION = 102;
 
-	/**
+  /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate VDT Inpatient Summary Effective Time' of 'VDT Inpatient Summary'.
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
    * @generated
    */
-	public static final int VDT_INPATIENT_SUMMARY__VDT_INPATIENT_SUMMARY_EFFECTIVE_TIME = 116;
+  public static final int VDT_INPATIENT_SUMMARY__VDT_INPATIENT_SUMMARY_EFFECTIVE_TIME = 103;
 
-	/**
+  /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate VDT Inpatient Summary Location' of 'VDT Inpatient Summary'.
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
    * @generated
    */
-	public static final int VDT_INPATIENT_SUMMARY__VDT_INPATIENT_SUMMARY_LOCATION = 117;
+  public static final int VDT_INPATIENT_SUMMARY__VDT_INPATIENT_SUMMARY_LOCATION = 104;
 
-	/**
+  /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate VDT Inpatient Summary Chief Complaint Or Reason For Visit' of 'VDT Inpatient Summary'.
-   * <!-- begin-user-doc --> <!--
-	 * end-user-doc -->
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
    * @generated
    */
-	public static final int VDT_INPATIENT_SUMMARY__VDT_INPATIENT_SUMMARY_CHIEF_COMPLAINT_OR_REASON_FOR_VISIT = 118;
+  public static final int VDT_INPATIENT_SUMMARY__VDT_INPATIENT_SUMMARY_CHIEF_COMPLAINT_OR_REASON_FOR_VISIT = 105;
 
-	/**
+  /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate VDT Inpatient Summary Hospital Admission Diagnosis Entry' of 'VDT Inpatient Summary'.
-   * <!-- begin-user-doc --> <!--
-	 * end-user-doc -->
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
    * @generated
    */
-	public static final int VDT_INPATIENT_SUMMARY__VDT_INPATIENT_SUMMARY_HOSPITAL_ADMISSION_DIAGNOSIS_ENTRY = 119;
+  public static final int VDT_INPATIENT_SUMMARY__VDT_INPATIENT_SUMMARY_HOSPITAL_ADMISSION_DIAGNOSIS_ENTRY = 106;
 
-	/**
+  /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate VDT Inpatient Summary Preoperative Diagnosis Entry' of 'VDT Inpatient Summary'.
    * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+   * <!-- end-user-doc -->
    * @generated
    */
-	public static final int VDT_INPATIENT_SUMMARY__VDT_INPATIENT_SUMMARY_PREOPERATIVE_DIAGNOSIS_ENTRY = 120;
+  public static final int VDT_INPATIENT_SUMMARY__VDT_INPATIENT_SUMMARY_PREOPERATIVE_DIAGNOSIS_ENTRY = 107;
 
-	/**
+  /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate VDT Inpatient Summary Hospital Discharge Instructions Section' of 'VDT Inpatient Summary'.
    * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+   * <!-- end-user-doc -->
    * @generated
    */
-	public static final int VDT_INPATIENT_SUMMARY__VDT_INPATIENT_SUMMARY_HOSPITAL_DISCHARGE_INSTRUCTIONS_SECTION = 121;
+  public static final int VDT_INPATIENT_SUMMARY__VDT_INPATIENT_SUMMARY_HOSPITAL_DISCHARGE_INSTRUCTIONS_SECTION = 108;
 
-	/**
+  /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate VDT Inpatient Summary Hospital Admission Diagnosis Section' of 'VDT Inpatient Summary'.
-   * <!-- begin-user-doc --> <!--
-	 * end-user-doc -->
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
    * @generated
    */
-	public static final int VDT_INPATIENT_SUMMARY__VDT_INPATIENT_SUMMARY_HOSPITAL_ADMISSION_DIAGNOSIS_SECTION = 122;
+  public static final int VDT_INPATIENT_SUMMARY__VDT_INPATIENT_SUMMARY_HOSPITAL_ADMISSION_DIAGNOSIS_SECTION = 109;
 
-	/**
+  /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate VDT Inpatient Summary Hospital Discharge Medications Section' of 'VDT Inpatient Summary'.
-   * <!-- begin-user-doc --> <!--
-	 * end-user-doc -->
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
    * @generated
    */
-	public static final int VDT_INPATIENT_SUMMARY__VDT_INPATIENT_SUMMARY_HOSPITAL_DISCHARGE_MEDICATIONS_SECTION = 123;
+  public static final int VDT_INPATIENT_SUMMARY__VDT_INPATIENT_SUMMARY_HOSPITAL_DISCHARGE_MEDICATIONS_SECTION = 110;
 
-	/**
+  /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate VDT Ambulatory Summary Responsible Party' of 'VDT Ambulatory Summary'.
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
    * @generated
    */
-	public static final int VDT_AMBULATORY_SUMMARY__VDT_AMBULATORY_SUMMARY_RESPONSIBLE_PARTY = 124;
+  public static final int VDT_AMBULATORY_SUMMARY__VDT_AMBULATORY_SUMMARY_RESPONSIBLE_PARTY = 111;
 
-	/**
-	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for
-	 * constraint 'Validate Mu2consol Result Observation Result Observation Code
-	 * Value' of 'Result Observation'. <!-- begin-user-doc --> <!-- end-user-doc
-	 * -->
-	 * 
-	 * @generated
-	 */
-	public static final int RESULT_OBSERVATION__MU2CONSOL_RESULT_OBSERVATION_RESULT_OBSERVATION_CODE_VALUE = 58;
-
-	/**
-   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Mu2consol Result Observation Code' of 'Result Observation'.
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * @generated
-   */
-	public static final int RESULT_OBSERVATION__MU2CONSOL_RESULT_OBSERVATION_CODE = 59;
-
-	/**
-   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Result Observation Template Id' of 'Result Observation'.
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * @generated
-   */
-	public static final int RESULT_OBSERVATION__RESULT_OBSERVATION_TEMPLATE_ID = 60;
-
-	/**
-   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Mu2consol Procedures Section Procedure Activity Procedure' of 'Procedures Section'.
-   * <!-- begin-user-doc --> <!--
-	 * end-user-doc -->
-   * @generated
-   */
-	public static final int PROCEDURES_SECTION__MU2CONSOL_PROCEDURES_SECTION_PROCEDURE_ACTIVITY_PROCEDURE = 61;
-
-	/**
-   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Procedures Section Entries Optional Template Id' of 'Procedures Section'.
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * @generated
-   */
-	public static final int PROCEDURES_SECTION__PROCEDURES_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID = 62;
-
-	/**
-   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Mu2consol Procedure Activity Procedure Code Value' of 'Procedure Activity Procedure'.
-   * <!-- begin-user-doc --> <!--
-	 * end-user-doc -->
-   * @generated
-   */
-	public static final int PROCEDURE_ACTIVITY_PROCEDURE__MU2CONSOL_PROCEDURE_ACTIVITY_PROCEDURE_CODE_VALUE = 63;
-
-	/**
-	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for
-	 * constraint 'Validate Mu2consol Procedure Activity Procedure Code' of
-	 * 'Procedure Activity Procedure'. <!-- begin-user-doc --> <!-- end-user-doc
-	 * -->
-	 * 
-	 * @generated
-	 */
-	public static final int PROCEDURE_ACTIVITY_PROCEDURE__MU2CONSOL_PROCEDURE_ACTIVITY_PROCEDURE_CODE = 64;
-
-	/**
-	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for
-	 * constraint 'Validate Procedure Activity Procedure Template Id' of
-	 * 'Procedure Activity Procedure'. <!-- begin-user-doc --> <!-- end-user-doc
-	 * -->
-	 * 
-	 * @generated
-	 */
-	public static final int PROCEDURE_ACTIVITY_PROCEDURE__PROCEDURE_ACTIVITY_PROCEDURE_TEMPLATE_ID = 65;
-
-	/**
-   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Mu2consol Result Organizer Result Observation' of 'Result Organizer'.
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * @generated
-   */
-	public static final int RESULT_ORGANIZER__MU2CONSOL_RESULT_ORGANIZER_RESULT_OBSERVATION = 56;
-
-	/**
-   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Result Organizer Template Id' of 'Result Organizer'.
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * @generated
-   */
-	public static final int RESULT_ORGANIZER__RESULT_ORGANIZER_TEMPLATE_ID = 57;
-
-	/**
-   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Mu2consol Results Section Result Organizer' of 'Results Section'.
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * @generated
-   */
-	public static final int RESULTS_SECTION__MU2CONSOL_RESULTS_SECTION_RESULT_ORGANIZER = 54;
-
-	/**
-   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Results Section Entries Optional Template Id' of 'Results Section'.
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * @generated
-   */
-	public static final int RESULTS_SECTION__RESULTS_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID = 55;
-
-	/**
-   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Mu2consol Assessment Section Problem Observation' of 'Assessment Section'.
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * @generated
-   */
-	public static final int ASSESSMENT_SECTION__MU2CONSOL_ASSESSMENT_SECTION_PROBLEM_OBSERVATION = 47;
-
-	/**
-   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Assessment Section Template Id' of 'Assessment Section'.
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * @generated
-   */
-	public static final int ASSESSMENT_SECTION__ASSESSMENT_SECTION_TEMPLATE_ID = 48;
-
-	/**
-   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Mu2consol Social History Section Smoking Status Observation' of 'Social History Section'.
-   * <!-- begin-user-doc --> <!--
-	 * end-user-doc -->
-   * @generated
-   */
-	public static final int SOCIAL_HISTORY_SECTION__MU2CONSOL_SOCIAL_HISTORY_SECTION_SMOKING_STATUS_OBSERVATION = 49;
-
-	/**
-   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Social History Section Template Id' of 'Social History Section'.
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * @generated
-   */
-	public static final int SOCIAL_HISTORY_SECTION__SOCIAL_HISTORY_SECTION_TEMPLATE_ID = 50;
-
-	/**
-   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Smoking Status Observation Value P' of 'Smoking Status Observation'.
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * @generated
-   */
-	public static final int SMOKING_STATUS_OBSERVATION__SMOKING_STATUS_OBSERVATION_VALUE_P = 51;
-
-	/**
-   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Smoking Status Observation Value' of 'Smoking Status Observation'.
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * @generated
-   */
-	public static final int SMOKING_STATUS_OBSERVATION__SMOKING_STATUS_OBSERVATION_VALUE = 52;
-
-	/**
-   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Tobacco Use Template Id' of 'Smoking Status Observation'.
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * @generated
-   */
-	public static final int SMOKING_STATUS_OBSERVATION__TOBACCO_USE_TEMPLATE_ID = 53;
-
-	/**
+  /**
    * A constant with a fixed name that can be used as the base value for additional hand written constants.
-   * <!-- begin-user-doc --> <!--
-	 * end-user-doc -->
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
    * @generated
    */
-	private static final int GENERATED_DIAGNOSTIC_CODE_COUNT = 124;
+  private static final int GENERATED_DIAGNOSTIC_CODE_COUNT = 111;
 
-	/**
+  /**
    * A constant with a fixed name that can be used as the base value for additional hand written constants in a derived class.
-   * <!-- begin-user-doc
-	 * --> <!-- end-user-doc -->
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
    * @generated
    */
-	protected static final int DIAGNOSTIC_CODE_COUNT = GENERATED_DIAGNOSTIC_CODE_COUNT;
+  protected static final int DIAGNOSTIC_CODE_COUNT = GENERATED_DIAGNOSTIC_CODE_COUNT;
 
-	/**
+  /**
    * The cached base package validator.
-   * <!-- begin-user-doc --> <!--
-	 * end-user-doc -->
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
    * @generated
    */
-	protected CDAValidator cdaValidator;
+  protected CDAValidator cdaValidator;
 
-	/**
+  /**
    * The cached base package validator.
-   * <!-- begin-user-doc --> <!--
-	 * end-user-doc -->
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
    * @generated
    */
-	protected ConsolValidator consolValidator;
+  protected ConsolValidator consolValidator;
 
-	/**
+  /**
    * Creates an instance of the switch.
-   * <!-- begin-user-doc --> <!--
-	 * end-user-doc -->
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
    * @generated
    */
-	public Mu2consolValidator() {
+  public Mu2consolValidator()
+  {
     super();
     cdaValidator = CDAValidator.INSTANCE;
     consolValidator = ConsolValidator.INSTANCE;
   }
 
-	/**
+  /**
    * Returns the package of this validator switch.
    * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+   * <!-- end-user-doc -->
    * @generated
    */
-	@Override
-	protected EPackage getEPackage() {
+  @Override
+  protected EPackage getEPackage()
+  {
     return Mu2consolPackage.eINSTANCE;
   }
 
-	/**
+  /**
    * Calls <code>validateXXX</code> for the corresponding classifier of the model.
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
    * @generated
    */
-	@Override
-	protected boolean validate(int classifierID, Object value,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
+  @Override
+  protected boolean validate(int classifierID, Object value, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
     switch (classifierID)
     {
       case Mu2consolPackage.GENERAL_HEADER_CONSTRAINTS:
@@ -1156,13 +1038,13 @@ public class Mu2consolValidator extends EObjectValidator {
     }
   }
 
-	/**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
    * @generated
    */
-	public boolean validateGeneralHeaderConstraints(
-			GeneralHeaderConstraints generalHeaderConstraints,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
+  public boolean validateGeneralHeaderConstraints(GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
     if (!validate_NoCircularContainment(generalHeaderConstraints, diagnostics, context)) return false;
     boolean result = validate_EveryMultiplicityConforms(generalHeaderConstraints, diagnostics, context);
     if (result || diagnostics != null) result &= validate_EveryDataValueConforms(generalHeaderConstraints, diagnostics, context);
@@ -1442,229 +1324,211 @@ public class Mu2consolValidator extends EObjectValidator {
     return result;
   }
 
-	/**
+  /**
    * Validates the validateMu2consolGeneralHeaderConstraintsRecordTarget constraint of '<em>General Header Constraints</em>'.
-   * <!-- begin-user-doc
-	 * --> <!-- end-user-doc -->
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
    * @generated
    */
-	public boolean validateGeneralHeaderConstraints_validateMu2consolGeneralHeaderConstraintsRecordTarget(
-			GeneralHeaderConstraints generalHeaderConstraints,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
+  public boolean validateGeneralHeaderConstraints_validateMu2consolGeneralHeaderConstraintsRecordTarget(GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
     return generalHeaderConstraints.validateMu2consolGeneralHeaderConstraintsRecordTarget(diagnostics, context);
   }
 
-	/**
+  /**
    * Validates the validateMu2consolGeneralHeaderConstraintsDocumentationOf constraint of '<em>General Header Constraints</em>'.
-   * <!-- begin-user-doc
-	 * --> <!-- end-user-doc -->
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
    * @generated
    */
-	public boolean validateGeneralHeaderConstraints_validateMu2consolGeneralHeaderConstraintsDocumentationOf(
-			GeneralHeaderConstraints generalHeaderConstraints,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
+  public boolean validateGeneralHeaderConstraints_validateMu2consolGeneralHeaderConstraintsDocumentationOf(GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
     return generalHeaderConstraints.validateMu2consolGeneralHeaderConstraintsDocumentationOf(diagnostics, context);
   }
 
-	/**
+  /**
    * Validates the validateGeneralHeaderConstraintsDocumentationOfServiceEventPerformer1AssignedEntityAssignedPerson constraint of '<em>General Header Constraints</em>'.
-   * <!-- begin-user-doc
-	 * --> <!-- end-user-doc -->
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
    * @generated
    */
-	public boolean validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsDocumentationOfServiceEventPerformer1AssignedEntityAssignedPerson(
-			GeneralHeaderConstraints generalHeaderConstraints,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
+  public boolean validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsDocumentationOfServiceEventPerformer1AssignedEntityAssignedPerson(GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
     return generalHeaderConstraints.validateGeneralHeaderConstraintsDocumentationOfServiceEventPerformer1AssignedEntityAssignedPerson(diagnostics, context);
   }
 
-	/**
-   * Validates the validateGeneralHeaderConstraintsDocumentationOfServiceEventPerformer1AssignedEntity constraint of '<em>General Header Constraints</em>'.
-   * <!-- begin-user-doc
-	 * --> <!-- end-user-doc -->
-   * @generated
-   */
-	public boolean validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsDocumentationOfServiceEventPerformer1AssignedEntity(
-			GeneralHeaderConstraints generalHeaderConstraints,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return generalHeaderConstraints.validateGeneralHeaderConstraintsDocumentationOfServiceEventPerformer1AssignedEntity(diagnostics, context);
-  }
-
-	/**
-   * Validates the validateGeneralHeaderConstraintsDocumentationOfServiceEventPerformer constraint of '<em>General Header Constraints</em>'.
-   * <!-- begin-user-doc
-	 * --> <!-- end-user-doc -->
-   * @generated
-   */
-	public boolean validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsDocumentationOfServiceEventPerformer(
-			GeneralHeaderConstraints generalHeaderConstraints,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return generalHeaderConstraints.validateGeneralHeaderConstraintsDocumentationOfServiceEventPerformer(diagnostics, context);
-  }
-
-	/**
-   * Validates the validateGeneralHeaderConstraintsDocumentationOfServiceEvent constraint of '<em>General Header Constraints</em>'.
-   * <!-- begin-user-doc
-	 * --> <!-- end-user-doc -->
-   * @generated
-   */
-	public boolean validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsDocumentationOfServiceEvent(
-			GeneralHeaderConstraints generalHeaderConstraints,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return generalHeaderConstraints.validateGeneralHeaderConstraintsDocumentationOfServiceEvent(diagnostics, context);
-  }
-
-	/**
+  /**
    * Validates the validateGeneralHeaderConstraintsComponent1EncompassingEncounterEncounterParticipant constraint of '<em>General Header Constraints</em>'.
-   * <!-- begin-user-doc
-	 * --> <!-- end-user-doc -->
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
    * @generated
    */
-	public boolean validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsComponent1EncompassingEncounterEncounterParticipant(
-			GeneralHeaderConstraints generalHeaderConstraints,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
+  public boolean validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsComponent1EncompassingEncounterEncounterParticipant(GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
     return generalHeaderConstraints.validateGeneralHeaderConstraintsComponent1EncompassingEncounterEncounterParticipant(diagnostics, context);
   }
 
-	/**
+  /**
    * Validates the validateGeneralHeaderConstraintsComponent1EncompassingEncounter constraint of '<em>General Header Constraints</em>'.
-   * <!-- begin-user-doc
-	 * --> <!-- end-user-doc -->
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
    * @generated
    */
-	public boolean validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsComponent1EncompassingEncounter(
-			GeneralHeaderConstraints generalHeaderConstraints,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
+  public boolean validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsComponent1EncompassingEncounter(GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
     return generalHeaderConstraints.validateGeneralHeaderConstraintsComponent1EncompassingEncounter(diagnostics, context);
   }
 
-	/**
+  /**
    * Validates the validateGeneralHeaderConstraintsTemplateId constraint of '<em>General Header Constraints</em>'.
-   * <!-- begin-user-doc --> <!--
-	 * end-user-doc -->
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
    * @generated
    */
-	public boolean validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsTemplateId(
-			GeneralHeaderConstraints generalHeaderConstraints,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
+  public boolean validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsTemplateId(GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
     return generalHeaderConstraints.validateGeneralHeaderConstraintsTemplateId(diagnostics, context);
   }
 
-	/**
+  /**
    * Validates the validateGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationLanguageCodeP constraint of '<em>General Header Constraints</em>'.
-   * <!-- begin-user-doc
-	 * --> <!-- end-user-doc -->
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
    * @generated
    */
-	public boolean validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationLanguageCodeP(
-			GeneralHeaderConstraints generalHeaderConstraints,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
+  public boolean validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationLanguageCodeP(GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
     return generalHeaderConstraints.validateGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationLanguageCodeP(diagnostics, context);
   }
 
-	/**
+  /**
    * Validates the validateGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationLanguageCode constraint of '<em>General Header Constraints</em>'.
-   * <!-- begin-user-doc
-	 * --> <!-- end-user-doc -->
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
    * @generated
    */
-	public boolean validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationLanguageCode(
-			GeneralHeaderConstraints generalHeaderConstraints,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
+  public boolean validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationLanguageCode(GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
     return generalHeaderConstraints.validateGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationLanguageCode(diagnostics, context);
   }
 
-	/**
+  /**
    * Validates the validateGeneralHeaderConstraintsRecordTargetPatientRolePatientEthnicGroupCode constraint of '<em>General Header Constraints</em>'.
-   * <!-- begin-user-doc
-	 * --> <!-- end-user-doc -->
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
    * @generated
    */
-	public boolean validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientEthnicGroupCode(
-			GeneralHeaderConstraints generalHeaderConstraints,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
+  public boolean validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientEthnicGroupCode(GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
     return generalHeaderConstraints.validateGeneralHeaderConstraintsRecordTargetPatientRolePatientEthnicGroupCode(diagnostics, context);
   }
 
-	/**
+  /**
    * Validates the validateGeneralHeaderConstraintsRecordTargetPatientRolePatientEthnicGroupCodeP constraint of '<em>General Header Constraints</em>'.
-   * <!-- begin-user-doc
-	 * --> <!-- end-user-doc -->
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
    * @generated
    */
-	public boolean validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientEthnicGroupCodeP(
-			GeneralHeaderConstraints generalHeaderConstraints,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
+  public boolean validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientEthnicGroupCodeP(GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
     return generalHeaderConstraints.validateGeneralHeaderConstraintsRecordTargetPatientRolePatientEthnicGroupCodeP(diagnostics, context);
   }
 
-	/**
+  /**
    * Validates the validateGeneralHeaderConstraintsRecordTargetPatientRolePatientRaceCode constraint of '<em>General Header Constraints</em>'.
-   * <!-- begin-user-doc
-	 * --> <!-- end-user-doc -->
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
    * @generated
    */
-	public boolean validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientRaceCode(
-			GeneralHeaderConstraints generalHeaderConstraints,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
+  public boolean validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientRaceCode(GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
     return generalHeaderConstraints.validateGeneralHeaderConstraintsRecordTargetPatientRolePatientRaceCode(diagnostics, context);
   }
 
-	/**
+  /**
    * Validates the validateGeneralHeaderConstraintsRecordTargetPatientRolePatientRaceCodeP constraint of '<em>General Header Constraints</em>'.
-   * <!-- begin-user-doc
-	 * --> <!-- end-user-doc -->
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
    * @generated
    */
-	public boolean validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientRaceCodeP(
-			GeneralHeaderConstraints generalHeaderConstraints,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
+  public boolean validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientRaceCodeP(GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
     return generalHeaderConstraints.validateGeneralHeaderConstraintsRecordTargetPatientRolePatientRaceCodeP(diagnostics, context);
   }
 
-	/**
+  /**
    * Validates the validateGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunication constraint of '<em>General Header Constraints</em>'.
-   * <!-- begin-user-doc
-	 * --> <!-- end-user-doc -->
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
    * @generated
    */
-	public boolean validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunication(
-			GeneralHeaderConstraints generalHeaderConstraints,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
+  public boolean validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunication(GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
     return generalHeaderConstraints.validateGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunication(diagnostics, context);
   }
 
-	/**
+  /**
    * Validates the validateGeneralHeaderConstraintsRecordTargetPatientRolePatient constraint of '<em>General Header Constraints</em>'.
-   * <!-- begin-user-doc --> <!--
-	 * end-user-doc -->
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
    * @generated
    */
-	public boolean validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatient(
-			GeneralHeaderConstraints generalHeaderConstraints,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
+  public boolean validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatient(GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
     return generalHeaderConstraints.validateGeneralHeaderConstraintsRecordTargetPatientRolePatient(diagnostics, context);
   }
 
-	/**
+  /**
    * Validates the validateGeneralHeaderConstraintsRecordTargetPatientRole constraint of '<em>General Header Constraints</em>'.
-   * <!-- begin-user-doc
-	 * --> <!-- end-user-doc -->
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
    * @generated
    */
-	public boolean validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRole(
-			GeneralHeaderConstraints generalHeaderConstraints,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
+  public boolean validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRole(GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
     return generalHeaderConstraints.validateGeneralHeaderConstraintsRecordTargetPatientRole(diagnostics, context);
   }
 
-	/**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
+  /**
+   * Validates the validateGeneralHeaderConstraintsDocumentationOfServiceEventPerformer1AssignedEntity constraint of '<em>General Header Constraints</em>'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
    * @generated
    */
-	public boolean validateSummaryOfCareRecord(
-			SummaryOfCareRecord summaryOfCareRecord,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
+  public boolean validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsDocumentationOfServiceEventPerformer1AssignedEntity(GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return generalHeaderConstraints.validateGeneralHeaderConstraintsDocumentationOfServiceEventPerformer1AssignedEntity(diagnostics, context);
+  }
+
+  /**
+   * Validates the validateGeneralHeaderConstraintsDocumentationOfServiceEventPerformer constraint of '<em>General Header Constraints</em>'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsDocumentationOfServiceEventPerformer(GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return generalHeaderConstraints.validateGeneralHeaderConstraintsDocumentationOfServiceEventPerformer(diagnostics, context);
+  }
+
+  /**
+   * Validates the validateGeneralHeaderConstraintsDocumentationOfServiceEvent constraint of '<em>General Header Constraints</em>'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsDocumentationOfServiceEvent(GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return generalHeaderConstraints.validateGeneralHeaderConstraintsDocumentationOfServiceEvent(diagnostics, context);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validateSummaryOfCareRecord(SummaryOfCareRecord summaryOfCareRecord, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
     if (!validate_NoCircularContainment(summaryOfCareRecord, diagnostics, context)) return false;
     boolean result = validate_EveryMultiplicityConforms(summaryOfCareRecord, diagnostics, context);
     if (result || diagnostics != null) result &= validate_EveryDataValueConforms(summaryOfCareRecord, diagnostics, context);
@@ -1942,9 +1806,6 @@ public class Mu2consolValidator extends EObjectValidator {
     if (result || diagnostics != null) result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsComponent1EncompassingEncounterEncounterParticipant(summaryOfCareRecord, diagnostics, context);
     if (result || diagnostics != null) result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsComponent1EncompassingEncounter(summaryOfCareRecord, diagnostics, context);
     if (result || diagnostics != null) result &= validateSummaryOfCareRecord_validateSummaryOfCareRecordCarePlanning(summaryOfCareRecord, diagnostics, context);
-    if (result || diagnostics != null) result &= validateSummaryOfCareRecord_validateSummaryOfCareRecordCognitiveStatusEntries(summaryOfCareRecord, diagnostics, context);
-    if (result || diagnostics != null) result &= validateSummaryOfCareRecord_validateSummaryOfCareRecordFunctionalStatusEntries(summaryOfCareRecord, diagnostics, context);
-    if (result || diagnostics != null) result &= validateSummaryOfCareRecord_validateSummaryOfCareRecordPlanOfCareSection(summaryOfCareRecord, diagnostics, context);
     if (result || diagnostics != null) result &= validateSummaryOfCareRecord_validateSummaryOfCareRecordProblemSection(summaryOfCareRecord, diagnostics, context);
     if (result || diagnostics != null) result &= validateSummaryOfCareRecord_validateSummaryOfCareRecordAllergiesSection(summaryOfCareRecord, diagnostics, context);
     if (result || diagnostics != null) result &= validateSummaryOfCareRecord_validateSummaryOfCareRecordImmunizationsSection(summaryOfCareRecord, diagnostics, context);
@@ -1953,10 +1814,9 @@ public class Mu2consolValidator extends EObjectValidator {
     if (result || diagnostics != null) result &= validateSummaryOfCareRecord_validateSummaryOfCareRecordResultsSection(summaryOfCareRecord, diagnostics, context);
     if (result || diagnostics != null) result &= validateSummaryOfCareRecord_validateSummaryOfCareRecordVitalSignsSection(summaryOfCareRecord, diagnostics, context);
     if (result || diagnostics != null) result &= validateSummaryOfCareRecord_validateSummaryOfCareRecordProceduresSection(summaryOfCareRecord, diagnostics, context);
+    if (result || diagnostics != null) result &= validateSummaryOfCareRecord_validateSummaryOfCareRecordFunctionalStatusSection(summaryOfCareRecord, diagnostics, context);
     if (result || diagnostics != null) result &= validateSummaryOfCareRecord_validateSummaryOfCareRecordSocialHistorySectionTemplateId(summaryOfCareRecord, diagnostics, context);
     if (result || diagnostics != null) result &= validateSummaryOfCareRecord_validateSummaryOfCareRecordMu2consolSocialHistorySectionSmokingStatusObservation(summaryOfCareRecord, diagnostics, context);
-    if (result || diagnostics != null) result &= validateSummaryOfCareRecord_validateSummaryOfCareRecordMu2consolPlanOfCareSectionCarePlanningForPlanOfCare(summaryOfCareRecord, diagnostics, context);
-    if (result || diagnostics != null) result &= validateSummaryOfCareRecord_validateSummaryOfCareRecordMu2consolPlanOfCareSectionPlanOfCareActivityObservation(summaryOfCareRecord, diagnostics, context);
     if (result || diagnostics != null) result &= validateSummaryOfCareRecord_validateSummaryOfCareRecordPlanOfCareSectionTemplateId(summaryOfCareRecord, diagnostics, context);
     if (result || diagnostics != null) result &= validateSummaryOfCareRecord_validateSummaryOfCareRecordAssessmentAndPlanSectionTemplateId(summaryOfCareRecord, diagnostics, context);
     if (result || diagnostics != null) result &= validateSummaryOfCareRecord_validateSummaryOfCareRecordAssessmentSectionTemplateId(summaryOfCareRecord, diagnostics, context);
@@ -1964,229 +1824,189 @@ public class Mu2consolValidator extends EObjectValidator {
     return result;
   }
 
-	/**
+  /**
    * Validates the validateSummaryOfCareRecordCarePlanning constraint of '<em>Summary Of Care Record</em>'.
-   * <!-- begin-user-doc --> <!--
-	 * end-user-doc -->
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
    * @generated
    */
-	public boolean validateSummaryOfCareRecord_validateSummaryOfCareRecordCarePlanning(
-			SummaryOfCareRecord summaryOfCareRecord,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
+  public boolean validateSummaryOfCareRecord_validateSummaryOfCareRecordCarePlanning(SummaryOfCareRecord summaryOfCareRecord, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
     return summaryOfCareRecord.validateSummaryOfCareRecordCarePlanning(diagnostics, context);
   }
 
-	/**
-   * Validates the validateSummaryOfCareRecordCognitiveStatusEntries constraint of '<em>Summary Of Care Record</em>'.
-   * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-   * @generated
-   */
-	public boolean validateSummaryOfCareRecord_validateSummaryOfCareRecordCognitiveStatusEntries(
-			SummaryOfCareRecord summaryOfCareRecord,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return summaryOfCareRecord.validateSummaryOfCareRecordCognitiveStatusEntries(diagnostics, context);
-  }
-
-	/**
-   * Validates the validateSummaryOfCareRecordFunctionalStatusEntries constraint of '<em>Summary Of Care Record</em>'.
-   * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-   * @generated
-   */
-	public boolean validateSummaryOfCareRecord_validateSummaryOfCareRecordFunctionalStatusEntries(
-			SummaryOfCareRecord summaryOfCareRecord,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return summaryOfCareRecord.validateSummaryOfCareRecordFunctionalStatusEntries(diagnostics, context);
-  }
-
-	/**
-   * Validates the validateSummaryOfCareRecordPlanOfCareSection constraint of '<em>Summary Of Care Record</em>'.
-   * <!-- begin-user-doc --> <!--
-	 * end-user-doc -->
-   * @generated
-   */
-	public boolean validateSummaryOfCareRecord_validateSummaryOfCareRecordPlanOfCareSection(
-			SummaryOfCareRecord summaryOfCareRecord,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return summaryOfCareRecord.validateSummaryOfCareRecordPlanOfCareSection(diagnostics, context);
-  }
-
-	/**
+  /**
    * Validates the validateSummaryOfCareRecordProblemSection constraint of '<em>Summary Of Care Record</em>'.
-   * <!-- begin-user-doc --> <!--
-	 * end-user-doc -->
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
    * @generated
    */
-	public boolean validateSummaryOfCareRecord_validateSummaryOfCareRecordProblemSection(
-			SummaryOfCareRecord summaryOfCareRecord,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
+  public boolean validateSummaryOfCareRecord_validateSummaryOfCareRecordProblemSection(SummaryOfCareRecord summaryOfCareRecord, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
     return summaryOfCareRecord.validateSummaryOfCareRecordProblemSection(diagnostics, context);
   }
 
-	/**
+  /**
    * Validates the validateSummaryOfCareRecordAllergiesSection constraint of '<em>Summary Of Care Record</em>'.
-   * <!-- begin-user-doc --> <!--
-	 * end-user-doc -->
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
    * @generated
    */
-	public boolean validateSummaryOfCareRecord_validateSummaryOfCareRecordAllergiesSection(
-			SummaryOfCareRecord summaryOfCareRecord,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
+  public boolean validateSummaryOfCareRecord_validateSummaryOfCareRecordAllergiesSection(SummaryOfCareRecord summaryOfCareRecord, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
     return summaryOfCareRecord.validateSummaryOfCareRecordAllergiesSection(diagnostics, context);
   }
 
-	/**
+  /**
    * Validates the validateSummaryOfCareRecordImmunizationsSection constraint of '<em>Summary Of Care Record</em>'.
-   * <!-- begin-user-doc --> <!--
-	 * end-user-doc -->
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
    * @generated
    */
-	public boolean validateSummaryOfCareRecord_validateSummaryOfCareRecordImmunizationsSection(
-			SummaryOfCareRecord summaryOfCareRecord,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
+  public boolean validateSummaryOfCareRecord_validateSummaryOfCareRecordImmunizationsSection(SummaryOfCareRecord summaryOfCareRecord, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
     return summaryOfCareRecord.validateSummaryOfCareRecordImmunizationsSection(diagnostics, context);
   }
 
-	/**
+  /**
    * Validates the validateSummaryOfCareRecordMedicationsSection constraint of '<em>Summary Of Care Record</em>'.
-   * <!-- begin-user-doc --> <!--
-	 * end-user-doc -->
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
    * @generated
    */
-	public boolean validateSummaryOfCareRecord_validateSummaryOfCareRecordMedicationsSection(
-			SummaryOfCareRecord summaryOfCareRecord,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
+  public boolean validateSummaryOfCareRecord_validateSummaryOfCareRecordMedicationsSection(SummaryOfCareRecord summaryOfCareRecord, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
     return summaryOfCareRecord.validateSummaryOfCareRecordMedicationsSection(diagnostics, context);
   }
 
-	/**
+  /**
    * Validates the validateSummaryOfCareRecordSocialHistorySection constraint of '<em>Summary Of Care Record</em>'.
-   * <!-- begin-user-doc --> <!--
-	 * end-user-doc -->
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
    * @generated
    */
-	public boolean validateSummaryOfCareRecord_validateSummaryOfCareRecordSocialHistorySection(
-			SummaryOfCareRecord summaryOfCareRecord,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
+  public boolean validateSummaryOfCareRecord_validateSummaryOfCareRecordSocialHistorySection(SummaryOfCareRecord summaryOfCareRecord, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
     return summaryOfCareRecord.validateSummaryOfCareRecordSocialHistorySection(diagnostics, context);
   }
 
-	/**
+  /**
    * Validates the validateSummaryOfCareRecordResultsSection constraint of '<em>Summary Of Care Record</em>'.
-   * <!-- begin-user-doc --> <!--
-	 * end-user-doc -->
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
    * @generated
    */
-	public boolean validateSummaryOfCareRecord_validateSummaryOfCareRecordResultsSection(
-			SummaryOfCareRecord summaryOfCareRecord,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
+  public boolean validateSummaryOfCareRecord_validateSummaryOfCareRecordResultsSection(SummaryOfCareRecord summaryOfCareRecord, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
     return summaryOfCareRecord.validateSummaryOfCareRecordResultsSection(diagnostics, context);
   }
 
-	/**
+  /**
    * Validates the validateSummaryOfCareRecordVitalSignsSection constraint of '<em>Summary Of Care Record</em>'.
-   * <!-- begin-user-doc --> <!--
-	 * end-user-doc -->
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
    * @generated
    */
-	public boolean validateSummaryOfCareRecord_validateSummaryOfCareRecordVitalSignsSection(
-			SummaryOfCareRecord summaryOfCareRecord,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
+  public boolean validateSummaryOfCareRecord_validateSummaryOfCareRecordVitalSignsSection(SummaryOfCareRecord summaryOfCareRecord, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
     return summaryOfCareRecord.validateSummaryOfCareRecordVitalSignsSection(diagnostics, context);
   }
 
-	/**
+  /**
    * Validates the validateSummaryOfCareRecordProceduresSection constraint of '<em>Summary Of Care Record</em>'.
-   * <!-- begin-user-doc --> <!--
-	 * end-user-doc -->
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
    * @generated
    */
-	public boolean validateSummaryOfCareRecord_validateSummaryOfCareRecordProceduresSection(
-			SummaryOfCareRecord summaryOfCareRecord,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
+  public boolean validateSummaryOfCareRecord_validateSummaryOfCareRecordProceduresSection(SummaryOfCareRecord summaryOfCareRecord, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
     return summaryOfCareRecord.validateSummaryOfCareRecordProceduresSection(diagnostics, context);
   }
 
-	/**
-   * Validates the validateSummaryOfCareRecordSocialHistorySectionTemplateId constraint of '<em>Summary Of Care Record</em>'.
+  /**
+   * Validates the validateSummaryOfCareRecordFunctionalStatusSection constraint of '<em>Summary Of Care Record</em>'.
    * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+   * <!-- end-user-doc -->
    * @generated
    */
-	public boolean validateSummaryOfCareRecord_validateSummaryOfCareRecordSocialHistorySectionTemplateId(
-			SummaryOfCareRecord summaryOfCareRecord,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
+  public boolean validateSummaryOfCareRecord_validateSummaryOfCareRecordFunctionalStatusSection(SummaryOfCareRecord summaryOfCareRecord, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return summaryOfCareRecord.validateSummaryOfCareRecordFunctionalStatusSection(diagnostics, context);
+  }
+
+  /**
+   * Validates the validateSummaryOfCareRecordSocialHistorySectionTemplateId constraint of '<em>Summary Of Care Record</em>'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validateSummaryOfCareRecord_validateSummaryOfCareRecordSocialHistorySectionTemplateId(SummaryOfCareRecord summaryOfCareRecord, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
     return summaryOfCareRecord.validateSummaryOfCareRecordSocialHistorySectionTemplateId(diagnostics, context);
   }
 
-	/**
+  /**
    * Validates the validateSummaryOfCareRecordMu2consolSocialHistorySectionSmokingStatusObservation constraint of '<em>Summary Of Care Record</em>'.
    * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+   * <!-- end-user-doc -->
    * @generated
    */
-	public boolean validateSummaryOfCareRecord_validateSummaryOfCareRecordMu2consolSocialHistorySectionSmokingStatusObservation(
-			SummaryOfCareRecord summaryOfCareRecord,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
+  public boolean validateSummaryOfCareRecord_validateSummaryOfCareRecordMu2consolSocialHistorySectionSmokingStatusObservation(SummaryOfCareRecord summaryOfCareRecord, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
     return summaryOfCareRecord.validateSummaryOfCareRecordMu2consolSocialHistorySectionSmokingStatusObservation(diagnostics, context);
   }
 
-	/**
-   * Validates the validateSummaryOfCareRecordMu2consolPlanOfCareSectionCarePlanningForPlanOfCare constraint of '<em>Summary Of Care Record</em>'.
+  /**
+   * Validates the validateSummaryOfCareRecordPlanOfCareSectionTemplateId constraint of '<em>Summary Of Care Record</em>'.
    * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+   * <!-- end-user-doc -->
    * @generated
    */
-	public boolean validateSummaryOfCareRecord_validateSummaryOfCareRecordMu2consolPlanOfCareSectionCarePlanningForPlanOfCare(
-			SummaryOfCareRecord summaryOfCareRecord,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return summaryOfCareRecord.validateSummaryOfCareRecordMu2consolPlanOfCareSectionCarePlanningForPlanOfCare(diagnostics, context);
+  public boolean validateSummaryOfCareRecord_validateSummaryOfCareRecordPlanOfCareSectionTemplateId(SummaryOfCareRecord summaryOfCareRecord, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return summaryOfCareRecord.validateSummaryOfCareRecordPlanOfCareSectionTemplateId(diagnostics, context);
   }
 
-	/**
-   * Validates the validateSummaryOfCareRecordMu2consolPlanOfCareSectionPlanOfCareActivityObservation constraint of '<em>Summary Of Care Record</em>'.
+  /**
+   * Validates the validateSummaryOfCareRecordAssessmentAndPlanSectionTemplateId constraint of '<em>Summary Of Care Record</em>'.
    * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+   * <!-- end-user-doc -->
    * @generated
    */
-	public boolean validateSummaryOfCareRecord_validateSummaryOfCareRecordMu2consolPlanOfCareSectionPlanOfCareActivityObservation(
-			SummaryOfCareRecord summaryOfCareRecord,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return summaryOfCareRecord.validateSummaryOfCareRecordMu2consolPlanOfCareSectionPlanOfCareActivityObservation(diagnostics, context);
+  public boolean validateSummaryOfCareRecord_validateSummaryOfCareRecordAssessmentAndPlanSectionTemplateId(SummaryOfCareRecord summaryOfCareRecord, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return summaryOfCareRecord.validateSummaryOfCareRecordAssessmentAndPlanSectionTemplateId(diagnostics, context);
   }
 
-	/**
+  /**
    * Validates the validateSummaryOfCareRecordAssessmentSectionTemplateId constraint of '<em>Summary Of Care Record</em>'.
    * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+   * <!-- end-user-doc -->
    * @generated
    */
-	public boolean validateSummaryOfCareRecord_validateSummaryOfCareRecordAssessmentSectionTemplateId(
-			SummaryOfCareRecord summaryOfCareRecord,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
+  public boolean validateSummaryOfCareRecord_validateSummaryOfCareRecordAssessmentSectionTemplateId(SummaryOfCareRecord summaryOfCareRecord, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
     return summaryOfCareRecord.validateSummaryOfCareRecordAssessmentSectionTemplateId(diagnostics, context);
   }
 
-	/**
+  /**
    * Validates the validateSummaryOfCareRecordMu2consolAssessmentSectionProblemObservation constraint of '<em>Summary Of Care Record</em>'.
    * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+   * <!-- end-user-doc -->
    * @generated
    */
-	public boolean validateSummaryOfCareRecord_validateSummaryOfCareRecordMu2consolAssessmentSectionProblemObservation(
-			SummaryOfCareRecord summaryOfCareRecord,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
+  public boolean validateSummaryOfCareRecord_validateSummaryOfCareRecordMu2consolAssessmentSectionProblemObservation(SummaryOfCareRecord summaryOfCareRecord, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
     return summaryOfCareRecord.validateSummaryOfCareRecordMu2consolAssessmentSectionProblemObservation(diagnostics, context);
   }
 
-	/**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
    * @generated
    */
-	public boolean validateEncountersSection(
-			EncountersSection encountersSection, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
+  public boolean validateEncountersSection(EncountersSection encountersSection, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
     if (!validate_NoCircularContainment(encountersSection, diagnostics, context)) return false;
     boolean result = validate_EveryMultiplicityConforms(encountersSection, diagnostics, context);
     if (result || diagnostics != null) result &= validate_EveryDataValueConforms(encountersSection, diagnostics, context);
@@ -2212,37 +2032,35 @@ public class Mu2consolValidator extends EObjectValidator {
     return result;
   }
 
-	/**
+  /**
    * Validates the validateMu2consolEncountersSectionEncounterActivities constraint of '<em>Encounters Section</em>'.
-   * <!-- begin-user-doc --> <!--
-	 * end-user-doc -->
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
    * @generated
    */
-	public boolean validateEncountersSection_validateMu2consolEncountersSectionEncounterActivities(
-			EncountersSection encountersSection, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
+  public boolean validateEncountersSection_validateMu2consolEncountersSectionEncounterActivities(EncountersSection encountersSection, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
     return encountersSection.validateMu2consolEncountersSectionEncounterActivities(diagnostics, context);
   }
 
-	/**
+  /**
    * Validates the validateEncountersSectionEntriesOptionalTemplateId constraint of '<em>Encounters Section</em>'.
-   * <!-- begin-user-doc --> <!--
-	 * end-user-doc -->
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
    * @generated
    */
-	public boolean validateEncountersSection_validateEncountersSectionEntriesOptionalTemplateId(
-			EncountersSection encountersSection, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
+  public boolean validateEncountersSection_validateEncountersSectionEntriesOptionalTemplateId(EncountersSection encountersSection, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
     return encountersSection.validateEncountersSectionEntriesOptionalTemplateId(diagnostics, context);
   }
 
-	/**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
    * @generated
    */
-	public boolean validateEncounterActivities(
-			EncounterActivities encounterActivities,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
+  public boolean validateEncounterActivities(EncounterActivities encounterActivities, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
     if (!validate_NoCircularContainment(encounterActivities, diagnostics, context)) return false;
     boolean result = validate_EveryMultiplicityConforms(encounterActivities, diagnostics, context);
     if (result || diagnostics != null) result &= validate_EveryDataValueConforms(encounterActivities, diagnostics, context);
@@ -2272,62 +2090,35 @@ public class Mu2consolValidator extends EObjectValidator {
     return result;
   }
 
-	/**
+  /**
    * Validates the validateMu2consolEncounterActivitiesCodeValue constraint of '<em>Encounter Activities</em>'.
-   * <!-- begin-user-doc --> <!--
-	 * end-user-doc -->
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
    * @generated
    */
-	public boolean validateEncounterActivities_validateMu2consolEncounterActivitiesCodeValue(
-			EncounterActivities encounterActivities,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
+  public boolean validateEncounterActivities_validateMu2consolEncounterActivitiesCodeValue(EncounterActivities encounterActivities, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
     return encounterActivities.validateMu2consolEncounterActivitiesCodeValue(diagnostics, context);
   }
 
-	/**
-	 * Validates the validateEncounterActivitiesTemplateId constraint of '
-	 * <em>Encounter Activities</em>'. <!-- begin-user-doc --> <!-- end-user-doc
-	 * -->
-	 * 
-	 * @generated
-	 */
-	public boolean validateEncounterActivities_validateEncounterActivitiesTemplateId(
-			EncounterActivities encounterActivities,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
+  /**
+   * Validates the validateEncounterActivitiesTemplateId constraint of '<em>Encounter Activities</em>'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validateEncounterActivities_validateEncounterActivitiesTemplateId(EncounterActivities encounterActivities, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
     return encounterActivities.validateEncounterActivitiesTemplateId(diagnostics, context);
   }
 
-	/**
-   * Validates the validateSummaryOfCareRecordAssessmentAndPlanSectionTemplateId constraint of '<em>Summary Of Care Record</em>'.
-   * <!-- begin-user-doc --> <!--
-	 * end-user-doc -->
-   * @generated
-   */
-	public boolean validateSummaryOfCareRecord_validateSummaryOfCareRecordAssessmentAndPlanSectionTemplateId(
-			SummaryOfCareRecord summaryOfCareRecord,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return summaryOfCareRecord.validateSummaryOfCareRecordAssessmentAndPlanSectionTemplateId(diagnostics, context);
-  }
-
-	/**
-   * Validates the validateSummaryOfCareRecordPlanOfCareSectionTemplateId constraint of '<em>Summary Of Care Record</em>'.
+  /**
    * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+   * <!-- end-user-doc -->
    * @generated
    */
-	public boolean validateSummaryOfCareRecord_validateSummaryOfCareRecordPlanOfCareSectionTemplateId(
-			SummaryOfCareRecord summaryOfCareRecord,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return summaryOfCareRecord.validateSummaryOfCareRecordPlanOfCareSectionTemplateId(diagnostics, context);
-  }
-
-	/**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * @generated
-   */
-	public boolean validatePlanOfCareSection(
-			PlanOfCareSection planOfCareSection, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
+  public boolean validatePlanOfCareSection(PlanOfCareSection planOfCareSection, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
     if (!validate_NoCircularContainment(planOfCareSection, diagnostics, context)) return false;
     boolean result = validate_EveryMultiplicityConforms(planOfCareSection, diagnostics, context);
     if (result || diagnostics != null) result &= validate_EveryDataValueConforms(planOfCareSection, diagnostics, context);
@@ -2350,55 +2141,27 @@ public class Mu2consolValidator extends EObjectValidator {
     if (result || diagnostics != null) result &= consolValidator.validatePlanOfCareSection_validatePlanOfCareSectionPlanOfCareActivitySubstanceAdministration(planOfCareSection, diagnostics, context);
     if (result || diagnostics != null) result &= consolValidator.validatePlanOfCareSection_validatePlanOfCareSectionPlanOfCareActivitySupply(planOfCareSection, diagnostics, context);
     if (result || diagnostics != null) result &= consolValidator.validatePlanOfCareSection_validatePlanOfCareSectionInstructions(planOfCareSection, diagnostics, context);
-    if (result || diagnostics != null) result &= validatePlanOfCareSection_validateMu2consolPlanOfCareSectionCarePlanningForPlanOfCare(planOfCareSection, diagnostics, context);
-    if (result || diagnostics != null) result &= validatePlanOfCareSection_validateMu2consolPlanOfCareSectionPlanOfCareActivityObservation(planOfCareSection, diagnostics, context);
     return result;
   }
 
-	/**
-   * Validates the validateMu2consolPlanOfCareSectionCarePlanningForPlanOfCare constraint of '<em>Plan Of Care Section</em>'.
+  /**
+   * Validates the validatePlanOfCareSectionTemplateId constraint of '<em>Plan Of Care Section</em>'.
    * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+   * <!-- end-user-doc -->
    * @generated
    */
-	public boolean validatePlanOfCareSection_validateMu2consolPlanOfCareSectionCarePlanningForPlanOfCare(
-			PlanOfCareSection planOfCareSection, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-    return planOfCareSection.validateMu2consolPlanOfCareSectionCarePlanningForPlanOfCare(diagnostics, context);
-  }
-
-	/**
-   * Validates the validateMu2consolPlanOfCareSectionPlanOfCareActivityObservation constraint of '<em>Plan Of Care Section</em>'.
-   * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-   * @generated
-   */
-	public boolean validatePlanOfCareSection_validateMu2consolPlanOfCareSectionPlanOfCareActivityObservation(
-			PlanOfCareSection planOfCareSection, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-    return planOfCareSection.validateMu2consolPlanOfCareSectionPlanOfCareActivityObservation(diagnostics, context);
-  }
-
-	/**
-	 * Validates the validatePlanOfCareSectionTemplateId constraint of '
-	 * <em>Plan Of Care Section</em>'. <!-- begin-user-doc --> <!-- end-user-doc
-	 * -->
-	 * 
-	 * @generated
-	 */
-	public boolean validatePlanOfCareSection_validatePlanOfCareSectionTemplateId(
-			PlanOfCareSection planOfCareSection, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
+  public boolean validatePlanOfCareSection_validatePlanOfCareSectionTemplateId(PlanOfCareSection planOfCareSection, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
     return planOfCareSection.validatePlanOfCareSectionTemplateId(diagnostics, context);
   }
 
-	/**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
    * @generated
    */
-	public boolean validateAssessmentAndPlanSection(
-			AssessmentAndPlanSection assessmentAndPlanSection,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
+  public boolean validateAssessmentAndPlanSection(AssessmentAndPlanSection assessmentAndPlanSection, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
     if (!validate_NoCircularContainment(assessmentAndPlanSection, diagnostics, context)) return false;
     boolean result = validate_EveryMultiplicityConforms(assessmentAndPlanSection, diagnostics, context);
     if (result || diagnostics != null) result &= validate_EveryDataValueConforms(assessmentAndPlanSection, diagnostics, context);
@@ -2417,25 +2180,523 @@ public class Mu2consolValidator extends EObjectValidator {
     return result;
   }
 
-	/**
+  /**
    * Validates the validateAssessmentAndPlanSectionTemplateId constraint of '<em>Assessment And Plan Section</em>'.
-   * <!-- begin-user-doc --> <!--
-	 * end-user-doc -->
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
    * @generated
    */
-	public boolean validateAssessmentAndPlanSection_validateAssessmentAndPlanSectionTemplateId(
-			AssessmentAndPlanSection assessmentAndPlanSection,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
+  public boolean validateAssessmentAndPlanSection_validateAssessmentAndPlanSectionTemplateId(AssessmentAndPlanSection assessmentAndPlanSection, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
     return assessmentAndPlanSection.validateAssessmentAndPlanSectionTemplateId(diagnostics, context);
   }
 
-	/**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
    * @generated
    */
-	public boolean validateClinicalOfficeVisitSummary(
-			ClinicalOfficeVisitSummary clinicalOfficeVisitSummary,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
+  public boolean validateAssessmentSection(AssessmentSection assessmentSection, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    if (!validate_NoCircularContainment(assessmentSection, diagnostics, context)) return false;
+    boolean result = validate_EveryMultiplicityConforms(assessmentSection, diagnostics, context);
+    if (result || diagnostics != null) result &= validate_EveryDataValueConforms(assessmentSection, diagnostics, context);
+    if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(assessmentSection, diagnostics, context);
+    if (result || diagnostics != null) result &= validate_EveryProxyResolves(assessmentSection, diagnostics, context);
+    if (result || diagnostics != null) result &= validate_UniqueID(assessmentSection, diagnostics, context);
+    if (result || diagnostics != null) result &= validate_EveryKeyUnique(assessmentSection, diagnostics, context);
+    if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(assessmentSection, diagnostics, context);
+    if (result || diagnostics != null) result &= cdaValidator.validateSection_validateClassCode(assessmentSection, diagnostics, context);
+    if (result || diagnostics != null) result &= cdaValidator.validateSection_validateMoodCode(assessmentSection, diagnostics, context);
+    if (result || diagnostics != null) result &= validateAssessmentSection_validateAssessmentSectionTemplateId(assessmentSection, diagnostics, context);
+    if (result || diagnostics != null) result &= consolValidator.validateAssessmentSection_validateAssessmentSectionCode(assessmentSection, diagnostics, context);
+    if (result || diagnostics != null) result &= consolValidator.validateAssessmentSection_validateAssessmentSectionCodeP(assessmentSection, diagnostics, context);
+    if (result || diagnostics != null) result &= consolValidator.validateAssessmentSection_validateAssessmentSectionText(assessmentSection, diagnostics, context);
+    if (result || diagnostics != null) result &= consolValidator.validateAssessmentSection_validateAssessmentSectionTitle(assessmentSection, diagnostics, context);
+    if (result || diagnostics != null) result &= validateAssessmentSection_validateMu2consolAssessmentSectionProblemObservation(assessmentSection, diagnostics, context);
+    return result;
+  }
+
+  /**
+   * Validates the validateMu2consolAssessmentSectionProblemObservation constraint of '<em>Assessment Section</em>'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validateAssessmentSection_validateMu2consolAssessmentSectionProblemObservation(AssessmentSection assessmentSection, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return assessmentSection.validateMu2consolAssessmentSectionProblemObservation(diagnostics, context);
+  }
+
+  /**
+   * Validates the validateAssessmentSectionTemplateId constraint of '<em>Assessment Section</em>'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validateAssessmentSection_validateAssessmentSectionTemplateId(AssessmentSection assessmentSection, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return assessmentSection.validateAssessmentSectionTemplateId(diagnostics, context);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validateSocialHistorySection(SocialHistorySection socialHistorySection, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    if (!validate_NoCircularContainment(socialHistorySection, diagnostics, context)) return false;
+    boolean result = validate_EveryMultiplicityConforms(socialHistorySection, diagnostics, context);
+    if (result || diagnostics != null) result &= validate_EveryDataValueConforms(socialHistorySection, diagnostics, context);
+    if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(socialHistorySection, diagnostics, context);
+    if (result || diagnostics != null) result &= validate_EveryProxyResolves(socialHistorySection, diagnostics, context);
+    if (result || diagnostics != null) result &= validate_UniqueID(socialHistorySection, diagnostics, context);
+    if (result || diagnostics != null) result &= validate_EveryKeyUnique(socialHistorySection, diagnostics, context);
+    if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(socialHistorySection, diagnostics, context);
+    if (result || diagnostics != null) result &= cdaValidator.validateSection_validateClassCode(socialHistorySection, diagnostics, context);
+    if (result || diagnostics != null) result &= cdaValidator.validateSection_validateMoodCode(socialHistorySection, diagnostics, context);
+    if (result || diagnostics != null) result &= validateSocialHistorySection_validateSocialHistorySectionTemplateId(socialHistorySection, diagnostics, context);
+    if (result || diagnostics != null) result &= consolValidator.validateSocialHistorySection_validateSocialHistorySectionCode(socialHistorySection, diagnostics, context);
+    if (result || diagnostics != null) result &= consolValidator.validateSocialHistorySection_validateSocialHistorySectionCodeP(socialHistorySection, diagnostics, context);
+    if (result || diagnostics != null) result &= consolValidator.validateSocialHistorySection_validateSocialHistorySectionTitle(socialHistorySection, diagnostics, context);
+    if (result || diagnostics != null) result &= consolValidator.validateSocialHistorySection_validateSocialHistorySectionText(socialHistorySection, diagnostics, context);
+    if (result || diagnostics != null) result &= consolValidator.validateSocialHistorySection_validateSocialHistorySectionSocialHistoryObservation(socialHistorySection, diagnostics, context);
+    if (result || diagnostics != null) result &= consolValidator.validateSocialHistorySection_validateSocialHistorySectionPregnancyObservation(socialHistorySection, diagnostics, context);
+    if (result || diagnostics != null) result &= consolValidator.validateSocialHistorySection_validateSocialHistorySectionSmokingStatusObservation(socialHistorySection, diagnostics, context);
+    if (result || diagnostics != null) result &= consolValidator.validateSocialHistorySection_validateSocialHistorySectionTobaccoUse(socialHistorySection, diagnostics, context);
+    if (result || diagnostics != null) result &= validateSocialHistorySection_validateMu2consolSocialHistorySectionSmokingStatusObservation(socialHistorySection, diagnostics, context);
+    return result;
+  }
+
+  /**
+   * Validates the validateMu2consolSocialHistorySectionSmokingStatusObservation constraint of '<em>Social History Section</em>'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validateSocialHistorySection_validateMu2consolSocialHistorySectionSmokingStatusObservation(SocialHistorySection socialHistorySection, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return socialHistorySection.validateMu2consolSocialHistorySectionSmokingStatusObservation(diagnostics, context);
+  }
+
+  /**
+   * Validates the validateSocialHistorySectionTemplateId constraint of '<em>Social History Section</em>'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validateSocialHistorySection_validateSocialHistorySectionTemplateId(SocialHistorySection socialHistorySection, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return socialHistorySection.validateSocialHistorySectionTemplateId(diagnostics, context);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validateSmokingStatusObservation(SmokingStatusObservation smokingStatusObservation, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    if (!validate_NoCircularContainment(smokingStatusObservation, diagnostics, context)) return false;
+    boolean result = validate_EveryMultiplicityConforms(smokingStatusObservation, diagnostics, context);
+    if (result || diagnostics != null) result &= validate_EveryDataValueConforms(smokingStatusObservation, diagnostics, context);
+    if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(smokingStatusObservation, diagnostics, context);
+    if (result || diagnostics != null) result &= validate_EveryProxyResolves(smokingStatusObservation, diagnostics, context);
+    if (result || diagnostics != null) result &= validate_UniqueID(smokingStatusObservation, diagnostics, context);
+    if (result || diagnostics != null) result &= validate_EveryKeyUnique(smokingStatusObservation, diagnostics, context);
+    if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(smokingStatusObservation, diagnostics, context);
+    if (result || diagnostics != null) result &= consolValidator.validateTobaccoUse_validateTobaccoUseEffectiveTimeLow(smokingStatusObservation, diagnostics, context);
+    if (result || diagnostics != null) result &= validateSmokingStatusObservation_validateTobaccoUseTemplateId(smokingStatusObservation, diagnostics, context);
+    if (result || diagnostics != null) result &= consolValidator.validateTobaccoUse_validateTobaccoUseClassCode(smokingStatusObservation, diagnostics, context);
+    if (result || diagnostics != null) result &= consolValidator.validateTobaccoUse_validateTobaccoUseMoodCode(smokingStatusObservation, diagnostics, context);
+    if (result || diagnostics != null) result &= consolValidator.validateTobaccoUse_validateTobaccoUseCodeP(smokingStatusObservation, diagnostics, context);
+    if (result || diagnostics != null) result &= consolValidator.validateTobaccoUse_validateTobaccoUseCode(smokingStatusObservation, diagnostics, context);
+    if (result || diagnostics != null) result &= consolValidator.validateTobaccoUse_validateTobaccoUseEffectiveTime(smokingStatusObservation, diagnostics, context);
+    if (result || diagnostics != null) result &= consolValidator.validateTobaccoUse_validateTobaccoUseStatusCode(smokingStatusObservation, diagnostics, context);
+    if (result || diagnostics != null) result &= consolValidator.validateTobaccoUse_validateTobaccoUseStatusCodeP(smokingStatusObservation, diagnostics, context);
+    if (result || diagnostics != null) result &= consolValidator.validateTobaccoUse_validateTobaccoUseValue(smokingStatusObservation, diagnostics, context);
+    if (result || diagnostics != null) result &= consolValidator.validateTobaccoUse_validateTobaccoUseValueP(smokingStatusObservation, diagnostics, context);
+    if (result || diagnostics != null) result &= validateSmokingStatusObservation_validateSmokingStatusObservationValueP(smokingStatusObservation, diagnostics, context);
+    if (result || diagnostics != null) result &= validateSmokingStatusObservation_validateSmokingStatusObservationValue(smokingStatusObservation, diagnostics, context);
+    return result;
+  }
+
+  /**
+   * Validates the validateSmokingStatusObservationValueP constraint of '<em>Smoking Status Observation</em>'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validateSmokingStatusObservation_validateSmokingStatusObservationValueP(SmokingStatusObservation smokingStatusObservation, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return smokingStatusObservation.validateSmokingStatusObservationValueP(diagnostics, context);
+  }
+
+  /**
+   * Validates the validateSmokingStatusObservationValue constraint of '<em>Smoking Status Observation</em>'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validateSmokingStatusObservation_validateSmokingStatusObservationValue(SmokingStatusObservation smokingStatusObservation, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return smokingStatusObservation.validateSmokingStatusObservationValue(diagnostics, context);
+  }
+
+  /**
+   * Validates the validateTobaccoUseTemplateId constraint of '<em>Smoking Status Observation</em>'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validateSmokingStatusObservation_validateTobaccoUseTemplateId(SmokingStatusObservation smokingStatusObservation, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return smokingStatusObservation.validateTobaccoUseTemplateId(diagnostics, context);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validateResultsSection(ResultsSection resultsSection, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    if (!validate_NoCircularContainment(resultsSection, diagnostics, context)) return false;
+    boolean result = validate_EveryMultiplicityConforms(resultsSection, diagnostics, context);
+    if (result || diagnostics != null) result &= validate_EveryDataValueConforms(resultsSection, diagnostics, context);
+    if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(resultsSection, diagnostics, context);
+    if (result || diagnostics != null) result &= validate_EveryProxyResolves(resultsSection, diagnostics, context);
+    if (result || diagnostics != null) result &= validate_UniqueID(resultsSection, diagnostics, context);
+    if (result || diagnostics != null) result &= validate_EveryKeyUnique(resultsSection, diagnostics, context);
+    if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(resultsSection, diagnostics, context);
+    if (result || diagnostics != null) result &= cdaValidator.validateSection_validateClassCode(resultsSection, diagnostics, context);
+    if (result || diagnostics != null) result &= cdaValidator.validateSection_validateMoodCode(resultsSection, diagnostics, context);
+    if (result || diagnostics != null) result &= validateResultsSection_validateResultsSectionEntriesOptionalTemplateId(resultsSection, diagnostics, context);
+    if (result || diagnostics != null) result &= consolValidator.validateResultsSectionEntriesOptional_validateResultsSectionEntriesOptionalCode(resultsSection, diagnostics, context);
+    if (result || diagnostics != null) result &= consolValidator.validateResultsSectionEntriesOptional_validateResultsSectionEntriesOptionalCodeP(resultsSection, diagnostics, context);
+    if (result || diagnostics != null) result &= consolValidator.validateResultsSectionEntriesOptional_validateResultsSectionEntriesOptionalTitle(resultsSection, diagnostics, context);
+    if (result || diagnostics != null) result &= consolValidator.validateResultsSectionEntriesOptional_validateResultsSectionEntriesOptionalText(resultsSection, diagnostics, context);
+    if (result || diagnostics != null) result &= consolValidator.validateResultsSectionEntriesOptional_validateResultsSectionEntriesOptionalResultOrganizer(resultsSection, diagnostics, context);
+    if (result || diagnostics != null) result &= consolValidator.validateResultsSection_validateResultsSectionCodeP(resultsSection, diagnostics, context);
+    if (result || diagnostics != null) result &= consolValidator.validateResultsSection_validateResultsSectionCode(resultsSection, diagnostics, context);
+    if (result || diagnostics != null) result &= consolValidator.validateResultsSection_validateResultsSectionTitle(resultsSection, diagnostics, context);
+    if (result || diagnostics != null) result &= consolValidator.validateResultsSection_validateResultsSectionText(resultsSection, diagnostics, context);
+    if (result || diagnostics != null) result &= consolValidator.validateResultsSection_validateResultsSectionResultOrganizer(resultsSection, diagnostics, context);
+    if (result || diagnostics != null) result &= validateResultsSection_validateMu2consolResultsSectionResultOrganizer(resultsSection, diagnostics, context);
+    return result;
+  }
+
+  /**
+   * Validates the validateMu2consolResultsSectionResultOrganizer constraint of '<em>Results Section</em>'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validateResultsSection_validateMu2consolResultsSectionResultOrganizer(ResultsSection resultsSection, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return resultsSection.validateMu2consolResultsSectionResultOrganizer(diagnostics, context);
+  }
+
+  /**
+   * Validates the validateResultsSectionEntriesOptionalTemplateId constraint of '<em>Results Section</em>'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validateResultsSection_validateResultsSectionEntriesOptionalTemplateId(ResultsSection resultsSection, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return resultsSection.validateResultsSectionEntriesOptionalTemplateId(diagnostics, context);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validateResultOrganizer(ResultOrganizer resultOrganizer, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    if (!validate_NoCircularContainment(resultOrganizer, diagnostics, context)) return false;
+    boolean result = validate_EveryMultiplicityConforms(resultOrganizer, diagnostics, context);
+    if (result || diagnostics != null) result &= validate_EveryDataValueConforms(resultOrganizer, diagnostics, context);
+    if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(resultOrganizer, diagnostics, context);
+    if (result || diagnostics != null) result &= validate_EveryProxyResolves(resultOrganizer, diagnostics, context);
+    if (result || diagnostics != null) result &= validate_UniqueID(resultOrganizer, diagnostics, context);
+    if (result || diagnostics != null) result &= validate_EveryKeyUnique(resultOrganizer, diagnostics, context);
+    if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(resultOrganizer, diagnostics, context);
+    if (result || diagnostics != null) result &= consolValidator.validateResultOrganizer_validateResultOrganizerCodeValue(resultOrganizer, diagnostics, context);
+    if (result || diagnostics != null) result &= consolValidator.validateResultOrganizer_validateResultOrganizerClassCodeValue(resultOrganizer, diagnostics, context);
+    if (result || diagnostics != null) result &= validateResultOrganizer_validateResultOrganizerTemplateId(resultOrganizer, diagnostics, context);
+    if (result || diagnostics != null) result &= consolValidator.validateResultOrganizer_validateResultOrganizerClassCode(resultOrganizer, diagnostics, context);
+    if (result || diagnostics != null) result &= consolValidator.validateResultOrganizer_validateResultOrganizerMoodCode(resultOrganizer, diagnostics, context);
+    if (result || diagnostics != null) result &= consolValidator.validateResultOrganizer_validateResultOrganizerId(resultOrganizer, diagnostics, context);
+    if (result || diagnostics != null) result &= consolValidator.validateResultOrganizer_validateResultOrganizerStatusCodeP(resultOrganizer, diagnostics, context);
+    if (result || diagnostics != null) result &= consolValidator.validateResultOrganizer_validateResultOrganizerStatusCode(resultOrganizer, diagnostics, context);
+    if (result || diagnostics != null) result &= consolValidator.validateResultOrganizer_validateResultOrganizerCode(resultOrganizer, diagnostics, context);
+    if (result || diagnostics != null) result &= consolValidator.validateResultOrganizer_validateResultOrganizerResultObservation(resultOrganizer, diagnostics, context);
+    if (result || diagnostics != null) result &= validateResultOrganizer_validateMu2consolResultOrganizerResultObservation(resultOrganizer, diagnostics, context);
+    return result;
+  }
+
+  /**
+   * Validates the validateMu2consolResultOrganizerResultObservation constraint of '<em>Result Organizer</em>'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validateResultOrganizer_validateMu2consolResultOrganizerResultObservation(ResultOrganizer resultOrganizer, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return resultOrganizer.validateMu2consolResultOrganizerResultObservation(diagnostics, context);
+  }
+
+  /**
+   * Validates the validateResultOrganizerTemplateId constraint of '<em>Result Organizer</em>'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validateResultOrganizer_validateResultOrganizerTemplateId(ResultOrganizer resultOrganizer, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return resultOrganizer.validateResultOrganizerTemplateId(diagnostics, context);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validateResultObservation(ResultObservation resultObservation, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    if (!validate_NoCircularContainment(resultObservation, diagnostics, context)) return false;
+    boolean result = validate_EveryMultiplicityConforms(resultObservation, diagnostics, context);
+    if (result || diagnostics != null) result &= validate_EveryDataValueConforms(resultObservation, diagnostics, context);
+    if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(resultObservation, diagnostics, context);
+    if (result || diagnostics != null) result &= validate_EveryProxyResolves(resultObservation, diagnostics, context);
+    if (result || diagnostics != null) result &= validate_UniqueID(resultObservation, diagnostics, context);
+    if (result || diagnostics != null) result &= validate_EveryKeyUnique(resultObservation, diagnostics, context);
+    if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(resultObservation, diagnostics, context);
+    if (result || diagnostics != null) result &= consolValidator.validateResultObservation_validateResultObservationTextReference(resultObservation, diagnostics, context);
+    if (result || diagnostics != null) result &= consolValidator.validateResultObservation_validateResultObservationReferenceValue(resultObservation, diagnostics, context);
+    if (result || diagnostics != null) result &= consolValidator.validateResultObservation_validateResultObservationTextReferenceValue(resultObservation, diagnostics, context);
+    if (result || diagnostics != null) result &= consolValidator.validateResultObservation_validateResultObservationCodeValue(resultObservation, diagnostics, context);
+    if (result || diagnostics != null) result &= consolValidator.validateResultObservation_validateResultObservationNoObservationRangeCode(resultObservation, diagnostics, context);
+    if (result || diagnostics != null) result &= consolValidator.validateResultObservation_validateResultObservationAuthorMultiplicity(resultObservation, diagnostics, context);
+    if (result || diagnostics != null) result &= validateResultObservation_validateResultObservationTemplateId(resultObservation, diagnostics, context);
+    if (result || diagnostics != null) result &= consolValidator.validateResultObservation_validateResultObservationClassCode(resultObservation, diagnostics, context);
+    if (result || diagnostics != null) result &= consolValidator.validateResultObservation_validateResultObservationMoodCode(resultObservation, diagnostics, context);
+    if (result || diagnostics != null) result &= consolValidator.validateResultObservation_validateResultObservationId(resultObservation, diagnostics, context);
+    if (result || diagnostics != null) result &= consolValidator.validateResultObservation_validateResultObservationCode(resultObservation, diagnostics, context);
+    if (result || diagnostics != null) result &= consolValidator.validateResultObservation_validateResultObservationText(resultObservation, diagnostics, context);
+    if (result || diagnostics != null) result &= consolValidator.validateResultObservation_validateResultObservationStatusCode(resultObservation, diagnostics, context);
+    if (result || diagnostics != null) result &= consolValidator.validateResultObservation_validateResultObservationStatusCodeP(resultObservation, diagnostics, context);
+    if (result || diagnostics != null) result &= consolValidator.validateResultObservation_validateResultObservationEffectiveTime(resultObservation, diagnostics, context);
+    if (result || diagnostics != null) result &= consolValidator.validateResultObservation_validateResultObservationValue(resultObservation, diagnostics, context);
+    if (result || diagnostics != null) result &= consolValidator.validateResultObservation_validateResultObservationInterpretationCode(resultObservation, diagnostics, context);
+    if (result || diagnostics != null) result &= consolValidator.validateResultObservation_validateResultObservationMethodCode(resultObservation, diagnostics, context);
+    if (result || diagnostics != null) result &= consolValidator.validateResultObservation_validateResultObservationTargetSiteCode(resultObservation, diagnostics, context);
+    if (result || diagnostics != null) result &= validateResultObservation_validateMu2consolResultObservationResultObservationCodeValue(resultObservation, diagnostics, context);
+    if (result || diagnostics != null) result &= validateResultObservation_validateMu2consolResultObservationCode(resultObservation, diagnostics, context);
+    return result;
+  }
+
+  /**
+   * Validates the validateMu2consolResultObservationResultObservationCodeValue constraint of '<em>Result Observation</em>'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validateResultObservation_validateMu2consolResultObservationResultObservationCodeValue(ResultObservation resultObservation, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return resultObservation.validateMu2consolResultObservationResultObservationCodeValue(diagnostics, context);
+  }
+
+  /**
+   * Validates the validateMu2consolResultObservationCode constraint of '<em>Result Observation</em>'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validateResultObservation_validateMu2consolResultObservationCode(ResultObservation resultObservation, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return resultObservation.validateMu2consolResultObservationCode(diagnostics, context);
+  }
+
+  /**
+   * Validates the validateResultObservationTemplateId constraint of '<em>Result Observation</em>'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validateResultObservation_validateResultObservationTemplateId(ResultObservation resultObservation, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return resultObservation.validateResultObservationTemplateId(diagnostics, context);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validateProceduresSection(ProceduresSection proceduresSection, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    if (!validate_NoCircularContainment(proceduresSection, diagnostics, context)) return false;
+    boolean result = validate_EveryMultiplicityConforms(proceduresSection, diagnostics, context);
+    if (result || diagnostics != null) result &= validate_EveryDataValueConforms(proceduresSection, diagnostics, context);
+    if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(proceduresSection, diagnostics, context);
+    if (result || diagnostics != null) result &= validate_EveryProxyResolves(proceduresSection, diagnostics, context);
+    if (result || diagnostics != null) result &= validate_UniqueID(proceduresSection, diagnostics, context);
+    if (result || diagnostics != null) result &= validate_EveryKeyUnique(proceduresSection, diagnostics, context);
+    if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(proceduresSection, diagnostics, context);
+    if (result || diagnostics != null) result &= cdaValidator.validateSection_validateClassCode(proceduresSection, diagnostics, context);
+    if (result || diagnostics != null) result &= cdaValidator.validateSection_validateMoodCode(proceduresSection, diagnostics, context);
+    if (result || diagnostics != null) result &= validateProceduresSection_validateProceduresSectionEntriesOptionalTemplateId(proceduresSection, diagnostics, context);
+    if (result || diagnostics != null) result &= consolValidator.validateProceduresSectionEntriesOptional_validateProceduresSectionEntriesOptionalCode(proceduresSection, diagnostics, context);
+    if (result || diagnostics != null) result &= consolValidator.validateProceduresSectionEntriesOptional_validateProceduresSectionEntriesOptionalCodeP(proceduresSection, diagnostics, context);
+    if (result || diagnostics != null) result &= consolValidator.validateProceduresSectionEntriesOptional_validateProceduresSectionEntriesOptionalTitle(proceduresSection, diagnostics, context);
+    if (result || diagnostics != null) result &= consolValidator.validateProceduresSectionEntriesOptional_validateProceduresSectionEntriesOptionalText(proceduresSection, diagnostics, context);
+    if (result || diagnostics != null) result &= consolValidator.validateProceduresSectionEntriesOptional_validateProceduresSectionEntriesOptionalProcedureActivityProcedure(proceduresSection, diagnostics, context);
+    if (result || diagnostics != null) result &= consolValidator.validateProceduresSectionEntriesOptional_validateProceduresSectionEntriesOptionalProcedureAcivityObservation(proceduresSection, diagnostics, context);
+    if (result || diagnostics != null) result &= consolValidator.validateProceduresSectionEntriesOptional_validateProceduresSectionEntriesOptionalProcedureActivityAct(proceduresSection, diagnostics, context);
+    if (result || diagnostics != null) result &= consolValidator.validateProceduresSection_validateProceduresSectionHasProcedureActivity(proceduresSection, diagnostics, context);
+    if (result || diagnostics != null) result &= consolValidator.validateProceduresSection_validateProceduresSectionTitle(proceduresSection, diagnostics, context);
+    if (result || diagnostics != null) result &= consolValidator.validateProceduresSection_validateProceduresSectionCodeP(proceduresSection, diagnostics, context);
+    if (result || diagnostics != null) result &= consolValidator.validateProceduresSection_validateProceduresSectionCode(proceduresSection, diagnostics, context);
+    if (result || diagnostics != null) result &= consolValidator.validateProceduresSection_validateProceduresSectionText(proceduresSection, diagnostics, context);
+    if (result || diagnostics != null) result &= consolValidator.validateProceduresSection_validateProceduresSectionProcedureActivityProcedure(proceduresSection, diagnostics, context);
+    if (result || diagnostics != null) result &= consolValidator.validateProceduresSection_validateProceduresSectionProcedureActivityObservation(proceduresSection, diagnostics, context);
+    if (result || diagnostics != null) result &= consolValidator.validateProceduresSection_validateProceduresSectionProcedureActivityAct(proceduresSection, diagnostics, context);
+    if (result || diagnostics != null) result &= validateProceduresSection_validateMu2consolProceduresSectionProcedureActivityProcedure(proceduresSection, diagnostics, context);
+    return result;
+  }
+
+  /**
+   * Validates the validateMu2consolProceduresSectionProcedureActivityProcedure constraint of '<em>Procedures Section</em>'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validateProceduresSection_validateMu2consolProceduresSectionProcedureActivityProcedure(ProceduresSection proceduresSection, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return proceduresSection.validateMu2consolProceduresSectionProcedureActivityProcedure(diagnostics, context);
+  }
+
+  /**
+   * Validates the validateProceduresSectionEntriesOptionalTemplateId constraint of '<em>Procedures Section</em>'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validateProceduresSection_validateProceduresSectionEntriesOptionalTemplateId(ProceduresSection proceduresSection, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return proceduresSection.validateProceduresSectionEntriesOptionalTemplateId(diagnostics, context);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validateProcedureActivityProcedure(ProcedureActivityProcedure procedureActivityProcedure, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    if (!validate_NoCircularContainment(procedureActivityProcedure, diagnostics, context)) return false;
+    boolean result = validate_EveryMultiplicityConforms(procedureActivityProcedure, diagnostics, context);
+    if (result || diagnostics != null) result &= validate_EveryDataValueConforms(procedureActivityProcedure, diagnostics, context);
+    if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(procedureActivityProcedure, diagnostics, context);
+    if (result || diagnostics != null) result &= validate_EveryProxyResolves(procedureActivityProcedure, diagnostics, context);
+    if (result || diagnostics != null) result &= validate_UniqueID(procedureActivityProcedure, diagnostics, context);
+    if (result || diagnostics != null) result &= validate_EveryKeyUnique(procedureActivityProcedure, diagnostics, context);
+    if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(procedureActivityProcedure, diagnostics, context);
+    if (result || diagnostics != null) result &= consolValidator.validateProcedureActivityProcedure_validateProcedureActivityProcedureCodeCodeSystems(procedureActivityProcedure, diagnostics, context);
+    if (result || diagnostics != null) result &= consolValidator.validateProcedureActivityProcedure_validateProcedureActivityProcedureCodeOriginalText(procedureActivityProcedure, diagnostics, context);
+    if (result || diagnostics != null) result &= consolValidator.validateProcedureActivityProcedure_validateProcedureActivityProcedureOriginalTextReference(procedureActivityProcedure, diagnostics, context);
+    if (result || diagnostics != null) result &= consolValidator.validateProcedureActivityProcedure_validateProcedureActivityProcedureOriginalTextReferenceValue(procedureActivityProcedure, diagnostics, context);
+    if (result || diagnostics != null) result &= consolValidator.validateProcedureActivityProcedure_validateProcedureActivityProcedureReferenceValue(procedureActivityProcedure, diagnostics, context);
+    if (result || diagnostics != null) result &= consolValidator.validateProcedureActivityProcedure_validateProcedureActivityProcedureEncounterInversion(procedureActivityProcedure, diagnostics, context);
+    if (result || diagnostics != null) result &= consolValidator.validateProcedureActivityProcedure_validateProcedureActivityProcedureProductInstanceTypeCode(procedureActivityProcedure, diagnostics, context);
+    if (result || diagnostics != null) result &= consolValidator.validateProcedureActivityProcedure_validateProcedureActivityProcedureServiceDeliveryLocationTypeCode(procedureActivityProcedure, diagnostics, context);
+    if (result || diagnostics != null) result &= consolValidator.validateProcedureActivityProcedure_validateProcedureActivityProcedureInstructionsInversion(procedureActivityProcedure, diagnostics, context);
+    if (result || diagnostics != null) result &= validateProcedureActivityProcedure_validateProcedureActivityProcedureTemplateId(procedureActivityProcedure, diagnostics, context);
+    if (result || diagnostics != null) result &= consolValidator.validateProcedureActivityProcedure_validateProcedureActivityProcedureClassCode(procedureActivityProcedure, diagnostics, context);
+    if (result || diagnostics != null) result &= consolValidator.validateProcedureActivityProcedure_validateProcedureActivityProcedureMoodCode(procedureActivityProcedure, diagnostics, context);
+    if (result || diagnostics != null) result &= consolValidator.validateProcedureActivityProcedure_validateProcedureActivityProcedureId(procedureActivityProcedure, diagnostics, context);
+    if (result || diagnostics != null) result &= consolValidator.validateProcedureActivityProcedure_validateProcedureActivityProcedureCode(procedureActivityProcedure, diagnostics, context);
+    if (result || diagnostics != null) result &= consolValidator.validateProcedureActivityProcedure_validateProcedureActivityProcedureStatusCode(procedureActivityProcedure, diagnostics, context);
+    if (result || diagnostics != null) result &= consolValidator.validateProcedureActivityProcedure_validateProcedureActivityProcedureEffectiveTime(procedureActivityProcedure, diagnostics, context);
+    if (result || diagnostics != null) result &= consolValidator.validateProcedureActivityProcedure_validateProcedureActivityProcedurePriorityCodeP(procedureActivityProcedure, diagnostics, context);
+    if (result || diagnostics != null) result &= consolValidator.validateProcedureActivityProcedure_validateProcedureActivityProcedurePriorityCode(procedureActivityProcedure, diagnostics, context);
+    if (result || diagnostics != null) result &= consolValidator.validateProcedureActivityProcedure_validateProcedureActivityProcedureMethodCode(procedureActivityProcedure, diagnostics, context);
+    if (result || diagnostics != null) result &= consolValidator.validateProcedureActivityProcedure_validateProcedureActivityProcedureTargetSiteCodeP(procedureActivityProcedure, diagnostics, context);
+    if (result || diagnostics != null) result &= consolValidator.validateProcedureActivityProcedure_validateProcedureActivityProcedureTargetSiteCode(procedureActivityProcedure, diagnostics, context);
+    if (result || diagnostics != null) result &= consolValidator.validateProcedureActivityProcedure_validateProcedureActivityProcedureIndication(procedureActivityProcedure, diagnostics, context);
+    if (result || diagnostics != null) result &= consolValidator.validateProcedureActivityProcedure_validateProcedureActivityProcedureSpecimen(procedureActivityProcedure, diagnostics, context);
+    if (result || diagnostics != null) result &= consolValidator.validateProcedureActivityProcedure_validateProcedureActivityProcedureServiceDeliveryLocation(procedureActivityProcedure, diagnostics, context);
+    if (result || diagnostics != null) result &= consolValidator.validateProcedureActivityProcedure_validateProcedureActivityProcedurePerformer(procedureActivityProcedure, diagnostics, context);
+    if (result || diagnostics != null) result &= consolValidator.validateProcedureActivityProcedure_validateProcedureActivityProcedureMedicationActivity(procedureActivityProcedure, diagnostics, context);
+    if (result || diagnostics != null) result &= consolValidator.validateProcedureActivityProcedure_validateProcedureActivityProcedurePatientInstruction(procedureActivityProcedure, diagnostics, context);
+    if (result || diagnostics != null) result &= consolValidator.validateProcedureActivityProcedure_validateProcedureActivityProcedureProductInstance(procedureActivityProcedure, diagnostics, context);
+    if (result || diagnostics != null) result &= consolValidator.validateProcedureActivityProcedure_validateProcedureActivityProcedureEntryRelationship(procedureActivityProcedure, diagnostics, context);
+    if (result || diagnostics != null) result &= consolValidator.validateProcedureActivityProcedure_validateProcedureActivityProcedureProcedureSpecimenSpecimenRole(procedureActivityProcedure, diagnostics, context);
+    if (result || diagnostics != null) result &= consolValidator.validateProcedureActivityProcedure_validateProcedureActivityProcedureProcedureSpecimenSpecimentRoleId(procedureActivityProcedure, diagnostics, context);
+    if (result || diagnostics != null) result &= consolValidator.validateProcedureActivityProcedure_validateProcedureActivityProcedureProcedureActivityPerformerAssignedEntity(procedureActivityProcedure, diagnostics, context);
+    if (result || diagnostics != null) result &= consolValidator.validateProcedureActivityProcedure_validateProcedureActivityProcedureProcedureActivityPerformerAssignedEntityId(procedureActivityProcedure, diagnostics, context);
+    if (result || diagnostics != null) result &= consolValidator.validateProcedureActivityProcedure_validateProcedureActivityProcedureProcedureActivityPerformerAssignedEntityAddr(procedureActivityProcedure, diagnostics, context);
+    if (result || diagnostics != null) result &= consolValidator.validateProcedureActivityProcedure_validateProcedureActivityProcedureProcedureActivityPerformerAssignedEntityTelecom(procedureActivityProcedure, diagnostics, context);
+    if (result || diagnostics != null) result &= consolValidator.validateProcedureActivityProcedure_validateProcedureActivityProcedureProcedureActivityPerformerAssignedEntityRepOrg(procedureActivityProcedure, diagnostics, context);
+    if (result || diagnostics != null) result &= consolValidator.validateProcedureActivityProcedure_validateProcedureActivityProcedureProcedureActivityPerformerAssignedEntityRepOrgId(procedureActivityProcedure, diagnostics, context);
+    if (result || diagnostics != null) result &= consolValidator.validateProcedureActivityProcedure_validateProcedureActivityProcedureProcedureActivityPerformerAssignedEntityRepOrgName(procedureActivityProcedure, diagnostics, context);
+    if (result || diagnostics != null) result &= consolValidator.validateProcedureActivityProcedure_validateProcedureActivityProcedureProcedureActivityPerformerAssignedEntityRepOrgAddr(procedureActivityProcedure, diagnostics, context);
+    if (result || diagnostics != null) result &= consolValidator.validateProcedureActivityProcedure_validateProcedureActivityProcedureProcedureActivityPerformerAssignedEntityRepOrgTelecom(procedureActivityProcedure, diagnostics, context);
+    if (result || diagnostics != null) result &= consolValidator.validateProcedureActivityProcedure_validateProcedureActivityProcedureEntryRelationshipProcedureActivityEncounterClassCode(procedureActivityProcedure, diagnostics, context);
+    if (result || diagnostics != null) result &= consolValidator.validateProcedureActivityProcedure_validateProcedureActivityProcedureEntryRelationshipProcedureActivityEncounterMoodCode(procedureActivityProcedure, diagnostics, context);
+    if (result || diagnostics != null) result &= consolValidator.validateProcedureActivityProcedure_validateProcedureActivityProcedureEntryRelationshipProcedureActivityEncounterId(procedureActivityProcedure, diagnostics, context);
+    if (result || diagnostics != null) result &= consolValidator.validateProcedureActivityProcedure_validateProcedureActivityProcedureEntryRelationshipInversionInd(procedureActivityProcedure, diagnostics, context);
+    if (result || diagnostics != null) result &= consolValidator.validateProcedureActivityProcedure_validateProcedureActivityProcedureEntryRelationshipTypeCode(procedureActivityProcedure, diagnostics, context);
+    if (result || diagnostics != null) result &= consolValidator.validateProcedureActivityProcedure_validateProcedureActivityProcedureEntryRelationshipProcedureActivityEncounter(procedureActivityProcedure, diagnostics, context);
+    if (result || diagnostics != null) result &= validateProcedureActivityProcedure_validateMu2consolProcedureActivityProcedureCodeValue(procedureActivityProcedure, diagnostics, context);
+    if (result || diagnostics != null) result &= validateProcedureActivityProcedure_validateMu2consolProcedureActivityProcedureCode(procedureActivityProcedure, diagnostics, context);
+    return result;
+  }
+
+  /**
+   * Validates the validateMu2consolProcedureActivityProcedureCodeValue constraint of '<em>Procedure Activity Procedure</em>'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validateProcedureActivityProcedure_validateMu2consolProcedureActivityProcedureCodeValue(ProcedureActivityProcedure procedureActivityProcedure, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return procedureActivityProcedure.validateMu2consolProcedureActivityProcedureCodeValue(diagnostics, context);
+  }
+
+  /**
+   * Validates the validateMu2consolProcedureActivityProcedureCode constraint of '<em>Procedure Activity Procedure</em>'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validateProcedureActivityProcedure_validateMu2consolProcedureActivityProcedureCode(ProcedureActivityProcedure procedureActivityProcedure, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return procedureActivityProcedure.validateMu2consolProcedureActivityProcedureCode(diagnostics, context);
+  }
+
+  /**
+   * Validates the validateProcedureActivityProcedureTemplateId constraint of '<em>Procedure Activity Procedure</em>'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validateProcedureActivityProcedure_validateProcedureActivityProcedureTemplateId(ProcedureActivityProcedure procedureActivityProcedure, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return procedureActivityProcedure.validateProcedureActivityProcedureTemplateId(diagnostics, context);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validateClinicalOfficeVisitSummary(ClinicalOfficeVisitSummary clinicalOfficeVisitSummary, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
     if (!validate_NoCircularContainment(clinicalOfficeVisitSummary, diagnostics, context)) return false;
     boolean result = validate_EveryMultiplicityConforms(clinicalOfficeVisitSummary, diagnostics, context);
     if (result || diagnostics != null) result &= validate_EveryDataValueConforms(clinicalOfficeVisitSummary, diagnostics, context);
@@ -2717,7 +2978,6 @@ public class Mu2consolValidator extends EObjectValidator {
     if (result || diagnostics != null) result &= validateClinicalOfficeVisitSummary_validateClinicalOfficeVisitSummaryCarePlanning(clinicalOfficeVisitSummary, diagnostics, context);
     if (result || diagnostics != null) result &= validateClinicalOfficeVisitSummary_validateClinicalOfficeVisitSummaryEffectiveTime(clinicalOfficeVisitSummary, diagnostics, context);
     if (result || diagnostics != null) result &= validateClinicalOfficeVisitSummary_validateClinicalOfficeVisitSummaryLocation(clinicalOfficeVisitSummary, diagnostics, context);
-    if (result || diagnostics != null) result &= validateClinicalOfficeVisitSummary_validateClinicalOfficeVisitSummaryPlanOfCareActOrEncounter(clinicalOfficeVisitSummary, diagnostics, context);
     if (result || diagnostics != null) result &= validateClinicalOfficeVisitSummary_validateClinicalOfficeVisitSummaryInstructionsEntry(clinicalOfficeVisitSummary, diagnostics, context);
     if (result || diagnostics != null) result &= validateClinicalOfficeVisitSummary_validateClinicalOfficeVisitSummaryMedicationsAdministeredEntry(clinicalOfficeVisitSummary, diagnostics, context);
     if (result || diagnostics != null) result &= validateClinicalOfficeVisitSummary_validateClinicalOfficeVisitSummaryProblemSection(clinicalOfficeVisitSummary, diagnostics, context);
@@ -2725,14 +2985,11 @@ public class Mu2consolValidator extends EObjectValidator {
     if (result || diagnostics != null) result &= validateClinicalOfficeVisitSummary_validateClinicalOfficeVisitSummaryAllergiesSection(clinicalOfficeVisitSummary, diagnostics, context);
     if (result || diagnostics != null) result &= validateClinicalOfficeVisitSummary_validateClinicalOfficeVisitSummaryResultsSection(clinicalOfficeVisitSummary, diagnostics, context);
     if (result || diagnostics != null) result &= validateClinicalOfficeVisitSummary_validateClinicalOfficeVisitSummaryVitalSignsSection(clinicalOfficeVisitSummary, diagnostics, context);
-    if (result || diagnostics != null) result &= validateClinicalOfficeVisitSummary_validateClinicalOfficeVisitSummaryPlanOfCareSection(clinicalOfficeVisitSummary, diagnostics, context);
     if (result || diagnostics != null) result &= validateClinicalOfficeVisitSummary_validateClinicalOfficeVisitSummaryProceduresSection(clinicalOfficeVisitSummary, diagnostics, context);
     if (result || diagnostics != null) result &= validateClinicalOfficeVisitSummary_validateClinicalOfficeVisitSummaryImmunizationsSection(clinicalOfficeVisitSummary, diagnostics, context);
     if (result || diagnostics != null) result &= validateClinicalOfficeVisitSummary_validateClinicalOfficeVisitSummaryMedicationsAdministeredSection(clinicalOfficeVisitSummary, diagnostics, context);
     if (result || diagnostics != null) result &= validateClinicalOfficeVisitSummary_validateClinicalOfficeVisitSummaryInstructionsSection(clinicalOfficeVisitSummary, diagnostics, context);
     if (result || diagnostics != null) result &= validateClinicalOfficeVisitSummary_validateClinicalOfficeVisitSummarySocialHistorySection(clinicalOfficeVisitSummary, diagnostics, context);
-    if (result || diagnostics != null) result &= validateClinicalOfficeVisitSummary_validateClinicalOfficeVisitSummaryMu2consolPlanOfCareSectionCarePlanningForPlanOfCare(clinicalOfficeVisitSummary, diagnostics, context);
-    if (result || diagnostics != null) result &= validateClinicalOfficeVisitSummary_validateClinicalOfficeVisitSummaryMu2consolPlanOfCareSectionPlanOfCareActivityObservation(clinicalOfficeVisitSummary, diagnostics, context);
     if (result || diagnostics != null) result &= validateClinicalOfficeVisitSummary_validateClinicalOfficeVisitSummaryPlanOfCareSectionTemplateId(clinicalOfficeVisitSummary, diagnostics, context);
     if (result || diagnostics != null) result &= validateClinicalOfficeVisitSummary_validateClinicalOfficeVisitSummaryAssessmentAndPlanSectionTemplateId(clinicalOfficeVisitSummary, diagnostics, context);
     if (result || diagnostics != null) result &= validateClinicalOfficeVisitSummary_validateClinicalOfficeVisitSummarySocialHistorySectionTemplateId(clinicalOfficeVisitSummary, diagnostics, context);
@@ -2740,332 +2997,244 @@ public class Mu2consolValidator extends EObjectValidator {
     return result;
   }
 
-	/**
-	 * Validates the validateClinicalOfficeVisitSummaryResponsibleParty
-	 * constraint of '<em>Clinical Office Visit Summary</em>'. <!--
-	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
-	 * @generated
-	 */
-	public boolean validateClinicalOfficeVisitSummary_validateClinicalOfficeVisitSummaryResponsibleParty(
-			ClinicalOfficeVisitSummary clinicalOfficeVisitSummary,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
+  /**
+   * Validates the validateClinicalOfficeVisitSummaryResponsibleParty constraint of '<em>Clinical Office Visit Summary</em>'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validateClinicalOfficeVisitSummary_validateClinicalOfficeVisitSummaryResponsibleParty(ClinicalOfficeVisitSummary clinicalOfficeVisitSummary, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
     return clinicalOfficeVisitSummary.validateClinicalOfficeVisitSummaryResponsibleParty(diagnostics, context);
   }
 
-	/**
-   * Validates the validateClinicalOfficeVisitSummaryLocation constraint of '<em>Clinical Office Visit Summary</em>'.
-   * <!-- begin-user-doc --> <!--
-	 * end-user-doc -->
+  /**
+   * Validates the validateClinicalOfficeVisitSummaryReasonForOfficeVisit constraint of '<em>Clinical Office Visit Summary</em>'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
    * @generated
    */
-	public boolean validateClinicalOfficeVisitSummary_validateClinicalOfficeVisitSummaryLocation(
-			ClinicalOfficeVisitSummary clinicalOfficeVisitSummary,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return clinicalOfficeVisitSummary.validateClinicalOfficeVisitSummaryLocation(diagnostics, context);
-  }
-
-	/**
-	 * Validates the validateClinicalOfficeVisitSummaryReasonForOfficeVisit
-	 * constraint of '<em>Clinical Office Visit Summary</em>'. <!--
-	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
-	 * @generated
-	 */
-	public boolean validateClinicalOfficeVisitSummary_validateClinicalOfficeVisitSummaryReasonForOfficeVisit(
-			ClinicalOfficeVisitSummary clinicalOfficeVisitSummary,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
+  public boolean validateClinicalOfficeVisitSummary_validateClinicalOfficeVisitSummaryReasonForOfficeVisit(ClinicalOfficeVisitSummary clinicalOfficeVisitSummary, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
     return clinicalOfficeVisitSummary.validateClinicalOfficeVisitSummaryReasonForOfficeVisit(diagnostics, context);
   }
 
-	/**
+  /**
    * Validates the validateClinicalOfficeVisitSummaryCarePlanning constraint of '<em>Clinical Office Visit Summary</em>'.
-   * <!-- begin-user-doc --> <!--
-	 * end-user-doc -->
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
    * @generated
    */
-	public boolean validateClinicalOfficeVisitSummary_validateClinicalOfficeVisitSummaryCarePlanning(
-			ClinicalOfficeVisitSummary clinicalOfficeVisitSummary,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
+  public boolean validateClinicalOfficeVisitSummary_validateClinicalOfficeVisitSummaryCarePlanning(ClinicalOfficeVisitSummary clinicalOfficeVisitSummary, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
     return clinicalOfficeVisitSummary.validateClinicalOfficeVisitSummaryCarePlanning(diagnostics, context);
   }
 
-	/**
+  /**
    * Validates the validateClinicalOfficeVisitSummaryEffectiveTime constraint of '<em>Clinical Office Visit Summary</em>'.
-   * <!-- begin-user-doc --> <!--
-	 * end-user-doc -->
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
    * @generated
    */
-	public boolean validateClinicalOfficeVisitSummary_validateClinicalOfficeVisitSummaryEffectiveTime(
-			ClinicalOfficeVisitSummary clinicalOfficeVisitSummary,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
+  public boolean validateClinicalOfficeVisitSummary_validateClinicalOfficeVisitSummaryEffectiveTime(ClinicalOfficeVisitSummary clinicalOfficeVisitSummary, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
     return clinicalOfficeVisitSummary.validateClinicalOfficeVisitSummaryEffectiveTime(diagnostics, context);
   }
 
-	/**
-	 * Validates the validateClinicalOfficeVisitSummaryPlanOfCareActOrEncounter
-	 * constraint of '<em>Clinical Office Visit Summary</em>'. <!--
-	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
-	 * @generated
-	 */
-	public boolean validateClinicalOfficeVisitSummary_validateClinicalOfficeVisitSummaryPlanOfCareActOrEncounter(
-			ClinicalOfficeVisitSummary clinicalOfficeVisitSummary,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return clinicalOfficeVisitSummary.validateClinicalOfficeVisitSummaryPlanOfCareActOrEncounter(diagnostics, context);
-  }
-
-	/**
-   * Validates the validateClinicalOfficeVisitSummaryInstructionsEntry constraint of '<em>Clinical Office Visit Summary</em>'.
+  /**
+   * Validates the validateClinicalOfficeVisitSummaryLocation constraint of '<em>Clinical Office Visit Summary</em>'.
    * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+   * <!-- end-user-doc -->
    * @generated
    */
-	public boolean validateClinicalOfficeVisitSummary_validateClinicalOfficeVisitSummaryInstructionsEntry(ClinicalOfficeVisitSummary clinicalOfficeVisitSummary, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  public boolean validateClinicalOfficeVisitSummary_validateClinicalOfficeVisitSummaryLocation(ClinicalOfficeVisitSummary clinicalOfficeVisitSummary, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return clinicalOfficeVisitSummary.validateClinicalOfficeVisitSummaryLocation(diagnostics, context);
+  }
+
+  /**
+   * Validates the validateClinicalOfficeVisitSummaryInstructionsEntry constraint of '<em>Clinical Office Visit Summary</em>'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validateClinicalOfficeVisitSummary_validateClinicalOfficeVisitSummaryInstructionsEntry(ClinicalOfficeVisitSummary clinicalOfficeVisitSummary, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
     return clinicalOfficeVisitSummary.validateClinicalOfficeVisitSummaryInstructionsEntry(diagnostics, context);
   }
 
-	/**
+  /**
    * Validates the validateClinicalOfficeVisitSummaryMedicationsAdministeredEntry constraint of '<em>Clinical Office Visit Summary</em>'.
    * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+   * <!-- end-user-doc -->
    * @generated
    */
-	public boolean validateClinicalOfficeVisitSummary_validateClinicalOfficeVisitSummaryMedicationsAdministeredEntry(ClinicalOfficeVisitSummary clinicalOfficeVisitSummary, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  public boolean validateClinicalOfficeVisitSummary_validateClinicalOfficeVisitSummaryMedicationsAdministeredEntry(ClinicalOfficeVisitSummary clinicalOfficeVisitSummary, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
     return clinicalOfficeVisitSummary.validateClinicalOfficeVisitSummaryMedicationsAdministeredEntry(diagnostics, context);
   }
 
-	/**
-	 * Validates the validateClinicalOfficeVisitSummarySocialHistorySection
-	 * constraint of '<em>Clinical Office Visit Summary</em>'. <!--
-	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
-	 * @generated
-	 */
-	public boolean validateClinicalOfficeVisitSummary_validateClinicalOfficeVisitSummarySocialHistorySection(
-			ClinicalOfficeVisitSummary clinicalOfficeVisitSummary,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return clinicalOfficeVisitSummary.validateClinicalOfficeVisitSummarySocialHistorySection(diagnostics, context);
-  }
-
-	/**
-	 * Validates the
-	 * validateClinicalOfficeVisitSummaryMu2consolPlanOfCareSectionCarePlanningForPlanOfCare
-	 * constraint of '<em>Clinical Office Visit Summary</em>'. <!--
-	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
-	 * @generated
-	 */
-	public boolean validateClinicalOfficeVisitSummary_validateClinicalOfficeVisitSummaryMu2consolPlanOfCareSectionCarePlanningForPlanOfCare(
-			ClinicalOfficeVisitSummary clinicalOfficeVisitSummary,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return clinicalOfficeVisitSummary.validateClinicalOfficeVisitSummaryMu2consolPlanOfCareSectionCarePlanningForPlanOfCare(diagnostics, context);
-  }
-
-	/**
-	 * Validates the
-	 * validateClinicalOfficeVisitSummaryMu2consolPlanOfCareSectionPlanOfCareActivityObservation
-	 * constraint of '<em>Clinical Office Visit Summary</em>'. <!--
-	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
-	 * @generated
-	 */
-	public boolean validateClinicalOfficeVisitSummary_validateClinicalOfficeVisitSummaryMu2consolPlanOfCareSectionPlanOfCareActivityObservation(
-			ClinicalOfficeVisitSummary clinicalOfficeVisitSummary,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return clinicalOfficeVisitSummary.validateClinicalOfficeVisitSummaryMu2consolPlanOfCareSectionPlanOfCareActivityObservation(diagnostics, context);
-  }
-
-	/**
+  /**
    * Validates the validateClinicalOfficeVisitSummaryProblemSection constraint of '<em>Clinical Office Visit Summary</em>'.
-   * <!-- begin-user-doc --> <!--
-	 * end-user-doc -->
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
    * @generated
    */
-	public boolean validateClinicalOfficeVisitSummary_validateClinicalOfficeVisitSummaryProblemSection(
-			ClinicalOfficeVisitSummary clinicalOfficeVisitSummary,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
+  public boolean validateClinicalOfficeVisitSummary_validateClinicalOfficeVisitSummaryProblemSection(ClinicalOfficeVisitSummary clinicalOfficeVisitSummary, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
     return clinicalOfficeVisitSummary.validateClinicalOfficeVisitSummaryProblemSection(diagnostics, context);
   }
 
-	/**
-	 * Validates the validateClinicalOfficeVisitSummaryMedicationsSection
-	 * constraint of '<em>Clinical Office Visit Summary</em>'. <!--
-	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
-	 * @generated
-	 */
-	public boolean validateClinicalOfficeVisitSummary_validateClinicalOfficeVisitSummaryMedicationsSection(
-			ClinicalOfficeVisitSummary clinicalOfficeVisitSummary,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
+  /**
+   * Validates the validateClinicalOfficeVisitSummaryMedicationsSection constraint of '<em>Clinical Office Visit Summary</em>'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validateClinicalOfficeVisitSummary_validateClinicalOfficeVisitSummaryMedicationsSection(ClinicalOfficeVisitSummary clinicalOfficeVisitSummary, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
     return clinicalOfficeVisitSummary.validateClinicalOfficeVisitSummaryMedicationsSection(diagnostics, context);
   }
 
-	/**
-	 * Validates the validateClinicalOfficeVisitSummaryAllergiesSection
-	 * constraint of '<em>Clinical Office Visit Summary</em>'. <!--
-	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
-	 * @generated
-	 */
-	public boolean validateClinicalOfficeVisitSummary_validateClinicalOfficeVisitSummaryAllergiesSection(
-			ClinicalOfficeVisitSummary clinicalOfficeVisitSummary,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
+  /**
+   * Validates the validateClinicalOfficeVisitSummaryAllergiesSection constraint of '<em>Clinical Office Visit Summary</em>'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validateClinicalOfficeVisitSummary_validateClinicalOfficeVisitSummaryAllergiesSection(ClinicalOfficeVisitSummary clinicalOfficeVisitSummary, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
     return clinicalOfficeVisitSummary.validateClinicalOfficeVisitSummaryAllergiesSection(diagnostics, context);
   }
 
-	/**
+  /**
    * Validates the validateClinicalOfficeVisitSummaryResultsSection constraint of '<em>Clinical Office Visit Summary</em>'.
-   * <!-- begin-user-doc --> <!--
-	 * end-user-doc -->
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
    * @generated
    */
-	public boolean validateClinicalOfficeVisitSummary_validateClinicalOfficeVisitSummaryResultsSection(
-			ClinicalOfficeVisitSummary clinicalOfficeVisitSummary,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
+  public boolean validateClinicalOfficeVisitSummary_validateClinicalOfficeVisitSummaryResultsSection(ClinicalOfficeVisitSummary clinicalOfficeVisitSummary, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
     return clinicalOfficeVisitSummary.validateClinicalOfficeVisitSummaryResultsSection(diagnostics, context);
   }
 
-	/**
-	 * Validates the validateClinicalOfficeVisitSummaryVitalSignsSection
-	 * constraint of '<em>Clinical Office Visit Summary</em>'. <!--
-	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
-	 * @generated
-	 */
-	public boolean validateClinicalOfficeVisitSummary_validateClinicalOfficeVisitSummaryVitalSignsSection(
-			ClinicalOfficeVisitSummary clinicalOfficeVisitSummary,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
+  /**
+   * Validates the validateClinicalOfficeVisitSummaryVitalSignsSection constraint of '<em>Clinical Office Visit Summary</em>'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validateClinicalOfficeVisitSummary_validateClinicalOfficeVisitSummaryVitalSignsSection(ClinicalOfficeVisitSummary clinicalOfficeVisitSummary, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
     return clinicalOfficeVisitSummary.validateClinicalOfficeVisitSummaryVitalSignsSection(diagnostics, context);
   }
 
-	/**
-	 * Validates the validateClinicalOfficeVisitSummaryPlanOfCareSection
-	 * constraint of '<em>Clinical Office Visit Summary</em>'. <!--
-	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
-	 * @generated
-	 */
-	public boolean validateClinicalOfficeVisitSummary_validateClinicalOfficeVisitSummaryPlanOfCareSection(
-			ClinicalOfficeVisitSummary clinicalOfficeVisitSummary,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return clinicalOfficeVisitSummary.validateClinicalOfficeVisitSummaryPlanOfCareSection(diagnostics, context);
-  }
-
-	/**
-	 * Validates the validateClinicalOfficeVisitSummaryProceduresSection
-	 * constraint of '<em>Clinical Office Visit Summary</em>'. <!--
-	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
-	 * @generated
-	 */
-	public boolean validateClinicalOfficeVisitSummary_validateClinicalOfficeVisitSummaryProceduresSection(
-			ClinicalOfficeVisitSummary clinicalOfficeVisitSummary,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
+  /**
+   * Validates the validateClinicalOfficeVisitSummaryProceduresSection constraint of '<em>Clinical Office Visit Summary</em>'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validateClinicalOfficeVisitSummary_validateClinicalOfficeVisitSummaryProceduresSection(ClinicalOfficeVisitSummary clinicalOfficeVisitSummary, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
     return clinicalOfficeVisitSummary.validateClinicalOfficeVisitSummaryProceduresSection(diagnostics, context);
   }
 
-	/**
-	 * Validates the validateClinicalOfficeVisitSummaryImmunizationsSection
-	 * constraint of '<em>Clinical Office Visit Summary</em>'. <!--
-	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
-	 * @generated
-	 */
-	public boolean validateClinicalOfficeVisitSummary_validateClinicalOfficeVisitSummaryImmunizationsSection(
-			ClinicalOfficeVisitSummary clinicalOfficeVisitSummary,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
+  /**
+   * Validates the validateClinicalOfficeVisitSummaryImmunizationsSection constraint of '<em>Clinical Office Visit Summary</em>'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validateClinicalOfficeVisitSummary_validateClinicalOfficeVisitSummaryImmunizationsSection(ClinicalOfficeVisitSummary clinicalOfficeVisitSummary, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
     return clinicalOfficeVisitSummary.validateClinicalOfficeVisitSummaryImmunizationsSection(diagnostics, context);
   }
 
-	/**
-	 * Validates the
-	 * validateClinicalOfficeVisitSummaryMedicationsAdministeredSection
-	 * constraint of '<em>Clinical Office Visit Summary</em>'. <!--
-	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
-	 * @generated
-	 */
-	public boolean validateClinicalOfficeVisitSummary_validateClinicalOfficeVisitSummaryMedicationsAdministeredSection(
-			ClinicalOfficeVisitSummary clinicalOfficeVisitSummary,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
+  /**
+   * Validates the validateClinicalOfficeVisitSummaryMedicationsAdministeredSection constraint of '<em>Clinical Office Visit Summary</em>'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validateClinicalOfficeVisitSummary_validateClinicalOfficeVisitSummaryMedicationsAdministeredSection(ClinicalOfficeVisitSummary clinicalOfficeVisitSummary, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
     return clinicalOfficeVisitSummary.validateClinicalOfficeVisitSummaryMedicationsAdministeredSection(diagnostics, context);
   }
 
-	/**
-	 * Validates the validateClinicalOfficeVisitSummaryInstructionsSection
-	 * constraint of '<em>Clinical Office Visit Summary</em>'. <!--
-	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
-	 * @generated
-	 */
-	public boolean validateClinicalOfficeVisitSummary_validateClinicalOfficeVisitSummaryInstructionsSection(
-			ClinicalOfficeVisitSummary clinicalOfficeVisitSummary,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
+  /**
+   * Validates the validateClinicalOfficeVisitSummaryInstructionsSection constraint of '<em>Clinical Office Visit Summary</em>'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validateClinicalOfficeVisitSummary_validateClinicalOfficeVisitSummaryInstructionsSection(ClinicalOfficeVisitSummary clinicalOfficeVisitSummary, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
     return clinicalOfficeVisitSummary.validateClinicalOfficeVisitSummaryInstructionsSection(diagnostics, context);
   }
 
-	/**
-	 * Validates the
-	 * validateClinicalOfficeVisitSummarySocialHistorySectionTemplateId
-	 * constraint of '<em>Clinical Office Visit Summary</em>'. <!--
-	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
-	 * @generated
-	 */
-	public boolean validateClinicalOfficeVisitSummary_validateClinicalOfficeVisitSummarySocialHistorySectionTemplateId(
-			ClinicalOfficeVisitSummary clinicalOfficeVisitSummary,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return clinicalOfficeVisitSummary.validateClinicalOfficeVisitSummarySocialHistorySectionTemplateId(diagnostics, context);
-  }
-
-	/**
-	 * Validates the
-	 * validateClinicalOfficeVisitSummaryMu2consolSocialHistorySectionSmokingStatusObservation
-	 * constraint of '<em>Clinical Office Visit Summary</em>'. <!--
-	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
-	 * @generated
-	 */
-	public boolean validateClinicalOfficeVisitSummary_validateClinicalOfficeVisitSummaryMu2consolSocialHistorySectionSmokingStatusObservation(
-			ClinicalOfficeVisitSummary clinicalOfficeVisitSummary,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return clinicalOfficeVisitSummary.validateClinicalOfficeVisitSummaryMu2consolSocialHistorySectionSmokingStatusObservation(diagnostics, context);
-  }
-
-	/**
-   * Validates the validateClinicalOfficeVisitSummaryPlanOfCareSectionTemplateId constraint of '<em>Clinical Office Visit Summary</em>'.
-   * <!-- begin-user-doc --> <!--
-	 * end-user-doc -->
+  /**
+   * Validates the validateClinicalOfficeVisitSummarySocialHistorySection constraint of '<em>Clinical Office Visit Summary</em>'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
    * @generated
    */
-	public boolean validateClinicalOfficeVisitSummary_validateClinicalOfficeVisitSummaryPlanOfCareSectionTemplateId(
-			ClinicalOfficeVisitSummary clinicalOfficeVisitSummary,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
+  public boolean validateClinicalOfficeVisitSummary_validateClinicalOfficeVisitSummarySocialHistorySection(ClinicalOfficeVisitSummary clinicalOfficeVisitSummary, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return clinicalOfficeVisitSummary.validateClinicalOfficeVisitSummarySocialHistorySection(diagnostics, context);
+  }
+
+  /**
+   * Validates the validateClinicalOfficeVisitSummaryPlanOfCareSectionTemplateId constraint of '<em>Clinical Office Visit Summary</em>'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validateClinicalOfficeVisitSummary_validateClinicalOfficeVisitSummaryPlanOfCareSectionTemplateId(ClinicalOfficeVisitSummary clinicalOfficeVisitSummary, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
     return clinicalOfficeVisitSummary.validateClinicalOfficeVisitSummaryPlanOfCareSectionTemplateId(diagnostics, context);
   }
 
-	/**
-	 * Validates the
-	 * validateClinicalOfficeVisitSummaryAssessmentAndPlanSectionTemplateId
-	 * constraint of '<em>Clinical Office Visit Summary</em>'. <!--
-	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
-	 * @generated
-	 */
-	public boolean validateClinicalOfficeVisitSummary_validateClinicalOfficeVisitSummaryAssessmentAndPlanSectionTemplateId(
-			ClinicalOfficeVisitSummary clinicalOfficeVisitSummary,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
+  /**
+   * Validates the validateClinicalOfficeVisitSummaryAssessmentAndPlanSectionTemplateId constraint of '<em>Clinical Office Visit Summary</em>'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validateClinicalOfficeVisitSummary_validateClinicalOfficeVisitSummaryAssessmentAndPlanSectionTemplateId(ClinicalOfficeVisitSummary clinicalOfficeVisitSummary, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
     return clinicalOfficeVisitSummary.validateClinicalOfficeVisitSummaryAssessmentAndPlanSectionTemplateId(diagnostics, context);
   }
 
-	/**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
+  /**
+   * Validates the validateClinicalOfficeVisitSummarySocialHistorySectionTemplateId constraint of '<em>Clinical Office Visit Summary</em>'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
    * @generated
    */
-	public boolean validateTransitionOfCareAmbulatorySummary(
-			TransitionOfCareAmbulatorySummary transitionOfCareAmbulatorySummary,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
+  public boolean validateClinicalOfficeVisitSummary_validateClinicalOfficeVisitSummarySocialHistorySectionTemplateId(ClinicalOfficeVisitSummary clinicalOfficeVisitSummary, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return clinicalOfficeVisitSummary.validateClinicalOfficeVisitSummarySocialHistorySectionTemplateId(diagnostics, context);
+  }
+
+  /**
+   * Validates the validateClinicalOfficeVisitSummaryMu2consolSocialHistorySectionSmokingStatusObservation constraint of '<em>Clinical Office Visit Summary</em>'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validateClinicalOfficeVisitSummary_validateClinicalOfficeVisitSummaryMu2consolSocialHistorySectionSmokingStatusObservation(ClinicalOfficeVisitSummary clinicalOfficeVisitSummary, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return clinicalOfficeVisitSummary.validateClinicalOfficeVisitSummaryMu2consolSocialHistorySectionSmokingStatusObservation(diagnostics, context);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validateTransitionOfCareAmbulatorySummary(TransitionOfCareAmbulatorySummary transitionOfCareAmbulatorySummary, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
     if (!validate_NoCircularContainment(transitionOfCareAmbulatorySummary, diagnostics, context)) return false;
     boolean result = validate_EveryMultiplicityConforms(transitionOfCareAmbulatorySummary, diagnostics, context);
     if (result || diagnostics != null) result &= validate_EveryDataValueConforms(transitionOfCareAmbulatorySummary, diagnostics, context);
@@ -3343,9 +3512,6 @@ public class Mu2consolValidator extends EObjectValidator {
     if (result || diagnostics != null) result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsComponent1EncompassingEncounterEncounterParticipant(transitionOfCareAmbulatorySummary, diagnostics, context);
     if (result || diagnostics != null) result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsComponent1EncompassingEncounter(transitionOfCareAmbulatorySummary, diagnostics, context);
     if (result || diagnostics != null) result &= validateSummaryOfCareRecord_validateSummaryOfCareRecordCarePlanning(transitionOfCareAmbulatorySummary, diagnostics, context);
-    if (result || diagnostics != null) result &= validateSummaryOfCareRecord_validateSummaryOfCareRecordCognitiveStatusEntries(transitionOfCareAmbulatorySummary, diagnostics, context);
-    if (result || diagnostics != null) result &= validateSummaryOfCareRecord_validateSummaryOfCareRecordFunctionalStatusEntries(transitionOfCareAmbulatorySummary, diagnostics, context);
-    if (result || diagnostics != null) result &= validateSummaryOfCareRecord_validateSummaryOfCareRecordPlanOfCareSection(transitionOfCareAmbulatorySummary, diagnostics, context);
     if (result || diagnostics != null) result &= validateSummaryOfCareRecord_validateSummaryOfCareRecordProblemSection(transitionOfCareAmbulatorySummary, diagnostics, context);
     if (result || diagnostics != null) result &= validateSummaryOfCareRecord_validateSummaryOfCareRecordAllergiesSection(transitionOfCareAmbulatorySummary, diagnostics, context);
     if (result || diagnostics != null) result &= validateSummaryOfCareRecord_validateSummaryOfCareRecordImmunizationsSection(transitionOfCareAmbulatorySummary, diagnostics, context);
@@ -3354,10 +3520,9 @@ public class Mu2consolValidator extends EObjectValidator {
     if (result || diagnostics != null) result &= validateSummaryOfCareRecord_validateSummaryOfCareRecordResultsSection(transitionOfCareAmbulatorySummary, diagnostics, context);
     if (result || diagnostics != null) result &= validateSummaryOfCareRecord_validateSummaryOfCareRecordVitalSignsSection(transitionOfCareAmbulatorySummary, diagnostics, context);
     if (result || diagnostics != null) result &= validateSummaryOfCareRecord_validateSummaryOfCareRecordProceduresSection(transitionOfCareAmbulatorySummary, diagnostics, context);
+    if (result || diagnostics != null) result &= validateSummaryOfCareRecord_validateSummaryOfCareRecordFunctionalStatusSection(transitionOfCareAmbulatorySummary, diagnostics, context);
     if (result || diagnostics != null) result &= validateSummaryOfCareRecord_validateSummaryOfCareRecordSocialHistorySectionTemplateId(transitionOfCareAmbulatorySummary, diagnostics, context);
     if (result || diagnostics != null) result &= validateSummaryOfCareRecord_validateSummaryOfCareRecordMu2consolSocialHistorySectionSmokingStatusObservation(transitionOfCareAmbulatorySummary, diagnostics, context);
-    if (result || diagnostics != null) result &= validateSummaryOfCareRecord_validateSummaryOfCareRecordMu2consolPlanOfCareSectionCarePlanningForPlanOfCare(transitionOfCareAmbulatorySummary, diagnostics, context);
-    if (result || diagnostics != null) result &= validateSummaryOfCareRecord_validateSummaryOfCareRecordMu2consolPlanOfCareSectionPlanOfCareActivityObservation(transitionOfCareAmbulatorySummary, diagnostics, context);
     if (result || diagnostics != null) result &= validateSummaryOfCareRecord_validateSummaryOfCareRecordPlanOfCareSectionTemplateId(transitionOfCareAmbulatorySummary, diagnostics, context);
     if (result || diagnostics != null) result &= validateSummaryOfCareRecord_validateSummaryOfCareRecordAssessmentAndPlanSectionTemplateId(transitionOfCareAmbulatorySummary, diagnostics, context);
     if (result || diagnostics != null) result &= validateSummaryOfCareRecord_validateSummaryOfCareRecordAssessmentSectionTemplateId(transitionOfCareAmbulatorySummary, diagnostics, context);
@@ -3368,54 +3533,46 @@ public class Mu2consolValidator extends EObjectValidator {
     return result;
   }
 
-	/**
-	 * Validates the validateTransitionOfCareAmbulatorySummaryResponsibleParty
-	 * constraint of '<em>Transition Of Care Ambulatory Summary</em>'. <!--
-	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
-	 * @generated
-	 */
-	public boolean validateTransitionOfCareAmbulatorySummary_validateTransitionOfCareAmbulatorySummaryResponsibleParty(
-			TransitionOfCareAmbulatorySummary transitionOfCareAmbulatorySummary,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
+  /**
+   * Validates the validateTransitionOfCareAmbulatorySummaryResponsibleParty constraint of '<em>Transition Of Care Ambulatory Summary</em>'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validateTransitionOfCareAmbulatorySummary_validateTransitionOfCareAmbulatorySummaryResponsibleParty(TransitionOfCareAmbulatorySummary transitionOfCareAmbulatorySummary, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
     return transitionOfCareAmbulatorySummary.validateTransitionOfCareAmbulatorySummaryResponsibleParty(diagnostics, context);
   }
 
-	/**
-	 * Validates the
-	 * validateTransitionOfCareAmbulatorySummaryAmbulatoryEncounterDiagnoses
-	 * constraint of '<em>Transition Of Care Ambulatory Summary</em>'. <!--
-	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
-	 * @generated
-	 */
-	public boolean validateTransitionOfCareAmbulatorySummary_validateTransitionOfCareAmbulatorySummaryAmbulatoryEncounterDiagnoses(
-			TransitionOfCareAmbulatorySummary transitionOfCareAmbulatorySummary,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
+  /**
+   * Validates the validateTransitionOfCareAmbulatorySummaryAmbulatoryEncounterDiagnoses constraint of '<em>Transition Of Care Ambulatory Summary</em>'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validateTransitionOfCareAmbulatorySummary_validateTransitionOfCareAmbulatorySummaryAmbulatoryEncounterDiagnoses(TransitionOfCareAmbulatorySummary transitionOfCareAmbulatorySummary, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
     return transitionOfCareAmbulatorySummary.validateTransitionOfCareAmbulatorySummaryAmbulatoryEncounterDiagnoses(diagnostics, context);
   }
 
-	/**
-	 * Validates the
-	 * validateTransitionOfCareAmbulatorySummaryReasonForReferralSection
-	 * constraint of '<em>Transition Of Care Ambulatory Summary</em>'. <!--
-	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
-	 * @generated
-	 */
-	public boolean validateTransitionOfCareAmbulatorySummary_validateTransitionOfCareAmbulatorySummaryReasonForReferralSection(
-			TransitionOfCareAmbulatorySummary transitionOfCareAmbulatorySummary,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
+  /**
+   * Validates the validateTransitionOfCareAmbulatorySummaryReasonForReferralSection constraint of '<em>Transition Of Care Ambulatory Summary</em>'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validateTransitionOfCareAmbulatorySummary_validateTransitionOfCareAmbulatorySummaryReasonForReferralSection(TransitionOfCareAmbulatorySummary transitionOfCareAmbulatorySummary, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
     return transitionOfCareAmbulatorySummary.validateTransitionOfCareAmbulatorySummaryReasonForReferralSection(diagnostics, context);
   }
 
-	/**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
    * @generated
    */
-	public boolean validateTransitionOfCareInpatientSummary(
-			TransitionOfCareInpatientSummary transitionOfCareInpatientSummary,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
+  public boolean validateTransitionOfCareInpatientSummary(TransitionOfCareInpatientSummary transitionOfCareInpatientSummary, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
     if (!validate_NoCircularContainment(transitionOfCareInpatientSummary, diagnostics, context)) return false;
     boolean result = validate_EveryMultiplicityConforms(transitionOfCareInpatientSummary, diagnostics, context);
     if (result || diagnostics != null) result &= validate_EveryDataValueConforms(transitionOfCareInpatientSummary, diagnostics, context);
@@ -3693,9 +3850,6 @@ public class Mu2consolValidator extends EObjectValidator {
     if (result || diagnostics != null) result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsComponent1EncompassingEncounterEncounterParticipant(transitionOfCareInpatientSummary, diagnostics, context);
     if (result || diagnostics != null) result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsComponent1EncompassingEncounter(transitionOfCareInpatientSummary, diagnostics, context);
     if (result || diagnostics != null) result &= validateSummaryOfCareRecord_validateSummaryOfCareRecordCarePlanning(transitionOfCareInpatientSummary, diagnostics, context);
-    if (result || diagnostics != null) result &= validateSummaryOfCareRecord_validateSummaryOfCareRecordCognitiveStatusEntries(transitionOfCareInpatientSummary, diagnostics, context);
-    if (result || diagnostics != null) result &= validateSummaryOfCareRecord_validateSummaryOfCareRecordFunctionalStatusEntries(transitionOfCareInpatientSummary, diagnostics, context);
-    if (result || diagnostics != null) result &= validateSummaryOfCareRecord_validateSummaryOfCareRecordPlanOfCareSection(transitionOfCareInpatientSummary, diagnostics, context);
     if (result || diagnostics != null) result &= validateSummaryOfCareRecord_validateSummaryOfCareRecordProblemSection(transitionOfCareInpatientSummary, diagnostics, context);
     if (result || diagnostics != null) result &= validateSummaryOfCareRecord_validateSummaryOfCareRecordAllergiesSection(transitionOfCareInpatientSummary, diagnostics, context);
     if (result || diagnostics != null) result &= validateSummaryOfCareRecord_validateSummaryOfCareRecordImmunizationsSection(transitionOfCareInpatientSummary, diagnostics, context);
@@ -3704,10 +3858,9 @@ public class Mu2consolValidator extends EObjectValidator {
     if (result || diagnostics != null) result &= validateSummaryOfCareRecord_validateSummaryOfCareRecordResultsSection(transitionOfCareInpatientSummary, diagnostics, context);
     if (result || diagnostics != null) result &= validateSummaryOfCareRecord_validateSummaryOfCareRecordVitalSignsSection(transitionOfCareInpatientSummary, diagnostics, context);
     if (result || diagnostics != null) result &= validateSummaryOfCareRecord_validateSummaryOfCareRecordProceduresSection(transitionOfCareInpatientSummary, diagnostics, context);
+    if (result || diagnostics != null) result &= validateSummaryOfCareRecord_validateSummaryOfCareRecordFunctionalStatusSection(transitionOfCareInpatientSummary, diagnostics, context);
     if (result || diagnostics != null) result &= validateSummaryOfCareRecord_validateSummaryOfCareRecordSocialHistorySectionTemplateId(transitionOfCareInpatientSummary, diagnostics, context);
     if (result || diagnostics != null) result &= validateSummaryOfCareRecord_validateSummaryOfCareRecordMu2consolSocialHistorySectionSmokingStatusObservation(transitionOfCareInpatientSummary, diagnostics, context);
-    if (result || diagnostics != null) result &= validateSummaryOfCareRecord_validateSummaryOfCareRecordMu2consolPlanOfCareSectionCarePlanningForPlanOfCare(transitionOfCareInpatientSummary, diagnostics, context);
-    if (result || diagnostics != null) result &= validateSummaryOfCareRecord_validateSummaryOfCareRecordMu2consolPlanOfCareSectionPlanOfCareActivityObservation(transitionOfCareInpatientSummary, diagnostics, context);
     if (result || diagnostics != null) result &= validateSummaryOfCareRecord_validateSummaryOfCareRecordPlanOfCareSectionTemplateId(transitionOfCareInpatientSummary, diagnostics, context);
     if (result || diagnostics != null) result &= validateSummaryOfCareRecord_validateSummaryOfCareRecordAssessmentAndPlanSectionTemplateId(transitionOfCareInpatientSummary, diagnostics, context);
     if (result || diagnostics != null) result &= validateSummaryOfCareRecord_validateSummaryOfCareRecordAssessmentSectionTemplateId(transitionOfCareInpatientSummary, diagnostics, context);
@@ -3722,99 +3875,90 @@ public class Mu2consolValidator extends EObjectValidator {
     return result;
   }
 
-	/**
-	 * Validates the
-	 * validateTransitionOfCareInpatientSummaryInpatientEncounterDiagnoses
-	 * constraint of '<em>Transition Of Care Inpatient Summary</em>'. <!--
-	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
-	 * @generated
-	 */
-	public boolean validateTransitionOfCareInpatientSummary_validateTransitionOfCareInpatientSummaryInpatientEncounterDiagnoses(
-			TransitionOfCareInpatientSummary transitionOfCareInpatientSummary,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
+  /**
+   * Validates the validateTransitionOfCareInpatientSummaryInpatientEncounterDiagnoses constraint of '<em>Transition Of Care Inpatient Summary</em>'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validateTransitionOfCareInpatientSummary_validateTransitionOfCareInpatientSummaryInpatientEncounterDiagnoses(TransitionOfCareInpatientSummary transitionOfCareInpatientSummary, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
     return transitionOfCareInpatientSummary.validateTransitionOfCareInpatientSummaryInpatientEncounterDiagnoses(diagnostics, context);
   }
 
-	/**
-	 * Validates the
-	 * validateTransitionOfCareInpatientSummaryHospitalAdmissionDiagnosisEntry
-	 * constraint of '<em>Transition Of Care Inpatient Summary</em>'. <!--
-	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
-	 * @generated
-	 */
-	public boolean validateTransitionOfCareInpatientSummary_validateTransitionOfCareInpatientSummaryHospitalAdmissionDiagnosisEntry(
-			TransitionOfCareInpatientSummary transitionOfCareInpatientSummary,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
+  /**
+   * Validates the validateTransitionOfCareInpatientSummaryHospitalAdmissionDiagnosisEntry constraint of '<em>Transition Of Care Inpatient Summary</em>'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validateTransitionOfCareInpatientSummary_validateTransitionOfCareInpatientSummaryHospitalAdmissionDiagnosisEntry(TransitionOfCareInpatientSummary transitionOfCareInpatientSummary, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
     return transitionOfCareInpatientSummary.validateTransitionOfCareInpatientSummaryHospitalAdmissionDiagnosisEntry(diagnostics, context);
   }
 
-	/**
+  /**
    * Validates the validateTransitionOfCareInpatientSummaryHospitalDischargeDiagnosesEntry constraint of '<em>Transition Of Care Inpatient Summary</em>'.
    * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+   * <!-- end-user-doc -->
    * @generated
    */
-	public boolean validateTransitionOfCareInpatientSummary_validateTransitionOfCareInpatientSummaryHospitalDischargeDiagnosesEntry(TransitionOfCareInpatientSummary transitionOfCareInpatientSummary, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  public boolean validateTransitionOfCareInpatientSummary_validateTransitionOfCareInpatientSummaryHospitalDischargeDiagnosesEntry(TransitionOfCareInpatientSummary transitionOfCareInpatientSummary, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
     return transitionOfCareInpatientSummary.validateTransitionOfCareInpatientSummaryHospitalDischargeDiagnosesEntry(diagnostics, context);
   }
 
-	/**
+  /**
    * Validates the validateTransitionOfCareInpatientSummaryPostoperativeDiagnosisEntry constraint of '<em>Transition Of Care Inpatient Summary</em>'.
    * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+   * <!-- end-user-doc -->
    * @generated
    */
-	public boolean validateTransitionOfCareInpatientSummary_validateTransitionOfCareInpatientSummaryPostoperativeDiagnosisEntry(TransitionOfCareInpatientSummary transitionOfCareInpatientSummary, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  public boolean validateTransitionOfCareInpatientSummary_validateTransitionOfCareInpatientSummaryPostoperativeDiagnosisEntry(TransitionOfCareInpatientSummary transitionOfCareInpatientSummary, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
     return transitionOfCareInpatientSummary.validateTransitionOfCareInpatientSummaryPostoperativeDiagnosisEntry(diagnostics, context);
   }
 
-	/**
+  /**
    * Validates the validateTransitionOfCareInpatientSummaryPostprocedureDiagnosisEntry constraint of '<em>Transition Of Care Inpatient Summary</em>'.
    * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+   * <!-- end-user-doc -->
    * @generated
    */
-	public boolean validateTransitionOfCareInpatientSummary_validateTransitionOfCareInpatientSummaryPostprocedureDiagnosisEntry(TransitionOfCareInpatientSummary transitionOfCareInpatientSummary, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  public boolean validateTransitionOfCareInpatientSummary_validateTransitionOfCareInpatientSummaryPostprocedureDiagnosisEntry(TransitionOfCareInpatientSummary transitionOfCareInpatientSummary, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
     return transitionOfCareInpatientSummary.validateTransitionOfCareInpatientSummaryPostprocedureDiagnosisEntry(diagnostics, context);
   }
 
-	/**
-	 * Validates the
-	 * validateTransitionOfCareInpatientSummaryHospitalDischargeInstructionsSection
-	 * constraint of '<em>Transition Of Care Inpatient Summary</em>'. <!--
-	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
-	 * @generated
-	 */
-	public boolean validateTransitionOfCareInpatientSummary_validateTransitionOfCareInpatientSummaryHospitalDischargeInstructionsSection(
-			TransitionOfCareInpatientSummary transitionOfCareInpatientSummary,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
+  /**
+   * Validates the validateTransitionOfCareInpatientSummaryHospitalDischargeInstructionsSection constraint of '<em>Transition Of Care Inpatient Summary</em>'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validateTransitionOfCareInpatientSummary_validateTransitionOfCareInpatientSummaryHospitalDischargeInstructionsSection(TransitionOfCareInpatientSummary transitionOfCareInpatientSummary, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
     return transitionOfCareInpatientSummary.validateTransitionOfCareInpatientSummaryHospitalDischargeInstructionsSection(diagnostics, context);
   }
 
-	/**
-	 * Validates the
-	 * validateTransitionOfCareInpatientSummaryHospitalDischargeMedicationsSection
-	 * constraint of '<em>Transition Of Care Inpatient Summary</em>'. <!--
-	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
-	 * @generated
-	 */
-	public boolean validateTransitionOfCareInpatientSummary_validateTransitionOfCareInpatientSummaryHospitalDischargeMedicationsSection(
-			TransitionOfCareInpatientSummary transitionOfCareInpatientSummary,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
+  /**
+   * Validates the validateTransitionOfCareInpatientSummaryHospitalDischargeMedicationsSection constraint of '<em>Transition Of Care Inpatient Summary</em>'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validateTransitionOfCareInpatientSummary_validateTransitionOfCareInpatientSummaryHospitalDischargeMedicationsSection(TransitionOfCareInpatientSummary transitionOfCareInpatientSummary, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
     return transitionOfCareInpatientSummary.validateTransitionOfCareInpatientSummaryHospitalDischargeMedicationsSection(diagnostics, context);
   }
 
-	/**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
    * @generated
    */
-	public boolean validateViewDownloadTransmitSummary(
-			ViewDownloadTransmitSummary viewDownloadTransmitSummary,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
+  public boolean validateViewDownloadTransmitSummary(ViewDownloadTransmitSummary viewDownloadTransmitSummary, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
     if (!validate_NoCircularContainment(viewDownloadTransmitSummary, diagnostics, context)) return false;
     boolean result = validate_EveryMultiplicityConforms(viewDownloadTransmitSummary, diagnostics, context);
     if (result || diagnostics != null) result &= validate_EveryDataValueConforms(viewDownloadTransmitSummary, diagnostics, context);
@@ -4098,223 +4242,153 @@ public class Mu2consolValidator extends EObjectValidator {
     if (result || diagnostics != null) result &= validateViewDownloadTransmitSummary_validateViewDownloadTransmitSummaryProceduresSection(viewDownloadTransmitSummary, diagnostics, context);
     if (result || diagnostics != null) result &= validateViewDownloadTransmitSummary_validateViewDownloadTransmitSummaryVitalSignsSection(viewDownloadTransmitSummary, diagnostics, context);
     if (result || diagnostics != null) result &= validateViewDownloadTransmitSummary_validateViewDownloadTransmitSummaryResultsSection(viewDownloadTransmitSummary, diagnostics, context);
-    if (result || diagnostics != null) result &= validateViewDownloadTransmitSummary_validateViewDownloadTransmitSummaryPlanOfCareSection(viewDownloadTransmitSummary, diagnostics, context);
     if (result || diagnostics != null) result &= validateViewDownloadTransmitSummary_validateViewDownloadTransmitSummarySocialHistorySection(viewDownloadTransmitSummary, diagnostics, context);
     if (result || diagnostics != null) result &= validateViewDownloadTransmitSummary_validateViewDownloadTransmitSummaryAssessmentAndPlanSectionTemplateId(viewDownloadTransmitSummary, diagnostics, context);
-    if (result || diagnostics != null) result &= validateViewDownloadTransmitSummary_validateViewDownloadTransmitSummaryMu2consolPlanOfCareSectionCarePlanningForPlanOfCare(viewDownloadTransmitSummary, diagnostics, context);
-    if (result || diagnostics != null) result &= validateViewDownloadTransmitSummary_validateViewDownloadTransmitSummaryMu2consolPlanOfCareSectionPlanOfCareActivityObservation(viewDownloadTransmitSummary, diagnostics, context);
     if (result || diagnostics != null) result &= validateViewDownloadTransmitSummary_validateViewDownloadTransmitSummaryPlanOfCareSectionTemplateId(viewDownloadTransmitSummary, diagnostics, context);
     if (result || diagnostics != null) result &= validateViewDownloadTransmitSummary_validateViewDownloadTransmitSummarySocialHistorySectionTemplateId(viewDownloadTransmitSummary, diagnostics, context);
     if (result || diagnostics != null) result &= validateViewDownloadTransmitSummary_validateViewDownloadTransmitSummaryMu2consolSocialHistorySectionSmokingStatusObservation(viewDownloadTransmitSummary, diagnostics, context);
     return result;
   }
 
-	/**
-	 * Validates the validateViewDownloadTransmitSummaryCarePlanFields
-	 * constraint of '<em>View Download Transmit Summary</em>'. <!--
-	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
-	 * @generated
-	 */
-	public boolean validateViewDownloadTransmitSummary_validateViewDownloadTransmitSummaryCarePlanFields(
-			ViewDownloadTransmitSummary viewDownloadTransmitSummary,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
+  /**
+   * Validates the validateViewDownloadTransmitSummaryCarePlanFields constraint of '<em>View Download Transmit Summary</em>'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validateViewDownloadTransmitSummary_validateViewDownloadTransmitSummaryCarePlanFields(ViewDownloadTransmitSummary viewDownloadTransmitSummary, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
     return viewDownloadTransmitSummary.validateViewDownloadTransmitSummaryCarePlanFields(diagnostics, context);
   }
 
-	/**
-	 * Validates the validateViewDownloadTransmitSummaryAllergiesSection
-	 * constraint of '<em>View Download Transmit Summary</em>'. <!--
-	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
-	 * @generated
-	 */
-	public boolean validateViewDownloadTransmitSummary_validateViewDownloadTransmitSummaryAllergiesSection(
-			ViewDownloadTransmitSummary viewDownloadTransmitSummary,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
+  /**
+   * Validates the validateViewDownloadTransmitSummaryAllergiesSection constraint of '<em>View Download Transmit Summary</em>'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validateViewDownloadTransmitSummary_validateViewDownloadTransmitSummaryAllergiesSection(ViewDownloadTransmitSummary viewDownloadTransmitSummary, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
     return viewDownloadTransmitSummary.validateViewDownloadTransmitSummaryAllergiesSection(diagnostics, context);
   }
 
-	/**
-	 * Validates the validateViewDownloadTransmitSummaryMedicationsSection
-	 * constraint of '<em>View Download Transmit Summary</em>'. <!--
-	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
-	 * @generated
-	 */
-	public boolean validateViewDownloadTransmitSummary_validateViewDownloadTransmitSummaryMedicationsSection(
-			ViewDownloadTransmitSummary viewDownloadTransmitSummary,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
+  /**
+   * Validates the validateViewDownloadTransmitSummaryMedicationsSection constraint of '<em>View Download Transmit Summary</em>'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validateViewDownloadTransmitSummary_validateViewDownloadTransmitSummaryMedicationsSection(ViewDownloadTransmitSummary viewDownloadTransmitSummary, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
     return viewDownloadTransmitSummary.validateViewDownloadTransmitSummaryMedicationsSection(diagnostics, context);
   }
 
-	/**
-	 * Validates the validateViewDownloadTransmitSummaryProblemSection
-	 * constraint of '<em>View Download Transmit Summary</em>'. <!--
-	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
-	 * @generated
-	 */
-	public boolean validateViewDownloadTransmitSummary_validateViewDownloadTransmitSummaryProblemSection(
-			ViewDownloadTransmitSummary viewDownloadTransmitSummary,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
+  /**
+   * Validates the validateViewDownloadTransmitSummaryProblemSection constraint of '<em>View Download Transmit Summary</em>'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validateViewDownloadTransmitSummary_validateViewDownloadTransmitSummaryProblemSection(ViewDownloadTransmitSummary viewDownloadTransmitSummary, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
     return viewDownloadTransmitSummary.validateViewDownloadTransmitSummaryProblemSection(diagnostics, context);
   }
 
-	/**
-	 * Validates the validateViewDownloadTransmitSummaryProceduresSection
-	 * constraint of '<em>View Download Transmit Summary</em>'. <!--
-	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
-	 * @generated
-	 */
-	public boolean validateViewDownloadTransmitSummary_validateViewDownloadTransmitSummaryProceduresSection(
-			ViewDownloadTransmitSummary viewDownloadTransmitSummary,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
+  /**
+   * Validates the validateViewDownloadTransmitSummaryProceduresSection constraint of '<em>View Download Transmit Summary</em>'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validateViewDownloadTransmitSummary_validateViewDownloadTransmitSummaryProceduresSection(ViewDownloadTransmitSummary viewDownloadTransmitSummary, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
     return viewDownloadTransmitSummary.validateViewDownloadTransmitSummaryProceduresSection(diagnostics, context);
   }
 
-	/**
-	 * Validates the validateViewDownloadTransmitSummaryVitalSignsSection
-	 * constraint of '<em>View Download Transmit Summary</em>'. <!--
-	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
-	 * @generated
-	 */
-	public boolean validateViewDownloadTransmitSummary_validateViewDownloadTransmitSummaryVitalSignsSection(
-			ViewDownloadTransmitSummary viewDownloadTransmitSummary,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
+  /**
+   * Validates the validateViewDownloadTransmitSummaryVitalSignsSection constraint of '<em>View Download Transmit Summary</em>'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validateViewDownloadTransmitSummary_validateViewDownloadTransmitSummaryVitalSignsSection(ViewDownloadTransmitSummary viewDownloadTransmitSummary, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
     return viewDownloadTransmitSummary.validateViewDownloadTransmitSummaryVitalSignsSection(diagnostics, context);
   }
 
-	/**
-	 * Validates the validateViewDownloadTransmitSummaryResultsSection
-	 * constraint of '<em>View Download Transmit Summary</em>'. <!--
-	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
-	 * @generated
-	 */
-	public boolean validateViewDownloadTransmitSummary_validateViewDownloadTransmitSummaryResultsSection(
-			ViewDownloadTransmitSummary viewDownloadTransmitSummary,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
+  /**
+   * Validates the validateViewDownloadTransmitSummaryResultsSection constraint of '<em>View Download Transmit Summary</em>'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validateViewDownloadTransmitSummary_validateViewDownloadTransmitSummaryResultsSection(ViewDownloadTransmitSummary viewDownloadTransmitSummary, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
     return viewDownloadTransmitSummary.validateViewDownloadTransmitSummaryResultsSection(diagnostics, context);
   }
 
-	/**
-	 * Validates the validateViewDownloadTransmitSummaryPlanOfCareSection
-	 * constraint of '<em>View Download Transmit Summary</em>'. <!--
-	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
-	 * @generated
-	 */
-	public boolean validateViewDownloadTransmitSummary_validateViewDownloadTransmitSummaryPlanOfCareSection(
-			ViewDownloadTransmitSummary viewDownloadTransmitSummary,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return viewDownloadTransmitSummary.validateViewDownloadTransmitSummaryPlanOfCareSection(diagnostics, context);
-  }
-
-	/**
-	 * Validates the validateViewDownloadTransmitSummarySocialHistorySection
-	 * constraint of '<em>View Download Transmit Summary</em>'. <!--
-	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
-	 * @generated
-	 */
-	public boolean validateViewDownloadTransmitSummary_validateViewDownloadTransmitSummarySocialHistorySection(
-			ViewDownloadTransmitSummary viewDownloadTransmitSummary,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
+  /**
+   * Validates the validateViewDownloadTransmitSummarySocialHistorySection constraint of '<em>View Download Transmit Summary</em>'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validateViewDownloadTransmitSummary_validateViewDownloadTransmitSummarySocialHistorySection(ViewDownloadTransmitSummary viewDownloadTransmitSummary, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
     return viewDownloadTransmitSummary.validateViewDownloadTransmitSummarySocialHistorySection(diagnostics, context);
   }
 
-	/**
-	 * Validates the
-	 * validateViewDownloadTransmitSummaryAssessmentAndPlanSectionTemplateId
-	 * constraint of '<em>View Download Transmit Summary</em>'. <!--
-	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
-	 * @generated
-	 */
-	public boolean validateViewDownloadTransmitSummary_validateViewDownloadTransmitSummaryAssessmentAndPlanSectionTemplateId(
-			ViewDownloadTransmitSummary viewDownloadTransmitSummary,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
+  /**
+   * Validates the validateViewDownloadTransmitSummaryAssessmentAndPlanSectionTemplateId constraint of '<em>View Download Transmit Summary</em>'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validateViewDownloadTransmitSummary_validateViewDownloadTransmitSummaryAssessmentAndPlanSectionTemplateId(ViewDownloadTransmitSummary viewDownloadTransmitSummary, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
     return viewDownloadTransmitSummary.validateViewDownloadTransmitSummaryAssessmentAndPlanSectionTemplateId(diagnostics, context);
   }
 
-	/**
-	 * Validates the
-	 * validateViewDownloadTransmitSummaryMu2consolPlanOfCareSectionCarePlanningForPlanOfCare
-	 * constraint of '<em>View Download Transmit Summary</em>'. <!--
-	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
-	 * @generated
-	 */
-	public boolean validateViewDownloadTransmitSummary_validateViewDownloadTransmitSummaryMu2consolPlanOfCareSectionCarePlanningForPlanOfCare(
-			ViewDownloadTransmitSummary viewDownloadTransmitSummary,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return viewDownloadTransmitSummary.validateViewDownloadTransmitSummaryMu2consolPlanOfCareSectionCarePlanningForPlanOfCare(diagnostics, context);
-  }
-
-	/**
-	 * Validates the
-	 * validateViewDownloadTransmitSummaryMu2consolPlanOfCareSectionPlanOfCareActivityObservation
-	 * constraint of '<em>View Download Transmit Summary</em>'. <!--
-	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
-	 * @generated
-	 */
-	public boolean validateViewDownloadTransmitSummary_validateViewDownloadTransmitSummaryMu2consolPlanOfCareSectionPlanOfCareActivityObservation(
-			ViewDownloadTransmitSummary viewDownloadTransmitSummary,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return viewDownloadTransmitSummary.validateViewDownloadTransmitSummaryMu2consolPlanOfCareSectionPlanOfCareActivityObservation(diagnostics, context);
-  }
-
-	/**
+  /**
    * Validates the validateViewDownloadTransmitSummaryPlanOfCareSectionTemplateId constraint of '<em>View Download Transmit Summary</em>'.
    * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+   * <!-- end-user-doc -->
    * @generated
    */
-	public boolean validateViewDownloadTransmitSummary_validateViewDownloadTransmitSummaryPlanOfCareSectionTemplateId(
-			ViewDownloadTransmitSummary viewDownloadTransmitSummary,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
+  public boolean validateViewDownloadTransmitSummary_validateViewDownloadTransmitSummaryPlanOfCareSectionTemplateId(ViewDownloadTransmitSummary viewDownloadTransmitSummary, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
     return viewDownloadTransmitSummary.validateViewDownloadTransmitSummaryPlanOfCareSectionTemplateId(diagnostics, context);
   }
 
-	/**
-	 * Validates the
-	 * validateViewDownloadTransmitSummarySocialHistorySectionTemplateId
-	 * constraint of '<em>View Download Transmit Summary</em>'. <!--
-	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
-	 * @generated
-	 */
-	public boolean validateViewDownloadTransmitSummary_validateViewDownloadTransmitSummarySocialHistorySectionTemplateId(
-			ViewDownloadTransmitSummary viewDownloadTransmitSummary,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
+  /**
+   * Validates the validateViewDownloadTransmitSummarySocialHistorySectionTemplateId constraint of '<em>View Download Transmit Summary</em>'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validateViewDownloadTransmitSummary_validateViewDownloadTransmitSummarySocialHistorySectionTemplateId(ViewDownloadTransmitSummary viewDownloadTransmitSummary, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
     return viewDownloadTransmitSummary.validateViewDownloadTransmitSummarySocialHistorySectionTemplateId(diagnostics, context);
   }
 
-	/**
-	 * Validates the
-	 * validateViewDownloadTransmitSummaryMu2consolSocialHistorySectionSmokingStatusObservation
-	 * constraint of '<em>View Download Transmit Summary</em>'. <!--
-	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
-	 * @generated
-	 */
-	public boolean validateViewDownloadTransmitSummary_validateViewDownloadTransmitSummaryMu2consolSocialHistorySectionSmokingStatusObservation(
-			ViewDownloadTransmitSummary viewDownloadTransmitSummary,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
+  /**
+   * Validates the validateViewDownloadTransmitSummaryMu2consolSocialHistorySectionSmokingStatusObservation constraint of '<em>View Download Transmit Summary</em>'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validateViewDownloadTransmitSummary_validateViewDownloadTransmitSummaryMu2consolSocialHistorySectionSmokingStatusObservation(ViewDownloadTransmitSummary viewDownloadTransmitSummary, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
     return viewDownloadTransmitSummary.validateViewDownloadTransmitSummaryMu2consolSocialHistorySectionSmokingStatusObservation(diagnostics, context);
   }
 
-	/**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
    * @generated
    */
-	public boolean validateVDTInpatientSummary(
-			VDTInpatientSummary vdtInpatientSummary,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
+  public boolean validateVDTInpatientSummary(VDTInpatientSummary vdtInpatientSummary, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
     if (!validate_NoCircularContainment(vdtInpatientSummary, diagnostics, context)) return false;
     boolean result = validate_EveryMultiplicityConforms(vdtInpatientSummary, diagnostics, context);
     if (result || diagnostics != null) result &= validate_EveryDataValueConforms(vdtInpatientSummary, diagnostics, context);
@@ -4598,11 +4672,8 @@ public class Mu2consolValidator extends EObjectValidator {
     if (result || diagnostics != null) result &= validateViewDownloadTransmitSummary_validateViewDownloadTransmitSummaryProceduresSection(vdtInpatientSummary, diagnostics, context);
     if (result || diagnostics != null) result &= validateViewDownloadTransmitSummary_validateViewDownloadTransmitSummaryVitalSignsSection(vdtInpatientSummary, diagnostics, context);
     if (result || diagnostics != null) result &= validateViewDownloadTransmitSummary_validateViewDownloadTransmitSummaryResultsSection(vdtInpatientSummary, diagnostics, context);
-    if (result || diagnostics != null) result &= validateViewDownloadTransmitSummary_validateViewDownloadTransmitSummaryPlanOfCareSection(vdtInpatientSummary, diagnostics, context);
     if (result || diagnostics != null) result &= validateViewDownloadTransmitSummary_validateViewDownloadTransmitSummarySocialHistorySection(vdtInpatientSummary, diagnostics, context);
     if (result || diagnostics != null) result &= validateViewDownloadTransmitSummary_validateViewDownloadTransmitSummaryAssessmentAndPlanSectionTemplateId(vdtInpatientSummary, diagnostics, context);
-    if (result || diagnostics != null) result &= validateViewDownloadTransmitSummary_validateViewDownloadTransmitSummaryMu2consolPlanOfCareSectionCarePlanningForPlanOfCare(vdtInpatientSummary, diagnostics, context);
-    if (result || diagnostics != null) result &= validateViewDownloadTransmitSummary_validateViewDownloadTransmitSummaryMu2consolPlanOfCareSectionPlanOfCareActivityObservation(vdtInpatientSummary, diagnostics, context);
     if (result || diagnostics != null) result &= validateViewDownloadTransmitSummary_validateViewDownloadTransmitSummaryPlanOfCareSectionTemplateId(vdtInpatientSummary, diagnostics, context);
     if (result || diagnostics != null) result &= validateViewDownloadTransmitSummary_validateViewDownloadTransmitSummarySocialHistorySectionTemplateId(vdtInpatientSummary, diagnostics, context);
     if (result || diagnostics != null) result &= validateViewDownloadTransmitSummary_validateViewDownloadTransmitSummaryMu2consolSocialHistorySectionSmokingStatusObservation(vdtInpatientSummary, diagnostics, context);
@@ -4617,107 +4688,101 @@ public class Mu2consolValidator extends EObjectValidator {
     return result;
   }
 
-	/**
+  /**
    * Validates the validateVDTInpatientSummaryEffectiveTime constraint of '<em>VDT Inpatient Summary</em>'.
-   * <!-- begin-user-doc --> <!--
-	 * end-user-doc -->
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
    * @generated
    */
-	public boolean validateVDTInpatientSummary_validateVDTInpatientSummaryEffectiveTime(
-			VDTInpatientSummary vdtInpatientSummary,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
+  public boolean validateVDTInpatientSummary_validateVDTInpatientSummaryEffectiveTime(VDTInpatientSummary vdtInpatientSummary, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
     return vdtInpatientSummary.validateVDTInpatientSummaryEffectiveTime(diagnostics, context);
   }
 
-	/**
+  /**
    * Validates the validateVDTInpatientSummaryLocation constraint of '<em>VDT Inpatient Summary</em>'.
-   * <!-- begin-user-doc --> <!--
-	 * end-user-doc -->
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
    * @generated
    */
-	public boolean validateVDTInpatientSummary_validateVDTInpatientSummaryLocation(
-			VDTInpatientSummary vdtInpatientSummary,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
+  public boolean validateVDTInpatientSummary_validateVDTInpatientSummaryLocation(VDTInpatientSummary vdtInpatientSummary, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
     return vdtInpatientSummary.validateVDTInpatientSummaryLocation(diagnostics, context);
   }
 
-	/**
+  /**
    * Validates the validateVDTInpatientSummaryChiefComplaintOrReasonForVisit constraint of '<em>VDT Inpatient Summary</em>'.
    * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+   * <!-- end-user-doc -->
    * @generated
    */
-	public boolean validateVDTInpatientSummary_validateVDTInpatientSummaryChiefComplaintOrReasonForVisit(
-			VDTInpatientSummary vdtInpatientSummary,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
+  public boolean validateVDTInpatientSummary_validateVDTInpatientSummaryChiefComplaintOrReasonForVisit(VDTInpatientSummary vdtInpatientSummary, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
     return vdtInpatientSummary.validateVDTInpatientSummaryChiefComplaintOrReasonForVisit(diagnostics, context);
   }
 
-	/**
+  /**
    * Validates the validateVDTInpatientSummaryHospitalAdmissionDiagnosisEntry constraint of '<em>VDT Inpatient Summary</em>'.
    * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+   * <!-- end-user-doc -->
    * @generated
    */
-	public boolean validateVDTInpatientSummary_validateVDTInpatientSummaryHospitalAdmissionDiagnosisEntry(
-			VDTInpatientSummary vdtInpatientSummary,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
+  public boolean validateVDTInpatientSummary_validateVDTInpatientSummaryHospitalAdmissionDiagnosisEntry(VDTInpatientSummary vdtInpatientSummary, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
     return vdtInpatientSummary.validateVDTInpatientSummaryHospitalAdmissionDiagnosisEntry(diagnostics, context);
   }
 
-	/**
+  /**
    * Validates the validateVDTInpatientSummaryPreoperativeDiagnosisEntry constraint of '<em>VDT Inpatient Summary</em>'.
    * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+   * <!-- end-user-doc -->
    * @generated
    */
-	public boolean validateVDTInpatientSummary_validateVDTInpatientSummaryPreoperativeDiagnosisEntry(VDTInpatientSummary vdtInpatientSummary, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  public boolean validateVDTInpatientSummary_validateVDTInpatientSummaryPreoperativeDiagnosisEntry(VDTInpatientSummary vdtInpatientSummary, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
     return vdtInpatientSummary.validateVDTInpatientSummaryPreoperativeDiagnosisEntry(diagnostics, context);
   }
 
-	/**
+  /**
    * Validates the validateVDTInpatientSummaryHospitalDischargeInstructionsSection constraint of '<em>VDT Inpatient Summary</em>'.
    * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+   * <!-- end-user-doc -->
    * @generated
    */
-	public boolean validateVDTInpatientSummary_validateVDTInpatientSummaryHospitalDischargeInstructionsSection(
-			VDTInpatientSummary vdtInpatientSummary,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
+  public boolean validateVDTInpatientSummary_validateVDTInpatientSummaryHospitalDischargeInstructionsSection(VDTInpatientSummary vdtInpatientSummary, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
     return vdtInpatientSummary.validateVDTInpatientSummaryHospitalDischargeInstructionsSection(diagnostics, context);
   }
 
-	/**
+  /**
    * Validates the validateVDTInpatientSummaryHospitalAdmissionDiagnosisSection constraint of '<em>VDT Inpatient Summary</em>'.
-   * <!-- begin-user-doc --> <!--
-	 * end-user-doc -->
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
    * @generated
    */
-	public boolean validateVDTInpatientSummary_validateVDTInpatientSummaryHospitalAdmissionDiagnosisSection(
-			VDTInpatientSummary vdtInpatientSummary,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
+  public boolean validateVDTInpatientSummary_validateVDTInpatientSummaryHospitalAdmissionDiagnosisSection(VDTInpatientSummary vdtInpatientSummary, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
     return vdtInpatientSummary.validateVDTInpatientSummaryHospitalAdmissionDiagnosisSection(diagnostics, context);
   }
 
-	/**
+  /**
    * Validates the validateVDTInpatientSummaryHospitalDischargeMedicationsSection constraint of '<em>VDT Inpatient Summary</em>'.
-   * <!-- begin-user-doc --> <!--
-	 * end-user-doc -->
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
    * @generated
    */
-	public boolean validateVDTInpatientSummary_validateVDTInpatientSummaryHospitalDischargeMedicationsSection(
-			VDTInpatientSummary vdtInpatientSummary,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
+  public boolean validateVDTInpatientSummary_validateVDTInpatientSummaryHospitalDischargeMedicationsSection(VDTInpatientSummary vdtInpatientSummary, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
     return vdtInpatientSummary.validateVDTInpatientSummaryHospitalDischargeMedicationsSection(diagnostics, context);
   }
 
-	/**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
    * @generated
    */
-	public boolean validateVDTAmbulatorySummary(
-			VDTAmbulatorySummary vdtAmbulatorySummary,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
+  public boolean validateVDTAmbulatorySummary(VDTAmbulatorySummary vdtAmbulatorySummary, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
     if (!validate_NoCircularContainment(vdtAmbulatorySummary, diagnostics, context)) return false;
     boolean result = validate_EveryMultiplicityConforms(vdtAmbulatorySummary, diagnostics, context);
     if (result || diagnostics != null) result &= validate_EveryDataValueConforms(vdtAmbulatorySummary, diagnostics, context);
@@ -5001,11 +5066,8 @@ public class Mu2consolValidator extends EObjectValidator {
     if (result || diagnostics != null) result &= validateViewDownloadTransmitSummary_validateViewDownloadTransmitSummaryProceduresSection(vdtAmbulatorySummary, diagnostics, context);
     if (result || diagnostics != null) result &= validateViewDownloadTransmitSummary_validateViewDownloadTransmitSummaryVitalSignsSection(vdtAmbulatorySummary, diagnostics, context);
     if (result || diagnostics != null) result &= validateViewDownloadTransmitSummary_validateViewDownloadTransmitSummaryResultsSection(vdtAmbulatorySummary, diagnostics, context);
-    if (result || diagnostics != null) result &= validateViewDownloadTransmitSummary_validateViewDownloadTransmitSummaryPlanOfCareSection(vdtAmbulatorySummary, diagnostics, context);
     if (result || diagnostics != null) result &= validateViewDownloadTransmitSummary_validateViewDownloadTransmitSummarySocialHistorySection(vdtAmbulatorySummary, diagnostics, context);
     if (result || diagnostics != null) result &= validateViewDownloadTransmitSummary_validateViewDownloadTransmitSummaryAssessmentAndPlanSectionTemplateId(vdtAmbulatorySummary, diagnostics, context);
-    if (result || diagnostics != null) result &= validateViewDownloadTransmitSummary_validateViewDownloadTransmitSummaryMu2consolPlanOfCareSectionCarePlanningForPlanOfCare(vdtAmbulatorySummary, diagnostics, context);
-    if (result || diagnostics != null) result &= validateViewDownloadTransmitSummary_validateViewDownloadTransmitSummaryMu2consolPlanOfCareSectionPlanOfCareActivityObservation(vdtAmbulatorySummary, diagnostics, context);
     if (result || diagnostics != null) result &= validateViewDownloadTransmitSummary_validateViewDownloadTransmitSummaryPlanOfCareSectionTemplateId(vdtAmbulatorySummary, diagnostics, context);
     if (result || diagnostics != null) result &= validateViewDownloadTransmitSummary_validateViewDownloadTransmitSummarySocialHistorySectionTemplateId(vdtAmbulatorySummary, diagnostics, context);
     if (result || diagnostics != null) result &= validateViewDownloadTransmitSummary_validateViewDownloadTransmitSummaryMu2consolSocialHistorySectionSmokingStatusObservation(vdtAmbulatorySummary, diagnostics, context);
@@ -5013,547 +5075,27 @@ public class Mu2consolValidator extends EObjectValidator {
     return result;
   }
 
-	/**
+  /**
    * Validates the validateVDTAmbulatorySummaryResponsibleParty constraint of '<em>VDT Ambulatory Summary</em>'.
-   * <!-- begin-user-doc --> <!--
-	 * end-user-doc -->
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
    * @generated
    */
-	public boolean validateVDTAmbulatorySummary_validateVDTAmbulatorySummaryResponsibleParty(
-			VDTAmbulatorySummary vdtAmbulatorySummary,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
+  public boolean validateVDTAmbulatorySummary_validateVDTAmbulatorySummaryResponsibleParty(VDTAmbulatorySummary vdtAmbulatorySummary, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
     return vdtAmbulatorySummary.validateVDTAmbulatorySummaryResponsibleParty(diagnostics, context);
   }
 
-	/**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * @generated
-   */
-	public boolean validateResultObservation(
-			ResultObservation resultObservation, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-    if (!validate_NoCircularContainment(resultObservation, diagnostics, context)) return false;
-    boolean result = validate_EveryMultiplicityConforms(resultObservation, diagnostics, context);
-    if (result || diagnostics != null) result &= validate_EveryDataValueConforms(resultObservation, diagnostics, context);
-    if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(resultObservation, diagnostics, context);
-    if (result || diagnostics != null) result &= validate_EveryProxyResolves(resultObservation, diagnostics, context);
-    if (result || diagnostics != null) result &= validate_UniqueID(resultObservation, diagnostics, context);
-    if (result || diagnostics != null) result &= validate_EveryKeyUnique(resultObservation, diagnostics, context);
-    if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(resultObservation, diagnostics, context);
-    if (result || diagnostics != null) result &= consolValidator.validateResultObservation_validateResultObservationTextReference(resultObservation, diagnostics, context);
-    if (result || diagnostics != null) result &= consolValidator.validateResultObservation_validateResultObservationReferenceValue(resultObservation, diagnostics, context);
-    if (result || diagnostics != null) result &= consolValidator.validateResultObservation_validateResultObservationTextReferenceValue(resultObservation, diagnostics, context);
-    if (result || diagnostics != null) result &= consolValidator.validateResultObservation_validateResultObservationCodeValue(resultObservation, diagnostics, context);
-    if (result || diagnostics != null) result &= consolValidator.validateResultObservation_validateResultObservationNoObservationRangeCode(resultObservation, diagnostics, context);
-    if (result || diagnostics != null) result &= consolValidator.validateResultObservation_validateResultObservationAuthorMultiplicity(resultObservation, diagnostics, context);
-    if (result || diagnostics != null) result &= validateResultObservation_validateResultObservationTemplateId(resultObservation, diagnostics, context);
-    if (result || diagnostics != null) result &= consolValidator.validateResultObservation_validateResultObservationClassCode(resultObservation, diagnostics, context);
-    if (result || diagnostics != null) result &= consolValidator.validateResultObservation_validateResultObservationMoodCode(resultObservation, diagnostics, context);
-    if (result || diagnostics != null) result &= consolValidator.validateResultObservation_validateResultObservationId(resultObservation, diagnostics, context);
-    if (result || diagnostics != null) result &= consolValidator.validateResultObservation_validateResultObservationCode(resultObservation, diagnostics, context);
-    if (result || diagnostics != null) result &= consolValidator.validateResultObservation_validateResultObservationText(resultObservation, diagnostics, context);
-    if (result || diagnostics != null) result &= consolValidator.validateResultObservation_validateResultObservationStatusCode(resultObservation, diagnostics, context);
-    if (result || diagnostics != null) result &= consolValidator.validateResultObservation_validateResultObservationStatusCodeP(resultObservation, diagnostics, context);
-    if (result || diagnostics != null) result &= consolValidator.validateResultObservation_validateResultObservationEffectiveTime(resultObservation, diagnostics, context);
-    if (result || diagnostics != null) result &= consolValidator.validateResultObservation_validateResultObservationValue(resultObservation, diagnostics, context);
-    if (result || diagnostics != null) result &= consolValidator.validateResultObservation_validateResultObservationInterpretationCode(resultObservation, diagnostics, context);
-    if (result || diagnostics != null) result &= consolValidator.validateResultObservation_validateResultObservationMethodCode(resultObservation, diagnostics, context);
-    if (result || diagnostics != null) result &= consolValidator.validateResultObservation_validateResultObservationTargetSiteCode(resultObservation, diagnostics, context);
-    if (result || diagnostics != null) result &= validateResultObservation_validateMu2consolResultObservationResultObservationCodeValue(resultObservation, diagnostics, context);
-    if (result || diagnostics != null) result &= validateResultObservation_validateMu2consolResultObservationCode(resultObservation, diagnostics, context);
-    return result;
-  }
-
-	/**
-   * Validates the validateMu2consolResultObservationResultObservationCodeValue constraint of '<em>Result Observation</em>'.
-   * <!-- begin-user-doc --> <!--
-	 * end-user-doc -->
-   * @generated
-   */
-	public boolean validateResultObservation_validateMu2consolResultObservationResultObservationCodeValue(
-			ResultObservation resultObservation, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-    return resultObservation.validateMu2consolResultObservationResultObservationCodeValue(diagnostics, context);
-  }
-
-	/**
-	 * Validates the validateMu2consolResultObservationCode constraint of '
-	 * <em>Result Observation</em>'. <!-- begin-user-doc --> <!-- end-user-doc
-	 * -->
-	 * 
-	 * @generated
-	 */
-	public boolean validateResultObservation_validateMu2consolResultObservationCode(
-			ResultObservation resultObservation, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-    return resultObservation.validateMu2consolResultObservationCode(diagnostics, context);
-  }
-
-	/**
-	 * Validates the validateResultObservationTemplateId constraint of '
-	 * <em>Result Observation</em>'. <!-- begin-user-doc --> <!-- end-user-doc
-	 * -->
-	 * 
-	 * @generated
-	 */
-	public boolean validateResultObservation_validateResultObservationTemplateId(
-			ResultObservation resultObservation, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-    return resultObservation.validateResultObservationTemplateId(diagnostics, context);
-  }
-
-	/**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * @generated
-   */
-	public boolean validateProceduresSection(
-			ProceduresSection proceduresSection, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-    if (!validate_NoCircularContainment(proceduresSection, diagnostics, context)) return false;
-    boolean result = validate_EveryMultiplicityConforms(proceduresSection, diagnostics, context);
-    if (result || diagnostics != null) result &= validate_EveryDataValueConforms(proceduresSection, diagnostics, context);
-    if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(proceduresSection, diagnostics, context);
-    if (result || diagnostics != null) result &= validate_EveryProxyResolves(proceduresSection, diagnostics, context);
-    if (result || diagnostics != null) result &= validate_UniqueID(proceduresSection, diagnostics, context);
-    if (result || diagnostics != null) result &= validate_EveryKeyUnique(proceduresSection, diagnostics, context);
-    if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(proceduresSection, diagnostics, context);
-    if (result || diagnostics != null) result &= cdaValidator.validateSection_validateClassCode(proceduresSection, diagnostics, context);
-    if (result || diagnostics != null) result &= cdaValidator.validateSection_validateMoodCode(proceduresSection, diagnostics, context);
-    if (result || diagnostics != null) result &= validateProceduresSection_validateProceduresSectionEntriesOptionalTemplateId(proceduresSection, diagnostics, context);
-    if (result || diagnostics != null) result &= consolValidator.validateProceduresSectionEntriesOptional_validateProceduresSectionEntriesOptionalCode(proceduresSection, diagnostics, context);
-    if (result || diagnostics != null) result &= consolValidator.validateProceduresSectionEntriesOptional_validateProceduresSectionEntriesOptionalCodeP(proceduresSection, diagnostics, context);
-    if (result || diagnostics != null) result &= consolValidator.validateProceduresSectionEntriesOptional_validateProceduresSectionEntriesOptionalTitle(proceduresSection, diagnostics, context);
-    if (result || diagnostics != null) result &= consolValidator.validateProceduresSectionEntriesOptional_validateProceduresSectionEntriesOptionalText(proceduresSection, diagnostics, context);
-    if (result || diagnostics != null) result &= consolValidator.validateProceduresSectionEntriesOptional_validateProceduresSectionEntriesOptionalProcedureActivityProcedure(proceduresSection, diagnostics, context);
-    if (result || diagnostics != null) result &= consolValidator.validateProceduresSectionEntriesOptional_validateProceduresSectionEntriesOptionalProcedureAcivityObservation(proceduresSection, diagnostics, context);
-    if (result || diagnostics != null) result &= consolValidator.validateProceduresSectionEntriesOptional_validateProceduresSectionEntriesOptionalProcedureActivityAct(proceduresSection, diagnostics, context);
-    if (result || diagnostics != null) result &= consolValidator.validateProceduresSection_validateProceduresSectionHasProcedureActivity(proceduresSection, diagnostics, context);
-    if (result || diagnostics != null) result &= consolValidator.validateProceduresSection_validateProceduresSectionTitle(proceduresSection, diagnostics, context);
-    if (result || diagnostics != null) result &= consolValidator.validateProceduresSection_validateProceduresSectionCodeP(proceduresSection, diagnostics, context);
-    if (result || diagnostics != null) result &= consolValidator.validateProceduresSection_validateProceduresSectionCode(proceduresSection, diagnostics, context);
-    if (result || diagnostics != null) result &= consolValidator.validateProceduresSection_validateProceduresSectionText(proceduresSection, diagnostics, context);
-    if (result || diagnostics != null) result &= consolValidator.validateProceduresSection_validateProceduresSectionProcedureActivityProcedure(proceduresSection, diagnostics, context);
-    if (result || diagnostics != null) result &= consolValidator.validateProceduresSection_validateProceduresSectionProcedureActivityObservation(proceduresSection, diagnostics, context);
-    if (result || diagnostics != null) result &= consolValidator.validateProceduresSection_validateProceduresSectionProcedureActivityAct(proceduresSection, diagnostics, context);
-    if (result || diagnostics != null) result &= validateProceduresSection_validateMu2consolProceduresSectionProcedureActivityProcedure(proceduresSection, diagnostics, context);
-    return result;
-  }
-
-	/**
-   * Validates the validateMu2consolProceduresSectionProcedureActivityProcedure constraint of '<em>Procedures Section</em>'.
-   * <!-- begin-user-doc --> <!--
-	 * end-user-doc -->
-   * @generated
-   */
-	public boolean validateProceduresSection_validateMu2consolProceduresSectionProcedureActivityProcedure(
-			ProceduresSection proceduresSection, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-    return proceduresSection.validateMu2consolProceduresSectionProcedureActivityProcedure(diagnostics, context);
-  }
-
-	/**
-   * Validates the validateProceduresSectionEntriesOptionalTemplateId constraint of '<em>Procedures Section</em>'.
-   * <!-- begin-user-doc --> <!--
-	 * end-user-doc -->
-   * @generated
-   */
-	public boolean validateProceduresSection_validateProceduresSectionEntriesOptionalTemplateId(
-			ProceduresSection proceduresSection, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-    return proceduresSection.validateProceduresSectionEntriesOptionalTemplateId(diagnostics, context);
-  }
-
-	/**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * @generated
-   */
-	public boolean validateProcedureActivityProcedure(
-			ProcedureActivityProcedure procedureActivityProcedure,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-    if (!validate_NoCircularContainment(procedureActivityProcedure, diagnostics, context)) return false;
-    boolean result = validate_EveryMultiplicityConforms(procedureActivityProcedure, diagnostics, context);
-    if (result || diagnostics != null) result &= validate_EveryDataValueConforms(procedureActivityProcedure, diagnostics, context);
-    if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(procedureActivityProcedure, diagnostics, context);
-    if (result || diagnostics != null) result &= validate_EveryProxyResolves(procedureActivityProcedure, diagnostics, context);
-    if (result || diagnostics != null) result &= validate_UniqueID(procedureActivityProcedure, diagnostics, context);
-    if (result || diagnostics != null) result &= validate_EveryKeyUnique(procedureActivityProcedure, diagnostics, context);
-    if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(procedureActivityProcedure, diagnostics, context);
-    if (result || diagnostics != null) result &= consolValidator.validateProcedureActivityProcedure_validateProcedureActivityProcedureCodeCodeSystems(procedureActivityProcedure, diagnostics, context);
-    if (result || diagnostics != null) result &= consolValidator.validateProcedureActivityProcedure_validateProcedureActivityProcedureCodeOriginalText(procedureActivityProcedure, diagnostics, context);
-    if (result || diagnostics != null) result &= consolValidator.validateProcedureActivityProcedure_validateProcedureActivityProcedureOriginalTextReference(procedureActivityProcedure, diagnostics, context);
-    if (result || diagnostics != null) result &= consolValidator.validateProcedureActivityProcedure_validateProcedureActivityProcedureOriginalTextReferenceValue(procedureActivityProcedure, diagnostics, context);
-    if (result || diagnostics != null) result &= consolValidator.validateProcedureActivityProcedure_validateProcedureActivityProcedureReferenceValue(procedureActivityProcedure, diagnostics, context);
-    if (result || diagnostics != null) result &= consolValidator.validateProcedureActivityProcedure_validateProcedureActivityProcedureEncounterInversion(procedureActivityProcedure, diagnostics, context);
-    if (result || diagnostics != null) result &= consolValidator.validateProcedureActivityProcedure_validateProcedureActivityProcedureProductInstanceTypeCode(procedureActivityProcedure, diagnostics, context);
-    if (result || diagnostics != null) result &= consolValidator.validateProcedureActivityProcedure_validateProcedureActivityProcedureServiceDeliveryLocationTypeCode(procedureActivityProcedure, diagnostics, context);
-    if (result || diagnostics != null) result &= consolValidator.validateProcedureActivityProcedure_validateProcedureActivityProcedureInstructionsInversion(procedureActivityProcedure, diagnostics, context);
-    if (result || diagnostics != null) result &= validateProcedureActivityProcedure_validateProcedureActivityProcedureTemplateId(procedureActivityProcedure, diagnostics, context);
-    if (result || diagnostics != null) result &= consolValidator.validateProcedureActivityProcedure_validateProcedureActivityProcedureClassCode(procedureActivityProcedure, diagnostics, context);
-    if (result || diagnostics != null) result &= consolValidator.validateProcedureActivityProcedure_validateProcedureActivityProcedureMoodCode(procedureActivityProcedure, diagnostics, context);
-    if (result || diagnostics != null) result &= consolValidator.validateProcedureActivityProcedure_validateProcedureActivityProcedureId(procedureActivityProcedure, diagnostics, context);
-    if (result || diagnostics != null) result &= consolValidator.validateProcedureActivityProcedure_validateProcedureActivityProcedureCode(procedureActivityProcedure, diagnostics, context);
-    if (result || diagnostics != null) result &= consolValidator.validateProcedureActivityProcedure_validateProcedureActivityProcedureStatusCode(procedureActivityProcedure, diagnostics, context);
-    if (result || diagnostics != null) result &= consolValidator.validateProcedureActivityProcedure_validateProcedureActivityProcedureEffectiveTime(procedureActivityProcedure, diagnostics, context);
-    if (result || diagnostics != null) result &= consolValidator.validateProcedureActivityProcedure_validateProcedureActivityProcedurePriorityCodeP(procedureActivityProcedure, diagnostics, context);
-    if (result || diagnostics != null) result &= consolValidator.validateProcedureActivityProcedure_validateProcedureActivityProcedurePriorityCode(procedureActivityProcedure, diagnostics, context);
-    if (result || diagnostics != null) result &= consolValidator.validateProcedureActivityProcedure_validateProcedureActivityProcedureMethodCode(procedureActivityProcedure, diagnostics, context);
-    if (result || diagnostics != null) result &= consolValidator.validateProcedureActivityProcedure_validateProcedureActivityProcedureTargetSiteCodeP(procedureActivityProcedure, diagnostics, context);
-    if (result || diagnostics != null) result &= consolValidator.validateProcedureActivityProcedure_validateProcedureActivityProcedureTargetSiteCode(procedureActivityProcedure, diagnostics, context);
-    if (result || diagnostics != null) result &= consolValidator.validateProcedureActivityProcedure_validateProcedureActivityProcedureIndication(procedureActivityProcedure, diagnostics, context);
-    if (result || diagnostics != null) result &= consolValidator.validateProcedureActivityProcedure_validateProcedureActivityProcedureSpecimen(procedureActivityProcedure, diagnostics, context);
-    if (result || diagnostics != null) result &= consolValidator.validateProcedureActivityProcedure_validateProcedureActivityProcedureServiceDeliveryLocation(procedureActivityProcedure, diagnostics, context);
-    if (result || diagnostics != null) result &= consolValidator.validateProcedureActivityProcedure_validateProcedureActivityProcedurePerformer(procedureActivityProcedure, diagnostics, context);
-    if (result || diagnostics != null) result &= consolValidator.validateProcedureActivityProcedure_validateProcedureActivityProcedureMedicationActivity(procedureActivityProcedure, diagnostics, context);
-    if (result || diagnostics != null) result &= consolValidator.validateProcedureActivityProcedure_validateProcedureActivityProcedurePatientInstruction(procedureActivityProcedure, diagnostics, context);
-    if (result || diagnostics != null) result &= consolValidator.validateProcedureActivityProcedure_validateProcedureActivityProcedureProductInstance(procedureActivityProcedure, diagnostics, context);
-    if (result || diagnostics != null) result &= consolValidator.validateProcedureActivityProcedure_validateProcedureActivityProcedureEntryRelationship(procedureActivityProcedure, diagnostics, context);
-    if (result || diagnostics != null) result &= consolValidator.validateProcedureActivityProcedure_validateProcedureActivityProcedureProcedureSpecimenSpecimenRole(procedureActivityProcedure, diagnostics, context);
-    if (result || diagnostics != null) result &= consolValidator.validateProcedureActivityProcedure_validateProcedureActivityProcedureProcedureSpecimenSpecimentRoleId(procedureActivityProcedure, diagnostics, context);
-    if (result || diagnostics != null) result &= consolValidator.validateProcedureActivityProcedure_validateProcedureActivityProcedureProcedureActivityPerformerAssignedEntity(procedureActivityProcedure, diagnostics, context);
-    if (result || diagnostics != null) result &= consolValidator.validateProcedureActivityProcedure_validateProcedureActivityProcedureProcedureActivityPerformerAssignedEntityId(procedureActivityProcedure, diagnostics, context);
-    if (result || diagnostics != null) result &= consolValidator.validateProcedureActivityProcedure_validateProcedureActivityProcedureProcedureActivityPerformerAssignedEntityAddr(procedureActivityProcedure, diagnostics, context);
-    if (result || diagnostics != null) result &= consolValidator.validateProcedureActivityProcedure_validateProcedureActivityProcedureProcedureActivityPerformerAssignedEntityTelecom(procedureActivityProcedure, diagnostics, context);
-    if (result || diagnostics != null) result &= consolValidator.validateProcedureActivityProcedure_validateProcedureActivityProcedureProcedureActivityPerformerAssignedEntityRepOrg(procedureActivityProcedure, diagnostics, context);
-    if (result || diagnostics != null) result &= consolValidator.validateProcedureActivityProcedure_validateProcedureActivityProcedureProcedureActivityPerformerAssignedEntityRepOrgId(procedureActivityProcedure, diagnostics, context);
-    if (result || diagnostics != null) result &= consolValidator.validateProcedureActivityProcedure_validateProcedureActivityProcedureProcedureActivityPerformerAssignedEntityRepOrgName(procedureActivityProcedure, diagnostics, context);
-    if (result || diagnostics != null) result &= consolValidator.validateProcedureActivityProcedure_validateProcedureActivityProcedureProcedureActivityPerformerAssignedEntityRepOrgAddr(procedureActivityProcedure, diagnostics, context);
-    if (result || diagnostics != null) result &= consolValidator.validateProcedureActivityProcedure_validateProcedureActivityProcedureProcedureActivityPerformerAssignedEntityRepOrgTelecom(procedureActivityProcedure, diagnostics, context);
-    if (result || diagnostics != null) result &= consolValidator.validateProcedureActivityProcedure_validateProcedureActivityProcedureEntryRelationshipProcedureActivityEncounterClassCode(procedureActivityProcedure, diagnostics, context);
-    if (result || diagnostics != null) result &= consolValidator.validateProcedureActivityProcedure_validateProcedureActivityProcedureEntryRelationshipProcedureActivityEncounterMoodCode(procedureActivityProcedure, diagnostics, context);
-    if (result || diagnostics != null) result &= consolValidator.validateProcedureActivityProcedure_validateProcedureActivityProcedureEntryRelationshipProcedureActivityEncounterId(procedureActivityProcedure, diagnostics, context);
-    if (result || diagnostics != null) result &= consolValidator.validateProcedureActivityProcedure_validateProcedureActivityProcedureEntryRelationshipInversionInd(procedureActivityProcedure, diagnostics, context);
-    if (result || diagnostics != null) result &= consolValidator.validateProcedureActivityProcedure_validateProcedureActivityProcedureEntryRelationshipTypeCode(procedureActivityProcedure, diagnostics, context);
-    if (result || diagnostics != null) result &= consolValidator.validateProcedureActivityProcedure_validateProcedureActivityProcedureEntryRelationshipProcedureActivityEncounter(procedureActivityProcedure, diagnostics, context);
-    if (result || diagnostics != null) result &= validateProcedureActivityProcedure_validateMu2consolProcedureActivityProcedureCodeValue(procedureActivityProcedure, diagnostics, context);
-    if (result || diagnostics != null) result &= validateProcedureActivityProcedure_validateMu2consolProcedureActivityProcedureCode(procedureActivityProcedure, diagnostics, context);
-    return result;
-  }
-
-	/**
-	 * Validates the validateMu2consolProcedureActivityProcedureCodeValue
-	 * constraint of '<em>Procedure Activity Procedure</em>'. <!--
-	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
-	 * @generated
-	 */
-	public boolean validateProcedureActivityProcedure_validateMu2consolProcedureActivityProcedureCodeValue(
-			ProcedureActivityProcedure procedureActivityProcedure,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return procedureActivityProcedure.validateMu2consolProcedureActivityProcedureCodeValue(diagnostics, context);
-  }
-
-	/**
-   * Validates the validateMu2consolProcedureActivityProcedureCode constraint of '<em>Procedure Activity Procedure</em>'.
-   * <!-- begin-user-doc --> <!--
-	 * end-user-doc -->
-   * @generated
-   */
-	public boolean validateProcedureActivityProcedure_validateMu2consolProcedureActivityProcedureCode(
-			ProcedureActivityProcedure procedureActivityProcedure,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return procedureActivityProcedure.validateMu2consolProcedureActivityProcedureCode(diagnostics, context);
-  }
-
-	/**
-   * Validates the validateProcedureActivityProcedureTemplateId constraint of '<em>Procedure Activity Procedure</em>'.
-   * <!-- begin-user-doc --> <!--
-	 * end-user-doc -->
-   * @generated
-   */
-	public boolean validateProcedureActivityProcedure_validateProcedureActivityProcedureTemplateId(
-			ProcedureActivityProcedure procedureActivityProcedure,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return procedureActivityProcedure.validateProcedureActivityProcedureTemplateId(diagnostics, context);
-  }
-
-	/**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * @generated
-   */
-	public boolean validateResultOrganizer(ResultOrganizer resultOrganizer,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-    if (!validate_NoCircularContainment(resultOrganizer, diagnostics, context)) return false;
-    boolean result = validate_EveryMultiplicityConforms(resultOrganizer, diagnostics, context);
-    if (result || diagnostics != null) result &= validate_EveryDataValueConforms(resultOrganizer, diagnostics, context);
-    if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(resultOrganizer, diagnostics, context);
-    if (result || diagnostics != null) result &= validate_EveryProxyResolves(resultOrganizer, diagnostics, context);
-    if (result || diagnostics != null) result &= validate_UniqueID(resultOrganizer, diagnostics, context);
-    if (result || diagnostics != null) result &= validate_EveryKeyUnique(resultOrganizer, diagnostics, context);
-    if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(resultOrganizer, diagnostics, context);
-    if (result || diagnostics != null) result &= consolValidator.validateResultOrganizer_validateResultOrganizerCodeValue(resultOrganizer, diagnostics, context);
-    if (result || diagnostics != null) result &= consolValidator.validateResultOrganizer_validateResultOrganizerClassCodeValue(resultOrganizer, diagnostics, context);
-    if (result || diagnostics != null) result &= validateResultOrganizer_validateResultOrganizerTemplateId(resultOrganizer, diagnostics, context);
-    if (result || diagnostics != null) result &= consolValidator.validateResultOrganizer_validateResultOrganizerClassCode(resultOrganizer, diagnostics, context);
-    if (result || diagnostics != null) result &= consolValidator.validateResultOrganizer_validateResultOrganizerMoodCode(resultOrganizer, diagnostics, context);
-    if (result || diagnostics != null) result &= consolValidator.validateResultOrganizer_validateResultOrganizerId(resultOrganizer, diagnostics, context);
-    if (result || diagnostics != null) result &= consolValidator.validateResultOrganizer_validateResultOrganizerStatusCodeP(resultOrganizer, diagnostics, context);
-    if (result || diagnostics != null) result &= consolValidator.validateResultOrganizer_validateResultOrganizerStatusCode(resultOrganizer, diagnostics, context);
-    if (result || diagnostics != null) result &= consolValidator.validateResultOrganizer_validateResultOrganizerCode(resultOrganizer, diagnostics, context);
-    if (result || diagnostics != null) result &= consolValidator.validateResultOrganizer_validateResultOrganizerResultObservation(resultOrganizer, diagnostics, context);
-    if (result || diagnostics != null) result &= validateResultOrganizer_validateMu2consolResultOrganizerResultObservation(resultOrganizer, diagnostics, context);
-    return result;
-  }
-
-	/**
-   * Validates the validateMu2consolResultOrganizerResultObservation constraint of '<em>Result Organizer</em>'.
-   * <!-- begin-user-doc --> <!--
-	 * end-user-doc -->
-   * @generated
-   */
-	public boolean validateResultOrganizer_validateMu2consolResultOrganizerResultObservation(
-			ResultOrganizer resultOrganizer, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-    return resultOrganizer.validateMu2consolResultOrganizerResultObservation(diagnostics, context);
-  }
-
-	/**
-   * Validates the validateResultOrganizerTemplateId constraint of '<em>Result Organizer</em>'.
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * @generated
-   */
-	public boolean validateResultOrganizer_validateResultOrganizerTemplateId(
-			ResultOrganizer resultOrganizer, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-    return resultOrganizer.validateResultOrganizerTemplateId(diagnostics, context);
-  }
-
-	/**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * @generated
-   */
-	public boolean validateResultsSection(ResultsSection resultsSection,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-    if (!validate_NoCircularContainment(resultsSection, diagnostics, context)) return false;
-    boolean result = validate_EveryMultiplicityConforms(resultsSection, diagnostics, context);
-    if (result || diagnostics != null) result &= validate_EveryDataValueConforms(resultsSection, diagnostics, context);
-    if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(resultsSection, diagnostics, context);
-    if (result || diagnostics != null) result &= validate_EveryProxyResolves(resultsSection, diagnostics, context);
-    if (result || diagnostics != null) result &= validate_UniqueID(resultsSection, diagnostics, context);
-    if (result || diagnostics != null) result &= validate_EveryKeyUnique(resultsSection, diagnostics, context);
-    if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(resultsSection, diagnostics, context);
-    if (result || diagnostics != null) result &= cdaValidator.validateSection_validateClassCode(resultsSection, diagnostics, context);
-    if (result || diagnostics != null) result &= cdaValidator.validateSection_validateMoodCode(resultsSection, diagnostics, context);
-    if (result || diagnostics != null) result &= validateResultsSection_validateResultsSectionEntriesOptionalTemplateId(resultsSection, diagnostics, context);
-    if (result || diagnostics != null) result &= consolValidator.validateResultsSectionEntriesOptional_validateResultsSectionEntriesOptionalCode(resultsSection, diagnostics, context);
-    if (result || diagnostics != null) result &= consolValidator.validateResultsSectionEntriesOptional_validateResultsSectionEntriesOptionalCodeP(resultsSection, diagnostics, context);
-    if (result || diagnostics != null) result &= consolValidator.validateResultsSectionEntriesOptional_validateResultsSectionEntriesOptionalTitle(resultsSection, diagnostics, context);
-    if (result || diagnostics != null) result &= consolValidator.validateResultsSectionEntriesOptional_validateResultsSectionEntriesOptionalText(resultsSection, diagnostics, context);
-    if (result || diagnostics != null) result &= consolValidator.validateResultsSectionEntriesOptional_validateResultsSectionEntriesOptionalResultOrganizer(resultsSection, diagnostics, context);
-    if (result || diagnostics != null) result &= consolValidator.validateResultsSection_validateResultsSectionCodeP(resultsSection, diagnostics, context);
-    if (result || diagnostics != null) result &= consolValidator.validateResultsSection_validateResultsSectionCode(resultsSection, diagnostics, context);
-    if (result || diagnostics != null) result &= consolValidator.validateResultsSection_validateResultsSectionTitle(resultsSection, diagnostics, context);
-    if (result || diagnostics != null) result &= consolValidator.validateResultsSection_validateResultsSectionText(resultsSection, diagnostics, context);
-    if (result || diagnostics != null) result &= consolValidator.validateResultsSection_validateResultsSectionResultOrganizer(resultsSection, diagnostics, context);
-    if (result || diagnostics != null) result &= validateResultsSection_validateMu2consolResultsSectionResultOrganizer(resultsSection, diagnostics, context);
-    return result;
-  }
-
-	/**
-	 * Validates the validateMu2consolResultsSectionResultOrganizer constraint
-	 * of '<em>Results Section</em>'. <!-- begin-user-doc --> <!-- end-user-doc
-	 * -->
-	 * 
-	 * @generated
-	 */
-	public boolean validateResultsSection_validateMu2consolResultsSectionResultOrganizer(
-			ResultsSection resultsSection, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-    return resultsSection.validateMu2consolResultsSectionResultOrganizer(diagnostics, context);
-  }
-
-	/**
-	 * Validates the validateResultsSectionEntriesOptionalTemplateId constraint
-	 * of '<em>Results Section</em>'. <!-- begin-user-doc --> <!-- end-user-doc
-	 * -->
-	 * 
-	 * @generated
-	 */
-	public boolean validateResultsSection_validateResultsSectionEntriesOptionalTemplateId(
-			ResultsSection resultsSection, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-    return resultsSection.validateResultsSectionEntriesOptionalTemplateId(diagnostics, context);
-  }
-
-	/**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * @generated
-   */
-	public boolean validateAssessmentSection(
-			AssessmentSection assessmentSection, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-    if (!validate_NoCircularContainment(assessmentSection, diagnostics, context)) return false;
-    boolean result = validate_EveryMultiplicityConforms(assessmentSection, diagnostics, context);
-    if (result || diagnostics != null) result &= validate_EveryDataValueConforms(assessmentSection, diagnostics, context);
-    if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(assessmentSection, diagnostics, context);
-    if (result || diagnostics != null) result &= validate_EveryProxyResolves(assessmentSection, diagnostics, context);
-    if (result || diagnostics != null) result &= validate_UniqueID(assessmentSection, diagnostics, context);
-    if (result || diagnostics != null) result &= validate_EveryKeyUnique(assessmentSection, diagnostics, context);
-    if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(assessmentSection, diagnostics, context);
-    if (result || diagnostics != null) result &= cdaValidator.validateSection_validateClassCode(assessmentSection, diagnostics, context);
-    if (result || diagnostics != null) result &= cdaValidator.validateSection_validateMoodCode(assessmentSection, diagnostics, context);
-    if (result || diagnostics != null) result &= validateAssessmentSection_validateAssessmentSectionTemplateId(assessmentSection, diagnostics, context);
-    if (result || diagnostics != null) result &= consolValidator.validateAssessmentSection_validateAssessmentSectionCode(assessmentSection, diagnostics, context);
-    if (result || diagnostics != null) result &= consolValidator.validateAssessmentSection_validateAssessmentSectionCodeP(assessmentSection, diagnostics, context);
-    if (result || diagnostics != null) result &= consolValidator.validateAssessmentSection_validateAssessmentSectionText(assessmentSection, diagnostics, context);
-    if (result || diagnostics != null) result &= consolValidator.validateAssessmentSection_validateAssessmentSectionTitle(assessmentSection, diagnostics, context);
-    if (result || diagnostics != null) result &= validateAssessmentSection_validateMu2consolAssessmentSectionProblemObservation(assessmentSection, diagnostics, context);
-    return result;
-  }
-
-	/**
-   * Validates the validateMu2consolAssessmentSectionProblemObservation constraint of '<em>Assessment Section</em>'.
-   * <!-- begin-user-doc --> <!--
-	 * end-user-doc -->
-   * @generated
-   */
-	public boolean validateAssessmentSection_validateMu2consolAssessmentSectionProblemObservation(
-			AssessmentSection assessmentSection, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-    return assessmentSection.validateMu2consolAssessmentSectionProblemObservation(diagnostics, context);
-  }
-
-	/**
-	 * Validates the validateAssessmentSectionTemplateId constraint of '
-	 * <em>Assessment Section</em>'. <!-- begin-user-doc --> <!-- end-user-doc
-	 * -->
-	 * 
-	 * @generated
-	 */
-	public boolean validateAssessmentSection_validateAssessmentSectionTemplateId(
-			AssessmentSection assessmentSection, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-    return assessmentSection.validateAssessmentSectionTemplateId(diagnostics, context);
-  }
-
-	/**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * @generated
-   */
-	public boolean validateSocialHistorySection(
-			SocialHistorySection socialHistorySection,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-    if (!validate_NoCircularContainment(socialHistorySection, diagnostics, context)) return false;
-    boolean result = validate_EveryMultiplicityConforms(socialHistorySection, diagnostics, context);
-    if (result || diagnostics != null) result &= validate_EveryDataValueConforms(socialHistorySection, diagnostics, context);
-    if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(socialHistorySection, diagnostics, context);
-    if (result || diagnostics != null) result &= validate_EveryProxyResolves(socialHistorySection, diagnostics, context);
-    if (result || diagnostics != null) result &= validate_UniqueID(socialHistorySection, diagnostics, context);
-    if (result || diagnostics != null) result &= validate_EveryKeyUnique(socialHistorySection, diagnostics, context);
-    if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(socialHistorySection, diagnostics, context);
-    if (result || diagnostics != null) result &= cdaValidator.validateSection_validateClassCode(socialHistorySection, diagnostics, context);
-    if (result || diagnostics != null) result &= cdaValidator.validateSection_validateMoodCode(socialHistorySection, diagnostics, context);
-    if (result || diagnostics != null) result &= validateSocialHistorySection_validateSocialHistorySectionTemplateId(socialHistorySection, diagnostics, context);
-    if (result || diagnostics != null) result &= consolValidator.validateSocialHistorySection_validateSocialHistorySectionCode(socialHistorySection, diagnostics, context);
-    if (result || diagnostics != null) result &= consolValidator.validateSocialHistorySection_validateSocialHistorySectionCodeP(socialHistorySection, diagnostics, context);
-    if (result || diagnostics != null) result &= consolValidator.validateSocialHistorySection_validateSocialHistorySectionTitle(socialHistorySection, diagnostics, context);
-    if (result || diagnostics != null) result &= consolValidator.validateSocialHistorySection_validateSocialHistorySectionText(socialHistorySection, diagnostics, context);
-    if (result || diagnostics != null) result &= consolValidator.validateSocialHistorySection_validateSocialHistorySectionSocialHistoryObservation(socialHistorySection, diagnostics, context);
-    if (result || diagnostics != null) result &= consolValidator.validateSocialHistorySection_validateSocialHistorySectionPregnancyObservation(socialHistorySection, diagnostics, context);
-    if (result || diagnostics != null) result &= consolValidator.validateSocialHistorySection_validateSocialHistorySectionSmokingStatusObservation(socialHistorySection, diagnostics, context);
-    if (result || diagnostics != null) result &= consolValidator.validateSocialHistorySection_validateSocialHistorySectionTobaccoUse(socialHistorySection, diagnostics, context);
-    if (result || diagnostics != null) result &= validateSocialHistorySection_validateMu2consolSocialHistorySectionSmokingStatusObservation(socialHistorySection, diagnostics, context);
-    return result;
-  }
-
-	/**
-   * Validates the validateMu2consolSocialHistorySectionSmokingStatusObservation constraint of '<em>Social History Section</em>'.
-   * <!-- begin-user-doc --> <!--
-	 * end-user-doc -->
-   * @generated
-   */
-	public boolean validateSocialHistorySection_validateMu2consolSocialHistorySectionSmokingStatusObservation(
-			SocialHistorySection socialHistorySection,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return socialHistorySection.validateMu2consolSocialHistorySectionSmokingStatusObservation(diagnostics, context);
-  }
-
-	/**
-   * Validates the validateSocialHistorySectionTemplateId constraint of '<em>Social History Section</em>'.
-   * <!-- begin-user-doc --> <!--
-	 * end-user-doc -->
-   * @generated
-   */
-	public boolean validateSocialHistorySection_validateSocialHistorySectionTemplateId(
-			SocialHistorySection socialHistorySection,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return socialHistorySection.validateSocialHistorySectionTemplateId(diagnostics, context);
-  }
-
-	/**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * @generated
-   */
-	public boolean validateSmokingStatusObservation(
-			SmokingStatusObservation smokingStatusObservation,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-    if (!validate_NoCircularContainment(smokingStatusObservation, diagnostics, context)) return false;
-    boolean result = validate_EveryMultiplicityConforms(smokingStatusObservation, diagnostics, context);
-    if (result || diagnostics != null) result &= validate_EveryDataValueConforms(smokingStatusObservation, diagnostics, context);
-    if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(smokingStatusObservation, diagnostics, context);
-    if (result || diagnostics != null) result &= validate_EveryProxyResolves(smokingStatusObservation, diagnostics, context);
-    if (result || diagnostics != null) result &= validate_UniqueID(smokingStatusObservation, diagnostics, context);
-    if (result || diagnostics != null) result &= validate_EveryKeyUnique(smokingStatusObservation, diagnostics, context);
-    if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(smokingStatusObservation, diagnostics, context);
-    if (result || diagnostics != null) result &= consolValidator.validateTobaccoUse_validateTobaccoUseEffectiveTimeLow(smokingStatusObservation, diagnostics, context);
-    if (result || diagnostics != null) result &= validateSmokingStatusObservation_validateTobaccoUseTemplateId(smokingStatusObservation, diagnostics, context);
-    if (result || diagnostics != null) result &= consolValidator.validateTobaccoUse_validateTobaccoUseClassCode(smokingStatusObservation, diagnostics, context);
-    if (result || diagnostics != null) result &= consolValidator.validateTobaccoUse_validateTobaccoUseMoodCode(smokingStatusObservation, diagnostics, context);
-    if (result || diagnostics != null) result &= consolValidator.validateTobaccoUse_validateTobaccoUseCodeP(smokingStatusObservation, diagnostics, context);
-    if (result || diagnostics != null) result &= consolValidator.validateTobaccoUse_validateTobaccoUseCode(smokingStatusObservation, diagnostics, context);
-    if (result || diagnostics != null) result &= consolValidator.validateTobaccoUse_validateTobaccoUseEffectiveTime(smokingStatusObservation, diagnostics, context);
-    if (result || diagnostics != null) result &= consolValidator.validateTobaccoUse_validateTobaccoUseStatusCode(smokingStatusObservation, diagnostics, context);
-    if (result || diagnostics != null) result &= consolValidator.validateTobaccoUse_validateTobaccoUseStatusCodeP(smokingStatusObservation, diagnostics, context);
-    if (result || diagnostics != null) result &= consolValidator.validateTobaccoUse_validateTobaccoUseValue(smokingStatusObservation, diagnostics, context);
-    if (result || diagnostics != null) result &= consolValidator.validateTobaccoUse_validateTobaccoUseValueP(smokingStatusObservation, diagnostics, context);
-    if (result || diagnostics != null) result &= validateSmokingStatusObservation_validateSmokingStatusObservationValueP(smokingStatusObservation, diagnostics, context);
-    if (result || diagnostics != null) result &= validateSmokingStatusObservation_validateSmokingStatusObservationValue(smokingStatusObservation, diagnostics, context);
-    return result;
-  }
-
-	/**
-   * Validates the validateSmokingStatusObservationValueP constraint of '<em>Smoking Status Observation</em>'.
-   * <!-- begin-user-doc --> <!--
-	 * end-user-doc -->
-   * @generated
-   */
-	public boolean validateSmokingStatusObservation_validateSmokingStatusObservationValueP(
-			SmokingStatusObservation smokingStatusObservation,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return smokingStatusObservation.validateSmokingStatusObservationValueP(diagnostics, context);
-  }
-
-	/**
-   * Validates the validateSmokingStatusObservationValue constraint of '<em>Smoking Status Observation</em>'.
-   * <!-- begin-user-doc --> <!--
-	 * end-user-doc -->
-   * @generated
-   */
-	public boolean validateSmokingStatusObservation_validateSmokingStatusObservationValue(
-			SmokingStatusObservation smokingStatusObservation,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return smokingStatusObservation.validateSmokingStatusObservationValue(diagnostics, context);
-  }
-
-	/**
-   * Validates the validateTobaccoUseTemplateId constraint of '<em>Smoking Status Observation</em>'.
-   * <!-- begin-user-doc --> <!--
-	 * end-user-doc -->
-   * @generated
-   */
-	public boolean validateSmokingStatusObservation_validateTobaccoUseTemplateId(
-			SmokingStatusObservation smokingStatusObservation,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return smokingStatusObservation.validateTobaccoUseTemplateId(diagnostics, context);
-  }
-
-	/**
+  /**
    * Returns the resource locator that will be used to fetch messages for this validator's diagnostics.
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
    * @generated
    */
-	@Override
-	public ResourceLocator getResourceLocator() {
+  @Override
+  public ResourceLocator getResourceLocator()
+  {
     return Mu2consolPlugin.INSTANCE;
   }
 
-} // Mu2consolValidator
+} //Mu2consolValidator

@@ -444,69 +444,12 @@
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="SummaryOfCareRecord" eSuperTypes="#//GeneralHeaderConstraints">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
-      <details key="constraints.validation.error" value="SummaryOfCareRecordCarePlanning SummaryOfCareRecordCognitiveStatusEntries SummaryOfCareRecordFunctionalStatusEntries SummaryOfCareRecordPlanOfCareSection SummaryOfCareRecordProblemSection SummaryOfCareRecordAllergiesSection SummaryOfCareRecordImmunizationsSection SummaryOfCareRecordMedicationsSection SummaryOfCareRecordSocialHistorySection SummaryOfCareRecordResultsSection SummaryOfCareRecordVitalSignsSection SummaryOfCareRecordProceduresSection SummaryOfCareRecordSocialHistorySectionTemplateId SummaryOfCareRecordMu2consolSocialHistorySectionSmokingStatusObservation SummaryOfCareRecordMu2consolPlanOfCareSectionCarePlanningForPlanOfCare SummaryOfCareRecordMu2consolPlanOfCareSectionPlanOfCareActivityObservation SummaryOfCareRecordPlanOfCareSectionTemplateId SummaryOfCareRecordAssessmentAndPlanSectionTemplateId SummaryOfCareRecordAssessmentSectionTemplateId SummaryOfCareRecordMu2consolAssessmentSectionProblemObservation"/>
-      <details key="constraints.validation.query" value="SummaryOfCareRecordCognitiveStatusEntries SummaryOfCareRecordFunctionalStatusEntries SummaryOfCareRecordSocialHistorySectionTemplateId SummaryOfCareRecordMu2consolSocialHistorySectionSmokingStatusObservation SummaryOfCareRecordMu2consolPlanOfCareSectionCarePlanningForPlanOfCare SummaryOfCareRecordMu2consolPlanOfCareSectionPlanOfCareActivityObservation SummaryOfCareRecordPlanOfCareSectionTemplateId SummaryOfCareRecordAssessmentAndPlanSectionTemplateId SummaryOfCareRecordAssessmentSectionTemplateId SummaryOfCareRecordMu2consolAssessmentSectionProblemObservation"/>
+      <details key="constraints.validation.error" value="SummaryOfCareRecordCarePlanning SummaryOfCareRecordProblemSection SummaryOfCareRecordAllergiesSection SummaryOfCareRecordImmunizationsSection SummaryOfCareRecordMedicationsSection SummaryOfCareRecordSocialHistorySection SummaryOfCareRecordResultsSection SummaryOfCareRecordVitalSignsSection SummaryOfCareRecordProceduresSection SummaryOfCareRecordFunctionalStatusSection SummaryOfCareRecordSocialHistorySectionTemplateId SummaryOfCareRecordMu2consolSocialHistorySectionSmokingStatusObservation SummaryOfCareRecordPlanOfCareSectionTemplateId SummaryOfCareRecordAssessmentAndPlanSectionTemplateId SummaryOfCareRecordAssessmentSectionTemplateId SummaryOfCareRecordMu2consolAssessmentSectionProblemObservation"/>
+      <details key="constraints.validation.query" value="SummaryOfCareRecordSocialHistorySectionTemplateId SummaryOfCareRecordMu2consolSocialHistorySectionSmokingStatusObservation SummaryOfCareRecordPlanOfCareSectionTemplateId SummaryOfCareRecordAssessmentAndPlanSectionTemplateId SummaryOfCareRecordAssessmentSectionTemplateId SummaryOfCareRecordMu2consolAssessmentSectionProblemObservation"/>
     </eAnnotations>
     <eOperations name="SummaryOfCareRecordCarePlanning" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
         <details key="body" value="(self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(mu2consol::PlanOfCareSection)) or &#xD;&#xA;self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(mu2consol::AssessmentAndPlanSection)))"/>
-      </eAnnotations>
-      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
-        <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-          <details key="documentation" value="The chain of diagnostics to which problems are to be appended."/>
-        </eAnnotations>
-      </eParameters>
-      <eParameters name="context">
-        <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-          <details key="documentation" value="The cache of context-specific information."/>
-        </eAnnotations>
-        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
-          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
-          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
-        </eGenericType>
-      </eParameters>
-    </eOperations>
-    <eOperations name="SummaryOfCareRecordCognitiveStatusEntries" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
-      <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
-        <details key="body" value="self.retrieveFunctionalStatusSection()->excluding(null)->reject( retrieveFunctionalStatusSection().getObservations()->exists(o : cda::Observation | o.oclIsKindOf(consol::CognitiveStatusProblemObservation)) or retrieveFunctionalStatusSection().getObservations()->exists(o : cda::Observation | o.oclIsKindOf(consol::CognitiveStatusResultObservation)) or retrieveFunctionalStatusSection().getOrganizers()->exists(org : cda::Organizer | org.oclIsKindOf(consol::CognitiveStatusResultOrganizer)))"/>
-      </eAnnotations>
-      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
-        <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-          <details key="documentation" value="The chain of diagnostics to which problems are to be appended."/>
-        </eAnnotations>
-      </eParameters>
-      <eParameters name="context">
-        <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-          <details key="documentation" value="The cache of context-specific information."/>
-        </eAnnotations>
-        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
-          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
-          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
-        </eGenericType>
-      </eParameters>
-    </eOperations>
-    <eOperations name="SummaryOfCareRecordFunctionalStatusEntries" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
-      <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
-        <details key="body" value="self.retrieveFunctionalStatusSection()->excluding(null)->reject( retrieveFunctionalStatusSection().getObservations()->exists(o : cda::Observation | o.oclIsKindOf(consol::FunctionalStatusProblemObservation)) or retrieveFunctionalStatusSection().getObservations()->exists(o : cda::Observation | o.oclIsKindOf(consol::FunctionalStatusResultObservation)) or retrieveFunctionalStatusSection().getOrganizers()->exists(org : cda::Organizer | org.oclIsKindOf(consol::FunctionalStatusResultOrganizer)))"/>
-      </eAnnotations>
-      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
-        <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-          <details key="documentation" value="The chain of diagnostics to which problems are to be appended."/>
-        </eAnnotations>
-      </eParameters>
-      <eParameters name="context">
-        <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-          <details key="documentation" value="The cache of context-specific information."/>
-        </eAnnotations>
-        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
-          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
-          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
-        </eGenericType>
-      </eParameters>
-    </eOperations>
-    <eOperations name="SummaryOfCareRecordPlanOfCareSection" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
-      <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
-        <details key="body" value="self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(mu2consol::PlanOfCareSection))"/>
       </eAnnotations>
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
@@ -675,9 +618,28 @@
         </eGenericType>
       </eParameters>
     </eOperations>
+    <eOperations name="SummaryOfCareRecordFunctionalStatusSection" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
+        <details key="body" value="self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::FunctionalStatusSection))"/>
+      </eAnnotations>
+      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
+        <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+          <details key="documentation" value="The chain of diagnostics to which problems are to be appended."/>
+        </eAnnotations>
+      </eParameters>
+      <eParameters name="context">
+        <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+          <details key="documentation" value="The cache of context-specific information."/>
+        </eAnnotations>
+        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
     <eOperations name="SummaryOfCareRecordSocialHistorySectionTemplateId" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
-        <details key="body" value="self.getSocialHistorySection()->excluding(null)->reject(getSocialHistorySection().templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.2.17'))"/>
+        <details key="body" value="self.getAllSections()->excluding(null)->reject(templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.2.17'))"/>
       </eAnnotations>
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
@@ -697,47 +659,7 @@
     <eOperations name="SummaryOfCareRecordMu2consolSocialHistorySectionSmokingStatusObservation"
         eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
-        <details key="body" value="self.getSocialHistorySection()->excluding(null)->reject(getSocialHistorySection().entry->exists(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(mu2consol::SmokingStatusObservation)))"/>
-      </eAnnotations>
-      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
-        <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-          <details key="documentation" value="The chain of diagnostics to which problems are to be appended."/>
-        </eAnnotations>
-      </eParameters>
-      <eParameters name="context">
-        <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-          <details key="documentation" value="The cache of context-specific information."/>
-        </eAnnotations>
-        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
-          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
-          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
-        </eGenericType>
-      </eParameters>
-    </eOperations>
-    <eOperations name="SummaryOfCareRecordMu2consolPlanOfCareSectionCarePlanningForPlanOfCare"
-        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
-      <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
-        <details key="body" value="self.getPlanOfCareSection()->excluding(null)->reject(getPlanOfCareSection().getActs()->exists(a : cda::Act | a.oclIsKindOf(consol::PlanOfCareActivityAct)) or getPlanOfCareSection().getObservations()->exists(o : cda::Observation | o.oclIsKindOf(consol::PlanOfCareActivityObservation)) or getPlanOfCareSection().getEncounters()->exists(e : cda::Encounter | e.oclIsKindOf(consol::PlanOfCareActivityEncounter)))"/>
-      </eAnnotations>
-      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
-        <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-          <details key="documentation" value="The chain of diagnostics to which problems are to be appended."/>
-        </eAnnotations>
-      </eParameters>
-      <eParameters name="context">
-        <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-          <details key="documentation" value="The cache of context-specific information."/>
-        </eAnnotations>
-        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
-          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
-          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
-        </eGenericType>
-      </eParameters>
-    </eOperations>
-    <eOperations name="SummaryOfCareRecordMu2consolPlanOfCareSectionPlanOfCareActivityObservation"
-        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
-      <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
-        <details key="body" value="self.getPlanOfCareSection()->excluding(null)->reject(getPlanOfCareSection().entry->exists(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(consol::PlanOfCareActivityObservation)))"/>
+        <details key="body" value="self.getAllSections()->excluding(null)->reject(entry->exists(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(mu2consol::SmokingStatusObservation)))"/>
       </eAnnotations>
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
@@ -756,7 +678,7 @@
     </eOperations>
     <eOperations name="SummaryOfCareRecordPlanOfCareSectionTemplateId" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
-        <details key="body" value="self.getPlanOfCareSection()->excluding(null)->reject(getPlanOfCareSection().templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.2.10'))"/>
+        <details key="body" value="self.getAllSections()->excluding(null)->reject(templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.2.10'))"/>
       </eAnnotations>
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
@@ -775,7 +697,7 @@
     </eOperations>
     <eOperations name="SummaryOfCareRecordAssessmentAndPlanSectionTemplateId" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
-        <details key="body" value="self.getAssessmentAndPlanSection()->excluding(null)->reject(getAssessmentAndPlanSection().templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.2.9'))"/>
+        <details key="body" value="self.getAllSections()->excluding(null)->reject(templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.2.9'))"/>
       </eAnnotations>
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
@@ -794,7 +716,7 @@
     </eOperations>
     <eOperations name="SummaryOfCareRecordAssessmentSectionTemplateId" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
-        <details key="body" value="self.getAssessmentSection()->excluding(null)->reject(getAssessmentSection().templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.2.8'))"/>
+        <details key="body" value="self.getAllSections()->excluding(null)->reject(templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.2.8'))"/>
       </eAnnotations>
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
@@ -814,7 +736,7 @@
     <eOperations name="SummaryOfCareRecordMu2consolAssessmentSectionProblemObservation"
         eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
-        <details key="body" value="self.getAssessmentSection()->excluding(null)->reject(getAssessmentSection().entry->one(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(consol::ProblemObservation)))"/>
+        <details key="body" value="self.getAllSections()->excluding(null)->reject(entry->one(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(consol::ProblemObservation)))"/>
       </eAnnotations>
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
@@ -1051,7 +973,7 @@
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="PlanOfCareSection" eSuperTypes="../../org.openhealthtools.mdht.uml.cda.consol/model/consol.ecore#//PlanOfCareSection">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
-      <details key="constraints.validation.error" value="Mu2consolPlanOfCareSectionPlanOfCareActivityObservation Mu2consolPlanOfCareSectionTemplateId Mu2consolPlanOfCareSectionCarePlanningForPlanOfCare"/>
+      <details key="constraints.validation.error" value="Mu2consolPlanOfCareSectionTemplateId"/>
       <details key="templateId.root" value="2.16.840.1.113883.10.20.22.2.10"/>
     </eAnnotations>
     <eAnnotations source="duplicates">
@@ -1076,44 +998,6 @@
         </eParameters>
       </contents>
     </eAnnotations>
-    <eOperations name="Mu2consolPlanOfCareSectionCarePlanningForPlanOfCare" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
-      <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
-        <details key="body" value="self.getActs()->exists(a : cda::Act | a.oclIsKindOf(consol::PlanOfCareActivityAct)) or self.getObservations()->exists(o : cda::Observation | o.oclIsKindOf(consol::PlanOfCareActivityObservation)) or self.getEncounters()->exists(e : cda::Encounter | e.oclIsKindOf(consol::PlanOfCareActivityEncounter))"/>
-      </eAnnotations>
-      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
-        <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-          <details key="documentation" value="The chain of diagnostics to which problems are to be appended."/>
-        </eAnnotations>
-      </eParameters>
-      <eParameters name="context">
-        <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-          <details key="documentation" value="The cache of context-specific information."/>
-        </eAnnotations>
-        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
-          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
-          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
-        </eGenericType>
-      </eParameters>
-    </eOperations>
-    <eOperations name="Mu2consolPlanOfCareSectionPlanOfCareActivityObservation" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
-      <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
-        <details key="body" value="self.entry->exists(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(consol::PlanOfCareActivityObservation))"/>
-      </eAnnotations>
-      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
-        <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-          <details key="documentation" value="The chain of diagnostics to which problems are to be appended."/>
-        </eAnnotations>
-      </eParameters>
-      <eParameters name="context">
-        <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-          <details key="documentation" value="The cache of context-specific information."/>
-        </eAnnotations>
-        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
-          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
-          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
-        </eGenericType>
-      </eParameters>
-    </eOperations>
     <eOperations name="getMu2consolPlanOfCareActivityActs" ordered="false" lowerBound="1"
         upperBound="-1" eType="ecore:EClass ../../org.openhealthtools.mdht.uml.cda.consol/model/consol.ecore#//PlanOfCareActivityAct">
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
@@ -1659,8 +1543,8 @@
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="ClinicalOfficeVisitSummary" eSuperTypes="#//GeneralHeaderConstraints">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
-      <details key="constraints.validation.query" value="ClinicalOfficeVisitSummaryResponsibleParty ClinicalOfficeVisitSummaryEffectiveTime ClinicalOfficeVisitSummaryLocation ClinicalOfficeVisitSummaryPlanOfCareActOrEncounter ClinicalOfficeVisitSummaryInstructionsEntry ClinicalOfficeVisitSummaryMedicationsAdministeredEntry ClinicalOfficeVisitSummaryMu2consolPlanOfCareSectionCarePlanningForPlanOfCare ClinicalOfficeVisitSummaryMu2consolPlanOfCareSectionPlanOfCareActivityObservation ClinicalOfficeVisitSummaryPlanOfCareSectionTemplateId ClinicalOfficeVisitSummaryAssessmentAndPlanSectionTemplateId ClinicalOfficeVisitSummarySocialHistorySectionTemplateId ClinicalOfficeVisitSummaryMu2consolSocialHistorySectionSmokingStatusObservation"/>
-      <details key="constraints.validation.error" value="ClinicalOfficeVisitSummaryResponsibleParty ClinicalOfficeVisitSummaryReasonForOfficeVisit ClinicalOfficeVisitSummaryCarePlanning ClinicalOfficeVisitSummaryEffectiveTime ClinicalOfficeVisitSummaryLocation ClinicalOfficeVisitSummaryPlanOfCareActOrEncounter ClinicalOfficeVisitSummaryInstructionsEntry ClinicalOfficeVisitSummaryMedicationsAdministeredEntry ClinicalOfficeVisitSummaryProblemSection ClinicalOfficeVisitSummaryMedicationsSection ClinicalOfficeVisitSummaryAllergiesSection ClinicalOfficeVisitSummaryResultsSection ClinicalOfficeVisitSummaryVitalSignsSection ClinicalOfficeVisitSummaryPlanOfCareSection ClinicalOfficeVisitSummaryProceduresSection ClinicalOfficeVisitSummaryImmunizationsSection ClinicalOfficeVisitSummaryMedicationsAdministeredSection ClinicalOfficeVisitSummaryInstructionsSection ClinicalOfficeVisitSummarySocialHistorySection ClinicalOfficeVisitSummaryMu2consolPlanOfCareSectionCarePlanningForPlanOfCare ClinicalOfficeVisitSummaryMu2consolPlanOfCareSectionPlanOfCareActivityObservation ClinicalOfficeVisitSummaryPlanOfCareSectionTemplateId ClinicalOfficeVisitSummaryAssessmentAndPlanSectionTemplateId ClinicalOfficeVisitSummarySocialHistorySectionTemplateId ClinicalOfficeVisitSummaryMu2consolSocialHistorySectionSmokingStatusObservation"/>
+      <details key="constraints.validation.query" value="ClinicalOfficeVisitSummaryResponsibleParty ClinicalOfficeVisitSummaryEffectiveTime ClinicalOfficeVisitSummaryLocation ClinicalOfficeVisitSummaryInstructionsEntry ClinicalOfficeVisitSummaryMedicationsAdministeredEntry ClinicalOfficeVisitSummaryPlanOfCareSectionTemplateId ClinicalOfficeVisitSummaryAssessmentAndPlanSectionTemplateId ClinicalOfficeVisitSummarySocialHistorySectionTemplateId ClinicalOfficeVisitSummaryMu2consolSocialHistorySectionSmokingStatusObservation"/>
+      <details key="constraints.validation.error" value="ClinicalOfficeVisitSummaryResponsibleParty ClinicalOfficeVisitSummaryReasonForOfficeVisit ClinicalOfficeVisitSummaryCarePlanning ClinicalOfficeVisitSummaryEffectiveTime ClinicalOfficeVisitSummaryLocation ClinicalOfficeVisitSummaryInstructionsEntry ClinicalOfficeVisitSummaryMedicationsAdministeredEntry ClinicalOfficeVisitSummaryProblemSection ClinicalOfficeVisitSummaryMedicationsSection ClinicalOfficeVisitSummaryAllergiesSection ClinicalOfficeVisitSummaryResultsSection ClinicalOfficeVisitSummaryVitalSignsSection ClinicalOfficeVisitSummaryProceduresSection ClinicalOfficeVisitSummaryImmunizationsSection ClinicalOfficeVisitSummaryMedicationsAdministeredSection ClinicalOfficeVisitSummaryInstructionsSection ClinicalOfficeVisitSummarySocialHistorySection ClinicalOfficeVisitSummaryPlanOfCareSectionTemplateId ClinicalOfficeVisitSummaryAssessmentAndPlanSectionTemplateId ClinicalOfficeVisitSummarySocialHistorySectionTemplateId ClinicalOfficeVisitSummaryMu2consolSocialHistorySectionSmokingStatusObservation"/>
     </eAnnotations>
     <eOperations name="ClinicalOfficeVisitSummaryResponsibleParty" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
@@ -1741,25 +1625,6 @@
     <eOperations name="ClinicalOfficeVisitSummaryLocation" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
         <details key="body" value="self.componentOf->excluding(null).encompassingEncounter->excluding(null)->reject(location->one(location : cda::Location | &#xD;&#xD;&#xA;not location.oclIsUndefined() and location.oclIsKindOf(rim::Participation)))"/>
-      </eAnnotations>
-      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
-        <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-          <details key="documentation" value="The chain of diagnostics to which problems are to be appended."/>
-        </eAnnotations>
-      </eParameters>
-      <eParameters name="context">
-        <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-          <details key="documentation" value="The cache of context-specific information."/>
-        </eAnnotations>
-        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
-          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
-          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
-        </eGenericType>
-      </eParameters>
-    </eOperations>
-    <eOperations name="ClinicalOfficeVisitSummaryPlanOfCareActOrEncounter" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
-      <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
-        <details key="body" value="self.retrievePlanOfCareSection()->excluding(null)->reject(retrievePlanOfCareSection().getActs()->exists(a : cda::Act | a.oclIsKindOf(consol::PlanOfCareActivityAct)) or retrievePlanOfCareSection().getEncounters()->exists(e : cda::Encounter | e.oclIsKindOf(consol::PlanOfCareActivityEncounter)))"/>
       </eAnnotations>
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
@@ -1909,25 +1774,6 @@
         </eGenericType>
       </eParameters>
     </eOperations>
-    <eOperations name="ClinicalOfficeVisitSummaryPlanOfCareSection" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
-      <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
-        <details key="body" value="self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(mu2consol::PlanOfCareSection))"/>
-      </eAnnotations>
-      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
-        <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-          <details key="documentation" value="The chain of diagnostics to which problems are to be appended."/>
-        </eAnnotations>
-      </eParameters>
-      <eParameters name="context">
-        <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-          <details key="documentation" value="The cache of context-specific information."/>
-        </eAnnotations>
-        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
-          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
-          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
-        </eGenericType>
-      </eParameters>
-    </eOperations>
     <eOperations name="ClinicalOfficeVisitSummaryProceduresSection" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
         <details key="body" value="self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(mu2consol::ProceduresSection))"/>
@@ -2023,49 +1869,9 @@
         </eGenericType>
       </eParameters>
     </eOperations>
-    <eOperations name="ClinicalOfficeVisitSummaryMu2consolPlanOfCareSectionCarePlanningForPlanOfCare"
-        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
-      <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
-        <details key="body" value="self.getPlanOfCareSection()->excluding(null)->reject(getPlanOfCareSection().getActs()->exists(a : cda::Act | a.oclIsKindOf(consol::PlanOfCareActivityAct)) or getPlanOfCareSection().getObservations()->exists(o : cda::Observation | o.oclIsKindOf(consol::PlanOfCareActivityObservation)) or getPlanOfCareSection().getEncounters()->exists(e : cda::Encounter | e.oclIsKindOf(consol::PlanOfCareActivityEncounter)))"/>
-      </eAnnotations>
-      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
-        <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-          <details key="documentation" value="The chain of diagnostics to which problems are to be appended."/>
-        </eAnnotations>
-      </eParameters>
-      <eParameters name="context">
-        <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-          <details key="documentation" value="The cache of context-specific information."/>
-        </eAnnotations>
-        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
-          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
-          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
-        </eGenericType>
-      </eParameters>
-    </eOperations>
-    <eOperations name="ClinicalOfficeVisitSummaryMu2consolPlanOfCareSectionPlanOfCareActivityObservation"
-        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
-      <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
-        <details key="body" value="self.getPlanOfCareSection()->excluding(null)->reject(getPlanOfCareSection().entry->exists(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(consol::PlanOfCareActivityObservation)))"/>
-      </eAnnotations>
-      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
-        <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-          <details key="documentation" value="The chain of diagnostics to which problems are to be appended."/>
-        </eAnnotations>
-      </eParameters>
-      <eParameters name="context">
-        <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-          <details key="documentation" value="The cache of context-specific information."/>
-        </eAnnotations>
-        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
-          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
-          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
-        </eGenericType>
-      </eParameters>
-    </eOperations>
     <eOperations name="ClinicalOfficeVisitSummaryPlanOfCareSectionTemplateId" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
-        <details key="body" value="self.getPlanOfCareSection()->excluding(null)->reject(getPlanOfCareSection().templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.2.10'))"/>
+        <details key="body" value="self.getAllSections()->excluding(null)->reject(templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.2.10'))"/>
       </eAnnotations>
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
@@ -2085,7 +1891,7 @@
     <eOperations name="ClinicalOfficeVisitSummaryAssessmentAndPlanSectionTemplateId"
         eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
-        <details key="body" value="self.getAssessmentAndPlanSection()->excluding(null)->reject(getAssessmentAndPlanSection().templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.2.9'))"/>
+        <details key="body" value="self.getAllSections()->excluding(null)->reject(templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.2.9'))"/>
       </eAnnotations>
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
@@ -2104,7 +1910,7 @@
     </eOperations>
     <eOperations name="ClinicalOfficeVisitSummarySocialHistorySectionTemplateId" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
-        <details key="body" value="self.getSocialHistorySection()->excluding(null)->reject(getSocialHistorySection().templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.2.17'))"/>
+        <details key="body" value="self.getAllSections()->excluding(null)->reject(templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.2.17'))"/>
       </eAnnotations>
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
@@ -2124,7 +1930,7 @@
     <eOperations name="ClinicalOfficeVisitSummaryMu2consolSocialHistorySectionSmokingStatusObservation"
         eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
-        <details key="body" value="self.getSocialHistorySection()->excluding(null)->reject(getSocialHistorySection().entry->exists(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(mu2consol::SmokingStatusObservation)))"/>
+        <details key="body" value="self.getAllSections()->excluding(null)->reject(entry->exists(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(mu2consol::SmokingStatusObservation)))"/>
       </eAnnotations>
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
@@ -2486,8 +2292,8 @@
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="ViewDownloadTransmitSummary" eSuperTypes="#//GeneralHeaderConstraints">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
-      <details key="constraints.validation.error" value="ViewDownloadTransmitSummaryCarePlanFields ViewDownloadTransmitSummaryAllergiesSection ViewDownloadTransmitSummaryMedicationsSection ViewDownloadTransmitSummaryProblemSection ViewDownloadTransmitSummaryProceduresSection ViewDownloadTransmitSummaryVitalSignsSection ViewDownloadTransmitSummaryResultsSection ViewDownloadTransmitSummaryPlanOfCareSection ViewDownloadTransmitSummarySocialHistorySection ViewDownloadTransmitSummaryAssessmentAndPlanSectionTemplateId ViewDownloadTransmitSummaryMu2consolPlanOfCareSectionCarePlanningForPlanOfCare ViewDownloadTransmitSummaryMu2consolPlanOfCareSectionPlanOfCareActivityObservation ViewDownloadTransmitSummaryPlanOfCareSectionTemplateId ViewDownloadTransmitSummarySocialHistorySectionTemplateId ViewDownloadTransmitSummaryMu2consolSocialHistorySectionSmokingStatusObservation"/>
-      <details key="constraints.validation.query" value="ViewDownloadTransmitSummaryAssessmentAndPlanSectionTemplateId ViewDownloadTransmitSummaryMu2consolPlanOfCareSectionCarePlanningForPlanOfCare ViewDownloadTransmitSummaryMu2consolPlanOfCareSectionPlanOfCareActivityObservation ViewDownloadTransmitSummaryPlanOfCareSectionTemplateId ViewDownloadTransmitSummarySocialHistorySectionTemplateId ViewDownloadTransmitSummaryMu2consolSocialHistorySectionSmokingStatusObservation"/>
+      <details key="constraints.validation.error" value="ViewDownloadTransmitSummaryCarePlanFields ViewDownloadTransmitSummaryAllergiesSection ViewDownloadTransmitSummaryMedicationsSection ViewDownloadTransmitSummaryProblemSection ViewDownloadTransmitSummaryProceduresSection ViewDownloadTransmitSummaryVitalSignsSection ViewDownloadTransmitSummaryResultsSection ViewDownloadTransmitSummarySocialHistorySection ViewDownloadTransmitSummaryAssessmentAndPlanSectionTemplateId ViewDownloadTransmitSummaryPlanOfCareSectionTemplateId ViewDownloadTransmitSummarySocialHistorySectionTemplateId ViewDownloadTransmitSummaryMu2consolSocialHistorySectionSmokingStatusObservation"/>
+      <details key="constraints.validation.query" value="ViewDownloadTransmitSummaryAssessmentAndPlanSectionTemplateId ViewDownloadTransmitSummaryPlanOfCareSectionTemplateId ViewDownloadTransmitSummarySocialHistorySectionTemplateId ViewDownloadTransmitSummaryMu2consolSocialHistorySectionSmokingStatusObservation"/>
     </eAnnotations>
     <eOperations name="ViewDownloadTransmitSummaryCarePlanFields" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
@@ -2622,25 +2428,6 @@
         </eGenericType>
       </eParameters>
     </eOperations>
-    <eOperations name="ViewDownloadTransmitSummaryPlanOfCareSection" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
-      <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
-        <details key="body" value="self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(mu2consol::PlanOfCareSection))"/>
-      </eAnnotations>
-      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
-        <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-          <details key="documentation" value="The chain of diagnostics to which problems are to be appended."/>
-        </eAnnotations>
-      </eParameters>
-      <eParameters name="context">
-        <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-          <details key="documentation" value="The cache of context-specific information."/>
-        </eAnnotations>
-        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
-          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
-          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
-        </eGenericType>
-      </eParameters>
-    </eOperations>
     <eOperations name="ViewDownloadTransmitSummarySocialHistorySection" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
         <details key="body" value="self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(mu2consol::SocialHistorySection))"/>
@@ -2663,47 +2450,7 @@
     <eOperations name="ViewDownloadTransmitSummaryAssessmentAndPlanSectionTemplateId"
         eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
-        <details key="body" value="self.getAssessmentAndPlanSection()->excluding(null)->reject(getAssessmentAndPlanSection().templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.2.9'))"/>
-      </eAnnotations>
-      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
-        <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-          <details key="documentation" value="The chain of diagnostics to which problems are to be appended."/>
-        </eAnnotations>
-      </eParameters>
-      <eParameters name="context">
-        <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-          <details key="documentation" value="The cache of context-specific information."/>
-        </eAnnotations>
-        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
-          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
-          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
-        </eGenericType>
-      </eParameters>
-    </eOperations>
-    <eOperations name="ViewDownloadTransmitSummaryMu2consolPlanOfCareSectionCarePlanningForPlanOfCare"
-        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
-      <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
-        <details key="body" value="self.getPlanOfCareSection()->excluding(null)->reject(getPlanOfCareSection().getActs()->exists(a : cda::Act | a.oclIsKindOf(consol::PlanOfCareActivityAct)) or getPlanOfCareSection().getObservations()->exists(o : cda::Observation | o.oclIsKindOf(consol::PlanOfCareActivityObservation)) or getPlanOfCareSection().getEncounters()->exists(e : cda::Encounter | e.oclIsKindOf(consol::PlanOfCareActivityEncounter)))"/>
-      </eAnnotations>
-      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
-        <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-          <details key="documentation" value="The chain of diagnostics to which problems are to be appended."/>
-        </eAnnotations>
-      </eParameters>
-      <eParameters name="context">
-        <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-          <details key="documentation" value="The cache of context-specific information."/>
-        </eAnnotations>
-        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
-          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
-          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
-        </eGenericType>
-      </eParameters>
-    </eOperations>
-    <eOperations name="ViewDownloadTransmitSummaryMu2consolPlanOfCareSectionPlanOfCareActivityObservation"
-        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
-      <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
-        <details key="body" value="self.getPlanOfCareSection()->excluding(null)->reject(getPlanOfCareSection().entry->exists(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(consol::PlanOfCareActivityObservation)))"/>
+        <details key="body" value="self.getAllSections()->excluding(null)->reject(templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.2.9'))"/>
       </eAnnotations>
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
@@ -2722,7 +2469,7 @@
     </eOperations>
     <eOperations name="ViewDownloadTransmitSummaryPlanOfCareSectionTemplateId" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
-        <details key="body" value="self.getPlanOfCareSection()->excluding(null)->reject(getPlanOfCareSection().templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.2.10'))"/>
+        <details key="body" value="self.getAllSections()->excluding(null)->reject(templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.2.10'))"/>
       </eAnnotations>
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
@@ -2742,7 +2489,7 @@
     <eOperations name="ViewDownloadTransmitSummarySocialHistorySectionTemplateId"
         eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
-        <details key="body" value="self.getSocialHistorySection()->excluding(null)->reject(getSocialHistorySection().templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.2.17'))"/>
+        <details key="body" value="self.getAllSections()->excluding(null)->reject(templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.2.17'))"/>
       </eAnnotations>
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
@@ -2762,7 +2509,7 @@
     <eOperations name="ViewDownloadTransmitSummaryMu2consolSocialHistorySectionSmokingStatusObservation"
         eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
-        <details key="body" value="self.getSocialHistorySection()->excluding(null)->reject(getSocialHistorySection().entry->exists(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(mu2consol::SmokingStatusObservation)))"/>
+        <details key="body" value="self.getAllSections()->excluding(null)->reject(entry->exists(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(mu2consol::SmokingStatusObservation)))"/>
       </eAnnotations>
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">

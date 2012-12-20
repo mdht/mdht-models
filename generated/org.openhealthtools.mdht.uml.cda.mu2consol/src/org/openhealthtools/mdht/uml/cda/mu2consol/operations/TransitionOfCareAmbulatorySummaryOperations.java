@@ -330,7 +330,7 @@ public class TransitionOfCareAmbulatorySummaryOperations extends
     if (GET_REASON_FOR_REFERRAL_SECTION__EOCL_QRY == null)
     {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
-      helper.setOperationContext(Mu2consolPackage.Literals.TRANSITION_OF_CARE_AMBULATORY_SUMMARY, Mu2consolPackage.Literals.TRANSITION_OF_CARE_AMBULATORY_SUMMARY.getEAllOperations().get(340));
+      helper.setOperationContext(Mu2consolPackage.Literals.TRANSITION_OF_CARE_AMBULATORY_SUMMARY, Mu2consolPackage.Literals.TRANSITION_OF_CARE_AMBULATORY_SUMMARY.getEAllOperations().get(336));
       try
       {
         GET_REASON_FOR_REFERRAL_SECTION__EOCL_QRY = helper.createQuery(GET_REASON_FOR_REFERRAL_SECTION__EOCL_EXP);

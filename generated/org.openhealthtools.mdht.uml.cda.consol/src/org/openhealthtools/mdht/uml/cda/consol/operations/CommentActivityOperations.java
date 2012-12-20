@@ -589,7 +589,7 @@ public class CommentActivityOperations extends ClinicalStatementOperations {
 			commentActivity)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.COMMENT_ACTIVITY__COMMENT_ACTIVITY_AUTHOR,
 					ConsolPlugin.INSTANCE.getString("CommentActivityAuthor"), new Object[] { commentActivity }));
 			}
