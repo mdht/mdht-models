@@ -31,7 +31,7 @@ import org.openhealthtools.mdht.uml.cda.consol.VitalSignsSection;
  * 
  * @see org.openhealthtools.mdht.uml.cda.mu2consol.Mu2consolPackage#getViewDownloadTransmitSummary()
  * @model annotation=
- *        "http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='ViewDownloadTransmitSummaryCarePlanFields ViewDownloadTransmitSummaryAllergiesSection ViewDownloadTransmitSummaryMedicationsSection ViewDownloadTransmitSummaryProblemSection ViewDownloadTransmitSummaryProceduresSection ViewDownloadTransmitSummaryVitalSignsSection ViewDownloadTransmitSummaryResultsSection ViewDownloadTransmitSummarySocialHistorySection ViewDownloadTransmitSummaryAssessmentAndPlanSectionTemplateId ViewDownloadTransmitSummaryPlanOfCareSectionTemplateId ViewDownloadTransmitSummarySocialHistorySectionTemplateId ViewDownloadTransmitSummaryMu2consolSocialHistorySectionSmokingStatusObservation' constraints.validation.info='ViewDownloadTransmitSummaryAssessmentAndPlanSection ViewDownloadTransmitSummaryPlanOfCareSection' constraints.validation.query='ViewDownloadTransmitSummaryAssessmentAndPlanSectionTemplateId ViewDownloadTransmitSummaryPlanOfCareSectionTemplateId ViewDownloadTransmitSummarySocialHistorySectionTemplateId ViewDownloadTransmitSummaryMu2consolSocialHistorySectionSmokingStatusObservation'"
+ *        "http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='ViewDownloadTransmitSummaryCarePlanFields ViewDownloadTransmitSummaryAllergiesSection ViewDownloadTransmitSummaryMedicationsSection ViewDownloadTransmitSummaryProblemSection ViewDownloadTransmitSummaryProceduresSection ViewDownloadTransmitSummaryVitalSignsSection ViewDownloadTransmitSummaryResultsSection ViewDownloadTransmitSummarySocialHistorySection' constraints.validation.info='ViewDownloadTransmitSummaryAssessmentAndPlanSection ViewDownloadTransmitSummaryPlanOfCareSection'"
  * @generated
  */
 public interface ViewDownloadTransmitSummary extends GeneralHeaderConstraints {
@@ -213,80 +213,6 @@ public interface ViewDownloadTransmitSummary extends GeneralHeaderConstraints {
 	 * @generated
 	 */
 	boolean validateViewDownloadTransmitSummarySocialHistorySection(
-			DiagnosticChain diagnostics, Map<Object, Object> context);
-
-	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc --> <!-- begin-model-doc -->
-	 * self.getAssessmentAndPlanSection()->excluding(null)->reject(
-	 * getAssessmentAndPlanSection().templateId->exists(id : datatypes::II |
-	 * id.root = '2.16.840.1.113883.10.20.22.2.9'))
-	 * 
-	 * @param diagnostics
-	 *            The chain of diagnostics to which problems are to be appended.
-	 * @param context
-	 *            The cache of context-specific information. <!-- end-model-doc
-	 *            -->
-	 * @model annotation=
-	 *        "http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAssessmentAndPlanSection()->excluding(null)->reject(getAssessmentAndPlanSection().templateId->exists(id : datatypes::II | id.root = \'2.16.840.1.113883.10.20.22.2.9\'))'"
-	 * @generated
-	 */
-	boolean validateViewDownloadTransmitSummaryAssessmentAndPlanSectionTemplateId(
-			DiagnosticChain diagnostics, Map<Object, Object> context);
-
-	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc --> <!-- begin-model-doc -->
-	 * self
-	 * .getPlanOfCareSection()->excluding(null)->reject(getPlanOfCareSection(
-	 * ).templateId->exists(id : datatypes::II | id.root =
-	 * '2.16.840.1.113883.10.20.22.2.10'))
-	 * 
-	 * @param diagnostics
-	 *            The chain of diagnostics to which problems are to be appended.
-	 * @param context
-	 *            The cache of context-specific information. <!-- end-model-doc
-	 *            -->
-	 * @model annotation=
-	 *        "http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getPlanOfCareSection()->excluding(null)->reject(getPlanOfCareSection().templateId->exists(id : datatypes::II | id.root = \'2.16.840.1.113883.10.20.22.2.10\'))'"
-	 * @generated
-	 */
-	boolean validateViewDownloadTransmitSummaryPlanOfCareSectionTemplateId(
-			DiagnosticChain diagnostics, Map<Object, Object> context);
-
-	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc --> <!-- begin-model-doc -->
-	 * self.getSocialHistorySection()->excluding(null)->reject(
-	 * getSocialHistorySection().templateId->exists(id : datatypes::II | id.root
-	 * = '2.16.840.1.113883.10.20.22.2.17'))
-	 * 
-	 * @param diagnostics
-	 *            The chain of diagnostics to which problems are to be appended.
-	 * @param context
-	 *            The cache of context-specific information. <!-- end-model-doc
-	 *            -->
-	 * @model annotation=
-	 *        "http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getSocialHistorySection()->excluding(null)->reject(getSocialHistorySection().templateId->exists(id : datatypes::II | id.root = \'2.16.840.1.113883.10.20.22.2.17\'))'"
-	 * @generated
-	 */
-	boolean validateViewDownloadTransmitSummarySocialHistorySectionTemplateId(
-			DiagnosticChain diagnostics, Map<Object, Object> context);
-
-	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc --> <!-- begin-model-doc -->
-	 * self.getSocialHistorySection()->excluding(null)->reject(
-	 * getSocialHistorySection().entry->exists(entry : cda::Entry | not
-	 * entry.observation.oclIsUndefined() and
-	 * entry.observation.oclIsKindOf(mu2consol::SmokingStatusObservation)))
-	 * 
-	 * @param diagnostics
-	 *            The chain of diagnostics to which problems are to be appended.
-	 * @param context
-	 *            The cache of context-specific information. <!-- end-model-doc
-	 *            -->
-	 * @model annotation=
-	 *        "http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getSocialHistorySection()->excluding(null)->reject(getSocialHistorySection().entry->exists(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(mu2consol::SmokingStatusObservation)))'"
-	 * @generated
-	 */
-	boolean validateViewDownloadTransmitSummaryMu2consolSocialHistorySectionSmokingStatusObservation(
 			DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**

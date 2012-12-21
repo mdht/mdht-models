@@ -185,54 +185,6 @@ public class ViewDownloadTransmitSummaryImpl extends
 	 * 
 	 * @generated
 	 */
-	public boolean validateViewDownloadTransmitSummaryAssessmentAndPlanSectionTemplateId(
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ViewDownloadTransmitSummaryOperations
-				.validateViewDownloadTransmitSummaryAssessmentAndPlanSectionTemplateId(
-						this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
-	 * @generated
-	 */
-	public boolean validateViewDownloadTransmitSummaryPlanOfCareSectionTemplateId(
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ViewDownloadTransmitSummaryOperations
-				.validateViewDownloadTransmitSummaryPlanOfCareSectionTemplateId(
-						this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
-	 * @generated
-	 */
-	public boolean validateViewDownloadTransmitSummarySocialHistorySectionTemplateId(
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ViewDownloadTransmitSummaryOperations
-				.validateViewDownloadTransmitSummarySocialHistorySectionTemplateId(
-						this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
-	 * @generated
-	 */
-	public boolean validateViewDownloadTransmitSummaryMu2consolSocialHistorySectionSmokingStatusObservation(
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ViewDownloadTransmitSummaryOperations
-				.validateViewDownloadTransmitSummaryMu2consolSocialHistorySectionSmokingStatusObservation(
-						this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
-	 * @generated
-	 */
 	public PreoperativeDiagnosisSection retrievePreoperativeDiagnosisSection() {
 		return ViewDownloadTransmitSummaryOperations
 				.retrievePreoperativeDiagnosisSection(this);

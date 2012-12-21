@@ -38,7 +38,7 @@ import org.openhealthtools.mdht.uml.cda.consol.VitalSignsSection;
  * 
  * @see org.openhealthtools.mdht.uml.cda.mu2consol.Mu2consolPackage#getSummaryOfCareRecord()
  * @model annotation=
- *        "http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='SummaryOfCareRecordCarePlanning SummaryOfCareRecordProblemSection SummaryOfCareRecordAllergiesSection SummaryOfCareRecordImmunizationsSection SummaryOfCareRecordMedicationsSection SummaryOfCareRecordSocialHistorySection SummaryOfCareRecordResultsSection SummaryOfCareRecordVitalSignsSection SummaryOfCareRecordProceduresSection SummaryOfCareRecordFunctionalStatusSection SummaryOfCareRecordSocialHistorySectionTemplateId SummaryOfCareRecordMu2consolSocialHistorySectionSmokingStatusObservation SummaryOfCareRecordPlanOfCareSectionTemplateId SummaryOfCareRecordAssessmentAndPlanSectionTemplateId SummaryOfCareRecordAssessmentSectionTemplateId SummaryOfCareRecordMu2consolAssessmentSectionProblemObservation' constraints.validation.info='SummaryOfCareRecordEncountersSection SummaryOfCareRecordPlanOfCareSection SummaryOfCareRecordAssessmentAndPlanSection SummaryOfCareRecordAssessmentSection SummaryOfCareRecordPostoperativeDiagnosisSection SummaryOfCareRecordHistoryOfPastIllnessSection SummaryOfCareRecordPreoperativeDiagnosisSection SummaryOfCareRecordPostprocedureDiagnosisSection' constraints.validation.query='SummaryOfCareRecordSocialHistorySectionTemplateId SummaryOfCareRecordMu2consolSocialHistorySectionSmokingStatusObservation SummaryOfCareRecordPlanOfCareSectionTemplateId SummaryOfCareRecordAssessmentAndPlanSectionTemplateId SummaryOfCareRecordAssessmentSectionTemplateId SummaryOfCareRecordMu2consolAssessmentSectionProblemObservation'"
+ *        "http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='SummaryOfCareRecordCarePlanning SummaryOfCareRecordProblemSection SummaryOfCareRecordAllergiesSection SummaryOfCareRecordImmunizationsSection SummaryOfCareRecordMedicationsSection SummaryOfCareRecordSocialHistorySection SummaryOfCareRecordResultsSection SummaryOfCareRecordVitalSignsSection SummaryOfCareRecordProceduresSection SummaryOfCareRecordFunctionalStatusSection' constraints.validation.info='SummaryOfCareRecordEncountersSection SummaryOfCareRecordPlanOfCareSection SummaryOfCareRecordAssessmentAndPlanSection SummaryOfCareRecordAssessmentSection SummaryOfCareRecordPostoperativeDiagnosisSection SummaryOfCareRecordHistoryOfPastIllnessSection SummaryOfCareRecordPreoperativeDiagnosisSection SummaryOfCareRecordPostprocedureDiagnosisSection'"
  * @generated
  */
 public interface SummaryOfCareRecord extends GeneralHeaderConstraints {
@@ -365,118 +365,6 @@ public interface SummaryOfCareRecord extends GeneralHeaderConstraints {
 	 * @generated
 	 */
 	boolean validateSummaryOfCareRecordFunctionalStatusSection(
-			DiagnosticChain diagnostics, Map<Object, Object> context);
-
-	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc --> <!-- begin-model-doc -->
-	 * self.getSocialHistorySection()->excluding(null)->reject(
-	 * getSocialHistorySection().templateId->exists(id : datatypes::II | id.root
-	 * = '2.16.840.1.113883.10.20.22.2.17'))
-	 * 
-	 * @param diagnostics
-	 *            The chain of diagnostics to which problems are to be appended.
-	 * @param context
-	 *            The cache of context-specific information. <!-- end-model-doc
-	 *            -->
-	 * @model annotation=
-	 *        "http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getSocialHistorySection()->excluding(null)->reject(getSocialHistorySection().templateId->exists(id : datatypes::II | id.root = \'2.16.840.1.113883.10.20.22.2.17\'))'"
-	 * @generated
-	 */
-	boolean validateSummaryOfCareRecordSocialHistorySectionTemplateId(
-			DiagnosticChain diagnostics, Map<Object, Object> context);
-
-	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc --> <!-- begin-model-doc -->
-	 * self.getSocialHistorySection()->excluding(null)->reject(
-	 * getSocialHistorySection().entry->exists(entry : cda::Entry | not
-	 * entry.observation.oclIsUndefined() and
-	 * entry.observation.oclIsKindOf(mu2consol::SmokingStatusObservation)))
-	 * 
-	 * @param diagnostics
-	 *            The chain of diagnostics to which problems are to be appended.
-	 * @param context
-	 *            The cache of context-specific information. <!-- end-model-doc
-	 *            -->
-	 * @model annotation=
-	 *        "http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getSocialHistorySection()->excluding(null)->reject(getSocialHistorySection().entry->exists(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(mu2consol::SmokingStatusObservation)))'"
-	 * @generated
-	 */
-	boolean validateSummaryOfCareRecordMu2consolSocialHistorySectionSmokingStatusObservation(
-			DiagnosticChain diagnostics, Map<Object, Object> context);
-
-	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc --> <!-- begin-model-doc -->
-	 * self
-	 * .getAssessmentSection()->excluding(null)->reject(getAssessmentSection(
-	 * ).templateId->exists(id : datatypes::II | id.root =
-	 * '2.16.840.1.113883.10.20.22.2.8'))
-	 * 
-	 * @param diagnostics
-	 *            The chain of diagnostics to which problems are to be appended.
-	 * @param context
-	 *            The cache of context-specific information. <!-- end-model-doc
-	 *            -->
-	 * @model annotation=
-	 *        "http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAssessmentSection()->excluding(null)->reject(getAssessmentSection().templateId->exists(id : datatypes::II | id.root = \'2.16.840.1.113883.10.20.22.2.8\'))'"
-	 * @generated
-	 */
-	boolean validateSummaryOfCareRecordAssessmentSectionTemplateId(
-			DiagnosticChain diagnostics, Map<Object, Object> context);
-
-	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc --> <!-- begin-model-doc -->
-	 * self
-	 * .getAssessmentSection()->excluding(null)->reject(getAssessmentSection(
-	 * ).entry->one(entry : cda::Entry | not entry.observation.oclIsUndefined()
-	 * and entry.observation.oclIsKindOf(consol::ProblemObservation)))
-	 * 
-	 * @param diagnostics
-	 *            The chain of diagnostics to which problems are to be appended.
-	 * @param context
-	 *            The cache of context-specific information. <!-- end-model-doc
-	 *            -->
-	 * @model annotation=
-	 *        "http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAssessmentSection()->excluding(null)->reject(getAssessmentSection().entry->one(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(consol::ProblemObservation)))'"
-	 * @generated
-	 */
-	boolean validateSummaryOfCareRecordMu2consolAssessmentSectionProblemObservation(
-			DiagnosticChain diagnostics, Map<Object, Object> context);
-
-	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc --> <!-- begin-model-doc -->
-	 * self.getAssessmentAndPlanSection()->excluding(null)->reject(
-	 * getAssessmentAndPlanSection().templateId->exists(id : datatypes::II |
-	 * id.root = '2.16.840.1.113883.10.20.22.2.9'))
-	 * 
-	 * @param diagnostics
-	 *            The chain of diagnostics to which problems are to be appended.
-	 * @param context
-	 *            The cache of context-specific information. <!-- end-model-doc
-	 *            -->
-	 * @model annotation=
-	 *        "http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAssessmentAndPlanSection()->excluding(null)->reject(getAssessmentAndPlanSection().templateId->exists(id : datatypes::II | id.root = \'2.16.840.1.113883.10.20.22.2.9\'))'"
-	 * @generated
-	 */
-	boolean validateSummaryOfCareRecordAssessmentAndPlanSectionTemplateId(
-			DiagnosticChain diagnostics, Map<Object, Object> context);
-
-	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc --> <!-- begin-model-doc -->
-	 * self
-	 * .getPlanOfCareSection()->excluding(null)->reject(getPlanOfCareSection(
-	 * ).templateId->exists(id : datatypes::II | id.root =
-	 * '2.16.840.1.113883.10.20.22.2.10'))
-	 * 
-	 * @param diagnostics
-	 *            The chain of diagnostics to which problems are to be appended.
-	 * @param context
-	 *            The cache of context-specific information. <!-- end-model-doc
-	 *            -->
-	 * @model annotation=
-	 *        "http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getPlanOfCareSection()->excluding(null)->reject(getPlanOfCareSection().templateId->exists(id : datatypes::II | id.root = \'2.16.840.1.113883.10.20.22.2.10\'))'"
-	 * @generated
-	 */
-	boolean validateSummaryOfCareRecordPlanOfCareSectionTemplateId(
 			DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**

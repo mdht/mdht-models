@@ -371,7 +371,7 @@ public class TransitionOfCareAmbulatorySummaryOperations extends
 			helper.setOperationContext(
 					Mu2consolPackage.Literals.TRANSITION_OF_CARE_AMBULATORY_SUMMARY,
 					Mu2consolPackage.Literals.TRANSITION_OF_CARE_AMBULATORY_SUMMARY
-							.getEAllOperations().get(344));
+							.getEAllOperations().get(338));
 			try {
 				GET_REASON_FOR_REFERRAL_SECTION__EOCL_QRY = helper
 						.createQuery(GET_REASON_FOR_REFERRAL_SECTION__EOCL_EXP);
