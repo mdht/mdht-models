@@ -830,7 +830,7 @@ The UDI should be sent in the participantRole/id.</body>
         <language>Analysis</language>
         <language>OCL</language>
         <body>This criterion SHOULD contain zero or one [0..1] code (CONF:7367)</body>
-        <body>not self.criterion.oclIsUndefined() implies not self.criterion.code.oclIsUndefined()</body>
+        <body>not self.criterion.oclIsUndefined() implies (not self.criterion.code.oclIsUndefined() or self.criterion.code.isNullFlavorDefined())</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_tZn6QBrcEeGo461UQq-B1g" name="criterionText" constrainedElement="_chEhQBUUEeG6PvUxSTZnaw">
@@ -877,7 +877,7 @@ The UDI should be sent in the participantRole/id.</body>
         <language>Analysis</language>
         <language>OCL</language>
         <body>This playingEntity SHALL contain exactly one [1..1] code</body>
-        <body>not self.playingEntity.oclIsUndefined() implies self.playingEntity.code->size() =1</body>
+        <body>not self.playingEntity.oclIsUndefined() implies (self.playingEntity.code.isNullFlavorDefined() or self.playingEntity.code->size() =1)</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_WgMgsBq2EeGo461UQq-B1g" name="playingEntityName" constrainedElement="_VBXq8BUTEeG6PvUxSTZnaw">

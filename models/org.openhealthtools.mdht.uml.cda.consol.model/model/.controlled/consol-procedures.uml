@@ -107,7 +107,7 @@ This clinical statement represents procedures that result in new information abo
         <language>Analysis</language>
         <language>OCL</language>
         <body>code in a procedure activity SHOULD be selected from LOINC (codeSystem 2.16.840.1.113883.6.1) or SNOMED CT (codeSystem 2.16.840.1.113883.6.96), and MAY be selected from CPT-4 (codeSystem 2.16.840.1.113883.6.12), ICD9 Procedures (codeSystem 2.16.840.1.113883.6.4)</body>
-        <body>self.code.codeSystem = '2.16.840.1.113883.6.1' xor self.code.codeSystem = '2.16.840.1.113883.6.96' xor self.code.codeSystem = '2.16.840.1.113883.6.12' xor self.code.codeSystem = '2.16.840.1.113883.6.104'</body>
+        <body>self.code.isNullFlavorDefined() or self.code.codeSystem = '2.16.840.1.113883.6.1' xor self.code.codeSystem = '2.16.840.1.113883.6.96' xor self.code.codeSystem = '2.16.840.1.113883.6.12' xor self.code.codeSystem = '2.16.840.1.113883.6.104'</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_gpDwsBxvEeGXP8PxDYviDg" name="codeOriginalText" constrainedElement="_qGzKgBrPEeGxIZCGAXKxsQ">
@@ -409,7 +409,7 @@ This clinical statement represents any procedure that cannot be classified as an
         <language>Analysis</language>
         <language>OCL</language>
         <body>code in a procedure activity observation SHOULD be selected from LOINC (CodeSystem: 2.16.840.1.113883.6.1) or SNOMED CT (CodeSystem: 2.16.840.1.113883.6.96)</body>
-        <body>self.code.codeSystem = '2.16.840.1.113883.6.1' xor self.code.codeSystem = '2.16.840.1.113883.6.96'</body>
+        <body>self.code.isNullFlavorDefined() or self.code.codeSystem = '2.16.840.1.113883.6.1' xor self.code.codeSystem = '2.16.840.1.113883.6.96'</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_oGW3cBxpEeGXP8PxDYviDg" name="codeOriginalText" constrainedElement="_qGzKgBrPEeGxIZCGAXKxsQ">
@@ -684,7 +684,7 @@ This clinical statement represents procedures whose immediate and primary outcom
         <language>Analysis</language>
         <language>OCL</language>
         <body>code in a procedure activity SHOULD be selected from LOINC (codeSystem 2.16.840.1.113883.6.1) or SNOMED CT (codeSystem 2.16.840.1.113883.6.96), and MAY be selected from CPT-4 (codeSystem 2.16.840.1.113883.6.12), ICD9 Procedures (codeSystem 2.16.840.1.113883.6.104), ICD10 Procedure Coding System (codeSystem 2.16.840.1.113883.6.4)</body>
-        <body>self.code.codeSystem = '2.16.840.1.113883.6.1' xor self.code.codeSystem = '2.16.840.1.113883.6.96' xor self.code.codeSystem = '2.16.840.1.113883.6.12' xor self.code.codeSystem = '2.16.840.1.113883.6.104' xor self.code.codeSystem = '2.16.840.1.113883.6.4'</body>
+        <body>self.code.isNullFlavorDefined() or self.code.codeSystem = '2.16.840.1.113883.6.1' xor self.code.codeSystem = '2.16.840.1.113883.6.96' xor self.code.codeSystem = '2.16.840.1.113883.6.12' xor self.code.codeSystem = '2.16.840.1.113883.6.104' xor self.code.codeSystem = '2.16.840.1.113883.6.4'</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_N4ba0BrQEeGxIZCGAXKxsQ" name="codeOriginalText" constrainedElement="_qGzKgBrPEeGxIZCGAXKxsQ">

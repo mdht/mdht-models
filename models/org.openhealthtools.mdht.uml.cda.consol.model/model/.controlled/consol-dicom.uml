@@ -311,7 +311,7 @@ DICOM Object Catalog sections are not intended for viewing and contain empty sec
         <language>Analysis</language>
         <language>OCL</language>
         <body>code SHOULD contain zero or one [0..1] code=&quot;ASSERTION&quot; (CodeSystem: ActCode 2.16.840.1.113883.5.4)</body>
-        <body>self.code.code = 'ASSERTION' and self.code.codeSystem = '2.16.840.1.113883.5.4'</body>
+        <body>self.code.isNullFlavorDefined() or (self.code.code = 'ASSERTION' and self.code.codeSystem = '2.16.840.1.113883.5.4')</body>
       </specification>
     </ownedRule>
     <generalization xmi:id="_J-F8UUb7EeGp67IkyTw1fg">
@@ -354,7 +354,7 @@ DICOM Object Catalog sections are not intended for viewing and contain empty sec
         <language>Analysis</language>
         <language>OCL</language>
         <body>code SHOULD contain zero or one [0..1] code, which SHALL be selected from ValueSet DIRQuantityMeasurementTypeCodes 2.16.840.1.113883.11.20.9.29 DYNAMIC</body>
-        <body>self.code.codeSystem = '2.16.840.1.113883.6.96'</body>
+        <body>self.code.isNullFlavorDefined() or self.code.codeSystem = '2.16.840.1.113883.6.96'</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_ChkKAOZUEeGINOJ_SD9_dA" name="codeCodeSystemDICOM" constrainedElement="_BCpU8OZUEeGINOJ_SD9_dA">
@@ -362,7 +362,7 @@ DICOM Object Catalog sections are not intended for viewing and contain empty sec
         <language>Analysis</language>
         <language>OCL</language>
         <body>code SHOULD contain zero or one [0..1] code, which SHALL be selected from ValueSet DICOMQuantityMeasurementTypeCodes 2.16.840.1.113883.11.20.9.30 DYNAMIC</body>
-        <body>self.code.codeSystem='1.2.840.10008.2.16.4'</body>
+        <body>self.code.isNullFlavorDefined() or self.code.codeSystem='1.2.840.10008.2.16.4'</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_FkwOMOZUEeGINOJ_SD9_dA" name="numericMeasurementTypes" constrainedElement="_ChkKAOZUEeGINOJ_SD9_dA">
@@ -488,7 +488,7 @@ DICOM Object Catalog sections are not intended for viewing and contain empty sec
         <language>Analysis</language>
         <language>OCL</language>
         <body>The value element code contains a modality code and codeSystem is 1.2.840.10008.2.16.4</body>
-        <body>self.code.qualifier.value->one(val | not val.oclIsUndefined() and val.oclIsKindOf(datatypes::ANY) and val.codeSystem = '1.2.840.10008.2.16.4')</body>
+        <body>self.code.qualifier.value->one(val | (not val.oclIsUndefined() or val.isNullFlavorUndefined()) implies val.oclIsKindOf(datatypes::ANY) and val.codeSystem = '1.2.840.10008.2.16.4')</body>
       </specification>
     </ownedRule>
     <generalization xmi:id="_N2wscUb6EeGp67IkyTw1fg">
