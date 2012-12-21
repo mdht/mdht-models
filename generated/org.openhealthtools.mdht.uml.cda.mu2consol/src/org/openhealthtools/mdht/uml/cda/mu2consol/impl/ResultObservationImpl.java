@@ -26,74 +26,86 @@ import org.openhealthtools.mdht.uml.cda.mu2consol.operations.ResultObservationOp
  * <em><b>Result Observation</b></em>'. <!-- end-user-doc -->
  * <p>
  * </p>
- *
+ * 
  * @generated
  */
 public class ResultObservationImpl extends
 		org.openhealthtools.mdht.uml.cda.consol.impl.ResultObservationImpl
 		implements ResultObservation {
 	/**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * @generated
-   */
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
 	protected ResultObservationImpl() {
-    super();
-  }
+		super();
+	}
 
 	/**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * @generated
-   */
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
-    return Mu2consolPackage.Literals.RESULT_OBSERVATION;
-  }
+		return Mu2consolPackage.Literals.RESULT_OBSERVATION;
+	}
 
 	/**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * @generated
-   */
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
 	public boolean validateMu2consolResultObservationResultObservationCodeValue(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return ResultObservationOperations.validateMu2consolResultObservationResultObservationCodeValue(this, diagnostics, context);
-  }
+		return ResultObservationOperations
+				.validateMu2consolResultObservationResultObservationCodeValue(
+						this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * @generated
-   */
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
 	public boolean validateMu2consolResultObservationCode(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return ResultObservationOperations.validateMu2consolResultObservationCode(this, diagnostics, context);
-  }
+		return ResultObservationOperations
+				.validateMu2consolResultObservationCode(this, diagnostics,
+						context);
+	}
 
 	/**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * @generated
-   */
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
 	@Override
 	public boolean validateResultObservationTemplateId(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return ResultObservationOperations.validateResultObservationTemplateId(this, diagnostics, context);
-  }
+		return ResultObservationOperations.validateResultObservationTemplateId(
+				this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * @generated
-   */
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
 	@Override
 	public ResultObservation init() {
-      return Initializer.Util.init(this);
-  }
+		return Initializer.Util.init(this);
+	}
 
 	/**
-     * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * @generated
-     */
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
 	@Override
 	public ResultObservation init(
 			Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
+		Initializer.Util.init(this, initializers);
+		return this;
+	}
 } // ResultObservationImpl

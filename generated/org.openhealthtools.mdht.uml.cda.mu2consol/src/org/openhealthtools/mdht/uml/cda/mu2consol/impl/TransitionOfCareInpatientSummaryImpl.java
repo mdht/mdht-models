@@ -31,149 +31,219 @@ import org.openhealthtools.mdht.uml.cda.mu2consol.operations.TransitionOfCareInp
  * <em><b>Transition Of Care Inpatient Summary</b></em>'. <!-- end-user-doc -->
  * <p>
  * </p>
- *
+ * 
  * @generated
  */
 public class TransitionOfCareInpatientSummaryImpl extends
 		SummaryOfCareRecordImpl implements TransitionOfCareInpatientSummary {
 	/**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * @generated
-   */
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
 	protected TransitionOfCareInpatientSummaryImpl() {
-    super();
-  }
+		super();
+	}
 
 	/**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * @generated
-   */
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
-    return Mu2consolPackage.Literals.TRANSITION_OF_CARE_INPATIENT_SUMMARY;
-  }
+		return Mu2consolPackage.Literals.TRANSITION_OF_CARE_INPATIENT_SUMMARY;
+	}
 
 	/**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * @generated
-   */
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
 	public boolean validateTransitionOfCareInpatientSummaryInpatientEncounterDiagnoses(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return TransitionOfCareInpatientSummaryOperations.validateTransitionOfCareInpatientSummaryInpatientEncounterDiagnoses(this, diagnostics, context);
-  }
+		return TransitionOfCareInpatientSummaryOperations
+				.validateTransitionOfCareInpatientSummaryInpatientEncounterDiagnoses(
+						this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * @generated
-   */
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
 	public boolean validateTransitionOfCareInpatientSummaryHospitalAdmissionDiagnosisEntry(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return TransitionOfCareInpatientSummaryOperations.validateTransitionOfCareInpatientSummaryHospitalAdmissionDiagnosisEntry(this, diagnostics, context);
-  }
+		return TransitionOfCareInpatientSummaryOperations
+				.validateTransitionOfCareInpatientSummaryHospitalAdmissionDiagnosisEntry(
+						this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-   * @generated
-   */
-	public boolean validateTransitionOfCareInpatientSummaryHospitalDischargeDiagnosesEntry(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return TransitionOfCareInpatientSummaryOperations.validateTransitionOfCareInpatientSummaryHospitalDischargeDiagnosesEntry(this, diagnostics, context);
-  }
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	public boolean validateTransitionOfCareInpatientSummaryHospitalDischargeDiagnosesEntry(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return TransitionOfCareInpatientSummaryOperations
+				.validateTransitionOfCareInpatientSummaryHospitalDischargeDiagnosesEntry(
+						this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-   * @generated
-   */
-	public boolean validateTransitionOfCareInpatientSummaryPostoperativeDiagnosisEntry(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return TransitionOfCareInpatientSummaryOperations.validateTransitionOfCareInpatientSummaryPostoperativeDiagnosisEntry(this, diagnostics, context);
-  }
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	public boolean validateTransitionOfCareInpatientSummaryPostoperativeDiagnosisEntry(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return TransitionOfCareInpatientSummaryOperations
+				.validateTransitionOfCareInpatientSummaryPostoperativeDiagnosisEntry(
+						this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-   * @generated
-   */
-	public boolean validateTransitionOfCareInpatientSummaryPostprocedureDiagnosisEntry(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return TransitionOfCareInpatientSummaryOperations.validateTransitionOfCareInpatientSummaryPostprocedureDiagnosisEntry(this, diagnostics, context);
-  }
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	public boolean validateTransitionOfCareInpatientSummaryPostprocedureDiagnosisEntry(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return TransitionOfCareInpatientSummaryOperations
+				.validateTransitionOfCareInpatientSummaryPostprocedureDiagnosisEntry(
+						this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * @generated
-   */
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
 	public boolean validateTransitionOfCareInpatientSummaryHospitalDischargeInstructionsSection(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return TransitionOfCareInpatientSummaryOperations.validateTransitionOfCareInpatientSummaryHospitalDischargeInstructionsSection(this, diagnostics, context);
-  }
+		return TransitionOfCareInpatientSummaryOperations
+				.validateTransitionOfCareInpatientSummaryHospitalDischargeInstructionsSection(
+						this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * @generated
-   */
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
 	public boolean validateTransitionOfCareInpatientSummaryHospitalDischargeMedicationsSection(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return TransitionOfCareInpatientSummaryOperations.validateTransitionOfCareInpatientSummaryHospitalDischargeMedicationsSection(this, diagnostics, context);
-  }
+		return TransitionOfCareInpatientSummaryOperations
+				.validateTransitionOfCareInpatientSummaryHospitalDischargeMedicationsSection(
+						this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * @generated
-   */
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	public boolean validateTransitionOfCareInpatientSummaryHospitalAdmissionDiagnosisSection(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return TransitionOfCareInpatientSummaryOperations
+				.validateTransitionOfCareInpatientSummaryHospitalAdmissionDiagnosisSection(
+						this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	public boolean validateTransitionOfCareInpatientSummaryHospitalDischargeDiagnosisSection(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return TransitionOfCareInpatientSummaryOperations
+				.validateTransitionOfCareInpatientSummaryHospitalDischargeDiagnosisSection(
+						this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	public boolean validateTransitionOfCareInpatientSummaryHospitalAdmissionMedicationsSectionEntriesOptional(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return TransitionOfCareInpatientSummaryOperations
+				.validateTransitionOfCareInpatientSummaryHospitalAdmissionMedicationsSectionEntriesOptional(
+						this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
 	public HospitalDischargeInstructionsSection getHospitalDischargeInstructionsSection() {
-    return TransitionOfCareInpatientSummaryOperations.getHospitalDischargeInstructionsSection(this);
-  }
+		return TransitionOfCareInpatientSummaryOperations
+				.getHospitalDischargeInstructionsSection(this);
+	}
 
 	/**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * @generated
-   */
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
 	public HospitalDischargeMedicationsSection getHospitalDischargeMedicationsSection() {
-    return TransitionOfCareInpatientSummaryOperations.getHospitalDischargeMedicationsSection(this);
-  }
+		return TransitionOfCareInpatientSummaryOperations
+				.getHospitalDischargeMedicationsSection(this);
+	}
 
 	/**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * @generated
-   */
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
 	public HospitalAdmissionDiagnosisSection getHospitalAdmissionDiagnosisSection() {
-    return TransitionOfCareInpatientSummaryOperations.getHospitalAdmissionDiagnosisSection(this);
-  }
+		return TransitionOfCareInpatientSummaryOperations
+				.getHospitalAdmissionDiagnosisSection(this);
+	}
 
 	/**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * @generated
-   */
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
 	public HospitalDischargeDiagnosisSection getHospitalDischargeDiagnosisSection() {
-    return TransitionOfCareInpatientSummaryOperations.getHospitalDischargeDiagnosisSection(this);
-  }
+		return TransitionOfCareInpatientSummaryOperations
+				.getHospitalDischargeDiagnosisSection(this);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
 	public HospitalAdmissionMedicationsSectionEntriesOptional getHospitalAdmissionMedicationsSectionEntriesOptional() {
-    return TransitionOfCareInpatientSummaryOperations.getHospitalAdmissionMedicationsSectionEntriesOptional(this);
-  }
+		return TransitionOfCareInpatientSummaryOperations
+				.getHospitalAdmissionMedicationsSectionEntriesOptional(this);
+	}
 
 	/**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * @generated
-   */
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
 	@Override
 	public TransitionOfCareInpatientSummary init() {
-      return Initializer.Util.init(this);
-  }
+		return Initializer.Util.init(this);
+	}
 
 	/**
-     * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * @generated
-     */
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
 	@Override
 	public TransitionOfCareInpatientSummary init(
 			Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
+		Initializer.Util.init(this, initializers);
+		return this;
+	}
 } // TransitionOfCareInpatientSummaryImpl

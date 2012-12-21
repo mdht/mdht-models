@@ -21,10 +21,11 @@ import org.openhealthtools.mdht.uml.cda.consol.ProblemObservation;
 /**
  * <!-- begin-user-doc --> A representation of the model object '
  * <em><b>Assessment And Plan Section</b></em>'. <!-- end-user-doc -->
- *
- *
+ * 
+ * 
  * @see org.openhealthtools.mdht.uml.cda.mu2consol.Mu2consolPackage#getAssessmentAndPlanSection()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='Mu2consolAssessmentAndPlanSectionTemplateId' templateId.root='2.16.840.1.113883.10.20.22.2.9'"
+ * @model annotation=
+ *        "http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='Mu2consolAssessmentAndPlanSectionTemplateId' templateId.root='2.16.840.1.113883.10.20.22.2.9'"
  * @generated
  */
 public interface AssessmentAndPlanSection extends
@@ -90,15 +91,17 @@ public interface AssessmentAndPlanSection extends
 	ProblemObservation getProblemObservation();
 
 	/**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * @generated
-   */
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
 	public AssessmentAndPlanSection init();
 
 	/**
-     * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * @generated
-     */
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
 	public AssessmentAndPlanSection init(
 			Iterable<? extends Initializer<? extends EObject>> initializers);
 } // AssessmentAndPlanSection
