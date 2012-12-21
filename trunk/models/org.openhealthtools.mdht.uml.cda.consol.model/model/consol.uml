@@ -621,7 +621,7 @@
           <language>Analysis</language>
           <language>OCL</language>
           <body>SHOULD be from LOINC (CodeSystem: 2.16.840.1.113883.6.1) or SNOMED CT (CodeSystem: 2.16.840.1.113883.6.96) identifying the assessment scale</body>
-          <body>self.code.codeSystem = '2.16.840.1.113883.6.1' or self.code.codeSystem = '2.16.840.1.113883.6.96'</body>
+          <body>self.code.isNullFlavorDefined() or self.code.codeSystem = '2.16.840.1.113883.6.1' or self.code.codeSystem = '2.16.840.1.113883.6.96'</body>
         </specification>
       </ownedRule>
       <ownedRule xmi:id="_WfZX8OY0EeGINOJ_SD9_dA" name="interpretationCodeTranslation" constrainedElement="_Zi33YOYxEeGINOJ_SD9_dA">
@@ -775,7 +775,7 @@
           <language>Analysis</language>
           <language>OCL</language>
           <body>observation/code SHALL be from LOINC (CodeSystem: 2.16.840.1.113883.6.1) or SNOMED CT (CodeSystem: 2.16.840.1.113883.6.96) and represents components of the scale</body>
-          <body>self.code.codeSystem = '2.16.840.1.113883.6.1' or self.code.codeSystem = '2.16.840.1.113883.6.96'</body>
+          <body>self.code.isNullFlavorDefined() or self.code.codeSystem = '2.16.840.1.113883.6.1' or self.code.codeSystem = '2.16.840.1.113883.6.96'</body>
         </specification>
       </ownedRule>
       <ownedRule xmi:id="_u6PHcOY6EeGINOJ_SD9_dA" name="valueTranslation" constrainedElement="_aZZWGeY5EeGINOJ_SD9_dA">
@@ -831,7 +831,7 @@
           <language>Analysis</language>
           <language>OCL</language>
           <body>the code/@code SHALL be selected from LOINC (codeSystem: 2.16.840.1.113883.6.1) or SNOMED CT (CodeSystem: 2.16.840.1.113883.6.96</body>
-          <body>self.value->forAll(val | val.oclAsType(datatypes::CD).codeSystem = '2.16.840.1.113883.6.1' or val.oclAsType(datatypes::CD).codeSystem = '2.16.840.1.113883.6.96')</body>
+          <body>self.value->forAll(val | val.isNullFlavorDefined() or val.oclAsType(datatypes::CD).codeSystem = '2.16.840.1.113883.6.1' or val.oclAsType(datatypes::CD).codeSystem = '2.16.840.1.113883.6.96')</body>
         </specification>
       </ownedRule>
       <generalization xmi:id="__pNCUeY-EeGINOJ_SD9_dA">
@@ -1177,7 +1177,7 @@ This is different from a cognitive status problem observation, which is a clinic
           <language>Analysis</language>
           <language>OCL</language>
           <body>If value/@xsi:type=CD, SHOULD contain a code from SNOMED CT (CodeSystem: 2.16.840.1.113883.6.96)</body>
-          <body>self.value->forAll(val | val.oclIsTypeOf(datatypes::CD) implies val.oclAsType(datatypes::CD).codeSystem = '2.16.840.1.113883.6.96')</body>
+          <body>self.value->forAll(val | val.oclIsTypeOf(datatypes::CD) implies (val.isNullFlavorDefined() or val.oclAsType(datatypes::CD).codeSystem = '2.16.840.1.113883.6.96'))</body>
         </specification>
       </ownedRule>
       <generalization xmi:id="_gLy9QOZfEeGINOJ_SD9_dA">
@@ -1305,7 +1305,7 @@ An appropriate nullFlavor can be used when the organizer/code or organizer/id is
           <language>Analysis</language>
           <language>OCL</language>
           <body>code SHOULD contain zero or one [0..1] @code should be selected from ICF (codeSystem 2.16.840.1.113883.6.254) or SNOMED CT (codeSystem 2.16.840.1.113883.6.96)</body>
-          <body>self.code.codeSystem = '2.16.840.1.113883.6.254' or self.code.codeSystem = '2.16.840.1.113883.6.96'</body>
+          <body>self.code.isNullFlavorDefined() or self.code.codeSystem = '2.16.840.1.113883.6.254' or self.code.codeSystem = '2.16.840.1.113883.6.96'</body>
         </specification>
       </ownedRule>
       <generalization xmi:id="_-QfYkOZiEeGINOJ_SD9_dA">
@@ -1594,7 +1594,7 @@ UNK.  If the code is something other than SNOMED, @nullFlavor SHOULD be OTH and 
           <language>Analysis</language>
           <language>OCL</language>
           <body>If value/@xsi:type=CD, SHOULD contain a code from SNOMED CT (CodeSystem: 2.16.840.1.113883.6.96)</body>
-          <body>self.value->forAll(val | val.oclIsTypeOf(datatypes::CD) implies val.oclAsType(datatypes::CD).codeSystem = '2.16.840.1.113883.6.96')</body>
+          <body>self.value->forAll(val | val.oclIsTypeOf(datatypes::CD) implies (val.isNullFlavorDefined() or val.oclAsType(datatypes::CD).codeSystem = '2.16.840.1.113883.6.96'))</body>
         </specification>
       </ownedRule>
       <generalization xmi:id="_dM_VcObxEeGINOJ_SD9_dA">
@@ -1716,7 +1716,7 @@ An appropriate nullFlavor can be used when the organizer/code or organizer/id is
           <language>Analysis</language>
           <language>OCL</language>
           <body>code SHOULD contain zero or one [0..1] @code should be selected from ICF (codeSystem 2.16.840.1.113883.6.254) or SNOMED CT (codeSystem 2.16.840.1.113883.6.96)</body>
-          <body>self.code.codeSystem = '2.16.840.1.113883.6.254' or self.code.codeSystem = '2.16.840.1.113883.6.96'</body>
+          <body>self.code.isNullFlavorDefined() or self.code.codeSystem = '2.16.840.1.113883.6.254' or self.code.codeSystem = '2.16.840.1.113883.6.96'</body>
         </specification>
       </ownedRule>
       <generalization xmi:id="_8KA8YObzEeGINOJ_SD9_dA">
@@ -1972,7 +1972,7 @@ UNK.  If the code is something other than SNOMED, @nullFlavor SHOULD be OTH and 
           <language>Analysis</language>
           <language>OCL</language>
           <body>value SHOULD contain exactly one [1..1] @code, which SHOULD be selected from ValueSet TargetSite Qualifiers  2.16.840.1.113883.11.20.9.37</body>
-          <body>self.targetSiteCode.qualifier->forAll(value->size() = 1 and not value.code.oclIsUndefined() and value.codeSystem = '2.16.840.1.113883.6.96')</body>
+          <body>self.targetSiteCode.qualifier->forAll((value.isNullFlavorDefined()) or (value->size() = 1 and not value.code.oclIsUndefined() and value.codeSystem = '2.16.840.1.113883.6.96'))</body>
         </specification>
       </ownedRule>
       <generalization xmi:id="_9raZwOZbEeGINOJ_SD9_dA">

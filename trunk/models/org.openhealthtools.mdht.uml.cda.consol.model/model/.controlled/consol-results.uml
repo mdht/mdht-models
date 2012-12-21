@@ -19,7 +19,7 @@ If any Results Observation within the organizer has a statusCode of 'active', th
         <language>Analysis</language>
         <language>OCL</language>
         <body>The value for 'code' in a result organizer SHOULD be selected from LOINC (codeSystem 2.16.840.1.113883.6.1) or SNOMED CT (codeSystem 2.16.840.1.113883.6.96) and MAY be selected from CPT-4 (codeSystem 2.16.840.1.113883.6.12).  Laboratory results SHOULD be from LOINC (CodeSystem: 2.16.840.1.113883.6.1) or other constrained terminology named by the US Department of Health and Human Services Office of National Coordinator or other federal agency. Local and/or regional codes for laboratory results SHOULD also be allowed.</body>
-        <body>self.code.codeSystem = '2.16.840.1.113883.6.1' xor self.code.codeSystem = '2.16.840.1.113883.6.96' xor self.code.codeSystem = '2.16.840.1.113883.6.12'</body>
+        <body>self.code.isNullFlavorDefined() or self.code.codeSystem = '2.16.840.1.113883.6.1' or self.code.codeSystem = '2.16.840.1.113883.6.96' or self.code.codeSystem = '2.16.840.1.113883.6.12'</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_1dxCgBtuEeG4C_iCHrZZ9w" name="classCodeValue" constrainedElement="_2JxzgBSVEeGGzu7fmW9pXw">
@@ -137,7 +137,7 @@ The result observation includes a statusCode to allow recording the status of an
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_2J69cRSVEeGGzu7fmW9pXw">
         <language>OCL</language>
         <language>Analysis</language>
-        <body>self.code.codeSystem = '2.16.840.1.113883.6.1' xor self.code.codeSystem = '2.16.840.1.113883.6.96'</body>
+        <body>self.code.isNullFlavorDefined() or self.code.codeSystem = '2.16.840.1.113883.6.1' or self.code.codeSystem = '2.16.840.1.113883.6.96'</body>
         <body>The value for 'code' in a result observation SHOULD be selected from LOINC (codeSystem 2.16.840.1.113883.6.1) or SNOMED CT (codeSystem 2.16.840.1.113883.6.96)&#xD;
 Laboratory results SHOULD be from LOINC (CodeSystem: 2.16.840.1.113883.6.1) or other constrained terminology named by the US Department of Health and Human Services Office of National Coordinator or other federal agency. Local and/or regional codes for laboratory results are allowed. The Local and/or regional codes SHOULD be sent in the translation element.</body>
       </specification>
