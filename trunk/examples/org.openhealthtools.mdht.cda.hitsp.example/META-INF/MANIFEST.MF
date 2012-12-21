@@ -1,0 +1,7 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Example
+Bundle-SymbolicName: org.openhealthtools.mdht.cda.hitsp.example
+Bundle-Version: 1.0.0.qualifier
+Require-Bundle: org.openhealthtools.mdht.uml.cda.ihe,
+ org.openhealthtools.mdht.uml.cda.hitsp
