@@ -992,7 +992,7 @@ public class TransitionOfCareInpatientSummaryOperations extends
 			helper.setOperationContext(
 					Mu2consolPackage.Literals.TRANSITION_OF_CARE_INPATIENT_SUMMARY,
 					Mu2consolPackage.Literals.TRANSITION_OF_CARE_INPATIENT_SUMMARY
-							.getEAllOperations().get(351));
+							.getEAllOperations().get(345));
 			try {
 				GET_HOSPITAL_DISCHARGE_INSTRUCTIONS_SECTION__EOCL_QRY = helper
 						.createQuery(GET_HOSPITAL_DISCHARGE_INSTRUCTIONS_SECTION__EOCL_EXP);
@@ -1053,7 +1053,7 @@ public class TransitionOfCareInpatientSummaryOperations extends
 			helper.setOperationContext(
 					Mu2consolPackage.Literals.TRANSITION_OF_CARE_INPATIENT_SUMMARY,
 					Mu2consolPackage.Literals.TRANSITION_OF_CARE_INPATIENT_SUMMARY
-							.getEAllOperations().get(352));
+							.getEAllOperations().get(346));
 			try {
 				GET_HOSPITAL_DISCHARGE_MEDICATIONS_SECTION__EOCL_QRY = helper
 						.createQuery(GET_HOSPITAL_DISCHARGE_MEDICATIONS_SECTION__EOCL_EXP);
@@ -1114,7 +1114,7 @@ public class TransitionOfCareInpatientSummaryOperations extends
 			helper.setOperationContext(
 					Mu2consolPackage.Literals.TRANSITION_OF_CARE_INPATIENT_SUMMARY,
 					Mu2consolPackage.Literals.TRANSITION_OF_CARE_INPATIENT_SUMMARY
-							.getEAllOperations().get(353));
+							.getEAllOperations().get(347));
 			try {
 				GET_HOSPITAL_ADMISSION_DIAGNOSIS_SECTION__EOCL_QRY = helper
 						.createQuery(GET_HOSPITAL_ADMISSION_DIAGNOSIS_SECTION__EOCL_EXP);
@@ -1175,7 +1175,7 @@ public class TransitionOfCareInpatientSummaryOperations extends
 			helper.setOperationContext(
 					Mu2consolPackage.Literals.TRANSITION_OF_CARE_INPATIENT_SUMMARY,
 					Mu2consolPackage.Literals.TRANSITION_OF_CARE_INPATIENT_SUMMARY
-							.getEAllOperations().get(354));
+							.getEAllOperations().get(348));
 			try {
 				GET_HOSPITAL_DISCHARGE_DIAGNOSIS_SECTION__EOCL_QRY = helper
 						.createQuery(GET_HOSPITAL_DISCHARGE_DIAGNOSIS_SECTION__EOCL_EXP);
@@ -1236,7 +1236,7 @@ public class TransitionOfCareInpatientSummaryOperations extends
 			helper.setOperationContext(
 					Mu2consolPackage.Literals.TRANSITION_OF_CARE_INPATIENT_SUMMARY,
 					Mu2consolPackage.Literals.TRANSITION_OF_CARE_INPATIENT_SUMMARY
-							.getEAllOperations().get(355));
+							.getEAllOperations().get(349));
 			try {
 				GET_HOSPITAL_ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL__EOCL_QRY = helper
 						.createQuery(GET_HOSPITAL_ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL__EOCL_EXP);

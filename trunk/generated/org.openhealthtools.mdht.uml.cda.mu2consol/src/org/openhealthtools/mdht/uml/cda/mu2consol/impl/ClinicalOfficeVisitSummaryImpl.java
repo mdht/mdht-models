@@ -334,30 +334,6 @@ public class ClinicalOfficeVisitSummaryImpl extends
 	 * 
 	 * @generated
 	 */
-	public boolean validateClinicalOfficeVisitSummarySocialHistorySectionTemplateId(
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ClinicalOfficeVisitSummaryOperations
-				.validateClinicalOfficeVisitSummarySocialHistorySectionTemplateId(
-						this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
-	 * @generated
-	 */
-	public boolean validateClinicalOfficeVisitSummaryMu2consolSocialHistorySectionSmokingStatusObservation(
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ClinicalOfficeVisitSummaryOperations
-				.validateClinicalOfficeVisitSummaryMu2consolSocialHistorySectionSmokingStatusObservation(
-						this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
-	 * @generated
-	 */
 	public PlanOfCareSection retrievePlanOfCareSection() {
 		return ClinicalOfficeVisitSummaryOperations
 				.retrievePlanOfCareSection(this);
@@ -381,30 +357,6 @@ public class ClinicalOfficeVisitSummaryImpl extends
 	public MedicationsAdministeredSection retrieveMedicationsAdministeredSection() {
 		return ClinicalOfficeVisitSummaryOperations
 				.retrieveMedicationsAdministeredSection(this);
-	}
-
-	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
-	 * @generated
-	 */
-	public boolean validateClinicalOfficeVisitSummaryPlanOfCareSectionTemplateId(
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ClinicalOfficeVisitSummaryOperations
-				.validateClinicalOfficeVisitSummaryPlanOfCareSectionTemplateId(
-						this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
-	 * @generated
-	 */
-	public boolean validateClinicalOfficeVisitSummaryAssessmentAndPlanSectionTemplateId(
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ClinicalOfficeVisitSummaryOperations
-				.validateClinicalOfficeVisitSummaryAssessmentAndPlanSectionTemplateId(
-						this, diagnostics, context);
 	}
 
 	/**
