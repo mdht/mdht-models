@@ -32,10 +32,11 @@ import org.openhealthtools.mdht.uml.cda.consol.VitalSignsSection;
 /**
  * <!-- begin-user-doc --> A representation of the model object '
  * <em><b>Clinical Office Visit Summary</b></em>'. <!-- end-user-doc -->
- *
- *
+ * 
+ * 
  * @see org.openhealthtools.mdht.uml.cda.mu2consol.Mu2consolPackage#getClinicalOfficeVisitSummary()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.query='ClinicalOfficeVisitSummaryResponsibleParty ClinicalOfficeVisitSummaryEffectiveTime ClinicalOfficeVisitSummaryLocation ClinicalOfficeVisitSummaryInstructionsEntry ClinicalOfficeVisitSummaryMedicationsAdministeredEntry ClinicalOfficeVisitSummaryPlanOfCareSectionTemplateId ClinicalOfficeVisitSummaryAssessmentAndPlanSectionTemplateId ClinicalOfficeVisitSummarySocialHistorySectionTemplateId ClinicalOfficeVisitSummaryMu2consolSocialHistorySectionSmokingStatusObservation' constraints.validation.error='ClinicalOfficeVisitSummaryResponsibleParty ClinicalOfficeVisitSummaryReasonForOfficeVisit ClinicalOfficeVisitSummaryCarePlanning ClinicalOfficeVisitSummaryEffectiveTime ClinicalOfficeVisitSummaryLocation ClinicalOfficeVisitSummaryInstructionsEntry ClinicalOfficeVisitSummaryMedicationsAdministeredEntry ClinicalOfficeVisitSummaryProblemSection ClinicalOfficeVisitSummaryMedicationsSection ClinicalOfficeVisitSummaryAllergiesSection ClinicalOfficeVisitSummaryResultsSection ClinicalOfficeVisitSummaryVitalSignsSection ClinicalOfficeVisitSummaryProceduresSection ClinicalOfficeVisitSummaryImmunizationsSection ClinicalOfficeVisitSummaryMedicationsAdministeredSection ClinicalOfficeVisitSummaryInstructionsSection ClinicalOfficeVisitSummarySocialHistorySection ClinicalOfficeVisitSummaryPlanOfCareSectionTemplateId ClinicalOfficeVisitSummaryAssessmentAndPlanSectionTemplateId ClinicalOfficeVisitSummarySocialHistorySectionTemplateId ClinicalOfficeVisitSummaryMu2consolSocialHistorySectionSmokingStatusObservation'"
+ * @model annotation=
+ *        "http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.query='ClinicalOfficeVisitSummaryResponsibleParty ClinicalOfficeVisitSummaryEffectiveTime ClinicalOfficeVisitSummaryLocation ClinicalOfficeVisitSummaryInstructionsEntry ClinicalOfficeVisitSummaryMedicationsAdministeredEntry ClinicalOfficeVisitSummaryPlanOfCareSectionTemplateId ClinicalOfficeVisitSummaryAssessmentAndPlanSectionTemplateId ClinicalOfficeVisitSummarySocialHistorySectionTemplateId ClinicalOfficeVisitSummaryMu2consolSocialHistorySectionSmokingStatusObservation' constraints.validation.error='ClinicalOfficeVisitSummaryResponsibleParty ClinicalOfficeVisitSummaryReasonForOfficeVisit ClinicalOfficeVisitSummaryCarePlanning ClinicalOfficeVisitSummaryEffectiveTime ClinicalOfficeVisitSummaryLocation ClinicalOfficeVisitSummaryInstructionsEntry ClinicalOfficeVisitSummaryMedicationsAdministeredEntry ClinicalOfficeVisitSummaryProblemSection ClinicalOfficeVisitSummaryMedicationsSection ClinicalOfficeVisitSummaryAllergiesSection ClinicalOfficeVisitSummaryResultsSection ClinicalOfficeVisitSummaryVitalSignsSection ClinicalOfficeVisitSummaryProceduresSection ClinicalOfficeVisitSummaryImmunizationsSection ClinicalOfficeVisitSummaryMedicationsAdministeredSection ClinicalOfficeVisitSummaryInstructionsSection ClinicalOfficeVisitSummarySocialHistorySection ClinicalOfficeVisitSummaryPlanOfCareSectionTemplateId ClinicalOfficeVisitSummaryAssessmentAndPlanSectionTemplateId ClinicalOfficeVisitSummarySocialHistorySectionTemplateId ClinicalOfficeVisitSummaryMu2consolSocialHistorySectionSmokingStatusObservation' constraints.validation.info='ClinicalOfficeVisitSummaryPlanOfCareSection ClinicalOfficeVisitSummaryReasonForVisitSection ClinicalOfficeVisitSummaryChiefComplaintSection ClinicalOfficeVisitSummaryChiefComplaintAndReasonForVisitSection ClinicalOfficeVisitSummaryAssessmentAndPlanSection'"
  * @generated
  */
 public interface ClinicalOfficeVisitSummary extends GeneralHeaderConstraints {
@@ -147,28 +148,42 @@ public interface ClinicalOfficeVisitSummary extends GeneralHeaderConstraints {
 			DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
-   * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-   * <!-- begin-model-doc -->
-   * @param diagnostics The chain of diagnostics to which problems are to be appended.
-   * @param context The cache of context-specific information.
-   * <!-- end-model-doc -->
-   * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.retrieveInstructionsSection()->excluding(null)->reject(retrieveInstructionsSection().getActs()->exists(a : cda::Act | a.oclIsKindOf(consol::Instructions)))'"
-   * @generated
-   */
-	boolean validateClinicalOfficeVisitSummaryInstructionsEntry(DiagnosticChain diagnostics, Map<Object, Object> context);
+	 * <!-- begin-user-doc --> <!-- end-user-doc --> <!-- begin-model-doc -->
+	 * self.retrieveInstructionsSection()->excluding(null)->reject(
+	 * retrieveInstructionsSection().getActs()->exists(a : cda::Act |
+	 * a.oclIsKindOf(consol::Instructions)))
+	 * 
+	 * @param diagnostics
+	 *            The chain of diagnostics to which problems are to be appended.
+	 * @param context
+	 *            The cache of context-specific information. <!-- end-model-doc
+	 *            -->
+	 * @model annotation=
+	 *        "http://www.eclipse.org/uml2/1.1.0/GenModel body='self.retrieveInstructionsSection()->excluding(null)->reject(retrieveInstructionsSection().getActs()->exists(a : cda::Act | a.oclIsKindOf(consol::Instructions)))'"
+	 * @generated
+	 */
+	boolean validateClinicalOfficeVisitSummaryInstructionsEntry(
+			DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
-   * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-   * <!-- begin-model-doc -->
-   * @param diagnostics The chain of diagnostics to which problems are to be appended.
-   * @param context The cache of context-specific information.
-   * <!-- end-model-doc -->
-   * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.retrieveMedicationsAdministeredSection()->excluding(null)->reject(retrieveMedicationsAdministeredSection().getSubstanceAdministrations()->exists(sa : cda::SubstanceAdministration | sa.oclIsKindOf(consol::MedicationActivity)))'"
-   * @generated
-   */
-	boolean validateClinicalOfficeVisitSummaryMedicationsAdministeredEntry(DiagnosticChain diagnostics, Map<Object, Object> context);
+	 * <!-- begin-user-doc --> <!-- end-user-doc --> <!-- begin-model-doc -->
+	 * self.retrieveMedicationsAdministeredSection()->excluding(null)->reject(
+	 * retrieveMedicationsAdministeredSection
+	 * ().getSubstanceAdministrations()->exists(sa :
+	 * cda::SubstanceAdministration |
+	 * sa.oclIsKindOf(consol::MedicationActivity)))
+	 * 
+	 * @param diagnostics
+	 *            The chain of diagnostics to which problems are to be appended.
+	 * @param context
+	 *            The cache of context-specific information. <!-- end-model-doc
+	 *            -->
+	 * @model annotation=
+	 *        "http://www.eclipse.org/uml2/1.1.0/GenModel body='self.retrieveMedicationsAdministeredSection()->excluding(null)->reject(retrieveMedicationsAdministeredSection().getSubstanceAdministrations()->exists(sa : cda::SubstanceAdministration | sa.oclIsKindOf(consol::MedicationActivity)))'"
+	 * @generated
+	 */
+	boolean validateClinicalOfficeVisitSummaryMedicationsAdministeredEntry(
+			DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc --> <!-- begin-model-doc -->
@@ -280,6 +295,24 @@ public interface ClinicalOfficeVisitSummary extends GeneralHeaderConstraints {
 	 * <!-- begin-user-doc --> <!-- end-user-doc --> <!-- begin-model-doc -->
 	 * self.getAllSections()->one(section : cda::Section | not
 	 * section.oclIsUndefined() and
+	 * section.oclIsKindOf(mu2consol::PlanOfCareSection))
+	 * 
+	 * @param diagnostics
+	 *            The chain of diagnostics to which problems are to be appended.
+	 * @param context
+	 *            The cache of context-specific information. <!-- end-model-doc
+	 *            -->
+	 * @model annotation=
+	 *        "http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(mu2consol::PlanOfCareSection))'"
+	 * @generated
+	 */
+	boolean validateClinicalOfficeVisitSummaryPlanOfCareSection(
+			DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc --> <!-- begin-model-doc -->
+	 * self.getAllSections()->one(section : cda::Section | not
+	 * section.oclIsUndefined() and
 	 * section.oclIsKindOf(consol::ProceduresSection))
 	 * 
 	 * @param diagnostics
@@ -328,6 +361,78 @@ public interface ClinicalOfficeVisitSummary extends GeneralHeaderConstraints {
 	 * @generated
 	 */
 	boolean validateClinicalOfficeVisitSummaryMedicationsAdministeredSection(
+			DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc --> <!-- begin-model-doc -->
+	 * self.getAllSections()->one(section : cda::Section | not
+	 * section.oclIsUndefined() and
+	 * section.oclIsKindOf(consol::ReasonForVisitSection))
+	 * 
+	 * @param diagnostics
+	 *            The chain of diagnostics to which problems are to be appended.
+	 * @param context
+	 *            The cache of context-specific information. <!-- end-model-doc
+	 *            -->
+	 * @model annotation=
+	 *        "http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ReasonForVisitSection))'"
+	 * @generated
+	 */
+	boolean validateClinicalOfficeVisitSummaryReasonForVisitSection(
+			DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc --> <!-- begin-model-doc -->
+	 * self.getAllSections()->one(section : cda::Section | not
+	 * section.oclIsUndefined() and
+	 * section.oclIsKindOf(consol::ChiefComplaintSection))
+	 * 
+	 * @param diagnostics
+	 *            The chain of diagnostics to which problems are to be appended.
+	 * @param context
+	 *            The cache of context-specific information. <!-- end-model-doc
+	 *            -->
+	 * @model annotation=
+	 *        "http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ChiefComplaintSection))'"
+	 * @generated
+	 */
+	boolean validateClinicalOfficeVisitSummaryChiefComplaintSection(
+			DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc --> <!-- begin-model-doc -->
+	 * self.getAllSections()->one(section : cda::Section | not
+	 * section.oclIsUndefined() and
+	 * section.oclIsKindOf(consol::ChiefComplaintAndReasonForVisitSection))
+	 * 
+	 * @param diagnostics
+	 *            The chain of diagnostics to which problems are to be appended.
+	 * @param context
+	 *            The cache of context-specific information. <!-- end-model-doc
+	 *            -->
+	 * @model annotation=
+	 *        "http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ChiefComplaintAndReasonForVisitSection))'"
+	 * @generated
+	 */
+	boolean validateClinicalOfficeVisitSummaryChiefComplaintAndReasonForVisitSection(
+			DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc --> <!-- begin-model-doc -->
+	 * self.getAllSections()->one(section : cda::Section | not
+	 * section.oclIsUndefined() and
+	 * section.oclIsKindOf(mu2consol::AssessmentAndPlanSection))
+	 * 
+	 * @param diagnostics
+	 *            The chain of diagnostics to which problems are to be appended.
+	 * @param context
+	 *            The cache of context-specific information. <!-- end-model-doc
+	 *            -->
+	 * @model annotation=
+	 *        "http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(mu2consol::AssessmentAndPlanSection))'"
+	 * @generated
+	 */
+	boolean validateClinicalOfficeVisitSummaryAssessmentAndPlanSection(
 			DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
@@ -400,21 +505,32 @@ public interface ClinicalOfficeVisitSummary extends GeneralHeaderConstraints {
 	PlanOfCareSection retrievePlanOfCareSection();
 
 	/**
-   * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-   * @model required="true" ordered="false"
-   *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::InstructionsSection))->asSequence()->any(true).oclAsType(consol::InstructionsSection)'"
-   * @generated
-   */
+	 * <!-- begin-user-doc --> <!-- end-user-doc --> <!-- begin-model-doc -->
+	 * self.getAllSections()->select(section : cda::Section | not
+	 * section.oclIsUndefined() and
+	 * section.oclIsKindOf(consol::InstructionsSection
+	 * ))->asSequence()->any(true).oclAsType(consol::InstructionsSection) <!--
+	 * end-model-doc -->
+	 * 
+	 * @model required="true" ordered="false" annotation=
+	 *        "http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::InstructionsSection))->asSequence()->any(true).oclAsType(consol::InstructionsSection)'"
+	 * @generated
+	 */
 	InstructionsSection retrieveInstructionsSection();
 
 	/**
-   * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-   * @model required="true" ordered="false"
-   *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::MedicationsAdministeredSection))->asSequence()->any(true).oclAsType(consol::MedicationsAdministeredSection)'"
-   * @generated
-   */
+	 * <!-- begin-user-doc --> <!-- end-user-doc --> <!-- begin-model-doc -->
+	 * self.getAllSections()->select(section : cda::Section | not
+	 * section.oclIsUndefined() and
+	 * section.oclIsKindOf(consol::MedicationsAdministeredSection
+	 * ))->asSequence()
+	 * ->any(true).oclAsType(consol::MedicationsAdministeredSection) <!--
+	 * end-model-doc -->
+	 * 
+	 * @model required="true" ordered="false" annotation=
+	 *        "http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::MedicationsAdministeredSection))->asSequence()->any(true).oclAsType(consol::MedicationsAdministeredSection)'"
+	 * @generated
+	 */
 	MedicationsAdministeredSection retrieveMedicationsAdministeredSection();
 
 	/**
@@ -668,15 +784,17 @@ public interface ClinicalOfficeVisitSummary extends GeneralHeaderConstraints {
 	InstructionsSection getInstructionsSection();
 
 	/**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * @generated
-   */
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
 	public ClinicalOfficeVisitSummary init();
 
 	/**
-     * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * @generated
-     */
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
 	public ClinicalOfficeVisitSummary init(
 			Iterable<? extends Initializer<? extends EObject>> initializers);
 } // ClinicalOfficeVisitSummary

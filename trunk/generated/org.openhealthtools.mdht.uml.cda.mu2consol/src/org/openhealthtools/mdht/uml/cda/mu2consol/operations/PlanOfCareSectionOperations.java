@@ -34,29 +34,38 @@ import org.openhealthtools.mdht.uml.cda.mu2consol.util.Mu2consolValidator;
  * <!-- begin-user-doc --> A static utility class that provides operations
  * related to '<em><b>Plan Of Care Section</b></em>' model objects. <!--
  * end-user-doc -->
- *
+ * 
  * <p>
  * The following operations are supported:
  * <ul>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.mu2consol.PlanOfCareSection#getMu2consolPlanOfCareActivityActs() <em>Get Mu2consol Plan Of Care Activity Acts</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.mu2consol.PlanOfCareSection#getMu2consolPlanOfCareActivityEncounters() <em>Get Mu2consol Plan Of Care Activity Encounters</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.mu2consol.PlanOfCareSection#getMu2consolPlanOfCareActivityObservations() <em>Get Mu2consol Plan Of Care Activity Observations</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.mu2consol.PlanOfCareSection#validatePlanOfCareSectionTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Plan Of Care Section Template Id</em>}</li>
+ * <li>
+ * {@link org.openhealthtools.mdht.uml.cda.mu2consol.PlanOfCareSection#getMu2consolPlanOfCareActivityActs()
+ * <em>Get Mu2consol Plan Of Care Activity Acts</em>}</li>
+ * <li>
+ * {@link org.openhealthtools.mdht.uml.cda.mu2consol.PlanOfCareSection#getMu2consolPlanOfCareActivityEncounters()
+ * <em>Get Mu2consol Plan Of Care Activity Encounters</em>}</li>
+ * <li>
+ * {@link org.openhealthtools.mdht.uml.cda.mu2consol.PlanOfCareSection#getMu2consolPlanOfCareActivityObservations()
+ * <em>Get Mu2consol Plan Of Care Activity Observations</em>}</li>
+ * <li>
+ * {@link org.openhealthtools.mdht.uml.cda.mu2consol.PlanOfCareSection#validatePlanOfCareSectionTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+ * <em>Validate Plan Of Care Section Template Id</em>}</li>
  * </ul>
  * </p>
- *
+ * 
  * @generated
  */
 public class PlanOfCareSectionOperations
 		extends
 		org.openhealthtools.mdht.uml.cda.consol.operations.PlanOfCareSectionOperations {
 	/**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * @generated
-   */
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
 	protected PlanOfCareSectionOperations() {
-    super();
-  }
+		super();
+	}
 
 	/**
 	 * The cached OCL expression body for the '
@@ -85,8 +94,8 @@ public class PlanOfCareSectionOperations
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc --> <!-- begin-model-doc -->
 	 * self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and
-	 * act.oclIsKindOf
-	 * (consol::PlanOfCareActivityAct)).oclAsType(consol::PlanOfCareActivityAct)
+	 * act.oclIsKindOf (consol::PlanOfCareActivityAct)).oclAsType(consol::
+	 * PlanOfCareActivityAct)
 	 * 
 	 * @param planOfCareSection
 	 *            The receiving '<em><b>Plan Of Care Section</b></em>' model
@@ -96,24 +105,28 @@ public class PlanOfCareSectionOperations
 
 	public static EList<PlanOfCareActivityAct> getMu2consolPlanOfCareActivityActs(
 			PlanOfCareSection planOfCareSection) {
-    if (GET_MU2CONSOL_PLAN_OF_CARE_ACTIVITY_ACTS__EOCL_QRY == null)
-    {
-      OCL.Helper helper = EOCL_ENV.createOCLHelper();
-      helper.setOperationContext(Mu2consolPackage.Literals.PLAN_OF_CARE_SECTION, Mu2consolPackage.Literals.PLAN_OF_CARE_SECTION.getEAllOperations().get(74));
-      try
-      {
-        GET_MU2CONSOL_PLAN_OF_CARE_ACTIVITY_ACTS__EOCL_QRY = helper.createQuery(GET_MU2CONSOL_PLAN_OF_CARE_ACTIVITY_ACTS__EOCL_EXP);
-      }
-      catch (ParserException pe)
-      {
-        throw new UnsupportedOperationException(pe.getLocalizedMessage());
-      }
-    }
-    OCL.Query query = EOCL_ENV.createQuery(GET_MU2CONSOL_PLAN_OF_CARE_ACTIVITY_ACTS__EOCL_QRY);
-    @SuppressWarnings("unchecked")
-    Collection<PlanOfCareActivityAct> result = (Collection<PlanOfCareActivityAct>) query.evaluate(planOfCareSection);
-    return new BasicEList.UnmodifiableEList<PlanOfCareActivityAct>(result.size(), result.toArray());
-  }
+		if (GET_MU2CONSOL_PLAN_OF_CARE_ACTIVITY_ACTS__EOCL_QRY == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setOperationContext(
+					Mu2consolPackage.Literals.PLAN_OF_CARE_SECTION,
+					Mu2consolPackage.Literals.PLAN_OF_CARE_SECTION
+							.getEAllOperations().get(74));
+			try {
+				GET_MU2CONSOL_PLAN_OF_CARE_ACTIVITY_ACTS__EOCL_QRY = helper
+						.createQuery(GET_MU2CONSOL_PLAN_OF_CARE_ACTIVITY_ACTS__EOCL_EXP);
+			} catch (ParserException pe) {
+				throw new UnsupportedOperationException(
+						pe.getLocalizedMessage());
+			}
+		}
+		OCL.Query query = EOCL_ENV
+				.createQuery(GET_MU2CONSOL_PLAN_OF_CARE_ACTIVITY_ACTS__EOCL_QRY);
+		@SuppressWarnings("unchecked")
+		Collection<PlanOfCareActivityAct> result = (Collection<PlanOfCareActivityAct>) query
+				.evaluate(planOfCareSection);
+		return new BasicEList.UnmodifiableEList<PlanOfCareActivityAct>(
+				result.size(), result.toArray());
+	}
 
 	/**
 	 * The cached OCL expression body for the '
@@ -128,12 +141,15 @@ public class PlanOfCareSectionOperations
 	protected static final String GET_MU2CONSOL_PLAN_OF_CARE_ACTIVITY_ENCOUNTERS__EOCL_EXP = "self.getEncounters()->select(encounter : cda::Encounter | not encounter.oclIsUndefined() and encounter.oclIsKindOf(consol::PlanOfCareActivityEncounter)).oclAsType(consol::PlanOfCareActivityEncounter)";
 
 	/**
-   * The cached OCL query for the '{@link #getMu2consolPlanOfCareActivityEncounters(PlanOfCareSection) <em>Get Mu2consol Plan Of Care Activity Encounters</em>}' query operation.
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * @see #getMu2consolPlanOfCareActivityEncounters(PlanOfCareSection)
-   * @generated
-   * @ordered
-   */
+	 * The cached OCL query for the '
+	 * {@link #getMu2consolPlanOfCareActivityEncounters(PlanOfCareSection)
+	 * <em>Get Mu2consol Plan Of Care Activity Encounters</em>}' query
+	 * operation. <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @see #getMu2consolPlanOfCareActivityEncounters(PlanOfCareSection)
+	 * @generated
+	 * @ordered
+	 */
 	protected static OCLExpression<EClassifier> GET_MU2CONSOL_PLAN_OF_CARE_ACTIVITY_ENCOUNTERS__EOCL_QRY;
 
 	/**
@@ -151,41 +167,51 @@ public class PlanOfCareSectionOperations
 
 	public static EList<PlanOfCareActivityEncounter> getMu2consolPlanOfCareActivityEncounters(
 			PlanOfCareSection planOfCareSection) {
-    if (GET_MU2CONSOL_PLAN_OF_CARE_ACTIVITY_ENCOUNTERS__EOCL_QRY == null)
-    {
-      OCL.Helper helper = EOCL_ENV.createOCLHelper();
-      helper.setOperationContext(Mu2consolPackage.Literals.PLAN_OF_CARE_SECTION, Mu2consolPackage.Literals.PLAN_OF_CARE_SECTION.getEAllOperations().get(75));
-      try
-      {
-        GET_MU2CONSOL_PLAN_OF_CARE_ACTIVITY_ENCOUNTERS__EOCL_QRY = helper.createQuery(GET_MU2CONSOL_PLAN_OF_CARE_ACTIVITY_ENCOUNTERS__EOCL_EXP);
-      }
-      catch (ParserException pe)
-      {
-        throw new UnsupportedOperationException(pe.getLocalizedMessage());
-      }
-    }
-    OCL.Query query = EOCL_ENV.createQuery(GET_MU2CONSOL_PLAN_OF_CARE_ACTIVITY_ENCOUNTERS__EOCL_QRY);
-    @SuppressWarnings("unchecked")
-    Collection<PlanOfCareActivityEncounter> result = (Collection<PlanOfCareActivityEncounter>) query.evaluate(planOfCareSection);
-    return new BasicEList.UnmodifiableEList<PlanOfCareActivityEncounter>(result.size(), result.toArray());
-  }
+		if (GET_MU2CONSOL_PLAN_OF_CARE_ACTIVITY_ENCOUNTERS__EOCL_QRY == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setOperationContext(
+					Mu2consolPackage.Literals.PLAN_OF_CARE_SECTION,
+					Mu2consolPackage.Literals.PLAN_OF_CARE_SECTION
+							.getEAllOperations().get(75));
+			try {
+				GET_MU2CONSOL_PLAN_OF_CARE_ACTIVITY_ENCOUNTERS__EOCL_QRY = helper
+						.createQuery(GET_MU2CONSOL_PLAN_OF_CARE_ACTIVITY_ENCOUNTERS__EOCL_EXP);
+			} catch (ParserException pe) {
+				throw new UnsupportedOperationException(
+						pe.getLocalizedMessage());
+			}
+		}
+		OCL.Query query = EOCL_ENV
+				.createQuery(GET_MU2CONSOL_PLAN_OF_CARE_ACTIVITY_ENCOUNTERS__EOCL_QRY);
+		@SuppressWarnings("unchecked")
+		Collection<PlanOfCareActivityEncounter> result = (Collection<PlanOfCareActivityEncounter>) query
+				.evaluate(planOfCareSection);
+		return new BasicEList.UnmodifiableEList<PlanOfCareActivityEncounter>(
+				result.size(), result.toArray());
+	}
 
 	/**
-   * The cached OCL expression body for the '{@link #getMu2consolPlanOfCareActivityObservations(PlanOfCareSection) <em>Get Mu2consol Plan Of Care Activity Observations</em>}' operation.
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * @see #getMu2consolPlanOfCareActivityObservations(PlanOfCareSection)
-   * @generated
-   * @ordered
-   */
+	 * The cached OCL expression body for the '
+	 * {@link #getMu2consolPlanOfCareActivityObservations(PlanOfCareSection)
+	 * <em>Get Mu2consol Plan Of Care Activity Observations</em>}' operation.
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @see #getMu2consolPlanOfCareActivityObservations(PlanOfCareSection)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String GET_MU2CONSOL_PLAN_OF_CARE_ACTIVITY_OBSERVATIONS__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::PlanOfCareActivityObservation)).oclAsType(consol::PlanOfCareActivityObservation)";
 
 	/**
-   * The cached OCL query for the '{@link #getMu2consolPlanOfCareActivityObservations(PlanOfCareSection) <em>Get Mu2consol Plan Of Care Activity Observations</em>}' query operation.
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * @see #getMu2consolPlanOfCareActivityObservations(PlanOfCareSection)
-   * @generated
-   * @ordered
-   */
+	 * The cached OCL query for the '
+	 * {@link #getMu2consolPlanOfCareActivityObservations(PlanOfCareSection)
+	 * <em>Get Mu2consol Plan Of Care Activity Observations</em>}' query
+	 * operation. <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @see #getMu2consolPlanOfCareActivityObservations(PlanOfCareSection)
+	 * @generated
+	 * @ordered
+	 */
 	protected static OCLExpression<EClassifier> GET_MU2CONSOL_PLAN_OF_CARE_ACTIVITY_OBSERVATIONS__EOCL_QRY;
 
 	/**
@@ -203,24 +229,28 @@ public class PlanOfCareSectionOperations
 
 	public static EList<PlanOfCareActivityObservation> getMu2consolPlanOfCareActivityObservations(
 			PlanOfCareSection planOfCareSection) {
-    if (GET_MU2CONSOL_PLAN_OF_CARE_ACTIVITY_OBSERVATIONS__EOCL_QRY == null)
-    {
-      OCL.Helper helper = EOCL_ENV.createOCLHelper();
-      helper.setOperationContext(Mu2consolPackage.Literals.PLAN_OF_CARE_SECTION, Mu2consolPackage.Literals.PLAN_OF_CARE_SECTION.getEAllOperations().get(76));
-      try
-      {
-        GET_MU2CONSOL_PLAN_OF_CARE_ACTIVITY_OBSERVATIONS__EOCL_QRY = helper.createQuery(GET_MU2CONSOL_PLAN_OF_CARE_ACTIVITY_OBSERVATIONS__EOCL_EXP);
-      }
-      catch (ParserException pe)
-      {
-        throw new UnsupportedOperationException(pe.getLocalizedMessage());
-      }
-    }
-    OCL.Query query = EOCL_ENV.createQuery(GET_MU2CONSOL_PLAN_OF_CARE_ACTIVITY_OBSERVATIONS__EOCL_QRY);
-    @SuppressWarnings("unchecked")
-    Collection<PlanOfCareActivityObservation> result = (Collection<PlanOfCareActivityObservation>) query.evaluate(planOfCareSection);
-    return new BasicEList.UnmodifiableEList<PlanOfCareActivityObservation>(result.size(), result.toArray());
-  }
+		if (GET_MU2CONSOL_PLAN_OF_CARE_ACTIVITY_OBSERVATIONS__EOCL_QRY == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setOperationContext(
+					Mu2consolPackage.Literals.PLAN_OF_CARE_SECTION,
+					Mu2consolPackage.Literals.PLAN_OF_CARE_SECTION
+							.getEAllOperations().get(76));
+			try {
+				GET_MU2CONSOL_PLAN_OF_CARE_ACTIVITY_OBSERVATIONS__EOCL_QRY = helper
+						.createQuery(GET_MU2CONSOL_PLAN_OF_CARE_ACTIVITY_OBSERVATIONS__EOCL_EXP);
+			} catch (ParserException pe) {
+				throw new UnsupportedOperationException(
+						pe.getLocalizedMessage());
+			}
+		}
+		OCL.Query query = EOCL_ENV
+				.createQuery(GET_MU2CONSOL_PLAN_OF_CARE_ACTIVITY_OBSERVATIONS__EOCL_QRY);
+		@SuppressWarnings("unchecked")
+		Collection<PlanOfCareActivityObservation> result = (Collection<PlanOfCareActivityObservation>) query
+				.evaluate(planOfCareSection);
+		return new BasicEList.UnmodifiableEList<PlanOfCareActivityObservation>(
+				result.size(), result.toArray());
+	}
 
 	/**
 	 * The cached OCL expression body for the '
@@ -236,12 +266,16 @@ public class PlanOfCareSectionOperations
 	protected static final String VALIDATE_PLAN_OF_CARE_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.2.10')";
 
 	/**
-   * The cached OCL invariant for the '{@link #validatePlanOfCareSectionTemplateId(PlanOfCareSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Plan Of Care Section Template Id</em>}' invariant operation.
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * @see #validatePlanOfCareSectionTemplateId(PlanOfCareSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-   * @generated
-   * @ordered
-   */
+	 * The cached OCL invariant for the '
+	 * {@link #validatePlanOfCareSectionTemplateId(PlanOfCareSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * <em>Validate Plan Of Care Section Template Id</em>}' invariant operation.
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @see #validatePlanOfCareSectionTemplateId(PlanOfCareSection,
+	 *      org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 
 	protected static Constraint VALIDATE_PLAN_OF_CARE_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
@@ -264,35 +298,43 @@ public class PlanOfCareSectionOperations
 	public static boolean validatePlanOfCareSectionTemplateId(
 			PlanOfCareSection planOfCareSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-  	  
-    if (VALIDATE_PLAN_OF_CARE_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-      OCL.Helper helper = EOCL_ENV.createOCLHelper();
-      helper.setContext(Mu2consolPackage.Literals.PLAN_OF_CARE_SECTION);
-      try
-      {
-        VALIDATE_PLAN_OF_CARE_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PLAN_OF_CARE_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-      }
-      catch (ParserException pe)
-      {
-        throw new UnsupportedOperationException(pe.getLocalizedMessage());
-      }
-    }
-    if (!EOCL_ENV.createQuery(VALIDATE_PLAN_OF_CARE_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(planOfCareSection))
-    {
-      if (diagnostics != null)
-      {
-        diagnostics.add
-          (new BasicDiagnostic
-            (Diagnostic.ERROR,
-             Mu2consolValidator.DIAGNOSTIC_SOURCE,
-             Mu2consolValidator.PLAN_OF_CARE_SECTION__PLAN_OF_CARE_SECTION_TEMPLATE_ID,
-             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "PlanOfCareSectionTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(planOfCareSection, context) }),
-             new Object [] { planOfCareSection }));
-      }
-       
-      return false;
-    }
-    return true;
-  }
+
+		if (VALIDATE_PLAN_OF_CARE_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setContext(Mu2consolPackage.Literals.PLAN_OF_CARE_SECTION);
+			try {
+				VALIDATE_PLAN_OF_CARE_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper
+						.createInvariant(VALIDATE_PLAN_OF_CARE_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+			} catch (ParserException pe) {
+				throw new UnsupportedOperationException(
+						pe.getLocalizedMessage());
+			}
+		}
+		if (!EOCL_ENV
+				.createQuery(
+						VALIDATE_PLAN_OF_CARE_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV)
+				.check(planOfCareSection)) {
+			if (diagnostics != null) {
+				diagnostics
+						.add(new BasicDiagnostic(
+								Diagnostic.ERROR,
+								Mu2consolValidator.DIAGNOSTIC_SOURCE,
+								Mu2consolValidator.PLAN_OF_CARE_SECTION__PLAN_OF_CARE_SECTION_TEMPLATE_ID,
+								org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE
+										.getString(
+												"_UI_GenericInvariant_diagnostic",
+												new Object[] {
+														"PlanOfCareSectionTemplateId",
+														org.eclipse.emf.ecore.util.EObjectValidator
+																.getObjectLabel(
+																		planOfCareSection,
+																		context) }),
+								new Object[] { planOfCareSection }));
+			}
+
+			return false;
+		}
+		return true;
+	}
 
 } // PlanOfCareSectionOperations

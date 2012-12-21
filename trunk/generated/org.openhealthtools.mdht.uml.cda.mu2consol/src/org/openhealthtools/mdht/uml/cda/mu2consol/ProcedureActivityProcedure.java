@@ -20,10 +20,11 @@ import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 /**
  * <!-- begin-user-doc --> A representation of the model object '
  * <em><b>Procedure Activity Procedure</b></em>'. <!-- end-user-doc -->
- *
- *
+ * 
+ * 
  * @see org.openhealthtools.mdht.uml.cda.mu2consol.Mu2consolPackage#getProcedureActivityProcedure()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='Mu2consolProcedureActivityProcedureTemplateId Mu2consolProcedureActivityProcedureCode' templateId.root='2.16.840.1.113883.10.20.22.4.14' constraints.validation.warning='Mu2consolProcedureActivityProcedureCodeValue'"
+ * @model annotation=
+ *        "http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='Mu2consolProcedureActivityProcedureTemplateId Mu2consolProcedureActivityProcedureCodeValue Mu2consolProcedureActivityProcedureCode' templateId.root='2.16.840.1.113883.10.20.22.4.14'"
  * @generated
  */
 public interface ProcedureActivityProcedure extends
@@ -63,15 +64,17 @@ public interface ProcedureActivityProcedure extends
 			DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * @generated
-   */
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
 	public ProcedureActivityProcedure init();
 
 	/**
-     * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * @generated
-     */
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
 	public ProcedureActivityProcedure init(
 			Iterable<? extends Initializer<? extends EObject>> initializers);
 } // ProcedureActivityProcedure

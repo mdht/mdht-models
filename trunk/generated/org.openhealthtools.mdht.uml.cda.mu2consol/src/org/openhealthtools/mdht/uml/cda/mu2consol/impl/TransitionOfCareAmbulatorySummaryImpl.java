@@ -27,80 +27,95 @@ import org.openhealthtools.mdht.uml.cda.mu2consol.operations.TransitionOfCareAmb
  * <em><b>Transition Of Care Ambulatory Summary</b></em>'. <!-- end-user-doc -->
  * <p>
  * </p>
- *
+ * 
  * @generated
  */
 public class TransitionOfCareAmbulatorySummaryImpl extends
 		SummaryOfCareRecordImpl implements TransitionOfCareAmbulatorySummary {
 	/**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * @generated
-   */
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
 	protected TransitionOfCareAmbulatorySummaryImpl() {
-    super();
-  }
+		super();
+	}
 
 	/**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * @generated
-   */
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
-    return Mu2consolPackage.Literals.TRANSITION_OF_CARE_AMBULATORY_SUMMARY;
-  }
+		return Mu2consolPackage.Literals.TRANSITION_OF_CARE_AMBULATORY_SUMMARY;
+	}
 
 	/**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * @generated
-   */
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
 	public boolean validateTransitionOfCareAmbulatorySummaryResponsibleParty(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return TransitionOfCareAmbulatorySummaryOperations.validateTransitionOfCareAmbulatorySummaryResponsibleParty(this, diagnostics, context);
-  }
+		return TransitionOfCareAmbulatorySummaryOperations
+				.validateTransitionOfCareAmbulatorySummaryResponsibleParty(
+						this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * @generated
-   */
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
 	public boolean validateTransitionOfCareAmbulatorySummaryAmbulatoryEncounterDiagnoses(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return TransitionOfCareAmbulatorySummaryOperations.validateTransitionOfCareAmbulatorySummaryAmbulatoryEncounterDiagnoses(this, diagnostics, context);
-  }
+		return TransitionOfCareAmbulatorySummaryOperations
+				.validateTransitionOfCareAmbulatorySummaryAmbulatoryEncounterDiagnoses(
+						this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * @generated
-   */
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
 	public boolean validateTransitionOfCareAmbulatorySummaryReasonForReferralSection(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return TransitionOfCareAmbulatorySummaryOperations.validateTransitionOfCareAmbulatorySummaryReasonForReferralSection(this, diagnostics, context);
-  }
+		return TransitionOfCareAmbulatorySummaryOperations
+				.validateTransitionOfCareAmbulatorySummaryReasonForReferralSection(
+						this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * @generated
-   */
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
 	public ReasonForReferralSection getReasonForReferralSection() {
-    return TransitionOfCareAmbulatorySummaryOperations.getReasonForReferralSection(this);
-  }
+		return TransitionOfCareAmbulatorySummaryOperations
+				.getReasonForReferralSection(this);
+	}
 
 	/**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * @generated
-   */
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
 	@Override
 	public TransitionOfCareAmbulatorySummary init() {
-      return Initializer.Util.init(this);
-  }
+		return Initializer.Util.init(this);
+	}
 
 	/**
-     * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * @generated
-     */
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
 	@Override
 	public TransitionOfCareAmbulatorySummary init(
 			Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
+		Initializer.Util.init(this, initializers);
+		return this;
+	}
 } // TransitionOfCareAmbulatorySummaryImpl

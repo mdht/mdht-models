@@ -21,10 +21,11 @@ import org.openhealthtools.mdht.uml.cda.consol.ReasonForReferralSection;
 /**
  * <!-- begin-user-doc --> A representation of the model object '
  * <em><b>Transition Of Care Ambulatory Summary</b></em>'. <!-- end-user-doc -->
- *
- *
+ * 
+ * 
  * @see org.openhealthtools.mdht.uml.cda.mu2consol.Mu2consolPackage#getTransitionOfCareAmbulatorySummary()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.query='TransitionOfCareAmbulatorySummaryResponsibleParty' constraints.validation.error='TransitionOfCareAmbulatorySummaryResponsibleParty TransitionOfCareAmbulatorySummaryAmbulatoryEncounterDiagnoses TransitionOfCareAmbulatorySummaryReasonForReferralSection'"
+ * @model annotation=
+ *        "http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.query='TransitionOfCareAmbulatorySummaryResponsibleParty' constraints.validation.error='TransitionOfCareAmbulatorySummaryResponsibleParty TransitionOfCareAmbulatorySummaryAmbulatoryEncounterDiagnoses TransitionOfCareAmbulatorySummaryReasonForReferralSection'"
  * @generated
  */
 public interface TransitionOfCareAmbulatorySummary extends SummaryOfCareRecord {
@@ -108,15 +109,17 @@ public interface TransitionOfCareAmbulatorySummary extends SummaryOfCareRecord {
 	ReasonForReferralSection getReasonForReferralSection();
 
 	/**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * @generated
-   */
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
 	public TransitionOfCareAmbulatorySummary init();
 
 	/**
-     * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * @generated
-     */
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
 	public TransitionOfCareAmbulatorySummary init(
 			Iterable<? extends Initializer<? extends EObject>> initializers);
 } // TransitionOfCareAmbulatorySummary

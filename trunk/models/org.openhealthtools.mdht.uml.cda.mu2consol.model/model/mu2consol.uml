@@ -1105,7 +1105,7 @@ cda::ResponsibleParty | not responsibleParty.oclIsUndefined() and responsiblePar
           <language>Analysis</language>
           <language>OCL</language>
           <body>The value for 'code' in a result observation SHOULD be selected from LOINC (codeSystem 2.16.840.1.113883.6.1)</body>
-          <body>self.code.codeSystem = '2.16.840.1.113883.6.1'</body>
+          <body>(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies self.code.codeSystem = '2.16.840.1.113883.6.1'</body>
         </specification>
       </ownedRule>
       <generalization xmi:id="_tAPEIAJuEeKIhvHOhwsFvA">
@@ -1148,7 +1148,7 @@ cda::ResponsibleParty | not responsibleParty.oclIsUndefined() and responsiblePar
           <language>Analysis</language>
           <language>OCL</language>
           <body>The value for 'code' for encounter activities  SHOULD be selected from ICD-10(codeSystem 2.16.840.1.113883.6.3) or SNOMED CT (codeSystem 2.16.840.1.113883.6.96)</body>
-          <body>self.code.codeSystem = '2.16.840.1.113883.6.3' xor self.code.codeSystem = '2.16.840.1.113883.6.96'</body>
+          <body>self.code.isNullFlavorDefined() or self.code.codeSystem = '2.16.840.1.113883.6.3' xor self.code.codeSystem = '2.16.840.1.113883.6.96'</body>
         </specification>
       </ownedRule>
       <generalization xmi:id="_zL4YIAKcEeKIhvHOhwsFvA">
@@ -1180,7 +1180,7 @@ cda::ResponsibleParty | not responsibleParty.oclIsUndefined() and responsiblePar
           <language>Analysis</language>
           <language>OCL</language>
           <body>'code' SHOULD be selected from SNOMED CT (codeSystem 2.16.840.1.113883.6.96) or CPT-4 (CodeSystem 2.16.840.1.113883.6.12)</body>
-          <body>self.code.codeSystem = '2.16.840.1.113883.6.96' xor self.code.codeSystem = '2.16.840.1.113883.6.12'</body>
+          <body>self.code.isNullFlavorDefined() or self.code.codeSystem = '2.16.840.1.113883.6.96' xor self.code.codeSystem = '2.16.840.1.113883.6.12'</body>
         </specification>
       </ownedRule>
       <generalization xmi:id="_KmThkAKlEeKIhvHOhwsFvA">
@@ -1353,12 +1353,12 @@ cda::ResponsibleParty | not responsibleParty.oclIsUndefined() and responsiblePar
     <ruleId>CONF:8803</ruleId>
   </CDA:AssociationValidation>
   <CDA:CDATemplate xmi:id="_BArkwAKdEeKIhvHOhwsFvA" base_Class="_9AQcQAKcEeKIhvHOhwsFvA" templateId="2.16.840.1.113883.10.20.22.2.22.1"/>
-  <CDA:ConstraintValidation xmi:id="_kLGOoAKeEeKIhvHOhwsFvA" severity="WARNING" base_Constraint="_QLlMMAKeEeKIhvHOhwsFvA"/>
+  <CDA:ConstraintValidation xmi:id="_kLGOoAKeEeKIhvHOhwsFvA" base_Constraint="_QLlMMAKeEeKIhvHOhwsFvA"/>
   <CDA:PropertyValidation xmi:id="_Myj9wAKlEeKIhvHOhwsFvA" base_Property="_MyjWsAKlEeKIhvHOhwsFvA">
     <ruleId>CONF:7656</ruleId>
   </CDA:PropertyValidation>
   <CDA:CDATemplate xmi:id="_SzQU4AKlEeKIhvHOhwsFvA" base_Class="_KmS6gAKlEeKIhvHOhwsFvA" templateId="2.16.840.1.113883.10.20.22.4.14"/>
-  <CDA:ConstraintValidation xmi:id="_elkFUAKlEeKIhvHOhwsFvA" severity="WARNING" base_Constraint="_Xm1YoAKlEeKIhvHOhwsFvA"/>
+  <CDA:ConstraintValidation xmi:id="_elkFUAKlEeKIhvHOhwsFvA" base_Constraint="_Xm1YoAKlEeKIhvHOhwsFvA"/>
   <CDA:AssociationValidation xmi:id="_pebsUQKlEeKIhvHOhwsFvA" severity="INFO" base_Association="_pebFQwKlEeKIhvHOhwsFvA">
     <ruleId>CONF:7895</ruleId>
     <ruleId>CONF:7896</ruleId>
@@ -1381,4 +1381,27 @@ cda::ResponsibleParty | not responsibleParty.oclIsUndefined() and responsiblePar
   <CDA:ConstraintValidation xmi:id="_YXlJQAveEeK-rsV_B2slTA" base_Constraint="_WhtMwAveEeK-rsV_B2slTA"/>
   <CDA:ConstraintValidation xmi:id="_n-Si8AvfEeK-rsV_B2slTA" base_Constraint="_iaMBMAvfEeK-rsV_B2slTA"/>
   <CDA:AssociationValidation xmi:id="_awsAEEojEeKQ-tcU0kHXWw" base_Association="_fo8v0QRkEeKNWa1y_3e0dw"/>
+  <CDA:AssociationValidation xmi:id="_Xb53sEr2EeKolvViiStUqQ" severity="INFO" base_Association="_oCk7oe1XEeGT-eFu7Ghgjw"/>
+  <CDA:AssociationValidation xmi:id="_YFUBEEr2EeKolvViiStUqQ" severity="INFO" base_Association="_hzrT8e1YEeGT-eFu7Ghgjw"/>
+  <CDA:AssociationValidation xmi:id="_YexC4Er2EeKolvViiStUqQ" severity="INFO" base_Association="_j5Cd8e1YEeGT-eFu7Ghgjw"/>
+  <CDA:AssociationValidation xmi:id="_Y03OsEr2EeKolvViiStUqQ" severity="INFO" base_Association="_luKzke1YEeGT-eFu7Ghgjw"/>
+  <CDA:AssociationValidation xmi:id="_ZM9loEr2EeKolvViiStUqQ" severity="INFO" base_Association="_EqeeQe1aEeGT-eFu7Ghgjw"/>
+  <CDA:AssociationValidation xmi:id="_bhAr4Er2EeKolvViiStUqQ" severity="INFO" base_Association="_owEaYtk4EeGsqcJR8eqiMw"/>
+  <CDA:AssociationValidation xmi:id="_b_wdYEr2EeKolvViiStUqQ" severity="INFO" base_Association="_CHFtAtk5EeGsqcJR8eqiMw"/>
+  <CDA:AssociationValidation xmi:id="_cgGxYEr2EeKolvViiStUqQ" severity="INFO" base_Association="_NOh7gNk5EeGsqcJR8eqiMw"/>
+  <CDA:AssociationValidation xmi:id="_c5hW8Er2EeKolvViiStUqQ" severity="INFO" base_Association="_QFtZcdk4EeGsqcJR8eqiMw"/>
+  <CDA:AssociationValidation xmi:id="_dQeeYEr2EeKolvViiStUqQ" severity="INFO" base_Association="_WNQxENk5EeGsqcJR8eqiMw"/>
+  <CDA:AssociationValidation xmi:id="_dsfE8Er2EeKolvViiStUqQ" severity="INFO" base_Association="_zjuFcuAjEeGioIEuA5-ofg"/>
+  <CDA:AssociationValidation xmi:id="_eD6GcEr2EeKolvViiStUqQ" severity="INFO" base_Association="_jNnB8dk5EeGsqcJR8eqiMw"/>
+  <CDA:AssociationValidation xmi:id="_ec_74Er2EeKolvViiStUqQ" severity="INFO" base_Association="_xZNlAdk5EeGsqcJR8eqiMw"/>
+  <CDA:AssociationValidation xmi:id="_gIX4kEr2EeKolvViiStUqQ" severity="INFO" base_Association="_ubIl0gQkEeKNWa1y_3e0dw"/>
+  <CDA:AssociationValidation xmi:id="_ghm38Er2EeKolvViiStUqQ" severity="INFO" base_Association="_x3cUoQQkEeKNWa1y_3e0dw"/>
+  <CDA:AssociationValidation xmi:id="_g26ZkEr2EeKolvViiStUqQ" severity="INFO" base_Association="_j4WIoQvcEeK-rsV_B2slTA"/>
+  <CDA:AssociationValidation xmi:id="_lIfjgEr2EeKolvViiStUqQ" severity="INFO" base_Association="_zOSzYfheEeGPm7sA61ixGw"/>
+  <CDA:AssociationValidation xmi:id="_lgkFQEr2EeKolvViiStUqQ" severity="INFO" base_Association="_0_qqYfheEeGPm7sA61ixGw"/>
+  <CDA:AssociationValidation xmi:id="_l6Jp8Er2EeKolvViiStUqQ" severity="INFO" base_Association="_2wHUUfheEeGPm7sA61ixGw"/>
+  <CDA:AssociationValidation xmi:id="_mRJNoEr2EeKolvViiStUqQ" severity="INFO" base_Association="_axybgQvWEeK-rsV_B2slTA"/>
+  <CDA:AssociationValidation xmi:id="_mov1UEr2EeKolvViiStUqQ" severity="INFO" base_Association="_gilGsAvcEeK-rsV_B2slTA"/>
+  <CDA:AssociationValidation xmi:id="_oGha4Er2EeKolvViiStUqQ" severity="INFO" base_Association="_b1WlwfhYEeGPm7sA61ixGw"/>
+  <CDA:AssociationValidation xmi:id="_ot1SgEr2EeKolvViiStUqQ" severity="INFO" base_Association="_05-g0PhYEeGPm7sA61ixGw"/>
 </xmi:XMI>

@@ -27,73 +27,83 @@ import org.openhealthtools.mdht.uml.cda.mu2consol.operations.AssessmentSectionOp
  * <em><b>Assessment Section</b></em>'. <!-- end-user-doc -->
  * <p>
  * </p>
- *
+ * 
  * @generated
  */
 public class AssessmentSectionImpl extends
 		org.openhealthtools.mdht.uml.cda.consol.impl.AssessmentSectionImpl
 		implements AssessmentSection {
 	/**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * @generated
-   */
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
 	protected AssessmentSectionImpl() {
-    super();
-  }
+		super();
+	}
 
 	/**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * @generated
-   */
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
-    return Mu2consolPackage.Literals.ASSESSMENT_SECTION;
-  }
+		return Mu2consolPackage.Literals.ASSESSMENT_SECTION;
+	}
 
 	/**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * @generated
-   */
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
 	public boolean validateMu2consolAssessmentSectionProblemObservation(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return AssessmentSectionOperations.validateMu2consolAssessmentSectionProblemObservation(this, diagnostics, context);
-  }
+		return AssessmentSectionOperations
+				.validateMu2consolAssessmentSectionProblemObservation(this,
+						diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * @generated
-   */
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
 	public ProblemObservation getProblemObservation() {
-    return AssessmentSectionOperations.getProblemObservation(this);
-  }
+		return AssessmentSectionOperations.getProblemObservation(this);
+	}
 
 	/**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * @generated
-   */
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
 	@Override
 	public boolean validateAssessmentSectionTemplateId(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return AssessmentSectionOperations.validateAssessmentSectionTemplateId(this, diagnostics, context);
-  }
+		return AssessmentSectionOperations.validateAssessmentSectionTemplateId(
+				this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * @generated
-   */
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
 	@Override
 	public AssessmentSection init() {
-      return Initializer.Util.init(this);
-  }
+		return Initializer.Util.init(this);
+	}
 
 	/**
-     * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * @generated
-     */
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
 	@Override
 	public AssessmentSection init(
 			Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
+		Initializer.Util.init(this, initializers);
+		return this;
+	}
 } // AssessmentSectionImpl

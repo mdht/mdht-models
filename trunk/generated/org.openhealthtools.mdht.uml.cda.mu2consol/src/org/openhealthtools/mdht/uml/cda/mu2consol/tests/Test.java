@@ -56,7 +56,8 @@ public class Test {
 		// "VDTAmbulatorySummary");
 		// validateDocument("socr_sample_withDSTemplateId",
 		// "VDTInpatientSummary");
-		validateDocument("socr_sample_withDSTemplateId", "TransitionsOfCareInpatientSummary");
+		validateDocument("socr_sample_withDSTemplateId",
+				"TransitionsOfCareInpatientSummary");
 		// validateDocument("cdabook.pdf",
 		// "TransitionsOfCareAmbulatorySummary");
 		// validateDocument("socr_sample","ClinicalOfficeVisitSummary");

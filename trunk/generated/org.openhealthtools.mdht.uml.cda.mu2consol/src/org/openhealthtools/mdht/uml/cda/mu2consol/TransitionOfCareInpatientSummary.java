@@ -25,10 +25,11 @@ import org.openhealthtools.mdht.uml.cda.consol.HospitalDischargeMedicationsSecti
 /**
  * <!-- begin-user-doc --> A representation of the model object '
  * <em><b>Transition Of Care Inpatient Summary</b></em>'. <!-- end-user-doc -->
- *
- *
+ * 
+ * 
  * @see org.openhealthtools.mdht.uml.cda.mu2consol.Mu2consolPackage#getTransitionOfCareInpatientSummary()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='TransitionOfCareInpatientSummaryInpatientEncounterDiagnoses TransitionOfCareInpatientSummaryHospitalAdmissionDiagnosisEntry TransitionOfCareInpatientSummaryHospitalDischargeDiagnosesEntry TransitionOfCareInpatientSummaryPostoperativeDiagnosisEntry TransitionOfCareInpatientSummaryPostprocedureDiagnosisEntry TransitionOfCareInpatientSummaryHospitalDischargeInstructionsSection TransitionOfCareInpatientSummaryHospitalDischargeMedicationsSection' constraints.validation.query='TransitionOfCareInpatientSummaryHospitalAdmissionDiagnosisEntry TransitionOfCareInpatientSummaryHospitalDischargeDiagnosesEntry TransitionOfCareInpatientSummaryPostoperativeDiagnosisEntry TransitionOfCareInpatientSummaryPostprocedureDiagnosisEntry'"
+ * @model annotation=
+ *        "http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='TransitionOfCareInpatientSummaryInpatientEncounterDiagnoses TransitionOfCareInpatientSummaryHospitalAdmissionDiagnosisEntry TransitionOfCareInpatientSummaryHospitalDischargeDiagnosesEntry TransitionOfCareInpatientSummaryPostoperativeDiagnosisEntry TransitionOfCareInpatientSummaryPostprocedureDiagnosisEntry TransitionOfCareInpatientSummaryHospitalDischargeInstructionsSection TransitionOfCareInpatientSummaryHospitalDischargeMedicationsSection' constraints.validation.query='TransitionOfCareInpatientSummaryHospitalAdmissionDiagnosisEntry TransitionOfCareInpatientSummaryHospitalDischargeDiagnosesEntry TransitionOfCareInpatientSummaryPostoperativeDiagnosisEntry TransitionOfCareInpatientSummaryPostprocedureDiagnosisEntry' constraints.validation.info='TransitionOfCareInpatientSummaryHospitalAdmissionDiagnosisSection TransitionOfCareInpatientSummaryHospitalDischargeDiagnosisSection TransitionOfCareInpatientSummaryHospitalAdmissionMedicationsSectionEntriesOptional'"
  * @generated
  */
 public interface TransitionOfCareInpatientSummary extends SummaryOfCareRecord {
@@ -83,40 +84,59 @@ public interface TransitionOfCareInpatientSummary extends SummaryOfCareRecord {
 			DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
-   * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-   * <!-- begin-model-doc -->
-   * @param diagnostics The chain of diagnostics to which problems are to be appended.
-   * @param context The cache of context-specific information.
-   * <!-- end-model-doc -->
-   * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.retrieveHospitalDischargeDiagnosisSection()->excluding(null)->reject(retrieveHospitalDischargeDiagnosisSection().getActs()->exists(a : cda::Act | a.oclIsKindOf(consol::HospitalDischargeDiagnosis)))'"
-   * @generated
-   */
-	boolean validateTransitionOfCareInpatientSummaryHospitalDischargeDiagnosesEntry(DiagnosticChain diagnostics, Map<Object, Object> context);
+	 * <!-- begin-user-doc --> <!-- end-user-doc --> <!-- begin-model-doc -->
+	 * self
+	 * .retrieveHospitalDischargeDiagnosisSection()->excluding(null)->reject(
+	 * retrieveHospitalDischargeDiagnosisSection().getActs()->exists(a :
+	 * cda::Act | a.oclIsKindOf(consol::HospitalDischargeDiagnosis)))
+	 * 
+	 * @param diagnostics
+	 *            The chain of diagnostics to which problems are to be appended.
+	 * @param context
+	 *            The cache of context-specific information. <!-- end-model-doc
+	 *            -->
+	 * @model annotation=
+	 *        "http://www.eclipse.org/uml2/1.1.0/GenModel body='self.retrieveHospitalDischargeDiagnosisSection()->excluding(null)->reject(retrieveHospitalDischargeDiagnosisSection().getActs()->exists(a : cda::Act | a.oclIsKindOf(consol::HospitalDischargeDiagnosis)))'"
+	 * @generated
+	 */
+	boolean validateTransitionOfCareInpatientSummaryHospitalDischargeDiagnosesEntry(
+			DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
-   * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-   * <!-- begin-model-doc -->
-   * @param diagnostics The chain of diagnostics to which problems are to be appended.
-   * @param context The cache of context-specific information.
-   * <!-- end-model-doc -->
-   * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.retrievePostoperativeDiagnosisSection()->excluding(null)->reject(retrievePostoperativeDiagnosisSection().getObservations()->exists(a : cda::Observation | a.oclIsKindOf(consol::ProblemObservation)))'"
-   * @generated
-   */
-	boolean validateTransitionOfCareInpatientSummaryPostoperativeDiagnosisEntry(DiagnosticChain diagnostics, Map<Object, Object> context);
+	 * <!-- begin-user-doc --> <!-- end-user-doc --> <!-- begin-model-doc -->
+	 * self.retrievePostoperativeDiagnosisSection()->excluding(null)->reject(
+	 * retrievePostoperativeDiagnosisSection().getObservations()->exists(a :
+	 * cda::Observation | a.oclIsKindOf(consol::ProblemObservation)))
+	 * 
+	 * @param diagnostics
+	 *            The chain of diagnostics to which problems are to be appended.
+	 * @param context
+	 *            The cache of context-specific information. <!-- end-model-doc
+	 *            -->
+	 * @model annotation=
+	 *        "http://www.eclipse.org/uml2/1.1.0/GenModel body='self.retrievePostoperativeDiagnosisSection()->excluding(null)->reject(retrievePostoperativeDiagnosisSection().getObservations()->exists(a : cda::Observation | a.oclIsKindOf(consol::ProblemObservation)))'"
+	 * @generated
+	 */
+	boolean validateTransitionOfCareInpatientSummaryPostoperativeDiagnosisEntry(
+			DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
-   * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-   * <!-- begin-model-doc -->
-   * @param diagnostics The chain of diagnostics to which problems are to be appended.
-   * @param context The cache of context-specific information.
-   * <!-- end-model-doc -->
-   * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.retrievePostprocedureDiagnosisSection()->excluding(null)->reject(retrievePostprocedureDiagnosisSection().getObservations()->exists(a : cda::Observation | a.oclIsKindOf(consol::ProblemObservation)))'"
-   * @generated
-   */
-	boolean validateTransitionOfCareInpatientSummaryPostprocedureDiagnosisEntry(DiagnosticChain diagnostics, Map<Object, Object> context);
+	 * <!-- begin-user-doc --> <!-- end-user-doc --> <!-- begin-model-doc -->
+	 * self.retrievePostprocedureDiagnosisSection()->excluding(null)->reject(
+	 * retrievePostprocedureDiagnosisSection().getObservations()->exists(a :
+	 * cda::Observation | a.oclIsKindOf(consol::ProblemObservation)))
+	 * 
+	 * @param diagnostics
+	 *            The chain of diagnostics to which problems are to be appended.
+	 * @param context
+	 *            The cache of context-specific information. <!-- end-model-doc
+	 *            -->
+	 * @model annotation=
+	 *        "http://www.eclipse.org/uml2/1.1.0/GenModel body='self.retrievePostprocedureDiagnosisSection()->excluding(null)->reject(retrievePostprocedureDiagnosisSection().getObservations()->exists(a : cda::Observation | a.oclIsKindOf(consol::ProblemObservation)))'"
+	 * @generated
+	 */
+	boolean validateTransitionOfCareInpatientSummaryPostprocedureDiagnosisEntry(
+			DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc --> <!-- begin-model-doc -->
@@ -152,6 +172,60 @@ public interface TransitionOfCareInpatientSummary extends SummaryOfCareRecord {
 	 * @generated
 	 */
 	boolean validateTransitionOfCareInpatientSummaryHospitalDischargeMedicationsSection(
+			DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc --> <!-- begin-model-doc -->
+	 * self.getAllSections()->one(section : cda::Section | not
+	 * section.oclIsUndefined() and
+	 * section.oclIsKindOf(consol::HospitalAdmissionDiagnosisSection))
+	 * 
+	 * @param diagnostics
+	 *            The chain of diagnostics to which problems are to be appended.
+	 * @param context
+	 *            The cache of context-specific information. <!-- end-model-doc
+	 *            -->
+	 * @model annotation=
+	 *        "http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::HospitalAdmissionDiagnosisSection))'"
+	 * @generated
+	 */
+	boolean validateTransitionOfCareInpatientSummaryHospitalAdmissionDiagnosisSection(
+			DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc --> <!-- begin-model-doc -->
+	 * self.getAllSections()->one(section : cda::Section | not
+	 * section.oclIsUndefined() and
+	 * section.oclIsKindOf(consol::HospitalDischargeDiagnosisSection))
+	 * 
+	 * @param diagnostics
+	 *            The chain of diagnostics to which problems are to be appended.
+	 * @param context
+	 *            The cache of context-specific information. <!-- end-model-doc
+	 *            -->
+	 * @model annotation=
+	 *        "http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::HospitalDischargeDiagnosisSection))'"
+	 * @generated
+	 */
+	boolean validateTransitionOfCareInpatientSummaryHospitalDischargeDiagnosisSection(
+			DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc --> <!-- begin-model-doc -->
+	 * self.getAllSections()->one(section : cda::Section | not
+	 * section.oclIsUndefined() and section.oclIsKindOf(consol::
+	 * HospitalAdmissionMedicationsSectionEntriesOptional))
+	 * 
+	 * @param diagnostics
+	 *            The chain of diagnostics to which problems are to be appended.
+	 * @param context
+	 *            The cache of context-specific information. <!-- end-model-doc
+	 *            -->
+	 * @model annotation=
+	 *        "http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::HospitalAdmissionMedicationsSectionEntriesOptional))'"
+	 * @generated
+	 */
+	boolean validateTransitionOfCareInpatientSummaryHospitalAdmissionMedicationsSectionEntriesOptional(
 			DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
@@ -215,24 +289,32 @@ public interface TransitionOfCareInpatientSummary extends SummaryOfCareRecord {
 	HospitalDischargeDiagnosisSection getHospitalDischargeDiagnosisSection();
 
 	/**
-   * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-   * @model kind="operation" required="true" ordered="false"
-   *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::HospitalAdmissionMedicationsSectionEntriesOptional))->asSequence()->any(true).oclAsType(consol::HospitalAdmissionMedicationsSectionEntriesOptional)'"
-   * @generated
-   */
+	 * <!-- begin-user-doc --> <!-- end-user-doc --> <!-- begin-model-doc -->
+	 * self.getAllSections()->select(section : cda::Section | not
+	 * section.oclIsUndefined() and section.oclIsKindOf(consol::
+	 * HospitalAdmissionMedicationsSectionEntriesOptional
+	 * ))->asSequence()->any(true
+	 * ).oclAsType(consol::HospitalAdmissionMedicationsSectionEntriesOptional)
+	 * <!-- end-model-doc -->
+	 * 
+	 * @model kind="operation" required="true" ordered="false" annotation=
+	 *        "http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::HospitalAdmissionMedicationsSectionEntriesOptional))->asSequence()->any(true).oclAsType(consol::HospitalAdmissionMedicationsSectionEntriesOptional)'"
+	 * @generated
+	 */
 	HospitalAdmissionMedicationsSectionEntriesOptional getHospitalAdmissionMedicationsSectionEntriesOptional();
 
 	/**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * @generated
-   */
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
 	public TransitionOfCareInpatientSummary init();
 
 	/**
-     * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * @generated
-     */
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
 	public TransitionOfCareInpatientSummary init(
 			Iterable<? extends Initializer<? extends EObject>> initializers);
 } // TransitionOfCareInpatientSummary

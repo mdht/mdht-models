@@ -28,73 +28,85 @@ import org.openhealthtools.mdht.uml.cda.mu2consol.operations.SocialHistorySectio
  * <em><b>Social History Section</b></em>'. <!-- end-user-doc -->
  * <p>
  * </p>
- *
+ * 
  * @generated
  */
 public class SocialHistorySectionImpl extends
 		org.openhealthtools.mdht.uml.cda.consol.impl.SocialHistorySectionImpl
 		implements SocialHistorySection {
 	/**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * @generated
-   */
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
 	protected SocialHistorySectionImpl() {
-    super();
-  }
+		super();
+	}
 
 	/**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * @generated
-   */
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
-    return Mu2consolPackage.Literals.SOCIAL_HISTORY_SECTION;
-  }
+		return Mu2consolPackage.Literals.SOCIAL_HISTORY_SECTION;
+	}
 
 	/**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * @generated
-   */
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
 	public boolean validateMu2consolSocialHistorySectionSmokingStatusObservation(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return SocialHistorySectionOperations.validateMu2consolSocialHistorySectionSmokingStatusObservation(this, diagnostics, context);
-  }
+		return SocialHistorySectionOperations
+				.validateMu2consolSocialHistorySectionSmokingStatusObservation(
+						this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * @generated
-   */
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
 	public EList<SmokingStatusObservation> getMu2consolSmokingStatusObservations() {
-    return SocialHistorySectionOperations.getMu2consolSmokingStatusObservations(this);
-  }
+		return SocialHistorySectionOperations
+				.getMu2consolSmokingStatusObservations(this);
+	}
 
 	/**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * @generated
-   */
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
 	@Override
 	public boolean validateSocialHistorySectionTemplateId(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return SocialHistorySectionOperations.validateSocialHistorySectionTemplateId(this, diagnostics, context);
-  }
+		return SocialHistorySectionOperations
+				.validateSocialHistorySectionTemplateId(this, diagnostics,
+						context);
+	}
 
 	/**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * @generated
-   */
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
 	@Override
 	public SocialHistorySection init() {
-      return Initializer.Util.init(this);
-  }
+		return Initializer.Util.init(this);
+	}
 
 	/**
-     * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * @generated
-     */
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
 	@Override
 	public SocialHistorySection init(
 			Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
+		Initializer.Util.init(this, initializers);
+		return this;
+	}
 } // SocialHistorySectionImpl

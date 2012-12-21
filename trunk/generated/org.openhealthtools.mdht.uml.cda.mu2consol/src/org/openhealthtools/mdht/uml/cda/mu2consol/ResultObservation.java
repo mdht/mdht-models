@@ -20,10 +20,11 @@ import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 /**
  * <!-- begin-user-doc --> A representation of the model object '
  * <em><b>Result Observation</b></em>'. <!-- end-user-doc -->
- *
- *
+ * 
+ * 
  * @see org.openhealthtools.mdht.uml.cda.mu2consol.Mu2consolPackage#getResultObservation()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='Mu2consolResultObservationTemplateId Mu2consolResultObservationResultObservationCodeValue Mu2consolResultObservationCode' templateId.root='2.16.840.1.113883.10.20.22.4.2'"
+ * @model annotation=
+ *        "http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='Mu2consolResultObservationTemplateId Mu2consolResultObservationResultObservationCodeValue Mu2consolResultObservationCode' templateId.root='2.16.840.1.113883.10.20.22.4.2'"
  * @generated
  */
 public interface ResultObservation extends
@@ -62,15 +63,17 @@ public interface ResultObservation extends
 			Map<Object, Object> context);
 
 	/**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * @generated
-   */
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
 	public ResultObservation init();
 
 	/**
-     * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * @generated
-     */
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
 	public ResultObservation init(
 			Iterable<? extends Initializer<? extends EObject>> initializers);
 } // ResultObservation
