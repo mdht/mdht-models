@@ -21,6 +21,7 @@ import org.openhealthtools.mdht.uml.cda.emspcr.EmspcrPackage;
 import org.openhealthtools.mdht.uml.cda.emspcr.operations.EMSMedicationsAdministeredSectionOperations;
 
 import org.openhealthtools.mdht.uml.cda.impl.SectionImpl;
+import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 
 /**
  * <!-- begin-user-doc -->
@@ -33,106 +34,101 @@ import org.openhealthtools.mdht.uml.cda.impl.SectionImpl;
  */
 public class EMSMedicationsAdministeredSectionImpl extends SectionImpl implements EMSMedicationsAdministeredSection {
 	/**
-	* <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+   * @generated
+   */
 	protected EMSMedicationsAdministeredSectionImpl() {
-		super();
-	}
+    super();
+  }
 
 	/**
-	* <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+   * @generated
+   */
 	@Override
 	protected EClass eStaticClass() {
-		return EmspcrPackage.Literals.EMS_MEDICATIONS_ADMINISTERED_SECTION;
-	}
+    return EmspcrPackage.Literals.EMS_MEDICATIONS_ADMINISTERED_SECTION;
+  }
 
 	/**
-	* <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+   * @generated
+   */
 	public boolean validateEMSMedicationsAdministeredSectionTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return EMSMedicationsAdministeredSectionOperations.validateEMSMedicationsAdministeredSectionTemplateId(
-			this, diagnostics, context);
-	}
+    return EMSMedicationsAdministeredSectionOperations.validateEMSMedicationsAdministeredSectionTemplateId(this, diagnostics, context);
+  }
 
 	/**
-	* <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+   * @generated
+   */
 	public boolean validateEMSMedicationsAdministeredSectionCodeP(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return EMSMedicationsAdministeredSectionOperations.validateEMSMedicationsAdministeredSectionCodeP(
-			this, diagnostics, context);
-	}
+    return EMSMedicationsAdministeredSectionOperations.validateEMSMedicationsAdministeredSectionCodeP(this, diagnostics, context);
+  }
 
 	/**
-	* <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+   * @generated
+   */
 	public boolean validateEMSMedicationsAdministeredSectionCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return EMSMedicationsAdministeredSectionOperations.validateEMSMedicationsAdministeredSectionCode(
-			this, diagnostics, context);
-	}
+    return EMSMedicationsAdministeredSectionOperations.validateEMSMedicationsAdministeredSectionCode(this, diagnostics, context);
+  }
 
 	/**
-	* <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+   * @generated
+   */
 	public boolean validateEMSMedicationsAdministeredSectionText(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return EMSMedicationsAdministeredSectionOperations.validateEMSMedicationsAdministeredSectionText(
-			this, diagnostics, context);
-	}
+    return EMSMedicationsAdministeredSectionOperations.validateEMSMedicationsAdministeredSectionText(this, diagnostics, context);
+  }
 
 	/**
-	* <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+   * @generated
+   */
 	public boolean validateEMSMedicationsAdministeredSectionTitle(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return EMSMedicationsAdministeredSectionOperations.validateEMSMedicationsAdministeredSectionTitle(
-			this, diagnostics, context);
-	}
+    return EMSMedicationsAdministeredSectionOperations.validateEMSMedicationsAdministeredSectionTitle(this, diagnostics, context);
+  }
 
 	/**
-	* <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+   * @generated
+   */
 	public boolean validateEMSMedicationsAdministeredSectionEntry1(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return EMSMedicationsAdministeredSectionOperations.validateEMSMedicationsAdministeredSectionEntry1(
-			this, diagnostics, context);
-	}
+    return EMSMedicationsAdministeredSectionOperations.validateEMSMedicationsAdministeredSectionEntry1(this, diagnostics, context);
+  }
 
 	/**
-	* <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public void getEntry1()
+  {
+    EMSMedicationsAdministeredSectionOperations.getEntry1(this);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+   * @generated
+   */
 	public EMSMedicationsAdministeredSection init() {
-		return Initializer.Util.init(this);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EMSMedicationsAdministeredSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+    	CDAUtil.init(this);
+    	return this;
+  }
 } // EMSMedicationsAdministeredSectionImpl

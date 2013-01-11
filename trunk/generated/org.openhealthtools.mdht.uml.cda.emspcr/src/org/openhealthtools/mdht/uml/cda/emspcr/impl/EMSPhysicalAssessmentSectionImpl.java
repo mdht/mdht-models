@@ -21,6 +21,7 @@ import org.openhealthtools.mdht.uml.cda.emspcr.EmspcrPackage;
 import org.openhealthtools.mdht.uml.cda.emspcr.operations.EMSPhysicalAssessmentSectionOperations;
 
 import org.openhealthtools.mdht.uml.cda.impl.SectionImpl;
+import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 
 /**
  * <!-- begin-user-doc -->
@@ -33,151 +34,191 @@ import org.openhealthtools.mdht.uml.cda.impl.SectionImpl;
  */
 public class EMSPhysicalAssessmentSectionImpl extends SectionImpl implements EMSPhysicalAssessmentSection {
 	/**
-	* <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+   * @generated
+   */
 	protected EMSPhysicalAssessmentSectionImpl() {
-		super();
-	}
+    super();
+  }
 
 	/**
-	* <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+   * @generated
+   */
 	@Override
 	protected EClass eStaticClass() {
-		return EmspcrPackage.Literals.EMS_PHYSICAL_ASSESSMENT_SECTION;
-	}
+    return EmspcrPackage.Literals.EMS_PHYSICAL_ASSESSMENT_SECTION;
+  }
 
 	/**
-	* <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+   * @generated
+   */
 	public boolean validateEMSPhysicalAssessmentSectionTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return EMSPhysicalAssessmentSectionOperations.validateEMSPhysicalAssessmentSectionTemplateId(
-			this, diagnostics, context);
-	}
+    return EMSPhysicalAssessmentSectionOperations.validateEMSPhysicalAssessmentSectionTemplateId(this, diagnostics, context);
+  }
 
 	/**
-	* <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+   * @generated
+   */
 	public boolean validateEMSPhysicalAssessmentSectionCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return EMSPhysicalAssessmentSectionOperations.validateEMSPhysicalAssessmentSectionCode(
-			this, diagnostics, context);
-	}
+    return EMSPhysicalAssessmentSectionOperations.validateEMSPhysicalAssessmentSectionCode(this, diagnostics, context);
+  }
 
 	/**
-	* <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+   * @generated
+   */
 	public boolean validateEMSPhysicalAssessmentSectionCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return EMSPhysicalAssessmentSectionOperations.validateEMSPhysicalAssessmentSectionCodeP(
-			this, diagnostics, context);
-	}
+    return EMSPhysicalAssessmentSectionOperations.validateEMSPhysicalAssessmentSectionCodeP(this, diagnostics, context);
+  }
 
 	/**
-	* <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+   * @generated
+   */
 	public boolean validateEMSPhysicalAssessmentSectionText(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return EMSPhysicalAssessmentSectionOperations.validateEMSPhysicalAssessmentSectionText(
-			this, diagnostics, context);
-	}
+    return EMSPhysicalAssessmentSectionOperations.validateEMSPhysicalAssessmentSectionText(this, diagnostics, context);
+  }
 
 	/**
-	* <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+   * @generated
+   */
 	public boolean validateEMSPhysicalAssessmentSectionTitle(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return EMSPhysicalAssessmentSectionOperations.validateEMSPhysicalAssessmentSectionTitle(
-			this, diagnostics, context);
-	}
+    return EMSPhysicalAssessmentSectionOperations.validateEMSPhysicalAssessmentSectionTitle(this, diagnostics, context);
+  }
 
 	/**
-	* <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+   * @generated
+   */
 	public boolean validateEMSPhysicalAssessmentSectionEntry1(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return EMSPhysicalAssessmentSectionOperations.validateEMSPhysicalAssessmentSectionEntry1(
-			this, diagnostics, context);
-	}
+    return EMSPhysicalAssessmentSectionOperations.validateEMSPhysicalAssessmentSectionEntry1(this, diagnostics, context);
+  }
 
 	/**
-	* <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+   * @generated
+   */
 	public boolean validateEMSPhysicalAssessmentSectionEntry2(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return EMSPhysicalAssessmentSectionOperations.validateEMSPhysicalAssessmentSectionEntry2(
-			this, diagnostics, context);
-	}
+    return EMSPhysicalAssessmentSectionOperations.validateEMSPhysicalAssessmentSectionEntry2(this, diagnostics, context);
+  }
 
 	/**
-	* <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+   * @generated
+   */
 	public boolean validateEMSPhysicalAssessmentSectionEntry3(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return EMSPhysicalAssessmentSectionOperations.validateEMSPhysicalAssessmentSectionEntry3(
-			this, diagnostics, context);
-	}
+    return EMSPhysicalAssessmentSectionOperations.validateEMSPhysicalAssessmentSectionEntry3(this, diagnostics, context);
+  }
 
 	/**
-	* <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+   * @generated
+   */
 	public boolean validateEMSPhysicalAssessmentSectionEntry4(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return EMSPhysicalAssessmentSectionOperations.validateEMSPhysicalAssessmentSectionEntry4(
-			this, diagnostics, context);
-	}
+    return EMSPhysicalAssessmentSectionOperations.validateEMSPhysicalAssessmentSectionEntry4(this, diagnostics, context);
+  }
 
 	/**
-	* <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+   * @generated
+   */
 	public boolean validateEMSPhysicalAssessmentSectionEntry5(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return EMSPhysicalAssessmentSectionOperations.validateEMSPhysicalAssessmentSectionEntry5(
-			this, diagnostics, context);
-	}
+    return EMSPhysicalAssessmentSectionOperations.validateEMSPhysicalAssessmentSectionEntry5(this, diagnostics, context);
+  }
 
 	/**
-	* <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+   * @generated
+   */
 	public boolean validateEMSPhysicalAssessmentSectionEntry6(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return EMSPhysicalAssessmentSectionOperations.validateEMSPhysicalAssessmentSectionEntry6(
-			this, diagnostics, context);
-	}
+    return EMSPhysicalAssessmentSectionOperations.validateEMSPhysicalAssessmentSectionEntry6(this, diagnostics, context);
+  }
 
 	/**
-	* <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public void getEntry1()
+  {
+    EMSPhysicalAssessmentSectionOperations.getEntry1(this);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public void getEntry2()
+  {
+    EMSPhysicalAssessmentSectionOperations.getEntry2(this);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public void getEntry3()
+  {
+    EMSPhysicalAssessmentSectionOperations.getEntry3(this);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public void getEntry4()
+  {
+    EMSPhysicalAssessmentSectionOperations.getEntry4(this);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public void getEntry5()
+  {
+    EMSPhysicalAssessmentSectionOperations.getEntry5(this);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public void getEntry6()
+  {
+    EMSPhysicalAssessmentSectionOperations.getEntry6(this);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+   * @generated
+   */
 	public EMSPhysicalAssessmentSection init() {
-		return Initializer.Util.init(this);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EMSPhysicalAssessmentSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+    	CDAUtil.init(this);
+    	return this;
+  }
 } // EMSPhysicalAssessmentSectionImpl

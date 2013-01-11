@@ -22,109 +22,135 @@ import org.openhealthtools.mdht.uml.cda.Section;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.emspcr.EmspcrPackage#getEMSPersonnelAdverseEventSection()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='EMSPersonnelAdverseEventSectionTemplateId EMSPersonnelAdverseEventSectionCode EMSPersonnelAdverseEventSectionCodeP EMSPersonnelAdverseEventSectionTitle EMSPersonnelAdverseEventSectionText EMSPersonnelAdverseEventSectionEntry1' templateId.root='2.16.840.1.113883.17.3.10.1.6' code.code='67658-5' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='Exposures or Injuries of EMS Personnel Section' title.mixed='Exposures or Injuries of EMS Personnel' constraints.validation.info='EMSPersonnelAdverseEventSectionEntry2'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation title.mixed='Exposures or Injuries of EMS Personnel' code.codeSystem='2.16.840.1.113883.6.1' code.displayName='Exposures or Injuries of EMS Personnel Section' templateId.root='2.16.840.1.113883.17.3.10.1.6' constraints.validation.error='EMSPersonnelAdverseEventSectionTemplateId EMSPersonnelAdverseEventSectionCode EMSPersonnelAdverseEventSectionCodeP EMSPersonnelAdverseEventSectionTitle EMSPersonnelAdverseEventSectionText EMSPersonnelAdverseEventSectionEntry1' code.codeSystemName='LOINC' code.code='67658-5' constraints.validation.info='EMSPersonnelAdverseEventSectionEntry2'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSPersonnelAdverseEventSectionEMSExposureOrInjuryEntry constraints.validation.error='EMSExposureOrInjuryEntryEMSExposureOrInjuryIndicator'"
- *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSPersonnelAdverseEventSectionEMSExposureOrInjuryEntryEMSAdverseEventIndicator code.code='67554-6' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='EMS personnel exposed or injured' constraints.validation.error='EMSAdverseEventIndicatorCode EMSAdverseEventIndicatorCodeP EMSAdverseEventIndicatorValue' constraints.validation.dependOn.EMSAdverseEventIndicatorCode='EMSAdverseEventIndicatorCodeP'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSPersonnelAdverseEventSectionEMSExposureOrInjuryEntryEMSAdverseEventIndicator code.codeSystem='2.16.840.1.113883.6.1' code.displayName='EMS personnel exposed or injured' constraints.validation.error='EMSAdverseEventIndicatorCode EMSAdverseEventIndicatorCodeP EMSAdverseEventIndicatorValue' code.codeSystemName='LOINC' constraints.validation.dependOn.EMSAdverseEventIndicatorCode='EMSAdverseEventIndicatorCodeP' code.code='67554-6'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSPersonnelAdverseEventSectionAdverseEventTypeEntry constraints.validation.error='AdverseEventTypeEntryEMSAdverseEventTypeObservation'"
- *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSPersonnelAdverseEventSectionAdverseEventTypeEntryEMSAdverseEventTypeObservation code.code='67555-3' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='EMS personnel adverse event type' constraints.validation.error='EMSAdverseEventTypeObservationCode EMSAdverseEventTypeObservationCodeP EMSAdverseEventTypeObservationValue EMSAdverseEventTypeObservationValueP' constraints.validation.dependOn.EMSAdverseEventTypeObservationCode='EMSAdverseEventTypeObservationCodeP' value.codeSystem='2.16.840.1.113883.6.1' value.codeSystemName='LOINC'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSPersonnelAdverseEventSectionAdverseEventTypeEntryEMSAdverseEventTypeObservation value.codeSystemName='LOINC' code.codeSystem='2.16.840.1.113883.6.1' code.displayName='EMS personnel adverse event type' constraints.validation.dependOn.EMSAdverseEventTypeObservationCode='EMSAdverseEventTypeObservationCodeP' constraints.validation.error='EMSAdverseEventTypeObservationCode EMSAdverseEventTypeObservationCodeP EMSAdverseEventTypeObservationValue EMSAdverseEventTypeObservationValueP' code.codeSystemName='LOINC' code.code='67555-3' value.codeSystem='2.16.840.1.113883.6.1'"
  * @generated
  */
 public interface EMSPersonnelAdverseEventSection extends Section {
 	/**
-	* <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.templateId->exists(id : datatypes::II | id.root = \'2.16.840.1.113883.17.3.10.1.6\')'"
-	* @generated
-	*/
+   * <!-- begin-model-doc -->
+   * self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.17.3.10.1.6')
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.templateId->exists(id : datatypes::II | id.root = \'2.16.840.1.113883.17.3.10.1.6\')'"
+   * @generated
+   */
 	boolean validateEMSPersonnelAdverseEventSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
-	* <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and \r\nlet value : datatypes::CE = self.code.oclAsType(datatypes::CE) in \r\nvalue.code = \'67658-5\' and value.codeSystem = \'2.16.840.1.113883.6.1\')'"
-	* @generated
-	*/
+   * <!-- begin-model-doc -->
+   * (self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and 
+   * let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in 
+   * value.code = '67658-5' and value.codeSystem = '2.16.840.1.113883.6.1')
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and \r\nlet value : datatypes::CE = self.code.oclAsType(datatypes::CE) in \r\nvalue.code = \'67658-5\' and value.codeSystem = \'2.16.840.1.113883.6.1\')'"
+   * @generated
+   */
 	boolean validateEMSPersonnelAdverseEventSectionCode(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
-	* <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined())'"
-	* @generated
-	*/
+   * <!-- begin-model-doc -->
+   * (self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined())
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined())'"
+   * @generated
+   */
 	boolean validateEMSPersonnelAdverseEventSectionCodeP(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
-	* <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='not self.text.oclIsUndefined()'"
-	* @generated
-	*/
+   * <!-- begin-model-doc -->
+   * not self.text.oclIsUndefined()
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='not self.text.oclIsUndefined()'"
+   * @generated
+   */
 	boolean validateEMSPersonnelAdverseEventSectionText(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
-	* <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.title.oclIsUndefined() or self.title.isNullFlavorUndefined()) implies (not self.title.oclIsUndefined() and self.title.getText() = \'Exposures or Injuries of EMS Personnel\')'"
-	* @generated
-	*/
+   * <!-- begin-model-doc -->
+   * (self.title.oclIsUndefined() or self.title.isNullFlavorUndefined()) implies (not self.title.oclIsUndefined() and self.title.getText() = 'Exposures or Injuries of EMS Personnel')
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.title.oclIsUndefined() or self.title.isNullFlavorUndefined()) implies (not self.title.oclIsUndefined() and self.title.getText() = \'Exposures or Injuries of EMS Personnel\')'"
+   * @generated
+   */
 	boolean validateEMSPersonnelAdverseEventSectionTitle(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
-	* <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entry->one(entry : cda::Entry | not entry.oclIsUndefined() and entry.oclIsKindOf(emspcr::DerivedEntry))'"
-	* @generated
-	*/
+   * <!-- begin-model-doc -->
+   * self.entry->one(entry : cda::Entry | not entry.oclIsUndefined() and entry.oclIsKindOf(emspcr::EMSPersonnelAdverseEventSection::EMSExposureOrInjuryEntry))
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entry->one(entry : cda::Entry | not entry.oclIsUndefined() and entry.oclIsKindOf(emspcr::EMSPersonnelAdverseEventSection::EMSExposureOrInjuryEntry))'"
+   * @generated
+   */
 	boolean validateEMSPersonnelAdverseEventSectionEntry1(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
-	* <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entry->one(entry : cda::Entry | not entry.oclIsUndefined() and entry.oclIsKindOf(emspcr::DerivedEntry))'"
-	* @generated
-	*/
+   * <!-- begin-model-doc -->
+   * self.entry->one(entry : cda::Entry | not entry.oclIsUndefined() and entry.oclIsKindOf(emspcr::EMSPersonnelAdverseEventSection::AdverseEventTypeEntry))
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entry->one(entry : cda::Entry | not entry.oclIsUndefined() and entry.oclIsKindOf(emspcr::EMSPersonnelAdverseEventSection::AdverseEventTypeEntry))'"
+   * @generated
+   */
 	boolean validateEMSPersonnelAdverseEventSectionEntry2(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	public EMSPersonnelAdverseEventSection init();
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * self.getEntries()->select(entry : cda::Entry | not entry.oclIsUndefined() and entry.oclIsKindOf(emspcr::EMSPersonnelAdverseEventSection::EMSExposureOrInjuryEntry))->asSequence()->first().oclAsType(emspcr::EMSPersonnelAdverseEventSection::EMSExposureOrInjuryEntry)
+   * <!-- end-model-doc -->
+   * @model kind="operation"
+   *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getEntries()->select(entry : cda::Entry | not entry.oclIsUndefined() and entry.oclIsKindOf(emspcr::EMSPersonnelAdverseEventSection::EMSExposureOrInjuryEntry))->asSequence()->first().oclAsType(emspcr::EMSPersonnelAdverseEventSection::EMSExposureOrInjuryEntry)'"
+   * @generated
+   */
+  void getEntry1();
 
-	/**
-	 * <!-- begin-user-doc -->
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * self.getEntries()->select(entry : cda::Entry | not entry.oclIsUndefined() and entry.oclIsKindOf(emspcr::EMSPersonnelAdverseEventSection::AdverseEventTypeEntry))->asSequence()->first().oclAsType(emspcr::EMSPersonnelAdverseEventSection::AdverseEventTypeEntry)
+   * <!-- end-model-doc -->
+   * @model kind="operation"
+   *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getEntries()->select(entry : cda::Entry | not entry.oclIsUndefined() and entry.oclIsKindOf(emspcr::EMSPersonnelAdverseEventSection::AdverseEventTypeEntry))->asSequence()->first().oclAsType(emspcr::EMSPersonnelAdverseEventSection::AdverseEventTypeEntry)'"
+   * @generated
+   */
+  void getEntry2();
+
+  /**
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EMSPersonnelAdverseEventSection init(Iterable<? extends Initializer<? extends EObject>> initializers);
+   * @generated
+   */
+	public EMSPersonnelAdverseEventSection init();
 } // EMSPersonnelAdverseEventSection
