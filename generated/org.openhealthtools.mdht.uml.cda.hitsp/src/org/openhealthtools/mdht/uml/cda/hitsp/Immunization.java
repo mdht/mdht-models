@@ -10,6 +10,7 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.hitsp;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
@@ -28,46 +29,46 @@ import org.openhealthtools.mdht.emf.runtime.util.Initializer;
  */
 public interface Immunization extends org.openhealthtools.mdht.uml.cda.ihe.Immunization {
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->select(er |   er.typeCode = vocab::x_ActRelationshipEntryRelationship::RSON and er.act.code.codeSystem <> \'2.16.840.1.113883.1.11.19717\' )->isEmpty()'"
-	 * @generated
-	 */
+	* <!-- begin-model-doc -->
+	* @param diagnostics The chain of diagnostics to which problems are to be appended.
+	* @param context The cache of context-specific information.
+	* <!-- end-model-doc -->
+	* @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->select(er |   er.typeCode = vocab::x_ActRelationshipEntryRelationship::RSON and er.act.code.codeSystem <> \'2.16.840.1.113883.1.11.19717\' )->isEmpty()'"
+	* @generated
+	*/
 	boolean validateHITSPImmunizationRefusalReason(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.consumable.manufacturedProduct.manufacturedMaterial.code.codeSystem=\'2.16.840.1.113883.6.59\''"
-	 * @generated
-	 */
+	* <!-- begin-model-doc -->
+	* @param diagnostics The chain of diagnostics to which problems are to be appended.
+	* @param context The cache of context-specific information.
+	* <!-- end-model-doc -->
+	* @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.consumable.manufacturedProduct.manufacturedMaterial.code.codeSystem=\'2.16.840.1.113883.6.59\''"
+	* @generated
+	*/
 	boolean validateHITSPImmunizationCodedProductName(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.templateId->exists(id : datatypes::II | id.root = \'2.16.840.1.113883.3.88.11.83.13\')'"
-	 * @generated
-	 */
+	* <!-- begin-model-doc -->
+	* @param diagnostics The chain of diagnostics to which problems are to be appended.
+	* @param context The cache of context-specific information.
+	* <!-- end-model-doc -->
+	* @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.templateId->exists(id : datatypes::II | id.root = \'2.16.840.1.113883.3.88.11.83.13\')'"
+	* @generated
+	*/
 	boolean validateHITSPImmunizationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public Immunization init();
 
 	/**

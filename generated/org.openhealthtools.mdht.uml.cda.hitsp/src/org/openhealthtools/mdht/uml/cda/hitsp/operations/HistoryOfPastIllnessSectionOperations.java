@@ -45,44 +45,44 @@ import org.openhealthtools.mdht.uml.cda.hitsp.util.HITSPValidator;
 public class HistoryOfPastIllnessSectionOperations extends
 		org.openhealthtools.mdht.uml.cda.ihe.operations.HistoryOfPastIllnessSectionOperations {
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	protected HistoryOfPastIllnessSectionOperations() {
 		super();
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateHITSPHistoryOfPastIllnessSectionTemplateId(HistoryOfPastIllnessSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate HITSP History Of Past Illness Section Template Id</em>}' operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL expression body for the '{@link #validateHITSPHistoryOfPastIllnessSectionTemplateId(HistoryOfPastIllnessSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate HITSP History Of Past Illness Section Template Id</em>}' operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateHITSPHistoryOfPastIllnessSectionTemplateId(HistoryOfPastIllnessSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validateHITSPHistoryOfPastIllnessSectionTemplateId(HistoryOfPastIllnessSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 	protected static final String VALIDATE_HITSP_HISTORY_OF_PAST_ILLNESS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.3.88.11.83.104')";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validateHITSPHistoryOfPastIllnessSectionTemplateId(HistoryOfPastIllnessSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate HITSP History Of Past Illness Section Template Id</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL invariant for the '{@link #validateHITSPHistoryOfPastIllnessSectionTemplateId(HistoryOfPastIllnessSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate HITSP History Of Past Illness Section Template Id</em>}' invariant operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateHITSPHistoryOfPastIllnessSectionTemplateId(HistoryOfPastIllnessSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validateHITSPHistoryOfPastIllnessSectionTemplateId(HistoryOfPastIllnessSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 	protected static Constraint VALIDATE_HITSP_HISTORY_OF_PAST_ILLNESS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param historyOfPastIllnessSection The receiving '<em><b>History Of Past Illness Section</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
+	* <!-- begin-model-doc -->
+	* @param historyOfPastIllnessSection The receiving '<em><b>History Of Past Illness Section</b></em>' model object.
+	* @param diagnostics The chain of diagnostics to which problems are to be appended.
+	* @param context The cache of context-specific information.
+	* <!-- end-model-doc -->
+	* @generated
+	*/
 	public static boolean validateHITSPHistoryOfPastIllnessSectionTemplateId(
 			HistoryOfPastIllnessSection historyOfPastIllnessSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
@@ -113,35 +113,35 @@ public class HistoryOfPastIllnessSectionOperations extends
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateHITSPHistoryOfPastIllnessSectionCondition(HistoryOfPastIllnessSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate HITSP History Of Past Illness Section Condition</em>}' operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL expression body for the '{@link #validateHITSPHistoryOfPastIllnessSectionCondition(HistoryOfPastIllnessSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate HITSP History Of Past Illness Section Condition</em>}' operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateHITSPHistoryOfPastIllnessSectionCondition(HistoryOfPastIllnessSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validateHITSPHistoryOfPastIllnessSectionCondition(HistoryOfPastIllnessSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 	protected static final String VALIDATE_HITSP_HISTORY_OF_PAST_ILLNESS_SECTION_CONDITION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->one(entry : cda::Entry | not entry.act.oclIsUndefined() and entry.act.oclIsKindOf(hitsp::Condition))";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validateHITSPHistoryOfPastIllnessSectionCondition(HistoryOfPastIllnessSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate HITSP History Of Past Illness Section Condition</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL invariant for the '{@link #validateHITSPHistoryOfPastIllnessSectionCondition(HistoryOfPastIllnessSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate HITSP History Of Past Illness Section Condition</em>}' invariant operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateHITSPHistoryOfPastIllnessSectionCondition(HistoryOfPastIllnessSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validateHITSPHistoryOfPastIllnessSectionCondition(HistoryOfPastIllnessSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 	protected static Constraint VALIDATE_HITSP_HISTORY_OF_PAST_ILLNESS_SECTION_CONDITION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param historyOfPastIllnessSection The receiving '<em><b>History Of Past Illness Section</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
+	* <!-- begin-model-doc -->
+	* @param historyOfPastIllnessSection The receiving '<em><b>History Of Past Illness Section</b></em>' model object.
+	* @param diagnostics The chain of diagnostics to which problems are to be appended.
+	* @param context The cache of context-specific information.
+	* <!-- end-model-doc -->
+	* @generated
+	*/
 	public static boolean validateHITSPHistoryOfPastIllnessSectionCondition(
 			HistoryOfPastIllnessSection historyOfPastIllnessSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
@@ -172,30 +172,30 @@ public class HistoryOfPastIllnessSectionOperations extends
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #getCondition(HistoryOfPastIllnessSection) <em>Get Condition</em>}' operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL expression body for the '{@link #getCondition(HistoryOfPastIllnessSection) <em>Get Condition</em>}' operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getCondition(HistoryOfPastIllnessSection)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #getCondition(HistoryOfPastIllnessSection)
+	* @generated
+	* @ordered
+	*/
 	protected static final String GET_CONDITION__EOCL_EXP = "self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(hitsp::Condition))->asSequence()->any(true).oclAsType(hitsp::Condition)";
 
 	/**
-	 * The cached OCL query for the '{@link #getCondition(HistoryOfPastIllnessSection) <em>Get Condition</em>}' query operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL query for the '{@link #getCondition(HistoryOfPastIllnessSection) <em>Get Condition</em>}' query operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getCondition(HistoryOfPastIllnessSection)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #getCondition(HistoryOfPastIllnessSection)
+	* @generated
+	* @ordered
+	*/
 	protected static OCLExpression<EClassifier> GET_CONDITION__EOCL_QRY;
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public static Condition getCondition(HistoryOfPastIllnessSection historyOfPastIllnessSection) {
 		if (GET_CONDITION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();

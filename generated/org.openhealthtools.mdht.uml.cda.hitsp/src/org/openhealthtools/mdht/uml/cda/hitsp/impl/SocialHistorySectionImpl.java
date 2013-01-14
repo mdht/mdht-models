@@ -10,6 +10,7 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.hitsp.impl;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
@@ -34,57 +35,57 @@ import org.openhealthtools.mdht.uml.cda.hitsp.operations.SocialHistorySectionOpe
 public class SocialHistorySectionImpl extends org.openhealthtools.mdht.uml.cda.ihe.impl.SocialHistorySectionImpl
 		implements SocialHistorySection {
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	protected SocialHistorySectionImpl() {
 		super();
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	@Override
 	protected EClass eStaticClass() {
 		return HITSPPackage.Literals.SOCIAL_HISTORY_SECTION;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateHITSPSocialHistorySectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return SocialHistorySectionOperations.validateHITSPSocialHistorySectionTemplateId(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateHITSPSocialHistorySectionSocialHistory(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return SocialHistorySectionOperations.validateHITSPSocialHistorySectionSocialHistory(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public EList<SocialHistory> getSocialHistories() {
 		return SocialHistorySectionOperations.getSocialHistories(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	@Override
 	public SocialHistorySection init() {
 		return Initializer.Util.init(this);

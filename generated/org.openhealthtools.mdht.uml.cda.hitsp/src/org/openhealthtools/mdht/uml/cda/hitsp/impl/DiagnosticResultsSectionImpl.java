@@ -10,6 +10,7 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.hitsp.impl;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
@@ -36,47 +37,47 @@ import org.openhealthtools.mdht.uml.cda.ihe.impl.CodedResultsSectionImpl;
  */
 public class DiagnosticResultsSectionImpl extends CodedResultsSectionImpl implements DiagnosticResultsSection {
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	protected DiagnosticResultsSectionImpl() {
 		super();
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	@Override
 	protected EClass eStaticClass() {
 		return HITSPPackage.Literals.DIAGNOSTIC_RESULTS_SECTION;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateDiagnosticResultsSectionHasResult(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return DiagnosticResultsSectionOperations.validateDiagnosticResultsSectionHasResult(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateDiagnosticResultsSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return DiagnosticResultsSectionOperations.validateDiagnosticResultsSectionTemplateId(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateDiagnosticResultsSectionDiagnosticProcedure(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return DiagnosticResultsSectionOperations.validateDiagnosticResultsSectionDiagnosticProcedure(
@@ -84,19 +85,19 @@ public class DiagnosticResultsSectionImpl extends CodedResultsSectionImpl implem
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateDiagnosticResultsSectionResult(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return DiagnosticResultsSectionOperations.validateDiagnosticResultsSectionResult(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateDiagnosticResultsSectionResultOrganizer(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return DiagnosticResultsSectionOperations.validateDiagnosticResultsSectionResultOrganizer(
@@ -104,37 +105,37 @@ public class DiagnosticResultsSectionImpl extends CodedResultsSectionImpl implem
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public EList<Procedure> getDiagnosticProcedures() {
 		return DiagnosticResultsSectionOperations.getDiagnosticProcedures(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public EList<Result> getResults() {
 		return DiagnosticResultsSectionOperations.getResults(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public EList<ResultOrganizer> getResultOrganizers() {
 		return DiagnosticResultsSectionOperations.getResultOrganizers(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	@Override
 	public DiagnosticResultsSection init() {
 		return Initializer.Util.init(this);

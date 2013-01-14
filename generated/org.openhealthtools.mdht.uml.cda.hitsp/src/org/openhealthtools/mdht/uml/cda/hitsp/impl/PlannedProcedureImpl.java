@@ -10,6 +10,7 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.hitsp.impl;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
@@ -32,29 +33,29 @@ import org.openhealthtools.mdht.uml.cda.ihe.operations.ProcedureEntryPlanOfCareA
  */
 public class PlannedProcedureImpl extends ProcedureImpl implements PlannedProcedure {
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	protected PlannedProcedureImpl() {
 		super();
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	@Override
 	protected EClass eStaticClass() {
 		return HITSPPackage.Literals.PLANNED_PROCEDURE;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validatePlanOfCareActivityProcedureMoodCodeValue(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return PlanOfCareActivityProcedureOperations.validatePlanOfCareActivityProcedureMoodCodeValue(
@@ -62,10 +63,10 @@ public class PlannedProcedureImpl extends ProcedureImpl implements PlannedProced
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validatePlanOfCareActivityProcedureTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return PlanOfCareActivityProcedureOperations.validatePlanOfCareActivityProcedureTemplateId(
@@ -73,29 +74,29 @@ public class PlannedProcedureImpl extends ProcedureImpl implements PlannedProced
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validatePlanOfCareActivityProcedureId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PlanOfCareActivityProcedureOperations.validatePlanOfCareActivityProcedureId(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validatePlanOfCareActivityProcedureMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PlanOfCareActivityProcedureOperations.validatePlanOfCareActivityProcedureMoodCode(
 			this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateProcedureEntryPlanOfCareActivityProcedureMoodCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ProcedureEntryPlanOfCareActivityProcedureOperations.validateProcedureEntryPlanOfCareActivityProcedureMoodCode(
@@ -103,10 +104,10 @@ public class PlannedProcedureImpl extends ProcedureImpl implements PlannedProced
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	@Override
 	public PlannedProcedure init() {
 		return Initializer.Util.init(this);

@@ -48,44 +48,44 @@ import org.openhealthtools.mdht.uml.cda.ihe.operations.EncounterHistorySectionOp
  */
 public class EncountersSectionOperations extends EncounterHistorySectionOperations {
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	protected EncountersSectionOperations() {
 		super();
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateHITSPEncountersSectionTemplateId(EncountersSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate HITSP Encounters Section Template Id</em>}' operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL expression body for the '{@link #validateHITSPEncountersSectionTemplateId(EncountersSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate HITSP Encounters Section Template Id</em>}' operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateHITSPEncountersSectionTemplateId(EncountersSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validateHITSPEncountersSectionTemplateId(EncountersSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 	protected static final String VALIDATE_HITSP_ENCOUNTERS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.3.88.11.83.127')";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validateHITSPEncountersSectionTemplateId(EncountersSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate HITSP Encounters Section Template Id</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL invariant for the '{@link #validateHITSPEncountersSectionTemplateId(EncountersSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate HITSP Encounters Section Template Id</em>}' invariant operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateHITSPEncountersSectionTemplateId(EncountersSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validateHITSPEncountersSectionTemplateId(EncountersSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 	protected static Constraint VALIDATE_HITSP_ENCOUNTERS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param encountersSection The receiving '<em><b>Encounters Section</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
+	* <!-- begin-model-doc -->
+	* @param encountersSection The receiving '<em><b>Encounters Section</b></em>' model object.
+	* @param diagnostics The chain of diagnostics to which problems are to be appended.
+	* @param context The cache of context-specific information.
+	* <!-- end-model-doc -->
+	* @generated
+	*/
 	public static boolean validateHITSPEncountersSectionTemplateId(EncountersSection encountersSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -114,35 +114,35 @@ public class EncountersSectionOperations extends EncounterHistorySectionOperatio
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateHITSPEncountersSectionEncounterEntry(EncountersSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate HITSP Encounters Section Encounter Entry</em>}' operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL expression body for the '{@link #validateHITSPEncountersSectionEncounterEntry(EncountersSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate HITSP Encounters Section Encounter Entry</em>}' operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateHITSPEncountersSectionEncounterEntry(EncountersSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validateHITSPEncountersSectionEncounterEntry(EncountersSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 	protected static final String VALIDATE_HITSP_ENCOUNTERS_SECTION_ENCOUNTER_ENTRY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->exists(entry : cda::Entry | not entry.encounter.oclIsUndefined() and entry.encounter.oclIsKindOf(hitsp::Encounter))";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validateHITSPEncountersSectionEncounterEntry(EncountersSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate HITSP Encounters Section Encounter Entry</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL invariant for the '{@link #validateHITSPEncountersSectionEncounterEntry(EncountersSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate HITSP Encounters Section Encounter Entry</em>}' invariant operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateHITSPEncountersSectionEncounterEntry(EncountersSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validateHITSPEncountersSectionEncounterEntry(EncountersSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 	protected static Constraint VALIDATE_HITSP_ENCOUNTERS_SECTION_ENCOUNTER_ENTRY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param encountersSection The receiving '<em><b>Encounters Section</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
+	* <!-- begin-model-doc -->
+	* @param encountersSection The receiving '<em><b>Encounters Section</b></em>' model object.
+	* @param diagnostics The chain of diagnostics to which problems are to be appended.
+	* @param context The cache of context-specific information.
+	* <!-- end-model-doc -->
+	* @generated
+	*/
 	public static boolean validateHITSPEncountersSectionEncounterEntry(EncountersSection encountersSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -171,30 +171,30 @@ public class EncountersSectionOperations extends EncounterHistorySectionOperatio
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #getHITSPEncounterEntries(EncountersSection) <em>Get HITSP Encounter Entries</em>}' operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL expression body for the '{@link #getHITSPEncounterEntries(EncountersSection) <em>Get HITSP Encounter Entries</em>}' operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getHITSPEncounterEntries(EncountersSection)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #getHITSPEncounterEntries(EncountersSection)
+	* @generated
+	* @ordered
+	*/
 	protected static final String GET_HITSP_ENCOUNTER_ENTRIES__EOCL_EXP = "self.getEncounters()->select(encounter : cda::Encounter | not encounter.oclIsUndefined() and encounter.oclIsKindOf(hitsp::Encounter)).oclAsType(hitsp::Encounter)";
 
 	/**
-	 * The cached OCL query for the '{@link #getHITSPEncounterEntries(EncountersSection) <em>Get HITSP Encounter Entries</em>}' query operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL query for the '{@link #getHITSPEncounterEntries(EncountersSection) <em>Get HITSP Encounter Entries</em>}' query operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getHITSPEncounterEntries(EncountersSection)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #getHITSPEncounterEntries(EncountersSection)
+	* @generated
+	* @ordered
+	*/
 	protected static OCLExpression<EClassifier> GET_HITSP_ENCOUNTER_ENTRIES__EOCL_QRY;
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public static EList<Encounter> getHITSPEncounterEntries(EncountersSection encountersSection) {
 		if (GET_HITSP_ENCOUNTER_ENTRIES__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();

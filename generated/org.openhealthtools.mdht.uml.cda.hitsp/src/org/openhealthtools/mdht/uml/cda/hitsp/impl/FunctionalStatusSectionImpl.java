@@ -10,6 +10,7 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.hitsp.impl;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
@@ -32,29 +33,29 @@ import org.openhealthtools.mdht.uml.cda.hitsp.operations.FunctionalStatusSection
 public class FunctionalStatusSectionImpl extends org.openhealthtools.mdht.uml.cda.ccd.impl.FunctionalStatusSectionImpl
 		implements FunctionalStatusSection {
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	protected FunctionalStatusSectionImpl() {
 		super();
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	@Override
 	protected EClass eStaticClass() {
 		return HITSPPackage.Literals.FUNCTIONAL_STATUS_SECTION;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateHITSPFunctionalStatusSectionTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return FunctionalStatusSectionOperations.validateHITSPFunctionalStatusSectionTemplateId(
@@ -62,10 +63,10 @@ public class FunctionalStatusSectionImpl extends org.openhealthtools.mdht.uml.cd
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	@Override
 	public FunctionalStatusSection init() {
 		return Initializer.Util.init(this);

@@ -48,44 +48,44 @@ import org.openhealthtools.mdht.uml.cda.ihe.operations.CodedAdvanceDirectivesSec
  */
 public class AdvanceDirectivesSectionOperations extends CodedAdvanceDirectivesSectionOperations {
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	protected AdvanceDirectivesSectionOperations() {
 		super();
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateHITSPAdvanceDirectivesSectionTemplateId(AdvanceDirectivesSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate HITSP Advance Directives Section Template Id</em>}' operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL expression body for the '{@link #validateHITSPAdvanceDirectivesSectionTemplateId(AdvanceDirectivesSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate HITSP Advance Directives Section Template Id</em>}' operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateHITSPAdvanceDirectivesSectionTemplateId(AdvanceDirectivesSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validateHITSPAdvanceDirectivesSectionTemplateId(AdvanceDirectivesSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 	protected static final String VALIDATE_HITSP_ADVANCE_DIRECTIVES_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.3.88.11.83.116')";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validateHITSPAdvanceDirectivesSectionTemplateId(AdvanceDirectivesSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate HITSP Advance Directives Section Template Id</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL invariant for the '{@link #validateHITSPAdvanceDirectivesSectionTemplateId(AdvanceDirectivesSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate HITSP Advance Directives Section Template Id</em>}' invariant operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateHITSPAdvanceDirectivesSectionTemplateId(AdvanceDirectivesSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validateHITSPAdvanceDirectivesSectionTemplateId(AdvanceDirectivesSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 	protected static Constraint VALIDATE_HITSP_ADVANCE_DIRECTIVES_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param advanceDirectivesSection The receiving '<em><b>Advance Directives Section</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
+	* <!-- begin-model-doc -->
+	* @param advanceDirectivesSection The receiving '<em><b>Advance Directives Section</b></em>' model object.
+	* @param diagnostics The chain of diagnostics to which problems are to be appended.
+	* @param context The cache of context-specific information.
+	* <!-- end-model-doc -->
+	* @generated
+	*/
 	public static boolean validateHITSPAdvanceDirectivesSectionTemplateId(
 			AdvanceDirectivesSection advanceDirectivesSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -114,35 +114,35 @@ public class AdvanceDirectivesSectionOperations extends CodedAdvanceDirectivesSe
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateHITSPAdvanceDirectivesSectionAdvanceDirective(AdvanceDirectivesSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate HITSP Advance Directives Section Advance Directive</em>}' operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL expression body for the '{@link #validateHITSPAdvanceDirectivesSectionAdvanceDirective(AdvanceDirectivesSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate HITSP Advance Directives Section Advance Directive</em>}' operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateHITSPAdvanceDirectivesSectionAdvanceDirective(AdvanceDirectivesSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validateHITSPAdvanceDirectivesSectionAdvanceDirective(AdvanceDirectivesSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 	protected static final String VALIDATE_HITSP_ADVANCE_DIRECTIVES_SECTION_ADVANCE_DIRECTIVE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->exists(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(hitsp::AdvanceDirective))";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validateHITSPAdvanceDirectivesSectionAdvanceDirective(AdvanceDirectivesSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate HITSP Advance Directives Section Advance Directive</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL invariant for the '{@link #validateHITSPAdvanceDirectivesSectionAdvanceDirective(AdvanceDirectivesSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate HITSP Advance Directives Section Advance Directive</em>}' invariant operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateHITSPAdvanceDirectivesSectionAdvanceDirective(AdvanceDirectivesSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validateHITSPAdvanceDirectivesSectionAdvanceDirective(AdvanceDirectivesSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 	protected static Constraint VALIDATE_HITSP_ADVANCE_DIRECTIVES_SECTION_ADVANCE_DIRECTIVE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param advanceDirectivesSection The receiving '<em><b>Advance Directives Section</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
+	* <!-- begin-model-doc -->
+	* @param advanceDirectivesSection The receiving '<em><b>Advance Directives Section</b></em>' model object.
+	* @param diagnostics The chain of diagnostics to which problems are to be appended.
+	* @param context The cache of context-specific information.
+	* <!-- end-model-doc -->
+	* @generated
+	*/
 	public static boolean validateHITSPAdvanceDirectivesSectionAdvanceDirective(
 			AdvanceDirectivesSection advanceDirectivesSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -172,30 +172,30 @@ public class AdvanceDirectivesSectionOperations extends CodedAdvanceDirectivesSe
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #getAdvanceDirectives(AdvanceDirectivesSection) <em>Get Advance Directives</em>}' operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL expression body for the '{@link #getAdvanceDirectives(AdvanceDirectivesSection) <em>Get Advance Directives</em>}' operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getAdvanceDirectives(AdvanceDirectivesSection)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #getAdvanceDirectives(AdvanceDirectivesSection)
+	* @generated
+	* @ordered
+	*/
 	protected static final String GET_ADVANCE_DIRECTIVES__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(hitsp::AdvanceDirective)).oclAsType(hitsp::AdvanceDirective)";
 
 	/**
-	 * The cached OCL query for the '{@link #getAdvanceDirectives(AdvanceDirectivesSection) <em>Get Advance Directives</em>}' query operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL query for the '{@link #getAdvanceDirectives(AdvanceDirectivesSection) <em>Get Advance Directives</em>}' query operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getAdvanceDirectives(AdvanceDirectivesSection)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #getAdvanceDirectives(AdvanceDirectivesSection)
+	* @generated
+	* @ordered
+	*/
 	protected static OCLExpression<EClassifier> GET_ADVANCE_DIRECTIVES__EOCL_QRY;
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public static EList<AdvanceDirective> getAdvanceDirectives(AdvanceDirectivesSection advanceDirectivesSection) {
 		if (GET_ADVANCE_DIRECTIVES__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();

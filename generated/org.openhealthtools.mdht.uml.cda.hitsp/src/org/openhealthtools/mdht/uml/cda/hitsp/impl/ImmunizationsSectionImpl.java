@@ -10,6 +10,7 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.hitsp.impl;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
@@ -34,57 +35,57 @@ import org.openhealthtools.mdht.uml.cda.hitsp.operations.ImmunizationsSectionOpe
 public class ImmunizationsSectionImpl extends org.openhealthtools.mdht.uml.cda.ihe.impl.ImmunizationsSectionImpl
 		implements ImmunizationsSection {
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	protected ImmunizationsSectionImpl() {
 		super();
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	@Override
 	protected EClass eStaticClass() {
 		return HITSPPackage.Literals.IMMUNIZATIONS_SECTION;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateHITSPImmunizationsSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ImmunizationsSectionOperations.validateHITSPImmunizationsSectionTemplateId(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateHITSPImmunizationsSectionImmunization(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ImmunizationsSectionOperations.validateHITSPImmunizationsSectionImmunization(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public EList<Immunization> getHITSPImmunizations() {
 		return ImmunizationsSectionOperations.getHITSPImmunizations(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	@Override
 	public ImmunizationsSection init() {
 		return Initializer.Util.init(this);

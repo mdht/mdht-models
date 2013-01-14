@@ -10,6 +10,7 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.hitsp.impl;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
@@ -34,57 +35,57 @@ import org.openhealthtools.mdht.uml.cda.ihe.impl.CodedSurgeriesSectionImpl;
  */
 public class SurgeriesSectionImpl extends CodedSurgeriesSectionImpl implements SurgeriesSection {
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	protected SurgeriesSectionImpl() {
 		super();
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	@Override
 	protected EClass eStaticClass() {
 		return HITSPPackage.Literals.SURGERIES_SECTION;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateHITSPSurgeriesSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return SurgeriesSectionOperations.validateHITSPSurgeriesSectionTemplateId(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateHITSPSurgeriesSectionProcedureActivity(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return SurgeriesSectionOperations.validateHITSPSurgeriesSectionProcedureActivity(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public EList<Procedure> getProcedureActivities() {
 		return SurgeriesSectionOperations.getProcedureActivities(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	@Override
 	public SurgeriesSection init() {
 		return Initializer.Util.init(this);

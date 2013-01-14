@@ -10,6 +10,7 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.hitsp.impl;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
@@ -37,49 +38,49 @@ import org.openhealthtools.mdht.uml.cda.hitsp.Procedure;
 public class AssessmentAndPlanSectionImpl extends
 		org.openhealthtools.mdht.uml.cda.ihe.impl.AssessmentAndPlanSectionImpl implements AssessmentAndPlanSection {
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	protected AssessmentAndPlanSectionImpl() {
 		super();
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	@Override
 	protected EClass eStaticClass() {
 		return HITSPPackage.Literals.ASSESSMENT_AND_PLAN_SECTION;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	@Override
 	public boolean validateAssessmentAndPlanSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return AssessmentAndPlanSectionOperations.validateAssessmentAndPlanSectionTemplateId(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	@Override
 	public boolean validateAssessmentAndPlanSectionCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return AssessmentAndPlanSectionOperations.validateAssessmentAndPlanSectionCode(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateHITSPAssessmentAndPlanSectionTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return org.openhealthtools.mdht.uml.cda.hitsp.operations.AssessmentAndPlanSectionOperations.validateHITSPAssessmentAndPlanSectionTemplateId(
@@ -87,10 +88,10 @@ public class AssessmentAndPlanSectionImpl extends
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateHITSPAssessmentAndPlanSectionMedication(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return org.openhealthtools.mdht.uml.cda.hitsp.operations.AssessmentAndPlanSectionOperations.validateHITSPAssessmentAndPlanSectionMedication(
@@ -98,10 +99,10 @@ public class AssessmentAndPlanSectionImpl extends
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateHITSPAssessmentAndPlanSectionImmunization(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return org.openhealthtools.mdht.uml.cda.hitsp.operations.AssessmentAndPlanSectionOperations.validateHITSPAssessmentAndPlanSectionImmunization(
@@ -109,10 +110,10 @@ public class AssessmentAndPlanSectionImpl extends
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateHITSPAssessmentAndPlanSectionEncounterEntry(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return org.openhealthtools.mdht.uml.cda.hitsp.operations.AssessmentAndPlanSectionOperations.validateHITSPAssessmentAndPlanSectionEncounterEntry(
@@ -120,10 +121,10 @@ public class AssessmentAndPlanSectionImpl extends
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateHITSPAssessmentAndPlanSectionProcedureEntry(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return org.openhealthtools.mdht.uml.cda.hitsp.operations.AssessmentAndPlanSectionOperations.validateHITSPAssessmentAndPlanSectionProcedureEntry(
@@ -131,46 +132,46 @@ public class AssessmentAndPlanSectionImpl extends
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public EList<Medication> getMedications() {
 		return org.openhealthtools.mdht.uml.cda.hitsp.operations.AssessmentAndPlanSectionOperations.getMedications(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public EList<Immunization> getImmunizations() {
 		return org.openhealthtools.mdht.uml.cda.hitsp.operations.AssessmentAndPlanSectionOperations.getImmunizations(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public EList<Encounter> getEncounterEntries() {
 		return org.openhealthtools.mdht.uml.cda.hitsp.operations.AssessmentAndPlanSectionOperations.getEncounterEntries(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public EList<Procedure> getProcedureEntries() {
 		return org.openhealthtools.mdht.uml.cda.hitsp.operations.AssessmentAndPlanSectionOperations.getProcedureEntries(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	@Override
 	public AssessmentAndPlanSection init() {
 		return Initializer.Util.init(this);

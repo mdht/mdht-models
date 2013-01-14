@@ -48,44 +48,44 @@ import org.openhealthtools.mdht.uml.cda.ihe.operations.FamilyMedicalHistorySecti
  */
 public class FamilyHistorySectionOperations extends FamilyMedicalHistorySectionOperations {
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	protected FamilyHistorySectionOperations() {
 		super();
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateHITSPFamilyHistorySectionTemplateId(FamilyHistorySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate HITSP Family History Section Template Id</em>}' operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL expression body for the '{@link #validateHITSPFamilyHistorySectionTemplateId(FamilyHistorySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate HITSP Family History Section Template Id</em>}' operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateHITSPFamilyHistorySectionTemplateId(FamilyHistorySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validateHITSPFamilyHistorySectionTemplateId(FamilyHistorySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 	protected static final String VALIDATE_HITSP_FAMILY_HISTORY_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.3.88.11.83.125')";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validateHITSPFamilyHistorySectionTemplateId(FamilyHistorySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate HITSP Family History Section Template Id</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL invariant for the '{@link #validateHITSPFamilyHistorySectionTemplateId(FamilyHistorySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate HITSP Family History Section Template Id</em>}' invariant operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateHITSPFamilyHistorySectionTemplateId(FamilyHistorySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validateHITSPFamilyHistorySectionTemplateId(FamilyHistorySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 	protected static Constraint VALIDATE_HITSP_FAMILY_HISTORY_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param familyHistorySection The receiving '<em><b>Family History Section</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
+	* <!-- begin-model-doc -->
+	* @param familyHistorySection The receiving '<em><b>Family History Section</b></em>' model object.
+	* @param diagnostics The chain of diagnostics to which problems are to be appended.
+	* @param context The cache of context-specific information.
+	* <!-- end-model-doc -->
+	* @generated
+	*/
 	public static boolean validateHITSPFamilyHistorySectionTemplateId(FamilyHistorySection familyHistorySection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -114,35 +114,35 @@ public class FamilyHistorySectionOperations extends FamilyMedicalHistorySectionO
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateHITSPFamilyHistorySectionFamilyHistory(FamilyHistorySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate HITSP Family History Section Family History</em>}' operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL expression body for the '{@link #validateHITSPFamilyHistorySectionFamilyHistory(FamilyHistorySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate HITSP Family History Section Family History</em>}' operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateHITSPFamilyHistorySectionFamilyHistory(FamilyHistorySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validateHITSPFamilyHistorySectionFamilyHistory(FamilyHistorySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 	protected static final String VALIDATE_HITSP_FAMILY_HISTORY_SECTION_FAMILY_HISTORY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->exists(entry : cda::Entry | not entry.organizer.oclIsUndefined() and entry.organizer.oclIsKindOf(hitsp::FamilyHistory))";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validateHITSPFamilyHistorySectionFamilyHistory(FamilyHistorySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate HITSP Family History Section Family History</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL invariant for the '{@link #validateHITSPFamilyHistorySectionFamilyHistory(FamilyHistorySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate HITSP Family History Section Family History</em>}' invariant operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateHITSPFamilyHistorySectionFamilyHistory(FamilyHistorySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validateHITSPFamilyHistorySectionFamilyHistory(FamilyHistorySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 	protected static Constraint VALIDATE_HITSP_FAMILY_HISTORY_SECTION_FAMILY_HISTORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param familyHistorySection The receiving '<em><b>Family History Section</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
+	* <!-- begin-model-doc -->
+	* @param familyHistorySection The receiving '<em><b>Family History Section</b></em>' model object.
+	* @param diagnostics The chain of diagnostics to which problems are to be appended.
+	* @param context The cache of context-specific information.
+	* <!-- end-model-doc -->
+	* @generated
+	*/
 	public static boolean validateHITSPFamilyHistorySectionFamilyHistory(FamilyHistorySection familyHistorySection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -171,30 +171,30 @@ public class FamilyHistorySectionOperations extends FamilyMedicalHistorySectionO
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #getFamilyHistories(FamilyHistorySection) <em>Get Family Histories</em>}' operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL expression body for the '{@link #getFamilyHistories(FamilyHistorySection) <em>Get Family Histories</em>}' operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getFamilyHistories(FamilyHistorySection)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #getFamilyHistories(FamilyHistorySection)
+	* @generated
+	* @ordered
+	*/
 	protected static final String GET_FAMILY_HISTORIES__EOCL_EXP = "self.getOrganizers()->select(organizer : cda::Organizer | not organizer.oclIsUndefined() and organizer.oclIsKindOf(hitsp::FamilyHistory)).oclAsType(hitsp::FamilyHistory)";
 
 	/**
-	 * The cached OCL query for the '{@link #getFamilyHistories(FamilyHistorySection) <em>Get Family Histories</em>}' query operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL query for the '{@link #getFamilyHistories(FamilyHistorySection) <em>Get Family Histories</em>}' query operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getFamilyHistories(FamilyHistorySection)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #getFamilyHistories(FamilyHistorySection)
+	* @generated
+	* @ordered
+	*/
 	protected static OCLExpression<EClassifier> GET_FAMILY_HISTORIES__EOCL_QRY;
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public static EList<FamilyHistory> getFamilyHistories(FamilyHistorySection familyHistorySection) {
 		if (GET_FAMILY_HISTORIES__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
