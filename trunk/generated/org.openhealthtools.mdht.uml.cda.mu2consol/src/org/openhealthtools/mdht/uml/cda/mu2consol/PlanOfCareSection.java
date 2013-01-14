@@ -21,11 +21,10 @@ import org.openhealthtools.mdht.uml.cda.consol.PlanOfCareActivityObservation;
 /**
  * <!-- begin-user-doc --> A representation of the model object '
  * <em><b>Plan Of Care Section</b></em>'. <!-- end-user-doc -->
- * 
- * 
+ *
+ *
  * @see org.openhealthtools.mdht.uml.cda.mu2consol.Mu2consolPackage#getPlanOfCareSection()
- * @model annotation=
- *        "http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='Mu2consolPlanOfCareSectionTemplateId' templateId.root='2.16.840.1.113883.10.20.22.2.10'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='Mu2consolPlanOfCareSectionTemplateId' templateId.root='2.16.840.1.113883.10.20.22.2.10'"
  * @generated
  */
 public interface PlanOfCareSection extends
@@ -70,17 +69,15 @@ public interface PlanOfCareSection extends
 	EList<PlanOfCareActivityObservation> getMu2consolPlanOfCareActivityObservations();
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
 	public PlanOfCareSection init();
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
-	 * @generated
-	 */
+     * <!-- begin-user-doc --> <!-- end-user-doc -->
+     * @generated
+     */
 	public PlanOfCareSection init(
 			Iterable<? extends Initializer<? extends EObject>> initializers);
 } // PlanOfCareSection

@@ -21,11 +21,10 @@ import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 /**
  * <!-- begin-user-doc --> A representation of the model object '
  * <em><b>Encounters Section</b></em>'. <!-- end-user-doc -->
- * 
- * 
+ *
+ *
  * @see org.openhealthtools.mdht.uml.cda.mu2consol.Mu2consolPackage#getEncountersSection()
- * @model annotation=
- *        "http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='Mu2consolEncountersSectionTemplateId Mu2consolEncountersSectionEncounterActivities' templateId.root='2.16.840.1.113883.10.20.22.2.22.1'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='Mu2consolEncountersSectionTemplateId Mu2consolEncountersSectionEncounterActivities' templateId.root='2.16.840.1.113883.10.20.22.2.22.1'"
  * @generated
  */
 public interface EncountersSection extends
@@ -62,17 +61,15 @@ public interface EncountersSection extends
 	EList<EncounterActivities> getMu2consolEncounterActivitiess();
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
 	public EncountersSection init();
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
-	 * @generated
-	 */
+     * <!-- begin-user-doc --> <!-- end-user-doc -->
+     * @generated
+     */
 	public EncountersSection init(
 			Iterable<? extends Initializer<? extends EObject>> initializers);
 } // EncountersSection

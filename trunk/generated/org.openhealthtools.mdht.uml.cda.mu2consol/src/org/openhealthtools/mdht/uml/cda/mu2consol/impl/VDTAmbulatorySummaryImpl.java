@@ -26,61 +26,54 @@ import org.openhealthtools.mdht.uml.cda.mu2consol.operations.VDTAmbulatorySummar
  * <em><b>VDT Ambulatory Summary</b></em>'. <!-- end-user-doc -->
  * <p>
  * </p>
- * 
+ *
  * @generated
  */
 public class VDTAmbulatorySummaryImpl extends ViewDownloadTransmitSummaryImpl
 		implements VDTAmbulatorySummary {
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
 	protected VDTAmbulatorySummaryImpl() {
-		super();
-	}
+    super();
+  }
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
 	@Override
 	protected EClass eStaticClass() {
-		return Mu2consolPackage.Literals.VDT_AMBULATORY_SUMMARY;
-	}
+    return Mu2consolPackage.Literals.VDT_AMBULATORY_SUMMARY;
+  }
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
 	public boolean validateVDTAmbulatorySummaryResponsibleParty(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return VDTAmbulatorySummaryOperations
-				.validateVDTAmbulatorySummaryResponsibleParty(this,
-						diagnostics, context);
-	}
+    return VDTAmbulatorySummaryOperations.validateVDTAmbulatorySummaryResponsibleParty(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
 	@Override
 	public VDTAmbulatorySummary init() {
-		return Initializer.Util.init(this);
-	}
+      return Initializer.Util.init(this);
+  }
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
-	 * @generated
-	 */
+     * <!-- begin-user-doc --> <!-- end-user-doc -->
+     * @generated
+     */
 	@Override
 	public VDTAmbulatorySummary init(
 			Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // VDTAmbulatorySummaryImpl

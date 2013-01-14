@@ -15,19 +15,17 @@ import org.eclipse.emf.ecore.EFactory;
 /**
  * <!-- begin-user-doc --> The <b>Factory</b> for the model. It provides a
  * create method for each non-abstract class of the model. <!-- end-user-doc -->
- * 
  * @see org.openhealthtools.mdht.uml.cda.mu2consol.Mu2consolPackage
  * @generated
  */
 public interface Mu2consolFactory extends EFactory {
 	/**
-	 * The singleton instance of the factory. <!-- begin-user-doc --> <!--
+   * The singleton instance of the factory.
+   * <!-- begin-user-doc --> <!--
 	 * end-user-doc -->
-	 * 
-	 * @generated
-	 */
-	Mu2consolFactory eINSTANCE = org.openhealthtools.mdht.uml.cda.mu2consol.impl.Mu2consolFactoryImpl
-			.init();
+   * @generated
+   */
+	Mu2consolFactory eINSTANCE = org.openhealthtools.mdht.uml.cda.mu2consol.impl.Mu2consolFactoryImpl.init();
 
 	/**
 	 * Returns a new object of class '<em>General Header Constraints</em>'. <!--
@@ -75,12 +73,11 @@ public interface Mu2consolFactory extends EFactory {
 	PlanOfCareSection createPlanOfCareSection();
 
 	/**
-	 * Returns a new object of class '<em>Assessment And Plan Section</em>'.
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
-	 * @return a new object of class '<em>Assessment And Plan Section</em>'.
-	 * @generated
-	 */
+   * Returns a new object of class '<em>Assessment And Plan Section</em>'.
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @return a new object of class '<em>Assessment And Plan Section</em>'.
+   * @generated
+   */
 	AssessmentAndPlanSection createAssessmentAndPlanSection();
 
 	/**
@@ -147,52 +144,45 @@ public interface Mu2consolFactory extends EFactory {
 	ProceduresSection createProceduresSection();
 
 	/**
-	 * Returns a new object of class '<em>Procedure Activity Procedure</em>'.
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
-	 * @return a new object of class '<em>Procedure Activity Procedure</em>'.
-	 * @generated
-	 */
+   * Returns a new object of class '<em>Procedure Activity Procedure</em>'.
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @return a new object of class '<em>Procedure Activity Procedure</em>'.
+   * @generated
+   */
 	ProcedureActivityProcedure createProcedureActivityProcedure();
 
 	/**
-	 * Returns a new object of class '<em>Clinical Office Visit Summary</em>'.
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
-	 * @return a new object of class '<em>Clinical Office Visit Summary</em>'.
-	 * @generated
-	 */
+   * Returns a new object of class '<em>Clinical Office Visit Summary</em>'.
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @return a new object of class '<em>Clinical Office Visit Summary</em>'.
+   * @generated
+   */
 	ClinicalOfficeVisitSummary createClinicalOfficeVisitSummary();
 
 	/**
-	 * Returns a new object of class '
-	 * <em>Transition Of Care Ambulatory Summary</em>'. <!-- begin-user-doc -->
+   * Returns a new object of class '<em>Transition Of Care Ambulatory Summary</em>'.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * 
-	 * @return a new object of class '
-	 *         <em>Transition Of Care Ambulatory Summary</em>'.
-	 * @generated
-	 */
+   * @return a new object of class '<em>Transition Of Care Ambulatory Summary</em>'.
+   * @generated
+   */
 	TransitionOfCareAmbulatorySummary createTransitionOfCareAmbulatorySummary();
 
 	/**
-	 * Returns a new object of class '
-	 * <em>Transition Of Care Inpatient Summary</em>'. <!-- begin-user-doc -->
+   * Returns a new object of class '<em>Transition Of Care Inpatient Summary</em>'.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * 
-	 * @return a new object of class '
-	 *         <em>Transition Of Care Inpatient Summary</em>'.
-	 * @generated
-	 */
+   * @return a new object of class '<em>Transition Of Care Inpatient Summary</em>'.
+   * @generated
+   */
 	TransitionOfCareInpatientSummary createTransitionOfCareInpatientSummary();
 
 	/**
-	 * Returns a new object of class '<em>View Download Transmit Summary</em>'.
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
-	 * @return a new object of class '<em>View Download Transmit Summary</em>'.
-	 * @generated
-	 */
+   * Returns a new object of class '<em>View Download Transmit Summary</em>'.
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @return a new object of class '<em>View Download Transmit Summary</em>'.
+   * @generated
+   */
 	ViewDownloadTransmitSummary createViewDownloadTransmitSummary();
 
 	/**
@@ -214,12 +204,12 @@ public interface Mu2consolFactory extends EFactory {
 	VDTAmbulatorySummary createVDTAmbulatorySummary();
 
 	/**
-	 * Returns the package supported by this factory. <!-- begin-user-doc -->
+   * Returns the package supported by this factory.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * 
-	 * @return the package supported by this factory.
-	 * @generated
-	 */
+   * @return the package supported by this factory.
+   * @generated
+   */
 	Mu2consolPackage getMu2consolPackage();
 
 } // Mu2consolFactory

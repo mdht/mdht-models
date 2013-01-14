@@ -21,11 +21,10 @@ import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 /**
  * <!-- begin-user-doc --> A representation of the model object '
  * <em><b>Social History Section</b></em>'. <!-- end-user-doc -->
- * 
- * 
+ *
+ *
  * @see org.openhealthtools.mdht.uml.cda.mu2consol.Mu2consolPackage#getSocialHistorySection()
- * @model annotation=
- *        "http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='Mu2consolSocialHistorySectionTemplateId Mu2consolSocialHistorySectionSmokingStatusObservation' templateId.root='2.16.840.1.113883.10.20.22.2.17'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='Mu2consolSocialHistorySectionTemplateId Mu2consolSocialHistorySectionSmokingStatusObservation' templateId.root='2.16.840.1.113883.10.20.22.2.17'"
  * @generated
  */
 public interface SocialHistorySection extends
@@ -62,17 +61,15 @@ public interface SocialHistorySection extends
 	EList<SmokingStatusObservation> getMu2consolSmokingStatusObservations();
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
 	public SocialHistorySection init();
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
-	 * @generated
-	 */
+     * <!-- begin-user-doc --> <!-- end-user-doc -->
+     * @generated
+     */
 	public SocialHistorySection init(
 			Iterable<? extends Initializer<? extends EObject>> initializers);
 } // SocialHistorySection

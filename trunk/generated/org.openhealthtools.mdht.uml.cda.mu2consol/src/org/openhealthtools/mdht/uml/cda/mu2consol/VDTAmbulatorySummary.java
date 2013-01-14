@@ -20,11 +20,10 @@ import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 /**
  * <!-- begin-user-doc --> A representation of the model object '
  * <em><b>VDT Ambulatory Summary</b></em>'. <!-- end-user-doc -->
- * 
- * 
+ *
+ *
  * @see org.openhealthtools.mdht.uml.cda.mu2consol.Mu2consolPackage#getVDTAmbulatorySummary()
- * @model annotation=
- *        "http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.query='VDTAmbulatorySummaryResponsibleParty' constraints.validation.error='VDTAmbulatorySummaryResponsibleParty'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.query='VDTAmbulatorySummaryResponsibleParty' constraints.validation.error='VDTAmbulatorySummaryResponsibleParty'"
  * @generated
  */
 public interface VDTAmbulatorySummary extends ViewDownloadTransmitSummary {
@@ -50,17 +49,15 @@ public interface VDTAmbulatorySummary extends ViewDownloadTransmitSummary {
 			DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
 	public VDTAmbulatorySummary init();
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
-	 * @generated
-	 */
+     * <!-- begin-user-doc --> <!-- end-user-doc -->
+     * @generated
+     */
 	public VDTAmbulatorySummary init(
 			Iterable<? extends Initializer<? extends EObject>> initializers);
 } // VDTAmbulatorySummary
