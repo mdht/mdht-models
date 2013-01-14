@@ -47,44 +47,44 @@ import org.openhealthtools.mdht.uml.cda.hitsp.util.HITSPValidator;
 public class ResultOrganizerOperations extends
 		org.openhealthtools.mdht.uml.cda.ccd.operations.ResultOrganizerOperations {
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	protected ResultOrganizerOperations() {
 		super();
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateHITSPResultOrganizerResult(ResultOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate HITSP Result Organizer Result</em>}' operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL expression body for the '{@link #validateHITSPResultOrganizerResult(ResultOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate HITSP Result Organizer Result</em>}' operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateHITSPResultOrganizerResult(ResultOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validateHITSPResultOrganizerResult(ResultOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 	protected static final String VALIDATE_HITSP_RESULT_ORGANIZER_RESULT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.component->exists(component : cda::Component4 | not component.observation.oclIsUndefined() and component.observation.oclIsKindOf(hitsp::Result))";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validateHITSPResultOrganizerResult(ResultOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate HITSP Result Organizer Result</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL invariant for the '{@link #validateHITSPResultOrganizerResult(ResultOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate HITSP Result Organizer Result</em>}' invariant operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateHITSPResultOrganizerResult(ResultOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validateHITSPResultOrganizerResult(ResultOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 	protected static Constraint VALIDATE_HITSP_RESULT_ORGANIZER_RESULT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param resultOrganizer The receiving '<em><b>Result Organizer</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
+	* <!-- begin-model-doc -->
+	* @param resultOrganizer The receiving '<em><b>Result Organizer</b></em>' model object.
+	* @param diagnostics The chain of diagnostics to which problems are to be appended.
+	* @param context The cache of context-specific information.
+	* <!-- end-model-doc -->
+	* @generated
+	*/
 	public static boolean validateHITSPResultOrganizerResult(ResultOrganizer resultOrganizer,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -112,30 +112,30 @@ public class ResultOrganizerOperations extends
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #getResults(ResultOrganizer) <em>Get Results</em>}' operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL expression body for the '{@link #getResults(ResultOrganizer) <em>Get Results</em>}' operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getResults(ResultOrganizer)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #getResults(ResultOrganizer)
+	* @generated
+	* @ordered
+	*/
 	protected static final String GET_RESULTS__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(hitsp::Result)).oclAsType(hitsp::Result)";
 
 	/**
-	 * The cached OCL query for the '{@link #getResults(ResultOrganizer) <em>Get Results</em>}' query operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL query for the '{@link #getResults(ResultOrganizer) <em>Get Results</em>}' query operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getResults(ResultOrganizer)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #getResults(ResultOrganizer)
+	* @generated
+	* @ordered
+	*/
 	protected static OCLExpression<EClassifier> GET_RESULTS__EOCL_QRY;
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public static EList<Result> getResults(ResultOrganizer resultOrganizer) {
 		if (GET_RESULTS__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();

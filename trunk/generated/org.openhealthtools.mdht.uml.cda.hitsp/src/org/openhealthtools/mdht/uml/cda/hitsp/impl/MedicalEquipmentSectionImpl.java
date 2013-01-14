@@ -10,6 +10,7 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.hitsp.impl;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
@@ -32,29 +33,29 @@ import org.openhealthtools.mdht.uml.cda.ihe.impl.MedicalDevicesSectionImpl;
  */
 public class MedicalEquipmentSectionImpl extends MedicalDevicesSectionImpl implements MedicalEquipmentSection {
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	protected MedicalEquipmentSectionImpl() {
 		super();
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	@Override
 	protected EClass eStaticClass() {
 		return HITSPPackage.Literals.MEDICAL_EQUIPMENT_SECTION;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateHITSPMedicalEquipmentSectionTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return MedicalEquipmentSectionOperations.validateHITSPMedicalEquipmentSectionTemplateId(
@@ -62,10 +63,10 @@ public class MedicalEquipmentSectionImpl extends MedicalDevicesSectionImpl imple
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	@Override
 	public MedicalEquipmentSection init() {
 		return Initializer.Util.init(this);

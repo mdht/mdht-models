@@ -10,6 +10,7 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.hitsp.impl;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
@@ -32,39 +33,39 @@ import org.openhealthtools.mdht.uml.cda.ihe.impl.ProductEntryImpl;
  */
 public class MedicationInformationImpl extends ProductEntryImpl implements MedicationInformation {
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	protected MedicationInformationImpl() {
 		super();
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	@Override
 	protected EClass eStaticClass() {
 		return HITSPPackage.Literals.MEDICATION_INFORMATION;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateMedicationInformationCodedProductName(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return MedicationInformationOperations.validateMedicationInformationCodedProductName(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateMedicationInformationCodedProductVocab(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return MedicationInformationOperations.validateMedicationInformationCodedProductVocab(
@@ -72,10 +73,10 @@ public class MedicationInformationImpl extends ProductEntryImpl implements Medic
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateMedicationInformationCodedIngredientVocab(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return MedicationInformationOperations.validateMedicationInformationCodedIngredientVocab(
@@ -83,19 +84,19 @@ public class MedicationInformationImpl extends ProductEntryImpl implements Medic
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateMedicationInformationCodedBrandName(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return MedicationInformationOperations.validateMedicationInformationCodedBrandName(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateMedicationInformationCodedBrandNameVocab(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return MedicationInformationOperations.validateMedicationInformationCodedBrandNameVocab(
@@ -103,10 +104,10 @@ public class MedicationInformationImpl extends ProductEntryImpl implements Medic
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateMedicationInformationFreeTextProductName(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return MedicationInformationOperations.validateMedicationInformationFreeTextProductName(
@@ -114,10 +115,10 @@ public class MedicationInformationImpl extends ProductEntryImpl implements Medic
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateMedicationInformationFreeTextBrandName(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return MedicationInformationOperations.validateMedicationInformationFreeTextBrandName(
@@ -125,19 +126,19 @@ public class MedicationInformationImpl extends ProductEntryImpl implements Medic
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateMedicationInformationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return MedicationInformationOperations.validateMedicationInformationTemplateId(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	@Override
 	public MedicationInformation init() {
 		return Initializer.Util.init(this);

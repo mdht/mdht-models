@@ -10,6 +10,7 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.hitsp.impl;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
@@ -34,29 +35,29 @@ import org.openhealthtools.mdht.uml.cda.ihe.impl.CodedAdvanceDirectivesSectionIm
  */
 public class AdvanceDirectivesSectionImpl extends CodedAdvanceDirectivesSectionImpl implements AdvanceDirectivesSection {
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	protected AdvanceDirectivesSectionImpl() {
 		super();
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	@Override
 	protected EClass eStaticClass() {
 		return HITSPPackage.Literals.ADVANCE_DIRECTIVES_SECTION;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateHITSPAdvanceDirectivesSectionTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return AdvanceDirectivesSectionOperations.validateHITSPAdvanceDirectivesSectionTemplateId(
@@ -64,10 +65,10 @@ public class AdvanceDirectivesSectionImpl extends CodedAdvanceDirectivesSectionI
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateHITSPAdvanceDirectivesSectionAdvanceDirective(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return AdvanceDirectivesSectionOperations.validateHITSPAdvanceDirectivesSectionAdvanceDirective(
@@ -75,19 +76,19 @@ public class AdvanceDirectivesSectionImpl extends CodedAdvanceDirectivesSectionI
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public EList<AdvanceDirective> getAdvanceDirectives() {
 		return AdvanceDirectivesSectionOperations.getAdvanceDirectives(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	@Override
 	public AdvanceDirectivesSection init() {
 		return Initializer.Util.init(this);

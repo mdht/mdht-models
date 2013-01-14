@@ -10,6 +10,7 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.hitsp.impl;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
@@ -34,29 +35,29 @@ public class HospitalDischargeMedicationsSectionImpl extends
 		org.openhealthtools.mdht.uml.cda.ihe.impl.HospitalDischargeMedicationsSectionImpl implements
 		HospitalDischargeMedicationsSection {
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	protected HospitalDischargeMedicationsSectionImpl() {
 		super();
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	@Override
 	protected EClass eStaticClass() {
 		return HITSPPackage.Literals.HOSPITAL_DISCHARGE_MEDICATIONS_SECTION;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateHITSPHospitalDischargeMedicationsSectionTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return HospitalDischargeMedicationsSectionOperations.validateHITSPHospitalDischargeMedicationsSectionTemplateId(
@@ -64,10 +65,10 @@ public class HospitalDischargeMedicationsSectionImpl extends
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateHITSPHospitalDischargeMedicationsSectionMedication(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return HospitalDischargeMedicationsSectionOperations.validateHITSPHospitalDischargeMedicationsSectionMedication(
@@ -75,19 +76,19 @@ public class HospitalDischargeMedicationsSectionImpl extends
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public Medication getHITSPMedication() {
 		return HospitalDischargeMedicationsSectionOperations.getHITSPMedication(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	@Override
 	public HospitalDischargeMedicationsSection init() {
 		return Initializer.Util.init(this);
