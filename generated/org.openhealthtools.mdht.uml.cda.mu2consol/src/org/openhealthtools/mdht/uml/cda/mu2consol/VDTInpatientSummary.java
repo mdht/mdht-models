@@ -28,11 +28,10 @@ import org.openhealthtools.mdht.uml.cda.consol.ReasonForVisitSection;
 /**
  * <!-- begin-user-doc --> A representation of the model object '
  * <em><b>VDT Inpatient Summary</b></em>'. <!-- end-user-doc -->
- * 
- * 
+ *
+ *
  * @see org.openhealthtools.mdht.uml.cda.mu2consol.Mu2consolPackage#getVDTInpatientSummary()
- * @model annotation=
- *        "http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.query='VDTInpatientSummaryEffectiveTime VDTInpatientSummaryLocation VDTInpatientSummaryHospitalAdmissionDiagnosisEntry VDTInpatientSummaryPreoperativeDiagnosisEntry' constraints.validation.error='VDTInpatientSummaryEffectiveTime VDTInpatientSummaryLocation VDTInpatientSummaryChiefComplaintOrReasonForVisit VDTInpatientSummaryHospitalAdmissionDiagnosisEntry VDTInpatientSummaryPreoperativeDiagnosisEntry VDTInpatientSummaryHospitalDischargeInstructionsSection VDTInpatientSummaryHospitalAdmissionDiagnosisSection VDTInpatientSummaryHospitalDischargeMedicationsSection' constraints.validation.info='VDTInpatientSummaryChiefComplaintSection VDTInpatientSummaryReasonForVisitSection VDTInpatientSummaryChiefComplaintAndReasonForVisitSection VDTInpatientSummaryPreoperativeDiagnosisSection VDTInpatientSummaryHospitalAdmissionMedicationsSectionEntriesOptional'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.query='VDTInpatientSummaryEffectiveTime VDTInpatientSummaryLocation VDTInpatientSummaryHospitalAdmissionDiagnosisEntry VDTInpatientSummaryPreoperativeDiagnosisEntry' constraints.validation.error='VDTInpatientSummaryEffectiveTime VDTInpatientSummaryLocation VDTInpatientSummaryChiefComplaintOrReasonForVisit VDTInpatientSummaryHospitalAdmissionDiagnosisEntry VDTInpatientSummaryPreoperativeDiagnosisEntry VDTInpatientSummaryHospitalDischargeInstructionsSection VDTInpatientSummaryHospitalAdmissionDiagnosisSection VDTInpatientSummaryHospitalDischargeMedicationsSection' constraints.validation.info='VDTInpatientSummaryChiefComplaintSection VDTInpatientSummaryReasonForVisitSection VDTInpatientSummaryChiefComplaintAndReasonForVisitSection VDTInpatientSummaryPreoperativeDiagnosisSection VDTInpatientSummaryHospitalAdmissionMedicationsSectionEntriesOptional'"
  * @generated
  */
 public interface VDTInpatientSummary extends ViewDownloadTransmitSummary {
@@ -402,17 +401,15 @@ public interface VDTInpatientSummary extends ViewDownloadTransmitSummary {
 	HospitalAdmissionMedicationsSectionEntriesOptional getHospitalAdmissionMedicationsSectionEntriesOptional();
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
 	public VDTInpatientSummary init();
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
-	 * @generated
-	 */
+     * <!-- begin-user-doc --> <!-- end-user-doc -->
+     * @generated
+     */
 	public VDTInpatientSummary init(
 			Iterable<? extends Initializer<? extends EObject>> initializers);
 } // VDTInpatientSummary

@@ -34,11 +34,10 @@ import org.openhealthtools.mdht.uml.cda.consol.VitalSignsSection;
 /**
  * <!-- begin-user-doc --> A representation of the model object '
  * <em><b>Summary Of Care Record</b></em>'. <!-- end-user-doc -->
- * 
- * 
+ *
+ *
  * @see org.openhealthtools.mdht.uml.cda.mu2consol.Mu2consolPackage#getSummaryOfCareRecord()
- * @model annotation=
- *        "http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='SummaryOfCareRecordCarePlanning SummaryOfCareRecordProblemSection SummaryOfCareRecordAllergiesSection SummaryOfCareRecordImmunizationsSection SummaryOfCareRecordMedicationsSection SummaryOfCareRecordSocialHistorySection SummaryOfCareRecordResultsSection SummaryOfCareRecordVitalSignsSection SummaryOfCareRecordProceduresSection SummaryOfCareRecordFunctionalStatusSection' constraints.validation.info='SummaryOfCareRecordEncountersSection SummaryOfCareRecordPlanOfCareSection SummaryOfCareRecordAssessmentAndPlanSection SummaryOfCareRecordAssessmentSection SummaryOfCareRecordPostoperativeDiagnosisSection SummaryOfCareRecordHistoryOfPastIllnessSection SummaryOfCareRecordPreoperativeDiagnosisSection SummaryOfCareRecordPostprocedureDiagnosisSection'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='SummaryOfCareRecordCarePlanning SummaryOfCareRecordProblemSection SummaryOfCareRecordAllergiesSection SummaryOfCareRecordImmunizationsSection SummaryOfCareRecordMedicationsSection SummaryOfCareRecordSocialHistorySection SummaryOfCareRecordResultsSection SummaryOfCareRecordVitalSignsSection SummaryOfCareRecordProceduresSection SummaryOfCareRecordFunctionalStatusSection' constraints.validation.info='SummaryOfCareRecordEncountersSection SummaryOfCareRecordPlanOfCareSection SummaryOfCareRecordAssessmentAndPlanSection SummaryOfCareRecordAssessmentSection SummaryOfCareRecordPostoperativeDiagnosisSection SummaryOfCareRecordHistoryOfPastIllnessSection SummaryOfCareRecordPreoperativeDiagnosisSection SummaryOfCareRecordPostprocedureDiagnosisSection'"
  * @generated
  */
 public interface SummaryOfCareRecord extends GeneralHeaderConstraints {
@@ -670,17 +669,15 @@ public interface SummaryOfCareRecord extends GeneralHeaderConstraints {
 	FunctionalStatusSection getFunctionalStatusSection();
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
 	public SummaryOfCareRecord init();
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
-	 * @generated
-	 */
+     * <!-- begin-user-doc --> <!-- end-user-doc -->
+     * @generated
+     */
 	public SummaryOfCareRecord init(
 			Iterable<? extends Initializer<? extends EObject>> initializers);
 } // SummaryOfCareRecord

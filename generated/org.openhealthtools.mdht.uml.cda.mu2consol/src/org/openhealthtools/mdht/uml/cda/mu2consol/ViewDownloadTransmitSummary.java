@@ -27,11 +27,10 @@ import org.openhealthtools.mdht.uml.cda.consol.VitalSignsSection;
 /**
  * <!-- begin-user-doc --> A representation of the model object '
  * <em><b>View Download Transmit Summary</b></em>'. <!-- end-user-doc -->
- * 
- * 
+ *
+ *
  * @see org.openhealthtools.mdht.uml.cda.mu2consol.Mu2consolPackage#getViewDownloadTransmitSummary()
- * @model annotation=
- *        "http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='ViewDownloadTransmitSummaryCarePlanFields ViewDownloadTransmitSummaryAllergiesSection ViewDownloadTransmitSummaryMedicationsSection ViewDownloadTransmitSummaryProblemSection ViewDownloadTransmitSummaryProceduresSection ViewDownloadTransmitSummaryVitalSignsSection ViewDownloadTransmitSummaryResultsSection ViewDownloadTransmitSummarySocialHistorySection' constraints.validation.info='ViewDownloadTransmitSummaryAssessmentAndPlanSection ViewDownloadTransmitSummaryPlanOfCareSection'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='ViewDownloadTransmitSummaryCarePlanFields ViewDownloadTransmitSummaryAllergiesSection ViewDownloadTransmitSummaryMedicationsSection ViewDownloadTransmitSummaryProblemSection ViewDownloadTransmitSummaryProceduresSection ViewDownloadTransmitSummaryVitalSignsSection ViewDownloadTransmitSummaryResultsSection ViewDownloadTransmitSummarySocialHistorySection' constraints.validation.info='ViewDownloadTransmitSummaryAssessmentAndPlanSection ViewDownloadTransmitSummaryPlanOfCareSection'"
  * @generated
  */
 public interface ViewDownloadTransmitSummary extends GeneralHeaderConstraints {
@@ -358,17 +357,15 @@ public interface ViewDownloadTransmitSummary extends GeneralHeaderConstraints {
 	SocialHistorySection getSocialHistorySection();
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
 	public ViewDownloadTransmitSummary init();
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
-	 * @generated
-	 */
+     * <!-- begin-user-doc --> <!-- end-user-doc -->
+     * @generated
+     */
 	public ViewDownloadTransmitSummary init(
 			Iterable<? extends Initializer<? extends EObject>> initializers);
 } // ViewDownloadTransmitSummary

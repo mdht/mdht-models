@@ -26,75 +26,65 @@ import org.openhealthtools.mdht.uml.cda.mu2consol.operations.EncounterActivities
  * <em><b>Encounter Activities</b></em>'. <!-- end-user-doc -->
  * <p>
  * </p>
- * 
+ *
  * @generated
  */
 public class EncounterActivitiesImpl extends
 		org.openhealthtools.mdht.uml.cda.consol.impl.EncounterActivitiesImpl
 		implements EncounterActivities {
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
 	protected EncounterActivitiesImpl() {
-		super();
-	}
+    super();
+  }
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
 	@Override
 	protected EClass eStaticClass() {
-		return Mu2consolPackage.Literals.ENCOUNTER_ACTIVITIES;
-	}
+    return Mu2consolPackage.Literals.ENCOUNTER_ACTIVITIES;
+  }
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
 	public boolean validateMu2consolEncounterActivitiesCodeValue(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return EncounterActivitiesOperations
-				.validateMu2consolEncounterActivitiesCodeValue(this,
-						diagnostics, context);
-	}
+    return EncounterActivitiesOperations.validateMu2consolEncounterActivitiesCodeValue(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
 	@Override
 	public boolean validateEncounterActivitiesTemplateId(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return EncounterActivitiesOperations
-				.validateEncounterActivitiesTemplateId(this, diagnostics,
-						context);
-	}
+    return EncounterActivitiesOperations.validateEncounterActivitiesTemplateId(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
 	@Override
 	public EncounterActivities init() {
-		return Initializer.Util.init(this);
-	}
+      return Initializer.Util.init(this);
+  }
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
-	 * @generated
-	 */
+     * <!-- begin-user-doc --> <!-- end-user-doc -->
+     * @generated
+     */
 	@Override
 	public EncounterActivities init(
 			Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // EncounterActivitiesImpl

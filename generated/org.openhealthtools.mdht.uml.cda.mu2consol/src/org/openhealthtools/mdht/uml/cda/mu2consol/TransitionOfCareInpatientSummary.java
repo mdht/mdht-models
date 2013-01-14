@@ -25,11 +25,10 @@ import org.openhealthtools.mdht.uml.cda.consol.HospitalDischargeMedicationsSecti
 /**
  * <!-- begin-user-doc --> A representation of the model object '
  * <em><b>Transition Of Care Inpatient Summary</b></em>'. <!-- end-user-doc -->
- * 
- * 
+ *
+ *
  * @see org.openhealthtools.mdht.uml.cda.mu2consol.Mu2consolPackage#getTransitionOfCareInpatientSummary()
- * @model annotation=
- *        "http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='TransitionOfCareInpatientSummaryInpatientEncounterDiagnoses TransitionOfCareInpatientSummaryHospitalAdmissionDiagnosisEntry TransitionOfCareInpatientSummaryHospitalDischargeDiagnosesEntry TransitionOfCareInpatientSummaryPostoperativeDiagnosisEntry TransitionOfCareInpatientSummaryPostprocedureDiagnosisEntry TransitionOfCareInpatientSummaryHospitalDischargeInstructionsSection TransitionOfCareInpatientSummaryHospitalDischargeMedicationsSection' constraints.validation.query='TransitionOfCareInpatientSummaryHospitalAdmissionDiagnosisEntry TransitionOfCareInpatientSummaryHospitalDischargeDiagnosesEntry TransitionOfCareInpatientSummaryPostoperativeDiagnosisEntry TransitionOfCareInpatientSummaryPostprocedureDiagnosisEntry' constraints.validation.info='TransitionOfCareInpatientSummaryHospitalAdmissionDiagnosisSection TransitionOfCareInpatientSummaryHospitalDischargeDiagnosisSection TransitionOfCareInpatientSummaryHospitalAdmissionMedicationsSectionEntriesOptional'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='TransitionOfCareInpatientSummaryInpatientEncounterDiagnoses TransitionOfCareInpatientSummaryHospitalAdmissionDiagnosisEntry TransitionOfCareInpatientSummaryHospitalDischargeDiagnosesEntry TransitionOfCareInpatientSummaryPostoperativeDiagnosisEntry TransitionOfCareInpatientSummaryPostprocedureDiagnosisEntry TransitionOfCareInpatientSummaryHospitalDischargeInstructionsSection TransitionOfCareInpatientSummaryHospitalDischargeMedicationsSection' constraints.validation.query='TransitionOfCareInpatientSummaryHospitalAdmissionDiagnosisEntry TransitionOfCareInpatientSummaryHospitalDischargeDiagnosesEntry TransitionOfCareInpatientSummaryPostoperativeDiagnosisEntry TransitionOfCareInpatientSummaryPostprocedureDiagnosisEntry' constraints.validation.info='TransitionOfCareInpatientSummaryHospitalAdmissionDiagnosisSection TransitionOfCareInpatientSummaryHospitalDischargeDiagnosisSection TransitionOfCareInpatientSummaryHospitalAdmissionMedicationsSectionEntriesOptional'"
  * @generated
  */
 public interface TransitionOfCareInpatientSummary extends SummaryOfCareRecord {
@@ -304,17 +303,15 @@ public interface TransitionOfCareInpatientSummary extends SummaryOfCareRecord {
 	HospitalAdmissionMedicationsSectionEntriesOptional getHospitalAdmissionMedicationsSectionEntriesOptional();
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
 	public TransitionOfCareInpatientSummary init();
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
-	 * @generated
-	 */
+     * <!-- begin-user-doc --> <!-- end-user-doc -->
+     * @generated
+     */
 	public TransitionOfCareInpatientSummary init(
 			Iterable<? extends Initializer<? extends EObject>> initializers);
 } // TransitionOfCareInpatientSummary
