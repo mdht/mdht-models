@@ -34,39 +34,39 @@ import org.openhealthtools.mdht.uml.cda.ihe.operations.AllergyIntoleranceConcern
  */
 public class AllergyIntoleranceConcernImpl extends ConcernEntryImpl implements AllergyIntoleranceConcern {
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	protected AllergyIntoleranceConcernImpl() {
 		super();
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
 		return IHEPackage.Literals.ALLERGY_INTOLERANCE_CONCERN;
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateAllergyIntoleranceConcernTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return AllergyIntoleranceConcernOperations.validateAllergyIntoleranceConcernTemplateId(
 			this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateAllergyIntoleranceConcernAllergyIntolerance(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return AllergyIntoleranceConcernOperations.validateAllergyIntoleranceConcernAllergyIntolerance(
@@ -74,19 +74,19 @@ public class AllergyIntoleranceConcernImpl extends ConcernEntryImpl implements A
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public EList<AllergyIntolerance> getAllergyIntolerances() {
 		return AllergyIntoleranceConcernOperations.getAllergyIntolerances(this);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	@Override
 	public AllergyIntoleranceConcern init() {
 		return Initializer.Util.init(this);

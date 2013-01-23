@@ -27,10 +27,10 @@ import org.openhealthtools.mdht.uml.cda.ihe.TaperedDose;
  */
 public interface MedicationTaperedDose extends Medication, TaperedDose {
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public MedicationTaperedDose init();
 
 	/**

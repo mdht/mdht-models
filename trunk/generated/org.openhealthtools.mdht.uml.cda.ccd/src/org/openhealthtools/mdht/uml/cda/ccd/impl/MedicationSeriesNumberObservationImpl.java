@@ -33,29 +33,29 @@ import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
  */
 public class MedicationSeriesNumberObservationImpl extends ObservationImpl implements MedicationSeriesNumberObservation {
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	protected MedicationSeriesNumberObservationImpl() {
 		super();
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
 		return CCDPackage.Literals.MEDICATION_SERIES_NUMBER_OBSERVATION;
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateMedicationSeriesNumberObservationTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return MedicationSeriesNumberObservationOperations.validateMedicationSeriesNumberObservationTemplateId(
@@ -63,10 +63,10 @@ public class MedicationSeriesNumberObservationImpl extends ObservationImpl imple
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateMedicationSeriesNumberObservationClassCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return MedicationSeriesNumberObservationOperations.validateMedicationSeriesNumberObservationClassCode(
@@ -74,10 +74,10 @@ public class MedicationSeriesNumberObservationImpl extends ObservationImpl imple
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateMedicationSeriesNumberObservationMoodCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return MedicationSeriesNumberObservationOperations.validateMedicationSeriesNumberObservationMoodCode(
@@ -85,10 +85,10 @@ public class MedicationSeriesNumberObservationImpl extends ObservationImpl imple
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateMedicationSeriesNumberObservationStatusCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return MedicationSeriesNumberObservationOperations.validateMedicationSeriesNumberObservationStatusCode(
@@ -96,10 +96,10 @@ public class MedicationSeriesNumberObservationImpl extends ObservationImpl imple
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateMedicationSeriesNumberObservationCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return MedicationSeriesNumberObservationOperations.validateMedicationSeriesNumberObservationCode(
@@ -107,10 +107,10 @@ public class MedicationSeriesNumberObservationImpl extends ObservationImpl imple
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateMedicationSeriesNumberObservationValue(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return MedicationSeriesNumberObservationOperations.validateMedicationSeriesNumberObservationValue(
@@ -118,10 +118,10 @@ public class MedicationSeriesNumberObservationImpl extends ObservationImpl imple
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public MedicationSeriesNumberObservation init() {
 		return Initializer.Util.init(this);
 	}

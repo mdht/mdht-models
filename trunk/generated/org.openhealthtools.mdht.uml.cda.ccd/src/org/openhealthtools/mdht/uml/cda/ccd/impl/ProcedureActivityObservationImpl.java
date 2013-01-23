@@ -39,29 +39,29 @@ import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
  */
 public class ProcedureActivityObservationImpl extends ObservationImpl implements ProcedureActivityObservation {
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	protected ProcedureActivityObservationImpl() {
 		super();
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
 		return CCDPackage.Literals.PROCEDURE_ACTIVITY_OBSERVATION;
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateProcedureActivityObservationTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ProcedureActivityObservationOperations.validateProcedureActivityObservationTemplateId(
@@ -69,30 +69,30 @@ public class ProcedureActivityObservationImpl extends ObservationImpl implements
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateProcedureActivityObservationMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProcedureActivityObservationOperations.validateProcedureActivityObservationMoodCode(
 			this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateProcedureActivityObservationCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProcedureActivityObservationOperations.validateProcedureActivityObservationCode(
 			this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateProcedureActivityObservationEffectiveTime(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ProcedureActivityObservationOperations.validateProcedureActivityObservationEffectiveTime(
@@ -100,19 +100,19 @@ public class ProcedureActivityObservationImpl extends ObservationImpl implements
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateProcedureActivityObservationId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProcedureActivityObservationOperations.validateProcedureActivityObservationId(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateProcedureActivityObservationStatusCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ProcedureActivityObservationOperations.validateProcedureActivityObservationStatusCode(
@@ -120,10 +120,10 @@ public class ProcedureActivityObservationImpl extends ObservationImpl implements
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateProcedureActivityObservationEncounterLocation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ProcedureActivityObservationOperations.validateProcedureActivityObservationEncounterLocation(
@@ -131,10 +131,10 @@ public class ProcedureActivityObservationImpl extends ObservationImpl implements
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateProcedureActivityObservationPerformer2(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ProcedureActivityObservationOperations.validateProcedureActivityObservationPerformer2(
@@ -142,10 +142,10 @@ public class ProcedureActivityObservationImpl extends ObservationImpl implements
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateProcedureActivityObservationProblemObservation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ProcedureActivityObservationOperations.validateProcedureActivityObservationProblemObservation(
@@ -153,10 +153,10 @@ public class ProcedureActivityObservationImpl extends ObservationImpl implements
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateProcedureActivityObservationAgeObservation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ProcedureActivityObservationOperations.validateProcedureActivityObservationAgeObservation(
@@ -164,10 +164,10 @@ public class ProcedureActivityObservationImpl extends ObservationImpl implements
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateProcedureActivityObservationMedicationActivity(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ProcedureActivityObservationOperations.validateProcedureActivityObservationMedicationActivity(
@@ -175,10 +175,10 @@ public class ProcedureActivityObservationImpl extends ObservationImpl implements
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateProcedureActivityObservationPatientInstruction(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ProcedureActivityObservationOperations.validateProcedureActivityObservationPatientInstruction(
@@ -186,10 +186,10 @@ public class ProcedureActivityObservationImpl extends ObservationImpl implements
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateProcedureActivityObservationProblemAct(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ProcedureActivityObservationOperations.validateProcedureActivityObservationProblemAct(
@@ -197,55 +197,55 @@ public class ProcedureActivityObservationImpl extends ObservationImpl implements
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public ProblemObservation getProblemObservation() {
 		return ProcedureActivityObservationOperations.getProblemObservation(this);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public AgeObservation getAgeObservation() {
 		return ProcedureActivityObservationOperations.getAgeObservation(this);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public EList<MedicationActivity> getMedicationActivities() {
 		return ProcedureActivityObservationOperations.getMedicationActivities(this);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public EList<PatientInstruction> getPatientInstructions() {
 		return ProcedureActivityObservationOperations.getPatientInstructions(this);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public ProblemAct getProblemAct() {
 		return ProcedureActivityObservationOperations.getProblemAct(this);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public ProcedureActivityObservation init() {
 		return Initializer.Util.init(this);
 	}

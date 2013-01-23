@@ -34,29 +34,29 @@ import org.openhealthtools.mdht.uml.cda.hitsp.operations.DischargeDiagnosisSecti
 public class DischargeDiagnosisSectionImpl extends
 		org.openhealthtools.mdht.uml.cda.ihe.impl.DischargeDiagnosisSectionImpl implements DischargeDiagnosisSection {
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	protected DischargeDiagnosisSectionImpl() {
 		super();
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
 		return HITSPPackage.Literals.DISCHARGE_DIAGNOSIS_SECTION;
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateHITSPDischargeDiagnosisSectionTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return DischargeDiagnosisSectionOperations.validateHITSPDischargeDiagnosisSectionTemplateId(
@@ -64,10 +64,10 @@ public class DischargeDiagnosisSectionImpl extends
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateHITSPDischargeDiagnosisSectionCondition(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return DischargeDiagnosisSectionOperations.validateHITSPDischargeDiagnosisSectionCondition(
@@ -75,19 +75,19 @@ public class DischargeDiagnosisSectionImpl extends
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public Condition getCondition() {
 		return DischargeDiagnosisSectionOperations.getCondition(this);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	@Override
 	public DischargeDiagnosisSection init() {
 		return Initializer.Util.init(this);

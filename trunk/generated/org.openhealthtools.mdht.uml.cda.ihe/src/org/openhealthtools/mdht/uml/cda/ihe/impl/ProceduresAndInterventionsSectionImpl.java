@@ -30,29 +30,29 @@ import org.openhealthtools.mdht.uml.cda.impl.SectionImpl;
  */
 public class ProceduresAndInterventionsSectionImpl extends SectionImpl implements ProceduresAndInterventionsSection {
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	protected ProceduresAndInterventionsSectionImpl() {
 		super();
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
 		return IHEPackage.Literals.PROCEDURES_AND_INTERVENTIONS_SECTION;
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateProceduresAndInterventionsSectionTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ProceduresAndInterventionsSectionOperations.validateProceduresAndInterventionsSectionTemplateId(
@@ -60,10 +60,10 @@ public class ProceduresAndInterventionsSectionImpl extends SectionImpl implement
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateProceduresAndInterventionsSectionCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ProceduresAndInterventionsSectionOperations.validateProceduresAndInterventionsSectionCode(
@@ -71,19 +71,19 @@ public class ProceduresAndInterventionsSectionImpl extends SectionImpl implement
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public ProcedureEntry getProcedureEntry() {
 		return ProceduresAndInterventionsSectionOperations.getProcedureEntry(this);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public ProceduresAndInterventionsSection init() {
 		return Initializer.Util.init(this);
 	}

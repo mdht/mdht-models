@@ -27,10 +27,10 @@ import org.openhealthtools.mdht.uml.cda.ihe.ProcedureEntryProcedureActivityProce
  */
 public interface PastProcedure extends Procedure, ProcedureEntryProcedureActivityProcedure {
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public PastProcedure init();
 
 	/**

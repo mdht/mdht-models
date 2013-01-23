@@ -27,10 +27,10 @@ import org.openhealthtools.mdht.uml.cda.ihe.CombinationMedication;
  */
 public interface MedicationCombinationMedication extends CombinationMedication, Medication {
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public MedicationCombinationMedication init();
 
 	/**

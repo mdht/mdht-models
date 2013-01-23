@@ -44,45 +44,46 @@ import org.openhealthtools.mdht.uml.cda.ihe.util.IHEValidator;
  */
 public class CodedSocialHistorySectionOperations extends SocialHistorySectionOperations {
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	protected CodedSocialHistorySectionOperations() {
 		super();
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateCodedSocialHistorySectionSocialHistoryObservation(CodedSocialHistorySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Coded Social History Section Social History Observation</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateCodedSocialHistorySectionSocialHistoryObservation(CodedSocialHistorySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Coded Social History Section Social History Observation</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateCodedSocialHistorySectionSocialHistoryObservation(CodedSocialHistorySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateCodedSocialHistorySectionSocialHistoryObservation(CodedSocialHistorySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_CODED_SOCIAL_HISTORY_SECTION_SOCIAL_HISTORY_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->exists(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(ccd::SocialHistoryObservation))";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateCodedSocialHistorySectionSocialHistoryObservation(CodedSocialHistorySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Coded Social History Section Social History Observation</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateCodedSocialHistorySectionSocialHistoryObservation(CodedSocialHistorySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Coded Social History Section Social History Observation</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateCodedSocialHistorySectionSocialHistoryObservation(CodedSocialHistorySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateCodedSocialHistorySectionSocialHistoryObservation(CodedSocialHistorySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 
 	protected static Constraint VALIDATE_CODED_SOCIAL_HISTORY_SECTION_SOCIAL_HISTORY_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param codedSocialHistorySection The receiving '<em><b>Coded Social History Section</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * self.entry->exists(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(ccd::SocialHistoryObservation))
+	 * @param codedSocialHistorySection The receiving '<em><b>Coded Social History Section</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 
 	public static boolean validateCodedSocialHistorySectionSocialHistoryObservation(
 			CodedSocialHistorySection codedSocialHistorySection, DiagnosticChain diagnostics,
@@ -114,30 +115,34 @@ public class CodedSocialHistorySectionOperations extends SocialHistorySectionOpe
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #getIHESocialHistoryObservations(CodedSocialHistorySection) <em>Get IHE Social History Observations</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #getIHESocialHistoryObservations(CodedSocialHistorySection) <em>Get IHE Social History Observations</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #getIHESocialHistoryObservations(CodedSocialHistorySection)
-	* @generated
-	* @ordered
-	*/
+	 * @see #getIHESocialHistoryObservations(CodedSocialHistorySection)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String GET_IHE_SOCIAL_HISTORY_OBSERVATIONS__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(ccd::SocialHistoryObservation)).oclAsType(ccd::SocialHistoryObservation)";
 
 	/**
-	* The cached OCL query for the '{@link #getIHESocialHistoryObservations(CodedSocialHistorySection) <em>Get IHE Social History Observations</em>}' query operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL query for the '{@link #getIHESocialHistoryObservations(CodedSocialHistorySection) <em>Get IHE Social History Observations</em>}' query operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #getIHESocialHistoryObservations(CodedSocialHistorySection)
-	* @generated
-	* @ordered
-	*/
+	 * @see #getIHESocialHistoryObservations(CodedSocialHistorySection)
+	 * @generated
+	 * @ordered
+	 */
 	protected static OCLExpression<EClassifier> GET_IHE_SOCIAL_HISTORY_OBSERVATIONS__EOCL_QRY;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(ccd::SocialHistoryObservation)).oclAsType(ccd::SocialHistoryObservation)
+	 * @param codedSocialHistorySection The receiving '<em><b>Coded Social History Section</b></em>' model object.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 
 	public static EList<SocialHistoryObservation> getIHESocialHistoryObservations(
 			CodedSocialHistorySection codedSocialHistorySection) {
@@ -159,36 +164,37 @@ public class CodedSocialHistorySectionOperations extends SocialHistorySectionOpe
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateSocialHistorySectionTemplateId(CodedSocialHistorySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Social History Section Template Id</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateSocialHistorySectionTemplateId(CodedSocialHistorySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Social History Section Template Id</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateSocialHistorySectionTemplateId(CodedSocialHistorySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateSocialHistorySectionTemplateId(CodedSocialHistorySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_SOCIAL_HISTORY_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.templateId->exists(id : datatypes::II | id.root = '1.3.6.1.4.1.19376.1.5.3.1.3.16.1')";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateSocialHistorySectionTemplateId(CodedSocialHistorySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Social History Section Template Id</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateSocialHistorySectionTemplateId(CodedSocialHistorySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Social History Section Template Id</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateSocialHistorySectionTemplateId(CodedSocialHistorySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateSocialHistorySectionTemplateId(CodedSocialHistorySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 
 	protected static Constraint VALIDATE_SOCIAL_HISTORY_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param codedSocialHistorySection The receiving '<em><b>Coded Social History Section</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * self.templateId->exists(id : datatypes::II | id.root = '1.3.6.1.4.1.19376.1.5.3.1.3.16.1')
+	 * @param codedSocialHistorySection The receiving '<em><b>Coded Social History Section</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 
 	public static boolean validateSocialHistorySectionTemplateId(CodedSocialHistorySection codedSocialHistorySection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {

@@ -33,56 +33,56 @@ import org.openhealthtools.mdht.uml.cda.impl.ActImpl;
  */
 public class CoveragePlanDescriptionImpl extends ActImpl implements CoveragePlanDescription {
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	protected CoveragePlanDescriptionImpl() {
 		super();
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
 		return CCDPackage.Literals.COVERAGE_PLAN_DESCRIPTION;
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateCoveragePlanDescriptionClassCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return CoveragePlanDescriptionOperations.validateCoveragePlanDescriptionClassCode(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateCoveragePlanDescriptionId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return CoveragePlanDescriptionOperations.validateCoveragePlanDescriptionId(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateCoveragePlanDescriptionMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return CoveragePlanDescriptionOperations.validateCoveragePlanDescriptionMoodCode(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public CoveragePlanDescription init() {
 		return Initializer.Util.init(this);
 	}

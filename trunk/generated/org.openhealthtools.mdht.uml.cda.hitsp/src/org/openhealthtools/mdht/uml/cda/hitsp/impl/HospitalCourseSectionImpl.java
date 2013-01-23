@@ -33,38 +33,38 @@ import org.openhealthtools.mdht.uml.cda.hitsp.operations.HospitalCourseSectionOp
 public class HospitalCourseSectionImpl extends org.openhealthtools.mdht.uml.cda.ihe.impl.HospitalCourseSectionImpl
 		implements HospitalCourseSection {
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	protected HospitalCourseSectionImpl() {
 		super();
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
 		return HITSPPackage.Literals.HOSPITAL_COURSE_SECTION;
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateHITSPHospitalCourseSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return HospitalCourseSectionOperations.validateHITSPHospitalCourseSectionTemplateId(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	@Override
 	public HospitalCourseSection init() {
 		return Initializer.Util.init(this);

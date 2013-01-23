@@ -40,44 +40,45 @@ import org.openhealthtools.mdht.uml.cda.ihe.operations.HealthcareProvidersPharma
  */
 public class HealthcareProviderOperations extends HealthcareProvidersPharmaciesOperations {
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	protected HealthcareProviderOperations() {
 		super();
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateHealthcareProviderTemplateId(HealthcareProvider, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Healthcare Provider Template Id</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateHealthcareProviderTemplateId(HealthcareProvider, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Healthcare Provider Template Id</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateHealthcareProviderTemplateId(HealthcareProvider, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateHealthcareProviderTemplateId(HealthcareProvider, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_HEALTHCARE_PROVIDER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.3.88.11.83.4')";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateHealthcareProviderTemplateId(HealthcareProvider, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Healthcare Provider Template Id</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateHealthcareProviderTemplateId(HealthcareProvider, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Healthcare Provider Template Id</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateHealthcareProviderTemplateId(HealthcareProvider, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateHealthcareProviderTemplateId(HealthcareProvider, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static Constraint VALIDATE_HEALTHCARE_PROVIDER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param healthcareProvider The receiving '<em><b>Healthcare Provider</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.3.88.11.83.4')
+	 * @param healthcareProvider The receiving '<em><b>Healthcare Provider</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 	public static boolean validateHealthcareProviderTemplateId(HealthcareProvider healthcareProvider,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 

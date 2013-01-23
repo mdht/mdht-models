@@ -33,38 +33,38 @@ import org.openhealthtools.mdht.uml.cda.impl.ParticipantRoleImpl;
  */
 public class PolicySubscriberImpl extends ParticipantRoleImpl implements PolicySubscriber {
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	protected PolicySubscriberImpl() {
 		super();
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
 		return CCDPackage.Literals.POLICY_SUBSCRIBER;
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validatePolicySubscriberId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PolicySubscriberOperations.validatePolicySubscriberId(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public PolicySubscriber init() {
 		return Initializer.Util.init(this);
 	}

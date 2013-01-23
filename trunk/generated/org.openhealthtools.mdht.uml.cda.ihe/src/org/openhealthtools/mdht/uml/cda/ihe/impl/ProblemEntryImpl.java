@@ -38,182 +38,182 @@ import org.openhealthtools.mdht.uml.cda.ihe.operations.ProblemEntryOperations;
  */
 public class ProblemEntryImpl extends ProblemObservationImpl implements ProblemEntry {
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	protected ProblemEntryImpl() {
 		super();
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
 		return IHEPackage.Literals.PROBLEM_ENTRY;
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateProblemEntryHasTextReference(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProblemEntryOperations.validateProblemEntryHasTextReference(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateProblemEntryCommentInversionInd(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProblemEntryOperations.validateProblemEntryCommentInversionInd(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateProblemEntryTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProblemEntryOperations.validateProblemEntryTemplateId(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateProblemEntryCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProblemEntryOperations.validateProblemEntryCodeP(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateProblemEntryCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProblemEntryOperations.validateProblemEntryCode(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateProblemEntryEffectiveTime(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProblemEntryOperations.validateProblemEntryEffectiveTime(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateProblemEntryId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProblemEntryOperations.validateProblemEntryId(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateProblemEntryText(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProblemEntryOperations.validateProblemEntryText(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateProblemEntryValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProblemEntryOperations.validateProblemEntryValue(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateProblemEntrySeverity(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProblemEntryOperations.validateProblemEntrySeverity(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateProblemEntryProblemStatusObservation(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProblemEntryOperations.validateProblemEntryProblemStatusObservation(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateProblemEntryHealthStatusObservation(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProblemEntryOperations.validateProblemEntryHealthStatusObservation(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateProblemEntryComment(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProblemEntryOperations.validateProblemEntryComment(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public Severity getSeverity() {
 		return ProblemEntryOperations.getSeverity(this);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public ProblemStatusObservation getProblemStatusObservation() {
 		return ProblemEntryOperations.getProblemStatusObservation(this);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public HealthStatusObservation getHealthStatusObservation() {
 		return ProblemEntryOperations.getHealthStatusObservation(this);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public EList<Comment> getComments() {
 		return ProblemEntryOperations.getComments(this);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	@Override
 	public ProblemEntry init() {
 		return Initializer.Util.init(this);

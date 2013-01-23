@@ -506,16 +506,6 @@ public interface CCDPackage extends EPackage {
 	int ALERT_STATUS_OBSERVATION = 55;
 
 	/**
-	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.ccd.impl.CauseOfDeathObservationImpl <em>Cause Of Death Observation</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see org.openhealthtools.mdht.uml.cda.ccd.impl.CauseOfDeathObservationImpl
-	 * @see org.openhealthtools.mdht.uml.cda.ccd.impl.CCDPackageImpl#getCauseOfDeathObservation()
-	 * @generated
-	 */
-	int CAUSE_OF_DEATH_OBSERVATION = 56;
-
-	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.ccd.impl.ResultsSectionImpl <em>Results Section</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -553,7 +543,7 @@ public interface CCDPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.ccd.impl.CCDPackageImpl#getEncounterLocation()
 	 * @generated
 	 */
-	int ENCOUNTER_LOCATION = 57;
+	int ENCOUNTER_LOCATION = 56;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.ccd.impl.ProductImpl <em>Product</em>}' class.
@@ -563,7 +553,7 @@ public interface CCDPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.ccd.impl.CCDPackageImpl#getProduct()
 	 * @generated
 	 */
-	int PRODUCT = 58;
+	int PRODUCT = 57;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.ccd.impl.ProceduresSectionImpl <em>Procedures Section</em>}' class.
@@ -693,7 +683,7 @@ public interface CCDPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.ccd.impl.CCDPackageImpl#getAdvanceDirectiveVerification()
 	 * @generated
 	 */
-	int ADVANCE_DIRECTIVE_VERIFICATION = 59;
+	int ADVANCE_DIRECTIVE_VERIFICATION = 58;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.ccd.impl.CoverageActivityImpl <em>Coverage Activity</em>}' class.
@@ -723,7 +713,7 @@ public interface CCDPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.ccd.impl.CCDPackageImpl#getAuthorizationActivity()
 	 * @generated
 	 */
-	int AUTHORIZATION_ACTIVITY = 60;
+	int AUTHORIZATION_ACTIVITY = 59;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.ccd.impl.ProcedureActivityImpl <em>Procedure Activity</em>}' class.
@@ -733,7 +723,7 @@ public interface CCDPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.ccd.impl.CCDPackageImpl#getProcedureActivity()
 	 * @generated
 	 */
-	int PROCEDURE_ACTIVITY = 61;
+	int PROCEDURE_ACTIVITY = 60;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.ccd.impl.PlanOfCareActivityImpl <em>Plan Of Care Activity</em>}' class.
@@ -783,7 +773,7 @@ public interface CCDPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.ccd.impl.CCDPackageImpl#getFunctionalStatusObservation()
 	 * @generated
 	 */
-	int FUNCTIONAL_STATUS_OBSERVATION = 62;
+	int FUNCTIONAL_STATUS_OBSERVATION = 61;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.ccd.impl.ProductInstanceImpl <em>Product Instance</em>}' class.
@@ -863,7 +853,7 @@ public interface CCDPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.ccd.impl.CCDPackageImpl#getPayerEntity()
 	 * @generated
 	 */
-	int PAYER_ENTITY = 66;
+	int PAYER_ENTITY = 65;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.ccd.impl.CoveredPartyImpl <em>Covered Party</em>}' class.
@@ -873,7 +863,7 @@ public interface CCDPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.ccd.impl.CCDPackageImpl#getCoveredParty()
 	 * @generated
 	 */
-	int COVERED_PARTY = 67;
+	int COVERED_PARTY = 66;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.ccd.impl.PolicySubscriberImpl <em>Policy Subscriber</em>}' class.
@@ -883,7 +873,7 @@ public interface CCDPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.ccd.impl.CCDPackageImpl#getPolicySubscriber()
 	 * @generated
 	 */
-	int POLICY_SUBSCRIBER = 68;
+	int POLICY_SUBSCRIBER = 67;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.ccd.impl.ProcedureActivityActImpl <em>Procedure Activity Act</em>}' class.
@@ -893,7 +883,7 @@ public interface CCDPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.ccd.impl.CCDPackageImpl#getProcedureActivityAct()
 	 * @generated
 	 */
-	int PROCEDURE_ACTIVITY_ACT = 63;
+	int PROCEDURE_ACTIVITY_ACT = 62;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.ccd.impl.ProcedureActivityObservationImpl <em>Procedure Activity Observation</em>}' class.
@@ -903,7 +893,7 @@ public interface CCDPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.ccd.impl.CCDPackageImpl#getProcedureActivityObservation()
 	 * @generated
 	 */
-	int PROCEDURE_ACTIVITY_OBSERVATION = 64;
+	int PROCEDURE_ACTIVITY_OBSERVATION = 63;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.ccd.impl.ProcedureActivityProcedureImpl <em>Procedure Activity Procedure</em>}' class.
@@ -913,7 +903,7 @@ public interface CCDPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.ccd.impl.CCDPackageImpl#getProcedureActivityProcedure()
 	 * @generated
 	 */
-	int PROCEDURE_ACTIVITY_PROCEDURE = 65;
+	int PROCEDURE_ACTIVITY_PROCEDURE = 64;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -10833,7 +10823,7 @@ public interface CCDPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.ccd.impl.CCDPackageImpl#getCoveragePlanDescription()
 	 * @generated
 	 */
-	int COVERAGE_PLAN_DESCRIPTION = 69;
+	int COVERAGE_PLAN_DESCRIPTION = 68;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.ccd.impl.SupportParticipantImpl <em>Support Participant</em>}' class.
@@ -10843,7 +10833,7 @@ public interface CCDPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.ccd.impl.CCDPackageImpl#getSupportParticipant()
 	 * @generated
 	 */
-	int SUPPORT_PARTICIPANT = 70;
+	int SUPPORT_PARTICIPANT = 69;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.ccd.impl.SupportImpl <em>Support</em>}' class.
@@ -10853,7 +10843,7 @@ public interface CCDPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.ccd.impl.CCDPackageImpl#getSupport()
 	 * @generated
 	 */
-	int SUPPORT = 71;
+	int SUPPORT = 70;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.ccd.impl.SupportGuardianImpl <em>Support Guardian</em>}' class.
@@ -10863,7 +10853,7 @@ public interface CCDPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.ccd.impl.CCDPackageImpl#getSupportGuardian()
 	 * @generated
 	 */
-	int SUPPORT_GUARDIAN = 72;
+	int SUPPORT_GUARDIAN = 71;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.ccd.impl.CommentImpl <em>Comment</em>}' class.
@@ -10873,7 +10863,7 @@ public interface CCDPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.ccd.impl.CCDPackageImpl#getComment()
 	 * @generated
 	 */
-	int COMMENT = 73;
+	int COMMENT = 72;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.ccd.impl.AdvanceDirectiveReferenceImpl <em>Advance Directive Reference</em>}' class.
@@ -10883,7 +10873,7 @@ public interface CCDPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.ccd.impl.CCDPackageImpl#getAdvanceDirectiveReference()
 	 * @generated
 	 */
-	int ADVANCE_DIRECTIVE_REFERENCE = 74;
+	int ADVANCE_DIRECTIVE_REFERENCE = 73;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -13080,285 +13070,6 @@ public interface CCDPackage extends EPackage {
 	 * @ordered
 	 */
 	int ALERT_STATUS_OBSERVATION_FEATURE_COUNT = STATUS_OBSERVATION_FEATURE_COUNT + 0;
-
-	/**
-	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int CAUSE_OF_DEATH_OBSERVATION__REALM_CODE = FAMILY_HISTORY_OBSERVATION__REALM_CODE;
-
-	/**
-	 * The feature id for the '<em><b>Type Id</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int CAUSE_OF_DEATH_OBSERVATION__TYPE_ID = FAMILY_HISTORY_OBSERVATION__TYPE_ID;
-
-	/**
-	 * The feature id for the '<em><b>Template Id</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int CAUSE_OF_DEATH_OBSERVATION__TEMPLATE_ID = FAMILY_HISTORY_OBSERVATION__TEMPLATE_ID;
-
-	/**
-	 * The feature id for the '<em><b>Id</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int CAUSE_OF_DEATH_OBSERVATION__ID = FAMILY_HISTORY_OBSERVATION__ID;
-
-	/**
-	 * The feature id for the '<em><b>Code</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int CAUSE_OF_DEATH_OBSERVATION__CODE = FAMILY_HISTORY_OBSERVATION__CODE;
-
-	/**
-	 * The feature id for the '<em><b>Derivation Expr</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int CAUSE_OF_DEATH_OBSERVATION__DERIVATION_EXPR = FAMILY_HISTORY_OBSERVATION__DERIVATION_EXPR;
-
-	/**
-	 * The feature id for the '<em><b>Text</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int CAUSE_OF_DEATH_OBSERVATION__TEXT = FAMILY_HISTORY_OBSERVATION__TEXT;
-
-	/**
-	 * The feature id for the '<em><b>Status Code</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int CAUSE_OF_DEATH_OBSERVATION__STATUS_CODE = FAMILY_HISTORY_OBSERVATION__STATUS_CODE;
-
-	/**
-	 * The feature id for the '<em><b>Effective Time</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int CAUSE_OF_DEATH_OBSERVATION__EFFECTIVE_TIME = FAMILY_HISTORY_OBSERVATION__EFFECTIVE_TIME;
-
-	/**
-	 * The feature id for the '<em><b>Priority Code</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int CAUSE_OF_DEATH_OBSERVATION__PRIORITY_CODE = FAMILY_HISTORY_OBSERVATION__PRIORITY_CODE;
-
-	/**
-	 * The feature id for the '<em><b>Repeat Number</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int CAUSE_OF_DEATH_OBSERVATION__REPEAT_NUMBER = FAMILY_HISTORY_OBSERVATION__REPEAT_NUMBER;
-
-	/**
-	 * The feature id for the '<em><b>Language Code</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int CAUSE_OF_DEATH_OBSERVATION__LANGUAGE_CODE = FAMILY_HISTORY_OBSERVATION__LANGUAGE_CODE;
-
-	/**
-	 * The feature id for the '<em><b>Value</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int CAUSE_OF_DEATH_OBSERVATION__VALUE = FAMILY_HISTORY_OBSERVATION__VALUE;
-
-	/**
-	 * The feature id for the '<em><b>Interpretation Code</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int CAUSE_OF_DEATH_OBSERVATION__INTERPRETATION_CODE = FAMILY_HISTORY_OBSERVATION__INTERPRETATION_CODE;
-
-	/**
-	 * The feature id for the '<em><b>Method Code</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int CAUSE_OF_DEATH_OBSERVATION__METHOD_CODE = FAMILY_HISTORY_OBSERVATION__METHOD_CODE;
-
-	/**
-	 * The feature id for the '<em><b>Target Site Code</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int CAUSE_OF_DEATH_OBSERVATION__TARGET_SITE_CODE = FAMILY_HISTORY_OBSERVATION__TARGET_SITE_CODE;
-
-	/**
-	 * The feature id for the '<em><b>Subject</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int CAUSE_OF_DEATH_OBSERVATION__SUBJECT = FAMILY_HISTORY_OBSERVATION__SUBJECT;
-
-	/**
-	 * The feature id for the '<em><b>Specimen</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int CAUSE_OF_DEATH_OBSERVATION__SPECIMEN = FAMILY_HISTORY_OBSERVATION__SPECIMEN;
-
-	/**
-	 * The feature id for the '<em><b>Performer</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int CAUSE_OF_DEATH_OBSERVATION__PERFORMER = FAMILY_HISTORY_OBSERVATION__PERFORMER;
-
-	/**
-	 * The feature id for the '<em><b>Author</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int CAUSE_OF_DEATH_OBSERVATION__AUTHOR = FAMILY_HISTORY_OBSERVATION__AUTHOR;
-
-	/**
-	 * The feature id for the '<em><b>Informant</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int CAUSE_OF_DEATH_OBSERVATION__INFORMANT = FAMILY_HISTORY_OBSERVATION__INFORMANT;
-
-	/**
-	 * The feature id for the '<em><b>Participant</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int CAUSE_OF_DEATH_OBSERVATION__PARTICIPANT = FAMILY_HISTORY_OBSERVATION__PARTICIPANT;
-
-	/**
-	 * The feature id for the '<em><b>Entry Relationship</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int CAUSE_OF_DEATH_OBSERVATION__ENTRY_RELATIONSHIP = FAMILY_HISTORY_OBSERVATION__ENTRY_RELATIONSHIP;
-
-	/**
-	 * The feature id for the '<em><b>Reference</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int CAUSE_OF_DEATH_OBSERVATION__REFERENCE = FAMILY_HISTORY_OBSERVATION__REFERENCE;
-
-	/**
-	 * The feature id for the '<em><b>Precondition</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int CAUSE_OF_DEATH_OBSERVATION__PRECONDITION = FAMILY_HISTORY_OBSERVATION__PRECONDITION;
-
-	/**
-	 * The feature id for the '<em><b>Reference Range</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int CAUSE_OF_DEATH_OBSERVATION__REFERENCE_RANGE = FAMILY_HISTORY_OBSERVATION__REFERENCE_RANGE;
-
-	/**
-	 * The feature id for the '<em><b>Null Flavor</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int CAUSE_OF_DEATH_OBSERVATION__NULL_FLAVOR = FAMILY_HISTORY_OBSERVATION__NULL_FLAVOR;
-
-	/**
-	 * The feature id for the '<em><b>Class Code</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int CAUSE_OF_DEATH_OBSERVATION__CLASS_CODE = FAMILY_HISTORY_OBSERVATION__CLASS_CODE;
-
-	/**
-	 * The feature id for the '<em><b>Mood Code</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int CAUSE_OF_DEATH_OBSERVATION__MOOD_CODE = FAMILY_HISTORY_OBSERVATION__MOOD_CODE;
-
-	/**
-	 * The feature id for the '<em><b>Negation Ind</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int CAUSE_OF_DEATH_OBSERVATION__NEGATION_IND = FAMILY_HISTORY_OBSERVATION__NEGATION_IND;
-
-	/**
-	 * The number of structural features of the '<em>Cause Of Death Observation</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int CAUSE_OF_DEATH_OBSERVATION_FEATURE_COUNT = FAMILY_HISTORY_OBSERVATION_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -15969,7 +15680,7 @@ public interface CCDPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.ccd.impl.CCDPackageImpl#getFamilyHistoryCauseOfDeathObservation()
 	 * @generated
 	 */
-	int FAMILY_HISTORY_CAUSE_OF_DEATH_OBSERVATION = 75;
+	int FAMILY_HISTORY_CAUSE_OF_DEATH_OBSERVATION = 74;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -16258,7 +15969,7 @@ public interface CCDPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.ccd.impl.CCDPackageImpl#getCCDRegistryDelegate()
 	 * @generated
 	 */
-	int CCD_REGISTRY_DELEGATE = 76;
+	int CCD_REGISTRY_DELEGATE = 75;
 
 	/**
 	 * The number of structural features of the '<em>Registry Delegate</em>' class.
@@ -16528,16 +16239,6 @@ public interface CCDPackage extends EPackage {
 	 * @generated
 	 */
 	EClass getAlertStatusObservation();
-
-	/**
-	 * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.ccd.CauseOfDeathObservation <em>Cause Of Death Observation</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Cause Of Death Observation</em>'.
-	 * @see org.openhealthtools.mdht.uml.cda.ccd.CauseOfDeathObservation
-	 * @generated
-	 */
-	EClass getCauseOfDeathObservation();
 
 	/**
 	 * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.ccd.ResultsSection <em>Results Section</em>}'.
@@ -17320,16 +17021,6 @@ public interface CCDPackage extends EPackage {
 		 * @generated
 		 */
 		EClass ALERT_STATUS_OBSERVATION = eINSTANCE.getAlertStatusObservation();
-
-		/**
-		 * The meta object literal for the '{@link org.openhealthtools.mdht.uml.cda.ccd.impl.CauseOfDeathObservationImpl <em>Cause Of Death Observation</em>}' class.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @see org.openhealthtools.mdht.uml.cda.ccd.impl.CauseOfDeathObservationImpl
-		 * @see org.openhealthtools.mdht.uml.cda.ccd.impl.CCDPackageImpl#getCauseOfDeathObservation()
-		 * @generated
-		 */
-		EClass CAUSE_OF_DEATH_OBSERVATION = eINSTANCE.getCauseOfDeathObservation();
 
 		/**
 		 * The meta object literal for the '{@link org.openhealthtools.mdht.uml.cda.ccd.impl.ResultsSectionImpl <em>Results Section</em>}' class.

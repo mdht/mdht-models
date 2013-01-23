@@ -2361,17 +2361,6 @@ public class HITSPPackageImpl extends EPackageImpl implements HITSPPackage {
 		g1.getETypeArguments().add(g2);
 		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
-		op = addEOperation(
-			conditionEntryEClass, ecorePackage.getEBoolean(), "validateConditionEntryCauseOfDeathObservation", 0, 1,
-			IS_UNIQUE, IS_ORDERED);
-		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
-		g1 = createEGenericType(ecorePackage.getEMap());
-		g2 = createEGenericType(ecorePackage.getEJavaObject());
-		g1.getETypeArguments().add(g2);
-		g2 = createEGenericType(ecorePackage.getEJavaObject());
-		g1.getETypeArguments().add(g2);
-		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
-
 		addEOperation(
 			conditionEntryEClass, theCCDPackage.getAgeObservation(), "getHITSPAgeObservation", 1, 1, IS_UNIQUE,
 			!IS_ORDERED);
@@ -2379,10 +2368,6 @@ public class HITSPPackageImpl extends EPackageImpl implements HITSPPackage {
 		addEOperation(
 			conditionEntryEClass, theIHEPackage.getProblemStatusObservation(), "getHITSPProblemStatusObservation", 1,
 			1, IS_UNIQUE, !IS_ORDERED);
-
-		addEOperation(
-			conditionEntryEClass, theCCDPackage.getCauseOfDeathObservation(), "getCauseOfDeathObservation", 1, 1,
-			IS_UNIQUE, !IS_ORDERED);
 
 		initEClass(
 			patientSummaryEClass, PatientSummary.class, "PatientSummary", !IS_ABSTRACT, !IS_INTERFACE,
@@ -4833,7 +4818,7 @@ public class HITSPPackageImpl extends EPackageImpl implements HITSPPackage {
 					"constraints.validation.error", "ConditionEntryCode ConditionEntryText ConditionEntryValue",
 					"constraints.validation.dependOn.ConditionEntryCode", "ConditionEntryCodeP", "value.codeSystem",
 					"2.16.840.1.113883.6.96", "value.codeSystemName", "SNOMEDCT", "constraints.validation.info",
-					"ConditionEntryAgeObservation ConditionEntryProblemStatusObservation ConditionEntryCauseOfDeathObservation" });
+					"ConditionEntryAgeObservation ConditionEntryProblemStatusObservation" });
 		addAnnotation(
 			patientSummaryEClass,
 			source,

@@ -33,56 +33,56 @@ import org.openhealthtools.mdht.uml.cda.hitsp.operations.ImmunizationOperations;
 public class ImmunizationImpl extends org.openhealthtools.mdht.uml.cda.ihe.impl.ImmunizationImpl implements
 		Immunization {
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	protected ImmunizationImpl() {
 		super();
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
 		return HITSPPackage.Literals.IMMUNIZATION;
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateHITSPImmunizationRefusalReason(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ImmunizationOperations.validateHITSPImmunizationRefusalReason(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateHITSPImmunizationCodedProductName(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ImmunizationOperations.validateHITSPImmunizationCodedProductName(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateHITSPImmunizationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ImmunizationOperations.validateHITSPImmunizationTemplateId(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	@Override
 	public Immunization init() {
 		return Initializer.Util.init(this);

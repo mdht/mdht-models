@@ -33,38 +33,38 @@ import org.openhealthtools.mdht.uml.cda.ihe.impl.PatientContactParticipantImpl;
  */
 public class SupportParticipantImpl extends PatientContactParticipantImpl implements SupportParticipant {
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	protected SupportParticipantImpl() {
 		super();
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
 		return HITSPPackage.Literals.SUPPORT_PARTICIPANT;
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateHITSPSupportParticipantTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return SupportParticipantOperations.validateHITSPSupportParticipantTemplateId(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	@Override
 	public SupportParticipant init() {
 		return Initializer.Util.init(this);

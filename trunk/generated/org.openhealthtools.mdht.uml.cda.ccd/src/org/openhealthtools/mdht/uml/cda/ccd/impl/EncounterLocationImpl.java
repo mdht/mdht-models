@@ -33,38 +33,38 @@ import org.openhealthtools.mdht.uml.cda.impl.Participant2Impl;
  */
 public class EncounterLocationImpl extends Participant2Impl implements EncounterLocation {
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	protected EncounterLocationImpl() {
 		super();
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
 		return CCDPackage.Literals.ENCOUNTER_LOCATION;
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateEncounterLocationHasParticipantRole(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return EncounterLocationOperations.validateEncounterLocationHasParticipantRole(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateEncounterLocationHasParticipantRoleLocation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return EncounterLocationOperations.validateEncounterLocationHasParticipantRoleLocation(
@@ -72,20 +72,20 @@ public class EncounterLocationImpl extends Participant2Impl implements Encounter
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateEncounterLocationHasParticipantRoleCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return EncounterLocationOperations.validateEncounterLocationHasParticipantRoleCode(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateEncounterLocationHasParticipantRoleCodeVocab(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return EncounterLocationOperations.validateEncounterLocationHasParticipantRoleCodeVocab(
@@ -93,47 +93,47 @@ public class EncounterLocationImpl extends Participant2Impl implements Encounter
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateEncounterLocationHasPlayingEntity(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return EncounterLocationOperations.validateEncounterLocationHasPlayingEntity(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateEncounterLocationHasPlayingEntityPlace(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return EncounterLocationOperations.validateEncounterLocationHasPlayingEntityPlace(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateEncounterLocationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return EncounterLocationOperations.validateEncounterLocationTemplateId(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateEncounterLocationTypeCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return EncounterLocationOperations.validateEncounterLocationTypeCode(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public EncounterLocation init() {
 		return Initializer.Util.init(this);
 	}

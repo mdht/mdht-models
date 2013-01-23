@@ -34,29 +34,29 @@ import org.openhealthtools.mdht.uml.cda.ihe.operations.MedicationFullfillmentIns
 public class MedicationFullfillmentInstructionsImpl extends FulfillmentInstructionImpl implements
 		MedicationFullfillmentInstructions {
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	protected MedicationFullfillmentInstructionsImpl() {
 		super();
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
 		return IHEPackage.Literals.MEDICATION_FULLFILLMENT_INSTRUCTIONS;
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateMedicationFullfillmentInstructionsTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return MedicationFullfillmentInstructionsOperations.validateMedicationFullfillmentInstructionsTemplateId(
@@ -64,10 +64,10 @@ public class MedicationFullfillmentInstructionsImpl extends FulfillmentInstructi
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateMedicationFullfillmentInstructionsCodeP(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return MedicationFullfillmentInstructionsOperations.validateMedicationFullfillmentInstructionsCodeP(
@@ -75,10 +75,10 @@ public class MedicationFullfillmentInstructionsImpl extends FulfillmentInstructi
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateMedicationFullfillmentInstructionsCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return MedicationFullfillmentInstructionsOperations.validateMedicationFullfillmentInstructionsCode(
@@ -86,10 +86,10 @@ public class MedicationFullfillmentInstructionsImpl extends FulfillmentInstructi
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateMedicationFullfillmentInstructionsStatusCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return MedicationFullfillmentInstructionsOperations.validateMedicationFullfillmentInstructionsStatusCode(
@@ -97,10 +97,10 @@ public class MedicationFullfillmentInstructionsImpl extends FulfillmentInstructi
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateMedicationFullfillmentInstructionsText(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return MedicationFullfillmentInstructionsOperations.validateMedicationFullfillmentInstructionsText(
@@ -108,10 +108,10 @@ public class MedicationFullfillmentInstructionsImpl extends FulfillmentInstructi
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	@Override
 	public MedicationFullfillmentInstructions init() {
 		return Initializer.Util.init(this);

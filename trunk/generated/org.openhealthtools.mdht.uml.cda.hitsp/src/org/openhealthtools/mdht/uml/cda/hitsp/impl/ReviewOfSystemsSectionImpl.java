@@ -33,49 +33,49 @@ import org.openhealthtools.mdht.uml.cda.hitsp.ReviewOfSystemsSection;
 public class ReviewOfSystemsSectionImpl extends org.openhealthtools.mdht.uml.cda.ihe.impl.ReviewOfSystemsSectionImpl
 		implements ReviewOfSystemsSection {
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	protected ReviewOfSystemsSectionImpl() {
 		super();
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
 		return HITSPPackage.Literals.REVIEW_OF_SYSTEMS_SECTION;
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	@Override
 	public boolean validateReviewOfSystemsSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ReviewOfSystemsSectionOperations.validateReviewOfSystemsSectionTemplateId(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	@Override
 	public boolean validateReviewOfSystemsSectionCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ReviewOfSystemsSectionOperations.validateReviewOfSystemsSectionCode(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateHITSPReviewOfSystemsSectionTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return org.openhealthtools.mdht.uml.cda.hitsp.operations.ReviewOfSystemsSectionOperations.validateHITSPReviewOfSystemsSectionTemplateId(
@@ -83,10 +83,10 @@ public class ReviewOfSystemsSectionImpl extends org.openhealthtools.mdht.uml.cda
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	@Override
 	public ReviewOfSystemsSection init() {
 		return Initializer.Util.init(this);

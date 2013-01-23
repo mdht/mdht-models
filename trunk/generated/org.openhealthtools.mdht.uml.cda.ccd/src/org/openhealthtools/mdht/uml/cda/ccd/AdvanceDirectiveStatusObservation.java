@@ -26,10 +26,10 @@ import org.openhealthtools.mdht.emf.runtime.util.Initializer;
  */
 public interface AdvanceDirectiveStatusObservation extends StatusObservation {
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public AdvanceDirectiveStatusObservation init();
 
 	/**

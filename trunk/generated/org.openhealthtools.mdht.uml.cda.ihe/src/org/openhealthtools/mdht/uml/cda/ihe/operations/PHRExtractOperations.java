@@ -39,44 +39,45 @@ import org.openhealthtools.mdht.uml.cda.ihe.util.IHEValidator;
  */
 public class PHRExtractOperations extends MedicalSummaryOperations {
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	protected PHRExtractOperations() {
 		super();
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validatePHRExtractTemplateId(PHRExtract, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate PHR Extract Template Id</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validatePHRExtractTemplateId(PHRExtract, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate PHR Extract Template Id</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validatePHRExtractTemplateId(PHRExtract, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validatePHRExtractTemplateId(PHRExtract, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_PHR_EXTRACT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.templateId->exists(id : datatypes::II | id.root = '1.3.6.1.4.1.19376.1.5.3.1.1.5')";
 
 	/**
-	* The cached OCL invariant for the '{@link #validatePHRExtractTemplateId(PHRExtract, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate PHR Extract Template Id</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validatePHRExtractTemplateId(PHRExtract, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate PHR Extract Template Id</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validatePHRExtractTemplateId(PHRExtract, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validatePHRExtractTemplateId(PHRExtract, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static Constraint VALIDATE_PHR_EXTRACT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param phrExtract The receiving '<em><b>PHR Extract</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * self.templateId->exists(id : datatypes::II | id.root = '1.3.6.1.4.1.19376.1.5.3.1.1.5')
+	 * @param phrExtract The receiving '<em><b>PHR Extract</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 	public static boolean validatePHRExtractTemplateId(PHRExtract phrExtract, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 

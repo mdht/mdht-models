@@ -816,13 +816,6 @@ resolved</body>
       <memberEnd href=".controlled/hitsp-problemList.uml#_ZPh69pbDEeCcyetSDtbszQ"/>
       <memberEnd href="#_ZPh6-ZbDEeCcyetSDtbszQ"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_lKScwpbDEeCcyetSDtbszQ">
-      <ownedEnd xmi:id="_lKScw5bDEeCcyetSDtbszQ" association="_lKScwpbDEeCcyetSDtbszQ">
-        <type xmi:type="uml:Class" href=".controlled/hitsp-problemList.uml#_c6bN4BvgEd-yI6xBTkJSNw"/>
-      </ownedEnd>
-      <memberEnd href=".controlled/hitsp-problemList.uml#_lKScwJbDEeCcyetSDtbszQ"/>
-      <memberEnd href="#_lKScw5bDEeCcyetSDtbszQ"/>
-    </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_kTOYELGBEeCNQMtkrvuLWg" name="UnstructuredOrScannedDocument">
       <ownedComment xmi:id="_1VZfoLGBEeCNQMtkrvuLWg">
         <body>Used for documents that implement both HL7 Unstructured Documents and HITSP C62 based on IHE Scanned Documents.</body>
@@ -1630,7 +1623,6 @@ resolved</body>
     <ruleId>CONF-160</ruleId>
   </CDA:EntryRelationship>
   <CDA:EntryRelationship xmi:id="_ZPh6-pbDEeCcyetSDtbszQ" severity="INFO" base_Association="_ZPh6-JbDEeCcyetSDtbszQ" typeCode="REFR"/>
-  <CDA:EntryRelationship xmi:id="_FAtUYJbHEeCcyetSDtbszQ" severity="INFO" base_Association="_lKScwpbDEeCcyetSDtbszQ"/>
   <CDA:PropertyValidation xmi:id="_zglrUJxSEeCtZqh8o0ACbw" severity="WARNING" base_Property="_y4yrgJxSEeCtZqh8o0ACbw">
     <ruleId>CONF-433</ruleId>
   </CDA:PropertyValidation>

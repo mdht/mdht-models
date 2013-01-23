@@ -27,10 +27,10 @@ import org.openhealthtools.mdht.uml.cda.ClinicalStatement;
  */
 public interface ProcedureActivity extends ClinicalStatement {
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public ProcedureActivity init();
 
 	/**
