@@ -34,65 +34,65 @@ import org.openhealthtools.mdht.uml.cda.impl.SectionImpl;
  */
 public class EndocrineSystemSectionImpl extends SectionImpl implements EndocrineSystemSection {
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	protected EndocrineSystemSectionImpl() {
 		super();
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
 		return IHEPackage.Literals.ENDOCRINE_SYSTEM_SECTION;
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateEndocrineSystemSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return EndocrineSystemSectionOperations.validateEndocrineSystemSectionTemplateId(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateEndocrineSystemSectionCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return EndocrineSystemSectionOperations.validateEndocrineSystemSectionCode(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateEndocrineSystemSectionProblemEntry(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return EndocrineSystemSectionOperations.validateEndocrineSystemSectionProblemEntry(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public ProblemEntry getProblemEntry() {
 		return EndocrineSystemSectionOperations.getProblemEntry(this);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public EndocrineSystemSection init() {
 		return Initializer.Util.init(this);
 	}

@@ -119,11 +119,6 @@
       <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda.ccd.model/model/.controlled/ccd-problem.uml#_7kSb8BZ2Ed-i6Lz80y5G5g"/>
       <association href="../hitsp.uml#_ZPh685bDEeCcyetSDtbszQ"/>
     </ownedAttribute>
-    <ownedAttribute xmi:id="_lKScwJbDEeCcyetSDtbszQ" name="causeOfDeathObservation">
-      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda.ccd.model/model/.controlled/ccd-familyHistory.uml#_joG2YIHbEd6Ncrr6L3Ublw"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_lKScwZbDEeCcyetSDtbszQ"/>
-      <association href="../hitsp.uml#_lKScwpbDEeCcyetSDtbszQ"/>
-    </ownedAttribute>
     <ownedAttribute xmi:id="_ZPh69pbDEeCcyetSDtbszQ" name="problemStatusObservation">
       <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda.ihe.model/model/.controlled/ihe-activeProblems.uml#_s7LQECQNEeCxCon8a79rfA"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ZPh695bDEeCcyetSDtbszQ"/>

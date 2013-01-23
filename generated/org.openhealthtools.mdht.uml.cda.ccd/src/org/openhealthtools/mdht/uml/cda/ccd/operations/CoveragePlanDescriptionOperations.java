@@ -42,44 +42,45 @@ import org.openhealthtools.mdht.uml.cda.operations.ClinicalStatementOperations;
  */
 public class CoveragePlanDescriptionOperations extends ClinicalStatementOperations {
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	protected CoveragePlanDescriptionOperations() {
 		super();
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateCoveragePlanDescriptionClassCode(CoveragePlanDescription, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Coverage Plan Description Class Code</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateCoveragePlanDescriptionClassCode(CoveragePlanDescription, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Coverage Plan Description Class Code</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateCoveragePlanDescriptionClassCode(CoveragePlanDescription, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateCoveragePlanDescriptionClassCode(CoveragePlanDescription, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_COVERAGE_PLAN_DESCRIPTION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.classCode=vocab::x_ActClassDocumentEntryAct::ACT";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateCoveragePlanDescriptionClassCode(CoveragePlanDescription, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Coverage Plan Description Class Code</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateCoveragePlanDescriptionClassCode(CoveragePlanDescription, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Coverage Plan Description Class Code</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateCoveragePlanDescriptionClassCode(CoveragePlanDescription, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateCoveragePlanDescriptionClassCode(CoveragePlanDescription, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static Constraint VALIDATE_COVERAGE_PLAN_DESCRIPTION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param coveragePlanDescription The receiving '<em><b>Coverage Plan Description</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * self.classCode=vocab::x_ActClassDocumentEntryAct::ACT
+	 * @param coveragePlanDescription The receiving '<em><b>Coverage Plan Description</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 	public static boolean validateCoveragePlanDescriptionClassCode(CoveragePlanDescription coveragePlanDescription,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -108,35 +109,36 @@ public class CoveragePlanDescriptionOperations extends ClinicalStatementOperatio
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateCoveragePlanDescriptionId(CoveragePlanDescription, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Coverage Plan Description Id</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateCoveragePlanDescriptionId(CoveragePlanDescription, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Coverage Plan Description Id</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateCoveragePlanDescriptionId(CoveragePlanDescription, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateCoveragePlanDescriptionId(CoveragePlanDescription, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_COVERAGE_PLAN_DESCRIPTION_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.id->isEmpty() or self.id->exists(element | element.isNullFlavorUndefined())) implies (not self.id->isEmpty())";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateCoveragePlanDescriptionId(CoveragePlanDescription, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Coverage Plan Description Id</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateCoveragePlanDescriptionId(CoveragePlanDescription, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Coverage Plan Description Id</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateCoveragePlanDescriptionId(CoveragePlanDescription, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateCoveragePlanDescriptionId(CoveragePlanDescription, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static Constraint VALIDATE_COVERAGE_PLAN_DESCRIPTION_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param coveragePlanDescription The receiving '<em><b>Coverage Plan Description</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * (self.id->isEmpty() or self.id->exists(element | element.isNullFlavorUndefined())) implies (not self.id->isEmpty())
+	 * @param coveragePlanDescription The receiving '<em><b>Coverage Plan Description</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 	public static boolean validateCoveragePlanDescriptionId(CoveragePlanDescription coveragePlanDescription,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -164,35 +166,36 @@ public class CoveragePlanDescriptionOperations extends ClinicalStatementOperatio
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateCoveragePlanDescriptionMoodCode(CoveragePlanDescription, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Coverage Plan Description Mood Code</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateCoveragePlanDescriptionMoodCode(CoveragePlanDescription, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Coverage Plan Description Mood Code</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateCoveragePlanDescriptionMoodCode(CoveragePlanDescription, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateCoveragePlanDescriptionMoodCode(CoveragePlanDescription, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_COVERAGE_PLAN_DESCRIPTION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.moodCode=vocab::x_DocumentActMood::DEF";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateCoveragePlanDescriptionMoodCode(CoveragePlanDescription, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Coverage Plan Description Mood Code</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateCoveragePlanDescriptionMoodCode(CoveragePlanDescription, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Coverage Plan Description Mood Code</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateCoveragePlanDescriptionMoodCode(CoveragePlanDescription, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateCoveragePlanDescriptionMoodCode(CoveragePlanDescription, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static Constraint VALIDATE_COVERAGE_PLAN_DESCRIPTION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param coveragePlanDescription The receiving '<em><b>Coverage Plan Description</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * self.moodCode=vocab::x_DocumentActMood::DEF
+	 * @param coveragePlanDescription The receiving '<em><b>Coverage Plan Description</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 	public static boolean validateCoveragePlanDescriptionMoodCode(CoveragePlanDescription coveragePlanDescription,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 

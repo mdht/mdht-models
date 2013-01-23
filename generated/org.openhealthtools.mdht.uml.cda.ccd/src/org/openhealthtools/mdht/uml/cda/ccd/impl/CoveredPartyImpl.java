@@ -33,47 +33,47 @@ import org.openhealthtools.mdht.uml.cda.impl.ParticipantRoleImpl;
  */
 public class CoveredPartyImpl extends ParticipantRoleImpl implements CoveredParty {
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	protected CoveredPartyImpl() {
 		super();
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
 		return CCDPackage.Literals.COVERED_PARTY;
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateCoveredPartyId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return CoveredPartyOperations.validateCoveredPartyId(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateCoveredPartyCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return CoveredPartyOperations.validateCoveredPartyCode(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public CoveredParty init() {
 		return Initializer.Util.init(this);
 	}

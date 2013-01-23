@@ -33,29 +33,29 @@ import org.openhealthtools.mdht.uml.cda.ihe.operations.FamilyMedicalHistorySecti
  */
 public class FamilyMedicalHistorySectionImpl extends FamilyHistorySectionImpl implements FamilyMedicalHistorySection {
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	protected FamilyMedicalHistorySectionImpl() {
 		super();
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
 		return IHEPackage.Literals.FAMILY_MEDICAL_HISTORY_SECTION;
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateFamilyMedicalHistorySectionTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return FamilyMedicalHistorySectionOperations.validateFamilyMedicalHistorySectionTemplateId(
@@ -63,10 +63,10 @@ public class FamilyMedicalHistorySectionImpl extends FamilyHistorySectionImpl im
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	@Override
 	public FamilyMedicalHistorySection init() {
 		return Initializer.Util.init(this);

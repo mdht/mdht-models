@@ -196,15 +196,6 @@
         <body>Contains one or more sources of information</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_S6tlMMnMEeCDOYZyQPaRHg" name="entryRelationship" constrainedElement="_Sd5agMkVEeChgrgmBsw26A">
-      <ownedComment xmi:id="_7tRloAVdEeGEVa6Nn2ESZg">
-        <body>UNIMPLEMENTABLE</body>
-      </ownedComment>
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_WwCQ8MnMEeCDOYZyQPaRHg">
-        <language>Analysis</language>
-        <body>A family history cause of death observation SHALL contain one or more entryRelationship / @typeCode</body>
-      </specification>
-    </ownedRule>
     <generalization xmi:id="_plaIMGwXEd6q29qQGU-SBA">
       <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
     </generalization>
@@ -393,15 +384,11 @@
       <association href="../ccd.uml#_CqeCoNJYEeCZxdqWGSM1Gw"/>
     </ownedAttribute>
   </uml:Class>
-  <uml:Class xmi:id="_joG2YIHbEd6Ncrr6L3Ublw" name="CauseOfDeathObservation">
-    <generalization xmi:id="_my2UEIHbEd6Ncrr6L3Ublw" general="_7tlrAGwWEd6q29qQGU-SBA"/>
-  </uml:Class>
   <CDA:CDATemplate xmi:id="_7FE68Ho3Ed6UPbrR4QTFoQ" base_Class="_7tlrAGwWEd6q29qQGU-SBA" templateId="2.16.840.1.113883.10.20.1.22" assigningAuthorityName="CCD">
     <ruleId>CONF-190</ruleId>
   </CDA:CDATemplate>
   <CDA:CDATemplate xmi:id="_LCCG4Ho4Ed6UPbrR4QTFoQ" base_Class="_5ET7oGwWEd6q29qQGU-SBA" templateId="2.16.840.1.113883.10.20.1.4" assigningAuthorityName="CCD"/>
   <CDA:CDATemplate xmi:id="_W0JDAHo4Ed6UPbrR4QTFoQ" base_Class="_9QFYgGwWEd6q29qQGU-SBA" templateId="2.16.840.1.113883.10.20.1.23" assigningAuthorityName="CCD"/>
-  <CDA:CDATemplate xmi:id="_ohNTUIHbEd6Ncrr6L3Ublw" base_Class="_joG2YIHbEd6Ncrr6L3Ublw" templateId="2.16.840.1.113883.10.20.1.42" assigningAuthorityName="CCD"/>
   <CDA:PropertyValidation xmi:id="_9SJQsP_UEd6Y8ICOr4M99Q" base_Property="_rZx4YIHaEd6Ncrr6L3Ublw">
     <ruleId>CONF-187</ruleId>
   </CDA:PropertyValidation>
@@ -508,11 +495,22 @@
   <CDA:ConstraintValidation xmi:id="_V-InEMkVEeChgrgmBsw26A" severity="INFO" base_Constraint="_Sd5agMkVEeChgrgmBsw26A">
     <ruleId>CONF-223</ruleId>
   </CDA:ConstraintValidation>
-  <CDA:ConstraintValidation xmi:id="_UxSFQMnMEeCDOYZyQPaRHg" base_Constraint="_S6tlMMnMEeCDOYZyQPaRHg"/>
-  <CDA:ConformsTo xmi:id="_gcIYcAb5EeGhIchBK31weg" base_Generalization="_my2UEIHbEd6Ncrr6L3Ublw">
-    <ruleId>CONF-196</ruleId>
-  </CDA:ConformsTo>
   <CDA:ConformsTo xmi:id="_DpKt8Ab6EeGhIchBK31weg" base_Generalization="_lBDMMGwXEd6q29qQGU-SBA">
     <ruleId>CONF-200</ruleId>
   </CDA:ConformsTo>
+  <uml:Class xmi:id="_56Z3kA_WEeG7sMwiyo3Ifw" name="FamilyHistoryCauseOfDeathObservation">
+    <ownedRule xmi:id="_h29mIGV1EeKBMs8LUYz1wA" name="entryRelationship" constrainedElement="_56Z3kA_WEeG7sMwiyo3Ifw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_9cKAgGV1EeKBMs8LUYz1wA">
+        <language>Analysis</language>
+        <language>OCL</language>
+        <body>The value for at least one &quot;entryRelationship / @typeCode&quot; in a family history cause of death observation SHALL be &quot;CAUS&quot; &quot;is etiology for&quot; 2.16.840.1.113883.5.1002 ActRelationshipType STATIC, with a target family history observation of death.</body>
+        <body>self.entryRelationship->exists(er : cda::EntryRelationship | er.typeCode = vocab::x_ActRelationshipEntryRelationship::CAUS)</body>
+      </specification>
+    </ownedRule>
+    <generalization xmi:id="_56aeoA_WEeG7sMwiyo3Ifw" general="_7tlrAGwWEd6q29qQGU-SBA"/>
+  </uml:Class>
+  <CDA:CDATemplate xmi:id="_DRSHYA_XEeG7sMwiyo3Ifw" base_Class="_56Z3kA_WEeG7sMwiyo3Ifw" templateId="2.16.840.1.113883.10.20.1.42"/>
+  <CDA:ConstraintValidation xmi:id="_89MXIGV2EeKBMs8LUYz1wA" base_Constraint="_h29mIGV1EeKBMs8LUYz1wA">
+    <ruleId>CONF-198</ruleId>
+  </CDA:ConstraintValidation>
 </xmi:XMI>

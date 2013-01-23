@@ -42,44 +42,45 @@ import org.openhealthtools.mdht.uml.cda.operations.Participant2Operations;
  */
 public class AdvanceDirectiveVerificationOperations extends Participant2Operations {
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	protected AdvanceDirectiveVerificationOperations() {
 		super();
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateAdvanceDirectiveVerificationTemplateId(AdvanceDirectiveVerification, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Advance Directive Verification Template Id</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateAdvanceDirectiveVerificationTemplateId(AdvanceDirectiveVerification, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Advance Directive Verification Template Id</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateAdvanceDirectiveVerificationTemplateId(AdvanceDirectiveVerification, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateAdvanceDirectiveVerificationTemplateId(AdvanceDirectiveVerification, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_ADVANCE_DIRECTIVE_VERIFICATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.1.58')";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateAdvanceDirectiveVerificationTemplateId(AdvanceDirectiveVerification, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Advance Directive Verification Template Id</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateAdvanceDirectiveVerificationTemplateId(AdvanceDirectiveVerification, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Advance Directive Verification Template Id</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateAdvanceDirectiveVerificationTemplateId(AdvanceDirectiveVerification, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateAdvanceDirectiveVerificationTemplateId(AdvanceDirectiveVerification, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static Constraint VALIDATE_ADVANCE_DIRECTIVE_VERIFICATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param advanceDirectiveVerification The receiving '<em><b>Advance Directive Verification</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.1.58')
+	 * @param advanceDirectiveVerification The receiving '<em><b>Advance Directive Verification</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 	public static boolean validateAdvanceDirectiveVerificationTemplateId(
 			AdvanceDirectiveVerification advanceDirectiveVerification, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
@@ -109,35 +110,36 @@ public class AdvanceDirectiveVerificationOperations extends Participant2Operatio
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateAdvanceDirectiveVerificationTypeCode(AdvanceDirectiveVerification, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Advance Directive Verification Type Code</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateAdvanceDirectiveVerificationTypeCode(AdvanceDirectiveVerification, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Advance Directive Verification Type Code</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateAdvanceDirectiveVerificationTypeCode(AdvanceDirectiveVerification, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateAdvanceDirectiveVerificationTypeCode(AdvanceDirectiveVerification, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_ADVANCE_DIRECTIVE_VERIFICATION_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.typeCode=vocab::ParticipationType::VRF";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateAdvanceDirectiveVerificationTypeCode(AdvanceDirectiveVerification, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Advance Directive Verification Type Code</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateAdvanceDirectiveVerificationTypeCode(AdvanceDirectiveVerification, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Advance Directive Verification Type Code</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateAdvanceDirectiveVerificationTypeCode(AdvanceDirectiveVerification, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateAdvanceDirectiveVerificationTypeCode(AdvanceDirectiveVerification, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static Constraint VALIDATE_ADVANCE_DIRECTIVE_VERIFICATION_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param advanceDirectiveVerification The receiving '<em><b>Advance Directive Verification</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * self.typeCode=vocab::ParticipationType::VRF
+	 * @param advanceDirectiveVerification The receiving '<em><b>Advance Directive Verification</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 	public static boolean validateAdvanceDirectiveVerificationTypeCode(
 			AdvanceDirectiveVerification advanceDirectiveVerification, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
@@ -167,35 +169,36 @@ public class AdvanceDirectiveVerificationOperations extends Participant2Operatio
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateAdvanceDirectiveVerificationTime(AdvanceDirectiveVerification, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Advance Directive Verification Time</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateAdvanceDirectiveVerificationTime(AdvanceDirectiveVerification, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Advance Directive Verification Time</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateAdvanceDirectiveVerificationTime(AdvanceDirectiveVerification, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateAdvanceDirectiveVerificationTime(AdvanceDirectiveVerification, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_ADVANCE_DIRECTIVE_VERIFICATION_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.time.oclIsUndefined() or self.time.isNullFlavorUndefined()) implies (not self.time.oclIsUndefined())";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateAdvanceDirectiveVerificationTime(AdvanceDirectiveVerification, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Advance Directive Verification Time</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateAdvanceDirectiveVerificationTime(AdvanceDirectiveVerification, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Advance Directive Verification Time</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateAdvanceDirectiveVerificationTime(AdvanceDirectiveVerification, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateAdvanceDirectiveVerificationTime(AdvanceDirectiveVerification, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static Constraint VALIDATE_ADVANCE_DIRECTIVE_VERIFICATION_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param advanceDirectiveVerification The receiving '<em><b>Advance Directive Verification</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * (self.time.oclIsUndefined() or self.time.isNullFlavorUndefined()) implies (not self.time.oclIsUndefined())
+	 * @param advanceDirectiveVerification The receiving '<em><b>Advance Directive Verification</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 	public static boolean validateAdvanceDirectiveVerificationTime(
 			AdvanceDirectiveVerification advanceDirectiveVerification, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {

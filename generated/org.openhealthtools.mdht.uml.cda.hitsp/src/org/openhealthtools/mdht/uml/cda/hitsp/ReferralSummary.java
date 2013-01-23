@@ -27,10 +27,10 @@ import org.openhealthtools.mdht.uml.cda.ihe.MedicalSummary;
  */
 public interface ReferralSummary extends MedicalSummary {
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public ReferralSummary init();
 
 	/**

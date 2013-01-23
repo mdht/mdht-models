@@ -33,38 +33,38 @@ import org.openhealthtools.mdht.uml.cda.ihe.impl.PatientContactGuardianImpl;
  */
 public class SupportGuardianImpl extends PatientContactGuardianImpl implements SupportGuardian {
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	protected SupportGuardianImpl() {
 		super();
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
 		return HITSPPackage.Literals.SUPPORT_GUARDIAN;
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateHITSPSupportGuardianTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return SupportGuardianOperations.validateHITSPSupportGuardianTemplateId(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	@Override
 	public SupportGuardian init() {
 		return Initializer.Util.init(this);

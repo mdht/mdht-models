@@ -27,10 +27,10 @@ import org.openhealthtools.mdht.uml.cda.ccd.EncountersActivity;
  */
 public interface EncounterActivity extends EncounterEntry, EncountersActivity {
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public EncounterActivity init();
 
 	/**

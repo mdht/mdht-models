@@ -33,47 +33,47 @@ import org.openhealthtools.mdht.uml.cda.impl.ActImpl;
  */
 public class PatientInstructionImpl extends ActImpl implements PatientInstruction {
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	protected PatientInstructionImpl() {
 		super();
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
 		return CCDPackage.Literals.PATIENT_INSTRUCTION;
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validatePatientInstructionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PatientInstructionOperations.validatePatientInstructionTemplateId(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validatePatientInstructionMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PatientInstructionOperations.validatePatientInstructionMoodCode(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public PatientInstruction init() {
 		return Initializer.Util.init(this);
 	}

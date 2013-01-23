@@ -41,45 +41,46 @@ import org.openhealthtools.mdht.uml.cda.operations.SectionOperations;
  */
 public class ProceduresAndInterventionsSectionOperations extends SectionOperations {
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	protected ProceduresAndInterventionsSectionOperations() {
 		super();
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateProceduresAndInterventionsSectionTemplateId(ProceduresAndInterventionsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedures And Interventions Section Template Id</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateProceduresAndInterventionsSectionTemplateId(ProceduresAndInterventionsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedures And Interventions Section Template Id</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateProceduresAndInterventionsSectionTemplateId(ProceduresAndInterventionsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateProceduresAndInterventionsSectionTemplateId(ProceduresAndInterventionsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_PROCEDURES_AND_INTERVENTIONS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.templateId->exists(id : datatypes::II | id.root = '1.3.6.1.4.1.19376.1.5.3.1.1.13.2.11')";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateProceduresAndInterventionsSectionTemplateId(ProceduresAndInterventionsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedures And Interventions Section Template Id</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateProceduresAndInterventionsSectionTemplateId(ProceduresAndInterventionsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedures And Interventions Section Template Id</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateProceduresAndInterventionsSectionTemplateId(ProceduresAndInterventionsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateProceduresAndInterventionsSectionTemplateId(ProceduresAndInterventionsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 
 	protected static Constraint VALIDATE_PROCEDURES_AND_INTERVENTIONS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param proceduresAndInterventionsSection The receiving '<em><b>Procedures And Interventions Section</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * self.templateId->exists(id : datatypes::II | id.root = '1.3.6.1.4.1.19376.1.5.3.1.1.13.2.11')
+	 * @param proceduresAndInterventionsSection The receiving '<em><b>Procedures And Interventions Section</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 
 	public static boolean validateProceduresAndInterventionsSectionTemplateId(
 			ProceduresAndInterventionsSection proceduresAndInterventionsSection, DiagnosticChain diagnostics,
@@ -112,38 +113,41 @@ public class ProceduresAndInterventionsSectionOperations extends SectionOperatio
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateProceduresAndInterventionsSectionCode(ProceduresAndInterventionsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedures And Interventions Section Code</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateProceduresAndInterventionsSectionCode(ProceduresAndInterventionsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedures And Interventions Section Code</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateProceduresAndInterventionsSectionCode(ProceduresAndInterventionsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateProceduresAndInterventionsSectionCode(ProceduresAndInterventionsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_PROCEDURES_AND_INTERVENTIONS_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and "
 			+ "let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in "
 			+ "value.code = '29544-3' and value.codeSystem = '2.16.840.1.113883.6.1')";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateProceduresAndInterventionsSectionCode(ProceduresAndInterventionsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedures And Interventions Section Code</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateProceduresAndInterventionsSectionCode(ProceduresAndInterventionsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedures And Interventions Section Code</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateProceduresAndInterventionsSectionCode(ProceduresAndInterventionsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateProceduresAndInterventionsSectionCode(ProceduresAndInterventionsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 
 	protected static Constraint VALIDATE_PROCEDURES_AND_INTERVENTIONS_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param proceduresAndInterventionsSection The receiving '<em><b>Procedures And Interventions Section</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * (self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and 
+	 * let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in 
+	 * value.code = '29544-3' and value.codeSystem = '2.16.840.1.113883.6.1')
+	 * @param proceduresAndInterventionsSection The receiving '<em><b>Procedures And Interventions Section</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 
 	public static boolean validateProceduresAndInterventionsSectionCode(
 			ProceduresAndInterventionsSection proceduresAndInterventionsSection, DiagnosticChain diagnostics,
@@ -174,30 +178,34 @@ public class ProceduresAndInterventionsSectionOperations extends SectionOperatio
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #getProcedureEntry(ProceduresAndInterventionsSection) <em>Get Procedure Entry</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #getProcedureEntry(ProceduresAndInterventionsSection) <em>Get Procedure Entry</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #getProcedureEntry(ProceduresAndInterventionsSection)
-	* @generated
-	* @ordered
-	*/
+	 * @see #getProcedureEntry(ProceduresAndInterventionsSection)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String GET_PROCEDURE_ENTRY__EOCL_EXP = "self.getProcedures()->select(procedure : cda::Procedure | not procedure.oclIsUndefined() and procedure.oclIsKindOf(ihe::ProcedureEntry))->asSequence()->any(true).oclAsType(ihe::ProcedureEntry)";
 
 	/**
-	* The cached OCL query for the '{@link #getProcedureEntry(ProceduresAndInterventionsSection) <em>Get Procedure Entry</em>}' query operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL query for the '{@link #getProcedureEntry(ProceduresAndInterventionsSection) <em>Get Procedure Entry</em>}' query operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #getProcedureEntry(ProceduresAndInterventionsSection)
-	* @generated
-	* @ordered
-	*/
+	 * @see #getProcedureEntry(ProceduresAndInterventionsSection)
+	 * @generated
+	 * @ordered
+	 */
 	protected static OCLExpression<EClassifier> GET_PROCEDURE_ENTRY__EOCL_QRY;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * self.getProcedures()->select(procedure : cda::Procedure | not procedure.oclIsUndefined() and procedure.oclIsKindOf(ihe::ProcedureEntry))->asSequence()->any(true).oclAsType(ihe::ProcedureEntry)
+	 * @param proceduresAndInterventionsSection The receiving '<em><b>Procedures And Interventions Section</b></em>' model object.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 
 	public static ProcedureEntry getProcedureEntry(ProceduresAndInterventionsSection proceduresAndInterventionsSection) {
 		if (GET_PROCEDURE_ENTRY__EOCL_QRY == null) {

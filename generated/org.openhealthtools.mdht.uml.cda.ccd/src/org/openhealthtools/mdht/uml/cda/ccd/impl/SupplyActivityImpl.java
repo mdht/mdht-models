@@ -37,192 +37,192 @@ import org.openhealthtools.mdht.uml.cda.impl.SupplyImpl;
  */
 public class SupplyActivityImpl extends SupplyImpl implements SupplyActivity {
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	protected SupplyActivityImpl() {
 		super();
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
 		return CCDPackage.Literals.SUPPLY_ACTIVITY;
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateSupplyActivityMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return SupplyActivityOperations.validateSupplyActivityMoodCode(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateSupplyActivityHasAuthor(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return SupplyActivityOperations.validateSupplyActivityHasAuthor(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateSupplyActivityHasPerformer(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return SupplyActivityOperations.validateSupplyActivityHasPerformer(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateSupplyActivityHasParticipantLocation(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return SupplyActivityOperations.validateSupplyActivityHasParticipantLocation(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateSupplyActivityInformationSource(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return SupplyActivityOperations.validateSupplyActivityInformationSource(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateSupplyActivityHasProduct(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return SupplyActivityOperations.validateSupplyActivityHasProduct(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateSupplyActivityTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return SupplyActivityOperations.validateSupplyActivityTemplateId(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateSupplyActivityId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return SupplyActivityOperations.validateSupplyActivityId(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateSupplyActivityStatusCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return SupplyActivityOperations.validateSupplyActivityStatusCode(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateSupplyActivityEffectiveTime(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return SupplyActivityOperations.validateSupplyActivityEffectiveTime(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateSupplyActivityQuantity(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return SupplyActivityOperations.validateSupplyActivityQuantity(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateSupplyActivityRepeatNumber(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return SupplyActivityOperations.validateSupplyActivityRepeatNumber(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateSupplyActivityMedicationStatusObservation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return SupplyActivityOperations.validateSupplyActivityMedicationStatusObservation(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateSupplyActivityFulfillmentInstruction(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return SupplyActivityOperations.validateSupplyActivityFulfillmentInstruction(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateSupplyActivityProductInstance(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return SupplyActivityOperations.validateSupplyActivityProductInstance(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public MedicationStatusObservation getMedicationStatusObservation() {
 		return SupplyActivityOperations.getMedicationStatusObservation(this);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public EList<FulfillmentInstruction> getFulfillmentInstructions() {
 		return SupplyActivityOperations.getFulfillmentInstructions(this);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public EList<ProductInstance> getProductInstances() {
 		return SupplyActivityOperations.getProductInstances(this);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public SupplyActivity init() {
 		return Initializer.Util.init(this);
 	}

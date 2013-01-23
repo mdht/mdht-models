@@ -33,29 +33,29 @@ import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
  */
 public class EpisodeObservationImpl extends ObservationImpl implements EpisodeObservation {
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	protected EpisodeObservationImpl() {
 		super();
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
 		return CCDPackage.Literals.EPISODE_OBSERVATION;
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateEpisodeObservationOneEntryRelationshipSUBJ(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return EpisodeObservationOperations.validateEpisodeObservationOneEntryRelationshipSUBJ(
@@ -63,10 +63,10 @@ public class EpisodeObservationImpl extends ObservationImpl implements EpisodeOb
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateEpisodeObservationExistsEntryRelationshipSAS(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return EpisodeObservationOperations.validateEpisodeObservationExistsEntryRelationshipSAS(
@@ -74,64 +74,64 @@ public class EpisodeObservationImpl extends ObservationImpl implements EpisodeOb
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateEpisodeObservationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return EpisodeObservationOperations.validateEpisodeObservationTemplateId(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateEpisodeObservationClassCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return EpisodeObservationOperations.validateEpisodeObservationClassCode(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateEpisodeObservationMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return EpisodeObservationOperations.validateEpisodeObservationMoodCode(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateEpisodeObservationStatusCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return EpisodeObservationOperations.validateEpisodeObservationStatusCode(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateEpisodeObservationCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return EpisodeObservationOperations.validateEpisodeObservationCode(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateEpisodeObservationValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return EpisodeObservationOperations.validateEpisodeObservationValue(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public EpisodeObservation init() {
 		return Initializer.Util.init(this);
 	}

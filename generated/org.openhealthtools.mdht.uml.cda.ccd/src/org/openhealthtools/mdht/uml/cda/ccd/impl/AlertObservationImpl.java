@@ -36,179 +36,179 @@ import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
  */
 public class AlertObservationImpl extends ObservationImpl implements AlertObservation {
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	protected AlertObservationImpl() {
 		super();
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
 		return CCDPackage.Literals.ALERT_OBSERVATION;
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateAlertObservationInformationSource(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return AlertObservationOperations.validateAlertObservationInformationSource(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateAlertObservationAgentRepresentation(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return AlertObservationOperations.validateAlertObservationAgentRepresentation(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateAlertObservationPlayingEntityRequired(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return AlertObservationOperations.validateAlertObservationPlayingEntityRequired(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateAlertObservationAgentRepresentationVocab(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return AlertObservationOperations.validateAlertObservationAgentRepresentationVocab(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateAlertObservationParticipantRoleClassCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return AlertObservationOperations.validateAlertObservationParticipantRoleClassCode(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateAlertObservationPlayingEntityClassCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return AlertObservationOperations.validateAlertObservationPlayingEntityClassCode(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateAlertObservationPlayingEntityCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return AlertObservationOperations.validateAlertObservationPlayingEntityCode(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateAlertObservationPlayingEntityCodeVocab(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return AlertObservationOperations.validateAlertObservationPlayingEntityCodeVocab(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateAlertObservationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return AlertObservationOperations.validateAlertObservationTemplateId(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateAlertObservationMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return AlertObservationOperations.validateAlertObservationMoodCode(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateAlertObservationStatusCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return AlertObservationOperations.validateAlertObservationStatusCode(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateAlertObservationEffectiveTime(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return AlertObservationOperations.validateAlertObservationEffectiveTime(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateAlertObservationAlertStatusObservation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return AlertObservationOperations.validateAlertObservationAlertStatusObservation(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateAlertObservationReactionObservation(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return AlertObservationOperations.validateAlertObservationReactionObservation(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public AlertStatusObservation getAlertStatusObservation() {
 		return AlertObservationOperations.getAlertStatusObservation(this);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public EList<ReactionObservation> getReactionObservations() {
 		return AlertObservationOperations.getReactionObservations(this);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public AlertObservation init() {
 		return Initializer.Util.init(this);
 	}

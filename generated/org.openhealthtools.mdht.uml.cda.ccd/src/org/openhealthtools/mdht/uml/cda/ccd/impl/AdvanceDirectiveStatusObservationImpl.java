@@ -33,29 +33,29 @@ import org.openhealthtools.mdht.uml.cda.ccd.operations.AdvanceDirectiveStatusObs
 public class AdvanceDirectiveStatusObservationImpl extends StatusObservationImpl implements
 		AdvanceDirectiveStatusObservation {
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	protected AdvanceDirectiveStatusObservationImpl() {
 		super();
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
 		return CCDPackage.Literals.ADVANCE_DIRECTIVE_STATUS_OBSERVATION;
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	@Override
 	public boolean validateStatusObservationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return AdvanceDirectiveStatusObservationOperations.validateStatusObservationTemplateId(
@@ -63,10 +63,10 @@ public class AdvanceDirectiveStatusObservationImpl extends StatusObservationImpl
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	@Override
 	public AdvanceDirectiveStatusObservation init() {
 		return Initializer.Util.init(this);

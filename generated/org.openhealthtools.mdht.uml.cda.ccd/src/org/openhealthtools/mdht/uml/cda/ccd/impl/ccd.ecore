@@ -4361,25 +4361,6 @@
       </contents>
     </eAnnotations>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="CauseOfDeathObservation" eSuperTypes="#//FamilyHistoryObservation">
-    <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
-      <details key="constraints.validation.error" value="CauseOfDeathObservationTemplateId"/>
-      <details key="templateId.root" value="2.16.840.1.113883.10.20.1.42"/>
-    </eAnnotations>
-    <eAnnotations source="duplicates">
-      <contents xsi:type="ecore:EOperation" name="FamilyHistoryObservationTemplateId"
-          eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
-        <eAnnotations source="redefines" references="#//FamilyHistoryObservation/FamilyHistoryObservationTemplateId"/>
-        <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
-        <eParameters name="context">
-          <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
-            <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
-            <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
-          </eGenericType>
-        </eParameters>
-      </contents>
-    </eAnnotations>
-  </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="EncounterLocation" eSuperTypes="urn:hl7-org:v3#//Participant2">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="constraints.validation.error" value="EncounterLocationTemplateId EncounterLocationHasParticipantRole EncounterLocationHasParticipantRoleLocation EncounterLocationHasPlayingEntityPlace EncounterLocationTypeCode"/>
@@ -5278,7 +5259,7 @@
   <eClassifiers xsi:type="ecore:EClass" name="FamilyHistoryCauseOfDeathObservation"
       eSuperTypes="#//FamilyHistoryObservation">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
-      <details key="constraints.validation.error" value="FamilyHistoryCauseOfDeathObservationTemplateId FamilyHistoryCauseOfDeathObservationCauseOfDeathObservation"/>
+      <details key="constraints.validation.error" value="FamilyHistoryCauseOfDeathObservationTemplateId FamilyHistoryCauseOfDeathObservationEntryRelationship"/>
       <details key="templateId.root" value="2.16.840.1.113883.10.20.1.42"/>
     </eAnnotations>
     <eAnnotations source="duplicates">
@@ -5294,8 +5275,7 @@
         </eParameters>
       </contents>
     </eAnnotations>
-    <eOperations name="FamilyHistoryCauseOfDeathObservationCauseOfDeathObservation"
-        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+    <eOperations name="FamilyHistoryCauseOfDeathObservationEntryRelationship" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
       <eParameters name="context">
         <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
@@ -5304,8 +5284,6 @@
         </eGenericType>
       </eParameters>
     </eOperations>
-    <eOperations name="getCauseOfDeathObservations" ordered="false" lowerBound="1"
-        upperBound="-1" eType="#//CauseOfDeathObservation"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="CCDRegistryDelegate" eSuperTypes="urn:hl7-org:v3#//RegistryDelegate"/>
 </ecore:EPackage>

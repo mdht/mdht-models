@@ -471,7 +471,6 @@
         </ownedParameter>
       </ownedOperation>
     </packagedElement>
-    <packagedElement xmi:type="uml:Class" href=".controlled/ccd-familyHistory.uml#_joG2YIHbEd6Ncrr6L3Ublw"/>
     <packagedElement xmi:type="uml:Class" href=".controlled/ccd-results.uml#_7TVToIiAEd66cKocspyVOg"/>
     <packagedElement xmi:type="uml:Class" href=".controlled/ccd-medications.uml#_VL2w0IiBEd66cKocspyVOg"/>
     <packagedElement xmi:type="uml:Class" href=".controlled/ccd-medications.uml#_lgLT4IiBEd66cKocspyVOg"/>
@@ -1092,19 +1091,7 @@
       <memberEnd href=".controlled/ccd-procedures.uml#_luhhEAoYEeGuLYmxYntHkA"/>
       <memberEnd href="#_luiIIQoYEeGuLYmxYntHkA"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Class" xmi:id="_56Z3kA_WEeG7sMwiyo3Ifw" name="FamilyHistoryCauseOfDeathObservation">
-      <generalization xmi:id="_56aeoA_WEeG7sMwiyo3Ifw">
-        <general xmi:type="uml:Class" href=".controlled/ccd-familyHistory.uml#_7tlrAGwWEd6q29qQGU-SBA"/>
-      </generalization>
-      <ownedAttribute xmi:id="_lD9XsA_XEeG7sMwiyo3Ifw" name="causeOfDeathObservation" association="_lD9-wA_XEeG7sMwiyo3Ifw">
-        <type xmi:type="uml:Class" href=".controlled/ccd-familyHistory.uml#_joG2YIHbEd6Ncrr6L3Ublw"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_oSw2AA_XEeG7sMwiyo3Ifw" value="*"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_oSw2AQ_XEeG7sMwiyo3Ifw" value="1"/>
-      </ownedAttribute>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_lD9-wA_XEeG7sMwiyo3Ifw" memberEnd="_lD9XsA_XEeG7sMwiyo3Ifw _lD9-wQ_XEeG7sMwiyo3Ifw">
-      <ownedEnd xmi:id="_lD9-wQ_XEeG7sMwiyo3Ifw" type="_56Z3kA_WEeG7sMwiyo3Ifw" association="_lD9-wA_XEeG7sMwiyo3Ifw"/>
-    </packagedElement>
+    <packagedElement xmi:type="uml:Class" href=".controlled/ccd-familyHistory.uml#_56Z3kA_WEeG7sMwiyo3Ifw"/>
     <packagedElement xmi:type="uml:Association" href=".controlled/ccd-immunizations.uml#_1GBQclaAEeGCdLgBm6VHOQ"/>
     <packagedElement xmi:type="uml:Association" href=".controlled/ccd-immunizations.uml#_20vcElaAEeGCdLgBm6VHOQ"/>
     <profileApplication xmi:id="_qQyD9zxVEd6JwqSGecoePg">
@@ -1664,6 +1651,4 @@
   <CDA:EntryRelationship xmi:id="_U4szcAoYEeGuLYmxYntHkA" severity="INFO" base_Association="_SU1MsQoREeGuLYmxYntHkA" typeCode="COMP"/>
   <CDA:AssociationValidation xmi:id="_m2-98AoYEeGuLYmxYntHkA" severity="INFO" base_Association="_luiIIAoYEeGuLYmxYntHkA"/>
   <CDA:AssociationValidation xmi:id="_fmmdkAo5EeGuLYmxYntHkA" severity="INFO"/>
-  <CDA:CDATemplate xmi:id="_DRSHYA_XEeG7sMwiyo3Ifw" base_Class="_56Z3kA_WEeG7sMwiyo3Ifw" templateId="2.16.840.1.113883.10.20.1.42"/>
-  <CDA:EntryRelationship xmi:id="_myn48A_XEeG7sMwiyo3Ifw" base_Association="_lD9-wA_XEeG7sMwiyo3Ifw"/>
 </xmi:XMI>

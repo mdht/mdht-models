@@ -33,83 +33,83 @@ import org.openhealthtools.mdht.uml.cda.impl.EncounterImpl;
  */
 public abstract class EncounterEntryImpl extends EncounterImpl implements EncounterEntry {
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	protected EncounterEntryImpl() {
 		super();
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
 		return IHEPackage.Literals.ENCOUNTER_ENTRY;
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateEncounterEntryTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return EncounterEntryOperations.validateEncounterEntryTemplateId(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateEncounterEntryClassCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return EncounterEntryOperations.validateEncounterEntryClassCode(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateEncounterEntryCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return EncounterEntryOperations.validateEncounterEntryCodeP(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateEncounterEntryCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return EncounterEntryOperations.validateEncounterEntryCode(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateEncounterEntryId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return EncounterEntryOperations.validateEncounterEntryId(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateEncounterEntryText(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return EncounterEntryOperations.validateEncounterEntryText(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public EncounterEntry init() {
 		return Initializer.Util.init(this);
 	}
