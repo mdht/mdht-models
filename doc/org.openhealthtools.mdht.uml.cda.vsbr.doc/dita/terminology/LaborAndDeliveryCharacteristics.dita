@@ -16,24 +16,23 @@
 <row><entry>Description</entry><entry>A list of relevant characteristics that can affect the labor and delivery process.  Note, the codes used are imaginary and will be replaced with code values from a widely used code system.
 </entry></row>
 </tbody></tgroup></table>
-<table><tgroup cols="4">
+<table><tgroup cols="3">
 <colspec colname="col1" colwidth="1*"/>
-<colspec colname="col2" colwidth="2*"/>
-<colspec colname="col3" colwidth="1*"/>
-<colspec colname="col4" colwidth="3*"/>
+<colspec colname="col2" colwidth="1*"/>
+<colspec colname="col3" colwidth="2*"/>
 <thead><row>
-<entry>Concept Code</entry><entry>Concept Name</entry><entry>Code System</entry><entry>Description</entry>
+<entry>Code</entry><entry>Code System</entry><entry>Print Name</entry>
 </row></thead><tbody>
-<row><entry>IL</entry><entry>Induction of Labor</entry><entry></entry><entry></entry></row>
-<row><entry>AL</entry><entry>Augmentation of Labor</entry><entry></entry><entry></entry></row>
-<row><entry>NVP</entry><entry>Non-vertex Presentation</entry><entry></entry><entry></entry></row>
-<row><entry>STU</entry><entry>Use of Steroids</entry><entry></entry><entry></entry></row>
-<row><entry>ANU</entry><entry>Use of Antibiotics</entry><entry></entry><entry></entry></row>
-<row><entry>CH</entry><entry>Chorioamnionitis</entry><entry></entry><entry></entry></row>
-<row><entry>MC</entry><entry>Meconium staining</entry><entry></entry><entry></entry></row>
-<row><entry>FI</entry><entry>Fetal intolerance</entry><entry></entry><entry></entry></row>
-<row><entry>ANES</entry><entry>Anesthesia</entry><entry></entry><entry></entry></row>
-<row><entry>NONE</entry><entry>None of the cited characteristics</entry><entry></entry><entry></entry></row>
+<row><entry>IL</entry><entry></entry><entry>Induction of Labor</entry></row>
+<row><entry>AL</entry><entry></entry><entry>Augmentation of Labor</entry></row>
+<row><entry>NVP</entry><entry></entry><entry>Non-vertex Presentation</entry></row>
+<row><entry>STU</entry><entry></entry><entry>Steroids for Fetal Lung Maturation Received by the Mother Prior to Delivery</entry></row>
+<row><entry>ANU</entry><entry></entry><entry>Antibiotics Received by the Mother During Labor</entry></row>
+<row><entry>CH</entry><entry></entry><entry>Clnical Chorioamnionitis Diagnosed During Labor or Maternal Temperature GE 38 C (100.4 F)</entry></row>
+<row><entry>MC</entry><entry></entry><entry>Moderate/Heavy Meconium Staining of the Amniotic Fluid</entry></row>
+<row><entry>FI</entry><entry></entry><entry>Fetal intolerance of Labor</entry></row>
+<row><entry>ANES</entry><entry></entry><entry>Epidural or Spinal Anesthesia During Labor</entry></row>
+<row><entry>NONE</entry><entry></entry><entry>None of the cited characteristics</entry></row>
 </tbody></tgroup></table>
 </section>
 </body>

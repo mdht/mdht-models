@@ -31,13 +31,16 @@
 	<topic id="vocabulary">
 		<title>Vocabulary and Value Sets</title>
 		<body>
-			<p>Vocabularies recommended in this guide are from standard
-				vocabularies. When SNOMED codes are used, rules defined in Using
-				SNOMED CT in HL7 Version 3 are adhered to. In many cases, these
-				vocabularies are further constrained into value sets for use within
-				this guide. Value set names and OIDs are summarized in the table
-				Summary of Value Sets. Each named value set in this summary table is
-				stored in a template database that will be maintained by CHCA.</p>
+			<p>The Implementation Guide provides definition for the vocabulary items that are 
+			needed as content for those elements using coded data types.  The use of coded types, and 
+			the precise expression of the valid content of code sets is essential to enable efficient 
+			processing of subject data report content, and to allow the proper use of the contained data. Within this
+			guide, the vocabulary section documents the various act code values used to define structural elements - to
+			identify particular acts or observations.  It also defines the several value sets needed to constrain the 
+			semantic content of coded items.  In principle, all the vocabulary needed to support subject data reporting
+			would draw on a common set of concepts.  This has been done wherever possible, and the Public Health Information
+			Network (PHIN) Vocabulary Access and Distribution System (VADS) is used as the repository and source for
+			 the commonly agreed upon vocabulary items.</p>
 		</body>
 	</topic>
 </topic>

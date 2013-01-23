@@ -36,22 +36,211 @@ public interface VsbrFactory extends EFactory
   ReportingBirthInformationfromaclinicalsettingtovitalrecords createReportingBirthInformationfromaclinicalsettingtovitalrecords();
 
   /**
-   * Returns a new object of class '<em>Birth Reporting Prenatal Experience Section</em>'.
+   * Returns a new object of class '<em>Antenatal Testingand Surveillance Section</em>'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @return a new object of class '<em>Birth Reporting Prenatal Experience Section</em>'.
+   * @return a new object of class '<em>Antenatal Testingand Surveillance Section</em>'.
    * @generated
    */
-  BirthReportingPrenatalExperienceSection createBirthReportingPrenatalExperienceSection();
+  AntenatalTestingandSurveillanceSection createAntenatalTestingandSurveillanceSection();
 
   /**
-   * Returns a new object of class '<em>Pre Natal Care</em>'.
+   * Returns a new object of class '<em>Prenatal Care</em>'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @return a new object of class '<em>Pre Natal Care</em>'.
+   * @return a new object of class '<em>Prenatal Care</em>'.
    * @generated
    */
-  PreNatalCare createPreNatalCare();
+  PrenatalCare createPrenatalCare();
+
+  /**
+   * Returns a new object of class '<em>Prior Pregnancy History Section</em>'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return a new object of class '<em>Prior Pregnancy History Section</em>'.
+   * @generated
+   */
+  PriorPregnancyHistorySection createPriorPregnancyHistorySection();
+
+  /**
+   * Returns a new object of class '<em>Dateof Last Live Birth</em>'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return a new object of class '<em>Dateof Last Live Birth</em>'.
+   * @generated
+   */
+  DateofLastLiveBirth createDateofLastLiveBirth();
+
+  /**
+   * Returns a new object of class '<em>Last Menstrual Period Date</em>'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return a new object of class '<em>Last Menstrual Period Date</em>'.
+   * @generated
+   */
+  LastMenstrualPeriodDate createLastMenstrualPeriodDate();
+
+  /**
+   * Returns a new object of class '<em>Numberof Births Now Living</em>'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return a new object of class '<em>Numberof Births Now Living</em>'.
+   * @generated
+   */
+  NumberofBirthsNowLiving createNumberofBirthsNowLiving();
+
+  /**
+   * Returns a new object of class '<em>Numberof Live Birthsnow Dead</em>'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return a new object of class '<em>Numberof Live Birthsnow Dead</em>'.
+   * @generated
+   */
+  NumberofLiveBirthsnowDead createNumberofLiveBirthsnowDead();
+
+  /**
+   * Returns a new object of class '<em>Other Pregnancy Outcome</em>'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return a new object of class '<em>Other Pregnancy Outcome</em>'.
+   * @generated
+   */
+  OtherPregnancyOutcome createOtherPregnancyOutcome();
+
+  /**
+   * Returns a new object of class '<em>Numberof Infants Born Alive</em>'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return a new object of class '<em>Numberof Infants Born Alive</em>'.
+   * @generated
+   */
+  NumberofInfantsBornAlive createNumberofInfantsBornAlive();
+
+  /**
+   * Returns a new object of class '<em>Estimateof Gestation</em>'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return a new object of class '<em>Estimateof Gestation</em>'.
+   * @generated
+   */
+  EstimateofGestation createEstimateofGestation();
+
+  /**
+   * Returns a new object of class '<em>Historyof Infection Section</em>'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return a new object of class '<em>Historyof Infection Section</em>'.
+   * @generated
+   */
+  HistoryofInfectionSection createHistoryofInfectionSection();
+
+  /**
+   * Returns a new object of class '<em>Infection Present</em>'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return a new object of class '<em>Infection Present</em>'.
+   * @generated
+   */
+  InfectionPresent createInfectionPresent();
+
+  /**
+   * Returns a new object of class '<em>Newborn Delivery Section</em>'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return a new object of class '<em>Newborn Delivery Section</em>'.
+   * @generated
+   */
+  NewbornDeliverySection createNewbornDeliverySection();
+
+  /**
+   * Returns a new object of class '<em>Birth Order</em>'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return a new object of class '<em>Birth Order</em>'.
+   * @generated
+   */
+  BirthOrder createBirthOrder();
+
+  /**
+   * Returns a new object of class '<em>Congenital Anomaly</em>'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return a new object of class '<em>Congenital Anomaly</em>'.
+   * @generated
+   */
+  CongenitalAnomaly createCongenitalAnomaly();
+
+  /**
+   * Returns a new object of class '<em>Newborns Vital Signs Section</em>'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return a new object of class '<em>Newborns Vital Signs Section</em>'.
+   * @generated
+   */
+  NewbornsVitalSignsSection createNewbornsVitalSignsSection();
+
+  /**
+   * Returns a new object of class '<em>Apgar Score</em>'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return a new object of class '<em>Apgar Score</em>'.
+   * @generated
+   */
+  ApgarScore createApgarScore();
+
+  /**
+   * Returns a new object of class '<em>Weight</em>'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return a new object of class '<em>Weight</em>'.
+   * @generated
+   */
+  Weight createWeight();
+
+  /**
+   * Returns a new object of class '<em>Abnormal Conditionofthe Newborn</em>'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return a new object of class '<em>Abnormal Conditionofthe Newborn</em>'.
+   * @generated
+   */
+  AbnormalConditionoftheNewborn createAbnormalConditionoftheNewborn();
+
+  /**
+   * Returns a new object of class '<em>Infant Living</em>'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return a new object of class '<em>Infant Living</em>'.
+   * @generated
+   */
+  InfantLiving createInfantLiving();
+
+  /**
+   * Returns a new object of class '<em>Infant Breastfed</em>'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return a new object of class '<em>Infant Breastfed</em>'.
+   * @generated
+   */
+  InfantBreastfed createInfantBreastfed();
+
+  /**
+   * Returns a new object of class '<em>infant Transfer</em>'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return a new object of class '<em>infant Transfer</em>'.
+   * @generated
+   */
+  infantTransfer createinfantTransfer();
+
+  /**
+   * Returns a new object of class '<em>Plurality</em>'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return a new object of class '<em>Plurality</em>'.
+   * @generated
+   */
+  Plurality createPlurality();
 
   /**
    * Returns a new object of class '<em>Laborand Delivery Section</em>'.
@@ -72,49 +261,58 @@ public interface VsbrFactory extends EFactory
   LaborandDeliveryInformation createLaborandDeliveryInformation();
 
   /**
-   * Returns a new object of class '<em>Newborn Section</em>'.
+   * Returns a new object of class '<em>Characteristicof Laborand Delivery</em>'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @return a new object of class '<em>Newborn Section</em>'.
+   * @return a new object of class '<em>Characteristicof Laborand Delivery</em>'.
    * @generated
    */
-  NewbornSection createNewbornSection();
+  CharacteristicofLaborandDelivery createCharacteristicofLaborandDelivery();
 
   /**
-   * Returns a new object of class '<em>Fetal Death Reporting Prenatal Experience Section</em>'.
+   * Returns a new object of class '<em>home Birth Plan</em>'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @return a new object of class '<em>Fetal Death Reporting Prenatal Experience Section</em>'.
+   * @return a new object of class '<em>home Birth Plan</em>'.
    * @generated
    */
-  FetalDeathReportingPrenatalExperienceSection createFetalDeathReportingPrenatalExperienceSection();
+  homeBirthPlan createhomeBirthPlan();
 
   /**
-   * Returns a new object of class '<em>Fetus Section</em>'.
+   * Returns a new object of class '<em>Maternal Transfer</em>'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @return a new object of class '<em>Fetus Section</em>'.
+   * @return a new object of class '<em>Maternal Transfer</em>'.
    * @generated
    */
-  FetusSection createFetusSection();
+  MaternalTransfer createMaternalTransfer();
 
   /**
-   * Returns a new object of class '<em>Reporting Fetal Death Informationfromaclinicalsettingtovitalrecords</em>'.
+   * Returns a new object of class '<em>Maternal Morbidity</em>'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @return a new object of class '<em>Reporting Fetal Death Informationfromaclinicalsettingtovitalrecords</em>'.
+   * @return a new object of class '<em>Maternal Morbidity</em>'.
    * @generated
    */
-  ReportingFetalDeathInformationfromaclinicalsettingtovitalrecords createReportingFetalDeathInformationfromaclinicalsettingtovitalrecords();
+  MaternalMorbidity createMaternalMorbidity();
 
   /**
-   * Returns a new object of class '<em>Height</em>'.
+   * Returns a new object of class '<em>Pregnancy Risk Factor</em>'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @return a new object of class '<em>Height</em>'.
+   * @return a new object of class '<em>Pregnancy Risk Factor</em>'.
    * @generated
    */
-  Height createHeight();
+  PregnancyRiskFactor createPregnancyRiskFactor();
+
+  /**
+   * Returns a new object of class '<em>Mothers Vital Signs Section</em>'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return a new object of class '<em>Mothers Vital Signs Section</em>'.
+   * @generated
+   */
+  MothersVitalSignsSection createMothersVitalSignsSection();
 
   /**
    * Returns a new object of class '<em>Body Weightat Delivery</em>'.
@@ -126,6 +324,15 @@ public interface VsbrFactory extends EFactory
   BodyWeightatDelivery createBodyWeightatDelivery();
 
   /**
+   * Returns a new object of class '<em>Height</em>'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return a new object of class '<em>Height</em>'.
+   * @generated
+   */
+  Height createHeight();
+
+  /**
    * Returns a new object of class '<em>Prepregnancy Body Weight</em>'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
@@ -135,220 +342,85 @@ public interface VsbrFactory extends EFactory
   PrepregnancyBodyWeight createPrepregnancyBodyWeight();
 
   /**
-   * Returns a new object of class '<em>Numberof Births Still Living</em>'.
+   * Returns a new object of class '<em>Laborand Delivery Procedure Section</em>'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @return a new object of class '<em>Numberof Births Still Living</em>'.
+   * @return a new object of class '<em>Laborand Delivery Procedure Section</em>'.
    * @generated
    */
-  NumberofBirthsStillLiving createNumberofBirthsStillLiving();
+  LaborandDeliveryProcedureSection createLaborandDeliveryProcedureSection();
 
   /**
-   * Returns a new object of class '<em>Dateof Last Live Birth</em>'.
+   * Returns a new object of class '<em>Obstetric Procedure</em>'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @return a new object of class '<em>Dateof Last Live Birth</em>'.
+   * @return a new object of class '<em>Obstetric Procedure</em>'.
    * @generated
    */
-  DateofLastLiveBirth createDateofLastLiveBirth();
+  ObstetricProcedure createObstetricProcedure();
 
   /**
-   * Returns a new object of class '<em>Numberof Live Birthsnow Dead</em>'.
+   * Returns a new object of class '<em>Methodof Delivery</em>'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @return a new object of class '<em>Numberof Live Birthsnow Dead</em>'.
+   * @return a new object of class '<em>Methodof Delivery</em>'.
    * @generated
    */
-  NumberofLiveBirthsnowDead createNumberofLiveBirthsnowDead();
+  MethodofDelivery createMethodofDelivery();
 
   /**
-   * Returns a new object of class '<em>Other Pregnancy Outcomes</em>'.
+   * Returns a new object of class '<em>Onsetof Labor</em>'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @return a new object of class '<em>Other Pregnancy Outcomes</em>'.
+   * @return a new object of class '<em>Onsetof Labor</em>'.
    * @generated
    */
-  OtherPregnancyOutcomes createOtherPregnancyOutcomes();
+  OnsetofLabor createOnsetofLabor();
 
   /**
-   * Returns a new object of class '<em>Last Menstrual Period Date</em>'.
+   * Returns a new object of class '<em>Fetal Delivery Section</em>'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @return a new object of class '<em>Last Menstrual Period Date</em>'.
+   * @return a new object of class '<em>Fetal Delivery Section</em>'.
    * @generated
    */
-  LastMenstrualPeriodDate createLastMenstrualPeriodDate();
+  FetalDeliverySection createFetalDeliverySection();
 
   /**
-   * Returns a new object of class '<em>Birth Reporting Infections Present</em>'.
+   * Returns a new object of class '<em>Autopsy Performance</em>'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @return a new object of class '<em>Birth Reporting Infections Present</em>'.
+   * @return a new object of class '<em>Autopsy Performance</em>'.
    * @generated
    */
-  BirthReportingInfectionsPresent createBirthReportingInfectionsPresent();
+  AutopsyPerformance createAutopsyPerformance();
 
   /**
-   * Returns a new object of class '<em>Labor Onsets</em>'.
+   * Returns a new object of class '<em>Fetal Death Occurrance</em>'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @return a new object of class '<em>Labor Onsets</em>'.
+   * @return a new object of class '<em>Fetal Death Occurrance</em>'.
    * @generated
    */
-  LaborOnsets createLaborOnsets();
+  FetalDeathOccurrance createFetalDeathOccurrance();
 
   /**
-   * Returns a new object of class '<em>Fetal Death Reporting Infections Present</em>'.
+   * Returns a new object of class '<em>Fetal Delivery Time</em>'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @return a new object of class '<em>Fetal Death Reporting Infections Present</em>'.
+   * @return a new object of class '<em>Fetal Delivery Time</em>'.
    * @generated
    */
-  FetalDeathReportingInfectionsPresent createFetalDeathReportingInfectionsPresent();
+  FetalDeliveryTime createFetalDeliveryTime();
 
   /**
-   * Returns a new object of class '<em>Obstetric Procedures</em>'.
+   * Returns a new object of class '<em>Reporting Fetal Death Informationfromaclinicalsettingtovitalrecords</em>'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @return a new object of class '<em>Obstetric Procedures</em>'.
+   * @return a new object of class '<em>Reporting Fetal Death Informationfromaclinicalsettingtovitalrecords</em>'.
    * @generated
    */
-  ObstetricProcedures createObstetricProcedures();
-
-  /**
-   * Returns a new object of class '<em>Risk Factors</em>'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @return a new object of class '<em>Risk Factors</em>'.
-   * @generated
-   */
-  RiskFactors createRiskFactors();
-
-  /**
-   * Returns a new object of class '<em>Characteristicsof Laborand Delivery</em>'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @return a new object of class '<em>Characteristicsof Laborand Delivery</em>'.
-   * @generated
-   */
-  CharacteristicsofLaborandDelivery createCharacteristicsofLaborandDelivery();
-
-  /**
-   * Returns a new object of class '<em>Maternal Morbidities</em>'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @return a new object of class '<em>Maternal Morbidities</em>'.
-   * @generated
-   */
-  MaternalMorbidities createMaternalMorbidities();
-
-  /**
-   * Returns a new object of class '<em>Abnormal Conditionsofthe Newborn</em>'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @return a new object of class '<em>Abnormal Conditionsofthe Newborn</em>'.
-   * @generated
-   */
-  AbnormalConditionsoftheNewborn createAbnormalConditionsoftheNewborn();
-
-  /**
-   * Returns a new object of class '<em>Congenital Anomaliesofthe Newborn</em>'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @return a new object of class '<em>Congenital Anomaliesofthe Newborn</em>'.
-   * @generated
-   */
-  CongenitalAnomaliesoftheNewborn createCongenitalAnomaliesoftheNewborn();
-
-  /**
-   * Returns a new object of class '<em>Attempted Forceps Delivery</em>'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @return a new object of class '<em>Attempted Forceps Delivery</em>'.
-   * @generated
-   */
-  AttemptedForcepsDelivery createAttemptedForcepsDelivery();
-
-  /**
-   * Returns a new object of class '<em>Attempted Vacuum Extraction</em>'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @return a new object of class '<em>Attempted Vacuum Extraction</em>'.
-   * @generated
-   */
-  AttemptedVacuumExtraction createAttemptedVacuumExtraction();
-
-  /**
-   * Returns a new object of class '<em>Fetal Presentation</em>'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @return a new object of class '<em>Fetal Presentation</em>'.
-   * @generated
-   */
-  FetalPresentation createFetalPresentation();
-
-  /**
-   * Returns a new object of class '<em>Routeand Methodof Delivery</em>'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @return a new object of class '<em>Routeand Methodof Delivery</em>'.
-   * @generated
-   */
-  RouteandMethodofDelivery createRouteandMethodofDelivery();
-
-  /**
-   * Returns a new object of class '<em>Weight</em>'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @return a new object of class '<em>Weight</em>'.
-   * @generated
-   */
-  Weight createWeight();
-
-  /**
-   * Returns a new object of class '<em>Estimateof Gestation</em>'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @return a new object of class '<em>Estimateof Gestation</em>'.
-   * @generated
-   */
-  EstimateofGestation createEstimateofGestation();
-
-  /**
-   * Returns a new object of class '<em>Apgar Score</em>'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @return a new object of class '<em>Apgar Score</em>'.
-   * @generated
-   */
-  ApgarScore createApgarScore();
-
-  /**
-   * Returns a new object of class '<em>Plurality</em>'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @return a new object of class '<em>Plurality</em>'.
-   * @generated
-   */
-  Plurality createPlurality();
-
-  /**
-   * Returns a new object of class '<em>Numberof Infants Born Alive</em>'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @return a new object of class '<em>Numberof Infants Born Alive</em>'.
-   * @generated
-   */
-  NumberofInfantsBornAlive createNumberofInfantsBornAlive();
-
-  /**
-   * Returns a new object of class '<em>Birth Order</em>'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @return a new object of class '<em>Birth Order</em>'.
-   * @generated
-   */
-  BirthOrder createBirthOrder();
+  ReportingFetalDeathInformationfromaclinicalsettingtovitalrecords createReportingFetalDeathInformationfromaclinicalsettingtovitalrecords();
 
   /**
    * Returns the package supported by this factory.

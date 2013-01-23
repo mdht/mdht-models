@@ -16,19 +16,18 @@
 <row><entry>Description</entry><entry>A list of obstetric procedures which may be performed during pregnancy.  Note, the codes used are imaginary and will be replaced with code values from a widely used code system.
 </entry></row>
 </tbody></tgroup></table>
-<table><tgroup cols="4">
+<table><tgroup cols="3">
 <colspec colname="col1" colwidth="1*"/>
-<colspec colname="col2" colwidth="2*"/>
-<colspec colname="col3" colwidth="1*"/>
-<colspec colname="col4" colwidth="3*"/>
+<colspec colname="col2" colwidth="1*"/>
+<colspec colname="col3" colwidth="2*"/>
 <thead><row>
-<entry>Concept Code</entry><entry>Concept Name</entry><entry>Code System</entry><entry>Description</entry>
+<entry>Code</entry><entry>Code System</entry><entry>Print Name</entry>
 </row></thead><tbody>
-<row><entry>CC</entry><entry>Cervical Cerclage</entry><entry></entry><entry></entry></row>
-<row><entry>CT</entry><entry>Cervical Tocolysis</entry><entry></entry><entry></entry></row>
-<row><entry>ECVS</entry><entry>External Cephalic Version - Successful</entry><entry></entry><entry></entry></row>
-<row><entry>ECVF</entry><entry>External Cephalic Version - Failed</entry><entry></entry><entry></entry></row>
-<row><entry>None</entry><entry>None of the cited procedures</entry><entry></entry><entry></entry></row>
+<row><entry>CC</entry><entry></entry><entry>Cervical Cerclage</entry></row>
+<row><entry>CT</entry><entry></entry><entry>Cervical Tocolysis</entry></row>
+<row><entry>ECVS</entry><entry></entry><entry>External Cephalic Version - Successful</entry></row>
+<row><entry>ECVF</entry><entry></entry><entry>External Cephalic Version - Failed</entry></row>
+<row><entry>None</entry><entry></entry><entry>None of the cited procedures</entry></row>
 </tbody></tgroup></table>
 </section>
 </body>

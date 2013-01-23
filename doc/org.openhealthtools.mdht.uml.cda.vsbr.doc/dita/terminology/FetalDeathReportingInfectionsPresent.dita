@@ -16,24 +16,23 @@
 <row><entry>Description</entry><entry>A list of infections which may be present during pregnancy. Note, the codes used are imaginary and will be replaced with code values from a widely used code system.
 </entry></row>
 </tbody></tgroup></table>
-<table><tgroup cols="4">
+<table><tgroup cols="3">
 <colspec colname="col1" colwidth="1*"/>
-<colspec colname="col2" colwidth="2*"/>
-<colspec colname="col3" colwidth="1*"/>
-<colspec colname="col4" colwidth="3*"/>
+<colspec colname="col2" colwidth="1*"/>
+<colspec colname="col3" colwidth="2*"/>
 <thead><row>
-<entry>Concept Code</entry><entry>Concept Name</entry><entry>Code System</entry><entry>Description</entry>
+<entry>Code</entry><entry>Code System</entry><entry>Print Name</entry>
 </row></thead><tbody>
-<row><entry>GON</entry><entry>Gonorrhea</entry><entry></entry><entry></entry></row>
-<row><entry>SYP</entry><entry>Syphilis</entry><entry></entry><entry></entry></row>
-<row><entry>CLM</entry><entry>Chlamydia</entry><entry></entry><entry></entry></row>
-<row><entry>LIS</entry><entry>Listeria</entry><entry></entry><entry></entry></row>
-<row><entry>GBS</entry><entry>Group B Streptococcus</entry><entry></entry><entry></entry></row>
-<row><entry>NONE</entry><entry>None of the Cited Infections</entry><entry></entry><entry></entry></row>
-<row><entry>CMV</entry><entry>Cytomegalovirus</entry><entry></entry><entry></entry></row>
-<row><entry>B19</entry><entry>Parovirus</entry><entry></entry><entry></entry></row>
-<row><entry>TOXO</entry><entry>Toxoplasmosis</entry><entry></entry><entry></entry></row>
-<row><entry>OTH</entry><entry>Other</entry><entry></entry><entry></entry></row>
+<row><entry>GON</entry><entry></entry><entry>Gonorrhea</entry></row>
+<row><entry>SYP</entry><entry></entry><entry>Syphilis</entry></row>
+<row><entry>CLM</entry><entry></entry><entry>Chlamydia</entry></row>
+<row><entry>LIS</entry><entry></entry><entry>Listeria</entry></row>
+<row><entry>GBS</entry><entry></entry><entry>Group B Streptococcus</entry></row>
+<row><entry>NONE</entry><entry></entry><entry>None of the Cited Infections</entry></row>
+<row><entry>CMV</entry><entry></entry><entry>Cytomegalovirus</entry></row>
+<row><entry>B19</entry><entry></entry><entry>Parovirus</entry></row>
+<row><entry>TOXO</entry><entry></entry><entry>Toxoplasmosis</entry></row>
+<row><entry>OTH</entry><entry></entry><entry>Other</entry></row>
 </tbody></tgroup></table>
 </section>
 </body>
