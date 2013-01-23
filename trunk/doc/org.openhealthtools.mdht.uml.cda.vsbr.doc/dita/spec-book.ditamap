@@ -2,16 +2,17 @@
 <!DOCTYPE bookmap PUBLIC "-//OASIS//DTD DITA BookMap//EN" "bookmap.dtd">
 <bookmap id="cdabook">
 	<booktitle>
-		<booklibrary>HL7 Implementation Guide</booklibrary>
-		<mainbooktitle>Reporting Birth and Fetal Death</mainbooktitle>
+		<booklibrary>Implementation Guide for CDA Release 2:</booklibrary>
+		<mainbooktitle>Reporting Birth and Fetal Death Information from the EHR to Vital Records, Release 1</mainbooktitle>
 		<booktitlealt>US Realm</booktitlealt>
+		<booktitlealt>CDAR2_BAFDRPT_R1_2012SEP</booktitlealt>
 		<booktitlealt><image href="images/CDAToolsLogo.png"/></booktitlealt>
-		<booktitlealt>DSTU Ballot</booktitlealt>
+		<booktitlealt>HL7 DSTU Ballot, September 2012</booktitlealt>
 		<booktitlealt audience="developer">(Consolidated Developer Documentation)</booktitlealt>
 	</booktitle>
 	<bookmeta>
 		<bookid><booknumber></booknumber>
-			<maintainer><organization>Open Health Tools, Model Driven Health Tools (MDHT)</organization><person></person></maintainer>
+			<maintainer><organization>Copyright Health Level Seven International  ALL RIGHTS RESERVED</organization><person></person></maintainer>
 		</bookid>
 		<bookrights>
 			<copyrfirst><year>2012</year></copyrfirst>

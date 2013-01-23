@@ -19,7 +19,7 @@ import org.openhealthtools.mdht.uml.cda.Observation;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.vsbr.VsbrPackage#getDateofLastLiveBirth()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='Date of Last Live BirthTemplateId Date of Last Live BirthCode Date of Last Live BirthMoodCode Date of Last Live BirthValue' templateId.root='2.16.840.1.113883.10.20.26.17' classCode='OBS' moodCode='EVN'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='Date of Last Live BirthTemplateId Date of Last Live BirthCode Date of Last Live BirthMoodCode Date of Last Live BirthValue' templateId.root='2.16.840.1.113883.10.20.26.20' classCode='OBS' moodCode='EVN'"
  * @generated
  */
 public interface DateofLastLiveBirth extends Observation
@@ -28,11 +28,11 @@ public interface DateofLastLiveBirth extends Observation
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.26.17')
+   * self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.26.20')
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
-   * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.templateId->exists(id : datatypes::II | id.root = \'2.16.840.1.113883.10.20.26.17\')'"
+   * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.templateId->exists(id : datatypes::II | id.root = \'2.16.840.1.113883.10.20.26.20\')'"
    * @generated
    */
   boolean validateDateofLastLiveBirthTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context);

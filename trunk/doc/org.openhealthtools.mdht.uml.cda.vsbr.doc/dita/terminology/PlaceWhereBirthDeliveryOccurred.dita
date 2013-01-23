@@ -16,19 +16,18 @@
 <row><entry>Description</entry><entry>A list of different types of place or situations in which the birth or delivery occurred.  Note, the codes used are imaginary and will be replaced with code values from a widely used code system.
 </entry></row>
 </tbody></tgroup></table>
-<table><tgroup cols="4">
+<table><tgroup cols="3">
 <colspec colname="col1" colwidth="1*"/>
-<colspec colname="col2" colwidth="2*"/>
-<colspec colname="col3" colwidth="1*"/>
-<colspec colname="col4" colwidth="3*"/>
+<colspec colname="col2" colwidth="1*"/>
+<colspec colname="col3" colwidth="2*"/>
 <thead><row>
-<entry>Concept Code</entry><entry>Concept Name</entry><entry>Code System</entry><entry>Description</entry>
+<entry>Code</entry><entry>Code System</entry><entry>Print Name</entry>
 </row></thead><tbody>
-<row><entry>HOSP</entry><entry>Hospital</entry><entry></entry><entry></entry></row>
-<row><entry>FBC</entry><entry>Freestanding Birth Center</entry><entry></entry><entry></entry></row>
-<row><entry>HB</entry><entry>Home Birth</entry><entry></entry><entry></entry></row>
-<row><entry>DO</entry><entry>Clinic/Doctor's Office</entry><entry></entry><entry></entry></row>
-<row><entry>OTH</entry><entry>Other</entry><entry></entry><entry></entry></row>
+<row><entry>HOSP</entry><entry></entry><entry>Hospital</entry></row>
+<row><entry>FBC</entry><entry></entry><entry>Freestanding Birth Center</entry></row>
+<row><entry>HB</entry><entry></entry><entry>Home Birth</entry></row>
+<row><entry>DO</entry><entry></entry><entry>Clinic/Doctor's Office</entry></row>
+<row><entry>OTH</entry><entry></entry><entry>Other</entry></row>
 </tbody></tgroup></table>
 </section>
 </body>

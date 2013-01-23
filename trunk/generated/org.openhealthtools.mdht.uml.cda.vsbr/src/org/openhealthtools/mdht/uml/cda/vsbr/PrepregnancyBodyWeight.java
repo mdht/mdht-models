@@ -19,7 +19,7 @@ import org.openhealthtools.mdht.uml.cda.Observation;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.vsbr.VsbrPackage#getPrepregnancyBodyWeight()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='Pre-pregnancy Body WeightTemplateId Pre-pregnancy Body WeightClassCode Pre-pregnancy Body WeightCode Pre-pregnancy Body WeightMoodCode Pre-pregnancy Body WeightValue' templateId.root='2.16.840.1.113883.10.20.26.33' classCode='OBS' moodCode='EVN'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='Prepregnancy Body WeightTemplateId Prepregnancy Body WeightClassCode Prepregnancy Body WeightCode Prepregnancy Body WeightMoodCode Prepregnancy Body WeightValue' templateId.root='2.16.840.1.113883.10.20.26.43' classCode='OBS' moodCode='EVN'"
  * @generated
  */
 public interface PrepregnancyBodyWeight extends Observation
@@ -28,11 +28,11 @@ public interface PrepregnancyBodyWeight extends Observation
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.26.33')
+   * self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.26.43')
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
-   * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.templateId->exists(id : datatypes::II | id.root = \'2.16.840.1.113883.10.20.26.33\')'"
+   * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.templateId->exists(id : datatypes::II | id.root = \'2.16.840.1.113883.10.20.26.43\')'"
    * @generated
    */
   boolean validatePrepregnancyBodyWeightTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context);

@@ -16,20 +16,18 @@
 <row><entry>Description</entry><entry>A list of different titles used by birth attendants to denote professional role.  Note, the codes used are based on the current worksheet, and may be replaced with code values from a widely used code system.
 </entry></row>
 </tbody></tgroup></table>
-<table><tgroup cols="4">
+<table><tgroup cols="3">
 <colspec colname="col1" colwidth="1*"/>
-<colspec colname="col2" colwidth="2*"/>
-<colspec colname="col3" colwidth="1*"/>
-<colspec colname="col4" colwidth="3*"/>
+<colspec colname="col2" colwidth="1*"/>
+<colspec colname="col3" colwidth="2*"/>
 <thead><row>
-<entry>Concept Code</entry><entry>Concept Name</entry><entry>Code System</entry><entry>Description</entry>
+<entry>Code</entry><entry>Code System</entry><entry>Print Name</entry>
 </row></thead><tbody>
-<row><entry>MD</entry><entry>Medical Doctor</entry><entry></entry><entry></entry></row>
-<row><entry>DO</entry><entry>Doctor of Osteopathy</entry><entry></entry><entry></entry></row>
-<row><entry>CNM</entry><entry>Certified Nurse Midwife</entry><entry></entry><entry></entry></row>
-<row><entry>HA</entry><entry>Hospital Adminstrator or Designee</entry><entry></entry><entry></entry></row>
-<row><entry>MW</entry><entry>Midwife other than CNM/CM</entry><entry></entry><entry></entry></row>
-<row><entry>OTH</entry><entry>Other</entry><entry></entry><entry></entry></row>
+<row><entry>MD</entry><entry></entry><entry>Medical Doctor</entry></row>
+<row><entry>DO</entry><entry></entry><entry>Doctor of Osteopathy</entry></row>
+<row><entry>CNM/CM</entry><entry></entry><entry>Certified Nurse Midwife/Certified Midwife</entry></row>
+<row><entry>MW</entry><entry></entry><entry>Other Midwife</entry></row>
+<row><entry>OTH</entry><entry></entry><entry>Other</entry></row>
 </tbody></tgroup></table>
 </section>
 </body>

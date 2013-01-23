@@ -16,22 +16,21 @@
 <row><entry>Description</entry><entry>A list of disorders or significant morbidities experienced by the newborn.  Note, the codes used are imaginary and will be replaced with code values from a widely used code system.
 </entry></row>
 </tbody></tgroup></table>
-<table><tgroup cols="4">
+<table><tgroup cols="3">
 <colspec colname="col1" colwidth="1*"/>
-<colspec colname="col2" colwidth="2*"/>
-<colspec colname="col3" colwidth="1*"/>
-<colspec colname="col4" colwidth="3*"/>
+<colspec colname="col2" colwidth="1*"/>
+<colspec colname="col3" colwidth="2*"/>
 <thead><row>
-<entry>Concept Code</entry><entry>Concept Name</entry><entry>Code System</entry><entry>Description</entry>
+<entry>Code</entry><entry>Code System</entry><entry>Print Name</entry>
 </row></thead><tbody>
-<row><entry>AVI</entry><entry>Assisted Ventilation Immediatly Following Delivery</entry><entry></entry><entry></entry></row>
-<row><entry>AV6</entry><entry>Assisted Ventilation for more than 6 Hours</entry><entry></entry><entry></entry></row>
-<row><entry>NICH</entry><entry>Admission to NICU</entry><entry></entry><entry></entry></row>
-<row><entry>NSFT</entry><entry>Newborn Given Surfactant Replacement Therapy</entry><entry></entry><entry></entry></row>
-<row><entry>ANS</entry><entry>Antibiotics Received for Suspected Neonatal Sepsis</entry><entry></entry><entry></entry></row>
-<row><entry>SND</entry><entry>Seizure or Serious Neurologic Dysfunction</entry><entry></entry><entry></entry></row>
-<row><entry>SBI</entry><entry>Significant Birth Injury</entry><entry></entry><entry></entry></row>
-<row><entry>None</entry><entry>None of the Cited Abnormal Conditions</entry><entry></entry><entry></entry></row>
+<row><entry>AVI</entry><entry></entry><entry>Assisted Ventilation Immediatly Following Delivery</entry></row>
+<row><entry>AV6</entry><entry></entry><entry>Assisted Ventilation for more than 6 Hours</entry></row>
+<row><entry>NICH</entry><entry></entry><entry>Admission to NICU</entry></row>
+<row><entry>NSFT</entry><entry></entry><entry>Newborn Given Surfactant Replacement Therapy</entry></row>
+<row><entry>ANS</entry><entry></entry><entry>Antibiotics Received for Suspected Neonatal Sepsis</entry></row>
+<row><entry>SND</entry><entry></entry><entry>Seizure or Serious Neurologic Dysfunction</entry></row>
+<row><entry>SBI</entry><entry></entry><entry>Significant Birth Injury</entry></row>
+<row><entry>NONE</entry><entry></entry><entry>None of the Cited Abnormal Conditions</entry></row>
 </tbody></tgroup></table>
 </section>
 </body>

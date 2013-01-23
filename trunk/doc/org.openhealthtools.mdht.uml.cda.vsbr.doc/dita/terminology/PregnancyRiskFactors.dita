@@ -16,26 +16,25 @@
 <row><entry>Description</entry><entry>A list of risk factors for a pregnancy.  Note, the codes used are imaginary and will be replaced with code values from a widely used code system.
 </entry></row>
 </tbody></tgroup></table>
-<table><tgroup cols="4">
+<table><tgroup cols="3">
 <colspec colname="col1" colwidth="1*"/>
-<colspec colname="col2" colwidth="2*"/>
-<colspec colname="col3" colwidth="1*"/>
-<colspec colname="col4" colwidth="3*"/>
+<colspec colname="col2" colwidth="1*"/>
+<colspec colname="col3" colwidth="2*"/>
 <thead><row>
-<entry>Concept Code</entry><entry>Concept Name</entry><entry>Code System</entry><entry>Description</entry>
+<entry>Code</entry><entry>Code System</entry><entry>Print Name</entry>
 </row></thead><tbody>
-<row><entry>DIA</entry><entry>Diabetes</entry><entry></entry><entry></entry></row>
-<row><entry>GD</entry><entry>Gestational Diabetes</entry><entry></entry><entry></entry></row>
-<row><entry>PPHP</entry><entry>PrePregnancy Hypertension</entry><entry></entry><entry></entry></row>
-<row><entry>GSPP</entry><entry>Gestational Hypertension</entry><entry></entry><entry></entry></row>
-<row><entry>EC</entry><entry>Eclampsia</entry><entry></entry><entry></entry></row>
-<row><entry>PPB</entry><entry>Previous PreTerm Birth</entry><entry></entry><entry></entry></row>
-<row><entry>OPPO</entry><entry>Other Poor Pregnancy Outcome</entry><entry></entry><entry></entry></row>
-<row><entry>IFT</entry><entry>Pregnancy Resulted from Infertility Treatment</entry><entry></entry><entry></entry></row>
-<row><entry>IFT-FED</entry><entry>Fertility Enhancing Drugs</entry><entry></entry><entry></entry></row>
-<row><entry>IFT-ART</entry><entry>Assisted Reproductive Technology</entry><entry></entry><entry></entry></row>
-<row><entry>PC</entry><entry>Previous Cesarian</entry><entry></entry><entry></entry></row>
-<row><entry>NONE</entry><entry>None of the Cited Factors</entry><entry></entry><entry></entry></row>
+<row><entry>PPDIA</entry><entry></entry><entry>Diabetes (PrePregnancy)</entry></row>
+<row><entry>GSDIA</entry><entry></entry><entry>Diabetes (Gestational)</entry></row>
+<row><entry>PPHP</entry><entry></entry><entry>Hypertension (PrePreganancy)</entry></row>
+<row><entry>GSHP</entry><entry></entry><entry>Hypertension (Gestational)</entry></row>
+<row><entry>EC</entry><entry></entry><entry>Hypertension (Eclampsia)</entry></row>
+<row><entry>PPB</entry><entry></entry><entry>Previous PreTerm Birth</entry></row>
+<row><entry>OPPO</entry><entry></entry><entry>Other Previous Poor Pregnancy Outcome</entry></row>
+<row><entry>IFT</entry><entry></entry><entry>Pregnancy Resulted from Infertility Treatment</entry></row>
+<row><entry>IFT-FED</entry><entry></entry><entry>Fertility Enhancing Drugs</entry></row>
+<row><entry>IFT-ART</entry><entry></entry><entry>Assisted Reproductive Technology</entry></row>
+<row><entry>PC</entry><entry></entry><entry>Previous cesarean Delivery</entry></row>
+<row><entry>NONE</entry><entry></entry><entry>None of the Cited Factors</entry></row>
 </tbody></tgroup></table>
 </section>
 </body>

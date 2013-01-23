@@ -9,8 +9,8 @@ package org.openhealthtools.mdht.uml.cda.vsbr;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
+import org.eclipse.emf.common.util.EList;
 
-import org.openhealthtools.mdht.uml.cda.Observation;
 import org.openhealthtools.mdht.uml.cda.Section;
 
 /**
@@ -20,7 +20,7 @@ import org.openhealthtools.mdht.uml.cda.Section;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.vsbr.VsbrPackage#getLaborandDeliverySection()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='Labor and Delivery SectionTemplateId Labor and Delivery SectionClassCode Labor and Delivery SectionCode Labor and Delivery SectionMoodCode Labor and Delivery SectionText Labor and Delivery SectionLabor and Delivery Information' templateId.root='2.16.840.1.113883.10.20.26.5' classCode='DOCSECT' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' moodCode='EVN' constraints.validation.warning='Labor and Delivery SectionBody Weight at Delivery'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='Labor and Delivery SectionTemplateId Labor and Delivery SectionClassCode Labor and Delivery SectionCode Labor and Delivery SectionMoodCode Labor and Delivery SectionText Labor and Delivery SectionLabor and Delivery Information Labor and Delivery SectionMother'"
  * @generated
  */
 public interface LaborandDeliverySection extends Section
@@ -29,11 +29,11 @@ public interface LaborandDeliverySection extends Section
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.26.5')
+   * self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.26.8')
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
-   * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.templateId->exists(id : datatypes::II | id.root = \'2.16.840.1.113883.10.20.26.5\')'"
+   * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.templateId->exists(id : datatypes::II | id.root = \'2.16.840.1.113883.10.20.26.8\')'"
    * @generated
    */
   boolean validateLaborandDeliverySectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -42,11 +42,11 @@ public interface LaborandDeliverySection extends Section
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.classCode=vocab::ActClass::DOCSECT
+   * isDefined('classCode') and self.classCode=vocab::ActClass::DOCSECT
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
-   * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.classCode=vocab::ActClass::DOCSECT'"
+   * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='isDefined(\'classCode\') and self.classCode=vocab::ActClass::DOCSECT'"
    * @generated
    */
   boolean validateLaborandDeliverySectionClassCode(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -70,11 +70,11 @@ public interface LaborandDeliverySection extends Section
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.moodCode=vocab::ActMood::EVN
+   * isDefined('moodCode') and self.moodCode=vocab::ActMood::EVN
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
-   * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.moodCode=vocab::ActMood::EVN'"
+   * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='isDefined(\'moodCode\') and self.moodCode=vocab::ActMood::EVN'"
    * @generated
    */
   boolean validateLaborandDeliverySectionMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -109,14 +109,40 @@ public interface LaborandDeliverySection extends Section
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.entry->one(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(vsbr::Body Weight at Delivery))
+   * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(vsbr::Mother's Vital Signs Section))
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
-   * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entry->one(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(vsbr::Body Weight at Delivery))'"
+   * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(vsbr::Mother\'s Vital Signs Section))'"
    * @generated
    */
-  boolean validateLaborandDeliverySectionBodyWeightatDelivery(DiagnosticChain diagnostics, Map<Object, Object> context);
+  boolean validateLaborandDeliverySectionMothersVitalSignsSection(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(vsbr::Labor and Delivery Procedure Section))
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(vsbr::Labor and Delivery Procedure Section))'"
+   * @generated
+   */
+  boolean validateLaborandDeliverySectionLaborandDeliveryProceduresSection(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * self.entry->exists(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(vsbr::Onset of Labor) and entry.typeCode = vocab::x_ActRelationshipEntry::COMP)
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entry->exists(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(vsbr::Onset of Labor) and entry.typeCode = vocab::x_ActRelationshipEntry::COMP)'"
+   * @generated
+   */
+  boolean validateLaborandDeliverySectionLaborOnsets(DiagnosticChain diagnostics, Map<Object, Object> context);
 
   /**
    * <!-- begin-user-doc -->
@@ -134,13 +160,37 @@ public interface LaborandDeliverySection extends Section
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(vsbr::Body Weight at Delivery))->asSequence()->any(true).oclAsType(vsbr::Body Weight at Delivery)
+   * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(vsbr::Mother's Vital Signs Section))->asSequence()->any(true).oclAsType(vsbr::Mother's Vital Signs Section)
    * <!-- end-model-doc -->
    * @model kind="operation" required="true" ordered="false"
-   *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(vsbr::Body Weight at Delivery))->asSequence()->any(true).oclAsType(vsbr::Body Weight at Delivery)'"
+   *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(vsbr::Mother\'s Vital Signs Section))->asSequence()->any(true).oclAsType(vsbr::Mother\'s Vital Signs Section)'"
    * @generated
    */
-  BodyWeightatDelivery getBodyWeightatDelivery();
+  MothersVitalSignsSection getMothersVitalSignsSection();
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(vsbr::Labor and Delivery Procedure Section))->asSequence()->any(true).oclAsType(vsbr::Labor and Delivery Procedure Section)
+   * <!-- end-model-doc -->
+   * @model kind="operation" required="true" ordered="false"
+   *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(vsbr::Labor and Delivery Procedure Section))->asSequence()->any(true).oclAsType(vsbr::Labor and Delivery Procedure Section)'"
+   * @generated
+   */
+  LaborandDeliveryProcedureSection getLaborandDeliveryProceduresSection();
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(vsbr::Onset of Labor)).oclAsType(vsbr::Onset of Labor)
+   * <!-- end-model-doc -->
+   * @model kind="operation" required="true" ordered="false"
+   *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(vsbr::Onset of Labor)).oclAsType(vsbr::Onset of Labor)'"
+   * @generated
+   */
+  EList<OnsetofLabor> getLaborOnsetss();
 
   /**
    * <!-- begin-user-doc -->
