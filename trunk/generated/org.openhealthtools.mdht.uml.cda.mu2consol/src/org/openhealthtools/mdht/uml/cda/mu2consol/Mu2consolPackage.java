@@ -594,166 +594,7 @@ public interface Mu2consolPackage extends EPackage {
      * @see org.openhealthtools.mdht.uml.cda.mu2consol.impl.Mu2consolPackageImpl#getEncountersSection()
      * @generated
      */
-	int ENCOUNTERS_SECTION = 2;
-
-	/**
-     * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
-     * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * @generated
-     * @ordered
-     */
-	int ENCOUNTERS_SECTION__REALM_CODE = ConsolPackage.ENCOUNTERS_SECTION__REALM_CODE;
-
-	/**
-     * The feature id for the '<em><b>Type Id</b></em>' containment reference.
-     * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * @generated
-     * @ordered
-     */
-	int ENCOUNTERS_SECTION__TYPE_ID = ConsolPackage.ENCOUNTERS_SECTION__TYPE_ID;
-
-	/**
-     * The feature id for the '<em><b>Template Id</b></em>' containment reference list.
-     * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * @generated
-     * @ordered
-     */
-	int ENCOUNTERS_SECTION__TEMPLATE_ID = ConsolPackage.ENCOUNTERS_SECTION__TEMPLATE_ID;
-
-	/**
-	 * The feature id for the '<em><b>Id</b></em>' containment reference. <!--
-	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
-	 * @generated
-	 * @ordered
-	 */
-	int ENCOUNTERS_SECTION__ID = ConsolPackage.ENCOUNTERS_SECTION__ID;
-
-	/**
-	 * The feature id for the '<em><b>Code</b></em>' containment reference. <!--
-	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
-	 * @generated
-	 * @ordered
-	 */
-	int ENCOUNTERS_SECTION__CODE = ConsolPackage.ENCOUNTERS_SECTION__CODE;
-
-	/**
-     * The feature id for the '<em><b>Title</b></em>' containment reference.
-     * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * @generated
-     * @ordered
-     */
-	int ENCOUNTERS_SECTION__TITLE = ConsolPackage.ENCOUNTERS_SECTION__TITLE;
-
-	/**
-	 * The feature id for the '<em><b>Text</b></em>' containment reference. <!--
-	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
-	 * @generated
-	 * @ordered
-	 */
-	int ENCOUNTERS_SECTION__TEXT = ConsolPackage.ENCOUNTERS_SECTION__TEXT;
-
-	/**
-     * The feature id for the '<em><b>Confidentiality Code</b></em>' containment reference.
-     * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * @generated
-     * @ordered
-     */
-	int ENCOUNTERS_SECTION__CONFIDENTIALITY_CODE = ConsolPackage.ENCOUNTERS_SECTION__CONFIDENTIALITY_CODE;
-
-	/**
-     * The feature id for the '<em><b>Language Code</b></em>' containment reference.
-     * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * @generated
-     * @ordered
-     */
-	int ENCOUNTERS_SECTION__LANGUAGE_CODE = ConsolPackage.ENCOUNTERS_SECTION__LANGUAGE_CODE;
-
-	/**
-     * The feature id for the '<em><b>Subject</b></em>' containment reference.
-     * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * @generated
-     * @ordered
-     */
-	int ENCOUNTERS_SECTION__SUBJECT = ConsolPackage.ENCOUNTERS_SECTION__SUBJECT;
-
-	/**
-     * The feature id for the '<em><b>Author</b></em>' containment reference list.
-     * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * @generated
-     * @ordered
-     */
-	int ENCOUNTERS_SECTION__AUTHOR = ConsolPackage.ENCOUNTERS_SECTION__AUTHOR;
-
-	/**
-     * The feature id for the '<em><b>Informant</b></em>' containment reference list.
-     * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * @generated
-     * @ordered
-     */
-	int ENCOUNTERS_SECTION__INFORMANT = ConsolPackage.ENCOUNTERS_SECTION__INFORMANT;
-
-	/**
-     * The feature id for the '<em><b>Entry</b></em>' containment reference list.
-     * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * @generated
-     * @ordered
-     */
-	int ENCOUNTERS_SECTION__ENTRY = ConsolPackage.ENCOUNTERS_SECTION__ENTRY;
-
-	/**
-     * The feature id for the '<em><b>Component</b></em>' containment reference list.
-     * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * @generated
-     * @ordered
-     */
-	int ENCOUNTERS_SECTION__COMPONENT = ConsolPackage.ENCOUNTERS_SECTION__COMPONENT;
-
-	/**
-	 * The feature id for the '<em><b>Section Id</b></em>' attribute. <!--
-	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
-	 * @generated
-	 * @ordered
-	 */
-	int ENCOUNTERS_SECTION__SECTION_ID = ConsolPackage.ENCOUNTERS_SECTION__SECTION_ID;
-
-	/**
-	 * The feature id for the '<em><b>Null Flavor</b></em>' attribute. <!--
-	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
-	 * @generated
-	 * @ordered
-	 */
-	int ENCOUNTERS_SECTION__NULL_FLAVOR = ConsolPackage.ENCOUNTERS_SECTION__NULL_FLAVOR;
-
-	/**
-	 * The feature id for the '<em><b>Class Code</b></em>' attribute. <!--
-	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
-	 * @generated
-	 * @ordered
-	 */
-	int ENCOUNTERS_SECTION__CLASS_CODE = ConsolPackage.ENCOUNTERS_SECTION__CLASS_CODE;
-
-	/**
-	 * The feature id for the '<em><b>Mood Code</b></em>' attribute. <!--
-	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
-	 * @generated
-	 * @ordered
-	 */
-	int ENCOUNTERS_SECTION__MOOD_CODE = ConsolPackage.ENCOUNTERS_SECTION__MOOD_CODE;
-
-	/**
-     * The number of structural features of the '<em>Encounters Section</em>' class.
-     * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * @generated
-     * @ordered
-     */
-	int ENCOUNTERS_SECTION_FEATURE_COUNT = ConsolPackage.ENCOUNTERS_SECTION_FEATURE_COUNT + 0;
+	int ENCOUNTERS_SECTION = 18;
 
 	/**
      * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.mu2consol.impl.EncounterActivitiesImpl <em>Encounter Activities</em>}' class.
@@ -763,527 +604,7 @@ public interface Mu2consolPackage extends EPackage {
      * @see org.openhealthtools.mdht.uml.cda.mu2consol.impl.Mu2consolPackageImpl#getEncounterActivities()
      * @generated
      */
-	int ENCOUNTER_ACTIVITIES = 3;
-
-	/**
-     * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
-     * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * @generated
-     * @ordered
-     */
-	int ENCOUNTER_ACTIVITIES__REALM_CODE = ConsolPackage.ENCOUNTER_ACTIVITIES__REALM_CODE;
-
-	/**
-     * The feature id for the '<em><b>Type Id</b></em>' containment reference.
-     * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * @generated
-     * @ordered
-     */
-	int ENCOUNTER_ACTIVITIES__TYPE_ID = ConsolPackage.ENCOUNTER_ACTIVITIES__TYPE_ID;
-
-	/**
-     * The feature id for the '<em><b>Template Id</b></em>' containment reference list.
-     * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * @generated
-     * @ordered
-     */
-	int ENCOUNTER_ACTIVITIES__TEMPLATE_ID = ConsolPackage.ENCOUNTER_ACTIVITIES__TEMPLATE_ID;
-
-	/**
-     * The feature id for the '<em><b>Id</b></em>' containment reference list.
-     * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * @generated
-     * @ordered
-     */
-	int ENCOUNTER_ACTIVITIES__ID = ConsolPackage.ENCOUNTER_ACTIVITIES__ID;
-
-	/**
-	 * The feature id for the '<em><b>Code</b></em>' containment reference. <!--
-	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
-	 * @generated
-	 * @ordered
-	 */
-	int ENCOUNTER_ACTIVITIES__CODE = ConsolPackage.ENCOUNTER_ACTIVITIES__CODE;
-
-	/**
-	 * The feature id for the '<em><b>Text</b></em>' containment reference. <!--
-	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
-	 * @generated
-	 * @ordered
-	 */
-	int ENCOUNTER_ACTIVITIES__TEXT = ConsolPackage.ENCOUNTER_ACTIVITIES__TEXT;
-
-	/**
-     * The feature id for the '<em><b>Status Code</b></em>' containment reference.
-     * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * @generated
-     * @ordered
-     */
-	int ENCOUNTER_ACTIVITIES__STATUS_CODE = ConsolPackage.ENCOUNTER_ACTIVITIES__STATUS_CODE;
-
-	/**
-     * The feature id for the '<em><b>Effective Time</b></em>' containment reference.
-     * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * @generated
-     * @ordered
-     */
-	int ENCOUNTER_ACTIVITIES__EFFECTIVE_TIME = ConsolPackage.ENCOUNTER_ACTIVITIES__EFFECTIVE_TIME;
-
-	/**
-     * The feature id for the '<em><b>Priority Code</b></em>' containment reference.
-     * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * @generated
-     * @ordered
-     */
-	int ENCOUNTER_ACTIVITIES__PRIORITY_CODE = ConsolPackage.ENCOUNTER_ACTIVITIES__PRIORITY_CODE;
-
-	/**
-     * The feature id for the '<em><b>Subject</b></em>' containment reference.
-     * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * @generated
-     * @ordered
-     */
-	int ENCOUNTER_ACTIVITIES__SUBJECT = ConsolPackage.ENCOUNTER_ACTIVITIES__SUBJECT;
-
-	/**
-     * The feature id for the '<em><b>Specimen</b></em>' containment reference list.
-     * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * @generated
-     * @ordered
-     */
-	int ENCOUNTER_ACTIVITIES__SPECIMEN = ConsolPackage.ENCOUNTER_ACTIVITIES__SPECIMEN;
-
-	/**
-     * The feature id for the '<em><b>Performer</b></em>' containment reference list.
-     * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * @generated
-     * @ordered
-     */
-	int ENCOUNTER_ACTIVITIES__PERFORMER = ConsolPackage.ENCOUNTER_ACTIVITIES__PERFORMER;
-
-	/**
-     * The feature id for the '<em><b>Author</b></em>' containment reference list.
-     * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * @generated
-     * @ordered
-     */
-	int ENCOUNTER_ACTIVITIES__AUTHOR = ConsolPackage.ENCOUNTER_ACTIVITIES__AUTHOR;
-
-	/**
-     * The feature id for the '<em><b>Informant</b></em>' containment reference list.
-     * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * @generated
-     * @ordered
-     */
-	int ENCOUNTER_ACTIVITIES__INFORMANT = ConsolPackage.ENCOUNTER_ACTIVITIES__INFORMANT;
-
-	/**
-     * The feature id for the '<em><b>Participant</b></em>' containment reference list.
-     * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * @generated
-     * @ordered
-     */
-	int ENCOUNTER_ACTIVITIES__PARTICIPANT = ConsolPackage.ENCOUNTER_ACTIVITIES__PARTICIPANT;
-
-	/**
-     * The feature id for the '<em><b>Entry Relationship</b></em>' containment reference list.
-     * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * @generated
-     * @ordered
-     */
-	int ENCOUNTER_ACTIVITIES__ENTRY_RELATIONSHIP = ConsolPackage.ENCOUNTER_ACTIVITIES__ENTRY_RELATIONSHIP;
-
-	/**
-     * The feature id for the '<em><b>Reference</b></em>' containment reference list.
-     * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * @generated
-     * @ordered
-     */
-	int ENCOUNTER_ACTIVITIES__REFERENCE = ConsolPackage.ENCOUNTER_ACTIVITIES__REFERENCE;
-
-	/**
-     * The feature id for the '<em><b>Precondition</b></em>' containment reference list.
-     * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * @generated
-     * @ordered
-     */
-	int ENCOUNTER_ACTIVITIES__PRECONDITION = ConsolPackage.ENCOUNTER_ACTIVITIES__PRECONDITION;
-
-	/**
-	 * The feature id for the '<em><b>Null Flavor</b></em>' attribute. <!--
-	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
-	 * @generated
-	 * @ordered
-	 */
-	int ENCOUNTER_ACTIVITIES__NULL_FLAVOR = ConsolPackage.ENCOUNTER_ACTIVITIES__NULL_FLAVOR;
-
-	/**
-	 * The feature id for the '<em><b>Class Code</b></em>' attribute. <!--
-	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
-	 * @generated
-	 * @ordered
-	 */
-	int ENCOUNTER_ACTIVITIES__CLASS_CODE = ConsolPackage.ENCOUNTER_ACTIVITIES__CLASS_CODE;
-
-	/**
-	 * The feature id for the '<em><b>Mood Code</b></em>' attribute. <!--
-	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
-	 * @generated
-	 * @ordered
-	 */
-	int ENCOUNTER_ACTIVITIES__MOOD_CODE = ConsolPackage.ENCOUNTER_ACTIVITIES__MOOD_CODE;
-
-	/**
-     * The number of structural features of the '<em>Encounter Activities</em>' class.
-     * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * @generated
-     * @ordered
-     */
-	int ENCOUNTER_ACTIVITIES_FEATURE_COUNT = ConsolPackage.ENCOUNTER_ACTIVITIES_FEATURE_COUNT + 0;
-
-	/**
-     * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.mu2consol.impl.PlanOfCareSectionImpl <em>Plan Of Care Section</em>}' class.
-     * <!-- begin-user-doc --> <!--
-	 * end-user-doc -->
-     * @see org.openhealthtools.mdht.uml.cda.mu2consol.impl.PlanOfCareSectionImpl
-     * @see org.openhealthtools.mdht.uml.cda.mu2consol.impl.Mu2consolPackageImpl#getPlanOfCareSection()
-     * @generated
-     */
-	int PLAN_OF_CARE_SECTION = 4;
-
-	/**
-     * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
-     * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * @generated
-     * @ordered
-     */
-	int PLAN_OF_CARE_SECTION__REALM_CODE = ConsolPackage.PLAN_OF_CARE_SECTION__REALM_CODE;
-
-	/**
-     * The feature id for the '<em><b>Type Id</b></em>' containment reference.
-     * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * @generated
-     * @ordered
-     */
-	int PLAN_OF_CARE_SECTION__TYPE_ID = ConsolPackage.PLAN_OF_CARE_SECTION__TYPE_ID;
-
-	/**
-     * The feature id for the '<em><b>Template Id</b></em>' containment reference list.
-     * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * @generated
-     * @ordered
-     */
-	int PLAN_OF_CARE_SECTION__TEMPLATE_ID = ConsolPackage.PLAN_OF_CARE_SECTION__TEMPLATE_ID;
-
-	/**
-	 * The feature id for the '<em><b>Id</b></em>' containment reference. <!--
-	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
-	 * @generated
-	 * @ordered
-	 */
-	int PLAN_OF_CARE_SECTION__ID = ConsolPackage.PLAN_OF_CARE_SECTION__ID;
-
-	/**
-	 * The feature id for the '<em><b>Code</b></em>' containment reference. <!--
-	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
-	 * @generated
-	 * @ordered
-	 */
-	int PLAN_OF_CARE_SECTION__CODE = ConsolPackage.PLAN_OF_CARE_SECTION__CODE;
-
-	/**
-     * The feature id for the '<em><b>Title</b></em>' containment reference.
-     * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * @generated
-     * @ordered
-     */
-	int PLAN_OF_CARE_SECTION__TITLE = ConsolPackage.PLAN_OF_CARE_SECTION__TITLE;
-
-	/**
-	 * The feature id for the '<em><b>Text</b></em>' containment reference. <!--
-	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
-	 * @generated
-	 * @ordered
-	 */
-	int PLAN_OF_CARE_SECTION__TEXT = ConsolPackage.PLAN_OF_CARE_SECTION__TEXT;
-
-	/**
-     * The feature id for the '<em><b>Confidentiality Code</b></em>' containment reference.
-     * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * @generated
-     * @ordered
-     */
-	int PLAN_OF_CARE_SECTION__CONFIDENTIALITY_CODE = ConsolPackage.PLAN_OF_CARE_SECTION__CONFIDENTIALITY_CODE;
-
-	/**
-     * The feature id for the '<em><b>Language Code</b></em>' containment reference.
-     * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * @generated
-     * @ordered
-     */
-	int PLAN_OF_CARE_SECTION__LANGUAGE_CODE = ConsolPackage.PLAN_OF_CARE_SECTION__LANGUAGE_CODE;
-
-	/**
-     * The feature id for the '<em><b>Subject</b></em>' containment reference.
-     * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * @generated
-     * @ordered
-     */
-	int PLAN_OF_CARE_SECTION__SUBJECT = ConsolPackage.PLAN_OF_CARE_SECTION__SUBJECT;
-
-	/**
-     * The feature id for the '<em><b>Author</b></em>' containment reference list.
-     * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * @generated
-     * @ordered
-     */
-	int PLAN_OF_CARE_SECTION__AUTHOR = ConsolPackage.PLAN_OF_CARE_SECTION__AUTHOR;
-
-	/**
-     * The feature id for the '<em><b>Informant</b></em>' containment reference list.
-     * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * @generated
-     * @ordered
-     */
-	int PLAN_OF_CARE_SECTION__INFORMANT = ConsolPackage.PLAN_OF_CARE_SECTION__INFORMANT;
-
-	/**
-     * The feature id for the '<em><b>Entry</b></em>' containment reference list.
-     * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * @generated
-     * @ordered
-     */
-	int PLAN_OF_CARE_SECTION__ENTRY = ConsolPackage.PLAN_OF_CARE_SECTION__ENTRY;
-
-	/**
-     * The feature id for the '<em><b>Component</b></em>' containment reference list.
-     * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * @generated
-     * @ordered
-     */
-	int PLAN_OF_CARE_SECTION__COMPONENT = ConsolPackage.PLAN_OF_CARE_SECTION__COMPONENT;
-
-	/**
-	 * The feature id for the '<em><b>Section Id</b></em>' attribute. <!--
-	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
-	 * @generated
-	 * @ordered
-	 */
-	int PLAN_OF_CARE_SECTION__SECTION_ID = ConsolPackage.PLAN_OF_CARE_SECTION__SECTION_ID;
-
-	/**
-	 * The feature id for the '<em><b>Null Flavor</b></em>' attribute. <!--
-	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
-	 * @generated
-	 * @ordered
-	 */
-	int PLAN_OF_CARE_SECTION__NULL_FLAVOR = ConsolPackage.PLAN_OF_CARE_SECTION__NULL_FLAVOR;
-
-	/**
-	 * The feature id for the '<em><b>Class Code</b></em>' attribute. <!--
-	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
-	 * @generated
-	 * @ordered
-	 */
-	int PLAN_OF_CARE_SECTION__CLASS_CODE = ConsolPackage.PLAN_OF_CARE_SECTION__CLASS_CODE;
-
-	/**
-	 * The feature id for the '<em><b>Mood Code</b></em>' attribute. <!--
-	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
-	 * @generated
-	 * @ordered
-	 */
-	int PLAN_OF_CARE_SECTION__MOOD_CODE = ConsolPackage.PLAN_OF_CARE_SECTION__MOOD_CODE;
-
-	/**
-     * The number of structural features of the '<em>Plan Of Care Section</em>' class.
-     * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * @generated
-     * @ordered
-     */
-	int PLAN_OF_CARE_SECTION_FEATURE_COUNT = ConsolPackage.PLAN_OF_CARE_SECTION_FEATURE_COUNT + 0;
-
-	/**
-     * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.mu2consol.impl.AssessmentAndPlanSectionImpl <em>Assessment And Plan Section</em>}' class.
-     * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-     * @see org.openhealthtools.mdht.uml.cda.mu2consol.impl.AssessmentAndPlanSectionImpl
-     * @see org.openhealthtools.mdht.uml.cda.mu2consol.impl.Mu2consolPackageImpl#getAssessmentAndPlanSection()
-     * @generated
-     */
-	int ASSESSMENT_AND_PLAN_SECTION = 5;
-
-	/**
-     * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
-     * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * @generated
-     * @ordered
-     */
-	int ASSESSMENT_AND_PLAN_SECTION__REALM_CODE = ConsolPackage.ASSESSMENT_AND_PLAN_SECTION__REALM_CODE;
-
-	/**
-     * The feature id for the '<em><b>Type Id</b></em>' containment reference.
-     * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * @generated
-     * @ordered
-     */
-	int ASSESSMENT_AND_PLAN_SECTION__TYPE_ID = ConsolPackage.ASSESSMENT_AND_PLAN_SECTION__TYPE_ID;
-
-	/**
-     * The feature id for the '<em><b>Template Id</b></em>' containment reference list.
-     * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * @generated
-     * @ordered
-     */
-	int ASSESSMENT_AND_PLAN_SECTION__TEMPLATE_ID = ConsolPackage.ASSESSMENT_AND_PLAN_SECTION__TEMPLATE_ID;
-
-	/**
-	 * The feature id for the '<em><b>Id</b></em>' containment reference. <!--
-	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
-	 * @generated
-	 * @ordered
-	 */
-	int ASSESSMENT_AND_PLAN_SECTION__ID = ConsolPackage.ASSESSMENT_AND_PLAN_SECTION__ID;
-
-	/**
-	 * The feature id for the '<em><b>Code</b></em>' containment reference. <!--
-	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
-	 * @generated
-	 * @ordered
-	 */
-	int ASSESSMENT_AND_PLAN_SECTION__CODE = ConsolPackage.ASSESSMENT_AND_PLAN_SECTION__CODE;
-
-	/**
-     * The feature id for the '<em><b>Title</b></em>' containment reference.
-     * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * @generated
-     * @ordered
-     */
-	int ASSESSMENT_AND_PLAN_SECTION__TITLE = ConsolPackage.ASSESSMENT_AND_PLAN_SECTION__TITLE;
-
-	/**
-	 * The feature id for the '<em><b>Text</b></em>' containment reference. <!--
-	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
-	 * @generated
-	 * @ordered
-	 */
-	int ASSESSMENT_AND_PLAN_SECTION__TEXT = ConsolPackage.ASSESSMENT_AND_PLAN_SECTION__TEXT;
-
-	/**
-     * The feature id for the '<em><b>Confidentiality Code</b></em>' containment reference.
-     * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * @generated
-     * @ordered
-     */
-	int ASSESSMENT_AND_PLAN_SECTION__CONFIDENTIALITY_CODE = ConsolPackage.ASSESSMENT_AND_PLAN_SECTION__CONFIDENTIALITY_CODE;
-
-	/**
-     * The feature id for the '<em><b>Language Code</b></em>' containment reference.
-     * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * @generated
-     * @ordered
-     */
-	int ASSESSMENT_AND_PLAN_SECTION__LANGUAGE_CODE = ConsolPackage.ASSESSMENT_AND_PLAN_SECTION__LANGUAGE_CODE;
-
-	/**
-     * The feature id for the '<em><b>Subject</b></em>' containment reference.
-     * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * @generated
-     * @ordered
-     */
-	int ASSESSMENT_AND_PLAN_SECTION__SUBJECT = ConsolPackage.ASSESSMENT_AND_PLAN_SECTION__SUBJECT;
-
-	/**
-     * The feature id for the '<em><b>Author</b></em>' containment reference list.
-     * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * @generated
-     * @ordered
-     */
-	int ASSESSMENT_AND_PLAN_SECTION__AUTHOR = ConsolPackage.ASSESSMENT_AND_PLAN_SECTION__AUTHOR;
-
-	/**
-     * The feature id for the '<em><b>Informant</b></em>' containment reference list.
-     * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * @generated
-     * @ordered
-     */
-	int ASSESSMENT_AND_PLAN_SECTION__INFORMANT = ConsolPackage.ASSESSMENT_AND_PLAN_SECTION__INFORMANT;
-
-	/**
-     * The feature id for the '<em><b>Entry</b></em>' containment reference list.
-     * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * @generated
-     * @ordered
-     */
-	int ASSESSMENT_AND_PLAN_SECTION__ENTRY = ConsolPackage.ASSESSMENT_AND_PLAN_SECTION__ENTRY;
-
-	/**
-     * The feature id for the '<em><b>Component</b></em>' containment reference list.
-     * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * @generated
-     * @ordered
-     */
-	int ASSESSMENT_AND_PLAN_SECTION__COMPONENT = ConsolPackage.ASSESSMENT_AND_PLAN_SECTION__COMPONENT;
-
-	/**
-	 * The feature id for the '<em><b>Section Id</b></em>' attribute. <!--
-	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
-	 * @generated
-	 * @ordered
-	 */
-	int ASSESSMENT_AND_PLAN_SECTION__SECTION_ID = ConsolPackage.ASSESSMENT_AND_PLAN_SECTION__SECTION_ID;
-
-	/**
-	 * The feature id for the '<em><b>Null Flavor</b></em>' attribute. <!--
-	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
-	 * @generated
-	 * @ordered
-	 */
-	int ASSESSMENT_AND_PLAN_SECTION__NULL_FLAVOR = ConsolPackage.ASSESSMENT_AND_PLAN_SECTION__NULL_FLAVOR;
-
-	/**
-	 * The feature id for the '<em><b>Class Code</b></em>' attribute. <!--
-	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
-	 * @generated
-	 * @ordered
-	 */
-	int ASSESSMENT_AND_PLAN_SECTION__CLASS_CODE = ConsolPackage.ASSESSMENT_AND_PLAN_SECTION__CLASS_CODE;
-
-	/**
-	 * The feature id for the '<em><b>Mood Code</b></em>' attribute. <!--
-	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
-	 * @generated
-	 * @ordered
-	 */
-	int ASSESSMENT_AND_PLAN_SECTION__MOOD_CODE = ConsolPackage.ASSESSMENT_AND_PLAN_SECTION__MOOD_CODE;
-
-	/**
-     * The number of structural features of the '<em>Assessment And Plan Section</em>' class.
-     * <!-- begin-user-doc --> <!--
-	 * end-user-doc -->
-     * @generated
-     * @ordered
-     */
-	int ASSESSMENT_AND_PLAN_SECTION_FEATURE_COUNT = ConsolPackage.ASSESSMENT_AND_PLAN_SECTION_FEATURE_COUNT + 0;
+	int ENCOUNTER_ACTIVITIES = 17;
 
 	/**
      * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.mu2consol.impl.AssessmentSectionImpl <em>Assessment Section</em>}' class.
@@ -1293,166 +614,7 @@ public interface Mu2consolPackage extends EPackage {
      * @see org.openhealthtools.mdht.uml.cda.mu2consol.impl.Mu2consolPackageImpl#getAssessmentSection()
      * @generated
      */
-	int ASSESSMENT_SECTION = 6;
-
-	/**
-     * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
-     * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * @generated
-     * @ordered
-     */
-	int ASSESSMENT_SECTION__REALM_CODE = ConsolPackage.ASSESSMENT_SECTION__REALM_CODE;
-
-	/**
-     * The feature id for the '<em><b>Type Id</b></em>' containment reference.
-     * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * @generated
-     * @ordered
-     */
-	int ASSESSMENT_SECTION__TYPE_ID = ConsolPackage.ASSESSMENT_SECTION__TYPE_ID;
-
-	/**
-     * The feature id for the '<em><b>Template Id</b></em>' containment reference list.
-     * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * @generated
-     * @ordered
-     */
-	int ASSESSMENT_SECTION__TEMPLATE_ID = ConsolPackage.ASSESSMENT_SECTION__TEMPLATE_ID;
-
-	/**
-	 * The feature id for the '<em><b>Id</b></em>' containment reference. <!--
-	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
-	 * @generated
-	 * @ordered
-	 */
-	int ASSESSMENT_SECTION__ID = ConsolPackage.ASSESSMENT_SECTION__ID;
-
-	/**
-	 * The feature id for the '<em><b>Code</b></em>' containment reference. <!--
-	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
-	 * @generated
-	 * @ordered
-	 */
-	int ASSESSMENT_SECTION__CODE = ConsolPackage.ASSESSMENT_SECTION__CODE;
-
-	/**
-     * The feature id for the '<em><b>Title</b></em>' containment reference.
-     * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * @generated
-     * @ordered
-     */
-	int ASSESSMENT_SECTION__TITLE = ConsolPackage.ASSESSMENT_SECTION__TITLE;
-
-	/**
-	 * The feature id for the '<em><b>Text</b></em>' containment reference. <!--
-	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
-	 * @generated
-	 * @ordered
-	 */
-	int ASSESSMENT_SECTION__TEXT = ConsolPackage.ASSESSMENT_SECTION__TEXT;
-
-	/**
-     * The feature id for the '<em><b>Confidentiality Code</b></em>' containment reference.
-     * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * @generated
-     * @ordered
-     */
-	int ASSESSMENT_SECTION__CONFIDENTIALITY_CODE = ConsolPackage.ASSESSMENT_SECTION__CONFIDENTIALITY_CODE;
-
-	/**
-     * The feature id for the '<em><b>Language Code</b></em>' containment reference.
-     * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * @generated
-     * @ordered
-     */
-	int ASSESSMENT_SECTION__LANGUAGE_CODE = ConsolPackage.ASSESSMENT_SECTION__LANGUAGE_CODE;
-
-	/**
-     * The feature id for the '<em><b>Subject</b></em>' containment reference.
-     * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * @generated
-     * @ordered
-     */
-	int ASSESSMENT_SECTION__SUBJECT = ConsolPackage.ASSESSMENT_SECTION__SUBJECT;
-
-	/**
-     * The feature id for the '<em><b>Author</b></em>' containment reference list.
-     * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * @generated
-     * @ordered
-     */
-	int ASSESSMENT_SECTION__AUTHOR = ConsolPackage.ASSESSMENT_SECTION__AUTHOR;
-
-	/**
-     * The feature id for the '<em><b>Informant</b></em>' containment reference list.
-     * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * @generated
-     * @ordered
-     */
-	int ASSESSMENT_SECTION__INFORMANT = ConsolPackage.ASSESSMENT_SECTION__INFORMANT;
-
-	/**
-     * The feature id for the '<em><b>Entry</b></em>' containment reference list.
-     * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * @generated
-     * @ordered
-     */
-	int ASSESSMENT_SECTION__ENTRY = ConsolPackage.ASSESSMENT_SECTION__ENTRY;
-
-	/**
-     * The feature id for the '<em><b>Component</b></em>' containment reference list.
-     * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * @generated
-     * @ordered
-     */
-	int ASSESSMENT_SECTION__COMPONENT = ConsolPackage.ASSESSMENT_SECTION__COMPONENT;
-
-	/**
-	 * The feature id for the '<em><b>Section Id</b></em>' attribute. <!--
-	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
-	 * @generated
-	 * @ordered
-	 */
-	int ASSESSMENT_SECTION__SECTION_ID = ConsolPackage.ASSESSMENT_SECTION__SECTION_ID;
-
-	/**
-	 * The feature id for the '<em><b>Null Flavor</b></em>' attribute. <!--
-	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
-	 * @generated
-	 * @ordered
-	 */
-	int ASSESSMENT_SECTION__NULL_FLAVOR = ConsolPackage.ASSESSMENT_SECTION__NULL_FLAVOR;
-
-	/**
-	 * The feature id for the '<em><b>Class Code</b></em>' attribute. <!--
-	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
-	 * @generated
-	 * @ordered
-	 */
-	int ASSESSMENT_SECTION__CLASS_CODE = ConsolPackage.ASSESSMENT_SECTION__CLASS_CODE;
-
-	/**
-	 * The feature id for the '<em><b>Mood Code</b></em>' attribute. <!--
-	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
-	 * @generated
-	 * @ordered
-	 */
-	int ASSESSMENT_SECTION__MOOD_CODE = ConsolPackage.ASSESSMENT_SECTION__MOOD_CODE;
-
-	/**
-     * The number of structural features of the '<em>Assessment Section</em>' class.
-     * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * @generated
-     * @ordered
-     */
-	int ASSESSMENT_SECTION_FEATURE_COUNT = ConsolPackage.ASSESSMENT_SECTION_FEATURE_COUNT + 0;
+	int ASSESSMENT_SECTION = 9;
 
 	/**
      * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.mu2consol.impl.SocialHistorySectionImpl <em>Social History Section</em>}' class.
@@ -1462,7 +624,7 @@ public interface Mu2consolPackage extends EPackage {
      * @see org.openhealthtools.mdht.uml.cda.mu2consol.impl.Mu2consolPackageImpl#getSocialHistorySection()
      * @generated
      */
-	int SOCIAL_HISTORY_SECTION = 7;
+	int SOCIAL_HISTORY_SECTION = 2;
 
 	/**
      * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -1631,7 +793,7 @@ public interface Mu2consolPackage extends EPackage {
      * @see org.openhealthtools.mdht.uml.cda.mu2consol.impl.Mu2consolPackageImpl#getSmokingStatusObservation()
      * @generated
      */
-	int SMOKING_STATUS_OBSERVATION = 8;
+	int SMOKING_STATUS_OBSERVATION = 3;
 
 	/**
      * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -1896,7 +1058,7 @@ public interface Mu2consolPackage extends EPackage {
      * @see org.openhealthtools.mdht.uml.cda.mu2consol.impl.Mu2consolPackageImpl#getResultsSection()
      * @generated
      */
-	int RESULTS_SECTION = 9;
+	int RESULTS_SECTION = 4;
 
 	/**
      * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -2065,7 +1227,7 @@ public interface Mu2consolPackage extends EPackage {
      * @see org.openhealthtools.mdht.uml.cda.mu2consol.impl.Mu2consolPackageImpl#getResultOrganizer()
      * @generated
      */
-	int RESULT_ORGANIZER = 10;
+	int RESULT_ORGANIZER = 5;
 
 	/**
      * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -2239,7 +1401,7 @@ public interface Mu2consolPackage extends EPackage {
      * @see org.openhealthtools.mdht.uml.cda.mu2consol.impl.Mu2consolPackageImpl#getResultObservation()
      * @generated
      */
-	int RESULT_OBSERVATION = 11;
+	int RESULT_OBSERVATION = 6;
 
 	/**
      * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -2503,7 +1665,7 @@ public interface Mu2consolPackage extends EPackage {
      * @see org.openhealthtools.mdht.uml.cda.mu2consol.impl.Mu2consolPackageImpl#getProceduresSection()
      * @generated
      */
-	int PROCEDURES_SECTION = 12;
+	int PROCEDURES_SECTION = 7;
 
 	/**
      * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -2672,7 +1834,7 @@ public interface Mu2consolPackage extends EPackage {
      * @see org.openhealthtools.mdht.uml.cda.mu2consol.impl.Mu2consolPackageImpl#getProcedureActivityProcedure()
      * @generated
      */
-	int PROCEDURE_ACTIVITY_PROCEDURE = 13;
+	int PROCEDURE_ACTIVITY_PROCEDURE = 8;
 
 	/**
      * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -2898,6 +2060,165 @@ public interface Mu2consolPackage extends EPackage {
 	int PROCEDURE_ACTIVITY_PROCEDURE_FEATURE_COUNT = ConsolPackage.PROCEDURE_ACTIVITY_PROCEDURE_FEATURE_COUNT + 0;
 
 	/**
+     * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
+     * <!-- begin-user-doc --> <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+	int ASSESSMENT_SECTION__REALM_CODE = ConsolPackage.ASSESSMENT_SECTION__REALM_CODE;
+
+	/**
+     * The feature id for the '<em><b>Type Id</b></em>' containment reference.
+     * <!-- begin-user-doc --> <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+	int ASSESSMENT_SECTION__TYPE_ID = ConsolPackage.ASSESSMENT_SECTION__TYPE_ID;
+
+	/**
+     * The feature id for the '<em><b>Template Id</b></em>' containment reference list.
+     * <!-- begin-user-doc --> <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+	int ASSESSMENT_SECTION__TEMPLATE_ID = ConsolPackage.ASSESSMENT_SECTION__TEMPLATE_ID;
+
+	/**
+	 * The feature id for the '<em><b>Id</b></em>' containment reference. <!--
+	 * begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 * @ordered
+	 */
+	int ASSESSMENT_SECTION__ID = ConsolPackage.ASSESSMENT_SECTION__ID;
+
+	/**
+	 * The feature id for the '<em><b>Code</b></em>' containment reference. <!--
+	 * begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 * @ordered
+	 */
+	int ASSESSMENT_SECTION__CODE = ConsolPackage.ASSESSMENT_SECTION__CODE;
+
+	/**
+     * The feature id for the '<em><b>Title</b></em>' containment reference.
+     * <!-- begin-user-doc --> <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+	int ASSESSMENT_SECTION__TITLE = ConsolPackage.ASSESSMENT_SECTION__TITLE;
+
+	/**
+	 * The feature id for the '<em><b>Text</b></em>' containment reference. <!--
+	 * begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 * @ordered
+	 */
+	int ASSESSMENT_SECTION__TEXT = ConsolPackage.ASSESSMENT_SECTION__TEXT;
+
+	/**
+     * The feature id for the '<em><b>Confidentiality Code</b></em>' containment reference.
+     * <!-- begin-user-doc --> <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+	int ASSESSMENT_SECTION__CONFIDENTIALITY_CODE = ConsolPackage.ASSESSMENT_SECTION__CONFIDENTIALITY_CODE;
+
+	/**
+     * The feature id for the '<em><b>Language Code</b></em>' containment reference.
+     * <!-- begin-user-doc --> <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+	int ASSESSMENT_SECTION__LANGUAGE_CODE = ConsolPackage.ASSESSMENT_SECTION__LANGUAGE_CODE;
+
+	/**
+     * The feature id for the '<em><b>Subject</b></em>' containment reference.
+     * <!-- begin-user-doc --> <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+	int ASSESSMENT_SECTION__SUBJECT = ConsolPackage.ASSESSMENT_SECTION__SUBJECT;
+
+	/**
+     * The feature id for the '<em><b>Author</b></em>' containment reference list.
+     * <!-- begin-user-doc --> <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+	int ASSESSMENT_SECTION__AUTHOR = ConsolPackage.ASSESSMENT_SECTION__AUTHOR;
+
+	/**
+     * The feature id for the '<em><b>Informant</b></em>' containment reference list.
+     * <!-- begin-user-doc --> <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+	int ASSESSMENT_SECTION__INFORMANT = ConsolPackage.ASSESSMENT_SECTION__INFORMANT;
+
+	/**
+     * The feature id for the '<em><b>Entry</b></em>' containment reference list.
+     * <!-- begin-user-doc --> <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+	int ASSESSMENT_SECTION__ENTRY = ConsolPackage.ASSESSMENT_SECTION__ENTRY;
+
+	/**
+     * The feature id for the '<em><b>Component</b></em>' containment reference list.
+     * <!-- begin-user-doc --> <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+	int ASSESSMENT_SECTION__COMPONENT = ConsolPackage.ASSESSMENT_SECTION__COMPONENT;
+
+	/**
+	 * The feature id for the '<em><b>Section Id</b></em>' attribute. <!--
+	 * begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 * @ordered
+	 */
+	int ASSESSMENT_SECTION__SECTION_ID = ConsolPackage.ASSESSMENT_SECTION__SECTION_ID;
+
+	/**
+	 * The feature id for the '<em><b>Null Flavor</b></em>' attribute. <!--
+	 * begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 * @ordered
+	 */
+	int ASSESSMENT_SECTION__NULL_FLAVOR = ConsolPackage.ASSESSMENT_SECTION__NULL_FLAVOR;
+
+	/**
+	 * The feature id for the '<em><b>Class Code</b></em>' attribute. <!--
+	 * begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 * @ordered
+	 */
+	int ASSESSMENT_SECTION__CLASS_CODE = ConsolPackage.ASSESSMENT_SECTION__CLASS_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Mood Code</b></em>' attribute. <!--
+	 * begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 * @ordered
+	 */
+	int ASSESSMENT_SECTION__MOOD_CODE = ConsolPackage.ASSESSMENT_SECTION__MOOD_CODE;
+
+	/**
+     * The number of structural features of the '<em>Assessment Section</em>' class.
+     * <!-- begin-user-doc --> <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+	int ASSESSMENT_SECTION_FEATURE_COUNT = ConsolPackage.ASSESSMENT_SECTION_FEATURE_COUNT + 0;
+
+	/**
      * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.mu2consol.impl.ClinicalOfficeVisitSummaryImpl <em>Clinical Office Visit Summary</em>}' class.
      * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -2905,7 +2226,7 @@ public interface Mu2consolPackage extends EPackage {
      * @see org.openhealthtools.mdht.uml.cda.mu2consol.impl.Mu2consolPackageImpl#getClinicalOfficeVisitSummary()
      * @generated
      */
-	int CLINICAL_OFFICE_VISIT_SUMMARY = 14;
+	int CLINICAL_OFFICE_VISIT_SUMMARY = 10;
 
 	/**
      * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -3162,6 +2483,187 @@ public interface Mu2consolPackage extends EPackage {
 	int CLINICAL_OFFICE_VISIT_SUMMARY_FEATURE_COUNT = GENERAL_HEADER_CONSTRAINTS_FEATURE_COUNT + 0;
 
 	/**
+     * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.mu2consol.impl.MedicationsAdministeredSectionImpl <em>Medications Administered Section</em>}' class.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @see org.openhealthtools.mdht.uml.cda.mu2consol.impl.MedicationsAdministeredSectionImpl
+     * @see org.openhealthtools.mdht.uml.cda.mu2consol.impl.Mu2consolPackageImpl#getMedicationsAdministeredSection()
+     * @generated
+     */
+    int MEDICATIONS_ADMINISTERED_SECTION = 11;
+
+	/**
+     * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int MEDICATIONS_ADMINISTERED_SECTION__REALM_CODE = ConsolPackage.MEDICATIONS_ADMINISTERED_SECTION__REALM_CODE;
+
+	/**
+     * The feature id for the '<em><b>Type Id</b></em>' containment reference.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int MEDICATIONS_ADMINISTERED_SECTION__TYPE_ID = ConsolPackage.MEDICATIONS_ADMINISTERED_SECTION__TYPE_ID;
+
+	/**
+     * The feature id for the '<em><b>Template Id</b></em>' containment reference list.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int MEDICATIONS_ADMINISTERED_SECTION__TEMPLATE_ID = ConsolPackage.MEDICATIONS_ADMINISTERED_SECTION__TEMPLATE_ID;
+
+	/**
+     * The feature id for the '<em><b>Id</b></em>' containment reference.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int MEDICATIONS_ADMINISTERED_SECTION__ID = ConsolPackage.MEDICATIONS_ADMINISTERED_SECTION__ID;
+
+	/**
+     * The feature id for the '<em><b>Code</b></em>' containment reference.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int MEDICATIONS_ADMINISTERED_SECTION__CODE = ConsolPackage.MEDICATIONS_ADMINISTERED_SECTION__CODE;
+
+	/**
+     * The feature id for the '<em><b>Title</b></em>' containment reference.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int MEDICATIONS_ADMINISTERED_SECTION__TITLE = ConsolPackage.MEDICATIONS_ADMINISTERED_SECTION__TITLE;
+
+	/**
+     * The feature id for the '<em><b>Text</b></em>' containment reference.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int MEDICATIONS_ADMINISTERED_SECTION__TEXT = ConsolPackage.MEDICATIONS_ADMINISTERED_SECTION__TEXT;
+
+	/**
+     * The feature id for the '<em><b>Confidentiality Code</b></em>' containment reference.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int MEDICATIONS_ADMINISTERED_SECTION__CONFIDENTIALITY_CODE = ConsolPackage.MEDICATIONS_ADMINISTERED_SECTION__CONFIDENTIALITY_CODE;
+
+	/**
+     * The feature id for the '<em><b>Language Code</b></em>' containment reference.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int MEDICATIONS_ADMINISTERED_SECTION__LANGUAGE_CODE = ConsolPackage.MEDICATIONS_ADMINISTERED_SECTION__LANGUAGE_CODE;
+
+	/**
+     * The feature id for the '<em><b>Subject</b></em>' containment reference.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int MEDICATIONS_ADMINISTERED_SECTION__SUBJECT = ConsolPackage.MEDICATIONS_ADMINISTERED_SECTION__SUBJECT;
+
+	/**
+     * The feature id for the '<em><b>Author</b></em>' containment reference list.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int MEDICATIONS_ADMINISTERED_SECTION__AUTHOR = ConsolPackage.MEDICATIONS_ADMINISTERED_SECTION__AUTHOR;
+
+	/**
+     * The feature id for the '<em><b>Informant</b></em>' containment reference list.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int MEDICATIONS_ADMINISTERED_SECTION__INFORMANT = ConsolPackage.MEDICATIONS_ADMINISTERED_SECTION__INFORMANT;
+
+	/**
+     * The feature id for the '<em><b>Entry</b></em>' containment reference list.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int MEDICATIONS_ADMINISTERED_SECTION__ENTRY = ConsolPackage.MEDICATIONS_ADMINISTERED_SECTION__ENTRY;
+
+	/**
+     * The feature id for the '<em><b>Component</b></em>' containment reference list.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int MEDICATIONS_ADMINISTERED_SECTION__COMPONENT = ConsolPackage.MEDICATIONS_ADMINISTERED_SECTION__COMPONENT;
+
+	/**
+     * The feature id for the '<em><b>Section Id</b></em>' attribute.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int MEDICATIONS_ADMINISTERED_SECTION__SECTION_ID = ConsolPackage.MEDICATIONS_ADMINISTERED_SECTION__SECTION_ID;
+
+	/**
+     * The feature id for the '<em><b>Null Flavor</b></em>' attribute.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int MEDICATIONS_ADMINISTERED_SECTION__NULL_FLAVOR = ConsolPackage.MEDICATIONS_ADMINISTERED_SECTION__NULL_FLAVOR;
+
+	/**
+     * The feature id for the '<em><b>Class Code</b></em>' attribute.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int MEDICATIONS_ADMINISTERED_SECTION__CLASS_CODE = ConsolPackage.MEDICATIONS_ADMINISTERED_SECTION__CLASS_CODE;
+
+	/**
+     * The feature id for the '<em><b>Mood Code</b></em>' attribute.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int MEDICATIONS_ADMINISTERED_SECTION__MOOD_CODE = ConsolPackage.MEDICATIONS_ADMINISTERED_SECTION__MOOD_CODE;
+
+	/**
+     * The number of structural features of the '<em>Medications Administered Section</em>' class.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int MEDICATIONS_ADMINISTERED_SECTION_FEATURE_COUNT = ConsolPackage.MEDICATIONS_ADMINISTERED_SECTION_FEATURE_COUNT + 0;
+
+	/**
 	 * The meta object id for the '
 	 * {@link org.openhealthtools.mdht.uml.cda.mu2consol.impl.TransitionOfCareAmbulatorySummaryImpl
 	 * <em>Transition Of Care Ambulatory Summary</em>}' class. <!--
@@ -3171,7 +2673,7 @@ public interface Mu2consolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.mu2consol.impl.Mu2consolPackageImpl#getTransitionOfCareAmbulatorySummary()
 	 * @generated
 	 */
-	int TRANSITION_OF_CARE_AMBULATORY_SUMMARY = 15;
+	int TRANSITION_OF_CARE_AMBULATORY_SUMMARY = 12;
 
 	/**
      * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -3438,7 +2940,7 @@ public interface Mu2consolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.mu2consol.impl.Mu2consolPackageImpl#getTransitionOfCareInpatientSummary()
 	 * @generated
 	 */
-	int TRANSITION_OF_CARE_INPATIENT_SUMMARY = 16;
+	int TRANSITION_OF_CARE_INPATIENT_SUMMARY = 13;
 
 	/**
      * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -3702,7 +3204,7 @@ public interface Mu2consolPackage extends EPackage {
      * @see org.openhealthtools.mdht.uml.cda.mu2consol.impl.Mu2consolPackageImpl#getViewDownloadTransmitSummary()
      * @generated
      */
-	int VIEW_DOWNLOAD_TRANSMIT_SUMMARY = 17;
+	int VIEW_DOWNLOAD_TRANSMIT_SUMMARY = 14;
 
 	/**
      * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -3966,7 +3468,7 @@ public interface Mu2consolPackage extends EPackage {
      * @see org.openhealthtools.mdht.uml.cda.mu2consol.impl.Mu2consolPackageImpl#getVDTInpatientSummary()
      * @generated
      */
-	int VDT_INPATIENT_SUMMARY = 18;
+	int VDT_INPATIENT_SUMMARY = 15;
 
 	/**
      * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -4229,7 +3731,7 @@ public interface Mu2consolPackage extends EPackage {
      * @see org.openhealthtools.mdht.uml.cda.mu2consol.impl.Mu2consolPackageImpl#getVDTAmbulatorySummary()
      * @generated
      */
-	int VDT_AMBULATORY_SUMMARY = 19;
+	int VDT_AMBULATORY_SUMMARY = 16;
 
 	/**
      * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -4485,6 +3987,346 @@ public interface Mu2consolPackage extends EPackage {
 	int VDT_AMBULATORY_SUMMARY_FEATURE_COUNT = VIEW_DOWNLOAD_TRANSMIT_SUMMARY_FEATURE_COUNT + 0;
 
 	/**
+     * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
+     * <!-- begin-user-doc --> <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+	int ENCOUNTER_ACTIVITIES__REALM_CODE = ConsolPackage.ENCOUNTER_ACTIVITIES__REALM_CODE;
+
+	/**
+     * The feature id for the '<em><b>Type Id</b></em>' containment reference.
+     * <!-- begin-user-doc --> <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+	int ENCOUNTER_ACTIVITIES__TYPE_ID = ConsolPackage.ENCOUNTER_ACTIVITIES__TYPE_ID;
+
+	/**
+     * The feature id for the '<em><b>Template Id</b></em>' containment reference list.
+     * <!-- begin-user-doc --> <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+	int ENCOUNTER_ACTIVITIES__TEMPLATE_ID = ConsolPackage.ENCOUNTER_ACTIVITIES__TEMPLATE_ID;
+
+	/**
+     * The feature id for the '<em><b>Id</b></em>' containment reference list.
+     * <!-- begin-user-doc --> <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+	int ENCOUNTER_ACTIVITIES__ID = ConsolPackage.ENCOUNTER_ACTIVITIES__ID;
+
+	/**
+	 * The feature id for the '<em><b>Code</b></em>' containment reference. <!--
+	 * begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 * @ordered
+	 */
+	int ENCOUNTER_ACTIVITIES__CODE = ConsolPackage.ENCOUNTER_ACTIVITIES__CODE;
+
+	/**
+	 * The feature id for the '<em><b>Text</b></em>' containment reference. <!--
+	 * begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 * @ordered
+	 */
+	int ENCOUNTER_ACTIVITIES__TEXT = ConsolPackage.ENCOUNTER_ACTIVITIES__TEXT;
+
+	/**
+     * The feature id for the '<em><b>Status Code</b></em>' containment reference.
+     * <!-- begin-user-doc --> <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+	int ENCOUNTER_ACTIVITIES__STATUS_CODE = ConsolPackage.ENCOUNTER_ACTIVITIES__STATUS_CODE;
+
+	/**
+     * The feature id for the '<em><b>Effective Time</b></em>' containment reference.
+     * <!-- begin-user-doc --> <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+	int ENCOUNTER_ACTIVITIES__EFFECTIVE_TIME = ConsolPackage.ENCOUNTER_ACTIVITIES__EFFECTIVE_TIME;
+
+	/**
+     * The feature id for the '<em><b>Priority Code</b></em>' containment reference.
+     * <!-- begin-user-doc --> <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+	int ENCOUNTER_ACTIVITIES__PRIORITY_CODE = ConsolPackage.ENCOUNTER_ACTIVITIES__PRIORITY_CODE;
+
+	/**
+     * The feature id for the '<em><b>Subject</b></em>' containment reference.
+     * <!-- begin-user-doc --> <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+	int ENCOUNTER_ACTIVITIES__SUBJECT = ConsolPackage.ENCOUNTER_ACTIVITIES__SUBJECT;
+
+	/**
+     * The feature id for the '<em><b>Specimen</b></em>' containment reference list.
+     * <!-- begin-user-doc --> <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+	int ENCOUNTER_ACTIVITIES__SPECIMEN = ConsolPackage.ENCOUNTER_ACTIVITIES__SPECIMEN;
+
+	/**
+     * The feature id for the '<em><b>Performer</b></em>' containment reference list.
+     * <!-- begin-user-doc --> <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+	int ENCOUNTER_ACTIVITIES__PERFORMER = ConsolPackage.ENCOUNTER_ACTIVITIES__PERFORMER;
+
+	/**
+     * The feature id for the '<em><b>Author</b></em>' containment reference list.
+     * <!-- begin-user-doc --> <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+	int ENCOUNTER_ACTIVITIES__AUTHOR = ConsolPackage.ENCOUNTER_ACTIVITIES__AUTHOR;
+
+	/**
+     * The feature id for the '<em><b>Informant</b></em>' containment reference list.
+     * <!-- begin-user-doc --> <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+	int ENCOUNTER_ACTIVITIES__INFORMANT = ConsolPackage.ENCOUNTER_ACTIVITIES__INFORMANT;
+
+	/**
+     * The feature id for the '<em><b>Participant</b></em>' containment reference list.
+     * <!-- begin-user-doc --> <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+	int ENCOUNTER_ACTIVITIES__PARTICIPANT = ConsolPackage.ENCOUNTER_ACTIVITIES__PARTICIPANT;
+
+	/**
+     * The feature id for the '<em><b>Entry Relationship</b></em>' containment reference list.
+     * <!-- begin-user-doc --> <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+	int ENCOUNTER_ACTIVITIES__ENTRY_RELATIONSHIP = ConsolPackage.ENCOUNTER_ACTIVITIES__ENTRY_RELATIONSHIP;
+
+	/**
+     * The feature id for the '<em><b>Reference</b></em>' containment reference list.
+     * <!-- begin-user-doc --> <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+	int ENCOUNTER_ACTIVITIES__REFERENCE = ConsolPackage.ENCOUNTER_ACTIVITIES__REFERENCE;
+
+	/**
+     * The feature id for the '<em><b>Precondition</b></em>' containment reference list.
+     * <!-- begin-user-doc --> <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+	int ENCOUNTER_ACTIVITIES__PRECONDITION = ConsolPackage.ENCOUNTER_ACTIVITIES__PRECONDITION;
+
+	/**
+	 * The feature id for the '<em><b>Null Flavor</b></em>' attribute. <!--
+	 * begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 * @ordered
+	 */
+	int ENCOUNTER_ACTIVITIES__NULL_FLAVOR = ConsolPackage.ENCOUNTER_ACTIVITIES__NULL_FLAVOR;
+
+	/**
+	 * The feature id for the '<em><b>Class Code</b></em>' attribute. <!--
+	 * begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 * @ordered
+	 */
+	int ENCOUNTER_ACTIVITIES__CLASS_CODE = ConsolPackage.ENCOUNTER_ACTIVITIES__CLASS_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Mood Code</b></em>' attribute. <!--
+	 * begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 * @ordered
+	 */
+	int ENCOUNTER_ACTIVITIES__MOOD_CODE = ConsolPackage.ENCOUNTER_ACTIVITIES__MOOD_CODE;
+
+	/**
+     * The number of structural features of the '<em>Encounter Activities</em>' class.
+     * <!-- begin-user-doc --> <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+	int ENCOUNTER_ACTIVITIES_FEATURE_COUNT = ConsolPackage.ENCOUNTER_ACTIVITIES_FEATURE_COUNT + 0;
+
+	/**
+     * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
+     * <!-- begin-user-doc --> <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+	int ENCOUNTERS_SECTION__REALM_CODE = ConsolPackage.ENCOUNTERS_SECTION__REALM_CODE;
+
+	/**
+     * The feature id for the '<em><b>Type Id</b></em>' containment reference.
+     * <!-- begin-user-doc --> <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+	int ENCOUNTERS_SECTION__TYPE_ID = ConsolPackage.ENCOUNTERS_SECTION__TYPE_ID;
+
+	/**
+     * The feature id for the '<em><b>Template Id</b></em>' containment reference list.
+     * <!-- begin-user-doc --> <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+	int ENCOUNTERS_SECTION__TEMPLATE_ID = ConsolPackage.ENCOUNTERS_SECTION__TEMPLATE_ID;
+
+	/**
+	 * The feature id for the '<em><b>Id</b></em>' containment reference. <!--
+	 * begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 * @ordered
+	 */
+	int ENCOUNTERS_SECTION__ID = ConsolPackage.ENCOUNTERS_SECTION__ID;
+
+	/**
+	 * The feature id for the '<em><b>Code</b></em>' containment reference. <!--
+	 * begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 * @ordered
+	 */
+	int ENCOUNTERS_SECTION__CODE = ConsolPackage.ENCOUNTERS_SECTION__CODE;
+
+	/**
+     * The feature id for the '<em><b>Title</b></em>' containment reference.
+     * <!-- begin-user-doc --> <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+	int ENCOUNTERS_SECTION__TITLE = ConsolPackage.ENCOUNTERS_SECTION__TITLE;
+
+	/**
+	 * The feature id for the '<em><b>Text</b></em>' containment reference. <!--
+	 * begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 * @ordered
+	 */
+	int ENCOUNTERS_SECTION__TEXT = ConsolPackage.ENCOUNTERS_SECTION__TEXT;
+
+	/**
+     * The feature id for the '<em><b>Confidentiality Code</b></em>' containment reference.
+     * <!-- begin-user-doc --> <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+	int ENCOUNTERS_SECTION__CONFIDENTIALITY_CODE = ConsolPackage.ENCOUNTERS_SECTION__CONFIDENTIALITY_CODE;
+
+	/**
+     * The feature id for the '<em><b>Language Code</b></em>' containment reference.
+     * <!-- begin-user-doc --> <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+	int ENCOUNTERS_SECTION__LANGUAGE_CODE = ConsolPackage.ENCOUNTERS_SECTION__LANGUAGE_CODE;
+
+	/**
+     * The feature id for the '<em><b>Subject</b></em>' containment reference.
+     * <!-- begin-user-doc --> <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+	int ENCOUNTERS_SECTION__SUBJECT = ConsolPackage.ENCOUNTERS_SECTION__SUBJECT;
+
+	/**
+     * The feature id for the '<em><b>Author</b></em>' containment reference list.
+     * <!-- begin-user-doc --> <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+	int ENCOUNTERS_SECTION__AUTHOR = ConsolPackage.ENCOUNTERS_SECTION__AUTHOR;
+
+	/**
+     * The feature id for the '<em><b>Informant</b></em>' containment reference list.
+     * <!-- begin-user-doc --> <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+	int ENCOUNTERS_SECTION__INFORMANT = ConsolPackage.ENCOUNTERS_SECTION__INFORMANT;
+
+	/**
+     * The feature id for the '<em><b>Entry</b></em>' containment reference list.
+     * <!-- begin-user-doc --> <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+	int ENCOUNTERS_SECTION__ENTRY = ConsolPackage.ENCOUNTERS_SECTION__ENTRY;
+
+	/**
+     * The feature id for the '<em><b>Component</b></em>' containment reference list.
+     * <!-- begin-user-doc --> <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+	int ENCOUNTERS_SECTION__COMPONENT = ConsolPackage.ENCOUNTERS_SECTION__COMPONENT;
+
+	/**
+	 * The feature id for the '<em><b>Section Id</b></em>' attribute. <!--
+	 * begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 * @ordered
+	 */
+	int ENCOUNTERS_SECTION__SECTION_ID = ConsolPackage.ENCOUNTERS_SECTION__SECTION_ID;
+
+	/**
+	 * The feature id for the '<em><b>Null Flavor</b></em>' attribute. <!--
+	 * begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 * @ordered
+	 */
+	int ENCOUNTERS_SECTION__NULL_FLAVOR = ConsolPackage.ENCOUNTERS_SECTION__NULL_FLAVOR;
+
+	/**
+	 * The feature id for the '<em><b>Class Code</b></em>' attribute. <!--
+	 * begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 * @ordered
+	 */
+	int ENCOUNTERS_SECTION__CLASS_CODE = ConsolPackage.ENCOUNTERS_SECTION__CLASS_CODE;
+
+	/**
+	 * The feature id for the '<em><b>Mood Code</b></em>' attribute. <!--
+	 * begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 * @ordered
+	 */
+	int ENCOUNTERS_SECTION__MOOD_CODE = ConsolPackage.ENCOUNTERS_SECTION__MOOD_CODE;
+
+	/**
+     * The number of structural features of the '<em>Encounters Section</em>' class.
+     * <!-- begin-user-doc --> <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+	int ENCOUNTERS_SECTION_FEATURE_COUNT = ConsolPackage.ENCOUNTERS_SECTION_FEATURE_COUNT + 0;
+
+	/**
      * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.mu2consol.GeneralHeaderConstraints <em>General Header Constraints</em>}'.
      * <!-- begin-user-doc --> <!--
 	 * end-user-doc -->
@@ -4525,26 +4367,6 @@ public interface Mu2consolPackage extends EPackage {
      * @generated
      */
 	EClass getEncounterActivities();
-
-	/**
-     * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.mu2consol.PlanOfCareSection <em>Plan Of Care Section</em>}'.
-     * <!-- begin-user-doc --> <!--
-	 * end-user-doc -->
-     * @return the meta object for class '<em>Plan Of Care Section</em>'.
-     * @see org.openhealthtools.mdht.uml.cda.mu2consol.PlanOfCareSection
-     * @generated
-     */
-	EClass getPlanOfCareSection();
-
-	/**
-     * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.mu2consol.AssessmentAndPlanSection <em>Assessment And Plan Section</em>}'.
-     * <!-- begin-user-doc --> <!--
-	 * end-user-doc -->
-     * @return the meta object for class '<em>Assessment And Plan Section</em>'.
-     * @see org.openhealthtools.mdht.uml.cda.mu2consol.AssessmentAndPlanSection
-     * @generated
-     */
-	EClass getAssessmentAndPlanSection();
 
 	/**
 	 * Returns the meta object for class '
@@ -4642,6 +4464,16 @@ public interface Mu2consolPackage extends EPackage {
      * @generated
      */
 	EClass getClinicalOfficeVisitSummary();
+
+	/**
+     * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.mu2consol.MedicationsAdministeredSection <em>Medications Administered Section</em>}'.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @return the meta object for class '<em>Medications Administered Section</em>'.
+     * @see org.openhealthtools.mdht.uml.cda.mu2consol.MedicationsAdministeredSection
+     * @generated
+     */
+    EClass getMedicationsAdministeredSection();
 
 	/**
      * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.mu2consol.TransitionOfCareAmbulatorySummary <em>Transition Of Care Ambulatory Summary</em>}'.
@@ -4756,26 +4588,6 @@ public interface Mu2consolPackage extends EPackage {
 		EClass ENCOUNTER_ACTIVITIES = eINSTANCE.getEncounterActivities();
 
 		/**
-         * The meta object literal for the '{@link org.openhealthtools.mdht.uml.cda.mu2consol.impl.PlanOfCareSectionImpl <em>Plan Of Care Section</em>}' class.
-         * <!-- begin-user-doc --> <!--
-		 * end-user-doc -->
-         * @see org.openhealthtools.mdht.uml.cda.mu2consol.impl.PlanOfCareSectionImpl
-         * @see org.openhealthtools.mdht.uml.cda.mu2consol.impl.Mu2consolPackageImpl#getPlanOfCareSection()
-         * @generated
-         */
-		EClass PLAN_OF_CARE_SECTION = eINSTANCE.getPlanOfCareSection();
-
-		/**
-         * The meta object literal for the '{@link org.openhealthtools.mdht.uml.cda.mu2consol.impl.AssessmentAndPlanSectionImpl <em>Assessment And Plan Section</em>}' class.
-         * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-         * @see org.openhealthtools.mdht.uml.cda.mu2consol.impl.AssessmentAndPlanSectionImpl
-         * @see org.openhealthtools.mdht.uml.cda.mu2consol.impl.Mu2consolPackageImpl#getAssessmentAndPlanSection()
-         * @generated
-         */
-		EClass ASSESSMENT_AND_PLAN_SECTION = eINSTANCE.getAssessmentAndPlanSection();
-
-		/**
          * The meta object literal for the '{@link org.openhealthtools.mdht.uml.cda.mu2consol.impl.AssessmentSectionImpl <em>Assessment Section</em>}' class.
          * <!-- begin-user-doc --> <!--
 		 * end-user-doc -->
@@ -4864,6 +4676,16 @@ public interface Mu2consolPackage extends EPackage {
          * @generated
          */
 		EClass CLINICAL_OFFICE_VISIT_SUMMARY = eINSTANCE.getClinicalOfficeVisitSummary();
+
+		/**
+         * The meta object literal for the '{@link org.openhealthtools.mdht.uml.cda.mu2consol.impl.MedicationsAdministeredSectionImpl <em>Medications Administered Section</em>}' class.
+         * <!-- begin-user-doc -->
+         * <!-- end-user-doc -->
+         * @see org.openhealthtools.mdht.uml.cda.mu2consol.impl.MedicationsAdministeredSectionImpl
+         * @see org.openhealthtools.mdht.uml.cda.mu2consol.impl.Mu2consolPackageImpl#getMedicationsAdministeredSection()
+         * @generated
+         */
+        EClass MEDICATIONS_ADMINISTERED_SECTION = eINSTANCE.getMedicationsAdministeredSection();
 
 		/**
 		 * The meta object literal for the '

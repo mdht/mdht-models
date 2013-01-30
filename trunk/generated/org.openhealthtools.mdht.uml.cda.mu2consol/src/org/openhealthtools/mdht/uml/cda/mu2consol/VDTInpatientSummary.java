@@ -10,20 +10,12 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.mu2consol;
 
-import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EObject;
 import org.openhealthtools.mdht.emf.runtime.util.Initializer;
-import org.openhealthtools.mdht.uml.cda.consol.ChiefComplaintAndReasonForVisitSection;
-import org.openhealthtools.mdht.uml.cda.consol.ChiefComplaintSection;
-import org.openhealthtools.mdht.uml.cda.consol.HospitalAdmissionDiagnosisSection;
-import org.openhealthtools.mdht.uml.cda.consol.HospitalAdmissionMedicationsSectionEntriesOptional;
 import org.openhealthtools.mdht.uml.cda.consol.HospitalDischargeInstructionsSection;
-import org.openhealthtools.mdht.uml.cda.consol.HospitalDischargeMedicationsSection;
-import org.openhealthtools.mdht.uml.cda.consol.PreoperativeDiagnosisSection;
-import org.openhealthtools.mdht.uml.cda.consol.ReasonForVisitSection;
 
 /**
  * <!-- begin-user-doc --> A representation of the model object '
@@ -31,112 +23,69 @@ import org.openhealthtools.mdht.uml.cda.consol.ReasonForVisitSection;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.mu2consol.Mu2consolPackage#getVDTInpatientSummary()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.query='VDTInpatientSummaryEffectiveTime VDTInpatientSummaryLocation VDTInpatientSummaryHospitalAdmissionDiagnosisEntry VDTInpatientSummaryPreoperativeDiagnosisEntry' constraints.validation.error='VDTInpatientSummaryEffectiveTime VDTInpatientSummaryLocation VDTInpatientSummaryChiefComplaintOrReasonForVisit VDTInpatientSummaryHospitalAdmissionDiagnosisEntry VDTInpatientSummaryPreoperativeDiagnosisEntry VDTInpatientSummaryHospitalDischargeInstructionsSection VDTInpatientSummaryHospitalAdmissionDiagnosisSection VDTInpatientSummaryHospitalDischargeMedicationsSection' constraints.validation.info='VDTInpatientSummaryChiefComplaintSection VDTInpatientSummaryReasonForVisitSection VDTInpatientSummaryChiefComplaintAndReasonForVisitSection VDTInpatientSummaryPreoperativeDiagnosisSection VDTInpatientSummaryHospitalAdmissionMedicationsSectionEntriesOptional'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='VDTInpatientSummaryAdmissionDate VDTInpatientSummaryDischargeDate VDTInpatientSummaryAdmissionDischargeLocation VDTInpatientSummaryMedications VDTInpatientSummaryReasonforHospitalization VDTInpatientSummaryHospitalDischargeInstructionsSection'"
  * @generated
  */
 public interface VDTInpatientSummary extends ViewDownloadTransmitSummary {
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc --> <!-- begin-model-doc -->
-	 * self
-	 * .componentOf->excluding(null).encompassingEncounter->excluding(null)->
-	 * reject((effectiveTime.oclIsUndefined() or
-	 * 
-	 * effectiveTime.isNullFlavorUndefined()) implies (not
-	 * effectiveTime.oclIsUndefined()))
-	 * 
-	 * @param diagnostics
-	 *            The chain of diagnostics to which problems are to be appended.
-	 * @param context
-	 *            The cache of context-specific information. <!-- end-model-doc
-	 *            -->
-	 * @model annotation=
-	 *        "http://www.eclipse.org/uml2/1.1.0/GenModel body='self.componentOf->excluding(null).encompassingEncounter->excluding(null)->reject((effectiveTime.oclIsUndefined() or \r\r\neffectiveTime.isNullFlavorUndefined()) implies (not effectiveTime.oclIsUndefined()))'"
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.documentationOf.oclAsType(cda::DocumentationOf).serviceEvent->notEmpty() and self.documentationOf.serviceEvent->forAll((effectiveTime.low.oclIsUndefined() or effectiveTime.low.isNullFlavorUndefined()) implies not effectiveTime.low.oclIsUndefined())) or (self.componentOf.oclAsType(cda::Component1).encompassingEncounter->notEmpty() and self.componentOf.encompassingEncounter->forAll((effectiveTime.low.oclIsUndefined() or effectiveTime.low.isNullFlavorUndefined()) implies not effectiveTime.low.oclIsUndefined())) or (self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(consol::EncountersSection)) or \r\nself.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(consol::EncountersSectionEntriesOptional)))'"
 	 * @generated
 	 */
-	boolean validateVDTInpatientSummaryEffectiveTime(
-			DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateVDTInpatientSummaryAdmissionDate(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc --> <!-- begin-model-doc -->
-	 * self
-	 * .componentOf->excluding(null).encompassingEncounter->excluding(null)->
-	 * reject(location->one(location : cda::Location |
-	 * 
-	 * not location.oclIsUndefined() and
-	 * location.oclIsKindOf(rim::Participation)))
-	 * 
-	 * @param diagnostics
-	 *            The chain of diagnostics to which problems are to be appended.
-	 * @param context
-	 *            The cache of context-specific information. <!-- end-model-doc
-	 *            -->
-	 * @model annotation=
-	 *        "http://www.eclipse.org/uml2/1.1.0/GenModel body='self.componentOf->excluding(null).encompassingEncounter->excluding(null)->reject(location->one(location : cda::Location | \r\r\nnot location.oclIsUndefined() and location.oclIsKindOf(rim::Participation)))'"
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.documentationOf.oclAsType(cda::DocumentationOf).serviceEvent->notEmpty() and self.documentationOf.serviceEvent->forAll((effectiveTime.high.oclIsUndefined() or effectiveTime.high.isNullFlavorUndefined()) implies not effectiveTime.high.oclIsUndefined())) or (self.componentOf.oclAsType(cda::Component1).encompassingEncounter->notEmpty() and self.componentOf.encompassingEncounter->forAll((effectiveTime.high.oclIsUndefined() or effectiveTime.high.isNullFlavorUndefined()) implies not effectiveTime.oclIsUndefined() and not effectiveTime.high.oclIsUndefined())) or (self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(consol::EncountersSection)) or \r\nself.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(consol::EncountersSectionEntriesOptional)))'"
 	 * @generated
 	 */
-	boolean validateVDTInpatientSummaryLocation(DiagnosticChain diagnostics,
-			Map<Object, Object> context);
+	boolean validateVDTInpatientSummaryDischargeDate(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc --> <!-- begin-model-doc -->
-	 * (self.getAllSections()->one(section : cda::Section | not
-	 * section.oclIsUndefined() and
-	 * section.oclIsKindOf(consol::ChiefComplaintSection)) or
-	 * self.getAllSections()->one(section : cda::Section | not
-	 * section.oclIsUndefined() and
-	 * section.oclIsKindOf(consol::ReasonForVisitSection))) xor
-	 * self.getAllSections()->one(section : cda::Section | not
-	 * section.oclIsUndefined() and
-	 * section.oclIsKindOf(consol::ChiefComplaintAndReasonForVisitSection))
-	 * 
-	 * @param diagnostics
-	 *            The chain of diagnostics to which problems are to be appended.
-	 * @param context
-	 *            The cache of context-specific information. <!-- end-model-doc
-	 *            -->
-	 * @model annotation=
-	 *        "http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ChiefComplaintSection)) or \r\n self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ReasonForVisitSection))) xor \r\n self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ChiefComplaintAndReasonForVisitSection))'"
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.componentOf.oclAsType(cda::Component1).encompassingEncounter->notEmpty() and self.componentOf.encompassingEncounter->forAll(location->notEmpty() and location.oclIsTypeOf(cda::Location))) or (self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(consol::EncountersSection)) or \r\nself.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(consol::EncountersSectionEntriesOptional)))'"
 	 * @generated
 	 */
-	boolean validateVDTInpatientSummaryChiefComplaintOrReasonForVisit(
-			DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateVDTInpatientSummaryAdmissionDischargeLocation(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc --> <!-- begin-model-doc -->
-	 * self
-	 * .retrieveHospitalAdmissionDiagnosisSection()->excluding(null)->reject(
-	 * retrieveHospitalAdmissionDiagnosisSection().getActs()->exists(a :
-	 * cda::Act | a.oclIsKindOf(consol::HospitalAdmissionDiagnosis)))
-	 * 
-	 * @param diagnostics
-	 *            The chain of diagnostics to which problems are to be appended.
-	 * @param context
-	 *            The cache of context-specific information. <!-- end-model-doc
-	 *            -->
-	 * @model annotation=
-	 *        "http://www.eclipse.org/uml2/1.1.0/GenModel body='self.retrieveHospitalAdmissionDiagnosisSection()->excluding(null)->reject(retrieveHospitalAdmissionDiagnosisSection().getActs()->exists(a : cda::Act | a.oclIsKindOf(consol::HospitalAdmissionDiagnosis)))'"
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(consol::MedicationsSection)) or \r\nself.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(consol::HospitalDischargeMedicationsSection)))'"
 	 * @generated
 	 */
-	boolean validateVDTInpatientSummaryHospitalAdmissionDiagnosisEntry(
-			DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateVDTInpatientSummaryMedications(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc --> <!-- begin-model-doc -->
-	 * self.retrievePreoperativeDiagnosisSection()->excluding(null)->reject(
-	 * retrievePreoperativeDiagnosisSection().getActs()->exists(a : cda::Act |
-	 * a.oclIsKindOf(consol::PreoperativeDiagnosis)))
-	 * 
-	 * @param diagnostics
-	 *            The chain of diagnostics to which problems are to be appended.
-	 * @param context
-	 *            The cache of context-specific information. <!-- end-model-doc
-	 *            -->
-	 * @model annotation=
-	 *        "http://www.eclipse.org/uml2/1.1.0/GenModel body='self.retrievePreoperativeDiagnosisSection()->excluding(null)->reject(retrievePreoperativeDiagnosisSection().getActs()->exists(a : cda::Act | a.oclIsKindOf(consol::PreoperativeDiagnosis)))'"
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='((self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ChiefComplaintSection)) or \r\n self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ReasonForVisitSection))) xor \r\n self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ChiefComplaintAndReasonForVisitSection))) or self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(consol::EncountersSection)) or \r\nself.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(consol::EncountersSectionEntriesOptional)) or self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(consol::HospitalAdmissionDiagnosisSection)) or \r\nself.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(consol::PreoperativeDiagnosisSection))'"
 	 * @generated
 	 */
-	boolean validateVDTInpatientSummaryPreoperativeDiagnosisEntry(
-			DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateVDTInpatientSummaryReasonforHospitalization(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc --> <!-- begin-model-doc -->
@@ -158,132 +107,6 @@ public interface VDTInpatientSummary extends ViewDownloadTransmitSummary {
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc --> <!-- begin-model-doc -->
-	 * self.getAllSections()->one(section : cda::Section | not
-	 * section.oclIsUndefined() and
-	 * section.oclIsKindOf(consol::HospitalAdmissionDiagnosisSection))
-	 * 
-	 * @param diagnostics
-	 *            The chain of diagnostics to which problems are to be appended.
-	 * @param context
-	 *            The cache of context-specific information. <!-- end-model-doc
-	 *            -->
-	 * @model annotation=
-	 *        "http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::HospitalAdmissionDiagnosisSection))'"
-	 * @generated
-	 */
-	boolean validateVDTInpatientSummaryHospitalAdmissionDiagnosisSection(
-			DiagnosticChain diagnostics, Map<Object, Object> context);
-
-	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc --> <!-- begin-model-doc -->
-	 * self.getAllSections()->one(section : cda::Section | not
-	 * section.oclIsUndefined() and
-	 * section.oclIsKindOf(consol::ChiefComplaintSection))
-	 * 
-	 * @param diagnostics
-	 *            The chain of diagnostics to which problems are to be appended.
-	 * @param context
-	 *            The cache of context-specific information. <!-- end-model-doc
-	 *            -->
-	 * @model annotation=
-	 *        "http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ChiefComplaintSection))'"
-	 * @generated
-	 */
-	boolean validateVDTInpatientSummaryChiefComplaintSection(
-			DiagnosticChain diagnostics, Map<Object, Object> context);
-
-	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc --> <!-- begin-model-doc -->
-	 * self.getAllSections()->one(section : cda::Section | not
-	 * section.oclIsUndefined() and
-	 * section.oclIsKindOf(consol::ReasonForVisitSection))
-	 * 
-	 * @param diagnostics
-	 *            The chain of diagnostics to which problems are to be appended.
-	 * @param context
-	 *            The cache of context-specific information. <!-- end-model-doc
-	 *            -->
-	 * @model annotation=
-	 *        "http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ReasonForVisitSection))'"
-	 * @generated
-	 */
-	boolean validateVDTInpatientSummaryReasonForVisitSection(
-			DiagnosticChain diagnostics, Map<Object, Object> context);
-
-	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc --> <!-- begin-model-doc -->
-	 * self.getAllSections()->one(section : cda::Section | not
-	 * section.oclIsUndefined() and
-	 * section.oclIsKindOf(consol::ChiefComplaintAndReasonForVisitSection))
-	 * 
-	 * @param diagnostics
-	 *            The chain of diagnostics to which problems are to be appended.
-	 * @param context
-	 *            The cache of context-specific information. <!-- end-model-doc
-	 *            -->
-	 * @model annotation=
-	 *        "http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ChiefComplaintAndReasonForVisitSection))'"
-	 * @generated
-	 */
-	boolean validateVDTInpatientSummaryChiefComplaintAndReasonForVisitSection(
-			DiagnosticChain diagnostics, Map<Object, Object> context);
-
-	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc --> <!-- begin-model-doc -->
-	 * self.getAllSections()->one(section : cda::Section | not
-	 * section.oclIsUndefined() and
-	 * section.oclIsKindOf(consol::HospitalDischargeMedicationsSection))
-	 * 
-	 * @param diagnostics
-	 *            The chain of diagnostics to which problems are to be appended.
-	 * @param context
-	 *            The cache of context-specific information. <!-- end-model-doc
-	 *            -->
-	 * @model annotation=
-	 *        "http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::HospitalDischargeMedicationsSection))'"
-	 * @generated
-	 */
-	boolean validateVDTInpatientSummaryHospitalDischargeMedicationsSection(
-			DiagnosticChain diagnostics, Map<Object, Object> context);
-
-	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc --> <!-- begin-model-doc -->
-	 * self.getAllSections()->one(section : cda::Section | not
-	 * section.oclIsUndefined() and
-	 * section.oclIsKindOf(consol::PreoperativeDiagnosisSection))
-	 * 
-	 * @param diagnostics
-	 *            The chain of diagnostics to which problems are to be appended.
-	 * @param context
-	 *            The cache of context-specific information. <!-- end-model-doc
-	 *            -->
-	 * @model annotation=
-	 *        "http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::PreoperativeDiagnosisSection))'"
-	 * @generated
-	 */
-	boolean validateVDTInpatientSummaryPreoperativeDiagnosisSection(
-			DiagnosticChain diagnostics, Map<Object, Object> context);
-
-	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc --> <!-- begin-model-doc -->
-	 * self.getAllSections()->one(section : cda::Section | not
-	 * section.oclIsUndefined() and section.oclIsKindOf(consol::
-	 * HospitalAdmissionMedicationsSectionEntriesOptional))
-	 * 
-	 * @param diagnostics
-	 *            The chain of diagnostics to which problems are to be appended.
-	 * @param context
-	 *            The cache of context-specific information. <!-- end-model-doc
-	 *            -->
-	 * @model annotation=
-	 *        "http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::HospitalAdmissionMedicationsSectionEntriesOptional))'"
-	 * @generated
-	 */
-	boolean validateVDTInpatientSummaryHospitalAdmissionMedicationsSectionEntriesOptional(
-			DiagnosticChain diagnostics, Map<Object, Object> context);
-
-	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc --> <!-- begin-model-doc -->
 	 * self.getAllSections()->select(section : cda::Section | not
 	 * section.oclIsUndefined() and
 	 * section.oclIsKindOf(consol::HospitalDischargeInstructionsSection
@@ -298,112 +121,9 @@ public interface VDTInpatientSummary extends ViewDownloadTransmitSummary {
 	HospitalDischargeInstructionsSection getHospitalDischargeInstructionsSection();
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc --> <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not
-	 * section.oclIsUndefined() and
-	 * section.oclIsKindOf(consol::HospitalAdmissionDiagnosisSection
-	 * ))->asSequence
-	 * ()->any(true).oclAsType(consol::HospitalAdmissionDiagnosisSection) <!--
-	 * end-model-doc -->
-	 * 
-	 * @model kind="operation" required="true" ordered="false" annotation=
-	 *        "http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::HospitalAdmissionDiagnosisSection))->asSequence()->any(true).oclAsType(consol::HospitalAdmissionDiagnosisSection)'"
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
-	HospitalAdmissionDiagnosisSection getHospitalAdmissionDiagnosisSection();
-
-	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc --> <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not
-	 * section.oclIsUndefined() and
-	 * section.oclIsKindOf(consol::ChiefComplaintSection
-	 * ))->asSequence()->any(true).oclAsType(consol::ChiefComplaintSection) <!--
-	 * end-model-doc -->
-	 * 
-	 * @model kind="operation" required="true" ordered="false" annotation=
-	 *        "http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ChiefComplaintSection))->asSequence()->any(true).oclAsType(consol::ChiefComplaintSection)'"
-	 * @generated
-	 */
-	ChiefComplaintSection getChiefComplaintSection();
-
-	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc --> <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not
-	 * section.oclIsUndefined() and
-	 * section.oclIsKindOf(consol::ReasonForVisitSection
-	 * ))->asSequence()->any(true).oclAsType(consol::ReasonForVisitSection) <!--
-	 * end-model-doc -->
-	 * 
-	 * @model kind="operation" required="true" ordered="false" annotation=
-	 *        "http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ReasonForVisitSection))->asSequence()->any(true).oclAsType(consol::ReasonForVisitSection)'"
-	 * @generated
-	 */
-	ReasonForVisitSection getReasonForVisitSection();
-
-	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc --> <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not
-	 * section.oclIsUndefined() and
-	 * section.oclIsKindOf(consol::ChiefComplaintAndReasonForVisitSection
-	 * ))->asSequence
-	 * ()->any(true).oclAsType(consol::ChiefComplaintAndReasonForVisitSection)
-	 * <!-- end-model-doc -->
-	 * 
-	 * @model kind="operation" required="true" ordered="false" annotation=
-	 *        "http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ChiefComplaintAndReasonForVisitSection))->asSequence()->any(true).oclAsType(consol::ChiefComplaintAndReasonForVisitSection)'"
-	 * @generated
-	 */
-	ChiefComplaintAndReasonForVisitSection getChiefComplaintAndReasonForVisitSection();
-
-	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc --> <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not
-	 * section.oclIsUndefined() and
-	 * section.oclIsKindOf(consol::HospitalDischargeMedicationsSection
-	 * ))->asSequence
-	 * ()->any(true).oclAsType(consol::HospitalDischargeMedicationsSection) <!--
-	 * end-model-doc -->
-	 * 
-	 * @model kind="operation" required="true" ordered="false" annotation=
-	 *        "http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::HospitalDischargeMedicationsSection))->asSequence()->any(true).oclAsType(consol::HospitalDischargeMedicationsSection)'"
-	 * @generated
-	 */
-	HospitalDischargeMedicationsSection getHospitalDischargeMedicationsSection();
-
-	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc --> <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not
-	 * section.oclIsUndefined() and
-	 * section.oclIsKindOf(consol::PreoperativeDiagnosisSection
-	 * ))->asSequence()->
-	 * any(true).oclAsType(consol::PreoperativeDiagnosisSection) <!--
-	 * end-model-doc -->
-	 * 
-	 * @model kind="operation" required="true" ordered="false" annotation=
-	 *        "http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::PreoperativeDiagnosisSection))->asSequence()->any(true).oclAsType(consol::PreoperativeDiagnosisSection)'"
-	 * @generated
-	 */
-	PreoperativeDiagnosisSection getPreoperativeDiagnosisSection();
-
-	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc --> <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not
-	 * section.oclIsUndefined() and section.oclIsKindOf(consol::
-	 * HospitalAdmissionMedicationsSectionEntriesOptional
-	 * ))->asSequence()->any(true
-	 * ).oclAsType(consol::HospitalAdmissionMedicationsSectionEntriesOptional)
-	 * <!-- end-model-doc -->
-	 * 
-	 * @model kind="operation" required="true" ordered="false" annotation=
-	 *        "http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::HospitalAdmissionMedicationsSectionEntriesOptional))->asSequence()->any(true).oclAsType(consol::HospitalAdmissionMedicationsSectionEntriesOptional)'"
-	 * @generated
-	 */
-	HospitalAdmissionMedicationsSectionEntriesOptional getHospitalAdmissionMedicationsSectionEntriesOptional();
-
-	/**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * @generated
-   */
 	public VDTInpatientSummary init();
 
 	/**

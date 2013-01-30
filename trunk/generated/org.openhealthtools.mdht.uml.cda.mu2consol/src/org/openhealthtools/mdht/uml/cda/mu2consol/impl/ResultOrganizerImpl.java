@@ -10,7 +10,6 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.mu2consol.impl;
 
-import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
@@ -35,57 +34,57 @@ public class ResultOrganizerImpl extends
 		org.openhealthtools.mdht.uml.cda.consol.impl.ResultOrganizerImpl
 		implements ResultOrganizer {
 	/**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * @generated
-   */
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * @generated
+	 */
 	protected ResultOrganizerImpl() {
-    super();
-  }
+		super();
+	}
 
 	/**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * @generated
-   */
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
-    return Mu2consolPackage.Literals.RESULT_ORGANIZER;
-  }
+		return Mu2consolPackage.Literals.RESULT_ORGANIZER;
+	}
 
 	/**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * @generated
-   */
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * @generated
+	 */
 	public boolean validateMu2consolResultOrganizerResultObservation(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return ResultOrganizerOperations.validateMu2consolResultOrganizerResultObservation(this, diagnostics, context);
-  }
+		return ResultOrganizerOperations.validateMu2consolResultOrganizerResultObservation(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * @generated
-   */
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * @generated
+	 */
 	public EList<ResultObservation> getMu2consolResultObservations() {
-    return ResultOrganizerOperations.getMu2consolResultObservations(this);
-  }
+		return ResultOrganizerOperations.getMu2consolResultObservations(this);
+	}
 
 	/**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * @generated
-   */
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public boolean validateResultOrganizerTemplateId(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return ResultOrganizerOperations.validateResultOrganizerTemplateId(this, diagnostics, context);
-  }
+		return ResultOrganizerOperations.validateResultOrganizerTemplateId(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * @generated
-   */
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public ResultOrganizer init() {
-      return Initializer.Util.init(this);
-  }
+	    return Initializer.Util.init(this);
+	}
 
 	/**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
