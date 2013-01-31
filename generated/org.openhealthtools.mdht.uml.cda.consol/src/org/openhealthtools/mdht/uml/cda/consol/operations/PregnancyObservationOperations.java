@@ -590,7 +590,7 @@ public class PregnancyObservationOperations extends ClinicalStatementOperations 
 			pregnancyObservation)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PREGNANCY_OBSERVATION__PREGNANCY_OBSERVATION_ESTIMATED_DATE_OF_DELIVERY,
 					ConsolPlugin.INSTANCE.getString("PregnancyObservationEstimatedDateOfDelivery"),
 					new Object[] { pregnancyObservation }));

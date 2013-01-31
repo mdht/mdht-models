@@ -11457,12 +11457,12 @@
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="CognitiveStatusProblemObservation" eSuperTypes="#//ProblemObservation">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
-      <details key="constraints.validation.error" value="CognitiveStatusProblemObservationTemplateId CognitiveStatusProblemObservationHasTextReferenceValue CognitiveStatusProblemObservationHasOnsetDate CognitiveStatusProblemObservationClassCode CognitiveStatusProblemObservationMoodCode CognitiveStatusProblemObservationId CognitiveStatusProblemObservationCodeP CognitiveStatusProblemObservationStatusCode CognitiveStatusProblemObservationValueP CognitiveStatusProblemObservationCaregiverCharacteristics CognitiveStatusProblemObservationAssessmentScaleObservation"/>
+      <details key="constraints.validation.error" value="CognitiveStatusProblemObservationTemplateId CognitiveStatusProblemObservationHasTextReferenceValue CognitiveStatusProblemObservationHasOnsetDate CognitiveStatusProblemObservationClassCode CognitiveStatusProblemObservationMoodCode CognitiveStatusProblemObservationId CognitiveStatusProblemObservationCodeP CognitiveStatusProblemObservationStatusCode CognitiveStatusProblemObservationValueP"/>
       <details key="templateId.root" value="2.16.840.1.113883.10.20.22.4.73"/>
       <details key="constraints.validation.warning" value="CognitiveStatusProblemObservationHasTextReference CognitiveStatusProblemObservationHasResolutionDate CognitiveStatusProblemObservationCode CognitiveStatusProblemObservationText CognitiveStatusProblemObservationEffectiveTime CognitiveStatusProblemObservationValue"/>
       <details key="classCode" value="OBS"/>
       <details key="moodCode" value="EVN"/>
-      <details key="constraints.validation.info" value="CognitiveStatusProblemObservationNegationInd CognitiveStatusProblemObservationMethodCode CognitiveStatusProblemObservationNonMedicinalSupplyActivity"/>
+      <details key="constraints.validation.info" value="CognitiveStatusProblemObservationNegationInd CognitiveStatusProblemObservationMethodCode CognitiveStatusProblemObservationNonMedicinalSupplyActivity CognitiveStatusProblemObservationCaregiverCharacteristics CognitiveStatusProblemObservationAssessmentScaleObservation"/>
       <details key="code.code" value="373930000"/>
       <details key="code.codeSystem" value="2.16.840.1.113883.6.1"/>
       <details key="code.codeSystemName" value="LOINC"/>
@@ -14625,7 +14625,7 @@
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="PregnancyObservation" eSuperTypes="urn:hl7-org:v3#//Observation">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
-      <details key="constraints.validation.error" value="PregnancyObservationTemplateId PregnancyObservationClassCode PregnancyObservationMoodCode PregnancyObservationCode PregnancyObservationCodeP PregnancyObservationStatusCode PregnancyObservationValue PregnancyObservationEstimatedDateOfDelivery"/>
+      <details key="constraints.validation.error" value="PregnancyObservationTemplateId PregnancyObservationClassCode PregnancyObservationMoodCode PregnancyObservationCode PregnancyObservationCodeP PregnancyObservationStatusCode PregnancyObservationValue"/>
       <details key="templateId.root" value="2.16.840.1.113883.10.20.15.3.8"/>
       <details key="classCode" value="OBS"/>
       <details key="moodCode" value="EVN"/>
@@ -14640,6 +14640,7 @@
       <details key="value.codeSystemName" value="SNOMEDCT"/>
       <details key="value.displayName" value="Pregnant"/>
       <details key="constraints.validation.warning" value="PregnancyObservationEffectiveTime"/>
+      <details key="constraints.validation.info" value="PregnancyObservationEstimatedDateOfDelivery"/>
     </eAnnotations>
     <eOperations name="PregnancyObservationTemplateId" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
