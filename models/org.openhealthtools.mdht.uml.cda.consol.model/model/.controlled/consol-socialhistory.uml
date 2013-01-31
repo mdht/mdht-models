@@ -188,8 +188,8 @@
       <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_fUQ50Eo8Ed6c3qsAxlFHaQ"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_5LtGIBtpEeGT89b80j3MTg" name="estimatedDateOfDelivery" type="_vBswQBtpEeGT89b80j3MTg" association="_5LuUQBtpEeGT89b80j3MTg">
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_3HYxMBxqEeGxw6kUE5T3pg" value="1"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_3HYxMRxqEeGxw6kUE5T3pg" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_PrQmcGsiEeKMLasV-rp2QA" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_PrQmcWsiEeKMLasV-rp2QA"/>
     </ownedAttribute>
   </uml:Class>
   <CDA:CDATemplate xmi:id="_aXMCcBncEeGs5a462vYX5Q" base_Class="_2N6soBSVEeGGzu7fmW9pXw" templateId="2.16.840.1.113883.10.20.15.3.8">
