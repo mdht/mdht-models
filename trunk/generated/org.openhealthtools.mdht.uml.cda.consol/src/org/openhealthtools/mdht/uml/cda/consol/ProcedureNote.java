@@ -119,7 +119,7 @@ public interface ProcedureNote extends GeneralHeaderConstraints {
 	* @param diagnostics The chain of diagnostics to which problems are to be appended.
 	* @param context The cache of context-specific information.
 	* <!-- end-model-doc -->
-	* @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and \nlet value : datatypes::CE = self.code.oclAsType(datatypes::CE) in \nvalue.codeSystem = \'2.16.840.1.113883.6.1\' and (value.code = \'28570-0\' or value.code = \'11505-5\' or value.code = \'18744-3\' or value.code = \'18745-0\' or value.code = \'18746-8\' or value.code = \'18751-8\' or value.code = \'18753-4\' or value.code = \'18836-7\' or value.code = \'28577-5\' or value.code = \'28625-2\' or value.code = \'29757-2\' or value.code = \'33721-2\' or value.code = \'34121-4\' or value.code = \'34896-1\' or value.code = \'34899-5\' or value.code = \'47048-4\' or value.code = \'48807-2\'))'"
+	* @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and \r\nlet value : datatypes::CE = self.code.oclAsType(datatypes::CE) in \r\nvalue.codeSystem = \'2.16.840.1.113883.6.1\' and (value.code = \'28570-0\' or value.code = \'11505-5\' or value.code = \'18744-3\' or value.code = \'18745-0\' or value.code = \'18746-8\' or value.code = \'18751-8\' or value.code = \'18753-4\' or value.code = \'18836-7\' or value.code = \'28577-5\' or value.code = \'28625-2\' or value.code = \'29757-2\' or value.code = \'33721-2\' or value.code = \'34121-4\' or value.code = \'34896-1\' or value.code = \'34899-5\' or value.code = \'47048-4\' or value.code = \'48807-2\'))'"
 	* @generated
 	*/
 	boolean validateProcedureNoteCode(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -612,7 +612,7 @@ public interface ProcedureNote extends GeneralHeaderConstraints {
 	* @param diagnostics The chain of diagnostics to which problems are to be appended.
 	* @param context The cache of context-specific information.
 	* <!-- end-model-doc -->
-	* @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.documentationOf->excluding(null).serviceEvent->excluding(null).performer->excluding(null)->select(typeCode = vocab::x_ServiceEventPerformer::PPRF).assignedEntity->excluding(null)->reject((code.oclIsUndefined() or code.isNullFlavorUndefined()) implies (not code.oclIsUndefined() and code.oclIsKindOf(datatypes::CE) and \nlet value : datatypes::CE = code.oclAsType(datatypes::CE) in \nvalue.codeSystem = \'2.16.840.1.113883.6.101\' and not value.code.oclIsUndefined()))'"
+	* @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.documentationOf->excluding(null).serviceEvent->excluding(null).performer->excluding(null)->select(typeCode = vocab::x_ServiceEventPerformer::PPRF).assignedEntity->excluding(null)->reject((code.oclIsUndefined() or code.isNullFlavorUndefined()) implies (not code.oclIsUndefined() and code.oclIsKindOf(datatypes::CE) and \r\nlet value : datatypes::CE = code.oclAsType(datatypes::CE) in \r\nvalue.codeSystem = \'2.16.840.1.113883.6.101\' and not value.code.oclIsUndefined()))'"
 	* @generated
 	*/
 	boolean validateProcedureNoteDocumentationOfServiceEvent1PrimaryPerformerAssignedEntityCode(
