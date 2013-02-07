@@ -1148,15 +1148,6 @@ public class Mu2consolPackageImpl extends EPackageImpl implements
 
         initEClass(encounterActivitiesEClass, EncounterActivities.class, "EncounterActivities", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
-        op = addEOperation(encounterActivitiesEClass, ecorePackage.getEBoolean(), "validateMu2consolEncounterActivitiesCodeValue", 0, 1, IS_UNIQUE, IS_ORDERED);
-        addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
-        g1 = createEGenericType(ecorePackage.getEMap());
-        g2 = createEGenericType(ecorePackage.getEJavaObject());
-        g1.getETypeArguments().add(g2);
-        g2 = createEGenericType(ecorePackage.getEJavaObject());
-        g1.getETypeArguments().add(g2);
-        addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
-
         initEClass(encountersSectionEClass, EncountersSection.class, "EncountersSection", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
         op = addEOperation(encountersSectionEClass, ecorePackage.getEBoolean(), "validateMu2consolEncountersSectionEncounterActivities", 0, 1, IS_UNIQUE, IS_ORDERED);
@@ -1203,7 +1194,7 @@ public class Mu2consolPackageImpl extends EPackageImpl implements
            source, 
            new String[] {
              "initializers", "org.openhealthtools.mdht.uml.cda.mu2consol"
-           });                                                                                                                                                                                                                                                               
+           });                                                                                                                                                                                                                                                            
     }
 
 	/**
@@ -1337,9 +1328,9 @@ public class Mu2consolPackageImpl extends EPackageImpl implements
           (encounterActivitiesEClass, 
            source, 
            new String[] {
-             "constraints.validation.error", "Mu2consolEncounterActivitiesTemplateId Mu2consolEncounterActivitiesCodeValue",
+             "constraints.validation.error", "Mu2consolEncounterActivitiesTemplateId",
              "templateId.root", "2.16.840.1.113883.10.20.22.4.49"
-           });         
+           });      
         addAnnotation
           (encountersSectionEClass, 
            source, 
@@ -1366,7 +1357,7 @@ public class Mu2consolPackageImpl extends EPackageImpl implements
              "constraints.validation.error", "RecordTargetPatientRole RecordTargetPatientRolePatientLanguageCommunicationLanguageCodeP RecordTargetPatientRolePatientLanguageCommunicationLanguageCode RecordTargetPatientRolePatientEthnicGroupCode RecordTargetPatientRolePatientEthnicGroupCodeP RecordTargetPatientRolePatientRaceCode RecordTargetPatientRolePatientRaceCodeP RecordTargetPatientRolePatientLanguageCommunication RecordTargetPatientRolePatient",
              "constraints.validation.query", "RecordTargetPatientRolePatientLanguageCommunicationLanguageCodeP RecordTargetPatientRolePatientLanguageCommunicationLanguageCode RecordTargetPatientRolePatientEthnicGroupCode RecordTargetPatientRolePatientEthnicGroupCodeP RecordTargetPatientRolePatientRaceCode RecordTargetPatientRolePatientRaceCodeP RecordTargetPatientRolePatientLanguageCommunication RecordTargetPatientRolePatient",
              "constraints.validation.dependOn.RecordTargetPatientRolePatientLanguageCommunicationLanguageCode", "RecordTargetPatientRolePatientLanguageCommunicationLanguageCodeP"
-           });                                                                                                                                                                                                                                                             
+           });                                                                                                                                                                                                                                                          
     }
 
 	/**
@@ -1386,7 +1377,7 @@ public class Mu2consolPackageImpl extends EPackageImpl implements
              "constraints.validation.error", "PatientRolePatient PatientRolePatientLanguageCommunicationLanguageCodeP PatientRolePatientLanguageCommunicationLanguageCode PatientRolePatientEthnicGroupCode PatientRolePatientEthnicGroupCodeP PatientRolePatientRaceCode PatientRolePatientRaceCodeP PatientRolePatientLanguageCommunication",
              "constraints.validation.query", "PatientRolePatientLanguageCommunicationLanguageCodeP PatientRolePatientLanguageCommunicationLanguageCode PatientRolePatientEthnicGroupCode PatientRolePatientEthnicGroupCodeP PatientRolePatientRaceCode PatientRolePatientRaceCodeP PatientRolePatientLanguageCommunication",
              "constraints.validation.dependOn.PatientRolePatientLanguageCommunicationLanguageCode", "PatientRolePatientLanguageCommunicationLanguageCodeP"
-           });                                                                                                                                                                                                                                                            
+           });                                                                                                                                                                                                                                                         
     }
 
 	/**
@@ -1410,7 +1401,7 @@ public class Mu2consolPackageImpl extends EPackageImpl implements
              "raceCode.codeSystemName", "Race and Ethnicity - CDC",
              "constraints.validation.query", "PatientLanguageCommunicationLanguageCodeP PatientLanguageCommunicationLanguageCode",
              "constraints.validation.dependOn.PatientLanguageCommunicationLanguageCode", "PatientLanguageCommunicationLanguageCodeP"
-           });                                                                                                                                                                                                                                                           
+           });                                                                                                                                                                                                                                                        
     }
 
 	/**
@@ -1426,7 +1417,7 @@ public class Mu2consolPackageImpl extends EPackageImpl implements
            new String[] {
              "constraints.validation.error", "LanguageCommunicationLanguageCode LanguageCommunicationLanguageCodeP",
              "constraints.validation.dependOn.LanguageCommunicationLanguageCode", "LanguageCommunicationLanguageCodeP"
-           });                                                                                                                                                                                                                                                          
+           });                                                                                                                                                                                                                                                       
     }
 
 	/**
@@ -1491,7 +1482,7 @@ public class Mu2consolPackageImpl extends EPackageImpl implements
           (encounterActivitiesEClass, 
            source, 
            new String[] {
-           });         
+           });      
         addAnnotation
           (encountersSectionEClass, 
            source, 

@@ -223,28 +223,21 @@ public class Mu2consolValidator extends EObjectValidator {
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int ENCOUNTERS_SECTION__MU2CONSOL_ENCOUNTERS_SECTION_ENCOUNTER_ACTIVITIES = 80;
+	public static final int ENCOUNTERS_SECTION__MU2CONSOL_ENCOUNTERS_SECTION_ENCOUNTER_ACTIVITIES = 79;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Encounters Section Entries Optional Template Id' of 'Encounters Section'.
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int ENCOUNTERS_SECTION__ENCOUNTERS_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID = 81;
-
-	/**
-	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Mu2consol Encounter Activities Code Value' of 'Encounter Activities'.
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
-	public static final int ENCOUNTER_ACTIVITIES__MU2CONSOL_ENCOUNTER_ACTIVITIES_CODE_VALUE = 78;
+	public static final int ENCOUNTERS_SECTION__ENCOUNTERS_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID = 80;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Encounter Activities Template Id' of 'Encounter Activities'.
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int ENCOUNTER_ACTIVITIES__ENCOUNTER_ACTIVITIES_TEMPLATE_ID = 79;
+	public static final int ENCOUNTER_ACTIVITIES__ENCOUNTER_ACTIVITIES_TEMPLATE_ID = 78;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Mu2consol Assessment Section Problem Observation' of 'Assessment Section'.
@@ -694,7 +687,7 @@ public class Mu2consolValidator extends EObjectValidator {
 	 * end-user-doc -->
 	 * @generated
 	 */
-	private static final int GENERATED_DIAGNOSTIC_CODE_COUNT = 81;
+	private static final int GENERATED_DIAGNOSTIC_CODE_COUNT = 80;
 
 	/**
 	 * A constant with a fixed name that can be used as the base value for additional hand written constants in a derived class.
@@ -1706,21 +1699,10 @@ public class Mu2consolValidator extends EObjectValidator {
 		if (result || diagnostics != null) result &= consolValidator.validateEncounterActivities_validateEncounterActivitiesEncounterDiagnosis(encounterActivities, diagnostics, context);
 		if (result || diagnostics != null) result &= consolValidator.validateEncounterActivities_validateEncounterActivitiesEncounterPerformerEncounterPerformerAssignedEntityCode(encounterActivities, diagnostics, context);
 		if (result || diagnostics != null) result &= consolValidator.validateEncounterActivities_validateEncounterActivitiesEncounterPerformerEncounterPerformerAssignedEntity(encounterActivities, diagnostics, context);
-		if (result || diagnostics != null) result &= validateEncounterActivities_validateMu2consolEncounterActivitiesCodeValue(encounterActivities, diagnostics, context);
 		return result;
 	}
 
-	/**
-	 * Validates the validateMu2consolEncounterActivitiesCodeValue constraint of '<em>Encounter Activities</em>'.
-	 * <!-- begin-user-doc --> <!--
-	 * end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateEncounterActivities_validateMu2consolEncounterActivitiesCodeValue(
-			EncounterActivities encounterActivities,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return encounterActivities.validateMu2consolEncounterActivitiesCodeValue(diagnostics, context);
-	}
+	
 
 	/**
 	 * Validates the validateEncounterActivitiesTemplateId constraint of '
