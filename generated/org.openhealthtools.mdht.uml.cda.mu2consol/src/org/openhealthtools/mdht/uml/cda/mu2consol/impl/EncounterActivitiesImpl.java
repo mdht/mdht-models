@@ -10,6 +10,7 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.mu2consol.impl;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
@@ -46,15 +47,6 @@ public class EncounterActivitiesImpl extends
 	@Override
 	protected EClass eStaticClass() {
 		return Mu2consolPackage.Literals.ENCOUNTER_ACTIVITIES;
-	}
-
-	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateMu2consolEncounterActivitiesCodeValue(
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return EncounterActivitiesOperations.validateMu2consolEncounterActivitiesCodeValue(this, diagnostics, context);
 	}
 
 	/**

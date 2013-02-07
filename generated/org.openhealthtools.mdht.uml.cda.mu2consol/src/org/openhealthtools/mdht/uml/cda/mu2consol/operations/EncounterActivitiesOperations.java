@@ -20,7 +20,6 @@ import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
 import org.openhealthtools.mdht.uml.cda.mu2consol.EncounterActivities;
 import org.openhealthtools.mdht.uml.cda.mu2consol.Mu2consolPackage;
-import org.openhealthtools.mdht.uml.cda.mu2consol.Mu2consolPlugin;
 import org.openhealthtools.mdht.uml.cda.mu2consol.util.Mu2consolValidator;
 
 /**
@@ -31,7 +30,6 @@ import org.openhealthtools.mdht.uml.cda.mu2consol.util.Mu2consolValidator;
  * <p>
  * The following operations are supported:
  * <ul>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.mu2consol.EncounterActivities#validateMu2consolEncounterActivitiesCodeValue(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Mu2consol Encounter Activities Code Value</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.mu2consol.EncounterActivities#validateEncounterActivitiesTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Encounter Activities Template Id</em>}</li>
  * </ul>
  * </p>
@@ -47,71 +45,6 @@ public class EncounterActivitiesOperations
 	 */
 	protected EncounterActivitiesOperations() {
 		super();
-	}
-
-	/**
-	 * The cached OCL expression body for the '{@link #validateMu2consolEncounterActivitiesCodeValue(EncounterActivities, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Mu2consol Encounter Activities Code Value</em>}' operation.
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @see #validateMu2consolEncounterActivitiesCodeValue(EncounterActivities, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String VALIDATE_MU2CONSOL_ENCOUNTER_ACTIVITIES_CODE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.code.isNullFlavorDefined() or self.code.codeSystem = '2.16.840.1.113883.6.3' xor self.code.codeSystem = '2.16.840.1.113883.6.96'";
-
-	/**
-	 * The cached OCL invariant for the '{@link #validateMu2consolEncounterActivitiesCodeValue(EncounterActivities, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Mu2consol Encounter Activities Code Value</em>}' invariant operation.
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @see #validateMu2consolEncounterActivitiesCodeValue(EncounterActivities, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-
-	protected static Constraint VALIDATE_MU2CONSOL_ENCOUNTER_ACTIVITIES_CODE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-
-	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc --> <!-- begin-model-doc -->
-	 * self.code.codeSystem = '2.16.840.1.113883.6.3' xor self.code.codeSystem =
-	 * '2.16.840.1.113883.6.96'
-	 * 
-	 * @param encounterActivities
-	 *            The receiving '<em><b>Encounter Activities</b></em>' model
-	 *            object.
-	 * @param diagnostics
-	 *            The chain of diagnostics to which problems are to be appended.
-	 * @param context
-	 *            The cache of context-specific information. <!-- end-model-doc
-	 *            -->
-	 * @generated
-	 */
-
-	public static boolean validateMu2consolEncounterActivitiesCodeValue(
-			EncounterActivities encounterActivities,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
-		if (VALIDATE_MU2CONSOL_ENCOUNTER_ACTIVITIES_CODE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(Mu2consolPackage.Literals.ENCOUNTER_ACTIVITIES);
-			try {
-				VALIDATE_MU2CONSOL_ENCOUNTER_ACTIVITIES_CODE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MU2CONSOL_ENCOUNTER_ACTIVITIES_CODE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_MU2CONSOL_ENCOUNTER_ACTIVITIES_CODE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(encounterActivities)) {
-			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 Mu2consolValidator.DIAGNOSTIC_SOURCE,
-						 Mu2consolValidator.ENCOUNTER_ACTIVITIES__MU2CONSOL_ENCOUNTER_ACTIVITIES_CODE_VALUE,
-						 Mu2consolPlugin.INSTANCE.getString("Mu2consolEncounterActivitiesCodeValue"),
-						 new Object [] { encounterActivities }));
-			}
-			 
-			return false;
-		}
-		return true;
 	}
 
 	/**
