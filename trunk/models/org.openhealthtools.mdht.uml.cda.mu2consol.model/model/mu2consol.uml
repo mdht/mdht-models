@@ -743,23 +743,9 @@ and componentOf/encompassingEncounter/encounterParticipant/assignedEntity/addr</
       <ownedEnd xmi:id="_SwLbQQJvEeKIhvHOhwsFvA" type="_R5ZkQAJvEeKIhvHOhwsFvA" association="_SwLbQAJvEeKIhvHOhwsFvA"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_zL3xEAKcEeKIhvHOhwsFvA" name="EncounterActivities">
-      <ownedRule xmi:id="_QLlMMAKeEeKIhvHOhwsFvA" name="codeValue" constrainedElement="_zL3xEAKcEeKIhvHOhwsFvA">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_WnjxIAKeEeKIhvHOhwsFvA">
-          <language>Analysis</language>
-          <language>OCL</language>
-          <body>The value for 'code' for encounter activities  SHALL be selected from ICD-10(codeSystem 2.16.840.1.113883.6.3) or SNOMED CT (codeSystem 2.16.840.1.113883.6.96)</body>
-          <body>self.code.isNullFlavorDefined() or self.code.codeSystem = '2.16.840.1.113883.6.3' xor self.code.codeSystem = '2.16.840.1.113883.6.96'</body>
-        </specification>
-      </ownedRule>
       <generalization xmi:id="_zL4YIAKcEeKIhvHOhwsFvA">
         <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-encounters.uml#_2LayQBSVEeGGzu7fmW9pXw"/>
       </generalization>
-      <ownedAttribute xmi:id="_0Sfa4AKcEeKIhvHOhwsFvA" name="code" visibility="private">
-        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0Sfa4QKcEeKIhvHOhwsFvA" value="1"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0Sfa4gKcEeKIhvHOhwsFvA"/>
-        <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-encounters.uml#_2LayUhSVEeGGzu7fmW9pXw"/>
-      </ownedAttribute>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_9AQcQAKcEeKIhvHOhwsFvA" name="EncountersSection">
       <generalization xmi:id="_9AQcQQKcEeKIhvHOhwsFvA">
@@ -929,7 +915,6 @@ and componentOf/encompassingEncounter/encounterParticipant/assignedEntity/addr</
     <ruleId>CONF:8803</ruleId>
   </CDA:AssociationValidation>
   <CDA:CDATemplate xmi:id="_BArkwAKdEeKIhvHOhwsFvA" base_Class="_9AQcQAKcEeKIhvHOhwsFvA" templateId="2.16.840.1.113883.10.20.22.2.22.1"/>
-  <CDA:ConstraintValidation xmi:id="_kLGOoAKeEeKIhvHOhwsFvA" base_Constraint="_QLlMMAKeEeKIhvHOhwsFvA"/>
   <CDA:PropertyValidation xmi:id="_Myj9wAKlEeKIhvHOhwsFvA" base_Property="_MyjWsAKlEeKIhvHOhwsFvA">
     <ruleId>CONF:7656</ruleId>
   </CDA:PropertyValidation>
