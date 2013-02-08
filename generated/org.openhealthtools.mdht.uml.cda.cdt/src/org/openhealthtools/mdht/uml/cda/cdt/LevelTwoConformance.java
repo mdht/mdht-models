@@ -26,10 +26,10 @@ import org.openhealthtools.mdht.emf.runtime.util.Initializer;
  */
 public interface LevelTwoConformance extends LevelOneConformance {
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public LevelTwoConformance init();
 
 	/**

@@ -33,48 +33,48 @@ import org.openhealthtools.mdht.uml.cda.impl.SectionImpl;
  */
 public class ReviewOfSystemsSectionIHEImpl extends SectionImpl implements ReviewOfSystemsSectionIHE {
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	protected ReviewOfSystemsSectionIHEImpl() {
 		super();
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
 		return CDTPackage.Literals.REVIEW_OF_SYSTEMS_SECTION_IHE;
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateReviewOfSystemsSectionIHETemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ReviewOfSystemsSectionIHEOperations.validateReviewOfSystemsSectionIHETemplateId(
 			this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateReviewOfSystemsSectionIHECode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ReviewOfSystemsSectionIHEOperations.validateReviewOfSystemsSectionIHECode(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public ReviewOfSystemsSectionIHE init() {
 		return Initializer.Util.init(this);
 	}

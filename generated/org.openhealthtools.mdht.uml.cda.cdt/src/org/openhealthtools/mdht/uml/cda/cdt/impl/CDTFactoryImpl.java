@@ -58,11 +58,11 @@ import org.openhealthtools.mdht.uml.cda.cdt.VitalSignsSection;
  */
 public class CDTFactoryImpl extends EFactoryImpl implements CDTFactory {
 	/**
-	* Creates the default factory implementation.
-	* <!-- begin-user-doc -->
+	 * Creates the default factory implementation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public static CDTFactory init() {
 		try {
 			CDTFactory theCDTFactory = (CDTFactory) EPackage.Registry.INSTANCE.getEFactory("http://www.openhealthtools.org/mdht/uml/cda/cdt");
@@ -76,20 +76,20 @@ public class CDTFactoryImpl extends EFactoryImpl implements CDTFactory {
 	}
 
 	/**
-	* Creates an instance of the factory.
-	* <!-- begin-user-doc -->
+	 * Creates an instance of the factory.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public CDTFactoryImpl() {
 		super();
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	@Override
 	public EObject create(EClass eClass) {
 		switch (eClass.getClassifierID()) {
@@ -163,340 +163,340 @@ public class CDTFactoryImpl extends EFactoryImpl implements CDTFactory {
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public GeneralHeaderConstraints createGeneralHeaderConstraints() {
 		GeneralHeaderConstraintsImpl generalHeaderConstraints = new GeneralHeaderConstraintsImpl();
 		return generalHeaderConstraints;
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public HistoryAndPhysical createHistoryAndPhysical() {
 		HistoryAndPhysicalImpl historyAndPhysical = new HistoryAndPhysicalImpl();
 		return historyAndPhysical;
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public ConsultationNote createConsultationNote() {
 		ConsultationNoteImpl consultationNote = new ConsultationNoteImpl();
 		return consultationNote;
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public LevelThreeConformance createLevelThreeConformance() {
 		LevelThreeConformanceImpl levelThreeConformance = new LevelThreeConformanceImpl();
 		return levelThreeConformance;
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public ReasonForReferralSection createReasonForReferralSection() {
 		ReasonForReferralSectionImpl reasonForReferralSection = new ReasonForReferralSectionImpl();
 		return reasonForReferralSection;
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public ReasonForVisitSectionConsult createReasonForVisitSectionConsult() {
 		ReasonForVisitSectionConsultImpl reasonForVisitSectionConsult = new ReasonForVisitSectionConsultImpl();
 		return reasonForVisitSectionConsult;
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public ReasonForVisitSection createReasonForVisitSection() {
 		ReasonForVisitSectionImpl reasonForVisitSection = new ReasonForVisitSectionImpl();
 		return reasonForVisitSection;
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public ChiefComplaintSection createChiefComplaintSection() {
 		ChiefComplaintSectionImpl chiefComplaintSection = new ChiefComplaintSectionImpl();
 		return chiefComplaintSection;
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public ReasonForVisitAndChiefComplaintSection createReasonForVisitAndChiefComplaintSection() {
 		ReasonForVisitAndChiefComplaintSectionImpl reasonForVisitAndChiefComplaintSection = new ReasonForVisitAndChiefComplaintSectionImpl();
 		return reasonForVisitAndChiefComplaintSection;
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public ProgressNote createProgressNote() {
 		ProgressNoteImpl progressNote = new ProgressNoteImpl();
 		return progressNote;
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public AssessmentAndPlanSectionProcNote createAssessmentAndPlanSectionProcNote() {
 		AssessmentAndPlanSectionProcNoteImpl assessmentAndPlanSectionProcNote = new AssessmentAndPlanSectionProcNoteImpl();
 		return assessmentAndPlanSectionProcNote;
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public AssessmentSectionProcNote createAssessmentSectionProcNote() {
 		AssessmentSectionProcNoteImpl assessmentSectionProcNote = new AssessmentSectionProcNoteImpl();
 		return assessmentSectionProcNote;
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public ChiefComplaintSectionProcNote createChiefComplaintSectionProcNote() {
 		ChiefComplaintSectionProcNoteImpl chiefComplaintSectionProcNote = new ChiefComplaintSectionProcNoteImpl();
 		return chiefComplaintSectionProcNote;
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public ObjectiveSection createObjectiveSection() {
 		ObjectiveSectionImpl objectiveSection = new ObjectiveSectionImpl();
 		return objectiveSection;
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public SubjectiveSection createSubjectiveSection() {
 		SubjectiveSectionImpl subjectiveSection = new SubjectiveSectionImpl();
 		return subjectiveSection;
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public UnstructuredDocument createUnstructuredDocument() {
 		UnstructuredDocumentImpl unstructuredDocument = new UnstructuredDocumentImpl();
 		return unstructuredDocument;
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public HospitalDischargeStudiesSummarySection createHospitalDischargeStudiesSummarySection() {
 		HospitalDischargeStudiesSummarySectionImpl hospitalDischargeStudiesSummarySection = new HospitalDischargeStudiesSummarySectionImpl();
 		return hospitalDischargeStudiesSummarySection;
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public HistoryOfPresentIllness createHistoryOfPresentIllness() {
 		HistoryOfPresentIllnessImpl historyOfPresentIllness = new HistoryOfPresentIllnessImpl();
 		return historyOfPresentIllness;
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public PastMedicalHistorySectionConsult createPastMedicalHistorySectionConsult() {
 		PastMedicalHistorySectionConsultImpl pastMedicalHistorySectionConsult = new PastMedicalHistorySectionConsultImpl();
 		return pastMedicalHistorySectionConsult;
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public LevelOneConformance createLevelOneConformance() {
 		LevelOneConformanceImpl levelOneConformance = new LevelOneConformanceImpl();
 		return levelOneConformance;
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public LevelTwoConformance createLevelTwoConformance() {
 		LevelTwoConformanceImpl levelTwoConformance = new LevelTwoConformanceImpl();
 		return levelTwoConformance;
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public PhysicalExaminationSection createPhysicalExaminationSection() {
 		PhysicalExaminationSectionImpl physicalExaminationSection = new PhysicalExaminationSectionImpl();
 		return physicalExaminationSection;
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public PastMedicalHistorySection createPastMedicalHistorySection() {
 		PastMedicalHistorySectionImpl pastMedicalHistorySection = new PastMedicalHistorySectionImpl();
 		return pastMedicalHistorySection;
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public ReviewOfSystemsSectionIHE createReviewOfSystemsSectionIHE() {
 		ReviewOfSystemsSectionIHEImpl reviewOfSystemsSectionIHE = new ReviewOfSystemsSectionIHEImpl();
 		return reviewOfSystemsSectionIHE;
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public ReviewOfSystemsSection createReviewOfSystemsSection() {
 		ReviewOfSystemsSectionImpl reviewOfSystemsSection = new ReviewOfSystemsSectionImpl();
 		return reviewOfSystemsSection;
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public GeneralStatusSection createGeneralStatusSection() {
 		GeneralStatusSectionImpl generalStatusSection = new GeneralStatusSectionImpl();
 		return generalStatusSection;
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public DiagnosticFindings createDiagnosticFindings() {
 		DiagnosticFindingsImpl diagnosticFindings = new DiagnosticFindingsImpl();
 		return diagnosticFindings;
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public VitalSignsSection createVitalSignsSection() {
 		VitalSignsSectionImpl vitalSignsSection = new VitalSignsSectionImpl();
 		return vitalSignsSection;
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public AssessmentSection createAssessmentSection() {
 		AssessmentSectionImpl assessmentSection = new AssessmentSectionImpl();
 		return assessmentSection;
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public PlanSection createPlanSection() {
 		PlanSectionImpl planSection = new PlanSectionImpl();
 		return planSection;
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public AssessmentAndPlanSection createAssessmentAndPlanSection() {
 		AssessmentAndPlanSectionImpl assessmentAndPlanSection = new AssessmentAndPlanSectionImpl();
 		return assessmentAndPlanSection;
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public CDTRegistryDelegate createCDTRegistryDelegate() {
 		CDTRegistryDelegateImpl cdtRegistryDelegate = new CDTRegistryDelegateImpl();
 		return cdtRegistryDelegate;
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public CDTPackage getCDTPackage() {
 		return (CDTPackage) getEPackage();
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @deprecated
-	* @generated
-	*/
+	 * @deprecated
+	 * @generated
+	 */
 	@Deprecated
 	public static CDTPackage getPackage() {
 		return CDTPackage.eINSTANCE;

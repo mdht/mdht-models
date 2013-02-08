@@ -32,10 +32,10 @@ import org.w3c.dom.NodeList;
  */
 public class CDTRegistryDelegateOperations {
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	protected CDTRegistryDelegateOperations() {
 		super();
 	}

@@ -33,38 +33,38 @@ import org.openhealthtools.mdht.uml.cda.cdt.operations.DiagnosticFindingsOperati
  */
 public class DiagnosticFindingsImpl extends ResultsSectionImpl implements DiagnosticFindings {
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	protected DiagnosticFindingsImpl() {
 		super();
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
 		return CDTPackage.Literals.DIAGNOSTIC_FINDINGS;
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateDiagnosticFindingsTitle(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return DiagnosticFindingsOperations.validateDiagnosticFindingsTitle(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	@Override
 	public DiagnosticFindings init() {
 		return Initializer.Util.init(this);

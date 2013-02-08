@@ -69,19 +69,19 @@ import org.openhealthtools.mdht.uml.hl7.rim.InfrastructureRoot;
  */
 public class CDTSwitch<T> {
 	/**
-	* The cached model package
-	* <!-- begin-user-doc -->
+	 * The cached model package
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	protected static CDTPackage modelPackage;
 
 	/**
-	* Creates an instance of the switch.
-	* <!-- begin-user-doc -->
+	 * Creates an instance of the switch.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public CDTSwitch() {
 		if (modelPackage == null) {
 			modelPackage = CDTPackage.eINSTANCE;
@@ -89,23 +89,23 @@ public class CDTSwitch<T> {
 	}
 
 	/**
-	* Calls <code>caseXXX</code> for each class of the model until one returns a non null result; it yields that result.
-	* <!-- begin-user-doc -->
+	 * Calls <code>caseXXX</code> for each class of the model until one returns a non null result; it yields that result.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @return the first non-null result returned by a <code>caseXXX</code> call.
-	* @generated
-	*/
+	 * @return the first non-null result returned by a <code>caseXXX</code> call.
+	 * @generated
+	 */
 	public T doSwitch(EObject theEObject) {
 		return doSwitch(theEObject.eClass(), theEObject);
 	}
 
 	/**
-	* Calls <code>caseXXX</code> for each class of the model until one returns a non null result; it yields that result.
-	* <!-- begin-user-doc -->
+	 * Calls <code>caseXXX</code> for each class of the model until one returns a non null result; it yields that result.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @return the first non-null result returned by a <code>caseXXX</code> call.
-	* @generated
-	*/
+	 * @return the first non-null result returned by a <code>caseXXX</code> call.
+	 * @generated
+	 */
 	protected T doSwitch(EClass theEClass, EObject theEObject) {
 		if (theEClass.eContainer() == modelPackage) {
 			return doSwitch(theEClass.getClassifierID(), theEObject);
@@ -118,12 +118,12 @@ public class CDTSwitch<T> {
 	}
 
 	/**
-	* Calls <code>caseXXX</code> for each class of the model until one returns a non null result; it yields that result.
-	* <!-- begin-user-doc -->
+	 * Calls <code>caseXXX</code> for each class of the model until one returns a non null result; it yields that result.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @return the first non-null result returned by a <code>caseXXX</code> call.
-	* @generated
-	*/
+	 * @return the first non-null result returned by a <code>caseXXX</code> call.
+	 * @generated
+	 */
 	protected T doSwitch(int classifierID, EObject theEObject) {
 		switch (classifierID) {
 			case CDTPackage.GENERAL_HEADER_CONSTRAINTS: {
@@ -694,586 +694,586 @@ public class CDTSwitch<T> {
 	}
 
 	/**
-	* Returns the result of interpreting the object as an instance of '<em>General Header Constraints</em>'.
-	* <!-- begin-user-doc -->
+	 * Returns the result of interpreting the object as an instance of '<em>General Header Constraints</em>'.
+	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
-	* @param object the target of the switch.
-	* @return the result of interpreting the object as an instance of '<em>General Header Constraints</em>'.
-	* @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	* @generated
-	*/
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>General Header Constraints</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
 	public T caseGeneralHeaderConstraints(GeneralHeaderConstraints object) {
 		return null;
 	}
 
 	/**
-	* Returns the result of interpreting the object as an instance of '<em>History And Physical</em>'.
-	* <!-- begin-user-doc -->
+	 * Returns the result of interpreting the object as an instance of '<em>History And Physical</em>'.
+	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
-	* @param object the target of the switch.
-	* @return the result of interpreting the object as an instance of '<em>History And Physical</em>'.
-	* @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	* @generated
-	*/
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>History And Physical</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
 	public T caseHistoryAndPhysical(HistoryAndPhysical object) {
 		return null;
 	}
 
 	/**
-	* Returns the result of interpreting the object as an instance of '<em>Consultation Note</em>'.
-	* <!-- begin-user-doc -->
+	 * Returns the result of interpreting the object as an instance of '<em>Consultation Note</em>'.
+	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
-	* @param object the target of the switch.
-	* @return the result of interpreting the object as an instance of '<em>Consultation Note</em>'.
-	* @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	* @generated
-	*/
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Consultation Note</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
 	public T caseConsultationNote(ConsultationNote object) {
 		return null;
 	}
 
 	/**
-	* Returns the result of interpreting the object as an instance of '<em>Reason For Referral Section</em>'.
-	* <!-- begin-user-doc -->
+	 * Returns the result of interpreting the object as an instance of '<em>Reason For Referral Section</em>'.
+	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
-	* @param object the target of the switch.
-	* @return the result of interpreting the object as an instance of '<em>Reason For Referral Section</em>'.
-	* @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	* @generated
-	*/
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Reason For Referral Section</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
 	public T caseReasonForReferralSection(ReasonForReferralSection object) {
 		return null;
 	}
 
 	/**
-	* Returns the result of interpreting the object as an instance of '<em>Reason For Visit Section Consult</em>'.
-	* <!-- begin-user-doc -->
+	 * Returns the result of interpreting the object as an instance of '<em>Reason For Visit Section Consult</em>'.
+	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
-	* @param object the target of the switch.
-	* @return the result of interpreting the object as an instance of '<em>Reason For Visit Section Consult</em>'.
-	* @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	* @generated
-	*/
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Reason For Visit Section Consult</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
 	public T caseReasonForVisitSectionConsult(ReasonForVisitSectionConsult object) {
 		return null;
 	}
 
 	/**
-	* Returns the result of interpreting the object as an instance of '<em>Level One Conformance</em>'.
-	* <!-- begin-user-doc -->
+	 * Returns the result of interpreting the object as an instance of '<em>Level One Conformance</em>'.
+	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
-	* @param object the target of the switch.
-	* @return the result of interpreting the object as an instance of '<em>Level One Conformance</em>'.
-	* @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	* @generated
-	*/
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Level One Conformance</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
 	public T caseLevelOneConformance(LevelOneConformance object) {
 		return null;
 	}
 
 	/**
-	* Returns the result of interpreting the object as an instance of '<em>Level Two Conformance</em>'.
-	* <!-- begin-user-doc -->
+	 * Returns the result of interpreting the object as an instance of '<em>Level Two Conformance</em>'.
+	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
-	* @param object the target of the switch.
-	* @return the result of interpreting the object as an instance of '<em>Level Two Conformance</em>'.
-	* @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	* @generated
-	*/
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Level Two Conformance</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
 	public T caseLevelTwoConformance(LevelTwoConformance object) {
 		return null;
 	}
 
 	/**
-	* Returns the result of interpreting the object as an instance of '<em>Level Three Conformance</em>'.
-	* <!-- begin-user-doc -->
+	 * Returns the result of interpreting the object as an instance of '<em>Level Three Conformance</em>'.
+	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
-	* @param object the target of the switch.
-	* @return the result of interpreting the object as an instance of '<em>Level Three Conformance</em>'.
-	* @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	* @generated
-	*/
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Level Three Conformance</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
 	public T caseLevelThreeConformance(LevelThreeConformance object) {
 		return null;
 	}
 
 	/**
-	* Returns the result of interpreting the object as an instance of '<em>Physical Examination Section</em>'.
-	* <!-- begin-user-doc -->
+	 * Returns the result of interpreting the object as an instance of '<em>Physical Examination Section</em>'.
+	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
-	* @param object the target of the switch.
-	* @return the result of interpreting the object as an instance of '<em>Physical Examination Section</em>'.
-	* @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	* @generated
-	*/
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Physical Examination Section</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
 	public T casePhysicalExaminationSection(PhysicalExaminationSection object) {
 		return null;
 	}
 
 	/**
-	* Returns the result of interpreting the object as an instance of '<em>Past Medical History Section</em>'.
-	* <!-- begin-user-doc -->
+	 * Returns the result of interpreting the object as an instance of '<em>Past Medical History Section</em>'.
+	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
-	* @param object the target of the switch.
-	* @return the result of interpreting the object as an instance of '<em>Past Medical History Section</em>'.
-	* @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	* @generated
-	*/
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Past Medical History Section</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
 	public T casePastMedicalHistorySection(PastMedicalHistorySection object) {
 		return null;
 	}
 
 	/**
-	* Returns the result of interpreting the object as an instance of '<em>Review Of Systems Section IHE</em>'.
-	* <!-- begin-user-doc -->
+	 * Returns the result of interpreting the object as an instance of '<em>Review Of Systems Section IHE</em>'.
+	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
-	* @param object the target of the switch.
-	* @return the result of interpreting the object as an instance of '<em>Review Of Systems Section IHE</em>'.
-	* @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	* @generated
-	*/
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Review Of Systems Section IHE</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
 	public T caseReviewOfSystemsSectionIHE(ReviewOfSystemsSectionIHE object) {
 		return null;
 	}
 
 	/**
-	* Returns the result of interpreting the object as an instance of '<em>Review Of Systems Section</em>'.
-	* <!-- begin-user-doc -->
+	 * Returns the result of interpreting the object as an instance of '<em>Review Of Systems Section</em>'.
+	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
-	* @param object the target of the switch.
-	* @return the result of interpreting the object as an instance of '<em>Review Of Systems Section</em>'.
-	* @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	* @generated
-	*/
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Review Of Systems Section</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
 	public T caseReviewOfSystemsSection(ReviewOfSystemsSection object) {
 		return null;
 	}
 
 	/**
-	* Returns the result of interpreting the object as an instance of '<em>General Status Section</em>'.
-	* <!-- begin-user-doc -->
+	 * Returns the result of interpreting the object as an instance of '<em>General Status Section</em>'.
+	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
-	* @param object the target of the switch.
-	* @return the result of interpreting the object as an instance of '<em>General Status Section</em>'.
-	* @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	* @generated
-	*/
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>General Status Section</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
 	public T caseGeneralStatusSection(GeneralStatusSection object) {
 		return null;
 	}
 
 	/**
-	* Returns the result of interpreting the object as an instance of '<em>Diagnostic Findings</em>'.
-	* <!-- begin-user-doc -->
+	 * Returns the result of interpreting the object as an instance of '<em>Diagnostic Findings</em>'.
+	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
-	* @param object the target of the switch.
-	* @return the result of interpreting the object as an instance of '<em>Diagnostic Findings</em>'.
-	* @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	* @generated
-	*/
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Diagnostic Findings</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
 	public T caseDiagnosticFindings(DiagnosticFindings object) {
 		return null;
 	}
 
 	/**
-	* Returns the result of interpreting the object as an instance of '<em>Vital Signs Section</em>'.
-	* <!-- begin-user-doc -->
+	 * Returns the result of interpreting the object as an instance of '<em>Vital Signs Section</em>'.
+	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
-	* @param object the target of the switch.
-	* @return the result of interpreting the object as an instance of '<em>Vital Signs Section</em>'.
-	* @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	* @generated
-	*/
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Vital Signs Section</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
 	public T caseVitalSignsSection(VitalSignsSection object) {
 		return null;
 	}
 
 	/**
-	* Returns the result of interpreting the object as an instance of '<em>Assessment Section</em>'.
-	* <!-- begin-user-doc -->
+	 * Returns the result of interpreting the object as an instance of '<em>Assessment Section</em>'.
+	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
-	* @param object the target of the switch.
-	* @return the result of interpreting the object as an instance of '<em>Assessment Section</em>'.
-	* @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	* @generated
-	*/
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Assessment Section</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
 	public T caseAssessmentSection(AssessmentSection object) {
 		return null;
 	}
 
 	/**
-	* Returns the result of interpreting the object as an instance of '<em>Plan Section</em>'.
-	* <!-- begin-user-doc -->
+	 * Returns the result of interpreting the object as an instance of '<em>Plan Section</em>'.
+	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
-	* @param object the target of the switch.
-	* @return the result of interpreting the object as an instance of '<em>Plan Section</em>'.
-	* @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	* @generated
-	*/
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Plan Section</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
 	public T casePlanSection(PlanSection object) {
 		return null;
 	}
 
 	/**
-	* Returns the result of interpreting the object as an instance of '<em>Assessment And Plan Section</em>'.
-	* <!-- begin-user-doc -->
+	 * Returns the result of interpreting the object as an instance of '<em>Assessment And Plan Section</em>'.
+	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
-	* @param object the target of the switch.
-	* @return the result of interpreting the object as an instance of '<em>Assessment And Plan Section</em>'.
-	* @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	* @generated
-	*/
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Assessment And Plan Section</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
 	public T caseAssessmentAndPlanSection(AssessmentAndPlanSection object) {
 		return null;
 	}
 
 	/**
-	* Returns the result of interpreting the object as an instance of '<em>Reason For Visit Section</em>'.
-	* <!-- begin-user-doc -->
+	 * Returns the result of interpreting the object as an instance of '<em>Reason For Visit Section</em>'.
+	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
-	* @param object the target of the switch.
-	* @return the result of interpreting the object as an instance of '<em>Reason For Visit Section</em>'.
-	* @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	* @generated
-	*/
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Reason For Visit Section</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
 	public T caseReasonForVisitSection(ReasonForVisitSection object) {
 		return null;
 	}
 
 	/**
-	* Returns the result of interpreting the object as an instance of '<em>Chief Complaint Section</em>'.
-	* <!-- begin-user-doc -->
+	 * Returns the result of interpreting the object as an instance of '<em>Chief Complaint Section</em>'.
+	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
-	* @param object the target of the switch.
-	* @return the result of interpreting the object as an instance of '<em>Chief Complaint Section</em>'.
-	* @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	* @generated
-	*/
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Chief Complaint Section</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
 	public T caseChiefComplaintSection(ChiefComplaintSection object) {
 		return null;
 	}
 
 	/**
-	* Returns the result of interpreting the object as an instance of '<em>Reason For Visit And Chief Complaint Section</em>'.
-	* <!-- begin-user-doc -->
+	 * Returns the result of interpreting the object as an instance of '<em>Reason For Visit And Chief Complaint Section</em>'.
+	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
-	* @param object the target of the switch.
-	* @return the result of interpreting the object as an instance of '<em>Reason For Visit And Chief Complaint Section</em>'.
-	* @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	* @generated
-	*/
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Reason For Visit And Chief Complaint Section</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
 	public T caseReasonForVisitAndChiefComplaintSection(ReasonForVisitAndChiefComplaintSection object) {
 		return null;
 	}
 
 	/**
-	* Returns the result of interpreting the object as an instance of '<em>Progress Note</em>'.
-	* <!-- begin-user-doc -->
+	 * Returns the result of interpreting the object as an instance of '<em>Progress Note</em>'.
+	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
-	* @param object the target of the switch.
-	* @return the result of interpreting the object as an instance of '<em>Progress Note</em>'.
-	* @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	* @generated
-	*/
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Progress Note</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
 	public T caseProgressNote(ProgressNote object) {
 		return null;
 	}
 
 	/**
-	* Returns the result of interpreting the object as an instance of '<em>Assessment And Plan Section Proc Note</em>'.
-	* <!-- begin-user-doc -->
+	 * Returns the result of interpreting the object as an instance of '<em>Assessment And Plan Section Proc Note</em>'.
+	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
-	* @param object the target of the switch.
-	* @return the result of interpreting the object as an instance of '<em>Assessment And Plan Section Proc Note</em>'.
-	* @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	* @generated
-	*/
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Assessment And Plan Section Proc Note</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
 	public T caseAssessmentAndPlanSectionProcNote(AssessmentAndPlanSectionProcNote object) {
 		return null;
 	}
 
 	/**
-	* Returns the result of interpreting the object as an instance of '<em>Assessment Section Proc Note</em>'.
-	* <!-- begin-user-doc -->
+	 * Returns the result of interpreting the object as an instance of '<em>Assessment Section Proc Note</em>'.
+	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
-	* @param object the target of the switch.
-	* @return the result of interpreting the object as an instance of '<em>Assessment Section Proc Note</em>'.
-	* @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	* @generated
-	*/
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Assessment Section Proc Note</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
 	public T caseAssessmentSectionProcNote(AssessmentSectionProcNote object) {
 		return null;
 	}
 
 	/**
-	* Returns the result of interpreting the object as an instance of '<em>Chief Complaint Section Proc Note</em>'.
-	* <!-- begin-user-doc -->
+	 * Returns the result of interpreting the object as an instance of '<em>Chief Complaint Section Proc Note</em>'.
+	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
-	* @param object the target of the switch.
-	* @return the result of interpreting the object as an instance of '<em>Chief Complaint Section Proc Note</em>'.
-	* @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	* @generated
-	*/
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Chief Complaint Section Proc Note</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
 	public T caseChiefComplaintSectionProcNote(ChiefComplaintSectionProcNote object) {
 		return null;
 	}
 
 	/**
-	* Returns the result of interpreting the object as an instance of '<em>Objective Section</em>'.
-	* <!-- begin-user-doc -->
+	 * Returns the result of interpreting the object as an instance of '<em>Objective Section</em>'.
+	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
-	* @param object the target of the switch.
-	* @return the result of interpreting the object as an instance of '<em>Objective Section</em>'.
-	* @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	* @generated
-	*/
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Objective Section</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
 	public T caseObjectiveSection(ObjectiveSection object) {
 		return null;
 	}
 
 	/**
-	* Returns the result of interpreting the object as an instance of '<em>Subjective Section</em>'.
-	* <!-- begin-user-doc -->
+	 * Returns the result of interpreting the object as an instance of '<em>Subjective Section</em>'.
+	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
-	* @param object the target of the switch.
-	* @return the result of interpreting the object as an instance of '<em>Subjective Section</em>'.
-	* @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	* @generated
-	*/
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Subjective Section</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
 	public T caseSubjectiveSection(SubjectiveSection object) {
 		return null;
 	}
 
 	/**
-	* Returns the result of interpreting the object as an instance of '<em>Unstructured Document</em>'.
-	* <!-- begin-user-doc -->
+	 * Returns the result of interpreting the object as an instance of '<em>Unstructured Document</em>'.
+	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
-	* @param object the target of the switch.
-	* @return the result of interpreting the object as an instance of '<em>Unstructured Document</em>'.
-	* @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	* @generated
-	*/
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Unstructured Document</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
 	public T caseUnstructuredDocument(UnstructuredDocument object) {
 		return null;
 	}
 
 	/**
-	* Returns the result of interpreting the object as an instance of '<em>Hospital Discharge Studies Summary Section</em>'.
-	* <!-- begin-user-doc -->
+	 * Returns the result of interpreting the object as an instance of '<em>Hospital Discharge Studies Summary Section</em>'.
+	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
-	* @param object the target of the switch.
-	* @return the result of interpreting the object as an instance of '<em>Hospital Discharge Studies Summary Section</em>'.
-	* @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	* @generated
-	*/
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Hospital Discharge Studies Summary Section</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
 	public T caseHospitalDischargeStudiesSummarySection(HospitalDischargeStudiesSummarySection object) {
 		return null;
 	}
 
 	/**
-	* Returns the result of interpreting the object as an instance of '<em>History Of Present Illness</em>'.
-	* <!-- begin-user-doc -->
+	 * Returns the result of interpreting the object as an instance of '<em>History Of Present Illness</em>'.
+	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
-	* @param object the target of the switch.
-	* @return the result of interpreting the object as an instance of '<em>History Of Present Illness</em>'.
-	* @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	* @generated
-	*/
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>History Of Present Illness</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
 	public T caseHistoryOfPresentIllness(HistoryOfPresentIllness object) {
 		return null;
 	}
 
 	/**
-	* Returns the result of interpreting the object as an instance of '<em>Past Medical History Section Consult</em>'.
-	* <!-- begin-user-doc -->
+	 * Returns the result of interpreting the object as an instance of '<em>Past Medical History Section Consult</em>'.
+	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
-	* @param object the target of the switch.
-	* @return the result of interpreting the object as an instance of '<em>Past Medical History Section Consult</em>'.
-	* @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	* @generated
-	*/
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Past Medical History Section Consult</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
 	public T casePastMedicalHistorySectionConsult(PastMedicalHistorySectionConsult object) {
 		return null;
 	}
 
 	/**
-	* Returns the result of interpreting the object as an instance of '<em>Registry Delegate</em>'.
-	* <!-- begin-user-doc -->
+	 * Returns the result of interpreting the object as an instance of '<em>Registry Delegate</em>'.
+	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
-	* @param object the target of the switch.
-	* @return the result of interpreting the object as an instance of '<em>Registry Delegate</em>'.
-	* @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	* @generated
-	*/
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Registry Delegate</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
 	public T caseCDTRegistryDelegate(CDTRegistryDelegate object) {
 		return null;
 	}
 
 	/**
-	* Returns the result of interpreting the object as an instance of '<em>Infrastructure Root</em>'.
-	* <!-- begin-user-doc -->
+	 * Returns the result of interpreting the object as an instance of '<em>Infrastructure Root</em>'.
+	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
-	* @param object the target of the switch.
-	* @return the result of interpreting the object as an instance of '<em>Infrastructure Root</em>'.
-	* @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	* @generated
-	*/
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Infrastructure Root</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
 	public T caseInfrastructureRoot(InfrastructureRoot object) {
 		return null;
 	}
 
 	/**
-	* Returns the result of interpreting the object as an instance of '<em>Act</em>'.
-	* <!-- begin-user-doc -->
+	 * Returns the result of interpreting the object as an instance of '<em>Act</em>'.
+	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
-	* @param object the target of the switch.
-	* @return the result of interpreting the object as an instance of '<em>Act</em>'.
-	* @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	* @generated
-	*/
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Act</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
 	public T caseAct(Act object) {
 		return null;
 	}
 
 	/**
-	* Returns the result of interpreting the object as an instance of '<em>Clinical Document</em>'.
-	* <!-- begin-user-doc -->
+	 * Returns the result of interpreting the object as an instance of '<em>Clinical Document</em>'.
+	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
-	* @param object the target of the switch.
-	* @return the result of interpreting the object as an instance of '<em>Clinical Document</em>'.
-	* @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	* @generated
-	*/
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Clinical Document</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
 	public T caseClinicalDocument(ClinicalDocument object) {
 		return null;
 	}
 
 	/**
-	* Returns the result of interpreting the object as an instance of '<em>Section</em>'.
-	* <!-- begin-user-doc -->
+	 * Returns the result of interpreting the object as an instance of '<em>Section</em>'.
+	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
-	* @param object the target of the switch.
-	* @return the result of interpreting the object as an instance of '<em>Section</em>'.
-	* @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	* @generated
-	*/
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Section</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
 	public T caseSection(Section object) {
 		return null;
 	}
 
 	/**
-	* Returns the result of interpreting the object as an instance of '<em>Results Section</em>'.
-	* <!-- begin-user-doc -->
+	 * Returns the result of interpreting the object as an instance of '<em>Results Section</em>'.
+	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
-	* @param object the target of the switch.
-	* @return the result of interpreting the object as an instance of '<em>Results Section</em>'.
-	* @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	* @generated
-	*/
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Results Section</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
 	public T caseResultsSection(ResultsSection object) {
 		return null;
 	}
 
 	/**
-	* Returns the result of interpreting the object as an instance of '<em>Registry Delegate</em>'.
-	* <!-- begin-user-doc -->
+	 * Returns the result of interpreting the object as an instance of '<em>Registry Delegate</em>'.
+	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
-	* @param object the target of the switch.
-	* @return the result of interpreting the object as an instance of '<em>Registry Delegate</em>'.
-	* @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	* @generated
-	*/
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Registry Delegate</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
 	public T caseRegistryDelegate(RegistryDelegate object) {
 		return null;
 	}
 
 	/**
-	* Returns the result of interpreting the object as an instance of '<em>EObject</em>'.
-	* <!-- begin-user-doc -->
+	 * Returns the result of interpreting the object as an instance of '<em>EObject</em>'.
+	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch, but this is the last case anyway.
 	 * <!-- end-user-doc -->
-	* @param object the target of the switch.
-	* @return the result of interpreting the object as an instance of '<em>EObject</em>'.
-	* @see #doSwitch(org.eclipse.emf.ecore.EObject)
-	* @generated
-	*/
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>EObject</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject)
+	 * @generated
+	 */
 	public T defaultCase(EObject object) {
 		return null;
 	}
