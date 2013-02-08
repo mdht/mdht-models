@@ -33,29 +33,29 @@ import org.openhealthtools.mdht.uml.cda.impl.SectionImpl;
  */
 public class ReasonForVisitSectionConsultImpl extends SectionImpl implements ReasonForVisitSectionConsult {
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	protected ReasonForVisitSectionConsultImpl() {
 		super();
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
 		return CDTPackage.Literals.REASON_FOR_VISIT_SECTION_CONSULT;
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateReasonForVisitSectionConsultTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ReasonForVisitSectionConsultOperations.validateReasonForVisitSectionConsultTemplateId(
@@ -63,20 +63,20 @@ public class ReasonForVisitSectionConsultImpl extends SectionImpl implements Rea
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateReasonForVisitSectionConsultCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ReasonForVisitSectionConsultOperations.validateReasonForVisitSectionConsultCode(
 			this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public ReasonForVisitSectionConsult init() {
 		return Initializer.Util.init(this);
 	}

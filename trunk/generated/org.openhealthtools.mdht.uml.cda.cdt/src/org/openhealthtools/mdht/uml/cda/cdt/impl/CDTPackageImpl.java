@@ -2979,6 +2979,8 @@ public class CDTPackageImpl extends EPackageImpl implements CDTPackage {
 					"2.16.840.1.113883.10.20.3",
 					"constraints.validation.warning",
 					"GeneralHeaderConstraintsRolesShouldHaveAddrAndTelecom GeneralHeaderConstraintsTimePreciseToSecond GeneralHeaderConstraintsTimePreciseToYearAndDay",
+					"constraints.validation.query",
+					"GeneralHeaderConstraintsTimePreciseToYear GeneralHeaderConstraintsOidLength GeneralHeaderConstraintsTimePreciseToYearAndDay",
 					"constraints.validation.info",
 					"GeneralHeaderConstraintsHasProviderOrganization GeneralHeaderConstraintsHasDataEntererTime GeneralHeaderConstraintsHasInformant",
 					"realmCode.code", "US" });

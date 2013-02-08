@@ -7,6 +7,9 @@
     <packageImport xmi:id="_kRcz0GhVEd-ilOLYnIx0jA">
       <importedPackage href="../../org.openhealthtools.mdht.uml.cda.ccd.model/model/ccd.uml#_qQyD8jxVEd6JwqSGecoePg"/>
     </packageImport>
+    <packageImport xmi:id="_p_y60G7_EeKm-7ep7IaCUA">
+      <importedPackage href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_XgMSwzxVEd6JwqSGecoePg"/>
+    </packageImport>
     <packagedElement xmi:type="uml:Class" xmi:id="_MwGRIGeLEd-ilOLYnIx0jA" name="GeneralHeaderConstraints">
       <ownedComment xmi:id="_QrycIHMnEd-9_cvcE5QEwg">
         <body>&lt;p>This section describes constraints that apply to the H and P Note and to other types of CDA&#xD;
@@ -103,6 +106,9 @@ second.</body>
         </specification>
       </ownedRule>
       <ownedRule xmi:id="_L1gj0AbOEeC15aCUY_wo_g" name="timePreciseToYear" constrainedElement="_MwGRIGeLEd-ilOLYnIx0jA">
+        <ownedComment xmi:id="_bsnJEG7_EeKm-7ep7IaCUA">
+          <body>QUERY</body>
+        </ownedComment>
         <specification xmi:type="uml:OpaqueExpression" xmi:id="_kI_84AbOEeC15aCUY_wo_g">
           <language>Analysis</language>
           <language>OCL</language>
@@ -212,6 +218,9 @@ http://www.dclunie.com/medical-image-faq/html/part8.html#UIDRegistration. &lt;/p
         <ownedComment xmi:id="_Nb-78AbaEeC15aCUY_wo_g">
           <body>OIDs are limited by this specification to no more than 64 characters in length for&#xD;
 compatibility with other standards and Implementation Guides.</body>
+        </ownedComment>
+        <ownedComment xmi:id="_dTGlwG7_EeKm-7ep7IaCUA">
+          <body>QUERY</body>
         </ownedComment>
         <specification xmi:type="uml:OpaqueExpression" xmi:id="_ezDGMHMxEd-9_cvcE5QEwg">
           <language>Analysis</language>
@@ -539,6 +548,9 @@ second.</body>
       <ownedRule xmi:id="_0XI4AAx3EeCbT6kkmQhJPQ" name="timePreciseToYearAndDay" constrainedElement="_MwGRIGeLEd-ilOLYnIx0jA">
         <ownedComment xmi:id="_PSJF4Ax4EeCbT6kkmQhJPQ">
           <body>Should portion of CON-HP-11 constraint</body>
+        </ownedComment>
+        <ownedComment xmi:id="_e0angG7_EeKm-7ep7IaCUA">
+          <body>QUERY</body>
         </ownedComment>
         <specification xmi:type="uml:OpaqueExpression" xmi:id="_ETtpcAx4EeCbT6kkmQhJPQ">
           <language>Analysis</language>

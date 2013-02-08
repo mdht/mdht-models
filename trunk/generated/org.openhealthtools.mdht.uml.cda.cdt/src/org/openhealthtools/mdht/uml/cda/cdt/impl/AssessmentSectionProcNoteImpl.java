@@ -33,48 +33,48 @@ import org.openhealthtools.mdht.uml.cda.impl.SectionImpl;
  */
 public class AssessmentSectionProcNoteImpl extends SectionImpl implements AssessmentSectionProcNote {
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	protected AssessmentSectionProcNoteImpl() {
 		super();
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
 		return CDTPackage.Literals.ASSESSMENT_SECTION_PROC_NOTE;
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateAssessmentSectionProcNoteTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return AssessmentSectionProcNoteOperations.validateAssessmentSectionProcNoteTemplateId(
 			this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateAssessmentSectionProcNoteCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return AssessmentSectionProcNoteOperations.validateAssessmentSectionProcNoteCode(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public AssessmentSectionProcNote init() {
 		return Initializer.Util.init(this);
 	}

@@ -27,29 +27,29 @@ import org.openhealthtools.mdht.uml.cda.cdt.operations.CDTRegistryDelegateOperat
  */
 public class CDTRegistryDelegateImpl extends EObjectImpl implements CDTRegistryDelegate {
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	protected CDTRegistryDelegateImpl() {
 		super();
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
 		return CDTPackage.Literals.CDT_REGISTRY_DELEGATE;
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public EClass getEClass(String templateId, Object context) {
 		return CDTRegistryDelegateOperations.getEClass(this, templateId, context);
 	}
