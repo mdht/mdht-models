@@ -11464,8 +11464,8 @@
       <details key="moodCode" value="EVN"/>
       <details key="constraints.validation.info" value="CognitiveStatusProblemObservationNegationInd CognitiveStatusProblemObservationMethodCode CognitiveStatusProblemObservationNonMedicinalSupplyActivity CognitiveStatusProblemObservationCaregiverCharacteristics CognitiveStatusProblemObservationAssessmentScaleObservation"/>
       <details key="code.code" value="373930000"/>
-      <details key="code.codeSystem" value="2.16.840.1.113883.6.1"/>
-      <details key="code.codeSystemName" value="LOINC"/>
+      <details key="code.codeSystem" value="2.16.840.1.113883.6.96"/>
+      <details key="code.codeSystemName" value="SNOMEDCT"/>
       <details key="code.displayName" value="Cognitive function finding"/>
       <details key="constraints.validation.dependOn.CognitiveStatusProblemObservationCode"
           value="CognitiveStatusProblemObservationCodeP"/>
