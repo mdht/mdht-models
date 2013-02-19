@@ -742,24 +742,6 @@ and componentOf/encompassingEncounter/encounterParticipant/assignedEntity/addr</
     <packagedElement xmi:type="uml:Association" xmi:id="_SwLbQAJvEeKIhvHOhwsFvA" memberEnd="_SwK0MAJvEeKIhvHOhwsFvA _SwLbQQJvEeKIhvHOhwsFvA">
       <ownedEnd xmi:id="_SwLbQQJvEeKIhvHOhwsFvA" type="_R5ZkQAJvEeKIhvHOhwsFvA" association="_SwLbQAJvEeKIhvHOhwsFvA"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Class" xmi:id="_zL3xEAKcEeKIhvHOhwsFvA" name="EncounterActivities">
-      <generalization xmi:id="_zL4YIAKcEeKIhvHOhwsFvA">
-        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-encounters.uml#_2LayQBSVEeGGzu7fmW9pXw"/>
-      </generalization>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Class" xmi:id="_9AQcQAKcEeKIhvHOhwsFvA" name="EncountersSection">
-      <generalization xmi:id="_9AQcQQKcEeKIhvHOhwsFvA">
-        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-encounters.uml#_2LWg0BSVEeGGzu7fmW9pXw"/>
-      </generalization>
-      <ownedAttribute xmi:id="_-ZNMMAKcEeKIhvHOhwsFvA" name="encounterActivities" type="_zL3xEAKcEeKIhvHOhwsFvA" association="_-ZNzQAKcEeKIhvHOhwsFvA">
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_-ZNMMQKcEeKIhvHOhwsFvA" value="*"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_-ZNMMgKcEeKIhvHOhwsFvA" value="1"/>
-        <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-encounters.uml#_qg2HIDFVEeGbx9xBxK_Upg"/>
-      </ownedAttribute>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_-ZNzQAKcEeKIhvHOhwsFvA" memberEnd="_-ZNMMAKcEeKIhvHOhwsFvA _-ZNzQQKcEeKIhvHOhwsFvA">
-      <ownedEnd xmi:id="_-ZNzQQKcEeKIhvHOhwsFvA" type="_9AQcQAKcEeKIhvHOhwsFvA" association="_-ZNzQAKcEeKIhvHOhwsFvA"/>
-    </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_KmS6gAKlEeKIhvHOhwsFvA" name="ProcedureActivityProcedure">
       <ownedRule xmi:id="_Xm1YoAKlEeKIhvHOhwsFvA" name="codeValue" constrainedElement="_KmS6gAKlEeKIhvHOhwsFvA">
         <specification xmi:type="uml:OpaqueExpression" xmi:id="_blLdgAKlEeKIhvHOhwsFvA">
@@ -909,12 +891,6 @@ and componentOf/encompassingEncounter/encounterParticipant/assignedEntity/addr</
   </CDA:AssociationValidation>
   <CDA:CDATemplate xmi:id="_Yt5W4AJvEeKIhvHOhwsFvA" base_Class="_R5ZkQAJvEeKIhvHOhwsFvA" templateId="2.16.840.1.113883.10.20.22.2.3.1"/>
   <CDA:ConstraintValidation xmi:id="_twd_gAJ0EeKIhvHOhwsFvA" base_Constraint="_wYmuIAJuEeKIhvHOhwsFvA"/>
-  <CDA:CDATemplate xmi:id="_2A5dcAKcEeKIhvHOhwsFvA" base_Class="_zL3xEAKcEeKIhvHOhwsFvA" templateId="2.16.840.1.113883.10.20.22.4.49"/>
-  <CDA:AssociationValidation xmi:id="_-ZNzQgKcEeKIhvHOhwsFvA" base_Association="_-ZNzQAKcEeKIhvHOhwsFvA">
-    <ruleId>CONF:8709</ruleId>
-    <ruleId>CONF:8803</ruleId>
-  </CDA:AssociationValidation>
-  <CDA:CDATemplate xmi:id="_BArkwAKdEeKIhvHOhwsFvA" base_Class="_9AQcQAKcEeKIhvHOhwsFvA" templateId="2.16.840.1.113883.10.20.22.2.22.1"/>
   <CDA:PropertyValidation xmi:id="_Myj9wAKlEeKIhvHOhwsFvA" base_Property="_MyjWsAKlEeKIhvHOhwsFvA">
     <ruleId>CONF:7656</ruleId>
   </CDA:PropertyValidation>
