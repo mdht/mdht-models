@@ -17,8 +17,6 @@ import org.eclipse.emf.ecore.impl.EFactoryImpl;
 import org.eclipse.emf.ecore.plugin.EcorePlugin;
 import org.openhealthtools.mdht.uml.cda.mu2consol.AssessmentSection;
 import org.openhealthtools.mdht.uml.cda.mu2consol.ClinicalOfficeVisitSummary;
-import org.openhealthtools.mdht.uml.cda.mu2consol.EncounterActivities;
-import org.openhealthtools.mdht.uml.cda.mu2consol.EncountersSection;
 import org.openhealthtools.mdht.uml.cda.mu2consol.GeneralHeaderConstraints;
 import org.openhealthtools.mdht.uml.cda.mu2consol.MedicationsAdministeredSection;
 import org.openhealthtools.mdht.uml.cda.mu2consol.Mu2consolFactory;
@@ -97,8 +95,6 @@ public class Mu2consolFactoryImpl extends EFactoryImpl implements
 			case Mu2consolPackage.VIEW_DOWNLOAD_TRANSMIT_SUMMARY: return createViewDownloadTransmitSummary();
 			case Mu2consolPackage.VDT_INPATIENT_SUMMARY: return createVDTInpatientSummary();
 			case Mu2consolPackage.VDT_AMBULATORY_SUMMARY: return createVDTAmbulatorySummary();
-			case Mu2consolPackage.ENCOUNTER_ACTIVITIES: return createEncounterActivities();
-			case Mu2consolPackage.ENCOUNTERS_SECTION: return createEncountersSection();
 			default:
 				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
 		}
@@ -120,24 +116,6 @@ public class Mu2consolFactoryImpl extends EFactoryImpl implements
 	public SummaryOfCareRecord createSummaryOfCareRecord() {
 		SummaryOfCareRecordImpl summaryOfCareRecord = new SummaryOfCareRecordImpl();
 		return summaryOfCareRecord;
-	}
-
-	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EncountersSection createEncountersSection() {
-		EncountersSectionImpl encountersSection = new EncountersSectionImpl();
-		return encountersSection;
-	}
-
-	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EncounterActivities createEncounterActivities() {
-		EncounterActivitiesImpl encounterActivities = new EncounterActivitiesImpl();
-		return encounterActivities;
 	}
 
 	/**

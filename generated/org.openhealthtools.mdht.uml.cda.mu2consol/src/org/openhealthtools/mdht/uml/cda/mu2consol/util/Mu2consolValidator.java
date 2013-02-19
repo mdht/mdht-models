@@ -9,8 +9,6 @@ import org.eclipse.emf.ecore.util.EObjectValidator;
 import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
 import org.openhealthtools.mdht.uml.cda.mu2consol.AssessmentSection;
 import org.openhealthtools.mdht.uml.cda.mu2consol.ClinicalOfficeVisitSummary;
-import org.openhealthtools.mdht.uml.cda.mu2consol.EncounterActivities;
-import org.openhealthtools.mdht.uml.cda.mu2consol.EncountersSection;
 import org.openhealthtools.mdht.uml.cda.mu2consol.GeneralHeaderConstraints;
 import org.openhealthtools.mdht.uml.cda.mu2consol.MedicationsAdministeredSection;
 import org.openhealthtools.mdht.uml.cda.mu2consol.Mu2consolPackage;
@@ -217,27 +215,6 @@ public class Mu2consolValidator extends EObjectValidator {
 	 * @generated
 	 */
 	public static final int SUMMARY_OF_CARE_RECORD__SUMMARY_OF_CARE_RECORD_FUNCTIONAL_STATUS_SECTION = 21;
-
-	/**
-	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Mu2consol Encounters Section Encounter Activities' of 'Encounters Section'.
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
-	public static final int ENCOUNTERS_SECTION__MU2CONSOL_ENCOUNTERS_SECTION_ENCOUNTER_ACTIVITIES = 79;
-
-	/**
-	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Encounters Section Entries Optional Template Id' of 'Encounters Section'.
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
-	public static final int ENCOUNTERS_SECTION__ENCOUNTERS_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID = 80;
-
-	/**
-	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Encounter Activities Template Id' of 'Encounter Activities'.
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
-	public static final int ENCOUNTER_ACTIVITIES__ENCOUNTER_ACTIVITIES_TEMPLATE_ID = 78;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Mu2consol Assessment Section Problem Observation' of 'Assessment Section'.
@@ -687,7 +664,7 @@ public class Mu2consolValidator extends EObjectValidator {
 	 * end-user-doc -->
 	 * @generated
 	 */
-	private static final int GENERATED_DIAGNOSTIC_CODE_COUNT = 80;
+	private static final int GENERATED_DIAGNOSTIC_CODE_COUNT = 77;
 
 	/**
 	 * A constant with a fixed name that can be used as the base value for additional hand written constants in a derived class.
@@ -779,10 +756,6 @@ public class Mu2consolValidator extends EObjectValidator {
 				return validateVDTInpatientSummary((VDTInpatientSummary)value, diagnostics, context);
 			case Mu2consolPackage.VDT_AMBULATORY_SUMMARY:
 				return validateVDTAmbulatorySummary((VDTAmbulatorySummary)value, diagnostics, context);
-			case Mu2consolPackage.ENCOUNTER_ACTIVITIES:
-				return validateEncounterActivities((EncounterActivities)value, diagnostics, context);
-			case Mu2consolPackage.ENCOUNTERS_SECTION:
-				return validateEncountersSection((EncountersSection)value, diagnostics, context);
 			default:
 				return true;
 		}
@@ -1609,112 +1582,6 @@ public class Mu2consolValidator extends EObjectValidator {
 			SummaryOfCareRecord summaryOfCareRecord,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return summaryOfCareRecord.validateSummaryOfCareRecordFunctionalStatusSection(diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateEncountersSection(
-			EncountersSection encountersSection, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(encountersSection, diagnostics, context)) return false;
-		boolean result = validate_EveryMultiplicityConforms(encountersSection, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(encountersSection, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(encountersSection, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryProxyResolves(encountersSection, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_UniqueID(encountersSection, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryKeyUnique(encountersSection, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(encountersSection, diagnostics, context);
-		if (result || diagnostics != null) result &= cdaValidator.validateSection_validateClassCode(encountersSection, diagnostics, context);
-		if (result || diagnostics != null) result &= cdaValidator.validateSection_validateMoodCode(encountersSection, diagnostics, context);
-		if (result || diagnostics != null) result &= validateEncountersSection_validateEncountersSectionEntriesOptionalTemplateId(encountersSection, diagnostics, context);
-		if (result || diagnostics != null) result &= consolValidator.validateEncountersSectionEntriesOptional_validateEncountersSectionEntriesOptionalCode(encountersSection, diagnostics, context);
-		if (result || diagnostics != null) result &= consolValidator.validateEncountersSectionEntriesOptional_validateEncountersSectionEntriesOptionalCodeP(encountersSection, diagnostics, context);
-		if (result || diagnostics != null) result &= consolValidator.validateEncountersSectionEntriesOptional_validateEncountersSectionEntriesOptionalTitle(encountersSection, diagnostics, context);
-		if (result || diagnostics != null) result &= consolValidator.validateEncountersSectionEntriesOptional_validateEncountersSectionEntriesOptionalText(encountersSection, diagnostics, context);
-		if (result || diagnostics != null) result &= consolValidator.validateEncountersSectionEntriesOptional_validateEncountersSectionEntriesOptionalEncounterActivities(encountersSection, diagnostics, context);
-		if (result || diagnostics != null) result &= consolValidator.validateEncountersSection_validateEncountersSectionCodeP(encountersSection, diagnostics, context);
-		if (result || diagnostics != null) result &= consolValidator.validateEncountersSection_validateEncountersSectionCode(encountersSection, diagnostics, context);
-		if (result || diagnostics != null) result &= consolValidator.validateEncountersSection_validateEncountersSectionText(encountersSection, diagnostics, context);
-		if (result || diagnostics != null) result &= consolValidator.validateEncountersSection_validateEncountersSectionTitle(encountersSection, diagnostics, context);
-		if (result || diagnostics != null) result &= consolValidator.validateEncountersSection_validateEncountersSectionEncounterActivities(encountersSection, diagnostics, context);
-		if (result || diagnostics != null) result &= validateEncountersSection_validateMu2consolEncountersSectionEncounterActivities(encountersSection, diagnostics, context);
-		return result;
-	}
-
-	/**
-	 * Validates the validateMu2consolEncountersSectionEncounterActivities constraint of '<em>Encounters Section</em>'.
-	 * <!-- begin-user-doc --> <!--
-	 * end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateEncountersSection_validateMu2consolEncountersSectionEncounterActivities(
-			EncountersSection encountersSection, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return encountersSection.validateMu2consolEncountersSectionEncounterActivities(diagnostics, context);
-	}
-
-	/**
-	 * Validates the validateEncountersSectionEntriesOptionalTemplateId constraint of '<em>Encounters Section</em>'.
-	 * <!-- begin-user-doc --> <!--
-	 * end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateEncountersSection_validateEncountersSectionEntriesOptionalTemplateId(
-			EncountersSection encountersSection, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return encountersSection.validateEncountersSectionEntriesOptionalTemplateId(diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateEncounterActivities(
-			EncounterActivities encounterActivities,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(encounterActivities, diagnostics, context)) return false;
-		boolean result = validate_EveryMultiplicityConforms(encounterActivities, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(encounterActivities, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(encounterActivities, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryProxyResolves(encounterActivities, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_UniqueID(encounterActivities, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryKeyUnique(encounterActivities, diagnostics, context);
-		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(encounterActivities, diagnostics, context);
-		if (result || diagnostics != null) result &= consolValidator.validateEncounterActivities_validateEncounterActivitiesCodeOriginalText(encounterActivities, diagnostics, context);
-		if (result || diagnostics != null) result &= consolValidator.validateEncounterActivities_validateEncounterActivitiesCodeOriginalTextReference(encounterActivities, diagnostics, context);
-		if (result || diagnostics != null) result &= consolValidator.validateEncounterActivities_validateEncounterActivitiesReferenceValue(encounterActivities, diagnostics, context);
-		if (result || diagnostics != null) result &= consolValidator.validateEncounterActivities_validateEncounterActivitiesCodeOriginalTextReferenceValue(encounterActivities, diagnostics, context);
-		if (result || diagnostics != null) result &= consolValidator.validateEncounterActivities_validateEncounterActivitiesServiceDeliveryTypeCode(encounterActivities, diagnostics, context);
-		if (result || diagnostics != null) result &= validateEncounterActivities_validateEncounterActivitiesTemplateId(encounterActivities, diagnostics, context);
-		if (result || diagnostics != null) result &= consolValidator.validateEncounterActivities_validateEncounterActivitiesClassCode(encounterActivities, diagnostics, context);
-		if (result || diagnostics != null) result &= consolValidator.validateEncounterActivities_validateEncounterActivitiesMoodCode(encounterActivities, diagnostics, context);
-		if (result || diagnostics != null) result &= consolValidator.validateEncounterActivities_validateEncounterActivitiesId(encounterActivities, diagnostics, context);
-		if (result || diagnostics != null) result &= consolValidator.validateEncounterActivities_validateEncounterActivitiesCode(encounterActivities, diagnostics, context);
-		if (result || diagnostics != null) result &= consolValidator.validateEncounterActivities_validateEncounterActivitiesEffectiveTime(encounterActivities, diagnostics, context);
-		if (result || diagnostics != null) result &= consolValidator.validateEncounterActivities_validateEncounterActivitiesServiceDeliveryLocation(encounterActivities, diagnostics, context);
-		if (result || diagnostics != null) result &= consolValidator.validateEncounterActivities_validateEncounterActivitiesIndication(encounterActivities, diagnostics, context);
-		if (result || diagnostics != null) result &= consolValidator.validateEncounterActivities_validateEncounterActivitiesEncounterPerformer(encounterActivities, diagnostics, context);
-		if (result || diagnostics != null) result &= consolValidator.validateEncounterActivities_validateEncounterActivitiesEncounterDiagnosis(encounterActivities, diagnostics, context);
-		if (result || diagnostics != null) result &= consolValidator.validateEncounterActivities_validateEncounterActivitiesEncounterPerformerEncounterPerformerAssignedEntityCode(encounterActivities, diagnostics, context);
-		if (result || diagnostics != null) result &= consolValidator.validateEncounterActivities_validateEncounterActivitiesEncounterPerformerEncounterPerformerAssignedEntity(encounterActivities, diagnostics, context);
-		return result;
-	}
-
-	
-
-	/**
-	 * Validates the validateEncounterActivitiesTemplateId constraint of '
-	 * <em>Encounter Activities</em>'. <!-- begin-user-doc --> <!-- end-user-doc
-	 * -->
-	 * 
-	 * @generated
-	 */
-	public boolean validateEncounterActivities_validateEncounterActivitiesTemplateId(
-			EncounterActivities encounterActivities,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return encounterActivities.validateEncounterActivitiesTemplateId(diagnostics, context);
 	}
 
 	/**
