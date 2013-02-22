@@ -15988,7 +15988,8 @@
         </eGenericType>
       </eParameters>
     </eOperations>
-    <eOperations name="getMedicationActivity" ordered="false" lowerBound="1" eType="#//MedicationActivity"/>
+    <eOperations name="getMedicationActivities" ordered="false" lowerBound="1" upperBound="-1"
+        eType="#//MedicationActivity"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="MedicationsAdministeredSection" eSuperTypes="urn:hl7-org:v3#//Section">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">

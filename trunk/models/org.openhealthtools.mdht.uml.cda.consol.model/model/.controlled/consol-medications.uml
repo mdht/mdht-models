@@ -1249,8 +1249,8 @@ The UDI should be sent in the participantRole/id.</body>
       <defaultValue xmi:type="uml:LiteralString" xmi:id="_X3kygEFGEeGorO80f-Cppg" value="EVN"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_lThaQEFGEeGorO80f-Cppg" name="medicationActivity" type="_2GHbgBSVEeGGzu7fmW9pXw" association="_lThaQkFGEeGorO80f-Cppg">
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_o0iC4EFGEeGorO80f-Cppg" value="1"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_o0iC4UFGEeGorO80f-Cppg" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_XCOSYHuIEeKhK5t8xrm9qQ" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XCO5cHuIEeKhK5t8xrm9qQ" value="1"/>
     </ownedAttribute>
   </uml:Class>
   <uml:Association xmi:id="_lThaQkFGEeGorO80f-Cppg" memberEnd="_lThaQEFGEeGorO80f-Cppg _lThaQ0FGEeGorO80f-Cppg">
