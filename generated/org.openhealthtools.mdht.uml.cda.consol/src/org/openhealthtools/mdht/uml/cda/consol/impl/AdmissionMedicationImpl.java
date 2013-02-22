@@ -14,6 +14,7 @@ import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
+import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
 import org.openhealthtools.mdht.emf.runtime.util.Initializer;
@@ -112,8 +113,8 @@ public class AdmissionMedicationImpl extends ActImpl implements AdmissionMedicat
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public MedicationActivity getMedicationActivity() {
-		return AdmissionMedicationOperations.getMedicationActivity(this);
+	public EList<MedicationActivity> getMedicationActivities() {
+		return AdmissionMedicationOperations.getMedicationActivities(this);
 	}
 
 	/**
