@@ -268,9 +268,8 @@ Medication timing is complex. This template requires that there be a substanceAd
     </ownedAttribute>
     <ownedAttribute xmi:id="_0gGEIB-yEeGKirKJsFylGA" name="repeatNumber" visibility="private" aggregation="composite">
       <ownedComment xmi:id="_dCBCwEIlEeG4bZAl2IGXmQ">
-        <body>&lt;p>In &quot;INT&quot; (intent) mood, the repeatNumber defines the number of allowed administrations. For example, a repeatNumber of &quot;3&quot; means that the substance can be administered up to 3 times&lt;/p>&#xD;
-&#xD;
-&lt;p> In &quot;EVN&quot; (event) mood, the repeatNumber is the number of occurrences. For example, a repeatNumber of &quot;3&quot; in a substance administration event means that the current administration is the 3rd in a series &lt;/p></body>
+        <body>In &quot;INT&quot; (intent) mood, the repeatNumber defines the number of allowed administrations. For example, a repeatNumber of &quot;3&quot; means that the substance can be administered up to 3 times&#xD;
+ In &quot;EVN&quot; (event) mood, the repeatNumber is the number of occurrences. For example, a repeatNumber of &quot;3&quot; in a substance administration event means that the current administration is the 3rd in a series</body>
       </ownedComment>
       <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_wDsPEEo9Ed6c3qsAxlFHaQ"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0gGEIR-yEeGKirKJsFylGA" value="1"/>
