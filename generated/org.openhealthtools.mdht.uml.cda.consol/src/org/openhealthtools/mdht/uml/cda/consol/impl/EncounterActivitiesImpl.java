@@ -165,6 +165,28 @@ public class EncounterActivitiesImpl extends EncounterImpl implements EncounterA
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateEncounterActivitiesSDTCDischargeDispositionCodeP(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return EncounterActivitiesOperations.validateEncounterActivitiesSDTCDischargeDispositionCodeP(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateEncounterActivitiesSDTCDischargeDispositionCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return EncounterActivitiesOperations.validateEncounterActivitiesSDTCDischargeDispositionCode(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public boolean validateEncounterActivitiesServiceDeliveryLocation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return EncounterActivitiesOperations.validateEncounterActivitiesServiceDeliveryLocation(

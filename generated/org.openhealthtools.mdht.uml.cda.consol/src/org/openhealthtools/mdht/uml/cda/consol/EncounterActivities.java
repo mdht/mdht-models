@@ -26,7 +26,7 @@ import org.openhealthtools.mdht.uml.cda.Encounter;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getEncounterActivities()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='EncounterActivitiesTemplateId EncounterActivitiesCodeOriginalTextReferenceValue EncounterActivitiesServiceDeliveryTypeCode EncounterActivitiesClassCode EncounterActivitiesMoodCode EncounterActivitiesId EncounterActivitiesEffectiveTime EncounterActivitiesEncounterPerformerEncounterPerformerAssignedEntity' templateId.root='2.16.840.1.113883.10.20.22.4.49' constraints.validation.warning='EncounterActivitiesCodeOriginalText EncounterActivitiesCodeOriginalTextReference EncounterActivitiesReferenceValue EncounterActivitiesCode' classCode='ENC' moodCode='EVN' code.codeSystem='2.16.840.1.113883.6.12' code.codeSystemName='CPT-4' constraints.validation.info='EncounterActivitiesServiceDeliveryLocation EncounterActivitiesIndication EncounterActivitiesEncounterPerformer EncounterActivitiesEncounterDiagnosis EncounterActivitiesEncounterPerformerEncounterPerformerAssignedEntityCode' constraints.validation.query='EncounterActivitiesEncounterPerformerEncounterPerformerAssignedEntityCode EncounterActivitiesEncounterPerformerEncounterPerformerAssignedEntity'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='EncounterActivitiesTemplateId EncounterActivitiesCodeOriginalTextReferenceValue EncounterActivitiesServiceDeliveryTypeCode EncounterActivitiesClassCode EncounterActivitiesMoodCode EncounterActivitiesId EncounterActivitiesEffectiveTime EncounterActivitiesSDTCDischargeDispositionCode EncounterActivitiesEncounterPerformerEncounterPerformerAssignedEntity' templateId.root='2.16.840.1.113883.10.20.22.4.49' constraints.validation.warning='EncounterActivitiesCodeOriginalText EncounterActivitiesCodeOriginalTextReference EncounterActivitiesReferenceValue EncounterActivitiesCode' classCode='ENC' moodCode='EVN' code.codeSystem='2.16.840.1.113883.6.12' code.codeSystemName='CPT-4' sDTCDischargeDispositionCode.codeSystem='2.16.840.1.113883.12.112' sDTCDischargeDispositionCode.codeSystemName='HL7DischargeDisposition' constraints.validation.info='EncounterActivitiesSDTCDischargeDispositionCodeP EncounterActivitiesServiceDeliveryLocation EncounterActivitiesIndication EncounterActivitiesEncounterPerformer EncounterActivitiesEncounterDiagnosis EncounterActivitiesEncounterPerformerEncounterPerformerAssignedEntityCode' constraints.validation.dependOn.EncounterActivitiesSDTCDischargeDispositionCode='EncounterActivitiesSDTCDischargeDispositionCodeP' constraints.validation.query='EncounterActivitiesEncounterPerformerEncounterPerformerAssignedEntityCode EncounterActivitiesEncounterPerformerEncounterPerformerAssignedEntity'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolEncounterActivitiesEncounterPerformer constraints.validation.error='EncounterPerformerEncounterPerformerAssignedEntity'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolEncounterActivitiesEncounterPerformerEncounterPerformerAssignedEntity constraints.validation.info='EncounterPerformerAssignedEntityCode'"
  * @generated
@@ -178,6 +178,36 @@ public interface EncounterActivities extends Encounter {
 	 * @generated
 	 */
 	boolean validateEncounterActivitiesEffectiveTime(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * (self.sDTCDischargeDispositionCode->isEmpty() or self.sDTCDischargeDispositionCode->exists(element | element.isNullFlavorUndefined())) implies (not self.sDTCDischargeDispositionCode->isEmpty())
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.sDTCDischargeDispositionCode->isEmpty() or self.sDTCDischargeDispositionCode->exists(element | element.isNullFlavorUndefined())) implies (not self.sDTCDischargeDispositionCode->isEmpty())'"
+	 * @generated
+	 */
+	boolean validateEncounterActivitiesSDTCDischargeDispositionCodeP(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * (self.sDTCDischargeDispositionCode->isEmpty() or self.sDTCDischargeDispositionCode->exists(element | element.isNullFlavorUndefined())) implies (self.sDTCDischargeDispositionCode->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CE) and 
+	 * let value : datatypes::CE = element.oclAsType(datatypes::CE) in 
+	 * value.codeSystem = '2.16.840.1.113883.12.112' and not value.code.oclIsUndefined()))
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.sDTCDischargeDispositionCode->isEmpty() or self.sDTCDischargeDispositionCode->exists(element | element.isNullFlavorUndefined())) implies (self.sDTCDischargeDispositionCode->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CE) and \r\nlet value : datatypes::CE = element.oclAsType(datatypes::CE) in \r\nvalue.codeSystem = \'2.16.840.1.113883.12.112\' and not value.code.oclIsUndefined()))'"
+	 * @generated
+	 */
+	boolean validateEncounterActivitiesSDTCDischargeDispositionCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->

@@ -3625,6 +3625,14 @@
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//EncounterActivities/EncounterActivitiesEffectiveTime/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//EncounterActivities/EncounterActivitiesEffectiveTime/context"/>
       </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//EncounterActivities/EncounterActivitiesSDTCDischargeDispositionCodeP">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//EncounterActivities/EncounterActivitiesSDTCDischargeDispositionCodeP/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//EncounterActivities/EncounterActivitiesSDTCDischargeDispositionCodeP/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//EncounterActivities/EncounterActivitiesSDTCDischargeDispositionCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//EncounterActivities/EncounterActivitiesSDTCDischargeDispositionCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//EncounterActivities/EncounterActivitiesSDTCDischargeDispositionCode/context"/>
+      </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//EncounterActivities/EncounterActivitiesServiceDeliveryLocation">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//EncounterActivities/EncounterActivitiesServiceDeliveryLocation/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//EncounterActivities/EncounterActivitiesServiceDeliveryLocation/context"/>
@@ -6656,6 +6664,10 @@
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//DischargeSummary/DischargeSummaryComponentOfEncompassingEncounter3DischargeDispositionCode">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//DischargeSummary/DischargeSummaryComponentOfEncompassingEncounter3DischargeDispositionCode/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//DischargeSummary/DischargeSummaryComponentOfEncompassingEncounter3DischargeDispositionCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//DischargeSummary/DischargeSummaryComponentOfEncompassingEncounter3DischargeDispositionCodeP">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//DischargeSummary/DischargeSummaryComponentOfEncompassingEncounter3DischargeDispositionCodeP/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//DischargeSummary/DischargeSummaryComponentOfEncompassingEncounter3DischargeDispositionCodeP/context"/>
       </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//DischargeSummary/DischargeSummaryComponentOfEncompassingEncounter3EffectiveTime">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//DischargeSummary/DischargeSummaryComponentOfEncompassingEncounter3EffectiveTime/diagnostics"/>
