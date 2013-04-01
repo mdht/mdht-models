@@ -38,148 +38,167 @@ import org.openhealthtools.mdht.uml.cda.phcr.operations.PhcrClinicalInformationS
  */
 public class PhcrClinicalInformationSectionImpl extends SectionImpl implements PhcrClinicalInformationSection {
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	protected PhcrClinicalInformationSectionImpl() {
-    super();
-  }
+		super();
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
-    return PhcrPackage.Literals.PHCR_CLINICAL_INFORMATION_SECTION;
-  }
+		return PhcrPackage.Literals.PHCR_CLINICAL_INFORMATION_SECTION;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validatePhcrClinicalInformationSectionPatientConditionConstraint(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return PhcrClinicalInformationSectionOperations.validatePhcrClinicalInformationSectionPatientConditionConstraint(this, diagnostics, context);
-  }
+		return PhcrClinicalInformationSectionOperations.validatePhcrClinicalInformationSectionPatientConditionConstraint(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validatePhcrClinicalInformationSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return PhcrClinicalInformationSectionOperations.validatePhcrClinicalInformationSectionTemplateId(this, diagnostics, context);
-  }
+		return PhcrClinicalInformationSectionOperations.validatePhcrClinicalInformationSectionTemplateId(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validatePhcrClinicalInformationSectionCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return PhcrClinicalInformationSectionOperations.validatePhcrClinicalInformationSectionCode(this, diagnostics, context);
-  }
+		return PhcrClinicalInformationSectionOperations.validatePhcrClinicalInformationSectionCode(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validatePhcrClinicalInformationSectionCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return PhcrClinicalInformationSectionOperations.validatePhcrClinicalInformationSectionCodeP(this, diagnostics, context);
-  }
+		return PhcrClinicalInformationSectionOperations.validatePhcrClinicalInformationSectionCodeP(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validatePhcrClinicalInformationSectionTitle(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return PhcrClinicalInformationSectionOperations.validatePhcrClinicalInformationSectionTitle(this, diagnostics, context);
-  }
+		return PhcrClinicalInformationSectionOperations.validatePhcrClinicalInformationSectionTitle(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validatePhcrClinicalInformationSectionText(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return PhcrClinicalInformationSectionOperations.validatePhcrClinicalInformationSectionText(this, diagnostics, context);
-  }
+		return PhcrClinicalInformationSectionOperations.validatePhcrClinicalInformationSectionText(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validatePhcrClinicalInformationSectionCaseObservation(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return PhcrClinicalInformationSectionOperations.validatePhcrClinicalInformationSectionCaseObservation(this, diagnostics, context);
-  }
+		return PhcrClinicalInformationSectionOperations.validatePhcrClinicalInformationSectionCaseObservation(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validatePhcrClinicalInformationSectionPatientConditionAliveObservation(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return PhcrClinicalInformationSectionOperations.validatePhcrClinicalInformationSectionPatientConditionAliveObservation(this, diagnostics, context);
-  }
+		return PhcrClinicalInformationSectionOperations.validatePhcrClinicalInformationSectionPatientConditionAliveObservation(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validatePhcrClinicalInformationSectionPatientConditionDeceasedObservation(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return PhcrClinicalInformationSectionOperations.validatePhcrClinicalInformationSectionPatientConditionDeceasedObservation(this, diagnostics, context);
-  }
+		return PhcrClinicalInformationSectionOperations.validatePhcrClinicalInformationSectionPatientConditionDeceasedObservation(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validatePhcrClinicalInformationSectionPhcrRelevantMedicalConditionHistoryObservation(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return PhcrClinicalInformationSectionOperations.validatePhcrClinicalInformationSectionPhcrRelevantMedicalConditionHistoryObservation(this, diagnostics, context);
-  }
+		return PhcrClinicalInformationSectionOperations.validatePhcrClinicalInformationSectionPhcrRelevantMedicalConditionHistoryObservation(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public CaseObservation getCaseObservation() {
-    return PhcrClinicalInformationSectionOperations.getCaseObservation(this);
-  }
+		return PhcrClinicalInformationSectionOperations.getCaseObservation(this);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public PatientConditionAliveObservation getPatientConditionAliveObservation() {
-    return PhcrClinicalInformationSectionOperations.getPatientConditionAliveObservation(this);
-  }
+		return PhcrClinicalInformationSectionOperations.getPatientConditionAliveObservation(this);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public PatientConditionDeceasedObservation getPatientConditionDeceasedObservation() {
-    return PhcrClinicalInformationSectionOperations.getPatientConditionDeceasedObservation(this);
-  }
+		return PhcrClinicalInformationSectionOperations.getPatientConditionDeceasedObservation(this);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public EList<PhcrRelevantMedicalConditionHistoryObservation> getPhcrRelevantMedicalConditionHistoryObservations() {
-    return PhcrClinicalInformationSectionOperations.getPhcrRelevantMedicalConditionHistoryObservations(this);
-  }
+		return PhcrClinicalInformationSectionOperations.getPhcrRelevantMedicalConditionHistoryObservations(this);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public PhcrClinicalInformationSection init() {
+	    return Initializer.Util.init(this);
+	}
+
+	/**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public PhcrClinicalInformationSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 	  
 } //PhcrClinicalInformationSectionImpl

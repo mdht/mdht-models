@@ -33,95 +33,114 @@ import org.openhealthtools.mdht.uml.cda.phcr.operations.RaceObservationOperation
  */
 public class RaceObservationImpl extends ObservationImpl implements RaceObservation {
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	protected RaceObservationImpl() {
-    super();
-  }
+		super();
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
-    return PhcrPackage.Literals.RACE_OBSERVATION;
-  }
+		return PhcrPackage.Literals.RACE_OBSERVATION;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validateRaceObservationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return RaceObservationOperations.validateRaceObservationTemplateId(this, diagnostics, context);
-  }
+		return RaceObservationOperations.validateRaceObservationTemplateId(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validateRaceObservationClassCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return RaceObservationOperations.validateRaceObservationClassCode(this, diagnostics, context);
-  }
+		return RaceObservationOperations.validateRaceObservationClassCode(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validateRaceObservationCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return RaceObservationOperations.validateRaceObservationCode(this, diagnostics, context);
-  }
+		return RaceObservationOperations.validateRaceObservationCode(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validateRaceObservationMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return RaceObservationOperations.validateRaceObservationMoodCode(this, diagnostics, context);
-  }
+		return RaceObservationOperations.validateRaceObservationMoodCode(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validateRaceObservationCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return RaceObservationOperations.validateRaceObservationCodeP(this, diagnostics, context);
-  }
+		return RaceObservationOperations.validateRaceObservationCodeP(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validateRaceObservationStatusCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return RaceObservationOperations.validateRaceObservationStatusCode(this, diagnostics, context);
-  }
+		return RaceObservationOperations.validateRaceObservationStatusCode(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validateRaceObservationStatusCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return RaceObservationOperations.validateRaceObservationStatusCodeP(this, diagnostics, context);
-  }
+		return RaceObservationOperations.validateRaceObservationStatusCodeP(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validateRaceObservationValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return RaceObservationOperations.validateRaceObservationValue(this, diagnostics, context);
-  }
+		return RaceObservationOperations.validateRaceObservationValue(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public RaceObservation init() {
+	    return Initializer.Util.init(this);
+	}
+
+	/**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public RaceObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 
 	
 } //RaceObservationImpl

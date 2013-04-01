@@ -37,123 +37,144 @@ import org.openhealthtools.mdht.uml.cda.phcr.operations.PhcrRelevantDxTestsSecti
  */
 public class PhcrRelevantDxTestsSectionImpl extends ResultsSectionImpl implements PhcrRelevantDxTestsSection {
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	protected PhcrRelevantDxTestsSectionImpl() {
-    super();
-  }
+		super();
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
-    return PhcrPackage.Literals.PHCR_RELEVANT_DX_TESTS_SECTION;
-  }
+		return PhcrPackage.Literals.PHCR_RELEVANT_DX_TESTS_SECTION;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   public boolean validatePhcrRelevantDxTestsSectionCodeP(DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-    return PhcrRelevantDxTestsSectionOperations.validatePhcrRelevantDxTestsSectionCodeP(this, diagnostics, context);
-  }
+		return PhcrRelevantDxTestsSectionOperations.validatePhcrRelevantDxTestsSectionCodeP(this, diagnostics, context);
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validatePhcrRelevantDxTestsSectionCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return PhcrRelevantDxTestsSectionOperations.validatePhcrRelevantDxTestsSectionCode(this, diagnostics, context);
-  }
+		return PhcrRelevantDxTestsSectionOperations.validatePhcrRelevantDxTestsSectionCode(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validatePhcrRelevantDxTestsSectionTitle(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return PhcrRelevantDxTestsSectionOperations.validatePhcrRelevantDxTestsSectionTitle(this, diagnostics, context);
-  }
+		return PhcrRelevantDxTestsSectionOperations.validatePhcrRelevantDxTestsSectionTitle(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validatePhcrRelevantDxTestsSectionText(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return PhcrRelevantDxTestsSectionOperations.validatePhcrRelevantDxTestsSectionText(this, diagnostics, context);
-  }
+		return PhcrRelevantDxTestsSectionOperations.validatePhcrRelevantDxTestsSectionText(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validatePhcrRelevantDxTestsSectionResultOrganizer(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return PhcrRelevantDxTestsSectionOperations.validatePhcrRelevantDxTestsSectionResultOrganizer(this, diagnostics, context);
-  }
+		return PhcrRelevantDxTestsSectionOperations.validatePhcrRelevantDxTestsSectionResultOrganizer(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validatePhcrRelevantDxTestsSectionResultObservation(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return PhcrRelevantDxTestsSectionOperations.validatePhcrRelevantDxTestsSectionResultObservation(this, diagnostics, context);
-  }
+		return PhcrRelevantDxTestsSectionOperations.validatePhcrRelevantDxTestsSectionResultObservation(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validatePhcrRelevantDxTestsSectionImagingObservation(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return PhcrRelevantDxTestsSectionOperations.validatePhcrRelevantDxTestsSectionImagingObservation(this, diagnostics, context);
-  }
+		return PhcrRelevantDxTestsSectionOperations.validatePhcrRelevantDxTestsSectionImagingObservation(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public EList<ResultOrganizer> getPHCRResultOrganizers() {
-    return PhcrRelevantDxTestsSectionOperations.getPHCRResultOrganizers(this);
-  }
+		return PhcrRelevantDxTestsSectionOperations.getPHCRResultOrganizers(this);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public EList<ResultObservation> getResultObservations() {
-    return PhcrRelevantDxTestsSectionOperations.getResultObservations(this);
-  }
+		return PhcrRelevantDxTestsSectionOperations.getResultObservations(this);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public EList<ImagingObservation> getImagingObservations() {
-    return PhcrRelevantDxTestsSectionOperations.getImagingObservations(this);
-  }
+		return PhcrRelevantDxTestsSectionOperations.getImagingObservations(this);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	public boolean validateResultsSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return PhcrRelevantDxTestsSectionOperations.validateResultsSectionTemplateId(this, diagnostics, context);
-  }
+		return PhcrRelevantDxTestsSectionOperations.validateResultsSectionTemplateId(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public PhcrRelevantDxTestsSection init() {
+	    return Initializer.Util.init(this);
+	}
+
+	/**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    @Override
+	public PhcrRelevantDxTestsSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 	
 } //PhcrRelevantDxTestsSectionImpl

@@ -34,130 +34,149 @@ import org.openhealthtools.mdht.uml.cda.phcr.operations.PregnancyObservationOper
  */
 public class PregnancyObservationImpl extends ObservationImpl implements PregnancyObservation {
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	protected PregnancyObservationImpl() {
-    super();
-  }
+		super();
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
-    return PhcrPackage.Literals.PREGNANCY_OBSERVATION;
-  }
+		return PhcrPackage.Literals.PREGNANCY_OBSERVATION;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validatePregnancyObservationEffectiveTime(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return PregnancyObservationOperations.validatePregnancyObservationEffectiveTime(this, diagnostics, context);
-  }
+		return PregnancyObservationOperations.validatePregnancyObservationEffectiveTime(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validatePregnancyObservationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return PregnancyObservationOperations.validatePregnancyObservationTemplateId(this, diagnostics, context);
-  }
+		return PregnancyObservationOperations.validatePregnancyObservationTemplateId(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validatePregnancyObservationClassCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return PregnancyObservationOperations.validatePregnancyObservationClassCode(this, diagnostics, context);
-  }
+		return PregnancyObservationOperations.validatePregnancyObservationClassCode(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validatePregnancyObservationCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return PregnancyObservationOperations.validatePregnancyObservationCode(this, diagnostics, context);
-  }
+		return PregnancyObservationOperations.validatePregnancyObservationCode(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validatePregnancyObservationMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return PregnancyObservationOperations.validatePregnancyObservationMoodCode(this, diagnostics, context);
-  }
+		return PregnancyObservationOperations.validatePregnancyObservationMoodCode(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validatePregnancyObservationCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return PregnancyObservationOperations.validatePregnancyObservationCodeP(this, diagnostics, context);
-  }
+		return PregnancyObservationOperations.validatePregnancyObservationCodeP(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validatePregnancyObservationStatusCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return PregnancyObservationOperations.validatePregnancyObservationStatusCode(this, diagnostics, context);
-  }
+		return PregnancyObservationOperations.validatePregnancyObservationStatusCode(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validatePregnancyObservationStatusCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return PregnancyObservationOperations.validatePregnancyObservationStatusCodeP(this, diagnostics, context);
-  }
+		return PregnancyObservationOperations.validatePregnancyObservationStatusCodeP(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validatePregnancyObservationValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return PregnancyObservationOperations.validatePregnancyObservationValue(this, diagnostics, context);
-  }
+		return PregnancyObservationOperations.validatePregnancyObservationValue(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validatePregnancyObservationValueP(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return PregnancyObservationOperations.validatePregnancyObservationValueP(this, diagnostics, context);
-  }
+		return PregnancyObservationOperations.validatePregnancyObservationValueP(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validatePregnancyObservationEstimatedDateOfDeliveryObservation(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return PregnancyObservationOperations.validatePregnancyObservationEstimatedDateOfDeliveryObservation(this, diagnostics, context);
-  }
+		return PregnancyObservationOperations.validatePregnancyObservationEstimatedDateOfDeliveryObservation(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public EstimatedDateOfDeliveryObservation getEstimatedDateOfDeliveryObservation() {
-    return PregnancyObservationOperations.getEstimatedDateOfDeliveryObservation(this);
-  }
+		return PregnancyObservationOperations.getEstimatedDateOfDeliveryObservation(this);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public PregnancyObservation init() {
+	    return Initializer.Util.init(this);
+	}
+
+	/**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public PregnancyObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 	
 } //PregnancyObservationImpl

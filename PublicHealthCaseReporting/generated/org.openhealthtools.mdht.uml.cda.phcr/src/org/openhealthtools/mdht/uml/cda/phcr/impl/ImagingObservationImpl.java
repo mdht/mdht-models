@@ -33,113 +33,134 @@ import org.openhealthtools.mdht.uml.cda.phcr.operations.ImagingObservationOperat
  */
 public class ImagingObservationImpl extends ProblemObservationImpl implements ImagingObservation {
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	protected ImagingObservationImpl() {
-    super();
-  }
+		super();
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
-    return PhcrPackage.Literals.IMAGING_OBSERVATION;
-  }
+		return PhcrPackage.Literals.IMAGING_OBSERVATION;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validateImagingObservationClassCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return ImagingObservationOperations.validateImagingObservationClassCode(this, diagnostics, context);
-  }
+		return ImagingObservationOperations.validateImagingObservationClassCode(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validateImagingObservationMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return ImagingObservationOperations.validateImagingObservationMoodCode(this, diagnostics, context);
-  }
+		return ImagingObservationOperations.validateImagingObservationMoodCode(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validateImagingObservationId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return ImagingObservationOperations.validateImagingObservationId(this, diagnostics, context);
-  }
+		return ImagingObservationOperations.validateImagingObservationId(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validateImagingObservationCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return ImagingObservationOperations.validateImagingObservationCode(this, diagnostics, context);
-  }
+		return ImagingObservationOperations.validateImagingObservationCode(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   public boolean validateImagingObservationStatusCodeP(DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-    return ImagingObservationOperations.validateImagingObservationStatusCodeP(this, diagnostics, context);
-  }
+		return ImagingObservationOperations.validateImagingObservationStatusCodeP(this, diagnostics, context);
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validateImagingObservationStatusCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return ImagingObservationOperations.validateImagingObservationStatusCode(this, diagnostics, context);
-  }
+		return ImagingObservationOperations.validateImagingObservationStatusCode(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validateImagingObservationEffectiveTime(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return ImagingObservationOperations.validateImagingObservationEffectiveTime(this, diagnostics, context);
-  }
+		return ImagingObservationOperations.validateImagingObservationEffectiveTime(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validateImagingObservationValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return ImagingObservationOperations.validateImagingObservationValue(this, diagnostics, context);
-  }
+		return ImagingObservationOperations.validateImagingObservationValue(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validateImagingObservationMethodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return ImagingObservationOperations.validateImagingObservationMethodCode(this, diagnostics, context);
-  }
+		return ImagingObservationOperations.validateImagingObservationMethodCode(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	public boolean validateProblemObservationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return ImagingObservationOperations.validateProblemObservationTemplateId(this, diagnostics, context);
-  }
+		return ImagingObservationOperations.validateProblemObservationTemplateId(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public ImagingObservation init() {
+	    return Initializer.Util.init(this);
+	}
+
+	/**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    @Override
+	public ImagingObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } //ImagingObservationImpl

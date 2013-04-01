@@ -33,93 +33,112 @@ import org.openhealthtools.mdht.uml.cda.phcr.operations.EstimatedDateOfDeliveryO
  */
 public class EstimatedDateOfDeliveryObservationImpl extends ObservationImpl implements EstimatedDateOfDeliveryObservation {
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	protected EstimatedDateOfDeliveryObservationImpl() {
-    super();
-  }
+		super();
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
-    return PhcrPackage.Literals.ESTIMATED_DATE_OF_DELIVERY_OBSERVATION;
-  }
+		return PhcrPackage.Literals.ESTIMATED_DATE_OF_DELIVERY_OBSERVATION;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validateEstimatedDateOfDeliveryObservationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return EstimatedDateOfDeliveryObservationOperations.validateEstimatedDateOfDeliveryObservationTemplateId(this, diagnostics, context);
-  }
+		return EstimatedDateOfDeliveryObservationOperations.validateEstimatedDateOfDeliveryObservationTemplateId(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validateEstimatedDateOfDeliveryObservationClassCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return EstimatedDateOfDeliveryObservationOperations.validateEstimatedDateOfDeliveryObservationClassCode(this, diagnostics, context);
-  }
+		return EstimatedDateOfDeliveryObservationOperations.validateEstimatedDateOfDeliveryObservationClassCode(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validateEstimatedDateOfDeliveryObservationCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return EstimatedDateOfDeliveryObservationOperations.validateEstimatedDateOfDeliveryObservationCode(this, diagnostics, context);
-  }
+		return EstimatedDateOfDeliveryObservationOperations.validateEstimatedDateOfDeliveryObservationCode(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validateEstimatedDateOfDeliveryObservationMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return EstimatedDateOfDeliveryObservationOperations.validateEstimatedDateOfDeliveryObservationMoodCode(this, diagnostics, context);
-  }
+		return EstimatedDateOfDeliveryObservationOperations.validateEstimatedDateOfDeliveryObservationMoodCode(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validateEstimatedDateOfDeliveryObservationCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return EstimatedDateOfDeliveryObservationOperations.validateEstimatedDateOfDeliveryObservationCodeP(this, diagnostics, context);
-  }
+		return EstimatedDateOfDeliveryObservationOperations.validateEstimatedDateOfDeliveryObservationCodeP(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validateEstimatedDateOfDeliveryObservationStatusCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return EstimatedDateOfDeliveryObservationOperations.validateEstimatedDateOfDeliveryObservationStatusCode(this, diagnostics, context);
-  }
+		return EstimatedDateOfDeliveryObservationOperations.validateEstimatedDateOfDeliveryObservationStatusCode(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validateEstimatedDateOfDeliveryObservationStatusCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return EstimatedDateOfDeliveryObservationOperations.validateEstimatedDateOfDeliveryObservationStatusCodeP(this, diagnostics, context);
-  }
+		return EstimatedDateOfDeliveryObservationOperations.validateEstimatedDateOfDeliveryObservationStatusCodeP(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validateEstimatedDateOfDeliveryObservationValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return EstimatedDateOfDeliveryObservationOperations.validateEstimatedDateOfDeliveryObservationValue(this, diagnostics, context);
-  }
+		return EstimatedDateOfDeliveryObservationOperations.validateEstimatedDateOfDeliveryObservationValue(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EstimatedDateOfDeliveryObservation init() {
+	    return Initializer.Util.init(this);
+	}
+
+	/**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public EstimatedDateOfDeliveryObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } //EstimatedDateOfDeliveryObservationImpl
