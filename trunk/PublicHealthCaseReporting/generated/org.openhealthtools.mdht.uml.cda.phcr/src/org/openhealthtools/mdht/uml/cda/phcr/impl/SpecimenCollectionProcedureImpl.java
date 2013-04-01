@@ -33,75 +33,94 @@ import org.openhealthtools.mdht.uml.cda.phcr.operations.SpecimenCollectionProced
  */
 public class SpecimenCollectionProcedureImpl extends ProcedureImpl implements SpecimenCollectionProcedure {
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	protected SpecimenCollectionProcedureImpl() {
-    super();
-  }
+		super();
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
-    return PhcrPackage.Literals.SPECIMEN_COLLECTION_PROCEDURE;
-  }
+		return PhcrPackage.Literals.SPECIMEN_COLLECTION_PROCEDURE;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validateSpecimenCollectionProcedureTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return SpecimenCollectionProcedureOperations.validateSpecimenCollectionProcedureTemplateId(this, diagnostics, context);
-  }
+		return SpecimenCollectionProcedureOperations.validateSpecimenCollectionProcedureTemplateId(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validateSpecimenCollectionProcedureClassCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return SpecimenCollectionProcedureOperations.validateSpecimenCollectionProcedureClassCode(this, diagnostics, context);
-  }
+		return SpecimenCollectionProcedureOperations.validateSpecimenCollectionProcedureClassCode(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validateSpecimenCollectionProcedureMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return SpecimenCollectionProcedureOperations.validateSpecimenCollectionProcedureMoodCode(this, diagnostics, context);
-  }
+		return SpecimenCollectionProcedureOperations.validateSpecimenCollectionProcedureMoodCode(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validateSpecimenCollectionProcedureCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return SpecimenCollectionProcedureOperations.validateSpecimenCollectionProcedureCode(this, diagnostics, context);
-  }
+		return SpecimenCollectionProcedureOperations.validateSpecimenCollectionProcedureCode(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validateSpecimenCollectionProcedureEffectiveTime(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return SpecimenCollectionProcedureOperations.validateSpecimenCollectionProcedureEffectiveTime(this, diagnostics, context);
-  }
+		return SpecimenCollectionProcedureOperations.validateSpecimenCollectionProcedureEffectiveTime(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validateSpecimenCollectionProcedureTargetSiteCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return SpecimenCollectionProcedureOperations.validateSpecimenCollectionProcedureTargetSiteCode(this, diagnostics, context);
-  }
+		return SpecimenCollectionProcedureOperations.validateSpecimenCollectionProcedureTargetSiteCode(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public SpecimenCollectionProcedure init() {
+	    return Initializer.Util.init(this);
+	}
+
+	/**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public SpecimenCollectionProcedure init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } //SpecimenCollectionProcedureImpl

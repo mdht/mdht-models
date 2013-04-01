@@ -36,130 +36,149 @@ import org.openhealthtools.mdht.uml.cda.phcr.operations.TherapeuticRegimenActOpe
  */
 public class TherapeuticRegimenActImpl extends ActImpl implements TherapeuticRegimenAct {
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	protected TherapeuticRegimenActImpl() {
-    super();
-  }
+		super();
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
-    return PhcrPackage.Literals.THERAPEUTIC_REGIMEN_ACT;
-  }
+		return PhcrPackage.Literals.THERAPEUTIC_REGIMEN_ACT;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validateTherapeuticRegimenActTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return TherapeuticRegimenActOperations.validateTherapeuticRegimenActTemplateId(this, diagnostics, context);
-  }
+		return TherapeuticRegimenActOperations.validateTherapeuticRegimenActTemplateId(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validateTherapeuticRegimenActClassCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return TherapeuticRegimenActOperations.validateTherapeuticRegimenActClassCode(this, diagnostics, context);
-  }
+		return TherapeuticRegimenActOperations.validateTherapeuticRegimenActClassCode(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validateTherapeuticRegimenActCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return TherapeuticRegimenActOperations.validateTherapeuticRegimenActCode(this, diagnostics, context);
-  }
+		return TherapeuticRegimenActOperations.validateTherapeuticRegimenActCode(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validateTherapeuticRegimenActMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return TherapeuticRegimenActOperations.validateTherapeuticRegimenActMoodCode(this, diagnostics, context);
-  }
+		return TherapeuticRegimenActOperations.validateTherapeuticRegimenActMoodCode(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validateTherapeuticRegimenActNegationInd(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return TherapeuticRegimenActOperations.validateTherapeuticRegimenActNegationInd(this, diagnostics, context);
-  }
+		return TherapeuticRegimenActOperations.validateTherapeuticRegimenActNegationInd(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validateTherapeuticRegimenActCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return TherapeuticRegimenActOperations.validateTherapeuticRegimenActCodeP(this, diagnostics, context);
-  }
+		return TherapeuticRegimenActOperations.validateTherapeuticRegimenActCodeP(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validateTherapeuticRegimenActStatusCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return TherapeuticRegimenActOperations.validateTherapeuticRegimenActStatusCode(this, diagnostics, context);
-  }
+		return TherapeuticRegimenActOperations.validateTherapeuticRegimenActStatusCode(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validateTherapeuticRegimenActStatusCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return TherapeuticRegimenActOperations.validateTherapeuticRegimenActStatusCodeP(this, diagnostics, context);
-  }
+		return TherapeuticRegimenActOperations.validateTherapeuticRegimenActStatusCodeP(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validateTherapeuticRegimenActTreatmentGivenSubstanceAdministration(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return TherapeuticRegimenActOperations.validateTherapeuticRegimenActTreatmentGivenSubstanceAdministration(this, diagnostics, context);
-  }
+		return TherapeuticRegimenActOperations.validateTherapeuticRegimenActTreatmentGivenSubstanceAdministration(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validateTherapeuticRegimenActTreatmentNotGivenSubstanceAdministration(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return TherapeuticRegimenActOperations.validateTherapeuticRegimenActTreatmentNotGivenSubstanceAdministration(this, diagnostics, context);
-  }
+		return TherapeuticRegimenActOperations.validateTherapeuticRegimenActTreatmentNotGivenSubstanceAdministration(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public EList<TreatmentGivenSubstanceAdministration> getTreatmentGivenSubstanceAdministrations() {
-    return TherapeuticRegimenActOperations.getTreatmentGivenSubstanceAdministrations(this);
-  }
+		return TherapeuticRegimenActOperations.getTreatmentGivenSubstanceAdministrations(this);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public EList<TreatmentNotGivenSubstanceAdministration> getTreatmentNotGivenSubstanceAdministrations() {
-    return TherapeuticRegimenActOperations.getTreatmentNotGivenSubstanceAdministrations(this);
-  }
+		return TherapeuticRegimenActOperations.getTreatmentNotGivenSubstanceAdministrations(this);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public TherapeuticRegimenAct init() {
+	    return Initializer.Util.init(this);
+	}
+
+	/**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public TherapeuticRegimenAct init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 	
 } //TherapeuticRegimenActImpl

@@ -35,120 +35,139 @@ import org.openhealthtools.mdht.uml.cda.phcr.operations.PhcrRelevantMedicalCondi
  */
 public class PhcrRelevantMedicalConditionHistoryObservationImpl extends ObservationImpl implements PhcrRelevantMedicalConditionHistoryObservation {
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	protected PhcrRelevantMedicalConditionHistoryObservationImpl() {
-    super();
-  }
+		super();
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
-    return PhcrPackage.Literals.PHCR_RELEVANT_MEDICAL_CONDITION_HISTORY_OBSERVATION;
-  }
+		return PhcrPackage.Literals.PHCR_RELEVANT_MEDICAL_CONDITION_HISTORY_OBSERVATION;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validatePhcrRelevantMedicalConditionHistoryObservationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return PhcrRelevantMedicalConditionHistoryObservationOperations.validatePhcrRelevantMedicalConditionHistoryObservationTemplateId(this, diagnostics, context);
-  }
+		return PhcrRelevantMedicalConditionHistoryObservationOperations.validatePhcrRelevantMedicalConditionHistoryObservationTemplateId(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validatePhcrRelevantMedicalConditionHistoryObservationClassCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return PhcrRelevantMedicalConditionHistoryObservationOperations.validatePhcrRelevantMedicalConditionHistoryObservationClassCode(this, diagnostics, context);
-  }
+		return PhcrRelevantMedicalConditionHistoryObservationOperations.validatePhcrRelevantMedicalConditionHistoryObservationClassCode(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validatePhcrRelevantMedicalConditionHistoryObservationCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return PhcrRelevantMedicalConditionHistoryObservationOperations.validatePhcrRelevantMedicalConditionHistoryObservationCodeP(this, diagnostics, context);
-  }
+		return PhcrRelevantMedicalConditionHistoryObservationOperations.validatePhcrRelevantMedicalConditionHistoryObservationCodeP(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validatePhcrRelevantMedicalConditionHistoryObservationCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return PhcrRelevantMedicalConditionHistoryObservationOperations.validatePhcrRelevantMedicalConditionHistoryObservationCode(this, diagnostics, context);
-  }
+		return PhcrRelevantMedicalConditionHistoryObservationOperations.validatePhcrRelevantMedicalConditionHistoryObservationCode(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validatePhcrRelevantMedicalConditionHistoryObservationEffectiveTime(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return PhcrRelevantMedicalConditionHistoryObservationOperations.validatePhcrRelevantMedicalConditionHistoryObservationEffectiveTime(this, diagnostics, context);
-  }
+		return PhcrRelevantMedicalConditionHistoryObservationOperations.validatePhcrRelevantMedicalConditionHistoryObservationEffectiveTime(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validatePhcrRelevantMedicalConditionHistoryObservationMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return PhcrRelevantMedicalConditionHistoryObservationOperations.validatePhcrRelevantMedicalConditionHistoryObservationMoodCode(this, diagnostics, context);
-  }
+		return PhcrRelevantMedicalConditionHistoryObservationOperations.validatePhcrRelevantMedicalConditionHistoryObservationMoodCode(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validatePhcrRelevantMedicalConditionHistoryObservationNegationInd(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return PhcrRelevantMedicalConditionHistoryObservationOperations.validatePhcrRelevantMedicalConditionHistoryObservationNegationInd(this, diagnostics, context);
-  }
+		return PhcrRelevantMedicalConditionHistoryObservationOperations.validatePhcrRelevantMedicalConditionHistoryObservationNegationInd(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validatePhcrRelevantMedicalConditionHistoryObservationStatusCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return PhcrRelevantMedicalConditionHistoryObservationOperations.validatePhcrRelevantMedicalConditionHistoryObservationStatusCode(this, diagnostics, context);
-  }
+		return PhcrRelevantMedicalConditionHistoryObservationOperations.validatePhcrRelevantMedicalConditionHistoryObservationStatusCode(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validatePhcrRelevantMedicalConditionHistoryObservationStatusCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return PhcrRelevantMedicalConditionHistoryObservationOperations.validatePhcrRelevantMedicalConditionHistoryObservationStatusCodeP(this, diagnostics, context);
-  }
+		return PhcrRelevantMedicalConditionHistoryObservationOperations.validatePhcrRelevantMedicalConditionHistoryObservationStatusCodeP(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validatePhcrRelevantMedicalConditionHistoryObservationProblemObservation(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return PhcrRelevantMedicalConditionHistoryObservationOperations.validatePhcrRelevantMedicalConditionHistoryObservationProblemObservation(this, diagnostics, context);
-  }
+		return PhcrRelevantMedicalConditionHistoryObservationOperations.validatePhcrRelevantMedicalConditionHistoryObservationProblemObservation(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public EList<ProblemObservation> getProblemObservations() {
-    return PhcrRelevantMedicalConditionHistoryObservationOperations.getProblemObservations(this);
-  }
+		return PhcrRelevantMedicalConditionHistoryObservationOperations.getProblemObservations(this);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public PhcrRelevantMedicalConditionHistoryObservation init() {
+	    return Initializer.Util.init(this);
+	}
+
+	/**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public PhcrRelevantMedicalConditionHistoryObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } //PhcrRelevantMedicalConditionHistoryObservationImpl

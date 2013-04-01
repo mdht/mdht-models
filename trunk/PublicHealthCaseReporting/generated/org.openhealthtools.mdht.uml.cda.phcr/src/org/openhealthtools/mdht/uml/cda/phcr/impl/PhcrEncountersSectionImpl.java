@@ -35,68 +35,89 @@ import org.openhealthtools.mdht.uml.cda.phcr.operations.PhcrEncountersSectionOpe
  */
 public class PhcrEncountersSectionImpl extends EncountersSectionImpl implements PhcrEncountersSection {
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	protected PhcrEncountersSectionImpl() {
-    super();
-  }
+		super();
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
-    return PhcrPackage.Literals.PHCR_ENCOUNTERS_SECTION;
-  }
+		return PhcrPackage.Literals.PHCR_ENCOUNTERS_SECTION;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validatePhcrEncountersSectionTitle(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return PhcrEncountersSectionOperations.validatePhcrEncountersSectionTitle(this, diagnostics, context);
-  }
+		return PhcrEncountersSectionOperations.validatePhcrEncountersSectionTitle(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validatePhcrEncountersSectionText(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return PhcrEncountersSectionOperations.validatePhcrEncountersSectionText(this, diagnostics, context);
-  }
+		return PhcrEncountersSectionOperations.validatePhcrEncountersSectionText(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validatePhcrEncountersSectionEncountersActivity(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return PhcrEncountersSectionOperations.validatePhcrEncountersSectionEncountersActivity(this, diagnostics, context);
-  }
+		return PhcrEncountersSectionOperations.validatePhcrEncountersSectionEncountersActivity(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public EList<EncountersActivity> getPHCREncountersActivities() {
-    return PhcrEncountersSectionOperations.getPHCREncountersActivities(this);
-  }
+		return PhcrEncountersSectionOperations.getPHCREncountersActivities(this);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	public boolean validateEncountersSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return PhcrEncountersSectionOperations.validateEncountersSectionTemplateId(this, diagnostics, context);
-  }
+		return PhcrEncountersSectionOperations.validateEncountersSectionTemplateId(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public PhcrEncountersSection init() {
+	    return Initializer.Util.init(this);
+	}
+
+	/**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    @Override
+	public PhcrEncountersSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 	
 } //PhcrEncountersSectionImpl
