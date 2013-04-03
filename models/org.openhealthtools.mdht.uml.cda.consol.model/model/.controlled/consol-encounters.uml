@@ -104,15 +104,6 @@
         <body>not self.code.originalText.reference.value.oclIsUndefined() implies not self.getSection().text.getText(self.code.originalText.reference.value.substring(2, self.code.originalText.reference.value.size())).oclIsUndefined()</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_neVLQCwZEeGKLc4ckmfDag" name="dischargeDispositionCode" constrainedElement="_2LayQBSVEeGGzu7fmW9pXw">
-      <ownedComment xmi:id="_PZlsAMetEeGbEIO0uZ0_SA">
-        <body>UNIMPLEMENTABLE</body>
-      </ownedComment>
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_vCFQkCwZEeGKLc4ckmfDag">
-        <language>Analysis</language>
-        <body>If access to NUBC is unavailable, SHALL be selected from CodeSystem 2.16.840.1.113883.12.112 HL7 Discharge Disposition. The prefix sdtc: SHALL be bound to the namespace &quot;urn:hl7-org:sdtc&quot;. The use of the namespace provides a necessary extension to CDA R2 for the use of the dischargeDispositionCode element</body>
-      </specification>
-    </ownedRule>
     <ownedRule xmi:id="_EywuoCwaEeGKLc4ckmfDag" name="serviceDeliveryTypeCode" constrainedElement="_2LayQBSVEeGGzu7fmW9pXw">
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_JwPVQCwaEeGKLc4ckmfDag">
         <language>Analysis</language>
@@ -251,9 +242,6 @@
     <ruleId>CONF:8723</ruleId>
     <ruleId>CONF:14899</ruleId>
   </CDA:EntryRelationship>
-  <CDA:ConstraintValidation xmi:id="_3FnCICwZEeGKLc4ckmfDag" base_Constraint="_neVLQCwZEeGKLc4ckmfDag">
-    <ruleId>CONF:9929</ruleId>
-  </CDA:ConstraintValidation>
   <CDA:ConstraintValidation xmi:id="_MrEusCwaEeGKLc4ckmfDag" base_Constraint="_EywuoCwaEeGKLc4ckmfDag">
     <ruleId>CONF:8740</ruleId>
   </CDA:ConstraintValidation>
