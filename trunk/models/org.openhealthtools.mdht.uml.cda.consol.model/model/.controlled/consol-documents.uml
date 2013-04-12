@@ -228,22 +228,6 @@ element.</body>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_rOFvYSy6EeGMXrZ0DiQwGg"/>
         </ownedAttribute>
         <nestedClassifier xmi:type="uml:Class" xmi:id="_wfQTkCylEeGMXrZ0DiQwGg" name="Patient">
-          <ownedRule xmi:id="_dqXccDVREeGIw7CntkyPQw" name="birthTimePreciseToYear" constrainedElement="_wfQTkCylEeGMXrZ0DiQwGg">
-            <specification xmi:type="uml:OpaqueExpression" xmi:id="_sg6Z8DVREeGIw7CntkyPQw">
-              <language>Analysis</language>
-              <language>OCL</language>
-              <body>BirthTime precise to year</body>
-              <body>not birthTime.value.oclIsUndefined() and self.birthTime.value.size() >= 4</body>
-            </specification>
-          </ownedRule>
-          <ownedRule xmi:id="_kIBcYDVREeGIw7CntkyPQw" name="birthTimePreciseToDay" constrainedElement="_wfQTkCylEeGMXrZ0DiQwGg">
-            <specification xmi:type="uml:OpaqueExpression" xmi:id="_uehWIDVREeGIw7CntkyPQw">
-              <language>Analysis</language>
-              <language>OCL</language>
-              <body>BirthTime precise to day</body>
-              <body>not birthTime.value.oclIsUndefined()  and self.birthTime.value.size() >= 6</body>
-            </specification>
-          </ownedRule>
           <generalization xmi:id="_wfQ6oCylEeGMXrZ0DiQwGg">
             <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_mxsCMEALEd6wZe6nFLrjsw"/>
           </generalization>
@@ -253,8 +237,7 @@ element.</body>
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_BYC0wUEiEeGdmoWy_aLP0Q" value="1"/>
             <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_2wfzIEreEd6FXKclYGEDCw"/>
           </ownedAttribute>
-          <ownedAttribute xmi:id="_7Os40CylEeGMXrZ0DiQwGg" name="birthTime" visibility="private" aggregation="composite">
-            <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_4ysYYD59Ed6cla2oXsPtlA"/>
+          <ownedAttribute xmi:id="_7Os40CylEeGMXrZ0DiQwGg" name="birthTime" visibility="private" type="_nFdFAJ4wEeKLDuYB2cFreQ" aggregation="composite">
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_B1saEEEiEeGdmoWy_aLP0Q" value="1"/>
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_B1saEUEiEeGdmoWy_aLP0Q" value="1"/>
             <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_5dgL8EreEd6FXKclYGEDCw"/>
@@ -424,6 +407,33 @@ element.</body>
                 <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_sK2_QErgEd6FXKclYGEDCw"/>
               </ownedAttribute>
             </nestedClassifier>
+          </nestedClassifier>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_nFdFAJ4wEeKLDuYB2cFreQ" name="TS">
+            <ownedRule xmi:id="_dqXccDVREeGIw7CntkyPQw" name="birthTimePreciseToYear" constrainedElement="_wfQTkCylEeGMXrZ0DiQwGg">
+              <specification xmi:type="uml:OpaqueExpression" xmi:id="_sg6Z8DVREeGIw7CntkyPQw">
+                <language>Analysis</language>
+                <language>OCL</language>
+                <body>precise to year</body>
+                <body>not value.oclIsUndefined() and value.size() >= 4</body>
+              </specification>
+            </ownedRule>
+            <ownedRule xmi:id="_kIBcYDVREeGIw7CntkyPQw" name="birthTimePreciseToDay" constrainedElement="_wfQTkCylEeGMXrZ0DiQwGg">
+              <specification xmi:type="uml:OpaqueExpression" xmi:id="_uehWIDVREeGIw7CntkyPQw">
+                <language>Analysis</language>
+                <language>OCL</language>
+                <body>precise to day</body>
+                <body>not value.oclIsUndefined() and value.size() >= 6</body>
+              </specification>
+            </ownedRule>
+            <generalization xmi:id="_nFfhQJ4wEeKLDuYB2cFreQ">
+              <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_4ysYYD59Ed6cla2oXsPtlA"/>
+            </generalization>
+            <ownedAttribute xmi:id="_yINn0J4wEeKLDuYB2cFreQ" name="value" visibility="private">
+              <type xmi:type="uml:PrimitiveType" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_CWZPMEWyEeC7E8_5Rmjcog"/>
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_yINn0Z4wEeKLDuYB2cFreQ" value="1"/>
+              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_yINn0p4wEeKLDuYB2cFreQ"/>
+              <redefinedProperty href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_HXr2YD5_Ed6cla2oXsPtlA"/>
+            </ownedAttribute>
           </nestedClassifier>
         </nestedClassifier>
         <nestedClassifier xmi:type="uml:Class" xmi:id="_6j680CytEeGMXrZ0DiQwGg" name="ProviderOrganization">
@@ -2178,8 +2188,6 @@ For conformance with both specifications, please review the appendix on XDS-SD a
     <reference href="../consol-vocab.uml#_2SbZNRSVEeGGzu7fmW9pXw"/>
     <ruleId>CONF:5372</ruleId>
   </CDA:ValueSetConstraint>
-  <CDA:ConstraintValidation xmi:id="_jCk3QDVREeGIw7CntkyPQw" base_Constraint="_dqXccDVREeGIw7CntkyPQw"/>
-  <CDA:ConstraintValidation xmi:id="_nYyCgDVREeGIw7CntkyPQw" severity="WARNING" base_Constraint="_kIBcYDVREeGIw7CntkyPQw"/>
   <CDA:ValueSetConstraint xmi:id="_IliiUDVSEeGIw7CntkyPQw" base_Property="_7OvVECylEeGMXrZ0DiQwGg">
     <reference href="../consol-vocab.uml#_2aTk8EFaEeGFqszUdHc61Q"/>
   </CDA:ValueSetConstraint>
@@ -5383,4 +5391,14 @@ OIDs SHALL be no more than 64 characters in length..</body>
   <CDA:PropertyValidation xmi:id="_xY4DoCeiEeKFA9nMp1YYPg" base_Property="_wsF2ICeiEeKFA9nMp1YYPg">
     <ruleId>CONF:14840</ruleId>
   </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_GE0gMJ4xEeKLDuYB2cFreQ" base_Property="_yINn0J4wEeKLDuYB2cFreQ">
+    <ruleId>CONF:5299</ruleId>
+    <ruleId>CONF:5300</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:ConstraintValidation xmi:id="_eqRL8J4xEeKLDuYB2cFreQ" base_Constraint="_dqXccDVREeGIw7CntkyPQw">
+    <ruleId>CONF:5299</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_gJimUJ4xEeKLDuYB2cFreQ" severity="WARNING" base_Constraint="_kIBcYDVREeGIw7CntkyPQw">
+    <ruleId>CONF:5300</ruleId>
+  </CDA:ConstraintValidation>
 </xmi:XMI>

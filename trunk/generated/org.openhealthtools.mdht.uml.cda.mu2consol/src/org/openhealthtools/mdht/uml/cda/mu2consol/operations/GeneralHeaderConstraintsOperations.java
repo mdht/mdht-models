@@ -232,7 +232,7 @@ public class GeneralHeaderConstraintsOperations
 			GeneralHeaderConstraints generalHeaderConstraints) {
 		if (RETRIEVE_HOSPITAL_ADMISSION_DIAGNOSIS_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(Mu2consolPackage.Literals.GENERAL_HEADER_CONSTRAINTS, Mu2consolPackage.Literals.GENERAL_HEADER_CONSTRAINTS.getEAllOperations().get(292));
+			helper.setOperationContext(Mu2consolPackage.Literals.GENERAL_HEADER_CONSTRAINTS, Mu2consolPackage.Literals.GENERAL_HEADER_CONSTRAINTS.getEAllOperations().get(293));
 			try {
 				RETRIEVE_HOSPITAL_ADMISSION_DIAGNOSIS_SECTION__EOCL_QRY = helper.createQuery(RETRIEVE_HOSPITAL_ADMISSION_DIAGNOSIS_SECTION__EOCL_EXP);
 			}

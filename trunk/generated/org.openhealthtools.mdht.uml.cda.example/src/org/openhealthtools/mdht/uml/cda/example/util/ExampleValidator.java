@@ -428,6 +428,18 @@ public class ExampleValidator extends EObjectValidator {
 				myDocument, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientTSBirthTimePreciseToYear(
+				myDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientTSBirthTimePreciseToDay(
+				myDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientTSValue(
+				myDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
 			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientUSRealmPatientNameMixedContent(
 				myDocument, diagnostics, context);
 		}
@@ -549,14 +561,6 @@ public class ExampleValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationLanguageCodeP(
-				myDocument, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientBirthTimePreciseToYear(
-				myDocument, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientBirthTimePreciseToDay(
 				myDocument, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
