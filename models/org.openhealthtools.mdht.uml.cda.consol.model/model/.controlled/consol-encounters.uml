@@ -163,6 +163,9 @@
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4FxzwOM2EeGfv4R-kzpM0g"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_0IhGsJAOEeKDcJPVSJHobw" name="sDTCDischargeDispositionCode" visibility="private" aggregation="composite">
+      <ownedComment xmi:id="_33Mt8KbCEeKAJ7JddNoP1Q">
+        <body>The prefix sdtc: SHALL be bound to the namespace &quot;urn:hl7-org:sdtc&quot;. The use of the namespace provides a necessary extension to CDA R2 for the use of the dischargeDispositionCode element.</body>
+      </ownedComment>
       <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_UFG_IJAPEeKDcJPVSJHobw" value="1"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_UFHmMJAPEeKDcJPVSJHobw"/>
