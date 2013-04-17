@@ -283,6 +283,9 @@ element.</body>
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_AbJD8fIkEeGu1M-cCXg0Dg"/>
           </ownedAttribute>
           <ownedAttribute xmi:id="_d3LCgNBWEeGg9eE98HsYZw" name="sDTCRaceCode" visibility="private" aggregation="composite">
+            <ownedComment xmi:id="_dsxL8KbDEeKAJ7JddNoP1Q">
+              <body>The prefix sdtc: SHALL be bound to the namespace &quot;urn:hl7-org:sdtc&quot;. The use of the namespace provides a necessary extension to CDA R2 for the use of the raceCode element.</body>
+            </ownedComment>
             <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_d3LCgdBWEeGg9eE98HsYZw" value="*"/>
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_d3LCgtBWEeGg9eE98HsYZw"/>

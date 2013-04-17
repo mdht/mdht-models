@@ -325,10 +325,13 @@ with respect to the payer, so that the identifiers can be recorded.&#xD;
           <ownedComment xmi:id="_S4C08GAoEeGt2doqSDULjA">
             <body>INLINE</body>
           </ownedComment>
-          <ownedRule xmi:id="_nmyn4OWeEeGKmvzED_He2w" name="memberDateOfBirth" constrainedElement="_NHNUMGAnEeGt2doqSDULjA">
+          <ownedRule xmi:id="_nmyn4OWeEeGKmvzED_He2w" name="DateOfBirthInSDTCbirthTime" constrainedElement="_NHNUMGAnEeGt2doqSDULjA">
+            <ownedComment xmi:id="__PsY4KebEeKfDZf5OW35UQ">
+              <body>UNIMPLEMENTABLE</body>
+            </ownedComment>
             <specification xmi:type="uml:OpaqueExpression" xmi:id="_pxBDwOWeEeGKmvzED_He2w">
               <language>Analysis</language>
-              <body>If the member date of birth as recorded by the health plan differs from the patient date of birth as recorded in the registration/medication summary, then the member date of birth SHALL be recorded in sdwg:birthTime. The prefix sdtc: sdtc: SHALL be bound to the namespace “urn:hl7-org:sdtc�?. The use of the namespace provides a necessary extension to CDA R2 for the use of the birthTime element</body>
+              <body>If the member date of birth as recorded by the health plan differs from the patient date of birth as recorded in the registration/medication summary, then the member date of birth SHALL be recorded in sdtc:birthTime.</body>
             </specification>
           </ownedRule>
           <generalization xmi:id="_P2dvwGAnEeGt2doqSDULjA">
@@ -518,15 +521,7 @@ Authorizations are represented using an act subordinate to the policy or program
           <language>Analysis</language>
           <language>OCL</language>
           <body>The target of an authorization activity MAY contain one or more performer, to indicate the providers that have been authorized to provide treatment.</body>
-          <body>self.act->forAll( (moodCode = vocab::x_DocumentActMood::PRMS and performer->size() > 0) or moodCode &lt;> vocab::x_DocumentActMood::PRMS ) and &#xD;
-self.encounter->forAll((moodCode = vocab::x_DocumentEncounterMood::PRMS and performer->size() > 0) or moodCode &lt;>  vocab::x_DocumentEncounterMood::PRMS) and &#xD;
-self.observation->forAll((moodCode = vocab::x_ActMoodDocumentObservation::PRMS and performer->size() > 0)  or moodCode &lt;>  vocab::x_ActMoodDocumentObservation::PRMS) and &#xD;
-self.observationMedia->forAll((moodCode = vocab::ActMood::PRMS and performer->size() > 0) or moodCode &lt;>  vocab::ActMood::PRMS) and &#xD;
-self.organizer->forAll((moodCode = vocab::ActMood::PRMS and performer->size() > 0)  or moodCode &lt;>  vocab::ActMood::PRMS) and &#xD;
-self.procedure->forAll((moodCode = vocab::x_DocumentProcedureMood::PRMS and performer->size() > 0)  or moodCode &lt;>  vocab::x_DocumentProcedureMood::PRMS) and &#xD;
-self.regionOfInterest->forAll((moodCode = vocab::ActMood::PRMS and performer->size() > 0) or moodCode &lt;>  vocab::ActMood::PRMS) and &#xD;
-self.substanceAdministration->forAll((moodCode = vocab::x_DocumentSubstanceMood::PRMS and performer->size() > 0)  or moodCode &lt;>  vocab::x_DocumentSubstanceMood::PRMS) and &#xD;
-self.supply->forAll((moodCode = vocab::x_DocumentSubstanceMood::PRMS and performer->size() > 0) or moodCode &lt;>  vocab::x_DocumentSubstanceMood::PRMS)</body>
+          <body>self.act->forAll( (moodCode = vocab::x_DocumentActMood::PRMS and performer->size() > 0) or moodCode &lt;> vocab::x_DocumentActMood::PRMS ) and &#xD;&#xA;self.encounter->forAll((moodCode = vocab::x_DocumentEncounterMood::PRMS and performer->size() > 0) or moodCode &lt;>  vocab::x_DocumentEncounterMood::PRMS) and &#xD;&#xA;self.observation->forAll((moodCode = vocab::x_ActMoodDocumentObservation::PRMS and performer->size() > 0)  or moodCode &lt;>  vocab::x_ActMoodDocumentObservation::PRMS) and &#xD;&#xA;self.observationMedia->forAll((moodCode = vocab::ActMood::PRMS and performer->size() > 0) or moodCode &lt;>  vocab::ActMood::PRMS) and &#xD;&#xA;self.organizer->forAll((moodCode = vocab::ActMood::PRMS and performer->size() > 0)  or moodCode &lt;>  vocab::ActMood::PRMS) and &#xD;&#xA;self.procedure->forAll((moodCode = vocab::x_DocumentProcedureMood::PRMS and performer->size() > 0)  or moodCode &lt;>  vocab::x_DocumentProcedureMood::PRMS) and &#xD;&#xA;self.regionOfInterest->forAll((moodCode = vocab::ActMood::PRMS and performer->size() > 0) or moodCode &lt;>  vocab::ActMood::PRMS) and &#xD;&#xA;self.substanceAdministration->forAll((moodCode = vocab::x_DocumentSubstanceMood::PRMS and performer->size() > 0)  or moodCode &lt;>  vocab::x_DocumentSubstanceMood::PRMS) and &#xD;&#xA;self.supply->forAll((moodCode = vocab::x_DocumentSubstanceMood::PRMS and performer->size() > 0) or moodCode &lt;>  vocab::x_DocumentSubstanceMood::PRMS)</body>
         </specification>
       </ownedRule>
       <generalization xmi:id="_sWZzkHhvEeGJtvg2iiStYg">

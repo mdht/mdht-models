@@ -236,7 +236,7 @@
           </ownedAttribute>
           <ownedAttribute xmi:id="_QeHLkNc5EeGfQ6frO0B-Jg" name="sDTCDeceasedInd" visibility="private" aggregation="composite">
             <ownedComment xmi:id="_5-YtcOMxEeGfv4R-kzpM0g">
-              <body>The prefix sdtc: SHALL be bound to the namespace &quot;urn:hl7-org:sdtc&quot;. The use of the namespace provides a necessary extension to CDA R2 for the use of the deceasedInd element</body>
+              <body>The prefix sdtc: SHALL be bound to the namespace &quot;urn:hl7-org:sdtc&quot;. The use of the namespace provides a necessary extension to CDA R2 for the use of the deceasedInd element.</body>
             </ownedComment>
             <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_r1WssDxjEd6JwqSGecoePg"/>
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_QeHLkdc5EeGfQ6frO0B-Jg"/>
@@ -244,13 +244,17 @@
           </ownedAttribute>
           <ownedAttribute xmi:id="_QeHLktc5EeGfQ6frO0B-Jg" name="sDTCDeceasedTime" visibility="private" aggregation="composite">
             <ownedComment xmi:id="_FMN30OMyEeGfv4R-kzpM0g">
-              <body>The prefix sdtc: SHALL be bound to the namespace &quot;urn:hl7-org:sdtc&quot;. The use of the namespace provides a necessary extension to CDA R2 for the use of the deceasedTime element</body>
+              <body>The prefix sdtc: SHALL be bound to the namespace &quot;urn:hl7-org:sdtc&quot;. The use of the namespace provides a necessary extension to CDA R2 for the use of the deceasedTime element.</body>
             </ownedComment>
             <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_4ysYYD59Ed6cla2oXsPtlA"/>
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_QeHLk9c5EeGfQ6frO0B-Jg"/>
             <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_LJEdAAPkEeGdM61FsLhcmQ"/>
           </ownedAttribute>
           <ownedAttribute xmi:id="_QeHLlNc5EeGfQ6frO0B-Jg" name="sDTCId" visibility="private" aggregation="composite">
+            <ownedComment xmi:id="_Ad0QYKbBEeKAJ7JddNoP1Q">
+              <body>The prefix sdtc: SHALL be bound to the namespace &quot;urn:hl7-org:sdtc&quot;. The use of the namespace provides a necessary&#xD;
+extension to CDA R2 for the use of the id element.</body>
+            </ownedComment>
             <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_culQ8DxaEd6JwqSGecoePg"/>
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_QeHLldc5EeGfQ6frO0B-Jg" value="*"/>
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_QeHLltc5EeGfQ6frO0B-Jg"/>
