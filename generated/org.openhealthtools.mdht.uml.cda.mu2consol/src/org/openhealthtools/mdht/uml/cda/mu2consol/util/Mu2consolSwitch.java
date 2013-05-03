@@ -24,6 +24,7 @@ import org.openhealthtools.mdht.uml.cda.consol.AssessmentSection;
 import org.openhealthtools.mdht.uml.cda.consol.ProceduresSectionEntriesOptional;
 import org.openhealthtools.mdht.uml.cda.consol.ResultsSectionEntriesOptional;
 import org.openhealthtools.mdht.uml.cda.consol.TobaccoUse;
+import org.openhealthtools.mdht.uml.cda.mu2consol.*;
 import org.openhealthtools.mdht.uml.cda.mu2consol.ClinicalOfficeVisitSummary;
 import org.openhealthtools.mdht.uml.cda.mu2consol.GeneralHeaderConstraints;
 import org.openhealthtools.mdht.uml.cda.mu2consol.MedicationsAdministeredSection;
@@ -301,6 +302,68 @@ public class Mu2consolSwitch<T> {
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
+			case Mu2consolPackage.FUNCTIONAL_STATUS_SECTION: {
+				FunctionalStatusSection functionalStatusSection = (FunctionalStatusSection)theEObject;
+				T result = caseFunctionalStatusSection(functionalStatusSection);
+				if (result == null) result = caseConsol_FunctionalStatusSection(functionalStatusSection);
+				if (result == null) result = caseSection(functionalStatusSection);
+				if (result == null) result = caseAct(functionalStatusSection);
+				if (result == null) result = caseInfrastructureRoot(functionalStatusSection);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case Mu2consolPackage.COGNITIVE_STATUS_RESULT_OBSERVATION: {
+				CognitiveStatusResultObservation cognitiveStatusResultObservation = (CognitiveStatusResultObservation)theEObject;
+				T result = caseCognitiveStatusResultObservation(cognitiveStatusResultObservation);
+				if (result == null) result = caseConsol_CognitiveStatusResultObservation(cognitiveStatusResultObservation);
+				if (result == null) result = caseResultObservation(cognitiveStatusResultObservation);
+				if (result == null) result = caseConsol_ResultObservation(cognitiveStatusResultObservation);
+				if (result == null) result = caseObservation(cognitiveStatusResultObservation);
+				if (result == null) result = caseClinicalStatement(cognitiveStatusResultObservation);
+				if (result == null) result = caseAct(cognitiveStatusResultObservation);
+				if (result == null) result = caseInfrastructureRoot(cognitiveStatusResultObservation);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case Mu2consolPackage.COGNITIVE_STATUS_RESULT_ORGANIZER: {
+				CognitiveStatusResultOrganizer cognitiveStatusResultOrganizer = (CognitiveStatusResultOrganizer)theEObject;
+				T result = caseCognitiveStatusResultOrganizer(cognitiveStatusResultOrganizer);
+				if (result == null) result = caseConsol_CognitiveStatusResultOrganizer(cognitiveStatusResultOrganizer);
+				if (result == null) result = caseResultOrganizer(cognitiveStatusResultOrganizer);
+				if (result == null) result = caseConsol_ResultOrganizer(cognitiveStatusResultOrganizer);
+				if (result == null) result = caseOrganizer(cognitiveStatusResultOrganizer);
+				if (result == null) result = caseClinicalStatement(cognitiveStatusResultOrganizer);
+				if (result == null) result = caseAct(cognitiveStatusResultOrganizer);
+				if (result == null) result = caseInfrastructureRoot(cognitiveStatusResultOrganizer);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case Mu2consolPackage.FUNCTIONAL_STATUS_RESULT_OBSERVATION: {
+				FunctionalStatusResultObservation functionalStatusResultObservation = (FunctionalStatusResultObservation)theEObject;
+				T result = caseFunctionalStatusResultObservation(functionalStatusResultObservation);
+				if (result == null) result = caseConsol_FunctionalStatusResultObservation(functionalStatusResultObservation);
+				if (result == null) result = caseResultObservation(functionalStatusResultObservation);
+				if (result == null) result = caseConsol_ResultObservation(functionalStatusResultObservation);
+				if (result == null) result = caseObservation(functionalStatusResultObservation);
+				if (result == null) result = caseClinicalStatement(functionalStatusResultObservation);
+				if (result == null) result = caseAct(functionalStatusResultObservation);
+				if (result == null) result = caseInfrastructureRoot(functionalStatusResultObservation);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case Mu2consolPackage.FUNCTIONAL_STATUS_RESULT_ORGANIZER: {
+				FunctionalStatusResultOrganizer functionalStatusResultOrganizer = (FunctionalStatusResultOrganizer)theEObject;
+				T result = caseFunctionalStatusResultOrganizer(functionalStatusResultOrganizer);
+				if (result == null) result = caseConsol_FunctionalStatusResultOrganizer(functionalStatusResultOrganizer);
+				if (result == null) result = caseResultOrganizer(functionalStatusResultOrganizer);
+				if (result == null) result = caseConsol_ResultOrganizer(functionalStatusResultOrganizer);
+				if (result == null) result = caseOrganizer(functionalStatusResultOrganizer);
+				if (result == null) result = caseClinicalStatement(functionalStatusResultOrganizer);
+				if (result == null) result = caseAct(functionalStatusResultOrganizer);
+				if (result == null) result = caseInfrastructureRoot(functionalStatusResultOrganizer);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
 			default: return defaultCase(theEObject);
 		}
 	}
@@ -431,6 +494,81 @@ public class Mu2consolSwitch<T> {
 	 * @generated
 	 */
 	public T caseVDTAmbulatorySummary(VDTAmbulatorySummary object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Functional Status Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Functional Status Section</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseFunctionalStatusSection(FunctionalStatusSection object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Cognitive Status Result Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Cognitive Status Result Observation</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseCognitiveStatusResultObservation(CognitiveStatusResultObservation object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Cognitive Status Result Organizer</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Cognitive Status Result Organizer</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseCognitiveStatusResultOrganizer(CognitiveStatusResultOrganizer object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Functional Status Result Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Functional Status Result Observation</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseFunctionalStatusResultObservation(FunctionalStatusResultObservation object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Functional Status Result Organizer</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Functional Status Result Organizer</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseFunctionalStatusResultOrganizer(FunctionalStatusResultOrganizer object) {
 		return null;
 	}
 
@@ -647,6 +785,81 @@ public class Mu2consolSwitch<T> {
 	 * @generated
 	 */
 	public T caseConsol_MedicationsAdministeredSection(org.openhealthtools.mdht.uml.cda.consol.MedicationsAdministeredSection object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Functional Status Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Functional Status Section</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseConsol_FunctionalStatusSection(org.openhealthtools.mdht.uml.cda.consol.FunctionalStatusSection object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Cognitive Status Result Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Cognitive Status Result Observation</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseConsol_CognitiveStatusResultObservation(org.openhealthtools.mdht.uml.cda.consol.CognitiveStatusResultObservation object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Cognitive Status Result Organizer</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Cognitive Status Result Organizer</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseConsol_CognitiveStatusResultOrganizer(org.openhealthtools.mdht.uml.cda.consol.CognitiveStatusResultOrganizer object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Functional Status Result Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Functional Status Result Observation</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseConsol_FunctionalStatusResultObservation(org.openhealthtools.mdht.uml.cda.consol.FunctionalStatusResultObservation object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Functional Status Result Organizer</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Functional Status Result Organizer</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseConsol_FunctionalStatusResultOrganizer(org.openhealthtools.mdht.uml.cda.consol.FunctionalStatusResultOrganizer object) {
 		return null;
 	}
 

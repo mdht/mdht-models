@@ -7,6 +7,7 @@ import org.eclipse.emf.common.util.ResourceLocator;
 import org.eclipse.emf.ecore.EPackage;
 import org.eclipse.emf.ecore.util.EObjectValidator;
 import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
+import org.openhealthtools.mdht.uml.cda.mu2consol.*;
 import org.openhealthtools.mdht.uml.cda.mu2consol.AssessmentSection;
 import org.openhealthtools.mdht.uml.cda.mu2consol.ClinicalOfficeVisitSummary;
 import org.openhealthtools.mdht.uml.cda.mu2consol.GeneralHeaderConstraints;
@@ -659,12 +660,52 @@ public class Mu2consolValidator extends EObjectValidator {
 	public static final int VDT_AMBULATORY_SUMMARY__VDT_AMBULATORY_SUMMARY_MEDICATIONS_SECTION = 77;
 
 	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Functional Status Section Template Id' of 'Functional Status Section'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int FUNCTIONAL_STATUS_SECTION__FUNCTIONAL_STATUS_SECTION_TEMPLATE_ID = 78;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Result Observation Template Id' of 'Cognitive Status Result Observation'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int COGNITIVE_STATUS_RESULT_OBSERVATION__RESULT_OBSERVATION_TEMPLATE_ID = 79;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Result Organizer Template Id' of 'Cognitive Status Result Organizer'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int COGNITIVE_STATUS_RESULT_ORGANIZER__RESULT_ORGANIZER_TEMPLATE_ID = 80;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Result Observation Template Id' of 'Functional Status Result Observation'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int FUNCTIONAL_STATUS_RESULT_OBSERVATION__RESULT_OBSERVATION_TEMPLATE_ID = 81;
+
+	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Result Organizer Template Id' of 'Functional Status Result Organizer'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int FUNCTIONAL_STATUS_RESULT_ORGANIZER__RESULT_ORGANIZER_TEMPLATE_ID = 82;
+
+	/**
 	 * A constant with a fixed name that can be used as the base value for additional hand written constants.
 	 * <!-- begin-user-doc --> <!--
 	 * end-user-doc -->
 	 * @generated
 	 */
-	private static final int GENERATED_DIAGNOSTIC_CODE_COUNT = 77;
+	private static final int GENERATED_DIAGNOSTIC_CODE_COUNT = 82;
 
 	/**
 	 * A constant with a fixed name that can be used as the base value for additional hand written constants in a derived class.
@@ -756,6 +797,16 @@ public class Mu2consolValidator extends EObjectValidator {
 				return validateVDTInpatientSummary((VDTInpatientSummary)value, diagnostics, context);
 			case Mu2consolPackage.VDT_AMBULATORY_SUMMARY:
 				return validateVDTAmbulatorySummary((VDTAmbulatorySummary)value, diagnostics, context);
+			case Mu2consolPackage.FUNCTIONAL_STATUS_SECTION:
+				return validateFunctionalStatusSection((FunctionalStatusSection)value, diagnostics, context);
+			case Mu2consolPackage.COGNITIVE_STATUS_RESULT_OBSERVATION:
+				return validateCognitiveStatusResultObservation((CognitiveStatusResultObservation)value, diagnostics, context);
+			case Mu2consolPackage.COGNITIVE_STATUS_RESULT_ORGANIZER:
+				return validateCognitiveStatusResultOrganizer((CognitiveStatusResultOrganizer)value, diagnostics, context);
+			case Mu2consolPackage.FUNCTIONAL_STATUS_RESULT_OBSERVATION:
+				return validateFunctionalStatusResultObservation((FunctionalStatusResultObservation)value, diagnostics, context);
+			case Mu2consolPackage.FUNCTIONAL_STATUS_RESULT_ORGANIZER:
+				return validateFunctionalStatusResultOrganizer((FunctionalStatusResultOrganizer)value, diagnostics, context);
 			default:
 				return true;
 		}
@@ -4321,6 +4372,285 @@ public class Mu2consolValidator extends EObjectValidator {
 	 */
 	public boolean validateVDTAmbulatorySummary_validateVDTAmbulatorySummaryMedicationsSection(VDTAmbulatorySummary vdtAmbulatorySummary, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return vdtAmbulatorySummary.validateVDTAmbulatorySummaryMedicationsSection(diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateFunctionalStatusSection(FunctionalStatusSection functionalStatusSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		if (!validate_NoCircularContainment(functionalStatusSection, diagnostics, context)) return false;
+		boolean result = validate_EveryMultiplicityConforms(functionalStatusSection, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(functionalStatusSection, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(functionalStatusSection, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryProxyResolves(functionalStatusSection, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_UniqueID(functionalStatusSection, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryKeyUnique(functionalStatusSection, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(functionalStatusSection, diagnostics, context);
+		if (result || diagnostics != null) result &= cdaValidator.validateSection_validateClassCode(functionalStatusSection, diagnostics, context);
+		if (result || diagnostics != null) result &= cdaValidator.validateSection_validateMoodCode(functionalStatusSection, diagnostics, context);
+		if (result || diagnostics != null) result &= validateFunctionalStatusSection_validateFunctionalStatusSectionTemplateId(functionalStatusSection, diagnostics, context);
+		if (result || diagnostics != null) result &= consolValidator.validateFunctionalStatusSection_validateFunctionalStatusSectionCode(functionalStatusSection, diagnostics, context);
+		if (result || diagnostics != null) result &= consolValidator.validateFunctionalStatusSection_validateFunctionalStatusSectionTitle(functionalStatusSection, diagnostics, context);
+		if (result || diagnostics != null) result &= consolValidator.validateFunctionalStatusSection_validateFunctionalStatusSectionText(functionalStatusSection, diagnostics, context);
+		if (result || diagnostics != null) result &= consolValidator.validateFunctionalStatusSection_validateFunctionalStatusSectionFunctionalStatusResultOrganizer(functionalStatusSection, diagnostics, context);
+		if (result || diagnostics != null) result &= consolValidator.validateFunctionalStatusSection_validateFunctionalStatusSectionCognitiveStatusResultOrganizer(functionalStatusSection, diagnostics, context);
+		if (result || diagnostics != null) result &= consolValidator.validateFunctionalStatusSection_validateFunctionalStatusSectionFunctionalStatusResultObservation(functionalStatusSection, diagnostics, context);
+		if (result || diagnostics != null) result &= consolValidator.validateFunctionalStatusSection_validateFunctionalStatusSectionCognitiveStatusResultObservation(functionalStatusSection, diagnostics, context);
+		if (result || diagnostics != null) result &= consolValidator.validateFunctionalStatusSection_validateFunctionalStatusSectionFunctionalStatusProblemObservation(functionalStatusSection, diagnostics, context);
+		if (result || diagnostics != null) result &= consolValidator.validateFunctionalStatusSection_validateFunctionalStatusSectionCognitiveStatusProblemObservation(functionalStatusSection, diagnostics, context);
+		if (result || diagnostics != null) result &= consolValidator.validateFunctionalStatusSection_validateFunctionalStatusSectionCaregiverCharacteristics(functionalStatusSection, diagnostics, context);
+		if (result || diagnostics != null) result &= consolValidator.validateFunctionalStatusSection_validateFunctionalStatusSectionAssessmentScaleObservation(functionalStatusSection, diagnostics, context);
+		if (result || diagnostics != null) result &= consolValidator.validateFunctionalStatusSection_validateFunctionalStatusSectionNonMedicinalSupplyActivity(functionalStatusSection, diagnostics, context);
+		if (result || diagnostics != null) result &= consolValidator.validateFunctionalStatusSection_validateFunctionalStatusSectionPressureUlcerObservation(functionalStatusSection, diagnostics, context);
+		if (result || diagnostics != null) result &= consolValidator.validateFunctionalStatusSection_validateFunctionalStatusSectionNumberOfPressureUlcersObservation(functionalStatusSection, diagnostics, context);
+		if (result || diagnostics != null) result &= consolValidator.validateFunctionalStatusSection_validateFunctionalStatusSectionHighestPressureUlcerStage(functionalStatusSection, diagnostics, context);
+		return result;
+	}
+
+	/**
+	 * Validates the validateFunctionalStatusSectionTemplateId constraint of '<em>Functional Status Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateFunctionalStatusSection_validateFunctionalStatusSectionTemplateId(FunctionalStatusSection functionalStatusSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return functionalStatusSection.validateFunctionalStatusSectionTemplateId(diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateCognitiveStatusResultObservation(CognitiveStatusResultObservation cognitiveStatusResultObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		if (!validate_NoCircularContainment(cognitiveStatusResultObservation, diagnostics, context)) return false;
+		boolean result = validate_EveryMultiplicityConforms(cognitiveStatusResultObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(cognitiveStatusResultObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(cognitiveStatusResultObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryProxyResolves(cognitiveStatusResultObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_UniqueID(cognitiveStatusResultObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryKeyUnique(cognitiveStatusResultObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(cognitiveStatusResultObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= consolValidator.validateResultObservation_validateResultObservationTextReference(cognitiveStatusResultObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= consolValidator.validateResultObservation_validateResultObservationReferenceValue(cognitiveStatusResultObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= consolValidator.validateResultObservation_validateResultObservationTextReferenceValue(cognitiveStatusResultObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= consolValidator.validateResultObservation_validateResultObservationCodeValue(cognitiveStatusResultObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= consolValidator.validateResultObservation_validateResultObservationNoObservationRangeCode(cognitiveStatusResultObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= consolValidator.validateResultObservation_validateResultObservationAuthorMultiplicity(cognitiveStatusResultObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validateCognitiveStatusResultObservation_validateResultObservationTemplateId(cognitiveStatusResultObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= consolValidator.validateResultObservation_validateResultObservationClassCode(cognitiveStatusResultObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= consolValidator.validateResultObservation_validateResultObservationMoodCode(cognitiveStatusResultObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= consolValidator.validateResultObservation_validateResultObservationId(cognitiveStatusResultObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= consolValidator.validateResultObservation_validateResultObservationCode(cognitiveStatusResultObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= consolValidator.validateResultObservation_validateResultObservationText(cognitiveStatusResultObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= consolValidator.validateResultObservation_validateResultObservationStatusCode(cognitiveStatusResultObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= consolValidator.validateResultObservation_validateResultObservationStatusCodeP(cognitiveStatusResultObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= consolValidator.validateResultObservation_validateResultObservationEffectiveTime(cognitiveStatusResultObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= consolValidator.validateResultObservation_validateResultObservationValue(cognitiveStatusResultObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= consolValidator.validateResultObservation_validateResultObservationInterpretationCode(cognitiveStatusResultObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= consolValidator.validateResultObservation_validateResultObservationMethodCode(cognitiveStatusResultObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= consolValidator.validateResultObservation_validateResultObservationTargetSiteCode(cognitiveStatusResultObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= consolValidator.validateCognitiveStatusResultObservation_validateCognitiveStatusResultObservationTextReference(cognitiveStatusResultObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= consolValidator.validateCognitiveStatusResultObservation_validateCognitiveStatusResultObservationTextReferenceValue(cognitiveStatusResultObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= consolValidator.validateCognitiveStatusResultObservation_validateCognitiveStatusResultObservationValueDatatype(cognitiveStatusResultObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= consolValidator.validateCognitiveStatusResultObservation_validateCognitiveStatusResultObservationClassCode(cognitiveStatusResultObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= consolValidator.validateCognitiveStatusResultObservation_validateCognitiveStatusResultObservationMoodCode(cognitiveStatusResultObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= consolValidator.validateCognitiveStatusResultObservation_validateCognitiveStatusResultObservationId(cognitiveStatusResultObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= consolValidator.validateCognitiveStatusResultObservation_validateCognitiveStatusResultObservationCodeP(cognitiveStatusResultObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= consolValidator.validateCognitiveStatusResultObservation_validateCognitiveStatusResultObservationCode(cognitiveStatusResultObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= consolValidator.validateCognitiveStatusResultObservation_validateCognitiveStatusResultObservationText(cognitiveStatusResultObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= consolValidator.validateCognitiveStatusResultObservation_validateCognitiveStatusResultObservationStatusCodeP(cognitiveStatusResultObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= consolValidator.validateCognitiveStatusResultObservation_validateCognitiveStatusResultObservationStatusCode(cognitiveStatusResultObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= consolValidator.validateCognitiveStatusResultObservation_validateCognitiveStatusResultObservationEffectiveTime(cognitiveStatusResultObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= consolValidator.validateCognitiveStatusResultObservation_validateCognitiveStatusResultObservationValue(cognitiveStatusResultObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= consolValidator.validateCognitiveStatusResultObservation_validateCognitiveStatusResultObservationInterpretationCode(cognitiveStatusResultObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= consolValidator.validateCognitiveStatusResultObservation_validateCognitiveStatusResultObservationMethodCode(cognitiveStatusResultObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= consolValidator.validateCognitiveStatusResultObservation_validateCognitiveStatusResultObservationTargetSiteCode(cognitiveStatusResultObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= consolValidator.validateCognitiveStatusResultObservation_validateCognitiveStatusResultObservationAuthor(cognitiveStatusResultObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= consolValidator.validateCognitiveStatusResultObservation_validateCognitiveStatusResultObservationNonMedicinalSupplyActivity(cognitiveStatusResultObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= consolValidator.validateCognitiveStatusResultObservation_validateCognitiveStatusResultObservationCaregiverCharacteristics(cognitiveStatusResultObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= consolValidator.validateCognitiveStatusResultObservation_validateCognitiveStatusResultObservationAssessmentScaleObservation(cognitiveStatusResultObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= consolValidator.validateCognitiveStatusResultObservation_validateCognitiveStatusResultObservationReferenceRange(cognitiveStatusResultObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= consolValidator.validateCognitiveStatusResultObservation_validateCognitiveStatusResultObservationReferenceRangeObservationRangeNoCode(cognitiveStatusResultObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= consolValidator.validateCognitiveStatusResultObservation_validateCognitiveStatusResultObservationReferenceRangeObservationRange(cognitiveStatusResultObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validateResultObservation_validateMu2consolResultObservationResultObservationCodeValue(cognitiveStatusResultObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validateResultObservation_validateMu2consolResultObservationCode(cognitiveStatusResultObservation, diagnostics, context);
+		return result;
+	}
+
+	/**
+	 * Validates the validateResultObservationTemplateId constraint of '<em>Cognitive Status Result Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateCognitiveStatusResultObservation_validateResultObservationTemplateId(CognitiveStatusResultObservation cognitiveStatusResultObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return cognitiveStatusResultObservation.validateResultObservationTemplateId(diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateCognitiveStatusResultOrganizer(CognitiveStatusResultOrganizer cognitiveStatusResultOrganizer, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		if (!validate_NoCircularContainment(cognitiveStatusResultOrganizer, diagnostics, context)) return false;
+		boolean result = validate_EveryMultiplicityConforms(cognitiveStatusResultOrganizer, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(cognitiveStatusResultOrganizer, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(cognitiveStatusResultOrganizer, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryProxyResolves(cognitiveStatusResultOrganizer, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_UniqueID(cognitiveStatusResultOrganizer, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryKeyUnique(cognitiveStatusResultOrganizer, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(cognitiveStatusResultOrganizer, diagnostics, context);
+		if (result || diagnostics != null) result &= consolValidator.validateResultOrganizer_validateResultOrganizerCodeValue(cognitiveStatusResultOrganizer, diagnostics, context);
+		if (result || diagnostics != null) result &= consolValidator.validateResultOrganizer_validateResultOrganizerClassCodeValue(cognitiveStatusResultOrganizer, diagnostics, context);
+		if (result || diagnostics != null) result &= validateCognitiveStatusResultOrganizer_validateResultOrganizerTemplateId(cognitiveStatusResultOrganizer, diagnostics, context);
+		if (result || diagnostics != null) result &= consolValidator.validateResultOrganizer_validateResultOrganizerClassCode(cognitiveStatusResultOrganizer, diagnostics, context);
+		if (result || diagnostics != null) result &= consolValidator.validateResultOrganizer_validateResultOrganizerMoodCode(cognitiveStatusResultOrganizer, diagnostics, context);
+		if (result || diagnostics != null) result &= consolValidator.validateResultOrganizer_validateResultOrganizerId(cognitiveStatusResultOrganizer, diagnostics, context);
+		if (result || diagnostics != null) result &= consolValidator.validateResultOrganizer_validateResultOrganizerStatusCodeP(cognitiveStatusResultOrganizer, diagnostics, context);
+		if (result || diagnostics != null) result &= consolValidator.validateResultOrganizer_validateResultOrganizerStatusCode(cognitiveStatusResultOrganizer, diagnostics, context);
+		if (result || diagnostics != null) result &= consolValidator.validateResultOrganizer_validateResultOrganizerCode(cognitiveStatusResultOrganizer, diagnostics, context);
+		if (result || diagnostics != null) result &= consolValidator.validateResultOrganizer_validateResultOrganizerResultObservation(cognitiveStatusResultOrganizer, diagnostics, context);
+		if (result || diagnostics != null) result &= consolValidator.validateCognitiveStatusResultOrganizer_validateCognitiveStatusResultOrganizerCodeCodeSystem(cognitiveStatusResultOrganizer, diagnostics, context);
+		if (result || diagnostics != null) result &= consolValidator.validateCognitiveStatusResultOrganizer_validateCognitiveStatusResultOrganizerClassCode(cognitiveStatusResultOrganizer, diagnostics, context);
+		if (result || diagnostics != null) result &= consolValidator.validateCognitiveStatusResultOrganizer_validateCognitiveStatusResultOrganizerMoodCode(cognitiveStatusResultOrganizer, diagnostics, context);
+		if (result || diagnostics != null) result &= consolValidator.validateCognitiveStatusResultOrganizer_validateCognitiveStatusResultOrganizerId(cognitiveStatusResultOrganizer, diagnostics, context);
+		if (result || diagnostics != null) result &= consolValidator.validateCognitiveStatusResultOrganizer_validateCognitiveStatusResultOrganizerCode(cognitiveStatusResultOrganizer, diagnostics, context);
+		if (result || diagnostics != null) result &= consolValidator.validateCognitiveStatusResultOrganizer_validateCognitiveStatusResultOrganizerStatusCodeP(cognitiveStatusResultOrganizer, diagnostics, context);
+		if (result || diagnostics != null) result &= consolValidator.validateCognitiveStatusResultOrganizer_validateCognitiveStatusResultOrganizerStatusCode(cognitiveStatusResultOrganizer, diagnostics, context);
+		if (result || diagnostics != null) result &= consolValidator.validateCognitiveStatusResultOrganizer_validateCognitiveStatusResultOrganizerCognitiveStatusResultObservation(cognitiveStatusResultOrganizer, diagnostics, context);
+		if (result || diagnostics != null) result &= validateResultOrganizer_validateMu2consolResultOrganizerResultObservation(cognitiveStatusResultOrganizer, diagnostics, context);
+		return result;
+	}
+
+	/**
+	 * Validates the validateResultOrganizerTemplateId constraint of '<em>Cognitive Status Result Organizer</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateCognitiveStatusResultOrganizer_validateResultOrganizerTemplateId(CognitiveStatusResultOrganizer cognitiveStatusResultOrganizer, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return cognitiveStatusResultOrganizer.validateResultOrganizerTemplateId(diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateFunctionalStatusResultObservation(FunctionalStatusResultObservation functionalStatusResultObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		if (!validate_NoCircularContainment(functionalStatusResultObservation, diagnostics, context)) return false;
+		boolean result = validate_EveryMultiplicityConforms(functionalStatusResultObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(functionalStatusResultObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(functionalStatusResultObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryProxyResolves(functionalStatusResultObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_UniqueID(functionalStatusResultObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryKeyUnique(functionalStatusResultObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(functionalStatusResultObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= consolValidator.validateResultObservation_validateResultObservationTextReference(functionalStatusResultObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= consolValidator.validateResultObservation_validateResultObservationReferenceValue(functionalStatusResultObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= consolValidator.validateResultObservation_validateResultObservationTextReferenceValue(functionalStatusResultObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= consolValidator.validateResultObservation_validateResultObservationCodeValue(functionalStatusResultObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= consolValidator.validateResultObservation_validateResultObservationNoObservationRangeCode(functionalStatusResultObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= consolValidator.validateResultObservation_validateResultObservationAuthorMultiplicity(functionalStatusResultObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validateFunctionalStatusResultObservation_validateResultObservationTemplateId(functionalStatusResultObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= consolValidator.validateResultObservation_validateResultObservationClassCode(functionalStatusResultObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= consolValidator.validateResultObservation_validateResultObservationMoodCode(functionalStatusResultObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= consolValidator.validateResultObservation_validateResultObservationId(functionalStatusResultObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= consolValidator.validateResultObservation_validateResultObservationCode(functionalStatusResultObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= consolValidator.validateResultObservation_validateResultObservationText(functionalStatusResultObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= consolValidator.validateResultObservation_validateResultObservationStatusCode(functionalStatusResultObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= consolValidator.validateResultObservation_validateResultObservationStatusCodeP(functionalStatusResultObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= consolValidator.validateResultObservation_validateResultObservationEffectiveTime(functionalStatusResultObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= consolValidator.validateResultObservation_validateResultObservationValue(functionalStatusResultObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= consolValidator.validateResultObservation_validateResultObservationInterpretationCode(functionalStatusResultObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= consolValidator.validateResultObservation_validateResultObservationMethodCode(functionalStatusResultObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= consolValidator.validateResultObservation_validateResultObservationTargetSiteCode(functionalStatusResultObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= consolValidator.validateFunctionalStatusResultObservation_validateFunctionalStatusResultObservationTextReference(functionalStatusResultObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= consolValidator.validateFunctionalStatusResultObservation_validateFunctionalStatusResultObservationTextReferenceValue(functionalStatusResultObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= consolValidator.validateFunctionalStatusResultObservation_validateFunctionalStatusResultObservationValueDatatype(functionalStatusResultObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= consolValidator.validateFunctionalStatusResultObservation_validateFunctionalStatusResultObservationClassCode(functionalStatusResultObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= consolValidator.validateFunctionalStatusResultObservation_validateFunctionalStatusResultObservationMoodCode(functionalStatusResultObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= consolValidator.validateFunctionalStatusResultObservation_validateFunctionalStatusResultObservationId(functionalStatusResultObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= consolValidator.validateFunctionalStatusResultObservation_validateFunctionalStatusResultObservationCodeP(functionalStatusResultObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= consolValidator.validateFunctionalStatusResultObservation_validateFunctionalStatusResultObservationCode(functionalStatusResultObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= consolValidator.validateFunctionalStatusResultObservation_validateFunctionalStatusResultObservationText(functionalStatusResultObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= consolValidator.validateFunctionalStatusResultObservation_validateFunctionalStatusResultObservationStatusCodeP(functionalStatusResultObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= consolValidator.validateFunctionalStatusResultObservation_validateFunctionalStatusResultObservationStatusCode(functionalStatusResultObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= consolValidator.validateFunctionalStatusResultObservation_validateFunctionalStatusResultObservationEffectiveTime(functionalStatusResultObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= consolValidator.validateFunctionalStatusResultObservation_validateFunctionalStatusResultObservationValue(functionalStatusResultObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= consolValidator.validateFunctionalStatusResultObservation_validateFunctionalStatusResultObservationInterpretationCode(functionalStatusResultObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= consolValidator.validateFunctionalStatusResultObservation_validateFunctionalStatusResultObservationMethodCode(functionalStatusResultObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= consolValidator.validateFunctionalStatusResultObservation_validateFunctionalStatusResultObservationTargetSiteCode(functionalStatusResultObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= consolValidator.validateFunctionalStatusResultObservation_validateFunctionalStatusResultObservationAuthor(functionalStatusResultObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= consolValidator.validateFunctionalStatusResultObservation_validateFunctionalStatusResultObservationNonMedicinalSupplyActivity(functionalStatusResultObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= consolValidator.validateFunctionalStatusResultObservation_validateFunctionalStatusResultObservationCaregiverCharacteristics(functionalStatusResultObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= consolValidator.validateFunctionalStatusResultObservation_validateFunctionalStatusResultObservationAssessmentScaleObservation(functionalStatusResultObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= consolValidator.validateFunctionalStatusResultObservation_validateFunctionalStatusResultObservationReferenceRange(functionalStatusResultObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= consolValidator.validateFunctionalStatusResultObservation_validateFunctionalStatusResultObservationReferenceRangeObservationRangeNoCode(functionalStatusResultObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= consolValidator.validateFunctionalStatusResultObservation_validateFunctionalStatusResultObservationReferenceRangeObservationRange(functionalStatusResultObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validateResultObservation_validateMu2consolResultObservationResultObservationCodeValue(functionalStatusResultObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validateResultObservation_validateMu2consolResultObservationCode(functionalStatusResultObservation, diagnostics, context);
+		return result;
+	}
+
+	/**
+	 * Validates the validateResultObservationTemplateId constraint of '<em>Functional Status Result Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateFunctionalStatusResultObservation_validateResultObservationTemplateId(FunctionalStatusResultObservation functionalStatusResultObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return functionalStatusResultObservation.validateResultObservationTemplateId(diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateFunctionalStatusResultOrganizer(FunctionalStatusResultOrganizer functionalStatusResultOrganizer, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		if (!validate_NoCircularContainment(functionalStatusResultOrganizer, diagnostics, context)) return false;
+		boolean result = validate_EveryMultiplicityConforms(functionalStatusResultOrganizer, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(functionalStatusResultOrganizer, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(functionalStatusResultOrganizer, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryProxyResolves(functionalStatusResultOrganizer, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_UniqueID(functionalStatusResultOrganizer, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryKeyUnique(functionalStatusResultOrganizer, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(functionalStatusResultOrganizer, diagnostics, context);
+		if (result || diagnostics != null) result &= consolValidator.validateResultOrganizer_validateResultOrganizerCodeValue(functionalStatusResultOrganizer, diagnostics, context);
+		if (result || diagnostics != null) result &= consolValidator.validateResultOrganizer_validateResultOrganizerClassCodeValue(functionalStatusResultOrganizer, diagnostics, context);
+		if (result || diagnostics != null) result &= validateFunctionalStatusResultOrganizer_validateResultOrganizerTemplateId(functionalStatusResultOrganizer, diagnostics, context);
+		if (result || diagnostics != null) result &= consolValidator.validateResultOrganizer_validateResultOrganizerClassCode(functionalStatusResultOrganizer, diagnostics, context);
+		if (result || diagnostics != null) result &= consolValidator.validateResultOrganizer_validateResultOrganizerMoodCode(functionalStatusResultOrganizer, diagnostics, context);
+		if (result || diagnostics != null) result &= consolValidator.validateResultOrganizer_validateResultOrganizerId(functionalStatusResultOrganizer, diagnostics, context);
+		if (result || diagnostics != null) result &= consolValidator.validateResultOrganizer_validateResultOrganizerStatusCodeP(functionalStatusResultOrganizer, diagnostics, context);
+		if (result || diagnostics != null) result &= consolValidator.validateResultOrganizer_validateResultOrganizerStatusCode(functionalStatusResultOrganizer, diagnostics, context);
+		if (result || diagnostics != null) result &= consolValidator.validateResultOrganizer_validateResultOrganizerCode(functionalStatusResultOrganizer, diagnostics, context);
+		if (result || diagnostics != null) result &= consolValidator.validateResultOrganizer_validateResultOrganizerResultObservation(functionalStatusResultOrganizer, diagnostics, context);
+		if (result || diagnostics != null) result &= consolValidator.validateFunctionalStatusResultOrganizer_validateFunctionalStatusResultOrganizerCodeCodeSystem(functionalStatusResultOrganizer, diagnostics, context);
+		if (result || diagnostics != null) result &= consolValidator.validateFunctionalStatusResultOrganizer_validateFunctionalStatusResultOrganizerClassCode(functionalStatusResultOrganizer, diagnostics, context);
+		if (result || diagnostics != null) result &= consolValidator.validateFunctionalStatusResultOrganizer_validateFunctionalStatusResultOrganizerMoodCode(functionalStatusResultOrganizer, diagnostics, context);
+		if (result || diagnostics != null) result &= consolValidator.validateFunctionalStatusResultOrganizer_validateFunctionalStatusResultOrganizerId(functionalStatusResultOrganizer, diagnostics, context);
+		if (result || diagnostics != null) result &= consolValidator.validateFunctionalStatusResultOrganizer_validateFunctionalStatusResultOrganizerCode(functionalStatusResultOrganizer, diagnostics, context);
+		if (result || diagnostics != null) result &= consolValidator.validateFunctionalStatusResultOrganizer_validateFunctionalStatusResultOrganizerStatusCodeP(functionalStatusResultOrganizer, diagnostics, context);
+		if (result || diagnostics != null) result &= consolValidator.validateFunctionalStatusResultOrganizer_validateFunctionalStatusResultOrganizerStatusCode(functionalStatusResultOrganizer, diagnostics, context);
+		if (result || diagnostics != null) result &= consolValidator.validateFunctionalStatusResultOrganizer_validateFunctionalStatusResultOrganizerFunctionalStatusResultObservation(functionalStatusResultOrganizer, diagnostics, context);
+		if (result || diagnostics != null) result &= validateResultOrganizer_validateMu2consolResultOrganizerResultObservation(functionalStatusResultOrganizer, diagnostics, context);
+		return result;
+	}
+
+	/**
+	 * Validates the validateResultOrganizerTemplateId constraint of '<em>Functional Status Result Organizer</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateFunctionalStatusResultOrganizer_validateResultOrganizerTemplateId(FunctionalStatusResultOrganizer functionalStatusResultOrganizer, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return functionalStatusResultOrganizer.validateResultOrganizerTemplateId(diagnostics, context);
 	}
 
 	/**
