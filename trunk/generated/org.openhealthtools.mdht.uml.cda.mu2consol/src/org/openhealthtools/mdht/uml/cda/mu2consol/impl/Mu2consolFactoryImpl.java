@@ -15,6 +15,7 @@ import org.eclipse.emf.ecore.EObject;
 import org.eclipse.emf.ecore.EPackage;
 import org.eclipse.emf.ecore.impl.EFactoryImpl;
 import org.eclipse.emf.ecore.plugin.EcorePlugin;
+import org.openhealthtools.mdht.uml.cda.mu2consol.*;
 import org.openhealthtools.mdht.uml.cda.mu2consol.AssessmentSection;
 import org.openhealthtools.mdht.uml.cda.mu2consol.ClinicalOfficeVisitSummary;
 import org.openhealthtools.mdht.uml.cda.mu2consol.GeneralHeaderConstraints;
@@ -95,6 +96,11 @@ public class Mu2consolFactoryImpl extends EFactoryImpl implements
 			case Mu2consolPackage.VIEW_DOWNLOAD_TRANSMIT_SUMMARY: return createViewDownloadTransmitSummary();
 			case Mu2consolPackage.VDT_INPATIENT_SUMMARY: return createVDTInpatientSummary();
 			case Mu2consolPackage.VDT_AMBULATORY_SUMMARY: return createVDTAmbulatorySummary();
+			case Mu2consolPackage.FUNCTIONAL_STATUS_SECTION: return createFunctionalStatusSection();
+			case Mu2consolPackage.COGNITIVE_STATUS_RESULT_OBSERVATION: return createCognitiveStatusResultObservation();
+			case Mu2consolPackage.COGNITIVE_STATUS_RESULT_ORGANIZER: return createCognitiveStatusResultOrganizer();
+			case Mu2consolPackage.FUNCTIONAL_STATUS_RESULT_OBSERVATION: return createFunctionalStatusResultObservation();
+			case Mu2consolPackage.FUNCTIONAL_STATUS_RESULT_ORGANIZER: return createFunctionalStatusResultOrganizer();
 			default:
 				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
 		}
@@ -180,6 +186,56 @@ public class Mu2consolFactoryImpl extends EFactoryImpl implements
 	public VDTAmbulatorySummary createVDTAmbulatorySummary() {
 		VDTAmbulatorySummaryImpl vdtAmbulatorySummary = new VDTAmbulatorySummaryImpl();
 		return vdtAmbulatorySummary;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public FunctionalStatusSection createFunctionalStatusSection() {
+		FunctionalStatusSectionImpl functionalStatusSection = new FunctionalStatusSectionImpl();
+		return functionalStatusSection;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public CognitiveStatusResultObservation createCognitiveStatusResultObservation() {
+		CognitiveStatusResultObservationImpl cognitiveStatusResultObservation = new CognitiveStatusResultObservationImpl();
+		return cognitiveStatusResultObservation;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public CognitiveStatusResultOrganizer createCognitiveStatusResultOrganizer() {
+		CognitiveStatusResultOrganizerImpl cognitiveStatusResultOrganizer = new CognitiveStatusResultOrganizerImpl();
+		return cognitiveStatusResultOrganizer;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public FunctionalStatusResultObservation createFunctionalStatusResultObservation() {
+		FunctionalStatusResultObservationImpl functionalStatusResultObservation = new FunctionalStatusResultObservationImpl();
+		return functionalStatusResultObservation;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public FunctionalStatusResultOrganizer createFunctionalStatusResultOrganizer() {
+		FunctionalStatusResultOrganizerImpl functionalStatusResultOrganizer = new FunctionalStatusResultOrganizerImpl();
+		return functionalStatusResultOrganizer;
 	}
 
 	/**

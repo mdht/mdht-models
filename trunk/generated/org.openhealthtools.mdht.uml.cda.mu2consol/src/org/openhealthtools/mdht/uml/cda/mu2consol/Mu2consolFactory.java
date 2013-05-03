@@ -178,6 +178,51 @@ public interface Mu2consolFactory extends EFactory {
 	VDTAmbulatorySummary createVDTAmbulatorySummary();
 
 	/**
+	 * Returns a new object of class '<em>Functional Status Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Functional Status Section</em>'.
+	 * @generated
+	 */
+	FunctionalStatusSection createFunctionalStatusSection();
+
+	/**
+	 * Returns a new object of class '<em>Cognitive Status Result Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Cognitive Status Result Observation</em>'.
+	 * @generated
+	 */
+	CognitiveStatusResultObservation createCognitiveStatusResultObservation();
+
+	/**
+	 * Returns a new object of class '<em>Cognitive Status Result Organizer</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Cognitive Status Result Organizer</em>'.
+	 * @generated
+	 */
+	CognitiveStatusResultOrganizer createCognitiveStatusResultOrganizer();
+
+	/**
+	 * Returns a new object of class '<em>Functional Status Result Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Functional Status Result Observation</em>'.
+	 * @generated
+	 */
+	FunctionalStatusResultObservation createFunctionalStatusResultObservation();
+
+	/**
+	 * Returns a new object of class '<em>Functional Status Result Organizer</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Functional Status Result Organizer</em>'.
+	 * @generated
+	 */
+	FunctionalStatusResultOrganizer createFunctionalStatusResultOrganizer();
+
+	/**
 	 * Returns the package supported by this factory.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

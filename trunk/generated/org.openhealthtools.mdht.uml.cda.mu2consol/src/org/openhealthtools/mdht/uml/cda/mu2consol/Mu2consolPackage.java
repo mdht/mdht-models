@@ -3967,6 +3967,1145 @@ public interface Mu2consolPackage extends EPackage {
 	int VDT_AMBULATORY_SUMMARY_FEATURE_COUNT = VIEW_DOWNLOAD_TRANSMIT_SUMMARY_FEATURE_COUNT + 0;
 
 	/**
+     * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.mu2consol.impl.FunctionalStatusSectionImpl <em>Functional Status Section</em>}' class.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @see org.openhealthtools.mdht.uml.cda.mu2consol.impl.FunctionalStatusSectionImpl
+     * @see org.openhealthtools.mdht.uml.cda.mu2consol.impl.Mu2consolPackageImpl#getFunctionalStatusSection()
+     * @generated
+     */
+    int FUNCTIONAL_STATUS_SECTION = 17;
+
+	/**
+     * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int FUNCTIONAL_STATUS_SECTION__REALM_CODE = ConsolPackage.FUNCTIONAL_STATUS_SECTION__REALM_CODE;
+
+	/**
+     * The feature id for the '<em><b>Type Id</b></em>' containment reference.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int FUNCTIONAL_STATUS_SECTION__TYPE_ID = ConsolPackage.FUNCTIONAL_STATUS_SECTION__TYPE_ID;
+
+	/**
+     * The feature id for the '<em><b>Template Id</b></em>' containment reference list.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int FUNCTIONAL_STATUS_SECTION__TEMPLATE_ID = ConsolPackage.FUNCTIONAL_STATUS_SECTION__TEMPLATE_ID;
+
+	/**
+     * The feature id for the '<em><b>Id</b></em>' containment reference.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int FUNCTIONAL_STATUS_SECTION__ID = ConsolPackage.FUNCTIONAL_STATUS_SECTION__ID;
+
+	/**
+     * The feature id for the '<em><b>Code</b></em>' containment reference.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int FUNCTIONAL_STATUS_SECTION__CODE = ConsolPackage.FUNCTIONAL_STATUS_SECTION__CODE;
+
+	/**
+     * The feature id for the '<em><b>Title</b></em>' containment reference.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int FUNCTIONAL_STATUS_SECTION__TITLE = ConsolPackage.FUNCTIONAL_STATUS_SECTION__TITLE;
+
+	/**
+     * The feature id for the '<em><b>Text</b></em>' containment reference.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int FUNCTIONAL_STATUS_SECTION__TEXT = ConsolPackage.FUNCTIONAL_STATUS_SECTION__TEXT;
+
+	/**
+     * The feature id for the '<em><b>Confidentiality Code</b></em>' containment reference.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int FUNCTIONAL_STATUS_SECTION__CONFIDENTIALITY_CODE = ConsolPackage.FUNCTIONAL_STATUS_SECTION__CONFIDENTIALITY_CODE;
+
+	/**
+     * The feature id for the '<em><b>Language Code</b></em>' containment reference.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int FUNCTIONAL_STATUS_SECTION__LANGUAGE_CODE = ConsolPackage.FUNCTIONAL_STATUS_SECTION__LANGUAGE_CODE;
+
+	/**
+     * The feature id for the '<em><b>Subject</b></em>' containment reference.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int FUNCTIONAL_STATUS_SECTION__SUBJECT = ConsolPackage.FUNCTIONAL_STATUS_SECTION__SUBJECT;
+
+	/**
+     * The feature id for the '<em><b>Author</b></em>' containment reference list.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int FUNCTIONAL_STATUS_SECTION__AUTHOR = ConsolPackage.FUNCTIONAL_STATUS_SECTION__AUTHOR;
+
+	/**
+     * The feature id for the '<em><b>Informant</b></em>' containment reference list.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int FUNCTIONAL_STATUS_SECTION__INFORMANT = ConsolPackage.FUNCTIONAL_STATUS_SECTION__INFORMANT;
+
+	/**
+     * The feature id for the '<em><b>Entry</b></em>' containment reference list.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int FUNCTIONAL_STATUS_SECTION__ENTRY = ConsolPackage.FUNCTIONAL_STATUS_SECTION__ENTRY;
+
+	/**
+     * The feature id for the '<em><b>Component</b></em>' containment reference list.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int FUNCTIONAL_STATUS_SECTION__COMPONENT = ConsolPackage.FUNCTIONAL_STATUS_SECTION__COMPONENT;
+
+	/**
+     * The feature id for the '<em><b>Section Id</b></em>' attribute.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int FUNCTIONAL_STATUS_SECTION__SECTION_ID = ConsolPackage.FUNCTIONAL_STATUS_SECTION__SECTION_ID;
+
+	/**
+     * The feature id for the '<em><b>Null Flavor</b></em>' attribute.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int FUNCTIONAL_STATUS_SECTION__NULL_FLAVOR = ConsolPackage.FUNCTIONAL_STATUS_SECTION__NULL_FLAVOR;
+
+	/**
+     * The feature id for the '<em><b>Class Code</b></em>' attribute.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int FUNCTIONAL_STATUS_SECTION__CLASS_CODE = ConsolPackage.FUNCTIONAL_STATUS_SECTION__CLASS_CODE;
+
+	/**
+     * The feature id for the '<em><b>Mood Code</b></em>' attribute.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int FUNCTIONAL_STATUS_SECTION__MOOD_CODE = ConsolPackage.FUNCTIONAL_STATUS_SECTION__MOOD_CODE;
+
+	/**
+     * The number of structural features of the '<em>Functional Status Section</em>' class.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int FUNCTIONAL_STATUS_SECTION_FEATURE_COUNT = ConsolPackage.FUNCTIONAL_STATUS_SECTION_FEATURE_COUNT + 0;
+
+	/**
+     * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.mu2consol.impl.CognitiveStatusResultObservationImpl <em>Cognitive Status Result Observation</em>}' class.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @see org.openhealthtools.mdht.uml.cda.mu2consol.impl.CognitiveStatusResultObservationImpl
+     * @see org.openhealthtools.mdht.uml.cda.mu2consol.impl.Mu2consolPackageImpl#getCognitiveStatusResultObservation()
+     * @generated
+     */
+    int COGNITIVE_STATUS_RESULT_OBSERVATION = 18;
+
+	/**
+     * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int COGNITIVE_STATUS_RESULT_OBSERVATION__REALM_CODE = ConsolPackage.COGNITIVE_STATUS_RESULT_OBSERVATION__REALM_CODE;
+
+	/**
+     * The feature id for the '<em><b>Type Id</b></em>' containment reference.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int COGNITIVE_STATUS_RESULT_OBSERVATION__TYPE_ID = ConsolPackage.COGNITIVE_STATUS_RESULT_OBSERVATION__TYPE_ID;
+
+	/**
+     * The feature id for the '<em><b>Template Id</b></em>' containment reference list.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int COGNITIVE_STATUS_RESULT_OBSERVATION__TEMPLATE_ID = ConsolPackage.COGNITIVE_STATUS_RESULT_OBSERVATION__TEMPLATE_ID;
+
+	/**
+     * The feature id for the '<em><b>Id</b></em>' containment reference list.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int COGNITIVE_STATUS_RESULT_OBSERVATION__ID = ConsolPackage.COGNITIVE_STATUS_RESULT_OBSERVATION__ID;
+
+	/**
+     * The feature id for the '<em><b>Code</b></em>' containment reference.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int COGNITIVE_STATUS_RESULT_OBSERVATION__CODE = ConsolPackage.COGNITIVE_STATUS_RESULT_OBSERVATION__CODE;
+
+	/**
+     * The feature id for the '<em><b>Derivation Expr</b></em>' containment reference.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int COGNITIVE_STATUS_RESULT_OBSERVATION__DERIVATION_EXPR = ConsolPackage.COGNITIVE_STATUS_RESULT_OBSERVATION__DERIVATION_EXPR;
+
+	/**
+     * The feature id for the '<em><b>Text</b></em>' containment reference.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int COGNITIVE_STATUS_RESULT_OBSERVATION__TEXT = ConsolPackage.COGNITIVE_STATUS_RESULT_OBSERVATION__TEXT;
+
+	/**
+     * The feature id for the '<em><b>Status Code</b></em>' containment reference.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int COGNITIVE_STATUS_RESULT_OBSERVATION__STATUS_CODE = ConsolPackage.COGNITIVE_STATUS_RESULT_OBSERVATION__STATUS_CODE;
+
+	/**
+     * The feature id for the '<em><b>Effective Time</b></em>' containment reference.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int COGNITIVE_STATUS_RESULT_OBSERVATION__EFFECTIVE_TIME = ConsolPackage.COGNITIVE_STATUS_RESULT_OBSERVATION__EFFECTIVE_TIME;
+
+	/**
+     * The feature id for the '<em><b>Priority Code</b></em>' containment reference.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int COGNITIVE_STATUS_RESULT_OBSERVATION__PRIORITY_CODE = ConsolPackage.COGNITIVE_STATUS_RESULT_OBSERVATION__PRIORITY_CODE;
+
+	/**
+     * The feature id for the '<em><b>Repeat Number</b></em>' containment reference.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int COGNITIVE_STATUS_RESULT_OBSERVATION__REPEAT_NUMBER = ConsolPackage.COGNITIVE_STATUS_RESULT_OBSERVATION__REPEAT_NUMBER;
+
+	/**
+     * The feature id for the '<em><b>Language Code</b></em>' containment reference.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int COGNITIVE_STATUS_RESULT_OBSERVATION__LANGUAGE_CODE = ConsolPackage.COGNITIVE_STATUS_RESULT_OBSERVATION__LANGUAGE_CODE;
+
+	/**
+     * The feature id for the '<em><b>Value</b></em>' containment reference list.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int COGNITIVE_STATUS_RESULT_OBSERVATION__VALUE = ConsolPackage.COGNITIVE_STATUS_RESULT_OBSERVATION__VALUE;
+
+	/**
+     * The feature id for the '<em><b>Interpretation Code</b></em>' containment reference list.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int COGNITIVE_STATUS_RESULT_OBSERVATION__INTERPRETATION_CODE = ConsolPackage.COGNITIVE_STATUS_RESULT_OBSERVATION__INTERPRETATION_CODE;
+
+	/**
+     * The feature id for the '<em><b>Method Code</b></em>' containment reference list.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int COGNITIVE_STATUS_RESULT_OBSERVATION__METHOD_CODE = ConsolPackage.COGNITIVE_STATUS_RESULT_OBSERVATION__METHOD_CODE;
+
+	/**
+     * The feature id for the '<em><b>Target Site Code</b></em>' containment reference list.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int COGNITIVE_STATUS_RESULT_OBSERVATION__TARGET_SITE_CODE = ConsolPackage.COGNITIVE_STATUS_RESULT_OBSERVATION__TARGET_SITE_CODE;
+
+	/**
+     * The feature id for the '<em><b>Subject</b></em>' containment reference.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int COGNITIVE_STATUS_RESULT_OBSERVATION__SUBJECT = ConsolPackage.COGNITIVE_STATUS_RESULT_OBSERVATION__SUBJECT;
+
+	/**
+     * The feature id for the '<em><b>Specimen</b></em>' containment reference list.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int COGNITIVE_STATUS_RESULT_OBSERVATION__SPECIMEN = ConsolPackage.COGNITIVE_STATUS_RESULT_OBSERVATION__SPECIMEN;
+
+	/**
+     * The feature id for the '<em><b>Performer</b></em>' containment reference list.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int COGNITIVE_STATUS_RESULT_OBSERVATION__PERFORMER = ConsolPackage.COGNITIVE_STATUS_RESULT_OBSERVATION__PERFORMER;
+
+	/**
+     * The feature id for the '<em><b>Author</b></em>' containment reference list.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int COGNITIVE_STATUS_RESULT_OBSERVATION__AUTHOR = ConsolPackage.COGNITIVE_STATUS_RESULT_OBSERVATION__AUTHOR;
+
+	/**
+     * The feature id for the '<em><b>Informant</b></em>' containment reference list.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int COGNITIVE_STATUS_RESULT_OBSERVATION__INFORMANT = ConsolPackage.COGNITIVE_STATUS_RESULT_OBSERVATION__INFORMANT;
+
+	/**
+     * The feature id for the '<em><b>Participant</b></em>' containment reference list.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int COGNITIVE_STATUS_RESULT_OBSERVATION__PARTICIPANT = ConsolPackage.COGNITIVE_STATUS_RESULT_OBSERVATION__PARTICIPANT;
+
+	/**
+     * The feature id for the '<em><b>Entry Relationship</b></em>' containment reference list.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int COGNITIVE_STATUS_RESULT_OBSERVATION__ENTRY_RELATIONSHIP = ConsolPackage.COGNITIVE_STATUS_RESULT_OBSERVATION__ENTRY_RELATIONSHIP;
+
+	/**
+     * The feature id for the '<em><b>Reference</b></em>' containment reference list.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int COGNITIVE_STATUS_RESULT_OBSERVATION__REFERENCE = ConsolPackage.COGNITIVE_STATUS_RESULT_OBSERVATION__REFERENCE;
+
+	/**
+     * The feature id for the '<em><b>Precondition</b></em>' containment reference list.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int COGNITIVE_STATUS_RESULT_OBSERVATION__PRECONDITION = ConsolPackage.COGNITIVE_STATUS_RESULT_OBSERVATION__PRECONDITION;
+
+	/**
+     * The feature id for the '<em><b>Reference Range</b></em>' containment reference list.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int COGNITIVE_STATUS_RESULT_OBSERVATION__REFERENCE_RANGE = ConsolPackage.COGNITIVE_STATUS_RESULT_OBSERVATION__REFERENCE_RANGE;
+
+	/**
+     * The feature id for the '<em><b>Null Flavor</b></em>' attribute.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int COGNITIVE_STATUS_RESULT_OBSERVATION__NULL_FLAVOR = ConsolPackage.COGNITIVE_STATUS_RESULT_OBSERVATION__NULL_FLAVOR;
+
+	/**
+     * The feature id for the '<em><b>Class Code</b></em>' attribute.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int COGNITIVE_STATUS_RESULT_OBSERVATION__CLASS_CODE = ConsolPackage.COGNITIVE_STATUS_RESULT_OBSERVATION__CLASS_CODE;
+
+	/**
+     * The feature id for the '<em><b>Mood Code</b></em>' attribute.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int COGNITIVE_STATUS_RESULT_OBSERVATION__MOOD_CODE = ConsolPackage.COGNITIVE_STATUS_RESULT_OBSERVATION__MOOD_CODE;
+
+	/**
+     * The feature id for the '<em><b>Negation Ind</b></em>' attribute.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int COGNITIVE_STATUS_RESULT_OBSERVATION__NEGATION_IND = ConsolPackage.COGNITIVE_STATUS_RESULT_OBSERVATION__NEGATION_IND;
+
+	/**
+     * The number of structural features of the '<em>Cognitive Status Result Observation</em>' class.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int COGNITIVE_STATUS_RESULT_OBSERVATION_FEATURE_COUNT = ConsolPackage.COGNITIVE_STATUS_RESULT_OBSERVATION_FEATURE_COUNT + 0;
+
+	/**
+     * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.mu2consol.impl.CognitiveStatusResultOrganizerImpl <em>Cognitive Status Result Organizer</em>}' class.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @see org.openhealthtools.mdht.uml.cda.mu2consol.impl.CognitiveStatusResultOrganizerImpl
+     * @see org.openhealthtools.mdht.uml.cda.mu2consol.impl.Mu2consolPackageImpl#getCognitiveStatusResultOrganizer()
+     * @generated
+     */
+    int COGNITIVE_STATUS_RESULT_ORGANIZER = 19;
+
+	/**
+     * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int COGNITIVE_STATUS_RESULT_ORGANIZER__REALM_CODE = ConsolPackage.COGNITIVE_STATUS_RESULT_ORGANIZER__REALM_CODE;
+
+	/**
+     * The feature id for the '<em><b>Type Id</b></em>' containment reference.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int COGNITIVE_STATUS_RESULT_ORGANIZER__TYPE_ID = ConsolPackage.COGNITIVE_STATUS_RESULT_ORGANIZER__TYPE_ID;
+
+	/**
+     * The feature id for the '<em><b>Template Id</b></em>' containment reference list.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int COGNITIVE_STATUS_RESULT_ORGANIZER__TEMPLATE_ID = ConsolPackage.COGNITIVE_STATUS_RESULT_ORGANIZER__TEMPLATE_ID;
+
+	/**
+     * The feature id for the '<em><b>Id</b></em>' containment reference list.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int COGNITIVE_STATUS_RESULT_ORGANIZER__ID = ConsolPackage.COGNITIVE_STATUS_RESULT_ORGANIZER__ID;
+
+	/**
+     * The feature id for the '<em><b>Code</b></em>' containment reference.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int COGNITIVE_STATUS_RESULT_ORGANIZER__CODE = ConsolPackage.COGNITIVE_STATUS_RESULT_ORGANIZER__CODE;
+
+	/**
+     * The feature id for the '<em><b>Status Code</b></em>' containment reference.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int COGNITIVE_STATUS_RESULT_ORGANIZER__STATUS_CODE = ConsolPackage.COGNITIVE_STATUS_RESULT_ORGANIZER__STATUS_CODE;
+
+	/**
+     * The feature id for the '<em><b>Effective Time</b></em>' containment reference.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int COGNITIVE_STATUS_RESULT_ORGANIZER__EFFECTIVE_TIME = ConsolPackage.COGNITIVE_STATUS_RESULT_ORGANIZER__EFFECTIVE_TIME;
+
+	/**
+     * The feature id for the '<em><b>Subject</b></em>' containment reference.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int COGNITIVE_STATUS_RESULT_ORGANIZER__SUBJECT = ConsolPackage.COGNITIVE_STATUS_RESULT_ORGANIZER__SUBJECT;
+
+	/**
+     * The feature id for the '<em><b>Specimen</b></em>' containment reference list.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int COGNITIVE_STATUS_RESULT_ORGANIZER__SPECIMEN = ConsolPackage.COGNITIVE_STATUS_RESULT_ORGANIZER__SPECIMEN;
+
+	/**
+     * The feature id for the '<em><b>Performer</b></em>' containment reference list.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int COGNITIVE_STATUS_RESULT_ORGANIZER__PERFORMER = ConsolPackage.COGNITIVE_STATUS_RESULT_ORGANIZER__PERFORMER;
+
+	/**
+     * The feature id for the '<em><b>Author</b></em>' containment reference list.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int COGNITIVE_STATUS_RESULT_ORGANIZER__AUTHOR = ConsolPackage.COGNITIVE_STATUS_RESULT_ORGANIZER__AUTHOR;
+
+	/**
+     * The feature id for the '<em><b>Informant</b></em>' containment reference list.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int COGNITIVE_STATUS_RESULT_ORGANIZER__INFORMANT = ConsolPackage.COGNITIVE_STATUS_RESULT_ORGANIZER__INFORMANT;
+
+	/**
+     * The feature id for the '<em><b>Participant</b></em>' containment reference list.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int COGNITIVE_STATUS_RESULT_ORGANIZER__PARTICIPANT = ConsolPackage.COGNITIVE_STATUS_RESULT_ORGANIZER__PARTICIPANT;
+
+	/**
+     * The feature id for the '<em><b>Reference</b></em>' containment reference list.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int COGNITIVE_STATUS_RESULT_ORGANIZER__REFERENCE = ConsolPackage.COGNITIVE_STATUS_RESULT_ORGANIZER__REFERENCE;
+
+	/**
+     * The feature id for the '<em><b>Precondition</b></em>' containment reference list.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int COGNITIVE_STATUS_RESULT_ORGANIZER__PRECONDITION = ConsolPackage.COGNITIVE_STATUS_RESULT_ORGANIZER__PRECONDITION;
+
+	/**
+     * The feature id for the '<em><b>Component</b></em>' containment reference list.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int COGNITIVE_STATUS_RESULT_ORGANIZER__COMPONENT = ConsolPackage.COGNITIVE_STATUS_RESULT_ORGANIZER__COMPONENT;
+
+	/**
+     * The feature id for the '<em><b>Null Flavor</b></em>' attribute.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int COGNITIVE_STATUS_RESULT_ORGANIZER__NULL_FLAVOR = ConsolPackage.COGNITIVE_STATUS_RESULT_ORGANIZER__NULL_FLAVOR;
+
+	/**
+     * The feature id for the '<em><b>Class Code</b></em>' attribute.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int COGNITIVE_STATUS_RESULT_ORGANIZER__CLASS_CODE = ConsolPackage.COGNITIVE_STATUS_RESULT_ORGANIZER__CLASS_CODE;
+
+	/**
+     * The feature id for the '<em><b>Mood Code</b></em>' attribute.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int COGNITIVE_STATUS_RESULT_ORGANIZER__MOOD_CODE = ConsolPackage.COGNITIVE_STATUS_RESULT_ORGANIZER__MOOD_CODE;
+
+	/**
+     * The number of structural features of the '<em>Cognitive Status Result Organizer</em>' class.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int COGNITIVE_STATUS_RESULT_ORGANIZER_FEATURE_COUNT = ConsolPackage.COGNITIVE_STATUS_RESULT_ORGANIZER_FEATURE_COUNT + 0;
+
+	/**
+     * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.mu2consol.impl.FunctionalStatusResultObservationImpl <em>Functional Status Result Observation</em>}' class.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @see org.openhealthtools.mdht.uml.cda.mu2consol.impl.FunctionalStatusResultObservationImpl
+     * @see org.openhealthtools.mdht.uml.cda.mu2consol.impl.Mu2consolPackageImpl#getFunctionalStatusResultObservation()
+     * @generated
+     */
+    int FUNCTIONAL_STATUS_RESULT_OBSERVATION = 20;
+
+	/**
+     * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int FUNCTIONAL_STATUS_RESULT_OBSERVATION__REALM_CODE = ConsolPackage.FUNCTIONAL_STATUS_RESULT_OBSERVATION__REALM_CODE;
+
+	/**
+     * The feature id for the '<em><b>Type Id</b></em>' containment reference.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int FUNCTIONAL_STATUS_RESULT_OBSERVATION__TYPE_ID = ConsolPackage.FUNCTIONAL_STATUS_RESULT_OBSERVATION__TYPE_ID;
+
+	/**
+     * The feature id for the '<em><b>Template Id</b></em>' containment reference list.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int FUNCTIONAL_STATUS_RESULT_OBSERVATION__TEMPLATE_ID = ConsolPackage.FUNCTIONAL_STATUS_RESULT_OBSERVATION__TEMPLATE_ID;
+
+	/**
+     * The feature id for the '<em><b>Id</b></em>' containment reference list.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int FUNCTIONAL_STATUS_RESULT_OBSERVATION__ID = ConsolPackage.FUNCTIONAL_STATUS_RESULT_OBSERVATION__ID;
+
+	/**
+     * The feature id for the '<em><b>Code</b></em>' containment reference.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int FUNCTIONAL_STATUS_RESULT_OBSERVATION__CODE = ConsolPackage.FUNCTIONAL_STATUS_RESULT_OBSERVATION__CODE;
+
+	/**
+     * The feature id for the '<em><b>Derivation Expr</b></em>' containment reference.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int FUNCTIONAL_STATUS_RESULT_OBSERVATION__DERIVATION_EXPR = ConsolPackage.FUNCTIONAL_STATUS_RESULT_OBSERVATION__DERIVATION_EXPR;
+
+	/**
+     * The feature id for the '<em><b>Text</b></em>' containment reference.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int FUNCTIONAL_STATUS_RESULT_OBSERVATION__TEXT = ConsolPackage.FUNCTIONAL_STATUS_RESULT_OBSERVATION__TEXT;
+
+	/**
+     * The feature id for the '<em><b>Status Code</b></em>' containment reference.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int FUNCTIONAL_STATUS_RESULT_OBSERVATION__STATUS_CODE = ConsolPackage.FUNCTIONAL_STATUS_RESULT_OBSERVATION__STATUS_CODE;
+
+	/**
+     * The feature id for the '<em><b>Effective Time</b></em>' containment reference.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int FUNCTIONAL_STATUS_RESULT_OBSERVATION__EFFECTIVE_TIME = ConsolPackage.FUNCTIONAL_STATUS_RESULT_OBSERVATION__EFFECTIVE_TIME;
+
+	/**
+     * The feature id for the '<em><b>Priority Code</b></em>' containment reference.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int FUNCTIONAL_STATUS_RESULT_OBSERVATION__PRIORITY_CODE = ConsolPackage.FUNCTIONAL_STATUS_RESULT_OBSERVATION__PRIORITY_CODE;
+
+	/**
+     * The feature id for the '<em><b>Repeat Number</b></em>' containment reference.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int FUNCTIONAL_STATUS_RESULT_OBSERVATION__REPEAT_NUMBER = ConsolPackage.FUNCTIONAL_STATUS_RESULT_OBSERVATION__REPEAT_NUMBER;
+
+	/**
+     * The feature id for the '<em><b>Language Code</b></em>' containment reference.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int FUNCTIONAL_STATUS_RESULT_OBSERVATION__LANGUAGE_CODE = ConsolPackage.FUNCTIONAL_STATUS_RESULT_OBSERVATION__LANGUAGE_CODE;
+
+	/**
+     * The feature id for the '<em><b>Value</b></em>' containment reference list.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int FUNCTIONAL_STATUS_RESULT_OBSERVATION__VALUE = ConsolPackage.FUNCTIONAL_STATUS_RESULT_OBSERVATION__VALUE;
+
+	/**
+     * The feature id for the '<em><b>Interpretation Code</b></em>' containment reference list.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int FUNCTIONAL_STATUS_RESULT_OBSERVATION__INTERPRETATION_CODE = ConsolPackage.FUNCTIONAL_STATUS_RESULT_OBSERVATION__INTERPRETATION_CODE;
+
+	/**
+     * The feature id for the '<em><b>Method Code</b></em>' containment reference list.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int FUNCTIONAL_STATUS_RESULT_OBSERVATION__METHOD_CODE = ConsolPackage.FUNCTIONAL_STATUS_RESULT_OBSERVATION__METHOD_CODE;
+
+	/**
+     * The feature id for the '<em><b>Target Site Code</b></em>' containment reference list.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int FUNCTIONAL_STATUS_RESULT_OBSERVATION__TARGET_SITE_CODE = ConsolPackage.FUNCTIONAL_STATUS_RESULT_OBSERVATION__TARGET_SITE_CODE;
+
+	/**
+     * The feature id for the '<em><b>Subject</b></em>' containment reference.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int FUNCTIONAL_STATUS_RESULT_OBSERVATION__SUBJECT = ConsolPackage.FUNCTIONAL_STATUS_RESULT_OBSERVATION__SUBJECT;
+
+	/**
+     * The feature id for the '<em><b>Specimen</b></em>' containment reference list.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int FUNCTIONAL_STATUS_RESULT_OBSERVATION__SPECIMEN = ConsolPackage.FUNCTIONAL_STATUS_RESULT_OBSERVATION__SPECIMEN;
+
+	/**
+     * The feature id for the '<em><b>Performer</b></em>' containment reference list.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int FUNCTIONAL_STATUS_RESULT_OBSERVATION__PERFORMER = ConsolPackage.FUNCTIONAL_STATUS_RESULT_OBSERVATION__PERFORMER;
+
+	/**
+     * The feature id for the '<em><b>Author</b></em>' containment reference list.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int FUNCTIONAL_STATUS_RESULT_OBSERVATION__AUTHOR = ConsolPackage.FUNCTIONAL_STATUS_RESULT_OBSERVATION__AUTHOR;
+
+	/**
+     * The feature id for the '<em><b>Informant</b></em>' containment reference list.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int FUNCTIONAL_STATUS_RESULT_OBSERVATION__INFORMANT = ConsolPackage.FUNCTIONAL_STATUS_RESULT_OBSERVATION__INFORMANT;
+
+	/**
+     * The feature id for the '<em><b>Participant</b></em>' containment reference list.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int FUNCTIONAL_STATUS_RESULT_OBSERVATION__PARTICIPANT = ConsolPackage.FUNCTIONAL_STATUS_RESULT_OBSERVATION__PARTICIPANT;
+
+	/**
+     * The feature id for the '<em><b>Entry Relationship</b></em>' containment reference list.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int FUNCTIONAL_STATUS_RESULT_OBSERVATION__ENTRY_RELATIONSHIP = ConsolPackage.FUNCTIONAL_STATUS_RESULT_OBSERVATION__ENTRY_RELATIONSHIP;
+
+	/**
+     * The feature id for the '<em><b>Reference</b></em>' containment reference list.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int FUNCTIONAL_STATUS_RESULT_OBSERVATION__REFERENCE = ConsolPackage.FUNCTIONAL_STATUS_RESULT_OBSERVATION__REFERENCE;
+
+	/**
+     * The feature id for the '<em><b>Precondition</b></em>' containment reference list.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int FUNCTIONAL_STATUS_RESULT_OBSERVATION__PRECONDITION = ConsolPackage.FUNCTIONAL_STATUS_RESULT_OBSERVATION__PRECONDITION;
+
+	/**
+     * The feature id for the '<em><b>Reference Range</b></em>' containment reference list.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int FUNCTIONAL_STATUS_RESULT_OBSERVATION__REFERENCE_RANGE = ConsolPackage.FUNCTIONAL_STATUS_RESULT_OBSERVATION__REFERENCE_RANGE;
+
+	/**
+     * The feature id for the '<em><b>Null Flavor</b></em>' attribute.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int FUNCTIONAL_STATUS_RESULT_OBSERVATION__NULL_FLAVOR = ConsolPackage.FUNCTIONAL_STATUS_RESULT_OBSERVATION__NULL_FLAVOR;
+
+	/**
+     * The feature id for the '<em><b>Class Code</b></em>' attribute.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int FUNCTIONAL_STATUS_RESULT_OBSERVATION__CLASS_CODE = ConsolPackage.FUNCTIONAL_STATUS_RESULT_OBSERVATION__CLASS_CODE;
+
+	/**
+     * The feature id for the '<em><b>Mood Code</b></em>' attribute.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int FUNCTIONAL_STATUS_RESULT_OBSERVATION__MOOD_CODE = ConsolPackage.FUNCTIONAL_STATUS_RESULT_OBSERVATION__MOOD_CODE;
+
+	/**
+     * The feature id for the '<em><b>Negation Ind</b></em>' attribute.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int FUNCTIONAL_STATUS_RESULT_OBSERVATION__NEGATION_IND = ConsolPackage.FUNCTIONAL_STATUS_RESULT_OBSERVATION__NEGATION_IND;
+
+	/**
+     * The number of structural features of the '<em>Functional Status Result Observation</em>' class.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int FUNCTIONAL_STATUS_RESULT_OBSERVATION_FEATURE_COUNT = ConsolPackage.FUNCTIONAL_STATUS_RESULT_OBSERVATION_FEATURE_COUNT + 0;
+
+	/**
+     * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.mu2consol.impl.FunctionalStatusResultOrganizerImpl <em>Functional Status Result Organizer</em>}' class.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @see org.openhealthtools.mdht.uml.cda.mu2consol.impl.FunctionalStatusResultOrganizerImpl
+     * @see org.openhealthtools.mdht.uml.cda.mu2consol.impl.Mu2consolPackageImpl#getFunctionalStatusResultOrganizer()
+     * @generated
+     */
+    int FUNCTIONAL_STATUS_RESULT_ORGANIZER = 21;
+
+	/**
+     * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int FUNCTIONAL_STATUS_RESULT_ORGANIZER__REALM_CODE = ConsolPackage.FUNCTIONAL_STATUS_RESULT_ORGANIZER__REALM_CODE;
+
+	/**
+     * The feature id for the '<em><b>Type Id</b></em>' containment reference.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int FUNCTIONAL_STATUS_RESULT_ORGANIZER__TYPE_ID = ConsolPackage.FUNCTIONAL_STATUS_RESULT_ORGANIZER__TYPE_ID;
+
+	/**
+     * The feature id for the '<em><b>Template Id</b></em>' containment reference list.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int FUNCTIONAL_STATUS_RESULT_ORGANIZER__TEMPLATE_ID = ConsolPackage.FUNCTIONAL_STATUS_RESULT_ORGANIZER__TEMPLATE_ID;
+
+	/**
+     * The feature id for the '<em><b>Id</b></em>' containment reference list.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int FUNCTIONAL_STATUS_RESULT_ORGANIZER__ID = ConsolPackage.FUNCTIONAL_STATUS_RESULT_ORGANIZER__ID;
+
+	/**
+     * The feature id for the '<em><b>Code</b></em>' containment reference.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int FUNCTIONAL_STATUS_RESULT_ORGANIZER__CODE = ConsolPackage.FUNCTIONAL_STATUS_RESULT_ORGANIZER__CODE;
+
+	/**
+     * The feature id for the '<em><b>Status Code</b></em>' containment reference.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int FUNCTIONAL_STATUS_RESULT_ORGANIZER__STATUS_CODE = ConsolPackage.FUNCTIONAL_STATUS_RESULT_ORGANIZER__STATUS_CODE;
+
+	/**
+     * The feature id for the '<em><b>Effective Time</b></em>' containment reference.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int FUNCTIONAL_STATUS_RESULT_ORGANIZER__EFFECTIVE_TIME = ConsolPackage.FUNCTIONAL_STATUS_RESULT_ORGANIZER__EFFECTIVE_TIME;
+
+	/**
+     * The feature id for the '<em><b>Subject</b></em>' containment reference.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int FUNCTIONAL_STATUS_RESULT_ORGANIZER__SUBJECT = ConsolPackage.FUNCTIONAL_STATUS_RESULT_ORGANIZER__SUBJECT;
+
+	/**
+     * The feature id for the '<em><b>Specimen</b></em>' containment reference list.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int FUNCTIONAL_STATUS_RESULT_ORGANIZER__SPECIMEN = ConsolPackage.FUNCTIONAL_STATUS_RESULT_ORGANIZER__SPECIMEN;
+
+	/**
+     * The feature id for the '<em><b>Performer</b></em>' containment reference list.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int FUNCTIONAL_STATUS_RESULT_ORGANIZER__PERFORMER = ConsolPackage.FUNCTIONAL_STATUS_RESULT_ORGANIZER__PERFORMER;
+
+	/**
+     * The feature id for the '<em><b>Author</b></em>' containment reference list.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int FUNCTIONAL_STATUS_RESULT_ORGANIZER__AUTHOR = ConsolPackage.FUNCTIONAL_STATUS_RESULT_ORGANIZER__AUTHOR;
+
+	/**
+     * The feature id for the '<em><b>Informant</b></em>' containment reference list.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int FUNCTIONAL_STATUS_RESULT_ORGANIZER__INFORMANT = ConsolPackage.FUNCTIONAL_STATUS_RESULT_ORGANIZER__INFORMANT;
+
+	/**
+     * The feature id for the '<em><b>Participant</b></em>' containment reference list.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int FUNCTIONAL_STATUS_RESULT_ORGANIZER__PARTICIPANT = ConsolPackage.FUNCTIONAL_STATUS_RESULT_ORGANIZER__PARTICIPANT;
+
+	/**
+     * The feature id for the '<em><b>Reference</b></em>' containment reference list.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int FUNCTIONAL_STATUS_RESULT_ORGANIZER__REFERENCE = ConsolPackage.FUNCTIONAL_STATUS_RESULT_ORGANIZER__REFERENCE;
+
+	/**
+     * The feature id for the '<em><b>Precondition</b></em>' containment reference list.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int FUNCTIONAL_STATUS_RESULT_ORGANIZER__PRECONDITION = ConsolPackage.FUNCTIONAL_STATUS_RESULT_ORGANIZER__PRECONDITION;
+
+	/**
+     * The feature id for the '<em><b>Component</b></em>' containment reference list.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int FUNCTIONAL_STATUS_RESULT_ORGANIZER__COMPONENT = ConsolPackage.FUNCTIONAL_STATUS_RESULT_ORGANIZER__COMPONENT;
+
+	/**
+     * The feature id for the '<em><b>Null Flavor</b></em>' attribute.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int FUNCTIONAL_STATUS_RESULT_ORGANIZER__NULL_FLAVOR = ConsolPackage.FUNCTIONAL_STATUS_RESULT_ORGANIZER__NULL_FLAVOR;
+
+	/**
+     * The feature id for the '<em><b>Class Code</b></em>' attribute.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int FUNCTIONAL_STATUS_RESULT_ORGANIZER__CLASS_CODE = ConsolPackage.FUNCTIONAL_STATUS_RESULT_ORGANIZER__CLASS_CODE;
+
+	/**
+     * The feature id for the '<em><b>Mood Code</b></em>' attribute.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int FUNCTIONAL_STATUS_RESULT_ORGANIZER__MOOD_CODE = ConsolPackage.FUNCTIONAL_STATUS_RESULT_ORGANIZER__MOOD_CODE;
+
+	/**
+     * The number of structural features of the '<em>Functional Status Result Organizer</em>' class.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int FUNCTIONAL_STATUS_RESULT_ORGANIZER_FEATURE_COUNT = ConsolPackage.FUNCTIONAL_STATUS_RESULT_ORGANIZER_FEATURE_COUNT + 0;
+
+	/**
      * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.mu2consol.GeneralHeaderConstraints <em>General Header Constraints</em>}'.
      * <!-- begin-user-doc --> <!--
 	 * end-user-doc -->
@@ -4142,6 +5281,56 @@ public interface Mu2consolPackage extends EPackage {
      * @generated
      */
 	EClass getVDTAmbulatorySummary();
+
+	/**
+     * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.mu2consol.FunctionalStatusSection <em>Functional Status Section</em>}'.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @return the meta object for class '<em>Functional Status Section</em>'.
+     * @see org.openhealthtools.mdht.uml.cda.mu2consol.FunctionalStatusSection
+     * @generated
+     */
+    EClass getFunctionalStatusSection();
+
+	/**
+     * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.mu2consol.CognitiveStatusResultObservation <em>Cognitive Status Result Observation</em>}'.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @return the meta object for class '<em>Cognitive Status Result Observation</em>'.
+     * @see org.openhealthtools.mdht.uml.cda.mu2consol.CognitiveStatusResultObservation
+     * @generated
+     */
+    EClass getCognitiveStatusResultObservation();
+
+	/**
+     * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.mu2consol.CognitiveStatusResultOrganizer <em>Cognitive Status Result Organizer</em>}'.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @return the meta object for class '<em>Cognitive Status Result Organizer</em>'.
+     * @see org.openhealthtools.mdht.uml.cda.mu2consol.CognitiveStatusResultOrganizer
+     * @generated
+     */
+    EClass getCognitiveStatusResultOrganizer();
+
+	/**
+     * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.mu2consol.FunctionalStatusResultObservation <em>Functional Status Result Observation</em>}'.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @return the meta object for class '<em>Functional Status Result Observation</em>'.
+     * @see org.openhealthtools.mdht.uml.cda.mu2consol.FunctionalStatusResultObservation
+     * @generated
+     */
+    EClass getFunctionalStatusResultObservation();
+
+	/**
+     * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.mu2consol.FunctionalStatusResultOrganizer <em>Functional Status Result Organizer</em>}'.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @return the meta object for class '<em>Functional Status Result Organizer</em>'.
+     * @see org.openhealthtools.mdht.uml.cda.mu2consol.FunctionalStatusResultOrganizer
+     * @generated
+     */
+    EClass getFunctionalStatusResultOrganizer();
 
 	/**
 	 * Returns the factory that creates the instances of the model. <!--
@@ -4338,6 +5527,56 @@ public interface Mu2consolPackage extends EPackage {
          * @generated
          */
 		EClass VDT_AMBULATORY_SUMMARY = eINSTANCE.getVDTAmbulatorySummary();
+
+		/**
+         * The meta object literal for the '{@link org.openhealthtools.mdht.uml.cda.mu2consol.impl.FunctionalStatusSectionImpl <em>Functional Status Section</em>}' class.
+         * <!-- begin-user-doc -->
+         * <!-- end-user-doc -->
+         * @see org.openhealthtools.mdht.uml.cda.mu2consol.impl.FunctionalStatusSectionImpl
+         * @see org.openhealthtools.mdht.uml.cda.mu2consol.impl.Mu2consolPackageImpl#getFunctionalStatusSection()
+         * @generated
+         */
+        EClass FUNCTIONAL_STATUS_SECTION = eINSTANCE.getFunctionalStatusSection();
+
+		/**
+         * The meta object literal for the '{@link org.openhealthtools.mdht.uml.cda.mu2consol.impl.CognitiveStatusResultObservationImpl <em>Cognitive Status Result Observation</em>}' class.
+         * <!-- begin-user-doc -->
+         * <!-- end-user-doc -->
+         * @see org.openhealthtools.mdht.uml.cda.mu2consol.impl.CognitiveStatusResultObservationImpl
+         * @see org.openhealthtools.mdht.uml.cda.mu2consol.impl.Mu2consolPackageImpl#getCognitiveStatusResultObservation()
+         * @generated
+         */
+        EClass COGNITIVE_STATUS_RESULT_OBSERVATION = eINSTANCE.getCognitiveStatusResultObservation();
+
+		/**
+         * The meta object literal for the '{@link org.openhealthtools.mdht.uml.cda.mu2consol.impl.CognitiveStatusResultOrganizerImpl <em>Cognitive Status Result Organizer</em>}' class.
+         * <!-- begin-user-doc -->
+         * <!-- end-user-doc -->
+         * @see org.openhealthtools.mdht.uml.cda.mu2consol.impl.CognitiveStatusResultOrganizerImpl
+         * @see org.openhealthtools.mdht.uml.cda.mu2consol.impl.Mu2consolPackageImpl#getCognitiveStatusResultOrganizer()
+         * @generated
+         */
+        EClass COGNITIVE_STATUS_RESULT_ORGANIZER = eINSTANCE.getCognitiveStatusResultOrganizer();
+
+		/**
+         * The meta object literal for the '{@link org.openhealthtools.mdht.uml.cda.mu2consol.impl.FunctionalStatusResultObservationImpl <em>Functional Status Result Observation</em>}' class.
+         * <!-- begin-user-doc -->
+         * <!-- end-user-doc -->
+         * @see org.openhealthtools.mdht.uml.cda.mu2consol.impl.FunctionalStatusResultObservationImpl
+         * @see org.openhealthtools.mdht.uml.cda.mu2consol.impl.Mu2consolPackageImpl#getFunctionalStatusResultObservation()
+         * @generated
+         */
+        EClass FUNCTIONAL_STATUS_RESULT_OBSERVATION = eINSTANCE.getFunctionalStatusResultObservation();
+
+		/**
+         * The meta object literal for the '{@link org.openhealthtools.mdht.uml.cda.mu2consol.impl.FunctionalStatusResultOrganizerImpl <em>Functional Status Result Organizer</em>}' class.
+         * <!-- begin-user-doc -->
+         * <!-- end-user-doc -->
+         * @see org.openhealthtools.mdht.uml.cda.mu2consol.impl.FunctionalStatusResultOrganizerImpl
+         * @see org.openhealthtools.mdht.uml.cda.mu2consol.impl.Mu2consolPackageImpl#getFunctionalStatusResultOrganizer()
+         * @generated
+         */
+        EClass FUNCTIONAL_STATUS_RESULT_ORGANIZER = eINSTANCE.getFunctionalStatusResultOrganizer();
 
 	}
 

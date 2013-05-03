@@ -333,5 +333,19 @@
       </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="mu2consol.ecore#//VDTAmbulatorySummary/getMedicationsSection"/>
     </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="mu2consol.ecore#//FunctionalStatusSection">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="mu2consol.ecore#//FunctionalStatusSection/getMu2consolCognitiveStatusResultObservations"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="mu2consol.ecore#//FunctionalStatusSection/getMu2consolCognitiveStatusResultOrganizers"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="mu2consol.ecore#//FunctionalStatusSection/getMu2consolFunctionalStatusResultObservations"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="mu2consol.ecore#//FunctionalStatusSection/getMu2consolFunctionalStatusResultOrganizers"/>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="mu2consol.ecore#//CognitiveStatusResultObservation"/>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="mu2consol.ecore#//CognitiveStatusResultOrganizer">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="mu2consol.ecore#//CognitiveStatusResultOrganizer/getMu2consolCognitiveStatusResultObservations"/>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="mu2consol.ecore#//FunctionalStatusResultObservation"/>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="mu2consol.ecore#//FunctionalStatusResultOrganizer">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="mu2consol.ecore#//FunctionalStatusResultOrganizer/getMu2consolFunctionalStatusResultObservations"/>
+    </genClasses>
   </genPackages>
 </genmodel:GenModel>

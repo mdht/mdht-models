@@ -20,6 +20,11 @@ import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.mu2consol.AssessmentSection;
 import org.openhealthtools.mdht.uml.cda.mu2consol.ClinicalOfficeVisitSummary;
+import org.openhealthtools.mdht.uml.cda.mu2consol.CognitiveStatusResultObservation;
+import org.openhealthtools.mdht.uml.cda.mu2consol.CognitiveStatusResultOrganizer;
+import org.openhealthtools.mdht.uml.cda.mu2consol.FunctionalStatusResultObservation;
+import org.openhealthtools.mdht.uml.cda.mu2consol.FunctionalStatusResultOrganizer;
+import org.openhealthtools.mdht.uml.cda.mu2consol.FunctionalStatusSection;
 import org.openhealthtools.mdht.uml.cda.mu2consol.GeneralHeaderConstraints;
 import org.openhealthtools.mdht.uml.cda.mu2consol.MedicationsAdministeredSection;
 import org.openhealthtools.mdht.uml.cda.mu2consol.Mu2consolFactory;
@@ -149,6 +154,41 @@ public class Mu2consolPackageImpl extends EPackageImpl implements
      * @generated
      */
 	private EClass vdtAmbulatorySummaryEClass = null;
+
+	/**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    private EClass functionalStatusSectionEClass = null;
+
+	/**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    private EClass cognitiveStatusResultObservationEClass = null;
+
+	/**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    private EClass cognitiveStatusResultOrganizerEClass = null;
+
+	/**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    private EClass functionalStatusResultObservationEClass = null;
+
+	/**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    private EClass functionalStatusResultOrganizerEClass = null;
 
 	/**
 	 * Creates an instance of the model <b>Package</b>, registered with
@@ -367,6 +407,51 @@ public class Mu2consolPackageImpl extends EPackageImpl implements
     }
 
 	/**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public EClass getFunctionalStatusSection() {
+        return functionalStatusSectionEClass;
+    }
+
+	/**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public EClass getCognitiveStatusResultObservation() {
+        return cognitiveStatusResultObservationEClass;
+    }
+
+	/**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public EClass getCognitiveStatusResultOrganizer() {
+        return cognitiveStatusResultOrganizerEClass;
+    }
+
+	/**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public EClass getFunctionalStatusResultObservation() {
+        return functionalStatusResultObservationEClass;
+    }
+
+	/**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public EClass getFunctionalStatusResultOrganizer() {
+        return functionalStatusResultOrganizerEClass;
+    }
+
+	/**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
      * @generated
      */
@@ -425,6 +510,16 @@ public class Mu2consolPackageImpl extends EPackageImpl implements
         vdtInpatientSummaryEClass = createEClass(VDT_INPATIENT_SUMMARY);
 
         vdtAmbulatorySummaryEClass = createEClass(VDT_AMBULATORY_SUMMARY);
+
+        functionalStatusSectionEClass = createEClass(FUNCTIONAL_STATUS_SECTION);
+
+        cognitiveStatusResultObservationEClass = createEClass(COGNITIVE_STATUS_RESULT_OBSERVATION);
+
+        cognitiveStatusResultOrganizerEClass = createEClass(COGNITIVE_STATUS_RESULT_ORGANIZER);
+
+        functionalStatusResultObservationEClass = createEClass(FUNCTIONAL_STATUS_RESULT_OBSERVATION);
+
+        functionalStatusResultOrganizerEClass = createEClass(FUNCTIONAL_STATUS_RESULT_ORGANIZER);
     }
 
 	/**
@@ -474,6 +569,15 @@ public class Mu2consolPackageImpl extends EPackageImpl implements
         viewDownloadTransmitSummaryEClass.getESuperTypes().add(this.getGeneralHeaderConstraints());
         vdtInpatientSummaryEClass.getESuperTypes().add(this.getViewDownloadTransmitSummary());
         vdtAmbulatorySummaryEClass.getESuperTypes().add(this.getViewDownloadTransmitSummary());
+        functionalStatusSectionEClass.getESuperTypes().add(theConsolPackage.getFunctionalStatusSection());
+        cognitiveStatusResultObservationEClass.getESuperTypes().add(theConsolPackage.getCognitiveStatusResultObservation());
+        cognitiveStatusResultObservationEClass.getESuperTypes().add(this.getResultObservation());
+        cognitiveStatusResultOrganizerEClass.getESuperTypes().add(theConsolPackage.getCognitiveStatusResultOrganizer());
+        cognitiveStatusResultOrganizerEClass.getESuperTypes().add(this.getResultOrganizer());
+        functionalStatusResultObservationEClass.getESuperTypes().add(theConsolPackage.getFunctionalStatusResultObservation());
+        functionalStatusResultObservationEClass.getESuperTypes().add(this.getResultObservation());
+        functionalStatusResultOrganizerEClass.getESuperTypes().add(theConsolPackage.getFunctionalStatusResultOrganizer());
+        functionalStatusResultOrganizerEClass.getESuperTypes().add(this.getResultOrganizer());
 
         // Initialize classes and features; add operations and parameters
         initEClass(generalHeaderConstraintsEClass, GeneralHeaderConstraints.class, "GeneralHeaderConstraints", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
@@ -1110,6 +1214,28 @@ public class Mu2consolPackageImpl extends EPackageImpl implements
 
         addEOperation(vdtAmbulatorySummaryEClass, theConsolPackage.getMedicationsSection(), "getMedicationsSection", 1, 1, IS_UNIQUE, !IS_ORDERED);
 
+        initEClass(functionalStatusSectionEClass, FunctionalStatusSection.class, "FunctionalStatusSection", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+
+        addEOperation(functionalStatusSectionEClass, this.getCognitiveStatusResultObservation(), "getMu2consolCognitiveStatusResultObservations", 1, -1, IS_UNIQUE, !IS_ORDERED);
+
+        addEOperation(functionalStatusSectionEClass, this.getCognitiveStatusResultOrganizer(), "getMu2consolCognitiveStatusResultOrganizers", 1, -1, IS_UNIQUE, !IS_ORDERED);
+
+        addEOperation(functionalStatusSectionEClass, this.getFunctionalStatusResultObservation(), "getMu2consolFunctionalStatusResultObservations", 1, -1, IS_UNIQUE, !IS_ORDERED);
+
+        addEOperation(functionalStatusSectionEClass, this.getFunctionalStatusResultOrganizer(), "getMu2consolFunctionalStatusResultOrganizers", 1, -1, IS_UNIQUE, !IS_ORDERED);
+
+        initEClass(cognitiveStatusResultObservationEClass, CognitiveStatusResultObservation.class, "CognitiveStatusResultObservation", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+
+        initEClass(cognitiveStatusResultOrganizerEClass, CognitiveStatusResultOrganizer.class, "CognitiveStatusResultOrganizer", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+
+        addEOperation(cognitiveStatusResultOrganizerEClass, this.getCognitiveStatusResultObservation(), "getMu2consolCognitiveStatusResultObservations", 1, -1, IS_UNIQUE, !IS_ORDERED);
+
+        initEClass(functionalStatusResultObservationEClass, FunctionalStatusResultObservation.class, "FunctionalStatusResultObservation", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+
+        initEClass(functionalStatusResultOrganizerEClass, FunctionalStatusResultOrganizer.class, "FunctionalStatusResultOrganizer", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+
+        addEOperation(functionalStatusResultOrganizerEClass, this.getFunctionalStatusResultObservation(), "getMu2consolFunctionalStatusResultObservations", 1, -1, IS_UNIQUE, !IS_ORDERED);
+
         // Create resource
         createResource(eNS_URI);
 
@@ -1143,7 +1269,7 @@ public class Mu2consolPackageImpl extends EPackageImpl implements
            source, 
            new String[] {
              "initializers", "org.openhealthtools.mdht.uml.cda.mu2consol"
-           });                                                                                                                                                                                                                                                                                                                                                     
+           });                                                                                                                                                                                                                                                                                                                                                                           
     }
 
 	/**
@@ -1272,7 +1398,42 @@ public class Mu2consolPackageImpl extends EPackageImpl implements
            source, 
            new String[] {
              "constraints.validation.error", "VDTAmbulatorySummaryProviderNameAndContactInfo VDTAmbulatorySummaryMedicationsSection"
-           });          
+           });               
+        addAnnotation
+          (functionalStatusSectionEClass, 
+           source, 
+           new String[] {
+             "constraints.validation.error", "Mu2consolFunctionalStatusSectionTemplateId",
+             "templateId.root", "2.16.840.1.113883.10.20.22.2.14"
+           });              
+        addAnnotation
+          (cognitiveStatusResultObservationEClass, 
+           source, 
+           new String[] {
+             "constraints.validation.error", "Mu2consolCognitiveStatusResultObservationTemplateId",
+             "templateId.root", "2.16.840.1.113883.10.20.22.4.74"
+           });      
+        addAnnotation
+          (cognitiveStatusResultOrganizerEClass, 
+           source, 
+           new String[] {
+             "constraints.validation.error", "Mu2consolCognitiveStatusResultOrganizerTemplateId",
+             "templateId.root", "2.16.840.1.113883.10.20.22.4.75"
+           });        
+        addAnnotation
+          (functionalStatusResultObservationEClass, 
+           source, 
+           new String[] {
+             "constraints.validation.error", "Mu2consolFunctionalStatusResultObservationTemplateId",
+             "templateId.root", "2.16.840.1.113883.10.20.22.4.67"
+           });      
+        addAnnotation
+          (functionalStatusResultOrganizerEClass, 
+           source, 
+           new String[] {
+             "constraints.validation.error", "Mu2consolFunctionalStatusResultOrganizerTemplateId",
+             "templateId.root", "2.16.840.1.113883.10.20.22.4.66"
+           });   
     }
 
 	/**
@@ -1292,7 +1453,7 @@ public class Mu2consolPackageImpl extends EPackageImpl implements
              "constraints.validation.error", "RecordTargetPatientRole RecordTargetPatientRolePatientLanguageCommunicationLanguageCodeP RecordTargetPatientRolePatientLanguageCommunicationLanguageCode RecordTargetPatientRolePatientEthnicGroupCode RecordTargetPatientRolePatientEthnicGroupCodeP RecordTargetPatientRolePatientRaceCode RecordTargetPatientRolePatientRaceCodeP RecordTargetPatientRolePatientLanguageCommunication RecordTargetPatientRolePatient",
              "constraints.validation.query", "RecordTargetPatientRolePatientLanguageCommunicationLanguageCodeP RecordTargetPatientRolePatientLanguageCommunicationLanguageCode RecordTargetPatientRolePatientEthnicGroupCode RecordTargetPatientRolePatientEthnicGroupCodeP RecordTargetPatientRolePatientRaceCode RecordTargetPatientRolePatientRaceCodeP RecordTargetPatientRolePatientLanguageCommunication RecordTargetPatientRolePatient",
              "constraints.validation.dependOn.RecordTargetPatientRolePatientLanguageCommunicationLanguageCode", "RecordTargetPatientRolePatientLanguageCommunicationLanguageCodeP"
-           });                                                                                                                                                                                                                                                                                                                                                   
+           });                                                                                                                                                                                                                                                                                                                                                                         
     }
 
 	/**
@@ -1312,7 +1473,7 @@ public class Mu2consolPackageImpl extends EPackageImpl implements
              "constraints.validation.error", "PatientRolePatient PatientRolePatientLanguageCommunicationLanguageCodeP PatientRolePatientLanguageCommunicationLanguageCode PatientRolePatientEthnicGroupCode PatientRolePatientEthnicGroupCodeP PatientRolePatientRaceCode PatientRolePatientRaceCodeP PatientRolePatientLanguageCommunication",
              "constraints.validation.query", "PatientRolePatientLanguageCommunicationLanguageCodeP PatientRolePatientLanguageCommunicationLanguageCode PatientRolePatientEthnicGroupCode PatientRolePatientEthnicGroupCodeP PatientRolePatientRaceCode PatientRolePatientRaceCodeP PatientRolePatientLanguageCommunication",
              "constraints.validation.dependOn.PatientRolePatientLanguageCommunicationLanguageCode", "PatientRolePatientLanguageCommunicationLanguageCodeP"
-           });                                                                                                                                                                                                                                                                                                                                                  
+           });                                                                                                                                                                                                                                                                                                                                                                        
     }
 
 	/**
@@ -1336,7 +1497,7 @@ public class Mu2consolPackageImpl extends EPackageImpl implements
              "raceCode.codeSystemName", "Race and Ethnicity - CDC",
              "constraints.validation.query", "PatientLanguageCommunicationLanguageCodeP PatientLanguageCommunicationLanguageCode",
              "constraints.validation.dependOn.PatientLanguageCommunicationLanguageCode", "PatientLanguageCommunicationLanguageCodeP"
-           });                                                                                                                                                                                                                                                                                                                                                 
+           });                                                                                                                                                                                                                                                                                                                                                                       
     }
 
 	/**
@@ -1352,7 +1513,7 @@ public class Mu2consolPackageImpl extends EPackageImpl implements
            new String[] {
              "constraints.validation.error", "LanguageCommunicationLanguageCode LanguageCommunicationLanguageCodeP",
              "constraints.validation.dependOn.LanguageCommunicationLanguageCode", "LanguageCommunicationLanguageCodeP"
-           });                                                                                                                                                                                                                                                                                                                                                
+           });                                                                                                                                                                                                                                                                                                                                                                      
     }
 
 	/**
@@ -1412,7 +1573,32 @@ public class Mu2consolPackageImpl extends EPackageImpl implements
           (medicationsAdministeredSectionEClass, 
            source, 
            new String[] {
-           });                                                                                                               
+           });                                                                                                                     
+        addAnnotation
+          (functionalStatusSectionEClass, 
+           source, 
+           new String[] {
+           });              
+        addAnnotation
+          (cognitiveStatusResultObservationEClass, 
+           source, 
+           new String[] {
+           });      
+        addAnnotation
+          (cognitiveStatusResultOrganizerEClass, 
+           source, 
+           new String[] {
+           });        
+        addAnnotation
+          (functionalStatusResultObservationEClass, 
+           source, 
+           new String[] {
+           });      
+        addAnnotation
+          (functionalStatusResultOrganizerEClass, 
+           source, 
+           new String[] {
+           });  
     }
 
 } // Mu2consolPackageImpl

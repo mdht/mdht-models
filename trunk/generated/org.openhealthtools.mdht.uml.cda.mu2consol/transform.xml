@@ -34,7 +34,7 @@
 <replace file="@{filePath}" token=".model/model/.controlled/consol-vitalsigns.uml" value="/model/consol_Ecore.uml"/>
 <replace file="@{filePath}" token=".model/model/.controlled/consol-exams.uml" value="/model/consol_Ecore.uml"/>
 <replace file="@{filePath}" token=".model/model/.controlled/consol-discharge.uml" value="/model/consol_Ecore.uml"/>
-<replace file="@{filePath}" token=".model/model/.controlled/consol-dicom.uml" value="/model/consol_Ecore.uml"/>
+<replace file="@{filePath}" token=".model/model/.controlled/consol-dicom.uml" value="/model/consol_Ecore.uml"/><replace file="@{filePath}" token=".model/model/.controlled/consol-cognitive.uml" value="/model/consol_Ecore.uml"/>
 </sequential>
 </macrodef>
 <import file="${cdaPluginPath}/transform-common.xml"/>

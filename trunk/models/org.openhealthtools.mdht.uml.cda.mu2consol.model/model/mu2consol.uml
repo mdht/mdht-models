@@ -18,9 +18,7 @@
         <specification xmi:type="uml:OpaqueExpression" xmi:id="_Xd6_EFtLEeKCbK7xq-QAsQ">
           <language>Analysis</language>
           <language>OCL</language>
-          <body>SHALL have at least one documentationOf/serviceEvent/performer&#xD;
-OR have at least one componentOf/encompassingEncounter/responsibleParty&#xD;
-OR have at least one componentOf/encompassingEncounter/encounterParticipant</body>
+          <body>SHALL have at least one documentationOf/serviceEvent/performer&#xD;&#xA;OR have at least one componentOf/encompassingEncounter/responsibleParty&#xD;&#xA;OR have at least one componentOf/encompassingEncounter/encounterParticipant</body>
           <body>(self.documentationOf.oclAsType(cda::DocumentationOf).serviceEvent.performer->notEmpty()) or (self.componentOf.oclAsType(cda::Component1).encompassingEncounter.encounterParticipant->notEmpty()) or (self.componentOf.oclAsType(cda::Component1).encompassingEncounter.responsibleParty->notEmpty())</body>
         </specification>
       </ownedRule>
@@ -125,8 +123,7 @@ OR have at least one componentOf/encompassingEncounter/encounterParticipant</bod
         <specification xmi:type="uml:OpaqueExpression" xmi:id="_jopNcOvXEeGkopdZmUN1Xw">
           <language>OCL</language>
           <language>Analysis</language>
-          <body>(self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(consol::PlanOfCareSection)) or &#xD;
-self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(consol::AssessmentAndPlanSection)))</body>
+          <body>(self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(consol::PlanOfCareSection)) or &#xD;&#xA;self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(consol::AssessmentAndPlanSection)))</body>
           <body>SHALL have one of Plan of Care (2.16.840.1.113883.10.20.22.2.10) or Assessment and Plan (2.16.840.1.113883.10.20.22.2.9)</body>
         </specification>
       </ownedRule>
@@ -134,10 +131,8 @@ self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIs
         <specification xmi:type="uml:OpaqueExpression" xmi:id="_72CUkV9REeKMx7P90fbQ6Q">
           <language>Analysis</language>
           <language>OCL</language>
-          <body>SHALL have one Vital Signs Section with entries optional (TemplateID = 2.16.840.1.113883.10.20.22.2.4)&#xD;
-or one Vital Signs Section with entries required (TemplateID = 2.16.840.1.113883.10.20.22.2.4.1)</body>
-          <body>(self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(consol::VitalSignsSection)) or &#xD;
-self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(consol::VitalSignsSectionEntriesOptional)))</body>
+          <body>SHALL have one Vital Signs Section with entries optional (TemplateID = 2.16.840.1.113883.10.20.22.2.4)&#xD;&#xA;or one Vital Signs Section with entries required (TemplateID = 2.16.840.1.113883.10.20.22.2.4.1)</body>
+          <body>(self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(consol::VitalSignsSection)) or &#xD;&#xA;self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(consol::VitalSignsSectionEntriesOptional)))</body>
         </specification>
       </ownedRule>
       <generalization xmi:id="_VG3qYNkxEeGsqcJR8eqiMw" general="_v-6qsNkMEeGsqcJR8eqiMw"/>
@@ -263,23 +258,15 @@ self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIs
         <specification xmi:type="uml:OpaqueExpression" xmi:id="_miJt4O1bEeGT-eFu7Ghgjw">
           <language>OCL</language>
           <language>Analysis</language>
-          <body>((self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ChiefComplaintSection)) or &#xD;
- self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ReasonForVisitSection))) xor &#xD;
- self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ChiefComplaintAndReasonForVisitSection))) or self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(consol::EncountersSection)) or &#xD;
-self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(consol::EncountersSectionEntriesOptional))</body>
-          <body>SHALL have one Reason for Visit Section (TemplateID = 2.16.840.1.113883.10.20.22.2.12)&#xD;
-or Chief Complaint Section (TemplateID = 1.3.6.1.4.1.19376.1.5.3.1.1.13.2.1)&#xD;
-or Chief Complaint and Reason for Visit Section (2.16.840.1.113883.10.20.22.2.13)&#xD;
-or Encounters section entries optional (TemplateID: 2.16.840.1.113883.10.20.22.2.22) &#xD;
-or Encounters section entries required (TemplateID: 2.16.840.1.113883.10.20.22.2.22.1)</body>
+          <body>((self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ChiefComplaintSection)) or &#xD;&#xA; self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ReasonForVisitSection))) xor &#xD;&#xA; self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ChiefComplaintAndReasonForVisitSection))) or self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(consol::EncountersSection)) or &#xD;&#xA;self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(consol::EncountersSectionEntriesOptional))</body>
+          <body>SHALL have one Reason for Visit Section (TemplateID = 2.16.840.1.113883.10.20.22.2.12)&#xD;&#xA;or Chief Complaint Section (TemplateID = 1.3.6.1.4.1.19376.1.5.3.1.1.13.2.1)&#xD;&#xA;or Chief Complaint and Reason for Visit Section (2.16.840.1.113883.10.20.22.2.13)&#xD;&#xA;or Encounters section entries optional (TemplateID: 2.16.840.1.113883.10.20.22.2.22) &#xD;&#xA;or Encounters section entries required (TemplateID: 2.16.840.1.113883.10.20.22.2.22.1)</body>
         </specification>
       </ownedRule>
       <ownedRule xmi:id="_CFE3YO1cEeGT-eFu7Ghgjw" name="carePlanning" constrainedElement="_7D0CQOzmEeGT-eFu7Ghgjw">
         <specification xmi:type="uml:OpaqueExpression" xmi:id="_DrZ8AO1cEeGT-eFu7Ghgjw">
           <language>OCL</language>
           <language>Analysis</language>
-          <body>(self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(consol::PlanOfCareSection)) or &#xD;
-self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(consol::AssessmentAndPlanSection)))</body>
+          <body>(self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(consol::PlanOfCareSection)) or &#xD;&#xA;self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(consol::AssessmentAndPlanSection)))</body>
           <body>SHALL have one of Plan of Care (2.16.840.1.113883.10.20.22.2.10) or Assessment and Plan (2.16.840.1.113883.10.20.22.2.9)</body>
         </specification>
       </ownedRule>
@@ -287,43 +274,23 @@ self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIs
         <specification xmi:type="uml:OpaqueExpression" xmi:id="_fRfCgvhlEeGPm7sA61ixGw">
           <language>OCL</language>
           <language>Analysis</language>
-          <body>(self.documentationOf.oclAsType(cda::DocumentationOf).serviceEvent->notEmpty() and self.documentationOf.serviceEvent->forAll((effectiveTime.oclIsUndefined() or effectiveTime.isNullFlavorUndefined()) implies not effectiveTime.oclIsUndefined())) or (self.componentOf.oclAsType(cda::Component1).encompassingEncounter->notEmpty() and self.componentOf.encompassingEncounter->forAll((effectiveTime.oclIsUndefined() or effectiveTime.isNullFlavorUndefined()) implies not effectiveTime.oclIsUndefined())) or (self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(consol::EncountersSection)) or &#xD;
-self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(consol::EncountersSectionEntriesOptional)))</body>
-          <body>Shall have one documentationOf/serviceEvent/effectiveTime&#xD;
-or componentOf/encompassingEncounter/effectiveTime&#xD;
-or Encounters section entries optional (TemplateID: 2.16.840.1.113883.10.20.22.2.22) &#xD;
-or Encounters section entries required (TemplateID: 2.16.840.1.113883.10.20.22.2.22.1)</body>
+          <body>(self.documentationOf.oclAsType(cda::DocumentationOf).serviceEvent->notEmpty() and self.documentationOf.serviceEvent->forAll((effectiveTime.oclIsUndefined() or effectiveTime.isNullFlavorUndefined()) implies not effectiveTime.oclIsUndefined())) or (self.componentOf.oclAsType(cda::Component1).encompassingEncounter->notEmpty() and self.componentOf.encompassingEncounter->forAll((effectiveTime.oclIsUndefined() or effectiveTime.isNullFlavorUndefined()) implies not effectiveTime.oclIsUndefined())) or (self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(consol::EncountersSection)) or &#xD;&#xA;self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(consol::EncountersSectionEntriesOptional)))</body>
+          <body>Shall have one documentationOf/serviceEvent/effectiveTime&#xD;&#xA;or componentOf/encompassingEncounter/effectiveTime&#xD;&#xA;or Encounters section entries optional (TemplateID: 2.16.840.1.113883.10.20.22.2.22) &#xD;&#xA;or Encounters section entries required (TemplateID: 2.16.840.1.113883.10.20.22.2.22.1)</body>
         </specification>
       </ownedRule>
       <ownedRule xmi:id="_8kY74PhlEeGPm7sA61ixGw" name="visitLocation" constrainedElement="_7D0CQOzmEeGT-eFu7Ghgjw">
         <specification xmi:type="uml:OpaqueExpression" xmi:id="_-WWowPhlEeGPm7sA61ixGw">
           <language>OCL</language>
           <language>Analysis</language>
-          <body>(self.componentOf.oclAsType(cda::Component1).encompassingEncounter->notEmpty() and self.componentOf.encompassingEncounter->forAll(location->notEmpty() and location.oclIsTypeOf(cda::Location))) or (self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(consol::EncountersSection)) or &#xD;
-self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(consol::EncountersSectionEntriesOptional)))</body>
-          <body>Shall have componentOf/encompassingEncounter/location&#xD;
-or Encounters section entries optional (TemplateID: 2.16.840.1.113883.10.20.22.2.22) &#xD;
-or Encounters section entries required (TemplateID: 2.16.840.1.113883.10.20.22.2.22.1)</body>
+          <body>(self.componentOf.oclAsType(cda::Component1).encompassingEncounter->notEmpty() and self.componentOf.encompassingEncounter->forAll(location->notEmpty() and location.oclIsTypeOf(cda::Location))) or (self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(consol::EncountersSection)) or &#xD;&#xA;self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(consol::EncountersSectionEntriesOptional)))</body>
+          <body>Shall have componentOf/encompassingEncounter/location&#xD;&#xA;or Encounters section entries optional (TemplateID: 2.16.840.1.113883.10.20.22.2.22) &#xD;&#xA;or Encounters section entries required (TemplateID: 2.16.840.1.113883.10.20.22.2.22.1)</body>
         </specification>
       </ownedRule>
       <ownedRule xmi:id="_EXB0kFw5EeKCbK7xq-QAsQ" name="providerNameAndContactInfo" constrainedElement="_7D0CQOzmEeGT-eFu7Ghgjw">
         <specification xmi:type="uml:OpaqueExpression" xmi:id="_H6WxYFw5EeKCbK7xq-QAsQ">
           <language>Analysis</language>
           <language>OCL</language>
-          <body>SHALL have at least one documentationOf/serviceEvent/performer/assignedEntity including&#xD;
-a documentationOf/serviceEvent/performer/assignedEntity/assignedPerson/name&#xD;
-and documentationOf/serviceEvent/performer/assignedEntity/telecom&#xD;
-and documentationOf/serviceEvent/performer/assignedEntity/addr&#xD;
-&#xD;
-OR at least one componentOf/encompassingEncounter/responsibleParty including&#xD;
-a componentOf/encompassingEncounter/responsibleParty/assignedEntity/assignedPerson/name&#xD;
-and componentOf/encompassingEncounter/responsibleParty/assignedEntity/telecom&#xD;
-and componentOf/encompassingEncounter/responsibleParty/assignedEntity/addr&#xD;
-&#xD;
-OR at least one componentOf/encompassingEncounter/encounterParticipant including&#xD;
-a componentOf/encompassingEncounter/encounterParticipant/assignedEntity/assignedPerson/name&#xD;
-and componentOf/encompassingEncounter/encounterParticipant/assignedEntity/telecom&#xD;
-and componentOf/encompassingEncounter/encounterParticipant/assignedEntity/addr</body>
+          <body>SHALL have at least one documentationOf/serviceEvent/performer/assignedEntity including&#xD;&#xA;a documentationOf/serviceEvent/performer/assignedEntity/assignedPerson/name&#xD;&#xA;and documentationOf/serviceEvent/performer/assignedEntity/telecom&#xD;&#xA;and documentationOf/serviceEvent/performer/assignedEntity/addr&#xD;&#xA;&#xD;&#xA;OR at least one componentOf/encompassingEncounter/responsibleParty including&#xD;&#xA;a componentOf/encompassingEncounter/responsibleParty/assignedEntity/assignedPerson/name&#xD;&#xA;and componentOf/encompassingEncounter/responsibleParty/assignedEntity/telecom&#xD;&#xA;and componentOf/encompassingEncounter/responsibleParty/assignedEntity/addr&#xD;&#xA;&#xD;&#xA;OR at least one componentOf/encompassingEncounter/encounterParticipant including&#xD;&#xA;a componentOf/encompassingEncounter/encounterParticipant/assignedEntity/assignedPerson/name&#xD;&#xA;and componentOf/encompassingEncounter/encounterParticipant/assignedEntity/telecom&#xD;&#xA;and componentOf/encompassingEncounter/encounterParticipant/assignedEntity/addr</body>
           <body>(self.documentationOf->excluding(null).serviceEvent->excluding(null).performer->notEmpty() and self.documentationOf->excluding(null).serviceEvent->excluding(null).performer->exists(assignedEntity->excluding(null).assignedPerson->excluding(null).name->notEmpty() and assignedEntity->excluding(null).addr->notEmpty() and assignedEntity->excluding(null).telecom->notEmpty())) or (self.componentOf->excluding(null).encompassingEncounter->excluding(null).encounterParticipant->notEmpty() and self.componentOf->excluding(null).encompassingEncounter->excluding(null).encounterParticipant->exists(assignedEntity->excluding(null).assignedPerson->excluding(null).name->notEmpty() and assignedEntity->excluding(null).addr->notEmpty() and assignedEntity->excluding(null).telecom->notEmpty())) or (self.componentOf->excluding(null).encompassingEncounter->excluding(null).responsibleParty->notEmpty() and self.componentOf->excluding(null).encompassingEncounter->excluding(null).responsibleParty->exists(assignedEntity->excluding(null).assignedPerson->excluding(null).name->notEmpty() and assignedEntity->excluding(null).addr->notEmpty() and assignedEntity->excluding(null).telecom->notEmpty()))</body>
         </specification>
       </ownedRule>
@@ -331,10 +298,8 @@ and componentOf/encompassingEncounter/encounterParticipant/assignedEntity/addr</
         <specification xmi:type="uml:OpaqueExpression" xmi:id="_PZCqIF6iEeKM3cA2Ii750w">
           <language>Analysis</language>
           <language>OCL</language>
-          <body>SHALL have one Vital Signs Section with entries optional (TemplateID = 2.16.840.1.113883.10.20.22.2.4)&#xD;
-or one Vital Signs Section with entries required (TemplateID = 2.16.840.1.113883.10.20.22.2.4.1)</body>
-          <body>(self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(consol::VitalSignsSection)) or &#xD;
-self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(consol::VitalSignsSectionEntriesOptional)))</body>
+          <body>SHALL have one Vital Signs Section with entries optional (TemplateID = 2.16.840.1.113883.10.20.22.2.4)&#xD;&#xA;or one Vital Signs Section with entries required (TemplateID = 2.16.840.1.113883.10.20.22.2.4.1)</body>
+          <body>(self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(consol::VitalSignsSection)) or &#xD;&#xA;self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(consol::VitalSignsSectionEntriesOptional)))</body>
         </specification>
       </ownedRule>
       <generalization xmi:id="_7D0pUOzmEeGT-eFu7Ghgjw" general="_v-6qsNkMEeGsqcJR8eqiMw"/>
@@ -444,20 +409,7 @@ MU2 170.314(b)(7) Export Summary  - For Ambulatory Care</body>
         <specification xmi:type="uml:OpaqueExpression" xmi:id="_iujA0V9TEeKMx7P90fbQ6Q">
           <language>Analysis</language>
           <language>OCL</language>
-          <body>SHALL have at least one documentationOf/serviceEvent/performer/assignedEntity including&#xD;
-a documentationOf/serviceEvent/performer/assignedEntity/assignedPerson/name&#xD;
-and documentationOf/serviceEvent/performer/assignedEntity/telecom&#xD;
-and documentationOf/serviceEvent/performer/assignedEntity/addr&#xD;
-&#xD;
-OR at least one componentOf/encompassingEncounter/responsibleParty including&#xD;
-a componentOf/encompassingEncounter/responsibleParty/assignedEntity/assignedPerson/name&#xD;
-and componentOf/encompassingEncounter/responsibleParty/assignedEntity/telecom&#xD;
-and componentOf/encompassingEncounter/responsibleParty/assignedEntity/addr&#xD;
-&#xD;
-OR at least one componentOf/encompassingEncounter/encounterParticipant including&#xD;
-a componentOf/encompassingEncounter/encounterParticipant/assignedEntity/assignedPerson/name&#xD;
-and componentOf/encompassingEncounter/encounterParticipant/assignedEntity/telecom&#xD;
-and componentOf/encompassingEncounter/encounterParticipant/assignedEntity/addr</body>
+          <body>SHALL have at least one documentationOf/serviceEvent/performer/assignedEntity including&#xD;&#xA;a documentationOf/serviceEvent/performer/assignedEntity/assignedPerson/name&#xD;&#xA;and documentationOf/serviceEvent/performer/assignedEntity/telecom&#xD;&#xA;and documentationOf/serviceEvent/performer/assignedEntity/addr&#xD;&#xA;&#xD;&#xA;OR at least one componentOf/encompassingEncounter/responsibleParty including&#xD;&#xA;a componentOf/encompassingEncounter/responsibleParty/assignedEntity/assignedPerson/name&#xD;&#xA;and componentOf/encompassingEncounter/responsibleParty/assignedEntity/telecom&#xD;&#xA;and componentOf/encompassingEncounter/responsibleParty/assignedEntity/addr&#xD;&#xA;&#xD;&#xA;OR at least one componentOf/encompassingEncounter/encounterParticipant including&#xD;&#xA;a componentOf/encompassingEncounter/encounterParticipant/assignedEntity/assignedPerson/name&#xD;&#xA;and componentOf/encompassingEncounter/encounterParticipant/assignedEntity/telecom&#xD;&#xA;and componentOf/encompassingEncounter/encounterParticipant/assignedEntity/addr</body>
           <body>(self.documentationOf->excluding(null).serviceEvent->excluding(null).performer->notEmpty() and self.documentationOf->excluding(null).serviceEvent->excluding(null).performer->exists(assignedEntity->excluding(null).assignedPerson->excluding(null).name->notEmpty() and assignedEntity->excluding(null).addr->notEmpty() and assignedEntity->excluding(null).telecom->notEmpty())) or (self.componentOf->excluding(null).encompassingEncounter->excluding(null).encounterParticipant->notEmpty() and self.componentOf->excluding(null).encompassingEncounter->excluding(null).encounterParticipant->exists(assignedEntity->excluding(null).assignedPerson->excluding(null).name->notEmpty() and assignedEntity->excluding(null).addr->notEmpty() and assignedEntity->excluding(null).telecom->notEmpty())) or (self.componentOf->excluding(null).encompassingEncounter->excluding(null).responsibleParty->notEmpty() and self.componentOf->excluding(null).encompassingEncounter->excluding(null).responsibleParty->exists(assignedEntity->excluding(null).assignedPerson->excluding(null).name->notEmpty() and assignedEntity->excluding(null).addr->notEmpty() and assignedEntity->excluding(null).telecom->notEmpty()))</body>
         </specification>
       </ownedRule>
@@ -465,11 +417,8 @@ and componentOf/encompassingEncounter/encounterParticipant/assignedEntity/addr</
         <specification xmi:type="uml:OpaqueExpression" xmi:id="_yoU88V9TEeKMx7P90fbQ6Q">
           <language>OCL</language>
           <language>Analysis</language>
-          <body>self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(consol::PlanOfCareSection)) or &#xD;
-self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(consol::AssessmentAndPlanSection)) or self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(consol::ReasonForReferralSection))</body>
-          <body>SHALL have one Reason for Referral Section (TemplateID = 1.3.6.1.4.1.19376.1.5.3.1.3.1)&#xD;
-or Plan or Care Section (TemplateID = 2.16.840.1.113883.10.20.22.2.10)&#xD;
-or Assessment and Plan Section (Template ID = 2.16.840.1.113883.10.20.22.2.9)</body>
+          <body>self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(consol::PlanOfCareSection)) or &#xD;&#xA;self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(consol::AssessmentAndPlanSection)) or self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(consol::ReasonForReferralSection))</body>
+          <body>SHALL have one Reason for Referral Section (TemplateID = 1.3.6.1.4.1.19376.1.5.3.1.3.1)&#xD;&#xA;or Plan or Care Section (TemplateID = 2.16.840.1.113883.10.20.22.2.10)&#xD;&#xA;or Assessment and Plan Section (Template ID = 2.16.840.1.113883.10.20.22.2.9)</body>
         </specification>
       </ownedRule>
       <generalization xmi:id="_WN-gwPabEeGi99B_x568TQ" general="_VG3DUNkxEeGsqcJR8eqiMw"/>
@@ -494,10 +443,8 @@ MU2 170.314(b)(7) Export Summary  - For Inpatient Care</body>
         <specification xmi:type="uml:OpaqueExpression" xmi:id="_1IJ_8V9UEeKMx7P90fbQ6Q">
           <language>OCL</language>
           <language>Analysis</language>
-          <body>(self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(consol::MedicationsSection)) or &#xD;
-self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(consol::HospitalDischargeMedicationsSection)))</body>
-          <body>SHALL have one Medications Section with entries required (TemplateID = 2.16.840.1.113883.10.20.22.2.1.1)&#xD;
-or Hospital Discharge Medications (TemplateID = 2.16.840.1.113883.10.20.22.2.11.1)</body>
+          <body>(self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(consol::MedicationsSection)) or &#xD;&#xA;self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(consol::HospitalDischargeMedicationsSection)))</body>
+          <body>SHALL have one Medications Section with entries required (TemplateID = 2.16.840.1.113883.10.20.22.2.1.1)&#xD;&#xA;or Hospital Discharge Medications (TemplateID = 2.16.840.1.113883.10.20.22.2.11.1)</body>
         </specification>
       </ownedRule>
       <generalization xmi:id="_vutOUPdyEeG_npP0e3OOEw" general="_VG3DUNkxEeGsqcJR8eqiMw"/>
@@ -513,18 +460,15 @@ or Hospital Discharge Medications (TemplateID = 2.16.840.1.113883.10.20.22.2.11.
           <language>Analysis</language>
           <language>OCL</language>
           <body>SHALL have one of Assessment and Plan section or Plan of Care section</body>
-          <body>(self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(consol::PlanOfCareSection)) or &#xD;
-self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(consol::AssessmentAndPlanSection)))</body>
+          <body>(self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(consol::PlanOfCareSection)) or &#xD;&#xA;self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(consol::AssessmentAndPlanSection)))</body>
         </specification>
       </ownedRule>
       <ownedRule xmi:id="_3fz-YF9VEeKMx7P90fbQ6Q" name="vitalSigns" constrainedElement="_7D0CQOzmEeGT-eFu7Ghgjw">
         <specification xmi:type="uml:OpaqueExpression" xmi:id="_3fz-YV9VEeKMx7P90fbQ6Q">
           <language>Analysis</language>
           <language>OCL</language>
-          <body>SHALL have one Vital Signs Section with entries optional (TemplateID = 2.16.840.1.113883.10.20.22.2.4)&#xD;
-or one Vital Signs Section with entries required (TemplateID = 2.16.840.1.113883.10.20.22.2.4.1)</body>
-          <body>(self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(consol::VitalSignsSection)) or &#xD;
-self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(consol::VitalSignsSectionEntriesOptional)))</body>
+          <body>SHALL have one Vital Signs Section with entries optional (TemplateID = 2.16.840.1.113883.10.20.22.2.4)&#xD;&#xA;or one Vital Signs Section with entries required (TemplateID = 2.16.840.1.113883.10.20.22.2.4.1)</body>
+          <body>(self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(consol::VitalSignsSection)) or &#xD;&#xA;self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(consol::VitalSignsSectionEntriesOptional)))</body>
         </specification>
       </ownedRule>
       <generalization xmi:id="_kFewQPhVEeGPm7sA61ixGw" general="_v-6qsNkMEeGsqcJR8eqiMw"/>
@@ -585,61 +529,40 @@ self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIs
         <specification xmi:type="uml:OpaqueExpression" xmi:id="_UEC-cV9XEeKMx7P90fbQ6Q">
           <language>OCL</language>
           <language>Analysis</language>
-          <body>(self.documentationOf.oclAsType(cda::DocumentationOf).serviceEvent->notEmpty() and self.documentationOf.serviceEvent->forAll((effectiveTime.low.oclIsUndefined() or effectiveTime.low.isNullFlavorUndefined()) implies not effectiveTime.low.oclIsUndefined())) or (self.componentOf.oclAsType(cda::Component1).encompassingEncounter->notEmpty() and self.componentOf.encompassingEncounter->forAll((effectiveTime.low.oclIsUndefined() or effectiveTime.low.isNullFlavorUndefined()) implies not effectiveTime.low.oclIsUndefined())) or (self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(consol::EncountersSection)) or &#xD;
-self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(consol::EncountersSectionEntriesOptional)))</body>
-          <body>Shall have one documentationOf/serviceEvent/effectiveTime/low&#xD;
-or componentOf/encompassingEncounter/effectiveTime/low&#xD;
-or Encounters section entries optional (TemplateID: 2.16.840.1.113883.10.20.22.2.22) &#xD;
-or Encounters section entries required (TemplateID: 2.16.840.1.113883.10.20.22.2.22.1)</body>
+          <body>(self.documentationOf.oclAsType(cda::DocumentationOf).serviceEvent->notEmpty() and self.documentationOf.serviceEvent->forAll((effectiveTime.low.oclIsUndefined() or effectiveTime.low.isNullFlavorUndefined()) implies not effectiveTime.low.oclIsUndefined())) or (self.componentOf.oclAsType(cda::Component1).encompassingEncounter->notEmpty() and self.componentOf.encompassingEncounter->forAll((effectiveTime.low.oclIsUndefined() or effectiveTime.low.isNullFlavorUndefined()) implies not effectiveTime.low.oclIsUndefined())) or (self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(consol::EncountersSection)) or &#xD;&#xA;self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(consol::EncountersSectionEntriesOptional)))</body>
+          <body>Shall have one documentationOf/serviceEvent/effectiveTime/low&#xD;&#xA;or componentOf/encompassingEncounter/effectiveTime/low&#xD;&#xA;or Encounters section entries optional (TemplateID: 2.16.840.1.113883.10.20.22.2.22) &#xD;&#xA;or Encounters section entries required (TemplateID: 2.16.840.1.113883.10.20.22.2.22.1)</body>
         </specification>
       </ownedRule>
       <ownedRule xmi:id="_Xx8MgF9XEeKMx7P90fbQ6Q" name="dischargeDate" constrainedElement="_7D0CQOzmEeGT-eFu7Ghgjw">
         <specification xmi:type="uml:OpaqueExpression" xmi:id="_Xx8MgV9XEeKMx7P90fbQ6Q">
           <language>OCL</language>
           <language>Analysis</language>
-          <body>(self.documentationOf.oclAsType(cda::DocumentationOf).serviceEvent->notEmpty() and self.documentationOf.serviceEvent->forAll((effectiveTime.high.oclIsUndefined() or effectiveTime.high.isNullFlavorUndefined()) implies not effectiveTime.high.oclIsUndefined())) or (self.componentOf.oclAsType(cda::Component1).encompassingEncounter->notEmpty() and self.componentOf.encompassingEncounter->forAll((effectiveTime.high.oclIsUndefined() or effectiveTime.high.isNullFlavorUndefined()) implies not effectiveTime.oclIsUndefined() and not effectiveTime.high.oclIsUndefined())) or (self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(consol::EncountersSection)) or &#xD;
-self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(consol::EncountersSectionEntriesOptional)))</body>
-          <body>Shall have one documentationOf/serviceEvent/effectiveTime/high&#xD;
-or componentOf/encompassingEncounter/effectiveTime/high&#xD;
-or Encounters section entries optional (TemplateID: 2.16.840.1.113883.10.20.22.2.22) &#xD;
-or Encounters section entries required (TemplateID: 2.16.840.1.113883.10.20.22.2.22.1)</body>
+          <body>(self.documentationOf.oclAsType(cda::DocumentationOf).serviceEvent->notEmpty() and self.documentationOf.serviceEvent->forAll((effectiveTime.high.oclIsUndefined() or effectiveTime.high.isNullFlavorUndefined()) implies not effectiveTime.high.oclIsUndefined())) or (self.componentOf.oclAsType(cda::Component1).encompassingEncounter->notEmpty() and self.componentOf.encompassingEncounter->forAll((effectiveTime.high.oclIsUndefined() or effectiveTime.high.isNullFlavorUndefined()) implies not effectiveTime.oclIsUndefined() and not effectiveTime.high.oclIsUndefined())) or (self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(consol::EncountersSection)) or &#xD;&#xA;self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(consol::EncountersSectionEntriesOptional)))</body>
+          <body>Shall have one documentationOf/serviceEvent/effectiveTime/high&#xD;&#xA;or componentOf/encompassingEncounter/effectiveTime/high&#xD;&#xA;or Encounters section entries optional (TemplateID: 2.16.840.1.113883.10.20.22.2.22) &#xD;&#xA;or Encounters section entries required (TemplateID: 2.16.840.1.113883.10.20.22.2.22.1)</body>
         </specification>
       </ownedRule>
       <ownedRule xmi:id="_zctDYF9XEeKMx7P90fbQ6Q" name="admissionDischargeLocation" constrainedElement="_7D0CQOzmEeGT-eFu7Ghgjw">
         <specification xmi:type="uml:OpaqueExpression" xmi:id="_zctDYV9XEeKMx7P90fbQ6Q">
           <language>OCL</language>
           <language>Analysis</language>
-          <body>(self.componentOf.oclAsType(cda::Component1).encompassingEncounter->notEmpty() and self.componentOf.encompassingEncounter->forAll(location->notEmpty() and location.oclIsTypeOf(cda::Location))) or (self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(consol::EncountersSection)) or &#xD;
-self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(consol::EncountersSectionEntriesOptional)))</body>
-          <body>Shall have componentOf/encompassingEncounter/location&#xD;
-or Encounters section entries optional (TemplateID: 2.16.840.1.113883.10.20.22.2.22) &#xD;
-or Encounters section entries required (TemplateID: 2.16.840.1.113883.10.20.22.2.22.1)</body>
+          <body>(self.componentOf.oclAsType(cda::Component1).encompassingEncounter->notEmpty() and self.componentOf.encompassingEncounter->forAll(location->notEmpty() and location.oclIsTypeOf(cda::Location))) or (self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(consol::EncountersSection)) or &#xD;&#xA;self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(consol::EncountersSectionEntriesOptional)))</body>
+          <body>Shall have componentOf/encompassingEncounter/location&#xD;&#xA;or Encounters section entries optional (TemplateID: 2.16.840.1.113883.10.20.22.2.22) &#xD;&#xA;or Encounters section entries required (TemplateID: 2.16.840.1.113883.10.20.22.2.22.1)</body>
         </specification>
       </ownedRule>
       <ownedRule xmi:id="_Lr39IF9YEeKMx7P90fbQ6Q" name="medications" constrainedElement="_7D0CQOzmEeGT-eFu7Ghgjw">
         <specification xmi:type="uml:OpaqueExpression" xmi:id="_Lr39IV9YEeKMx7P90fbQ6Q">
           <language>OCL</language>
           <language>Analysis</language>
-          <body>(self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(consol::MedicationsSection)) or &#xD;
-self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(consol::HospitalDischargeMedicationsSection)))</body>
-          <body>SHALL have one Medications Section with entries required (TemplateID = 2.16.840.1.113883.10.20.22.2.1.1)&#xD;
-or Hospital Discharge Medications (TemplateID = 2.16.840.1.113883.10.20.22.2.11.1)</body>
+          <body>(self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(consol::MedicationsSection)) or &#xD;&#xA;self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(consol::HospitalDischargeMedicationsSection)))</body>
+          <body>SHALL have one Medications Section with entries required (TemplateID = 2.16.840.1.113883.10.20.22.2.1.1)&#xD;&#xA;or Hospital Discharge Medications (TemplateID = 2.16.840.1.113883.10.20.22.2.11.1)</body>
         </specification>
       </ownedRule>
       <ownedRule xmi:id="_Qy46QF9YEeKMx7P90fbQ6Q" name="reasonforHospitalization" constrainedElement="_7D0CQOzmEeGT-eFu7Ghgjw">
         <specification xmi:type="uml:OpaqueExpression" xmi:id="_Qy46QV9YEeKMx7P90fbQ6Q">
           <language>OCL</language>
           <language>Analysis</language>
-          <body>((self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ChiefComplaintSection)) or &#xD;
- self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ReasonForVisitSection))) xor &#xD;
- self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ChiefComplaintAndReasonForVisitSection))) or self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(consol::EncountersSection)) or &#xD;
-self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(consol::EncountersSectionEntriesOptional)) or self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(consol::HospitalAdmissionDiagnosisSection)) or &#xD;
-self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(consol::PreoperativeDiagnosisSection))</body>
-          <body>SHALL have one Reason for Visit Section (TemplateID = 2.16.840.1.113883.10.20.22.2.12)&#xD;
-or Chief Complaint Section (TemplateID = 1.3.6.1.4.1.19376.1.5.3.1.1.13.2.1)&#xD;
-or Chief Complaint and Reason for Visit Section (2.16.840.1.113883.10.20.22.2.13)&#xD;
-or Encounters section entries optional (TemplateID: 2.16.840.1.113883.10.20.22.2.22) &#xD;
-or Encounters section entries required (TemplateID: 2.16.840.1.113883.10.20.22.2.22.1)</body>
+          <body>((self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ChiefComplaintSection)) or &#xD;&#xA; self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ReasonForVisitSection))) xor &#xD;&#xA; self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ChiefComplaintAndReasonForVisitSection))) or self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(consol::EncountersSection)) or &#xD;&#xA;self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(consol::EncountersSectionEntriesOptional)) or self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(consol::HospitalAdmissionDiagnosisSection)) or &#xD;&#xA;self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(consol::PreoperativeDiagnosisSection))</body>
+          <body>SHALL have one Reason for Visit Section (TemplateID = 2.16.840.1.113883.10.20.22.2.12)&#xD;&#xA;or Chief Complaint Section (TemplateID = 1.3.6.1.4.1.19376.1.5.3.1.1.13.2.1)&#xD;&#xA;or Chief Complaint and Reason for Visit Section (2.16.840.1.113883.10.20.22.2.13)&#xD;&#xA;or Encounters section entries optional (TemplateID: 2.16.840.1.113883.10.20.22.2.22) &#xD;&#xA;or Encounters section entries required (TemplateID: 2.16.840.1.113883.10.20.22.2.22.1)</body>
         </specification>
       </ownedRule>
       <generalization xmi:id="_tK1HAPhcEeGPm7sA61ixGw" general="_i2IoQPhVEeGPm7sA61ixGw"/>
@@ -657,20 +580,7 @@ or Encounters section entries required (TemplateID: 2.16.840.1.113883.10.20.22.2
         <specification xmi:type="uml:OpaqueExpression" xmi:id="__N4dUV9VEeKMx7P90fbQ6Q">
           <language>Analysis</language>
           <language>OCL</language>
-          <body>SHALL have at least one documentationOf/serviceEvent/performer/assignedEntity including&#xD;
-a documentationOf/serviceEvent/performer/assignedEntity/assignedPerson/name&#xD;
-and documentationOf/serviceEvent/performer/assignedEntity/telecom&#xD;
-and documentationOf/serviceEvent/performer/assignedEntity/addr&#xD;
-&#xD;
-OR at least one componentOf/encompassingEncounter/responsibleParty including&#xD;
-a componentOf/encompassingEncounter/responsibleParty/assignedEntity/assignedPerson/name&#xD;
-and componentOf/encompassingEncounter/responsibleParty/assignedEntity/telecom&#xD;
-and componentOf/encompassingEncounter/responsibleParty/assignedEntity/addr&#xD;
-&#xD;
-OR at least one componentOf/encompassingEncounter/encounterParticipant including&#xD;
-a componentOf/encompassingEncounter/encounterParticipant/assignedEntity/assignedPerson/name&#xD;
-and componentOf/encompassingEncounter/encounterParticipant/assignedEntity/telecom&#xD;
-and componentOf/encompassingEncounter/encounterParticipant/assignedEntity/addr</body>
+          <body>SHALL have at least one documentationOf/serviceEvent/performer/assignedEntity including&#xD;&#xA;a documentationOf/serviceEvent/performer/assignedEntity/assignedPerson/name&#xD;&#xA;and documentationOf/serviceEvent/performer/assignedEntity/telecom&#xD;&#xA;and documentationOf/serviceEvent/performer/assignedEntity/addr&#xD;&#xA;&#xD;&#xA;OR at least one componentOf/encompassingEncounter/responsibleParty including&#xD;&#xA;a componentOf/encompassingEncounter/responsibleParty/assignedEntity/assignedPerson/name&#xD;&#xA;and componentOf/encompassingEncounter/responsibleParty/assignedEntity/telecom&#xD;&#xA;and componentOf/encompassingEncounter/responsibleParty/assignedEntity/addr&#xD;&#xA;&#xD;&#xA;OR at least one componentOf/encompassingEncounter/encounterParticipant including&#xD;&#xA;a componentOf/encompassingEncounter/encounterParticipant/assignedEntity/assignedPerson/name&#xD;&#xA;and componentOf/encompassingEncounter/encounterParticipant/assignedEntity/telecom&#xD;&#xA;and componentOf/encompassingEncounter/encounterParticipant/assignedEntity/addr</body>
           <body>(self.documentationOf->excluding(null).serviceEvent->excluding(null).performer->notEmpty() and self.documentationOf->excluding(null).serviceEvent->excluding(null).performer->exists(assignedEntity->excluding(null).assignedPerson->excluding(null).name->notEmpty() and assignedEntity->excluding(null).addr->notEmpty() and assignedEntity->excluding(null).telecom->notEmpty())) or (self.componentOf->excluding(null).encompassingEncounter->excluding(null).encounterParticipant->notEmpty() and self.componentOf->excluding(null).encompassingEncounter->excluding(null).encounterParticipant->exists(assignedEntity->excluding(null).assignedPerson->excluding(null).name->notEmpty() and assignedEntity->excluding(null).addr->notEmpty() and assignedEntity->excluding(null).telecom->notEmpty())) or (self.componentOf->excluding(null).encompassingEncounter->excluding(null).responsibleParty->notEmpty() and self.componentOf->excluding(null).encompassingEncounter->excluding(null).responsibleParty->exists(assignedEntity->excluding(null).assignedPerson->excluding(null).name->notEmpty() and assignedEntity->excluding(null).addr->notEmpty() and assignedEntity->excluding(null).telecom->notEmpty()))</body>
         </specification>
       </ownedRule>
@@ -801,6 +711,77 @@ and componentOf/encompassingEncounter/encounterParticipant/assignedEntity/addr</
     <packagedElement xmi:type="uml:Association" xmi:id="_IAydYF9WEeKMx7P90fbQ6Q" memberEnd="_IAx2UF9WEeKMx7P90fbQ6Q _IAydYV9WEeKMx7P90fbQ6Q">
       <ownedEnd xmi:id="_IAydYV9WEeKMx7P90fbQ6Q" type="_2FvMgPhcEeGPm7sA61ixGw" association="_IAydYF9WEeKMx7P90fbQ6Q"/>
     </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_7-uawLP5EeKvseWyjms7Qw" name="FunctionalStatusSection">
+      <generalization xmi:id="_7_LGsLP5EeKvseWyjms7Qw">
+        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-other.uml#_2KKOBhSVEeGGzu7fmW9pXw"/>
+      </generalization>
+      <ownedAttribute xmi:id="_wgu4ALP6EeKvseWyjms7Qw" name="cognitiveStatusResultObservation" type="_codtELP6EeKvseWyjms7Qw" association="_wgu4A7P6EeKvseWyjms7Qw">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wgu4ArP6EeKvseWyjms7Qw" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wgu4AbP6EeKvseWyjms7Qw"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_zYnEELP6EeKvseWyjms7Qw" name="cognitiveStatusResultOrganizer" type="_SEQHcLP6EeKvseWyjms7Qw" association="_zYnEE7P6EeKvseWyjms7Qw">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_zYnEErP6EeKvseWyjms7Qw" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zYnEEbP6EeKvseWyjms7Qw"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_QltBoLQBEeKvseWyjms7Qw" name="functionalStatusResultObservation" type="_-d8LALQAEeKvseWyjms7Qw" association="_QltBo7QBEeKvseWyjms7Qw">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_QltBorQBEeKvseWyjms7Qw" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_QltBobQBEeKvseWyjms7Qw"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_S-I4oLQBEeKvseWyjms7Qw" name="functionalStatusResultOrganizer" type="_gSi1ULP-EeKvseWyjms7Qw" association="_S-I4o7QBEeKvseWyjms7Qw">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_S-I4orQBEeKvseWyjms7Qw" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_S-I4obQBEeKvseWyjms7Qw"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_SEQHcLP6EeKvseWyjms7Qw" name="CognitiveStatusResultOrganizer">
+      <generalization xmi:id="_SEQHcbP6EeKvseWyjms7Qw" general="_--CGcAJuEeKIhvHOhwsFvA"/>
+      <generalization xmi:id="_mJGRoLQBEeKvseWyjms7Qw">
+        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-cognitive.uml#_jfoCUOZbEeGINOJ_SD9_dA"/>
+      </generalization>
+      <ownedAttribute xmi:id="_2A_bkLP6EeKvseWyjms7Qw" name="cognitiveStatusResultObservation" type="_codtELP6EeKvseWyjms7Qw" association="_2A_bk7P6EeKvseWyjms7Qw">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2A_bkrP6EeKvseWyjms7Qw" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2A_bkbP6EeKvseWyjms7Qw"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_codtELP6EeKvseWyjms7Qw" name="CognitiveStatusResultObservation">
+      <generalization xmi:id="_codtEbP6EeKvseWyjms7Qw" general="_tAOdEAJuEeKIhvHOhwsFvA"/>
+      <generalization xmi:id="_dhdtcLQBEeKvseWyjms7Qw">
+        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-cognitive.uml#_gkBM0OZbEeGINOJ_SD9_dA"/>
+      </generalization>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_wgu4A7P6EeKvseWyjms7Qw" memberEnd="_wgu4ALP6EeKvseWyjms7Qw _wgu4BLP6EeKvseWyjms7Qw">
+      <ownedEnd xmi:id="_wgu4BLP6EeKvseWyjms7Qw" type="_7-uawLP5EeKvseWyjms7Qw" association="_wgu4A7P6EeKvseWyjms7Qw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_zYnEE7P6EeKvseWyjms7Qw" memberEnd="_zYnEELP6EeKvseWyjms7Qw _zYnEFLP6EeKvseWyjms7Qw">
+      <ownedEnd xmi:id="_zYnEFLP6EeKvseWyjms7Qw" type="_7-uawLP5EeKvseWyjms7Qw" association="_zYnEE7P6EeKvseWyjms7Qw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_2A_bk7P6EeKvseWyjms7Qw" memberEnd="_2A_bkLP6EeKvseWyjms7Qw _2BJMkLP6EeKvseWyjms7Qw">
+      <ownedEnd xmi:id="_2BJMkLP6EeKvseWyjms7Qw" type="_SEQHcLP6EeKvseWyjms7Qw" association="_2A_bk7P6EeKvseWyjms7Qw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_gSi1ULP-EeKvseWyjms7Qw" name="FunctionalStatusResultOrganizer">
+      <generalization xmi:id="_5ruZMLQAEeKvseWyjms7Qw" general="_--CGcAJuEeKIhvHOhwsFvA"/>
+      <generalization xmi:id="_gSr_QLP-EeKvseWyjms7Qw">
+        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-other.uml#_zBlUUOZbEeGINOJ_SD9_dA"/>
+      </generalization>
+      <ownedAttribute xmi:id="_M1pQYLQBEeKvseWyjms7Qw" name="functionalStatusResultObservation" type="_-d8LALQAEeKvseWyjms7Qw" association="_M1pQY7QBEeKvseWyjms7Qw">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_M1pQYrQBEeKvseWyjms7Qw" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_M1pQYbQBEeKvseWyjms7Qw"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_-d8LALQAEeKvseWyjms7Qw" name="FunctionalStatusResultObservation">
+      <generalization xmi:id="_BItvMLQBEeKvseWyjms7Qw" general="_tAOdEAJuEeKIhvHOhwsFvA"/>
+      <generalization xmi:id="_-d8LAbQAEeKvseWyjms7Qw">
+        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-other.uml#_viRU0OZbEeGINOJ_SD9_dA"/>
+      </generalization>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_M1pQY7QBEeKvseWyjms7Qw" memberEnd="_M1pQYLQBEeKvseWyjms7Qw _M1pQZLQBEeKvseWyjms7Qw">
+      <ownedEnd xmi:id="_M1pQZLQBEeKvseWyjms7Qw" type="_gSi1ULP-EeKvseWyjms7Qw" association="_M1pQY7QBEeKvseWyjms7Qw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_QltBo7QBEeKvseWyjms7Qw" memberEnd="_QltBoLQBEeKvseWyjms7Qw _QltBpLQBEeKvseWyjms7Qw">
+      <ownedEnd xmi:id="_QltBpLQBEeKvseWyjms7Qw" type="_7-uawLP5EeKvseWyjms7Qw" association="_QltBo7QBEeKvseWyjms7Qw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_S-I4o7QBEeKvseWyjms7Qw" memberEnd="_S-I4oLQBEeKvseWyjms7Qw _S-I4pLQBEeKvseWyjms7Qw">
+      <ownedEnd xmi:id="_S-I4pLQBEeKvseWyjms7Qw" type="_7-uawLP5EeKvseWyjms7Qw" association="_S-I4o7QBEeKvseWyjms7Qw"/>
+    </packagedElement>
     <profileApplication xmi:id="_mZtsIdd5EeGtNLA6W-IQeQ">
       <eAnnotations xmi:id="_mZtsItd5EeGtNLA6W-IQeQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
         <references xmi:type="ecore:EPackage" href="pathmap://UML_PROFILES/Standard.profile.uml#_yzU58YinEdqtvbnfB2L_5w"/>
@@ -928,4 +909,9 @@ and componentOf/encompassingEncounter/encounterParticipant/assignedEntity/addr</
   <CDA:ConstraintValidation xmi:id="_zctqcF9XEeKMx7P90fbQ6Q" base_Constraint="_zctDYF9XEeKMx7P90fbQ6Q"/>
   <CDA:ConstraintValidation xmi:id="_Lr39Il9YEeKMx7P90fbQ6Q" base_Constraint="_Lr39IF9YEeKMx7P90fbQ6Q"/>
   <CDA:ConstraintValidation xmi:id="_Qy5hUF9YEeKMx7P90fbQ6Q" base_Constraint="_Qy46QF9YEeKMx7P90fbQ6Q"/>
+  <CDA:CDATemplate xmi:id="_IVPEcLP6EeKvseWyjms7Qw" base_Class="_7-uawLP5EeKvseWyjms7Qw" templateId="2.16.840.1.113883.10.20.22.2.14"/>
+  <CDA:CDATemplate xmi:id="_W1bXcLP6EeKvseWyjms7Qw" base_Class="_SEQHcLP6EeKvseWyjms7Qw" templateId="2.16.840.1.113883.10.20.22.4.75"/>
+  <CDA:CDATemplate xmi:id="_g9B5kLP6EeKvseWyjms7Qw" base_Class="_codtELP6EeKvseWyjms7Qw" templateId="2.16.840.1.113883.10.20.22.4.74"/>
+  <CDA:CDATemplate xmi:id="_GxKlcLQBEeKvseWyjms7Qw" base_Class="_gSi1ULP-EeKvseWyjms7Qw" templateId="2.16.840.1.113883.10.20.22.4.66"/>
+  <CDA:CDATemplate xmi:id="_Cs6a8LQDEeKvseWyjms7Qw" base_Class="_-d8LALQAEeKvseWyjms7Qw" templateId="2.16.840.1.113883.10.20.22.4.67"/>
 </xmi:XMI>

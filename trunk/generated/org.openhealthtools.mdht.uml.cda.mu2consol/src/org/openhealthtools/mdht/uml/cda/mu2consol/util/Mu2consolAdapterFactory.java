@@ -24,6 +24,7 @@ import org.openhealthtools.mdht.uml.cda.consol.AssessmentSection;
 import org.openhealthtools.mdht.uml.cda.consol.ProceduresSectionEntriesOptional;
 import org.openhealthtools.mdht.uml.cda.consol.ResultsSectionEntriesOptional;
 import org.openhealthtools.mdht.uml.cda.consol.TobaccoUse;
+import org.openhealthtools.mdht.uml.cda.mu2consol.*;
 import org.openhealthtools.mdht.uml.cda.mu2consol.ClinicalOfficeVisitSummary;
 import org.openhealthtools.mdht.uml.cda.mu2consol.GeneralHeaderConstraints;
 import org.openhealthtools.mdht.uml.cda.mu2consol.MedicationsAdministeredSection;
@@ -166,6 +167,26 @@ public class Mu2consolAdapterFactory extends AdapterFactoryImpl {
 				return createVDTAmbulatorySummaryAdapter();
 			}
 			@Override
+			public Adapter caseFunctionalStatusSection(FunctionalStatusSection object) {
+				return createFunctionalStatusSectionAdapter();
+			}
+			@Override
+			public Adapter caseCognitiveStatusResultObservation(CognitiveStatusResultObservation object) {
+				return createCognitiveStatusResultObservationAdapter();
+			}
+			@Override
+			public Adapter caseCognitiveStatusResultOrganizer(CognitiveStatusResultOrganizer object) {
+				return createCognitiveStatusResultOrganizerAdapter();
+			}
+			@Override
+			public Adapter caseFunctionalStatusResultObservation(FunctionalStatusResultObservation object) {
+				return createFunctionalStatusResultObservationAdapter();
+			}
+			@Override
+			public Adapter caseFunctionalStatusResultOrganizer(FunctionalStatusResultOrganizer object) {
+				return createFunctionalStatusResultOrganizerAdapter();
+			}
+			@Override
 			public Adapter caseInfrastructureRoot(InfrastructureRoot object) {
 				return createInfrastructureRootAdapter();
 			}
@@ -244,6 +265,26 @@ public class Mu2consolAdapterFactory extends AdapterFactoryImpl {
 			@Override
 			public Adapter caseConsol_MedicationsAdministeredSection(org.openhealthtools.mdht.uml.cda.consol.MedicationsAdministeredSection object) {
 				return createConsol_MedicationsAdministeredSectionAdapter();
+			}
+			@Override
+			public Adapter caseConsol_FunctionalStatusSection(org.openhealthtools.mdht.uml.cda.consol.FunctionalStatusSection object) {
+				return createConsol_FunctionalStatusSectionAdapter();
+			}
+			@Override
+			public Adapter caseConsol_CognitiveStatusResultObservation(org.openhealthtools.mdht.uml.cda.consol.CognitiveStatusResultObservation object) {
+				return createConsol_CognitiveStatusResultObservationAdapter();
+			}
+			@Override
+			public Adapter caseConsol_CognitiveStatusResultOrganizer(org.openhealthtools.mdht.uml.cda.consol.CognitiveStatusResultOrganizer object) {
+				return createConsol_CognitiveStatusResultOrganizerAdapter();
+			}
+			@Override
+			public Adapter caseConsol_FunctionalStatusResultObservation(org.openhealthtools.mdht.uml.cda.consol.FunctionalStatusResultObservation object) {
+				return createConsol_FunctionalStatusResultObservationAdapter();
+			}
+			@Override
+			public Adapter caseConsol_FunctionalStatusResultOrganizer(org.openhealthtools.mdht.uml.cda.consol.FunctionalStatusResultOrganizer object) {
+				return createConsol_FunctionalStatusResultOrganizerAdapter();
 			}
 			@Override
 			public Adapter defaultCase(EObject object) {
@@ -387,6 +428,76 @@ public class Mu2consolAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createVDTAmbulatorySummaryAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.mu2consol.FunctionalStatusSection <em>Functional Status Section</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.openhealthtools.mdht.uml.cda.mu2consol.FunctionalStatusSection
+	 * @generated
+	 */
+	public Adapter createFunctionalStatusSectionAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.mu2consol.CognitiveStatusResultObservation <em>Cognitive Status Result Observation</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.openhealthtools.mdht.uml.cda.mu2consol.CognitiveStatusResultObservation
+	 * @generated
+	 */
+	public Adapter createCognitiveStatusResultObservationAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.mu2consol.CognitiveStatusResultOrganizer <em>Cognitive Status Result Organizer</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.openhealthtools.mdht.uml.cda.mu2consol.CognitiveStatusResultOrganizer
+	 * @generated
+	 */
+	public Adapter createCognitiveStatusResultOrganizerAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.mu2consol.FunctionalStatusResultObservation <em>Functional Status Result Observation</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.openhealthtools.mdht.uml.cda.mu2consol.FunctionalStatusResultObservation
+	 * @generated
+	 */
+	public Adapter createFunctionalStatusResultObservationAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.mu2consol.FunctionalStatusResultOrganizer <em>Functional Status Result Organizer</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.openhealthtools.mdht.uml.cda.mu2consol.FunctionalStatusResultOrganizer
+	 * @generated
+	 */
+	public Adapter createFunctionalStatusResultOrganizerAdapter() {
 		return null;
 	}
 
@@ -599,6 +710,76 @@ public class Mu2consolAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createConsol_MedicationsAdministeredSectionAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.consol.FunctionalStatusSection <em>Functional Status Section</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.openhealthtools.mdht.uml.cda.consol.FunctionalStatusSection
+	 * @generated
+	 */
+	public Adapter createConsol_FunctionalStatusSectionAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.consol.CognitiveStatusResultObservation <em>Cognitive Status Result Observation</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.openhealthtools.mdht.uml.cda.consol.CognitiveStatusResultObservation
+	 * @generated
+	 */
+	public Adapter createConsol_CognitiveStatusResultObservationAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.consol.CognitiveStatusResultOrganizer <em>Cognitive Status Result Organizer</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.openhealthtools.mdht.uml.cda.consol.CognitiveStatusResultOrganizer
+	 * @generated
+	 */
+	public Adapter createConsol_CognitiveStatusResultOrganizerAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.consol.FunctionalStatusResultObservation <em>Functional Status Result Observation</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.openhealthtools.mdht.uml.cda.consol.FunctionalStatusResultObservation
+	 * @generated
+	 */
+	public Adapter createConsol_FunctionalStatusResultObservationAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.consol.FunctionalStatusResultOrganizer <em>Functional Status Result Organizer</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.openhealthtools.mdht.uml.cda.consol.FunctionalStatusResultOrganizer
+	 * @generated
+	 */
+	public Adapter createConsol_FunctionalStatusResultOrganizerAdapter() {
 		return null;
 	}
 
