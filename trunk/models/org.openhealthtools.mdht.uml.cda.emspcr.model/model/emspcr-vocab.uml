@@ -1061,7 +1061,17 @@
       <ownedLiteral xmi:id="_dkOyoMFTEeGyGv5RKvEgDA" name="LA9392-7"/>
       <ownedLiteral xmi:id="_dkVgUMFTEeGyGv5RKvEgDA" name="LA9393-5"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Enumeration" xmi:id="_jzbcUHSSEeGa4IXs2ghZEw" name="ServiceLevel"/>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_jzbcUHSSEeGa4IXs2ghZEw" name="ServiceLevel">
+      <ownedLiteral xmi:id="_ufxj0FrMEeKLQKuAFIMo4Q" name="LA18102-6"/>
+      <ownedLiteral xmi:id="_1dHwcFrMEeKLQKuAFIMo4Q" name="LA18103-4"/>
+      <ownedLiteral xmi:id="_5NttMFrMEeKLQKuAFIMo4Q" name="LA18104-2"/>
+      <ownedLiteral xmi:id="_8nxZQFrMEeKLQKuAFIMo4Q" name="LA18105-9"/>
+      <ownedLiteral xmi:id="__QDqIFrMEeKLQKuAFIMo4Q" name="LA18106-7"/>
+      <ownedLiteral xmi:id="_B3pXcFrNEeKLQKuAFIMo4Q" name="LA18107-5"/>
+      <ownedLiteral xmi:id="_Fwq3cFrNEeKLQKuAFIMo4Q" name="LA18108-3"/>
+      <ownedLiteral xmi:id="_IzkAsFrNEeKLQKuAFIMo4Q" name="LA18109-1"/>
+      <ownedLiteral xmi:id="_L_i0gFrNEeKLQKuAFIMo4Q" name="LA18110-9"/>
+    </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_t3m3AHSSEeGa4IXs2ghZEw" name="ProviderAdverseEventType">
       <ownedLiteral xmi:id="_dlWM8MFTEeGyGv5RKvEgDA" name="LA137-2"/>
       <ownedLiteral xmi:id="_dlc6oMFTEeGyGv5RKvEgDA" name="LA17059-9"/>
@@ -1414,6 +1424,28 @@
       <ownedLiteral xmi:id="_L3yHAFhZEeK-i8RB1gvLUA" name="425926003"/>
       <ownedLiteral xmi:id="_R3KPgFhZEeK-i8RB1gvLUA" name="428285009"/>
     </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_9jWkMLMSEeKNbt70lHd2Eg" name="Reason Procedure not Performed Superset">
+      <ownedLiteral xmi:id="_9jWkMbMSEeKNbt70lHd2Eg" name="LA15185-4"/>
+      <ownedLiteral xmi:id="_9jWkMrMSEeKNbt70lHd2Eg" name="LA18925-0"/>
+      <ownedLiteral xmi:id="_9jWkM7MSEeKNbt70lHd2Eg" name="LA4216-3"/>
+      <ownedLiteral xmi:id="_9jWkNLMSEeKNbt70lHd2Eg" name="LA4389-8"/>
+      <ownedLiteral xmi:id="_JcA-0LMUEeKNbt70lHd2Eg" name="LA17063-1"/>
+      <ownedLiteral xmi:id="_LAykQLMUEeKNbt70lHd2Eg" name="LA17064-9"/>
+      <ownedLiteral xmi:id="_MAbcULMUEeKNbt70lHd2Eg" name="LA17065-6"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_7DuooLMpEeKNbt70lHd2Eg" name="RaceCategory">
+      <ownedLiteral xmi:id="_BAdFwLMqEeKNbt70lHd2Eg" name="1002-5"/>
+      <ownedLiteral xmi:id="_Gii1ULMqEeKNbt70lHd2Eg" name="2028-9"/>
+      <ownedLiteral xmi:id="_Mt8AkLMqEeKNbt70lHd2Eg" name="2054-5"/>
+      <ownedLiteral xmi:id="_RIbO4LMqEeKNbt70lHd2Eg" name="2076-8"/>
+      <ownedLiteral xmi:id="_UhpNcLMqEeKNbt70lHd2Eg" name="2131-1"/>
+      <ownedLiteral xmi:id="_YCL8ALMqEeKNbt70lHd2Eg" name="2106-3"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_gx7u0LM0EeKq7sXu8zXehQ" name="Ethnicity Group">
+      <ownedLiteral xmi:id="_jKNNwLM0EeKq7sXu8zXehQ" name="2135-2"/>
+      <ownedLiteral xmi:id="_nLdcsLM0EeKq7sXu8zXehQ" name="2186-5"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_vgkGcLM0EeKq7sXu8zXehQ" name="Race &amp; Ethnicity - CDC"/>
     <profileApplication xmi:id="_xpzscWeQEeGtXKebdWh3hg">
       <eAnnotations xmi:id="_xp0TgGeQEeGtXKebdWh3hg" source="http://www.eclipse.org/uml2/2.0.0/UML">
         <references xmi:type="ecore:EPackage" href="http://www.openhealthtools.org/mdht/schemas/term/1#/"/>
@@ -1428,7 +1460,7 @@
   <term:ValueSetVersion xmi:id="_h3qpUHSJEeGa4IXs2ghZEw" identifier="2.16.840.1.113883.17.3.5.10" fullName="Etiology of a cardiac arrest" definition="Etiology of a cardiac arrest" codeSystem="_YgJ0wcFTEeGyGv5RKvEgDA" base_Enumeration="_h3qCQHSJEeGa4IXs2ghZEw"/>
   <term:ValueSetVersion xmi:id="_qE04AHSJEeGa4IXs2ghZEw" identifier="2.16.840.1.113883.17.3.5.11" definition="Kind of person who witnessed a cardiac arrest" codeSystem="_YgJ0wcFTEeGyGv5RKvEgDA" base_Enumeration="_qE0Q8HSJEeGa4IXs2ghZEw"/>
   <term:ValueSetVersion xmi:id="_ymbssHSJEeGa4IXs2ghZEw" identifier="2.16.840.1.113883.17.3.5.12" definition="Role of person providing care to a patient before the arrival of EMS personnel" codeSystem="_YgJ0wcFTEeGyGv5RKvEgDA" base_Enumeration="_ymbFoHSJEeGa4IXs2ghZEw"/>
-  <term:ValueSetVersion xmi:id="_34c_8HSJEeGa4IXs2ghZEw" identifier="2.16.840.1.113883.17.3.5.13" codeSystem="_YgJ0wcFTEeGyGv5RKvEgDA" base_Enumeration="_34cY4HSJEeGa4IXs2ghZEw"/>
+  <term:ValueSetVersion xmi:id="_34c_8HSJEeGa4IXs2ghZEw" identifier="2.16.840.1.113883.17.3.5.13" definition="Use of automated elecronic defibrillator, with or without defibrillation" codeSystem="_YgJ0wcFTEeGyGv5RKvEgDA" base_Enumeration="_34cY4HSJEeGa4IXs2ghZEw"/>
   <term:ValueSetVersion xmi:id="_7_AloXSJEeGa4IXs2ghZEw" identifier="2.16.840.1.113883.17.3.5.14" definition="Kind of rhythm found in a cardiac arrest patient on initial field examination" codeSystem="_YgJ0wcFTEeGyGv5RKvEgDA" base_Enumeration="_7_AloHSJEeGa4IXs2ghZEw"/>
   <term:ValueSetVersion xmi:id="__xTLgHSJEeGa4IXs2ghZEw" identifier="2.16.840.1.113883.17.3.5.15" definition="Timeframe for return of circulation to a patient" codeSystem="_YgJ0wcFTEeGyGv5RKvEgDA" base_Enumeration="__xSkcHSJEeGa4IXs2ghZEw"/>
   <term:ValueSetVersion xmi:id="_GRPqcHSKEeGa4IXs2ghZEw" identifier="2.16.840.1.113883.17.3.5.16" definition="Kind of rhythm found in a cardiac arrest patient" codeSystem="_YgJ0wcFTEeGyGv5RKvEgDA" base_Enumeration="_GRPDYHSKEeGa4IXs2ghZEw"/>
@@ -1459,7 +1491,7 @@
   <term:ValueSetVersion xmi:id="_eQZq4HSNEeGa4IXs2ghZEw" identifier="2.16.840.1.113883.17.3.5.42" definition="Estimation of patient's pregnant status and maturity" codeSystem="_YgJ0wcFTEeGyGv5RKvEgDA" base_Enumeration="_eQZD0HSNEeGa4IXs2ghZEw"/>
   <term:ValueSetVersion xmi:id="_hKCxgHSNEeGa4IXs2ghZEw" identifier="2.16.840.1.113883.17.3.5.43" definition="Physical route for introducing medications into a patient" codeSystem="_33gToFKGEeK-YbJf-zpN1g" base_Enumeration="_hKCKcHSNEeGa4IXs2ghZEw"/>
   <term:ValueSetVersion xmi:id="_ko6FEHSNEeGa4IXs2ghZEw" identifier="2.16.840.1.113883.17.3.5.45" definition="Kind of abnormal effect associated with the administration of a medication" codeSystem="_YgJ0wcFTEeGyGv5RKvEgDA" base_Enumeration="_ko5eAHSNEeGa4IXs2ghZEw"/>
-  <term:ValueSetVersion xmi:id="_Z-TuIXSOEeGa4IXs2ghZEw" identifier="2.16.840.1.113883.17.3.5.46" definition="Level of expertise of an EMS care provider" codeSystem="_YgJ0wcFTEeGyGv5RKvEgDA" base_Enumeration="_Z-TuIHSOEeGa4IXs2ghZEw"/>
+  <term:ValueSetVersion xmi:id="_Z-TuIXSOEeGa4IXs2ghZEw" identifier="2.16.840.1.113883.17.3.5.46" definition="Class of person providing care to an EMS patient, including the patient" codeSystem="_YgJ0wcFTEeGyGv5RKvEgDA" base_Enumeration="_Z-TuIHSOEeGa4IXs2ghZEw"/>
   <term:ValueSetVersion xmi:id="_e71YEHSOEeGa4IXs2ghZEw" identifier="2.16.840.1.113883.17.3.5.47" definition="Channel or mode by which a medication administration is authorized by a licensed clinician" codeSystem="_YgJ0wcFTEeGyGv5RKvEgDA" base_Enumeration="_e70xAHSOEeGa4IXs2ghZEw"/>
   <term:ValueSetVersion xmi:id="_jOzpIHSOEeGa4IXs2ghZEw" identifier="2.16.840.1.113883.17.3.5.48" definition="Manner of performing emergency medical dispatch" codeSystem="_YgJ0wcFTEeGyGv5RKvEgDA" base_Enumeration="_jOzCEHSOEeGa4IXs2ghZEw"/>
   <term:ValueSetVersion xmi:id="_nxAB8HSOEeGa4IXs2ghZEw" identifier="2.16.840.1.113883.17.3.5.49" definition="Kind of medical problem or incident reported" codeSystem="_YgJ0wcFTEeGyGv5RKvEgDA" base_Enumeration="_nw_a4HSOEeGa4IXs2ghZEw"/>
@@ -1478,10 +1510,10 @@
   <term:ValueSetVersion xmi:id="_25ZH8HSPEeGa4IXs2ghZEw" identifier="2.16.840.1.113883.17.3.5.60" definition="Procedure for confirming airway device placement" codeSystem="_YgJ0wcFTEeGyGv5RKvEgDA" base_Enumeration="_25Yg4HSPEeGa4IXs2ghZEw"/>
   <term:ValueSetVersion xmi:id="_62wVYHSPEeGa4IXs2ghZEw" identifier="2.16.840.1.113883.17.3.5.61" definition="Kind of airway device" codeSystem="_YgJ0wcFTEeGyGv5RKvEgDA" base_Enumeration="_62vuUHSPEeGa4IXs2ghZEw"/>
   <term:ValueSetVersion xmi:id="_9A6f0HSPEeGa4IXs2ghZEw" identifier="2.16.840.1.113883.17.3.5.62" definition="Rationale for aborting attempt to resuscitate a patient" codeSystem="_YgJ0wcFTEeGyGv5RKvEgDA" base_Enumeration="_9A54wHSPEeGa4IXs2ghZEw"/>
-  <term:ValueSetVersion xmi:id="_D5sVgXSQEeGa4IXs2ghZEw" identifier="2.16.840.1.113883.17.3.5.63" definition="Type of advance directive document" codeSystem="_YgJ0wcFTEeGyGv5RKvEgDA" base_Enumeration="_D5sVgHSQEeGa4IXs2ghZEw"/>
+  <term:ValueSetVersion xmi:id="_D5sVgXSQEeGa4IXs2ghZEw" identifier="2.16.840.1.113883.17.3.5.63" definition="Type of advance directive documentation" codeSystem="_YgJ0wcFTEeGyGv5RKvEgDA" base_Enumeration="_D5sVgHSQEeGa4IXs2ghZEw"/>
   <term:ValueSetVersion xmi:id="_KO1SoHSQEeGa4IXs2ghZEw" identifier="2.16.840.1.113883.17.3.5.64" definition="Outcome of an emergency medical services encounter" codeSystem="_YgJ0wcFTEeGyGv5RKvEgDA" base_Enumeration="_KO0rkHSQEeGa4IXs2ghZEw"/>
   <term:ValueSetVersion xmi:id="_NwXfsHSQEeGa4IXs2ghZEw" identifier="2.16.840.1.113883.17.3.5.65" definition="Physical mode of patient transport" codeSystem="_YgJ0wcFTEeGyGv5RKvEgDA" base_Enumeration="_NwW4oHSQEeGa4IXs2ghZEw"/>
-  <term:ValueSetVersion xmi:id="_TCyJoHSSEeGa4IXs2ghZEw" identifier="2.16.840.1.113883.17.3.5.59" codeSystem="_YgJ0wcFTEeGyGv5RKvEgDA" base_Enumeration="_TCxikHSSEeGa4IXs2ghZEw"/>
+  <term:ValueSetVersion xmi:id="_TCyJoHSSEeGa4IXs2ghZEw" identifier="2.16.840.1.113883.17.3.5.59" definition="Change in acuity of patient condition" codeSystem="_YgJ0wcFTEeGyGv5RKvEgDA" base_Enumeration="_TCxikHSSEeGa4IXs2ghZEw"/>
   <term:ValueSetVersion xmi:id="_XTcGgHSSEeGa4IXs2ghZEw" identifier="2.16.840.1.113883.17.3.5.68" definition="Kind of rationale for selecting a patient destination" codeSystem="_YgJ0wcFTEeGyGv5RKvEgDA" base_Enumeration="_XTbfcHSSEeGa4IXs2ghZEw"/>
   <term:ValueSetVersion xmi:id="_a5UBAHSSEeGa4IXs2ghZEw" identifier="2.16.840.1.113883.17.3.5.69" definition="Kind of facility" codeSystem="_YgJ0wcFTEeGyGv5RKvEgDA" base_Enumeration="_a5TZ8HSSEeGa4IXs2ghZEw"/>
   <term:ValueSetVersion xmi:id="_ehaJEHSSEeGa4IXs2ghZEw" identifier="2.16.840.1.113883.17.3.5.7" definition="Kind of safety equipment" codeSystem="_YgJ0wcFTEeGyGv5RKvEgDA" base_Enumeration="_ehZiAHSSEeGa4IXs2ghZEw"/>
@@ -1495,16 +1527,16 @@
   <term:ValueSetVersion xmi:id="_R3wrgHSTEeGa4IXs2ghZEw" identifier="2.16.840.1.113883.17.3.5.79" definition="Category of service requested of an EMS agency" codeSystem="_YgJ0wcFTEeGyGv5RKvEgDA" base_Enumeration="_R3wEcHSTEeGa4IXs2ghZEw"/>
   <term:ValueSetVersion xmi:id="_UO9zcXSTEeGa4IXs2ghZEw" identifier="2.16.840.1.113883.17.3.5.8" definition="Configuration of airbag deployment" codeSystem="_YgJ0wcFTEeGyGv5RKvEgDA" base_Enumeration="_UO9zcHSTEeGa4IXs2ghZEw"/>
   <term:ValueSetVersion xmi:id="_bubOoHSTEeGa4IXs2ghZEw" identifier="2.16.840.1.113883.17.3.5.80" definition="Role filled by an EMS professional" codeSystem="_YgJ0wcFTEeGyGv5RKvEgDA" base_Enumeration="_buankHSTEeGa4IXs2ghZEw"/>
-  <term:ValueSetVersion xmi:id="_ejKAEHSTEeGa4IXs2ghZEw" identifier="2.16.840.1.113883.17.3.5.81" codeSystem="_YgJ0wcFTEeGyGv5RKvEgDA" base_Enumeration="_ejJZAHSTEeGa4IXs2ghZEw"/>
+  <term:ValueSetVersion xmi:id="_ejKAEHSTEeGa4IXs2ghZEw" identifier="2.16.840.1.113883.17.3.5.81" definition="Class of person providing care to an EMS patient, excluding the patient" codeSystem="_YgJ0wcFTEeGyGv5RKvEgDA" base_Enumeration="_ejJZAHSTEeGa4IXs2ghZEw"/>
   <term:ValueSetVersion xmi:id="_nU1REXSTEeGa4IXs2ghZEw" identifier="2.16.840.1.113883.17.3.5.82" definition="Role unit plays in response to an incident" codeSystem="_YgJ0wcFTEeGyGv5RKvEgDA" base_Enumeration="_nU1REHSTEeGa4IXs2ghZEw"/>
   <term:ValueSetVersion xmi:id="_yL124HSTEeGa4IXs2ghZEw" identifier="2.16.840.1.113883.17.3.5.83" definition="Kinds of environmental allergens" codeSystem="_YgJ0wcFTEeGyGv5RKvEgDA" base_Enumeration="_yL1P0HSTEeGa4IXs2ghZEw"/>
-  <term:ValueSetVersion xmi:id="_1rVckHSTEeGa4IXs2ghZEw" identifier="2.16.840.1.113883.17.3.5.84" fullName="Finding resulting from EMS mental assessment" codeSystem="_YgJ0wcFTEeGyGv5RKvEgDA" base_Enumeration="_1rU1gHSTEeGa4IXs2ghZEw"/>
+  <term:ValueSetVersion xmi:id="_1rVckHSTEeGa4IXs2ghZEw" identifier="2.16.840.1.113883.17.3.5.84" definition="Finding resulting from EMS mental assessment" codeSystem="_YgJ0wcFTEeGyGv5RKvEgDA" base_Enumeration="_1rU1gHSTEeGa4IXs2ghZEw"/>
   <term:ValueSetVersion xmi:id="_4pdakXSTEeGa4IXs2ghZEw" identifier="2.16.840.1.113883.17.3.5.85" fullName="Circumstances limiting one's ability to provide care to a patient" definition="Circumstances limiting one's ability to provide care to a patient" codeSystem="_YgJ0wcFTEeGyGv5RKvEgDA" base_Enumeration="_4pdakHSTEeGa4IXs2ghZEw"/>
   <term:ValueSetVersion xmi:id="_7FZ4kHSTEeGa4IXs2ghZEw" identifier="2.16.840.1.113883.17.3.5.86" definition="Group of patient ages" codeSystem="_YgJ0wcFTEeGyGv5RKvEgDA" base_Enumeration="_7FZRgHSTEeGa4IXs2ghZEw"/>
   <term:ValueSetVersion xmi:id="_92nb8HSTEeGa4IXs2ghZEw" identifier="2.16.840.1.113883.17.3.5.87" definition="Kind of preparation requested at destination prior to patient arrival" codeSystem="_YgJ0wcFTEeGyGv5RKvEgDA" base_Enumeration="_92m04HSTEeGa4IXs2ghZEw"/>
   <term:ValueSetVersion xmi:id="_BYIa4XSUEeGa4IXs2ghZEw" identifier="2.16.840.1.113883.17.3.5.88" definition="Type of instrument used to evaluate for stroke" codeSystem="_YgJ0wcFTEeGyGv5RKvEgDA" base_Enumeration="_BYIa4HSUEeGa4IXs2ghZEw"/>
   <term:ValueSetVersion xmi:id="_DehfoHSUEeGa4IXs2ghZEw" identifier="2.16.840.1.113883.17.3.5.89" definition="Circumstance confounding the assessment of one or more Glasgow Coma Scale observations" codeSystem="_YgJ0wcFTEeGyGv5RKvEgDA" base_Enumeration="_Deg4kHSUEeGa4IXs2ghZEw"/>
-  <term:ValueSetVersion xmi:id="_HFAeIHSUEeGa4IXs2ghZEw" identifier="2.16.840.1.113883.17.3.5.91" codeSystem="_YgJ0wcFTEeGyGv5RKvEgDA" base_Enumeration="_HE_3EHSUEeGa4IXs2ghZEw"/>
+  <term:ValueSetVersion xmi:id="_HFAeIHSUEeGa4IXs2ghZEw" identifier="2.16.840.1.113883.17.3.5.91" definition="Whether cardiac arrest occurred before or after arrival of emergency medical service team" codeSystem="_YgJ0wcFTEeGyGv5RKvEgDA" base_Enumeration="_HE_3EHSUEeGa4IXs2ghZEw"/>
   <term:ValueSetVersion xmi:id="_MkZfAHSUEeGa4IXs2ghZEw" identifier="2.16.840.1.113883.17.3.5.9" definition="Kind of incident resulting in or likely to result in injuries or clinically adverse events" codeSystem="_YgJ0wcFTEeGyGv5RKvEgDA" base_Enumeration="_MkY38HSUEeGa4IXs2ghZEw"/>
   <term:ValueSetVersion xmi:id="_dw5r4JsjEeGzXI65shd6Fw" identifier="2.16.840.1.113883.17.3.5.92" definition="Rationale for not adminstering an otherwise indicated medication" codeSystem="_YgJ0wcFTEeGyGv5RKvEgDA" base_Enumeration="_dw32sJsjEeGzXI65shd6Fw"/>
   <term:ValueSetVersion xmi:id="_Ycp00MFTEeGyGv5RKvEgDA" identifier="2.16.840.1.113883.1.11.10228" definition="Appropriateness for disclosure of information" codeSystem="_YctfMMFTEeGyGv5RKvEgDA" base_Enumeration="_YZGKgMFTEeGyGv5RKvEgDA"/>
@@ -2742,7 +2774,9 @@
   <term:ValueSetCode xmi:id="__IA3YVKHEeK-YbJf-zpN1g" base_EnumerationLiteral="__IA3YFKHEeK-YbJf-zpN1g"/>
   <term:ValueSetCode xmi:id="__KAbcFKHEeK-YbJf-zpN1g" conceptName="Intralesional" base_EnumerationLiteral="__J_0YFKHEeK-YbJf-zpN1g"/>
   <term:CodeSystemVersion xmi:id="_vP74cFg6EeK-i8RB1gvLUA" identifier="2.16.840.1.113883.6.88" source="National Library of Medicine" url="https://www.nlm.nih.gov/research/umls/rxnorm/" base_Enumeration="_vP6qUFg6EeK-i8RB1gvLUA"/>
-  <term:ValueSetVersion xmi:id="_m-x-8FhYEeK-i8RB1gvLUA" base_Enumeration="_m-xX4FhYEeK-i8RB1gvLUA"/>
+  <term:ValueSetVersion xmi:id="_m-x-8FhYEeK-i8RB1gvLUA" identifier="2.16.840.1.113883.17.3.5.100" definition="Kind of device used to administer a substance to a patient" base_Enumeration="_m-xX4FhYEeK-i8RB1gvLUA">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
+  </term:ValueSetVersion>
   <term:ValueSetCode xmi:id="_xk0wkFhYEeK-i8RB1gvLUA" conceptName="Nasal Oxygen Cannula" base_EnumerationLiteral="_xkzicFhYEeK-i8RB1gvLUA">
     <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
   </term:ValueSetCode>
@@ -2755,4 +2789,44 @@
   <term:ValueSetCode xmi:id="_R3K2kFhZEeK-i8RB1gvLUA" conceptName="Venturi Mask" base_EnumerationLiteral="_R3KPgFhZEeK-i8RB1gvLUA">
     <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
   </term:ValueSetCode>
+  <term:ValueSetCode xmi:id="_ufzZAFrMEeKLQKuAFIMo4Q" conceptName="ALS, level 1" base_EnumerationLiteral="_ufxj0FrMEeKLQKuAFIMo4Q"/>
+  <term:ValueSetCode xmi:id="_1dIXgFrMEeKLQKuAFIMo4Q" conceptName="ALS, level 1 emergency" base_EnumerationLiteral="_1dHwcFrMEeKLQKuAFIMo4Q"/>
+  <term:ValueSetCode xmi:id="_5NuUQFrMEeKLQKuAFIMo4Q" conceptName="ALS, level 2" base_EnumerationLiteral="_5NttMFrMEeKLQKuAFIMo4Q"/>
+  <term:ValueSetCode xmi:id="_8nxZQVrMEeKLQKuAFIMo4Q" conceptName="BLS" base_EnumerationLiteral="_8nxZQFrMEeKLQKuAFIMo4Q"/>
+  <term:ValueSetCode xmi:id="__QERMFrMEeKLQKuAFIMo4Q" conceptName="BLS, emergency" base_EnumerationLiteral="__QDqIFrMEeKLQKuAFIMo4Q"/>
+  <term:ValueSetCode xmi:id="_B3pXcVrNEeKLQKuAFIMo4Q" conceptName="Fixed wing (airplane)" base_EnumerationLiteral="_B3pXcFrNEeKLQKuAFIMo4Q"/>
+  <term:ValueSetCode xmi:id="_FwregFrNEeKLQKuAFIMo4Q" conceptName="Paramedic intercept" base_EnumerationLiteral="_Fwq3cFrNEeKLQKuAFIMo4Q"/>
+  <term:ValueSetCode xmi:id="_IzknwFrNEeKLQKuAFIMo4Q" conceptName="Specialty care transport" base_EnumerationLiteral="_IzkAsFrNEeKLQKuAFIMo4Q"/>
+  <term:ValueSetCode xmi:id="_L_jbkFrNEeKLQKuAFIMo4Q" conceptName="Rotary wing (helicopter)" base_EnumerationLiteral="_L_i0gFrNEeKLQKuAFIMo4Q"/>
+  <term:ValueSetVersion xmi:id="_9jXLQLMSEeKNbt70lHd2Eg" identifier="2.16.840.1.113883.17.3.5.100" fullName="Reason Procedure not Performed Superset" definition="Rationale for not completing an otherwise indicated procedure, including CPR" codeSystem="_YgJ0wcFTEeGyGv5RKvEgDA" base_Enumeration="_9jWkMLMSEeKNbt70lHd2Eg"/>
+  <term:ValueSetCode xmi:id="_9jXLQbMSEeKNbt70lHd2Eg" conceptName="Unable to complete" base_EnumerationLiteral="_9jWkMbMSEeKNbt70lHd2Eg"/>
+  <term:ValueSetCode xmi:id="_9jXLQrMSEeKNbt70lHd2Eg" conceptName="Denied by order" base_EnumerationLiteral="_9jWkMrMSEeKNbt70lHd2Eg"/>
+  <term:ValueSetCode xmi:id="_9jXLQ7MSEeKNbt70lHd2Eg" conceptName="Contraindicated" base_EnumerationLiteral="_9jWkM7MSEeKNbt70lHd2Eg"/>
+  <term:ValueSetCode xmi:id="_9jXLRLMSEeKNbt70lHd2Eg" conceptName="Refused" base_EnumerationLiteral="_9jWkNLMSEeKNbt70lHd2Eg"/>
+  <term:ValueSetCode xmi:id="_JcBl4LMUEeKNbt70lHd2Eg" conceptName="Considered futile" base_EnumerationLiteral="_JcA-0LMUEeKNbt70lHd2Eg"/>
+  <term:ValueSetCode xmi:id="_LAykQbMUEeKNbt70lHd2Eg" conceptName="DNR orders" base_EnumerationLiteral="_LAykQLMUEeKNbt70lHd2Eg"/>
+  <term:ValueSetCode xmi:id="_MAcDYLMUEeKNbt70lHd2Eg" conceptName="Signs of circulation" base_EnumerationLiteral="_MAbcULMUEeKNbt70lHd2Eg"/>
+  <term:ValueSetVersion xmi:id="_7DvPsLMpEeKNbt70lHd2Eg" identifier="2.16.840.1.114222.4.11.836" base_Enumeration="_7DuooLMpEeKNbt70lHd2Eg"/>
+  <term:ValueSetCode xmi:id="_BAds0LMqEeKNbt70lHd2Eg" conceptName="American Indian or Alaska Native" base_EnumerationLiteral="_BAdFwLMqEeKNbt70lHd2Eg">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_dfdYoKDqEd-dVeaMP0XXQw"/>
+  </term:ValueSetCode>
+  <term:ValueSetCode xmi:id="_GijcYLMqEeKNbt70lHd2Eg" conceptName="Asian" base_EnumerationLiteral="_Gii1ULMqEeKNbt70lHd2Eg">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_dfdYoKDqEd-dVeaMP0XXQw"/>
+  </term:ValueSetCode>
+  <term:ValueSetCode xmi:id="_Mt8AkbMqEeKNbt70lHd2Eg" conceptName="Black or African American" base_EnumerationLiteral="_Mt8AkLMqEeKNbt70lHd2Eg">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_dfdYoKDqEd-dVeaMP0XXQw"/>
+  </term:ValueSetCode>
+  <term:ValueSetCode xmi:id="_RIb18LMqEeKNbt70lHd2Eg" conceptName="Native Hawaiian or Other Pacific Islander" base_EnumerationLiteral="_RIbO4LMqEeKNbt70lHd2Eg">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_dfdYoKDqEd-dVeaMP0XXQw"/>
+  </term:ValueSetCode>
+  <term:ValueSetCode xmi:id="_Uhp0gLMqEeKNbt70lHd2Eg" conceptName="Other Race" base_EnumerationLiteral="_UhpNcLMqEeKNbt70lHd2Eg">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_dfdYoKDqEd-dVeaMP0XXQw"/>
+  </term:ValueSetCode>
+  <term:ValueSetCode xmi:id="_YCL8AbMqEeKNbt70lHd2Eg" conceptName="White" base_EnumerationLiteral="_YCL8ALMqEeKNbt70lHd2Eg">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_dfdYoKDqEd-dVeaMP0XXQw"/>
+  </term:ValueSetCode>
+  <term:ValueSetVersion xmi:id="_gyJxQLM0EeKq7sXu8zXehQ" identifier="2.16.840.1.114222.4.11.837" codeSystem="_vgktgLM0EeKq7sXu8zXehQ" base_Enumeration="_gx7u0LM0EeKq7sXu8zXehQ"/>
+  <term:ValueSetCode xmi:id="_jKN00LM0EeKq7sXu8zXehQ" conceptName="Hispanic or Latino" base_EnumerationLiteral="_jKNNwLM0EeKq7sXu8zXehQ"/>
+  <term:ValueSetCode xmi:id="_nLeDwLM0EeKq7sXu8zXehQ" conceptName="Not Hispanic or Latino" base_EnumerationLiteral="_nLdcsLM0EeKq7sXu8zXehQ"/>
+  <term:CodeSystemVersion xmi:id="_vgktgLM0EeKq7sXu8zXehQ" identifier="2.16.840.1.113883.6.238" url="https://phinvads.cdc.gov/vads/ViewCodeSystem.action?id=2.16.840.1.113883.6.238" base_Enumeration="_vgkGcLM0EeKq7sXu8zXehQ"/>
 </xmi:XMI>
