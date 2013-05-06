@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html
   PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html lang="en-us" xml:lang="en-us">
+<html xml:lang="en-us" lang="en-us">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 <meta name="copyright" content="(C) Copyright 2005"/>
@@ -18,7 +18,7 @@
 <link rel="stylesheet" type="text/css" href="../css/commonltr.css"/>
 <title>EMS Physical Assessment Section</title>
 </head>
-<body id="classId"><a name="classId"><!-- --></a>
+<body id="classId">
 <div>
 	<p><b>For Discussion and Demonstration Only</b> The Normative content for these specifications
 	may be found on the HL7, IHE, and HITSP web sites.</p>
@@ -30,6 +30,9 @@
 
 <div class="body"><p class="shortdesc">[Section: templateId <tt class="ph tt">2.16.840.1.113883.17.3.10.1.20</tt>]</p>
 
+<div class="section">
+</div>
+
 
 <div class="section">
 </div>
@@ -37,121 +40,86 @@
 
 
 <ol class="ol">
-<li class="li"><strong class="ph b">SHALL</strong> conform to <a class="xref" href="DerivedCDASection.html" title="[Section: templateId null]">Derived CDA Section</a></li>
-
-<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt><tt class="ph tt"><strong class="ph b">/@code</strong>="67668?4" </tt> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.1 LOINC</tt>)
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] templateId (  ) such that it <ol class="ol" type="a"><li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <strong class="ph b">@root</strong>="2.16.840.1.113883.17.3.10.1.20"</li>
+</ol>
 </li>
 
-<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">text</strong></tt>
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt> (CONF:10337)<tt class="ph tt"><strong class="ph b">/@code</strong>="67668-4" </tt><em class="ph i">EMS Physical Assessment Section</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10336)
 </li>
 
-<li class="li"><strong class="ph b">SHOULD</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">title</strong></tt>
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">title</strong></tt> and <strong class="ph b">SHOULD</strong> equal "EMS Physical Assessment Section" (CONF:10339)
 </li>
 
-<li class="li"><strong class="ph b">SHALL</strong> contain at least one [1..*] <tt class="ph tt"><strong class="ph b">entry</strong></tt> <ol class="ol" type="a"><li class="li"> Such entrys <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">effectiveTime</strong></tt><p class="p"><em class="ph i">NEMSIS Trace: EExam.03</em></p>
-</li>
-<li class="li"> Such entrys <strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">component</strong></tt> <ol class="ol" type="i"><li class="li"> This component <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt><tt class="ph tt"><strong class="ph b">/@code</strong>="8335?2" </tt> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.1 LOINC</tt>)</li>
-<li class="li"> This component <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">value</strong></tt> with data type PQ<p class="p"><em class="ph i">UCUM units should be 'kg'</em></p>
-</li>
-</ol>
- </li>
-<li class="li"> Such entrys <strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">component</strong></tt> <ol class="ol" type="i"><li class="li"> This component <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt><tt class="ph tt"><strong class="ph b">/@code</strong>="67670?0" </tt> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.1 LOINC</tt>)</li>
-<li class="li"> This component <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">value</strong></tt> with data type CD, where the @code <strong class="ph b">SHALL</strong> be selected from ValueSet<tt class="ph tt"> <a class="xref" href="../terminology/LengthBasedTapeMeasure.html">LengthBasedTapeMeasure</a> 2.16.840.1.113883.17.3.5.24</tt><strong class="ph b"> STATIC</strong></li>
-</ol>
- </li>
-<li class="li"> Such entrys <strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">component</strong></tt> <ol class="ol" type="i"><li class="li"> This component <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt><tt class="ph tt"><strong class="ph b">/@code</strong>="67524?9" </tt> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.1 LOINC</tt>)</li>
-<li class="li"> This component <strong class="ph b">SHALL</strong> contain at least one [1..*] <tt class="ph tt"><strong class="ph b">value</strong></tt> with data type CD, where the @code <strong class="ph b">SHALL</strong> be selected from ValueSet<tt class="ph tt"> <a class="xref" href="../terminology/SkinAssessment.html">SkinAssessment</a> 2.16.840.1.113883.17.3.5.25</tt><strong class="ph b"> STATIC</strong></li>
-</ol>
- </li>
-<li class="li"> Such entrys <strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">component</strong></tt> <ol class="ol" type="i"><li class="li"> This component <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt><tt class="ph tt"><strong class="ph b">/@code</strong>="67525?6" </tt> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.1 LOINC</tt>)</li>
-<li class="li"> This component <strong class="ph b">SHALL</strong> contain at least one [1..*] <tt class="ph tt"><strong class="ph b">value</strong></tt> with data type CD, where the @code <strong class="ph b">SHALL</strong> be selected from ValueSet<tt class="ph tt"> <a class="xref" href="../terminology/HeadAssessmentFinding.html">HeadAssessmentFinding</a> 2.16.840.1.113883.17.3.5.26</tt><strong class="ph b"> STATIC</strong></li>
-</ol>
- </li>
-<li class="li"> Such entrys <strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">component</strong></tt> <ol class="ol" type="i"><li class="li"> This component <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt><tt class="ph tt"><strong class="ph b">/@code</strong>="67526?4" </tt> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.1 LOINC</tt>)</li>
-<li class="li"> This component <strong class="ph b">SHALL</strong> contain at least one [1..*] <tt class="ph tt"><strong class="ph b">value</strong></tt> with data type CD, where the @code <strong class="ph b">SHALL</strong> be selected from ValueSet<tt class="ph tt"> <a class="xref" href="../terminology/FaceAssessmentFinding.html">FaceAssessmentFinding</a> 2.16.840.1.113883.17.3.5.27</tt><strong class="ph b"> STATIC</strong></li>
-</ol>
- </li>
-<li class="li"> Such entrys <strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">component</strong></tt> <ol class="ol" type="i"><li class="li"> This component <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt><tt class="ph tt"><strong class="ph b">/@code</strong>="67527?2" </tt><em class="ph i">Neck assessment finding</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.1 LOINC</tt>)</li>
-<li class="li"> This component <strong class="ph b">SHALL</strong> contain zero or more [0..*] <tt class="ph tt"><strong class="ph b">value</strong></tt> with data type CD, where the @code <strong class="ph b">SHALL</strong> be selected from ValueSet<tt class="ph tt"> <a class="xref" href="../terminology/NeckAssessmentFinding.html">NeckAssessmentFinding</a> 2.16.840.1.113883.17.3.5.28</tt><strong class="ph b"> STATIC</strong></li>
-</ol>
- </li>
-<li class="li"> Such entrys <strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">component</strong></tt> <ol class="ol" type="i"><li class="li"> This component <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt><tt class="ph tt"><strong class="ph b">/@code</strong>="67528?0" </tt><em class="ph i">Chest and lungs assessment</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.1 LOINC</tt>)</li>
-<li class="li"> This component <strong class="ph b">SHALL</strong> contain at least one [1..*] <tt class="ph tt"><strong class="ph b">value</strong></tt> with data type CD, where the @code <strong class="ph b">SHALL</strong> be selected from ValueSet<tt class="ph tt"> <a class="xref" href="../terminology/ChestLungAssessmentFinding.html">ChestLungAssessmentFinding</a> 2.16.840.1.113883.17.3.5.29</tt><strong class="ph b"> STATIC</strong></li>
-</ol>
- </li>
-<li class="li"> Such entrys <strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">component</strong></tt> <ol class="ol" type="i"><li class="li"> This component <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt><tt class="ph tt"><strong class="ph b">/@code</strong>="67529?8" </tt><em class="ph i">Heart assessment finding</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.1 LOINC</tt>)</li>
-<li class="li"> This component <strong class="ph b">SHALL</strong> contain at least one [1..*] <tt class="ph tt"><strong class="ph b">value</strong></tt> with data type CD, where the @code <strong class="ph b">SHALL</strong> be selected from ValueSet<tt class="ph tt"> <a class="xref" href="../terminology/HeartAssessmentFinding.html">HeartAssessmentFinding</a> 2.16.840.1.113883.17.3.5.30</tt><strong class="ph b"> STATIC</strong></li>
-</ol>
- </li>
-<li class="li"> Such entrys <strong class="ph b">MAY</strong> contain zero or more [0..*] <tt class="ph tt"><strong class="ph b">component</strong></tt> <ol class="ol" type="i"><li class="li"> Such components <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt><tt class="ph tt"><strong class="ph b">/@code</strong>="67530?6" </tt><em class="ph i">Abdomen assessment</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.1 LOINC</tt>)</li>
-<li class="li"> Such components <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">value</strong></tt> with data type CD, where the @code <strong class="ph b">SHALL</strong> be selected from ValueSet<tt class="ph tt"> <a class="xref" href="../terminology/AbdomenAssessmentFinding.html">AbdomenAssessmentFinding</a> 2.16.840.1.113883.17.3.5.31</tt><strong class="ph b"> STATIC</strong></li>
-<li class="li"> Such components <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">targetSiteCode</strong></tt>, where the @code <strong class="ph b">SHALL</strong> be selected from ValueSet<tt class="ph tt"> <a class="xref" href="../terminology/AbdominalFindingLocation.html">AbdominalFindingLocation</a> 2.16.840.1.113883.17.3.5.32</tt><strong class="ph b"> STATIC</strong></li>
-</ol>
- </li>
-<li class="li"> Such entrys <strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">component</strong></tt> <ol class="ol" type="i"><li class="li"> This component <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt><tt class="ph tt"><strong class="ph b">/@code</strong>="67531?4" </tt><em class="ph i">Pelvic and genitourinary assessment</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.1 LOINC</tt>)</li>
-<li class="li"> This component <strong class="ph b">SHALL</strong> contain at least one [1..*] <tt class="ph tt"><strong class="ph b">value</strong></tt> with data type CD, where the @code <strong class="ph b">SHALL</strong> be selected from ValueSet<tt class="ph tt"> <a class="xref" href="../terminology/PelvisGenitourinaryAssessment.html">PelvisGenitourinaryAssessment</a> 2.16.840.1.113883.17.3.5.33</tt><strong class="ph b"> STATIC</strong></li>
-</ol>
- </li>
-<li class="li"> Such entrys <strong class="ph b">MAY</strong> contain zero or more [0..*] <tt class="ph tt"><strong class="ph b">component</strong></tt> <ol class="ol" type="i"><li class="li"> Such components <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt><tt class="ph tt"><strong class="ph b">/@code</strong>="67532?2" </tt><em class="ph i">Back and spine assessment</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.1 LOINC</tt>)</li>
-<li class="li"> Such components <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">targetSiteCode</strong></tt>, where the @code <strong class="ph b">SHALL</strong> be selected from ValueSet<tt class="ph tt"> <a class="xref" href="../terminology/BackSpineFindingLocation.html">BackSpineFindingLocation</a> 2.16.840.1.113883.17.3.5.35</tt><strong class="ph b"> STATIC</strong></li>
-<li class="li"> Such components <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">value</strong></tt> with data type CD, where the @code <strong class="ph b">SHALL</strong> be selected from ValueSet<tt class="ph tt"> <a class="xref" href="../terminology/BackSpineAssessmentFinding.html">BackSpineAssessmentFinding</a> 2.16.840.1.113883.17.3.5.34</tt><strong class="ph b"> STATIC</strong></li>
-</ol>
- </li>
-<li class="li"> Such entrys <strong class="ph b">MAY</strong> contain zero or more [0..*] <tt class="ph tt"><strong class="ph b">component</strong></tt> <ol class="ol" type="i"><li class="li"> Such components <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt><tt class="ph tt"><strong class="ph b">/@code</strong>="67533?0" </tt><em class="ph i">Extremities assessment</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.1 LOINC</tt>)</li>
-<li class="li"> Such components <strong class="ph b">MAY</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">targetSiteCode</strong></tt>, where the @code <strong class="ph b">SHALL</strong> be selected from ValueSet<tt class="ph tt"> <a class="xref" href="../terminology/ExtremityFindingLocation.html">ExtremityFindingLocation</a> 2.16.840.1.113883.17.3.5.37</tt><strong class="ph b"> STATIC</strong></li>
-<li class="li"> Such components <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">value</strong></tt> with data type CD, where the @code <strong class="ph b">SHALL</strong> be selected from ValueSet<tt class="ph tt"> <a class="xref" href="../terminology/ExtremitiesAssessmentFinding.html">ExtremitiesAssessmentFinding</a> 2.16.840.1.113883.17.3.5.36</tt><strong class="ph b"> STATIC</strong></li>
-</ol>
- </li>
-<li class="li"> Such entrys <strong class="ph b">MAY</strong> contain zero or more [0..*] <tt class="ph tt"><strong class="ph b">component</strong></tt> <ol class="ol" type="i"><li class="li"> Such components <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt><tt class="ph tt"><strong class="ph b">/@code</strong>="67534?8" </tt><em class="ph i">Eye assessment</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.1 LOINC</tt>)</li>
-<li class="li"> Such components <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">targetSiteCode</strong></tt>, where the @code <strong class="ph b">SHALL</strong> be selected from ValueSet<tt class="ph tt"> <a class="xref" href="../terminology/EyeFindingLocation.html">EyeFindingLocation</a> 2.16.840.1.113883.17.3.5.39</tt><strong class="ph b"> STATIC</strong></li>
-<li class="li"> Such components <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">value</strong></tt> with data type CD, where the @code <strong class="ph b">SHALL</strong> be selected from ValueSet<tt class="ph tt"> <a class="xref" href="../terminology/EyeAssessmentFinding.html">EyeAssessmentFinding</a> 2.16.840.1.113883.17.3.5.38</tt><strong class="ph b"> STATIC</strong></li>
-</ol>
- </li>
-<li class="li"> Such entrys <strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">component</strong></tt> <ol class="ol" type="i"><li class="li"> This component <strong class="ph b">MAY</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt><tt class="ph tt"><strong class="ph b">/@code</strong>="67535?5" </tt><em class="ph i">Mental status assessment</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.1 LOINC</tt>)</li>
-<li class="li"> This component <strong class="ph b">SHALL</strong> contain at least one [1..*] <tt class="ph tt"><strong class="ph b">value</strong></tt> with data type CD, where the @code <strong class="ph b">SHALL</strong> be selected from ValueSet<tt class="ph tt"> <a class="xref" href="../terminology/MentalStatusFinding.html">MentalStatusFinding</a> 2.16.840.1.113883.17.3.5.84</tt><strong class="ph b"> STATIC</strong></li>
-</ol>
- </li>
-<li class="li"> Such entrys <strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">component</strong></tt> <ol class="ol" type="i"><li class="li"> This component <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt><tt class="ph tt"><strong class="ph b">/@code</strong>="67536?3" </tt><em class="ph i">Neurological status assessment</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.1 LOINC</tt>)</li>
-<li class="li"> This component <strong class="ph b">SHALL</strong> contain zero or more [0..*] <tt class="ph tt"><strong class="ph b">value</strong></tt> with data type CD, where the @code <strong class="ph b">SHALL</strong> be selected from ValueSet<tt class="ph tt"> <a class="xref" href="../terminology/NeurologicalAssessmentFinding.html">NeurologicalAssessmentFinding</a> 2.16.840.1.113883.17.3.5.40</tt><strong class="ph b"> STATIC</strong></li>
-</ol>
- </li>
-</ol>
-
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">text</strong></tt> (CONF:10338)
 </li>
 
-<li class="li"><strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">entry</strong></tt> <ol class="ol" type="a"><li class="li"> This entry <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt><tt class="ph tt"><strong class="ph b">/@code</strong>="67471?3" </tt><em class="ph i">Patient Pregnancy</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.1 LOINC</tt>)</li>
-<li class="li"> This entry <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">value</strong></tt> with data type CD, where the @code <strong class="ph b">SHALL</strong> be selected from ValueSet<tt class="ph tt"> <a class="xref" href="../terminology/Pregnancy.html">Pregnancy</a> 2.16.840.1.113883.17.3.5.42</tt><strong class="ph b"> STATIC</strong></li>
-</ol>
-
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">entry</strong></tt> (CONF:10340) <ol class="ol" type="a"><li class="li"> This entry <strong class="ph b">SHALL</strong> conform to <a class="xref" href="DerivedEntry.html" title="[Entry: templateId 2.16.840.1.1133883.17.3.10.1.24]">Derived Entry</a> template (templateId: <tt class="ph tt">2.16.840.1.1133883.17.3.10.1.24</tt>)</li>
+<li class="li"> This entry <strong class="ph b">SHALL</strong> contain at least one [1..*] <tt class="ph tt"><strong class="ph b">organizer</strong></tt> (CONF:10346) <ol class="ol" type="i"><li class="li"> Such organizers <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">effectiveTime</strong></tt> (CONF:10347)<div class="p"><p class="lines"><em class="ph i">NEMSIS Trace: EExam.03</em></p>
+</div>
 </li>
-
-<li class="li"><strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">entry</strong></tt> <ol class="ol" type="a"><li class="li"> This entry <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt><tt class="ph tt"><strong class="ph b">/@code</strong>="67517?3" </tt><em class="ph i">Last oral intake</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.1 LOINC</tt>)</li>
-<li class="li"> This entry <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">value</strong></tt> with data type TS</li>
 </ol>
-
-</li>
-
-<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">entry</strong></tt> <ol class="ol" type="a"><li class="li"> This entry <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt><tt class="ph tt"><strong class="ph b">/@code</strong>="30525?0" </tt><em class="ph i">Patient age</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.1 LOINC</tt>)</li>
-<li class="li"> This entry <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">value</strong></tt> with data type PQ<p class="p"><em class="ph i">UCUM units SHOULD be 'a'</em></p>
 </li>
 </ol>
 
 </li>
 
-<li class="li"><strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">entry</strong></tt> <ol class="ol" type="a"><li class="li"> This entry <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt><tt class="ph tt"><strong class="ph b">/@code</strong>="67523?1" </tt><em class="ph i">Contraindications to thrombolytic use</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.1 LOINC</tt>)</li>
-<li class="li"> This entry <strong class="ph b">SHALL</strong> contain at least one [1..*] <tt class="ph tt"><strong class="ph b">value</strong></tt> with data type CD, where the @code <strong class="ph b">SHALL</strong> be selected from ValueSet<tt class="ph tt"> <a class="xref" href="../terminology/ExistenceOfContraindicationsToThrombolyticUse.html">ExistenceOfContraindicationsToThrombolyticUse</a> 2.16.840.1.113883.17.3.5.41</tt><strong class="ph b"> STATIC</strong></li>
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">entry</strong></tt> (CONF:10341) <ol class="ol" type="a"><li class="li"> This entry <strong class="ph b">SHALL</strong> conform to <a class="xref" href="DerivedEntry.html" title="[Entry: templateId 2.16.840.1.1133883.17.3.10.1.24]">Derived Entry</a> template (templateId: <tt class="ph tt">2.16.840.1.1133883.17.3.10.1.24</tt>)</li>
+<li class="li"> This entry <strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">observation</strong></tt> (CONF:10417) <ol class="ol" type="i"><li class="li"> This observation <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt> (CONF:10418)<tt class="ph tt"><strong class="ph b">/@code</strong>="67471-3" </tt><em class="ph i">Patient Pregnancy</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10419)</li>
+<li class="li"> This observation <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">value</strong></tt> with data type CD (CONF:10420), where the @code <strong class="ph b">SHALL</strong> be selected from ValueSet<tt class="ph tt"> <a class="xref" href="../terminology/Pregnancy.html">Pregnancy</a> 2.16.840.1.113883.17.3.5.42</tt><strong class="ph b"> STATIC</strong> (CONF:10421)<div class="p"><p class="lines"><em class="ph i">NEMSIS Trace: EHistory.18</em></p>
+</div>
+</li>
+</ol>
+</li>
 </ol>
 
 </li>
 
-<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">entry</strong></tt> <ol class="ol" type="a"><li class="li"> This entry <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt><tt class="ph tt"><strong class="ph b">/@code</strong>="67523?1" </tt><em class="ph i">Barriers to patient care</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.1 LOINC</tt>)</li>
-<li class="li"> This entry <strong class="ph b">SHALL</strong> contain zero or more [0..*] <tt class="ph tt"><strong class="ph b">value</strong></tt> with data type CD, where the @code <strong class="ph b">SHALL</strong> be selected from ValueSet<tt class="ph tt"> <a class="xref" href="../terminology/BarrierToCare.html">BarrierToCare</a> 2.16.840.1.113883.17.3.5.85</tt><strong class="ph b"> STATIC</strong></li>
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">entry</strong></tt> (CONF:10342) <ol class="ol" type="a"><li class="li"> This entry <strong class="ph b">SHALL</strong> conform to <a class="xref" href="DerivedEntry.html" title="[Entry: templateId 2.16.840.1.1133883.17.3.10.1.24]">Derived Entry</a> template (templateId: <tt class="ph tt">2.16.840.1.1133883.17.3.10.1.24</tt>)</li>
+<li class="li"> This entry <strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">observation</strong></tt> (CONF:10422) <ol class="ol" type="i"><li class="li"> This observation <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt> (CONF:10423)<tt class="ph tt"><strong class="ph b">/@code</strong>="67517-3" </tt><em class="ph i">Last oral intake</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10424)</li>
+<li class="li"> This observation <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">value</strong></tt> with data type TS (CONF:10425)<div class="p"><p class="lines"><em class="ph i">NEMSIS Trace: EHistory.19</em></p>
+</div>
+</li>
+</ol>
+</li>
+</ol>
+
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">entry</strong></tt> (CONF:10343) <ol class="ol" type="a"><li class="li"> This entry <strong class="ph b">SHALL</strong> conform to <a class="xref" href="DerivedEntry.html" title="[Entry: templateId 2.16.840.1.1133883.17.3.10.1.24]">Derived Entry</a> template (templateId: <tt class="ph tt">2.16.840.1.1133883.17.3.10.1.24</tt>)</li>
+<li class="li"> This entry <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">observation</strong></tt> (CONF:10426) <ol class="ol" type="i"><li class="li"> This observation <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt> (CONF:10427)<tt class="ph tt"><strong class="ph b">/@code</strong>="30525-0" </tt><em class="ph i">Patient age</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10428)</li>
+<li class="li"> This observation <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">value</strong></tt> with data type PQ (CONF:10429)<div class="p"><p class="lines"><em class="ph i">NEMSIS Trace: EPatient.15, 16<br/>
+UCUM units SHOULD be 'a'</em></p>
+</div>
+</li>
+</ol>
+</li>
+</ol>
+
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">entry</strong></tt> (CONF:10344) <ol class="ol" type="a"><li class="li"> This entry <strong class="ph b">SHALL</strong> conform to <a class="xref" href="DerivedEntry.html" title="[Entry: templateId 2.16.840.1.1133883.17.3.10.1.24]">Derived Entry</a> template (templateId: <tt class="ph tt">2.16.840.1.1133883.17.3.10.1.24</tt>)</li>
+<li class="li"> This entry <strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">observation</strong></tt> (CONF:10430) <ol class="ol" type="i"><li class="li"> This observation <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt> (CONF:10431)<tt class="ph tt"><strong class="ph b">/@code</strong>="67523-1" </tt><em class="ph i">Contraindications to thrombolytic use</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10432)</li>
+<li class="li"> This observation <strong class="ph b">SHALL</strong> contain at least one [1..*] <tt class="ph tt"><strong class="ph b">value</strong></tt> with data type CD, where the @code <strong class="ph b">SHALL</strong> be selected from ValueSet<tt class="ph tt"> <a class="xref" href="../terminology/ExistenceOfContraindicationsToThrombolyticUse.html">ExistenceOfContraindicationsToThrombolyticUse</a> 2.16.840.1.113883.17.3.5.41</tt><strong class="ph b"> STATIC</strong> (CONF:10433)<div class="p"><p class="lines"><em class="ph i">NEMSIS Trace: EVitals.31</em></p>
+</div>
+</li>
+</ol>
+</li>
+</ol>
+
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">entry</strong></tt> (CONF:10345) <ol class="ol" type="a"><li class="li"> This entry <strong class="ph b">SHALL</strong> conform to <a class="xref" href="DerivedEntry.html" title="[Entry: templateId 2.16.840.1.1133883.17.3.10.1.24]">Derived Entry</a> template (templateId: <tt class="ph tt">2.16.840.1.1133883.17.3.10.1.24</tt>)</li>
+<li class="li"> This entry <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">observation</strong></tt> (CONF:10434) <ol class="ol" type="i"><li class="li"> This observation <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt> (CONF:10435)<tt class="ph tt"><strong class="ph b">/@code</strong>="67523-1" </tt><em class="ph i">Barriers to patient care</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10436)</li>
+<li class="li"> This observation <strong class="ph b">SHALL</strong> contain zero or more [0..*] <tt class="ph tt"><strong class="ph b">value</strong></tt> with data type CD (CONF:10437), where the @code <strong class="ph b">SHALL</strong> be selected from ValueSet<tt class="ph tt"> <a class="xref" href="../terminology/BarrierToCare.html">BarrierToCare</a> 2.16.840.1.113883.17.3.5.85</tt><strong class="ph b"> STATIC</strong> (CONF:10438)<div class="p"><p class="lines"><em class="ph i">NEMSIS Trace: EHistory.01</em></p>
+</div>
+</li>
+</ol>
+</li>
 </ol>
 
 </li>
 
 </ol>
-
 
 
 <p class="p"> </p>
@@ -160,7 +128,50 @@
 
 
 
-<pre class="pre codeblock"/>
+<pre class="pre codeblock">&lt;section xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3"&gt;
+  &lt;id root="MDHT" extension="885030344"/&gt;
+  &lt;code code="170889292"/&gt;
+  &lt;title&gt;TEXT FOR TITLE&lt;/title&gt;
+  &lt;text/&gt;
+  &lt;entry&gt;
+    &lt;organizer&gt;
+      &lt;statusCode code="completed"/&gt;
+      &lt;effectiveTime&gt;
+        &lt;low value="2013"/&gt;
+        &lt;high value="2013"/&gt;
+      &lt;/effectiveTime&gt;
+    &lt;/organizer&gt;
+  &lt;/entry&gt;
+  &lt;entry&gt;
+    &lt;observation&gt;
+      &lt;code code="67471-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Patient Pregnancy"/&gt;
+      &lt;value xsi:type="CD" code="272017351"/&gt;
+    &lt;/observation&gt;
+  &lt;/entry&gt;
+  &lt;entry&gt;
+    &lt;observation&gt;
+      &lt;code code="67517-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Last oral intake"/&gt;
+      &lt;value xsi:type="TS"/&gt;
+    &lt;/observation&gt;
+  &lt;/entry&gt;
+  &lt;entry&gt;
+    &lt;observation&gt;
+      &lt;code code="30525-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Patient age"/&gt;
+      &lt;value xsi:type="PQ"/&gt;
+    &lt;/observation&gt;
+  &lt;/entry&gt;
+  &lt;entry&gt;
+    &lt;observation&gt;
+      &lt;code code="67523-1" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Contraindications to thrombolytic use"/&gt;
+    &lt;/observation&gt;
+  &lt;/entry&gt;
+  &lt;entry&gt;
+    &lt;observation&gt;
+      &lt;code code="67523-1" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Barriers to patient care"/&gt;
+      &lt;value xsi:type="CD" code="249384515"/&gt;
+    &lt;/observation&gt;
+  &lt;/entry&gt;
+&lt;/section&gt;</pre>
 
 </div>
 

@@ -16,54 +16,53 @@
 <row><entry>Code System</entry><entry>LOINC - 2.16.840.1.113883.6.1</entry></row>
 <row><entry>Definition</entry><entry>Kind of medical problem or incident reported</entry></row>
 </tbody></tgroup></table>
-<table><tgroup cols="4">
+<table><tgroup cols="3">
 <colspec colname="col1" colwidth="1*"/>
-<colspec colname="col2" colwidth="2*"/>
-<colspec colname="col3" colwidth="1*"/>
-<colspec colname="col4" colwidth="3*"/>
+<colspec colname="col2" colwidth="1*"/>
+<colspec colname="col3" colwidth="2*"/>
 <thead><row>
-<entry>Concept Code</entry><entry>Concept Name</entry><entry>Code System</entry><entry>Description</entry>
+<entry>Code</entry><entry>Code System</entry><entry>Print Name</entry>
 </row></thead><tbody>
-<row><entry>LA15468-4</entry><entry>Abdominal pain</entry><entry>LOINC</entry><entry></entry></row>
-<row><entry>LA15903-0</entry><entry>Headache</entry><entry>LOINC</entry><entry></entry></row>
-<row><entry>LA17117-5</entry><entry>Allergic reaction/stings</entry><entry>LOINC</entry><entry></entry></row>
-<row><entry>LA17118-3</entry><entry>Animal bite</entry><entry>LOINC</entry><entry></entry></row>
-<row><entry>LA17119-1</entry><entry>Assault</entry><entry>LOINC</entry><entry></entry></row>
-<row><entry>LA17120-9</entry><entry>Automated crash notification</entry><entry>LOINC</entry><entry></entry></row>
-<row><entry>LA17121-7</entry><entry>Back pain (non-traumatic)</entry><entry>LOINC</entry><entry></entry></row>
-<row><entry>LA17122-5</entry><entry>Breathing problems</entry><entry>LOINC</entry><entry></entry></row>
-<row><entry>LA17123-3</entry><entry>Burns/explosion</entry><entry>LOINC</entry><entry></entry></row>
-<row><entry>LA17124-1</entry><entry>Carbon monoxide poisoning/hazmat/inhalation/chemical/biological/radiological/nuclear</entry><entry>LOINC</entry><entry></entry></row>
-<row><entry>LA17125-8</entry><entry>Cardiac arrest/death</entry><entry>LOINC</entry><entry></entry></row>
-<row><entry>LA17126-6</entry><entry>Chest pain (non-traumatic)</entry><entry>LOINC</entry><entry></entry></row>
-<row><entry>LA17127-4</entry><entry>Choking</entry><entry>LOINC</entry><entry></entry></row>
-<row><entry>LA17128-2</entry><entry>Convulsions/seizure</entry><entry>LOINC</entry><entry></entry></row>
-<row><entry>LA17129-0</entry><entry>Diabetic problem</entry><entry>LOINC</entry><entry></entry></row>
-<row><entry>LA17131-6</entry><entry>Electrocution/lightning</entry><entry>LOINC</entry><entry></entry></row>
-<row><entry>LA17132-4</entry><entry>Eye problem/injury</entry><entry>LOINC</entry><entry></entry></row>
-<row><entry>LA17133-2</entry><entry>Falls</entry><entry>LOINC</entry><entry></entry></row>
-<row><entry>LA17134-0</entry><entry>Healthcare professional/admission</entry><entry>LOINC</entry><entry></entry></row>
-<row><entry>LA17135-7</entry><entry>Heart problems/AICD</entry><entry>LOINC</entry><entry></entry></row>
-<row><entry>LA17136-5</entry><entry>Heat/cold exposure</entry><entry>LOINC</entry><entry></entry></row>
-<row><entry>LA17137-3</entry><entry>Hemorrhage/lacerations</entry><entry>LOINC</entry><entry></entry></row>
-<row><entry>LA17138-1</entry><entry>Industrial accident/inaccessible incident/other entrapments (non-vehicle)</entry><entry>LOINC</entry><entry></entry></row>
-<row><entry>LA17140-7</entry><entry>Overdose/poisoning/ingestion</entry><entry>LOINC</entry><entry></entry></row>
-<row><entry>LA17141-5</entry><entry>Pandemic/epidemic/outbreak</entry><entry>LOINC</entry><entry></entry></row>
-<row><entry>LA17142-3</entry><entry>Pregnancy/childbirth/miscarriage</entry><entry>LOINC</entry><entry></entry></row>
-<row><entry>LA17143-1</entry><entry>Psychiatric problem/abnormal behavior/suicide attempt</entry><entry>LOINC</entry><entry></entry></row>
-<row><entry>LA17144-9</entry><entry>Sick person</entry><entry>LOINC</entry><entry></entry></row>
-<row><entry>LA17145-6</entry><entry>Stab/gunshot wound/penetrating trauma</entry><entry>LOINC</entry><entry></entry></row>
-<row><entry>LA17146-4</entry><entry>Traffic/transportation incident</entry><entry>LOINC</entry><entry></entry></row>
-<row><entry>LA17147-2</entry><entry>Transfer/interfacility/palliative Care</entry><entry>LOINC</entry><entry></entry></row>
-<row><entry>LA17148-0</entry><entry>Unconscious/fainting/near-fainting</entry><entry>LOINC</entry><entry></entry></row>
-<row><entry>LA17149-8</entry><entry>Unknown problem person down</entry><entry>LOINC</entry><entry></entry></row>
-<row><entry>LA17150-6</entry><entry>Standby</entry><entry>LOINC</entry><entry></entry></row>
-<row><entry>LA18093-7</entry><entry>Fire</entry><entry>LOINC</entry><entry></entry></row>
-<row><entry>LA18209-9</entry><entry>No other appropriate choice</entry><entry>LOINC</entry><entry></entry></row>
-<row><entry>LA18210-7</entry><entry>Medical alarm</entry><entry>LOINC</entry><entry></entry></row>
-<row><entry>LA18211-5</entry><entry>Well person check</entry><entry>LOINC</entry><entry></entry></row>
-<row><entry>LA9553-4</entry><entry>Stroke/CVA</entry><entry>LOINC</entry><entry></entry></row>
-<row><entry>LA9555-9</entry><entry>Traumatic injury</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA15468-4</entry><entry>LOINC</entry><entry>Abdominal pain</entry></row>
+<row><entry>LA15903-0</entry><entry>LOINC</entry><entry>Headache</entry></row>
+<row><entry>LA17117-5</entry><entry>LOINC</entry><entry>Allergic reaction/stings</entry></row>
+<row><entry>LA17118-3</entry><entry>LOINC</entry><entry>Animal bite</entry></row>
+<row><entry>LA17119-1</entry><entry>LOINC</entry><entry>Assault</entry></row>
+<row><entry>LA17120-9</entry><entry>LOINC</entry><entry>Automated crash notification</entry></row>
+<row><entry>LA17121-7</entry><entry>LOINC</entry><entry>Back pain (non-traumatic)</entry></row>
+<row><entry>LA17122-5</entry><entry>LOINC</entry><entry>Breathing problems</entry></row>
+<row><entry>LA17123-3</entry><entry>LOINC</entry><entry>Burns/explosion</entry></row>
+<row><entry>LA17124-1</entry><entry>LOINC</entry><entry>Carbon monoxide poisoning/hazmat/inhalation/chemical/biological/radiological/nuclear</entry></row>
+<row><entry>LA17125-8</entry><entry>LOINC</entry><entry>Cardiac arrest/death</entry></row>
+<row><entry>LA17126-6</entry><entry>LOINC</entry><entry>Chest pain (non-traumatic)</entry></row>
+<row><entry>LA17127-4</entry><entry>LOINC</entry><entry>Choking</entry></row>
+<row><entry>LA17128-2</entry><entry>LOINC</entry><entry>Convulsions/seizure</entry></row>
+<row><entry>LA17129-0</entry><entry>LOINC</entry><entry>Diabetic problem</entry></row>
+<row><entry>LA17131-6</entry><entry>LOINC</entry><entry>Electrocution/lightning</entry></row>
+<row><entry>LA17132-4</entry><entry>LOINC</entry><entry>Eye problem/injury</entry></row>
+<row><entry>LA17133-2</entry><entry>LOINC</entry><entry>Falls</entry></row>
+<row><entry>LA17134-0</entry><entry>LOINC</entry><entry>Healthcare professional/admission</entry></row>
+<row><entry>LA17135-7</entry><entry>LOINC</entry><entry>Heart problems/AICD</entry></row>
+<row><entry>LA17136-5</entry><entry>LOINC</entry><entry>Heat/cold exposure</entry></row>
+<row><entry>LA17137-3</entry><entry>LOINC</entry><entry>Hemorrhage/lacerations</entry></row>
+<row><entry>LA17138-1</entry><entry>LOINC</entry><entry>Industrial accident/inaccessible incident/other entrapments (non-vehicle)</entry></row>
+<row><entry>LA17140-7</entry><entry>LOINC</entry><entry>Overdose/poisoning/ingestion</entry></row>
+<row><entry>LA17141-5</entry><entry>LOINC</entry><entry>Pandemic/epidemic/outbreak</entry></row>
+<row><entry>LA17142-3</entry><entry>LOINC</entry><entry>Pregnancy/childbirth/miscarriage</entry></row>
+<row><entry>LA17143-1</entry><entry>LOINC</entry><entry>Psychiatric problem/abnormal behavior/suicide attempt</entry></row>
+<row><entry>LA17144-9</entry><entry>LOINC</entry><entry>Sick person</entry></row>
+<row><entry>LA17145-6</entry><entry>LOINC</entry><entry>Stab/gunshot wound/penetrating trauma</entry></row>
+<row><entry>LA17146-4</entry><entry>LOINC</entry><entry>Traffic/transportation incident</entry></row>
+<row><entry>LA17147-2</entry><entry>LOINC</entry><entry>Transfer/interfacility/palliative Care</entry></row>
+<row><entry>LA17148-0</entry><entry>LOINC</entry><entry>Unconscious/fainting/near-fainting</entry></row>
+<row><entry>LA17149-8</entry><entry>LOINC</entry><entry>Unknown problem person down</entry></row>
+<row><entry>LA17150-6</entry><entry>LOINC</entry><entry>Standby</entry></row>
+<row><entry>LA18093-7</entry><entry>LOINC</entry><entry>Fire</entry></row>
+<row><entry>LA18209-9</entry><entry>LOINC</entry><entry>No other appropriate choice</entry></row>
+<row><entry>LA18210-7</entry><entry>LOINC</entry><entry>Medical alarm</entry></row>
+<row><entry>LA18211-5</entry><entry>LOINC</entry><entry>Well person check</entry></row>
+<row><entry>LA9553-4</entry><entry>LOINC</entry><entry>Stroke/CVA</entry></row>
+<row><entry>LA9555-9</entry><entry>LOINC</entry><entry>Traumatic injury</entry></row>
 </tbody></tgroup></table>
 </section>
 </body>

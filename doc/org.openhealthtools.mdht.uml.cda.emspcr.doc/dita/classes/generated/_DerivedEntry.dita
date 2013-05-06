@@ -8,10 +8,14 @@
 <resourceid id="2.16.840.1.1133883.17.3.10.1.24"/>
 </prolog>
 <body>
+<section id="knownSubclasses">
+<p>Known Subclasses: </p>
+</section>
 <section id="description">
-<p>This class asserts that the section narrative is derived from the structured data contained in the section entries.</p>
+<p><lines><i>This class asserts that the section narrative is derived from the structured data contained in the section entries.</i></lines></p>
 </section>
 <ol id="conformance">
+<li><b>SHALL</b> contain exactly one [1..1] templateId (  ) such that it <ol><li><b>SHALL</b> contain exactly one [1..1] <b>@root</b>="2.16.840.1.1133883.17.3.10.1.24"</li></ol></li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>@typeCode</b>="DRIV" </tt> (CONF:10869)
 </li>
 </ol>
@@ -19,7 +23,9 @@
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>@typeCode</b>="DRIV" </tt> (CONF:10869)
 </li>
 </ol>
-<codeblock id="example"><![CDATA[]]></codeblock>
+<section id="tableconformance"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="8" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><colspec colname="col2" colnum="2" /><colspec colname="col3" colnum="3" /><colspec colname="col4" colnum="4" /><colspec colname="col5" colnum="5" /><colspec colname="col6" colnum="6" /><colspec colname="col7" colnum="7" /><thead> <row><entry namest="col0" nameend="col7" >emspcr::DerivedEntry</entry>  </row>  <row><entry namest="col0" nameend="col7" >cda::entry[cda:templateId/@root = ]/</entry>  </row>  <row><entry>Name</entry><entry>XPath</entry><entry>Cardinality</entry><entry>Severity</entry><entry>Nullable</entry><entry>Data Type</entry><entry>Conformance</entry><entry>Value(s)</entry></row></thead><tbody><row><entry>typeCode</entry><entry>@typeCode</entry><entry>1..1</entry><entry>SHALL</entry><entry>NO</entry><entry>x_ActRelationshipEntry</entry><entry>CONF:10869</entry><entry> COMP</entry></row> 
+</tbody></tgroup></table></p></section>
+<codeblock id="example"><![CDATA[<entry xmlns="urn:hl7-org:v3"/>]]></codeblock>
 <section id="changes">
 </section>
 <p><ph id="classformalname">Derived Entry</ph></p>

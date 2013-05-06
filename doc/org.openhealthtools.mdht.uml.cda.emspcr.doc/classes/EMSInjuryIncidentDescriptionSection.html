@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html
   PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html lang="en-us" xml:lang="en-us">
+<html xml:lang="en-us" lang="en-us">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 <meta name="copyright" content="(C) Copyright 2005"/>
@@ -18,7 +18,7 @@
 <link rel="stylesheet" type="text/css" href="../css/commonltr.css"/>
 <title>EMS Injury Incident Description Section</title>
 </head>
-<body id="classId"><a name="classId"><!-- --></a>
+<body id="classId">
 <div>
 	<p><b>For Discussion and Demonstration Only</b> The Normative content for these specifications
 	may be found on the HL7, IHE, and HITSP web sites.</p>
@@ -30,6 +30,11 @@
 
 <div class="body"><p class="shortdesc">[Section: templateId <tt class="ph tt">2.16.840.1.113883.17.3.10.1.17</tt>]</p>
 
+<div class="section">
+<p class="p">Known Subclasses: </p>
+
+</div>
+
 
 <div class="section">
 </div>
@@ -37,74 +42,129 @@
 
 
 <ol class="ol">
-<li class="li"><strong class="ph b">SHALL</strong> conform to <a class="xref" href="DerivedCDASection.html" title="[Section: templateId null]">Derived CDA Section</a></li>
-
-<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt><tt class="ph tt"><strong class="ph b">/@code</strong>="11374-6" </tt><em class="ph i">Injury incident description</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.1 LOINC</tt>)
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] templateId (  ) such that it <ol class="ol" type="a"><li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <strong class="ph b">@root</strong>="2.16.840.1.113883.17.3.10.1.17"</li>
+</ol>
 </li>
 
-<li class="li">Contains exactly one [1..1] <tt class="ph tt"><strong class="ph b">entry</strong></tt> <ol class="ol" type="a"><li class="li"> This entry <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt><tt class="ph tt"><strong class="ph b">/@code</strong>="69543-7" </tt><em class="ph i">Injury Cause</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.1 LOINC</tt>)</li>
-<li class="li"> This entry <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">value</strong></tt> with data type CD, where the @code <strong class="ph b">SHALL</strong> be selected from<p class="p"><em class="ph i">Add binding to ICD-10 chapter XX</em></p>
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt><tt class="ph tt"><strong class="ph b">/@code</strong>="11374-6" </tt><em class="ph i">Injury Incident Description Section</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10094)
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">title</strong></tt> and <strong class="ph b">SHOULD</strong> equal "Injury Incident Description Section"
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">text</strong></tt>
+</li>
+
+<li class="li"><strong class="ph b">MAY</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">entry</strong></tt> (CONF:10095) <ol class="ol" type="a"><li class="li"> This entry <strong class="ph b">SHALL</strong> conform to <a class="xref" href="DerivedEntry.html" title="[Entry: templateId 2.16.840.1.1133883.17.3.10.1.24]">Derived Entry</a> template (templateId: <tt class="ph tt">2.16.840.1.1133883.17.3.10.1.24</tt>)</li>
+<li class="li"> This entry <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">observation</strong></tt> (CONF:10105) <ol class="ol" type="i"><li class="li"> This observation <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt><tt class="ph tt"><strong class="ph b">/@code</strong>="69543-7" </tt><em class="ph i">Injury Cause</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10106)</li>
+<li class="li"> This observation <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">value</strong></tt> with data type CD, where the @code <strong class="ph b">SHALL</strong> be selected from (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.3.1 ICD-10</tt>) (CONF:10108)<div class="p"><p class="lines"><em class="ph i">NEMSIS Trace: EInjury.01<br/>
+Causes are in ICD-10 chapter XX</em></p>
+</div>
+</li>
+</ol>
 </li>
 </ol>
 
 </li>
 
-<li class="li">Contains zero or one [0..1] <tt class="ph tt"><strong class="ph b">entry</strong></tt> <ol class="ol" type="a"><li class="li"> This entry <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt><tt class="ph tt"><strong class="ph b">/@code</strong>="67494-5" </tt><em class="ph i">Injury Mechanism</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.1 LOINC</tt>)</li>
-<li class="li"> This entry <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">value</strong></tt> with data type CD, where the @code <strong class="ph b">SHALL</strong> be selected from ValueSet<tt class="ph tt"> <a class="xref" href="../terminology/MechanismOfInjury.html">MechanismOfInjury</a> 2.16.840.1.113883.17.3.5.1</tt><strong class="ph b"> STATIC</strong></li>
+<li class="li"><strong class="ph b">MAY</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">entry</strong></tt> (CONF:10096) <ol class="ol" type="a"><li class="li"> This entry <strong class="ph b">SHALL</strong> conform to <a class="xref" href="DerivedEntry.html" title="[Entry: templateId 2.16.840.1.1133883.17.3.10.1.24]">Derived Entry</a> template (templateId: <tt class="ph tt">2.16.840.1.1133883.17.3.10.1.24</tt>)</li>
+<li class="li"> This entry <strong class="ph b">SHALL</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">observation</strong></tt> <ol class="ol" type="i"><li class="li"> This observation <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt><tt class="ph tt"><strong class="ph b">/@code</strong>="67494-5" </tt><em class="ph i">Injury Mechanism</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10109)</li>
+<li class="li"> This observation <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">value</strong></tt> with data type CD, where the @code <strong class="ph b">SHALL</strong> be selected from ValueSet<tt class="ph tt"> <a class="xref" href="../terminology/MechanismOfInjury.html">MechanismOfInjury</a> 2.16.840.1.113883.17.3.5.1</tt><strong class="ph b"> STATIC</strong> (CONF:10110)</li>
+</ol>
+</li>
 </ol>
 
 </li>
 
-<li class="li">Contains zero or one [0..1] <tt class="ph tt"><strong class="ph b">entry</strong></tt> <ol class="ol" type="a"><li class="li"> This entry <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt><tt class="ph tt"><strong class="ph b">/@code</strong>="67495-2" </tt><em class="ph i">Trauma Center Critieria</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.1 LOINC</tt>)</li>
-<li class="li"> This entry <strong class="ph b">SHALL</strong> contain at least one [1..*] <tt class="ph tt"><strong class="ph b">value</strong></tt> with data type CD, where the @code <strong class="ph b">SHALL</strong> be selected from ValueSet<tt class="ph tt"> <a class="xref" href="../terminology/TraumaCenterCriteria.html">TraumaCenterCriteria</a> 2.16.840.1.113883.17.3.5.3</tt><strong class="ph b"> STATIC</strong></li>
+<li class="li"><strong class="ph b">MAY</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">entry</strong></tt> (CONF:10097) <ol class="ol" type="a"><li class="li"> This entry <strong class="ph b">SHALL</strong> conform to <a class="xref" href="DerivedEntry.html" title="[Entry: templateId 2.16.840.1.1133883.17.3.10.1.24]">Derived Entry</a> template (templateId: <tt class="ph tt">2.16.840.1.1133883.17.3.10.1.24</tt>)</li>
+<li class="li"> This entry <strong class="ph b">SHALL</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">observation</strong></tt> <ol class="ol" type="i"><li class="li"> This observation <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt><tt class="ph tt"><strong class="ph b">/@code</strong>="67495-2" </tt><em class="ph i">Trauma Center Critieria</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10111)</li>
+<li class="li"> This observation <strong class="ph b">SHALL</strong> contain at least one [1..*] <tt class="ph tt"><strong class="ph b">value</strong></tt> with data type CD, where the @code <strong class="ph b">SHALL</strong> be selected from ValueSet<tt class="ph tt"> <a class="xref" href="../terminology/TraumaCenterCriteria.html">TraumaCenterCriteria</a> 2.16.840.1.113883.17.3.5.3</tt><strong class="ph b"> STATIC</strong> (CONF:10112)<div class="p"><p class="lines"><em class="ph i">NEMSIS Trace: EInjury.03</em></p>
+</div>
+</li>
+</ol>
+</li>
 </ol>
 
 </li>
 
-<li class="li">Contains zero or one [0..1] <tt class="ph tt"><strong class="ph b">entry</strong></tt> <ol class="ol" type="a"><li class="li"> This entry <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt><tt class="ph tt"><strong class="ph b">/@code</strong>="67496-0" </tt><em class="ph i">Other injury risk factors</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.1 LOINC</tt>)</li>
-<li class="li"> This entry <strong class="ph b">SHALL</strong> contain at least one [1..*] <tt class="ph tt"><strong class="ph b">value</strong></tt> with data type CD, where the @code <strong class="ph b">SHALL</strong> be selected from ValueSet<tt class="ph tt"> <a class="xref" href="../terminology/InjuryRiskFactor.html">InjuryRiskFactor</a> 2.16.840.1.113883.17.3.5.4</tt><strong class="ph b"> STATIC</strong></li>
+<li class="li"><strong class="ph b">MAY</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">entry</strong></tt> (CONF:10098) <ol class="ol" type="a"><li class="li"> This entry <strong class="ph b">SHALL</strong> conform to <a class="xref" href="DerivedEntry.html" title="[Entry: templateId 2.16.840.1.1133883.17.3.10.1.24]">Derived Entry</a> template (templateId: <tt class="ph tt">2.16.840.1.1133883.17.3.10.1.24</tt>)</li>
+<li class="li"> This entry <strong class="ph b">SHALL</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">observation</strong></tt> (CONF:10113) <ol class="ol" type="i"><li class="li"> This observation <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt><tt class="ph tt"><strong class="ph b">/@code</strong>="67496-0" </tt><em class="ph i">Other injury risk factors</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10114)</li>
+<li class="li"> This observation <strong class="ph b">SHALL</strong> contain at least one [1..*] <tt class="ph tt"><strong class="ph b">value</strong></tt> with data type CD, where the @code <strong class="ph b">SHALL</strong> be selected from ValueSet<tt class="ph tt"> <a class="xref" href="../terminology/InjuryRiskFactor.html">InjuryRiskFactor</a> 2.16.840.1.113883.17.3.5.4</tt><strong class="ph b"> STATIC</strong> (CONF:10115)<div class="p"><p class="lines"><em class="ph i">NEMSIS Trace: EInjury.04</em></p>
+</div>
+</li>
+</ol>
+</li>
 </ol>
 
 </li>
 
-<li class="li">Contains zero or one [0..1] <tt class="ph tt"><strong class="ph b">entry</strong></tt> <ol class="ol" type="a"><li class="li"> This entry <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt><tt class="ph tt"><strong class="ph b">/@code</strong>="67497-8" </tt><em class="ph i">Location of impact on the vehicle</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.1 LOINC</tt>)</li>
-<li class="li"> This entry <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">value</strong></tt> with data type CD, where the @code <strong class="ph b">SHALL</strong> be selected from ValueSet<tt class="ph tt"> <a class="xref" href="../terminology/VehicleImpactArea.html">VehicleImpactArea</a> 2.16.840.1.113883.17.3.5.5</tt><strong class="ph b"> STATIC</strong></li>
+<li class="li"><strong class="ph b">MAY</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">entry</strong></tt> (CONF:10099) <ol class="ol" type="a"><li class="li"> This entry <strong class="ph b">SHALL</strong> conform to <a class="xref" href="DerivedEntry.html" title="[Entry: templateId 2.16.840.1.1133883.17.3.10.1.24]">Derived Entry</a> template (templateId: <tt class="ph tt">2.16.840.1.1133883.17.3.10.1.24</tt>)</li>
+<li class="li"> This entry <strong class="ph b">SHALL</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">observation</strong></tt> (CONF:10116) <ol class="ol" type="i"><li class="li"> This observation <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt><tt class="ph tt"><strong class="ph b">/@code</strong>="67497-8" </tt><em class="ph i">Location of impact on the vehicle</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10117)</li>
+<li class="li"> This observation <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">value</strong></tt> with data type CD, where the @code <strong class="ph b">SHALL</strong> be selected from ValueSet<tt class="ph tt"> <a class="xref" href="../terminology/VehicleImpactArea.html">VehicleImpactArea</a> 2.16.840.1.113883.17.3.5.5</tt><strong class="ph b"> STATIC</strong> (CONF:10118)<div class="p"><p class="lines"><em class="ph i">NEMSIS Trace: EInjury.05</em></p>
+</div>
+</li>
+</ol>
+</li>
 </ol>
 
 </li>
 
-<li class="li">Contains zero or one [0..1] <tt class="ph tt"><strong class="ph b">entry</strong></tt> <ol class="ol" type="a"><li class="li"> This entry <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt><tt class="ph tt"><strong class="ph b">/@code</strong>="67498-6" </tt><em class="ph i">Location of patient in vehicle</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.1 LOINC</tt>)</li>
-<li class="li"> This entry <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">value</strong></tt> with data type CD, where the @code <strong class="ph b">SHALL</strong> be selected from ValueSet<tt class="ph tt"> <a class="xref" href="../terminology/VehiclePassengerLocation.html">VehiclePassengerLocation</a> 2.16.840.1.113883.17.3.5.6</tt><strong class="ph b"> STATIC</strong></li>
+<li class="li"><strong class="ph b">MAY</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">entry</strong></tt> (CONF:10100) <ol class="ol" type="a"><li class="li"> This entry <strong class="ph b">SHALL</strong> conform to <a class="xref" href="DerivedEntry.html" title="[Entry: templateId 2.16.840.1.1133883.17.3.10.1.24]">Derived Entry</a> template (templateId: <tt class="ph tt">2.16.840.1.1133883.17.3.10.1.24</tt>)</li>
+<li class="li"> This entry <strong class="ph b">SHALL</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">observation</strong></tt> (CONF:10119) <ol class="ol" type="i"><li class="li"> This observation <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt><tt class="ph tt"><strong class="ph b">/@code</strong>="67498-6" </tt><em class="ph i">Location of patient in vehicle</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10120)</li>
+<li class="li"> This observation <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">value</strong></tt> with data type CD, where the @code <strong class="ph b">SHALL</strong> be selected from ValueSet<tt class="ph tt"> <a class="xref" href="../terminology/VehiclePassengerLocation.html">VehiclePassengerLocation</a> 2.16.840.1.113883.17.3.5.6</tt><strong class="ph b"> STATIC</strong> (CONF:10121)<div class="p"><p class="lines"><em class="ph i">NEMSIS Trace: EInjury.06</em></p>
+</div>
+</li>
+</ol>
+</li>
 </ol>
 
 </li>
 
-<li class="li">Contains zero or one [0..1] <tt class="ph tt"><strong class="ph b">entry</strong></tt> <ol class="ol" type="a"><li class="li"> This entry <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt><tt class="ph tt"><strong class="ph b">/@code</strong>="67499-4" </tt><em class="ph i">Safety equipment</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.1 LOINC</tt>)</li>
-<li class="li"> This entry <strong class="ph b">SHALL</strong> contain at least one [1..*] <tt class="ph tt"><strong class="ph b">value</strong></tt> with data type CD, where the @code <strong class="ph b">SHALL</strong> be selected from ValueSet<tt class="ph tt"> <a class="xref" href="../terminology/SafetyEquipmentType.html">SafetyEquipmentType</a> 2.16.840.1.113883.17.3.5.7</tt><strong class="ph b"> STATIC</strong></li>
+<li class="li"><strong class="ph b">MAY</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">entry</strong></tt> (CONF:10101) <ol class="ol" type="a"><li class="li"> This entry <strong class="ph b">SHALL</strong> conform to <a class="xref" href="DerivedEntry.html" title="[Entry: templateId 2.16.840.1.1133883.17.3.10.1.24]">Derived Entry</a> template (templateId: <tt class="ph tt">2.16.840.1.1133883.17.3.10.1.24</tt>)</li>
+<li class="li"> This entry <strong class="ph b">SHALL</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">observation</strong></tt> (CONF:10122) <ol class="ol" type="i"><li class="li"> This observation <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt><tt class="ph tt"><strong class="ph b">/@code</strong>="67499-4" </tt><em class="ph i">Safety equipment</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10123)</li>
+<li class="li"> This observation <strong class="ph b">SHALL</strong> contain at least one [1..*] <tt class="ph tt"><strong class="ph b">value</strong></tt> with data type CD, where the @code <strong class="ph b">SHALL</strong> be selected from ValueSet<tt class="ph tt"> <a class="xref" href="../terminology/SafetyEquipmentType.html">SafetyEquipmentType</a> 2.16.840.1.113883.17.3.5.7</tt><strong class="ph b"> STATIC</strong> (CONF:10124)<div class="p"><p class="lines"><em class="ph i">NEMSIS Trace: EInjury.07</em></p>
+</div>
+</li>
+</ol>
+</li>
 </ol>
 
 </li>
 
-<li class="li">Contains zero or one [0..1] <tt class="ph tt"><strong class="ph b">entry</strong></tt> <ol class="ol" type="a"><li class="li"> This entry <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt><tt class="ph tt"><strong class="ph b">/@code</strong>="67500-9" </tt><em class="ph i">Airbag deployment</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.1 LOINC</tt>)</li>
-<li class="li"> This entry <strong class="ph b">SHALL</strong> contain zero or more [0..*] <tt class="ph tt"><strong class="ph b">value</strong></tt> with data type CD, where the @code <strong class="ph b">SHALL</strong> be selected from ValueSet<tt class="ph tt"> <a class="xref" href="../terminology/AirbagStatus.html">AirbagStatus</a> 2.16.840.1.113883.17.3.5.8</tt><strong class="ph b"> STATIC</strong></li>
+<li class="li"><strong class="ph b">MAY</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">entry</strong></tt> (CONF:10102) <ol class="ol" type="a"><li class="li"> This entry <strong class="ph b">SHALL</strong> conform to <a class="xref" href="DerivedEntry.html" title="[Entry: templateId 2.16.840.1.1133883.17.3.10.1.24]">Derived Entry</a> template (templateId: <tt class="ph tt">2.16.840.1.1133883.17.3.10.1.24</tt>)</li>
+<li class="li"> This entry <strong class="ph b">SHALL</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">observation</strong></tt> (CONF:10125) <ol class="ol" type="i"><li class="li"> This observation <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt><tt class="ph tt"><strong class="ph b">/@code</strong>="67500-9" </tt><em class="ph i">Airbag deployment</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10126)</li>
+<li class="li"> This observation <strong class="ph b">SHALL</strong> contain zero or more [0..*] <tt class="ph tt"><strong class="ph b">value</strong></tt> with data type CD, where the @code <strong class="ph b">SHALL</strong> be selected from ValueSet<tt class="ph tt"> <a class="xref" href="../terminology/AirbagStatus.html">AirbagStatus</a> 2.16.840.1.113883.17.3.5.8</tt><strong class="ph b"> STATIC</strong> (CONF:10127)<div class="p"><p class="lines"><em class="ph i">NEMSIS Trace: EInjury.08</em></p>
+</div>
+</li>
+</ol>
+</li>
 </ol>
 
 </li>
 
-<li class="li">Contains zero or one [0..1] <tt class="ph tt"><strong class="ph b">entry</strong></tt> <ol class="ol" type="a"><li class="li"> This entry <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt><tt class="ph tt"><strong class="ph b">/@code</strong>="67501-7" </tt><em class="ph i">Height of fall</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.1 LOINC</tt>)</li>
-<li class="li"> This entry <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">value</strong></tt> with data type PQ, where the @code <strong class="ph b">SHALL</strong> be selected from ValueSet<tt class="ph tt"/><strong class="ph b"> STATIC</strong></li>
+<li class="li"><strong class="ph b">MAY</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">entry</strong></tt> (CONF:10103) <ol class="ol" type="a"><li class="li"> This entry <strong class="ph b">SHALL</strong> conform to <a class="xref" href="DerivedEntry.html" title="[Entry: templateId 2.16.840.1.1133883.17.3.10.1.24]">Derived Entry</a> template (templateId: <tt class="ph tt">2.16.840.1.1133883.17.3.10.1.24</tt>)</li>
+<li class="li"> This entry <strong class="ph b">SHALL</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">observation</strong></tt> (CONF:10128) <ol class="ol" type="i"><li class="li"> This observation <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt><tt class="ph tt"><strong class="ph b">/@code</strong>="67501-7" </tt><em class="ph i">Height of fall</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10129)</li>
+<li class="li"> This observation <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">value</strong></tt> with data type PQ<div class="p"><p class="lines"><em class="ph i">NEMSIS Trace: EInjury.09</em></p>
+</div>
+</li>
+</ol>
+</li>
 </ol>
 
 </li>
 
-<li class="li">Contains zero or one [0..1] <tt class="ph tt"><strong class="ph b">text</strong></tt>
+<li class="li"><strong class="ph b">MAY</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">entry</strong></tt> (CONF:10104) <ol class="ol" type="a"><li class="li"> This entry <strong class="ph b">SHALL</strong> conform to <a class="xref" href="DerivedEntry.html" title="[Entry: templateId 2.16.840.1.1133883.17.3.10.1.24]">Derived Entry</a> template (templateId: <tt class="ph tt">2.16.840.1.1133883.17.3.10.1.24</tt>)</li>
+<li class="li"> This entry <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">observation</strong></tt> (CONF:10131) <ol class="ol" type="i"><li class="li"> This observation <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt><tt class="ph tt"><strong class="ph b">/@code</strong>="69463-8" </tt><em class="ph i">Suspected intentional or unintentional disaster</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10132)</li>
+<li class="li"> This observation <strong class="ph b">SHALL</strong> contain at least one [1..*] <tt class="ph tt"><strong class="ph b">value</strong></tt> with data type CD, where the @code <strong class="ph b">SHALL</strong> be selected from ValueSet<tt class="ph tt"> <a class="xref" href="../terminology/DisasterType.html">DisasterType</a> 2.16.840.1.113883.17.3.5.9</tt><strong class="ph b"> STATIC</strong> (CONF:10133)<div class="p"><p class="lines"><em class="ph i">NEMSIS Trace: EOther.07</em></p>
+</div>
 </li>
+</ol>
+</li>
+</ol>
 
-<li class="li">Contains zero or one [0..1] <tt class="ph tt"><strong class="ph b">title</strong></tt>
 </li>
 
 </ol>
-
 
 
 <p class="p"> </p>
@@ -113,7 +173,62 @@
 
 
 
-<pre class="pre codeblock"/>
+<pre class="pre codeblock">&lt;section xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3"&gt;
+  &lt;id root="MDHT" extension="215624032"/&gt;
+  &lt;title&gt;TEXT FOR TITLE&lt;/title&gt;
+  &lt;text/&gt;
+  &lt;entry&gt;
+    &lt;observation&gt;
+      &lt;code code="69543-7" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Injury Cause"/&gt;
+    &lt;/observation&gt;
+  &lt;/entry&gt;
+  &lt;entry&gt;
+    &lt;observation&gt;
+      &lt;code code="67494-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Injury Mechanism"/&gt;
+    &lt;/observation&gt;
+  &lt;/entry&gt;
+  &lt;entry&gt;
+    &lt;observation&gt;
+      &lt;code code="67495-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Trauma Center Critieria"/&gt;
+    &lt;/observation&gt;
+  &lt;/entry&gt;
+  &lt;entry&gt;
+    &lt;observation&gt;
+      &lt;code code="67496-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Other injury risk factors"/&gt;
+    &lt;/observation&gt;
+  &lt;/entry&gt;
+  &lt;entry&gt;
+    &lt;observation&gt;
+      &lt;code code="67497-8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Location of impact on the vehicle"/&gt;
+    &lt;/observation&gt;
+  &lt;/entry&gt;
+  &lt;entry&gt;
+    &lt;observation&gt;
+      &lt;code code="67498-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Location of patient in vehicle"/&gt;
+    &lt;/observation&gt;
+  &lt;/entry&gt;
+  &lt;entry&gt;
+    &lt;observation&gt;
+      &lt;code code="67499-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Safety equipment"/&gt;
+    &lt;/observation&gt;
+  &lt;/entry&gt;
+  &lt;entry&gt;
+    &lt;observation&gt;
+      &lt;code code="67500-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Airbag deployment"/&gt;
+    &lt;/observation&gt;
+  &lt;/entry&gt;
+  &lt;entry&gt;
+    &lt;observation&gt;
+      &lt;code code="67501-7" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Height of fall"/&gt;
+      &lt;value xsi:type="PQ"/&gt;
+    &lt;/observation&gt;
+  &lt;/entry&gt;
+  &lt;entry&gt;
+    &lt;observation&gt;
+      &lt;code code="69463-8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Suspected intentional or unintentional disaster"/&gt;
+    &lt;/observation&gt;
+  &lt;/entry&gt;
+&lt;/section&gt;</pre>
 
 </div>
 

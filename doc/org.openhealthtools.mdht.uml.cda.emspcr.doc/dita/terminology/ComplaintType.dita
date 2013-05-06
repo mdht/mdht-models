@@ -16,17 +16,16 @@
 <row><entry>Code System</entry><entry>LOINC - 2.16.840.1.113883.6.1</entry></row>
 <row><entry>Definition</entry><entry>Relative primacy of complaint</entry></row>
 </tbody></tgroup></table>
-<table><tgroup cols="4">
+<table><tgroup cols="3">
 <colspec colname="col1" colwidth="1*"/>
-<colspec colname="col2" colwidth="2*"/>
-<colspec colname="col3" colwidth="1*"/>
-<colspec colname="col4" colwidth="3*"/>
+<colspec colname="col2" colwidth="1*"/>
+<colspec colname="col3" colwidth="2*"/>
 <thead><row>
-<entry>Concept Code</entry><entry>Concept Name</entry><entry>Code System</entry><entry>Description</entry>
+<entry>Code</entry><entry>Code System</entry><entry>Print Name</entry>
 </row></thead><tbody>
-<row><entry>LA17059-9</entry><entry>Other (not listed)</entry><entry>LOINC</entry><entry></entry></row>
-<row><entry>LA18923-5</entry><entry>Chief - primary</entry><entry>LOINC</entry><entry></entry></row>
-<row><entry>LA18924-3</entry><entry>Secondary</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA17059-9</entry><entry>LOINC</entry><entry>Other (not listed)</entry></row>
+<row><entry>LA18923-5</entry><entry>LOINC</entry><entry>Chief - primary</entry></row>
+<row><entry>LA18924-3</entry><entry>LOINC</entry><entry>Secondary</entry></row>
 </tbody></tgroup></table>
 </section>
 </body>

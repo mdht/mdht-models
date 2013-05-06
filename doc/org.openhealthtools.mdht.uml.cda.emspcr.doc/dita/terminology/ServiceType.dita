@@ -16,21 +16,20 @@
 <row><entry>Code System</entry><entry>LOINC - 2.16.840.1.113883.6.1</entry></row>
 <row><entry>Definition</entry><entry>Category of service requested of an EMS agency</entry></row>
 </tbody></tgroup></table>
-<table><tgroup cols="4">
+<table><tgroup cols="3">
 <colspec colname="col1" colwidth="1*"/>
-<colspec colname="col2" colwidth="2*"/>
-<colspec colname="col3" colwidth="1*"/>
-<colspec colname="col4" colwidth="3*"/>
+<colspec colname="col2" colwidth="1*"/>
+<colspec colname="col3" colwidth="2*"/>
 <thead><row>
-<entry>Concept Code</entry><entry>Concept Name</entry><entry>Code System</entry><entry>Description</entry>
+<entry>Code</entry><entry>Code System</entry><entry>Print Name</entry>
 </row></thead><tbody>
-<row><entry>LA17150-6</entry><entry>Standby</entry><entry>LOINC</entry><entry></entry></row>
-<row><entry>LA18715-5</entry><entry>911 response (scene)</entry><entry>LOINC</entry><entry></entry></row>
-<row><entry>LA18716-3</entry><entry>Intercept</entry><entry>LOINC</entry><entry></entry></row>
-<row><entry>LA18717-1</entry><entry>Interfacility transport</entry><entry>LOINC</entry><entry></entry></row>
-<row><entry>LA18718-9</entry><entry>Medical transport</entry><entry>LOINC</entry><entry></entry></row>
-<row><entry>LA18719-7</entry><entry>Mutual aid</entry><entry>LOINC</entry><entry></entry></row>
-<row><entry>LA18720-5</entry><entry>Public assistance/other not listed</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA17150-6</entry><entry>LOINC</entry><entry>Standby</entry></row>
+<row><entry>LA18715-5</entry><entry>LOINC</entry><entry>911 response (scene)</entry></row>
+<row><entry>LA18716-3</entry><entry>LOINC</entry><entry>Intercept</entry></row>
+<row><entry>LA18717-1</entry><entry>LOINC</entry><entry>Interfacility transport</entry></row>
+<row><entry>LA18718-9</entry><entry>LOINC</entry><entry>Medical transport</entry></row>
+<row><entry>LA18719-7</entry><entry>LOINC</entry><entry>Mutual aid</entry></row>
+<row><entry>LA18720-5</entry><entry>LOINC</entry><entry>Public assistance/other not listed</entry></row>
 </tbody></tgroup></table>
 </section>
 </body>

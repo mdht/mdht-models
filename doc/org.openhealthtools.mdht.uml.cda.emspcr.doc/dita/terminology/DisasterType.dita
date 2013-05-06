@@ -16,28 +16,27 @@
 <row><entry>Code System</entry><entry>LOINC - 2.16.840.1.113883.6.1</entry></row>
 <row><entry>Definition</entry><entry>Kind of incident resulting in or likely to result in injuries or clinically adverse events</entry></row>
 </tbody></tgroup></table>
-<table><tgroup cols="4">
+<table><tgroup cols="3">
 <colspec colname="col1" colwidth="1*"/>
-<colspec colname="col2" colwidth="2*"/>
-<colspec colname="col3" colwidth="1*"/>
-<colspec colname="col4" colwidth="3*"/>
+<colspec colname="col2" colwidth="1*"/>
+<colspec colname="col3" colwidth="2*"/>
 <thead><row>
-<entry>Concept Code</entry><entry>Concept Name</entry><entry>Code System</entry><entry>Description</entry>
+<entry>Code</entry><entry>Code System</entry><entry>Print Name</entry>
 </row></thead><tbody>
-<row><entry>LA17594-5</entry><entry>Weather</entry><entry>LOINC</entry><entry></entry></row>
-<row><entry>LA18089-5</entry><entry>Biologic agent</entry><entry>LOINC</entry><entry></entry></row>
-<row><entry>LA18090-3</entry><entry>Building failure</entry><entry>LOINC</entry><entry></entry></row>
-<row><entry>LA18091-1</entry><entry>Chemical agent</entry><entry>LOINC</entry><entry></entry></row>
-<row><entry>LA18092-9</entry><entry>Explosive device</entry><entry>LOINC</entry><entry></entry></row>
-<row><entry>LA18093-7</entry><entry>Fire</entry><entry>LOINC</entry><entry></entry></row>
-<row><entry>LA18094-5</entry><entry>Hostage event</entry><entry>LOINC</entry><entry></entry></row>
-<row><entry>LA18095-2</entry><entry>Mass gathering</entry><entry>LOINC</entry><entry></entry></row>
-<row><entry>LA18096-0</entry><entry>Mass illness</entry><entry>LOINC</entry><entry></entry></row>
-<row><entry>LA18097-8</entry><entry>Nuclear agent</entry><entry>LOINC</entry><entry></entry></row>
-<row><entry>LA18098-6</entry><entry>Radioactive device</entry><entry>LOINC</entry><entry></entry></row>
-<row><entry>LA18099-4</entry><entry>Secondary destructive device</entry><entry>LOINC</entry><entry></entry></row>
-<row><entry>LA18100-0</entry><entry>Shooting/sniper</entry><entry>LOINC</entry><entry></entry></row>
-<row><entry>LA18101-8</entry><entry>Vehicular</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA17594-5</entry><entry>LOINC</entry><entry>Weather</entry></row>
+<row><entry>LA18089-5</entry><entry>LOINC</entry><entry>Biologic agent</entry></row>
+<row><entry>LA18090-3</entry><entry>LOINC</entry><entry>Building failure</entry></row>
+<row><entry>LA18091-1</entry><entry>LOINC</entry><entry>Chemical agent</entry></row>
+<row><entry>LA18092-9</entry><entry>LOINC</entry><entry>Explosive device</entry></row>
+<row><entry>LA18093-7</entry><entry>LOINC</entry><entry>Fire</entry></row>
+<row><entry>LA18094-5</entry><entry>LOINC</entry><entry>Hostage event</entry></row>
+<row><entry>LA18095-2</entry><entry>LOINC</entry><entry>Mass gathering</entry></row>
+<row><entry>LA18096-0</entry><entry>LOINC</entry><entry>Mass illness</entry></row>
+<row><entry>LA18097-8</entry><entry>LOINC</entry><entry>Nuclear agent</entry></row>
+<row><entry>LA18098-6</entry><entry>LOINC</entry><entry>Radioactive device</entry></row>
+<row><entry>LA18099-4</entry><entry>LOINC</entry><entry>Secondary destructive device</entry></row>
+<row><entry>LA18100-0</entry><entry>LOINC</entry><entry>Shooting/sniper</entry></row>
+<row><entry>LA18101-8</entry><entry>LOINC</entry><entry>Vehicular</entry></row>
 </tbody></tgroup></table>
 </section>
 </body>

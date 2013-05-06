@@ -16,25 +16,24 @@
 <row><entry>Code System</entry><entry>LOINC - 2.16.840.1.113883.6.1</entry></row>
 <row><entry>Definition</entry><entry>Finding resulting from EMS heart assessment</entry></row>
 </tbody></tgroup></table>
-<table><tgroup cols="4">
+<table><tgroup cols="3">
 <colspec colname="col1" colwidth="1*"/>
-<colspec colname="col2" colwidth="2*"/>
-<colspec colname="col3" colwidth="1*"/>
-<colspec colname="col4" colwidth="3*"/>
+<colspec colname="col2" colwidth="1*"/>
+<colspec colname="col3" colwidth="2*"/>
 <thead><row>
-<entry>Concept Code</entry><entry>Concept Name</entry><entry>Code System</entry><entry>Description</entry>
+<entry>Code</entry><entry>Code System</entry><entry>Print Name</entry>
 </row></thead><tbody>
-<row><entry>LA17239-7</entry><entry>Heart sounds decreased</entry><entry>LOINC</entry><entry></entry></row>
-<row><entry>LA17240-5</entry><entry>Murmur-diastolic</entry><entry>LOINC</entry><entry></entry></row>
-<row><entry>LA17241-3</entry><entry>Murmur-systolic</entry><entry>LOINC</entry><entry></entry></row>
-<row><entry>LA18241-2</entry><entry>Clicks</entry><entry>LOINC</entry><entry></entry></row>
-<row><entry>LA18242-0</entry><entry>S1</entry><entry>LOINC</entry><entry></entry></row>
-<row><entry>LA18243-8</entry><entry>S2</entry><entry>LOINC</entry><entry></entry></row>
-<row><entry>LA18244-6</entry><entry>S3</entry><entry>LOINC</entry><entry></entry></row>
-<row><entry>LA18245-3</entry><entry>S4</entry><entry>LOINC</entry><entry></entry></row>
-<row><entry>LA18246-1</entry><entry>Rubs</entry><entry>LOINC</entry><entry></entry></row>
-<row><entry>LA6626-1</entry><entry>Normal</entry><entry>LOINC</entry><entry></entry></row>
-<row><entry>LA6630-3</entry><entry>Not done</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA17239-7</entry><entry>LOINC</entry><entry>Heart sounds decreased</entry></row>
+<row><entry>LA17240-5</entry><entry>LOINC</entry><entry>Murmur-diastolic</entry></row>
+<row><entry>LA17241-3</entry><entry>LOINC</entry><entry>Murmur-systolic</entry></row>
+<row><entry>LA18241-2</entry><entry>LOINC</entry><entry>Clicks</entry></row>
+<row><entry>LA18242-0</entry><entry>LOINC</entry><entry>S1</entry></row>
+<row><entry>LA18243-8</entry><entry>LOINC</entry><entry>S2</entry></row>
+<row><entry>LA18244-6</entry><entry>LOINC</entry><entry>S3</entry></row>
+<row><entry>LA18245-3</entry><entry>LOINC</entry><entry>S4</entry></row>
+<row><entry>LA18246-1</entry><entry>LOINC</entry><entry>Rubs</entry></row>
+<row><entry>LA6626-1</entry><entry>LOINC</entry><entry>Normal</entry></row>
+<row><entry>LA6630-3</entry><entry>LOINC</entry><entry>Not done</entry></row>
 </tbody></tgroup></table>
 </section>
 </body>

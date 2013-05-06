@@ -16,19 +16,18 @@
 <row><entry>Code System</entry><entry>LOINC - 2.16.840.1.113883.6.1</entry></row>
 <row><entry>Definition</entry><entry>Role unit plays in response to an incident</entry></row>
 </tbody></tgroup></table>
-<table><tgroup cols="4">
+<table><tgroup cols="3">
 <colspec colname="col1" colwidth="1*"/>
-<colspec colname="col2" colwidth="2*"/>
-<colspec colname="col3" colwidth="1*"/>
-<colspec colname="col4" colwidth="3*"/>
+<colspec colname="col2" colwidth="1*"/>
+<colspec colname="col3" colwidth="2*"/>
 <thead><row>
-<entry>Concept Code</entry><entry>Concept Name</entry><entry>Code System</entry><entry>Description</entry>
+<entry>Code</entry><entry>Code System</entry><entry>Print Name</entry>
 </row></thead><tbody>
-<row><entry>LA17574-7</entry><entry>Air transport</entry><entry>LOINC</entry><entry></entry></row>
-<row><entry>LA17575-4</entry><entry>Ground transport</entry><entry>LOINC</entry><entry></entry></row>
-<row><entry>LA17576-2</entry><entry>Non-transport (care or assistance)</entry><entry>LOINC</entry><entry></entry></row>
-<row><entry>LA17577-0</entry><entry>Rescue</entry><entry>LOINC</entry><entry></entry></row>
-<row><entry>LA17578-8</entry><entry>Supervisor (administrative only)</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA17574-7</entry><entry>LOINC</entry><entry>Air transport</entry></row>
+<row><entry>LA17575-4</entry><entry>LOINC</entry><entry>Ground transport</entry></row>
+<row><entry>LA17576-2</entry><entry>LOINC</entry><entry>Non-transport (care or assistance)</entry></row>
+<row><entry>LA17577-0</entry><entry>LOINC</entry><entry>Rescue</entry></row>
+<row><entry>LA17578-8</entry><entry>LOINC</entry><entry>Supervisor (administrative only)</entry></row>
 </tbody></tgroup></table>
 </section>
 </body>

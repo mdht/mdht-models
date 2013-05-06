@@ -16,22 +16,21 @@
 <row><entry>Code System</entry><entry>LOINC - 2.16.840.1.113883.6.1</entry></row>
 <row><entry>Definition</entry><entry>Circumstance affecting likelihood of injury</entry></row>
 </tbody></tgroup></table>
-<table><tgroup cols="4">
+<table><tgroup cols="3">
 <colspec colname="col1" colwidth="1*"/>
-<colspec colname="col2" colwidth="2*"/>
-<colspec colname="col3" colwidth="1*"/>
-<colspec colname="col4" colwidth="3*"/>
+<colspec colname="col2" colwidth="1*"/>
+<colspec colname="col3" colwidth="2*"/>
 <thead><row>
-<entry>Concept Code</entry><entry>Concept Name</entry><entry>Code System</entry><entry>Description</entry>
+<entry>Code</entry><entry>Code System</entry><entry>Print Name</entry>
 </row></thead><tbody>
-<row><entry>LA17348-6</entry><entry>Fall adults: > 20 ft. (one story is equal to 10 ft.)</entry><entry>LOINC</entry><entry></entry></row>
-<row><entry>LA17349-4</entry><entry>Fall children: > 10 ft. or 2-3 times the height of the child</entry><entry>LOINC</entry><entry></entry></row>
-<row><entry>LA17350-2</entry><entry>Motorcycle crash > 20 mph</entry><entry>LOINC</entry><entry></entry></row>
-<row><entry>LA17352-8</entry><entry>Crash death in same passenger compartment</entry><entry>LOINC</entry><entry></entry></row>
-<row><entry>LA17353-6</entry><entry>Crash ejection (partial or complete) from vehicle</entry><entry>LOINC</entry><entry></entry></row>
-<row><entry>LA17357-7</entry><entry>Crash intrusion: > 12 in. occupant site; > 18 in. any site</entry><entry>LOINC</entry><entry></entry></row>
-<row><entry>LA17360-1</entry><entry>Auto v. pedestrian/bicyclist thrown, run over, or > 20 MPH impact</entry><entry>LOINC</entry><entry></entry></row>
-<row><entry>LA18124-0</entry><entry>Crash vehicle telemetry data (AACN) consistent with high risk of injury</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA17348-6</entry><entry>LOINC</entry><entry>Fall adults: > 20 ft. (one story is equal to 10 ft.)</entry></row>
+<row><entry>LA17349-4</entry><entry>LOINC</entry><entry>Fall children: > 10 ft. or 2-3 times the height of the child</entry></row>
+<row><entry>LA17350-2</entry><entry>LOINC</entry><entry>Motorcycle crash > 20 mph</entry></row>
+<row><entry>LA17352-8</entry><entry>LOINC</entry><entry>Crash death in same passenger compartment</entry></row>
+<row><entry>LA17353-6</entry><entry>LOINC</entry><entry>Crash ejection (partial or complete) from vehicle</entry></row>
+<row><entry>LA17357-7</entry><entry>LOINC</entry><entry>Crash intrusion: > 12 in. occupant site; > 18 in. any site</entry></row>
+<row><entry>LA17360-1</entry><entry>LOINC</entry><entry>Auto v. pedestrian/bicyclist thrown, run over, or > 20 MPH impact</entry></row>
+<row><entry>LA18124-0</entry><entry>LOINC</entry><entry>Crash vehicle telemetry data (AACN) consistent with high risk of injury</entry></row>
 </tbody></tgroup></table>
 </section>
 </body>

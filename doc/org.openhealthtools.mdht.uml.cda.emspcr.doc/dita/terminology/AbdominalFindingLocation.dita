@@ -16,20 +16,19 @@
 <row><entry>Code System</entry><entry>LOINC - 2.16.840.1.113883.6.1</entry></row>
 <row><entry>Definition</entry><entry>Location of finding resulting from EMS abdominal assessment</entry></row>
 </tbody></tgroup></table>
-<table><tgroup cols="4">
+<table><tgroup cols="3">
 <colspec colname="col1" colwidth="1*"/>
-<colspec colname="col2" colwidth="2*"/>
-<colspec colname="col3" colwidth="1*"/>
-<colspec colname="col4" colwidth="3*"/>
+<colspec colname="col2" colwidth="1*"/>
+<colspec colname="col3" colwidth="2*"/>
 <thead><row>
-<entry>Concept Code</entry><entry>Concept Name</entry><entry>Code System</entry><entry>Description</entry>
+<entry>Code</entry><entry>Code System</entry><entry>Print Name</entry>
 </row></thead><tbody>
-<row><entry>LA12698-9</entry><entry>Left upper quadrant</entry><entry>LOINC</entry><entry></entry></row>
-<row><entry>LA18721-3</entry><entry>Generalized</entry><entry>LOINC</entry><entry></entry></row>
-<row><entry>LA18722-1</entry><entry>Left lower quadrant</entry><entry>LOINC</entry><entry></entry></row>
-<row><entry>LA18723-9</entry><entry>Right upper quadrant</entry><entry>LOINC</entry><entry></entry></row>
-<row><entry>LA18724-7</entry><entry>Periumbilical</entry><entry>LOINC</entry><entry></entry></row>
-<row><entry>LA18725-4</entry><entry>Right lower quadrant</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA12698-9</entry><entry>LOINC</entry><entry>Left upper quadrant</entry></row>
+<row><entry>LA18721-3</entry><entry>LOINC</entry><entry>Generalized</entry></row>
+<row><entry>LA18722-1</entry><entry>LOINC</entry><entry>Left lower quadrant</entry></row>
+<row><entry>LA18723-9</entry><entry>LOINC</entry><entry>Right upper quadrant</entry></row>
+<row><entry>LA18724-7</entry><entry>LOINC</entry><entry>Periumbilical</entry></row>
+<row><entry>LA18725-4</entry><entry>LOINC</entry><entry>Right lower quadrant</entry></row>
 </tbody></tgroup></table>
 </section>
 </body>

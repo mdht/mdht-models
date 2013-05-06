@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html
   PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html lang="en-us" xml:lang="en-us">
+<html xml:lang="en-us" lang="en-us">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 <meta name="copyright" content="(C) Copyright 2005"/>
@@ -18,7 +18,7 @@
 <link rel="stylesheet" type="text/css" href="../css/commonltr.css"/>
 <title>EMS Disposition Section</title>
 </head>
-<body id="classId"><a name="classId"><!-- --></a>
+<body id="classId">
 <div>
 	<p><b>For Discussion and Demonstration Only</b> The Normative content for these specifications
 	may be found on the HL7, IHE, and HITSP web sites.</p>
@@ -30,6 +30,9 @@
 
 <div class="body"><p class="shortdesc">[Section: templateId <tt class="ph tt">2.16.840.1.113883.17.3.10.1.4</tt>]</p>
 
+<div class="section">
+</div>
+
 
 <div class="section">
 </div>
@@ -37,75 +40,98 @@
 
 
 <ol class="ol">
-<li class="li"><strong class="ph b">SHALL</strong> conform to <a class="xref" href="DerivedCDASection.html" title="[Section: templateId null]">Derived CDA Section</a></li>
-
-<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt><tt class="ph tt"><strong class="ph b">/@code</strong>="67796?3" </tt><em class="ph i">EMS Disposition</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.1 LOINC</tt>)
-</li>
-
-<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">text</strong></tt>
-</li>
-
-<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">title</strong></tt> = "EMS Disposition"
-</li>
-
-<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">eMSNumberOfPatientsRelationship</strong></tt> <ol class="ol" type="a"><li class="li"> This eMSNumberOfPatientsRelationship <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">observation</strong></tt> <ol class="ol" type="i"><li class="li"> This observation <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt><tt class="ph tt"><strong class="ph b">/@code</strong>="67547?0" </tt><em class="ph i">EMS Number of patients</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.1 LOINC</tt>)</li>
-<li class="li"> This observation <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">value</strong></tt> with data type INT</li>
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] templateId (  ) such that it <ol class="ol" type="a"><li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <strong class="ph b">@root</strong>="2.16.840.1.113883.17.3.10.1.4"</li>
 </ol>
- </li>
-</ol>
-
 </li>
 
-<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">eMSIncidentDispositionRelationship</strong></tt> <ol class="ol" type="a"><li class="li"> This eMSIncidentDispositionRelationship <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">observation</strong></tt> <ol class="ol" type="i"><li class="li"> This observation <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt><tt class="ph tt"><strong class="ph b">/@code</strong>="67548?8" </tt><em class="ph i">EMS incident disposition</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.1 LOINC</tt>)</li>
-<li class="li"> This observation <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">value</strong></tt> with data type CD, where the @code <strong class="ph b">SHALL</strong> be selected from ValueSet<tt class="ph tt"> <a class="xref" href="../terminology/IncidentOutcome.html">IncidentOutcome</a> 2.16.840.1.113883.17.3.5.64</tt><strong class="ph b"> STATIC</strong></li>
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt> (CONF:10652)<tt class="ph tt"><strong class="ph b">/@code</strong>="67796-3" </tt><em class="ph i">EMS Disposition Section</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10651)
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">title</strong></tt> and <strong class="ph b">SHOULD</strong> equal "EMS Disposition" (CONF:10654)
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">text</strong></tt> (CONF:10653)
+</li>
+
+<li class="li"><strong class="ph b">MAY</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">entry</strong></tt> (CONF:10656) <ol class="ol" type="a"><li class="li"> This entry <strong class="ph b">SHALL</strong> conform to <a class="xref" href="DerivedEntry.html" title="[Entry: templateId 2.16.840.1.1133883.17.3.10.1.24]">Derived Entry</a> template (templateId: <tt class="ph tt">2.16.840.1.1133883.17.3.10.1.24</tt>)</li>
+<li class="li"> This entry <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">observation</strong></tt> (CONF:10663) <ol class="ol" type="i"><li class="li"> This observation <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt> (CONF:10665)<tt class="ph tt"><strong class="ph b">/@code</strong>="67547-0" </tt><em class="ph i">EMS Number of patients</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10664)</li>
+<li class="li"> This observation <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">value</strong></tt> with data type INT (CONF:10666)<div class="p"><p class="lines"><em class="ph i">NEMSIS Trace: eScene.06</em></p>
+</div>
+</li>
 </ol>
- </li>
+</li>
 </ol>
 
 </li>
 
-<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">eMSTransportMethodRelationship</strong></tt> <ol class="ol" type="a"><li class="li"/>
+<li class="li"><strong class="ph b">MAY</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">entry</strong></tt> (CONF:10657) <ol class="ol" type="a"><li class="li"> This entry <strong class="ph b">SHALL</strong> conform to <a class="xref" href="DerivedEntry.html" title="[Entry: templateId 2.16.840.1.1133883.17.3.10.1.24]">Derived Entry</a> template (templateId: <tt class="ph tt">2.16.840.1.1133883.17.3.10.1.24</tt>)</li>
+<li class="li"> This entry <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">observation</strong></tt> (CONF:10667) <ol class="ol" type="i"><li class="li"> This observation <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt> (CONF:10669)<tt class="ph tt"><strong class="ph b">/@code</strong>="67548-8" </tt><em class="ph i">EMS incident disposition</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10668)</li>
+<li class="li"> This observation <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">value</strong></tt> with data type CD (CONF:10670), where the @code <strong class="ph b">SHALL</strong> be selected from ValueSet<tt class="ph tt"> <a class="xref" href="../terminology/IncidentOutcome.html">IncidentOutcome</a> 2.16.840.1.113883.17.3.5.64</tt><strong class="ph b"> STATIC</strong> (CONF:10671)<div class="p"><p class="lines"><em class="ph i">NEMSIS Trace: EDisposition.12</em></p>
+</div>
+</li>
+</ol>
+</li>
 </ol>
 
 </li>
 
-<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">eMSTransportModeRelationship</strong></tt> <ol class="ol" type="a"><li class="li"> This eMSTransportModeRelationship <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">observation</strong></tt> <ol class="ol" type="i"><li class="li"> This observation <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt><tt class="ph tt"><strong class="ph b">/@code</strong>="67550?4" </tt><em class="ph i">EMS transport mode</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.1 LOINC</tt>)</li>
-<li class="li"> This observation <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">value</strong></tt> with data type CD, where the @code <strong class="ph b">SHALL</strong> be selected from ValueSet<tt class="ph tt"> <a class="xref" href="../terminology/TransportMode.html">TransportMode</a> 2.16.840.1.113883.17.3.5.66</tt><strong class="ph b"> STATIC</strong></li>
+<li class="li"><strong class="ph b">MAY</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">entry</strong></tt> (CONF:10658) <ol class="ol" type="a"><li class="li"> This entry <strong class="ph b">SHALL</strong> conform to <a class="xref" href="DerivedEntry.html" title="[Entry: templateId 2.16.840.1.1133883.17.3.10.1.24]">Derived Entry</a> template (templateId: <tt class="ph tt">2.16.840.1.1133883.17.3.10.1.24</tt>)</li>
+<li class="li"> This entry <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">observation</strong></tt> (CONF:10672) <ol class="ol" type="i"><li class="li"> This observation <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt> (CONF:10674)<tt class="ph tt"><strong class="ph b">/@code</strong>="67550-4" </tt><em class="ph i">EMS transport mode</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10673)</li>
+<li class="li"> This observation <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">value</strong></tt> with data type CD (CONF:10675), where the @code <strong class="ph b">SHALL</strong> be selected from ValueSet<tt class="ph tt"/><strong class="ph b"> STATIC</strong> (CONF:10676)<div class="p"><p class="lines"><em class="ph i">NEMSIS Trace: EDisposition.17</em></p>
+</div>
+</li>
 </ol>
- </li>
+</li>
 </ol>
 
 </li>
 
-<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">eMSPatientConditionChangeAtDestinatinoRelationship</strong></tt> <ol class="ol" type="a"><li class="li"> This eMSPatientConditionChangeAtDestinatinoRelationship <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">observation</strong></tt> <ol class="ol" type="i"><li class="li"> This observation <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt><tt class="ph tt"><strong class="ph b">/@code</strong>="67551?2" </tt><em class="ph i">EMS patient condition change at destination</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.1 LOINC</tt>)</li>
-<li class="li"> This observation <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">value</strong></tt> with data type CD, where the @code <strong class="ph b">SHALL</strong> be selected from ValueSet<tt class="ph tt"> <a class="xref" href="../terminology/PatientConditionChange.html">PatientConditionChange</a> 2.16.840.1.113883.17.3.5.59</tt><strong class="ph b"> STATIC</strong></li>
+<li class="li"><strong class="ph b">MAY</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">entry</strong></tt> (CONF:10659) <ol class="ol" type="a"><li class="li"> This entry <strong class="ph b">SHALL</strong> conform to <a class="xref" href="DerivedEntry.html" title="[Entry: templateId 2.16.840.1.1133883.17.3.10.1.24]">Derived Entry</a> template (templateId: <tt class="ph tt">2.16.840.1.1133883.17.3.10.1.24</tt>)</li>
+<li class="li"> This entry <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">observation</strong></tt> (CONF:10682) <ol class="ol" type="i"><li class="li"> This observation <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt> (CONF:10684)<tt class="ph tt"><strong class="ph b">/@code</strong>="67552-0" </tt><em class="ph i">EMS reason for choosing destination</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10683)</li>
+<li class="li"> This observation <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">value</strong></tt> with data type CD (CONF:10685), where the @code <strong class="ph b">SHALL</strong> be selected from ValueSet<tt class="ph tt"> <a class="xref" href="../terminology/DestinationChoiceReason.html">DestinationChoiceReason</a> 2.16.840.1.113883.17.3.5.68</tt><strong class="ph b"> STATIC</strong> (CONF:10686)<div class="p"><p class="lines"><em class="ph i">NEMSIS Trace: EDisposition.20</em></p>
+</div>
+</li>
 </ol>
- </li>
+</li>
 </ol>
 
 </li>
 
-<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">eMSReasonForChoosingDestinationRelationship</strong></tt> <ol class="ol" type="a"><li class="li"> This eMSReasonForChoosingDestinationRelationship <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">observation</strong></tt> <ol class="ol" type="i"><li class="li"> This observation <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt><tt class="ph tt"><strong class="ph b">/@code</strong>="67552?0" </tt><em class="ph i">EMS reason for choosing destination</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.1 LOINC</tt>)</li>
-<li class="li"> This observation <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">value</strong></tt> with data type CD, where the @code <strong class="ph b">SHALL</strong> be selected from ValueSet<tt class="ph tt"> <a class="xref" href="../terminology/DestinationChoiceReason.html">DestinationChoiceReason</a> 2.16.840.1.113883.17.3.5.68</tt><strong class="ph b"> STATIC</strong></li>
-</ol>
- </li>
-</ol>
-
+<li class="li"><strong class="ph b">MAY</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">entry</strong></tt> (CONF:10660) <ol class="ol" type="a"><li class="li"> This entry <strong class="ph b">SHALL</strong> conform to <a class="xref" href="DerivedEntry.html" title="[Entry: templateId 2.16.840.1.1133883.17.3.10.1.24]">Derived Entry</a> template (templateId: <tt class="ph tt">2.16.840.1.1133883.17.3.10.1.24</tt>)</li>
+<li class="li"> This entry <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">observation</strong></tt> (CONF:10687) <ol class="ol" type="i"><li class="li"> This observation <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt> (CONF:10689)<tt class="ph tt"><strong class="ph b">/@code</strong>="69462-0" </tt><em class="ph i">EMS prearrival activation performed</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10688)</li>
+<li class="li"> This observation <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">value</strong></tt> with data type BL (CONF:10690)<div class="p"><p class="lines"><em class="ph i">NEMSIS Trace: EDisposition.24</em></p>
+</div>
 </li>
-
-<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">eMSPrearrivalActivationRelationship</strong></tt> <ol class="ol" type="a"><li class="li"> This eMSPrearrivalActivationRelationship <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">observation</strong></tt> <ol class="ol" type="i"><li class="li"> This observation <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt><tt class="ph tt"><strong class="ph b">/@code</strong>="69462?0" </tt><em class="ph i">EMS prearrival activation performed</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.1 LOINC</tt>)</li>
-<li class="li"> This observation <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">value</strong></tt> with data type BL</li>
-<li class="li"> This observation <strong class="ph b">SHALL</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">effectiveTime</strong></tt><p class="p"><em class="ph i">NEMSIS Trace: EDisposition.25
+<li class="li"> This observation <strong class="ph b">SHALL</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">effectiveTime</strong></tt> (CONF:10691)<div class="p"><p class="lines"><em class="ph i">NEMSIS Trace: EDisposition.25<br/>
 Required if value is TRUE</em></p>
+</div>
 </li>
 </ol>
- </li>
+</li>
+</ol>
+
+</li>
+
+<li class="li"><strong class="ph b">MAY</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">entry</strong></tt> (CONF:10661) <ol class="ol" type="a"><li class="li"> This entry <strong class="ph b">SHALL</strong> conform to <a class="xref" href="DerivedEntry.html" title="[Entry: templateId 2.16.840.1.1133883.17.3.10.1.24]">Derived Entry</a> template (templateId: <tt class="ph tt">2.16.840.1.1133883.17.3.10.1.24</tt>)</li>
+<li class="li"> This entry <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">observation</strong></tt> (CONF:10692) <ol class="ol" type="i"><li class="li"> This observation <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt> (CONF:10694)<tt class="ph tt"><strong class="ph b">/@code</strong>="67551-2" </tt><em class="ph i">EMS patient condition change at destination</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10693)</li>
+<li class="li"> This observation <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">value</strong></tt> with data type CD (CONF:10695), where the @code <strong class="ph b">SHALL</strong> be selected from ValueSet<tt class="ph tt"> <a class="xref" href="../terminology/PatientConditionChange.html">PatientConditionChange</a> 2.16.840.1.113883.17.3.5.59</tt><strong class="ph b"> STATIC</strong> (CONF:10696)<div class="p"><p class="lines"><em class="ph i">NEMSIS Trace: EDisposition.19</em></p>
+</div>
+</li>
+</ol>
+</li>
+</ol>
+
+</li>
+
+<li class="li"><strong class="ph b">MAY</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">entry</strong></tt> (CONF:10662) <ol class="ol" type="a"><li class="li"> This entry <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt> (CONF:10679)<tt class="ph tt"><strong class="ph b">/@code</strong>="67549-6" </tt><em class="ph i">EMS transport method</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10678)</li>
+<li class="li"> This entry <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">value</strong></tt> with data type CD (CONF:10680), where the @code <strong class="ph b">SHALL</strong> be selected from ValueSet<tt class="ph tt"> <a class="xref" href="../terminology/TransportMethod.html">TransportMethod</a> 2.16.840.1.113883.17.3.5.65</tt><strong class="ph b"> STATIC</strong> (CONF:10681)<div class="p"><p class="lines"><em class="ph i">NEMSIS Trace: EDisposition.16</em></p>
+</div>
+</li>
 </ol>
 
 </li>
 
 </ol>
-
 
 
 <p class="p"> </p>
@@ -114,7 +140,52 @@ Required if value is TRUE</em></p>
 
 
 
-<pre class="pre codeblock"/>
+<pre class="pre codeblock">&lt;section xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3"&gt;
+  &lt;id root="MDHT" extension="2096783942"/&gt;
+  &lt;code code="1472099383"/&gt;
+  &lt;title&gt;TEXT FOR TITLE&lt;/title&gt;
+  &lt;text/&gt;
+  &lt;entry&gt;
+    &lt;observation&gt;
+      &lt;code code="67547-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="EMS Number of patients"/&gt;
+      &lt;value xsi:type="INT" value="1"/&gt;
+    &lt;/observation&gt;
+  &lt;/entry&gt;
+  &lt;entry&gt;
+    &lt;observation&gt;
+      &lt;code code="67548-8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="EMS incident disposition"/&gt;
+      &lt;value xsi:type="CD" code="804053016"/&gt;
+    &lt;/observation&gt;
+  &lt;/entry&gt;
+  &lt;entry&gt;
+    &lt;observation&gt;
+      &lt;code code="67550-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="EMS transport mode"/&gt;
+      &lt;value xsi:type="CD" code="1415334662"/&gt;
+    &lt;/observation&gt;
+  &lt;/entry&gt;
+  &lt;entry&gt;
+    &lt;observation&gt;
+      &lt;code code="67552-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="EMS reason for choosing destination"/&gt;
+      &lt;value xsi:type="CD" code="1528604586"/&gt;
+    &lt;/observation&gt;
+  &lt;/entry&gt;
+  &lt;entry&gt;
+    &lt;observation&gt;
+      &lt;code code="69462-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="EMS prearrival activation performed"/&gt;
+      &lt;effectiveTime&gt;
+        &lt;low value="2013"/&gt;
+        &lt;high value="2013"/&gt;
+      &lt;/effectiveTime&gt;
+      &lt;value xsi:type="BL"/&gt;
+    &lt;/observation&gt;
+  &lt;/entry&gt;
+  &lt;entry&gt;
+    &lt;observation&gt;
+      &lt;code code="67551-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="EMS patient condition change at destination"/&gt;
+      &lt;value xsi:type="CD" code="1518463852"/&gt;
+    &lt;/observation&gt;
+  &lt;/entry&gt;
+&lt;/section&gt;</pre>
 
 </div>
 

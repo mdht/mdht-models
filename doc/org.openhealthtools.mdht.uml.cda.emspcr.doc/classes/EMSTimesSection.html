@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html
   PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html lang="en-us" xml:lang="en-us">
+<html xml:lang="en-us" lang="en-us">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 <meta name="copyright" content="(C) Copyright 2005"/>
@@ -18,7 +18,7 @@
 <link rel="stylesheet" type="text/css" href="../css/commonltr.css"/>
 <title>EMS Times Section</title>
 </head>
-<body id="classId"><a name="classId"><!-- --></a>
+<body id="classId">
 <div>
 	<p><b>For Discussion and Demonstration Only</b> The Normative content for these specifications
 	may be found on the HL7, IHE, and HITSP web sites.</p>
@@ -30,6 +30,9 @@
 
 <div class="body"><p class="shortdesc">[Section: templateId <tt class="ph tt">2.16.840.1.113883.17.3.10.1.10</tt>]</p>
 
+<div class="section">
+</div>
+
 
 <div class="section">
 </div>
@@ -37,19 +40,80 @@
 
 
 <ol class="ol">
-<li class="li"><strong class="ph b">SHALL</strong> conform to <a class="xref" href="DerivedCDASection.html" title="[Section: templateId null]">Derived CDA Section</a></li>
-
-<li class="li"><strong class="ph b">SHALL</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">code</strong></tt><tt class="ph tt"><strong class="ph b">/@code</strong>="67667-6" </tt><em class="ph i">EMS Times</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.1 LOINC</tt>)
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] templateId (  ) such that it <ol class="ol" type="a"><li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <strong class="ph b">@root</strong>="2.16.840.1.113883.17.3.10.1.10"</li>
+</ol>
 </li>
 
-<li class="li"><strong class="ph b">SHALL</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">text</strong></tt>
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt><tt class="ph tt"><strong class="ph b">/@code</strong>="67667-6" </tt><em class="ph i">EMS Times Section</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10820)
 </li>
 
-<li class="li"><strong class="ph b">SHOULD</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">title</strong></tt> = "EMS Times"
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">title</strong></tt> and <strong class="ph b">SHOULD</strong> equal "EMS Times" (CONF:10822)
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">text</strong></tt> (CONF:10821)
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">entry</strong></tt> (CONF:10832) <ol class="ol" type="a"><li class="li"> This entry <strong class="ph b">SHALL</strong> conform to <a class="xref" href="DerivedEntry.html" title="[Entry: templateId 2.16.840.1.1133883.17.3.10.1.24]">Derived Entry</a> template (templateId: <tt class="ph tt">2.16.840.1.1133883.17.3.10.1.24</tt>)</li>
+<li class="li"> This entry <strong class="ph b">SHALL</strong> contain zero or more [0..*] <tt class="ph tt"><strong class="ph b">observation</strong></tt> (CONF:10833) <ol class="ol" type="i"><li class="li"> Such observations <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt> (CONF:10835)<tt class="ph tt"><strong class="ph b">/@code</strong>="69469-5" </tt><em class="ph i">Call time</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10834)</li>
+<li class="li"> Such observations <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">value</strong></tt> with data type TS (CONF:10836)<div class="p"><p class="lines"><em class="ph i">NEMSIS Trace: ETimes.01</em></p>
+</div>
+</li>
+</ol>
+</li>
+<li class="li"> This entry <strong class="ph b">SHALL</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">observation</strong></tt> <ol class="ol" type="i"><li class="li"> This observation <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt> (CONF:10839)<tt class="ph tt"><strong class="ph b">/@code</strong>="69471-1" </tt><em class="ph i">Unit notified time</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10838)</li>
+<li class="li"> This observation <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">value</strong></tt> with data type TS (CONF:10840)<div class="p"><p class="lines"><em class="ph i">NEMSIS Trace: ETimes.03<br/>
+This is the value represented in the header for the encompassing encounter</em></p>
+</div>
+</li>
+</ol>
+</li>
+<li class="li"> This entry <strong class="ph b">SHALL</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">observation</strong></tt> <ol class="ol" type="i"><li class="li"> This observation <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt> (CONF:10843)<tt class="ph tt"><strong class="ph b">/@code</strong>="69472-9" </tt><em class="ph i">Unit en route time</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10842)</li>
+<li class="li"> This observation <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">value</strong></tt> with data type TS (CONF:10844)<div class="p"><p class="lines"><em class="ph i">NEMSIS Trace: ETimes.05</em></p>
+</div>
+</li>
+</ol>
+</li>
+<li class="li"> This entry <strong class="ph b">SHALL</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">observation</strong></tt> <ol class="ol" type="i"><li class="li"> This observation <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt> (CONF:10847)<tt class="ph tt"><strong class="ph b">/@code</strong>="69473-7" </tt><em class="ph i">Unit on scene time</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10846)</li>
+<li class="li"> This observation <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">value</strong></tt> with data type TS (CONF:10848)<div class="p"><p class="lines"><em class="ph i">NEMSIS Trace: ETimes.06</em></p>
+</div>
+</li>
+</ol>
+</li>
+<li class="li"> This entry <strong class="ph b">SHALL</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">observation</strong></tt> <ol class="ol" type="i"><li class="li"> This observation <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt> (CONF:10851)<tt class="ph tt"><strong class="ph b">/@code</strong>="69474-5" </tt><em class="ph i">Unit at patient time</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10850)</li>
+<li class="li"> This observation <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">value</strong></tt> with data type TS (CONF:10852)<div class="p"><p class="lines"><em class="ph i">NEMSIS Trace: ETimes.07</em></p>
+</div>
+</li>
+</ol>
+</li>
+<li class="li"> This entry <strong class="ph b">SHALL</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">observation</strong></tt> <ol class="ol" type="i"><li class="li"> This observation <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt> (CONF:10855)<tt class="ph tt"><strong class="ph b">/@code</strong>="69475-2" </tt><em class="ph i">Unit left scene time</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10854)</li>
+<li class="li"> This observation <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">value</strong></tt> with data type TS (CONF:10856)<div class="p"><p class="lines"><em class="ph i">NEMSIS Trace: ETimes.09</em></p>
+</div>
+</li>
+</ol>
+</li>
+<li class="li"> This entry <strong class="ph b">SHALL</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">observation</strong></tt> <ol class="ol" type="i"><li class="li"> This observation <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt> (CONF:10859)<tt class="ph tt"><strong class="ph b">/@code</strong>="69476-0" </tt><em class="ph i">Patient arrived at destination time</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10858)</li>
+<li class="li"> This observation <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">value</strong></tt> with data type TS (CONF:10860)<div class="p"><p class="lines"><em class="ph i">NEMSIS Trace: ETimes.11</em></p>
+</div>
+</li>
+</ol>
+</li>
+<li class="li"> This entry <strong class="ph b">SHALL</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">observation</strong></tt> <ol class="ol" type="i"><li class="li"> This observation <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt> (CONF:10863)<tt class="ph tt"><strong class="ph b">/@code</strong>="69477-8" </tt><em class="ph i">Unit back in service time</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10862)</li>
+<li class="li"> This observation <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">value</strong></tt> with data type TS (CONF:10864)<div class="p"><p class="lines"><em class="ph i">NEMSIS Trace: ETimes.13</em></p>
+</div>
+</li>
+</ol>
+</li>
+<li class="li"> This entry <strong class="ph b">SHALL</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">observation</strong></tt> <ol class="ol" type="i"><li class="li"> This observation <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt> (CONF:10867)<tt class="ph tt"><strong class="ph b">/@code</strong>="69470-3" </tt><em class="ph i">Dispatch notified time</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10866)</li>
+<li class="li"> This observation <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">value</strong></tt> with data type TS (CONF:10868)<div class="p"><p class="lines"><em class="ph i">NEMSIS Trace: ETimes.02</em></p>
+</div>
+</li>
+</ol>
+</li>
+</ol>
+
 </li>
 
 </ol>
-
 
 
 <p class="p"> </p>
@@ -58,7 +122,17 @@
 
 
 
-<pre class="pre codeblock"/>
+<pre class="pre codeblock">&lt;section xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3"&gt;
+  &lt;id root="MDHT" extension="1938530753"/&gt;
+  &lt;title&gt;TEXT FOR TITLE&lt;/title&gt;
+  &lt;text/&gt;
+  &lt;entry&gt;
+    &lt;observation&gt;
+      &lt;code code="69470-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Dispatch notified time"/&gt;
+      &lt;value xsi:type="TS"/&gt;
+    &lt;/observation&gt;
+  &lt;/entry&gt;
+&lt;/section&gt;</pre>
 
 </div>
 

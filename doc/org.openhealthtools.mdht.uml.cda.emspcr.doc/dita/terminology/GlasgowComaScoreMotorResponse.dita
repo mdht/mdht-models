@@ -16,20 +16,19 @@
 <row><entry>Code System</entry><entry>LOINC - 2.16.840.1.113883.6.1</entry></row>
 <row><entry>Definition</entry><entry>Patient's motor response to stimulation</entry></row>
 </tbody></tgroup></table>
-<table><tgroup cols="4">
+<table><tgroup cols="3">
 <colspec colname="col1" colwidth="1*"/>
-<colspec colname="col2" colwidth="2*"/>
-<colspec colname="col3" colwidth="1*"/>
-<colspec colname="col4" colwidth="3*"/>
+<colspec colname="col2" colwidth="1*"/>
+<colspec colname="col3" colwidth="2*"/>
 <thead><row>
-<entry>Concept Code</entry><entry>Concept Name</entry><entry>Code System</entry><entry>Description</entry>
+<entry>Code</entry><entry>Code System</entry><entry>Print Name</entry>
 </row></thead><tbody>
-<row><entry>LA17727-1</entry><entry>Withdrawal from pain</entry><entry>LOINC</entry><entry></entry></row>
-<row><entry>LA17797-4</entry><entry>Obeys commands (&gt;2 yrs); Appropriate response to stimulation (&lt;=2 yrs)</entry><entry>LOINC</entry><entry></entry></row>
-<row><entry>LA6562-8</entry><entry>No motor response</entry><entry>LOINC</entry><entry></entry></row>
-<row><entry>LA6563-6</entry><entry>Extension to pain</entry><entry>LOINC</entry><entry></entry></row>
-<row><entry>LA6564-4</entry><entry>Flexion to pain</entry><entry>LOINC</entry><entry></entry></row>
-<row><entry>LA6566-9</entry><entry>Localizing pain</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA17727-1</entry><entry>LOINC</entry><entry>Withdrawal from pain</entry></row>
+<row><entry>LA17797-4</entry><entry>LOINC</entry><entry>Obeys commands (&gt;2 yrs); Appropriate response to stimulation (&lt;=2 yrs)</entry></row>
+<row><entry>LA6562-8</entry><entry>LOINC</entry><entry>No motor response</entry></row>
+<row><entry>LA6563-6</entry><entry>LOINC</entry><entry>Extension to pain</entry></row>
+<row><entry>LA6564-4</entry><entry>LOINC</entry><entry>Flexion to pain</entry></row>
+<row><entry>LA6566-9</entry><entry>LOINC</entry><entry>Localizing pain</entry></row>
 </tbody></tgroup></table>
 </section>
 </body>

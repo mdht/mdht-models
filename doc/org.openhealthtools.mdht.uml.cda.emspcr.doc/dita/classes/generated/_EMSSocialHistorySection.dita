@@ -8,31 +8,48 @@
 <resourceid id="2.16.840.1.113883.17.3.10.1.22"/>
 </prolog>
 <body>
+<section id="knownSubclasses">
+</section>
 <section id="description">
 </section>
 <ol id="conformance">
+<li><b>SHALL</b> contain exactly one [1..1] templateId (  ) such that it <ol><li><b>SHALL</b> contain exactly one [1..1] <b>@root</b>="2.16.840.1.113883.17.3.10.1.22"</li></ol></li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:10241)<tt><b>/@code</b>="67843-3" </tt><i>EMS Social History Section</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10240)
 </li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>title</b></tt> = "EMS Social History" (CONF:10243)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>title</b></tt> and <b>SHOULD</b> equal "EMS Social History" (CONF:10243)
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt>
 </li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt> (CONF:10244) <ol><li> This entry <b>SHALL</b> conform to <xref href="../DerivedEntry.dita">Derived Entry</xref> template (templateId: <tt>2.16.840.1.1133883.17.3.10.1.24</tt>)</li><li> This entry <b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt> (CONF:10246) <ol><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:10248)<tt><b>/@code</b>="69757-3" </tt><i>Indications of drug or alcohol use by the patient</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10247)</li><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type BL<p><i>NEMSIS Trace: EHistory.17, positive, negative, or null values</i></p></li></ol></li><li> This entry Contains zero or one [0..1] <tt><b>observation</b></tt> <ol><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="67669-2" </tt><i>Alcohol - drug use</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10250)</li><li> This observation <b>SHALL</b> contain at least one [1..*] <tt><b>value</b></tt> with data type CD, where the @code <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/AlcoholDrugUseIndicator.dita">AlcoholDrugUseIndicator</xref> 2.16.840.1.113883.17.3.5.18</tt><b> STATIC</b> (CONF:10251)<p><i>NEMSIS Trace: EHistory.17, proper values</i></p></li></ol></li></ol>
-<ol>
-<li>Contains exactly one [1..1] <xref href="../EMSDrugUseEntry.dita">EMS Drug Use Entry</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.24</tt>)</li></ol></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt> (CONF:10244) <ol><li> This entry <b>SHALL</b> conform to <xref href="../DerivedEntry.dita">Derived Entry</xref> template (templateId: <tt>2.16.840.1.1133883.17.3.10.1.24</tt>)</li><li> This entry <b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt> (CONF:10246) <ol><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:10248)<tt><b>/@code</b>="69757-3" </tt><i>Indications of drug or alcohol use by the patient</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10247)</li><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type BL<p><lines><i>NEMSIS Trace: EHistory.17, positive, negative, or null values</i></lines></p></li></ol></li><li> This entry <b>MAY</b> contain zero or one [0..1] <tt><b>observation</b></tt> <p><lines><i>Required if Existence of Drug Use Indicator (10246) is TRUE</i></lines></p><ol><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="67669-2" </tt><i>Alcohol - drug use</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10250)</li><li> This observation <b>SHALL</b> contain at least one [1..*] <tt><b>value</b></tt> with data type CD, where the @code <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/AlcoholDrugUseIndicator.dita">AlcoholDrugUseIndicator</xref> 2.16.840.1.113883.17.3.5.18</tt><b> STATIC</b> (CONF:10251)<p><lines><i>NEMSIS Trace: EHistory.17, proper values</i></lines></p></li></ol><p><lines><i>Required if Existence of Drug Use Indicator (10246) is TRUE</i></lines></p></li></ol>
+</li>
 </ol>
 <ol id="aggregate">
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:10241)<tt><b>/@code</b>="67843-3" </tt><i>EMS Social History Section</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10240)
 </li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>title</b></tt> = "EMS Social History" (CONF:10243)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>title</b></tt> and <b>SHOULD</b> equal "EMS Social History" (CONF:10243)
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt>
 </li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt> (CONF:10244) <ol><li> This entry <b>SHALL</b> conform to <xref href="../DerivedEntry.dita">Derived Entry</xref> template (templateId: <tt>2.16.840.1.1133883.17.3.10.1.24</tt>)</li><li> This entry <b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt> (CONF:10246) <ol><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:10248)<tt><b>/@code</b>="69757-3" </tt><i>Indications of drug or alcohol use by the patient</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10247)</li><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type BL<p><i>NEMSIS Trace: EHistory.17, positive, negative, or null values</i></p></li></ol></li><li> This entry Contains zero or one [0..1] <tt><b>observation</b></tt> <ol><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="67669-2" </tt><i>Alcohol - drug use</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10250)</li><li> This observation <b>SHALL</b> contain at least one [1..*] <tt><b>value</b></tt> with data type CD, where the @code <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/AlcoholDrugUseIndicator.dita">AlcoholDrugUseIndicator</xref> 2.16.840.1.113883.17.3.5.18</tt><b> STATIC</b> (CONF:10251)<p><i>NEMSIS Trace: EHistory.17, proper values</i></p></li></ol></li></ol>
-<ol>
-<li>Contains exactly one [1..1] <xref href="../EMSDrugUseEntry.dita">EMS Drug Use Entry</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.24</tt>)</li></ol></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt> (CONF:10244) <ol><li> This entry <b>SHALL</b> conform to <xref href="../DerivedEntry.dita">Derived Entry</xref> template (templateId: <tt>2.16.840.1.1133883.17.3.10.1.24</tt>)</li><li> This entry <b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt> (CONF:10246) <ol><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:10248)<tt><b>/@code</b>="69757-3" </tt><i>Indications of drug or alcohol use by the patient</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10247)</li><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type BL<p><lines><i>NEMSIS Trace: EHistory.17, positive, negative, or null values</i></lines></p></li></ol></li><li> This entry <b>MAY</b> contain zero or one [0..1] <tt><b>observation</b></tt> <p><lines><i>Required if Existence of Drug Use Indicator (10246) is TRUE</i></lines></p><ol><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="67669-2" </tt><i>Alcohol - drug use</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10250)</li><li> This observation <b>SHALL</b> contain at least one [1..*] <tt><b>value</b></tt> with data type CD, where the @code <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/AlcoholDrugUseIndicator.dita">AlcoholDrugUseIndicator</xref> 2.16.840.1.113883.17.3.5.18</tt><b> STATIC</b> (CONF:10251)<p><lines><i>NEMSIS Trace: EHistory.17, proper values</i></lines></p></li></ol><p><lines><i>Required if Existence of Drug Use Indicator (10246) is TRUE</i></lines></p></li></ol>
+</li>
 </ol>
-<codeblock id="example"><![CDATA[]]></codeblock>
+<section id="tableconformance"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="8" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><colspec colname="col2" colnum="2" /><colspec colname="col3" colnum="3" /><colspec colname="col4" colnum="4" /><colspec colname="col5" colnum="5" /><colspec colname="col6" colnum="6" /><colspec colname="col7" colnum="7" /><thead> <row><entry namest="col0" nameend="col7" >emspcr::EMSSocialHistorySection</entry>  </row>  <row><entry namest="col0" nameend="col7" >/cda:ClinicalDocument/cda:component/cda:structuredBody/cda:component/cda:section/</entry>  </row>  <row><entry>Name</entry><entry>XPath</entry><entry>Cardinality</entry><entry>Severity</entry><entry>Nullable</entry><entry>Data Type</entry><entry>Conformance</entry><entry>Value(s)</entry></row></thead><tbody><row><entry>code</entry><entry>code</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>CE</entry><entry>CONF:10240</entry><entry>LOINC 2.16.840.1.113883.6.1 </entry></row> 
+<row><entry>title</entry><entry>title</entry><entry>1..1</entry><entry>SHOULD</entry><entry>YES</entry><entry>ST</entry><entry>CONF:10242</entry><entry> </entry></row> 
+<row><entry>eMSSocialHistory</entry><entry>eMSSocialHistory</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>EMSSocialHistorySection</entry><entry>CONF:10013</entry><entry> </entry></row> 
+<row><entry>entry1</entry><entry>entry1</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>EMSDrugUseEntry</entry><entry>CONF:10244</entry><entry> </entry></row> 
+<row><entry>text</entry><entry>text</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>StrucDocText</entry><entry></entry><entry> </entry></row> 
+</tbody></tgroup></table></p></section>
+<codeblock id="example"><![CDATA[<section xmlns="urn:hl7-org:v3">
+  <id root="MDHT" extension="1418056895"/>
+  <code code="792945524"/>
+  <title>TEXT FOR TITLE</title>
+  <text/>
+  <entry>
+    <observation>
+      <code code="67669-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Alcohol - drug use"/>
+    </observation>
+  </entry>
+</section>]]></codeblock>
 <section id="changes">
 </section>
 <p><ph id="classformalname">EMS Social History Section</ph></p>
