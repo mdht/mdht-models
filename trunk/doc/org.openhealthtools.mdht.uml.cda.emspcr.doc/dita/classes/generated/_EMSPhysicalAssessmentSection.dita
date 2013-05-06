@@ -8,63 +8,108 @@
 <resourceid id="2.16.840.1.113883.17.3.10.1.20"/>
 </prolog>
 <body>
+<section id="knownSubclasses">
+</section>
 <section id="description">
 </section>
 <ol id="conformance">
+<li><b>SHALL</b> contain exactly one [1..1] templateId (  ) such that it <ol><li><b>SHALL</b> contain exactly one [1..1] <b>@root</b>="2.16.840.1.113883.17.3.10.1.20"</li></ol></li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:10337)<tt><b>/@code</b>="67668-4" </tt><i>EMS Physical Assessment Section</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10336)
 </li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>title</b></tt> = "EMS Physical Assessment Section" (CONF:10339)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>title</b></tt> and <b>SHOULD</b> equal "EMS Physical Assessment Section" (CONF:10339)
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt> (CONF:10338)
 </li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt> (CONF:10340) <ol><li> This entry <b>SHALL</b> conform to <xref href="../DerivedEntry.dita">Derived Entry</xref> template (templateId: <tt>2.16.840.1.1133883.17.3.10.1.24</tt>)</li><li> This entry <b>SHALL</b> contain at least one [1..*] <tt><b>organizer</b></tt> (CONF:10346) <ol><li> Such organizers <b>SHALL</b> contain exactly one [1..1] <tt><b>effectiveTime</b></tt> (CONF:10347)<p><i>NEMSIS Trace: EExam.03</i></p></li></ol></li></ol>
-<ol>
-<li>Contains exactly one [1..1] <xref href="../PhysicalAssessmentEntry.dita">Physical Assessment Entry</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.24</tt>)</li></ol></li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt> (CONF:10341) <ol><li> This entry <b>SHALL</b> conform to <xref href="../DerivedEntry.dita">Derived Entry</xref> template (templateId: <tt>2.16.840.1.1133883.17.3.10.1.24</tt>)</li><li> This entry <b>MAY</b> contain zero or one [0..1] <tt><b>observation</b></tt> (CONF:10417) <ol><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:10418)<tt><b>/@code</b>="67471-3" </tt><i>Patient Pregnancy</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10419)</li><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type CD (CONF:10420), where the @code <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/Pregnancy.dita">Pregnancy</xref> 2.16.840.1.113883.17.3.5.42</tt><b> STATIC</b> (CONF:10421)<p><i>NEMSIS Trace: EHistory.18</i></p></li></ol></li></ol>
-<ol>
-<li>Contains exactly one [1..1] <xref href="../PregnancyEntry.dita">Pregnancy Entry</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.24</tt>)</li></ol></li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt> (CONF:10342) <ol><li> This entry <b>SHALL</b> conform to <xref href="../DerivedEntry.dita">Derived Entry</xref> template (templateId: <tt>2.16.840.1.1133883.17.3.10.1.24</tt>)</li><li> This entry <b>MAY</b> contain zero or one [0..1] <tt><b>observation</b></tt> (CONF:10422) <ol><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:10423)<tt><b>/@code</b>="67517-3" </tt><i>Last oral intake</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10424)</li><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type TS (CONF:10425)<p><i>NEMSIS Trace: EHistory.19</i></p></li></ol></li></ol>
-<ol>
-<li>Contains exactly one [1..1] <xref href="../OralIntakeEntry.dita">Oral Intake Entry</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.24</tt>)</li></ol></li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt> (CONF:10343) <ol><li> This entry <b>SHALL</b> conform to <xref href="../DerivedEntry.dita">Derived Entry</xref> template (templateId: <tt>2.16.840.1.1133883.17.3.10.1.24</tt>)</li><li> This entry <b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt> (CONF:10426) <ol><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:10427)<tt><b>/@code</b>="30525-0" </tt><i>Patient age</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10428)</li><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type PQ (CONF:10429)<p><i>NEMSIS Trace: EPatient.15, 16
-UCUM units SHOULD be 'a'</i></p></li></ol></li></ol>
-<ol>
-<li>Contains exactly one [1..1] <xref href="../PatientAgeEntry.dita">Patient Age Entry</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.24</tt>)</li></ol></li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt> (CONF:10344) <ol><li> This entry <b>SHALL</b> conform to <xref href="../DerivedEntry.dita">Derived Entry</xref> template (templateId: <tt>2.16.840.1.1133883.17.3.10.1.24</tt>)</li><li> This entry <b>MAY</b> contain zero or one [0..1] <tt><b>observation</b></tt> (CONF:10430) <ol><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:10431)<tt><b>/@code</b>="67523-1" </tt><i>Contraindications to thrombolytic use</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10432)</li><li> This observation <b>SHALL</b> contain at least one [1..*] <tt><b>value</b></tt> with data type CD, where the @code <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/ExistenceOfContraindicationsToThrombolyticUse.dita">ExistenceOfContraindicationsToThrombolyticUse</xref> 2.16.840.1.113883.17.3.5.41</tt><b> STATIC</b> (CONF:10433)<p><i>NEMSIS Trace: EVitals.31</i></p></li></ol></li></ol>
-<ol>
-<li>Contains exactly one [1..1] <xref href="../ThrombolyticEntry.dita">Thrombolytic Entry</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.24</tt>)</li></ol></li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt> (CONF:10345) <ol><li> This entry <b>SHALL</b> conform to <xref href="../DerivedEntry.dita">Derived Entry</xref> template (templateId: <tt>2.16.840.1.1133883.17.3.10.1.24</tt>)</li><li> This entry <b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt> (CONF:10434) <ol><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:10435)<tt><b>/@code</b>="67523-1" </tt><i>Barriers to patient care</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10436)</li><li> This observation <b>SHALL</b> contain zero or more [0..*] <tt><b>value</b></tt> with data type CD (CONF:10437), where the @code <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/BarrierToCare.dita">BarrierToCare</xref> 2.16.840.1.113883.17.3.5.85</tt><b> STATIC</b> (CONF:10438)<p><i>NEMSIS Trace: EHistory.01</i></p></li></ol></li></ol>
-<ol>
-<li>Contains exactly one [1..1] <xref href="../BarrriersEntry.dita">Barrriers Entry</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.24</tt>)</li></ol></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt> (CONF:10340) <ol><li> This entry <b>SHALL</b> conform to <xref href="../DerivedEntry.dita">Derived Entry</xref> template (templateId: <tt>2.16.840.1.1133883.17.3.10.1.24</tt>)</li><li> This entry <b>SHALL</b> contain at least one [1..*] <tt><b>organizer</b></tt> (CONF:10346) <ol><li> Such organizers <b>SHALL</b> contain exactly one [1..1] <tt><b>effectiveTime</b></tt> (CONF:10347)<p><lines><i>NEMSIS Trace: EExam.03</i></lines></p></li></ol></li></ol>
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt> (CONF:10341) <ol><li> This entry <b>SHALL</b> conform to <xref href="../DerivedEntry.dita">Derived Entry</xref> template (templateId: <tt>2.16.840.1.1133883.17.3.10.1.24</tt>)</li><li> This entry <b>MAY</b> contain zero or one [0..1] <tt><b>observation</b></tt> (CONF:10417) <ol><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:10418)<tt><b>/@code</b>="67471-3" </tt><i>Patient Pregnancy</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10419)</li><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type CD (CONF:10420), where the @code <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/Pregnancy.dita">Pregnancy</xref> 2.16.840.1.113883.17.3.5.42</tt><b> STATIC</b> (CONF:10421)<p><lines><i>NEMSIS Trace: EHistory.18</i></lines></p></li></ol></li></ol>
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt> (CONF:10342) <ol><li> This entry <b>SHALL</b> conform to <xref href="../DerivedEntry.dita">Derived Entry</xref> template (templateId: <tt>2.16.840.1.1133883.17.3.10.1.24</tt>)</li><li> This entry <b>MAY</b> contain zero or one [0..1] <tt><b>observation</b></tt> (CONF:10422) <ol><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:10423)<tt><b>/@code</b>="67517-3" </tt><i>Last oral intake</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10424)</li><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type TS (CONF:10425)<p><lines><i>NEMSIS Trace: EHistory.19</i></lines></p></li></ol></li></ol>
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt> (CONF:10343) <ol><li> This entry <b>SHALL</b> conform to <xref href="../DerivedEntry.dita">Derived Entry</xref> template (templateId: <tt>2.16.840.1.1133883.17.3.10.1.24</tt>)</li><li> This entry <b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt> (CONF:10426) <ol><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:10427)<tt><b>/@code</b>="30525-0" </tt><i>Patient age</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10428)</li><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type PQ (CONF:10429)<p><lines><i>NEMSIS Trace: EPatient.15, 16
+UCUM units SHOULD be 'a'</i></lines></p></li></ol></li></ol>
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt> (CONF:10344) <ol><li> This entry <b>SHALL</b> conform to <xref href="../DerivedEntry.dita">Derived Entry</xref> template (templateId: <tt>2.16.840.1.1133883.17.3.10.1.24</tt>)</li><li> This entry <b>MAY</b> contain zero or one [0..1] <tt><b>observation</b></tt> (CONF:10430) <ol><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:10431)<tt><b>/@code</b>="67523-1" </tt><i>Contraindications to thrombolytic use</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10432)</li><li> This observation <b>SHALL</b> contain at least one [1..*] <tt><b>value</b></tt> with data type CD, where the @code <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/ExistenceOfContraindicationsToThrombolyticUse.dita">ExistenceOfContraindicationsToThrombolyticUse</xref> 2.16.840.1.113883.17.3.5.41</tt><b> STATIC</b> (CONF:10433)<p><lines><i>NEMSIS Trace: EVitals.31</i></lines></p></li></ol></li></ol>
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt> (CONF:10345) <ol><li> This entry <b>SHALL</b> conform to <xref href="../DerivedEntry.dita">Derived Entry</xref> template (templateId: <tt>2.16.840.1.1133883.17.3.10.1.24</tt>)</li><li> This entry <b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt> (CONF:10434) <ol><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:10435)<tt><b>/@code</b>="67523-1" </tt><i>Barriers to patient care</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10436)</li><li> This observation <b>SHALL</b> contain zero or more [0..*] <tt><b>value</b></tt> with data type CD (CONF:10437), where the @code <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/BarrierToCare.dita">BarrierToCare</xref> 2.16.840.1.113883.17.3.5.85</tt><b> STATIC</b> (CONF:10438)<p><lines><i>NEMSIS Trace: EHistory.01</i></lines></p></li></ol></li></ol>
+</li>
 </ol>
 <ol id="aggregate">
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:10337)<tt><b>/@code</b>="67668-4" </tt><i>EMS Physical Assessment Section</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10336)
 </li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>title</b></tt> = "EMS Physical Assessment Section" (CONF:10339)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>title</b></tt> and <b>SHOULD</b> equal "EMS Physical Assessment Section" (CONF:10339)
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt> (CONF:10338)
 </li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt> (CONF:10340) <ol><li> This entry <b>SHALL</b> conform to <xref href="../DerivedEntry.dita">Derived Entry</xref> template (templateId: <tt>2.16.840.1.1133883.17.3.10.1.24</tt>)</li><li> This entry <b>SHALL</b> contain at least one [1..*] <tt><b>organizer</b></tt> (CONF:10346) <ol><li> Such organizers <b>SHALL</b> contain exactly one [1..1] <tt><b>effectiveTime</b></tt> (CONF:10347)<p><i>NEMSIS Trace: EExam.03</i></p></li></ol></li></ol>
-<ol>
-<li>Contains exactly one [1..1] <xref href="../PhysicalAssessmentEntry.dita">Physical Assessment Entry</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.24</tt>)</li></ol></li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt> (CONF:10341) <ol><li> This entry <b>SHALL</b> conform to <xref href="../DerivedEntry.dita">Derived Entry</xref> template (templateId: <tt>2.16.840.1.1133883.17.3.10.1.24</tt>)</li><li> This entry <b>MAY</b> contain zero or one [0..1] <tt><b>observation</b></tt> (CONF:10417) <ol><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:10418)<tt><b>/@code</b>="67471-3" </tt><i>Patient Pregnancy</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10419)</li><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type CD (CONF:10420), where the @code <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/Pregnancy.dita">Pregnancy</xref> 2.16.840.1.113883.17.3.5.42</tt><b> STATIC</b> (CONF:10421)<p><i>NEMSIS Trace: EHistory.18</i></p></li></ol></li></ol>
-<ol>
-<li>Contains exactly one [1..1] <xref href="../PregnancyEntry.dita">Pregnancy Entry</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.24</tt>)</li></ol></li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt> (CONF:10342) <ol><li> This entry <b>SHALL</b> conform to <xref href="../DerivedEntry.dita">Derived Entry</xref> template (templateId: <tt>2.16.840.1.1133883.17.3.10.1.24</tt>)</li><li> This entry <b>MAY</b> contain zero or one [0..1] <tt><b>observation</b></tt> (CONF:10422) <ol><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:10423)<tt><b>/@code</b>="67517-3" </tt><i>Last oral intake</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10424)</li><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type TS (CONF:10425)<p><i>NEMSIS Trace: EHistory.19</i></p></li></ol></li></ol>
-<ol>
-<li>Contains exactly one [1..1] <xref href="../OralIntakeEntry.dita">Oral Intake Entry</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.24</tt>)</li></ol></li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt> (CONF:10343) <ol><li> This entry <b>SHALL</b> conform to <xref href="../DerivedEntry.dita">Derived Entry</xref> template (templateId: <tt>2.16.840.1.1133883.17.3.10.1.24</tt>)</li><li> This entry <b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt> (CONF:10426) <ol><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:10427)<tt><b>/@code</b>="30525-0" </tt><i>Patient age</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10428)</li><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type PQ (CONF:10429)<p><i>NEMSIS Trace: EPatient.15, 16
-UCUM units SHOULD be 'a'</i></p></li></ol></li></ol>
-<ol>
-<li>Contains exactly one [1..1] <xref href="../PatientAgeEntry.dita">Patient Age Entry</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.24</tt>)</li></ol></li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt> (CONF:10344) <ol><li> This entry <b>SHALL</b> conform to <xref href="../DerivedEntry.dita">Derived Entry</xref> template (templateId: <tt>2.16.840.1.1133883.17.3.10.1.24</tt>)</li><li> This entry <b>MAY</b> contain zero or one [0..1] <tt><b>observation</b></tt> (CONF:10430) <ol><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:10431)<tt><b>/@code</b>="67523-1" </tt><i>Contraindications to thrombolytic use</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10432)</li><li> This observation <b>SHALL</b> contain at least one [1..*] <tt><b>value</b></tt> with data type CD, where the @code <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/ExistenceOfContraindicationsToThrombolyticUse.dita">ExistenceOfContraindicationsToThrombolyticUse</xref> 2.16.840.1.113883.17.3.5.41</tt><b> STATIC</b> (CONF:10433)<p><i>NEMSIS Trace: EVitals.31</i></p></li></ol></li></ol>
-<ol>
-<li>Contains exactly one [1..1] <xref href="../ThrombolyticEntry.dita">Thrombolytic Entry</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.24</tt>)</li></ol></li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt> (CONF:10345) <ol><li> This entry <b>SHALL</b> conform to <xref href="../DerivedEntry.dita">Derived Entry</xref> template (templateId: <tt>2.16.840.1.1133883.17.3.10.1.24</tt>)</li><li> This entry <b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt> (CONF:10434) <ol><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:10435)<tt><b>/@code</b>="67523-1" </tt><i>Barriers to patient care</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10436)</li><li> This observation <b>SHALL</b> contain zero or more [0..*] <tt><b>value</b></tt> with data type CD (CONF:10437), where the @code <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/BarrierToCare.dita">BarrierToCare</xref> 2.16.840.1.113883.17.3.5.85</tt><b> STATIC</b> (CONF:10438)<p><i>NEMSIS Trace: EHistory.01</i></p></li></ol></li></ol>
-<ol>
-<li>Contains exactly one [1..1] <xref href="../BarrriersEntry.dita">Barrriers Entry</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.24</tt>)</li></ol></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt> (CONF:10340) <ol><li> This entry <b>SHALL</b> conform to <xref href="../DerivedEntry.dita">Derived Entry</xref> template (templateId: <tt>2.16.840.1.1133883.17.3.10.1.24</tt>)</li><li> This entry <b>SHALL</b> contain at least one [1..*] <tt><b>organizer</b></tt> (CONF:10346) <ol><li> Such organizers <b>SHALL</b> contain exactly one [1..1] <tt><b>effectiveTime</b></tt> (CONF:10347)<p><lines><i>NEMSIS Trace: EExam.03</i></lines></p></li></ol></li></ol>
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt> (CONF:10341) <ol><li> This entry <b>SHALL</b> conform to <xref href="../DerivedEntry.dita">Derived Entry</xref> template (templateId: <tt>2.16.840.1.1133883.17.3.10.1.24</tt>)</li><li> This entry <b>MAY</b> contain zero or one [0..1] <tt><b>observation</b></tt> (CONF:10417) <ol><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:10418)<tt><b>/@code</b>="67471-3" </tt><i>Patient Pregnancy</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10419)</li><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type CD (CONF:10420), where the @code <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/Pregnancy.dita">Pregnancy</xref> 2.16.840.1.113883.17.3.5.42</tt><b> STATIC</b> (CONF:10421)<p><lines><i>NEMSIS Trace: EHistory.18</i></lines></p></li></ol></li></ol>
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt> (CONF:10342) <ol><li> This entry <b>SHALL</b> conform to <xref href="../DerivedEntry.dita">Derived Entry</xref> template (templateId: <tt>2.16.840.1.1133883.17.3.10.1.24</tt>)</li><li> This entry <b>MAY</b> contain zero or one [0..1] <tt><b>observation</b></tt> (CONF:10422) <ol><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:10423)<tt><b>/@code</b>="67517-3" </tt><i>Last oral intake</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10424)</li><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type TS (CONF:10425)<p><lines><i>NEMSIS Trace: EHistory.19</i></lines></p></li></ol></li></ol>
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt> (CONF:10343) <ol><li> This entry <b>SHALL</b> conform to <xref href="../DerivedEntry.dita">Derived Entry</xref> template (templateId: <tt>2.16.840.1.1133883.17.3.10.1.24</tt>)</li><li> This entry <b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt> (CONF:10426) <ol><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:10427)<tt><b>/@code</b>="30525-0" </tt><i>Patient age</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10428)</li><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type PQ (CONF:10429)<p><lines><i>NEMSIS Trace: EPatient.15, 16
+UCUM units SHOULD be 'a'</i></lines></p></li></ol></li></ol>
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt> (CONF:10344) <ol><li> This entry <b>SHALL</b> conform to <xref href="../DerivedEntry.dita">Derived Entry</xref> template (templateId: <tt>2.16.840.1.1133883.17.3.10.1.24</tt>)</li><li> This entry <b>MAY</b> contain zero or one [0..1] <tt><b>observation</b></tt> (CONF:10430) <ol><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:10431)<tt><b>/@code</b>="67523-1" </tt><i>Contraindications to thrombolytic use</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10432)</li><li> This observation <b>SHALL</b> contain at least one [1..*] <tt><b>value</b></tt> with data type CD, where the @code <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/ExistenceOfContraindicationsToThrombolyticUse.dita">ExistenceOfContraindicationsToThrombolyticUse</xref> 2.16.840.1.113883.17.3.5.41</tt><b> STATIC</b> (CONF:10433)<p><lines><i>NEMSIS Trace: EVitals.31</i></lines></p></li></ol></li></ol>
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt> (CONF:10345) <ol><li> This entry <b>SHALL</b> conform to <xref href="../DerivedEntry.dita">Derived Entry</xref> template (templateId: <tt>2.16.840.1.1133883.17.3.10.1.24</tt>)</li><li> This entry <b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt> (CONF:10434) <ol><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:10435)<tt><b>/@code</b>="67523-1" </tt><i>Barriers to patient care</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10436)</li><li> This observation <b>SHALL</b> contain zero or more [0..*] <tt><b>value</b></tt> with data type CD (CONF:10437), where the @code <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/BarrierToCare.dita">BarrierToCare</xref> 2.16.840.1.113883.17.3.5.85</tt><b> STATIC</b> (CONF:10438)<p><lines><i>NEMSIS Trace: EHistory.01</i></lines></p></li></ol></li></ol>
+</li>
 </ol>
-<codeblock id="example"><![CDATA[]]></codeblock>
+<section id="tableconformance"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="8" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><colspec colname="col2" colnum="2" /><colspec colname="col3" colnum="3" /><colspec colname="col4" colnum="4" /><colspec colname="col5" colnum="5" /><colspec colname="col6" colnum="6" /><colspec colname="col7" colnum="7" /><thead> <row><entry namest="col0" nameend="col7" >emspcr::EMSPhysicalAssessmentSection</entry>  </row>  <row><entry namest="col0" nameend="col7" >/cda:ClinicalDocument/cda:component/cda:structuredBody/cda:component/cda:section/</entry>  </row>  <row><entry>Name</entry><entry>XPath</entry><entry>Cardinality</entry><entry>Severity</entry><entry>Nullable</entry><entry>Data Type</entry><entry>Conformance</entry><entry>Value(s)</entry></row></thead><tbody><row><entry>code</entry><entry>code</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>CE</entry><entry>CONF:10336</entry><entry>LOINC 2.16.840.1.113883.6.1 </entry></row> 
+<row><entry>title</entry><entry>title</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>ST</entry><entry>CONF:10339</entry><entry> </entry></row> 
+<row><entry>eMSPhysicalAssessmentSection</entry><entry>eMSPhysicalAssessmentSection</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>EMSPhysicalAssessmentSection</entry><entry>CONF:10014</entry><entry> </entry></row> 
+<row><entry>entry1</entry><entry>entry1</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>PhysicalAssessmentEntry</entry><entry>CONF:10340</entry><entry> </entry></row> 
+<row><entry>entry2</entry><entry>entry2</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>PregnancyEntry</entry><entry>CONF:10341</entry><entry> </entry></row> 
+<row><entry>entry3</entry><entry>entry3</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>OralIntakeEntry</entry><entry>CONF:10342</entry><entry> </entry></row> 
+<row><entry>entry4</entry><entry>entry4</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>PatientAgeEntry</entry><entry>CONF:10343</entry><entry> </entry></row> 
+<row><entry>entry5</entry><entry>entry5</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>ThrombolyticEntry</entry><entry>CONF:10344</entry><entry> </entry></row> 
+<row><entry>entry6</entry><entry>entry6</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>BarrriersEntry</entry><entry>CONF:10345</entry><entry> </entry></row> 
+<row><entry>text</entry><entry>text</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>StrucDocText</entry><entry>CONF:10338</entry><entry> </entry></row> 
+</tbody></tgroup></table></p></section>
+<codeblock id="example"><![CDATA[<section xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3">
+  <id root="MDHT" extension="1683153515"/>
+  <code code="562645542"/>
+  <title>TEXT FOR TITLE</title>
+  <text/>
+  <entry>
+    <organizer>
+      <statusCode code="completed"/>
+      <effectiveTime>
+        <low value="2013"/>
+        <high value="2013"/>
+      </effectiveTime>
+    </organizer>
+  </entry>
+  <entry>
+    <observation>
+      <code code="67471-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Patient Pregnancy"/>
+      <value xsi:type="CD" code="1211517441"/>
+    </observation>
+  </entry>
+  <entry>
+    <observation>
+      <code code="67517-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Last oral intake"/>
+      <value xsi:type="TS"/>
+    </observation>
+  </entry>
+  <entry>
+    <observation>
+      <code code="30525-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Patient age"/>
+      <value xsi:type="PQ"/>
+    </observation>
+  </entry>
+  <entry>
+    <observation>
+      <code code="67523-1" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Contraindications to thrombolytic use"/>
+    </observation>
+  </entry>
+  <entry>
+    <observation>
+      <code code="67523-1" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Barriers to patient care"/>
+      <value xsi:type="CD" code="1560432995"/>
+    </observation>
+  </entry>
+</section>]]></codeblock>
 <section id="changes">
 </section>
 <p><ph id="classformalname">EMS Physical Assessment Section</ph></p>

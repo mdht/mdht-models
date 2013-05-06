@@ -16,29 +16,28 @@
 <row><entry>Code System</entry><entry>LOINC - 2.16.840.1.113883.6.1</entry></row>
 <row><entry>Definition</entry><entry>Kind of circumstance delaying an EMS response</entry></row>
 </tbody></tgroup></table>
-<table><tgroup cols="4">
+<table><tgroup cols="3">
 <colspec colname="col1" colwidth="1*"/>
-<colspec colname="col2" colwidth="2*"/>
-<colspec colname="col3" colwidth="1*"/>
-<colspec colname="col4" colwidth="3*"/>
+<colspec colname="col2" colwidth="1*"/>
+<colspec colname="col3" colwidth="2*"/>
 <thead><row>
-<entry>Concept Code</entry><entry>Concept Name</entry><entry>Code System</entry><entry>Description</entry>
+<entry>Code</entry><entry>Code System</entry><entry>Print Name</entry>
 </row></thead><tbody>
-<row><entry>LA17059-9</entry><entry>Other (not listed)</entry><entry>LOINC</entry><entry></entry></row>
-<row><entry>LA17583-8</entry><entry>Scene safety (not secure for EMS)</entry><entry>LOINC</entry><entry></entry></row>
-<row><entry>LA17585-3</entry><entry>Crowd</entry><entry>LOINC</entry><entry></entry></row>
-<row><entry>LA17586-1</entry><entry>Directions/unable to locate</entry><entry>LOINC</entry><entry></entry></row>
-<row><entry>LA17587-9</entry><entry>Distance</entry><entry>LOINC</entry><entry></entry></row>
-<row><entry>LA17588-7</entry><entry>HazMat</entry><entry>LOINC</entry><entry></entry></row>
-<row><entry>LA17590-3</entry><entry>Staff delay</entry><entry>LOINC</entry><entry></entry></row>
-<row><entry>LA17591-1</entry><entry>Traffic</entry><entry>LOINC</entry><entry></entry></row>
-<row><entry>LA17592-9</entry><entry>Vehicle crash involving this unit</entry><entry>LOINC</entry><entry></entry></row>
-<row><entry>LA17593-7</entry><entry>Vehicle failure of this unit</entry><entry>LOINC</entry><entry></entry></row>
-<row><entry>LA17594-5</entry><entry>Weather</entry><entry>LOINC</entry><entry></entry></row>
-<row><entry>LA18081-2</entry><entry>None/no delay</entry><entry>LOINC</entry><entry></entry></row>
-<row><entry>LA18270-1</entry><entry>Rendezvous transport unavailable</entry><entry>LOINC</entry><entry></entry></row>
-<row><entry>LA18271-9</entry><entry>Route obstruction (e.g., train)</entry><entry>LOINC</entry><entry></entry></row>
-<row><entry>LA18301-4</entry><entry>Diversion</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA17059-9</entry><entry>LOINC</entry><entry>Other (not listed)</entry></row>
+<row><entry>LA17583-8</entry><entry>LOINC</entry><entry>Scene safety (not secure for EMS)</entry></row>
+<row><entry>LA17585-3</entry><entry>LOINC</entry><entry>Crowd</entry></row>
+<row><entry>LA17586-1</entry><entry>LOINC</entry><entry>Directions/unable to locate</entry></row>
+<row><entry>LA17587-9</entry><entry>LOINC</entry><entry>Distance</entry></row>
+<row><entry>LA17588-7</entry><entry>LOINC</entry><entry>HazMat</entry></row>
+<row><entry>LA17590-3</entry><entry>LOINC</entry><entry>Staff delay</entry></row>
+<row><entry>LA17591-1</entry><entry>LOINC</entry><entry>Traffic</entry></row>
+<row><entry>LA17592-9</entry><entry>LOINC</entry><entry>Vehicle crash involving this unit</entry></row>
+<row><entry>LA17593-7</entry><entry>LOINC</entry><entry>Vehicle failure of this unit</entry></row>
+<row><entry>LA17594-5</entry><entry>LOINC</entry><entry>Weather</entry></row>
+<row><entry>LA18081-2</entry><entry>LOINC</entry><entry>None/no delay</entry></row>
+<row><entry>LA18270-1</entry><entry>LOINC</entry><entry>Rendezvous transport unavailable</entry></row>
+<row><entry>LA18271-9</entry><entry>LOINC</entry><entry>Route obstruction (e.g., train)</entry></row>
+<row><entry>LA18301-4</entry><entry>LOINC</entry><entry>Diversion</entry></row>
 </tbody></tgroup></table>
 </section>
 </body>

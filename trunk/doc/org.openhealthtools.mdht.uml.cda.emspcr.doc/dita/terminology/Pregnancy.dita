@@ -16,19 +16,18 @@
 <row><entry>Code System</entry><entry>LOINC - 2.16.840.1.113883.6.1</entry></row>
 <row><entry>Definition</entry><entry>Estimation of patient's pregnant status and maturity</entry></row>
 </tbody></tgroup></table>
-<table><tgroup cols="4">
+<table><tgroup cols="3">
 <colspec colname="col1" colwidth="1*"/>
-<colspec colname="col2" colwidth="2*"/>
-<colspec colname="col3" colwidth="1*"/>
-<colspec colname="col4" colwidth="3*"/>
+<colspec colname="col2" colwidth="1*"/>
+<colspec colname="col3" colwidth="2*"/>
 <thead><row>
-<entry>Concept Code</entry><entry>Concept Name</entry><entry>Code System</entry><entry>Description</entry>
+<entry>Code</entry><entry>Code System</entry><entry>Print Name</entry>
 </row></thead><tbody>
-<row><entry>LA17329-6</entry><entry>Yes, confirmed less than 12 weeks</entry><entry>LOINC</entry><entry></entry></row>
-<row><entry>LA17330-4</entry><entry>Yes, confirmed 12 to 20 weeks</entry><entry>LOINC</entry><entry></entry></row>
-<row><entry>LA17331-2</entry><entry>Yes, confirmed greater than 20 weeks</entry><entry>LOINC</entry><entry></entry></row>
-<row><entry>LA17332-0</entry><entry>Possible, unconfirmed</entry><entry>LOINC</entry><entry></entry></row>
-<row><entry>LA32-8</entry><entry>No</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA17329-6</entry><entry>LOINC</entry><entry>Yes, confirmed less than 12 weeks</entry></row>
+<row><entry>LA17330-4</entry><entry>LOINC</entry><entry>Yes, confirmed 12 to 20 weeks</entry></row>
+<row><entry>LA17331-2</entry><entry>LOINC</entry><entry>Yes, confirmed greater than 20 weeks</entry></row>
+<row><entry>LA17332-0</entry><entry>LOINC</entry><entry>Possible, unconfirmed</entry></row>
+<row><entry>LA32-8</entry><entry>LOINC</entry><entry>No</entry></row>
 </tbody></tgroup></table>
 </section>
 </body>

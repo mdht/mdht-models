@@ -16,19 +16,18 @@
 <row><entry>Code System</entry><entry>LOINC - 2.16.840.1.113883.6.1</entry></row>
 <row><entry>Definition</entry><entry>Patient's vocal response to stimulation</entry></row>
 </tbody></tgroup></table>
-<table><tgroup cols="4">
+<table><tgroup cols="3">
 <colspec colname="col1" colwidth="1*"/>
-<colspec colname="col2" colwidth="2*"/>
-<colspec colname="col3" colwidth="1*"/>
-<colspec colname="col4" colwidth="3*"/>
+<colspec colname="col2" colwidth="1*"/>
+<colspec colname="col3" colwidth="2*"/>
 <thead><row>
-<entry>Concept Code</entry><entry>Concept Name</entry><entry>Code System</entry><entry>Description</entry>
+<entry>Code</entry><entry>Code System</entry><entry>Print Name</entry>
 </row></thead><tbody>
-<row><entry>LA17793-3</entry><entry>Incomprehensible sounds (&gt;2 yrs); Inconsolable, agitated (&lt;=2 yrs)</entry><entry>LOINC</entry><entry></entry></row>
-<row><entry>LA17794-1</entry><entry>Inappropriate words (&gt;2 yrs); Inconsistently consolable, moaning (&lt;=2 yrs)</entry><entry>LOINC</entry><entry></entry></row>
-<row><entry>LA17795-8</entry><entry>Confused (&gt;2 yrs); Cries but is consolable, inappropriate interactions (&lt;=2 yrs)</entry><entry>LOINC</entry><entry></entry></row>
-<row><entry>LA17796-6</entry><entry>Oriented (&gt;2 yrs); Smiles, oriented to sounds, follows objects, interacts (&lt;=2 yrs)</entry><entry>LOINC</entry><entry></entry></row>
-<row><entry>LA6557-8</entry><entry>No verbal response (&gt;2 yrs); no vocal response (&lt;=2 yrs)</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA17793-3</entry><entry>LOINC</entry><entry>Incomprehensible sounds (&gt;2 yrs); Inconsolable, agitated (&lt;=2 yrs)</entry></row>
+<row><entry>LA17794-1</entry><entry>LOINC</entry><entry>Inappropriate words (&gt;2 yrs); Inconsistently consolable, moaning (&lt;=2 yrs)</entry></row>
+<row><entry>LA17795-8</entry><entry>LOINC</entry><entry>Confused (&gt;2 yrs); Cries but is consolable, inappropriate interactions (&lt;=2 yrs)</entry></row>
+<row><entry>LA17796-6</entry><entry>LOINC</entry><entry>Oriented (&gt;2 yrs); Smiles, oriented to sounds, follows objects, interacts (&lt;=2 yrs)</entry></row>
+<row><entry>LA6557-8</entry><entry>LOINC</entry><entry>No verbal response (&gt;2 yrs); no vocal response (&lt;=2 yrs)</entry></row>
 </tbody></tgroup></table>
 </section>
 </body>

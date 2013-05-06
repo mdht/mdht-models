@@ -16,20 +16,19 @@
 <row><entry>Code System</entry><entry>LOINC - 2.16.840.1.113883.6.1</entry></row>
 <row><entry>Definition</entry><entry>Indications that a patient may have engaged in alcohol or drug use</entry></row>
 </tbody></tgroup></table>
-<table><tgroup cols="4">
+<table><tgroup cols="3">
 <colspec colname="col1" colwidth="1*"/>
-<colspec colname="col2" colwidth="2*"/>
-<colspec colname="col3" colwidth="1*"/>
-<colspec colname="col4" colwidth="3*"/>
+<colspec colname="col2" colwidth="1*"/>
+<colspec colname="col3" colwidth="2*"/>
 <thead><row>
-<entry>Concept Code</entry><entry>Concept Name</entry><entry>Code System</entry><entry>Description</entry>
+<entry>Code</entry><entry>Code System</entry><entry>Print Name</entry>
 </row></thead><tbody>
-<row><entry>LA17323-9</entry><entry>Alcohol containers/paraphernalia at scene</entry><entry>LOINC</entry><entry></entry></row>
-<row><entry>LA17324-7</entry><entry>Drug paraphernalia at scene</entry><entry>LOINC</entry><entry></entry></row>
-<row><entry>LA17325-4</entry><entry>Patient admits to alcohol use</entry><entry>LOINC</entry><entry></entry></row>
-<row><entry>LA17326-2</entry><entry>Patient admits to drug use</entry><entry>LOINC</entry><entry></entry></row>
-<row><entry>LA17327-0</entry><entry>Positive level known from law enforcement or hospital record</entry><entry>LOINC</entry><entry></entry></row>
-<row><entry>LA17328-8</entry><entry>Smell of alcohol on breath</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA17323-9</entry><entry>LOINC</entry><entry>Alcohol containers/paraphernalia at scene</entry></row>
+<row><entry>LA17324-7</entry><entry>LOINC</entry><entry>Drug paraphernalia at scene</entry></row>
+<row><entry>LA17325-4</entry><entry>LOINC</entry><entry>Patient admits to alcohol use</entry></row>
+<row><entry>LA17326-2</entry><entry>LOINC</entry><entry>Patient admits to drug use</entry></row>
+<row><entry>LA17327-0</entry><entry>LOINC</entry><entry>Positive level known from law enforcement or hospital record</entry></row>
+<row><entry>LA17328-8</entry><entry>LOINC</entry><entry>Smell of alcohol on breath</entry></row>
 </tbody></tgroup></table>
 </section>
 </body>

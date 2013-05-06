@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html
   PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html lang="en-us" xml:lang="en-us">
+<html xml:lang="en-us" lang="en-us">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 <meta name="copyright" content="(C) Copyright 2005"/>
@@ -18,7 +18,7 @@
 <link rel="stylesheet" type="text/css" href="../css/commonltr.css"/>
 <title>EMS Current Medication Section</title>
 </head>
-<body id="classId"><a name="classId"><!-- --></a>
+<body id="classId">
 <div>
 	<p><b>For Discussion and Demonstration Only</b> The Normative content for these specifications
 	may be found on the HL7, IHE, and HITSP web sites.</p>
@@ -30,25 +30,88 @@
 
 <div class="body"><p class="shortdesc">[Section: templateId <tt class="ph tt">2.16.840.1.113883.17.3.10.1.15</tt>]</p>
 
+<div class="section">
+</div>
+
 
 <div class="section">
-<p class="p">NEMSIS Trace: EHistory.12</p>
+<div class="p"><p class="lines"><em class="ph i">NEMSIS Trace: EHistory.12</em></p>
+</div>
 
 </div>
 
 
 
 <ol class="ol">
-<li class="li"><strong class="ph b">SHALL</strong> conform to <a class="xref" href="DerivedCDASection.html" title="[Section: templateId null]">Derived CDA Section</a></li>
-
-<li class="li"><strong class="ph b">SHALL</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">code</strong></tt><tt class="ph tt"><strong class="ph b">/@code</strong>="67844-1" </tt><em class="ph i">EMS Current Medications</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.1 LOINC</tt>)
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] templateId (  ) such that it <ol class="ol" type="a"><li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <strong class="ph b">@root</strong>="2.16.840.1.113883.17.3.10.1.15"</li>
+</ol>
 </li>
 
-<li class="li">Contains zero or one [0..1] <tt class="ph tt"><strong class="ph b">title</strong></tt>
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt><tt class="ph tt"><strong class="ph b">/@code</strong>="67844-1" </tt><em class="ph i">EMS Current Medications Section</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10218)
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">title</strong></tt> and <strong class="ph b">SHOULD</strong> equal "EMS Current Medications Section" (CONF:10219)
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">text</strong></tt>
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">entry</strong></tt> (CONF:10220) <ol class="ol" type="a"><li class="li"> This entry <strong class="ph b">SHALL</strong> conform to <a class="xref" href="DerivedEntry.html" title="[Entry: templateId 2.16.840.1.1133883.17.3.10.1.24]">Derived Entry</a> template (templateId: <tt class="ph tt">2.16.840.1.1133883.17.3.10.1.24</tt>)</li>
+<li class="li"> This entry <strong class="ph b">SHALL</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">observation</strong></tt> (CONF:10223) <ol class="ol" type="i"><li class="li"> This observation <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt><tt class="ph tt"><strong class="ph b">/@code</strong>="67791-4" </tt><em class="ph i">Currently on medication</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10224)</li>
+<li class="li"> This observation <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">value</strong></tt> with data type BL (CONF:10225)<div class="p"><p class="lines"><em class="ph i">If EHistory.12 has the value "None Reported," the value is "False"<br/>
+If EHistory.12 has the value "Refused" or "Unable to Complete," the value is "NI"; the<br/>
+original value may be recorded in Observation.text.</em></p>
+</div>
+</li>
+</ol>
+</li>
+</ol>
+
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">entry</strong></tt> (CONF:10221) <ol class="ol" type="a"><li class="li"> This entry <strong class="ph b">SHALL</strong> conform to <a class="xref" href="DerivedEntry.html" title="[Entry: templateId 2.16.840.1.1133883.17.3.10.1.24]">Derived Entry</a> template (templateId: <tt class="ph tt">2.16.840.1.1133883.17.3.10.1.24</tt>)</li>
+<li class="li"> This entry <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">observation</strong></tt> (CONF:10226) <ol class="ol" type="i"><li class="li"> This observation <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt><tt class="ph tt"><strong class="ph b">/@code</strong>="69749-0" </tt><em class="ph i">Patient on anticoagulants</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10227)</li>
+<li class="li"> This observation <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">value</strong></tt> with data type BL (CONF:10228)<div class="p"><p class="lines"><em class="ph i">NEMSIS Trace: If EHistory.12 has the value "No anticoagulants," the value is False</em></p>
+</div>
+</li>
+</ol>
+</li>
+</ol>
+
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">entry</strong></tt> (CONF:10222) <ol class="ol" type="a"><li class="li"> This entry <strong class="ph b">SHALL</strong> conform to <a class="xref" href="DerivedEntry.html" title="[Entry: templateId 2.16.840.1.1133883.17.3.10.1.24]">Derived Entry</a> template (templateId: <tt class="ph tt">2.16.840.1.1133883.17.3.10.1.24</tt>)</li>
+<li class="li"> This entry <strong class="ph b">MAY</strong> contain zero or more [0..*] <tt class="ph tt"><strong class="ph b">substanceAdministration</strong></tt> (CONF:10229) <ol class="ol" type="i"><li class="li"> Such substanceAdministrations <strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">@negationInd</strong></tt> (CONF:10233)<div class="p"><p class="lines"><em class="ph i">If EHistory.12 has the value "None Reported," the value is "True"<br/>
+This negation of a notional class is parallel to the explicit question "patient on medication"</em></p>
+</div>
+</li>
+<li class="li"> Such substanceAdministrations <strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">@nullFlavor</strong></tt> (CONF:10234)<div class="p"><p class="lines"><em class="ph i">If EHistory.12 has the value "Refused" or "Unable to Complete," the value is "NI"; the<br/>
+original value may be recorded in SubstanceAdministration.text.<br/>
+This nulled notional class is parallel to the explicit question "patient on medication"</em></p>
+</div>
+</li>
+<li class="li"> Such substanceAdministrations <strong class="ph b">SHOULD</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">doseQuantity</strong></tt> (CONF:10230)<div class="p"><p class="lines"><em class="ph i">NEMSIS Trace: EHistory.13, EHistory.14</em></p>
+</div>
+</li>
+<li class="li"> Such substanceAdministrations <strong class="ph b">SHOULD</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">routeCode</strong></tt> (CONF:10232), where the @code <strong class="ph b">SHALL</strong> be selected from ValueSet<tt class="ph tt"> <a class="xref" href="../terminology/MedicationAdministrationRoute.html">MedicationAdministrationRoute</a> 2.16.840.1.113883.17.3.5.43</tt><strong class="ph b"> STATIC</strong> (CONF:10231)<div class="p"><p class="lines"><em class="ph i">NEMSIS Trace: EMedication.15</em></p>
+</div>
+</li>
+<li class="li"> Such substanceAdministrations <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">consumable</strong></tt> (CONF:10235) <ol class="ol"><li class="li"> This consumable <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">manufacturedProduct</strong></tt> (CONF:10236) <ol class="ol" type="a"><li class="li"> This manufacturedProduct <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">manufacturedLabeledDrug</strong></tt> (CONF:10237) <ol class="ol" type="i"><li class="li"> This manufacturedLabeledDrug <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt> (CONF:10239), where the @code <strong class="ph b">SHALL</strong> be selected from (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.88 RxNorm</tt>) (CONF:10238)<div class="p"><p class="lines"><em class="ph i">NEMSIS Trace: EHistory.12</em></p>
+</div>
+</li>
+</ol>
+ </li>
+</ol>
+ </li>
+</ol>
+ </li>
+</ol>
+</li>
+</ol>
+
 </li>
 
 </ol>
-
 
 
 <p class="p"> </p>
@@ -57,7 +120,30 @@
 
 
 
-<pre class="pre codeblock"/>
+<pre class="pre codeblock">&lt;section xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3"&gt;
+  &lt;id root="MDHT" extension="1918524372"/&gt;
+  &lt;title&gt;TEXT FOR TITLE&lt;/title&gt;
+  &lt;text/&gt;
+  &lt;entry&gt;
+    &lt;observation&gt;
+      &lt;code code="67791-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Currently on medication"/&gt;
+      &lt;value xsi:type="BL"/&gt;
+    &lt;/observation&gt;
+  &lt;/entry&gt;
+  &lt;entry&gt;
+    &lt;observation&gt;
+      &lt;code code="69749-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Patient on anticoagulants"/&gt;
+      &lt;value xsi:type="BL"/&gt;
+    &lt;/observation&gt;
+  &lt;/entry&gt;
+  &lt;entry&gt;
+    &lt;substanceAdministration&gt;
+      &lt;routeCode codeSystem="2.16.840.1.113883.3.26.1.1.1" codeSystemName="FDA Route of Administration"/&gt;
+      &lt;doseQuantity/&gt;
+      &lt;consumable/&gt;
+    &lt;/substanceAdministration&gt;
+  &lt;/entry&gt;
+&lt;/section&gt;</pre>
 
 </div>
 

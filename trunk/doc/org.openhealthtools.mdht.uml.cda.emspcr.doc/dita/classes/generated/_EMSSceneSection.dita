@@ -8,37 +8,59 @@
 <resourceid id="2.16.840.1.113883.17.3.10.1.8"/>
 </prolog>
 <body>
+<section id="knownSubclasses">
+</section>
 <section id="description">
 </section>
 <ol id="conformance">
+<li><b>SHALL</b> contain exactly one [1..1] templateId (  ) such that it <ol><li><b>SHALL</b> contain exactly one [1..1] <b>@root</b>="2.16.840.1.113883.17.3.10.1.8"</li></ol></li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="67665-0" </tt><i>EMS Scene Section</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10732)
 </li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>title</b></tt> = "EMS Scene" (CONF:10734)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>title</b></tt> and <b>SHOULD</b> equal "EMS Scene" (CONF:10734)
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt> (CONF:10733)
 </li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt> (CONF:10736) <ol><li> This entry <b>SHALL</b> conform to <xref href="../DerivedEntry.dita">Derived Entry</xref> template (templateId: <tt>2.16.840.1.1133883.17.3.10.1.24</tt>)</li><li> This entry <b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt> (CONF:10740) <ol><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:10741)<tt><b>/@code</b>="67665-0" </tt><i>EMS reporter is first unit on scene</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10742)</li><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type BL (CONF:10743)<p><i>NEMSIS Trace: EScene.01</i></p></li></ol></li><li> This entry <b>SHALL</b> contain zero or one [0..1] <tt><b>observation</b></tt> <ol><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:10746)<tt><b>/@code</b>="67481-2" </tt><i>Name of first unit on scene</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10745)</li><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type ST (CONF:10747)<p><i>NEMSIS Trace: EScene.02</i></p></li></ol></li></ol>
-<ol>
-<li>Contains exactly one [1..1] <xref href="../EMSFirstUnitEntry.dita">EMS First Unit Entry</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.24</tt>)</li></ol></li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt> (CONF:10738) <ol><li> This entry <b>SHALL</b> conform to <xref href="../DerivedEntry.dita">Derived Entry</xref> template (templateId: <tt>2.16.840.1.1133883.17.3.10.1.24</tt>)</li><li> This entry <b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt> (CONF:10748) <ol><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:10750)<tt><b>/@code</b>="67489-5" </tt><i>EMS Count of patients at scene</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10749)</li><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type INT (CONF:10751)<p><i>NEMSIS Trace: EScene.06</i></p></li></ol></li><li> This entry <b>SHALL</b> contain zero or one [0..1] <tt><b>observation</b></tt> <ol><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:10753)</li><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type BL (CONF:10754)<p><i>NEMSIS Trace: EScene.04</i></p></li></ol></li></ol>
-<ol>
-<li>Contains exactly one [1..1] <xref href="../EMSScenePatientCountEntry.dita">EMS Scene Patient Count Entry</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.24</tt>)</li></ol></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt> (CONF:10736) <ol><li> This entry <b>SHALL</b> conform to <xref href="../DerivedEntry.dita">Derived Entry</xref> template (templateId: <tt>2.16.840.1.1133883.17.3.10.1.24</tt>)</li><li> This entry <b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt> (CONF:10740) <ol><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:10741)<tt><b>/@code</b>="67481-2" </tt><i>EMS reporter is first unit on scene</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10742)</li><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type BL (CONF:10743)<p><lines><i>NEMSIS Trace: EScene.01</i></lines></p></li></ol></li><li> This entry <b>SHALL</b> contain zero or one [0..1] <tt><b>observation</b></tt> <ol><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:10746)<tt><b>/@code</b>="67481-2" </tt><i>Name of first unit on scene</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10745)</li><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type ST (CONF:10747)<p><lines><i>NEMSIS Trace: EScene.02</i></lines></p></li></ol></li></ol>
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt> (CONF:10738) <ol><li> This entry <b>SHALL</b> conform to <xref href="../DerivedEntry.dita">Derived Entry</xref> template (templateId: <tt>2.16.840.1.1133883.17.3.10.1.24</tt>)</li><li> This entry <b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt> (CONF:10748) <ol><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:10750)<tt><b>/@code</b>="67489-5" </tt><i>EMS Count of patients at scene</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10749)</li><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type INT (CONF:10751)<p><lines><i>NEMSIS Trace: EScene.06</i></lines></p></li></ol></li><li> This entry <b>SHALL</b> contain zero or one [0..1] <tt><b>observation</b></tt> <ol><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:10753)<tt><b>/@code</b>="67490-3" </tt><i>Mass Casualty Incident Indicator</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>)</li><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type BL (CONF:10754)<p><lines><i>NEMSIS Trace: EScene.07</i></lines></p></li></ol></li></ol>
+</li>
 </ol>
 <ol id="aggregate">
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="67665-0" </tt><i>EMS Scene Section</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10732)
 </li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>title</b></tt> = "EMS Scene" (CONF:10734)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>title</b></tt> and <b>SHOULD</b> equal "EMS Scene" (CONF:10734)
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt> (CONF:10733)
 </li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt> (CONF:10736) <ol><li> This entry <b>SHALL</b> conform to <xref href="../DerivedEntry.dita">Derived Entry</xref> template (templateId: <tt>2.16.840.1.1133883.17.3.10.1.24</tt>)</li><li> This entry <b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt> (CONF:10740) <ol><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:10741)<tt><b>/@code</b>="67665-0" </tt><i>EMS reporter is first unit on scene</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10742)</li><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type BL (CONF:10743)<p><i>NEMSIS Trace: EScene.01</i></p></li></ol></li><li> This entry <b>SHALL</b> contain zero or one [0..1] <tt><b>observation</b></tt> <ol><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:10746)<tt><b>/@code</b>="67481-2" </tt><i>Name of first unit on scene</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10745)</li><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type ST (CONF:10747)<p><i>NEMSIS Trace: EScene.02</i></p></li></ol></li></ol>
-<ol>
-<li>Contains exactly one [1..1] <xref href="../EMSFirstUnitEntry.dita">EMS First Unit Entry</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.24</tt>)</li></ol></li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt> (CONF:10738) <ol><li> This entry <b>SHALL</b> conform to <xref href="../DerivedEntry.dita">Derived Entry</xref> template (templateId: <tt>2.16.840.1.1133883.17.3.10.1.24</tt>)</li><li> This entry <b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt> (CONF:10748) <ol><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:10750)<tt><b>/@code</b>="67489-5" </tt><i>EMS Count of patients at scene</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10749)</li><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type INT (CONF:10751)<p><i>NEMSIS Trace: EScene.06</i></p></li></ol></li><li> This entry <b>SHALL</b> contain zero or one [0..1] <tt><b>observation</b></tt> <ol><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:10753)</li><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type BL (CONF:10754)<p><i>NEMSIS Trace: EScene.04</i></p></li></ol></li></ol>
-<ol>
-<li>Contains exactly one [1..1] <xref href="../EMSScenePatientCountEntry.dita">EMS Scene Patient Count Entry</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.24</tt>)</li></ol></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt> (CONF:10736) <ol><li> This entry <b>SHALL</b> conform to <xref href="../DerivedEntry.dita">Derived Entry</xref> template (templateId: <tt>2.16.840.1.1133883.17.3.10.1.24</tt>)</li><li> This entry <b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt> (CONF:10740) <ol><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:10741)<tt><b>/@code</b>="67481-2" </tt><i>EMS reporter is first unit on scene</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10742)</li><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type BL (CONF:10743)<p><lines><i>NEMSIS Trace: EScene.01</i></lines></p></li></ol></li><li> This entry <b>SHALL</b> contain zero or one [0..1] <tt><b>observation</b></tt> <ol><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:10746)<tt><b>/@code</b>="67481-2" </tt><i>Name of first unit on scene</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10745)</li><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type ST (CONF:10747)<p><lines><i>NEMSIS Trace: EScene.02</i></lines></p></li></ol></li></ol>
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt> (CONF:10738) <ol><li> This entry <b>SHALL</b> conform to <xref href="../DerivedEntry.dita">Derived Entry</xref> template (templateId: <tt>2.16.840.1.1133883.17.3.10.1.24</tt>)</li><li> This entry <b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt> (CONF:10748) <ol><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:10750)<tt><b>/@code</b>="67489-5" </tt><i>EMS Count of patients at scene</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10749)</li><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type INT (CONF:10751)<p><lines><i>NEMSIS Trace: EScene.06</i></lines></p></li></ol></li><li> This entry <b>SHALL</b> contain zero or one [0..1] <tt><b>observation</b></tt> <ol><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:10753)<tt><b>/@code</b>="67490-3" </tt><i>Mass Casualty Incident Indicator</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>)</li><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type BL (CONF:10754)<p><lines><i>NEMSIS Trace: EScene.07</i></lines></p></li></ol></li></ol>
+</li>
 </ol>
-<codeblock id="example"><![CDATA[]]></codeblock>
+<section id="tableconformance"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="8" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><colspec colname="col2" colnum="2" /><colspec colname="col3" colnum="3" /><colspec colname="col4" colnum="4" /><colspec colname="col5" colnum="5" /><colspec colname="col6" colnum="6" /><colspec colname="col7" colnum="7" /><thead> <row><entry namest="col0" nameend="col7" >emspcr::EMSSceneSection</entry>  </row>  <row><entry namest="col0" nameend="col7" >/cda:ClinicalDocument/cda:component/cda:structuredBody/cda:component/cda:section/</entry>  </row>  <row><entry>Name</entry><entry>XPath</entry><entry>Cardinality</entry><entry>Severity</entry><entry>Nullable</entry><entry>Data Type</entry><entry>Conformance</entry><entry>Value(s)</entry></row></thead><tbody><row><entry>code</entry><entry>code</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>CE</entry><entry>CONF:10732</entry><entry>LOINC 2.16.840.1.113883.6.1 </entry></row> 
+<row><entry>title</entry><entry>title</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>ST</entry><entry>CONF:10734</entry><entry> </entry></row> 
+<row><entry>eMSSceneSection</entry><entry>eMSSceneSection</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>EMSSceneSection</entry><entry>CONF:10018</entry><entry> </entry></row> 
+<row><entry>entry1</entry><entry>entry1</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>EMSFirstUnitEntry</entry><entry>CONF:10736</entry><entry> </entry></row> 
+<row><entry>entry3</entry><entry>entry3</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>EMSScenePatientCountEntry</entry><entry>CONF:10738</entry><entry> </entry></row> 
+<row><entry>text</entry><entry>text</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>StrucDocText</entry><entry>CONF:10733</entry><entry> </entry></row> 
+</tbody></tgroup></table></p></section>
+<codeblock id="example"><![CDATA[<section xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3">
+  <id root="MDHT" extension="1754857011"/>
+  <title>TEXT FOR TITLE</title>
+  <text/>
+  <entry>
+    <observation>
+      <code code="67481-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Name of first unit on scene"/>
+      <value xsi:type="ST">TEXT FOR VALUE</value>
+    </observation>
+  </entry>
+  <entry>
+    <observation>
+      <code code="67490-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Mass Casualty Incident Indicator"/>
+      <value xsi:type="BL"/>
+    </observation>
+  </entry>
+</section>]]></codeblock>
 <section id="changes">
 </section>
 <p><ph id="classformalname">EMS Scene Section</ph></p>

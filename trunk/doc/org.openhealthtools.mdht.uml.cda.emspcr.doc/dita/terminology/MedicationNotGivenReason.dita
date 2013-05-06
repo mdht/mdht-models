@@ -16,20 +16,19 @@
 <row><entry>Code System</entry><entry>LOINC - 2.16.840.1.113883.6.1</entry></row>
 <row><entry>Definition</entry><entry>Rationale for not adminstering an otherwise indicated medication</entry></row>
 </tbody></tgroup></table>
-<table><tgroup cols="4">
+<table><tgroup cols="3">
 <colspec colname="col1" colwidth="1*"/>
-<colspec colname="col2" colwidth="2*"/>
-<colspec colname="col3" colwidth="1*"/>
-<colspec colname="col4" colwidth="3*"/>
+<colspec colname="col2" colwidth="1*"/>
+<colspec colname="col3" colwidth="2*"/>
 <thead><row>
-<entry>Concept Code</entry><entry>Concept Name</entry><entry>Code System</entry><entry>Description</entry>
+<entry>Code</entry><entry>Code System</entry><entry>Print Name</entry>
 </row></thead><tbody>
-<row><entry>LA15185-4</entry><entry>Unable to complete</entry><entry>LOINC</entry><entry></entry></row>
-<row><entry>LA18921-9</entry><entry>Medication already taken</entry><entry>LOINC</entry><entry></entry></row>
-<row><entry>LA18922-7</entry><entry>Medication allergy</entry><entry>LOINC</entry><entry></entry></row>
-<row><entry>LA18925-0</entry><entry>Denied by order</entry><entry>LOINC</entry><entry></entry></row>
-<row><entry>LA4216-3</entry><entry>Contraindicated</entry><entry>LOINC</entry><entry></entry></row>
-<row><entry>LA4389-8</entry><entry>Refused</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA15185-4</entry><entry>LOINC</entry><entry>Unable to complete</entry></row>
+<row><entry>LA18921-9</entry><entry>LOINC</entry><entry>Medication already taken</entry></row>
+<row><entry>LA18922-7</entry><entry>LOINC</entry><entry>Medication allergy</entry></row>
+<row><entry>LA18925-0</entry><entry>LOINC</entry><entry>Denied by order</entry></row>
+<row><entry>LA4216-3</entry><entry>LOINC</entry><entry>Contraindicated</entry></row>
+<row><entry>LA4389-8</entry><entry>LOINC</entry><entry>Refused</entry></row>
 </tbody></tgroup></table>
 </section>
 </body>

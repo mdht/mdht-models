@@ -2,19 +2,27 @@
 <!DOCTYPE bookmap PUBLIC "-//OASIS//DTD DITA BookMap//EN" "bookmap.dtd">
 <bookmap id="cdabook">
     <booktitle>
-        <booklibrary>HL7 Draft Standard for Trial Use</booklibrary>        
-        <mainbooktitle>Emergency Medical Services; Patient Care Report</mainbooktitle>
-        <booktitlealt>HL7 Draft Standard for Trial Use</booktitlealt>
-        <booktitlealt><image href="images/hl7logo.gif"/></booktitlealt>
+		<booklibrary>HL7 Implementation Guide for CDA &#174; Release 2:</booklibrary>
+		<mainbooktitle>Emergency Medical Services; Patient Care Report</mainbooktitle>
+		<!--  <booktitlealt>
+			<image height="2cm" href="images/HL7_International_logo.jpg" />
+		</booktitlealt>  -->
+		<booktitlealt>(Universal Realm)</booktitlealt>
+		<booktitlealt>HL7 Draft Standard For Trial Use</booktitlealt>
+		<booktitlealt>February 2013</booktitlealt>
+		<booktitlealt><image href="images/hl7logo.gif"/></booktitlealt>
         <booktitlealt audience="developer">(Developer Documentation)</booktitlealt>
     </booktitle>
     <bookmeta>
-    <prodinfo>
-					<prodname>CDAR2L3_IG_EMSRUNRPT_DSTUR1_2012JUL</prodname>
-					<vrmlist>
-						<vrm release="DSTUR1" version="2012JUL" ></vrm>
-					</vrmlist>
-				</prodinfo>
+    	<prodinfo>
+			<prodname>CDAR2L3_IG_EMSRUNRPT</prodname>
+			<vrmlist>
+				<vrm release="DSTUR2" version="2013JUL" ></vrm>
+			</vrmlist>
+			<brand>HL7 IG for CDA R2</brand>
+			<series>Draft Standard for Trial Use</series>
+			<platform>US Realm</platform>
+		</prodinfo>
         <bookid>
             <booknumber/>
             <maintainer>
@@ -29,7 +37,7 @@
                 <year>2009</year>
             </copyrfirst>
             <copyrlast>
-                <year>2011</year>
+                <year>2013</year>
             </copyrlast>
             <bookowner>
                 <organization/>
