@@ -155,7 +155,7 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0--iwMcaEeGjDJAyT0XW9Q" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0_CNIMcaEeGjDJAyT0XW9Q" value="1"/>
       </ownedAttribute>
-      <ownedAttribute xmi:id="_6fVM8McaEeGjDJAyT0XW9Q" name="eMSHumanAuthorParticipation" type="_D_JtUGlYEeG4boS-IbG8Zw" association="_6fXpMMcaEeGjDJAyT0XW9Q">
+      <ownedAttribute xmi:id="_6fVM8McaEeGjDJAyT0XW9Q" name="eMSAuthorParticipation" type="_D_JtUGlYEeG4boS-IbG8Zw" association="_6fXpMMcaEeGjDJAyT0XW9Q">
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_YM5UUMnUEeG5-4TLRzrz-A" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_YM5UUcnUEeG5-4TLRzrz-A" value="1"/>
       </ownedAttribute>
@@ -196,7 +196,7 @@
         </ownedAttribute>
         <nestedClassifier xmi:type="uml:Class" xmi:id="_dXu-wGeuEeGtXKebdWh3hg" name="PatientRole">
           <generalization xmi:id="_gC-dAGeuEeGtXKebdWh3hg">
-            <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_OApKcEALEd6wZe6nFLrjsw"/>
+            <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-documents.uml#_qjbOUCylEeGMXrZ0DiQwGg"/>
           </generalization>
           <ownedAttribute xmi:id="_iJRQUHSBEeGa4IXs2ghZEw" name="addr" visibility="private" aggregation="composite">
             <ownedComment xmi:id="_vIQ2UHSBEeGa4IXs2ghZEw">
@@ -242,7 +242,7 @@ appendix A.</body>
           </ownedAttribute>
           <nestedClassifier xmi:type="uml:Class" xmi:id="_BsLoQGevEeGtXKebdWh3hg" name="Patient">
             <generalization xmi:id="_FDRf4GevEeGtXKebdWh3hg">
-              <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_mxsCMEALEd6wZe6nFLrjsw"/>
+              <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-documents.uml#_wfQTkCylEeGMXrZ0DiQwGg"/>
             </generalization>
             <ownedAttribute xmi:id="_skFM4HSCEeGa4IXs2ghZEw" name="birthTime" visibility="private" aggregation="composite">
               <ownedComment xmi:id="_8QFWQHSDEeGa4IXs2ghZEw">
@@ -310,7 +310,7 @@ selected for the NEMSIS question. Further, the CDA model includes a single race 
         </nestedClassifier>
       </nestedClassifier>
       <nestedClassifier xmi:type="uml:Class" xmi:id="_D_JtUGlYEeG4boS-IbG8Zw" name="EMSAuthorParticipation">
-        <generalization xmi:id="_IQiC8GlYEeG4boS-IbG8Zw">
+        <generalization xmi:id="_yqlUAJesEeKIQPQBFzaASQ">
           <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-documents.uml#_xw9WkCymEeGMXrZ0DiQwGg"/>
         </generalization>
         <ownedAttribute xmi:id="_SkBEQHuIEeGs2I-Db78R9w" name="eMSAuthorRole" type="_Mn0zUGlYEeG4boS-IbG8Zw" association="_SkBrUXuIEeGs2I-Db78R9w">
@@ -356,11 +356,12 @@ NEMSIS Trace: DPersonnel.09</body>
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_cAAN8Vg8EeK-i8RB1gvLUA"/>
           </ownedAttribute>
           <ownedAttribute xmi:id="_Un_uMHuIEeGs2I-Db78R9w" name="eMSHumanAuthor" type="_1xAj0HtDEeGs2I-Db78R9w" association="_UoAVQXuIEeGs2I-Db78R9w">
-            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_UoAVQHuIEeGs2I-Db78R9w"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_g56dUIysEeKEkL1RWP3smw" value="*"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_g56dUYysEeKEkL1RWP3smw"/>
           </ownedAttribute>
           <ownedAttribute xmi:id="_hVg6QETZEeKEm6ZghGGtvw" name="eMSAuthoringDevice" type="_BGI68HtCEeGs2I-Db78R9w" association="_hVjWgETZEeKEm6ZghGGtvw">
-            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_QY8rQFg8EeK-i8RB1gvLUA" value="1"/>
-            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_QY9SUFg8EeK-i8RB1gvLUA"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_fG9R8IysEeKEkL1RWP3smw" value="1"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_fG95AIysEeKEkL1RWP3smw" value="1"/>
           </ownedAttribute>
           <nestedClassifier xmi:type="uml:Class" xmi:id="_1xAj0HtDEeGs2I-Db78R9w" name="EMSHumanAuthor">
             <generalization xmi:id="_7du2EHtDEeGs2I-Db78R9w">
@@ -800,89 +801,69 @@ DPersonnel.03 Middle: @ENXP=&quot;GIV&quot;</body>
       </ownedAttribute>
       <nestedClassifier xmi:type="uml:Class" xmi:id="_VoChcMH-EeGOXu0EprM3pw" name="HistoryOfConditionsEntry">
         <generalization xmi:id="_VoChccH-EeGOXu0EprM3pw" general="_9YwisMHsEeGOXu0EprM3pw"/>
-        <ownedAttribute xmi:id="_ZCcLw8H-EeGOXu0EprM3pw" name="eMSHistoryOfConditions" type="_Rm2IMIzdEeGnhceUMXltng" association="_ZCcLwMH-EeGOXu0EprM3pw">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ZCcLxMH-EeGOXu0EprM3pw"/>
+        <ownedAttribute xmi:id="_S77bkLMkEeKNbt70lHd2Eg" name="eMSExistenceOfHistoryOfCondition" type="_W_uRYIzdEeGnhceUMXltng" association="_S7930LMkEeKNbt70lHd2Eg">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_WL_eILMkEeKNbt70lHd2Eg" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_WMAsQLMkEeKNbt70lHd2Eg" value="1"/>
         </ownedAttribute>
-        <nestedClassifier xmi:type="uml:Class" xmi:id="_Rm2IMIzdEeGnhceUMXltng" name="EMSHistoryOfConditionsOrganizer">
-          <generalization xmi:id="_SAewMIzdEeGnhceUMXltng">
-            <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_B6aX4EbvEd6besF9iFIJkQ"/>
+        <ownedAttribute xmi:id="_XtyBALMkEeKNbt70lHd2Eg" name="eMSHistoryOfCondition" type="_5XgZ4IzdEeGnhceUMXltng" association="_Xt0dQLMkEeKNbt70lHd2Eg">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_XtzPIbMkEeKNbt70lHd2Eg" value="*"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XtzPILMkEeKNbt70lHd2Eg"/>
+        </ownedAttribute>
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_W_uRYIzdEeGnhceUMXltng" name="EMSExistenceOfHistoryOfCondition">
+          <generalization xmi:id="_XjAkoIzdEeGnhceUMXltng">
+            <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
           </generalization>
-          <ownedAttribute xmi:id="_AXBgUCpIEeK1vdrMJapHMg" name="historyOfConditionComponent" type="_11IO4CpHEeK1vdrMJapHMg" association="_AXCucCpIEeK1vdrMJapHMg">
-            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_AXCHYCpIEeK1vdrMJapHMg"/>
+          <ownedAttribute xmi:id="_Ybg58IzdEeGnhceUMXltng" name="code" visibility="private" aggregation="composite">
+            <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
           </ownedAttribute>
-          <ownedAttribute xmi:id="_ZzALcCpIEeK1vdrMJapHMg" name="existenceOfHistoryOfConditionComponent" type="_E5O8sCpHEeK1vdrMJapHMg" association="_ZzBZkCpIEeK1vdrMJapHMg">
-            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ZzAygCpIEeK1vdrMJapHMg"/>
-          </ownedAttribute>
-          <nestedClassifier xmi:type="uml:Class" xmi:id="_E5O8sCpHEeK1vdrMJapHMg" name="ExistenceOfHistoryOfConditionComponent">
-            <generalization xmi:id="_tPLFsCpHEeK1vdrMJapHMg">
-              <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_cEUTcEcEEd6besF9iFIJkQ"/>
-            </generalization>
-            <ownedAttribute xmi:id="_HSvVQCpIEeK1vdrMJapHMg" name="eMSExistenceOfHistoryOfCondition" type="_W_uRYIzdEeGnhceUMXltng" association="_HSwjYCpIEeK1vdrMJapHMg">
-              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_HSv8UCpIEeK1vdrMJapHMg"/>
-            </ownedAttribute>
-            <nestedClassifier xmi:type="uml:Class" xmi:id="_W_uRYIzdEeGnhceUMXltng" name="EMSExistenceOfHistoryOfCondition">
-              <generalization xmi:id="_XjAkoIzdEeGnhceUMXltng">
-                <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
-              </generalization>
-              <ownedAttribute xmi:id="_Ybg58IzdEeGnhceUMXltng" name="code" visibility="private" aggregation="composite">
-                <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
-              </ownedAttribute>
-              <ownedAttribute xmi:id="_YbhhAIzdEeGnhceUMXltng" name="value" visibility="private" aggregation="composite">
-                <ownedComment xmi:id="_0aRD0IzdEeGnhceUMXltng">
-                  <body>If NEMSIS EHistory. 08 is &quot;Refused &quot; or &quot;Unable to Complete,&quot; the value should be &quot;NI&quot;; the original value may be recorded in Observation.text.&#xD;
+          <ownedAttribute xmi:id="_YbhhAIzdEeGnhceUMXltng" name="value" visibility="private" aggregation="composite">
+            <ownedComment xmi:id="_0aRD0IzdEeGnhceUMXltng">
+              <body>If NEMSIS EHistory. 08 is &quot;Refused &quot; or &quot;Unable to Complete,&quot; the value should be &quot;NI&quot;; the original value may be recorded in Observation.text.&#xD;
 If NEMSIS EHistory. 08 is &quot;None Reported,&quot; the value should be FALSE.&#xD;
 If NEMSIS EHistory. 08 has proper values, the value should be TRUE.</body>
-                </ownedComment>
-                <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_r1WssDxjEd6JwqSGecoePg"/>
-                <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_K34JsMcQEeGjDJAyT0XW9Q" value="1"/>
-                <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_K35-4McQEeGjDJAyT0XW9Q" value="1"/>
-              </ownedAttribute>
-            </nestedClassifier>
-          </nestedClassifier>
-          <nestedClassifier xmi:type="uml:Class" xmi:id="_11IO4CpHEeK1vdrMJapHMg" name="HistoryOfConditionComponent">
-            <generalization xmi:id="_3TC-YCpHEeK1vdrMJapHMg">
-              <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_cEUTcEcEEd6besF9iFIJkQ"/>
-            </generalization>
-            <ownedAttribute xmi:id="_go_y4CpIEeK1vdrMJapHMg" name="eMSHistoryOfCondition" type="_5XgZ4IzdEeGnhceUMXltng" association="_gpBBACpIEeK1vdrMJapHMg">
-              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_gpAZ8CpIEeK1vdrMJapHMg"/>
-            </ownedAttribute>
-            <nestedClassifier xmi:type="uml:Class" xmi:id="_5XgZ4IzdEeGnhceUMXltng" name="EMSHistoryOfCondition">
-              <generalization xmi:id="_5xr0cIzdEeGnhceUMXltng">
-                <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
-              </generalization>
-              <ownedAttribute xmi:id="_6eFAYIzdEeGnhceUMXltng" name="code" visibility="private" aggregation="composite">
-                <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
-              </ownedAttribute>
-              <ownedAttribute xmi:id="_6eFncIzdEeGnhceUMXltng" name="value" visibility="private" aggregation="composite">
-                <ownedComment xmi:id="_Uv-8AIzgEeGnhceUMXltng">
-                  <body>NEMSIS Trace: EHistory. 08&#xD;
+            </ownedComment>
+            <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_r1WssDxjEd6JwqSGecoePg"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_K34JsMcQEeGjDJAyT0XW9Q" value="1"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_K35-4McQEeGjDJAyT0XW9Q" value="1"/>
+          </ownedAttribute>
+        </nestedClassifier>
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_5XgZ4IzdEeGnhceUMXltng" name="EMSHistoryOfCondition">
+          <generalization xmi:id="_5xr0cIzdEeGnhceUMXltng">
+            <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
+          </generalization>
+          <ownedAttribute xmi:id="_6eFAYIzdEeGnhceUMXltng" name="code" visibility="private" aggregation="composite">
+            <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_6eFncIzdEeGnhceUMXltng" name="value" visibility="private" aggregation="composite">
+            <ownedComment xmi:id="_Uv-8AIzgEeGnhceUMXltng">
+              <body>NEMSIS Trace: EHistory. 08&#xD;
 If NEMSIS EHistory.08 is &quot;No bleeding disorder,&quot; the value should be the appropriate&#xD;
 ICD-10 code (D66, D67, D68) and negationIndicator should be TRUE.</body>
-                </ownedComment>
-                <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
-                <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_5xbgUIzeEeGnhceUMXltng" value="1"/>
-                <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_5xcHYIzeEeGnhceUMXltng" value="1"/>
-              </ownedAttribute>
-            </nestedClassifier>
-          </nestedClassifier>
+            </ownedComment>
+            <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_5xbgUIzeEeGnhceUMXltng" value="1"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_5xcHYIzeEeGnhceUMXltng" value="1"/>
+          </ownedAttribute>
         </nestedClassifier>
       </nestedClassifier>
       <nestedClassifier xmi:type="uml:Class" xmi:id="_WU0u8MH-EeGOXu0EprM3pw" name="HistoryOfProceduresEntry">
         <generalization xmi:id="_WU0u8cH-EeGOXu0EprM3pw" general="_9YwisMHsEeGOXu0EprM3pw"/>
         <ownedAttribute xmi:id="_ahp7wMH-EeGOXu0EprM3pw" name="eMSHistoryOfProcedures" type="_HLO9kIzgEeGnhceUMXltng" association="_ahp7wsH-EeGOXu0EprM3pw">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ahp7wcH-EeGOXu0EprM3pw"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_LHuO8JfGEeKIQPQBFzaASQ" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_LHuO8ZfGEeKIQPQBFzaASQ" value="1"/>
         </ownedAttribute>
         <nestedClassifier xmi:type="uml:Class" xmi:id="_HLO9kIzgEeGnhceUMXltng" name="EMSHistoryOfProceduresOrganizer">
           <generalization xmi:id="_Hx2RoIzgEeGnhceUMXltng">
             <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_B6aX4EbvEd6besF9iFIJkQ"/>
           </generalization>
-          <ownedAttribute xmi:id="_x3y68McQEeGjDJAyT0XW9Q" name="component" visibility="private" type="_frjM8McQEeGjDJAyT0XW9Q" aggregation="composite" association="_x30wIMcQEeGjDJAyT0XW9Q">
-            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_94EkAMcSEeGjDJAyT0XW9Q" value="*"/>
-            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_94EkAccSEeGjDJAyT0XW9Q" value="1"/>
+          <ownedAttribute xmi:id="_x3y68McQEeGjDJAyT0XW9Q" name="eMSExistenceOfHistoryOfProcedureComponent" visibility="private" type="_frjM8McQEeGjDJAyT0XW9Q" aggregation="composite" association="_x30wIMcQEeGjDJAyT0XW9Q">
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Pj9JsJfGEeKIQPQBFzaASQ" value="1"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Pj9JsZfGEeKIQPQBFzaASQ"/>
             <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_WtEdwUcLEd6besF9iFIJkQ"/>
           </ownedAttribute>
           <ownedAttribute xmi:id="_5x6_ICpIEeK1vdrMJapHMg" name="eMSHistoryOfProceduresComponent" type="_vs1lgCpIEeK1vdrMJapHMg" association="_5x80UCpIEeK1vdrMJapHMg">
-            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_5x7mMCpIEeK1vdrMJapHMg"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Ni9iUJfGEeKIQPQBFzaASQ" value="*"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Ni9iUZfGEeKIQPQBFzaASQ"/>
           </ownedAttribute>
           <nestedClassifier xmi:type="uml:Class" xmi:id="_frjM8McQEeGjDJAyT0XW9Q" name="EMSExistenceOfHistoryOfProcedureComponent">
             <generalization xmi:id="_nJwq8McQEeGjDJAyT0XW9Q">
@@ -1842,14 +1823,18 @@ Causes are in ICD-10 chapter XX</body>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_unAJ4MnUEeG5-4TLRzrz-A" value="1"/>
         <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_vJtnoEAMEd6wZe6nFLrjsw"/>
       </ownedAttribute>
-      <ownedAttribute xmi:id="_lS1nYMHzEeGOXu0EprM3pw" name="entry1" type="_bvOCcMH7EeGOXu0EprM3pw" association="_lS1nY8HzEeGOXu0EprM3pw">
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_lS1nYcHzEeGOXu0EprM3pw" value="1"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_lS1nYsHzEeGOXu0EprM3pw" value="1"/>
+      <ownedAttribute xmi:id="_ZAfGgIWnEeKGmunFEkXZeA" name="entry" visibility="private" type="_bvOCcMH7EeGOXu0EprM3pw" aggregation="composite" association="_ZAgUoIWnEeKGmunFEkXZeA">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ZAfGgYWnEeKGmunFEkXZeA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ZAfGgoWnEeKGmunFEkXZeA"/>
       </ownedAttribute>
       <nestedClassifier xmi:type="uml:Class" xmi:id="_bvOCcMH7EeGOXu0EprM3pw" name="EMSAdvancedDirectiveEntry">
+        <ownedComment xmi:id="_7cpOIIWmEeKGmunFEkXZeA">
+          <body>INLINED</body>
+        </ownedComment>
         <generalization xmi:id="_bvOCccH7EeGOXu0EprM3pw" general="_9YwisMHsEeGOXu0EprM3pw"/>
         <ownedAttribute xmi:id="_fTRYAMH7EeGOXu0EprM3pw" name="eMSAdvancedDirectiveObservation" type="_xCcE0Iy7EeGnhceUMXltng" association="_fTbJAMH7EeGOXu0EprM3pw">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_fTRYAcH7EeGOXu0EprM3pw"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Kxsb8IHKEeKGk-rHyXanBA" value="*"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_KxtDAIHKEeKGk-rHyXanBA"/>
         </ownedAttribute>
         <nestedClassifier xmi:type="uml:Class" xmi:id="_xCcE0Iy7EeGnhceUMXltng" name="EMSAdvancedDirectiveObservation">
           <generalization xmi:id="_xhZ4wIy7EeGnhceUMXltng">
@@ -2205,7 +2190,8 @@ This nulled notional class is parallel to the explicit question &quot;patient on
                 </generalization>
                 <ownedAttribute xmi:id="_sEM5MIcpEeGqF6qfYwLiQw" name="code" visibility="private" aggregation="composite">
                   <ownedComment xmi:id="_TbL6EEM8EeKBoM5tGvrHVQ">
-                    <body>NEMSIS Trace: EHistory.12</body>
+                    <body>NEMSIS Trace: EHistory.12&#xD;
+Note: all of RxNorm is legal in this field, but NEMSIS provides a selected list at http://www.nemsis.org/v3/resources.html</body>
                   </ownedComment>
                   <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
                   <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_RxnJAMcNEeGjDJAyT0XW9Q" value="1"/>
@@ -2353,30 +2339,6 @@ This nulled notional class is parallel to the explicit question &quot;patient on
         <ownedAttribute xmi:id="_nG_ewETbEeKEm6ZghGGtvw" name="eMSPriorAidVitals" type="_Dq57UIzpEeGnhceUMXltng" association="_nHB7AETbEeKEm6ZghGGtvw">
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_nHAs4ETbEeKEm6ZghGGtvw"/>
         </ownedAttribute>
-        <ownedAttribute xmi:id="_qwBa8ETbEeKEm6ZghGGtvw" name="eMSCardiacRhythm" type="_uMxJUIzpEeGnhceUMXltng" association="_qwD3METbEeKEm6ZghGGtvw">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_qwCpEETbEeKEm6ZghGGtvw"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:id="_tt5hUETbEeKEm6ZghGGtvw" name="eMSCarbonDioxide" type="_IU2lIIztEeGnhceUMXltng" association="_tt79kETbEeKEm6ZghGGtvw">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_tt7WgETbEeKEm6ZghGGtvw"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:id="_v2m6QETbEeKEm6ZghGGtvw" name="eMSCarbonMonoxide" type="_WFit0IztEeGnhceUMXltng" association="_v2pWgETbEeKEm6ZghGGtvw">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_v2oIYETbEeKEm6ZghGGtvw"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:id="_yaOtkETbEeKEm6ZghGGtvw" name="eMSBloodGlucose" type="_jmDsgIztEeGnhceUMXltng" association="_yaQiwETbEeKEm6ZghGGtvw">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_yaP7sETbEeKEm6ZghGGtvw"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:id="_0fbfgETbEeKEm6ZghGGtvw" name="eMSLevelOfResponsiveness" type="_xgaHgIztEeGnhceUMXltng" association="_0fd7wETbEeKEm6ZghGGtvw">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0fctoETbEeKEm6ZghGGtvw"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:id="_2ve2kETbEeKEm6ZghGGtvw" name="eMSPainScore" type="_lnVLQIzuEeGnhceUMXltng" association="_2vgrwETbEeKEm6ZghGGtvw">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2vgEsETbEeKEm6ZghGGtvw"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:id="_4h7roETbEeKEm6ZghGGtvw" name="eMSStrokeScore" type="_9koR4IzuEeGnhceUMXltng" association="_4h9g0ETbEeKEm6ZghGGtvw">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4h85wETbEeKEm6ZghGGtvw"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:id="_8-xDUETbEeKEm6ZghGGtvw" name="eMSGlasgowComaScore" type="_RNfAcIzyEeGnhceUMXltng" association="_8-zfkETbEeKEm6ZghGGtvw">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_8-y4gETbEeKEm6ZghGGtvw"/>
-        </ownedAttribute>
         <nestedClassifier xmi:type="uml:Class" xmi:id="_JnfD8IzoEeGnhceUMXltng" name="EMSVitalSignsOrganizer">
           <ownedComment xmi:id="_WDhRYIzpEeGnhceUMXltng">
             <body>For any observation within the organizer, if the NEMSIS value is &quot;Refused,&quot; the value SHALL be &quot;NI;&quot; the string &quot;Refused&quot; MAY be recorded in Observation.text.</body>
@@ -2410,8 +2372,10 @@ This nulled notional class is parallel to the explicit question &quot;patient on
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_hiixAETWEeKEm6ZghGGtvw" value="1"/>
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_hiixAUTWEeKEm6ZghGGtvw"/>
           </ownedAttribute>
-          <ownedAttribute xmi:id="_eXw3EETWEeKEm6ZghGGtvw" name="eMSOxygenSaturationComponent" type="_YiDn8ETWEeKEm6ZghGGtvw" association="_eXyFMETWEeKEm6ZghGGtvw">
-            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_eXw3EUTWEeKEm6ZghGGtvw"/>
+          <ownedAttribute xmi:id="_hoGXELMOEeKNbt70lHd2Eg" name="eMSOxygenSaturationComponent" visibility="private" type="_YiDn8ETWEeKEm6ZghGGtvw" aggregation="composite" association="_hoHlMLMOEeKNbt70lHd2Eg">
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_o0JHALMOEeKNbt70lHd2Eg" value="1"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_o0JHAbMOEeKNbt70lHd2Eg"/>
+            <subsettedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_WtEdwUcLEd6besF9iFIJkQ"/>
           </ownedAttribute>
           <nestedClassifier xmi:type="uml:Class" xmi:id="_Orea4IzrEeGnhceUMXltng" name="EMSSystolicBloodPressure">
             <generalization xmi:id="_PIqGIIzrEeGnhceUMXltng">
@@ -2429,10 +2393,19 @@ UCUM units SHOULD be &quot;mm[Hg]&quot;.</body>
               <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_VRoPgIzrEeGnhceUMXltng" value="1"/>
               <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_VRoPgYzrEeGnhceUMXltng" value="1"/>
             </ownedAttribute>
+            <ownedAttribute xmi:id="_K5WrUIjqEeKx3P4dlW9OSw" name="effectiveTime" visibility="private" aggregation="composite">
+              <ownedComment xmi:id="_TtQCgIjtEeKx3P4dlW9OSw">
+                <body>NEMSIS Trace: EVitals.01</body>
+              </ownedComment>
+              <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_QYeW4D5-Ed6cla2oXsPtlA"/>
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Vj2XwIjtEeKx3P4dlW9OSw" value="1"/>
+              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Vj2XwYjtEeKx3P4dlW9OSw"/>
+              <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-vitalsigns.uml#_2OxoTRSVEeGGzu7fmW9pXw"/>
+            </ownedAttribute>
           </nestedClassifier>
           <nestedClassifier xmi:type="uml:Class" xmi:id="_l4xA4IzrEeGnhceUMXltng" name="EMSDiastolicBloodPressure">
             <generalization xmi:id="_mVKpAIzrEeGnhceUMXltng">
-              <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
+              <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-vitalsigns.uml#_2OrhsRSVEeGGzu7fmW9pXw"/>
             </generalization>
             <ownedAttribute xmi:id="_nlVQYIzrEeGnhceUMXltng" name="code" visibility="private" aggregation="composite">
               <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
@@ -2446,10 +2419,19 @@ UCUM units SHOULD be &quot;mm[Hg]&quot;.</body>
               <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2qRPMIzrEeGnhceUMXltng" value="1"/>
               <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2qRPMYzrEeGnhceUMXltng" value="1"/>
             </ownedAttribute>
+            <ownedAttribute xmi:id="_Y3lZYIjtEeKx3P4dlW9OSw" name="effectiveTime" visibility="private" aggregation="composite">
+              <ownedComment xmi:id="_clAGUIjtEeKx3P4dlW9OSw">
+                <body>NEMSIS Trace: EVitals.01</body>
+              </ownedComment>
+              <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_QYeW4D5-Ed6cla2oXsPtlA"/>
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Y3lZYYjtEeKx3P4dlW9OSw" value="1"/>
+              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Y3lZYojtEeKx3P4dlW9OSw"/>
+              <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_fUQ50Eo8Ed6c3qsAxlFHaQ"/>
+            </ownedAttribute>
           </nestedClassifier>
           <nestedClassifier xmi:type="uml:Class" xmi:id="__qJ7UIzrEeGnhceUMXltng" name="EMSHeartRate">
             <generalization xmi:id="_AA5nYIzsEeGnhceUMXltng">
-              <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
+              <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-vitalsigns.uml#_2OrhsRSVEeGGzu7fmW9pXw"/>
             </generalization>
             <ownedAttribute xmi:id="_AsAZ4IzsEeGnhceUMXltng" name="code" visibility="private" aggregation="composite">
               <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
@@ -2463,10 +2445,19 @@ UCUM units SHOULD be &quot;/min&quot;.</body>
               <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_AsBA8YzsEeGnhceUMXltng" value="*"/>
               <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_AsBA8ozsEeGnhceUMXltng"/>
             </ownedAttribute>
+            <ownedAttribute xmi:id="_p3qPMIjtEeKx3P4dlW9OSw" name="effectiveTime" visibility="private" aggregation="composite">
+              <ownedComment xmi:id="_rADaoIjtEeKx3P4dlW9OSw">
+                <body>NEMSIS Trace: EVitals.01</body>
+              </ownedComment>
+              <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_QYeW4D5-Ed6cla2oXsPtlA"/>
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_p3qPMYjtEeKx3P4dlW9OSw" value="1"/>
+              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_p3qPMojtEeKx3P4dlW9OSw"/>
+              <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_fUQ50Eo8Ed6c3qsAxlFHaQ"/>
+            </ownedAttribute>
           </nestedClassifier>
           <nestedClassifier xmi:type="uml:Class" xmi:id="_Q7VIMIzsEeGnhceUMXltng" name="EMSRespiratoryRate">
             <generalization xmi:id="_RN10gIzsEeGnhceUMXltng">
-              <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
+              <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-vitalsigns.uml#_2OrhsRSVEeGGzu7fmW9pXw"/>
             </generalization>
             <ownedAttribute xmi:id="_R8-ycIzsEeGnhceUMXltng" name="code" visibility="private" aggregation="composite">
               <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
@@ -2480,10 +2471,19 @@ UCUM units SHOULD be &quot;/min&quot;.</body>
               <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_f7THcIzsEeGnhceUMXltng" value="1"/>
               <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_f7TugIzsEeGnhceUMXltng" value="1"/>
             </ownedAttribute>
+            <ownedAttribute xmi:id="_y88YsIjtEeKx3P4dlW9OSw" name="effectiveTime" visibility="private" aggregation="composite">
+              <ownedComment xmi:id="_9d2LoIjtEeKx3P4dlW9OSw">
+                <body>NEMSIS Trace: EVitals.01</body>
+              </ownedComment>
+              <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_QYeW4D5-Ed6cla2oXsPtlA"/>
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_y88YsYjtEeKx3P4dlW9OSw" value="1"/>
+              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_y88YsojtEeKx3P4dlW9OSw"/>
+              <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_fUQ50Eo8Ed6c3qsAxlFHaQ"/>
+            </ownedAttribute>
           </nestedClassifier>
           <nestedClassifier xmi:type="uml:Class" xmi:id="_koRz8IzsEeGnhceUMXltng" name="EMSBodyTemperature">
             <generalization xmi:id="_k_CuIIzsEeGnhceUMXltng">
-              <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
+              <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-vitalsigns.uml#_2OrhsRSVEeGGzu7fmW9pXw"/>
             </generalization>
             <ownedAttribute xmi:id="_lpOTkIzsEeGnhceUMXltng" name="code" visibility="private" aggregation="composite">
               <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
@@ -2497,22 +2497,14 @@ UCUM units SHOULD be &quot;Cel&quot;.</body>
               <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_x0ldMIzsEeGnhceUMXltng" value="1"/>
               <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_x0mEQIzsEeGnhceUMXltng" value="1"/>
             </ownedAttribute>
-          </nestedClassifier>
-          <nestedClassifier xmi:type="uml:Class" xmi:id="_01XGkIzsEeGnhceUMXltng" name="EMSOxygenSaturation">
-            <generalization xmi:id="_1HuB4IzsEeGnhceUMXltng">
-              <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
-            </generalization>
-            <ownedAttribute xmi:id="_10ZhsIzsEeGnhceUMXltng" name="code" visibility="private" aggregation="composite">
-              <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
-            </ownedAttribute>
-            <ownedAttribute xmi:id="_10aIwIzsEeGnhceUMXltng" name="value" visibility="private" aggregation="composite">
-              <ownedComment xmi:id="__FR3MIzsEeGnhceUMXltng">
-                <body>NEMSIS Trace: EVitals.12&#xD;
-UCUM units will typically be &quot;%&quot;.</body>
+            <ownedAttribute xmi:id="__ctsEIjtEeKx3P4dlW9OSw" name="effectiveTime" visibility="private" aggregation="composite">
+              <ownedComment xmi:id="_D9JU4IjvEeKx3P4dlW9OSw">
+                <body>NEMSIS Trace: EVitals.01</body>
               </ownedComment>
-              <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#__I8BwDxZEd6JwqSGecoePg"/>
-              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_9w8hgIzsEeGnhceUMXltng" value="1"/>
-              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_9w8hgYzsEeGnhceUMXltng" value="1"/>
+              <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_QYeW4D5-Ed6cla2oXsPtlA"/>
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="__ctsEYjtEeKx3P4dlW9OSw" value="1"/>
+              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="__ctsEojtEeKx3P4dlW9OSw"/>
+              <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_fUQ50Eo8Ed6c3qsAxlFHaQ"/>
             </ownedAttribute>
           </nestedClassifier>
           <nestedClassifier xmi:type="uml:Class" xmi:id="_AptIMETVEeKEm6ZghGGtvw" name="EMSSystolicBloodPressureComponent">
@@ -2569,6 +2561,32 @@ UCUM units will typically be &quot;%&quot;.</body>
               <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_cT8lMUTWEeKEm6ZghGGtvw" value="1"/>
             </ownedAttribute>
           </nestedClassifier>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_01XGkIzsEeGnhceUMXltng" name="EMSOxygenSaturation">
+            <generalization xmi:id="_1HuB4IzsEeGnhceUMXltng">
+              <ownedComment xmi:id="_HYL4YIjvEeKx3P4dlW9OSw">
+                <body>NEMSIS Trace: EVitals.01</body>
+              </ownedComment>
+              <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
+            </generalization>
+            <ownedAttribute xmi:id="_10ZhsIzsEeGnhceUMXltng" name="code" visibility="private" aggregation="composite">
+              <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:id="_10aIwIzsEeGnhceUMXltng" name="value" visibility="private" aggregation="composite">
+              <ownedComment xmi:id="__FR3MIzsEeGnhceUMXltng">
+                <body>NEMSIS Trace: EVitals.12&#xD;
+UCUM units will typically be &quot;%&quot;.</body>
+              </ownedComment>
+              <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#__I8BwDxZEd6JwqSGecoePg"/>
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_9w8hgIzsEeGnhceUMXltng" value="1"/>
+              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_9w8hgYzsEeGnhceUMXltng" value="1"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:id="_Cri_kIjuEeKx3P4dlW9OSw" name="effectiveTime" visibility="private" aggregation="composite">
+              <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_QYeW4D5-Ed6cla2oXsPtlA"/>
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Cri_kYjuEeKx3P4dlW9OSw" value="1"/>
+              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Cri_kojuEeKx3P4dlW9OSw"/>
+              <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_fUQ50Eo8Ed6c3qsAxlFHaQ"/>
+            </ownedAttribute>
+          </nestedClassifier>
         </nestedClassifier>
         <nestedClassifier xmi:type="uml:Class" xmi:id="_Dq57UIzpEeGnhceUMXltng" name="EMSPriorAidVitals">
           <generalization xmi:id="_EHmeYIzpEeGnhceUMXltng">
@@ -2586,240 +2604,373 @@ UCUM units will typically be &quot;%&quot;.</body>
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_mgHz4McXEeGjDJAyT0XW9Q" value="1"/>
           </ownedAttribute>
         </nestedClassifier>
-        <nestedClassifier xmi:type="uml:Class" xmi:id="_uMxJUIzpEeGnhceUMXltng" name="EMSCardiacRhythm">
-          <generalization xmi:id="_unG78IzpEeGnhceUMXltng">
-            <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
-          </generalization>
-          <ownedAttribute xmi:id="_3BUIIIzpEeGnhceUMXltng" name="code" visibility="private" aggregation="composite">
-            <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
-          </ownedAttribute>
-          <ownedAttribute xmi:id="_3BUvMIzpEeGnhceUMXltng" name="methodCode" visibility="private" aggregation="composite">
-            <ownedComment xmi:id="_kBt1IIzqEeGnhceUMXltng">
-              <body>NEMSIS Trace: EVitals.05</body>
-            </ownedComment>
-            <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
-            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_BY_4MIzrEeGnhceUMXltng" value="1"/>
-            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_BZAfQIzrEeGnhceUMXltng" value="1"/>
-          </ownedAttribute>
-          <ownedAttribute xmi:id="_3BVWQIzpEeGnhceUMXltng" name="value" visibility="private" aggregation="composite">
-            <ownedComment xmi:id="_ynytsIzqEeGnhceUMXltng">
-              <body>NEMSIS Trace: EVitals.03</body>
-            </ownedComment>
-            <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
-            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Cg8-wIzrEeGnhceUMXltng" value="1"/>
-            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Cg9l0IzrEeGnhceUMXltng" value="1"/>
-          </ownedAttribute>
-        </nestedClassifier>
-        <nestedClassifier xmi:type="uml:Class" xmi:id="_IU2lIIztEeGnhceUMXltng" name="EMSCarbonDioxide">
-          <generalization xmi:id="_I1iQUIztEeGnhceUMXltng">
-            <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
-          </generalization>
-          <ownedAttribute xmi:id="_JrbWgIztEeGnhceUMXltng" name="code" visibility="private" aggregation="composite">
-            <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
-          </ownedAttribute>
-          <ownedAttribute xmi:id="_JrbWgYztEeGnhceUMXltng" name="value" visibility="private" aggregation="composite">
-            <ownedComment xmi:id="_UElisIztEeGnhceUMXltng">
-              <body>NEMSIS Trace: EVitals.16&#xD;
-UCUM units will typically be &quot;%&quot;.</body>
-            </ownedComment>
-            <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#__I8BwDxZEd6JwqSGecoePg"/>
-            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_P4y3sIztEeGnhceUMXltng" value="1"/>
-            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_P4zewIztEeGnhceUMXltng" value="1"/>
-          </ownedAttribute>
-        </nestedClassifier>
-        <nestedClassifier xmi:type="uml:Class" xmi:id="_WFit0IztEeGnhceUMXltng" name="EMSCarbonMonoxide">
-          <generalization xmi:id="_WP_qUIztEeGnhceUMXltng">
-            <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
-          </generalization>
-          <ownedAttribute xmi:id="_W79YcIztEeGnhceUMXltng" name="code" visibility="private" aggregation="composite">
-            <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
-          </ownedAttribute>
-          <ownedAttribute xmi:id="_W79_gIztEeGnhceUMXltng" name="value" visibility="private" aggregation="composite">
-            <ownedComment xmi:id="_gOCAwIztEeGnhceUMXltng">
-              <body>NEMSIS Trace: EVitals.17&#xD;
-UCUM units will typically be &quot;[ppm]&quot;.</body>
-            </ownedComment>
-            <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_3mPzYD59Ed6cla2oXsPtlA"/>
-            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_zGEnwMcXEeGjDJAyT0XW9Q" value="1"/>
-            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zGHrEMcXEeGjDJAyT0XW9Q" value="1"/>
-          </ownedAttribute>
-        </nestedClassifier>
-        <nestedClassifier xmi:type="uml:Class" xmi:id="_jmDsgIztEeGnhceUMXltng" name="EMSBloodGlucose">
-          <generalization xmi:id="_j7fJ8IztEeGnhceUMXltng">
-            <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
-          </generalization>
-          <ownedAttribute xmi:id="_kqTXwIztEeGnhceUMXltng" name="code" visibility="private" aggregation="composite">
-            <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
-          </ownedAttribute>
-          <ownedAttribute xmi:id="_kqT-0IztEeGnhceUMXltng" name="value" visibility="private" aggregation="composite">
-            <ownedComment xmi:id="_tiLXYIztEeGnhceUMXltng">
-              <body>NEMSIS Trace: EVitals.18&#xD;
-UCUM units will typically be &quot;mg/dl&quot;.</body>
-            </ownedComment>
-            <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_3mPzYD59Ed6cla2oXsPtlA"/>
-            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_168jIMcXEeGjDJAyT0XW9Q" value="1"/>
-            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_16_mcMcXEeGjDJAyT0XW9Q" value="1"/>
-          </ownedAttribute>
-        </nestedClassifier>
-        <nestedClassifier xmi:type="uml:Class" xmi:id="_xgaHgIztEeGnhceUMXltng" name="EMSLevelOfResponsiveness">
-          <generalization xmi:id="_x_aXsIztEeGnhceUMXltng">
-            <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
-          </generalization>
-          <ownedAttribute xmi:id="_ysNzUIztEeGnhceUMXltng" name="code" visibility="private" aggregation="composite">
-            <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
-          </ownedAttribute>
-          <ownedAttribute xmi:id="_ysOaYIztEeGnhceUMXltng" name="value" visibility="private" aggregation="composite">
-            <ownedComment xmi:id="_qwMNcENDEeKBoM5tGvrHVQ">
-              <body>NEMSIS Trace: EVitals.26</body>
-            </ownedComment>
-            <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
-            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_BNPMwIzuEeGnhceUMXltng" value="1"/>
-            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_BNPMwYzuEeGnhceUMXltng" value="1"/>
-          </ownedAttribute>
-        </nestedClassifier>
-        <nestedClassifier xmi:type="uml:Class" xmi:id="_lnVLQIzuEeGnhceUMXltng" name="EMSPainScore">
-          <generalization xmi:id="_l6CE0IzuEeGnhceUMXltng">
-            <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
-          </generalization>
-          <ownedAttribute xmi:id="_mpdWoIzuEeGnhceUMXltng" name="code" visibility="private" aggregation="composite">
-            <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
-          </ownedAttribute>
-          <ownedAttribute xmi:id="_mpd9sIzuEeGnhceUMXltng" name="value" visibility="private" aggregation="composite">
-            <ownedComment xmi:id="_2d44sIzuEeGnhceUMXltng">
-              <body>NEMSIS Trace: EVitals.27&#xD;
-An ordinal value between 0 and 10, inclusive. There are three scales, but the values are equivalent.</body>
-            </ownedComment>
-            <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_co8uMD53Ed6cla2oXsPtlA"/>
-            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_5KTbEMcXEeGjDJAyT0XW9Q" value="1"/>
-            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_5KV3UMcXEeGjDJAyT0XW9Q" value="1"/>
-          </ownedAttribute>
-        </nestedClassifier>
-        <nestedClassifier xmi:type="uml:Class" xmi:id="_9koR4IzuEeGnhceUMXltng" name="EMSStrokeScore">
-          <generalization xmi:id="_95ZoAIzuEeGnhceUMXltng">
-            <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
-          </generalization>
-          <ownedAttribute xmi:id="_-gsRgIzuEeGnhceUMXltng" name="code" visibility="private" aggregation="composite">
-            <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
-          </ownedAttribute>
-          <ownedAttribute xmi:id="_-gs4kIzuEeGnhceUMXltng" name="value" visibility="private" aggregation="composite">
-            <ownedComment xmi:id="_kd7dwIzvEeGnhceUMXltng">
-              <body>NEMSIS Trace: EVitals.29</body>
-            </ownedComment>
-            <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
-            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_OtQ74IzxEeGnhceUMXltng" value="1"/>
-            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_OtRi8IzxEeGnhceUMXltng" value="1"/>
-          </ownedAttribute>
-          <ownedAttribute xmi:id="_H8VFgIzvEeGnhceUMXltng" name="methodCode" visibility="private" aggregation="composite">
-            <ownedComment xmi:id="_jm5vIIzvEeGnhceUMXltng">
-              <body>NEMSIS Trace: EVitals.30</body>
-            </ownedComment>
-            <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
-            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_QFdd4IzxEeGnhceUMXltng" value="1"/>
-            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_QFeE8IzxEeGnhceUMXltng" value="1"/>
-          </ownedAttribute>
-        </nestedClassifier>
-        <nestedClassifier xmi:type="uml:Class" xmi:id="_RNfAcIzyEeGnhceUMXltng" name="EMSGlasgowComaScore">
-          <generalization xmi:id="_SdkvUIzyEeGnhceUMXltng">
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_F-GKoLMNEeKNbt70lHd2Eg" name="EMSAdditionalVitalSignsOrganizer">
+          <generalization xmi:id="_HOxvYLMNEeKNbt70lHd2Eg">
             <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_B6aX4EbvEd6besF9iFIJkQ"/>
           </generalization>
-          <ownedAttribute xmi:id="_kACggIzyEeGnhceUMXltng" name="eMSGlasgowEye" type="_bxS9cIzyEeGnhceUMXltng" association="_kADuoYzyEeGnhceUMXltng">
-            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_luJoIIzyEeGnhceUMXltng" value="1"/>
-            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_luJoIYzyEeGnhceUMXltng" value="1"/>
+          <ownedAttribute xmi:id="_Q_eNYLMNEeKNbt70lHd2Eg" name="effectiveTime" visibility="private" aggregation="composite">
+            <ownedComment xmi:id="_XO1yULMQEeKNbt70lHd2Eg">
+              <body>NEMSIS Trace: EVitals.01</body>
+            </ownedComment>
+            <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_QYeW4D5-Ed6cla2oXsPtlA"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Q_eNYbMNEeKNbt70lHd2Eg" value="1"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Q_eNYrMNEeKNbt70lHd2Eg"/>
+            <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_VIaUIErcEd6FXKclYGEDCw"/>
           </ownedAttribute>
-          <ownedAttribute xmi:id="_oltrIIzyEeGnhceUMXltng" name="eMSGlasgowMotor" type="_eKfCYIzyEeGnhceUMXltng" association="_olu5QIzyEeGnhceUMXltng">
-            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_3YuMcIzyEeGnhceUMXltng" value="1"/>
-            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_3YuMcYzyEeGnhceUMXltng" value="1"/>
+          <ownedAttribute xmi:id="_Q_e0cLMNEeKNbt70lHd2Eg" name="moodCode" visibility="private">
+            <type xmi:type="uml:Enumeration" href="../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__yeW3UDcEd6xYZuu1VKCVw"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Q_e0cbMNEeKNbt70lHd2Eg" value="1"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Q_e0crMNEeKNbt70lHd2Eg" value="1"/>
+            <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_Z5I4MErcEd6FXKclYGEDCw"/>
+            <defaultValue xmi:type="uml:LiteralString" xmi:id="_R01AsLMQEeKNbt70lHd2Eg" value="EVN"/>
           </ownedAttribute>
-          <ownedAttribute xmi:id="_pugfMIzyEeGnhceUMXltng" name="eMSGlasgowQualifier" type="_ZLqX8IzyEeGnhceUMXltng" association="_puhGQYzyEeGnhceUMXltng">
-            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_36F0IIzyEeGnhceUMXltng" value="1"/>
-            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_36GbMIzyEeGnhceUMXltng"/>
+          <ownedAttribute xmi:id="_LZvpELMPEeKNbt70lHd2Eg" name="EMSGlasgowComaScoreComponent" visibility="private" type="_RNfAcIzyEeGnhceUMXltng" aggregation="composite" association="_LZyFULMPEeKNbt70lHd2Eg">
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Ti13ILMPEeKNbt70lHd2Eg" value="1"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Ti13IbMPEeKNbt70lHd2Eg"/>
+            <subsettedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_WtEdwUcLEd6besF9iFIJkQ"/>
           </ownedAttribute>
-          <ownedAttribute xmi:id="_0jOmAIzyEeGnhceUMXltng" name="eMSGlasgowTotal" type="_WduLAIzyEeGnhceUMXltng" association="_0jP0IIzyEeGnhceUMXltng">
-            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0jPNEIzyEeGnhceUMXltng"/>
+          <ownedAttribute xmi:id="_VJedwLMPEeKNbt70lHd2Eg" name="EMSStrokeScoreComponent" visibility="private" type="_9koR4IzuEeGnhceUMXltng" aggregation="composite" association="_VJiIILMPEeKNbt70lHd2Eg">
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_bp6E4LMPEeKNbt70lHd2Eg" value="1"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_bp6E4bMPEeKNbt70lHd2Eg"/>
+            <subsettedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_WtEdwUcLEd6besF9iFIJkQ"/>
           </ownedAttribute>
-          <ownedAttribute xmi:id="_2BIucIzyEeGnhceUMXltng" name="eMSGlasgowVerbal" type="_hLJ-EIzyEeGnhceUMXltng" association="_2BJ8kYzyEeGnhceUMXltng">
-            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_5ICN8IzyEeGnhceUMXltng" value="1"/>
-            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_5IC1AIzyEeGnhceUMXltng" value="1"/>
+          <ownedAttribute xmi:id="_eR8eILMPEeKNbt70lHd2Eg" name="EMSPainScoreComponent" visibility="private" type="_lnVLQIzuEeGnhceUMXltng" aggregation="composite" association="_eSAIgLMPEeKNbt70lHd2Eg">
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_hlc2QLMPEeKNbt70lHd2Eg" value="1"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_hlc2QbMPEeKNbt70lHd2Eg"/>
+            <subsettedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_WtEdwUcLEd6besF9iFIJkQ"/>
           </ownedAttribute>
-          <nestedClassifier xmi:type="uml:Class" xmi:id="_WduLAIzyEeGnhceUMXltng" name="EMSGlasgowTotal">
-            <generalization xmi:id="_W9FnkIzyEeGnhceUMXltng">
+          <ownedAttribute xmi:id="_m68UQLMPEeKNbt70lHd2Eg" name="EMSLevelOfResponsivenessComponent" visibility="private" type="_xgaHgIztEeGnhceUMXltng" aggregation="composite" association="_m6_-oLMPEeKNbt70lHd2Eg">
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ozntILMPEeKNbt70lHd2Eg" value="1"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ozoUMLMPEeKNbt70lHd2Eg"/>
+            <subsettedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_WtEdwUcLEd6besF9iFIJkQ"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_yphbQLMPEeKNbt70lHd2Eg" name="EMSBloodGlucoseComponent" visibility="private" type="_jmDsgIztEeGnhceUMXltng" aggregation="composite" association="_ypkekLMPEeKNbt70lHd2Eg">
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0Tr3ALMPEeKNbt70lHd2Eg" value="1"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0Tr3AbMPEeKNbt70lHd2Eg"/>
+            <subsettedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_WtEdwUcLEd6besF9iFIJkQ"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_6lLqQLMPEeKNbt70lHd2Eg" name="EMSCarbonMonoxideComponent" visibility="private" type="_WFit0IztEeGnhceUMXltng" aggregation="composite" association="_6lOtkLMPEeKNbt70lHd2Eg">
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_-zdokLMPEeKNbt70lHd2Eg" value="1"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_-zdokbMPEeKNbt70lHd2Eg"/>
+            <subsettedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_WtEdwUcLEd6besF9iFIJkQ"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_BrV0oLMQEeKNbt70lHd2Eg" name="EMSCarbonDioxideComponent" visibility="private" type="_IU2lIIztEeGnhceUMXltng" aggregation="composite" association="_BrZfALMQEeKNbt70lHd2Eg">
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_FZzqcLMQEeKNbt70lHd2Eg" value="1"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_FZzqcbMQEeKNbt70lHd2Eg"/>
+            <subsettedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_WtEdwUcLEd6besF9iFIJkQ"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_KU_yELMQEeKNbt70lHd2Eg" name="EMSCardiacRhythmComponent" visibility="private" type="_uMxJUIzpEeGnhceUMXltng" aggregation="composite" association="_KVC1YLMQEeKNbt70lHd2Eg">
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NNbXwLMQEeKNbt70lHd2Eg" value="1"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NNbXwbMQEeKNbt70lHd2Eg"/>
+            <subsettedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_WtEdwUcLEd6besF9iFIJkQ"/>
+          </ownedAttribute>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_RNfAcIzyEeGnhceUMXltng" name="EMSGlasgowComaScore">
+            <generalization xmi:id="_SdkvUIzyEeGnhceUMXltng">
+              <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_B6aX4EbvEd6besF9iFIJkQ"/>
+            </generalization>
+            <ownedAttribute xmi:id="_kACggIzyEeGnhceUMXltng" name="eMSGlasgowEye" type="_bxS9cIzyEeGnhceUMXltng" association="_kADuoYzyEeGnhceUMXltng">
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_luJoIIzyEeGnhceUMXltng" value="1"/>
+              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_luJoIYzyEeGnhceUMXltng" value="1"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:id="_oltrIIzyEeGnhceUMXltng" name="eMSGlasgowMotor" type="_eKfCYIzyEeGnhceUMXltng" association="_olu5QIzyEeGnhceUMXltng">
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_3YuMcIzyEeGnhceUMXltng" value="1"/>
+              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_3YuMcYzyEeGnhceUMXltng" value="1"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:id="_pugfMIzyEeGnhceUMXltng" name="eMSGlasgowQualifier" type="_ZLqX8IzyEeGnhceUMXltng" association="_puhGQYzyEeGnhceUMXltng">
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_36F0IIzyEeGnhceUMXltng" value="1"/>
+              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_36GbMIzyEeGnhceUMXltng"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:id="_0jOmAIzyEeGnhceUMXltng" name="eMSGlasgowTotal" type="_WduLAIzyEeGnhceUMXltng" association="_0jP0IIzyEeGnhceUMXltng">
+              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0jPNEIzyEeGnhceUMXltng"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:id="_2BIucIzyEeGnhceUMXltng" name="eMSGlasgowVerbal" type="_hLJ-EIzyEeGnhceUMXltng" association="_2BJ8kYzyEeGnhceUMXltng">
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_5ICN8IzyEeGnhceUMXltng" value="1"/>
+              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_5IC1AIzyEeGnhceUMXltng" value="1"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:id="_71YjkIjuEeKx3P4dlW9OSw" name="effectiveTime" visibility="private" aggregation="composite">
+              <ownedComment xmi:id="_9B9EYIjuEeKx3P4dlW9OSw">
+                <body>NEMSIS Trace: EVitals.01</body>
+              </ownedComment>
+              <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_QYeW4D5-Ed6cla2oXsPtlA"/>
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_71YjkYjuEeKx3P4dlW9OSw" value="1"/>
+              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_71YjkojuEeKx3P4dlW9OSw"/>
+              <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_VIaUIErcEd6FXKclYGEDCw"/>
+            </ownedAttribute>
+            <nestedClassifier xmi:type="uml:Class" xmi:id="_WduLAIzyEeGnhceUMXltng" name="EMSGlasgowTotal">
+              <generalization xmi:id="_W9FnkIzyEeGnhceUMXltng">
+                <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
+              </generalization>
+              <ownedAttribute xmi:id="_XnSbIIzyEeGnhceUMXltng" name="code" visibility="private" aggregation="composite">
+                <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+              </ownedAttribute>
+              <ownedAttribute xmi:id="_XnTCMIzyEeGnhceUMXltng" name="value" visibility="private" aggregation="composite">
+                <ownedComment xmi:id="_LPYN0IzzEeGnhceUMXltng">
+                  <body>NEMSIS Trace: EVitals.23&#xD;
+Integer value equal to the sum of verbal, motor, and eye</body>
+                </ownedComment>
+                <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_co8uMD53Ed6cla2oXsPtlA"/>
+                <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Ncm6YIzzEeGnhceUMXltng" value="1"/>
+                <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NcnhcIzzEeGnhceUMXltng" value="1"/>
+              </ownedAttribute>
+            </nestedClassifier>
+            <nestedClassifier xmi:type="uml:Class" xmi:id="_ZLqX8IzyEeGnhceUMXltng" name="EMSGlasgowQualifier">
+              <generalization xmi:id="_ZhmywIzyEeGnhceUMXltng">
+                <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
+              </generalization>
+              <ownedAttribute xmi:id="_aL9-YIzyEeGnhceUMXltng" name="code" visibility="private" aggregation="composite">
+                <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+              </ownedAttribute>
+              <ownedAttribute xmi:id="_aL-lcIzyEeGnhceUMXltng" name="value" visibility="private" aggregation="composite">
+                <ownedComment xmi:id="_yVd8wENDEeKBoM5tGvrHVQ">
+                  <body>NEMSIS Trace: EVitals.22</body>
+                </ownedComment>
+                <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+                <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_aL-lcYzyEeGnhceUMXltng" value="*"/>
+                <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_aL-lcozyEeGnhceUMXltng"/>
+              </ownedAttribute>
+            </nestedClassifier>
+            <nestedClassifier xmi:type="uml:Class" xmi:id="_bxS9cIzyEeGnhceUMXltng" name="EMSGlasgowEye">
+              <generalization xmi:id="_cBadEIzyEeGnhceUMXltng">
+                <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
+              </generalization>
+              <ownedAttribute xmi:id="_ctdqwIzyEeGnhceUMXltng" name="code" visibility="private" aggregation="composite">
+                <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+              </ownedAttribute>
+              <ownedAttribute xmi:id="_cteR0IzyEeGnhceUMXltng" name="value" visibility="private" aggregation="composite">
+                <ownedComment xmi:id="_zkKkgENDEeKBoM5tGvrHVQ">
+                  <body>NEMSIS Trace: EVitals.19</body>
+                </ownedComment>
+                <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_co8uMD53Ed6cla2oXsPtlA"/>
+                <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_qM85QIzzEeGnhceUMXltng" value="1"/>
+                <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_qM9gUIzzEeGnhceUMXltng" value="1"/>
+              </ownedAttribute>
+            </nestedClassifier>
+            <nestedClassifier xmi:type="uml:Class" xmi:id="_eKfCYIzyEeGnhceUMXltng" name="EMSGlasgowMotor">
+              <generalization xmi:id="_ee3-AIzyEeGnhceUMXltng">
+                <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
+              </generalization>
+              <ownedAttribute xmi:id="_fIlpYIzyEeGnhceUMXltng" name="code" visibility="private" aggregation="composite">
+                <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+              </ownedAttribute>
+              <ownedAttribute xmi:id="_fIlpYYzyEeGnhceUMXltng" name="value" visibility="private" aggregation="composite">
+                <ownedComment xmi:id="_1omhcENDEeKBoM5tGvrHVQ">
+                  <body>NEMSIS Trace: EVitals. 21</body>
+                </ownedComment>
+                <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_co8uMD53Ed6cla2oXsPtlA"/>
+                <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Js7f4McYEeGjDJAyT0XW9Q" value="1"/>
+                <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Js-jMMcYEeGjDJAyT0XW9Q" value="1"/>
+              </ownedAttribute>
+            </nestedClassifier>
+            <nestedClassifier xmi:type="uml:Class" xmi:id="_hLJ-EIzyEeGnhceUMXltng" name="EMSGlasgowVerbal">
+              <generalization xmi:id="_hhtc4IzyEeGnhceUMXltng">
+                <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
+              </generalization>
+              <ownedAttribute xmi:id="_iMb04IzyEeGnhceUMXltng" name="code" visibility="private" aggregation="composite">
+                <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+              </ownedAttribute>
+              <ownedAttribute xmi:id="_iMcb8IzyEeGnhceUMXltng" name="value" visibility="private" aggregation="composite">
+                <ownedComment xmi:id="_2sN6kENDEeKBoM5tGvrHVQ">
+                  <body>NEMSIS Trace: EVitals.20</body>
+                </ownedComment>
+                <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_co8uMD53Ed6cla2oXsPtlA"/>
+                <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_lV6cYIz0EeGnhceUMXltng" value="1"/>
+                <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_lV6cYYz0EeGnhceUMXltng" value="1"/>
+              </ownedAttribute>
+            </nestedClassifier>
+          </nestedClassifier>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_9koR4IzuEeGnhceUMXltng" name="EMSStrokeScore">
+            <generalization xmi:id="_95ZoAIzuEeGnhceUMXltng">
               <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
             </generalization>
-            <ownedAttribute xmi:id="_XnSbIIzyEeGnhceUMXltng" name="code" visibility="private" aggregation="composite">
+            <ownedAttribute xmi:id="_-gsRgIzuEeGnhceUMXltng" name="code" visibility="private" aggregation="composite">
               <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
             </ownedAttribute>
-            <ownedAttribute xmi:id="_XnTCMIzyEeGnhceUMXltng" name="value" visibility="private" aggregation="composite">
-              <ownedComment xmi:id="_LPYN0IzzEeGnhceUMXltng">
-                <body>NEMSIS Trace: EVitals.23&#xD;
-Integer value equal to the sum of verbal, motor, and eye</body>
+            <ownedAttribute xmi:id="_-gs4kIzuEeGnhceUMXltng" name="value" visibility="private" aggregation="composite">
+              <ownedComment xmi:id="_kd7dwIzvEeGnhceUMXltng">
+                <body>NEMSIS Trace: EVitals.29</body>
+              </ownedComment>
+              <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_OtQ74IzxEeGnhceUMXltng" value="1"/>
+              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_OtRi8IzxEeGnhceUMXltng" value="1"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:id="_H8VFgIzvEeGnhceUMXltng" name="methodCode" visibility="private" aggregation="composite">
+              <ownedComment xmi:id="_jm5vIIzvEeGnhceUMXltng">
+                <body>NEMSIS Trace: EVitals.30</body>
+              </ownedComment>
+              <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_QFdd4IzxEeGnhceUMXltng" value="1"/>
+              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_QFeE8IzxEeGnhceUMXltng" value="1"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:id="_5LZpkIjuEeKx3P4dlW9OSw" name="effectiveTime" visibility="private" aggregation="composite">
+              <ownedComment xmi:id="_5vnw8IjuEeKx3P4dlW9OSw">
+                <body>NEMSIS Trace: EVitals.01</body>
+              </ownedComment>
+              <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_QYeW4D5-Ed6cla2oXsPtlA"/>
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_5LZpkYjuEeKx3P4dlW9OSw" value="1"/>
+              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_5LZpkojuEeKx3P4dlW9OSw"/>
+              <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_fUQ50Eo8Ed6c3qsAxlFHaQ"/>
+            </ownedAttribute>
+          </nestedClassifier>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_lnVLQIzuEeGnhceUMXltng" name="EMSPainScore">
+            <generalization xmi:id="_l6CE0IzuEeGnhceUMXltng">
+              <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
+            </generalization>
+            <ownedAttribute xmi:id="_mpdWoIzuEeGnhceUMXltng" name="code" visibility="private" aggregation="composite">
+              <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:id="_mpd9sIzuEeGnhceUMXltng" name="value" visibility="private" aggregation="composite">
+              <ownedComment xmi:id="_2d44sIzuEeGnhceUMXltng">
+                <body>NEMSIS Trace: EVitals.27&#xD;
+An ordinal value between 0 and 10, inclusive. There are three scales, but the values are equivalent.</body>
               </ownedComment>
               <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_co8uMD53Ed6cla2oXsPtlA"/>
-              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Ncm6YIzzEeGnhceUMXltng" value="1"/>
-              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NcnhcIzzEeGnhceUMXltng" value="1"/>
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_5KTbEMcXEeGjDJAyT0XW9Q" value="1"/>
+              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_5KV3UMcXEeGjDJAyT0XW9Q" value="1"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:id="_2QW0wIjuEeKx3P4dlW9OSw" name="effectiveTime" visibility="private" aggregation="composite">
+              <ownedComment xmi:id="_3mzDQIjuEeKx3P4dlW9OSw">
+                <body>NEMSIS Trace: EVitals.01</body>
+              </ownedComment>
+              <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_QYeW4D5-Ed6cla2oXsPtlA"/>
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2QW0wYjuEeKx3P4dlW9OSw" value="1"/>
+              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2QW0wojuEeKx3P4dlW9OSw"/>
+              <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_fUQ50Eo8Ed6c3qsAxlFHaQ"/>
             </ownedAttribute>
           </nestedClassifier>
-          <nestedClassifier xmi:type="uml:Class" xmi:id="_ZLqX8IzyEeGnhceUMXltng" name="EMSGlasgowQualifier">
-            <generalization xmi:id="_ZhmywIzyEeGnhceUMXltng">
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_xgaHgIztEeGnhceUMXltng" name="EMSLevelOfResponsiveness">
+            <generalization xmi:id="_x_aXsIztEeGnhceUMXltng">
               <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
             </generalization>
-            <ownedAttribute xmi:id="_aL9-YIzyEeGnhceUMXltng" name="code" visibility="private" aggregation="composite">
+            <ownedAttribute xmi:id="_ysNzUIztEeGnhceUMXltng" name="code" visibility="private" aggregation="composite">
               <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
             </ownedAttribute>
-            <ownedAttribute xmi:id="_aL-lcIzyEeGnhceUMXltng" name="value" visibility="private" aggregation="composite">
-              <ownedComment xmi:id="_yVd8wENDEeKBoM5tGvrHVQ">
-                <body>NEMSIS Trace: EVitals.22</body>
+            <ownedAttribute xmi:id="_ysOaYIztEeGnhceUMXltng" name="value" visibility="private" aggregation="composite">
+              <ownedComment xmi:id="_qwMNcENDEeKBoM5tGvrHVQ">
+                <body>NEMSIS Trace: EVitals.26</body>
               </ownedComment>
               <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
-              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_aL-lcYzyEeGnhceUMXltng" value="*"/>
-              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_aL-lcozyEeGnhceUMXltng"/>
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_BNPMwIzuEeGnhceUMXltng" value="1"/>
+              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_BNPMwYzuEeGnhceUMXltng" value="1"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:id="_zdpckIjuEeKx3P4dlW9OSw" name="effectiveTime" visibility="private" aggregation="composite">
+              <ownedComment xmi:id="_0hcb4IjuEeKx3P4dlW9OSw">
+                <body>NEMSIS Trace: EVitals.01</body>
+              </ownedComment>
+              <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_QYeW4D5-Ed6cla2oXsPtlA"/>
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_zdpckYjuEeKx3P4dlW9OSw" value="1"/>
+              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zdpckojuEeKx3P4dlW9OSw"/>
+              <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_fUQ50Eo8Ed6c3qsAxlFHaQ"/>
             </ownedAttribute>
           </nestedClassifier>
-          <nestedClassifier xmi:type="uml:Class" xmi:id="_bxS9cIzyEeGnhceUMXltng" name="EMSGlasgowEye">
-            <generalization xmi:id="_cBadEIzyEeGnhceUMXltng">
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_jmDsgIztEeGnhceUMXltng" name="EMSBloodGlucose">
+            <generalization xmi:id="_j7fJ8IztEeGnhceUMXltng">
               <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
             </generalization>
-            <ownedAttribute xmi:id="_ctdqwIzyEeGnhceUMXltng" name="code" visibility="private" aggregation="composite">
+            <ownedAttribute xmi:id="_kqTXwIztEeGnhceUMXltng" name="code" visibility="private" aggregation="composite">
               <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
             </ownedAttribute>
-            <ownedAttribute xmi:id="_cteR0IzyEeGnhceUMXltng" name="value" visibility="private" aggregation="composite">
-              <ownedComment xmi:id="_zkKkgENDEeKBoM5tGvrHVQ">
-                <body>NEMSIS Trace: EVitals.19</body>
+            <ownedAttribute xmi:id="_kqT-0IztEeGnhceUMXltng" name="value" visibility="private" aggregation="composite">
+              <ownedComment xmi:id="_tiLXYIztEeGnhceUMXltng">
+                <body>NEMSIS Trace: EVitals.18&#xD;
+UCUM units will typically be &quot;mg/dl&quot;.</body>
               </ownedComment>
-              <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_jCf_UD55Ed6cla2oXsPtlA"/>
-              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_qM85QIzzEeGnhceUMXltng" value="1"/>
-              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_qM9gUIzzEeGnhceUMXltng" value="1"/>
+              <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_3mPzYD59Ed6cla2oXsPtlA"/>
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_168jIMcXEeGjDJAyT0XW9Q" value="1"/>
+              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_16_mcMcXEeGjDJAyT0XW9Q" value="1"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:id="_w0ELMIjuEeKx3P4dlW9OSw" name="effectiveTime" visibility="private" aggregation="composite">
+              <ownedComment xmi:id="_yJOAQIjuEeKx3P4dlW9OSw">
+                <body>NEMSIS Trace: EVitals.01</body>
+              </ownedComment>
+              <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_QYeW4D5-Ed6cla2oXsPtlA"/>
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_w0ELMYjuEeKx3P4dlW9OSw" value="1"/>
+              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_w0ELMojuEeKx3P4dlW9OSw"/>
+              <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_fUQ50Eo8Ed6c3qsAxlFHaQ"/>
             </ownedAttribute>
           </nestedClassifier>
-          <nestedClassifier xmi:type="uml:Class" xmi:id="_eKfCYIzyEeGnhceUMXltng" name="EMSGlasgowMotor">
-            <generalization xmi:id="_ee3-AIzyEeGnhceUMXltng">
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_WFit0IztEeGnhceUMXltng" name="EMSCarbonMonoxide">
+            <generalization xmi:id="_WP_qUIztEeGnhceUMXltng">
               <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
             </generalization>
-            <ownedAttribute xmi:id="_fIlpYIzyEeGnhceUMXltng" name="code" visibility="private" aggregation="composite">
+            <ownedAttribute xmi:id="_W79YcIztEeGnhceUMXltng" name="code" visibility="private" aggregation="composite">
               <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
             </ownedAttribute>
-            <ownedAttribute xmi:id="_fIlpYYzyEeGnhceUMXltng" name="value" visibility="private" aggregation="composite">
-              <ownedComment xmi:id="_1omhcENDEeKBoM5tGvrHVQ">
-                <body>NEMSIS Trace: EVitals. 21</body>
+            <ownedAttribute xmi:id="_W79_gIztEeGnhceUMXltng" name="value" visibility="private" aggregation="composite">
+              <ownedComment xmi:id="_gOCAwIztEeGnhceUMXltng">
+                <body>NEMSIS Trace: EVitals.17&#xD;
+UCUM units will typically be &quot;[ppm]&quot;.</body>
               </ownedComment>
-              <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_jCf_UD55Ed6cla2oXsPtlA"/>
-              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Js7f4McYEeGjDJAyT0XW9Q" value="1"/>
-              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Js-jMMcYEeGjDJAyT0XW9Q" value="1"/>
+              <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_3mPzYD59Ed6cla2oXsPtlA"/>
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_zGEnwMcXEeGjDJAyT0XW9Q" value="1"/>
+              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zGHrEMcXEeGjDJAyT0XW9Q" value="1"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:id="_tt8HwIjuEeKx3P4dlW9OSw" name="effectiveTime" visibility="private" aggregation="composite">
+              <ownedComment xmi:id="_uigYQIjuEeKx3P4dlW9OSw">
+                <body>NEMSIS Trace: EVitals.01</body>
+              </ownedComment>
+              <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_QYeW4D5-Ed6cla2oXsPtlA"/>
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_tt8HwYjuEeKx3P4dlW9OSw" value="1"/>
+              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_tt8HwojuEeKx3P4dlW9OSw"/>
+              <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_fUQ50Eo8Ed6c3qsAxlFHaQ"/>
             </ownedAttribute>
           </nestedClassifier>
-          <nestedClassifier xmi:type="uml:Class" xmi:id="_hLJ-EIzyEeGnhceUMXltng" name="EMSGlasgowVerbal">
-            <generalization xmi:id="_hhtc4IzyEeGnhceUMXltng">
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_IU2lIIztEeGnhceUMXltng" name="EMSCarbonDioxide">
+            <generalization xmi:id="_I1iQUIztEeGnhceUMXltng">
               <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
             </generalization>
-            <ownedAttribute xmi:id="_iMb04IzyEeGnhceUMXltng" name="code" visibility="private" aggregation="composite">
+            <ownedAttribute xmi:id="_JrbWgIztEeGnhceUMXltng" name="code" visibility="private" aggregation="composite">
               <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
             </ownedAttribute>
-            <ownedAttribute xmi:id="_iMcb8IzyEeGnhceUMXltng" name="value" visibility="private" aggregation="composite">
-              <ownedComment xmi:id="_2sN6kENDEeKBoM5tGvrHVQ">
-                <body>NEMSIS Trace: EVitals.20</body>
+            <ownedAttribute xmi:id="_JrbWgYztEeGnhceUMXltng" name="value" visibility="private" aggregation="composite">
+              <ownedComment xmi:id="_UElisIztEeGnhceUMXltng">
+                <body>NEMSIS Trace: EVitals.16&#xD;
+UCUM units will typically be &quot;%&quot;.</body>
               </ownedComment>
-              <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_jCf_UD55Ed6cla2oXsPtlA"/>
-              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_lV6cYIz0EeGnhceUMXltng" value="1"/>
-              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_lV6cYYz0EeGnhceUMXltng" value="1"/>
+              <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#__I8BwDxZEd6JwqSGecoePg"/>
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_P4y3sIztEeGnhceUMXltng" value="1"/>
+              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_P4zewIztEeGnhceUMXltng" value="1"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:id="_ploOkIjuEeKx3P4dlW9OSw" name="effectiveTime" visibility="private" aggregation="composite">
+              <ownedComment xmi:id="_sblvEIjuEeKx3P4dlW9OSw">
+                <body>NEMSIS Trace: EVitals.01</body>
+              </ownedComment>
+              <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_QYeW4D5-Ed6cla2oXsPtlA"/>
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ploOkYjuEeKx3P4dlW9OSw" value="1"/>
+              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ploOkojuEeKx3P4dlW9OSw"/>
+              <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_fUQ50Eo8Ed6c3qsAxlFHaQ"/>
+            </ownedAttribute>
+          </nestedClassifier>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_uMxJUIzpEeGnhceUMXltng" name="EMSCardiacRhythm">
+            <generalization xmi:id="_unG78IzpEeGnhceUMXltng">
+              <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
+            </generalization>
+            <ownedAttribute xmi:id="_3BUIIIzpEeGnhceUMXltng" name="code" visibility="private" aggregation="composite">
+              <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:id="_3BUvMIzpEeGnhceUMXltng" name="methodCode" visibility="private" aggregation="composite">
+              <ownedComment xmi:id="_kBt1IIzqEeGnhceUMXltng">
+                <body>NEMSIS Trace: EVitals.05</body>
+              </ownedComment>
+              <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_BY_4MIzrEeGnhceUMXltng" value="1"/>
+              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_BZAfQIzrEeGnhceUMXltng" value="1"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:id="_3BVWQIzpEeGnhceUMXltng" name="value" visibility="private" aggregation="composite">
+              <ownedComment xmi:id="_ynytsIzqEeGnhceUMXltng">
+                <body>NEMSIS Trace: EVitals.03</body>
+              </ownedComment>
+              <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Cg8-wIzrEeGnhceUMXltng" value="1"/>
+              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Cg9l0IzrEeGnhceUMXltng" value="1"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:id="_Oq9X4IjuEeKx3P4dlW9OSw" name="effectiveTime" visibility="private" aggregation="composite">
+              <ownedComment xmi:id="_QH0XcIjuEeKx3P4dlW9OSw">
+                <body>NEMSIS Trace: EVitals.01</body>
+              </ownedComment>
+              <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_QYeW4D5-Ed6cla2oXsPtlA"/>
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Oq9X4YjuEeKx3P4dlW9OSw" value="1"/>
+              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Oq9X4ojuEeKx3P4dlW9OSw"/>
+              <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_fUQ50Eo8Ed6c3qsAxlFHaQ"/>
             </ownedAttribute>
           </nestedClassifier>
         </nestedClassifier>
@@ -3579,7 +3730,8 @@ See appendix for mapping NEMSIS values to FDA values and for postcoordination of
                 </generalization>
                 <ownedAttribute xmi:id="_yvkMQJslEeGzXI65shd6Fw" name="code" visibility="private" aggregation="composite">
                   <ownedComment xmi:id="_SRQRYJsmEeGzXI65shd6Fw">
-                    <body>NEMSIS Trace: EMedications.03</body>
+                    <body>NEMSIS Trace: EMedications.03&#xD;
+Note: all of RxNorm is legal in this field, but NEMSIS provides a selected list at http://www.nemsis.org/v3/resources.html</body>
                   </ownedComment>
                   <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
                   <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_A8vWQMcQEeGjDJAyT0XW9Q" value="1"/>
@@ -4199,6 +4351,10 @@ Required conditionally if procedure code is intravenous catheterization (E303)</
               <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_lTqy4VhWEeK-i8RB1gvLUA" value="1"/>
             </ownedAttribute>
             <nestedClassifier xmi:type="uml:Class" xmi:id="_N8t6kFhWEeK-i8RB1gvLUA" name="EMSReasonProcedureNotAttemptedObservation">
+              <ownedComment xmi:id="_pw5GULMSEeKNbt70lHd2Eg">
+                <body>NEMSIS Trace: EProcedures.03 pertinent negatives, EArrest.03 negative values&#xD;
+This is a superset of both value sets: the question is the same, even if the .90 values are appropriate only for CPR and the .95 for all other procedures.</body>
+              </ownedComment>
               <generalization xmi:id="_OeTksFhWEeK-i8RB1gvLUA">
                 <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
               </generalization>
@@ -5397,7 +5553,7 @@ Required if value is TRUE</body>
           </ownedAttribute>
           <ownedAttribute xmi:id="_GKkQ8KK8EeGOxth0BgV-QA" name="value" visibility="private" aggregation="composite">
             <ownedComment xmi:id="_0MN4cENCEeKBoM5tGvrHVQ">
-              <body>NEMSIS Trace: EScene.04</body>
+              <body>NEMSIS Trace: EScene.07</body>
             </ownedComment>
             <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_r1WssDxjEd6JwqSGecoePg"/>
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_LtP2YKK8EeGOxth0BgV-QA" value="1"/>
@@ -5969,9 +6125,6 @@ This is the value represented in the header for the encompassing encounter</body
     <packagedElement xmi:type="uml:Association" xmi:id="_OpE-gMHuEeGOXu0EprM3pw" memberEnd="_OpEXcMHuEeGOXu0EprM3pw _OpE-gcHuEeGOXu0EprM3pw">
       <ownedEnd xmi:id="_OpE-gcHuEeGOXu0EprM3pw" type="_NUntAMHuEeGOXu0EprM3pw" association="_OpE-gMHuEeGOXu0EprM3pw"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_lS1nY8HzEeGOXu0EprM3pw" memberEnd="_lS1nYMHzEeGOXu0EprM3pw _lS1nZMHzEeGOXu0EprM3pw">
-      <ownedEnd xmi:id="_lS1nZMHzEeGOXu0EprM3pw" type="_i4C-AH9aEeGht55Sz1eBOw" association="_lS1nY8HzEeGOXu0EprM3pw"/>
-    </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_ojtiQMHzEeGOXu0EprM3pw" memberEnd="_ojtiQsHzEeGOXu0EprM3pw _ojtiQcHzEeGOXu0EprM3pw">
       <ownedEnd xmi:id="_ojtiQcHzEeGOXu0EprM3pw" type="_nSjIgH9cEeGht55Sz1eBOw" association="_ojtiQMHzEeGOXu0EprM3pw"/>
     </packagedElement>
@@ -6236,12 +6389,6 @@ This is the value represented in the header for the encompassing encounter</body
     <packagedElement xmi:type="uml:Association" xmi:id="_Tk-dgMH-EeGOXu0EprM3pw" memberEnd="_Tk-dgsH-EeGOXu0EprM3pw _Tk-dgcH-EeGOXu0EprM3pw">
       <ownedEnd xmi:id="_Tk-dgcH-EeGOXu0EprM3pw" type="_R-BGwMH-EeGOXu0EprM3pw" association="_Tk-dgMH-EeGOXu0EprM3pw"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_ZCcLwMH-EeGOXu0EprM3pw" memberEnd="_ZCcLw8H-EeGOXu0EprM3pw _ZCcLwsH-EeGOXu0EprM3pw">
-      <ownedComment xmi:id="_ZCcLwcH-EeGOXu0EprM3pw">
-        <body>INLINE</body>
-      </ownedComment>
-      <ownedEnd xmi:id="_ZCcLwsH-EeGOXu0EprM3pw" type="_VoChcMH-EeGOXu0EprM3pw" association="_ZCcLwMH-EeGOXu0EprM3pw"/>
-    </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_ahp7wsH-EeGOXu0EprM3pw" memberEnd="_ahp7wMH-EeGOXu0EprM3pw _ahp7w8H-EeGOXu0EprM3pw">
       <ownedEnd xmi:id="_ahp7w8H-EeGOXu0EprM3pw" type="_WU0u8MH-EeGOXu0EprM3pw" association="_ahp7wsH-EeGOXu0EprM3pw"/>
     </packagedElement>
@@ -6401,18 +6548,6 @@ This is the value represented in the header for the encompassing encounter</body
     <packagedElement xmi:type="uml:Association" xmi:id="_fj9RkSlEEeKLlLf58wNPLQ" memberEnd="_fj8qgClEEeKLlLf58wNPLQ _fj9RkilEEeKLlLf58wNPLQ">
       <ownedEnd xmi:id="_fj9RkilEEeKLlLf58wNPLQ" type="_Qlqj8HwGEeGW3cDolvqrTA" association="_fj9RkSlEEeKLlLf58wNPLQ"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_AXCucCpIEeK1vdrMJapHMg" memberEnd="_AXBgUCpIEeK1vdrMJapHMg _AXDVgCpIEeK1vdrMJapHMg">
-      <ownedEnd xmi:id="_AXDVgCpIEeK1vdrMJapHMg" type="_Rm2IMIzdEeGnhceUMXltng" association="_AXCucCpIEeK1vdrMJapHMg"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_HSwjYCpIEeK1vdrMJapHMg" memberEnd="_HSvVQCpIEeK1vdrMJapHMg _HSxKcCpIEeK1vdrMJapHMg">
-      <ownedEnd xmi:id="_HSxKcCpIEeK1vdrMJapHMg" type="_E5O8sCpHEeK1vdrMJapHMg" association="_HSwjYCpIEeK1vdrMJapHMg"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_ZzBZkCpIEeK1vdrMJapHMg" memberEnd="_ZzALcCpIEeK1vdrMJapHMg _ZzCAoCpIEeK1vdrMJapHMg">
-      <ownedEnd xmi:id="_ZzCAoCpIEeK1vdrMJapHMg" type="_Rm2IMIzdEeGnhceUMXltng" association="_ZzBZkCpIEeK1vdrMJapHMg"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_gpBBACpIEeK1vdrMJapHMg" memberEnd="_go_y4CpIEeK1vdrMJapHMg _gpBoECpIEeK1vdrMJapHMg">
-      <ownedEnd xmi:id="_gpBoECpIEeK1vdrMJapHMg" type="_11IO4CpHEeK1vdrMJapHMg" association="_gpBBACpIEeK1vdrMJapHMg"/>
-    </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_03rSsSpIEeK1vdrMJapHMg" memberEnd="_03qroCpIEeK1vdrMJapHMg _03r5wCpIEeK1vdrMJapHMg">
       <ownedEnd xmi:id="_03r5wCpIEeK1vdrMJapHMg" type="_vs1lgCpIEeK1vdrMJapHMg" association="_03rSsSpIEeK1vdrMJapHMg"/>
     </packagedElement>
@@ -6503,41 +6638,11 @@ This is the value represented in the header for the encompassing encounter</body
     <packagedElement xmi:type="uml:Association" xmi:id="_bAWPUUTWEeKEm6ZghGGtvw" memberEnd="_bAVoQETWEeKEm6ZghGGtvw _bAW2YETWEeKEm6ZghGGtvw">
       <ownedEnd xmi:id="_bAW2YETWEeKEm6ZghGGtvw" type="_YiDn8ETWEeKEm6ZghGGtvw" association="_bAWPUUTWEeKEm6ZghGGtvw"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_eXyFMETWEeKEm6ZghGGtvw" memberEnd="_eXw3EETWEeKEm6ZghGGtvw _eXyFMUTWEeKEm6ZghGGtvw">
-      <ownedEnd xmi:id="_eXyFMUTWEeKEm6ZghGGtvw" type="_JnfD8IzoEeGnhceUMXltng" association="_eXyFMETWEeKEm6ZghGGtvw"/>
-    </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_hVjWgETZEeKEm6ZghGGtvw" memberEnd="_hVg6QETZEeKEm6ZghGGtvw _hVj9kETZEeKEm6ZghGGtvw">
       <ownedEnd xmi:id="_hVj9kETZEeKEm6ZghGGtvw" type="_Mn0zUGlYEeG4boS-IbG8Zw" association="_hVjWgETZEeKEm6ZghGGtvw"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_nHB7AETbEeKEm6ZghGGtvw" memberEnd="_nG_ewETbEeKEm6ZghGGtvw _nHCiEETbEeKEm6ZghGGtvw">
       <ownedEnd xmi:id="_nHCiEETbEeKEm6ZghGGtvw" type="_fDog4MH4EeGOXu0EprM3pw" association="_nHB7AETbEeKEm6ZghGGtvw"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_qwD3METbEeKEm6ZghGGtvw" memberEnd="_qwBa8ETbEeKEm6ZghGGtvw _qwD3MUTbEeKEm6ZghGGtvw">
-      <ownedEnd xmi:id="_qwD3MUTbEeKEm6ZghGGtvw" type="_fDog4MH4EeGOXu0EprM3pw" association="_qwD3METbEeKEm6ZghGGtvw"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_tt79kETbEeKEm6ZghGGtvw" memberEnd="_tt5hUETbEeKEm6ZghGGtvw _tt8koETbEeKEm6ZghGGtvw">
-      <ownedEnd xmi:id="_tt8koETbEeKEm6ZghGGtvw" type="_fDog4MH4EeGOXu0EprM3pw" association="_tt79kETbEeKEm6ZghGGtvw"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_v2pWgETbEeKEm6ZghGGtvw" memberEnd="_v2m6QETbEeKEm6ZghGGtvw _v2pWgUTbEeKEm6ZghGGtvw">
-      <ownedEnd xmi:id="_v2pWgUTbEeKEm6ZghGGtvw" type="_fDog4MH4EeGOXu0EprM3pw" association="_v2pWgETbEeKEm6ZghGGtvw"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_yaQiwETbEeKEm6ZghGGtvw" memberEnd="_yaOtkETbEeKEm6ZghGGtvw _yaRJ0ETbEeKEm6ZghGGtvw">
-      <ownedEnd xmi:id="_yaRJ0ETbEeKEm6ZghGGtvw" type="_fDog4MH4EeGOXu0EprM3pw" association="_yaQiwETbEeKEm6ZghGGtvw"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_0fd7wETbEeKEm6ZghGGtvw" memberEnd="_0fbfgETbEeKEm6ZghGGtvw _0fd7wUTbEeKEm6ZghGGtvw">
-      <ownedEnd xmi:id="_0fd7wUTbEeKEm6ZghGGtvw" type="_fDog4MH4EeGOXu0EprM3pw" association="_0fd7wETbEeKEm6ZghGGtvw"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_2vgrwETbEeKEm6ZghGGtvw" memberEnd="_2ve2kETbEeKEm6ZghGGtvw _2vhS0ETbEeKEm6ZghGGtvw">
-      <ownedEnd xmi:id="_2vhS0ETbEeKEm6ZghGGtvw" type="_fDog4MH4EeGOXu0EprM3pw" association="_2vgrwETbEeKEm6ZghGGtvw"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_4h9g0ETbEeKEm6ZghGGtvw" memberEnd="_4h7roETbEeKEm6ZghGGtvw _4h-H4ETbEeKEm6ZghGGtvw">
-      <ownedEnd xmi:id="_4h-H4ETbEeKEm6ZghGGtvw" type="_fDog4MH4EeGOXu0EprM3pw" association="_4h9g0ETbEeKEm6ZghGGtvw"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_8-zfkETbEeKEm6ZghGGtvw" memberEnd="_8-xDUETbEeKEm6ZghGGtvw _8-0GoETbEeKEm6ZghGGtvw">
-      <ownedEnd xmi:id="_8-0GoETbEeKEm6ZghGGtvw" type="_fDog4MH4EeGOXu0EprM3pw" association="_8-zfkETbEeKEm6ZghGGtvw"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_QyTG0FKTEeK-YbJf-zpN1g" memberEnd="_QyTt4FKTEeK-YbJf-zpN1g">
-      <ownedEnd xmi:id="_QyTt4FKTEeK-YbJf-zpN1g" association="_QyTG0FKTEeK-YbJf-zpN1g"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_2badMFKTEeK-YbJf-zpN1g" memberEnd="_2bZPEFKTEeK-YbJf-zpN1g _2bbEQFKTEeK-YbJf-zpN1g">
       <ownedEnd xmi:id="_2bbEQFKTEeK-YbJf-zpN1g" type="_il8psMH7EeGOXu0EprM3pw" association="_2badMFKTEeK-YbJf-zpN1g"/>
@@ -6550,6 +6655,42 @@ This is the value represented in the header for the encompassing encounter</body
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_rfteYFhWEeK-i8RB1gvLUA" memberEnd="_rfrpMFhWEeK-i8RB1gvLUA _rfteYVhWEeK-i8RB1gvLUA">
       <ownedEnd xmi:id="_rfteYVhWEeK-i8RB1gvLUA" type="_K8JK8JuoEeGzXI65shd6Fw" association="_rfteYFhWEeK-i8RB1gvLUA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_ZAgUoIWnEeKGmunFEkXZeA" memberEnd="_ZAfGgIWnEeKGmunFEkXZeA _ZAgUoYWnEeKGmunFEkXZeA">
+      <ownedEnd xmi:id="_ZAgUoYWnEeKGmunFEkXZeA" type="_i4C-AH9aEeGht55Sz1eBOw" association="_ZAgUoIWnEeKGmunFEkXZeA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_hoHlMLMOEeKNbt70lHd2Eg" memberEnd="_hoGXELMOEeKNbt70lHd2Eg _hoIMQLMOEeKNbt70lHd2Eg">
+      <ownedEnd xmi:id="_hoIMQLMOEeKNbt70lHd2Eg" type="_JnfD8IzoEeGnhceUMXltng" association="_hoHlMLMOEeKNbt70lHd2Eg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_LZyFULMPEeKNbt70lHd2Eg" memberEnd="_LZvpELMPEeKNbt70lHd2Eg _LZyFUbMPEeKNbt70lHd2Eg">
+      <ownedEnd xmi:id="_LZyFUbMPEeKNbt70lHd2Eg" type="_F-GKoLMNEeKNbt70lHd2Eg" association="_LZyFULMPEeKNbt70lHd2Eg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_VJiIILMPEeKNbt70lHd2Eg" memberEnd="_VJedwLMPEeKNbt70lHd2Eg _VJiIIbMPEeKNbt70lHd2Eg">
+      <ownedEnd xmi:id="_VJiIIbMPEeKNbt70lHd2Eg" type="_F-GKoLMNEeKNbt70lHd2Eg" association="_VJiIILMPEeKNbt70lHd2Eg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_eSAIgLMPEeKNbt70lHd2Eg" memberEnd="_eR8eILMPEeKNbt70lHd2Eg _eSAIgbMPEeKNbt70lHd2Eg">
+      <ownedEnd xmi:id="_eSAIgbMPEeKNbt70lHd2Eg" type="_F-GKoLMNEeKNbt70lHd2Eg" association="_eSAIgLMPEeKNbt70lHd2Eg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_m6_-oLMPEeKNbt70lHd2Eg" memberEnd="_m68UQLMPEeKNbt70lHd2Eg _m7AlsLMPEeKNbt70lHd2Eg">
+      <ownedEnd xmi:id="_m7AlsLMPEeKNbt70lHd2Eg" type="_F-GKoLMNEeKNbt70lHd2Eg" association="_m6_-oLMPEeKNbt70lHd2Eg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_ypkekLMPEeKNbt70lHd2Eg" memberEnd="_yphbQLMPEeKNbt70lHd2Eg _yplFoLMPEeKNbt70lHd2Eg">
+      <ownedEnd xmi:id="_yplFoLMPEeKNbt70lHd2Eg" type="_F-GKoLMNEeKNbt70lHd2Eg" association="_ypkekLMPEeKNbt70lHd2Eg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_6lOtkLMPEeKNbt70lHd2Eg" memberEnd="_6lLqQLMPEeKNbt70lHd2Eg _6lPUoLMPEeKNbt70lHd2Eg">
+      <ownedEnd xmi:id="_6lPUoLMPEeKNbt70lHd2Eg" type="_F-GKoLMNEeKNbt70lHd2Eg" association="_6lOtkLMPEeKNbt70lHd2Eg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_BrZfALMQEeKNbt70lHd2Eg" memberEnd="_BrV0oLMQEeKNbt70lHd2Eg _BrZfAbMQEeKNbt70lHd2Eg">
+      <ownedEnd xmi:id="_BrZfAbMQEeKNbt70lHd2Eg" type="_F-GKoLMNEeKNbt70lHd2Eg" association="_BrZfALMQEeKNbt70lHd2Eg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_KVC1YLMQEeKNbt70lHd2Eg" memberEnd="_KU_yELMQEeKNbt70lHd2Eg _KVDccLMQEeKNbt70lHd2Eg">
+      <ownedEnd xmi:id="_KVDccLMQEeKNbt70lHd2Eg" type="_F-GKoLMNEeKNbt70lHd2Eg" association="_KVC1YLMQEeKNbt70lHd2Eg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_S7930LMkEeKNbt70lHd2Eg" memberEnd="_S77bkLMkEeKNbt70lHd2Eg _S7-e4LMkEeKNbt70lHd2Eg">
+      <ownedEnd xmi:id="_S7-e4LMkEeKNbt70lHd2Eg" type="_VoChcMH-EeGOXu0EprM3pw" association="_S7930LMkEeKNbt70lHd2Eg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_Xt0dQLMkEeKNbt70lHd2Eg" memberEnd="_XtyBALMkEeKNbt70lHd2Eg _Xt0dQbMkEeKNbt70lHd2Eg">
+      <ownedEnd xmi:id="_Xt0dQbMkEeKNbt70lHd2Eg" type="_VoChcMH-EeGOXu0EprM3pw" association="_Xt0dQLMkEeKNbt70lHd2Eg"/>
     </packagedElement>
     <profileApplication xmi:id="_xpUkQWeQEeGtXKebdWh3hg">
       <eAnnotations xmi:id="_xpUkQmeQEeGtXKebdWh3hg" source="http://www.eclipse.org/uml2/2.0.0/UML">
@@ -6565,7 +6706,7 @@ This is the value represented in the header for the encompassing encounter</body
     </profileApplication>
   </uml:Package>
   <CDA:CodegenSupport xmi:id="_xs1LQGeQEeGtXKebdWh3hg" basePackage="org.openhealthtools.mdht.uml.cda" nsPrefix="emspcr" nsURI="http://www.openhealthtools.org/mdht/uml/cda/emspcr" packageName="emspcr" prefix="emspcr" base_Namespace="_xpUkQGeQEeGtXKebdWh3hg"/>
-  <CDA:CDATemplate xmi:id="_xs3ngGeQEeGtXKebdWh3hg" base_Class="_xs1LQWeQEeGtXKebdWh3hg" templateId="2.16.840.1.113883.17.3.10.1" assigningAuthorityName=""/>
+  <CDA:CDATemplate xmi:id="_xs3ngGeQEeGtXKebdWh3hg" base_Class="_xs1LQWeQEeGtXKebdWh3hg" templateId="2.16.840.1.113883.17.3.10.2" assigningAuthorityName=""/>
   <CDA:PropertyValidation xmi:id="_bFc5QGeREeGtXKebdWh3hg" base_Property="_ZTnIMGeREeGtXKebdWh3hg">
     <ruleId>CONF:10000</ruleId>
   </CDA:PropertyValidation>
@@ -7285,9 +7426,6 @@ This is the value represented in the header for the encompassing encounter</body
   <CDA:AssociationValidation xmi:id="_ZndXoMHuEeGOXu0EprM3pw" base_Association="_OpE-gMHuEeGOXu0EprM3pw">
     <ruleId>CONF:10089</ruleId>
   </CDA:AssociationValidation>
-  <CDA:AssociationValidation xmi:id="_mLXx4MHzEeGOXu0EprM3pw" base_Association="_lS1nY8HzEeGOXu0EprM3pw">
-    <ruleId>CONF:10193</ruleId>
-  </CDA:AssociationValidation>
   <CDA:AssociationValidation xmi:id="_ojtiRcHzEeGOXu0EprM3pw" base_Association="_ojtiQMHzEeGOXu0EprM3pw">
     <ruleId>CONF:10198</ruleId>
   </CDA:AssociationValidation>
@@ -7487,13 +7625,6 @@ This is the value represented in the header for the encompassing encounter</body
   </CDA:CodeSystemConstraint>
   <CDA:PropertyValidation xmi:id="_qYXjQIzsEeGnhceUMXltng" base_Property="_lpOTkYzsEeGnhceUMXltng">
     <ruleId>CONF:10290</ruleId>
-  </CDA:PropertyValidation>
-  <CDA:CodeSystemConstraint xmi:id="_5X754IzsEeGnhceUMXltng" code="2710-2" displayName="Oxygen saturation" base_Property="_10ZhsIzsEeGnhceUMXltng">
-    <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
-    <ruleId>CONF:10291</ruleId>
-  </CDA:CodeSystemConstraint>
-  <CDA:PropertyValidation xmi:id="__s_XcIzsEeGnhceUMXltng" base_Property="_10aIwIzsEeGnhceUMXltng">
-    <ruleId>CONF:10292</ruleId>
   </CDA:PropertyValidation>
   <CDA:AssociationValidation xmi:id="_oEqchcH4EeGOXu0EprM3pw" base_Association="_oEqcgMH4EeGOXu0EprM3pw">
     <ruleId>CONF:10256</ruleId>
@@ -8098,9 +8229,6 @@ This is the value represented in the header for the encompassing encounter</body
   <CDA:AssociationValidation xmi:id="_Tk-dhMH-EeGOXu0EprM3pw" severity="INFO" base_Association="_Tk-dgMH-EeGOXu0EprM3pw">
     <ruleId>CONF:10444</ruleId>
   </CDA:AssociationValidation>
-  <CDA:AssociationValidation xmi:id="_ZCcLxcH-EeGOXu0EprM3pw" severity="INFO" base_Association="_ZCcLwMH-EeGOXu0EprM3pw">
-    <ruleId>CONF:10064</ruleId>
-  </CDA:AssociationValidation>
   <CDA:PropertyValidation xmi:id="_vKJGsJ-kEeGorI3CPDW2ww" base_Property="_r12rcJ-kEeGorI3CPDW2ww">
     <ruleId>CONF:10705</ruleId>
   </CDA:PropertyValidation>
@@ -8294,7 +8422,7 @@ This is the value represented in the header for the encompassing encounter</body
   <CDA:PropertyValidation xmi:id="_SHmngKK4EeGOxth0BgV-QA" base_Property="_P-cioKK4EeGOxth0BgV-QA">
     <ruleId>CONF:10741</ruleId>
   </CDA:PropertyValidation>
-  <CDA:CodeSystemConstraint xmi:id="_T9-TQKK4EeGOxth0BgV-QA" code="67665-0" displayName="EMS reporter is first unit on scene" base_Property="_P-cioKK4EeGOxth0BgV-QA">
+  <CDA:CodeSystemConstraint xmi:id="_T9-TQKK4EeGOxth0BgV-QA" code="67481-2" displayName="EMS reporter is first unit on scene" base_Property="_P-cioKK4EeGOxth0BgV-QA">
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
     <ruleId>CONF:10742</ruleId>
   </CDA:CodeSystemConstraint>
@@ -8821,15 +8949,14 @@ This is the value represented in the header for the encompassing encounter</body
     <ruleId>CONF:10569</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:ValueSetConstraint xmi:id="_kqnKIMcfEeGjDJAyT0XW9Q" base_Property="_skHCEHSCEeGa4IXs2ghZEw">
-    <reference href="../../org.openhealthtools.mdht.uml.cda.consol.model/model/consol-vocab.uml#_0Uo48EFaEeGFqszUdHc61Q"/>
+    <reference href="emspcr-vocab.uml#_7DvPsLMpEeKNbt70lHd2Eg"/>
     <ruleId>CONF:10033</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:ValueSetConstraint xmi:id="_mqwc8McfEeGjDJAyT0XW9Q" base_Property="_skHCE3SCEeGa4IXs2ghZEw">
-    <reference href="../../org.openhealthtools.mdht.uml.cda.consol.model/model/consol-vocab.uml#_0Uo48EFaEeGFqszUdHc61Q"/>
+    <reference href="emspcr-vocab.uml#_7DvPsLMpEeKNbt70lHd2Eg"/>
     <ruleId>CONF:10034</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:ValueSetConstraint xmi:id="_qGYPQMcfEeGjDJAyT0XW9Q" base_Property="_skFz8HSCEeGa4IXs2ghZEw">
-    <reference href="emspcr-vocab.uml#_l2Hn4McHEeGjDJAyT0XW9Q"/>
     <ruleId>CONF:10032</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:AssociationValidation xmi:id="_nKgawMdxEeGtwJlNcukY2g" base_Association="_jJW5gMdxEeGtwJlNcukY2g">
@@ -8900,29 +9027,6 @@ This is the value represented in the header for the encompassing encounter</body
   <CDA:AssociationValidation xmi:id="_o4WhUCpFEeK1vdrMJapHMg" base_Association="_-q5QQMH9EeGOXu0EprM3pw"/>
   <CDA:AssociationValidation xmi:id="_qbdS0CpFEeK1vdrMJapHMg" base_Association="__qazkMH9EeGOXu0EprM3pw"/>
   <CDA:PropertyValidation xmi:id="_6Cmm0CpFEeK1vdrMJapHMg" base_Property="_dj1oEIceEeGqF6qfYwLiQw"/>
-  <CDA:CodeSystemConstraint xmi:id="_-NXVkIzdEeGnhceUMXltng" code="68487-8" displayName="EMS History of Condition" base_Property="_6eFAYIzdEeGnhceUMXltng">
-    <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
-    <ruleId>CONF:10069</ruleId>
-  </CDA:CodeSystemConstraint>
-  <CDA:PropertyValidation xmi:id="_7Oc38IzeEeGnhceUMXltng" base_Property="_6eFAYIzdEeGnhceUMXltng">
-    <ruleId>CONF:10070</ruleId>
-  </CDA:PropertyValidation>
-  <CDA:CodeSystemConstraint xmi:id="_t-TQgIzeEeGnhceUMXltng" base_Property="_6eFncIzdEeGnhceUMXltng">
-    <reference href="emspcr-vocab.uml#_t_IUYMcdEeGjDJAyT0XW9Q"/>
-    <ruleId>CONF:10071</ruleId>
-  </CDA:CodeSystemConstraint>
-  <CDA:PropertyValidation xmi:id="_6JQxgIzeEeGnhceUMXltng" base_Property="_6eFncIzdEeGnhceUMXltng">
-    <ruleId>CONF:10072</ruleId>
-  </CDA:PropertyValidation>
-  <CDA:CodeSystemConstraint xmi:id="_bSegAIzdEeGnhceUMXltng" code="67793-0" displayName="Has the patient had any significant medical conditions" base_Property="_Ybg58IzdEeGnhceUMXltng">
-    <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
-    <ruleId>CONF:10067</ruleId>
-  </CDA:CodeSystemConstraint>
-  <CDA:PropertyValidation xmi:id="_LCNxcMcQEeGjDJAyT0XW9Q" base_Property="_YbhhAIzdEeGnhceUMXltng">
-    <ruleId>CONF:10068</ruleId>
-  </CDA:PropertyValidation>
-  <CDA:AssociationValidation xmi:id="_A6R-YCpIEeK1vdrMJapHMg" severity="INFO" base_Association="_AXCucCpIEeK1vdrMJapHMg"/>
-  <CDA:AssociationValidation xmi:id="_JE6dgCpIEeK1vdrMJapHMg" base_Association="_HSwjYCpIEeK1vdrMJapHMg"/>
   <CDA:CodeSystemConstraint xmi:id="_unaNAIzgEeGnhceUMXltng" code="67792-2" displayName="EMS existence of history of procedures" base_Property="_o-xJgIzgEeGnhceUMXltng">
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
     <ruleId>CONF:10074</ruleId>
@@ -8930,8 +9034,6 @@ This is the value represented in the header for the encompassing encounter</body
   <CDA:PropertyValidation xmi:id="_PvO6MMcQEeGjDJAyT0XW9Q" base_Property="_o-xwkIzgEeGnhceUMXltng">
     <ruleId>CONF:10075</ruleId>
   </CDA:PropertyValidation>
-  <CDA:AssociationValidation xmi:id="_aptJ8CpIEeK1vdrMJapHMg" base_Association="_ZzBZkCpIEeK1vdrMJapHMg"/>
-  <CDA:AssociationValidation xmi:id="_iJ92YCpIEeK1vdrMJapHMg" base_Association="_gpBBACpIEeK1vdrMJapHMg"/>
   <CDA:CodeSystemConstraint xmi:id="_HR8NEIzhEeGnhceUMXltng" base_Property="_FM06sIzhEeGnhceUMXltng">
     <reference href="emspcr-vocab.uml#_q2XMoMcdEeGjDJAyT0XW9Q"/>
     <ruleId>CONF:10076</ruleId>
@@ -9093,159 +9195,6 @@ This is the value represented in the header for the encompassing encounter</body
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
     <ruleId>CONF:10273</ruleId>
   </CDA:CodeSystemConstraint>
-  <CDA:CodeSystemConstraint xmi:id="_G-KmYIzqEeGnhceUMXltng" code="67519-9" displayName="Cardiac rhythm" base_Property="_3BUIIIzpEeGnhceUMXltng">
-    <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
-    <ruleId>CONF:10274</ruleId>
-  </CDA:CodeSystemConstraint>
-  <CDA:PropertyValidation xmi:id="_qhxo0IzqEeGnhceUMXltng" base_Property="_3BUIIIzpEeGnhceUMXltng">
-    <ruleId>CONF:10275</ruleId>
-  </CDA:PropertyValidation>
-  <CDA:ValueSetConstraint xmi:id="_O1jZYIzqEeGnhceUMXltng" base_Property="_3BUvMIzpEeGnhceUMXltng">
-    <reference href="emspcr-vocab.uml#_gXn9cHSKEeGa4IXs2ghZEw"/>
-    <ruleId>CONF:10276</ruleId>
-  </CDA:ValueSetConstraint>
-  <CDA:PropertyValidation xmi:id="_sFKHIIzqEeGnhceUMXltng" base_Property="_3BUvMIzpEeGnhceUMXltng">
-    <ruleId>CONF:10277</ruleId>
-  </CDA:PropertyValidation>
-  <CDA:PropertyValidation xmi:id="_tv5xsIzqEeGnhceUMXltng" base_Property="_3BVWQIzpEeGnhceUMXltng">
-    <ruleId>CONF:10278</ruleId>
-  </CDA:PropertyValidation>
-  <CDA:ValueSetConstraint xmi:id="_uJ7bQIzqEeGnhceUMXltng" base_Property="_3BVWQIzpEeGnhceUMXltng">
-    <reference href="emspcr-vocab.uml#_dd2T8HSKEeGa4IXs2ghZEw"/>
-    <ruleId>CONF:10279</ruleId>
-  </CDA:ValueSetConstraint>
-  <CDA:CodeSystemConstraint xmi:id="_NFUqgIztEeGnhceUMXltng" code="19889-5" displayName="Carbon dioxide/Gas.total.at end expiration" base_Property="_JrbWgIztEeGnhceUMXltng">
-    <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
-    <ruleId>CONF:10293</ruleId>
-  </CDA:CodeSystemConstraint>
-  <CDA:PropertyValidation xmi:id="_Q3J9YIztEeGnhceUMXltng" base_Property="_JrbWgIztEeGnhceUMXltng">
-    <ruleId>CONF:10294</ruleId>
-  </CDA:PropertyValidation>
-  <CDA:PropertyValidation xmi:id="_QN9PYIztEeGnhceUMXltng" base_Property="_JrbWgYztEeGnhceUMXltng">
-    <ruleId>CONF:10295</ruleId>
-  </CDA:PropertyValidation>
-  <CDA:CodeSystemConstraint xmi:id="_Z-RS4IztEeGnhceUMXltng" code="19911-7" displayName="Diffusion capacity.carbon monoxide" base_Property="_W79YcIztEeGnhceUMXltng">
-    <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
-    <ruleId>CONF:10296</ruleId>
-  </CDA:CodeSystemConstraint>
-  <CDA:PropertyValidation xmi:id="_gvu_oIztEeGnhceUMXltng" base_Property="_W79YcIztEeGnhceUMXltng">
-    <ruleId>CONF:10297</ruleId>
-  </CDA:PropertyValidation>
-  <CDA:PropertyValidation xmi:id="_e6Hh0IztEeGnhceUMXltng" base_Property="_W79_gIztEeGnhceUMXltng">
-    <ruleId>CONF:10298</ruleId>
-  </CDA:PropertyValidation>
-  <CDA:CodeSystemConstraint xmi:id="_nx-6YIztEeGnhceUMXltng" code="2339-0" displayName="Glucose" base_Property="_kqTXwIztEeGnhceUMXltng">
-    <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
-    <ruleId>CONF:10299</ruleId>
-  </CDA:CodeSystemConstraint>
-  <CDA:PropertyValidation xmi:id="_qvo-UIztEeGnhceUMXltng" base_Property="_kqTXwIztEeGnhceUMXltng">
-    <ruleId>CONF:10300</ruleId>
-  </CDA:PropertyValidation>
-  <CDA:PropertyValidation xmi:id="_sTUXkIztEeGnhceUMXltng" base_Property="_kqT-0IztEeGnhceUMXltng">
-    <ruleId>CONF:10301</ruleId>
-  </CDA:PropertyValidation>
-  <CDA:CodeSystemConstraint xmi:id="_199Q4IztEeGnhceUMXltng" code="67775-7" displayName="Level of responsiveness" base_Property="_ysNzUIztEeGnhceUMXltng">
-    <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
-    <ruleId>CONF:10302</ruleId>
-  </CDA:CodeSystemConstraint>
-  <CDA:PropertyValidation xmi:id="_AY0tQIzuEeGnhceUMXltng" base_Property="_ysNzUIztEeGnhceUMXltng">
-    <ruleId>CONF:10303</ruleId>
-  </CDA:PropertyValidation>
-  <CDA:ValueSetConstraint xmi:id="_8VcXYIztEeGnhceUMXltng" base_Property="_ysOaYIztEeGnhceUMXltng">
-    <reference href="emspcr-vocab.uml#_jgfy4HSKEeGa4IXs2ghZEw"/>
-    <ruleId>CONF:10304</ruleId>
-  </CDA:ValueSetConstraint>
-  <CDA:PropertyValidation xmi:id="__f1PwIztEeGnhceUMXltng" base_Property="_ysOaYIztEeGnhceUMXltng">
-    <ruleId>CONF:10305</ruleId>
-  </CDA:PropertyValidation>
-  <CDA:CodeSystemConstraint xmi:id="_qustsIzuEeGnhceUMXltng" code="56840-2" displayName="Pain severity verbal numeric scale" base_Property="_mpdWoIzuEeGnhceUMXltng">
-    <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
-    <ruleId>CONF:10306</ruleId>
-  </CDA:CodeSystemConstraint>
-  <CDA:CodeSystemConstraint xmi:id="_ZHl3oIzvEeGnhceUMXltng" code="67520-7" displayName="Stroke scale overall interpretation" base_Property="_-gsRgIzuEeGnhceUMXltng">
-    <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
-    <ruleId>CONF:10307</ruleId>
-  </CDA:CodeSystemConstraint>
-  <CDA:PropertyValidation xmi:id="_RTpIQIzxEeGnhceUMXltng" base_Property="_-gsRgIzuEeGnhceUMXltng">
-    <ruleId>CONF:10308</ruleId>
-  </CDA:PropertyValidation>
-  <CDA:ValueSetConstraint xmi:id="_JIDm4IzxEeGnhceUMXltng" base_Property="_-gs4kIzuEeGnhceUMXltng">
-    <reference href="emspcr-vocab.uml#_YhX8wMFTEeGyGv5RKvEgDA"/>
-    <ruleId>CONF:10309</ruleId>
-  </CDA:ValueSetConstraint>
-  <CDA:PropertyValidation xmi:id="_Q2bAwIzxEeGnhceUMXltng" base_Property="_-gs4kIzuEeGnhceUMXltng">
-    <ruleId>CONF:10310</ruleId>
-  </CDA:PropertyValidation>
-  <CDA:ValueSetConstraint xmi:id="_J6LAUIzxEeGnhceUMXltng" base_Property="_H8VFgIzvEeGnhceUMXltng">
-    <reference href="emspcr-vocab.uml#_BYIa4XSUEeGa4IXs2ghZEw"/>
-    <ruleId>CONF:10311</ruleId>
-  </CDA:ValueSetConstraint>
-  <CDA:PropertyValidation xmi:id="_QYThYIzxEeGnhceUMXltng" base_Property="_H8VFgIzvEeGnhceUMXltng">
-    <ruleId>CONF:10312</ruleId>
-  </CDA:PropertyValidation>
-  <CDA:CodeSystemConstraint xmi:id="_8RDNUIzyEeGnhceUMXltng" code="9269-2" displayName="Glasgow coma score.total" base_Property="_XnSbIIzyEeGnhceUMXltng">
-    <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
-    <ruleId>CONF:10318</ruleId>
-  </CDA:CodeSystemConstraint>
-  <CDA:PropertyValidation xmi:id="_ws9CkIzzEeGnhceUMXltng" base_Property="_XnSbIIzyEeGnhceUMXltng">
-    <ruleId>CONF:10319</ruleId>
-  </CDA:PropertyValidation>
-  <CDA:PropertyValidation xmi:id="_xIYaUIzzEeGnhceUMXltng" base_Property="_XnTCMIzyEeGnhceUMXltng">
-    <ruleId>CONF:10320</ruleId>
-  </CDA:PropertyValidation>
-  <CDA:CodeSystemConstraint xmi:id="_T2AFYIzzEeGnhceUMXltng" code="55285-1" displayName="Glasgow coma score special circumstances" base_Property="_aL9-YIzyEeGnhceUMXltng">
-    <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
-    <ruleId>CONF:10321</ruleId>
-  </CDA:CodeSystemConstraint>
-  <CDA:PropertyValidation xmi:id="_tLmbsIzzEeGnhceUMXltng" base_Property="_aL9-YIzyEeGnhceUMXltng">
-    <ruleId>CONF:10322</ruleId>
-  </CDA:PropertyValidation>
-  <CDA:PropertyValidation xmi:id="_vRX1YIzzEeGnhceUMXltng" severity="INFO" base_Property="_aL-lcIzyEeGnhceUMXltng">
-    <ruleId>CONF:10323</ruleId>
-  </CDA:PropertyValidation>
-  <CDA:CodeSystemConstraint xmi:id="_jNAEkIzzEeGnhceUMXltng" code="9267-6" displayName="Glasgow coma score.eye opening" base_Property="_ctdqwIzyEeGnhceUMXltng">
-    <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
-    <ruleId>CONF:10324</ruleId>
-  </CDA:CodeSystemConstraint>
-  <CDA:PropertyValidation xmi:id="_rBCBkIzzEeGnhceUMXltng" base_Property="_ctdqwIzyEeGnhceUMXltng">
-    <ruleId>CONF:10325</ruleId>
-  </CDA:PropertyValidation>
-  <CDA:PropertyValidation xmi:id="_qhKOsIzzEeGnhceUMXltng" base_Property="_cteR0IzyEeGnhceUMXltng">
-    <ruleId>CONF:10326</ruleId>
-  </CDA:PropertyValidation>
-  <CDA:ValueSetConstraint xmi:id="_EP1lEMcYEeGjDJAyT0XW9Q" base_Property="_cteR0IzyEeGnhceUMXltng">
-    <reference href="emspcr-vocab.uml#_YiBdAcFTEeGyGv5RKvEgDA"/>
-    <ruleId>CONF:10327</ruleId>
-  </CDA:ValueSetConstraint>
-  <CDA:CDATemplate xmi:id="_5wW8wIzzEeGnhceUMXltng" base_Class="_eKfCYIzyEeGnhceUMXltng"/>
-  <CDA:PropertyValidation xmi:id="_66Ou4IzzEeGnhceUMXltng" base_Property="_fIlpYIzyEeGnhceUMXltng">
-    <ruleId>CONF:10328</ruleId>
-  </CDA:PropertyValidation>
-  <CDA:CodeSystemConstraint xmi:id="_7NGnkIzzEeGnhceUMXltng" code="9268-4" displayName="Glasgow coma score.motor" base_Property="_fIlpYIzyEeGnhceUMXltng">
-    <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
-    <ruleId>CONF:10329</ruleId>
-  </CDA:CodeSystemConstraint>
-  <CDA:PropertyValidation xmi:id="_CtQmUIz0EeGnhceUMXltng" base_Property="_fIlpYYzyEeGnhceUMXltng">
-    <ruleId>CONF:10330</ruleId>
-  </CDA:PropertyValidation>
-  <CDA:ValueSetConstraint xmi:id="_KIrAsMcYEeGjDJAyT0XW9Q" base_Property="_fIlpYYzyEeGnhceUMXltng">
-    <reference href="emspcr-vocab.uml#_Yh0BocFTEeGyGv5RKvEgDA"/>
-    <ruleId>CONF:10331</ruleId>
-  </CDA:ValueSetConstraint>
-  <CDA:PropertyValidation xmi:id="_KjTVgIz0EeGnhceUMXltng" base_Property="_iMb04IzyEeGnhceUMXltng">
-    <ruleId>CONF:10332</ruleId>
-  </CDA:PropertyValidation>
-  <CDA:CodeSystemConstraint xmi:id="_K0elEIz0EeGnhceUMXltng" code="9270-0" displayName="Glasgow coma score.verbal" base_Property="_iMb04IzyEeGnhceUMXltng">
-    <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
-    <ruleId>CONF:10333</ruleId>
-  </CDA:CodeSystemConstraint>
-  <CDA:PropertyValidation xmi:id="_kDubwIz0EeGnhceUMXltng" base_Property="_iMcb8IzyEeGnhceUMXltng">
-    <ruleId>CONF:10334</ruleId>
-  </CDA:PropertyValidation>
-  <CDA:ValueSetConstraint xmi:id="_O5XvkMcYEeGjDJAyT0XW9Q" base_Property="_iMcb8IzyEeGnhceUMXltng">
-    <reference href="emspcr-vocab.uml#_Yh6vUcFTEeGyGv5RKvEgDA"/>
-    <ruleId>CONF:10335</ruleId>
-  </CDA:ValueSetConstraint>
   <CDA:AssociationValidation xmi:id="_FRdWcETVEeKEm6ZghGGtvw" base_Association="_D4A3QETVEeKEm6ZghGGtvw"/>
   <CDA:AssociationValidation xmi:id="_M_9TMETVEeKEm6ZghGGtvw" severity="WARNING" base_Association="_MDkjcETVEeKEm6ZghGGtvw"/>
   <CDA:AssociationValidation xmi:id="_iLgq8ETVEeKEm6ZghGGtvw" base_Association="_g_VLsETVEeKEm6ZghGGtvw"/>
@@ -9257,7 +9206,6 @@ This is the value represented in the header for the encompassing encounter</body
   <CDA:AssociationValidation xmi:id="_P_CeAETWEeKEm6ZghGGtvw" base_Association="_PIf3kETWEeKEm6ZghGGtvw"/>
   <CDA:AssociationValidation xmi:id="_VL5kcETWEeKEm6ZghGGtvw" severity="WARNING" base_Association="_UFHikETWEeKEm6ZghGGtvw"/>
   <CDA:AssociationValidation xmi:id="_bbiWgETWEeKEm6ZghGGtvw" base_Association="_bAWPUUTWEeKEm6ZghGGtvw"/>
-  <CDA:AssociationValidation xmi:id="_fRkz8ETWEeKEm6ZghGGtvw" severity="WARNING" base_Association="_eXyFMETWEeKEm6ZghGGtvw"/>
   <CDA:CDATemplate xmi:id="_v3VFQETWEeKEm6ZghGGtvw" base_Class="_Orea4IzrEeGnhceUMXltng" templateId="2.16.840.1.113883.17.3.10.1.23.1"/>
   <CDA:CodeSystemConstraint xmi:id="_KE4rkJojEeG_FLcaRgAa7g" code="8335-2" base_Property="_IKvTEJojEeG_FLcaRgAa7g">
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
@@ -9475,18 +9423,10 @@ This is the value represented in the header for the encompassing encounter</body
   </CDA:TextValue>
   <CDA:AssociationValidation xmi:id="_jKCL4ETZEeKEm6ZghGGtvw" base_Association="_hVjWgETZEeKEm6ZghGGtvw"/>
   <CDA:AssociationValidation xmi:id="_oj1QMETbEeKEm6ZghGGtvw" severity="INFO" base_Association="_nHB7AETbEeKEm6ZghGGtvw"/>
-  <CDA:AssociationValidation xmi:id="_rRJyEETbEeKEm6ZghGGtvw" severity="INFO" base_Association="_qwD3METbEeKEm6ZghGGtvw"/>
-  <CDA:AssociationValidation xmi:id="_uYYowETbEeKEm6ZghGGtvw" severity="INFO" base_Association="_tt79kETbEeKEm6ZghGGtvw"/>
-  <CDA:AssociationValidation xmi:id="_wXrnAETbEeKEm6ZghGGtvw" severity="INFO" base_Association="_v2pWgETbEeKEm6ZghGGtvw"/>
-  <CDA:AssociationValidation xmi:id="_y22_METbEeKEm6ZghGGtvw" severity="INFO" base_Association="_yaQiwETbEeKEm6ZghGGtvw"/>
-  <CDA:AssociationValidation xmi:id="_028noETbEeKEm6ZghGGtvw" severity="INFO" base_Association="_0fd7wETbEeKEm6ZghGGtvw"/>
-  <CDA:AssociationValidation xmi:id="_3QaZYETbEeKEm6ZghGGtvw" severity="INFO" base_Association="_2vgrwETbEeKEm6ZghGGtvw"/>
-  <CDA:AssociationValidation xmi:id="_5Eg0QETbEeKEm6ZghGGtvw" severity="INFO" base_Association="_4h9g0ETbEeKEm6ZghGGtvw"/>
   <CDA:PropertyValidation xmi:id="_BYR6wFKREeK-YbJf-zpN1g" base_Property="_8le6IFKQEeK-YbJf-zpN1g"/>
   <CDA:ValueSetConstraint xmi:id="_C9gzMFKREeK-YbJf-zpN1g" base_Property="_8le6IFKQEeK-YbJf-zpN1g">
     <reference href="emspcr-vocab.uml#_D5sVgXSQEeGa4IXs2ghZEw"/>
   </CDA:ValueSetConstraint>
-  <CDA:AssociationValidation xmi:id="_SI34MFKTEeK-YbJf-zpN1g" base_Association="_QyTG0FKTEeK-YbJf-zpN1g"/>
   <CDA:CodeSystemConstraint xmi:id="_uLp9kIy-EeGnhceUMXltng" code="67794-8" displayName="Existence of drug allergy" base_Property="_lhnloIy-EeGnhceUMXltng">
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
     <ruleId>CONF:10203</ruleId>
@@ -9525,6 +9465,211 @@ This is the value represented in the header for the encompassing encounter</body
   <CDA:AssociationValidation xmi:id="_sKlnYFhWEeK-i8RB1gvLUA" severity="INFO" base_Association="_rfteYFhWEeK-i8RB1gvLUA"/>
   <CDA:PropertyValidation xmi:id="_xD0AIFhWEeK-i8RB1gvLUA" severity="INFO" base_Property="_v9regFhWEeK-i8RB1gvLUA"/>
   <CDA:ValueSetConstraint xmi:id="_qFTT4FhsEeK-i8RB1gvLUA" base_Property="_P1-iQFhWEeK-i8RB1gvLUA">
-    <reference href="emspcr-vocab.uml#_YhkKAcFTEeGyGv5RKvEgDA"/>
+    <reference href="emspcr-vocab.uml#_9jXLQLMSEeKNbt70lHd2Eg"/>
   </CDA:ValueSetConstraint>
+  <CDA:PropertyValidation xmi:id="_G6ExQFtWEeKHUos6g4FwAg" base_Property="_FHspcIzpEeGnhceUMXltng"/>
+  <CDA:PropertyValidation xmi:id="_Hok2AFtWEeKHUos6g4FwAg" severity="INFO"/>
+  <CDA:PropertyValidation xmi:id="_K5wT8IjqEeKx3P4dlW9OSw" severity="INFO" base_Property="_K5WrUIjqEeKx3P4dlW9OSw">
+    <ruleId>CONF:7304</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_ak2McIjtEeKx3P4dlW9OSw" severity="INFO" base_Property="_Y3lZYIjtEeKx3P4dlW9OSw"/>
+  <CDA:PropertyValidation xmi:id="_rc9ZEIjtEeKx3P4dlW9OSw" severity="INFO" base_Property="_p3qPMIjtEeKx3P4dlW9OSw"/>
+  <CDA:PropertyValidation xmi:id="_81aSoIjtEeKx3P4dlW9OSw" severity="INFO" base_Property="_y88YsIjtEeKx3P4dlW9OSw"/>
+  <CDA:CDATemplate xmi:id="_Au9-IIjuEeKx3P4dlW9OSw" severity="INFO" base_Class="_koRz8IzsEeGnhceUMXltng"/>
+  <CDA:PropertyValidation xmi:id="_EWQ_gIjvEeKx3P4dlW9OSw" severity="INFO" base_Property="__ctsEIjtEeKx3P4dlW9OSw"/>
+  <CDA:CodeSystemConstraint xmi:id="_OZblYJfIEeKIQPQBFzaASQ" code="67490-3" displayName="Mass Casualty Incident Indicator" base_Property="_GKjp4KK8EeGOxth0BgV-QA">
+    <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+  </CDA:CodeSystemConstraint>
+  <CDA:CDATemplate xmi:id="_DkbvYIjuEeKx3P4dlW9OSw" severity="INFO" base_Class="_01XGkIzsEeGnhceUMXltng"/>
+  <CDA:ConformsTo xmi:id="_Hwu7QIjvEeKx3P4dlW9OSw" severity="INFO" base_Generalization="_1HuB4IzsEeGnhceUMXltng"/>
+  <CDA:CodeSystemConstraint xmi:id="_5X754IzsEeGnhceUMXltng" code="2710-2" displayName="Oxygen saturation" base_Property="_10ZhsIzsEeGnhceUMXltng">
+    <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF:10291</ruleId>
+  </CDA:CodeSystemConstraint>
+  <CDA:PropertyValidation xmi:id="__s_XcIzsEeGnhceUMXltng" base_Property="_10aIwIzsEeGnhceUMXltng">
+    <ruleId>CONF:10292</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:AssociationValidation xmi:id="_reDIgLMOEeKNbt70lHd2Eg" severity="WARNING" base_Association="_hoHlMLMOEeKNbt70lHd2Eg"/>
+  <CDA:PropertyValidation xmi:id="_8eGJYIjuEeKx3P4dlW9OSw" severity="INFO" base_Property="_71YjkIjuEeKx3P4dlW9OSw"/>
+  <CDA:CodeSystemConstraint xmi:id="_8RDNUIzyEeGnhceUMXltng" code="9269-2" displayName="Glasgow coma score.total" base_Property="_XnSbIIzyEeGnhceUMXltng">
+    <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF:10318</ruleId>
+  </CDA:CodeSystemConstraint>
+  <CDA:PropertyValidation xmi:id="_ws9CkIzzEeGnhceUMXltng" base_Property="_XnSbIIzyEeGnhceUMXltng">
+    <ruleId>CONF:10319</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_xIYaUIzzEeGnhceUMXltng" base_Property="_XnTCMIzyEeGnhceUMXltng">
+    <ruleId>CONF:10320</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:CodeSystemConstraint xmi:id="_T2AFYIzzEeGnhceUMXltng" code="55285-1" displayName="Glasgow coma score special circumstances" base_Property="_aL9-YIzyEeGnhceUMXltng">
+    <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF:10321</ruleId>
+  </CDA:CodeSystemConstraint>
+  <CDA:PropertyValidation xmi:id="_tLmbsIzzEeGnhceUMXltng" base_Property="_aL9-YIzyEeGnhceUMXltng">
+    <ruleId>CONF:10322</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_vRX1YIzzEeGnhceUMXltng" severity="INFO" base_Property="_aL-lcIzyEeGnhceUMXltng">
+    <ruleId>CONF:10323</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:CodeSystemConstraint xmi:id="_jNAEkIzzEeGnhceUMXltng" code="9267-6" displayName="Glasgow coma score.eye opening" base_Property="_ctdqwIzyEeGnhceUMXltng">
+    <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF:10324</ruleId>
+  </CDA:CodeSystemConstraint>
+  <CDA:PropertyValidation xmi:id="_rBCBkIzzEeGnhceUMXltng" base_Property="_ctdqwIzyEeGnhceUMXltng">
+    <ruleId>CONF:10325</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_qhKOsIzzEeGnhceUMXltng" base_Property="_cteR0IzyEeGnhceUMXltng">
+    <ruleId>CONF:10326</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:CDATemplate xmi:id="_5wW8wIzzEeGnhceUMXltng" base_Class="_eKfCYIzyEeGnhceUMXltng"/>
+  <CDA:PropertyValidation xmi:id="_66Ou4IzzEeGnhceUMXltng" base_Property="_fIlpYIzyEeGnhceUMXltng">
+    <ruleId>CONF:10328</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:CodeSystemConstraint xmi:id="_7NGnkIzzEeGnhceUMXltng" code="9268-4" displayName="Glasgow coma score.motor" base_Property="_fIlpYIzyEeGnhceUMXltng">
+    <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF:10329</ruleId>
+  </CDA:CodeSystemConstraint>
+  <CDA:PropertyValidation xmi:id="_CtQmUIz0EeGnhceUMXltng" base_Property="_fIlpYYzyEeGnhceUMXltng">
+    <ruleId>CONF:10330</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_KjTVgIz0EeGnhceUMXltng" base_Property="_iMb04IzyEeGnhceUMXltng">
+    <ruleId>CONF:10332</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:CodeSystemConstraint xmi:id="_K0elEIz0EeGnhceUMXltng" code="9270-0" displayName="Glasgow coma score.verbal" base_Property="_iMb04IzyEeGnhceUMXltng">
+    <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF:10333</ruleId>
+  </CDA:CodeSystemConstraint>
+  <CDA:PropertyValidation xmi:id="_kDubwIz0EeGnhceUMXltng" base_Property="_iMcb8IzyEeGnhceUMXltng">
+    <ruleId>CONF:10334</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:CodeSystemConstraint xmi:id="_ZHl3oIzvEeGnhceUMXltng" code="67520-7" displayName="Stroke scale overall interpretation" base_Property="_-gsRgIzuEeGnhceUMXltng">
+    <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF:10307</ruleId>
+  </CDA:CodeSystemConstraint>
+  <CDA:PropertyValidation xmi:id="_RTpIQIzxEeGnhceUMXltng" base_Property="_-gsRgIzuEeGnhceUMXltng">
+    <ruleId>CONF:10308</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:ValueSetConstraint xmi:id="_JIDm4IzxEeGnhceUMXltng" base_Property="_-gs4kIzuEeGnhceUMXltng">
+    <reference href="emspcr-vocab.uml#_YhX8wMFTEeGyGv5RKvEgDA"/>
+    <ruleId>CONF:10309</ruleId>
+  </CDA:ValueSetConstraint>
+  <CDA:PropertyValidation xmi:id="_Q2bAwIzxEeGnhceUMXltng" base_Property="_-gs4kIzuEeGnhceUMXltng">
+    <ruleId>CONF:10310</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:ValueSetConstraint xmi:id="_J6LAUIzxEeGnhceUMXltng" base_Property="_H8VFgIzvEeGnhceUMXltng">
+    <reference href="emspcr-vocab.uml#_BYIa4XSUEeGa4IXs2ghZEw"/>
+    <ruleId>CONF:10311</ruleId>
+  </CDA:ValueSetConstraint>
+  <CDA:PropertyValidation xmi:id="_QYThYIzxEeGnhceUMXltng" base_Property="_H8VFgIzvEeGnhceUMXltng">
+    <ruleId>CONF:10312</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_6HXikIjuEeKx3P4dlW9OSw" severity="INFO" base_Property="_5LZpkIjuEeKx3P4dlW9OSw"/>
+  <CDA:CodeSystemConstraint xmi:id="_qustsIzuEeGnhceUMXltng" code="56840-2" displayName="Pain severity verbal numeric scale" base_Property="_mpdWoIzuEeGnhceUMXltng">
+    <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF:10306</ruleId>
+  </CDA:CodeSystemConstraint>
+  <CDA:PropertyValidation xmi:id="_3A9LQIjuEeKx3P4dlW9OSw" severity="INFO" base_Property="_2QW0wIjuEeKx3P4dlW9OSw"/>
+  <CDA:CodeSystemConstraint xmi:id="_199Q4IztEeGnhceUMXltng" code="67775-7" displayName="Level of responsiveness" base_Property="_ysNzUIztEeGnhceUMXltng">
+    <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF:10302</ruleId>
+  </CDA:CodeSystemConstraint>
+  <CDA:PropertyValidation xmi:id="_AY0tQIzuEeGnhceUMXltng" base_Property="_ysNzUIztEeGnhceUMXltng">
+    <ruleId>CONF:10303</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:ValueSetConstraint xmi:id="_8VcXYIztEeGnhceUMXltng" base_Property="_ysOaYIztEeGnhceUMXltng">
+    <reference href="emspcr-vocab.uml#_jgfy4HSKEeGa4IXs2ghZEw"/>
+    <ruleId>CONF:10304</ruleId>
+  </CDA:ValueSetConstraint>
+  <CDA:PropertyValidation xmi:id="__f1PwIztEeGnhceUMXltng" base_Property="_ysOaYIztEeGnhceUMXltng">
+    <ruleId>CONF:10305</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_02LVwIjuEeKx3P4dlW9OSw" severity="INFO" base_Property="_zdpckIjuEeKx3P4dlW9OSw"/>
+  <CDA:CodeSystemConstraint xmi:id="_nx-6YIztEeGnhceUMXltng" code="2339-0" displayName="Glucose" base_Property="_kqTXwIztEeGnhceUMXltng">
+    <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF:10299</ruleId>
+  </CDA:CodeSystemConstraint>
+  <CDA:PropertyValidation xmi:id="_qvo-UIztEeGnhceUMXltng" base_Property="_kqTXwIztEeGnhceUMXltng">
+    <ruleId>CONF:10300</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_sTUXkIztEeGnhceUMXltng" base_Property="_kqT-0IztEeGnhceUMXltng">
+    <ruleId>CONF:10301</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_xi8qcIjuEeKx3P4dlW9OSw" severity="INFO" base_Property="_w0ELMIjuEeKx3P4dlW9OSw"/>
+  <CDA:CodeSystemConstraint xmi:id="_Z-RS4IztEeGnhceUMXltng" code="19911-7" displayName="Diffusion capacity.carbon monoxide" base_Property="_W79YcIztEeGnhceUMXltng">
+    <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF:10296</ruleId>
+  </CDA:CodeSystemConstraint>
+  <CDA:PropertyValidation xmi:id="_gvu_oIztEeGnhceUMXltng" base_Property="_W79YcIztEeGnhceUMXltng">
+    <ruleId>CONF:10297</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_e6Hh0IztEeGnhceUMXltng" base_Property="_W79_gIztEeGnhceUMXltng">
+    <ruleId>CONF:10298</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_vDY3wIjuEeKx3P4dlW9OSw" severity="INFO" base_Property="_tt8HwIjuEeKx3P4dlW9OSw"/>
+  <CDA:CodeSystemConstraint xmi:id="_NFUqgIztEeGnhceUMXltng" code="19889-5" displayName="Carbon dioxide/Gas.total.at end expiration" base_Property="_JrbWgIztEeGnhceUMXltng">
+    <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF:10293</ruleId>
+  </CDA:CodeSystemConstraint>
+  <CDA:PropertyValidation xmi:id="_Q3J9YIztEeGnhceUMXltng" base_Property="_JrbWgIztEeGnhceUMXltng">
+    <ruleId>CONF:10294</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_QN9PYIztEeGnhceUMXltng" base_Property="_JrbWgYztEeGnhceUMXltng">
+    <ruleId>CONF:10295</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_qZJ9QIjuEeKx3P4dlW9OSw" severity="INFO" base_Property="_ploOkIjuEeKx3P4dlW9OSw"/>
+  <CDA:CodeSystemConstraint xmi:id="_G-KmYIzqEeGnhceUMXltng" code="67519-9" displayName="Cardiac rhythm" base_Property="_3BUIIIzpEeGnhceUMXltng">
+    <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF:10274</ruleId>
+  </CDA:CodeSystemConstraint>
+  <CDA:PropertyValidation xmi:id="_qhxo0IzqEeGnhceUMXltng" base_Property="_3BUIIIzpEeGnhceUMXltng">
+    <ruleId>CONF:10275</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:ValueSetConstraint xmi:id="_O1jZYIzqEeGnhceUMXltng" base_Property="_3BUvMIzpEeGnhceUMXltng">
+    <reference href="emspcr-vocab.uml#_gXn9cHSKEeGa4IXs2ghZEw"/>
+    <ruleId>CONF:10276</ruleId>
+  </CDA:ValueSetConstraint>
+  <CDA:PropertyValidation xmi:id="_sFKHIIzqEeGnhceUMXltng" base_Property="_3BUvMIzpEeGnhceUMXltng">
+    <ruleId>CONF:10277</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_tv5xsIzqEeGnhceUMXltng" base_Property="_3BVWQIzpEeGnhceUMXltng">
+    <ruleId>CONF:10278</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:ValueSetConstraint xmi:id="_uJ7bQIzqEeGnhceUMXltng" base_Property="_3BVWQIzpEeGnhceUMXltng">
+    <reference href="emspcr-vocab.uml#_dd2T8HSKEeGa4IXs2ghZEw"/>
+    <ruleId>CONF:10279</ruleId>
+  </CDA:ValueSetConstraint>
+  <CDA:PropertyValidation xmi:id="_kACfEIjuEeKx3P4dlW9OSw" severity="INFO" base_Property="_Oq9X4IjuEeKx3P4dlW9OSw"/>
+  <CDA:AssociationValidation xmi:id="_R86bILMPEeKNbt70lHd2Eg" severity="INFO" base_Association="_LZyFULMPEeKNbt70lHd2Eg"/>
+  <CDA:AssociationValidation xmi:id="_cAQIULMPEeKNbt70lHd2Eg" severity="INFO" base_Association="_VJiIILMPEeKNbt70lHd2Eg"/>
+  <CDA:AssociationValidation xmi:id="_gp7CILMPEeKNbt70lHd2Eg" severity="INFO" base_Association="_eSAIgLMPEeKNbt70lHd2Eg"/>
+  <CDA:AssociationValidation xmi:id="_nwc_8LMPEeKNbt70lHd2Eg" severity="INFO" base_Association="_m6_-oLMPEeKNbt70lHd2Eg"/>
+  <CDA:AssociationValidation xmi:id="_zgEowLMPEeKNbt70lHd2Eg" severity="INFO" base_Association="_ypkekLMPEeKNbt70lHd2Eg"/>
+  <CDA:AssociationValidation xmi:id="__VNqwLMPEeKNbt70lHd2Eg" severity="INFO" base_Association="_6lOtkLMPEeKNbt70lHd2Eg"/>
+  <CDA:AssociationValidation xmi:id="_GWJW4LMQEeKNbt70lHd2Eg" severity="INFO" base_Association="_BrZfALMQEeKNbt70lHd2Eg"/>
+  <CDA:AssociationValidation xmi:id="_NtmsoLMQEeKNbt70lHd2Eg" severity="INFO" base_Association="_KVC1YLMQEeKNbt70lHd2Eg"/>
+  <CDA:PropertyValidation xmi:id="_QDbUgLMQEeKNbt70lHd2Eg" base_Property="_Q_e0cLMNEeKNbt70lHd2Eg"/>
+  <CDA:PropertyValidation xmi:id="_Tr3a0LMQEeKNbt70lHd2Eg" severity="INFO" base_Property="_Q_eNYLMNEeKNbt70lHd2Eg"/>
+  <CDA:CodeSystemConstraint xmi:id="_bSegAIzdEeGnhceUMXltng" code="67793-0" displayName="Has the patient had any significant medical conditions" base_Property="_Ybg58IzdEeGnhceUMXltng">
+    <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF:10067</ruleId>
+  </CDA:CodeSystemConstraint>
+  <CDA:PropertyValidation xmi:id="_LCNxcMcQEeGjDJAyT0XW9Q" base_Property="_YbhhAIzdEeGnhceUMXltng">
+    <ruleId>CONF:10068</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:CodeSystemConstraint xmi:id="_-NXVkIzdEeGnhceUMXltng" code="68487-8" displayName="EMS History of Condition" base_Property="_6eFAYIzdEeGnhceUMXltng">
+    <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF:10069</ruleId>
+  </CDA:CodeSystemConstraint>
+  <CDA:PropertyValidation xmi:id="_7Oc38IzeEeGnhceUMXltng" base_Property="_6eFAYIzdEeGnhceUMXltng">
+    <ruleId>CONF:10070</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:CodeSystemConstraint xmi:id="_t-TQgIzeEeGnhceUMXltng" base_Property="_6eFncIzdEeGnhceUMXltng">
+    <reference href="emspcr-vocab.uml#_t_IUYMcdEeGjDJAyT0XW9Q"/>
+    <ruleId>CONF:10071</ruleId>
+  </CDA:CodeSystemConstraint>
+  <CDA:PropertyValidation xmi:id="_6JQxgIzeEeGnhceUMXltng" base_Property="_6eFncIzdEeGnhceUMXltng">
+    <ruleId>CONF:10072</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:AssociationValidation xmi:id="_UXD80LMkEeKNbt70lHd2Eg" base_Association="_S7930LMkEeKNbt70lHd2Eg"/>
+  <CDA:AssociationValidation xmi:id="_Y-A50LMkEeKNbt70lHd2Eg" severity="INFO" base_Association="_Xt0dQLMkEeKNbt70lHd2Eg"/>
 </xmi:XMI>
