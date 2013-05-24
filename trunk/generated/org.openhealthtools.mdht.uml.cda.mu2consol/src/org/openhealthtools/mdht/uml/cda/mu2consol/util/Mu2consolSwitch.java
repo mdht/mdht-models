@@ -20,7 +20,6 @@ import org.openhealthtools.mdht.uml.cda.Observation;
 import org.openhealthtools.mdht.uml.cda.Organizer;
 import org.openhealthtools.mdht.uml.cda.Procedure;
 import org.openhealthtools.mdht.uml.cda.Section;
-import org.openhealthtools.mdht.uml.cda.consol.AssessmentSection;
 import org.openhealthtools.mdht.uml.cda.consol.ProceduresSectionEntriesOptional;
 import org.openhealthtools.mdht.uml.cda.consol.ResultsSectionEntriesOptional;
 import org.openhealthtools.mdht.uml.cda.consol.TobaccoUse;
@@ -209,16 +208,6 @@ public class Mu2consolSwitch<T> {
 				if (result == null) result = caseClinicalStatement(procedureActivityProcedure);
 				if (result == null) result = caseAct(procedureActivityProcedure);
 				if (result == null) result = caseInfrastructureRoot(procedureActivityProcedure);
-				if (result == null) result = defaultCase(theEObject);
-				return result;
-			}
-			case Mu2consolPackage.ASSESSMENT_SECTION: {
-				AssessmentSection assessmentSection = (AssessmentSection)theEObject;
-				T result = caseAssessmentSection(assessmentSection);
-				if (result == null) result = caseConsol_AssessmentSection(assessmentSection);
-				if (result == null) result = caseSection(assessmentSection);
-				if (result == null) result = caseAct(assessmentSection);
-				if (result == null) result = caseInfrastructureRoot(assessmentSection);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
@@ -741,35 +730,6 @@ public class Mu2consolSwitch<T> {
 	 * @generated
 	 */
 	public T caseSection(Section object) {
-		return null;
-	}
-
-	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Assessment Section</em>'.
-	 * <!-- begin-user-doc --> This implementation
-	 * returns null; returning a non-null result will terminate the switch. <!--
-	 * end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Assessment Section</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseAssessmentSection(AssessmentSection object) {
-		return null;
-	}
-
-	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Assessment Section</em>'.
-	 * <!-- begin-user-doc --> This implementation
-	 * returns null; returning a non-null result will terminate the switch. <!--
-	 * end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Assessment Section</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseConsol_AssessmentSection(
-			org.openhealthtools.mdht.uml.cda.consol.AssessmentSection object) {
 		return null;
 	}
 
