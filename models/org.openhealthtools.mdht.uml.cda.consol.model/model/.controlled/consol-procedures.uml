@@ -877,81 +877,73 @@ This clinical statement represents procedures whose immediate and primary outcom
       <ownedComment xmi:id="_TtegsN_jEeGiie5feaDcRA">
         <body>INLINE</body>
       </ownedComment>
-      <ownedRule xmi:id="_fu9akBxcEeGXP8PxDYviDg" name="assignedEntity" constrainedElement="_nbpGUBxEEeGIELeDlfT77A">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_kD6BkBxcEeGXP8PxDYviDg">
-          <language>Analysis</language>
-          <language>OCL</language>
-          <body>SHALL contain exactly one [1..1] assignedEntity</body>
-          <body>self.assignedEntity->size() = 1</body>
-        </specification>
-      </ownedRule>
-      <ownedRule xmi:id="_ofCJEBxcEeGXP8PxDYviDg" name="assignedEntityId" constrainedElement="_fu9akBxcEeGXP8PxDYviDg">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_qjD2UBxcEeGXP8PxDYviDg">
-          <language>Analysis</language>
-          <language>OCL</language>
-          <body>assignedEntity SHALL contain at least one [1..*] id</body>
-          <body>self.assignedEntity.id->size() >= 1</body>
-        </specification>
-      </ownedRule>
-      <ownedRule xmi:id="_IMfKkBxjEeGXP8PxDYviDg" name="assignedEntityAddr" constrainedElement="_ofCJEBxcEeGXP8PxDYviDg">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_LGmyUBxjEeGXP8PxDYviDg">
-          <language>Analysis</language>
-          <language>OCL</language>
-          <body>assignedEntity SHALL contain exactly one [1..1] addr</body>
-          <body>self.assignedEntity.addr->size() = 1</body>
-        </specification>
-      </ownedRule>
-      <ownedRule xmi:id="_NG_8wBxjEeGXP8PxDYviDg" name="assignedEntityTelecom" constrainedElement="_IMfKkBxjEeGXP8PxDYviDg">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_QxeDYBxjEeGXP8PxDYviDg">
-          <language>Analysis</language>
-          <language>OCL</language>
-          <body>assignedEntity SHALL contain exactly one [1..1] telecom</body>
-          <body>self.assignedEntity.telecom->size() = 1</body>
-        </specification>
-      </ownedRule>
-      <ownedRule xmi:id="_Ss84oBxjEeGXP8PxDYviDg" name="assignedEntityRepOrg" constrainedElement="_NG_8wBxjEeGXP8PxDYviDg">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_VRCmABxjEeGXP8PxDYviDg">
-          <language>Analysis</language>
-          <language>OCL</language>
-          <body>assignedEntity SHOULD contain zero or one [0..1] representedOrganization</body>
-          <body>self.assignedEntity.representedOrganization->size() = 1</body>
-        </specification>
-      </ownedRule>
-      <ownedRule xmi:id="_X3E0IBxjEeGXP8PxDYviDg" name="assignedEntityRepOrgId" constrainedElement="_Ss84oBxjEeGXP8PxDYviDg">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_zVWHIBxjEeGXP8PxDYviDg">
-          <language>Analysis</language>
-          <language>OCL</language>
-          <body>representedOrganization, if present, SHOULD contain zero or more [0..*] id</body>
-          <body>self.assignedEntity.representedOrganization.id->size() > 0</body>
-        </specification>
-      </ownedRule>
-      <ownedRule xmi:id="_bkN0QBxjEeGXP8PxDYviDg" name="assignedEntityRepOrgName" constrainedElement="_X3E0IBxjEeGXP8PxDYviDg">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_4NUisBxjEeGXP8PxDYviDg">
-          <language>Analysis</language>
-          <language>OCL</language>
-          <body>representedOrganization, if present, MAY contain zero or more [0..*] name</body>
-          <body>self.assignedEntity.representedOrganization.name->size() > 0</body>
-        </specification>
-      </ownedRule>
-      <ownedRule xmi:id="_cs-MEBxjEeGXP8PxDYviDg" name="assignedEntityRepOrgAddr" constrainedElement="_bkN0QBxjEeGXP8PxDYviDg">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_5BP6ABxjEeGXP8PxDYviDg">
-          <language>Analysis</language>
-          <language>OCL</language>
-          <body>representedOrganization, if present, SHALL contain exactly one [1..1] addr</body>
-          <body>self.assignedEntity.representedOrganization.addr->size() = 1</body>
-        </specification>
-      </ownedRule>
-      <ownedRule xmi:id="_eFMjQBxjEeGXP8PxDYviDg" name="assignedEntityRepOrgTelecom" constrainedElement="_cs-MEBxjEeGXP8PxDYviDg">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_585p8BxjEeGXP8PxDYviDg">
-          <language>Analysis</language>
-          <language>OCL</language>
-          <body>representedOrganization, if present, SHALL contain exactly one [1..1] telecom</body>
-          <body>self.assignedEntity.representedOrganization.telecom->size() = 1</body>
-        </specification>
-      </ownedRule>
       <generalization xmi:id="_nbptYBxEEeGIELeDlfT77A">
         <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_HP8qoEcaEd6besF9iFIJkQ"/>
       </generalization>
+      <ownedAttribute xmi:id="_-9nJIMMgEeKhp9meU6hZdQ" name="assignedEntity" visibility="private" type="_2dNY4MMhEeKhp9meU6hZdQ" aggregation="composite">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_-9nJIcMgEeKhp9meU6hZdQ" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_-9nJIsMgEeKhp9meU6hZdQ" value="1"/>
+        <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_toc7gUoYEd6c3qsAxlFHaQ"/>
+        <association href="../consol.uml#_-9nwMMMgEeKhp9meU6hZdQ"/>
+      </ownedAttribute>
+      <nestedClassifier xmi:type="uml:Class" xmi:id="_2dNY4MMhEeKhp9meU6hZdQ" name="ProcedureActivityAssignedEntity">
+        <generalization xmi:id="_2dNY4cMhEeKhp9meU6hZdQ">
+          <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_6qmVsEcDEd6besF9iFIJkQ"/>
+        </generalization>
+        <ownedAttribute xmi:id="_F6-HYMMiEeKhp9meU6hZdQ" name="id" visibility="private" aggregation="composite">
+          <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_culQ8DxaEd6JwqSGecoePg"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_F6-HYcMiEeKhp9meU6hZdQ" value="*"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_F6-HYsMiEeKhp9meU6hZdQ" value="1"/>
+          <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_9JenIEodEd6c3qsAxlFHaQ"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_F69gUMMiEeKhp9meU6hZdQ" name="addr" visibility="private" aggregation="composite">
+          <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_v0zRUD5yEd6cla2oXsPtlA"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_hvqO8MMlEeKhp9meU6hZdQ" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_hvq2AMMlEeKhp9meU6hZdQ" value="1"/>
+          <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_DBIXAEoeEd6c3qsAxlFHaQ"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_F6-HY8MiEeKhp9meU6hZdQ" name="telecom" visibility="private" aggregation="composite">
+          <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_22o_kD52Ed6cla2oXsPtlA"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_iqAXUMMlEeKhp9meU6hZdQ" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_iqA-YMMlEeKhp9meU6hZdQ" value="1"/>
+          <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_D01r4EoeEd6c3qsAxlFHaQ"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_F6-HZsMiEeKhp9meU6hZdQ" name="representedOrganization" visibility="private" type="_bbXJ4MMmEeKhp9meU6hZdQ" aggregation="composite">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_t3-roMMlEeKhp9meU6hZdQ" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_t3-rocMlEeKhp9meU6hZdQ"/>
+          <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_EsyYEUcfEd6besF9iFIJkQ"/>
+          <association href="../consol.uml#_F6-ucMMiEeKhp9meU6hZdQ"/>
+        </ownedAttribute>
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_bbXJ4MMmEeKhp9meU6hZdQ" name="ProcedureActivityRepresentedOrganization">
+          <generalization xmi:id="_bbXJ4cMmEeKhp9meU6hZdQ">
+            <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_zjKW8EcZEd6besF9iFIJkQ"/>
+          </generalization>
+          <ownedAttribute xmi:id="_ibioE8MmEeKhp9meU6hZdQ" name="id" visibility="private" aggregation="composite">
+            <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_culQ8DxaEd6JwqSGecoePg"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ibioFMMmEeKhp9meU6hZdQ" value="*"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ibioFcMmEeKhp9meU6hZdQ"/>
+            <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#__aP0AEraEd6FXKclYGEDCw"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_ibioFsMmEeKhp9meU6hZdQ" name="name" visibility="private" aggregation="composite">
+            <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_yQ9xwD5yEd6cla2oXsPtlA"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ibioF8MmEeKhp9meU6hZdQ" value="*"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ibioGMMmEeKhp9meU6hZdQ"/>
+            <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_BicPkErbEd6FXKclYGEDCw"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_ibioGcMmEeKhp9meU6hZdQ" name="telecom" visibility="private" aggregation="composite">
+            <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_22o_kD52Ed6cla2oXsPtlA"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_5cR_0MMmEeKhp9meU6hZdQ" value="1"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_5cSm4MMmEeKhp9meU6hZdQ" value="1"/>
+            <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_FEMfEErbEd6FXKclYGEDCw"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_ibioEMMmEeKhp9meU6hZdQ" name="addr" visibility="private" aggregation="composite">
+            <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_v0zRUD5yEd6cla2oXsPtlA"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_6IDgsMMmEeKhp9meU6hZdQ" value="1"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_6IEHwMMmEeKhp9meU6hZdQ" value="1"/>
+            <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_OC77sErbEd6FXKclYGEDCw"/>
+          </ownedAttribute>
+        </nestedClassifier>
+      </nestedClassifier>
     </nestedClassifier>
     <nestedClassifier xmi:type="uml:Class" xmi:id="_RWdd0OAWEeGlGcipF_0y2A" name="EntryRelationship">
       <ownedComment xmi:id="_ab-34OAWEeGlGcipF_0y2A">
@@ -2233,33 +2225,6 @@ This clinical statement represents procedures whose immediate and primary outcom
   <CDA:ConstraintValidation xmi:id="_uu7xbN_iEeGiie5feaDcRA" base_Constraint="_uu7xYd_iEeGiie5feaDcRA">
     <ruleId>CONF:7737</ruleId>
   </CDA:ConstraintValidation>
-  <CDA:ConstraintValidation xmi:id="_kQwKwBxcEeGXP8PxDYviDg" base_Constraint="_fu9akBxcEeGXP8PxDYviDg">
-    <ruleId>CONF:7720</ruleId>
-  </CDA:ConstraintValidation>
-  <CDA:ConstraintValidation xmi:id="_raw6YBxcEeGXP8PxDYviDg" base_Constraint="_ofCJEBxcEeGXP8PxDYviDg">
-    <ruleId>CONF:7722</ruleId>
-  </CDA:ConstraintValidation>
-  <CDA:ConstraintValidation xmi:id="_MRlXsBxjEeGXP8PxDYviDg" base_Constraint="_IMfKkBxjEeGXP8PxDYviDg">
-    <ruleId>CONF:7731</ruleId>
-  </CDA:ConstraintValidation>
-  <CDA:ConstraintValidation xmi:id="_PIIuEBxjEeGXP8PxDYviDg" base_Constraint="_NG_8wBxjEeGXP8PxDYviDg">
-    <ruleId>CONF:7732</ruleId>
-  </CDA:ConstraintValidation>
-  <CDA:ConstraintValidation xmi:id="_VfB-sBxjEeGXP8PxDYviDg" severity="WARNING" base_Constraint="_Ss84oBxjEeGXP8PxDYviDg">
-    <ruleId>CONF:7733</ruleId>
-  </CDA:ConstraintValidation>
-  <CDA:ConstraintValidation xmi:id="_7UPQUBxjEeGXP8PxDYviDg" severity="WARNING" base_Constraint="_X3E0IBxjEeGXP8PxDYviDg">
-    <ruleId>CONF:7734</ruleId>
-  </CDA:ConstraintValidation>
-  <CDA:ConstraintValidation xmi:id="_8d4Y8BxjEeGXP8PxDYviDg" severity="INFO" base_Constraint="_bkN0QBxjEeGXP8PxDYviDg">
-    <ruleId>CONF:7735</ruleId>
-  </CDA:ConstraintValidation>
-  <CDA:ConstraintValidation xmi:id="_9F5bMBxjEeGXP8PxDYviDg" base_Constraint="_cs-MEBxjEeGXP8PxDYviDg">
-    <ruleId>CONF:7736</ruleId>
-  </CDA:ConstraintValidation>
-  <CDA:ConstraintValidation xmi:id="_9ha5kBxjEeGXP8PxDYviDg" base_Constraint="_eFMjQBxjEeGXP8PxDYviDg">
-    <ruleId>CONF:7737</ruleId>
-  </CDA:ConstraintValidation>
   <CDA:PropertyValidation xmi:id="_to5DkOAUEeGlGcipF_0y2A" base_Property="_sMSisOAUEeGlGcipF_0y2A">
     <ruleId>CONF:8316</ruleId>
   </CDA:PropertyValidation>
@@ -2457,5 +2422,26 @@ This clinical statement represents procedures whose immediate and primary outcom
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_jRMYUKg4EeK7Iv2PyOPSaQ" base_Property="_B7ibM6g4EeK7Iv2PyOPSaQ">
     <ruleId>CONF:8260</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_bK8kwMMlEeKhp9meU6hZdQ" base_Property="_F6-HYMMiEeKhp9meU6hZdQ">
+    <ruleId>CONF:7722</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_gP2pEMMlEeKhp9meU6hZdQ" base_Property="_F69gUMMiEeKhp9meU6hZdQ">
+    <ruleId>CONF:7731</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_grElcMMlEeKhp9meU6hZdQ" base_Property="_F6-HY8MiEeKhp9meU6hZdQ">
+    <ruleId>CONF:7732</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_paA2EMMmEeKhp9meU6hZdQ" severity="WARNING" base_Property="_ibioE8MmEeKhp9meU6hZdQ">
+    <ruleId>CONF:7734</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_p5OhoMMmEeKhp9meU6hZdQ" severity="INFO" base_Property="_ibioFsMmEeKhp9meU6hZdQ">
+    <ruleId>CONF:7735</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_qbObcMMmEeKhp9meU6hZdQ" base_Property="_ibioGcMmEeKhp9meU6hZdQ">
+    <ruleId>CONF:7737</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_qxfmYMMmEeKhp9meU6hZdQ" base_Property="_ibioEMMmEeKhp9meU6hZdQ">
+    <ruleId>CONF:7736</ruleId>
   </CDA:PropertyValidation>
 </xmi:XMI>
