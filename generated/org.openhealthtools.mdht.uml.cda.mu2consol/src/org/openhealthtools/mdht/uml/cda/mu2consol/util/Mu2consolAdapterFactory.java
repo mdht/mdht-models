@@ -20,7 +20,6 @@ import org.openhealthtools.mdht.uml.cda.Observation;
 import org.openhealthtools.mdht.uml.cda.Organizer;
 import org.openhealthtools.mdht.uml.cda.Procedure;
 import org.openhealthtools.mdht.uml.cda.Section;
-import org.openhealthtools.mdht.uml.cda.consol.AssessmentSection;
 import org.openhealthtools.mdht.uml.cda.consol.ProceduresSectionEntriesOptional;
 import org.openhealthtools.mdht.uml.cda.consol.ResultsSectionEntriesOptional;
 import org.openhealthtools.mdht.uml.cda.consol.TobaccoUse;
@@ -133,10 +132,6 @@ public class Mu2consolAdapterFactory extends AdapterFactoryImpl {
 			@Override
 			public Adapter caseProcedureActivityProcedure(ProcedureActivityProcedure object) {
 				return createProcedureActivityProcedureAdapter();
-			}
-			@Override
-			public Adapter caseAssessmentSection(AssessmentSection object) {
-				return createAssessmentSectionAdapter();
 			}
 			@Override
 			public Adapter caseClinicalOfficeVisitSummary(ClinicalOfficeVisitSummary object) {
@@ -257,10 +252,6 @@ public class Mu2consolAdapterFactory extends AdapterFactoryImpl {
 			@Override
 			public Adapter caseConsol_ProcedureActivityProcedure(org.openhealthtools.mdht.uml.cda.consol.ProcedureActivityProcedure object) {
 				return createConsol_ProcedureActivityProcedureAdapter();
-			}
-			@Override
-			public Adapter caseConsol_AssessmentSection(org.openhealthtools.mdht.uml.cda.consol.AssessmentSection object) {
-				return createConsol_AssessmentSectionAdapter();
 			}
 			@Override
 			public Adapter caseConsol_MedicationsAdministeredSection(org.openhealthtools.mdht.uml.cda.consol.MedicationsAdministeredSection object) {
@@ -668,34 +659,6 @@ public class Mu2consolAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createSectionAdapter() {
-		return null;
-	}
-
-	/**
-	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.mu2consol.AssessmentSection <em>Assessment Section</em>}'.
-	 * <!-- begin-user-doc --> This default
-	 * implementation returns null so that we can easily ignore cases; it's
-	 * useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see org.openhealthtools.mdht.uml.cda.mu2consol.AssessmentSection
-	 * @generated
-	 */
-	public Adapter createAssessmentSectionAdapter() {
-		return null;
-	}
-
-	/**
-	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.consol.AssessmentSection <em>Assessment Section</em>}'.
-	 * <!-- begin-user-doc --> This default
-	 * implementation returns null so that we can easily ignore cases; it's
-	 * useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see org.openhealthtools.mdht.uml.cda.consol.AssessmentSection
-	 * @generated
-	 */
-	public Adapter createConsol_AssessmentSectionAdapter() {
 		return null;
 	}
 

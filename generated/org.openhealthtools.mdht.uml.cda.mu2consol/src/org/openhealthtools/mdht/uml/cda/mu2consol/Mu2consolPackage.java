@@ -587,16 +587,6 @@ public interface Mu2consolPackage extends EPackage {
 	int SUMMARY_OF_CARE_RECORD_FEATURE_COUNT = GENERAL_HEADER_CONSTRAINTS_FEATURE_COUNT + 0;
 
 	/**
-     * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.mu2consol.impl.AssessmentSectionImpl <em>Assessment Section</em>}' class.
-     * <!-- begin-user-doc --> <!--
-	 * end-user-doc -->
-     * @see org.openhealthtools.mdht.uml.cda.mu2consol.impl.AssessmentSectionImpl
-     * @see org.openhealthtools.mdht.uml.cda.mu2consol.impl.Mu2consolPackageImpl#getAssessmentSection()
-     * @generated
-     */
-	int ASSESSMENT_SECTION = 9;
-
-	/**
      * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.mu2consol.impl.SocialHistorySectionImpl <em>Social History Section</em>}' class.
      * <!-- begin-user-doc --> <!--
 	 * end-user-doc -->
@@ -2040,165 +2030,6 @@ public interface Mu2consolPackage extends EPackage {
 	int PROCEDURE_ACTIVITY_PROCEDURE_FEATURE_COUNT = ConsolPackage.PROCEDURE_ACTIVITY_PROCEDURE_FEATURE_COUNT + 0;
 
 	/**
-     * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
-     * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * @generated
-     * @ordered
-     */
-	int ASSESSMENT_SECTION__REALM_CODE = ConsolPackage.ASSESSMENT_SECTION__REALM_CODE;
-
-	/**
-     * The feature id for the '<em><b>Type Id</b></em>' containment reference.
-     * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * @generated
-     * @ordered
-     */
-	int ASSESSMENT_SECTION__TYPE_ID = ConsolPackage.ASSESSMENT_SECTION__TYPE_ID;
-
-	/**
-     * The feature id for the '<em><b>Template Id</b></em>' containment reference list.
-     * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * @generated
-     * @ordered
-     */
-	int ASSESSMENT_SECTION__TEMPLATE_ID = ConsolPackage.ASSESSMENT_SECTION__TEMPLATE_ID;
-
-	/**
-	 * The feature id for the '<em><b>Id</b></em>' containment reference. <!--
-	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
-	 * @generated
-	 * @ordered
-	 */
-	int ASSESSMENT_SECTION__ID = ConsolPackage.ASSESSMENT_SECTION__ID;
-
-	/**
-	 * The feature id for the '<em><b>Code</b></em>' containment reference. <!--
-	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
-	 * @generated
-	 * @ordered
-	 */
-	int ASSESSMENT_SECTION__CODE = ConsolPackage.ASSESSMENT_SECTION__CODE;
-
-	/**
-     * The feature id for the '<em><b>Title</b></em>' containment reference.
-     * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * @generated
-     * @ordered
-     */
-	int ASSESSMENT_SECTION__TITLE = ConsolPackage.ASSESSMENT_SECTION__TITLE;
-
-	/**
-	 * The feature id for the '<em><b>Text</b></em>' containment reference. <!--
-	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
-	 * @generated
-	 * @ordered
-	 */
-	int ASSESSMENT_SECTION__TEXT = ConsolPackage.ASSESSMENT_SECTION__TEXT;
-
-	/**
-     * The feature id for the '<em><b>Confidentiality Code</b></em>' containment reference.
-     * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * @generated
-     * @ordered
-     */
-	int ASSESSMENT_SECTION__CONFIDENTIALITY_CODE = ConsolPackage.ASSESSMENT_SECTION__CONFIDENTIALITY_CODE;
-
-	/**
-     * The feature id for the '<em><b>Language Code</b></em>' containment reference.
-     * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * @generated
-     * @ordered
-     */
-	int ASSESSMENT_SECTION__LANGUAGE_CODE = ConsolPackage.ASSESSMENT_SECTION__LANGUAGE_CODE;
-
-	/**
-     * The feature id for the '<em><b>Subject</b></em>' containment reference.
-     * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * @generated
-     * @ordered
-     */
-	int ASSESSMENT_SECTION__SUBJECT = ConsolPackage.ASSESSMENT_SECTION__SUBJECT;
-
-	/**
-     * The feature id for the '<em><b>Author</b></em>' containment reference list.
-     * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * @generated
-     * @ordered
-     */
-	int ASSESSMENT_SECTION__AUTHOR = ConsolPackage.ASSESSMENT_SECTION__AUTHOR;
-
-	/**
-     * The feature id for the '<em><b>Informant</b></em>' containment reference list.
-     * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * @generated
-     * @ordered
-     */
-	int ASSESSMENT_SECTION__INFORMANT = ConsolPackage.ASSESSMENT_SECTION__INFORMANT;
-
-	/**
-     * The feature id for the '<em><b>Entry</b></em>' containment reference list.
-     * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * @generated
-     * @ordered
-     */
-	int ASSESSMENT_SECTION__ENTRY = ConsolPackage.ASSESSMENT_SECTION__ENTRY;
-
-	/**
-     * The feature id for the '<em><b>Component</b></em>' containment reference list.
-     * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * @generated
-     * @ordered
-     */
-	int ASSESSMENT_SECTION__COMPONENT = ConsolPackage.ASSESSMENT_SECTION__COMPONENT;
-
-	/**
-	 * The feature id for the '<em><b>Section Id</b></em>' attribute. <!--
-	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
-	 * @generated
-	 * @ordered
-	 */
-	int ASSESSMENT_SECTION__SECTION_ID = ConsolPackage.ASSESSMENT_SECTION__SECTION_ID;
-
-	/**
-	 * The feature id for the '<em><b>Null Flavor</b></em>' attribute. <!--
-	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
-	 * @generated
-	 * @ordered
-	 */
-	int ASSESSMENT_SECTION__NULL_FLAVOR = ConsolPackage.ASSESSMENT_SECTION__NULL_FLAVOR;
-
-	/**
-	 * The feature id for the '<em><b>Class Code</b></em>' attribute. <!--
-	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
-	 * @generated
-	 * @ordered
-	 */
-	int ASSESSMENT_SECTION__CLASS_CODE = ConsolPackage.ASSESSMENT_SECTION__CLASS_CODE;
-
-	/**
-	 * The feature id for the '<em><b>Mood Code</b></em>' attribute. <!--
-	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
-	 * @generated
-	 * @ordered
-	 */
-	int ASSESSMENT_SECTION__MOOD_CODE = ConsolPackage.ASSESSMENT_SECTION__MOOD_CODE;
-
-	/**
-     * The number of structural features of the '<em>Assessment Section</em>' class.
-     * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * @generated
-     * @ordered
-     */
-	int ASSESSMENT_SECTION_FEATURE_COUNT = ConsolPackage.ASSESSMENT_SECTION_FEATURE_COUNT + 0;
-
-	/**
      * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.mu2consol.impl.ClinicalOfficeVisitSummaryImpl <em>Clinical Office Visit Summary</em>}' class.
      * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -2206,7 +2037,7 @@ public interface Mu2consolPackage extends EPackage {
      * @see org.openhealthtools.mdht.uml.cda.mu2consol.impl.Mu2consolPackageImpl#getClinicalOfficeVisitSummary()
      * @generated
      */
-	int CLINICAL_OFFICE_VISIT_SUMMARY = 10;
+	int CLINICAL_OFFICE_VISIT_SUMMARY = 9;
 
 	/**
      * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -2470,7 +2301,7 @@ public interface Mu2consolPackage extends EPackage {
      * @see org.openhealthtools.mdht.uml.cda.mu2consol.impl.Mu2consolPackageImpl#getMedicationsAdministeredSection()
      * @generated
      */
-    int MEDICATIONS_ADMINISTERED_SECTION = 11;
+    int MEDICATIONS_ADMINISTERED_SECTION = 10;
 
 	/**
      * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -2653,7 +2484,7 @@ public interface Mu2consolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.mu2consol.impl.Mu2consolPackageImpl#getTransitionOfCareAmbulatorySummary()
 	 * @generated
 	 */
-	int TRANSITION_OF_CARE_AMBULATORY_SUMMARY = 12;
+	int TRANSITION_OF_CARE_AMBULATORY_SUMMARY = 11;
 
 	/**
      * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -2920,7 +2751,7 @@ public interface Mu2consolPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.mu2consol.impl.Mu2consolPackageImpl#getTransitionOfCareInpatientSummary()
 	 * @generated
 	 */
-	int TRANSITION_OF_CARE_INPATIENT_SUMMARY = 13;
+	int TRANSITION_OF_CARE_INPATIENT_SUMMARY = 12;
 
 	/**
      * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -3184,7 +3015,7 @@ public interface Mu2consolPackage extends EPackage {
      * @see org.openhealthtools.mdht.uml.cda.mu2consol.impl.Mu2consolPackageImpl#getViewDownloadTransmitSummary()
      * @generated
      */
-	int VIEW_DOWNLOAD_TRANSMIT_SUMMARY = 14;
+	int VIEW_DOWNLOAD_TRANSMIT_SUMMARY = 13;
 
 	/**
      * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -3448,7 +3279,7 @@ public interface Mu2consolPackage extends EPackage {
      * @see org.openhealthtools.mdht.uml.cda.mu2consol.impl.Mu2consolPackageImpl#getVDTInpatientSummary()
      * @generated
      */
-	int VDT_INPATIENT_SUMMARY = 15;
+	int VDT_INPATIENT_SUMMARY = 14;
 
 	/**
      * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -3711,7 +3542,7 @@ public interface Mu2consolPackage extends EPackage {
      * @see org.openhealthtools.mdht.uml.cda.mu2consol.impl.Mu2consolPackageImpl#getVDTAmbulatorySummary()
      * @generated
      */
-	int VDT_AMBULATORY_SUMMARY = 16;
+	int VDT_AMBULATORY_SUMMARY = 15;
 
 	/**
      * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -3974,7 +3805,7 @@ public interface Mu2consolPackage extends EPackage {
      * @see org.openhealthtools.mdht.uml.cda.mu2consol.impl.Mu2consolPackageImpl#getFunctionalStatusSection()
      * @generated
      */
-    int FUNCTIONAL_STATUS_SECTION = 17;
+    int FUNCTIONAL_STATUS_SECTION = 16;
 
 	/**
      * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -4155,7 +3986,7 @@ public interface Mu2consolPackage extends EPackage {
      * @see org.openhealthtools.mdht.uml.cda.mu2consol.impl.Mu2consolPackageImpl#getCognitiveStatusResultObservation()
      * @generated
      */
-    int COGNITIVE_STATUS_RESULT_OBSERVATION = 18;
+    int COGNITIVE_STATUS_RESULT_OBSERVATION = 17;
 
 	/**
      * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -4444,7 +4275,7 @@ public interface Mu2consolPackage extends EPackage {
      * @see org.openhealthtools.mdht.uml.cda.mu2consol.impl.Mu2consolPackageImpl#getCognitiveStatusResultOrganizer()
      * @generated
      */
-    int COGNITIVE_STATUS_RESULT_ORGANIZER = 19;
+    int COGNITIVE_STATUS_RESULT_ORGANIZER = 18;
 
 	/**
      * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -4634,7 +4465,7 @@ public interface Mu2consolPackage extends EPackage {
      * @see org.openhealthtools.mdht.uml.cda.mu2consol.impl.Mu2consolPackageImpl#getFunctionalStatusResultObservation()
      * @generated
      */
-    int FUNCTIONAL_STATUS_RESULT_OBSERVATION = 20;
+    int FUNCTIONAL_STATUS_RESULT_OBSERVATION = 19;
 
 	/**
      * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -4923,7 +4754,7 @@ public interface Mu2consolPackage extends EPackage {
      * @see org.openhealthtools.mdht.uml.cda.mu2consol.impl.Mu2consolPackageImpl#getFunctionalStatusResultOrganizer()
      * @generated
      */
-    int FUNCTIONAL_STATUS_RESULT_ORGANIZER = 21;
+    int FUNCTIONAL_STATUS_RESULT_ORGANIZER = 20;
 
 	/**
      * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -5124,18 +4955,6 @@ public interface Mu2consolPackage extends EPackage {
      * @generated
      */
 	EClass getSummaryOfCareRecord();
-
-	/**
-	 * Returns the meta object for class '
-	 * {@link org.openhealthtools.mdht.uml.cda.mu2consol.AssessmentSection
-	 * <em>Assessment Section</em>}'. <!-- begin-user-doc --> <!-- end-user-doc
-	 * -->
-	 * 
-	 * @return the meta object for class '<em>Assessment Section</em>'.
-	 * @see org.openhealthtools.mdht.uml.cda.mu2consol.AssessmentSection
-	 * @generated
-	 */
-	EClass getAssessmentSection();
 
 	/**
      * Returns the meta object for class '{@link org.openhealthtools.mdht.uml.cda.mu2consol.SocialHistorySection <em>Social History Section</em>}'.
@@ -5373,16 +5192,6 @@ public interface Mu2consolPackage extends EPackage {
          * @generated
          */
 		EClass SUMMARY_OF_CARE_RECORD = eINSTANCE.getSummaryOfCareRecord();
-
-		/**
-         * The meta object literal for the '{@link org.openhealthtools.mdht.uml.cda.mu2consol.impl.AssessmentSectionImpl <em>Assessment Section</em>}' class.
-         * <!-- begin-user-doc --> <!--
-		 * end-user-doc -->
-         * @see org.openhealthtools.mdht.uml.cda.mu2consol.impl.AssessmentSectionImpl
-         * @see org.openhealthtools.mdht.uml.cda.mu2consol.impl.Mu2consolPackageImpl#getAssessmentSection()
-         * @generated
-         */
-		EClass ASSESSMENT_SECTION = eINSTANCE.getAssessmentSection();
 
 		/**
          * The meta object literal for the '{@link org.openhealthtools.mdht.uml.cda.mu2consol.impl.SocialHistorySectionImpl <em>Social History Section</em>}' class.

@@ -72,6 +72,15 @@ public class TransitionOfCareAmbulatorySummaryImpl extends
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateTransitionOfCareAmbulatorySummaryEncounterDiagnoses(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return TransitionOfCareAmbulatorySummaryOperations.validateTransitionOfCareAmbulatorySummaryEncounterDiagnoses(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public boolean validateTransitionOfCareAmbulatorySummaryMedicationsSection(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return TransitionOfCareAmbulatorySummaryOperations.validateTransitionOfCareAmbulatorySummaryMedicationsSection(this, diagnostics, context);
 	}
