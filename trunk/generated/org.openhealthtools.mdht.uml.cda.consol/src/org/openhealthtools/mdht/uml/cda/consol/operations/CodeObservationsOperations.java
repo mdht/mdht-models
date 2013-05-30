@@ -56,45 +56,44 @@ import org.openhealthtools.mdht.uml.cda.operations.ClinicalStatementOperations;
  */
 public class CodeObservationsOperations extends ClinicalStatementOperations {
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	protected CodeObservationsOperations() {
 		super();
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateCodeObservationsTemplateId(CodeObservations, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Code Observations Template Id</em>}' operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL expression body for the '{@link #validateCodeObservationsTemplateId(CodeObservations, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Code Observations Template Id</em>}' operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateCodeObservationsTemplateId(CodeObservations, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validateCodeObservationsTemplateId(CodeObservations, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 	protected static final String VALIDATE_CODE_OBSERVATIONS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.6.2.13')";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validateCodeObservationsTemplateId(CodeObservations, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Code Observations Template Id</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL invariant for the '{@link #validateCodeObservationsTemplateId(CodeObservations, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Code Observations Template Id</em>}' invariant operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateCodeObservationsTemplateId(CodeObservations, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validateCodeObservationsTemplateId(CodeObservations, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 	protected static Constraint VALIDATE_CODE_OBSERVATIONS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.6.2.13')
-	 * @param codeObservations The receiving '<em><b>Code Observations</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
+	* <!-- begin-model-doc -->
+	* @param codeObservations The receiving '<em><b>Code Observations</b></em>' model object.
+	* @param diagnostics The chain of diagnostics to which problems are to be appended.
+	* @param context The cache of context-specific information.
+	* <!-- end-model-doc -->
+	* @generated
+	*/
 	public static boolean validateCodeObservationsTemplateId(CodeObservations codeObservations,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -122,37 +121,36 @@ public class CodeObservationsOperations extends ClinicalStatementOperations {
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateCodeObservationsClassCode(CodeObservations, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Code Observations Class Code</em>}' operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL expression body for the '{@link #validateCodeObservationsClassCode(CodeObservations, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Code Observations Class Code</em>}' operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateCodeObservationsClassCode(CodeObservations, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validateCodeObservationsClassCode(CodeObservations, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 	protected static final String VALIDATE_CODE_OBSERVATIONS_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.classCode=vocab::ActClassObservation::OBS";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validateCodeObservationsClassCode(CodeObservations, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Code Observations Class Code</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL invariant for the '{@link #validateCodeObservationsClassCode(CodeObservations, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Code Observations Class Code</em>}' invariant operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateCodeObservationsClassCode(CodeObservations, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validateCodeObservationsClassCode(CodeObservations, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 
 	protected static Constraint VALIDATE_CODE_OBSERVATIONS_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.classCode=vocab::ActClassObservation::OBS
-	 * @param codeObservations The receiving '<em><b>Code Observations</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
+	* <!-- begin-model-doc -->
+	* @param codeObservations The receiving '<em><b>Code Observations</b></em>' model object.
+	* @param diagnostics The chain of diagnostics to which problems are to be appended.
+	* @param context The cache of context-specific information.
+	* <!-- end-model-doc -->
+	* @generated
+	*/
 
 	public static boolean validateCodeObservationsClassCode(CodeObservations codeObservations,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
@@ -181,37 +179,36 @@ public class CodeObservationsOperations extends ClinicalStatementOperations {
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateCodeObservationsMoodCode(CodeObservations, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Code Observations Mood Code</em>}' operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL expression body for the '{@link #validateCodeObservationsMoodCode(CodeObservations, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Code Observations Mood Code</em>}' operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateCodeObservationsMoodCode(CodeObservations, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validateCodeObservationsMoodCode(CodeObservations, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 	protected static final String VALIDATE_CODE_OBSERVATIONS_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.moodCode=vocab::x_ActMoodDocumentObservation::EVN";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validateCodeObservationsMoodCode(CodeObservations, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Code Observations Mood Code</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL invariant for the '{@link #validateCodeObservationsMoodCode(CodeObservations, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Code Observations Mood Code</em>}' invariant operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateCodeObservationsMoodCode(CodeObservations, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validateCodeObservationsMoodCode(CodeObservations, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 
 	protected static Constraint VALIDATE_CODE_OBSERVATIONS_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.moodCode=vocab::x_ActMoodDocumentObservation::EVN
-	 * @param codeObservations The receiving '<em><b>Code Observations</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
+	* <!-- begin-model-doc -->
+	* @param codeObservations The receiving '<em><b>Code Observations</b></em>' model object.
+	* @param diagnostics The chain of diagnostics to which problems are to be appended.
+	* @param context The cache of context-specific information.
+	* <!-- end-model-doc -->
+	* @generated
+	*/
 
 	public static boolean validateCodeObservationsMoodCode(CodeObservations codeObservations,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
@@ -240,37 +237,36 @@ public class CodeObservationsOperations extends ClinicalStatementOperations {
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateCodeObservationsCode(CodeObservations, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Code Observations Code</em>}' operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL expression body for the '{@link #validateCodeObservationsCode(CodeObservations, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Code Observations Code</em>}' operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateCodeObservationsCode(CodeObservations, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validateCodeObservationsCode(CodeObservations, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 	protected static final String VALIDATE_CODE_OBSERVATIONS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined())";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validateCodeObservationsCode(CodeObservations, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Code Observations Code</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL invariant for the '{@link #validateCodeObservationsCode(CodeObservations, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Code Observations Code</em>}' invariant operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateCodeObservationsCode(CodeObservations, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validateCodeObservationsCode(CodeObservations, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 
 	protected static Constraint VALIDATE_CODE_OBSERVATIONS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * (self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined())
-	 * @param codeObservations The receiving '<em><b>Code Observations</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
+	* <!-- begin-model-doc -->
+	* @param codeObservations The receiving '<em><b>Code Observations</b></em>' model object.
+	* @param diagnostics The chain of diagnostics to which problems are to be appended.
+	* @param context The cache of context-specific information.
+	* <!-- end-model-doc -->
+	* @generated
+	*/
 
 	public static boolean validateCodeObservationsCode(CodeObservations codeObservations, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
@@ -299,37 +295,36 @@ public class CodeObservationsOperations extends ClinicalStatementOperations {
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateCodeObservationsEffectiveTime(CodeObservations, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Code Observations Effective Time</em>}' operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL expression body for the '{@link #validateCodeObservationsEffectiveTime(CodeObservations, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Code Observations Effective Time</em>}' operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateCodeObservationsEffectiveTime(CodeObservations, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validateCodeObservationsEffectiveTime(CodeObservations, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 	protected static final String VALIDATE_CODE_OBSERVATIONS_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.effectiveTime.oclIsUndefined() or self.effectiveTime.isNullFlavorUndefined()) implies (not self.effectiveTime.oclIsUndefined())";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validateCodeObservationsEffectiveTime(CodeObservations, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Code Observations Effective Time</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL invariant for the '{@link #validateCodeObservationsEffectiveTime(CodeObservations, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Code Observations Effective Time</em>}' invariant operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateCodeObservationsEffectiveTime(CodeObservations, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validateCodeObservationsEffectiveTime(CodeObservations, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 
 	protected static Constraint VALIDATE_CODE_OBSERVATIONS_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * (self.effectiveTime.oclIsUndefined() or self.effectiveTime.isNullFlavorUndefined()) implies (not self.effectiveTime.oclIsUndefined())
-	 * @param codeObservations The receiving '<em><b>Code Observations</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
+	* <!-- begin-model-doc -->
+	* @param codeObservations The receiving '<em><b>Code Observations</b></em>' model object.
+	* @param diagnostics The chain of diagnostics to which problems are to be appended.
+	* @param context The cache of context-specific information.
+	* <!-- end-model-doc -->
+	* @generated
+	*/
 
 	public static boolean validateCodeObservationsEffectiveTime(CodeObservations codeObservations,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
@@ -358,37 +353,36 @@ public class CodeObservationsOperations extends ClinicalStatementOperations {
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateCodeObservationsValue(CodeObservations, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Code Observations Value</em>}' operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL expression body for the '{@link #validateCodeObservationsValue(CodeObservations, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Code Observations Value</em>}' operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateCodeObservationsValue(CodeObservations, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validateCodeObservationsValue(CodeObservations, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 	protected static final String VALIDATE_CODE_OBSERVATIONS_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1)";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validateCodeObservationsValue(CodeObservations, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Code Observations Value</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL invariant for the '{@link #validateCodeObservationsValue(CodeObservations, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Code Observations Value</em>}' invariant operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateCodeObservationsValue(CodeObservations, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validateCodeObservationsValue(CodeObservations, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 
 	protected static Constraint VALIDATE_CODE_OBSERVATIONS_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * (self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1)
-	 * @param codeObservations The receiving '<em><b>Code Observations</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
+	* <!-- begin-model-doc -->
+	* @param codeObservations The receiving '<em><b>Code Observations</b></em>' model object.
+	* @param diagnostics The chain of diagnostics to which problems are to be appended.
+	* @param context The cache of context-specific information.
+	* <!-- end-model-doc -->
+	* @generated
+	*/
 
 	public static boolean validateCodeObservationsValue(CodeObservations codeObservations, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
@@ -417,37 +411,36 @@ public class CodeObservationsOperations extends ClinicalStatementOperations {
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateCodeObservationsSOPInstanceObservation(CodeObservations, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Code Observations SOP Instance Observation</em>}' operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL expression body for the '{@link #validateCodeObservationsSOPInstanceObservation(CodeObservations, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Code Observations SOP Instance Observation</em>}' operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateCodeObservationsSOPInstanceObservation(CodeObservations, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validateCodeObservationsSOPInstanceObservation(CodeObservations, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 	protected static final String VALIDATE_CODE_OBSERVATIONS_SOP_INSTANCE_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->exists(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(consol::SOPInstanceObservation) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::SPRT)";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validateCodeObservationsSOPInstanceObservation(CodeObservations, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Code Observations SOP Instance Observation</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL invariant for the '{@link #validateCodeObservationsSOPInstanceObservation(CodeObservations, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Code Observations SOP Instance Observation</em>}' invariant operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateCodeObservationsSOPInstanceObservation(CodeObservations, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validateCodeObservationsSOPInstanceObservation(CodeObservations, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 
 	protected static Constraint VALIDATE_CODE_OBSERVATIONS_SOP_INSTANCE_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.entryRelationship->exists(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(consol::SOPInstanceObservation) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::SPRT)
-	 * @param codeObservations The receiving '<em><b>Code Observations</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
+	* <!-- begin-model-doc -->
+	* @param codeObservations The receiving '<em><b>Code Observations</b></em>' model object.
+	* @param diagnostics The chain of diagnostics to which problems are to be appended.
+	* @param context The cache of context-specific information.
+	* <!-- end-model-doc -->
+	* @generated
+	*/
 
 	public static boolean validateCodeObservationsSOPInstanceObservation(CodeObservations codeObservations,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
@@ -477,37 +470,36 @@ public class CodeObservationsOperations extends ClinicalStatementOperations {
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateCodeObservationsQuantityMeasurementObservation(CodeObservations, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Code Observations Quantity Measurement Observation</em>}' operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL expression body for the '{@link #validateCodeObservationsQuantityMeasurementObservation(CodeObservations, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Code Observations Quantity Measurement Observation</em>}' operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateCodeObservationsQuantityMeasurementObservation(CodeObservations, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validateCodeObservationsQuantityMeasurementObservation(CodeObservations, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 	protected static final String VALIDATE_CODE_OBSERVATIONS_QUANTITY_MEASUREMENT_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->exists(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(consol::QuantityMeasurementObservation) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::SPRT)";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validateCodeObservationsQuantityMeasurementObservation(CodeObservations, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Code Observations Quantity Measurement Observation</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL invariant for the '{@link #validateCodeObservationsQuantityMeasurementObservation(CodeObservations, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Code Observations Quantity Measurement Observation</em>}' invariant operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateCodeObservationsQuantityMeasurementObservation(CodeObservations, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validateCodeObservationsQuantityMeasurementObservation(CodeObservations, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 
 	protected static Constraint VALIDATE_CODE_OBSERVATIONS_QUANTITY_MEASUREMENT_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.entryRelationship->exists(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(consol::QuantityMeasurementObservation) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::SPRT)
-	 * @param codeObservations The receiving '<em><b>Code Observations</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
+	* <!-- begin-model-doc -->
+	* @param codeObservations The receiving '<em><b>Code Observations</b></em>' model object.
+	* @param diagnostics The chain of diagnostics to which problems are to be appended.
+	* @param context The cache of context-specific information.
+	* <!-- end-model-doc -->
+	* @generated
+	*/
 
 	public static boolean validateCodeObservationsQuantityMeasurementObservation(CodeObservations codeObservations,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
@@ -538,34 +530,30 @@ public class CodeObservationsOperations extends ClinicalStatementOperations {
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #getSOPInstanceObservations(CodeObservations) <em>Get SOP Instance Observations</em>}' operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL expression body for the '{@link #getSOPInstanceObservations(CodeObservations) <em>Get SOP Instance Observations</em>}' operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getSOPInstanceObservations(CodeObservations)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #getSOPInstanceObservations(CodeObservations)
+	* @generated
+	* @ordered
+	*/
 	protected static final String GET_SOP_INSTANCE_OBSERVATIONS__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::SOPInstanceObservation)).oclAsType(consol::SOPInstanceObservation)";
 
 	/**
-	 * The cached OCL query for the '{@link #getSOPInstanceObservations(CodeObservations) <em>Get SOP Instance Observations</em>}' query operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL query for the '{@link #getSOPInstanceObservations(CodeObservations) <em>Get SOP Instance Observations</em>}' query operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getSOPInstanceObservations(CodeObservations)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #getSOPInstanceObservations(CodeObservations)
+	* @generated
+	* @ordered
+	*/
 	protected static OCLExpression<EClassifier> GET_SOP_INSTANCE_OBSERVATIONS__EOCL_QRY;
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::SOPInstanceObservation)).oclAsType(consol::SOPInstanceObservation)
-	 * @param codeObservations The receiving '<em><b>Code Observations</b></em>' model object.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 
 	public static EList<SOPInstanceObservation> getSOPInstanceObservations(CodeObservations codeObservations) {
 		if (GET_SOP_INSTANCE_OBSERVATIONS__EOCL_QRY == null) {
@@ -586,34 +574,30 @@ public class CodeObservationsOperations extends ClinicalStatementOperations {
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #getQuantityMeasurementObservations(CodeObservations) <em>Get Quantity Measurement Observations</em>}' operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL expression body for the '{@link #getQuantityMeasurementObservations(CodeObservations) <em>Get Quantity Measurement Observations</em>}' operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getQuantityMeasurementObservations(CodeObservations)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #getQuantityMeasurementObservations(CodeObservations)
+	* @generated
+	* @ordered
+	*/
 	protected static final String GET_QUANTITY_MEASUREMENT_OBSERVATIONS__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::QuantityMeasurementObservation)).oclAsType(consol::QuantityMeasurementObservation)";
 
 	/**
-	 * The cached OCL query for the '{@link #getQuantityMeasurementObservations(CodeObservations) <em>Get Quantity Measurement Observations</em>}' query operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL query for the '{@link #getQuantityMeasurementObservations(CodeObservations) <em>Get Quantity Measurement Observations</em>}' query operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getQuantityMeasurementObservations(CodeObservations)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #getQuantityMeasurementObservations(CodeObservations)
+	* @generated
+	* @ordered
+	*/
 	protected static OCLExpression<EClassifier> GET_QUANTITY_MEASUREMENT_OBSERVATIONS__EOCL_QRY;
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::QuantityMeasurementObservation)).oclAsType(consol::QuantityMeasurementObservation)
-	 * @param codeObservations The receiving '<em><b>Code Observations</b></em>' model object.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 
 	public static EList<QuantityMeasurementObservation> getQuantityMeasurementObservations(
 			CodeObservations codeObservations) {
