@@ -5223,7 +5223,7 @@ OIDs SHALL be no more than 64 characters in length..</body>
   <CDA:PropertyValidation xmi:id="_3uffEPIyEeGu1M-cCXg0Dg" severity="WARNING" base_Property="_2PTkQPIyEeGu1M-cCXg0Dg">
     <ruleId>CONF:8000</ruleId>
   </CDA:PropertyValidation>
-  <CDA:CodeSystemConstraint xmi:id="_XoaokPI0EeGu1M-cCXg0Dg" base_Property="_Zphq8OxxEeG7k4bbVdXbXw">
+  <CDA:CodeSystemConstraint xmi:id="_XoaokPI0EeGu1M-cCXg0Dg" base_Property="_Zphq8OxxEeG7k4bbVdXbXw" severity="WARNING">
     <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_7Du1gHHeEeGeeZysMrDRUg"/>
     <ruleId>CONF:14843</ruleId>
   </CDA:CodeSystemConstraint>
