@@ -180,7 +180,7 @@ public class NumberOfPressureUlcersObservationImpl extends ObservationImpl imple
 
 	/**
 	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	* <!-- end-user-doc -->
 	* @generated
 	*/
 	public boolean validateNumberOfPressureUlcersObservationEntryRelationshipObservationClassCode(
@@ -190,10 +190,10 @@ public class NumberOfPressureUlcersObservationImpl extends ObservationImpl imple
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateNumberOfPressureUlcersObservationEntryRelationshipObservationMoodCode(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return NumberOfPressureUlcersObservationOperations.validateNumberOfPressureUlcersObservationEntryRelationshipObservationMoodCode(
@@ -201,10 +201,10 @@ public class NumberOfPressureUlcersObservationImpl extends ObservationImpl imple
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateNumberOfPressureUlcersObservationEntryRelationshipObservationValue(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return NumberOfPressureUlcersObservationOperations.validateNumberOfPressureUlcersObservationEntryRelationshipObservationValue(
@@ -212,10 +212,10 @@ public class NumberOfPressureUlcersObservationImpl extends ObservationImpl imple
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateNumberOfPressureUlcersObservationEntryRelationshipObservationValueP(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return NumberOfPressureUlcersObservationOperations.validateNumberOfPressureUlcersObservationEntryRelationshipObservationValueP(
@@ -223,10 +223,10 @@ public class NumberOfPressureUlcersObservationImpl extends ObservationImpl imple
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateNumberOfPressureUlcersObservationEntryRelationshipTypeCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return NumberOfPressureUlcersObservationOperations.validateNumberOfPressureUlcersObservationEntryRelationshipTypeCode(
@@ -234,10 +234,10 @@ public class NumberOfPressureUlcersObservationImpl extends ObservationImpl imple
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateNumberOfPressureUlcersObservationEntryRelationshipObservation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return NumberOfPressureUlcersObservationOperations.validateNumberOfPressureUlcersObservationEntryRelationshipObservation(
@@ -245,10 +245,10 @@ public class NumberOfPressureUlcersObservationImpl extends ObservationImpl imple
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public NumberOfPressureUlcersObservation init() {
 		return Initializer.Util.init(this);
 	}

@@ -79,6 +79,7 @@ public class PregnancyObservationOperations extends ClinicalStatementOperations 
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_PREGNANCY_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -91,6 +92,7 @@ public class PregnancyObservationOperations extends ClinicalStatementOperations 
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validatePregnancyObservationTemplateId(PregnancyObservation pregnancyObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -136,6 +138,7 @@ public class PregnancyObservationOperations extends ClinicalStatementOperations 
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_PREGNANCY_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -148,6 +151,7 @@ public class PregnancyObservationOperations extends ClinicalStatementOperations 
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validatePregnancyObservationClassCode(PregnancyObservation pregnancyObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -193,6 +197,7 @@ public class PregnancyObservationOperations extends ClinicalStatementOperations 
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_PREGNANCY_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -205,6 +210,7 @@ public class PregnancyObservationOperations extends ClinicalStatementOperations 
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validatePregnancyObservationMoodCode(PregnancyObservation pregnancyObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -233,53 +239,9 @@ public class PregnancyObservationOperations extends ClinicalStatementOperations 
 	}
 
 	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param pregnancyObservation The receiving '<em><b>Pregnancy Observation</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
-	public static boolean validatePregnancyObservationCode(PregnancyObservation pregnancyObservation,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
-		Object passToken = (context == null)
-				? null
-				: context.get("org.openhealthtools.mdht.uml.cda.consol.PregnancyObservationCodeP");
-		if ((passToken instanceof Collection<?>) && ((Collection<?>) passToken).contains(pregnancyObservation)) {
-			// I have a free pass to short-circuit
-			return true;
-		}
-
-		if (VALIDATE_PREGNANCY_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(ConsolPackage.Literals.PREGNANCY_OBSERVATION);
-			try {
-				VALIDATE_PREGNANCY_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PREGNANCY_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PREGNANCY_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			pregnancyObservation)) {
-			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.PREGNANCY_OBSERVATION__PREGNANCY_OBSERVATION_CODE,
-					ConsolPlugin.INSTANCE.getString("PregnancyObservationCode"), new Object[] { pregnancyObservation }));
-			}
-
-			return false;
-		}
-		return true;
-	}
-
-	/**
 	* The cached OCL expression body for the '{@link #validatePregnancyObservationCodeP(PregnancyObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Pregnancy Observation Code P</em>}' operation.
 	* <!-- begin-user-doc -->
-	* <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	* @see #validatePregnancyObservationCodeP(PregnancyObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	* @generated
 	* @ordered
@@ -296,28 +258,6 @@ public class PregnancyObservationOperations extends ClinicalStatementOperations 
 	*/
 
 	protected static Constraint VALIDATE_PREGNANCY_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-
-	/**
-	* The cached OCL expression body for the '{@link #validatePregnancyObservationCode(PregnancyObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Pregnancy Observation Code</em>}' operation.
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @see #validatePregnancyObservationCode(PregnancyObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
-	protected static final String VALIDATE_PREGNANCY_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "
-			+ "let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "
-			+ "value.code = 'ASSERTION' and value.codeSystem = '2.16.840.1.113883.5.4')";
-
-	/**
-	* The cached OCL invariant for the '{@link #validatePregnancyObservationCode(PregnancyObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Pregnancy Observation Code</em>}' invariant operation.
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @see #validatePregnancyObservationCode(PregnancyObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
-	protected static Constraint VALIDATE_PREGNANCY_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
 	* <!-- begin-user-doc -->
@@ -369,6 +309,74 @@ public class PregnancyObservationOperations extends ClinicalStatementOperations 
 	}
 
 	/**
+	* The cached OCL expression body for the '{@link #validatePregnancyObservationCode(PregnancyObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Pregnancy Observation Code</em>}' operation.
+	* <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	* @see #validatePregnancyObservationCode(PregnancyObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
+	protected static final String VALIDATE_PREGNANCY_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "
+			+ "let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "
+			+ "value.code = 'ASSERTION' and value.codeSystem = '2.16.840.1.113883.5.4')";
+
+	/**
+	* The cached OCL invariant for the '{@link #validatePregnancyObservationCode(PregnancyObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Pregnancy Observation Code</em>}' invariant operation.
+	* <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	* @see #validatePregnancyObservationCode(PregnancyObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
+
+	protected static Constraint VALIDATE_PREGNANCY_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
+	/**
+	* <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	* <!-- begin-model-doc -->
+	* @param pregnancyObservation The receiving '<em><b>Pregnancy Observation</b></em>' model object.
+	* @param diagnostics The chain of diagnostics to which problems are to be appended.
+	* @param context The cache of context-specific information.
+	* <!-- end-model-doc -->
+	* @generated
+	*/
+
+	public static boolean validatePregnancyObservationCode(PregnancyObservation pregnancyObservation,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		Object passToken = (context == null)
+				? null
+				: context.get("org.openhealthtools.mdht.uml.cda.consol.PregnancyObservationCodeP");
+		if ((passToken instanceof Collection<?>) && ((Collection<?>) passToken).contains(pregnancyObservation)) {
+			// I have a free pass to short-circuit
+			return true;
+		}
+
+		if (VALIDATE_PREGNANCY_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setContext(ConsolPackage.Literals.PREGNANCY_OBSERVATION);
+			try {
+				VALIDATE_PREGNANCY_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PREGNANCY_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+			} catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		if (!EOCL_ENV.createQuery(VALIDATE_PREGNANCY_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			pregnancyObservation)) {
+			if (diagnostics != null) {
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.PREGNANCY_OBSERVATION__PREGNANCY_OBSERVATION_CODE,
+					ConsolPlugin.INSTANCE.getString("PregnancyObservationCode"), new Object[] { pregnancyObservation }));
+			}
+
+			return false;
+		}
+		return true;
+	}
+
+	/**
 	* The cached OCL expression body for the '{@link #validatePregnancyObservationStatusCode(PregnancyObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Pregnancy Observation Status Code</em>}' operation.
 	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -387,6 +395,7 @@ public class PregnancyObservationOperations extends ClinicalStatementOperations 
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_PREGNANCY_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -399,6 +408,7 @@ public class PregnancyObservationOperations extends ClinicalStatementOperations 
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validatePregnancyObservationStatusCode(PregnancyObservation pregnancyObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -446,6 +456,7 @@ public class PregnancyObservationOperations extends ClinicalStatementOperations 
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_PREGNANCY_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -458,6 +469,7 @@ public class PregnancyObservationOperations extends ClinicalStatementOperations 
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validatePregnancyObservationValue(PregnancyObservation pregnancyObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -502,6 +514,7 @@ public class PregnancyObservationOperations extends ClinicalStatementOperations 
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_PREGNANCY_OBSERVATION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -514,6 +527,7 @@ public class PregnancyObservationOperations extends ClinicalStatementOperations 
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validatePregnancyObservationEffectiveTime(PregnancyObservation pregnancyObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -626,6 +640,7 @@ public class PregnancyObservationOperations extends ClinicalStatementOperations 
 	 * <!-- end-user-doc -->
 	* @generated
 	*/
+
 	public static EstimatedDateOfDelivery getEstimatedDateOfDelivery(PregnancyObservation pregnancyObservation) {
 		if (GET_ESTIMATED_DATE_OF_DELIVERY__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();

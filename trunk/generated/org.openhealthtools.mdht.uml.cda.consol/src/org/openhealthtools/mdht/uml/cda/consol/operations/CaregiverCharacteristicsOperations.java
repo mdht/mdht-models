@@ -657,7 +657,7 @@ public class CaregiverCharacteristicsOperations extends ClinicalStatementOperati
 	/**
 	* The cached OCL expression body for the '{@link #validateCaregiverCharacteristicsParticipantParticipantRoleClassCode(CaregiverCharacteristics, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Caregiver Characteristics Participant Participant Role Class Code</em>}' operation.
 	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	* <!-- end-user-doc -->
 	* @see #validateCaregiverCharacteristicsParticipantParticipantRoleClassCode(CaregiverCharacteristics, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	* @generated
 	* @ordered
@@ -665,26 +665,26 @@ public class CaregiverCharacteristicsOperations extends ClinicalStatementOperati
 	protected static final String VALIDATE_CAREGIVER_CHARACTERISTICS_PARTICIPANT_PARTICIPANT_ROLE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.participant->excluding(null).participantRole->excluding(null)->reject(isDefined('classCode'))";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateCaregiverCharacteristicsParticipantParticipantRoleClassCode(CaregiverCharacteristics, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Caregiver Characteristics Participant Participant Role Class Code</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateCaregiverCharacteristicsParticipantParticipantRoleClassCode(CaregiverCharacteristics, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Caregiver Characteristics Participant Participant Role Class Code</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateCaregiverCharacteristicsParticipantParticipantRoleClassCode(CaregiverCharacteristics, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateCaregiverCharacteristicsParticipantParticipantRoleClassCode(CaregiverCharacteristics, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 
 	protected static Query<?, ?, ?> VALIDATE_CAREGIVER_CHARACTERISTICS_PARTICIPANT_PARTICIPANT_ROLE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param caregiverCharacteristics The receiving '<em><b>Caregiver Characteristics</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param caregiverCharacteristics The receiving '<em><b>Caregiver Characteristics</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 	@SuppressWarnings("unchecked")
 	public static boolean validateCaregiverCharacteristicsParticipantParticipantRoleClassCode(
 			CaregiverCharacteristics caregiverCharacteristics, DiagnosticChain diagnostics, Map<Object, Object> context) {
@@ -720,36 +720,36 @@ public class CaregiverCharacteristicsOperations extends ClinicalStatementOperati
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateCaregiverCharacteristicsParticipantTimeLow(CaregiverCharacteristics, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Caregiver Characteristics Participant Time Low</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateCaregiverCharacteristicsParticipantTimeLow(CaregiverCharacteristics, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Caregiver Characteristics Participant Time Low</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateCaregiverCharacteristicsParticipantTimeLow(CaregiverCharacteristics, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateCaregiverCharacteristicsParticipantTimeLow(CaregiverCharacteristics, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_CAREGIVER_CHARACTERISTICS_PARTICIPANT_TIME_LOW__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.participant->excluding(null)->reject(not time.oclIsUndefined() implies time.low->size() = 1)";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateCaregiverCharacteristicsParticipantTimeLow(CaregiverCharacteristics, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Caregiver Characteristics Participant Time Low</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateCaregiverCharacteristicsParticipantTimeLow(CaregiverCharacteristics, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Caregiver Characteristics Participant Time Low</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateCaregiverCharacteristicsParticipantTimeLow(CaregiverCharacteristics, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateCaregiverCharacteristicsParticipantTimeLow(CaregiverCharacteristics, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 
 	protected static Query<?, ?, ?> VALIDATE_CAREGIVER_CHARACTERISTICS_PARTICIPANT_TIME_LOW__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param caregiverCharacteristics The receiving '<em><b>Caregiver Characteristics</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param caregiverCharacteristics The receiving '<em><b>Caregiver Characteristics</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 	@SuppressWarnings("unchecked")
 	public static boolean validateCaregiverCharacteristicsParticipantTimeLow(
 			CaregiverCharacteristics caregiverCharacteristics, DiagnosticChain diagnostics, Map<Object, Object> context) {
@@ -784,36 +784,36 @@ public class CaregiverCharacteristicsOperations extends ClinicalStatementOperati
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateCaregiverCharacteristicsParticipantTimeHigh(CaregiverCharacteristics, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Caregiver Characteristics Participant Time High</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateCaregiverCharacteristicsParticipantTimeHigh(CaregiverCharacteristics, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Caregiver Characteristics Participant Time High</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateCaregiverCharacteristicsParticipantTimeHigh(CaregiverCharacteristics, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateCaregiverCharacteristicsParticipantTimeHigh(CaregiverCharacteristics, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_CAREGIVER_CHARACTERISTICS_PARTICIPANT_TIME_HIGH__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.participant->excluding(null)->reject(not time.oclIsUndefined() implies time.high->size() = 1)";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateCaregiverCharacteristicsParticipantTimeHigh(CaregiverCharacteristics, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Caregiver Characteristics Participant Time High</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateCaregiverCharacteristicsParticipantTimeHigh(CaregiverCharacteristics, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Caregiver Characteristics Participant Time High</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateCaregiverCharacteristicsParticipantTimeHigh(CaregiverCharacteristics, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateCaregiverCharacteristicsParticipantTimeHigh(CaregiverCharacteristics, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 
 	protected static Query<?, ?, ?> VALIDATE_CAREGIVER_CHARACTERISTICS_PARTICIPANT_TIME_HIGH__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param caregiverCharacteristics The receiving '<em><b>Caregiver Characteristics</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param caregiverCharacteristics The receiving '<em><b>Caregiver Characteristics</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 	@SuppressWarnings("unchecked")
 	public static boolean validateCaregiverCharacteristicsParticipantTimeHigh(
 			CaregiverCharacteristics caregiverCharacteristics, DiagnosticChain diagnostics, Map<Object, Object> context) {
@@ -848,36 +848,36 @@ public class CaregiverCharacteristicsOperations extends ClinicalStatementOperati
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateCaregiverCharacteristicsParticipantTime(CaregiverCharacteristics, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Caregiver Characteristics Participant Time</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateCaregiverCharacteristicsParticipantTime(CaregiverCharacteristics, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Caregiver Characteristics Participant Time</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateCaregiverCharacteristicsParticipantTime(CaregiverCharacteristics, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateCaregiverCharacteristicsParticipantTime(CaregiverCharacteristics, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_CAREGIVER_CHARACTERISTICS_PARTICIPANT_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.participant->excluding(null)->reject((time.oclIsUndefined() or time.isNullFlavorUndefined()) implies (not time.oclIsUndefined()))";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateCaregiverCharacteristicsParticipantTime(CaregiverCharacteristics, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Caregiver Characteristics Participant Time</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateCaregiverCharacteristicsParticipantTime(CaregiverCharacteristics, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Caregiver Characteristics Participant Time</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateCaregiverCharacteristicsParticipantTime(CaregiverCharacteristics, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateCaregiverCharacteristicsParticipantTime(CaregiverCharacteristics, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 
 	protected static Query<?, ?, ?> VALIDATE_CAREGIVER_CHARACTERISTICS_PARTICIPANT_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param caregiverCharacteristics The receiving '<em><b>Caregiver Characteristics</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param caregiverCharacteristics The receiving '<em><b>Caregiver Characteristics</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 	@SuppressWarnings("unchecked")
 	public static boolean validateCaregiverCharacteristicsParticipantTime(
 			CaregiverCharacteristics caregiverCharacteristics, DiagnosticChain diagnostics, Map<Object, Object> context) {
@@ -912,36 +912,36 @@ public class CaregiverCharacteristicsOperations extends ClinicalStatementOperati
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateCaregiverCharacteristicsParticipantParticipantRole(CaregiverCharacteristics, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Caregiver Characteristics Participant Participant Role</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateCaregiverCharacteristicsParticipantParticipantRole(CaregiverCharacteristics, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Caregiver Characteristics Participant Participant Role</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateCaregiverCharacteristicsParticipantParticipantRole(CaregiverCharacteristics, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateCaregiverCharacteristicsParticipantParticipantRole(CaregiverCharacteristics, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_CAREGIVER_CHARACTERISTICS_PARTICIPANT_PARTICIPANT_ROLE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.participant->excluding(null)->reject(participantRole->one(participantRole : cda::ParticipantRole | not participantRole.oclIsUndefined() and participantRole.oclIsKindOf(cda::ParticipantRole)))";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateCaregiverCharacteristicsParticipantParticipantRole(CaregiverCharacteristics, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Caregiver Characteristics Participant Participant Role</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateCaregiverCharacteristicsParticipantParticipantRole(CaregiverCharacteristics, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Caregiver Characteristics Participant Participant Role</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateCaregiverCharacteristicsParticipantParticipantRole(CaregiverCharacteristics, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateCaregiverCharacteristicsParticipantParticipantRole(CaregiverCharacteristics, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 
 	protected static Query<?, ?, ?> VALIDATE_CAREGIVER_CHARACTERISTICS_PARTICIPANT_PARTICIPANT_ROLE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param caregiverCharacteristics The receiving '<em><b>Caregiver Characteristics</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param caregiverCharacteristics The receiving '<em><b>Caregiver Characteristics</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 	@SuppressWarnings("unchecked")
 	public static boolean validateCaregiverCharacteristicsParticipantParticipantRole(
 			CaregiverCharacteristics caregiverCharacteristics, DiagnosticChain diagnostics, Map<Object, Object> context) {

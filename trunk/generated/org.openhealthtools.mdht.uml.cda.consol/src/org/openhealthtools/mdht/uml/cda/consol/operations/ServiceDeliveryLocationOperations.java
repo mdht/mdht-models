@@ -73,6 +73,7 @@ public class ServiceDeliveryLocationOperations extends ParticipantRoleOperations
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_SERVICE_DELIVERY_LOCATION_HAS_PLAYING_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -85,6 +86,7 @@ public class ServiceDeliveryLocationOperations extends ParticipantRoleOperations
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateServiceDeliveryLocationHasPlayingEntity(
 			ServiceDeliveryLocation serviceDeliveryLocation, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -130,6 +132,7 @@ public class ServiceDeliveryLocationOperations extends ParticipantRoleOperations
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_SERVICE_DELIVERY_LOCATION_HAS_PLAYING_ENTITY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -142,6 +145,7 @@ public class ServiceDeliveryLocationOperations extends ParticipantRoleOperations
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateServiceDeliveryLocationHasPlayingEntityClassCode(
 			ServiceDeliveryLocation serviceDeliveryLocation, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -173,7 +177,7 @@ public class ServiceDeliveryLocationOperations extends ParticipantRoleOperations
 	/**
 	* The cached OCL expression body for the '{@link #validateServiceDeliveryLocationHasPlayingEntityName(ServiceDeliveryLocation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Service Delivery Location Has Playing Entity Name</em>}' operation.
 	* <!-- begin-user-doc -->
-	* <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	* @see #validateServiceDeliveryLocationHasPlayingEntityName(ServiceDeliveryLocation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	* @generated
 	* @ordered
@@ -248,6 +252,7 @@ public class ServiceDeliveryLocationOperations extends ParticipantRoleOperations
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_SERVICE_DELIVERY_LOCATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -260,6 +265,7 @@ public class ServiceDeliveryLocationOperations extends ParticipantRoleOperations
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateServiceDeliveryLocationTemplateId(ServiceDeliveryLocation serviceDeliveryLocation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -366,6 +372,7 @@ public class ServiceDeliveryLocationOperations extends ParticipantRoleOperations
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_SERVICE_DELIVERY_LOCATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -378,6 +385,7 @@ public class ServiceDeliveryLocationOperations extends ParticipantRoleOperations
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateServiceDeliveryLocationCode(ServiceDeliveryLocation serviceDeliveryLocation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -423,6 +431,7 @@ public class ServiceDeliveryLocationOperations extends ParticipantRoleOperations
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_SERVICE_DELIVERY_LOCATION_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -435,6 +444,7 @@ public class ServiceDeliveryLocationOperations extends ParticipantRoleOperations
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateServiceDeliveryLocationAddr(ServiceDeliveryLocation serviceDeliveryLocation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -480,6 +490,7 @@ public class ServiceDeliveryLocationOperations extends ParticipantRoleOperations
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_SERVICE_DELIVERY_LOCATION_TELECOM__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -492,6 +503,7 @@ public class ServiceDeliveryLocationOperations extends ParticipantRoleOperations
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateServiceDeliveryLocationTelecom(ServiceDeliveryLocation serviceDeliveryLocation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 

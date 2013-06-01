@@ -78,6 +78,7 @@ public class PayersSectionOperations extends SectionOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_PAYERS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -90,6 +91,7 @@ public class PayersSectionOperations extends SectionOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validatePayersSectionTemplateId(PayersSection payersSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
@@ -136,6 +138,7 @@ public class PayersSectionOperations extends SectionOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_PAYERS_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -148,6 +151,7 @@ public class PayersSectionOperations extends SectionOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validatePayersSectionCode(PayersSection payersSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
@@ -176,7 +180,7 @@ public class PayersSectionOperations extends SectionOperations {
 	/**
 	* The cached OCL expression body for the '{@link #validatePayersSectionCodeP(PayersSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Payers Section Code P</em>}' operation.
 	* <!-- begin-user-doc -->
-	* <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	* @see #validatePayersSectionCodeP(PayersSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	* @generated
 	* @ordered
@@ -248,6 +252,7 @@ public class PayersSectionOperations extends SectionOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_PAYERS_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -260,6 +265,7 @@ public class PayersSectionOperations extends SectionOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validatePayersSectionTitle(PayersSection payersSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
@@ -303,6 +309,7 @@ public class PayersSectionOperations extends SectionOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_PAYERS_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -315,6 +322,7 @@ public class PayersSectionOperations extends SectionOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validatePayersSectionText(PayersSection payersSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
@@ -358,6 +366,7 @@ public class PayersSectionOperations extends SectionOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_PAYERS_SECTION_COVERAGE_ACTIVITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -370,6 +379,7 @@ public class PayersSectionOperations extends SectionOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validatePayersSectionCoverageActivity(PayersSection payersSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -421,6 +431,7 @@ public class PayersSectionOperations extends SectionOperations {
 	 * <!-- end-user-doc -->
 	* @generated
 	*/
+
 	public static EList<CoverageActivity> getCoverageActivities(PayersSection payersSection) {
 		if (GET_COVERAGE_ACTIVITIES__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();

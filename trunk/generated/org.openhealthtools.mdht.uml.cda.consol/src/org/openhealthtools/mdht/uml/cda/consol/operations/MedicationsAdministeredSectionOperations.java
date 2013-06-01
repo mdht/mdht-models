@@ -78,6 +78,7 @@ public class MedicationsAdministeredSectionOperations extends SectionOperations 
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_MEDICATIONS_ADMINISTERED_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -90,6 +91,7 @@ public class MedicationsAdministeredSectionOperations extends SectionOperations 
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateMedicationsAdministeredSectionTemplateId(
 			MedicationsAdministeredSection medicationsAdministeredSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
@@ -138,6 +140,7 @@ public class MedicationsAdministeredSectionOperations extends SectionOperations 
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_MEDICATIONS_ADMINISTERED_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -150,6 +153,7 @@ public class MedicationsAdministeredSectionOperations extends SectionOperations 
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateMedicationsAdministeredSectionCode(
 			MedicationsAdministeredSection medicationsAdministeredSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
@@ -181,7 +185,7 @@ public class MedicationsAdministeredSectionOperations extends SectionOperations 
 	/**
 	* The cached OCL expression body for the '{@link #validateMedicationsAdministeredSectionCodeP(MedicationsAdministeredSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medications Administered Section Code P</em>}' operation.
 	* <!-- begin-user-doc -->
-	* <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	* @see #validateMedicationsAdministeredSectionCodeP(MedicationsAdministeredSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	* @generated
 	* @ordered

@@ -77,6 +77,7 @@ public class PostprocedureDiagnosisOperations extends ClinicalStatementOperation
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_POSTPROCEDURE_DIAGNOSIS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -89,6 +90,7 @@ public class PostprocedureDiagnosisOperations extends ClinicalStatementOperation
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validatePostprocedureDiagnosisTemplateId(PostprocedureDiagnosis postprocedureDiagnosis,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -134,6 +136,7 @@ public class PostprocedureDiagnosisOperations extends ClinicalStatementOperation
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_POSTPROCEDURE_DIAGNOSIS_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -146,6 +149,7 @@ public class PostprocedureDiagnosisOperations extends ClinicalStatementOperation
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validatePostprocedureDiagnosisClassCode(PostprocedureDiagnosis postprocedureDiagnosis,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -174,43 +178,6 @@ public class PostprocedureDiagnosisOperations extends ClinicalStatementOperation
 	}
 
 	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param postprocedureDiagnosis The receiving '<em><b>Postprocedure Diagnosis</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
-	public static boolean validatePostprocedureDiagnosisCode(PostprocedureDiagnosis postprocedureDiagnosis,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
-		if (VALIDATE_POSTPROCEDURE_DIAGNOSIS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(ConsolPackage.Literals.POSTPROCEDURE_DIAGNOSIS);
-			try {
-				VALIDATE_POSTPROCEDURE_DIAGNOSIS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_POSTPROCEDURE_DIAGNOSIS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_POSTPROCEDURE_DIAGNOSIS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			postprocedureDiagnosis)) {
-			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.POSTPROCEDURE_DIAGNOSIS__POSTPROCEDURE_DIAGNOSIS_CODE,
-					ConsolPlugin.INSTANCE.getString("PostprocedureDiagnosisCode"),
-					new Object[] { postprocedureDiagnosis }));
-			}
-
-			return false;
-		}
-		return true;
-	}
-
-	/**
 	* The cached OCL expression body for the '{@link #validatePostprocedureDiagnosisMoodCode(PostprocedureDiagnosis, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Postprocedure Diagnosis Mood Code</em>}' operation.
 	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -228,29 +195,8 @@ public class PostprocedureDiagnosisOperations extends ClinicalStatementOperation
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_POSTPROCEDURE_DIAGNOSIS_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-
-	/**
-	* The cached OCL expression body for the '{@link #validatePostprocedureDiagnosisCode(PostprocedureDiagnosis, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Postprocedure Diagnosis Code</em>}' operation.
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @see #validatePostprocedureDiagnosisCode(PostprocedureDiagnosis, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
-	protected static final String VALIDATE_POSTPROCEDURE_DIAGNOSIS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "
-			+ "let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "
-			+ "value.code = '59769-0' and value.codeSystem = '2.16.840.1.113883.6.1')";
-
-	/**
-	* The cached OCL invariant for the '{@link #validatePostprocedureDiagnosisCode(PostprocedureDiagnosis, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Postprocedure Diagnosis Code</em>}' invariant operation.
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @see #validatePostprocedureDiagnosisCode(PostprocedureDiagnosis, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
-	protected static Constraint VALIDATE_POSTPROCEDURE_DIAGNOSIS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
 	* <!-- begin-user-doc -->
@@ -262,6 +208,7 @@ public class PostprocedureDiagnosisOperations extends ClinicalStatementOperation
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validatePostprocedureDiagnosisMoodCode(PostprocedureDiagnosis postprocedureDiagnosis,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -290,6 +237,67 @@ public class PostprocedureDiagnosisOperations extends ClinicalStatementOperation
 	}
 
 	/**
+	* The cached OCL expression body for the '{@link #validatePostprocedureDiagnosisCode(PostprocedureDiagnosis, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Postprocedure Diagnosis Code</em>}' operation.
+	* <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	* @see #validatePostprocedureDiagnosisCode(PostprocedureDiagnosis, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
+	protected static final String VALIDATE_POSTPROCEDURE_DIAGNOSIS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "
+			+ "let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "
+			+ "value.code = '59769-0' and value.codeSystem = '2.16.840.1.113883.6.1')";
+
+	/**
+	* The cached OCL invariant for the '{@link #validatePostprocedureDiagnosisCode(PostprocedureDiagnosis, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Postprocedure Diagnosis Code</em>}' invariant operation.
+	* <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	* @see #validatePostprocedureDiagnosisCode(PostprocedureDiagnosis, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
+
+	protected static Constraint VALIDATE_POSTPROCEDURE_DIAGNOSIS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
+	/**
+	* <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	* <!-- begin-model-doc -->
+	* @param postprocedureDiagnosis The receiving '<em><b>Postprocedure Diagnosis</b></em>' model object.
+	* @param diagnostics The chain of diagnostics to which problems are to be appended.
+	* @param context The cache of context-specific information.
+	* <!-- end-model-doc -->
+	* @generated
+	*/
+
+	public static boolean validatePostprocedureDiagnosisCode(PostprocedureDiagnosis postprocedureDiagnosis,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		if (VALIDATE_POSTPROCEDURE_DIAGNOSIS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setContext(ConsolPackage.Literals.POSTPROCEDURE_DIAGNOSIS);
+			try {
+				VALIDATE_POSTPROCEDURE_DIAGNOSIS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_POSTPROCEDURE_DIAGNOSIS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+			} catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		if (!EOCL_ENV.createQuery(VALIDATE_POSTPROCEDURE_DIAGNOSIS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			postprocedureDiagnosis)) {
+			if (diagnostics != null) {
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.POSTPROCEDURE_DIAGNOSIS__POSTPROCEDURE_DIAGNOSIS_CODE,
+					ConsolPlugin.INSTANCE.getString("PostprocedureDiagnosisCode"),
+					new Object[] { postprocedureDiagnosis }));
+			}
+
+			return false;
+		}
+		return true;
+	}
+
+	/**
 	* The cached OCL expression body for the '{@link #validatePostprocedureDiagnosisProblemObservation(PostprocedureDiagnosis, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Postprocedure Diagnosis Problem Observation</em>}' operation.
 	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -307,6 +315,7 @@ public class PostprocedureDiagnosisOperations extends ClinicalStatementOperation
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_POSTPROCEDURE_DIAGNOSIS_PROBLEM_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -319,6 +328,7 @@ public class PostprocedureDiagnosisOperations extends ClinicalStatementOperation
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validatePostprocedureDiagnosisProblemObservation(
 			PostprocedureDiagnosis postprocedureDiagnosis, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -371,6 +381,7 @@ public class PostprocedureDiagnosisOperations extends ClinicalStatementOperation
 	 * <!-- end-user-doc -->
 	* @generated
 	*/
+
 	public static EList<ProblemObservation> getProblemObservations(PostprocedureDiagnosis postprocedureDiagnosis) {
 		if (GET_PROBLEM_OBSERVATIONS__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();

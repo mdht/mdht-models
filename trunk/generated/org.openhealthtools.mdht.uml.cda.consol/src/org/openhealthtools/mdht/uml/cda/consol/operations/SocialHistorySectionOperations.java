@@ -87,6 +87,7 @@ public class SocialHistorySectionOperations extends SectionOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_SOCIAL_HISTORY_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -99,6 +100,7 @@ public class SocialHistorySectionOperations extends SectionOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateSocialHistorySectionTemplateId(SocialHistorySection socialHistorySection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -146,6 +148,7 @@ public class SocialHistorySectionOperations extends SectionOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_SOCIAL_HISTORY_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -158,6 +161,7 @@ public class SocialHistorySectionOperations extends SectionOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateSocialHistorySectionCode(SocialHistorySection socialHistorySection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -187,7 +191,7 @@ public class SocialHistorySectionOperations extends SectionOperations {
 	/**
 	* The cached OCL expression body for the '{@link #validateSocialHistorySectionCodeP(SocialHistorySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Social History Section Code P</em>}' operation.
 	* <!-- begin-user-doc -->
-	* <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	* @see #validateSocialHistorySectionCodeP(SocialHistorySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	* @generated
 	* @ordered
@@ -260,6 +264,7 @@ public class SocialHistorySectionOperations extends SectionOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_SOCIAL_HISTORY_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -272,6 +277,7 @@ public class SocialHistorySectionOperations extends SectionOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateSocialHistorySectionTitle(SocialHistorySection socialHistorySection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -316,6 +322,7 @@ public class SocialHistorySectionOperations extends SectionOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_SOCIAL_HISTORY_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -328,6 +335,7 @@ public class SocialHistorySectionOperations extends SectionOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateSocialHistorySectionText(SocialHistorySection socialHistorySection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -372,6 +380,7 @@ public class SocialHistorySectionOperations extends SectionOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_SOCIAL_HISTORY_SECTION_SOCIAL_HISTORY_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -384,6 +393,7 @@ public class SocialHistorySectionOperations extends SectionOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateSocialHistorySectionSocialHistoryObservation(
 			SocialHistorySection socialHistorySection, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -430,6 +440,7 @@ public class SocialHistorySectionOperations extends SectionOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_SOCIAL_HISTORY_SECTION_PREGNANCY_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -442,6 +453,7 @@ public class SocialHistorySectionOperations extends SectionOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateSocialHistorySectionPregnancyObservation(SocialHistorySection socialHistorySection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -472,7 +484,7 @@ public class SocialHistorySectionOperations extends SectionOperations {
 	/**
 	* The cached OCL expression body for the '{@link #validateSocialHistorySectionSmokingStatusObservation(SocialHistorySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Social History Section Smoking Status Observation</em>}' operation.
 	* <!-- begin-user-doc -->
-	* <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	* @see #validateSocialHistorySectionSmokingStatusObservation(SocialHistorySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	* @generated
 	* @ordered
@@ -613,6 +625,7 @@ public class SocialHistorySectionOperations extends SectionOperations {
 	 * <!-- end-user-doc -->
 	* @generated
 	*/
+
 	public static EList<SocialHistoryObservation> getSocialHistoryObservations(SocialHistorySection socialHistorySection) {
 		if (GET_SOCIAL_HISTORY_OBSERVATIONS__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
@@ -656,6 +669,7 @@ public class SocialHistorySectionOperations extends SectionOperations {
 	 * <!-- end-user-doc -->
 	* @generated
 	*/
+
 	public static EList<PregnancyObservation> getPregnancyObservations(SocialHistorySection socialHistorySection) {
 		if (GET_PREGNANCY_OBSERVATIONS__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();

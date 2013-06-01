@@ -70,6 +70,7 @@ public class ProcedureEstimatedBloodLossSectionOperations extends SectionOperati
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_PROCEDURE_ESTIMATED_BLOOD_LOSS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -82,6 +83,7 @@ public class ProcedureEstimatedBloodLossSectionOperations extends SectionOperati
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateProcedureEstimatedBloodLossSectionTemplateId(
 			ProcedureEstimatedBloodLossSection procedureEstimatedBloodLossSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
@@ -132,6 +134,7 @@ public class ProcedureEstimatedBloodLossSectionOperations extends SectionOperati
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_PROCEDURE_ESTIMATED_BLOOD_LOSS_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -144,6 +147,7 @@ public class ProcedureEstimatedBloodLossSectionOperations extends SectionOperati
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateProcedureEstimatedBloodLossSectionCode(
 			ProcedureEstimatedBloodLossSection procedureEstimatedBloodLossSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
@@ -176,7 +180,7 @@ public class ProcedureEstimatedBloodLossSectionOperations extends SectionOperati
 	/**
 	* The cached OCL expression body for the '{@link #validateProcedureEstimatedBloodLossSectionCodeP(ProcedureEstimatedBloodLossSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Estimated Blood Loss Section Code P</em>}' operation.
 	* <!-- begin-user-doc -->
-	* <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	* @see #validateProcedureEstimatedBloodLossSectionCodeP(ProcedureEstimatedBloodLossSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	* @generated
 	* @ordered
@@ -253,6 +257,7 @@ public class ProcedureEstimatedBloodLossSectionOperations extends SectionOperati
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_PROCEDURE_ESTIMATED_BLOOD_LOSS_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -265,6 +270,7 @@ public class ProcedureEstimatedBloodLossSectionOperations extends SectionOperati
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateProcedureEstimatedBloodLossSectionText(
 			ProcedureEstimatedBloodLossSection procedureEstimatedBloodLossSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
@@ -312,6 +318,7 @@ public class ProcedureEstimatedBloodLossSectionOperations extends SectionOperati
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_PROCEDURE_ESTIMATED_BLOOD_LOSS_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -324,6 +331,7 @@ public class ProcedureEstimatedBloodLossSectionOperations extends SectionOperati
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateProcedureEstimatedBloodLossSectionTitle(
 			ProcedureEstimatedBloodLossSection procedureEstimatedBloodLossSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {

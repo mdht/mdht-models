@@ -84,6 +84,7 @@ public class PhysicalExamSectionOperations extends SectionOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_PHYSICAL_EXAM_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -96,6 +97,7 @@ public class PhysicalExamSectionOperations extends SectionOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validatePhysicalExamSectionTemplateId(PhysicalExamSection physicalExamSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -143,6 +145,7 @@ public class PhysicalExamSectionOperations extends SectionOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_PHYSICAL_EXAM_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -155,6 +158,7 @@ public class PhysicalExamSectionOperations extends SectionOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validatePhysicalExamSectionCode(PhysicalExamSection physicalExamSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -184,7 +188,7 @@ public class PhysicalExamSectionOperations extends SectionOperations {
 	/**
 	* The cached OCL expression body for the '{@link #validatePhysicalExamSectionCodeP(PhysicalExamSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Physical Exam Section Code P</em>}' operation.
 	* <!-- begin-user-doc -->
-	* <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	* @see #validatePhysicalExamSectionCodeP(PhysicalExamSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	* @generated
 	* @ordered
@@ -257,6 +261,7 @@ public class PhysicalExamSectionOperations extends SectionOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_PHYSICAL_EXAM_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -269,6 +274,7 @@ public class PhysicalExamSectionOperations extends SectionOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validatePhysicalExamSectionTitle(PhysicalExamSection physicalExamSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -313,6 +319,7 @@ public class PhysicalExamSectionOperations extends SectionOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_PHYSICAL_EXAM_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -325,6 +332,7 @@ public class PhysicalExamSectionOperations extends SectionOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validatePhysicalExamSectionText(PhysicalExamSection physicalExamSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 

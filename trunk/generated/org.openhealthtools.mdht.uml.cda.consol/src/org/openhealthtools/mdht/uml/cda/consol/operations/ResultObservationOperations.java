@@ -84,6 +84,7 @@ public class ResultObservationOperations extends ClinicalStatementOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_RESULT_OBSERVATION_TEXT_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -96,6 +97,7 @@ public class ResultObservationOperations extends ClinicalStatementOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateResultObservationTextReference(ResultObservation resultObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -126,7 +128,7 @@ public class ResultObservationOperations extends ClinicalStatementOperations {
 	/**
 	* The cached OCL expression body for the '{@link #validateResultObservationReferenceValue(ResultObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Result Observation Reference Value</em>}' operation.
 	* <!-- begin-user-doc -->
-	* <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	* @see #validateResultObservationReferenceValue(ResultObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	* @generated
 	* @ordered
@@ -200,6 +202,7 @@ public class ResultObservationOperations extends ClinicalStatementOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_RESULT_OBSERVATION_TEXT_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -212,6 +215,7 @@ public class ResultObservationOperations extends ClinicalStatementOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateResultObservationTextReferenceValue(ResultObservation resultObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -257,6 +261,7 @@ public class ResultObservationOperations extends ClinicalStatementOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_RESULT_OBSERVATION_CODE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -269,6 +274,7 @@ public class ResultObservationOperations extends ClinicalStatementOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateResultObservationCodeValue(ResultObservation resultObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -313,6 +319,7 @@ public class ResultObservationOperations extends ClinicalStatementOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_RESULT_OBSERVATION_NO_OBSERVATION_RANGE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -325,6 +332,7 @@ public class ResultObservationOperations extends ClinicalStatementOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateResultObservationNoObservationRangeCode(ResultObservation resultObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -370,6 +378,7 @@ public class ResultObservationOperations extends ClinicalStatementOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_RESULT_OBSERVATION_AUTHOR_MULTIPLICITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -382,6 +391,7 @@ public class ResultObservationOperations extends ClinicalStatementOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateResultObservationAuthorMultiplicity(ResultObservation resultObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -427,6 +437,7 @@ public class ResultObservationOperations extends ClinicalStatementOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_RESULT_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -439,6 +450,7 @@ public class ResultObservationOperations extends ClinicalStatementOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateResultObservationTemplateId(ResultObservation resultObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -599,6 +611,7 @@ public class ResultObservationOperations extends ClinicalStatementOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_RESULT_OBSERVATION_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -611,6 +624,7 @@ public class ResultObservationOperations extends ClinicalStatementOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateResultObservationId(ResultObservation resultObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
@@ -655,6 +669,7 @@ public class ResultObservationOperations extends ClinicalStatementOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_RESULT_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -667,6 +682,7 @@ public class ResultObservationOperations extends ClinicalStatementOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateResultObservationCode(ResultObservation resultObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -711,6 +727,7 @@ public class ResultObservationOperations extends ClinicalStatementOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_RESULT_OBSERVATION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -723,6 +740,7 @@ public class ResultObservationOperations extends ClinicalStatementOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateResultObservationText(ResultObservation resultObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -769,6 +787,7 @@ public class ResultObservationOperations extends ClinicalStatementOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_RESULT_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -781,6 +800,7 @@ public class ResultObservationOperations extends ClinicalStatementOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateResultObservationStatusCode(ResultObservation resultObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -810,7 +830,7 @@ public class ResultObservationOperations extends ClinicalStatementOperations {
 	/**
 	* The cached OCL expression body for the '{@link #validateResultObservationStatusCodeP(ResultObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Result Observation Status Code P</em>}' operation.
 	* <!-- begin-user-doc -->
-	* <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	* @see #validateResultObservationStatusCodeP(ResultObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	* @generated
 	* @ordered
@@ -883,6 +903,7 @@ public class ResultObservationOperations extends ClinicalStatementOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_RESULT_OBSERVATION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -895,6 +916,7 @@ public class ResultObservationOperations extends ClinicalStatementOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateResultObservationEffectiveTime(ResultObservation resultObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -940,6 +962,7 @@ public class ResultObservationOperations extends ClinicalStatementOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_RESULT_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -952,6 +975,7 @@ public class ResultObservationOperations extends ClinicalStatementOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateResultObservationValue(ResultObservation resultObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -996,6 +1020,7 @@ public class ResultObservationOperations extends ClinicalStatementOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_RESULT_OBSERVATION_INTERPRETATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -1008,6 +1033,7 @@ public class ResultObservationOperations extends ClinicalStatementOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateResultObservationInterpretationCode(ResultObservation resultObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -1053,6 +1079,7 @@ public class ResultObservationOperations extends ClinicalStatementOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_RESULT_OBSERVATION_METHOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -1065,6 +1092,7 @@ public class ResultObservationOperations extends ClinicalStatementOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateResultObservationMethodCode(ResultObservation resultObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -1109,6 +1137,7 @@ public class ResultObservationOperations extends ClinicalStatementOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_RESULT_OBSERVATION_TARGET_SITE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -1121,6 +1150,7 @@ public class ResultObservationOperations extends ClinicalStatementOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateResultObservationTargetSiteCode(ResultObservation resultObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 

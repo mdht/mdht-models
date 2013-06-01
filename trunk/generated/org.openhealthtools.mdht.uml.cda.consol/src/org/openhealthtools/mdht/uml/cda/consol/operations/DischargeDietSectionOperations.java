@@ -70,6 +70,7 @@ public class DischargeDietSectionOperations extends SectionOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_DISCHARGE_DIET_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -82,6 +83,7 @@ public class DischargeDietSectionOperations extends SectionOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateDischargeDietSectionTemplateId(DischargeDietSection dischargeDietSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -129,6 +131,7 @@ public class DischargeDietSectionOperations extends SectionOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_DISCHARGE_DIET_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -141,6 +144,7 @@ public class DischargeDietSectionOperations extends SectionOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateDischargeDietSectionCode(DischargeDietSection dischargeDietSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -170,7 +174,7 @@ public class DischargeDietSectionOperations extends SectionOperations {
 	/**
 	* The cached OCL expression body for the '{@link #validateDischargeDietSectionCodeP(DischargeDietSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Discharge Diet Section Code P</em>}' operation.
 	* <!-- begin-user-doc -->
-	* <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	* @see #validateDischargeDietSectionCodeP(DischargeDietSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	* @generated
 	* @ordered
@@ -243,6 +247,7 @@ public class DischargeDietSectionOperations extends SectionOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_DISCHARGE_DIET_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -255,6 +260,7 @@ public class DischargeDietSectionOperations extends SectionOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateDischargeDietSectionTitle(DischargeDietSection dischargeDietSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -299,6 +305,7 @@ public class DischargeDietSectionOperations extends SectionOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_DISCHARGE_DIET_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -311,6 +318,7 @@ public class DischargeDietSectionOperations extends SectionOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateDischargeDietSectionText(DischargeDietSection dischargeDietSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 

@@ -70,6 +70,7 @@ public class HistoryOfPresentIllnessSectionOperations extends SectionOperations 
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_HISTORY_OF_PRESENT_ILLNESS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -82,6 +83,7 @@ public class HistoryOfPresentIllnessSectionOperations extends SectionOperations 
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateHistoryOfPresentIllnessSectionTemplateId(
 			HistoryOfPresentIllnessSection historyOfPresentIllnessSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
@@ -131,6 +133,7 @@ public class HistoryOfPresentIllnessSectionOperations extends SectionOperations 
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_HISTORY_OF_PRESENT_ILLNESS_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -143,6 +146,7 @@ public class HistoryOfPresentIllnessSectionOperations extends SectionOperations 
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateHistoryOfPresentIllnessSectionCode(
 			HistoryOfPresentIllnessSection historyOfPresentIllnessSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
@@ -174,7 +178,7 @@ public class HistoryOfPresentIllnessSectionOperations extends SectionOperations 
 	/**
 	* The cached OCL expression body for the '{@link #validateHistoryOfPresentIllnessSectionCodeP(HistoryOfPresentIllnessSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate History Of Present Illness Section Code P</em>}' operation.
 	* <!-- begin-user-doc -->
-	* <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	* @see #validateHistoryOfPresentIllnessSectionCodeP(HistoryOfPresentIllnessSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	* @generated
 	* @ordered
@@ -249,6 +253,7 @@ public class HistoryOfPresentIllnessSectionOperations extends SectionOperations 
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_HISTORY_OF_PRESENT_ILLNESS_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -261,6 +266,7 @@ public class HistoryOfPresentIllnessSectionOperations extends SectionOperations 
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateHistoryOfPresentIllnessSectionTitle(
 			HistoryOfPresentIllnessSection historyOfPresentIllnessSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
@@ -307,6 +313,7 @@ public class HistoryOfPresentIllnessSectionOperations extends SectionOperations 
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_HISTORY_OF_PRESENT_ILLNESS_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -319,6 +326,7 @@ public class HistoryOfPresentIllnessSectionOperations extends SectionOperations 
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateHistoryOfPresentIllnessSectionText(
 			HistoryOfPresentIllnessSection historyOfPresentIllnessSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {

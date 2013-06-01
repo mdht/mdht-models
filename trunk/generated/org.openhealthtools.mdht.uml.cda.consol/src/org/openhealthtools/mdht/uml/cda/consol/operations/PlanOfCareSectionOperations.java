@@ -96,6 +96,7 @@ public class PlanOfCareSectionOperations extends SectionOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_PLAN_OF_CARE_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -108,6 +109,7 @@ public class PlanOfCareSectionOperations extends SectionOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validatePlanOfCareSectionTemplateId(PlanOfCareSection planOfCareSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -154,6 +156,7 @@ public class PlanOfCareSectionOperations extends SectionOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_PLAN_OF_CARE_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -166,6 +169,7 @@ public class PlanOfCareSectionOperations extends SectionOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validatePlanOfCareSectionCode(PlanOfCareSection planOfCareSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -195,7 +199,7 @@ public class PlanOfCareSectionOperations extends SectionOperations {
 	/**
 	* The cached OCL expression body for the '{@link #validatePlanOfCareSectionCodeP(PlanOfCareSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Plan Of Care Section Code P</em>}' operation.
 	* <!-- begin-user-doc -->
-	* <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	* @see #validatePlanOfCareSectionCodeP(PlanOfCareSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	* @generated
 	* @ordered
@@ -326,6 +330,7 @@ public class PlanOfCareSectionOperations extends SectionOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_PLAN_OF_CARE_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -338,6 +343,7 @@ public class PlanOfCareSectionOperations extends SectionOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validatePlanOfCareSectionText(PlanOfCareSection planOfCareSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -382,6 +388,7 @@ public class PlanOfCareSectionOperations extends SectionOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_PLAN_OF_CARE_SECTION_PLAN_OF_CARE_ACTIVITY_ACT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -394,6 +401,7 @@ public class PlanOfCareSectionOperations extends SectionOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validatePlanOfCareSectionPlanOfCareActivityAct(PlanOfCareSection planOfCareSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -440,6 +448,7 @@ public class PlanOfCareSectionOperations extends SectionOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_PLAN_OF_CARE_SECTION_PLAN_OF_CARE_ACTIVITY_ENCOUNTER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -452,6 +461,7 @@ public class PlanOfCareSectionOperations extends SectionOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validatePlanOfCareSectionPlanOfCareActivityEncounter(PlanOfCareSection planOfCareSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -498,6 +508,7 @@ public class PlanOfCareSectionOperations extends SectionOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_PLAN_OF_CARE_SECTION_PLAN_OF_CARE_ACTIVITY_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -510,6 +521,7 @@ public class PlanOfCareSectionOperations extends SectionOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validatePlanOfCareSectionPlanOfCareActivityObservation(PlanOfCareSection planOfCareSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -556,6 +568,7 @@ public class PlanOfCareSectionOperations extends SectionOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_PLAN_OF_CARE_SECTION_PLAN_OF_CARE_ACTIVITY_PROCEDURE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -568,6 +581,7 @@ public class PlanOfCareSectionOperations extends SectionOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validatePlanOfCareSectionPlanOfCareActivityProcedure(PlanOfCareSection planOfCareSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -614,6 +628,7 @@ public class PlanOfCareSectionOperations extends SectionOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_PLAN_OF_CARE_SECTION_PLAN_OF_CARE_ACTIVITY_SUBSTANCE_ADMINISTRATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -626,6 +641,7 @@ public class PlanOfCareSectionOperations extends SectionOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validatePlanOfCareSectionPlanOfCareActivitySubstanceAdministration(
 			PlanOfCareSection planOfCareSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -673,6 +689,7 @@ public class PlanOfCareSectionOperations extends SectionOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_PLAN_OF_CARE_SECTION_PLAN_OF_CARE_ACTIVITY_SUPPLY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -685,6 +702,7 @@ public class PlanOfCareSectionOperations extends SectionOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validatePlanOfCareSectionPlanOfCareActivitySupply(PlanOfCareSection planOfCareSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -716,7 +734,7 @@ public class PlanOfCareSectionOperations extends SectionOperations {
 	/**
 	* The cached OCL expression body for the '{@link #validatePlanOfCareSectionInstructions(PlanOfCareSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Plan Of Care Section Instructions</em>}' operation.
 	* <!-- begin-user-doc -->
-	* <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	* @see #validatePlanOfCareSectionInstructions(PlanOfCareSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	* @generated
 	* @ordered

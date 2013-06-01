@@ -71,6 +71,7 @@ public class ImmunizationRefusalReasonOperations extends ClinicalStatementOperat
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_IMMUNIZATION_REFUSAL_REASON_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -83,6 +84,7 @@ public class ImmunizationRefusalReasonOperations extends ClinicalStatementOperat
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateImmunizationRefusalReasonTemplateId(
 			ImmunizationRefusalReason immunizationRefusalReason, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
@@ -129,6 +131,7 @@ public class ImmunizationRefusalReasonOperations extends ClinicalStatementOperat
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_IMMUNIZATION_REFUSAL_REASON_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -141,6 +144,7 @@ public class ImmunizationRefusalReasonOperations extends ClinicalStatementOperat
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateImmunizationRefusalReasonClassCode(
 			ImmunizationRefusalReason immunizationRefusalReason, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
@@ -248,6 +252,7 @@ public class ImmunizationRefusalReasonOperations extends ClinicalStatementOperat
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_IMMUNIZATION_REFUSAL_REASON_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -260,6 +265,7 @@ public class ImmunizationRefusalReasonOperations extends ClinicalStatementOperat
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateImmunizationRefusalReasonId(ImmunizationRefusalReason immunizationRefusalReason,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -305,6 +311,7 @@ public class ImmunizationRefusalReasonOperations extends ClinicalStatementOperat
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_IMMUNIZATION_REFUSAL_REASON_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -317,6 +324,7 @@ public class ImmunizationRefusalReasonOperations extends ClinicalStatementOperat
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateImmunizationRefusalReasonMoodCode(
 			ImmunizationRefusalReason immunizationRefusalReason, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
@@ -364,6 +372,7 @@ public class ImmunizationRefusalReasonOperations extends ClinicalStatementOperat
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_IMMUNIZATION_REFUSAL_REASON_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -376,6 +385,7 @@ public class ImmunizationRefusalReasonOperations extends ClinicalStatementOperat
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateImmunizationRefusalReasonStatusCode(
 			ImmunizationRefusalReason immunizationRefusalReason, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {

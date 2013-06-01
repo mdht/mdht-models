@@ -118,6 +118,7 @@ public class ProcedureActivityActOperations extends ClinicalStatementOperations 
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_PROCEDURE_ACTIVITY_ACT_CODE_CODE_SYSTEMS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -130,6 +131,7 @@ public class ProcedureActivityActOperations extends ClinicalStatementOperations 
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateProcedureActivityActCodeCodeSystems(ProcedureActivityAct procedureActivityAct,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -175,6 +177,7 @@ public class ProcedureActivityActOperations extends ClinicalStatementOperations 
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_PROCEDURE_ACTIVITY_ACT_CODE_ORIGINAL_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -187,6 +190,7 @@ public class ProcedureActivityActOperations extends ClinicalStatementOperations 
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateProcedureActivityActCodeOriginalText(ProcedureActivityAct procedureActivityAct,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -217,7 +221,7 @@ public class ProcedureActivityActOperations extends ClinicalStatementOperations 
 	/**
 	* The cached OCL expression body for the '{@link #validateProcedureActivityActOriginalTextReference(ProcedureActivityAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Activity Act Original Text Reference</em>}' operation.
 	* <!-- begin-user-doc -->
-	* <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	* @see #validateProcedureActivityActOriginalTextReference(ProcedureActivityAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	* @generated
 	* @ordered
@@ -292,6 +296,7 @@ public class ProcedureActivityActOperations extends ClinicalStatementOperations 
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_PROCEDURE_ACTIVITY_ACT_ORIGINAL_TEXT_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -304,6 +309,7 @@ public class ProcedureActivityActOperations extends ClinicalStatementOperations 
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateProcedureActivityActOriginalTextReferenceValue(
 			ProcedureActivityAct procedureActivityAct, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -350,6 +356,7 @@ public class ProcedureActivityActOperations extends ClinicalStatementOperations 
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_PROCEDURE_ACTIVITY_ACT_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -362,6 +369,7 @@ public class ProcedureActivityActOperations extends ClinicalStatementOperations 
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateProcedureActivityActReferenceValue(ProcedureActivityAct procedureActivityAct,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -407,6 +415,7 @@ public class ProcedureActivityActOperations extends ClinicalStatementOperations 
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_PROCEDURE_ACTIVITY_ACT_ENCOUNTER_INVERSION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -419,6 +428,7 @@ public class ProcedureActivityActOperations extends ClinicalStatementOperations 
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateProcedureActivityActEncounterInversion(ProcedureActivityAct procedureActivityAct,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -464,6 +474,7 @@ public class ProcedureActivityActOperations extends ClinicalStatementOperations 
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_PROCEDURE_ACTIVITY_ACT_SERVICE_DELIVERY_LOCATION_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -476,6 +487,7 @@ public class ProcedureActivityActOperations extends ClinicalStatementOperations 
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateProcedureActivityActServiceDeliveryLocationTypeCode(
 			ProcedureActivityAct procedureActivityAct, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -522,6 +534,7 @@ public class ProcedureActivityActOperations extends ClinicalStatementOperations 
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_PROCEDURE_ACTIVITY_ACT_INSTRUCTIONS_INVERSION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -534,6 +547,7 @@ public class ProcedureActivityActOperations extends ClinicalStatementOperations 
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateProcedureActivityActInstructionsInversion(ProcedureActivityAct procedureActivityAct,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -580,6 +594,7 @@ public class ProcedureActivityActOperations extends ClinicalStatementOperations 
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_PROCEDURE_ACTIVITY_ACT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -592,6 +607,7 @@ public class ProcedureActivityActOperations extends ClinicalStatementOperations 
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateProcedureActivityActTemplateId(ProcedureActivityAct procedureActivityAct,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -637,6 +653,7 @@ public class ProcedureActivityActOperations extends ClinicalStatementOperations 
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_PROCEDURE_ACTIVITY_ACT_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -649,6 +666,7 @@ public class ProcedureActivityActOperations extends ClinicalStatementOperations 
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateProcedureActivityActClassCode(ProcedureActivityAct procedureActivityAct,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -755,6 +773,7 @@ public class ProcedureActivityActOperations extends ClinicalStatementOperations 
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_PROCEDURE_ACTIVITY_ACT_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -767,6 +786,7 @@ public class ProcedureActivityActOperations extends ClinicalStatementOperations 
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateProcedureActivityActId(ProcedureActivityAct procedureActivityAct,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -811,6 +831,7 @@ public class ProcedureActivityActOperations extends ClinicalStatementOperations 
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_PROCEDURE_ACTIVITY_ACT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -823,6 +844,7 @@ public class ProcedureActivityActOperations extends ClinicalStatementOperations 
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateProcedureActivityActCode(ProcedureActivityAct procedureActivityAct,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -869,6 +891,7 @@ public class ProcedureActivityActOperations extends ClinicalStatementOperations 
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_PROCEDURE_ACTIVITY_ACT_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -881,6 +904,7 @@ public class ProcedureActivityActOperations extends ClinicalStatementOperations 
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateProcedureActivityActStatusCode(ProcedureActivityAct procedureActivityAct,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -926,6 +950,7 @@ public class ProcedureActivityActOperations extends ClinicalStatementOperations 
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_PROCEDURE_ACTIVITY_ACT_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -938,6 +963,7 @@ public class ProcedureActivityActOperations extends ClinicalStatementOperations 
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateProcedureActivityActEffectiveTime(ProcedureActivityAct procedureActivityAct,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -966,52 +992,6 @@ public class ProcedureActivityActOperations extends ClinicalStatementOperations 
 	}
 
 	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param procedureActivityAct The receiving '<em><b>Procedure Activity Act</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
-
-	public static boolean validateProcedureActivityActPriorityCode(ProcedureActivityAct procedureActivityAct,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
-		Object passToken = (context == null)
-				? null
-				: context.get("org.openhealthtools.mdht.uml.cda.consol.ProcedureActivityActPriorityCodeP");
-		if ((passToken instanceof Collection<?>) && ((Collection<?>) passToken).contains(procedureActivityAct)) {
-			// I have a free pass to short-circuit
-			return true;
-		}
-
-		if (VALIDATE_PROCEDURE_ACTIVITY_ACT_PRIORITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(ConsolPackage.Literals.PROCEDURE_ACTIVITY_ACT);
-			try {
-				VALIDATE_PROCEDURE_ACTIVITY_ACT_PRIORITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PROCEDURE_ACTIVITY_ACT_PRIORITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PROCEDURE_ACTIVITY_ACT_PRIORITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			procedureActivityAct)) {
-			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.PROCEDURE_ACTIVITY_ACT__PROCEDURE_ACTIVITY_ACT_PRIORITY_CODE,
-					ConsolPlugin.INSTANCE.getString("ProcedureActivityActPriorityCode"),
-					new Object[] { procedureActivityAct }));
-			}
-
-			return false;
-		}
-		return true;
-	}
-
-	/**
 	* The cached OCL expression body for the '{@link #validateProcedureActivityActPriorityCodeP(ProcedureActivityAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Activity Act Priority Code P</em>}' operation.
 	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1031,29 +1011,6 @@ public class ProcedureActivityActOperations extends ClinicalStatementOperations 
 	*/
 
 	protected static Constraint VALIDATE_PROCEDURE_ACTIVITY_ACT_PRIORITY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-
-	/**
-	* The cached OCL expression body for the '{@link #validateProcedureActivityActPriorityCode(ProcedureActivityAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Activity Act Priority Code</em>}' operation.
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @see #validateProcedureActivityActPriorityCode(ProcedureActivityAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
-	protected static final String VALIDATE_PROCEDURE_ACTIVITY_ACT_PRIORITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.priorityCode.oclIsUndefined() or self.priorityCode.isNullFlavorUndefined()) implies (not self.priorityCode.oclIsUndefined() and self.priorityCode.oclIsKindOf(datatypes::CE) and "
-			+ "let value : datatypes::CE = self.priorityCode.oclAsType(datatypes::CE) in "
-			+ "value.codeSystem = '2.16.840.1.113883.5.7' and (value.code = 'A' or value.code = 'CR' or value.code = 'CS' or value.code = 'CSP' or value.code = 'CSR' or value.code = 'EL' or value.code = 'EM' or value.code = 'P' or value.code = 'PRN' or value.code = 'R' or value.code = 'RR' or value.code = 'S' or value.code = 'T' or value.code = 'UD' or value.code = 'UR'))";
-
-	/**
-	* The cached OCL invariant for the '{@link #validateProcedureActivityActPriorityCode(ProcedureActivityAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Activity Act Priority Code</em>}' invariant operation.
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @see #validateProcedureActivityActPriorityCode(ProcedureActivityAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
-
-	protected static Constraint VALIDATE_PROCEDURE_ACTIVITY_ACT_PRIORITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
 	* <!-- begin-user-doc -->
@@ -1106,6 +1063,75 @@ public class ProcedureActivityActOperations extends ClinicalStatementOperations 
 	}
 
 	/**
+	* The cached OCL expression body for the '{@link #validateProcedureActivityActPriorityCode(ProcedureActivityAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Activity Act Priority Code</em>}' operation.
+	* <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	* @see #validateProcedureActivityActPriorityCode(ProcedureActivityAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
+	protected static final String VALIDATE_PROCEDURE_ACTIVITY_ACT_PRIORITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.priorityCode.oclIsUndefined() or self.priorityCode.isNullFlavorUndefined()) implies (not self.priorityCode.oclIsUndefined() and self.priorityCode.oclIsKindOf(datatypes::CE) and "
+			+ "let value : datatypes::CE = self.priorityCode.oclAsType(datatypes::CE) in "
+			+ "value.codeSystem = '2.16.840.1.113883.5.7' and (value.code = 'A' or value.code = 'CR' or value.code = 'CS' or value.code = 'CSP' or value.code = 'CSR' or value.code = 'EL' or value.code = 'EM' or value.code = 'P' or value.code = 'PRN' or value.code = 'R' or value.code = 'RR' or value.code = 'S' or value.code = 'T' or value.code = 'UD' or value.code = 'UR'))";
+
+	/**
+	* The cached OCL invariant for the '{@link #validateProcedureActivityActPriorityCode(ProcedureActivityAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Activity Act Priority Code</em>}' invariant operation.
+	* <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	* @see #validateProcedureActivityActPriorityCode(ProcedureActivityAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
+
+	protected static Constraint VALIDATE_PROCEDURE_ACTIVITY_ACT_PRIORITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
+	/**
+	* <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	* <!-- begin-model-doc -->
+	* @param procedureActivityAct The receiving '<em><b>Procedure Activity Act</b></em>' model object.
+	* @param diagnostics The chain of diagnostics to which problems are to be appended.
+	* @param context The cache of context-specific information.
+	* <!-- end-model-doc -->
+	* @generated
+	*/
+
+	public static boolean validateProcedureActivityActPriorityCode(ProcedureActivityAct procedureActivityAct,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		Object passToken = (context == null)
+				? null
+				: context.get("org.openhealthtools.mdht.uml.cda.consol.ProcedureActivityActPriorityCodeP");
+		if ((passToken instanceof Collection<?>) && ((Collection<?>) passToken).contains(procedureActivityAct)) {
+			// I have a free pass to short-circuit
+			return true;
+		}
+
+		if (VALIDATE_PROCEDURE_ACTIVITY_ACT_PRIORITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setContext(ConsolPackage.Literals.PROCEDURE_ACTIVITY_ACT);
+			try {
+				VALIDATE_PROCEDURE_ACTIVITY_ACT_PRIORITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PROCEDURE_ACTIVITY_ACT_PRIORITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+			} catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		if (!EOCL_ENV.createQuery(VALIDATE_PROCEDURE_ACTIVITY_ACT_PRIORITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			procedureActivityAct)) {
+			if (diagnostics != null) {
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.PROCEDURE_ACTIVITY_ACT__PROCEDURE_ACTIVITY_ACT_PRIORITY_CODE,
+					ConsolPlugin.INSTANCE.getString("ProcedureActivityActPriorityCode"),
+					new Object[] { procedureActivityAct }));
+			}
+
+			return false;
+		}
+		return true;
+	}
+
+	/**
 	* The cached OCL expression body for the '{@link #validateProcedureActivityActPerformer(ProcedureActivityAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Activity Act Performer</em>}' operation.
 	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1123,6 +1149,7 @@ public class ProcedureActivityActOperations extends ClinicalStatementOperations 
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_PROCEDURE_ACTIVITY_ACT_PERFORMER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -1135,6 +1162,7 @@ public class ProcedureActivityActOperations extends ClinicalStatementOperations 
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateProcedureActivityActPerformer(ProcedureActivityAct procedureActivityAct,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -1180,6 +1208,7 @@ public class ProcedureActivityActOperations extends ClinicalStatementOperations 
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_PROCEDURE_ACTIVITY_ACT_SERVICE_DELIVERY_LOCATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -1192,6 +1221,7 @@ public class ProcedureActivityActOperations extends ClinicalStatementOperations 
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateProcedureActivityActServiceDeliveryLocation(
 			ProcedureActivityAct procedureActivityAct, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -1238,6 +1268,7 @@ public class ProcedureActivityActOperations extends ClinicalStatementOperations 
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_PROCEDURE_ACTIVITY_ACT_INSTRUCTIONS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -1250,6 +1281,7 @@ public class ProcedureActivityActOperations extends ClinicalStatementOperations 
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateProcedureActivityActInstructions(ProcedureActivityAct procedureActivityAct,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -1295,6 +1327,7 @@ public class ProcedureActivityActOperations extends ClinicalStatementOperations 
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_PROCEDURE_ACTIVITY_ACT_INDICATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -1307,6 +1340,7 @@ public class ProcedureActivityActOperations extends ClinicalStatementOperations 
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateProcedureActivityActIndication(ProcedureActivityAct procedureActivityAct,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -1352,6 +1386,7 @@ public class ProcedureActivityActOperations extends ClinicalStatementOperations 
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_PROCEDURE_ACTIVITY_ACT_MEDICATION_ACTIVITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -1364,6 +1399,7 @@ public class ProcedureActivityActOperations extends ClinicalStatementOperations 
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateProcedureActivityActMedicationActivity(ProcedureActivityAct procedureActivityAct,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -1394,7 +1430,7 @@ public class ProcedureActivityActOperations extends ClinicalStatementOperations 
 	/**
 	* The cached OCL expression body for the '{@link #validateProcedureActivityActEntryRelationship(ProcedureActivityAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Activity Act Entry Relationship</em>}' operation.
 	* <!-- begin-user-doc -->
-	* <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	* @see #validateProcedureActivityActEntryRelationship(ProcedureActivityAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	* @generated
 	* @ordered
@@ -1453,7 +1489,7 @@ public class ProcedureActivityActOperations extends ClinicalStatementOperations 
 	/**
 	* The cached OCL expression body for the '{@link #validateProcedureActivityActProcedureActPerformerAssignedEntity(ProcedureActivityAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Activity Act Procedure Act Performer Assigned Entity</em>}' operation.
 	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	* <!-- end-user-doc -->
 	* @see #validateProcedureActivityActProcedureActPerformerAssignedEntity(ProcedureActivityAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	* @generated
 	* @ordered
@@ -1461,26 +1497,26 @@ public class ProcedureActivityActOperations extends ClinicalStatementOperations 
 	protected static final String VALIDATE_PROCEDURE_ACTIVITY_ACT_PROCEDURE_ACT_PERFORMER_ASSIGNED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.performer->excluding(null)->reject(assignedEntity->size() = 1)";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateProcedureActivityActProcedureActPerformerAssignedEntity(ProcedureActivityAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Activity Act Procedure Act Performer Assigned Entity</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateProcedureActivityActProcedureActPerformerAssignedEntity(ProcedureActivityAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Activity Act Procedure Act Performer Assigned Entity</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateProcedureActivityActProcedureActPerformerAssignedEntity(ProcedureActivityAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateProcedureActivityActProcedureActPerformerAssignedEntity(ProcedureActivityAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 
 	protected static Query<?, ?, ?> VALIDATE_PROCEDURE_ACTIVITY_ACT_PROCEDURE_ACT_PERFORMER_ASSIGNED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param procedureActivityAct The receiving '<em><b>Procedure Activity Act</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param procedureActivityAct The receiving '<em><b>Procedure Activity Act</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 	@SuppressWarnings("unchecked")
 	public static boolean validateProcedureActivityActProcedureActPerformerAssignedEntity(
 			ProcedureActivityAct procedureActivityAct, DiagnosticChain diagnostics, Map<Object, Object> context) {
@@ -1516,36 +1552,36 @@ public class ProcedureActivityActOperations extends ClinicalStatementOperations 
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateProcedureActivityActProcedureActPerformerAssignedEntityId(ProcedureActivityAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Activity Act Procedure Act Performer Assigned Entity Id</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateProcedureActivityActProcedureActPerformerAssignedEntityId(ProcedureActivityAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Activity Act Procedure Act Performer Assigned Entity Id</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateProcedureActivityActProcedureActPerformerAssignedEntityId(ProcedureActivityAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateProcedureActivityActProcedureActPerformerAssignedEntityId(ProcedureActivityAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_PROCEDURE_ACTIVITY_ACT_PROCEDURE_ACT_PERFORMER_ASSIGNED_ENTITY_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.performer->excluding(null)->reject(assignedEntity.id->size() >= 1)";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateProcedureActivityActProcedureActPerformerAssignedEntityId(ProcedureActivityAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Activity Act Procedure Act Performer Assigned Entity Id</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateProcedureActivityActProcedureActPerformerAssignedEntityId(ProcedureActivityAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Activity Act Procedure Act Performer Assigned Entity Id</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateProcedureActivityActProcedureActPerformerAssignedEntityId(ProcedureActivityAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateProcedureActivityActProcedureActPerformerAssignedEntityId(ProcedureActivityAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 
 	protected static Query<?, ?, ?> VALIDATE_PROCEDURE_ACTIVITY_ACT_PROCEDURE_ACT_PERFORMER_ASSIGNED_ENTITY_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param procedureActivityAct The receiving '<em><b>Procedure Activity Act</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param procedureActivityAct The receiving '<em><b>Procedure Activity Act</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 	@SuppressWarnings("unchecked")
 	public static boolean validateProcedureActivityActProcedureActPerformerAssignedEntityId(
 			ProcedureActivityAct procedureActivityAct, DiagnosticChain diagnostics, Map<Object, Object> context) {
@@ -1581,36 +1617,36 @@ public class ProcedureActivityActOperations extends ClinicalStatementOperations 
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateProcedureActivityActProcedureActPerformerAssignedEntityAddr(ProcedureActivityAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Activity Act Procedure Act Performer Assigned Entity Addr</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateProcedureActivityActProcedureActPerformerAssignedEntityAddr(ProcedureActivityAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Activity Act Procedure Act Performer Assigned Entity Addr</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateProcedureActivityActProcedureActPerformerAssignedEntityAddr(ProcedureActivityAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateProcedureActivityActProcedureActPerformerAssignedEntityAddr(ProcedureActivityAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_PROCEDURE_ACTIVITY_ACT_PROCEDURE_ACT_PERFORMER_ASSIGNED_ENTITY_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.performer->excluding(null)->reject(assignedEntity.addr->size() = 1)";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateProcedureActivityActProcedureActPerformerAssignedEntityAddr(ProcedureActivityAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Activity Act Procedure Act Performer Assigned Entity Addr</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateProcedureActivityActProcedureActPerformerAssignedEntityAddr(ProcedureActivityAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Activity Act Procedure Act Performer Assigned Entity Addr</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateProcedureActivityActProcedureActPerformerAssignedEntityAddr(ProcedureActivityAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateProcedureActivityActProcedureActPerformerAssignedEntityAddr(ProcedureActivityAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 
 	protected static Query<?, ?, ?> VALIDATE_PROCEDURE_ACTIVITY_ACT_PROCEDURE_ACT_PERFORMER_ASSIGNED_ENTITY_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param procedureActivityAct The receiving '<em><b>Procedure Activity Act</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param procedureActivityAct The receiving '<em><b>Procedure Activity Act</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 	@SuppressWarnings("unchecked")
 	public static boolean validateProcedureActivityActProcedureActPerformerAssignedEntityAddr(
 			ProcedureActivityAct procedureActivityAct, DiagnosticChain diagnostics, Map<Object, Object> context) {
@@ -1646,36 +1682,36 @@ public class ProcedureActivityActOperations extends ClinicalStatementOperations 
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateProcedureActivityActProcedureActPerformerAssignedEntityTelecom(ProcedureActivityAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Activity Act Procedure Act Performer Assigned Entity Telecom</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateProcedureActivityActProcedureActPerformerAssignedEntityTelecom(ProcedureActivityAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Activity Act Procedure Act Performer Assigned Entity Telecom</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateProcedureActivityActProcedureActPerformerAssignedEntityTelecom(ProcedureActivityAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateProcedureActivityActProcedureActPerformerAssignedEntityTelecom(ProcedureActivityAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_PROCEDURE_ACTIVITY_ACT_PROCEDURE_ACT_PERFORMER_ASSIGNED_ENTITY_TELECOM__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.performer->excluding(null)->reject(assignedEntity.telecom->size() = 1)";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateProcedureActivityActProcedureActPerformerAssignedEntityTelecom(ProcedureActivityAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Activity Act Procedure Act Performer Assigned Entity Telecom</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateProcedureActivityActProcedureActPerformerAssignedEntityTelecom(ProcedureActivityAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Activity Act Procedure Act Performer Assigned Entity Telecom</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateProcedureActivityActProcedureActPerformerAssignedEntityTelecom(ProcedureActivityAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateProcedureActivityActProcedureActPerformerAssignedEntityTelecom(ProcedureActivityAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 
 	protected static Query<?, ?, ?> VALIDATE_PROCEDURE_ACTIVITY_ACT_PROCEDURE_ACT_PERFORMER_ASSIGNED_ENTITY_TELECOM__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param procedureActivityAct The receiving '<em><b>Procedure Activity Act</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param procedureActivityAct The receiving '<em><b>Procedure Activity Act</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 	@SuppressWarnings("unchecked")
 	public static boolean validateProcedureActivityActProcedureActPerformerAssignedEntityTelecom(
 			ProcedureActivityAct procedureActivityAct, DiagnosticChain diagnostics, Map<Object, Object> context) {
@@ -1711,36 +1747,36 @@ public class ProcedureActivityActOperations extends ClinicalStatementOperations 
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateProcedureActivityActProcedureActPerformerAssignedEntityRepOrg(ProcedureActivityAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Activity Act Procedure Act Performer Assigned Entity Rep Org</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateProcedureActivityActProcedureActPerformerAssignedEntityRepOrg(ProcedureActivityAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Activity Act Procedure Act Performer Assigned Entity Rep Org</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateProcedureActivityActProcedureActPerformerAssignedEntityRepOrg(ProcedureActivityAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateProcedureActivityActProcedureActPerformerAssignedEntityRepOrg(ProcedureActivityAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_PROCEDURE_ACTIVITY_ACT_PROCEDURE_ACT_PERFORMER_ASSIGNED_ENTITY_REP_ORG__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.performer->excluding(null)->reject(assignedEntity.representedOrganization->size() = 1)";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateProcedureActivityActProcedureActPerformerAssignedEntityRepOrg(ProcedureActivityAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Activity Act Procedure Act Performer Assigned Entity Rep Org</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateProcedureActivityActProcedureActPerformerAssignedEntityRepOrg(ProcedureActivityAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Activity Act Procedure Act Performer Assigned Entity Rep Org</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateProcedureActivityActProcedureActPerformerAssignedEntityRepOrg(ProcedureActivityAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateProcedureActivityActProcedureActPerformerAssignedEntityRepOrg(ProcedureActivityAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 
 	protected static Query<?, ?, ?> VALIDATE_PROCEDURE_ACTIVITY_ACT_PROCEDURE_ACT_PERFORMER_ASSIGNED_ENTITY_REP_ORG__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param procedureActivityAct The receiving '<em><b>Procedure Activity Act</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param procedureActivityAct The receiving '<em><b>Procedure Activity Act</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 	@SuppressWarnings("unchecked")
 	public static boolean validateProcedureActivityActProcedureActPerformerAssignedEntityRepOrg(
 			ProcedureActivityAct procedureActivityAct, DiagnosticChain diagnostics, Map<Object, Object> context) {
@@ -1776,36 +1812,36 @@ public class ProcedureActivityActOperations extends ClinicalStatementOperations 
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateProcedureActivityActProcedureActPerformerAssignedEntityRepOrgId(ProcedureActivityAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Activity Act Procedure Act Performer Assigned Entity Rep Org Id</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateProcedureActivityActProcedureActPerformerAssignedEntityRepOrgId(ProcedureActivityAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Activity Act Procedure Act Performer Assigned Entity Rep Org Id</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateProcedureActivityActProcedureActPerformerAssignedEntityRepOrgId(ProcedureActivityAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateProcedureActivityActProcedureActPerformerAssignedEntityRepOrgId(ProcedureActivityAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_PROCEDURE_ACTIVITY_ACT_PROCEDURE_ACT_PERFORMER_ASSIGNED_ENTITY_REP_ORG_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.performer->excluding(null)->reject(assignedEntity.representedOrganization.id->size() > 0)";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateProcedureActivityActProcedureActPerformerAssignedEntityRepOrgId(ProcedureActivityAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Activity Act Procedure Act Performer Assigned Entity Rep Org Id</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateProcedureActivityActProcedureActPerformerAssignedEntityRepOrgId(ProcedureActivityAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Activity Act Procedure Act Performer Assigned Entity Rep Org Id</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateProcedureActivityActProcedureActPerformerAssignedEntityRepOrgId(ProcedureActivityAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateProcedureActivityActProcedureActPerformerAssignedEntityRepOrgId(ProcedureActivityAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 
 	protected static Query<?, ?, ?> VALIDATE_PROCEDURE_ACTIVITY_ACT_PROCEDURE_ACT_PERFORMER_ASSIGNED_ENTITY_REP_ORG_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param procedureActivityAct The receiving '<em><b>Procedure Activity Act</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param procedureActivityAct The receiving '<em><b>Procedure Activity Act</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 	@SuppressWarnings("unchecked")
 	public static boolean validateProcedureActivityActProcedureActPerformerAssignedEntityRepOrgId(
 			ProcedureActivityAct procedureActivityAct, DiagnosticChain diagnostics, Map<Object, Object> context) {
@@ -1841,36 +1877,36 @@ public class ProcedureActivityActOperations extends ClinicalStatementOperations 
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateProcedureActivityActProcedureActPerformerAssignedEntityRepOrgName(ProcedureActivityAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Activity Act Procedure Act Performer Assigned Entity Rep Org Name</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateProcedureActivityActProcedureActPerformerAssignedEntityRepOrgName(ProcedureActivityAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Activity Act Procedure Act Performer Assigned Entity Rep Org Name</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateProcedureActivityActProcedureActPerformerAssignedEntityRepOrgName(ProcedureActivityAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateProcedureActivityActProcedureActPerformerAssignedEntityRepOrgName(ProcedureActivityAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_PROCEDURE_ACTIVITY_ACT_PROCEDURE_ACT_PERFORMER_ASSIGNED_ENTITY_REP_ORG_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.performer->excluding(null)->reject(assignedEntity.representedOrganization.name->size() > 0)";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateProcedureActivityActProcedureActPerformerAssignedEntityRepOrgName(ProcedureActivityAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Activity Act Procedure Act Performer Assigned Entity Rep Org Name</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateProcedureActivityActProcedureActPerformerAssignedEntityRepOrgName(ProcedureActivityAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Activity Act Procedure Act Performer Assigned Entity Rep Org Name</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateProcedureActivityActProcedureActPerformerAssignedEntityRepOrgName(ProcedureActivityAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateProcedureActivityActProcedureActPerformerAssignedEntityRepOrgName(ProcedureActivityAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 
 	protected static Query<?, ?, ?> VALIDATE_PROCEDURE_ACTIVITY_ACT_PROCEDURE_ACT_PERFORMER_ASSIGNED_ENTITY_REP_ORG_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param procedureActivityAct The receiving '<em><b>Procedure Activity Act</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param procedureActivityAct The receiving '<em><b>Procedure Activity Act</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 	@SuppressWarnings("unchecked")
 	public static boolean validateProcedureActivityActProcedureActPerformerAssignedEntityRepOrgName(
 			ProcedureActivityAct procedureActivityAct, DiagnosticChain diagnostics, Map<Object, Object> context) {
@@ -1906,36 +1942,36 @@ public class ProcedureActivityActOperations extends ClinicalStatementOperations 
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateProcedureActivityActProcedureActPerformerAssignedEntityRepOrgAddr(ProcedureActivityAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Activity Act Procedure Act Performer Assigned Entity Rep Org Addr</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateProcedureActivityActProcedureActPerformerAssignedEntityRepOrgAddr(ProcedureActivityAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Activity Act Procedure Act Performer Assigned Entity Rep Org Addr</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateProcedureActivityActProcedureActPerformerAssignedEntityRepOrgAddr(ProcedureActivityAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateProcedureActivityActProcedureActPerformerAssignedEntityRepOrgAddr(ProcedureActivityAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_PROCEDURE_ACTIVITY_ACT_PROCEDURE_ACT_PERFORMER_ASSIGNED_ENTITY_REP_ORG_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.performer->excluding(null)->reject(assignedEntity.representedOrganization.addr->size() = 1)";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateProcedureActivityActProcedureActPerformerAssignedEntityRepOrgAddr(ProcedureActivityAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Activity Act Procedure Act Performer Assigned Entity Rep Org Addr</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateProcedureActivityActProcedureActPerformerAssignedEntityRepOrgAddr(ProcedureActivityAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Activity Act Procedure Act Performer Assigned Entity Rep Org Addr</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateProcedureActivityActProcedureActPerformerAssignedEntityRepOrgAddr(ProcedureActivityAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateProcedureActivityActProcedureActPerformerAssignedEntityRepOrgAddr(ProcedureActivityAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 
 	protected static Query<?, ?, ?> VALIDATE_PROCEDURE_ACTIVITY_ACT_PROCEDURE_ACT_PERFORMER_ASSIGNED_ENTITY_REP_ORG_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param procedureActivityAct The receiving '<em><b>Procedure Activity Act</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param procedureActivityAct The receiving '<em><b>Procedure Activity Act</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 	@SuppressWarnings("unchecked")
 	public static boolean validateProcedureActivityActProcedureActPerformerAssignedEntityRepOrgAddr(
 			ProcedureActivityAct procedureActivityAct, DiagnosticChain diagnostics, Map<Object, Object> context) {
@@ -1971,36 +2007,36 @@ public class ProcedureActivityActOperations extends ClinicalStatementOperations 
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateProcedureActivityActProcedureActPerformerAssignedEntityRepOrgTelecom(ProcedureActivityAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Activity Act Procedure Act Performer Assigned Entity Rep Org Telecom</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateProcedureActivityActProcedureActPerformerAssignedEntityRepOrgTelecom(ProcedureActivityAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Activity Act Procedure Act Performer Assigned Entity Rep Org Telecom</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateProcedureActivityActProcedureActPerformerAssignedEntityRepOrgTelecom(ProcedureActivityAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateProcedureActivityActProcedureActPerformerAssignedEntityRepOrgTelecom(ProcedureActivityAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_PROCEDURE_ACTIVITY_ACT_PROCEDURE_ACT_PERFORMER_ASSIGNED_ENTITY_REP_ORG_TELECOM__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.performer->excluding(null)->reject(assignedEntity.representedOrganization.telecom->size() = 1)";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateProcedureActivityActProcedureActPerformerAssignedEntityRepOrgTelecom(ProcedureActivityAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Activity Act Procedure Act Performer Assigned Entity Rep Org Telecom</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateProcedureActivityActProcedureActPerformerAssignedEntityRepOrgTelecom(ProcedureActivityAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Activity Act Procedure Act Performer Assigned Entity Rep Org Telecom</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateProcedureActivityActProcedureActPerformerAssignedEntityRepOrgTelecom(ProcedureActivityAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateProcedureActivityActProcedureActPerformerAssignedEntityRepOrgTelecom(ProcedureActivityAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 
 	protected static Query<?, ?, ?> VALIDATE_PROCEDURE_ACTIVITY_ACT_PROCEDURE_ACT_PERFORMER_ASSIGNED_ENTITY_REP_ORG_TELECOM__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param procedureActivityAct The receiving '<em><b>Procedure Activity Act</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param procedureActivityAct The receiving '<em><b>Procedure Activity Act</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 	@SuppressWarnings("unchecked")
 	public static boolean validateProcedureActivityActProcedureActPerformerAssignedEntityRepOrgTelecom(
 			ProcedureActivityAct procedureActivityAct, DiagnosticChain diagnostics, Map<Object, Object> context) {
@@ -2036,36 +2072,36 @@ public class ProcedureActivityActOperations extends ClinicalStatementOperations 
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateProcedureActivityActEntryRelationshipProcedureActEncounterClassCode(ProcedureActivityAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Activity Act Entry Relationship Procedure Act Encounter Class Code</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateProcedureActivityActEntryRelationshipProcedureActEncounterClassCode(ProcedureActivityAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Activity Act Entry Relationship Procedure Act Encounter Class Code</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateProcedureActivityActEntryRelationshipProcedureActEncounterClassCode(ProcedureActivityAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateProcedureActivityActEntryRelationshipProcedureActEncounterClassCode(ProcedureActivityAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_PROCEDURE_ACTIVITY_ACT_ENTRY_RELATIONSHIP_PROCEDURE_ACT_ENCOUNTER_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->excluding(null)->select(typeCode=vocab::x_ActRelationshipEntryRelationship::COMP and not encounter.oclIsUndefined() and encounter.oclIsKindOf(cda::Encounter)).encounter->excluding(null)->reject(classCode=vocab::ActClass::ENC)";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateProcedureActivityActEntryRelationshipProcedureActEncounterClassCode(ProcedureActivityAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Activity Act Entry Relationship Procedure Act Encounter Class Code</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateProcedureActivityActEntryRelationshipProcedureActEncounterClassCode(ProcedureActivityAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Activity Act Entry Relationship Procedure Act Encounter Class Code</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateProcedureActivityActEntryRelationshipProcedureActEncounterClassCode(ProcedureActivityAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateProcedureActivityActEntryRelationshipProcedureActEncounterClassCode(ProcedureActivityAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 
 	protected static Query<?, ?, ?> VALIDATE_PROCEDURE_ACTIVITY_ACT_ENTRY_RELATIONSHIP_PROCEDURE_ACT_ENCOUNTER_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param procedureActivityAct The receiving '<em><b>Procedure Activity Act</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param procedureActivityAct The receiving '<em><b>Procedure Activity Act</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 	@SuppressWarnings("unchecked")
 	public static boolean validateProcedureActivityActEntryRelationshipProcedureActEncounterClassCode(
 			ProcedureActivityAct procedureActivityAct, DiagnosticChain diagnostics, Map<Object, Object> context) {
@@ -2101,36 +2137,36 @@ public class ProcedureActivityActOperations extends ClinicalStatementOperations 
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateProcedureActivityActEntryRelationshipProcedureActEncounterMoodCode(ProcedureActivityAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Activity Act Entry Relationship Procedure Act Encounter Mood Code</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateProcedureActivityActEntryRelationshipProcedureActEncounterMoodCode(ProcedureActivityAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Activity Act Entry Relationship Procedure Act Encounter Mood Code</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateProcedureActivityActEntryRelationshipProcedureActEncounterMoodCode(ProcedureActivityAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateProcedureActivityActEntryRelationshipProcedureActEncounterMoodCode(ProcedureActivityAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_PROCEDURE_ACTIVITY_ACT_ENTRY_RELATIONSHIP_PROCEDURE_ACT_ENCOUNTER_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->excluding(null)->select(typeCode=vocab::x_ActRelationshipEntryRelationship::COMP and not encounter.oclIsUndefined() and encounter.oclIsKindOf(cda::Encounter)).encounter->excluding(null)->reject(moodCode=vocab::x_DocumentEncounterMood::EVN)";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateProcedureActivityActEntryRelationshipProcedureActEncounterMoodCode(ProcedureActivityAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Activity Act Entry Relationship Procedure Act Encounter Mood Code</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateProcedureActivityActEntryRelationshipProcedureActEncounterMoodCode(ProcedureActivityAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Activity Act Entry Relationship Procedure Act Encounter Mood Code</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateProcedureActivityActEntryRelationshipProcedureActEncounterMoodCode(ProcedureActivityAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateProcedureActivityActEntryRelationshipProcedureActEncounterMoodCode(ProcedureActivityAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 
 	protected static Query<?, ?, ?> VALIDATE_PROCEDURE_ACTIVITY_ACT_ENTRY_RELATIONSHIP_PROCEDURE_ACT_ENCOUNTER_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param procedureActivityAct The receiving '<em><b>Procedure Activity Act</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param procedureActivityAct The receiving '<em><b>Procedure Activity Act</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 	@SuppressWarnings("unchecked")
 	public static boolean validateProcedureActivityActEntryRelationshipProcedureActEncounterMoodCode(
 			ProcedureActivityAct procedureActivityAct, DiagnosticChain diagnostics, Map<Object, Object> context) {
@@ -2166,36 +2202,36 @@ public class ProcedureActivityActOperations extends ClinicalStatementOperations 
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateProcedureActivityActEntryRelationshipProcedureActEncounterId(ProcedureActivityAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Activity Act Entry Relationship Procedure Act Encounter Id</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateProcedureActivityActEntryRelationshipProcedureActEncounterId(ProcedureActivityAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Activity Act Entry Relationship Procedure Act Encounter Id</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateProcedureActivityActEntryRelationshipProcedureActEncounterId(ProcedureActivityAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateProcedureActivityActEntryRelationshipProcedureActEncounterId(ProcedureActivityAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_PROCEDURE_ACTIVITY_ACT_ENTRY_RELATIONSHIP_PROCEDURE_ACT_ENCOUNTER_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->excluding(null)->select(typeCode=vocab::x_ActRelationshipEntryRelationship::COMP and not encounter.oclIsUndefined() and encounter.oclIsKindOf(cda::Encounter)).encounter->excluding(null)->reject((id->isEmpty() or id->exists(element | element.isNullFlavorUndefined())) implies (id->size() = 1))";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateProcedureActivityActEntryRelationshipProcedureActEncounterId(ProcedureActivityAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Activity Act Entry Relationship Procedure Act Encounter Id</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateProcedureActivityActEntryRelationshipProcedureActEncounterId(ProcedureActivityAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Activity Act Entry Relationship Procedure Act Encounter Id</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateProcedureActivityActEntryRelationshipProcedureActEncounterId(ProcedureActivityAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateProcedureActivityActEntryRelationshipProcedureActEncounterId(ProcedureActivityAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 
 	protected static Query<?, ?, ?> VALIDATE_PROCEDURE_ACTIVITY_ACT_ENTRY_RELATIONSHIP_PROCEDURE_ACT_ENCOUNTER_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param procedureActivityAct The receiving '<em><b>Procedure Activity Act</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param procedureActivityAct The receiving '<em><b>Procedure Activity Act</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 	@SuppressWarnings("unchecked")
 	public static boolean validateProcedureActivityActEntryRelationshipProcedureActEncounterId(
 			ProcedureActivityAct procedureActivityAct, DiagnosticChain diagnostics, Map<Object, Object> context) {
@@ -2231,36 +2267,36 @@ public class ProcedureActivityActOperations extends ClinicalStatementOperations 
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateProcedureActivityActEntryRelationshipInversionInd(ProcedureActivityAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Activity Act Entry Relationship Inversion Ind</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateProcedureActivityActEntryRelationshipInversionInd(ProcedureActivityAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Activity Act Entry Relationship Inversion Ind</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateProcedureActivityActEntryRelationshipInversionInd(ProcedureActivityAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateProcedureActivityActEntryRelationshipInversionInd(ProcedureActivityAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_PROCEDURE_ACTIVITY_ACT_ENTRY_RELATIONSHIP_INVERSION_IND__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->excluding(null)->select(typeCode=vocab::x_ActRelationshipEntryRelationship::COMP and not encounter.oclIsUndefined() and encounter.oclIsKindOf(cda::Encounter))->select(typeCode=vocab::x_ActRelationshipEntryRelationship::COMP and not encounter.oclIsUndefined() and encounter.oclIsKindOf(cda::Encounter))->reject(not inversionInd.oclIsUndefined() and inversionInd=true)";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateProcedureActivityActEntryRelationshipInversionInd(ProcedureActivityAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Activity Act Entry Relationship Inversion Ind</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateProcedureActivityActEntryRelationshipInversionInd(ProcedureActivityAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Activity Act Entry Relationship Inversion Ind</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateProcedureActivityActEntryRelationshipInversionInd(ProcedureActivityAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateProcedureActivityActEntryRelationshipInversionInd(ProcedureActivityAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 
 	protected static Query<?, ?, ?> VALIDATE_PROCEDURE_ACTIVITY_ACT_ENTRY_RELATIONSHIP_INVERSION_IND__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param procedureActivityAct The receiving '<em><b>Procedure Activity Act</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param procedureActivityAct The receiving '<em><b>Procedure Activity Act</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 	@SuppressWarnings("unchecked")
 	public static boolean validateProcedureActivityActEntryRelationshipInversionInd(
 			ProcedureActivityAct procedureActivityAct, DiagnosticChain diagnostics, Map<Object, Object> context) {
@@ -2296,36 +2332,36 @@ public class ProcedureActivityActOperations extends ClinicalStatementOperations 
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateProcedureActivityActEntryRelationshipTypeCode(ProcedureActivityAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Activity Act Entry Relationship Type Code</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateProcedureActivityActEntryRelationshipTypeCode(ProcedureActivityAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Activity Act Entry Relationship Type Code</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateProcedureActivityActEntryRelationshipTypeCode(ProcedureActivityAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateProcedureActivityActEntryRelationshipTypeCode(ProcedureActivityAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_PROCEDURE_ACTIVITY_ACT_ENTRY_RELATIONSHIP_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->excluding(null)->select(typeCode=vocab::x_ActRelationshipEntryRelationship::COMP and not encounter.oclIsUndefined() and encounter.oclIsKindOf(cda::Encounter))->select(typeCode=vocab::x_ActRelationshipEntryRelationship::COMP and not encounter.oclIsUndefined() and encounter.oclIsKindOf(cda::Encounter))->reject(typeCode=vocab::x_ActRelationshipEntryRelationship::COMP)";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateProcedureActivityActEntryRelationshipTypeCode(ProcedureActivityAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Activity Act Entry Relationship Type Code</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateProcedureActivityActEntryRelationshipTypeCode(ProcedureActivityAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Activity Act Entry Relationship Type Code</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateProcedureActivityActEntryRelationshipTypeCode(ProcedureActivityAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateProcedureActivityActEntryRelationshipTypeCode(ProcedureActivityAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 
 	protected static Query<?, ?, ?> VALIDATE_PROCEDURE_ACTIVITY_ACT_ENTRY_RELATIONSHIP_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param procedureActivityAct The receiving '<em><b>Procedure Activity Act</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param procedureActivityAct The receiving '<em><b>Procedure Activity Act</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 	@SuppressWarnings("unchecked")
 	public static boolean validateProcedureActivityActEntryRelationshipTypeCode(
 			ProcedureActivityAct procedureActivityAct, DiagnosticChain diagnostics, Map<Object, Object> context) {
@@ -2360,36 +2396,36 @@ public class ProcedureActivityActOperations extends ClinicalStatementOperations 
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateProcedureActivityActEntryRelationshipProcedureActEncounter(ProcedureActivityAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Activity Act Entry Relationship Procedure Act Encounter</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateProcedureActivityActEntryRelationshipProcedureActEncounter(ProcedureActivityAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Activity Act Entry Relationship Procedure Act Encounter</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateProcedureActivityActEntryRelationshipProcedureActEncounter(ProcedureActivityAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateProcedureActivityActEntryRelationshipProcedureActEncounter(ProcedureActivityAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_PROCEDURE_ACTIVITY_ACT_ENTRY_RELATIONSHIP_PROCEDURE_ACT_ENCOUNTER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->excluding(null)->select(typeCode=vocab::x_ActRelationshipEntryRelationship::COMP and not encounter.oclIsUndefined() and encounter.oclIsKindOf(cda::Encounter))->select(typeCode=vocab::x_ActRelationshipEntryRelationship::COMP and not encounter.oclIsUndefined() and encounter.oclIsKindOf(cda::Encounter))->reject(encounter->one(encounter : cda::Encounter | not encounter.oclIsUndefined() and encounter.oclIsKindOf(cda::Encounter)))";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateProcedureActivityActEntryRelationshipProcedureActEncounter(ProcedureActivityAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Activity Act Entry Relationship Procedure Act Encounter</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateProcedureActivityActEntryRelationshipProcedureActEncounter(ProcedureActivityAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Activity Act Entry Relationship Procedure Act Encounter</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateProcedureActivityActEntryRelationshipProcedureActEncounter(ProcedureActivityAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateProcedureActivityActEntryRelationshipProcedureActEncounter(ProcedureActivityAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 
 	protected static Query<?, ?, ?> VALIDATE_PROCEDURE_ACTIVITY_ACT_ENTRY_RELATIONSHIP_PROCEDURE_ACT_ENCOUNTER__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param procedureActivityAct The receiving '<em><b>Procedure Activity Act</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param procedureActivityAct The receiving '<em><b>Procedure Activity Act</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 	@SuppressWarnings("unchecked")
 	public static boolean validateProcedureActivityActEntryRelationshipProcedureActEncounter(
 			ProcedureActivityAct procedureActivityAct, DiagnosticChain diagnostics, Map<Object, Object> context) {
@@ -2425,13 +2461,13 @@ public class ProcedureActivityActOperations extends ClinicalStatementOperations 
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #getServiceDeliveryLocations(ProcedureActivityAct) <em>Get Service Delivery Locations</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #getServiceDeliveryLocations(ProcedureActivityAct) <em>Get Service Delivery Locations</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #getServiceDeliveryLocations(ProcedureActivityAct)
-	* @generated
-	* @ordered
-	*/
+	 * @see #getServiceDeliveryLocations(ProcedureActivityAct)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String GET_SERVICE_DELIVERY_LOCATIONS__EOCL_EXP = "self.getParticipantRoles()->select(participantRole : cda::ParticipantRole | not participantRole.oclIsUndefined() and participantRole.oclIsKindOf(consol::ServiceDeliveryLocation)).oclAsType(consol::ServiceDeliveryLocation)";
 
 	/**
@@ -2449,6 +2485,7 @@ public class ProcedureActivityActOperations extends ClinicalStatementOperations 
 	 * <!-- end-user-doc -->
 	* @generated
 	*/
+
 	public static EList<ServiceDeliveryLocation> getServiceDeliveryLocations(ProcedureActivityAct procedureActivityAct) {
 		if (GET_SERVICE_DELIVERY_LOCATIONS__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
@@ -2492,6 +2529,7 @@ public class ProcedureActivityActOperations extends ClinicalStatementOperations 
 	 * <!-- end-user-doc -->
 	* @generated
 	*/
+
 	public static Instructions getInstructions(ProcedureActivityAct procedureActivityAct) {
 		if (GET_INSTRUCTIONS__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
@@ -2533,6 +2571,7 @@ public class ProcedureActivityActOperations extends ClinicalStatementOperations 
 	 * <!-- end-user-doc -->
 	* @generated
 	*/
+
 	public static EList<Indication> getIndications(ProcedureActivityAct procedureActivityAct) {
 		if (GET_INDICATIONS__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
@@ -2576,6 +2615,7 @@ public class ProcedureActivityActOperations extends ClinicalStatementOperations 
 	 * <!-- end-user-doc -->
 	* @generated
 	*/
+
 	public static MedicationActivity getMedicationActivity(ProcedureActivityAct procedureActivityAct) {
 		if (GET_MEDICATION_ACTIVITY__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();

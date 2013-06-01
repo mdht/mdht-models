@@ -78,6 +78,7 @@ public class HistoryOfPastIllnessSectionOperations extends SectionOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_HISTORY_OF_PAST_ILLNESS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -90,6 +91,7 @@ public class HistoryOfPastIllnessSectionOperations extends SectionOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateHistoryOfPastIllnessSectionTemplateId(
 			HistoryOfPastIllnessSection historyOfPastIllnessSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
@@ -138,6 +140,7 @@ public class HistoryOfPastIllnessSectionOperations extends SectionOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_HISTORY_OF_PAST_ILLNESS_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -150,6 +153,7 @@ public class HistoryOfPastIllnessSectionOperations extends SectionOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateHistoryOfPastIllnessSectionCode(
 			HistoryOfPastIllnessSection historyOfPastIllnessSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
@@ -181,7 +185,7 @@ public class HistoryOfPastIllnessSectionOperations extends SectionOperations {
 	/**
 	* The cached OCL expression body for the '{@link #validateHistoryOfPastIllnessSectionCodeP(HistoryOfPastIllnessSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate History Of Past Illness Section Code P</em>}' operation.
 	* <!-- begin-user-doc -->
-	* <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	* @see #validateHistoryOfPastIllnessSectionCodeP(HistoryOfPastIllnessSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	* @generated
 	* @ordered
@@ -256,6 +260,7 @@ public class HistoryOfPastIllnessSectionOperations extends SectionOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_HISTORY_OF_PAST_ILLNESS_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -268,6 +273,7 @@ public class HistoryOfPastIllnessSectionOperations extends SectionOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateHistoryOfPastIllnessSectionTitle(
 			HistoryOfPastIllnessSection historyOfPastIllnessSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
@@ -314,6 +320,7 @@ public class HistoryOfPastIllnessSectionOperations extends SectionOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_HISTORY_OF_PAST_ILLNESS_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -326,6 +333,7 @@ public class HistoryOfPastIllnessSectionOperations extends SectionOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateHistoryOfPastIllnessSectionText(
 			HistoryOfPastIllnessSection historyOfPastIllnessSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
@@ -372,6 +380,7 @@ public class HistoryOfPastIllnessSectionOperations extends SectionOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_HISTORY_OF_PAST_ILLNESS_SECTION_PROBLEM_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -384,6 +393,7 @@ public class HistoryOfPastIllnessSectionOperations extends SectionOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateHistoryOfPastIllnessSectionProblemObservation(
 			HistoryOfPastIllnessSection historyOfPastIllnessSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
@@ -439,6 +449,7 @@ public class HistoryOfPastIllnessSectionOperations extends SectionOperations {
 	 * <!-- end-user-doc -->
 	* @generated
 	*/
+
 	public static EList<ProblemObservation> getProblemObservations(
 			HistoryOfPastIllnessSection historyOfPastIllnessSection) {
 		if (GET_PROBLEM_OBSERVATIONS__EOCL_QRY == null) {

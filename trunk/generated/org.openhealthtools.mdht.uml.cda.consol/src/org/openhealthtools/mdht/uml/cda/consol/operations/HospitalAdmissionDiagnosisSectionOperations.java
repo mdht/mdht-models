@@ -75,6 +75,7 @@ public class HospitalAdmissionDiagnosisSectionOperations extends SectionOperatio
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_HOSPITAL_ADMISSION_DIAGNOSIS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -87,6 +88,7 @@ public class HospitalAdmissionDiagnosisSectionOperations extends SectionOperatio
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateHospitalAdmissionDiagnosisSectionTemplateId(
 			HospitalAdmissionDiagnosisSection hospitalAdmissionDiagnosisSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
@@ -137,6 +139,7 @@ public class HospitalAdmissionDiagnosisSectionOperations extends SectionOperatio
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_HOSPITAL_ADMISSION_DIAGNOSIS_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -149,6 +152,7 @@ public class HospitalAdmissionDiagnosisSectionOperations extends SectionOperatio
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateHospitalAdmissionDiagnosisSectionCode(
 			HospitalAdmissionDiagnosisSection hospitalAdmissionDiagnosisSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
@@ -180,7 +184,7 @@ public class HospitalAdmissionDiagnosisSectionOperations extends SectionOperatio
 	/**
 	* The cached OCL expression body for the '{@link #validateHospitalAdmissionDiagnosisSectionCodeP(HospitalAdmissionDiagnosisSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Hospital Admission Diagnosis Section Code P</em>}' operation.
 	* <!-- begin-user-doc -->
-	* <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	* @see #validateHospitalAdmissionDiagnosisSectionCodeP(HospitalAdmissionDiagnosisSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	* @generated
 	* @ordered

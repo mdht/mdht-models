@@ -61,7 +61,7 @@ public class MedicationsSectionOperations extends MedicationsSectionEntriesOptio
 	/**
 	* The cached OCL expression body for the '{@link #validateMedicationsSectionCode(MedicationsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medications Section Code</em>}' operation.
 	* <!-- begin-user-doc -->
-	* <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	* @see #validateMedicationsSectionCode(MedicationsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	* @generated
 	* @ordered
@@ -136,6 +136,7 @@ public class MedicationsSectionOperations extends MedicationsSectionEntriesOptio
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_MEDICATIONS_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -148,6 +149,7 @@ public class MedicationsSectionOperations extends MedicationsSectionEntriesOptio
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateMedicationsSectionTitle(MedicationsSection medicationsSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -192,6 +194,7 @@ public class MedicationsSectionOperations extends MedicationsSectionEntriesOptio
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_MEDICATIONS_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -204,6 +207,7 @@ public class MedicationsSectionOperations extends MedicationsSectionEntriesOptio
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateMedicationsSectionText(MedicationsSection medicationsSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -248,6 +252,7 @@ public class MedicationsSectionOperations extends MedicationsSectionEntriesOptio
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_MEDICATIONS_SECTION_MEDICATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -260,6 +265,7 @@ public class MedicationsSectionOperations extends MedicationsSectionEntriesOptio
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateMedicationsSectionMedication(MedicationsSection medicationsSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -312,6 +318,7 @@ public class MedicationsSectionOperations extends MedicationsSectionEntriesOptio
 	 * <!-- end-user-doc -->
 	* @generated
 	*/
+
 	public static EList<MedicationActivity> getMedications(MedicationsSection medicationsSection) {
 		if (GET_MEDICATIONS__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
@@ -348,6 +355,7 @@ public class MedicationsSectionOperations extends MedicationsSectionEntriesOptio
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -360,6 +368,7 @@ public class MedicationsSectionOperations extends MedicationsSectionEntriesOptio
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateMedicationsSectionEntriesOptionalTemplateId(MedicationsSection medicationsSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 

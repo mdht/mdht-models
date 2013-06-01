@@ -123,6 +123,7 @@ public class MedicationActivityOperations extends SubstanceAdministrationOperati
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_MEDICATION_ACTIVITY_DOSE_QUANTITYORRATE_QUANTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -135,6 +136,7 @@ public class MedicationActivityOperations extends SubstanceAdministrationOperati
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateMedicationActivityDoseQuantityorrateQuantity(MedicationActivity medicationActivity,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -181,6 +183,7 @@ public class MedicationActivityOperations extends SubstanceAdministrationOperati
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_MEDICATION_ACTIVITY_TEXT_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -193,6 +196,7 @@ public class MedicationActivityOperations extends SubstanceAdministrationOperati
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateMedicationActivityTextReference(MedicationActivity medicationActivity,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -223,7 +227,7 @@ public class MedicationActivityOperations extends SubstanceAdministrationOperati
 	/**
 	* The cached OCL expression body for the '{@link #validateMedicationActivityReferenceValue(MedicationActivity, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Activity Reference Value</em>}' operation.
 	* <!-- begin-user-doc -->
-	* <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	* @see #validateMedicationActivityReferenceValue(MedicationActivity, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	* @generated
 	* @ordered
@@ -356,6 +360,7 @@ public class MedicationActivityOperations extends SubstanceAdministrationOperati
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_MEDICATION_ACTIVITY_EFFECTIVE_TIME_IVLTS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -368,6 +373,7 @@ public class MedicationActivityOperations extends SubstanceAdministrationOperati
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateMedicationActivityEffectiveTimeIVLTS(MedicationActivity medicationActivity,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -531,6 +537,7 @@ public class MedicationActivityOperations extends SubstanceAdministrationOperati
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_MEDICATION_ACTIVITY_EFFECTIVE_TIME_PIVLTS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -543,6 +550,7 @@ public class MedicationActivityOperations extends SubstanceAdministrationOperati
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateMedicationActivityEffectiveTimePIVLTS(MedicationActivity medicationActivity,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -647,6 +655,7 @@ public class MedicationActivityOperations extends SubstanceAdministrationOperati
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_MEDICATION_ACTIVITY_DOSE_QUANTITY_UNIT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -659,6 +668,7 @@ public class MedicationActivityOperations extends SubstanceAdministrationOperati
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateMedicationActivityDoseQuantityUnit(MedicationActivity medicationActivity,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -704,6 +714,7 @@ public class MedicationActivityOperations extends SubstanceAdministrationOperati
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_MEDICATION_ACTIVITY_DRUG_VEHICLE_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -716,6 +727,7 @@ public class MedicationActivityOperations extends SubstanceAdministrationOperati
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateMedicationActivityDrugVehicleTypeCode(MedicationActivity medicationActivity,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -761,6 +773,7 @@ public class MedicationActivityOperations extends SubstanceAdministrationOperati
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_MEDICATION_ACTIVITY_INSTRUCTIONS_INVERSION_IND__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -773,6 +786,7 @@ public class MedicationActivityOperations extends SubstanceAdministrationOperati
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateMedicationActivityInstructionsInversionInd(MedicationActivity medicationActivity,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -819,6 +833,7 @@ public class MedicationActivityOperations extends SubstanceAdministrationOperati
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_MEDICATION_ACTIVITY_PRECONDITION_SUBSTANCE_ADM_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -831,6 +846,7 @@ public class MedicationActivityOperations extends SubstanceAdministrationOperati
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateMedicationActivityPreconditionSubstanceAdmTypeCode(
 			MedicationActivity medicationActivity, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -877,6 +893,7 @@ public class MedicationActivityOperations extends SubstanceAdministrationOperati
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_MEDICATION_ACTIVITY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -889,6 +906,7 @@ public class MedicationActivityOperations extends SubstanceAdministrationOperati
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateMedicationActivityTemplateId(MedicationActivity medicationActivity,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -934,6 +952,7 @@ public class MedicationActivityOperations extends SubstanceAdministrationOperati
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_MEDICATION_ACTIVITY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -946,6 +965,7 @@ public class MedicationActivityOperations extends SubstanceAdministrationOperati
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateMedicationActivityClassCode(MedicationActivity medicationActivity,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -1050,6 +1070,7 @@ public class MedicationActivityOperations extends SubstanceAdministrationOperati
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_MEDICATION_ACTIVITY_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -1062,6 +1083,7 @@ public class MedicationActivityOperations extends SubstanceAdministrationOperati
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateMedicationActivityId(MedicationActivity medicationActivity,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -1106,6 +1128,7 @@ public class MedicationActivityOperations extends SubstanceAdministrationOperati
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_MEDICATION_ACTIVITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -1118,6 +1141,7 @@ public class MedicationActivityOperations extends SubstanceAdministrationOperati
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateMedicationActivityCode(MedicationActivity medicationActivity,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -1162,6 +1186,7 @@ public class MedicationActivityOperations extends SubstanceAdministrationOperati
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_MEDICATION_ACTIVITY_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -1174,6 +1199,7 @@ public class MedicationActivityOperations extends SubstanceAdministrationOperati
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateMedicationActivityStatusCode(MedicationActivity medicationActivity,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -1202,50 +1228,6 @@ public class MedicationActivityOperations extends SubstanceAdministrationOperati
 	}
 
 	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param medicationActivity The receiving '<em><b>Medication Activity</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
-	public static boolean validateMedicationActivityRouteCode(MedicationActivity medicationActivity,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
-		Object passToken = (context == null)
-				? null
-				: context.get("org.openhealthtools.mdht.uml.cda.consol.MedicationActivityRouteCodeP");
-		if ((passToken instanceof Collection<?>) && ((Collection<?>) passToken).contains(medicationActivity)) {
-			// I have a free pass to short-circuit
-			return true;
-		}
-
-		if (VALIDATE_MEDICATION_ACTIVITY_ROUTE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(ConsolPackage.Literals.MEDICATION_ACTIVITY);
-			try {
-				VALIDATE_MEDICATION_ACTIVITY_ROUTE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MEDICATION_ACTIVITY_ROUTE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_ACTIVITY_ROUTE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			medicationActivity)) {
-			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.MEDICATION_ACTIVITY__MEDICATION_ACTIVITY_ROUTE_CODE,
-					ConsolPlugin.INSTANCE.getString("MedicationActivityRouteCode"), new Object[] { medicationActivity }));
-			}
-
-			return false;
-		}
-		return true;
-	}
-
-	/**
 	* The cached OCL expression body for the '{@link #validateMedicationActivityRouteCodeP(MedicationActivity, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Activity Route Code P</em>}' operation.
 	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1265,28 +1247,6 @@ public class MedicationActivityOperations extends SubstanceAdministrationOperati
 	*/
 
 	protected static Constraint VALIDATE_MEDICATION_ACTIVITY_ROUTE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-
-	/**
-	* The cached OCL expression body for the '{@link #validateMedicationActivityRouteCode(MedicationActivity, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Activity Route Code</em>}' operation.
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @see #validateMedicationActivityRouteCode(MedicationActivity, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
-	protected static final String VALIDATE_MEDICATION_ACTIVITY_ROUTE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.routeCode.oclIsUndefined() or self.routeCode.isNullFlavorUndefined()) implies (not self.routeCode.oclIsUndefined() and self.routeCode.oclIsKindOf(datatypes::CE) and "
-			+ "let value : datatypes::CE = self.routeCode.oclAsType(datatypes::CE) in "
-			+ "value.codeSystem = '2.16.840.1.113883.3.26.1.1' and (value.code = 'C38192' or value.code = 'C38193' or value.code = 'C38194' or value.code = 'C38675' or value.code = 'C38197' or value.code = 'C38633' or value.code = 'C38205' or value.code = 'C38206' or value.code = 'C38208' or value.code = 'C38209' or value.code = 'C38210' or value.code = 'C38211' or value.code = 'C38212' or value.code = 'C38200' or value.code = 'C38215' or value.code = 'C38219' or value.code = 'C38220' or value.code = 'C38221' or value.code = 'C38222' or value.code = 'C38223' or value.code = 'C38224' or value.code = 'C38225' or value.code = 'C38226' or value.code = 'C38227' or value.code = 'C38228' or value.code = 'C38229' or value.code = 'C38230' or value.code = 'C38231' or value.code = 'C38232' or value.code = 'C38233' or value.code = 'C38234' or value.code = 'C38217' or value.code = 'C38218' or value.code = 'C38235' or value.code = 'C38238' or value.code = 'C38239' or value.code = 'C38240' or value.code = 'C38241' or value.code = 'C38242' or value.code = 'C38243' or value.code = 'C38245' or value.code = 'C38246' or value.code = 'C38247' or value.code = 'C38249' or value.code = 'C38250' or value.code = 'C38251' or value.code = 'C38252' or value.code = 'C38253' or value.code = 'C38254' or value.code = 'C28161' or value.code = 'C38255' or value.code = 'C38256' or value.code = 'C38257' or value.code = 'C38258' or value.code = 'C38259' or value.code = 'C38260' or value.code = 'C38261' or value.code = 'C38262' or value.code = 'C38263' or value.code = 'C38264' or value.code = 'C38265' or value.code = 'C38266' or value.code = 'C38267' or value.code = 'C38207' or value.code = 'C38268' or value.code = 'C38269' or value.code = 'C38270' or value.code = 'C38272' or value.code = 'C38273' or value.code = 'C38276' or value.code = 'C38277' or value.code = 'C38278' or value.code = 'C38280' or value.code = 'C38203' or value.code = 'C38281' or value.code = 'C38282' or value.code = 'C38284' or value.code = 'C38285' or value.code = 'C48623' or value.code = 'C38286' or value.code = 'C38287' or value.code = 'C38288' or value.code = 'C38289' or value.code = 'C38291' or value.code = 'C38676' or value.code = 'C38292' or value.code = 'C38677' or value.code = 'C38293' or value.code = 'C38294' or value.code = 'C38295' or value.code = 'C38216' or value.code = 'C38296' or value.code = 'C38198' or value.code = 'C38297' or value.code = 'C38298' or value.code = 'C38299' or value.code = 'C38300' or value.code = 'C38301' or value.code = 'C38304' or value.code = 'C38305' or value.code = 'C38283' or value.code = 'C38307' or value.code = 'C38308' or value.code = 'C38309' or value.code = 'C38312' or value.code = 'C38271'))";
-
-	/**
-	* The cached OCL invariant for the '{@link #validateMedicationActivityRouteCode(MedicationActivity, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Activity Route Code</em>}' invariant operation.
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @see #validateMedicationActivityRouteCode(MedicationActivity, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
-	protected static Constraint VALIDATE_MEDICATION_ACTIVITY_ROUTE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
 	* <!-- begin-user-doc -->
@@ -1339,6 +1299,29 @@ public class MedicationActivityOperations extends SubstanceAdministrationOperati
 	}
 
 	/**
+	* The cached OCL expression body for the '{@link #validateMedicationActivityRouteCode(MedicationActivity, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Activity Route Code</em>}' operation.
+	* <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	* @see #validateMedicationActivityRouteCode(MedicationActivity, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
+	protected static final String VALIDATE_MEDICATION_ACTIVITY_ROUTE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.routeCode.oclIsUndefined() or self.routeCode.isNullFlavorUndefined()) implies (not self.routeCode.oclIsUndefined() and self.routeCode.oclIsKindOf(datatypes::CE) and "
+			+ "let value : datatypes::CE = self.routeCode.oclAsType(datatypes::CE) in "
+			+ "value.codeSystem = '2.16.840.1.113883.3.26.1.1' and (value.code = 'C38192' or value.code = 'C38193' or value.code = 'C38194' or value.code = 'C38675' or value.code = 'C38197' or value.code = 'C38633' or value.code = 'C38205' or value.code = 'C38206' or value.code = 'C38208' or value.code = 'C38209' or value.code = 'C38210' or value.code = 'C38211' or value.code = 'C38212' or value.code = 'C38200' or value.code = 'C38215' or value.code = 'C38219' or value.code = 'C38220' or value.code = 'C38221' or value.code = 'C38222' or value.code = 'C38223' or value.code = 'C38224' or value.code = 'C38225' or value.code = 'C38226' or value.code = 'C38227' or value.code = 'C38228' or value.code = 'C38229' or value.code = 'C38230' or value.code = 'C38231' or value.code = 'C38232' or value.code = 'C38233' or value.code = 'C38234' or value.code = 'C38217' or value.code = 'C38218' or value.code = 'C38235' or value.code = 'C38238' or value.code = 'C38239' or value.code = 'C38240' or value.code = 'C38241' or value.code = 'C38242' or value.code = 'C38243' or value.code = 'C38245' or value.code = 'C38246' or value.code = 'C38247' or value.code = 'C38249' or value.code = 'C38250' or value.code = 'C38251' or value.code = 'C38252' or value.code = 'C38253' or value.code = 'C38254' or value.code = 'C28161' or value.code = 'C38255' or value.code = 'C38256' or value.code = 'C38257' or value.code = 'C38258' or value.code = 'C38259' or value.code = 'C38260' or value.code = 'C38261' or value.code = 'C38262' or value.code = 'C38263' or value.code = 'C38264' or value.code = 'C38265' or value.code = 'C38266' or value.code = 'C38267' or value.code = 'C38207' or value.code = 'C38268' or value.code = 'C38269' or value.code = 'C38270' or value.code = 'C38272' or value.code = 'C38273' or value.code = 'C38276' or value.code = 'C38277' or value.code = 'C38278' or value.code = 'C38280' or value.code = 'C38203' or value.code = 'C38281' or value.code = 'C38282' or value.code = 'C38284' or value.code = 'C38285' or value.code = 'C48623' or value.code = 'C38286' or value.code = 'C38287' or value.code = 'C38288' or value.code = 'C38289' or value.code = 'C38291' or value.code = 'C38676' or value.code = 'C38292' or value.code = 'C38677' or value.code = 'C38293' or value.code = 'C38294' or value.code = 'C38295' or value.code = 'C38216' or value.code = 'C38296' or value.code = 'C38198' or value.code = 'C38297' or value.code = 'C38298' or value.code = 'C38299' or value.code = 'C38300' or value.code = 'C38301' or value.code = 'C38304' or value.code = 'C38305' or value.code = 'C38283' or value.code = 'C38307' or value.code = 'C38308' or value.code = 'C38309' or value.code = 'C38312' or value.code = 'C38271'))";
+
+	/**
+	* The cached OCL invariant for the '{@link #validateMedicationActivityRouteCode(MedicationActivity, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Activity Route Code</em>}' invariant operation.
+	* <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	* @see #validateMedicationActivityRouteCode(MedicationActivity, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
+
+	protected static Constraint VALIDATE_MEDICATION_ACTIVITY_ROUTE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
+	/**
 	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	* <!-- begin-model-doc -->
@@ -1348,34 +1331,34 @@ public class MedicationActivityOperations extends SubstanceAdministrationOperati
 	* <!-- end-model-doc -->
 	* @generated
 	*/
-	public static boolean validateMedicationActivityApproachSiteCode(MedicationActivity medicationActivity,
+
+	public static boolean validateMedicationActivityRouteCode(MedicationActivity medicationActivity,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
 		Object passToken = (context == null)
 				? null
-				: context.get("org.openhealthtools.mdht.uml.cda.consol.MedicationActivityApproachSiteCodeP");
+				: context.get("org.openhealthtools.mdht.uml.cda.consol.MedicationActivityRouteCodeP");
 		if ((passToken instanceof Collection<?>) && ((Collection<?>) passToken).contains(medicationActivity)) {
 			// I have a free pass to short-circuit
 			return true;
 		}
 
-		if (VALIDATE_MEDICATION_ACTIVITY_APPROACH_SITE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+		if (VALIDATE_MEDICATION_ACTIVITY_ROUTE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.MEDICATION_ACTIVITY);
 			try {
-				VALIDATE_MEDICATION_ACTIVITY_APPROACH_SITE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MEDICATION_ACTIVITY_APPROACH_SITE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_MEDICATION_ACTIVITY_ROUTE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MEDICATION_ACTIVITY_ROUTE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_ACTIVITY_APPROACH_SITE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_ACTIVITY_ROUTE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
 			medicationActivity)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.MEDICATION_ACTIVITY__MEDICATION_ACTIVITY_APPROACH_SITE_CODE,
-					ConsolPlugin.INSTANCE.getString("MedicationActivityApproachSiteCode"),
-					new Object[] { medicationActivity }));
+					ConsolValidator.MEDICATION_ACTIVITY__MEDICATION_ACTIVITY_ROUTE_CODE,
+					ConsolPlugin.INSTANCE.getString("MedicationActivityRouteCode"), new Object[] { medicationActivity }));
 			}
 
 			return false;
@@ -1403,28 +1386,6 @@ public class MedicationActivityOperations extends SubstanceAdministrationOperati
 	*/
 
 	protected static Constraint VALIDATE_MEDICATION_ACTIVITY_APPROACH_SITE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-
-	/**
-	* The cached OCL expression body for the '{@link #validateMedicationActivityApproachSiteCode(MedicationActivity, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Activity Approach Site Code</em>}' operation.
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @see #validateMedicationActivityApproachSiteCode(MedicationActivity, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
-	protected static final String VALIDATE_MEDICATION_ACTIVITY_APPROACH_SITE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.approachSiteCode->isEmpty() or self.approachSiteCode->exists(element | element.isNullFlavorUndefined())) implies (self.approachSiteCode->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and "
-			+ "let value : datatypes::CD = element.oclAsType(datatypes::CD) in "
-			+ "value.codeSystem = '2.16.840.1.113883.6.96' and not value.code.oclIsUndefined()))";
-
-	/**
-	* The cached OCL invariant for the '{@link #validateMedicationActivityApproachSiteCode(MedicationActivity, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Activity Approach Site Code</em>}' invariant operation.
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @see #validateMedicationActivityApproachSiteCode(MedicationActivity, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
-	protected static Constraint VALIDATE_MEDICATION_ACTIVITY_APPROACH_SITE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
 	* <!-- begin-user-doc -->
@@ -1478,6 +1439,75 @@ public class MedicationActivityOperations extends SubstanceAdministrationOperati
 	}
 
 	/**
+	* The cached OCL expression body for the '{@link #validateMedicationActivityApproachSiteCode(MedicationActivity, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Activity Approach Site Code</em>}' operation.
+	* <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	* @see #validateMedicationActivityApproachSiteCode(MedicationActivity, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
+	protected static final String VALIDATE_MEDICATION_ACTIVITY_APPROACH_SITE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.approachSiteCode->isEmpty() or self.approachSiteCode->exists(element | element.isNullFlavorUndefined())) implies (self.approachSiteCode->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and "
+			+ "let value : datatypes::CD = element.oclAsType(datatypes::CD) in "
+			+ "value.codeSystem = '2.16.840.1.113883.6.96' and not value.code.oclIsUndefined()))";
+
+	/**
+	* The cached OCL invariant for the '{@link #validateMedicationActivityApproachSiteCode(MedicationActivity, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Activity Approach Site Code</em>}' invariant operation.
+	* <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	* @see #validateMedicationActivityApproachSiteCode(MedicationActivity, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
+
+	protected static Constraint VALIDATE_MEDICATION_ACTIVITY_APPROACH_SITE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
+	/**
+	* <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	* <!-- begin-model-doc -->
+	* @param medicationActivity The receiving '<em><b>Medication Activity</b></em>' model object.
+	* @param diagnostics The chain of diagnostics to which problems are to be appended.
+	* @param context The cache of context-specific information.
+	* <!-- end-model-doc -->
+	* @generated
+	*/
+
+	public static boolean validateMedicationActivityApproachSiteCode(MedicationActivity medicationActivity,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		Object passToken = (context == null)
+				? null
+				: context.get("org.openhealthtools.mdht.uml.cda.consol.MedicationActivityApproachSiteCodeP");
+		if ((passToken instanceof Collection<?>) && ((Collection<?>) passToken).contains(medicationActivity)) {
+			// I have a free pass to short-circuit
+			return true;
+		}
+
+		if (VALIDATE_MEDICATION_ACTIVITY_APPROACH_SITE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setContext(ConsolPackage.Literals.MEDICATION_ACTIVITY);
+			try {
+				VALIDATE_MEDICATION_ACTIVITY_APPROACH_SITE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MEDICATION_ACTIVITY_APPROACH_SITE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+			} catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_ACTIVITY_APPROACH_SITE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			medicationActivity)) {
+			if (diagnostics != null) {
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.MEDICATION_ACTIVITY__MEDICATION_ACTIVITY_APPROACH_SITE_CODE,
+					ConsolPlugin.INSTANCE.getString("MedicationActivityApproachSiteCode"),
+					new Object[] { medicationActivity }));
+			}
+
+			return false;
+		}
+		return true;
+	}
+
+	/**
 	* The cached OCL expression body for the '{@link #validateMedicationActivityDoseQuantity(MedicationActivity, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Activity Dose Quantity</em>}' operation.
 	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1495,6 +1525,7 @@ public class MedicationActivityOperations extends SubstanceAdministrationOperati
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_MEDICATION_ACTIVITY_DOSE_QUANTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -1507,6 +1538,7 @@ public class MedicationActivityOperations extends SubstanceAdministrationOperati
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateMedicationActivityDoseQuantity(MedicationActivity medicationActivity,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -1552,6 +1584,7 @@ public class MedicationActivityOperations extends SubstanceAdministrationOperati
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_MEDICATION_ACTIVITY_RATE_QUANTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -1564,6 +1597,7 @@ public class MedicationActivityOperations extends SubstanceAdministrationOperati
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateMedicationActivityRateQuantity(MedicationActivity medicationActivity,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -1609,6 +1643,7 @@ public class MedicationActivityOperations extends SubstanceAdministrationOperati
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_MEDICATION_ACTIVITY_MAX_DOSE_QUANTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -1621,6 +1656,7 @@ public class MedicationActivityOperations extends SubstanceAdministrationOperati
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateMedicationActivityMaxDoseQuantity(MedicationActivity medicationActivity,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -1668,6 +1704,7 @@ public class MedicationActivityOperations extends SubstanceAdministrationOperati
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_MEDICATION_ACTIVITY_ADMINISTRATION_UNIT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -1680,6 +1717,7 @@ public class MedicationActivityOperations extends SubstanceAdministrationOperati
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateMedicationActivityAdministrationUnitCode(MedicationActivity medicationActivity,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -1725,6 +1763,7 @@ public class MedicationActivityOperations extends SubstanceAdministrationOperati
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_MEDICATION_ACTIVITY_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -1737,6 +1776,7 @@ public class MedicationActivityOperations extends SubstanceAdministrationOperati
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateMedicationActivityText(MedicationActivity medicationActivity,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -1781,6 +1821,7 @@ public class MedicationActivityOperations extends SubstanceAdministrationOperati
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_MEDICATION_ACTIVITY_REPEAT_NUMBER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -1793,6 +1834,7 @@ public class MedicationActivityOperations extends SubstanceAdministrationOperati
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateMedicationActivityRepeatNumber(MedicationActivity medicationActivity,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -1838,6 +1880,7 @@ public class MedicationActivityOperations extends SubstanceAdministrationOperati
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_MEDICATION_ACTIVITY_MEDICATION_SUPPLY_ORDER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -1850,6 +1893,7 @@ public class MedicationActivityOperations extends SubstanceAdministrationOperati
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateMedicationActivityMedicationSupplyOrder(MedicationActivity medicationActivity,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -1895,6 +1939,7 @@ public class MedicationActivityOperations extends SubstanceAdministrationOperati
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_MEDICATION_ACTIVITY_REACTION_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -1907,6 +1952,7 @@ public class MedicationActivityOperations extends SubstanceAdministrationOperati
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateMedicationActivityReactionObservation(MedicationActivity medicationActivity,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -1935,108 +1981,6 @@ public class MedicationActivityOperations extends SubstanceAdministrationOperati
 	}
 
 	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param medicationActivity The receiving '<em><b>Medication Activity</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
-	public static boolean validateMedicationActivityConsumable(MedicationActivity medicationActivity,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
-		if (VALIDATE_MEDICATION_ACTIVITY_CONSUMABLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(ConsolPackage.Literals.MEDICATION_ACTIVITY);
-			try {
-				VALIDATE_MEDICATION_ACTIVITY_CONSUMABLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MEDICATION_ACTIVITY_CONSUMABLE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_ACTIVITY_CONSUMABLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			medicationActivity)) {
-			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.MEDICATION_ACTIVITY__MEDICATION_ACTIVITY_CONSUMABLE,
-					ConsolPlugin.INSTANCE.getString("MedicationActivityConsumable"),
-					new Object[] { medicationActivity }));
-			}
-
-			return false;
-		}
-		return true;
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param medicationActivity The receiving '<em><b>Medication Activity</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
-	@SuppressWarnings("unchecked")
-	public static boolean validateMedicationActivityConsumableMedicationInformation(
-			MedicationActivity medicationActivity, DiagnosticChain diagnostics, Map<Object, Object> context) {
-
-		if (VALIDATE_MEDICATION_ACTIVITY_CONSUMABLE_MEDICATION_INFORMATION__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(ConsolPackage.Literals.MEDICATION_ACTIVITY);
-			try {
-				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_MEDICATION_ACTIVITY_CONSUMABLE_MEDICATION_INFORMATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-				VALIDATE_MEDICATION_ACTIVITY_CONSUMABLE_MEDICATION_INFORMATION__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
-			} catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		Object oclResult = VALIDATE_MEDICATION_ACTIVITY_CONSUMABLE_MEDICATION_INFORMATION__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(medicationActivity);
-		if (oclResult != null && oclResult instanceof Collection) {
-			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
-
-			if (diagnostics != null) {
-				for (EObject eObject : oclResultSet) {
-					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.MEDICATION_ACTIVITY__MEDICATION_ACTIVITY_CONSUMABLE_MEDICATION_INFORMATION,
-						ConsolPlugin.INSTANCE.getString("MedicationActivityConsumableMedicationInformation"),
-						new Object[] { eObject }));
-				}
-
-			}
-			return oclResultSet.isEmpty();
-		}
-		return true;
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
-
-	public static MedicationSupplyOrder getMedicationSupplyOrder(MedicationActivity medicationActivity) {
-		if (GET_MEDICATION_SUPPLY_ORDER__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-				ConsolPackage.Literals.MEDICATION_ACTIVITY,
-				ConsolPackage.Literals.MEDICATION_ACTIVITY.getEAllOperations().get(91));
-			try {
-				GET_MEDICATION_SUPPLY_ORDER__EOCL_QRY = helper.createQuery(GET_MEDICATION_SUPPLY_ORDER__EOCL_EXP);
-			} catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_MEDICATION_SUPPLY_ORDER__EOCL_QRY);
-		return (MedicationSupplyOrder) query.evaluate(medicationActivity);
-	}
-
-	/**
 	* The cached OCL expression body for the '{@link #validateMedicationActivityPerformer(MedicationActivity, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Activity Performer</em>}' operation.
 	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -2054,6 +1998,7 @@ public class MedicationActivityOperations extends SubstanceAdministrationOperati
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_MEDICATION_ACTIVITY_PERFORMER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -2066,6 +2011,7 @@ public class MedicationActivityOperations extends SubstanceAdministrationOperati
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateMedicationActivityPerformer(MedicationActivity medicationActivity,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -2110,6 +2056,7 @@ public class MedicationActivityOperations extends SubstanceAdministrationOperati
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_MEDICATION_ACTIVITY_INSTRUCTIONS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -2122,6 +2069,7 @@ public class MedicationActivityOperations extends SubstanceAdministrationOperati
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateMedicationActivityInstructions(MedicationActivity medicationActivity,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -2167,6 +2115,7 @@ public class MedicationActivityOperations extends SubstanceAdministrationOperati
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_MEDICATION_ACTIVITY_INDICATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -2179,6 +2128,7 @@ public class MedicationActivityOperations extends SubstanceAdministrationOperati
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateMedicationActivityIndication(MedicationActivity medicationActivity,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -2224,6 +2174,7 @@ public class MedicationActivityOperations extends SubstanceAdministrationOperati
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_MEDICATION_ACTIVITY_MEDICATION_DISPENSE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -2236,6 +2187,7 @@ public class MedicationActivityOperations extends SubstanceAdministrationOperati
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateMedicationActivityMedicationDispense(MedicationActivity medicationActivity,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -2281,6 +2233,7 @@ public class MedicationActivityOperations extends SubstanceAdministrationOperati
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_MEDICATION_ACTIVITY_PRECONDITION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -2293,6 +2246,7 @@ public class MedicationActivityOperations extends SubstanceAdministrationOperati
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateMedicationActivityPrecondition(MedicationActivity medicationActivity,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -2338,68 +2292,8 @@ public class MedicationActivityOperations extends SubstanceAdministrationOperati
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_MEDICATION_ACTIVITY_DRUG_VEHICLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-
-	/**
-	* The cached OCL expression body for the '{@link #validateMedicationActivityConsumable(MedicationActivity, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Activity Consumable</em>}' operation.
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @see #validateMedicationActivityConsumable(MedicationActivity, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
-	protected static final String VALIDATE_MEDICATION_ACTIVITY_CONSUMABLE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.consumable->one(consumable : cda::Consumable | not consumable.oclIsUndefined() and consumable.oclIsKindOf(cda::Consumable))";
-
-	/**
-	* The cached OCL invariant for the '{@link #validateMedicationActivityConsumable(MedicationActivity, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Activity Consumable</em>}' invariant operation.
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @see #validateMedicationActivityConsumable(MedicationActivity, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
-	protected static Constraint VALIDATE_MEDICATION_ACTIVITY_CONSUMABLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-
-	/**
-	* The cached OCL expression body for the '{@link #validateMedicationActivityConsumableMedicationInformation(MedicationActivity, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Activity Consumable Medication Information</em>}' operation.
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @see #validateMedicationActivityConsumableMedicationInformation(MedicationActivity, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
-	protected static final String VALIDATE_MEDICATION_ACTIVITY_CONSUMABLE_MEDICATION_INFORMATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.consumable->excluding(null)->reject(manufacturedProduct->one(manufacturedProduct : cda::ManufacturedProduct | not manufacturedProduct.oclIsUndefined() and manufacturedProduct.oclIsKindOf(consol::MedicationInformation)))";
-
-	/**
-	* The cached OCL invariant for the '{@link #validateMedicationActivityConsumableMedicationInformation(MedicationActivity, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Activity Consumable Medication Information</em>}' invariant operation.
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @see #validateMedicationActivityConsumableMedicationInformation(MedicationActivity, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
-
-	protected static Query<?, ?, ?> VALIDATE_MEDICATION_ACTIVITY_CONSUMABLE_MEDICATION_INFORMATION__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
-
-	/**
-	* The cached OCL expression body for the '{@link #getMedicationSupplyOrder(MedicationActivity) <em>Get Medication Supply Order</em>}' operation.
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @see #getMedicationSupplyOrder(MedicationActivity)
-	* @generated
-	* @ordered
-	*/
-	protected static final String GET_MEDICATION_SUPPLY_ORDER__EOCL_EXP = "self.getSupplies()->select(supply : cda::Supply | not supply.oclIsUndefined() and supply.oclIsKindOf(consol::MedicationSupplyOrder))->asSequence()->any(true).oclAsType(consol::MedicationSupplyOrder)";
-
-	/**
-	* The cached OCL query for the '{@link #getMedicationSupplyOrder(MedicationActivity) <em>Get Medication Supply Order</em>}' query operation.
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @see #getMedicationSupplyOrder(MedicationActivity)
-	* @generated
-	* @ordered
-	*/
-	protected static OCLExpression<EClassifier> GET_MEDICATION_SUPPLY_ORDER__EOCL_QRY;
 
 	/**
 	* <!-- begin-user-doc -->
@@ -2411,6 +2305,7 @@ public class MedicationActivityOperations extends SubstanceAdministrationOperati
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateMedicationActivityDrugVehicle(MedicationActivity medicationActivity,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -2439,6 +2334,171 @@ public class MedicationActivityOperations extends SubstanceAdministrationOperati
 	}
 
 	/**
+	* The cached OCL expression body for the '{@link #validateMedicationActivityConsumable(MedicationActivity, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Activity Consumable</em>}' operation.
+	* <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	* @see #validateMedicationActivityConsumable(MedicationActivity, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
+	protected static final String VALIDATE_MEDICATION_ACTIVITY_CONSUMABLE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.consumable->one(consumable : cda::Consumable | not consumable.oclIsUndefined() and consumable.oclIsKindOf(cda::Consumable))";
+
+	/**
+	* The cached OCL invariant for the '{@link #validateMedicationActivityConsumable(MedicationActivity, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Activity Consumable</em>}' invariant operation.
+	* <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	* @see #validateMedicationActivityConsumable(MedicationActivity, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
+
+	protected static Constraint VALIDATE_MEDICATION_ACTIVITY_CONSUMABLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
+	/**
+	* <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	* <!-- begin-model-doc -->
+	* @param medicationActivity The receiving '<em><b>Medication Activity</b></em>' model object.
+	* @param diagnostics The chain of diagnostics to which problems are to be appended.
+	* @param context The cache of context-specific information.
+	* <!-- end-model-doc -->
+	* @generated
+	*/
+
+	public static boolean validateMedicationActivityConsumable(MedicationActivity medicationActivity,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		if (VALIDATE_MEDICATION_ACTIVITY_CONSUMABLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setContext(ConsolPackage.Literals.MEDICATION_ACTIVITY);
+			try {
+				VALIDATE_MEDICATION_ACTIVITY_CONSUMABLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MEDICATION_ACTIVITY_CONSUMABLE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+			} catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_ACTIVITY_CONSUMABLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			medicationActivity)) {
+			if (diagnostics != null) {
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.MEDICATION_ACTIVITY__MEDICATION_ACTIVITY_CONSUMABLE,
+					ConsolPlugin.INSTANCE.getString("MedicationActivityConsumable"),
+					new Object[] { medicationActivity }));
+			}
+
+			return false;
+		}
+		return true;
+	}
+
+	/**
+	* The cached OCL expression body for the '{@link #validateMedicationActivityConsumableMedicationInformation(MedicationActivity, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Activity Consumable Medication Information</em>}' operation.
+	* <!-- begin-user-doc -->
+	* <!-- end-user-doc -->
+	* @see #validateMedicationActivityConsumableMedicationInformation(MedicationActivity, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
+	protected static final String VALIDATE_MEDICATION_ACTIVITY_CONSUMABLE_MEDICATION_INFORMATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.consumable->excluding(null)->reject(manufacturedProduct->one(manufacturedProduct : cda::ManufacturedProduct | not manufacturedProduct.oclIsUndefined() and manufacturedProduct.oclIsKindOf(consol::MedicationInformation)))";
+
+	/**
+	 * The cached OCL invariant for the '{@link #validateMedicationActivityConsumableMedicationInformation(MedicationActivity, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Activity Consumable Medication Information</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateMedicationActivityConsumableMedicationInformation(MedicationActivity, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+
+	protected static Query<?, ?, ?> VALIDATE_MEDICATION_ACTIVITY_CONSUMABLE_MEDICATION_INFORMATION__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param medicationActivity The receiving '<em><b>Medication Activity</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	@SuppressWarnings("unchecked")
+	public static boolean validateMedicationActivityConsumableMedicationInformation(
+			MedicationActivity medicationActivity, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		if (VALIDATE_MEDICATION_ACTIVITY_CONSUMABLE_MEDICATION_INFORMATION__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setContext(ConsolPackage.Literals.MEDICATION_ACTIVITY);
+			try {
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_MEDICATION_ACTIVITY_CONSUMABLE_MEDICATION_INFORMATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_MEDICATION_ACTIVITY_CONSUMABLE_MEDICATION_INFORMATION__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+			} catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		Object oclResult = VALIDATE_MEDICATION_ACTIVITY_CONSUMABLE_MEDICATION_INFORMATION__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(medicationActivity);
+		if (oclResult != null && oclResult instanceof Collection) {
+			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
+
+			if (diagnostics != null) {
+				for (EObject eObject : oclResultSet) {
+					diagnostics.add(new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.MEDICATION_ACTIVITY__MEDICATION_ACTIVITY_CONSUMABLE_MEDICATION_INFORMATION,
+						ConsolPlugin.INSTANCE.getString("MedicationActivityConsumableMedicationInformation"),
+						new Object[] { eObject }));
+				}
+
+			}
+			return oclResultSet.isEmpty();
+		}
+		return true;
+	}
+
+	/**
+	 * The cached OCL expression body for the '{@link #getMedicationSupplyOrder(MedicationActivity) <em>Get Medication Supply Order</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getMedicationSupplyOrder(MedicationActivity)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String GET_MEDICATION_SUPPLY_ORDER__EOCL_EXP = "self.getSupplies()->select(supply : cda::Supply | not supply.oclIsUndefined() and supply.oclIsKindOf(consol::MedicationSupplyOrder))->asSequence()->any(true).oclAsType(consol::MedicationSupplyOrder)";
+
+	/**
+	* The cached OCL query for the '{@link #getMedicationSupplyOrder(MedicationActivity) <em>Get Medication Supply Order</em>}' query operation.
+	* <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	* @see #getMedicationSupplyOrder(MedicationActivity)
+	* @generated
+	* @ordered
+	*/
+	protected static OCLExpression<EClassifier> GET_MEDICATION_SUPPLY_ORDER__EOCL_QRY;
+
+	/**
+	* <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	* @generated
+	*/
+
+	public static MedicationSupplyOrder getMedicationSupplyOrder(MedicationActivity medicationActivity) {
+		if (GET_MEDICATION_SUPPLY_ORDER__EOCL_QRY == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setOperationContext(
+				ConsolPackage.Literals.MEDICATION_ACTIVITY,
+				ConsolPackage.Literals.MEDICATION_ACTIVITY.getEAllOperations().get(91));
+			try {
+				GET_MEDICATION_SUPPLY_ORDER__EOCL_QRY = helper.createQuery(GET_MEDICATION_SUPPLY_ORDER__EOCL_EXP);
+			} catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		OCL.Query query = EOCL_ENV.createQuery(GET_MEDICATION_SUPPLY_ORDER__EOCL_QRY);
+		return (MedicationSupplyOrder) query.evaluate(medicationActivity);
+	}
+
+	/**
 	* The cached OCL expression body for the '{@link #getReactionObservation(MedicationActivity) <em>Get Reaction Observation</em>}' operation.
 	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -2463,6 +2523,7 @@ public class MedicationActivityOperations extends SubstanceAdministrationOperati
 	 * <!-- end-user-doc -->
 	* @generated
 	*/
+
 	public static ReactionObservation getReactionObservation(MedicationActivity medicationActivity) {
 		if (GET_REACTION_OBSERVATION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
@@ -2504,6 +2565,7 @@ public class MedicationActivityOperations extends SubstanceAdministrationOperati
 	 * <!-- end-user-doc -->
 	* @generated
 	*/
+
 	public static Instructions getInstructions(MedicationActivity medicationActivity) {
 		if (GET_INSTRUCTIONS__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
@@ -2545,6 +2607,7 @@ public class MedicationActivityOperations extends SubstanceAdministrationOperati
 	 * <!-- end-user-doc -->
 	* @generated
 	*/
+
 	public static EList<Indication> getIndications(MedicationActivity medicationActivity) {
 		if (GET_INDICATIONS__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
@@ -2632,6 +2695,7 @@ public class MedicationActivityOperations extends SubstanceAdministrationOperati
 	 * <!-- end-user-doc -->
 	* @generated
 	*/
+
 	public static EList<DrugVehicle> getDrugVehicles(MedicationActivity medicationActivity) {
 		if (GET_DRUG_VEHICLES__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();

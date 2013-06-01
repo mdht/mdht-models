@@ -77,6 +77,7 @@ public class MedicationsSectionEntriesOptionalOperations extends SectionOperatio
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -89,6 +90,7 @@ public class MedicationsSectionEntriesOptionalOperations extends SectionOperatio
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateMedicationsSectionEntriesOptionalTemplateId(
 			MedicationsSectionEntriesOptional medicationsSectionEntriesOptional, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
@@ -139,6 +141,7 @@ public class MedicationsSectionEntriesOptionalOperations extends SectionOperatio
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -151,6 +154,7 @@ public class MedicationsSectionEntriesOptionalOperations extends SectionOperatio
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateMedicationsSectionEntriesOptionalCode(
 			MedicationsSectionEntriesOptional medicationsSectionEntriesOptional, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
@@ -197,6 +201,7 @@ public class MedicationsSectionEntriesOptionalOperations extends SectionOperatio
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -209,6 +214,7 @@ public class MedicationsSectionEntriesOptionalOperations extends SectionOperatio
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateMedicationsSectionEntriesOptionalTitle(
 			MedicationsSectionEntriesOptional medicationsSectionEntriesOptional, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
@@ -255,6 +261,7 @@ public class MedicationsSectionEntriesOptionalOperations extends SectionOperatio
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -267,6 +274,7 @@ public class MedicationsSectionEntriesOptionalOperations extends SectionOperatio
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateMedicationsSectionEntriesOptionalText(
 			MedicationsSectionEntriesOptional medicationsSectionEntriesOptional, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
@@ -313,6 +321,7 @@ public class MedicationsSectionEntriesOptionalOperations extends SectionOperatio
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL_MEDICATION_ACTIVITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -325,6 +334,7 @@ public class MedicationsSectionEntriesOptionalOperations extends SectionOperatio
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateMedicationsSectionEntriesOptionalMedicationActivity(
 			MedicationsSectionEntriesOptional medicationsSectionEntriesOptional, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
@@ -380,6 +390,7 @@ public class MedicationsSectionEntriesOptionalOperations extends SectionOperatio
 	 * <!-- end-user-doc -->
 	* @generated
 	*/
+
 	public static EList<MedicationActivity> getMedicationActivities(
 			MedicationsSectionEntriesOptional medicationsSectionEntriesOptional) {
 		if (GET_MEDICATION_ACTIVITIES__EOCL_QRY == null) {

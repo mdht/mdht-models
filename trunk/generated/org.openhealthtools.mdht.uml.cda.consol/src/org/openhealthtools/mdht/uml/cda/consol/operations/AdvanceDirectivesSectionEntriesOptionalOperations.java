@@ -78,6 +78,7 @@ public class AdvanceDirectivesSectionEntriesOptionalOperations extends SectionOp
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_ADVANCE_DIRECTIVES_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -90,6 +91,7 @@ public class AdvanceDirectivesSectionEntriesOptionalOperations extends SectionOp
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateAdvanceDirectivesSectionEntriesOptionalTemplateId(
 			AdvanceDirectivesSectionEntriesOptional advanceDirectivesSectionEntriesOptional,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
@@ -140,6 +142,7 @@ public class AdvanceDirectivesSectionEntriesOptionalOperations extends SectionOp
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_ADVANCE_DIRECTIVES_SECTION_ENTRIES_OPTIONAL_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -152,6 +155,7 @@ public class AdvanceDirectivesSectionEntriesOptionalOperations extends SectionOp
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateAdvanceDirectivesSectionEntriesOptionalCode(
 			AdvanceDirectivesSectionEntriesOptional advanceDirectivesSectionEntriesOptional,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
@@ -185,7 +189,7 @@ public class AdvanceDirectivesSectionEntriesOptionalOperations extends SectionOp
 	/**
 	* The cached OCL expression body for the '{@link #validateAdvanceDirectivesSectionEntriesOptionalCodeP(AdvanceDirectivesSectionEntriesOptional, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Advance Directives Section Entries Optional Code P</em>}' operation.
 	* <!-- begin-user-doc -->
-	* <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	* @see #validateAdvanceDirectivesSectionEntriesOptionalCodeP(AdvanceDirectivesSectionEntriesOptional, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	* @generated
 	* @ordered
@@ -262,6 +266,7 @@ public class AdvanceDirectivesSectionEntriesOptionalOperations extends SectionOp
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_ADVANCE_DIRECTIVES_SECTION_ENTRIES_OPTIONAL_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -274,6 +279,7 @@ public class AdvanceDirectivesSectionEntriesOptionalOperations extends SectionOp
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateAdvanceDirectivesSectionEntriesOptionalTitle(
 			AdvanceDirectivesSectionEntriesOptional advanceDirectivesSectionEntriesOptional,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
@@ -322,6 +328,7 @@ public class AdvanceDirectivesSectionEntriesOptionalOperations extends SectionOp
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_ADVANCE_DIRECTIVES_SECTION_ENTRIES_OPTIONAL_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -334,6 +341,7 @@ public class AdvanceDirectivesSectionEntriesOptionalOperations extends SectionOp
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateAdvanceDirectivesSectionEntriesOptionalText(
 			AdvanceDirectivesSectionEntriesOptional advanceDirectivesSectionEntriesOptional,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
@@ -382,6 +390,7 @@ public class AdvanceDirectivesSectionEntriesOptionalOperations extends SectionOp
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_ADVANCE_DIRECTIVES_SECTION_ENTRIES_OPTIONAL_ADVANCE_DIRECTIVE_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -394,6 +403,7 @@ public class AdvanceDirectivesSectionEntriesOptionalOperations extends SectionOp
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateAdvanceDirectivesSectionEntriesOptionalAdvanceDirectiveObservation(
 			AdvanceDirectivesSectionEntriesOptional advanceDirectivesSectionEntriesOptional,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
@@ -427,7 +437,7 @@ public class AdvanceDirectivesSectionEntriesOptionalOperations extends SectionOp
 	/**
 	* The cached OCL expression body for the '{@link #getAdvanceDirectiveObservations(AdvanceDirectivesSectionEntriesOptional) <em>Get Advance Directive Observations</em>}' operation.
 	* <!-- begin-user-doc -->
-	* <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	* @see #getAdvanceDirectiveObservations(AdvanceDirectivesSectionEntriesOptional)
 	* @generated
 	* @ordered

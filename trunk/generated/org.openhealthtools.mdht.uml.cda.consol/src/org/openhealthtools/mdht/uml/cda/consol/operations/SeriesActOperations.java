@@ -431,6 +431,7 @@ public class SeriesActOperations extends ClinicalStatementOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_SERIES_ACT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -443,6 +444,7 @@ public class SeriesActOperations extends ClinicalStatementOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateSeriesActTemplateId(SeriesAct seriesAct, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
@@ -486,6 +488,7 @@ public class SeriesActOperations extends ClinicalStatementOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_SERIES_ACT_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -498,6 +501,7 @@ public class SeriesActOperations extends ClinicalStatementOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateSeriesActClassCode(SeriesAct seriesAct, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
@@ -541,6 +545,7 @@ public class SeriesActOperations extends ClinicalStatementOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_SERIES_ACT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -553,6 +558,7 @@ public class SeriesActOperations extends ClinicalStatementOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateSeriesActMoodCode(SeriesAct seriesAct, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
@@ -598,6 +604,7 @@ public class SeriesActOperations extends ClinicalStatementOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_SERIES_ACT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -610,6 +617,7 @@ public class SeriesActOperations extends ClinicalStatementOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateSeriesActCode(SeriesAct seriesAct, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
@@ -652,6 +660,7 @@ public class SeriesActOperations extends ClinicalStatementOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_SERIES_ACT_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -664,6 +673,7 @@ public class SeriesActOperations extends ClinicalStatementOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateSeriesActEffectiveTime(SeriesAct seriesAct, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
@@ -707,6 +717,7 @@ public class SeriesActOperations extends ClinicalStatementOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_SERIES_ACT_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -719,6 +730,7 @@ public class SeriesActOperations extends ClinicalStatementOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateSeriesActId(SeriesAct seriesAct, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
@@ -761,6 +773,7 @@ public class SeriesActOperations extends ClinicalStatementOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_SERIES_ACT_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -773,6 +786,7 @@ public class SeriesActOperations extends ClinicalStatementOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateSeriesActText(SeriesAct seriesAct, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
@@ -815,6 +829,7 @@ public class SeriesActOperations extends ClinicalStatementOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_SERIES_ACT_SOP_INSTANCE_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -827,6 +842,7 @@ public class SeriesActOperations extends ClinicalStatementOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateSeriesActSOPInstanceObservation(SeriesAct seriesAct, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
@@ -856,7 +872,7 @@ public class SeriesActOperations extends ClinicalStatementOperations {
 	/**
 	* The cached OCL expression body for the '{@link #getSOPInstanceObservations(SeriesAct) <em>Get SOP Instance Observations</em>}' operation.
 	* <!-- begin-user-doc -->
-	* <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	* @see #getSOPInstanceObservations(SeriesAct)
 	* @generated
 	* @ordered

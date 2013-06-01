@@ -82,6 +82,7 @@ public class CodeObservationsOperations extends ClinicalStatementOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_CODE_OBSERVATIONS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -94,6 +95,7 @@ public class CodeObservationsOperations extends ClinicalStatementOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateCodeObservationsTemplateId(CodeObservations codeObservations,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 

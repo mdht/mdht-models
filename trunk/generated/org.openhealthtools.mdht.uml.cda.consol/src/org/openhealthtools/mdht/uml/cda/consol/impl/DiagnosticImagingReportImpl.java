@@ -216,7 +216,7 @@ public class DiagnosticImagingReportImpl extends GeneralHeaderConstraintsImpl im
 
 	/**
 	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	* <!-- end-user-doc -->
 	* @generated
 	*/
 	public boolean validateDiagnosticImagingReportParticipantAssociatedEntityPersonName(DiagnosticChain diagnostics,
@@ -226,10 +226,10 @@ public class DiagnosticImagingReportImpl extends GeneralHeaderConstraintsImpl im
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateDiagnosticImagingReportParticipantAssociatedEntityAssociatedPerson(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return DiagnosticImagingReportOperations.validateDiagnosticImagingReportParticipantAssociatedEntityAssociatedPerson(
@@ -237,10 +237,10 @@ public class DiagnosticImagingReportImpl extends GeneralHeaderConstraintsImpl im
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateDiagnosticImagingReportParticipantAssociatedEntity(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return DiagnosticImagingReportOperations.validateDiagnosticImagingReportParticipantAssociatedEntity(
@@ -248,10 +248,10 @@ public class DiagnosticImagingReportImpl extends GeneralHeaderConstraintsImpl im
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateDiagnosticImagingReportDocumentationOfServiceEvent4ClassCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return DiagnosticImagingReportOperations.validateDiagnosticImagingReportDocumentationOfServiceEvent4ClassCode(
@@ -259,10 +259,10 @@ public class DiagnosticImagingReportImpl extends GeneralHeaderConstraintsImpl im
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateDiagnosticImagingReportDocumentationOfServiceEvent4Code(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return DiagnosticImagingReportOperations.validateDiagnosticImagingReportDocumentationOfServiceEvent4Code(
@@ -270,10 +270,10 @@ public class DiagnosticImagingReportImpl extends GeneralHeaderConstraintsImpl im
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateDiagnosticImagingReportDocumentationOfServiceEvent4Id(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return DiagnosticImagingReportOperations.validateDiagnosticImagingReportDocumentationOfServiceEvent4Id(
@@ -281,10 +281,10 @@ public class DiagnosticImagingReportImpl extends GeneralHeaderConstraintsImpl im
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateDiagnosticImagingReportDocumentationOfServiceEvent4PhysicianReadingStudyPerformer(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return DiagnosticImagingReportOperations.validateDiagnosticImagingReportDocumentationOfServiceEvent4PhysicianReadingStudyPerformer(
@@ -292,10 +292,10 @@ public class DiagnosticImagingReportImpl extends GeneralHeaderConstraintsImpl im
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateDiagnosticImagingReportDocumentationOfServiceEvent3(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return DiagnosticImagingReportOperations.validateDiagnosticImagingReportDocumentationOfServiceEvent3(
@@ -303,10 +303,10 @@ public class DiagnosticImagingReportImpl extends GeneralHeaderConstraintsImpl im
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateDiagnosticImagingReportComponentOfEncompassingEncounter7ResponsiblePartyAssignedEntityHasAssignPersonOrRepresentedOrganization(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return DiagnosticImagingReportOperations.validateDiagnosticImagingReportComponentOfEncompassingEncounter7ResponsiblePartyAssignedEntityHasAssignPersonOrRepresentedOrganization(
@@ -314,10 +314,10 @@ public class DiagnosticImagingReportImpl extends GeneralHeaderConstraintsImpl im
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateDiagnosticImagingReportComponentOfEncompassingEncounter7ResponsiblePartyAssignedEntity(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return DiagnosticImagingReportOperations.validateDiagnosticImagingReportComponentOfEncompassingEncounter7ResponsiblePartyAssignedEntity(
@@ -325,10 +325,10 @@ public class DiagnosticImagingReportImpl extends GeneralHeaderConstraintsImpl im
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateDiagnosticImagingReportComponentOfEncompassingEncounter7EffectiveTime(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return DiagnosticImagingReportOperations.validateDiagnosticImagingReportComponentOfEncompassingEncounter7EffectiveTime(
@@ -336,10 +336,10 @@ public class DiagnosticImagingReportImpl extends GeneralHeaderConstraintsImpl im
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateDiagnosticImagingReportComponentOfEncompassingEncounter7Id(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return DiagnosticImagingReportOperations.validateDiagnosticImagingReportComponentOfEncompassingEncounter7Id(
@@ -347,10 +347,10 @@ public class DiagnosticImagingReportImpl extends GeneralHeaderConstraintsImpl im
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateDiagnosticImagingReportComponentOfEncompassingEncounter7PhysicianofRecordParticipant(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return DiagnosticImagingReportOperations.validateDiagnosticImagingReportComponentOfEncompassingEncounter7PhysicianofRecordParticipant(
@@ -358,10 +358,10 @@ public class DiagnosticImagingReportImpl extends GeneralHeaderConstraintsImpl im
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateDiagnosticImagingReportComponentOfEncompassingEncounter7ResponsibleParty(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return DiagnosticImagingReportOperations.validateDiagnosticImagingReportComponentOfEncompassingEncounter7ResponsibleParty(
@@ -369,10 +369,10 @@ public class DiagnosticImagingReportImpl extends GeneralHeaderConstraintsImpl im
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateDiagnosticImagingReportComponentOfEncompassingEncounter(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return DiagnosticImagingReportOperations.validateDiagnosticImagingReportComponentOfEncompassingEncounter(
@@ -380,10 +380,10 @@ public class DiagnosticImagingReportImpl extends GeneralHeaderConstraintsImpl im
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public FindingsSection getFindingsSection() {
 		return DiagnosticImagingReportOperations.getFindingsSection(this);
 	}

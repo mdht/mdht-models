@@ -78,6 +78,7 @@ public class ImmunizationsSectionEntriesOptionalOperations extends SectionOperat
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_IMMUNIZATIONS_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -90,6 +91,7 @@ public class ImmunizationsSectionEntriesOptionalOperations extends SectionOperat
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateImmunizationsSectionEntriesOptionalTemplateId(
 			ImmunizationsSectionEntriesOptional immunizationsSectionEntriesOptional, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
@@ -140,6 +142,7 @@ public class ImmunizationsSectionEntriesOptionalOperations extends SectionOperat
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_IMMUNIZATIONS_SECTION_ENTRIES_OPTIONAL_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -152,6 +155,7 @@ public class ImmunizationsSectionEntriesOptionalOperations extends SectionOperat
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateImmunizationsSectionEntriesOptionalCode(
 			ImmunizationsSectionEntriesOptional immunizationsSectionEntriesOptional, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
@@ -184,7 +188,7 @@ public class ImmunizationsSectionEntriesOptionalOperations extends SectionOperat
 	/**
 	* The cached OCL expression body for the '{@link #validateImmunizationsSectionEntriesOptionalCodeP(ImmunizationsSectionEntriesOptional, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Immunizations Section Entries Optional Code P</em>}' operation.
 	* <!-- begin-user-doc -->
-	* <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	* @see #validateImmunizationsSectionEntriesOptionalCodeP(ImmunizationsSectionEntriesOptional, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	* @generated
 	* @ordered
@@ -261,6 +265,7 @@ public class ImmunizationsSectionEntriesOptionalOperations extends SectionOperat
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_IMMUNIZATIONS_SECTION_ENTRIES_OPTIONAL_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -273,6 +278,7 @@ public class ImmunizationsSectionEntriesOptionalOperations extends SectionOperat
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateImmunizationsSectionEntriesOptionalTitle(
 			ImmunizationsSectionEntriesOptional immunizationsSectionEntriesOptional, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
@@ -320,6 +326,7 @@ public class ImmunizationsSectionEntriesOptionalOperations extends SectionOperat
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_IMMUNIZATIONS_SECTION_ENTRIES_OPTIONAL_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -332,6 +339,7 @@ public class ImmunizationsSectionEntriesOptionalOperations extends SectionOperat
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateImmunizationsSectionEntriesOptionalText(
 			ImmunizationsSectionEntriesOptional immunizationsSectionEntriesOptional, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
@@ -379,6 +387,7 @@ public class ImmunizationsSectionEntriesOptionalOperations extends SectionOperat
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_IMMUNIZATIONS_SECTION_ENTRIES_OPTIONAL_IMMUNIZATION_ACTIVITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -391,6 +400,7 @@ public class ImmunizationsSectionEntriesOptionalOperations extends SectionOperat
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateImmunizationsSectionEntriesOptionalImmunizationActivity(
 			ImmunizationsSectionEntriesOptional immunizationsSectionEntriesOptional, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
@@ -446,6 +456,7 @@ public class ImmunizationsSectionEntriesOptionalOperations extends SectionOperat
 	 * <!-- end-user-doc -->
 	* @generated
 	*/
+
 	public static EList<ImmunizationActivity> getImmunizationActivities(
 			ImmunizationsSectionEntriesOptional immunizationsSectionEntriesOptional) {
 		if (GET_IMMUNIZATION_ACTIVITIES__EOCL_QRY == null) {

@@ -447,7 +447,7 @@ public class ProcedureNoteImpl extends GeneralHeaderConstraintsImpl implements P
 
 	/**
 	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	* <!-- end-user-doc -->
 	* @generated
 	*/
 	public boolean validateProcedureNoteComponentOfEncompassingEncounter5LocationHealthCareFacilityId(
@@ -457,10 +457,10 @@ public class ProcedureNoteImpl extends GeneralHeaderConstraintsImpl implements P
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateProcedureNoteComponentOfEncompassingEncounter5LocationHealthCareFacility(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProcedureNoteOperations.validateProcedureNoteComponentOfEncompassingEncounter5LocationHealthCareFacility(
@@ -468,10 +468,10 @@ public class ProcedureNoteImpl extends GeneralHeaderConstraintsImpl implements P
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateProcedureNoteComponentOfEncompassingEncounter5EncounterParticipantTypeCode(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProcedureNoteOperations.validateProcedureNoteComponentOfEncompassingEncounter5EncounterParticipantTypeCode(
@@ -479,10 +479,10 @@ public class ProcedureNoteImpl extends GeneralHeaderConstraintsImpl implements P
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateProcedureNoteComponentOfEncompassingEncounter5Code(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ProcedureNoteOperations.validateProcedureNoteComponentOfEncompassingEncounter5Code(
@@ -490,10 +490,10 @@ public class ProcedureNoteImpl extends GeneralHeaderConstraintsImpl implements P
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateProcedureNoteComponentOfEncompassingEncounter5Location(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ProcedureNoteOperations.validateProcedureNoteComponentOfEncompassingEncounter5Location(
@@ -501,10 +501,10 @@ public class ProcedureNoteImpl extends GeneralHeaderConstraintsImpl implements P
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateProcedureNoteComponentOfEncompassingEncounter5EncounterParticipant(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProcedureNoteOperations.validateProcedureNoteComponentOfEncompassingEncounter5EncounterParticipant(
@@ -512,10 +512,10 @@ public class ProcedureNoteImpl extends GeneralHeaderConstraintsImpl implements P
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateProcedureNoteComponentOfEncompassingEncounter5(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ProcedureNoteOperations.validateProcedureNoteComponentOfEncompassingEncounter5(
@@ -523,10 +523,10 @@ public class ProcedureNoteImpl extends GeneralHeaderConstraintsImpl implements P
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateProcedureNoteDocumentationOfServiceEvent1PrimaryPerformerAssignedEntityCodeP(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProcedureNoteOperations.validateProcedureNoteDocumentationOfServiceEvent1PrimaryPerformerAssignedEntityCodeP(
@@ -534,10 +534,10 @@ public class ProcedureNoteImpl extends GeneralHeaderConstraintsImpl implements P
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateProcedureNoteDocumentationOfServiceEvent1PrimaryPerformerAssignedEntityCode(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProcedureNoteOperations.validateProcedureNoteDocumentationOfServiceEvent1PrimaryPerformerAssignedEntityCode(
@@ -545,10 +545,10 @@ public class ProcedureNoteImpl extends GeneralHeaderConstraintsImpl implements P
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateProcedureNoteDocumentationOfServiceEvent1PrimaryPerformerTypeCode(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProcedureNoteOperations.validateProcedureNoteDocumentationOfServiceEvent1PrimaryPerformerTypeCode(
@@ -556,10 +556,10 @@ public class ProcedureNoteImpl extends GeneralHeaderConstraintsImpl implements P
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateProcedureNoteDocumentationOfServiceEvent1PrimaryPerformerAssignedEntity(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProcedureNoteOperations.validateProcedureNoteDocumentationOfServiceEvent1PrimaryPerformerAssignedEntity(
@@ -567,10 +567,10 @@ public class ProcedureNoteImpl extends GeneralHeaderConstraintsImpl implements P
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateProcedureNoteDocumentationOfServiceEvent1ProcedureCodes(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ProcedureNoteOperations.validateProcedureNoteDocumentationOfServiceEvent1ProcedureCodes(
@@ -578,10 +578,10 @@ public class ProcedureNoteImpl extends GeneralHeaderConstraintsImpl implements P
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateProcedureNoteDocumentationOfServiceEvent1EffectiveTimeHasLow(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ProcedureNoteOperations.validateProcedureNoteDocumentationOfServiceEvent1EffectiveTimeHasLow(
@@ -589,10 +589,10 @@ public class ProcedureNoteImpl extends GeneralHeaderConstraintsImpl implements P
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateProcedureNoteDocumentationOfServiceEvent1EffectiveTimeHasHighWhenNoWidth(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProcedureNoteOperations.validateProcedureNoteDocumentationOfServiceEvent1EffectiveTimeHasHighWhenNoWidth(
@@ -600,10 +600,10 @@ public class ProcedureNoteImpl extends GeneralHeaderConstraintsImpl implements P
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateProcedureNoteDocumentationOfServiceEvent1EffectiveTimeNoHighIfWidth(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProcedureNoteOperations.validateProcedureNoteDocumentationOfServiceEvent1EffectiveTimeNoHighIfWidth(
@@ -611,20 +611,20 @@ public class ProcedureNoteImpl extends GeneralHeaderConstraintsImpl implements P
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateProcedureNoteDocumentationOfServiceEvent1Code(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ProcedureNoteOperations.validateProcedureNoteDocumentationOfServiceEvent1Code(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateProcedureNoteDocumentationOfServiceEvent1EffectiveTime(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ProcedureNoteOperations.validateProcedureNoteDocumentationOfServiceEvent1EffectiveTime(
@@ -632,10 +632,10 @@ public class ProcedureNoteImpl extends GeneralHeaderConstraintsImpl implements P
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateProcedureNoteDocumentationOfServiceEvent1PrimaryPerformer(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ProcedureNoteOperations.validateProcedureNoteDocumentationOfServiceEvent1PrimaryPerformer(
@@ -643,20 +643,20 @@ public class ProcedureNoteImpl extends GeneralHeaderConstraintsImpl implements P
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateProcedureNoteDocumentationOfServiceEvent1(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ProcedureNoteOperations.validateProcedureNoteDocumentationOfServiceEvent1(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public AssessmentSection getAssessmentSection() {
 		return ProcedureNoteOperations.getAssessmentSection(this);
 	}

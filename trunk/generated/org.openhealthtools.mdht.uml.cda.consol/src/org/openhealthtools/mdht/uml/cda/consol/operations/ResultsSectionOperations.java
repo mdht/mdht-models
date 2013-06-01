@@ -62,7 +62,7 @@ public class ResultsSectionOperations extends ResultsSectionEntriesOptionalOpera
 	/**
 	* The cached OCL expression body for the '{@link #validateResultsSectionCodeP(ResultsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Results Section Code P</em>}' operation.
 	* <!-- begin-user-doc -->
-	* <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	* @see #validateResultsSectionCodeP(ResultsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	* @generated
 	* @ordered
@@ -196,6 +196,27 @@ public class ResultsSectionOperations extends ResultsSectionEntriesOptionalOpera
 	}
 
 	/**
+	* The cached OCL expression body for the '{@link #validateResultsSectionTitle(ResultsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Results Section Title</em>}' operation.
+	* <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	* @see #validateResultsSectionTitle(ResultsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
+	protected static final String VALIDATE_RESULTS_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.title.oclIsUndefined() or self.title.isNullFlavorUndefined()) implies (not self.title.oclIsUndefined())";
+
+	/**
+	* The cached OCL invariant for the '{@link #validateResultsSectionTitle(ResultsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Results Section Title</em>}' invariant operation.
+	* <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	* @see #validateResultsSectionTitle(ResultsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
+
+	protected static Constraint VALIDATE_RESULTS_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
+	/**
 	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	* <!-- begin-model-doc -->
@@ -205,6 +226,7 @@ public class ResultsSectionOperations extends ResultsSectionEntriesOptionalOpera
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateResultsSectionTitle(ResultsSection resultsSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
@@ -231,26 +253,6 @@ public class ResultsSectionOperations extends ResultsSectionEntriesOptionalOpera
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateResultsSectionTitle(ResultsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Results Section Title</em>}' operation.
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @see #validateResultsSectionTitle(ResultsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
-	protected static final String VALIDATE_RESULTS_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.title.oclIsUndefined() or self.title.isNullFlavorUndefined()) implies (not self.title.oclIsUndefined())";
-
-	/**
-	* The cached OCL invariant for the '{@link #validateResultsSectionTitle(ResultsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Results Section Title</em>}' invariant operation.
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @see #validateResultsSectionTitle(ResultsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
-	protected static Constraint VALIDATE_RESULTS_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-
-	/**
 	* The cached OCL expression body for the '{@link #validateResultsSectionText(ResultsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Results Section Text</em>}' operation.
 	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -268,6 +270,7 @@ public class ResultsSectionOperations extends ResultsSectionEntriesOptionalOpera
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_RESULTS_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -280,6 +283,7 @@ public class ResultsSectionOperations extends ResultsSectionEntriesOptionalOpera
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateResultsSectionText(ResultsSection resultsSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
@@ -323,6 +327,7 @@ public class ResultsSectionOperations extends ResultsSectionEntriesOptionalOpera
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_RESULTS_SECTION_RESULT_ORGANIZER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -335,6 +340,7 @@ public class ResultsSectionOperations extends ResultsSectionEntriesOptionalOpera
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateResultsSectionResultOrganizer(ResultsSection resultsSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -386,6 +392,7 @@ public class ResultsSectionOperations extends ResultsSectionEntriesOptionalOpera
 	 * <!-- end-user-doc -->
 	* @generated
 	*/
+
 	public static EList<ResultOrganizer> getConsolResultOrganizers(ResultsSection resultsSection) {
 		if (GET_CONSOL_RESULT_ORGANIZERS__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
@@ -422,6 +429,7 @@ public class ResultsSectionOperations extends ResultsSectionEntriesOptionalOpera
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_RESULTS_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -434,6 +442,7 @@ public class ResultsSectionOperations extends ResultsSectionEntriesOptionalOpera
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateResultsSectionEntriesOptionalTemplateId(ResultsSection resultsSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 

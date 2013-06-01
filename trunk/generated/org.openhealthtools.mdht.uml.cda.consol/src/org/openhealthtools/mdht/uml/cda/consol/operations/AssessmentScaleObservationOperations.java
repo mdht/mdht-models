@@ -1041,7 +1041,7 @@ public class AssessmentScaleObservationOperations extends ClinicalStatementOpera
 	/**
 	* The cached OCL expression body for the '{@link #validateAssessmentScaleObservationReferenceRangeObservationRangeTextReference(AssessmentScaleObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Assessment Scale Observation Reference Range Observation Range Text Reference</em>}' operation.
 	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	* <!-- end-user-doc -->
 	* @see #validateAssessmentScaleObservationReferenceRangeObservationRangeTextReference(AssessmentScaleObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	* @generated
 	* @ordered
@@ -1049,26 +1049,26 @@ public class AssessmentScaleObservationOperations extends ClinicalStatementOpera
 	protected static final String VALIDATE_ASSESSMENT_SCALE_OBSERVATION_REFERENCE_RANGE_OBSERVATION_RANGE_TEXT_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.referenceRange->excluding(null).observationRange->excluding(null)->reject(not text.oclIsUndefined() implies text->forAll(reference->size() = 1))";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateAssessmentScaleObservationReferenceRangeObservationRangeTextReference(AssessmentScaleObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Assessment Scale Observation Reference Range Observation Range Text Reference</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateAssessmentScaleObservationReferenceRangeObservationRangeTextReference(AssessmentScaleObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Assessment Scale Observation Reference Range Observation Range Text Reference</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateAssessmentScaleObservationReferenceRangeObservationRangeTextReference(AssessmentScaleObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateAssessmentScaleObservationReferenceRangeObservationRangeTextReference(AssessmentScaleObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 
 	protected static Query<?, ?, ?> VALIDATE_ASSESSMENT_SCALE_OBSERVATION_REFERENCE_RANGE_OBSERVATION_RANGE_TEXT_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param assessmentScaleObservation The receiving '<em><b>Assessment Scale Observation</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param assessmentScaleObservation The receiving '<em><b>Assessment Scale Observation</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 	@SuppressWarnings("unchecked")
 	public static boolean validateAssessmentScaleObservationReferenceRangeObservationRangeTextReference(
 			AssessmentScaleObservation assessmentScaleObservation, DiagnosticChain diagnostics,
@@ -1105,36 +1105,36 @@ public class AssessmentScaleObservationOperations extends ClinicalStatementOpera
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateAssessmentScaleObservationReferenceRangeObservationRangeTextReferenceValue(AssessmentScaleObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Assessment Scale Observation Reference Range Observation Range Text Reference Value</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateAssessmentScaleObservationReferenceRangeObservationRangeTextReferenceValue(AssessmentScaleObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Assessment Scale Observation Reference Range Observation Range Text Reference Value</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateAssessmentScaleObservationReferenceRangeObservationRangeTextReferenceValue(AssessmentScaleObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateAssessmentScaleObservationReferenceRangeObservationRangeTextReferenceValue(AssessmentScaleObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_ASSESSMENT_SCALE_OBSERVATION_REFERENCE_RANGE_OBSERVATION_RANGE_TEXT_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.referenceRange->excluding(null).observationRange->excluding(null)->reject(text->forAll(reference->size() = 1) implies text->forAll(reference->one(value->size() = 1)))";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateAssessmentScaleObservationReferenceRangeObservationRangeTextReferenceValue(AssessmentScaleObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Assessment Scale Observation Reference Range Observation Range Text Reference Value</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateAssessmentScaleObservationReferenceRangeObservationRangeTextReferenceValue(AssessmentScaleObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Assessment Scale Observation Reference Range Observation Range Text Reference Value</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateAssessmentScaleObservationReferenceRangeObservationRangeTextReferenceValue(AssessmentScaleObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateAssessmentScaleObservationReferenceRangeObservationRangeTextReferenceValue(AssessmentScaleObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 
 	protected static Query<?, ?, ?> VALIDATE_ASSESSMENT_SCALE_OBSERVATION_REFERENCE_RANGE_OBSERVATION_RANGE_TEXT_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param assessmentScaleObservation The receiving '<em><b>Assessment Scale Observation</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param assessmentScaleObservation The receiving '<em><b>Assessment Scale Observation</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 	@SuppressWarnings("unchecked")
 	public static boolean validateAssessmentScaleObservationReferenceRangeObservationRangeTextReferenceValue(
 			AssessmentScaleObservation assessmentScaleObservation, DiagnosticChain diagnostics,
@@ -1171,36 +1171,36 @@ public class AssessmentScaleObservationOperations extends ClinicalStatementOpera
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateAssessmentScaleObservationReferenceRangeObservationRangeReferenceValue(AssessmentScaleObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Assessment Scale Observation Reference Range Observation Range Reference Value</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateAssessmentScaleObservationReferenceRangeObservationRangeReferenceValue(AssessmentScaleObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Assessment Scale Observation Reference Range Observation Range Reference Value</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateAssessmentScaleObservationReferenceRangeObservationRangeReferenceValue(AssessmentScaleObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateAssessmentScaleObservationReferenceRangeObservationRangeReferenceValue(AssessmentScaleObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_ASSESSMENT_SCALE_OBSERVATION_REFERENCE_RANGE_OBSERVATION_RANGE_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.referenceRange->excluding(null).observationRange->excluding(null)->reject(not text.reference.value.oclIsUndefined() implies not getSection().text.getText(text.reference.value.substring(2, text.reference.value.size())).oclIsUndefined())";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateAssessmentScaleObservationReferenceRangeObservationRangeReferenceValue(AssessmentScaleObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Assessment Scale Observation Reference Range Observation Range Reference Value</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateAssessmentScaleObservationReferenceRangeObservationRangeReferenceValue(AssessmentScaleObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Assessment Scale Observation Reference Range Observation Range Reference Value</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateAssessmentScaleObservationReferenceRangeObservationRangeReferenceValue(AssessmentScaleObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateAssessmentScaleObservationReferenceRangeObservationRangeReferenceValue(AssessmentScaleObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 
 	protected static Query<?, ?, ?> VALIDATE_ASSESSMENT_SCALE_OBSERVATION_REFERENCE_RANGE_OBSERVATION_RANGE_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param assessmentScaleObservation The receiving '<em><b>Assessment Scale Observation</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param assessmentScaleObservation The receiving '<em><b>Assessment Scale Observation</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 	@SuppressWarnings("unchecked")
 	public static boolean validateAssessmentScaleObservationReferenceRangeObservationRangeReferenceValue(
 			AssessmentScaleObservation assessmentScaleObservation, DiagnosticChain diagnostics,
@@ -1237,36 +1237,36 @@ public class AssessmentScaleObservationOperations extends ClinicalStatementOpera
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateAssessmentScaleObservationReferenceRangeObservationRangeText(AssessmentScaleObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Assessment Scale Observation Reference Range Observation Range Text</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateAssessmentScaleObservationReferenceRangeObservationRangeText(AssessmentScaleObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Assessment Scale Observation Reference Range Observation Range Text</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateAssessmentScaleObservationReferenceRangeObservationRangeText(AssessmentScaleObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateAssessmentScaleObservationReferenceRangeObservationRangeText(AssessmentScaleObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_ASSESSMENT_SCALE_OBSERVATION_REFERENCE_RANGE_OBSERVATION_RANGE_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.referenceRange->excluding(null).observationRange->excluding(null)->reject((text.oclIsUndefined() or text.isNullFlavorUndefined()) implies (not text.oclIsUndefined()))";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateAssessmentScaleObservationReferenceRangeObservationRangeText(AssessmentScaleObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Assessment Scale Observation Reference Range Observation Range Text</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateAssessmentScaleObservationReferenceRangeObservationRangeText(AssessmentScaleObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Assessment Scale Observation Reference Range Observation Range Text</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateAssessmentScaleObservationReferenceRangeObservationRangeText(AssessmentScaleObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateAssessmentScaleObservationReferenceRangeObservationRangeText(AssessmentScaleObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 
 	protected static Query<?, ?, ?> VALIDATE_ASSESSMENT_SCALE_OBSERVATION_REFERENCE_RANGE_OBSERVATION_RANGE_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param assessmentScaleObservation The receiving '<em><b>Assessment Scale Observation</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param assessmentScaleObservation The receiving '<em><b>Assessment Scale Observation</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 	@SuppressWarnings("unchecked")
 	public static boolean validateAssessmentScaleObservationReferenceRangeObservationRangeText(
 			AssessmentScaleObservation assessmentScaleObservation, DiagnosticChain diagnostics,
@@ -1303,36 +1303,36 @@ public class AssessmentScaleObservationOperations extends ClinicalStatementOpera
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateAssessmentScaleObservationReferenceRangeObservationRange(AssessmentScaleObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Assessment Scale Observation Reference Range Observation Range</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateAssessmentScaleObservationReferenceRangeObservationRange(AssessmentScaleObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Assessment Scale Observation Reference Range Observation Range</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateAssessmentScaleObservationReferenceRangeObservationRange(AssessmentScaleObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateAssessmentScaleObservationReferenceRangeObservationRange(AssessmentScaleObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_ASSESSMENT_SCALE_OBSERVATION_REFERENCE_RANGE_OBSERVATION_RANGE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.referenceRange->excluding(null)->reject(observationRange->one(observationRange : cda::ObservationRange | not observationRange.oclIsUndefined() and observationRange.oclIsKindOf(cda::ObservationRange)))";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateAssessmentScaleObservationReferenceRangeObservationRange(AssessmentScaleObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Assessment Scale Observation Reference Range Observation Range</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateAssessmentScaleObservationReferenceRangeObservationRange(AssessmentScaleObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Assessment Scale Observation Reference Range Observation Range</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateAssessmentScaleObservationReferenceRangeObservationRange(AssessmentScaleObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateAssessmentScaleObservationReferenceRangeObservationRange(AssessmentScaleObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 
 	protected static Query<?, ?, ?> VALIDATE_ASSESSMENT_SCALE_OBSERVATION_REFERENCE_RANGE_OBSERVATION_RANGE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param assessmentScaleObservation The receiving '<em><b>Assessment Scale Observation</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param assessmentScaleObservation The receiving '<em><b>Assessment Scale Observation</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 	@SuppressWarnings("unchecked")
 	public static boolean validateAssessmentScaleObservationReferenceRangeObservationRange(
 			AssessmentScaleObservation assessmentScaleObservation, DiagnosticChain diagnostics,
@@ -1369,13 +1369,13 @@ public class AssessmentScaleObservationOperations extends ClinicalStatementOpera
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #getAssessmentScaleSupportingObservations(AssessmentScaleObservation) <em>Get Assessment Scale Supporting Observations</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #getAssessmentScaleSupportingObservations(AssessmentScaleObservation) <em>Get Assessment Scale Supporting Observations</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #getAssessmentScaleSupportingObservations(AssessmentScaleObservation)
-	* @generated
-	* @ordered
-	*/
+	 * @see #getAssessmentScaleSupportingObservations(AssessmentScaleObservation)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String GET_ASSESSMENT_SCALE_SUPPORTING_OBSERVATIONS__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::AssessmentScaleSupportingObservation)).oclAsType(consol::AssessmentScaleSupportingObservation)";
 
 	/**

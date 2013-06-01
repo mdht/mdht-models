@@ -97,6 +97,7 @@ public class EncounterActivitiesOperations extends ClinicalStatementOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_ENCOUNTER_ACTIVITIES_CODE_ORIGINAL_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -109,6 +110,7 @@ public class EncounterActivitiesOperations extends ClinicalStatementOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateEncounterActivitiesCodeOriginalText(EncounterActivities encounterActivities,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -154,6 +156,7 @@ public class EncounterActivitiesOperations extends ClinicalStatementOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_ENCOUNTER_ACTIVITIES_CODE_ORIGINAL_TEXT_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -166,6 +169,7 @@ public class EncounterActivitiesOperations extends ClinicalStatementOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateEncounterActivitiesCodeOriginalTextReference(EncounterActivities encounterActivities,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -197,7 +201,7 @@ public class EncounterActivitiesOperations extends ClinicalStatementOperations {
 	/**
 	* The cached OCL expression body for the '{@link #validateEncounterActivitiesReferenceValue(EncounterActivities, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Encounter Activities Reference Value</em>}' operation.
 	* <!-- begin-user-doc -->
-	* <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	* @see #validateEncounterActivitiesReferenceValue(EncounterActivities, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	* @generated
 	* @ordered
@@ -271,6 +275,7 @@ public class EncounterActivitiesOperations extends ClinicalStatementOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_ENCOUNTER_ACTIVITIES_CODE_ORIGINAL_TEXT_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -283,6 +288,7 @@ public class EncounterActivitiesOperations extends ClinicalStatementOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateEncounterActivitiesCodeOriginalTextReferenceValue(
 			EncounterActivities encounterActivities, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -329,6 +335,7 @@ public class EncounterActivitiesOperations extends ClinicalStatementOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_ENCOUNTER_ACTIVITIES_SERVICE_DELIVERY_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -341,6 +348,7 @@ public class EncounterActivitiesOperations extends ClinicalStatementOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateEncounterActivitiesServiceDeliveryTypeCode(EncounterActivities encounterActivities,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -387,6 +395,7 @@ public class EncounterActivitiesOperations extends ClinicalStatementOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_ENCOUNTER_ACTIVITIES_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -399,6 +408,7 @@ public class EncounterActivitiesOperations extends ClinicalStatementOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateEncounterActivitiesTemplateId(EncounterActivities encounterActivities,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -444,6 +454,7 @@ public class EncounterActivitiesOperations extends ClinicalStatementOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_ENCOUNTER_ACTIVITIES_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -456,6 +467,7 @@ public class EncounterActivitiesOperations extends ClinicalStatementOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateEncounterActivitiesClassCode(EncounterActivities encounterActivities,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -501,6 +513,7 @@ public class EncounterActivitiesOperations extends ClinicalStatementOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_ENCOUNTER_ACTIVITIES_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -513,6 +526,7 @@ public class EncounterActivitiesOperations extends ClinicalStatementOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateEncounterActivitiesMoodCode(EncounterActivities encounterActivities,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -558,6 +572,7 @@ public class EncounterActivitiesOperations extends ClinicalStatementOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_ENCOUNTER_ACTIVITIES_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -570,6 +585,7 @@ public class EncounterActivitiesOperations extends ClinicalStatementOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateEncounterActivitiesId(EncounterActivities encounterActivities,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -616,6 +632,7 @@ public class EncounterActivitiesOperations extends ClinicalStatementOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_ENCOUNTER_ACTIVITIES_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -628,6 +645,7 @@ public class EncounterActivitiesOperations extends ClinicalStatementOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateEncounterActivitiesCode(EncounterActivities encounterActivities,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -672,6 +690,7 @@ public class EncounterActivitiesOperations extends ClinicalStatementOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_ENCOUNTER_ACTIVITIES_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -684,6 +703,7 @@ public class EncounterActivitiesOperations extends ClinicalStatementOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateEncounterActivitiesEffectiveTime(EncounterActivities encounterActivities,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -873,6 +893,7 @@ public class EncounterActivitiesOperations extends ClinicalStatementOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_ENCOUNTER_ACTIVITIES_SERVICE_DELIVERY_LOCATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -885,6 +906,7 @@ public class EncounterActivitiesOperations extends ClinicalStatementOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateEncounterActivitiesServiceDeliveryLocation(EncounterActivities encounterActivities,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -931,6 +953,7 @@ public class EncounterActivitiesOperations extends ClinicalStatementOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_ENCOUNTER_ACTIVITIES_INDICATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -943,6 +966,7 @@ public class EncounterActivitiesOperations extends ClinicalStatementOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateEncounterActivitiesIndication(EncounterActivities encounterActivities,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -1032,7 +1056,7 @@ public class EncounterActivitiesOperations extends ClinicalStatementOperations {
 	/**
 	* The cached OCL expression body for the '{@link #validateEncounterActivitiesEncounterDiagnosis(EncounterActivities, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Encounter Activities Encounter Diagnosis</em>}' operation.
 	* <!-- begin-user-doc -->
-	* <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	* @see #validateEncounterActivitiesEncounterDiagnosis(EncounterActivities, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	* @generated
 	* @ordered
@@ -1091,7 +1115,7 @@ public class EncounterActivitiesOperations extends ClinicalStatementOperations {
 	/**
 	* The cached OCL expression body for the '{@link #validateEncounterActivitiesEncounterPerformerEncounterPerformerAssignedEntityCode(EncounterActivities, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Encounter Activities Encounter Performer Encounter Performer Assigned Entity Code</em>}' operation.
 	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	* <!-- end-user-doc -->
 	* @see #validateEncounterActivitiesEncounterPerformerEncounterPerformerAssignedEntityCode(EncounterActivities, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	* @generated
 	* @ordered
@@ -1099,27 +1123,26 @@ public class EncounterActivitiesOperations extends ClinicalStatementOperations {
 	protected static final String VALIDATE_ENCOUNTER_ACTIVITIES_ENCOUNTER_PERFORMER_ENCOUNTER_PERFORMER_ASSIGNED_ENTITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.performer->excluding(null).assignedEntity->excluding(null)->reject((code.oclIsUndefined() or code.isNullFlavorUndefined()) implies (not code.oclIsUndefined()))";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateEncounterActivitiesEncounterPerformerEncounterPerformerAssignedEntityCode(EncounterActivities, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Encounter Activities Encounter Performer Encounter Performer Assigned Entity Code</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateEncounterActivitiesEncounterPerformerEncounterPerformerAssignedEntityCode(EncounterActivities, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Encounter Activities Encounter Performer Encounter Performer Assigned Entity Code</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateEncounterActivitiesEncounterPerformerEncounterPerformerAssignedEntityCode(EncounterActivities, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateEncounterActivitiesEncounterPerformerEncounterPerformerAssignedEntityCode(EncounterActivities, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 
 	protected static Query<?, ?, ?> VALIDATE_ENCOUNTER_ACTIVITIES_ENCOUNTER_PERFORMER_ENCOUNTER_PERFORMER_ASSIGNED_ENTITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param encounterActivities The receiving '<em><b>Encounter Activities</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
-
+	 * <!-- begin-model-doc -->
+	 * @param encounterActivities The receiving '<em><b>Encounter Activities</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 	@SuppressWarnings("unchecked")
 	public static boolean validateEncounterActivitiesEncounterPerformerEncounterPerformerAssignedEntityCode(
 			EncounterActivities encounterActivities, DiagnosticChain diagnostics, Map<Object, Object> context) {
@@ -1155,37 +1178,36 @@ public class EncounterActivitiesOperations extends ClinicalStatementOperations {
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateEncounterActivitiesEncounterPerformerEncounterPerformerAssignedEntity(EncounterActivities, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Encounter Activities Encounter Performer Encounter Performer Assigned Entity</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateEncounterActivitiesEncounterPerformerEncounterPerformerAssignedEntity(EncounterActivities, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Encounter Activities Encounter Performer Encounter Performer Assigned Entity</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateEncounterActivitiesEncounterPerformerEncounterPerformerAssignedEntity(EncounterActivities, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateEncounterActivitiesEncounterPerformerEncounterPerformerAssignedEntity(EncounterActivities, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_ENCOUNTER_ACTIVITIES_ENCOUNTER_PERFORMER_ENCOUNTER_PERFORMER_ASSIGNED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.performer->excluding(null)->reject(assignedEntity->one(assignedEntity : cda::AssignedEntity | not assignedEntity.oclIsUndefined() and assignedEntity.oclIsKindOf(cda::AssignedEntity)))";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateEncounterActivitiesEncounterPerformerEncounterPerformerAssignedEntity(EncounterActivities, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Encounter Activities Encounter Performer Encounter Performer Assigned Entity</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateEncounterActivitiesEncounterPerformerEncounterPerformerAssignedEntity(EncounterActivities, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Encounter Activities Encounter Performer Encounter Performer Assigned Entity</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateEncounterActivitiesEncounterPerformerEncounterPerformerAssignedEntity(EncounterActivities, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateEncounterActivitiesEncounterPerformerEncounterPerformerAssignedEntity(EncounterActivities, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 
 	protected static Query<?, ?, ?> VALIDATE_ENCOUNTER_ACTIVITIES_ENCOUNTER_PERFORMER_ENCOUNTER_PERFORMER_ASSIGNED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param encounterActivities The receiving '<em><b>Encounter Activities</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
-
+	 * <!-- begin-model-doc -->
+	 * @param encounterActivities The receiving '<em><b>Encounter Activities</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 	@SuppressWarnings("unchecked")
 	public static boolean validateEncounterActivitiesEncounterPerformerEncounterPerformerAssignedEntity(
 			EncounterActivities encounterActivities, DiagnosticChain diagnostics, Map<Object, Object> context) {
@@ -1221,13 +1243,13 @@ public class EncounterActivitiesOperations extends ClinicalStatementOperations {
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #getServiceDeliveryLocations(EncounterActivities) <em>Get Service Delivery Locations</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #getServiceDeliveryLocations(EncounterActivities) <em>Get Service Delivery Locations</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #getServiceDeliveryLocations(EncounterActivities)
-	* @generated
-	* @ordered
-	*/
+	 * @see #getServiceDeliveryLocations(EncounterActivities)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String GET_SERVICE_DELIVERY_LOCATIONS__EOCL_EXP = "self.getParticipantRoles()->select(participantRole : cda::ParticipantRole | not participantRole.oclIsUndefined() and participantRole.oclIsKindOf(consol::ServiceDeliveryLocation)).oclAsType(consol::ServiceDeliveryLocation)";
 
 	/**
@@ -1245,6 +1267,7 @@ public class EncounterActivitiesOperations extends ClinicalStatementOperations {
 	 * <!-- end-user-doc -->
 	* @generated
 	*/
+
 	public static EList<ServiceDeliveryLocation> getServiceDeliveryLocations(EncounterActivities encounterActivities) {
 		if (GET_SERVICE_DELIVERY_LOCATIONS__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
@@ -1288,6 +1311,7 @@ public class EncounterActivitiesOperations extends ClinicalStatementOperations {
 	 * <!-- end-user-doc -->
 	* @generated
 	*/
+
 	public static EList<Indication> getIndications(EncounterActivities encounterActivities) {
 		if (GET_INDICATIONS__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();

@@ -78,6 +78,7 @@ public class AdmissionMedicationOperations extends ClinicalStatementOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_ADMISSION_MEDICATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -90,6 +91,7 @@ public class AdmissionMedicationOperations extends ClinicalStatementOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateAdmissionMedicationTemplateId(AdmissionMedication admissionMedication,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -135,6 +137,7 @@ public class AdmissionMedicationOperations extends ClinicalStatementOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_ADMISSION_MEDICATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -147,6 +150,7 @@ public class AdmissionMedicationOperations extends ClinicalStatementOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateAdmissionMedicationClassCode(AdmissionMedication admissionMedication,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -177,7 +181,7 @@ public class AdmissionMedicationOperations extends ClinicalStatementOperations {
 	/**
 	* The cached OCL expression body for the '{@link #validateAdmissionMedicationCodeP(AdmissionMedication, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Admission Medication Code P</em>}' operation.
 	* <!-- begin-user-doc -->
-	* <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	* @see #validateAdmissionMedicationCodeP(AdmissionMedication, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	* @generated
 	* @ordered
@@ -264,6 +268,7 @@ public class AdmissionMedicationOperations extends ClinicalStatementOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_ADMISSION_MEDICATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -276,6 +281,7 @@ public class AdmissionMedicationOperations extends ClinicalStatementOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateAdmissionMedicationCode(AdmissionMedication admissionMedication,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -328,6 +334,7 @@ public class AdmissionMedicationOperations extends ClinicalStatementOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_ADMISSION_MEDICATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -340,6 +347,7 @@ public class AdmissionMedicationOperations extends ClinicalStatementOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateAdmissionMedicationMoodCode(AdmissionMedication admissionMedication,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -385,6 +393,7 @@ public class AdmissionMedicationOperations extends ClinicalStatementOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_ADMISSION_MEDICATION_MEDICATION_ACTIVITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -397,6 +406,7 @@ public class AdmissionMedicationOperations extends ClinicalStatementOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateAdmissionMedicationMedicationActivity(AdmissionMedication admissionMedication,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 

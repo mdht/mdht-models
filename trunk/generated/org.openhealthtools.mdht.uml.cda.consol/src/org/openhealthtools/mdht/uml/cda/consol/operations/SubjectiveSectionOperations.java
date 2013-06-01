@@ -70,6 +70,7 @@ public class SubjectiveSectionOperations extends SectionOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_SUBJECTIVE_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -82,6 +83,7 @@ public class SubjectiveSectionOperations extends SectionOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateSubjectiveSectionTemplateId(SubjectiveSection subjectiveSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -128,6 +130,7 @@ public class SubjectiveSectionOperations extends SectionOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_SUBJECTIVE_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -140,6 +143,7 @@ public class SubjectiveSectionOperations extends SectionOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateSubjectiveSectionCode(SubjectiveSection subjectiveSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -169,7 +173,7 @@ public class SubjectiveSectionOperations extends SectionOperations {
 	/**
 	* The cached OCL expression body for the '{@link #validateSubjectiveSectionCodeP(SubjectiveSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Subjective Section Code P</em>}' operation.
 	* <!-- begin-user-doc -->
-	* <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	* @see #validateSubjectiveSectionCodeP(SubjectiveSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	* @generated
 	* @ordered
@@ -242,6 +246,7 @@ public class SubjectiveSectionOperations extends SectionOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_SUBJECTIVE_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -254,6 +259,7 @@ public class SubjectiveSectionOperations extends SectionOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateSubjectiveSectionText(SubjectiveSection subjectiveSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -298,6 +304,7 @@ public class SubjectiveSectionOperations extends SectionOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_SUBJECTIVE_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -310,6 +317,7 @@ public class SubjectiveSectionOperations extends SectionOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateSubjectiveSectionTitle(SubjectiveSection subjectiveSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 

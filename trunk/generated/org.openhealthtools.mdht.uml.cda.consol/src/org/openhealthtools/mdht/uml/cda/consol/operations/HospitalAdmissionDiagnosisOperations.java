@@ -77,6 +77,7 @@ public class HospitalAdmissionDiagnosisOperations extends ClinicalStatementOpera
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_HOSPITAL_ADMISSION_DIAGNOSIS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -89,6 +90,7 @@ public class HospitalAdmissionDiagnosisOperations extends ClinicalStatementOpera
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateHospitalAdmissionDiagnosisTemplateId(
 			HospitalAdmissionDiagnosis hospitalAdmissionDiagnosis, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
@@ -135,6 +137,7 @@ public class HospitalAdmissionDiagnosisOperations extends ClinicalStatementOpera
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_HOSPITAL_ADMISSION_DIAGNOSIS_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -147,6 +150,7 @@ public class HospitalAdmissionDiagnosisOperations extends ClinicalStatementOpera
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateHospitalAdmissionDiagnosisClassCode(
 			HospitalAdmissionDiagnosis hospitalAdmissionDiagnosis, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
@@ -195,6 +199,7 @@ public class HospitalAdmissionDiagnosisOperations extends ClinicalStatementOpera
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_HOSPITAL_ADMISSION_DIAGNOSIS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -207,6 +212,7 @@ public class HospitalAdmissionDiagnosisOperations extends ClinicalStatementOpera
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateHospitalAdmissionDiagnosisCode(HospitalAdmissionDiagnosis hospitalAdmissionDiagnosis,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -252,6 +258,7 @@ public class HospitalAdmissionDiagnosisOperations extends ClinicalStatementOpera
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_HOSPITAL_ADMISSION_DIAGNOSIS_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -264,6 +271,7 @@ public class HospitalAdmissionDiagnosisOperations extends ClinicalStatementOpera
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateHospitalAdmissionDiagnosisMoodCode(
 			HospitalAdmissionDiagnosis hospitalAdmissionDiagnosis, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
@@ -310,6 +318,7 @@ public class HospitalAdmissionDiagnosisOperations extends ClinicalStatementOpera
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_HOSPITAL_ADMISSION_DIAGNOSIS_PROBLEM_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -322,6 +331,7 @@ public class HospitalAdmissionDiagnosisOperations extends ClinicalStatementOpera
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateHospitalAdmissionDiagnosisProblemObservation(
 			HospitalAdmissionDiagnosis hospitalAdmissionDiagnosis, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {

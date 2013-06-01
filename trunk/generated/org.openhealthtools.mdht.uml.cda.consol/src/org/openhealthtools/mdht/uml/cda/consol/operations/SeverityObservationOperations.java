@@ -76,6 +76,7 @@ public class SeverityObservationOperations extends ClinicalStatementOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_SEVERITY_OBSERVATION_TEXT_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -88,6 +89,7 @@ public class SeverityObservationOperations extends ClinicalStatementOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateSeverityObservationTextReference(SeverityObservation severityObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -118,7 +120,7 @@ public class SeverityObservationOperations extends ClinicalStatementOperations {
 	/**
 	* The cached OCL expression body for the '{@link #validateSeverityObservationTextReferenceValue(SeverityObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Severity Observation Text Reference Value</em>}' operation.
 	* <!-- begin-user-doc -->
-	* <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	* @see #validateSeverityObservationTextReferenceValue(SeverityObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	* @generated
 	* @ordered
@@ -192,6 +194,7 @@ public class SeverityObservationOperations extends ClinicalStatementOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_SEVERITY_OBSERVATION_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -204,6 +207,7 @@ public class SeverityObservationOperations extends ClinicalStatementOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateSeverityObservationReferenceValue(SeverityObservation severityObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -249,6 +253,7 @@ public class SeverityObservationOperations extends ClinicalStatementOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_SEVERITY_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -261,6 +266,7 @@ public class SeverityObservationOperations extends ClinicalStatementOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateSeverityObservationTemplateId(SeverityObservation severityObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -306,6 +312,7 @@ public class SeverityObservationOperations extends ClinicalStatementOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_SEVERITY_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -318,6 +325,7 @@ public class SeverityObservationOperations extends ClinicalStatementOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateSeverityObservationClassCode(SeverityObservation severityObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -363,6 +371,7 @@ public class SeverityObservationOperations extends ClinicalStatementOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_SEVERITY_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -375,6 +384,7 @@ public class SeverityObservationOperations extends ClinicalStatementOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateSeverityObservationMoodCode(SeverityObservation severityObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -422,6 +432,7 @@ public class SeverityObservationOperations extends ClinicalStatementOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_SEVERITY_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -434,6 +445,7 @@ public class SeverityObservationOperations extends ClinicalStatementOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateSeverityObservationCode(SeverityObservation severityObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -478,6 +490,7 @@ public class SeverityObservationOperations extends ClinicalStatementOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_SEVERITY_OBSERVATION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -490,6 +503,7 @@ public class SeverityObservationOperations extends ClinicalStatementOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateSeverityObservationText(SeverityObservation severityObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -535,6 +549,7 @@ public class SeverityObservationOperations extends ClinicalStatementOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_SEVERITY_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -547,6 +562,7 @@ public class SeverityObservationOperations extends ClinicalStatementOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateSeverityObservationStatusCode(SeverityObservation severityObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -594,6 +610,7 @@ public class SeverityObservationOperations extends ClinicalStatementOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_SEVERITY_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -606,6 +623,7 @@ public class SeverityObservationOperations extends ClinicalStatementOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateSeverityObservationValue(SeverityObservation severityObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 

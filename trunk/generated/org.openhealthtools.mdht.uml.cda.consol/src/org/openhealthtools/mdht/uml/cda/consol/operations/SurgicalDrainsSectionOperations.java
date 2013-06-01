@@ -70,6 +70,7 @@ public class SurgicalDrainsSectionOperations extends SectionOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_SURGICAL_DRAINS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -82,6 +83,7 @@ public class SurgicalDrainsSectionOperations extends SectionOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateSurgicalDrainsSectionTemplateId(SurgicalDrainsSection surgicalDrainsSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -129,6 +131,7 @@ public class SurgicalDrainsSectionOperations extends SectionOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_SURGICAL_DRAINS_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -141,6 +144,7 @@ public class SurgicalDrainsSectionOperations extends SectionOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateSurgicalDrainsSectionCode(SurgicalDrainsSection surgicalDrainsSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -171,7 +175,7 @@ public class SurgicalDrainsSectionOperations extends SectionOperations {
 	/**
 	* The cached OCL expression body for the '{@link #validateSurgicalDrainsSectionCodeP(SurgicalDrainsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Surgical Drains Section Code P</em>}' operation.
 	* <!-- begin-user-doc -->
-	* <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	* @see #validateSurgicalDrainsSectionCodeP(SurgicalDrainsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	* @generated
 	* @ordered
@@ -245,6 +249,7 @@ public class SurgicalDrainsSectionOperations extends SectionOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_SURGICAL_DRAINS_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -257,6 +262,7 @@ public class SurgicalDrainsSectionOperations extends SectionOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateSurgicalDrainsSectionText(SurgicalDrainsSection surgicalDrainsSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -302,6 +308,7 @@ public class SurgicalDrainsSectionOperations extends SectionOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_SURGICAL_DRAINS_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -314,6 +321,7 @@ public class SurgicalDrainsSectionOperations extends SectionOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateSurgicalDrainsSectionTitle(SurgicalDrainsSection surgicalDrainsSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 

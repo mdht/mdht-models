@@ -282,7 +282,7 @@ public class FunctionalStatusResultObservationImpl extends ResultObservationImpl
 
 	/**
 	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	* <!-- end-user-doc -->
 	* @generated
 	*/
 	public boolean validateFunctionalStatusResultObservationReferenceRangeObservationRangeNoCode(
@@ -292,10 +292,10 @@ public class FunctionalStatusResultObservationImpl extends ResultObservationImpl
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateFunctionalStatusResultObservationReferenceRangeObservationRange(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return FunctionalStatusResultObservationOperations.validateFunctionalStatusResultObservationReferenceRangeObservationRange(
@@ -303,10 +303,10 @@ public class FunctionalStatusResultObservationImpl extends ResultObservationImpl
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public NonMedicinalSupplyActivity getNonMedicinalSupplyActivity() {
 		return FunctionalStatusResultObservationOperations.getNonMedicinalSupplyActivity(this);
 	}

@@ -82,6 +82,7 @@ public class MedicationSupplyOrderOperations extends SupplyOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_MEDICATION_SUPPLY_ORDER_INSTRUCTION_INVERSION_IND__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -94,6 +95,7 @@ public class MedicationSupplyOrderOperations extends SupplyOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateMedicationSupplyOrderInstructionInversionInd(
 			MedicationSupplyOrder medicationSupplyOrder, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -125,7 +127,7 @@ public class MedicationSupplyOrderOperations extends SupplyOperations {
 	/**
 	* The cached OCL expression body for the '{@link #validateMedicationSupplyOrderEffectiveTimeHigh(MedicationSupplyOrder, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Supply Order Effective Time High</em>}' operation.
 	* <!-- begin-user-doc -->
-	* <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	* @see #validateMedicationSupplyOrderEffectiveTimeHigh(MedicationSupplyOrder, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	* @generated
 	* @ordered
@@ -260,6 +262,7 @@ public class MedicationSupplyOrderOperations extends SupplyOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_MEDICATION_SUPPLY_ORDER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -272,6 +275,7 @@ public class MedicationSupplyOrderOperations extends SupplyOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateMedicationSupplyOrderTemplateId(MedicationSupplyOrder medicationSupplyOrder,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -317,6 +321,7 @@ public class MedicationSupplyOrderOperations extends SupplyOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_MEDICATION_SUPPLY_ORDER_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -329,6 +334,7 @@ public class MedicationSupplyOrderOperations extends SupplyOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateMedicationSupplyOrderClassCode(MedicationSupplyOrder medicationSupplyOrder,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -374,6 +380,7 @@ public class MedicationSupplyOrderOperations extends SupplyOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_MEDICATION_SUPPLY_ORDER_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -386,6 +393,7 @@ public class MedicationSupplyOrderOperations extends SupplyOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateMedicationSupplyOrderEffectiveTime(MedicationSupplyOrder medicationSupplyOrder,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -431,6 +439,7 @@ public class MedicationSupplyOrderOperations extends SupplyOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_MEDICATION_SUPPLY_ORDER_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -443,6 +452,7 @@ public class MedicationSupplyOrderOperations extends SupplyOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateMedicationSupplyOrderMoodCode(MedicationSupplyOrder medicationSupplyOrder,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -488,6 +498,7 @@ public class MedicationSupplyOrderOperations extends SupplyOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_MEDICATION_SUPPLY_ORDER_QUANTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -500,6 +511,7 @@ public class MedicationSupplyOrderOperations extends SupplyOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateMedicationSupplyOrderQuantity(MedicationSupplyOrder medicationSupplyOrder,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -545,6 +557,7 @@ public class MedicationSupplyOrderOperations extends SupplyOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_MEDICATION_SUPPLY_ORDER_REPEAT_NUMBER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -557,6 +570,7 @@ public class MedicationSupplyOrderOperations extends SupplyOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateMedicationSupplyOrderRepeatNumber(MedicationSupplyOrder medicationSupplyOrder,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -602,6 +616,7 @@ public class MedicationSupplyOrderOperations extends SupplyOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_MEDICATION_SUPPLY_ORDER_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -614,6 +629,7 @@ public class MedicationSupplyOrderOperations extends SupplyOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateMedicationSupplyOrderStatusCode(MedicationSupplyOrder medicationSupplyOrder,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -659,6 +675,7 @@ public class MedicationSupplyOrderOperations extends SupplyOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_MEDICATION_SUPPLY_ORDER_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -671,6 +688,7 @@ public class MedicationSupplyOrderOperations extends SupplyOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateMedicationSupplyOrderId(MedicationSupplyOrder medicationSupplyOrder,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -715,6 +733,7 @@ public class MedicationSupplyOrderOperations extends SupplyOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_MEDICATION_SUPPLY_ORDER_AUTHOR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -727,6 +746,7 @@ public class MedicationSupplyOrderOperations extends SupplyOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateMedicationSupplyOrderAuthor(MedicationSupplyOrder medicationSupplyOrder,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -772,6 +792,7 @@ public class MedicationSupplyOrderOperations extends SupplyOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_MEDICATION_SUPPLY_ORDER_INSTRUCTIONS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -784,6 +805,7 @@ public class MedicationSupplyOrderOperations extends SupplyOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateMedicationSupplyOrderInstructions(MedicationSupplyOrder medicationSupplyOrder,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -836,6 +858,7 @@ public class MedicationSupplyOrderOperations extends SupplyOperations {
 	 * <!-- end-user-doc -->
 	* @generated
 	*/
+
 	public static Instructions getInstructions(MedicationSupplyOrder medicationSupplyOrder) {
 		if (GET_INSTRUCTIONS__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();

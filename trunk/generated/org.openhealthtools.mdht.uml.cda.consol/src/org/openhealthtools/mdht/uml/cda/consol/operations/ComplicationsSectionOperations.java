@@ -78,6 +78,7 @@ public class ComplicationsSectionOperations extends SectionOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_COMPLICATIONS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -90,6 +91,7 @@ public class ComplicationsSectionOperations extends SectionOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateComplicationsSectionTemplateId(ComplicationsSection complicationsSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -180,7 +182,7 @@ public class ComplicationsSectionOperations extends SectionOperations {
 	/**
 	* The cached OCL expression body for the '{@link #validateComplicationsSectionCodeP(ComplicationsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Complications Section Code P</em>}' operation.
 	* <!-- begin-user-doc -->
-	* <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	* @see #validateComplicationsSectionCodeP(ComplicationsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	* @generated
 	* @ordered

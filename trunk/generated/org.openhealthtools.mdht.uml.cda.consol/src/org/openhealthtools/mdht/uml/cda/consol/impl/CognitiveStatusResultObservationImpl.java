@@ -281,7 +281,7 @@ public class CognitiveStatusResultObservationImpl extends ResultObservationImpl 
 
 	/**
 	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	* <!-- end-user-doc -->
 	* @generated
 	*/
 	public boolean validateCognitiveStatusResultObservationReferenceRangeObservationRangeNoCode(
@@ -291,10 +291,10 @@ public class CognitiveStatusResultObservationImpl extends ResultObservationImpl 
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateCognitiveStatusResultObservationReferenceRangeObservationRange(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return CognitiveStatusResultObservationOperations.validateCognitiveStatusResultObservationReferenceRangeObservationRange(
@@ -302,10 +302,10 @@ public class CognitiveStatusResultObservationImpl extends ResultObservationImpl 
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public EList<NonMedicinalSupplyActivity> getNonMedicinalSupplyActivities() {
 		return CognitiveStatusResultObservationOperations.getNonMedicinalSupplyActivities(this);
 	}

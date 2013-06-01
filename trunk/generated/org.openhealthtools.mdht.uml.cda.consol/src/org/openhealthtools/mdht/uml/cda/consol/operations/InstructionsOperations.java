@@ -76,6 +76,7 @@ public class InstructionsOperations extends ClinicalStatementOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_INSTRUCTIONS_TEXT_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -88,6 +89,7 @@ public class InstructionsOperations extends ClinicalStatementOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateInstructionsTextReference(Instructions instructions, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
@@ -117,7 +119,7 @@ public class InstructionsOperations extends ClinicalStatementOperations {
 	/**
 	* The cached OCL expression body for the '{@link #validateInstructionsReferenceValue(Instructions, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Instructions Reference Value</em>}' operation.
 	* <!-- begin-user-doc -->
-	* <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	* @see #validateInstructionsReferenceValue(Instructions, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	* @generated
 	* @ordered
@@ -190,6 +192,7 @@ public class InstructionsOperations extends ClinicalStatementOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_INSTRUCTIONS_TEXT_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -202,6 +205,7 @@ public class InstructionsOperations extends ClinicalStatementOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateInstructionsTextReferenceValue(Instructions instructions,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -246,6 +250,7 @@ public class InstructionsOperations extends ClinicalStatementOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_INSTRUCTIONS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -258,6 +263,7 @@ public class InstructionsOperations extends ClinicalStatementOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateInstructionsTemplateId(Instructions instructions, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
@@ -301,6 +307,7 @@ public class InstructionsOperations extends ClinicalStatementOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_INSTRUCTIONS_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -313,6 +320,7 @@ public class InstructionsOperations extends ClinicalStatementOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateInstructionsClassCode(Instructions instructions, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
@@ -356,6 +364,7 @@ public class InstructionsOperations extends ClinicalStatementOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_INSTRUCTIONS_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -368,6 +377,7 @@ public class InstructionsOperations extends ClinicalStatementOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateInstructionsMoodCode(Instructions instructions, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
@@ -547,6 +557,7 @@ public class InstructionsOperations extends ClinicalStatementOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_INSTRUCTIONS_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -559,6 +570,7 @@ public class InstructionsOperations extends ClinicalStatementOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateInstructionsText(Instructions instructions, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
@@ -603,6 +615,7 @@ public class InstructionsOperations extends ClinicalStatementOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_INSTRUCTIONS_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -615,6 +628,7 @@ public class InstructionsOperations extends ClinicalStatementOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateInstructionsStatusCode(Instructions instructions, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 

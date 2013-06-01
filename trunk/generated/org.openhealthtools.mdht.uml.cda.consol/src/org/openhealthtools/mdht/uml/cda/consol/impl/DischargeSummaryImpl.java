@@ -377,7 +377,7 @@ public class DischargeSummaryImpl extends GeneralHeaderConstraintsImpl implement
 
 	/**
 	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	* <!-- end-user-doc -->
 	* @generated
 	*/
 	public boolean validateDischargeSummaryComponentOfEncompassingEncounter3ResponsiblePartyAssignedEntityHasPersonOrOrganization(
@@ -387,10 +387,10 @@ public class DischargeSummaryImpl extends GeneralHeaderConstraintsImpl implement
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateDischargeSummaryComponentOfEncompassingEncounter3ResponsiblePartyAssignedEntity(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return DischargeSummaryOperations.validateDischargeSummaryComponentOfEncompassingEncounter3ResponsiblePartyAssignedEntity(
@@ -398,10 +398,10 @@ public class DischargeSummaryImpl extends GeneralHeaderConstraintsImpl implement
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateDischargeSummaryComponentOfEncompassingEncounter3EncounterParticipantAssignedEntityHasPersonOrOrganization(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return DischargeSummaryOperations.validateDischargeSummaryComponentOfEncompassingEncounter3EncounterParticipantAssignedEntityHasPersonOrOrganization(
@@ -409,10 +409,10 @@ public class DischargeSummaryImpl extends GeneralHeaderConstraintsImpl implement
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateDischargeSummaryComponentOfEncompassingEncounter3EncounterParticipantAssignedEntity(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return DischargeSummaryOperations.validateDischargeSummaryComponentOfEncompassingEncounter3EncounterParticipantAssignedEntity(
@@ -420,10 +420,10 @@ public class DischargeSummaryImpl extends GeneralHeaderConstraintsImpl implement
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateDischargeSummaryComponentOfEncompassingEncounter3EncompassingEncounterHasEffectiveTimeLow(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return DischargeSummaryOperations.validateDischargeSummaryComponentOfEncompassingEncounter3EncompassingEncounterHasEffectiveTimeLow(
@@ -431,10 +431,10 @@ public class DischargeSummaryImpl extends GeneralHeaderConstraintsImpl implement
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateDischargeSummaryComponentOfEncompassingEncounter3EncompassingEncounterHasEffectiveTimeHigh(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return DischargeSummaryOperations.validateDischargeSummaryComponentOfEncompassingEncounter3EncompassingEncounterHasEffectiveTimeHigh(
@@ -442,10 +442,10 @@ public class DischargeSummaryImpl extends GeneralHeaderConstraintsImpl implement
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateDischargeSummaryComponentOfEncompassingEncounter3DischargeDispositionCode(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return DischargeSummaryOperations.validateDischargeSummaryComponentOfEncompassingEncounter3DischargeDispositionCode(
@@ -453,10 +453,10 @@ public class DischargeSummaryImpl extends GeneralHeaderConstraintsImpl implement
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateDischargeSummaryComponentOfEncompassingEncounter3DischargeDispositionCodeP(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return DischargeSummaryOperations.validateDischargeSummaryComponentOfEncompassingEncounter3DischargeDispositionCodeP(
@@ -464,10 +464,10 @@ public class DischargeSummaryImpl extends GeneralHeaderConstraintsImpl implement
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateDischargeSummaryComponentOfEncompassingEncounter3EffectiveTime(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return DischargeSummaryOperations.validateDischargeSummaryComponentOfEncompassingEncounter3EffectiveTime(
@@ -475,10 +475,10 @@ public class DischargeSummaryImpl extends GeneralHeaderConstraintsImpl implement
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateDischargeSummaryComponentOfEncompassingEncounter3ResponsibleParty(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return DischargeSummaryOperations.validateDischargeSummaryComponentOfEncompassingEncounter3ResponsibleParty(
@@ -486,10 +486,10 @@ public class DischargeSummaryImpl extends GeneralHeaderConstraintsImpl implement
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateDischargeSummaryComponentOfEncompassingEncounter3EncounterParticipant(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return DischargeSummaryOperations.validateDischargeSummaryComponentOfEncompassingEncounter3EncounterParticipant(
@@ -497,10 +497,10 @@ public class DischargeSummaryImpl extends GeneralHeaderConstraintsImpl implement
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateDischargeSummaryComponentOfEncompassingEncounter(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return DischargeSummaryOperations.validateDischargeSummaryComponentOfEncompassingEncounter(
@@ -508,10 +508,10 @@ public class DischargeSummaryImpl extends GeneralHeaderConstraintsImpl implement
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public HospitalAdmissionMedicationsSectionEntriesOptional getHospitalAdmissionMedicationsSectionEntriesOptional() {
 		return DischargeSummaryOperations.getHospitalAdmissionMedicationsSectionEntriesOptional(this);
 	}

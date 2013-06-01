@@ -395,7 +395,7 @@ public class HistoryAndPhysicalNoteImpl extends GeneralHeaderConstraintsImpl imp
 
 	/**
 	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	* <!-- end-user-doc -->
 	* @generated
 	*/
 	public boolean validateHistoryAndPhysicalNoteComponentOfEncompassingEncounter4ResponsiblePartyAssignedEntityHasPersonOrOrganization(
@@ -405,10 +405,10 @@ public class HistoryAndPhysicalNoteImpl extends GeneralHeaderConstraintsImpl imp
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateHistoryAndPhysicalNoteComponentOfEncompassingEncounter4ResponsiblePartyAssignedEntity(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return HistoryAndPhysicalNoteOperations.validateHistoryAndPhysicalNoteComponentOfEncompassingEncounter4ResponsiblePartyAssignedEntity(
@@ -416,10 +416,10 @@ public class HistoryAndPhysicalNoteImpl extends GeneralHeaderConstraintsImpl imp
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateHistoryAndPhysicalNoteComponentOfEncompassingEncounter4EncounterParticipantAssignedEntityHasPersonOrOrganization(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return HistoryAndPhysicalNoteOperations.validateHistoryAndPhysicalNoteComponentOfEncompassingEncounter4EncounterParticipantAssignedEntityHasPersonOrOrganization(
@@ -427,10 +427,10 @@ public class HistoryAndPhysicalNoteImpl extends GeneralHeaderConstraintsImpl imp
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateHistoryAndPhysicalNoteComponentOfEncompassingEncounter4EncounterParticipantAssignedEntity(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return HistoryAndPhysicalNoteOperations.validateHistoryAndPhysicalNoteComponentOfEncompassingEncounter4EncounterParticipantAssignedEntity(
@@ -438,10 +438,10 @@ public class HistoryAndPhysicalNoteImpl extends GeneralHeaderConstraintsImpl imp
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateHistoryAndPhysicalNoteComponentOfEncompassingEncounter4EffectiveTime(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return HistoryAndPhysicalNoteOperations.validateHistoryAndPhysicalNoteComponentOfEncompassingEncounter4EffectiveTime(
@@ -449,10 +449,10 @@ public class HistoryAndPhysicalNoteImpl extends GeneralHeaderConstraintsImpl imp
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateHistoryAndPhysicalNoteComponentOfEncompassingEncounter4Id(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return HistoryAndPhysicalNoteOperations.validateHistoryAndPhysicalNoteComponentOfEncompassingEncounter4Id(
@@ -460,10 +460,10 @@ public class HistoryAndPhysicalNoteImpl extends GeneralHeaderConstraintsImpl imp
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateHistoryAndPhysicalNoteComponentOfEncompassingEncounter4Location(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return HistoryAndPhysicalNoteOperations.validateHistoryAndPhysicalNoteComponentOfEncompassingEncounter4Location(
@@ -471,10 +471,10 @@ public class HistoryAndPhysicalNoteImpl extends GeneralHeaderConstraintsImpl imp
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateHistoryAndPhysicalNoteComponentOfEncompassingEncounter4ResponsibleParty(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return HistoryAndPhysicalNoteOperations.validateHistoryAndPhysicalNoteComponentOfEncompassingEncounter4ResponsibleParty(
@@ -482,10 +482,10 @@ public class HistoryAndPhysicalNoteImpl extends GeneralHeaderConstraintsImpl imp
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateHistoryAndPhysicalNoteComponentOfEncompassingEncounter4EncounterParticipant(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return HistoryAndPhysicalNoteOperations.validateHistoryAndPhysicalNoteComponentOfEncompassingEncounter4EncounterParticipant(
@@ -493,10 +493,10 @@ public class HistoryAndPhysicalNoteImpl extends GeneralHeaderConstraintsImpl imp
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateHistoryAndPhysicalNoteComponentOfEncompassingEncounter(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return HistoryAndPhysicalNoteOperations.validateHistoryAndPhysicalNoteComponentOfEncompassingEncounter(
@@ -504,10 +504,10 @@ public class HistoryAndPhysicalNoteImpl extends GeneralHeaderConstraintsImpl imp
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public AllergiesSectionEntriesOptional getAllergiesSectionEntriesOptional() {
 		return HistoryAndPhysicalNoteOperations.getAllergiesSectionEntriesOptional(this);
 	}

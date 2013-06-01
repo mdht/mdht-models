@@ -1553,7 +1553,7 @@ public class PressureUlcerObservationOperations extends ClinicalStatementOperati
 	/**
 	* The cached OCL expression body for the '{@link #validatePressureUlcerObservationEntryRelationship1Observation1ClassCode(PressureUlcerObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Pressure Ulcer Observation Entry Relationship1 Observation1 Class Code</em>}' operation.
 	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	* <!-- end-user-doc -->
 	* @see #validatePressureUlcerObservationEntryRelationship1Observation1ClassCode(PressureUlcerObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	* @generated
 	* @ordered
@@ -1561,26 +1561,26 @@ public class PressureUlcerObservationOperations extends ClinicalStatementOperati
 	protected static final String VALIDATE_PRESSURE_ULCER_OBSERVATION_ENTRY_RELATIONSHIP1_OBSERVATION1_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->excluding(null)->select(typeCode=vocab::x_ActRelationshipEntryRelationship::COMP and observation.code.code='401238003').observation->excluding(null)->reject(classCode=vocab::ActClassObservation::OBS)";
 
 	/**
-	* The cached OCL invariant for the '{@link #validatePressureUlcerObservationEntryRelationship1Observation1ClassCode(PressureUlcerObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Pressure Ulcer Observation Entry Relationship1 Observation1 Class Code</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validatePressureUlcerObservationEntryRelationship1Observation1ClassCode(PressureUlcerObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Pressure Ulcer Observation Entry Relationship1 Observation1 Class Code</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validatePressureUlcerObservationEntryRelationship1Observation1ClassCode(PressureUlcerObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validatePressureUlcerObservationEntryRelationship1Observation1ClassCode(PressureUlcerObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 
 	protected static Query<?, ?, ?> VALIDATE_PRESSURE_ULCER_OBSERVATION_ENTRY_RELATIONSHIP1_OBSERVATION1_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param pressureUlcerObservation The receiving '<em><b>Pressure Ulcer Observation</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param pressureUlcerObservation The receiving '<em><b>Pressure Ulcer Observation</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 	@SuppressWarnings("unchecked")
 	public static boolean validatePressureUlcerObservationEntryRelationship1Observation1ClassCode(
 			PressureUlcerObservation pressureUlcerObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
@@ -1616,36 +1616,36 @@ public class PressureUlcerObservationOperations extends ClinicalStatementOperati
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validatePressureUlcerObservationEntryRelationship1Observation1MoodCode(PressureUlcerObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Pressure Ulcer Observation Entry Relationship1 Observation1 Mood Code</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validatePressureUlcerObservationEntryRelationship1Observation1MoodCode(PressureUlcerObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Pressure Ulcer Observation Entry Relationship1 Observation1 Mood Code</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validatePressureUlcerObservationEntryRelationship1Observation1MoodCode(PressureUlcerObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validatePressureUlcerObservationEntryRelationship1Observation1MoodCode(PressureUlcerObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_PRESSURE_ULCER_OBSERVATION_ENTRY_RELATIONSHIP1_OBSERVATION1_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->excluding(null)->select(typeCode=vocab::x_ActRelationshipEntryRelationship::COMP and observation.code.code='401238003').observation->excluding(null)->reject(moodCode=vocab::x_ActMoodDocumentObservation::EVN)";
 
 	/**
-	* The cached OCL invariant for the '{@link #validatePressureUlcerObservationEntryRelationship1Observation1MoodCode(PressureUlcerObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Pressure Ulcer Observation Entry Relationship1 Observation1 Mood Code</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validatePressureUlcerObservationEntryRelationship1Observation1MoodCode(PressureUlcerObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Pressure Ulcer Observation Entry Relationship1 Observation1 Mood Code</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validatePressureUlcerObservationEntryRelationship1Observation1MoodCode(PressureUlcerObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validatePressureUlcerObservationEntryRelationship1Observation1MoodCode(PressureUlcerObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 
 	protected static Query<?, ?, ?> VALIDATE_PRESSURE_ULCER_OBSERVATION_ENTRY_RELATIONSHIP1_OBSERVATION1_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param pressureUlcerObservation The receiving '<em><b>Pressure Ulcer Observation</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param pressureUlcerObservation The receiving '<em><b>Pressure Ulcer Observation</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 	@SuppressWarnings("unchecked")
 	public static boolean validatePressureUlcerObservationEntryRelationship1Observation1MoodCode(
 			PressureUlcerObservation pressureUlcerObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
@@ -1681,36 +1681,36 @@ public class PressureUlcerObservationOperations extends ClinicalStatementOperati
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validatePressureUlcerObservationEntryRelationship1Observation1CodeP(PressureUlcerObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Pressure Ulcer Observation Entry Relationship1 Observation1 Code P</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validatePressureUlcerObservationEntryRelationship1Observation1CodeP(PressureUlcerObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Pressure Ulcer Observation Entry Relationship1 Observation1 Code P</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validatePressureUlcerObservationEntryRelationship1Observation1CodeP(PressureUlcerObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validatePressureUlcerObservationEntryRelationship1Observation1CodeP(PressureUlcerObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_PRESSURE_ULCER_OBSERVATION_ENTRY_RELATIONSHIP1_OBSERVATION1_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->excluding(null)->select(typeCode=vocab::x_ActRelationshipEntryRelationship::COMP and observation.code.code='401238003').observation->excluding(null)->reject((code.oclIsUndefined() or code.isNullFlavorUndefined()) implies (not code.oclIsUndefined()))";
 
 	/**
-	* The cached OCL invariant for the '{@link #validatePressureUlcerObservationEntryRelationship1Observation1CodeP(PressureUlcerObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Pressure Ulcer Observation Entry Relationship1 Observation1 Code P</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validatePressureUlcerObservationEntryRelationship1Observation1CodeP(PressureUlcerObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Pressure Ulcer Observation Entry Relationship1 Observation1 Code P</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validatePressureUlcerObservationEntryRelationship1Observation1CodeP(PressureUlcerObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validatePressureUlcerObservationEntryRelationship1Observation1CodeP(PressureUlcerObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 
 	protected static Query<?, ?, ?> VALIDATE_PRESSURE_ULCER_OBSERVATION_ENTRY_RELATIONSHIP1_OBSERVATION1_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param pressureUlcerObservation The receiving '<em><b>Pressure Ulcer Observation</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param pressureUlcerObservation The receiving '<em><b>Pressure Ulcer Observation</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 	@SuppressWarnings("unchecked")
 	public static boolean validatePressureUlcerObservationEntryRelationship1Observation1CodeP(
 			PressureUlcerObservation pressureUlcerObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
@@ -1759,38 +1759,38 @@ public class PressureUlcerObservationOperations extends ClinicalStatementOperati
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validatePressureUlcerObservationEntryRelationship1Observation1Code(PressureUlcerObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Pressure Ulcer Observation Entry Relationship1 Observation1 Code</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validatePressureUlcerObservationEntryRelationship1Observation1Code(PressureUlcerObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Pressure Ulcer Observation Entry Relationship1 Observation1 Code</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validatePressureUlcerObservationEntryRelationship1Observation1Code(PressureUlcerObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validatePressureUlcerObservationEntryRelationship1Observation1Code(PressureUlcerObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_PRESSURE_ULCER_OBSERVATION_ENTRY_RELATIONSHIP1_OBSERVATION1_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->excluding(null)->select(typeCode=vocab::x_ActRelationshipEntryRelationship::COMP and observation.code.code='401238003').observation->excluding(null)->reject((code.oclIsUndefined() or code.isNullFlavorUndefined()) implies (not code.oclIsUndefined() and code.oclIsKindOf(datatypes::CD) and "
 			+ "let value : datatypes::CD = code.oclAsType(datatypes::CD) in "
 			+ "value.code = '401238003' and value.codeSystem = '2.16.840.1.113883.6.96'))";
 
 	/**
-	* The cached OCL invariant for the '{@link #validatePressureUlcerObservationEntryRelationship1Observation1Code(PressureUlcerObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Pressure Ulcer Observation Entry Relationship1 Observation1 Code</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validatePressureUlcerObservationEntryRelationship1Observation1Code(PressureUlcerObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Pressure Ulcer Observation Entry Relationship1 Observation1 Code</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validatePressureUlcerObservationEntryRelationship1Observation1Code(PressureUlcerObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validatePressureUlcerObservationEntryRelationship1Observation1Code(PressureUlcerObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 
 	protected static Query<?, ?, ?> VALIDATE_PRESSURE_ULCER_OBSERVATION_ENTRY_RELATIONSHIP1_OBSERVATION1_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param pressureUlcerObservation The receiving '<em><b>Pressure Ulcer Observation</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param pressureUlcerObservation The receiving '<em><b>Pressure Ulcer Observation</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 	@SuppressWarnings("unchecked")
 	public static boolean validatePressureUlcerObservationEntryRelationship1Observation1Code(
 			PressureUlcerObservation pressureUlcerObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
@@ -1835,36 +1835,36 @@ public class PressureUlcerObservationOperations extends ClinicalStatementOperati
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validatePressureUlcerObservationEntryRelationship1Observation1Value(PressureUlcerObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Pressure Ulcer Observation Entry Relationship1 Observation1 Value</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validatePressureUlcerObservationEntryRelationship1Observation1Value(PressureUlcerObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Pressure Ulcer Observation Entry Relationship1 Observation1 Value</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validatePressureUlcerObservationEntryRelationship1Observation1Value(PressureUlcerObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validatePressureUlcerObservationEntryRelationship1Observation1Value(PressureUlcerObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_PRESSURE_ULCER_OBSERVATION_ENTRY_RELATIONSHIP1_OBSERVATION1_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->excluding(null)->select(typeCode=vocab::x_ActRelationshipEntryRelationship::COMP and observation.code.code='401238003').observation->excluding(null)->reject((value->isEmpty() or value->exists(element | element.isNullFlavorUndefined())) implies (value->size() = 1 and value->forAll(element | element.oclIsTypeOf(datatypes::PQ))))";
 
 	/**
-	* The cached OCL invariant for the '{@link #validatePressureUlcerObservationEntryRelationship1Observation1Value(PressureUlcerObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Pressure Ulcer Observation Entry Relationship1 Observation1 Value</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validatePressureUlcerObservationEntryRelationship1Observation1Value(PressureUlcerObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Pressure Ulcer Observation Entry Relationship1 Observation1 Value</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validatePressureUlcerObservationEntryRelationship1Observation1Value(PressureUlcerObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validatePressureUlcerObservationEntryRelationship1Observation1Value(PressureUlcerObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 
 	protected static Query<?, ?, ?> VALIDATE_PRESSURE_ULCER_OBSERVATION_ENTRY_RELATIONSHIP1_OBSERVATION1_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param pressureUlcerObservation The receiving '<em><b>Pressure Ulcer Observation</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param pressureUlcerObservation The receiving '<em><b>Pressure Ulcer Observation</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 	@SuppressWarnings("unchecked")
 	public static boolean validatePressureUlcerObservationEntryRelationship1Observation1Value(
 			PressureUlcerObservation pressureUlcerObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
@@ -1900,36 +1900,36 @@ public class PressureUlcerObservationOperations extends ClinicalStatementOperati
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validatePressureUlcerObservationEntryRelationship1TypeCode(PressureUlcerObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Pressure Ulcer Observation Entry Relationship1 Type Code</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validatePressureUlcerObservationEntryRelationship1TypeCode(PressureUlcerObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Pressure Ulcer Observation Entry Relationship1 Type Code</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validatePressureUlcerObservationEntryRelationship1TypeCode(PressureUlcerObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validatePressureUlcerObservationEntryRelationship1TypeCode(PressureUlcerObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_PRESSURE_ULCER_OBSERVATION_ENTRY_RELATIONSHIP1_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->excluding(null)->select(typeCode=vocab::x_ActRelationshipEntryRelationship::COMP and observation.code.code='401238003')->select(typeCode=vocab::x_ActRelationshipEntryRelationship::COMP and observation.code.code='401238003')->reject(typeCode=vocab::x_ActRelationshipEntryRelationship::COMP)";
 
 	/**
-	* The cached OCL invariant for the '{@link #validatePressureUlcerObservationEntryRelationship1TypeCode(PressureUlcerObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Pressure Ulcer Observation Entry Relationship1 Type Code</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validatePressureUlcerObservationEntryRelationship1TypeCode(PressureUlcerObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Pressure Ulcer Observation Entry Relationship1 Type Code</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validatePressureUlcerObservationEntryRelationship1TypeCode(PressureUlcerObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validatePressureUlcerObservationEntryRelationship1TypeCode(PressureUlcerObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 
 	protected static Query<?, ?, ?> VALIDATE_PRESSURE_ULCER_OBSERVATION_ENTRY_RELATIONSHIP1_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param pressureUlcerObservation The receiving '<em><b>Pressure Ulcer Observation</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param pressureUlcerObservation The receiving '<em><b>Pressure Ulcer Observation</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 	@SuppressWarnings("unchecked")
 	public static boolean validatePressureUlcerObservationEntryRelationship1TypeCode(
 			PressureUlcerObservation pressureUlcerObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
@@ -1965,36 +1965,36 @@ public class PressureUlcerObservationOperations extends ClinicalStatementOperati
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validatePressureUlcerObservationEntryRelationship1Observation1(PressureUlcerObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Pressure Ulcer Observation Entry Relationship1 Observation1</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validatePressureUlcerObservationEntryRelationship1Observation1(PressureUlcerObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Pressure Ulcer Observation Entry Relationship1 Observation1</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validatePressureUlcerObservationEntryRelationship1Observation1(PressureUlcerObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validatePressureUlcerObservationEntryRelationship1Observation1(PressureUlcerObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_PRESSURE_ULCER_OBSERVATION_ENTRY_RELATIONSHIP1_OBSERVATION1__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->excluding(null)->select(typeCode=vocab::x_ActRelationshipEntryRelationship::COMP and observation.code.code='401238003')->select(typeCode=vocab::x_ActRelationshipEntryRelationship::COMP and observation.code.code='401238003')->reject(observation->one(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(cda::Observation)))";
 
 	/**
-	* The cached OCL invariant for the '{@link #validatePressureUlcerObservationEntryRelationship1Observation1(PressureUlcerObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Pressure Ulcer Observation Entry Relationship1 Observation1</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validatePressureUlcerObservationEntryRelationship1Observation1(PressureUlcerObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Pressure Ulcer Observation Entry Relationship1 Observation1</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validatePressureUlcerObservationEntryRelationship1Observation1(PressureUlcerObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validatePressureUlcerObservationEntryRelationship1Observation1(PressureUlcerObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 
 	protected static Query<?, ?, ?> VALIDATE_PRESSURE_ULCER_OBSERVATION_ENTRY_RELATIONSHIP1_OBSERVATION1__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param pressureUlcerObservation The receiving '<em><b>Pressure Ulcer Observation</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param pressureUlcerObservation The receiving '<em><b>Pressure Ulcer Observation</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 	@SuppressWarnings("unchecked")
 	public static boolean validatePressureUlcerObservationEntryRelationship1Observation1(
 			PressureUlcerObservation pressureUlcerObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
@@ -2030,36 +2030,36 @@ public class PressureUlcerObservationOperations extends ClinicalStatementOperati
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validatePressureUlcerObservationEntryRelationship2Observation2ClassCode(PressureUlcerObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Pressure Ulcer Observation Entry Relationship2 Observation2 Class Code</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validatePressureUlcerObservationEntryRelationship2Observation2ClassCode(PressureUlcerObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Pressure Ulcer Observation Entry Relationship2 Observation2 Class Code</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validatePressureUlcerObservationEntryRelationship2Observation2ClassCode(PressureUlcerObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validatePressureUlcerObservationEntryRelationship2Observation2ClassCode(PressureUlcerObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_PRESSURE_ULCER_OBSERVATION_ENTRY_RELATIONSHIP2_OBSERVATION2_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->excluding(null)->select(typeCode=vocab::x_ActRelationshipEntryRelationship::COMP and observation.code.code='401239006').observation->excluding(null)->reject(classCode=vocab::ActClassObservation::OBS)";
 
 	/**
-	* The cached OCL invariant for the '{@link #validatePressureUlcerObservationEntryRelationship2Observation2ClassCode(PressureUlcerObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Pressure Ulcer Observation Entry Relationship2 Observation2 Class Code</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validatePressureUlcerObservationEntryRelationship2Observation2ClassCode(PressureUlcerObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Pressure Ulcer Observation Entry Relationship2 Observation2 Class Code</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validatePressureUlcerObservationEntryRelationship2Observation2ClassCode(PressureUlcerObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validatePressureUlcerObservationEntryRelationship2Observation2ClassCode(PressureUlcerObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 
 	protected static Query<?, ?, ?> VALIDATE_PRESSURE_ULCER_OBSERVATION_ENTRY_RELATIONSHIP2_OBSERVATION2_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param pressureUlcerObservation The receiving '<em><b>Pressure Ulcer Observation</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param pressureUlcerObservation The receiving '<em><b>Pressure Ulcer Observation</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 	@SuppressWarnings("unchecked")
 	public static boolean validatePressureUlcerObservationEntryRelationship2Observation2ClassCode(
 			PressureUlcerObservation pressureUlcerObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
@@ -2095,36 +2095,36 @@ public class PressureUlcerObservationOperations extends ClinicalStatementOperati
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validatePressureUlcerObservationEntryRelationship2Observation2MoodCode(PressureUlcerObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Pressure Ulcer Observation Entry Relationship2 Observation2 Mood Code</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validatePressureUlcerObservationEntryRelationship2Observation2MoodCode(PressureUlcerObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Pressure Ulcer Observation Entry Relationship2 Observation2 Mood Code</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validatePressureUlcerObservationEntryRelationship2Observation2MoodCode(PressureUlcerObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validatePressureUlcerObservationEntryRelationship2Observation2MoodCode(PressureUlcerObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_PRESSURE_ULCER_OBSERVATION_ENTRY_RELATIONSHIP2_OBSERVATION2_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->excluding(null)->select(typeCode=vocab::x_ActRelationshipEntryRelationship::COMP and observation.code.code='401239006').observation->excluding(null)->reject(moodCode=vocab::x_ActMoodDocumentObservation::EVN)";
 
 	/**
-	* The cached OCL invariant for the '{@link #validatePressureUlcerObservationEntryRelationship2Observation2MoodCode(PressureUlcerObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Pressure Ulcer Observation Entry Relationship2 Observation2 Mood Code</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validatePressureUlcerObservationEntryRelationship2Observation2MoodCode(PressureUlcerObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Pressure Ulcer Observation Entry Relationship2 Observation2 Mood Code</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validatePressureUlcerObservationEntryRelationship2Observation2MoodCode(PressureUlcerObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validatePressureUlcerObservationEntryRelationship2Observation2MoodCode(PressureUlcerObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 
 	protected static Query<?, ?, ?> VALIDATE_PRESSURE_ULCER_OBSERVATION_ENTRY_RELATIONSHIP2_OBSERVATION2_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param pressureUlcerObservation The receiving '<em><b>Pressure Ulcer Observation</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param pressureUlcerObservation The receiving '<em><b>Pressure Ulcer Observation</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 	@SuppressWarnings("unchecked")
 	public static boolean validatePressureUlcerObservationEntryRelationship2Observation2MoodCode(
 			PressureUlcerObservation pressureUlcerObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
@@ -2160,36 +2160,36 @@ public class PressureUlcerObservationOperations extends ClinicalStatementOperati
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validatePressureUlcerObservationEntryRelationship2Observation2CodeP(PressureUlcerObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Pressure Ulcer Observation Entry Relationship2 Observation2 Code P</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validatePressureUlcerObservationEntryRelationship2Observation2CodeP(PressureUlcerObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Pressure Ulcer Observation Entry Relationship2 Observation2 Code P</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validatePressureUlcerObservationEntryRelationship2Observation2CodeP(PressureUlcerObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validatePressureUlcerObservationEntryRelationship2Observation2CodeP(PressureUlcerObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_PRESSURE_ULCER_OBSERVATION_ENTRY_RELATIONSHIP2_OBSERVATION2_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->excluding(null)->select(typeCode=vocab::x_ActRelationshipEntryRelationship::COMP and observation.code.code='401239006').observation->excluding(null)->reject((code.oclIsUndefined() or code.isNullFlavorUndefined()) implies (not code.oclIsUndefined()))";
 
 	/**
-	* The cached OCL invariant for the '{@link #validatePressureUlcerObservationEntryRelationship2Observation2CodeP(PressureUlcerObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Pressure Ulcer Observation Entry Relationship2 Observation2 Code P</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validatePressureUlcerObservationEntryRelationship2Observation2CodeP(PressureUlcerObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Pressure Ulcer Observation Entry Relationship2 Observation2 Code P</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validatePressureUlcerObservationEntryRelationship2Observation2CodeP(PressureUlcerObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validatePressureUlcerObservationEntryRelationship2Observation2CodeP(PressureUlcerObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 
 	protected static Query<?, ?, ?> VALIDATE_PRESSURE_ULCER_OBSERVATION_ENTRY_RELATIONSHIP2_OBSERVATION2_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param pressureUlcerObservation The receiving '<em><b>Pressure Ulcer Observation</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param pressureUlcerObservation The receiving '<em><b>Pressure Ulcer Observation</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 	@SuppressWarnings("unchecked")
 	public static boolean validatePressureUlcerObservationEntryRelationship2Observation2CodeP(
 			PressureUlcerObservation pressureUlcerObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
@@ -2238,38 +2238,38 @@ public class PressureUlcerObservationOperations extends ClinicalStatementOperati
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validatePressureUlcerObservationEntryRelationship2Observation2Code(PressureUlcerObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Pressure Ulcer Observation Entry Relationship2 Observation2 Code</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validatePressureUlcerObservationEntryRelationship2Observation2Code(PressureUlcerObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Pressure Ulcer Observation Entry Relationship2 Observation2 Code</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validatePressureUlcerObservationEntryRelationship2Observation2Code(PressureUlcerObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validatePressureUlcerObservationEntryRelationship2Observation2Code(PressureUlcerObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_PRESSURE_ULCER_OBSERVATION_ENTRY_RELATIONSHIP2_OBSERVATION2_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->excluding(null)->select(typeCode=vocab::x_ActRelationshipEntryRelationship::COMP and observation.code.code='401239006').observation->excluding(null)->reject((code.oclIsUndefined() or code.isNullFlavorUndefined()) implies (not code.oclIsUndefined() and code.oclIsKindOf(datatypes::CD) and "
 			+ "let value : datatypes::CD = code.oclAsType(datatypes::CD) in "
 			+ "value.code = '401239006' and value.codeSystem = '2.16.840.1.113883.6.96'))";
 
 	/**
-	* The cached OCL invariant for the '{@link #validatePressureUlcerObservationEntryRelationship2Observation2Code(PressureUlcerObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Pressure Ulcer Observation Entry Relationship2 Observation2 Code</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validatePressureUlcerObservationEntryRelationship2Observation2Code(PressureUlcerObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Pressure Ulcer Observation Entry Relationship2 Observation2 Code</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validatePressureUlcerObservationEntryRelationship2Observation2Code(PressureUlcerObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validatePressureUlcerObservationEntryRelationship2Observation2Code(PressureUlcerObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 
 	protected static Query<?, ?, ?> VALIDATE_PRESSURE_ULCER_OBSERVATION_ENTRY_RELATIONSHIP2_OBSERVATION2_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param pressureUlcerObservation The receiving '<em><b>Pressure Ulcer Observation</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param pressureUlcerObservation The receiving '<em><b>Pressure Ulcer Observation</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 	@SuppressWarnings("unchecked")
 	public static boolean validatePressureUlcerObservationEntryRelationship2Observation2Code(
 			PressureUlcerObservation pressureUlcerObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
@@ -2314,36 +2314,36 @@ public class PressureUlcerObservationOperations extends ClinicalStatementOperati
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validatePressureUlcerObservationEntryRelationship2Observation2Value(PressureUlcerObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Pressure Ulcer Observation Entry Relationship2 Observation2 Value</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validatePressureUlcerObservationEntryRelationship2Observation2Value(PressureUlcerObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Pressure Ulcer Observation Entry Relationship2 Observation2 Value</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validatePressureUlcerObservationEntryRelationship2Observation2Value(PressureUlcerObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validatePressureUlcerObservationEntryRelationship2Observation2Value(PressureUlcerObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_PRESSURE_ULCER_OBSERVATION_ENTRY_RELATIONSHIP2_OBSERVATION2_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->excluding(null)->select(typeCode=vocab::x_ActRelationshipEntryRelationship::COMP and observation.code.code='401239006').observation->excluding(null)->reject((value->isEmpty() or value->exists(element | element.isNullFlavorUndefined())) implies (value->size() = 1 and value->forAll(element | element.oclIsTypeOf(datatypes::PQ))))";
 
 	/**
-	* The cached OCL invariant for the '{@link #validatePressureUlcerObservationEntryRelationship2Observation2Value(PressureUlcerObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Pressure Ulcer Observation Entry Relationship2 Observation2 Value</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validatePressureUlcerObservationEntryRelationship2Observation2Value(PressureUlcerObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Pressure Ulcer Observation Entry Relationship2 Observation2 Value</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validatePressureUlcerObservationEntryRelationship2Observation2Value(PressureUlcerObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validatePressureUlcerObservationEntryRelationship2Observation2Value(PressureUlcerObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 
 	protected static Query<?, ?, ?> VALIDATE_PRESSURE_ULCER_OBSERVATION_ENTRY_RELATIONSHIP2_OBSERVATION2_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param pressureUlcerObservation The receiving '<em><b>Pressure Ulcer Observation</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param pressureUlcerObservation The receiving '<em><b>Pressure Ulcer Observation</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 	@SuppressWarnings("unchecked")
 	public static boolean validatePressureUlcerObservationEntryRelationship2Observation2Value(
 			PressureUlcerObservation pressureUlcerObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
@@ -2379,36 +2379,36 @@ public class PressureUlcerObservationOperations extends ClinicalStatementOperati
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validatePressureUlcerObservationEntryRelationship2TypeCode(PressureUlcerObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Pressure Ulcer Observation Entry Relationship2 Type Code</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validatePressureUlcerObservationEntryRelationship2TypeCode(PressureUlcerObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Pressure Ulcer Observation Entry Relationship2 Type Code</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validatePressureUlcerObservationEntryRelationship2TypeCode(PressureUlcerObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validatePressureUlcerObservationEntryRelationship2TypeCode(PressureUlcerObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_PRESSURE_ULCER_OBSERVATION_ENTRY_RELATIONSHIP2_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->excluding(null)->select(typeCode=vocab::x_ActRelationshipEntryRelationship::COMP and observation.code.code='401239006')->select(typeCode=vocab::x_ActRelationshipEntryRelationship::COMP and observation.code.code='401239006')->reject(typeCode=vocab::x_ActRelationshipEntryRelationship::COMP)";
 
 	/**
-	* The cached OCL invariant for the '{@link #validatePressureUlcerObservationEntryRelationship2TypeCode(PressureUlcerObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Pressure Ulcer Observation Entry Relationship2 Type Code</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validatePressureUlcerObservationEntryRelationship2TypeCode(PressureUlcerObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Pressure Ulcer Observation Entry Relationship2 Type Code</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validatePressureUlcerObservationEntryRelationship2TypeCode(PressureUlcerObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validatePressureUlcerObservationEntryRelationship2TypeCode(PressureUlcerObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 
 	protected static Query<?, ?, ?> VALIDATE_PRESSURE_ULCER_OBSERVATION_ENTRY_RELATIONSHIP2_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param pressureUlcerObservation The receiving '<em><b>Pressure Ulcer Observation</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param pressureUlcerObservation The receiving '<em><b>Pressure Ulcer Observation</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 	@SuppressWarnings("unchecked")
 	public static boolean validatePressureUlcerObservationEntryRelationship2TypeCode(
 			PressureUlcerObservation pressureUlcerObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
@@ -2444,36 +2444,36 @@ public class PressureUlcerObservationOperations extends ClinicalStatementOperati
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validatePressureUlcerObservationEntryRelationship2Observation2(PressureUlcerObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Pressure Ulcer Observation Entry Relationship2 Observation2</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validatePressureUlcerObservationEntryRelationship2Observation2(PressureUlcerObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Pressure Ulcer Observation Entry Relationship2 Observation2</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validatePressureUlcerObservationEntryRelationship2Observation2(PressureUlcerObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validatePressureUlcerObservationEntryRelationship2Observation2(PressureUlcerObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_PRESSURE_ULCER_OBSERVATION_ENTRY_RELATIONSHIP2_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->excluding(null)->select(typeCode=vocab::x_ActRelationshipEntryRelationship::COMP and observation.code.code='401239006')->select(typeCode=vocab::x_ActRelationshipEntryRelationship::COMP and observation.code.code='401239006')->reject(observation->one(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(cda::Observation)))";
 
 	/**
-	* The cached OCL invariant for the '{@link #validatePressureUlcerObservationEntryRelationship2Observation2(PressureUlcerObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Pressure Ulcer Observation Entry Relationship2 Observation2</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validatePressureUlcerObservationEntryRelationship2Observation2(PressureUlcerObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Pressure Ulcer Observation Entry Relationship2 Observation2</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validatePressureUlcerObservationEntryRelationship2Observation2(PressureUlcerObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validatePressureUlcerObservationEntryRelationship2Observation2(PressureUlcerObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 
 	protected static Query<?, ?, ?> VALIDATE_PRESSURE_ULCER_OBSERVATION_ENTRY_RELATIONSHIP2_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param pressureUlcerObservation The receiving '<em><b>Pressure Ulcer Observation</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param pressureUlcerObservation The receiving '<em><b>Pressure Ulcer Observation</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 	@SuppressWarnings("unchecked")
 	public static boolean validatePressureUlcerObservationEntryRelationship2Observation2(
 			PressureUlcerObservation pressureUlcerObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
@@ -2509,36 +2509,36 @@ public class PressureUlcerObservationOperations extends ClinicalStatementOperati
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validatePressureUlcerObservationEntryRelationship3Observation3ClassCode(PressureUlcerObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Pressure Ulcer Observation Entry Relationship3 Observation3 Class Code</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validatePressureUlcerObservationEntryRelationship3Observation3ClassCode(PressureUlcerObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Pressure Ulcer Observation Entry Relationship3 Observation3 Class Code</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validatePressureUlcerObservationEntryRelationship3Observation3ClassCode(PressureUlcerObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validatePressureUlcerObservationEntryRelationship3Observation3ClassCode(PressureUlcerObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_PRESSURE_ULCER_OBSERVATION_ENTRY_RELATIONSHIP3_OBSERVATION3_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->excluding(null)->select(typeCode=vocab::x_ActRelationshipEntryRelationship::COMP and observation.code.code='425094009').observation->excluding(null)->reject(classCode=vocab::ActClassObservation::OBS)";
 
 	/**
-	* The cached OCL invariant for the '{@link #validatePressureUlcerObservationEntryRelationship3Observation3ClassCode(PressureUlcerObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Pressure Ulcer Observation Entry Relationship3 Observation3 Class Code</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validatePressureUlcerObservationEntryRelationship3Observation3ClassCode(PressureUlcerObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Pressure Ulcer Observation Entry Relationship3 Observation3 Class Code</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validatePressureUlcerObservationEntryRelationship3Observation3ClassCode(PressureUlcerObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validatePressureUlcerObservationEntryRelationship3Observation3ClassCode(PressureUlcerObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 
 	protected static Query<?, ?, ?> VALIDATE_PRESSURE_ULCER_OBSERVATION_ENTRY_RELATIONSHIP3_OBSERVATION3_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param pressureUlcerObservation The receiving '<em><b>Pressure Ulcer Observation</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param pressureUlcerObservation The receiving '<em><b>Pressure Ulcer Observation</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 	@SuppressWarnings("unchecked")
 	public static boolean validatePressureUlcerObservationEntryRelationship3Observation3ClassCode(
 			PressureUlcerObservation pressureUlcerObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
@@ -2574,36 +2574,36 @@ public class PressureUlcerObservationOperations extends ClinicalStatementOperati
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validatePressureUlcerObservationEntryRelationship3Observation3MoodCode(PressureUlcerObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Pressure Ulcer Observation Entry Relationship3 Observation3 Mood Code</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validatePressureUlcerObservationEntryRelationship3Observation3MoodCode(PressureUlcerObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Pressure Ulcer Observation Entry Relationship3 Observation3 Mood Code</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validatePressureUlcerObservationEntryRelationship3Observation3MoodCode(PressureUlcerObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validatePressureUlcerObservationEntryRelationship3Observation3MoodCode(PressureUlcerObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_PRESSURE_ULCER_OBSERVATION_ENTRY_RELATIONSHIP3_OBSERVATION3_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->excluding(null)->select(typeCode=vocab::x_ActRelationshipEntryRelationship::COMP and observation.code.code='425094009').observation->excluding(null)->reject(moodCode=vocab::x_ActMoodDocumentObservation::EVN)";
 
 	/**
-	* The cached OCL invariant for the '{@link #validatePressureUlcerObservationEntryRelationship3Observation3MoodCode(PressureUlcerObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Pressure Ulcer Observation Entry Relationship3 Observation3 Mood Code</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validatePressureUlcerObservationEntryRelationship3Observation3MoodCode(PressureUlcerObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Pressure Ulcer Observation Entry Relationship3 Observation3 Mood Code</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validatePressureUlcerObservationEntryRelationship3Observation3MoodCode(PressureUlcerObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validatePressureUlcerObservationEntryRelationship3Observation3MoodCode(PressureUlcerObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 
 	protected static Query<?, ?, ?> VALIDATE_PRESSURE_ULCER_OBSERVATION_ENTRY_RELATIONSHIP3_OBSERVATION3_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param pressureUlcerObservation The receiving '<em><b>Pressure Ulcer Observation</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param pressureUlcerObservation The receiving '<em><b>Pressure Ulcer Observation</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 	@SuppressWarnings("unchecked")
 	public static boolean validatePressureUlcerObservationEntryRelationship3Observation3MoodCode(
 			PressureUlcerObservation pressureUlcerObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
@@ -2639,36 +2639,36 @@ public class PressureUlcerObservationOperations extends ClinicalStatementOperati
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validatePressureUlcerObservationEntryRelationship3Observation3CodeP(PressureUlcerObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Pressure Ulcer Observation Entry Relationship3 Observation3 Code P</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validatePressureUlcerObservationEntryRelationship3Observation3CodeP(PressureUlcerObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Pressure Ulcer Observation Entry Relationship3 Observation3 Code P</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validatePressureUlcerObservationEntryRelationship3Observation3CodeP(PressureUlcerObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validatePressureUlcerObservationEntryRelationship3Observation3CodeP(PressureUlcerObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_PRESSURE_ULCER_OBSERVATION_ENTRY_RELATIONSHIP3_OBSERVATION3_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->excluding(null)->select(typeCode=vocab::x_ActRelationshipEntryRelationship::COMP and observation.code.code='425094009').observation->excluding(null)->reject((code.oclIsUndefined() or code.isNullFlavorUndefined()) implies (not code.oclIsUndefined()))";
 
 	/**
-	* The cached OCL invariant for the '{@link #validatePressureUlcerObservationEntryRelationship3Observation3CodeP(PressureUlcerObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Pressure Ulcer Observation Entry Relationship3 Observation3 Code P</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validatePressureUlcerObservationEntryRelationship3Observation3CodeP(PressureUlcerObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Pressure Ulcer Observation Entry Relationship3 Observation3 Code P</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validatePressureUlcerObservationEntryRelationship3Observation3CodeP(PressureUlcerObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validatePressureUlcerObservationEntryRelationship3Observation3CodeP(PressureUlcerObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 
 	protected static Query<?, ?, ?> VALIDATE_PRESSURE_ULCER_OBSERVATION_ENTRY_RELATIONSHIP3_OBSERVATION3_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param pressureUlcerObservation The receiving '<em><b>Pressure Ulcer Observation</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param pressureUlcerObservation The receiving '<em><b>Pressure Ulcer Observation</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 	@SuppressWarnings("unchecked")
 	public static boolean validatePressureUlcerObservationEntryRelationship3Observation3CodeP(
 			PressureUlcerObservation pressureUlcerObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
@@ -2717,38 +2717,38 @@ public class PressureUlcerObservationOperations extends ClinicalStatementOperati
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validatePressureUlcerObservationEntryRelationship3Observation3Code(PressureUlcerObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Pressure Ulcer Observation Entry Relationship3 Observation3 Code</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validatePressureUlcerObservationEntryRelationship3Observation3Code(PressureUlcerObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Pressure Ulcer Observation Entry Relationship3 Observation3 Code</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validatePressureUlcerObservationEntryRelationship3Observation3Code(PressureUlcerObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validatePressureUlcerObservationEntryRelationship3Observation3Code(PressureUlcerObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_PRESSURE_ULCER_OBSERVATION_ENTRY_RELATIONSHIP3_OBSERVATION3_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->excluding(null)->select(typeCode=vocab::x_ActRelationshipEntryRelationship::COMP and observation.code.code='425094009').observation->excluding(null)->reject((code.oclIsUndefined() or code.isNullFlavorUndefined()) implies (not code.oclIsUndefined() and code.oclIsKindOf(datatypes::CD) and "
 			+ "let value : datatypes::CD = code.oclAsType(datatypes::CD) in "
 			+ "value.code = '425094009' and value.codeSystem = '2.16.840.1.113883.6.96'))";
 
 	/**
-	* The cached OCL invariant for the '{@link #validatePressureUlcerObservationEntryRelationship3Observation3Code(PressureUlcerObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Pressure Ulcer Observation Entry Relationship3 Observation3 Code</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validatePressureUlcerObservationEntryRelationship3Observation3Code(PressureUlcerObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Pressure Ulcer Observation Entry Relationship3 Observation3 Code</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validatePressureUlcerObservationEntryRelationship3Observation3Code(PressureUlcerObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validatePressureUlcerObservationEntryRelationship3Observation3Code(PressureUlcerObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 
 	protected static Query<?, ?, ?> VALIDATE_PRESSURE_ULCER_OBSERVATION_ENTRY_RELATIONSHIP3_OBSERVATION3_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param pressureUlcerObservation The receiving '<em><b>Pressure Ulcer Observation</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param pressureUlcerObservation The receiving '<em><b>Pressure Ulcer Observation</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 	@SuppressWarnings("unchecked")
 	public static boolean validatePressureUlcerObservationEntryRelationship3Observation3Code(
 			PressureUlcerObservation pressureUlcerObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
@@ -2793,36 +2793,36 @@ public class PressureUlcerObservationOperations extends ClinicalStatementOperati
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validatePressureUlcerObservationEntryRelationship3Observation3Value(PressureUlcerObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Pressure Ulcer Observation Entry Relationship3 Observation3 Value</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validatePressureUlcerObservationEntryRelationship3Observation3Value(PressureUlcerObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Pressure Ulcer Observation Entry Relationship3 Observation3 Value</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validatePressureUlcerObservationEntryRelationship3Observation3Value(PressureUlcerObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validatePressureUlcerObservationEntryRelationship3Observation3Value(PressureUlcerObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_PRESSURE_ULCER_OBSERVATION_ENTRY_RELATIONSHIP3_OBSERVATION3_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->excluding(null)->select(typeCode=vocab::x_ActRelationshipEntryRelationship::COMP and observation.code.code='425094009').observation->excluding(null)->reject((value->isEmpty() or value->exists(element | element.isNullFlavorUndefined())) implies (value->size() = 1 and value->forAll(element | element.oclIsTypeOf(datatypes::PQ))))";
 
 	/**
-	* The cached OCL invariant for the '{@link #validatePressureUlcerObservationEntryRelationship3Observation3Value(PressureUlcerObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Pressure Ulcer Observation Entry Relationship3 Observation3 Value</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validatePressureUlcerObservationEntryRelationship3Observation3Value(PressureUlcerObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Pressure Ulcer Observation Entry Relationship3 Observation3 Value</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validatePressureUlcerObservationEntryRelationship3Observation3Value(PressureUlcerObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validatePressureUlcerObservationEntryRelationship3Observation3Value(PressureUlcerObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 
 	protected static Query<?, ?, ?> VALIDATE_PRESSURE_ULCER_OBSERVATION_ENTRY_RELATIONSHIP3_OBSERVATION3_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param pressureUlcerObservation The receiving '<em><b>Pressure Ulcer Observation</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param pressureUlcerObservation The receiving '<em><b>Pressure Ulcer Observation</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 	@SuppressWarnings("unchecked")
 	public static boolean validatePressureUlcerObservationEntryRelationship3Observation3Value(
 			PressureUlcerObservation pressureUlcerObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
@@ -2858,36 +2858,36 @@ public class PressureUlcerObservationOperations extends ClinicalStatementOperati
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validatePressureUlcerObservationEntryRelationship3TypeCode(PressureUlcerObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Pressure Ulcer Observation Entry Relationship3 Type Code</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validatePressureUlcerObservationEntryRelationship3TypeCode(PressureUlcerObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Pressure Ulcer Observation Entry Relationship3 Type Code</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validatePressureUlcerObservationEntryRelationship3TypeCode(PressureUlcerObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validatePressureUlcerObservationEntryRelationship3TypeCode(PressureUlcerObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_PRESSURE_ULCER_OBSERVATION_ENTRY_RELATIONSHIP3_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->excluding(null)->select(typeCode=vocab::x_ActRelationshipEntryRelationship::COMP and observation.code.code='425094009')->select(typeCode=vocab::x_ActRelationshipEntryRelationship::COMP and observation.code.code='425094009')->reject(typeCode=vocab::x_ActRelationshipEntryRelationship::COMP)";
 
 	/**
-	* The cached OCL invariant for the '{@link #validatePressureUlcerObservationEntryRelationship3TypeCode(PressureUlcerObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Pressure Ulcer Observation Entry Relationship3 Type Code</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validatePressureUlcerObservationEntryRelationship3TypeCode(PressureUlcerObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Pressure Ulcer Observation Entry Relationship3 Type Code</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validatePressureUlcerObservationEntryRelationship3TypeCode(PressureUlcerObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validatePressureUlcerObservationEntryRelationship3TypeCode(PressureUlcerObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 
 	protected static Query<?, ?, ?> VALIDATE_PRESSURE_ULCER_OBSERVATION_ENTRY_RELATIONSHIP3_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param pressureUlcerObservation The receiving '<em><b>Pressure Ulcer Observation</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param pressureUlcerObservation The receiving '<em><b>Pressure Ulcer Observation</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 	@SuppressWarnings("unchecked")
 	public static boolean validatePressureUlcerObservationEntryRelationship3TypeCode(
 			PressureUlcerObservation pressureUlcerObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
@@ -2923,36 +2923,36 @@ public class PressureUlcerObservationOperations extends ClinicalStatementOperati
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validatePressureUlcerObservationEntryRelationship3Observation3(PressureUlcerObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Pressure Ulcer Observation Entry Relationship3 Observation3</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validatePressureUlcerObservationEntryRelationship3Observation3(PressureUlcerObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Pressure Ulcer Observation Entry Relationship3 Observation3</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validatePressureUlcerObservationEntryRelationship3Observation3(PressureUlcerObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validatePressureUlcerObservationEntryRelationship3Observation3(PressureUlcerObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_PRESSURE_ULCER_OBSERVATION_ENTRY_RELATIONSHIP3_OBSERVATION3__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->excluding(null)->select(typeCode=vocab::x_ActRelationshipEntryRelationship::COMP and observation.code.code='425094009')->select(typeCode=vocab::x_ActRelationshipEntryRelationship::COMP and observation.code.code='425094009')->reject(observation->one(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(cda::Observation)))";
 
 	/**
-	* The cached OCL invariant for the '{@link #validatePressureUlcerObservationEntryRelationship3Observation3(PressureUlcerObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Pressure Ulcer Observation Entry Relationship3 Observation3</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validatePressureUlcerObservationEntryRelationship3Observation3(PressureUlcerObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Pressure Ulcer Observation Entry Relationship3 Observation3</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validatePressureUlcerObservationEntryRelationship3Observation3(PressureUlcerObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validatePressureUlcerObservationEntryRelationship3Observation3(PressureUlcerObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 
 	protected static Query<?, ?, ?> VALIDATE_PRESSURE_ULCER_OBSERVATION_ENTRY_RELATIONSHIP3_OBSERVATION3__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param pressureUlcerObservation The receiving '<em><b>Pressure Ulcer Observation</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param pressureUlcerObservation The receiving '<em><b>Pressure Ulcer Observation</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 	@SuppressWarnings("unchecked")
 	public static boolean validatePressureUlcerObservationEntryRelationship3Observation3(
 			PressureUlcerObservation pressureUlcerObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {

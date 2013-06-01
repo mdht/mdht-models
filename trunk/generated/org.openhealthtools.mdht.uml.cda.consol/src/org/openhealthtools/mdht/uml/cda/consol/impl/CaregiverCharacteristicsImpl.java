@@ -143,7 +143,7 @@ public class CaregiverCharacteristicsImpl extends ObservationImpl implements Car
 
 	/**
 	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	* <!-- end-user-doc -->
 	* @generated
 	*/
 	public boolean validateCaregiverCharacteristicsParticipantParticipantRoleClassCode(DiagnosticChain diagnostics,
@@ -153,10 +153,10 @@ public class CaregiverCharacteristicsImpl extends ObservationImpl implements Car
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateCaregiverCharacteristicsParticipantTimeLow(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return CaregiverCharacteristicsOperations.validateCaregiverCharacteristicsParticipantTimeLow(
@@ -164,10 +164,10 @@ public class CaregiverCharacteristicsImpl extends ObservationImpl implements Car
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateCaregiverCharacteristicsParticipantTimeHigh(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return CaregiverCharacteristicsOperations.validateCaregiverCharacteristicsParticipantTimeHigh(
@@ -175,10 +175,10 @@ public class CaregiverCharacteristicsImpl extends ObservationImpl implements Car
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateCaregiverCharacteristicsParticipantTime(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return CaregiverCharacteristicsOperations.validateCaregiverCharacteristicsParticipantTime(
@@ -186,10 +186,10 @@ public class CaregiverCharacteristicsImpl extends ObservationImpl implements Car
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateCaregiverCharacteristicsParticipantParticipantRole(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return CaregiverCharacteristicsOperations.validateCaregiverCharacteristicsParticipantParticipantRole(
@@ -197,10 +197,10 @@ public class CaregiverCharacteristicsImpl extends ObservationImpl implements Car
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public CaregiverCharacteristics init() {
 		return Initializer.Util.init(this);
 	}

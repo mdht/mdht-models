@@ -81,6 +81,7 @@ public class AnesthesiaSectionOperations extends SectionOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_ANESTHESIA_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -93,6 +94,7 @@ public class AnesthesiaSectionOperations extends SectionOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateAnesthesiaSectionTemplateId(AnesthesiaSection anesthesiaSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -139,6 +141,7 @@ public class AnesthesiaSectionOperations extends SectionOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_ANESTHESIA_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -151,6 +154,7 @@ public class AnesthesiaSectionOperations extends SectionOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateAnesthesiaSectionCode(AnesthesiaSection anesthesiaSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -180,7 +184,7 @@ public class AnesthesiaSectionOperations extends SectionOperations {
 	/**
 	* The cached OCL expression body for the '{@link #validateAnesthesiaSectionCodeP(AnesthesiaSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Anesthesia Section Code P</em>}' operation.
 	* <!-- begin-user-doc -->
-	* <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	* @see #validateAnesthesiaSectionCodeP(AnesthesiaSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	* @generated
 	* @ordered
@@ -253,6 +257,7 @@ public class AnesthesiaSectionOperations extends SectionOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_ANESTHESIA_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -265,6 +270,7 @@ public class AnesthesiaSectionOperations extends SectionOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateAnesthesiaSectionText(AnesthesiaSection anesthesiaSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -309,6 +315,7 @@ public class AnesthesiaSectionOperations extends SectionOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_ANESTHESIA_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -321,6 +328,7 @@ public class AnesthesiaSectionOperations extends SectionOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateAnesthesiaSectionTitle(AnesthesiaSection anesthesiaSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -365,6 +373,7 @@ public class AnesthesiaSectionOperations extends SectionOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_ANESTHESIA_SECTION_PROCEDURE_ACTIVITY_PROCEDURE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -377,6 +386,7 @@ public class AnesthesiaSectionOperations extends SectionOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateAnesthesiaSectionProcedureActivityProcedure(AnesthesiaSection anesthesiaSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -423,6 +433,7 @@ public class AnesthesiaSectionOperations extends SectionOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_ANESTHESIA_SECTION_MEDICATION_ACTIVITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -435,6 +446,7 @@ public class AnesthesiaSectionOperations extends SectionOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateAnesthesiaSectionMedicationActivity(AnesthesiaSection anesthesiaSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -487,6 +499,7 @@ public class AnesthesiaSectionOperations extends SectionOperations {
 	 * <!-- end-user-doc -->
 	* @generated
 	*/
+
 	public static EList<ProcedureActivityProcedure> getProcedureActivityProcedures(AnesthesiaSection anesthesiaSection) {
 		if (GET_PROCEDURE_ACTIVITY_PROCEDURES__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
@@ -530,6 +543,7 @@ public class AnesthesiaSectionOperations extends SectionOperations {
 	 * <!-- end-user-doc -->
 	* @generated
 	*/
+
 	public static EList<MedicationActivity> getMedicationActivities(AnesthesiaSection anesthesiaSection) {
 		if (GET_MEDICATION_ACTIVITIES__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();

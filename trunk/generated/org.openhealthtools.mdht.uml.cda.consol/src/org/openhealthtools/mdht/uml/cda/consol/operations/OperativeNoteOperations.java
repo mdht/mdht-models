@@ -133,6 +133,7 @@ public class OperativeNoteOperations extends GeneralHeaderConstraintsOperations 
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_OPERATIVE_NOTE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -145,6 +146,7 @@ public class OperativeNoteOperations extends GeneralHeaderConstraintsOperations 
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateOperativeNoteTemplateId(OperativeNote operativeNote, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
@@ -243,7 +245,7 @@ public class OperativeNoteOperations extends GeneralHeaderConstraintsOperations 
 	/**
 	* The cached OCL expression body for the '{@link #validateOperativeNoteCode(OperativeNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Operative Note Code</em>}' operation.
 	* <!-- begin-user-doc -->
-	* <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	* @see #validateOperativeNoteCode(OperativeNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	* @generated
 	* @ordered
@@ -325,6 +327,7 @@ public class OperativeNoteOperations extends GeneralHeaderConstraintsOperations 
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_OPERATIVE_NOTE_DOCUMENTATION_OF__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -337,6 +340,7 @@ public class OperativeNoteOperations extends GeneralHeaderConstraintsOperations 
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateOperativeNoteDocumentationOf(OperativeNote operativeNote,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -381,6 +385,7 @@ public class OperativeNoteOperations extends GeneralHeaderConstraintsOperations 
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_OPERATIVE_NOTE_ANESTHESIA_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -393,6 +398,7 @@ public class OperativeNoteOperations extends GeneralHeaderConstraintsOperations 
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateOperativeNoteAnesthesiaSection(OperativeNote operativeNote,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -437,6 +443,7 @@ public class OperativeNoteOperations extends GeneralHeaderConstraintsOperations 
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_OPERATIVE_NOTE_COMPLICATIONS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -449,6 +456,7 @@ public class OperativeNoteOperations extends GeneralHeaderConstraintsOperations 
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateOperativeNoteComplicationsSection(OperativeNote operativeNote,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -494,6 +502,7 @@ public class OperativeNoteOperations extends GeneralHeaderConstraintsOperations 
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_OPERATIVE_NOTE_POSTOPERATIVE_DIAGNOSIS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -506,6 +515,7 @@ public class OperativeNoteOperations extends GeneralHeaderConstraintsOperations 
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateOperativeNotePostoperativeDiagnosisSection(OperativeNote operativeNote,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -552,6 +562,7 @@ public class OperativeNoteOperations extends GeneralHeaderConstraintsOperations 
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_OPERATIVE_NOTE_PREOPERATIVE_DIAGNOSIS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -564,6 +575,7 @@ public class OperativeNoteOperations extends GeneralHeaderConstraintsOperations 
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateOperativeNotePreoperativeDiagnosisSection(OperativeNote operativeNote,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -609,6 +621,7 @@ public class OperativeNoteOperations extends GeneralHeaderConstraintsOperations 
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_OPERATIVE_NOTE_PROCEDURE_ESTIMATED_BLOOD_LOSS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -621,6 +634,7 @@ public class OperativeNoteOperations extends GeneralHeaderConstraintsOperations 
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateOperativeNoteProcedureEstimatedBloodLossSection(OperativeNote operativeNote,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -667,6 +681,7 @@ public class OperativeNoteOperations extends GeneralHeaderConstraintsOperations 
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_OPERATIVE_NOTE_PROCEDURE_FINDINGS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -679,6 +694,7 @@ public class OperativeNoteOperations extends GeneralHeaderConstraintsOperations 
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateOperativeNoteProcedureFindingsSection(OperativeNote operativeNote,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -724,6 +740,7 @@ public class OperativeNoteOperations extends GeneralHeaderConstraintsOperations 
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_OPERATIVE_NOTE_PROCEDURE_SPECIMENS_TAKEN_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -736,6 +753,7 @@ public class OperativeNoteOperations extends GeneralHeaderConstraintsOperations 
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateOperativeNoteProcedureSpecimensTakenSection(OperativeNote operativeNote,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -782,6 +800,7 @@ public class OperativeNoteOperations extends GeneralHeaderConstraintsOperations 
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_OPERATIVE_NOTE_PROCEDURE_DESCRIPTION_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -794,6 +813,7 @@ public class OperativeNoteOperations extends GeneralHeaderConstraintsOperations 
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateOperativeNoteProcedureDescriptionSection(OperativeNote operativeNote,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -839,6 +859,7 @@ public class OperativeNoteOperations extends GeneralHeaderConstraintsOperations 
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_OPERATIVE_NOTE_PROCEDURE_IMPLANTS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -851,6 +872,7 @@ public class OperativeNoteOperations extends GeneralHeaderConstraintsOperations 
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateOperativeNoteProcedureImplantsSection(OperativeNote operativeNote,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -896,6 +918,7 @@ public class OperativeNoteOperations extends GeneralHeaderConstraintsOperations 
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_OPERATIVE_NOTE_OPERATIVE_NOTE_FLUID_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -908,6 +931,7 @@ public class OperativeNoteOperations extends GeneralHeaderConstraintsOperations 
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateOperativeNoteOperativeNoteFluidSection(OperativeNote operativeNote,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -953,6 +977,7 @@ public class OperativeNoteOperations extends GeneralHeaderConstraintsOperations 
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_OPERATIVE_NOTE_OPERATIVE_NOTE_SURGICAL_PROCEDURE_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -965,6 +990,7 @@ public class OperativeNoteOperations extends GeneralHeaderConstraintsOperations 
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateOperativeNoteOperativeNoteSurgicalProcedureSection(OperativeNote operativeNote,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -1011,6 +1037,7 @@ public class OperativeNoteOperations extends GeneralHeaderConstraintsOperations 
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_OPERATIVE_NOTE_PLAN_OF_CARE_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -1023,6 +1050,7 @@ public class OperativeNoteOperations extends GeneralHeaderConstraintsOperations 
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateOperativeNotePlanOfCareSection(OperativeNote operativeNote,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -1067,6 +1095,7 @@ public class OperativeNoteOperations extends GeneralHeaderConstraintsOperations 
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_OPERATIVE_NOTE_PLANNED_PROCEDURE_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -1079,6 +1108,7 @@ public class OperativeNoteOperations extends GeneralHeaderConstraintsOperations 
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateOperativeNotePlannedProcedureSection(OperativeNote operativeNote,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -1124,6 +1154,7 @@ public class OperativeNoteOperations extends GeneralHeaderConstraintsOperations 
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_OPERATIVE_NOTE_PROCEDURE_DISPOSITION_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -1136,6 +1167,7 @@ public class OperativeNoteOperations extends GeneralHeaderConstraintsOperations 
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateOperativeNoteProcedureDispositionSection(OperativeNote operativeNote,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -1181,6 +1213,7 @@ public class OperativeNoteOperations extends GeneralHeaderConstraintsOperations 
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_OPERATIVE_NOTE_PROCEDURE_INDICATIONS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -1193,6 +1226,7 @@ public class OperativeNoteOperations extends GeneralHeaderConstraintsOperations 
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateOperativeNoteProcedureIndicationsSection(OperativeNote operativeNote,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -1238,6 +1272,7 @@ public class OperativeNoteOperations extends GeneralHeaderConstraintsOperations 
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_OPERATIVE_NOTE_SURGICAL_DRAINS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -1250,6 +1285,7 @@ public class OperativeNoteOperations extends GeneralHeaderConstraintsOperations 
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateOperativeNoteSurgicalDrainsSection(OperativeNote operativeNote,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -1280,7 +1316,7 @@ public class OperativeNoteOperations extends GeneralHeaderConstraintsOperations 
 	/**
 	* The cached OCL expression body for the '{@link #validateOperativeNoteDocumentationOfServiceEventPrimaryPerformerAssignedEntityCode(OperativeNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Operative Note Documentation Of Service Event Primary Performer Assigned Entity Code</em>}' operation.
 	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	* <!-- end-user-doc -->
 	* @see #validateOperativeNoteDocumentationOfServiceEventPrimaryPerformerAssignedEntityCode(OperativeNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	* @generated
 	* @ordered
@@ -1290,26 +1326,26 @@ public class OperativeNoteOperations extends GeneralHeaderConstraintsOperations 
 			+ "value.codeSystem = '2.16.840.1.113883.6.101' and not value.code.oclIsUndefined()))";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateOperativeNoteDocumentationOfServiceEventPrimaryPerformerAssignedEntityCode(OperativeNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Operative Note Documentation Of Service Event Primary Performer Assigned Entity Code</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateOperativeNoteDocumentationOfServiceEventPrimaryPerformerAssignedEntityCode(OperativeNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Operative Note Documentation Of Service Event Primary Performer Assigned Entity Code</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateOperativeNoteDocumentationOfServiceEventPrimaryPerformerAssignedEntityCode(OperativeNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateOperativeNoteDocumentationOfServiceEventPrimaryPerformerAssignedEntityCode(OperativeNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 
 	protected static Query<?, ?, ?> VALIDATE_OPERATIVE_NOTE_DOCUMENTATION_OF_SERVICE_EVENT_PRIMARY_PERFORMER_ASSIGNED_ENTITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param operativeNote The receiving '<em><b>Operative Note</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param operativeNote The receiving '<em><b>Operative Note</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 	@SuppressWarnings("unchecked")
 	public static boolean validateOperativeNoteDocumentationOfServiceEventPrimaryPerformerAssignedEntityCode(
 			OperativeNote operativeNote, DiagnosticChain diagnostics, Map<Object, Object> context) {
@@ -1345,36 +1381,36 @@ public class OperativeNoteOperations extends GeneralHeaderConstraintsOperations 
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateOperativeNoteDocumentationOfServiceEventPrimaryPerformerAssignedEntityCodeP(OperativeNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Operative Note Documentation Of Service Event Primary Performer Assigned Entity Code P</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateOperativeNoteDocumentationOfServiceEventPrimaryPerformerAssignedEntityCodeP(OperativeNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Operative Note Documentation Of Service Event Primary Performer Assigned Entity Code P</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateOperativeNoteDocumentationOfServiceEventPrimaryPerformerAssignedEntityCodeP(OperativeNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateOperativeNoteDocumentationOfServiceEventPrimaryPerformerAssignedEntityCodeP(OperativeNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_OPERATIVE_NOTE_DOCUMENTATION_OF_SERVICE_EVENT_PRIMARY_PERFORMER_ASSIGNED_ENTITY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.documentationOf->excluding(null).serviceEvent->excluding(null).performer->excluding(null)->select(typeCode = vocab::x_ServiceEventPerformer::PPRF).assignedEntity->excluding(null)->reject((code.oclIsUndefined() or code.isNullFlavorUndefined()) implies (not code.oclIsUndefined()))";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateOperativeNoteDocumentationOfServiceEventPrimaryPerformerAssignedEntityCodeP(OperativeNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Operative Note Documentation Of Service Event Primary Performer Assigned Entity Code P</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateOperativeNoteDocumentationOfServiceEventPrimaryPerformerAssignedEntityCodeP(OperativeNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Operative Note Documentation Of Service Event Primary Performer Assigned Entity Code P</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateOperativeNoteDocumentationOfServiceEventPrimaryPerformerAssignedEntityCodeP(OperativeNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateOperativeNoteDocumentationOfServiceEventPrimaryPerformerAssignedEntityCodeP(OperativeNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 
 	protected static Query<?, ?, ?> VALIDATE_OPERATIVE_NOTE_DOCUMENTATION_OF_SERVICE_EVENT_PRIMARY_PERFORMER_ASSIGNED_ENTITY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param operativeNote The receiving '<em><b>Operative Note</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param operativeNote The receiving '<em><b>Operative Note</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 	@SuppressWarnings("unchecked")
 	public static boolean validateOperativeNoteDocumentationOfServiceEventPrimaryPerformerAssignedEntityCodeP(
 			OperativeNote operativeNote, DiagnosticChain diagnostics, Map<Object, Object> context) {
@@ -1410,36 +1446,36 @@ public class OperativeNoteOperations extends GeneralHeaderConstraintsOperations 
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateOperativeNoteDocumentationOfServiceEventPrimaryPerformerTypeCode(OperativeNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Operative Note Documentation Of Service Event Primary Performer Type Code</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateOperativeNoteDocumentationOfServiceEventPrimaryPerformerTypeCode(OperativeNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Operative Note Documentation Of Service Event Primary Performer Type Code</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateOperativeNoteDocumentationOfServiceEventPrimaryPerformerTypeCode(OperativeNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateOperativeNoteDocumentationOfServiceEventPrimaryPerformerTypeCode(OperativeNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_OPERATIVE_NOTE_DOCUMENTATION_OF_SERVICE_EVENT_PRIMARY_PERFORMER_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.documentationOf->excluding(null).serviceEvent->excluding(null).performer->excluding(null)->select(typeCode = vocab::x_ServiceEventPerformer::PPRF)->select(typeCode = vocab::x_ServiceEventPerformer::PPRF)->reject(typeCode=vocab::x_ServiceEventPerformer::PPRF)";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateOperativeNoteDocumentationOfServiceEventPrimaryPerformerTypeCode(OperativeNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Operative Note Documentation Of Service Event Primary Performer Type Code</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateOperativeNoteDocumentationOfServiceEventPrimaryPerformerTypeCode(OperativeNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Operative Note Documentation Of Service Event Primary Performer Type Code</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateOperativeNoteDocumentationOfServiceEventPrimaryPerformerTypeCode(OperativeNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateOperativeNoteDocumentationOfServiceEventPrimaryPerformerTypeCode(OperativeNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 
 	protected static Query<?, ?, ?> VALIDATE_OPERATIVE_NOTE_DOCUMENTATION_OF_SERVICE_EVENT_PRIMARY_PERFORMER_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param operativeNote The receiving '<em><b>Operative Note</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param operativeNote The receiving '<em><b>Operative Note</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 	@SuppressWarnings("unchecked")
 	public static boolean validateOperativeNoteDocumentationOfServiceEventPrimaryPerformerTypeCode(
 			OperativeNote operativeNote, DiagnosticChain diagnostics, Map<Object, Object> context) {
@@ -1475,36 +1511,36 @@ public class OperativeNoteOperations extends GeneralHeaderConstraintsOperations 
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateOperativeNoteDocumentationOfServiceEventPrimaryPerformerAssignedEntity(OperativeNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Operative Note Documentation Of Service Event Primary Performer Assigned Entity</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateOperativeNoteDocumentationOfServiceEventPrimaryPerformerAssignedEntity(OperativeNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Operative Note Documentation Of Service Event Primary Performer Assigned Entity</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateOperativeNoteDocumentationOfServiceEventPrimaryPerformerAssignedEntity(OperativeNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateOperativeNoteDocumentationOfServiceEventPrimaryPerformerAssignedEntity(OperativeNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_OPERATIVE_NOTE_DOCUMENTATION_OF_SERVICE_EVENT_PRIMARY_PERFORMER_ASSIGNED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.documentationOf->excluding(null).serviceEvent->excluding(null).performer->excluding(null)->select(typeCode = vocab::x_ServiceEventPerformer::PPRF)->select(typeCode = vocab::x_ServiceEventPerformer::PPRF)->reject(assignedEntity->one(assignedEntity : cda::AssignedEntity | not assignedEntity.oclIsUndefined() and assignedEntity.oclIsKindOf(cda::AssignedEntity)))";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateOperativeNoteDocumentationOfServiceEventPrimaryPerformerAssignedEntity(OperativeNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Operative Note Documentation Of Service Event Primary Performer Assigned Entity</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateOperativeNoteDocumentationOfServiceEventPrimaryPerformerAssignedEntity(OperativeNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Operative Note Documentation Of Service Event Primary Performer Assigned Entity</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateOperativeNoteDocumentationOfServiceEventPrimaryPerformerAssignedEntity(OperativeNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateOperativeNoteDocumentationOfServiceEventPrimaryPerformerAssignedEntity(OperativeNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 
 	protected static Query<?, ?, ?> VALIDATE_OPERATIVE_NOTE_DOCUMENTATION_OF_SERVICE_EVENT_PRIMARY_PERFORMER_ASSIGNED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param operativeNote The receiving '<em><b>Operative Note</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param operativeNote The receiving '<em><b>Operative Note</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 	@SuppressWarnings("unchecked")
 	public static boolean validateOperativeNoteDocumentationOfServiceEventPrimaryPerformerAssignedEntity(
 			OperativeNote operativeNote, DiagnosticChain diagnostics, Map<Object, Object> context) {
@@ -1540,36 +1576,36 @@ public class OperativeNoteOperations extends GeneralHeaderConstraintsOperations 
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateOperativeNoteDocumentationOfServiceEventProcedureCodes(OperativeNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Operative Note Documentation Of Service Event Procedure Codes</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateOperativeNoteDocumentationOfServiceEventProcedureCodes(OperativeNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Operative Note Documentation Of Service Event Procedure Codes</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateOperativeNoteDocumentationOfServiceEventProcedureCodes(OperativeNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateOperativeNoteDocumentationOfServiceEventProcedureCodes(OperativeNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_OPERATIVE_NOTE_DOCUMENTATION_OF_SERVICE_EVENT_PROCEDURE_CODES__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.documentationOf->excluding(null).serviceEvent->excluding(null)->reject(code.codeSystem = '2.16.840.1.113883.6.104' or code.codeSystem = '2.16.840.1.113883.6.12' or code.codeSystem = '2.16.840.1.113883.6.96')";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateOperativeNoteDocumentationOfServiceEventProcedureCodes(OperativeNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Operative Note Documentation Of Service Event Procedure Codes</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateOperativeNoteDocumentationOfServiceEventProcedureCodes(OperativeNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Operative Note Documentation Of Service Event Procedure Codes</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateOperativeNoteDocumentationOfServiceEventProcedureCodes(OperativeNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateOperativeNoteDocumentationOfServiceEventProcedureCodes(OperativeNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 
 	protected static Query<?, ?, ?> VALIDATE_OPERATIVE_NOTE_DOCUMENTATION_OF_SERVICE_EVENT_PROCEDURE_CODES__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param operativeNote The receiving '<em><b>Operative Note</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param operativeNote The receiving '<em><b>Operative Note</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 	@SuppressWarnings("unchecked")
 	public static boolean validateOperativeNoteDocumentationOfServiceEventProcedureCodes(OperativeNote operativeNote,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
@@ -1604,36 +1640,36 @@ public class OperativeNoteOperations extends GeneralHeaderConstraintsOperations 
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateOperativeNoteDocumentationOfServiceEventEffectiveTimeHasLow(OperativeNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Operative Note Documentation Of Service Event Effective Time Has Low</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateOperativeNoteDocumentationOfServiceEventEffectiveTimeHasLow(OperativeNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Operative Note Documentation Of Service Event Effective Time Has Low</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateOperativeNoteDocumentationOfServiceEventEffectiveTimeHasLow(OperativeNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateOperativeNoteDocumentationOfServiceEventEffectiveTimeHasLow(OperativeNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_OPERATIVE_NOTE_DOCUMENTATION_OF_SERVICE_EVENT_EFFECTIVE_TIME_HAS_LOW__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.documentationOf->excluding(null).serviceEvent->excluding(null)->reject(not effectiveTime.low.oclIsUndefined())";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateOperativeNoteDocumentationOfServiceEventEffectiveTimeHasLow(OperativeNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Operative Note Documentation Of Service Event Effective Time Has Low</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateOperativeNoteDocumentationOfServiceEventEffectiveTimeHasLow(OperativeNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Operative Note Documentation Of Service Event Effective Time Has Low</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateOperativeNoteDocumentationOfServiceEventEffectiveTimeHasLow(OperativeNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateOperativeNoteDocumentationOfServiceEventEffectiveTimeHasLow(OperativeNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 
 	protected static Query<?, ?, ?> VALIDATE_OPERATIVE_NOTE_DOCUMENTATION_OF_SERVICE_EVENT_EFFECTIVE_TIME_HAS_LOW__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param operativeNote The receiving '<em><b>Operative Note</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param operativeNote The receiving '<em><b>Operative Note</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 	@SuppressWarnings("unchecked")
 	public static boolean validateOperativeNoteDocumentationOfServiceEventEffectiveTimeHasLow(
 			OperativeNote operativeNote, DiagnosticChain diagnostics, Map<Object, Object> context) {
@@ -1669,36 +1705,36 @@ public class OperativeNoteOperations extends GeneralHeaderConstraintsOperations 
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateOperativeNoteDocumentationOfServiceEventEffectiveTimeHasHighWhenNoWidth(OperativeNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Operative Note Documentation Of Service Event Effective Time Has High When No Width</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateOperativeNoteDocumentationOfServiceEventEffectiveTimeHasHighWhenNoWidth(OperativeNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Operative Note Documentation Of Service Event Effective Time Has High When No Width</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateOperativeNoteDocumentationOfServiceEventEffectiveTimeHasHighWhenNoWidth(OperativeNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateOperativeNoteDocumentationOfServiceEventEffectiveTimeHasHighWhenNoWidth(OperativeNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_OPERATIVE_NOTE_DOCUMENTATION_OF_SERVICE_EVENT_EFFECTIVE_TIME_HAS_HIGH_WHEN_NO_WIDTH__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.documentationOf->excluding(null).serviceEvent->excluding(null)->reject(not effectiveTime.width.oclIsUndefined() xor not effectiveTime.high.oclIsUndefined())";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateOperativeNoteDocumentationOfServiceEventEffectiveTimeHasHighWhenNoWidth(OperativeNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Operative Note Documentation Of Service Event Effective Time Has High When No Width</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateOperativeNoteDocumentationOfServiceEventEffectiveTimeHasHighWhenNoWidth(OperativeNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Operative Note Documentation Of Service Event Effective Time Has High When No Width</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateOperativeNoteDocumentationOfServiceEventEffectiveTimeHasHighWhenNoWidth(OperativeNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateOperativeNoteDocumentationOfServiceEventEffectiveTimeHasHighWhenNoWidth(OperativeNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 
 	protected static Query<?, ?, ?> VALIDATE_OPERATIVE_NOTE_DOCUMENTATION_OF_SERVICE_EVENT_EFFECTIVE_TIME_HAS_HIGH_WHEN_NO_WIDTH__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param operativeNote The receiving '<em><b>Operative Note</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param operativeNote The receiving '<em><b>Operative Note</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 	@SuppressWarnings("unchecked")
 	public static boolean validateOperativeNoteDocumentationOfServiceEventEffectiveTimeHasHighWhenNoWidth(
 			OperativeNote operativeNote, DiagnosticChain diagnostics, Map<Object, Object> context) {
@@ -1734,36 +1770,36 @@ public class OperativeNoteOperations extends GeneralHeaderConstraintsOperations 
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateOperativeNoteDocumentationOfServiceEventEffectiveTimeNoHighIfWidth(OperativeNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Operative Note Documentation Of Service Event Effective Time No High If Width</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateOperativeNoteDocumentationOfServiceEventEffectiveTimeNoHighIfWidth(OperativeNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Operative Note Documentation Of Service Event Effective Time No High If Width</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateOperativeNoteDocumentationOfServiceEventEffectiveTimeNoHighIfWidth(OperativeNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateOperativeNoteDocumentationOfServiceEventEffectiveTimeNoHighIfWidth(OperativeNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_OPERATIVE_NOTE_DOCUMENTATION_OF_SERVICE_EVENT_EFFECTIVE_TIME_NO_HIGH_IF_WIDTH__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.documentationOf->excluding(null).serviceEvent->excluding(null)->reject(not effectiveTime.width.oclIsUndefined() xor not effectiveTime.high.oclIsUndefined())";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateOperativeNoteDocumentationOfServiceEventEffectiveTimeNoHighIfWidth(OperativeNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Operative Note Documentation Of Service Event Effective Time No High If Width</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateOperativeNoteDocumentationOfServiceEventEffectiveTimeNoHighIfWidth(OperativeNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Operative Note Documentation Of Service Event Effective Time No High If Width</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateOperativeNoteDocumentationOfServiceEventEffectiveTimeNoHighIfWidth(OperativeNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateOperativeNoteDocumentationOfServiceEventEffectiveTimeNoHighIfWidth(OperativeNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 
 	protected static Query<?, ?, ?> VALIDATE_OPERATIVE_NOTE_DOCUMENTATION_OF_SERVICE_EVENT_EFFECTIVE_TIME_NO_HIGH_IF_WIDTH__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param operativeNote The receiving '<em><b>Operative Note</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param operativeNote The receiving '<em><b>Operative Note</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 	@SuppressWarnings("unchecked")
 	public static boolean validateOperativeNoteDocumentationOfServiceEventEffectiveTimeNoHighIfWidth(
 			OperativeNote operativeNote, DiagnosticChain diagnostics, Map<Object, Object> context) {
@@ -1799,36 +1835,36 @@ public class OperativeNoteOperations extends GeneralHeaderConstraintsOperations 
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateOperativeNoteDocumentationOfServiceEventCode(OperativeNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Operative Note Documentation Of Service Event Code</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateOperativeNoteDocumentationOfServiceEventCode(OperativeNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Operative Note Documentation Of Service Event Code</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateOperativeNoteDocumentationOfServiceEventCode(OperativeNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateOperativeNoteDocumentationOfServiceEventCode(OperativeNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_OPERATIVE_NOTE_DOCUMENTATION_OF_SERVICE_EVENT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.documentationOf->excluding(null).serviceEvent->excluding(null)->reject((code.oclIsUndefined() or code.isNullFlavorUndefined()) implies (not code.oclIsUndefined()))";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateOperativeNoteDocumentationOfServiceEventCode(OperativeNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Operative Note Documentation Of Service Event Code</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateOperativeNoteDocumentationOfServiceEventCode(OperativeNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Operative Note Documentation Of Service Event Code</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateOperativeNoteDocumentationOfServiceEventCode(OperativeNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateOperativeNoteDocumentationOfServiceEventCode(OperativeNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 
 	protected static Query<?, ?, ?> VALIDATE_OPERATIVE_NOTE_DOCUMENTATION_OF_SERVICE_EVENT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param operativeNote The receiving '<em><b>Operative Note</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param operativeNote The receiving '<em><b>Operative Note</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 	@SuppressWarnings("unchecked")
 	public static boolean validateOperativeNoteDocumentationOfServiceEventCode(OperativeNote operativeNote,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
@@ -1863,36 +1899,36 @@ public class OperativeNoteOperations extends GeneralHeaderConstraintsOperations 
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateOperativeNoteDocumentationOfServiceEventEffectiveTime(OperativeNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Operative Note Documentation Of Service Event Effective Time</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateOperativeNoteDocumentationOfServiceEventEffectiveTime(OperativeNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Operative Note Documentation Of Service Event Effective Time</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateOperativeNoteDocumentationOfServiceEventEffectiveTime(OperativeNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateOperativeNoteDocumentationOfServiceEventEffectiveTime(OperativeNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_OPERATIVE_NOTE_DOCUMENTATION_OF_SERVICE_EVENT_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.documentationOf->excluding(null).serviceEvent->excluding(null)->reject((effectiveTime.oclIsUndefined() or effectiveTime.isNullFlavorUndefined()) implies (not effectiveTime.oclIsUndefined()))";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateOperativeNoteDocumentationOfServiceEventEffectiveTime(OperativeNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Operative Note Documentation Of Service Event Effective Time</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateOperativeNoteDocumentationOfServiceEventEffectiveTime(OperativeNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Operative Note Documentation Of Service Event Effective Time</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateOperativeNoteDocumentationOfServiceEventEffectiveTime(OperativeNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateOperativeNoteDocumentationOfServiceEventEffectiveTime(OperativeNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 
 	protected static Query<?, ?, ?> VALIDATE_OPERATIVE_NOTE_DOCUMENTATION_OF_SERVICE_EVENT_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param operativeNote The receiving '<em><b>Operative Note</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param operativeNote The receiving '<em><b>Operative Note</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 	@SuppressWarnings("unchecked")
 	public static boolean validateOperativeNoteDocumentationOfServiceEventEffectiveTime(OperativeNote operativeNote,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
@@ -1927,36 +1963,36 @@ public class OperativeNoteOperations extends GeneralHeaderConstraintsOperations 
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateOperativeNoteDocumentationOfServiceEventPrimaryPerformer(OperativeNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Operative Note Documentation Of Service Event Primary Performer</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateOperativeNoteDocumentationOfServiceEventPrimaryPerformer(OperativeNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Operative Note Documentation Of Service Event Primary Performer</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateOperativeNoteDocumentationOfServiceEventPrimaryPerformer(OperativeNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateOperativeNoteDocumentationOfServiceEventPrimaryPerformer(OperativeNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_OPERATIVE_NOTE_DOCUMENTATION_OF_SERVICE_EVENT_PRIMARY_PERFORMER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.documentationOf->excluding(null).serviceEvent->excluding(null)->reject(performer->select(performer : cda::Performer1 | not performer.oclIsUndefined() and performer.oclIsKindOf(cda::Performer1))->select(typeCode = vocab::x_ServiceEventPerformer::PPRF)->size() = 1)";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateOperativeNoteDocumentationOfServiceEventPrimaryPerformer(OperativeNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Operative Note Documentation Of Service Event Primary Performer</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateOperativeNoteDocumentationOfServiceEventPrimaryPerformer(OperativeNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Operative Note Documentation Of Service Event Primary Performer</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateOperativeNoteDocumentationOfServiceEventPrimaryPerformer(OperativeNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateOperativeNoteDocumentationOfServiceEventPrimaryPerformer(OperativeNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 
 	protected static Query<?, ?, ?> VALIDATE_OPERATIVE_NOTE_DOCUMENTATION_OF_SERVICE_EVENT_PRIMARY_PERFORMER__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param operativeNote The receiving '<em><b>Operative Note</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param operativeNote The receiving '<em><b>Operative Note</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 	@SuppressWarnings("unchecked")
 	public static boolean validateOperativeNoteDocumentationOfServiceEventPrimaryPerformer(OperativeNote operativeNote,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
@@ -1992,36 +2028,36 @@ public class OperativeNoteOperations extends GeneralHeaderConstraintsOperations 
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateOperativeNoteDocumentationOfServiceEvent(OperativeNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Operative Note Documentation Of Service Event</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateOperativeNoteDocumentationOfServiceEvent(OperativeNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Operative Note Documentation Of Service Event</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateOperativeNoteDocumentationOfServiceEvent(OperativeNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateOperativeNoteDocumentationOfServiceEvent(OperativeNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_OPERATIVE_NOTE_DOCUMENTATION_OF_SERVICE_EVENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.documentationOf->excluding(null)->reject(serviceEvent->one(serviceEvent : cda::ServiceEvent | not serviceEvent.oclIsUndefined() and serviceEvent.oclIsKindOf(cda::ServiceEvent)))";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateOperativeNoteDocumentationOfServiceEvent(OperativeNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Operative Note Documentation Of Service Event</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateOperativeNoteDocumentationOfServiceEvent(OperativeNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Operative Note Documentation Of Service Event</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateOperativeNoteDocumentationOfServiceEvent(OperativeNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateOperativeNoteDocumentationOfServiceEvent(OperativeNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 
 	protected static Query<?, ?, ?> VALIDATE_OPERATIVE_NOTE_DOCUMENTATION_OF_SERVICE_EVENT__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param operativeNote The receiving '<em><b>Operative Note</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param operativeNote The receiving '<em><b>Operative Note</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 	@SuppressWarnings("unchecked")
 	public static boolean validateOperativeNoteDocumentationOfServiceEvent(OperativeNote operativeNote,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
@@ -2056,13 +2092,13 @@ public class OperativeNoteOperations extends GeneralHeaderConstraintsOperations 
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #getAnesthesiaSection(OperativeNote) <em>Get Anesthesia Section</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #getAnesthesiaSection(OperativeNote) <em>Get Anesthesia Section</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #getAnesthesiaSection(OperativeNote)
-	* @generated
-	* @ordered
-	*/
+	 * @see #getAnesthesiaSection(OperativeNote)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String GET_ANESTHESIA_SECTION__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::AnesthesiaSection))->asSequence()->any(true).oclAsType(consol::AnesthesiaSection)";
 
 	/**
@@ -2080,6 +2116,7 @@ public class OperativeNoteOperations extends GeneralHeaderConstraintsOperations 
 	 * <!-- end-user-doc -->
 	* @generated
 	*/
+
 	public static AnesthesiaSection getAnesthesiaSection(OperativeNote operativeNote) {
 		if (GET_ANESTHESIA_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
@@ -2121,6 +2158,7 @@ public class OperativeNoteOperations extends GeneralHeaderConstraintsOperations 
 	 * <!-- end-user-doc -->
 	* @generated
 	*/
+
 	public static ComplicationsSection getComplicationsSection(OperativeNote operativeNote) {
 		if (GET_COMPLICATIONS_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
@@ -2162,6 +2200,7 @@ public class OperativeNoteOperations extends GeneralHeaderConstraintsOperations 
 	 * <!-- end-user-doc -->
 	* @generated
 	*/
+
 	public static PostoperativeDiagnosisSection getPostoperativeDiagnosisSection(OperativeNote operativeNote) {
 		if (GET_POSTOPERATIVE_DIAGNOSIS_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
@@ -2203,6 +2242,7 @@ public class OperativeNoteOperations extends GeneralHeaderConstraintsOperations 
 	 * <!-- end-user-doc -->
 	* @generated
 	*/
+
 	public static PreoperativeDiagnosisSection getPreoperativeDiagnosisSection(OperativeNote operativeNote) {
 		if (GET_PREOPERATIVE_DIAGNOSIS_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
@@ -2244,6 +2284,7 @@ public class OperativeNoteOperations extends GeneralHeaderConstraintsOperations 
 	 * <!-- end-user-doc -->
 	* @generated
 	*/
+
 	public static ProcedureEstimatedBloodLossSection getProcedureEstimatedBloodLossSection(OperativeNote operativeNote) {
 		if (GET_PROCEDURE_ESTIMATED_BLOOD_LOSS_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
@@ -2285,6 +2326,7 @@ public class OperativeNoteOperations extends GeneralHeaderConstraintsOperations 
 	 * <!-- end-user-doc -->
 	* @generated
 	*/
+
 	public static ProcedureFindingsSection getProcedureFindingsSection(OperativeNote operativeNote) {
 		if (GET_PROCEDURE_FINDINGS_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
@@ -2326,6 +2368,7 @@ public class OperativeNoteOperations extends GeneralHeaderConstraintsOperations 
 	 * <!-- end-user-doc -->
 	* @generated
 	*/
+
 	public static ProcedureSpecimensTakenSection getProcedureSpecimensTakenSection(OperativeNote operativeNote) {
 		if (GET_PROCEDURE_SPECIMENS_TAKEN_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
@@ -2367,6 +2410,7 @@ public class OperativeNoteOperations extends GeneralHeaderConstraintsOperations 
 	 * <!-- end-user-doc -->
 	* @generated
 	*/
+
 	public static ProcedureDescriptionSection getProcedureDescriptionSection(OperativeNote operativeNote) {
 		if (GET_PROCEDURE_DESCRIPTION_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
@@ -2408,6 +2452,7 @@ public class OperativeNoteOperations extends GeneralHeaderConstraintsOperations 
 	 * <!-- end-user-doc -->
 	* @generated
 	*/
+
 	public static ProcedureImplantsSection getProcedureImplantsSection(OperativeNote operativeNote) {
 		if (GET_PROCEDURE_IMPLANTS_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
@@ -2449,6 +2494,7 @@ public class OperativeNoteOperations extends GeneralHeaderConstraintsOperations 
 	 * <!-- end-user-doc -->
 	* @generated
 	*/
+
 	public static OperativeNoteFluidSection getOperativeNoteFluidSection(OperativeNote operativeNote) {
 		if (GET_OPERATIVE_NOTE_FLUID_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
@@ -2490,6 +2536,7 @@ public class OperativeNoteOperations extends GeneralHeaderConstraintsOperations 
 	 * <!-- end-user-doc -->
 	* @generated
 	*/
+
 	public static OperativeNoteSurgicalProcedureSection getOperativeNoteSurgicalProcedureSection(
 			OperativeNote operativeNote) {
 		if (GET_OPERATIVE_NOTE_SURGICAL_PROCEDURE_SECTION__EOCL_QRY == null) {
@@ -2532,6 +2579,7 @@ public class OperativeNoteOperations extends GeneralHeaderConstraintsOperations 
 	 * <!-- end-user-doc -->
 	* @generated
 	*/
+
 	public static PlanOfCareSection getPlanOfCareSection(OperativeNote operativeNote) {
 		if (GET_PLAN_OF_CARE_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
@@ -2573,6 +2621,7 @@ public class OperativeNoteOperations extends GeneralHeaderConstraintsOperations 
 	 * <!-- end-user-doc -->
 	* @generated
 	*/
+
 	public static PlannedProcedureSection getPlannedProcedureSection(OperativeNote operativeNote) {
 		if (GET_PLANNED_PROCEDURE_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
@@ -2614,6 +2663,7 @@ public class OperativeNoteOperations extends GeneralHeaderConstraintsOperations 
 	 * <!-- end-user-doc -->
 	* @generated
 	*/
+
 	public static ProcedureDispositionSection getProcedureDispositionSection(OperativeNote operativeNote) {
 		if (GET_PROCEDURE_DISPOSITION_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
@@ -2655,6 +2705,7 @@ public class OperativeNoteOperations extends GeneralHeaderConstraintsOperations 
 	 * <!-- end-user-doc -->
 	* @generated
 	*/
+
 	public static ProcedureIndicationsSection getProcedureIndicationsSection(OperativeNote operativeNote) {
 		if (GET_PROCEDURE_INDICATIONS_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
@@ -2696,6 +2747,7 @@ public class OperativeNoteOperations extends GeneralHeaderConstraintsOperations 
 	 * <!-- end-user-doc -->
 	* @generated
 	*/
+
 	public static SurgicalDrainsSection getSurgicalDrainsSection(OperativeNote operativeNote) {
 		if (GET_SURGICAL_DRAINS_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();

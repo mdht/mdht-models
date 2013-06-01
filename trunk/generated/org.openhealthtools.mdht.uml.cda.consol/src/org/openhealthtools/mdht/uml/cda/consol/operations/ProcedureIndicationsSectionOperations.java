@@ -78,6 +78,7 @@ public class ProcedureIndicationsSectionOperations extends SectionOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_PROCEDURE_INDICATIONS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -90,6 +91,7 @@ public class ProcedureIndicationsSectionOperations extends SectionOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateProcedureIndicationsSectionTemplateId(
 			ProcedureIndicationsSection procedureIndicationsSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
@@ -138,6 +140,7 @@ public class ProcedureIndicationsSectionOperations extends SectionOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_PROCEDURE_INDICATIONS_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -150,6 +153,7 @@ public class ProcedureIndicationsSectionOperations extends SectionOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateProcedureIndicationsSectionCode(
 			ProcedureIndicationsSection procedureIndicationsSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
@@ -181,7 +185,7 @@ public class ProcedureIndicationsSectionOperations extends SectionOperations {
 	/**
 	* The cached OCL expression body for the '{@link #validateProcedureIndicationsSectionCodeP(ProcedureIndicationsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Indications Section Code P</em>}' operation.
 	* <!-- begin-user-doc -->
-	* <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	* @see #validateProcedureIndicationsSectionCodeP(ProcedureIndicationsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	* @generated
 	* @ordered
@@ -256,6 +260,7 @@ public class ProcedureIndicationsSectionOperations extends SectionOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_PROCEDURE_INDICATIONS_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -268,6 +273,7 @@ public class ProcedureIndicationsSectionOperations extends SectionOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateProcedureIndicationsSectionText(
 			ProcedureIndicationsSection procedureIndicationsSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
@@ -314,6 +320,7 @@ public class ProcedureIndicationsSectionOperations extends SectionOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_PROCEDURE_INDICATIONS_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -326,6 +333,7 @@ public class ProcedureIndicationsSectionOperations extends SectionOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateProcedureIndicationsSectionTitle(
 			ProcedureIndicationsSection procedureIndicationsSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
@@ -372,6 +380,7 @@ public class ProcedureIndicationsSectionOperations extends SectionOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_PROCEDURE_INDICATIONS_SECTION_INDICATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -384,6 +393,7 @@ public class ProcedureIndicationsSectionOperations extends SectionOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateProcedureIndicationsSectionIndication(
 			ProcedureIndicationsSection procedureIndicationsSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {

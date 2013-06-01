@@ -70,6 +70,7 @@ public class OperativeNoteFluidSectionOperations extends SectionOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_OPERATIVE_NOTE_FLUID_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -82,6 +83,7 @@ public class OperativeNoteFluidSectionOperations extends SectionOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateOperativeNoteFluidSectionTemplateId(
 			OperativeNoteFluidSection operativeNoteFluidSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
@@ -130,6 +132,7 @@ public class OperativeNoteFluidSectionOperations extends SectionOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_OPERATIVE_NOTE_FLUID_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -142,6 +145,7 @@ public class OperativeNoteFluidSectionOperations extends SectionOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateOperativeNoteFluidSectionCode(OperativeNoteFluidSection operativeNoteFluidSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -172,7 +176,7 @@ public class OperativeNoteFluidSectionOperations extends SectionOperations {
 	/**
 	* The cached OCL expression body for the '{@link #validateOperativeNoteFluidSectionCodeP(OperativeNoteFluidSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Operative Note Fluid Section Code P</em>}' operation.
 	* <!-- begin-user-doc -->
-	* <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	* @see #validateOperativeNoteFluidSectionCodeP(OperativeNoteFluidSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	* @generated
 	* @ordered
@@ -246,6 +250,7 @@ public class OperativeNoteFluidSectionOperations extends SectionOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_OPERATIVE_NOTE_FLUID_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -258,6 +263,7 @@ public class OperativeNoteFluidSectionOperations extends SectionOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateOperativeNoteFluidSectionText(OperativeNoteFluidSection operativeNoteFluidSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -303,6 +309,7 @@ public class OperativeNoteFluidSectionOperations extends SectionOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_OPERATIVE_NOTE_FLUID_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -315,6 +322,7 @@ public class OperativeNoteFluidSectionOperations extends SectionOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateOperativeNoteFluidSectionTitle(OperativeNoteFluidSection operativeNoteFluidSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 

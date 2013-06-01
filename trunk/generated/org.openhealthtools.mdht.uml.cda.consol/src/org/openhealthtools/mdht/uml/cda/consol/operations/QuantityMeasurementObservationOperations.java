@@ -66,7 +66,7 @@ public class QuantityMeasurementObservationOperations extends ClinicalStatementO
 	/**
 	* The cached OCL expression body for the '{@link #validateQuantityMeasurementObservationCodeCodeSystemDIR(QuantityMeasurementObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Quantity Measurement Observation Code Code System DIR</em>}' operation.
 	* <!-- begin-user-doc -->
-	* <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	* @see #validateQuantityMeasurementObservationCodeCodeSystemDIR(QuantityMeasurementObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	* @generated
 	* @ordered
@@ -205,6 +205,7 @@ public class QuantityMeasurementObservationOperations extends ClinicalStatementO
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_QUANTITY_MEASUREMENT_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -217,6 +218,7 @@ public class QuantityMeasurementObservationOperations extends ClinicalStatementO
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateQuantityMeasurementObservationTemplateId(
 			QuantityMeasurementObservation quantityMeasurementObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {

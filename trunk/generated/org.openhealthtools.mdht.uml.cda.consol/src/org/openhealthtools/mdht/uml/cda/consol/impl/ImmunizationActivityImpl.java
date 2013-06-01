@@ -385,7 +385,7 @@ public class ImmunizationActivityImpl extends SubstanceAdministrationImpl implem
 
 	/**
 	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	* <!-- end-user-doc -->
 	* @generated
 	*/
 	public boolean validateImmunizationActivityConsumableImmunizationMedicationInformation(DiagnosticChain diagnostics,
@@ -395,10 +395,10 @@ public class ImmunizationActivityImpl extends SubstanceAdministrationImpl implem
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public DrugVehicle getDrugVehicle() {
 		return ImmunizationActivityOperations.getDrugVehicle(this);
 	}

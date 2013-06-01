@@ -294,7 +294,7 @@ public class PressureUlcerObservationImpl extends ObservationImpl implements Pre
 
 	/**
 	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	* <!-- end-user-doc -->
 	* @generated
 	*/
 	public boolean validatePressureUlcerObservationEntryRelationship1Observation1ClassCode(DiagnosticChain diagnostics,
@@ -304,10 +304,10 @@ public class PressureUlcerObservationImpl extends ObservationImpl implements Pre
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validatePressureUlcerObservationEntryRelationship1Observation1MoodCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return PressureUlcerObservationOperations.validatePressureUlcerObservationEntryRelationship1Observation1MoodCode(
@@ -315,10 +315,10 @@ public class PressureUlcerObservationImpl extends ObservationImpl implements Pre
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validatePressureUlcerObservationEntryRelationship1Observation1CodeP(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return PressureUlcerObservationOperations.validatePressureUlcerObservationEntryRelationship1Observation1CodeP(
@@ -326,10 +326,10 @@ public class PressureUlcerObservationImpl extends ObservationImpl implements Pre
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validatePressureUlcerObservationEntryRelationship1Observation1Code(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return PressureUlcerObservationOperations.validatePressureUlcerObservationEntryRelationship1Observation1Code(
@@ -337,10 +337,10 @@ public class PressureUlcerObservationImpl extends ObservationImpl implements Pre
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validatePressureUlcerObservationEntryRelationship1Observation1Value(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return PressureUlcerObservationOperations.validatePressureUlcerObservationEntryRelationship1Observation1Value(
@@ -348,10 +348,10 @@ public class PressureUlcerObservationImpl extends ObservationImpl implements Pre
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validatePressureUlcerObservationEntryRelationship1TypeCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return PressureUlcerObservationOperations.validatePressureUlcerObservationEntryRelationship1TypeCode(
@@ -359,10 +359,10 @@ public class PressureUlcerObservationImpl extends ObservationImpl implements Pre
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validatePressureUlcerObservationEntryRelationship1Observation1(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return PressureUlcerObservationOperations.validatePressureUlcerObservationEntryRelationship1Observation1(
@@ -370,10 +370,10 @@ public class PressureUlcerObservationImpl extends ObservationImpl implements Pre
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validatePressureUlcerObservationEntryRelationship2Observation2ClassCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return PressureUlcerObservationOperations.validatePressureUlcerObservationEntryRelationship2Observation2ClassCode(
@@ -381,10 +381,10 @@ public class PressureUlcerObservationImpl extends ObservationImpl implements Pre
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validatePressureUlcerObservationEntryRelationship2Observation2MoodCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return PressureUlcerObservationOperations.validatePressureUlcerObservationEntryRelationship2Observation2MoodCode(
@@ -392,10 +392,10 @@ public class PressureUlcerObservationImpl extends ObservationImpl implements Pre
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validatePressureUlcerObservationEntryRelationship2Observation2CodeP(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return PressureUlcerObservationOperations.validatePressureUlcerObservationEntryRelationship2Observation2CodeP(
@@ -403,10 +403,10 @@ public class PressureUlcerObservationImpl extends ObservationImpl implements Pre
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validatePressureUlcerObservationEntryRelationship2Observation2Code(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return PressureUlcerObservationOperations.validatePressureUlcerObservationEntryRelationship2Observation2Code(
@@ -414,10 +414,10 @@ public class PressureUlcerObservationImpl extends ObservationImpl implements Pre
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validatePressureUlcerObservationEntryRelationship2Observation2Value(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return PressureUlcerObservationOperations.validatePressureUlcerObservationEntryRelationship2Observation2Value(
@@ -425,10 +425,10 @@ public class PressureUlcerObservationImpl extends ObservationImpl implements Pre
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validatePressureUlcerObservationEntryRelationship2TypeCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return PressureUlcerObservationOperations.validatePressureUlcerObservationEntryRelationship2TypeCode(
@@ -436,10 +436,10 @@ public class PressureUlcerObservationImpl extends ObservationImpl implements Pre
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validatePressureUlcerObservationEntryRelationship2Observation2(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return PressureUlcerObservationOperations.validatePressureUlcerObservationEntryRelationship2Observation2(
@@ -447,10 +447,10 @@ public class PressureUlcerObservationImpl extends ObservationImpl implements Pre
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validatePressureUlcerObservationEntryRelationship3Observation3ClassCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return PressureUlcerObservationOperations.validatePressureUlcerObservationEntryRelationship3Observation3ClassCode(
@@ -458,10 +458,10 @@ public class PressureUlcerObservationImpl extends ObservationImpl implements Pre
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validatePressureUlcerObservationEntryRelationship3Observation3MoodCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return PressureUlcerObservationOperations.validatePressureUlcerObservationEntryRelationship3Observation3MoodCode(
@@ -469,10 +469,10 @@ public class PressureUlcerObservationImpl extends ObservationImpl implements Pre
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validatePressureUlcerObservationEntryRelationship3Observation3CodeP(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return PressureUlcerObservationOperations.validatePressureUlcerObservationEntryRelationship3Observation3CodeP(
@@ -480,10 +480,10 @@ public class PressureUlcerObservationImpl extends ObservationImpl implements Pre
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validatePressureUlcerObservationEntryRelationship3Observation3Code(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return PressureUlcerObservationOperations.validatePressureUlcerObservationEntryRelationship3Observation3Code(
@@ -491,10 +491,10 @@ public class PressureUlcerObservationImpl extends ObservationImpl implements Pre
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validatePressureUlcerObservationEntryRelationship3Observation3Value(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return PressureUlcerObservationOperations.validatePressureUlcerObservationEntryRelationship3Observation3Value(
@@ -502,10 +502,10 @@ public class PressureUlcerObservationImpl extends ObservationImpl implements Pre
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validatePressureUlcerObservationEntryRelationship3TypeCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return PressureUlcerObservationOperations.validatePressureUlcerObservationEntryRelationship3TypeCode(
@@ -513,10 +513,10 @@ public class PressureUlcerObservationImpl extends ObservationImpl implements Pre
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validatePressureUlcerObservationEntryRelationship3Observation3(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return PressureUlcerObservationOperations.validatePressureUlcerObservationEntryRelationship3Observation3(
@@ -524,10 +524,10 @@ public class PressureUlcerObservationImpl extends ObservationImpl implements Pre
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public PressureUlcerObservation init() {
 		return Initializer.Util.init(this);
 	}

@@ -225,73 +225,7 @@ public class ContinuityOfCareDocumentImpl extends GeneralHeaderConstraintsImpl i
 
 	/**
 	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	public boolean validateContinuityOfCareDocumentDocumentationOfServiceEventPerformerAssignedEntityHasNationalProviderIdentifier(
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ContinuityOfCareDocumentOperations.validateContinuityOfCareDocumentDocumentationOfServiceEventPerformerAssignedEntityHasNationalProviderIdentifier(
-			this, diagnostics, context);
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	public boolean validateContinuityOfCareDocumentDocumentationOfServiceEventPerformerAssignedEntityCode(
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ContinuityOfCareDocumentOperations.validateContinuityOfCareDocumentDocumentationOfServiceEventPerformerAssignedEntityCode(
-			this, diagnostics, context);
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	public boolean validateContinuityOfCareDocumentDocumentationOfServiceEventPerformerAssignedEntityId(
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ContinuityOfCareDocumentOperations.validateContinuityOfCareDocumentDocumentationOfServiceEventPerformerAssignedEntityId(
-			this, diagnostics, context);
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	public boolean validateContinuityOfCareDocumentDocumentationOfServiceEventPerformerTypeCode(
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ContinuityOfCareDocumentOperations.validateContinuityOfCareDocumentDocumentationOfServiceEventPerformerTypeCode(
-			this, diagnostics, context);
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	public boolean validateContinuityOfCareDocumentDocumentationOfServiceEventPerformerAssignedEntity(
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ContinuityOfCareDocumentOperations.validateContinuityOfCareDocumentDocumentationOfServiceEventPerformerAssignedEntity(
-			this, diagnostics, context);
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	public boolean validateContinuityOfCareDocumentDocumentationOfServiceEventEffectiveTimeLow(
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ContinuityOfCareDocumentOperations.validateContinuityOfCareDocumentDocumentationOfServiceEventEffectiveTimeLow(
-			this, diagnostics, context);
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	* <!-- end-user-doc -->
 	* @generated
 	*/
 	public boolean validateContinuityOfCareDocumentDocumentationOfServiceEventEffectiveTimeHigh(
@@ -301,10 +235,76 @@ public class ContinuityOfCareDocumentImpl extends GeneralHeaderConstraintsImpl i
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
+	public boolean validateContinuityOfCareDocumentDocumentationOfServiceEventEffectiveTimeLow(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ContinuityOfCareDocumentOperations.validateContinuityOfCareDocumentDocumentationOfServiceEventEffectiveTimeLow(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateContinuityOfCareDocumentDocumentationOfServiceEventPerformerAssignedEntityHasNationalProviderIdentifier(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ContinuityOfCareDocumentOperations.validateContinuityOfCareDocumentDocumentationOfServiceEventPerformerAssignedEntityHasNationalProviderIdentifier(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateContinuityOfCareDocumentDocumentationOfServiceEventPerformerAssignedEntityCode(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ContinuityOfCareDocumentOperations.validateContinuityOfCareDocumentDocumentationOfServiceEventPerformerAssignedEntityCode(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateContinuityOfCareDocumentDocumentationOfServiceEventPerformerAssignedEntityId(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ContinuityOfCareDocumentOperations.validateContinuityOfCareDocumentDocumentationOfServiceEventPerformerAssignedEntityId(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateContinuityOfCareDocumentDocumentationOfServiceEventPerformerTypeCode(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ContinuityOfCareDocumentOperations.validateContinuityOfCareDocumentDocumentationOfServiceEventPerformerTypeCode(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateContinuityOfCareDocumentDocumentationOfServiceEventPerformerAssignedEntity(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ContinuityOfCareDocumentOperations.validateContinuityOfCareDocumentDocumentationOfServiceEventPerformerAssignedEntity(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public boolean validateContinuityOfCareDocumentDocumentationOfServiceEventClassCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ContinuityOfCareDocumentOperations.validateContinuityOfCareDocumentDocumentationOfServiceEventClassCode(
@@ -312,10 +312,10 @@ public class ContinuityOfCareDocumentImpl extends GeneralHeaderConstraintsImpl i
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateContinuityOfCareDocumentDocumentationOfServiceEventEffectiveTime(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ContinuityOfCareDocumentOperations.validateContinuityOfCareDocumentDocumentationOfServiceEventEffectiveTime(
@@ -323,10 +323,10 @@ public class ContinuityOfCareDocumentImpl extends GeneralHeaderConstraintsImpl i
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateContinuityOfCareDocumentDocumentationOfServiceEventPerformer(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ContinuityOfCareDocumentOperations.validateContinuityOfCareDocumentDocumentationOfServiceEventPerformer(
@@ -334,10 +334,10 @@ public class ContinuityOfCareDocumentImpl extends GeneralHeaderConstraintsImpl i
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateContinuityOfCareDocumentDocumentationOfServiceEvent(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ContinuityOfCareDocumentOperations.validateContinuityOfCareDocumentDocumentationOfServiceEvent(
@@ -345,10 +345,10 @@ public class ContinuityOfCareDocumentImpl extends GeneralHeaderConstraintsImpl i
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateContinuityOfCareDocumentAuthorAssignedAuthorHasAssignedPersonOrRepresentedOrganization(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ContinuityOfCareDocumentOperations.validateContinuityOfCareDocumentAuthorAssignedAuthorHasAssignedPersonOrRepresentedOrganization(
@@ -356,10 +356,10 @@ public class ContinuityOfCareDocumentImpl extends GeneralHeaderConstraintsImpl i
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateContinuityOfCareDocumentAuthorAssignedAuthorHasRepresentOrganization(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ContinuityOfCareDocumentOperations.validateContinuityOfCareDocumentAuthorAssignedAuthorHasRepresentOrganization(
@@ -367,10 +367,10 @@ public class ContinuityOfCareDocumentImpl extends GeneralHeaderConstraintsImpl i
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateContinuityOfCareDocumentAuthorAssignedAuthor(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ContinuityOfCareDocumentOperations.validateContinuityOfCareDocumentAuthorAssignedAuthor(
@@ -378,10 +378,10 @@ public class ContinuityOfCareDocumentImpl extends GeneralHeaderConstraintsImpl i
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateContinuityOfCareDocumentResultsSection(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ContinuityOfCareDocumentOperations.validateContinuityOfCareDocumentResultsSection(

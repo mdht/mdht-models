@@ -77,24 +77,24 @@
       <details key="constraints.validation.error" value="RecordTargetPatientRole"/>
     </eAnnotations>
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolGeneralHeaderConstraintsRecordTargetPatientRole">
-      <details key="constraints.validation.error" value="PatientRoleAddr PatientRoleId PatientRoleTelecom PatientRolePatient PatientRoleUSRealmAddressStreet PatientRoleUSRealmAddressCity PatientRoleUSRealmAddressStreetAddressLine PatientRoleUSRealmAddressUse"/>
+      <details key="constraints.validation.error" value="PatientRoleAddr PatientRoleId PatientRoleTelecom PatientRolePatient GeneralHeaderConstraintsRecordTargetPatientRoleUSRealmAddressStreet GeneralHeaderConstraintsRecordTargetPatientRoleUSRealmAddressCity GeneralHeaderConstraintsRecordTargetPatientRoleUSRealmAddressStreetAddressLine GeneralHeaderConstraintsRecordTargetPatientRoleUSRealmAddressUse"/>
       <details key="constraints.validation.info" value="PatientRoleProviderOrganization"/>
-      <details key="constraints.validation.query" value="PatientRoleUSRealmAddressStreet PatientRoleUSRealmAddressCity PatientRoleUSRealmAddressCountry PatientRoleUSRealmAddressPostalCode PatientRoleUSRealmAddressState PatientRoleUSRealmAddressStreetAddressLine PatientRoleUSRealmAddressUseP PatientRoleUSRealmAddressUse PatientRoleTELUse"/>
-      <details key="constraints.validation.warning" value="PatientRoleUSRealmAddressCountry PatientRoleUSRealmAddressPostalCode PatientRoleUSRealmAddressState PatientRoleUSRealmAddressUseP PatientRoleTELUse"/>
-      <details key="constraints.validation.dependOn.PatientRoleUSRealmAddressUse"
+      <details key="constraints.validation.query" value="GeneralHeaderConstraintsRecordTargetPatientRoleUSRealmAddressStreet GeneralHeaderConstraintsRecordTargetPatientRoleUSRealmAddressCity GeneralHeaderConstraintsRecordTargetPatientRoleUSRealmAddressCountry GeneralHeaderConstraintsRecordTargetPatientRoleUSRealmAddressPostalCode GeneralHeaderConstraintsRecordTargetPatientRoleUSRealmAddressState GeneralHeaderConstraintsRecordTargetPatientRoleUSRealmAddressStreetAddressLine GeneralHeaderConstraintsRecordTargetPatientRoleUSRealmAddressUseP GeneralHeaderConstraintsRecordTargetPatientRoleUSRealmAddressUse GeneralHeaderConstraintsRecordTargetPatientRoleTELUse"/>
+      <details key="constraints.validation.warning" value="GeneralHeaderConstraintsRecordTargetPatientRoleUSRealmAddressCountry GeneralHeaderConstraintsRecordTargetPatientRoleUSRealmAddressPostalCode GeneralHeaderConstraintsRecordTargetPatientRoleUSRealmAddressState GeneralHeaderConstraintsRecordTargetPatientRoleUSRealmAddressUseP GeneralHeaderConstraintsRecordTargetPatientRoleTELUse"/>
+      <details key="constraints.validation.dependOn.GeneralHeaderConstraintsRecordTargetPatientRoleUSRealmAddressUse"
           value="PatientRoleUSRealmAddressUseP"/>
     </eAnnotations>
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolGeneralHeaderConstraintsRecordTargetPatientRolePatient">
       <details key="administrativeGenderCode.codeSystem" value="2.16.840.1.113883.5.1"/>
       <details key="administrativeGenderCode.codeSystemName" value="AdministrativeGenderCode"/>
-      <details key="constraints.validation.error" value="PatientAdministrativeGenderCode PatientBirthTime PatientEthnicGroupCode PatientMaritalStatusCode PatientName PatientRaceCode PatientReligiousAffiliationCode PatientSDTCRaceCode PatientTSBirthTimePreciseToYear PatientTSValue PatientUSRealmPatientNameMixedContent PatientUSRealmPatientNameFamily PatientUSRealmPatientNameGiven PatientUSRealmPatientNameUse"/>
+      <details key="constraints.validation.error" value="PatientAdministrativeGenderCode PatientBirthTime PatientEthnicGroupCode PatientMaritalStatusCode PatientName PatientRaceCode PatientReligiousAffiliationCode PatientSDTCRaceCode GeneralHeaderConstraintsRecordTargetPatientRolePatientTSBirthTimePreciseToYear GeneralHeaderConstraintsRecordTargetPatientRolePatientTSValue GeneralHeaderConstraintsRecordTargetPatientRolePatientUSRealmPatientNameMixedContent GeneralHeaderConstraintsRecordTargetPatientRolePatientUSRealmPatientNameFamily GeneralHeaderConstraintsRecordTargetPatientRolePatientUSRealmPatientNameGiven GeneralHeaderConstraintsRecordTargetPatientRolePatientUSRealmPatientNameUse"/>
       <details key="ethnicGroupCode.codeSystem" value="2.16.840.1.113883.6.238"/>
       <details key="ethnicGroupCode.codeSystemName" value="Race and Ethnicity - CDC"/>
-      <details key="constraints.validation.info" value="PatientEthnicGroupCodeP PatientRaceCodeP PatientReligiousAffiliationCodeP PatientSDTCRaceCodeP PatientGuardian PatientBirthplace PatientUSRealmPatientNamePrefix PatientUSRealmPatientNameSuffix PatientUSRealmPatientNameUseP"/>
+      <details key="constraints.validation.info" value="PatientEthnicGroupCodeP PatientRaceCodeP PatientReligiousAffiliationCodeP PatientSDTCRaceCodeP PatientGuardian PatientBirthplace GeneralHeaderConstraintsRecordTargetPatientRolePatientUSRealmPatientNamePrefix GeneralHeaderConstraintsRecordTargetPatientRolePatientUSRealmPatientNameSuffix GeneralHeaderConstraintsRecordTargetPatientRolePatientUSRealmPatientNameUseP"/>
       <details key="constraints.validation.dependOn.PatientEthnicGroupCode" value="PatientEthnicGroupCodeP"/>
       <details key="maritalStatusCode.codeSystem" value="2.16.840.1.113883.5.2"/>
       <details key="maritalStatusCode.codeSystemName" value="MaritalStatus"/>
-      <details key="constraints.validation.warning" value="PatientMaritalStatusCodeP PatientLanguageCommunication PatientTSBirthTimePreciseToDay"/>
+      <details key="constraints.validation.warning" value="PatientMaritalStatusCodeP PatientLanguageCommunication GeneralHeaderConstraintsRecordTargetPatientRolePatientTSBirthTimePreciseToDay"/>
       <details key="constraints.validation.dependOn.PatientMaritalStatusCode" value="PatientMaritalStatusCodeP"/>
       <details key="raceCode.codeSystem" value="2.16.840.1.113883.6.238"/>
       <details key="raceCode.codeSystemName" value="Race and Ethnicity - CDC"/>
@@ -106,19 +106,20 @@
       <details key="sDTCRaceCode.codeSystem" value="2.16.840.1.113883.6.238"/>
       <details key="sDTCRaceCode.codeSystemName" value="Race and Ethnicity - CDC"/>
       <details key="constraints.validation.dependOn.PatientSDTCRaceCode" value="PatientSDTCRaceCodeP"/>
-      <details key="constraints.validation.query" value="PatientTSBirthTimePreciseToYear PatientTSBirthTimePreciseToDay PatientTSValue PatientUSRealmPatientNameMixedContent PatientUSRealmPatientNameFamily PatientUSRealmPatientNameGiven PatientUSRealmPatientNamePrefix PatientUSRealmPatientNameSuffix PatientUSRealmPatientNameUseP PatientUSRealmPatientNameUse"/>
-      <details key="constraints.validation.dependOn.PatientUSRealmPatientNameUse"
+      <details key="constraints.validation.query" value="GeneralHeaderConstraintsRecordTargetPatientRolePatientTSBirthTimePreciseToYear GeneralHeaderConstraintsRecordTargetPatientRolePatientTSBirthTimePreciseToDay GeneralHeaderConstraintsRecordTargetPatientRolePatientTSValue GeneralHeaderConstraintsRecordTargetPatientRolePatientUSRealmPatientNameMixedContent GeneralHeaderConstraintsRecordTargetPatientRolePatientUSRealmPatientNameFamily GeneralHeaderConstraintsRecordTargetPatientRolePatientUSRealmPatientNameGiven GeneralHeaderConstraintsRecordTargetPatientRolePatientUSRealmPatientNamePrefix GeneralHeaderConstraintsRecordTargetPatientRolePatientUSRealmPatientNameSuffix GeneralHeaderConstraintsRecordTargetPatientRolePatientUSRealmPatientNameUseP GeneralHeaderConstraintsRecordTargetPatientRolePatientUSRealmPatientNameUse"/>
+      <details key="constraints.validation.dependOn.GeneralHeaderConstraintsRecordTargetPatientRolePatientUSRealmPatientNameUse"
           value="PatientUSRealmPatientNameUseP"/>
     </eAnnotations>
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardian">
-      <details key="constraints.validation.warning" value="GuardianAddr GuardianCodeP GuardianUSRealmAddressCountry GuardianUSRealmAddressPostalCode GuardianUSRealmAddressState GuardianUSRealmAddressUseP GuardianTELUse"/>
+      <details key="constraints.validation.warning" value="GuardianAddr GuardianCodeP GeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianUSRealmAddressCountry GeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianUSRealmAddressPostalCode GeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianUSRealmAddressState GeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianUSRealmAddressUseP GeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianTELUse"/>
       <details key="code.codeSystem" value="2.16.840.1.113883.5.111"/>
       <details key="code.codeSystemName" value="RoleCode"/>
-      <details key="constraints.validation.error" value="GuardianCode GuardianGuardianPerson GuardianUSRealmAddressStreet GuardianUSRealmAddressCity GuardianUSRealmAddressStreetAddressLine GuardianUSRealmAddressUse"/>
+      <details key="constraints.validation.error" value="GuardianCode GuardianGuardianPerson GeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianUSRealmAddressStreet GeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianUSRealmAddressCity GeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianUSRealmAddressStreetAddressLine GeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianUSRealmAddressUse"/>
       <details key="constraints.validation.dependOn.GuardianCode" value="GuardianCodeP"/>
       <details key="constraints.validation.info" value="GuardianTelecom"/>
-      <details key="constraints.validation.query" value="GuardianUSRealmAddressStreet GuardianUSRealmAddressCity GuardianUSRealmAddressCountry GuardianUSRealmAddressPostalCode GuardianUSRealmAddressState GuardianUSRealmAddressStreetAddressLine GuardianUSRealmAddressUseP GuardianUSRealmAddressUse GuardianTELUse"/>
-      <details key="constraints.validation.dependOn.GuardianUSRealmAddressUse" value="GuardianUSRealmAddressUseP"/>
+      <details key="constraints.validation.query" value="GeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianUSRealmAddressStreet GeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianUSRealmAddressCity GeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianUSRealmAddressCountry GeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianUSRealmAddressPostalCode GeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianUSRealmAddressState GeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianUSRealmAddressStreetAddressLine GeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianUSRealmAddressUseP GeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianUSRealmAddressUse GeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianTELUse"/>
+      <details key="constraints.validation.dependOn.GeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianUSRealmAddressUse"
+          value="GuardianUSRealmAddressUseP"/>
     </eAnnotations>
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianTEL">
       <details key="constraints.validation.warning" value="TELUse"/>
@@ -150,10 +151,10 @@
       <details key="constraints.validation.warning" value="TSBirthTimePreciseToDay"/>
     </eAnnotations>
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolGeneralHeaderConstraintsRecordTargetPatientRoleProviderOrganization">
-      <details key="constraints.validation.warning" value="ProviderOrganizationHasNationalProviderIdentifier ProviderOrganizationUSRealmAddressCountry ProviderOrganizationUSRealmAddressPostalCode ProviderOrganizationUSRealmAddressState ProviderOrganizationUSRealmAddressUseP ProviderOrganizationTELUse"/>
-      <details key="constraints.validation.error" value="ProviderOrganizationAddr ProviderOrganizationId ProviderOrganizationName ProviderOrganizationTelecom ProviderOrganizationUSRealmAddressStreet ProviderOrganizationUSRealmAddressCity ProviderOrganizationUSRealmAddressStreetAddressLine ProviderOrganizationUSRealmAddressUse"/>
-      <details key="constraints.validation.query" value="ProviderOrganizationUSRealmAddressStreet ProviderOrganizationUSRealmAddressCity ProviderOrganizationUSRealmAddressCountry ProviderOrganizationUSRealmAddressPostalCode ProviderOrganizationUSRealmAddressState ProviderOrganizationUSRealmAddressStreetAddressLine ProviderOrganizationUSRealmAddressUseP ProviderOrganizationUSRealmAddressUse ProviderOrganizationTELUse"/>
-      <details key="constraints.validation.dependOn.ProviderOrganizationUSRealmAddressUse"
+      <details key="constraints.validation.warning" value="ProviderOrganizationHasNationalProviderIdentifier GeneralHeaderConstraintsRecordTargetPatientRoleProviderOrganizationUSRealmAddressCountry GeneralHeaderConstraintsRecordTargetPatientRoleProviderOrganizationUSRealmAddressPostalCode GeneralHeaderConstraintsRecordTargetPatientRoleProviderOrganizationUSRealmAddressState GeneralHeaderConstraintsRecordTargetPatientRoleProviderOrganizationUSRealmAddressUseP GeneralHeaderConstraintsRecordTargetPatientRoleProviderOrganizationTELUse"/>
+      <details key="constraints.validation.error" value="ProviderOrganizationAddr ProviderOrganizationId ProviderOrganizationName ProviderOrganizationTelecom GeneralHeaderConstraintsRecordTargetPatientRoleProviderOrganizationUSRealmAddressStreet GeneralHeaderConstraintsRecordTargetPatientRoleProviderOrganizationUSRealmAddressCity GeneralHeaderConstraintsRecordTargetPatientRoleProviderOrganizationUSRealmAddressStreetAddressLine GeneralHeaderConstraintsRecordTargetPatientRoleProviderOrganizationUSRealmAddressUse"/>
+      <details key="constraints.validation.query" value="GeneralHeaderConstraintsRecordTargetPatientRoleProviderOrganizationUSRealmAddressStreet GeneralHeaderConstraintsRecordTargetPatientRoleProviderOrganizationUSRealmAddressCity GeneralHeaderConstraintsRecordTargetPatientRoleProviderOrganizationUSRealmAddressCountry GeneralHeaderConstraintsRecordTargetPatientRoleProviderOrganizationUSRealmAddressPostalCode GeneralHeaderConstraintsRecordTargetPatientRoleProviderOrganizationUSRealmAddressState GeneralHeaderConstraintsRecordTargetPatientRoleProviderOrganizationUSRealmAddressStreetAddressLine GeneralHeaderConstraintsRecordTargetPatientRoleProviderOrganizationUSRealmAddressUseP GeneralHeaderConstraintsRecordTargetPatientRoleProviderOrganizationUSRealmAddressUse GeneralHeaderConstraintsRecordTargetPatientRoleProviderOrganizationTELUse"/>
+      <details key="constraints.validation.dependOn.GeneralHeaderConstraintsRecordTargetPatientRoleProviderOrganizationUSRealmAddressUse"
           value="ProviderOrganizationUSRealmAddressUseP"/>
     </eAnnotations>
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolGeneralHeaderConstraintsRecordTargetPatientRoleProviderOrganizationTEL">
@@ -172,13 +173,13 @@
       <details key="constraints.validation.error" value="AuthorTime AuthorAssignedAuthor"/>
     </eAnnotations>
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolGeneralHeaderConstraintsAuthorAssignedAuthor">
-      <details key="constraints.validation.error" value="AssignedAuthorHasAssignedPersonOrAssignedAuthoringDevice AssignedAuthorHasNationalProviderIdentifier AssignedAuthorAddr AssignedAuthorId AssignedAuthorTelecom AssignedAuthorUSRealmAddressStreet AssignedAuthorUSRealmAddressCity AssignedAuthorUSRealmAddressStreetAddressLine AssignedAuthorUSRealmAddressUse"/>
+      <details key="constraints.validation.error" value="AssignedAuthorHasAssignedPersonOrAssignedAuthoringDevice AssignedAuthorHasNationalProviderIdentifier AssignedAuthorAddr AssignedAuthorId AssignedAuthorTelecom GeneralHeaderConstraintsAuthorAssignedAuthorUSRealmAddressStreet GeneralHeaderConstraintsAuthorAssignedAuthorUSRealmAddressCity GeneralHeaderConstraintsAuthorAssignedAuthorUSRealmAddressStreetAddressLine GeneralHeaderConstraintsAuthorAssignedAuthorUSRealmAddressUse"/>
       <details key="code.codeSystem" value="2.16.840.1.113883.6.101"/>
       <details key="code.codeSystemName" value="NUCC Health Care Provider Taxonomy"/>
-      <details key="constraints.validation.warning" value="AssignedAuthorCode AssignedAuthorCodeP AssignedAuthorAssignedAuthoringDevice AssignedAuthorAssignedPerson AssignedAuthorUSRealmAddressCountry AssignedAuthorUSRealmAddressPostalCode AssignedAuthorUSRealmAddressState AssignedAuthorUSRealmAddressUseP AssignedAuthorTELUse"/>
+      <details key="constraints.validation.warning" value="AssignedAuthorCode AssignedAuthorCodeP AssignedAuthorAssignedAuthoringDevice AssignedAuthorAssignedPerson GeneralHeaderConstraintsAuthorAssignedAuthorUSRealmAddressCountry GeneralHeaderConstraintsAuthorAssignedAuthorUSRealmAddressPostalCode GeneralHeaderConstraintsAuthorAssignedAuthorUSRealmAddressState GeneralHeaderConstraintsAuthorAssignedAuthorUSRealmAddressUseP GeneralHeaderConstraintsAuthorAssignedAuthorTELUse"/>
       <details key="constraints.validation.dependOn.AssignedAuthorCode" value="AssignedAuthorCodeP"/>
-      <details key="constraints.validation.query" value="AssignedAuthorUSRealmAddressStreet AssignedAuthorUSRealmAddressCity AssignedAuthorUSRealmAddressCountry AssignedAuthorUSRealmAddressPostalCode AssignedAuthorUSRealmAddressState AssignedAuthorUSRealmAddressStreetAddressLine AssignedAuthorUSRealmAddressUseP AssignedAuthorUSRealmAddressUse AssignedAuthorTELUse"/>
-      <details key="constraints.validation.dependOn.AssignedAuthorUSRealmAddressUse"
+      <details key="constraints.validation.query" value="GeneralHeaderConstraintsAuthorAssignedAuthorUSRealmAddressStreet GeneralHeaderConstraintsAuthorAssignedAuthorUSRealmAddressCity GeneralHeaderConstraintsAuthorAssignedAuthorUSRealmAddressCountry GeneralHeaderConstraintsAuthorAssignedAuthorUSRealmAddressPostalCode GeneralHeaderConstraintsAuthorAssignedAuthorUSRealmAddressState GeneralHeaderConstraintsAuthorAssignedAuthorUSRealmAddressStreetAddressLine GeneralHeaderConstraintsAuthorAssignedAuthorUSRealmAddressUseP GeneralHeaderConstraintsAuthorAssignedAuthorUSRealmAddressUse GeneralHeaderConstraintsAuthorAssignedAuthorTELUse"/>
+      <details key="constraints.validation.dependOn.GeneralHeaderConstraintsAuthorAssignedAuthorUSRealmAddressUse"
           value="AssignedAuthorUSRealmAddressUseP"/>
     </eAnnotations>
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolGeneralHeaderConstraintsAuthorAssignedAuthorAuthoringDevice">
@@ -194,14 +195,14 @@
       <details key="constraints.validation.error" value="DataEntererAssignedEntity"/>
     </eAnnotations>
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolGeneralHeaderConstraintsDataEntererAssignedEntity">
-      <details key="constraints.validation.warning" value="AssignedEntityHasNationalProviderIdentifier AssignedEntityCode AssignedEntityUSRealmAddressCountry AssignedEntityUSRealmAddressPostalCode AssignedEntityUSRealmAddressState AssignedEntityUSRealmAddressUseP AssignedEntityTELUse"/>
-      <details key="constraints.validation.error" value="AssignedEntityAddr AssignedEntityId AssignedEntityTelecom AssignedEntityAssignedPerson AssignedEntityUSRealmAddressStreet AssignedEntityUSRealmAddressCity AssignedEntityUSRealmAddressStreetAddressLine AssignedEntityUSRealmAddressUse"/>
+      <details key="constraints.validation.warning" value="AssignedEntityHasNationalProviderIdentifier AssignedEntityCode GeneralHeaderConstraintsDataEntererAssignedEntityUSRealmAddressCountry GeneralHeaderConstraintsDataEntererAssignedEntityUSRealmAddressPostalCode GeneralHeaderConstraintsDataEntererAssignedEntityUSRealmAddressState GeneralHeaderConstraintsDataEntererAssignedEntityUSRealmAddressUseP GeneralHeaderConstraintsDataEntererAssignedEntityTELUse"/>
+      <details key="constraints.validation.error" value="AssignedEntityAddr AssignedEntityId AssignedEntityTelecom AssignedEntityAssignedPerson GeneralHeaderConstraintsDataEntererAssignedEntityUSRealmAddressStreet GeneralHeaderConstraintsDataEntererAssignedEntityUSRealmAddressCity GeneralHeaderConstraintsDataEntererAssignedEntityUSRealmAddressStreetAddressLine GeneralHeaderConstraintsDataEntererAssignedEntityUSRealmAddressUse"/>
       <details key="code.codeSystem" value="2.16.840.1.113883.6.101"/>
       <details key="code.codeSystemName" value="NUCC Health Care Provider Taxonomy"/>
       <details key="constraints.validation.info" value="AssignedEntityCodeP"/>
       <details key="constraints.validation.dependOn.AssignedEntityCode" value="AssignedEntityCodeP"/>
-      <details key="constraints.validation.query" value="AssignedEntityUSRealmAddressStreet AssignedEntityUSRealmAddressCity AssignedEntityUSRealmAddressCountry AssignedEntityUSRealmAddressPostalCode AssignedEntityUSRealmAddressState AssignedEntityUSRealmAddressStreetAddressLine AssignedEntityUSRealmAddressUseP AssignedEntityUSRealmAddressUse AssignedEntityTELUse"/>
-      <details key="constraints.validation.dependOn.AssignedEntityUSRealmAddressUse"
+      <details key="constraints.validation.query" value="GeneralHeaderConstraintsDataEntererAssignedEntityUSRealmAddressStreet GeneralHeaderConstraintsDataEntererAssignedEntityUSRealmAddressCity GeneralHeaderConstraintsDataEntererAssignedEntityUSRealmAddressCountry GeneralHeaderConstraintsDataEntererAssignedEntityUSRealmAddressPostalCode GeneralHeaderConstraintsDataEntererAssignedEntityUSRealmAddressState GeneralHeaderConstraintsDataEntererAssignedEntityUSRealmAddressStreetAddressLine GeneralHeaderConstraintsDataEntererAssignedEntityUSRealmAddressUseP GeneralHeaderConstraintsDataEntererAssignedEntityUSRealmAddressUse GeneralHeaderConstraintsDataEntererAssignedEntityTELUse"/>
+      <details key="constraints.validation.dependOn.GeneralHeaderConstraintsDataEntererAssignedEntityUSRealmAddressUse"
           value="AssignedEntityUSRealmAddressUseP"/>
     </eAnnotations>
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolGeneralHeaderConstraintsDataEntererAssignedEntityPerson">
@@ -217,10 +218,10 @@
       <details key="constraints.validation.error" value="AssignedCustodianRepresentedCustodianOrganization"/>
     </eAnnotations>
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolGeneralHeaderConstraintsCustodianAssignedCustodianCustodianOrganization">
-      <details key="constraints.validation.warning" value="CustodianOrganizationHasNationalProviderIdentifier CustodianOrganizationUSRealmAddressCountry CustodianOrganizationUSRealmAddressPostalCode CustodianOrganizationUSRealmAddressState CustodianOrganizationUSRealmAddressUseP CustodianOrganizationTELUse"/>
-      <details key="constraints.validation.error" value="CustodianOrganizationAddr CustodianOrganizationId CustodianOrganizationName CustodianOrganizationTelecom CustodianOrganizationUSRealmAddressStreet CustodianOrganizationUSRealmAddressCity CustodianOrganizationUSRealmAddressStreetAddressLine CustodianOrganizationUSRealmAddressUse"/>
-      <details key="constraints.validation.query" value="CustodianOrganizationUSRealmAddressStreet CustodianOrganizationUSRealmAddressCity CustodianOrganizationUSRealmAddressCountry CustodianOrganizationUSRealmAddressPostalCode CustodianOrganizationUSRealmAddressState CustodianOrganizationUSRealmAddressStreetAddressLine CustodianOrganizationUSRealmAddressUseP CustodianOrganizationUSRealmAddressUse CustodianOrganizationTELUse"/>
-      <details key="constraints.validation.dependOn.CustodianOrganizationUSRealmAddressUse"
+      <details key="constraints.validation.warning" value="CustodianOrganizationHasNationalProviderIdentifier GeneralHeaderConstraintsCustodianAssignedCustodianCustodianOrganizationUSRealmAddressCountry GeneralHeaderConstraintsCustodianAssignedCustodianCustodianOrganizationUSRealmAddressPostalCode GeneralHeaderConstraintsCustodianAssignedCustodianCustodianOrganizationUSRealmAddressState GeneralHeaderConstraintsCustodianAssignedCustodianCustodianOrganizationUSRealmAddressUseP GeneralHeaderConstraintsCustodianAssignedCustodianCustodianOrganizationTELUse"/>
+      <details key="constraints.validation.error" value="CustodianOrganizationAddr CustodianOrganizationId CustodianOrganizationName CustodianOrganizationTelecom GeneralHeaderConstraintsCustodianAssignedCustodianCustodianOrganizationUSRealmAddressStreet GeneralHeaderConstraintsCustodianAssignedCustodianCustodianOrganizationUSRealmAddressCity GeneralHeaderConstraintsCustodianAssignedCustodianCustodianOrganizationUSRealmAddressStreetAddressLine GeneralHeaderConstraintsCustodianAssignedCustodianCustodianOrganizationUSRealmAddressUse"/>
+      <details key="constraints.validation.query" value="GeneralHeaderConstraintsCustodianAssignedCustodianCustodianOrganizationUSRealmAddressStreet GeneralHeaderConstraintsCustodianAssignedCustodianCustodianOrganizationUSRealmAddressCity GeneralHeaderConstraintsCustodianAssignedCustodianCustodianOrganizationUSRealmAddressCountry GeneralHeaderConstraintsCustodianAssignedCustodianCustodianOrganizationUSRealmAddressPostalCode GeneralHeaderConstraintsCustodianAssignedCustodianCustodianOrganizationUSRealmAddressState GeneralHeaderConstraintsCustodianAssignedCustodianCustodianOrganizationUSRealmAddressStreetAddressLine GeneralHeaderConstraintsCustodianAssignedCustodianCustodianOrganizationUSRealmAddressUseP GeneralHeaderConstraintsCustodianAssignedCustodianCustodianOrganizationUSRealmAddressUse GeneralHeaderConstraintsCustodianAssignedCustodianCustodianOrganizationTELUse"/>
+      <details key="constraints.validation.dependOn.GeneralHeaderConstraintsCustodianAssignedCustodianCustodianOrganizationUSRealmAddressUse"
           value="CustodianOrganizationUSRealmAddressUseP"/>
     </eAnnotations>
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolGeneralHeaderConstraintsCustodianAssignedCustodianCustodianOrganizationTEL">
@@ -246,13 +247,13 @@
     </eAnnotations>
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolGeneralHeaderConstraintsLegalAuthenticatorAssignedEntity">
       <details key="constraints.validation.info" value="AssignedEntityHasNationalProviderIdentifier AssignedEntityCodeP"/>
-      <details key="constraints.validation.error" value="AssignedEntityAddr AssignedEntityId AssignedEntityTelecom AssignedEntityAssignedPerson AssignedEntityUSRealmAddressStreet AssignedEntityUSRealmAddressCity AssignedEntityUSRealmAddressStreetAddressLine AssignedEntityUSRealmAddressUse"/>
+      <details key="constraints.validation.error" value="AssignedEntityAddr AssignedEntityId AssignedEntityTelecom AssignedEntityAssignedPerson GeneralHeaderConstraintsLegalAuthenticatorAssignedEntityUSRealmAddressStreet GeneralHeaderConstraintsLegalAuthenticatorAssignedEntityUSRealmAddressCity GeneralHeaderConstraintsLegalAuthenticatorAssignedEntityUSRealmAddressStreetAddressLine GeneralHeaderConstraintsLegalAuthenticatorAssignedEntityUSRealmAddressUse"/>
       <details key="code.codeSystem" value="2.16.840.1.113883.6.101"/>
       <details key="code.codeSystemName" value="NUCC Health Care Provider Taxonomy"/>
-      <details key="constraints.validation.warning" value="AssignedEntityCode AssignedEntityUSRealmAddressCountry AssignedEntityUSRealmAddressPostalCode AssignedEntityUSRealmAddressState AssignedEntityUSRealmAddressUseP AssignedEntityTELUse"/>
+      <details key="constraints.validation.warning" value="AssignedEntityCode GeneralHeaderConstraintsLegalAuthenticatorAssignedEntityUSRealmAddressCountry GeneralHeaderConstraintsLegalAuthenticatorAssignedEntityUSRealmAddressPostalCode GeneralHeaderConstraintsLegalAuthenticatorAssignedEntityUSRealmAddressState GeneralHeaderConstraintsLegalAuthenticatorAssignedEntityUSRealmAddressUseP GeneralHeaderConstraintsLegalAuthenticatorAssignedEntityTELUse"/>
       <details key="constraints.validation.dependOn.AssignedEntityCode" value="AssignedEntityCodeP"/>
-      <details key="constraints.validation.query" value="AssignedEntityUSRealmAddressStreet AssignedEntityUSRealmAddressCity AssignedEntityUSRealmAddressCountry AssignedEntityUSRealmAddressPostalCode AssignedEntityUSRealmAddressState AssignedEntityUSRealmAddressStreetAddressLine AssignedEntityUSRealmAddressUseP AssignedEntityUSRealmAddressUse AssignedEntityTELUse"/>
-      <details key="constraints.validation.dependOn.AssignedEntityUSRealmAddressUse"
+      <details key="constraints.validation.query" value="GeneralHeaderConstraintsLegalAuthenticatorAssignedEntityUSRealmAddressStreet GeneralHeaderConstraintsLegalAuthenticatorAssignedEntityUSRealmAddressCity GeneralHeaderConstraintsLegalAuthenticatorAssignedEntityUSRealmAddressCountry GeneralHeaderConstraintsLegalAuthenticatorAssignedEntityUSRealmAddressPostalCode GeneralHeaderConstraintsLegalAuthenticatorAssignedEntityUSRealmAddressState GeneralHeaderConstraintsLegalAuthenticatorAssignedEntityUSRealmAddressStreetAddressLine GeneralHeaderConstraintsLegalAuthenticatorAssignedEntityUSRealmAddressUseP GeneralHeaderConstraintsLegalAuthenticatorAssignedEntityUSRealmAddressUse GeneralHeaderConstraintsLegalAuthenticatorAssignedEntityTELUse"/>
+      <details key="constraints.validation.dependOn.GeneralHeaderConstraintsLegalAuthenticatorAssignedEntityUSRealmAddressUse"
           value="AssignedEntityUSRealmAddressUseP"/>
     </eAnnotations>
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolGeneralHeaderConstraintsLegalAuthenticatorAssignedEntityPerson">
@@ -266,14 +267,14 @@
       <details key="signatureCode.code" value="S"/>
     </eAnnotations>
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolGeneralHeaderConstraintsAuthenticatorAssignedEntity">
-      <details key="constraints.validation.warning" value="AssignedEntityHasNationalProviderIdentifier AssignedEntityCode AssignedEntityUSRealmAddressCountry AssignedEntityUSRealmAddressPostalCode AssignedEntityUSRealmAddressState AssignedEntityUSRealmAddressUseP AssignedEntityTELUse"/>
-      <details key="constraints.validation.error" value="AssignedEntityAddr AssignedEntityId AssignedEntityTelecom AssignedEntityAssignedPerson AssignedEntityUSRealmAddressStreet AssignedEntityUSRealmAddressCity AssignedEntityUSRealmAddressStreetAddressLine AssignedEntityUSRealmAddressUse"/>
+      <details key="constraints.validation.warning" value="AssignedEntityHasNationalProviderIdentifier AssignedEntityCode GeneralHeaderConstraintsAuthenticatorAssignedEntityUSRealmAddressCountry GeneralHeaderConstraintsAuthenticatorAssignedEntityUSRealmAddressPostalCode GeneralHeaderConstraintsAuthenticatorAssignedEntityUSRealmAddressState GeneralHeaderConstraintsAuthenticatorAssignedEntityUSRealmAddressUseP GeneralHeaderConstraintsAuthenticatorAssignedEntityTELUse"/>
+      <details key="constraints.validation.error" value="AssignedEntityAddr AssignedEntityId AssignedEntityTelecom AssignedEntityAssignedPerson GeneralHeaderConstraintsAuthenticatorAssignedEntityUSRealmAddressStreet GeneralHeaderConstraintsAuthenticatorAssignedEntityUSRealmAddressCity GeneralHeaderConstraintsAuthenticatorAssignedEntityUSRealmAddressStreetAddressLine GeneralHeaderConstraintsAuthenticatorAssignedEntityUSRealmAddressUse"/>
       <details key="code.codeSystem" value="2.16.840.1.113883.6.101"/>
       <details key="code.codeSystemName" value="NUCC Health Care Provider Taxonomy"/>
       <details key="constraints.validation.info" value="AssignedEntityCodeP"/>
       <details key="constraints.validation.dependOn.AssignedEntityCode" value="AssignedEntityCodeP"/>
-      <details key="constraints.validation.query" value="AssignedEntityUSRealmAddressStreet AssignedEntityUSRealmAddressCity AssignedEntityUSRealmAddressCountry AssignedEntityUSRealmAddressPostalCode AssignedEntityUSRealmAddressState AssignedEntityUSRealmAddressStreetAddressLine AssignedEntityUSRealmAddressUseP AssignedEntityUSRealmAddressUse AssignedEntityTELUse"/>
-      <details key="constraints.validation.dependOn.AssignedEntityUSRealmAddressUse"
+      <details key="constraints.validation.query" value="GeneralHeaderConstraintsAuthenticatorAssignedEntityUSRealmAddressStreet GeneralHeaderConstraintsAuthenticatorAssignedEntityUSRealmAddressCity GeneralHeaderConstraintsAuthenticatorAssignedEntityUSRealmAddressCountry GeneralHeaderConstraintsAuthenticatorAssignedEntityUSRealmAddressPostalCode GeneralHeaderConstraintsAuthenticatorAssignedEntityUSRealmAddressState GeneralHeaderConstraintsAuthenticatorAssignedEntityUSRealmAddressStreetAddressLine GeneralHeaderConstraintsAuthenticatorAssignedEntityUSRealmAddressUseP GeneralHeaderConstraintsAuthenticatorAssignedEntityUSRealmAddressUse GeneralHeaderConstraintsAuthenticatorAssignedEntityTELUse"/>
+      <details key="constraints.validation.dependOn.GeneralHeaderConstraintsAuthenticatorAssignedEntityUSRealmAddressUse"
           value="AssignedEntityUSRealmAddressUseP"/>
     </eAnnotations>
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolGeneralHeaderConstraintsAuthenticatorAssignedEntityPerson">
@@ -287,24 +288,24 @@
       <details key="constraints.validation.info" value="InformantAssignedEntity InformantRelatedEntity"/>
     </eAnnotations>
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolGeneralHeaderConstraintsInformantAssignedEntity">
-      <details key="constraints.validation.warning" value="AssignedEntityHasNationalProviderIdentifier AssignedEntityAddr AssignedEntityCode AssignedEntityUSRealmAddressCountry AssignedEntityUSRealmAddressPostalCode AssignedEntityUSRealmAddressState AssignedEntityUSRealmAddressUseP"/>
+      <details key="constraints.validation.warning" value="AssignedEntityHasNationalProviderIdentifier AssignedEntityAddr AssignedEntityCode GeneralHeaderConstraintsInformantAssignedEntityUSRealmAddressCountry GeneralHeaderConstraintsInformantAssignedEntityUSRealmAddressPostalCode GeneralHeaderConstraintsInformantAssignedEntityUSRealmAddressState GeneralHeaderConstraintsInformantAssignedEntityUSRealmAddressUseP"/>
       <details key="code.codeSystem" value="2.16.840.1.113883.6.101"/>
       <details key="code.codeSystemName" value="NUCC Health Care Provider Taxonomy"/>
       <details key="constraints.validation.info" value="AssignedEntityCodeP"/>
       <details key="constraints.validation.dependOn.AssignedEntityCode" value="AssignedEntityCodeP"/>
-      <details key="constraints.validation.error" value="AssignedEntityId AssignedEntityAssignedPerson AssignedEntityUSRealmAddressStreet AssignedEntityUSRealmAddressCity AssignedEntityUSRealmAddressStreetAddressLine AssignedEntityUSRealmAddressUse"/>
-      <details key="constraints.validation.query" value="AssignedEntityUSRealmAddressStreet AssignedEntityUSRealmAddressCity AssignedEntityUSRealmAddressCountry AssignedEntityUSRealmAddressPostalCode AssignedEntityUSRealmAddressState AssignedEntityUSRealmAddressStreetAddressLine AssignedEntityUSRealmAddressUseP AssignedEntityUSRealmAddressUse"/>
-      <details key="constraints.validation.dependOn.AssignedEntityUSRealmAddressUse"
+      <details key="constraints.validation.error" value="AssignedEntityId AssignedEntityAssignedPerson GeneralHeaderConstraintsInformantAssignedEntityUSRealmAddressStreet GeneralHeaderConstraintsInformantAssignedEntityUSRealmAddressCity GeneralHeaderConstraintsInformantAssignedEntityUSRealmAddressStreetAddressLine GeneralHeaderConstraintsInformantAssignedEntityUSRealmAddressUse"/>
+      <details key="constraints.validation.query" value="GeneralHeaderConstraintsInformantAssignedEntityUSRealmAddressStreet GeneralHeaderConstraintsInformantAssignedEntityUSRealmAddressCity GeneralHeaderConstraintsInformantAssignedEntityUSRealmAddressCountry GeneralHeaderConstraintsInformantAssignedEntityUSRealmAddressPostalCode GeneralHeaderConstraintsInformantAssignedEntityUSRealmAddressState GeneralHeaderConstraintsInformantAssignedEntityUSRealmAddressStreetAddressLine GeneralHeaderConstraintsInformantAssignedEntityUSRealmAddressUseP GeneralHeaderConstraintsInformantAssignedEntityUSRealmAddressUse"/>
+      <details key="constraints.validation.dependOn.GeneralHeaderConstraintsInformantAssignedEntityUSRealmAddressUse"
           value="AssignedEntityUSRealmAddressUseP"/>
     </eAnnotations>
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolGeneralHeaderConstraintsInformantAssignedEntityPerson">
       <details key="constraints.validation.error" value="PersonName"/>
     </eAnnotations>
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolGeneralHeaderConstraintsInformantRelatedEntity">
-      <details key="constraints.validation.warning" value="RelatedEntityAddr RelatedEntityUSRealmAddressCountry RelatedEntityUSRealmAddressPostalCode RelatedEntityUSRealmAddressState RelatedEntityUSRealmAddressUseP"/>
-      <details key="constraints.validation.error" value="RelatedEntityPerson RelatedEntityUSRealmAddressStreet RelatedEntityUSRealmAddressCity RelatedEntityUSRealmAddressStreetAddressLine RelatedEntityUSRealmAddressUse"/>
-      <details key="constraints.validation.query" value="RelatedEntityUSRealmAddressStreet RelatedEntityUSRealmAddressCity RelatedEntityUSRealmAddressCountry RelatedEntityUSRealmAddressPostalCode RelatedEntityUSRealmAddressState RelatedEntityUSRealmAddressStreetAddressLine RelatedEntityUSRealmAddressUseP RelatedEntityUSRealmAddressUse"/>
-      <details key="constraints.validation.dependOn.RelatedEntityUSRealmAddressUse"
+      <details key="constraints.validation.warning" value="RelatedEntityAddr GeneralHeaderConstraintsInformantRelatedEntityUSRealmAddressCountry GeneralHeaderConstraintsInformantRelatedEntityUSRealmAddressPostalCode GeneralHeaderConstraintsInformantRelatedEntityUSRealmAddressState GeneralHeaderConstraintsInformantRelatedEntityUSRealmAddressUseP"/>
+      <details key="constraints.validation.error" value="RelatedEntityPerson GeneralHeaderConstraintsInformantRelatedEntityUSRealmAddressStreet GeneralHeaderConstraintsInformantRelatedEntityUSRealmAddressCity GeneralHeaderConstraintsInformantRelatedEntityUSRealmAddressStreetAddressLine GeneralHeaderConstraintsInformantRelatedEntityUSRealmAddressUse"/>
+      <details key="constraints.validation.query" value="GeneralHeaderConstraintsInformantRelatedEntityUSRealmAddressStreet GeneralHeaderConstraintsInformantRelatedEntityUSRealmAddressCity GeneralHeaderConstraintsInformantRelatedEntityUSRealmAddressCountry GeneralHeaderConstraintsInformantRelatedEntityUSRealmAddressPostalCode GeneralHeaderConstraintsInformantRelatedEntityUSRealmAddressState GeneralHeaderConstraintsInformantRelatedEntityUSRealmAddressStreetAddressLine GeneralHeaderConstraintsInformantRelatedEntityUSRealmAddressUseP GeneralHeaderConstraintsInformantRelatedEntityUSRealmAddressUse"/>
+      <details key="constraints.validation.dependOn.GeneralHeaderConstraintsInformantRelatedEntityUSRealmAddressUse"
           value="RelatedEntityUSRealmAddressUseP"/>
     </eAnnotations>
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolGeneralHeaderConstraintsParticipantSupport">
@@ -3010,7 +3011,7 @@
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="AllergyObservation" eSuperTypes="urn:hl7-org:v3#//Observation">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
-      <details key="constraints.validation.error" value="AllergyObservationTemplateId AllergyObservationReferenceValue AllergyObservationAllergyStatusInversionIndicator AllergyObservationReactionInversionIndicator AllergyObservationSeverityInversionIndicator AllergyObservationAllergyPlayingEntityCodeSystems AllergyObservationClassCode AllergyObservationMoodCode AllergyObservationId AllergyObservationCode AllergyObservationCodeP AllergyObservationStatusCode AllergyObservationEffectiveTime AllergyObservationValue AllergyObservationAllergyObservationParticipantAllergyObservationParticipantRoleAllergyObservationPlayingEntityOriginalTextReferenceValue AllergyObservationAllergyObservationParticipantAllergyObservationParticipantRoleAllergyObservationPlayingEntityClassCode AllergyObservationAllergyObservationParticipantAllergyObservationParticipantRoleAllergyObservationPlayingEntityCode AllergyObservationAllergyObservationParticipantAllergyObservationParticipantRoleClassCode AllergyObservationAllergyObservationParticipantAllergyObservationParticipantRolePlayingEntity AllergyObservationAllergyObservationParticipantTypeCode AllergyObservationAllergyObservationParticipantParticipantRole"/>
+      <details key="constraints.validation.error" value="AllergyObservationTemplateId AllergyObservationReferenceValue AllergyObservationAllergyStatusInversionIndicator AllergyObservationReactionInversionIndicator AllergyObservationSeverityInversionIndicator AllergyObservationAllergyPlayingEntityCodeSystems AllergyObservationClassCode AllergyObservationMoodCode AllergyObservationId AllergyObservationCode AllergyObservationCodeP AllergyObservationStatusCode AllergyObservationEffectiveTime AllergyObservationValue AllergyObservationAllergyObservationParticipantAllergyObservationParticipantRoleAllergyObservationPlayingEntityOriginalTextReferenceValue AllergyObservationAllergyObservationParticipantAllergyObservationParticipantRoleAllergyObservationPlayingEntityClassCode AllergyObservationAllergyObservationParticipantAllergyObservationParticipantRoleAllergyObservationPlayingEntityCode AllergyObservationAllergyObservationParticipantAllergyObservationParticipantRoleClassCode AllergyObservationAllergyObservationParticipantAllergyObservationParticipantRolePlayingEntity AllergyObservationParticipantTypeCode AllergyObservationParticipantParticipantRole"/>
       <details key="templateId.root" value="2.16.840.1.113883.10.20.22.4.7"/>
       <details key="constraints.validation.warning" value="AllergyObservationValueOriginalText AllergyObservationOriginalTextReference AllergyObservationOriginalTextReferenceValue AllergyObservationProblemEntryReactionObservationContainer AllergyObservationSeverity AllergyObservationParticipant AllergyObservationAllergyObservationParticipantAllergyObservationParticipantRoleAllergyObservationPlayingEntityCodeOriginalText AllergyObservationAllergyObservationParticipantAllergyObservationParticipantRoleAllergyObservationPlayingEntityOriginalTextReference AllergyObservationAllergyObservationParticipantAllergyObservationParticipantRoleAllergyObservationPlayingEntityReferenceValue"/>
       <details key="classCode" value="OBS"/>
@@ -3023,7 +3024,7 @@
       <details key="value.codeSystem" value="2.16.840.1.113883.6.96"/>
       <details key="value.codeSystemName" value="SNOMEDCT"/>
       <details key="constraints.validation.info" value="AllergyObservationAllergyStatusObservation AllergyObservationAllergyObservationParticipantAllergyObservationParticipantRoleAllergyObservationPlayingEntityCodeTranslation"/>
-      <details key="constraints.validation.query" value="AllergyObservationAllergyObservationParticipantAllergyObservationParticipantRoleAllergyObservationPlayingEntityCodeOriginalText AllergyObservationAllergyObservationParticipantAllergyObservationParticipantRoleAllergyObservationPlayingEntityOriginalTextReference AllergyObservationAllergyObservationParticipantAllergyObservationParticipantRoleAllergyObservationPlayingEntityReferenceValue AllergyObservationAllergyObservationParticipantAllergyObservationParticipantRoleAllergyObservationPlayingEntityOriginalTextReferenceValue AllergyObservationAllergyObservationParticipantAllergyObservationParticipantRoleAllergyObservationPlayingEntityCodeTranslation AllergyObservationAllergyObservationParticipantAllergyObservationParticipantRoleAllergyObservationPlayingEntityClassCode AllergyObservationAllergyObservationParticipantAllergyObservationParticipantRoleAllergyObservationPlayingEntityCode AllergyObservationAllergyObservationParticipantAllergyObservationParticipantRoleClassCode AllergyObservationAllergyObservationParticipantAllergyObservationParticipantRolePlayingEntity AllergyObservationAllergyObservationParticipantTypeCode AllergyObservationAllergyObservationParticipantParticipantRole"/>
+      <details key="constraints.validation.query" value="AllergyObservationAllergyObservationParticipantAllergyObservationParticipantRoleAllergyObservationPlayingEntityCodeOriginalText AllergyObservationAllergyObservationParticipantAllergyObservationParticipantRoleAllergyObservationPlayingEntityOriginalTextReference AllergyObservationAllergyObservationParticipantAllergyObservationParticipantRoleAllergyObservationPlayingEntityReferenceValue AllergyObservationAllergyObservationParticipantAllergyObservationParticipantRoleAllergyObservationPlayingEntityOriginalTextReferenceValue AllergyObservationAllergyObservationParticipantAllergyObservationParticipantRoleAllergyObservationPlayingEntityCodeTranslation AllergyObservationAllergyObservationParticipantAllergyObservationParticipantRoleAllergyObservationPlayingEntityClassCode AllergyObservationAllergyObservationParticipantAllergyObservationParticipantRoleAllergyObservationPlayingEntityCode AllergyObservationAllergyObservationParticipantAllergyObservationParticipantRoleClassCode AllergyObservationAllergyObservationParticipantAllergyObservationParticipantRolePlayingEntity AllergyObservationParticipantTypeCode AllergyObservationParticipantParticipantRole"/>
     </eAnnotations>
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolAllergyObservationAllergyObservationParticipant">
       <details key="typeCode" value="CSM"/>
@@ -3322,7 +3323,7 @@
         </eGenericType>
       </eParameters>
     </eOperations>
-    <eOperations name="AllergyObservationAllergyObservationParticipantTypeCode" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+    <eOperations name="AllergyObservationParticipantTypeCode" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
       <eParameters name="context">
         <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
@@ -3331,8 +3332,7 @@
         </eGenericType>
       </eParameters>
     </eOperations>
-    <eOperations name="AllergyObservationAllergyObservationParticipantParticipantRole"
-        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+    <eOperations name="AllergyObservationParticipantParticipantRole" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
       <eParameters name="context">
         <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
@@ -4969,10 +4969,10 @@
       <details key="constraints.validation.error" value="PerformerMedicationDispenseAssignedEntity"/>
     </eAnnotations>
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolMedicationDispensePerformerMedicationDispenseAssignedEntity">
-      <details key="constraints.validation.warning" value="MedicationDispenseAssignedEntityAddr MedicationDispenseAssignedEntityUSRealmAddressCountry MedicationDispenseAssignedEntityUSRealmAddressPostalCode MedicationDispenseAssignedEntityUSRealmAddressState MedicationDispenseAssignedEntityUSRealmAddressUseP"/>
-      <details key="constraints.validation.error" value="MedicationDispenseAssignedEntityUSRealmAddressStreet MedicationDispenseAssignedEntityUSRealmAddressCity MedicationDispenseAssignedEntityUSRealmAddressStreetAddressLine MedicationDispenseAssignedEntityUSRealmAddressUse"/>
-      <details key="constraints.validation.query" value="MedicationDispenseAssignedEntityUSRealmAddressStreet MedicationDispenseAssignedEntityUSRealmAddressCity MedicationDispenseAssignedEntityUSRealmAddressCountry MedicationDispenseAssignedEntityUSRealmAddressPostalCode MedicationDispenseAssignedEntityUSRealmAddressState MedicationDispenseAssignedEntityUSRealmAddressStreetAddressLine MedicationDispenseAssignedEntityUSRealmAddressUseP MedicationDispenseAssignedEntityUSRealmAddressUse"/>
-      <details key="constraints.validation.dependOn.MedicationDispenseAssignedEntityUSRealmAddressUse"
+      <details key="constraints.validation.warning" value="MedicationDispenseAssignedEntityAddr MedicationDispensePerformerMedicationDispenseAssignedEntityUSRealmAddressCountry MedicationDispensePerformerMedicationDispenseAssignedEntityUSRealmAddressPostalCode MedicationDispensePerformerMedicationDispenseAssignedEntityUSRealmAddressState MedicationDispensePerformerMedicationDispenseAssignedEntityUSRealmAddressUseP"/>
+      <details key="constraints.validation.error" value="MedicationDispensePerformerMedicationDispenseAssignedEntityUSRealmAddressStreet MedicationDispensePerformerMedicationDispenseAssignedEntityUSRealmAddressCity MedicationDispensePerformerMedicationDispenseAssignedEntityUSRealmAddressStreetAddressLine MedicationDispensePerformerMedicationDispenseAssignedEntityUSRealmAddressUse"/>
+      <details key="constraints.validation.query" value="MedicationDispensePerformerMedicationDispenseAssignedEntityUSRealmAddressStreet MedicationDispensePerformerMedicationDispenseAssignedEntityUSRealmAddressCity MedicationDispensePerformerMedicationDispenseAssignedEntityUSRealmAddressCountry MedicationDispensePerformerMedicationDispenseAssignedEntityUSRealmAddressPostalCode MedicationDispensePerformerMedicationDispenseAssignedEntityUSRealmAddressState MedicationDispensePerformerMedicationDispenseAssignedEntityUSRealmAddressStreetAddressLine MedicationDispensePerformerMedicationDispenseAssignedEntityUSRealmAddressUseP MedicationDispensePerformerMedicationDispenseAssignedEntityUSRealmAddressUse"/>
+      <details key="constraints.validation.dependOn.MedicationDispensePerformerMedicationDispenseAssignedEntityUSRealmAddressUse"
           value="MedicationDispenseAssignedEntityUSRealmAddressUseP"/>
     </eAnnotations>
     <eOperations name="MedicationDispenseContainsMedicationOrImmunization" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
@@ -5618,10 +5618,10 @@
       <details key="constraints.validation.error" value="AuthorTime AuthorAssignedAuthor"/>
     </eAnnotations>
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolCommentActivityAuthorAssignedAuthor">
-      <details key="constraints.validation.error" value="AssignedAuthorHasPersonOrOrganization AssignedAuthorAssignPersonName AssignedAuthorAddr AssignedAuthorId AssignedAuthorUSRealmAddressStreet AssignedAuthorUSRealmAddressCity AssignedAuthorUSRealmAddressStreetAddressLine AssignedAuthorUSRealmAddressUse"/>
-      <details key="constraints.validation.query" value="AssignedAuthorUSRealmAddressStreet AssignedAuthorUSRealmAddressCity AssignedAuthorUSRealmAddressCountry AssignedAuthorUSRealmAddressPostalCode AssignedAuthorUSRealmAddressState AssignedAuthorUSRealmAddressStreetAddressLine AssignedAuthorUSRealmAddressUseP AssignedAuthorUSRealmAddressUse"/>
-      <details key="constraints.validation.warning" value="AssignedAuthorUSRealmAddressCountry AssignedAuthorUSRealmAddressPostalCode AssignedAuthorUSRealmAddressState AssignedAuthorUSRealmAddressUseP"/>
-      <details key="constraints.validation.dependOn.AssignedAuthorUSRealmAddressUse"
+      <details key="constraints.validation.error" value="AssignedAuthorHasPersonOrOrganization AssignedAuthorAssignPersonName AssignedAuthorAddr AssignedAuthorId CommentActivityAuthorAssignedAuthorUSRealmAddressStreet CommentActivityAuthorAssignedAuthorUSRealmAddressCity CommentActivityAuthorAssignedAuthorUSRealmAddressStreetAddressLine CommentActivityAuthorAssignedAuthorUSRealmAddressUse"/>
+      <details key="constraints.validation.query" value="CommentActivityAuthorAssignedAuthorUSRealmAddressStreet CommentActivityAuthorAssignedAuthorUSRealmAddressCity CommentActivityAuthorAssignedAuthorUSRealmAddressCountry CommentActivityAuthorAssignedAuthorUSRealmAddressPostalCode CommentActivityAuthorAssignedAuthorUSRealmAddressState CommentActivityAuthorAssignedAuthorUSRealmAddressStreetAddressLine CommentActivityAuthorAssignedAuthorUSRealmAddressUseP CommentActivityAuthorAssignedAuthorUSRealmAddressUse"/>
+      <details key="constraints.validation.warning" value="CommentActivityAuthorAssignedAuthorUSRealmAddressCountry CommentActivityAuthorAssignedAuthorUSRealmAddressPostalCode CommentActivityAuthorAssignedAuthorUSRealmAddressState CommentActivityAuthorAssignedAuthorUSRealmAddressUseP"/>
+      <details key="constraints.validation.dependOn.CommentActivityAuthorAssignedAuthorUSRealmAddressUse"
           value="AssignedAuthorUSRealmAddressUseP"/>
     </eAnnotations>
     <eOperations name="CommentActivityTextReference" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
@@ -6410,9 +6410,9 @@
     </eAnnotations>
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolContinuityOfCareDocumentDocumentationOfServiceEvent">
       <details key="classCode" value="PCPR"/>
-      <details key="constraints.validation.error" value="ServiceEventClassCode ServiceEventEffectiveTime ServiceEventEffectiveTimeHigh ServiceEventEffectiveTimeLow"/>
+      <details key="constraints.validation.error" value="ServiceEventClassCode ServiceEventEffectiveTime ContinuityOfCareDocumentDocumentationOfServiceEventEffectiveTimeHigh ContinuityOfCareDocumentDocumentationOfServiceEventEffectiveTimeLow"/>
       <details key="constraints.validation.warning" value="ServiceEventPerformer"/>
-      <details key="constraints.validation.query" value="ServiceEventEffectiveTimeHigh ServiceEventEffectiveTimeLow"/>
+      <details key="constraints.validation.query" value="ContinuityOfCareDocumentDocumentationOfServiceEventEffectiveTimeHigh ContinuityOfCareDocumentDocumentationOfServiceEventEffectiveTimeLow"/>
     </eAnnotations>
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolContinuityOfCareDocumentDocumentationOfServiceEventPerformer">
       <details key="typeCode" value="PRF"/>
@@ -13208,83 +13208,84 @@
           value="PolicyActivityHolderHolderRoleUSRealmAddressUseP"/>
     </eAnnotations>
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolPolicyActivityPayer">
-      <details key="constraints.validation.error" value="PayerTemplateId PayerTypeCode PayerPayerAssignedEntity PayerPayerAssignedEntityUSRealmAddressStreet PayerPayerAssignedEntityUSRealmAddressCity PayerPayerAssignedEntityUSRealmAddressStreetAddressLine PayerPayerAssignedEntityUSRealmAddressUse PayerPayerAssignedEntityId PayerPayerAssignedEntityCode PayerPayerAssignedEntityCodeP"/>
+      <details key="constraints.validation.error" value="PayerTemplateId PayerTypeCode PayerPayerAssignedEntity PolicyActivityPayerPayerAssignedEntityUSRealmAddressStreet PolicyActivityPayerPayerAssignedEntityUSRealmAddressCity PolicyActivityPayerPayerAssignedEntityUSRealmAddressStreetAddressLine PolicyActivityPayerPayerAssignedEntityUSRealmAddressUse PolicyActivityPayerPayerAssignedEntityId PolicyActivityPayerPayerAssignedEntityCode PolicyActivityPayerPayerAssignedEntityCodeP"/>
       <details key="templateId.root" value="2.16.840.1.113883.10.20.22.4.87"/>
       <details key="typeCode" value="PRF"/>
-      <details key="constraints.validation.query" value="PayerPayerAssignedEntityUSRealmAddressStreet PayerPayerAssignedEntityUSRealmAddressCity PayerPayerAssignedEntityUSRealmAddressCountry PayerPayerAssignedEntityUSRealmAddressPostalCode PayerPayerAssignedEntityUSRealmAddressState PayerPayerAssignedEntityUSRealmAddressStreetAddressLine PayerPayerAssignedEntityUSRealmAddressUseP PayerPayerAssignedEntityUSRealmAddressUse PayerPayerAssignedEntityPayerOrganizationName PayerPayerAssignedEntityId PayerPayerAssignedEntityCode PayerPayerAssignedEntityCodeP PayerPayerAssignedEntityAddr PayerPayerAssignedEntityTelecom PayerPayerAssignedEntityPayerOrganization"/>
-      <details key="constraints.validation.warning" value="PayerPayerAssignedEntityUSRealmAddressCountry PayerPayerAssignedEntityUSRealmAddressPostalCode PayerPayerAssignedEntityUSRealmAddressState PayerPayerAssignedEntityUSRealmAddressUseP PayerPayerAssignedEntityPayerOrganizationName PayerPayerAssignedEntityPayerOrganization"/>
-      <details key="constraints.validation.dependOn.PayerPayerAssignedEntityUSRealmAddressUse"
+      <details key="constraints.validation.query" value="PolicyActivityPayerPayerAssignedEntityUSRealmAddressStreet PolicyActivityPayerPayerAssignedEntityUSRealmAddressCity PolicyActivityPayerPayerAssignedEntityUSRealmAddressCountry PolicyActivityPayerPayerAssignedEntityUSRealmAddressPostalCode PolicyActivityPayerPayerAssignedEntityUSRealmAddressState PolicyActivityPayerPayerAssignedEntityUSRealmAddressStreetAddressLine PolicyActivityPayerPayerAssignedEntityUSRealmAddressUseP PolicyActivityPayerPayerAssignedEntityUSRealmAddressUse PolicyActivityPayerPayerAssignedEntityPayerOrganizationName PolicyActivityPayerPayerAssignedEntityId PolicyActivityPayerPayerAssignedEntityCode PolicyActivityPayerPayerAssignedEntityCodeP PolicyActivityPayerPayerAssignedEntityAddr PolicyActivityPayerPayerAssignedEntityTelecom PolicyActivityPayerPayerAssignedEntityPayerOrganization"/>
+      <details key="constraints.validation.warning" value="PolicyActivityPayerPayerAssignedEntityUSRealmAddressCountry PolicyActivityPayerPayerAssignedEntityUSRealmAddressPostalCode PolicyActivityPayerPayerAssignedEntityUSRealmAddressState PolicyActivityPayerPayerAssignedEntityUSRealmAddressUseP PolicyActivityPayerPayerAssignedEntityPayerOrganizationName PolicyActivityPayerPayerAssignedEntityPayerOrganization"/>
+      <details key="constraints.validation.dependOn.PolicyActivityPayerPayerAssignedEntityUSRealmAddressUse"
           value="PayerPayerAssignedEntityUSRealmAddressUseP"/>
-      <details key="constraints.validation.info" value="PayerPayerAssignedEntityAddr PayerPayerAssignedEntityTelecom"/>
+      <details key="constraints.validation.info" value="PolicyActivityPayerPayerAssignedEntityAddr PolicyActivityPayerPayerAssignedEntityTelecom"/>
     </eAnnotations>
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolPolicyActivityPayerPayerAssignedEntity">
-      <details key="constraints.validation.error" value="PayerAssignedEntityId PayerAssignedEntityCode PayerAssignedEntityCodeP PayerAssignedEntityUSRealmAddressStreet PayerAssignedEntityUSRealmAddressCity PayerAssignedEntityUSRealmAddressStreetAddressLine PayerAssignedEntityUSRealmAddressUse"/>
+      <details key="constraints.validation.error" value="PayerAssignedEntityId PayerAssignedEntityCode PayerAssignedEntityCodeP PolicyActivityPayerPayerAssignedEntityUSRealmAddressStreet PolicyActivityPayerPayerAssignedEntityUSRealmAddressCity PolicyActivityPayerPayerAssignedEntityUSRealmAddressStreetAddressLine PolicyActivityPayerPayerAssignedEntityUSRealmAddressUse"/>
       <details key="code.codeSystem" value="2.16.840.1.113883.5.110"/>
       <details key="code.codeSystemName" value="HL7RoleClass"/>
       <details key="constraints.validation.info" value="PayerAssignedEntityAddr PayerAssignedEntityTelecom"/>
-      <details key="constraints.validation.warning" value="PayerAssignedEntityPayerOrganization PayerAssignedEntityUSRealmAddressCountry PayerAssignedEntityUSRealmAddressPostalCode PayerAssignedEntityUSRealmAddressState PayerAssignedEntityUSRealmAddressUseP PayerAssignedEntityPayerOrganizationName"/>
-      <details key="constraints.validation.query" value="PayerAssignedEntityUSRealmAddressStreet PayerAssignedEntityUSRealmAddressCity PayerAssignedEntityUSRealmAddressCountry PayerAssignedEntityUSRealmAddressPostalCode PayerAssignedEntityUSRealmAddressState PayerAssignedEntityUSRealmAddressStreetAddressLine PayerAssignedEntityUSRealmAddressUseP PayerAssignedEntityUSRealmAddressUse PayerAssignedEntityPayerOrganizationName"/>
-      <details key="constraints.validation.dependOn.PayerAssignedEntityUSRealmAddressUse"
+      <details key="constraints.validation.warning" value="PayerAssignedEntityPayerOrganization PolicyActivityPayerPayerAssignedEntityUSRealmAddressCountry PolicyActivityPayerPayerAssignedEntityUSRealmAddressPostalCode PolicyActivityPayerPayerAssignedEntityUSRealmAddressState PolicyActivityPayerPayerAssignedEntityUSRealmAddressUseP PolicyActivityPayerPayerAssignedEntityPayerOrganizationName"/>
+      <details key="constraints.validation.query" value="PolicyActivityPayerPayerAssignedEntityUSRealmAddressStreet PolicyActivityPayerPayerAssignedEntityUSRealmAddressCity PolicyActivityPayerPayerAssignedEntityUSRealmAddressCountry PolicyActivityPayerPayerAssignedEntityUSRealmAddressPostalCode PolicyActivityPayerPayerAssignedEntityUSRealmAddressState PolicyActivityPayerPayerAssignedEntityUSRealmAddressStreetAddressLine PolicyActivityPayerPayerAssignedEntityUSRealmAddressUseP PolicyActivityPayerPayerAssignedEntityUSRealmAddressUse PolicyActivityPayerPayerAssignedEntityPayerOrganizationName"/>
+      <details key="constraints.validation.dependOn.PolicyActivityPayerPayerAssignedEntityUSRealmAddressUse"
           value="PayerAssignedEntityUSRealmAddressUseP"/>
     </eAnnotations>
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolPolicyActivityPayerPayerAssignedEntityPayerOrganization">
       <details key="constraints.validation.warning" value="PayerOrganizationName"/>
     </eAnnotations>
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolPolicyActivityGuarantor">
-      <details key="constraints.validation.error" value="GuarantorTemplateId GuarantorGuarantorAssignedEntity GuarantorGuarantorAssignedEntityUSRealmAddressStreet GuarantorGuarantorAssignedEntityUSRealmAddressCity GuarantorGuarantorAssignedEntityUSRealmAddressStreetAddressLine GuarantorGuarantorAssignedEntityUSRealmAddressUse GuarantorGuarantorAssignedEntityCode GuarantorGuarantorAssignedEntityCodeP"/>
+      <details key="constraints.validation.error" value="GuarantorTemplateId GuarantorGuarantorAssignedEntity PolicyActivityGuarantorGuarantorAssignedEntityUSRealmAddressStreet PolicyActivityGuarantorGuarantorAssignedEntityUSRealmAddressCity PolicyActivityGuarantorGuarantorAssignedEntityUSRealmAddressStreetAddressLine PolicyActivityGuarantorGuarantorAssignedEntityUSRealmAddressUse PolicyActivityGuarantorGuarantorAssignedEntityCode PolicyActivityGuarantorGuarantorAssignedEntityCodeP"/>
       <details key="templateId.root" value="2.16.840.1.113883.10.20.22.4.88"/>
-      <details key="constraints.validation.warning" value="GuarantorTime GuarantorTypeCode GuarantorGuarantorAssignedEntityUSRealmAddressCountry GuarantorGuarantorAssignedEntityUSRealmAddressPostalCode GuarantorGuarantorAssignedEntityUSRealmAddressState GuarantorGuarantorAssignedEntityUSRealmAddressUseP GuarantorGuarantorAssignedEntityPersonNameAndOrOrgName GuarantorGuarantorAssignedEntityAddr GuarantorGuarantorAssignedEntityTelecom"/>
+      <details key="constraints.validation.warning" value="GuarantorTime GuarantorTypeCode PolicyActivityGuarantorGuarantorAssignedEntityUSRealmAddressCountry PolicyActivityGuarantorGuarantorAssignedEntityUSRealmAddressPostalCode PolicyActivityGuarantorGuarantorAssignedEntityUSRealmAddressState PolicyActivityGuarantorGuarantorAssignedEntityUSRealmAddressUseP PolicyActivityGuarantorGuarantorAssignedEntityPersonNameAndOrOrgName PolicyActivityGuarantorGuarantorAssignedEntityAddr PolicyActivityGuarantorGuarantorAssignedEntityTelecom"/>
       <details key="typeCode" value="PRF"/>
-      <details key="constraints.validation.query" value="GuarantorGuarantorAssignedEntityUSRealmAddressStreet GuarantorGuarantorAssignedEntityUSRealmAddressCity GuarantorGuarantorAssignedEntityUSRealmAddressCountry GuarantorGuarantorAssignedEntityUSRealmAddressPostalCode GuarantorGuarantorAssignedEntityUSRealmAddressState GuarantorGuarantorAssignedEntityUSRealmAddressStreetAddressLine GuarantorGuarantorAssignedEntityUSRealmAddressUseP GuarantorGuarantorAssignedEntityUSRealmAddressUse GuarantorGuarantorAssignedEntityPersonNameAndOrOrgName GuarantorGuarantorAssignedEntityCode GuarantorGuarantorAssignedEntityCodeP GuarantorGuarantorAssignedEntityAddr GuarantorGuarantorAssignedEntityTelecom"/>
-      <details key="constraints.validation.dependOn.GuarantorGuarantorAssignedEntityUSRealmAddressUse"
+      <details key="constraints.validation.query" value="PolicyActivityGuarantorGuarantorAssignedEntityUSRealmAddressStreet PolicyActivityGuarantorGuarantorAssignedEntityUSRealmAddressCity PolicyActivityGuarantorGuarantorAssignedEntityUSRealmAddressCountry PolicyActivityGuarantorGuarantorAssignedEntityUSRealmAddressPostalCode PolicyActivityGuarantorGuarantorAssignedEntityUSRealmAddressState PolicyActivityGuarantorGuarantorAssignedEntityUSRealmAddressStreetAddressLine PolicyActivityGuarantorGuarantorAssignedEntityUSRealmAddressUseP PolicyActivityGuarantorGuarantorAssignedEntityUSRealmAddressUse PolicyActivityGuarantorGuarantorAssignedEntityPersonNameAndOrOrgName PolicyActivityGuarantorGuarantorAssignedEntityCode PolicyActivityGuarantorGuarantorAssignedEntityCodeP PolicyActivityGuarantorGuarantorAssignedEntityAddr PolicyActivityGuarantorGuarantorAssignedEntityTelecom"/>
+      <details key="constraints.validation.dependOn.PolicyActivityGuarantorGuarantorAssignedEntityUSRealmAddressUse"
           value="GuarantorGuarantorAssignedEntityUSRealmAddressUseP"/>
     </eAnnotations>
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolPolicyActivityGuarantorGuarantorAssignedEntity">
-      <details key="constraints.validation.warning" value="GuarantorAssignedEntityPersonNameAndOrOrgName GuarantorAssignedEntityAddr GuarantorAssignedEntityTelecom GuarantorAssignedEntityUSRealmAddressCountry GuarantorAssignedEntityUSRealmAddressPostalCode GuarantorAssignedEntityUSRealmAddressState GuarantorAssignedEntityUSRealmAddressUseP"/>
+      <details key="constraints.validation.warning" value="GuarantorAssignedEntityPersonNameAndOrOrgName GuarantorAssignedEntityAddr GuarantorAssignedEntityTelecom PolicyActivityGuarantorGuarantorAssignedEntityUSRealmAddressCountry PolicyActivityGuarantorGuarantorAssignedEntityUSRealmAddressPostalCode PolicyActivityGuarantorGuarantorAssignedEntityUSRealmAddressState PolicyActivityGuarantorGuarantorAssignedEntityUSRealmAddressUseP"/>
       <details key="code.code" value="GUAR"/>
       <details key="code.codeSystem" value="2.16.840.1.113883.5.111"/>
       <details key="code.codeSystemName" value="RoleCode"/>
-      <details key="constraints.validation.error" value="GuarantorAssignedEntityCode GuarantorAssignedEntityCodeP GuarantorAssignedEntityUSRealmAddressStreet GuarantorAssignedEntityUSRealmAddressCity GuarantorAssignedEntityUSRealmAddressStreetAddressLine GuarantorAssignedEntityUSRealmAddressUse"/>
-      <details key="constraints.validation.query" value="GuarantorAssignedEntityUSRealmAddressStreet GuarantorAssignedEntityUSRealmAddressCity GuarantorAssignedEntityUSRealmAddressCountry GuarantorAssignedEntityUSRealmAddressPostalCode GuarantorAssignedEntityUSRealmAddressState GuarantorAssignedEntityUSRealmAddressStreetAddressLine GuarantorAssignedEntityUSRealmAddressUseP GuarantorAssignedEntityUSRealmAddressUse"/>
-      <details key="constraints.validation.dependOn.GuarantorAssignedEntityUSRealmAddressUse"
+      <details key="constraints.validation.error" value="GuarantorAssignedEntityCode GuarantorAssignedEntityCodeP PolicyActivityGuarantorGuarantorAssignedEntityUSRealmAddressStreet PolicyActivityGuarantorGuarantorAssignedEntityUSRealmAddressCity PolicyActivityGuarantorGuarantorAssignedEntityUSRealmAddressStreetAddressLine PolicyActivityGuarantorGuarantorAssignedEntityUSRealmAddressUse"/>
+      <details key="constraints.validation.query" value="PolicyActivityGuarantorGuarantorAssignedEntityUSRealmAddressStreet PolicyActivityGuarantorGuarantorAssignedEntityUSRealmAddressCity PolicyActivityGuarantorGuarantorAssignedEntityUSRealmAddressCountry PolicyActivityGuarantorGuarantorAssignedEntityUSRealmAddressPostalCode PolicyActivityGuarantorGuarantorAssignedEntityUSRealmAddressState PolicyActivityGuarantorGuarantorAssignedEntityUSRealmAddressStreetAddressLine PolicyActivityGuarantorGuarantorAssignedEntityUSRealmAddressUseP PolicyActivityGuarantorGuarantorAssignedEntityUSRealmAddressUse"/>
+      <details key="constraints.validation.dependOn.PolicyActivityGuarantorGuarantorAssignedEntityUSRealmAddressUse"
           value="GuarantorAssignedEntityUSRealmAddressUseP"/>
     </eAnnotations>
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolPolicyActivityCoverage">
-      <details key="constraints.validation.error" value="CoverageTemplateId CoverageTypeCode CoverageCoverageRole CoverageCoverageRoleUSRealmAddressStreet CoverageCoverageRoleUSRealmAddressCity CoverageCoverageRoleUSRealmAddressStreetAddressLine CoverageCoverageRoleUSRealmAddressUse CoverageCoverageRoleCoveragePlayingEntityName CoverageCoverageRoleId CoverageCoverageRoleCode CoverageCoverageRoleCodeP"/>
+      <details key="constraints.validation.error" value="CoverageTemplateId CoverageTypeCode CoverageCoverageRole PolicyActivityCoverageCoverageRoleUSRealmAddressStreet PolicyActivityCoverageCoverageRoleUSRealmAddressCity PolicyActivityCoverageCoverageRoleUSRealmAddressStreetAddressLine PolicyActivityCoverageCoverageRoleUSRealmAddressUse PolicyActivityCoverageCoverageRoleCoveragePlayingEntityName PolicyActivityCoverageCoverageRoleId PolicyActivityCoverageCoverageRoleCode PolicyActivityCoverageCoverageRoleCodeP"/>
       <details key="templateId.root" value="2.16.840.1.113883.10.20.22.4.89"/>
-      <details key="constraints.validation.warning" value="CoverageLowTime CoverageHighTime CoverageTime CoverageCoverageRoleUSRealmAddressCountry CoverageCoverageRoleUSRealmAddressPostalCode CoverageCoverageRoleUSRealmAddressState CoverageCoverageRoleUSRealmAddressUseP CoverageCoverageRoleAddr CoverageCoverageRoleCoveragePlayingEntity"/>
+      <details key="constraints.validation.warning" value="CoverageLowTime CoverageHighTime CoverageTime PolicyActivityCoverageCoverageRoleUSRealmAddressCountry PolicyActivityCoverageCoverageRoleUSRealmAddressPostalCode PolicyActivityCoverageCoverageRoleUSRealmAddressState PolicyActivityCoverageCoverageRoleUSRealmAddressUseP PolicyActivityCoverageCoverageRoleAddr PolicyActivityCoverageCoverageRoleCoveragePlayingEntity"/>
       <details key="typeCode" value="COV"/>
-      <details key="constraints.validation.query" value="CoverageCoverageRoleUSRealmAddressStreet CoverageCoverageRoleUSRealmAddressCity CoverageCoverageRoleUSRealmAddressCountry CoverageCoverageRoleUSRealmAddressPostalCode CoverageCoverageRoleUSRealmAddressState CoverageCoverageRoleUSRealmAddressStreetAddressLine CoverageCoverageRoleUSRealmAddressUseP CoverageCoverageRoleUSRealmAddressUse CoverageCoverageRoleCoveragePlayingEntityName CoverageCoverageRoleId CoverageCoverageRoleCode CoverageCoverageRoleCodeP CoverageCoverageRoleAddr CoverageCoverageRoleCoveragePlayingEntity"/>
-      <details key="constraints.validation.dependOn.CoverageCoverageRoleUSRealmAddressUse"
+      <details key="constraints.validation.query" value="PolicyActivityCoverageCoverageRoleUSRealmAddressStreet PolicyActivityCoverageCoverageRoleUSRealmAddressCity PolicyActivityCoverageCoverageRoleUSRealmAddressCountry PolicyActivityCoverageCoverageRoleUSRealmAddressPostalCode PolicyActivityCoverageCoverageRoleUSRealmAddressState PolicyActivityCoverageCoverageRoleUSRealmAddressStreetAddressLine PolicyActivityCoverageCoverageRoleUSRealmAddressUseP PolicyActivityCoverageCoverageRoleUSRealmAddressUse PolicyActivityCoverageCoverageRoleCoveragePlayingEntityName PolicyActivityCoverageCoverageRoleId PolicyActivityCoverageCoverageRoleCode PolicyActivityCoverageCoverageRoleCodeP PolicyActivityCoverageCoverageRoleAddr PolicyActivityCoverageCoverageRoleCoveragePlayingEntity"/>
+      <details key="constraints.validation.dependOn.PolicyActivityCoverageCoverageRoleUSRealmAddressUse"
           value="CoverageCoverageRoleUSRealmAddressUseP"/>
     </eAnnotations>
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolPolicyActivityCoverageCoverageRole">
-      <details key="constraints.validation.error" value="CoverageRoleId CoverageRoleCode CoverageRoleCodeP CoverageRoleUSRealmAddressStreet CoverageRoleUSRealmAddressCity CoverageRoleUSRealmAddressStreetAddressLine CoverageRoleUSRealmAddressUse CoverageRoleCoveragePlayingEntityName"/>
+      <details key="constraints.validation.error" value="CoverageRoleId CoverageRoleCode CoverageRoleCodeP PolicyActivityCoverageCoverageRoleUSRealmAddressStreet PolicyActivityCoverageCoverageRoleUSRealmAddressCity PolicyActivityCoverageCoverageRoleUSRealmAddressStreetAddressLine PolicyActivityCoverageCoverageRoleUSRealmAddressUse PolicyActivityCoverageCoverageRoleCoveragePlayingEntityName"/>
       <details key="code.codeSystem" value="2.16.840.1.113883.5.111"/>
       <details key="code.codeSystemName" value="RoleCode"/>
-      <details key="constraints.validation.warning" value="CoverageRoleAddr CoverageRoleCoveragePlayingEntity CoverageRoleUSRealmAddressCountry CoverageRoleUSRealmAddressPostalCode CoverageRoleUSRealmAddressState CoverageRoleUSRealmAddressUseP"/>
-      <details key="constraints.validation.query" value="CoverageRoleUSRealmAddressStreet CoverageRoleUSRealmAddressCity CoverageRoleUSRealmAddressCountry CoverageRoleUSRealmAddressPostalCode CoverageRoleUSRealmAddressState CoverageRoleUSRealmAddressStreetAddressLine CoverageRoleUSRealmAddressUseP CoverageRoleUSRealmAddressUse CoverageRoleCoveragePlayingEntityName"/>
-      <details key="constraints.validation.dependOn.CoverageRoleUSRealmAddressUse"
+      <details key="constraints.validation.warning" value="CoverageRoleAddr CoverageRoleCoveragePlayingEntity PolicyActivityCoverageCoverageRoleUSRealmAddressCountry PolicyActivityCoverageCoverageRoleUSRealmAddressPostalCode PolicyActivityCoverageCoverageRoleUSRealmAddressState PolicyActivityCoverageCoverageRoleUSRealmAddressUseP"/>
+      <details key="constraints.validation.query" value="PolicyActivityCoverageCoverageRoleUSRealmAddressStreet PolicyActivityCoverageCoverageRoleUSRealmAddressCity PolicyActivityCoverageCoverageRoleUSRealmAddressCountry PolicyActivityCoverageCoverageRoleUSRealmAddressPostalCode PolicyActivityCoverageCoverageRoleUSRealmAddressState PolicyActivityCoverageCoverageRoleUSRealmAddressStreetAddressLine PolicyActivityCoverageCoverageRoleUSRealmAddressUseP PolicyActivityCoverageCoverageRoleUSRealmAddressUse PolicyActivityCoverageCoverageRoleCoveragePlayingEntityName"/>
+      <details key="constraints.validation.dependOn.PolicyActivityCoverageCoverageRoleUSRealmAddressUse"
           value="CoverageRoleUSRealmAddressUseP"/>
     </eAnnotations>
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolPolicyActivityCoverageCoverageRoleCoveragePlayingEntity">
       <details key="constraints.validation.error" value="CoveragePlayingEntityName"/>
     </eAnnotations>
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolPolicyActivityHolder">
-      <details key="constraints.validation.error" value="HolderTemplateId HolderTypeCode HolderHolderRole HolderHolderRoleUSRealmAddressStreet HolderHolderRoleUSRealmAddressCity HolderHolderRoleUSRealmAddressStreetAddressLine HolderHolderRoleUSRealmAddressUse HolderHolderRoleId"/>
+      <details key="constraints.validation.error" value="HolderTemplateId HolderTypeCode HolderHolderRole PolicyActivityHolderHolderRoleUSRealmAddressStreet PolicyActivityHolderHolderRoleUSRealmAddressCity PolicyActivityHolderHolderRoleUSRealmAddressStreetAddressLine PolicyActivityHolderHolderRoleUSRealmAddressUse PolicyActivityHolderHolderRoleId"/>
       <details key="templateId.root" value="2.16.840.1.113883.10.20.22.4.90"/>
       <details key="typeCode" value="HLD"/>
       <details key="constraints.validation.info" value="HolderTime"/>
-      <details key="constraints.validation.query" value="HolderHolderRoleUSRealmAddressStreet HolderHolderRoleUSRealmAddressCity HolderHolderRoleUSRealmAddressCountry HolderHolderRoleUSRealmAddressPostalCode HolderHolderRoleUSRealmAddressState HolderHolderRoleUSRealmAddressStreetAddressLine HolderHolderRoleUSRealmAddressUseP HolderHolderRoleUSRealmAddressUse HolderHolderRoleId HolderHolderRoleAddr"/>
-      <details key="constraints.validation.warning" value="HolderHolderRoleUSRealmAddressCountry HolderHolderRoleUSRealmAddressPostalCode HolderHolderRoleUSRealmAddressState HolderHolderRoleUSRealmAddressUseP HolderHolderRoleAddr"/>
-      <details key="constraints.validation.dependOn.HolderHolderRoleUSRealmAddressUse"
+      <details key="constraints.validation.query" value="PolicyActivityHolderHolderRoleUSRealmAddressStreet PolicyActivityHolderHolderRoleUSRealmAddressCity PolicyActivityHolderHolderRoleUSRealmAddressCountry PolicyActivityHolderHolderRoleUSRealmAddressPostalCode PolicyActivityHolderHolderRoleUSRealmAddressState PolicyActivityHolderHolderRoleUSRealmAddressStreetAddressLine PolicyActivityHolderHolderRoleUSRealmAddressUseP PolicyActivityHolderHolderRoleUSRealmAddressUse PolicyActivityHolderHolderRoleId PolicyActivityHolderHolderRoleAddr"/>
+      <details key="constraints.validation.warning" value="PolicyActivityHolderHolderRoleUSRealmAddressCountry PolicyActivityHolderHolderRoleUSRealmAddressPostalCode PolicyActivityHolderHolderRoleUSRealmAddressState PolicyActivityHolderHolderRoleUSRealmAddressUseP PolicyActivityHolderHolderRoleAddr"/>
+      <details key="constraints.validation.dependOn.PolicyActivityHolderHolderRoleUSRealmAddressUse"
           value="HolderHolderRoleUSRealmAddressUseP"/>
     </eAnnotations>
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolPolicyActivityHolderHolderRole">
-      <details key="constraints.validation.error" value="HolderRoleId HolderRoleUSRealmAddressStreet HolderRoleUSRealmAddressCity HolderRoleUSRealmAddressStreetAddressLine HolderRoleUSRealmAddressUse"/>
-      <details key="constraints.validation.warning" value="HolderRoleAddr HolderRoleUSRealmAddressCountry HolderRoleUSRealmAddressPostalCode HolderRoleUSRealmAddressState HolderRoleUSRealmAddressUseP"/>
-      <details key="constraints.validation.query" value="HolderRoleUSRealmAddressStreet HolderRoleUSRealmAddressCity HolderRoleUSRealmAddressCountry HolderRoleUSRealmAddressPostalCode HolderRoleUSRealmAddressState HolderRoleUSRealmAddressStreetAddressLine HolderRoleUSRealmAddressUseP HolderRoleUSRealmAddressUse"/>
-      <details key="constraints.validation.dependOn.HolderRoleUSRealmAddressUse" value="HolderRoleUSRealmAddressUseP"/>
+      <details key="constraints.validation.error" value="HolderRoleId PolicyActivityHolderHolderRoleUSRealmAddressStreet PolicyActivityHolderHolderRoleUSRealmAddressCity PolicyActivityHolderHolderRoleUSRealmAddressStreetAddressLine PolicyActivityHolderHolderRoleUSRealmAddressUse"/>
+      <details key="constraints.validation.warning" value="HolderRoleAddr PolicyActivityHolderHolderRoleUSRealmAddressCountry PolicyActivityHolderHolderRoleUSRealmAddressPostalCode PolicyActivityHolderHolderRoleUSRealmAddressState PolicyActivityHolderHolderRoleUSRealmAddressUseP"/>
+      <details key="constraints.validation.query" value="PolicyActivityHolderHolderRoleUSRealmAddressStreet PolicyActivityHolderHolderRoleUSRealmAddressCity PolicyActivityHolderHolderRoleUSRealmAddressCountry PolicyActivityHolderHolderRoleUSRealmAddressPostalCode PolicyActivityHolderHolderRoleUSRealmAddressState PolicyActivityHolderHolderRoleUSRealmAddressStreetAddressLine PolicyActivityHolderHolderRoleUSRealmAddressUseP PolicyActivityHolderHolderRoleUSRealmAddressUse"/>
+      <details key="constraints.validation.dependOn.PolicyActivityHolderHolderRoleUSRealmAddressUse"
+          value="HolderRoleUSRealmAddressUseP"/>
     </eAnnotations>
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolPolicyActivityEntryRelationship">
       <details key="constraints.validation.error" value="EntryRelationshipTargetActActivity EntryRelationshipDescriptionCoveragePlan EntryRelationshipTypeCode"/>
@@ -16602,12 +16603,12 @@
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="MedicationInformation" eSuperTypes="urn:hl7-org:v3#//ManufacturedProduct">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
-      <details key="constraints.validation.error" value="MedicationInformationTemplateId MedicationInformationClassCode MedicationInformationManufacturedMaterial MedicationInformationMedicationInformationManufacturedMaterialCode"/>
+      <details key="constraints.validation.error" value="MedicationInformationTemplateId MedicationInformationClassCode MedicationInformationManufacturedMaterial MedicationInformationManufacturedMaterialCode"/>
       <details key="templateId.root" value="2.16.840.1.113883.10.20.22.4.23"/>
-      <details key="constraints.validation.info" value="MedicationInformationId MedicationInformationManufacturerOrganization MedicationInformationMedicationInformationManufacturedMaterialCodeTranslation"/>
+      <details key="constraints.validation.info" value="MedicationInformationId MedicationInformationManufacturerOrganization MedicationInformationManufacturedMaterialCodeTranslation"/>
       <details key="classCode" value="MANU"/>
-      <details key="constraints.validation.warning" value="MedicationInformationMedicationInformationManufacturedMaterialCodeOriginalText MedicationInformationMedicationInformationManufacturedMaterialReference MedicationInformationMedicationInformationManufacturedMaterialOriginalTextReferenceValue"/>
-      <details key="constraints.validation.query" value="MedicationInformationMedicationInformationManufacturedMaterialCodeOriginalText MedicationInformationMedicationInformationManufacturedMaterialReference MedicationInformationMedicationInformationManufacturedMaterialOriginalTextReferenceValue MedicationInformationMedicationInformationManufacturedMaterialCodeTranslation MedicationInformationMedicationInformationManufacturedMaterialCode"/>
+      <details key="constraints.validation.warning" value="MedicationInformationManufacturedMaterialCodeOriginalText MedicationInformationManufacturedMaterialReference MedicationInformationManufacturedMaterialOriginalTextReferenceValue"/>
+      <details key="constraints.validation.query" value="MedicationInformationManufacturedMaterialCodeOriginalText MedicationInformationManufacturedMaterialReference MedicationInformationManufacturedMaterialOriginalTextReferenceValue MedicationInformationManufacturedMaterialCodeTranslation MedicationInformationManufacturedMaterialCode"/>
     </eAnnotations>
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolMedicationInformationMedicationInformationManufacturedMaterial">
       <details key="constraints.validation.warning" value="MedicationInformationManufacturedMaterialCodeOriginalText MedicationInformationManufacturedMaterialReference MedicationInformationManufacturedMaterialOriginalTextReferenceValue"/>
@@ -16661,7 +16662,7 @@
         </eGenericType>
       </eParameters>
     </eOperations>
-    <eOperations name="MedicationInformationMedicationInformationManufacturedMaterialCodeOriginalText"
+    <eOperations name="MedicationInformationManufacturedMaterialCodeOriginalText"
         eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
       <eParameters name="context">
@@ -16671,7 +16672,16 @@
         </eGenericType>
       </eParameters>
     </eOperations>
-    <eOperations name="MedicationInformationMedicationInformationManufacturedMaterialReference"
+    <eOperations name="MedicationInformationManufacturedMaterialReference" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
+      <eParameters name="context">
+        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations name="MedicationInformationManufacturedMaterialOriginalTextReferenceValue"
         eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
       <eParameters name="context">
@@ -16681,8 +16691,7 @@
         </eGenericType>
       </eParameters>
     </eOperations>
-    <eOperations name="MedicationInformationMedicationInformationManufacturedMaterialOriginalTextReferenceValue"
-        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+    <eOperations name="MedicationInformationManufacturedMaterialCodeTranslation" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
       <eParameters name="context">
         <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
@@ -16691,18 +16700,7 @@
         </eGenericType>
       </eParameters>
     </eOperations>
-    <eOperations name="MedicationInformationMedicationInformationManufacturedMaterialCodeTranslation"
-        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
-      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
-      <eParameters name="context">
-        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
-          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
-          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
-        </eGenericType>
-      </eParameters>
-    </eOperations>
-    <eOperations name="MedicationInformationMedicationInformationManufacturedMaterialCode"
-        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+    <eOperations name="MedicationInformationManufacturedMaterialCode" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
       <eParameters name="context">
         <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
@@ -17932,12 +17930,12 @@
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="ImmunizationMedicationInformation" eSuperTypes="urn:hl7-org:v3#//ManufacturedProduct">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
-      <details key="constraints.validation.error" value="ImmunizationMedicationInformationTemplateId ImmunizationMedicationInformationClassCode ImmunizationMedicationInformationManufacturedMaterial ImmunizationMedicationInformationImmunizationMedicationInformationManufacturedMaterialCode"/>
+      <details key="constraints.validation.error" value="ImmunizationMedicationInformationTemplateId ImmunizationMedicationInformationClassCode ImmunizationMedicationInformationManufacturedMaterial ImmunizationMedicationInformationManufacturedMaterialCode"/>
       <details key="templateId.root" value="2.16.840.1.113883.10.20.22.4.54"/>
       <details key="classCode" value="MANU"/>
-      <details key="constraints.validation.info" value="ImmunizationMedicationInformationId ImmunizationMedicationInformationImmunizationMedicationInformationManufacturedMaterialCodeTranslation"/>
-      <details key="constraints.validation.warning" value="ImmunizationMedicationInformationManufacturerOrganization ImmunizationMedicationInformationImmunizationMedicationInformationManufacturedMaterialCodeOriginalText ImmunizationMedicationInformationImmunizationMedicationInformationManufacturedMaterialOriginalTextReference ImmunizationMedicationInformationImmunizationMedicationInformationManufacturedMaterialTextReferenceValue ImmunizationMedicationInformationImmunizationMedicationInformationManufacturedMaterialLotNumberText"/>
-      <details key="constraints.validation.query" value="ImmunizationMedicationInformationImmunizationMedicationInformationManufacturedMaterialCodeOriginalText ImmunizationMedicationInformationImmunizationMedicationInformationManufacturedMaterialOriginalTextReference ImmunizationMedicationInformationImmunizationMedicationInformationManufacturedMaterialTextReferenceValue ImmunizationMedicationInformationImmunizationMedicationInformationManufacturedMaterialCodeTranslation ImmunizationMedicationInformationImmunizationMedicationInformationManufacturedMaterialCode ImmunizationMedicationInformationImmunizationMedicationInformationManufacturedMaterialLotNumberText"/>
+      <details key="constraints.validation.info" value="ImmunizationMedicationInformationId ImmunizationMedicationInformationManufacturedMaterialCodeTranslation"/>
+      <details key="constraints.validation.warning" value="ImmunizationMedicationInformationManufacturerOrganization ImmunizationMedicationInformationManufacturedMaterialCodeOriginalText ImmunizationMedicationInformationManufacturedMaterialOriginalTextReference ImmunizationMedicationInformationManufacturedMaterialTextReferenceValue ImmunizationMedicationInformationManufacturedMaterialLotNumberText"/>
+      <details key="constraints.validation.query" value="ImmunizationMedicationInformationManufacturedMaterialCodeOriginalText ImmunizationMedicationInformationManufacturedMaterialOriginalTextReference ImmunizationMedicationInformationManufacturedMaterialTextReferenceValue ImmunizationMedicationInformationManufacturedMaterialCodeTranslation ImmunizationMedicationInformationManufacturedMaterialCode ImmunizationMedicationInformationManufacturedMaterialLotNumberText"/>
     </eAnnotations>
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolImmunizationMedicationInformationImmunizationMedicationInformationManufacturedMaterial">
       <details key="constraints.validation.warning" value="ImmunizationMedicationInformationManufacturedMaterialCodeOriginalText ImmunizationMedicationInformationManufacturedMaterialOriginalTextReference ImmunizationMedicationInformationManufacturedMaterialTextReferenceValue ImmunizationMedicationInformationManufacturedMaterialLotNumberText"/>
@@ -17992,7 +17990,7 @@
         </eGenericType>
       </eParameters>
     </eOperations>
-    <eOperations name="ImmunizationMedicationInformationImmunizationMedicationInformationManufacturedMaterialCodeOriginalText"
+    <eOperations name="ImmunizationMedicationInformationManufacturedMaterialCodeOriginalText"
         eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
       <eParameters name="context">
@@ -18002,7 +18000,7 @@
         </eGenericType>
       </eParameters>
     </eOperations>
-    <eOperations name="ImmunizationMedicationInformationImmunizationMedicationInformationManufacturedMaterialOriginalTextReference"
+    <eOperations name="ImmunizationMedicationInformationManufacturedMaterialOriginalTextReference"
         eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
       <eParameters name="context">
@@ -18012,7 +18010,7 @@
         </eGenericType>
       </eParameters>
     </eOperations>
-    <eOperations name="ImmunizationMedicationInformationImmunizationMedicationInformationManufacturedMaterialTextReferenceValue"
+    <eOperations name="ImmunizationMedicationInformationManufacturedMaterialTextReferenceValue"
         eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
       <eParameters name="context">
@@ -18022,7 +18020,7 @@
         </eGenericType>
       </eParameters>
     </eOperations>
-    <eOperations name="ImmunizationMedicationInformationImmunizationMedicationInformationManufacturedMaterialCodeTranslation"
+    <eOperations name="ImmunizationMedicationInformationManufacturedMaterialCodeTranslation"
         eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
       <eParameters name="context">
@@ -18032,7 +18030,7 @@
         </eGenericType>
       </eParameters>
     </eOperations>
-    <eOperations name="ImmunizationMedicationInformationImmunizationMedicationInformationManufacturedMaterialCode"
+    <eOperations name="ImmunizationMedicationInformationManufacturedMaterialCode"
         eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
       <eParameters name="context">
@@ -18042,7 +18040,7 @@
         </eGenericType>
       </eParameters>
     </eOperations>
-    <eOperations name="ImmunizationMedicationInformationImmunizationMedicationInformationManufacturedMaterialLotNumberText"
+    <eOperations name="ImmunizationMedicationInformationManufacturedMaterialLotNumberText"
         eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
       <eParameters name="context">
@@ -21167,8 +21165,8 @@
       <details key="constraints.validation.error" value="DocumentationOfServiceEvent"/>
     </eAnnotations>
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolOperativeNoteDocumentationOfServiceEvent">
-      <details key="constraints.validation.error" value="ServiceEventProcedureCodes ServiceEventEffectiveTimeHasLow ServiceEventEffectiveTimeHasHighWhenNoWidth ServiceEventEffectiveTimeNoHighIfWidth ServiceEventCode ServiceEventEffectiveTime ServiceEventPrimaryPerformer ServiceEventPrimaryPerformerAssignedEntityCode ServiceEventPrimaryPerformerAssignedEntityCodeP ServiceEventPrimaryPerformerTypeCode ServiceEventPrimaryPerformerAssignedEntity"/>
-      <details key="constraints.validation.query" value="ServiceEventPrimaryPerformerAssignedEntityCode ServiceEventPrimaryPerformerAssignedEntityCodeP ServiceEventPrimaryPerformerTypeCode ServiceEventPrimaryPerformerAssignedEntity"/>
+      <details key="constraints.validation.error" value="ServiceEventProcedureCodes ServiceEventEffectiveTimeHasLow ServiceEventEffectiveTimeHasHighWhenNoWidth ServiceEventEffectiveTimeNoHighIfWidth ServiceEventCode ServiceEventEffectiveTime ServiceEventPrimaryPerformer OperativeNoteDocumentationOfServiceEventPrimaryPerformerAssignedEntityCode OperativeNoteDocumentationOfServiceEventPrimaryPerformerAssignedEntityCodeP OperativeNoteDocumentationOfServiceEventPrimaryPerformerTypeCode OperativeNoteDocumentationOfServiceEventPrimaryPerformerAssignedEntity"/>
+      <details key="constraints.validation.query" value="OperativeNoteDocumentationOfServiceEventPrimaryPerformerAssignedEntityCode OperativeNoteDocumentationOfServiceEventPrimaryPerformerAssignedEntityCodeP OperativeNoteDocumentationOfServiceEventPrimaryPerformerTypeCode OperativeNoteDocumentationOfServiceEventPrimaryPerformerAssignedEntity"/>
     </eAnnotations>
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolOperativeNoteDocumentationOfServiceEventPrimaryPerformer">
       <details key="typeCode" value="PPRF"/>
@@ -21520,9 +21518,9 @@
       <details key="constraints.validation.warning" value="ComponentOfEncompassingEncounter5"/>
     </eAnnotations>
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolProcedureNoteComponentOfEncompassingEncounter5">
-      <details key="constraints.validation.error" value="EncompassingEncounter5Code EncompassingEncounter5Location EncompassingEncounter5EncounterParticipantTypeCode"/>
+      <details key="constraints.validation.error" value="EncompassingEncounter5Code EncompassingEncounter5Location ProcedureNoteComponentOfEncompassingEncounter5EncounterParticipantTypeCode"/>
       <details key="constraints.validation.info" value="EncompassingEncounter5EncounterParticipant"/>
-      <details key="constraints.validation.query" value="EncompassingEncounter5EncounterParticipantTypeCode"/>
+      <details key="constraints.validation.query" value="ProcedureNoteComponentOfEncompassingEncounter5EncounterParticipantTypeCode"/>
     </eAnnotations>
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolProcedureNoteComponentOfEncompassingEncounter5Location">
       <details key="constraints.validation.error" value="LocationHealthCareFacility"/>
@@ -21538,10 +21536,10 @@
       <details key="constraints.validation.error" value="DocumentationOfServiceEvent1"/>
     </eAnnotations>
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolProcedureNoteDocumentationOfServiceEvent1">
-      <details key="constraints.validation.error" value="ServiceEvent1ProcedureCodes ServiceEvent1EffectiveTimeHasLow ServiceEvent1EffectiveTimeHasHighWhenNoWidth ServiceEvent1EffectiveTimeNoHighIfWidth ServiceEvent1Code ServiceEvent1EffectiveTime ServiceEvent1PrimaryPerformer ServiceEvent1PrimaryPerformerAssignedEntityCode ServiceEvent1PrimaryPerformerTypeCode ServiceEvent1PrimaryPerformerAssignedEntity"/>
-      <details key="constraints.validation.warning" value="ServiceEvent1PrimaryPerformerAssignedEntityCodeP"/>
-      <details key="constraints.validation.query" value="ServiceEvent1PrimaryPerformerAssignedEntityCodeP ServiceEvent1PrimaryPerformerAssignedEntityCode ServiceEvent1PrimaryPerformerTypeCode ServiceEvent1PrimaryPerformerAssignedEntity"/>
-      <details key="constraints.validation.dependOn.ServiceEvent1PrimaryPerformerAssignedEntityCode"
+      <details key="constraints.validation.error" value="ServiceEvent1ProcedureCodes ServiceEvent1EffectiveTimeHasLow ServiceEvent1EffectiveTimeHasHighWhenNoWidth ServiceEvent1EffectiveTimeNoHighIfWidth ServiceEvent1Code ServiceEvent1EffectiveTime ServiceEvent1PrimaryPerformer ProcedureNoteDocumentationOfServiceEvent1PrimaryPerformerAssignedEntityCode ProcedureNoteDocumentationOfServiceEvent1PrimaryPerformerTypeCode ProcedureNoteDocumentationOfServiceEvent1PrimaryPerformerAssignedEntity"/>
+      <details key="constraints.validation.warning" value="ProcedureNoteDocumentationOfServiceEvent1PrimaryPerformerAssignedEntityCodeP"/>
+      <details key="constraints.validation.query" value="ProcedureNoteDocumentationOfServiceEvent1PrimaryPerformerAssignedEntityCodeP ProcedureNoteDocumentationOfServiceEvent1PrimaryPerformerAssignedEntityCode ProcedureNoteDocumentationOfServiceEvent1PrimaryPerformerTypeCode ProcedureNoteDocumentationOfServiceEvent1PrimaryPerformerAssignedEntity"/>
+      <details key="constraints.validation.dependOn.ProcedureNoteDocumentationOfServiceEvent1PrimaryPerformerAssignedEntityCode"
           value="ServiceEvent1PrimaryPerformerAssignedEntityCodeP"/>
     </eAnnotations>
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolProcedureNoteDocumentationOfServiceEvent1PrimaryPerformer">

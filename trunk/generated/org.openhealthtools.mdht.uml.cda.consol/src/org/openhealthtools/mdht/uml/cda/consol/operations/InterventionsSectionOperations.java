@@ -70,6 +70,7 @@ public class InterventionsSectionOperations extends SectionOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_INTERVENTIONS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -82,6 +83,7 @@ public class InterventionsSectionOperations extends SectionOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateInterventionsSectionTemplateId(InterventionsSection interventionsSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -129,6 +131,7 @@ public class InterventionsSectionOperations extends SectionOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_INTERVENTIONS_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -141,6 +144,7 @@ public class InterventionsSectionOperations extends SectionOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateInterventionsSectionCode(InterventionsSection interventionsSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -170,7 +174,7 @@ public class InterventionsSectionOperations extends SectionOperations {
 	/**
 	* The cached OCL expression body for the '{@link #validateInterventionsSectionCodeP(InterventionsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Interventions Section Code P</em>}' operation.
 	* <!-- begin-user-doc -->
-	* <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	* @see #validateInterventionsSectionCodeP(InterventionsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	* @generated
 	* @ordered
@@ -243,6 +247,7 @@ public class InterventionsSectionOperations extends SectionOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_INTERVENTIONS_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -255,6 +260,7 @@ public class InterventionsSectionOperations extends SectionOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateInterventionsSectionText(InterventionsSection interventionsSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -299,6 +305,7 @@ public class InterventionsSectionOperations extends SectionOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_INTERVENTIONS_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -311,6 +318,7 @@ public class InterventionsSectionOperations extends SectionOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateInterventionsSectionTitle(InterventionsSection interventionsSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 

@@ -77,6 +77,7 @@ public class ProductInstanceOperations extends ParticipantRoleOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_PRODUCT_INSTANCE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -89,6 +90,7 @@ public class ProductInstanceOperations extends ParticipantRoleOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateProductInstanceTemplateId(ProductInstance productInstance,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -133,6 +135,7 @@ public class ProductInstanceOperations extends ParticipantRoleOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_PRODUCT_INSTANCE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -145,6 +148,7 @@ public class ProductInstanceOperations extends ParticipantRoleOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateProductInstanceClassCode(ProductInstance productInstance,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -189,6 +193,7 @@ public class ProductInstanceOperations extends ParticipantRoleOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_PRODUCT_INSTANCE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -201,6 +206,7 @@ public class ProductInstanceOperations extends ParticipantRoleOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateProductInstanceId(ProductInstance productInstance, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
@@ -244,6 +250,7 @@ public class ProductInstanceOperations extends ParticipantRoleOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_PRODUCT_INSTANCE_SCOPING_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -256,6 +263,7 @@ public class ProductInstanceOperations extends ParticipantRoleOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateProductInstanceScopingEntity(ProductInstance productInstance,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -300,6 +308,7 @@ public class ProductInstanceOperations extends ParticipantRoleOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_PRODUCT_INSTANCE_PLAYING_DEVICE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -312,6 +321,7 @@ public class ProductInstanceOperations extends ParticipantRoleOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateProductInstancePlayingDevice(ProductInstance productInstance,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -341,7 +351,7 @@ public class ProductInstanceOperations extends ParticipantRoleOperations {
 	/**
 	* The cached OCL expression body for the '{@link #validateProductInstanceScopingEntityId(ProductInstance, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Product Instance Scoping Entity Id</em>}' operation.
 	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	* <!-- end-user-doc -->
 	* @see #validateProductInstanceScopingEntityId(ProductInstance, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	* @generated
 	* @ordered
@@ -349,26 +359,26 @@ public class ProductInstanceOperations extends ParticipantRoleOperations {
 	protected static final String VALIDATE_PRODUCT_INSTANCE_SCOPING_ENTITY_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.scopingEntity->excluding(null)->reject((id->isEmpty() or id->exists(element | element.isNullFlavorUndefined())) implies (not id->isEmpty()))";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateProductInstanceScopingEntityId(ProductInstance, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Product Instance Scoping Entity Id</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateProductInstanceScopingEntityId(ProductInstance, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Product Instance Scoping Entity Id</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateProductInstanceScopingEntityId(ProductInstance, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateProductInstanceScopingEntityId(ProductInstance, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 
 	protected static Query<?, ?, ?> VALIDATE_PRODUCT_INSTANCE_SCOPING_ENTITY_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param productInstance The receiving '<em><b>Product Instance</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param productInstance The receiving '<em><b>Product Instance</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 	@SuppressWarnings("unchecked")
 	public static boolean validateProductInstanceScopingEntityId(ProductInstance productInstance,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
@@ -402,36 +412,36 @@ public class ProductInstanceOperations extends ParticipantRoleOperations {
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateProductInstancePlayingDeviceCode(ProductInstance, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Product Instance Playing Device Code</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateProductInstancePlayingDeviceCode(ProductInstance, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Product Instance Playing Device Code</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateProductInstancePlayingDeviceCode(ProductInstance, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateProductInstancePlayingDeviceCode(ProductInstance, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_PRODUCT_INSTANCE_PLAYING_DEVICE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.playingDevice->excluding(null)->reject((code.oclIsUndefined() or code.isNullFlavorUndefined()) implies (not code.oclIsUndefined()))";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateProductInstancePlayingDeviceCode(ProductInstance, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Product Instance Playing Device Code</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateProductInstancePlayingDeviceCode(ProductInstance, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Product Instance Playing Device Code</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateProductInstancePlayingDeviceCode(ProductInstance, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateProductInstancePlayingDeviceCode(ProductInstance, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 
 	protected static Query<?, ?, ?> VALIDATE_PRODUCT_INSTANCE_PLAYING_DEVICE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param productInstance The receiving '<em><b>Product Instance</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param productInstance The receiving '<em><b>Product Instance</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 	@SuppressWarnings("unchecked")
 	public static boolean validateProductInstancePlayingDeviceCode(ProductInstance productInstance,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {

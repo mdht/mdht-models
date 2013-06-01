@@ -27,7 +27,7 @@ import org.openhealthtools.mdht.uml.cda.Supply;
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getMedicationDispense()
  * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='MedicationDispenseTemplateId MedicationDispenseContainsMedicationOrImmunization MedicationDispenseClassCode MedicationDispenseId MedicationDispenseMoodCode MedicationDispenseStatusCode MedicationDispensePerformerMedicationDispenseAssignedEntityUSRealmAddressStreet MedicationDispensePerformerMedicationDispenseAssignedEntityUSRealmAddressCity MedicationDispensePerformerMedicationDispenseAssignedEntityUSRealmAddressStreetAddressLine MedicationDispensePerformerMedicationDispenseAssignedEntityUSRealmAddressUse MedicationDispensePerformerMedicationDispenseAssignedEntity' templateId.root='2.16.840.1.113883.10.20.22.4.18' classCode='SPLY' constraints.validation.warning='MedicationDispenseEffectiveTime MedicationDispenseRepeatNumber MedicationDispenseQuantity MedicationDispensePerformerMedicationDispenseAssignedEntityUSRealmAddressCountry MedicationDispensePerformerMedicationDispenseAssignedEntityUSRealmAddressPostalCode MedicationDispensePerformerMedicationDispenseAssignedEntityUSRealmAddressState MedicationDispensePerformerMedicationDispenseAssignedEntityUSRealmAddressUseP MedicationDispensePerformerMedicationDispenseAssignedEntityAddr' moodCode='EVN' constraints.validation.info='MedicationDispenseMedicationSupplyOrder MedicationDispensePerformer' constraints.validation.query='MedicationDispensePerformerMedicationDispenseAssignedEntityUSRealmAddressStreet MedicationDispensePerformerMedicationDispenseAssignedEntityUSRealmAddressCity MedicationDispensePerformerMedicationDispenseAssignedEntityUSRealmAddressCountry MedicationDispensePerformerMedicationDispenseAssignedEntityUSRealmAddressPostalCode MedicationDispensePerformerMedicationDispenseAssignedEntityUSRealmAddressState MedicationDispensePerformerMedicationDispenseAssignedEntityUSRealmAddressStreetAddressLine MedicationDispensePerformerMedicationDispenseAssignedEntityUSRealmAddressUseP MedicationDispensePerformerMedicationDispenseAssignedEntityUSRealmAddressUse MedicationDispensePerformerMedicationDispenseAssignedEntityAddr MedicationDispensePerformerMedicationDispenseAssignedEntity' constraints.validation.dependOn.MedicationDispensePerformerMedicationDispenseAssignedEntityUSRealmAddressUse='MedicationDispensePerformerMedicationDispenseAssignedEntityUSRealmAddressUseP'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolMedicationDispensePerformer constraints.validation.error='PerformerMedicationDispenseAssignedEntity'"
- *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolMedicationDispensePerformerMedicationDispenseAssignedEntity constraints.validation.warning='MedicationDispenseAssignedEntityAddr MedicationDispenseAssignedEntityUSRealmAddressCountry MedicationDispenseAssignedEntityUSRealmAddressPostalCode MedicationDispenseAssignedEntityUSRealmAddressState MedicationDispenseAssignedEntityUSRealmAddressUseP' constraints.validation.error='MedicationDispenseAssignedEntityUSRealmAddressStreet MedicationDispenseAssignedEntityUSRealmAddressCity MedicationDispenseAssignedEntityUSRealmAddressStreetAddressLine MedicationDispenseAssignedEntityUSRealmAddressUse' constraints.validation.query='MedicationDispenseAssignedEntityUSRealmAddressStreet MedicationDispenseAssignedEntityUSRealmAddressCity MedicationDispenseAssignedEntityUSRealmAddressCountry MedicationDispenseAssignedEntityUSRealmAddressPostalCode MedicationDispenseAssignedEntityUSRealmAddressState MedicationDispenseAssignedEntityUSRealmAddressStreetAddressLine MedicationDispenseAssignedEntityUSRealmAddressUseP MedicationDispenseAssignedEntityUSRealmAddressUse' constraints.validation.dependOn.MedicationDispenseAssignedEntityUSRealmAddressUse='MedicationDispenseAssignedEntityUSRealmAddressUseP'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolMedicationDispensePerformerMedicationDispenseAssignedEntity constraints.validation.warning='MedicationDispenseAssignedEntityAddr MedicationDispensePerformerMedicationDispenseAssignedEntityUSRealmAddressCountry MedicationDispensePerformerMedicationDispenseAssignedEntityUSRealmAddressPostalCode MedicationDispensePerformerMedicationDispenseAssignedEntityUSRealmAddressState MedicationDispensePerformerMedicationDispenseAssignedEntityUSRealmAddressUseP' constraints.validation.error='MedicationDispensePerformerMedicationDispenseAssignedEntityUSRealmAddressStreet MedicationDispensePerformerMedicationDispenseAssignedEntityUSRealmAddressCity MedicationDispensePerformerMedicationDispenseAssignedEntityUSRealmAddressStreetAddressLine MedicationDispensePerformerMedicationDispenseAssignedEntityUSRealmAddressUse' constraints.validation.query='MedicationDispensePerformerMedicationDispenseAssignedEntityUSRealmAddressStreet MedicationDispensePerformerMedicationDispenseAssignedEntityUSRealmAddressCity MedicationDispensePerformerMedicationDispenseAssignedEntityUSRealmAddressCountry MedicationDispensePerformerMedicationDispenseAssignedEntityUSRealmAddressPostalCode MedicationDispensePerformerMedicationDispenseAssignedEntityUSRealmAddressState MedicationDispensePerformerMedicationDispenseAssignedEntityUSRealmAddressStreetAddressLine MedicationDispensePerformerMedicationDispenseAssignedEntityUSRealmAddressUseP MedicationDispensePerformerMedicationDispenseAssignedEntityUSRealmAddressUse' constraints.validation.dependOn.MedicationDispensePerformerMedicationDispenseAssignedEntityUSRealmAddressUse='MedicationDispenseAssignedEntityUSRealmAddressUseP'"
  * @generated
  */
 public interface MedicationDispense extends Supply {
@@ -154,7 +154,7 @@ public interface MedicationDispense extends Supply {
 
 	/**
 	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	* <!-- end-user-doc -->
 	* <!-- begin-model-doc -->
 	* @param diagnostics The chain of diagnostics to which problems are to be appended.
 	* @param context The cache of context-specific information.
@@ -166,132 +166,132 @@ public interface MedicationDispense extends Supply {
 			DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.performer->excluding(null).assignedEntity->excluding(null).addr->excluding(null)->select(isNullFlavorUndefined())->reject( ( isNullFlavorUndefined() implies ((city->isEmpty() or city->exists(element | element.isNullFlavorUndefined())) implies (city->size() = 1) )))'"
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.performer->excluding(null).assignedEntity->excluding(null).addr->excluding(null)->select(isNullFlavorUndefined())->reject( ( isNullFlavorUndefined() implies ((city->isEmpty() or city->exists(element | element.isNullFlavorUndefined())) implies (city->size() = 1) )))'"
+	 * @generated
+	 */
 	boolean validateMedicationDispensePerformerMedicationDispenseAssignedEntityUSRealmAddressCity(
 			DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.performer->excluding(null).assignedEntity->excluding(null).addr->excluding(null)->select(isNullFlavorUndefined())->reject( ( isNullFlavorUndefined() implies ((country->isEmpty() or country->exists(element | element.isNullFlavorUndefined())) implies (not country->isEmpty()) )))'"
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.performer->excluding(null).assignedEntity->excluding(null).addr->excluding(null)->select(isNullFlavorUndefined())->reject( ( isNullFlavorUndefined() implies ((country->isEmpty() or country->exists(element | element.isNullFlavorUndefined())) implies (not country->isEmpty()) )))'"
+	 * @generated
+	 */
 	boolean validateMedicationDispensePerformerMedicationDispenseAssignedEntityUSRealmAddressCountry(
 			DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.performer->excluding(null).assignedEntity->excluding(null).addr->excluding(null)->select(isNullFlavorUndefined())->reject( ( isNullFlavorUndefined() implies ((postalCode->isEmpty() or postalCode->exists(element | element.isNullFlavorUndefined())) implies (not postalCode->isEmpty()) )))'"
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.performer->excluding(null).assignedEntity->excluding(null).addr->excluding(null)->select(isNullFlavorUndefined())->reject( ( isNullFlavorUndefined() implies ((postalCode->isEmpty() or postalCode->exists(element | element.isNullFlavorUndefined())) implies (not postalCode->isEmpty()) )))'"
+	 * @generated
+	 */
 	boolean validateMedicationDispensePerformerMedicationDispenseAssignedEntityUSRealmAddressPostalCode(
 			DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.performer->excluding(null).assignedEntity->excluding(null).addr->excluding(null)->select(isNullFlavorUndefined())->reject( ( isNullFlavorUndefined() implies ((state->isEmpty() or state->exists(element | element.isNullFlavorUndefined())) implies (not state->isEmpty()) )))'"
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.performer->excluding(null).assignedEntity->excluding(null).addr->excluding(null)->select(isNullFlavorUndefined())->reject( ( isNullFlavorUndefined() implies ((state->isEmpty() or state->exists(element | element.isNullFlavorUndefined())) implies (not state->isEmpty()) )))'"
+	 * @generated
+	 */
 	boolean validateMedicationDispensePerformerMedicationDispenseAssignedEntityUSRealmAddressState(
 			DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.performer->excluding(null).assignedEntity->excluding(null).addr->excluding(null)->select(isNullFlavorUndefined())->reject( ( isNullFlavorUndefined() implies ((streetAddressLine->isEmpty() or streetAddressLine->exists(element | element.isNullFlavorUndefined())) implies (not streetAddressLine->isEmpty()) )))'"
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.performer->excluding(null).assignedEntity->excluding(null).addr->excluding(null)->select(isNullFlavorUndefined())->reject( ( isNullFlavorUndefined() implies ((streetAddressLine->isEmpty() or streetAddressLine->exists(element | element.isNullFlavorUndefined())) implies (not streetAddressLine->isEmpty()) )))'"
+	 * @generated
+	 */
 	boolean validateMedicationDispensePerformerMedicationDispenseAssignedEntityUSRealmAddressStreetAddressLine(
 			DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.performer->excluding(null).assignedEntity->excluding(null).addr->excluding(null)->select(isNullFlavorUndefined())->reject( ( isNullFlavorUndefined() implies (not use->isEmpty() )))'"
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.performer->excluding(null).assignedEntity->excluding(null).addr->excluding(null)->select(isNullFlavorUndefined())->reject( ( isNullFlavorUndefined() implies (not use->isEmpty() )))'"
+	 * @generated
+	 */
 	boolean validateMedicationDispensePerformerMedicationDispenseAssignedEntityUSRealmAddressUseP(
 			DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.performer->excluding(null).assignedEntity->excluding(null).addr->excluding(null)->select(isNullFlavorUndefined())->reject( ( isNullFlavorUndefined() implies (use->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(vocab::PostalAddressUse) and \nlet value : vocab::PostalAddressUse = element.oclAsType(vocab::PostalAddressUse) in \nvalue = vocab::PostalAddressUse::BAD or value = vocab::PostalAddressUse::DIR or value = vocab::PostalAddressUse::H or value = vocab::PostalAddressUse::HP or value = vocab::PostalAddressUse::HV or value = vocab::PostalAddressUse::PHYS or value = vocab::PostalAddressUse::PST or value = vocab::PostalAddressUse::PUB or value = vocab::PostalAddressUse::TMP or value = vocab::PostalAddressUse::WP) )))'"
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.performer->excluding(null).assignedEntity->excluding(null).addr->excluding(null)->select(isNullFlavorUndefined())->reject( ( isNullFlavorUndefined() implies (use->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(vocab::PostalAddressUse) and \nlet value : vocab::PostalAddressUse = element.oclAsType(vocab::PostalAddressUse) in \nvalue = vocab::PostalAddressUse::BAD or value = vocab::PostalAddressUse::DIR or value = vocab::PostalAddressUse::H or value = vocab::PostalAddressUse::HP or value = vocab::PostalAddressUse::HV or value = vocab::PostalAddressUse::PHYS or value = vocab::PostalAddressUse::PST or value = vocab::PostalAddressUse::PUB or value = vocab::PostalAddressUse::TMP or value = vocab::PostalAddressUse::WP) )))'"
+	 * @generated
+	 */
 	boolean validateMedicationDispensePerformerMedicationDispenseAssignedEntityUSRealmAddressUse(
 			DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
-	* <!-- begin-user-doc -->
-	* <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.performer->excluding(null).assignedEntity->excluding(null)->reject((addr->isEmpty() or addr->exists(element | element.isNullFlavorUndefined())) implies (not addr->isEmpty()))'"
-	* @generated
-	*/
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.performer->excluding(null).assignedEntity->excluding(null)->reject((addr->isEmpty() or addr->exists(element | element.isNullFlavorUndefined())) implies (not addr->isEmpty()))'"
+	 * @generated
+	 */
 	boolean validateMedicationDispensePerformerMedicationDispenseAssignedEntityAddr(DiagnosticChain diagnostics,
 			Map<Object, Object> context);
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.performer->excluding(null)->reject(assignedEntity->one(assignedEntity : cda::AssignedEntity | not assignedEntity.oclIsUndefined() and assignedEntity.oclIsKindOf(cda::AssignedEntity)))'"
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.performer->excluding(null)->reject(assignedEntity->one(assignedEntity : cda::AssignedEntity | not assignedEntity.oclIsUndefined() and assignedEntity.oclIsKindOf(cda::AssignedEntity)))'"
+	 * @generated
+	 */
 	boolean validateMedicationDispensePerformerMedicationDispenseAssignedEntity(DiagnosticChain diagnostics,
 			Map<Object, Object> context);
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.supply.oclIsUndefined() and entryRelationship.supply.oclIsKindOf(consol::MedicationSupplyOrder) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::REFR)'"
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.supply.oclIsUndefined() and entryRelationship.supply.oclIsKindOf(consol::MedicationSupplyOrder) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::REFR)'"
+	 * @generated
+	 */
 	boolean validateMedicationDispenseMedicationSupplyOrder(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**

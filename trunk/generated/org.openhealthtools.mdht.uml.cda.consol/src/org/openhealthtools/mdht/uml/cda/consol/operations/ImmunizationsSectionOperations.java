@@ -62,7 +62,7 @@ public class ImmunizationsSectionOperations extends ImmunizationsSectionEntriesO
 	/**
 	* The cached OCL expression body for the '{@link #validateImmunizationsSectionCodeP(ImmunizationsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Immunizations Section Code P</em>}' operation.
 	* <!-- begin-user-doc -->
-	* <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	* @see #validateImmunizationsSectionCodeP(ImmunizationsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	* @generated
 	* @ordered
@@ -215,6 +215,7 @@ public class ImmunizationsSectionOperations extends ImmunizationsSectionEntriesO
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_IMMUNIZATIONS_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -227,6 +228,7 @@ public class ImmunizationsSectionOperations extends ImmunizationsSectionEntriesO
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateImmunizationsSectionTitle(ImmunizationsSection immunizationsSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -271,6 +273,7 @@ public class ImmunizationsSectionOperations extends ImmunizationsSectionEntriesO
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_IMMUNIZATIONS_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -283,6 +286,7 @@ public class ImmunizationsSectionOperations extends ImmunizationsSectionEntriesO
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateImmunizationsSectionText(ImmunizationsSection immunizationsSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -327,6 +331,7 @@ public class ImmunizationsSectionOperations extends ImmunizationsSectionEntriesO
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_IMMUNIZATIONS_SECTION_IMMUNIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -339,6 +344,7 @@ public class ImmunizationsSectionOperations extends ImmunizationsSectionEntriesO
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateImmunizationsSectionImmunization(ImmunizationsSection immunizationsSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -391,6 +397,7 @@ public class ImmunizationsSectionOperations extends ImmunizationsSectionEntriesO
 	 * <!-- end-user-doc -->
 	* @generated
 	*/
+
 	public static EList<ImmunizationActivity> getImmunizations(ImmunizationsSection immunizationsSection) {
 		if (GET_IMMUNIZATIONS__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
@@ -427,6 +434,7 @@ public class ImmunizationsSectionOperations extends ImmunizationsSectionEntriesO
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_IMMUNIZATIONS_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -439,6 +447,7 @@ public class ImmunizationsSectionOperations extends ImmunizationsSectionEntriesO
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateImmunizationsSectionEntriesOptionalTemplateId(
 			ImmunizationsSection immunizationsSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
 

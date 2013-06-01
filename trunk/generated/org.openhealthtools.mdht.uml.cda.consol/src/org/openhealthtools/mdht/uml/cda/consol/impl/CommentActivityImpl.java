@@ -134,7 +134,7 @@ public class CommentActivityImpl extends ActImpl implements CommentActivity {
 
 	/**
 	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	* <!-- end-user-doc -->
 	* @generated
 	*/
 	public boolean validateCommentActivityAuthorAssignedAuthorUSRealmAddressStreet(DiagnosticChain diagnostics,
@@ -144,10 +144,10 @@ public class CommentActivityImpl extends ActImpl implements CommentActivity {
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateCommentActivityAuthorAssignedAuthorUSRealmAddressCity(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return CommentActivityOperations.validateCommentActivityAuthorAssignedAuthorUSRealmAddressCity(
@@ -155,10 +155,10 @@ public class CommentActivityImpl extends ActImpl implements CommentActivity {
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateCommentActivityAuthorAssignedAuthorUSRealmAddressCountry(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return CommentActivityOperations.validateCommentActivityAuthorAssignedAuthorUSRealmAddressCountry(
@@ -166,10 +166,10 @@ public class CommentActivityImpl extends ActImpl implements CommentActivity {
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateCommentActivityAuthorAssignedAuthorUSRealmAddressPostalCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return CommentActivityOperations.validateCommentActivityAuthorAssignedAuthorUSRealmAddressPostalCode(
@@ -177,10 +177,10 @@ public class CommentActivityImpl extends ActImpl implements CommentActivity {
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateCommentActivityAuthorAssignedAuthorUSRealmAddressState(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return CommentActivityOperations.validateCommentActivityAuthorAssignedAuthorUSRealmAddressState(
@@ -188,10 +188,10 @@ public class CommentActivityImpl extends ActImpl implements CommentActivity {
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateCommentActivityAuthorAssignedAuthorUSRealmAddressStreetAddressLine(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return CommentActivityOperations.validateCommentActivityAuthorAssignedAuthorUSRealmAddressStreetAddressLine(
@@ -199,10 +199,10 @@ public class CommentActivityImpl extends ActImpl implements CommentActivity {
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateCommentActivityAuthorAssignedAuthorUSRealmAddressUseP(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return CommentActivityOperations.validateCommentActivityAuthorAssignedAuthorUSRealmAddressUseP(
@@ -210,10 +210,10 @@ public class CommentActivityImpl extends ActImpl implements CommentActivity {
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateCommentActivityAuthorAssignedAuthorUSRealmAddressUse(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return CommentActivityOperations.validateCommentActivityAuthorAssignedAuthorUSRealmAddressUse(
@@ -221,10 +221,10 @@ public class CommentActivityImpl extends ActImpl implements CommentActivity {
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateCommentActivityAuthorAssignedAuthorHasPersonOrOrganization(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return CommentActivityOperations.validateCommentActivityAuthorAssignedAuthorHasPersonOrOrganization(
@@ -232,10 +232,10 @@ public class CommentActivityImpl extends ActImpl implements CommentActivity {
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateCommentActivityAuthorAssignedAuthorAssignPersonName(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return CommentActivityOperations.validateCommentActivityAuthorAssignedAuthorAssignPersonName(
@@ -243,48 +243,48 @@ public class CommentActivityImpl extends ActImpl implements CommentActivity {
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateCommentActivityAuthorAssignedAuthorAddr(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return CommentActivityOperations.validateCommentActivityAuthorAssignedAuthorAddr(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateCommentActivityAuthorAssignedAuthorId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return CommentActivityOperations.validateCommentActivityAuthorAssignedAuthorId(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateCommentActivityAuthorTime(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return CommentActivityOperations.validateCommentActivityAuthorTime(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateCommentActivityAuthorAssignedAuthor(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return CommentActivityOperations.validateCommentActivityAuthorAssignedAuthor(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public CommentActivity init() {
 		return Initializer.Util.init(this);
 	}

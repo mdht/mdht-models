@@ -82,6 +82,7 @@ public class ResultOrganizerOperations extends OrganizerOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_RESULT_ORGANIZER_CODE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -94,6 +95,7 @@ public class ResultOrganizerOperations extends OrganizerOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateResultOrganizerCodeValue(ResultOrganizer resultOrganizer,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -138,6 +140,7 @@ public class ResultOrganizerOperations extends OrganizerOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_RESULT_ORGANIZER_CLASS_CODE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -150,6 +153,7 @@ public class ResultOrganizerOperations extends OrganizerOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateResultOrganizerClassCodeValue(ResultOrganizer resultOrganizer,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -194,6 +198,7 @@ public class ResultOrganizerOperations extends OrganizerOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_RESULT_ORGANIZER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -206,6 +211,7 @@ public class ResultOrganizerOperations extends OrganizerOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateResultOrganizerTemplateId(ResultOrganizer resultOrganizer,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -366,6 +372,7 @@ public class ResultOrganizerOperations extends OrganizerOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_RESULT_ORGANIZER_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -378,6 +385,7 @@ public class ResultOrganizerOperations extends OrganizerOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateResultOrganizerId(ResultOrganizer resultOrganizer, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
@@ -406,7 +414,7 @@ public class ResultOrganizerOperations extends OrganizerOperations {
 	/**
 	* The cached OCL expression body for the '{@link #validateResultOrganizerStatusCodeP(ResultOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Result Organizer Status Code P</em>}' operation.
 	* <!-- begin-user-doc -->
-	* <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	* @see #validateResultOrganizerStatusCodeP(ResultOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	* @generated
 	* @ordered
@@ -493,6 +501,7 @@ public class ResultOrganizerOperations extends OrganizerOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_RESULT_ORGANIZER_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -505,6 +514,7 @@ public class ResultOrganizerOperations extends OrganizerOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateResultOrganizerStatusCode(ResultOrganizer resultOrganizer,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -557,6 +567,7 @@ public class ResultOrganizerOperations extends OrganizerOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_RESULT_ORGANIZER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -569,6 +580,7 @@ public class ResultOrganizerOperations extends OrganizerOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateResultOrganizerCode(ResultOrganizer resultOrganizer, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
@@ -612,6 +624,7 @@ public class ResultOrganizerOperations extends OrganizerOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_RESULT_ORGANIZER_RESULT_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -624,6 +637,7 @@ public class ResultOrganizerOperations extends OrganizerOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateResultOrganizerResultObservation(ResultOrganizer resultOrganizer,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -676,6 +690,7 @@ public class ResultOrganizerOperations extends OrganizerOperations {
 	 * <!-- end-user-doc -->
 	* @generated
 	*/
+
 	public static EList<ResultObservation> getResultObservations(ResultOrganizer resultOrganizer) {
 		if (GET_RESULT_OBSERVATIONS__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
