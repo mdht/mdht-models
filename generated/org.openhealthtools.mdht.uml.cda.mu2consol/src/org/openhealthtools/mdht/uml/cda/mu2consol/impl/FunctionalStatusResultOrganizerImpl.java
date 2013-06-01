@@ -37,70 +37,70 @@ import org.openhealthtools.mdht.uml.cda.mu2consol.operations.ResultOrganizerOper
  */
 public class FunctionalStatusResultOrganizerImpl extends org.openhealthtools.mdht.uml.cda.consol.impl.FunctionalStatusResultOrganizerImpl implements FunctionalStatusResultOrganizer {
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	protected FunctionalStatusResultOrganizerImpl() {
-		super();
-	}
+    super();
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	@Override
 	protected EClass eStaticClass() {
-		return Mu2consolPackage.Literals.FUNCTIONAL_STATUS_RESULT_ORGANIZER;
-	}
+    return Mu2consolPackage.Literals.FUNCTIONAL_STATUS_RESULT_ORGANIZER;
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateMu2consolResultOrganizerResultObservation(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ResultOrganizerOperations.validateMu2consolResultOrganizerResultObservation(this, diagnostics, context);
-	}
+    return ResultOrganizerOperations.validateMu2consolResultOrganizerResultObservation(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public EList<ResultObservation> getMu2consolResultObservations() {
-		return ResultOrganizerOperations.getMu2consolResultObservations(this);
-	}
+    return ResultOrganizerOperations.getMu2consolResultObservations(this);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	@Override
 	public boolean validateResultOrganizerTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return FunctionalStatusResultOrganizerOperations.validateResultOrganizerTemplateId(this, diagnostics, context);
-	}
+    return FunctionalStatusResultOrganizerOperations.validateResultOrganizerTemplateId(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public EList<FunctionalStatusResultObservation> getMu2consolFunctionalStatusResultObservations() {
-		return FunctionalStatusResultOrganizerOperations.getMu2consolFunctionalStatusResultObservations(this);
-	}
+    return FunctionalStatusResultOrganizerOperations.getMu2consolFunctionalStatusResultObservations(this);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	@Override
 	public FunctionalStatusResultOrganizer init() {
-	    return Initializer.Util.init(this);
-	}
+      return Initializer.Util.init(this);
+  }
     /**
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
