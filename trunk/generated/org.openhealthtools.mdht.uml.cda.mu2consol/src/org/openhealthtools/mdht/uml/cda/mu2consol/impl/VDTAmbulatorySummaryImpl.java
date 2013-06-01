@@ -33,57 +33,57 @@ import org.openhealthtools.mdht.uml.cda.mu2consol.operations.VDTAmbulatorySummar
 public class VDTAmbulatorySummaryImpl extends ViewDownloadTransmitSummaryImpl
 		implements VDTAmbulatorySummary {
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
 	protected VDTAmbulatorySummaryImpl() {
-		super();
-	}
+    super();
+  }
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
 	@Override
 	protected EClass eStaticClass() {
-		return Mu2consolPackage.Literals.VDT_AMBULATORY_SUMMARY;
-	}
+    return Mu2consolPackage.Literals.VDT_AMBULATORY_SUMMARY;
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateVDTAmbulatorySummaryProviderNameAndContactInfo(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return VDTAmbulatorySummaryOperations.validateVDTAmbulatorySummaryProviderNameAndContactInfo(this, diagnostics, context);
-	}
+    return VDTAmbulatorySummaryOperations.validateVDTAmbulatorySummaryProviderNameAndContactInfo(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateVDTAmbulatorySummaryMedicationsSection(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return VDTAmbulatorySummaryOperations.validateVDTAmbulatorySummaryMedicationsSection(this, diagnostics, context);
-	}
+    return VDTAmbulatorySummaryOperations.validateVDTAmbulatorySummaryMedicationsSection(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public MedicationsSection getMedicationsSection() {
-		return VDTAmbulatorySummaryOperations.getMedicationsSection(this);
-	}
+    return VDTAmbulatorySummaryOperations.getMedicationsSection(this);
+  }
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
 	@Override
 	public VDTAmbulatorySummary init() {
-	    return Initializer.Util.init(this);
-	}
+      return Initializer.Util.init(this);
+  }
 
 	/**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
