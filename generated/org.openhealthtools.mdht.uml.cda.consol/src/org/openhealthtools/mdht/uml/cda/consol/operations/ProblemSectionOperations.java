@@ -62,7 +62,7 @@ public class ProblemSectionOperations extends ProblemSectionEntriesOptionalOpera
 	/**
 	* The cached OCL expression body for the '{@link #validateProblemSectionCodeP(ProblemSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Problem Section Code P</em>}' operation.
 	* <!-- begin-user-doc -->
-	* <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	* @see #validateProblemSectionCodeP(ProblemSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	* @generated
 	* @ordered
@@ -327,6 +327,7 @@ public class ProblemSectionOperations extends ProblemSectionEntriesOptionalOpera
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_PROBLEM_SECTION_PROBLEM_CONCERN__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -339,6 +340,7 @@ public class ProblemSectionOperations extends ProblemSectionEntriesOptionalOpera
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateProblemSectionProblemConcern(ProblemSection problemSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -390,6 +392,7 @@ public class ProblemSectionOperations extends ProblemSectionEntriesOptionalOpera
 	 * <!-- end-user-doc -->
 	* @generated
 	*/
+
 	public static EList<ProblemConcernAct> getConsolProblemConcerns(ProblemSection problemSection) {
 		if (GET_CONSOL_PROBLEM_CONCERNS__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
@@ -426,6 +429,7 @@ public class ProblemSectionOperations extends ProblemSectionEntriesOptionalOpera
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_PROBLEM_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -438,6 +442,7 @@ public class ProblemSectionOperations extends ProblemSectionEntriesOptionalOpera
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateProblemSectionEntriesOptionalTemplateId(ProblemSection problemSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 

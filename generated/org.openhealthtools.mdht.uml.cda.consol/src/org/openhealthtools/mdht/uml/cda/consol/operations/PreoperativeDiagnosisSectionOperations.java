@@ -75,6 +75,7 @@ public class PreoperativeDiagnosisSectionOperations extends SectionOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_PREOPERATIVE_DIAGNOSIS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -87,6 +88,7 @@ public class PreoperativeDiagnosisSectionOperations extends SectionOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validatePreoperativeDiagnosisSectionTemplateId(
 			PreoperativeDiagnosisSection preoperativeDiagnosisSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
@@ -180,7 +182,7 @@ public class PreoperativeDiagnosisSectionOperations extends SectionOperations {
 	/**
 	* The cached OCL expression body for the '{@link #validatePreoperativeDiagnosisSectionCodeP(PreoperativeDiagnosisSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Preoperative Diagnosis Section Code P</em>}' operation.
 	* <!-- begin-user-doc -->
-	* <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	* @see #validatePreoperativeDiagnosisSectionCodeP(PreoperativeDiagnosisSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	* @generated
 	* @ordered

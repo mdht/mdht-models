@@ -78,6 +78,7 @@ public class PlannedProcedureSectionOperations extends SectionOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_PLANNED_PROCEDURE_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -90,6 +91,7 @@ public class PlannedProcedureSectionOperations extends SectionOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validatePlannedProcedureSectionTemplateId(PlannedProcedureSection plannedProcedureSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -137,6 +139,7 @@ public class PlannedProcedureSectionOperations extends SectionOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_PLANNED_PROCEDURE_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -149,6 +152,7 @@ public class PlannedProcedureSectionOperations extends SectionOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validatePlannedProcedureSectionCode(PlannedProcedureSection plannedProcedureSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -179,7 +183,7 @@ public class PlannedProcedureSectionOperations extends SectionOperations {
 	/**
 	* The cached OCL expression body for the '{@link #validatePlannedProcedureSectionCodeP(PlannedProcedureSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Procedure Section Code P</em>}' operation.
 	* <!-- begin-user-doc -->
-	* <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	* @see #validatePlannedProcedureSectionCodeP(PlannedProcedureSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	* @generated
 	* @ordered
@@ -253,6 +257,7 @@ public class PlannedProcedureSectionOperations extends SectionOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_PLANNED_PROCEDURE_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -265,6 +270,7 @@ public class PlannedProcedureSectionOperations extends SectionOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validatePlannedProcedureSectionText(PlannedProcedureSection plannedProcedureSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -310,6 +316,7 @@ public class PlannedProcedureSectionOperations extends SectionOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_PLANNED_PROCEDURE_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -322,6 +329,7 @@ public class PlannedProcedureSectionOperations extends SectionOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validatePlannedProcedureSectionTitle(PlannedProcedureSection plannedProcedureSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -367,6 +375,7 @@ public class PlannedProcedureSectionOperations extends SectionOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_PLANNED_PROCEDURE_SECTION_PLAN_OF_CARE_ACTIVITY_PROCEDURE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -379,6 +388,7 @@ public class PlannedProcedureSectionOperations extends SectionOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validatePlannedProcedureSectionPlanOfCareActivityProcedure(
 			PlannedProcedureSection plannedProcedureSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
 

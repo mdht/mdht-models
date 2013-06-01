@@ -70,6 +70,7 @@ public class HospitalConsultationsSectionOperations extends SectionOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_HOSPITAL_CONSULTATIONS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -82,6 +83,7 @@ public class HospitalConsultationsSectionOperations extends SectionOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateHospitalConsultationsSectionTemplateId(
 			HospitalConsultationsSection hospitalConsultationsSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
@@ -130,6 +132,7 @@ public class HospitalConsultationsSectionOperations extends SectionOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_HOSPITAL_CONSULTATIONS_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -142,6 +145,7 @@ public class HospitalConsultationsSectionOperations extends SectionOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateHospitalConsultationsSectionCode(
 			HospitalConsultationsSection hospitalConsultationsSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
@@ -173,7 +177,7 @@ public class HospitalConsultationsSectionOperations extends SectionOperations {
 	/**
 	* The cached OCL expression body for the '{@link #validateHospitalConsultationsSectionCodeP(HospitalConsultationsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Hospital Consultations Section Code P</em>}' operation.
 	* <!-- begin-user-doc -->
-	* <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	* @see #validateHospitalConsultationsSectionCodeP(HospitalConsultationsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	* @generated
 	* @ordered
@@ -248,6 +252,7 @@ public class HospitalConsultationsSectionOperations extends SectionOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_HOSPITAL_CONSULTATIONS_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -260,6 +265,7 @@ public class HospitalConsultationsSectionOperations extends SectionOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateHospitalConsultationsSectionText(
 			HospitalConsultationsSection hospitalConsultationsSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
@@ -306,6 +312,7 @@ public class HospitalConsultationsSectionOperations extends SectionOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_HOSPITAL_CONSULTATIONS_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -318,6 +325,7 @@ public class HospitalConsultationsSectionOperations extends SectionOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateHospitalConsultationsSectionTitle(
 			HospitalConsultationsSection hospitalConsultationsSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {

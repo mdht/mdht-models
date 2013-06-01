@@ -70,6 +70,7 @@ public class ProcedureDispositionSectionOperations extends SectionOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_PROCEDURE_DISPOSITION_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -82,6 +83,7 @@ public class ProcedureDispositionSectionOperations extends SectionOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateProcedureDispositionSectionTemplateId(
 			ProcedureDispositionSection procedureDispositionSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
@@ -130,6 +132,7 @@ public class ProcedureDispositionSectionOperations extends SectionOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_PROCEDURE_DISPOSITION_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -142,6 +145,7 @@ public class ProcedureDispositionSectionOperations extends SectionOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateProcedureDispositionSectionCode(
 			ProcedureDispositionSection procedureDispositionSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
@@ -173,7 +177,7 @@ public class ProcedureDispositionSectionOperations extends SectionOperations {
 	/**
 	* The cached OCL expression body for the '{@link #validateProcedureDispositionSectionCodeP(ProcedureDispositionSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Disposition Section Code P</em>}' operation.
 	* <!-- begin-user-doc -->
-	* <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	* @see #validateProcedureDispositionSectionCodeP(ProcedureDispositionSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	* @generated
 	* @ordered
@@ -248,6 +252,7 @@ public class ProcedureDispositionSectionOperations extends SectionOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_PROCEDURE_DISPOSITION_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -260,6 +265,7 @@ public class ProcedureDispositionSectionOperations extends SectionOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateProcedureDispositionSectionText(
 			ProcedureDispositionSection procedureDispositionSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
@@ -306,6 +312,7 @@ public class ProcedureDispositionSectionOperations extends SectionOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_PROCEDURE_DISPOSITION_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -318,6 +325,7 @@ public class ProcedureDispositionSectionOperations extends SectionOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateProcedureDispositionSectionTitle(
 			ProcedureDispositionSection procedureDispositionSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {

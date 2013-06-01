@@ -78,6 +78,7 @@ public class HospitalDischargeMedicationsSectionEntriesOptionalOperations extend
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_HOSPITAL_DISCHARGE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -90,6 +91,7 @@ public class HospitalDischargeMedicationsSectionEntriesOptionalOperations extend
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateHospitalDischargeMedicationsSectionEntriesOptionalTemplateId(
 			HospitalDischargeMedicationsSectionEntriesOptional hospitalDischargeMedicationsSectionEntriesOptional,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
@@ -140,6 +142,7 @@ public class HospitalDischargeMedicationsSectionEntriesOptionalOperations extend
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_HOSPITAL_DISCHARGE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -152,6 +155,7 @@ public class HospitalDischargeMedicationsSectionEntriesOptionalOperations extend
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateHospitalDischargeMedicationsSectionEntriesOptionalCode(
 			HospitalDischargeMedicationsSectionEntriesOptional hospitalDischargeMedicationsSectionEntriesOptional,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
@@ -185,7 +189,7 @@ public class HospitalDischargeMedicationsSectionEntriesOptionalOperations extend
 	/**
 	* The cached OCL expression body for the '{@link #validateHospitalDischargeMedicationsSectionEntriesOptionalCodeP(HospitalDischargeMedicationsSectionEntriesOptional, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Hospital Discharge Medications Section Entries Optional Code P</em>}' operation.
 	* <!-- begin-user-doc -->
-	* <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	* @see #validateHospitalDischargeMedicationsSectionEntriesOptionalCodeP(HospitalDischargeMedicationsSectionEntriesOptional, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	* @generated
 	* @ordered
@@ -262,6 +266,7 @@ public class HospitalDischargeMedicationsSectionEntriesOptionalOperations extend
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_HOSPITAL_DISCHARGE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -274,6 +279,7 @@ public class HospitalDischargeMedicationsSectionEntriesOptionalOperations extend
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateHospitalDischargeMedicationsSectionEntriesOptionalTitle(
 			HospitalDischargeMedicationsSectionEntriesOptional hospitalDischargeMedicationsSectionEntriesOptional,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
@@ -322,6 +328,7 @@ public class HospitalDischargeMedicationsSectionEntriesOptionalOperations extend
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_HOSPITAL_DISCHARGE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -334,6 +341,7 @@ public class HospitalDischargeMedicationsSectionEntriesOptionalOperations extend
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateHospitalDischargeMedicationsSectionEntriesOptionalText(
 			HospitalDischargeMedicationsSectionEntriesOptional hospitalDischargeMedicationsSectionEntriesOptional,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
@@ -382,6 +390,7 @@ public class HospitalDischargeMedicationsSectionEntriesOptionalOperations extend
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_HOSPITAL_DISCHARGE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL_DISCHARGE_MEDICATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -394,6 +403,7 @@ public class HospitalDischargeMedicationsSectionEntriesOptionalOperations extend
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateHospitalDischargeMedicationsSectionEntriesOptionalDischargeMedication(
 			HospitalDischargeMedicationsSectionEntriesOptional hospitalDischargeMedicationsSectionEntriesOptional,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
@@ -449,6 +459,7 @@ public class HospitalDischargeMedicationsSectionEntriesOptionalOperations extend
 	 * <!-- end-user-doc -->
 	* @generated
 	*/
+
 	public static EList<DischargeMedication> getDischargeMedications(
 			HospitalDischargeMedicationsSectionEntriesOptional hospitalDischargeMedicationsSectionEntriesOptional) {
 		if (GET_DISCHARGE_MEDICATIONS__EOCL_QRY == null) {

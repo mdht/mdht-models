@@ -460,7 +460,7 @@ public interface ImmunizationActivity extends SubstanceAdministration {
 
 	/**
 	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	* <!-- end-user-doc -->
 	* <!-- begin-model-doc -->
 	* @param diagnostics The chain of diagnostics to which problems are to be appended.
 	* @param context The cache of context-specific information.
@@ -472,12 +472,12 @@ public interface ImmunizationActivity extends SubstanceAdministration {
 			Map<Object, Object> context);
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @model kind="operation" required="true" ordered="false"
-	*        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getParticipantRoles()->select(participantRole : cda::ParticipantRole | not participantRole.oclIsUndefined() and participantRole.oclIsKindOf(consol::DrugVehicle))->asSequence()->any(true).oclAsType(consol::DrugVehicle)'"
-	* @generated
-	*/
+	 * @model kind="operation" required="true" ordered="false"
+	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getParticipantRoles()->select(participantRole : cda::ParticipantRole | not participantRole.oclIsUndefined() and participantRole.oclIsKindOf(consol::DrugVehicle))->asSequence()->any(true).oclAsType(consol::DrugVehicle)'"
+	 * @generated
+	 */
 	DrugVehicle getDrugVehicle();
 
 	/**

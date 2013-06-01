@@ -78,6 +78,7 @@ public class AllergiesSectionEntriesOptionalOperations extends SectionOperations
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_ALLERGIES_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -90,6 +91,7 @@ public class AllergiesSectionEntriesOptionalOperations extends SectionOperations
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateAllergiesSectionEntriesOptionalTemplateId(
 			AllergiesSectionEntriesOptional allergiesSectionEntriesOptional, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
@@ -139,6 +141,7 @@ public class AllergiesSectionEntriesOptionalOperations extends SectionOperations
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_ALLERGIES_SECTION_ENTRIES_OPTIONAL_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -151,6 +154,7 @@ public class AllergiesSectionEntriesOptionalOperations extends SectionOperations
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateAllergiesSectionEntriesOptionalCode(
 			AllergiesSectionEntriesOptional allergiesSectionEntriesOptional, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
@@ -182,7 +186,7 @@ public class AllergiesSectionEntriesOptionalOperations extends SectionOperations
 	/**
 	* The cached OCL expression body for the '{@link #validateAllergiesSectionEntriesOptionalCodeP(AllergiesSectionEntriesOptional, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Allergies Section Entries Optional Code P</em>}' operation.
 	* <!-- begin-user-doc -->
-	* <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	* @see #validateAllergiesSectionEntriesOptionalCodeP(AllergiesSectionEntriesOptional, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	* @generated
 	* @ordered
@@ -257,6 +261,7 @@ public class AllergiesSectionEntriesOptionalOperations extends SectionOperations
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_ALLERGIES_SECTION_ENTRIES_OPTIONAL_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -269,6 +274,7 @@ public class AllergiesSectionEntriesOptionalOperations extends SectionOperations
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateAllergiesSectionEntriesOptionalTitle(
 			AllergiesSectionEntriesOptional allergiesSectionEntriesOptional, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
@@ -315,6 +321,7 @@ public class AllergiesSectionEntriesOptionalOperations extends SectionOperations
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_ALLERGIES_SECTION_ENTRIES_OPTIONAL_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -327,6 +334,7 @@ public class AllergiesSectionEntriesOptionalOperations extends SectionOperations
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateAllergiesSectionEntriesOptionalText(
 			AllergiesSectionEntriesOptional allergiesSectionEntriesOptional, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
@@ -373,6 +381,7 @@ public class AllergiesSectionEntriesOptionalOperations extends SectionOperations
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_ALLERGIES_SECTION_ENTRIES_OPTIONAL_ALLERGY_PROBLEM_ACT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -385,6 +394,7 @@ public class AllergiesSectionEntriesOptionalOperations extends SectionOperations
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateAllergiesSectionEntriesOptionalAllergyProblemAct(
 			AllergiesSectionEntriesOptional allergiesSectionEntriesOptional, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
@@ -440,6 +450,7 @@ public class AllergiesSectionEntriesOptionalOperations extends SectionOperations
 	 * <!-- end-user-doc -->
 	* @generated
 	*/
+
 	public static EList<AllergyProblemAct> getAllergyProblemActs(
 			AllergiesSectionEntriesOptional allergiesSectionEntriesOptional) {
 		if (GET_ALLERGY_PROBLEM_ACTS__EOCL_QRY == null) {

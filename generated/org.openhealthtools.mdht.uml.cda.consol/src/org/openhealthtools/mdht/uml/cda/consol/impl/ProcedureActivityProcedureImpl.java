@@ -366,7 +366,7 @@ public class ProcedureActivityProcedureImpl extends ProcedureImpl implements Pro
 
 	/**
 	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	* <!-- end-user-doc -->
 	* @generated
 	*/
 	public boolean validateProcedureActivityProcedureProcedureSpecimenSpecimenRole(DiagnosticChain diagnostics,
@@ -376,10 +376,10 @@ public class ProcedureActivityProcedureImpl extends ProcedureImpl implements Pro
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateProcedureActivityProcedureProcedureSpecimenSpecimentRoleId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ProcedureActivityProcedureOperations.validateProcedureActivityProcedureProcedureSpecimenSpecimentRoleId(
@@ -387,10 +387,10 @@ public class ProcedureActivityProcedureImpl extends ProcedureImpl implements Pro
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateProcedureActivityProcedureProcedureActivityPerformerProcedureActivityAssignedEntityProcedureActivityRepresentedOrganizationId(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProcedureActivityProcedureOperations.validateProcedureActivityProcedureProcedureActivityPerformerProcedureActivityAssignedEntityProcedureActivityRepresentedOrganizationId(
@@ -398,10 +398,10 @@ public class ProcedureActivityProcedureImpl extends ProcedureImpl implements Pro
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateProcedureActivityProcedureProcedureActivityPerformerProcedureActivityAssignedEntityProcedureActivityRepresentedOrganizationName(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProcedureActivityProcedureOperations.validateProcedureActivityProcedureProcedureActivityPerformerProcedureActivityAssignedEntityProcedureActivityRepresentedOrganizationName(
@@ -409,10 +409,10 @@ public class ProcedureActivityProcedureImpl extends ProcedureImpl implements Pro
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateProcedureActivityProcedureProcedureActivityPerformerProcedureActivityAssignedEntityProcedureActivityRepresentedOrganizationTelecom(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProcedureActivityProcedureOperations.validateProcedureActivityProcedureProcedureActivityPerformerProcedureActivityAssignedEntityProcedureActivityRepresentedOrganizationTelecom(
@@ -420,10 +420,10 @@ public class ProcedureActivityProcedureImpl extends ProcedureImpl implements Pro
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateProcedureActivityProcedureProcedureActivityPerformerProcedureActivityAssignedEntityProcedureActivityRepresentedOrganizationAddr(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProcedureActivityProcedureOperations.validateProcedureActivityProcedureProcedureActivityPerformerProcedureActivityAssignedEntityProcedureActivityRepresentedOrganizationAddr(
@@ -431,10 +431,10 @@ public class ProcedureActivityProcedureImpl extends ProcedureImpl implements Pro
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateProcedureActivityProcedureProcedureActivityPerformerProcedureActivityAssignedEntityId(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProcedureActivityProcedureOperations.validateProcedureActivityProcedureProcedureActivityPerformerProcedureActivityAssignedEntityId(
@@ -442,10 +442,10 @@ public class ProcedureActivityProcedureImpl extends ProcedureImpl implements Pro
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateProcedureActivityProcedureProcedureActivityPerformerProcedureActivityAssignedEntityAddr(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProcedureActivityProcedureOperations.validateProcedureActivityProcedureProcedureActivityPerformerProcedureActivityAssignedEntityAddr(
@@ -453,10 +453,10 @@ public class ProcedureActivityProcedureImpl extends ProcedureImpl implements Pro
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateProcedureActivityProcedureProcedureActivityPerformerProcedureActivityAssignedEntityTelecom(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProcedureActivityProcedureOperations.validateProcedureActivityProcedureProcedureActivityPerformerProcedureActivityAssignedEntityTelecom(
@@ -464,10 +464,10 @@ public class ProcedureActivityProcedureImpl extends ProcedureImpl implements Pro
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateProcedureActivityProcedureProcedureActivityPerformerProcedureActivityAssignedEntityRepresentedOrganization(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProcedureActivityProcedureOperations.validateProcedureActivityProcedureProcedureActivityPerformerProcedureActivityAssignedEntityRepresentedOrganization(
@@ -475,10 +475,10 @@ public class ProcedureActivityProcedureImpl extends ProcedureImpl implements Pro
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateProcedureActivityProcedureProcedureActivityPerformerAssignedEntity(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProcedureActivityProcedureOperations.validateProcedureActivityProcedureProcedureActivityPerformerAssignedEntity(
@@ -486,10 +486,10 @@ public class ProcedureActivityProcedureImpl extends ProcedureImpl implements Pro
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateProcedureActivityProcedureEntryRelationshipProcedureActivityEncounterClassCode(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProcedureActivityProcedureOperations.validateProcedureActivityProcedureEntryRelationshipProcedureActivityEncounterClassCode(
@@ -497,10 +497,10 @@ public class ProcedureActivityProcedureImpl extends ProcedureImpl implements Pro
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateProcedureActivityProcedureEntryRelationshipProcedureActivityEncounterMoodCode(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProcedureActivityProcedureOperations.validateProcedureActivityProcedureEntryRelationshipProcedureActivityEncounterMoodCode(
@@ -508,10 +508,10 @@ public class ProcedureActivityProcedureImpl extends ProcedureImpl implements Pro
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateProcedureActivityProcedureEntryRelationshipProcedureActivityEncounterId(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProcedureActivityProcedureOperations.validateProcedureActivityProcedureEntryRelationshipProcedureActivityEncounterId(
@@ -519,10 +519,10 @@ public class ProcedureActivityProcedureImpl extends ProcedureImpl implements Pro
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateProcedureActivityProcedureEntryRelationshipInversionInd(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ProcedureActivityProcedureOperations.validateProcedureActivityProcedureEntryRelationshipInversionInd(
@@ -530,10 +530,10 @@ public class ProcedureActivityProcedureImpl extends ProcedureImpl implements Pro
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateProcedureActivityProcedureEntryRelationshipTypeCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ProcedureActivityProcedureOperations.validateProcedureActivityProcedureEntryRelationshipTypeCode(
@@ -541,10 +541,10 @@ public class ProcedureActivityProcedureImpl extends ProcedureImpl implements Pro
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateProcedureActivityProcedureEntryRelationshipProcedureActivityEncounter(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProcedureActivityProcedureOperations.validateProcedureActivityProcedureEntryRelationshipProcedureActivityEncounter(
@@ -552,10 +552,10 @@ public class ProcedureActivityProcedureImpl extends ProcedureImpl implements Pro
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public EList<Indication> getIndications() {
 		return ProcedureActivityProcedureOperations.getIndications(this);
 	}

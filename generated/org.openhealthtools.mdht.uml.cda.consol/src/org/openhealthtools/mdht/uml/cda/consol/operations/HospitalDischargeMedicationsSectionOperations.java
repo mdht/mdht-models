@@ -63,7 +63,7 @@ public class HospitalDischargeMedicationsSectionOperations extends
 	/**
 	* The cached OCL expression body for the '{@link #validateHospitalDischargeMedicationsSectionCodeP(HospitalDischargeMedicationsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Hospital Discharge Medications Section Code P</em>}' operation.
 	* <!-- begin-user-doc -->
-	* <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	* @see #validateHospitalDischargeMedicationsSectionCodeP(HospitalDischargeMedicationsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	* @generated
 	* @ordered
@@ -347,6 +347,7 @@ public class HospitalDischargeMedicationsSectionOperations extends
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_HOSPITAL_DISCHARGE_MEDICATIONS_SECTION_DISCHARGE_MEDICATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -359,6 +360,7 @@ public class HospitalDischargeMedicationsSectionOperations extends
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateHospitalDischargeMedicationsSectionDischargeMedication(
 			HospitalDischargeMedicationsSection hospitalDischargeMedicationsSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
@@ -414,6 +416,7 @@ public class HospitalDischargeMedicationsSectionOperations extends
 	 * <!-- end-user-doc -->
 	* @generated
 	*/
+
 	public static EList<DischargeMedication> getConsolDischargeMedications(
 			HospitalDischargeMedicationsSection hospitalDischargeMedicationsSection) {
 		if (GET_CONSOL_DISCHARGE_MEDICATIONS__EOCL_QRY == null) {
@@ -451,6 +454,7 @@ public class HospitalDischargeMedicationsSectionOperations extends
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_HOSPITAL_DISCHARGE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -463,6 +467,7 @@ public class HospitalDischargeMedicationsSectionOperations extends
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateHospitalDischargeMedicationsSectionEntriesOptionalTemplateId(
 			HospitalDischargeMedicationsSection hospitalDischargeMedicationsSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {

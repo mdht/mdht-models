@@ -77,6 +77,7 @@ public class AssessmentAndPlanSectionOperations extends SectionOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_ASSESSMENT_AND_PLAN_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -89,6 +90,7 @@ public class AssessmentAndPlanSectionOperations extends SectionOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateAssessmentAndPlanSectionTemplateId(AssessmentAndPlanSection assessmentAndPlanSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -136,6 +138,7 @@ public class AssessmentAndPlanSectionOperations extends SectionOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_ASSESSMENT_AND_PLAN_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -148,6 +151,7 @@ public class AssessmentAndPlanSectionOperations extends SectionOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateAssessmentAndPlanSectionCode(AssessmentAndPlanSection assessmentAndPlanSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -178,7 +182,7 @@ public class AssessmentAndPlanSectionOperations extends SectionOperations {
 	/**
 	* The cached OCL expression body for the '{@link #validateAssessmentAndPlanSectionCodeP(AssessmentAndPlanSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Assessment And Plan Section Code P</em>}' operation.
 	* <!-- begin-user-doc -->
-	* <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	* @see #validateAssessmentAndPlanSectionCodeP(AssessmentAndPlanSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	* @generated
 	* @ordered
@@ -252,6 +256,7 @@ public class AssessmentAndPlanSectionOperations extends SectionOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_ASSESSMENT_AND_PLAN_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -264,6 +269,7 @@ public class AssessmentAndPlanSectionOperations extends SectionOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateAssessmentAndPlanSectionText(AssessmentAndPlanSection assessmentAndPlanSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -309,6 +315,7 @@ public class AssessmentAndPlanSectionOperations extends SectionOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_ASSESSMENT_AND_PLAN_SECTION_PLAN_OF_CARE_ACTIVITY_ACT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -321,6 +328,7 @@ public class AssessmentAndPlanSectionOperations extends SectionOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateAssessmentAndPlanSectionPlanOfCareActivityAct(
 			AssessmentAndPlanSection assessmentAndPlanSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -374,6 +382,7 @@ public class AssessmentAndPlanSectionOperations extends SectionOperations {
 	 * <!-- end-user-doc -->
 	* @generated
 	*/
+
 	public static EList<PlanOfCareActivityAct> getPlanOfCareActivityActs(
 			AssessmentAndPlanSection assessmentAndPlanSection) {
 		if (GET_PLAN_OF_CARE_ACTIVITY_ACTS__EOCL_QRY == null) {

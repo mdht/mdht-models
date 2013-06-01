@@ -181,7 +181,7 @@ public class StudyActOperations extends ClinicalStatementOperations {
 	/**
 	* The cached OCL expression body for the '{@link #validateStudyActTextReference(StudyAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Study Act Text Reference</em>}' operation.
 	* <!-- begin-user-doc -->
-	* <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	* @see #validateStudyActTextReference(StudyAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	* @generated
 	* @ordered
@@ -368,6 +368,7 @@ public class StudyActOperations extends ClinicalStatementOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_STUDY_ACT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -380,6 +381,7 @@ public class StudyActOperations extends ClinicalStatementOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateStudyActTemplateId(StudyAct studyAct, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
@@ -423,6 +425,7 @@ public class StudyActOperations extends ClinicalStatementOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_STUDY_ACT_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -435,6 +438,7 @@ public class StudyActOperations extends ClinicalStatementOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateStudyActClassCode(StudyAct studyAct, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
@@ -478,6 +482,7 @@ public class StudyActOperations extends ClinicalStatementOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_STUDY_ACT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -490,6 +495,7 @@ public class StudyActOperations extends ClinicalStatementOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateStudyActMoodCode(StudyAct studyAct, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
@@ -533,6 +539,7 @@ public class StudyActOperations extends ClinicalStatementOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_STUDY_ACT_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -545,6 +552,7 @@ public class StudyActOperations extends ClinicalStatementOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateStudyActId(StudyAct studyAct, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
 		if (VALIDATE_STUDY_ACT_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
@@ -588,6 +596,7 @@ public class StudyActOperations extends ClinicalStatementOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_STUDY_ACT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -600,6 +609,7 @@ public class StudyActOperations extends ClinicalStatementOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateStudyActCode(StudyAct studyAct, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
@@ -642,6 +652,7 @@ public class StudyActOperations extends ClinicalStatementOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_STUDY_ACT_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -654,6 +665,7 @@ public class StudyActOperations extends ClinicalStatementOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateStudyActEffectiveTime(StudyAct studyAct, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
@@ -697,6 +709,7 @@ public class StudyActOperations extends ClinicalStatementOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_STUDY_ACT_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -709,6 +722,7 @@ public class StudyActOperations extends ClinicalStatementOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateStudyActText(StudyAct studyAct, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
@@ -751,6 +765,7 @@ public class StudyActOperations extends ClinicalStatementOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_STUDY_ACT_SERIES_ACT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -763,6 +778,7 @@ public class StudyActOperations extends ClinicalStatementOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateStudyActSeriesAct(StudyAct studyAct, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
@@ -813,6 +829,7 @@ public class StudyActOperations extends ClinicalStatementOperations {
 	 * <!-- end-user-doc -->
 	* @generated
 	*/
+
 	public static SeriesAct getSeriesAct(StudyAct studyAct) {
 		if (GET_SERIES_ACT__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();

@@ -78,6 +78,7 @@ public class FamilyHistorySectionOperations extends SectionOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_FAMILY_HISTORY_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -90,6 +91,7 @@ public class FamilyHistorySectionOperations extends SectionOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateFamilyHistorySectionTemplateId(FamilyHistorySection familyHistorySection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -137,6 +139,7 @@ public class FamilyHistorySectionOperations extends SectionOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_FAMILY_HISTORY_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -149,6 +152,7 @@ public class FamilyHistorySectionOperations extends SectionOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateFamilyHistorySectionCode(FamilyHistorySection familyHistorySection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -178,7 +182,7 @@ public class FamilyHistorySectionOperations extends SectionOperations {
 	/**
 	* The cached OCL expression body for the '{@link #validateFamilyHistorySectionCodeP(FamilyHistorySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Family History Section Code P</em>}' operation.
 	* <!-- begin-user-doc -->
-	* <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	* @see #validateFamilyHistorySectionCodeP(FamilyHistorySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	* @generated
 	* @ordered
@@ -251,6 +255,7 @@ public class FamilyHistorySectionOperations extends SectionOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_FAMILY_HISTORY_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -263,6 +268,7 @@ public class FamilyHistorySectionOperations extends SectionOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateFamilyHistorySectionTitle(FamilyHistorySection familyHistorySection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -307,6 +313,7 @@ public class FamilyHistorySectionOperations extends SectionOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_FAMILY_HISTORY_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -319,6 +326,7 @@ public class FamilyHistorySectionOperations extends SectionOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateFamilyHistorySectionText(FamilyHistorySection familyHistorySection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -363,6 +371,7 @@ public class FamilyHistorySectionOperations extends SectionOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_FAMILY_HISTORY_SECTION_FAMILY_HISTORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -375,6 +384,7 @@ public class FamilyHistorySectionOperations extends SectionOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateFamilyHistorySectionFamilyHistory(FamilyHistorySection familyHistorySection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -427,6 +437,7 @@ public class FamilyHistorySectionOperations extends SectionOperations {
 	 * <!-- end-user-doc -->
 	* @generated
 	*/
+
 	public static EList<FamilyHistoryOrganizer> getFamilyHistories(FamilyHistorySection familyHistorySection) {
 		if (GET_FAMILY_HISTORIES__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();

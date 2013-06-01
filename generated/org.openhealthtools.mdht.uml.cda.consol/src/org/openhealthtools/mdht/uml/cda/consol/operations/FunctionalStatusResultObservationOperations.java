@@ -1418,7 +1418,7 @@ public class FunctionalStatusResultObservationOperations extends ResultObservati
 	/**
 	* The cached OCL expression body for the '{@link #validateFunctionalStatusResultObservationReferenceRangeObservationRangeNoCode(FunctionalStatusResultObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Functional Status Result Observation Reference Range Observation Range No Code</em>}' operation.
 	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	* <!-- end-user-doc -->
 	* @see #validateFunctionalStatusResultObservationReferenceRangeObservationRangeNoCode(FunctionalStatusResultObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	* @generated
 	* @ordered
@@ -1426,26 +1426,26 @@ public class FunctionalStatusResultObservationOperations extends ResultObservati
 	protected static final String VALIDATE_FUNCTIONAL_STATUS_RESULT_OBSERVATION_REFERENCE_RANGE_OBSERVATION_RANGE_NO_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.referenceRange->excluding(null).observationRange->excluding(null)->reject(code.oclIsUndefined())";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateFunctionalStatusResultObservationReferenceRangeObservationRangeNoCode(FunctionalStatusResultObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Functional Status Result Observation Reference Range Observation Range No Code</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateFunctionalStatusResultObservationReferenceRangeObservationRangeNoCode(FunctionalStatusResultObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Functional Status Result Observation Reference Range Observation Range No Code</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateFunctionalStatusResultObservationReferenceRangeObservationRangeNoCode(FunctionalStatusResultObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateFunctionalStatusResultObservationReferenceRangeObservationRangeNoCode(FunctionalStatusResultObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 
 	protected static Query<?, ?, ?> VALIDATE_FUNCTIONAL_STATUS_RESULT_OBSERVATION_REFERENCE_RANGE_OBSERVATION_RANGE_NO_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param functionalStatusResultObservation The receiving '<em><b>Functional Status Result Observation</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param functionalStatusResultObservation The receiving '<em><b>Functional Status Result Observation</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 	@SuppressWarnings("unchecked")
 	public static boolean validateFunctionalStatusResultObservationReferenceRangeObservationRangeNoCode(
 			FunctionalStatusResultObservation functionalStatusResultObservation, DiagnosticChain diagnostics,
@@ -1482,36 +1482,36 @@ public class FunctionalStatusResultObservationOperations extends ResultObservati
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateFunctionalStatusResultObservationReferenceRangeObservationRange(FunctionalStatusResultObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Functional Status Result Observation Reference Range Observation Range</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateFunctionalStatusResultObservationReferenceRangeObservationRange(FunctionalStatusResultObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Functional Status Result Observation Reference Range Observation Range</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateFunctionalStatusResultObservationReferenceRangeObservationRange(FunctionalStatusResultObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateFunctionalStatusResultObservationReferenceRangeObservationRange(FunctionalStatusResultObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_FUNCTIONAL_STATUS_RESULT_OBSERVATION_REFERENCE_RANGE_OBSERVATION_RANGE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.referenceRange->excluding(null)->reject(observationRange->one(observationRange : cda::ObservationRange | not observationRange.oclIsUndefined() and observationRange.oclIsKindOf(cda::ObservationRange)))";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateFunctionalStatusResultObservationReferenceRangeObservationRange(FunctionalStatusResultObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Functional Status Result Observation Reference Range Observation Range</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateFunctionalStatusResultObservationReferenceRangeObservationRange(FunctionalStatusResultObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Functional Status Result Observation Reference Range Observation Range</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateFunctionalStatusResultObservationReferenceRangeObservationRange(FunctionalStatusResultObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateFunctionalStatusResultObservationReferenceRangeObservationRange(FunctionalStatusResultObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 
 	protected static Query<?, ?, ?> VALIDATE_FUNCTIONAL_STATUS_RESULT_OBSERVATION_REFERENCE_RANGE_OBSERVATION_RANGE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param functionalStatusResultObservation The receiving '<em><b>Functional Status Result Observation</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param functionalStatusResultObservation The receiving '<em><b>Functional Status Result Observation</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 	@SuppressWarnings("unchecked")
 	public static boolean validateFunctionalStatusResultObservationReferenceRangeObservationRange(
 			FunctionalStatusResultObservation functionalStatusResultObservation, DiagnosticChain diagnostics,
@@ -1548,13 +1548,13 @@ public class FunctionalStatusResultObservationOperations extends ResultObservati
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #getNonMedicinalSupplyActivity(FunctionalStatusResultObservation) <em>Get Non Medicinal Supply Activity</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #getNonMedicinalSupplyActivity(FunctionalStatusResultObservation) <em>Get Non Medicinal Supply Activity</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #getNonMedicinalSupplyActivity(FunctionalStatusResultObservation)
-	* @generated
-	* @ordered
-	*/
+	 * @see #getNonMedicinalSupplyActivity(FunctionalStatusResultObservation)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String GET_NON_MEDICINAL_SUPPLY_ACTIVITY__EOCL_EXP = "self.getSupplies()->select(supply : cda::Supply | not supply.oclIsUndefined() and supply.oclIsKindOf(consol::NonMedicinalSupplyActivity))->asSequence()->any(true).oclAsType(consol::NonMedicinalSupplyActivity)";
 
 	/**

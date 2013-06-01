@@ -69,6 +69,7 @@ public class PlanOfCareActivityActOperations extends ClinicalStatementOperations
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_PLAN_OF_CARE_ACTIVITY_ACT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -81,6 +82,7 @@ public class PlanOfCareActivityActOperations extends ClinicalStatementOperations
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validatePlanOfCareActivityActTemplateId(PlanOfCareActivityAct planOfCareActivityAct,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -246,6 +248,7 @@ public class PlanOfCareActivityActOperations extends ClinicalStatementOperations
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_PLAN_OF_CARE_ACTIVITY_ACT_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -258,6 +261,7 @@ public class PlanOfCareActivityActOperations extends ClinicalStatementOperations
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validatePlanOfCareActivityActId(PlanOfCareActivityAct planOfCareActivityAct,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 

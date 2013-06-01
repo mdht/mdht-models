@@ -151,6 +151,7 @@ public class HistoryAndPhysicalNoteOperations extends GeneralHeaderConstraintsOp
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_HISTORY_AND_PHYSICAL_NOTE_HAS_AN_ASSEMENT_AND_PLAN_SECTION_OR_INDIVIDUAL_ASSEMENT_AND_PLAN_SECTIONS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -163,6 +164,7 @@ public class HistoryAndPhysicalNoteOperations extends GeneralHeaderConstraintsOp
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateHistoryAndPhysicalNoteHasAnAssementAndPlanSectionOrIndividualAssementAndPlanSections(
 			HistoryAndPhysicalNote historyAndPhysicalNote, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -210,6 +212,7 @@ public class HistoryAndPhysicalNoteOperations extends GeneralHeaderConstraintsOp
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_HISTORY_AND_PHYSICAL_NOTE_DOES_NOT_HAVE_INDIVIDUAL_ASSEMENT_AND_PLAN_SECTIONS_WHEN_ASSEMENT_AND_PLAN_SECTION_PRESENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -222,6 +225,7 @@ public class HistoryAndPhysicalNoteOperations extends GeneralHeaderConstraintsOp
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateHistoryAndPhysicalNoteDoesNotHaveIndividualAssementAndPlanSectionsWhenAssementAndPlanSectionPresent(
 			HistoryAndPhysicalNote historyAndPhysicalNote, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -391,6 +395,7 @@ public class HistoryAndPhysicalNoteOperations extends GeneralHeaderConstraintsOp
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_HISTORY_AND_PHYSICAL_NOTE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -403,6 +408,7 @@ public class HistoryAndPhysicalNoteOperations extends GeneralHeaderConstraintsOp
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateHistoryAndPhysicalNoteTemplateId(HistoryAndPhysicalNote historyAndPhysicalNote,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -504,7 +510,7 @@ public class HistoryAndPhysicalNoteOperations extends GeneralHeaderConstraintsOp
 	/**
 	* The cached OCL expression body for the '{@link #validateHistoryAndPhysicalNoteCode(HistoryAndPhysicalNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate History And Physical Note Code</em>}' operation.
 	* <!-- begin-user-doc -->
-	* <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	* @see #validateHistoryAndPhysicalNoteCode(HistoryAndPhysicalNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	* @generated
 	* @ordered
@@ -588,6 +594,7 @@ public class HistoryAndPhysicalNoteOperations extends GeneralHeaderConstraintsOp
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_HISTORY_AND_PHYSICAL_NOTE_IN_FULFILLMENT_OF__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -600,6 +607,7 @@ public class HistoryAndPhysicalNoteOperations extends GeneralHeaderConstraintsOp
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateHistoryAndPhysicalNoteInFulfillmentOf(HistoryAndPhysicalNote historyAndPhysicalNote,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -645,6 +653,7 @@ public class HistoryAndPhysicalNoteOperations extends GeneralHeaderConstraintsOp
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_HISTORY_AND_PHYSICAL_NOTE_COMPONENT_OF__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -657,6 +666,7 @@ public class HistoryAndPhysicalNoteOperations extends GeneralHeaderConstraintsOp
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateHistoryAndPhysicalNoteComponentOf(HistoryAndPhysicalNote historyAndPhysicalNote,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -702,6 +712,7 @@ public class HistoryAndPhysicalNoteOperations extends GeneralHeaderConstraintsOp
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_HISTORY_AND_PHYSICAL_NOTE_ALLERGIES_SECTION_ENTRIES_OPTIONAL__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -714,6 +725,7 @@ public class HistoryAndPhysicalNoteOperations extends GeneralHeaderConstraintsOp
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateHistoryAndPhysicalNoteAllergiesSectionEntriesOptional(
 			HistoryAndPhysicalNote historyAndPhysicalNote, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -761,6 +773,7 @@ public class HistoryAndPhysicalNoteOperations extends GeneralHeaderConstraintsOp
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_HISTORY_AND_PHYSICAL_NOTE_ASSESSMENT_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -773,6 +786,7 @@ public class HistoryAndPhysicalNoteOperations extends GeneralHeaderConstraintsOp
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateHistoryAndPhysicalNoteAssessmentSection(
 			HistoryAndPhysicalNote historyAndPhysicalNote, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -818,6 +832,7 @@ public class HistoryAndPhysicalNoteOperations extends GeneralHeaderConstraintsOp
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_HISTORY_AND_PHYSICAL_NOTE_PLAN_OF_CARE_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -830,6 +845,7 @@ public class HistoryAndPhysicalNoteOperations extends GeneralHeaderConstraintsOp
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateHistoryAndPhysicalNotePlanOfCareSection(
 			HistoryAndPhysicalNote historyAndPhysicalNote, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -876,6 +892,7 @@ public class HistoryAndPhysicalNoteOperations extends GeneralHeaderConstraintsOp
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_HISTORY_AND_PHYSICAL_NOTE_ASSESSMENT_AND_PLAN_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -888,6 +905,7 @@ public class HistoryAndPhysicalNoteOperations extends GeneralHeaderConstraintsOp
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateHistoryAndPhysicalNoteAssessmentAndPlanSection(
 			HistoryAndPhysicalNote historyAndPhysicalNote, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -934,6 +952,7 @@ public class HistoryAndPhysicalNoteOperations extends GeneralHeaderConstraintsOp
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_HISTORY_AND_PHYSICAL_NOTE_CHIEF_COMPLAINT_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -946,6 +965,7 @@ public class HistoryAndPhysicalNoteOperations extends GeneralHeaderConstraintsOp
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateHistoryAndPhysicalNoteChiefComplaintSection(
 			HistoryAndPhysicalNote historyAndPhysicalNote, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -992,6 +1012,7 @@ public class HistoryAndPhysicalNoteOperations extends GeneralHeaderConstraintsOp
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_HISTORY_AND_PHYSICAL_NOTE_CHIEF_COMPLAINT_AND_REASON_FOR_VISIT_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -1004,6 +1025,7 @@ public class HistoryAndPhysicalNoteOperations extends GeneralHeaderConstraintsOp
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateHistoryAndPhysicalNoteChiefComplaintAndReasonForVisitSection(
 			HistoryAndPhysicalNote historyAndPhysicalNote, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -1051,6 +1073,7 @@ public class HistoryAndPhysicalNoteOperations extends GeneralHeaderConstraintsOp
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_HISTORY_AND_PHYSICAL_NOTE_FAMILY_HISTORY_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -1063,6 +1086,7 @@ public class HistoryAndPhysicalNoteOperations extends GeneralHeaderConstraintsOp
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateHistoryAndPhysicalNoteFamilyHistorySection(
 			HistoryAndPhysicalNote historyAndPhysicalNote, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -1109,6 +1133,7 @@ public class HistoryAndPhysicalNoteOperations extends GeneralHeaderConstraintsOp
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_HISTORY_AND_PHYSICAL_NOTE_GENERAL_STATUS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -1121,6 +1146,7 @@ public class HistoryAndPhysicalNoteOperations extends GeneralHeaderConstraintsOp
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateHistoryAndPhysicalNoteGeneralStatusSection(
 			HistoryAndPhysicalNote historyAndPhysicalNote, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -1167,6 +1193,7 @@ public class HistoryAndPhysicalNoteOperations extends GeneralHeaderConstraintsOp
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_HISTORY_AND_PHYSICAL_NOTE_HISTORY_OF_PAST_ILLNESS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -1179,6 +1206,7 @@ public class HistoryAndPhysicalNoteOperations extends GeneralHeaderConstraintsOp
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateHistoryAndPhysicalNoteHistoryOfPastIllnessSection(
 			HistoryAndPhysicalNote historyAndPhysicalNote, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -1226,6 +1254,7 @@ public class HistoryAndPhysicalNoteOperations extends GeneralHeaderConstraintsOp
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_HISTORY_AND_PHYSICAL_NOTE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -1238,6 +1267,7 @@ public class HistoryAndPhysicalNoteOperations extends GeneralHeaderConstraintsOp
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateHistoryAndPhysicalNoteMedicationsSectionEntriesOptional(
 			HistoryAndPhysicalNote historyAndPhysicalNote, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -1285,6 +1315,7 @@ public class HistoryAndPhysicalNoteOperations extends GeneralHeaderConstraintsOp
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_HISTORY_AND_PHYSICAL_NOTE_PHYSICAL_EXAM_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -1297,6 +1328,7 @@ public class HistoryAndPhysicalNoteOperations extends GeneralHeaderConstraintsOp
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateHistoryAndPhysicalNotePhysicalExamSection(
 			HistoryAndPhysicalNote historyAndPhysicalNote, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -1343,6 +1375,7 @@ public class HistoryAndPhysicalNoteOperations extends GeneralHeaderConstraintsOp
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_HISTORY_AND_PHYSICAL_NOTE_REASON_FOR_VISIT_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -1355,6 +1388,7 @@ public class HistoryAndPhysicalNoteOperations extends GeneralHeaderConstraintsOp
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateHistoryAndPhysicalNoteReasonForVisitSection(
 			HistoryAndPhysicalNote historyAndPhysicalNote, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -1401,6 +1435,7 @@ public class HistoryAndPhysicalNoteOperations extends GeneralHeaderConstraintsOp
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_HISTORY_AND_PHYSICAL_NOTE_RESULTS_SECTION_ENTRIES_OPTIONAL__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -1413,6 +1448,7 @@ public class HistoryAndPhysicalNoteOperations extends GeneralHeaderConstraintsOp
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateHistoryAndPhysicalNoteResultsSectionEntriesOptional(
 			HistoryAndPhysicalNote historyAndPhysicalNote, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -1460,6 +1496,7 @@ public class HistoryAndPhysicalNoteOperations extends GeneralHeaderConstraintsOp
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_HISTORY_AND_PHYSICAL_NOTE_REVIEW_OF_SYSTEMS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -1472,6 +1509,7 @@ public class HistoryAndPhysicalNoteOperations extends GeneralHeaderConstraintsOp
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateHistoryAndPhysicalNoteReviewOfSystemsSection(
 			HistoryAndPhysicalNote historyAndPhysicalNote, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -1518,6 +1556,7 @@ public class HistoryAndPhysicalNoteOperations extends GeneralHeaderConstraintsOp
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_HISTORY_AND_PHYSICAL_NOTE_SOCIAL_HISTORY_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -1530,6 +1569,7 @@ public class HistoryAndPhysicalNoteOperations extends GeneralHeaderConstraintsOp
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateHistoryAndPhysicalNoteSocialHistorySection(
 			HistoryAndPhysicalNote historyAndPhysicalNote, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -1576,6 +1616,7 @@ public class HistoryAndPhysicalNoteOperations extends GeneralHeaderConstraintsOp
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_HISTORY_AND_PHYSICAL_NOTE_HISTORY_OF_PRESENT_ILLNESS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -1588,6 +1629,7 @@ public class HistoryAndPhysicalNoteOperations extends GeneralHeaderConstraintsOp
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateHistoryAndPhysicalNoteHistoryOfPresentIllnessSection(
 			HistoryAndPhysicalNote historyAndPhysicalNote, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -1635,6 +1677,7 @@ public class HistoryAndPhysicalNoteOperations extends GeneralHeaderConstraintsOp
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_HISTORY_AND_PHYSICAL_NOTE_IMMUNIZATIONS_SECTION_ENTRIES_OPTIONAL__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -1647,6 +1690,7 @@ public class HistoryAndPhysicalNoteOperations extends GeneralHeaderConstraintsOp
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateHistoryAndPhysicalNoteImmunizationsSectionEntriesOptional(
 			HistoryAndPhysicalNote historyAndPhysicalNote, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -1694,6 +1738,7 @@ public class HistoryAndPhysicalNoteOperations extends GeneralHeaderConstraintsOp
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_HISTORY_AND_PHYSICAL_NOTE_PROBLEM_SECTION_ENTRIES_OPTIONAL__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -1706,6 +1751,7 @@ public class HistoryAndPhysicalNoteOperations extends GeneralHeaderConstraintsOp
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateHistoryAndPhysicalNoteProblemSectionEntriesOptional(
 			HistoryAndPhysicalNote historyAndPhysicalNote, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -1753,6 +1799,7 @@ public class HistoryAndPhysicalNoteOperations extends GeneralHeaderConstraintsOp
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_HISTORY_AND_PHYSICAL_NOTE_PROCEDURES_SECTION_ENTRIES_OPTIONAL__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -1765,6 +1812,7 @@ public class HistoryAndPhysicalNoteOperations extends GeneralHeaderConstraintsOp
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateHistoryAndPhysicalNoteProceduresSectionEntriesOptional(
 			HistoryAndPhysicalNote historyAndPhysicalNote, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -1812,6 +1860,7 @@ public class HistoryAndPhysicalNoteOperations extends GeneralHeaderConstraintsOp
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_HISTORY_AND_PHYSICAL_NOTE_VITAL_SIGNS_SECTION_ENTRIES_OPTIONAL__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -1824,6 +1873,7 @@ public class HistoryAndPhysicalNoteOperations extends GeneralHeaderConstraintsOp
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateHistoryAndPhysicalNoteVitalSignsSectionEntriesOptional(
 			HistoryAndPhysicalNote historyAndPhysicalNote, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -1916,7 +1966,7 @@ public class HistoryAndPhysicalNoteOperations extends GeneralHeaderConstraintsOp
 	/**
 	* The cached OCL expression body for the '{@link #validateHistoryAndPhysicalNoteComponentOfEncompassingEncounter4ResponsiblePartyAssignedEntityHasPersonOrOrganization(HistoryAndPhysicalNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate History And Physical Note Component Of Encompassing Encounter4 Responsible Party Assigned Entity Has Person Or Organization</em>}' operation.
 	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	* <!-- end-user-doc -->
 	* @see #validateHistoryAndPhysicalNoteComponentOfEncompassingEncounter4ResponsiblePartyAssignedEntityHasPersonOrOrganization(HistoryAndPhysicalNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	* @generated
 	* @ordered
@@ -1924,26 +1974,26 @@ public class HistoryAndPhysicalNoteOperations extends GeneralHeaderConstraintsOp
 	protected static final String VALIDATE_HISTORY_AND_PHYSICAL_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER4_RESPONSIBLE_PARTY_ASSIGNED_ENTITY_HAS_PERSON_OR_ORGANIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.componentOf->excluding(null).encompassingEncounter->excluding(null).responsibleParty->excluding(null)->reject(not assignedEntity.assignedPerson.oclIsUndefined() or not assignedEntity.representedOrganization->isEmpty())";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateHistoryAndPhysicalNoteComponentOfEncompassingEncounter4ResponsiblePartyAssignedEntityHasPersonOrOrganization(HistoryAndPhysicalNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate History And Physical Note Component Of Encompassing Encounter4 Responsible Party Assigned Entity Has Person Or Organization</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateHistoryAndPhysicalNoteComponentOfEncompassingEncounter4ResponsiblePartyAssignedEntityHasPersonOrOrganization(HistoryAndPhysicalNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate History And Physical Note Component Of Encompassing Encounter4 Responsible Party Assigned Entity Has Person Or Organization</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateHistoryAndPhysicalNoteComponentOfEncompassingEncounter4ResponsiblePartyAssignedEntityHasPersonOrOrganization(HistoryAndPhysicalNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateHistoryAndPhysicalNoteComponentOfEncompassingEncounter4ResponsiblePartyAssignedEntityHasPersonOrOrganization(HistoryAndPhysicalNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 
 	protected static Query<?, ?, ?> VALIDATE_HISTORY_AND_PHYSICAL_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER4_RESPONSIBLE_PARTY_ASSIGNED_ENTITY_HAS_PERSON_OR_ORGANIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param historyAndPhysicalNote The receiving '<em><b>History And Physical Note</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param historyAndPhysicalNote The receiving '<em><b>History And Physical Note</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 	@SuppressWarnings("unchecked")
 	public static boolean validateHistoryAndPhysicalNoteComponentOfEncompassingEncounter4ResponsiblePartyAssignedEntityHasPersonOrOrganization(
 			HistoryAndPhysicalNote historyAndPhysicalNote, DiagnosticChain diagnostics, Map<Object, Object> context) {
@@ -1979,36 +2029,36 @@ public class HistoryAndPhysicalNoteOperations extends GeneralHeaderConstraintsOp
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateHistoryAndPhysicalNoteComponentOfEncompassingEncounter4ResponsiblePartyAssignedEntity(HistoryAndPhysicalNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate History And Physical Note Component Of Encompassing Encounter4 Responsible Party Assigned Entity</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateHistoryAndPhysicalNoteComponentOfEncompassingEncounter4ResponsiblePartyAssignedEntity(HistoryAndPhysicalNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate History And Physical Note Component Of Encompassing Encounter4 Responsible Party Assigned Entity</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateHistoryAndPhysicalNoteComponentOfEncompassingEncounter4ResponsiblePartyAssignedEntity(HistoryAndPhysicalNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateHistoryAndPhysicalNoteComponentOfEncompassingEncounter4ResponsiblePartyAssignedEntity(HistoryAndPhysicalNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_HISTORY_AND_PHYSICAL_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER4_RESPONSIBLE_PARTY_ASSIGNED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.componentOf->excluding(null).encompassingEncounter->excluding(null).responsibleParty->excluding(null)->reject(assignedEntity->one(assignedEntity : cda::AssignedEntity | not assignedEntity.oclIsUndefined() and assignedEntity.oclIsKindOf(rim::Role)))";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateHistoryAndPhysicalNoteComponentOfEncompassingEncounter4ResponsiblePartyAssignedEntity(HistoryAndPhysicalNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate History And Physical Note Component Of Encompassing Encounter4 Responsible Party Assigned Entity</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateHistoryAndPhysicalNoteComponentOfEncompassingEncounter4ResponsiblePartyAssignedEntity(HistoryAndPhysicalNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate History And Physical Note Component Of Encompassing Encounter4 Responsible Party Assigned Entity</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateHistoryAndPhysicalNoteComponentOfEncompassingEncounter4ResponsiblePartyAssignedEntity(HistoryAndPhysicalNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateHistoryAndPhysicalNoteComponentOfEncompassingEncounter4ResponsiblePartyAssignedEntity(HistoryAndPhysicalNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 
 	protected static Query<?, ?, ?> VALIDATE_HISTORY_AND_PHYSICAL_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER4_RESPONSIBLE_PARTY_ASSIGNED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param historyAndPhysicalNote The receiving '<em><b>History And Physical Note</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param historyAndPhysicalNote The receiving '<em><b>History And Physical Note</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 	@SuppressWarnings("unchecked")
 	public static boolean validateHistoryAndPhysicalNoteComponentOfEncompassingEncounter4ResponsiblePartyAssignedEntity(
 			HistoryAndPhysicalNote historyAndPhysicalNote, DiagnosticChain diagnostics, Map<Object, Object> context) {
@@ -2044,36 +2094,36 @@ public class HistoryAndPhysicalNoteOperations extends GeneralHeaderConstraintsOp
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateHistoryAndPhysicalNoteComponentOfEncompassingEncounter4EncounterParticipantAssignedEntityHasPersonOrOrganization(HistoryAndPhysicalNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate History And Physical Note Component Of Encompassing Encounter4 Encounter Participant Assigned Entity Has Person Or Organization</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateHistoryAndPhysicalNoteComponentOfEncompassingEncounter4EncounterParticipantAssignedEntityHasPersonOrOrganization(HistoryAndPhysicalNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate History And Physical Note Component Of Encompassing Encounter4 Encounter Participant Assigned Entity Has Person Or Organization</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateHistoryAndPhysicalNoteComponentOfEncompassingEncounter4EncounterParticipantAssignedEntityHasPersonOrOrganization(HistoryAndPhysicalNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateHistoryAndPhysicalNoteComponentOfEncompassingEncounter4EncounterParticipantAssignedEntityHasPersonOrOrganization(HistoryAndPhysicalNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_HISTORY_AND_PHYSICAL_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER4_ENCOUNTER_PARTICIPANT_ASSIGNED_ENTITY_HAS_PERSON_OR_ORGANIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.componentOf->excluding(null).encompassingEncounter->excluding(null).encounterParticipant->excluding(null)->reject(not assignedEntity.assignedPerson.oclIsUndefined() or not assignedEntity.representedOrganization->isEmpty())";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateHistoryAndPhysicalNoteComponentOfEncompassingEncounter4EncounterParticipantAssignedEntityHasPersonOrOrganization(HistoryAndPhysicalNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate History And Physical Note Component Of Encompassing Encounter4 Encounter Participant Assigned Entity Has Person Or Organization</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateHistoryAndPhysicalNoteComponentOfEncompassingEncounter4EncounterParticipantAssignedEntityHasPersonOrOrganization(HistoryAndPhysicalNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate History And Physical Note Component Of Encompassing Encounter4 Encounter Participant Assigned Entity Has Person Or Organization</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateHistoryAndPhysicalNoteComponentOfEncompassingEncounter4EncounterParticipantAssignedEntityHasPersonOrOrganization(HistoryAndPhysicalNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateHistoryAndPhysicalNoteComponentOfEncompassingEncounter4EncounterParticipantAssignedEntityHasPersonOrOrganization(HistoryAndPhysicalNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 
 	protected static Query<?, ?, ?> VALIDATE_HISTORY_AND_PHYSICAL_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER4_ENCOUNTER_PARTICIPANT_ASSIGNED_ENTITY_HAS_PERSON_OR_ORGANIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param historyAndPhysicalNote The receiving '<em><b>History And Physical Note</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param historyAndPhysicalNote The receiving '<em><b>History And Physical Note</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 	@SuppressWarnings("unchecked")
 	public static boolean validateHistoryAndPhysicalNoteComponentOfEncompassingEncounter4EncounterParticipantAssignedEntityHasPersonOrOrganization(
 			HistoryAndPhysicalNote historyAndPhysicalNote, DiagnosticChain diagnostics, Map<Object, Object> context) {
@@ -2109,36 +2159,36 @@ public class HistoryAndPhysicalNoteOperations extends GeneralHeaderConstraintsOp
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateHistoryAndPhysicalNoteComponentOfEncompassingEncounter4EncounterParticipantAssignedEntity(HistoryAndPhysicalNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate History And Physical Note Component Of Encompassing Encounter4 Encounter Participant Assigned Entity</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateHistoryAndPhysicalNoteComponentOfEncompassingEncounter4EncounterParticipantAssignedEntity(HistoryAndPhysicalNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate History And Physical Note Component Of Encompassing Encounter4 Encounter Participant Assigned Entity</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateHistoryAndPhysicalNoteComponentOfEncompassingEncounter4EncounterParticipantAssignedEntity(HistoryAndPhysicalNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateHistoryAndPhysicalNoteComponentOfEncompassingEncounter4EncounterParticipantAssignedEntity(HistoryAndPhysicalNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_HISTORY_AND_PHYSICAL_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER4_ENCOUNTER_PARTICIPANT_ASSIGNED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.componentOf->excluding(null).encompassingEncounter->excluding(null).encounterParticipant->excluding(null)->reject(assignedEntity->one(assignedEntity : cda::AssignedEntity | not assignedEntity.oclIsUndefined() and assignedEntity.oclIsKindOf(rim::Role)))";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateHistoryAndPhysicalNoteComponentOfEncompassingEncounter4EncounterParticipantAssignedEntity(HistoryAndPhysicalNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate History And Physical Note Component Of Encompassing Encounter4 Encounter Participant Assigned Entity</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateHistoryAndPhysicalNoteComponentOfEncompassingEncounter4EncounterParticipantAssignedEntity(HistoryAndPhysicalNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate History And Physical Note Component Of Encompassing Encounter4 Encounter Participant Assigned Entity</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateHistoryAndPhysicalNoteComponentOfEncompassingEncounter4EncounterParticipantAssignedEntity(HistoryAndPhysicalNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateHistoryAndPhysicalNoteComponentOfEncompassingEncounter4EncounterParticipantAssignedEntity(HistoryAndPhysicalNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 
 	protected static Query<?, ?, ?> VALIDATE_HISTORY_AND_PHYSICAL_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER4_ENCOUNTER_PARTICIPANT_ASSIGNED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param historyAndPhysicalNote The receiving '<em><b>History And Physical Note</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param historyAndPhysicalNote The receiving '<em><b>History And Physical Note</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 	@SuppressWarnings("unchecked")
 	public static boolean validateHistoryAndPhysicalNoteComponentOfEncompassingEncounter4EncounterParticipantAssignedEntity(
 			HistoryAndPhysicalNote historyAndPhysicalNote, DiagnosticChain diagnostics, Map<Object, Object> context) {
@@ -2174,36 +2224,36 @@ public class HistoryAndPhysicalNoteOperations extends GeneralHeaderConstraintsOp
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateHistoryAndPhysicalNoteComponentOfEncompassingEncounter4EffectiveTime(HistoryAndPhysicalNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate History And Physical Note Component Of Encompassing Encounter4 Effective Time</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateHistoryAndPhysicalNoteComponentOfEncompassingEncounter4EffectiveTime(HistoryAndPhysicalNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate History And Physical Note Component Of Encompassing Encounter4 Effective Time</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateHistoryAndPhysicalNoteComponentOfEncompassingEncounter4EffectiveTime(HistoryAndPhysicalNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateHistoryAndPhysicalNoteComponentOfEncompassingEncounter4EffectiveTime(HistoryAndPhysicalNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_HISTORY_AND_PHYSICAL_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER4_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.componentOf->excluding(null).encompassingEncounter->excluding(null)->reject((effectiveTime.oclIsUndefined() or effectiveTime.isNullFlavorUndefined()) implies (not effectiveTime.oclIsUndefined()))";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateHistoryAndPhysicalNoteComponentOfEncompassingEncounter4EffectiveTime(HistoryAndPhysicalNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate History And Physical Note Component Of Encompassing Encounter4 Effective Time</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateHistoryAndPhysicalNoteComponentOfEncompassingEncounter4EffectiveTime(HistoryAndPhysicalNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate History And Physical Note Component Of Encompassing Encounter4 Effective Time</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateHistoryAndPhysicalNoteComponentOfEncompassingEncounter4EffectiveTime(HistoryAndPhysicalNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateHistoryAndPhysicalNoteComponentOfEncompassingEncounter4EffectiveTime(HistoryAndPhysicalNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 
 	protected static Query<?, ?, ?> VALIDATE_HISTORY_AND_PHYSICAL_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER4_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param historyAndPhysicalNote The receiving '<em><b>History And Physical Note</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param historyAndPhysicalNote The receiving '<em><b>History And Physical Note</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 	@SuppressWarnings("unchecked")
 	public static boolean validateHistoryAndPhysicalNoteComponentOfEncompassingEncounter4EffectiveTime(
 			HistoryAndPhysicalNote historyAndPhysicalNote, DiagnosticChain diagnostics, Map<Object, Object> context) {
@@ -2239,36 +2289,36 @@ public class HistoryAndPhysicalNoteOperations extends GeneralHeaderConstraintsOp
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateHistoryAndPhysicalNoteComponentOfEncompassingEncounter4Id(HistoryAndPhysicalNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate History And Physical Note Component Of Encompassing Encounter4 Id</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateHistoryAndPhysicalNoteComponentOfEncompassingEncounter4Id(HistoryAndPhysicalNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate History And Physical Note Component Of Encompassing Encounter4 Id</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateHistoryAndPhysicalNoteComponentOfEncompassingEncounter4Id(HistoryAndPhysicalNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateHistoryAndPhysicalNoteComponentOfEncompassingEncounter4Id(HistoryAndPhysicalNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_HISTORY_AND_PHYSICAL_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER4_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.componentOf->excluding(null).encompassingEncounter->excluding(null)->reject((id->isEmpty() or id->exists(element | element.isNullFlavorUndefined())) implies (id->size() = 1))";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateHistoryAndPhysicalNoteComponentOfEncompassingEncounter4Id(HistoryAndPhysicalNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate History And Physical Note Component Of Encompassing Encounter4 Id</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateHistoryAndPhysicalNoteComponentOfEncompassingEncounter4Id(HistoryAndPhysicalNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate History And Physical Note Component Of Encompassing Encounter4 Id</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateHistoryAndPhysicalNoteComponentOfEncompassingEncounter4Id(HistoryAndPhysicalNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateHistoryAndPhysicalNoteComponentOfEncompassingEncounter4Id(HistoryAndPhysicalNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 
 	protected static Query<?, ?, ?> VALIDATE_HISTORY_AND_PHYSICAL_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER4_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param historyAndPhysicalNote The receiving '<em><b>History And Physical Note</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param historyAndPhysicalNote The receiving '<em><b>History And Physical Note</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 	@SuppressWarnings("unchecked")
 	public static boolean validateHistoryAndPhysicalNoteComponentOfEncompassingEncounter4Id(
 			HistoryAndPhysicalNote historyAndPhysicalNote, DiagnosticChain diagnostics, Map<Object, Object> context) {
@@ -2304,36 +2354,36 @@ public class HistoryAndPhysicalNoteOperations extends GeneralHeaderConstraintsOp
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateHistoryAndPhysicalNoteComponentOfEncompassingEncounter4Location(HistoryAndPhysicalNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate History And Physical Note Component Of Encompassing Encounter4 Location</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateHistoryAndPhysicalNoteComponentOfEncompassingEncounter4Location(HistoryAndPhysicalNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate History And Physical Note Component Of Encompassing Encounter4 Location</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateHistoryAndPhysicalNoteComponentOfEncompassingEncounter4Location(HistoryAndPhysicalNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateHistoryAndPhysicalNoteComponentOfEncompassingEncounter4Location(HistoryAndPhysicalNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_HISTORY_AND_PHYSICAL_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER4_LOCATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.componentOf->excluding(null).encompassingEncounter->excluding(null)->reject(location->one(location : cda::Location | not location.oclIsUndefined() and location.oclIsKindOf(rim::Participation)))";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateHistoryAndPhysicalNoteComponentOfEncompassingEncounter4Location(HistoryAndPhysicalNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate History And Physical Note Component Of Encompassing Encounter4 Location</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateHistoryAndPhysicalNoteComponentOfEncompassingEncounter4Location(HistoryAndPhysicalNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate History And Physical Note Component Of Encompassing Encounter4 Location</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateHistoryAndPhysicalNoteComponentOfEncompassingEncounter4Location(HistoryAndPhysicalNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateHistoryAndPhysicalNoteComponentOfEncompassingEncounter4Location(HistoryAndPhysicalNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 
 	protected static Query<?, ?, ?> VALIDATE_HISTORY_AND_PHYSICAL_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER4_LOCATION__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param historyAndPhysicalNote The receiving '<em><b>History And Physical Note</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param historyAndPhysicalNote The receiving '<em><b>History And Physical Note</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 	@SuppressWarnings("unchecked")
 	public static boolean validateHistoryAndPhysicalNoteComponentOfEncompassingEncounter4Location(
 			HistoryAndPhysicalNote historyAndPhysicalNote, DiagnosticChain diagnostics, Map<Object, Object> context) {
@@ -2369,36 +2419,36 @@ public class HistoryAndPhysicalNoteOperations extends GeneralHeaderConstraintsOp
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateHistoryAndPhysicalNoteComponentOfEncompassingEncounter4ResponsibleParty(HistoryAndPhysicalNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate History And Physical Note Component Of Encompassing Encounter4 Responsible Party</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateHistoryAndPhysicalNoteComponentOfEncompassingEncounter4ResponsibleParty(HistoryAndPhysicalNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate History And Physical Note Component Of Encompassing Encounter4 Responsible Party</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateHistoryAndPhysicalNoteComponentOfEncompassingEncounter4ResponsibleParty(HistoryAndPhysicalNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateHistoryAndPhysicalNoteComponentOfEncompassingEncounter4ResponsibleParty(HistoryAndPhysicalNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_HISTORY_AND_PHYSICAL_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER4_RESPONSIBLE_PARTY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.componentOf->excluding(null).encompassingEncounter->excluding(null)->reject(responsibleParty->one(responsibleParty : cda::ResponsibleParty | not responsibleParty.oclIsUndefined() and responsibleParty.oclIsKindOf(cda::ResponsibleParty)))";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateHistoryAndPhysicalNoteComponentOfEncompassingEncounter4ResponsibleParty(HistoryAndPhysicalNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate History And Physical Note Component Of Encompassing Encounter4 Responsible Party</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateHistoryAndPhysicalNoteComponentOfEncompassingEncounter4ResponsibleParty(HistoryAndPhysicalNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate History And Physical Note Component Of Encompassing Encounter4 Responsible Party</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateHistoryAndPhysicalNoteComponentOfEncompassingEncounter4ResponsibleParty(HistoryAndPhysicalNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateHistoryAndPhysicalNoteComponentOfEncompassingEncounter4ResponsibleParty(HistoryAndPhysicalNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 
 	protected static Query<?, ?, ?> VALIDATE_HISTORY_AND_PHYSICAL_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER4_RESPONSIBLE_PARTY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param historyAndPhysicalNote The receiving '<em><b>History And Physical Note</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param historyAndPhysicalNote The receiving '<em><b>History And Physical Note</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 	@SuppressWarnings("unchecked")
 	public static boolean validateHistoryAndPhysicalNoteComponentOfEncompassingEncounter4ResponsibleParty(
 			HistoryAndPhysicalNote historyAndPhysicalNote, DiagnosticChain diagnostics, Map<Object, Object> context) {
@@ -2434,36 +2484,36 @@ public class HistoryAndPhysicalNoteOperations extends GeneralHeaderConstraintsOp
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateHistoryAndPhysicalNoteComponentOfEncompassingEncounter4EncounterParticipant(HistoryAndPhysicalNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate History And Physical Note Component Of Encompassing Encounter4 Encounter Participant</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateHistoryAndPhysicalNoteComponentOfEncompassingEncounter4EncounterParticipant(HistoryAndPhysicalNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate History And Physical Note Component Of Encompassing Encounter4 Encounter Participant</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateHistoryAndPhysicalNoteComponentOfEncompassingEncounter4EncounterParticipant(HistoryAndPhysicalNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateHistoryAndPhysicalNoteComponentOfEncompassingEncounter4EncounterParticipant(HistoryAndPhysicalNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_HISTORY_AND_PHYSICAL_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER4_ENCOUNTER_PARTICIPANT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.componentOf->excluding(null).encompassingEncounter->excluding(null)->reject(encounterParticipant->one(encounterParticipant : cda::EncounterParticipant | not encounterParticipant.oclIsUndefined() and encounterParticipant.oclIsKindOf(cda::EncounterParticipant)))";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateHistoryAndPhysicalNoteComponentOfEncompassingEncounter4EncounterParticipant(HistoryAndPhysicalNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate History And Physical Note Component Of Encompassing Encounter4 Encounter Participant</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateHistoryAndPhysicalNoteComponentOfEncompassingEncounter4EncounterParticipant(HistoryAndPhysicalNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate History And Physical Note Component Of Encompassing Encounter4 Encounter Participant</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateHistoryAndPhysicalNoteComponentOfEncompassingEncounter4EncounterParticipant(HistoryAndPhysicalNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateHistoryAndPhysicalNoteComponentOfEncompassingEncounter4EncounterParticipant(HistoryAndPhysicalNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 
 	protected static Query<?, ?, ?> VALIDATE_HISTORY_AND_PHYSICAL_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER4_ENCOUNTER_PARTICIPANT__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param historyAndPhysicalNote The receiving '<em><b>History And Physical Note</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param historyAndPhysicalNote The receiving '<em><b>History And Physical Note</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 	@SuppressWarnings("unchecked")
 	public static boolean validateHistoryAndPhysicalNoteComponentOfEncompassingEncounter4EncounterParticipant(
 			HistoryAndPhysicalNote historyAndPhysicalNote, DiagnosticChain diagnostics, Map<Object, Object> context) {
@@ -2499,36 +2549,36 @@ public class HistoryAndPhysicalNoteOperations extends GeneralHeaderConstraintsOp
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateHistoryAndPhysicalNoteComponentOfEncompassingEncounter(HistoryAndPhysicalNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate History And Physical Note Component Of Encompassing Encounter</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateHistoryAndPhysicalNoteComponentOfEncompassingEncounter(HistoryAndPhysicalNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate History And Physical Note Component Of Encompassing Encounter</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateHistoryAndPhysicalNoteComponentOfEncompassingEncounter(HistoryAndPhysicalNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateHistoryAndPhysicalNoteComponentOfEncompassingEncounter(HistoryAndPhysicalNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_HISTORY_AND_PHYSICAL_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.componentOf->excluding(null)->reject(encompassingEncounter->one(encompassingEncounter : cda::EncompassingEncounter | not encompassingEncounter.oclIsUndefined() and encompassingEncounter.oclIsKindOf(cda::EncompassingEncounter)))";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateHistoryAndPhysicalNoteComponentOfEncompassingEncounter(HistoryAndPhysicalNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate History And Physical Note Component Of Encompassing Encounter</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateHistoryAndPhysicalNoteComponentOfEncompassingEncounter(HistoryAndPhysicalNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate History And Physical Note Component Of Encompassing Encounter</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateHistoryAndPhysicalNoteComponentOfEncompassingEncounter(HistoryAndPhysicalNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateHistoryAndPhysicalNoteComponentOfEncompassingEncounter(HistoryAndPhysicalNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 
 	protected static Query<?, ?, ?> VALIDATE_HISTORY_AND_PHYSICAL_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param historyAndPhysicalNote The receiving '<em><b>History And Physical Note</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param historyAndPhysicalNote The receiving '<em><b>History And Physical Note</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 	@SuppressWarnings("unchecked")
 	public static boolean validateHistoryAndPhysicalNoteComponentOfEncompassingEncounter(
 			HistoryAndPhysicalNote historyAndPhysicalNote, DiagnosticChain diagnostics, Map<Object, Object> context) {
@@ -2564,13 +2614,13 @@ public class HistoryAndPhysicalNoteOperations extends GeneralHeaderConstraintsOp
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #getAllergiesSectionEntriesOptional(HistoryAndPhysicalNote) <em>Get Allergies Section Entries Optional</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #getAllergiesSectionEntriesOptional(HistoryAndPhysicalNote) <em>Get Allergies Section Entries Optional</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #getAllergiesSectionEntriesOptional(HistoryAndPhysicalNote)
-	* @generated
-	* @ordered
-	*/
+	 * @see #getAllergiesSectionEntriesOptional(HistoryAndPhysicalNote)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String GET_ALLERGIES_SECTION_ENTRIES_OPTIONAL__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::AllergiesSectionEntriesOptional))->asSequence()->any(true).oclAsType(consol::AllergiesSectionEntriesOptional)";
 
 	/**
@@ -2588,6 +2638,7 @@ public class HistoryAndPhysicalNoteOperations extends GeneralHeaderConstraintsOp
 	 * <!-- end-user-doc -->
 	* @generated
 	*/
+
 	public static AllergiesSectionEntriesOptional getAllergiesSectionEntriesOptional(
 			HistoryAndPhysicalNote historyAndPhysicalNote) {
 		if (GET_ALLERGIES_SECTION_ENTRIES_OPTIONAL__EOCL_QRY == null) {
@@ -2630,6 +2681,7 @@ public class HistoryAndPhysicalNoteOperations extends GeneralHeaderConstraintsOp
 	 * <!-- end-user-doc -->
 	* @generated
 	*/
+
 	public static AssessmentSection getAssessmentSection(HistoryAndPhysicalNote historyAndPhysicalNote) {
 		if (GET_ASSESSMENT_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
@@ -2671,6 +2723,7 @@ public class HistoryAndPhysicalNoteOperations extends GeneralHeaderConstraintsOp
 	 * <!-- end-user-doc -->
 	* @generated
 	*/
+
 	public static PlanOfCareSection getPlanOfCareSection(HistoryAndPhysicalNote historyAndPhysicalNote) {
 		if (GET_PLAN_OF_CARE_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
@@ -2712,6 +2765,7 @@ public class HistoryAndPhysicalNoteOperations extends GeneralHeaderConstraintsOp
 	 * <!-- end-user-doc -->
 	* @generated
 	*/
+
 	public static AssessmentAndPlanSection getAssessmentAndPlanSection(HistoryAndPhysicalNote historyAndPhysicalNote) {
 		if (GET_ASSESSMENT_AND_PLAN_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
@@ -2753,6 +2807,7 @@ public class HistoryAndPhysicalNoteOperations extends GeneralHeaderConstraintsOp
 	 * <!-- end-user-doc -->
 	* @generated
 	*/
+
 	public static ChiefComplaintSection getChiefComplaintSection(HistoryAndPhysicalNote historyAndPhysicalNote) {
 		if (GET_CHIEF_COMPLAINT_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
@@ -2794,6 +2849,7 @@ public class HistoryAndPhysicalNoteOperations extends GeneralHeaderConstraintsOp
 	 * <!-- end-user-doc -->
 	* @generated
 	*/
+
 	public static ChiefComplaintAndReasonForVisitSection getChiefComplaintAndReasonForVisitSection(
 			HistoryAndPhysicalNote historyAndPhysicalNote) {
 		if (GET_CHIEF_COMPLAINT_AND_REASON_FOR_VISIT_SECTION__EOCL_QRY == null) {
@@ -2836,6 +2892,7 @@ public class HistoryAndPhysicalNoteOperations extends GeneralHeaderConstraintsOp
 	 * <!-- end-user-doc -->
 	* @generated
 	*/
+
 	public static FamilyHistorySection getFamilyHistorySection(HistoryAndPhysicalNote historyAndPhysicalNote) {
 		if (GET_FAMILY_HISTORY_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
@@ -2877,6 +2934,7 @@ public class HistoryAndPhysicalNoteOperations extends GeneralHeaderConstraintsOp
 	 * <!-- end-user-doc -->
 	* @generated
 	*/
+
 	public static GeneralStatusSection getGeneralStatusSection(HistoryAndPhysicalNote historyAndPhysicalNote) {
 		if (GET_GENERAL_STATUS_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
@@ -2918,6 +2976,7 @@ public class HistoryAndPhysicalNoteOperations extends GeneralHeaderConstraintsOp
 	 * <!-- end-user-doc -->
 	* @generated
 	*/
+
 	public static HistoryOfPastIllnessSection getHistoryOfPastIllnessSection(
 			HistoryAndPhysicalNote historyAndPhysicalNote) {
 		if (GET_HISTORY_OF_PAST_ILLNESS_SECTION__EOCL_QRY == null) {
@@ -2960,6 +3019,7 @@ public class HistoryAndPhysicalNoteOperations extends GeneralHeaderConstraintsOp
 	 * <!-- end-user-doc -->
 	* @generated
 	*/
+
 	public static MedicationsSectionEntriesOptional getMedicationsSectionEntriesOptional(
 			HistoryAndPhysicalNote historyAndPhysicalNote) {
 		if (GET_MEDICATIONS_SECTION_ENTRIES_OPTIONAL__EOCL_QRY == null) {
@@ -3002,6 +3062,7 @@ public class HistoryAndPhysicalNoteOperations extends GeneralHeaderConstraintsOp
 	 * <!-- end-user-doc -->
 	* @generated
 	*/
+
 	public static PhysicalExamSection getPhysicalExamSection(HistoryAndPhysicalNote historyAndPhysicalNote) {
 		if (GET_PHYSICAL_EXAM_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
@@ -3043,6 +3104,7 @@ public class HistoryAndPhysicalNoteOperations extends GeneralHeaderConstraintsOp
 	 * <!-- end-user-doc -->
 	* @generated
 	*/
+
 	public static ReasonForVisitSection getReasonForVisitSection(HistoryAndPhysicalNote historyAndPhysicalNote) {
 		if (GET_REASON_FOR_VISIT_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
@@ -3084,6 +3146,7 @@ public class HistoryAndPhysicalNoteOperations extends GeneralHeaderConstraintsOp
 	 * <!-- end-user-doc -->
 	* @generated
 	*/
+
 	public static ResultsSectionEntriesOptional getResultsSectionEntriesOptional(
 			HistoryAndPhysicalNote historyAndPhysicalNote) {
 		if (GET_RESULTS_SECTION_ENTRIES_OPTIONAL__EOCL_QRY == null) {
@@ -3126,6 +3189,7 @@ public class HistoryAndPhysicalNoteOperations extends GeneralHeaderConstraintsOp
 	 * <!-- end-user-doc -->
 	* @generated
 	*/
+
 	public static ReviewOfSystemsSection getReviewOfSystemsSection(HistoryAndPhysicalNote historyAndPhysicalNote) {
 		if (GET_REVIEW_OF_SYSTEMS_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
@@ -3167,6 +3231,7 @@ public class HistoryAndPhysicalNoteOperations extends GeneralHeaderConstraintsOp
 	 * <!-- end-user-doc -->
 	* @generated
 	*/
+
 	public static SocialHistorySection getSocialHistorySection(HistoryAndPhysicalNote historyAndPhysicalNote) {
 		if (GET_SOCIAL_HISTORY_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
@@ -3208,6 +3273,7 @@ public class HistoryAndPhysicalNoteOperations extends GeneralHeaderConstraintsOp
 	 * <!-- end-user-doc -->
 	* @generated
 	*/
+
 	public static HistoryOfPresentIllnessSection getHistoryOfPresentIllnessSection(
 			HistoryAndPhysicalNote historyAndPhysicalNote) {
 		if (GET_HISTORY_OF_PRESENT_ILLNESS_SECTION__EOCL_QRY == null) {
@@ -3250,6 +3316,7 @@ public class HistoryAndPhysicalNoteOperations extends GeneralHeaderConstraintsOp
 	 * <!-- end-user-doc -->
 	* @generated
 	*/
+
 	public static ImmunizationsSectionEntriesOptional getImmunizationsSectionEntriesOptional(
 			HistoryAndPhysicalNote historyAndPhysicalNote) {
 		if (GET_IMMUNIZATIONS_SECTION_ENTRIES_OPTIONAL__EOCL_QRY == null) {
@@ -3292,6 +3359,7 @@ public class HistoryAndPhysicalNoteOperations extends GeneralHeaderConstraintsOp
 	 * <!-- end-user-doc -->
 	* @generated
 	*/
+
 	public static ProblemSectionEntriesOptional getProblemSectionEntriesOptional(
 			HistoryAndPhysicalNote historyAndPhysicalNote) {
 		if (GET_PROBLEM_SECTION_ENTRIES_OPTIONAL__EOCL_QRY == null) {
@@ -3334,6 +3402,7 @@ public class HistoryAndPhysicalNoteOperations extends GeneralHeaderConstraintsOp
 	 * <!-- end-user-doc -->
 	* @generated
 	*/
+
 	public static ProceduresSectionEntriesOptional getProceduresSectionEntriesOptional(
 			HistoryAndPhysicalNote historyAndPhysicalNote) {
 		if (GET_PROCEDURES_SECTION_ENTRIES_OPTIONAL__EOCL_QRY == null) {
@@ -3376,6 +3445,7 @@ public class HistoryAndPhysicalNoteOperations extends GeneralHeaderConstraintsOp
 	 * <!-- end-user-doc -->
 	* @generated
 	*/
+
 	public static VitalSignsSectionEntriesOptional getVitalSignsSectionEntriesOptional(
 			HistoryAndPhysicalNote historyAndPhysicalNote) {
 		if (GET_VITAL_SIGNS_SECTION_ENTRIES_OPTIONAL__EOCL_QRY == null) {

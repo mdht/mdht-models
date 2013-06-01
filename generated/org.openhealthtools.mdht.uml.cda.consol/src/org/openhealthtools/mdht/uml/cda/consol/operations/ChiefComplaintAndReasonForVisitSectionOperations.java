@@ -70,6 +70,7 @@ public class ChiefComplaintAndReasonForVisitSectionOperations extends SectionOpe
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_CHIEF_COMPLAINT_AND_REASON_FOR_VISIT_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -82,6 +83,7 @@ public class ChiefComplaintAndReasonForVisitSectionOperations extends SectionOpe
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateChiefComplaintAndReasonForVisitSectionTemplateId(
 			ChiefComplaintAndReasonForVisitSection chiefComplaintAndReasonForVisitSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
@@ -132,6 +134,7 @@ public class ChiefComplaintAndReasonForVisitSectionOperations extends SectionOpe
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_CHIEF_COMPLAINT_AND_REASON_FOR_VISIT_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -144,6 +147,7 @@ public class ChiefComplaintAndReasonForVisitSectionOperations extends SectionOpe
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateChiefComplaintAndReasonForVisitSectionCode(
 			ChiefComplaintAndReasonForVisitSection chiefComplaintAndReasonForVisitSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
@@ -177,7 +181,7 @@ public class ChiefComplaintAndReasonForVisitSectionOperations extends SectionOpe
 	/**
 	* The cached OCL expression body for the '{@link #validateChiefComplaintAndReasonForVisitSectionCodeP(ChiefComplaintAndReasonForVisitSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Chief Complaint And Reason For Visit Section Code P</em>}' operation.
 	* <!-- begin-user-doc -->
-	* <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	* @see #validateChiefComplaintAndReasonForVisitSectionCodeP(ChiefComplaintAndReasonForVisitSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	* @generated
 	* @ordered
@@ -254,6 +258,7 @@ public class ChiefComplaintAndReasonForVisitSectionOperations extends SectionOpe
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_CHIEF_COMPLAINT_AND_REASON_FOR_VISIT_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -266,6 +271,7 @@ public class ChiefComplaintAndReasonForVisitSectionOperations extends SectionOpe
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateChiefComplaintAndReasonForVisitSectionText(
 			ChiefComplaintAndReasonForVisitSection chiefComplaintAndReasonForVisitSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
@@ -314,6 +320,7 @@ public class ChiefComplaintAndReasonForVisitSectionOperations extends SectionOpe
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_CHIEF_COMPLAINT_AND_REASON_FOR_VISIT_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -326,6 +333,7 @@ public class ChiefComplaintAndReasonForVisitSectionOperations extends SectionOpe
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateChiefComplaintAndReasonForVisitSectionTitle(
 			ChiefComplaintAndReasonForVisitSection chiefComplaintAndReasonForVisitSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {

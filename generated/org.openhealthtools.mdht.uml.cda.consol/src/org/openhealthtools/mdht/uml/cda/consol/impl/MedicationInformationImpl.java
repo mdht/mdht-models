@@ -94,61 +94,61 @@ public class MedicationInformationImpl extends ManufacturedProductImpl implement
 	* <!-- end-user-doc -->
 	* @generated
 	*/
-	public boolean validateMedicationInformationMedicationInformationManufacturedMaterialCodeOriginalText(
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return MedicationInformationOperations.validateMedicationInformationMedicationInformationManufacturedMaterialCodeOriginalText(
+	public boolean validateMedicationInformationManufacturedMaterialCodeOriginalText(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return MedicationInformationOperations.validateMedicationInformationManufacturedMaterialCodeOriginalText(
 			this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	public boolean validateMedicationInformationMedicationInformationManufacturedMaterialReference(
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return MedicationInformationOperations.validateMedicationInformationMedicationInformationManufacturedMaterialReference(
+	 * @generated
+	 */
+	public boolean validateMedicationInformationManufacturedMaterialReference(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return MedicationInformationOperations.validateMedicationInformationManufacturedMaterialReference(
 			this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
-	* <!-- end-user-doc -->
-	* @generated
-	*/
-	public boolean validateMedicationInformationMedicationInformationManufacturedMaterialOriginalTextReferenceValue(
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return MedicationInformationOperations.validateMedicationInformationMedicationInformationManufacturedMaterialOriginalTextReferenceValue(
-			this, diagnostics, context);
-	}
-
-	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	public boolean validateMedicationInformationMedicationInformationManufacturedMaterialCodeTranslation(
+	 * @generated
+	 */
+	public boolean validateMedicationInformationManufacturedMaterialOriginalTextReferenceValue(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return MedicationInformationOperations.validateMedicationInformationMedicationInformationManufacturedMaterialCodeTranslation(
+		return MedicationInformationOperations.validateMedicationInformationManufacturedMaterialOriginalTextReferenceValue(
 			this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
-	* <!-- end-user-doc -->
-	* @generated
-	*/
-	public boolean validateMedicationInformationMedicationInformationManufacturedMaterialCode(
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return MedicationInformationOperations.validateMedicationInformationMedicationInformationManufacturedMaterialCode(
-			this, diagnostics, context);
-	}
-
-	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
+	public boolean validateMedicationInformationManufacturedMaterialCodeTranslation(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return MedicationInformationOperations.validateMedicationInformationManufacturedMaterialCodeTranslation(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateMedicationInformationManufacturedMaterialCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return MedicationInformationOperations.validateMedicationInformationManufacturedMaterialCode(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public boolean validateMedicationInformationManufacturerOrganization(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return MedicationInformationOperations.validateMedicationInformationManufacturerOrganization(

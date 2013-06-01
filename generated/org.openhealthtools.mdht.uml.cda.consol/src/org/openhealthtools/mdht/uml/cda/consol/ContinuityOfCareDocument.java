@@ -32,7 +32,7 @@ import org.openhealthtools.mdht.emf.runtime.util.Initializer;
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getContinuityOfCareDocument()
  * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='ContinuityOfCareDocumentTemplateId ContinuityOfCareDocumentCode ContinuityOfCareDocumentCodeP ContinuityOfCareDocumentLanguageCode ContinuityOfCareDocumentDocumentationOf ContinuityOfCareDocumentAuthor ContinuityOfCareDocumentAllergiesSection ContinuityOfCareDocumentMedicationsSection ContinuityOfCareDocumentProblemSection ContinuityOfCareDocumentProceduresSection ContinuityOfCareDocumentResultsSection ContinuityOfCareDocumentDocumentationOfServiceEventEffectiveTimeHigh ContinuityOfCareDocumentDocumentationOfServiceEventEffectiveTimeLow ContinuityOfCareDocumentDocumentationOfServiceEventPerformerAssignedEntityId ContinuityOfCareDocumentDocumentationOfServiceEventPerformerTypeCode ContinuityOfCareDocumentDocumentationOfServiceEventClassCode ContinuityOfCareDocumentDocumentationOfServiceEventEffectiveTime ContinuityOfCareDocumentDocumentationOfServiceEvent ContinuityOfCareDocumentAuthorAssignedAuthorHasAssignedPersonOrRepresentedOrganization ContinuityOfCareDocumentAuthorAssignedAuthorHasRepresentOrganization ContinuityOfCareDocumentAuthorAssignedAuthor' templateId.root='2.16.840.1.113883.10.20.22.1.2' code.code='34133-9' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='Summarization of Episode Note' constraints.validation.dependOn.ContinuityOfCareDocumentCode='ContinuityOfCareDocumentCodeP' constraints.validation.info='ContinuityOfCareDocumentAdvanceDirectivesSection ContinuityOfCareDocumentEncountersSection ContinuityOfCareDocumentFamilyHistorySection ContinuityOfCareDocumentFunctionalStatusSection ContinuityOfCareDocumentImmunizationsSectionEntriesOptional ContinuityOfCareDocumentMedicalEquipmentSection ContinuityOfCareDocumentPayersSection ContinuityOfCareDocumentPlanOfCareSection ContinuityOfCareDocumentSocialHistorySection ContinuityOfCareDocumentVitalSignsSectionEntriesOptional ContinuityOfCareDocumentDocumentationOfServiceEventPerformerAssignedEntityCode ContinuityOfCareDocumentDocumentationOfServiceEventPerformerAssignedEntity' constraints.validation.query='ContinuityOfCareDocumentDocumentationOfServiceEventEffectiveTimeHigh ContinuityOfCareDocumentDocumentationOfServiceEventEffectiveTimeLow ContinuityOfCareDocumentDocumentationOfServiceEventPerformerAssignedEntityHasNationalProviderIdentifier ContinuityOfCareDocumentDocumentationOfServiceEventPerformerAssignedEntityCode ContinuityOfCareDocumentDocumentationOfServiceEventPerformerAssignedEntityId ContinuityOfCareDocumentDocumentationOfServiceEventPerformerTypeCode ContinuityOfCareDocumentDocumentationOfServiceEventPerformerAssignedEntity ContinuityOfCareDocumentDocumentationOfServiceEventClassCode ContinuityOfCareDocumentDocumentationOfServiceEventEffectiveTime ContinuityOfCareDocumentDocumentationOfServiceEventPerformer ContinuityOfCareDocumentDocumentationOfServiceEvent ContinuityOfCareDocumentAuthorAssignedAuthorHasAssignedPersonOrRepresentedOrganization ContinuityOfCareDocumentAuthorAssignedAuthorHasRepresentOrganization ContinuityOfCareDocumentAuthorAssignedAuthor' constraints.validation.warning='ContinuityOfCareDocumentDocumentationOfServiceEventPerformerAssignedEntityHasNationalProviderIdentifier ContinuityOfCareDocumentDocumentationOfServiceEventPerformer'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolContinuityOfCareDocumentDocumentationOf constraints.validation.error='DocumentationOfServiceEvent'"
- *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolContinuityOfCareDocumentDocumentationOfServiceEvent classCode='PCPR' constraints.validation.error='ServiceEventClassCode ServiceEventEffectiveTime ServiceEventEffectiveTimeHigh ServiceEventEffectiveTimeLow' constraints.validation.warning='ServiceEventPerformer' constraints.validation.query='ServiceEventEffectiveTimeHigh ServiceEventEffectiveTimeLow'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolContinuityOfCareDocumentDocumentationOfServiceEvent classCode='PCPR' constraints.validation.error='ServiceEventClassCode ServiceEventEffectiveTime ContinuityOfCareDocumentDocumentationOfServiceEventEffectiveTimeHigh ContinuityOfCareDocumentDocumentationOfServiceEventEffectiveTimeLow' constraints.validation.warning='ServiceEventPerformer' constraints.validation.query='ContinuityOfCareDocumentDocumentationOfServiceEventEffectiveTimeHigh ContinuityOfCareDocumentDocumentationOfServiceEventEffectiveTimeLow'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolContinuityOfCareDocumentDocumentationOfServiceEventPerformer typeCode='PRF' constraints.validation.error='PerformerTypeCode' constraints.validation.info='PerformerAssignedEntity'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolContinuityOfCareDocumentDocumentationOfServiceEventPerformerAssignedEntity constraints.validation.warning='AssignedEntityHasNationalProviderIdentifier' constraints.validation.info='AssignedEntityCode' constraints.validation.error='AssignedEntityId'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolContinuityOfCareDocumentDocumentationOfServiceEventEffectiveTime constraints.validation.error='EffectiveTimeHigh EffectiveTimeLow'"
@@ -227,85 +227,7 @@ public interface ContinuityOfCareDocument extends GeneralHeaderConstraints {
 
 	/**
 	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.documentationOf->excluding(null).serviceEvent->excluding(null).performer->excluding(null).assignedEntity->excluding(null)->reject(id->exists(root=\'2.16.840.1.113883.4.6\'))'"
-	* @generated
-	*/
-	boolean validateContinuityOfCareDocumentDocumentationOfServiceEventPerformerAssignedEntityHasNationalProviderIdentifier(
-			DiagnosticChain diagnostics, Map<Object, Object> context);
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.documentationOf->excluding(null).serviceEvent->excluding(null).performer->excluding(null).assignedEntity->excluding(null)->reject((code.oclIsUndefined() or code.isNullFlavorUndefined()) implies (not code.oclIsUndefined() and code.oclIsKindOf(datatypes::CE) and \nlet value : datatypes::CE = code.oclAsType(datatypes::CE) in \nnot value.codeSystem.oclIsUndefined() or not value.codeSystemName.oclIsUndefined()))'"
-	* @generated
-	*/
-	boolean validateContinuityOfCareDocumentDocumentationOfServiceEventPerformerAssignedEntityCode(
-			DiagnosticChain diagnostics, Map<Object, Object> context);
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.documentationOf->excluding(null).serviceEvent->excluding(null).performer->excluding(null).assignedEntity->excluding(null)->reject((id->isEmpty() or id->exists(element | element.isNullFlavorUndefined())) implies (not id->isEmpty()))'"
-	* @generated
-	*/
-	boolean validateContinuityOfCareDocumentDocumentationOfServiceEventPerformerAssignedEntityId(
-			DiagnosticChain diagnostics, Map<Object, Object> context);
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.documentationOf->excluding(null).serviceEvent->excluding(null).performer->excluding(null)->reject(typeCode=vocab::x_ServiceEventPerformer::PRF)'"
-	* @generated
-	*/
-	boolean validateContinuityOfCareDocumentDocumentationOfServiceEventPerformerTypeCode(DiagnosticChain diagnostics,
-			Map<Object, Object> context);
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.documentationOf->excluding(null).serviceEvent->excluding(null).performer->excluding(null)->reject(assignedEntity->one(assignedEntity : cda::AssignedEntity | not assignedEntity.oclIsUndefined() and assignedEntity.oclIsKindOf(cda::AssignedEntity)))'"
-	* @generated
-	*/
-	boolean validateContinuityOfCareDocumentDocumentationOfServiceEventPerformerAssignedEntity(
-			DiagnosticChain diagnostics, Map<Object, Object> context);
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.documentationOf->excluding(null).serviceEvent->excluding(null).effectiveTime->excluding(null)->select(isNullFlavorUndefined())->reject( ( isNullFlavorUndefined() implies ((low.oclIsUndefined() or low.isNullFlavorUndefined()) implies (not low.oclIsUndefined()) )))'"
-	* @generated
-	*/
-	boolean validateContinuityOfCareDocumentDocumentationOfServiceEventEffectiveTimeLow(DiagnosticChain diagnostics,
-			Map<Object, Object> context);
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	* <!-- end-user-doc -->
 	* <!-- begin-model-doc -->
 	* @param diagnostics The chain of diagnostics to which problems are to be appended.
 	* @param context The cache of context-specific information.
@@ -317,106 +239,184 @@ public interface ContinuityOfCareDocument extends GeneralHeaderConstraints {
 			Map<Object, Object> context);
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.documentationOf->excluding(null).serviceEvent->excluding(null)->reject(isDefined(\'classCode\') and classCode=vocab::ActClassRoot::PCPR)'"
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.documentationOf->excluding(null).serviceEvent->excluding(null).effectiveTime->excluding(null)->select(isNullFlavorUndefined())->reject( ( isNullFlavorUndefined() implies ((low.oclIsUndefined() or low.isNullFlavorUndefined()) implies (not low.oclIsUndefined()) )))'"
+	 * @generated
+	 */
+	boolean validateContinuityOfCareDocumentDocumentationOfServiceEventEffectiveTimeLow(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.documentationOf->excluding(null).serviceEvent->excluding(null).performer->excluding(null).assignedEntity->excluding(null)->reject(id->exists(root=\'2.16.840.1.113883.4.6\'))'"
+	 * @generated
+	 */
+	boolean validateContinuityOfCareDocumentDocumentationOfServiceEventPerformerAssignedEntityHasNationalProviderIdentifier(
+			DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.documentationOf->excluding(null).serviceEvent->excluding(null).performer->excluding(null).assignedEntity->excluding(null)->reject((code.oclIsUndefined() or code.isNullFlavorUndefined()) implies (not code.oclIsUndefined() and code.oclIsKindOf(datatypes::CE) and \nlet value : datatypes::CE = code.oclAsType(datatypes::CE) in \nnot value.codeSystem.oclIsUndefined() or not value.codeSystemName.oclIsUndefined()))'"
+	 * @generated
+	 */
+	boolean validateContinuityOfCareDocumentDocumentationOfServiceEventPerformerAssignedEntityCode(
+			DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.documentationOf->excluding(null).serviceEvent->excluding(null).performer->excluding(null).assignedEntity->excluding(null)->reject((id->isEmpty() or id->exists(element | element.isNullFlavorUndefined())) implies (not id->isEmpty()))'"
+	 * @generated
+	 */
+	boolean validateContinuityOfCareDocumentDocumentationOfServiceEventPerformerAssignedEntityId(
+			DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.documentationOf->excluding(null).serviceEvent->excluding(null).performer->excluding(null)->reject(typeCode=vocab::x_ServiceEventPerformer::PRF)'"
+	 * @generated
+	 */
+	boolean validateContinuityOfCareDocumentDocumentationOfServiceEventPerformerTypeCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.documentationOf->excluding(null).serviceEvent->excluding(null).performer->excluding(null)->reject(assignedEntity->one(assignedEntity : cda::AssignedEntity | not assignedEntity.oclIsUndefined() and assignedEntity.oclIsKindOf(cda::AssignedEntity)))'"
+	 * @generated
+	 */
+	boolean validateContinuityOfCareDocumentDocumentationOfServiceEventPerformerAssignedEntity(
+			DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.documentationOf->excluding(null).serviceEvent->excluding(null)->reject(isDefined(\'classCode\') and classCode=vocab::ActClassRoot::PCPR)'"
+	 * @generated
+	 */
 	boolean validateContinuityOfCareDocumentDocumentationOfServiceEventClassCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context);
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.documentationOf->excluding(null).serviceEvent->excluding(null)->reject((effectiveTime.oclIsUndefined() or effectiveTime.isNullFlavorUndefined()) implies (not effectiveTime.oclIsUndefined()))'"
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.documentationOf->excluding(null).serviceEvent->excluding(null)->reject((effectiveTime.oclIsUndefined() or effectiveTime.isNullFlavorUndefined()) implies (not effectiveTime.oclIsUndefined()))'"
+	 * @generated
+	 */
 	boolean validateContinuityOfCareDocumentDocumentationOfServiceEventEffectiveTime(DiagnosticChain diagnostics,
 			Map<Object, Object> context);
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.documentationOf->excluding(null).serviceEvent->excluding(null)->reject(performer->exists(performer : cda::Performer1 | not performer.oclIsUndefined() and performer.oclIsKindOf(cda::Performer1)))'"
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.documentationOf->excluding(null).serviceEvent->excluding(null)->reject(performer->exists(performer : cda::Performer1 | not performer.oclIsUndefined() and performer.oclIsKindOf(cda::Performer1)))'"
+	 * @generated
+	 */
 	boolean validateContinuityOfCareDocumentDocumentationOfServiceEventPerformer(DiagnosticChain diagnostics,
 			Map<Object, Object> context);
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.documentationOf->excluding(null)->reject(serviceEvent->one(serviceEvent : cda::ServiceEvent | not serviceEvent.oclIsUndefined() and serviceEvent.oclIsKindOf(cda::ServiceEvent)))'"
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.documentationOf->excluding(null)->reject(serviceEvent->one(serviceEvent : cda::ServiceEvent | not serviceEvent.oclIsUndefined() and serviceEvent.oclIsKindOf(cda::ServiceEvent)))'"
+	 * @generated
+	 */
 	boolean validateContinuityOfCareDocumentDocumentationOfServiceEvent(DiagnosticChain diagnostics,
 			Map<Object, Object> context);
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.author->excluding(null).assignedAuthor->excluding(null)->reject((not assignedPerson.oclIsUndefined()) xor (not representedOrganization.oclIsUndefined()))'"
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.author->excluding(null).assignedAuthor->excluding(null)->reject((not assignedPerson.oclIsUndefined()) xor (not representedOrganization.oclIsUndefined()))'"
+	 * @generated
+	 */
 	boolean validateContinuityOfCareDocumentAuthorAssignedAuthorHasAssignedPersonOrRepresentedOrganization(
 			DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.author->excluding(null).assignedAuthor->excluding(null)->reject((not representedOrganization.oclIsUndefined() and assignedPerson.oclIsUndefined() and assignedAuthoringDevice.oclIsUndefined()) implies id->exists(id | not id.isNullFlavorUndefined() and id.nullFlavor = vocab::NullFlavor::NA))'"
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.author->excluding(null).assignedAuthor->excluding(null)->reject((not representedOrganization.oclIsUndefined() and assignedPerson.oclIsUndefined() and assignedAuthoringDevice.oclIsUndefined()) implies id->exists(id | not id.isNullFlavorUndefined() and id.nullFlavor = vocab::NullFlavor::NA))'"
+	 * @generated
+	 */
 	boolean validateContinuityOfCareDocumentAuthorAssignedAuthorHasRepresentOrganization(DiagnosticChain diagnostics,
 			Map<Object, Object> context);
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.author->excluding(null)->reject(assignedAuthor->one(assignedAuthor : cda::AssignedAuthor | not assignedAuthor.oclIsUndefined() and assignedAuthor.oclIsKindOf(cda::AssignedAuthor)))'"
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.author->excluding(null)->reject(assignedAuthor->one(assignedAuthor : cda::AssignedAuthor | not assignedAuthor.oclIsUndefined() and assignedAuthor.oclIsKindOf(cda::AssignedAuthor)))'"
+	 * @generated
+	 */
 	boolean validateContinuityOfCareDocumentAuthorAssignedAuthor(DiagnosticChain diagnostics,
 			Map<Object, Object> context);
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ResultsSection))'"
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ResultsSection))'"
+	 * @generated
+	 */
 	boolean validateContinuityOfCareDocumentResultsSection(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**

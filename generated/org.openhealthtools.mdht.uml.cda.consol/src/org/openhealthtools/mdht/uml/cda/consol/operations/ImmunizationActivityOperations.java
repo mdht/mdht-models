@@ -119,6 +119,7 @@ public class ImmunizationActivityOperations extends SubstanceAdministrationOpera
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_IMMUNIZATION_ACTIVITY_TEXT_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -131,6 +132,7 @@ public class ImmunizationActivityOperations extends SubstanceAdministrationOpera
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateImmunizationActivityTextReference(ImmunizationActivity immunizationActivity,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -161,7 +163,7 @@ public class ImmunizationActivityOperations extends SubstanceAdministrationOpera
 	/**
 	* The cached OCL expression body for the '{@link #validateImmunizationActivityReferenceValue(ImmunizationActivity, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Immunization Activity Reference Value</em>}' operation.
 	* <!-- begin-user-doc -->
-	* <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	* @see #validateImmunizationActivityReferenceValue(ImmunizationActivity, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	* @generated
 	* @ordered
@@ -294,6 +296,7 @@ public class ImmunizationActivityOperations extends SubstanceAdministrationOpera
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_IMMUNIZATION_ACTIVITY_DOSE_QUANTITY_UNIT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -306,6 +309,7 @@ public class ImmunizationActivityOperations extends SubstanceAdministrationOpera
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateImmunizationActivityDoseQuantityUnit(ImmunizationActivity immunizationActivity,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -351,6 +355,7 @@ public class ImmunizationActivityOperations extends SubstanceAdministrationOpera
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_IMMUNIZATION_ACTIVITY_INSTRUCTION_INVERSION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -363,6 +368,7 @@ public class ImmunizationActivityOperations extends SubstanceAdministrationOpera
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateImmunizationActivityInstructionInversion(ImmunizationActivity immunizationActivity,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -408,6 +414,7 @@ public class ImmunizationActivityOperations extends SubstanceAdministrationOpera
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_IMMUNIZATION_ACTIVITY_DRUG_VEHICLE_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -420,6 +427,7 @@ public class ImmunizationActivityOperations extends SubstanceAdministrationOpera
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateImmunizationActivityDrugVehicleTypeCode(ImmunizationActivity immunizationActivity,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -465,6 +473,7 @@ public class ImmunizationActivityOperations extends SubstanceAdministrationOpera
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_IMMUNIZATION_ACTIVITY_PRECONDITION_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -477,6 +486,7 @@ public class ImmunizationActivityOperations extends SubstanceAdministrationOpera
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateImmunizationActivityPreconditionTypeCode(ImmunizationActivity immunizationActivity,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -522,6 +532,7 @@ public class ImmunizationActivityOperations extends SubstanceAdministrationOpera
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_IMMUNIZATION_ACTIVITY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -534,6 +545,7 @@ public class ImmunizationActivityOperations extends SubstanceAdministrationOpera
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateImmunizationActivityTemplateId(ImmunizationActivity immunizationActivity,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -579,6 +591,7 @@ public class ImmunizationActivityOperations extends SubstanceAdministrationOpera
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_IMMUNIZATION_ACTIVITY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -591,6 +604,7 @@ public class ImmunizationActivityOperations extends SubstanceAdministrationOpera
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateImmunizationActivityClassCode(ImmunizationActivity immunizationActivity,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -697,6 +711,7 @@ public class ImmunizationActivityOperations extends SubstanceAdministrationOpera
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_IMMUNIZATION_ACTIVITY_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -709,6 +724,7 @@ public class ImmunizationActivityOperations extends SubstanceAdministrationOpera
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateImmunizationActivityId(ImmunizationActivity immunizationActivity,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -753,6 +769,7 @@ public class ImmunizationActivityOperations extends SubstanceAdministrationOpera
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_IMMUNIZATION_ACTIVITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -765,6 +782,7 @@ public class ImmunizationActivityOperations extends SubstanceAdministrationOpera
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateImmunizationActivityCode(ImmunizationActivity immunizationActivity,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -809,6 +827,7 @@ public class ImmunizationActivityOperations extends SubstanceAdministrationOpera
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_IMMUNIZATION_ACTIVITY_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -821,6 +840,7 @@ public class ImmunizationActivityOperations extends SubstanceAdministrationOpera
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateImmunizationActivityStatusCode(ImmunizationActivity immunizationActivity,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -866,6 +886,7 @@ public class ImmunizationActivityOperations extends SubstanceAdministrationOpera
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_IMMUNIZATION_ACTIVITY_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -878,6 +899,7 @@ public class ImmunizationActivityOperations extends SubstanceAdministrationOpera
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateImmunizationActivityEffectiveTime(ImmunizationActivity immunizationActivity,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -906,51 +928,6 @@ public class ImmunizationActivityOperations extends SubstanceAdministrationOpera
 	}
 
 	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param immunizationActivity The receiving '<em><b>Immunization Activity</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
-	public static boolean validateImmunizationActivityRouteCode(ImmunizationActivity immunizationActivity,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
-		Object passToken = (context == null)
-				? null
-				: context.get("org.openhealthtools.mdht.uml.cda.consol.ImmunizationActivityRouteCodeP");
-		if ((passToken instanceof Collection<?>) && ((Collection<?>) passToken).contains(immunizationActivity)) {
-			// I have a free pass to short-circuit
-			return true;
-		}
-
-		if (VALIDATE_IMMUNIZATION_ACTIVITY_ROUTE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(ConsolPackage.Literals.IMMUNIZATION_ACTIVITY);
-			try {
-				VALIDATE_IMMUNIZATION_ACTIVITY_ROUTE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_IMMUNIZATION_ACTIVITY_ROUTE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_IMMUNIZATION_ACTIVITY_ROUTE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			immunizationActivity)) {
-			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.IMMUNIZATION_ACTIVITY__IMMUNIZATION_ACTIVITY_ROUTE_CODE,
-					ConsolPlugin.INSTANCE.getString("ImmunizationActivityRouteCode"),
-					new Object[] { immunizationActivity }));
-			}
-
-			return false;
-		}
-		return true;
-	}
-
-	/**
 	* The cached OCL expression body for the '{@link #validateImmunizationActivityRouteCodeP(ImmunizationActivity, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Immunization Activity Route Code P</em>}' operation.
 	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -970,28 +947,6 @@ public class ImmunizationActivityOperations extends SubstanceAdministrationOpera
 	*/
 
 	protected static Constraint VALIDATE_IMMUNIZATION_ACTIVITY_ROUTE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-
-	/**
-	* The cached OCL expression body for the '{@link #validateImmunizationActivityRouteCode(ImmunizationActivity, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Immunization Activity Route Code</em>}' operation.
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @see #validateImmunizationActivityRouteCode(ImmunizationActivity, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
-	protected static final String VALIDATE_IMMUNIZATION_ACTIVITY_ROUTE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.routeCode.oclIsUndefined() or self.routeCode.isNullFlavorUndefined()) implies (not self.routeCode.oclIsUndefined() and self.routeCode.oclIsKindOf(datatypes::CE) and "
-			+ "let value : datatypes::CE = self.routeCode.oclAsType(datatypes::CE) in "
-			+ "value.codeSystem = '2.16.840.1.113883.3.26.1.1' and (value.code = 'C38192' or value.code = 'C38193' or value.code = 'C38194' or value.code = 'C38675' or value.code = 'C38197' or value.code = 'C38633' or value.code = 'C38205' or value.code = 'C38206' or value.code = 'C38208' or value.code = 'C38209' or value.code = 'C38210' or value.code = 'C38211' or value.code = 'C38212' or value.code = 'C38200' or value.code = 'C38215' or value.code = 'C38219' or value.code = 'C38220' or value.code = 'C38221' or value.code = 'C38222' or value.code = 'C38223' or value.code = 'C38224' or value.code = 'C38225' or value.code = 'C38226' or value.code = 'C38227' or value.code = 'C38228' or value.code = 'C38229' or value.code = 'C38230' or value.code = 'C38231' or value.code = 'C38232' or value.code = 'C38233' or value.code = 'C38234' or value.code = 'C38217' or value.code = 'C38218' or value.code = 'C38235' or value.code = 'C38238' or value.code = 'C38239' or value.code = 'C38240' or value.code = 'C38241' or value.code = 'C38242' or value.code = 'C38243' or value.code = 'C38245' or value.code = 'C38246' or value.code = 'C38247' or value.code = 'C38249' or value.code = 'C38250' or value.code = 'C38251' or value.code = 'C38252' or value.code = 'C38253' or value.code = 'C38254' or value.code = 'C28161' or value.code = 'C38255' or value.code = 'C38256' or value.code = 'C38257' or value.code = 'C38258' or value.code = 'C38259' or value.code = 'C38260' or value.code = 'C38261' or value.code = 'C38262' or value.code = 'C38263' or value.code = 'C38264' or value.code = 'C38265' or value.code = 'C38266' or value.code = 'C38267' or value.code = 'C38207' or value.code = 'C38268' or value.code = 'C38269' or value.code = 'C38270' or value.code = 'C38272' or value.code = 'C38273' or value.code = 'C38276' or value.code = 'C38277' or value.code = 'C38278' or value.code = 'C38280' or value.code = 'C38203' or value.code = 'C38281' or value.code = 'C38282' or value.code = 'C38284' or value.code = 'C38285' or value.code = 'C48623' or value.code = 'C38286' or value.code = 'C38287' or value.code = 'C38288' or value.code = 'C38289' or value.code = 'C38291' or value.code = 'C38676' or value.code = 'C38292' or value.code = 'C38677' or value.code = 'C38293' or value.code = 'C38294' or value.code = 'C38295' or value.code = 'C38216' or value.code = 'C38296' or value.code = 'C38198' or value.code = 'C38297' or value.code = 'C38298' or value.code = 'C38299' or value.code = 'C38300' or value.code = 'C38301' or value.code = 'C38304' or value.code = 'C38305' or value.code = 'C38283' or value.code = 'C38307' or value.code = 'C38308' or value.code = 'C38309' or value.code = 'C38312' or value.code = 'C38271'))";
-
-	/**
-	* The cached OCL invariant for the '{@link #validateImmunizationActivityRouteCode(ImmunizationActivity, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Immunization Activity Route Code</em>}' invariant operation.
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @see #validateImmunizationActivityRouteCode(ImmunizationActivity, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
-	protected static Constraint VALIDATE_IMMUNIZATION_ACTIVITY_ROUTE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
 	* <!-- begin-user-doc -->
@@ -1044,6 +999,29 @@ public class ImmunizationActivityOperations extends SubstanceAdministrationOpera
 	}
 
 	/**
+	* The cached OCL expression body for the '{@link #validateImmunizationActivityRouteCode(ImmunizationActivity, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Immunization Activity Route Code</em>}' operation.
+	* <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	* @see #validateImmunizationActivityRouteCode(ImmunizationActivity, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
+	protected static final String VALIDATE_IMMUNIZATION_ACTIVITY_ROUTE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.routeCode.oclIsUndefined() or self.routeCode.isNullFlavorUndefined()) implies (not self.routeCode.oclIsUndefined() and self.routeCode.oclIsKindOf(datatypes::CE) and "
+			+ "let value : datatypes::CE = self.routeCode.oclAsType(datatypes::CE) in "
+			+ "value.codeSystem = '2.16.840.1.113883.3.26.1.1' and (value.code = 'C38192' or value.code = 'C38193' or value.code = 'C38194' or value.code = 'C38675' or value.code = 'C38197' or value.code = 'C38633' or value.code = 'C38205' or value.code = 'C38206' or value.code = 'C38208' or value.code = 'C38209' or value.code = 'C38210' or value.code = 'C38211' or value.code = 'C38212' or value.code = 'C38200' or value.code = 'C38215' or value.code = 'C38219' or value.code = 'C38220' or value.code = 'C38221' or value.code = 'C38222' or value.code = 'C38223' or value.code = 'C38224' or value.code = 'C38225' or value.code = 'C38226' or value.code = 'C38227' or value.code = 'C38228' or value.code = 'C38229' or value.code = 'C38230' or value.code = 'C38231' or value.code = 'C38232' or value.code = 'C38233' or value.code = 'C38234' or value.code = 'C38217' or value.code = 'C38218' or value.code = 'C38235' or value.code = 'C38238' or value.code = 'C38239' or value.code = 'C38240' or value.code = 'C38241' or value.code = 'C38242' or value.code = 'C38243' or value.code = 'C38245' or value.code = 'C38246' or value.code = 'C38247' or value.code = 'C38249' or value.code = 'C38250' or value.code = 'C38251' or value.code = 'C38252' or value.code = 'C38253' or value.code = 'C38254' or value.code = 'C28161' or value.code = 'C38255' or value.code = 'C38256' or value.code = 'C38257' or value.code = 'C38258' or value.code = 'C38259' or value.code = 'C38260' or value.code = 'C38261' or value.code = 'C38262' or value.code = 'C38263' or value.code = 'C38264' or value.code = 'C38265' or value.code = 'C38266' or value.code = 'C38267' or value.code = 'C38207' or value.code = 'C38268' or value.code = 'C38269' or value.code = 'C38270' or value.code = 'C38272' or value.code = 'C38273' or value.code = 'C38276' or value.code = 'C38277' or value.code = 'C38278' or value.code = 'C38280' or value.code = 'C38203' or value.code = 'C38281' or value.code = 'C38282' or value.code = 'C38284' or value.code = 'C38285' or value.code = 'C48623' or value.code = 'C38286' or value.code = 'C38287' or value.code = 'C38288' or value.code = 'C38289' or value.code = 'C38291' or value.code = 'C38676' or value.code = 'C38292' or value.code = 'C38677' or value.code = 'C38293' or value.code = 'C38294' or value.code = 'C38295' or value.code = 'C38216' or value.code = 'C38296' or value.code = 'C38198' or value.code = 'C38297' or value.code = 'C38298' or value.code = 'C38299' or value.code = 'C38300' or value.code = 'C38301' or value.code = 'C38304' or value.code = 'C38305' or value.code = 'C38283' or value.code = 'C38307' or value.code = 'C38308' or value.code = 'C38309' or value.code = 'C38312' or value.code = 'C38271'))";
+
+	/**
+	* The cached OCL invariant for the '{@link #validateImmunizationActivityRouteCode(ImmunizationActivity, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Immunization Activity Route Code</em>}' invariant operation.
+	* <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	* @see #validateImmunizationActivityRouteCode(ImmunizationActivity, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
+
+	protected static Constraint VALIDATE_IMMUNIZATION_ACTIVITY_ROUTE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
+	/**
 	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	* <!-- begin-model-doc -->
@@ -1053,33 +1031,34 @@ public class ImmunizationActivityOperations extends SubstanceAdministrationOpera
 	* <!-- end-model-doc -->
 	* @generated
 	*/
-	public static boolean validateImmunizationActivityApproachSiteCode(ImmunizationActivity immunizationActivity,
+
+	public static boolean validateImmunizationActivityRouteCode(ImmunizationActivity immunizationActivity,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
 		Object passToken = (context == null)
 				? null
-				: context.get("org.openhealthtools.mdht.uml.cda.consol.ImmunizationActivityApproachSiteCodeP");
+				: context.get("org.openhealthtools.mdht.uml.cda.consol.ImmunizationActivityRouteCodeP");
 		if ((passToken instanceof Collection<?>) && ((Collection<?>) passToken).contains(immunizationActivity)) {
 			// I have a free pass to short-circuit
 			return true;
 		}
 
-		if (VALIDATE_IMMUNIZATION_ACTIVITY_APPROACH_SITE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+		if (VALIDATE_IMMUNIZATION_ACTIVITY_ROUTE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.IMMUNIZATION_ACTIVITY);
 			try {
-				VALIDATE_IMMUNIZATION_ACTIVITY_APPROACH_SITE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_IMMUNIZATION_ACTIVITY_APPROACH_SITE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_IMMUNIZATION_ACTIVITY_ROUTE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_IMMUNIZATION_ACTIVITY_ROUTE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_IMMUNIZATION_ACTIVITY_APPROACH_SITE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+		if (!EOCL_ENV.createQuery(VALIDATE_IMMUNIZATION_ACTIVITY_ROUTE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
 			immunizationActivity)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.IMMUNIZATION_ACTIVITY__IMMUNIZATION_ACTIVITY_APPROACH_SITE_CODE,
-					ConsolPlugin.INSTANCE.getString("ImmunizationActivityApproachSiteCode"),
+					ConsolValidator.IMMUNIZATION_ACTIVITY__IMMUNIZATION_ACTIVITY_ROUTE_CODE,
+					ConsolPlugin.INSTANCE.getString("ImmunizationActivityRouteCode"),
 					new Object[] { immunizationActivity }));
 			}
 
@@ -1108,28 +1087,6 @@ public class ImmunizationActivityOperations extends SubstanceAdministrationOpera
 	*/
 
 	protected static Constraint VALIDATE_IMMUNIZATION_ACTIVITY_APPROACH_SITE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-
-	/**
-	* The cached OCL expression body for the '{@link #validateImmunizationActivityApproachSiteCode(ImmunizationActivity, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Immunization Activity Approach Site Code</em>}' operation.
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @see #validateImmunizationActivityApproachSiteCode(ImmunizationActivity, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
-	protected static final String VALIDATE_IMMUNIZATION_ACTIVITY_APPROACH_SITE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.approachSiteCode->isEmpty() or self.approachSiteCode->exists(element | element.isNullFlavorUndefined())) implies (self.approachSiteCode->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and "
-			+ "let value : datatypes::CD = element.oclAsType(datatypes::CD) in "
-			+ "value.codeSystem = '2.16.840.1.113883.6.96' and not value.code.oclIsUndefined()))";
-
-	/**
-	* The cached OCL invariant for the '{@link #validateImmunizationActivityApproachSiteCode(ImmunizationActivity, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Immunization Activity Approach Site Code</em>}' invariant operation.
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @see #validateImmunizationActivityApproachSiteCode(ImmunizationActivity, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
-	protected static Constraint VALIDATE_IMMUNIZATION_ACTIVITY_APPROACH_SITE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
 	* <!-- begin-user-doc -->
@@ -1183,6 +1140,75 @@ public class ImmunizationActivityOperations extends SubstanceAdministrationOpera
 	}
 
 	/**
+	* The cached OCL expression body for the '{@link #validateImmunizationActivityApproachSiteCode(ImmunizationActivity, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Immunization Activity Approach Site Code</em>}' operation.
+	* <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	* @see #validateImmunizationActivityApproachSiteCode(ImmunizationActivity, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
+	protected static final String VALIDATE_IMMUNIZATION_ACTIVITY_APPROACH_SITE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.approachSiteCode->isEmpty() or self.approachSiteCode->exists(element | element.isNullFlavorUndefined())) implies (self.approachSiteCode->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and "
+			+ "let value : datatypes::CD = element.oclAsType(datatypes::CD) in "
+			+ "value.codeSystem = '2.16.840.1.113883.6.96' and not value.code.oclIsUndefined()))";
+
+	/**
+	* The cached OCL invariant for the '{@link #validateImmunizationActivityApproachSiteCode(ImmunizationActivity, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Immunization Activity Approach Site Code</em>}' invariant operation.
+	* <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	* @see #validateImmunizationActivityApproachSiteCode(ImmunizationActivity, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
+
+	protected static Constraint VALIDATE_IMMUNIZATION_ACTIVITY_APPROACH_SITE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
+	/**
+	* <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	* <!-- begin-model-doc -->
+	* @param immunizationActivity The receiving '<em><b>Immunization Activity</b></em>' model object.
+	* @param diagnostics The chain of diagnostics to which problems are to be appended.
+	* @param context The cache of context-specific information.
+	* <!-- end-model-doc -->
+	* @generated
+	*/
+
+	public static boolean validateImmunizationActivityApproachSiteCode(ImmunizationActivity immunizationActivity,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		Object passToken = (context == null)
+				? null
+				: context.get("org.openhealthtools.mdht.uml.cda.consol.ImmunizationActivityApproachSiteCodeP");
+		if ((passToken instanceof Collection<?>) && ((Collection<?>) passToken).contains(immunizationActivity)) {
+			// I have a free pass to short-circuit
+			return true;
+		}
+
+		if (VALIDATE_IMMUNIZATION_ACTIVITY_APPROACH_SITE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setContext(ConsolPackage.Literals.IMMUNIZATION_ACTIVITY);
+			try {
+				VALIDATE_IMMUNIZATION_ACTIVITY_APPROACH_SITE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_IMMUNIZATION_ACTIVITY_APPROACH_SITE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+			} catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		if (!EOCL_ENV.createQuery(VALIDATE_IMMUNIZATION_ACTIVITY_APPROACH_SITE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			immunizationActivity)) {
+			if (diagnostics != null) {
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.IMMUNIZATION_ACTIVITY__IMMUNIZATION_ACTIVITY_APPROACH_SITE_CODE,
+					ConsolPlugin.INSTANCE.getString("ImmunizationActivityApproachSiteCode"),
+					new Object[] { immunizationActivity }));
+			}
+
+			return false;
+		}
+		return true;
+	}
+
+	/**
 	* The cached OCL expression body for the '{@link #validateImmunizationActivityDoseQuantity(ImmunizationActivity, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Immunization Activity Dose Quantity</em>}' operation.
 	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1200,6 +1226,7 @@ public class ImmunizationActivityOperations extends SubstanceAdministrationOpera
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_IMMUNIZATION_ACTIVITY_DOSE_QUANTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -1212,6 +1239,7 @@ public class ImmunizationActivityOperations extends SubstanceAdministrationOpera
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateImmunizationActivityDoseQuantity(ImmunizationActivity immunizationActivity,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -1257,6 +1285,7 @@ public class ImmunizationActivityOperations extends SubstanceAdministrationOpera
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_IMMUNIZATION_ACTIVITY_NEGATION_IND__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -1269,6 +1298,7 @@ public class ImmunizationActivityOperations extends SubstanceAdministrationOpera
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateImmunizationActivityNegationInd(ImmunizationActivity immunizationActivity,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -1314,6 +1344,7 @@ public class ImmunizationActivityOperations extends SubstanceAdministrationOpera
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_IMMUNIZATION_ACTIVITY_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -1326,6 +1357,7 @@ public class ImmunizationActivityOperations extends SubstanceAdministrationOpera
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateImmunizationActivityText(ImmunizationActivity immunizationActivity,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -1370,6 +1402,7 @@ public class ImmunizationActivityOperations extends SubstanceAdministrationOpera
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_IMMUNIZATION_ACTIVITY_REPEAT_NUMBER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -1382,6 +1415,7 @@ public class ImmunizationActivityOperations extends SubstanceAdministrationOpera
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateImmunizationActivityRepeatNumber(ImmunizationActivity immunizationActivity,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -1410,52 +1444,6 @@ public class ImmunizationActivityOperations extends SubstanceAdministrationOpera
 	}
 
 	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param immunizationActivity The receiving '<em><b>Immunization Activity</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
-	public static boolean validateImmunizationActivityAdministrationUnitCode(ImmunizationActivity immunizationActivity,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
-		Object passToken = (context == null)
-				? null
-				: context.get("org.openhealthtools.mdht.uml.cda.consol.ImmunizationActivityAdministrationUnitCodeP");
-		if ((passToken instanceof Collection<?>) && ((Collection<?>) passToken).contains(immunizationActivity)) {
-			// I have a free pass to short-circuit
-			return true;
-		}
-
-		if (VALIDATE_IMMUNIZATION_ACTIVITY_ADMINISTRATION_UNIT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(ConsolPackage.Literals.IMMUNIZATION_ACTIVITY);
-			try {
-				VALIDATE_IMMUNIZATION_ACTIVITY_ADMINISTRATION_UNIT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_IMMUNIZATION_ACTIVITY_ADMINISTRATION_UNIT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_IMMUNIZATION_ACTIVITY_ADMINISTRATION_UNIT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			immunizationActivity)) {
-			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.IMMUNIZATION_ACTIVITY__IMMUNIZATION_ACTIVITY_ADMINISTRATION_UNIT_CODE,
-					ConsolPlugin.INSTANCE.getString("ImmunizationActivityAdministrationUnitCode"),
-					new Object[] { immunizationActivity }));
-			}
-
-			return false;
-		}
-		return true;
-	}
-
-	/**
 	* The cached OCL expression body for the '{@link #validateImmunizationActivityAdministrationUnitCodeP(ImmunizationActivity, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Immunization Activity Administration Unit Code P</em>}' operation.
 	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1475,28 +1463,6 @@ public class ImmunizationActivityOperations extends SubstanceAdministrationOpera
 	*/
 
 	protected static Constraint VALIDATE_IMMUNIZATION_ACTIVITY_ADMINISTRATION_UNIT_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-
-	/**
-	* The cached OCL expression body for the '{@link #validateImmunizationActivityAdministrationUnitCode(ImmunizationActivity, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Immunization Activity Administration Unit Code</em>}' operation.
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @see #validateImmunizationActivityAdministrationUnitCode(ImmunizationActivity, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
-	protected static final String VALIDATE_IMMUNIZATION_ACTIVITY_ADMINISTRATION_UNIT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.administrationUnitCode.oclIsUndefined() or self.administrationUnitCode.isNullFlavorUndefined()) implies (not self.administrationUnitCode.oclIsUndefined() and self.administrationUnitCode.oclIsKindOf(datatypes::CE) and "
-			+ "let value : datatypes::CE = self.administrationUnitCode.oclAsType(datatypes::CE) in "
-			+ "value.codeSystem = '2.16.840.1.113883.3.26.1.1' and (value.code = 'C42887' or value.code = 'C42888' or value.code = 'C42960' or value.code = 'C42971' or value.code = 'C42889' or value.code = 'C42892' or value.code = 'C42890' or value.code = 'C43451' or value.code = 'C42891' or value.code = 'C25158' or value.code = 'C42895' or value.code = 'C42896' or value.code = 'C42917' or value.code = 'C42902' or value.code = 'C42904' or value.code = 'C42916' or value.code = 'C42928' or value.code = 'C42936' or value.code = 'C42954' or value.code = 'C45414' or value.code = 'C42678' or value.code = 'C60884' or value.code = 'C60891' or value.code = 'C42900' or value.code = 'C42919' or value.code = 'C28944' or value.code = 'C60897' or value.code = 'C42901' or value.code = 'C45415' or value.code = 'C47890' or value.code = 'C43525' or value.code = 'C42679' or value.code = 'C42763' or value.code = 'C17423' or value.code = 'C42912' or value.code = 'C42913' or value.code = 'C42915' or value.code = 'C42929' or value.code = 'C60926' or value.code = 'C42932' or value.code = 'C42920' or value.code = 'C42984' or value.code = 'C60927' or value.code = 'C60928' or value.code = 'C60929' or value.code = 'C42933' or value.code = 'C42934' or value.code = 'C42906' or value.code = 'C60930' or value.code = 'C48193' or value.code = 'C42937' or value.code = 'C45416' or value.code = 'C42938' or value.code = 'C42903' or value.code = 'C42909' or value.code = 'C42939' or value.code = 'C42940' or value.code = 'C42921' or value.code = 'C42941' or value.code = 'C42894' or value.code = 'C42978' or value.code = 'C42942' or value.code = 'C42944' or value.code = 'C60931' or value.code = 'C42946' or value.code = 'C42914' or value.code = 'C42950' or value.code = 'C42974' or value.code = 'C42976' or value.code = 'C42977' or value.code = 'C42959' or value.code = 'C42957' or value.code = 'C42958' or value.code = 'C42956' or value.code = 'C42945' or value.code = 'C42899' or value.code = 'C42995' or value.code = 'C42926' or value.code = 'C42951' or value.code = 'C42988' or value.code = 'C60933' or value.code = 'C42922' or value.code = 'C47915' or value.code = 'C42947' or value.code = 'C42948' or value.code = 'C47916' or value.code = 'C45413' or value.code = 'C42949' or value.code = 'C42952' or value.code = 'C42953' or value.code = 'C60934' or value.code = 'C29167' or value.code = 'C60957' or value.code = 'C60958' or value.code = 'C42955' or value.code = 'C29269' or value.code = 'C42965' or value.code = 'C42966' or value.code = 'C60984' or value.code = 'C47887' or value.code = 'C42967' or value.code = 'C42907' or value.code = 'C60985' or value.code = 'C42968' or value.code = 'C42923' or value.code = 'C42911' or value.code = 'C42969' or value.code = 'C42943' or value.code = 'C42918' or value.code = 'C25394' or value.code = 'C42970' or value.code = 'C47913' or value.code = 'C42972' or value.code = 'C42908' or value.code = 'C42973' or value.code = 'C42975' or value.code = 'C42961' or value.code = 'C60988' or value.code = 'C42979' or value.code = 'C42980' or value.code = 'C42981' or value.code = 'C42982' or value.code = 'C42983' or value.code = 'C42986' or value.code = 'C42898' or value.code = 'C42987' or value.code = 'C60994' or value.code = 'C42935' or value.code = 'C60992' or value.code = 'C47912' or value.code = 'C42989' or value.code = 'C42962' or value.code = 'C42990' or value.code = 'C42991' or value.code = 'C47914' or value.code = 'C42993' or value.code = 'C42924' or value.code = 'C42994' or value.code = 'C42925' or value.code = 'C60995' or value.code = 'C47889' or value.code = 'C47898' or value.code = 'C42996' or value.code = 'C42998' or value.code = 'C42893' or value.code = 'C42897' or value.code = 'C60997' or value.code = 'C42905' or value.code = 'C42997' or value.code = 'C42910' or value.code = 'C42927' or value.code = 'C42931' or value.code = 'C42930' or value.code = 'C61004' or value.code = 'C61005' or value.code = 'C42964' or value.code = 'C42963' or value.code = 'C42999' or value.code = 'C61006' or value.code = 'C42985' or value.code = 'C42992' or value.code = 'C47892' or value.code = 'C47897' or value.code = 'C43000' or value.code = 'C43001' or value.code = 'C43002' or value.code = 'C43003'))";
-
-	/**
-	* The cached OCL invariant for the '{@link #validateImmunizationActivityAdministrationUnitCode(ImmunizationActivity, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Immunization Activity Administration Unit Code</em>}' invariant operation.
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @see #validateImmunizationActivityAdministrationUnitCode(ImmunizationActivity, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
-	protected static Constraint VALIDATE_IMMUNIZATION_ACTIVITY_ADMINISTRATION_UNIT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
 	* <!-- begin-user-doc -->
@@ -1552,6 +1518,76 @@ public class ImmunizationActivityOperations extends SubstanceAdministrationOpera
 	}
 
 	/**
+	* The cached OCL expression body for the '{@link #validateImmunizationActivityAdministrationUnitCode(ImmunizationActivity, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Immunization Activity Administration Unit Code</em>}' operation.
+	* <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	* @see #validateImmunizationActivityAdministrationUnitCode(ImmunizationActivity, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
+	protected static final String VALIDATE_IMMUNIZATION_ACTIVITY_ADMINISTRATION_UNIT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.administrationUnitCode.oclIsUndefined() or self.administrationUnitCode.isNullFlavorUndefined()) implies (not self.administrationUnitCode.oclIsUndefined() and self.administrationUnitCode.oclIsKindOf(datatypes::CE) and "
+			+ "let value : datatypes::CE = self.administrationUnitCode.oclAsType(datatypes::CE) in "
+			+ "value.codeSystem = '2.16.840.1.113883.3.26.1.1' and (value.code = 'C42887' or value.code = 'C42888' or value.code = 'C42960' or value.code = 'C42971' or value.code = 'C42889' or value.code = 'C42892' or value.code = 'C42890' or value.code = 'C43451' or value.code = 'C42891' or value.code = 'C25158' or value.code = 'C42895' or value.code = 'C42896' or value.code = 'C42917' or value.code = 'C42902' or value.code = 'C42904' or value.code = 'C42916' or value.code = 'C42928' or value.code = 'C42936' or value.code = 'C42954' or value.code = 'C45414' or value.code = 'C42678' or value.code = 'C60884' or value.code = 'C60891' or value.code = 'C42900' or value.code = 'C42919' or value.code = 'C28944' or value.code = 'C60897' or value.code = 'C42901' or value.code = 'C45415' or value.code = 'C47890' or value.code = 'C43525' or value.code = 'C42679' or value.code = 'C42763' or value.code = 'C17423' or value.code = 'C42912' or value.code = 'C42913' or value.code = 'C42915' or value.code = 'C42929' or value.code = 'C60926' or value.code = 'C42932' or value.code = 'C42920' or value.code = 'C42984' or value.code = 'C60927' or value.code = 'C60928' or value.code = 'C60929' or value.code = 'C42933' or value.code = 'C42934' or value.code = 'C42906' or value.code = 'C60930' or value.code = 'C48193' or value.code = 'C42937' or value.code = 'C45416' or value.code = 'C42938' or value.code = 'C42903' or value.code = 'C42909' or value.code = 'C42939' or value.code = 'C42940' or value.code = 'C42921' or value.code = 'C42941' or value.code = 'C42894' or value.code = 'C42978' or value.code = 'C42942' or value.code = 'C42944' or value.code = 'C60931' or value.code = 'C42946' or value.code = 'C42914' or value.code = 'C42950' or value.code = 'C42974' or value.code = 'C42976' or value.code = 'C42977' or value.code = 'C42959' or value.code = 'C42957' or value.code = 'C42958' or value.code = 'C42956' or value.code = 'C42945' or value.code = 'C42899' or value.code = 'C42995' or value.code = 'C42926' or value.code = 'C42951' or value.code = 'C42988' or value.code = 'C60933' or value.code = 'C42922' or value.code = 'C47915' or value.code = 'C42947' or value.code = 'C42948' or value.code = 'C47916' or value.code = 'C45413' or value.code = 'C42949' or value.code = 'C42952' or value.code = 'C42953' or value.code = 'C60934' or value.code = 'C29167' or value.code = 'C60957' or value.code = 'C60958' or value.code = 'C42955' or value.code = 'C29269' or value.code = 'C42965' or value.code = 'C42966' or value.code = 'C60984' or value.code = 'C47887' or value.code = 'C42967' or value.code = 'C42907' or value.code = 'C60985' or value.code = 'C42968' or value.code = 'C42923' or value.code = 'C42911' or value.code = 'C42969' or value.code = 'C42943' or value.code = 'C42918' or value.code = 'C25394' or value.code = 'C42970' or value.code = 'C47913' or value.code = 'C42972' or value.code = 'C42908' or value.code = 'C42973' or value.code = 'C42975' or value.code = 'C42961' or value.code = 'C60988' or value.code = 'C42979' or value.code = 'C42980' or value.code = 'C42981' or value.code = 'C42982' or value.code = 'C42983' or value.code = 'C42986' or value.code = 'C42898' or value.code = 'C42987' or value.code = 'C60994' or value.code = 'C42935' or value.code = 'C60992' or value.code = 'C47912' or value.code = 'C42989' or value.code = 'C42962' or value.code = 'C42990' or value.code = 'C42991' or value.code = 'C47914' or value.code = 'C42993' or value.code = 'C42924' or value.code = 'C42994' or value.code = 'C42925' or value.code = 'C60995' or value.code = 'C47889' or value.code = 'C47898' or value.code = 'C42996' or value.code = 'C42998' or value.code = 'C42893' or value.code = 'C42897' or value.code = 'C60997' or value.code = 'C42905' or value.code = 'C42997' or value.code = 'C42910' or value.code = 'C42927' or value.code = 'C42931' or value.code = 'C42930' or value.code = 'C61004' or value.code = 'C61005' or value.code = 'C42964' or value.code = 'C42963' or value.code = 'C42999' or value.code = 'C61006' or value.code = 'C42985' or value.code = 'C42992' or value.code = 'C47892' or value.code = 'C47897' or value.code = 'C43000' or value.code = 'C43001' or value.code = 'C43002' or value.code = 'C43003'))";
+
+	/**
+	* The cached OCL invariant for the '{@link #validateImmunizationActivityAdministrationUnitCode(ImmunizationActivity, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Immunization Activity Administration Unit Code</em>}' invariant operation.
+	* <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	* @see #validateImmunizationActivityAdministrationUnitCode(ImmunizationActivity, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
+
+	protected static Constraint VALIDATE_IMMUNIZATION_ACTIVITY_ADMINISTRATION_UNIT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
+	/**
+	* <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	* <!-- begin-model-doc -->
+	* @param immunizationActivity The receiving '<em><b>Immunization Activity</b></em>' model object.
+	* @param diagnostics The chain of diagnostics to which problems are to be appended.
+	* @param context The cache of context-specific information.
+	* <!-- end-model-doc -->
+	* @generated
+	*/
+
+	public static boolean validateImmunizationActivityAdministrationUnitCode(ImmunizationActivity immunizationActivity,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		Object passToken = (context == null)
+				? null
+				: context.get("org.openhealthtools.mdht.uml.cda.consol.ImmunizationActivityAdministrationUnitCodeP");
+		if ((passToken instanceof Collection<?>) && ((Collection<?>) passToken).contains(immunizationActivity)) {
+			// I have a free pass to short-circuit
+			return true;
+		}
+
+		if (VALIDATE_IMMUNIZATION_ACTIVITY_ADMINISTRATION_UNIT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setContext(ConsolPackage.Literals.IMMUNIZATION_ACTIVITY);
+			try {
+				VALIDATE_IMMUNIZATION_ACTIVITY_ADMINISTRATION_UNIT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_IMMUNIZATION_ACTIVITY_ADMINISTRATION_UNIT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+			} catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_IMMUNIZATION_ACTIVITY_ADMINISTRATION_UNIT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			immunizationActivity)) {
+			if (diagnostics != null) {
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.IMMUNIZATION_ACTIVITY__IMMUNIZATION_ACTIVITY_ADMINISTRATION_UNIT_CODE,
+					ConsolPlugin.INSTANCE.getString("ImmunizationActivityAdministrationUnitCode"),
+					new Object[] { immunizationActivity }));
+			}
+
+			return false;
+		}
+		return true;
+	}
+
+	/**
 	* The cached OCL expression body for the '{@link #validateImmunizationActivityDrugVehicle(ImmunizationActivity, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Immunization Activity Drug Vehicle</em>}' operation.
 	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1569,6 +1605,7 @@ public class ImmunizationActivityOperations extends SubstanceAdministrationOpera
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_IMMUNIZATION_ACTIVITY_DRUG_VEHICLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -1581,6 +1618,7 @@ public class ImmunizationActivityOperations extends SubstanceAdministrationOpera
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateImmunizationActivityDrugVehicle(ImmunizationActivity immunizationActivity,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -1626,6 +1664,7 @@ public class ImmunizationActivityOperations extends SubstanceAdministrationOpera
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_IMMUNIZATION_ACTIVITY_INDICATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -1638,6 +1677,7 @@ public class ImmunizationActivityOperations extends SubstanceAdministrationOpera
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateImmunizationActivityIndication(ImmunizationActivity immunizationActivity,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -1683,6 +1723,7 @@ public class ImmunizationActivityOperations extends SubstanceAdministrationOpera
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_IMMUNIZATION_ACTIVITY_INSTRUCTIONS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -1695,6 +1736,7 @@ public class ImmunizationActivityOperations extends SubstanceAdministrationOpera
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateImmunizationActivityInstructions(ImmunizationActivity immunizationActivity,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -1740,6 +1782,7 @@ public class ImmunizationActivityOperations extends SubstanceAdministrationOpera
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_IMMUNIZATION_ACTIVITY_MEDICATION_DISPENSE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -1752,6 +1795,7 @@ public class ImmunizationActivityOperations extends SubstanceAdministrationOpera
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateImmunizationActivityMedicationDispense(ImmunizationActivity immunizationActivity,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -1797,6 +1841,7 @@ public class ImmunizationActivityOperations extends SubstanceAdministrationOpera
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_IMMUNIZATION_ACTIVITY_REACTION_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -1809,6 +1854,7 @@ public class ImmunizationActivityOperations extends SubstanceAdministrationOpera
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateImmunizationActivityReactionObservation(ImmunizationActivity immunizationActivity,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -1854,6 +1900,7 @@ public class ImmunizationActivityOperations extends SubstanceAdministrationOpera
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_IMMUNIZATION_ACTIVITY_PRECONDITION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -1866,6 +1913,7 @@ public class ImmunizationActivityOperations extends SubstanceAdministrationOpera
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateImmunizationActivityPrecondition(ImmunizationActivity immunizationActivity,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -1911,6 +1959,7 @@ public class ImmunizationActivityOperations extends SubstanceAdministrationOpera
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_IMMUNIZATION_ACTIVITY_IMMUNIZATION_REFUSAL_REASON__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -1923,6 +1972,7 @@ public class ImmunizationActivityOperations extends SubstanceAdministrationOpera
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateImmunizationActivityImmunizationRefusalReason(
 			ImmunizationActivity immunizationActivity, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -1969,6 +2019,7 @@ public class ImmunizationActivityOperations extends SubstanceAdministrationOpera
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_IMMUNIZATION_ACTIVITY_CONSUMABLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -1981,6 +2032,7 @@ public class ImmunizationActivityOperations extends SubstanceAdministrationOpera
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateImmunizationActivityConsumable(ImmunizationActivity immunizationActivity,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -2026,6 +2078,7 @@ public class ImmunizationActivityOperations extends SubstanceAdministrationOpera
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_IMMUNIZATION_ACTIVITY_PERFORMER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -2038,6 +2091,7 @@ public class ImmunizationActivityOperations extends SubstanceAdministrationOpera
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateImmunizationActivityPerformer(ImmunizationActivity immunizationActivity,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -2083,6 +2137,7 @@ public class ImmunizationActivityOperations extends SubstanceAdministrationOpera
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_IMMUNIZATION_ACTIVITY_MEDICATION_SUPPLY_ORDER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -2095,6 +2150,7 @@ public class ImmunizationActivityOperations extends SubstanceAdministrationOpera
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateImmunizationActivityMedicationSupplyOrder(ImmunizationActivity immunizationActivity,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -2126,7 +2182,7 @@ public class ImmunizationActivityOperations extends SubstanceAdministrationOpera
 	/**
 	* The cached OCL expression body for the '{@link #validateImmunizationActivityConsumableImmunizationMedicationInformation(ImmunizationActivity, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Immunization Activity Consumable Immunization Medication Information</em>}' operation.
 	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	* <!-- end-user-doc -->
 	* @see #validateImmunizationActivityConsumableImmunizationMedicationInformation(ImmunizationActivity, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	* @generated
 	* @ordered
@@ -2134,26 +2190,26 @@ public class ImmunizationActivityOperations extends SubstanceAdministrationOpera
 	protected static final String VALIDATE_IMMUNIZATION_ACTIVITY_CONSUMABLE_IMMUNIZATION_MEDICATION_INFORMATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.consumable->excluding(null)->reject(manufacturedProduct->one(manufacturedProduct : cda::ManufacturedProduct | not manufacturedProduct.oclIsUndefined() and manufacturedProduct.oclIsKindOf(consol::ImmunizationMedicationInformation)))";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateImmunizationActivityConsumableImmunizationMedicationInformation(ImmunizationActivity, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Immunization Activity Consumable Immunization Medication Information</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateImmunizationActivityConsumableImmunizationMedicationInformation(ImmunizationActivity, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Immunization Activity Consumable Immunization Medication Information</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateImmunizationActivityConsumableImmunizationMedicationInformation(ImmunizationActivity, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateImmunizationActivityConsumableImmunizationMedicationInformation(ImmunizationActivity, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 
 	protected static Query<?, ?, ?> VALIDATE_IMMUNIZATION_ACTIVITY_CONSUMABLE_IMMUNIZATION_MEDICATION_INFORMATION__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param immunizationActivity The receiving '<em><b>Immunization Activity</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param immunizationActivity The receiving '<em><b>Immunization Activity</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 	@SuppressWarnings("unchecked")
 	public static boolean validateImmunizationActivityConsumableImmunizationMedicationInformation(
 			ImmunizationActivity immunizationActivity, DiagnosticChain diagnostics, Map<Object, Object> context) {
@@ -2189,13 +2245,13 @@ public class ImmunizationActivityOperations extends SubstanceAdministrationOpera
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #getDrugVehicle(ImmunizationActivity) <em>Get Drug Vehicle</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #getDrugVehicle(ImmunizationActivity) <em>Get Drug Vehicle</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #getDrugVehicle(ImmunizationActivity)
-	* @generated
-	* @ordered
-	*/
+	 * @see #getDrugVehicle(ImmunizationActivity)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String GET_DRUG_VEHICLE__EOCL_EXP = "self.getParticipantRoles()->select(participantRole : cda::ParticipantRole | not participantRole.oclIsUndefined() and participantRole.oclIsKindOf(consol::DrugVehicle))->asSequence()->any(true).oclAsType(consol::DrugVehicle)";
 
 	/**
@@ -2213,6 +2269,7 @@ public class ImmunizationActivityOperations extends SubstanceAdministrationOpera
 	 * <!-- end-user-doc -->
 	* @generated
 	*/
+
 	public static DrugVehicle getDrugVehicle(ImmunizationActivity immunizationActivity) {
 		if (GET_DRUG_VEHICLE__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
@@ -2254,6 +2311,7 @@ public class ImmunizationActivityOperations extends SubstanceAdministrationOpera
 	 * <!-- end-user-doc -->
 	* @generated
 	*/
+
 	public static Indication getIndication(ImmunizationActivity immunizationActivity) {
 		if (GET_INDICATION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
@@ -2295,6 +2353,7 @@ public class ImmunizationActivityOperations extends SubstanceAdministrationOpera
 	 * <!-- end-user-doc -->
 	* @generated
 	*/
+
 	public static Instructions getInstructions(ImmunizationActivity immunizationActivity) {
 		if (GET_INSTRUCTIONS__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
@@ -2336,6 +2395,7 @@ public class ImmunizationActivityOperations extends SubstanceAdministrationOpera
 	 * <!-- end-user-doc -->
 	* @generated
 	*/
+
 	public static MedicationDispense getMedicationDispense(ImmunizationActivity immunizationActivity) {
 		if (GET_MEDICATION_DISPENSE__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
@@ -2377,6 +2437,7 @@ public class ImmunizationActivityOperations extends SubstanceAdministrationOpera
 	 * <!-- end-user-doc -->
 	* @generated
 	*/
+
 	public static ReactionObservation getReactionObservation(ImmunizationActivity immunizationActivity) {
 		if (GET_REACTION_OBSERVATION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
@@ -2418,6 +2479,7 @@ public class ImmunizationActivityOperations extends SubstanceAdministrationOpera
 	 * <!-- end-user-doc -->
 	* @generated
 	*/
+
 	public static ImmunizationRefusalReason getImmunizationRefusalReason(ImmunizationActivity immunizationActivity) {
 		if (GET_IMMUNIZATION_REFUSAL_REASON__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
@@ -2459,6 +2521,7 @@ public class ImmunizationActivityOperations extends SubstanceAdministrationOpera
 	 * <!-- end-user-doc -->
 	* @generated
 	*/
+
 	public static MedicationSupplyOrder getMedicationSupplyOrder(ImmunizationActivity immunizationActivity) {
 		if (GET_MEDICATION_SUPPLY_ORDER__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();

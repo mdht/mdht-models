@@ -78,6 +78,7 @@ public class EncountersSectionEntriesOptionalOperations extends SectionOperation
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_ENCOUNTERS_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -90,6 +91,7 @@ public class EncountersSectionEntriesOptionalOperations extends SectionOperation
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateEncountersSectionEntriesOptionalTemplateId(
 			EncountersSectionEntriesOptional encountersSectionEntriesOptional, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
@@ -140,6 +142,7 @@ public class EncountersSectionEntriesOptionalOperations extends SectionOperation
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_ENCOUNTERS_SECTION_ENTRIES_OPTIONAL_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -152,6 +155,7 @@ public class EncountersSectionEntriesOptionalOperations extends SectionOperation
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateEncountersSectionEntriesOptionalCode(
 			EncountersSectionEntriesOptional encountersSectionEntriesOptional, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
@@ -183,7 +187,7 @@ public class EncountersSectionEntriesOptionalOperations extends SectionOperation
 	/**
 	* The cached OCL expression body for the '{@link #validateEncountersSectionEntriesOptionalCodeP(EncountersSectionEntriesOptional, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Encounters Section Entries Optional Code P</em>}' operation.
 	* <!-- begin-user-doc -->
-	* <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	* @see #validateEncountersSectionEntriesOptionalCodeP(EncountersSectionEntriesOptional, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	* @generated
 	* @ordered
@@ -258,6 +262,7 @@ public class EncountersSectionEntriesOptionalOperations extends SectionOperation
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_ENCOUNTERS_SECTION_ENTRIES_OPTIONAL_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -270,6 +275,7 @@ public class EncountersSectionEntriesOptionalOperations extends SectionOperation
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateEncountersSectionEntriesOptionalTitle(
 			EncountersSectionEntriesOptional encountersSectionEntriesOptional, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
@@ -316,6 +322,7 @@ public class EncountersSectionEntriesOptionalOperations extends SectionOperation
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_ENCOUNTERS_SECTION_ENTRIES_OPTIONAL_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -328,6 +335,7 @@ public class EncountersSectionEntriesOptionalOperations extends SectionOperation
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateEncountersSectionEntriesOptionalText(
 			EncountersSectionEntriesOptional encountersSectionEntriesOptional, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
@@ -374,6 +382,7 @@ public class EncountersSectionEntriesOptionalOperations extends SectionOperation
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_ENCOUNTERS_SECTION_ENTRIES_OPTIONAL_ENCOUNTER_ACTIVITIES__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -386,6 +395,7 @@ public class EncountersSectionEntriesOptionalOperations extends SectionOperation
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateEncountersSectionEntriesOptionalEncounterActivities(
 			EncountersSectionEntriesOptional encountersSectionEntriesOptional, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
@@ -441,6 +451,7 @@ public class EncountersSectionEntriesOptionalOperations extends SectionOperation
 	 * <!-- end-user-doc -->
 	* @generated
 	*/
+
 	public static EList<EncounterActivities> getEncounterActivitiess(
 			EncountersSectionEntriesOptional encountersSectionEntriesOptional) {
 		if (GET_ENCOUNTER_ACTIVITIESS__EOCL_QRY == null) {

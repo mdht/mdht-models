@@ -100,7 +100,7 @@ public class AuthorizationActivityImpl extends ActImpl implements AuthorizationA
 
 	/**
 	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	* <!-- end-user-doc -->
 	* @generated
 	*/
 	public boolean validateAuthorizationActivityEntryRelationshipHasClinicalStatement(DiagnosticChain diagnostics,
@@ -110,10 +110,10 @@ public class AuthorizationActivityImpl extends ActImpl implements AuthorizationA
 	}
 
 	/**
-	* <!-- begin-user-doc -->
-	* <!-- end-user-doc -->
-	* @generated
-	*/
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public boolean validateAuthorizationActivityEntryRelationshipHasAuthorizedPerformers(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return AuthorizationActivityOperations.validateAuthorizationActivityEntryRelationshipHasAuthorizedPerformers(
@@ -121,10 +121,10 @@ public class AuthorizationActivityImpl extends ActImpl implements AuthorizationA
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateAuthorizationActivityEntryRelationshipTypeCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return AuthorizationActivityOperations.validateAuthorizationActivityEntryRelationshipTypeCode(
@@ -132,10 +132,10 @@ public class AuthorizationActivityImpl extends ActImpl implements AuthorizationA
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public AuthorizationActivity init() {
 		return Initializer.Util.init(this);
 	}

@@ -71,6 +71,7 @@ public class EstimatedDateOfDeliveryOperations extends ClinicalStatementOperatio
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_ESTIMATED_DATE_OF_DELIVERY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -83,6 +84,7 @@ public class EstimatedDateOfDeliveryOperations extends ClinicalStatementOperatio
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateEstimatedDateOfDeliveryTemplateId(EstimatedDateOfDelivery estimatedDateOfDelivery,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -128,6 +130,7 @@ public class EstimatedDateOfDeliveryOperations extends ClinicalStatementOperatio
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_ESTIMATED_DATE_OF_DELIVERY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -140,6 +143,7 @@ public class EstimatedDateOfDeliveryOperations extends ClinicalStatementOperatio
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateEstimatedDateOfDeliveryClassCode(EstimatedDateOfDelivery estimatedDateOfDelivery,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -187,6 +191,7 @@ public class EstimatedDateOfDeliveryOperations extends ClinicalStatementOperatio
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_ESTIMATED_DATE_OF_DELIVERY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -199,6 +204,7 @@ public class EstimatedDateOfDeliveryOperations extends ClinicalStatementOperatio
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateEstimatedDateOfDeliveryCode(EstimatedDateOfDelivery estimatedDateOfDelivery,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -244,6 +250,7 @@ public class EstimatedDateOfDeliveryOperations extends ClinicalStatementOperatio
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_ESTIMATED_DATE_OF_DELIVERY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -256,6 +263,7 @@ public class EstimatedDateOfDeliveryOperations extends ClinicalStatementOperatio
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateEstimatedDateOfDeliveryMoodCode(EstimatedDateOfDelivery estimatedDateOfDelivery,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -302,6 +310,7 @@ public class EstimatedDateOfDeliveryOperations extends ClinicalStatementOperatio
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_ESTIMATED_DATE_OF_DELIVERY_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -314,6 +323,7 @@ public class EstimatedDateOfDeliveryOperations extends ClinicalStatementOperatio
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateEstimatedDateOfDeliveryStatusCode(EstimatedDateOfDelivery estimatedDateOfDelivery,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -359,6 +369,7 @@ public class EstimatedDateOfDeliveryOperations extends ClinicalStatementOperatio
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_ESTIMATED_DATE_OF_DELIVERY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -371,6 +382,7 @@ public class EstimatedDateOfDeliveryOperations extends ClinicalStatementOperatio
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateEstimatedDateOfDeliveryValue(EstimatedDateOfDelivery estimatedDateOfDelivery,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 

@@ -62,7 +62,7 @@ public class VitalSignsSectionOperations extends VitalSignsSectionEntriesOptiona
 	/**
 	* The cached OCL expression body for the '{@link #validateVitalSignsSectionCodeP(VitalSignsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Vital Signs Section Code P</em>}' operation.
 	* <!-- begin-user-doc -->
-	* <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	* @see #validateVitalSignsSectionCodeP(VitalSignsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	* @generated
 	* @ordered
@@ -198,42 +198,6 @@ public class VitalSignsSectionOperations extends VitalSignsSectionEntriesOptiona
 	}
 
 	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param vitalSignsSection The receiving '<em><b>Vital Signs Section</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
-	public static boolean validateVitalSignsSectionTitle(VitalSignsSection vitalSignsSection,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
-		if (VALIDATE_VITAL_SIGNS_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(ConsolPackage.Literals.VITAL_SIGNS_SECTION);
-			try {
-				VALIDATE_VITAL_SIGNS_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_VITAL_SIGNS_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_VITAL_SIGNS_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			vitalSignsSection)) {
-			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.VITAL_SIGNS_SECTION__VITAL_SIGNS_SECTION_TITLE,
-					ConsolPlugin.INSTANCE.getString("VitalSignsSectionTitle"), new Object[] { vitalSignsSection }));
-			}
-
-			return false;
-		}
-		return true;
-	}
-
-	/**
 	* The cached OCL expression body for the '{@link #validateVitalSignsSectionText(VitalSignsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Vital Signs Section Text</em>}' operation.
 	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -251,27 +215,8 @@ public class VitalSignsSectionOperations extends VitalSignsSectionEntriesOptiona
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_VITAL_SIGNS_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-
-	/**
-	* The cached OCL expression body for the '{@link #validateVitalSignsSectionTitle(VitalSignsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Vital Signs Section Title</em>}' operation.
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @see #validateVitalSignsSectionTitle(VitalSignsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
-	protected static final String VALIDATE_VITAL_SIGNS_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.title.oclIsUndefined() or self.title.isNullFlavorUndefined()) implies (not self.title.oclIsUndefined())";
-
-	/**
-	* The cached OCL invariant for the '{@link #validateVitalSignsSectionTitle(VitalSignsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Vital Signs Section Title</em>}' invariant operation.
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @see #validateVitalSignsSectionTitle(VitalSignsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
-	protected static Constraint VALIDATE_VITAL_SIGNS_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
 	* <!-- begin-user-doc -->
@@ -283,6 +228,7 @@ public class VitalSignsSectionOperations extends VitalSignsSectionEntriesOptiona
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateVitalSignsSectionText(VitalSignsSection vitalSignsSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -310,6 +256,64 @@ public class VitalSignsSectionOperations extends VitalSignsSectionEntriesOptiona
 	}
 
 	/**
+	* The cached OCL expression body for the '{@link #validateVitalSignsSectionTitle(VitalSignsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Vital Signs Section Title</em>}' operation.
+	* <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	* @see #validateVitalSignsSectionTitle(VitalSignsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
+	protected static final String VALIDATE_VITAL_SIGNS_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.title.oclIsUndefined() or self.title.isNullFlavorUndefined()) implies (not self.title.oclIsUndefined())";
+
+	/**
+	* The cached OCL invariant for the '{@link #validateVitalSignsSectionTitle(VitalSignsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Vital Signs Section Title</em>}' invariant operation.
+	* <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	* @see #validateVitalSignsSectionTitle(VitalSignsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
+
+	protected static Constraint VALIDATE_VITAL_SIGNS_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
+	/**
+	* <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	* <!-- begin-model-doc -->
+	* @param vitalSignsSection The receiving '<em><b>Vital Signs Section</b></em>' model object.
+	* @param diagnostics The chain of diagnostics to which problems are to be appended.
+	* @param context The cache of context-specific information.
+	* <!-- end-model-doc -->
+	* @generated
+	*/
+
+	public static boolean validateVitalSignsSectionTitle(VitalSignsSection vitalSignsSection,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		if (VALIDATE_VITAL_SIGNS_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setContext(ConsolPackage.Literals.VITAL_SIGNS_SECTION);
+			try {
+				VALIDATE_VITAL_SIGNS_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_VITAL_SIGNS_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+			} catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		if (!EOCL_ENV.createQuery(VALIDATE_VITAL_SIGNS_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			vitalSignsSection)) {
+			if (diagnostics != null) {
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.VITAL_SIGNS_SECTION__VITAL_SIGNS_SECTION_TITLE,
+					ConsolPlugin.INSTANCE.getString("VitalSignsSectionTitle"), new Object[] { vitalSignsSection }));
+			}
+
+			return false;
+		}
+		return true;
+	}
+
+	/**
 	* The cached OCL expression body for the '{@link #validateVitalSignsSectionVitalSignsOrganizer(VitalSignsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Vital Signs Section Vital Signs Organizer</em>}' operation.
 	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -327,6 +331,7 @@ public class VitalSignsSectionOperations extends VitalSignsSectionEntriesOptiona
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_VITAL_SIGNS_SECTION_VITAL_SIGNS_ORGANIZER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -339,6 +344,7 @@ public class VitalSignsSectionOperations extends VitalSignsSectionEntriesOptiona
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateVitalSignsSectionVitalSignsOrganizer(VitalSignsSection vitalSignsSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -391,6 +397,7 @@ public class VitalSignsSectionOperations extends VitalSignsSectionEntriesOptiona
 	 * <!-- end-user-doc -->
 	* @generated
 	*/
+
 	public static EList<VitalSignsOrganizer> getConsolVitalSignsOrganizers(VitalSignsSection vitalSignsSection) {
 		if (GET_CONSOL_VITAL_SIGNS_ORGANIZERS__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
@@ -427,6 +434,7 @@ public class VitalSignsSectionOperations extends VitalSignsSectionEntriesOptiona
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_VITAL_SIGNS_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -439,6 +447,7 @@ public class VitalSignsSectionOperations extends VitalSignsSectionEntriesOptiona
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateVitalSignsSectionEntriesOptionalTemplateId(VitalSignsSection vitalSignsSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 

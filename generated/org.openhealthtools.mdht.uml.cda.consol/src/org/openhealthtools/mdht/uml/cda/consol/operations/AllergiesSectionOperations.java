@@ -62,7 +62,7 @@ public class AllergiesSectionOperations extends AllergiesSectionEntriesOptionalO
 	/**
 	* The cached OCL expression body for the '{@link #validateAllergiesSectionCodeP(AllergiesSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Allergies Section Code P</em>}' operation.
 	* <!-- begin-user-doc -->
-	* <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	* @see #validateAllergiesSectionCodeP(AllergiesSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	* @generated
 	* @ordered
@@ -215,6 +215,7 @@ public class AllergiesSectionOperations extends AllergiesSectionEntriesOptionalO
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_ALLERGIES_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -227,6 +228,7 @@ public class AllergiesSectionOperations extends AllergiesSectionEntriesOptionalO
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateAllergiesSectionTitle(AllergiesSection allergiesSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
@@ -271,6 +273,7 @@ public class AllergiesSectionOperations extends AllergiesSectionEntriesOptionalO
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_ALLERGIES_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -283,6 +286,7 @@ public class AllergiesSectionOperations extends AllergiesSectionEntriesOptionalO
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateAllergiesSectionText(AllergiesSection allergiesSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
@@ -430,6 +434,7 @@ public class AllergiesSectionOperations extends AllergiesSectionEntriesOptionalO
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_ALLERGIES_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -442,6 +447,7 @@ public class AllergiesSectionOperations extends AllergiesSectionEntriesOptionalO
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateAllergiesSectionEntriesOptionalTemplateId(AllergiesSection allergiesSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 

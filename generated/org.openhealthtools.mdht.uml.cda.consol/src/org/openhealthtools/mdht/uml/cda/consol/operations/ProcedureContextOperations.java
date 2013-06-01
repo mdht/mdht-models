@@ -54,7 +54,7 @@ public class ProcedureContextOperations extends ClinicalStatementOperations {
 	/**
 	* The cached OCL expression body for the '{@link #validateProcedureContextEffectiveTimeValue(ProcedureContext, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Context Effective Time Value</em>}' operation.
 	* <!-- begin-user-doc -->
-	* <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	* @see #validateProcedureContextEffectiveTimeValue(ProcedureContext, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	* @generated
 	* @ordered
@@ -128,6 +128,7 @@ public class ProcedureContextOperations extends ClinicalStatementOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_PROCEDURE_CONTEXT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -140,6 +141,7 @@ public class ProcedureContextOperations extends ClinicalStatementOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateProcedureContextTemplateId(ProcedureContext procedureContext,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 

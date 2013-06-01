@@ -78,6 +78,7 @@ public class ProblemSectionEntriesOptionalOperations extends SectionOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_PROBLEM_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -90,6 +91,7 @@ public class ProblemSectionEntriesOptionalOperations extends SectionOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateProblemSectionEntriesOptionalTemplateId(
 			ProblemSectionEntriesOptional problemSectionEntriesOptional, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
@@ -138,6 +140,7 @@ public class ProblemSectionEntriesOptionalOperations extends SectionOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_PROBLEM_SECTION_ENTRIES_OPTIONAL_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -150,6 +153,7 @@ public class ProblemSectionEntriesOptionalOperations extends SectionOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateProblemSectionEntriesOptionalCode(
 			ProblemSectionEntriesOptional problemSectionEntriesOptional, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
@@ -181,7 +185,7 @@ public class ProblemSectionEntriesOptionalOperations extends SectionOperations {
 	/**
 	* The cached OCL expression body for the '{@link #validateProblemSectionEntriesOptionalCodeP(ProblemSectionEntriesOptional, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Problem Section Entries Optional Code P</em>}' operation.
 	* <!-- begin-user-doc -->
-	* <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	* @see #validateProblemSectionEntriesOptionalCodeP(ProblemSectionEntriesOptional, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	* @generated
 	* @ordered
@@ -256,6 +260,7 @@ public class ProblemSectionEntriesOptionalOperations extends SectionOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_PROBLEM_SECTION_ENTRIES_OPTIONAL_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -268,6 +273,7 @@ public class ProblemSectionEntriesOptionalOperations extends SectionOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateProblemSectionEntriesOptionalTitle(
 			ProblemSectionEntriesOptional problemSectionEntriesOptional, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
@@ -314,6 +320,7 @@ public class ProblemSectionEntriesOptionalOperations extends SectionOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_PROBLEM_SECTION_ENTRIES_OPTIONAL_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -326,6 +333,7 @@ public class ProblemSectionEntriesOptionalOperations extends SectionOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateProblemSectionEntriesOptionalText(
 			ProblemSectionEntriesOptional problemSectionEntriesOptional, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
@@ -372,6 +380,7 @@ public class ProblemSectionEntriesOptionalOperations extends SectionOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_PROBLEM_SECTION_ENTRIES_OPTIONAL_PROBLEM_CONCERN__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -384,6 +393,7 @@ public class ProblemSectionEntriesOptionalOperations extends SectionOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateProblemSectionEntriesOptionalProblemConcern(
 			ProblemSectionEntriesOptional problemSectionEntriesOptional, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
@@ -438,6 +448,7 @@ public class ProblemSectionEntriesOptionalOperations extends SectionOperations {
 	 * <!-- end-user-doc -->
 	* @generated
 	*/
+
 	public static EList<ProblemConcernAct> getProblemConcerns(
 			ProblemSectionEntriesOptional problemSectionEntriesOptional) {
 		if (GET_PROBLEM_CONCERNS__EOCL_QRY == null) {

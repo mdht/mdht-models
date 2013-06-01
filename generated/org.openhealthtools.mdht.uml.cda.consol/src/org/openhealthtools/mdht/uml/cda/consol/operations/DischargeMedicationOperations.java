@@ -77,6 +77,7 @@ public class DischargeMedicationOperations extends ClinicalStatementOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_DISCHARGE_MEDICATION_MEDICATION_ACTIVITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -89,6 +90,7 @@ public class DischargeMedicationOperations extends ClinicalStatementOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateDischargeMedicationMedicationActivity(DischargeMedication dischargeMedication,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -134,6 +136,7 @@ public class DischargeMedicationOperations extends ClinicalStatementOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_DISCHARGE_MEDICATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -146,6 +149,7 @@ public class DischargeMedicationOperations extends ClinicalStatementOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateDischargeMedicationTemplateId(DischargeMedication dischargeMedication,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -191,6 +195,7 @@ public class DischargeMedicationOperations extends ClinicalStatementOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_DISCHARGE_MEDICATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -203,6 +208,7 @@ public class DischargeMedicationOperations extends ClinicalStatementOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateDischargeMedicationClassCode(DischargeMedication dischargeMedication,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -248,6 +254,7 @@ public class DischargeMedicationOperations extends ClinicalStatementOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_DISCHARGE_MEDICATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -260,6 +267,7 @@ public class DischargeMedicationOperations extends ClinicalStatementOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateDischargeMedicationMoodCode(DischargeMedication dischargeMedication,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -307,6 +315,7 @@ public class DischargeMedicationOperations extends ClinicalStatementOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_DISCHARGE_MEDICATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -319,6 +328,7 @@ public class DischargeMedicationOperations extends ClinicalStatementOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateDischargeMedicationCode(DischargeMedication dischargeMedication,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -348,7 +358,7 @@ public class DischargeMedicationOperations extends ClinicalStatementOperations {
 	/**
 	* The cached OCL expression body for the '{@link #getMedicationActivities(DischargeMedication) <em>Get Medication Activities</em>}' operation.
 	* <!-- begin-user-doc -->
-	* <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	* @see #getMedicationActivities(DischargeMedication)
 	* @generated
 	* @ordered

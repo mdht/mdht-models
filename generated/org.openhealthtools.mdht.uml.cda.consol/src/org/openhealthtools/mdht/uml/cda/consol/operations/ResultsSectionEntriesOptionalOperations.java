@@ -78,6 +78,7 @@ public class ResultsSectionEntriesOptionalOperations extends SectionOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_RESULTS_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -90,6 +91,7 @@ public class ResultsSectionEntriesOptionalOperations extends SectionOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateResultsSectionEntriesOptionalTemplateId(
 			ResultsSectionEntriesOptional resultsSectionEntriesOptional, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
@@ -138,6 +140,7 @@ public class ResultsSectionEntriesOptionalOperations extends SectionOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_RESULTS_SECTION_ENTRIES_OPTIONAL_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -150,6 +153,7 @@ public class ResultsSectionEntriesOptionalOperations extends SectionOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateResultsSectionEntriesOptionalCode(
 			ResultsSectionEntriesOptional resultsSectionEntriesOptional, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
@@ -181,7 +185,7 @@ public class ResultsSectionEntriesOptionalOperations extends SectionOperations {
 	/**
 	* The cached OCL expression body for the '{@link #validateResultsSectionEntriesOptionalCodeP(ResultsSectionEntriesOptional, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Results Section Entries Optional Code P</em>}' operation.
 	* <!-- begin-user-doc -->
-	* <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	* @see #validateResultsSectionEntriesOptionalCodeP(ResultsSectionEntriesOptional, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	* @generated
 	* @ordered
@@ -256,6 +260,7 @@ public class ResultsSectionEntriesOptionalOperations extends SectionOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_RESULTS_SECTION_ENTRIES_OPTIONAL_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -268,6 +273,7 @@ public class ResultsSectionEntriesOptionalOperations extends SectionOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateResultsSectionEntriesOptionalTitle(
 			ResultsSectionEntriesOptional resultsSectionEntriesOptional, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
@@ -314,6 +320,7 @@ public class ResultsSectionEntriesOptionalOperations extends SectionOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_RESULTS_SECTION_ENTRIES_OPTIONAL_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -326,6 +333,7 @@ public class ResultsSectionEntriesOptionalOperations extends SectionOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateResultsSectionEntriesOptionalText(
 			ResultsSectionEntriesOptional resultsSectionEntriesOptional, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
@@ -372,6 +380,7 @@ public class ResultsSectionEntriesOptionalOperations extends SectionOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_RESULTS_SECTION_ENTRIES_OPTIONAL_RESULT_ORGANIZER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -384,6 +393,7 @@ public class ResultsSectionEntriesOptionalOperations extends SectionOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateResultsSectionEntriesOptionalResultOrganizer(
 			ResultsSectionEntriesOptional resultsSectionEntriesOptional, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
@@ -439,6 +449,7 @@ public class ResultsSectionEntriesOptionalOperations extends SectionOperations {
 	 * <!-- end-user-doc -->
 	* @generated
 	*/
+
 	public static EList<ResultOrganizer> getResultOrganizers(ResultsSectionEntriesOptional resultsSectionEntriesOptional) {
 		if (GET_RESULT_ORGANIZERS__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();

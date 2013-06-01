@@ -360,7 +360,7 @@ public class MedicationActivityImpl extends SubstanceAdministrationImpl implemen
 
 	/**
 	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	* <!-- end-user-doc -->
 	* @generated
 	*/
 	public boolean validateMedicationActivityConsumableMedicationInformation(DiagnosticChain diagnostics,
@@ -370,10 +370,10 @@ public class MedicationActivityImpl extends SubstanceAdministrationImpl implemen
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public MedicationSupplyOrder getMedicationSupplyOrder() {
 		return MedicationActivityOperations.getMedicationSupplyOrder(this);
 	}

@@ -70,6 +70,7 @@ public class AssessmentSectionOperations extends SectionOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_ASSESSMENT_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -82,6 +83,7 @@ public class AssessmentSectionOperations extends SectionOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateAssessmentSectionTemplateId(AssessmentSection assessmentSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -128,6 +130,7 @@ public class AssessmentSectionOperations extends SectionOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_ASSESSMENT_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -140,6 +143,7 @@ public class AssessmentSectionOperations extends SectionOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateAssessmentSectionCode(AssessmentSection assessmentSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -169,7 +173,7 @@ public class AssessmentSectionOperations extends SectionOperations {
 	/**
 	* The cached OCL expression body for the '{@link #validateAssessmentSectionCodeP(AssessmentSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Assessment Section Code P</em>}' operation.
 	* <!-- begin-user-doc -->
-	* <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	* @see #validateAssessmentSectionCodeP(AssessmentSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	* @generated
 	* @ordered
@@ -242,6 +246,7 @@ public class AssessmentSectionOperations extends SectionOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_ASSESSMENT_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -254,6 +259,7 @@ public class AssessmentSectionOperations extends SectionOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateAssessmentSectionText(AssessmentSection assessmentSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 

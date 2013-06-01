@@ -70,6 +70,7 @@ public class OperativeNoteSurgicalProcedureSectionOperations extends SectionOper
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_OPERATIVE_NOTE_SURGICAL_PROCEDURE_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -82,6 +83,7 @@ public class OperativeNoteSurgicalProcedureSectionOperations extends SectionOper
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateOperativeNoteSurgicalProcedureSectionTemplateId(
 			OperativeNoteSurgicalProcedureSection operativeNoteSurgicalProcedureSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
@@ -132,6 +134,7 @@ public class OperativeNoteSurgicalProcedureSectionOperations extends SectionOper
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_OPERATIVE_NOTE_SURGICAL_PROCEDURE_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -144,6 +147,7 @@ public class OperativeNoteSurgicalProcedureSectionOperations extends SectionOper
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateOperativeNoteSurgicalProcedureSectionCode(
 			OperativeNoteSurgicalProcedureSection operativeNoteSurgicalProcedureSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
@@ -177,7 +181,7 @@ public class OperativeNoteSurgicalProcedureSectionOperations extends SectionOper
 	/**
 	* The cached OCL expression body for the '{@link #validateOperativeNoteSurgicalProcedureSectionCodeP(OperativeNoteSurgicalProcedureSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Operative Note Surgical Procedure Section Code P</em>}' operation.
 	* <!-- begin-user-doc -->
-	* <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	* @see #validateOperativeNoteSurgicalProcedureSectionCodeP(OperativeNoteSurgicalProcedureSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	* @generated
 	* @ordered
@@ -254,6 +258,7 @@ public class OperativeNoteSurgicalProcedureSectionOperations extends SectionOper
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_OPERATIVE_NOTE_SURGICAL_PROCEDURE_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -266,6 +271,7 @@ public class OperativeNoteSurgicalProcedureSectionOperations extends SectionOper
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateOperativeNoteSurgicalProcedureSectionText(
 			OperativeNoteSurgicalProcedureSection operativeNoteSurgicalProcedureSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
@@ -314,6 +320,7 @@ public class OperativeNoteSurgicalProcedureSectionOperations extends SectionOper
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_OPERATIVE_NOTE_SURGICAL_PROCEDURE_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -326,6 +333,7 @@ public class OperativeNoteSurgicalProcedureSectionOperations extends SectionOper
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateOperativeNoteSurgicalProcedureSectionTitle(
 			OperativeNoteSurgicalProcedureSection operativeNoteSurgicalProcedureSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {

@@ -232,51 +232,6 @@ public class EncounterDiagnosisOperations extends ClinicalStatementOperations {
 	}
 
 	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param encounterDiagnosis The receiving '<em><b>Encounter Diagnosis</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
-
-	public static boolean validateEncounterDiagnosisCode(EncounterDiagnosis encounterDiagnosis,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
-		Object passToken = (context == null)
-				? null
-				: context.get("org.openhealthtools.mdht.uml.cda.consol.EncounterDiagnosisCodeP");
-		if ((passToken instanceof Collection<?>) && ((Collection<?>) passToken).contains(encounterDiagnosis)) {
-			// I have a free pass to short-circuit
-			return true;
-		}
-
-		if (VALIDATE_ENCOUNTER_DIAGNOSIS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(ConsolPackage.Literals.ENCOUNTER_DIAGNOSIS);
-			try {
-				VALIDATE_ENCOUNTER_DIAGNOSIS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ENCOUNTER_DIAGNOSIS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ENCOUNTER_DIAGNOSIS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			encounterDiagnosis)) {
-			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.ENCOUNTER_DIAGNOSIS__ENCOUNTER_DIAGNOSIS_CODE,
-					ConsolPlugin.INSTANCE.getString("EncounterDiagnosisCode"), new Object[] { encounterDiagnosis }));
-			}
-
-			return false;
-		}
-		return true;
-	}
-
-	/**
 	* The cached OCL expression body for the '{@link #validateEncounterDiagnosisCodeP(EncounterDiagnosis, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Encounter Diagnosis Code P</em>}' operation.
 	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -296,29 +251,6 @@ public class EncounterDiagnosisOperations extends ClinicalStatementOperations {
 	*/
 
 	protected static Constraint VALIDATE_ENCOUNTER_DIAGNOSIS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-
-	/**
-	* The cached OCL expression body for the '{@link #validateEncounterDiagnosisCode(EncounterDiagnosis, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Encounter Diagnosis Code</em>}' operation.
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @see #validateEncounterDiagnosisCode(EncounterDiagnosis, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
-	protected static final String VALIDATE_ENCOUNTER_DIAGNOSIS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "
-			+ "let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "
-			+ "value.code = '29308-4' and value.codeSystem = '2.16.840.1.113883.6.1')";
-
-	/**
-	* The cached OCL invariant for the '{@link #validateEncounterDiagnosisCode(EncounterDiagnosis, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Encounter Diagnosis Code</em>}' invariant operation.
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @see #validateEncounterDiagnosisCode(EncounterDiagnosis, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
-
-	protected static Constraint VALIDATE_ENCOUNTER_DIAGNOSIS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
 	* <!-- begin-user-doc -->
@@ -362,6 +294,74 @@ public class EncounterDiagnosisOperations extends ClinicalStatementOperations {
 					context.put("org.openhealthtools.mdht.uml.cda.consol.EncounterDiagnosisCodeP", passToken);
 				}
 				passToken.add(encounterDiagnosis);
+			}
+
+			return false;
+		}
+		return true;
+	}
+
+	/**
+	* The cached OCL expression body for the '{@link #validateEncounterDiagnosisCode(EncounterDiagnosis, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Encounter Diagnosis Code</em>}' operation.
+	* <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	* @see #validateEncounterDiagnosisCode(EncounterDiagnosis, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
+	protected static final String VALIDATE_ENCOUNTER_DIAGNOSIS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "
+			+ "let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "
+			+ "value.code = '29308-4' and value.codeSystem = '2.16.840.1.113883.6.1')";
+
+	/**
+	* The cached OCL invariant for the '{@link #validateEncounterDiagnosisCode(EncounterDiagnosis, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Encounter Diagnosis Code</em>}' invariant operation.
+	* <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	* @see #validateEncounterDiagnosisCode(EncounterDiagnosis, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
+
+	protected static Constraint VALIDATE_ENCOUNTER_DIAGNOSIS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
+	/**
+	* <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	* <!-- begin-model-doc -->
+	* @param encounterDiagnosis The receiving '<em><b>Encounter Diagnosis</b></em>' model object.
+	* @param diagnostics The chain of diagnostics to which problems are to be appended.
+	* @param context The cache of context-specific information.
+	* <!-- end-model-doc -->
+	* @generated
+	*/
+
+	public static boolean validateEncounterDiagnosisCode(EncounterDiagnosis encounterDiagnosis,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		Object passToken = (context == null)
+				? null
+				: context.get("org.openhealthtools.mdht.uml.cda.consol.EncounterDiagnosisCodeP");
+		if ((passToken instanceof Collection<?>) && ((Collection<?>) passToken).contains(encounterDiagnosis)) {
+			// I have a free pass to short-circuit
+			return true;
+		}
+
+		if (VALIDATE_ENCOUNTER_DIAGNOSIS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setContext(ConsolPackage.Literals.ENCOUNTER_DIAGNOSIS);
+			try {
+				VALIDATE_ENCOUNTER_DIAGNOSIS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ENCOUNTER_DIAGNOSIS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+			} catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		if (!EOCL_ENV.createQuery(VALIDATE_ENCOUNTER_DIAGNOSIS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			encounterDiagnosis)) {
+			if (diagnostics != null) {
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.ENCOUNTER_DIAGNOSIS__ENCOUNTER_DIAGNOSIS_CODE,
+					ConsolPlugin.INSTANCE.getString("EncounterDiagnosisCode"), new Object[] { encounterDiagnosis }));
 			}
 
 			return false;

@@ -215,7 +215,7 @@ public class AssessmentScaleObservationImpl extends ObservationImpl implements A
 
 	/**
 	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	* <!-- end-user-doc -->
 	* @generated
 	*/
 	public boolean validateAssessmentScaleObservationReferenceRangeObservationRangeTextReference(
@@ -225,10 +225,10 @@ public class AssessmentScaleObservationImpl extends ObservationImpl implements A
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateAssessmentScaleObservationReferenceRangeObservationRangeTextReferenceValue(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return AssessmentScaleObservationOperations.validateAssessmentScaleObservationReferenceRangeObservationRangeTextReferenceValue(
@@ -236,10 +236,10 @@ public class AssessmentScaleObservationImpl extends ObservationImpl implements A
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateAssessmentScaleObservationReferenceRangeObservationRangeReferenceValue(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return AssessmentScaleObservationOperations.validateAssessmentScaleObservationReferenceRangeObservationRangeReferenceValue(
@@ -247,10 +247,10 @@ public class AssessmentScaleObservationImpl extends ObservationImpl implements A
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateAssessmentScaleObservationReferenceRangeObservationRangeText(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return AssessmentScaleObservationOperations.validateAssessmentScaleObservationReferenceRangeObservationRangeText(
@@ -258,10 +258,10 @@ public class AssessmentScaleObservationImpl extends ObservationImpl implements A
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateAssessmentScaleObservationReferenceRangeObservationRange(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return AssessmentScaleObservationOperations.validateAssessmentScaleObservationReferenceRangeObservationRange(
@@ -269,10 +269,10 @@ public class AssessmentScaleObservationImpl extends ObservationImpl implements A
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public EList<AssessmentScaleSupportingObservation> getAssessmentScaleSupportingObservations() {
 		return AssessmentScaleObservationOperations.getAssessmentScaleSupportingObservations(this);
 	}

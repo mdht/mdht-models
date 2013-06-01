@@ -78,6 +78,7 @@ public class VitalSignsSectionEntriesOptionalOperations extends SectionOperation
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_VITAL_SIGNS_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -90,6 +91,7 @@ public class VitalSignsSectionEntriesOptionalOperations extends SectionOperation
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateVitalSignsSectionEntriesOptionalTemplateId(
 			VitalSignsSectionEntriesOptional vitalSignsSectionEntriesOptional, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
@@ -140,6 +142,7 @@ public class VitalSignsSectionEntriesOptionalOperations extends SectionOperation
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_VITAL_SIGNS_SECTION_ENTRIES_OPTIONAL_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -152,6 +155,7 @@ public class VitalSignsSectionEntriesOptionalOperations extends SectionOperation
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateVitalSignsSectionEntriesOptionalCode(
 			VitalSignsSectionEntriesOptional vitalSignsSectionEntriesOptional, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
@@ -183,7 +187,7 @@ public class VitalSignsSectionEntriesOptionalOperations extends SectionOperation
 	/**
 	* The cached OCL expression body for the '{@link #validateVitalSignsSectionEntriesOptionalCodeP(VitalSignsSectionEntriesOptional, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Vital Signs Section Entries Optional Code P</em>}' operation.
 	* <!-- begin-user-doc -->
-	* <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	* @see #validateVitalSignsSectionEntriesOptionalCodeP(VitalSignsSectionEntriesOptional, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	* @generated
 	* @ordered
@@ -241,6 +245,27 @@ public class VitalSignsSectionEntriesOptionalOperations extends SectionOperation
 	}
 
 	/**
+	* The cached OCL expression body for the '{@link #validateVitalSignsSectionEntriesOptionalText(VitalSignsSectionEntriesOptional, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Vital Signs Section Entries Optional Text</em>}' operation.
+	* <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	* @see #validateVitalSignsSectionEntriesOptionalText(VitalSignsSectionEntriesOptional, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
+	protected static final String VALIDATE_VITAL_SIGNS_SECTION_ENTRIES_OPTIONAL_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "not self.text.oclIsUndefined()";
+
+	/**
+	* The cached OCL invariant for the '{@link #validateVitalSignsSectionEntriesOptionalText(VitalSignsSectionEntriesOptional, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Vital Signs Section Entries Optional Text</em>}' invariant operation.
+	* <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	* @see #validateVitalSignsSectionEntriesOptionalText(VitalSignsSectionEntriesOptional, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
+
+	protected static Constraint VALIDATE_VITAL_SIGNS_SECTION_ENTRIES_OPTIONAL_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
+	/**
 	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	* <!-- begin-model-doc -->
@@ -250,6 +275,67 @@ public class VitalSignsSectionEntriesOptionalOperations extends SectionOperation
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
+	public static boolean validateVitalSignsSectionEntriesOptionalText(
+			VitalSignsSectionEntriesOptional vitalSignsSectionEntriesOptional, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+
+		if (VALIDATE_VITAL_SIGNS_SECTION_ENTRIES_OPTIONAL_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setContext(ConsolPackage.Literals.VITAL_SIGNS_SECTION_ENTRIES_OPTIONAL);
+			try {
+				VALIDATE_VITAL_SIGNS_SECTION_ENTRIES_OPTIONAL_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_VITAL_SIGNS_SECTION_ENTRIES_OPTIONAL_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+			} catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		if (!EOCL_ENV.createQuery(VALIDATE_VITAL_SIGNS_SECTION_ENTRIES_OPTIONAL_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			vitalSignsSectionEntriesOptional)) {
+			if (diagnostics != null) {
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.VITAL_SIGNS_SECTION_ENTRIES_OPTIONAL__VITAL_SIGNS_SECTION_ENTRIES_OPTIONAL_TEXT,
+					ConsolPlugin.INSTANCE.getString("VitalSignsSectionEntriesOptionalText"),
+					new Object[] { vitalSignsSectionEntriesOptional }));
+			}
+
+			return false;
+		}
+		return true;
+	}
+
+	/**
+	* The cached OCL expression body for the '{@link #validateVitalSignsSectionEntriesOptionalTitle(VitalSignsSectionEntriesOptional, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Vital Signs Section Entries Optional Title</em>}' operation.
+	* <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	* @see #validateVitalSignsSectionEntriesOptionalTitle(VitalSignsSectionEntriesOptional, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
+	protected static final String VALIDATE_VITAL_SIGNS_SECTION_ENTRIES_OPTIONAL_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.title.oclIsUndefined() or self.title.isNullFlavorUndefined()) implies (not self.title.oclIsUndefined())";
+
+	/**
+	* The cached OCL invariant for the '{@link #validateVitalSignsSectionEntriesOptionalTitle(VitalSignsSectionEntriesOptional, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Vital Signs Section Entries Optional Title</em>}' invariant operation.
+	* <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	* @see #validateVitalSignsSectionEntriesOptionalTitle(VitalSignsSectionEntriesOptional, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
+
+	protected static Constraint VALIDATE_VITAL_SIGNS_SECTION_ENTRIES_OPTIONAL_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
+	/**
+	* <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	* <!-- begin-model-doc -->
+	* @param vitalSignsSectionEntriesOptional The receiving '<em><b>Vital Signs Section Entries Optional</b></em>' model object.
+	* @param diagnostics The chain of diagnostics to which problems are to be appended.
+	* @param context The cache of context-specific information.
+	* <!-- end-model-doc -->
+	* @generated
+	*/
+
 	public static boolean validateVitalSignsSectionEntriesOptionalTitle(
 			VitalSignsSectionEntriesOptional vitalSignsSectionEntriesOptional, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
@@ -279,6 +365,27 @@ public class VitalSignsSectionEntriesOptionalOperations extends SectionOperation
 	}
 
 	/**
+	* The cached OCL expression body for the '{@link #validateVitalSignsSectionEntriesOptionalVitalSignsOrganizer(VitalSignsSectionEntriesOptional, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Vital Signs Section Entries Optional Vital Signs Organizer</em>}' operation.
+	* <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	* @see #validateVitalSignsSectionEntriesOptionalVitalSignsOrganizer(VitalSignsSectionEntriesOptional, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
+	protected static final String VALIDATE_VITAL_SIGNS_SECTION_ENTRIES_OPTIONAL_VITAL_SIGNS_ORGANIZER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->exists(entry : cda::Entry | not entry.organizer.oclIsUndefined() and entry.organizer.oclIsKindOf(consol::VitalSignsOrganizer))";
+
+	/**
+	* The cached OCL invariant for the '{@link #validateVitalSignsSectionEntriesOptionalVitalSignsOrganizer(VitalSignsSectionEntriesOptional, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Vital Signs Section Entries Optional Vital Signs Organizer</em>}' invariant operation.
+	* <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	* @see #validateVitalSignsSectionEntriesOptionalVitalSignsOrganizer(VitalSignsSectionEntriesOptional, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
+
+	protected static Constraint VALIDATE_VITAL_SIGNS_SECTION_ENTRIES_OPTIONAL_VITAL_SIGNS_ORGANIZER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
+	/**
 	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	* <!-- begin-model-doc -->
@@ -288,6 +395,7 @@ public class VitalSignsSectionEntriesOptionalOperations extends SectionOperation
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateVitalSignsSectionEntriesOptionalVitalSignsOrganizer(
 			VitalSignsSectionEntriesOptional vitalSignsSectionEntriesOptional, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
@@ -319,90 +427,6 @@ public class VitalSignsSectionEntriesOptionalOperations extends SectionOperation
 	}
 
 	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	public static EList<VitalSignsOrganizer> getVitalSignsOrganizers(
-			VitalSignsSectionEntriesOptional vitalSignsSectionEntriesOptional) {
-		if (GET_VITAL_SIGNS_ORGANIZERS__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-				ConsolPackage.Literals.VITAL_SIGNS_SECTION_ENTRIES_OPTIONAL,
-				ConsolPackage.Literals.VITAL_SIGNS_SECTION_ENTRIES_OPTIONAL.getEAllOperations().get(61));
-			try {
-				GET_VITAL_SIGNS_ORGANIZERS__EOCL_QRY = helper.createQuery(GET_VITAL_SIGNS_ORGANIZERS__EOCL_EXP);
-			} catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_VITAL_SIGNS_ORGANIZERS__EOCL_QRY);
-		@SuppressWarnings("unchecked")
-		Collection<VitalSignsOrganizer> result = (Collection<VitalSignsOrganizer>) query.evaluate(vitalSignsSectionEntriesOptional);
-		return new BasicEList.UnmodifiableEList<VitalSignsOrganizer>(result.size(), result.toArray());
-	}
-
-	/**
-	* The cached OCL expression body for the '{@link #validateVitalSignsSectionEntriesOptionalText(VitalSignsSectionEntriesOptional, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Vital Signs Section Entries Optional Text</em>}' operation.
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @see #validateVitalSignsSectionEntriesOptionalText(VitalSignsSectionEntriesOptional, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
-	protected static final String VALIDATE_VITAL_SIGNS_SECTION_ENTRIES_OPTIONAL_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "not self.text.oclIsUndefined()";
-
-	/**
-	* The cached OCL invariant for the '{@link #validateVitalSignsSectionEntriesOptionalText(VitalSignsSectionEntriesOptional, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Vital Signs Section Entries Optional Text</em>}' invariant operation.
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @see #validateVitalSignsSectionEntriesOptionalText(VitalSignsSectionEntriesOptional, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
-	protected static Constraint VALIDATE_VITAL_SIGNS_SECTION_ENTRIES_OPTIONAL_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-
-	/**
-	* The cached OCL expression body for the '{@link #validateVitalSignsSectionEntriesOptionalTitle(VitalSignsSectionEntriesOptional, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Vital Signs Section Entries Optional Title</em>}' operation.
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @see #validateVitalSignsSectionEntriesOptionalTitle(VitalSignsSectionEntriesOptional, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
-	protected static final String VALIDATE_VITAL_SIGNS_SECTION_ENTRIES_OPTIONAL_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.title.oclIsUndefined() or self.title.isNullFlavorUndefined()) implies (not self.title.oclIsUndefined())";
-
-	/**
-	* The cached OCL invariant for the '{@link #validateVitalSignsSectionEntriesOptionalTitle(VitalSignsSectionEntriesOptional, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Vital Signs Section Entries Optional Title</em>}' invariant operation.
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @see #validateVitalSignsSectionEntriesOptionalTitle(VitalSignsSectionEntriesOptional, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
-	protected static Constraint VALIDATE_VITAL_SIGNS_SECTION_ENTRIES_OPTIONAL_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-
-	/**
-	* The cached OCL expression body for the '{@link #validateVitalSignsSectionEntriesOptionalVitalSignsOrganizer(VitalSignsSectionEntriesOptional, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Vital Signs Section Entries Optional Vital Signs Organizer</em>}' operation.
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @see #validateVitalSignsSectionEntriesOptionalVitalSignsOrganizer(VitalSignsSectionEntriesOptional, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
-	protected static final String VALIDATE_VITAL_SIGNS_SECTION_ENTRIES_OPTIONAL_VITAL_SIGNS_ORGANIZER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->exists(entry : cda::Entry | not entry.organizer.oclIsUndefined() and entry.organizer.oclIsKindOf(consol::VitalSignsOrganizer))";
-
-	/**
-	* The cached OCL invariant for the '{@link #validateVitalSignsSectionEntriesOptionalVitalSignsOrganizer(VitalSignsSectionEntriesOptional, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Vital Signs Section Entries Optional Vital Signs Organizer</em>}' invariant operation.
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @see #validateVitalSignsSectionEntriesOptionalVitalSignsOrganizer(VitalSignsSectionEntriesOptional, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
-	protected static Constraint VALIDATE_VITAL_SIGNS_SECTION_ENTRIES_OPTIONAL_VITAL_SIGNS_ORGANIZER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-
-	/**
 	* The cached OCL expression body for the '{@link #getVitalSignsOrganizers(VitalSignsSectionEntriesOptional) <em>Get Vital Signs Organizers</em>}' operation.
 	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -425,39 +449,26 @@ public class VitalSignsSectionEntriesOptionalOperations extends SectionOperation
 	/**
 	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param vitalSignsSectionEntriesOptional The receiving '<em><b>Vital Signs Section Entries Optional</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
 	* @generated
 	*/
-	public static boolean validateVitalSignsSectionEntriesOptionalText(
-			VitalSignsSectionEntriesOptional vitalSignsSectionEntriesOptional, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
 
-		if (VALIDATE_VITAL_SIGNS_SECTION_ENTRIES_OPTIONAL_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+	public static EList<VitalSignsOrganizer> getVitalSignsOrganizers(
+			VitalSignsSectionEntriesOptional vitalSignsSectionEntriesOptional) {
+		if (GET_VITAL_SIGNS_ORGANIZERS__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(ConsolPackage.Literals.VITAL_SIGNS_SECTION_ENTRIES_OPTIONAL);
+			helper.setOperationContext(
+				ConsolPackage.Literals.VITAL_SIGNS_SECTION_ENTRIES_OPTIONAL,
+				ConsolPackage.Literals.VITAL_SIGNS_SECTION_ENTRIES_OPTIONAL.getEAllOperations().get(61));
 			try {
-				VALIDATE_VITAL_SIGNS_SECTION_ENTRIES_OPTIONAL_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_VITAL_SIGNS_SECTION_ENTRIES_OPTIONAL_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				GET_VITAL_SIGNS_ORGANIZERS__EOCL_QRY = helper.createQuery(GET_VITAL_SIGNS_ORGANIZERS__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_VITAL_SIGNS_SECTION_ENTRIES_OPTIONAL_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			vitalSignsSectionEntriesOptional)) {
-			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.VITAL_SIGNS_SECTION_ENTRIES_OPTIONAL__VITAL_SIGNS_SECTION_ENTRIES_OPTIONAL_TEXT,
-					ConsolPlugin.INSTANCE.getString("VitalSignsSectionEntriesOptionalText"),
-					new Object[] { vitalSignsSectionEntriesOptional }));
-			}
-
-			return false;
-		}
-		return true;
+		OCL.Query query = EOCL_ENV.createQuery(GET_VITAL_SIGNS_ORGANIZERS__EOCL_QRY);
+		@SuppressWarnings("unchecked")
+		Collection<VitalSignsOrganizer> result = (Collection<VitalSignsOrganizer>) query.evaluate(vitalSignsSectionEntriesOptional);
+		return new BasicEList.UnmodifiableEList<VitalSignsOrganizer>(result.size(), result.toArray());
 	}
 
 } // VitalSignsSectionEntriesOptionalOperations

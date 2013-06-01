@@ -98,7 +98,7 @@ public class ProductInstanceImpl extends ParticipantRoleImpl implements ProductI
 
 	/**
 	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	* <!-- end-user-doc -->
 	* @generated
 	*/
 	public boolean validateProductInstanceScopingEntityId(DiagnosticChain diagnostics, Map<Object, Object> context) {
@@ -106,19 +106,19 @@ public class ProductInstanceImpl extends ParticipantRoleImpl implements ProductI
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateProductInstancePlayingDeviceCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProductInstanceOperations.validateProductInstancePlayingDeviceCode(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public ProductInstance init() {
 		return Initializer.Util.init(this);
 	}

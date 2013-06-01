@@ -133,6 +133,7 @@ public class ProgressNoteOperations extends GeneralHeaderConstraintsOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_PROGRESS_NOTE_HAS_AN_ASSEMENT_AND_PLAN_SECTION_OR_INDIVIDUAL_ASSEMENT_AND_PLAN_SECTIONS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -145,6 +146,7 @@ public class ProgressNoteOperations extends GeneralHeaderConstraintsOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateProgressNoteHasAnAssementAndPlanSectionOrIndividualAssementAndPlanSections(
 			ProgressNote progressNote, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -192,6 +194,7 @@ public class ProgressNoteOperations extends GeneralHeaderConstraintsOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_PROGRESS_NOTE_DOES_NOT_HAVE_INDIVIDUAL_ASSEMENT_AND_PLAN_SECTIONS_WHEN_ASSEMENT_AND_PLAN_SECTION_PRESENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -204,6 +207,7 @@ public class ProgressNoteOperations extends GeneralHeaderConstraintsOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateProgressNoteDoesNotHaveIndividualAssementAndPlanSectionsWhenAssementAndPlanSectionPresent(
 			ProgressNote progressNote, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -251,6 +255,7 @@ public class ProgressNoteOperations extends GeneralHeaderConstraintsOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_PROGRESS_NOTE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -263,6 +268,7 @@ public class ProgressNoteOperations extends GeneralHeaderConstraintsOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateProgressNoteTemplateId(ProgressNote progressNote, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
@@ -361,7 +367,7 @@ public class ProgressNoteOperations extends GeneralHeaderConstraintsOperations {
 	/**
 	* The cached OCL expression body for the '{@link #validateProgressNoteCode(ProgressNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Progress Note Code</em>}' operation.
 	* <!-- begin-user-doc -->
-	* <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	* @see #validateProgressNoteCode(ProgressNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	* @generated
 	* @ordered
@@ -443,6 +449,7 @@ public class ProgressNoteOperations extends GeneralHeaderConstraintsOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_PROGRESS_NOTE_DOCUMENTATION_OF__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -455,6 +462,7 @@ public class ProgressNoteOperations extends GeneralHeaderConstraintsOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateProgressNoteDocumentationOf(ProgressNote progressNote, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
@@ -499,6 +507,7 @@ public class ProgressNoteOperations extends GeneralHeaderConstraintsOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_PROGRESS_NOTE_COMPONENT_OF__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -511,6 +520,7 @@ public class ProgressNoteOperations extends GeneralHeaderConstraintsOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateProgressNoteComponentOf(ProgressNote progressNote, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
@@ -555,6 +565,7 @@ public class ProgressNoteOperations extends GeneralHeaderConstraintsOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_PROGRESS_NOTE_ASSESSMENT_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -567,6 +578,7 @@ public class ProgressNoteOperations extends GeneralHeaderConstraintsOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateProgressNoteAssessmentSection(ProgressNote progressNote, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
@@ -611,6 +623,7 @@ public class ProgressNoteOperations extends GeneralHeaderConstraintsOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_PROGRESS_NOTE_PLAN_OF_CARE_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -623,6 +636,7 @@ public class ProgressNoteOperations extends GeneralHeaderConstraintsOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateProgressNotePlanOfCareSection(ProgressNote progressNote, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
@@ -667,6 +681,7 @@ public class ProgressNoteOperations extends GeneralHeaderConstraintsOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_PROGRESS_NOTE_ASSESSMENT_AND_PLAN_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -679,6 +694,7 @@ public class ProgressNoteOperations extends GeneralHeaderConstraintsOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateProgressNoteAssessmentAndPlanSection(ProgressNote progressNote,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -724,6 +740,7 @@ public class ProgressNoteOperations extends GeneralHeaderConstraintsOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_PROGRESS_NOTE_ALLERGIES_SECTION_ENTRIES_OPTIONAL__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -736,6 +753,7 @@ public class ProgressNoteOperations extends GeneralHeaderConstraintsOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateProgressNoteAllergiesSectionEntriesOptional(ProgressNote progressNote,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -782,6 +800,7 @@ public class ProgressNoteOperations extends GeneralHeaderConstraintsOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_PROGRESS_NOTE_CHIEF_COMPLAINT_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -794,6 +813,7 @@ public class ProgressNoteOperations extends GeneralHeaderConstraintsOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateProgressNoteChiefComplaintSection(ProgressNote progressNote,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -838,6 +858,7 @@ public class ProgressNoteOperations extends GeneralHeaderConstraintsOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_PROGRESS_NOTE_INTERVENTIONS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -850,6 +871,7 @@ public class ProgressNoteOperations extends GeneralHeaderConstraintsOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateProgressNoteInterventionsSection(ProgressNote progressNote,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -894,6 +916,7 @@ public class ProgressNoteOperations extends GeneralHeaderConstraintsOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_PROGRESS_NOTE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -906,6 +929,7 @@ public class ProgressNoteOperations extends GeneralHeaderConstraintsOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateProgressNoteMedicationsSectionEntriesOptional(ProgressNote progressNote,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -952,6 +976,7 @@ public class ProgressNoteOperations extends GeneralHeaderConstraintsOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_PROGRESS_NOTE_OBJECTIVE_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -964,6 +989,7 @@ public class ProgressNoteOperations extends GeneralHeaderConstraintsOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateProgressNoteObjectiveSection(ProgressNote progressNote, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
@@ -1008,6 +1034,7 @@ public class ProgressNoteOperations extends GeneralHeaderConstraintsOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_PROGRESS_NOTE_PHYSICAL_EXAM_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -1020,6 +1047,7 @@ public class ProgressNoteOperations extends GeneralHeaderConstraintsOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateProgressNotePhysicalExamSection(ProgressNote progressNote,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -1064,6 +1092,7 @@ public class ProgressNoteOperations extends GeneralHeaderConstraintsOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_PROGRESS_NOTE_PROBLEM_SECTION_ENTRIES_OPTIONAL__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -1076,6 +1105,7 @@ public class ProgressNoteOperations extends GeneralHeaderConstraintsOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateProgressNoteProblemSectionEntriesOptional(ProgressNote progressNote,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -1121,6 +1151,7 @@ public class ProgressNoteOperations extends GeneralHeaderConstraintsOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_PROGRESS_NOTE_RESULTS_SECTION_ENTRIES_OPTIONAL__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -1133,6 +1164,7 @@ public class ProgressNoteOperations extends GeneralHeaderConstraintsOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateProgressNoteResultsSectionEntriesOptional(ProgressNote progressNote,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -1178,6 +1210,7 @@ public class ProgressNoteOperations extends GeneralHeaderConstraintsOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_PROGRESS_NOTE_REVIEW_OF_SYSTEMS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -1190,6 +1223,7 @@ public class ProgressNoteOperations extends GeneralHeaderConstraintsOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateProgressNoteReviewOfSystemsSection(ProgressNote progressNote,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -1235,6 +1269,7 @@ public class ProgressNoteOperations extends GeneralHeaderConstraintsOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_PROGRESS_NOTE_SUBJECTIVE_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -1247,6 +1282,7 @@ public class ProgressNoteOperations extends GeneralHeaderConstraintsOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateProgressNoteSubjectiveSection(ProgressNote progressNote, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
@@ -1291,6 +1327,7 @@ public class ProgressNoteOperations extends GeneralHeaderConstraintsOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_PROGRESS_NOTE_VITAL_SIGNS_SECTION_ENTRIES_OPTIONAL__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -1303,6 +1340,7 @@ public class ProgressNoteOperations extends GeneralHeaderConstraintsOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateProgressNoteVitalSignsSectionEntriesOptional(ProgressNote progressNote,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -1392,7 +1430,7 @@ public class ProgressNoteOperations extends GeneralHeaderConstraintsOperations {
 	/**
 	* The cached OCL expression body for the '{@link #validateProgressNoteDocumentationOfServiceEvent2EffectiveTimeLow(ProgressNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Progress Note Documentation Of Service Event2 Effective Time Low</em>}' operation.
 	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	* <!-- end-user-doc -->
 	* @see #validateProgressNoteDocumentationOfServiceEvent2EffectiveTimeLow(ProgressNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	* @generated
 	* @ordered
@@ -1400,26 +1438,26 @@ public class ProgressNoteOperations extends GeneralHeaderConstraintsOperations {
 	protected static final String VALIDATE_PROGRESS_NOTE_DOCUMENTATION_OF_SERVICE_EVENT2_EFFECTIVE_TIME_LOW__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.documentationOf->excluding(null).serviceEvent->excluding(null)->reject(effectiveTime->forAll(not low.oclIsUndefined()))";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateProgressNoteDocumentationOfServiceEvent2EffectiveTimeLow(ProgressNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Progress Note Documentation Of Service Event2 Effective Time Low</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateProgressNoteDocumentationOfServiceEvent2EffectiveTimeLow(ProgressNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Progress Note Documentation Of Service Event2 Effective Time Low</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateProgressNoteDocumentationOfServiceEvent2EffectiveTimeLow(ProgressNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateProgressNoteDocumentationOfServiceEvent2EffectiveTimeLow(ProgressNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 
 	protected static Query<?, ?, ?> VALIDATE_PROGRESS_NOTE_DOCUMENTATION_OF_SERVICE_EVENT2_EFFECTIVE_TIME_LOW__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param progressNote The receiving '<em><b>Progress Note</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param progressNote The receiving '<em><b>Progress Note</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 	@SuppressWarnings("unchecked")
 	public static boolean validateProgressNoteDocumentationOfServiceEvent2EffectiveTimeLow(ProgressNote progressNote,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
@@ -1455,36 +1493,36 @@ public class ProgressNoteOperations extends GeneralHeaderConstraintsOperations {
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateProgressNoteDocumentationOfServiceEvent2EffectiveTimeHigh(ProgressNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Progress Note Documentation Of Service Event2 Effective Time High</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateProgressNoteDocumentationOfServiceEvent2EffectiveTimeHigh(ProgressNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Progress Note Documentation Of Service Event2 Effective Time High</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateProgressNoteDocumentationOfServiceEvent2EffectiveTimeHigh(ProgressNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateProgressNoteDocumentationOfServiceEvent2EffectiveTimeHigh(ProgressNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_PROGRESS_NOTE_DOCUMENTATION_OF_SERVICE_EVENT2_EFFECTIVE_TIME_HIGH__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.documentationOf->excluding(null).serviceEvent->excluding(null)->reject(effectiveTime->forAll(width.oclIsUndefined() implies not high.oclIsUndefined()))";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateProgressNoteDocumentationOfServiceEvent2EffectiveTimeHigh(ProgressNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Progress Note Documentation Of Service Event2 Effective Time High</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateProgressNoteDocumentationOfServiceEvent2EffectiveTimeHigh(ProgressNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Progress Note Documentation Of Service Event2 Effective Time High</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateProgressNoteDocumentationOfServiceEvent2EffectiveTimeHigh(ProgressNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateProgressNoteDocumentationOfServiceEvent2EffectiveTimeHigh(ProgressNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 
 	protected static Query<?, ?, ?> VALIDATE_PROGRESS_NOTE_DOCUMENTATION_OF_SERVICE_EVENT2_EFFECTIVE_TIME_HIGH__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param progressNote The receiving '<em><b>Progress Note</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param progressNote The receiving '<em><b>Progress Note</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 	@SuppressWarnings("unchecked")
 	public static boolean validateProgressNoteDocumentationOfServiceEvent2EffectiveTimeHigh(ProgressNote progressNote,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
@@ -1520,36 +1558,36 @@ public class ProgressNoteOperations extends GeneralHeaderConstraintsOperations {
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateProgressNoteDocumentationOfServiceEvent2TemplateId(ProgressNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Progress Note Documentation Of Service Event2 Template Id</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateProgressNoteDocumentationOfServiceEvent2TemplateId(ProgressNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Progress Note Documentation Of Service Event2 Template Id</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateProgressNoteDocumentationOfServiceEvent2TemplateId(ProgressNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateProgressNoteDocumentationOfServiceEvent2TemplateId(ProgressNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_PROGRESS_NOTE_DOCUMENTATION_OF_SERVICE_EVENT2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.documentationOf->excluding(null).serviceEvent->excluding(null)->reject(templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.21.3.1'))";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateProgressNoteDocumentationOfServiceEvent2TemplateId(ProgressNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Progress Note Documentation Of Service Event2 Template Id</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateProgressNoteDocumentationOfServiceEvent2TemplateId(ProgressNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Progress Note Documentation Of Service Event2 Template Id</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateProgressNoteDocumentationOfServiceEvent2TemplateId(ProgressNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateProgressNoteDocumentationOfServiceEvent2TemplateId(ProgressNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 
 	protected static Query<?, ?, ?> VALIDATE_PROGRESS_NOTE_DOCUMENTATION_OF_SERVICE_EVENT2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param progressNote The receiving '<em><b>Progress Note</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param progressNote The receiving '<em><b>Progress Note</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 	@SuppressWarnings("unchecked")
 	public static boolean validateProgressNoteDocumentationOfServiceEvent2TemplateId(ProgressNote progressNote,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
@@ -1584,36 +1622,36 @@ public class ProgressNoteOperations extends GeneralHeaderConstraintsOperations {
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateProgressNoteDocumentationOfServiceEvent2ClassCode(ProgressNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Progress Note Documentation Of Service Event2 Class Code</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateProgressNoteDocumentationOfServiceEvent2ClassCode(ProgressNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Progress Note Documentation Of Service Event2 Class Code</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateProgressNoteDocumentationOfServiceEvent2ClassCode(ProgressNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateProgressNoteDocumentationOfServiceEvent2ClassCode(ProgressNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_PROGRESS_NOTE_DOCUMENTATION_OF_SERVICE_EVENT2_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.documentationOf->excluding(null).serviceEvent->excluding(null)->reject(isDefined('classCode') and classCode=vocab::ActClassRoot::PCPR)";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateProgressNoteDocumentationOfServiceEvent2ClassCode(ProgressNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Progress Note Documentation Of Service Event2 Class Code</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateProgressNoteDocumentationOfServiceEvent2ClassCode(ProgressNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Progress Note Documentation Of Service Event2 Class Code</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateProgressNoteDocumentationOfServiceEvent2ClassCode(ProgressNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateProgressNoteDocumentationOfServiceEvent2ClassCode(ProgressNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 
 	protected static Query<?, ?, ?> VALIDATE_PROGRESS_NOTE_DOCUMENTATION_OF_SERVICE_EVENT2_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param progressNote The receiving '<em><b>Progress Note</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param progressNote The receiving '<em><b>Progress Note</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 	@SuppressWarnings("unchecked")
 	public static boolean validateProgressNoteDocumentationOfServiceEvent2ClassCode(ProgressNote progressNote,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
@@ -1648,36 +1686,36 @@ public class ProgressNoteOperations extends GeneralHeaderConstraintsOperations {
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateProgressNoteDocumentationOfServiceEvent2EffectiveTime(ProgressNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Progress Note Documentation Of Service Event2 Effective Time</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateProgressNoteDocumentationOfServiceEvent2EffectiveTime(ProgressNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Progress Note Documentation Of Service Event2 Effective Time</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateProgressNoteDocumentationOfServiceEvent2EffectiveTime(ProgressNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateProgressNoteDocumentationOfServiceEvent2EffectiveTime(ProgressNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_PROGRESS_NOTE_DOCUMENTATION_OF_SERVICE_EVENT2_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.documentationOf->excluding(null).serviceEvent->excluding(null)->reject((effectiveTime.oclIsUndefined() or effectiveTime.isNullFlavorUndefined()) implies (not effectiveTime.oclIsUndefined()))";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateProgressNoteDocumentationOfServiceEvent2EffectiveTime(ProgressNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Progress Note Documentation Of Service Event2 Effective Time</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateProgressNoteDocumentationOfServiceEvent2EffectiveTime(ProgressNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Progress Note Documentation Of Service Event2 Effective Time</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateProgressNoteDocumentationOfServiceEvent2EffectiveTime(ProgressNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateProgressNoteDocumentationOfServiceEvent2EffectiveTime(ProgressNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 
 	protected static Query<?, ?, ?> VALIDATE_PROGRESS_NOTE_DOCUMENTATION_OF_SERVICE_EVENT2_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param progressNote The receiving '<em><b>Progress Note</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param progressNote The receiving '<em><b>Progress Note</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 	@SuppressWarnings("unchecked")
 	public static boolean validateProgressNoteDocumentationOfServiceEvent2EffectiveTime(ProgressNote progressNote,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
@@ -1712,36 +1750,36 @@ public class ProgressNoteOperations extends GeneralHeaderConstraintsOperations {
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateProgressNoteDocumentationOfServiceEvent2(ProgressNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Progress Note Documentation Of Service Event2</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateProgressNoteDocumentationOfServiceEvent2(ProgressNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Progress Note Documentation Of Service Event2</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateProgressNoteDocumentationOfServiceEvent2(ProgressNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateProgressNoteDocumentationOfServiceEvent2(ProgressNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_PROGRESS_NOTE_DOCUMENTATION_OF_SERVICE_EVENT2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.documentationOf->excluding(null)->reject(serviceEvent->one(serviceEvent : cda::ServiceEvent | not serviceEvent.oclIsUndefined() and serviceEvent.oclIsKindOf(cda::ServiceEvent)))";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateProgressNoteDocumentationOfServiceEvent2(ProgressNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Progress Note Documentation Of Service Event2</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateProgressNoteDocumentationOfServiceEvent2(ProgressNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Progress Note Documentation Of Service Event2</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateProgressNoteDocumentationOfServiceEvent2(ProgressNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateProgressNoteDocumentationOfServiceEvent2(ProgressNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 
 	protected static Query<?, ?, ?> VALIDATE_PROGRESS_NOTE_DOCUMENTATION_OF_SERVICE_EVENT2__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param progressNote The receiving '<em><b>Progress Note</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param progressNote The receiving '<em><b>Progress Note</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 	@SuppressWarnings("unchecked")
 	public static boolean validateProgressNoteDocumentationOfServiceEvent2(ProgressNote progressNote,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
@@ -1776,36 +1814,36 @@ public class ProgressNoteOperations extends GeneralHeaderConstraintsOperations {
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateProgressNoteComponentOfEncompassingEncounter6LocationHealthCareFacility1Id(ProgressNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Progress Note Component Of Encompassing Encounter6 Location Health Care Facility1 Id</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateProgressNoteComponentOfEncompassingEncounter6LocationHealthCareFacility1Id(ProgressNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Progress Note Component Of Encompassing Encounter6 Location Health Care Facility1 Id</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateProgressNoteComponentOfEncompassingEncounter6LocationHealthCareFacility1Id(ProgressNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateProgressNoteComponentOfEncompassingEncounter6LocationHealthCareFacility1Id(ProgressNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_PROGRESS_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER6_LOCATION_HEALTH_CARE_FACILITY1_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.componentOf->excluding(null).encompassingEncounter->excluding(null).location->excluding(null).healthCareFacility->excluding(null)->reject((id->isEmpty() or id->exists(element | element.isNullFlavorUndefined())) implies (id->size() = 1))";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateProgressNoteComponentOfEncompassingEncounter6LocationHealthCareFacility1Id(ProgressNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Progress Note Component Of Encompassing Encounter6 Location Health Care Facility1 Id</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateProgressNoteComponentOfEncompassingEncounter6LocationHealthCareFacility1Id(ProgressNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Progress Note Component Of Encompassing Encounter6 Location Health Care Facility1 Id</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateProgressNoteComponentOfEncompassingEncounter6LocationHealthCareFacility1Id(ProgressNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateProgressNoteComponentOfEncompassingEncounter6LocationHealthCareFacility1Id(ProgressNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 
 	protected static Query<?, ?, ?> VALIDATE_PROGRESS_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER6_LOCATION_HEALTH_CARE_FACILITY1_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param progressNote The receiving '<em><b>Progress Note</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param progressNote The receiving '<em><b>Progress Note</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 	@SuppressWarnings("unchecked")
 	public static boolean validateProgressNoteComponentOfEncompassingEncounter6LocationHealthCareFacility1Id(
 			ProgressNote progressNote, DiagnosticChain diagnostics, Map<Object, Object> context) {
@@ -1841,36 +1879,36 @@ public class ProgressNoteOperations extends GeneralHeaderConstraintsOperations {
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateProgressNoteComponentOfEncompassingEncounter6LocationHealthCareFacility(ProgressNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Progress Note Component Of Encompassing Encounter6 Location Health Care Facility</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateProgressNoteComponentOfEncompassingEncounter6LocationHealthCareFacility(ProgressNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Progress Note Component Of Encompassing Encounter6 Location Health Care Facility</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateProgressNoteComponentOfEncompassingEncounter6LocationHealthCareFacility(ProgressNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateProgressNoteComponentOfEncompassingEncounter6LocationHealthCareFacility(ProgressNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_PROGRESS_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER6_LOCATION_HEALTH_CARE_FACILITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.componentOf->excluding(null).encompassingEncounter->excluding(null).location->excluding(null)->reject(healthCareFacility->one(healthCareFacility : cda::HealthCareFacility | not healthCareFacility.oclIsUndefined() and healthCareFacility.oclIsKindOf(cda::HealthCareFacility)))";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateProgressNoteComponentOfEncompassingEncounter6LocationHealthCareFacility(ProgressNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Progress Note Component Of Encompassing Encounter6 Location Health Care Facility</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateProgressNoteComponentOfEncompassingEncounter6LocationHealthCareFacility(ProgressNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Progress Note Component Of Encompassing Encounter6 Location Health Care Facility</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateProgressNoteComponentOfEncompassingEncounter6LocationHealthCareFacility(ProgressNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateProgressNoteComponentOfEncompassingEncounter6LocationHealthCareFacility(ProgressNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 
 	protected static Query<?, ?, ?> VALIDATE_PROGRESS_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER6_LOCATION_HEALTH_CARE_FACILITY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param progressNote The receiving '<em><b>Progress Note</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param progressNote The receiving '<em><b>Progress Note</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 	@SuppressWarnings("unchecked")
 	public static boolean validateProgressNoteComponentOfEncompassingEncounter6LocationHealthCareFacility(
 			ProgressNote progressNote, DiagnosticChain diagnostics, Map<Object, Object> context) {
@@ -1906,36 +1944,36 @@ public class ProgressNoteOperations extends GeneralHeaderConstraintsOperations {
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateProgressNoteComponentOfEncompassingEncounter6EffectiveTime(ProgressNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Progress Note Component Of Encompassing Encounter6 Effective Time</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateProgressNoteComponentOfEncompassingEncounter6EffectiveTime(ProgressNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Progress Note Component Of Encompassing Encounter6 Effective Time</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateProgressNoteComponentOfEncompassingEncounter6EffectiveTime(ProgressNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateProgressNoteComponentOfEncompassingEncounter6EffectiveTime(ProgressNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_PROGRESS_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER6_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.componentOf->excluding(null).encompassingEncounter->excluding(null)->reject((effectiveTime.oclIsUndefined() or effectiveTime.isNullFlavorUndefined()) implies (not effectiveTime.oclIsUndefined()))";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateProgressNoteComponentOfEncompassingEncounter6EffectiveTime(ProgressNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Progress Note Component Of Encompassing Encounter6 Effective Time</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateProgressNoteComponentOfEncompassingEncounter6EffectiveTime(ProgressNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Progress Note Component Of Encompassing Encounter6 Effective Time</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateProgressNoteComponentOfEncompassingEncounter6EffectiveTime(ProgressNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateProgressNoteComponentOfEncompassingEncounter6EffectiveTime(ProgressNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 
 	protected static Query<?, ?, ?> VALIDATE_PROGRESS_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER6_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param progressNote The receiving '<em><b>Progress Note</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param progressNote The receiving '<em><b>Progress Note</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 	@SuppressWarnings("unchecked")
 	public static boolean validateProgressNoteComponentOfEncompassingEncounter6EffectiveTime(ProgressNote progressNote,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
@@ -1971,36 +2009,36 @@ public class ProgressNoteOperations extends GeneralHeaderConstraintsOperations {
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateProgressNoteComponentOfEncompassingEncounter6Id(ProgressNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Progress Note Component Of Encompassing Encounter6 Id</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateProgressNoteComponentOfEncompassingEncounter6Id(ProgressNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Progress Note Component Of Encompassing Encounter6 Id</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateProgressNoteComponentOfEncompassingEncounter6Id(ProgressNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateProgressNoteComponentOfEncompassingEncounter6Id(ProgressNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_PROGRESS_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER6_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.componentOf->excluding(null).encompassingEncounter->excluding(null)->reject((id->isEmpty() or id->exists(element | element.isNullFlavorUndefined())) implies (not id->isEmpty()))";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateProgressNoteComponentOfEncompassingEncounter6Id(ProgressNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Progress Note Component Of Encompassing Encounter6 Id</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateProgressNoteComponentOfEncompassingEncounter6Id(ProgressNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Progress Note Component Of Encompassing Encounter6 Id</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateProgressNoteComponentOfEncompassingEncounter6Id(ProgressNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateProgressNoteComponentOfEncompassingEncounter6Id(ProgressNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 
 	protected static Query<?, ?, ?> VALIDATE_PROGRESS_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER6_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param progressNote The receiving '<em><b>Progress Note</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param progressNote The receiving '<em><b>Progress Note</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 	@SuppressWarnings("unchecked")
 	public static boolean validateProgressNoteComponentOfEncompassingEncounter6Id(ProgressNote progressNote,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
@@ -2035,36 +2073,36 @@ public class ProgressNoteOperations extends GeneralHeaderConstraintsOperations {
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateProgressNoteComponentOfEncompassingEncounter6Location(ProgressNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Progress Note Component Of Encompassing Encounter6 Location</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateProgressNoteComponentOfEncompassingEncounter6Location(ProgressNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Progress Note Component Of Encompassing Encounter6 Location</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateProgressNoteComponentOfEncompassingEncounter6Location(ProgressNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateProgressNoteComponentOfEncompassingEncounter6Location(ProgressNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_PROGRESS_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER6_LOCATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.componentOf->excluding(null).encompassingEncounter->excluding(null)->reject(location->one(location : cda::Location | not location.oclIsUndefined() and location.oclIsKindOf(cda::Location)))";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateProgressNoteComponentOfEncompassingEncounter6Location(ProgressNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Progress Note Component Of Encompassing Encounter6 Location</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateProgressNoteComponentOfEncompassingEncounter6Location(ProgressNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Progress Note Component Of Encompassing Encounter6 Location</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateProgressNoteComponentOfEncompassingEncounter6Location(ProgressNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateProgressNoteComponentOfEncompassingEncounter6Location(ProgressNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 
 	protected static Query<?, ?, ?> VALIDATE_PROGRESS_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER6_LOCATION__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param progressNote The receiving '<em><b>Progress Note</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param progressNote The receiving '<em><b>Progress Note</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 	@SuppressWarnings("unchecked")
 	public static boolean validateProgressNoteComponentOfEncompassingEncounter6Location(ProgressNote progressNote,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
@@ -2099,36 +2137,36 @@ public class ProgressNoteOperations extends GeneralHeaderConstraintsOperations {
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateProgressNoteComponentOfEncompassingEncounter6(ProgressNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Progress Note Component Of Encompassing Encounter6</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateProgressNoteComponentOfEncompassingEncounter6(ProgressNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Progress Note Component Of Encompassing Encounter6</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateProgressNoteComponentOfEncompassingEncounter6(ProgressNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateProgressNoteComponentOfEncompassingEncounter6(ProgressNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_PROGRESS_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER6__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.componentOf->excluding(null)->reject(encompassingEncounter->one(encompassingEncounter : cda::EncompassingEncounter | not encompassingEncounter.oclIsUndefined() and encompassingEncounter.oclIsKindOf(cda::EncompassingEncounter)))";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateProgressNoteComponentOfEncompassingEncounter6(ProgressNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Progress Note Component Of Encompassing Encounter6</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateProgressNoteComponentOfEncompassingEncounter6(ProgressNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Progress Note Component Of Encompassing Encounter6</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateProgressNoteComponentOfEncompassingEncounter6(ProgressNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateProgressNoteComponentOfEncompassingEncounter6(ProgressNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 
 	protected static Query<?, ?, ?> VALIDATE_PROGRESS_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER6__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param progressNote The receiving '<em><b>Progress Note</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param progressNote The receiving '<em><b>Progress Note</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 	@SuppressWarnings("unchecked")
 	public static boolean validateProgressNoteComponentOfEncompassingEncounter6(ProgressNote progressNote,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
@@ -2163,13 +2201,13 @@ public class ProgressNoteOperations extends GeneralHeaderConstraintsOperations {
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #getAssessmentSection(ProgressNote) <em>Get Assessment Section</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #getAssessmentSection(ProgressNote) <em>Get Assessment Section</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #getAssessmentSection(ProgressNote)
-	* @generated
-	* @ordered
-	*/
+	 * @see #getAssessmentSection(ProgressNote)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String GET_ASSESSMENT_SECTION__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::AssessmentSection))->asSequence()->any(true).oclAsType(consol::AssessmentSection)";
 
 	/**
@@ -2187,6 +2225,7 @@ public class ProgressNoteOperations extends GeneralHeaderConstraintsOperations {
 	 * <!-- end-user-doc -->
 	* @generated
 	*/
+
 	public static AssessmentSection getAssessmentSection(ProgressNote progressNote) {
 		if (GET_ASSESSMENT_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
@@ -2227,6 +2266,7 @@ public class ProgressNoteOperations extends GeneralHeaderConstraintsOperations {
 	 * <!-- end-user-doc -->
 	* @generated
 	*/
+
 	public static PlanOfCareSection getPlanOfCareSection(ProgressNote progressNote) {
 		if (GET_PLAN_OF_CARE_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
@@ -2267,6 +2307,7 @@ public class ProgressNoteOperations extends GeneralHeaderConstraintsOperations {
 	 * <!-- end-user-doc -->
 	* @generated
 	*/
+
 	public static AssessmentAndPlanSection getAssessmentAndPlanSection(ProgressNote progressNote) {
 		if (GET_ASSESSMENT_AND_PLAN_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
@@ -2307,6 +2348,7 @@ public class ProgressNoteOperations extends GeneralHeaderConstraintsOperations {
 	 * <!-- end-user-doc -->
 	* @generated
 	*/
+
 	public static AllergiesSectionEntriesOptional getAllergiesSectionEntriesOptional(ProgressNote progressNote) {
 		if (GET_ALLERGIES_SECTION_ENTRIES_OPTIONAL__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
@@ -2347,6 +2389,7 @@ public class ProgressNoteOperations extends GeneralHeaderConstraintsOperations {
 	 * <!-- end-user-doc -->
 	* @generated
 	*/
+
 	public static ChiefComplaintSection getChiefComplaintSection(ProgressNote progressNote) {
 		if (GET_CHIEF_COMPLAINT_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
@@ -2387,6 +2430,7 @@ public class ProgressNoteOperations extends GeneralHeaderConstraintsOperations {
 	 * <!-- end-user-doc -->
 	* @generated
 	*/
+
 	public static InterventionsSection getInterventionsSection(ProgressNote progressNote) {
 		if (GET_INTERVENTIONS_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
@@ -2427,6 +2471,7 @@ public class ProgressNoteOperations extends GeneralHeaderConstraintsOperations {
 	 * <!-- end-user-doc -->
 	* @generated
 	*/
+
 	public static MedicationsSectionEntriesOptional getMedicationsSectionEntriesOptional(ProgressNote progressNote) {
 		if (GET_MEDICATIONS_SECTION_ENTRIES_OPTIONAL__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
@@ -2467,6 +2512,7 @@ public class ProgressNoteOperations extends GeneralHeaderConstraintsOperations {
 	 * <!-- end-user-doc -->
 	* @generated
 	*/
+
 	public static ObjectiveSection getObjectiveSection(ProgressNote progressNote) {
 		if (GET_OBJECTIVE_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
@@ -2507,6 +2553,7 @@ public class ProgressNoteOperations extends GeneralHeaderConstraintsOperations {
 	 * <!-- end-user-doc -->
 	* @generated
 	*/
+
 	public static PhysicalExamSection getPhysicalExamSection(ProgressNote progressNote) {
 		if (GET_PHYSICAL_EXAM_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
@@ -2547,6 +2594,7 @@ public class ProgressNoteOperations extends GeneralHeaderConstraintsOperations {
 	 * <!-- end-user-doc -->
 	* @generated
 	*/
+
 	public static ProblemSectionEntriesOptional getProblemSectionEntriesOptional(ProgressNote progressNote) {
 		if (GET_PROBLEM_SECTION_ENTRIES_OPTIONAL__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
@@ -2587,6 +2635,7 @@ public class ProgressNoteOperations extends GeneralHeaderConstraintsOperations {
 	 * <!-- end-user-doc -->
 	* @generated
 	*/
+
 	public static ResultsSectionEntriesOptional getResultsSectionEntriesOptional(ProgressNote progressNote) {
 		if (GET_RESULTS_SECTION_ENTRIES_OPTIONAL__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
@@ -2627,6 +2676,7 @@ public class ProgressNoteOperations extends GeneralHeaderConstraintsOperations {
 	 * <!-- end-user-doc -->
 	* @generated
 	*/
+
 	public static ReviewOfSystemsSection getReviewOfSystemsSection(ProgressNote progressNote) {
 		if (GET_REVIEW_OF_SYSTEMS_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
@@ -2667,6 +2717,7 @@ public class ProgressNoteOperations extends GeneralHeaderConstraintsOperations {
 	 * <!-- end-user-doc -->
 	* @generated
 	*/
+
 	public static SubjectiveSection getSubjectiveSection(ProgressNote progressNote) {
 		if (GET_SUBJECTIVE_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
@@ -2707,6 +2758,7 @@ public class ProgressNoteOperations extends GeneralHeaderConstraintsOperations {
 	 * <!-- end-user-doc -->
 	* @generated
 	*/
+
 	public static VitalSignsSectionEntriesOptional getVitalSignsSectionEntriesOptional(ProgressNote progressNote) {
 		if (GET_VITAL_SIGNS_SECTION_ENTRIES_OPTIONAL__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();

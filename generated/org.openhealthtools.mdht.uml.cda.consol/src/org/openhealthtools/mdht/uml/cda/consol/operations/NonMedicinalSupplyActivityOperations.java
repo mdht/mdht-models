@@ -64,7 +64,7 @@ public class NonMedicinalSupplyActivityOperations extends SupplyOperations {
 	/**
 	* The cached OCL expression body for the '{@link #validateNonMedicinalSupplyActivityEffectiveTimeHigh(NonMedicinalSupplyActivity, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Non Medicinal Supply Activity Effective Time High</em>}' operation.
 	* <!-- begin-user-doc -->
-	* <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	* @see #validateNonMedicinalSupplyActivityEffectiveTimeHigh(NonMedicinalSupplyActivity, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	* @generated
 	* @ordered
@@ -140,6 +140,7 @@ public class NonMedicinalSupplyActivityOperations extends SupplyOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_NON_MEDICINAL_SUPPLY_ACTIVITY_PRODUCT_INSTANCE_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -152,6 +153,7 @@ public class NonMedicinalSupplyActivityOperations extends SupplyOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateNonMedicinalSupplyActivityProductInstanceTypeCode(
 			NonMedicinalSupplyActivity nonMedicinalSupplyActivity, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
@@ -200,6 +202,7 @@ public class NonMedicinalSupplyActivityOperations extends SupplyOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_NON_MEDICINAL_SUPPLY_ACTIVITY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -212,6 +215,7 @@ public class NonMedicinalSupplyActivityOperations extends SupplyOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateNonMedicinalSupplyActivityTemplateId(
 			NonMedicinalSupplyActivity nonMedicinalSupplyActivity, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
@@ -258,6 +262,7 @@ public class NonMedicinalSupplyActivityOperations extends SupplyOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_NON_MEDICINAL_SUPPLY_ACTIVITY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -270,6 +275,7 @@ public class NonMedicinalSupplyActivityOperations extends SupplyOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateNonMedicinalSupplyActivityClassCode(
 			NonMedicinalSupplyActivity nonMedicinalSupplyActivity, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
@@ -378,6 +384,7 @@ public class NonMedicinalSupplyActivityOperations extends SupplyOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_NON_MEDICINAL_SUPPLY_ACTIVITY_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -390,6 +397,7 @@ public class NonMedicinalSupplyActivityOperations extends SupplyOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateNonMedicinalSupplyActivityId(NonMedicinalSupplyActivity nonMedicinalSupplyActivity,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -435,6 +443,7 @@ public class NonMedicinalSupplyActivityOperations extends SupplyOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_NON_MEDICINAL_SUPPLY_ACTIVITY_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -447,6 +456,7 @@ public class NonMedicinalSupplyActivityOperations extends SupplyOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateNonMedicinalSupplyActivityStatusCode(
 			NonMedicinalSupplyActivity nonMedicinalSupplyActivity, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
@@ -493,6 +503,7 @@ public class NonMedicinalSupplyActivityOperations extends SupplyOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_NON_MEDICINAL_SUPPLY_ACTIVITY_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -505,6 +516,7 @@ public class NonMedicinalSupplyActivityOperations extends SupplyOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateNonMedicinalSupplyActivityEffectiveTime(
 			NonMedicinalSupplyActivity nonMedicinalSupplyActivity, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
@@ -551,6 +563,7 @@ public class NonMedicinalSupplyActivityOperations extends SupplyOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_NON_MEDICINAL_SUPPLY_ACTIVITY_QUANTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -563,6 +576,7 @@ public class NonMedicinalSupplyActivityOperations extends SupplyOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateNonMedicinalSupplyActivityQuantity(
 			NonMedicinalSupplyActivity nonMedicinalSupplyActivity, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
@@ -609,6 +623,7 @@ public class NonMedicinalSupplyActivityOperations extends SupplyOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_NON_MEDICINAL_SUPPLY_ACTIVITY_PRODUCT_INSTANCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -621,6 +636,7 @@ public class NonMedicinalSupplyActivityOperations extends SupplyOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateNonMedicinalSupplyActivityProductInstance(
 			NonMedicinalSupplyActivity nonMedicinalSupplyActivity, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
@@ -675,6 +691,7 @@ public class NonMedicinalSupplyActivityOperations extends SupplyOperations {
 	 * <!-- end-user-doc -->
 	* @generated
 	*/
+
 	public static ProductInstance getProductInstance(NonMedicinalSupplyActivity nonMedicinalSupplyActivity) {
 		if (GET_PRODUCT_INSTANCE__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();

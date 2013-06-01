@@ -95,10 +95,10 @@ public class PhysicianofRecordParticipantImpl extends EncounterParticipantImpl i
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validatePhysicianofRecordParticipantAssignedEntityHasDICOMOrNUCCCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return PhysicianofRecordParticipantOperations.validatePhysicianofRecordParticipantAssignedEntityHasDICOMOrNUCCCode(
@@ -106,10 +106,10 @@ public class PhysicianofRecordParticipantImpl extends EncounterParticipantImpl i
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validatePhysicianofRecordParticipantAssignedEntityHasNationalProviderId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return PhysicianofRecordParticipantOperations.validatePhysicianofRecordParticipantAssignedEntityHasNationalProviderId(
@@ -117,10 +117,10 @@ public class PhysicianofRecordParticipantImpl extends EncounterParticipantImpl i
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validatePhysicianofRecordParticipantAssignedEntityCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return PhysicianofRecordParticipantOperations.validatePhysicianofRecordParticipantAssignedEntityCode(
@@ -128,10 +128,10 @@ public class PhysicianofRecordParticipantImpl extends EncounterParticipantImpl i
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validatePhysicianofRecordParticipantAssignedEntityId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return PhysicianofRecordParticipantOperations.validatePhysicianofRecordParticipantAssignedEntityId(
@@ -139,10 +139,10 @@ public class PhysicianofRecordParticipantImpl extends EncounterParticipantImpl i
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validatePhysicianofRecordParticipantAssignedEntityAssignedPerson(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return PhysicianofRecordParticipantOperations.validatePhysicianofRecordParticipantAssignedEntityAssignedPerson(
@@ -150,10 +150,10 @@ public class PhysicianofRecordParticipantImpl extends EncounterParticipantImpl i
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public PhysicianofRecordParticipant init() {
 		return Initializer.Util.init(this);
 	}

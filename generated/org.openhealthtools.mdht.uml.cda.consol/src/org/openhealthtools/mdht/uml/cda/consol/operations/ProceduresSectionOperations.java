@@ -84,6 +84,7 @@ public class ProceduresSectionOperations extends ProceduresSectionEntriesOptiona
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_PROCEDURES_SECTION_HAS_PROCEDURE_ACTIVITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -96,6 +97,7 @@ public class ProceduresSectionOperations extends ProceduresSectionEntriesOptiona
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateProceduresSectionHasProcedureActivity(ProceduresSection proceduresSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -141,6 +143,7 @@ public class ProceduresSectionOperations extends ProceduresSectionEntriesOptiona
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_PROCEDURES_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -153,6 +156,7 @@ public class ProceduresSectionOperations extends ProceduresSectionEntriesOptiona
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateProceduresSectionTitle(ProceduresSection proceduresSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -182,7 +186,7 @@ public class ProceduresSectionOperations extends ProceduresSectionEntriesOptiona
 	/**
 	* The cached OCL expression body for the '{@link #validateProceduresSectionCodeP(ProceduresSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedures Section Code P</em>}' operation.
 	* <!-- begin-user-doc -->
-	* <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	* @see #validateProceduresSectionCodeP(ProceduresSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	* @generated
 	* @ordered
@@ -378,7 +382,7 @@ public class ProceduresSectionOperations extends ProceduresSectionEntriesOptiona
 	/**
 	* The cached OCL expression body for the '{@link #validateProceduresSectionProcedureActivityProcedure(ProceduresSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedures Section Procedure Activity Procedure</em>}' operation.
 	* <!-- begin-user-doc -->
-	* <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	* @see #validateProceduresSectionProcedureActivityProcedure(ProceduresSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	* @generated
 	* @ordered
@@ -706,6 +710,7 @@ public class ProceduresSectionOperations extends ProceduresSectionEntriesOptiona
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_PROCEDURES_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -718,6 +723,7 @@ public class ProceduresSectionOperations extends ProceduresSectionEntriesOptiona
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateProceduresSectionEntriesOptionalTemplateId(ProceduresSection proceduresSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 

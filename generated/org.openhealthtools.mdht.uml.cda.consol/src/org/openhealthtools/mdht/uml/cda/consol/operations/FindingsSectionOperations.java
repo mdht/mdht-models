@@ -66,6 +66,7 @@ public class FindingsSectionOperations extends SectionOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_FINDINGS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -78,6 +79,7 @@ public class FindingsSectionOperations extends SectionOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateFindingsSectionTemplateId(FindingsSection findingsSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 

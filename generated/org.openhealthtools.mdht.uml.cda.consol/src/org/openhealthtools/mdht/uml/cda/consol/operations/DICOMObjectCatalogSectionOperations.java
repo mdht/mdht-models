@@ -76,6 +76,7 @@ public class DICOMObjectCatalogSectionOperations extends SectionOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_DICOM_OBJECT_CATALOG_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -88,6 +89,7 @@ public class DICOMObjectCatalogSectionOperations extends SectionOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateDICOMObjectCatalogSectionTemplateId(
 			DICOMObjectCatalogSection dicomObjectCatalogSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
@@ -136,6 +138,7 @@ public class DICOMObjectCatalogSectionOperations extends SectionOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_DICOM_OBJECT_CATALOG_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -148,6 +151,7 @@ public class DICOMObjectCatalogSectionOperations extends SectionOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateDICOMObjectCatalogSectionCode(DICOMObjectCatalogSection dicomObjectCatalogSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -178,7 +182,7 @@ public class DICOMObjectCatalogSectionOperations extends SectionOperations {
 	/**
 	* The cached OCL expression body for the '{@link #validateDICOMObjectCatalogSectionCodeP(DICOMObjectCatalogSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate DICOM Object Catalog Section Code P</em>}' operation.
 	* <!-- begin-user-doc -->
-	* <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	* @see #validateDICOMObjectCatalogSectionCodeP(DICOMObjectCatalogSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	* @generated
 	* @ordered
@@ -252,6 +256,7 @@ public class DICOMObjectCatalogSectionOperations extends SectionOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_DICOM_OBJECT_CATALOG_SECTION_STUDY_ACT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -264,6 +269,7 @@ public class DICOMObjectCatalogSectionOperations extends SectionOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateDICOMObjectCatalogSectionStudyAct(
 			DICOMObjectCatalogSection dicomObjectCatalogSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
@@ -295,7 +301,7 @@ public class DICOMObjectCatalogSectionOperations extends SectionOperations {
 	/**
 	* The cached OCL expression body for the '{@link #getStudyActs(DICOMObjectCatalogSection) <em>Get Study Acts</em>}' operation.
 	* <!-- begin-user-doc -->
-	* <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	* @see #getStudyActs(DICOMObjectCatalogSection)
 	* @generated
 	* @ordered

@@ -77,6 +77,7 @@ public class HospitalDischargeDiagnosisOperations extends ClinicalStatementOpera
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_HOSPITAL_DISCHARGE_DIAGNOSIS_PROBLEM_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -89,6 +90,7 @@ public class HospitalDischargeDiagnosisOperations extends ClinicalStatementOpera
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateHospitalDischargeDiagnosisProblemObservation(
 			HospitalDischargeDiagnosis hospitalDischargeDiagnosis, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
@@ -136,6 +138,7 @@ public class HospitalDischargeDiagnosisOperations extends ClinicalStatementOpera
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_HOSPITAL_DISCHARGE_DIAGNOSIS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -148,6 +151,7 @@ public class HospitalDischargeDiagnosisOperations extends ClinicalStatementOpera
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateHospitalDischargeDiagnosisTemplateId(
 			HospitalDischargeDiagnosis hospitalDischargeDiagnosis, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
@@ -194,6 +198,7 @@ public class HospitalDischargeDiagnosisOperations extends ClinicalStatementOpera
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_HOSPITAL_DISCHARGE_DIAGNOSIS_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -206,6 +211,7 @@ public class HospitalDischargeDiagnosisOperations extends ClinicalStatementOpera
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateHospitalDischargeDiagnosisClassCode(
 			HospitalDischargeDiagnosis hospitalDischargeDiagnosis, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
@@ -252,6 +258,7 @@ public class HospitalDischargeDiagnosisOperations extends ClinicalStatementOpera
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_HOSPITAL_DISCHARGE_DIAGNOSIS_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -264,6 +271,7 @@ public class HospitalDischargeDiagnosisOperations extends ClinicalStatementOpera
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateHospitalDischargeDiagnosisMoodCode(
 			HospitalDischargeDiagnosis hospitalDischargeDiagnosis, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
@@ -312,6 +320,7 @@ public class HospitalDischargeDiagnosisOperations extends ClinicalStatementOpera
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_HOSPITAL_DISCHARGE_DIAGNOSIS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -324,6 +333,7 @@ public class HospitalDischargeDiagnosisOperations extends ClinicalStatementOpera
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateHospitalDischargeDiagnosisCode(HospitalDischargeDiagnosis hospitalDischargeDiagnosis,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -376,6 +386,7 @@ public class HospitalDischargeDiagnosisOperations extends ClinicalStatementOpera
 	 * <!-- end-user-doc -->
 	* @generated
 	*/
+
 	public static EList<ProblemObservation> getProblemObservations(HospitalDischargeDiagnosis hospitalDischargeDiagnosis) {
 		if (GET_PROBLEM_OBSERVATIONS__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();

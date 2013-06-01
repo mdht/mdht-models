@@ -71,6 +71,7 @@ public class DrugVehicleOperations extends ParticipantRoleOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_DRUG_VEHICLE_PLAYING_ENTITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -83,6 +84,7 @@ public class DrugVehicleOperations extends ParticipantRoleOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateDrugVehiclePlayingEntityCode(DrugVehicle drugVehicle, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
@@ -127,6 +129,7 @@ public class DrugVehicleOperations extends ParticipantRoleOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_DRUG_VEHICLE_PLAYING_ENTITY_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -139,6 +142,7 @@ public class DrugVehicleOperations extends ParticipantRoleOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateDrugVehiclePlayingEntityName(DrugVehicle drugVehicle, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
@@ -183,6 +187,7 @@ public class DrugVehicleOperations extends ParticipantRoleOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_DRUG_VEHICLE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -195,6 +200,7 @@ public class DrugVehicleOperations extends ParticipantRoleOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateDrugVehicleTemplateId(DrugVehicle drugVehicle, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
@@ -238,6 +244,7 @@ public class DrugVehicleOperations extends ParticipantRoleOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_DRUG_VEHICLE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -250,6 +257,7 @@ public class DrugVehicleOperations extends ParticipantRoleOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateDrugVehicleClassCode(DrugVehicle drugVehicle, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
@@ -295,6 +303,7 @@ public class DrugVehicleOperations extends ParticipantRoleOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_DRUG_VEHICLE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -307,6 +316,7 @@ public class DrugVehicleOperations extends ParticipantRoleOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateDrugVehicleCode(DrugVehicle drugVehicle, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
@@ -350,6 +360,7 @@ public class DrugVehicleOperations extends ParticipantRoleOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_DRUG_VEHICLE_PLAYING_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -362,6 +373,7 @@ public class DrugVehicleOperations extends ParticipantRoleOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateDrugVehiclePlayingEntity(DrugVehicle drugVehicle, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 

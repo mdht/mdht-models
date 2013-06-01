@@ -76,6 +76,7 @@ public class HealthStatusObservationOperations extends ClinicalStatementOperatio
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_HEALTH_STATUS_OBSERVATION_HAS_TEXT_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -88,6 +89,7 @@ public class HealthStatusObservationOperations extends ClinicalStatementOperatio
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateHealthStatusObservationHasTextReference(
 			HealthStatusObservation healthStatusObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -118,7 +120,7 @@ public class HealthStatusObservationOperations extends ClinicalStatementOperatio
 	/**
 	* The cached OCL expression body for the '{@link #validateHealthStatusObservationTextReferenceValue(HealthStatusObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Health Status Observation Text Reference Value</em>}' operation.
 	* <!-- begin-user-doc -->
-	* <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	* @see #validateHealthStatusObservationTextReferenceValue(HealthStatusObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	* @generated
 	* @ordered
@@ -193,6 +195,7 @@ public class HealthStatusObservationOperations extends ClinicalStatementOperatio
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_HEALTH_STATUS_OBSERVATION_HAS_TEXT_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -205,6 +208,7 @@ public class HealthStatusObservationOperations extends ClinicalStatementOperatio
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateHealthStatusObservationHasTextReferenceValue(
 			HealthStatusObservation healthStatusObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -251,6 +255,7 @@ public class HealthStatusObservationOperations extends ClinicalStatementOperatio
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_HEALTH_STATUS_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -263,6 +268,7 @@ public class HealthStatusObservationOperations extends ClinicalStatementOperatio
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateHealthStatusObservationTemplateId(HealthStatusObservation healthStatusObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -308,6 +314,7 @@ public class HealthStatusObservationOperations extends ClinicalStatementOperatio
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_HEALTH_STATUS_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -320,6 +327,7 @@ public class HealthStatusObservationOperations extends ClinicalStatementOperatio
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateHealthStatusObservationClassCode(HealthStatusObservation healthStatusObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -365,6 +373,7 @@ public class HealthStatusObservationOperations extends ClinicalStatementOperatio
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_HEALTH_STATUS_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -377,6 +386,7 @@ public class HealthStatusObservationOperations extends ClinicalStatementOperatio
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateHealthStatusObservationMoodCode(HealthStatusObservation healthStatusObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -424,6 +434,7 @@ public class HealthStatusObservationOperations extends ClinicalStatementOperatio
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_HEALTH_STATUS_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -436,6 +447,7 @@ public class HealthStatusObservationOperations extends ClinicalStatementOperatio
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateHealthStatusObservationCode(HealthStatusObservation healthStatusObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -481,6 +493,7 @@ public class HealthStatusObservationOperations extends ClinicalStatementOperatio
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_HEALTH_STATUS_OBSERVATION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -493,6 +506,7 @@ public class HealthStatusObservationOperations extends ClinicalStatementOperatio
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateHealthStatusObservationText(HealthStatusObservation healthStatusObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -539,6 +553,7 @@ public class HealthStatusObservationOperations extends ClinicalStatementOperatio
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_HEALTH_STATUS_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -551,6 +566,7 @@ public class HealthStatusObservationOperations extends ClinicalStatementOperatio
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateHealthStatusObservationStatusCode(HealthStatusObservation healthStatusObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -598,6 +614,7 @@ public class HealthStatusObservationOperations extends ClinicalStatementOperatio
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_HEALTH_STATUS_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -610,6 +627,7 @@ public class HealthStatusObservationOperations extends ClinicalStatementOperatio
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateHealthStatusObservationValue(HealthStatusObservation healthStatusObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 

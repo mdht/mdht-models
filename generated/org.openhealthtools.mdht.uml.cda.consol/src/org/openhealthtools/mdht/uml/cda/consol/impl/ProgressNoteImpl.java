@@ -274,7 +274,7 @@ public class ProgressNoteImpl extends GeneralHeaderConstraintsImpl implements Pr
 
 	/**
 	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	* <!-- end-user-doc -->
 	* @generated
 	*/
 	public boolean validateProgressNoteDocumentationOfServiceEvent2EffectiveTimeLow(DiagnosticChain diagnostics,
@@ -284,10 +284,10 @@ public class ProgressNoteImpl extends GeneralHeaderConstraintsImpl implements Pr
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateProgressNoteDocumentationOfServiceEvent2EffectiveTimeHigh(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ProgressNoteOperations.validateProgressNoteDocumentationOfServiceEvent2EffectiveTimeHigh(
@@ -295,10 +295,10 @@ public class ProgressNoteImpl extends GeneralHeaderConstraintsImpl implements Pr
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateProgressNoteDocumentationOfServiceEvent2TemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ProgressNoteOperations.validateProgressNoteDocumentationOfServiceEvent2TemplateId(
@@ -306,10 +306,10 @@ public class ProgressNoteImpl extends GeneralHeaderConstraintsImpl implements Pr
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateProgressNoteDocumentationOfServiceEvent2ClassCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ProgressNoteOperations.validateProgressNoteDocumentationOfServiceEvent2ClassCode(
@@ -317,10 +317,10 @@ public class ProgressNoteImpl extends GeneralHeaderConstraintsImpl implements Pr
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateProgressNoteDocumentationOfServiceEvent2EffectiveTime(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ProgressNoteOperations.validateProgressNoteDocumentationOfServiceEvent2EffectiveTime(
@@ -328,20 +328,20 @@ public class ProgressNoteImpl extends GeneralHeaderConstraintsImpl implements Pr
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateProgressNoteDocumentationOfServiceEvent2(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ProgressNoteOperations.validateProgressNoteDocumentationOfServiceEvent2(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateProgressNoteComponentOfEncompassingEncounter6LocationHealthCareFacility1Id(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProgressNoteOperations.validateProgressNoteComponentOfEncompassingEncounter6LocationHealthCareFacility1Id(
@@ -349,10 +349,10 @@ public class ProgressNoteImpl extends GeneralHeaderConstraintsImpl implements Pr
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateProgressNoteComponentOfEncompassingEncounter6LocationHealthCareFacility(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProgressNoteOperations.validateProgressNoteComponentOfEncompassingEncounter6LocationHealthCareFacility(
@@ -360,10 +360,10 @@ public class ProgressNoteImpl extends GeneralHeaderConstraintsImpl implements Pr
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateProgressNoteComponentOfEncompassingEncounter6EffectiveTime(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ProgressNoteOperations.validateProgressNoteComponentOfEncompassingEncounter6EffectiveTime(
@@ -371,10 +371,10 @@ public class ProgressNoteImpl extends GeneralHeaderConstraintsImpl implements Pr
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateProgressNoteComponentOfEncompassingEncounter6Id(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ProgressNoteOperations.validateProgressNoteComponentOfEncompassingEncounter6Id(
@@ -382,10 +382,10 @@ public class ProgressNoteImpl extends GeneralHeaderConstraintsImpl implements Pr
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateProgressNoteComponentOfEncompassingEncounter6Location(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ProgressNoteOperations.validateProgressNoteComponentOfEncompassingEncounter6Location(
@@ -393,20 +393,20 @@ public class ProgressNoteImpl extends GeneralHeaderConstraintsImpl implements Pr
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateProgressNoteComponentOfEncompassingEncounter6(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ProgressNoteOperations.validateProgressNoteComponentOfEncompassingEncounter6(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public AssessmentSection getAssessmentSection() {
 		return ProgressNoteOperations.getAssessmentSection(this);
 	}

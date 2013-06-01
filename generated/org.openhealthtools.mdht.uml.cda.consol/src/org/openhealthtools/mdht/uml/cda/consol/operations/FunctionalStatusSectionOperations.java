@@ -110,6 +110,7 @@ public class FunctionalStatusSectionOperations extends SectionOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_FUNCTIONAL_STATUS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -122,6 +123,7 @@ public class FunctionalStatusSectionOperations extends SectionOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateFunctionalStatusSectionTemplateId(FunctionalStatusSection functionalStatusSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -169,6 +171,7 @@ public class FunctionalStatusSectionOperations extends SectionOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_FUNCTIONAL_STATUS_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -181,6 +184,7 @@ public class FunctionalStatusSectionOperations extends SectionOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateFunctionalStatusSectionCode(FunctionalStatusSection functionalStatusSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -226,6 +230,7 @@ public class FunctionalStatusSectionOperations extends SectionOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_FUNCTIONAL_STATUS_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -238,6 +243,7 @@ public class FunctionalStatusSectionOperations extends SectionOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateFunctionalStatusSectionTitle(FunctionalStatusSection functionalStatusSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -283,6 +289,7 @@ public class FunctionalStatusSectionOperations extends SectionOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_FUNCTIONAL_STATUS_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -295,6 +302,7 @@ public class FunctionalStatusSectionOperations extends SectionOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateFunctionalStatusSectionText(FunctionalStatusSection functionalStatusSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -325,7 +333,7 @@ public class FunctionalStatusSectionOperations extends SectionOperations {
 	/**
 	* The cached OCL expression body for the '{@link #validateFunctionalStatusSectionFunctionalStatusResultOrganizer(FunctionalStatusSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Functional Status Section Functional Status Result Organizer</em>}' operation.
 	* <!-- begin-user-doc -->
-	* <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	* @see #validateFunctionalStatusSectionFunctionalStatusResultOrganizer(FunctionalStatusSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	* @generated
 	* @ordered

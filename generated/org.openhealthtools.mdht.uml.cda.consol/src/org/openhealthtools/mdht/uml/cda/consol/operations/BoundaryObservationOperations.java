@@ -70,6 +70,7 @@ public class BoundaryObservationOperations extends ClinicalStatementOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_BOUNDARY_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -82,6 +83,7 @@ public class BoundaryObservationOperations extends ClinicalStatementOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateBoundaryObservationTemplateId(BoundaryObservation boundaryObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -127,6 +129,7 @@ public class BoundaryObservationOperations extends ClinicalStatementOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_BOUNDARY_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -139,6 +142,7 @@ public class BoundaryObservationOperations extends ClinicalStatementOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateBoundaryObservationClassCode(BoundaryObservation boundaryObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -186,6 +190,7 @@ public class BoundaryObservationOperations extends ClinicalStatementOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_BOUNDARY_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -198,6 +203,7 @@ public class BoundaryObservationOperations extends ClinicalStatementOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateBoundaryObservationCode(BoundaryObservation boundaryObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -242,6 +248,7 @@ public class BoundaryObservationOperations extends ClinicalStatementOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_BOUNDARY_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -254,6 +261,7 @@ public class BoundaryObservationOperations extends ClinicalStatementOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateBoundaryObservationMoodCode(BoundaryObservation boundaryObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -299,6 +307,7 @@ public class BoundaryObservationOperations extends ClinicalStatementOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_BOUNDARY_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -311,6 +320,7 @@ public class BoundaryObservationOperations extends ClinicalStatementOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateBoundaryObservationValue(BoundaryObservation boundaryObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 

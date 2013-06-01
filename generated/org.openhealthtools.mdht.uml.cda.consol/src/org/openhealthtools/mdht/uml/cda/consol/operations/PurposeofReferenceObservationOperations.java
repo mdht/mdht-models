@@ -132,6 +132,7 @@ public class PurposeofReferenceObservationOperations extends ClinicalStatementOp
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_PURPOSEOF_REFERENCE_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -144,6 +145,7 @@ public class PurposeofReferenceObservationOperations extends ClinicalStatementOp
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validatePurposeofReferenceObservationTemplateId(
 			PurposeofReferenceObservation purposeofReferenceObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
@@ -190,6 +192,7 @@ public class PurposeofReferenceObservationOperations extends ClinicalStatementOp
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_PURPOSEOF_REFERENCE_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -202,6 +205,7 @@ public class PurposeofReferenceObservationOperations extends ClinicalStatementOp
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validatePurposeofReferenceObservationClassCode(
 			PurposeofReferenceObservation purposeofReferenceObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
@@ -248,6 +252,7 @@ public class PurposeofReferenceObservationOperations extends ClinicalStatementOp
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_PURPOSEOF_REFERENCE_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -260,6 +265,7 @@ public class PurposeofReferenceObservationOperations extends ClinicalStatementOp
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validatePurposeofReferenceObservationCode(
 			PurposeofReferenceObservation purposeofReferenceObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
@@ -306,6 +312,7 @@ public class PurposeofReferenceObservationOperations extends ClinicalStatementOp
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_PURPOSEOF_REFERENCE_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -318,6 +325,7 @@ public class PurposeofReferenceObservationOperations extends ClinicalStatementOp
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validatePurposeofReferenceObservationMoodCode(
 			PurposeofReferenceObservation purposeofReferenceObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {

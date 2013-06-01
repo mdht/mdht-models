@@ -98,6 +98,7 @@ public class ProblemObservationOperations extends ClinicalStatementOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_PROBLEM_OBSERVATION_HAS_TEXT_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -110,6 +111,7 @@ public class ProblemObservationOperations extends ClinicalStatementOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateProblemObservationHasTextReference(ProblemObservation problemObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -140,7 +142,7 @@ public class ProblemObservationOperations extends ClinicalStatementOperations {
 	/**
 	* The cached OCL expression body for the '{@link #validateProblemObservationTextReferenceValue(ProblemObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Problem Observation Text Reference Value</em>}' operation.
 	* <!-- begin-user-doc -->
-	* <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	* @see #validateProblemObservationTextReferenceValue(ProblemObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	* @generated
 	* @ordered
@@ -214,6 +216,7 @@ public class ProblemObservationOperations extends ClinicalStatementOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_PROBLEM_OBSERVATION_HAS_TEXT_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -226,6 +229,7 @@ public class ProblemObservationOperations extends ClinicalStatementOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateProblemObservationHasTextReferenceValue(ProblemObservation problemObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -256,7 +260,7 @@ public class ProblemObservationOperations extends ClinicalStatementOperations {
 	/**
 	* The cached OCL expression body for the '{@link #validateProblemObservationHasOnsetDate(ProblemObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Problem Observation Has Onset Date</em>}' operation.
 	* <!-- begin-user-doc -->
-	* <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	* @see #validateProblemObservationHasOnsetDate(ProblemObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	* @generated
 	* @ordered
@@ -448,6 +452,7 @@ public class ProblemObservationOperations extends ClinicalStatementOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_PROBLEM_OBSERVATION_AGE_OBSERVATION_INVERSION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -460,6 +465,7 @@ public class ProblemObservationOperations extends ClinicalStatementOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateProblemObservationAgeObservationInversion(ProblemObservation problemObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -491,7 +497,7 @@ public class ProblemObservationOperations extends ClinicalStatementOperations {
 	/**
 	* The cached OCL expression body for the '{@link #validateProblemObservationValueTranslation(ProblemObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Problem Observation Value Translation</em>}' operation.
 	* <!-- begin-user-doc -->
-	* <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	* @see #validateProblemObservationValueTranslation(ProblemObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	* @generated
 	* @ordered
@@ -624,6 +630,7 @@ public class ProblemObservationOperations extends ClinicalStatementOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_PROBLEM_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -636,6 +643,7 @@ public class ProblemObservationOperations extends ClinicalStatementOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateProblemObservationTemplateId(ProblemObservation problemObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -681,6 +689,7 @@ public class ProblemObservationOperations extends ClinicalStatementOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_PROBLEM_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -693,6 +702,7 @@ public class ProblemObservationOperations extends ClinicalStatementOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateProblemObservationClassCode(ProblemObservation problemObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -737,6 +747,7 @@ public class ProblemObservationOperations extends ClinicalStatementOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_PROBLEM_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -749,6 +760,7 @@ public class ProblemObservationOperations extends ClinicalStatementOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateProblemObservationMoodCode(ProblemObservation problemObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -793,6 +805,7 @@ public class ProblemObservationOperations extends ClinicalStatementOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_PROBLEM_OBSERVATION_NEGATION_IND__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -805,6 +818,7 @@ public class ProblemObservationOperations extends ClinicalStatementOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateProblemObservationNegationInd(ProblemObservation problemObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -850,6 +864,7 @@ public class ProblemObservationOperations extends ClinicalStatementOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_PROBLEM_OBSERVATION_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -862,6 +877,7 @@ public class ProblemObservationOperations extends ClinicalStatementOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateProblemObservationId(ProblemObservation problemObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -891,7 +907,7 @@ public class ProblemObservationOperations extends ClinicalStatementOperations {
 	/**
 	* The cached OCL expression body for the '{@link #validateProblemObservationCodeP(ProblemObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Problem Observation Code P</em>}' operation.
 	* <!-- begin-user-doc -->
-	* <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	* @see #validateProblemObservationCodeP(ProblemObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	* @generated
 	* @ordered
@@ -978,6 +994,7 @@ public class ProblemObservationOperations extends ClinicalStatementOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_PROBLEM_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -990,6 +1007,7 @@ public class ProblemObservationOperations extends ClinicalStatementOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateProblemObservationCode(ProblemObservation problemObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -1042,6 +1060,7 @@ public class ProblemObservationOperations extends ClinicalStatementOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_PROBLEM_OBSERVATION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -1054,6 +1073,7 @@ public class ProblemObservationOperations extends ClinicalStatementOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateProblemObservationText(ProblemObservation problemObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -1099,6 +1119,7 @@ public class ProblemObservationOperations extends ClinicalStatementOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_PROBLEM_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -1111,6 +1132,7 @@ public class ProblemObservationOperations extends ClinicalStatementOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateProblemObservationStatusCode(ProblemObservation problemObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -1156,6 +1178,7 @@ public class ProblemObservationOperations extends ClinicalStatementOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_PROBLEM_OBSERVATION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -1168,6 +1191,7 @@ public class ProblemObservationOperations extends ClinicalStatementOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateProblemObservationEffectiveTime(ProblemObservation problemObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -1215,6 +1239,7 @@ public class ProblemObservationOperations extends ClinicalStatementOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_PROBLEM_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -1227,6 +1252,7 @@ public class ProblemObservationOperations extends ClinicalStatementOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateProblemObservationValue(ProblemObservation problemObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -1256,7 +1282,7 @@ public class ProblemObservationOperations extends ClinicalStatementOperations {
 	/**
 	* The cached OCL expression body for the '{@link #validateProblemObservationValueP(ProblemObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Problem Observation Value P</em>}' operation.
 	* <!-- begin-user-doc -->
-	* <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	* @see #validateProblemObservationValueP(ProblemObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	* @generated
 	* @ordered
@@ -1329,6 +1355,7 @@ public class ProblemObservationOperations extends ClinicalStatementOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_PROBLEM_OBSERVATION_AGE_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -1341,6 +1368,7 @@ public class ProblemObservationOperations extends ClinicalStatementOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateProblemObservationAgeObservation(ProblemObservation problemObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -1386,6 +1414,7 @@ public class ProblemObservationOperations extends ClinicalStatementOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_PROBLEM_OBSERVATION_HEALTH_STATUS_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -1398,6 +1427,7 @@ public class ProblemObservationOperations extends ClinicalStatementOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateProblemObservationHealthStatusObservation(ProblemObservation problemObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -1444,6 +1474,7 @@ public class ProblemObservationOperations extends ClinicalStatementOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_PROBLEM_OBSERVATION_PROBLEM_STATUS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -1456,6 +1487,7 @@ public class ProblemObservationOperations extends ClinicalStatementOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateProblemObservationProblemStatus(ProblemObservation problemObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -1508,6 +1540,7 @@ public class ProblemObservationOperations extends ClinicalStatementOperations {
 	 * <!-- end-user-doc -->
 	* @generated
 	*/
+
 	public static AgeObservation getAgeObservation(ProblemObservation problemObservation) {
 		if (GET_AGE_OBSERVATION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
@@ -1549,6 +1582,7 @@ public class ProblemObservationOperations extends ClinicalStatementOperations {
 	 * <!-- end-user-doc -->
 	* @generated
 	*/
+
 	public static HealthStatusObservation getHealthStatusObservation(ProblemObservation problemObservation) {
 		if (GET_HEALTH_STATUS_OBSERVATION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
@@ -1590,6 +1624,7 @@ public class ProblemObservationOperations extends ClinicalStatementOperations {
 	 * <!-- end-user-doc -->
 	* @generated
 	*/
+
 	public static ProblemStatus getProblemStatus(ProblemObservation problemObservation) {
 		if (GET_PROBLEM_STATUS__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();

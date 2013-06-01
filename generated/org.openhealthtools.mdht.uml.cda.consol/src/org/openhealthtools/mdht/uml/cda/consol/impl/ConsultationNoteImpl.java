@@ -153,9 +153,127 @@ public class ConsultationNoteImpl extends GeneralHeaderConstraintsImpl implement
 
 	/**
 	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	* <!-- end-user-doc -->
 	* @generated
 	*/
+	public boolean validateConsultationNoteComponentOfEncompassingEncounter2ResponsiblePartyAssignedEntityHasPersonOrganizationOrBoth(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ConsultationNoteOperations.validateConsultationNoteComponentOfEncompassingEncounter2ResponsiblePartyAssignedEntityHasPersonOrganizationOrBoth(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateConsultationNoteComponentOfEncompassingEncounter2ResponsiblePartyAssignedEntity(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ConsultationNoteOperations.validateConsultationNoteComponentOfEncompassingEncounter2ResponsiblePartyAssignedEntity(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateConsultationNoteComponentOfEncompassingEncounter2EncounterParticipantAssignedEntityHasPersonOrganizationOrBoth(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ConsultationNoteOperations.validateConsultationNoteComponentOfEncompassingEncounter2EncounterParticipantAssignedEntityHasPersonOrganizationOrBoth(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateConsultationNoteComponentOfEncompassingEncounter2EncounterParticipantAssignedEntity(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ConsultationNoteOperations.validateConsultationNoteComponentOfEncompassingEncounter2EncounterParticipantAssignedEntity(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateConsultationNoteComponentOfEncompassingEncounter2EffectiveTime(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ConsultationNoteOperations.validateConsultationNoteComponentOfEncompassingEncounter2EffectiveTime(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateConsultationNoteComponentOfEncompassingEncounter2Id(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ConsultationNoteOperations.validateConsultationNoteComponentOfEncompassingEncounter2Id(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateConsultationNoteComponentOfEncompassingEncounter2ResponsibleParty(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ConsultationNoteOperations.validateConsultationNoteComponentOfEncompassingEncounter2ResponsibleParty(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateConsultationNoteComponentOfEncompassingEncounter2EncounterParticipant(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ConsultationNoteOperations.validateConsultationNoteComponentOfEncompassingEncounter2EncounterParticipant(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateConsultationNoteComponentOfEncompassingEncounter(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ConsultationNoteOperations.validateConsultationNoteComponentOfEncompassingEncounter(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateConsultationNoteInFulfillmentOfOrderId(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ConsultationNoteOperations.validateConsultationNoteInFulfillmentOfOrderId(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateConsultationNoteInFulfillmentOfOrder(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ConsultationNoteOperations.validateConsultationNoteInFulfillmentOfOrder(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public boolean validateConsultationNoteComponentOf(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ConsultationNoteOperations.validateConsultationNoteComponentOf(this, diagnostics, context);
 	}
@@ -366,124 +484,6 @@ public class ConsultationNoteImpl extends GeneralHeaderConstraintsImpl implement
 	public boolean validateConsultationNoteVitalSignsSectionEntriesOptional(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ConsultationNoteOperations.validateConsultationNoteVitalSignsSectionEntriesOptional(
-			this, diagnostics, context);
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	public boolean validateConsultationNoteInFulfillmentOfOrderId(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return ConsultationNoteOperations.validateConsultationNoteInFulfillmentOfOrderId(this, diagnostics, context);
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	public boolean validateConsultationNoteInFulfillmentOfOrder(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ConsultationNoteOperations.validateConsultationNoteInFulfillmentOfOrder(this, diagnostics, context);
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	public boolean validateConsultationNoteComponentOfEncompassingEncounter2EncounterParticipantAssignedEntityHasPersonOrganizationOrBoth(
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ConsultationNoteOperations.validateConsultationNoteComponentOfEncompassingEncounter2EncounterParticipantAssignedEntityHasPersonOrganizationOrBoth(
-			this, diagnostics, context);
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	public boolean validateConsultationNoteComponentOfEncompassingEncounter2EncounterParticipantAssignedEntity(
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ConsultationNoteOperations.validateConsultationNoteComponentOfEncompassingEncounter2EncounterParticipantAssignedEntity(
-			this, diagnostics, context);
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	public boolean validateConsultationNoteComponentOfEncompassingEncounter2ResponsiblePartyAssignedEntityHasPersonOrganizationOrBoth(
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ConsultationNoteOperations.validateConsultationNoteComponentOfEncompassingEncounter2ResponsiblePartyAssignedEntityHasPersonOrganizationOrBoth(
-			this, diagnostics, context);
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	public boolean validateConsultationNoteComponentOfEncompassingEncounter2ResponsiblePartyAssignedEntity(
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ConsultationNoteOperations.validateConsultationNoteComponentOfEncompassingEncounter2ResponsiblePartyAssignedEntity(
-			this, diagnostics, context);
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	public boolean validateConsultationNoteComponentOfEncompassingEncounter2EffectiveTime(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return ConsultationNoteOperations.validateConsultationNoteComponentOfEncompassingEncounter2EffectiveTime(
-			this, diagnostics, context);
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	public boolean validateConsultationNoteComponentOfEncompassingEncounter2Id(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return ConsultationNoteOperations.validateConsultationNoteComponentOfEncompassingEncounter2Id(
-			this, diagnostics, context);
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	public boolean validateConsultationNoteComponentOfEncompassingEncounter2ResponsibleParty(
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ConsultationNoteOperations.validateConsultationNoteComponentOfEncompassingEncounter2ResponsibleParty(
-			this, diagnostics, context);
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	public boolean validateConsultationNoteComponentOfEncompassingEncounter2EncounterParticipant(
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ConsultationNoteOperations.validateConsultationNoteComponentOfEncompassingEncounter2EncounterParticipant(
-			this, diagnostics, context);
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	public boolean validateConsultationNoteComponentOfEncompassingEncounter(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return ConsultationNoteOperations.validateConsultationNoteComponentOfEncompassingEncounter(
 			this, diagnostics, context);
 	}
 

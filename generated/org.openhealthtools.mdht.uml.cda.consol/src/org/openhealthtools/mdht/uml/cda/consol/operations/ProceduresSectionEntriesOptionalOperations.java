@@ -84,6 +84,7 @@ public class ProceduresSectionEntriesOptionalOperations extends SectionOperation
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_PROCEDURES_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -96,6 +97,7 @@ public class ProceduresSectionEntriesOptionalOperations extends SectionOperation
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateProceduresSectionEntriesOptionalTemplateId(
 			ProceduresSectionEntriesOptional proceduresSectionEntriesOptional, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
@@ -146,6 +148,7 @@ public class ProceduresSectionEntriesOptionalOperations extends SectionOperation
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_PROCEDURES_SECTION_ENTRIES_OPTIONAL_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -158,6 +161,7 @@ public class ProceduresSectionEntriesOptionalOperations extends SectionOperation
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateProceduresSectionEntriesOptionalCode(
 			ProceduresSectionEntriesOptional proceduresSectionEntriesOptional, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
@@ -189,7 +193,7 @@ public class ProceduresSectionEntriesOptionalOperations extends SectionOperation
 	/**
 	* The cached OCL expression body for the '{@link #validateProceduresSectionEntriesOptionalCodeP(ProceduresSectionEntriesOptional, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedures Section Entries Optional Code P</em>}' operation.
 	* <!-- begin-user-doc -->
-	* <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	* @see #validateProceduresSectionEntriesOptionalCodeP(ProceduresSectionEntriesOptional, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	* @generated
 	* @ordered
@@ -324,6 +328,7 @@ public class ProceduresSectionEntriesOptionalOperations extends SectionOperation
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_PROCEDURES_SECTION_ENTRIES_OPTIONAL_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -336,6 +341,7 @@ public class ProceduresSectionEntriesOptionalOperations extends SectionOperation
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateProceduresSectionEntriesOptionalText(
 			ProceduresSectionEntriesOptional proceduresSectionEntriesOptional, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
@@ -382,6 +388,7 @@ public class ProceduresSectionEntriesOptionalOperations extends SectionOperation
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_PROCEDURES_SECTION_ENTRIES_OPTIONAL_PROCEDURE_ACTIVITY_PROCEDURE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -394,6 +401,7 @@ public class ProceduresSectionEntriesOptionalOperations extends SectionOperation
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateProceduresSectionEntriesOptionalProcedureActivityProcedure(
 			ProceduresSectionEntriesOptional proceduresSectionEntriesOptional, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
@@ -442,6 +450,7 @@ public class ProceduresSectionEntriesOptionalOperations extends SectionOperation
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_PROCEDURES_SECTION_ENTRIES_OPTIONAL_PROCEDURE_ACIVITY_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -454,6 +463,7 @@ public class ProceduresSectionEntriesOptionalOperations extends SectionOperation
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateProceduresSectionEntriesOptionalProcedureAcivityObservation(
 			ProceduresSectionEntriesOptional proceduresSectionEntriesOptional, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
@@ -502,6 +512,7 @@ public class ProceduresSectionEntriesOptionalOperations extends SectionOperation
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_PROCEDURES_SECTION_ENTRIES_OPTIONAL_PROCEDURE_ACTIVITY_ACT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -514,6 +525,7 @@ public class ProceduresSectionEntriesOptionalOperations extends SectionOperation
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateProceduresSectionEntriesOptionalProcedureActivityAct(
 			ProceduresSectionEntriesOptional proceduresSectionEntriesOptional, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
@@ -569,6 +581,7 @@ public class ProceduresSectionEntriesOptionalOperations extends SectionOperation
 	 * <!-- end-user-doc -->
 	* @generated
 	*/
+
 	public static EList<ProcedureActivityProcedure> getProcedureActivityProcedures(
 			ProceduresSectionEntriesOptional proceduresSectionEntriesOptional) {
 		if (GET_PROCEDURE_ACTIVITY_PROCEDURES__EOCL_QRY == null) {
@@ -613,6 +626,7 @@ public class ProceduresSectionEntriesOptionalOperations extends SectionOperation
 	 * <!-- end-user-doc -->
 	* @generated
 	*/
+
 	public static EList<ProcedureActivityObservation> getProcedureAcivityObservations(
 			ProceduresSectionEntriesOptional proceduresSectionEntriesOptional) {
 		if (GET_PROCEDURE_ACIVITY_OBSERVATIONS__EOCL_QRY == null) {
@@ -657,6 +671,7 @@ public class ProceduresSectionEntriesOptionalOperations extends SectionOperation
 	 * <!-- end-user-doc -->
 	* @generated
 	*/
+
 	public static EList<ProcedureActivityAct> getProcedureActivityActs(
 			ProceduresSectionEntriesOptional proceduresSectionEntriesOptional) {
 		if (GET_PROCEDURE_ACTIVITY_ACTS__EOCL_QRY == null) {

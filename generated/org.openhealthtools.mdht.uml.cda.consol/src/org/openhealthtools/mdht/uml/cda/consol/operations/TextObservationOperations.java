@@ -71,7 +71,7 @@ public class TextObservationOperations extends ClinicalStatementOperations {
 	/**
 	* The cached OCL expression body for the '{@link #validateTextObservationTextReference(TextObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Text Observation Text Reference</em>}' operation.
 	* <!-- begin-user-doc -->
-	* <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	* @see #validateTextObservationTextReference(TextObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	* @generated
 	* @ordered
@@ -261,6 +261,7 @@ public class TextObservationOperations extends ClinicalStatementOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_TEXT_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -273,6 +274,7 @@ public class TextObservationOperations extends ClinicalStatementOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateTextObservationTemplateId(TextObservation textObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 

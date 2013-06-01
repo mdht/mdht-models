@@ -74,6 +74,7 @@ public class ReferencedFramesObservationOperations extends ClinicalStatementOper
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_REFERENCED_FRAMES_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -86,6 +87,7 @@ public class ReferencedFramesObservationOperations extends ClinicalStatementOper
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateReferencedFramesObservationTemplateId(
 			ReferencedFramesObservation referencedFramesObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
@@ -132,6 +134,7 @@ public class ReferencedFramesObservationOperations extends ClinicalStatementOper
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_REFERENCED_FRAMES_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -144,6 +147,7 @@ public class ReferencedFramesObservationOperations extends ClinicalStatementOper
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateReferencedFramesObservationClassCode(
 			ReferencedFramesObservation referencedFramesObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
@@ -173,44 +177,6 @@ public class ReferencedFramesObservationOperations extends ClinicalStatementOper
 	}
 
 	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param referencedFramesObservation The receiving '<em><b>Referenced Frames Observation</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
-	public static boolean validateReferencedFramesObservationCode(
-			ReferencedFramesObservation referencedFramesObservation, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-
-		if (VALIDATE_REFERENCED_FRAMES_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(ConsolPackage.Literals.REFERENCED_FRAMES_OBSERVATION);
-			try {
-				VALIDATE_REFERENCED_FRAMES_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_REFERENCED_FRAMES_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_REFERENCED_FRAMES_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			referencedFramesObservation)) {
-			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.REFERENCED_FRAMES_OBSERVATION__REFERENCED_FRAMES_OBSERVATION_CODE,
-					ConsolPlugin.INSTANCE.getString("ReferencedFramesObservationCode"),
-					new Object[] { referencedFramesObservation }));
-			}
-
-			return false;
-		}
-		return true;
-	}
-
-	/**
 	* The cached OCL expression body for the '{@link #validateReferencedFramesObservationMoodCode(ReferencedFramesObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Referenced Frames Observation Mood Code</em>}' operation.
 	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -228,29 +194,8 @@ public class ReferencedFramesObservationOperations extends ClinicalStatementOper
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_REFERENCED_FRAMES_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-
-	/**
-	* The cached OCL expression body for the '{@link #validateReferencedFramesObservationCode(ReferencedFramesObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Referenced Frames Observation Code</em>}' operation.
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @see #validateReferencedFramesObservationCode(ReferencedFramesObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
-	protected static final String VALIDATE_REFERENCED_FRAMES_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "
-			+ "let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "
-			+ "value.code = '121190' and value.codeSystem = '1.2.840.10008.2.16.4')";
-
-	/**
-	* The cached OCL invariant for the '{@link #validateReferencedFramesObservationCode(ReferencedFramesObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Referenced Frames Observation Code</em>}' invariant operation.
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @see #validateReferencedFramesObservationCode(ReferencedFramesObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
-	protected static Constraint VALIDATE_REFERENCED_FRAMES_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
 	* <!-- begin-user-doc -->
@@ -262,6 +207,7 @@ public class ReferencedFramesObservationOperations extends ClinicalStatementOper
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateReferencedFramesObservationMoodCode(
 			ReferencedFramesObservation referencedFramesObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
@@ -291,6 +237,68 @@ public class ReferencedFramesObservationOperations extends ClinicalStatementOper
 	}
 
 	/**
+	* The cached OCL expression body for the '{@link #validateReferencedFramesObservationCode(ReferencedFramesObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Referenced Frames Observation Code</em>}' operation.
+	* <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	* @see #validateReferencedFramesObservationCode(ReferencedFramesObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
+	protected static final String VALIDATE_REFERENCED_FRAMES_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "
+			+ "let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "
+			+ "value.code = '121190' and value.codeSystem = '1.2.840.10008.2.16.4')";
+
+	/**
+	* The cached OCL invariant for the '{@link #validateReferencedFramesObservationCode(ReferencedFramesObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Referenced Frames Observation Code</em>}' invariant operation.
+	* <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	* @see #validateReferencedFramesObservationCode(ReferencedFramesObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
+
+	protected static Constraint VALIDATE_REFERENCED_FRAMES_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
+	/**
+	* <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	* <!-- begin-model-doc -->
+	* @param referencedFramesObservation The receiving '<em><b>Referenced Frames Observation</b></em>' model object.
+	* @param diagnostics The chain of diagnostics to which problems are to be appended.
+	* @param context The cache of context-specific information.
+	* <!-- end-model-doc -->
+	* @generated
+	*/
+
+	public static boolean validateReferencedFramesObservationCode(
+			ReferencedFramesObservation referencedFramesObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+
+		if (VALIDATE_REFERENCED_FRAMES_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setContext(ConsolPackage.Literals.REFERENCED_FRAMES_OBSERVATION);
+			try {
+				VALIDATE_REFERENCED_FRAMES_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_REFERENCED_FRAMES_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+			} catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		if (!EOCL_ENV.createQuery(VALIDATE_REFERENCED_FRAMES_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			referencedFramesObservation)) {
+			if (diagnostics != null) {
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.REFERENCED_FRAMES_OBSERVATION__REFERENCED_FRAMES_OBSERVATION_CODE,
+					ConsolPlugin.INSTANCE.getString("ReferencedFramesObservationCode"),
+					new Object[] { referencedFramesObservation }));
+			}
+
+			return false;
+		}
+		return true;
+	}
+
+	/**
 	* The cached OCL expression body for the '{@link #validateReferencedFramesObservationBoundaryObservation(ReferencedFramesObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Referenced Frames Observation Boundary Observation</em>}' operation.
 	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -308,6 +316,7 @@ public class ReferencedFramesObservationOperations extends ClinicalStatementOper
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_REFERENCED_FRAMES_OBSERVATION_BOUNDARY_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -320,6 +329,7 @@ public class ReferencedFramesObservationOperations extends ClinicalStatementOper
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateReferencedFramesObservationBoundaryObservation(
 			ReferencedFramesObservation referencedFramesObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
@@ -374,6 +384,7 @@ public class ReferencedFramesObservationOperations extends ClinicalStatementOper
 	 * <!-- end-user-doc -->
 	* @generated
 	*/
+
 	public static BoundaryObservation getBoundaryObservation(ReferencedFramesObservation referencedFramesObservation) {
 		if (GET_BOUNDARY_OBSERVATION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();

@@ -62,7 +62,7 @@ public class AdvanceDirectivesSectionOperations extends AdvanceDirectivesSection
 	/**
 	* The cached OCL expression body for the '{@link #validateAdvanceDirectivesSectionCodeP(AdvanceDirectivesSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Advance Directives Section Code P</em>}' operation.
 	* <!-- begin-user-doc -->
-	* <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	* @see #validateAdvanceDirectivesSectionCodeP(AdvanceDirectivesSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	* @generated
 	* @ordered
@@ -217,6 +217,7 @@ public class AdvanceDirectivesSectionOperations extends AdvanceDirectivesSection
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_ADVANCE_DIRECTIVES_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -229,6 +230,7 @@ public class AdvanceDirectivesSectionOperations extends AdvanceDirectivesSection
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateAdvanceDirectivesSectionTitle(AdvanceDirectivesSection advanceDirectivesSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -274,6 +276,7 @@ public class AdvanceDirectivesSectionOperations extends AdvanceDirectivesSection
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_ADVANCE_DIRECTIVES_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -286,6 +289,7 @@ public class AdvanceDirectivesSectionOperations extends AdvanceDirectivesSection
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateAdvanceDirectivesSectionText(AdvanceDirectivesSection advanceDirectivesSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -331,6 +335,7 @@ public class AdvanceDirectivesSectionOperations extends AdvanceDirectivesSection
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_ADVANCE_DIRECTIVES_SECTION_ADVANCE_DIRECTIVE_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -343,6 +348,7 @@ public class AdvanceDirectivesSectionOperations extends AdvanceDirectivesSection
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateAdvanceDirectivesSectionAdvanceDirectiveObservation(
 			AdvanceDirectivesSection advanceDirectivesSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -397,6 +403,7 @@ public class AdvanceDirectivesSectionOperations extends AdvanceDirectivesSection
 	 * <!-- end-user-doc -->
 	* @generated
 	*/
+
 	public static EList<AdvanceDirectiveObservation> getConsolAdvanceDirectiveObservations(
 			AdvanceDirectivesSection advanceDirectivesSection) {
 		if (GET_CONSOL_ADVANCE_DIRECTIVE_OBSERVATIONS__EOCL_QRY == null) {
@@ -434,6 +441,7 @@ public class AdvanceDirectivesSectionOperations extends AdvanceDirectivesSection
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_ADVANCE_DIRECTIVES_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -446,6 +454,7 @@ public class AdvanceDirectivesSectionOperations extends AdvanceDirectivesSection
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateAdvanceDirectivesSectionEntriesOptionalTemplateId(
 			AdvanceDirectivesSection advanceDirectivesSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
 

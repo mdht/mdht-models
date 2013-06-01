@@ -224,7 +224,7 @@ public class EncounterActivitiesImpl extends EncounterImpl implements EncounterA
 
 	/**
 	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	* <!-- end-user-doc -->
 	* @generated
 	*/
 	public boolean validateEncounterActivitiesEncounterPerformerEncounterPerformerAssignedEntityCode(
@@ -234,10 +234,10 @@ public class EncounterActivitiesImpl extends EncounterImpl implements EncounterA
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateEncounterActivitiesEncounterPerformerEncounterPerformerAssignedEntity(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return EncounterActivitiesOperations.validateEncounterActivitiesEncounterPerformerEncounterPerformerAssignedEntity(
@@ -245,10 +245,10 @@ public class EncounterActivitiesImpl extends EncounterImpl implements EncounterA
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public EList<ServiceDeliveryLocation> getServiceDeliveryLocations() {
 		return EncounterActivitiesOperations.getServiceDeliveryLocations(this);
 	}

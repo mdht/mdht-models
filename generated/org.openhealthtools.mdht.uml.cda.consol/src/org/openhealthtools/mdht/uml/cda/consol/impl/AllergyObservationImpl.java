@@ -261,7 +261,7 @@ public class AllergyObservationImpl extends ObservationImpl implements AllergyOb
 
 	/**
 	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	* <!-- end-user-doc -->
 	* @generated
 	*/
 	public boolean validateAllergyObservationAllergyObservationParticipantAllergyObservationParticipantRoleAllergyObservationPlayingEntityCodeOriginalText(
@@ -271,10 +271,10 @@ public class AllergyObservationImpl extends ObservationImpl implements AllergyOb
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateAllergyObservationAllergyObservationParticipantAllergyObservationParticipantRoleAllergyObservationPlayingEntityOriginalTextReference(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return AllergyObservationOperations.validateAllergyObservationAllergyObservationParticipantAllergyObservationParticipantRoleAllergyObservationPlayingEntityOriginalTextReference(
@@ -282,10 +282,10 @@ public class AllergyObservationImpl extends ObservationImpl implements AllergyOb
 	}
 
 	/**
-	* <!-- begin-user-doc -->
-	* <!-- end-user-doc -->
-	* @generated
-	*/
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public boolean validateAllergyObservationAllergyObservationParticipantAllergyObservationParticipantRoleAllergyObservationPlayingEntityReferenceValue(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return AllergyObservationOperations.validateAllergyObservationAllergyObservationParticipantAllergyObservationParticipantRoleAllergyObservationPlayingEntityReferenceValue(
@@ -293,10 +293,10 @@ public class AllergyObservationImpl extends ObservationImpl implements AllergyOb
 	}
 
 	/**
-	* <!-- begin-user-doc -->
-	* <!-- end-user-doc -->
-	* @generated
-	*/
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public boolean validateAllergyObservationAllergyObservationParticipantAllergyObservationParticipantRoleAllergyObservationPlayingEntityOriginalTextReferenceValue(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return AllergyObservationOperations.validateAllergyObservationAllergyObservationParticipantAllergyObservationParticipantRoleAllergyObservationPlayingEntityOriginalTextReferenceValue(
@@ -304,10 +304,10 @@ public class AllergyObservationImpl extends ObservationImpl implements AllergyOb
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateAllergyObservationAllergyObservationParticipantAllergyObservationParticipantRoleAllergyObservationPlayingEntityCodeTranslation(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return AllergyObservationOperations.validateAllergyObservationAllergyObservationParticipantAllergyObservationParticipantRoleAllergyObservationPlayingEntityCodeTranslation(
@@ -315,10 +315,10 @@ public class AllergyObservationImpl extends ObservationImpl implements AllergyOb
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateAllergyObservationAllergyObservationParticipantAllergyObservationParticipantRoleAllergyObservationPlayingEntityClassCode(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return AllergyObservationOperations.validateAllergyObservationAllergyObservationParticipantAllergyObservationParticipantRoleAllergyObservationPlayingEntityClassCode(
@@ -326,10 +326,10 @@ public class AllergyObservationImpl extends ObservationImpl implements AllergyOb
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateAllergyObservationAllergyObservationParticipantAllergyObservationParticipantRoleAllergyObservationPlayingEntityCode(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return AllergyObservationOperations.validateAllergyObservationAllergyObservationParticipantAllergyObservationParticipantRoleAllergyObservationPlayingEntityCode(
@@ -337,10 +337,10 @@ public class AllergyObservationImpl extends ObservationImpl implements AllergyOb
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateAllergyObservationAllergyObservationParticipantAllergyObservationParticipantRoleClassCode(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return AllergyObservationOperations.validateAllergyObservationAllergyObservationParticipantAllergyObservationParticipantRoleClassCode(
@@ -348,10 +348,10 @@ public class AllergyObservationImpl extends ObservationImpl implements AllergyOb
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateAllergyObservationAllergyObservationParticipantAllergyObservationParticipantRolePlayingEntity(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return AllergyObservationOperations.validateAllergyObservationAllergyObservationParticipantAllergyObservationParticipantRolePlayingEntity(
@@ -359,32 +359,31 @@ public class AllergyObservationImpl extends ObservationImpl implements AllergyOb
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	public boolean validateAllergyObservationAllergyObservationParticipantTypeCode(DiagnosticChain diagnostics,
+	 * @generated
+	 */
+	public boolean validateAllergyObservationParticipantTypeCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return AllergyObservationOperations.validateAllergyObservationAllergyObservationParticipantTypeCode(
+		return AllergyObservationOperations.validateAllergyObservationParticipantTypeCode(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateAllergyObservationParticipantParticipantRole(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return AllergyObservationOperations.validateAllergyObservationParticipantParticipantRole(
 			this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	public boolean validateAllergyObservationAllergyObservationParticipantParticipantRole(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return AllergyObservationOperations.validateAllergyObservationAllergyObservationParticipantParticipantRole(
-			this, diagnostics, context);
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public EList<ReactionObservation> getProblemEntryReactionObservationContainers() {
 		return AllergyObservationOperations.getProblemEntryReactionObservationContainers(this);
 	}

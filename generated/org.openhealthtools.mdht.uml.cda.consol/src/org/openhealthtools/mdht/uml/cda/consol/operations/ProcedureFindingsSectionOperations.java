@@ -78,6 +78,7 @@ public class ProcedureFindingsSectionOperations extends SectionOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_PROCEDURE_FINDINGS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -90,6 +91,7 @@ public class ProcedureFindingsSectionOperations extends SectionOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateProcedureFindingsSectionTemplateId(ProcedureFindingsSection procedureFindingsSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -137,6 +139,7 @@ public class ProcedureFindingsSectionOperations extends SectionOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_PROCEDURE_FINDINGS_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -149,6 +152,7 @@ public class ProcedureFindingsSectionOperations extends SectionOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateProcedureFindingsSectionCode(ProcedureFindingsSection procedureFindingsSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -179,7 +183,7 @@ public class ProcedureFindingsSectionOperations extends SectionOperations {
 	/**
 	* The cached OCL expression body for the '{@link #validateProcedureFindingsSectionCodeP(ProcedureFindingsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Findings Section Code P</em>}' operation.
 	* <!-- begin-user-doc -->
-	* <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	* @see #validateProcedureFindingsSectionCodeP(ProcedureFindingsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	* @generated
 	* @ordered
@@ -253,6 +257,7 @@ public class ProcedureFindingsSectionOperations extends SectionOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_PROCEDURE_FINDINGS_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -265,6 +270,7 @@ public class ProcedureFindingsSectionOperations extends SectionOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateProcedureFindingsSectionText(ProcedureFindingsSection procedureFindingsSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -310,6 +316,7 @@ public class ProcedureFindingsSectionOperations extends SectionOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_PROCEDURE_FINDINGS_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -322,6 +329,7 @@ public class ProcedureFindingsSectionOperations extends SectionOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateProcedureFindingsSectionTitle(ProcedureFindingsSection procedureFindingsSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -367,6 +375,7 @@ public class ProcedureFindingsSectionOperations extends SectionOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_PROCEDURE_FINDINGS_SECTION_PROBLEM_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -379,6 +388,7 @@ public class ProcedureFindingsSectionOperations extends SectionOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateProcedureFindingsSectionProblemObservation(
 			ProcedureFindingsSection procedureFindingsSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -432,6 +442,7 @@ public class ProcedureFindingsSectionOperations extends SectionOperations {
 	 * <!-- end-user-doc -->
 	* @generated
 	*/
+
 	public static EList<ProblemObservation> getProblemObservations(ProcedureFindingsSection procedureFindingsSection) {
 		if (GET_PROBLEM_OBSERVATIONS__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();

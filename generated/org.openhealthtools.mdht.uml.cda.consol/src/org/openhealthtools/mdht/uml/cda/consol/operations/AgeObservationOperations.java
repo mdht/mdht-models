@@ -133,6 +133,7 @@ public class AgeObservationOperations extends ClinicalStatementOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_AGE_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -145,6 +146,7 @@ public class AgeObservationOperations extends ClinicalStatementOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateAgeObservationTemplateId(AgeObservation ageObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
@@ -189,6 +191,7 @@ public class AgeObservationOperations extends ClinicalStatementOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_AGE_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -201,6 +204,7 @@ public class AgeObservationOperations extends ClinicalStatementOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateAgeObservationClassCode(AgeObservation ageObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
@@ -245,6 +249,7 @@ public class AgeObservationOperations extends ClinicalStatementOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_AGE_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -257,6 +262,7 @@ public class AgeObservationOperations extends ClinicalStatementOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateAgeObservationMoodCode(AgeObservation ageObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
@@ -286,7 +292,7 @@ public class AgeObservationOperations extends ClinicalStatementOperations {
 	/**
 	* The cached OCL expression body for the '{@link #validateAgeObservationCodeP(AgeObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Age Observation Code P</em>}' operation.
 	* <!-- begin-user-doc -->
-	* <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	* @see #validateAgeObservationCodeP(AgeObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	* @generated
 	* @ordered
@@ -372,6 +378,7 @@ public class AgeObservationOperations extends ClinicalStatementOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_AGE_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -384,6 +391,7 @@ public class AgeObservationOperations extends ClinicalStatementOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateAgeObservationCode(AgeObservation ageObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
@@ -436,6 +444,7 @@ public class AgeObservationOperations extends ClinicalStatementOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_AGE_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -448,6 +457,7 @@ public class AgeObservationOperations extends ClinicalStatementOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateAgeObservationStatusCode(AgeObservation ageObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
@@ -477,7 +487,7 @@ public class AgeObservationOperations extends ClinicalStatementOperations {
 	/**
 	* The cached OCL expression body for the '{@link #validateAgeObservationStatusCodeP(AgeObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Age Observation Status Code P</em>}' operation.
 	* <!-- begin-user-doc -->
-	* <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	* @see #validateAgeObservationStatusCodeP(AgeObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	* @generated
 	* @ordered
@@ -550,6 +560,7 @@ public class AgeObservationOperations extends ClinicalStatementOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_AGE_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -562,6 +573,7 @@ public class AgeObservationOperations extends ClinicalStatementOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateAgeObservationValue(AgeObservation ageObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 

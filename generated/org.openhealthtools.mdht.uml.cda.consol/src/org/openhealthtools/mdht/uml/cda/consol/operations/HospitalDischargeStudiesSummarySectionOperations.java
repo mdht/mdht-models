@@ -70,6 +70,7 @@ public class HospitalDischargeStudiesSummarySectionOperations extends SectionOpe
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_HOSPITAL_DISCHARGE_STUDIES_SUMMARY_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -82,6 +83,7 @@ public class HospitalDischargeStudiesSummarySectionOperations extends SectionOpe
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateHospitalDischargeStudiesSummarySectionTemplateId(
 			HospitalDischargeStudiesSummarySection hospitalDischargeStudiesSummarySection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
@@ -132,6 +134,7 @@ public class HospitalDischargeStudiesSummarySectionOperations extends SectionOpe
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_HOSPITAL_DISCHARGE_STUDIES_SUMMARY_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -144,6 +147,7 @@ public class HospitalDischargeStudiesSummarySectionOperations extends SectionOpe
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateHospitalDischargeStudiesSummarySectionCode(
 			HospitalDischargeStudiesSummarySection hospitalDischargeStudiesSummarySection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
@@ -177,7 +181,7 @@ public class HospitalDischargeStudiesSummarySectionOperations extends SectionOpe
 	/**
 	* The cached OCL expression body for the '{@link #validateHospitalDischargeStudiesSummarySectionCodeP(HospitalDischargeStudiesSummarySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Hospital Discharge Studies Summary Section Code P</em>}' operation.
 	* <!-- begin-user-doc -->
-	* <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	* @see #validateHospitalDischargeStudiesSummarySectionCodeP(HospitalDischargeStudiesSummarySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	* @generated
 	* @ordered
@@ -254,6 +258,7 @@ public class HospitalDischargeStudiesSummarySectionOperations extends SectionOpe
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_HOSPITAL_DISCHARGE_STUDIES_SUMMARY_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -266,6 +271,7 @@ public class HospitalDischargeStudiesSummarySectionOperations extends SectionOpe
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateHospitalDischargeStudiesSummarySectionTitle(
 			HospitalDischargeStudiesSummarySection hospitalDischargeStudiesSummarySection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
@@ -314,6 +320,7 @@ public class HospitalDischargeStudiesSummarySectionOperations extends SectionOpe
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_HOSPITAL_DISCHARGE_STUDIES_SUMMARY_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -326,6 +333,7 @@ public class HospitalDischargeStudiesSummarySectionOperations extends SectionOpe
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateHospitalDischargeStudiesSummarySectionText(
 			HospitalDischargeStudiesSummarySection hospitalDischargeStudiesSummarySection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {

@@ -78,6 +78,7 @@ public class HospitalAdmissionMedicationsSectionEntriesOptionalOperations extend
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_HOSPITAL_ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -90,6 +91,7 @@ public class HospitalAdmissionMedicationsSectionEntriesOptionalOperations extend
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateHospitalAdmissionMedicationsSectionEntriesOptionalTemplateId(
 			HospitalAdmissionMedicationsSectionEntriesOptional hospitalAdmissionMedicationsSectionEntriesOptional,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
@@ -140,6 +142,7 @@ public class HospitalAdmissionMedicationsSectionEntriesOptionalOperations extend
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_HOSPITAL_ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -152,6 +155,7 @@ public class HospitalAdmissionMedicationsSectionEntriesOptionalOperations extend
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateHospitalAdmissionMedicationsSectionEntriesOptionalCode(
 			HospitalAdmissionMedicationsSectionEntriesOptional hospitalAdmissionMedicationsSectionEntriesOptional,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
@@ -185,7 +189,7 @@ public class HospitalAdmissionMedicationsSectionEntriesOptionalOperations extend
 	/**
 	* The cached OCL expression body for the '{@link #validateHospitalAdmissionMedicationsSectionEntriesOptionalCodeP(HospitalAdmissionMedicationsSectionEntriesOptional, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Hospital Admission Medications Section Entries Optional Code P</em>}' operation.
 	* <!-- begin-user-doc -->
-	* <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	* @see #validateHospitalAdmissionMedicationsSectionEntriesOptionalCodeP(HospitalAdmissionMedicationsSectionEntriesOptional, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	* @generated
 	* @ordered
@@ -262,6 +266,7 @@ public class HospitalAdmissionMedicationsSectionEntriesOptionalOperations extend
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_HOSPITAL_ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -274,6 +279,7 @@ public class HospitalAdmissionMedicationsSectionEntriesOptionalOperations extend
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateHospitalAdmissionMedicationsSectionEntriesOptionalText(
 			HospitalAdmissionMedicationsSectionEntriesOptional hospitalAdmissionMedicationsSectionEntriesOptional,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
@@ -322,6 +328,7 @@ public class HospitalAdmissionMedicationsSectionEntriesOptionalOperations extend
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_HOSPITAL_ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -334,6 +341,7 @@ public class HospitalAdmissionMedicationsSectionEntriesOptionalOperations extend
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateHospitalAdmissionMedicationsSectionEntriesOptionalTitle(
 			HospitalAdmissionMedicationsSectionEntriesOptional hospitalAdmissionMedicationsSectionEntriesOptional,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
@@ -382,6 +390,7 @@ public class HospitalAdmissionMedicationsSectionEntriesOptionalOperations extend
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_HOSPITAL_ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL_ADMISSION_MEDICATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -394,6 +403,7 @@ public class HospitalAdmissionMedicationsSectionEntriesOptionalOperations extend
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateHospitalAdmissionMedicationsSectionEntriesOptionalAdmissionMedication(
 			HospitalAdmissionMedicationsSectionEntriesOptional hospitalAdmissionMedicationsSectionEntriesOptional,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {

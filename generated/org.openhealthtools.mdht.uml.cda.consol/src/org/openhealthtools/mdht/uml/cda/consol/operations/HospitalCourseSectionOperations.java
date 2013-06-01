@@ -70,6 +70,7 @@ public class HospitalCourseSectionOperations extends SectionOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_HOSPITAL_COURSE_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -82,6 +83,7 @@ public class HospitalCourseSectionOperations extends SectionOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateHospitalCourseSectionTemplateId(HospitalCourseSection hospitalCourseSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -129,6 +131,7 @@ public class HospitalCourseSectionOperations extends SectionOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_HOSPITAL_COURSE_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -141,6 +144,7 @@ public class HospitalCourseSectionOperations extends SectionOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateHospitalCourseSectionCode(HospitalCourseSection hospitalCourseSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -171,7 +175,7 @@ public class HospitalCourseSectionOperations extends SectionOperations {
 	/**
 	* The cached OCL expression body for the '{@link #validateHospitalCourseSectionCodeP(HospitalCourseSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Hospital Course Section Code P</em>}' operation.
 	* <!-- begin-user-doc -->
-	* <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	* @see #validateHospitalCourseSectionCodeP(HospitalCourseSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	* @generated
 	* @ordered
@@ -245,6 +249,7 @@ public class HospitalCourseSectionOperations extends SectionOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_HOSPITAL_COURSE_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -257,6 +262,7 @@ public class HospitalCourseSectionOperations extends SectionOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateHospitalCourseSectionTitle(HospitalCourseSection hospitalCourseSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -302,6 +308,7 @@ public class HospitalCourseSectionOperations extends SectionOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_HOSPITAL_COURSE_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -314,6 +321,7 @@ public class HospitalCourseSectionOperations extends SectionOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateHospitalCourseSectionText(HospitalCourseSection hospitalCourseSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 

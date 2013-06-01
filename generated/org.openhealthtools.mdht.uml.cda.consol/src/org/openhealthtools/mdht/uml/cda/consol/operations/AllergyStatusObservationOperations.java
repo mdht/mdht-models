@@ -71,6 +71,7 @@ public class AllergyStatusObservationOperations extends ClinicalStatementOperati
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_ALLERGY_STATUS_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -83,6 +84,7 @@ public class AllergyStatusObservationOperations extends ClinicalStatementOperati
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateAllergyStatusObservationTemplateId(AllergyStatusObservation allergyStatusObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -128,6 +130,7 @@ public class AllergyStatusObservationOperations extends ClinicalStatementOperati
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_ALLERGY_STATUS_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -140,6 +143,7 @@ public class AllergyStatusObservationOperations extends ClinicalStatementOperati
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateAllergyStatusObservationClassCode(AllergyStatusObservation allergyStatusObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -185,6 +189,7 @@ public class AllergyStatusObservationOperations extends ClinicalStatementOperati
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_ALLERGY_STATUS_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -197,6 +202,7 @@ public class AllergyStatusObservationOperations extends ClinicalStatementOperati
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateAllergyStatusObservationMoodCode(AllergyStatusObservation allergyStatusObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -244,6 +250,7 @@ public class AllergyStatusObservationOperations extends ClinicalStatementOperati
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_ALLERGY_STATUS_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -256,6 +263,7 @@ public class AllergyStatusObservationOperations extends ClinicalStatementOperati
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateAllergyStatusObservationCode(AllergyStatusObservation allergyStatusObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -302,6 +310,7 @@ public class AllergyStatusObservationOperations extends ClinicalStatementOperati
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_ALLERGY_STATUS_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -314,6 +323,7 @@ public class AllergyStatusObservationOperations extends ClinicalStatementOperati
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateAllergyStatusObservationStatusCode(AllergyStatusObservation allergyStatusObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -361,6 +371,7 @@ public class AllergyStatusObservationOperations extends ClinicalStatementOperati
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_ALLERGY_STATUS_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -373,6 +384,7 @@ public class AllergyStatusObservationOperations extends ClinicalStatementOperati
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateAllergyStatusObservationValue(AllergyStatusObservation allergyStatusObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 

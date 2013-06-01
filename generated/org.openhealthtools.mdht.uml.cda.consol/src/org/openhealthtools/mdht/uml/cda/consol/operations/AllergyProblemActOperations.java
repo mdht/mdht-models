@@ -82,6 +82,7 @@ public class AllergyProblemActOperations extends ClinicalStatementOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_ALLERGY_PROBLEM_ACT_EFFECTIVE_TIME_LOW__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -94,6 +95,7 @@ public class AllergyProblemActOperations extends ClinicalStatementOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateAllergyProblemActEffectiveTimeLow(AllergyProblemAct allergyProblemAct,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -139,6 +141,7 @@ public class AllergyProblemActOperations extends ClinicalStatementOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_ALLERGY_PROBLEM_ACT_EFFECTIVE_TIME_HIGH__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -151,6 +154,7 @@ public class AllergyProblemActOperations extends ClinicalStatementOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateAllergyProblemActEffectiveTimeHigh(AllergyProblemAct allergyProblemAct,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -196,6 +200,7 @@ public class AllergyProblemActOperations extends ClinicalStatementOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_ALLERGY_PROBLEM_ACT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -208,6 +213,7 @@ public class AllergyProblemActOperations extends ClinicalStatementOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateAllergyProblemActTemplateId(AllergyProblemAct allergyProblemAct,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -252,6 +258,7 @@ public class AllergyProblemActOperations extends ClinicalStatementOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_ALLERGY_PROBLEM_ACT_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -264,6 +271,7 @@ public class AllergyProblemActOperations extends ClinicalStatementOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateAllergyProblemActClassCode(AllergyProblemAct allergyProblemAct,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -308,6 +316,7 @@ public class AllergyProblemActOperations extends ClinicalStatementOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_ALLERGY_PROBLEM_ACT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -320,6 +329,7 @@ public class AllergyProblemActOperations extends ClinicalStatementOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateAllergyProblemActMoodCode(AllergyProblemAct allergyProblemAct,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -364,6 +374,7 @@ public class AllergyProblemActOperations extends ClinicalStatementOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_ALLERGY_PROBLEM_ACT_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -376,6 +387,7 @@ public class AllergyProblemActOperations extends ClinicalStatementOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateAllergyProblemActId(AllergyProblemAct allergyProblemAct, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
@@ -422,6 +434,7 @@ public class AllergyProblemActOperations extends ClinicalStatementOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_ALLERGY_PROBLEM_ACT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -434,6 +447,7 @@ public class AllergyProblemActOperations extends ClinicalStatementOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateAllergyProblemActCode(AllergyProblemAct allergyProblemAct,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -480,6 +494,7 @@ public class AllergyProblemActOperations extends ClinicalStatementOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_ALLERGY_PROBLEM_ACT_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -492,6 +507,7 @@ public class AllergyProblemActOperations extends ClinicalStatementOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateAllergyProblemActStatusCode(AllergyProblemAct allergyProblemAct,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -536,6 +552,7 @@ public class AllergyProblemActOperations extends ClinicalStatementOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_ALLERGY_PROBLEM_ACT_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -548,6 +565,7 @@ public class AllergyProblemActOperations extends ClinicalStatementOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateAllergyProblemActEffectiveTime(AllergyProblemAct allergyProblemAct,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -593,6 +611,7 @@ public class AllergyProblemActOperations extends ClinicalStatementOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_ALLERGY_PROBLEM_ACT_ALLERGY_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -605,6 +624,7 @@ public class AllergyProblemActOperations extends ClinicalStatementOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateAllergyProblemActAllergyObservation(AllergyProblemAct allergyProblemAct,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -657,6 +677,7 @@ public class AllergyProblemActOperations extends ClinicalStatementOperations {
 	 * <!-- end-user-doc -->
 	* @generated
 	*/
+
 	public static EList<AllergyObservation> getAllergyObservations(AllergyProblemAct allergyProblemAct) {
 		if (GET_ALLERGY_OBSERVATIONS__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();

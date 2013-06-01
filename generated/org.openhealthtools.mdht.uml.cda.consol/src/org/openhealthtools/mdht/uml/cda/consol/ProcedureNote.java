@@ -26,12 +26,12 @@ import org.openhealthtools.mdht.emf.runtime.util.Initializer;
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getProcedureNote()
  * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='ProcedureNoteTemplateId ProcedureNoteHasAnAssementAndPlanSectionOrIndividualAssementAndPlanSections ProcedureNoteDoesNotHaveIndividualAssementAndPlanSectionsWhenAssementAndPlanSectionPresent ProcedureNoteDoesNotHaveChiefComplaintAndReasonForVisitWithChiefComplaintSectionOrReasonSection ProcedureNoteSectionTitles ProcedureNoteCode ProcedureNoteCodeP ProcedureNoteComplicationsSection ProcedureNotePostprocedureDiagnosisSection ProcedureNoteProcedureDescriptionSection ProcedureNoteProcedureIndicationsSection ProcedureNoteDocumentationOf ProcedureNoteComponentOfEncompassingEncounter5LocationHealthCareFacilityId ProcedureNoteComponentOfEncompassingEncounter5LocationHealthCareFacility ProcedureNoteComponentOfEncompassingEncounter5EncounterParticipantTypeCode ProcedureNoteComponentOfEncompassingEncounter5Code ProcedureNoteComponentOfEncompassingEncounter5Location ProcedureNoteDocumentationOfServiceEvent1PrimaryPerformerAssignedEntityCode ProcedureNoteDocumentationOfServiceEvent1PrimaryPerformerTypeCode ProcedureNoteDocumentationOfServiceEvent1PrimaryPerformerAssignedEntity ProcedureNoteDocumentationOfServiceEvent1ProcedureCodes ProcedureNoteDocumentationOfServiceEvent1EffectiveTimeHasLow ProcedureNoteDocumentationOfServiceEvent1EffectiveTimeHasHighWhenNoWidth ProcedureNoteDocumentationOfServiceEvent1EffectiveTimeNoHighIfWidth ProcedureNoteDocumentationOfServiceEvent1Code ProcedureNoteDocumentationOfServiceEvent1EffectiveTime ProcedureNoteDocumentationOfServiceEvent1PrimaryPerformer ProcedureNoteDocumentationOfServiceEvent1' templateId.root='2.16.840.1.113883.10.20.22.1.6' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' constraints.validation.dependOn.ProcedureNoteCode='ProcedureNoteCodeP' constraints.validation.warning='ProcedureNoteComponentOf ProcedureNoteComponentOfEncompassingEncounter5 ProcedureNoteDocumentationOfServiceEvent1PrimaryPerformerAssignedEntityCodeP' constraints.validation.info='ProcedureNoteAssessmentSection ProcedureNotePlanOfCareSection ProcedureNoteAssessmentAndPlanSection ProcedureNoteAllergiesSectionEntriesOptional ProcedureNoteAnesthesiaSection ProcedureNoteChiefComplaintSection ProcedureNoteChiefComplaintAndReasonForVisitSection ProcedureNoteFamilyHistorySection ProcedureNoteHistoryOfPastIllnessSection ProcedureNoteHistoryOfPresentIllnessSection ProcedureNoteMedicalHistorySection ProcedureNoteMedicationsSectionEntriesOptional ProcedureNoteMedicationsAdministeredSection ProcedureNotePhysicalExamSection ProcedureNotePlannedProcedureSection ProcedureNoteProcedureDispositionSection ProcedureNoteProcedureEstimatedBloodLossSection ProcedureNoteProcedureFindingsSection ProcedureNoteProcedureImplantsSection ProcedureNoteProcedureSpecimensTakenSection ProcedureNoteProceduresSectionEntriesOptional ProcedureNoteReasonForVisitSection ProcedureNoteReviewOfSystemsSection ProcedureNoteSocialHistorySection ProcedureNoteParticipant1 ProcedureNoteComponentOfEncompassingEncounter5EncounterParticipant' constraints.validation.query='ProcedureNoteComponentOfEncompassingEncounter5LocationHealthCareFacilityId ProcedureNoteComponentOfEncompassingEncounter5LocationHealthCareFacility ProcedureNoteComponentOfEncompassingEncounter5EncounterParticipantTypeCode ProcedureNoteComponentOfEncompassingEncounter5Code ProcedureNoteComponentOfEncompassingEncounter5Location ProcedureNoteComponentOfEncompassingEncounter5EncounterParticipant ProcedureNoteComponentOfEncompassingEncounter5 ProcedureNoteDocumentationOfServiceEvent1PrimaryPerformerAssignedEntityCodeP ProcedureNoteDocumentationOfServiceEvent1PrimaryPerformerAssignedEntityCode ProcedureNoteDocumentationOfServiceEvent1PrimaryPerformerTypeCode ProcedureNoteDocumentationOfServiceEvent1PrimaryPerformerAssignedEntity ProcedureNoteDocumentationOfServiceEvent1ProcedureCodes ProcedureNoteDocumentationOfServiceEvent1EffectiveTimeHasLow ProcedureNoteDocumentationOfServiceEvent1EffectiveTimeHasHighWhenNoWidth ProcedureNoteDocumentationOfServiceEvent1EffectiveTimeNoHighIfWidth ProcedureNoteDocumentationOfServiceEvent1Code ProcedureNoteDocumentationOfServiceEvent1EffectiveTime ProcedureNoteDocumentationOfServiceEvent1PrimaryPerformer ProcedureNoteDocumentationOfServiceEvent1' constraints.validation.dependOn.ProcedureNoteDocumentationOfServiceEvent1PrimaryPerformerAssignedEntityCode='ProcedureNoteDocumentationOfServiceEvent1PrimaryPerformerAssignedEntityCodeP'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolProcedureNoteComponentOf constraints.validation.warning='ComponentOfEncompassingEncounter5'"
- *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolProcedureNoteComponentOfEncompassingEncounter5 constraints.validation.error='EncompassingEncounter5Code EncompassingEncounter5Location EncompassingEncounter5EncounterParticipantTypeCode' constraints.validation.info='EncompassingEncounter5EncounterParticipant' constraints.validation.query='EncompassingEncounter5EncounterParticipantTypeCode'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolProcedureNoteComponentOfEncompassingEncounter5 constraints.validation.error='EncompassingEncounter5Code EncompassingEncounter5Location ProcedureNoteComponentOfEncompassingEncounter5EncounterParticipantTypeCode' constraints.validation.info='EncompassingEncounter5EncounterParticipant' constraints.validation.query='ProcedureNoteComponentOfEncompassingEncounter5EncounterParticipantTypeCode'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolProcedureNoteComponentOfEncompassingEncounter5Location constraints.validation.error='LocationHealthCareFacility'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolProcedureNoteComponentOfEncompassingEncounter5LocationHealthCareFacility constraints.validation.error='HealthCareFacilityId'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolProcedureNoteComponentOfEncompassingEncounter5EncounterParticipant typeCode='REF' constraints.validation.error='EncounterParticipantTypeCode'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolProcedureNoteDocumentationOf constraints.validation.error='DocumentationOfServiceEvent1'"
- *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolProcedureNoteDocumentationOfServiceEvent1 constraints.validation.error='ServiceEvent1ProcedureCodes ServiceEvent1EffectiveTimeHasLow ServiceEvent1EffectiveTimeHasHighWhenNoWidth ServiceEvent1EffectiveTimeNoHighIfWidth ServiceEvent1Code ServiceEvent1EffectiveTime ServiceEvent1PrimaryPerformer ServiceEvent1PrimaryPerformerAssignedEntityCode ServiceEvent1PrimaryPerformerTypeCode ServiceEvent1PrimaryPerformerAssignedEntity' constraints.validation.warning='ServiceEvent1PrimaryPerformerAssignedEntityCodeP' constraints.validation.query='ServiceEvent1PrimaryPerformerAssignedEntityCodeP ServiceEvent1PrimaryPerformerAssignedEntityCode ServiceEvent1PrimaryPerformerTypeCode ServiceEvent1PrimaryPerformerAssignedEntity' constraints.validation.dependOn.ServiceEvent1PrimaryPerformerAssignedEntityCode='ServiceEvent1PrimaryPerformerAssignedEntityCodeP'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolProcedureNoteDocumentationOfServiceEvent1 constraints.validation.error='ServiceEvent1ProcedureCodes ServiceEvent1EffectiveTimeHasLow ServiceEvent1EffectiveTimeHasHighWhenNoWidth ServiceEvent1EffectiveTimeNoHighIfWidth ServiceEvent1Code ServiceEvent1EffectiveTime ServiceEvent1PrimaryPerformer ProcedureNoteDocumentationOfServiceEvent1PrimaryPerformerAssignedEntityCode ProcedureNoteDocumentationOfServiceEvent1PrimaryPerformerTypeCode ProcedureNoteDocumentationOfServiceEvent1PrimaryPerformerAssignedEntity' constraints.validation.warning='ProcedureNoteDocumentationOfServiceEvent1PrimaryPerformerAssignedEntityCodeP' constraints.validation.query='ProcedureNoteDocumentationOfServiceEvent1PrimaryPerformerAssignedEntityCodeP ProcedureNoteDocumentationOfServiceEvent1PrimaryPerformerAssignedEntityCode ProcedureNoteDocumentationOfServiceEvent1PrimaryPerformerTypeCode ProcedureNoteDocumentationOfServiceEvent1PrimaryPerformerAssignedEntity' constraints.validation.dependOn.ProcedureNoteDocumentationOfServiceEvent1PrimaryPerformerAssignedEntityCode='ServiceEvent1PrimaryPerformerAssignedEntityCodeP'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolProcedureNoteDocumentationOfServiceEvent1PrimaryPerformer typeCode='PPRF' constraints.validation.error='PrimaryPerformerTypeCode PrimaryPerformerAssignedEntity'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolProcedureNoteDocumentationOfServiceEvent1PrimaryPerformerAssignedEntity code.codeSystem='2.16.840.1.113883.6.101' code.codeSystemName='NUCC Health Care Provider Taxonomy' constraints.validation.error='AssignedEntityCode' constraints.validation.warning='AssignedEntityCodeP' constraints.validation.dependOn.AssignedEntityCode='AssignedEntityCodeP'"
  * @generated
@@ -503,7 +503,7 @@ public interface ProcedureNote extends GeneralHeaderConstraints {
 
 	/**
 	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	* <!-- end-user-doc -->
 	* <!-- begin-model-doc -->
 	* @param diagnostics The chain of diagnostics to which problems are to be appended.
 	* @param context The cache of context-specific information.
@@ -515,245 +515,245 @@ public interface ProcedureNote extends GeneralHeaderConstraints {
 			DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.componentOf->excluding(null).encompassingEncounter->excluding(null).location->excluding(null)->reject(healthCareFacility->exists(healthCareFacility : cda::HealthCareFacility | not healthCareFacility.oclIsUndefined() and healthCareFacility.oclIsKindOf(cda::HealthCareFacility)))'"
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.componentOf->excluding(null).encompassingEncounter->excluding(null).location->excluding(null)->reject(healthCareFacility->exists(healthCareFacility : cda::HealthCareFacility | not healthCareFacility.oclIsUndefined() and healthCareFacility.oclIsKindOf(cda::HealthCareFacility)))'"
+	 * @generated
+	 */
 	boolean validateProcedureNoteComponentOfEncompassingEncounter5LocationHealthCareFacility(
 			DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.componentOf->excluding(null).encompassingEncounter->excluding(null).encounterParticipant->excluding(null)->select(typeCode = vocab::x_EncounterParticipant::REF)->select(typeCode = vocab::x_EncounterParticipant::REF)->reject(typeCode=vocab::x_EncounterParticipant::REF)'"
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.componentOf->excluding(null).encompassingEncounter->excluding(null).encounterParticipant->excluding(null)->select(typeCode = vocab::x_EncounterParticipant::REF)->select(typeCode = vocab::x_EncounterParticipant::REF)->reject(typeCode=vocab::x_EncounterParticipant::REF)'"
+	 * @generated
+	 */
 	boolean validateProcedureNoteComponentOfEncompassingEncounter5EncounterParticipantTypeCode(
 			DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.componentOf->excluding(null).encompassingEncounter->excluding(null)->reject((code.oclIsUndefined() or code.isNullFlavorUndefined()) implies (not code.oclIsUndefined()))'"
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.componentOf->excluding(null).encompassingEncounter->excluding(null)->reject((code.oclIsUndefined() or code.isNullFlavorUndefined()) implies (not code.oclIsUndefined()))'"
+	 * @generated
+	 */
 	boolean validateProcedureNoteComponentOfEncompassingEncounter5Code(DiagnosticChain diagnostics,
 			Map<Object, Object> context);
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.componentOf->excluding(null).encompassingEncounter->excluding(null)->reject(location->exists(location : cda::Location | not location.oclIsUndefined() and location.oclIsKindOf(cda::Location)))'"
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.componentOf->excluding(null).encompassingEncounter->excluding(null)->reject(location->exists(location : cda::Location | not location.oclIsUndefined() and location.oclIsKindOf(cda::Location)))'"
+	 * @generated
+	 */
 	boolean validateProcedureNoteComponentOfEncompassingEncounter5Location(DiagnosticChain diagnostics,
 			Map<Object, Object> context);
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.componentOf->excluding(null).encompassingEncounter->excluding(null)->reject(encounterParticipant->select(encounterParticipant : cda::EncounterParticipant | not encounterParticipant.oclIsUndefined() and encounterParticipant.oclIsKindOf(cda::EncounterParticipant))->select(typeCode = vocab::x_EncounterParticipant::REF)->size() = 1)'"
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.componentOf->excluding(null).encompassingEncounter->excluding(null)->reject(encounterParticipant->select(encounterParticipant : cda::EncounterParticipant | not encounterParticipant.oclIsUndefined() and encounterParticipant.oclIsKindOf(cda::EncounterParticipant))->select(typeCode = vocab::x_EncounterParticipant::REF)->size() = 1)'"
+	 * @generated
+	 */
 	boolean validateProcedureNoteComponentOfEncompassingEncounter5EncounterParticipant(DiagnosticChain diagnostics,
 			Map<Object, Object> context);
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.componentOf->excluding(null)->reject(encompassingEncounter->one(encompassingEncounter : cda::EncompassingEncounter | not encompassingEncounter.oclIsUndefined() and encompassingEncounter.oclIsKindOf(cda::EncompassingEncounter)))'"
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.componentOf->excluding(null)->reject(encompassingEncounter->one(encompassingEncounter : cda::EncompassingEncounter | not encompassingEncounter.oclIsUndefined() and encompassingEncounter.oclIsKindOf(cda::EncompassingEncounter)))'"
+	 * @generated
+	 */
 	boolean validateProcedureNoteComponentOfEncompassingEncounter5(DiagnosticChain diagnostics,
 			Map<Object, Object> context);
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.documentationOf->excluding(null).serviceEvent->excluding(null).performer->excluding(null)->select(typeCode = vocab::x_ServiceEventPerformer::PPRF).assignedEntity->excluding(null)->reject((code.oclIsUndefined() or code.isNullFlavorUndefined()) implies (not code.oclIsUndefined()))'"
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.documentationOf->excluding(null).serviceEvent->excluding(null).performer->excluding(null)->select(typeCode = vocab::x_ServiceEventPerformer::PPRF).assignedEntity->excluding(null)->reject((code.oclIsUndefined() or code.isNullFlavorUndefined()) implies (not code.oclIsUndefined()))'"
+	 * @generated
+	 */
 	boolean validateProcedureNoteDocumentationOfServiceEvent1PrimaryPerformerAssignedEntityCodeP(
 			DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.documentationOf->excluding(null).serviceEvent->excluding(null).performer->excluding(null)->select(typeCode = vocab::x_ServiceEventPerformer::PPRF).assignedEntity->excluding(null)->reject((code.oclIsUndefined() or code.isNullFlavorUndefined()) implies (not code.oclIsUndefined() and code.oclIsKindOf(datatypes::CE) and \nlet value : datatypes::CE = code.oclAsType(datatypes::CE) in \nvalue.codeSystem = \'2.16.840.1.113883.6.101\' and not value.code.oclIsUndefined()))'"
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.documentationOf->excluding(null).serviceEvent->excluding(null).performer->excluding(null)->select(typeCode = vocab::x_ServiceEventPerformer::PPRF).assignedEntity->excluding(null)->reject((code.oclIsUndefined() or code.isNullFlavorUndefined()) implies (not code.oclIsUndefined() and code.oclIsKindOf(datatypes::CE) and \nlet value : datatypes::CE = code.oclAsType(datatypes::CE) in \nvalue.codeSystem = \'2.16.840.1.113883.6.101\' and not value.code.oclIsUndefined()))'"
+	 * @generated
+	 */
 	boolean validateProcedureNoteDocumentationOfServiceEvent1PrimaryPerformerAssignedEntityCode(
 			DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.documentationOf->excluding(null).serviceEvent->excluding(null).performer->excluding(null)->select(typeCode = vocab::x_ServiceEventPerformer::PPRF)->select(typeCode = vocab::x_ServiceEventPerformer::PPRF)->reject(typeCode=vocab::x_ServiceEventPerformer::PPRF)'"
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.documentationOf->excluding(null).serviceEvent->excluding(null).performer->excluding(null)->select(typeCode = vocab::x_ServiceEventPerformer::PPRF)->select(typeCode = vocab::x_ServiceEventPerformer::PPRF)->reject(typeCode=vocab::x_ServiceEventPerformer::PPRF)'"
+	 * @generated
+	 */
 	boolean validateProcedureNoteDocumentationOfServiceEvent1PrimaryPerformerTypeCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context);
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.documentationOf->excluding(null).serviceEvent->excluding(null).performer->excluding(null)->select(typeCode = vocab::x_ServiceEventPerformer::PPRF)->select(typeCode = vocab::x_ServiceEventPerformer::PPRF)->reject(assignedEntity->one(assignedEntity : cda::AssignedEntity | not assignedEntity.oclIsUndefined() and assignedEntity.oclIsKindOf(cda::AssignedEntity)))'"
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.documentationOf->excluding(null).serviceEvent->excluding(null).performer->excluding(null)->select(typeCode = vocab::x_ServiceEventPerformer::PPRF)->select(typeCode = vocab::x_ServiceEventPerformer::PPRF)->reject(assignedEntity->one(assignedEntity : cda::AssignedEntity | not assignedEntity.oclIsUndefined() and assignedEntity.oclIsKindOf(cda::AssignedEntity)))'"
+	 * @generated
+	 */
 	boolean validateProcedureNoteDocumentationOfServiceEvent1PrimaryPerformerAssignedEntity(
 			DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.documentationOf->excluding(null).serviceEvent->excluding(null)->reject(code.codeSystem = \'2.16.840.1.113883.6.104\' or code.codeSystem = \'2.16.840.1.113883.6.12\' or code.codeSystem = \'2.16.840.1.113883.6.96\')'"
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.documentationOf->excluding(null).serviceEvent->excluding(null)->reject(code.codeSystem = \'2.16.840.1.113883.6.104\' or code.codeSystem = \'2.16.840.1.113883.6.12\' or code.codeSystem = \'2.16.840.1.113883.6.96\')'"
+	 * @generated
+	 */
 	boolean validateProcedureNoteDocumentationOfServiceEvent1ProcedureCodes(DiagnosticChain diagnostics,
 			Map<Object, Object> context);
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.documentationOf->excluding(null).serviceEvent->excluding(null)->reject(not effectiveTime.low.oclIsUndefined())'"
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.documentationOf->excluding(null).serviceEvent->excluding(null)->reject(not effectiveTime.low.oclIsUndefined())'"
+	 * @generated
+	 */
 	boolean validateProcedureNoteDocumentationOfServiceEvent1EffectiveTimeHasLow(DiagnosticChain diagnostics,
 			Map<Object, Object> context);
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.documentationOf->excluding(null).serviceEvent->excluding(null)->reject(not effectiveTime.width.oclIsUndefined() xor not effectiveTime.high.oclIsUndefined())'"
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.documentationOf->excluding(null).serviceEvent->excluding(null)->reject(not effectiveTime.width.oclIsUndefined() xor not effectiveTime.high.oclIsUndefined())'"
+	 * @generated
+	 */
 	boolean validateProcedureNoteDocumentationOfServiceEvent1EffectiveTimeHasHighWhenNoWidth(
 			DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.documentationOf->excluding(null).serviceEvent->excluding(null)->reject(not effectiveTime.width.oclIsUndefined() xor not effectiveTime.high.oclIsUndefined())'"
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.documentationOf->excluding(null).serviceEvent->excluding(null)->reject(not effectiveTime.width.oclIsUndefined() xor not effectiveTime.high.oclIsUndefined())'"
+	 * @generated
+	 */
 	boolean validateProcedureNoteDocumentationOfServiceEvent1EffectiveTimeNoHighIfWidth(DiagnosticChain diagnostics,
 			Map<Object, Object> context);
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.documentationOf->excluding(null).serviceEvent->excluding(null)->reject((code.oclIsUndefined() or code.isNullFlavorUndefined()) implies (not code.oclIsUndefined()))'"
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.documentationOf->excluding(null).serviceEvent->excluding(null)->reject((code.oclIsUndefined() or code.isNullFlavorUndefined()) implies (not code.oclIsUndefined()))'"
+	 * @generated
+	 */
 	boolean validateProcedureNoteDocumentationOfServiceEvent1Code(DiagnosticChain diagnostics,
 			Map<Object, Object> context);
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.documentationOf->excluding(null).serviceEvent->excluding(null)->reject((effectiveTime.oclIsUndefined() or effectiveTime.isNullFlavorUndefined()) implies (not effectiveTime.oclIsUndefined()))'"
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.documentationOf->excluding(null).serviceEvent->excluding(null)->reject((effectiveTime.oclIsUndefined() or effectiveTime.isNullFlavorUndefined()) implies (not effectiveTime.oclIsUndefined()))'"
+	 * @generated
+	 */
 	boolean validateProcedureNoteDocumentationOfServiceEvent1EffectiveTime(DiagnosticChain diagnostics,
 			Map<Object, Object> context);
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.documentationOf->excluding(null).serviceEvent->excluding(null)->reject(performer->select(performer : cda::Performer1 | not performer.oclIsUndefined() and performer.oclIsKindOf(cda::Performer1))->select(typeCode = vocab::x_ServiceEventPerformer::PPRF)->size() = 1)'"
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.documentationOf->excluding(null).serviceEvent->excluding(null)->reject(performer->select(performer : cda::Performer1 | not performer.oclIsUndefined() and performer.oclIsKindOf(cda::Performer1))->select(typeCode = vocab::x_ServiceEventPerformer::PPRF)->size() = 1)'"
+	 * @generated
+	 */
 	boolean validateProcedureNoteDocumentationOfServiceEvent1PrimaryPerformer(DiagnosticChain diagnostics,
 			Map<Object, Object> context);
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.documentationOf->excluding(null)->reject(serviceEvent->one(serviceEvent : cda::ServiceEvent | not serviceEvent.oclIsUndefined() and serviceEvent.oclIsKindOf(cda::ServiceEvent)))'"
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.documentationOf->excluding(null)->reject(serviceEvent->one(serviceEvent : cda::ServiceEvent | not serviceEvent.oclIsUndefined() and serviceEvent.oclIsKindOf(cda::ServiceEvent)))'"
+	 * @generated
+	 */
 	boolean validateProcedureNoteDocumentationOfServiceEvent1(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @model kind="operation" required="true" ordered="false"
-	*        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::AssessmentSection))->asSequence()->any(true).oclAsType(consol::AssessmentSection)'"
-	* @generated
-	*/
+	 * @model kind="operation" required="true" ordered="false"
+	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::AssessmentSection))->asSequence()->any(true).oclAsType(consol::AssessmentSection)'"
+	 * @generated
+	 */
 	AssessmentSection getAssessmentSection();
 
 	/**

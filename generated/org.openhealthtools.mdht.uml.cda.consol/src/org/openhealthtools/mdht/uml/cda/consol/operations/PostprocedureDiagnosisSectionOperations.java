@@ -76,6 +76,7 @@ public class PostprocedureDiagnosisSectionOperations extends SectionOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_POSTPROCEDURE_DIAGNOSIS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -88,6 +89,7 @@ public class PostprocedureDiagnosisSectionOperations extends SectionOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validatePostprocedureDiagnosisSectionTemplateId(
 			PostprocedureDiagnosisSection postprocedureDiagnosisSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
@@ -119,7 +121,7 @@ public class PostprocedureDiagnosisSectionOperations extends SectionOperations {
 	/**
 	* The cached OCL expression body for the '{@link #validatePostprocedureDiagnosisSectionCodeP(PostprocedureDiagnosisSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Postprocedure Diagnosis Section Code P</em>}' operation.
 	* <!-- begin-user-doc -->
-	* <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	* @see #validatePostprocedureDiagnosisSectionCodeP(PostprocedureDiagnosisSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	* @generated
 	* @ordered
@@ -208,6 +210,7 @@ public class PostprocedureDiagnosisSectionOperations extends SectionOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_POSTPROCEDURE_DIAGNOSIS_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -220,6 +223,7 @@ public class PostprocedureDiagnosisSectionOperations extends SectionOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validatePostprocedureDiagnosisSectionCode(
 			PostprocedureDiagnosisSection postprocedureDiagnosisSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
@@ -274,6 +278,7 @@ public class PostprocedureDiagnosisSectionOperations extends SectionOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_POSTPROCEDURE_DIAGNOSIS_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -286,6 +291,7 @@ public class PostprocedureDiagnosisSectionOperations extends SectionOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validatePostprocedureDiagnosisSectionText(
 			PostprocedureDiagnosisSection postprocedureDiagnosisSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
@@ -332,6 +338,7 @@ public class PostprocedureDiagnosisSectionOperations extends SectionOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_POSTPROCEDURE_DIAGNOSIS_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -344,6 +351,7 @@ public class PostprocedureDiagnosisSectionOperations extends SectionOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validatePostprocedureDiagnosisSectionTitle(
 			PostprocedureDiagnosisSection postprocedureDiagnosisSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
@@ -390,6 +398,7 @@ public class PostprocedureDiagnosisSectionOperations extends SectionOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_POSTPROCEDURE_DIAGNOSIS_SECTION_POSTPROCEDURE_DIAGNOSIS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -402,6 +411,7 @@ public class PostprocedureDiagnosisSectionOperations extends SectionOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validatePostprocedureDiagnosisSectionPostprocedureDiagnosis(
 			PostprocedureDiagnosisSection postprocedureDiagnosisSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
@@ -457,6 +467,7 @@ public class PostprocedureDiagnosisSectionOperations extends SectionOperations {
 	 * <!-- end-user-doc -->
 	* @generated
 	*/
+
 	public static PostprocedureDiagnosis getPostprocedureDiagnosis(
 			PostprocedureDiagnosisSection postprocedureDiagnosisSection) {
 		if (GET_POSTPROCEDURE_DIAGNOSIS__EOCL_QRY == null) {

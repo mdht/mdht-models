@@ -140,6 +140,7 @@ public class CoverageActivityOperations extends ClinicalStatementOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_COVERAGE_ACTIVITY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -152,6 +153,7 @@ public class CoverageActivityOperations extends ClinicalStatementOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateCoverageActivityTemplateId(CoverageActivity coverageActivity,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -196,6 +198,7 @@ public class CoverageActivityOperations extends ClinicalStatementOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_COVERAGE_ACTIVITY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -208,6 +211,7 @@ public class CoverageActivityOperations extends ClinicalStatementOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateCoverageActivityClassCode(CoverageActivity coverageActivity,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -254,6 +258,7 @@ public class CoverageActivityOperations extends ClinicalStatementOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_COVERAGE_ACTIVITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -266,6 +271,7 @@ public class CoverageActivityOperations extends ClinicalStatementOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateCoverageActivityCode(CoverageActivity coverageActivity, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
@@ -310,6 +316,7 @@ public class CoverageActivityOperations extends ClinicalStatementOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_COVERAGE_ACTIVITY_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -322,6 +329,7 @@ public class CoverageActivityOperations extends ClinicalStatementOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateCoverageActivityId(CoverageActivity coverageActivity, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
@@ -365,6 +373,7 @@ public class CoverageActivityOperations extends ClinicalStatementOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_COVERAGE_ACTIVITY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -377,6 +386,7 @@ public class CoverageActivityOperations extends ClinicalStatementOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateCoverageActivityMoodCode(CoverageActivity coverageActivity,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -422,6 +432,7 @@ public class CoverageActivityOperations extends ClinicalStatementOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_COVERAGE_ACTIVITY_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -434,6 +445,7 @@ public class CoverageActivityOperations extends ClinicalStatementOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateCoverageActivityStatusCode(CoverageActivity coverageActivity,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -478,6 +490,7 @@ public class CoverageActivityOperations extends ClinicalStatementOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_COVERAGE_ACTIVITY_POLICY_ACTIVITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -490,6 +503,7 @@ public class CoverageActivityOperations extends ClinicalStatementOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateCoverageActivityPolicyActivity(CoverageActivity coverageActivity,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -542,6 +556,7 @@ public class CoverageActivityOperations extends ClinicalStatementOperations {
 	 * <!-- end-user-doc -->
 	* @generated
 	*/
+
 	public static EList<PolicyActivity> getPolicyActivities(CoverageActivity coverageActivity) {
 		if (GET_POLICY_ACTIVITIES__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();

@@ -146,7 +146,7 @@ public class MedicationDispenseImpl extends SupplyImpl implements MedicationDisp
 
 	/**
 	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	* <!-- end-user-doc -->
 	* @generated
 	*/
 	public boolean validateMedicationDispensePerformerMedicationDispenseAssignedEntityUSRealmAddressStreet(
@@ -156,10 +156,10 @@ public class MedicationDispenseImpl extends SupplyImpl implements MedicationDisp
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateMedicationDispensePerformerMedicationDispenseAssignedEntityUSRealmAddressCity(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return MedicationDispenseOperations.validateMedicationDispensePerformerMedicationDispenseAssignedEntityUSRealmAddressCity(
@@ -167,10 +167,10 @@ public class MedicationDispenseImpl extends SupplyImpl implements MedicationDisp
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateMedicationDispensePerformerMedicationDispenseAssignedEntityUSRealmAddressCountry(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return MedicationDispenseOperations.validateMedicationDispensePerformerMedicationDispenseAssignedEntityUSRealmAddressCountry(
@@ -178,10 +178,10 @@ public class MedicationDispenseImpl extends SupplyImpl implements MedicationDisp
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateMedicationDispensePerformerMedicationDispenseAssignedEntityUSRealmAddressPostalCode(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return MedicationDispenseOperations.validateMedicationDispensePerformerMedicationDispenseAssignedEntityUSRealmAddressPostalCode(
@@ -189,10 +189,10 @@ public class MedicationDispenseImpl extends SupplyImpl implements MedicationDisp
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateMedicationDispensePerformerMedicationDispenseAssignedEntityUSRealmAddressState(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return MedicationDispenseOperations.validateMedicationDispensePerformerMedicationDispenseAssignedEntityUSRealmAddressState(
@@ -200,10 +200,10 @@ public class MedicationDispenseImpl extends SupplyImpl implements MedicationDisp
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateMedicationDispensePerformerMedicationDispenseAssignedEntityUSRealmAddressStreetAddressLine(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return MedicationDispenseOperations.validateMedicationDispensePerformerMedicationDispenseAssignedEntityUSRealmAddressStreetAddressLine(
@@ -211,10 +211,10 @@ public class MedicationDispenseImpl extends SupplyImpl implements MedicationDisp
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateMedicationDispensePerformerMedicationDispenseAssignedEntityUSRealmAddressUseP(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return MedicationDispenseOperations.validateMedicationDispensePerformerMedicationDispenseAssignedEntityUSRealmAddressUseP(
@@ -222,10 +222,10 @@ public class MedicationDispenseImpl extends SupplyImpl implements MedicationDisp
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateMedicationDispensePerformerMedicationDispenseAssignedEntityUSRealmAddressUse(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return MedicationDispenseOperations.validateMedicationDispensePerformerMedicationDispenseAssignedEntityUSRealmAddressUse(
@@ -233,10 +233,10 @@ public class MedicationDispenseImpl extends SupplyImpl implements MedicationDisp
 	}
 
 	/**
-	* <!-- begin-user-doc -->
-	* <!-- end-user-doc -->
-	* @generated
-	*/
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public boolean validateMedicationDispensePerformerMedicationDispenseAssignedEntityAddr(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return MedicationDispenseOperations.validateMedicationDispensePerformerMedicationDispenseAssignedEntityAddr(
@@ -244,10 +244,10 @@ public class MedicationDispenseImpl extends SupplyImpl implements MedicationDisp
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateMedicationDispensePerformerMedicationDispenseAssignedEntity(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return MedicationDispenseOperations.validateMedicationDispensePerformerMedicationDispenseAssignedEntity(
@@ -255,10 +255,10 @@ public class MedicationDispenseImpl extends SupplyImpl implements MedicationDisp
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateMedicationDispenseMedicationSupplyOrder(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return MedicationDispenseOperations.validateMedicationDispenseMedicationSupplyOrder(this, diagnostics, context);

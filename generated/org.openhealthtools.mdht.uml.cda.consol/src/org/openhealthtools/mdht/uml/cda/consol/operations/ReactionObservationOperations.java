@@ -96,6 +96,7 @@ public class ReactionObservationOperations extends ClinicalStatementOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_REACTION_OBSERVATION_TEXT_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -108,6 +109,7 @@ public class ReactionObservationOperations extends ClinicalStatementOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateReactionObservationTextReference(ReactionObservation reactionObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -138,7 +140,7 @@ public class ReactionObservationOperations extends ClinicalStatementOperations {
 	/**
 	* The cached OCL expression body for the '{@link #validateReactionObservationTextReferenceValue(ReactionObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Reaction Observation Text Reference Value</em>}' operation.
 	* <!-- begin-user-doc -->
-	* <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	* @see #validateReactionObservationTextReferenceValue(ReactionObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	* @generated
 	* @ordered
@@ -212,6 +214,7 @@ public class ReactionObservationOperations extends ClinicalStatementOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_REACTION_OBSERVATION_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -224,6 +227,7 @@ public class ReactionObservationOperations extends ClinicalStatementOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateReactionObservationReferenceValue(ReactionObservation reactionObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -269,6 +273,7 @@ public class ReactionObservationOperations extends ClinicalStatementOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_REACTION_OBSERVATION_EFFECTIVE_TIME_LOW__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -281,6 +286,7 @@ public class ReactionObservationOperations extends ClinicalStatementOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateReactionObservationEffectiveTimeLow(ReactionObservation reactionObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -326,6 +332,7 @@ public class ReactionObservationOperations extends ClinicalStatementOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_REACTION_OBSERVATION_EFFECTIVE_TIME_HIGH__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -338,6 +345,7 @@ public class ReactionObservationOperations extends ClinicalStatementOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateReactionObservationEffectiveTimeHigh(ReactionObservation reactionObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -383,6 +391,7 @@ public class ReactionObservationOperations extends ClinicalStatementOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_REACTION_OBSERVATION_SEVERITY_OBSERVATION_INVERSION_IND__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -395,6 +404,7 @@ public class ReactionObservationOperations extends ClinicalStatementOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateReactionObservationSeverityObservationInversionInd(
 			ReactionObservation reactionObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -441,6 +451,7 @@ public class ReactionObservationOperations extends ClinicalStatementOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_REACTION_OBSERVATION_PROCEDURE_ACTIVITY_PROCEDURE_INVERSION_IND__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -453,6 +464,7 @@ public class ReactionObservationOperations extends ClinicalStatementOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateReactionObservationProcedureActivityProcedureInversionInd(
 			ReactionObservation reactionObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -500,6 +512,7 @@ public class ReactionObservationOperations extends ClinicalStatementOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_REACTION_OBSERVATION_MEDICATION_ACTIVITY_INVERSION_IND__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -512,6 +525,7 @@ public class ReactionObservationOperations extends ClinicalStatementOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateReactionObservationMedicationActivityInversionInd(
 			ReactionObservation reactionObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -558,6 +572,7 @@ public class ReactionObservationOperations extends ClinicalStatementOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_REACTION_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -570,6 +585,7 @@ public class ReactionObservationOperations extends ClinicalStatementOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateReactionObservationTemplateId(ReactionObservation reactionObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -615,6 +631,7 @@ public class ReactionObservationOperations extends ClinicalStatementOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_REACTION_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -627,6 +644,7 @@ public class ReactionObservationOperations extends ClinicalStatementOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateReactionObservationClassCode(ReactionObservation reactionObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -657,7 +675,7 @@ public class ReactionObservationOperations extends ClinicalStatementOperations {
 	/**
 	* The cached OCL expression body for the '{@link #validateReactionObservationMoodCode(ReactionObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Reaction Observation Mood Code</em>}' operation.
 	* <!-- begin-user-doc -->
-	* <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	* @see #validateReactionObservationMoodCode(ReactionObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	* @generated
 	* @ordered
@@ -731,6 +749,7 @@ public class ReactionObservationOperations extends ClinicalStatementOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_REACTION_OBSERVATION_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -743,6 +762,7 @@ public class ReactionObservationOperations extends ClinicalStatementOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateReactionObservationId(ReactionObservation reactionObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -787,6 +807,7 @@ public class ReactionObservationOperations extends ClinicalStatementOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_REACTION_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -799,6 +820,7 @@ public class ReactionObservationOperations extends ClinicalStatementOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateReactionObservationCode(ReactionObservation reactionObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -843,6 +865,7 @@ public class ReactionObservationOperations extends ClinicalStatementOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_REACTION_OBSERVATION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -855,6 +878,7 @@ public class ReactionObservationOperations extends ClinicalStatementOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateReactionObservationText(ReactionObservation reactionObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -900,6 +924,7 @@ public class ReactionObservationOperations extends ClinicalStatementOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_REACTION_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -912,6 +937,7 @@ public class ReactionObservationOperations extends ClinicalStatementOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateReactionObservationStatusCode(ReactionObservation reactionObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -957,6 +983,7 @@ public class ReactionObservationOperations extends ClinicalStatementOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_REACTION_OBSERVATION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -969,6 +996,7 @@ public class ReactionObservationOperations extends ClinicalStatementOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateReactionObservationEffectiveTime(ReactionObservation reactionObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -1016,6 +1044,7 @@ public class ReactionObservationOperations extends ClinicalStatementOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_REACTION_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -1028,6 +1057,7 @@ public class ReactionObservationOperations extends ClinicalStatementOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateReactionObservationValue(ReactionObservation reactionObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -1072,6 +1102,7 @@ public class ReactionObservationOperations extends ClinicalStatementOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_REACTION_OBSERVATION_SEVERITY_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -1084,6 +1115,7 @@ public class ReactionObservationOperations extends ClinicalStatementOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateReactionObservationSeverityObservation(ReactionObservation reactionObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -1129,6 +1161,7 @@ public class ReactionObservationOperations extends ClinicalStatementOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_REACTION_OBSERVATION_PROCEDURE_ACTIVITY_PROCEDURE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -1141,6 +1174,7 @@ public class ReactionObservationOperations extends ClinicalStatementOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateReactionObservationProcedureActivityProcedure(
 			ReactionObservation reactionObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -1187,6 +1221,7 @@ public class ReactionObservationOperations extends ClinicalStatementOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_REACTION_OBSERVATION_MEDICATION_ACTIVITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -1199,6 +1234,7 @@ public class ReactionObservationOperations extends ClinicalStatementOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateReactionObservationMedicationActivity(ReactionObservation reactionObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -1251,6 +1287,7 @@ public class ReactionObservationOperations extends ClinicalStatementOperations {
 	 * <!-- end-user-doc -->
 	* @generated
 	*/
+
 	public static SeverityObservation getSeverityObservation(ReactionObservation reactionObservation) {
 		if (GET_SEVERITY_OBSERVATION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
@@ -1292,6 +1329,7 @@ public class ReactionObservationOperations extends ClinicalStatementOperations {
 	 * <!-- end-user-doc -->
 	* @generated
 	*/
+
 	public static EList<ProcedureActivityProcedure> getProcedureActivityProcedures(
 			ReactionObservation reactionObservation) {
 		if (GET_PROCEDURE_ACTIVITY_PROCEDURES__EOCL_QRY == null) {
@@ -1336,6 +1374,7 @@ public class ReactionObservationOperations extends ClinicalStatementOperations {
 	 * <!-- end-user-doc -->
 	* @generated
 	*/
+
 	public static EList<MedicationActivity> getMedicationActivities(ReactionObservation reactionObservation) {
 		if (GET_MEDICATION_ACTIVITIES__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();

@@ -62,7 +62,7 @@ public class EncountersSectionOperations extends EncountersSectionEntriesOptiona
 	/**
 	* The cached OCL expression body for the '{@link #validateEncountersSectionCodeP(EncountersSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Encounters Section Code P</em>}' operation.
 	* <!-- begin-user-doc -->
-	* <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	* @see #validateEncountersSectionCodeP(EncountersSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	* @generated
 	* @ordered
@@ -331,6 +331,7 @@ public class EncountersSectionOperations extends EncountersSectionEntriesOptiona
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_ENCOUNTERS_SECTION_ENCOUNTER_ACTIVITIES__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -343,6 +344,7 @@ public class EncountersSectionOperations extends EncountersSectionEntriesOptiona
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateEncountersSectionEncounterActivities(EncountersSection encountersSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -395,6 +397,7 @@ public class EncountersSectionOperations extends EncountersSectionEntriesOptiona
 	 * <!-- end-user-doc -->
 	* @generated
 	*/
+
 	public static EList<EncounterActivities> getConsolEncounterActivitiess(EncountersSection encountersSection) {
 		if (GET_CONSOL_ENCOUNTER_ACTIVITIESS__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
@@ -431,6 +434,7 @@ public class EncountersSectionOperations extends EncountersSectionEntriesOptiona
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_ENCOUNTERS_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -443,6 +447,7 @@ public class EncountersSectionOperations extends EncountersSectionEntriesOptiona
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateEncountersSectionEntriesOptionalTemplateId(EncountersSection encountersSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 

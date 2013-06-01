@@ -68,7 +68,7 @@ public class VitalSignObservationOperations extends ClinicalStatementOperations 
 	/**
 	* The cached OCL expression body for the '{@link #validateVitalSignObservationTextReference(VitalSignObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Vital Sign Observation Text Reference</em>}' operation.
 	* <!-- begin-user-doc -->
-	* <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	* @see #validateVitalSignObservationTextReference(VitalSignObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	* @generated
 	* @ordered
@@ -260,6 +260,7 @@ public class VitalSignObservationOperations extends ClinicalStatementOperations 
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_VITAL_SIGN_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -272,6 +273,7 @@ public class VitalSignObservationOperations extends ClinicalStatementOperations 
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateVitalSignObservationTemplateId(VitalSignObservation vitalSignObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -317,6 +319,7 @@ public class VitalSignObservationOperations extends ClinicalStatementOperations 
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_VITAL_SIGN_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -329,6 +332,7 @@ public class VitalSignObservationOperations extends ClinicalStatementOperations 
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateVitalSignObservationClassCode(VitalSignObservation vitalSignObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -374,6 +378,7 @@ public class VitalSignObservationOperations extends ClinicalStatementOperations 
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_VITAL_SIGN_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -386,6 +391,7 @@ public class VitalSignObservationOperations extends ClinicalStatementOperations 
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateVitalSignObservationMoodCode(VitalSignObservation vitalSignObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -431,6 +437,7 @@ public class VitalSignObservationOperations extends ClinicalStatementOperations 
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_VITAL_SIGN_OBSERVATION_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -443,6 +450,7 @@ public class VitalSignObservationOperations extends ClinicalStatementOperations 
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateVitalSignObservationId(VitalSignObservation vitalSignObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -472,7 +480,7 @@ public class VitalSignObservationOperations extends ClinicalStatementOperations 
 	/**
 	* The cached OCL expression body for the '{@link #validateVitalSignObservationCodeP(VitalSignObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Vital Sign Observation Code P</em>}' operation.
 	* <!-- begin-user-doc -->
-	* <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	* @see #validateVitalSignObservationCodeP(VitalSignObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	* @generated
 	* @ordered
@@ -626,6 +634,7 @@ public class VitalSignObservationOperations extends ClinicalStatementOperations 
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_VITAL_SIGN_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -638,6 +647,7 @@ public class VitalSignObservationOperations extends ClinicalStatementOperations 
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateVitalSignObservationStatusCode(VitalSignObservation vitalSignObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -683,6 +693,7 @@ public class VitalSignObservationOperations extends ClinicalStatementOperations 
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_VITAL_SIGN_OBSERVATION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -695,6 +706,7 @@ public class VitalSignObservationOperations extends ClinicalStatementOperations 
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateVitalSignObservationEffectiveTime(VitalSignObservation vitalSignObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -740,6 +752,7 @@ public class VitalSignObservationOperations extends ClinicalStatementOperations 
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_VITAL_SIGN_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -752,6 +765,7 @@ public class VitalSignObservationOperations extends ClinicalStatementOperations 
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateVitalSignObservationValue(VitalSignObservation vitalSignObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -796,6 +810,7 @@ public class VitalSignObservationOperations extends ClinicalStatementOperations 
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_VITAL_SIGN_OBSERVATION_INTERPRETATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -808,6 +823,7 @@ public class VitalSignObservationOperations extends ClinicalStatementOperations 
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateVitalSignObservationInterpretationCode(VitalSignObservation vitalSignObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -853,6 +869,7 @@ public class VitalSignObservationOperations extends ClinicalStatementOperations 
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_VITAL_SIGN_OBSERVATION_METHOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -865,6 +882,7 @@ public class VitalSignObservationOperations extends ClinicalStatementOperations 
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateVitalSignObservationMethodCode(VitalSignObservation vitalSignObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -910,6 +928,7 @@ public class VitalSignObservationOperations extends ClinicalStatementOperations 
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_VITAL_SIGN_OBSERVATION_TARGET_SITE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -922,6 +941,7 @@ public class VitalSignObservationOperations extends ClinicalStatementOperations 
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateVitalSignObservationTargetSiteCode(VitalSignObservation vitalSignObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -967,6 +987,7 @@ public class VitalSignObservationOperations extends ClinicalStatementOperations 
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_VITAL_SIGN_OBSERVATION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -979,6 +1000,7 @@ public class VitalSignObservationOperations extends ClinicalStatementOperations 
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateVitalSignObservationText(VitalSignObservation vitalSignObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -1023,6 +1045,7 @@ public class VitalSignObservationOperations extends ClinicalStatementOperations 
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_VITAL_SIGN_OBSERVATION_AUTHOR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -1035,6 +1058,7 @@ public class VitalSignObservationOperations extends ClinicalStatementOperations 
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateVitalSignObservationAuthor(VitalSignObservation vitalSignObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 

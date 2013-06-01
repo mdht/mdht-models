@@ -80,6 +80,7 @@ public class VitalSignsOrganizerOperations extends OrganizerOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_VITAL_SIGNS_ORGANIZER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -92,6 +93,7 @@ public class VitalSignsOrganizerOperations extends OrganizerOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateVitalSignsOrganizerTemplateId(VitalSignsOrganizer vitalSignsOrganizer,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -137,6 +139,7 @@ public class VitalSignsOrganizerOperations extends OrganizerOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_VITAL_SIGNS_ORGANIZER_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -149,6 +152,7 @@ public class VitalSignsOrganizerOperations extends OrganizerOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateVitalSignsOrganizerClassCode(VitalSignsOrganizer vitalSignsOrganizer,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -194,6 +198,7 @@ public class VitalSignsOrganizerOperations extends OrganizerOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_VITAL_SIGNS_ORGANIZER_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -206,6 +211,7 @@ public class VitalSignsOrganizerOperations extends OrganizerOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateVitalSignsOrganizerMoodCode(VitalSignsOrganizer vitalSignsOrganizer,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -251,6 +257,7 @@ public class VitalSignsOrganizerOperations extends OrganizerOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_VITAL_SIGNS_ORGANIZER_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -263,6 +270,7 @@ public class VitalSignsOrganizerOperations extends OrganizerOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateVitalSignsOrganizerId(VitalSignsOrganizer vitalSignsOrganizer,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -309,6 +317,7 @@ public class VitalSignsOrganizerOperations extends OrganizerOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_VITAL_SIGNS_ORGANIZER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -321,6 +330,7 @@ public class VitalSignsOrganizerOperations extends OrganizerOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateVitalSignsOrganizerCode(VitalSignsOrganizer vitalSignsOrganizer,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -366,6 +376,7 @@ public class VitalSignsOrganizerOperations extends OrganizerOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_VITAL_SIGNS_ORGANIZER_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -378,6 +389,7 @@ public class VitalSignsOrganizerOperations extends OrganizerOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateVitalSignsOrganizerStatusCode(VitalSignsOrganizer vitalSignsOrganizer,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -423,6 +435,7 @@ public class VitalSignsOrganizerOperations extends OrganizerOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_VITAL_SIGNS_ORGANIZER_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -435,6 +448,7 @@ public class VitalSignsOrganizerOperations extends OrganizerOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateVitalSignsOrganizerEffectiveTime(VitalSignsOrganizer vitalSignsOrganizer,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -480,6 +494,7 @@ public class VitalSignsOrganizerOperations extends OrganizerOperations {
 	* @generated
 	* @ordered
 	*/
+
 	protected static Constraint VALIDATE_VITAL_SIGNS_ORGANIZER_VITAL_SIGN_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -492,6 +507,7 @@ public class VitalSignsOrganizerOperations extends OrganizerOperations {
 	* <!-- end-model-doc -->
 	* @generated
 	*/
+
 	public static boolean validateVitalSignsOrganizerVitalSignObservation(VitalSignsOrganizer vitalSignsOrganizer,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -544,6 +560,7 @@ public class VitalSignsOrganizerOperations extends OrganizerOperations {
 	 * <!-- end-user-doc -->
 	* @generated
 	*/
+
 	public static EList<VitalSignObservation> getVitalSignObservations(VitalSignsOrganizer vitalSignsOrganizer) {
 		if (GET_VITAL_SIGN_OBSERVATIONS__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
