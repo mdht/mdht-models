@@ -21,7 +21,6 @@ import org.openhealthtools.mdht.uml.cda.emspcr.EmspcrPackage;
 import org.openhealthtools.mdht.uml.cda.emspcr.operations.EMSVitalSignsSectionOperations;
 
 import org.openhealthtools.mdht.uml.cda.impl.SectionImpl;
-import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 
 /**
  * <!-- begin-user-doc -->
@@ -34,86 +33,85 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  */
 public class EMSVitalSignsSectionImpl extends SectionImpl implements EMSVitalSignsSection {
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	protected EMSVitalSignsSectionImpl() {
-    super();
-  }
+		super();
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	@Override
 	protected EClass eStaticClass() {
-    return EmspcrPackage.Literals.EMS_VITAL_SIGNS_SECTION;
-  }
+		return EmspcrPackage.Literals.EMS_VITAL_SIGNS_SECTION;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public boolean validateEMSVitalSignsSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return EMSVitalSignsSectionOperations.validateEMSVitalSignsSectionTemplateId(this, diagnostics, context);
-  }
+		return EMSVitalSignsSectionOperations.validateEMSVitalSignsSectionTemplateId(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public boolean validateEMSVitalSignsSectionCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return EMSVitalSignsSectionOperations.validateEMSVitalSignsSectionCode(this, diagnostics, context);
-  }
+		return EMSVitalSignsSectionOperations.validateEMSVitalSignsSectionCode(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public boolean validateEMSVitalSignsSectionTitle(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return EMSVitalSignsSectionOperations.validateEMSVitalSignsSectionTitle(this, diagnostics, context);
-  }
+		return EMSVitalSignsSectionOperations.validateEMSVitalSignsSectionTitle(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public boolean validateEMSVitalSignsSectionText(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return EMSVitalSignsSectionOperations.validateEMSVitalSignsSectionText(this, diagnostics, context);
-  }
+		return EMSVitalSignsSectionOperations.validateEMSVitalSignsSectionText(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public boolean validateEMSVitalSignsSectionEntry1(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return EMSVitalSignsSectionOperations.validateEMSVitalSignsSectionEntry1(this, diagnostics, context);
-  }
+		return EMSVitalSignsSectionOperations.validateEMSVitalSignsSectionEntry1(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public void getEntry1s()
-  {
-    EMSVitalSignsSectionOperations.getEntry1s(this);
-  }
-
-  /**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public EMSVitalSignsSection init() {
-    	CDAUtil.init(this);
-    	return this;
-  }
+		return Initializer.Util.init(this);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	   * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EMSVitalSignsSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+		Initializer.Util.init(this, initializers);
+		return this;
+	}
 } // EMSVitalSignsSectionImpl

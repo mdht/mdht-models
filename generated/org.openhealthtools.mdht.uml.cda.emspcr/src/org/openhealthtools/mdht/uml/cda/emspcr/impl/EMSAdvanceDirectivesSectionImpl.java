@@ -21,7 +21,6 @@ import org.openhealthtools.mdht.uml.cda.emspcr.EmspcrPackage;
 import org.openhealthtools.mdht.uml.cda.emspcr.operations.EMSAdvanceDirectivesSectionOperations;
 
 import org.openhealthtools.mdht.uml.cda.impl.SectionImpl;
-import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 
 /**
  * <!-- begin-user-doc -->
@@ -34,87 +33,145 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  */
 public class EMSAdvanceDirectivesSectionImpl extends SectionImpl implements EMSAdvanceDirectivesSection {
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	protected EMSAdvanceDirectivesSectionImpl() {
-    super();
-  }
+		super();
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	@Override
 	protected EClass eStaticClass() {
-    return EmspcrPackage.Literals.EMS_ADVANCE_DIRECTIVES_SECTION;
-  }
+		return EmspcrPackage.Literals.EMS_ADVANCE_DIRECTIVES_SECTION;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public boolean validateEMSAdvanceDirectivesSectionTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-    return EMSAdvanceDirectivesSectionOperations.validateEMSAdvanceDirectivesSectionTemplateId(this, diagnostics, context);
-  }
+		return EMSAdvanceDirectivesSectionOperations.validateEMSAdvanceDirectivesSectionTemplateId(
+			this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public boolean validateEMSAdvanceDirectivesSectionCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return EMSAdvanceDirectivesSectionOperations.validateEMSAdvanceDirectivesSectionCode(this, diagnostics, context);
-  }
+		return EMSAdvanceDirectivesSectionOperations.validateEMSAdvanceDirectivesSectionCode(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public boolean validateEMSAdvanceDirectivesSectionTitle(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return EMSAdvanceDirectivesSectionOperations.validateEMSAdvanceDirectivesSectionTitle(this, diagnostics, context);
-  }
+		return EMSAdvanceDirectivesSectionOperations.validateEMSAdvanceDirectivesSectionTitle(
+			this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public boolean validateEMSAdvanceDirectivesSectionText(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return EMSAdvanceDirectivesSectionOperations.validateEMSAdvanceDirectivesSectionText(this, diagnostics, context);
-  }
+		return EMSAdvanceDirectivesSectionOperations.validateEMSAdvanceDirectivesSectionText(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-   * @generated
-   */
-	public boolean validateEMSAdvanceDirectivesSectionEntry1(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return EMSAdvanceDirectivesSectionOperations.validateEMSAdvanceDirectivesSectionEntry1(this, diagnostics, context);
-  }
+	* <!-- begin-user-doc -->
+	* <!-- end-user-doc -->
+	* @generated
+	*/
+	public boolean validateEMSAdvanceDirectivesSectionEMSAdvancedDirectiveEntryEMSAdvancedDirectiveObservationTemplateId(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return EMSAdvanceDirectivesSectionOperations.validateEMSAdvanceDirectivesSectionEMSAdvancedDirectiveEntryEMSAdvancedDirectiveObservationTemplateId(
+			this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public void getEntry1()
-  {
-    EMSAdvanceDirectivesSectionOperations.getEntry1(this);
-  }
-
-  /**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
+	public boolean validateEMSAdvanceDirectivesSectionEMSAdvancedDirectiveEntryEMSAdvancedDirectiveObservationCode(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return EMSAdvanceDirectivesSectionOperations.validateEMSAdvanceDirectivesSectionEMSAdvancedDirectiveEntryEMSAdvancedDirectiveObservationCode(
+			this, diagnostics, context);
+	}
+
+	/**
+	* <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	* @generated
+	*/
+	public boolean validateEMSAdvanceDirectivesSectionEMSAdvancedDirectiveEntryEMSAdvancedDirectiveObservationValue(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return EMSAdvanceDirectivesSectionOperations.validateEMSAdvanceDirectivesSectionEMSAdvancedDirectiveEntryEMSAdvancedDirectiveObservationValue(
+			this, diagnostics, context);
+	}
+
+	/**
+	* <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	* @generated
+	*/
+	public boolean validateEMSAdvanceDirectivesSectionEMSAdvancedDirectiveEntryEMSAdvancedDirectiveObservationValueP(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return EMSAdvanceDirectivesSectionOperations.validateEMSAdvanceDirectivesSectionEMSAdvancedDirectiveEntryEMSAdvancedDirectiveObservationValueP(
+			this, diagnostics, context);
+	}
+
+	/**
+	* <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	* @generated
+	*/
+	public boolean validateEMSAdvanceDirectivesSectionEMSAdvancedDirectiveEntryEMSAdvancedDirectiveObservationMoodCode(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return EMSAdvanceDirectivesSectionOperations.validateEMSAdvanceDirectivesSectionEMSAdvancedDirectiveEntryEMSAdvancedDirectiveObservationMoodCode(
+			this, diagnostics, context);
+	}
+
+	/**
+	* <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	* @generated
+	*/
+	public boolean validateEMSAdvanceDirectivesSectionEMSAdvancedDirectiveEntryEMSAdvancedDirectiveObservation(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return EMSAdvanceDirectivesSectionOperations.validateEMSAdvanceDirectivesSectionEMSAdvancedDirectiveEntryEMSAdvancedDirectiveObservation(
+			this, diagnostics, context);
+	}
+
+	/**
+	* <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	* @generated
+	*/
 	public EMSAdvanceDirectivesSection init() {
-    	CDAUtil.init(this);
-    	return this;
-  }
+		return Initializer.Util.init(this);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	   * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EMSAdvanceDirectivesSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+		Initializer.Util.init(this, initializers);
+		return this;
+	}
 } // EMSAdvanceDirectivesSectionImpl

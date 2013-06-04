@@ -21,7 +21,6 @@ import org.openhealthtools.mdht.uml.cda.emspcr.EmspcrPackage;
 import org.openhealthtools.mdht.uml.cda.emspcr.operations.EMSSituationSectionOperations;
 
 import org.openhealthtools.mdht.uml.cda.impl.SectionImpl;
-import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 
 /**
  * <!-- begin-user-doc -->
@@ -34,209 +33,148 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  */
 public class EMSSituationSectionImpl extends SectionImpl implements EMSSituationSection {
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	protected EMSSituationSectionImpl() {
-    super();
-  }
+		super();
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	@Override
 	protected EClass eStaticClass() {
-    return EmspcrPackage.Literals.EMS_SITUATION_SECTION;
-  }
+		return EmspcrPackage.Literals.EMS_SITUATION_SECTION;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public boolean validateEMSSituationSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return EMSSituationSectionOperations.validateEMSSituationSectionTemplateId(this, diagnostics, context);
-  }
+		return EMSSituationSectionOperations.validateEMSSituationSectionTemplateId(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public boolean validateEMSSituationSectionCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return EMSSituationSectionOperations.validateEMSSituationSectionCode(this, diagnostics, context);
-  }
+		return EMSSituationSectionOperations.validateEMSSituationSectionCode(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public boolean validateEMSSituationSectionCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return EMSSituationSectionOperations.validateEMSSituationSectionCodeP(this, diagnostics, context);
-  }
+		return EMSSituationSectionOperations.validateEMSSituationSectionCodeP(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public boolean validateEMSSituationSectionText(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return EMSSituationSectionOperations.validateEMSSituationSectionText(this, diagnostics, context);
-  }
+		return EMSSituationSectionOperations.validateEMSSituationSectionText(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public boolean validateEMSSituationSectionTitle(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return EMSSituationSectionOperations.validateEMSSituationSectionTitle(this, diagnostics, context);
-  }
+		return EMSSituationSectionOperations.validateEMSSituationSectionTitle(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public boolean validateEMSSituationSectionEntry1(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return EMSSituationSectionOperations.validateEMSSituationSectionEntry1(this, diagnostics, context);
-  }
+		return EMSSituationSectionOperations.validateEMSSituationSectionEntry1(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public boolean validateEMSSituationSectionEntry3(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return EMSSituationSectionOperations.validateEMSSituationSectionEntry3(this, diagnostics, context);
-  }
+		return EMSSituationSectionOperations.validateEMSSituationSectionEntry3(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public boolean validateEMSSituationSectionEntry4(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return EMSSituationSectionOperations.validateEMSSituationSectionEntry4(this, diagnostics, context);
-  }
+		return EMSSituationSectionOperations.validateEMSSituationSectionEntry4(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public boolean validateEMSSituationSectionEntry5(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return EMSSituationSectionOperations.validateEMSSituationSectionEntry5(this, diagnostics, context);
-  }
+		return EMSSituationSectionOperations.validateEMSSituationSectionEntry5(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public boolean validateEMSSituationSectionEntry6(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return EMSSituationSectionOperations.validateEMSSituationSectionEntry6(this, diagnostics, context);
-  }
+		return EMSSituationSectionOperations.validateEMSSituationSectionEntry6(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public boolean validateEMSSituationSectionEntry7(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return EMSSituationSectionOperations.validateEMSSituationSectionEntry7(this, diagnostics, context);
-  }
+		return EMSSituationSectionOperations.validateEMSSituationSectionEntry7(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public boolean validateEMSSituationSectionEntry8(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return EMSSituationSectionOperations.validateEMSSituationSectionEntry8(this, diagnostics, context);
-  }
+		return EMSSituationSectionOperations.validateEMSSituationSectionEntry8(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public void getEntry1()
-  {
-    EMSSituationSectionOperations.getEntry1(this);
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public void getEntry3()
-  {
-    EMSSituationSectionOperations.getEntry3(this);
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public void getEntry4()
-  {
-    EMSSituationSectionOperations.getEntry4(this);
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public void getEntry5()
-  {
-    EMSSituationSectionOperations.getEntry5(this);
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public void getEntry6()
-  {
-    EMSSituationSectionOperations.getEntry6(this);
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public void getEntry7()
-  {
-    EMSSituationSectionOperations.getEntry7(this);
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public void getEntry8()
-  {
-    EMSSituationSectionOperations.getEntry8(this);
-  }
-
-  /**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public EMSSituationSection init() {
-    	CDAUtil.init(this);
-    	return this;
-  }
+		return Initializer.Util.init(this);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	   * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EMSSituationSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+		Initializer.Util.init(this, initializers);
+		return this;
+	}
 } // EMSSituationSectionImpl

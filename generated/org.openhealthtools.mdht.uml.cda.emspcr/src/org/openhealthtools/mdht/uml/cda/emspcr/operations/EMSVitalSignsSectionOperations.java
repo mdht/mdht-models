@@ -12,13 +12,11 @@ import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
 
-import org.eclipse.emf.ecore.EClassifier;
 import org.eclipse.ocl.ParserException;
 
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
 
-import org.eclipse.ocl.expressions.OCLExpression;
 import org.openhealthtools.mdht.uml.cda.emspcr.EMSVitalSignsSection;
 import org.openhealthtools.mdht.uml.cda.emspcr.EmspcrPackage;
 import org.openhealthtools.mdht.uml.cda.emspcr.EmspcrPlugin;
@@ -40,7 +38,6 @@ import org.openhealthtools.mdht.uml.cda.operations.SectionOperations;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.emspcr.EMSVitalSignsSection#validateEMSVitalSignsSectionTitle(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate EMS Vital Signs Section Title</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.emspcr.EMSVitalSignsSection#validateEMSVitalSignsSectionText(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate EMS Vital Signs Section Text</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.emspcr.EMSVitalSignsSection#validateEMSVitalSignsSectionEntry1(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate EMS Vital Signs Section Entry1</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.emspcr.EMSVitalSignsSection#getEntry1() <em>Get Entry1</em>}</li>
  * </ul>
  * </p>
  *
@@ -48,394 +45,306 @@ import org.openhealthtools.mdht.uml.cda.operations.SectionOperations;
  */
 public class EMSVitalSignsSectionOperations extends SectionOperations {
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	protected EMSVitalSignsSectionOperations() {
-    super();
-  }
+		super();
+	}
 
 	/**
-   * The cached OCL expression body for the '{@link #validateEMSVitalSignsSectionTemplateId(EMSVitalSignsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate EMS Vital Signs Section Template Id</em>}' operation.
-   * <!-- begin-user-doc -->
+	* The cached OCL expression body for the '{@link #validateEMSVitalSignsSectionTemplateId(EMSVitalSignsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate EMS Vital Signs Section Template Id</em>}' operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @see #validateEMSVitalSignsSectionTemplateId(EMSVitalSignsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-   * @generated
-   * @ordered
-   */
+	* @see #validateEMSVitalSignsSectionTemplateId(EMSVitalSignsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 	protected static final String VALIDATE_EMS_VITAL_SIGNS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.17.3.10.1.23')";
 
 	/**
-   * The cached OCL invariant for the '{@link #validateEMSVitalSignsSectionTemplateId(EMSVitalSignsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate EMS Vital Signs Section Template Id</em>}' invariant operation.
-   * <!-- begin-user-doc -->
+	* The cached OCL invariant for the '{@link #validateEMSVitalSignsSectionTemplateId(EMSVitalSignsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate EMS Vital Signs Section Template Id</em>}' invariant operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @see #validateEMSVitalSignsSectionTemplateId(EMSVitalSignsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-   * @generated
-   * @ordered
-   */
+	* @see #validateEMSVitalSignsSectionTemplateId(EMSVitalSignsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 
 	protected static Constraint VALIDATE_EMS_VITAL_SIGNS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * <!-- begin-model-doc -->
-   * self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.17.3.10.1.23')
-   * @param emsVitalSignsSection The receiving '<em><b>EMS Vital Signs Section</b></em>' model object.
-   * @param diagnostics The chain of diagnostics to which problems are to be appended.
-   * @param context The cache of context-specific information.
-   * <!-- end-model-doc -->
-   * @generated
-   */
+	* <!-- begin-model-doc -->
+	* @param emsVitalSignsSection The receiving '<em><b>EMS Vital Signs Section</b></em>' model object.
+	* @param diagnostics The chain of diagnostics to which problems are to be appended.
+	* @param context The cache of context-specific information.
+	* <!-- end-model-doc -->
+	* @generated
+	*/
 
 	public static boolean validateEMSVitalSignsSectionTemplateId(EMSVitalSignsSection emsVitalSignsSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
-    if (VALIDATE_EMS_VITAL_SIGNS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-      OCL.Helper helper = EOCL_ENV.createOCLHelper();
-      helper.setContext(EmspcrPackage.Literals.EMS_VITAL_SIGNS_SECTION);
-      try
-      {
-        VALIDATE_EMS_VITAL_SIGNS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_EMS_VITAL_SIGNS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-      }
-      catch (ParserException pe)
-      {
-        throw new UnsupportedOperationException(pe.getLocalizedMessage());
-      }
-    }
-    if (!EOCL_ENV.createQuery(VALIDATE_EMS_VITAL_SIGNS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(emsVitalSignsSection))
-    {
-      if (diagnostics != null)
-      {
-        diagnostics.add
-          (new BasicDiagnostic
-            (Diagnostic.ERROR,
-             EmspcrValidator.DIAGNOSTIC_SOURCE,
-             EmspcrValidator.EMS_VITAL_SIGNS_SECTION__EMS_VITAL_SIGNS_SECTION_TEMPLATE_ID,
-             EmspcrPlugin.INSTANCE.getString("EMSVitalSignsSectionTemplateId"),
-             new Object [] { emsVitalSignsSection }));
-      }
-       
-      return false;
-    }
-    return true;
-  }
+
+		if (VALIDATE_EMS_VITAL_SIGNS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setContext(EmspcrPackage.Literals.EMS_VITAL_SIGNS_SECTION);
+			try {
+				VALIDATE_EMS_VITAL_SIGNS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_EMS_VITAL_SIGNS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+			} catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		if (!EOCL_ENV.createQuery(VALIDATE_EMS_VITAL_SIGNS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			emsVitalSignsSection)) {
+			if (diagnostics != null) {
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.EMS_VITAL_SIGNS_SECTION__EMS_VITAL_SIGNS_SECTION_TEMPLATE_ID,
+					EmspcrPlugin.INSTANCE.getString("EMSVitalSignsSectionTemplateId"),
+					new Object[] { emsVitalSignsSection }));
+			}
+
+			return false;
+		}
+		return true;
+	}
 
 	/**
-   * The cached OCL expression body for the '{@link #validateEMSVitalSignsSectionCode(EMSVitalSignsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate EMS Vital Signs Section Code</em>}' operation.
-   * <!-- begin-user-doc -->
+	* The cached OCL expression body for the '{@link #validateEMSVitalSignsSectionCode(EMSVitalSignsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate EMS Vital Signs Section Code</em>}' operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @see #validateEMSVitalSignsSectionCode(EMSVitalSignsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-   * @generated
-   * @ordered
-   */
-	protected static final String VALIDATE_EMS_VITAL_SIGNS_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and "+
-"let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in "+
-"value.code = '67801-1' and value.codeSystem = '2.16.840.1.113883.6.1')";
+	* @see #validateEMSVitalSignsSectionCode(EMSVitalSignsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
+	protected static final String VALIDATE_EMS_VITAL_SIGNS_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and "
+			+ "let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in "
+			+ "value.code = '67801-1' and value.codeSystem = '2.16.840.1.113883.6.1')";
 
 	/**
-   * The cached OCL invariant for the '{@link #validateEMSVitalSignsSectionCode(EMSVitalSignsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate EMS Vital Signs Section Code</em>}' invariant operation.
-   * <!-- begin-user-doc -->
+	* The cached OCL invariant for the '{@link #validateEMSVitalSignsSectionCode(EMSVitalSignsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate EMS Vital Signs Section Code</em>}' invariant operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @see #validateEMSVitalSignsSectionCode(EMSVitalSignsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-   * @generated
-   * @ordered
-   */
+	* @see #validateEMSVitalSignsSectionCode(EMSVitalSignsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 
 	protected static Constraint VALIDATE_EMS_VITAL_SIGNS_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * <!-- begin-model-doc -->
-   * (self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and 
-   * let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in 
-   * value.code = '67801-1' and value.codeSystem = '2.16.840.1.113883.6.1')
-   * @param emsVitalSignsSection The receiving '<em><b>EMS Vital Signs Section</b></em>' model object.
-   * @param diagnostics The chain of diagnostics to which problems are to be appended.
-   * @param context The cache of context-specific information.
-   * <!-- end-model-doc -->
-   * @generated
-   */
+	* <!-- begin-model-doc -->
+	* @param emsVitalSignsSection The receiving '<em><b>EMS Vital Signs Section</b></em>' model object.
+	* @param diagnostics The chain of diagnostics to which problems are to be appended.
+	* @param context The cache of context-specific information.
+	* <!-- end-model-doc -->
+	* @generated
+	*/
 
 	public static boolean validateEMSVitalSignsSectionCode(EMSVitalSignsSection emsVitalSignsSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
-    if (VALIDATE_EMS_VITAL_SIGNS_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-      OCL.Helper helper = EOCL_ENV.createOCLHelper();
-      helper.setContext(EmspcrPackage.Literals.EMS_VITAL_SIGNS_SECTION);
-      try
-      {
-        VALIDATE_EMS_VITAL_SIGNS_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_EMS_VITAL_SIGNS_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-      }
-      catch (ParserException pe)
-      {
-        throw new UnsupportedOperationException(pe.getLocalizedMessage());
-      }
-    }
-    if (!EOCL_ENV.createQuery(VALIDATE_EMS_VITAL_SIGNS_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(emsVitalSignsSection))
-    {
-      if (diagnostics != null)
-      {
-        diagnostics.add
-          (new BasicDiagnostic
-            (Diagnostic.ERROR,
-             EmspcrValidator.DIAGNOSTIC_SOURCE,
-             EmspcrValidator.EMS_VITAL_SIGNS_SECTION__EMS_VITAL_SIGNS_SECTION_CODE,
-             EmspcrPlugin.INSTANCE.getString("EMSVitalSignsSectionCode"),
-             new Object [] { emsVitalSignsSection }));
-      }
-       
-      return false;
-    }
-    return true;
-  }
+
+		if (VALIDATE_EMS_VITAL_SIGNS_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setContext(EmspcrPackage.Literals.EMS_VITAL_SIGNS_SECTION);
+			try {
+				VALIDATE_EMS_VITAL_SIGNS_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_EMS_VITAL_SIGNS_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+			} catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		if (!EOCL_ENV.createQuery(VALIDATE_EMS_VITAL_SIGNS_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			emsVitalSignsSection)) {
+			if (diagnostics != null) {
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.EMS_VITAL_SIGNS_SECTION__EMS_VITAL_SIGNS_SECTION_CODE,
+					EmspcrPlugin.INSTANCE.getString("EMSVitalSignsSectionCode"), new Object[] { emsVitalSignsSection }));
+			}
+
+			return false;
+		}
+		return true;
+	}
 
 	/**
-   * The cached OCL expression body for the '{@link #validateEMSVitalSignsSectionTitle(EMSVitalSignsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate EMS Vital Signs Section Title</em>}' operation.
-   * <!-- begin-user-doc -->
+	* The cached OCL expression body for the '{@link #validateEMSVitalSignsSectionTitle(EMSVitalSignsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate EMS Vital Signs Section Title</em>}' operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @see #validateEMSVitalSignsSectionTitle(EMSVitalSignsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-   * @generated
-   * @ordered
-   */
+	* @see #validateEMSVitalSignsSectionTitle(EMSVitalSignsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 	protected static final String VALIDATE_EMS_VITAL_SIGNS_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.title.oclIsUndefined() or self.title.isNullFlavorUndefined()) implies (not self.title.oclIsUndefined() and self.title.getText() = 'EMS Vital Signs')";
 
 	/**
-   * The cached OCL invariant for the '{@link #validateEMSVitalSignsSectionTitle(EMSVitalSignsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate EMS Vital Signs Section Title</em>}' invariant operation.
-   * <!-- begin-user-doc -->
+	* The cached OCL invariant for the '{@link #validateEMSVitalSignsSectionTitle(EMSVitalSignsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate EMS Vital Signs Section Title</em>}' invariant operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @see #validateEMSVitalSignsSectionTitle(EMSVitalSignsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-   * @generated
-   * @ordered
-   */
+	* @see #validateEMSVitalSignsSectionTitle(EMSVitalSignsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 
 	protected static Constraint VALIDATE_EMS_VITAL_SIGNS_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * <!-- begin-model-doc -->
-   * (self.title.oclIsUndefined() or self.title.isNullFlavorUndefined()) implies (not self.title.oclIsUndefined() and self.title.getText() = 'EMS Vital Signs')
-   * @param emsVitalSignsSection The receiving '<em><b>EMS Vital Signs Section</b></em>' model object.
-   * @param diagnostics The chain of diagnostics to which problems are to be appended.
-   * @param context The cache of context-specific information.
-   * <!-- end-model-doc -->
-   * @generated
-   */
+	* <!-- begin-model-doc -->
+	* @param emsVitalSignsSection The receiving '<em><b>EMS Vital Signs Section</b></em>' model object.
+	* @param diagnostics The chain of diagnostics to which problems are to be appended.
+	* @param context The cache of context-specific information.
+	* <!-- end-model-doc -->
+	* @generated
+	*/
 
 	public static boolean validateEMSVitalSignsSectionTitle(EMSVitalSignsSection emsVitalSignsSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
-    if (VALIDATE_EMS_VITAL_SIGNS_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-      OCL.Helper helper = EOCL_ENV.createOCLHelper();
-      helper.setContext(EmspcrPackage.Literals.EMS_VITAL_SIGNS_SECTION);
-      try
-      {
-        VALIDATE_EMS_VITAL_SIGNS_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_EMS_VITAL_SIGNS_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-      }
-      catch (ParserException pe)
-      {
-        throw new UnsupportedOperationException(pe.getLocalizedMessage());
-      }
-    }
-    if (!EOCL_ENV.createQuery(VALIDATE_EMS_VITAL_SIGNS_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(emsVitalSignsSection))
-    {
-      if (diagnostics != null)
-      {
-        diagnostics.add
-          (new BasicDiagnostic
-            (Diagnostic.ERROR,
-             EmspcrValidator.DIAGNOSTIC_SOURCE,
-             EmspcrValidator.EMS_VITAL_SIGNS_SECTION__EMS_VITAL_SIGNS_SECTION_TITLE,
-             EmspcrPlugin.INSTANCE.getString("EMSVitalSignsSectionTitle"),
-             new Object [] { emsVitalSignsSection }));
-      }
-       
-      return false;
-    }
-    return true;
-  }
+
+		if (VALIDATE_EMS_VITAL_SIGNS_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setContext(EmspcrPackage.Literals.EMS_VITAL_SIGNS_SECTION);
+			try {
+				VALIDATE_EMS_VITAL_SIGNS_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_EMS_VITAL_SIGNS_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+			} catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		if (!EOCL_ENV.createQuery(VALIDATE_EMS_VITAL_SIGNS_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			emsVitalSignsSection)) {
+			if (diagnostics != null) {
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.EMS_VITAL_SIGNS_SECTION__EMS_VITAL_SIGNS_SECTION_TITLE,
+					EmspcrPlugin.INSTANCE.getString("EMSVitalSignsSectionTitle"), new Object[] { emsVitalSignsSection }));
+			}
+
+			return false;
+		}
+		return true;
+	}
 
 	/**
-   * The cached OCL expression body for the '{@link #validateEMSVitalSignsSectionText(EMSVitalSignsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate EMS Vital Signs Section Text</em>}' operation.
-   * <!-- begin-user-doc -->
+	* The cached OCL expression body for the '{@link #validateEMSVitalSignsSectionText(EMSVitalSignsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate EMS Vital Signs Section Text</em>}' operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @see #validateEMSVitalSignsSectionText(EMSVitalSignsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-   * @generated
-   * @ordered
-   */
+	* @see #validateEMSVitalSignsSectionText(EMSVitalSignsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 	protected static final String VALIDATE_EMS_VITAL_SIGNS_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "not self.text.oclIsUndefined()";
 
 	/**
-   * The cached OCL invariant for the '{@link #validateEMSVitalSignsSectionText(EMSVitalSignsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate EMS Vital Signs Section Text</em>}' invariant operation.
-   * <!-- begin-user-doc -->
+	* The cached OCL invariant for the '{@link #validateEMSVitalSignsSectionText(EMSVitalSignsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate EMS Vital Signs Section Text</em>}' invariant operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @see #validateEMSVitalSignsSectionText(EMSVitalSignsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-   * @generated
-   * @ordered
-   */
+	* @see #validateEMSVitalSignsSectionText(EMSVitalSignsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 
 	protected static Constraint VALIDATE_EMS_VITAL_SIGNS_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * <!-- begin-model-doc -->
-   * not self.text.oclIsUndefined()
-   * @param emsVitalSignsSection The receiving '<em><b>EMS Vital Signs Section</b></em>' model object.
-   * @param diagnostics The chain of diagnostics to which problems are to be appended.
-   * @param context The cache of context-specific information.
-   * <!-- end-model-doc -->
-   * @generated
-   */
+	* <!-- begin-model-doc -->
+	* @param emsVitalSignsSection The receiving '<em><b>EMS Vital Signs Section</b></em>' model object.
+	* @param diagnostics The chain of diagnostics to which problems are to be appended.
+	* @param context The cache of context-specific information.
+	* <!-- end-model-doc -->
+	* @generated
+	*/
 
 	public static boolean validateEMSVitalSignsSectionText(EMSVitalSignsSection emsVitalSignsSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
-    if (VALIDATE_EMS_VITAL_SIGNS_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-      OCL.Helper helper = EOCL_ENV.createOCLHelper();
-      helper.setContext(EmspcrPackage.Literals.EMS_VITAL_SIGNS_SECTION);
-      try
-      {
-        VALIDATE_EMS_VITAL_SIGNS_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_EMS_VITAL_SIGNS_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-      }
-      catch (ParserException pe)
-      {
-        throw new UnsupportedOperationException(pe.getLocalizedMessage());
-      }
-    }
-    if (!EOCL_ENV.createQuery(VALIDATE_EMS_VITAL_SIGNS_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(emsVitalSignsSection))
-    {
-      if (diagnostics != null)
-      {
-        diagnostics.add
-          (new BasicDiagnostic
-            (Diagnostic.ERROR,
-             EmspcrValidator.DIAGNOSTIC_SOURCE,
-             EmspcrValidator.EMS_VITAL_SIGNS_SECTION__EMS_VITAL_SIGNS_SECTION_TEXT,
-             EmspcrPlugin.INSTANCE.getString("EMSVitalSignsSectionText"),
-             new Object [] { emsVitalSignsSection }));
-      }
-       
-      return false;
-    }
-    return true;
-  }
+
+		if (VALIDATE_EMS_VITAL_SIGNS_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setContext(EmspcrPackage.Literals.EMS_VITAL_SIGNS_SECTION);
+			try {
+				VALIDATE_EMS_VITAL_SIGNS_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_EMS_VITAL_SIGNS_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+			} catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		if (!EOCL_ENV.createQuery(VALIDATE_EMS_VITAL_SIGNS_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			emsVitalSignsSection)) {
+			if (diagnostics != null) {
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.EMS_VITAL_SIGNS_SECTION__EMS_VITAL_SIGNS_SECTION_TEXT,
+					EmspcrPlugin.INSTANCE.getString("EMSVitalSignsSectionText"), new Object[] { emsVitalSignsSection }));
+			}
+
+			return false;
+		}
+		return true;
+	}
 
 	/**
-   * The cached OCL expression body for the '{@link #validateEMSVitalSignsSectionEntry1(EMSVitalSignsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate EMS Vital Signs Section Entry1</em>}' operation.
-   * <!-- begin-user-doc -->
+	* The cached OCL expression body for the '{@link #validateEMSVitalSignsSectionEntry1(EMSVitalSignsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate EMS Vital Signs Section Entry1</em>}' operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @see #validateEMSVitalSignsSectionEntry1(EMSVitalSignsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-   * @generated
-   * @ordered
-   */
-	protected static final String VALIDATE_EMS_VITAL_SIGNS_SECTION_ENTRY1__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->one(entry : cda::Entry | not entry.oclIsUndefined() and entry.oclIsKindOf(emspcr::EMSVitalSignsSection::EMSVitalSignsEntry))";
+	* @see #validateEMSVitalSignsSectionEntry1(EMSVitalSignsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
+	protected static final String VALIDATE_EMS_VITAL_SIGNS_SECTION_ENTRY1__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->exists(entry : cda::Entry | not entry.oclIsUndefined() and entry.oclIsKindOf(emspcr::DerivedEntry))";
 
 	/**
-   * The cached OCL invariant for the '{@link #validateEMSVitalSignsSectionEntry1(EMSVitalSignsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate EMS Vital Signs Section Entry1</em>}' invariant operation.
-   * <!-- begin-user-doc -->
+	* The cached OCL invariant for the '{@link #validateEMSVitalSignsSectionEntry1(EMSVitalSignsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate EMS Vital Signs Section Entry1</em>}' invariant operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @see #validateEMSVitalSignsSectionEntry1(EMSVitalSignsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-   * @generated
-   * @ordered
-   */
+	* @see #validateEMSVitalSignsSectionEntry1(EMSVitalSignsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 
 	protected static Constraint VALIDATE_EMS_VITAL_SIGNS_SECTION_ENTRY1__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * <!-- begin-model-doc -->
-   * self.entry->one(entry : cda::Entry | not entry.oclIsUndefined() and entry.oclIsKindOf(emspcr::EMSVitalSignsSection::EMSVitalSignsEntry))
-   * @param emsVitalSignsSection The receiving '<em><b>EMS Vital Signs Section</b></em>' model object.
-   * @param diagnostics The chain of diagnostics to which problems are to be appended.
-   * @param context The cache of context-specific information.
-   * <!-- end-model-doc -->
-   * @generated
-   */
+	* <!-- begin-model-doc -->
+	* @param emsVitalSignsSection The receiving '<em><b>EMS Vital Signs Section</b></em>' model object.
+	* @param diagnostics The chain of diagnostics to which problems are to be appended.
+	* @param context The cache of context-specific information.
+	* <!-- end-model-doc -->
+	* @generated
+	*/
 
 	public static boolean validateEMSVitalSignsSectionEntry1(EMSVitalSignsSection emsVitalSignsSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
-    if (VALIDATE_EMS_VITAL_SIGNS_SECTION_ENTRY1__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-      OCL.Helper helper = EOCL_ENV.createOCLHelper();
-      helper.setContext(EmspcrPackage.Literals.EMS_VITAL_SIGNS_SECTION);
-      try
-      {
-        VALIDATE_EMS_VITAL_SIGNS_SECTION_ENTRY1__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_EMS_VITAL_SIGNS_SECTION_ENTRY1__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-      }
-      catch (ParserException pe)
-      {
-        throw new UnsupportedOperationException(pe.getLocalizedMessage());
-      }
-    }
-    if (!EOCL_ENV.createQuery(VALIDATE_EMS_VITAL_SIGNS_SECTION_ENTRY1__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(emsVitalSignsSection))
-    {
-      if (diagnostics != null)
-      {
-        diagnostics.add
-          (new BasicDiagnostic
-            (Diagnostic.ERROR,
-             EmspcrValidator.DIAGNOSTIC_SOURCE,
-             EmspcrValidator.EMS_VITAL_SIGNS_SECTION__EMS_VITAL_SIGNS_SECTION_ENTRY1,
-             EmspcrPlugin.INSTANCE.getString("EMSVitalSignsSectionEntry1"),
-             new Object [] { emsVitalSignsSection }));
-      }
-       
-      return false;
-    }
-    return true;
-  }
 
-  /**
-   * The cached OCL expression body for the '{@link #getEntry1(EMSVitalSignsSection) <em>Get Entry1</em>}' operation.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #getEntry1(EMSVitalSignsSection)
-   * @generated
-   * @ordered
-   */
-  protected static final String GET_ENTRY1__EOCL_EXP = "self.getEntries()->select(entry : cda::Entry | not entry.oclIsUndefined() and entry.oclIsKindOf(emspcr::EMSVitalSignsSection::EMSVitalSignsEntry))->asSequence()->first().oclAsType(emspcr::EMSVitalSignsSection::EMSVitalSignsEntry)";
+		if (VALIDATE_EMS_VITAL_SIGNS_SECTION_ENTRY1__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setContext(EmspcrPackage.Literals.EMS_VITAL_SIGNS_SECTION);
+			try {
+				VALIDATE_EMS_VITAL_SIGNS_SECTION_ENTRY1__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_EMS_VITAL_SIGNS_SECTION_ENTRY1__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+			} catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		if (!EOCL_ENV.createQuery(VALIDATE_EMS_VITAL_SIGNS_SECTION_ENTRY1__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			emsVitalSignsSection)) {
+			if (diagnostics != null) {
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.EMS_VITAL_SIGNS_SECTION__EMS_VITAL_SIGNS_SECTION_ENTRY1,
+					EmspcrPlugin.INSTANCE.getString("EMSVitalSignsSectionEntry1"),
+					new Object[] { emsVitalSignsSection }));
+			}
 
-  /**
-   * The cached OCL query for the '{@link #getEntry1(EMSVitalSignsSection) <em>Get Entry1</em>}' query operation.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #getEntry1(EMSVitalSignsSection)
-   * @generated
-   * @ordered
-   */
-  protected static OCLExpression<EClassifier> GET_ENTRY1__EOCL_QRY;
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * <!-- begin-model-doc -->
-   * self.getEntries()->select(entry : cda::Entry | not entry.oclIsUndefined() and entry.oclIsKindOf(emspcr::EMSVitalSignsSection::EMSVitalSignsEntry))->asSequence()->first().oclAsType(emspcr::EMSVitalSignsSection::EMSVitalSignsEntry)
-   * @param emsVitalSignsSection The receiving '<em><b>EMS Vital Signs Section</b></em>' model object.
-   * <!-- end-model-doc -->
-   * @generated
-   */
-  public static  void getEntry1(EMSVitalSignsSection emsVitalSignsSection)
-  {
-    if (GET_ENTRY1__EOCL_QRY == null)
-    {
-      OCL.Helper helper = EOCL_ENV.createOCLHelper();
-      helper.setOperationContext(EmspcrPackage.Literals.EMS_VITAL_SIGNS_SECTION, EmspcrPackage.Literals.EMS_VITAL_SIGNS_SECTION.getEAllOperations().get(60));
-      try
-      {
-        GET_ENTRY1__EOCL_QRY = helper.createQuery(GET_ENTRY1__EOCL_EXP);
-      }
-      catch (ParserException pe)
-      {
-        throw new UnsupportedOperationException(pe.getLocalizedMessage());
-      }
-    }
-    OCL.Query query = EOCL_ENV.createQuery(GET_ENTRY1__EOCL_QRY);
-    return (void) query.evaluate(emsVitalSignsSection);
-  }
+			return false;
+		}
+		return true;
+	}
 
 } // EMSVitalSignsSectionOperations
