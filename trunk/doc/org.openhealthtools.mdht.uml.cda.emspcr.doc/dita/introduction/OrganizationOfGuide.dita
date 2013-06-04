@@ -34,11 +34,18 @@
 		<body>
 			<p>Vocabularies recommended in this guide are derived from standard
 				vocabularies where possible. Most questions, however, are fairly
-				specific to the EMS domain. These questions have been encodede in
+				specific to the EMS domain. These questions have been encoded in
 				clinical LOINC, and the answer sets have been encoded there as
 				well, and they are included in this document. We plan to submit 
 				these sets to the US extension of SNOMED CT. The LOINC answer 
 				codes will remain valid identifiers.</p>
+				<p>For properties bound to large value sets or systems (e.g., 
+				ICD-10 PCS), NEMSIS provides suggested subsets at NEMSIS.org, 
+				under "V3 resources." These are not to be used to validate values 
+				(all values in the value set are valid), but as suggested aids to
+				providing a manageable user interface. All RxNorm drugs are valid,
+				for instance, but you might wish to provide a selection of drugs
+				commonly found on EMS vehicles for easy selection.</p>
 		</body>
 	</topic>
 </topic>
