@@ -21,7 +21,6 @@ import org.openhealthtools.mdht.uml.cda.emspcr.EmspcrPackage;
 import org.openhealthtools.mdht.uml.cda.emspcr.operations.EMSPatientCareNarrativeSectionOperations;
 
 import org.openhealthtools.mdht.uml.cda.impl.SectionImpl;
-import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 
 /**
  * <!-- begin-user-doc -->
@@ -34,77 +33,91 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  */
 public class EMSPatientCareNarrativeSectionImpl extends SectionImpl implements EMSPatientCareNarrativeSection {
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	protected EMSPatientCareNarrativeSectionImpl() {
-    super();
-  }
+		super();
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	@Override
 	protected EClass eStaticClass() {
-    return EmspcrPackage.Literals.EMS_PATIENT_CARE_NARRATIVE_SECTION;
-  }
+		return EmspcrPackage.Literals.EMS_PATIENT_CARE_NARRATIVE_SECTION;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public boolean validateEMSPatientCareNarrativeSectionTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-    return EMSPatientCareNarrativeSectionOperations.validateEMSPatientCareNarrativeSectionTemplateId(this, diagnostics, context);
-  }
+		return EMSPatientCareNarrativeSectionOperations.validateEMSPatientCareNarrativeSectionTemplateId(
+			this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public boolean validateEMSPatientCareNarrativeSectionCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return EMSPatientCareNarrativeSectionOperations.validateEMSPatientCareNarrativeSectionCode(this, diagnostics, context);
-  }
+		return EMSPatientCareNarrativeSectionOperations.validateEMSPatientCareNarrativeSectionCode(
+			this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public boolean validateEMSPatientCareNarrativeSectionCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return EMSPatientCareNarrativeSectionOperations.validateEMSPatientCareNarrativeSectionCodeP(this, diagnostics, context);
-  }
+		return EMSPatientCareNarrativeSectionOperations.validateEMSPatientCareNarrativeSectionCodeP(
+			this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public boolean validateEMSPatientCareNarrativeSectionText(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return EMSPatientCareNarrativeSectionOperations.validateEMSPatientCareNarrativeSectionText(this, diagnostics, context);
-  }
+		return EMSPatientCareNarrativeSectionOperations.validateEMSPatientCareNarrativeSectionText(
+			this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public boolean validateEMSPatientCareNarrativeSectionTitle(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return EMSPatientCareNarrativeSectionOperations.validateEMSPatientCareNarrativeSectionTitle(this, diagnostics, context);
-  }
+		return EMSPatientCareNarrativeSectionOperations.validateEMSPatientCareNarrativeSectionTitle(
+			this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	* @generated
+	*/
 	public EMSPatientCareNarrativeSection init() {
-    	CDAUtil.init(this);
-    	return this;
-  }
+		return Initializer.Util.init(this);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	   * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EMSPatientCareNarrativeSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+		Initializer.Util.init(this, initializers);
+		return this;
+	}
 } // EMSPatientCareNarrativeSectionImpl
