@@ -20,7 +20,7 @@
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt>
 </li>
-<li>Contains zero or more [0..*] <tt><b>entry</b></tt> <ol><li> Such entrys <b>SHALL</b> conform to <xref href="../DerivedEntry.dita">Derived Entry</xref> template (templateId: <tt>2.16.840.1.1133883.17.3.10.1.24</tt>)</li><li> Such entrys <b>SHALL</b> contain zero or more [0..*] <tt><b>observation</b></tt> <ol><li> Such observations <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="67516-5" </tt><i>Advanced directive</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10194)<p><lines><i>NEMSIS Trace: EHistory.05</i></lines></p></li><li> Such observations <b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type CD, where the @code <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/AdvanceDirectiveType.dita">AdvanceDirectiveType</xref> 2.16.840.1.113883.17.3.5.63</tt><b> STATIC</b></li></ol></li></ol>
+<li>Contains zero or more [0..*] <tt><b>entry</b></tt> <ol><li> Such entrys <b>SHALL</b> conform to <xref href="../DerivedEntry.dita">Derived Entry</xref> template (templateId: <tt>2.16.840.1.1133883.17.3.10.1.24</tt>)</li><li> Such entrys <b>SHALL</b> contain zero or more [0..*] <tt><b>observation</b></tt> <ol><li> Such observations <b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>)</li><li> Such observations <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="67516-5" </tt><i>Advanced directive</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10194)<p><lines><i>NEMSIS Trace: EHistory.05</i></lines></p></li><li> Such observations <b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type CD, where the @code <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/AdvanceDirectiveType.dita">AdvanceDirectiveType</xref> 2.16.840.1.113883.17.3.5.63</tt><b> STATIC</b></li></ol></li></ol>
 </li>
 </ol>
 <ol id="aggregate">
@@ -30,27 +30,10 @@
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt>
 </li>
-<li>Contains zero or more [0..*] <tt><b>entry</b></tt> <ol><li> Such entrys <b>SHALL</b> conform to <xref href="../DerivedEntry.dita">Derived Entry</xref> template (templateId: <tt>2.16.840.1.1133883.17.3.10.1.24</tt>)</li><li> Such entrys <b>SHALL</b> contain zero or more [0..*] <tt><b>observation</b></tt> <ol><li> Such observations <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="67516-5" </tt><i>Advanced directive</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10194)<p><lines><i>NEMSIS Trace: EHistory.05</i></lines></p></li><li> Such observations <b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type CD, where the @code <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/AdvanceDirectiveType.dita">AdvanceDirectiveType</xref> 2.16.840.1.113883.17.3.5.63</tt><b> STATIC</b></li></ol></li></ol>
+<li>Contains zero or more [0..*] <tt><b>entry</b></tt> <ol><li> Such entrys <b>SHALL</b> conform to <xref href="../DerivedEntry.dita">Derived Entry</xref> template (templateId: <tt>2.16.840.1.1133883.17.3.10.1.24</tt>)</li><li> Such entrys <b>SHALL</b> contain zero or more [0..*] <tt><b>observation</b></tt> <ol><li> Such observations <b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>)</li><li> Such observations <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="67516-5" </tt><i>Advanced directive</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10194)<p><lines><i>NEMSIS Trace: EHistory.05</i></lines></p></li><li> Such observations <b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type CD, where the @code <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/AdvanceDirectiveType.dita">AdvanceDirectiveType</xref> 2.16.840.1.113883.17.3.5.63</tt><b> STATIC</b></li></ol></li></ol>
 </li>
 </ol>
-<section id="tableconformance"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="8" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><colspec colname="col2" colnum="2" /><colspec colname="col3" colnum="3" /><colspec colname="col4" colnum="4" /><colspec colname="col5" colnum="5" /><colspec colname="col6" colnum="6" /><colspec colname="col7" colnum="7" /><thead> <row><entry namest="col0" nameend="col7" >emspcr::EMSAdvanceDirectivesSection</entry>  </row>  <row><entry namest="col0" nameend="col7" >/cda:ClinicalDocument/cda:component/cda:structuredBody/cda:component/cda:section/</entry>  </row>  <row><entry>Name</entry><entry>XPath</entry><entry>Cardinality</entry><entry>Severity</entry><entry>Nullable</entry><entry>Data Type</entry><entry>Conformance</entry><entry>Value(s)</entry></row></thead><tbody><row><entry>code</entry><entry>code</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>CE</entry><entry>CONF:10191</entry><entry>LOINC 2.16.840.1.113883.6.1 </entry></row> 
-<row><entry>title</entry><entry>title</entry><entry>1..1</entry><entry>SHOULD</entry><entry>YES</entry><entry>ST</entry><entry>CONF:10192</entry><entry> </entry></row> 
-<row><entry>eMSAdvanceDirectives</entry><entry>eMSAdvanceDirectives</entry><entry>1..1</entry><entry>SHOULD</entry><entry>YES</entry><entry>EMSAdvanceDirectivesSection</entry><entry>CONF:10010</entry><entry> </entry></row> 
-<row><entry>entry</entry><entry>entry</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>EMSAdvancedDirectiveEntry</entry><entry></entry><entry> </entry></row> 
-<row><entry>text</entry><entry>text</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>StrucDocText</entry><entry></entry><entry> </entry></row> 
-</tbody></tgroup></table></p></section>
-<codeblock id="example"><![CDATA[<section xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3">
-  <id root="MDHT" extension="1140179560"/>
-  <title>TEXT FOR TITLE</title>
-  <text/>
-  <entry>
-    <observation>
-      <templateId root="null"/>
-      <code code="67516-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Advanced directive"/>
-      <value xsi:type="CD" code="556879911"/>
-    </observation>
-  </entry>
-</section>]]></codeblock>
+<codeblock id="example"><![CDATA[Error: Missing Runtime Class]]></codeblock>
 <section id="changes">
 </section>
 <p><ph id="classformalname">EMS Advance Directives Section</ph></p>
