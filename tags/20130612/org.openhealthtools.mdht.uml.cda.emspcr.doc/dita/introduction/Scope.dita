@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN"
+ "dtd/topic.dtd">
+<topic id="topicId" xml:lang="en-us">
+	<title>Scope</title>
+	<body>
+		<p> The NEMSIS data set supports many uses, including the transfer of patient care reports from
+			EMS crews to emergency departments, the prepopulation of hospital electronic health
+			records, identification of trauma registry candidates, and preparation of data for
+			submission to NEMSIS for research. The current specification is designed for the first
+			of these use cases.</p>
+		<p> Implementers may generate the same patient care reports that they generate today and
+			attach them in “level one” documents, or they may populate the structured sections as
+			specified herein. </p>
+<p>Because the NEMSIS data set is so broad, it extends beyond the Emergency Transfer of Care specified 
+by Integrating the Healthcare Enterprise (IHE). These templates may be harmonized in the future; at 
+this point, they are distinct.</p>
+	</body>
+</topic>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE bookmap PUBLIC "-//OASIS//DTD DITA BookMap//EN" "bookmap.dtd">
+<bookmap id="cdabook">
+    <booktitle>
+		<booklibrary>HL7 Implementation Guide for CDA &#174; Release 2:</booklibrary>
+		<mainbooktitle>Emergency Medical Services; Patient Care Report</mainbooktitle>
+		<!--  <booktitlealt>
+			<image height="2cm" href="images/HL7_International_logo.jpg" />
+		</booktitlealt>  -->
+		<booktitlealt>(Universal Realm)</booktitlealt>
+		<booktitlealt>HL7 Draft Standard For Trial Use</booktitlealt>
+		<booktitlealt>February 2013</booktitlealt>
+		<booktitlealt><image href="images/hl7logo.gif"/></booktitlealt>
+        <booktitlealt audience="developer">(Developer Documentation)</booktitlealt>
+    </booktitle>
+    <bookmeta>
+    	<prodinfo>
+			<prodname>CDAR2L3_IG_EMSRUNRPT</prodname>
+			<vrmlist>
+				<vrm release="DSTUR2" version="2013JUL" ></vrm>
+			</vrmlist>
+			<brand>HL7 IG for CDA R2</brand>
+			<series>Draft Standard for Trial Use</series>
+			<platform>US Realm</platform>
+		</prodinfo>
+        <bookid>
+            <booknumber/>
+            <maintainer>
+                <organization>Open Health Tools, Model Driven Health Tools (MDHT)</organization>
+                <person/>
+            </maintainer>
+        </bookid>
+        
+        
+        <bookrights>
+            <copyrfirst>
+                <year>2009</year>
+            </copyrfirst>
+            <copyrlast>
+                <year>2013</year>
+            </copyrlast>
+            <bookowner>
+                <organization/>
+            </bookowner>
+        </bookrights>
+    </bookmeta>
+    <frontmatter>
+        <preface>
+            <topicref href="preface/IP.dita" navtitle="Intellectual Property Notes" type="topic"/> 
+           <topicref href="preface/Acknowledgments.dita" navtitle="Acknowledgments" type="topic"/>
+        </preface>
+        <booklists>
+            <toc/>
+            <figurelist/>
+            <tablelist/>
+        </booklists>
+    </frontmatter>
+    <chapter format="ditamap" href="introduction/introduction.ditamap"/>
+    <chapter format="ditamap" href="content/content.ditamap"/>
+    <chapter href="appendices/appendices.ditamap" format="ditamap"/>
+    <backmatter>
+        <topicref href="References.dita" navtitle="REFERENCES" type="topic"/>
+    </backmatter>
+</bookmap>

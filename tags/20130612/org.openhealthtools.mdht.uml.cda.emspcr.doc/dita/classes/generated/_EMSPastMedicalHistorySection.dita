@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>EMS Past Medical History Section - conformance rules</title>
+<shortdesc id="shortdesc">[Section: templateId <tt>2.16.840.1.113883.17.3.10.1.19</tt>]</shortdesc>
+<prolog id="prolog">
+<metadata><category>Section</category></metadata>
+<resourceid id="2.16.840.1.113883.17.3.10.1.19"/>
+</prolog>
+<body>
+<section id="knownSubclasses">
+</section>
+<section id="description">
+</section>
+<ol id="conformance">
+<li><b>SHALL</b> contain exactly one [1..1] templateId (  ) such that it <ol><li><b>SHALL</b> contain exactly one [1..1] <b>@root</b>="2.16.840.1.113883.17.3.10.1.19"</li></ol></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:10059)<tt><b>/@code</b>="67842-5" </tt><i>EMS Past Medical History Section</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10058)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>title</b></tt> and <b>SHOULD</b> equal "EMS Past Medical History" (CONF:10060)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt>
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt> (CONF:10062) <ol><li> This entry <b>SHALL</b> conform to <xref href="../DerivedEntry.dita">Derived Entry</xref> template (templateId: <tt>2.16.840.1.1133883.17.3.10.1.24</tt>)</li><li> This entry <b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt> <ol><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>)</li><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="67793-0" </tt><i>Has the patient had any significant medical conditions</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10067)</li><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type BL (CONF:10068)<p><lines><i>If NEMSIS EHistory. 08 is "Refused " or "Unable to Complete," the value should be "NI"; the original value may be recorded in Observation.text.
+If NEMSIS EHistory. 08 is "None Reported," the value should be FALSE.
+If NEMSIS EHistory. 08 has proper values, the value should be TRUE.</i></lines></p></li></ol></li><li> This entry <b>MAY</b> contain zero or more [0..*] <tt><b>observation</b></tt> <ol><li> Such observations <b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>)</li><li> Such observations <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:10070)<tt><b>/@code</b>="68487-8" </tt><i>EMS History of Condition</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10069)</li><li> Such observations <b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type CD (CONF:10072), where the @code <b>SHALL</b> be selected from (CodeSystem:<tt> 2.16.840.1.113883.6.90 ICD-10 CM</tt>) (CONF:10071)<p><lines><i>NEMSIS Trace: EHistory. 08
+If NEMSIS EHistory.08 is "No bleeding disorder," the value should be the appropriate
+ICD-10 code (D66, D67, D68) and negationIndicator should be TRUE.</i></lines></p></li></ol></li></ol>
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt> (CONF:10063) <ol><li> This entry <b>SHALL</b> conform to <xref href="../DerivedEntry.dita">Derived Entry</xref> template (templateId: <tt>2.16.840.1.1133883.17.3.10.1.24</tt>)</li><li> This entry Contains exactly one [1..1] <tt><b>organizer</b></tt> <ol><li> This organizer <b>SHALL</b> contain zero or one [0..1] <tt><b>component</b></tt> (CONF:10073) <ol><li> This component <b>SHALL</b> contain exactly one [1..1] <tt><b>procedure</b></tt> (CONF:10077) <ol><li> This procedure <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt>, where the @code <b>SHALL</b> be selected from (CodeSystem:<tt> 2.16.840.1.113883.6.4 ICD-10 PCS</tt>) (CONF:10076)<p><lines><i>NEMSIS Trace: EHistory. 08</i></lines></p></li></ol> </li></ol> </li><li> This organizer <b>MAY</b> contain zero or more [0..*] <tt><b>component</b></tt> <ol><li> Such components <b>SHALL</b> contain zero or one [0..1] <tt><b>procedure</b></tt> <ol><li> This procedure <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt>, where the @code <b>SHALL</b> be selected from (CodeSystem:<tt> 2.16.840.1.113883.6.4 ICD-10 PCS</tt>) (CONF:10076)<p><lines><i>NEMSIS Trace: EHistory. 08</i></lines></p></li></ol> </li></ol> </li></ol></li></ol>
+</li>
+</ol>
+<ol id="aggregate">
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:10059)<tt><b>/@code</b>="67842-5" </tt><i>EMS Past Medical History Section</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10058)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>title</b></tt> and <b>SHOULD</b> equal "EMS Past Medical History" (CONF:10060)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt>
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt> (CONF:10062) <ol><li> This entry <b>SHALL</b> conform to <xref href="../DerivedEntry.dita">Derived Entry</xref> template (templateId: <tt>2.16.840.1.1133883.17.3.10.1.24</tt>)</li><li> This entry <b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt> <ol><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>)</li><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="67793-0" </tt><i>Has the patient had any significant medical conditions</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10067)</li><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type BL (CONF:10068)<p><lines><i>If NEMSIS EHistory. 08 is "Refused " or "Unable to Complete," the value should be "NI"; the original value may be recorded in Observation.text.
+If NEMSIS EHistory. 08 is "None Reported," the value should be FALSE.
+If NEMSIS EHistory. 08 has proper values, the value should be TRUE.</i></lines></p></li></ol></li><li> This entry <b>MAY</b> contain zero or more [0..*] <tt><b>observation</b></tt> <ol><li> Such observations <b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>)</li><li> Such observations <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:10070)<tt><b>/@code</b>="68487-8" </tt><i>EMS History of Condition</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10069)</li><li> Such observations <b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type CD (CONF:10072), where the @code <b>SHALL</b> be selected from (CodeSystem:<tt> 2.16.840.1.113883.6.90 ICD-10 CM</tt>) (CONF:10071)<p><lines><i>NEMSIS Trace: EHistory. 08
+If NEMSIS EHistory.08 is "No bleeding disorder," the value should be the appropriate
+ICD-10 code (D66, D67, D68) and negationIndicator should be TRUE.</i></lines></p></li></ol></li></ol>
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt> (CONF:10063) <ol><li> This entry <b>SHALL</b> conform to <xref href="../DerivedEntry.dita">Derived Entry</xref> template (templateId: <tt>2.16.840.1.1133883.17.3.10.1.24</tt>)</li><li> This entry Contains exactly one [1..1] <tt><b>organizer</b></tt> <ol><li> This organizer <b>SHALL</b> contain zero or one [0..1] <tt><b>component</b></tt> (CONF:10073) <ol><li> This component <b>SHALL</b> contain exactly one [1..1] <tt><b>procedure</b></tt> (CONF:10077) <ol><li> This procedure <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt>, where the @code <b>SHALL</b> be selected from (CodeSystem:<tt> 2.16.840.1.113883.6.4 ICD-10 PCS</tt>) (CONF:10076)<p><lines><i>NEMSIS Trace: EHistory. 08</i></lines></p></li></ol> </li></ol> </li><li> This organizer <b>MAY</b> contain zero or more [0..*] <tt><b>component</b></tt> <ol><li> Such components <b>SHALL</b> contain zero or one [0..1] <tt><b>procedure</b></tt> <ol><li> This procedure <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt>, where the @code <b>SHALL</b> be selected from (CodeSystem:<tt> 2.16.840.1.113883.6.4 ICD-10 PCS</tt>) (CONF:10076)<p><lines><i>NEMSIS Trace: EHistory. 08</i></lines></p></li></ol> </li></ol> </li></ol></li></ol>
+</li>
+</ol>
+<codeblock id="example"><![CDATA[Error: Missing Runtime Class]]></codeblock>
+<section id="changes">
+</section>
+<p><ph id="classformalname">EMS Past Medical History Section</ph></p>
+<p id="shortdesc">[Section: templateId <tt>2.16.840.1.113883.17.3.10.1.19</tt>]</p>
+</body>
+</topic>

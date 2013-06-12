@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Return Of Spontaneous Circulation</title>
+<prolog id="prolog">
+<resourceid id="2.16.840.1.113883.17.3.5.15"/>
+</prolog>
+<body>
+<!-- THIS IS GENERATED CONTENT, DO NOT EDIT -->
+<section id="definition">
+<table><tgroup cols="2">
+<colspec colname="col1" colwidth="1*"/>
+<colspec colname="col2" colwidth="4*"/>
+<tbody>
+<row><entry>Value Set</entry><entry>ReturnOfSpontaneousCirculation - 2.16.840.1.113883.17.3.5.15</entry></row>
+<row><entry>Code System</entry><entry>LOINC - 2.16.840.1.113883.6.1</entry></row>
+<row><entry>Definition</entry><entry>Timeframe for return of circulation to a patient</entry></row>
+</tbody></tgroup></table>
+<table><tgroup cols="3">
+<colspec colname="col1" colwidth="1*"/>
+<colspec colname="col2" colwidth="1*"/>
+<colspec colname="col3" colwidth="2*"/>
+<thead><row>
+<entry>Code</entry><entry>Code System</entry><entry>Print Name</entry>
+</row></thead><tbody>
+<row><entry>LA17075-5</entry><entry>LOINC</entry><entry>Yes, prior to arrival at the ED</entry></row>
+<row><entry>LA17076-3</entry><entry>LOINC</entry><entry>Yes, at arrival at the ED</entry></row>
+<row><entry>LA17077-1</entry><entry>LOINC</entry><entry>Yes, sustained for 20 consecutive minutes</entry></row>
+<row><entry>LA32-8</entry><entry>LOINC</entry><entry>No</entry></row>
+</tbody></tgroup></table>
+</section>
+</body>
+</topic>

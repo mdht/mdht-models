@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Mental Status Finding</title>
+<prolog id="prolog">
+<resourceid id="2.16.840.1.113883.17.3.5.84"/>
+</prolog>
+<body>
+<!-- THIS IS GENERATED CONTENT, DO NOT EDIT -->
+<section id="definition">
+<table><tgroup cols="2">
+<colspec colname="col1" colwidth="1*"/>
+<colspec colname="col2" colwidth="4*"/>
+<tbody>
+<row><entry>Value Set</entry><entry>MentalStatusFinding - 2.16.840.1.113883.17.3.5.84</entry></row>
+<row><entry>Code System</entry><entry>LOINC - 2.16.840.1.113883.6.1</entry></row>
+<row><entry>Definition</entry><entry>Finding resulting from EMS mental assessment</entry></row>
+</tbody></tgroup></table>
+<table><tgroup cols="3">
+<colspec colname="col1" colwidth="1*"/>
+<colspec colname="col2" colwidth="1*"/>
+<colspec colname="col3" colwidth="2*"/>
+<thead><row>
+<entry>Code</entry><entry>Code System</entry><entry>Print Name</entry>
+</row></thead><tbody>
+<row><entry>LA17286-8</entry><entry>LOINC</entry><entry>Normal baseline for patient</entry></row>
+<row><entry>LA17287-6</entry><entry>LOINC</entry><entry>Combative</entry></row>
+<row><entry>LA17288-4</entry><entry>LOINC</entry><entry>Oriented-person</entry></row>
+<row><entry>LA17289-2</entry><entry>LOINC</entry><entry>Oriented-place</entry></row>
+<row><entry>LA17290-0</entry><entry>LOINC</entry><entry>Oriented-time</entry></row>
+<row><entry>LA18259-4</entry><entry>LOINC</entry><entry>Oriented-event</entry></row>
+<row><entry>LA18260-2</entry><entry>LOINC</entry><entry>Pharmacologically sedated/paralyzed</entry></row>
+<row><entry>LA6560-2</entry><entry>LOINC</entry><entry>Confused</entry></row>
+<row><entry>LA6630-3</entry><entry>LOINC</entry><entry>Not done</entry></row>
+<row><entry>LA7438-0</entry><entry>LOINC</entry><entry>Hallucinations</entry></row>
+<row><entry>LA9343-0</entry><entry>LOINC</entry><entry>Unresponsive</entry></row>
+</tbody></tgroup></table>
+</section>
+</body>
+</topic>

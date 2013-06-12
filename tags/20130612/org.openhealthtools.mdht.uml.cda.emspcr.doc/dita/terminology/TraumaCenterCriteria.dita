@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Trauma Center Criteria</title>
+<prolog id="prolog">
+<resourceid id="2.16.840.1.113883.17.3.5.3"/>
+</prolog>
+<body>
+<!-- THIS IS GENERATED CONTENT, DO NOT EDIT -->
+<section id="definition">
+<table><tgroup cols="2">
+<colspec colname="col1" colwidth="1*"/>
+<colspec colname="col2" colwidth="4*"/>
+<tbody>
+<row><entry>Value Set</entry><entry>TraumaCenterCriteria - 2.16.840.1.113883.17.3.5.3</entry></row>
+<row><entry>Code System</entry><entry>LOINC - 2.16.840.1.113883.6.1</entry></row>
+<row><entry>Definition</entry><entry>Patient findings used to determine appropriate destination</entry></row>
+</tbody></tgroup></table>
+<table><tgroup cols="3">
+<colspec colname="col1" colwidth="1*"/>
+<colspec colname="col2" colwidth="1*"/>
+<colspec colname="col3" colwidth="2*"/>
+<thead><row>
+<entry>Code</entry><entry>Code System</entry><entry>Print Name</entry>
+</row></thead><tbody>
+<row><entry>LA17337-9</entry><entry>LOINC</entry><entry>Glasgow Coma Score less than 14</entry></row>
+<row><entry>LA17338-7</entry><entry>LOINC</entry><entry>Respiratory rate &lt; 10 or &gt;29 or (&lt;20 in infant &lt; one year)</entry></row>
+<row><entry>LA17339-5</entry><entry>LOINC</entry><entry>Systolic blood pressure less than 90</entry></row>
+<row><entry>LA17340-3</entry><entry>LOINC</entry><entry>Amputation proximal to wrist and ankle</entry></row>
+<row><entry>LA17341-1</entry><entry>LOINC</entry><entry>Crushed, degloved, or mangled extremity</entry></row>
+<row><entry>LA17342-9</entry><entry>LOINC</entry><entry>Flail chest</entry></row>
+<row><entry>LA17343-7</entry><entry>LOINC</entry><entry>Open or depressed skull fracture</entry></row>
+<row><entry>LA17344-5</entry><entry>LOINC</entry><entry>Paralysis</entry></row>
+<row><entry>LA17345-2</entry><entry>LOINC</entry><entry>Pelvic fracture(s)</entry></row>
+<row><entry>LA17346-0</entry><entry>LOINC</entry><entry>Penetrating injury to head, neck, torso, and extremities proximal to elbow and knee</entry></row>
+<row><entry>LA17347-8</entry><entry>LOINC</entry><entry>Two or more proximal long-bone fractures</entry></row>
+</tbody></tgroup></table>
+</section>
+</body>
+</topic>

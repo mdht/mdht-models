@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Destination Prearrival Activation</title>
+<prolog id="prolog">
+<resourceid id="2.16.840.1.113883.17.3.5.87"/>
+</prolog>
+<body>
+<!-- THIS IS GENERATED CONTENT, DO NOT EDIT -->
+<section id="definition">
+<table><tgroup cols="2">
+<colspec colname="col1" colwidth="1*"/>
+<colspec colname="col2" colwidth="4*"/>
+<tbody>
+<row><entry>Value Set</entry><entry>DestinationPrearrivalActivation - 2.16.840.1.113883.17.3.5.87</entry></row>
+<row><entry>Code System</entry><entry>LOINC - 2.16.840.1.113883.6.1</entry></row>
+<row><entry>Definition</entry><entry>Kind of preparation requested at destination prior to patient arrival</entry></row>
+</tbody></tgroup></table>
+<table><tgroup cols="3">
+<colspec colname="col1" colwidth="1*"/>
+<colspec colname="col2" colwidth="1*"/>
+<colspec colname="col3" colwidth="2*"/>
+<thead><row>
+<entry>Code</entry><entry>Code System</entry><entry>Print Name</entry>
+</row></thead><tbody>
+<row><entry>LA18117-4</entry><entry>LOINC</entry><entry>Yes, adult trauma</entry></row>
+<row><entry>LA18118-2</entry><entry>LOINC</entry><entry>Yes, cardiac arrest</entry></row>
+<row><entry>LA18119-0</entry><entry>LOINC</entry><entry>Yes, obstetrics</entry></row>
+<row><entry>LA18120-8</entry><entry>LOINC</entry><entry>Yes, other</entry></row>
+<row><entry>LA18121-6</entry><entry>LOINC</entry><entry>Yes, pediatric trauma</entry></row>
+<row><entry>LA18122-4</entry><entry>LOINC</entry><entry>Yes, STEMI</entry></row>
+<row><entry>LA18123-2</entry><entry>LOINC</entry><entry>Yes, stroke</entry></row>
+<row><entry>LA32-8</entry><entry>LOINC</entry><entry>No</entry></row>
+</tbody></tgroup></table>
+</section>
+</body>
+</topic>

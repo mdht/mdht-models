@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="en-us" lang="en-us">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="copyright" content="(C) Copyright 2005"/>
+<meta name="DC.rights.owner" content="(C) Copyright 2005"/>
+<meta name="DC.Type" content="topic"/>
+<meta name="DC.Title" content="EMS Vital Signs Section"/>
+<meta name="abstract" content="[Section: templateId 2.16.840.1.113883.17.3.10.1.23]"/>
+<meta name="description" content="[Section: templateId 2.16.840.1.113883.17.3.10.1.23]"/>
+<meta name="DC.Coverage" content="Section"/>
+<meta name="DC.Relation" scheme="URI" content="../content/SectionTemplates.html"/>
+<meta name="DC.Format" content="XHTML"/>
+<meta name="DC.Identifier" content="classId"/>
+<meta name="DC.Language" content="en-us"/>
+<link rel="stylesheet" type="text/css" href="../css/commonltr.css"/>
+<title>EMS Vital Signs Section</title>
+</head>
+<body id="classId">
+<div>
+	<p><b>For Discussion and Demonstration Only</b> The Normative content for these specifications
+	may be found on the HL7, IHE, and HITSP web sites.</p>
+</div>
+
+<h1 class="title topictitle1">EMS Vital Signs Section</h1>
+
+
+
+<div class="body"><p class="shortdesc">[Section: templateId <tt class="ph tt">2.16.840.1.113883.17.3.10.1.23</tt>]</p>
+
+<div class="section">
+</div>
+
+
+<div class="section">
+</div>
+
+
+
+<ol class="ol">
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] templateId (  ) such that it <ol class="ol" type="a"><li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <strong class="ph b">@root</strong>="2.16.840.1.113883.17.3.10.1.23"</li>
+</ol>
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt><tt class="ph tt"><strong class="ph b">/@code</strong>="67801-1" </tt><em class="ph i">EMS Vital Signs Section</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10252)
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">title</strong></tt> and <strong class="ph b">SHOULD</strong> equal "EMS Vital Signs" (CONF:10254)
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">text</strong></tt>
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain at least one [1..*] <tt class="ph tt"><strong class="ph b">entry</strong></tt> (CONF:10255) <ol class="ol" type="a"><li class="li"> Such entrys <strong class="ph b">SHALL</strong> conform to <a class="xref" href="DerivedEntry.html" title="[Entry: templateId 2.16.840.1.1133883.17.3.10.1.24]">Derived Entry</a> template (templateId: <tt class="ph tt">2.16.840.1.1133883.17.3.10.1.24</tt>)</li>
+<li class="li"> Such entrys <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">organizer</strong></tt> (CONF:10256) <ol class="ol" type="i"><li class="li"> This organizer <strong class="ph b">SHALL</strong> conform to <a class="xref" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.consol.doc/classes/VitalSignsOrganizer.html">Consol Vital Signs Organizer</a> template (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.22.4.26</tt>)</li>
+<li class="li"> This organizer <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">effectiveTime</strong></tt> (CONF:10257)<div class="p"><p class="lines"><em class="ph i">NEMSIS Trace: EVitals.01</em></p>
+</div>
+</li>
+<li class="li"> This organizer <strong class="ph b">SHOULD</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">component</strong></tt> <ol class="ol"><li class="li"> This component <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">observation</strong></tt> <ol class="ol" type="a"><li class="li"> This observation <strong class="ph b">SHALL</strong> conform to <a class="xref" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.consol.doc/classes/VitalSignObservation.html">Consol Vital Sign Observation</a> template (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.22.4.27</tt>)</li>
+<li class="li"> This observation <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt><tt class="ph tt"><strong class="ph b">/@code</strong>="8480-6" </tt><em class="ph i">Intravascular systolic</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10280)</li>
+<li class="li"> This observation <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">value</strong></tt> (CONF:10281)<div class="p"><p class="lines"><em class="ph i">NEMSIS Trace: EVitals.06<br/>
+UCUM units SHOULD be "mm[Hg]".</em></p>
+</div>
+</li>
+</ol>
+ </li>
+</ol>
+</li>
+<li class="li"> This organizer <strong class="ph b">SHOULD</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">component</strong></tt> <ol class="ol"><li class="li"> This component <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">observation</strong></tt> <ol class="ol" type="a"><li class="li"> This observation <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt><tt class="ph tt"><strong class="ph b">/@code</strong>="8462-4" </tt><em class="ph i">Intravascular diastolic</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10282)</li>
+<li class="li"> This observation <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">value</strong></tt> with data type PQ (CONF:10283)<div class="p"><p class="lines"><em class="ph i">NEMSIS Trace: EVitals.07<br/>
+UCUM units SHOULD be "mm[Hg]".</em></p>
+</div>
+</li>
+</ol>
+ </li>
+</ol>
+</li>
+<li class="li"> This organizer <strong class="ph b">SHOULD</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">component</strong></tt> <ol class="ol"><li class="li"> This component <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">observation</strong></tt> <ol class="ol" type="a"><li class="li"> This observation <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt> (CONF:10285)<tt class="ph tt"><strong class="ph b">/@code</strong>="8867-4" </tt><em class="ph i">Heart rate</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10284)</li>
+<li class="li"> This observation <strong class="ph b">SHALL</strong> contain zero or more [0..*] <tt class="ph tt"><strong class="ph b">value</strong></tt> with data type PQ (CONF:10286)<div class="p"><p class="lines"><em class="ph i">NEMSIS Trace: EVitals.10<br/>
+UCUM units SHOULD be "/min".</em></p>
+</div>
+</li>
+</ol>
+ </li>
+</ol>
+</li>
+<li class="li"> This organizer <strong class="ph b">SHOULD</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">component</strong></tt> <ol class="ol"><li class="li"> This component <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">observation</strong></tt> <ol class="ol" type="a"><li class="li"> This observation <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt><tt class="ph tt"><strong class="ph b">/@code</strong>="9279-1" </tt><em class="ph i">Breaths</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10287)</li>
+<li class="li"> This observation <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">value</strong></tt> with data type PQ (CONF:10288)<div class="p"><p class="lines"><em class="ph i">NEMSIS Trace: EVitals.14<br/>
+UCUM units SHOULD be "/min".</em></p>
+</div>
+</li>
+</ol>
+ </li>
+</ol>
+</li>
+<li class="li"> This organizer <strong class="ph b">SHOULD</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">component</strong></tt> <ol class="ol"><li class="li"> This component <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">observation</strong></tt> <ol class="ol" type="a"><li class="li"> This observation <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt><tt class="ph tt"><strong class="ph b">/@code</strong>="8310-5" </tt><em class="ph i">Body temperature</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10289)</li>
+<li class="li"> This observation <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">value</strong></tt> with data type PQ (CONF:10290)<div class="p"><p class="lines"><em class="ph i">NEMSIS Trace: EVitals.24<br/>
+UCUM units SHOULD be "Cel".</em></p>
+</div>
+</li>
+</ol>
+ </li>
+</ol>
+</li>
+<li class="li"> This organizer <strong class="ph b">SHOULD</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">component</strong></tt> <ol class="ol"><li class="li"> This component <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">observation</strong></tt> <ol class="ol" type="a"><li class="li"> This observation <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt><tt class="ph tt"><strong class="ph b">/@code</strong>="2710-2" </tt><em class="ph i">Oxygen saturation</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10291)</li>
+<li class="li"> This observation <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">value</strong></tt> (CONF:10292)<div class="p"><p class="lines"><em class="ph i">NEMSIS Trace: EVitals.12<br/>
+UCUM units will typically be "%".</em></p>
+</div>
+</li>
+</ol>
+ </li>
+</ol>
+</li>
+</ol>
+</li>
+<li class="li"> Such entrys <strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">observation</strong></tt> <ol class="ol" type="i"><li class="li"> This observation <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt><tt class="ph tt"><strong class="ph b">/@code</strong>="67518-1" </tt><em class="ph i">Obtained prior to units EMS care</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10273)</li>
+<li class="li"> This observation <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">value</strong></tt> with data type BL<div class="p"><p class="lines"><em class="ph i">NEMSIS Trace: EVitals.02</em></p>
+</div>
+</li>
+<li class="li"> This observation <strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">effectiveTime</strong></tt></li>
+</ol>
+</li>
+<li class="li"> Such entrys <strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">observation</strong></tt> <ol class="ol" type="i"><li class="li"> This observation <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt> (CONF:10275)<tt class="ph tt"><strong class="ph b">/@code</strong>="67519-9" </tt><em class="ph i">Cardiac rhythm</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10274)</li>
+<li class="li"> This observation <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">methodCode</strong></tt> (CONF:10277), where the @code <strong class="ph b">SHALL</strong> be selected from ValueSet<tt class="ph tt"> <a class="xref" href="../terminology/MethodOfECGInterpretation.html">MethodOfECGInterpretation</a> 2.16.840.1.113883.17.3.5.20</tt><strong class="ph b"> STATIC</strong> (CONF:10276)<div class="p"><p class="lines"><em class="ph i">NEMSIS Trace: EVitals.05</em></p>
+</div>
+</li>
+<li class="li"> This observation <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">value</strong></tt> with data type CD (CONF:10278), where the @code <strong class="ph b">SHALL</strong> be selected from ValueSet<tt class="ph tt"> <a class="xref" href="../terminology/ECGType.html">ECGType</a> 2.16.840.1.113883.17.3.5.19</tt><strong class="ph b"> STATIC</strong> (CONF:10279)<div class="p"><p class="lines"><em class="ph i">NEMSIS Trace: EVitals.03</em></p>
+</div>
+</li>
+</ol>
+</li>
+<li class="li"> Such entrys <strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">observation</strong></tt> <ol class="ol" type="i"><li class="li"> This observation <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt> (CONF:10294)<tt class="ph tt"><strong class="ph b">/@code</strong>="19889-5" </tt><em class="ph i">Carbon dioxide/Gas.total.at end expiration</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10293)</li>
+<li class="li"> This observation <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">value</strong></tt> (CONF:10295)<div class="p"><p class="lines"><em class="ph i">NEMSIS Trace: EVitals.16<br/>
+UCUM units will typically be "%".</em></p>
+</div>
+</li>
+</ol>
+</li>
+<li class="li"> Such entrys <strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">observation</strong></tt> <ol class="ol" type="i"><li class="li"> This observation <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt> (CONF:10297)<tt class="ph tt"><strong class="ph b">/@code</strong>="19911-7" </tt><em class="ph i">Diffusion capacity.carbon monoxide</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10296)</li>
+<li class="li"> This observation <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">value</strong></tt> with data type PQ (CONF:10298)<div class="p"><p class="lines"><em class="ph i">NEMSIS Trace: EVitals.17<br/>
+UCUM units will typically be "[ppm]".</em></p>
+</div>
+</li>
+</ol>
+</li>
+<li class="li"> Such entrys <strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">observation</strong></tt> <ol class="ol" type="i"><li class="li"> This observation <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt> (CONF:10300)<tt class="ph tt"><strong class="ph b">/@code</strong>="2339-0" </tt><em class="ph i">Glucose</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10299)</li>
+<li class="li"> This observation <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">value</strong></tt> with data type PQ (CONF:10301)<div class="p"><p class="lines"><em class="ph i">NEMSIS Trace: EVitals.18<br/>
+UCUM units will typically be "mg/dl".</em></p>
+</div>
+</li>
+</ol>
+</li>
+<li class="li"> Such entrys <strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">observation</strong></tt> <ol class="ol" type="i"><li class="li"> This observation <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt> (CONF:10303)<tt class="ph tt"><strong class="ph b">/@code</strong>="67775-7" </tt><em class="ph i">Level of responsiveness</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10302)</li>
+<li class="li"> This observation <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">value</strong></tt> with data type CD (CONF:10305), where the @code <strong class="ph b">SHALL</strong> be selected from ValueSet<tt class="ph tt"> <a class="xref" href="../terminology/LevelOfResponsiveness.html">LevelOfResponsiveness</a> 2.16.840.1.113883.17.3.5.21</tt><strong class="ph b"> STATIC</strong> (CONF:10304)<div class="p"><p class="lines"><em class="ph i">NEMSIS Trace: EVitals.26</em></p>
+</div>
+</li>
+</ol>
+</li>
+<li class="li"> Such entrys <strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">observation</strong></tt> <ol class="ol" type="i"><li class="li"> This observation <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt><tt class="ph tt"><strong class="ph b">/@code</strong>="56840-2" </tt><em class="ph i">Pain severity verbal numeric scale</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10306)</li>
+<li class="li"> This observation Contains exactly one [1..1] <tt class="ph tt"><strong class="ph b">value</strong></tt> with data type INT<div class="p"><p class="lines"><em class="ph i">NEMSIS Trace: EVitals.27<br/>
+An ordinal value between 0 and 10, inclusive. There are three scales, but the values are equivalent.</em></p>
+</div>
+</li>
+</ol>
+</li>
+<li class="li"> Such entrys <strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">observation</strong></tt> <ol class="ol" type="i"><li class="li"> This observation <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt> (CONF:10308)<tt class="ph tt"><strong class="ph b">/@code</strong>="67520-7" </tt><em class="ph i">Stroke scale overall interpretation</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10307)</li>
+<li class="li"> This observation <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">value</strong></tt> with data type CD (CONF:10310), where the @code <strong class="ph b">SHALL</strong> be selected from ValueSet<tt class="ph tt"> <a class="xref" href="../terminology/StrokeScaleInterpretation.html">Stroke Scale Interpretation</a> 2.16.840.1.113883.17.3.5.93</tt><strong class="ph b"> STATIC</strong> (CONF:10309)<div class="p"><p class="lines"><em class="ph i">NEMSIS Trace: EVitals.29</em></p>
+</div>
+</li>
+<li class="li"> This observation <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">methodCode</strong></tt> (CONF:10312), where the @code <strong class="ph b">SHALL</strong> be selected from ValueSet<tt class="ph tt"> <a class="xref" href="../terminology/StrokeScale.html">StrokeScale</a> 2.16.840.1.113883.17.3.5.88</tt><strong class="ph b"> STATIC</strong> (CONF:10311)<div class="p"><p class="lines"><em class="ph i">NEMSIS Trace: EVitals.30</em></p>
+</div>
+</li>
+</ol>
+</li>
+<li class="li"> Such entrys Contains zero or one [0..1] <tt class="ph tt"><strong class="ph b">organizer</strong></tt> <ol class="ol" type="i"><li class="li"> This organizer <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">component</strong></tt> (CONF:10313) <ol class="ol"><li class="li"> This component <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt> (CONF:10325)<tt class="ph tt"><strong class="ph b">/@code</strong>="9267-6" </tt><em class="ph i">Glasgow coma score.eye opening</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10324)</li>
+<li class="li"> This component <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">value</strong></tt> with data type CO (CONF:10326), where the @code <strong class="ph b">SHALL</strong> be selected from ValueSet<tt class="ph tt"> <a class="xref" href="../terminology/GlasgowComaScoreEyeResponse.html">GlasgowComaScoreEyeResponse</a> 2.16.840.1.113883.17.3.5.99</tt><strong class="ph b"> STATIC</strong> (CONF:10327)<div class="p"><p class="lines"><em class="ph i">NEMSIS Trace: EVitals.19</em></p>
+</div>
+</li>
+</ol>
+ </li>
+<li class="li"> This organizer <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">component</strong></tt> (CONF:10314) <ol class="ol"><li class="li"> This component <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt> (CONF:10328)<tt class="ph tt"><strong class="ph b">/@code</strong>="9268-4" </tt><em class="ph i">Glasgow coma score.motor</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10329)</li>
+<li class="li"> This component <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">value</strong></tt> with data type CO (CONF:10330), where the @code <strong class="ph b">SHALL</strong> be selected from ValueSet<tt class="ph tt"> <a class="xref" href="../terminology/GlasgowComaScoreMotorResponse.html">GlasgowComaScoreMotorResponse</a> 2.16.840.1.113883.17.3.5.96</tt><strong class="ph b"> STATIC</strong> (CONF:10331)<div class="p"><p class="lines"><em class="ph i">NEMSIS Trace: EVitals. 21</em></p>
+</div>
+</li>
+</ol>
+ </li>
+<li class="li"> This organizer <strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">component</strong></tt> (CONF:10315) <ol class="ol"><li class="li"> This component <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt> (CONF:10322)<tt class="ph tt"><strong class="ph b">/@code</strong>="55285-1" </tt><em class="ph i">Glasgow coma score special circumstances</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10321)</li>
+<li class="li"> This component <strong class="ph b">MAY</strong> contain zero or more [0..*] <tt class="ph tt"><strong class="ph b">value</strong></tt> with data type CD (CONF:10323)<div class="p"><p class="lines"><em class="ph i">NEMSIS Trace: EVitals.22</em></p>
+</div>
+</li>
+</ol>
+ </li>
+<li class="li"> This organizer <strong class="ph b">SHOULD</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">component</strong></tt> (CONF:10316) <ol class="ol"><li class="li"> This component <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt> (CONF:10319)<tt class="ph tt"><strong class="ph b">/@code</strong>="9269-2" </tt><em class="ph i">Glasgow coma score.total</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10318)</li>
+<li class="li"> This component <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">value</strong></tt> with data type INT (CONF:10320)<div class="p"><p class="lines"><em class="ph i">NEMSIS Trace: EVitals.23<br/>
+Integer value equal to the sum of verbal, motor, and eye</em></p>
+</div>
+</li>
+</ol>
+ </li>
+<li class="li"> This organizer <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">component</strong></tt> (CONF:10317) <ol class="ol"><li class="li"> This component <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt> (CONF:10332)<tt class="ph tt"><strong class="ph b">/@code</strong>="9270-0" </tt><em class="ph i">Glasgow coma score.verbal</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10333)</li>
+<li class="li"> This component <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">value</strong></tt> with data type CO (CONF:10334), where the @code <strong class="ph b">SHALL</strong> be selected from ValueSet<tt class="ph tt"> <a class="xref" href="../terminology/GlasgowComaScoreVerbalResponse.html">GlasgowComaScoreVerbalResponse</a> 2.16.840.1.113883.17.3.5.98</tt><strong class="ph b"> STATIC</strong> (CONF:10335)<div class="p"><p class="lines"><em class="ph i">NEMSIS Trace: EVitals.20</em></p>
+</div>
+</li>
+</ol>
+ </li>
+</ol>
+</li>
+</ol>
+
+</li>
+
+</ol>
+
+
+<p class="p"> </p>
+
+<p class="p"><strong class="ph b">EMS Vital Signs Section example</strong></p>
+
+
+
+<pre class="pre codeblock">&lt;section xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3"&gt;
+  &lt;id root="MDHT" extension="1283934350"/&gt;
+  &lt;title&gt;TEXT FOR TITLE&lt;/title&gt;
+  &lt;text/&gt;
+  &lt;entry&gt;
+    &lt;observation&gt;
+      &lt;code code="67520-7" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Stroke scale overall interpretation"/&gt;
+      &lt;value xsi:type="CD" code="575898166"/&gt;
+      &lt;methodCode codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/&gt;
+    &lt;/observation&gt;
+    &lt;organizer&gt;
+      &lt;statusCode code="completed"/&gt;
+    &lt;/organizer&gt;
+  &lt;/entry&gt;
+&lt;/section&gt;</pre>
+
+</div>
+
+<div class="related-links">
+<div class="familylinks">
+<div class="parentlink"><strong>Parent topic:</strong> <a class="link" href="../content/SectionTemplates.html">SECTION TEMPLATES</a></div>
+</div>
+</div>
+
+</body>
+</html>

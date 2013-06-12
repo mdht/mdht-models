@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Heart Assessment Finding</title>
+<prolog id="prolog">
+<resourceid id="2.16.840.1.113883.17.3.5.30"/>
+</prolog>
+<body>
+<!-- THIS IS GENERATED CONTENT, DO NOT EDIT -->
+<section id="definition">
+<table><tgroup cols="2">
+<colspec colname="col1" colwidth="1*"/>
+<colspec colname="col2" colwidth="4*"/>
+<tbody>
+<row><entry>Value Set</entry><entry>HeartAssessmentFinding - 2.16.840.1.113883.17.3.5.30</entry></row>
+<row><entry>Code System</entry><entry>LOINC - 2.16.840.1.113883.6.1</entry></row>
+<row><entry>Definition</entry><entry>Finding resulting from EMS heart assessment</entry></row>
+</tbody></tgroup></table>
+<table><tgroup cols="3">
+<colspec colname="col1" colwidth="1*"/>
+<colspec colname="col2" colwidth="1*"/>
+<colspec colname="col3" colwidth="2*"/>
+<thead><row>
+<entry>Code</entry><entry>Code System</entry><entry>Print Name</entry>
+</row></thead><tbody>
+<row><entry>LA17239-7</entry><entry>LOINC</entry><entry>Heart sounds decreased</entry></row>
+<row><entry>LA17240-5</entry><entry>LOINC</entry><entry>Murmur-diastolic</entry></row>
+<row><entry>LA17241-3</entry><entry>LOINC</entry><entry>Murmur-systolic</entry></row>
+<row><entry>LA18241-2</entry><entry>LOINC</entry><entry>Clicks</entry></row>
+<row><entry>LA18242-0</entry><entry>LOINC</entry><entry>S1</entry></row>
+<row><entry>LA18243-8</entry><entry>LOINC</entry><entry>S2</entry></row>
+<row><entry>LA18244-6</entry><entry>LOINC</entry><entry>S3</entry></row>
+<row><entry>LA18245-3</entry><entry>LOINC</entry><entry>S4</entry></row>
+<row><entry>LA18246-1</entry><entry>LOINC</entry><entry>Rubs</entry></row>
+<row><entry>LA6626-1</entry><entry>LOINC</entry><entry>Normal</entry></row>
+<row><entry>LA6630-3</entry><entry>LOINC</entry><entry>Not done</entry></row>
+</tbody></tgroup></table>
+</section>
+</body>
+</topic>

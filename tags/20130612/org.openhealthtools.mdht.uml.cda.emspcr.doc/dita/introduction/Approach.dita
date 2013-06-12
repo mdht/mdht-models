@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN"
+ "topic.dtd">
+<topic id="topicId" xml:lang="en-us">
+	<title>Approach</title>
+	<body>
+		<p>We first converted the NEMSIS specification into an analysis model 
+		in the Emergency Medical Services Domain Analysis Model (EMS DAM), 
+		initially balloted through HL7 in May of 2010 and finalized for the release in May 2011. 
+		The static part of the analysis model was then constrained to the HL7 Reference Information Model (RIM) 
+		in a Domain Information Model (DIM), balloted in January, 2011, and reballoted 
+		in September, 2011. Both DAM and DIM are scheduled for publication in 2013, but they 
+		can be found on the HL7 Wiki.</p>
+		<p>This guide is the first implementable specification developed based on the EMS DIM.</p>
+		<p>An initial iteration, balloted in May 2011, supports what is commonly termed “level one” 
+		CDA compliance, i.e., a document with structured header information containing an 
+		unstructured document of some form (whether pdf, image, or other recognized format). In  
+		addition, this iteration supported “level two” compliance, in which human-readable text 
+		information is provided for sections identified in XML. A sender of a document, however, 
+		must choose whether to send the “level one” encapsulated document or the “level two” set 
+		of XML sections: a document containing both is not acceptable.</p>
+		<p>The September, 2011 iteration modeled the sections to “level three,” in which the 
+		sections also include detailed, structured information representing the section text. 
+		This structured information follows standard patterns in such a way that receiving 
+		applications will be able to process specific semantically identified elements for storage 
+		in medical records, application of business rules, or other computable services. This 
+		iteration also includes changes to the level two template assignments, so the
+		May 2011 iteration is no longer correct.</p>
+		<p>Harmonization has been approached semantically rather than syntactically. There are clear
+			parallels, but few exact matches, with the CDA Consolidation project--an effort by the
+			Office of the National Coordinator's Standards &amp; Interoperability initiative in
+			collaboration with HL7 to bring together several similar extant CDA specifications. We
+			expect that LOINC codes will offer the ability to identify consistent information
+			elements, even when the structures they inhabit (templates) may be subject to differing
+			requirements. Similarly, harmonization with the Emergency Department specification
+				<i>Data Elements for Emergency Department Systems</i>(DEEDS) involved use of extant
+			LOINC codes for shared elements. </p>
+		<p>This release is generated from UML models developed in the Open Health Tools (OHT)
+			Model-Driven Health Tools (MDHT) project. The data specifications have been formalized
+			into computational models expressed in UML. These models are used by automated tooling
+			to generate this publication, plus validation tools and Java libraries for
+			implementers.</p>
+		</body>
+</topic>

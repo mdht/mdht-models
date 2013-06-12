@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>EMS Personnel Adverse Event Section - conformance rules</title>
+<shortdesc id="shortdesc">[Section: templateId <tt>2.16.840.1.113883.17.3.10.1.6</tt>]</shortdesc>
+<prolog id="prolog">
+<metadata><category>Section</category></metadata>
+<resourceid id="2.16.840.1.113883.17.3.10.1.6"/>
+</prolog>
+<body>
+<section id="knownSubclasses">
+</section>
+<section id="description">
+</section>
+<ol id="conformance">
+<li><b>SHALL</b> contain exactly one [1..1] templateId (  ) such that it <ol><li><b>SHALL</b> contain exactly one [1..1] <b>@root</b>="2.16.840.1.113883.17.3.10.1.6"</li></ol></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:10698)<tt><b>/@code</b>="67658-5" </tt><i>Exposures or Injuries of EMS Personnel Section</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10697)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>title</b></tt> and <b>SHOULD</b> equal "Exposures or Injuries of EMS Personnel" (CONF:10700)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt> (CONF:10699)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt> (CONF:10702) <ol><li> This entry <b>SHALL</b> conform to <xref href="../DerivedEntry.dita">Derived Entry</xref> template (templateId: <tt>2.16.840.1.1133883.17.3.10.1.24</tt>)</li><li> This entry <b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt> (CONF:10704) <ol><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>)</li><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:10705)<tt><b>/@code</b>="67554-6" </tt><i>EMS personnel exposed or injured</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10706)</li><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type BL (CONF:10707)<p><lines><i>NEMSIS Trace: EOther.05</i></lines></p></li></ol></li></ol>
+</li>
+<li><b>MAY</b> contain exactly one [1..1] <tt><b>entry</b></tt> (CONF:10703) <ol><li> This entry <b>SHALL</b> conform to <xref href="../DerivedEntry.dita">Derived Entry</xref> template (templateId: <tt>2.16.840.1.1133883.17.3.10.1.24</tt>)</li><li> This entry <b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt> (CONF:10708) <ol><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>)</li><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:10710)<tt><b>/@code</b>="67555-3" </tt><i>EMS personnel adverse event type</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10709)</li><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type CD (CONF:10711), where the @code <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/ProviderAdverseEventType.dita">ProviderAdverseEventType</xref> 2.16.840.1.113883.17.3.5.72</tt><b> STATIC</b> (CONF:10712)<p><lines><i>NEMSIS Trace: EOther.06</i></lines></p></li></ol></li></ol>
+</li>
+</ol>
+<ol id="aggregate">
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:10698)<tt><b>/@code</b>="67658-5" </tt><i>Exposures or Injuries of EMS Personnel Section</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10697)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>title</b></tt> and <b>SHOULD</b> equal "Exposures or Injuries of EMS Personnel" (CONF:10700)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt> (CONF:10699)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt> (CONF:10702) <ol><li> This entry <b>SHALL</b> conform to <xref href="../DerivedEntry.dita">Derived Entry</xref> template (templateId: <tt>2.16.840.1.1133883.17.3.10.1.24</tt>)</li><li> This entry <b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt> (CONF:10704) <ol><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>)</li><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:10705)<tt><b>/@code</b>="67554-6" </tt><i>EMS personnel exposed or injured</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10706)</li><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type BL (CONF:10707)<p><lines><i>NEMSIS Trace: EOther.05</i></lines></p></li></ol></li></ol>
+</li>
+<li><b>MAY</b> contain exactly one [1..1] <tt><b>entry</b></tt> (CONF:10703) <ol><li> This entry <b>SHALL</b> conform to <xref href="../DerivedEntry.dita">Derived Entry</xref> template (templateId: <tt>2.16.840.1.1133883.17.3.10.1.24</tt>)</li><li> This entry <b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt> (CONF:10708) <ol><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>)</li><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:10710)<tt><b>/@code</b>="67555-3" </tt><i>EMS personnel adverse event type</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10709)</li><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type CD (CONF:10711), where the @code <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/ProviderAdverseEventType.dita">ProviderAdverseEventType</xref> 2.16.840.1.113883.17.3.5.72</tt><b> STATIC</b> (CONF:10712)<p><lines><i>NEMSIS Trace: EOther.06</i></lines></p></li></ol></li></ol>
+</li>
+</ol>
+<codeblock id="example"><![CDATA[Error: Missing Runtime Class]]></codeblock>
+<section id="changes">
+</section>
+<p><ph id="classformalname">EMS Personnel Adverse Event Section</ph></p>
+<p id="shortdesc">[Section: templateId <tt>2.16.840.1.113883.17.3.10.1.6</tt>]</p>
+</body>
+</topic>

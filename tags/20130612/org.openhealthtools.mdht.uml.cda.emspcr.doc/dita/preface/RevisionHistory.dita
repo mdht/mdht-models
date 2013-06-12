@@ -1,0 +1,353 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!-- This document was created with Syntext Serna Free. -->
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd" []>
+<topic id="topicId" xml:lang="en-us">
+  <title>Revision History</title>
+  <body>
+    <table>
+      <tgroup cols="4">
+        <thead>
+          <row>
+            <entry>Rev</entry>
+            <entry>Date</entry>
+            <entry>By Whom</entry>
+            <entry>Changes</entry>
+          </row>
+        </thead>
+        <tbody>
+          <row>
+            <entry>R1 D1</entry>
+            <entry>May 2011</entry>
+            <entry>Jay Lyle</entry>
+            <entry>Initial draft, level two</entry>
+          </row>
+          <row>
+            <entry>R1 D2</entry>
+            <entry>September 2011</entry>
+            <entry>Jay Lyle</entry>
+            <entry>Revisions from May ballot; extended to level 3</entry>
+          </row>
+          <row>
+            <entry>R1 D3</entry>
+            <entry>December 2011</entry>
+            <entry>Jay Lyle</entry>
+            <entry>Revisions from September ballot</entry>
+          </row>
+          <row>
+            <entry>R1 D4</entry>
+            <entry>June 2012</entry>
+            <entry>Jay Lyle</entry>
+            <entry>Implemented in MDHT</entry>
+          </row>
+        </tbody>
+      </tgroup>
+    </table>
+    <p>A detailed list of changes from the October ballot follows, also noting minor changes applied
+      in the subsequent process of publishing in MDHT. </p>
+    <table id="table_bnh_zkz_sg">
+      <tgroup cols="4">
+        <colspec colnum="1" colname="col1" colwidth="1*"/>
+        <colspec colnum="2" colname="col2" colwidth="24*"/>
+        <colspec colnum="3" colname="col3" colwidth="4*"/>
+        <colspec colnum="4" colname="col4" colwidth="4*"/>
+        <thead>
+          <row>
+            <entry>ID</entry>
+            <entry>Change</entry>
+            <entry>Changed By</entry>
+            <entry>Date Changed</entry>
+          </row>
+        </thead>
+        <tbody>
+          <row>
+            <entry>1</entry>
+            <entry>5/2011 #1: Updated address constraint format</entry>
+            <entry>JLyle</entry>
+            <entry>Jun-11</entry>
+          </row>
+          <row>
+            <entry>2</entry>
+            <entry>5/2011 #2: Updated appendix B</entry>
+            <entry>JLyle</entry>
+            <entry>Jun-11</entry>
+          </row>
+          <row>
+            <entry>3</entry>
+            <entry>5/2011 #3: Called out conformance statements from referenced standards with
+              formatting (shading).</entry>
+            <entry>JLyle</entry>
+            <entry>Jun-11</entry>
+          </row>
+          <row>
+            <entry>4</entry>
+            <entry>5/2011 #4: Changed ID practice constraint from SHALL to SHOULD (was conf-6 to 8;
+              now conf-3 &amp; 4).</entry>
+            <entry>JLyle</entry>
+            <entry>Jun-11</entry>
+          </row>
+          <row>
+            <entry>5</entry>
+            <entry>5/2011 #5: Changed strength of confidentiality code system from SHALL to SHOULD
+              (was conf-12; now conf-8).</entry>
+            <entry>JLyle</entry>
+            <entry>Jun-11</entry>
+          </row>
+          <row>
+            <entry>6</entry>
+            <entry>5/2011 #6: Added constraints to prevent mixed content and support identified
+              address parts and cardinality (all addresses).</entry>
+            <entry>JLyle</entry>
+            <entry>Jun-11</entry>
+          </row>
+          <row>
+            <entry>7</entry>
+            <entry>5/2011 #7: Added regex constraint to ensure field is a telephone number. (Was
+              conf-21; now GHC conf.)</entry>
+            <entry>JLyle</entry>
+            <entry>Jun-11</entry>
+          </row>
+          <row>
+            <entry>8</entry>
+            <entry>5/2011 #8: Provided guidance on family names (was conf-24; now conf-10).</entry>
+            <entry>JLyle</entry>
+            <entry>Jun-11</entry>
+          </row>
+          <row>
+            <entry>9</entry>
+            <entry>5/2011 #9: Use CDC race and ethnicity codes (was conf-28-29; now conf-12)</entry>
+            <entry>JLyle</entry>
+            <entry>Jun-11</entry>
+          </row>
+          <row>
+            <entry>10</entry>
+            <entry>5/2011 #11: “Vocab OK with either dynamic binding or concept domain binding; due
+              to lack of realm administrative body in US, we will use dynamic”</entry>
+            <entry>JLyle</entry>
+            <entry>Jun-11</entry>
+          </row>
+          <row>
+            <entry>11</entry>
+            <entry>Articulated section data as clinical statements</entry>
+            <entry>JLyle</entry>
+            <entry>Jun-11</entry>
+          </row>
+          <row>
+            <entry>12</entry>
+            <entry>Changed template OIDs from IHE to NEMSIS</entry>
+            <entry>JLyle</entry>
+            <entry>Jun-11</entry>
+          </row>
+          <row>
+            <entry>13</entry>
+            <entry>Updated section on approach to nulls and negatives with resulting changes to
+              medications, medical history, and allergies; added appendix for mapping of NEMSIS
+              values.</entry>
+            <entry>JLyle</entry>
+            <entry>Jun-11</entry>
+          </row>
+          <row>
+            <entry>14</entry>
+            <entry>Added EncompassingEncounter/Location/HealthCareFacility/Place</entry>
+            <entry>JLyle</entry>
+            <entry>Jun-11</entry>
+          </row>
+          <row>
+            <entry>15</entry>
+            <entry>Added destination participant</entry>
+            <entry>JLyle</entry>
+            <entry>Jun-11</entry>
+          </row>
+          <row>
+            <entry>16</entry>
+            <entry>9/2011: all typographical changes</entry>
+            <entry>JLyle</entry>
+            <entry>Jun-11</entry>
+          </row>
+          <row>
+            <entry>17</entry>
+            <entry>9/2011 #2: added organizer for non-medication allergies</entry>
+            <entry>JLyle</entry>
+            <entry>Nov-11</entry>
+          </row>
+          <row>
+            <entry>18</entry>
+            <entry>9/2011 # 5: changed ‘Adverse Event’ to ‘Exposures or Injuries of EMS
+              Personnel’</entry>
+            <entry>JLyle</entry>
+            <entry>Nov-11</entry>
+          </row>
+          <row>
+            <entry>19</entry>
+            <entry>9/2011 #6: Updated LOINC codes</entry>
+            <entry>JLyle</entry>
+            <entry>Dec-11</entry>
+          </row>
+          <row>
+            <entry>20</entry>
+            <entry>9/2011 #7, 68: Included vocabularies in appendix</entry>
+            <entry>JLyle</entry>
+            <entry>Jun-12 </entry>
+          </row>
+          <row>
+            <entry>21</entry>
+            <entry>9/2011 #8: Included copyright information for copyrighted IP</entry>
+            <entry>JLyle</entry>
+            <entry>Dec-11</entry>
+          </row>
+          <row>
+            <entry>22</entry>
+            <entry>9/2011 #9: Provide URL for CDA schema for implementers</entry>
+            <entry>JLyle</entry>
+            <entry>Dec-11</entry>
+          </row>
+          <row>
+            <entry>23</entry>
+            <entry>9/2011 #12: Provide URL for LOINC for implementers</entry>
+            <entry>JLyle</entry>
+            <entry>Dec-11</entry>
+          </row>
+          <row>
+            <entry>24</entry>
+            <entry>9/2011 #13: Provide URL for IHE framework for implementers</entry>
+            <entry>JLyle</entry>
+            <entry>Dec-11</entry>
+          </row>
+          <row>
+            <entry>25</entry>
+            <entry>9/2011 #15: Provide examples of new and old constraints (see change #3
+              above)</entry>
+            <entry>JLyle</entry>
+            <entry>Dec-11</entry>
+          </row>
+          <row>
+            <entry>26</entry>
+            <entry>9/2011 #18: Moved description of GHC from 6.2 to 6.1, prior to its first
+              use</entry>
+            <entry>JLyle</entry>
+            <entry>Dec-11</entry>
+          </row>
+          <row>
+            <entry>27</entry>
+            <entry>9/2011 #19: Swapped order of conf-1 (GHC) and conf-2 (document) (really?)</entry>
+            <entry>JLyle</entry>
+            <entry>Dec-11</entry>
+          </row>
+          <row>
+            <entry>28</entry>
+            <entry>9/2011 #22: Updated optionality constraints</entry>
+            <entry>JLyle</entry>
+            <entry>Jun-12 </entry>
+          </row>
+          <row>
+            <entry>29</entry>
+            <entry>9/2011 #23: confirmed tel regex</entry>
+            <entry>JLyle</entry>
+            <entry>Dec-11</entry>
+          </row>
+          <row>
+            <entry>30</entry>
+            <entry>9/2011 #24: Ensure all GHC constraints have reference numbers</entry>
+            <entry>JLyle</entry>
+            <entry>Dec-11</entry>
+          </row>
+          <row>
+            <entry>31</entry>
+            <entry>9/2011 #25: Added explanation for 2nd race code entry</entry>
+            <entry>JLyle</entry>
+            <entry>Dec-11</entry>
+          </row>
+          <row>
+            <entry>32</entry>
+            <entry>9/2011 #29: Added root instructions for dispatch id and performer id
+              (hmm)</entry>
+            <entry>JLyle</entry>
+            <entry>Dec-11</entry>
+          </row>
+          <row>
+            <entry>33</entry>
+            <entry>9/2011 #38: Update value set references with correct format indicating static or
+              dynamic</entry>
+            <entry>JLyle</entry>
+            <entry>Dec-11</entry>
+          </row>
+          <row>
+            <entry>34</entry>
+            <entry>9/2011 #39-46: Updated xpath for entryRelationship/Observation</entry>
+            <entry>JLyle</entry>
+            <entry>Dec-11</entry>
+          </row>
+          <row>
+            <entry>35</entry>
+            <entry>9/2011 #49: added conditional requirement for drug allergy observation</entry>
+            <entry>JLyle</entry>
+            <entry>Dec-11</entry>
+          </row>
+          <row>
+            <entry>36</entry>
+            <entry>9/2011 #50: Changed blood coagulation disorder from SCT to ICD</entry>
+            <entry>JLyle</entry>
+            <entry>Dec-11</entry>
+          </row>
+          <row>
+            <entry>37</entry>
+            <entry>9/2011 #54: Changed pain scale to ordinal</entry>
+            <entry>JLyle</entry>
+            <entry>Dec-11</entry>
+          </row>
+          <row>
+            <entry>38</entry>
+            <entry>9/2011 #55: Corrected Glasgow Coma ranges</entry>
+            <entry>JLyle</entry>
+            <entry>Dec-11</entry>
+          </row>
+          <row>
+            <entry>39</entry>
+            <entry>9/2011 #58: Specified entryRelationship/typeCode Caus Comp* Mfst Refr Rson
+              Subj</entry>
+            <entry>JLyle</entry>
+            <entry>Dec-11</entry>
+          </row>
+          <row>
+            <entry>40</entry>
+            <entry>9/2011 #59, 61: Update conformance criterion numbering</entry>
+            <entry>JLyle</entry>
+            <entry>Jun-12 </entry>
+          </row>
+          <row>
+            <entry>41</entry>
+            <entry>9/2011 #69: Include table of required and optional sections</entry>
+            <entry>JLyle</entry>
+            <entry>Dec-11</entry>
+          </row>
+          <row>
+            <entry>42</entry>
+            <entry>9/2011 #70: Add “open” to template definitions</entry>
+            <entry>Stet</entry>
+            <entry> </entry>
+          </row>
+          <row>
+            <entry>43</entry>
+            <entry>Changed CONF-34 destination entity from id to name</entry>
+            <entry>JLyle</entry>
+            <entry>Dec-11</entry>
+          </row>
+          <row>
+            <entry>44</entry>
+            <entry>Removed "EN" recommendation from language code constraint</entry>
+            <entry>JLyle</entry>
+            <entry>Jun-12</entry>
+            <entry/>
+          </row>
+          <row>
+            <entry>45</entry>
+            <entry>Left Consolidated guidance out of core spec (e.g., TEL regex; requirement to
+              avoid mixed content</entry>
+            <entry>JLyle</entry>
+            <entry>Jun-12</entry>
+            <entry/>
+          </row>
+        </tbody>
+      </tgroup>
+    </table>
+  </body>
+</topic>

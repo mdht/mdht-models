@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Skin Assessment</title>
+<prolog id="prolog">
+<resourceid id="2.16.840.1.113883.17.3.5.25"/>
+</prolog>
+<body>
+<!-- THIS IS GENERATED CONTENT, DO NOT EDIT -->
+<section id="definition">
+<table><tgroup cols="2">
+<colspec colname="col1" colwidth="1*"/>
+<colspec colname="col2" colwidth="4*"/>
+<tbody>
+<row><entry>Value Set</entry><entry>SkinAssessment - 2.16.840.1.113883.17.3.5.25</entry></row>
+<row><entry>Code System</entry><entry>LOINC - 2.16.840.1.113883.6.1</entry></row>
+<row><entry>Definition</entry><entry>Finding resulting from EMS skin assessment</entry></row>
+</tbody></tgroup></table>
+<table><tgroup cols="3">
+<colspec colname="col1" colwidth="1*"/>
+<colspec colname="col2" colwidth="1*"/>
+<colspec colname="col3" colwidth="2*"/>
+<thead><row>
+<entry>Code</entry><entry>Code System</entry><entry>Print Name</entry>
+</row></thead><tbody>
+<row><entry>LA15475-9</entry><entry>LOINC</entry><entry>Cold</entry></row>
+<row><entry>LA17197-7</entry><entry>LOINC</entry><entry>Clammy</entry></row>
+<row><entry>LA17198-5</entry><entry>LOINC</entry><entry>Cyanotic</entry></row>
+<row><entry>LA17199-3</entry><entry>LOINC</entry><entry>Dry</entry></row>
+<row><entry>LA17200-9</entry><entry>LOINC</entry><entry>Red (erythematous)</entry></row>
+<row><entry>LA17201-7</entry><entry>LOINC</entry><entry>Flushed</entry></row>
+<row><entry>LA17202-5</entry><entry>LOINC</entry><entry>Hot</entry></row>
+<row><entry>LA17203-3</entry><entry>LOINC</entry><entry>Jaundiced</entry></row>
+<row><entry>LA17204-1</entry><entry>LOINC</entry><entry>Lividity</entry></row>
+<row><entry>LA17205-8</entry><entry>LOINC</entry><entry>Mottled</entry></row>
+<row><entry>LA17206-6</entry><entry>LOINC</entry><entry>Pale</entry></row>
+<row><entry>LA17207-4</entry><entry>LOINC</entry><entry>Warm</entry></row>
+<row><entry>LA18217-2</entry><entry>LOINC</entry><entry>Diaphoretic</entry></row>
+<row><entry>LA18218-0</entry><entry>LOINC</entry><entry>Poor turgor</entry></row>
+<row><entry>LA18219-8</entry><entry>LOINC</entry><entry>Tenting</entry></row>
+<row><entry>LA6626-1</entry><entry>LOINC</entry><entry>Normal</entry></row>
+<row><entry>LA6630-3</entry><entry>LOINC</entry><entry>Not done</entry></row>
+</tbody></tgroup></table>
+</section>
+</body>
+</topic>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>EMS Current Medication Section - conformance rules</title>
+<shortdesc id="shortdesc">[Section: templateId <tt>2.16.840.1.113883.17.3.10.1.15</tt>]</shortdesc>
+<prolog id="prolog">
+<metadata><category>Section</category></metadata>
+<resourceid id="2.16.840.1.113883.17.3.10.1.15"/>
+</prolog>
+<body>
+<section id="knownSubclasses">
+</section>
+<section id="description">
+</section>
+<ol id="conformance">
+<li><b>SHALL</b> contain exactly one [1..1] templateId (  ) such that it <ol><li><b>SHALL</b> contain exactly one [1..1] <b>@root</b>="2.16.840.1.113883.17.3.10.1.15"</li></ol></li>
+<li><b>SHALL</b> conform to <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.consol.doc/classes/MedicationsSection.html">Consol Medications Section</xref> template (templateId: <tt>2.16.840.1.113883.10.20.22.2.1.1</tt>)</li>
+<li>Contains exactly one [1..1] <tt><b>code</b></tt>
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>title</b></tt> and <b>SHOULD</b> equal "EMS Current Medications Section" (CONF:10219)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt>
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt> (CONF:10220) <ol><li> This entry <b>SHALL</b> conform to <xref href="../DerivedEntry.dita">Derived Entry</xref> template (templateId: <tt>2.16.840.1.1133883.17.3.10.1.24</tt>)</li><li> This entry <b>SHALL</b> contain zero or one [0..1] <tt><b>observation</b></tt> (CONF:10223) <ol><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>)</li><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="67791-4" </tt><i>Currently on medication</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10224)</li><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type BL (CONF:10225)<p><lines><i>If EHistory.12 has the value "None Reported," the value is "False"
+If EHistory.12 has the value "Refused" or "Unable to Complete," the value is "NI"; the
+original value may be recorded in Observation.text.</i></lines></p></li></ol></li></ol>
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt> (CONF:10221) <ol><li> This entry <b>SHALL</b> conform to <xref href="../DerivedEntry.dita">Derived Entry</xref> template (templateId: <tt>2.16.840.1.1133883.17.3.10.1.24</tt>)</li><li> This entry <b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt> (CONF:10226) <ol><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>)</li><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="69749-0" </tt><i>Patient on anticoagulants</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10227)</li><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type BL (CONF:10228)<p><lines><i>NEMSIS Trace: If EHistory.12 has the value "No anticoagulants," the value is False</i></lines></p></li></ol></li></ol>
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt> (CONF:10222) <ol><li> This entry <b>SHALL</b> conform to <xref href="../DerivedEntry.dita">Derived Entry</xref> template (templateId: <tt>2.16.840.1.1133883.17.3.10.1.24</tt>)</li><li> This entry <b>MAY</b> contain zero or more [0..*] <tt><b>substanceAdministration</b></tt> (CONF:10229) <ol><li> Such substanceAdministrations <b>SHALL</b> conform to <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.consol.doc/classes/MedicationActivity.html">Consol Medication Activity</xref> template (templateId: <tt>2.16.840.1.113883.10.20.22.4.16</tt>)</li><li> Such substanceAdministrations <b>MAY</b> contain zero or one [0..1] <tt><b>@negationInd</b></tt> (CONF:10233)<p><lines><i>If EHistory.12 has the value "None Reported," the value is "True"
+This negation of a notional class is parallel to the explicit question "patient on medication"</i></lines></p></li><li> Such substanceAdministrations <b>MAY</b> contain zero or one [0..1] <tt><b>@nullFlavor</b></tt> (CONF:10234)<p><lines><i>If EHistory.12 has the value "Refused" or "Unable to Complete," the value is "NI"; the
+original value may be recorded in SubstanceAdministration.text.
+This nulled notional class is parallel to the explicit question "patient on medication"</i></lines></p></li><li> Such substanceAdministrations <b>SHOULD</b> contain zero or one [0..1] <tt><b>doseQuantity</b></tt> (CONF:10230)<p><lines><i>NEMSIS Trace: EHistory.13, EHistory.14</i></lines></p></li><li> Such substanceAdministrations <b>SHOULD</b> contain zero or one [0..1] <tt><b>routeCode</b></tt> (CONF:10232), where the @code <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/MedicationAdministrationRoute.dita">MedicationAdministrationRoute</xref> 2.16.840.1.113883.17.3.5.43</tt><b> STATIC</b> (CONF:10231)<p><lines><i>NEMSIS Trace: EMedication.15</i></lines></p></li><li> Such substanceAdministrations <b>SHALL</b> contain exactly one [1..1] <tt><b>consumable</b></tt> (CONF:10235) <ol><li> This consumable <b>SHALL</b> contain exactly one [1..1] <tt><b>manufacturedProduct</b></tt> (CONF:10236) <ol><li> This manufacturedProduct <b>SHALL</b> conform to <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.consol.doc/classes/MedicationInformation.html">Consol Medication Information</xref> template (templateId: <tt>2.16.840.1.113883.10.20.22.4.23</tt>)</li><li> This manufacturedProduct <b>SHALL</b> contain exactly one [1..1] <tt><b>manufacturedMaterial</b></tt> (CONF:10237) <ol><li> This manufacturedMaterial <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:10239), where the @code <b>SHALL</b> be selected from (CodeSystem:<tt> 2.16.840.1.113883.6.88 RxNorm</tt>) (CONF:10238)<p><lines><i>NEMSIS Trace: EHistory.12
+Note: all of RxNorm is legal in this field, but NEMSIS provides a selected list at http://www.nemsis.org/v3/resources.html</i></lines></p></li></ol></li></ol> </li></ol></li></ol></li></ol>
+</li>
+</ol>
+<ol id="aggregate">
+<li><b>SHALL</b> conform to <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.consol.doc/classes/MedicationsSectionEntriesOptional.html">Consol Medications Section Entries Optional</xref> template (templateId: <tt>2.16.840.1.113883.10.20.22.2.1</tt>)</li>
+<li><b>SHALL</b> conform to <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.consol.doc/classes/MedicationsSection.html">Consol Medications Section</xref> template (templateId: <tt>2.16.840.1.113883.10.20.22.2.1.1</tt>)</li>
+<li>Contains exactly one [1..1] <tt><b>code</b></tt>
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>title</b></tt> and <b>SHOULD</b> equal "EMS Current Medications Section" (CONF:10219)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt>
+</li>
+<li><b>SHOULD</b> contain zero or more [0..*] <tt><b>entry</b></tt> (CONF:7795, CONF:7573)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../MedicationActivity.dita">Medication Activity</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.16</tt>)</li></ol></li>
+<li><b>SHALL</b> contain at least one [1..*] <tt><b>entry</b></tt> (CONF:7572, CONF:7573)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../MedicationActivity.dita">Medication Activity</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.16</tt>)</li></ol></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt> (CONF:10220) <ol><li> This entry <b>SHALL</b> conform to <xref href="../DerivedEntry.dita">Derived Entry</xref> template (templateId: <tt>2.16.840.1.1133883.17.3.10.1.24</tt>)</li><li> This entry <b>SHALL</b> contain zero or one [0..1] <tt><b>observation</b></tt> (CONF:10223) <ol><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>)</li><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="67791-4" </tt><i>Currently on medication</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10224)</li><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type BL (CONF:10225)<p><lines><i>If EHistory.12 has the value "None Reported," the value is "False"
+If EHistory.12 has the value "Refused" or "Unable to Complete," the value is "NI"; the
+original value may be recorded in Observation.text.</i></lines></p></li></ol></li></ol>
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt> (CONF:10221) <ol><li> This entry <b>SHALL</b> conform to <xref href="../DerivedEntry.dita">Derived Entry</xref> template (templateId: <tt>2.16.840.1.1133883.17.3.10.1.24</tt>)</li><li> This entry <b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt> (CONF:10226) <ol><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>)</li><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="69749-0" </tt><i>Patient on anticoagulants</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10227)</li><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type BL (CONF:10228)<p><lines><i>NEMSIS Trace: If EHistory.12 has the value "No anticoagulants," the value is False</i></lines></p></li></ol></li></ol>
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt> (CONF:10222) <ol><li> This entry <b>SHALL</b> conform to <xref href="../DerivedEntry.dita">Derived Entry</xref> template (templateId: <tt>2.16.840.1.1133883.17.3.10.1.24</tt>)</li><li> This entry <b>MAY</b> contain zero or more [0..*] <tt><b>substanceAdministration</b></tt> (CONF:10229) <ol><li> Such substanceAdministrations <b>SHALL</b> conform to <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.consol.doc/classes/MedicationActivity.html">Consol Medication Activity</xref> template (templateId: <tt>2.16.840.1.113883.10.20.22.4.16</tt>)</li><li> Such substanceAdministrations <b>MAY</b> contain zero or one [0..1] <tt><b>@negationInd</b></tt> (CONF:10233)<p><lines><i>If EHistory.12 has the value "None Reported," the value is "True"
+This negation of a notional class is parallel to the explicit question "patient on medication"</i></lines></p></li><li> Such substanceAdministrations <b>MAY</b> contain zero or one [0..1] <tt><b>@nullFlavor</b></tt> (CONF:10234)<p><lines><i>If EHistory.12 has the value "Refused" or "Unable to Complete," the value is "NI"; the
+original value may be recorded in SubstanceAdministration.text.
+This nulled notional class is parallel to the explicit question "patient on medication"</i></lines></p></li><li> Such substanceAdministrations <b>SHOULD</b> contain zero or one [0..1] <tt><b>doseQuantity</b></tt> (CONF:10230)<p><lines><i>NEMSIS Trace: EHistory.13, EHistory.14</i></lines></p></li><li> Such substanceAdministrations <b>SHOULD</b> contain zero or one [0..1] <tt><b>routeCode</b></tt> (CONF:10232), where the @code <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/MedicationAdministrationRoute.dita">MedicationAdministrationRoute</xref> 2.16.840.1.113883.17.3.5.43</tt><b> STATIC</b> (CONF:10231)<p><lines><i>NEMSIS Trace: EMedication.15</i></lines></p></li><li> Such substanceAdministrations <b>SHALL</b> contain exactly one [1..1] <tt><b>consumable</b></tt> (CONF:10235) <ol><li> This consumable <b>SHALL</b> contain exactly one [1..1] <tt><b>manufacturedProduct</b></tt> (CONF:10236) <ol><li> This manufacturedProduct <b>SHALL</b> conform to <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.consol.doc/classes/MedicationInformation.html">Consol Medication Information</xref> template (templateId: <tt>2.16.840.1.113883.10.20.22.4.23</tt>)</li><li> This manufacturedProduct <b>SHALL</b> contain exactly one [1..1] <tt><b>manufacturedMaterial</b></tt> (CONF:10237) <ol><li> This manufacturedMaterial <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:10239), where the @code <b>SHALL</b> be selected from (CodeSystem:<tt> 2.16.840.1.113883.6.88 RxNorm</tt>) (CONF:10238)<p><lines><i>NEMSIS Trace: EHistory.12
+Note: all of RxNorm is legal in this field, but NEMSIS provides a selected list at http://www.nemsis.org/v3/resources.html</i></lines></p></li></ol></li></ol> </li></ol></li></ol></li></ol>
+</li>
+<li>If medication use is unknown, the appropriate nullFlavor <b>MAY</b> be present (see unknown information in Section 1)</li>
+<li>If medication use is unknown, the appropriate nullFlavor <b>MAY</b> be present (see unknown information in Section 1)</li>
+</ol>
+<codeblock id="example"><![CDATA[Error: Missing Runtime Class]]></codeblock>
+<section id="changes">
+</section>
+<p><ph id="classformalname">EMS Current Medication Section</ph></p>
+<p id="shortdesc">[Section: templateId <tt>2.16.840.1.113883.17.3.10.1.15</tt>]</p>
+</body>
+</topic>

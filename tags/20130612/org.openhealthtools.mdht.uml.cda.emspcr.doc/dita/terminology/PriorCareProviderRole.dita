@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Prior Care Provider Role</title>
+<prolog id="prolog">
+<resourceid id="2.16.840.1.113883.17.3.5.12"/>
+</prolog>
+<body>
+<!-- THIS IS GENERATED CONTENT, DO NOT EDIT -->
+<section id="definition">
+<table><tgroup cols="2">
+<colspec colname="col1" colwidth="1*"/>
+<colspec colname="col2" colwidth="4*"/>
+<tbody>
+<row><entry>Value Set</entry><entry>PriorCareProviderRole - 2.16.840.1.113883.17.3.5.12</entry></row>
+<row><entry>Code System</entry><entry>LOINC - 2.16.840.1.113883.6.1</entry></row>
+<row><entry>Definition</entry><entry>Role of person providing care to a patient before the arrival of EMS personnel</entry></row>
+</tbody></tgroup></table>
+<table><tgroup cols="3">
+<colspec colname="col1" colwidth="1*"/>
+<colspec colname="col2" colwidth="1*"/>
+<colspec colname="col3" colwidth="2*"/>
+<thead><row>
+<entry>Code</entry><entry>Code System</entry><entry>Print Name</entry>
+</row></thead><tbody>
+<row><entry>LA18016-8</entry><entry>LOINC</entry><entry>First responder-fire, law, EMS</entry></row>
+<row><entry>LA18017-6</entry><entry>LOINC</entry><entry>Healthcare professional-non-EMS</entry></row>
+<row><entry>LA18018-4</entry><entry>LOINC</entry><entry>Lay person-non-family</entry></row>
+<row><entry>LA18019-2</entry><entry>LOINC</entry><entry>Other EMS professional - not part of dispatched response</entry></row>
+<row><entry>LA9277-0</entry><entry>LOINC</entry><entry>Family member</entry></row>
+</tbody></tgroup></table>
+</section>
+</body>
+</topic>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Glasgow Coma Score Verbal Response</title>
+<prolog id="prolog">
+<resourceid id="2.16.840.1.113883.17.3.5.98"/>
+</prolog>
+<body>
+<!-- THIS IS GENERATED CONTENT, DO NOT EDIT -->
+<section id="definition">
+<table><tgroup cols="2">
+<colspec colname="col1" colwidth="1*"/>
+<colspec colname="col2" colwidth="4*"/>
+<tbody>
+<row><entry>Value Set</entry><entry>GlasgowComaScoreVerbalResponse - 2.16.840.1.113883.17.3.5.98</entry></row>
+<row><entry>Code System</entry><entry>LOINC - 2.16.840.1.113883.6.1</entry></row>
+<row><entry>Definition</entry><entry>Patient's vocal response to stimulation</entry></row>
+</tbody></tgroup></table>
+<table><tgroup cols="3">
+<colspec colname="col1" colwidth="1*"/>
+<colspec colname="col2" colwidth="1*"/>
+<colspec colname="col3" colwidth="2*"/>
+<thead><row>
+<entry>Code</entry><entry>Code System</entry><entry>Print Name</entry>
+</row></thead><tbody>
+<row><entry>LA17793-3</entry><entry>LOINC</entry><entry>Incomprehensible sounds (&gt;2 yrs); Inconsolable, agitated (&lt;=2 yrs)</entry></row>
+<row><entry>LA17794-1</entry><entry>LOINC</entry><entry>Inappropriate words (&gt;2 yrs); Inconsistently consolable, moaning (&lt;=2 yrs)</entry></row>
+<row><entry>LA17795-8</entry><entry>LOINC</entry><entry>Confused (&gt;2 yrs); Cries but is consolable, inappropriate interactions (&lt;=2 yrs)</entry></row>
+<row><entry>LA17796-6</entry><entry>LOINC</entry><entry>Oriented (&gt;2 yrs); Smiles, oriented to sounds, follows objects, interacts (&lt;=2 yrs)</entry></row>
+<row><entry>LA6557-8</entry><entry>LOINC</entry><entry>No verbal response (&gt;2 yrs); no vocal response (&lt;=2 yrs)</entry></row>
+</tbody></tgroup></table>
+</section>
+</body>
+</topic>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>EMS Protocol Section - conformance rules</title>
+<shortdesc id="shortdesc">[Section: templateId <tt>2.16.840.1.113883.17.3.10.1.7</tt>]</shortdesc>
+<prolog id="prolog">
+<metadata><category>Section</category></metadata>
+<resourceid id="2.16.840.1.113883.17.3.10.1.7"/>
+</prolog>
+<body>
+<section id="knownSubclasses">
+</section>
+<section id="description">
+</section>
+<ol id="conformance">
+<li><b>SHALL</b> contain exactly one [1..1] templateId (  ) such that it <ol><li><b>SHALL</b> contain exactly one [1..1] <b>@root</b>="2.16.840.1.113883.17.3.10.1.7"</li></ol></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="67537-1" </tt><i>EMS Protocol Section</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10713)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>title</b></tt> and <b>SHOULD</b> equal "EMS Protocol Section"
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt>
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt> (CONF:10714) <ol><li> This entry <b>SHALL</b> conform to <xref href="../DerivedEntry.dita">Derived Entry</xref> template (templateId: <tt>2.16.840.1.1133883.17.3.10.1.24</tt>)</li><li> This entry <b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt> (CONF:10717) <ol><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>)</li><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:10719)<tt><b>/@code</b>="67537-1" </tt><i>EMS protocol</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10718)</li><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type CD (CONF:10720), where the @code <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/Protocol.dita">Protocol</xref> 2.16.840.1.113883.17.3.5.73</tt><b> STATIC</b> (CONF:10721)<p><lines><i>NEMSIS Trace: EProtocols.01</i></lines></p></li><li> This observation Contains zero or one [0..1] <tt><b>entryRelationship</b></tt> <ol><li> This entryRelationship <b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt> <ol><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>)</li><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:10723)<tt><b>/@code</b>="67538-9" </tt><i>EMS Protocol age category</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10724)</li><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type CD (CONF:10725), where the @code <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/ProtocolAgeCategory.dita">ProtocolAgeCategory</xref> 2.16.840.1.113883.17.3.5.86</tt><b> STATIC</b> (CONF:10726)<p><lines><i>NEMSIS Trace: EProtocols.02</i></lines></p></li></ol> </li></ol> </li></ol></li></ol>
+</li>
+<li><b>SHALL</b> contain zero or more [0..*] <tt><b>entry</b></tt> (CONF:10716) <ol><li> Such entrys <b>SHALL</b> conform to <xref href="../DerivedEntry.dita">Derived Entry</xref> template (templateId: <tt>2.16.840.1.1133883.17.3.10.1.24</tt>)</li><li> Such entrys <b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt> (CONF:10727) <ol><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>)</li><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:10728)<tt><b>/@code</b>="67553-8" </tt><i>EMS candidate patient registry</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10729)</li><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type CD (CONF:10730), where the @code <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/RegistryType.dita">RegistryType</xref> 2.16.840.1.113883.17.3.5.74</tt><b> STATIC</b> (CONF:10731)<p><lines><i>NEMSIS Trace: EOther.02</i></lines></p></li></ol></li></ol>
+</li>
+</ol>
+<ol id="aggregate">
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="67537-1" </tt><i>EMS Protocol Section</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10713)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>title</b></tt> and <b>SHOULD</b> equal "EMS Protocol Section"
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt>
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt> (CONF:10714) <ol><li> This entry <b>SHALL</b> conform to <xref href="../DerivedEntry.dita">Derived Entry</xref> template (templateId: <tt>2.16.840.1.1133883.17.3.10.1.24</tt>)</li><li> This entry <b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt> (CONF:10717) <ol><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>)</li><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:10719)<tt><b>/@code</b>="67537-1" </tt><i>EMS protocol</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10718)</li><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type CD (CONF:10720), where the @code <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/Protocol.dita">Protocol</xref> 2.16.840.1.113883.17.3.5.73</tt><b> STATIC</b> (CONF:10721)<p><lines><i>NEMSIS Trace: EProtocols.01</i></lines></p></li><li> This observation Contains zero or one [0..1] <tt><b>entryRelationship</b></tt> <ol><li> This entryRelationship <b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt> <ol><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>)</li><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:10723)<tt><b>/@code</b>="67538-9" </tt><i>EMS Protocol age category</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10724)</li><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type CD (CONF:10725), where the @code <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/ProtocolAgeCategory.dita">ProtocolAgeCategory</xref> 2.16.840.1.113883.17.3.5.86</tt><b> STATIC</b> (CONF:10726)<p><lines><i>NEMSIS Trace: EProtocols.02</i></lines></p></li></ol> </li></ol> </li></ol></li></ol>
+</li>
+<li><b>SHALL</b> contain zero or more [0..*] <tt><b>entry</b></tt> (CONF:10716) <ol><li> Such entrys <b>SHALL</b> conform to <xref href="../DerivedEntry.dita">Derived Entry</xref> template (templateId: <tt>2.16.840.1.1133883.17.3.10.1.24</tt>)</li><li> Such entrys <b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt> (CONF:10727) <ol><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>)</li><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:10728)<tt><b>/@code</b>="67553-8" </tt><i>EMS candidate patient registry</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10729)</li><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type CD (CONF:10730), where the @code <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/RegistryType.dita">RegistryType</xref> 2.16.840.1.113883.17.3.5.74</tt><b> STATIC</b> (CONF:10731)<p><lines><i>NEMSIS Trace: EOther.02</i></lines></p></li></ol></li></ol>
+</li>
+</ol>
+<codeblock id="example"><![CDATA[Error: Missing Runtime Class]]></codeblock>
+<section id="changes">
+</section>
+<p><ph id="classformalname">EMS Protocol Section</ph></p>
+<p id="shortdesc">[Section: templateId <tt>2.16.840.1.113883.17.3.10.1.7</tt>]</p>
+</body>
+</topic>

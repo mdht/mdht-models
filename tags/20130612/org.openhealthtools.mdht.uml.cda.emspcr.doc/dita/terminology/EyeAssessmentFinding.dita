@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Eye Assessment Finding</title>
+<prolog id="prolog">
+<resourceid id="2.16.840.1.113883.17.3.5.38"/>
+</prolog>
+<body>
+<!-- THIS IS GENERATED CONTENT, DO NOT EDIT -->
+<section id="definition">
+<table><tgroup cols="2">
+<colspec colname="col1" colwidth="1*"/>
+<colspec colname="col2" colwidth="4*"/>
+<tbody>
+<row><entry>Value Set</entry><entry>EyeAssessmentFinding - 2.16.840.1.113883.17.3.5.38</entry></row>
+<row><entry>Code System</entry><entry>LOINC - 2.16.840.1.113883.6.1</entry></row>
+<row><entry>Definition</entry><entry>Finding resulting from EMS eye assessment</entry></row>
+</tbody></tgroup></table>
+<table><tgroup cols="3">
+<colspec colname="col1" colwidth="1*"/>
+<colspec colname="col2" colwidth="1*"/>
+<colspec colname="col3" colwidth="2*"/>
+<thead><row>
+<entry>Code</entry><entry>Code System</entry><entry>Print Name</entry>
+</row></thead><tbody>
+<row><entry>LA14698-7</entry><entry>LOINC</entry><entry>Missing</entry></row>
+<row><entry>LA15255-5</entry><entry>LOINC</entry><entry>Reactive</entry></row>
+<row><entry>LA15256-3</entry><entry>LOINC</entry><entry>Nonreactive</entry></row>
+<row><entry>LA17275-1</entry><entry>LOINC</entry><entry>1 mm</entry></row>
+<row><entry>LA17276-9</entry><entry>LOINC</entry><entry>2 mm</entry></row>
+<row><entry>LA17277-7</entry><entry>LOINC</entry><entry>3 mm</entry></row>
+<row><entry>LA17278-5</entry><entry>LOINC</entry><entry>4 mm</entry></row>
+<row><entry>LA17279-3</entry><entry>LOINC</entry><entry>5 mm</entry></row>
+<row><entry>LA17280-1</entry><entry>LOINC</entry><entry>6 mm</entry></row>
+<row><entry>LA17281-9</entry><entry>LOINC</entry><entry>7 mm</entry></row>
+<row><entry>LA17282-7</entry><entry>LOINC</entry><entry>Clouded</entry></row>
+<row><entry>LA17283-5</entry><entry>LOINC</entry><entry>Hyphema</entry></row>
+<row><entry>LA17284-3</entry><entry>LOINC</entry><entry>Open globe</entry></row>
+<row><entry>LA17285-0</entry><entry>LOINC</entry><entry>Pupil-irregular/teardrop</entry></row>
+<row><entry>LA17710-7</entry><entry>LOINC</entry><entry>Blind</entry></row>
+<row><entry>LA18225-5</entry><entry>LOINC</entry><entry>Deformity</entry></row>
+<row><entry>LA18226-3</entry><entry>LOINC</entry><entry>Foreign body</entry></row>
+<row><entry>LA18250-3</entry><entry>LOINC</entry><entry>Cataract present</entry></row>
+<row><entry>LA18251-1</entry><entry>LOINC</entry><entry>Dysconjugate gaze</entry></row>
+<row><entry>LA18253-7</entry><entry>LOINC</entry><entry>Jaundiced sclera</entry></row>
+<row><entry>LA18254-5</entry><entry>LOINC</entry><entry>Nonreactive prosthetic</entry></row>
+<row><entry>LA18255-2</entry><entry>LOINC</entry><entry>Nystagmus noted</entry></row>
+<row><entry>LA18256-0</entry><entry>LOINC</entry><entry>PERRL</entry></row>
+<row><entry>LA18257-8</entry><entry>LOINC</entry><entry>Sluggish</entry></row>
+<row><entry>LA18258-6</entry><entry>LOINC</entry><entry>8 mm or ></entry></row>
+<row><entry>LA6630-3</entry><entry>LOINC</entry><entry>Not done</entry></row>
+</tbody></tgroup></table>
+</section>
+</body>
+</topic>

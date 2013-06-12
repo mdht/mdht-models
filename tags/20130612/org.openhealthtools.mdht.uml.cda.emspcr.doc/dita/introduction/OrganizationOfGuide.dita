@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN"
+ "topic.dtd">
+<topic id="topicId" xml:lang="en-us">
+	<title>Organization of This Guide</title>
+	<body>
+		<p>
+			The requirements as laid out in the body of this document are subject
+			to change per the policy on implementation guides (see section 13.02"
+			Draft Standard for Trial Use Documents" within the HL7 Governance and
+			Operations Manual,
+			<xref format="pdf"
+				href="http://www.hl7.org/documentcenter/public/membership/HL7_Governance_and_Operations_Manual.pdf">http://www.hl7.org/documentcenter/public/membership/HL7_Governance_and_Operations_Manual.pdf
+			</xref>
+			).
+		</p>
+	</body>
+	<topic id="templates">
+		<title>Templates</title>
+		<body>
+			<p>Templates are organized by document (see Document Templates), by
+				section (see Section Templates), and by clinical statements (see
+				Clinical Statement Templates). Within a section, templates are
+				arranged hierarchically, where a more specific template is nested
+				under the more generic template that it conforms to. </p>
+			<p>	This guide uses templates sparingly--primarily for section management. 
+			When requirements are identified to use templates for more granular 
+			elements (e.g., observations), the benefit of those requiremenst will
+			be assessed against the burden of maintaining those templates.</p>
+		</body>
+	</topic>
+	<topic id="vocabulary">
+		<title>Vocabulary and Value Sets</title>
+		<body>
+			<p>Vocabularies recommended in this guide are derived from standard
+				vocabularies where possible. Most questions, however, are fairly
+				specific to the EMS domain. These questions have been encoded in
+				clinical LOINC, and the answer sets have been encoded there as
+				well, and they are included in this document. We plan to submit 
+				these sets to the US extension of SNOMED CT. The LOINC answer 
+				codes will remain valid identifiers.</p>
+				<p>For properties bound to large value sets or systems (e.g., 
+				ICD-10 PCS), NEMSIS provides suggested subsets at NEMSIS.org, 
+				under "V3 resources." These are not to be used to validate values 
+				(all values in the value set are valid), but as suggested aids to
+				providing a manageable user interface. All RxNorm drugs are valid,
+				for instance, but you might wish to provide a selection of drugs
+				commonly found on EMS vehicles for easy selection.</p>
+		</body>
+	</topic>
+</topic>
