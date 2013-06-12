@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Location Type Observation - conformance rules</title>
+<shortdesc id="shortdesc">[Observation: templateId <tt>2.16.840.1.1133883.17.3.10.1.88</tt>]</shortdesc>
+<prolog id="prolog">
+<metadata><category>Observation</category></metadata>
+<resourceid id="2.16.840.1.1133883.17.3.10.1.88"/>
+</prolog>
+<body>
+<section id="knownSubclasses">
+</section>
+<section id="description">
+</section>
+<ol id="conformance">
+<li><b>SHALL</b> contain exactly one [1..1] templateId (  ) such that it <ol><li><b>SHALL</b> contain exactly one [1..1] <b>@root</b>="2.16.840.1.1133883.17.3.10.1.88"</li></ol></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="eScene.09" </tt><i>Location type</i> (CodeSystem:<tt> </tt>)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>value1</b></tt> with data type CD, where the @code <b>SHALL</b> be selected from (CodeSystem:<tt> 2.16.840.1.113883.6.90 ICD-10 CM</tt>)
+<ul><li><p><lines><i>See NEMSIS recommended subset at http://nemsis.org/v3/resources.html</i></lines></p></li></ul></li>
+</ol>
+<ol id="aggregate">
+<li>Contains exactly one [1..1] <tt><b>@classCode</b></tt> with data type ActClassObservation
+</li>
+<li>Contains exactly one [1..1] <tt><b>@moodCode</b></tt> with data type x_ActMoodDocumentObservation
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="eScene.09" </tt><i>Location type</i> (CodeSystem:<tt> </tt>)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>value1</b></tt> with data type CD, where the @code <b>SHALL</b> be selected from (CodeSystem:<tt> 2.16.840.1.113883.6.90 ICD-10 CM</tt>)
+<ul><li><p><lines><i>See NEMSIS recommended subset at http://nemsis.org/v3/resources.html</i></lines></p></li></ul></li>
+</ol>
+<section id="tableconformance"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="8" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><colspec colname="col2" colnum="2" /><colspec colname="col3" colnum="3" /><colspec colname="col4" colnum="4" /><colspec colname="col5" colnum="5" /><colspec colname="col6" colnum="6" /><colspec colname="col7" colnum="7" /><thead> <row><entry namest="col0" nameend="col7" >emspcr::LocationTypeObservation</entry>  </row>  <row><entry namest="col0" nameend="col7" >cda::observation[cda:templateId/@root = 2.16.840.1.1133883.17.3.10.1.88]/</entry>  </row>  <row><entry>Name</entry><entry>XPath</entry><entry>Cardinality</entry><entry>Severity</entry><entry>Nullable</entry><entry>Data Type</entry><entry>Conformance</entry><entry>Value(s)</entry></row></thead><tbody><row><entry>code</entry><entry>code</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>CD</entry><entry></entry><entry> null eScene.09</entry></row> 
+<row><entry>value1</entry><entry>value1</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>CD</entry><entry></entry><entry>ICD-10 CM 2.16.840.1.113883.6.90 </entry></row> 
+<row><entry>locationTypeObservation</entry><entry>locationTypeObservation</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>LocationTypeObservation</entry><entry></entry><entry> </entry></row> 
+</tbody></tgroup></table></p></section>
+<codeblock id="example"><![CDATA[<observation xmlns="urn:hl7-org:v3">
+  <templateId root="2.16.840.1.1133883.17.3.10.1.88"/>
+  <id root="MDHT" extension="1246235161"/>
+  <code code="eScene.09" codeSystemName="" displayName="Location type"/>
+  <effectiveTime>
+    <low value="2013"/>
+    <high value="2013"/>
+  </effectiveTime>
+</observation>]]></codeblock>
+<section id="changes">
+</section>
+<p><ph id="classformalname">Location Type Observation</ph></p>
+<p id="shortdesc">[Observation: templateId <tt>2.16.840.1.1133883.17.3.10.1.88</tt>]</p>
+</body>
+</topic>

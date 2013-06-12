@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Additional Vital Signs Organizer - conformance rules</title>
+<shortdesc id="shortdesc">[Organizer: templateId <tt>2.16.840.1.1133883.17.3.10.1.30</tt>]</shortdesc>
+<prolog id="prolog">
+<metadata><category>Organizer</category></metadata>
+<resourceid id="2.16.840.1.1133883.17.3.10.1.30"/>
+</prolog>
+<body>
+<section id="knownSubclasses">
+</section>
+<section id="description">
+</section>
+<ol id="conformance">
+<li><b>SHALL</b> contain exactly one [1..1] templateId (  ) such that it <ol><li><b>SHALL</b> contain exactly one [1..1] <b>@root</b>="2.16.840.1.1133883.17.3.10.1.30"</li></ol></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>)
+</li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>effectiveTime</b></tt>
+<ul><li><p><lines><i>NEMSIS Trace: EVitals.01</i></lines></p></li></ul></li>
+<li><b>MAY</b> contain exactly one [1..1] <tt><b>component</b></tt>
+<ol>
+<li>Contains exactly one [1..1] <xref href="../StrokeScore.dita">Stroke Score</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.163</tt>)</li></ol></li>
+<li><b>MAY</b> contain exactly one [1..1] <tt><b>component</b></tt>
+<ol>
+<li>Contains exactly one [1..1] <xref href="../PainScore.dita">Pain Score</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.164</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>component</b></tt>
+<ol>
+<li>Contains exactly one [1..1] <xref href="../LevelOfResponsiveness.dita">Level Of Responsiveness</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.165</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>component</b></tt>
+<ol>
+<li>Contains exactly one [1..1] <xref href="../BloodGlucose.dita">Blood Glucose</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.166</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>component</b></tt>
+<ol>
+<li>Contains exactly one [1..1] <xref href="../CarbonMonoxide.dita">Carbon Monoxide</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.167</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>component</b></tt>
+<ol>
+<li>Contains exactly one [1..1] <xref href="../CarbonDioxide.dita">Carbon Dioxide</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.168</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>component</b></tt>
+<ol>
+<li>Contains exactly one [1..1] <xref href="../CardiacRhythm.dita">Cardiac Rhythm</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.169</tt>)</li></ol></li>
+<li><b>SHALL</b> contain zero or more [0..*] <tt><b>component</b></tt>
+<ol>
+<li>Contains exactly one [1..1] <xref href="../GlasgowComaScoreOrganizer.dita">Glasgow Coma Score Organizer</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.170</tt>)</li></ol></li>
+</ol>
+<ol id="aggregate">
+<li>Contains exactly one [1..1] <tt><b>@classCode</b></tt> with data type x_ActClassDocumentEntryOrganizer
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>)
+</li>
+<li>Contains exactly one [1..1] <tt><b>statusCode</b></tt> with data type CS
+</li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>effectiveTime</b></tt>
+<ul><li><p><lines><i>NEMSIS Trace: EVitals.01</i></lines></p></li></ul></li>
+<li><b>MAY</b> contain exactly one [1..1] <tt><b>component</b></tt>
+<ol>
+<li>Contains exactly one [1..1] <xref href="../StrokeScore.dita">Stroke Score</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.163</tt>)</li></ol></li>
+<li><b>MAY</b> contain exactly one [1..1] <tt><b>component</b></tt>
+<ol>
+<li>Contains exactly one [1..1] <xref href="../PainScore.dita">Pain Score</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.164</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>component</b></tt>
+<ol>
+<li>Contains exactly one [1..1] <xref href="../LevelOfResponsiveness.dita">Level Of Responsiveness</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.165</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>component</b></tt>
+<ol>
+<li>Contains exactly one [1..1] <xref href="../BloodGlucose.dita">Blood Glucose</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.166</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>component</b></tt>
+<ol>
+<li>Contains exactly one [1..1] <xref href="../CarbonMonoxide.dita">Carbon Monoxide</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.167</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>component</b></tt>
+<ol>
+<li>Contains exactly one [1..1] <xref href="../CarbonDioxide.dita">Carbon Dioxide</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.168</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>component</b></tt>
+<ol>
+<li>Contains exactly one [1..1] <xref href="../CardiacRhythm.dita">Cardiac Rhythm</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.169</tt>)</li></ol></li>
+<li><b>SHALL</b> contain zero or more [0..*] <tt><b>component</b></tt>
+<ol>
+<li>Contains exactly one [1..1] <xref href="../GlasgowComaScoreOrganizer.dita">Glasgow Coma Score Organizer</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.170</tt>)</li></ol></li>
+</ol>
+<section id="tableconformance"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="8" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><colspec colname="col2" colnum="2" /><colspec colname="col3" colnum="3" /><colspec colname="col4" colnum="4" /><colspec colname="col5" colnum="5" /><colspec colname="col6" colnum="6" /><colspec colname="col7" colnum="7" /><thead> <row><entry namest="col0" nameend="col7" >emspcr::AdditionalVitalSignsOrganizer</entry>  </row>  <row><entry namest="col0" nameend="col7" >cda::organizer[cda:templateId/@root = 2.16.840.1.1133883.17.3.10.1.30]/</entry>  </row>  <row><entry>Name</entry><entry>XPath</entry><entry>Cardinality</entry><entry>Severity</entry><entry>Nullable</entry><entry>Data Type</entry><entry>Conformance</entry><entry>Value(s)</entry></row></thead><tbody><row><entry>moodCode</entry><entry>@moodCode</entry><entry>1..1</entry><entry>SHALL</entry><entry>NO</entry><entry>ActMood</entry><entry></entry><entry> APT</entry></row> 
+<row><entry>effectiveTime</entry><entry>effectiveTime</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>IVL_TS</entry><entry></entry><entry> </entry></row> 
+<row><entry>additionalVitalSignsOrganizer</entry><entry>additionalVitalSignsOrganizer</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>AdditionalVitalSignsOrganizer</entry><entry></entry><entry> </entry></row> 
+<row><entry>BloodGlucoseComponent</entry><entry>BloodGlucoseComponent</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>BloodGlucose</entry><entry></entry><entry> </entry></row> 
+<row><entry>CarbonDioxideComponent</entry><entry>CarbonDioxideComponent</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>CarbonDioxide</entry><entry></entry><entry> </entry></row> 
+<row><entry>CarbonMonoxideComponent</entry><entry>CarbonMonoxideComponent</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>CarbonMonoxide</entry><entry></entry><entry> </entry></row> 
+<row><entry>CardiacRhythmComponent</entry><entry>CardiacRhythmComponent</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>CardiacRhythm</entry><entry></entry><entry> </entry></row> 
+<row><entry>glasgowComaScoreOrganizer</entry><entry>glasgowComaScoreOrganizer</entry><entry>0..*</entry><entry>SHALL</entry><entry>YES</entry><entry>GlasgowComaScoreOrganizer</entry><entry></entry><entry> </entry></row> 
+<row><entry>LevelOfResponsivenessComponent</entry><entry>LevelOfResponsivenessComponent</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>LevelOfResponsiveness</entry><entry></entry><entry> </entry></row> 
+<row><entry>PainScoreComponent</entry><entry>PainScoreComponent</entry><entry>1..1</entry><entry>MAY</entry><entry>YES</entry><entry>PainScore</entry><entry></entry><entry> </entry></row> 
+<row><entry>StrokeScoreComponent</entry><entry>StrokeScoreComponent</entry><entry>1..1</entry><entry>MAY</entry><entry>YES</entry><entry>StrokeScore</entry><entry></entry><entry> </entry></row> 
+</tbody></tgroup></table></p></section>
+<codeblock id="example"><![CDATA[<organizer xmlns="urn:hl7-org:v3" moodCode="EVN">
+  <templateId root="2.16.840.1.1133883.17.3.10.1.30"/>
+  <id root="MDHT" extension="5492590"/>
+  <statusCode code="completed"/>
+  <effectiveTime>
+    <low value="2013"/>
+    <high value="2013"/>
+  </effectiveTime>
+  <component>
+    <observation moodCode="EVN">
+      <templateId root="2.16.840.1.1133883.17.3.10.1.163"/>
+      <id root="MDHT" extension="1965896270"/>
+      <code code="67520-7" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Stroke scale overall interpretation"/>
+      <effectiveTime>
+        <low value="2013"/>
+        <high value="2013"/>
+      </effectiveTime>
+      <methodCode codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+    </observation>
+  </component>
+  <component>
+    <observation moodCode="EVN">
+      <templateId root="2.16.840.1.1133883.17.3.10.1.164"/>
+      <id root="MDHT" extension="1958935208"/>
+      <code code="56840-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Pain severity verbal numeric scale"/>
+      <effectiveTime>
+        <low value="2013"/>
+        <high value="2013"/>
+      </effectiveTime>
+    </observation>
+  </component>
+  <component>
+    <observation moodCode="EVN">
+      <templateId root="2.16.840.1.1133883.17.3.10.1.165"/>
+      <id root="MDHT" extension="1118236436"/>
+      <code code="67775-7" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Level of responsiveness"/>
+      <effectiveTime>
+        <low value="2013"/>
+        <high value="2013"/>
+      </effectiveTime>
+    </observation>
+  </component>
+  <component>
+    <observation moodCode="EVN">
+      <templateId root="2.16.840.1.1133883.17.3.10.1.166"/>
+      <id root="MDHT" extension="239043636"/>
+      <code code="2339-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Glucose"/>
+      <effectiveTime>
+        <low value="2013"/>
+        <high value="2013"/>
+      </effectiveTime>
+    </observation>
+  </component>
+  <component>
+    <observation moodCode="EVN">
+      <templateId root="2.16.840.1.1133883.17.3.10.1.167"/>
+      <id root="MDHT" extension="1402224928"/>
+      <code code="19911-7" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Diffusion capacity.carbon monoxide"/>
+      <effectiveTime>
+        <low value="2013"/>
+        <high value="2013"/>
+      </effectiveTime>
+    </observation>
+  </component>
+  <component>
+    <observation moodCode="EVN">
+      <templateId root="2.16.840.1.1133883.17.3.10.1.168"/>
+      <id root="MDHT" extension="1380736077"/>
+      <code code="19889-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Carbon dioxide/Gas.total.at end expiration"/>
+      <effectiveTime>
+        <low value="2013"/>
+        <high value="2013"/>
+      </effectiveTime>
+    </observation>
+  </component>
+  <component>
+    <observation moodCode="EVN">
+      <templateId root="2.16.840.1.1133883.17.3.10.1.169"/>
+      <id root="MDHT" extension="1178130690"/>
+      <code code="67519-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Cardiac rhythm"/>
+      <effectiveTime>
+        <low value="2013"/>
+        <high value="2013"/>
+      </effectiveTime>
+      <methodCode codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+      <participant/>
+    </observation>
+  </component>
+  <component>
+    <organizer>
+      <templateId root="2.16.840.1.1133883.17.3.10.1.170"/>
+      <id root="MDHT" extension="1582902467"/>
+      <statusCode code="completed"/>
+      <effectiveTime>
+        <low value="2013"/>
+        <high value="2013"/>
+      </effectiveTime>
+      <component>
+        <observation moodCode="EVN">
+          <templateId root="2.16.840.1.1133883.17.3.10.1.160"/>
+          <id root="MDHT" extension="996003254"/>
+          <code code="9267-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Glasgow coma score.eye opening"/>
+          <effectiveTime>
+            <low value="2013"/>
+            <high value="2013"/>
+          </effectiveTime>
+        </observation>
+      </component>
+      <component>
+        <observation moodCode="EVN">
+          <templateId root="2.16.840.1.1133883.17.3.10.1.176"/>
+          <id root="MDHT" extension="2437622"/>
+          <code code="9268-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Glasgow coma score.motor"/>
+          <effectiveTime>
+            <low value="2013"/>
+            <high value="2013"/>
+          </effectiveTime>
+        </observation>
+      </component>
+      <component>
+        <observation moodCode="EVN">
+          <templateId root="2.16.840.1.1133883.17.3.10.1.159"/>
+          <id root="MDHT" extension="1715390631"/>
+          <code code="55285-1" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Glasgow coma score special circumstances"/>
+          <effectiveTime>
+            <low value="2013"/>
+            <high value="2013"/>
+          </effectiveTime>
+        </observation>
+      </component>
+      <component>
+        <observation moodCode="EVN">
+          <templateId root="2.16.840.1.1133883.17.3.10.1.158"/>
+          <id root="MDHT" extension="1802401976"/>
+          <code code="9269-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Glasgow coma score.total"/>
+          <effectiveTime>
+            <low value="2013"/>
+            <high value="2013"/>
+          </effectiveTime>
+        </observation>
+      </component>
+      <component>
+        <observation moodCode="EVN">
+          <templateId root="2.16.840.1.1133883.17.3.10.1.162"/>
+          <id root="MDHT" extension="341041248"/>
+          <code code="9270-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Glasgow coma score.verbal"/>
+          <effectiveTime>
+            <low value="2013"/>
+            <high value="2013"/>
+          </effectiveTime>
+        </observation>
+      </component>
+    </organizer>
+  </component>
+</organizer>]]></codeblock>
+<section id="changes">
+</section>
+<p><ph id="classformalname">Additional Vital Signs Organizer</ph></p>
+<p id="shortdesc">[Organizer: templateId <tt>2.16.840.1.1133883.17.3.10.1.30</tt>]</p>
+</body>
+</topic>

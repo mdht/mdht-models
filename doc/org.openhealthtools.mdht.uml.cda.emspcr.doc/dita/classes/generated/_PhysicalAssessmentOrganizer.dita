@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Physical Assessment Organizer - conformance rules</title>
+<shortdesc id="shortdesc">[Organizer: templateId <tt>2.16.840.1.1133883.17.3.10.1.78</tt>]</shortdesc>
+<prolog id="prolog">
+<metadata><category>Organizer</category></metadata>
+<resourceid id="2.16.840.1.1133883.17.3.10.1.78"/>
+</prolog>
+<body>
+<section id="knownSubclasses">
+</section>
+<section id="description">
+</section>
+<ol id="conformance">
+<li><b>SHALL</b> contain exactly one [1..1] templateId (  ) such that it <ol><li><b>SHALL</b> contain exactly one [1..1] <b>@root</b>="2.16.840.1.1133883.17.3.10.1.78"</li></ol></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>component</b></tt> <ol><li> This component <b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref href="../PatientBodyWeight.dita">Patient Body Weight</xref><ol>
+<li>Contains exactly one [1..1] <xref href="../PatientBodyWeight.dita">Patient Body Weight</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.178</tt>)</li></ol></li></ol>
+</li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>component</b></tt> <ol><li> This component <b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref href="../LengthBasedPatientBodyWeightClass.dita">Length Based Patient Body Weight Class</xref><ol>
+<li>Contains exactly one [1..1] <xref href="../LengthBasedPatientBodyWeightClass.dita">Length Based Patient Body Weight Class</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.110</tt>)</li></ol></li></ol>
+</li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>component</b></tt>
+<ol>
+<li>Contains exactly one [1..1] <xref href="../SkinAssessment.dita">Skin Assessment</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.180</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>component</b></tt> <ol><li> This component <b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref href="../HeadAssessment.dita">Head Assessment</xref><ol>
+<li>Contains exactly one [1..1] <xref href="../HeadAssessment.dita">Head Assessment</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.113</tt>)</li></ol></li></ol>
+</li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>component</b></tt> <ol><li> This component <b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref href="../FaceAssessment.dita">Face Assessment</xref><ol>
+<li>Contains exactly one [1..1] <xref href="../FaceAssessment.dita">Face Assessment</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.112</tt>)</li></ol></li></ol>
+</li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>component</b></tt> <ol><li> This component <b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref href="../NeckAssessment.dita">Neck Assessment</xref><ol>
+<li>Contains exactly one [1..1] <xref href="../NeckAssessment.dita">Neck Assessment</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.114</tt>)</li></ol></li></ol>
+</li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>component</b></tt> <ol><li> This component <b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref href="../ChestAndLungsAssessment.dita">Chest And Lungs Assessment</xref><ol>
+<li>Contains exactly one [1..1] <xref href="../ChestAndLungsAssessment.dita">Chest And Lungs Assessment</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.115</tt>)</li></ol></li></ol>
+</li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>component</b></tt> <ol><li> This component <b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref href="../HeartAssessment.dita">Heart Assessment</xref><ol>
+<li>Contains exactly one [1..1] <xref href="../HeartAssessment.dita">Heart Assessment</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.116</tt>)</li></ol></li></ol>
+</li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>component</b></tt> <ol><li> This component <b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref href="../AbdomenAssessment.dita">Abdomen Assessment</xref><ol>
+<li>Contains exactly one [1..1] <xref href="../AbdomenAssessment.dita">Abdomen Assessment</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.117</tt>)</li></ol></li></ol>
+</li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>component</b></tt> <ol><li> This component <b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref href="../PelvicAndGenitourinaryAssessment.dita">Pelvic And Genitourinary Assessment</xref><ol>
+<li>Contains exactly one [1..1] <xref href="../PelvicAndGenitourinaryAssessment.dita">Pelvic And Genitourinary Assessment</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.118</tt>)</li></ol></li></ol>
+</li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>component</b></tt> <ol><li> This component <b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref href="../BackAndSpineAssessment.dita">Back And Spine Assessment</xref><ol>
+<li>Contains exactly one [1..1] <xref href="../BackAndSpineAssessment.dita">Back And Spine Assessment</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.119</tt>)</li></ol></li></ol>
+</li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>component</b></tt> <ol><li> This component <b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref href="../ExtremitiesAssessment.dita">Extremities Assessment</xref><ol>
+<li>Contains exactly one [1..1] <xref href="../ExtremitiesAssessment.dita">Extremities Assessment</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.120</tt>)</li></ol></li></ol>
+</li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>component</b></tt> <ol><li> This component <b>MAY</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref href="../EyeAssessment.dita">Eye Assessment</xref><ol>
+<li>Contains exactly one [1..1] <xref href="../EyeAssessment.dita">Eye Assessment</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.121</tt>)</li></ol></li></ol>
+</li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>component</b></tt> <ol><li> This component <b>MAY</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref href="../MentalStatusAssessment.dita">Mental Status Assessment</xref><ol>
+<li>Contains exactly one [1..1] <xref href="../MentalStatusAssessment.dita">Mental Status Assessment</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.122</tt>)</li></ol></li></ol>
+</li>
+</ol>
+<ol id="aggregate">
+<li>Contains exactly one [1..1] <tt><b>@classCode</b></tt> with data type x_ActClassDocumentEntryOrganizer
+</li>
+<li>Contains exactly one [1..1] <tt><b>@moodCode</b></tt> with data type ActMood
+</li>
+<li>Contains exactly one [1..1] <tt><b>statusCode</b></tt> with data type CS
+</li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>component</b></tt> <ol><li> This component <b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref href="../PatientBodyWeight.dita">Patient Body Weight</xref><ol>
+<li>Contains exactly one [1..1] <xref href="../PatientBodyWeight.dita">Patient Body Weight</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.178</tt>)</li></ol></li></ol>
+</li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>component</b></tt> <ol><li> This component <b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref href="../LengthBasedPatientBodyWeightClass.dita">Length Based Patient Body Weight Class</xref><ol>
+<li>Contains exactly one [1..1] <xref href="../LengthBasedPatientBodyWeightClass.dita">Length Based Patient Body Weight Class</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.110</tt>)</li></ol></li></ol>
+</li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>component</b></tt>
+<ol>
+<li>Contains exactly one [1..1] <xref href="../SkinAssessment.dita">Skin Assessment</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.180</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>component</b></tt> <ol><li> This component <b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref href="../HeadAssessment.dita">Head Assessment</xref><ol>
+<li>Contains exactly one [1..1] <xref href="../HeadAssessment.dita">Head Assessment</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.113</tt>)</li></ol></li></ol>
+</li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>component</b></tt> <ol><li> This component <b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref href="../FaceAssessment.dita">Face Assessment</xref><ol>
+<li>Contains exactly one [1..1] <xref href="../FaceAssessment.dita">Face Assessment</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.112</tt>)</li></ol></li></ol>
+</li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>component</b></tt> <ol><li> This component <b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref href="../NeckAssessment.dita">Neck Assessment</xref><ol>
+<li>Contains exactly one [1..1] <xref href="../NeckAssessment.dita">Neck Assessment</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.114</tt>)</li></ol></li></ol>
+</li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>component</b></tt> <ol><li> This component <b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref href="../ChestAndLungsAssessment.dita">Chest And Lungs Assessment</xref><ol>
+<li>Contains exactly one [1..1] <xref href="../ChestAndLungsAssessment.dita">Chest And Lungs Assessment</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.115</tt>)</li></ol></li></ol>
+</li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>component</b></tt> <ol><li> This component <b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref href="../HeartAssessment.dita">Heart Assessment</xref><ol>
+<li>Contains exactly one [1..1] <xref href="../HeartAssessment.dita">Heart Assessment</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.116</tt>)</li></ol></li></ol>
+</li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>component</b></tt> <ol><li> This component <b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref href="../AbdomenAssessment.dita">Abdomen Assessment</xref><ol>
+<li>Contains exactly one [1..1] <xref href="../AbdomenAssessment.dita">Abdomen Assessment</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.117</tt>)</li></ol></li></ol>
+</li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>component</b></tt> <ol><li> This component <b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref href="../PelvicAndGenitourinaryAssessment.dita">Pelvic And Genitourinary Assessment</xref><ol>
+<li>Contains exactly one [1..1] <xref href="../PelvicAndGenitourinaryAssessment.dita">Pelvic And Genitourinary Assessment</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.118</tt>)</li></ol></li></ol>
+</li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>component</b></tt> <ol><li> This component <b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref href="../BackAndSpineAssessment.dita">Back And Spine Assessment</xref><ol>
+<li>Contains exactly one [1..1] <xref href="../BackAndSpineAssessment.dita">Back And Spine Assessment</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.119</tt>)</li></ol></li></ol>
+</li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>component</b></tt> <ol><li> This component <b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref href="../ExtremitiesAssessment.dita">Extremities Assessment</xref><ol>
+<li>Contains exactly one [1..1] <xref href="../ExtremitiesAssessment.dita">Extremities Assessment</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.120</tt>)</li></ol></li></ol>
+</li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>component</b></tt> <ol><li> This component <b>MAY</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref href="../EyeAssessment.dita">Eye Assessment</xref><ol>
+<li>Contains exactly one [1..1] <xref href="../EyeAssessment.dita">Eye Assessment</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.121</tt>)</li></ol></li></ol>
+</li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>component</b></tt> <ol><li> This component <b>MAY</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref href="../MentalStatusAssessment.dita">Mental Status Assessment</xref><ol>
+<li>Contains exactly one [1..1] <xref href="../MentalStatusAssessment.dita">Mental Status Assessment</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.122</tt>)</li></ol></li></ol>
+</li>
+</ol>
+<section id="tableconformance"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="8" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><colspec colname="col2" colnum="2" /><colspec colname="col3" colnum="3" /><colspec colname="col4" colnum="4" /><colspec colname="col5" colnum="5" /><colspec colname="col6" colnum="6" /><colspec colname="col7" colnum="7" /><thead> <row><entry namest="col0" nameend="col7" >emspcr::PhysicalAssessmentOrganizer</entry>  </row>  <row><entry namest="col0" nameend="col7" >cda::organizer[cda:templateId/@root = 2.16.840.1.1133883.17.3.10.1.78]/</entry>  </row>  <row><entry>Name</entry><entry>XPath</entry><entry>Cardinality</entry><entry>Severity</entry><entry>Nullable</entry><entry>Data Type</entry><entry>Conformance</entry><entry>Value(s)</entry></row></thead><tbody><row><entry>component1</entry><entry>component1</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>BodyWeightComponent</entry><entry></entry><entry> </entry></row> 
+<row><entry>component10</entry><entry>component10</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>PelvicAndGenitourinaryAssessmentComponent</entry><entry></entry><entry> </entry></row> 
+<row><entry>component11</entry><entry>component11</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>BackAndSpineAssessmentComponent</entry><entry></entry><entry> </entry></row> 
+<row><entry>component12</entry><entry>component12</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>ExtremitiesAssessmentComponent</entry><entry></entry><entry> </entry></row> 
+<row><entry>component13</entry><entry>component13</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>EyeAssessmentComponent</entry><entry></entry><entry> </entry></row> 
+<row><entry>component14</entry><entry>component14</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>MentalStatusAssessmentComponent</entry><entry></entry><entry> </entry></row> 
+<row><entry>component2</entry><entry>component2</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>LengthBasedPatientBodyWeightClassComponent</entry><entry></entry><entry> </entry></row> 
+<row><entry>component3</entry><entry>component3</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>SkinAssessment</entry><entry></entry><entry> </entry></row> 
+<row><entry>component4</entry><entry>component4</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>HeadAssessmentComponent</entry><entry></entry><entry> </entry></row> 
+<row><entry>component5</entry><entry>component5</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>FaceAssessmentComponent</entry><entry></entry><entry> </entry></row> 
+<row><entry>component6</entry><entry>component6</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>NeckAssessmentComponent</entry><entry></entry><entry> </entry></row> 
+<row><entry>component7</entry><entry>component7</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>ChestAndLungsAssessmentComponent</entry><entry></entry><entry> </entry></row> 
+<row><entry>component8</entry><entry>component8</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>HeartAssessmentComponent</entry><entry></entry><entry> </entry></row> 
+<row><entry>component9</entry><entry>component9</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>AbdomenAssessmentComponent</entry><entry></entry><entry> </entry></row> 
+<row><entry>physicalAssessmentOrganizer</entry><entry>physicalAssessmentOrganizer</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>PhysicalAssessmentOrganizer</entry><entry></entry><entry> </entry></row> 
+</tbody></tgroup></table></p></section>
+<codeblock id="example"><![CDATA[<organizer xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3">
+  <templateId root="2.16.840.1.1133883.17.3.10.1.78"/>
+  <id root="MDHT" extension="127954634"/>
+  <statusCode code="completed"/>
+  <effectiveTime>
+    <low value="2013"/>
+    <high value="2013"/>
+  </effectiveTime>
+  <component>
+    <observation>
+      <code code="1965130518"/>
+      <value xsi:type="PQ"/>
+    </observation>
+  </component>
+  <component>
+    <observation>
+      <code code="715833158"/>
+      <effectiveTime>
+        <low value="2013"/>
+        <high value="2013"/>
+      </effectiveTime>
+    </observation>
+  </component>
+  <component>
+    <templateId root="null"/>
+    <observation>
+      <code code="610657932"/>
+      <effectiveTime>
+        <low value="2013"/>
+        <high value="2013"/>
+      </effectiveTime>
+    </observation>
+  </component>
+  <component>
+    <observation>
+      <code code="1037972492"/>
+      <effectiveTime>
+        <low value="2013"/>
+        <high value="2013"/>
+      </effectiveTime>
+      <value xsi:type="CD" code="2003718168"/>
+    </observation>
+  </component>
+  <component>
+    <observation>
+      <code code="497374310"/>
+      <effectiveTime>
+        <low value="2013"/>
+        <high value="2013"/>
+      </effectiveTime>
+    </observation>
+  </component>
+  <component>
+    <observation>
+      <code code="1702005624"/>
+      <effectiveTime>
+        <low value="2013"/>
+        <high value="2013"/>
+      </effectiveTime>
+    </observation>
+  </component>
+  <component>
+    <observation>
+      <code code="1031649629"/>
+      <effectiveTime>
+        <low value="2013"/>
+        <high value="2013"/>
+      </effectiveTime>
+      <value xsi:type="CD" code="1937639935"/>
+    </observation>
+  </component>
+  <component>
+    <observation>
+      <code code="1141811528"/>
+      <effectiveTime>
+        <low value="2013"/>
+        <high value="2013"/>
+      </effectiveTime>
+    </observation>
+  </component>
+  <component>
+    <observation>
+      <code code="1387447831"/>
+      <effectiveTime>
+        <low value="2013"/>
+        <high value="2013"/>
+      </effectiveTime>
+      <value xsi:type="CD" code="1648028207"/>
+    </observation>
+  </component>
+  <component>
+    <observation>
+      <code code="716324203"/>
+      <effectiveTime>
+        <low value="2013"/>
+        <high value="2013"/>
+      </effectiveTime>
+      <value xsi:type="CD" code="1723278845"/>
+      <targetSiteCode code="1076358897"/>
+    </observation>
+  </component>
+  <component>
+    <observation>
+      <code code="1883572980"/>
+      <effectiveTime>
+        <low value="2013"/>
+        <high value="2013"/>
+      </effectiveTime>
+      <targetSiteCode code="504697774"/>
+    </observation>
+  </component>
+  <component>
+    <observation>
+      <code code="1034333675"/>
+      <effectiveTime>
+        <low value="2013"/>
+        <high value="2013"/>
+      </effectiveTime>
+      <value xsi:type="CD" code="1315470553"/>
+      <targetSiteCode code="822179870"/>
+    </observation>
+  </component>
+  <component>
+    <observation>
+      <code code="1039250755"/>
+    </observation>
+  </component>
+  <component>
+    <observation moodCode="EVN">
+      <templateId root="2.16.840.1.1133883.17.3.10.1.180"/>
+      <id root="MDHT" extension="1944117407"/>
+      <code code="67524-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+      <effectiveTime>
+        <low value="2013"/>
+        <high value="2013"/>
+      </effectiveTime>
+    </observation>
+  </component>
+</organizer>]]></codeblock>
+<section id="changes">
+</section>
+<p><ph id="classformalname">Physical Assessment Organizer</ph></p>
+<p id="shortdesc">[Organizer: templateId <tt>2.16.840.1.1133883.17.3.10.1.78</tt>]</p>
+</body>
+</topic>

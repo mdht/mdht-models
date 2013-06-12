@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Disposition Section - conformance rules</title>
+<shortdesc id="shortdesc">[Section: templateId <tt>2.16.840.1.113883.17.3.10.1.4</tt>]</shortdesc>
+<prolog id="prolog">
+<metadata><category>Section</category></metadata>
+<resourceid id="2.16.840.1.113883.17.3.10.1.4"/>
+</prolog>
+<body>
+<section id="knownSubclasses">
+</section>
+<section id="description">
+</section>
+<ol id="conformance">
+<li><b>SHALL</b> contain exactly one [1..1] templateId (  ) such that it <ol><li><b>SHALL</b> contain exactly one [1..1] <b>@root</b>="2.16.840.1.113883.17.3.10.1.4"</li></ol></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:10652)<tt><b>/@code</b>="67796-3" </tt><i>EMS Disposition Section</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10651)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>title</b></tt> and <b>SHOULD</b> equal "EMS Disposition" (CONF:10654)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt> (CONF:10653)
+</li>
+<li><b>MAY</b> contain exactly one [1..1] <tt><b>entry</b></tt> (CONF:10662)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../TransportMethodObservation.dita">Transport Method Observation</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.34</tt>)</li></ol></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt>
+<ol>
+<li>Contains exactly one [1..1] <xref href="../NumberOfPatientsObservation.dita">Number Of Patients Observation</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.31</tt>)</li></ol></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt>
+<ol>
+<li>Contains exactly one [1..1] <xref href="../IncidentDispositionObservation.dita">Incident Disposition Observation</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.32</tt>)</li></ol></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt>
+<ol>
+<li>Contains exactly one [1..1] <xref href="../TransportModeObservation.dita">Transport Mode Observation</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.33</tt>)</li></ol></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt>
+<ol>
+<li>Contains exactly one [1..1] <xref href="../TransportMethodObservation.dita">Transport Method Observation</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.34</tt>)</li></ol></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt>
+<ol>
+<li>Contains exactly one [1..1] <xref href="../ReasonForChoosingDestinationObservation.dita">Reason For Choosing Destination Observation</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.35</tt>)</li></ol></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt>
+<ol>
+<li>Contains exactly one [1..1] <xref href="../PrearrivalActivationObservation.dita">Prearrival Activation Observation</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.36</tt>)</li></ol></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt>
+<ol>
+<li>Contains exactly one [1..1] <xref href="../PatientConditionChangeAtDestinationObservation.dita">Patient Condition Change At Destination Observation</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.37</tt>)</li></ol></li>
+</ol>
+<ol id="aggregate">
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:10652)<tt><b>/@code</b>="67796-3" </tt><i>EMS Disposition Section</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10651)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>title</b></tt> and <b>SHOULD</b> equal "EMS Disposition" (CONF:10654)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt> (CONF:10653)
+</li>
+<li><b>MAY</b> contain exactly one [1..1] <tt><b>entry</b></tt> (CONF:10662)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../TransportMethodObservation.dita">Transport Method Observation</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.34</tt>)</li></ol></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt>
+<ol>
+<li>Contains exactly one [1..1] <xref href="../NumberOfPatientsObservation.dita">Number Of Patients Observation</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.31</tt>)</li></ol></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt>
+<ol>
+<li>Contains exactly one [1..1] <xref href="../IncidentDispositionObservation.dita">Incident Disposition Observation</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.32</tt>)</li></ol></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt>
+<ol>
+<li>Contains exactly one [1..1] <xref href="../TransportModeObservation.dita">Transport Mode Observation</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.33</tt>)</li></ol></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt>
+<ol>
+<li>Contains exactly one [1..1] <xref href="../TransportMethodObservation.dita">Transport Method Observation</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.34</tt>)</li></ol></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt>
+<ol>
+<li>Contains exactly one [1..1] <xref href="../ReasonForChoosingDestinationObservation.dita">Reason For Choosing Destination Observation</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.35</tt>)</li></ol></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt>
+<ol>
+<li>Contains exactly one [1..1] <xref href="../PrearrivalActivationObservation.dita">Prearrival Activation Observation</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.36</tt>)</li></ol></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt>
+<ol>
+<li>Contains exactly one [1..1] <xref href="../PatientConditionChangeAtDestinationObservation.dita">Patient Condition Change At Destination Observation</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.37</tt>)</li></ol></li>
+</ol>
+<section id="tableconformance"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="8" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><colspec colname="col2" colnum="2" /><colspec colname="col3" colnum="3" /><colspec colname="col4" colnum="4" /><colspec colname="col5" colnum="5" /><colspec colname="col6" colnum="6" /><colspec colname="col7" colnum="7" /><thead> <row><entry namest="col0" nameend="col7" >emspcr::DispositionSection</entry>  </row>  <row><entry namest="col0" nameend="col7" >/cda:ClinicalDocument/cda:component/cda:structuredBody/cda:component/cda:section[cda:templateId/@root = 2.16.840.1.113883.17.3.10.1.4]/</entry>  </row>  <row><entry>Name</entry><entry>XPath</entry><entry>Cardinality</entry><entry>Severity</entry><entry>Nullable</entry><entry>Data Type</entry><entry>Conformance</entry><entry>Value(s)</entry></row></thead><tbody><row><entry>code</entry><entry>code</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>CE</entry><entry>CONF:10651</entry><entry>LOINC 2.16.840.1.113883.6.1 67796-3</entry></row> 
+<row><entry>title</entry><entry>title</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>ST</entry><entry>CONF:10654</entry><entry> MISSINGTYPE</entry></row> 
+<row><entry>DispositionSection</entry><entry>DispositionSection</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>DispositionSection</entry><entry>CONF:10020</entry><entry> </entry></row> 
+<row><entry>entry4</entry><entry>cda:entry/cda:observation[cda:templateId/@root = 2.16.840.1.1133883.17.3.10.1.34]</entry><entry>1..1</entry><entry>MAY</entry><entry>YES</entry><entry>TransportMethodObservation</entry><entry>CONF:10662</entry><entry> </entry></row> 
+<row><entry>incidentDispositionObservation</entry><entry>cda:entry/cda:observation[cda:templateId/@root = 2.16.840.1.1133883.17.3.10.1.32]</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>IncidentDispositionObservation</entry><entry></entry><entry> </entry></row> 
+<row><entry>numberOfPatientsObservation</entry><entry>cda:entry/cda:observation[cda:templateId/@root = 2.16.840.1.1133883.17.3.10.1.31]</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>NumberOfPatientsObservation</entry><entry></entry><entry> </entry></row> 
+<row><entry>patientConditionChangeAtDestinationObservation</entry><entry>cda:entry/cda:observation[cda:templateId/@root = 2.16.840.1.1133883.17.3.10.1.37]</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>PatientConditionChangeAtDestinationObservation</entry><entry></entry><entry> </entry></row> 
+<row><entry>prearrivalActivationObservation</entry><entry>cda:entry/cda:observation[cda:templateId/@root = 2.16.840.1.1133883.17.3.10.1.36]</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>PrearrivalActivationObservation</entry><entry></entry><entry> </entry></row> 
+<row><entry>reasonForChoosingDestinationObservation</entry><entry>cda:entry/cda:observation[cda:templateId/@root = 2.16.840.1.1133883.17.3.10.1.35]</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>ReasonForChoosingDestinationObservation</entry><entry></entry><entry> </entry></row> 
+<row><entry>text</entry><entry>text</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>StrucDocText</entry><entry>CONF:10653</entry><entry> </entry></row> 
+<row><entry>transportMethodObservation</entry><entry>cda:entry/cda:observation[cda:templateId/@root = 2.16.840.1.1133883.17.3.10.1.34]</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>TransportMethodObservation</entry><entry></entry><entry> </entry></row> 
+<row><entry>transportModeObservation</entry><entry>cda:entry/cda:observation[cda:templateId/@root = 2.16.840.1.1133883.17.3.10.1.33]</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>TransportModeObservation</entry><entry></entry><entry> </entry></row> 
+</tbody></tgroup></table></p></section>
+<codeblock id="example"><![CDATA[<section xmlns="urn:hl7-org:v3">
+  <templateId root="2.16.840.1.113883.17.3.10.1.4"/>
+  <id root="MDHT" extension="1730768164"/>
+  <code code="67796-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="EMS Disposition Section"/>
+  <title>EMS Disposition</title>
+  <text/>
+  <entry>
+    <observation moodCode="EVN">
+      <templateId root="2.16.840.1.1133883.17.3.10.1.34"/>
+      <id root="MDHT" extension="565543676"/>
+      <code code="67549-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="EMS transport method"/>
+      <text>Text Value</text>
+      <effectiveTime>
+        <low value="2013"/>
+        <high value="2013"/>
+      </effectiveTime>
+    </observation>
+  </entry>
+  <entry>
+    <observation moodCode="EVN">
+      <templateId root="2.16.840.1.1133883.17.3.10.1.31"/>
+      <id root="MDHT" extension="1408887512"/>
+      <code code="67547-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="EMS Number of patients"/>
+      <text>Text Value</text>
+      <effectiveTime>
+        <low value="2013"/>
+        <high value="2013"/>
+      </effectiveTime>
+    </observation>
+  </entry>
+  <entry>
+    <observation moodCode="EVN">
+      <templateId root="2.16.840.1.1133883.17.3.10.1.32"/>
+      <id root="MDHT" extension="23811206"/>
+      <code code="67548-8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="EMS incident disposition"/>
+      <text>Text Value</text>
+      <effectiveTime>
+        <low value="2013"/>
+        <high value="2013"/>
+      </effectiveTime>
+    </observation>
+  </entry>
+  <entry>
+    <observation moodCode="EVN">
+      <templateId root="2.16.840.1.1133883.17.3.10.1.33"/>
+      <id root="MDHT" extension="548257335"/>
+      <code code="67550-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="EMS transport mode"/>
+      <text>Text Value</text>
+      <effectiveTime>
+        <low value="2013"/>
+        <high value="2013"/>
+      </effectiveTime>
+    </observation>
+  </entry>
+  <entry>
+    <observation moodCode="EVN">
+      <templateId root="2.16.840.1.1133883.17.3.10.1.34"/>
+      <id root="MDHT" extension="2140095286"/>
+      <code code="67549-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="EMS transport method"/>
+      <text>Text Value</text>
+      <effectiveTime>
+        <low value="2013"/>
+        <high value="2013"/>
+      </effectiveTime>
+    </observation>
+  </entry>
+  <entry>
+    <observation moodCode="EVN">
+      <templateId root="2.16.840.1.1133883.17.3.10.1.35"/>
+      <id root="MDHT" extension="1853636312"/>
+      <code code="67552-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="EMS reason for choosing destination"/>
+      <text>Text Value</text>
+      <effectiveTime>
+        <low value="2013"/>
+        <high value="2013"/>
+      </effectiveTime>
+    </observation>
+  </entry>
+  <entry>
+    <observation moodCode="EVN">
+      <templateId root="2.16.840.1.1133883.17.3.10.1.36"/>
+      <id root="MDHT" extension="2106291837"/>
+      <code code="69462-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="EMS prearrival activation performed"/>
+      <text>Text Value</text>
+      <effectiveTime>
+        <low value="2013"/>
+        <high value="2013"/>
+      </effectiveTime>
+    </observation>
+  </entry>
+  <entry>
+    <observation moodCode="EVN">
+      <templateId root="2.16.840.1.1133883.17.3.10.1.37"/>
+      <id root="MDHT" extension="726728686"/>
+      <code code="67551-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="EMS patient condition change at destination"/>
+      <text>Text Value</text>
+      <effectiveTime>
+        <low value="2013"/>
+        <high value="2013"/>
+      </effectiveTime>
+    </observation>
+  </entry>
+</section>]]></codeblock>
+<section id="changes">
+</section>
+<p><ph id="classformalname">Disposition Section</ph></p>
+<p id="shortdesc">[Section: templateId <tt>2.16.840.1.113883.17.3.10.1.4</tt>]</p>
+</body>
+</topic>
