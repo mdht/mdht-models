@@ -35,93 +35,106 @@ import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
  */
 public class LengthBasedPatientBodyWeightClassImpl extends ObservationImpl implements LengthBasedPatientBodyWeightClass {
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	protected LengthBasedPatientBodyWeightClassImpl() {
 		super();
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	@Override
 	protected EClass eStaticClass() {
 		return EmspcrPackage.Literals.LENGTH_BASED_PATIENT_BODY_WEIGHT_CLASS;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateLengthBasedPatientBodyWeightClassTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return LengthBasedPatientBodyWeightClassOperations.validateLengthBasedPatientBodyWeightClassTemplateId(this, diagnostics, context);
+	* @generated
+	*/
+	public boolean validateLengthBasedPatientBodyWeightClassTemplateId(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return LengthBasedPatientBodyWeightClassOperations.validateLengthBasedPatientBodyWeightClassTemplateId(
+			this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateLengthBasedPatientBodyWeightClassCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return LengthBasedPatientBodyWeightClassOperations.validateLengthBasedPatientBodyWeightClassCodeP(this, diagnostics, context);
+	* @generated
+	*/
+	public boolean validateLengthBasedPatientBodyWeightClassCodeP(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return LengthBasedPatientBodyWeightClassOperations.validateLengthBasedPatientBodyWeightClassCodeP(
+			this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateLengthBasedPatientBodyWeightClassCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return LengthBasedPatientBodyWeightClassOperations.validateLengthBasedPatientBodyWeightClassCode(this, diagnostics, context);
+	* @generated
+	*/
+	public boolean validateLengthBasedPatientBodyWeightClassCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return LengthBasedPatientBodyWeightClassOperations.validateLengthBasedPatientBodyWeightClassCode(
+			this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateLengthBasedPatientBodyWeightClassValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return LengthBasedPatientBodyWeightClassOperations.validateLengthBasedPatientBodyWeightClassValue(this, diagnostics, context);
+	* @generated
+	*/
+	public boolean validateLengthBasedPatientBodyWeightClassValue(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return LengthBasedPatientBodyWeightClassOperations.validateLengthBasedPatientBodyWeightClassValue(
+			this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateLengthBasedPatientBodyWeightClassEffectiveTime(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return LengthBasedPatientBodyWeightClassOperations.validateLengthBasedPatientBodyWeightClassEffectiveTime(this, diagnostics, context);
+	* @generated
+	*/
+	public boolean validateLengthBasedPatientBodyWeightClassEffectiveTime(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return LengthBasedPatientBodyWeightClassOperations.validateLengthBasedPatientBodyWeightClassEffectiveTime(
+			this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateLengthBasedPatientBodyWeightClassMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return LengthBasedPatientBodyWeightClassOperations.validateLengthBasedPatientBodyWeightClassMoodCode(this, diagnostics, context);
+	* @generated
+	*/
+	public boolean validateLengthBasedPatientBodyWeightClassMoodCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return LengthBasedPatientBodyWeightClassOperations.validateLengthBasedPatientBodyWeightClassMoodCode(
+			this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public LengthBasedPatientBodyWeightClass init() {
-	    return Initializer.Util.init(this);
+		return Initializer.Util.init(this);
 	}
-    /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public LengthBasedPatientBodyWeightClass init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
-} //LengthBasedPatientBodyWeightClassImpl
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public LengthBasedPatientBodyWeightClass init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+		Initializer.Util.init(this, initializers);
+		return this;
+	}
+} // LengthBasedPatientBodyWeightClassImpl

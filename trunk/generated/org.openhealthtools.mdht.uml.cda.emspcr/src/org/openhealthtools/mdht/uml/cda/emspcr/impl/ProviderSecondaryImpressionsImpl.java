@@ -35,76 +35,92 @@ import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
  */
 public class ProviderSecondaryImpressionsImpl extends ObservationImpl implements ProviderSecondaryImpressions {
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	protected ProviderSecondaryImpressionsImpl() {
 		super();
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	@Override
 	protected EClass eStaticClass() {
 		return EmspcrPackage.Literals.PROVIDER_SECONDARY_IMPRESSIONS;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateProviderSecondaryImpressionsTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProviderSecondaryImpressionsOperations.validateProviderSecondaryImpressionsTemplateId(this, diagnostics, context);
+	* @generated
+	*/
+	public boolean validateProviderSecondaryImpressionsTemplateId(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ProviderSecondaryImpressionsOperations.validateProviderSecondaryImpressionsTemplateId(
+			this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateProviderSecondaryImpressionsCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProviderSecondaryImpressionsOperations.validateProviderSecondaryImpressionsCodeP(this, diagnostics, context);
+		return ProviderSecondaryImpressionsOperations.validateProviderSecondaryImpressionsCodeP(
+			this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateProviderSecondaryImpressionsCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProviderSecondaryImpressionsOperations.validateProviderSecondaryImpressionsCode(this, diagnostics, context);
+		return ProviderSecondaryImpressionsOperations.validateProviderSecondaryImpressionsCode(
+			this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateProviderSecondaryImpressionsValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProviderSecondaryImpressionsOperations.validateProviderSecondaryImpressionsValue(this, diagnostics, context);
+		return ProviderSecondaryImpressionsOperations.validateProviderSecondaryImpressionsValue(
+			this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateProviderSecondaryImpressionsValueP(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProviderSecondaryImpressionsOperations.validateProviderSecondaryImpressionsValueP(this, diagnostics, context);
+		return ProviderSecondaryImpressionsOperations.validateProviderSecondaryImpressionsValueP(
+			this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateProviderSecondaryImpressionsMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProviderSecondaryImpressionsOperations.validateProviderSecondaryImpressionsMoodCode(this, diagnostics, context);
+		return ProviderSecondaryImpressionsOperations.validateProviderSecondaryImpressionsMoodCode(
+			this, diagnostics, context);
+	}
+
+	/**
+	* <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	* @generated
+	*/
+	public ProviderSecondaryImpressions init() {
+		return Initializer.Util.init(this);
 	}
 
 	/**
@@ -112,16 +128,8 @@ public class ProviderSecondaryImpressionsImpl extends ObservationImpl implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ProviderSecondaryImpressions init() {
-	    return Initializer.Util.init(this);
+	public ProviderSecondaryImpressions init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+		Initializer.Util.init(this, initializers);
+		return this;
 	}
-    /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public ProviderSecondaryImpressions init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
-} //ProviderSecondaryImpressionsImpl
+} // ProviderSecondaryImpressionsImpl

@@ -35,67 +35,77 @@ import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
  */
 public class PriorCPRImpl extends ObservationImpl implements PriorCPR {
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	protected PriorCPRImpl() {
 		super();
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	@Override
 	protected EClass eStaticClass() {
 		return EmspcrPackage.Literals.PRIOR_CPR;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validatePriorCPRPriorCPRProviderParticipation(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	* @generated
+	*/
+	public boolean validatePriorCPRPriorCPRProviderParticipation(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return PriorCPROperations.validatePriorCPRPriorCPRProviderParticipation(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validatePriorCPRTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PriorCPROperations.validatePriorCPRTemplateId(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validatePriorCPRCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PriorCPROperations.validatePriorCPRCode(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validatePriorCPRValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PriorCPROperations.validatePriorCPRValue(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validatePriorCPRMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PriorCPROperations.validatePriorCPRMoodCode(this, diagnostics, context);
+	}
+
+	/**
+	* <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	* @generated
+	*/
+	public PriorCPR init() {
+		return Initializer.Util.init(this);
 	}
 
 	/**
@@ -103,16 +113,8 @@ public class PriorCPRImpl extends ObservationImpl implements PriorCPR {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public PriorCPR init() {
-	    return Initializer.Util.init(this);
+	public PriorCPR init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+		Initializer.Util.init(this, initializers);
+		return this;
 	}
-    /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public PriorCPR init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
-} //PriorCPRImpl
+} // PriorCPRImpl

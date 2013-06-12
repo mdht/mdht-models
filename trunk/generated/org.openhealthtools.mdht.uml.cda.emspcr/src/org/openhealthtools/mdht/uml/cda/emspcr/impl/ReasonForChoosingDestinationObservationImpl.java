@@ -33,95 +33,109 @@ import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
  *
  * @generated
  */
-public class ReasonForChoosingDestinationObservationImpl extends ObservationImpl implements ReasonForChoosingDestinationObservation {
+public class ReasonForChoosingDestinationObservationImpl extends ObservationImpl implements
+		ReasonForChoosingDestinationObservation {
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	protected ReasonForChoosingDestinationObservationImpl() {
 		super();
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	@Override
 	protected EClass eStaticClass() {
 		return EmspcrPackage.Literals.REASON_FOR_CHOOSING_DESTINATION_OBSERVATION;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateReasonForChoosingDestinationObservationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ReasonForChoosingDestinationObservationOperations.validateReasonForChoosingDestinationObservationTemplateId(this, diagnostics, context);
+	* @generated
+	*/
+	public boolean validateReasonForChoosingDestinationObservationTemplateId(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ReasonForChoosingDestinationObservationOperations.validateReasonForChoosingDestinationObservationTemplateId(
+			this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateReasonForChoosingDestinationObservationCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ReasonForChoosingDestinationObservationOperations.validateReasonForChoosingDestinationObservationCodeP(this, diagnostics, context);
+	* @generated
+	*/
+	public boolean validateReasonForChoosingDestinationObservationCodeP(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ReasonForChoosingDestinationObservationOperations.validateReasonForChoosingDestinationObservationCodeP(
+			this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateReasonForChoosingDestinationObservationCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ReasonForChoosingDestinationObservationOperations.validateReasonForChoosingDestinationObservationCode(this, diagnostics, context);
+	* @generated
+	*/
+	public boolean validateReasonForChoosingDestinationObservationCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ReasonForChoosingDestinationObservationOperations.validateReasonForChoosingDestinationObservationCode(
+			this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateReasonForChoosingDestinationObservationValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ReasonForChoosingDestinationObservationOperations.validateReasonForChoosingDestinationObservationValue(this, diagnostics, context);
+	* @generated
+	*/
+	public boolean validateReasonForChoosingDestinationObservationValue(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ReasonForChoosingDestinationObservationOperations.validateReasonForChoosingDestinationObservationValue(
+			this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateReasonForChoosingDestinationObservationValueP(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ReasonForChoosingDestinationObservationOperations.validateReasonForChoosingDestinationObservationValueP(this, diagnostics, context);
+	* @generated
+	*/
+	public boolean validateReasonForChoosingDestinationObservationValueP(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ReasonForChoosingDestinationObservationOperations.validateReasonForChoosingDestinationObservationValueP(
+			this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateReasonForChoosingDestinationObservationMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ReasonForChoosingDestinationObservationOperations.validateReasonForChoosingDestinationObservationMoodCode(this, diagnostics, context);
+	* @generated
+	*/
+	public boolean validateReasonForChoosingDestinationObservationMoodCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ReasonForChoosingDestinationObservationOperations.validateReasonForChoosingDestinationObservationMoodCode(
+			this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public ReasonForChoosingDestinationObservation init() {
-	    return Initializer.Util.init(this);
+		return Initializer.Util.init(this);
 	}
-    /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public ReasonForChoosingDestinationObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
-} //ReasonForChoosingDestinationObservationImpl
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ReasonForChoosingDestinationObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+		Initializer.Util.init(this, initializers);
+		return this;
+	}
+} // ReasonForChoosingDestinationObservationImpl

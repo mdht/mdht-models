@@ -35,78 +35,103 @@ import org.openhealthtools.mdht.uml.cda.emspcr.operations.ProceduresPerformedSec
  *
  * @generated
  */
-public class ProceduresPerformedSectionImpl extends ProcedureDescriptionSectionImpl implements ProceduresPerformedSection {
+public class ProceduresPerformedSectionImpl extends ProcedureDescriptionSectionImpl implements
+		ProceduresPerformedSection {
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	protected ProceduresPerformedSectionImpl() {
 		super();
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	@Override
 	protected EClass eStaticClass() {
 		return EmspcrPackage.Literals.PROCEDURES_PERFORMED_SECTION;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateProceduresPerformedSectionCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProceduresPerformedSectionOperations.validateProceduresPerformedSectionCodeP(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateProceduresPerformedSectionCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProceduresPerformedSectionOperations.validateProceduresPerformedSectionCode(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateProceduresPerformedSectionTitle(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProceduresPerformedSectionOperations.validateProceduresPerformedSectionTitle(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateProceduresPerformedSectionText(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProceduresPerformedSectionOperations.validateProceduresPerformedSectionText(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateProceduresPerformedSectionProcedureActivityProcedure1(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProceduresPerformedSectionOperations.validateProceduresPerformedSectionProcedureActivityProcedure1(this, diagnostics, context);
+	* @generated
+	*/
+	public boolean validateProceduresPerformedSectionProcedureActivityProcedure1(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ProceduresPerformedSectionOperations.validateProceduresPerformedSectionProcedureActivityProcedure1(
+			this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public EList<Procedure> getProcedureActivityProcedure1s() {
 		return ProceduresPerformedSectionOperations.getProcedureActivityProcedure1s(this);
+	}
+
+	/**
+	* <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	* @generated
+	*/
+	@Override
+	public boolean validateProcedureDescriptionSectionTemplateId(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ProceduresPerformedSectionOperations.validateProcedureDescriptionSectionTemplateId(
+			this, diagnostics, context);
+	}
+
+	/**
+	* <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	* @generated
+	*/
+	@Override
+	public ProceduresPerformedSection init() {
+		return Initializer.Util.init(this);
 	}
 
 	/**
@@ -115,25 +140,8 @@ public class ProceduresPerformedSectionImpl extends ProcedureDescriptionSectionI
 	 * @generated
 	 */
 	@Override
-	public boolean validateProcedureDescriptionSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProceduresPerformedSectionOperations.validateProcedureDescriptionSectionTemplateId(this, diagnostics, context);
+	public ProceduresPerformedSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+		Initializer.Util.init(this, initializers);
+		return this;
 	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public ProceduresPerformedSection init() {
-	    return Initializer.Util.init(this);
-	}
-    /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public ProceduresPerformedSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
-} //ProceduresPerformedSectionImpl
+} // ProceduresPerformedSectionImpl

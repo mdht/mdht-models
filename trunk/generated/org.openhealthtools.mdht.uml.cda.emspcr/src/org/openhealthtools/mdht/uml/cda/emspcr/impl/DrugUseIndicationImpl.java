@@ -35,58 +35,67 @@ import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
  */
 public class DrugUseIndicationImpl extends ObservationImpl implements DrugUseIndication {
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	protected DrugUseIndicationImpl() {
 		super();
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	@Override
 	protected EClass eStaticClass() {
 		return EmspcrPackage.Literals.DRUG_USE_INDICATION;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateDrugUseIndicationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return DrugUseIndicationOperations.validateDrugUseIndicationTemplateId(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateDrugUseIndicationCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return DrugUseIndicationOperations.validateDrugUseIndicationCode(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateDrugUseIndicationValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return DrugUseIndicationOperations.validateDrugUseIndicationValue(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateDrugUseIndicationMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return DrugUseIndicationOperations.validateDrugUseIndicationMoodCode(this, diagnostics, context);
+	}
+
+	/**
+	* <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	* @generated
+	*/
+	public DrugUseIndication init() {
+		return Initializer.Util.init(this);
 	}
 
 	/**
@@ -94,16 +103,8 @@ public class DrugUseIndicationImpl extends ObservationImpl implements DrugUseInd
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public DrugUseIndication init() {
-	    return Initializer.Util.init(this);
+	public DrugUseIndication init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+		Initializer.Util.init(this, initializers);
+		return this;
 	}
-    /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public DrugUseIndication init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
-} //DrugUseIndicationImpl
+} // DrugUseIndicationImpl

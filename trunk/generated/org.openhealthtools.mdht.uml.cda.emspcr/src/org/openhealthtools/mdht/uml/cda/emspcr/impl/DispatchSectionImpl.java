@@ -37,94 +37,106 @@ import org.openhealthtools.mdht.uml.cda.impl.SectionImpl;
  */
 public class DispatchSectionImpl extends SectionImpl implements DispatchSection {
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	protected DispatchSectionImpl() {
 		super();
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	@Override
 	protected EClass eStaticClass() {
 		return EmspcrPackage.Literals.DISPATCH_SECTION;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateDispatchSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return DispatchSectionOperations.validateDispatchSectionTemplateId(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateDispatchSectionCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return DispatchSectionOperations.validateDispatchSectionCode(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateDispatchSectionTitle(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return DispatchSectionOperations.validateDispatchSectionTitle(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateDispatchSectionText(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return DispatchSectionOperations.validateDispatchSectionText(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateDispatchSectionEmergencyMedicalDispatchObservation(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return DispatchSectionOperations.validateDispatchSectionEmergencyMedicalDispatchObservation(this, diagnostics, context);
+	* @generated
+	*/
+	public boolean validateDispatchSectionEmergencyMedicalDispatchObservation(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return DispatchSectionOperations.validateDispatchSectionEmergencyMedicalDispatchObservation(
+			this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateDispatchSectionComplaintReportedByDispatch(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	* @generated
+	*/
+	public boolean validateDispatchSectionComplaintReportedByDispatch(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return DispatchSectionOperations.validateDispatchSectionComplaintReportedByDispatch(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public EmergencyMedicalDispatchObservation getEmergencyMedicalDispatchObservation() {
 		return DispatchSectionOperations.getEmergencyMedicalDispatchObservation(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public ComplaintReportedByDispatch getComplaintReportedByDispatch() {
 		return DispatchSectionOperations.getComplaintReportedByDispatch(this);
+	}
+
+	/**
+	* <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	* @generated
+	*/
+	public DispatchSection init() {
+		return Initializer.Util.init(this);
 	}
 
 	/**
@@ -132,16 +144,8 @@ public class DispatchSectionImpl extends SectionImpl implements DispatchSection 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public DispatchSection init() {
-	    return Initializer.Util.init(this);
+	public DispatchSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+		Initializer.Util.init(this, initializers);
+		return this;
 	}
-    /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public DispatchSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
-} //DispatchSectionImpl
+} // DispatchSectionImpl

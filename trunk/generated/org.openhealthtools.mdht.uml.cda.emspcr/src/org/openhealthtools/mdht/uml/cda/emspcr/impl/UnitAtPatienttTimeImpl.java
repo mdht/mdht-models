@@ -35,67 +35,76 @@ import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
  */
 public class UnitAtPatienttTimeImpl extends ObservationImpl implements UnitAtPatienttTime {
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	protected UnitAtPatienttTimeImpl() {
 		super();
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	@Override
 	protected EClass eStaticClass() {
 		return EmspcrPackage.Literals.UNIT_AT_PATIENTT_TIME;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateUnitAtPatienttTimeTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return UnitAtPatienttTimeOperations.validateUnitAtPatienttTimeTemplateId(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateUnitAtPatienttTimeCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return UnitAtPatienttTimeOperations.validateUnitAtPatienttTimeCodeP(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateUnitAtPatienttTimeCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return UnitAtPatienttTimeOperations.validateUnitAtPatienttTimeCode(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateUnitAtPatienttTimeValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return UnitAtPatienttTimeOperations.validateUnitAtPatienttTimeValue(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateUnitAtPatienttTimeMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return UnitAtPatienttTimeOperations.validateUnitAtPatienttTimeMoodCode(this, diagnostics, context);
+	}
+
+	/**
+	* <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	* @generated
+	*/
+	public UnitAtPatienttTime init() {
+		return Initializer.Util.init(this);
 	}
 
 	/**
@@ -103,16 +112,8 @@ public class UnitAtPatienttTimeImpl extends ObservationImpl implements UnitAtPat
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public UnitAtPatienttTime init() {
-	    return Initializer.Util.init(this);
+	public UnitAtPatienttTime init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+		Initializer.Util.init(this, initializers);
+		return this;
 	}
-    /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public UnitAtPatienttTime init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
-} //UnitAtPatienttTimeImpl
+} // UnitAtPatienttTimeImpl

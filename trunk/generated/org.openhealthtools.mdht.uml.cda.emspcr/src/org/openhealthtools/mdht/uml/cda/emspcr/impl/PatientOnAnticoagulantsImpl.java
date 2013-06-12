@@ -35,58 +35,67 @@ import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
  */
 public class PatientOnAnticoagulantsImpl extends ObservationImpl implements PatientOnAnticoagulants {
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	protected PatientOnAnticoagulantsImpl() {
 		super();
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	@Override
 	protected EClass eStaticClass() {
 		return EmspcrPackage.Literals.PATIENT_ON_ANTICOAGULANTS;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validatePatientOnAnticoagulantsTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PatientOnAnticoagulantsOperations.validatePatientOnAnticoagulantsTemplateId(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validatePatientOnAnticoagulantsCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PatientOnAnticoagulantsOperations.validatePatientOnAnticoagulantsCode(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validatePatientOnAnticoagulantsValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PatientOnAnticoagulantsOperations.validatePatientOnAnticoagulantsValue(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validatePatientOnAnticoagulantsMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PatientOnAnticoagulantsOperations.validatePatientOnAnticoagulantsMoodCode(this, diagnostics, context);
+	}
+
+	/**
+	* <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	* @generated
+	*/
+	public PatientOnAnticoagulants init() {
+		return Initializer.Util.init(this);
 	}
 
 	/**
@@ -94,16 +103,8 @@ public class PatientOnAnticoagulantsImpl extends ObservationImpl implements Pati
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public PatientOnAnticoagulants init() {
-	    return Initializer.Util.init(this);
+	public PatientOnAnticoagulants init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+		Initializer.Util.init(this, initializers);
+		return this;
 	}
-    /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public PatientOnAnticoagulants init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
-} //PatientOnAnticoagulantsImpl
+} // PatientOnAnticoagulantsImpl

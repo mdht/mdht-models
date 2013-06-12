@@ -35,75 +35,82 @@ import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
  */
 public class ExistenceOfHistoryOfProceduresImpl extends ObservationImpl implements ExistenceOfHistoryOfProcedures {
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	protected ExistenceOfHistoryOfProceduresImpl() {
 		super();
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	@Override
 	protected EClass eStaticClass() {
 		return EmspcrPackage.Literals.EXISTENCE_OF_HISTORY_OF_PROCEDURES;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateExistenceOfHistoryOfProceduresTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ExistenceOfHistoryOfProceduresOperations.validateExistenceOfHistoryOfProceduresTemplateId(this, diagnostics, context);
+	* @generated
+	*/
+	public boolean validateExistenceOfHistoryOfProceduresTemplateId(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ExistenceOfHistoryOfProceduresOperations.validateExistenceOfHistoryOfProceduresTemplateId(
+			this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateExistenceOfHistoryOfProceduresCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ExistenceOfHistoryOfProceduresOperations.validateExistenceOfHistoryOfProceduresCode(this, diagnostics, context);
+		return ExistenceOfHistoryOfProceduresOperations.validateExistenceOfHistoryOfProceduresCode(
+			this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateExistenceOfHistoryOfProceduresValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ExistenceOfHistoryOfProceduresOperations.validateExistenceOfHistoryOfProceduresValue(this, diagnostics, context);
+		return ExistenceOfHistoryOfProceduresOperations.validateExistenceOfHistoryOfProceduresValue(
+			this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateExistenceOfHistoryOfProceduresMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ExistenceOfHistoryOfProceduresOperations.validateExistenceOfHistoryOfProceduresMoodCode(this, diagnostics, context);
+	* @generated
+	*/
+	public boolean validateExistenceOfHistoryOfProceduresMoodCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ExistenceOfHistoryOfProceduresOperations.validateExistenceOfHistoryOfProceduresMoodCode(
+			this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public ExistenceOfHistoryOfProcedures init() {
-	    return Initializer.Util.init(this);
+		return Initializer.Util.init(this);
 	}
-    /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public ExistenceOfHistoryOfProcedures init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
-} //ExistenceOfHistoryOfProceduresImpl
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ExistenceOfHistoryOfProcedures init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+		Initializer.Util.init(this, initializers);
+		return this;
+	}
+} // ExistenceOfHistoryOfProceduresImpl

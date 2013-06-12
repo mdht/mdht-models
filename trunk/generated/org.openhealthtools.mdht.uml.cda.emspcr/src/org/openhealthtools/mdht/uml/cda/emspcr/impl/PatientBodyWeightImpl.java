@@ -35,58 +35,67 @@ import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
  */
 public class PatientBodyWeightImpl extends ObservationImpl implements PatientBodyWeight {
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	protected PatientBodyWeightImpl() {
 		super();
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	@Override
 	protected EClass eStaticClass() {
 		return EmspcrPackage.Literals.PATIENT_BODY_WEIGHT;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validatePatientBodyWeightTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PatientBodyWeightOperations.validatePatientBodyWeightTemplateId(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validatePatientBodyWeightCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PatientBodyWeightOperations.validatePatientBodyWeightCode(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validatePatientBodyWeightValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PatientBodyWeightOperations.validatePatientBodyWeightValue(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validatePatientBodyWeightMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PatientBodyWeightOperations.validatePatientBodyWeightMoodCode(this, diagnostics, context);
+	}
+
+	/**
+	* <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	* @generated
+	*/
+	public PatientBodyWeight init() {
+		return Initializer.Util.init(this);
 	}
 
 	/**
@@ -94,16 +103,8 @@ public class PatientBodyWeightImpl extends ObservationImpl implements PatientBod
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public PatientBodyWeight init() {
-	    return Initializer.Util.init(this);
+	public PatientBodyWeight init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+		Initializer.Util.init(this, initializers);
+		return this;
 	}
-    /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public PatientBodyWeight init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
-} //PatientBodyWeightImpl
+} // PatientBodyWeightImpl

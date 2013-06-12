@@ -35,67 +35,76 @@ import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
  */
 public class UnitNotifiedTimeImpl extends ObservationImpl implements UnitNotifiedTime {
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	protected UnitNotifiedTimeImpl() {
 		super();
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	@Override
 	protected EClass eStaticClass() {
 		return EmspcrPackage.Literals.UNIT_NOTIFIED_TIME;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateUnitNotifiedTimeTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return UnitNotifiedTimeOperations.validateUnitNotifiedTimeTemplateId(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateUnitNotifiedTimeCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return UnitNotifiedTimeOperations.validateUnitNotifiedTimeCodeP(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateUnitNotifiedTimeCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return UnitNotifiedTimeOperations.validateUnitNotifiedTimeCode(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateUnitNotifiedTimeValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return UnitNotifiedTimeOperations.validateUnitNotifiedTimeValue(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateUnitNotifiedTimeMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return UnitNotifiedTimeOperations.validateUnitNotifiedTimeMoodCode(this, diagnostics, context);
+	}
+
+	/**
+	* <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	* @generated
+	*/
+	public UnitNotifiedTime init() {
+		return Initializer.Util.init(this);
 	}
 
 	/**
@@ -103,16 +112,8 @@ public class UnitNotifiedTimeImpl extends ObservationImpl implements UnitNotifie
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public UnitNotifiedTime init() {
-	    return Initializer.Util.init(this);
+	public UnitNotifiedTime init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+		Initializer.Util.init(this, initializers);
+		return this;
 	}
-    /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public UnitNotifiedTime init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
-} //UnitNotifiedTimeImpl
+} // UnitNotifiedTimeImpl

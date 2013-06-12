@@ -35,58 +35,67 @@ import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
  */
 public class PriorAidVitalsImpl extends ObservationImpl implements PriorAidVitals {
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	protected PriorAidVitalsImpl() {
 		super();
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	@Override
 	protected EClass eStaticClass() {
 		return EmspcrPackage.Literals.PRIOR_AID_VITALS;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validatePriorAidVitalsTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PriorAidVitalsOperations.validatePriorAidVitalsTemplateId(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validatePriorAidVitalsCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PriorAidVitalsOperations.validatePriorAidVitalsCode(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validatePriorAidVitalsValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PriorAidVitalsOperations.validatePriorAidVitalsValue(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validatePriorAidVitalsMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PriorAidVitalsOperations.validatePriorAidVitalsMoodCode(this, diagnostics, context);
+	}
+
+	/**
+	* <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	* @generated
+	*/
+	public PriorAidVitals init() {
+		return Initializer.Util.init(this);
 	}
 
 	/**
@@ -94,16 +103,8 @@ public class PriorAidVitalsImpl extends ObservationImpl implements PriorAidVital
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public PriorAidVitals init() {
-	    return Initializer.Util.init(this);
+	public PriorAidVitals init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+		Initializer.Util.init(this, initializers);
+		return this;
 	}
-    /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public PriorAidVitals init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
-} //PriorAidVitalsImpl
+} // PriorAidVitalsImpl

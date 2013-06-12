@@ -41,166 +41,197 @@ import org.openhealthtools.mdht.uml.cda.emspcr.operations.PhysicalAssessmentSect
  */
 public class PhysicalAssessmentSectionImpl extends PhysicalExamSectionImpl implements PhysicalAssessmentSection {
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	protected PhysicalAssessmentSectionImpl() {
 		super();
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	@Override
 	protected EClass eStaticClass() {
 		return EmspcrPackage.Literals.PHYSICAL_ASSESSMENT_SECTION;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validatePhysicalAssessmentSectionCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PhysicalAssessmentSectionOperations.validatePhysicalAssessmentSectionCodeP(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validatePhysicalAssessmentSectionCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PhysicalAssessmentSectionOperations.validatePhysicalAssessmentSectionCode(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validatePhysicalAssessmentSectionTitle(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PhysicalAssessmentSectionOperations.validatePhysicalAssessmentSectionTitle(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validatePhysicalAssessmentSectionText(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PhysicalAssessmentSectionOperations.validatePhysicalAssessmentSectionText(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validatePhysicalAssessmentSectionPhysicalAssessmentOrganizer(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PhysicalAssessmentSectionOperations.validatePhysicalAssessmentSectionPhysicalAssessmentOrganizer(this, diagnostics, context);
+	* @generated
+	*/
+	public boolean validatePhysicalAssessmentSectionPhysicalAssessmentOrganizer(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return PhysicalAssessmentSectionOperations.validatePhysicalAssessmentSectionPhysicalAssessmentOrganizer(
+			this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validatePhysicalAssessmentSectionPatientPregnancy(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PhysicalAssessmentSectionOperations.validatePhysicalAssessmentSectionPatientPregnancy(this, diagnostics, context);
+	* @generated
+	*/
+	public boolean validatePhysicalAssessmentSectionPatientPregnancy(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return PhysicalAssessmentSectionOperations.validatePhysicalAssessmentSectionPatientPregnancy(
+			this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validatePhysicalAssessmentSectionLastOralIntake(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PhysicalAssessmentSectionOperations.validatePhysicalAssessmentSectionLastOralIntake(this, diagnostics, context);
+	* @generated
+	*/
+	public boolean validatePhysicalAssessmentSectionLastOralIntake(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return PhysicalAssessmentSectionOperations.validatePhysicalAssessmentSectionLastOralIntake(
+			this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validatePhysicalAssessmentSectionPatientAge(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PhysicalAssessmentSectionOperations.validatePhysicalAssessmentSectionPatientAge(this, diagnostics, context);
+		return PhysicalAssessmentSectionOperations.validatePhysicalAssessmentSectionPatientAge(
+			this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validatePhysicalAssessmentSectionThrombolyticContraindications(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PhysicalAssessmentSectionOperations.validatePhysicalAssessmentSectionThrombolyticContraindications(this, diagnostics, context);
+	* @generated
+	*/
+	public boolean validatePhysicalAssessmentSectionThrombolyticContraindications(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return PhysicalAssessmentSectionOperations.validatePhysicalAssessmentSectionThrombolyticContraindications(
+			this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validatePhysicalAssessmentSectionBarriersToPatientCare(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PhysicalAssessmentSectionOperations.validatePhysicalAssessmentSectionBarriersToPatientCare(this, diagnostics, context);
+	* @generated
+	*/
+	public boolean validatePhysicalAssessmentSectionBarriersToPatientCare(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return PhysicalAssessmentSectionOperations.validatePhysicalAssessmentSectionBarriersToPatientCare(
+			this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public PhysicalAssessmentOrganizer getPhysicalAssessmentOrganizer() {
 		return PhysicalAssessmentSectionOperations.getPhysicalAssessmentOrganizer(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public PatientPregnancy getPatientPregnancy() {
 		return PhysicalAssessmentSectionOperations.getPatientPregnancy(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public LastOralIntake getLastOralIntake() {
 		return PhysicalAssessmentSectionOperations.getLastOralIntake(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public PatientAge getPatientAge() {
 		return PhysicalAssessmentSectionOperations.getPatientAge(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public ThrombolyticContraindications getThrombolyticContraindications() {
 		return PhysicalAssessmentSectionOperations.getThrombolyticContraindications(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public BarriersToPatientCare getBarriersToPatientCare() {
 		return PhysicalAssessmentSectionOperations.getBarriersToPatientCare(this);
+	}
+
+	/**
+	* <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	* @generated
+	*/
+	@Override
+	public boolean validatePhysicalExamSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return PhysicalAssessmentSectionOperations.validatePhysicalExamSectionTemplateId(this, diagnostics, context);
+	}
+
+	/**
+	* <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	* @generated
+	*/
+	@Override
+	public PhysicalAssessmentSection init() {
+		return Initializer.Util.init(this);
 	}
 
 	/**
@@ -209,25 +240,8 @@ public class PhysicalAssessmentSectionImpl extends PhysicalExamSectionImpl imple
 	 * @generated
 	 */
 	@Override
-	public boolean validatePhysicalExamSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PhysicalAssessmentSectionOperations.validatePhysicalExamSectionTemplateId(this, diagnostics, context);
+	public PhysicalAssessmentSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+		Initializer.Util.init(this, initializers);
+		return this;
 	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public PhysicalAssessmentSection init() {
-	    return Initializer.Util.init(this);
-	}
-    /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public PhysicalAssessmentSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
-} //PhysicalAssessmentSectionImpl
+} // PhysicalAssessmentSectionImpl

@@ -35,67 +35,76 @@ import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
  */
 public class PossibleInjuryImpl extends ObservationImpl implements PossibleInjury {
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	protected PossibleInjuryImpl() {
 		super();
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	@Override
 	protected EClass eStaticClass() {
 		return EmspcrPackage.Literals.POSSIBLE_INJURY;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validatePossibleInjuryTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PossibleInjuryOperations.validatePossibleInjuryTemplateId(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validatePossibleInjuryCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PossibleInjuryOperations.validatePossibleInjuryCodeP(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validatePossibleInjuryCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PossibleInjuryOperations.validatePossibleInjuryCode(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validatePossibleInjuryValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PossibleInjuryOperations.validatePossibleInjuryValue(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validatePossibleInjuryMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PossibleInjuryOperations.validatePossibleInjuryMoodCode(this, diagnostics, context);
+	}
+
+	/**
+	* <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	* @generated
+	*/
+	public PossibleInjury init() {
+		return Initializer.Util.init(this);
 	}
 
 	/**
@@ -103,16 +112,8 @@ public class PossibleInjuryImpl extends ObservationImpl implements PossibleInjur
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public PossibleInjury init() {
-	    return Initializer.Util.init(this);
+	public PossibleInjury init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+		Initializer.Util.init(this, initializers);
+		return this;
 	}
-    /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public PossibleInjury init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
-} //PossibleInjuryImpl
+} // PossibleInjuryImpl

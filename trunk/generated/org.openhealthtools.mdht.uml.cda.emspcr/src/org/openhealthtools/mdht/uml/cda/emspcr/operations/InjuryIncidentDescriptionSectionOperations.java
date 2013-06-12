@@ -78,904 +78,914 @@ import org.openhealthtools.mdht.uml.cda.operations.SectionOperations;
  */
 public class InjuryIncidentDescriptionSectionOperations extends SectionOperations {
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	protected InjuryIncidentDescriptionSectionOperations() {
 		super();
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateInjuryIncidentDescriptionSectionTemplateId(InjuryIncidentDescriptionSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Injury Incident Description Section Template Id</em>}' operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL expression body for the '{@link #validateInjuryIncidentDescriptionSectionTemplateId(InjuryIncidentDescriptionSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Injury Incident Description Section Template Id</em>}' operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateInjuryIncidentDescriptionSectionTemplateId(InjuryIncidentDescriptionSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validateInjuryIncidentDescriptionSectionTemplateId(InjuryIncidentDescriptionSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 	protected static final String VALIDATE_INJURY_INCIDENT_DESCRIPTION_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.17.3.10.1.17')";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validateInjuryIncidentDescriptionSectionTemplateId(InjuryIncidentDescriptionSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Injury Incident Description Section Template Id</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL invariant for the '{@link #validateInjuryIncidentDescriptionSectionTemplateId(InjuryIncidentDescriptionSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Injury Incident Description Section Template Id</em>}' invariant operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateInjuryIncidentDescriptionSectionTemplateId(InjuryIncidentDescriptionSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	
+	* @see #validateInjuryIncidentDescriptionSectionTemplateId(InjuryIncidentDescriptionSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
+
 	protected static Constraint VALIDATE_INJURY_INCIDENT_DESCRIPTION_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param injuryIncidentDescriptionSection The receiving '<em><b>Injury Incident Description Section</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
-	
-	public static  boolean validateInjuryIncidentDescriptionSectionTemplateId(InjuryIncidentDescriptionSection injuryIncidentDescriptionSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+	* <!-- begin-model-doc -->
+	* @param injuryIncidentDescriptionSection The receiving '<em><b>Injury Incident Description Section</b></em>' model object.
+	* @param diagnostics The chain of diagnostics to which problems are to be appended.
+	* @param context The cache of context-specific information.
+	* <!-- end-model-doc -->
+	* @generated
+	*/
+
+	public static boolean validateInjuryIncidentDescriptionSectionTemplateId(
+			InjuryIncidentDescriptionSection injuryIncidentDescriptionSection, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+
 		if (VALIDATE_INJURY_INCIDENT_DESCRIPTION_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.INJURY_INCIDENT_DESCRIPTION_SECTION);
 			try {
 				VALIDATE_INJURY_INCIDENT_DESCRIPTION_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_INJURY_INCIDENT_DESCRIPTION_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_INJURY_INCIDENT_DESCRIPTION_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(injuryIncidentDescriptionSection)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_INJURY_INCIDENT_DESCRIPTION_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			injuryIncidentDescriptionSection)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.INJURY_INCIDENT_DESCRIPTION_SECTION__INJURY_INCIDENT_DESCRIPTION_SECTION_TEMPLATE_ID,
-						 EmspcrPlugin.INSTANCE.getString("InjuryIncidentDescriptionSectionTemplateId"),
-						 new Object [] { injuryIncidentDescriptionSection }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR,
+					EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.INJURY_INCIDENT_DESCRIPTION_SECTION__INJURY_INCIDENT_DESCRIPTION_SECTION_TEMPLATE_ID,
+					EmspcrPlugin.INSTANCE.getString("InjuryIncidentDescriptionSectionTemplateId"),
+					new Object[] { injuryIncidentDescriptionSection }));
 			}
-			 
+
 			return false;
 		}
 		return true;
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateInjuryIncidentDescriptionSectionCode(InjuryIncidentDescriptionSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Injury Incident Description Section Code</em>}' operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL expression body for the '{@link #validateInjuryIncidentDescriptionSectionCode(InjuryIncidentDescriptionSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Injury Incident Description Section Code</em>}' operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateInjuryIncidentDescriptionSectionCode(InjuryIncidentDescriptionSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String VALIDATE_INJURY_INCIDENT_DESCRIPTION_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and "+
-"let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in "+
-"value.code = '11374-6' and value.codeSystem = '2.16.840.1.113883.6.1')";
+	* @see #validateInjuryIncidentDescriptionSectionCode(InjuryIncidentDescriptionSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
+	protected static final String VALIDATE_INJURY_INCIDENT_DESCRIPTION_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and "
+			+ "let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in "
+			+ "value.code = '11374-6' and value.codeSystem = '2.16.840.1.113883.6.1')";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validateInjuryIncidentDescriptionSectionCode(InjuryIncidentDescriptionSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Injury Incident Description Section Code</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL invariant for the '{@link #validateInjuryIncidentDescriptionSectionCode(InjuryIncidentDescriptionSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Injury Incident Description Section Code</em>}' invariant operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateInjuryIncidentDescriptionSectionCode(InjuryIncidentDescriptionSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	
+	* @see #validateInjuryIncidentDescriptionSectionCode(InjuryIncidentDescriptionSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
+
 	protected static Constraint VALIDATE_INJURY_INCIDENT_DESCRIPTION_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param injuryIncidentDescriptionSection The receiving '<em><b>Injury Incident Description Section</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
-	
-	public static  boolean validateInjuryIncidentDescriptionSectionCode(InjuryIncidentDescriptionSection injuryIncidentDescriptionSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+	* <!-- begin-model-doc -->
+	* @param injuryIncidentDescriptionSection The receiving '<em><b>Injury Incident Description Section</b></em>' model object.
+	* @param diagnostics The chain of diagnostics to which problems are to be appended.
+	* @param context The cache of context-specific information.
+	* <!-- end-model-doc -->
+	* @generated
+	*/
+
+	public static boolean validateInjuryIncidentDescriptionSectionCode(
+			InjuryIncidentDescriptionSection injuryIncidentDescriptionSection, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+
 		if (VALIDATE_INJURY_INCIDENT_DESCRIPTION_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.INJURY_INCIDENT_DESCRIPTION_SECTION);
 			try {
 				VALIDATE_INJURY_INCIDENT_DESCRIPTION_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_INJURY_INCIDENT_DESCRIPTION_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_INJURY_INCIDENT_DESCRIPTION_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(injuryIncidentDescriptionSection)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_INJURY_INCIDENT_DESCRIPTION_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			injuryIncidentDescriptionSection)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.INJURY_INCIDENT_DESCRIPTION_SECTION__INJURY_INCIDENT_DESCRIPTION_SECTION_CODE,
-						 EmspcrPlugin.INSTANCE.getString("InjuryIncidentDescriptionSectionCode"),
-						 new Object [] { injuryIncidentDescriptionSection }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.INJURY_INCIDENT_DESCRIPTION_SECTION__INJURY_INCIDENT_DESCRIPTION_SECTION_CODE,
+					EmspcrPlugin.INSTANCE.getString("InjuryIncidentDescriptionSectionCode"),
+					new Object[] { injuryIncidentDescriptionSection }));
 			}
-			 
+
 			return false;
 		}
 		return true;
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateInjuryIncidentDescriptionSectionTitle(InjuryIncidentDescriptionSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Injury Incident Description Section Title</em>}' operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL expression body for the '{@link #validateInjuryIncidentDescriptionSectionTitle(InjuryIncidentDescriptionSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Injury Incident Description Section Title</em>}' operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateInjuryIncidentDescriptionSectionTitle(InjuryIncidentDescriptionSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validateInjuryIncidentDescriptionSectionTitle(InjuryIncidentDescriptionSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 	protected static final String VALIDATE_INJURY_INCIDENT_DESCRIPTION_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.title.oclIsUndefined() or self.title.isNullFlavorUndefined()) implies (not self.title.oclIsUndefined() and self.title.getText() = 'Injury Incident Description Section')";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validateInjuryIncidentDescriptionSectionTitle(InjuryIncidentDescriptionSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Injury Incident Description Section Title</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL invariant for the '{@link #validateInjuryIncidentDescriptionSectionTitle(InjuryIncidentDescriptionSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Injury Incident Description Section Title</em>}' invariant operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateInjuryIncidentDescriptionSectionTitle(InjuryIncidentDescriptionSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	
+	* @see #validateInjuryIncidentDescriptionSectionTitle(InjuryIncidentDescriptionSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
+
 	protected static Constraint VALIDATE_INJURY_INCIDENT_DESCRIPTION_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param injuryIncidentDescriptionSection The receiving '<em><b>Injury Incident Description Section</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
-	
-	public static  boolean validateInjuryIncidentDescriptionSectionTitle(InjuryIncidentDescriptionSection injuryIncidentDescriptionSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+	* <!-- begin-model-doc -->
+	* @param injuryIncidentDescriptionSection The receiving '<em><b>Injury Incident Description Section</b></em>' model object.
+	* @param diagnostics The chain of diagnostics to which problems are to be appended.
+	* @param context The cache of context-specific information.
+	* <!-- end-model-doc -->
+	* @generated
+	*/
+
+	public static boolean validateInjuryIncidentDescriptionSectionTitle(
+			InjuryIncidentDescriptionSection injuryIncidentDescriptionSection, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+
 		if (VALIDATE_INJURY_INCIDENT_DESCRIPTION_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.INJURY_INCIDENT_DESCRIPTION_SECTION);
 			try {
 				VALIDATE_INJURY_INCIDENT_DESCRIPTION_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_INJURY_INCIDENT_DESCRIPTION_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_INJURY_INCIDENT_DESCRIPTION_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(injuryIncidentDescriptionSection)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_INJURY_INCIDENT_DESCRIPTION_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			injuryIncidentDescriptionSection)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.INJURY_INCIDENT_DESCRIPTION_SECTION__INJURY_INCIDENT_DESCRIPTION_SECTION_TITLE,
-						 EmspcrPlugin.INSTANCE.getString("InjuryIncidentDescriptionSectionTitle"),
-						 new Object [] { injuryIncidentDescriptionSection }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.INJURY_INCIDENT_DESCRIPTION_SECTION__INJURY_INCIDENT_DESCRIPTION_SECTION_TITLE,
+					EmspcrPlugin.INSTANCE.getString("InjuryIncidentDescriptionSectionTitle"),
+					new Object[] { injuryIncidentDescriptionSection }));
 			}
-			 
+
 			return false;
 		}
 		return true;
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateInjuryIncidentDescriptionSectionText(InjuryIncidentDescriptionSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Injury Incident Description Section Text</em>}' operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL expression body for the '{@link #validateInjuryIncidentDescriptionSectionText(InjuryIncidentDescriptionSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Injury Incident Description Section Text</em>}' operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateInjuryIncidentDescriptionSectionText(InjuryIncidentDescriptionSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validateInjuryIncidentDescriptionSectionText(InjuryIncidentDescriptionSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 	protected static final String VALIDATE_INJURY_INCIDENT_DESCRIPTION_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "not self.text.oclIsUndefined()";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validateInjuryIncidentDescriptionSectionText(InjuryIncidentDescriptionSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Injury Incident Description Section Text</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL invariant for the '{@link #validateInjuryIncidentDescriptionSectionText(InjuryIncidentDescriptionSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Injury Incident Description Section Text</em>}' invariant operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateInjuryIncidentDescriptionSectionText(InjuryIncidentDescriptionSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	
+	* @see #validateInjuryIncidentDescriptionSectionText(InjuryIncidentDescriptionSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
+
 	protected static Constraint VALIDATE_INJURY_INCIDENT_DESCRIPTION_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param injuryIncidentDescriptionSection The receiving '<em><b>Injury Incident Description Section</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
-	
-	public static  boolean validateInjuryIncidentDescriptionSectionText(InjuryIncidentDescriptionSection injuryIncidentDescriptionSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+	* <!-- begin-model-doc -->
+	* @param injuryIncidentDescriptionSection The receiving '<em><b>Injury Incident Description Section</b></em>' model object.
+	* @param diagnostics The chain of diagnostics to which problems are to be appended.
+	* @param context The cache of context-specific information.
+	* <!-- end-model-doc -->
+	* @generated
+	*/
+
+	public static boolean validateInjuryIncidentDescriptionSectionText(
+			InjuryIncidentDescriptionSection injuryIncidentDescriptionSection, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+
 		if (VALIDATE_INJURY_INCIDENT_DESCRIPTION_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.INJURY_INCIDENT_DESCRIPTION_SECTION);
 			try {
 				VALIDATE_INJURY_INCIDENT_DESCRIPTION_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_INJURY_INCIDENT_DESCRIPTION_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_INJURY_INCIDENT_DESCRIPTION_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(injuryIncidentDescriptionSection)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_INJURY_INCIDENT_DESCRIPTION_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			injuryIncidentDescriptionSection)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.INJURY_INCIDENT_DESCRIPTION_SECTION__INJURY_INCIDENT_DESCRIPTION_SECTION_TEXT,
-						 EmspcrPlugin.INSTANCE.getString("InjuryIncidentDescriptionSectionText"),
-						 new Object [] { injuryIncidentDescriptionSection }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.INJURY_INCIDENT_DESCRIPTION_SECTION__INJURY_INCIDENT_DESCRIPTION_SECTION_TEXT,
+					EmspcrPlugin.INSTANCE.getString("InjuryIncidentDescriptionSectionText"),
+					new Object[] { injuryIncidentDescriptionSection }));
 			}
-			 
+
 			return false;
 		}
 		return true;
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateInjuryIncidentDescriptionSectionInjuryCauseCategory(InjuryIncidentDescriptionSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Injury Incident Description Section Injury Cause Category</em>}' operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL expression body for the '{@link #validateInjuryIncidentDescriptionSectionInjuryCauseCategory(InjuryIncidentDescriptionSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Injury Incident Description Section Injury Cause Category</em>}' operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateInjuryIncidentDescriptionSectionInjuryCauseCategory(InjuryIncidentDescriptionSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validateInjuryIncidentDescriptionSectionInjuryCauseCategory(InjuryIncidentDescriptionSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 	protected static final String VALIDATE_INJURY_INCIDENT_DESCRIPTION_SECTION_INJURY_CAUSE_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->one(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(emspcr::InjuryCauseCategory) and entry.typeCode = vocab::x_ActRelationshipEntry::DRIV)";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validateInjuryIncidentDescriptionSectionInjuryCauseCategory(InjuryIncidentDescriptionSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Injury Incident Description Section Injury Cause Category</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL invariant for the '{@link #validateInjuryIncidentDescriptionSectionInjuryCauseCategory(InjuryIncidentDescriptionSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Injury Incident Description Section Injury Cause Category</em>}' invariant operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateInjuryIncidentDescriptionSectionInjuryCauseCategory(InjuryIncidentDescriptionSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	
+	* @see #validateInjuryIncidentDescriptionSectionInjuryCauseCategory(InjuryIncidentDescriptionSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
+
 	protected static Constraint VALIDATE_INJURY_INCIDENT_DESCRIPTION_SECTION_INJURY_CAUSE_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param injuryIncidentDescriptionSection The receiving '<em><b>Injury Incident Description Section</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
-	
-	public static  boolean validateInjuryIncidentDescriptionSectionInjuryCauseCategory(InjuryIncidentDescriptionSection injuryIncidentDescriptionSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+	* <!-- begin-model-doc -->
+	* @param injuryIncidentDescriptionSection The receiving '<em><b>Injury Incident Description Section</b></em>' model object.
+	* @param diagnostics The chain of diagnostics to which problems are to be appended.
+	* @param context The cache of context-specific information.
+	* <!-- end-model-doc -->
+	* @generated
+	*/
+
+	public static boolean validateInjuryIncidentDescriptionSectionInjuryCauseCategory(
+			InjuryIncidentDescriptionSection injuryIncidentDescriptionSection, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+
 		if (VALIDATE_INJURY_INCIDENT_DESCRIPTION_SECTION_INJURY_CAUSE_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.INJURY_INCIDENT_DESCRIPTION_SECTION);
 			try {
 				VALIDATE_INJURY_INCIDENT_DESCRIPTION_SECTION_INJURY_CAUSE_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_INJURY_INCIDENT_DESCRIPTION_SECTION_INJURY_CAUSE_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_INJURY_INCIDENT_DESCRIPTION_SECTION_INJURY_CAUSE_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(injuryIncidentDescriptionSection)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_INJURY_INCIDENT_DESCRIPTION_SECTION_INJURY_CAUSE_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			injuryIncidentDescriptionSection)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.INJURY_INCIDENT_DESCRIPTION_SECTION__INJURY_INCIDENT_DESCRIPTION_SECTION_INJURY_CAUSE_CATEGORY,
-						 EmspcrPlugin.INSTANCE.getString("InjuryIncidentDescriptionSectionInjuryCauseCategory"),
-						 new Object [] { injuryIncidentDescriptionSection }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR,
+					EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.INJURY_INCIDENT_DESCRIPTION_SECTION__INJURY_INCIDENT_DESCRIPTION_SECTION_INJURY_CAUSE_CATEGORY,
+					EmspcrPlugin.INSTANCE.getString("InjuryIncidentDescriptionSectionInjuryCauseCategory"),
+					new Object[] { injuryIncidentDescriptionSection }));
 			}
-			 
+
 			return false;
 		}
 		return true;
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateInjuryIncidentDescriptionSectionInjuryMechanism(InjuryIncidentDescriptionSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Injury Incident Description Section Injury Mechanism</em>}' operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL expression body for the '{@link #validateInjuryIncidentDescriptionSectionInjuryMechanism(InjuryIncidentDescriptionSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Injury Incident Description Section Injury Mechanism</em>}' operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateInjuryIncidentDescriptionSectionInjuryMechanism(InjuryIncidentDescriptionSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validateInjuryIncidentDescriptionSectionInjuryMechanism(InjuryIncidentDescriptionSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 	protected static final String VALIDATE_INJURY_INCIDENT_DESCRIPTION_SECTION_INJURY_MECHANISM__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->one(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(emspcr::InjuryMechanism) and entry.typeCode = vocab::x_ActRelationshipEntry::DRIV)";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validateInjuryIncidentDescriptionSectionInjuryMechanism(InjuryIncidentDescriptionSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Injury Incident Description Section Injury Mechanism</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL invariant for the '{@link #validateInjuryIncidentDescriptionSectionInjuryMechanism(InjuryIncidentDescriptionSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Injury Incident Description Section Injury Mechanism</em>}' invariant operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateInjuryIncidentDescriptionSectionInjuryMechanism(InjuryIncidentDescriptionSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	
+	* @see #validateInjuryIncidentDescriptionSectionInjuryMechanism(InjuryIncidentDescriptionSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
+
 	protected static Constraint VALIDATE_INJURY_INCIDENT_DESCRIPTION_SECTION_INJURY_MECHANISM__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param injuryIncidentDescriptionSection The receiving '<em><b>Injury Incident Description Section</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
-	
-	public static  boolean validateInjuryIncidentDescriptionSectionInjuryMechanism(InjuryIncidentDescriptionSection injuryIncidentDescriptionSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+	* <!-- begin-model-doc -->
+	* @param injuryIncidentDescriptionSection The receiving '<em><b>Injury Incident Description Section</b></em>' model object.
+	* @param diagnostics The chain of diagnostics to which problems are to be appended.
+	* @param context The cache of context-specific information.
+	* <!-- end-model-doc -->
+	* @generated
+	*/
+
+	public static boolean validateInjuryIncidentDescriptionSectionInjuryMechanism(
+			InjuryIncidentDescriptionSection injuryIncidentDescriptionSection, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+
 		if (VALIDATE_INJURY_INCIDENT_DESCRIPTION_SECTION_INJURY_MECHANISM__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.INJURY_INCIDENT_DESCRIPTION_SECTION);
 			try {
 				VALIDATE_INJURY_INCIDENT_DESCRIPTION_SECTION_INJURY_MECHANISM__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_INJURY_INCIDENT_DESCRIPTION_SECTION_INJURY_MECHANISM__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_INJURY_INCIDENT_DESCRIPTION_SECTION_INJURY_MECHANISM__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(injuryIncidentDescriptionSection)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_INJURY_INCIDENT_DESCRIPTION_SECTION_INJURY_MECHANISM__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			injuryIncidentDescriptionSection)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.INJURY_INCIDENT_DESCRIPTION_SECTION__INJURY_INCIDENT_DESCRIPTION_SECTION_INJURY_MECHANISM,
-						 EmspcrPlugin.INSTANCE.getString("InjuryIncidentDescriptionSectionInjuryMechanism"),
-						 new Object [] { injuryIncidentDescriptionSection }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR,
+					EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.INJURY_INCIDENT_DESCRIPTION_SECTION__INJURY_INCIDENT_DESCRIPTION_SECTION_INJURY_MECHANISM,
+					EmspcrPlugin.INSTANCE.getString("InjuryIncidentDescriptionSectionInjuryMechanism"),
+					new Object[] { injuryIncidentDescriptionSection }));
 			}
-			 
+
 			return false;
 		}
 		return true;
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateInjuryIncidentDescriptionSectionTraumaCenterCriteria(InjuryIncidentDescriptionSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Injury Incident Description Section Trauma Center Criteria</em>}' operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL expression body for the '{@link #validateInjuryIncidentDescriptionSectionTraumaCenterCriteria(InjuryIncidentDescriptionSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Injury Incident Description Section Trauma Center Criteria</em>}' operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateInjuryIncidentDescriptionSectionTraumaCenterCriteria(InjuryIncidentDescriptionSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validateInjuryIncidentDescriptionSectionTraumaCenterCriteria(InjuryIncidentDescriptionSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 	protected static final String VALIDATE_INJURY_INCIDENT_DESCRIPTION_SECTION_TRAUMA_CENTER_CRITERIA__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->one(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(emspcr::TraumaCenterCriteria) and entry.typeCode = vocab::x_ActRelationshipEntry::DRIV)";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validateInjuryIncidentDescriptionSectionTraumaCenterCriteria(InjuryIncidentDescriptionSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Injury Incident Description Section Trauma Center Criteria</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL invariant for the '{@link #validateInjuryIncidentDescriptionSectionTraumaCenterCriteria(InjuryIncidentDescriptionSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Injury Incident Description Section Trauma Center Criteria</em>}' invariant operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateInjuryIncidentDescriptionSectionTraumaCenterCriteria(InjuryIncidentDescriptionSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	
+	* @see #validateInjuryIncidentDescriptionSectionTraumaCenterCriteria(InjuryIncidentDescriptionSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
+
 	protected static Constraint VALIDATE_INJURY_INCIDENT_DESCRIPTION_SECTION_TRAUMA_CENTER_CRITERIA__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param injuryIncidentDescriptionSection The receiving '<em><b>Injury Incident Description Section</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
-	
-	public static  boolean validateInjuryIncidentDescriptionSectionTraumaCenterCriteria(InjuryIncidentDescriptionSection injuryIncidentDescriptionSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+	* <!-- begin-model-doc -->
+	* @param injuryIncidentDescriptionSection The receiving '<em><b>Injury Incident Description Section</b></em>' model object.
+	* @param diagnostics The chain of diagnostics to which problems are to be appended.
+	* @param context The cache of context-specific information.
+	* <!-- end-model-doc -->
+	* @generated
+	*/
+
+	public static boolean validateInjuryIncidentDescriptionSectionTraumaCenterCriteria(
+			InjuryIncidentDescriptionSection injuryIncidentDescriptionSection, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+
 		if (VALIDATE_INJURY_INCIDENT_DESCRIPTION_SECTION_TRAUMA_CENTER_CRITERIA__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.INJURY_INCIDENT_DESCRIPTION_SECTION);
 			try {
 				VALIDATE_INJURY_INCIDENT_DESCRIPTION_SECTION_TRAUMA_CENTER_CRITERIA__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_INJURY_INCIDENT_DESCRIPTION_SECTION_TRAUMA_CENTER_CRITERIA__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_INJURY_INCIDENT_DESCRIPTION_SECTION_TRAUMA_CENTER_CRITERIA__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(injuryIncidentDescriptionSection)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_INJURY_INCIDENT_DESCRIPTION_SECTION_TRAUMA_CENTER_CRITERIA__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			injuryIncidentDescriptionSection)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.INJURY_INCIDENT_DESCRIPTION_SECTION__INJURY_INCIDENT_DESCRIPTION_SECTION_TRAUMA_CENTER_CRITERIA,
-						 EmspcrPlugin.INSTANCE.getString("InjuryIncidentDescriptionSectionTraumaCenterCriteria"),
-						 new Object [] { injuryIncidentDescriptionSection }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR,
+					EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.INJURY_INCIDENT_DESCRIPTION_SECTION__INJURY_INCIDENT_DESCRIPTION_SECTION_TRAUMA_CENTER_CRITERIA,
+					EmspcrPlugin.INSTANCE.getString("InjuryIncidentDescriptionSectionTraumaCenterCriteria"),
+					new Object[] { injuryIncidentDescriptionSection }));
 			}
-			 
+
 			return false;
 		}
 		return true;
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateInjuryIncidentDescriptionSectionInjuryRiskFactor(InjuryIncidentDescriptionSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Injury Incident Description Section Injury Risk Factor</em>}' operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL expression body for the '{@link #validateInjuryIncidentDescriptionSectionInjuryRiskFactor(InjuryIncidentDescriptionSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Injury Incident Description Section Injury Risk Factor</em>}' operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateInjuryIncidentDescriptionSectionInjuryRiskFactor(InjuryIncidentDescriptionSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validateInjuryIncidentDescriptionSectionInjuryRiskFactor(InjuryIncidentDescriptionSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 	protected static final String VALIDATE_INJURY_INCIDENT_DESCRIPTION_SECTION_INJURY_RISK_FACTOR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->one(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(emspcr::InjuryRiskFactor) and entry.typeCode = vocab::x_ActRelationshipEntry::DRIV)";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validateInjuryIncidentDescriptionSectionInjuryRiskFactor(InjuryIncidentDescriptionSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Injury Incident Description Section Injury Risk Factor</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL invariant for the '{@link #validateInjuryIncidentDescriptionSectionInjuryRiskFactor(InjuryIncidentDescriptionSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Injury Incident Description Section Injury Risk Factor</em>}' invariant operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateInjuryIncidentDescriptionSectionInjuryRiskFactor(InjuryIncidentDescriptionSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	
+	* @see #validateInjuryIncidentDescriptionSectionInjuryRiskFactor(InjuryIncidentDescriptionSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
+
 	protected static Constraint VALIDATE_INJURY_INCIDENT_DESCRIPTION_SECTION_INJURY_RISK_FACTOR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param injuryIncidentDescriptionSection The receiving '<em><b>Injury Incident Description Section</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
-	
-	public static  boolean validateInjuryIncidentDescriptionSectionInjuryRiskFactor(InjuryIncidentDescriptionSection injuryIncidentDescriptionSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+	* <!-- begin-model-doc -->
+	* @param injuryIncidentDescriptionSection The receiving '<em><b>Injury Incident Description Section</b></em>' model object.
+	* @param diagnostics The chain of diagnostics to which problems are to be appended.
+	* @param context The cache of context-specific information.
+	* <!-- end-model-doc -->
+	* @generated
+	*/
+
+	public static boolean validateInjuryIncidentDescriptionSectionInjuryRiskFactor(
+			InjuryIncidentDescriptionSection injuryIncidentDescriptionSection, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+
 		if (VALIDATE_INJURY_INCIDENT_DESCRIPTION_SECTION_INJURY_RISK_FACTOR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.INJURY_INCIDENT_DESCRIPTION_SECTION);
 			try {
 				VALIDATE_INJURY_INCIDENT_DESCRIPTION_SECTION_INJURY_RISK_FACTOR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_INJURY_INCIDENT_DESCRIPTION_SECTION_INJURY_RISK_FACTOR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_INJURY_INCIDENT_DESCRIPTION_SECTION_INJURY_RISK_FACTOR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(injuryIncidentDescriptionSection)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_INJURY_INCIDENT_DESCRIPTION_SECTION_INJURY_RISK_FACTOR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			injuryIncidentDescriptionSection)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.INJURY_INCIDENT_DESCRIPTION_SECTION__INJURY_INCIDENT_DESCRIPTION_SECTION_INJURY_RISK_FACTOR,
-						 EmspcrPlugin.INSTANCE.getString("InjuryIncidentDescriptionSectionInjuryRiskFactor"),
-						 new Object [] { injuryIncidentDescriptionSection }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR,
+					EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.INJURY_INCIDENT_DESCRIPTION_SECTION__INJURY_INCIDENT_DESCRIPTION_SECTION_INJURY_RISK_FACTOR,
+					EmspcrPlugin.INSTANCE.getString("InjuryIncidentDescriptionSectionInjuryRiskFactor"),
+					new Object[] { injuryIncidentDescriptionSection }));
 			}
-			 
+
 			return false;
 		}
 		return true;
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateInjuryIncidentDescriptionSectionVehicleImpactArea(InjuryIncidentDescriptionSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Injury Incident Description Section Vehicle Impact Area</em>}' operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL expression body for the '{@link #validateInjuryIncidentDescriptionSectionVehicleImpactArea(InjuryIncidentDescriptionSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Injury Incident Description Section Vehicle Impact Area</em>}' operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateInjuryIncidentDescriptionSectionVehicleImpactArea(InjuryIncidentDescriptionSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validateInjuryIncidentDescriptionSectionVehicleImpactArea(InjuryIncidentDescriptionSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 	protected static final String VALIDATE_INJURY_INCIDENT_DESCRIPTION_SECTION_VEHICLE_IMPACT_AREA__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->one(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(emspcr::VehicleImpactArea) and entry.typeCode = vocab::x_ActRelationshipEntry::DRIV)";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validateInjuryIncidentDescriptionSectionVehicleImpactArea(InjuryIncidentDescriptionSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Injury Incident Description Section Vehicle Impact Area</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL invariant for the '{@link #validateInjuryIncidentDescriptionSectionVehicleImpactArea(InjuryIncidentDescriptionSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Injury Incident Description Section Vehicle Impact Area</em>}' invariant operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateInjuryIncidentDescriptionSectionVehicleImpactArea(InjuryIncidentDescriptionSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	
+	* @see #validateInjuryIncidentDescriptionSectionVehicleImpactArea(InjuryIncidentDescriptionSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
+
 	protected static Constraint VALIDATE_INJURY_INCIDENT_DESCRIPTION_SECTION_VEHICLE_IMPACT_AREA__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param injuryIncidentDescriptionSection The receiving '<em><b>Injury Incident Description Section</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
-	
-	public static  boolean validateInjuryIncidentDescriptionSectionVehicleImpactArea(InjuryIncidentDescriptionSection injuryIncidentDescriptionSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+	* <!-- begin-model-doc -->
+	* @param injuryIncidentDescriptionSection The receiving '<em><b>Injury Incident Description Section</b></em>' model object.
+	* @param diagnostics The chain of diagnostics to which problems are to be appended.
+	* @param context The cache of context-specific information.
+	* <!-- end-model-doc -->
+	* @generated
+	*/
+
+	public static boolean validateInjuryIncidentDescriptionSectionVehicleImpactArea(
+			InjuryIncidentDescriptionSection injuryIncidentDescriptionSection, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+
 		if (VALIDATE_INJURY_INCIDENT_DESCRIPTION_SECTION_VEHICLE_IMPACT_AREA__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.INJURY_INCIDENT_DESCRIPTION_SECTION);
 			try {
 				VALIDATE_INJURY_INCIDENT_DESCRIPTION_SECTION_VEHICLE_IMPACT_AREA__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_INJURY_INCIDENT_DESCRIPTION_SECTION_VEHICLE_IMPACT_AREA__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_INJURY_INCIDENT_DESCRIPTION_SECTION_VEHICLE_IMPACT_AREA__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(injuryIncidentDescriptionSection)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_INJURY_INCIDENT_DESCRIPTION_SECTION_VEHICLE_IMPACT_AREA__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			injuryIncidentDescriptionSection)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.INJURY_INCIDENT_DESCRIPTION_SECTION__INJURY_INCIDENT_DESCRIPTION_SECTION_VEHICLE_IMPACT_AREA,
-						 EmspcrPlugin.INSTANCE.getString("InjuryIncidentDescriptionSectionVehicleImpactArea"),
-						 new Object [] { injuryIncidentDescriptionSection }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR,
+					EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.INJURY_INCIDENT_DESCRIPTION_SECTION__INJURY_INCIDENT_DESCRIPTION_SECTION_VEHICLE_IMPACT_AREA,
+					EmspcrPlugin.INSTANCE.getString("InjuryIncidentDescriptionSectionVehicleImpactArea"),
+					new Object[] { injuryIncidentDescriptionSection }));
 			}
-			 
+
 			return false;
 		}
 		return true;
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateInjuryIncidentDescriptionSectionPatientLocationInVehicle(InjuryIncidentDescriptionSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Injury Incident Description Section Patient Location In Vehicle</em>}' operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL expression body for the '{@link #validateInjuryIncidentDescriptionSectionPatientLocationInVehicle(InjuryIncidentDescriptionSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Injury Incident Description Section Patient Location In Vehicle</em>}' operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateInjuryIncidentDescriptionSectionPatientLocationInVehicle(InjuryIncidentDescriptionSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validateInjuryIncidentDescriptionSectionPatientLocationInVehicle(InjuryIncidentDescriptionSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 	protected static final String VALIDATE_INJURY_INCIDENT_DESCRIPTION_SECTION_PATIENT_LOCATION_IN_VEHICLE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->one(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(emspcr::PatientLocationInVehicle) and entry.typeCode = vocab::x_ActRelationshipEntry::DRIV)";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validateInjuryIncidentDescriptionSectionPatientLocationInVehicle(InjuryIncidentDescriptionSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Injury Incident Description Section Patient Location In Vehicle</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL invariant for the '{@link #validateInjuryIncidentDescriptionSectionPatientLocationInVehicle(InjuryIncidentDescriptionSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Injury Incident Description Section Patient Location In Vehicle</em>}' invariant operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateInjuryIncidentDescriptionSectionPatientLocationInVehicle(InjuryIncidentDescriptionSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	
+	* @see #validateInjuryIncidentDescriptionSectionPatientLocationInVehicle(InjuryIncidentDescriptionSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
+
 	protected static Constraint VALIDATE_INJURY_INCIDENT_DESCRIPTION_SECTION_PATIENT_LOCATION_IN_VEHICLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param injuryIncidentDescriptionSection The receiving '<em><b>Injury Incident Description Section</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
-	
-	public static  boolean validateInjuryIncidentDescriptionSectionPatientLocationInVehicle(InjuryIncidentDescriptionSection injuryIncidentDescriptionSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+	* <!-- begin-model-doc -->
+	* @param injuryIncidentDescriptionSection The receiving '<em><b>Injury Incident Description Section</b></em>' model object.
+	* @param diagnostics The chain of diagnostics to which problems are to be appended.
+	* @param context The cache of context-specific information.
+	* <!-- end-model-doc -->
+	* @generated
+	*/
+
+	public static boolean validateInjuryIncidentDescriptionSectionPatientLocationInVehicle(
+			InjuryIncidentDescriptionSection injuryIncidentDescriptionSection, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+
 		if (VALIDATE_INJURY_INCIDENT_DESCRIPTION_SECTION_PATIENT_LOCATION_IN_VEHICLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.INJURY_INCIDENT_DESCRIPTION_SECTION);
 			try {
 				VALIDATE_INJURY_INCIDENT_DESCRIPTION_SECTION_PATIENT_LOCATION_IN_VEHICLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_INJURY_INCIDENT_DESCRIPTION_SECTION_PATIENT_LOCATION_IN_VEHICLE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_INJURY_INCIDENT_DESCRIPTION_SECTION_PATIENT_LOCATION_IN_VEHICLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(injuryIncidentDescriptionSection)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_INJURY_INCIDENT_DESCRIPTION_SECTION_PATIENT_LOCATION_IN_VEHICLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			injuryIncidentDescriptionSection)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.INJURY_INCIDENT_DESCRIPTION_SECTION__INJURY_INCIDENT_DESCRIPTION_SECTION_PATIENT_LOCATION_IN_VEHICLE,
-						 EmspcrPlugin.INSTANCE.getString("InjuryIncidentDescriptionSectionPatientLocationInVehicle"),
-						 new Object [] { injuryIncidentDescriptionSection }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR,
+					EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.INJURY_INCIDENT_DESCRIPTION_SECTION__INJURY_INCIDENT_DESCRIPTION_SECTION_PATIENT_LOCATION_IN_VEHICLE,
+					EmspcrPlugin.INSTANCE.getString("InjuryIncidentDescriptionSectionPatientLocationInVehicle"),
+					new Object[] { injuryIncidentDescriptionSection }));
 			}
-			 
+
 			return false;
 		}
 		return true;
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateInjuryIncidentDescriptionSectionVehicleOccupantSafetyEquipment(InjuryIncidentDescriptionSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Injury Incident Description Section Vehicle Occupant Safety Equipment</em>}' operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL expression body for the '{@link #validateInjuryIncidentDescriptionSectionVehicleOccupantSafetyEquipment(InjuryIncidentDescriptionSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Injury Incident Description Section Vehicle Occupant Safety Equipment</em>}' operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateInjuryIncidentDescriptionSectionVehicleOccupantSafetyEquipment(InjuryIncidentDescriptionSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validateInjuryIncidentDescriptionSectionVehicleOccupantSafetyEquipment(InjuryIncidentDescriptionSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 	protected static final String VALIDATE_INJURY_INCIDENT_DESCRIPTION_SECTION_VEHICLE_OCCUPANT_SAFETY_EQUIPMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->one(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(emspcr::VehicleOccupantSafetyEquipment) and entry.typeCode = vocab::x_ActRelationshipEntry::DRIV)";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validateInjuryIncidentDescriptionSectionVehicleOccupantSafetyEquipment(InjuryIncidentDescriptionSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Injury Incident Description Section Vehicle Occupant Safety Equipment</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL invariant for the '{@link #validateInjuryIncidentDescriptionSectionVehicleOccupantSafetyEquipment(InjuryIncidentDescriptionSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Injury Incident Description Section Vehicle Occupant Safety Equipment</em>}' invariant operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateInjuryIncidentDescriptionSectionVehicleOccupantSafetyEquipment(InjuryIncidentDescriptionSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	
+	* @see #validateInjuryIncidentDescriptionSectionVehicleOccupantSafetyEquipment(InjuryIncidentDescriptionSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
+
 	protected static Constraint VALIDATE_INJURY_INCIDENT_DESCRIPTION_SECTION_VEHICLE_OCCUPANT_SAFETY_EQUIPMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param injuryIncidentDescriptionSection The receiving '<em><b>Injury Incident Description Section</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
-	
-	public static  boolean validateInjuryIncidentDescriptionSectionVehicleOccupantSafetyEquipment(InjuryIncidentDescriptionSection injuryIncidentDescriptionSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+	* <!-- begin-model-doc -->
+	* @param injuryIncidentDescriptionSection The receiving '<em><b>Injury Incident Description Section</b></em>' model object.
+	* @param diagnostics The chain of diagnostics to which problems are to be appended.
+	* @param context The cache of context-specific information.
+	* <!-- end-model-doc -->
+	* @generated
+	*/
+
+	public static boolean validateInjuryIncidentDescriptionSectionVehicleOccupantSafetyEquipment(
+			InjuryIncidentDescriptionSection injuryIncidentDescriptionSection, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+
 		if (VALIDATE_INJURY_INCIDENT_DESCRIPTION_SECTION_VEHICLE_OCCUPANT_SAFETY_EQUIPMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.INJURY_INCIDENT_DESCRIPTION_SECTION);
 			try {
 				VALIDATE_INJURY_INCIDENT_DESCRIPTION_SECTION_VEHICLE_OCCUPANT_SAFETY_EQUIPMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_INJURY_INCIDENT_DESCRIPTION_SECTION_VEHICLE_OCCUPANT_SAFETY_EQUIPMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_INJURY_INCIDENT_DESCRIPTION_SECTION_VEHICLE_OCCUPANT_SAFETY_EQUIPMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(injuryIncidentDescriptionSection)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_INJURY_INCIDENT_DESCRIPTION_SECTION_VEHICLE_OCCUPANT_SAFETY_EQUIPMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			injuryIncidentDescriptionSection)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.INJURY_INCIDENT_DESCRIPTION_SECTION__INJURY_INCIDENT_DESCRIPTION_SECTION_VEHICLE_OCCUPANT_SAFETY_EQUIPMENT,
-						 EmspcrPlugin.INSTANCE.getString("InjuryIncidentDescriptionSectionVehicleOccupantSafetyEquipment"),
-						 new Object [] { injuryIncidentDescriptionSection }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR,
+					EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.INJURY_INCIDENT_DESCRIPTION_SECTION__INJURY_INCIDENT_DESCRIPTION_SECTION_VEHICLE_OCCUPANT_SAFETY_EQUIPMENT,
+					EmspcrPlugin.INSTANCE.getString("InjuryIncidentDescriptionSectionVehicleOccupantSafetyEquipment"),
+					new Object[] { injuryIncidentDescriptionSection }));
 			}
-			 
+
 			return false;
 		}
 		return true;
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateInjuryIncidentDescriptionSectionAirbagDeploymentStatus(InjuryIncidentDescriptionSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Injury Incident Description Section Airbag Deployment Status</em>}' operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL expression body for the '{@link #validateInjuryIncidentDescriptionSectionAirbagDeploymentStatus(InjuryIncidentDescriptionSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Injury Incident Description Section Airbag Deployment Status</em>}' operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateInjuryIncidentDescriptionSectionAirbagDeploymentStatus(InjuryIncidentDescriptionSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validateInjuryIncidentDescriptionSectionAirbagDeploymentStatus(InjuryIncidentDescriptionSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 	protected static final String VALIDATE_INJURY_INCIDENT_DESCRIPTION_SECTION_AIRBAG_DEPLOYMENT_STATUS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->one(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(emspcr::AirbagDeploymentStatus) and entry.typeCode = vocab::x_ActRelationshipEntry::DRIV)";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validateInjuryIncidentDescriptionSectionAirbagDeploymentStatus(InjuryIncidentDescriptionSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Injury Incident Description Section Airbag Deployment Status</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL invariant for the '{@link #validateInjuryIncidentDescriptionSectionAirbagDeploymentStatus(InjuryIncidentDescriptionSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Injury Incident Description Section Airbag Deployment Status</em>}' invariant operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateInjuryIncidentDescriptionSectionAirbagDeploymentStatus(InjuryIncidentDescriptionSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	
+	* @see #validateInjuryIncidentDescriptionSectionAirbagDeploymentStatus(InjuryIncidentDescriptionSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
+
 	protected static Constraint VALIDATE_INJURY_INCIDENT_DESCRIPTION_SECTION_AIRBAG_DEPLOYMENT_STATUS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param injuryIncidentDescriptionSection The receiving '<em><b>Injury Incident Description Section</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
-	
-	public static  boolean validateInjuryIncidentDescriptionSectionAirbagDeploymentStatus(InjuryIncidentDescriptionSection injuryIncidentDescriptionSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+	* <!-- begin-model-doc -->
+	* @param injuryIncidentDescriptionSection The receiving '<em><b>Injury Incident Description Section</b></em>' model object.
+	* @param diagnostics The chain of diagnostics to which problems are to be appended.
+	* @param context The cache of context-specific information.
+	* <!-- end-model-doc -->
+	* @generated
+	*/
+
+	public static boolean validateInjuryIncidentDescriptionSectionAirbagDeploymentStatus(
+			InjuryIncidentDescriptionSection injuryIncidentDescriptionSection, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+
 		if (VALIDATE_INJURY_INCIDENT_DESCRIPTION_SECTION_AIRBAG_DEPLOYMENT_STATUS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.INJURY_INCIDENT_DESCRIPTION_SECTION);
 			try {
 				VALIDATE_INJURY_INCIDENT_DESCRIPTION_SECTION_AIRBAG_DEPLOYMENT_STATUS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_INJURY_INCIDENT_DESCRIPTION_SECTION_AIRBAG_DEPLOYMENT_STATUS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_INJURY_INCIDENT_DESCRIPTION_SECTION_AIRBAG_DEPLOYMENT_STATUS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(injuryIncidentDescriptionSection)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_INJURY_INCIDENT_DESCRIPTION_SECTION_AIRBAG_DEPLOYMENT_STATUS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			injuryIncidentDescriptionSection)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.INJURY_INCIDENT_DESCRIPTION_SECTION__INJURY_INCIDENT_DESCRIPTION_SECTION_AIRBAG_DEPLOYMENT_STATUS,
-						 EmspcrPlugin.INSTANCE.getString("InjuryIncidentDescriptionSectionAirbagDeploymentStatus"),
-						 new Object [] { injuryIncidentDescriptionSection }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR,
+					EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.INJURY_INCIDENT_DESCRIPTION_SECTION__INJURY_INCIDENT_DESCRIPTION_SECTION_AIRBAG_DEPLOYMENT_STATUS,
+					EmspcrPlugin.INSTANCE.getString("InjuryIncidentDescriptionSectionAirbagDeploymentStatus"),
+					new Object[] { injuryIncidentDescriptionSection }));
 			}
-			 
+
 			return false;
 		}
 		return true;
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateInjuryIncidentDescriptionSectionHeightOfFall(InjuryIncidentDescriptionSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Injury Incident Description Section Height Of Fall</em>}' operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL expression body for the '{@link #validateInjuryIncidentDescriptionSectionHeightOfFall(InjuryIncidentDescriptionSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Injury Incident Description Section Height Of Fall</em>}' operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateInjuryIncidentDescriptionSectionHeightOfFall(InjuryIncidentDescriptionSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validateInjuryIncidentDescriptionSectionHeightOfFall(InjuryIncidentDescriptionSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 	protected static final String VALIDATE_INJURY_INCIDENT_DESCRIPTION_SECTION_HEIGHT_OF_FALL__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->one(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(emspcr::HeightOfFall) and entry.typeCode = vocab::x_ActRelationshipEntry::DRIV)";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validateInjuryIncidentDescriptionSectionHeightOfFall(InjuryIncidentDescriptionSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Injury Incident Description Section Height Of Fall</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL invariant for the '{@link #validateInjuryIncidentDescriptionSectionHeightOfFall(InjuryIncidentDescriptionSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Injury Incident Description Section Height Of Fall</em>}' invariant operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateInjuryIncidentDescriptionSectionHeightOfFall(InjuryIncidentDescriptionSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	
+	* @see #validateInjuryIncidentDescriptionSectionHeightOfFall(InjuryIncidentDescriptionSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
+
 	protected static Constraint VALIDATE_INJURY_INCIDENT_DESCRIPTION_SECTION_HEIGHT_OF_FALL__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param injuryIncidentDescriptionSection The receiving '<em><b>Injury Incident Description Section</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
-	
-	public static  boolean validateInjuryIncidentDescriptionSectionHeightOfFall(InjuryIncidentDescriptionSection injuryIncidentDescriptionSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+	* <!-- begin-model-doc -->
+	* @param injuryIncidentDescriptionSection The receiving '<em><b>Injury Incident Description Section</b></em>' model object.
+	* @param diagnostics The chain of diagnostics to which problems are to be appended.
+	* @param context The cache of context-specific information.
+	* <!-- end-model-doc -->
+	* @generated
+	*/
+
+	public static boolean validateInjuryIncidentDescriptionSectionHeightOfFall(
+			InjuryIncidentDescriptionSection injuryIncidentDescriptionSection, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+
 		if (VALIDATE_INJURY_INCIDENT_DESCRIPTION_SECTION_HEIGHT_OF_FALL__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.INJURY_INCIDENT_DESCRIPTION_SECTION);
 			try {
 				VALIDATE_INJURY_INCIDENT_DESCRIPTION_SECTION_HEIGHT_OF_FALL__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_INJURY_INCIDENT_DESCRIPTION_SECTION_HEIGHT_OF_FALL__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_INJURY_INCIDENT_DESCRIPTION_SECTION_HEIGHT_OF_FALL__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(injuryIncidentDescriptionSection)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_INJURY_INCIDENT_DESCRIPTION_SECTION_HEIGHT_OF_FALL__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			injuryIncidentDescriptionSection)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.INJURY_INCIDENT_DESCRIPTION_SECTION__INJURY_INCIDENT_DESCRIPTION_SECTION_HEIGHT_OF_FALL,
-						 EmspcrPlugin.INSTANCE.getString("InjuryIncidentDescriptionSectionHeightOfFall"),
-						 new Object [] { injuryIncidentDescriptionSection }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR,
+					EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.INJURY_INCIDENT_DESCRIPTION_SECTION__INJURY_INCIDENT_DESCRIPTION_SECTION_HEIGHT_OF_FALL,
+					EmspcrPlugin.INSTANCE.getString("InjuryIncidentDescriptionSectionHeightOfFall"),
+					new Object[] { injuryIncidentDescriptionSection }));
 			}
-			 
+
 			return false;
 		}
 		return true;
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateInjuryIncidentDescriptionSectionDisasterType(InjuryIncidentDescriptionSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Injury Incident Description Section Disaster Type</em>}' operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL expression body for the '{@link #validateInjuryIncidentDescriptionSectionDisasterType(InjuryIncidentDescriptionSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Injury Incident Description Section Disaster Type</em>}' operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateInjuryIncidentDescriptionSectionDisasterType(InjuryIncidentDescriptionSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validateInjuryIncidentDescriptionSectionDisasterType(InjuryIncidentDescriptionSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 	protected static final String VALIDATE_INJURY_INCIDENT_DESCRIPTION_SECTION_DISASTER_TYPE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->one(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(emspcr::DisasterType) and entry.typeCode = vocab::x_ActRelationshipEntry::DRIV)";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validateInjuryIncidentDescriptionSectionDisasterType(InjuryIncidentDescriptionSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Injury Incident Description Section Disaster Type</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL invariant for the '{@link #validateInjuryIncidentDescriptionSectionDisasterType(InjuryIncidentDescriptionSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Injury Incident Description Section Disaster Type</em>}' invariant operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateInjuryIncidentDescriptionSectionDisasterType(InjuryIncidentDescriptionSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	
+	* @see #validateInjuryIncidentDescriptionSectionDisasterType(InjuryIncidentDescriptionSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
+
 	protected static Constraint VALIDATE_INJURY_INCIDENT_DESCRIPTION_SECTION_DISASTER_TYPE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param injuryIncidentDescriptionSection The receiving '<em><b>Injury Incident Description Section</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
-	
-	public static  boolean validateInjuryIncidentDescriptionSectionDisasterType(InjuryIncidentDescriptionSection injuryIncidentDescriptionSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+	* <!-- begin-model-doc -->
+	* @param injuryIncidentDescriptionSection The receiving '<em><b>Injury Incident Description Section</b></em>' model object.
+	* @param diagnostics The chain of diagnostics to which problems are to be appended.
+	* @param context The cache of context-specific information.
+	* <!-- end-model-doc -->
+	* @generated
+	*/
+
+	public static boolean validateInjuryIncidentDescriptionSectionDisasterType(
+			InjuryIncidentDescriptionSection injuryIncidentDescriptionSection, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+
 		if (VALIDATE_INJURY_INCIDENT_DESCRIPTION_SECTION_DISASTER_TYPE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.INJURY_INCIDENT_DESCRIPTION_SECTION);
 			try {
 				VALIDATE_INJURY_INCIDENT_DESCRIPTION_SECTION_DISASTER_TYPE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_INJURY_INCIDENT_DESCRIPTION_SECTION_DISASTER_TYPE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_INJURY_INCIDENT_DESCRIPTION_SECTION_DISASTER_TYPE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(injuryIncidentDescriptionSection)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_INJURY_INCIDENT_DESCRIPTION_SECTION_DISASTER_TYPE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			injuryIncidentDescriptionSection)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.INJURY_INCIDENT_DESCRIPTION_SECTION__INJURY_INCIDENT_DESCRIPTION_SECTION_DISASTER_TYPE,
-						 EmspcrPlugin.INSTANCE.getString("InjuryIncidentDescriptionSectionDisasterType"),
-						 new Object [] { injuryIncidentDescriptionSection }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR,
+					EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.INJURY_INCIDENT_DESCRIPTION_SECTION__INJURY_INCIDENT_DESCRIPTION_SECTION_DISASTER_TYPE,
+					EmspcrPlugin.INSTANCE.getString("InjuryIncidentDescriptionSectionDisasterType"),
+					new Object[] { injuryIncidentDescriptionSection }));
 			}
-			 
+
 			return false;
 		}
 		return true;
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #getInjuryCauseCategory(InjuryIncidentDescriptionSection) <em>Get Injury Cause Category</em>}' operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL expression body for the '{@link #getInjuryCauseCategory(InjuryIncidentDescriptionSection) <em>Get Injury Cause Category</em>}' operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getInjuryCauseCategory(InjuryIncidentDescriptionSection)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #getInjuryCauseCategory(InjuryIncidentDescriptionSection)
+	* @generated
+	* @ordered
+	*/
 	protected static final String GET_INJURY_CAUSE_CATEGORY__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(emspcr::InjuryCauseCategory))->asSequence()->any(true).oclAsType(emspcr::InjuryCauseCategory)";
 
 	/**
-	 * The cached OCL query for the '{@link #getInjuryCauseCategory(InjuryIncidentDescriptionSection) <em>Get Injury Cause Category</em>}' query operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL query for the '{@link #getInjuryCauseCategory(InjuryIncidentDescriptionSection) <em>Get Injury Cause Category</em>}' query operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getInjuryCauseCategory(InjuryIncidentDescriptionSection)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #getInjuryCauseCategory(InjuryIncidentDescriptionSection)
+	* @generated
+	* @ordered
+	*/
 	protected static OCLExpression<EClassifier> GET_INJURY_CAUSE_CATEGORY__EOCL_QRY;
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	
-	public static  InjuryCauseCategory getInjuryCauseCategory(InjuryIncidentDescriptionSection injuryIncidentDescriptionSection) {
+	* @generated
+	*/
+
+	public static InjuryCauseCategory getInjuryCauseCategory(
+			InjuryIncidentDescriptionSection injuryIncidentDescriptionSection) {
 		if (GET_INJURY_CAUSE_CATEGORY__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(EmspcrPackage.Literals.INJURY_INCIDENT_DESCRIPTION_SECTION, EmspcrPackage.Literals.INJURY_INCIDENT_DESCRIPTION_SECTION.getEAllOperations().get(69));
+			helper.setOperationContext(
+				EmspcrPackage.Literals.INJURY_INCIDENT_DESCRIPTION_SECTION,
+				EmspcrPackage.Literals.INJURY_INCIDENT_DESCRIPTION_SECTION.getEAllOperations().get(69));
 			try {
 				GET_INJURY_CAUSE_CATEGORY__EOCL_QRY = helper.createQuery(GET_INJURY_CAUSE_CATEGORY__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -984,39 +994,40 @@ public class InjuryIncidentDescriptionSectionOperations extends SectionOperation
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #getInjuryMechanism(InjuryIncidentDescriptionSection) <em>Get Injury Mechanism</em>}' operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL expression body for the '{@link #getInjuryMechanism(InjuryIncidentDescriptionSection) <em>Get Injury Mechanism</em>}' operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getInjuryMechanism(InjuryIncidentDescriptionSection)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #getInjuryMechanism(InjuryIncidentDescriptionSection)
+	* @generated
+	* @ordered
+	*/
 	protected static final String GET_INJURY_MECHANISM__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(emspcr::InjuryMechanism))->asSequence()->any(true).oclAsType(emspcr::InjuryMechanism)";
 
 	/**
-	 * The cached OCL query for the '{@link #getInjuryMechanism(InjuryIncidentDescriptionSection) <em>Get Injury Mechanism</em>}' query operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL query for the '{@link #getInjuryMechanism(InjuryIncidentDescriptionSection) <em>Get Injury Mechanism</em>}' query operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getInjuryMechanism(InjuryIncidentDescriptionSection)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #getInjuryMechanism(InjuryIncidentDescriptionSection)
+	* @generated
+	* @ordered
+	*/
 	protected static OCLExpression<EClassifier> GET_INJURY_MECHANISM__EOCL_QRY;
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	
-	public static  InjuryMechanism getInjuryMechanism(InjuryIncidentDescriptionSection injuryIncidentDescriptionSection) {
+	* @generated
+	*/
+
+	public static InjuryMechanism getInjuryMechanism(InjuryIncidentDescriptionSection injuryIncidentDescriptionSection) {
 		if (GET_INJURY_MECHANISM__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(EmspcrPackage.Literals.INJURY_INCIDENT_DESCRIPTION_SECTION, EmspcrPackage.Literals.INJURY_INCIDENT_DESCRIPTION_SECTION.getEAllOperations().get(70));
+			helper.setOperationContext(
+				EmspcrPackage.Literals.INJURY_INCIDENT_DESCRIPTION_SECTION,
+				EmspcrPackage.Literals.INJURY_INCIDENT_DESCRIPTION_SECTION.getEAllOperations().get(70));
 			try {
 				GET_INJURY_MECHANISM__EOCL_QRY = helper.createQuery(GET_INJURY_MECHANISM__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -1025,39 +1036,41 @@ public class InjuryIncidentDescriptionSectionOperations extends SectionOperation
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #getTraumaCenterCriteria(InjuryIncidentDescriptionSection) <em>Get Trauma Center Criteria</em>}' operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL expression body for the '{@link #getTraumaCenterCriteria(InjuryIncidentDescriptionSection) <em>Get Trauma Center Criteria</em>}' operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getTraumaCenterCriteria(InjuryIncidentDescriptionSection)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #getTraumaCenterCriteria(InjuryIncidentDescriptionSection)
+	* @generated
+	* @ordered
+	*/
 	protected static final String GET_TRAUMA_CENTER_CRITERIA__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(emspcr::TraumaCenterCriteria))->asSequence()->any(true).oclAsType(emspcr::TraumaCenterCriteria)";
 
 	/**
-	 * The cached OCL query for the '{@link #getTraumaCenterCriteria(InjuryIncidentDescriptionSection) <em>Get Trauma Center Criteria</em>}' query operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL query for the '{@link #getTraumaCenterCriteria(InjuryIncidentDescriptionSection) <em>Get Trauma Center Criteria</em>}' query operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getTraumaCenterCriteria(InjuryIncidentDescriptionSection)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #getTraumaCenterCriteria(InjuryIncidentDescriptionSection)
+	* @generated
+	* @ordered
+	*/
 	protected static OCLExpression<EClassifier> GET_TRAUMA_CENTER_CRITERIA__EOCL_QRY;
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	
-	public static  TraumaCenterCriteria getTraumaCenterCriteria(InjuryIncidentDescriptionSection injuryIncidentDescriptionSection) {
+	* @generated
+	*/
+
+	public static TraumaCenterCriteria getTraumaCenterCriteria(
+			InjuryIncidentDescriptionSection injuryIncidentDescriptionSection) {
 		if (GET_TRAUMA_CENTER_CRITERIA__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(EmspcrPackage.Literals.INJURY_INCIDENT_DESCRIPTION_SECTION, EmspcrPackage.Literals.INJURY_INCIDENT_DESCRIPTION_SECTION.getEAllOperations().get(71));
+			helper.setOperationContext(
+				EmspcrPackage.Literals.INJURY_INCIDENT_DESCRIPTION_SECTION,
+				EmspcrPackage.Literals.INJURY_INCIDENT_DESCRIPTION_SECTION.getEAllOperations().get(71));
 			try {
 				GET_TRAUMA_CENTER_CRITERIA__EOCL_QRY = helper.createQuery(GET_TRAUMA_CENTER_CRITERIA__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -1066,39 +1079,40 @@ public class InjuryIncidentDescriptionSectionOperations extends SectionOperation
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #getInjuryRiskFactor(InjuryIncidentDescriptionSection) <em>Get Injury Risk Factor</em>}' operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL expression body for the '{@link #getInjuryRiskFactor(InjuryIncidentDescriptionSection) <em>Get Injury Risk Factor</em>}' operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getInjuryRiskFactor(InjuryIncidentDescriptionSection)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #getInjuryRiskFactor(InjuryIncidentDescriptionSection)
+	* @generated
+	* @ordered
+	*/
 	protected static final String GET_INJURY_RISK_FACTOR__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(emspcr::InjuryRiskFactor))->asSequence()->any(true).oclAsType(emspcr::InjuryRiskFactor)";
 
 	/**
-	 * The cached OCL query for the '{@link #getInjuryRiskFactor(InjuryIncidentDescriptionSection) <em>Get Injury Risk Factor</em>}' query operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL query for the '{@link #getInjuryRiskFactor(InjuryIncidentDescriptionSection) <em>Get Injury Risk Factor</em>}' query operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getInjuryRiskFactor(InjuryIncidentDescriptionSection)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #getInjuryRiskFactor(InjuryIncidentDescriptionSection)
+	* @generated
+	* @ordered
+	*/
 	protected static OCLExpression<EClassifier> GET_INJURY_RISK_FACTOR__EOCL_QRY;
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	
-	public static  InjuryRiskFactor getInjuryRiskFactor(InjuryIncidentDescriptionSection injuryIncidentDescriptionSection) {
+	* @generated
+	*/
+
+	public static InjuryRiskFactor getInjuryRiskFactor(InjuryIncidentDescriptionSection injuryIncidentDescriptionSection) {
 		if (GET_INJURY_RISK_FACTOR__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(EmspcrPackage.Literals.INJURY_INCIDENT_DESCRIPTION_SECTION, EmspcrPackage.Literals.INJURY_INCIDENT_DESCRIPTION_SECTION.getEAllOperations().get(72));
+			helper.setOperationContext(
+				EmspcrPackage.Literals.INJURY_INCIDENT_DESCRIPTION_SECTION,
+				EmspcrPackage.Literals.INJURY_INCIDENT_DESCRIPTION_SECTION.getEAllOperations().get(72));
 			try {
 				GET_INJURY_RISK_FACTOR__EOCL_QRY = helper.createQuery(GET_INJURY_RISK_FACTOR__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -1107,39 +1121,41 @@ public class InjuryIncidentDescriptionSectionOperations extends SectionOperation
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #getVehicleImpactArea(InjuryIncidentDescriptionSection) <em>Get Vehicle Impact Area</em>}' operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL expression body for the '{@link #getVehicleImpactArea(InjuryIncidentDescriptionSection) <em>Get Vehicle Impact Area</em>}' operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getVehicleImpactArea(InjuryIncidentDescriptionSection)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #getVehicleImpactArea(InjuryIncidentDescriptionSection)
+	* @generated
+	* @ordered
+	*/
 	protected static final String GET_VEHICLE_IMPACT_AREA__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(emspcr::VehicleImpactArea))->asSequence()->any(true).oclAsType(emspcr::VehicleImpactArea)";
 
 	/**
-	 * The cached OCL query for the '{@link #getVehicleImpactArea(InjuryIncidentDescriptionSection) <em>Get Vehicle Impact Area</em>}' query operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL query for the '{@link #getVehicleImpactArea(InjuryIncidentDescriptionSection) <em>Get Vehicle Impact Area</em>}' query operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getVehicleImpactArea(InjuryIncidentDescriptionSection)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #getVehicleImpactArea(InjuryIncidentDescriptionSection)
+	* @generated
+	* @ordered
+	*/
 	protected static OCLExpression<EClassifier> GET_VEHICLE_IMPACT_AREA__EOCL_QRY;
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	
-	public static  VehicleImpactArea getVehicleImpactArea(InjuryIncidentDescriptionSection injuryIncidentDescriptionSection) {
+	* @generated
+	*/
+
+	public static VehicleImpactArea getVehicleImpactArea(
+			InjuryIncidentDescriptionSection injuryIncidentDescriptionSection) {
 		if (GET_VEHICLE_IMPACT_AREA__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(EmspcrPackage.Literals.INJURY_INCIDENT_DESCRIPTION_SECTION, EmspcrPackage.Literals.INJURY_INCIDENT_DESCRIPTION_SECTION.getEAllOperations().get(73));
+			helper.setOperationContext(
+				EmspcrPackage.Literals.INJURY_INCIDENT_DESCRIPTION_SECTION,
+				EmspcrPackage.Literals.INJURY_INCIDENT_DESCRIPTION_SECTION.getEAllOperations().get(73));
 			try {
 				GET_VEHICLE_IMPACT_AREA__EOCL_QRY = helper.createQuery(GET_VEHICLE_IMPACT_AREA__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -1148,39 +1164,41 @@ public class InjuryIncidentDescriptionSectionOperations extends SectionOperation
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #getPatientLocationInVehicle(InjuryIncidentDescriptionSection) <em>Get Patient Location In Vehicle</em>}' operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL expression body for the '{@link #getPatientLocationInVehicle(InjuryIncidentDescriptionSection) <em>Get Patient Location In Vehicle</em>}' operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getPatientLocationInVehicle(InjuryIncidentDescriptionSection)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #getPatientLocationInVehicle(InjuryIncidentDescriptionSection)
+	* @generated
+	* @ordered
+	*/
 	protected static final String GET_PATIENT_LOCATION_IN_VEHICLE__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(emspcr::PatientLocationInVehicle))->asSequence()->any(true).oclAsType(emspcr::PatientLocationInVehicle)";
 
 	/**
-	 * The cached OCL query for the '{@link #getPatientLocationInVehicle(InjuryIncidentDescriptionSection) <em>Get Patient Location In Vehicle</em>}' query operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL query for the '{@link #getPatientLocationInVehicle(InjuryIncidentDescriptionSection) <em>Get Patient Location In Vehicle</em>}' query operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getPatientLocationInVehicle(InjuryIncidentDescriptionSection)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #getPatientLocationInVehicle(InjuryIncidentDescriptionSection)
+	* @generated
+	* @ordered
+	*/
 	protected static OCLExpression<EClassifier> GET_PATIENT_LOCATION_IN_VEHICLE__EOCL_QRY;
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	
-	public static  PatientLocationInVehicle getPatientLocationInVehicle(InjuryIncidentDescriptionSection injuryIncidentDescriptionSection) {
+	* @generated
+	*/
+
+	public static PatientLocationInVehicle getPatientLocationInVehicle(
+			InjuryIncidentDescriptionSection injuryIncidentDescriptionSection) {
 		if (GET_PATIENT_LOCATION_IN_VEHICLE__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(EmspcrPackage.Literals.INJURY_INCIDENT_DESCRIPTION_SECTION, EmspcrPackage.Literals.INJURY_INCIDENT_DESCRIPTION_SECTION.getEAllOperations().get(74));
+			helper.setOperationContext(
+				EmspcrPackage.Literals.INJURY_INCIDENT_DESCRIPTION_SECTION,
+				EmspcrPackage.Literals.INJURY_INCIDENT_DESCRIPTION_SECTION.getEAllOperations().get(74));
 			try {
 				GET_PATIENT_LOCATION_IN_VEHICLE__EOCL_QRY = helper.createQuery(GET_PATIENT_LOCATION_IN_VEHICLE__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -1189,39 +1207,41 @@ public class InjuryIncidentDescriptionSectionOperations extends SectionOperation
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #getVehicleOccupantSafetyEquipment(InjuryIncidentDescriptionSection) <em>Get Vehicle Occupant Safety Equipment</em>}' operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL expression body for the '{@link #getVehicleOccupantSafetyEquipment(InjuryIncidentDescriptionSection) <em>Get Vehicle Occupant Safety Equipment</em>}' operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getVehicleOccupantSafetyEquipment(InjuryIncidentDescriptionSection)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #getVehicleOccupantSafetyEquipment(InjuryIncidentDescriptionSection)
+	* @generated
+	* @ordered
+	*/
 	protected static final String GET_VEHICLE_OCCUPANT_SAFETY_EQUIPMENT__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(emspcr::VehicleOccupantSafetyEquipment))->asSequence()->any(true).oclAsType(emspcr::VehicleOccupantSafetyEquipment)";
 
 	/**
-	 * The cached OCL query for the '{@link #getVehicleOccupantSafetyEquipment(InjuryIncidentDescriptionSection) <em>Get Vehicle Occupant Safety Equipment</em>}' query operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL query for the '{@link #getVehicleOccupantSafetyEquipment(InjuryIncidentDescriptionSection) <em>Get Vehicle Occupant Safety Equipment</em>}' query operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getVehicleOccupantSafetyEquipment(InjuryIncidentDescriptionSection)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #getVehicleOccupantSafetyEquipment(InjuryIncidentDescriptionSection)
+	* @generated
+	* @ordered
+	*/
 	protected static OCLExpression<EClassifier> GET_VEHICLE_OCCUPANT_SAFETY_EQUIPMENT__EOCL_QRY;
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	
-	public static  VehicleOccupantSafetyEquipment getVehicleOccupantSafetyEquipment(InjuryIncidentDescriptionSection injuryIncidentDescriptionSection) {
+	* @generated
+	*/
+
+	public static VehicleOccupantSafetyEquipment getVehicleOccupantSafetyEquipment(
+			InjuryIncidentDescriptionSection injuryIncidentDescriptionSection) {
 		if (GET_VEHICLE_OCCUPANT_SAFETY_EQUIPMENT__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(EmspcrPackage.Literals.INJURY_INCIDENT_DESCRIPTION_SECTION, EmspcrPackage.Literals.INJURY_INCIDENT_DESCRIPTION_SECTION.getEAllOperations().get(75));
+			helper.setOperationContext(
+				EmspcrPackage.Literals.INJURY_INCIDENT_DESCRIPTION_SECTION,
+				EmspcrPackage.Literals.INJURY_INCIDENT_DESCRIPTION_SECTION.getEAllOperations().get(75));
 			try {
 				GET_VEHICLE_OCCUPANT_SAFETY_EQUIPMENT__EOCL_QRY = helper.createQuery(GET_VEHICLE_OCCUPANT_SAFETY_EQUIPMENT__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -1230,39 +1250,41 @@ public class InjuryIncidentDescriptionSectionOperations extends SectionOperation
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #getAirbagDeploymentStatus(InjuryIncidentDescriptionSection) <em>Get Airbag Deployment Status</em>}' operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL expression body for the '{@link #getAirbagDeploymentStatus(InjuryIncidentDescriptionSection) <em>Get Airbag Deployment Status</em>}' operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getAirbagDeploymentStatus(InjuryIncidentDescriptionSection)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #getAirbagDeploymentStatus(InjuryIncidentDescriptionSection)
+	* @generated
+	* @ordered
+	*/
 	protected static final String GET_AIRBAG_DEPLOYMENT_STATUS__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(emspcr::AirbagDeploymentStatus))->asSequence()->any(true).oclAsType(emspcr::AirbagDeploymentStatus)";
 
 	/**
-	 * The cached OCL query for the '{@link #getAirbagDeploymentStatus(InjuryIncidentDescriptionSection) <em>Get Airbag Deployment Status</em>}' query operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL query for the '{@link #getAirbagDeploymentStatus(InjuryIncidentDescriptionSection) <em>Get Airbag Deployment Status</em>}' query operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getAirbagDeploymentStatus(InjuryIncidentDescriptionSection)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #getAirbagDeploymentStatus(InjuryIncidentDescriptionSection)
+	* @generated
+	* @ordered
+	*/
 	protected static OCLExpression<EClassifier> GET_AIRBAG_DEPLOYMENT_STATUS__EOCL_QRY;
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	
-	public static  AirbagDeploymentStatus getAirbagDeploymentStatus(InjuryIncidentDescriptionSection injuryIncidentDescriptionSection) {
+	* @generated
+	*/
+
+	public static AirbagDeploymentStatus getAirbagDeploymentStatus(
+			InjuryIncidentDescriptionSection injuryIncidentDescriptionSection) {
 		if (GET_AIRBAG_DEPLOYMENT_STATUS__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(EmspcrPackage.Literals.INJURY_INCIDENT_DESCRIPTION_SECTION, EmspcrPackage.Literals.INJURY_INCIDENT_DESCRIPTION_SECTION.getEAllOperations().get(76));
+			helper.setOperationContext(
+				EmspcrPackage.Literals.INJURY_INCIDENT_DESCRIPTION_SECTION,
+				EmspcrPackage.Literals.INJURY_INCIDENT_DESCRIPTION_SECTION.getEAllOperations().get(76));
 			try {
 				GET_AIRBAG_DEPLOYMENT_STATUS__EOCL_QRY = helper.createQuery(GET_AIRBAG_DEPLOYMENT_STATUS__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -1271,39 +1293,40 @@ public class InjuryIncidentDescriptionSectionOperations extends SectionOperation
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #getHeightOfFall(InjuryIncidentDescriptionSection) <em>Get Height Of Fall</em>}' operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL expression body for the '{@link #getHeightOfFall(InjuryIncidentDescriptionSection) <em>Get Height Of Fall</em>}' operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getHeightOfFall(InjuryIncidentDescriptionSection)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #getHeightOfFall(InjuryIncidentDescriptionSection)
+	* @generated
+	* @ordered
+	*/
 	protected static final String GET_HEIGHT_OF_FALL__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(emspcr::HeightOfFall))->asSequence()->any(true).oclAsType(emspcr::HeightOfFall)";
 
 	/**
-	 * The cached OCL query for the '{@link #getHeightOfFall(InjuryIncidentDescriptionSection) <em>Get Height Of Fall</em>}' query operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL query for the '{@link #getHeightOfFall(InjuryIncidentDescriptionSection) <em>Get Height Of Fall</em>}' query operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getHeightOfFall(InjuryIncidentDescriptionSection)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #getHeightOfFall(InjuryIncidentDescriptionSection)
+	* @generated
+	* @ordered
+	*/
 	protected static OCLExpression<EClassifier> GET_HEIGHT_OF_FALL__EOCL_QRY;
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	
-	public static  HeightOfFall getHeightOfFall(InjuryIncidentDescriptionSection injuryIncidentDescriptionSection) {
+	* @generated
+	*/
+
+	public static HeightOfFall getHeightOfFall(InjuryIncidentDescriptionSection injuryIncidentDescriptionSection) {
 		if (GET_HEIGHT_OF_FALL__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(EmspcrPackage.Literals.INJURY_INCIDENT_DESCRIPTION_SECTION, EmspcrPackage.Literals.INJURY_INCIDENT_DESCRIPTION_SECTION.getEAllOperations().get(77));
+			helper.setOperationContext(
+				EmspcrPackage.Literals.INJURY_INCIDENT_DESCRIPTION_SECTION,
+				EmspcrPackage.Literals.INJURY_INCIDENT_DESCRIPTION_SECTION.getEAllOperations().get(77));
 			try {
 				GET_HEIGHT_OF_FALL__EOCL_QRY = helper.createQuery(GET_HEIGHT_OF_FALL__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -1312,39 +1335,40 @@ public class InjuryIncidentDescriptionSectionOperations extends SectionOperation
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #getDisasterType(InjuryIncidentDescriptionSection) <em>Get Disaster Type</em>}' operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL expression body for the '{@link #getDisasterType(InjuryIncidentDescriptionSection) <em>Get Disaster Type</em>}' operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getDisasterType(InjuryIncidentDescriptionSection)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #getDisasterType(InjuryIncidentDescriptionSection)
+	* @generated
+	* @ordered
+	*/
 	protected static final String GET_DISASTER_TYPE__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(emspcr::DisasterType))->asSequence()->any(true).oclAsType(emspcr::DisasterType)";
 
 	/**
-	 * The cached OCL query for the '{@link #getDisasterType(InjuryIncidentDescriptionSection) <em>Get Disaster Type</em>}' query operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL query for the '{@link #getDisasterType(InjuryIncidentDescriptionSection) <em>Get Disaster Type</em>}' query operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getDisasterType(InjuryIncidentDescriptionSection)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #getDisasterType(InjuryIncidentDescriptionSection)
+	* @generated
+	* @ordered
+	*/
 	protected static OCLExpression<EClassifier> GET_DISASTER_TYPE__EOCL_QRY;
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	
-	public static  DisasterType getDisasterType(InjuryIncidentDescriptionSection injuryIncidentDescriptionSection) {
+	* @generated
+	*/
+
+	public static DisasterType getDisasterType(InjuryIncidentDescriptionSection injuryIncidentDescriptionSection) {
 		if (GET_DISASTER_TYPE__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(EmspcrPackage.Literals.INJURY_INCIDENT_DESCRIPTION_SECTION, EmspcrPackage.Literals.INJURY_INCIDENT_DESCRIPTION_SECTION.getEAllOperations().get(78));
+			helper.setOperationContext(
+				EmspcrPackage.Literals.INJURY_INCIDENT_DESCRIPTION_SECTION,
+				EmspcrPackage.Literals.INJURY_INCIDENT_DESCRIPTION_SECTION.getEAllOperations().get(78));
 			try {
 				GET_DISASTER_TYPE__EOCL_QRY = helper.createQuery(GET_DISASTER_TYPE__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}

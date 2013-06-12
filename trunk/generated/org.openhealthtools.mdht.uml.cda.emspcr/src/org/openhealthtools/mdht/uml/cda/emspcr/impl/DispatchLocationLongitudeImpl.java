@@ -35,58 +35,68 @@ import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
  */
 public class DispatchLocationLongitudeImpl extends ObservationImpl implements DispatchLocationLongitude {
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	protected DispatchLocationLongitudeImpl() {
 		super();
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	@Override
 	protected EClass eStaticClass() {
 		return EmspcrPackage.Literals.DISPATCH_LOCATION_LONGITUDE;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateDispatchLocationLongitudeTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return DispatchLocationLongitudeOperations.validateDispatchLocationLongitudeTemplateId(this, diagnostics, context);
+		return DispatchLocationLongitudeOperations.validateDispatchLocationLongitudeTemplateId(
+			this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateDispatchLocationLongitudeCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return DispatchLocationLongitudeOperations.validateDispatchLocationLongitudeCode(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateDispatchLocationLongitudeValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return DispatchLocationLongitudeOperations.validateDispatchLocationLongitudeValue(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateDispatchLocationLongitudeMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return DispatchLocationLongitudeOperations.validateDispatchLocationLongitudeMoodCode(this, diagnostics, context);
+	}
+
+	/**
+	* <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	* @generated
+	*/
+	public DispatchLocationLongitude init() {
+		return Initializer.Util.init(this);
 	}
 
 	/**
@@ -94,16 +104,8 @@ public class DispatchLocationLongitudeImpl extends ObservationImpl implements Di
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public DispatchLocationLongitude init() {
-	    return Initializer.Util.init(this);
+	public DispatchLocationLongitude init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+		Initializer.Util.init(this, initializers);
+		return this;
 	}
-    /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public DispatchLocationLongitude init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
-} //DispatchLocationLongitudeImpl
+} // DispatchLocationLongitudeImpl

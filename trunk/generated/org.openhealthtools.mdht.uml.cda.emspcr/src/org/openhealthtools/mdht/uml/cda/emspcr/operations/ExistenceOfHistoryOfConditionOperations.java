@@ -44,255 +44,252 @@ import org.openhealthtools.mdht.uml.cda.operations.ClinicalStatementOperations;
  */
 public class ExistenceOfHistoryOfConditionOperations extends ClinicalStatementOperations {
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	protected ExistenceOfHistoryOfConditionOperations() {
 		super();
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateExistenceOfHistoryOfConditionTemplateId(ExistenceOfHistoryOfCondition, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Existence Of History Of Condition Template Id</em>}' operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL expression body for the '{@link #validateExistenceOfHistoryOfConditionTemplateId(ExistenceOfHistoryOfCondition, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Existence Of History Of Condition Template Id</em>}' operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateExistenceOfHistoryOfConditionTemplateId(ExistenceOfHistoryOfCondition, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validateExistenceOfHistoryOfConditionTemplateId(ExistenceOfHistoryOfCondition, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 	protected static final String VALIDATE_EXISTENCE_OF_HISTORY_OF_CONDITION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.1133883.17.3.10.1.60')";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validateExistenceOfHistoryOfConditionTemplateId(ExistenceOfHistoryOfCondition, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Existence Of History Of Condition Template Id</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL invariant for the '{@link #validateExistenceOfHistoryOfConditionTemplateId(ExistenceOfHistoryOfCondition, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Existence Of History Of Condition Template Id</em>}' invariant operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateExistenceOfHistoryOfConditionTemplateId(ExistenceOfHistoryOfCondition, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	
+	* @see #validateExistenceOfHistoryOfConditionTemplateId(ExistenceOfHistoryOfCondition, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
+
 	protected static Constraint VALIDATE_EXISTENCE_OF_HISTORY_OF_CONDITION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param existenceOfHistoryOfCondition The receiving '<em><b>Existence Of History Of Condition</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
-	
-	public static  boolean validateExistenceOfHistoryOfConditionTemplateId(ExistenceOfHistoryOfCondition existenceOfHistoryOfCondition, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+	* <!-- begin-model-doc -->
+	* @param existenceOfHistoryOfCondition The receiving '<em><b>Existence Of History Of Condition</b></em>' model object.
+	* @param diagnostics The chain of diagnostics to which problems are to be appended.
+	* @param context The cache of context-specific information.
+	* <!-- end-model-doc -->
+	* @generated
+	*/
+
+	public static boolean validateExistenceOfHistoryOfConditionTemplateId(
+			ExistenceOfHistoryOfCondition existenceOfHistoryOfCondition, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+
 		if (VALIDATE_EXISTENCE_OF_HISTORY_OF_CONDITION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.EXISTENCE_OF_HISTORY_OF_CONDITION);
 			try {
 				VALIDATE_EXISTENCE_OF_HISTORY_OF_CONDITION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_EXISTENCE_OF_HISTORY_OF_CONDITION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_EXISTENCE_OF_HISTORY_OF_CONDITION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(existenceOfHistoryOfCondition)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_EXISTENCE_OF_HISTORY_OF_CONDITION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			existenceOfHistoryOfCondition)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.EXISTENCE_OF_HISTORY_OF_CONDITION__EXISTENCE_OF_HISTORY_OF_CONDITION_TEMPLATE_ID,
-						 EmspcrPlugin.INSTANCE.getString("ExistenceOfHistoryOfConditionTemplateId"),
-						 new Object [] { existenceOfHistoryOfCondition }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.EXISTENCE_OF_HISTORY_OF_CONDITION__EXISTENCE_OF_HISTORY_OF_CONDITION_TEMPLATE_ID,
+					EmspcrPlugin.INSTANCE.getString("ExistenceOfHistoryOfConditionTemplateId"),
+					new Object[] { existenceOfHistoryOfCondition }));
 			}
-			 
+
 			return false;
 		}
 		return true;
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateExistenceOfHistoryOfConditionCode(ExistenceOfHistoryOfCondition, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Existence Of History Of Condition Code</em>}' operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL expression body for the '{@link #validateExistenceOfHistoryOfConditionCode(ExistenceOfHistoryOfCondition, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Existence Of History Of Condition Code</em>}' operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateExistenceOfHistoryOfConditionCode(ExistenceOfHistoryOfCondition, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String VALIDATE_EXISTENCE_OF_HISTORY_OF_CONDITION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "+
-"let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "+
-"value.code = '67793-0' and value.codeSystem = '2.16.840.1.113883.6.1')";
+	* @see #validateExistenceOfHistoryOfConditionCode(ExistenceOfHistoryOfCondition, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
+	protected static final String VALIDATE_EXISTENCE_OF_HISTORY_OF_CONDITION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "
+			+ "let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "
+			+ "value.code = '67793-0' and value.codeSystem = '2.16.840.1.113883.6.1')";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validateExistenceOfHistoryOfConditionCode(ExistenceOfHistoryOfCondition, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Existence Of History Of Condition Code</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL invariant for the '{@link #validateExistenceOfHistoryOfConditionCode(ExistenceOfHistoryOfCondition, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Existence Of History Of Condition Code</em>}' invariant operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateExistenceOfHistoryOfConditionCode(ExistenceOfHistoryOfCondition, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	
+	* @see #validateExistenceOfHistoryOfConditionCode(ExistenceOfHistoryOfCondition, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
+
 	protected static Constraint VALIDATE_EXISTENCE_OF_HISTORY_OF_CONDITION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param existenceOfHistoryOfCondition The receiving '<em><b>Existence Of History Of Condition</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
-	
-	public static  boolean validateExistenceOfHistoryOfConditionCode(ExistenceOfHistoryOfCondition existenceOfHistoryOfCondition, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+	* <!-- begin-model-doc -->
+	* @param existenceOfHistoryOfCondition The receiving '<em><b>Existence Of History Of Condition</b></em>' model object.
+	* @param diagnostics The chain of diagnostics to which problems are to be appended.
+	* @param context The cache of context-specific information.
+	* <!-- end-model-doc -->
+	* @generated
+	*/
+
+	public static boolean validateExistenceOfHistoryOfConditionCode(
+			ExistenceOfHistoryOfCondition existenceOfHistoryOfCondition, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+
 		if (VALIDATE_EXISTENCE_OF_HISTORY_OF_CONDITION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.EXISTENCE_OF_HISTORY_OF_CONDITION);
 			try {
 				VALIDATE_EXISTENCE_OF_HISTORY_OF_CONDITION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_EXISTENCE_OF_HISTORY_OF_CONDITION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_EXISTENCE_OF_HISTORY_OF_CONDITION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(existenceOfHistoryOfCondition)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_EXISTENCE_OF_HISTORY_OF_CONDITION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			existenceOfHistoryOfCondition)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.EXISTENCE_OF_HISTORY_OF_CONDITION__EXISTENCE_OF_HISTORY_OF_CONDITION_CODE,
-						 EmspcrPlugin.INSTANCE.getString("ExistenceOfHistoryOfConditionCode"),
-						 new Object [] { existenceOfHistoryOfCondition }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.EXISTENCE_OF_HISTORY_OF_CONDITION__EXISTENCE_OF_HISTORY_OF_CONDITION_CODE,
+					EmspcrPlugin.INSTANCE.getString("ExistenceOfHistoryOfConditionCode"),
+					new Object[] { existenceOfHistoryOfCondition }));
 			}
-			 
+
 			return false;
 		}
 		return true;
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateExistenceOfHistoryOfConditionValue(ExistenceOfHistoryOfCondition, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Existence Of History Of Condition Value</em>}' operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL expression body for the '{@link #validateExistenceOfHistoryOfConditionValue(ExistenceOfHistoryOfCondition, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Existence Of History Of Condition Value</em>}' operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateExistenceOfHistoryOfConditionValue(ExistenceOfHistoryOfCondition, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validateExistenceOfHistoryOfConditionValue(ExistenceOfHistoryOfCondition, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 	protected static final String VALIDATE_EXISTENCE_OF_HISTORY_OF_CONDITION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | element.oclIsTypeOf(datatypes::BL)))";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validateExistenceOfHistoryOfConditionValue(ExistenceOfHistoryOfCondition, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Existence Of History Of Condition Value</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL invariant for the '{@link #validateExistenceOfHistoryOfConditionValue(ExistenceOfHistoryOfCondition, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Existence Of History Of Condition Value</em>}' invariant operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateExistenceOfHistoryOfConditionValue(ExistenceOfHistoryOfCondition, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	
+	* @see #validateExistenceOfHistoryOfConditionValue(ExistenceOfHistoryOfCondition, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
+
 	protected static Constraint VALIDATE_EXISTENCE_OF_HISTORY_OF_CONDITION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param existenceOfHistoryOfCondition The receiving '<em><b>Existence Of History Of Condition</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
-	
-	public static  boolean validateExistenceOfHistoryOfConditionValue(ExistenceOfHistoryOfCondition existenceOfHistoryOfCondition, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+	* <!-- begin-model-doc -->
+	* @param existenceOfHistoryOfCondition The receiving '<em><b>Existence Of History Of Condition</b></em>' model object.
+	* @param diagnostics The chain of diagnostics to which problems are to be appended.
+	* @param context The cache of context-specific information.
+	* <!-- end-model-doc -->
+	* @generated
+	*/
+
+	public static boolean validateExistenceOfHistoryOfConditionValue(
+			ExistenceOfHistoryOfCondition existenceOfHistoryOfCondition, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+
 		if (VALIDATE_EXISTENCE_OF_HISTORY_OF_CONDITION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.EXISTENCE_OF_HISTORY_OF_CONDITION);
 			try {
 				VALIDATE_EXISTENCE_OF_HISTORY_OF_CONDITION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_EXISTENCE_OF_HISTORY_OF_CONDITION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_EXISTENCE_OF_HISTORY_OF_CONDITION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(existenceOfHistoryOfCondition)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_EXISTENCE_OF_HISTORY_OF_CONDITION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			existenceOfHistoryOfCondition)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.EXISTENCE_OF_HISTORY_OF_CONDITION__EXISTENCE_OF_HISTORY_OF_CONDITION_VALUE,
-						 EmspcrPlugin.INSTANCE.getString("ExistenceOfHistoryOfConditionValue"),
-						 new Object [] { existenceOfHistoryOfCondition }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.EXISTENCE_OF_HISTORY_OF_CONDITION__EXISTENCE_OF_HISTORY_OF_CONDITION_VALUE,
+					EmspcrPlugin.INSTANCE.getString("ExistenceOfHistoryOfConditionValue"),
+					new Object[] { existenceOfHistoryOfCondition }));
 			}
-			 
+
 			return false;
 		}
 		return true;
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateExistenceOfHistoryOfConditionMoodCode(ExistenceOfHistoryOfCondition, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Existence Of History Of Condition Mood Code</em>}' operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL expression body for the '{@link #validateExistenceOfHistoryOfConditionMoodCode(ExistenceOfHistoryOfCondition, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Existence Of History Of Condition Mood Code</em>}' operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateExistenceOfHistoryOfConditionMoodCode(ExistenceOfHistoryOfCondition, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validateExistenceOfHistoryOfConditionMoodCode(ExistenceOfHistoryOfCondition, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 	protected static final String VALIDATE_EXISTENCE_OF_HISTORY_OF_CONDITION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "isDefined('moodCode')";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validateExistenceOfHistoryOfConditionMoodCode(ExistenceOfHistoryOfCondition, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Existence Of History Of Condition Mood Code</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL invariant for the '{@link #validateExistenceOfHistoryOfConditionMoodCode(ExistenceOfHistoryOfCondition, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Existence Of History Of Condition Mood Code</em>}' invariant operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateExistenceOfHistoryOfConditionMoodCode(ExistenceOfHistoryOfCondition, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	
+	* @see #validateExistenceOfHistoryOfConditionMoodCode(ExistenceOfHistoryOfCondition, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
+
 	protected static Constraint VALIDATE_EXISTENCE_OF_HISTORY_OF_CONDITION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param existenceOfHistoryOfCondition The receiving '<em><b>Existence Of History Of Condition</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
-	
-	public static  boolean validateExistenceOfHistoryOfConditionMoodCode(ExistenceOfHistoryOfCondition existenceOfHistoryOfCondition, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+	* <!-- begin-model-doc -->
+	* @param existenceOfHistoryOfCondition The receiving '<em><b>Existence Of History Of Condition</b></em>' model object.
+	* @param diagnostics The chain of diagnostics to which problems are to be appended.
+	* @param context The cache of context-specific information.
+	* <!-- end-model-doc -->
+	* @generated
+	*/
+
+	public static boolean validateExistenceOfHistoryOfConditionMoodCode(
+			ExistenceOfHistoryOfCondition existenceOfHistoryOfCondition, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+
 		if (VALIDATE_EXISTENCE_OF_HISTORY_OF_CONDITION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.EXISTENCE_OF_HISTORY_OF_CONDITION);
 			try {
 				VALIDATE_EXISTENCE_OF_HISTORY_OF_CONDITION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_EXISTENCE_OF_HISTORY_OF_CONDITION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_EXISTENCE_OF_HISTORY_OF_CONDITION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(existenceOfHistoryOfCondition)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_EXISTENCE_OF_HISTORY_OF_CONDITION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			existenceOfHistoryOfCondition)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.EXISTENCE_OF_HISTORY_OF_CONDITION__EXISTENCE_OF_HISTORY_OF_CONDITION_MOOD_CODE,
-						 EmspcrPlugin.INSTANCE.getString("ExistenceOfHistoryOfConditionMoodCode"),
-						 new Object [] { existenceOfHistoryOfCondition }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.EXISTENCE_OF_HISTORY_OF_CONDITION__EXISTENCE_OF_HISTORY_OF_CONDITION_MOOD_CODE,
+					EmspcrPlugin.INSTANCE.getString("ExistenceOfHistoryOfConditionMoodCode"),
+					new Object[] { existenceOfHistoryOfCondition }));
 			}
-			 
+
 			return false;
 		}
 		return true;

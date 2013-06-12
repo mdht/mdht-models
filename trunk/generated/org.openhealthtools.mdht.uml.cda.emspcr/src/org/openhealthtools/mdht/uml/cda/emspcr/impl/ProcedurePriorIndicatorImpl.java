@@ -35,67 +35,76 @@ import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
  */
 public class ProcedurePriorIndicatorImpl extends ObservationImpl implements ProcedurePriorIndicator {
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	protected ProcedurePriorIndicatorImpl() {
 		super();
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	@Override
 	protected EClass eStaticClass() {
 		return EmspcrPackage.Literals.PROCEDURE_PRIOR_INDICATOR;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateProcedurePriorIndicatorTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProcedurePriorIndicatorOperations.validateProcedurePriorIndicatorTemplateId(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateProcedurePriorIndicatorCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProcedurePriorIndicatorOperations.validateProcedurePriorIndicatorCodeP(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateProcedurePriorIndicatorCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProcedurePriorIndicatorOperations.validateProcedurePriorIndicatorCode(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateProcedurePriorIndicatorValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProcedurePriorIndicatorOperations.validateProcedurePriorIndicatorValue(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateProcedurePriorIndicatorMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProcedurePriorIndicatorOperations.validateProcedurePriorIndicatorMoodCode(this, diagnostics, context);
+	}
+
+	/**
+	* <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	* @generated
+	*/
+	public ProcedurePriorIndicator init() {
+		return Initializer.Util.init(this);
 	}
 
 	/**
@@ -103,16 +112,8 @@ public class ProcedurePriorIndicatorImpl extends ObservationImpl implements Proc
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ProcedurePriorIndicator init() {
-	    return Initializer.Util.init(this);
+	public ProcedurePriorIndicator init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+		Initializer.Util.init(this, initializers);
+		return this;
 	}
-    /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public ProcedurePriorIndicator init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
-} //ProcedurePriorIndicatorImpl
+} // ProcedurePriorIndicatorImpl

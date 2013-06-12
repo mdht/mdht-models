@@ -35,67 +35,76 @@ import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
  */
 public class UnitBackInServiceTimeImpl extends ObservationImpl implements UnitBackInServiceTime {
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	protected UnitBackInServiceTimeImpl() {
 		super();
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	@Override
 	protected EClass eStaticClass() {
 		return EmspcrPackage.Literals.UNIT_BACK_IN_SERVICE_TIME;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateUnitBackInServiceTimeTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return UnitBackInServiceTimeOperations.validateUnitBackInServiceTimeTemplateId(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateUnitBackInServiceTimeCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return UnitBackInServiceTimeOperations.validateUnitBackInServiceTimeCodeP(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateUnitBackInServiceTimeCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return UnitBackInServiceTimeOperations.validateUnitBackInServiceTimeCode(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateUnitBackInServiceTimeValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return UnitBackInServiceTimeOperations.validateUnitBackInServiceTimeValue(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateUnitBackInServiceTimeMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return UnitBackInServiceTimeOperations.validateUnitBackInServiceTimeMoodCode(this, diagnostics, context);
+	}
+
+	/**
+	* <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	* @generated
+	*/
+	public UnitBackInServiceTime init() {
+		return Initializer.Util.init(this);
 	}
 
 	/**
@@ -103,16 +112,8 @@ public class UnitBackInServiceTimeImpl extends ObservationImpl implements UnitBa
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public UnitBackInServiceTime init() {
-	    return Initializer.Util.init(this);
+	public UnitBackInServiceTime init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+		Initializer.Util.init(this, initializers);
+		return this;
 	}
-    /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public UnitBackInServiceTime init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
-} //UnitBackInServiceTimeImpl
+} // UnitBackInServiceTimeImpl

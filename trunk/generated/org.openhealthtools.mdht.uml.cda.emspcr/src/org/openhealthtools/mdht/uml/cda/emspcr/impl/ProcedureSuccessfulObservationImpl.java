@@ -35,84 +35,92 @@ import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
  */
 public class ProcedureSuccessfulObservationImpl extends ObservationImpl implements ProcedureSuccessfulObservation {
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	protected ProcedureSuccessfulObservationImpl() {
 		super();
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	@Override
 	protected EClass eStaticClass() {
 		return EmspcrPackage.Literals.PROCEDURE_SUCCESSFUL_OBSERVATION;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateProcedureSuccessfulObservationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProcedureSuccessfulObservationOperations.validateProcedureSuccessfulObservationTemplateId(this, diagnostics, context);
+	* @generated
+	*/
+	public boolean validateProcedureSuccessfulObservationTemplateId(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ProcedureSuccessfulObservationOperations.validateProcedureSuccessfulObservationTemplateId(
+			this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateProcedureSuccessfulObservationCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProcedureSuccessfulObservationOperations.validateProcedureSuccessfulObservationCodeP(this, diagnostics, context);
+		return ProcedureSuccessfulObservationOperations.validateProcedureSuccessfulObservationCodeP(
+			this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateProcedureSuccessfulObservationCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProcedureSuccessfulObservationOperations.validateProcedureSuccessfulObservationCode(this, diagnostics, context);
+		return ProcedureSuccessfulObservationOperations.validateProcedureSuccessfulObservationCode(
+			this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateProcedureSuccessfulObservationValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProcedureSuccessfulObservationOperations.validateProcedureSuccessfulObservationValue(this, diagnostics, context);
+		return ProcedureSuccessfulObservationOperations.validateProcedureSuccessfulObservationValue(
+			this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateProcedureSuccessfulObservationMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProcedureSuccessfulObservationOperations.validateProcedureSuccessfulObservationMoodCode(this, diagnostics, context);
+	* @generated
+	*/
+	public boolean validateProcedureSuccessfulObservationMoodCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ProcedureSuccessfulObservationOperations.validateProcedureSuccessfulObservationMoodCode(
+			this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public ProcedureSuccessfulObservation init() {
-	    return Initializer.Util.init(this);
+		return Initializer.Util.init(this);
 	}
-    /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public ProcedureSuccessfulObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
-} //ProcedureSuccessfulObservationImpl
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ProcedureSuccessfulObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+		Initializer.Util.init(this, initializers);
+		return this;
+	}
+} // ProcedureSuccessfulObservationImpl

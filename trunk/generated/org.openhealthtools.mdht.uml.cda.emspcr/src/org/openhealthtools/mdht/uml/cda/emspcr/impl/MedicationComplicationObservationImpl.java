@@ -35,93 +35,106 @@ import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
  */
 public class MedicationComplicationObservationImpl extends ObservationImpl implements MedicationComplicationObservation {
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	protected MedicationComplicationObservationImpl() {
 		super();
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	@Override
 	protected EClass eStaticClass() {
 		return EmspcrPackage.Literals.MEDICATION_COMPLICATION_OBSERVATION;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateMedicationComplicationObservationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return MedicationComplicationObservationOperations.validateMedicationComplicationObservationTemplateId(this, diagnostics, context);
+	* @generated
+	*/
+	public boolean validateMedicationComplicationObservationTemplateId(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return MedicationComplicationObservationOperations.validateMedicationComplicationObservationTemplateId(
+			this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateMedicationComplicationObservationCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return MedicationComplicationObservationOperations.validateMedicationComplicationObservationCodeP(this, diagnostics, context);
+	* @generated
+	*/
+	public boolean validateMedicationComplicationObservationCodeP(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return MedicationComplicationObservationOperations.validateMedicationComplicationObservationCodeP(
+			this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateMedicationComplicationObservationCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return MedicationComplicationObservationOperations.validateMedicationComplicationObservationCode(this, diagnostics, context);
+	* @generated
+	*/
+	public boolean validateMedicationComplicationObservationCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return MedicationComplicationObservationOperations.validateMedicationComplicationObservationCode(
+			this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateMedicationComplicationObservationValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return MedicationComplicationObservationOperations.validateMedicationComplicationObservationValue(this, diagnostics, context);
+	* @generated
+	*/
+	public boolean validateMedicationComplicationObservationValue(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return MedicationComplicationObservationOperations.validateMedicationComplicationObservationValue(
+			this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateMedicationComplicationObservationValueP(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return MedicationComplicationObservationOperations.validateMedicationComplicationObservationValueP(this, diagnostics, context);
+	* @generated
+	*/
+	public boolean validateMedicationComplicationObservationValueP(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return MedicationComplicationObservationOperations.validateMedicationComplicationObservationValueP(
+			this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateMedicationComplicationObservationMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return MedicationComplicationObservationOperations.validateMedicationComplicationObservationMoodCode(this, diagnostics, context);
+	* @generated
+	*/
+	public boolean validateMedicationComplicationObservationMoodCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return MedicationComplicationObservationOperations.validateMedicationComplicationObservationMoodCode(
+			this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public MedicationComplicationObservation init() {
-	    return Initializer.Util.init(this);
+		return Initializer.Util.init(this);
 	}
-    /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public MedicationComplicationObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
-} //MedicationComplicationObservationImpl
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public MedicationComplicationObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+		Initializer.Util.init(this, initializers);
+		return this;
+	}
+} // MedicationComplicationObservationImpl

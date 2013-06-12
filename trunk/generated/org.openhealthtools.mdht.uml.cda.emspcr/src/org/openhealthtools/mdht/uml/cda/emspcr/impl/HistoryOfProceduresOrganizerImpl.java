@@ -35,66 +35,73 @@ import org.openhealthtools.mdht.uml.cda.impl.OrganizerImpl;
  */
 public class HistoryOfProceduresOrganizerImpl extends OrganizerImpl implements HistoryOfProceduresOrganizer {
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	protected HistoryOfProceduresOrganizerImpl() {
 		super();
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	@Override
 	protected EClass eStaticClass() {
 		return EmspcrPackage.Literals.HISTORY_OF_PROCEDURES_ORGANIZER;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateHistoryOfProceduresOrganizerExistenceOfHistoryOfProcedureComponent(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return HistoryOfProceduresOrganizerOperations.validateHistoryOfProceduresOrganizerExistenceOfHistoryOfProcedureComponent(this, diagnostics, context);
+	* @generated
+	*/
+	public boolean validateHistoryOfProceduresOrganizerExistenceOfHistoryOfProcedureComponent(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return HistoryOfProceduresOrganizerOperations.validateHistoryOfProceduresOrganizerExistenceOfHistoryOfProcedureComponent(
+			this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateHistoryOfProceduresOrganizerHistoryOfProceduresComponent(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return HistoryOfProceduresOrganizerOperations.validateHistoryOfProceduresOrganizerHistoryOfProceduresComponent(this, diagnostics, context);
+	* @generated
+	*/
+	public boolean validateHistoryOfProceduresOrganizerHistoryOfProceduresComponent(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return HistoryOfProceduresOrganizerOperations.validateHistoryOfProceduresOrganizerHistoryOfProceduresComponent(
+			this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateHistoryOfProceduresOrganizerTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return HistoryOfProceduresOrganizerOperations.validateHistoryOfProceduresOrganizerTemplateId(this, diagnostics, context);
+	* @generated
+	*/
+	public boolean validateHistoryOfProceduresOrganizerTemplateId(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return HistoryOfProceduresOrganizerOperations.validateHistoryOfProceduresOrganizerTemplateId(
+			this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public HistoryOfProceduresOrganizer init() {
-	    return Initializer.Util.init(this);
+		return Initializer.Util.init(this);
 	}
-    /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public HistoryOfProceduresOrganizer init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
-} //HistoryOfProceduresOrganizerImpl
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public HistoryOfProceduresOrganizer init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+		Initializer.Util.init(this, initializers);
+		return this;
+	}
+} // HistoryOfProceduresOrganizerImpl

@@ -37,94 +37,104 @@ import org.openhealthtools.mdht.uml.cda.impl.SectionImpl;
  */
 public class BillingSectionImpl extends SectionImpl implements BillingSection {
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	protected BillingSectionImpl() {
 		super();
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	@Override
 	protected EClass eStaticClass() {
 		return EmspcrPackage.Literals.BILLING_SECTION;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateBillingSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return BillingSectionOperations.validateBillingSectionTemplateId(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateBillingSectionCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return BillingSectionOperations.validateBillingSectionCode(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateBillingSectionTitle(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return BillingSectionOperations.validateBillingSectionTitle(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateBillingSectionText(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return BillingSectionOperations.validateBillingSectionText(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateBillingSectionBillingCondition(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return BillingSectionOperations.validateBillingSectionBillingCondition(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateBillingSectionLevelOfServiceObservation(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	* @generated
+	*/
+	public boolean validateBillingSectionLevelOfServiceObservation(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return BillingSectionOperations.validateBillingSectionLevelOfServiceObservation(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public BillingCondition getBillingCondition() {
 		return BillingSectionOperations.getBillingCondition(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public LevelOfServiceObservation getLevelOfServiceObservation() {
 		return BillingSectionOperations.getLevelOfServiceObservation(this);
+	}
+
+	/**
+	* <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	* @generated
+	*/
+	public BillingSection init() {
+		return Initializer.Util.init(this);
 	}
 
 	/**
@@ -132,16 +142,8 @@ public class BillingSectionImpl extends SectionImpl implements BillingSection {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public BillingSection init() {
-	    return Initializer.Util.init(this);
+	public BillingSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+		Initializer.Util.init(this, initializers);
+		return this;
 	}
-    /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public BillingSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
-} //BillingSectionImpl
+} // BillingSectionImpl

@@ -35,58 +35,67 @@ import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
  */
 public class TraumaCenterCriteriaImpl extends ObservationImpl implements TraumaCenterCriteria {
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	protected TraumaCenterCriteriaImpl() {
 		super();
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	@Override
 	protected EClass eStaticClass() {
 		return EmspcrPackage.Literals.TRAUMA_CENTER_CRITERIA;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateTraumaCenterCriteriaTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return TraumaCenterCriteriaOperations.validateTraumaCenterCriteriaTemplateId(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateTraumaCenterCriteriaCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return TraumaCenterCriteriaOperations.validateTraumaCenterCriteriaCode(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateTraumaCenterCriteriaValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return TraumaCenterCriteriaOperations.validateTraumaCenterCriteriaValue(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateTraumaCenterCriteriaMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return TraumaCenterCriteriaOperations.validateTraumaCenterCriteriaMoodCode(this, diagnostics, context);
+	}
+
+	/**
+	* <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	* @generated
+	*/
+	public TraumaCenterCriteria init() {
+		return Initializer.Util.init(this);
 	}
 
 	/**
@@ -94,16 +103,8 @@ public class TraumaCenterCriteriaImpl extends ObservationImpl implements TraumaC
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public TraumaCenterCriteria init() {
-	    return Initializer.Util.init(this);
+	public TraumaCenterCriteria init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+		Initializer.Util.init(this, initializers);
+		return this;
 	}
-    /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public TraumaCenterCriteria init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
-} //TraumaCenterCriteriaImpl
+} // TraumaCenterCriteriaImpl
