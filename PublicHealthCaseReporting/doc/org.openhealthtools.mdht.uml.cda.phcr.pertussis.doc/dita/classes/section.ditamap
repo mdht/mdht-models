@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
-<map title="Section Templates">
-<topicref href="PertussisClinicalInformationSection.dita" type="topic" />
-<topicref href="PertussisImmunizationsSection.dita" type="topic" />
-<topicref href="PertussisRelevantDxTestsSection.dita" type="topic" />
-<topicref href="PertussisSocialHistorySection.dita" type="topic" />
-<topicref href="PertussisTreatmentInformationSection.dita" type="topic" />
-</map>

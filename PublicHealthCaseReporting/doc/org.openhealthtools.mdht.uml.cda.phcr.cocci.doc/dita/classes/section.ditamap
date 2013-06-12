@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
-<map title="Section Templates">
-<topicref href="CoccidioidesPHCRClinicalInformationSection.dita" type="topic" />
-<topicref href="CoccidioidesPHCRRelevantDxTestsSection.dita" type="topic" />
-<topicref href="CoccidioidesPHCRSocialHistorySection.dita" type="topic" />
-<topicref href="CoccidioidesPHCRTreatmentInformationSection.dita" type="topic" />
-</map>

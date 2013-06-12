@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
-<map title="Clinical Statement Templates">
-<topicref href="WnvCaseObservation.dita" type="topic" />
-<topicref href="WnvResultObservation.dita" type="topic" />
-<topicref href="WnvResultOrganizer.dita" type="topic" />
-<topicref href="WnvSignsAndSymptomsObservation.dita" type="topic" />
-</map>

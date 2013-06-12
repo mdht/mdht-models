@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
-<map title="Value Sets">
-<topicref href="Lab Test Name (Haemophilus influenzae).dita" type="topic" />
-<topicref href="PHVS_DiseaseType_HIB.dita" type="topic" />
-<topicref href="PHVS_SignsSymptoms_HIB.dita" type="topic" />
-</map>

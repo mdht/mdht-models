@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
-<map title="Clinical Statement Templates">
-<topicref href="HibCaseObservation.dita" type="topic" />
-<topicref href="HibResultObservation.dita" type="topic" />
-<topicref href="HibResultOrganizer.dita" type="topic" />
-<topicref href="HibSignsAndSymptoms.dita" type="topic" />
-</map>
