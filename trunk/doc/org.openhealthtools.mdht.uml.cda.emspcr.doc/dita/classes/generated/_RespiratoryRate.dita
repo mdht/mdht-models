@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Respiratory Rate - conformance rules</title>
+<shortdesc id="shortdesc">[Observation: templateId <tt>2.16.840.1.1133883.17.3.10.1.146</tt>]</shortdesc>
+<prolog id="prolog">
+<metadata><category>Observation</category></metadata>
+<resourceid id="2.16.840.1.1133883.17.3.10.1.146"/>
+</prolog>
+<body>
+<section id="knownSubclasses">
+</section>
+<section id="description">
+</section>
+<ol id="conformance">
+<li><b>SHALL</b> contain exactly one [1..1] templateId (  ) such that it <ol><li><b>SHALL</b> contain exactly one [1..1] <b>@root</b>="2.16.840.1.1133883.17.3.10.1.146"</li></ol></li>
+<li><b>SHALL</b> conform to <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.consol.doc/classes/VitalSignObservation.html">Consol Vital Sign Observation</xref> template (templateId: <tt>2.16.840.1.113883.10.20.22.4.27</tt>)</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="9279-1" </tt><i>Breaths</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10287)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> (CONF:10288)
+<ul><li><p><lines><i>NEMSIS Trace: EVitals.14
+UCUM units SHOULD be "/min".</i></lines></p></li></ul></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>effectiveTime</b></tt>
+<ul><li><p><lines><i>NEMSIS Trace: EVitals.01</i></lines></p></li></ul></li>
+</ol>
+<ol id="aggregate">
+<li><b>SHALL</b> conform to <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.consol.doc/classes/VitalSignObservation.html">Consol Vital Sign Observation</xref> template (templateId: <tt>2.16.840.1.113883.10.20.22.4.27</tt>)</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="OBS" </tt><i>Observation</i> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>) (CONF:7297)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>)
+</li>
+<li><b>SHALL</b> contain at least one [1..*] <tt><b>id</b></tt> (CONF:7300)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="9279-1" </tt><i>Breaths</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10287)
+</li>
+<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>text</b></tt> (CONF:7302)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>statusCode</b></tt><tt><b>/@code</b>="completed" </tt> (CodeSystem:<tt> 2.16.840.1.113883.5.14 ActStatus</tt>) (CONF:7303)
+</li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>effectiveTime</b></tt>
+<ul><li><p><lines><i>NEMSIS Trace: EVitals.01</i></lines></p></li></ul></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> (CONF:10288)
+<ul><li><p><lines><i>NEMSIS Trace: EVitals.14
+UCUM units SHOULD be "/min".</i></lines></p></li></ul></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>interpretationCode</b></tt> (CONF:7307)
+<ul><li><p><lines><i>The interpretation code may be present to provide an interpretation of the vital signs measure (e.g., High, Normal, Low, et cetera).</i></lines></p></li></ul></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>methodCode</b></tt> (CONF:7308)
+<ul><li><p><lines><i>The method code element may be present to indicate the method used to obtain the measure. Note that method used is distinct from, but possibly related to the target site.</i></lines></p></li></ul></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>targetSiteCode</b></tt> (CONF:7309)
+<ul><li><p><lines><i>The target site of the measure may be identified in the targetSiteCode element (e.g., Left arm [blood pressure], oral [temperature], et cetera).</i></lines></p></li></ul></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>author</b></tt> (CONF:7310)
+<ol>
+<li>Contains exactly one [1..1] CDA Author</li></ol></li>
+<li>text, if present, <b>SHOULD</b> contain zero or one [0..1] reference (CONF:15943)</li>
+<li>reference, if present, <b>SHOULD</b> contain zero or one [0..1] @value (CONF:15944)</li>
+<li>reference/@value <b>SHALL</b> begin with a '#' and <b>SHALL</b> point to its corresponding narrative (using the approach defined in CDA Release 2, section 4.3.5.1) (CONF:15945)</li>
+</ol>
+<section id="tableconformance"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="8" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><colspec colname="col2" colnum="2" /><colspec colname="col3" colnum="3" /><colspec colname="col4" colnum="4" /><colspec colname="col5" colnum="5" /><colspec colname="col6" colnum="6" /><colspec colname="col7" colnum="7" /><thead> <row><entry namest="col0" nameend="col7" >emspcr::RespiratoryRate</entry>  </row>  <row><entry namest="col0" nameend="col7" >cda::observation[cda:templateId/@root = 2.16.840.1.113883.10.20.22.4.27]/</entry>  </row>  <row><entry>Name</entry><entry>XPath</entry><entry>Cardinality</entry><entry>Severity</entry><entry>Nullable</entry><entry>Data Type</entry><entry>Conformance</entry><entry>Value(s)</entry></row></thead><tbody><row><entry>moodCode</entry><entry>@moodCode</entry><entry>1..1</entry><entry>SHALL</entry><entry>NO</entry><entry>x_ActMoodDocumentObservation</entry><entry></entry><entry> DEF</entry></row> 
+<row><entry>code</entry><entry>code</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>CD</entry><entry>CONF:10287</entry><entry>LOINC 2.16.840.1.113883.6.1 9279-1</entry></row> 
+<row><entry>effectiveTime</entry><entry>effectiveTime</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>IVL_TS</entry><entry></entry><entry> </entry></row> 
+<row><entry>value</entry><entry>value</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>PQ</entry><entry>CONF:10288</entry><entry> </entry></row> 
+<row><entry>RespiratoryRate</entry><entry>RespiratoryRate</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>RespiratoryRate</entry><entry></entry><entry> </entry></row> 
+</tbody></tgroup></table></p></section>
+<codeblock id="example"><![CDATA[<observation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" classCode="OBS" moodCode="EVN">
+  <templateId root="2.16.840.1.1133883.17.3.10.1.146"/>
+  <templateId root="2.16.840.1.113883.10.20.22.4.27"/>
+  <id root="MDHT" extension="604160182"/>
+  <code code="9279-1" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Breaths"/>
+  <text>Text Value</text>
+  <statusCode code="completed"/>
+  <effectiveTime>
+    <low value="2013"/>
+    <high value="2013"/>
+  </effectiveTime>
+  <value xsi:type="PQ"/>
+  <interpretationCode code="1707373859"/>
+  <methodCode code="1541006114"/>
+  <targetSiteCode code="1098018417"/>
+</observation>]]></codeblock>
+<section id="changes">
+</section>
+<p><ph id="classformalname">Respiratory Rate</ph></p>
+<p id="shortdesc">[Observation: templateId <tt>2.16.840.1.1133883.17.3.10.1.146</tt>]</p>
+</body>
+</topic>

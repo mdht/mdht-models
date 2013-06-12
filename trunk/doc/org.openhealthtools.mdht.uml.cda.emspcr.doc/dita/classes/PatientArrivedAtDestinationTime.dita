@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Patient Arrived At Destination Time</title>
+<shortdesc conref="generated/_PatientArrivedAtDestinationTime.dita#classId/shortdesc"></shortdesc>
+<prolog conref="generated/_PatientArrivedAtDestinationTime.dita#classId/prolog"></prolog>
+<body>
+<section conref="generated/_PatientArrivedAtDestinationTime.dita#classId/knownSubclasses">
+</section>
+<!-- TODO: insert non-model class description markup here -->
+<section conref="generated/_PatientArrivedAtDestinationTime.dita#classId/description">
+</section>
+<!-- TODO: insert UML class diagram here -->
+
+<ol audience="standards" conref="generated/_PatientArrivedAtDestinationTime.dita#classId/conformance">
+<li></li>
+</ol>
+<ol audience="developer" conref="generated/_PatientArrivedAtDestinationTime.dita#classId/aggregate">
+<li></li>
+</ol>
+<p> </p>
+<p><b>Patient Arrived At Destination Time example</b></p>
+<!-- TODO: insert custom instance example here -->
+<!-- generated instance example follows -->
+<codeblock conref="generated/_PatientArrivedAtDestinationTime.dita#classId/example">
+</codeblock>
+</body>
+</topic>

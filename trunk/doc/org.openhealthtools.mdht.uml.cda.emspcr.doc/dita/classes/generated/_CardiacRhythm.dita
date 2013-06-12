@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Cardiac Rhythm - conformance rules</title>
+<shortdesc id="shortdesc">[Observation: templateId <tt>2.16.840.1.1133883.17.3.10.1.169</tt>]</shortdesc>
+<prolog id="prolog">
+<metadata><category>Observation</category></metadata>
+<resourceid id="2.16.840.1.1133883.17.3.10.1.169"/>
+</prolog>
+<body>
+<section id="knownSubclasses">
+</section>
+<section id="description">
+</section>
+<ol id="conformance">
+<li><b>SHALL</b> contain exactly one [1..1] templateId (  ) such that it <ol><li><b>SHALL</b> contain exactly one [1..1] <b>@root</b>="2.16.840.1.1133883.17.3.10.1.169"</li></ol></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:10275)<tt><b>/@code</b>="67519-9" </tt><i>Cardiac rhythm</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10274)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>methodCode</b></tt> (CONF:10277), where the @code <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/MethodOfECGInterpretation.dita">MethodOfECGInterpretation</xref> 2.16.840.1.113883.17.3.5.20</tt><b> STATIC</b> (CONF:10276)
+<ul><li><p><lines><i>NEMSIS Trace: EVitals.05</i></lines></p></li></ul></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type CD (CONF:10278), where the @code <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/CardiacRhythmReading.dita">CardiacRhythmReading</xref> 2.16.840.1.113883.17.3.5.16</tt><b> STATIC</b> (CONF:10279)
+<ul><li><p><lines><i>NEMSIS Trace: EVitals.03</i></lines></p></li></ul></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>effectiveTime</b></tt>
+<ul><li><p><lines><i>NEMSIS Trace: EVitals.01</i></lines></p></li></ul></li>
+<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>participant</b></tt>
+<ol>
+<li>Contains exactly one [1..1] CDA Participant2</li></ol></li>
+</ol>
+<ol id="aggregate">
+<li>Contains exactly one [1..1] <tt><b>@classCode</b></tt> with data type ActClassObservation
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:10275)<tt><b>/@code</b>="67519-9" </tt><i>Cardiac rhythm</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10274)
+</li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>effectiveTime</b></tt>
+<ul><li><p><lines><i>NEMSIS Trace: EVitals.01</i></lines></p></li></ul></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type CD (CONF:10278), where the @code <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/CardiacRhythmReading.dita">CardiacRhythmReading</xref> 2.16.840.1.113883.17.3.5.16</tt><b> STATIC</b> (CONF:10279)
+<ul><li><p><lines><i>NEMSIS Trace: EVitals.03</i></lines></p></li></ul></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>methodCode</b></tt> (CONF:10277), where the @code <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/MethodOfECGInterpretation.dita">MethodOfECGInterpretation</xref> 2.16.840.1.113883.17.3.5.20</tt><b> STATIC</b> (CONF:10276)
+<ul><li><p><lines><i>NEMSIS Trace: EVitals.05</i></lines></p></li></ul></li>
+<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>participant</b></tt>
+<ol>
+<li>Contains exactly one [1..1] CDA Participant2</li></ol></li>
+</ol>
+<section id="tableconformance"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="8" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><colspec colname="col2" colnum="2" /><colspec colname="col3" colnum="3" /><colspec colname="col4" colnum="4" /><colspec colname="col5" colnum="5" /><colspec colname="col6" colnum="6" /><colspec colname="col7" colnum="7" /><thead> <row><entry namest="col0" nameend="col7" >emspcr::CardiacRhythm</entry>  </row>  <row><entry namest="col0" nameend="col7" >cda::observation[cda:templateId/@root = 2.16.840.1.1133883.17.3.10.1.169]/</entry>  </row>  <row><entry>Name</entry><entry>XPath</entry><entry>Cardinality</entry><entry>Severity</entry><entry>Nullable</entry><entry>Data Type</entry><entry>Conformance</entry><entry>Value(s)</entry></row></thead><tbody><row><entry>moodCode</entry><entry>@moodCode</entry><entry>1..1</entry><entry>SHALL</entry><entry>NO</entry><entry>x_ActMoodDocumentObservation</entry><entry></entry><entry> DEF</entry></row> 
+<row><entry>code</entry><entry>code</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>CD</entry><entry>CONF:10274</entry><entry>LOINC 2.16.840.1.113883.6.1 67519-9</entry></row> 
+<row><entry>effectiveTime</entry><entry>effectiveTime</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>IVL_TS</entry><entry></entry><entry> </entry></row> 
+<row><entry>methodCode</entry><entry>methodCode</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>CE</entry><entry>CONF:10276</entry><entry> null</entry></row> 
+<row><entry>value</entry><entry>value</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>CD</entry><entry>CONF:10278</entry><entry> </entry></row> 
+<row><entry>CardiacRhythmComponent</entry><entry>CardiacRhythmComponent</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>CardiacRhythm</entry><entry></entry><entry> </entry></row> 
+<row><entry>participant1</entry><entry>participant1</entry><entry>0..1</entry><entry>SHOULD</entry><entry>YES</entry><entry>Participant2</entry><entry></entry><entry> </entry></row> 
+</tbody></tgroup></table></p></section>
+<codeblock id="example"><![CDATA[<observation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" moodCode="EVN">
+  <templateId root="2.16.840.1.1133883.17.3.10.1.169"/>
+  <id root="MDHT" extension="2123351656"/>
+  <code code="67519-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Cardiac rhythm"/>
+  <effectiveTime>
+    <low value="2013"/>
+    <high value="2013"/>
+  </effectiveTime>
+  <value xsi:type="CD" code="429719950"/>
+  <methodCode codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+  <participant/>
+</observation>]]></codeblock>
+<section id="changes">
+</section>
+<p><ph id="classformalname">Cardiac Rhythm</ph></p>
+<p id="shortdesc">[Observation: templateId <tt>2.16.840.1.1133883.17.3.10.1.169</tt>]</p>
+</body>
+</topic>

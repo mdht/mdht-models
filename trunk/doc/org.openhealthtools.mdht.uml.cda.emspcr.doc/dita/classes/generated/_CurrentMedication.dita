@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Current Medication - conformance rules</title>
+<shortdesc id="shortdesc">[SubstanceAdministration: templateId <tt>2.16.840.1.1133883.17.3.10.1.77</tt>]</shortdesc>
+<prolog id="prolog">
+<metadata><category>SubstanceAdministration</category></metadata>
+<resourceid id="2.16.840.1.1133883.17.3.10.1.77"/>
+</prolog>
+<body>
+<section id="knownSubclasses">
+</section>
+<section id="description">
+</section>
+<ol id="conformance">
+<li><b>SHALL</b> contain exactly one [1..1] templateId (  ) such that it <ol><li><b>SHALL</b> contain exactly one [1..1] <b>@root</b>="2.16.840.1.1133883.17.3.10.1.77"</li></ol></li>
+<li><b>SHALL</b> conform to <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.consol.doc/classes/MedicationActivity.html">Consol Medication Activity</xref> template (templateId: <tt>2.16.840.1.113883.10.20.22.4.16</tt>)</li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>@negationInd</b></tt> (CONF:10233)
+<ul><li><p><lines><i>If EHistory.12 has the value "None Reported," the value is "True"
+This negation of a notional class is parallel to the explicit question "patient on medication"</i></lines></p></li></ul></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>@nullFlavor</b></tt> (CONF:10234)
+<ul><li><p><lines><i>If EHistory.12 has the value "Refused" or "Unable to Complete," the value is "NI"; the
+original value may be recorded in SubstanceAdministration.text.
+This nulled notional class is parallel to the explicit question "patient on medication"</i></lines></p></li></ul></li>
+<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>doseQuantity</b></tt> (CONF:10230)
+<ul><li><p><lines><i>NEMSIS Trace: EHistory.13, EHistory.14</i></lines></p></li></ul></li>
+<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>routeCode</b></tt> (CONF:10232), where the @code <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/MedicationAdministrationRoute.dita">MedicationAdministrationRoute</xref> 2.16.840.1.113883.17.3.5.43</tt><b> STATIC</b> (CONF:10231)
+<ul><li><p><lines><i>NEMSIS Trace: EMedication.15</i></lines></p></li></ul></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>consumable</b></tt> (CONF:10235) <ol><li> This consumable <b>SHALL</b> contain exactly one [1..1] <tt><b>manufacturedProduct</b></tt> (CONF:10236) <ol><li> This manufacturedProduct <b>SHALL</b> conform to <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.consol.doc/classes/MedicationInformation.html">Consol Medication Information</xref> template (templateId: <tt>2.16.840.1.113883.10.20.22.4.23</tt>)</li><li> This manufacturedProduct <b>SHALL</b> contain exactly one [1..1] <tt><b>manufacturedMaterial</b></tt> (CONF:10237) <ol><li> This manufacturedMaterial <b>SHALL</b> contain zero or one [0..1] <tt><b>code</b></tt>, where the @code <b>SHALL</b> be selected from (CodeSystem:<tt> 2.16.840.1.113883.6.88 RxNorm</tt>)</li></ol></li></ol> </li></ol>
+</li>
+</ol>
+<ol id="aggregate">
+<li><b>SHALL</b> conform to <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.consol.doc/classes/MedicationActivity.html">Consol Medication Activity</xref> template (templateId: <tt>2.16.840.1.113883.10.20.22.4.16</tt>)</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="SBADM" </tt> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>) (CONF:7496)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b></tt>, where the @code <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/MoodCodeEvnInt.dita">MoodCodeEvnInt</xref> 2.16.840.1.113883.11.20.9.18</tt><b> STATIC</b> 2011-04-03 (CONF:7497)
+</li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>@negationInd</b></tt> (CONF:10233)
+<ul><li><p><lines><i>If EHistory.12 has the value "None Reported," the value is "True"
+This negation of a notional class is parallel to the explicit question "patient on medication"</i></lines></p></li></ul></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>@nullFlavor</b></tt> (CONF:10234)
+<ul><li><p><lines><i>If EHistory.12 has the value "Refused" or "Unable to Complete," the value is "NI"; the
+original value may be recorded in SubstanceAdministration.text.
+This nulled notional class is parallel to the explicit question "patient on medication"</i></lines></p></li></ul></li>
+<li><b>SHALL</b> contain at least one [1..*] <tt><b>id</b></tt> (CONF:7500)
+</li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>code</b></tt> (CONF:7506)
+</li>
+<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>text</b></tt> (CONF:7501)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>statusCode</b></tt> (CONF:7507)
+</li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>repeatNumber</b></tt> (CONF:7555)
+<ul><li><p><lines><i>In "INT" (intent) mood, the repeatNumber defines the number of allowed administrations. For example, a repeatNumber of "3" means that the substance can be administered up to 3 times
+ In "EVN" (event) mood, the repeatNumber is the number of occurrences. For example, a repeatNumber of "3" in a substance administration event means that the current administration is the 3rd in a series</i></lines></p></li></ul></li>
+<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>routeCode</b></tt> (CONF:10232), where the @code <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/MedicationAdministrationRoute.dita">MedicationAdministrationRoute</xref> 2.16.840.1.113883.17.3.5.43</tt><b> STATIC</b> (CONF:10231)
+<ul><li><p><lines><i>NEMSIS Trace: EMedication.15</i></lines></p></li></ul></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>approachSiteCode</b></tt>, where the @code <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/BodySiteValueSet.dita">Body Site Value Set</xref> 2.16.840.1.113883.3.88.12.3221.8.9</tt><b> STATIC</b> 2 (CONF:7515)
+</li>
+<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>doseQuantity</b></tt> (CONF:10230)
+<ul><li><p><lines><i>NEMSIS Trace: EHistory.13, EHistory.14</i></lines></p></li></ul></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>rateQuantity</b></tt> (CONF:7517)
+</li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>maxDoseQuantity</b></tt> (CONF:7518)
+</li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>administrationUnitCode</b></tt>, where the @code <b>MAY</b> be selected from ValueSet<tt> <xref href="../../terminology/MedicationProductFormValueSet.dita">Medication Product Form Value Set</xref> 2.16.840.1.113883.3.88.12.3221.8.11</tt><b> STATIC</b> 1 (CONF:7519)
+</li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>performer</b></tt> (CONF:7522)
+<ol>
+<li>Contains exactly one [1..1] CDA Performer2</li></ol></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> (CONF:7539, CONF:7540, CONF:16088)
+<ol>
+<li>Contains <tt><b>@typeCode="</b>SUBJ" </tt><i>SUBJ</i></li>
+<li>Contains exactly one [1..1] <xref href="../Instructions.dita">Instructions</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.20</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> (CONF:7543, CONF:7547, CONF:16089)
+<ol>
+<li>Contains <tt><b>@typeCode="</b>REFR" </tt><i>REFR</i></li>
+<li>Contains exactly one [1..1] <xref href="../MedicationSupplyOrder.dita">Medication Supply Order</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.17</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> (CONF:7552, CONF:7544, CONF:16091)
+<ol>
+<li>Contains <tt><b>@typeCode="</b>CAUS" </tt><i>CAUS</i></li>
+<li>Contains exactly one [1..1] <xref href="../ReactionObservation.dita">Reaction Observation</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.9</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or more [0..*] <tt><b>entryRelationship</b></tt> (CONF:7536, CONF:7537, CONF:16087)
+<ol>
+<li>Contains <tt><b>@typeCode="</b>RSON" </tt><i>RSON</i></li>
+<li>Contains exactly one [1..1] <xref href="../Indication.dita">Indication</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.19</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or more [0..*] <tt><b>entryRelationship</b></tt> (CONF:7549, CONF:7553, CONF:16090)
+<ol>
+<li>Contains <tt><b>@typeCode="</b>REFR" </tt><i>REFR</i></li>
+<li>Contains exactly one [1..1] <xref href="../MedicationDispense.dita">Medication Dispense</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.18</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or more [0..*] <tt><b>precondition</b></tt> (CONF:7546, CONF:16092)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../PreconditionForSubstanceAdministration.dita">Precondition For Substance Administration</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.25</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or more [0..*] <tt><b>participant</b></tt> (CONF:7523, CONF:7524, CONF:16086)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../DrugVehicle.dita">Drug Vehicle</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.24</tt>)</li></ol></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>consumable</b></tt> (CONF:7520) <ol><li> This consumable <b>SHALL</b> contain exactly one [1..1] <tt><b>manufacturedProduct</b></tt>, where its type is <xref href="../MedicationInformation.dita">Medication Information</xref> (CONF:16085)<ol>
+<li>Contains exactly one [1..1] <xref href="../MedicationInformation.dita">Medication Information</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.23</tt>)</li></ol></li></ol>
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>consumable</b></tt> (CONF:10235) <ol><li> This consumable <b>SHALL</b> contain exactly one [1..1] <tt><b>manufacturedProduct</b></tt> (CONF:10236) <ol><li> This manufacturedProduct <b>SHALL</b> conform to <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.consol.doc/classes/MedicationInformation.html">Consol Medication Information</xref> template (templateId: <tt>2.16.840.1.113883.10.20.22.4.23</tt>)</li><li> This manufacturedProduct <b>SHALL</b> contain exactly one [1..1] <tt><b>manufacturedMaterial</b></tt> (CONF:10237) <ol><li> This manufacturedMaterial <b>SHALL</b> contain zero or one [0..1] <tt><b>code</b></tt>, where the @code <b>SHALL</b> be selected from (CodeSystem:<tt> 2.16.840.1.113883.6.88 RxNorm</tt>)</li></ol></li></ol> </li></ol>
+</li>
+<li>Medication Activity <b>SHOULD</b> include doseQuantity OR rateQuantity</li>
+<li>text, if present, <b>SHOULD</b> contain zero or one [0..1] reference (CONF:15977)</li>
+<li>reference, if present, <b>SHOULD</b> contain zero or one [0..1] @value (CONF:15978)</li>
+<li>reference/@value <b>SHALL</b> begin with a '#' and <b>SHALL</b> point to its corresponding narrative (using the approach defined in CDA Release 2, section 4.3.5.1) (CONF:15979)</li>
+<li><b>SHALL</b> contain exactly one [1..1] effectiveTime such that it <b>SHALL</b> contain exactly one [1..1] @xsi:type = "IVL_TS" (CONF:7508, CONF:9104)</li>
+<li>effectiveTime with @xsi:type="IVL_TS" <b>SHALL</b> contain exactly one [1..1] low</li>
+<li>effectiveTime with @xsi:type="IVL_TS" <b>SHALL</b> contain exactly one [1..1] high</li>
+<li><b>SHOULD</b> contain zero or one [0..1] effectiveTime such that it <b>SHALL</b> contain exactly one [1..1] @xsi:type = "PIVL_TS" or "EIVL_TS" (CONF:7513, CONF:9105)</li>
+<li>effectiveTime with @xsi:type = "PIVL_TS" or "EIVL_TS" <b>SHALL</b> contain exactly one [1..1] @operator="A" (CONF:9106)</li>
+<li>doseQuantity, if present, <b>SHOULD</b> contain zero or one [0..1] @unit, which <b>SHALL</b> be selected from ValueSet UCUM Units of Measure (case sensitive) 2.16.840.1.113883.1.11.12839 DYNAMIC (CONF:7526)</li>
+<li>participant with target entry Drug Vehicle <b>SHALL</b> contain exactly one [1..1] @typeCode="CSM" (CodeSystem: HL7ParticipationType 2.16.840.1.113883.5.90) (CONF:7524)</li>
+<li>entryRelationship with target entry Instructions <b>SHALL</b> contain exactly one [1..1] @inversionInd="true" True (CONF:7542)</li>
+<li>Precondition for Substance Administration <b>SHALL</b> contain exactly one [1..1] @typeCode="PRCN" (CodeSystem: HL7ActRelationshipType 2.16.840.1.113883.5.1002) (CONF:7550)</li>
+</ol>
+<section id="tableconformance"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="8" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><colspec colname="col2" colnum="2" /><colspec colname="col3" colnum="3" /><colspec colname="col4" colnum="4" /><colspec colname="col5" colnum="5" /><colspec colname="col6" colnum="6" /><colspec colname="col7" colnum="7" /><thead> <row><entry namest="col0" nameend="col7" >emspcr::CurrentMedication</entry>  </row>  <row><entry namest="col0" nameend="col7" >cda::substanceadministration[cda:templateId/@root = 2.16.840.1.113883.10.20.22.4.16]/</entry>  </row>  <row><entry>Name</entry><entry>XPath</entry><entry>Cardinality</entry><entry>Severity</entry><entry>Nullable</entry><entry>Data Type</entry><entry>Conformance</entry><entry>Value(s)</entry></row></thead><tbody><row><entry>negationInd</entry><entry>@negationInd</entry><entry>0..1</entry><entry>MAY</entry><entry>NO</entry><entry>Boolean</entry><entry>CONF:10233</entry><entry> </entry></row> 
+<row><entry>nullFlavor</entry><entry>@nullFlavor</entry><entry>0..1</entry><entry>MAY</entry><entry>NO</entry><entry>NullFlavor</entry><entry>CONF:10234</entry><entry> ASKU</entry></row> 
+<row><entry>doseQuantity</entry><entry>doseQuantity</entry><entry>0..1</entry><entry>SHOULD</entry><entry>YES</entry><entry>IVL_PQ</entry><entry>CONF:10230</entry><entry> </entry></row> 
+<row><entry>routeCode</entry><entry>routeCode</entry><entry>0..1</entry><entry>SHALL</entry><entry>YES</entry><entry>CE</entry><entry>CONF:10231</entry><entry> null</entry></row> 
+<row><entry>currentMedication</entry><entry>currentMedication</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>CurrentMedication</entry><entry></entry><entry> </entry></row> 
+<row><entry>CurrentMedicationConsumable</entry><entry>CurrentMedicationConsumable</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>CurrentMedicationConsumable</entry><entry>CONF:10235</entry><entry> </entry></row> 
+</tbody></tgroup></table></p></section>
+<codeblock id="example"><![CDATA[<substanceadministration xmlns="urn:hl7-org:v3" classCode="SBADM">
+  <templateId root="2.16.840.1.1133883.17.3.10.1.77"/>
+  <templateId root="2.16.840.1.113883.10.20.22.4.16"/>
+  <id root="MDHT" extension="1461955372"/>
+  <code code="196588705"/>
+  <text>Text Value</text>
+  <statusCode code="completed"/>
+  <effectiveTime value="20130612"/>
+  <repeatNumber value="1"/>
+  <routeCode codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus"/>
+  <approachSiteCode codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
+  <doseQuantity/>
+  <rateQuantity/>
+  <maxDoseQuantity/>
+  <consumable>
+    <manufacturedProduct>
+      <id root="MDHT" extension="652045258"/>
+      <manufacturedMaterial>
+        <code codeSystem="2.16.840.1.113883.6.88" codeSystemName="RxNorm"/>
+      </manufacturedMaterial>
+    </manufacturedProduct>
+  </consumable>
+</substanceadministration>]]></codeblock>
+<section id="changes">
+</section>
+<p><ph id="classformalname">Current Medication</ph></p>
+<p id="shortdesc">[SubstanceAdministration: templateId <tt>2.16.840.1.1133883.17.3.10.1.77</tt>]</p>
+</body>
+</topic>

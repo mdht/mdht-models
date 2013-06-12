@@ -1,25 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
 <map title="Section Templates">
-<topicref href="EMSAdvanceDirectivesSection.dita" type="topic" />
-<topicref href="EMSAllergiesAndAdverseReactionsSection.dita" type="topic" />
-<topicref href="EMSBillingSection.dita" type="topic" />
-<topicref href="EMSCardiacArrestEventSection.dita" type="topic" />
-<topicref href="EMSCurrentMedicationSection.dita" type="topic" />
-<topicref href="EMSDispatchSection.dita" type="topic" />
-<topicref href="EMSDispositionSection.dita" type="topic" />
-<topicref href="EMSInjuryIncidentDescriptionSection.dita" type="topic" />
-<topicref href="EMSMedicationsAdministeredSection.dita" type="topic" />
-<topicref href="EMSPastMedicalHistorySection.dita" type="topic" />
-<topicref href="EMSPatientCareNarrativeSection.dita" type="topic" />
-<topicref href="EMSPersonnelAdverseEventSection.dita" type="topic" />
-<topicref href="EMSPhysicalAssessmentSection.dita" type="topic" />
-<topicref href="EMSProceduresPerformedSection.dita" type="topic" />
-<topicref href="EMSProtocolSection.dita" type="topic" />
-<topicref href="EMSResponseSection.dita" type="topic" />
-<topicref href="EMSSceneSection.dita" type="topic" />
-<topicref href="EMSSituationSection.dita" type="topic" />
-<topicref href="EMSSocialHistorySection.dita" type="topic" />
-<topicref href="EMSTimesSection.dita" type="topic" />
-<topicref href="EMSVitalSignsSection.dita" type="topic" />
+<topicref href="AdvanceDirectivesSection.dita" type="topic" />
+<topicref href="AllergiesAndAdverseReactionsSection.dita" type="topic" />
+<topicref href="BillingSection.dita" type="topic" />
+<topicref href="CardiacArrestEventSection.dita" type="topic" />
+<topicref href="CurrentMedicationSection.dita" type="topic" />
+<topicref href="DispatchSection.dita" type="topic" />
+<topicref href="DispositionSection.dita" type="topic" />
+<topicref href="InjuryIncidentDescriptionSection.dita" type="topic" />
+<topicref href="MedicationsAdministeredSection.dita" type="topic" />
+<topicref href="PastMedicalHistorySection.dita" type="topic" />
+<topicref href="PatientCareNarrativeSection.dita" type="topic" />
+<topicref href="PersonnelAdverseEventSection.dita" type="topic" />
+<topicref href="PhysicalAssessmentSection.dita" type="topic" />
+<topicref href="ProceduresPerformedSection.dita" type="topic" />
+<topicref href="ProtocolSection.dita" type="topic" />
+<topicref href="ResponseSection.dita" type="topic" />
+<topicref href="SceneSection.dita" type="topic" />
+<topicref href="SituationSection.dita" type="topic" />
+<topicref href="SocialHistorySection.dita" type="topic" />
+<topicref href="TimesSection.dita" type="topic" />
+<topicref href="VitalSignsSection.dita" type="topic" />
 </map>
