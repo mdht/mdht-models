@@ -58,538 +58,533 @@ import org.openhealthtools.mdht.uml.cda.operations.SectionOperations;
  */
 public class PastMedicalHistorySectionOperations extends SectionOperations {
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	protected PastMedicalHistorySectionOperations() {
 		super();
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validatePastMedicalHistorySectionTemplateId(PastMedicalHistorySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Past Medical History Section Template Id</em>}' operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL expression body for the '{@link #validatePastMedicalHistorySectionTemplateId(PastMedicalHistorySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Past Medical History Section Template Id</em>}' operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validatePastMedicalHistorySectionTemplateId(PastMedicalHistorySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validatePastMedicalHistorySectionTemplateId(PastMedicalHistorySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 	protected static final String VALIDATE_PAST_MEDICAL_HISTORY_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.17.3.10.1.19')";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validatePastMedicalHistorySectionTemplateId(PastMedicalHistorySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Past Medical History Section Template Id</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL invariant for the '{@link #validatePastMedicalHistorySectionTemplateId(PastMedicalHistorySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Past Medical History Section Template Id</em>}' invariant operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validatePastMedicalHistorySectionTemplateId(PastMedicalHistorySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	
+	* @see #validatePastMedicalHistorySectionTemplateId(PastMedicalHistorySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
+
 	protected static Constraint VALIDATE_PAST_MEDICAL_HISTORY_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param pastMedicalHistorySection The receiving '<em><b>Past Medical History Section</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
-	
-	public static  boolean validatePastMedicalHistorySectionTemplateId(PastMedicalHistorySection pastMedicalHistorySection, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+	* <!-- begin-model-doc -->
+	* @param pastMedicalHistorySection The receiving '<em><b>Past Medical History Section</b></em>' model object.
+	* @param diagnostics The chain of diagnostics to which problems are to be appended.
+	* @param context The cache of context-specific information.
+	* <!-- end-model-doc -->
+	* @generated
+	*/
+
+	public static boolean validatePastMedicalHistorySectionTemplateId(
+			PastMedicalHistorySection pastMedicalHistorySection, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+
 		if (VALIDATE_PAST_MEDICAL_HISTORY_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.PAST_MEDICAL_HISTORY_SECTION);
 			try {
 				VALIDATE_PAST_MEDICAL_HISTORY_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PAST_MEDICAL_HISTORY_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PAST_MEDICAL_HISTORY_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(pastMedicalHistorySection)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PAST_MEDICAL_HISTORY_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			pastMedicalHistorySection)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.PAST_MEDICAL_HISTORY_SECTION__PAST_MEDICAL_HISTORY_SECTION_TEMPLATE_ID,
-						 EmspcrPlugin.INSTANCE.getString("PastMedicalHistorySectionTemplateId"),
-						 new Object [] { pastMedicalHistorySection }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.PAST_MEDICAL_HISTORY_SECTION__PAST_MEDICAL_HISTORY_SECTION_TEMPLATE_ID,
+					EmspcrPlugin.INSTANCE.getString("PastMedicalHistorySectionTemplateId"),
+					new Object[] { pastMedicalHistorySection }));
 			}
-			 
+
 			return false;
 		}
 		return true;
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validatePastMedicalHistorySectionCode(PastMedicalHistorySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Past Medical History Section Code</em>}' operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL expression body for the '{@link #validatePastMedicalHistorySectionCode(PastMedicalHistorySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Past Medical History Section Code</em>}' operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validatePastMedicalHistorySectionCode(PastMedicalHistorySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String VALIDATE_PAST_MEDICAL_HISTORY_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and "+
-"let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in "+
-"value.code = '67842-5' and value.codeSystem = '2.16.840.1.113883.6.1')";
+	* @see #validatePastMedicalHistorySectionCode(PastMedicalHistorySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
+	protected static final String VALIDATE_PAST_MEDICAL_HISTORY_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and "
+			+ "let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in "
+			+ "value.code = '67842-5' and value.codeSystem = '2.16.840.1.113883.6.1')";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validatePastMedicalHistorySectionCode(PastMedicalHistorySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Past Medical History Section Code</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL invariant for the '{@link #validatePastMedicalHistorySectionCode(PastMedicalHistorySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Past Medical History Section Code</em>}' invariant operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validatePastMedicalHistorySectionCode(PastMedicalHistorySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	
+	* @see #validatePastMedicalHistorySectionCode(PastMedicalHistorySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
+
 	protected static Constraint VALIDATE_PAST_MEDICAL_HISTORY_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param pastMedicalHistorySection The receiving '<em><b>Past Medical History Section</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
-	
-	public static  boolean validatePastMedicalHistorySectionCode(PastMedicalHistorySection pastMedicalHistorySection, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+	* <!-- begin-model-doc -->
+	* @param pastMedicalHistorySection The receiving '<em><b>Past Medical History Section</b></em>' model object.
+	* @param diagnostics The chain of diagnostics to which problems are to be appended.
+	* @param context The cache of context-specific information.
+	* <!-- end-model-doc -->
+	* @generated
+	*/
+
+	public static boolean validatePastMedicalHistorySectionCode(PastMedicalHistorySection pastMedicalHistorySection,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_PAST_MEDICAL_HISTORY_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.PAST_MEDICAL_HISTORY_SECTION);
 			try {
 				VALIDATE_PAST_MEDICAL_HISTORY_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PAST_MEDICAL_HISTORY_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PAST_MEDICAL_HISTORY_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(pastMedicalHistorySection)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PAST_MEDICAL_HISTORY_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			pastMedicalHistorySection)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.PAST_MEDICAL_HISTORY_SECTION__PAST_MEDICAL_HISTORY_SECTION_CODE,
-						 EmspcrPlugin.INSTANCE.getString("PastMedicalHistorySectionCode"),
-						 new Object [] { pastMedicalHistorySection }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.PAST_MEDICAL_HISTORY_SECTION__PAST_MEDICAL_HISTORY_SECTION_CODE,
+					EmspcrPlugin.INSTANCE.getString("PastMedicalHistorySectionCode"),
+					new Object[] { pastMedicalHistorySection }));
 			}
-			 
+
 			return false;
 		}
 		return true;
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validatePastMedicalHistorySectionCodeP(PastMedicalHistorySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Past Medical History Section Code P</em>}' operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL expression body for the '{@link #validatePastMedicalHistorySectionCodeP(PastMedicalHistorySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Past Medical History Section Code P</em>}' operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validatePastMedicalHistorySectionCodeP(PastMedicalHistorySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validatePastMedicalHistorySectionCodeP(PastMedicalHistorySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 	protected static final String VALIDATE_PAST_MEDICAL_HISTORY_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined())";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validatePastMedicalHistorySectionCodeP(PastMedicalHistorySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Past Medical History Section Code P</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL invariant for the '{@link #validatePastMedicalHistorySectionCodeP(PastMedicalHistorySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Past Medical History Section Code P</em>}' invariant operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validatePastMedicalHistorySectionCodeP(PastMedicalHistorySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	
+	* @see #validatePastMedicalHistorySectionCodeP(PastMedicalHistorySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
+
 	protected static Constraint VALIDATE_PAST_MEDICAL_HISTORY_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param pastMedicalHistorySection The receiving '<em><b>Past Medical History Section</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
-	
-	public static  boolean validatePastMedicalHistorySectionCodeP(PastMedicalHistorySection pastMedicalHistorySection, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+	* <!-- begin-model-doc -->
+	* @param pastMedicalHistorySection The receiving '<em><b>Past Medical History Section</b></em>' model object.
+	* @param diagnostics The chain of diagnostics to which problems are to be appended.
+	* @param context The cache of context-specific information.
+	* <!-- end-model-doc -->
+	* @generated
+	*/
+
+	public static boolean validatePastMedicalHistorySectionCodeP(PastMedicalHistorySection pastMedicalHistorySection,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_PAST_MEDICAL_HISTORY_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.PAST_MEDICAL_HISTORY_SECTION);
 			try {
 				VALIDATE_PAST_MEDICAL_HISTORY_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PAST_MEDICAL_HISTORY_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PAST_MEDICAL_HISTORY_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(pastMedicalHistorySection)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PAST_MEDICAL_HISTORY_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			pastMedicalHistorySection)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.PAST_MEDICAL_HISTORY_SECTION__PAST_MEDICAL_HISTORY_SECTION_CODE_P,
-						 EmspcrPlugin.INSTANCE.getString("PastMedicalHistorySectionCodeP"),
-						 new Object [] { pastMedicalHistorySection }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.PAST_MEDICAL_HISTORY_SECTION__PAST_MEDICAL_HISTORY_SECTION_CODE_P,
+					EmspcrPlugin.INSTANCE.getString("PastMedicalHistorySectionCodeP"),
+					new Object[] { pastMedicalHistorySection }));
 			}
-			 
+
 			return false;
 		}
 		return true;
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validatePastMedicalHistorySectionTitle(PastMedicalHistorySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Past Medical History Section Title</em>}' operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL expression body for the '{@link #validatePastMedicalHistorySectionTitle(PastMedicalHistorySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Past Medical History Section Title</em>}' operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validatePastMedicalHistorySectionTitle(PastMedicalHistorySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validatePastMedicalHistorySectionTitle(PastMedicalHistorySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 	protected static final String VALIDATE_PAST_MEDICAL_HISTORY_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.title.oclIsUndefined() or self.title.isNullFlavorUndefined()) implies (not self.title.oclIsUndefined() and self.title.getText() = 'EMS Past Medical History')";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validatePastMedicalHistorySectionTitle(PastMedicalHistorySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Past Medical History Section Title</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL invariant for the '{@link #validatePastMedicalHistorySectionTitle(PastMedicalHistorySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Past Medical History Section Title</em>}' invariant operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validatePastMedicalHistorySectionTitle(PastMedicalHistorySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	
+	* @see #validatePastMedicalHistorySectionTitle(PastMedicalHistorySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
+
 	protected static Constraint VALIDATE_PAST_MEDICAL_HISTORY_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param pastMedicalHistorySection The receiving '<em><b>Past Medical History Section</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
-	
-	public static  boolean validatePastMedicalHistorySectionTitle(PastMedicalHistorySection pastMedicalHistorySection, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+	* <!-- begin-model-doc -->
+	* @param pastMedicalHistorySection The receiving '<em><b>Past Medical History Section</b></em>' model object.
+	* @param diagnostics The chain of diagnostics to which problems are to be appended.
+	* @param context The cache of context-specific information.
+	* <!-- end-model-doc -->
+	* @generated
+	*/
+
+	public static boolean validatePastMedicalHistorySectionTitle(PastMedicalHistorySection pastMedicalHistorySection,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_PAST_MEDICAL_HISTORY_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.PAST_MEDICAL_HISTORY_SECTION);
 			try {
 				VALIDATE_PAST_MEDICAL_HISTORY_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PAST_MEDICAL_HISTORY_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PAST_MEDICAL_HISTORY_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(pastMedicalHistorySection)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PAST_MEDICAL_HISTORY_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			pastMedicalHistorySection)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.PAST_MEDICAL_HISTORY_SECTION__PAST_MEDICAL_HISTORY_SECTION_TITLE,
-						 EmspcrPlugin.INSTANCE.getString("PastMedicalHistorySectionTitle"),
-						 new Object [] { pastMedicalHistorySection }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.PAST_MEDICAL_HISTORY_SECTION__PAST_MEDICAL_HISTORY_SECTION_TITLE,
+					EmspcrPlugin.INSTANCE.getString("PastMedicalHistorySectionTitle"),
+					new Object[] { pastMedicalHistorySection }));
 			}
-			 
+
 			return false;
 		}
 		return true;
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validatePastMedicalHistorySectionText(PastMedicalHistorySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Past Medical History Section Text</em>}' operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL expression body for the '{@link #validatePastMedicalHistorySectionText(PastMedicalHistorySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Past Medical History Section Text</em>}' operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validatePastMedicalHistorySectionText(PastMedicalHistorySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validatePastMedicalHistorySectionText(PastMedicalHistorySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 	protected static final String VALIDATE_PAST_MEDICAL_HISTORY_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "not self.text.oclIsUndefined()";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validatePastMedicalHistorySectionText(PastMedicalHistorySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Past Medical History Section Text</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL invariant for the '{@link #validatePastMedicalHistorySectionText(PastMedicalHistorySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Past Medical History Section Text</em>}' invariant operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validatePastMedicalHistorySectionText(PastMedicalHistorySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	
+	* @see #validatePastMedicalHistorySectionText(PastMedicalHistorySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
+
 	protected static Constraint VALIDATE_PAST_MEDICAL_HISTORY_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param pastMedicalHistorySection The receiving '<em><b>Past Medical History Section</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
-	
-	public static  boolean validatePastMedicalHistorySectionText(PastMedicalHistorySection pastMedicalHistorySection, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+	* <!-- begin-model-doc -->
+	* @param pastMedicalHistorySection The receiving '<em><b>Past Medical History Section</b></em>' model object.
+	* @param diagnostics The chain of diagnostics to which problems are to be appended.
+	* @param context The cache of context-specific information.
+	* <!-- end-model-doc -->
+	* @generated
+	*/
+
+	public static boolean validatePastMedicalHistorySectionText(PastMedicalHistorySection pastMedicalHistorySection,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_PAST_MEDICAL_HISTORY_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.PAST_MEDICAL_HISTORY_SECTION);
 			try {
 				VALIDATE_PAST_MEDICAL_HISTORY_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PAST_MEDICAL_HISTORY_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PAST_MEDICAL_HISTORY_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(pastMedicalHistorySection)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PAST_MEDICAL_HISTORY_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			pastMedicalHistorySection)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.PAST_MEDICAL_HISTORY_SECTION__PAST_MEDICAL_HISTORY_SECTION_TEXT,
-						 EmspcrPlugin.INSTANCE.getString("PastMedicalHistorySectionText"),
-						 new Object [] { pastMedicalHistorySection }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.PAST_MEDICAL_HISTORY_SECTION__PAST_MEDICAL_HISTORY_SECTION_TEXT,
+					EmspcrPlugin.INSTANCE.getString("PastMedicalHistorySectionText"),
+					new Object[] { pastMedicalHistorySection }));
 			}
-			 
+
 			return false;
 		}
 		return true;
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validatePastMedicalHistorySectionExistenceOfHistoryOfCondition(PastMedicalHistorySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Past Medical History Section Existence Of History Of Condition</em>}' operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL expression body for the '{@link #validatePastMedicalHistorySectionExistenceOfHistoryOfCondition(PastMedicalHistorySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Past Medical History Section Existence Of History Of Condition</em>}' operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validatePastMedicalHistorySectionExistenceOfHistoryOfCondition(PastMedicalHistorySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validatePastMedicalHistorySectionExistenceOfHistoryOfCondition(PastMedicalHistorySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 	protected static final String VALIDATE_PAST_MEDICAL_HISTORY_SECTION_EXISTENCE_OF_HISTORY_OF_CONDITION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->one(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(emspcr::ExistenceOfHistoryOfCondition) and entry.typeCode = vocab::x_ActRelationshipEntry::DRIV)";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validatePastMedicalHistorySectionExistenceOfHistoryOfCondition(PastMedicalHistorySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Past Medical History Section Existence Of History Of Condition</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL invariant for the '{@link #validatePastMedicalHistorySectionExistenceOfHistoryOfCondition(PastMedicalHistorySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Past Medical History Section Existence Of History Of Condition</em>}' invariant operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validatePastMedicalHistorySectionExistenceOfHistoryOfCondition(PastMedicalHistorySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	
+	* @see #validatePastMedicalHistorySectionExistenceOfHistoryOfCondition(PastMedicalHistorySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
+
 	protected static Constraint VALIDATE_PAST_MEDICAL_HISTORY_SECTION_EXISTENCE_OF_HISTORY_OF_CONDITION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param pastMedicalHistorySection The receiving '<em><b>Past Medical History Section</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
-	
-	public static  boolean validatePastMedicalHistorySectionExistenceOfHistoryOfCondition(PastMedicalHistorySection pastMedicalHistorySection, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+	* <!-- begin-model-doc -->
+	* @param pastMedicalHistorySection The receiving '<em><b>Past Medical History Section</b></em>' model object.
+	* @param diagnostics The chain of diagnostics to which problems are to be appended.
+	* @param context The cache of context-specific information.
+	* <!-- end-model-doc -->
+	* @generated
+	*/
+
+	public static boolean validatePastMedicalHistorySectionExistenceOfHistoryOfCondition(
+			PastMedicalHistorySection pastMedicalHistorySection, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+
 		if (VALIDATE_PAST_MEDICAL_HISTORY_SECTION_EXISTENCE_OF_HISTORY_OF_CONDITION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.PAST_MEDICAL_HISTORY_SECTION);
 			try {
 				VALIDATE_PAST_MEDICAL_HISTORY_SECTION_EXISTENCE_OF_HISTORY_OF_CONDITION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PAST_MEDICAL_HISTORY_SECTION_EXISTENCE_OF_HISTORY_OF_CONDITION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PAST_MEDICAL_HISTORY_SECTION_EXISTENCE_OF_HISTORY_OF_CONDITION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(pastMedicalHistorySection)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_PAST_MEDICAL_HISTORY_SECTION_EXISTENCE_OF_HISTORY_OF_CONDITION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			pastMedicalHistorySection)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.PAST_MEDICAL_HISTORY_SECTION__PAST_MEDICAL_HISTORY_SECTION_EXISTENCE_OF_HISTORY_OF_CONDITION,
-						 EmspcrPlugin.INSTANCE.getString("PastMedicalHistorySectionExistenceOfHistoryOfCondition"),
-						 new Object [] { pastMedicalHistorySection }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR,
+					EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.PAST_MEDICAL_HISTORY_SECTION__PAST_MEDICAL_HISTORY_SECTION_EXISTENCE_OF_HISTORY_OF_CONDITION,
+					EmspcrPlugin.INSTANCE.getString("PastMedicalHistorySectionExistenceOfHistoryOfCondition"),
+					new Object[] { pastMedicalHistorySection }));
 			}
-			 
+
 			return false;
 		}
 		return true;
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validatePastMedicalHistorySectionHistoryOfCondition(PastMedicalHistorySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Past Medical History Section History Of Condition</em>}' operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL expression body for the '{@link #validatePastMedicalHistorySectionHistoryOfCondition(PastMedicalHistorySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Past Medical History Section History Of Condition</em>}' operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validatePastMedicalHistorySectionHistoryOfCondition(PastMedicalHistorySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validatePastMedicalHistorySectionHistoryOfCondition(PastMedicalHistorySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 	protected static final String VALIDATE_PAST_MEDICAL_HISTORY_SECTION_HISTORY_OF_CONDITION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->one(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(emspcr::HistoryOfCondition) and entry.typeCode = vocab::x_ActRelationshipEntry::DRIV)";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validatePastMedicalHistorySectionHistoryOfCondition(PastMedicalHistorySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Past Medical History Section History Of Condition</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL invariant for the '{@link #validatePastMedicalHistorySectionHistoryOfCondition(PastMedicalHistorySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Past Medical History Section History Of Condition</em>}' invariant operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validatePastMedicalHistorySectionHistoryOfCondition(PastMedicalHistorySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	
+	* @see #validatePastMedicalHistorySectionHistoryOfCondition(PastMedicalHistorySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
+
 	protected static Constraint VALIDATE_PAST_MEDICAL_HISTORY_SECTION_HISTORY_OF_CONDITION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param pastMedicalHistorySection The receiving '<em><b>Past Medical History Section</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
-	
-	public static  boolean validatePastMedicalHistorySectionHistoryOfCondition(PastMedicalHistorySection pastMedicalHistorySection, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+	* <!-- begin-model-doc -->
+	* @param pastMedicalHistorySection The receiving '<em><b>Past Medical History Section</b></em>' model object.
+	* @param diagnostics The chain of diagnostics to which problems are to be appended.
+	* @param context The cache of context-specific information.
+	* <!-- end-model-doc -->
+	* @generated
+	*/
+
+	public static boolean validatePastMedicalHistorySectionHistoryOfCondition(
+			PastMedicalHistorySection pastMedicalHistorySection, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+
 		if (VALIDATE_PAST_MEDICAL_HISTORY_SECTION_HISTORY_OF_CONDITION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.PAST_MEDICAL_HISTORY_SECTION);
 			try {
 				VALIDATE_PAST_MEDICAL_HISTORY_SECTION_HISTORY_OF_CONDITION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PAST_MEDICAL_HISTORY_SECTION_HISTORY_OF_CONDITION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PAST_MEDICAL_HISTORY_SECTION_HISTORY_OF_CONDITION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(pastMedicalHistorySection)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_PAST_MEDICAL_HISTORY_SECTION_HISTORY_OF_CONDITION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			pastMedicalHistorySection)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.PAST_MEDICAL_HISTORY_SECTION__PAST_MEDICAL_HISTORY_SECTION_HISTORY_OF_CONDITION,
-						 EmspcrPlugin.INSTANCE.getString("PastMedicalHistorySectionHistoryOfCondition"),
-						 new Object [] { pastMedicalHistorySection }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.PAST_MEDICAL_HISTORY_SECTION__PAST_MEDICAL_HISTORY_SECTION_HISTORY_OF_CONDITION,
+					EmspcrPlugin.INSTANCE.getString("PastMedicalHistorySectionHistoryOfCondition"),
+					new Object[] { pastMedicalHistorySection }));
 			}
-			 
+
 			return false;
 		}
 		return true;
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validatePastMedicalHistorySectionHistoryOfProceduresOrganizer(PastMedicalHistorySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Past Medical History Section History Of Procedures Organizer</em>}' operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL expression body for the '{@link #validatePastMedicalHistorySectionHistoryOfProceduresOrganizer(PastMedicalHistorySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Past Medical History Section History Of Procedures Organizer</em>}' operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validatePastMedicalHistorySectionHistoryOfProceduresOrganizer(PastMedicalHistorySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validatePastMedicalHistorySectionHistoryOfProceduresOrganizer(PastMedicalHistorySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 	protected static final String VALIDATE_PAST_MEDICAL_HISTORY_SECTION_HISTORY_OF_PROCEDURES_ORGANIZER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->one(entry : cda::Entry | not entry.organizer.oclIsUndefined() and entry.organizer.oclIsKindOf(emspcr::HistoryOfProceduresOrganizer) and entry.typeCode = vocab::x_ActRelationshipEntry::DRIV)";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validatePastMedicalHistorySectionHistoryOfProceduresOrganizer(PastMedicalHistorySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Past Medical History Section History Of Procedures Organizer</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL invariant for the '{@link #validatePastMedicalHistorySectionHistoryOfProceduresOrganizer(PastMedicalHistorySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Past Medical History Section History Of Procedures Organizer</em>}' invariant operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validatePastMedicalHistorySectionHistoryOfProceduresOrganizer(PastMedicalHistorySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	
+	* @see #validatePastMedicalHistorySectionHistoryOfProceduresOrganizer(PastMedicalHistorySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
+
 	protected static Constraint VALIDATE_PAST_MEDICAL_HISTORY_SECTION_HISTORY_OF_PROCEDURES_ORGANIZER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param pastMedicalHistorySection The receiving '<em><b>Past Medical History Section</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
-	
-	public static  boolean validatePastMedicalHistorySectionHistoryOfProceduresOrganizer(PastMedicalHistorySection pastMedicalHistorySection, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+	* <!-- begin-model-doc -->
+	* @param pastMedicalHistorySection The receiving '<em><b>Past Medical History Section</b></em>' model object.
+	* @param diagnostics The chain of diagnostics to which problems are to be appended.
+	* @param context The cache of context-specific information.
+	* <!-- end-model-doc -->
+	* @generated
+	*/
+
+	public static boolean validatePastMedicalHistorySectionHistoryOfProceduresOrganizer(
+			PastMedicalHistorySection pastMedicalHistorySection, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+
 		if (VALIDATE_PAST_MEDICAL_HISTORY_SECTION_HISTORY_OF_PROCEDURES_ORGANIZER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.PAST_MEDICAL_HISTORY_SECTION);
 			try {
 				VALIDATE_PAST_MEDICAL_HISTORY_SECTION_HISTORY_OF_PROCEDURES_ORGANIZER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PAST_MEDICAL_HISTORY_SECTION_HISTORY_OF_PROCEDURES_ORGANIZER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PAST_MEDICAL_HISTORY_SECTION_HISTORY_OF_PROCEDURES_ORGANIZER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(pastMedicalHistorySection)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_PAST_MEDICAL_HISTORY_SECTION_HISTORY_OF_PROCEDURES_ORGANIZER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			pastMedicalHistorySection)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.PAST_MEDICAL_HISTORY_SECTION__PAST_MEDICAL_HISTORY_SECTION_HISTORY_OF_PROCEDURES_ORGANIZER,
-						 EmspcrPlugin.INSTANCE.getString("PastMedicalHistorySectionHistoryOfProceduresOrganizer"),
-						 new Object [] { pastMedicalHistorySection }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR,
+					EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.PAST_MEDICAL_HISTORY_SECTION__PAST_MEDICAL_HISTORY_SECTION_HISTORY_OF_PROCEDURES_ORGANIZER,
+					EmspcrPlugin.INSTANCE.getString("PastMedicalHistorySectionHistoryOfProceduresOrganizer"),
+					new Object[] { pastMedicalHistorySection }));
 			}
-			 
+
 			return false;
 		}
 		return true;
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #getExistenceOfHistoryOfCondition(PastMedicalHistorySection) <em>Get Existence Of History Of Condition</em>}' operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL expression body for the '{@link #getExistenceOfHistoryOfCondition(PastMedicalHistorySection) <em>Get Existence Of History Of Condition</em>}' operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getExistenceOfHistoryOfCondition(PastMedicalHistorySection)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #getExistenceOfHistoryOfCondition(PastMedicalHistorySection)
+	* @generated
+	* @ordered
+	*/
 	protected static final String GET_EXISTENCE_OF_HISTORY_OF_CONDITION__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(emspcr::ExistenceOfHistoryOfCondition))->asSequence()->any(true).oclAsType(emspcr::ExistenceOfHistoryOfCondition)";
 
 	/**
-	 * The cached OCL query for the '{@link #getExistenceOfHistoryOfCondition(PastMedicalHistorySection) <em>Get Existence Of History Of Condition</em>}' query operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL query for the '{@link #getExistenceOfHistoryOfCondition(PastMedicalHistorySection) <em>Get Existence Of History Of Condition</em>}' query operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getExistenceOfHistoryOfCondition(PastMedicalHistorySection)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #getExistenceOfHistoryOfCondition(PastMedicalHistorySection)
+	* @generated
+	* @ordered
+	*/
 	protected static OCLExpression<EClassifier> GET_EXISTENCE_OF_HISTORY_OF_CONDITION__EOCL_QRY;
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	
-	public static  ExistenceOfHistoryOfCondition getExistenceOfHistoryOfCondition(PastMedicalHistorySection pastMedicalHistorySection) {
+	* @generated
+	*/
+
+	public static ExistenceOfHistoryOfCondition getExistenceOfHistoryOfCondition(
+			PastMedicalHistorySection pastMedicalHistorySection) {
 		if (GET_EXISTENCE_OF_HISTORY_OF_CONDITION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(EmspcrPackage.Literals.PAST_MEDICAL_HISTORY_SECTION, EmspcrPackage.Literals.PAST_MEDICAL_HISTORY_SECTION.getEAllOperations().get(63));
+			helper.setOperationContext(
+				EmspcrPackage.Literals.PAST_MEDICAL_HISTORY_SECTION,
+				EmspcrPackage.Literals.PAST_MEDICAL_HISTORY_SECTION.getEAllOperations().get(63));
 			try {
 				GET_EXISTENCE_OF_HISTORY_OF_CONDITION__EOCL_QRY = helper.createQuery(GET_EXISTENCE_OF_HISTORY_OF_CONDITION__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -598,39 +593,40 @@ public class PastMedicalHistorySectionOperations extends SectionOperations {
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #getHistoryOfCondition(PastMedicalHistorySection) <em>Get History Of Condition</em>}' operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL expression body for the '{@link #getHistoryOfCondition(PastMedicalHistorySection) <em>Get History Of Condition</em>}' operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getHistoryOfCondition(PastMedicalHistorySection)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #getHistoryOfCondition(PastMedicalHistorySection)
+	* @generated
+	* @ordered
+	*/
 	protected static final String GET_HISTORY_OF_CONDITION__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(emspcr::HistoryOfCondition))->asSequence()->any(true).oclAsType(emspcr::HistoryOfCondition)";
 
 	/**
-	 * The cached OCL query for the '{@link #getHistoryOfCondition(PastMedicalHistorySection) <em>Get History Of Condition</em>}' query operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL query for the '{@link #getHistoryOfCondition(PastMedicalHistorySection) <em>Get History Of Condition</em>}' query operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getHistoryOfCondition(PastMedicalHistorySection)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #getHistoryOfCondition(PastMedicalHistorySection)
+	* @generated
+	* @ordered
+	*/
 	protected static OCLExpression<EClassifier> GET_HISTORY_OF_CONDITION__EOCL_QRY;
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	
-	public static  HistoryOfCondition getHistoryOfCondition(PastMedicalHistorySection pastMedicalHistorySection) {
+	* @generated
+	*/
+
+	public static HistoryOfCondition getHistoryOfCondition(PastMedicalHistorySection pastMedicalHistorySection) {
 		if (GET_HISTORY_OF_CONDITION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(EmspcrPackage.Literals.PAST_MEDICAL_HISTORY_SECTION, EmspcrPackage.Literals.PAST_MEDICAL_HISTORY_SECTION.getEAllOperations().get(64));
+			helper.setOperationContext(
+				EmspcrPackage.Literals.PAST_MEDICAL_HISTORY_SECTION,
+				EmspcrPackage.Literals.PAST_MEDICAL_HISTORY_SECTION.getEAllOperations().get(64));
 			try {
 				GET_HISTORY_OF_CONDITION__EOCL_QRY = helper.createQuery(GET_HISTORY_OF_CONDITION__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -639,39 +635,41 @@ public class PastMedicalHistorySectionOperations extends SectionOperations {
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #getHistoryOfProceduresOrganizer(PastMedicalHistorySection) <em>Get History Of Procedures Organizer</em>}' operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL expression body for the '{@link #getHistoryOfProceduresOrganizer(PastMedicalHistorySection) <em>Get History Of Procedures Organizer</em>}' operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getHistoryOfProceduresOrganizer(PastMedicalHistorySection)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #getHistoryOfProceduresOrganizer(PastMedicalHistorySection)
+	* @generated
+	* @ordered
+	*/
 	protected static final String GET_HISTORY_OF_PROCEDURES_ORGANIZER__EOCL_EXP = "self.getOrganizers()->select(organizer : cda::Organizer | not organizer.oclIsUndefined() and organizer.oclIsKindOf(emspcr::HistoryOfProceduresOrganizer))->asSequence()->any(true).oclAsType(emspcr::HistoryOfProceduresOrganizer)";
 
 	/**
-	 * The cached OCL query for the '{@link #getHistoryOfProceduresOrganizer(PastMedicalHistorySection) <em>Get History Of Procedures Organizer</em>}' query operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL query for the '{@link #getHistoryOfProceduresOrganizer(PastMedicalHistorySection) <em>Get History Of Procedures Organizer</em>}' query operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getHistoryOfProceduresOrganizer(PastMedicalHistorySection)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #getHistoryOfProceduresOrganizer(PastMedicalHistorySection)
+	* @generated
+	* @ordered
+	*/
 	protected static OCLExpression<EClassifier> GET_HISTORY_OF_PROCEDURES_ORGANIZER__EOCL_QRY;
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	
-	public static  HistoryOfProceduresOrganizer getHistoryOfProceduresOrganizer(PastMedicalHistorySection pastMedicalHistorySection) {
+	* @generated
+	*/
+
+	public static HistoryOfProceduresOrganizer getHistoryOfProceduresOrganizer(
+			PastMedicalHistorySection pastMedicalHistorySection) {
 		if (GET_HISTORY_OF_PROCEDURES_ORGANIZER__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(EmspcrPackage.Literals.PAST_MEDICAL_HISTORY_SECTION, EmspcrPackage.Literals.PAST_MEDICAL_HISTORY_SECTION.getEAllOperations().get(65));
+			helper.setOperationContext(
+				EmspcrPackage.Literals.PAST_MEDICAL_HISTORY_SECTION,
+				EmspcrPackage.Literals.PAST_MEDICAL_HISTORY_SECTION.getEAllOperations().get(65));
 			try {
 				GET_HISTORY_OF_PROCEDURES_ORGANIZER__EOCL_QRY = helper.createQuery(GET_HISTORY_OF_PROCEDURES_ORGANIZER__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}

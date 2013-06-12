@@ -33,86 +33,99 @@ import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
  *
  * @generated
  */
-public class MedicationNotAdministeredReasonObservationImpl extends ObservationImpl implements MedicationNotAdministeredReasonObservation {
+public class MedicationNotAdministeredReasonObservationImpl extends ObservationImpl implements
+		MedicationNotAdministeredReasonObservation {
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	protected MedicationNotAdministeredReasonObservationImpl() {
 		super();
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	@Override
 	protected EClass eStaticClass() {
 		return EmspcrPackage.Literals.MEDICATION_NOT_ADMINISTERED_REASON_OBSERVATION;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateMedicationNotAdministeredReasonObservationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return MedicationNotAdministeredReasonObservationOperations.validateMedicationNotAdministeredReasonObservationTemplateId(this, diagnostics, context);
+	* @generated
+	*/
+	public boolean validateMedicationNotAdministeredReasonObservationTemplateId(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return MedicationNotAdministeredReasonObservationOperations.validateMedicationNotAdministeredReasonObservationTemplateId(
+			this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateMedicationNotAdministeredReasonObservationCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return MedicationNotAdministeredReasonObservationOperations.validateMedicationNotAdministeredReasonObservationCode(this, diagnostics, context);
+	* @generated
+	*/
+	public boolean validateMedicationNotAdministeredReasonObservationCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return MedicationNotAdministeredReasonObservationOperations.validateMedicationNotAdministeredReasonObservationCode(
+			this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateMedicationNotAdministeredReasonObservationValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return MedicationNotAdministeredReasonObservationOperations.validateMedicationNotAdministeredReasonObservationValue(this, diagnostics, context);
+	* @generated
+	*/
+	public boolean validateMedicationNotAdministeredReasonObservationValue(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return MedicationNotAdministeredReasonObservationOperations.validateMedicationNotAdministeredReasonObservationValue(
+			this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateMedicationNotAdministeredReasonObservationValueP(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return MedicationNotAdministeredReasonObservationOperations.validateMedicationNotAdministeredReasonObservationValueP(this, diagnostics, context);
+	* @generated
+	*/
+	public boolean validateMedicationNotAdministeredReasonObservationValueP(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return MedicationNotAdministeredReasonObservationOperations.validateMedicationNotAdministeredReasonObservationValueP(
+			this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateMedicationNotAdministeredReasonObservationMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return MedicationNotAdministeredReasonObservationOperations.validateMedicationNotAdministeredReasonObservationMoodCode(this, diagnostics, context);
+	* @generated
+	*/
+	public boolean validateMedicationNotAdministeredReasonObservationMoodCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return MedicationNotAdministeredReasonObservationOperations.validateMedicationNotAdministeredReasonObservationMoodCode(
+			this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public MedicationNotAdministeredReasonObservation init() {
-	    return Initializer.Util.init(this);
+		return Initializer.Util.init(this);
 	}
-    /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public MedicationNotAdministeredReasonObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
-} //MedicationNotAdministeredReasonObservationImpl
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public MedicationNotAdministeredReasonObservation init(
+			Iterable<? extends Initializer<? extends EObject>> initializers) {
+		Initializer.Util.init(this, initializers);
+		return this;
+	}
+} // MedicationNotAdministeredReasonObservationImpl

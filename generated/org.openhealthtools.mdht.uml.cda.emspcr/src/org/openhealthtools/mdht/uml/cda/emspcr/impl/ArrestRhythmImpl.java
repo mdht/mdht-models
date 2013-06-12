@@ -35,58 +35,67 @@ import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
  */
 public class ArrestRhythmImpl extends ObservationImpl implements ArrestRhythm {
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	protected ArrestRhythmImpl() {
 		super();
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	@Override
 	protected EClass eStaticClass() {
 		return EmspcrPackage.Literals.ARREST_RHYTHM;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateArrestRhythmTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ArrestRhythmOperations.validateArrestRhythmTemplateId(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateArrestRhythmCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ArrestRhythmOperations.validateArrestRhythmCode(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateArrestRhythmValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ArrestRhythmOperations.validateArrestRhythmValue(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateArrestRhythmMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ArrestRhythmOperations.validateArrestRhythmMoodCode(this, diagnostics, context);
+	}
+
+	/**
+	* <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	* @generated
+	*/
+	public ArrestRhythm init() {
+		return Initializer.Util.init(this);
 	}
 
 	/**
@@ -94,16 +103,8 @@ public class ArrestRhythmImpl extends ObservationImpl implements ArrestRhythm {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ArrestRhythm init() {
-	    return Initializer.Util.init(this);
+	public ArrestRhythm init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+		Initializer.Util.init(this, initializers);
+		return this;
 	}
-    /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public ArrestRhythm init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
-} //ArrestRhythmImpl
+} // ArrestRhythmImpl

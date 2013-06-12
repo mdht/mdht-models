@@ -33,86 +33,98 @@ import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
  *
  * @generated
  */
-public class ProcedureNumberOfAttemptsObservationImpl extends ObservationImpl implements ProcedureNumberOfAttemptsObservation {
+public class ProcedureNumberOfAttemptsObservationImpl extends ObservationImpl implements
+		ProcedureNumberOfAttemptsObservation {
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	protected ProcedureNumberOfAttemptsObservationImpl() {
 		super();
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	@Override
 	protected EClass eStaticClass() {
 		return EmspcrPackage.Literals.PROCEDURE_NUMBER_OF_ATTEMPTS_OBSERVATION;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateProcedureNumberOfAttemptsObservationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProcedureNumberOfAttemptsObservationOperations.validateProcedureNumberOfAttemptsObservationTemplateId(this, diagnostics, context);
+	* @generated
+	*/
+	public boolean validateProcedureNumberOfAttemptsObservationTemplateId(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ProcedureNumberOfAttemptsObservationOperations.validateProcedureNumberOfAttemptsObservationTemplateId(
+			this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateProcedureNumberOfAttemptsObservationCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProcedureNumberOfAttemptsObservationOperations.validateProcedureNumberOfAttemptsObservationCodeP(this, diagnostics, context);
+	* @generated
+	*/
+	public boolean validateProcedureNumberOfAttemptsObservationCodeP(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ProcedureNumberOfAttemptsObservationOperations.validateProcedureNumberOfAttemptsObservationCodeP(
+			this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateProcedureNumberOfAttemptsObservationCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProcedureNumberOfAttemptsObservationOperations.validateProcedureNumberOfAttemptsObservationCode(this, diagnostics, context);
+	* @generated
+	*/
+	public boolean validateProcedureNumberOfAttemptsObservationCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ProcedureNumberOfAttemptsObservationOperations.validateProcedureNumberOfAttemptsObservationCode(
+			this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateProcedureNumberOfAttemptsObservationValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProcedureNumberOfAttemptsObservationOperations.validateProcedureNumberOfAttemptsObservationValue(this, diagnostics, context);
+	* @generated
+	*/
+	public boolean validateProcedureNumberOfAttemptsObservationValue(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ProcedureNumberOfAttemptsObservationOperations.validateProcedureNumberOfAttemptsObservationValue(
+			this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateProcedureNumberOfAttemptsObservationMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProcedureNumberOfAttemptsObservationOperations.validateProcedureNumberOfAttemptsObservationMoodCode(this, diagnostics, context);
+	* @generated
+	*/
+	public boolean validateProcedureNumberOfAttemptsObservationMoodCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ProcedureNumberOfAttemptsObservationOperations.validateProcedureNumberOfAttemptsObservationMoodCode(
+			this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public ProcedureNumberOfAttemptsObservation init() {
-	    return Initializer.Util.init(this);
+		return Initializer.Util.init(this);
 	}
-    /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public ProcedureNumberOfAttemptsObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
-} //ProcedureNumberOfAttemptsObservationImpl
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ProcedureNumberOfAttemptsObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+		Initializer.Util.init(this, initializers);
+		return this;
+	}
+} // ProcedureNumberOfAttemptsObservationImpl

@@ -35,40 +35,49 @@ import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
  */
 public class LocationTypeObservationImpl extends ObservationImpl implements LocationTypeObservation {
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	protected LocationTypeObservationImpl() {
 		super();
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	@Override
 	protected EClass eStaticClass() {
 		return EmspcrPackage.Literals.LOCATION_TYPE_OBSERVATION;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateLocationTypeObservationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return LocationTypeObservationOperations.validateLocationTypeObservationTemplateId(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateLocationTypeObservationCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return LocationTypeObservationOperations.validateLocationTypeObservationCode(this, diagnostics, context);
+	}
+
+	/**
+	* <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	* @generated
+	*/
+	public LocationTypeObservation init() {
+		return Initializer.Util.init(this);
 	}
 
 	/**
@@ -76,16 +85,8 @@ public class LocationTypeObservationImpl extends ObservationImpl implements Loca
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public LocationTypeObservation init() {
-	    return Initializer.Util.init(this);
+	public LocationTypeObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+		Initializer.Util.init(this, initializers);
+		return this;
 	}
-    /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public LocationTypeObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
-} //LocationTypeObservationImpl
+} // LocationTypeObservationImpl

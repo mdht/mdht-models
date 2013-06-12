@@ -35,67 +35,87 @@ import org.openhealthtools.mdht.uml.cda.emspcr.operations.HeartRateOperations;
  */
 public class HeartRateImpl extends VitalSignObservationImpl implements HeartRate {
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	protected HeartRateImpl() {
 		super();
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	@Override
 	protected EClass eStaticClass() {
 		return EmspcrPackage.Literals.HEART_RATE;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateHeartRateCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return HeartRateOperations.validateHeartRateCodeP(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateHeartRateCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return HeartRateOperations.validateHeartRateCode(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateHeartRateValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return HeartRateOperations.validateHeartRateValue(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateHeartRateEffectiveTime(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return HeartRateOperations.validateHeartRateEffectiveTime(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateHeartRateMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return HeartRateOperations.validateHeartRateMoodCode(this, diagnostics, context);
+	}
+
+	/**
+	* <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	* @generated
+	*/
+	@Override
+	public boolean validateVitalSignObservationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return HeartRateOperations.validateVitalSignObservationTemplateId(this, diagnostics, context);
+	}
+
+	/**
+	* <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	* @generated
+	*/
+	@Override
+	public HeartRate init() {
+		return Initializer.Util.init(this);
 	}
 
 	/**
@@ -104,25 +124,8 @@ public class HeartRateImpl extends VitalSignObservationImpl implements HeartRate
 	 * @generated
 	 */
 	@Override
-	public boolean validateVitalSignObservationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return HeartRateOperations.validateVitalSignObservationTemplateId(this, diagnostics, context);
+	public HeartRate init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+		Initializer.Util.init(this, initializers);
+		return this;
 	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public HeartRate init() {
-	    return Initializer.Util.init(this);
-	}
-    /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public HeartRate init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
-} //HeartRateImpl
+} // HeartRateImpl

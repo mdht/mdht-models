@@ -47,131 +47,133 @@ import org.openhealthtools.mdht.uml.cda.operations.ClinicalStatementOperations;
  */
 public class ProcedurePatientResponseObservationOperations extends ClinicalStatementOperations {
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	protected ProcedurePatientResponseObservationOperations() {
 		super();
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateProcedurePatientResponseObservationTemplateId(ProcedurePatientResponseObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Patient Response Observation Template Id</em>}' operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL expression body for the '{@link #validateProcedurePatientResponseObservationTemplateId(ProcedurePatientResponseObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Patient Response Observation Template Id</em>}' operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateProcedurePatientResponseObservationTemplateId(ProcedurePatientResponseObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validateProcedurePatientResponseObservationTemplateId(ProcedurePatientResponseObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 	protected static final String VALIDATE_PROCEDURE_PATIENT_RESPONSE_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.1133883.17.3.10.1.135')";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validateProcedurePatientResponseObservationTemplateId(ProcedurePatientResponseObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Patient Response Observation Template Id</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL invariant for the '{@link #validateProcedurePatientResponseObservationTemplateId(ProcedurePatientResponseObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Patient Response Observation Template Id</em>}' invariant operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateProcedurePatientResponseObservationTemplateId(ProcedurePatientResponseObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	
+	* @see #validateProcedurePatientResponseObservationTemplateId(ProcedurePatientResponseObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
+
 	protected static Constraint VALIDATE_PROCEDURE_PATIENT_RESPONSE_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param procedurePatientResponseObservation The receiving '<em><b>Procedure Patient Response Observation</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
-	
-	public static  boolean validateProcedurePatientResponseObservationTemplateId(ProcedurePatientResponseObservation procedurePatientResponseObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+	* <!-- begin-model-doc -->
+	* @param procedurePatientResponseObservation The receiving '<em><b>Procedure Patient Response Observation</b></em>' model object.
+	* @param diagnostics The chain of diagnostics to which problems are to be appended.
+	* @param context The cache of context-specific information.
+	* <!-- end-model-doc -->
+	* @generated
+	*/
+
+	public static boolean validateProcedurePatientResponseObservationTemplateId(
+			ProcedurePatientResponseObservation procedurePatientResponseObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+
 		if (VALIDATE_PROCEDURE_PATIENT_RESPONSE_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.PROCEDURE_PATIENT_RESPONSE_OBSERVATION);
 			try {
 				VALIDATE_PROCEDURE_PATIENT_RESPONSE_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PROCEDURE_PATIENT_RESPONSE_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PROCEDURE_PATIENT_RESPONSE_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(procedurePatientResponseObservation)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_PROCEDURE_PATIENT_RESPONSE_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			procedurePatientResponseObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.PROCEDURE_PATIENT_RESPONSE_OBSERVATION__PROCEDURE_PATIENT_RESPONSE_OBSERVATION_TEMPLATE_ID,
-						 EmspcrPlugin.INSTANCE.getString("ProcedurePatientResponseObservationTemplateId"),
-						 new Object [] { procedurePatientResponseObservation }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR,
+					EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.PROCEDURE_PATIENT_RESPONSE_OBSERVATION__PROCEDURE_PATIENT_RESPONSE_OBSERVATION_TEMPLATE_ID,
+					EmspcrPlugin.INSTANCE.getString("ProcedurePatientResponseObservationTemplateId"),
+					new Object[] { procedurePatientResponseObservation }));
 			}
-			 
+
 			return false;
 		}
 		return true;
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateProcedurePatientResponseObservationCodeP(ProcedurePatientResponseObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Patient Response Observation Code P</em>}' operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL expression body for the '{@link #validateProcedurePatientResponseObservationCodeP(ProcedurePatientResponseObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Patient Response Observation Code P</em>}' operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateProcedurePatientResponseObservationCodeP(ProcedurePatientResponseObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validateProcedurePatientResponseObservationCodeP(ProcedurePatientResponseObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 	protected static final String VALIDATE_PROCEDURE_PATIENT_RESPONSE_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined())";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validateProcedurePatientResponseObservationCodeP(ProcedurePatientResponseObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Patient Response Observation Code P</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL invariant for the '{@link #validateProcedurePatientResponseObservationCodeP(ProcedurePatientResponseObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Patient Response Observation Code P</em>}' invariant operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateProcedurePatientResponseObservationCodeP(ProcedurePatientResponseObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	
+	* @see #validateProcedurePatientResponseObservationCodeP(ProcedurePatientResponseObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
+
 	protected static Constraint VALIDATE_PROCEDURE_PATIENT_RESPONSE_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param procedurePatientResponseObservation The receiving '<em><b>Procedure Patient Response Observation</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
-	
-	public static  boolean validateProcedurePatientResponseObservationCodeP(ProcedurePatientResponseObservation procedurePatientResponseObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+	* <!-- begin-model-doc -->
+	* @param procedurePatientResponseObservation The receiving '<em><b>Procedure Patient Response Observation</b></em>' model object.
+	* @param diagnostics The chain of diagnostics to which problems are to be appended.
+	* @param context The cache of context-specific information.
+	* <!-- end-model-doc -->
+	* @generated
+	*/
+
+	public static boolean validateProcedurePatientResponseObservationCodeP(
+			ProcedurePatientResponseObservation procedurePatientResponseObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+
 		if (VALIDATE_PROCEDURE_PATIENT_RESPONSE_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.PROCEDURE_PATIENT_RESPONSE_OBSERVATION);
 			try {
 				VALIDATE_PROCEDURE_PATIENT_RESPONSE_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PROCEDURE_PATIENT_RESPONSE_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PROCEDURE_PATIENT_RESPONSE_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(procedurePatientResponseObservation)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_PROCEDURE_PATIENT_RESPONSE_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			procedurePatientResponseObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.PROCEDURE_PATIENT_RESPONSE_OBSERVATION__PROCEDURE_PATIENT_RESPONSE_OBSERVATION_CODE_P,
-						 EmspcrPlugin.INSTANCE.getString("ProcedurePatientResponseObservationCodeP"),
-						 new Object [] { procedurePatientResponseObservation }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR,
+					EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.PROCEDURE_PATIENT_RESPONSE_OBSERVATION__PROCEDURE_PATIENT_RESPONSE_OBSERVATION_CODE_P,
+					EmspcrPlugin.INSTANCE.getString("ProcedurePatientResponseObservationCodeP"),
+					new Object[] { procedurePatientResponseObservation }));
 			}
-			
+
 			if (context != null) {
 				// generate a pass token for my dependent constraints to short-circuit or filter results
 				@SuppressWarnings("unchecked")
@@ -179,265 +181,271 @@ public class ProcedurePatientResponseObservationOperations extends ClinicalState
 				if (passToken == null) {
 					// anticipate a reasonably healthy model
 					passToken = new java.util.ArrayList<Object>(3);
-					context.put("org.openhealthtools.mdht.uml.cda.emspcr.ProcedurePatientResponseObservationCodeP", passToken);
+					context.put(
+						"org.openhealthtools.mdht.uml.cda.emspcr.ProcedurePatientResponseObservationCodeP", passToken);
 				}
 				passToken.add(procedurePatientResponseObservation);
 			}
-			 
+
 			return false;
 		}
 		return true;
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateProcedurePatientResponseObservationCode(ProcedurePatientResponseObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Patient Response Observation Code</em>}' operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL expression body for the '{@link #validateProcedurePatientResponseObservationCode(ProcedurePatientResponseObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Patient Response Observation Code</em>}' operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateProcedurePatientResponseObservationCode(ProcedurePatientResponseObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String VALIDATE_PROCEDURE_PATIENT_RESPONSE_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "+
-"let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "+
-"value.code = '67546-2' and value.codeSystem = '2.16.840.1.113883.6.1')";
+	* @see #validateProcedurePatientResponseObservationCode(ProcedurePatientResponseObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
+	protected static final String VALIDATE_PROCEDURE_PATIENT_RESPONSE_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "
+			+ "let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "
+			+ "value.code = '67546-2' and value.codeSystem = '2.16.840.1.113883.6.1')";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validateProcedurePatientResponseObservationCode(ProcedurePatientResponseObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Patient Response Observation Code</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL invariant for the '{@link #validateProcedurePatientResponseObservationCode(ProcedurePatientResponseObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Patient Response Observation Code</em>}' invariant operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateProcedurePatientResponseObservationCode(ProcedurePatientResponseObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	
+	* @see #validateProcedurePatientResponseObservationCode(ProcedurePatientResponseObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
+
 	protected static Constraint VALIDATE_PROCEDURE_PATIENT_RESPONSE_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param procedurePatientResponseObservation The receiving '<em><b>Procedure Patient Response Observation</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
-	
-	public static  boolean validateProcedurePatientResponseObservationCode(ProcedurePatientResponseObservation procedurePatientResponseObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
-		Object passToken = (context == null) ? null : context.get("org.openhealthtools.mdht.uml.cda.emspcr.ProcedurePatientResponseObservationCodeP");
-		if ((passToken instanceof Collection<?>) && ((Collection<?>) passToken).contains(procedurePatientResponseObservation)) {
+	* <!-- begin-model-doc -->
+	* @param procedurePatientResponseObservation The receiving '<em><b>Procedure Patient Response Observation</b></em>' model object.
+	* @param diagnostics The chain of diagnostics to which problems are to be appended.
+	* @param context The cache of context-specific information.
+	* <!-- end-model-doc -->
+	* @generated
+	*/
+
+	public static boolean validateProcedurePatientResponseObservationCode(
+			ProcedurePatientResponseObservation procedurePatientResponseObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+
+		Object passToken = (context == null)
+				? null
+				: context.get("org.openhealthtools.mdht.uml.cda.emspcr.ProcedurePatientResponseObservationCodeP");
+		if ((passToken instanceof Collection<?>) &&
+				((Collection<?>) passToken).contains(procedurePatientResponseObservation)) {
 			// I have a free pass to short-circuit
 			return true;
 		}
-  	  
+
 		if (VALIDATE_PROCEDURE_PATIENT_RESPONSE_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.PROCEDURE_PATIENT_RESPONSE_OBSERVATION);
 			try {
 				VALIDATE_PROCEDURE_PATIENT_RESPONSE_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PROCEDURE_PATIENT_RESPONSE_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PROCEDURE_PATIENT_RESPONSE_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(procedurePatientResponseObservation)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PROCEDURE_PATIENT_RESPONSE_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			procedurePatientResponseObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.PROCEDURE_PATIENT_RESPONSE_OBSERVATION__PROCEDURE_PATIENT_RESPONSE_OBSERVATION_CODE,
-						 EmspcrPlugin.INSTANCE.getString("ProcedurePatientResponseObservationCode"),
-						 new Object [] { procedurePatientResponseObservation }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR,
+					EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.PROCEDURE_PATIENT_RESPONSE_OBSERVATION__PROCEDURE_PATIENT_RESPONSE_OBSERVATION_CODE,
+					EmspcrPlugin.INSTANCE.getString("ProcedurePatientResponseObservationCode"),
+					new Object[] { procedurePatientResponseObservation }));
 			}
-			 
+
 			return false;
 		}
 		return true;
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateProcedurePatientResponseObservationValue(ProcedurePatientResponseObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Patient Response Observation Value</em>}' operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL expression body for the '{@link #validateProcedurePatientResponseObservationValue(ProcedurePatientResponseObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Patient Response Observation Value</em>}' operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateProcedurePatientResponseObservationValue(ProcedurePatientResponseObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String VALIDATE_PROCEDURE_PATIENT_RESPONSE_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and "+
-"let value : datatypes::CD = element.oclAsType(datatypes::CD) in "+
-"value.codeSystem = '2.16.840.1.113883.6.1' and (value.code = 'LA11011-6' or value.code = 'LA17181-1' or value.code = 'LA65-8')))";
+	* @see #validateProcedurePatientResponseObservationValue(ProcedurePatientResponseObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
+	protected static final String VALIDATE_PROCEDURE_PATIENT_RESPONSE_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and "
+			+ "let value : datatypes::CD = element.oclAsType(datatypes::CD) in "
+			+ "value.codeSystem = '2.16.840.1.113883.6.1' and (value.code = 'LA11011-6' or value.code = 'LA17181-1' or value.code = 'LA65-8')))";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validateProcedurePatientResponseObservationValue(ProcedurePatientResponseObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Patient Response Observation Value</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL invariant for the '{@link #validateProcedurePatientResponseObservationValue(ProcedurePatientResponseObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Patient Response Observation Value</em>}' invariant operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateProcedurePatientResponseObservationValue(ProcedurePatientResponseObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	
+	* @see #validateProcedurePatientResponseObservationValue(ProcedurePatientResponseObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
+
 	protected static Constraint VALIDATE_PROCEDURE_PATIENT_RESPONSE_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param procedurePatientResponseObservation The receiving '<em><b>Procedure Patient Response Observation</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
-	
-	public static  boolean validateProcedurePatientResponseObservationValue(ProcedurePatientResponseObservation procedurePatientResponseObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+	* <!-- begin-model-doc -->
+	* @param procedurePatientResponseObservation The receiving '<em><b>Procedure Patient Response Observation</b></em>' model object.
+	* @param diagnostics The chain of diagnostics to which problems are to be appended.
+	* @param context The cache of context-specific information.
+	* <!-- end-model-doc -->
+	* @generated
+	*/
+
+	public static boolean validateProcedurePatientResponseObservationValue(
+			ProcedurePatientResponseObservation procedurePatientResponseObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+
 		if (VALIDATE_PROCEDURE_PATIENT_RESPONSE_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.PROCEDURE_PATIENT_RESPONSE_OBSERVATION);
 			try {
 				VALIDATE_PROCEDURE_PATIENT_RESPONSE_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PROCEDURE_PATIENT_RESPONSE_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PROCEDURE_PATIENT_RESPONSE_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(procedurePatientResponseObservation)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PROCEDURE_PATIENT_RESPONSE_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			procedurePatientResponseObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.PROCEDURE_PATIENT_RESPONSE_OBSERVATION__PROCEDURE_PATIENT_RESPONSE_OBSERVATION_VALUE,
-						 EmspcrPlugin.INSTANCE.getString("ProcedurePatientResponseObservationValue"),
-						 new Object [] { procedurePatientResponseObservation }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR,
+					EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.PROCEDURE_PATIENT_RESPONSE_OBSERVATION__PROCEDURE_PATIENT_RESPONSE_OBSERVATION_VALUE,
+					EmspcrPlugin.INSTANCE.getString("ProcedurePatientResponseObservationValue"),
+					new Object[] { procedurePatientResponseObservation }));
 			}
-			 
+
 			return false;
 		}
 		return true;
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateProcedurePatientResponseObservationValueP(ProcedurePatientResponseObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Patient Response Observation Value P</em>}' operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL expression body for the '{@link #validateProcedurePatientResponseObservationValueP(ProcedurePatientResponseObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Patient Response Observation Value P</em>}' operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateProcedurePatientResponseObservationValueP(ProcedurePatientResponseObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validateProcedurePatientResponseObservationValueP(ProcedurePatientResponseObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 	protected static final String VALIDATE_PROCEDURE_PATIENT_RESPONSE_OBSERVATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | element.oclIsTypeOf(datatypes::CD)))";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validateProcedurePatientResponseObservationValueP(ProcedurePatientResponseObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Patient Response Observation Value P</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL invariant for the '{@link #validateProcedurePatientResponseObservationValueP(ProcedurePatientResponseObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Patient Response Observation Value P</em>}' invariant operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateProcedurePatientResponseObservationValueP(ProcedurePatientResponseObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	
+	* @see #validateProcedurePatientResponseObservationValueP(ProcedurePatientResponseObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
+
 	protected static Constraint VALIDATE_PROCEDURE_PATIENT_RESPONSE_OBSERVATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param procedurePatientResponseObservation The receiving '<em><b>Procedure Patient Response Observation</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
-	
-	public static  boolean validateProcedurePatientResponseObservationValueP(ProcedurePatientResponseObservation procedurePatientResponseObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+	* <!-- begin-model-doc -->
+	* @param procedurePatientResponseObservation The receiving '<em><b>Procedure Patient Response Observation</b></em>' model object.
+	* @param diagnostics The chain of diagnostics to which problems are to be appended.
+	* @param context The cache of context-specific information.
+	* <!-- end-model-doc -->
+	* @generated
+	*/
+
+	public static boolean validateProcedurePatientResponseObservationValueP(
+			ProcedurePatientResponseObservation procedurePatientResponseObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+
 		if (VALIDATE_PROCEDURE_PATIENT_RESPONSE_OBSERVATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.PROCEDURE_PATIENT_RESPONSE_OBSERVATION);
 			try {
 				VALIDATE_PROCEDURE_PATIENT_RESPONSE_OBSERVATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PROCEDURE_PATIENT_RESPONSE_OBSERVATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PROCEDURE_PATIENT_RESPONSE_OBSERVATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(procedurePatientResponseObservation)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_PROCEDURE_PATIENT_RESPONSE_OBSERVATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			procedurePatientResponseObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.PROCEDURE_PATIENT_RESPONSE_OBSERVATION__PROCEDURE_PATIENT_RESPONSE_OBSERVATION_VALUE_P,
-						 EmspcrPlugin.INSTANCE.getString("ProcedurePatientResponseObservationValueP"),
-						 new Object [] { procedurePatientResponseObservation }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR,
+					EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.PROCEDURE_PATIENT_RESPONSE_OBSERVATION__PROCEDURE_PATIENT_RESPONSE_OBSERVATION_VALUE_P,
+					EmspcrPlugin.INSTANCE.getString("ProcedurePatientResponseObservationValueP"),
+					new Object[] { procedurePatientResponseObservation }));
 			}
-			 
+
 			return false;
 		}
 		return true;
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateProcedurePatientResponseObservationMoodCode(ProcedurePatientResponseObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Patient Response Observation Mood Code</em>}' operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL expression body for the '{@link #validateProcedurePatientResponseObservationMoodCode(ProcedurePatientResponseObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Patient Response Observation Mood Code</em>}' operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateProcedurePatientResponseObservationMoodCode(ProcedurePatientResponseObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validateProcedurePatientResponseObservationMoodCode(ProcedurePatientResponseObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 	protected static final String VALIDATE_PROCEDURE_PATIENT_RESPONSE_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "isDefined('moodCode')";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validateProcedurePatientResponseObservationMoodCode(ProcedurePatientResponseObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Patient Response Observation Mood Code</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL invariant for the '{@link #validateProcedurePatientResponseObservationMoodCode(ProcedurePatientResponseObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Patient Response Observation Mood Code</em>}' invariant operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateProcedurePatientResponseObservationMoodCode(ProcedurePatientResponseObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	
+	* @see #validateProcedurePatientResponseObservationMoodCode(ProcedurePatientResponseObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
+
 	protected static Constraint VALIDATE_PROCEDURE_PATIENT_RESPONSE_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param procedurePatientResponseObservation The receiving '<em><b>Procedure Patient Response Observation</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
-	
-	public static  boolean validateProcedurePatientResponseObservationMoodCode(ProcedurePatientResponseObservation procedurePatientResponseObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+	* <!-- begin-model-doc -->
+	* @param procedurePatientResponseObservation The receiving '<em><b>Procedure Patient Response Observation</b></em>' model object.
+	* @param diagnostics The chain of diagnostics to which problems are to be appended.
+	* @param context The cache of context-specific information.
+	* <!-- end-model-doc -->
+	* @generated
+	*/
+
+	public static boolean validateProcedurePatientResponseObservationMoodCode(
+			ProcedurePatientResponseObservation procedurePatientResponseObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+
 		if (VALIDATE_PROCEDURE_PATIENT_RESPONSE_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.PROCEDURE_PATIENT_RESPONSE_OBSERVATION);
 			try {
 				VALIDATE_PROCEDURE_PATIENT_RESPONSE_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PROCEDURE_PATIENT_RESPONSE_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PROCEDURE_PATIENT_RESPONSE_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(procedurePatientResponseObservation)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_PROCEDURE_PATIENT_RESPONSE_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			procedurePatientResponseObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.PROCEDURE_PATIENT_RESPONSE_OBSERVATION__PROCEDURE_PATIENT_RESPONSE_OBSERVATION_MOOD_CODE,
-						 EmspcrPlugin.INSTANCE.getString("ProcedurePatientResponseObservationMoodCode"),
-						 new Object [] { procedurePatientResponseObservation }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR,
+					EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.PROCEDURE_PATIENT_RESPONSE_OBSERVATION__PROCEDURE_PATIENT_RESPONSE_OBSERVATION_MOOD_CODE,
+					EmspcrPlugin.INSTANCE.getString("ProcedurePatientResponseObservationMoodCode"),
+					new Object[] { procedurePatientResponseObservation }));
 			}
-			 
+
 			return false;
 		}
 		return true;

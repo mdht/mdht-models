@@ -35,76 +35,85 @@ import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
  */
 public class BarriersToPatientCareImpl extends ObservationImpl implements BarriersToPatientCare {
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	protected BarriersToPatientCareImpl() {
 		super();
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	@Override
 	protected EClass eStaticClass() {
 		return EmspcrPackage.Literals.BARRIERS_TO_PATIENT_CARE;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateBarriersToPatientCareTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return BarriersToPatientCareOperations.validateBarriersToPatientCareTemplateId(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateBarriersToPatientCareCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return BarriersToPatientCareOperations.validateBarriersToPatientCareCodeP(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateBarriersToPatientCareCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return BarriersToPatientCareOperations.validateBarriersToPatientCareCode(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateBarriersToPatientCareValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return BarriersToPatientCareOperations.validateBarriersToPatientCareValue(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateBarriersToPatientCareValueP(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return BarriersToPatientCareOperations.validateBarriersToPatientCareValueP(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateBarriersToPatientCareMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return BarriersToPatientCareOperations.validateBarriersToPatientCareMoodCode(this, diagnostics, context);
+	}
+
+	/**
+	* <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	* @generated
+	*/
+	public BarriersToPatientCare init() {
+		return Initializer.Util.init(this);
 	}
 
 	/**
@@ -112,16 +121,8 @@ public class BarriersToPatientCareImpl extends ObservationImpl implements Barrie
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public BarriersToPatientCare init() {
-	    return Initializer.Util.init(this);
+	public BarriersToPatientCare init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+		Initializer.Util.init(this, initializers);
+		return this;
 	}
-    /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public BarriersToPatientCare init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
-} //BarriersToPatientCareImpl
+} // BarriersToPatientCareImpl

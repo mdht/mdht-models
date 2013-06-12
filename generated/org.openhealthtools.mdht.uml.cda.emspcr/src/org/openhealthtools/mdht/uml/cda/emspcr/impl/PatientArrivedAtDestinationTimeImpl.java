@@ -35,84 +35,92 @@ import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
  */
 public class PatientArrivedAtDestinationTimeImpl extends ObservationImpl implements PatientArrivedAtDestinationTime {
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	protected PatientArrivedAtDestinationTimeImpl() {
 		super();
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	@Override
 	protected EClass eStaticClass() {
 		return EmspcrPackage.Literals.PATIENT_ARRIVED_AT_DESTINATION_TIME;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validatePatientArrivedAtDestinationTimeTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PatientArrivedAtDestinationTimeOperations.validatePatientArrivedAtDestinationTimeTemplateId(this, diagnostics, context);
+	* @generated
+	*/
+	public boolean validatePatientArrivedAtDestinationTimeTemplateId(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return PatientArrivedAtDestinationTimeOperations.validatePatientArrivedAtDestinationTimeTemplateId(
+			this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validatePatientArrivedAtDestinationTimeCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PatientArrivedAtDestinationTimeOperations.validatePatientArrivedAtDestinationTimeCodeP(this, diagnostics, context);
+		return PatientArrivedAtDestinationTimeOperations.validatePatientArrivedAtDestinationTimeCodeP(
+			this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validatePatientArrivedAtDestinationTimeCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PatientArrivedAtDestinationTimeOperations.validatePatientArrivedAtDestinationTimeCode(this, diagnostics, context);
+		return PatientArrivedAtDestinationTimeOperations.validatePatientArrivedAtDestinationTimeCode(
+			this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validatePatientArrivedAtDestinationTimeValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PatientArrivedAtDestinationTimeOperations.validatePatientArrivedAtDestinationTimeValue(this, diagnostics, context);
+		return PatientArrivedAtDestinationTimeOperations.validatePatientArrivedAtDestinationTimeValue(
+			this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validatePatientArrivedAtDestinationTimeMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PatientArrivedAtDestinationTimeOperations.validatePatientArrivedAtDestinationTimeMoodCode(this, diagnostics, context);
+	* @generated
+	*/
+	public boolean validatePatientArrivedAtDestinationTimeMoodCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return PatientArrivedAtDestinationTimeOperations.validatePatientArrivedAtDestinationTimeMoodCode(
+			this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public PatientArrivedAtDestinationTime init() {
-	    return Initializer.Util.init(this);
+		return Initializer.Util.init(this);
 	}
-    /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public PatientArrivedAtDestinationTime init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
-} //PatientArrivedAtDestinationTimeImpl
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public PatientArrivedAtDestinationTime init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+		Initializer.Util.init(this, initializers);
+		return this;
+	}
+} // PatientArrivedAtDestinationTimeImpl

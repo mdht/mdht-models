@@ -46,131 +46,133 @@ import org.openhealthtools.mdht.uml.cda.operations.ClinicalStatementOperations;
  */
 public class MedicationPriorAdministrationObservationOperations extends ClinicalStatementOperations {
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	protected MedicationPriorAdministrationObservationOperations() {
 		super();
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateMedicationPriorAdministrationObservationTemplateId(MedicationPriorAdministrationObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Prior Administration Observation Template Id</em>}' operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL expression body for the '{@link #validateMedicationPriorAdministrationObservationTemplateId(MedicationPriorAdministrationObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Prior Administration Observation Template Id</em>}' operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateMedicationPriorAdministrationObservationTemplateId(MedicationPriorAdministrationObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validateMedicationPriorAdministrationObservationTemplateId(MedicationPriorAdministrationObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 	protected static final String VALIDATE_MEDICATION_PRIOR_ADMINISTRATION_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.1133883.17.3.10.1.108')";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validateMedicationPriorAdministrationObservationTemplateId(MedicationPriorAdministrationObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Prior Administration Observation Template Id</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL invariant for the '{@link #validateMedicationPriorAdministrationObservationTemplateId(MedicationPriorAdministrationObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Prior Administration Observation Template Id</em>}' invariant operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateMedicationPriorAdministrationObservationTemplateId(MedicationPriorAdministrationObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	
+	* @see #validateMedicationPriorAdministrationObservationTemplateId(MedicationPriorAdministrationObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
+
 	protected static Constraint VALIDATE_MEDICATION_PRIOR_ADMINISTRATION_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param medicationPriorAdministrationObservation The receiving '<em><b>Medication Prior Administration Observation</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
-	
-	public static  boolean validateMedicationPriorAdministrationObservationTemplateId(MedicationPriorAdministrationObservation medicationPriorAdministrationObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+	* <!-- begin-model-doc -->
+	* @param medicationPriorAdministrationObservation The receiving '<em><b>Medication Prior Administration Observation</b></em>' model object.
+	* @param diagnostics The chain of diagnostics to which problems are to be appended.
+	* @param context The cache of context-specific information.
+	* <!-- end-model-doc -->
+	* @generated
+	*/
+
+	public static boolean validateMedicationPriorAdministrationObservationTemplateId(
+			MedicationPriorAdministrationObservation medicationPriorAdministrationObservation,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_MEDICATION_PRIOR_ADMINISTRATION_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.MEDICATION_PRIOR_ADMINISTRATION_OBSERVATION);
 			try {
 				VALIDATE_MEDICATION_PRIOR_ADMINISTRATION_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MEDICATION_PRIOR_ADMINISTRATION_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_PRIOR_ADMINISTRATION_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(medicationPriorAdministrationObservation)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_MEDICATION_PRIOR_ADMINISTRATION_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			medicationPriorAdministrationObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.MEDICATION_PRIOR_ADMINISTRATION_OBSERVATION__MEDICATION_PRIOR_ADMINISTRATION_OBSERVATION_TEMPLATE_ID,
-						 EmspcrPlugin.INSTANCE.getString("MedicationPriorAdministrationObservationTemplateId"),
-						 new Object [] { medicationPriorAdministrationObservation }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR,
+					EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.MEDICATION_PRIOR_ADMINISTRATION_OBSERVATION__MEDICATION_PRIOR_ADMINISTRATION_OBSERVATION_TEMPLATE_ID,
+					EmspcrPlugin.INSTANCE.getString("MedicationPriorAdministrationObservationTemplateId"),
+					new Object[] { medicationPriorAdministrationObservation }));
 			}
-			 
+
 			return false;
 		}
 		return true;
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateMedicationPriorAdministrationObservationCodeP(MedicationPriorAdministrationObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Prior Administration Observation Code P</em>}' operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL expression body for the '{@link #validateMedicationPriorAdministrationObservationCodeP(MedicationPriorAdministrationObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Prior Administration Observation Code P</em>}' operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateMedicationPriorAdministrationObservationCodeP(MedicationPriorAdministrationObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validateMedicationPriorAdministrationObservationCodeP(MedicationPriorAdministrationObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 	protected static final String VALIDATE_MEDICATION_PRIOR_ADMINISTRATION_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined())";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validateMedicationPriorAdministrationObservationCodeP(MedicationPriorAdministrationObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Prior Administration Observation Code P</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL invariant for the '{@link #validateMedicationPriorAdministrationObservationCodeP(MedicationPriorAdministrationObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Prior Administration Observation Code P</em>}' invariant operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateMedicationPriorAdministrationObservationCodeP(MedicationPriorAdministrationObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	
+	* @see #validateMedicationPriorAdministrationObservationCodeP(MedicationPriorAdministrationObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
+
 	protected static Constraint VALIDATE_MEDICATION_PRIOR_ADMINISTRATION_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param medicationPriorAdministrationObservation The receiving '<em><b>Medication Prior Administration Observation</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
-	
-	public static  boolean validateMedicationPriorAdministrationObservationCodeP(MedicationPriorAdministrationObservation medicationPriorAdministrationObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+	* <!-- begin-model-doc -->
+	* @param medicationPriorAdministrationObservation The receiving '<em><b>Medication Prior Administration Observation</b></em>' model object.
+	* @param diagnostics The chain of diagnostics to which problems are to be appended.
+	* @param context The cache of context-specific information.
+	* <!-- end-model-doc -->
+	* @generated
+	*/
+
+	public static boolean validateMedicationPriorAdministrationObservationCodeP(
+			MedicationPriorAdministrationObservation medicationPriorAdministrationObservation,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_MEDICATION_PRIOR_ADMINISTRATION_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.MEDICATION_PRIOR_ADMINISTRATION_OBSERVATION);
 			try {
 				VALIDATE_MEDICATION_PRIOR_ADMINISTRATION_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MEDICATION_PRIOR_ADMINISTRATION_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_PRIOR_ADMINISTRATION_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(medicationPriorAdministrationObservation)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_MEDICATION_PRIOR_ADMINISTRATION_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			medicationPriorAdministrationObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.MEDICATION_PRIOR_ADMINISTRATION_OBSERVATION__MEDICATION_PRIOR_ADMINISTRATION_OBSERVATION_CODE_P,
-						 EmspcrPlugin.INSTANCE.getString("MedicationPriorAdministrationObservationCodeP"),
-						 new Object [] { medicationPriorAdministrationObservation }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR,
+					EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.MEDICATION_PRIOR_ADMINISTRATION_OBSERVATION__MEDICATION_PRIOR_ADMINISTRATION_OBSERVATION_CODE_P,
+					EmspcrPlugin.INSTANCE.getString("MedicationPriorAdministrationObservationCodeP"),
+					new Object[] { medicationPriorAdministrationObservation }));
 			}
-			
+
 			if (context != null) {
 				// generate a pass token for my dependent constraints to short-circuit or filter results
 				@SuppressWarnings("unchecked")
@@ -178,202 +180,210 @@ public class MedicationPriorAdministrationObservationOperations extends Clinical
 				if (passToken == null) {
 					// anticipate a reasonably healthy model
 					passToken = new java.util.ArrayList<Object>(3);
-					context.put("org.openhealthtools.mdht.uml.cda.emspcr.MedicationPriorAdministrationObservationCodeP", passToken);
+					context.put(
+						"org.openhealthtools.mdht.uml.cda.emspcr.MedicationPriorAdministrationObservationCodeP",
+						passToken);
 				}
 				passToken.add(medicationPriorAdministrationObservation);
 			}
-			 
+
 			return false;
 		}
 		return true;
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateMedicationPriorAdministrationObservationCode(MedicationPriorAdministrationObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Prior Administration Observation Code</em>}' operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL expression body for the '{@link #validateMedicationPriorAdministrationObservationCode(MedicationPriorAdministrationObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Prior Administration Observation Code</em>}' operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateMedicationPriorAdministrationObservationCode(MedicationPriorAdministrationObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String VALIDATE_MEDICATION_PRIOR_ADMINISTRATION_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "+
-"let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "+
-"value.code = '67539-7' and value.codeSystem = '2.16.840.1.113883.6.1')";
+	* @see #validateMedicationPriorAdministrationObservationCode(MedicationPriorAdministrationObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
+	protected static final String VALIDATE_MEDICATION_PRIOR_ADMINISTRATION_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "
+			+ "let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "
+			+ "value.code = '67539-7' and value.codeSystem = '2.16.840.1.113883.6.1')";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validateMedicationPriorAdministrationObservationCode(MedicationPriorAdministrationObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Prior Administration Observation Code</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL invariant for the '{@link #validateMedicationPriorAdministrationObservationCode(MedicationPriorAdministrationObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Prior Administration Observation Code</em>}' invariant operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateMedicationPriorAdministrationObservationCode(MedicationPriorAdministrationObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	
+	* @see #validateMedicationPriorAdministrationObservationCode(MedicationPriorAdministrationObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
+
 	protected static Constraint VALIDATE_MEDICATION_PRIOR_ADMINISTRATION_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param medicationPriorAdministrationObservation The receiving '<em><b>Medication Prior Administration Observation</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
-	
-	public static  boolean validateMedicationPriorAdministrationObservationCode(MedicationPriorAdministrationObservation medicationPriorAdministrationObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
-		Object passToken = (context == null) ? null : context.get("org.openhealthtools.mdht.uml.cda.emspcr.MedicationPriorAdministrationObservationCodeP");
-		if ((passToken instanceof Collection<?>) && ((Collection<?>) passToken).contains(medicationPriorAdministrationObservation)) {
+	* <!-- begin-model-doc -->
+	* @param medicationPriorAdministrationObservation The receiving '<em><b>Medication Prior Administration Observation</b></em>' model object.
+	* @param diagnostics The chain of diagnostics to which problems are to be appended.
+	* @param context The cache of context-specific information.
+	* <!-- end-model-doc -->
+	* @generated
+	*/
+
+	public static boolean validateMedicationPriorAdministrationObservationCode(
+			MedicationPriorAdministrationObservation medicationPriorAdministrationObservation,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		Object passToken = (context == null)
+				? null
+				: context.get("org.openhealthtools.mdht.uml.cda.emspcr.MedicationPriorAdministrationObservationCodeP");
+		if ((passToken instanceof Collection<?>) &&
+				((Collection<?>) passToken).contains(medicationPriorAdministrationObservation)) {
 			// I have a free pass to short-circuit
 			return true;
 		}
-  	  
+
 		if (VALIDATE_MEDICATION_PRIOR_ADMINISTRATION_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.MEDICATION_PRIOR_ADMINISTRATION_OBSERVATION);
 			try {
 				VALIDATE_MEDICATION_PRIOR_ADMINISTRATION_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MEDICATION_PRIOR_ADMINISTRATION_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_PRIOR_ADMINISTRATION_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(medicationPriorAdministrationObservation)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_MEDICATION_PRIOR_ADMINISTRATION_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			medicationPriorAdministrationObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.MEDICATION_PRIOR_ADMINISTRATION_OBSERVATION__MEDICATION_PRIOR_ADMINISTRATION_OBSERVATION_CODE,
-						 EmspcrPlugin.INSTANCE.getString("MedicationPriorAdministrationObservationCode"),
-						 new Object [] { medicationPriorAdministrationObservation }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR,
+					EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.MEDICATION_PRIOR_ADMINISTRATION_OBSERVATION__MEDICATION_PRIOR_ADMINISTRATION_OBSERVATION_CODE,
+					EmspcrPlugin.INSTANCE.getString("MedicationPriorAdministrationObservationCode"),
+					new Object[] { medicationPriorAdministrationObservation }));
 			}
-			 
+
 			return false;
 		}
 		return true;
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateMedicationPriorAdministrationObservationValue(MedicationPriorAdministrationObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Prior Administration Observation Value</em>}' operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL expression body for the '{@link #validateMedicationPriorAdministrationObservationValue(MedicationPriorAdministrationObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Prior Administration Observation Value</em>}' operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateMedicationPriorAdministrationObservationValue(MedicationPriorAdministrationObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validateMedicationPriorAdministrationObservationValue(MedicationPriorAdministrationObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 	protected static final String VALIDATE_MEDICATION_PRIOR_ADMINISTRATION_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | element.oclIsTypeOf(datatypes::BL)))";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validateMedicationPriorAdministrationObservationValue(MedicationPriorAdministrationObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Prior Administration Observation Value</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL invariant for the '{@link #validateMedicationPriorAdministrationObservationValue(MedicationPriorAdministrationObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Prior Administration Observation Value</em>}' invariant operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateMedicationPriorAdministrationObservationValue(MedicationPriorAdministrationObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	
+	* @see #validateMedicationPriorAdministrationObservationValue(MedicationPriorAdministrationObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
+
 	protected static Constraint VALIDATE_MEDICATION_PRIOR_ADMINISTRATION_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param medicationPriorAdministrationObservation The receiving '<em><b>Medication Prior Administration Observation</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
-	
-	public static  boolean validateMedicationPriorAdministrationObservationValue(MedicationPriorAdministrationObservation medicationPriorAdministrationObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+	* <!-- begin-model-doc -->
+	* @param medicationPriorAdministrationObservation The receiving '<em><b>Medication Prior Administration Observation</b></em>' model object.
+	* @param diagnostics The chain of diagnostics to which problems are to be appended.
+	* @param context The cache of context-specific information.
+	* <!-- end-model-doc -->
+	* @generated
+	*/
+
+	public static boolean validateMedicationPriorAdministrationObservationValue(
+			MedicationPriorAdministrationObservation medicationPriorAdministrationObservation,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_MEDICATION_PRIOR_ADMINISTRATION_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.MEDICATION_PRIOR_ADMINISTRATION_OBSERVATION);
 			try {
 				VALIDATE_MEDICATION_PRIOR_ADMINISTRATION_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MEDICATION_PRIOR_ADMINISTRATION_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_PRIOR_ADMINISTRATION_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(medicationPriorAdministrationObservation)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_MEDICATION_PRIOR_ADMINISTRATION_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			medicationPriorAdministrationObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.MEDICATION_PRIOR_ADMINISTRATION_OBSERVATION__MEDICATION_PRIOR_ADMINISTRATION_OBSERVATION_VALUE,
-						 EmspcrPlugin.INSTANCE.getString("MedicationPriorAdministrationObservationValue"),
-						 new Object [] { medicationPriorAdministrationObservation }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR,
+					EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.MEDICATION_PRIOR_ADMINISTRATION_OBSERVATION__MEDICATION_PRIOR_ADMINISTRATION_OBSERVATION_VALUE,
+					EmspcrPlugin.INSTANCE.getString("MedicationPriorAdministrationObservationValue"),
+					new Object[] { medicationPriorAdministrationObservation }));
 			}
-			 
+
 			return false;
 		}
 		return true;
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateMedicationPriorAdministrationObservationMoodCode(MedicationPriorAdministrationObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Prior Administration Observation Mood Code</em>}' operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL expression body for the '{@link #validateMedicationPriorAdministrationObservationMoodCode(MedicationPriorAdministrationObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Prior Administration Observation Mood Code</em>}' operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateMedicationPriorAdministrationObservationMoodCode(MedicationPriorAdministrationObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validateMedicationPriorAdministrationObservationMoodCode(MedicationPriorAdministrationObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 	protected static final String VALIDATE_MEDICATION_PRIOR_ADMINISTRATION_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "isDefined('moodCode')";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validateMedicationPriorAdministrationObservationMoodCode(MedicationPriorAdministrationObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Prior Administration Observation Mood Code</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL invariant for the '{@link #validateMedicationPriorAdministrationObservationMoodCode(MedicationPriorAdministrationObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Prior Administration Observation Mood Code</em>}' invariant operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateMedicationPriorAdministrationObservationMoodCode(MedicationPriorAdministrationObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	
+	* @see #validateMedicationPriorAdministrationObservationMoodCode(MedicationPriorAdministrationObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
+
 	protected static Constraint VALIDATE_MEDICATION_PRIOR_ADMINISTRATION_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param medicationPriorAdministrationObservation The receiving '<em><b>Medication Prior Administration Observation</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
-	
-	public static  boolean validateMedicationPriorAdministrationObservationMoodCode(MedicationPriorAdministrationObservation medicationPriorAdministrationObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+	* <!-- begin-model-doc -->
+	* @param medicationPriorAdministrationObservation The receiving '<em><b>Medication Prior Administration Observation</b></em>' model object.
+	* @param diagnostics The chain of diagnostics to which problems are to be appended.
+	* @param context The cache of context-specific information.
+	* <!-- end-model-doc -->
+	* @generated
+	*/
+
+	public static boolean validateMedicationPriorAdministrationObservationMoodCode(
+			MedicationPriorAdministrationObservation medicationPriorAdministrationObservation,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_MEDICATION_PRIOR_ADMINISTRATION_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.MEDICATION_PRIOR_ADMINISTRATION_OBSERVATION);
 			try {
 				VALIDATE_MEDICATION_PRIOR_ADMINISTRATION_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MEDICATION_PRIOR_ADMINISTRATION_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_PRIOR_ADMINISTRATION_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(medicationPriorAdministrationObservation)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_MEDICATION_PRIOR_ADMINISTRATION_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			medicationPriorAdministrationObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.MEDICATION_PRIOR_ADMINISTRATION_OBSERVATION__MEDICATION_PRIOR_ADMINISTRATION_OBSERVATION_MOOD_CODE,
-						 EmspcrPlugin.INSTANCE.getString("MedicationPriorAdministrationObservationMoodCode"),
-						 new Object [] { medicationPriorAdministrationObservation }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR,
+					EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.MEDICATION_PRIOR_ADMINISTRATION_OBSERVATION__MEDICATION_PRIOR_ADMINISTRATION_OBSERVATION_MOOD_CODE,
+					EmspcrPlugin.INSTANCE.getString("MedicationPriorAdministrationObservationMoodCode"),
+					new Object[] { medicationPriorAdministrationObservation }));
 			}
-			 
+
 			return false;
 		}
 		return true;

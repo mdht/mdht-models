@@ -35,58 +35,67 @@ import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
  */
 public class OxygenSaturationImpl extends ObservationImpl implements OxygenSaturation {
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	protected OxygenSaturationImpl() {
 		super();
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	@Override
 	protected EClass eStaticClass() {
 		return EmspcrPackage.Literals.OXYGEN_SATURATION;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateOxygenSaturationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return OxygenSaturationOperations.validateOxygenSaturationTemplateId(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateOxygenSaturationCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return OxygenSaturationOperations.validateOxygenSaturationCode(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateOxygenSaturationValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return OxygenSaturationOperations.validateOxygenSaturationValue(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateOxygenSaturationMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return OxygenSaturationOperations.validateOxygenSaturationMoodCode(this, diagnostics, context);
+	}
+
+	/**
+	* <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	* @generated
+	*/
+	public OxygenSaturation init() {
+		return Initializer.Util.init(this);
 	}
 
 	/**
@@ -94,16 +103,8 @@ public class OxygenSaturationImpl extends ObservationImpl implements OxygenSatur
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public OxygenSaturation init() {
-	    return Initializer.Util.init(this);
+	public OxygenSaturation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+		Initializer.Util.init(this, initializers);
+		return this;
 	}
-    /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public OxygenSaturation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
-} //OxygenSaturationImpl
+} // OxygenSaturationImpl

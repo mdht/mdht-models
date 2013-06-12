@@ -35,58 +35,67 @@ import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
  */
 public class CardiacArrestTimingImpl extends ObservationImpl implements CardiacArrestTiming {
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	protected CardiacArrestTimingImpl() {
 		super();
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	@Override
 	protected EClass eStaticClass() {
 		return EmspcrPackage.Literals.CARDIAC_ARREST_TIMING;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateCardiacArrestTimingTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return CardiacArrestTimingOperations.validateCardiacArrestTimingTemplateId(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateCardiacArrestTimingCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return CardiacArrestTimingOperations.validateCardiacArrestTimingCode(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateCardiacArrestTimingValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return CardiacArrestTimingOperations.validateCardiacArrestTimingValue(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateCardiacArrestTimingMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return CardiacArrestTimingOperations.validateCardiacArrestTimingMoodCode(this, diagnostics, context);
+	}
+
+	/**
+	* <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	* @generated
+	*/
+	public CardiacArrestTiming init() {
+		return Initializer.Util.init(this);
 	}
 
 	/**
@@ -94,16 +103,8 @@ public class CardiacArrestTimingImpl extends ObservationImpl implements CardiacA
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CardiacArrestTiming init() {
-	    return Initializer.Util.init(this);
+	public CardiacArrestTiming init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+		Initializer.Util.init(this, initializers);
+		return this;
 	}
-    /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public CardiacArrestTiming init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
-} //CardiacArrestTimingImpl
+} // CardiacArrestTimingImpl

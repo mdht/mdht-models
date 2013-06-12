@@ -35,67 +35,76 @@ import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
  */
 public class DispatchNotifiedTimeImpl extends ObservationImpl implements DispatchNotifiedTime {
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	protected DispatchNotifiedTimeImpl() {
 		super();
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	@Override
 	protected EClass eStaticClass() {
 		return EmspcrPackage.Literals.DISPATCH_NOTIFIED_TIME;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateDispatchNotifiedTimeTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return DispatchNotifiedTimeOperations.validateDispatchNotifiedTimeTemplateId(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateDispatchNotifiedTimeCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return DispatchNotifiedTimeOperations.validateDispatchNotifiedTimeCodeP(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateDispatchNotifiedTimeCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return DispatchNotifiedTimeOperations.validateDispatchNotifiedTimeCode(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateDispatchNotifiedTimeValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return DispatchNotifiedTimeOperations.validateDispatchNotifiedTimeValue(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateDispatchNotifiedTimeMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return DispatchNotifiedTimeOperations.validateDispatchNotifiedTimeMoodCode(this, diagnostics, context);
+	}
+
+	/**
+	* <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	* @generated
+	*/
+	public DispatchNotifiedTime init() {
+		return Initializer.Util.init(this);
 	}
 
 	/**
@@ -103,16 +112,8 @@ public class DispatchNotifiedTimeImpl extends ObservationImpl implements Dispatc
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public DispatchNotifiedTime init() {
-	    return Initializer.Util.init(this);
+	public DispatchNotifiedTime init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+		Initializer.Util.init(this, initializers);
+		return this;
 	}
-    /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public DispatchNotifiedTime init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
-} //DispatchNotifiedTimeImpl
+} // DispatchNotifiedTimeImpl

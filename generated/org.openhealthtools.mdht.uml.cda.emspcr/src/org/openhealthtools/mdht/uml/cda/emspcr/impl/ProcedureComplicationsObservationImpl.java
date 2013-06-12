@@ -35,84 +35,95 @@ import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
  */
 public class ProcedureComplicationsObservationImpl extends ObservationImpl implements ProcedureComplicationsObservation {
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	protected ProcedureComplicationsObservationImpl() {
 		super();
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	@Override
 	protected EClass eStaticClass() {
 		return EmspcrPackage.Literals.PROCEDURE_COMPLICATIONS_OBSERVATION;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateProcedureComplicationsObservationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProcedureComplicationsObservationOperations.validateProcedureComplicationsObservationTemplateId(this, diagnostics, context);
+	* @generated
+	*/
+	public boolean validateProcedureComplicationsObservationTemplateId(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ProcedureComplicationsObservationOperations.validateProcedureComplicationsObservationTemplateId(
+			this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateProcedureComplicationsObservationCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProcedureComplicationsObservationOperations.validateProcedureComplicationsObservationCodeP(this, diagnostics, context);
+	* @generated
+	*/
+	public boolean validateProcedureComplicationsObservationCodeP(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ProcedureComplicationsObservationOperations.validateProcedureComplicationsObservationCodeP(
+			this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateProcedureComplicationsObservationCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProcedureComplicationsObservationOperations.validateProcedureComplicationsObservationCode(this, diagnostics, context);
+	* @generated
+	*/
+	public boolean validateProcedureComplicationsObservationCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ProcedureComplicationsObservationOperations.validateProcedureComplicationsObservationCode(
+			this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateProcedureComplicationsObservationValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProcedureComplicationsObservationOperations.validateProcedureComplicationsObservationValue(this, diagnostics, context);
+	* @generated
+	*/
+	public boolean validateProcedureComplicationsObservationValue(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ProcedureComplicationsObservationOperations.validateProcedureComplicationsObservationValue(
+			this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateProcedureComplicationsObservationMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProcedureComplicationsObservationOperations.validateProcedureComplicationsObservationMoodCode(this, diagnostics, context);
+	* @generated
+	*/
+	public boolean validateProcedureComplicationsObservationMoodCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ProcedureComplicationsObservationOperations.validateProcedureComplicationsObservationMoodCode(
+			this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public ProcedureComplicationsObservation init() {
-	    return Initializer.Util.init(this);
+		return Initializer.Util.init(this);
 	}
-    /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public ProcedureComplicationsObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
-} //ProcedureComplicationsObservationImpl
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ProcedureComplicationsObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+		Initializer.Util.init(this, initializers);
+		return this;
+	}
+} // ProcedureComplicationsObservationImpl

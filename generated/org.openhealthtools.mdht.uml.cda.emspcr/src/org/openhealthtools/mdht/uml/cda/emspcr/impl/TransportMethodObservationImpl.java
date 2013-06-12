@@ -35,76 +35,87 @@ import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
  */
 public class TransportMethodObservationImpl extends ObservationImpl implements TransportMethodObservation {
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	protected TransportMethodObservationImpl() {
 		super();
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	@Override
 	protected EClass eStaticClass() {
 		return EmspcrPackage.Literals.TRANSPORT_METHOD_OBSERVATION;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateTransportMethodObservationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return TransportMethodObservationOperations.validateTransportMethodObservationTemplateId(this, diagnostics, context);
+		return TransportMethodObservationOperations.validateTransportMethodObservationTemplateId(
+			this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateTransportMethodObservationCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return TransportMethodObservationOperations.validateTransportMethodObservationCodeP(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateTransportMethodObservationCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return TransportMethodObservationOperations.validateTransportMethodObservationCode(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateTransportMethodObservationValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return TransportMethodObservationOperations.validateTransportMethodObservationValue(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateTransportMethodObservationValueP(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return TransportMethodObservationOperations.validateTransportMethodObservationValueP(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateTransportMethodObservationMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return TransportMethodObservationOperations.validateTransportMethodObservationMoodCode(this, diagnostics, context);
+		return TransportMethodObservationOperations.validateTransportMethodObservationMoodCode(
+			this, diagnostics, context);
+	}
+
+	/**
+	* <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	* @generated
+	*/
+	public TransportMethodObservation init() {
+		return Initializer.Util.init(this);
 	}
 
 	/**
@@ -112,16 +123,8 @@ public class TransportMethodObservationImpl extends ObservationImpl implements T
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public TransportMethodObservation init() {
-	    return Initializer.Util.init(this);
+	public TransportMethodObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+		Initializer.Util.init(this, initializers);
+		return this;
 	}
-    /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public TransportMethodObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
-} //TransportMethodObservationImpl
+} // TransportMethodObservationImpl

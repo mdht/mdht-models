@@ -35,75 +35,84 @@ import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
  */
 public class ExistenceOfDrugAllergyObservationImpl extends ObservationImpl implements ExistenceOfDrugAllergyObservation {
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	protected ExistenceOfDrugAllergyObservationImpl() {
 		super();
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	@Override
 	protected EClass eStaticClass() {
 		return EmspcrPackage.Literals.EXISTENCE_OF_DRUG_ALLERGY_OBSERVATION;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateExistenceOfDrugAllergyObservationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ExistenceOfDrugAllergyObservationOperations.validateExistenceOfDrugAllergyObservationTemplateId(this, diagnostics, context);
+	* @generated
+	*/
+	public boolean validateExistenceOfDrugAllergyObservationTemplateId(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ExistenceOfDrugAllergyObservationOperations.validateExistenceOfDrugAllergyObservationTemplateId(
+			this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateExistenceOfDrugAllergyObservationCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ExistenceOfDrugAllergyObservationOperations.validateExistenceOfDrugAllergyObservationCode(this, diagnostics, context);
+	* @generated
+	*/
+	public boolean validateExistenceOfDrugAllergyObservationCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ExistenceOfDrugAllergyObservationOperations.validateExistenceOfDrugAllergyObservationCode(
+			this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateExistenceOfDrugAllergyObservationValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ExistenceOfDrugAllergyObservationOperations.validateExistenceOfDrugAllergyObservationValue(this, diagnostics, context);
+	* @generated
+	*/
+	public boolean validateExistenceOfDrugAllergyObservationValue(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ExistenceOfDrugAllergyObservationOperations.validateExistenceOfDrugAllergyObservationValue(
+			this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateExistenceOfDrugAllergyObservationMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ExistenceOfDrugAllergyObservationOperations.validateExistenceOfDrugAllergyObservationMoodCode(this, diagnostics, context);
+	* @generated
+	*/
+	public boolean validateExistenceOfDrugAllergyObservationMoodCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ExistenceOfDrugAllergyObservationOperations.validateExistenceOfDrugAllergyObservationMoodCode(
+			this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public ExistenceOfDrugAllergyObservation init() {
-	    return Initializer.Util.init(this);
+		return Initializer.Util.init(this);
 	}
-    /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public ExistenceOfDrugAllergyObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
-} //ExistenceOfDrugAllergyObservationImpl
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ExistenceOfDrugAllergyObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+		Initializer.Util.init(this, initializers);
+		return this;
+	}
+} // ExistenceOfDrugAllergyObservationImpl

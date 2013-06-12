@@ -47,131 +47,124 @@ import org.openhealthtools.mdht.uml.cda.operations.ClinicalStatementOperations;
  */
 public class CarbonMonoxideOperations extends ClinicalStatementOperations {
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	protected CarbonMonoxideOperations() {
 		super();
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateCarbonMonoxideTemplateId(CarbonMonoxide, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Carbon Monoxide Template Id</em>}' operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL expression body for the '{@link #validateCarbonMonoxideTemplateId(CarbonMonoxide, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Carbon Monoxide Template Id</em>}' operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateCarbonMonoxideTemplateId(CarbonMonoxide, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validateCarbonMonoxideTemplateId(CarbonMonoxide, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 	protected static final String VALIDATE_CARBON_MONOXIDE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.1133883.17.3.10.1.167')";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validateCarbonMonoxideTemplateId(CarbonMonoxide, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Carbon Monoxide Template Id</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL invariant for the '{@link #validateCarbonMonoxideTemplateId(CarbonMonoxide, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Carbon Monoxide Template Id</em>}' invariant operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateCarbonMonoxideTemplateId(CarbonMonoxide, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	
+	* @see #validateCarbonMonoxideTemplateId(CarbonMonoxide, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
+
 	protected static Constraint VALIDATE_CARBON_MONOXIDE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param carbonMonoxide The receiving '<em><b>Carbon Monoxide</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
-	
-	public static  boolean validateCarbonMonoxideTemplateId(CarbonMonoxide carbonMonoxide, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+	* <!-- begin-model-doc -->
+	* @param carbonMonoxide The receiving '<em><b>Carbon Monoxide</b></em>' model object.
+	* @param diagnostics The chain of diagnostics to which problems are to be appended.
+	* @param context The cache of context-specific information.
+	* <!-- end-model-doc -->
+	* @generated
+	*/
+
+	public static boolean validateCarbonMonoxideTemplateId(CarbonMonoxide carbonMonoxide, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+
 		if (VALIDATE_CARBON_MONOXIDE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.CARBON_MONOXIDE);
 			try {
 				VALIDATE_CARBON_MONOXIDE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CARBON_MONOXIDE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_CARBON_MONOXIDE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(carbonMonoxide)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_CARBON_MONOXIDE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			carbonMonoxide)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.CARBON_MONOXIDE__CARBON_MONOXIDE_TEMPLATE_ID,
-						 EmspcrPlugin.INSTANCE.getString("CarbonMonoxideTemplateId"),
-						 new Object [] { carbonMonoxide }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.CARBON_MONOXIDE__CARBON_MONOXIDE_TEMPLATE_ID,
+					EmspcrPlugin.INSTANCE.getString("CarbonMonoxideTemplateId"), new Object[] { carbonMonoxide }));
 			}
-			 
+
 			return false;
 		}
 		return true;
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateCarbonMonoxideCodeP(CarbonMonoxide, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Carbon Monoxide Code P</em>}' operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL expression body for the '{@link #validateCarbonMonoxideCodeP(CarbonMonoxide, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Carbon Monoxide Code P</em>}' operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateCarbonMonoxideCodeP(CarbonMonoxide, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validateCarbonMonoxideCodeP(CarbonMonoxide, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 	protected static final String VALIDATE_CARBON_MONOXIDE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined())";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validateCarbonMonoxideCodeP(CarbonMonoxide, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Carbon Monoxide Code P</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL invariant for the '{@link #validateCarbonMonoxideCodeP(CarbonMonoxide, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Carbon Monoxide Code P</em>}' invariant operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateCarbonMonoxideCodeP(CarbonMonoxide, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	
+	* @see #validateCarbonMonoxideCodeP(CarbonMonoxide, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
+
 	protected static Constraint VALIDATE_CARBON_MONOXIDE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param carbonMonoxide The receiving '<em><b>Carbon Monoxide</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
-	
-	public static  boolean validateCarbonMonoxideCodeP(CarbonMonoxide carbonMonoxide, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+	* <!-- begin-model-doc -->
+	* @param carbonMonoxide The receiving '<em><b>Carbon Monoxide</b></em>' model object.
+	* @param diagnostics The chain of diagnostics to which problems are to be appended.
+	* @param context The cache of context-specific information.
+	* <!-- end-model-doc -->
+	* @generated
+	*/
+
+	public static boolean validateCarbonMonoxideCodeP(CarbonMonoxide carbonMonoxide, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+
 		if (VALIDATE_CARBON_MONOXIDE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.CARBON_MONOXIDE);
 			try {
 				VALIDATE_CARBON_MONOXIDE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CARBON_MONOXIDE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(VALIDATE_CARBON_MONOXIDE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(carbonMonoxide)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.CARBON_MONOXIDE__CARBON_MONOXIDE_CODE_P,
-						 EmspcrPlugin.INSTANCE.getString("CarbonMonoxideCodeP"),
-						 new Object [] { carbonMonoxide }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.CARBON_MONOXIDE__CARBON_MONOXIDE_CODE_P,
+					EmspcrPlugin.INSTANCE.getString("CarbonMonoxideCodeP"), new Object[] { carbonMonoxide }));
 			}
-			
+
 			if (context != null) {
 				// generate a pass token for my dependent constraints to short-circuit or filter results
 				@SuppressWarnings("unchecked")
@@ -183,259 +176,247 @@ public class CarbonMonoxideOperations extends ClinicalStatementOperations {
 				}
 				passToken.add(carbonMonoxide);
 			}
-			 
+
 			return false;
 		}
 		return true;
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateCarbonMonoxideCode(CarbonMonoxide, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Carbon Monoxide Code</em>}' operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL expression body for the '{@link #validateCarbonMonoxideCode(CarbonMonoxide, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Carbon Monoxide Code</em>}' operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateCarbonMonoxideCode(CarbonMonoxide, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String VALIDATE_CARBON_MONOXIDE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "+
-"let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "+
-"value.code = '19911-7' and value.codeSystem = '2.16.840.1.113883.6.1')";
+	* @see #validateCarbonMonoxideCode(CarbonMonoxide, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
+	protected static final String VALIDATE_CARBON_MONOXIDE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "
+			+ "let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "
+			+ "value.code = '19911-7' and value.codeSystem = '2.16.840.1.113883.6.1')";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validateCarbonMonoxideCode(CarbonMonoxide, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Carbon Monoxide Code</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL invariant for the '{@link #validateCarbonMonoxideCode(CarbonMonoxide, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Carbon Monoxide Code</em>}' invariant operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateCarbonMonoxideCode(CarbonMonoxide, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	
+	* @see #validateCarbonMonoxideCode(CarbonMonoxide, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
+
 	protected static Constraint VALIDATE_CARBON_MONOXIDE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param carbonMonoxide The receiving '<em><b>Carbon Monoxide</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
-	
-	public static  boolean validateCarbonMonoxideCode(CarbonMonoxide carbonMonoxide, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
-		Object passToken = (context == null) ? null : context.get("org.openhealthtools.mdht.uml.cda.emspcr.CarbonMonoxideCodeP");
+	* <!-- begin-model-doc -->
+	* @param carbonMonoxide The receiving '<em><b>Carbon Monoxide</b></em>' model object.
+	* @param diagnostics The chain of diagnostics to which problems are to be appended.
+	* @param context The cache of context-specific information.
+	* <!-- end-model-doc -->
+	* @generated
+	*/
+
+	public static boolean validateCarbonMonoxideCode(CarbonMonoxide carbonMonoxide, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+
+		Object passToken = (context == null)
+				? null
+				: context.get("org.openhealthtools.mdht.uml.cda.emspcr.CarbonMonoxideCodeP");
 		if ((passToken instanceof Collection<?>) && ((Collection<?>) passToken).contains(carbonMonoxide)) {
 			// I have a free pass to short-circuit
 			return true;
 		}
-  	  
+
 		if (VALIDATE_CARBON_MONOXIDE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.CARBON_MONOXIDE);
 			try {
 				VALIDATE_CARBON_MONOXIDE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CARBON_MONOXIDE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(VALIDATE_CARBON_MONOXIDE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(carbonMonoxide)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.CARBON_MONOXIDE__CARBON_MONOXIDE_CODE,
-						 EmspcrPlugin.INSTANCE.getString("CarbonMonoxideCode"),
-						 new Object [] { carbonMonoxide }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.CARBON_MONOXIDE__CARBON_MONOXIDE_CODE,
+					EmspcrPlugin.INSTANCE.getString("CarbonMonoxideCode"), new Object[] { carbonMonoxide }));
 			}
-			 
+
 			return false;
 		}
 		return true;
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateCarbonMonoxideValue(CarbonMonoxide, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Carbon Monoxide Value</em>}' operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL expression body for the '{@link #validateCarbonMonoxideValue(CarbonMonoxide, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Carbon Monoxide Value</em>}' operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateCarbonMonoxideValue(CarbonMonoxide, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validateCarbonMonoxideValue(CarbonMonoxide, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 	protected static final String VALIDATE_CARBON_MONOXIDE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | element.oclIsTypeOf(datatypes::PQ)))";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validateCarbonMonoxideValue(CarbonMonoxide, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Carbon Monoxide Value</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL invariant for the '{@link #validateCarbonMonoxideValue(CarbonMonoxide, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Carbon Monoxide Value</em>}' invariant operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateCarbonMonoxideValue(CarbonMonoxide, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	
+	* @see #validateCarbonMonoxideValue(CarbonMonoxide, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
+
 	protected static Constraint VALIDATE_CARBON_MONOXIDE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param carbonMonoxide The receiving '<em><b>Carbon Monoxide</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
-	
-	public static  boolean validateCarbonMonoxideValue(CarbonMonoxide carbonMonoxide, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+	* <!-- begin-model-doc -->
+	* @param carbonMonoxide The receiving '<em><b>Carbon Monoxide</b></em>' model object.
+	* @param diagnostics The chain of diagnostics to which problems are to be appended.
+	* @param context The cache of context-specific information.
+	* <!-- end-model-doc -->
+	* @generated
+	*/
+
+	public static boolean validateCarbonMonoxideValue(CarbonMonoxide carbonMonoxide, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+
 		if (VALIDATE_CARBON_MONOXIDE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.CARBON_MONOXIDE);
 			try {
 				VALIDATE_CARBON_MONOXIDE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CARBON_MONOXIDE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(VALIDATE_CARBON_MONOXIDE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(carbonMonoxide)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.CARBON_MONOXIDE__CARBON_MONOXIDE_VALUE,
-						 EmspcrPlugin.INSTANCE.getString("CarbonMonoxideValue"),
-						 new Object [] { carbonMonoxide }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.CARBON_MONOXIDE__CARBON_MONOXIDE_VALUE,
+					EmspcrPlugin.INSTANCE.getString("CarbonMonoxideValue"), new Object[] { carbonMonoxide }));
 			}
-			 
+
 			return false;
 		}
 		return true;
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateCarbonMonoxideEffectiveTime(CarbonMonoxide, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Carbon Monoxide Effective Time</em>}' operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL expression body for the '{@link #validateCarbonMonoxideEffectiveTime(CarbonMonoxide, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Carbon Monoxide Effective Time</em>}' operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateCarbonMonoxideEffectiveTime(CarbonMonoxide, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validateCarbonMonoxideEffectiveTime(CarbonMonoxide, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 	protected static final String VALIDATE_CARBON_MONOXIDE_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.effectiveTime.oclIsUndefined() or self.effectiveTime.isNullFlavorUndefined()) implies (not self.effectiveTime.oclIsUndefined())";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validateCarbonMonoxideEffectiveTime(CarbonMonoxide, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Carbon Monoxide Effective Time</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL invariant for the '{@link #validateCarbonMonoxideEffectiveTime(CarbonMonoxide, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Carbon Monoxide Effective Time</em>}' invariant operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateCarbonMonoxideEffectiveTime(CarbonMonoxide, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	
+	* @see #validateCarbonMonoxideEffectiveTime(CarbonMonoxide, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
+
 	protected static Constraint VALIDATE_CARBON_MONOXIDE_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param carbonMonoxide The receiving '<em><b>Carbon Monoxide</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
-	
-	public static  boolean validateCarbonMonoxideEffectiveTime(CarbonMonoxide carbonMonoxide, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+	* <!-- begin-model-doc -->
+	* @param carbonMonoxide The receiving '<em><b>Carbon Monoxide</b></em>' model object.
+	* @param diagnostics The chain of diagnostics to which problems are to be appended.
+	* @param context The cache of context-specific information.
+	* <!-- end-model-doc -->
+	* @generated
+	*/
+
+	public static boolean validateCarbonMonoxideEffectiveTime(CarbonMonoxide carbonMonoxide,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_CARBON_MONOXIDE_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.CARBON_MONOXIDE);
 			try {
 				VALIDATE_CARBON_MONOXIDE_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CARBON_MONOXIDE_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_CARBON_MONOXIDE_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(carbonMonoxide)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_CARBON_MONOXIDE_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			carbonMonoxide)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.CARBON_MONOXIDE__CARBON_MONOXIDE_EFFECTIVE_TIME,
-						 EmspcrPlugin.INSTANCE.getString("CarbonMonoxideEffectiveTime"),
-						 new Object [] { carbonMonoxide }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.INFO, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.CARBON_MONOXIDE__CARBON_MONOXIDE_EFFECTIVE_TIME,
+					EmspcrPlugin.INSTANCE.getString("CarbonMonoxideEffectiveTime"), new Object[] { carbonMonoxide }));
 			}
-			 
+
 			return false;
 		}
 		return true;
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateCarbonMonoxideMoodCode(CarbonMonoxide, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Carbon Monoxide Mood Code</em>}' operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL expression body for the '{@link #validateCarbonMonoxideMoodCode(CarbonMonoxide, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Carbon Monoxide Mood Code</em>}' operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateCarbonMonoxideMoodCode(CarbonMonoxide, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validateCarbonMonoxideMoodCode(CarbonMonoxide, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 	protected static final String VALIDATE_CARBON_MONOXIDE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "isDefined('moodCode')";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validateCarbonMonoxideMoodCode(CarbonMonoxide, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Carbon Monoxide Mood Code</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL invariant for the '{@link #validateCarbonMonoxideMoodCode(CarbonMonoxide, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Carbon Monoxide Mood Code</em>}' invariant operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateCarbonMonoxideMoodCode(CarbonMonoxide, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	
+	* @see #validateCarbonMonoxideMoodCode(CarbonMonoxide, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
+
 	protected static Constraint VALIDATE_CARBON_MONOXIDE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param carbonMonoxide The receiving '<em><b>Carbon Monoxide</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
-	
-	public static  boolean validateCarbonMonoxideMoodCode(CarbonMonoxide carbonMonoxide, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+	* <!-- begin-model-doc -->
+	* @param carbonMonoxide The receiving '<em><b>Carbon Monoxide</b></em>' model object.
+	* @param diagnostics The chain of diagnostics to which problems are to be appended.
+	* @param context The cache of context-specific information.
+	* <!-- end-model-doc -->
+	* @generated
+	*/
+
+	public static boolean validateCarbonMonoxideMoodCode(CarbonMonoxide carbonMonoxide, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+
 		if (VALIDATE_CARBON_MONOXIDE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.CARBON_MONOXIDE);
 			try {
 				VALIDATE_CARBON_MONOXIDE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CARBON_MONOXIDE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_CARBON_MONOXIDE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(carbonMonoxide)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_CARBON_MONOXIDE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			carbonMonoxide)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 EmspcrValidator.DIAGNOSTIC_SOURCE,
-						 EmspcrValidator.CARBON_MONOXIDE__CARBON_MONOXIDE_MOOD_CODE,
-						 EmspcrPlugin.INSTANCE.getString("CarbonMonoxideMoodCode"),
-						 new Object [] { carbonMonoxide }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.CARBON_MONOXIDE__CARBON_MONOXIDE_MOOD_CODE,
+					EmspcrPlugin.INSTANCE.getString("CarbonMonoxideMoodCode"), new Object[] { carbonMonoxide }));
 			}
-			 
+
 			return false;
 		}
 		return true;

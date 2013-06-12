@@ -35,84 +35,92 @@ import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
  */
 public class MedicationResponseObservationImpl extends ObservationImpl implements MedicationResponseObservation {
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	protected MedicationResponseObservationImpl() {
 		super();
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	@Override
 	protected EClass eStaticClass() {
 		return EmspcrPackage.Literals.MEDICATION_RESPONSE_OBSERVATION;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateMedicationResponseObservationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return MedicationResponseObservationOperations.validateMedicationResponseObservationTemplateId(this, diagnostics, context);
+	* @generated
+	*/
+	public boolean validateMedicationResponseObservationTemplateId(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return MedicationResponseObservationOperations.validateMedicationResponseObservationTemplateId(
+			this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateMedicationResponseObservationCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return MedicationResponseObservationOperations.validateMedicationResponseObservationCodeP(this, diagnostics, context);
+		return MedicationResponseObservationOperations.validateMedicationResponseObservationCodeP(
+			this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateMedicationResponseObservationCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return MedicationResponseObservationOperations.validateMedicationResponseObservationCode(this, diagnostics, context);
+		return MedicationResponseObservationOperations.validateMedicationResponseObservationCode(
+			this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateMedicationResponseObservationValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return MedicationResponseObservationOperations.validateMedicationResponseObservationValue(this, diagnostics, context);
+		return MedicationResponseObservationOperations.validateMedicationResponseObservationValue(
+			this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateMedicationResponseObservationMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return MedicationResponseObservationOperations.validateMedicationResponseObservationMoodCode(this, diagnostics, context);
+	* @generated
+	*/
+	public boolean validateMedicationResponseObservationMoodCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return MedicationResponseObservationOperations.validateMedicationResponseObservationMoodCode(
+			this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public MedicationResponseObservation init() {
-	    return Initializer.Util.init(this);
+		return Initializer.Util.init(this);
 	}
-    /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public MedicationResponseObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
-} //MedicationResponseObservationImpl
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public MedicationResponseObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+		Initializer.Util.init(this, initializers);
+		return this;
+	}
+} // MedicationResponseObservationImpl

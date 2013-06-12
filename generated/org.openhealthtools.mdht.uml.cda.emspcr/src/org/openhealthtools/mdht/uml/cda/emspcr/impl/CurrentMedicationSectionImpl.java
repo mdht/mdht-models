@@ -38,94 +38,122 @@ import org.openhealthtools.mdht.uml.cda.emspcr.operations.CurrentMedicationSecti
  */
 public class CurrentMedicationSectionImpl extends MedicationsSectionImpl implements CurrentMedicationSection {
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	protected CurrentMedicationSectionImpl() {
 		super();
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	@Override
 	protected EClass eStaticClass() {
 		return EmspcrPackage.Literals.CURRENT_MEDICATION_SECTION;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateCurrentMedicationSectionTitle(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return CurrentMedicationSectionOperations.validateCurrentMedicationSectionTitle(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateCurrentMedicationSectionText(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return CurrentMedicationSectionOperations.validateCurrentMedicationSectionText(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateCurrentMedicationSectionCurrentlyOnMedication(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return CurrentMedicationSectionOperations.validateCurrentMedicationSectionCurrentlyOnMedication(this, diagnostics, context);
+	* @generated
+	*/
+	public boolean validateCurrentMedicationSectionCurrentlyOnMedication(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return CurrentMedicationSectionOperations.validateCurrentMedicationSectionCurrentlyOnMedication(
+			this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateCurrentMedicationSectionPatientOnAnticoagulants(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return CurrentMedicationSectionOperations.validateCurrentMedicationSectionPatientOnAnticoagulants(this, diagnostics, context);
+	* @generated
+	*/
+	public boolean validateCurrentMedicationSectionPatientOnAnticoagulants(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return CurrentMedicationSectionOperations.validateCurrentMedicationSectionPatientOnAnticoagulants(
+			this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateCurrentMedicationSectionCurrentMedication(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return CurrentMedicationSectionOperations.validateCurrentMedicationSectionCurrentMedication(this, diagnostics, context);
+	* @generated
+	*/
+	public boolean validateCurrentMedicationSectionCurrentMedication(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return CurrentMedicationSectionOperations.validateCurrentMedicationSectionCurrentMedication(
+			this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public CurrentlyOnMedication getCurrentlyOnMedication() {
 		return CurrentMedicationSectionOperations.getCurrentlyOnMedication(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public PatientOnAnticoagulants getPatientOnAnticoagulants() {
 		return CurrentMedicationSectionOperations.getPatientOnAnticoagulants(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public CurrentMedication getCurrentMedication() {
 		return CurrentMedicationSectionOperations.getCurrentMedication(this);
+	}
+
+	/**
+	* <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	* @generated
+	*/
+	@Override
+	public boolean validateMedicationsSectionEntriesOptionalTemplateId(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return CurrentMedicationSectionOperations.validateMedicationsSectionEntriesOptionalTemplateId(
+			this, diagnostics, context);
+	}
+
+	/**
+	* <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	* @generated
+	*/
+	@Override
+	public CurrentMedicationSection init() {
+		return Initializer.Util.init(this);
 	}
 
 	/**
@@ -134,25 +162,8 @@ public class CurrentMedicationSectionImpl extends MedicationsSectionImpl impleme
 	 * @generated
 	 */
 	@Override
-	public boolean validateMedicationsSectionEntriesOptionalTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return CurrentMedicationSectionOperations.validateMedicationsSectionEntriesOptionalTemplateId(this, diagnostics, context);
+	public CurrentMedicationSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+		Initializer.Util.init(this, initializers);
+		return this;
 	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public CurrentMedicationSection init() {
-	    return Initializer.Util.init(this);
-	}
-    /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public CurrentMedicationSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
-} //CurrentMedicationSectionImpl
+} // CurrentMedicationSectionImpl

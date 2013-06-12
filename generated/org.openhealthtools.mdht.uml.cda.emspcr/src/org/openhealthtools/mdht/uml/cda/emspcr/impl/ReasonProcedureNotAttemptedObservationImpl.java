@@ -33,86 +33,98 @@ import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
  *
  * @generated
  */
-public class ReasonProcedureNotAttemptedObservationImpl extends ObservationImpl implements ReasonProcedureNotAttemptedObservation {
+public class ReasonProcedureNotAttemptedObservationImpl extends ObservationImpl implements
+		ReasonProcedureNotAttemptedObservation {
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	protected ReasonProcedureNotAttemptedObservationImpl() {
 		super();
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	@Override
 	protected EClass eStaticClass() {
 		return EmspcrPackage.Literals.REASON_PROCEDURE_NOT_ATTEMPTED_OBSERVATION;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateReasonProcedureNotAttemptedObservationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ReasonProcedureNotAttemptedObservationOperations.validateReasonProcedureNotAttemptedObservationTemplateId(this, diagnostics, context);
+	* @generated
+	*/
+	public boolean validateReasonProcedureNotAttemptedObservationTemplateId(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ReasonProcedureNotAttemptedObservationOperations.validateReasonProcedureNotAttemptedObservationTemplateId(
+			this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateReasonProcedureNotAttemptedObservationCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ReasonProcedureNotAttemptedObservationOperations.validateReasonProcedureNotAttemptedObservationCode(this, diagnostics, context);
+	* @generated
+	*/
+	public boolean validateReasonProcedureNotAttemptedObservationCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ReasonProcedureNotAttemptedObservationOperations.validateReasonProcedureNotAttemptedObservationCode(
+			this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateReasonProcedureNotAttemptedObservationValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ReasonProcedureNotAttemptedObservationOperations.validateReasonProcedureNotAttemptedObservationValue(this, diagnostics, context);
+	* @generated
+	*/
+	public boolean validateReasonProcedureNotAttemptedObservationValue(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ReasonProcedureNotAttemptedObservationOperations.validateReasonProcedureNotAttemptedObservationValue(
+			this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateReasonProcedureNotAttemptedObservationValueP(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ReasonProcedureNotAttemptedObservationOperations.validateReasonProcedureNotAttemptedObservationValueP(this, diagnostics, context);
+	* @generated
+	*/
+	public boolean validateReasonProcedureNotAttemptedObservationValueP(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ReasonProcedureNotAttemptedObservationOperations.validateReasonProcedureNotAttemptedObservationValueP(
+			this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateReasonProcedureNotAttemptedObservationMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ReasonProcedureNotAttemptedObservationOperations.validateReasonProcedureNotAttemptedObservationMoodCode(this, diagnostics, context);
+	* @generated
+	*/
+	public boolean validateReasonProcedureNotAttemptedObservationMoodCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ReasonProcedureNotAttemptedObservationOperations.validateReasonProcedureNotAttemptedObservationMoodCode(
+			this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public ReasonProcedureNotAttemptedObservation init() {
-	    return Initializer.Util.init(this);
+		return Initializer.Util.init(this);
 	}
-    /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public ReasonProcedureNotAttemptedObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
-} //ReasonProcedureNotAttemptedObservationImpl
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ReasonProcedureNotAttemptedObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+		Initializer.Util.init(this, initializers);
+		return this;
+	}
+} // ReasonProcedureNotAttemptedObservationImpl

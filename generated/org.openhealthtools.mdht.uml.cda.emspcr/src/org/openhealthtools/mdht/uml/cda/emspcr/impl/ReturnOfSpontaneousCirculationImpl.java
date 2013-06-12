@@ -35,75 +35,82 @@ import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
  */
 public class ReturnOfSpontaneousCirculationImpl extends ObservationImpl implements ReturnOfSpontaneousCirculation {
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	protected ReturnOfSpontaneousCirculationImpl() {
 		super();
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	@Override
 	protected EClass eStaticClass() {
 		return EmspcrPackage.Literals.RETURN_OF_SPONTANEOUS_CIRCULATION;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateReturnOfSpontaneousCirculationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ReturnOfSpontaneousCirculationOperations.validateReturnOfSpontaneousCirculationTemplateId(this, diagnostics, context);
+	* @generated
+	*/
+	public boolean validateReturnOfSpontaneousCirculationTemplateId(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ReturnOfSpontaneousCirculationOperations.validateReturnOfSpontaneousCirculationTemplateId(
+			this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateReturnOfSpontaneousCirculationCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ReturnOfSpontaneousCirculationOperations.validateReturnOfSpontaneousCirculationCode(this, diagnostics, context);
+		return ReturnOfSpontaneousCirculationOperations.validateReturnOfSpontaneousCirculationCode(
+			this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateReturnOfSpontaneousCirculationValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ReturnOfSpontaneousCirculationOperations.validateReturnOfSpontaneousCirculationValue(this, diagnostics, context);
+		return ReturnOfSpontaneousCirculationOperations.validateReturnOfSpontaneousCirculationValue(
+			this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateReturnOfSpontaneousCirculationMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ReturnOfSpontaneousCirculationOperations.validateReturnOfSpontaneousCirculationMoodCode(this, diagnostics, context);
+	* @generated
+	*/
+	public boolean validateReturnOfSpontaneousCirculationMoodCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ReturnOfSpontaneousCirculationOperations.validateReturnOfSpontaneousCirculationMoodCode(
+			this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public ReturnOfSpontaneousCirculation init() {
-	    return Initializer.Util.init(this);
+		return Initializer.Util.init(this);
 	}
-    /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public ReturnOfSpontaneousCirculation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
-} //ReturnOfSpontaneousCirculationImpl
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ReturnOfSpontaneousCirculation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+		Initializer.Util.init(this, initializers);
+		return this;
+	}
+} // ReturnOfSpontaneousCirculationImpl

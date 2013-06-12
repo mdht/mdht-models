@@ -33,95 +33,109 @@ import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
  *
  * @generated
  */
-public class EmergencyMedicalDispatchObservationImpl extends ObservationImpl implements EmergencyMedicalDispatchObservation {
+public class EmergencyMedicalDispatchObservationImpl extends ObservationImpl implements
+		EmergencyMedicalDispatchObservation {
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	protected EmergencyMedicalDispatchObservationImpl() {
 		super();
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	@Override
 	protected EClass eStaticClass() {
 		return EmspcrPackage.Literals.EMERGENCY_MEDICAL_DISPATCH_OBSERVATION;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateEmergencyMedicalDispatchObservationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return EmergencyMedicalDispatchObservationOperations.validateEmergencyMedicalDispatchObservationTemplateId(this, diagnostics, context);
+	* @generated
+	*/
+	public boolean validateEmergencyMedicalDispatchObservationTemplateId(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return EmergencyMedicalDispatchObservationOperations.validateEmergencyMedicalDispatchObservationTemplateId(
+			this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateEmergencyMedicalDispatchObservationCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return EmergencyMedicalDispatchObservationOperations.validateEmergencyMedicalDispatchObservationCodeP(this, diagnostics, context);
+	* @generated
+	*/
+	public boolean validateEmergencyMedicalDispatchObservationCodeP(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return EmergencyMedicalDispatchObservationOperations.validateEmergencyMedicalDispatchObservationCodeP(
+			this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateEmergencyMedicalDispatchObservationCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return EmergencyMedicalDispatchObservationOperations.validateEmergencyMedicalDispatchObservationCode(this, diagnostics, context);
+	* @generated
+	*/
+	public boolean validateEmergencyMedicalDispatchObservationCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return EmergencyMedicalDispatchObservationOperations.validateEmergencyMedicalDispatchObservationCode(
+			this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateEmergencyMedicalDispatchObservationValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return EmergencyMedicalDispatchObservationOperations.validateEmergencyMedicalDispatchObservationValue(this, diagnostics, context);
+	* @generated
+	*/
+	public boolean validateEmergencyMedicalDispatchObservationValue(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return EmergencyMedicalDispatchObservationOperations.validateEmergencyMedicalDispatchObservationValue(
+			this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateEmergencyMedicalDispatchObservationValueP(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return EmergencyMedicalDispatchObservationOperations.validateEmergencyMedicalDispatchObservationValueP(this, diagnostics, context);
+	* @generated
+	*/
+	public boolean validateEmergencyMedicalDispatchObservationValueP(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return EmergencyMedicalDispatchObservationOperations.validateEmergencyMedicalDispatchObservationValueP(
+			this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateEmergencyMedicalDispatchObservationMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return EmergencyMedicalDispatchObservationOperations.validateEmergencyMedicalDispatchObservationMoodCode(this, diagnostics, context);
+	* @generated
+	*/
+	public boolean validateEmergencyMedicalDispatchObservationMoodCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return EmergencyMedicalDispatchObservationOperations.validateEmergencyMedicalDispatchObservationMoodCode(
+			this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public EmergencyMedicalDispatchObservation init() {
-	    return Initializer.Util.init(this);
+		return Initializer.Util.init(this);
 	}
-    /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public EmergencyMedicalDispatchObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
-} //EmergencyMedicalDispatchObservationImpl
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EmergencyMedicalDispatchObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+		Initializer.Util.init(this, initializers);
+		return this;
+	}
+} // EmergencyMedicalDispatchObservationImpl

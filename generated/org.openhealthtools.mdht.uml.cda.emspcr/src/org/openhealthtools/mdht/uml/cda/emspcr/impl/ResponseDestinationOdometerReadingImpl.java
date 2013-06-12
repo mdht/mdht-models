@@ -33,86 +33,98 @@ import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
  *
  * @generated
  */
-public class ResponseDestinationOdometerReadingImpl extends ObservationImpl implements ResponseDestinationOdometerReading {
+public class ResponseDestinationOdometerReadingImpl extends ObservationImpl implements
+		ResponseDestinationOdometerReading {
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	protected ResponseDestinationOdometerReadingImpl() {
 		super();
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	@Override
 	protected EClass eStaticClass() {
 		return EmspcrPackage.Literals.RESPONSE_DESTINATION_ODOMETER_READING;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateResponseDestinationOdometerReadingTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ResponseDestinationOdometerReadingOperations.validateResponseDestinationOdometerReadingTemplateId(this, diagnostics, context);
+	* @generated
+	*/
+	public boolean validateResponseDestinationOdometerReadingTemplateId(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ResponseDestinationOdometerReadingOperations.validateResponseDestinationOdometerReadingTemplateId(
+			this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateResponseDestinationOdometerReadingCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ResponseDestinationOdometerReadingOperations.validateResponseDestinationOdometerReadingCodeP(this, diagnostics, context);
+	* @generated
+	*/
+	public boolean validateResponseDestinationOdometerReadingCodeP(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ResponseDestinationOdometerReadingOperations.validateResponseDestinationOdometerReadingCodeP(
+			this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateResponseDestinationOdometerReadingCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ResponseDestinationOdometerReadingOperations.validateResponseDestinationOdometerReadingCode(this, diagnostics, context);
+	* @generated
+	*/
+	public boolean validateResponseDestinationOdometerReadingCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ResponseDestinationOdometerReadingOperations.validateResponseDestinationOdometerReadingCode(
+			this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateResponseDestinationOdometerReadingValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ResponseDestinationOdometerReadingOperations.validateResponseDestinationOdometerReadingValue(this, diagnostics, context);
+	* @generated
+	*/
+	public boolean validateResponseDestinationOdometerReadingValue(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ResponseDestinationOdometerReadingOperations.validateResponseDestinationOdometerReadingValue(
+			this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateResponseDestinationOdometerReadingMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ResponseDestinationOdometerReadingOperations.validateResponseDestinationOdometerReadingMoodCode(this, diagnostics, context);
+	* @generated
+	*/
+	public boolean validateResponseDestinationOdometerReadingMoodCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ResponseDestinationOdometerReadingOperations.validateResponseDestinationOdometerReadingMoodCode(
+			this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public ResponseDestinationOdometerReading init() {
-	    return Initializer.Util.init(this);
+		return Initializer.Util.init(this);
 	}
-    /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public ResponseDestinationOdometerReading init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
-} //ResponseDestinationOdometerReadingImpl
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ResponseDestinationOdometerReading init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+		Initializer.Util.init(this, initializers);
+		return this;
+	}
+} // ResponseDestinationOdometerReadingImpl
