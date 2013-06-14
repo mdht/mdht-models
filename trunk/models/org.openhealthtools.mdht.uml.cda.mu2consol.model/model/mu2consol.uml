@@ -78,8 +78,8 @@ OR have at least one componentOf/encompassingEncounter/encounterParticipant</bod
               <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-documents.uml#_7OuuACylEeGMXrZ0DiQwGg"/>
             </ownedAttribute>
             <ownedAttribute xmi:id="_SFucsvbBEeGulbiehZqi1g" name="languageCommunication" type="__cXXsAeREeK0r-pCA5uczw" association="_SFuctPbBEeGulbiehZqi1g">
-              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_pxSTEPbBEeGulbiehZqi1g" value="1"/>
-              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_pxSTEfbBEeGulbiehZqi1g" value="1"/>
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_rtIdkM6-EeKPs4cOcTCFcQ" value="*"/>
+              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_rtIdkc6-EeKPs4cOcTCFcQ"/>
               <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-documents.uml#_GmM4YCytEeGMXrZ0DiQwGg"/>
             </ownedAttribute>
             <nestedClassifier xmi:type="uml:Class" xmi:id="__cXXsAeREeK0r-pCA5uczw" name="LanguageCommunication">
@@ -953,7 +953,7 @@ and componentOf/encompassingEncounter/encounterParticipant/assignedEntity/addr</
     <reference href="mu2consol-vocab.uml#_iw_0EALeEeK7TpEj_YCJGQ"/>
   </CDA:ValueSetConstraint>
   <CDA:PropertyValidation xmi:id="_SFucsfbBEeGulbiehZqi1g" message="Mu2consol Patient SHALL contain exactly one [1..1] raceCode, where the @code SHALL be selected from OMB Standards for the Classification of Federal Data on Race and Ethnicity." base_Property="_SFkrwfbBEeGulbiehZqi1g"/>
-  <CDA:AssociationValidation xmi:id="_SFuctvbBEeGulbiehZqi1g" base_Association="_SFuctPbBEeGulbiehZqi1g"/>
+  <CDA:AssociationValidation xmi:id="_SFuctvbBEeGulbiehZqi1g" severity="WARNING" base_Association="_SFuctPbBEeGulbiehZqi1g"/>
   <CDA:AssociationValidation xmi:id="_wpSZoPhWEeGPm7sA61ixGw" base_Association="_ZS4T4fhWEeGPm7sA61ixGw"/>
   <CDA:AssociationValidation xmi:id="_1QVAwPhXEeGPm7sA61ixGw" base_Association="_0EGeMPhXEeGPm7sA61ixGw"/>
   <CDA:AssociationValidation xmi:id="_84DAEPhXEeGPm7sA61ixGw" base_Association="_8M2uAfhXEeGPm7sA61ixGw"/>
