@@ -136,7 +136,7 @@ The Assessment and Plan section represents both the clinician's conclusions and 
             <language>Analysis</language>
             <language>OCL</language>
             <body>include assignedPerson/name or representedOrganization/name</body>
-            <body>self.assignedPerson->one(element | not element.oclIsUndefined() and element.name->size() = 1) xor self.representedOrganization->one(element | not element.oclIsUndefined() and element.name->size() = 1)</body>
+            <body>self.assignedPerson->one(element | not element.oclIsUndefined() and element.name->size() = 1) or self.representedOrganization->one(element | not element.oclIsUndefined() and element.name->size() = 1)</body>
           </specification>
         </ownedRule>
         <ownedRule xmi:id="_QL-JwHehEeGLwesdFe7o6w" name="assignPersonName" constrainedElement="_PfJ8gHegEeGLwesdFe7o6w">

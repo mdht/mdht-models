@@ -33,29 +33,29 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.CognitiveStatusResultO
 public class CognitiveStatusResultObservationImpl extends ResultObservationImpl implements
 		CognitiveStatusResultObservation {
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	protected CognitiveStatusResultObservationImpl() {
 		super();
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
 		return ConsolPackage.Literals.COGNITIVE_STATUS_RESULT_OBSERVATION;
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateCognitiveStatusResultObservationTextReference(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return CognitiveStatusResultObservationOperations.validateCognitiveStatusResultObservationTextReference(
@@ -63,10 +63,10 @@ public class CognitiveStatusResultObservationImpl extends ResultObservationImpl 
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateCognitiveStatusResultObservationTextReferenceValue(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return CognitiveStatusResultObservationOperations.validateCognitiveStatusResultObservationTextReferenceValue(
@@ -74,10 +74,10 @@ public class CognitiveStatusResultObservationImpl extends ResultObservationImpl 
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateCognitiveStatusResultObservationValueDatatype(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return CognitiveStatusResultObservationOperations.validateCognitiveStatusResultObservationValueDatatype(
@@ -85,10 +85,10 @@ public class CognitiveStatusResultObservationImpl extends ResultObservationImpl 
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateCognitiveStatusResultObservationClassCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return CognitiveStatusResultObservationOperations.validateCognitiveStatusResultObservationClassCode(
@@ -96,10 +96,10 @@ public class CognitiveStatusResultObservationImpl extends ResultObservationImpl 
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateCognitiveStatusResultObservationMoodCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return CognitiveStatusResultObservationOperations.validateCognitiveStatusResultObservationMoodCode(
@@ -107,20 +107,20 @@ public class CognitiveStatusResultObservationImpl extends ResultObservationImpl 
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateCognitiveStatusResultObservationId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return CognitiveStatusResultObservationOperations.validateCognitiveStatusResultObservationId(
 			this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateCognitiveStatusResultObservationCodeP(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return CognitiveStatusResultObservationOperations.validateCognitiveStatusResultObservationCodeP(
@@ -128,30 +128,30 @@ public class CognitiveStatusResultObservationImpl extends ResultObservationImpl 
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateCognitiveStatusResultObservationCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return CognitiveStatusResultObservationOperations.validateCognitiveStatusResultObservationCode(
 			this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateCognitiveStatusResultObservationText(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return CognitiveStatusResultObservationOperations.validateCognitiveStatusResultObservationText(
 			this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateCognitiveStatusResultObservationStatusCodeP(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return CognitiveStatusResultObservationOperations.validateCognitiveStatusResultObservationStatusCodeP(
@@ -159,10 +159,10 @@ public class CognitiveStatusResultObservationImpl extends ResultObservationImpl 
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateCognitiveStatusResultObservationStatusCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return CognitiveStatusResultObservationOperations.validateCognitiveStatusResultObservationStatusCode(
@@ -170,10 +170,10 @@ public class CognitiveStatusResultObservationImpl extends ResultObservationImpl 
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateCognitiveStatusResultObservationEffectiveTime(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return CognitiveStatusResultObservationOperations.validateCognitiveStatusResultObservationEffectiveTime(
@@ -181,10 +181,10 @@ public class CognitiveStatusResultObservationImpl extends ResultObservationImpl 
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateCognitiveStatusResultObservationValue(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return CognitiveStatusResultObservationOperations.validateCognitiveStatusResultObservationValue(
@@ -192,10 +192,10 @@ public class CognitiveStatusResultObservationImpl extends ResultObservationImpl 
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateCognitiveStatusResultObservationInterpretationCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return CognitiveStatusResultObservationOperations.validateCognitiveStatusResultObservationInterpretationCode(
@@ -203,10 +203,10 @@ public class CognitiveStatusResultObservationImpl extends ResultObservationImpl 
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateCognitiveStatusResultObservationMethodCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return CognitiveStatusResultObservationOperations.validateCognitiveStatusResultObservationMethodCode(
@@ -214,10 +214,10 @@ public class CognitiveStatusResultObservationImpl extends ResultObservationImpl 
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateCognitiveStatusResultObservationTargetSiteCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return CognitiveStatusResultObservationOperations.validateCognitiveStatusResultObservationTargetSiteCode(
@@ -225,10 +225,10 @@ public class CognitiveStatusResultObservationImpl extends ResultObservationImpl 
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateCognitiveStatusResultObservationAuthor(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return CognitiveStatusResultObservationOperations.validateCognitiveStatusResultObservationAuthor(
@@ -236,10 +236,10 @@ public class CognitiveStatusResultObservationImpl extends ResultObservationImpl 
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateCognitiveStatusResultObservationNonMedicinalSupplyActivity(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return CognitiveStatusResultObservationOperations.validateCognitiveStatusResultObservationNonMedicinalSupplyActivity(
@@ -247,10 +247,10 @@ public class CognitiveStatusResultObservationImpl extends ResultObservationImpl 
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateCognitiveStatusResultObservationCaregiverCharacteristics(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return CognitiveStatusResultObservationOperations.validateCognitiveStatusResultObservationCaregiverCharacteristics(
@@ -258,10 +258,10 @@ public class CognitiveStatusResultObservationImpl extends ResultObservationImpl 
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateCognitiveStatusResultObservationAssessmentScaleObservation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return CognitiveStatusResultObservationOperations.validateCognitiveStatusResultObservationAssessmentScaleObservation(
@@ -269,10 +269,10 @@ public class CognitiveStatusResultObservationImpl extends ResultObservationImpl 
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateCognitiveStatusResultObservationReferenceRange(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return CognitiveStatusResultObservationOperations.validateCognitiveStatusResultObservationReferenceRange(
@@ -280,10 +280,10 @@ public class CognitiveStatusResultObservationImpl extends ResultObservationImpl 
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	* <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateCognitiveStatusResultObservationReferenceRangeObservationRangeNoCode(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return CognitiveStatusResultObservationOperations.validateCognitiveStatusResultObservationReferenceRangeObservationRangeNoCode(
@@ -311,28 +311,28 @@ public class CognitiveStatusResultObservationImpl extends ResultObservationImpl 
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public EList<CaregiverCharacteristics> getCaregiverCharacteristicss() {
 		return CognitiveStatusResultObservationOperations.getCaregiverCharacteristicss(this);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public EList<AssessmentScaleObservation> getAssessmentScaleObservations() {
 		return CognitiveStatusResultObservationOperations.getAssessmentScaleObservations(this);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	@Override
 	public boolean validateResultObservationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return CognitiveStatusResultObservationOperations.validateResultObservationTemplateId(
@@ -340,10 +340,10 @@ public class CognitiveStatusResultObservationImpl extends ResultObservationImpl 
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	@Override
 	public CognitiveStatusResultObservation init() {
 		return Initializer.Util.init(this);

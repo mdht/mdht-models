@@ -34,29 +34,29 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.DiagnosticImagingRepor
  */
 public class DiagnosticImagingReportImpl extends GeneralHeaderConstraintsImpl implements DiagnosticImagingReport {
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	protected DiagnosticImagingReportImpl() {
 		super();
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
 		return ConsolPackage.Literals.DIAGNOSTIC_IMAGING_REPORT;
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateDiagnosticImagingReportUseDiagnosticImagingCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return DiagnosticImagingReportOperations.validateDiagnosticImagingReportUseDiagnosticImagingCode(
@@ -64,10 +64,10 @@ public class DiagnosticImagingReportImpl extends GeneralHeaderConstraintsImpl im
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateDiagnosticImagingReportAllSectionsHaveTitle(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return DiagnosticImagingReportOperations.validateDiagnosticImagingReportAllSectionsHaveTitle(
@@ -75,10 +75,10 @@ public class DiagnosticImagingReportImpl extends GeneralHeaderConstraintsImpl im
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateDiagnosticImagingReportSectionsHaveText(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return DiagnosticImagingReportOperations.validateDiagnosticImagingReportSectionsHaveText(
@@ -86,55 +86,55 @@ public class DiagnosticImagingReportImpl extends GeneralHeaderConstraintsImpl im
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateDiagnosticImagingReportTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return DiagnosticImagingReportOperations.validateDiagnosticImagingReportTemplateId(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateDiagnosticImagingReportCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return DiagnosticImagingReportOperations.validateDiagnosticImagingReportCodeP(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	* <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateDiagnosticImagingReportCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return DiagnosticImagingReportOperations.validateDiagnosticImagingReportCode(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateDiagnosticImagingReportId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return DiagnosticImagingReportOperations.validateDiagnosticImagingReportId(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateDiagnosticImagingReportInformant(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return DiagnosticImagingReportOperations.validateDiagnosticImagingReportInformant(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateDiagnosticImagingReportInformationRecipient(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return DiagnosticImagingReportOperations.validateDiagnosticImagingReportInformationRecipient(
@@ -142,19 +142,19 @@ public class DiagnosticImagingReportImpl extends GeneralHeaderConstraintsImpl im
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateDiagnosticImagingReportParticipant1(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return DiagnosticImagingReportOperations.validateDiagnosticImagingReportParticipant1(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateDiagnosticImagingReportInFulfillmentOf(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return DiagnosticImagingReportOperations.validateDiagnosticImagingReportInFulfillmentOf(
@@ -162,10 +162,10 @@ public class DiagnosticImagingReportImpl extends GeneralHeaderConstraintsImpl im
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateDiagnosticImagingReportDocumentationOf(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return DiagnosticImagingReportOperations.validateDiagnosticImagingReportDocumentationOf(
@@ -173,10 +173,10 @@ public class DiagnosticImagingReportImpl extends GeneralHeaderConstraintsImpl im
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateDiagnosticImagingReportRelatedDocument(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return DiagnosticImagingReportOperations.validateDiagnosticImagingReportRelatedDocument(
@@ -184,19 +184,19 @@ public class DiagnosticImagingReportImpl extends GeneralHeaderConstraintsImpl im
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateDiagnosticImagingReportComponentOf(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return DiagnosticImagingReportOperations.validateDiagnosticImagingReportComponentOf(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateDiagnosticImagingReportFindingsSection(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return DiagnosticImagingReportOperations.validateDiagnosticImagingReportFindingsSection(
@@ -204,10 +204,10 @@ public class DiagnosticImagingReportImpl extends GeneralHeaderConstraintsImpl im
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateDiagnosticImagingReportDICOMObjectCatalogSection(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return DiagnosticImagingReportOperations.validateDiagnosticImagingReportDICOMObjectCatalogSection(
@@ -215,10 +215,10 @@ public class DiagnosticImagingReportImpl extends GeneralHeaderConstraintsImpl im
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	* <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateDiagnosticImagingReportParticipantAssociatedEntityPersonName(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return DiagnosticImagingReportOperations.validateDiagnosticImagingReportParticipantAssociatedEntityPersonName(
@@ -389,19 +389,19 @@ public class DiagnosticImagingReportImpl extends GeneralHeaderConstraintsImpl im
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public DICOMObjectCatalogSection getDICOMObjectCatalogSection() {
 		return DiagnosticImagingReportOperations.getDICOMObjectCatalogSection(this);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	@Override
 	public DiagnosticImagingReport init() {
 		return Initializer.Util.init(this);
