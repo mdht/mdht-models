@@ -37,38 +37,38 @@ import org.openhealthtools.mdht.uml.cda.impl.EncounterImpl;
  */
 public class EncounterActivitiesImpl extends EncounterImpl implements EncounterActivities {
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	protected EncounterActivitiesImpl() {
 		super();
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
 		return ConsolPackage.Literals.ENCOUNTER_ACTIVITIES;
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateEncounterActivitiesCodeOriginalText(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return EncounterActivitiesOperations.validateEncounterActivitiesCodeOriginalText(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateEncounterActivitiesCodeOriginalTextReference(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return EncounterActivitiesOperations.validateEncounterActivitiesCodeOriginalTextReference(
@@ -76,19 +76,19 @@ public class EncounterActivitiesImpl extends EncounterImpl implements EncounterA
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	* <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateEncounterActivitiesReferenceValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return EncounterActivitiesOperations.validateEncounterActivitiesReferenceValue(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateEncounterActivitiesCodeOriginalTextReferenceValue(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return EncounterActivitiesOperations.validateEncounterActivitiesCodeOriginalTextReferenceValue(
@@ -96,10 +96,10 @@ public class EncounterActivitiesImpl extends EncounterImpl implements EncounterA
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateEncounterActivitiesServiceDeliveryTypeCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return EncounterActivitiesOperations.validateEncounterActivitiesServiceDeliveryTypeCode(
@@ -107,64 +107,64 @@ public class EncounterActivitiesImpl extends EncounterImpl implements EncounterA
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateEncounterActivitiesTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return EncounterActivitiesOperations.validateEncounterActivitiesTemplateId(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateEncounterActivitiesClassCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return EncounterActivitiesOperations.validateEncounterActivitiesClassCode(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateEncounterActivitiesMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return EncounterActivitiesOperations.validateEncounterActivitiesMoodCode(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateEncounterActivitiesId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return EncounterActivitiesOperations.validateEncounterActivitiesId(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateEncounterActivitiesCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return EncounterActivitiesOperations.validateEncounterActivitiesCode(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateEncounterActivitiesEffectiveTime(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return EncounterActivitiesOperations.validateEncounterActivitiesEffectiveTime(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateEncounterActivitiesSDTCDischargeDispositionCodeP(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return EncounterActivitiesOperations.validateEncounterActivitiesSDTCDischargeDispositionCodeP(
@@ -172,10 +172,10 @@ public class EncounterActivitiesImpl extends EncounterImpl implements EncounterA
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateEncounterActivitiesSDTCDischargeDispositionCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return EncounterActivitiesOperations.validateEncounterActivitiesSDTCDischargeDispositionCode(
@@ -183,10 +183,10 @@ public class EncounterActivitiesImpl extends EncounterImpl implements EncounterA
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateEncounterActivitiesServiceDeliveryLocation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return EncounterActivitiesOperations.validateEncounterActivitiesServiceDeliveryLocation(
@@ -194,39 +194,39 @@ public class EncounterActivitiesImpl extends EncounterImpl implements EncounterA
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateEncounterActivitiesIndication(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return EncounterActivitiesOperations.validateEncounterActivitiesIndication(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateEncounterActivitiesEncounterPerformer(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return EncounterActivitiesOperations.validateEncounterActivitiesEncounterPerformer(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	* <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateEncounterActivitiesEncounterDiagnosis(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return EncounterActivitiesOperations.validateEncounterActivitiesEncounterDiagnosis(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	* <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateEncounterActivitiesEncounterPerformerEncounterPerformerAssignedEntityCode(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return EncounterActivitiesOperations.validateEncounterActivitiesEncounterPerformerEncounterPerformerAssignedEntityCode(
@@ -254,28 +254,28 @@ public class EncounterActivitiesImpl extends EncounterImpl implements EncounterA
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public EList<Indication> getIndications() {
 		return EncounterActivitiesOperations.getIndications(this);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	* <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public EList<EncounterDiagnosis> getEncounterDiagnosiss() {
 		return EncounterActivitiesOperations.getEncounterDiagnosiss(this);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public EncounterActivities init() {
 		return Initializer.Util.init(this);
 	}

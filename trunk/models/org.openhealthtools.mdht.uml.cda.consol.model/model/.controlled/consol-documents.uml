@@ -2183,7 +2183,7 @@ For conformance with both specifications, please review the appendix on XDS-SD a
   <uml:Association xmi:id="_C-fawCzBEeGMXrZ0DiQwGg" memberEnd="_C-ezsCzBEeGMXrZ0DiQwGg _C-fawSzBEeGMXrZ0DiQwGg">
     <ownedEnd xmi:id="_C-fawSzBEeGMXrZ0DiQwGg" type="_2DNRcBSVEeGGzu7fmW9pXw" association="_C-fawCzBEeGMXrZ0DiQwGg"/>
   </uml:Association>
-  <CDA:ValueSetConstraint xmi:id="_cfM7wDVPEeGIw7CntkyPQw" base_Property="_2DNR6RSVEeGGzu7fmW9pXw">
+  <CDA:ValueSetConstraint xmi:id="_cfM7wDVPEeGIw7CntkyPQw" base_Property="_2DNR6RSVEeGGzu7fmW9pXw" severity="WARNING">
     <reference href="../consol-vocab.uml#_8K870TVPEeGIw7CntkyPQw"/>
     <ruleId>CONF:5259</ruleId>
   </CDA:ValueSetConstraint>
@@ -5404,4 +5404,5 @@ OIDs SHALL be no more than 64 characters in length..</body>
   <CDA:ConstraintValidation xmi:id="_gJimUJ4xEeKLDuYB2cFreQ" severity="WARNING" base_Constraint="_kIBcYDVREeGIw7CntkyPQw">
     <ruleId>CONF:5300</ruleId>
   </CDA:ConstraintValidation>
+  <CDA:PropertyValidation xmi:id="_u3sMYNUREeK3Pt43o0baHw" base_Property="_2DNR6RSVEeGGzu7fmW9pXw"/>
 </xmi:XMI>

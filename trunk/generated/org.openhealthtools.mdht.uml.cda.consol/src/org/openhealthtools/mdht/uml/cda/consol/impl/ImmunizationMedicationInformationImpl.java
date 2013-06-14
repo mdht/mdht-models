@@ -34,29 +34,29 @@ import org.openhealthtools.mdht.uml.cda.impl.ManufacturedProductImpl;
 public class ImmunizationMedicationInformationImpl extends ManufacturedProductImpl implements
 		ImmunizationMedicationInformation {
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	protected ImmunizationMedicationInformationImpl() {
 		super();
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
 		return ConsolPackage.Literals.IMMUNIZATION_MEDICATION_INFORMATION;
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateImmunizationMedicationInformationTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ImmunizationMedicationInformationOperations.validateImmunizationMedicationInformationTemplateId(
@@ -64,10 +64,10 @@ public class ImmunizationMedicationInformationImpl extends ManufacturedProductIm
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateImmunizationMedicationInformationClassCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ImmunizationMedicationInformationOperations.validateImmunizationMedicationInformationClassCode(
@@ -75,20 +75,20 @@ public class ImmunizationMedicationInformationImpl extends ManufacturedProductIm
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateImmunizationMedicationInformationId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ImmunizationMedicationInformationOperations.validateImmunizationMedicationInformationId(
 			this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateImmunizationMedicationInformationManufacturerOrganization(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ImmunizationMedicationInformationOperations.validateImmunizationMedicationInformationManufacturerOrganization(
@@ -96,10 +96,10 @@ public class ImmunizationMedicationInformationImpl extends ManufacturedProductIm
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateImmunizationMedicationInformationManufacturedMaterial(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ImmunizationMedicationInformationOperations.validateImmunizationMedicationInformationManufacturedMaterial(
@@ -107,10 +107,10 @@ public class ImmunizationMedicationInformationImpl extends ManufacturedProductIm
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	* <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateImmunizationMedicationInformationManufacturedMaterialCodeOriginalText(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ImmunizationMedicationInformationOperations.validateImmunizationMedicationInformationManufacturedMaterialCodeOriginalText(
