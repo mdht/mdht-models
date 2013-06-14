@@ -24,10 +24,10 @@ import org.openhealthtools.mdht.emf.runtime.util.Initializer;
  */
 public interface FunctionalStatusResultObservation extends org.openhealthtools.mdht.uml.cda.consol.FunctionalStatusResultObservation, ResultObservation {
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public FunctionalStatusResultObservation init();
     /**
      * <!-- begin-user-doc -->

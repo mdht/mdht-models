@@ -62,9 +62,9 @@ public interface ProceduresSection extends
 	EList<ProcedureActivityProcedure> getMu2consolProcedureActivityProcedures();
 
 	/**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * @generated
-   */
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * @generated
+	 */
 	public ProceduresSection init();
 
 	/**
