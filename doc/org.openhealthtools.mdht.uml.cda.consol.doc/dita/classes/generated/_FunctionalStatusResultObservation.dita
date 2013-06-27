@@ -113,103 +113,96 @@ Laboratory results <b>SHOULD</b> be from LOINC (CodeSystem: 2.16.840.1.113883.6.
 <li>This reference/@value <b>SHALL</b> begin with a '#' and <b>SHALL</b> point to its corresponding narrative (using the approach defined in CDA Release 2, section 4.3.5.1) (CONF:13928)</li>
 <li>If value/@xsi:type=CD, <b>SHOULD</b> contain a code from SNOMED CT (CodeSystem: 2.16.840.1.113883.6.96) (CONF:14234)</li>
 </ol>
-<section id="tableconformance"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="8" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><colspec colname="col2" colnum="2" /><colspec colname="col3" colnum="3" /><colspec colname="col4" colnum="4" /><colspec colname="col5" colnum="5" /><colspec colname="col6" colnum="6" /><colspec colname="col7" colnum="7" /><thead> <row><entry namest="col0" nameend="col7" >consol::FunctionalStatusResultObservation</entry>  </row>  <row><entry namest="col0" nameend="col7" >cda::observation[cda:templateId/@root = 2.16.840.1.113883.10.20.22.4.2]/</entry>  </row>  <row><entry>Name</entry><entry>XPath</entry><entry>Cardinality</entry><entry>Severity</entry><entry>Nullable</entry><entry>Data Type</entry><entry>Conformance</entry><entry>Value(s)</entry></row></thead><tbody><row><entry>classCode</entry><entry>@classCode</entry><entry>1..1</entry><entry>SHALL</entry><entry>NO</entry><entry>ActClassObservation</entry><entry>CONF:13905</entry><entry> ALRT</entry></row> 
+<section id="tableconformance"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="8" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><colspec colname="col2" colnum="2" /><colspec colname="col3" colnum="3" /><colspec colname="col4" colnum="4" /><colspec colname="col5" colnum="5" /><colspec colname="col6" colnum="6" /><colspec colname="col7" colnum="7" /><thead> <row><entry namest="col0" nameend="col7" >consol::FunctionalStatusResultObservation</entry>  </row>  <row><entry namest="col0" nameend="col7" >cda::observation[cda:templateId/@root = ]/</entry>  </row>  <row><entry>Name</entry><entry>XPath</entry><entry>Cardinality</entry><entry>Severity</entry><entry>Nullable</entry><entry>Data Type</entry><entry>Conformance</entry><entry>Value(s)</entry></row></thead><tbody><row><entry>classCode</entry><entry>@classCode</entry><entry>1..1</entry><entry>SHALL</entry><entry>NO</entry><entry>ActClassObservation</entry><entry>CONF:13905</entry><entry> ALRT</entry></row> 
 <row><entry>moodCode</entry><entry>@moodCode</entry><entry>1..1</entry><entry>SHALL</entry><entry>NO</entry><entry>x_ActMoodDocumentObservation</entry><entry>CONF:13906</entry><entry> DEF</entry></row> 
-<row><entry>code</entry><entry>code</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>CD</entry><entry>CONF:13908</entry><entry>LOINC 2.16.840.1.113883.6.1 null</entry></row> 
+<row><entry>code</entry><entry>code</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>CD</entry><entry>CONF:13908</entry><entry>LOINC 2.16.840.1.113883.6.1 </entry></row> 
 <row><entry>effectiveTime</entry><entry>effectiveTime</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>IVL_TS</entry><entry>CONF:13930</entry><entry> </entry></row> 
 <row><entry>id</entry><entry>id</entry><entry>1..*</entry><entry>SHALL</entry><entry>YES</entry><entry>II</entry><entry>CONF:13907</entry><entry> </entry></row> 
 <row><entry>interpretationCode</entry><entry>interpretationCode</entry><entry>0..*</entry><entry>SHOULD</entry><entry>YES</entry><entry>CE</entry><entry>CONF:13933</entry><entry> </entry></row> 
 <row><entry>methodCode</entry><entry>methodCode</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>CE</entry><entry>CONF:13934</entry><entry> </entry></row> 
-<row><entry>statusCode</entry><entry>statusCode</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>CS</entry><entry>CONF:13929</entry><entry>ActStatus 2.16.840.1.113883.5.14 completed</entry></row> 
+<row><entry>statusCode</entry><entry>statusCode</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>CS</entry><entry>CONF:13929</entry><entry>ActStatus 2.16.840.1.113883.5.14 </entry></row> 
 <row><entry>targetSiteCode</entry><entry>targetSiteCode</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>CE</entry><entry>CONF:13935</entry><entry> </entry></row> 
 <row><entry>text</entry><entry>text</entry><entry>0..1</entry><entry>SHOULD</entry><entry>YES</entry><entry>ED</entry><entry>CONF:13926</entry><entry> </entry></row> 
 <row><entry>value</entry><entry>value</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>ANY</entry><entry>CONF:13932</entry><entry> </entry></row> 
 <row><entry>assessmentScaleObservation</entry><entry>assessmentScaleObservation</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>AssessmentScaleObservation</entry><entry>CONF:14465CONF:14598CONF:14466</entry><entry> </entry></row> 
 <row><entry>author</entry><entry>author</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>Author</entry><entry>CONF:13936</entry><entry> </entry></row> 
 <row><entry>caregiverCharacteristics</entry><entry>caregiverCharacteristics</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>CaregiverCharacteristics</entry><entry>CONF:13895CONF:14597CONF:13897</entry><entry> </entry></row> 
-<row><entry>functionalStatusResultObservation</entry><entry>functionalStatusResultObservation</entry><entry>1..*</entry><entry>SHALL</entry><entry>YES</entry><entry>FunctionalStatusResultObservation</entry><entry>CONF:14359CONF:14368</entry><entry> </entry></row> 
+<row><entry>functionalStatusResultObservation</entry><entry>functionalStatusResultObservation</entry><entry>0..*</entry><entry>MAY</entry><entry>YES</entry><entry>FunctionalStatusResultObservation</entry><entry>CONF:14418CONF:14419</entry><entry> </entry></row> 
 <row><entry>nonMedicinalSupplyActivity</entry><entry>nonMedicinalSupplyActivity</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>NonMedicinalSupplyActivity</entry><entry>CONF:13892CONF:14596CONF:14218</entry><entry> </entry></row> 
 <row><entry>referenceRange</entry><entry>referenceRange</entry><entry>0..*</entry><entry>SHOULD</entry><entry>YES</entry><entry>ReferenceRange</entry><entry>CONF:13937</entry><entry> </entry></row> 
 </tbody></tgroup></table></p></section>
-<codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
-<observation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd" classCode="OBS" moodCode="EVN">
-  <templateId root="2.16.840.1.113883.10.20.22.4.67"/>
-  <templateId root="2.16.840.1.113883.10.20.22.4.2"/>
-  <id root="MDHT" extension="1269705296"/>
-  <code codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+<codeblock id="example"><![CDATA[<observation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3">
+  <id root="MDHT" extension="209561481"/>
+  <code code="455239781"/>
   <text>Text Value</text>
   <statusCode code="completed"/>
   <effectiveTime>
-    <low value="2012"/>
-    <high value="2012"/>
+    <low value="2013"/>
+    <high value="2013"/>
   </effectiveTime>
-  <interpretationCode code="1921738738"/>
-  <methodCode code="1192772935"/>
-  <targetSiteCode xsi:type="CE" code="596244348"/>
+  <interpretationCode code="1024473455"/>
+  <methodCode code="9988762"/>
+  <targetSiteCode xsi:type="CE" code="1760974137"/>
   <author/>
   <entryRelationship>
-    <supply classCode="SPLY">
-      <templateId root="2.16.840.1.113883.10.20.22.4.50"/>
-      <id root="MDHT" extension="1023987619"/>
-      <code code="335160828"/>
+    <supply>
+      <id root="MDHT" extension="1838515884"/>
+      <code code="957580877"/>
       <text>Text Value</text>
       <statusCode code="completed"/>
-      <effectiveTime value="20121102"/>
+      <effectiveTime value="20130627"/>
     </supply>
   </entryRelationship>
   <entryRelationship>
-    <observation classCode="OBS" moodCode="EVN">
-      <templateId root="2.16.840.1.113883.10.20.22.4.72"/>
-      <id root="MDHT" extension="1523488520"/>
-      <code code="82031675"/>
+    <observation>
+      <id root="MDHT" extension="1173080155"/>
+      <code code="1515442758"/>
       <text>Text Value</text>
       <statusCode code="completed"/>
       <effectiveTime>
-        <low value="2012"/>
-        <high value="2012"/>
+        <low value="2013"/>
+        <high value="2013"/>
       </effectiveTime>
-      <value xsi:type="CD" code="1514667326"/>
-      <interpretationCode code="788460784"/>
-      <methodCode code="1456169253"/>
-      <targetSiteCode code="336991043"/>
+      <value xsi:type="CD" code="769524852"/>
+      <interpretationCode code="2013259994"/>
+      <methodCode code="1785276183"/>
+      <targetSiteCode code="228080161"/>
       <participant>
         <time>
-          <low value="2012"/>
-          <high value="2012"/>
+          <low value="2013"/>
+          <high value="2013"/>
         </time>
         <participantRole/>
       </participant>
     </observation>
   </entryRelationship>
   <entryRelationship>
-    <observation classCode="OBS" moodCode="EVN">
-      <templateId root="2.16.840.1.113883.10.20.22.4.69"/>
-      <id root="MDHT" extension="1612518210"/>
-      <code code="1759685671"/>
+    <observation>
+      <id root="MDHT" extension="867929790"/>
+      <code code="787275912"/>
       <text>Text Value</text>
       <statusCode code="completed"/>
       <effectiveTime>
-        <low value="2012"/>
-        <high value="2012"/>
+        <low value="2013"/>
+        <high value="2013"/>
       </effectiveTime>
-      <interpretationCode code="488366526"/>
-      <methodCode code="796557577"/>
-      <targetSiteCode code="1444100404"/>
+      <interpretationCode code="547548872"/>
+      <methodCode code="2004145192"/>
+      <targetSiteCode code="980917265"/>
       <author/>
       <entryRelationship>
-        <observation classCode="OBS" moodCode="EVN">
-          <templateId root="2.16.840.1.113883.10.20.22.4.86"/>
-          <id root="MDHT" extension="744359962"/>
-          <code code="1313379423"/>
+        <observation>
+          <id root="MDHT" extension="992161001"/>
+          <code code="877588208"/>
           <text>Text Value</text>
           <statusCode code="completed"/>
           <effectiveTime>
-            <low value="2012"/>
-            <high value="2012"/>
+            <low value="2013"/>
+            <high value="2013"/>
           </effectiveTime>
-          <interpretationCode code="2095528516"/>
-          <methodCode code="1024606417"/>
-          <targetSiteCode code="1560241903"/>
+          <interpretationCode code="1316339303"/>
+          <methodCode code="1634908763"/>
+          <targetSiteCode code="1350429191"/>
         </observation>
       </entryRelationship>
       <referenceRange>

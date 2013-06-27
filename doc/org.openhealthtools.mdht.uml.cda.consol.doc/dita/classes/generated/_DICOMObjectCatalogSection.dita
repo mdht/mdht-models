@@ -31,39 +31,32 @@ DICOM Object Catalog sections are not intended for viewing and contain empty sec
 <li>Contains exactly one [1..1] <xref href="../StudyAct.dita">Study Act</xref> (templateId: <tt>2.16.840.1.113883.10.20.6.2.6</tt>)</li></ol></li>
 <li>A DICOM Object Catalog <b>SHALL</b> be present if the document contains references to DICOM Images. If present, it <b>SHALL</b> be the first section in the document. (CONF:8527)</li>
 </ol>
-<section id="tableconformance"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="8" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><colspec colname="col2" colnum="2" /><colspec colname="col3" colnum="3" /><colspec colname="col4" colnum="4" /><colspec colname="col5" colnum="5" /><colspec colname="col6" colnum="6" /><colspec colname="col7" colnum="7" /><thead> <row><entry namest="col0" nameend="col7" >consol::DICOMObjectCatalogSection</entry>  </row>  <row><entry namest="col0" nameend="col7" >/cda:ClinicalDocument/cda:component/cda:structuredBody/cda:component/cda:section[cda:templateId/@root = 2.16.840.1.113883.10.20.6.1.1]/</entry>  </row>  <row><entry>Name</entry><entry>XPath</entry><entry>Cardinality</entry><entry>Severity</entry><entry>Nullable</entry><entry>Data Type</entry><entry>Conformance</entry><entry>Value(s)</entry></row></thead><tbody><row><entry>code</entry><entry>code</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>CE</entry><entry>CONF:15457</entry><entry>DCM 1.2.840.10008.2.16.4 121181</entry></row> 
+<section id="tableconformance"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="8" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><colspec colname="col2" colnum="2" /><colspec colname="col3" colnum="3" /><colspec colname="col4" colnum="4" /><colspec colname="col5" colnum="5" /><colspec colname="col6" colnum="6" /><colspec colname="col7" colnum="7" /><thead> <row><entry namest="col0" nameend="col7" >consol::DICOMObjectCatalogSection</entry>  </row>  <row><entry namest="col0" nameend="col7" >/cda:ClinicalDocument/cda:component/cda:structuredBody/cda:component/cda:section/</entry>  </row>  <row><entry>Name</entry><entry>XPath</entry><entry>Cardinality</entry><entry>Severity</entry><entry>Nullable</entry><entry>Data Type</entry><entry>Conformance</entry><entry>Value(s)</entry></row></thead><tbody><row><entry>code</entry><entry>code</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>CE</entry><entry>CONF:15457</entry><entry>DCM 1.2.840.10008.2.16.4 </entry></row> 
 <row><entry>dICOMObjectCatalogSection</entry><entry>dICOMObjectCatalogSection</entry><entry>0..1</entry><entry>SHOULD</entry><entry>YES</entry><entry>DICOMObjectCatalogSection</entry><entry>CONF:15141</entry><entry> </entry></row> 
-<row><entry>studyAct</entry><entry>cda:entry/cda:act[cda:templateId/@root = 2.16.840.1.113883.10.20.6.2.6]</entry><entry>1..*</entry><entry>SHALL</entry><entry>YES</entry><entry>StudyAct</entry><entry>CONF:8530CONF:15458</entry><entry> </entry></row> 
+<row><entry>studyAct</entry><entry>cda:entry/cda:act</entry><entry>1..*</entry><entry>SHALL</entry><entry>YES</entry><entry>StudyAct</entry><entry>CONF:8530CONF:15458</entry><entry> </entry></row> 
 </tbody></tgroup></table></p></section>
-<codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
-<section xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd">
-  <templateId root="2.16.840.1.113883.10.20.6.1.1"/>
-  <id root="MDHT" extension="530589717"/>
-  <code code="121181" codeSystem="1.2.840.10008.2.16.4" codeSystemName="DCM" displayName="Dicom Object Catalog"/>
+<codeblock id="example"><![CDATA[<section xmlns="urn:hl7-org:v3">
+  <id root="MDHT" extension="1530874024"/>
+  <code code="1370205117"/>
   <title>TEXT FOR TITLE</title>
   <entry>
-    <act classCode="ACT" moodCode="EVN">
-      <templateId root="2.16.840.1.113883.10.20.6.2.6"/>
-      <id root="MDHT" extension="1879091000"/>
-      <code code="113014" codeSystem="1.2.840.10008.2.16.4" codeSystemName="DCM"/>
+    <act>
+      <id root="MDHT" extension="1017776022"/>
+      <code code="2082718166"/>
       <effectiveTime>
-        <low value="2012"/>
-        <high value="2012"/>
+        <low value="2013"/>
+        <high value="2013"/>
       </effectiveTime>
       <entryRelationship>
-        <act classCode="ACT" moodCode="EVN">
-          <templateId root="2.16.840.1.113883.10.20.22.4.63"/>
-          <id root="MDHT" extension="58298861"/>
-          <code code="113015" codeSystem="1.2.840.10008.2.16.4" codeSystemName="DCM"/>
+        <act>
+          <id root="MDHT" extension="673332691"/>
+          <code code="1644333162"/>
           <effectiveTime>
-            <low value="2012"/>
-            <high value="2012"/>
+            <low value="2013"/>
+            <high value="2013"/>
           </effectiveTime>
           <entryRelationship>
-            <observation classCode="DGIMG" moodCode="EVN">
-              <templateId root="2.16.840.1.113883.10.20.6.2.8"/>
-              <code codeSystem="1.2.840.10008.2.6.1" codeSystemName="DCMUID"/>
-            </observation>
+            <observation/>
           </entryRelationship>
         </act>
       </entryRelationship>

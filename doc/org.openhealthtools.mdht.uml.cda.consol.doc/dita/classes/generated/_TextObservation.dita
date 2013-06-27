@@ -68,7 +68,7 @@ A Text Observation is required if the findings in the section text are represent
 <li>reference, if present, <b>SHOULD</b> contain zero or one [0..1] @value (CONF:15939)</li>
 <li>reference/@value <b>SHALL</b> begin with a '#' and <b>SHALL</b> point to its corresponding narrative (using the approach defined in CDA Release 2, section 4.3.5.1) (CONF:15940)</li>
 </ol>
-<section id="tableconformance"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="8" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><colspec colname="col2" colnum="2" /><colspec colname="col3" colnum="3" /><colspec colname="col4" colnum="4" /><colspec colname="col5" colnum="5" /><colspec colname="col6" colnum="6" /><colspec colname="col7" colnum="7" /><thead> <row><entry namest="col0" nameend="col7" >consol::TextObservation</entry>  </row>  <row><entry namest="col0" nameend="col7" >cda::observation[cda:templateId/@root = 2.16.840.1.113883.10.20.6.2.12]/</entry>  </row>  <row><entry>Name</entry><entry>XPath</entry><entry>Cardinality</entry><entry>Severity</entry><entry>Nullable</entry><entry>Data Type</entry><entry>Conformance</entry><entry>Value(s)</entry></row></thead><tbody><row><entry>classCode</entry><entry>@classCode</entry><entry>1..1</entry><entry>SHALL</entry><entry>NO</entry><entry>ActClassObservation</entry><entry>CONF:9288</entry><entry> ALRT</entry></row> 
+<section id="tableconformance"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="8" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><colspec colname="col2" colnum="2" /><colspec colname="col3" colnum="3" /><colspec colname="col4" colnum="4" /><colspec colname="col5" colnum="5" /><colspec colname="col6" colnum="6" /><colspec colname="col7" colnum="7" /><thead> <row><entry namest="col0" nameend="col7" >consol::TextObservation</entry>  </row>  <row><entry namest="col0" nameend="col7" >cda::observation[cda:templateId/@root = ]/</entry>  </row>  <row><entry>Name</entry><entry>XPath</entry><entry>Cardinality</entry><entry>Severity</entry><entry>Nullable</entry><entry>Data Type</entry><entry>Conformance</entry><entry>Value(s)</entry></row></thead><tbody><row><entry>classCode</entry><entry>@classCode</entry><entry>1..1</entry><entry>SHALL</entry><entry>NO</entry><entry>ActClassObservation</entry><entry>CONF:9288</entry><entry> ALRT</entry></row> 
 <row><entry>moodCode</entry><entry>@moodCode</entry><entry>1..1</entry><entry>SHALL</entry><entry>NO</entry><entry>x_ActMoodDocumentObservation</entry><entry>CONF:9289</entry><entry> DEF</entry></row> 
 <row><entry>code</entry><entry>code</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>CD</entry><entry>CONF:9291</entry><entry> </entry></row> 
 <row><entry>effectiveTime</entry><entry>effectiveTime</entry><entry>0..1</entry><entry>SHOULD</entry><entry>YES</entry><entry>IVL_TS</entry><entry>CONF:9294</entry><entry> </entry></row> 
@@ -77,91 +77,76 @@ A Text Observation is required if the findings in the section text are represent
 <row><entry>quantityMeasurementObservation</entry><entry>quantityMeasurementObservation</entry><entry>0..*</entry><entry>MAY</entry><entry>YES</entry><entry>QuantityMeasurementObservation</entry><entry>CONF:9301CONF:9302CONF:15942</entry><entry> </entry></row> 
 <row><entry>sOPInstanceObservation</entry><entry>sOPInstanceObservation</entry><entry>0..*</entry><entry>MAY</entry><entry>YES</entry><entry>SOPInstanceObservation</entry><entry>CONF:9298CONF:9299CONF:15941</entry><entry> </entry></row> 
 </tbody></tgroup></table></p></section>
-<codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
-<observation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd" classCode="OBS" moodCode="EVN">
-  <templateId root="2.16.840.1.113883.10.20.6.2.12"/>
-  <id root="MDHT" extension="1377541446"/>
-  <code code="211844866"/>
+<codeblock id="example"><![CDATA[<observation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3">
+  <id root="MDHT" extension="1057592002"/>
+  <code code="958702401"/>
   <text>Text Value</text>
   <effectiveTime>
-    <low value="2012"/>
-    <high value="2012"/>
+    <low value="2013"/>
+    <high value="2013"/>
   </effectiveTime>
   <value xsi:type="ED">Text Value</value>
   <entryRelationship>
-    <observation classCode="DGIMG" moodCode="EVN">
-      <templateId root="2.16.840.1.113883.10.20.6.2.8"/>
-      <id root="MDHT" extension="369416654"/>
-      <code codeSystem="1.2.840.10008.2.6.1" codeSystemName="DCMUID"/>
+    <observation>
+      <id root="MDHT" extension="239001245"/>
+      <code code="302659583"/>
       <text>Text Value</text>
       <effectiveTime>
-        <low value="2012"/>
-        <high value="2012"/>
+        <low value="2013"/>
+        <high value="2013"/>
       </effectiveTime>
       <entryRelationship>
-        <observation classCode="OBS" moodCode="EVN">
-          <templateId root="2.16.840.1.113883.10.20.6.2.9"/>
-          <id root="MDHT" extension="923786147"/>
-          <code code="468739039"/>
+        <observation>
+          <id root="MDHT" extension="439037399"/>
+          <code code="1138691832"/>
           <text>Text Value</text>
           <effectiveTime>
-            <low value="2012"/>
-            <high value="2012"/>
+            <low value="2013"/>
+            <high value="2013"/>
           </effectiveTime>
-          <value xsi:type="CD" code="1199144240"/>
+          <value xsi:type="CD" code="2069444001"/>
         </observation>
       </entryRelationship>
       <entryRelationship>
-        <observation classCode="ROIBND" moodCode="EVN">
-          <templateId root="2.16.840.1.113883.10.20.6.2.10"/>
-          <id root="MDHT" extension="1590031229"/>
-          <code code="121190" codeSystem="1.2.840.10008.2.16.4" codeSystemName="DCM" displayName="Referenced Frames"/>
+        <observation>
+          <id root="MDHT" extension="1063406599"/>
+          <code code="2136796051"/>
           <text>Text Value</text>
           <effectiveTime>
-            <low value="2012"/>
-            <high value="2012"/>
+            <low value="2013"/>
+            <high value="2013"/>
           </effectiveTime>
           <entryRelationship>
-            <observation classCode="OBS" moodCode="EVN">
-              <templateId root="2.16.840.1.113883.10.20.6.2.11"/>
-              <code code="113036" codeSystem="1.2.840.10008.2.16.4" codeSystemName="DCM" displayName="Frames for Display"/>
-            </observation>
+            <observation/>
           </entryRelationship>
         </observation>
       </entryRelationship>
     </observation>
   </entryRelationship>
   <entryRelationship>
-    <observation classCode="OBS" moodCode="EVN">
-      <templateId root="2.16.840.1.113883.10.20.6.2.14"/>
-      <id root="MDHT" extension="369592917"/>
-      <code code="1632914300"/>
+    <observation>
+      <id root="MDHT" extension="473143270"/>
+      <code code="1692198516"/>
       <text>Text Value</text>
       <effectiveTime>
-        <low value="2012"/>
-        <high value="2012"/>
+        <low value="2013"/>
+        <high value="2013"/>
       </effectiveTime>
       <value xsi:type="PQ"/>
       <entryRelationship>
-        <observation classCode="DGIMG" moodCode="EVN">
-          <templateId root="2.16.840.1.113883.10.20.6.2.8"/>
-          <id root="MDHT" extension="685287874"/>
-          <code codeSystem="1.2.840.10008.2.6.1" codeSystemName="DCMUID"/>
+        <observation>
+          <id root="MDHT" extension="1000218091"/>
+          <code code="1218105494"/>
           <text>Text Value</text>
           <effectiveTime>
-            <low value="2012"/>
-            <high value="2012"/>
+            <low value="2013"/>
+            <high value="2013"/>
           </effectiveTime>
           <entryRelationship>
-            <observation classCode="OBS" moodCode="EVN">
-              <templateId root="2.16.840.1.113883.10.20.6.2.9"/>
-            </observation>
+            <observation/>
           </entryRelationship>
           <entryRelationship>
-            <observation classCode="ROIBND" moodCode="EVN">
-              <templateId root="2.16.840.1.113883.10.20.6.2.10"/>
-              <code code="121190" codeSystem="1.2.840.10008.2.16.4" codeSystemName="DCM" displayName="Referenced Frames"/>
-            </observation>
+            <observation/>
           </entryRelationship>
         </observation>
       </entryRelationship>

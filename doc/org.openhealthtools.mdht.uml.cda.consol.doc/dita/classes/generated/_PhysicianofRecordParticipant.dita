@@ -26,20 +26,18 @@
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>assignedEntity</b></tt> (CONF:8886) <ol><li> This assignedEntity <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:8888)</li><li> This assignedEntity <b>SHALL</b> contain at least one [1..*] <tt><b>id</b></tt> (CONF:8887)</li><li> This assignedEntity <b>SHOULD</b> contain zero or one [0..1] <tt><b>assignedPerson</b></tt> <ol><li> This assignedPerson <b>SHOULD</b> contain zero or one [0..1] <tt><b>name</b></tt> (CONF:8890)</li></ol> </li><li> This assignedEntity <b>SHALL</b> contain a valid DICOM Organizational Role from DICOM CID 7452  (Value Set 1.2.840.10008.6.1.516)(@codeSystem is 1.2.840.10008.2.16.4) or an appropriate national health care provider coding system (e.g., NUCC in the U.S., where @codeSystem is 2.16.840.1.113883.6.101) (CONF:8889).</li><li> This assignedEntity The id <b>SHOULD</b> include zero or one [0..1] id where id/@root ="2.16.840.1.113883.4.6" National Provider Identifier (CONF:10034)</li></ol>
 </li>
 </ol>
-<section id="tableconformance"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="8" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><colspec colname="col2" colnum="2" /><colspec colname="col3" colnum="3" /><colspec colname="col4" colnum="4" /><colspec colname="col5" colnum="5" /><colspec colname="col6" colnum="6" /><colspec colname="col7" colnum="7" /><thead> <row><entry namest="col0" nameend="col7" >consol::PhysicianofRecordParticipant</entry>  </row>  <row><entry namest="col0" nameend="col7" >cda::encounterparticipant[cda:templateId/@root = 2.16.840.1.113883.10.20.6.2.2]/</entry>  </row>  <row><entry>Name</entry><entry>XPath</entry><entry>Cardinality</entry><entry>Severity</entry><entry>Nullable</entry><entry>Data Type</entry><entry>Conformance</entry><entry>Value(s)</entry></row></thead><tbody><row><entry>typeCode</entry><entry>@typeCode</entry><entry>1..1</entry><entry>SHALL</entry><entry>NO</entry><entry>x_EncounterParticipant</entry><entry>CONF:8881</entry><entry> ADM</entry></row> 
+<section id="tableconformance"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="8" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><colspec colname="col2" colnum="2" /><colspec colname="col3" colnum="3" /><colspec colname="col4" colnum="4" /><colspec colname="col5" colnum="5" /><colspec colname="col6" colnum="6" /><colspec colname="col7" colnum="7" /><thead> <row><entry namest="col0" nameend="col7" >consol::PhysicianofRecordParticipant</entry>  </row>  <row><entry namest="col0" nameend="col7" >cda::encounterparticipant[cda:templateId/@root = ]/</entry>  </row>  <row><entry>Name</entry><entry>XPath</entry><entry>Cardinality</entry><entry>Severity</entry><entry>Nullable</entry><entry>Data Type</entry><entry>Conformance</entry><entry>Value(s)</entry></row></thead><tbody><row><entry>typeCode</entry><entry>@typeCode</entry><entry>1..1</entry><entry>SHALL</entry><entry>NO</entry><entry>x_EncounterParticipant</entry><entry>CONF:8881</entry><entry> ADM</entry></row> 
 <row><entry>assignedEntity</entry><entry>assignedEntity</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>AssignedEntity</entry><entry>CONF:8886</entry><entry> </entry></row> 
 <row><entry>physicianofRecordParticipant</entry><entry>physicianofRecordParticipant</entry><entry>0..1</entry><entry>SHOULD</entry><entry>YES</entry><entry>PhysicianofRecordParticipant</entry><entry>CONF:8448</entry><entry> </entry></row> 
 </tbody></tgroup></table></p></section>
-<codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
-<encounterparticipant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd" typeCode="ATND">
-  <templateId root="2.16.840.1.113883.10.20.6.2.2"/>
+<codeblock id="example"><![CDATA[<encounterparticipant xmlns="urn:hl7-org:v3">
   <time>
-    <low value="2012"/>
-    <high value="2012"/>
+    <low value="2013"/>
+    <high value="2013"/>
   </time>
   <assignedEntity>
-    <id root="MDHT" extension="218516470"/>
-    <code code="1715183690"/>
+    <id root="MDHT" extension="89796496"/>
+    <code code="933826171"/>
     <assignedPerson>
       <name/>
     </assignedPerson>

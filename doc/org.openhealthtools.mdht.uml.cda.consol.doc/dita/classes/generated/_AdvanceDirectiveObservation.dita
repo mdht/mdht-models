@@ -70,31 +70,28 @@ i. If the starting time is unknown, the &lt;low&gt; element <b>SHALL</b> have th
 i. If the ending time is unknown, the &lt;high&gt; element <b>SHALL</b> have the nullFlavor attribute set to UNK.
 ii. If the Advance Directive does not have a specified ending time, the &lt;high&gt; element <b>SHALL</b> have the nullFlavor attribute set to NA. (CONF:8659, CONF:8660)</li>
 </ol>
-<section id="tableconformance"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="8" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><colspec colname="col2" colnum="2" /><colspec colname="col3" colnum="3" /><colspec colname="col4" colnum="4" /><colspec colname="col5" colnum="5" /><colspec colname="col6" colnum="6" /><colspec colname="col7" colnum="7" /><thead> <row><entry namest="col0" nameend="col7" >consol::AdvanceDirectiveObservation</entry>  </row>  <row><entry namest="col0" nameend="col7" >cda::observation[cda:templateId/@root = 2.16.840.1.113883.10.20.22.4.48]/</entry>  </row>  <row><entry>Name</entry><entry>XPath</entry><entry>Cardinality</entry><entry>Severity</entry><entry>Nullable</entry><entry>Data Type</entry><entry>Conformance</entry><entry>Value(s)</entry></row></thead><tbody><row><entry>classCode</entry><entry>@classCode</entry><entry>1..1</entry><entry>SHALL</entry><entry>NO</entry><entry>ActClass</entry><entry>CONF:8648</entry><entry> ALRT</entry></row> 
+<section id="tableconformance"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="8" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><colspec colname="col2" colnum="2" /><colspec colname="col3" colnum="3" /><colspec colname="col4" colnum="4" /><colspec colname="col5" colnum="5" /><colspec colname="col6" colnum="6" /><colspec colname="col7" colnum="7" /><thead> <row><entry namest="col0" nameend="col7" >consol::AdvanceDirectiveObservation</entry>  </row>  <row><entry namest="col0" nameend="col7" >cda::observation[cda:templateId/@root = ]/</entry>  </row>  <row><entry>Name</entry><entry>XPath</entry><entry>Cardinality</entry><entry>Severity</entry><entry>Nullable</entry><entry>Data Type</entry><entry>Conformance</entry><entry>Value(s)</entry></row></thead><tbody><row><entry>classCode</entry><entry>@classCode</entry><entry>1..1</entry><entry>SHALL</entry><entry>NO</entry><entry>ActClass</entry><entry>CONF:8648</entry><entry> ALRT</entry></row> 
 <row><entry>moodCode</entry><entry>@moodCode</entry><entry>1..1</entry><entry>SHALL</entry><entry>NO</entry><entry>ActMood</entry><entry>CONF:8649</entry><entry> DEF</entry></row> 
-<row><entry>code</entry><entry>code</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>CD</entry><entry>CONF:8651</entry><entry> null</entry></row> 
+<row><entry>code</entry><entry>code</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>CD</entry><entry>CONF:8651</entry><entry> </entry></row> 
 <row><entry>effectiveTime</entry><entry>effectiveTime</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>IVL_TS</entry><entry>CONF:8656</entry><entry> </entry></row> 
 <row><entry>id</entry><entry>id</entry><entry>1..*</entry><entry>SHALL</entry><entry>YES</entry><entry>II</entry><entry>CONF:8654</entry><entry> </entry></row> 
-<row><entry>statusCode</entry><entry>statusCode</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>CS</entry><entry>CONF:8652</entry><entry>ActStatus 2.16.840.1.113883.5.14 completed</entry></row> 
+<row><entry>statusCode</entry><entry>statusCode</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>CS</entry><entry>CONF:8652</entry><entry>ActStatus 2.16.840.1.113883.5.14 </entry></row> 
 <row><entry>advanceDirectiveObservation</entry><entry>advanceDirectiveObservation</entry><entry>1..*</entry><entry>SHALL</entry><entry>YES</entry><entry>AdvanceDirectiveObservation</entry><entry>CONF:8647CONF:8801</entry><entry> </entry></row> 
 <row><entry>custodian</entry><entry>custodian</entry><entry>1..1</entry><entry>SHOULD</entry><entry>YES</entry><entry>Custodian</entry><entry>CONF:8667</entry><entry> </entry></row> 
 <row><entry>reference</entry><entry>reference</entry><entry>1..*</entry><entry>SHOULD</entry><entry>YES</entry><entry>Reference</entry><entry>CONF:8692</entry><entry> </entry></row> 
 <row><entry>verifier</entry><entry>verifier</entry><entry>1..*</entry><entry>SHOULD</entry><entry>YES</entry><entry>Verifier</entry><entry>CONF:8662</entry><entry> </entry></row> 
 </tbody></tgroup></table></p></section>
-<codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
-<observation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd" classCode="OBS" moodCode="EVN">
-  <templateId root="2.16.840.1.113883.10.20.22.4.48"/>
-  <id root="MDHT" extension="1282415972"/>
-  <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
-  <statusCode code="completed"/>
+<codeblock id="example"><![CDATA[<observation xmlns="urn:hl7-org:v3">
+  <id root="MDHT" extension="524870265"/>
+  <code code="1084520164"/>
   <effectiveTime>
-    <low value="2012"/>
-    <high value="2012"/>
+    <low value="2013"/>
+    <high value="2013"/>
   </effectiveTime>
   <participant typeCode="VRF">
     <time>
-      <low value="2012"/>
-      <high value="2012"/>
+      <low value="2013"/>
+      <high value="2013"/>
     </time>
     <participantRole/>
   </participant>
@@ -107,7 +104,7 @@ ii. If the Advance Directive does not have a specified ending time, the &lt;high
   </participant>
   <reference typeCode="REFR">
     <externalDocument>
-      <id root="MDHT" extension="414973581"/>
+      <id root="MDHT" extension="107508009"/>
       <text>Text Value</text>
     </externalDocument>
   </reference>

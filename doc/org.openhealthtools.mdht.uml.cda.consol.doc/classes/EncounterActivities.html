@@ -85,6 +85,13 @@
 </ol>
 </li>
 
+<li class="li"><strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">sDTCDischargeDispositionCode</strong></tt>, where the @code <strong class="ph b">SHALL</strong> be selected from ValueSet<tt class="ph tt"> <a class="xref" href="../terminology/NUBCUB04FL17PatientStatus.html">NUBC UB-04 FL17-Patient Status</a> 2.16.840.1.113883.6.301.5</tt><strong class="ph b"> STATIC</strong> (CONF:9929)
+<ul class="ul"><li class="li"><div class="p"><p class="lines"><em class="ph i">The prefix sdtc: SHALL be bound to the namespace "urn:hl7-org:sdtc". The use of the namespace provides a necessary extension to CDA R2 for the use of the dischargeDispositionCode element.</em></p>
+</div>
+</li>
+</ul>
+</li>
+
 <li class="li">code, if present, <strong class="ph b">SHOULD</strong> contain zero or one [0..1] originalText (CONF:8719)</li>
 
 <li class="li">originalText, if present, <strong class="ph b">SHOULD</strong> contain zero or one [0..1] reference (CONF:15970)</li>
@@ -92,8 +99,6 @@
 <li class="li">reference, if present, <strong class="ph b">SHOULD</strong> contain zero or one [0..1] @value (CONF:15971)</li>
 
 <li class="li">reference/@value <strong class="ph b">SHALL</strong> begin with a '#' and <strong class="ph b">SHALL</strong> point to its corresponding narrative (using the approach defined in CDA Release 2, section 4.3.5.1) (CONF:15972)</li>
-
-<li class="li"><strong class="ph b">MAY</strong> contain zero or one [0..1] sdtc:dischargeDispositionCode, which <strong class="ph b">SHALL</strong> be selected from ValueSet 2.16.840.1.113883.3.88.12.80.33 NUBC UB-04 FL17-Patient Status DYNAMIC or, if access to NUBC is unavailable, from CodeSystem 2.16.840.1.113883.12.112 HL7 Discharge Disposition. The prefix sdtc: <strong class="ph b">SHALL</strong> be bound to the namespace "urn:hl7-org:sdtc". The use of the namespace provides a necessary extension to CDA R2 for the use of the dischargeDispositionCode element (CONF:9929) (CONF:9929)</li>
 
 <li class="li">EncounterActivities with target entry Service Delivery Location <strong class="ph b">SHALL</strong> contain exactly one [1..1] @typeCode="LOC" Location (CodeSystem: 2.16.840.1.113883.5.1002 HL7ActRelationshipType) STATIC (CONF:8740)</li>
 
@@ -107,77 +112,58 @@
 			<strong class="ph b"><span class="ph">Encounter Activities</span> example</strong>
 		</p>
 		
-		<pre class="pre codeblock">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
-&lt;encounter xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd" classCode="ENC" moodCode="EVN"&gt;
-  &lt;templateId root="2.16.840.1.113883.10.20.22.4.49"/&gt;
-  &lt;id root="MDHT" extension="87490210"/&gt;
-  &lt;code codeSystem="2.16.840.1.113883.6.12" codeSystemName="CPT-4"/&gt;
+		<pre class="pre codeblock">&lt;encounter xmlns="urn:hl7-org:v3" xmlns:sdtc="urn:hl7-org:sdtc"&gt;
+  &lt;id root="MDHT" extension="1232993208"/&gt;
   &lt;effectiveTime&gt;
-    &lt;low value="2012"/&gt;
-    &lt;high value="2012"/&gt;
+    &lt;low value="2013"/&gt;
+    &lt;high value="2013"/&gt;
   &lt;/effectiveTime&gt;
   &lt;performer&gt;
     &lt;assignedEntity&gt;
-      &lt;id root="MDHT" extension="454755722"/&gt;
-      &lt;code code="763958632"/&gt;
+      &lt;id root="MDHT" extension="734236637"/&gt;
+      &lt;code code="1147816843"/&gt;
     &lt;/assignedEntity&gt;
   &lt;/performer&gt;
   &lt;entryRelationship&gt;
-    &lt;observation classCode="OBS" moodCode="EVN"&gt;
-      &lt;templateId root="2.16.840.1.113883.10.20.22.4.19"/&gt;
-      &lt;id root="MDHT" extension="144873532"/&gt;
-      &lt;code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/&gt;
-      &lt;statusCode code="completed"/&gt;
+    &lt;observation&gt;
+      &lt;id root="MDHT" extension="421689742"/&gt;
+      &lt;code code="167424136"/&gt;
       &lt;effectiveTime&gt;
-        &lt;low value="2012"/&gt;
-        &lt;high value="2012"/&gt;
+        &lt;low value="2013"/&gt;
+        &lt;high value="2013"/&gt;
       &lt;/effectiveTime&gt;
     &lt;/observation&gt;
   &lt;/entryRelationship&gt;
   &lt;entryRelationship&gt;
-    &lt;act classCode="ACT" moodCode="EVN"&gt;
-      &lt;templateId root="2.16.840.1.113883.10.20.22.4.80"/&gt;
-      &lt;id root="MDHT" extension="2078610096"/&gt;
-      &lt;code code="29308-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Diagnosis"/&gt;
+    &lt;act&gt;
+      &lt;id root="MDHT" extension="617385202"/&gt;
+      &lt;code code="381589961"/&gt;
       &lt;effectiveTime&gt;
-        &lt;low value="2012"/&gt;
-        &lt;high value="2012"/&gt;
+        &lt;low value="2013"/&gt;
+        &lt;high value="2013"/&gt;
       &lt;/effectiveTime&gt;
       &lt;entryRelationship&gt;
-        &lt;observation classCode="OBS" moodCode="EVN"&gt;
-          &lt;templateId root="2.16.840.1.113883.10.20.22.4.4"/&gt;
-          &lt;id root="MDHT" extension="1481352696"/&gt;
-          &lt;code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/&gt;
-          &lt;statusCode code="completed"/&gt;
+        &lt;observation&gt;
+          &lt;id root="MDHT" extension="2079859474"/&gt;
+          &lt;code code="840523137"/&gt;
           &lt;effectiveTime&gt;
-            &lt;low value="2012"/&gt;
-            &lt;high value="2012"/&gt;
+            &lt;low value="2013"/&gt;
+            &lt;high value="2013"/&gt;
           &lt;/effectiveTime&gt;
           &lt;entryRelationship&gt;
-            &lt;observation classCode="OBS" moodCode="EVN"&gt;
-              &lt;templateId root="2.16.840.1.113883.10.20.22.4.31"/&gt;
-              &lt;code code="445518008" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT" displayName="Age At Onset"/&gt;
-              &lt;statusCode code="completed"/&gt;
-            &lt;/observation&gt;
+            &lt;observation/&gt;
           &lt;/entryRelationship&gt;
           &lt;entryRelationship&gt;
-            &lt;observation classCode="OBS" moodCode="EVN"&gt;
-              &lt;templateId root="2.16.840.1.113883.10.20.22.4.5"/&gt;
-              &lt;code code="11323-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Health status"/&gt;
-              &lt;statusCode code="completed"/&gt;
-            &lt;/observation&gt;
+            &lt;observation/&gt;
           &lt;/entryRelationship&gt;
           &lt;entryRelationship&gt;
-            &lt;observation classCode="OBS" moodCode="EVN"&gt;
-              &lt;templateId root="2.16.840.1.113883.10.20.22.4.6"/&gt;
-              &lt;code code="33999-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Status"/&gt;
-              &lt;statusCode code="completed"/&gt;
-            &lt;/observation&gt;
+            &lt;observation/&gt;
           &lt;/entryRelationship&gt;
         &lt;/observation&gt;
       &lt;/entryRelationship&gt;
     &lt;/act&gt;
   &lt;/entryRelationship&gt;
+  &lt;sdtc:dischargeDispositionCode code="1723199720"/&gt;
 &lt;/encounter&gt;</pre>
 
 	</div>

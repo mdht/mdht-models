@@ -89,7 +89,7 @@ The Consultation Note recommends use of a single document type code, 11488-4 "Co
 <li><b>MAY</b> contain zero or one [0..1] <tt><b>component</b></tt> (CONF:9533)
 <ol>
 <li>Contains exactly one [1..1] <xref href="../VitalSignsSectionEntriesOptional.dita">Vital Signs Section Entries Optional</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.2.4</tt>)</li></ol></li>
-<li><b>SHALL</b> contain at least one [1..*] <tt><b>inFulfillmentOf</b></tt> (CONF:8382) <ol><li> Such inFulfillmentOfs <b>SHOULD</b> contain zero or one [0..1] <tt><b>order</b></tt> (CONF:8385) <ol><li> This order <b>SHALL</b> contain at least one [1..*] <tt><b>id</b></tt> (CONF:9102)</li></ol> </li></ol>
+<li><b>SHALL</b> contain at least one [1..*] <tt><b>inFulfillmentOf</b></tt> (CONF:8382) <ol><li> Such inFulfillmentOfs <b>SHALL</b> contain exactly one [1..1] <tt><b>order</b></tt> (CONF:8385) <ol><li> This order <b>SHALL</b> contain at least one [1..*] <tt><b>id</b></tt> (CONF:9102)</li></ol> </li></ol>
 </li>
 <li><b>SHALL</b> include an Assessment and Plan Section, or an Assessment Section and a Plan Section (CONF:9501)</li>
 <li><b>SHALL NOT</b> include an Assessment/Plan Section when an Assessment Section and a Plan of Care Section are present (CONF:10028)</li>
@@ -111,7 +111,7 @@ The Consultation Note recommends use of a single document type code, 11488-4 "Co
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>effectiveTime</b></tt> (CONF:5256)
 <ul><li><p><lines><i>Signifies the document creation time, when the document first came into being. Where the CDA document is a transform from an original document in some other format, the ClinicalDocument.effectiveTime is the time the original document is created. The time when the transform occurred is not currently represented in CDA (CONF:9995)</i></lines></p></li></ul></li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>confidentialityCode</b></tt>, where the @code <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/HL7BasicConfidentialityKind.dita">HL7 BasicConfidentialityKind</xref> 2.16.840.1.113883.1.11.16926</tt><b> STATIC</b> (CONF:5259)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>confidentialityCode</b></tt>, where the @code <b>SHOULD</b> be selected from ValueSet<tt> <xref href="../../terminology/HL7BasicConfidentialityKind.dita">HL7 BasicConfidentialityKind</xref> 2.16.840.1.113883.1.11.16926</tt><b> STATIC</b> (CONF:5259)
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>languageCode</b></tt>, where the @code <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/Language.dita">Language</xref> 2.16.840.1.113883.1.11.11526</tt><b> DYNAMIC</b> (CONF:5372)
 </li>
@@ -122,11 +122,11 @@ The Consultation Note recommends use of a single document type code, 11488-4 "Co
 <li>Contains exactly one [1..1] <tt><b>component</b></tt>, where its type is <xref href="../Component2.dita">Component2</xref>
 <ol>
 <li>Contains exactly one [1..1] <xref href="../Component2.dita">Component2</xref></li></ol></li>
-<li><b>SHALL</b> contain at least one [1..*] <tt><b>recordTarget</b></tt> (CONF:5266) <p><lines><i>The recordTarget records the patient whose health information is described by the clinical document; it must contain at least one patientRole element.</i></lines></p><ol><li> Such recordTargets <b>SHALL</b> contain exactly one [1..1] <tt><b>patientRole</b></tt> (CONF:5268) <ol><li> This patientRole <b>SHALL</b> contain at least one [1..*] <tt><b>addr</b></tt> with data type <xref href="../USRealmAddress.dita">US Realm Address</xref> (CONF:5271)</li><li> This patientRole <b>SHALL</b> contain at least one [1..*] <tt><b>id</b></tt> (CONF:5268)</li><li> This patientRole <b>SHALL</b> contain at least one [1..*] <tt><b>telecom</b></tt> with data type <xref href="../TEL.dita">TEL</xref> (CONF:5280)</li><li> This patientRole <b>SHALL</b> contain exactly one [1..1] <tt><b>patient</b></tt> (CONF:5283) <ol><li> This patient <b>SHALL</b> contain exactly one [1..1] <tt><b>administrativeGenderCode</b></tt>, where the @code <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/AdministrativeGenderHL7V3.dita">Administrative Gender (HL7 V3)</xref> 2.16.840.1.113883.1.11.1</tt><b> DYNAMIC</b> (CONF:6394)</li><li> This patient <b>SHALL</b> contain exactly one [1..1] <tt><b>birthTime</b></tt> (CONF:5298)</li><li> This patient <b>MAY</b> contain zero or one [0..1] <tt><b>ethnicGroupCode</b></tt>, where the @code <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/EthnicityValueSet.dita">Ethnicity Value Set</xref> 2.16.840.1.114222.4.11.837</tt><b> STATIC</b> (CONF:5323)</li><li> This patient <b>SHOULD</b> contain zero or one [0..1] <tt><b>maritalStatusCode</b></tt> (CONF:5303), where the @code <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/HL7MaritalStatus.dita">HL7 Marital Status</xref> 2.16.840.1.113883.1.11.12212</tt><b> STATIC</b> 1</li><li> This patient <b>SHALL</b> contain exactly one [1..1] <tt><b>name</b></tt> with data type <xref href="../USRealmPatientName.dita">US Realm Patient Name</xref> (CONF:5284)</li><li> This patient <b>MAY</b> contain zero or one [0..1] <tt><b>raceCode</b></tt>, where the @code <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/Race.dita">Race</xref> 2.16.840.1.113883.1.11.14914</tt><b> STATIC</b> 1 (CONF:5322)</li><li> This patient <b>MAY</b> contain zero or one [0..1] <tt><b>religiousAffiliationCode</b></tt> (CONF:5317), where the @code <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/HL7ReligiousAffiliation.dita">HL7 Religious Affiliation</xref> 2.16.840.1.113883.1.11.19185</tt><b> STATIC</b> 1</li><li> This patient <b>MAY</b> contain zero or more [0..*] <tt><b>guardian</b></tt> (CONF:5325) <ol><li> Such guardians <b>SHOULD</b> contain zero or more [0..*] <tt><b>addr</b></tt> with data type <xref href="../USRealmAddress.dita">US Realm Address</xref></li><li> Such guardians <b>SHOULD</b> contain zero or one [0..1] <tt><b>code</b></tt>, where the @code <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/PersonalRelationshipRoleType.dita">Personal Relationship Role Type</xref> 2.16.840.1.113883.1.11.19563</tt><b> STATIC</b> 1 (CONF:5326)</li><li> Such guardians <b>MAY</b> contain zero or more [0..*] <tt><b>telecom</b></tt> with data type <xref href="../TEL.dita">TEL</xref></li><li> Such guardians <b>SHALL</b> contain exactly one [1..1] <tt><b>guardianPerson</b></tt> <ol><li> This guardianPerson <b>SHALL</b> contain at least one [1..*] <tt><b>name</b></tt></li><li> This guardianPerson The content of name <b>SHALL</b> be a conformant US Realm Person Name (PTN.US.FIELDED) (2.16.840.1.113883.10.20.22.5.1.1) (CONF:10414)</li></ol> </li></ol> </li><li> This patient <b>MAY</b> contain zero or one [0..1] <tt><b>birthplace</b></tt> (CONF:5395) <ol><li> This birthplace <b>SHALL</b> contain exactly one [1..1] <tt><b>place</b></tt> (CONF:5396) <ol><li> This place <b>SHALL</b> contain exactly one [1..1] <tt><b>addr</b></tt> (CONF:5397)</li><li> This place If country is US, this addr <b>SHALL</b> contain exactly one [1..1] state, which <b>SHALL</b> be selected from ValueSet StateValueSet 2.16.840.1.113883.3.88.12.80.1 DYNAMIC</li><li> This place This addr <b>MAY</b> contain zero or one [0..1] postalCode, which <b>SHALL</b> be selected from ValueSet PostalCodeValueSet 2.16.840.1.113883.3.88.12.80.2 DYNAMIC</li><li> This place This addr <b>SHOULD</b> contain zero or one [0..1] country, which <b>SHALL</b> be selected from ValueSet CountryValueSet 2.16.840.1.113883.3.88.12.80.63 DYNAMIC</li></ol> </li></ol> </li><li> This patient <b>SHOULD</b> contain zero or more [0..*] <tt><b>languageCommunication</b></tt> (CONF:5406) <ol><li> Such languageCommunications <b>MAY</b> contain zero or one [0..1] <tt><b>preferenceInd</b></tt> (CONF:5414)</li><li> Such languageCommunications <b>SHOULD</b> contain zero or one [0..1] <tt><b>proficiencyLevelCode</b></tt>, where the @code <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/LanguageAbilityProficiency.dita">LanguageAbilityProficiency</xref> 2.16.840.1.113883.1.11.12199</tt><b> STATIC</b> (CONF:9965)</li><li> Such languageCommunications <b>MAY</b> contain zero or one [0..1] <tt><b>modeCode</b></tt>, where the @code <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/HL7LanguageAbilityMode.dita">HL7 LanguageAbilityMode</xref> 2.16.840.1.113883.1.11.12249</tt><b> STATIC</b> 1 (CONF:5409)</li><li> Such languageCommunications <b>SHALL</b> contain exactly one [1..1] <tt><b>languageCode</b></tt>, where the @code <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/Language.dita">Language</xref> 2.16.840.1.113883.1.11.11526</tt><b> DYNAMIC</b> (CONF:5407)</li></ol> </li><li> This patient <b>MAY</b> contain zero or more [0..*] <tt><b>sDTCRaceCode</b></tt>, where the @code <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/Race.dita">Race</xref> 2.16.840.1.113883.1.11.14914</tt><b> STATIC</b> 1 (CONF:7263)</li><li> This patient <b>SHALL</b> satisfy: BirthTime precise to year</li><li> This patient <b>SHOULD</b> satisfy: BirthTime precise to day</li></ol> </li><li> This patientRole <b>MAY</b> contain zero or one [0..1] <tt><b>providerOrganization</b></tt> (CONF:5416) <ol><li> This providerOrganization <b>SHALL</b> contain at least one [1..*] <tt><b>addr</b></tt> with data type <xref href="../USRealmAddress.dita">US Realm Address</xref> (CONF:5422)</li><li> This providerOrganization <b>SHALL</b> contain at least one [1..*] <tt><b>id</b></tt> (CONF:5417)</li><li> This providerOrganization <b>SHALL</b> contain at least one [1..*] <tt><b>name</b></tt> (CONF:5419)</li><li> This providerOrganization <b>SHALL</b> contain at least one [1..*] <tt><b>telecom</b></tt> with data type <xref href="../TEL.dita">TEL</xref> (CONF:5420)</li><li> This providerOrganization The id <b>SHOULD</b> include zero or one [0..1] id where id/@root ="2.16.840.1.113883.4.6" National Provider Identifier (CONF:9996) (CONF:9996)</li></ol> </li></ol> </li></ol>
+<li><b>SHALL</b> contain at least one [1..*] <tt><b>recordTarget</b></tt> (CONF:5266) <p><lines><i>The recordTarget records the patient whose health information is described by the clinical document; it must contain at least one patientRole element.</i></lines></p><ol><li> Such recordTargets <b>SHALL</b> contain exactly one [1..1] <tt><b>patientRole</b></tt> (CONF:5268) <ol><li> This patientRole <b>SHALL</b> contain at least one [1..*] <tt><b>addr</b></tt> with data type <xref href="../USRealmAddress.dita">US Realm Address</xref> (CONF:5271)</li><li> This patientRole <b>SHALL</b> contain at least one [1..*] <tt><b>id</b></tt> (CONF:5268)</li><li> This patientRole <b>SHALL</b> contain at least one [1..*] <tt><b>telecom</b></tt> with data type <xref href="../TEL.dita">TEL</xref> (CONF:5280)</li><li> This patientRole <b>SHALL</b> contain exactly one [1..1] <tt><b>patient</b></tt> (CONF:5283) <ol><li> This patient <b>SHALL</b> contain exactly one [1..1] <tt><b>administrativeGenderCode</b></tt>, where the @code <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/AdministrativeGenderHL7V3.dita">Administrative Gender (HL7 V3)</xref> 2.16.840.1.113883.1.11.1</tt><b> DYNAMIC</b> (CONF:6394)</li><li> This patient <b>SHALL</b> contain exactly one [1..1] <tt><b>birthTime</b></tt> with data type <xref href="../TS.dita">TS</xref> (CONF:5298)</li><li> This patient <b>MAY</b> contain zero or one [0..1] <tt><b>ethnicGroupCode</b></tt>, where the @code <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/EthnicityValueSet.dita">Ethnicity Value Set</xref> 2.16.840.1.114222.4.11.837</tt><b> STATIC</b> (CONF:5323)</li><li> This patient <b>SHOULD</b> contain zero or one [0..1] <tt><b>maritalStatusCode</b></tt> (CONF:5303), where the @code <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/HL7MaritalStatus.dita">HL7 Marital Status</xref> 2.16.840.1.113883.1.11.12212</tt><b> STATIC</b> 1</li><li> This patient <b>SHALL</b> contain exactly one [1..1] <tt><b>name</b></tt> with data type <xref href="../USRealmPatientName.dita">US Realm Patient Name</xref> (CONF:5284)</li><li> This patient <b>MAY</b> contain zero or one [0..1] <tt><b>raceCode</b></tt>, where the @code <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/Race.dita">Race</xref> 2.16.840.1.113883.1.11.14914</tt><b> STATIC</b> 1 (CONF:5322)</li><li> This patient <b>MAY</b> contain zero or one [0..1] <tt><b>religiousAffiliationCode</b></tt> (CONF:5317), where the @code <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/HL7ReligiousAffiliation.dita">HL7 Religious Affiliation</xref> 2.16.840.1.113883.1.11.19185</tt><b> STATIC</b> 1</li><li> This patient <b>MAY</b> contain zero or more [0..*] <tt><b>guardian</b></tt> (CONF:5325) <ol><li> Such guardians <b>SHOULD</b> contain zero or more [0..*] <tt><b>addr</b></tt> with data type <xref href="../USRealmAddress.dita">US Realm Address</xref></li><li> Such guardians <b>SHOULD</b> contain zero or one [0..1] <tt><b>code</b></tt>, where the @code <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/PersonalRelationshipRoleType.dita">Personal Relationship Role Type</xref> 2.16.840.1.113883.1.11.19563</tt><b> STATIC</b> 1 (CONF:5326)</li><li> Such guardians <b>MAY</b> contain zero or more [0..*] <tt><b>telecom</b></tt> with data type <xref href="../TEL.dita">TEL</xref></li><li> Such guardians <b>SHALL</b> contain exactly one [1..1] <tt><b>guardianPerson</b></tt> <ol><li> This guardianPerson <b>SHALL</b> contain at least one [1..*] <tt><b>name</b></tt></li><li> This guardianPerson The content of name <b>SHALL</b> be a conformant US Realm Person Name (PTN.US.FIELDED) (2.16.840.1.113883.10.20.22.5.1.1) (CONF:10414)</li></ol> </li></ol> </li><li> This patient <b>MAY</b> contain zero or one [0..1] <tt><b>birthplace</b></tt> (CONF:5395) <ol><li> This birthplace <b>SHALL</b> contain exactly one [1..1] <tt><b>place</b></tt> (CONF:5396) <ol><li> This place <b>SHALL</b> contain exactly one [1..1] <tt><b>addr</b></tt> (CONF:5397)</li><li> This place If country is US, this addr <b>SHALL</b> contain exactly one [1..1] state, which <b>SHALL</b> be selected from ValueSet StateValueSet 2.16.840.1.113883.3.88.12.80.1 DYNAMIC</li><li> This place This addr <b>MAY</b> contain zero or one [0..1] postalCode, which <b>SHALL</b> be selected from ValueSet PostalCodeValueSet 2.16.840.1.113883.3.88.12.80.2 DYNAMIC</li><li> This place This addr <b>SHOULD</b> contain zero or one [0..1] country, which <b>SHALL</b> be selected from ValueSet CountryValueSet 2.16.840.1.113883.3.88.12.80.63 DYNAMIC</li></ol> </li></ol> </li><li> This patient <b>SHOULD</b> contain zero or more [0..*] <tt><b>languageCommunication</b></tt> (CONF:5406) <ol><li> Such languageCommunications <b>MAY</b> contain zero or one [0..1] <tt><b>preferenceInd</b></tt> (CONF:5414)</li><li> Such languageCommunications <b>SHOULD</b> contain zero or one [0..1] <tt><b>proficiencyLevelCode</b></tt>, where the @code <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/LanguageAbilityProficiency.dita">LanguageAbilityProficiency</xref> 2.16.840.1.113883.1.11.12199</tt><b> STATIC</b> (CONF:9965)</li><li> Such languageCommunications <b>MAY</b> contain zero or one [0..1] <tt><b>modeCode</b></tt>, where the @code <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/HL7LanguageAbilityMode.dita">HL7 LanguageAbilityMode</xref> 2.16.840.1.113883.1.11.12249</tt><b> STATIC</b> 1 (CONF:5409)</li><li> Such languageCommunications <b>SHALL</b> contain exactly one [1..1] <tt><b>languageCode</b></tt>, where the @code <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/Language.dita">Language</xref> 2.16.840.1.113883.1.11.11526</tt><b> DYNAMIC</b> (CONF:5407)</li></ol> </li><li> This patient <b>MAY</b> contain zero or more [0..*] <tt><b>sDTCRaceCode</b></tt>, where the @code <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/Race.dita">Race</xref> 2.16.840.1.113883.1.11.14914</tt><b> STATIC</b> 1 (CONF:7263)<p><lines><i>The prefix sdtc: SHALL be bound to the namespace "urn:hl7-org:sdtc". The use of the namespace provides a necessary extension to CDA R2 for the use of the raceCode element.</i></lines></p></li></ol> </li><li> This patientRole <b>MAY</b> contain zero or one [0..1] <tt><b>providerOrganization</b></tt> (CONF:5416) <ol><li> This providerOrganization <b>SHALL</b> contain at least one [1..*] <tt><b>addr</b></tt> with data type <xref href="../USRealmAddress.dita">US Realm Address</xref> (CONF:5422)</li><li> This providerOrganization <b>SHALL</b> contain at least one [1..*] <tt><b>id</b></tt> (CONF:5417)</li><li> This providerOrganization <b>SHALL</b> contain at least one [1..*] <tt><b>name</b></tt> (CONF:5419)</li><li> This providerOrganization <b>SHALL</b> contain at least one [1..*] <tt><b>telecom</b></tt> with data type <xref href="../TEL.dita">TEL</xref> (CONF:5420)</li><li> This providerOrganization The id <b>SHOULD</b> include zero or one [0..1] id where id/@root ="2.16.840.1.113883.4.6" National Provider Identifier (CONF:9996) (CONF:9996)</li></ol> </li></ol> </li></ol>
 </li>
 <li><b>MAY</b> contain exactly one [1..1] <tt><b>componentOf</b></tt> (CONF:9955) <ol><li> This componentOf <b>SHALL</b> contain exactly one [1..1] <tt><b>encompassingEncounter</b></tt> (CONF:9956) <ol><li> This encompassingEncounter <b>SHALL</b> contain exactly one [1..1] <tt><b>effectiveTime</b></tt> (CONF:9958)</li><li> This encompassingEncounter <b>SHALL</b> contain at least one [1..*] <tt><b>id</b></tt> (CONF:9959)</li></ol> </li></ol>
 </li>
-<li><b>SHALL</b> contain at least one [1..*] <tt><b>author</b></tt> (CONF:5444) <ol><li> Such authors <b>SHALL</b> contain exactly one [1..1] <tt><b>time</b></tt> (CONF:5445)</li><li> Such authors <b>SHALL</b> contain exactly one [1..1] <tt><b>assignedAuthor</b></tt> (CONF:5448) <ol><li> This assignedAuthor <b>SHALL</b> contain at least one [1..*] <tt><b>addr</b></tt> with data type <xref href="../USRealmAddress.dita">US Realm Address</xref> (CONF:5452)</li><li> This assignedAuthor <b>SHOULD</b> contain zero or one [0..1] <tt><b>code</b></tt> (CONF:16787), where the @code <b>SHOULD</b> be selected from ValueSet<tt> <xref href="../../terminology/HealthcareProviderTaxonomyNUCCHIPAA.dita">Healthcare Provider Taxonomy (NUCC - HIPAA)</xref> 2.16.840.1.114222.4.11.1066</tt><b> DYNAMIC</b> (CONF:16788)</li><li> This assignedAuthor <b>SHALL</b> contain exactly one [1..1] <tt><b>id</b></tt> (CONF:5449)</li><li> This assignedAuthor <b>SHALL</b> contain at least one [1..*] <tt><b>telecom</b></tt> with data type <xref href="../TEL.dita">TEL</xref> (CONF:5428)</li><li> This assignedAuthor <b>SHOULD</b> contain zero or one [0..1] <tt><b>assignedAuthoringDevice</b></tt> <ol><li> This assignedAuthoringDevice <b>SHALL</b> contain exactly one [1..1] <tt><b>manufacturerModelName</b></tt> (CONF:16784)</li><li> This assignedAuthoringDevice <b>SHALL</b> contain exactly one [1..1] <tt><b>softwareName</b></tt> (CONF:16785)</li></ol> </li><li> This assignedAuthor <b>SHOULD</b> contain zero or one [0..1] <tt><b>assignedPerson</b></tt> <ol><li> This assignedPerson <b>SHALL</b> contain at least one [1..*] <tt><b>name</b></tt> (CONF:16789)</li></ol> </li><li> This assignedAuthor This assignedAuthor <b>SHALL</b> contain exactly one  [1..1] assignedPerson or assignedAuthoringDevice (CONF:16790)</li><li> This assignedAuthor The id <b>SHALL</b> contain exactly one root ="2.16.840.1.113883.4.6" National Provider Identifier (CONF:9996) (CONF:16786)</li></ol> </li><li> Such authors This time <b>SHALL</b> contain exactly one [1..1] US Realm Date and Time (DTM.US.FIELDED) (2.16.840.1.113883.10.20.22.5.4) (CONF:5446)</li></ol>
+<li><b>SHALL</b> contain at least one [1..*] <tt><b>author</b></tt> (CONF:5444) <ol><li> Such authors <b>SHALL</b> contain exactly one [1..1] <tt><b>time</b></tt> (CONF:5445)</li><li> Such authors <b>SHALL</b> contain exactly one [1..1] <tt><b>assignedAuthor</b></tt> (CONF:5448) <ol><li> This assignedAuthor <b>SHALL</b> contain at least one [1..*] <tt><b>addr</b></tt> with data type <xref href="../USRealmAddress.dita">US Realm Address</xref> (CONF:5452)</li><li> This assignedAuthor <b>SHOULD</b> contain zero or one [0..1] <tt><b>code</b></tt> (CONF:16787), where the @code <b>SHOULD</b> be selected from ValueSet<tt> <xref href="../../terminology/HealthcareProviderTaxonomyNUCCHIPAA.dita">Healthcare Provider Taxonomy (NUCC - HIPAA)</xref> 2.16.840.1.114222.4.11.1066</tt><b> DYNAMIC</b> (CONF:16788)</li><li> This assignedAuthor <b>SHALL</b> contain at least one [1..*] <tt><b>id</b></tt> (CONF:5449)</li><li> This assignedAuthor <b>SHALL</b> contain at least one [1..*] <tt><b>telecom</b></tt> with data type <xref href="../TEL.dita">TEL</xref> (CONF:5428)</li><li> This assignedAuthor Contains zero or one [0..1] <tt><b>assignedAuthoringDevice</b></tt> <ol><li> This assignedAuthoringDevice <b>SHALL</b> contain exactly one [1..1] <tt><b>manufacturerModelName</b></tt> (CONF:16784)</li><li> This assignedAuthoringDevice <b>SHALL</b> contain exactly one [1..1] <tt><b>softwareName</b></tt> (CONF:16785)</li></ol> </li><li> This assignedAuthor Contains zero or one [0..1] <tt><b>assignedPerson</b></tt> <ol><li> This assignedPerson <b>SHALL</b> contain at least one [1..*] <tt><b>name</b></tt> (CONF:16789)</li></ol> </li><li> This assignedAuthor <b>SHALL</b> contain exactly one  [1..1] assignedPerson or assignedAuthoringDevice (CONF:16790)</li><li> This assignedAuthor The id <b>SHALL</b> contain exactly one root ="2.16.840.1.113883.4.6" National Provider Identifier (CONF:9996) (CONF:16786)</li></ol> </li><li> Such authors This time <b>SHALL</b> contain exactly one [1..1] US Realm Date and Time (DTM.US.FIELDED) (2.16.840.1.113883.10.20.22.5.4) (CONF:5446)</li></ol>
 </li>
 <li><b>MAY</b> contain zero or one [0..1] <tt><b>dataEnterer</b></tt> (CONF:5441) <ol><li> This dataEnterer <b>SHALL</b> contain exactly one [1..1] <tt><b>assignedEntity</b></tt> (CONF:5442) <ol><li> This assignedEntity <b>SHALL</b> contain at least one [1..*] <tt><b>addr</b></tt> with data type <xref href="../USRealmAddress.dita">US Realm Address</xref> (CONF:5460)</li><li> This assignedEntity <b>MAY</b> contain zero or one [0..1] <tt><b>code</b></tt>, where the @code <b>SHOULD</b> be selected from (CodeSystem:<tt> 2.16.840.1.113883.6.101 NUCC Health Care Provider Taxonomy</tt>) (CONF:9944)</li><li> This assignedEntity <b>SHALL</b> contain at least one [1..*] <tt><b>id</b></tt> (CONF:5443)</li><li> This assignedEntity <b>SHALL</b> contain at least one [1..*] <tt><b>telecom</b></tt> with data type <xref href="../TEL.dita">TEL</xref> (CONF:5466)</li><li> This assignedEntity <b>SHALL</b> contain exactly one [1..1] <tt><b>assignedPerson</b></tt> (CONF:5469) <ol><li> This assignedPerson <b>SHALL</b> contain at least one [1..*] <tt><b>name</b></tt></li></ol> </li><li> This assignedEntity id <b>SHOULD</b> include zero or one [0..1] @root ="2.16.840.1.113883.4.6" National Provider Identifier (CONF:16821)</li></ol> </li></ol>
 </li>
@@ -138,13 +138,13 @@ The Consultation Note recommends use of a single document type code, 11488-4 "Co
 </li>
 <li><b>MAY</b> contain zero or more [0..*] <tt><b>authenticator</b></tt> (CONF:5607) <ol><li> Such authenticators <b>SHALL</b> contain exactly one [1..1] <tt><b>time</b></tt> (CONF:5608)</li><li> Such authenticators <b>SHALL</b> contain exactly one [1..1] <tt><b>signatureCode</b></tt><tt><b>/@code</b>="S" </tt> (CodeSystem:<tt> 2.16.840.1.113883.5.89 Participationsignature</tt>) (CONF:5610)</li><li> Such authenticators <b>SHALL</b> contain exactly one [1..1] <tt><b>assignedEntity</b></tt> (CONF:5612) <ol><li> This assignedEntity <b>SHALL</b> contain at least one [1..*] <tt><b>addr</b></tt> with data type <xref href="../USRealmAddress.dita">US Realm Address</xref> (CONF:5616)</li><li> This assignedEntity <b>MAY</b> contain zero or one [0..1] <tt><b>code</b></tt> (CONF:16825), where the @code <b>SHOULD</b> be selected from ValueSet<tt> <xref href="../../terminology/HealthcareProviderTaxonomyNUCCHIPAA.dita">Healthcare Provider Taxonomy (NUCC - HIPAA)</xref> 2.16.840.1.114222.4.11.1066</tt><b> DYNAMIC</b> (CONF:16826)</li><li> This assignedEntity <b>SHALL</b> contain at least one [1..*] <tt><b>id</b></tt> (CONF:5613)</li><li> This assignedEntity <b>SHALL</b> contain at least one [1..*] <tt><b>telecom</b></tt> with data type <xref href="../TEL.dita">TEL</xref> (CONF:5622)</li><li> This assignedEntity <b>SHALL</b> contain exactly one [1..1] <tt><b>assignedPerson</b></tt> (CONF:5624) <ol><li> This assignedPerson <b>SHALL</b> contain at least one [1..*] <tt><b>name</b></tt> (CONF:5625)</li></ol> </li><li> This assignedEntity The id <b>SHOULD</b> include zero or one [0..1] root ="2.16.840.1.113883.4.6" National Provider Identifier (CONF:9996)</li></ol> </li></ol>
 </li>
-<li><b>MAY</b> contain zero or one [0..1] <tt><b>informant</b></tt> (CONF:8001) <ol><li> This informant <b>MAY</b> contain zero or one [0..1] <tt><b>assignedEntity</b></tt> <ol><li> This assignedEntity <b>SHOULD</b> contain zero or more [0..*] <tt><b>addr</b></tt> with data type <xref href="../USRealmAddress.dita">US Realm Address</xref> (CONF:8220)</li><li> This assignedEntity <b>MAY</b> contain zero or one [0..1] <tt><b>code</b></tt>, where the @code <b>SHOULD</b> be selected from (CodeSystem:<tt> 2.16.840.1.113883.6.101 NUCC Health Care Provider Taxonomy</tt>) (CONF:9947)</li><li> This assignedEntity <b>SHOULD</b> contain zero or more [0..*] <tt><b>id</b></tt> (a., CONF:9945)</li><li> This assignedEntity <b>SHALL</b> contain exactly one [1..1] <tt><b>assignedPerson</b></tt> (CONF:8221) <ol><li> This assignedPerson <b>SHALL</b> contain at least one [1..*] <tt><b>name</b></tt></li></ol> </li><li> This assignedEntity The id <b>SHOULD</b> include zero or one [0..1] id where id/@root ="2.16.840.1.113883.4.6" National Provider Identifier (CONF:9996)</li></ol> </li><li> This informant <b>MAY</b> contain zero or one [0..1] <tt><b>relatedEntity</b></tt> <ol><li> This relatedEntity <b>SHOULD</b> contain zero or more [0..*] <tt><b>addr</b></tt> with data type <xref href="../USRealmAddress.dita">US Realm Address</xref> (CONF:8220)</li><li> This relatedEntity <b>SHALL</b> contain zero or one [0..1] <tt><b>relatedPerson</b></tt> (CONF:8221) <ol><li> This relatedPerson <b>SHALL</b> contain at least one [1..*] <tt><b>name</b></tt></li></ol> </li></ol> </li><li> This informant <b>SHALL</b> satisfy: contain exactly one [1..1] assignedEntity OR exactly one [1..1] relatedEntity (CONF:8002)</li></ol>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>informant</b></tt> (CONF:8001) <ol><li> This informant <b>MAY</b> contain zero or one [0..1] <tt><b>assignedEntity</b></tt> <ol><li> This assignedEntity <b>SHOULD</b> contain zero or more [0..*] <tt><b>addr</b></tt> with data type <xref href="../USRealmAddress.dita">US Realm Address</xref> (CONF:8220)</li><li> This assignedEntity <b>MAY</b> contain zero or one [0..1] <tt><b>code</b></tt>, where the @code <b>SHOULD</b> be selected from (CodeSystem:<tt> 2.16.840.1.113883.6.101 NUCC Health Care Provider Taxonomy</tt>) (CONF:9947)</li><li> This assignedEntity <b>SHALL</b> contain at least one [1..*] <tt><b>id</b></tt> (CONF:9945)</li><li> This assignedEntity <b>SHALL</b> contain exactly one [1..1] <tt><b>assignedPerson</b></tt> (CONF:8221) <ol><li> This assignedPerson <b>SHALL</b> contain at least one [1..*] <tt><b>name</b></tt></li></ol> </li><li> This assignedEntity The id <b>SHOULD</b> include zero or one [0..1] id where id/@root ="2.16.840.1.113883.4.6" National Provider Identifier (CONF:9996)</li></ol> </li><li> This informant <b>MAY</b> contain zero or one [0..1] <tt><b>relatedEntity</b></tt> <ol><li> This relatedEntity <b>SHOULD</b> contain zero or more [0..*] <tt><b>addr</b></tt> with data type <xref href="../USRealmAddress.dita">US Realm Address</xref> (CONF:8220)</li><li> This relatedEntity <b>SHALL</b> contain zero or one [0..1] <tt><b>relatedPerson</b></tt> (CONF:8221) <ol><li> This relatedPerson <b>SHALL</b> contain at least one [1..*] <tt><b>name</b></tt></li></ol> </li></ol> </li><li> This informant <b>SHALL</b> satisfy: contain exactly one [1..1] assignedEntity OR exactly one [1..1] relatedEntity (CONF:8002)</li></ol>
 </li>
 <li><b>MAY</b> contain zero or more [0..*] <tt><b>participant</b></tt> (CONF:10003) <ol><li> Such participants <b>MAY</b> contain zero or one [0..1] <tt><b>time</b></tt> (CONF:10004)</li><li> Such participants Such participants, if present, <b>SHALL</b> have an associatedPerson or scopingOrganization element under participant/associatedEntity.</li><li> Such participants Unless otherwise specified by the document specific header constraints, when participant/@typeCode is IND, associatedEntity/@classCode <b>SHALL</b> be selected from ValueSet INDRoleclassCodes 2.16.840.1.113883.11.20.9.33 STATIC 2011-09-30.</li></ol>
 </li>
 <li><b>MAY</b> contain zero or more [0..*] <tt><b>inFulfillmentOf</b></tt> (CONF:9952) <ol><li> Such inFulfillmentOfs <b>SHALL</b> contain exactly one [1..1] <tt><b>order</b></tt> (CONF:9953) <ol><li> This order <b>SHALL</b> contain at least one [1..*] <tt><b>id</b></tt> (CONF:9954)</li></ol> </li></ol>
 </li>
-<li><b>MAY</b> contain zero or more [0..*] <tt><b>documentationOf</b></tt> (CONF:14835) <ol><li> Such documentationOfs <b>SHALL</b> contain exactly one [1..1] <tt><b>serviceEvent</b></tt> (CONF:14836) <ol><li> This serviceEvent <b>SHALL</b> contain exactly one [1..1] <tt><b>effectiveTime</b></tt> (CONF:14837)</li><li> This serviceEvent <b>SHOULD</b> contain zero or more [0..*] <tt><b>performer</b></tt> (CONF:14839) <ol><li> Such performers <b>SHALL</b> contain exactly one [1..1] <tt><b>@typeCode</b>="PRF" </tt> (CONF:14840)<p><lines><i>The performer participant represents clinicians who actually and principally carry out the serviceEvent. In a transfer of care this represents the healthcare providers involved in the current or pertinent historical care of the patient. Preferably, the patient's key healthcare care team members would be listed, particularly their primary physician and any active consulting physicians, therapists, and counselors (CONF:16753).</i></lines></p></li><li> Such performers <b>MAY</b> contain zero or one [0..1] <tt><b>functionCode</b></tt> (CONF:16818), where the @code <b>SHOULD</b> be selected from (CodeSystem:<tt> 2.16.840.1.113883.5.88 ParticipationFunction</tt>) (CONF:16819)</li><li> Such performers <b>SHALL</b> contain exactly one [1..1] <tt><b>assignedEntity</b></tt> (CONF:14841) <ol><li> This assignedEntity <b>SHOULD</b> contain zero or one [0..1] <tt><b>code</b></tt> (CONF:14842), where the @code <b>SHALL</b> be selected from (CodeSystem:<tt> 2.16.840.1.113883.6.101 NUCC Health Care Provider Taxonomy</tt>) (CONF:14843)</li><li> This assignedEntity <b>SHALL</b> contain at least one [1..*] <tt><b>id</b></tt> (CONF:14846)</li><li> This assignedEntity The id <b>SHOULD</b> include zero or one [0..1]root ="2.16.840.1.113883.4.6" National Provider Identifier (CONF:9996) (CONF:14847)</li></ol> </li></ol> </li><li> This serviceEvent effectiveTime <b>SHALL</b> contain exactly one [1..1] low (CONF:14838)</li></ol> </li></ol>
+<li><b>MAY</b> contain zero or more [0..*] <tt><b>documentationOf</b></tt> (CONF:14835) <ol><li> Such documentationOfs <b>SHALL</b> contain exactly one [1..1] <tt><b>serviceEvent</b></tt> (CONF:14836) <ol><li> This serviceEvent <b>SHALL</b> contain exactly one [1..1] <tt><b>effectiveTime</b></tt> (CONF:14837)</li><li> This serviceEvent <b>SHOULD</b> contain zero or more [0..*] <tt><b>performer</b></tt> (CONF:14839) <ol><li> Such performers <b>SHALL</b> contain exactly one [1..1] <tt><b>@typeCode</b></tt> (CONF:14840)</li><li> Such performers <b>MAY</b> contain zero or one [0..1] <tt><b>functionCode</b></tt> (CONF:16818), where the @code <b>SHOULD</b> be selected from (CodeSystem:<tt> 2.16.840.1.113883.5.88 ParticipationFunction</tt>) (CONF:16819)</li><li> Such performers <b>SHALL</b> contain exactly one [1..1] <tt><b>assignedEntity</b></tt> (CONF:14841) <ol><li> This assignedEntity <b>SHOULD</b> contain zero or one [0..1] <tt><b>code</b></tt> (CONF:14842), where the @code <b>SHOULD</b> be selected from (CodeSystem:<tt> 2.16.840.1.113883.6.101 NUCC Health Care Provider Taxonomy</tt>) (CONF:14843)</li><li> This assignedEntity <b>SHALL</b> contain at least one [1..*] <tt><b>id</b></tt> (CONF:14846)</li><li> This assignedEntity The id <b>SHOULD</b> include zero or one [0..1]root ="2.16.840.1.113883.4.6" National Provider Identifier (CONF:9996) (CONF:14847)</li></ol> </li></ol> </li><li> This serviceEvent effectiveTime <b>SHALL</b> contain exactly one [1..1] low (CONF:14838)</li></ol> </li></ol>
 </li>
 <li><b>MAY</b> contain zero or more [0..*] <tt><b>authorization</b></tt> (CONF:16792) <ol><li> Such authorizations <b>SHALL</b> contain exactly one [1..1] <tt><b>consent</b></tt> (CONF:16793) <ol><li> This consent <b>MAY</b> contain zero or one [0..1] <tt><b>code</b></tt> (CONF:16795)<p><lines><i>The type of consent (e.g., a consent to perform the related serviceEvent) is conveyed in consent/code (CONF:16796).</i></lines></p></li><li> This consent <b>MAY</b> contain zero or more [0..*] <tt><b>id</b></tt> (CONF:16794)</li><li> This consent <b>SHALL</b> contain exactly one [1..1] <tt><b>statusCode</b></tt> (CONF:16797)<tt><b>/@code</b>="completed" </tt><i>Completed</i> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>) (CONF:16798)</li></ol> </li></ol>
 </li>
@@ -215,7 +215,7 @@ The Consultation Note recommends use of a single document type code, 11488-4 "Co
 <li><b>MAY</b> contain zero or one [0..1] <tt><b>component</b></tt> (CONF:9533)
 <ol>
 <li>Contains exactly one [1..1] <xref href="../VitalSignsSectionEntriesOptional.dita">Vital Signs Section Entries Optional</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.2.4</tt>)</li></ol></li>
-<li><b>SHALL</b> contain at least one [1..*] <tt><b>inFulfillmentOf</b></tt> (CONF:8382) <ol><li> Such inFulfillmentOfs <b>SHOULD</b> contain zero or one [0..1] <tt><b>order</b></tt> (CONF:8385) <ol><li> This order <b>SHALL</b> contain at least one [1..*] <tt><b>id</b></tt> (CONF:9102)</li></ol> </li></ol>
+<li><b>SHALL</b> contain at least one [1..*] <tt><b>inFulfillmentOf</b></tt> (CONF:8382) <ol><li> Such inFulfillmentOfs <b>SHALL</b> contain exactly one [1..1] <tt><b>order</b></tt> (CONF:8385) <ol><li> This order <b>SHALL</b> contain at least one [1..*] <tt><b>id</b></tt> (CONF:9102)</li></ol> </li></ol>
 </li>
 <li><b>SHALL</b> satisfy: The US Realm Clinical Document Date and Time datatype flavor records date and time information. If no time zone offset 
 is provided, you can make no assumption about time, unless you have made a local exchange agreement.
@@ -236,7 +236,7 @@ element.</li>
 <li><b>SHALL NOT</b> include a Chief Complaint and Reason for Visit Section with either a Chief Complaint Section or a Reason for Visit Section.</li>
 <li><b>SHALL</b> include a Reason for Referral or Reason for Visit section (CONF:9504)</li>
 </ol>
-<section id="tableconformance"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="8" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><colspec colname="col2" colnum="2" /><colspec colname="col3" colnum="3" /><colspec colname="col4" colnum="4" /><colspec colname="col5" colnum="5" /><colspec colname="col6" colnum="6" /><colspec colname="col7" colnum="7" /><thead> <row><entry namest="col0" nameend="col7" >consol::ConsultationNote</entry>  </row>  <row><entry namest="col0" nameend="col7" >cda::clinicaldocument[cda:templateId/@root = 2.16.840.1.113883.10.20.22.1.1]/</entry>  </row>  <row><entry>Name</entry><entry>XPath</entry><entry>Cardinality</entry><entry>Severity</entry><entry>Nullable</entry><entry>Data Type</entry><entry>Conformance</entry><entry>Value(s)</entry></row></thead><tbody><row><entry>code</entry><entry>code</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>CE</entry><entry>CONF:17177</entry><entry> null</entry></row> 
+<section id="tableconformance"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="8" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><colspec colname="col2" colnum="2" /><colspec colname="col3" colnum="3" /><colspec colname="col4" colnum="4" /><colspec colname="col5" colnum="5" /><colspec colname="col6" colnum="6" /><colspec colname="col7" colnum="7" /><thead> <row><entry namest="col0" nameend="col7" >consol::ConsultationNote</entry>  </row>  <row><entry namest="col0" nameend="col7" >cda::clinicaldocument[cda:templateId/@root = ]/</entry>  </row>  <row><entry>Name</entry><entry>XPath</entry><entry>Cardinality</entry><entry>Severity</entry><entry>Nullable</entry><entry>Data Type</entry><entry>Conformance</entry><entry>Value(s)</entry></row></thead><tbody><row><entry>code</entry><entry>code</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>CE</entry><entry>CONF:17177</entry><entry> </entry></row> 
 <row><entry>allergiesSection</entry><entry>allergiesSection</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>AllergiesSectionEntriesOptional</entry><entry>CONF:9507</entry><entry> </entry></row> 
 <row><entry>assessmentAndPlanSection</entry><entry>assessmentAndPlanSection</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>AssessmentAndPlanSection</entry><entry>CONF:9491</entry><entry> </entry></row> 
 <row><entry>assessmentSection</entry><entry>assessmentSection</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>AssessmentSection</entry><entry>CONF:9487</entry><entry> </entry></row> 
@@ -263,16 +263,13 @@ element.</li>
 </tbody></tgroup></table></p></section>
 <codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
 <ClinicalDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd">
-  <realmCode code="US"/>
   <typeId root="2.16.840.1.113883.1.3"/>
-  <templateId root="2.16.840.1.113883.10.20.22.1.4"/>
-  <templateId root="2.16.840.1.113883.10.20.22.1.1"/>
-  <id root="MDHT" extension="2076568555"/>
-  <code codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+  <id root="MDHT" extension="166976554"/>
+  <code code="1247417799"/>
   <title>TEXT FOR TITLE</title>
   <effectiveTime/>
-  <confidentialityCode codeSystem="2.16.840.1.113883.5.25" codeSystemName="ConfidentialityCode"/>
-  <setId root="MDHT" extension="a79ef784-89d8-4098-96e2-12398e4343cf"/>
+  <confidentialityCode code="6469102"/>
+  <setId root="MDHT" extension="5d54ffc2-e954-4df3-b344-b35e91c8dad6"/>
   <versionNumber value="1"/>
   <recordTarget>
     <typeId root="2.16.840.1.113883.1.3"/>
@@ -286,15 +283,15 @@ element.</li>
   <custodian/>
   <inFulfillmentOf>
     <order>
-      <id root="MDHT" extension="1395523010"/>
+      <id root="MDHT" extension="1837148571"/>
     </order>
   </inFulfillmentOf>
   <componentOf>
     <encompassingEncounter>
-      <id root="MDHT" extension="1421911388"/>
+      <id root="MDHT" extension="613544271"/>
       <effectiveTime>
-        <low value="2012"/>
-        <high value="2012"/>
+        <low value="2013"/>
+        <high value="2013"/>
       </effectiveTime>
       <responsibleParty/>
       <encounterParticipant/>
@@ -305,28 +302,27 @@ element.</li>
       <component>
         <section>
           <typeId root="2.16.840.1.113883.1.3"/>
-          <templateId root="2.16.840.1.113883.10.20.22.2.8"/>
-          <id root="MDHT" extension="1370641504"/>
-          <code code="51848-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Assessments"/>
+          <id root="MDHT" extension="1850794316"/>
+          <code code="1024051310"/>
           <title>TEXT FOR TITLE</title>
+          <confidentialityCode code="563058353"/>
         </section>
       </component>
       <component>
         <section>
           <typeId root="2.16.840.1.113883.1.3"/>
-          <templateId root="2.16.840.1.113883.10.20.22.2.9"/>
-          <id root="MDHT" extension="1557461258"/>
-          <code code="51847-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="ASSESSMENT AND PLAN"/>
+          <id root="MDHT" extension="641360554"/>
+          <code code="1613537766"/>
           <title>TEXT FOR TITLE</title>
+          <confidentialityCode code="142068877"/>
           <entry>
-            <act classCode="ACT">
+            <act>
               <typeId root="2.16.840.1.113883.1.3"/>
-              <templateId root="2.16.840.1.113883.10.20.22.4.39"/>
-              <id root="MDHT" extension="2058810623"/>
-              <code code="2117276289"/>
+              <id root="MDHT" extension="706461936"/>
+              <code code="1143717578"/>
               <effectiveTime>
-                <low value="2012"/>
-                <high value="2012"/>
+                <low value="2013"/>
+                <high value="2013"/>
               </effectiveTime>
             </act>
           </entry>
@@ -335,87 +331,79 @@ element.</li>
       <component>
         <section>
           <typeId root="2.16.840.1.113883.1.3"/>
-          <templateId root="2.16.840.1.113883.10.20.22.2.10"/>
-          <id root="MDHT" extension="903591095"/>
-          <code code="18776-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Treatment plan"/>
+          <id root="MDHT" extension="430947189"/>
+          <code code="134951870"/>
           <title>TEXT FOR TITLE</title>
+          <confidentialityCode code="1083738636"/>
           <entry>
-            <act classCode="ACT">
+            <act>
               <typeId root="2.16.840.1.113883.1.3"/>
-              <templateId root="2.16.840.1.113883.10.20.22.4.39"/>
-              <id root="MDHT" extension="548356778"/>
-              <code code="1225212307"/>
+              <id root="MDHT" extension="49518775"/>
+              <code code="1747736607"/>
               <effectiveTime>
-                <low value="2012"/>
-                <high value="2012"/>
+                <low value="2013"/>
+                <high value="2013"/>
               </effectiveTime>
             </act>
           </entry>
           <entry>
-            <encounter classCode="ENC">
+            <encounter>
               <typeId root="2.16.840.1.113883.1.3"/>
-              <templateId root="2.16.840.1.113883.10.20.22.4.40"/>
-              <id root="MDHT" extension="612901004"/>
-              <code code="1216046633"/>
+              <id root="MDHT" extension="373645915"/>
+              <code code="665244960"/>
               <effectiveTime>
-                <low value="2012"/>
-                <high value="2012"/>
+                <low value="2013"/>
+                <high value="2013"/>
               </effectiveTime>
             </encounter>
           </entry>
           <entry>
-            <observation classCode="OBS">
+            <observation>
               <typeId root="2.16.840.1.113883.1.3"/>
-              <templateId root="2.16.840.1.113883.10.20.22.4.44"/>
-              <id root="MDHT" extension="765009045"/>
-              <code code="2016458770"/>
+              <id root="MDHT" extension="1942893828"/>
+              <code code="936776958"/>
               <effectiveTime>
-                <low value="2012"/>
-                <high value="2012"/>
+                <low value="2013"/>
+                <high value="2013"/>
               </effectiveTime>
             </observation>
           </entry>
           <entry>
-            <procedure classCode="PROC">
+            <procedure>
               <typeId root="2.16.840.1.113883.1.3"/>
-              <templateId root="2.16.840.1.113883.10.20.22.4.41"/>
-              <id root="MDHT" extension="1253871890"/>
-              <code code="220310004"/>
+              <id root="MDHT" extension="1608397649"/>
+              <code code="1059614548"/>
               <effectiveTime>
-                <low value="2012"/>
-                <high value="2012"/>
+                <low value="2013"/>
+                <high value="2013"/>
               </effectiveTime>
             </procedure>
           </entry>
           <entry>
             <substanceAdministration classCode="SBADM">
               <typeId root="2.16.840.1.113883.1.3"/>
-              <templateId root="2.16.840.1.113883.10.20.22.4.42"/>
-              <id root="MDHT" extension="494604135"/>
-              <code code="390206273"/>
-              <effectiveTime value="20121102"/>
+              <id root="MDHT" extension="443471569"/>
+              <code code="805587746"/>
+              <effectiveTime value="20130627"/>
               <consumable/>
             </substanceAdministration>
           </entry>
           <entry>
             <supply classCode="SPLY">
               <typeId root="2.16.840.1.113883.1.3"/>
-              <templateId root="2.16.840.1.113883.10.20.22.4.43"/>
-              <id root="MDHT" extension="941942868"/>
-              <code code="49940245"/>
-              <effectiveTime value="20121102"/>
+              <id root="MDHT" extension="1465030805"/>
+              <code code="951439610"/>
+              <effectiveTime value="20130627"/>
             </supply>
           </entry>
           <entry>
-            <act classCode="ACT" moodCode="INT">
+            <act>
               <typeId root="2.16.840.1.113883.1.3"/>
-              <templateId root="2.16.840.1.113883.10.20.22.4.20"/>
-              <id root="MDHT" extension="292652888"/>
-              <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
-              <statusCode code="completed"/>
+              <id root="MDHT" extension="1546766617"/>
+              <code code="97830358"/>
               <effectiveTime>
-                <low value="2012"/>
-                <high value="2012"/>
+                <low value="2013"/>
+                <high value="2013"/>
               </effectiveTime>
             </act>
           </entry>
@@ -424,59 +412,54 @@ element.</li>
       <component>
         <section>
           <typeId root="2.16.840.1.113883.1.3"/>
-          <templateId root="1.3.6.1.4.1.19376.1.5.3.1.3.4"/>
-          <id root="MDHT" extension="1401796955"/>
-          <code code="10164-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="HISTORY OF PRESENT ILLNESS"/>
+          <id root="MDHT" extension="983738293"/>
+          <code code="1072199672"/>
           <title>TEXT FOR TITLE</title>
+          <confidentialityCode code="927313852"/>
         </section>
       </component>
       <component>
         <section>
           <typeId root="2.16.840.1.113883.1.3"/>
-          <templateId root="2.16.840.1.113883.10.20.2.10"/>
-          <id root="MDHT" extension="1115999250"/>
-          <code code="29545-1" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="PHYSICAL EXAMINATION"/>
+          <id root="MDHT" extension="2118843203"/>
+          <code code="1005706191"/>
           <title>TEXT FOR TITLE</title>
+          <confidentialityCode code="409220949"/>
           <entry>
-            <observation classCode="OBS" moodCode="EVN">
+            <observation>
               <typeId root="2.16.840.1.113883.1.3"/>
-              <templateId root="2.16.840.1.113883.10.20.22.4.70"/>
-              <id root="MDHT" extension="1001526920"/>
-              <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4" codeSystemName="HL7ActCode" displayName="Assertion"/>
+              <id root="MDHT" extension="2023930576"/>
+              <code code="59447311"/>
               <effectiveTime>
-                <low value="2012"/>
-                <high value="2012"/>
+                <low value="2013"/>
+                <high value="2013"/>
               </effectiveTime>
-              <targetSiteCode codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
               <entryRelationship typeCode="COMP"/>
               <entryRelationship typeCode="COMP"/>
               <entryRelationship typeCode="COMP"/>
             </observation>
           </entry>
           <entry>
-            <observation classCode="OBS" moodCode="EVN">
+            <observation>
               <typeId root="2.16.840.1.113883.1.3"/>
-              <templateId root="2.16.840.1.113883.10.20.22.4.76"/>
-              <id root="MDHT" extension="787566977"/>
-              <code code="2264892003" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT" displayName="number of pressure ulcers"/>
-              <statusCode code="completed"/>
+              <id root="MDHT" extension="1787077972"/>
+              <code code="1488231877"/>
               <effectiveTime>
-                <low value="2012"/>
-                <high value="2012"/>
+                <low value="2013"/>
+                <high value="2013"/>
               </effectiveTime>
               <author/>
               <entryRelationship typeCode="SUBJ"/>
             </observation>
           </entry>
           <entry>
-            <observation classCode="OBS" moodCode="EVN">
+            <observation>
               <typeId root="2.16.840.1.113883.1.3"/>
-              <templateId root="2.16.840.1.113883.10.20.22.4.77"/>
-              <id root="MDHT" extension="2069636887"/>
-              <code code="420905001" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT" displayName="Highest Pressure Ulcer Stage"/>
+              <id root="MDHT" extension="138664129"/>
+              <code code="572400661"/>
               <effectiveTime>
-                <low value="2012"/>
-                <high value="2012"/>
+                <low value="2013"/>
+                <high value="2013"/>
               </effectiveTime>
             </observation>
           </entry>
@@ -485,44 +468,39 @@ element.</li>
       <component>
         <section>
           <typeId root="2.16.840.1.113883.1.3"/>
-          <templateId root="1.3.6.1.4.1.19376.1.5.3.1.3.1"/>
-          <id root="MDHT" extension="2078790951"/>
-          <code code="42349-1" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="REASON FOR REFERRAL"/>
+          <id root="MDHT" extension="861414278"/>
+          <code code="1341225118"/>
           <title>TEXT FOR TITLE</title>
+          <confidentialityCode code="1456435755"/>
         </section>
       </component>
       <component>
         <section>
           <typeId root="2.16.840.1.113883.1.3"/>
-          <templateId root="2.16.840.1.113883.10.20.22.2.12"/>
-          <id root="MDHT" extension="1120144476"/>
-          <code code="29299-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Reason for Visit"/>
+          <id root="MDHT" extension="181658206"/>
+          <code code="265353723"/>
           <title>TEXT FOR TITLE</title>
+          <confidentialityCode code="535814038"/>
         </section>
       </component>
       <component>
         <section>
           <typeId root="2.16.840.1.113883.1.3"/>
-          <templateId root="2.16.840.1.113883.10.20.22.2.6"/>
-          <id root="MDHT" extension="1531517060"/>
-          <code code="48765-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Allergies, adverse reactions, alerts"/>
+          <id root="MDHT" extension="1578651935"/>
+          <code code="1006780974"/>
           <title>TEXT FOR TITLE</title>
+          <confidentialityCode code="354726000"/>
           <entry>
-            <act classCode="ACT" moodCode="EVN">
+            <act>
               <typeId root="2.16.840.1.113883.1.3"/>
-              <templateId root="2.16.840.1.113883.10.20.22.4.30"/>
-              <id root="MDHT" extension="1330874671"/>
-              <code code="48765-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Allergies, adverse reactions, alerts"/>
+              <id root="MDHT" extension="1107084412"/>
+              <code code="867581058"/>
               <effectiveTime>
-                <low value="2012"/>
-                <high value="2012"/>
+                <low value="2013"/>
+                <high value="2013"/>
               </effectiveTime>
               <entryRelationship>
-                <observation classCode="OBS" moodCode="EVN">
-                  <templateId root="2.16.840.1.113883.10.20.22.4.7"/>
-                  <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4" codeSystemName="HL7ActCode"/>
-                  <statusCode code="completed"/>
-                </observation>
+                <observation/>
               </entryRelationship>
             </act>
           </entry>
@@ -531,46 +509,41 @@ element.</li>
       <component>
         <section>
           <typeId root="2.16.840.1.113883.1.3"/>
-          <templateId root="1.3.6.1.4.1.19376.1.5.3.1.1.13.2.1"/>
-          <id root="MDHT" extension="643610188"/>
-          <code code="10154-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="CHIEF COMPLAINT"/>
+          <id root="MDHT" extension="691114487"/>
+          <code code="2103727879"/>
           <title>TEXT FOR TITLE</title>
+          <confidentialityCode code="1738919878"/>
         </section>
       </component>
       <component>
         <section>
           <typeId root="2.16.840.1.113883.1.3"/>
-          <templateId root="2.16.840.1.113883.10.20.22.2.13"/>
-          <id root="MDHT" extension="1021790998"/>
-          <code code="46239-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Chief Complaint and Reason for Visit"/>
+          <id root="MDHT" extension="593386422"/>
+          <code code="1906321009"/>
           <title>TEXT FOR TITLE</title>
+          <confidentialityCode code="590822831"/>
         </section>
       </component>
       <component>
         <section>
           <typeId root="2.16.840.1.113883.1.3"/>
-          <templateId root="2.16.840.1.113883.10.20.22.2.15"/>
-          <id root="MDHT" extension="1305960615"/>
-          <code code="10157-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Family History"/>
+          <id root="MDHT" extension="1431641749"/>
+          <code code="971055733"/>
           <title>TEXT FOR TITLE</title>
+          <confidentialityCode code="770810243"/>
           <entry>
-            <organizer classCode="CLUSTER" moodCode="EVN">
+            <organizer>
               <typeId root="2.16.840.1.113883.1.3"/>
-              <templateId root="2.16.840.1.113883.10.20.22.4.45"/>
-              <id root="MDHT" extension="1604989911"/>
-              <code code="1757316441"/>
+              <id root="MDHT" extension="1307798576"/>
+              <code code="95417612"/>
               <statusCode code="completed"/>
               <effectiveTime>
-                <low value="2012"/>
-                <high value="2012"/>
+                <low value="2013"/>
+                <high value="2013"/>
               </effectiveTime>
               <subject/>
               <component>
-                <observation classCode="OBS" moodCode="EVN">
-                  <templateId root="2.16.840.1.113883.10.20.22.4.46"/>
-                  <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
-                  <statusCode code="completed"/>
-                </observation>
+                <observation/>
               </component>
             </organizer>
           </entry>
@@ -579,50 +552,36 @@ element.</li>
       <component>
         <section>
           <typeId root="2.16.840.1.113883.1.3"/>
-          <templateId root="2.16.840.1.113883.10.20.2.5"/>
-          <id root="MDHT" extension="771593668"/>
-          <code code="10210-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="GENERAL STATUS"/>
+          <id root="MDHT" extension="1805770125"/>
+          <code code="1370547276"/>
           <title>TEXT FOR TITLE</title>
+          <confidentialityCode code="1867079490"/>
         </section>
       </component>
       <component>
         <section>
           <typeId root="2.16.840.1.113883.1.3"/>
-          <templateId root="2.16.840.1.113883.10.20.22.2.20"/>
-          <id root="MDHT" extension="148386924"/>
-          <code code="11348-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="HISTORY OF PAST ILLNESS"/>
+          <id root="MDHT" extension="1669058656"/>
+          <code code="250591762"/>
           <title>TEXT FOR TITLE</title>
+          <confidentialityCode code="897120948"/>
           <entry>
-            <observation classCode="OBS" moodCode="EVN">
+            <observation>
               <typeId root="2.16.840.1.113883.1.3"/>
-              <templateId root="2.16.840.1.113883.10.20.22.4.4"/>
-              <id root="MDHT" extension="1698794190"/>
-              <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
-              <statusCode code="completed"/>
+              <id root="MDHT" extension="877106381"/>
+              <code code="1323964093"/>
               <effectiveTime>
-                <low value="2012"/>
-                <high value="2012"/>
+                <low value="2013"/>
+                <high value="2013"/>
               </effectiveTime>
               <entryRelationship>
-                <observation classCode="OBS" moodCode="EVN">
-                  <templateId root="2.16.840.1.113883.10.20.22.4.31"/>
-                  <code code="445518008" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT" displayName="Age At Onset"/>
-                  <statusCode code="completed"/>
-                </observation>
+                <observation/>
               </entryRelationship>
               <entryRelationship>
-                <observation classCode="OBS" moodCode="EVN">
-                  <templateId root="2.16.840.1.113883.10.20.22.4.5"/>
-                  <code code="11323-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Health status"/>
-                  <statusCode code="completed"/>
-                </observation>
+                <observation/>
               </entryRelationship>
               <entryRelationship>
-                <observation classCode="OBS" moodCode="EVN">
-                  <templateId root="2.16.840.1.113883.10.20.22.4.6"/>
-                  <code code="33999-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Status"/>
-                  <statusCode code="completed"/>
-                </observation>
+                <observation/>
               </entryRelationship>
             </observation>
           </entry>
@@ -631,112 +590,35 @@ element.</li>
       <component>
         <section>
           <typeId root="2.16.840.1.113883.1.3"/>
-          <templateId root="2.16.840.1.113883.10.20.22.2.2.1"/>
-          <templateId root="2.16.840.1.113883.10.20.22.2.2"/>
-          <id root="MDHT" extension="1245362770"/>
-          <code code="11369-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+          <id root="MDHT" extension="626034513"/>
+          <code code="1811062413"/>
           <title>TEXT FOR TITLE</title>
-          <entry>
-            <substanceAdministration classCode="SBADM" negationInd="false">
-              <typeId root="2.16.840.1.113883.1.3"/>
-              <templateId root="2.16.840.1.113883.10.20.22.4.52"/>
-              <id root="MDHT" extension="1473628703"/>
-              <code code="1976479194"/>
-              <effectiveTime value="20121102"/>
-              <routeCode codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus"/>
-              <approachSiteCode codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
-              <administrationUnitCode codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus"/>
-              <consumable/>
-              <performer/>
-              <entryRelationship>
-                <observation classCode="OBS" moodCode="EVN">
-                  <templateId root="2.16.840.1.113883.10.20.22.4.19"/>
-                  <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
-                  <statusCode code="completed"/>
-                </observation>
-              </entryRelationship>
-              <entryRelationship>
-                <act classCode="ACT" moodCode="INT">
-                  <templateId root="2.16.840.1.113883.10.20.22.4.20"/>
-                  <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
-                  <statusCode code="completed"/>
-                </act>
-              </entryRelationship>
-              <entryRelationship>
-                <supply classCode="SPLY" moodCode="EVN">
-                  <templateId root="2.16.840.1.113883.10.20.22.4.18"/>
-                </supply>
-              </entryRelationship>
-              <entryRelationship>
-                <observation classCode="OBS" moodCode="EVN">
-                  <templateId root="2.16.840.1.113883.10.20.22.4.9"/>
-                  <statusCode code="completed"/>
-                </observation>
-              </entryRelationship>
-              <entryRelationship>
-                <observation classCode="OBS" moodCode="EVN">
-                  <templateId root="2.16.840.1.113883.10.20.22.4.53"/>
-                  <code codeSystem="2.16.840.1.113883.5.8" codeSystemName="ActReason"/>
-                  <statusCode code="completed"/>
-                </observation>
-              </entryRelationship>
-              <entryRelationship>
-                <supply classCode="SPLY" moodCode="INT">
-                  <templateId root="2.16.840.1.113883.10.20.22.4.17"/>
-                </supply>
-              </entryRelationship>
-              <precondition/>
-            </substanceAdministration>
-          </entry>
-        </section>
-      </component>
-      <component>
-        <section>
-          <typeId root="2.16.840.1.113883.1.3"/>
-          <templateId root="2.16.840.1.113883.10.20.22.2.1"/>
-          <id root="MDHT" extension="640748026"/>
-          <code code="10160-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="History of medication use"/>
-          <title>TEXT FOR TITLE</title>
+          <confidentialityCode code="440908596"/>
           <entry>
             <substanceAdministration classCode="SBADM">
               <typeId root="2.16.840.1.113883.1.3"/>
-              <templateId root="2.16.840.1.113883.10.20.22.4.16"/>
-              <id root="MDHT" extension="648943967"/>
-              <code code="1100515128"/>
-              <effectiveTime value="20121102"/>
-              <routeCode codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus"/>
-              <approachSiteCode codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
+              <id root="MDHT" extension="2008036367"/>
+              <code code="901768433"/>
+              <effectiveTime value="20130627"/>
               <consumable/>
               <performer/>
               <entryRelationship>
-                <supply classCode="SPLY" moodCode="INT">
-                  <templateId root="2.16.840.1.113883.10.20.22.4.17"/>
-                </supply>
+                <observation/>
               </entryRelationship>
               <entryRelationship>
-                <observation classCode="OBS" moodCode="EVN">
-                  <templateId root="2.16.840.1.113883.10.20.22.4.9"/>
-                  <statusCode code="completed"/>
-                </observation>
+                <act/>
               </entryRelationship>
               <entryRelationship>
-                <act classCode="ACT" moodCode="INT">
-                  <templateId root="2.16.840.1.113883.10.20.22.4.20"/>
-                  <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
-                  <statusCode code="completed"/>
-                </act>
+                <supply classCode="SPLY"/>
               </entryRelationship>
               <entryRelationship>
-                <observation classCode="OBS" moodCode="EVN">
-                  <templateId root="2.16.840.1.113883.10.20.22.4.19"/>
-                  <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
-                  <statusCode code="completed"/>
-                </observation>
+                <observation/>
               </entryRelationship>
               <entryRelationship>
-                <supply classCode="SPLY" moodCode="EVN">
-                  <templateId root="2.16.840.1.113883.10.20.22.4.18"/>
-                </supply>
+                <observation/>
+              </entryRelationship>
+              <entryRelationship>
+                <supply classCode="SPLY"/>
               </entryRelationship>
               <precondition/>
             </substanceAdministration>
@@ -746,26 +628,56 @@ element.</li>
       <component>
         <section>
           <typeId root="2.16.840.1.113883.1.3"/>
-          <templateId root="2.16.840.1.113883.10.20.22.2.5"/>
-          <id root="MDHT" extension="748505601"/>
-          <code code="11450-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Problem List"/>
+          <id root="MDHT" extension="650421846"/>
+          <code code="609226833"/>
           <title>TEXT FOR TITLE</title>
+          <confidentialityCode code="110808477"/>
           <entry>
-            <act classCode="ACT" moodCode="EVN">
+            <substanceAdministration classCode="SBADM">
               <typeId root="2.16.840.1.113883.1.3"/>
-              <templateId root="2.16.840.1.113883.10.20.22.4.3"/>
-              <id root="MDHT" extension="1557400182"/>
-              <code code="CONC" codeSystem="2.16.840.1.113883.5.6" codeSystemName="HL7ActClass" displayName="Concern"/>
+              <id root="MDHT" extension="1268106940"/>
+              <code code="2074404400"/>
+              <effectiveTime value="20130627"/>
+              <consumable/>
+              <performer/>
+              <entryRelationship>
+                <supply classCode="SPLY"/>
+              </entryRelationship>
+              <entryRelationship>
+                <observation/>
+              </entryRelationship>
+              <entryRelationship>
+                <act/>
+              </entryRelationship>
+              <entryRelationship>
+                <observation/>
+              </entryRelationship>
+              <entryRelationship>
+                <supply classCode="SPLY"/>
+              </entryRelationship>
+              <precondition/>
+            </substanceAdministration>
+          </entry>
+        </section>
+      </component>
+      <component>
+        <section>
+          <typeId root="2.16.840.1.113883.1.3"/>
+          <id root="MDHT" extension="1049455194"/>
+          <code code="2140738831"/>
+          <title>TEXT FOR TITLE</title>
+          <confidentialityCode code="371248255"/>
+          <entry>
+            <act>
+              <typeId root="2.16.840.1.113883.1.3"/>
+              <id root="MDHT" extension="1806043874"/>
+              <code code="1279642280"/>
               <effectiveTime>
-                <low value="2012"/>
-                <high value="2012"/>
+                <low value="2013"/>
+                <high value="2013"/>
               </effectiveTime>
               <entryRelationship>
-                <observation classCode="OBS" moodCode="EVN">
-                  <templateId root="2.16.840.1.113883.10.20.22.4.4"/>
-                  <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
-                  <statusCode code="completed"/>
-                </observation>
+                <observation/>
               </entryRelationship>
             </act>
           </entry>
@@ -774,118 +686,74 @@ element.</li>
       <component>
         <section>
           <typeId root="2.16.840.1.113883.1.3"/>
-          <templateId root="2.16.840.1.113883.10.20.22.2.7"/>
-          <id root="MDHT" extension="76295947"/>
-          <code code="47519-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="History of Procedures"/>
+          <id root="MDHT" extension="1568395569"/>
+          <code code="2021046843"/>
           <title>TEXT FOR TITLE</title>
+          <confidentialityCode code="883302170"/>
           <entry>
-            <procedure classCode="PROC">
+            <procedure>
               <typeId root="2.16.840.1.113883.1.3"/>
-              <templateId root="2.16.840.1.113883.10.20.22.4.14"/>
-              <id root="MDHT" extension="460742700"/>
-              <code code="1536475474"/>
+              <id root="MDHT" extension="682872057"/>
+              <code code="218726507"/>
               <effectiveTime>
-                <low value="2012"/>
-                <high value="2012"/>
+                <low value="2013"/>
+                <high value="2013"/>
               </effectiveTime>
-              <priorityCode codeSystem="2.16.840.1.113883.5.7" codeSystemName="ActPriority"/>
-              <targetSiteCode codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
               <specimen/>
               <performer/>
               <entryRelationship typeCode="COMP" inversionInd="true"/>
               <entryRelationship>
-                <observation classCode="OBS" moodCode="EVN">
-                  <templateId root="2.16.840.1.113883.10.20.22.4.19"/>
-                  <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
-                  <statusCode code="completed"/>
-                </observation>
+                <observation/>
               </entryRelationship>
               <entryRelationship>
-                <substanceAdministration classCode="SBADM">
-                  <templateId root="2.16.840.1.113883.10.20.22.4.16"/>
-                  <routeCode codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus"/>
-                  <approachSiteCode codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
-                </substanceAdministration>
+                <substanceAdministration classCode="SBADM"/>
               </entryRelationship>
               <entryRelationship>
-                <act classCode="ACT" moodCode="INT">
-                  <templateId root="2.16.840.1.113883.10.20.22.4.20"/>
-                  <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
-                  <statusCode code="completed"/>
-                </act>
+                <act/>
               </entryRelationship>
             </procedure>
           </entry>
           <entry>
-            <observation classCode="OBS">
+            <observation>
               <typeId root="2.16.840.1.113883.1.3"/>
-              <templateId root="2.16.840.1.113883.10.20.22.4.13"/>
-              <id root="MDHT" extension="561898844"/>
-              <code code="2142476717"/>
+              <id root="MDHT" extension="111445074"/>
+              <code code="430746610"/>
               <effectiveTime>
-                <low value="2012"/>
-                <high value="2012"/>
+                <low value="2013"/>
+                <high value="2013"/>
               </effectiveTime>
-              <priorityCode codeSystem="2.16.840.1.113883.5.7" codeSystemName="ActPriority"/>
-              <targetSiteCode codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
               <performer/>
               <entryRelationship typeCode="COMP" inversionInd="true"/>
               <entryRelationship>
-                <act classCode="ACT" moodCode="INT">
-                  <templateId root="2.16.840.1.113883.10.20.22.4.20"/>
-                  <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
-                  <statusCode code="completed"/>
-                </act>
+                <act/>
               </entryRelationship>
               <entryRelationship>
-                <observation classCode="OBS" moodCode="EVN">
-                  <templateId root="2.16.840.1.113883.10.20.22.4.19"/>
-                  <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
-                  <statusCode code="completed"/>
-                </observation>
+                <observation/>
               </entryRelationship>
               <entryRelationship>
-                <substanceAdministration classCode="SBADM">
-                  <templateId root="2.16.840.1.113883.10.20.22.4.16"/>
-                  <routeCode codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus"/>
-                  <approachSiteCode codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
-                </substanceAdministration>
+                <substanceAdministration classCode="SBADM"/>
               </entryRelationship>
             </observation>
           </entry>
           <entry>
-            <act classCode="ACT">
+            <act>
               <typeId root="2.16.840.1.113883.1.3"/>
-              <templateId root="2.16.840.1.113883.10.20.22.4.12"/>
-              <id root="MDHT" extension="717994171"/>
-              <code code="43184334"/>
+              <id root="MDHT" extension="1602251828"/>
+              <code code="991588714"/>
               <effectiveTime>
-                <low value="2012"/>
-                <high value="2012"/>
+                <low value="2013"/>
+                <high value="2013"/>
               </effectiveTime>
-              <priorityCode codeSystem="2.16.840.1.113883.5.7" codeSystemName="ActPriority"/>
               <performer/>
               <entryRelationship typeCode="COMP" inversionInd="true"/>
               <entryRelationship>
-                <act classCode="ACT" moodCode="INT">
-                  <templateId root="2.16.840.1.113883.10.20.22.4.20"/>
-                  <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
-                  <statusCode code="completed"/>
-                </act>
+                <act/>
               </entryRelationship>
               <entryRelationship>
-                <observation classCode="OBS" moodCode="EVN">
-                  <templateId root="2.16.840.1.113883.10.20.22.4.19"/>
-                  <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
-                  <statusCode code="completed"/>
-                </observation>
+                <observation/>
               </entryRelationship>
               <entryRelationship>
-                <substanceAdministration classCode="SBADM">
-                  <templateId root="2.16.840.1.113883.10.20.22.4.16"/>
-                  <routeCode codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus"/>
-                  <approachSiteCode codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
-                </substanceAdministration>
+                <substanceAdministration classCode="SBADM"/>
               </entryRelationship>
             </act>
           </entry>
@@ -894,25 +762,22 @@ element.</li>
       <component>
         <section>
           <typeId root="2.16.840.1.113883.1.3"/>
-          <templateId root="2.16.840.1.113883.10.20.22.2.3"/>
-          <id root="MDHT" extension="1455769062"/>
-          <code code="30954-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Relevant diagnostic tests and/or laboratory data"/>
+          <id root="MDHT" extension="175008029"/>
+          <code code="1073956254"/>
           <title>TEXT FOR TITLE</title>
+          <confidentialityCode code="593247844"/>
           <entry>
-            <organizer moodCode="EVN">
+            <organizer>
               <typeId root="2.16.840.1.113883.1.3"/>
-              <templateId root="2.16.840.1.113883.10.20.22.4.1"/>
-              <id root="MDHT" extension="1490901815"/>
-              <code code="1526152348"/>
+              <id root="MDHT" extension="535842662"/>
+              <code code="278612621"/>
               <statusCode code="completed"/>
               <effectiveTime>
-                <low value="2012"/>
-                <high value="2012"/>
+                <low value="2013"/>
+                <high value="2013"/>
               </effectiveTime>
               <component>
-                <observation classCode="OBS" moodCode="EVN">
-                  <templateId root="2.16.840.1.113883.10.20.22.4.2"/>
-                </observation>
+                <observation/>
               </component>
             </organizer>
           </entry>
@@ -921,76 +786,63 @@ element.</li>
       <component>
         <section>
           <typeId root="2.16.840.1.113883.1.3"/>
-          <templateId root="1.3.6.1.4.1.19376.1.5.3.1.3.18"/>
-          <id root="MDHT" extension="1490120628"/>
-          <code code="10187-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="REVIEW OF SYSTEMS"/>
+          <id root="MDHT" extension="354201786"/>
+          <code code="1899146396"/>
           <title>TEXT FOR TITLE</title>
+          <confidentialityCode code="2044768884"/>
         </section>
       </component>
       <component>
         <section>
           <typeId root="2.16.840.1.113883.1.3"/>
-          <templateId root="2.16.840.1.113883.10.20.22.2.17"/>
-          <id root="MDHT" extension="831543835"/>
-          <code code="29762-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Social history"/>
+          <id root="MDHT" extension="1225241527"/>
+          <code code="1659176359"/>
           <title>TEXT FOR TITLE</title>
+          <confidentialityCode code="1190430800"/>
           <entry>
-            <observation classCode="OBS" moodCode="EVN">
+            <observation>
               <typeId root="2.16.840.1.113883.1.3"/>
-              <templateId root="2.16.840.1.113883.10.20.22.4.38"/>
-              <id root="MDHT" extension="1644727866"/>
-              <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
-              <statusCode code="completed"/>
+              <id root="MDHT" extension="1215975444"/>
+              <code code="1259277713"/>
               <effectiveTime>
-                <low value="2012"/>
-                <high value="2012"/>
+                <low value="2013"/>
+                <high value="2013"/>
               </effectiveTime>
             </observation>
           </entry>
           <entry>
-            <observation classCode="OBS" moodCode="EVN">
+            <observation>
               <typeId root="2.16.840.1.113883.1.3"/>
-              <templateId root="2.16.840.1.113883.10.20.15.3.8"/>
-              <id root="MDHT" extension="1572749874"/>
-              <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4" codeSystemName="HL7ActCode" displayName="Assertion"/>
-              <statusCode code="completed"/>
+              <id root="MDHT" extension="1253776070"/>
+              <code code="1278254746"/>
               <effectiveTime>
-                <low value="2012"/>
-                <high value="2012"/>
+                <low value="2013"/>
+                <high value="2013"/>
               </effectiveTime>
               <entryRelationship>
-                <observation classCode="OBS" moodCode="EVN">
-                  <templateId root="2.16.840.1.113883.10.20.15.3.1"/>
-                  <code code="11778-8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
-                  <statusCode code="completed"/>
-                </observation>
+                <observation/>
               </entryRelationship>
             </observation>
           </entry>
           <entry>
-            <observation classCode="OBS" moodCode="EVN">
+            <observation>
               <typeId root="2.16.840.1.113883.1.3"/>
-              <templateId root="2.16.840.1.113883.10.20.22.4.78"/>
-              <templateId root="2.16.840.1.113883.10.20.22.4.85"/>
-              <id root="MDHT" extension="327943210"/>
-              <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4" codeSystemName="HL7ActCode" displayName="Assertion"/>
-              <statusCode code="completed"/>
+              <id root="MDHT" extension="139180749"/>
+              <code code="309638288"/>
               <effectiveTime>
-                <low value="2012"/>
-                <high value="2012"/>
+                <low value="2013"/>
+                <high value="2013"/>
               </effectiveTime>
             </observation>
           </entry>
           <entry>
-            <observation classCode="OBS" moodCode="EVN">
+            <observation>
               <typeId root="2.16.840.1.113883.1.3"/>
-              <templateId root="2.16.840.1.113883.10.20.22.4.85"/>
-              <id root="MDHT" extension="722732808"/>
-              <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4" codeSystemName="HL7ActCode" displayName="Assertion"/>
-              <statusCode code="completed"/>
+              <id root="MDHT" extension="1898199646"/>
+              <code code="234023048"/>
               <effectiveTime>
-                <low value="2012"/>
-                <high value="2012"/>
+                <low value="2013"/>
+                <high value="2013"/>
               </effectiveTime>
             </observation>
           </entry>
@@ -999,27 +851,22 @@ element.</li>
       <component>
         <section>
           <typeId root="2.16.840.1.113883.1.3"/>
-          <templateId root="2.16.840.1.113883.10.20.22.2.4"/>
-          <id root="MDHT" extension="1388895436"/>
-          <code code="8716-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Vital Signs"/>
+          <id root="MDHT" extension="1240235709"/>
+          <code code="415185605"/>
           <title>TEXT FOR TITLE</title>
+          <confidentialityCode code="1310561002"/>
           <entry>
-            <organizer classCode="CLUSTER" moodCode="EVN">
+            <organizer>
               <typeId root="2.16.840.1.113883.1.3"/>
-              <templateId root="2.16.840.1.113883.10.20.22.4.26"/>
-              <id root="MDHT" extension="192359602"/>
-              <code code="46680005" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT" displayName="Vital signs"/>
+              <id root="MDHT" extension="224512292"/>
+              <code code="901184235"/>
               <statusCode code="completed"/>
               <effectiveTime>
-                <low value="2012"/>
-                <high value="2012"/>
+                <low value="2013"/>
+                <high value="2013"/>
               </effectiveTime>
               <component>
-                <observation classCode="OBS" moodCode="EVN">
-                  <templateId root="2.16.840.1.113883.10.20.22.4.27"/>
-                  <code codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
-                  <statusCode code="completed"/>
-                </observation>
+                <observation/>
               </component>
             </organizer>
           </entry>

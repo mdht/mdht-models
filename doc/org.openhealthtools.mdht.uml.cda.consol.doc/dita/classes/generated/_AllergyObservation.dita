@@ -95,12 +95,12 @@ NOTE: The agent responsible for an allergy or adverse reaction is not always a m
 <li>entryRelationship with target entry Severity Observation <b>SHALL</b> contain exactly one [1..1] @inversionInd="true" True (CONF:9964)</li>
 <li>In an allergy to a specific medication the code <b>SHALL</b> be selected from the ValueSet 2.16.840.1.113883.3.88.12.80.16 Medication Brand Name DYNAMIC or the ValueSet 2.16.840.1.113883.3.88.12.80.17 Medication Clinical Drug DYNAMIC. In an allergy to a class of medications the code <b>SHALL</b> be selected from the ValueSet 2.16.840.1.113883.3.88.12.80.18 Medication Drug Class DYNAMIC. In an allergy to a food or other substance the code <b>SHALL</b> be selected from the ValueSet 2.16.840.1.113883.3.88.12.80.20 Ingredient Name DYNAMIC (CONF:7421, CONF:10083, CONF:10084)</li>
 </ol>
-<section id="tableconformance"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="8" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><colspec colname="col2" colnum="2" /><colspec colname="col3" colnum="3" /><colspec colname="col4" colnum="4" /><colspec colname="col5" colnum="5" /><colspec colname="col6" colnum="6" /><colspec colname="col7" colnum="7" /><thead> <row><entry namest="col0" nameend="col7" >consol::AllergyObservation</entry>  </row>  <row><entry namest="col0" nameend="col7" >cda::observation[cda:templateId/@root = 2.16.840.1.113883.10.20.22.4.7]/</entry>  </row>  <row><entry>Name</entry><entry>XPath</entry><entry>Cardinality</entry><entry>Severity</entry><entry>Nullable</entry><entry>Data Type</entry><entry>Conformance</entry><entry>Value(s)</entry></row></thead><tbody><row><entry>classCode</entry><entry>@classCode</entry><entry>1..1</entry><entry>SHALL</entry><entry>NO</entry><entry>ActClass</entry><entry>CONF:7379</entry><entry> ALRT</entry></row> 
+<section id="tableconformance"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="8" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><colspec colname="col2" colnum="2" /><colspec colname="col3" colnum="3" /><colspec colname="col4" colnum="4" /><colspec colname="col5" colnum="5" /><colspec colname="col6" colnum="6" /><colspec colname="col7" colnum="7" /><thead> <row><entry namest="col0" nameend="col7" >consol::AllergyObservation</entry>  </row>  <row><entry namest="col0" nameend="col7" >cda::observation[cda:templateId/@root = ]/</entry>  </row>  <row><entry>Name</entry><entry>XPath</entry><entry>Cardinality</entry><entry>Severity</entry><entry>Nullable</entry><entry>Data Type</entry><entry>Conformance</entry><entry>Value(s)</entry></row></thead><tbody><row><entry>classCode</entry><entry>@classCode</entry><entry>1..1</entry><entry>SHALL</entry><entry>NO</entry><entry>ActClass</entry><entry>CONF:7379</entry><entry> ALRT</entry></row> 
 <row><entry>moodCode</entry><entry>@moodCode</entry><entry>1..1</entry><entry>SHALL</entry><entry>NO</entry><entry>ActMood</entry><entry>CONF:7380</entry><entry> DEF</entry></row> 
-<row><entry>code</entry><entry>code</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>CD</entry><entry>CONF:15948</entry><entry>HL7ActCode 2.16.840.1.113883.5.4 ASSERTION</entry></row> 
+<row><entry>code</entry><entry>code</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>CD</entry><entry>CONF:15948</entry><entry>HL7ActCode 2.16.840.1.113883.5.4 </entry></row> 
 <row><entry>effectiveTime</entry><entry>effectiveTime</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>IVL_TS</entry><entry>CONF:7387</entry><entry> </entry></row> 
 <row><entry>id</entry><entry>id</entry><entry>1..*</entry><entry>SHALL</entry><entry>YES</entry><entry>II</entry><entry>CONF:7382</entry><entry> </entry></row> 
-<row><entry>statusCode</entry><entry>statusCode</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>CS</entry><entry>CONF:7386</entry><entry>ActStatus 2.16.840.1.113883.5.14 completed</entry></row> 
+<row><entry>statusCode</entry><entry>statusCode</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>CS</entry><entry>CONF:7386</entry><entry>ActStatus 2.16.840.1.113883.5.14 </entry></row> 
 <row><entry>value</entry><entry>value</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>CD</entry><entry>CONF:7390CONF:9139</entry><entry> </entry></row> 
 <row><entry>allergyObservation</entry><entry>allergyObservation</entry><entry>1..*</entry><entry>SHALL</entry><entry>YES</entry><entry>AllergyObservation</entry><entry>CONF:7509CONF:7915CONF:14925</entry><entry> </entry></row> 
 <row><entry>allergyStatusObservation</entry><entry>allergyStatusObservation</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>AllergyStatusObservation</entry><entry>CONF:7440CONF:7906CONF:15954</entry><entry> </entry></row> 
@@ -108,15 +108,12 @@ NOTE: The agent responsible for an allergy or adverse reaction is not always a m
 <row><entry>problemEntryReactionObservationContainer</entry><entry>problemEntryReactionObservationContainer</entry><entry>0..*</entry><entry>SHOULD</entry><entry>YES</entry><entry>ReactionObservation</entry><entry>CONF:7447CONF:7907CONF:15955</entry><entry> </entry></row> 
 <row><entry>severity</entry><entry>severity</entry><entry>0..1</entry><entry>SHOULD</entry><entry>YES</entry><entry>SeverityObservation</entry><entry>CONF:9961CONF:9962CONF:15956</entry><entry> </entry></row> 
 </tbody></tgroup></table></p></section>
-<codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
-<observation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd" classCode="OBS" moodCode="EVN">
-  <templateId root="2.16.840.1.113883.10.20.22.4.7"/>
-  <id root="MDHT" extension="1266909917"/>
-  <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4" codeSystemName="HL7ActCode"/>
-  <statusCode code="completed"/>
+<codeblock id="example"><![CDATA[<observation xmlns="urn:hl7-org:v3">
+  <id root="MDHT" extension="1440553728"/>
+  <code code="648947846"/>
   <effectiveTime>
-    <low value="2012"/>
-    <high value="2012"/>
+    <low value="2013"/>
+    <high value="2013"/>
   </effectiveTime>
   <participant typeCode="CSM">
     <participantRole classCode="MANU">
@@ -124,104 +121,66 @@ NOTE: The agent responsible for an allergy or adverse reaction is not always a m
     </participantRole>
   </participant>
   <entryRelationship>
-    <observation classCode="OBS" moodCode="EVN">
-      <templateId root="2.16.840.1.113883.10.20.22.4.9"/>
-      <id root="MDHT" extension="1831097945"/>
-      <code code="176778839"/>
-      <statusCode code="completed"/>
+    <observation>
+      <id root="MDHT" extension="246080946"/>
+      <code code="120672386"/>
       <effectiveTime>
-        <low value="2012"/>
-        <high value="2012"/>
+        <low value="2013"/>
+        <high value="2013"/>
       </effectiveTime>
       <entryRelationship>
-        <observation classCode="OBS" moodCode="EVN">
-          <templateId root="2.16.840.1.113883.10.20.22.4.8"/>
-          <id root="MDHT" extension="787256983"/>
-          <code code="SEV" codeSystem="2.16.840.1.113883.5.4" codeSystemName="HL7ActCode" displayName="Severity observation"/>
-          <statusCode code="completed"/>
+        <observation>
+          <id root="MDHT" extension="1058685405"/>
+          <code code="225738189"/>
           <effectiveTime>
-            <low value="2012"/>
-            <high value="2012"/>
+            <low value="2013"/>
+            <high value="2013"/>
           </effectiveTime>
-          <interpretationCode codeSystem="2.16.840.1.113883.5.83" codeSystemName="ObservationInterpretation"/>
         </observation>
       </entryRelationship>
       <entryRelationship>
-        <procedure classCode="PROC">
-          <templateId root="2.16.840.1.113883.10.20.22.4.14"/>
-          <id root="MDHT" extension="1624219354"/>
-          <code code="1248840498"/>
+        <procedure>
+          <id root="MDHT" extension="1994060805"/>
+          <code code="1729544607"/>
           <effectiveTime>
-            <low value="2012"/>
-            <high value="2012"/>
+            <low value="2013"/>
+            <high value="2013"/>
           </effectiveTime>
-          <priorityCode codeSystem="2.16.840.1.113883.5.7" codeSystemName="ActPriority"/>
-          <targetSiteCode codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
           <specimen/>
           <performer/>
           <entryRelationship typeCode="COMP" inversionInd="true"/>
           <entryRelationship>
-            <observation classCode="OBS" moodCode="EVN">
-              <templateId root="2.16.840.1.113883.10.20.22.4.19"/>
-              <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
-              <statusCode code="completed"/>
-            </observation>
+            <observation/>
           </entryRelationship>
           <entryRelationship>
-            <substanceAdministration classCode="SBADM">
-              <templateId root="2.16.840.1.113883.10.20.22.4.16"/>
-              <routeCode codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus"/>
-              <approachSiteCode codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
-            </substanceAdministration>
+            <substanceAdministration/>
           </entryRelationship>
           <entryRelationship>
-            <act classCode="ACT" moodCode="INT">
-              <templateId root="2.16.840.1.113883.10.20.22.4.20"/>
-              <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
-              <statusCode code="completed"/>
-            </act>
+            <act/>
           </entryRelationship>
         </procedure>
       </entryRelationship>
       <entryRelationship>
-        <substanceAdministration classCode="SBADM">
-          <templateId root="2.16.840.1.113883.10.20.22.4.16"/>
-          <id root="MDHT" extension="1494151498"/>
-          <code code="2069729244"/>
-          <effectiveTime value="20121102"/>
-          <routeCode codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus"/>
-          <approachSiteCode codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
+        <substanceAdministration>
+          <id root="MDHT" extension="2079902944"/>
+          <code code="748602723"/>
+          <effectiveTime value="20130627"/>
           <consumable/>
           <performer/>
           <entryRelationship>
-            <supply classCode="SPLY" moodCode="INT">
-              <templateId root="2.16.840.1.113883.10.20.22.4.17"/>
-            </supply>
+            <supply/>
           </entryRelationship>
           <entryRelationship>
-            <observation classCode="OBS" moodCode="EVN">
-              <templateId root="2.16.840.1.113883.10.20.22.4.9"/>
-              <statusCode code="completed"/>
-            </observation>
+            <observation/>
           </entryRelationship>
           <entryRelationship>
-            <act classCode="ACT" moodCode="INT">
-              <templateId root="2.16.840.1.113883.10.20.22.4.20"/>
-              <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
-              <statusCode code="completed"/>
-            </act>
+            <act/>
           </entryRelationship>
           <entryRelationship>
-            <observation classCode="OBS" moodCode="EVN">
-              <templateId root="2.16.840.1.113883.10.20.22.4.19"/>
-              <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
-              <statusCode code="completed"/>
-            </observation>
+            <observation/>
           </entryRelationship>
           <entryRelationship>
-            <supply classCode="SPLY" moodCode="EVN">
-              <templateId root="2.16.840.1.113883.10.20.22.4.18"/>
-            </supply>
+            <supply/>
           </entryRelationship>
           <precondition/>
         </substanceAdministration>
@@ -229,27 +188,22 @@ NOTE: The agent responsible for an allergy or adverse reaction is not always a m
     </observation>
   </entryRelationship>
   <entryRelationship>
-    <observation classCode="OBS" moodCode="EVN">
-      <templateId root="2.16.840.1.113883.10.20.22.4.8"/>
-      <id root="MDHT" extension="2089350944"/>
-      <code code="SEV" codeSystem="2.16.840.1.113883.5.4" codeSystemName="HL7ActCode" displayName="Severity observation"/>
-      <statusCode code="completed"/>
+    <observation>
+      <id root="MDHT" extension="1667661204"/>
+      <code code="1304571072"/>
       <effectiveTime>
-        <low value="2012"/>
-        <high value="2012"/>
+        <low value="2013"/>
+        <high value="2013"/>
       </effectiveTime>
-      <interpretationCode codeSystem="2.16.840.1.113883.5.83" codeSystemName="ObservationInterpretation"/>
     </observation>
   </entryRelationship>
   <entryRelationship>
-    <observation classCode="OBS" moodCode="EVN">
-      <templateId root="2.16.840.1.113883.10.20.22.4.28"/>
-      <id root="MDHT" extension="2112971777"/>
-      <code code="33999-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Status"/>
-      <statusCode code="completed"/>
+    <observation>
+      <id root="MDHT" extension="111925052"/>
+      <code code="323866413"/>
       <effectiveTime>
-        <low value="2012"/>
-        <high value="2012"/>
+        <low value="2013"/>
+        <high value="2013"/>
       </effectiveTime>
     </observation>
   </entryRelationship>
