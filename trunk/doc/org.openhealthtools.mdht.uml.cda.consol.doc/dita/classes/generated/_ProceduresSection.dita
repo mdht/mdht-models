@@ -62,34 +62,28 @@ The length of an encounter is documented in the documentationOf/encompassingEnco
 <li>Contains exactly one [1..1] <xref href="../ProcedureActivityAct.dita">Procedure Activity Act</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.12</tt>)</li></ol></li>
 <li>There <b>SHALL</b> be at least one procedure, observation or act entry conformant to Procedure Activity Procedure template, Procedure Activity Observation template or Procedure Activity Act template in the Procedure Section. (CONF:8021)</li>
 </ol>
-<section id="tableconformance"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="8" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><colspec colname="col2" colnum="2" /><colspec colname="col3" colnum="3" /><colspec colname="col4" colnum="4" /><colspec colname="col5" colnum="5" /><colspec colname="col6" colnum="6" /><colspec colname="col7" colnum="7" /><thead> <row><entry namest="col0" nameend="col7" >consol::ProceduresSection</entry>  </row>  <row><entry namest="col0" nameend="col7" >/cda:ClinicalDocument/cda:component/cda:structuredBody/cda:component/cda:section[cda:templateId/@root = 2.16.840.1.113883.10.20.22.2.7]/</entry>  </row>  <row><entry>Name</entry><entry>XPath</entry><entry>Cardinality</entry><entry>Severity</entry><entry>Nullable</entry><entry>Data Type</entry><entry>Conformance</entry><entry>Value(s)</entry></row></thead><tbody><row><entry>code</entry><entry>code</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>CE</entry><entry>CONF:15426</entry><entry>LOINC 2.16.840.1.113883.6.1LOINC 2.16.840.1.113883.6.1 47519-4</entry></row> 
+<section id="tableconformance"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="8" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><colspec colname="col2" colnum="2" /><colspec colname="col3" colnum="3" /><colspec colname="col4" colnum="4" /><colspec colname="col5" colnum="5" /><colspec colname="col6" colnum="6" /><colspec colname="col7" colnum="7" /><thead> <row><entry namest="col0" nameend="col7" >consol::ProceduresSection</entry>  </row>  <row><entry namest="col0" nameend="col7" >/cda:ClinicalDocument/cda:component/cda:structuredBody/cda:component/cda:section/</entry>  </row>  <row><entry>Name</entry><entry>XPath</entry><entry>Cardinality</entry><entry>Severity</entry><entry>Nullable</entry><entry>Data Type</entry><entry>Conformance</entry><entry>Value(s)</entry></row></thead><tbody><row><entry>code</entry><entry>code</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>CE</entry><entry>CONF:15426</entry><entry>LOINC 2.16.840.1.113883.6.1LOINC 2.16.840.1.113883.6.1 </entry></row> 
 <row><entry>title</entry><entry>title</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>ST</entry><entry>CONF:7893</entry><entry> </entry></row> 
-<row><entry>procedureActivityAct</entry><entry>cda:entry/cda:act[cda:templateId/@root = 2.16.840.1.113883.10.20.22.4.12]</entry><entry>0..*</entry><entry>MAY</entry><entry>YES</entry><entry>ProcedureActivityAct</entry><entry>CONF:8019CONF:8020</entry><entry> </entry></row> 
-<row><entry>procedureActivityObservation</entry><entry>cda:entry/cda:observation[cda:templateId/@root = 2.16.840.1.113883.10.20.22.4.13]</entry><entry>0..*</entry><entry>MAY</entry><entry>YES</entry><entry>ProcedureActivityObservation</entry><entry>CONF:8017CONF:8018</entry><entry> </entry></row> 
-<row><entry>procedureActivityProcedure</entry><entry>cda:entry/cda:procedure[cda:templateId/@root = 2.16.840.1.113883.10.20.22.4.14]</entry><entry>0..*</entry><entry>MAY</entry><entry>YES</entry><entry>ProcedureActivityProcedure</entry><entry>CONF:7895CONF:7896</entry><entry> </entry></row> 
+<row><entry>procedureActivityAct</entry><entry>cda:entry/cda:act</entry><entry>0..*</entry><entry>MAY</entry><entry>YES</entry><entry>ProcedureActivityAct</entry><entry>CONF:8019CONF:8020</entry><entry> </entry></row> 
+<row><entry>procedureActivityObservation</entry><entry>cda:entry/cda:observation</entry><entry>0..*</entry><entry>MAY</entry><entry>YES</entry><entry>ProcedureActivityObservation</entry><entry>CONF:8017CONF:8018</entry><entry> </entry></row> 
+<row><entry>procedureActivityProcedure</entry><entry>cda:entry/cda:procedure</entry><entry>0..*</entry><entry>MAY</entry><entry>YES</entry><entry>ProcedureActivityProcedure</entry><entry>CONF:7895CONF:7896</entry><entry> </entry></row> 
 <row><entry>proceduresSection</entry><entry>proceduresSection</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>ProceduresSection</entry><entry>CONF:9451</entry><entry> </entry></row> 
 <row><entry>text</entry><entry>text</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>StrucDocText</entry><entry>CONF:7894</entry><entry> </entry></row> 
 </tbody></tgroup></table></p></section>
-<codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
-<section xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd">
-  <templateId root="2.16.840.1.113883.10.20.22.2.7.1"/>
-  <templateId root="2.16.840.1.113883.10.20.22.2.7"/>
-  <id root="MDHT" extension="593744880"/>
-  <code code="47519-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="History of Procedures"/>
+<codeblock id="example"><![CDATA[<section xmlns="urn:hl7-org:v3">
+  <id root="MDHT" extension="1948497486"/>
+  <code code="1429662573"/>
   <title>TEXT FOR TITLE</title>
   <text/>
   <entry>
-    <procedure classCode="PROC">
-      <templateId root="2.16.840.1.113883.10.20.22.4.14"/>
-      <id root="MDHT" extension="677893369"/>
-      <code code="1702271385"/>
+    <procedure>
+      <id root="MDHT" extension="917786575"/>
+      <code code="834863880"/>
       <text>Text Value</text>
       <effectiveTime>
-        <low value="2012"/>
-        <high value="2012"/>
+        <low value="2013"/>
+        <high value="2013"/>
       </effectiveTime>
-      <priorityCode codeSystem="2.16.840.1.113883.5.7" codeSystemName="ActPriority"/>
-      <targetSiteCode codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
       <specimen>
         <specimenRole/>
       </specimen>
@@ -100,89 +94,64 @@ The length of an encounter is documented in the documentationOf/encompassingEnco
         <encounter classCode="ENC" moodCode="EVN"/>
       </entryRelationship>
       <entryRelationship>
-        <observation classCode="OBS" moodCode="EVN">
-          <templateId root="2.16.840.1.113883.10.20.22.4.19"/>
-          <id root="MDHT" extension="1856759798"/>
-          <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
+        <observation>
+          <id root="MDHT" extension="457693644"/>
+          <code code="1713643553"/>
           <text>Text Value</text>
-          <statusCode code="completed"/>
           <effectiveTime>
-            <low value="2012"/>
-            <high value="2012"/>
+            <low value="2013"/>
+            <high value="2013"/>
           </effectiveTime>
         </observation>
       </entryRelationship>
       <entryRelationship>
-        <substanceAdministration classCode="SBADM">
-          <templateId root="2.16.840.1.113883.10.20.22.4.16"/>
-          <id root="MDHT" extension="1472447988"/>
-          <code code="655222289"/>
+        <substanceAdministration>
+          <id root="MDHT" extension="1587788563"/>
+          <code code="1963528504"/>
           <text>Text Value</text>
-          <effectiveTime value="20121102"/>
-          <routeCode codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus"/>
-          <approachSiteCode codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
+          <effectiveTime value="20130627"/>
           <consumable/>
           <performer/>
           <entryRelationship>
-            <supply classCode="SPLY" moodCode="INT">
-              <templateId root="2.16.840.1.113883.10.20.22.4.17"/>
-            </supply>
+            <supply/>
           </entryRelationship>
           <entryRelationship>
-            <observation classCode="OBS" moodCode="EVN">
-              <templateId root="2.16.840.1.113883.10.20.22.4.9"/>
-              <statusCode code="completed"/>
-            </observation>
+            <observation/>
           </entryRelationship>
           <entryRelationship>
-            <act classCode="ACT" moodCode="INT">
-              <templateId root="2.16.840.1.113883.10.20.22.4.20"/>
-              <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
-              <statusCode code="completed"/>
-            </act>
+            <act/>
           </entryRelationship>
           <entryRelationship>
-            <observation classCode="OBS" moodCode="EVN">
-              <templateId root="2.16.840.1.113883.10.20.22.4.19"/>
-              <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
-              <statusCode code="completed"/>
-            </observation>
+            <observation/>
           </entryRelationship>
           <entryRelationship>
-            <supply classCode="SPLY" moodCode="EVN">
-              <templateId root="2.16.840.1.113883.10.20.22.4.18"/>
-            </supply>
+            <supply/>
           </entryRelationship>
           <precondition/>
         </substanceAdministration>
       </entryRelationship>
       <entryRelationship>
-        <act classCode="ACT" moodCode="INT">
-          <templateId root="2.16.840.1.113883.10.20.22.4.20"/>
-          <id root="MDHT" extension="68967188"/>
-          <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
+        <act>
+          <id root="MDHT" extension="467552097"/>
+          <code code="1563365826"/>
           <text>Text Value</text>
-          <statusCode code="completed"/>
           <effectiveTime>
-            <low value="2012"/>
-            <high value="2012"/>
+            <low value="2013"/>
+            <high value="2013"/>
           </effectiveTime>
         </act>
       </entryRelationship>
     </procedure>
   </entry>
   <entry>
-    <observation classCode="OBS">
-      <templateId root="2.16.840.1.113883.10.20.22.4.13"/>
-      <id root="MDHT" extension="1586491911"/>
-      <code code="2044460688"/>
+    <observation>
+      <id root="MDHT" extension="1803024349"/>
+      <code code="1304014936"/>
       <text>Text Value</text>
       <effectiveTime>
-        <low value="2012"/>
-        <high value="2012"/>
+        <low value="2013"/>
+        <high value="2013"/>
       </effectiveTime>
-      <priorityCode codeSystem="2.16.840.1.113883.5.7" codeSystemName="ActPriority"/>
-      <targetSiteCode codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
       <performer>
         <assignedEntity/>
       </performer>
@@ -190,71 +159,49 @@ The length of an encounter is documented in the documentationOf/encompassingEnco
         <encounter classCode="ENC" moodCode="EVN"/>
       </entryRelationship>
       <entryRelationship>
-        <act classCode="ACT" moodCode="INT">
-          <templateId root="2.16.840.1.113883.10.20.22.4.20"/>
-          <id root="MDHT" extension="240731607"/>
-          <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
+        <act>
+          <id root="MDHT" extension="116185003"/>
+          <code code="298451250"/>
           <text>Text Value</text>
-          <statusCode code="completed"/>
           <effectiveTime>
-            <low value="2012"/>
-            <high value="2012"/>
+            <low value="2013"/>
+            <high value="2013"/>
           </effectiveTime>
         </act>
       </entryRelationship>
       <entryRelationship>
-        <observation classCode="OBS" moodCode="EVN">
-          <templateId root="2.16.840.1.113883.10.20.22.4.19"/>
-          <id root="MDHT" extension="1720601759"/>
-          <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
+        <observation>
+          <id root="MDHT" extension="1788362568"/>
+          <code code="100713222"/>
           <text>Text Value</text>
-          <statusCode code="completed"/>
           <effectiveTime>
-            <low value="2012"/>
-            <high value="2012"/>
+            <low value="2013"/>
+            <high value="2013"/>
           </effectiveTime>
         </observation>
       </entryRelationship>
       <entryRelationship>
-        <substanceAdministration classCode="SBADM">
-          <templateId root="2.16.840.1.113883.10.20.22.4.16"/>
-          <id root="MDHT" extension="664539957"/>
-          <code code="1170313534"/>
+        <substanceAdministration>
+          <id root="MDHT" extension="841511373"/>
+          <code code="1895529341"/>
           <text>Text Value</text>
-          <effectiveTime value="20121102"/>
-          <routeCode codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus"/>
-          <approachSiteCode codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
+          <effectiveTime value="20130627"/>
           <consumable/>
           <performer/>
           <entryRelationship>
-            <supply classCode="SPLY" moodCode="INT">
-              <templateId root="2.16.840.1.113883.10.20.22.4.17"/>
-            </supply>
+            <supply/>
           </entryRelationship>
           <entryRelationship>
-            <observation classCode="OBS" moodCode="EVN">
-              <templateId root="2.16.840.1.113883.10.20.22.4.9"/>
-              <statusCode code="completed"/>
-            </observation>
+            <observation/>
           </entryRelationship>
           <entryRelationship>
-            <act classCode="ACT" moodCode="INT">
-              <templateId root="2.16.840.1.113883.10.20.22.4.20"/>
-              <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
-              <statusCode code="completed"/>
-            </act>
+            <act/>
           </entryRelationship>
           <entryRelationship>
-            <observation classCode="OBS" moodCode="EVN">
-              <templateId root="2.16.840.1.113883.10.20.22.4.19"/>
-              <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
-              <statusCode code="completed"/>
-            </observation>
+            <observation/>
           </entryRelationship>
           <entryRelationship>
-            <supply classCode="SPLY" moodCode="EVN">
-              <templateId root="2.16.840.1.113883.10.20.22.4.18"/>
-            </supply>
+            <supply/>
           </entryRelationship>
           <precondition/>
         </substanceAdministration>
@@ -262,16 +209,14 @@ The length of an encounter is documented in the documentationOf/encompassingEnco
     </observation>
   </entry>
   <entry>
-    <act classCode="ACT">
-      <templateId root="2.16.840.1.113883.10.20.22.4.12"/>
-      <id root="MDHT" extension="543962842"/>
-      <code code="1027565181"/>
+    <act>
+      <id root="MDHT" extension="2081871481"/>
+      <code code="976407295"/>
       <text>Text Value</text>
       <effectiveTime>
-        <low value="2012"/>
-        <high value="2012"/>
+        <low value="2013"/>
+        <high value="2013"/>
       </effectiveTime>
-      <priorityCode codeSystem="2.16.840.1.113883.5.7" codeSystemName="ActPriority"/>
       <performer>
         <assignedEntity/>
       </performer>
@@ -279,71 +224,49 @@ The length of an encounter is documented in the documentationOf/encompassingEnco
         <encounter classCode="ENC" moodCode="EVN"/>
       </entryRelationship>
       <entryRelationship>
-        <act classCode="ACT" moodCode="INT">
-          <templateId root="2.16.840.1.113883.10.20.22.4.20"/>
-          <id root="MDHT" extension="1334622588"/>
-          <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
+        <act>
+          <id root="MDHT" extension="310310233"/>
+          <code code="758811616"/>
           <text>Text Value</text>
-          <statusCode code="completed"/>
           <effectiveTime>
-            <low value="2012"/>
-            <high value="2012"/>
+            <low value="2013"/>
+            <high value="2013"/>
           </effectiveTime>
         </act>
       </entryRelationship>
       <entryRelationship>
-        <observation classCode="OBS" moodCode="EVN">
-          <templateId root="2.16.840.1.113883.10.20.22.4.19"/>
-          <id root="MDHT" extension="234553796"/>
-          <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
+        <observation>
+          <id root="MDHT" extension="383123301"/>
+          <code code="1808218536"/>
           <text>Text Value</text>
-          <statusCode code="completed"/>
           <effectiveTime>
-            <low value="2012"/>
-            <high value="2012"/>
+            <low value="2013"/>
+            <high value="2013"/>
           </effectiveTime>
         </observation>
       </entryRelationship>
       <entryRelationship>
-        <substanceAdministration classCode="SBADM">
-          <templateId root="2.16.840.1.113883.10.20.22.4.16"/>
-          <id root="MDHT" extension="1403200726"/>
-          <code code="787993169"/>
+        <substanceAdministration>
+          <id root="MDHT" extension="435072101"/>
+          <code code="846218797"/>
           <text>Text Value</text>
-          <effectiveTime value="20121102"/>
-          <routeCode codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus"/>
-          <approachSiteCode codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
+          <effectiveTime value="20130627"/>
           <consumable/>
           <performer/>
           <entryRelationship>
-            <supply classCode="SPLY" moodCode="INT">
-              <templateId root="2.16.840.1.113883.10.20.22.4.17"/>
-            </supply>
+            <supply/>
           </entryRelationship>
           <entryRelationship>
-            <observation classCode="OBS" moodCode="EVN">
-              <templateId root="2.16.840.1.113883.10.20.22.4.9"/>
-              <statusCode code="completed"/>
-            </observation>
+            <observation/>
           </entryRelationship>
           <entryRelationship>
-            <act classCode="ACT" moodCode="INT">
-              <templateId root="2.16.840.1.113883.10.20.22.4.20"/>
-              <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
-              <statusCode code="completed"/>
-            </act>
+            <act/>
           </entryRelationship>
           <entryRelationship>
-            <observation classCode="OBS" moodCode="EVN">
-              <templateId root="2.16.840.1.113883.10.20.22.4.19"/>
-              <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
-              <statusCode code="completed"/>
-            </observation>
+            <observation/>
           </entryRelationship>
           <entryRelationship>
-            <supply classCode="SPLY" moodCode="EVN">
-              <templateId root="2.16.840.1.113883.10.20.22.4.18"/>
-            </supply>
+            <supply/>
           </entryRelationship>
           <precondition/>
         </substanceAdministration>

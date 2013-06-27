@@ -25,7 +25,7 @@ A cognitive problem observation is a finding or medical condition. This is diffe
 <ul><li><p><lines><i>Use negationInd="true" to indicate that the problem was not observed.</i></lines></p></li></ul></li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>id</b></tt> (CONF:14321)
 </li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:14804)<tt><b>/@code</b>="373930000" </tt><i>Cognitive function finding</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:14805)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:14804)<tt><b>/@code</b>="373930000" </tt><i>Cognitive function finding</i> (CodeSystem:<tt> 2.16.840.1.113883.6.96 SNOMEDCT</tt>) (CONF:14805)
 </li>
 <li><b>SHOULD</b> contain zero or one [0..1] <tt><b>text</b></tt> (CONF:14341)
 </li>
@@ -41,11 +41,11 @@ A cognitive problem observation is a finding or medical condition. This is diffe
 <ol>
 <li>Contains <tt><b>@typeCode="</b>REFR" </tt><i>REFR</i></li>
 <li>Contains exactly one [1..1] <xref href="../NonMedicinalSupplyActivity.dita">Non Medicinal Supply Activity</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.50</tt>)</li></ol></li>
-<li><b>SHALL</b> contain at least one [1..*] <tt><b>entryRelationship</b></tt> (CONF:14335, CONF:14589, CONF:14352)
+<li><b>MAY</b> contain zero or more [0..*] <tt><b>entryRelationship</b></tt> (CONF:14335, CONF:14589, CONF:14352)
 <ol>
 <li>Contains <tt><b>@typeCode="</b>REFR" </tt><i>REFR</i></li>
 <li>Contains exactly one [1..1] <xref href="../CaregiverCharacteristics.dita">Caregiver Characteristics</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.72</tt>)</li></ol></li>
-<li><b>SHALL</b> contain at least one [1..*] <tt><b>entryRelationship</b></tt> (CONF:14467, CONF:14590, CONF:14468)
+<li><b>MAY</b> contain zero or more [0..*] <tt><b>entryRelationship</b></tt> (CONF:14467, CONF:14590, CONF:14468)
 <ol>
 <li>Contains <tt><b>@typeCode="</b>COMP" </tt><i>COMP</i></li>
 <li>Contains exactly one [1..1] <xref href="../AssessmentScaleObservation.dita">Assessment Scale Observation</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.69</tt>)</li></ol></li>
@@ -65,7 +65,7 @@ A cognitive problem observation is a finding or medical condition. This is diffe
 <ul><li><p><lines><i>Use negationInd="true" to indicate that the problem was not observed.</i></lines></p></li></ul></li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>id</b></tt> (CONF:14321)
 </li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:14804)<tt><b>/@code</b>="373930000" </tt><i>Cognitive function finding</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:14805)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:14804)<tt><b>/@code</b>="373930000" </tt><i>Cognitive function finding</i> (CodeSystem:<tt> 2.16.840.1.113883.6.96 SNOMEDCT</tt>) (CONF:14805)
 </li>
 <li><b>SHOULD</b> contain zero or one [0..1] <tt><b>text</b></tt> (CONF:14341)
 </li>
@@ -93,11 +93,11 @@ A cognitive problem observation is a finding or medical condition. This is diffe
 <ol>
 <li>Contains <tt><b>@typeCode="</b>REFR" </tt><i>REFR</i></li>
 <li>Contains exactly one [1..1] <xref href="../NonMedicinalSupplyActivity.dita">Non Medicinal Supply Activity</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.50</tt>)</li></ol></li>
-<li><b>SHALL</b> contain at least one [1..*] <tt><b>entryRelationship</b></tt> (CONF:14335, CONF:14589, CONF:14352)
+<li><b>MAY</b> contain zero or more [0..*] <tt><b>entryRelationship</b></tt> (CONF:14335, CONF:14589, CONF:14352)
 <ol>
 <li>Contains <tt><b>@typeCode="</b>REFR" </tt><i>REFR</i></li>
 <li>Contains exactly one [1..1] <xref href="../CaregiverCharacteristics.dita">Caregiver Characteristics</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.72</tt>)</li></ol></li>
-<li><b>SHALL</b> contain at least one [1..*] <tt><b>entryRelationship</b></tt> (CONF:14467, CONF:14590, CONF:14468)
+<li><b>MAY</b> contain zero or more [0..*] <tt><b>entryRelationship</b></tt> (CONF:14467, CONF:14590, CONF:14468)
 <ol>
 <li>Contains <tt><b>@typeCode="</b>COMP" </tt><i>COMP</i></li>
 <li>Contains exactly one [1..1] <xref href="../AssessmentScaleObservation.dita">Assessment Scale Observation</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.69</tt>)</li></ol></li>
@@ -119,91 +119,80 @@ UNK.  If the code is something other than SNOMED, @nullFlavor <b>SHOULD</b> be O
 <li>effectiveTime, if present, <b>SHOULD</b> contain zero or one [0..1] high (CONF:14326)</li>
 <li>If the problem is known to be resolved, but the date of resolution is not known then the high element <b>SHALL</b> be present, and the nullFlavor attribute <b>SHALL</b> be set to 'UNK'. Therefore, the existence of an high element within a problem does indicate that the problem has been resolved (CONF:14327)</li>
 </ol>
-<section id="tableconformance"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="8" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><colspec colname="col2" colnum="2" /><colspec colname="col3" colnum="3" /><colspec colname="col4" colnum="4" /><colspec colname="col5" colnum="5" /><colspec colname="col6" colnum="6" /><colspec colname="col7" colnum="7" /><thead> <row><entry namest="col0" nameend="col7" >consol::CognitiveStatusProblemObservation</entry>  </row>  <row><entry namest="col0" nameend="col7" >cda::observation[cda:templateId/@root = 2.16.840.1.113883.10.20.22.4.4]/</entry>  </row>  <row><entry>Name</entry><entry>XPath</entry><entry>Cardinality</entry><entry>Severity</entry><entry>Nullable</entry><entry>Data Type</entry><entry>Conformance</entry><entry>Value(s)</entry></row></thead><tbody><row><entry>classCode</entry><entry>@classCode</entry><entry>1..1</entry><entry>SHALL</entry><entry>NO</entry><entry>ActClassObservation</entry><entry>CONF:14319</entry><entry> ALRT</entry></row> 
+<section id="tableconformance"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="8" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><colspec colname="col2" colnum="2" /><colspec colname="col3" colnum="3" /><colspec colname="col4" colnum="4" /><colspec colname="col5" colnum="5" /><colspec colname="col6" colnum="6" /><colspec colname="col7" colnum="7" /><thead> <row><entry namest="col0" nameend="col7" >consol::CognitiveStatusProblemObservation</entry>  </row>  <row><entry namest="col0" nameend="col7" >cda::observation[cda:templateId/@root = ]/</entry>  </row>  <row><entry>Name</entry><entry>XPath</entry><entry>Cardinality</entry><entry>Severity</entry><entry>Nullable</entry><entry>Data Type</entry><entry>Conformance</entry><entry>Value(s)</entry></row></thead><tbody><row><entry>classCode</entry><entry>@classCode</entry><entry>1..1</entry><entry>SHALL</entry><entry>NO</entry><entry>ActClassObservation</entry><entry>CONF:14319</entry><entry> ALRT</entry></row> 
 <row><entry>moodCode</entry><entry>@moodCode</entry><entry>1..1</entry><entry>SHALL</entry><entry>NO</entry><entry>x_ActMoodDocumentObservation</entry><entry>CONF:14320</entry><entry> DEF</entry></row> 
 <row><entry>negationInd</entry><entry>@negationInd</entry><entry>0..1</entry><entry>MAY</entry><entry>NO</entry><entry>Boolean</entry><entry>CONF:14344</entry><entry> </entry></row> 
-<row><entry>code</entry><entry>code</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>CD</entry><entry>CONF:14804</entry><entry>LOINC 2.16.840.1.113883.6.1 373930000</entry></row> 
+<row><entry>code</entry><entry>code</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>CD</entry><entry>CONF:14804</entry><entry>SNOMEDCT 2.16.840.1.113883.6.96 </entry></row> 
 <row><entry>effectiveTime</entry><entry>effectiveTime</entry><entry>0..1</entry><entry>SHOULD</entry><entry>YES</entry><entry>IVL_TS</entry><entry>CONF:14324</entry><entry> </entry></row> 
 <row><entry>id</entry><entry>id</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>II</entry><entry>CONF:14321</entry><entry> </entry></row> 
 <row><entry>methodCode</entry><entry>methodCode</entry><entry>0..*</entry><entry>MAY</entry><entry>YES</entry><entry>CE</entry><entry>CONF:14693</entry><entry> </entry></row> 
-<row><entry>statusCode</entry><entry>statusCode</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>CS</entry><entry>CONF:14323</entry><entry>ActStatus 2.16.840.1.113883.5.14ActStatus 2.16.840.1.113883.5.14 completed</entry></row> 
+<row><entry>statusCode</entry><entry>statusCode</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>CS</entry><entry>CONF:14323</entry><entry>ActStatus 2.16.840.1.113883.5.14ActStatus 2.16.840.1.113883.5.14 </entry></row> 
 <row><entry>text</entry><entry>text</entry><entry>0..1</entry><entry>SHOULD</entry><entry>YES</entry><entry>ED</entry><entry></entry><entry> </entry></row> 
 <row><entry>value</entry><entry>value</entry><entry>1..1</entry><entry>SHOULD</entry><entry>YES</entry><entry>CD</entry><entry>CONF:14349</entry><entry> </entry></row> 
-<row><entry>assessmentScaleObservation</entry><entry>assessmentScaleObservation</entry><entry>1..*</entry><entry>SHALL</entry><entry>YES</entry><entry>AssessmentScaleObservation</entry><entry>CONF:14467CONF:14590CONF:14468</entry><entry> </entry></row> 
-<row><entry>caregiverCharacteristics</entry><entry>caregiverCharacteristics</entry><entry>1..*</entry><entry>SHALL</entry><entry>YES</entry><entry>CaregiverCharacteristics</entry><entry>CONF:14335CONF:14589CONF:14352</entry><entry> </entry></row> 
+<row><entry>assessmentScaleObservation</entry><entry>assessmentScaleObservation</entry><entry>0..*</entry><entry>MAY</entry><entry>YES</entry><entry>AssessmentScaleObservation</entry><entry>CONF:14467CONF:14590CONF:14468</entry><entry> </entry></row> 
+<row><entry>caregiverCharacteristics</entry><entry>caregiverCharacteristics</entry><entry>0..*</entry><entry>MAY</entry><entry>YES</entry><entry>CaregiverCharacteristics</entry><entry>CONF:14335CONF:14589CONF:14352</entry><entry> </entry></row> 
 <row><entry>cognitiveStatusProblemObservation</entry><entry>cognitiveStatusProblemObservation</entry><entry>0..*</entry><entry>MAY</entry><entry>YES</entry><entry>CognitiveStatusProblemObservation</entry><entry>CONF:14424CONF:14425</entry><entry> </entry></row> 
 <row><entry>nonMedicinalSupplyActivity</entry><entry>nonMedicinalSupplyActivity</entry><entry>0..*</entry><entry>MAY</entry><entry>YES</entry><entry>NonMedicinalSupplyActivity</entry><entry>CONF:14331CONF:14588CONF:14351</entry><entry> </entry></row> 
 </tbody></tgroup></table></p></section>
-<codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
-<observation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd" classCode="OBS" moodCode="EVN">
-  <templateId root="2.16.840.1.113883.10.20.22.4.73"/>
-  <templateId root="2.16.840.1.113883.10.20.22.4.4"/>
-  <id root="MDHT" extension="97023816"/>
-  <code code="373930000" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT" displayName="Cognitive function finding"/>
+<codeblock id="example"><![CDATA[<observation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3">
+  <id root="MDHT" extension="1250108616"/>
+  <code code="514089918"/>
   <text>Text Value</text>
-  <statusCode code="completed"/>
   <effectiveTime>
-    <low value="2012"/>
-    <high value="2012"/>
+    <low value="2013"/>
+    <high value="2013"/>
   </effectiveTime>
-  <value xsi:type="CD" code="608471768"/>
-  <methodCode code="666571324"/>
+  <value xsi:type="CD" code="940489248"/>
+  <methodCode code="748599870"/>
   <entryRelationship>
-    <supply classCode="SPLY">
-      <templateId root="2.16.840.1.113883.10.20.22.4.50"/>
-      <id root="MDHT" extension="1567309551"/>
-      <code code="661242463"/>
+    <supply>
+      <id root="MDHT" extension="1066015930"/>
+      <code code="220890529"/>
       <text>Text Value</text>
-      <effectiveTime value="20121102"/>
+      <effectiveTime value="20130627"/>
     </supply>
   </entryRelationship>
   <entryRelationship>
-    <observation classCode="OBS" moodCode="EVN">
-      <templateId root="2.16.840.1.113883.10.20.22.4.72"/>
-      <id root="MDHT" extension="497659469"/>
-      <code code="1048924758"/>
+    <observation>
+      <id root="MDHT" extension="186464096"/>
+      <code code="1161880503"/>
       <text>Text Value</text>
-      <statusCode code="completed"/>
       <effectiveTime>
-        <low value="2012"/>
-        <high value="2012"/>
+        <low value="2013"/>
+        <high value="2013"/>
       </effectiveTime>
-      <value xsi:type="CD" code="117125800"/>
-      <methodCode code="2014394028"/>
+      <value xsi:type="CD" code="1532944237"/>
+      <methodCode code="570453636"/>
       <participant>
         <time>
-          <low value="2012"/>
-          <high value="2012"/>
+          <low value="2013"/>
+          <high value="2013"/>
         </time>
         <participantRole/>
       </participant>
     </observation>
   </entryRelationship>
   <entryRelationship>
-    <observation classCode="OBS" moodCode="EVN">
-      <templateId root="2.16.840.1.113883.10.20.22.4.69"/>
-      <id root="MDHT" extension="200708891"/>
-      <code code="1013441866"/>
+    <observation>
+      <id root="MDHT" extension="1577302137"/>
+      <code code="40531394"/>
       <text>Text Value</text>
-      <statusCode code="completed"/>
       <effectiveTime>
-        <low value="2012"/>
-        <high value="2012"/>
+        <low value="2013"/>
+        <high value="2013"/>
       </effectiveTime>
-      <methodCode code="459595901"/>
+      <methodCode code="869829855"/>
       <author/>
       <entryRelationship>
-        <observation classCode="OBS" moodCode="EVN">
-          <templateId root="2.16.840.1.113883.10.20.22.4.86"/>
-          <id root="MDHT" extension="1140633486"/>
-          <code code="939541471"/>
+        <observation>
+          <id root="MDHT" extension="1452304292"/>
+          <code code="1951965747"/>
           <text>Text Value</text>
-          <statusCode code="completed"/>
           <effectiveTime>
-            <low value="2012"/>
-            <high value="2012"/>
+            <low value="2013"/>
+            <high value="2013"/>
           </effectiveTime>
-          <methodCode code="670565689"/>
+          <methodCode code="955462647"/>
         </observation>
       </entryRelationship>
       <referenceRange>

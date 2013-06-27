@@ -76,45 +76,42 @@
 <li><b>SHOULD</b> be from LOINC (CodeSystem: 2.16.840.1.113883.6.1) or SNOMED CT (CodeSystem: 2.16.840.1.113883.6.96) identifying the assessment scale (CONF:14440)</li>
 <li>interpretationCode, if present, <b>MAY</b> contain zero or more [0..*] translation (CONF:14888)</li>
 </ol>
-<section id="tableconformance"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="8" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><colspec colname="col2" colnum="2" /><colspec colname="col3" colnum="3" /><colspec colname="col4" colnum="4" /><colspec colname="col5" colnum="5" /><colspec colname="col6" colnum="6" /><colspec colname="col7" colnum="7" /><thead> <row><entry namest="col0" nameend="col7" >consol::AssessmentScaleObservation</entry>  </row>  <row><entry namest="col0" nameend="col7" >cda::observation[cda:templateId/@root = 2.16.840.1.113883.10.20.22.4.69]/</entry>  </row>  <row><entry>Name</entry><entry>XPath</entry><entry>Cardinality</entry><entry>Severity</entry><entry>Nullable</entry><entry>Data Type</entry><entry>Conformance</entry><entry>Value(s)</entry></row></thead><tbody><row><entry>classCode</entry><entry>@classCode</entry><entry>1..1</entry><entry>SHALL</entry><entry>NO</entry><entry>ActClassObservation</entry><entry>CONF:14434</entry><entry> ALRT</entry></row> 
+<section id="tableconformance"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="8" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><colspec colname="col2" colnum="2" /><colspec colname="col3" colnum="3" /><colspec colname="col4" colnum="4" /><colspec colname="col5" colnum="5" /><colspec colname="col6" colnum="6" /><colspec colname="col7" colnum="7" /><thead> <row><entry namest="col0" nameend="col7" >consol::AssessmentScaleObservation</entry>  </row>  <row><entry namest="col0" nameend="col7" >cda::observation[cda:templateId/@root = ]/</entry>  </row>  <row><entry>Name</entry><entry>XPath</entry><entry>Cardinality</entry><entry>Severity</entry><entry>Nullable</entry><entry>Data Type</entry><entry>Conformance</entry><entry>Value(s)</entry></row></thead><tbody><row><entry>classCode</entry><entry>@classCode</entry><entry>1..1</entry><entry>SHALL</entry><entry>NO</entry><entry>ActClassObservation</entry><entry>CONF:14434</entry><entry> ALRT</entry></row> 
 <row><entry>moodCode</entry><entry>@moodCode</entry><entry>1..1</entry><entry>SHALL</entry><entry>NO</entry><entry>x_ActMoodDocumentObservation</entry><entry>CONF:14435</entry><entry> DEF</entry></row> 
 <row><entry>code</entry><entry>code</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>CD</entry><entry>CONF:14439</entry><entry> </entry></row> 
 <row><entry>derivationExpr</entry><entry>derivationExpr</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>ST</entry><entry>CONF:14637</entry><entry> </entry></row> 
 <row><entry>effectiveTime</entry><entry>effectiveTime</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>IVL_TS</entry><entry>CONF:14445</entry><entry> </entry></row> 
 <row><entry>id</entry><entry>id</entry><entry>1..*</entry><entry>SHALL</entry><entry>YES</entry><entry>II</entry><entry>CONF:14438</entry><entry> </entry></row> 
 <row><entry>interpretationCode</entry><entry>interpretationCode</entry><entry>0..*</entry><entry>MAY</entry><entry>YES</entry><entry>CE</entry><entry>CONF:14459</entry><entry> </entry></row> 
-<row><entry>statusCode</entry><entry>statusCode</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>CS</entry><entry>CONF:14444</entry><entry>ActStatus 2.16.840.1.113883.5.14 completed</entry></row> 
+<row><entry>statusCode</entry><entry>statusCode</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>CS</entry><entry>CONF:14444</entry><entry>ActStatus 2.16.840.1.113883.5.14 </entry></row> 
 <row><entry>value</entry><entry>value</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>ANY</entry><entry>CONF:14450</entry><entry> </entry></row> 
-<row><entry>assessmentScaleObservation</entry><entry>assessmentScaleObservation</entry><entry>1..*</entry><entry>SHALL</entry><entry>YES</entry><entry>AssessmentScaleObservation</entry><entry>CONF:14467CONF:14590CONF:14468</entry><entry> </entry></row> 
+<row><entry>assessmentScaleObservation</entry><entry>assessmentScaleObservation</entry><entry>0..*</entry><entry>MAY</entry><entry>YES</entry><entry>AssessmentScaleObservation</entry><entry>CONF:14469CONF:14595CONF:14470</entry><entry> </entry></row> 
 <row><entry>assessmentScaleSupportingObservation</entry><entry>assessmentScaleSupportingObservation</entry><entry>0..*</entry><entry>SHOULD</entry><entry>YES</entry><entry>AssessmentScaleSupportingObservation</entry><entry>CONF:14451CONF:16741CONF:16742</entry><entry> </entry></row> 
 <row><entry>author</entry><entry>author</entry><entry>0..*</entry><entry>MAY</entry><entry>YES</entry><entry>Author</entry><entry>CONF:14460</entry><entry> </entry></row> 
 <row><entry>referenceRange</entry><entry>referenceRange</entry><entry>0..*</entry><entry>MAY</entry><entry>YES</entry><entry>ReferenceRange</entry><entry>CONF:16799</entry><entry> </entry></row> 
 </tbody></tgroup></table></p></section>
-<codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
-<observation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd" classCode="OBS" moodCode="EVN">
-  <templateId root="2.16.840.1.113883.10.20.22.4.69"/>
-  <id root="MDHT" extension="681018092"/>
-  <code code="1046726086"/>
+<codeblock id="example"><![CDATA[<observation xmlns="urn:hl7-org:v3">
+  <id root="MDHT" extension="1520339288"/>
+  <code code="1085536490"/>
   <derivationExpr>TEXT FOR DERIVATION EXPR</derivationExpr>
   <statusCode code="completed"/>
   <effectiveTime>
-    <low value="2012"/>
-    <high value="2012"/>
+    <low value="2013"/>
+    <high value="2013"/>
   </effectiveTime>
-  <interpretationCode code="2137447033"/>
+  <interpretationCode code="1967168351"/>
   <author/>
   <entryRelationship>
-    <observation classCode="OBS" moodCode="EVN">
-      <templateId root="2.16.840.1.113883.10.20.22.4.86"/>
-      <id root="MDHT" extension="145642018"/>
-      <code code="214349176"/>
+    <observation>
+      <id root="MDHT" extension="1707970869"/>
+      <code code="1388705360"/>
       <derivationExpr>TEXT FOR DERIVATION EXPR</derivationExpr>
       <statusCode code="completed"/>
       <effectiveTime>
-        <low value="2012"/>
-        <high value="2012"/>
+        <low value="2013"/>
+        <high value="2013"/>
       </effectiveTime>
-      <interpretationCode code="1126001114"/>
+      <interpretationCode code="1165901381"/>
     </observation>
   </entryRelationship>
   <referenceRange>

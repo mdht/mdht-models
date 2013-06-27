@@ -9,7 +9,7 @@
 </prolog>
 <body>
 <section id="knownSubclasses">
-<p>Known Subclasses: <xref href="../CognitiveStatusProblemObservation.dita">Cognitive Status Problem Observation</xref>, <xref href="../FunctionalStatusProblemObservation.dita">Functional Status Problem Observation</xref></p>
+<p>Known Subclasses: <xref href="../FunctionalStatusProblemObservation.dita">Functional Status Problem Observation</xref>, <xref href="../CognitiveStatusProblemObservation.dita">Cognitive Status Problem Observation</xref></p>
 </section>
 <section id="description">
 <p>A problem is a clinical statement that a clinician has noted. In health care it is a condition that requires monitoring or diagnostic, therapeutic, or educational action. It also refers to any unmet or partially met basic human need.</p>
@@ -105,72 +105,63 @@ UNK.  If the code is something other than SNOMED, @nullFlavor <b>SHOULD</b> be O
 <li>value <b>MAY</b> contain zero or more [0..*] translation (CONF:16749)</li>
 <li>translation, if present, <b>MAY</b> contain zero or one [0..1] @code (CodeSystem: ICD10 2.16.840.1.113883.6.3) (CONF:16750)</li>
 </ol>
-<section id="tableconformance"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="8" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><colspec colname="col2" colnum="2" /><colspec colname="col3" colnum="3" /><colspec colname="col4" colnum="4" /><colspec colname="col5" colnum="5" /><colspec colname="col6" colnum="6" /><colspec colname="col7" colnum="7" /><thead> <row><entry namest="col0" nameend="col7" >consol::ProblemObservation</entry>  </row>  <row><entry namest="col0" nameend="col7" >cda::observation[cda:templateId/@root = 2.16.840.1.113883.10.20.22.4.4]/</entry>  </row>  <row><entry>Name</entry><entry>XPath</entry><entry>Cardinality</entry><entry>Severity</entry><entry>Nullable</entry><entry>Data Type</entry><entry>Conformance</entry><entry>Value(s)</entry></row></thead><tbody><row><entry>classCode</entry><entry>@classCode</entry><entry>1..1</entry><entry>SHALL</entry><entry>NO</entry><entry>ActClassObservation</entry><entry>CONF:9041</entry><entry> ALRT</entry></row> 
+<section id="tableconformance"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="8" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><colspec colname="col2" colnum="2" /><colspec colname="col3" colnum="3" /><colspec colname="col4" colnum="4" /><colspec colname="col5" colnum="5" /><colspec colname="col6" colnum="6" /><colspec colname="col7" colnum="7" /><thead> <row><entry namest="col0" nameend="col7" >consol::ProblemObservation</entry>  </row>  <row><entry namest="col0" nameend="col7" >cda::observation[cda:templateId/@root = ]/</entry>  </row>  <row><entry>Name</entry><entry>XPath</entry><entry>Cardinality</entry><entry>Severity</entry><entry>Nullable</entry><entry>Data Type</entry><entry>Conformance</entry><entry>Value(s)</entry></row></thead><tbody><row><entry>classCode</entry><entry>@classCode</entry><entry>1..1</entry><entry>SHALL</entry><entry>NO</entry><entry>ActClassObservation</entry><entry>CONF:9041</entry><entry> ALRT</entry></row> 
 <row><entry>moodCode</entry><entry>@moodCode</entry><entry>1..1</entry><entry>SHALL</entry><entry>NO</entry><entry>x_ActMoodDocumentObservation</entry><entry>CONF:9042</entry><entry> DEF</entry></row> 
 <row><entry>negationInd</entry><entry>@negationInd</entry><entry>0..1</entry><entry>MAY</entry><entry>NO</entry><entry>Boolean</entry><entry>CONF:10139</entry><entry> </entry></row> 
 <row><entry>id</entry><entry>id</entry><entry>1..*</entry><entry>SHALL</entry><entry>YES</entry><entry>II</entry><entry>CONF:9043</entry><entry> </entry></row> 
 <row><entry>Problem Code ( value )</entry><entry>value</entry><entry>1..1</entry><entry>SHOULD</entry><entry>YES</entry><entry>CD</entry><entry>CONF:9058</entry><entry> </entry></row> 
 <row><entry>Problem Date ( effectiveTime )</entry><entry>effectiveTime</entry><entry>0..1</entry><entry>SHOULD</entry><entry>YES</entry><entry>IVL_TS</entry><entry>CONF:9050</entry><entry> </entry></row> 
 <row><entry>Problem Name ( text )</entry><entry>text</entry><entry>0..1</entry><entry>SHOULD</entry><entry>YES</entry><entry>ED</entry><entry>CONF:9185</entry><entry> </entry></row> 
-<row><entry>Problem Type ( code )</entry><entry>code</entry><entry>1..1</entry><entry>SHOULD</entry><entry>YES</entry><entry>CD</entry><entry>CONF:9045</entry><entry> null</entry></row> 
-<row><entry>statusCode</entry><entry>statusCode</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>CS</entry><entry>CONF:9049</entry><entry>ActStatus 2.16.840.1.113883.5.14 completed</entry></row> 
+<row><entry>Problem Type ( code )</entry><entry>code</entry><entry>1..1</entry><entry>SHOULD</entry><entry>YES</entry><entry>CD</entry><entry>CONF:9045</entry><entry> </entry></row> 
+<row><entry>statusCode</entry><entry>statusCode</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>CS</entry><entry>CONF:9049</entry><entry>ActStatus 2.16.840.1.113883.5.14 </entry></row> 
 <row><entry>Age At Onset ( ageObservation )</entry><entry>ageObservation</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>AgeObservation</entry><entry>CONF:9059CONF:9060CONF:15590</entry><entry> </entry></row> 
 <row><entry>Health Status ( healthStatusObservation )</entry><entry>healthStatusObservation</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>HealthStatusObservation</entry><entry>CONF:9067CONF:9064CONF:15592</entry><entry> </entry></row> 
 <row><entry>Problem Status ( problemStatus )</entry><entry>problemStatus</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>ProblemStatus</entry><entry>CONF:9063CONF:9068CONF:15591</entry><entry> </entry></row> 
 <row><entry>problemObservation</entry><entry>problemObservation</entry><entry>1..*</entry><entry>SHALL</entry><entry>YES</entry><entry>ProblemObservation</entry><entry>CONF:15980</entry><entry> </entry></row> 
 </tbody></tgroup></table></p></section>
-<codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
-<observation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd" classCode="OBS" moodCode="EVN">
-  <templateId root="2.16.840.1.113883.10.20.22.4.4"/>
-  <id root="MDHT" extension="1357200023"/>
-  <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
+<codeblock id="example"><![CDATA[<observation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3">
+  <id root="MDHT" extension="837088039"/>
+  <code code="428375806"/>
   <text>Text Value</text>
-  <statusCode code="completed"/>
   <effectiveTime>
-    <low value="2012"/>
-    <high value="2012"/>
+    <low value="2013"/>
+    <high value="2013"/>
   </effectiveTime>
-  <value xsi:type="CD" code="775248562"/>
+  <value xsi:type="CD" code="283201430"/>
   <entryRelationship>
-    <observation classCode="OBS" moodCode="EVN">
-      <templateId root="2.16.840.1.113883.10.20.22.4.31"/>
-      <id root="MDHT" extension="1895301223"/>
-      <code code="445518008" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT" displayName="Age At Onset"/>
+    <observation>
+      <id root="MDHT" extension="692615318"/>
+      <code code="762996271"/>
       <text>Text Value</text>
-      <statusCode code="completed"/>
       <effectiveTime>
-        <low value="2012"/>
-        <high value="2012"/>
+        <low value="2013"/>
+        <high value="2013"/>
       </effectiveTime>
       <value xsi:type="PQ"/>
     </observation>
   </entryRelationship>
   <entryRelationship>
-    <observation classCode="OBS" moodCode="EVN">
-      <templateId root="2.16.840.1.113883.10.20.22.4.5"/>
-      <id root="MDHT" extension="1518198563"/>
-      <code code="11323-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Health status"/>
+    <observation>
+      <id root="MDHT" extension="647775626"/>
+      <code code="588388850"/>
       <text>Text Value</text>
-      <statusCode code="completed"/>
       <effectiveTime>
-        <low value="2012"/>
-        <high value="2012"/>
+        <low value="2013"/>
+        <high value="2013"/>
       </effectiveTime>
-      <value xsi:type="CD" code="1424572603"/>
+      <value xsi:type="CD" code="441026370"/>
     </observation>
   </entryRelationship>
   <entryRelationship>
-    <observation classCode="OBS" moodCode="EVN">
-      <templateId root="2.16.840.1.113883.10.20.22.4.6"/>
-      <id root="MDHT" extension="1859207037"/>
-      <code code="33999-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Status"/>
+    <observation>
+      <id root="MDHT" extension="2050582151"/>
+      <code code="208202323"/>
       <text>Text Value</text>
-      <statusCode code="completed"/>
       <effectiveTime>
-        <low value="2012"/>
-        <high value="2012"/>
+        <low value="2013"/>
+        <high value="2013"/>
       </effectiveTime>
-      <value xsi:type="CD" code="246709275"/>
+      <value xsi:type="CD" code="480101364"/>
     </observation>
   </entryRelationship>
 </observation>]]></codeblock>

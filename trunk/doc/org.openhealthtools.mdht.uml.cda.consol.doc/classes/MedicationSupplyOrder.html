@@ -65,11 +65,6 @@
 <li class="li"><strong class="ph b">SHALL</strong> contain at least one [1..*] <tt class="ph tt"><strong class="ph b">id</strong></tt> (CONF:7430)
 </li>
 
-<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">product</strong></tt> (CONF:7439, CONF:9334) <ol class="ol" type="a"><li class="li"> This product supply act <strong class="ph b">SHALL</strong> contain one product/Medication Information or one product/Immunization Medication Information template (CONF:16093, CONF:16094, CONF:16870)</li>
-</ol>
-
-</li>
-
 <li class="li"><strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">author</strong></tt> (CONF:7438)
 <ol class="ol" type="a">
 <li class="li">Contains exactly one [1..1] CDA Author</li>
@@ -88,6 +83,8 @@
 
 <li class="li">effectiveTime <strong class="ph b">SHALL</strong> contain exactly one [1..1] high (CONF:15144)</li>
 
+<li class="li">supply act <strong class="ph b">SHALL</strong> contain one product/Medication Information or one product/Immunization Medication Information template (CONF:16093, CONF:16094, CONF:16870)</li>
+
 </ol>
 
 		
@@ -98,27 +95,21 @@
 			<strong class="ph b"><span class="ph">Medication Supply Order</span> example</strong>
 		</p>
 		
-		<pre class="pre codeblock">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
-&lt;supply xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd" classCode="SPLY" moodCode="INT"&gt;
-  &lt;templateId root="2.16.840.1.113883.10.20.22.4.17"/&gt;
-  &lt;id root="MDHT" extension="245050049"/&gt;
+		<pre class="pre codeblock">&lt;supply xmlns="urn:hl7-org:v3"&gt;
+  &lt;id root="MDHT" extension="1291720267"/&gt;
   &lt;statusCode code="completed"/&gt;
-  &lt;effectiveTime value="20121102"/&gt;
+  &lt;effectiveTime value="20130627"/&gt;
   &lt;repeatNumber value="1"/&gt;
   &lt;quantity/&gt;
-  &lt;product&gt;
-    &lt;manufacturedProduct/&gt;
-  &lt;/product&gt;
   &lt;author/&gt;
   &lt;entryRelationship&gt;
-    &lt;act classCode="ACT" moodCode="INT"&gt;
-      &lt;templateId root="2.16.840.1.113883.10.20.22.4.20"/&gt;
-      &lt;id root="MDHT" extension="965883953"/&gt;
-      &lt;code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/&gt;
+    &lt;act&gt;
+      &lt;id root="MDHT" extension="1359769938"/&gt;
+      &lt;code code="732552470"/&gt;
       &lt;statusCode code="completed"/&gt;
       &lt;effectiveTime&gt;
-        &lt;low value="2012"/&gt;
-        &lt;high value="2012"/&gt;
+        &lt;low value="2013"/&gt;
+        &lt;high value="2013"/&gt;
       &lt;/effectiveTime&gt;
     &lt;/act&gt;
   &lt;/entryRelationship&gt;

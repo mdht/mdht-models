@@ -6,7 +6,13 @@
 		<project>org.openhealthtools.mdht.uml.cda.consol</project>
 	</projects>
 	<buildSpec>
+		<buildCommand>
+			<name>org.openhealthtools.mdht.uml.cda.ui.org.openhealthtools.mdht.uml.cda.builder.id</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
 	</buildSpec>
 	<natures>
+		<nature>org.openhealthtools.mdht.uml.cda.ui.org.openhealthtools.mdht.uml.cda.nature.id</nature>
 	</natures>
 </projectDescription>

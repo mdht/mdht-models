@@ -13,7 +13,7 @@
 <colspec colname="col2" colwidth="4*"/>
 <tbody>
 <row><entry>Value Set</entry><entry>Vaccines administered (CVX) - 2.16.840.1.114222.4.11.934</entry></row>
-<row><entry>Code System</entry><entry>Vaccines administered (CVX) - 2.16.840.1.113883.6.59</entry></row>
+<row><entry>Code System</entry><entry>Vaccines administered (CVX) - 2.16.840.1.113883.12.292</entry></row>
 <row><entry>Version</entry><entry>7</entry></row>
 <row><entry>Definition</entry><entry>Vaccine Name Keyword: Clinical Vaccines, Vaccine Names</entry></row>
 </tbody></tgroup></table>
