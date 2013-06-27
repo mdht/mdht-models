@@ -119,7 +119,7 @@ with respect to the payer, so that the identifiers can be recorded.&#xD;
     </ownedAttribute>
     <nestedClassifier xmi:type="uml:Class" xmi:id="_ddyK0FzWEeGt2doqSDULjA" name="Payer">
       <ownedComment xmi:id="_vEDd8FzWEeGt2doqSDULjA">
-        <body>INLINE&amp;assignedEntity->excluding(null).code->excluding(null).code->excludes('GUAR')</body>
+        <body>INLINE&amp;templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.4.87')</body>
       </ownedComment>
       <ownedComment xmi:id="_5DImUF0PEeGt2doqSDULjA">
         <body>This performer represents the Payer</body>
@@ -197,7 +197,7 @@ with respect to the payer, so that the identifiers can be recorded.&#xD;
     </nestedClassifier>
     <nestedClassifier xmi:type="uml:Class" xmi:id="_GX8lgF13EeGt2doqSDULjA" name="Guarantor">
       <ownedComment xmi:id="_KLyDgF13EeGt2doqSDULjA">
-        <body>INLINE&amp;assignedEntity->asSequence()->excluding(null).code->excluding(null).code = Sequence{'GUAR'}</body>
+        <body>INLINE&amp;templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.4.88')</body>
       </ownedComment>
       <ownedComment xmi:id="_y3qjgG7fEeGO5JJTinolhw">
         <body>This performer represents the Guarantor</body>
@@ -521,7 +521,15 @@ Authorizations are represented using an act subordinate to the policy or program
           <language>Analysis</language>
           <language>OCL</language>
           <body>The target of an authorization activity MAY contain one or more performer, to indicate the providers that have been authorized to provide treatment.</body>
-          <body>self.act->forAll( (moodCode = vocab::x_DocumentActMood::PRMS and performer->size() > 0) or moodCode &lt;> vocab::x_DocumentActMood::PRMS ) and &#xD;&#xA;self.encounter->forAll((moodCode = vocab::x_DocumentEncounterMood::PRMS and performer->size() > 0) or moodCode &lt;>  vocab::x_DocumentEncounterMood::PRMS) and &#xD;&#xA;self.observation->forAll((moodCode = vocab::x_ActMoodDocumentObservation::PRMS and performer->size() > 0)  or moodCode &lt;>  vocab::x_ActMoodDocumentObservation::PRMS) and &#xD;&#xA;self.observationMedia->forAll((moodCode = vocab::ActMood::PRMS and performer->size() > 0) or moodCode &lt;>  vocab::ActMood::PRMS) and &#xD;&#xA;self.organizer->forAll((moodCode = vocab::ActMood::PRMS and performer->size() > 0)  or moodCode &lt;>  vocab::ActMood::PRMS) and &#xD;&#xA;self.procedure->forAll((moodCode = vocab::x_DocumentProcedureMood::PRMS and performer->size() > 0)  or moodCode &lt;>  vocab::x_DocumentProcedureMood::PRMS) and &#xD;&#xA;self.regionOfInterest->forAll((moodCode = vocab::ActMood::PRMS and performer->size() > 0) or moodCode &lt;>  vocab::ActMood::PRMS) and &#xD;&#xA;self.substanceAdministration->forAll((moodCode = vocab::x_DocumentSubstanceMood::PRMS and performer->size() > 0)  or moodCode &lt;>  vocab::x_DocumentSubstanceMood::PRMS) and &#xD;&#xA;self.supply->forAll((moodCode = vocab::x_DocumentSubstanceMood::PRMS and performer->size() > 0) or moodCode &lt;>  vocab::x_DocumentSubstanceMood::PRMS)</body>
+          <body>self.act->forAll( (moodCode = vocab::x_DocumentActMood::PRMS and performer->size() > 0) or moodCode &lt;> vocab::x_DocumentActMood::PRMS ) and &#xD;
+self.encounter->forAll((moodCode = vocab::x_DocumentEncounterMood::PRMS and performer->size() > 0) or moodCode &lt;>  vocab::x_DocumentEncounterMood::PRMS) and &#xD;
+self.observation->forAll((moodCode = vocab::x_ActMoodDocumentObservation::PRMS and performer->size() > 0)  or moodCode &lt;>  vocab::x_ActMoodDocumentObservation::PRMS) and &#xD;
+self.observationMedia->forAll((moodCode = vocab::ActMood::PRMS and performer->size() > 0) or moodCode &lt;>  vocab::ActMood::PRMS) and &#xD;
+self.organizer->forAll((moodCode = vocab::ActMood::PRMS and performer->size() > 0)  or moodCode &lt;>  vocab::ActMood::PRMS) and &#xD;
+self.procedure->forAll((moodCode = vocab::x_DocumentProcedureMood::PRMS and performer->size() > 0)  or moodCode &lt;>  vocab::x_DocumentProcedureMood::PRMS) and &#xD;
+self.regionOfInterest->forAll((moodCode = vocab::ActMood::PRMS and performer->size() > 0) or moodCode &lt;>  vocab::ActMood::PRMS) and &#xD;
+self.substanceAdministration->forAll((moodCode = vocab::x_DocumentSubstanceMood::PRMS and performer->size() > 0)  or moodCode &lt;>  vocab::x_DocumentSubstanceMood::PRMS) and &#xD;
+self.supply->forAll((moodCode = vocab::x_DocumentSubstanceMood::PRMS and performer->size() > 0) or moodCode &lt;>  vocab::x_DocumentSubstanceMood::PRMS)</body>
         </specification>
       </ownedRule>
       <generalization xmi:id="_sWZzkHhvEeGJtvg2iiStYg">
@@ -601,7 +609,9 @@ Authorizations are represented using an act subordinate to the policy or program
   <uml:Association xmi:id="_sLvNAlzWEeGt2doqSDULjA" memberEnd="_sLvNAFzWEeGt2doqSDULjA _sLvNA1zWEeGt2doqSDULjA">
     <ownedEnd xmi:id="_sLvNA1zWEeGt2doqSDULjA" type="_PZBdMBUlEeGvPruliC3crg" association="_sLvNAlzWEeGt2doqSDULjA"/>
   </uml:Association>
-  <CDA:AssociationValidation xmi:id="_c7p34F0HEeGt2doqSDULjA" base_Association="_sLvNAlzWEeGt2doqSDULjA"/>
+  <CDA:AssociationValidation xmi:id="_c7p34F0HEeGt2doqSDULjA" base_Association="_sLvNAlzWEeGt2doqSDULjA">
+    <ruleId>CONF:8906</ruleId>
+  </CDA:AssociationValidation>
   <uml:Association xmi:id="_uHcp8l0REeGt2doqSDULjA" memberEnd="_uHcp8F0REeGt2doqSDULjA _uHcp810REeGt2doqSDULjA">
     <ownedEnd xmi:id="_uHcp810REeGt2doqSDULjA" type="_ddyK0FzWEeGt2doqSDULjA" association="_uHcp8l0REeGt2doqSDULjA"/>
   </uml:Association>
@@ -628,7 +638,9 @@ Authorizations are represented using an act subordinate to the policy or program
   <uml:Association xmi:id="_e-00oF13EeGt2doqSDULjA" memberEnd="_e-rqsF13EeGt2doqSDULjA _e-00oV13EeGt2doqSDULjA">
     <ownedEnd xmi:id="_e-00oV13EeGt2doqSDULjA" type="_PZBdMBUlEeGvPruliC3crg" association="_e-00oF13EeGt2doqSDULjA"/>
   </uml:Association>
-  <CDA:AssociationValidation xmi:id="_jaiK8F13EeGt2doqSDULjA" severity="WARNING" base_Association="_e-00oF13EeGt2doqSDULjA"/>
+  <CDA:AssociationValidation xmi:id="_jaiK8F13EeGt2doqSDULjA" severity="WARNING" base_Association="_e-00oF13EeGt2doqSDULjA">
+    <ruleId>CONF:8961</ruleId>
+  </CDA:AssociationValidation>
   <CDA:PropertyValidation xmi:id="_RN_3IF15EeGt2doqSDULjA" severity="WARNING" base_Property="_HMWMAF15EeGt2doqSDULjA">
     <ruleId>CONF:8963</ruleId>
   </CDA:PropertyValidation>
@@ -638,8 +650,8 @@ Authorizations are represented using an act subordinate to the policy or program
   <CDA:AssociationValidation xmi:id="_j59nAF15EeGt2doqSDULjA" base_Association="_hHSrEl15EeGt2doqSDULjA">
     <ruleId>CONF:8962</ruleId>
   </CDA:AssociationValidation>
-  <CDA:CodeSystemConstraint xmi:id="_1HQZcF15EeGt2doqSDULjA" code="GUAR" base_Property="_pRByUF15EeGt2doqSDULjA">
-    <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_ywdZ4Gg7Ed-ilOLYnIx0jA"/>
+  <CDA:CodeSystemConstraint xmi:id="_1HQZcF15EeGt2doqSDULjA" code="GUAR" displayName="Guarantor" base_Property="_pRByUF15EeGt2doqSDULjA">
+    <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_dHx4caDqEd-dVeaMP0XXQw"/>
     <ruleId>CONF:16096</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:PropertyValidation xmi:id="_R1eRYF16EeGt2doqSDULjA" severity="WARNING" base_Property="_NIzG4F16EeGt2doqSDULjA">

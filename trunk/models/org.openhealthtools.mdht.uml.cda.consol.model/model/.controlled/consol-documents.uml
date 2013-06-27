@@ -559,12 +559,12 @@ In a CCD the encompassingEncounter may be used when documenting a specific encou
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_7t6X0Sy6EeGMXrZ0DiQwGg" value="1"/>
       </ownedAttribute>
       <nestedClassifier xmi:type="uml:Class" xmi:id="_344-ICymEeGMXrZ0DiQwGg" name="AssignedAuthor">
-        <ownedRule xmi:id="_LKdzICzAEeGMXrZ0DiQwGg" name="hasAssignedPersonOrAssignedAuthoringDevice" constrainedElement="_344-ICymEeGMXrZ0DiQwGg">
+        <ownedRule xmi:id="_LKdzICzAEeGMXrZ0DiQwGg" name="hasOneAssignedPersonOrOneAssignedAuthoringDevice" constrainedElement="_344-ICymEeGMXrZ0DiQwGg">
           <specification xmi:type="uml:OpaqueExpression" xmi:id="_Mdv_8CzAEeGMXrZ0DiQwGg">
             <language>Analysis</language>
             <language>OCL</language>
-            <body>This assignedAuthor SHALL contain exactly one  [1..1] assignedPerson or assignedAuthoringDevice</body>
-            <body>not assignedPerson.oclIsUndefined() xor not assignedAuthoringDevice.oclIsUndefined()</body>
+            <body>SHALL contain exactly one  [1..1] assignedPerson or assignedAuthoringDevice</body>
+            <body>assignedPerson->one(element | not element.oclIsUndefined() implies (element.isNullFlavorDefined() or element->size() = 1) ) xor assignedAuthoringDevice->one(element | not element.oclIsUndefined() implies (element.isNullFlavorDefined() or element->size() = 1) )</body>
           </specification>
         </ownedRule>
         <ownedRule xmi:id="_BEoOQDVVEeGIw7CntkyPQw" name="hasNationalProviderIdentifier" constrainedElement="_6j680CytEeGMXrZ0DiQwGg">
@@ -5197,7 +5197,6 @@ OIDs SHALL be no more than 64 characters in length..</body>
   <CDA:PropertyValidation xmi:id="_vXYgoPImEeGu1M-cCXg0Dg" severity="WARNING" base_Property="_qugRAPImEeGu1M-cCXg0Dg">
     <ruleId>CONF:7995</ruleId>
   </CDA:PropertyValidation>
-  <CDA:AssociationValidation xmi:id="_NM2UgPInEeGu1M-cCXg0Dg" severity="WARNING" base_Association="_G7ZKoSzAEeGMXrZ0DiQwGg"/>
   <CDA:PropertyValidation xmi:id="_97a8YPInEeGu1M-cCXg0Dg" severity="WARNING" base_Property="_8KE6kPInEeGu1M-cCXg0Dg">
     <ruleId>CONF:7996</ruleId>
   </CDA:PropertyValidation>
