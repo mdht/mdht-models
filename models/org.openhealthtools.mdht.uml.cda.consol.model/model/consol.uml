@@ -2742,7 +2742,6 @@ UNK.  If the code is something other than SNOMED, @nullFlavor SHOULD be OTH and 
   <CDA:AssociationValidation xmi:id="_3u9p8OxwEeG7k4bbVdXbXw" base_Association="_23G04OxwEeG7k4bbVdXbXw">
     <ruleId>CONF:14836</ruleId>
   </CDA:AssociationValidation>
-  <CDA:AssociationValidation xmi:id="_NtcgIPInEeGu1M-cCXg0Dg" severity="WARNING" base_Association="_BwHQsOxvEeG7k4bbVdXbXw"/>
   <CDA:AssociationValidation xmi:id="_DICLMPIoEeGu1M-cCXg0Dg" base_Association="_XaJ7QOxvEeG7k4bbVdXbXw">
     <ruleId>CONF:5469</ruleId>
   </CDA:AssociationValidation>
