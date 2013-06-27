@@ -46,65 +46,65 @@ import org.openhealthtools.mdht.uml.cda.impl.SectionImpl;
  */
 public class FunctionalStatusSectionImpl extends SectionImpl implements FunctionalStatusSection {
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	protected FunctionalStatusSectionImpl() {
 		super();
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	@Override
 	protected EClass eStaticClass() {
 		return ConsolPackage.Literals.FUNCTIONAL_STATUS_SECTION;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateFunctionalStatusSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return FunctionalStatusSectionOperations.validateFunctionalStatusSectionTemplateId(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateFunctionalStatusSectionCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return FunctionalStatusSectionOperations.validateFunctionalStatusSectionCode(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateFunctionalStatusSectionTitle(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return FunctionalStatusSectionOperations.validateFunctionalStatusSectionTitle(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateFunctionalStatusSectionText(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return FunctionalStatusSectionOperations.validateFunctionalStatusSectionText(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	* <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateFunctionalStatusSectionFunctionalStatusResultOrganizer(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return FunctionalStatusSectionOperations.validateFunctionalStatusSectionFunctionalStatusResultOrganizer(
@@ -112,10 +112,10 @@ public class FunctionalStatusSectionImpl extends SectionImpl implements Function
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateFunctionalStatusSectionCognitiveStatusResultOrganizer(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return FunctionalStatusSectionOperations.validateFunctionalStatusSectionCognitiveStatusResultOrganizer(
@@ -123,10 +123,10 @@ public class FunctionalStatusSectionImpl extends SectionImpl implements Function
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateFunctionalStatusSectionFunctionalStatusResultObservation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return FunctionalStatusSectionOperations.validateFunctionalStatusSectionFunctionalStatusResultObservation(
@@ -134,10 +134,10 @@ public class FunctionalStatusSectionImpl extends SectionImpl implements Function
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateFunctionalStatusSectionCognitiveStatusResultObservation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return FunctionalStatusSectionOperations.validateFunctionalStatusSectionCognitiveStatusResultObservation(
@@ -145,10 +145,10 @@ public class FunctionalStatusSectionImpl extends SectionImpl implements Function
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateFunctionalStatusSectionFunctionalStatusProblemObservation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return FunctionalStatusSectionOperations.validateFunctionalStatusSectionFunctionalStatusProblemObservation(
@@ -156,10 +156,10 @@ public class FunctionalStatusSectionImpl extends SectionImpl implements Function
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateFunctionalStatusSectionCognitiveStatusProblemObservation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return FunctionalStatusSectionOperations.validateFunctionalStatusSectionCognitiveStatusProblemObservation(
@@ -167,10 +167,10 @@ public class FunctionalStatusSectionImpl extends SectionImpl implements Function
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateFunctionalStatusSectionCaregiverCharacteristics(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return FunctionalStatusSectionOperations.validateFunctionalStatusSectionCaregiverCharacteristics(
@@ -178,10 +178,10 @@ public class FunctionalStatusSectionImpl extends SectionImpl implements Function
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateFunctionalStatusSectionAssessmentScaleObservation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return FunctionalStatusSectionOperations.validateFunctionalStatusSectionAssessmentScaleObservation(
@@ -189,10 +189,10 @@ public class FunctionalStatusSectionImpl extends SectionImpl implements Function
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateFunctionalStatusSectionNonMedicinalSupplyActivity(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return FunctionalStatusSectionOperations.validateFunctionalStatusSectionNonMedicinalSupplyActivity(
@@ -200,10 +200,10 @@ public class FunctionalStatusSectionImpl extends SectionImpl implements Function
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateFunctionalStatusSectionPressureUlcerObservation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return FunctionalStatusSectionOperations.validateFunctionalStatusSectionPressureUlcerObservation(
@@ -211,10 +211,10 @@ public class FunctionalStatusSectionImpl extends SectionImpl implements Function
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateFunctionalStatusSectionNumberOfPressureUlcersObservation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return FunctionalStatusSectionOperations.validateFunctionalStatusSectionNumberOfPressureUlcersObservation(
@@ -222,10 +222,10 @@ public class FunctionalStatusSectionImpl extends SectionImpl implements Function
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateFunctionalStatusSectionHighestPressureUlcerStage(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return FunctionalStatusSectionOperations.validateFunctionalStatusSectionHighestPressureUlcerStage(
@@ -233,118 +233,118 @@ public class FunctionalStatusSectionImpl extends SectionImpl implements Function
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public EList<FunctionalStatusResultOrganizer> getFunctionalStatusResultOrganizers() {
 		return FunctionalStatusSectionOperations.getFunctionalStatusResultOrganizers(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public EList<CognitiveStatusResultOrganizer> getCognitiveStatusResultOrganizers() {
 		return FunctionalStatusSectionOperations.getCognitiveStatusResultOrganizers(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public EList<FunctionalStatusResultObservation> getFunctionalStatusResultObservations() {
 		return FunctionalStatusSectionOperations.getFunctionalStatusResultObservations(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public EList<CognitiveStatusResultObservation> getCognitiveStatusResultObservations() {
 		return FunctionalStatusSectionOperations.getCognitiveStatusResultObservations(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public EList<FunctionalStatusProblemObservation> getFunctionalStatusProblemObservations() {
 		return FunctionalStatusSectionOperations.getFunctionalStatusProblemObservations(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public EList<CognitiveStatusProblemObservation> getCognitiveStatusProblemObservations() {
 		return FunctionalStatusSectionOperations.getCognitiveStatusProblemObservations(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public EList<CaregiverCharacteristics> getCaregiverCharacteristicss() {
 		return FunctionalStatusSectionOperations.getCaregiverCharacteristicss(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public EList<AssessmentScaleObservation> getAssessmentScaleObservations() {
 		return FunctionalStatusSectionOperations.getAssessmentScaleObservations(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public EList<NonMedicinalSupplyActivity> getNonMedicinalSupplyActivities() {
 		return FunctionalStatusSectionOperations.getNonMedicinalSupplyActivities(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public EList<PressureUlcerObservation> getPressureUlcerObservations() {
 		return FunctionalStatusSectionOperations.getPressureUlcerObservations(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public EList<NumberOfPressureUlcersObservation> getNumberOfPressureUlcersObservations() {
 		return FunctionalStatusSectionOperations.getNumberOfPressureUlcersObservations(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public EList<HighestPressureUlcerStage> getHighestPressureUlcerStages() {
 		return FunctionalStatusSectionOperations.getHighestPressureUlcerStages(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public FunctionalStatusSection init() {
 		return Initializer.Util.init(this);
 	}
