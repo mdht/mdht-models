@@ -2307,7 +2307,7 @@ public class PatientCareReportOperations extends GeneralHeaderConstraintsOperati
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				EmspcrPackage.Literals.PATIENT_CARE_REPORT,
-				EmspcrPackage.Literals.PATIENT_CARE_REPORT.getEAllOperations().get(327));
+				EmspcrPackage.Literals.PATIENT_CARE_REPORT.getEAllOperations().get(326));
 			try {
 				GET_BILLING__EOCL_QRY = helper.createQuery(GET_BILLING__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -2349,7 +2349,7 @@ public class PatientCareReportOperations extends GeneralHeaderConstraintsOperati
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				EmspcrPackage.Literals.PATIENT_CARE_REPORT,
-				EmspcrPackage.Literals.PATIENT_CARE_REPORT.getEAllOperations().get(328));
+				EmspcrPackage.Literals.PATIENT_CARE_REPORT.getEAllOperations().get(327));
 			try {
 				GET_CURRENT_MEDICATION__EOCL_QRY = helper.createQuery(GET_CURRENT_MEDICATION__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -2391,7 +2391,7 @@ public class PatientCareReportOperations extends GeneralHeaderConstraintsOperati
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				EmspcrPackage.Literals.PATIENT_CARE_REPORT,
-				EmspcrPackage.Literals.PATIENT_CARE_REPORT.getEAllOperations().get(329));
+				EmspcrPackage.Literals.PATIENT_CARE_REPORT.getEAllOperations().get(328));
 			try {
 				GET_CARDIAC_ARREST_EVENT__EOCL_QRY = helper.createQuery(GET_CARDIAC_ARREST_EVENT__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -2433,7 +2433,7 @@ public class PatientCareReportOperations extends GeneralHeaderConstraintsOperati
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				EmspcrPackage.Literals.PATIENT_CARE_REPORT,
-				EmspcrPackage.Literals.PATIENT_CARE_REPORT.getEAllOperations().get(330));
+				EmspcrPackage.Literals.PATIENT_CARE_REPORT.getEAllOperations().get(329));
 			try {
 				GET_ADVANCE_DIRECTIVES__EOCL_QRY = helper.createQuery(GET_ADVANCE_DIRECTIVES__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -2476,7 +2476,7 @@ public class PatientCareReportOperations extends GeneralHeaderConstraintsOperati
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				EmspcrPackage.Literals.PATIENT_CARE_REPORT,
-				EmspcrPackage.Literals.PATIENT_CARE_REPORT.getEAllOperations().get(331));
+				EmspcrPackage.Literals.PATIENT_CARE_REPORT.getEAllOperations().get(330));
 			try {
 				GET_ALLERGIES_AND_ADVERSE_REACTIONS_SECTION__EOCL_QRY = helper.createQuery(GET_ALLERGIES_AND_ADVERSE_REACTIONS_SECTION__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -2518,7 +2518,7 @@ public class PatientCareReportOperations extends GeneralHeaderConstraintsOperati
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				EmspcrPackage.Literals.PATIENT_CARE_REPORT,
-				EmspcrPackage.Literals.PATIENT_CARE_REPORT.getEAllOperations().get(332));
+				EmspcrPackage.Literals.PATIENT_CARE_REPORT.getEAllOperations().get(331));
 			try {
 				GET_PAST_MEDICAL_HISTORY__EOCL_QRY = helper.createQuery(GET_PAST_MEDICAL_HISTORY__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -2560,7 +2560,7 @@ public class PatientCareReportOperations extends GeneralHeaderConstraintsOperati
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				EmspcrPackage.Literals.PATIENT_CARE_REPORT,
-				EmspcrPackage.Literals.PATIENT_CARE_REPORT.getEAllOperations().get(333));
+				EmspcrPackage.Literals.PATIENT_CARE_REPORT.getEAllOperations().get(332));
 			try {
 				GET_SOCIAL_HISTORY__EOCL_QRY = helper.createQuery(GET_SOCIAL_HISTORY__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -2602,7 +2602,7 @@ public class PatientCareReportOperations extends GeneralHeaderConstraintsOperati
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				EmspcrPackage.Literals.PATIENT_CARE_REPORT,
-				EmspcrPackage.Literals.PATIENT_CARE_REPORT.getEAllOperations().get(334));
+				EmspcrPackage.Literals.PATIENT_CARE_REPORT.getEAllOperations().get(333));
 			try {
 				GET_PHYSICAL_ASSESSMENT_SECTION__EOCL_QRY = helper.createQuery(GET_PHYSICAL_ASSESSMENT_SECTION__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -2644,7 +2644,7 @@ public class PatientCareReportOperations extends GeneralHeaderConstraintsOperati
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				EmspcrPackage.Literals.PATIENT_CARE_REPORT,
-				EmspcrPackage.Literals.PATIENT_CARE_REPORT.getEAllOperations().get(335));
+				EmspcrPackage.Literals.PATIENT_CARE_REPORT.getEAllOperations().get(334));
 			try {
 				GET_MEDICATIONS_ADMINISTERED_SECTION__EOCL_QRY = helper.createQuery(GET_MEDICATIONS_ADMINISTERED_SECTION__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -2686,7 +2686,7 @@ public class PatientCareReportOperations extends GeneralHeaderConstraintsOperati
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				EmspcrPackage.Literals.PATIENT_CARE_REPORT,
-				EmspcrPackage.Literals.PATIENT_CARE_REPORT.getEAllOperations().get(336));
+				EmspcrPackage.Literals.PATIENT_CARE_REPORT.getEAllOperations().get(335));
 			try {
 				GET_PROCEDURES_PERFORMED_SECTION__EOCL_QRY = helper.createQuery(GET_PROCEDURES_PERFORMED_SECTION__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -2728,7 +2728,7 @@ public class PatientCareReportOperations extends GeneralHeaderConstraintsOperati
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				EmspcrPackage.Literals.PATIENT_CARE_REPORT,
-				EmspcrPackage.Literals.PATIENT_CARE_REPORT.getEAllOperations().get(337));
+				EmspcrPackage.Literals.PATIENT_CARE_REPORT.getEAllOperations().get(336));
 			try {
 				GET_PATIENT_CARE_NARRATIVE__EOCL_QRY = helper.createQuery(GET_PATIENT_CARE_NARRATIVE__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -2770,7 +2770,7 @@ public class PatientCareReportOperations extends GeneralHeaderConstraintsOperati
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				EmspcrPackage.Literals.PATIENT_CARE_REPORT,
-				EmspcrPackage.Literals.PATIENT_CARE_REPORT.getEAllOperations().get(338));
+				EmspcrPackage.Literals.PATIENT_CARE_REPORT.getEAllOperations().get(337));
 			try {
 				GET_SCENE_SECTION__EOCL_QRY = helper.createQuery(GET_SCENE_SECTION__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -2812,7 +2812,7 @@ public class PatientCareReportOperations extends GeneralHeaderConstraintsOperati
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				EmspcrPackage.Literals.PATIENT_CARE_REPORT,
-				EmspcrPackage.Literals.PATIENT_CARE_REPORT.getEAllOperations().get(339));
+				EmspcrPackage.Literals.PATIENT_CARE_REPORT.getEAllOperations().get(338));
 			try {
 				GET_DISPATCH_SECTION__EOCL_QRY = helper.createQuery(GET_DISPATCH_SECTION__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -2854,7 +2854,7 @@ public class PatientCareReportOperations extends GeneralHeaderConstraintsOperati
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				EmspcrPackage.Literals.PATIENT_CARE_REPORT,
-				EmspcrPackage.Literals.PATIENT_CARE_REPORT.getEAllOperations().get(340));
+				EmspcrPackage.Literals.PATIENT_CARE_REPORT.getEAllOperations().get(339));
 			try {
 				GET_DISPOSITION_SECTION__EOCL_QRY = helper.createQuery(GET_DISPOSITION_SECTION__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -2896,7 +2896,7 @@ public class PatientCareReportOperations extends GeneralHeaderConstraintsOperati
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				EmspcrPackage.Literals.PATIENT_CARE_REPORT,
-				EmspcrPackage.Literals.PATIENT_CARE_REPORT.getEAllOperations().get(341));
+				EmspcrPackage.Literals.PATIENT_CARE_REPORT.getEAllOperations().get(340));
 			try {
 				GET_PERSONNEL_ADVERSE_EVENT_SECTION__EOCL_QRY = helper.createQuery(GET_PERSONNEL_ADVERSE_EVENT_SECTION__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -2938,7 +2938,7 @@ public class PatientCareReportOperations extends GeneralHeaderConstraintsOperati
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				EmspcrPackage.Literals.PATIENT_CARE_REPORT,
-				EmspcrPackage.Literals.PATIENT_CARE_REPORT.getEAllOperations().get(342));
+				EmspcrPackage.Literals.PATIENT_CARE_REPORT.getEAllOperations().get(341));
 			try {
 				GET_PROTOCOL_SECTION__EOCL_QRY = helper.createQuery(GET_PROTOCOL_SECTION__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -2980,7 +2980,7 @@ public class PatientCareReportOperations extends GeneralHeaderConstraintsOperati
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				EmspcrPackage.Literals.PATIENT_CARE_REPORT,
-				EmspcrPackage.Literals.PATIENT_CARE_REPORT.getEAllOperations().get(343));
+				EmspcrPackage.Literals.PATIENT_CARE_REPORT.getEAllOperations().get(342));
 			try {
 				GET_RESPONSE_SECTION__EOCL_QRY = helper.createQuery(GET_RESPONSE_SECTION__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -3022,7 +3022,7 @@ public class PatientCareReportOperations extends GeneralHeaderConstraintsOperati
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				EmspcrPackage.Literals.PATIENT_CARE_REPORT,
-				EmspcrPackage.Literals.PATIENT_CARE_REPORT.getEAllOperations().get(344));
+				EmspcrPackage.Literals.PATIENT_CARE_REPORT.getEAllOperations().get(343));
 			try {
 				GET_SITUATION_SECTION__EOCL_QRY = helper.createQuery(GET_SITUATION_SECTION__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -3064,7 +3064,7 @@ public class PatientCareReportOperations extends GeneralHeaderConstraintsOperati
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				EmspcrPackage.Literals.PATIENT_CARE_REPORT,
-				EmspcrPackage.Literals.PATIENT_CARE_REPORT.getEAllOperations().get(345));
+				EmspcrPackage.Literals.PATIENT_CARE_REPORT.getEAllOperations().get(344));
 			try {
 				GET_TIMES_SECTION__EOCL_QRY = helper.createQuery(GET_TIMES_SECTION__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -3106,7 +3106,7 @@ public class PatientCareReportOperations extends GeneralHeaderConstraintsOperati
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				EmspcrPackage.Literals.PATIENT_CARE_REPORT,
-				EmspcrPackage.Literals.PATIENT_CARE_REPORT.getEAllOperations().get(346));
+				EmspcrPackage.Literals.PATIENT_CARE_REPORT.getEAllOperations().get(345));
 			try {
 				GET_VITAL_SIGNS_SECTION__EOCL_QRY = helper.createQuery(GET_VITAL_SIGNS_SECTION__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -3149,7 +3149,7 @@ public class PatientCareReportOperations extends GeneralHeaderConstraintsOperati
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				EmspcrPackage.Literals.PATIENT_CARE_REPORT,
-				EmspcrPackage.Literals.PATIENT_CARE_REPORT.getEAllOperations().get(347));
+				EmspcrPackage.Literals.PATIENT_CARE_REPORT.getEAllOperations().get(346));
 			try {
 				GET_INJURY_INCIDENT_DESCRIPTION_SECTION__EOCL_QRY = helper.createQuery(GET_INJURY_INCIDENT_DESCRIPTION_SECTION__EOCL_EXP);
 			} catch (ParserException pe) {

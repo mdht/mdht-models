@@ -8767,6 +8767,10 @@ public class EmspcrValidator extends EObjectValidator {
 				patientCareReport, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsConfidentialityCodeP(
+				patientCareReport, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
 			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsConfidentialityCode(
 				patientCareReport, diagnostics, context);
 		}
@@ -9211,7 +9215,7 @@ public class EmspcrValidator extends EObjectValidator {
 				patientCareReport, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthorAssignedAuthorHasAssignedPersonOrAssignedAuthoringDevice(
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthorAssignedAuthorHasOneAssignedPersonOrOneAssignedAuthoringDevice(
 				patientCareReport, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -9236,14 +9240,6 @@ public class EmspcrValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthorAssignedAuthorTelecom(
-				patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthorAssignedAuthorAssignedAuthoringDevice(
-				patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthorAssignedAuthorAssignedPerson(
 				patientCareReport, diagnostics, context);
 		}
 		if (result || diagnostics != null) {

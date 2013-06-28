@@ -60,7 +60,7 @@ public interface MentalStatusAssessment extends Observation {
 	* @param diagnostics The chain of diagnostics to which problems are to be appended.
 	* @param context The cache of context-specific information.
 	* <!-- end-model-doc -->
-	* @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and \r\nlet value : datatypes::CD = self.code.oclAsType(datatypes::CD) in \r\nvalue.code = \'67535-5\' and value.codeSystem = \'2.16.840.1.113883.6.1\')'"
+	* @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and \nlet value : datatypes::CD = self.code.oclAsType(datatypes::CD) in \nvalue.code = \'67535-5\' and value.codeSystem = \'2.16.840.1.113883.6.1\')'"
 	* @generated
 	*/
 	boolean validateMentalStatusAssessmentCode(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -72,7 +72,7 @@ public interface MentalStatusAssessment extends Observation {
 	* @param diagnostics The chain of diagnostics to which problems are to be appended.
 	* @param context The cache of context-specific information.
 	* <!-- end-model-doc -->
-	* @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (not self.value->isEmpty() and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and \r\nlet value : datatypes::CD = element.oclAsType(datatypes::CD) in \r\nvalue.codeSystem = \'2.16.840.1.113883.6.1\' and (value.code = \'LA17286-8\' or value.code = \'LA17287-6\' or value.code = \'LA17288-4\' or value.code = \'LA17289-2\' or value.code = \'LA17290-0\' or value.code = \'LA18259-4\' or value.code = \'LA18260-2\' or value.code = \'LA6560-2\' or value.code = \'LA6630-3\' or value.code = \'LA7438-0\' or value.code = \'LA9343-0\')))'"
+	* @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (not self.value->isEmpty() and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and \nlet value : datatypes::CD = element.oclAsType(datatypes::CD) in \nvalue.codeSystem = \'2.16.840.1.113883.6.1\' and (value.code = \'LA17286-8\' or value.code = \'LA17287-6\' or value.code = \'LA17288-4\' or value.code = \'LA17289-2\' or value.code = \'LA17290-0\' or value.code = \'LA18259-4\' or value.code = \'LA18260-2\' or value.code = \'LA6560-2\' or value.code = \'LA6630-3\' or value.code = \'LA7438-0\' or value.code = \'LA9343-0\')))'"
 	* @generated
 	*/
 	boolean validateMentalStatusAssessmentValue(DiagnosticChain diagnostics, Map<Object, Object> context);
