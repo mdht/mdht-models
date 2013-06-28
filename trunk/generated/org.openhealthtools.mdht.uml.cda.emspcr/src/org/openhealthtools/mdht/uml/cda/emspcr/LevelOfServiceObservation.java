@@ -60,7 +60,7 @@ public interface LevelOfServiceObservation extends Observation {
 	* @param diagnostics The chain of diagnostics to which problems are to be appended.
 	* @param context The cache of context-specific information.
 	* <!-- end-model-doc -->
-	* @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and \r\nlet value : datatypes::CD = self.code.oclAsType(datatypes::CD) in \r\nvalue.code = \'69464-6\' and value.codeSystem = \'2.16.840.1.113883.6.1\')'"
+	* @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and \nlet value : datatypes::CD = self.code.oclAsType(datatypes::CD) in \nvalue.code = \'69464-6\' and value.codeSystem = \'2.16.840.1.113883.6.1\')'"
 	* @generated
 	*/
 	boolean validateLevelOfServiceObservationCode(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -72,7 +72,7 @@ public interface LevelOfServiceObservation extends Observation {
 	* @param diagnostics The chain of diagnostics to which problems are to be appended.
 	* @param context The cache of context-specific information.
 	* <!-- end-model-doc -->
-	* @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and \r\nlet value : datatypes::CD = element.oclAsType(datatypes::CD) in \r\nvalue.codeSystem = \'2.16.840.1.113883.6.1\' and (value.code = \'LA18102-6\' or value.code = \'LA18103-4\' or value.code = \'LA18104-2\' or value.code = \'LA18105-9\' or value.code = \'LA18106-7\' or value.code = \'LA18107-5\' or value.code = \'LA18108-3\' or value.code = \'LA18109-1\' or value.code = \'LA18110-9\')))'"
+	* @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and \nlet value : datatypes::CD = element.oclAsType(datatypes::CD) in \nvalue.codeSystem = \'2.16.840.1.113883.6.1\' and (value.code = \'LA18102-6\' or value.code = \'LA18103-4\' or value.code = \'LA18104-2\' or value.code = \'LA18105-9\' or value.code = \'LA18106-7\' or value.code = \'LA18107-5\' or value.code = \'LA18108-3\' or value.code = \'LA18109-1\' or value.code = \'LA18110-9\')))'"
 	* @generated
 	*/
 	boolean validateLevelOfServiceObservationValue(DiagnosticChain diagnostics, Map<Object, Object> context);

@@ -60,7 +60,7 @@ public interface BarriersToPatientCare extends Observation {
 	* @param diagnostics The chain of diagnostics to which problems are to be appended.
 	* @param context The cache of context-specific information.
 	* <!-- end-model-doc -->
-	* @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and \r\nlet value : datatypes::CD = self.code.oclAsType(datatypes::CD) in \r\nvalue.code = \'67523-1\' and value.codeSystem = \'2.16.840.1.113883.6.1\')'"
+	* @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and \nlet value : datatypes::CD = self.code.oclAsType(datatypes::CD) in \nvalue.code = \'67523-1\' and value.codeSystem = \'2.16.840.1.113883.6.1\')'"
 	* @generated
 	*/
 	boolean validateBarriersToPatientCareCode(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -72,7 +72,7 @@ public interface BarriersToPatientCare extends Observation {
 	* @param diagnostics The chain of diagnostics to which problems are to be appended.
 	* @param context The cache of context-specific information.
 	* <!-- end-model-doc -->
-	* @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and \r\nlet value : datatypes::CD = element.oclAsType(datatypes::CD) in \r\nvalue.codeSystem = \'2.16.840.1.113883.6.1\' and (value.code = \'LA17306-4\' or value.code = \'LA17307-2\' or value.code = \'LA17308-0\' or value.code = \'LA17309-8\' or value.code = \'LA17310-6\' or value.code = \'LA17311-4\' or value.code = \'LA17312-2\' or value.code = \'LA17313-0\' or value.code = \'LA17314-8\' or value.code = \'LA17315-5\' or value.code = \'LA17316-3\' or value.code = \'LA17317-1\' or value.code = \'LA17318-9\' or value.code = \'LA17711-5\' or value.code = \'LA6301-1\')))'"
+	* @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and \nlet value : datatypes::CD = element.oclAsType(datatypes::CD) in \nvalue.codeSystem = \'2.16.840.1.113883.6.1\' and (value.code = \'LA17306-4\' or value.code = \'LA17307-2\' or value.code = \'LA17308-0\' or value.code = \'LA17309-8\' or value.code = \'LA17310-6\' or value.code = \'LA17311-4\' or value.code = \'LA17312-2\' or value.code = \'LA17313-0\' or value.code = \'LA17314-8\' or value.code = \'LA17315-5\' or value.code = \'LA17316-3\' or value.code = \'LA17317-1\' or value.code = \'LA17318-9\' or value.code = \'LA17711-5\' or value.code = \'LA6301-1\')))'"
 	* @generated
 	*/
 	boolean validateBarriersToPatientCareValue(DiagnosticChain diagnostics, Map<Object, Object> context);

@@ -48,7 +48,7 @@ public interface VehicleOccupantSafetyEquipment extends Observation {
 	* @param diagnostics The chain of diagnostics to which problems are to be appended.
 	* @param context The cache of context-specific information.
 	* <!-- end-model-doc -->
-	* @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and \r\nlet value : datatypes::CD = self.code.oclAsType(datatypes::CD) in \r\nvalue.code = \'67499-4\' and value.codeSystem = \'2.16.840.1.113883.6.1\')'"
+	* @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and \nlet value : datatypes::CD = self.code.oclAsType(datatypes::CD) in \nvalue.code = \'67499-4\' and value.codeSystem = \'2.16.840.1.113883.6.1\')'"
 	* @generated
 	*/
 	boolean validateVehicleOccupantSafetyEquipmentCode(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -60,7 +60,7 @@ public interface VehicleOccupantSafetyEquipment extends Observation {
 	* @param diagnostics The chain of diagnostics to which problems are to be appended.
 	* @param context The cache of context-specific information.
 	* <!-- end-model-doc -->
-	* @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (not self.value->isEmpty() and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and \r\nlet value : datatypes::CD = element.oclAsType(datatypes::CD) in \r\nvalue.codeSystem = \'2.16.840.1.113883.6.1\' and (value.code = \'LA137-2\' or value.code = \'LA17375-9\' or value.code = \'LA17376-7\' or value.code = \'LA17377-5\' or value.code = \'LA17378-3\' or value.code = \'LA17379-1\' or value.code = \'LA17380-9\' or value.code = \'LA17382-5\' or value.code = \'LA46-8\' or value.code = \'LA9381-0\' or value.code = \'LA9391-9\' or value.code = \'LA9392-7\' or value.code = \'LA9393-5\')))'"
+	* @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (not self.value->isEmpty() and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and \nlet value : datatypes::CD = element.oclAsType(datatypes::CD) in \nvalue.codeSystem = \'2.16.840.1.113883.6.1\' and (value.code = \'LA137-2\' or value.code = \'LA17375-9\' or value.code = \'LA17376-7\' or value.code = \'LA17377-5\' or value.code = \'LA17378-3\' or value.code = \'LA17379-1\' or value.code = \'LA17380-9\' or value.code = \'LA17382-5\' or value.code = \'LA46-8\' or value.code = \'LA9381-0\' or value.code = \'LA9391-9\' or value.code = \'LA9392-7\' or value.code = \'LA9393-5\')))'"
 	* @generated
 	*/
 	boolean validateVehicleOccupantSafetyEquipmentValue(DiagnosticChain diagnostics, Map<Object, Object> context);
