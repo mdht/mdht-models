@@ -34,19 +34,20 @@
 
 
 <div class="section">
-<div class="p"><p class="lines"><em class="ph i">INLINE</em></p>
-</div>
-
 </div>
 
 
 
 <ol class="ol">
-<li class="li"><strong class="ph b">SHALL</strong> conform to <a class="xref" href="generated/PLUGINS_ROOT/org.openhealthtools.mdht.uml.cda.consol.doc/classes/SocialHistorySection.html">Consol Social History Section</a> template (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.22.2.17</tt>)</li>
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] templateId (  ) such that it <ol class="ol" type="a"><li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <strong class="ph b">@root</strong>="2.16.840.1.113883.10.20.22.2.17"</li>
+</ol>
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> conform to <a class="xref" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.consol.doc/classes/SocialHistorySection.html">Consol Social History Section</a> template (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.22.2.17</tt>)</li>
 
 <li class="li"><strong class="ph b">SHALL</strong> contain at least one [1..*] <tt class="ph tt"><strong class="ph b">entry</strong></tt>
 <ol class="ol" type="a">
-<li class="li">Contains exactly one [1..1] <a class="xref" href="SmokingStatusObservation.html" title="[Observation: templateId 2.16.840.1.113883.10.22.4.78]">Smoking Status Observation</a> (templateId: <tt class="ph tt">2.16.840.1.113883.10.22.4.78</tt>)</li>
+<li class="li">Contains exactly one [1..1] <a class="xref" href="SmokingStatusObservation.html" title="[Observation: templateId 2.16.840.1.113883.10.20.22.4.78]">Smoking Status Observation</a> (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.22.4.78</tt>)</li>
 </ol>
 </li>
 
@@ -59,25 +60,19 @@
 
 
 
-<pre class="pre codeblock">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
-&lt;section xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd"&gt;
-  &lt;templateId root="2.16.840.1.113883.10.20.22.2.17"/&gt;
-  &lt;templateId root="2.16.840.1.113883.10.20.22.2.17"/&gt;
-  &lt;id root="MDHT" extension="1908002886"/&gt;
-  &lt;code code="29762-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Social history"/&gt;
+<pre class="pre codeblock">&lt;section xmlns="urn:hl7-org:v3"&gt;
+  &lt;id root="MDHT" extension="1442059378"/&gt;
+  &lt;code code="1094956830"/&gt;
   &lt;title&gt;TEXT FOR TITLE&lt;/title&gt;
   &lt;text/&gt;
   &lt;entry&gt;
-    &lt;observation classCode="OBS" moodCode="EVN"&gt;
-      &lt;templateId root="2.16.840.1.113883.10.22.4.78"/&gt;
-      &lt;templateId root="2.16.840.1.113883.10.20.22.4.85"/&gt;
-      &lt;id root="MDHT" extension="1764850580"/&gt;
-      &lt;code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4" codeSystemName="HL7ActCode" displayName="Assertion"/&gt;
+    &lt;observation&gt;
+      &lt;id root="MDHT" extension="2029384929"/&gt;
+      &lt;code code="108178963"/&gt;
       &lt;text&gt;Text Value&lt;/text&gt;
-      &lt;statusCode code="completed"/&gt;
       &lt;effectiveTime&gt;
-        &lt;low value="2012"/&gt;
-        &lt;high value="2012"/&gt;
+        &lt;low value="2013"/&gt;
+        &lt;high value="2013"/&gt;
       &lt;/effectiveTime&gt;
     &lt;/observation&gt;
   &lt;/entry&gt;

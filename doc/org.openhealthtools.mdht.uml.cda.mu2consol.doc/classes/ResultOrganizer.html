@@ -30,6 +30,8 @@
 <div class="body"><p class="shortdesc">[Organizer: templateId <tt class="ph tt">2.16.840.1.113883.10.20.22.4.1</tt>]</p>
 
 <div class="section">
+<p class="p">Known Subclasses: <a class="xref" href="CognitiveStatusResultOrganizer.html" title="[Organizer: templateId 2.16.840.1.113883.10.20.22.4.75]">Cognitive Status Result Organizer</a>, <a class="xref" href="FunctionalStatusResultOrganizer.html" title="[Organizer: templateId 2.16.840.1.113883.10.20.22.4.66]">Functional Status Result Organizer</a></p>
+
 </div>
 
 
@@ -39,7 +41,11 @@
 
 
 <ol class="ol">
-<li class="li"><strong class="ph b">SHALL</strong> conform to <a class="xref" href="generated/PLUGINS_ROOT/org.openhealthtools.mdht.uml.cda.consol.doc/classes/ResultOrganizer.html">Consol Result Organizer</a> template (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.22.4.1</tt>)</li>
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] templateId (  ) such that it <ol class="ol" type="a"><li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <strong class="ph b">@root</strong>="2.16.840.1.113883.10.20.22.4.1"</li>
+</ol>
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> conform to <a class="xref" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.consol.doc/classes/ResultOrganizer.html">Consol Result Organizer</a> template (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.22.4.1</tt>)</li>
 
 <li class="li"><strong class="ph b">SHALL</strong> contain at least one [1..*] <tt class="ph tt"><strong class="ph b">component</strong></tt> (CONF:7124, CONF:14850)
 <ol class="ol" type="a">
@@ -56,27 +62,22 @@
 
 
 
-<pre class="pre codeblock">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
-&lt;organizer xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd" moodCode="EVN"&gt;
-  &lt;templateId root="2.16.840.1.113883.10.20.22.4.1"/&gt;
-  &lt;templateId root="2.16.840.1.113883.10.20.22.4.1"/&gt;
-  &lt;id root="MDHT" extension="1717354769"/&gt;
-  &lt;code code="1141813944"/&gt;
+<pre class="pre codeblock">&lt;organizer xmlns="urn:hl7-org:v3"&gt;
+  &lt;id root="MDHT" extension="1323642000"/&gt;
+  &lt;code code="1774961051"/&gt;
   &lt;statusCode code="completed"/&gt;
   &lt;effectiveTime&gt;
-    &lt;low value="2012"/&gt;
-    &lt;high value="2012"/&gt;
+    &lt;low value="2013"/&gt;
+    &lt;high value="2013"/&gt;
   &lt;/effectiveTime&gt;
   &lt;component&gt;
-    &lt;observation classCode="OBS" moodCode="EVN"&gt;
-      &lt;templateId root="2.16.840.1.113883.10.20.22.4.2"/&gt;
-      &lt;templateId root="2.16.840.1.113883.10.20.22.4.2"/&gt;
-      &lt;id root="MDHT" extension="1751512311"/&gt;
-      &lt;code code="1250876759"/&gt;
+    &lt;observation&gt;
+      &lt;id root="MDHT" extension="719633844"/&gt;
+      &lt;code code="653282184"/&gt;
       &lt;statusCode code="completed"/&gt;
       &lt;effectiveTime&gt;
-        &lt;low value="2012"/&gt;
-        &lt;high value="2012"/&gt;
+        &lt;low value="2013"/&gt;
+        &lt;high value="2013"/&gt;
       &lt;/effectiveTime&gt;
     &lt;/observation&gt;
   &lt;/component&gt;

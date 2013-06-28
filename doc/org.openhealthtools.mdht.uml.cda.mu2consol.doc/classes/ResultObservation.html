@@ -30,6 +30,8 @@
 <div class="body"><p class="shortdesc">[Observation: templateId <tt class="ph tt">2.16.840.1.113883.10.20.22.4.2</tt>]</p>
 
 <div class="section">
+<p class="p">Known Subclasses: <a class="xref" href="CognitiveStatusResultObservation.html" title="[Observation: templateId 2.16.840.1.113883.10.20.22.4.74]">Cognitive Status Result Observation</a>, <a class="xref" href="FunctionalStatusResultObservation.html" title="[Observation: templateId 2.16.840.1.113883.10.20.22.4.67]">Functional Status Result Observation</a></p>
+
 </div>
 
 
@@ -39,12 +41,16 @@
 
 
 <ol class="ol">
-<li class="li"><strong class="ph b">SHALL</strong> conform to <a class="xref" href="generated/PLUGINS_ROOT/org.openhealthtools.mdht.uml.cda.consol.doc/classes/ResultObservation.html">Consol Result Observation</a> template (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.22.4.2</tt>)</li>
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] templateId (  ) such that it <ol class="ol" type="a"><li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <strong class="ph b">@root</strong>="2.16.840.1.113883.10.20.22.4.2"</li>
+</ol>
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> conform to <a class="xref" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.consol.doc/classes/ResultObservation.html">Consol Result Observation</a> template (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.22.4.2</tt>)</li>
 
 <li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt> (CONF:7133)
 </li>
 
-<li class="li">The value for 'code' in a result observation <strong class="ph b">SHOULD</strong> be selected from LOINC (codeSystem 2.16.840.1.113883.6.1)</li>
+<li class="li">The value for 'code' in a result observation <strong class="ph b">SHALL</strong> be selected from LOINC (codeSystem 2.16.840.1.113883.6.1)</li>
 
 </ol>
 
@@ -55,21 +61,18 @@
 
 
 
-<pre class="pre codeblock">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
-&lt;observation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd" classCode="OBS" moodCode="EVN"&gt;
-  &lt;templateId root="2.16.840.1.113883.10.20.22.4.2"/&gt;
-  &lt;templateId root="2.16.840.1.113883.10.20.22.4.2"/&gt;
-  &lt;id root="MDHT" extension="535232899"/&gt;
-  &lt;code code="390375436"/&gt;
+<pre class="pre codeblock">&lt;observation xmlns="urn:hl7-org:v3"&gt;
+  &lt;id root="MDHT" extension="1835144694"/&gt;
+  &lt;code code="2066973421"/&gt;
   &lt;text&gt;Text Value&lt;/text&gt;
   &lt;statusCode code="completed"/&gt;
   &lt;effectiveTime&gt;
-    &lt;low value="2012"/&gt;
-    &lt;high value="2012"/&gt;
+    &lt;low value="2013"/&gt;
+    &lt;high value="2013"/&gt;
   &lt;/effectiveTime&gt;
-  &lt;interpretationCode code="1171812914"/&gt;
-  &lt;methodCode code="1872193308"/&gt;
-  &lt;targetSiteCode code="2108748224"/&gt;
+  &lt;interpretationCode code="1367938748"/&gt;
+  &lt;methodCode code="1343992256"/&gt;
+  &lt;targetSiteCode code="285626057"/&gt;
 &lt;/observation&gt;</pre>
 
 </div>

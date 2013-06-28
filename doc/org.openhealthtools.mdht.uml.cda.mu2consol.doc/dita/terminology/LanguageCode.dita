@@ -143,7 +143,7 @@
 <row><entry>ndo</entry><entry>LOINC</entry><entry>Ndonga</entry></row>
 <row><entry>nep</entry><entry>LOINC</entry><entry>Nepali</entry></row>
 <row><entry>nno</entry><entry>LOINC</entry><entry>Norwegian Nynorsk; Nynorsk, Norwegian</entry></row>
-<row><entry>nob</entry><entry>LOINC</entry><entry>Bokmål, Norwegian; Norwegian Bokmål</entry></row>
+<row><entry>nob</entry><entry>LOINC</entry><entry>BokmÃ¥l, Norwegian; Norwegian BokmÃ¥l</entry></row>
 <row><entry>nor</entry><entry>LOINC</entry><entry>Norwegian</entry></row>
 <row><entry>nya</entry><entry>LOINC</entry><entry>Chichewa; Chewa; Nyanja</entry></row>
 <row><entry>oci</entry><entry>LOINC</entry><entry>Occitan (post 1500)</entry></row>
@@ -199,7 +199,7 @@
 <row><entry>uzb</entry><entry>LOINC</entry><entry>Uzbek</entry></row>
 <row><entry>ven</entry><entry>LOINC</entry><entry>Venda</entry></row>
 <row><entry>vie</entry><entry>LOINC</entry><entry>Vietnamese</entry></row>
-<row><entry>vol</entry><entry>LOINC</entry><entry>Volapük</entry></row>
+<row><entry>vol</entry><entry>LOINC</entry><entry>VolapÃ¼k</entry></row>
 <row><entry>wln</entry><entry>LOINC</entry><entry>Walloon</entry></row>
 <row><entry>wol</entry><entry>LOINC</entry><entry>Wolof</entry></row>
 <row><entry>xho</entry><entry>LOINC</entry><entry>Xhosa</entry></row>

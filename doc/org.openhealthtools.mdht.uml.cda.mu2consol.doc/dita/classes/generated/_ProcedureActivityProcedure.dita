@@ -13,13 +13,14 @@
 <section id="description">
 </section>
 <ol id="conformance">
-<li><b>SHALL</b> conform to <xref format="html" href="PLUGINS_ROOT/org.openhealthtools.mdht.uml.cda.consol.doc/classes/ProcedureActivityProcedure.html">Consol Procedure Activity Procedure</xref> template (templateId: <tt>2.16.840.1.113883.10.20.22.4.14</tt>)</li>
+<li><b>SHALL</b> contain exactly one [1..1] templateId (  ) such that it <ol><li><b>SHALL</b> contain exactly one [1..1] <b>@root</b>="2.16.840.1.113883.10.20.22.4.14"</li></ol></li>
+<li><b>SHALL</b> conform to <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.consol.doc/classes/ProcedureActivityProcedure.html">Consol Procedure Activity Procedure</xref> template (templateId: <tt>2.16.840.1.113883.10.20.22.4.14</tt>)</li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:7656)
 </li>
-<li>'code' <b>SHOULD</b> be selected from SNOMED CT (codeSystem 2.16.840.1.113883.6.96) or CPT-4 (CodeSystem 2.16.840.1.113883.6.12)</li>
+<li>'code' <b>SHALL</b> be selected from SNOMED CT (codeSystem 2.16.840.1.113883.6.96) or CPT-4 (CodeSystem 2.16.840.1.113883.6.12)</li>
 </ol>
 <ol id="aggregate">
-<li><b>SHALL</b> conform to <xref format="html" href="PLUGINS_ROOT/org.openhealthtools.mdht.uml.cda.consol.doc/classes/ProcedureActivityProcedure.html">Consol Procedure Activity Procedure</xref> template (templateId: <tt>2.16.840.1.113883.10.20.22.4.14</tt>)</li>
+<li><b>SHALL</b> conform to <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.consol.doc/classes/ProcedureActivityProcedure.html">Consol Procedure Activity Procedure</xref> template (templateId: <tt>2.16.840.1.113883.10.20.22.4.14</tt>)</li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="PROC" </tt> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>) (CONF:7652)
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b></tt>, where the @code <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/MoodCodeEvnInt.dita">MoodCodeEvnInt</xref> 2.16.840.1.113883.11.20.9.18</tt><b> STATIC</b> 2011-04-03 (CONF:7653)
@@ -43,7 +44,7 @@
 <li><b>MAY</b> contain zero or more [0..*] <tt><b>participant</b></tt> (CONF:7765, CONF:7752, CONF:15912)
 <ol>
 <li>Contains exactly one [1..1] <xref href="../ServiceDeliveryLocation.dita">Service Delivery Location</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.32</tt>)</li></ol></li>
-<li><b>SHOULD</b> contain zero or more [0..*] <tt><b>performer</b></tt> (CONF:7718) <ol><li> Such performers <b>SHALL</b> contain exactly one [1..1] assignedEntity (CONF:7720)</li><li> Such performers assignedEntity <b>SHALL</b> contain at least one [1..*] id (CONF:7722)</li><li> Such performers assignedEntity <b>SHALL</b> contain exactly one [1..1] addr (CONF:7731)</li><li> Such performers assignedEntity <b>SHALL</b> contain exactly one [1..1] telecom (CONF:7732)</li><li> Such performers assignedEntity <b>SHOULD</b> contain zero or one [0..1] representedOrganization (CONF:7733)</li><li> Such performers representedOrganization, if present, <b>SHOULD</b> contain zero or more [0..*] id (CONF:7734)</li><li> Such performers representedOrganization, if present, <b>MAY</b> contain zero or more [0..*] name (CONF:7735)</li><li> Such performers representedOrganization, if present, <b>SHALL</b> contain exactly one [1..1] addr (CONF:7736)</li><li> Such performers representedOrganization, if present, <b>SHALL</b> contain exactly one [1..1] telecom (CONF:7737)</li></ol>
+<li><b>SHOULD</b> contain zero or more [0..*] <tt><b>performer</b></tt> (CONF:7718) <ol><li> Such performers <b>SHALL</b> contain exactly one [1..1] <tt><b>assignedEntity</b></tt> (CONF:7720) <ol><li> This assignedEntity <b>SHALL</b> contain at least one [1..*] <tt><b>id</b></tt> (CONF:7722)</li><li> This assignedEntity <b>SHALL</b> contain exactly one [1..1] <tt><b>addr</b></tt> (CONF:7731)</li><li> This assignedEntity <b>SHALL</b> contain exactly one [1..1] <tt><b>telecom</b></tt> (CONF:7732)</li><li> This assignedEntity <b>SHOULD</b> contain zero or one [0..1] <tt><b>representedOrganization</b></tt> (CONF:7733) <ol><li> This representedOrganization <b>SHOULD</b> contain zero or more [0..*] <tt><b>id</b></tt> (CONF:7734)</li><li> This representedOrganization <b>MAY</b> contain zero or more [0..*] <tt><b>name</b></tt> (CONF:7735)</li><li> This representedOrganization <b>SHALL</b> contain exactly one [1..1] <tt><b>telecom</b></tt> (CONF:7737)</li><li> This representedOrganization <b>SHALL</b> contain exactly one [1..1] <tt><b>addr</b></tt> (CONF:7736)</li></ol> </li></ol> </li></ol>
 </li>
 <li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> (CONF:7886, CONF:7887, CONF:15915)
 <ol>
@@ -72,24 +73,21 @@
 <li>participant with target entry Product Instance <b>SHALL</b> contain exactly one [1..1] @typeCode="DEV" Device (CodeSystem: 2.16.840.1.113883.5.1002 HL7ActRelationshipType) STATIC (CONF:7752)</li>
 <li>participant with target entry Service Delivery Location <b>SHALL</b> contain exactly one [1..1] @typeCode="LOC" Location (CodeSystem: 2.16.840.1.113883.5.1002 HL7ActRelationshipType) STATIC (CONF:7766)</li>
 <li>entryRelationship with target entry Instructions <b>SHALL</b> contain exactly one [1..1] @inversionInd="true" (CONF:7777)</li>
-<li>'code' <b>SHOULD</b> be selected from SNOMED CT (codeSystem 2.16.840.1.113883.6.96) or CPT-4 (CodeSystem 2.16.840.1.113883.6.12)</li>
+<li>'code' <b>SHALL</b> be selected from SNOMED CT (codeSystem 2.16.840.1.113883.6.96) or CPT-4 (CodeSystem 2.16.840.1.113883.6.12)</li>
 </ol>
-<section id="tableconformance"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="8" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><colspec colname="col2" colnum="2" /><colspec colname="col3" colnum="3" /><colspec colname="col4" colnum="4" /><colspec colname="col5" colnum="5" /><colspec colname="col6" colnum="6" /><colspec colname="col7" colnum="7" /><thead> <row><entry namest="col0" nameend="col7" >mu2consol::ProcedureActivityProcedure</entry>  </row>  <row><entry namest="col0" nameend="col7" >cda::procedure[cda:templateId/@root = 2.16.840.1.113883.10.20.22.4.14]/</entry>  </row>  <row><entry>Name</entry><entry>XPath</entry><entry>Cardinality</entry><entry>Severity</entry><entry>Nullable</entry><entry>Data Type</entry><entry>Conformance</entry><entry>Value(s)</entry></row></thead><tbody><row><entry>code</entry><entry>code</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>CD</entry><entry>CONF:7656</entry><entry> </entry></row> 
+<section id="tableconformance"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="8" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><colspec colname="col2" colnum="2" /><colspec colname="col3" colnum="3" /><colspec colname="col4" colnum="4" /><colspec colname="col5" colnum="5" /><colspec colname="col6" colnum="6" /><colspec colname="col7" colnum="7" /><thead> <row><entry namest="col0" nameend="col7" >mu2consol::ProcedureActivityProcedure</entry>  </row>  <row><entry namest="col0" nameend="col7" >cda::procedure[cda:templateId/@root = ]/</entry>  </row>  <row><entry>Name</entry><entry>XPath</entry><entry>Cardinality</entry><entry>Severity</entry><entry>Nullable</entry><entry>Data Type</entry><entry>Conformance</entry><entry>Value(s)</entry></row></thead><tbody><row><entry>code</entry><entry>code</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>CD</entry><entry>CONF:7656</entry><entry> </entry></row> 
 <row><entry>procedureActivityProcedure</entry><entry>procedureActivityProcedure</entry><entry>0..*</entry><entry>MAY</entry><entry>YES</entry><entry>ProcedureActivityProcedure</entry><entry>CONF:7895CONF:7896</entry><entry> </entry></row> 
 </tbody></tgroup></table></p></section>
-<codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
-<procedure xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd" classCode="PROC">
-  <templateId root="2.16.840.1.113883.10.20.22.4.14"/>
-  <templateId root="2.16.840.1.113883.10.20.22.4.14"/>
-  <id root="MDHT" extension="1016505782"/>
-  <code code="1368997271"/>
+<codeblock id="example"><![CDATA[<procedure xmlns="urn:hl7-org:v3">
+  <id root="MDHT" extension="999851853"/>
+  <code code="1099345716"/>
   <effectiveTime>
-    <low value="2012"/>
-    <high value="2012"/>
+    <low value="2013"/>
+    <high value="2013"/>
   </effectiveTime>
-  <priorityCode codeSystem="2.16.840.1.113883.5.7" codeSystemName="ActPriority"/>
-  <methodCode code="1702505955"/>
-  <targetSiteCode codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
+  <priorityCode code="1349060664"/>
+  <methodCode code="1282705053"/>
+  <targetSiteCode code="1597658181"/>
 </procedure>]]></codeblock>
 <section id="changes">
 </section>

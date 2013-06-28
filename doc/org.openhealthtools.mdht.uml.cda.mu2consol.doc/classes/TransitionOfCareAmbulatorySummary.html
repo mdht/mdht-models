@@ -43,17 +43,63 @@ MU2 170.314(b)(7) Export Summary  - For Ambulatory Care</em></p>
 
 
 <ol class="ol">
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] templateId (  ) such that it <ol class="ol" type="a"><li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <strong class="ph b">@root</strong>="2.16.840.1.113883.10.20.22.1.1"</li>
+</ol>
+</li>
+
 <li class="li"><strong class="ph b">SHALL</strong> conform to <a class="xref" href="SummaryOfCareRecord.html" title="[ClinicalDocument: templateId 2.16.840.1.113883.10.20.22.1.1]">Summary Of Care Record</a> template (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.22.1.1</tt>)</li>
 
 <li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">component</strong></tt>
 <ol class="ol" type="a">
-<li class="li">Contains exactly one [1..1] <a class="xref" href="generated/PLUGINS_ROOT/org.openhealthtools.mdht.uml.cda.consol.doc/classes/ReasonForReferralSection.html">Consol Reason For Referral Section</a> (templateId: <tt class="ph tt">1.3.6.1.4.1.19376.1.5.3.1.3.1</tt>)</li>
+<li class="li">Contains exactly one [1..1] <a class="xref" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.consol.doc/classes/MedicationsSection.html">Consol Medications Section</a> (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.22.2.1.1</tt>)</li>
 </ol>
 </li>
 
-<li class="li"><strong class="ph b">SHALL</strong> satisfy: responsibleParty</li>
+<li class="li"><strong class="ph b">SHALL</strong> have at least one documentationOf/serviceEvent/performer/assignedEntity including
+a documentationOf/serviceEvent/performer/assignedEntity/assignedPerson/name
+and documentationOf/serviceEvent/performer/assignedEntity/telecom
+and documentationOf/serviceEvent/performer/assignedEntity/addr
 
-<li class="li"><strong class="ph b">SHALL</strong> have one of Assessment (2.16.840.1.113883.10.20.22.2.8) or Assessment and Plan (2.16.840.1.113883.10.20.22.2.9) or Postoperative Diagnosis (2.16.840.1.113883.10.20.22.2.35)  or  Postprocedure Diagnosis (2.16.840.1.113883.10.20.22.2.36) or Encounters (entries required: 2.16.840.1.113883.10.20.22.2.22.1) or Problem (entries required: 2.16.840.1.113883.10.20.22.2.5.1)</li>
+OR at least one componentOf/encompassingEncounter/responsibleParty including
+a componentOf/encompassingEncounter/responsibleParty/assignedEntity/assignedPerson/name
+and componentOf/encompassingEncounter/responsibleParty/assignedEntity/telecom
+and componentOf/encompassingEncounter/responsibleParty/assignedEntity/addr
+
+OR at least one componentOf/encompassingEncounter/encounterParticipant including
+a componentOf/encompassingEncounter/encounterParticipant/assignedEntity/assignedPerson/name
+and componentOf/encompassingEncounter/encounterParticipant/assignedEntity/telecom
+and componentOf/encompassingEncounter/encounterParticipant/assignedEntity/addr</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> have one Reason for Referral Section (TemplateID = 1.3.6.1.4.1.19376.1.5.3.1.3.1)
+or Plan or Care Section (TemplateID = 2.16.840.1.113883.10.20.22.2.10)
+or Assessment and Plan Section (Template ID = 2.16.840.1.113883.10.20.22.2.9)</li>
+
+<li class="li">document provided does not satisfy part or all of the Encounter Diagnosis MU2 Data Requirement:
+The Assessment Section (TemplateID = 2.16.840.1.113883.10.20.22.2.8), if present, <strong class="ph b">SHALL</strong> have at least one Problem Observation Entry (TemplateID = 2.16.840.1.113883.10.20.22.4.4)
+or
+The Assessment And Plan Section (TemplateID = 2.16.840.1.113883.10.20.22.2.9), if present, <strong class="ph b">SHALL</strong> have at least one Problem Observation Entry (TemplateID = 
+
+2.16.840.1.113883.10.20.22.4.4)
+or
+The Postoperative Diagnosis section (TemplateID = 2.16.840.1.113883.10.20.22.2.35), if present, <strong class="ph b">SHALL</strong> have at least one Problem Observation Entry (TemplateID = 
+
+2.16.840.1.113883.10.20.22.4.4)
+or
+The Problem Section (entries required: TemplateID = 2.16.840.1.113883.10.20.22.2.5.1), if present, <strong class="ph b">SHALL</strong> have a Problem Concern Act Entry (TemplateID = 
+
+2.16.840.1.113883.10.20.22.4.3) or a Problem Observation Entry (TemplateID = 2.16.840.1.113883.10.20.22.4.4)
+or 
+The Hospital Admission Diagnosis Section (TemplateID = 2.16.840.1.113883.10.20.22.2.43), if present, <strong class="ph b">SHALL</strong> have a Hospital Admission Diagnosis Entry (TemplateID = 
+
+2.16.840.1.113883.10.20.22.4.34)
+or
+The Hospital Discharge Diagnosis Section (TemplateID = 2.16.840.1.113883.10.20.22.2.24), if present, <strong class="ph b">SHALL</strong> have a Hospital Discharge Diagnosis Entry (TemplateID = 
+
+2.16.840.1.113883.10.20.22.4.33)
+or
+The Encounters Section (entries required: TemplateID = 2.16.840.1.113883.10.20.22.2.22.1), if present, <strong class="ph b">SHALL</strong> have a Encounter Activities Entry (TemplateID = 
+
+2.16.840.1.113883.10.20.22.4.49) or a Encounter Diagnosis Entry (TemplateID = 2.16.840.1.113883.10.20.22.4.80)</li>
 
 </ol>
 
@@ -66,16 +112,13 @@ MU2 170.314(b)(7) Export Summary  - For Ambulatory Care</em></p>
 
 <pre class="pre codeblock">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
 &lt;ClinicalDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd"&gt;
-  &lt;realmCode code="US"/&gt;
   &lt;typeId root="2.16.840.1.113883.1.3"/&gt;
-  &lt;templateId root="2.16.840.1.113883.10.20.22.1.1"/&gt;
-  &lt;templateId root="2.16.840.1.113883.10.20.22.1.1"/&gt;
-  &lt;id root="MDHT" extension="1592600758"/&gt;
-  &lt;code code="823761260"/&gt;
+  &lt;id root="MDHT" extension="1912668293"/&gt;
+  &lt;code code="95483297"/&gt;
   &lt;title&gt;TEXT FOR TITLE&lt;/title&gt;
   &lt;effectiveTime/&gt;
-  &lt;confidentialityCode codeSystem="2.16.840.1.113883.5.25" codeSystemName="ConfidentialityCode"/&gt;
-  &lt;setId root="MDHT" extension="8b1b310a-c1c6-4144-a431-394d2a47515f"/&gt;
+  &lt;confidentialityCode code="2035453438"/&gt;
+  &lt;setId root="MDHT" extension="8ba92a01-5430-4ac1-a189-11754af8586c"/&gt;
   &lt;versionNumber value="1"/&gt;
   &lt;recordTarget&gt;
     &lt;typeId root="2.16.840.1.113883.1.3"/&gt;
