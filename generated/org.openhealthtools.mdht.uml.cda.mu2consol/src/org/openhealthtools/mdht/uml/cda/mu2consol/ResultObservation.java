@@ -62,9 +62,9 @@ public interface ResultObservation extends
 			Map<Object, Object> context);
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
 	public ResultObservation init();
 
 	/**

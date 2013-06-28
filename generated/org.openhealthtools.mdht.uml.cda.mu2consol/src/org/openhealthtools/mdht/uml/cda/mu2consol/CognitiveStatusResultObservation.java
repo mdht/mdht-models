@@ -24,10 +24,10 @@ import org.openhealthtools.mdht.emf.runtime.util.Initializer;
  */
 public interface CognitiveStatusResultObservation extends org.openhealthtools.mdht.uml.cda.consol.CognitiveStatusResultObservation, ResultObservation {
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public CognitiveStatusResultObservation init();
     /**
      * <!-- begin-user-doc -->

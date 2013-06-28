@@ -70,9 +70,9 @@ public interface SmokingStatusObservation extends TobaccoUse {
 			Map<Object, Object> context);
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
 	public SmokingStatusObservation init();
 
 	/**

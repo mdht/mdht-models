@@ -243,8 +243,10 @@ public class Mu2consolPackageImpl extends EPackageImpl implements
         // Register package validator
         EValidator.Registry.INSTANCE.put
             (theMu2consolPackage, 
-             new EValidator.Descriptor() {
-                 public EValidator getEValidator() {
+             new EValidator.Descriptor()
+             {
+                 public EValidator getEValidator()
+                 {
                      return Mu2consolValidator.INSTANCE;
                  }
              });
@@ -1254,9 +1256,10 @@ public class Mu2consolPackageImpl extends EPackageImpl implements
         addAnnotation
           (this, 
            source, 
-           new String[] {
+           new String[] 
+           {
              "initializers", "org.openhealthtools.mdht.uml.cda.mu2consol"
-           });                                                                                                                                                                                                                                                                                                                                                                           
+           });                                                                                                                                                                                                                                                                    
     }
 
 	/**
@@ -1271,150 +1274,171 @@ public class Mu2consolPackageImpl extends EPackageImpl implements
         addAnnotation
           (generalHeaderConstraintsEClass, 
            source, 
-           new String[] {
+           new String[] 
+           {
              "constraints.validation.error", "Mu2consolGeneralHeaderConstraintsTemplateId Mu2consolGeneralHeaderConstraintsCareTeamMembers Mu2consolGeneralHeaderConstraintsRecordTarget GeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationLanguageCodeP GeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationLanguageCode GeneralHeaderConstraintsRecordTargetPatientRolePatientEthnicGroupCode GeneralHeaderConstraintsRecordTargetPatientRolePatientEthnicGroupCodeP GeneralHeaderConstraintsRecordTargetPatientRolePatientRaceCode GeneralHeaderConstraintsRecordTargetPatientRolePatientRaceCodeP GeneralHeaderConstraintsRecordTargetPatientRolePatient GeneralHeaderConstraintsRecordTargetPatientRole",
              "templateId.root", "2.16.840.1.113883.10.20.22.1.1",
              "constraints.validation.query", "GeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationLanguageCodeP GeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationLanguageCode GeneralHeaderConstraintsRecordTargetPatientRolePatientEthnicGroupCode GeneralHeaderConstraintsRecordTargetPatientRolePatientEthnicGroupCodeP GeneralHeaderConstraintsRecordTargetPatientRolePatientRaceCode GeneralHeaderConstraintsRecordTargetPatientRolePatientRaceCodeP GeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunication GeneralHeaderConstraintsRecordTargetPatientRolePatient GeneralHeaderConstraintsRecordTargetPatientRole",
              "constraints.validation.dependOn.GeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationLanguageCode", "GeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationLanguageCodeP",
              "constraints.validation.warning", "GeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunication"
-           });                    
+           });                 
         addAnnotation
           (summaryOfCareRecordEClass, 
            source, 
-           new String[] {
+           new String[] 
+           {
              "constraints.validation.error", "SummaryOfCareRecordCarePlanning SummaryOfCareRecordVitalSigns SummaryOfCareRecordProblemSection SummaryOfCareRecordAllergiesSection SummaryOfCareRecordImmunizationsSection SummaryOfCareRecordSocialHistorySection SummaryOfCareRecordResultsSection SummaryOfCareRecordProceduresSection SummaryOfCareRecordFunctionalStatusSection"
-           });                                                               
+           });                                           
         addAnnotation
           (socialHistorySectionEClass, 
            source, 
-           new String[] {
+           new String[] 
+           {
              "constraints.validation.error", "Mu2consolSocialHistorySectionTemplateId Mu2consolSocialHistorySectionSmokingStatusObservation",
              "templateId.root", "2.16.840.1.113883.10.20.22.2.17"
-           });            
+           });          
         addAnnotation
           (smokingStatusObservationEClass, 
            source, 
-           new String[] {
+           new String[] 
+           {
              "constraints.validation.error", "SmokingStatusObservationTemplateId SmokingStatusObservationValue SmokingStatusObservationValueP",
              "templateId.root", "2.16.840.1.113883.10.20.22.4.78",
              "value.codeSystem", "2.16.840.1.113883.6.96",
              "value.codeSystemName", "SNOMEDCT",
              "constraints.validation.dependOn.SmokingStatusObservationValue", "SmokingStatusObservationValueP"
-           });              
+           });            
         addAnnotation
           (resultsSectionEClass, 
            source, 
-           new String[] {
+           new String[] 
+           {
              "constraints.validation.error", "Mu2consolResultsSectionTemplateId Mu2consolResultsSectionResultOrganizer",
              "templateId.root", "2.16.840.1.113883.10.20.22.2.3.1"
-           });            
+           });          
         addAnnotation
           (resultOrganizerEClass, 
            source, 
-           new String[] {
+           new String[] 
+           {
              "constraints.validation.error", "Mu2consolResultOrganizerTemplateId Mu2consolResultOrganizerResultObservation",
              "templateId.root", "2.16.840.1.113883.10.20.22.4.1"
-           });            
+           });          
         addAnnotation
           (resultObservationEClass, 
            source, 
-           new String[] {
+           new String[] 
+           {
              "constraints.validation.error", "Mu2consolResultObservationTemplateId Mu2consolResultObservationResultObservationCodeValue Mu2consolResultObservationCode",
              "templateId.root", "2.16.840.1.113883.10.20.22.4.2"
-           });              
+           });            
         addAnnotation
           (proceduresSectionEClass, 
            source, 
-           new String[] {
+           new String[] 
+           {
              "constraints.validation.error", "Mu2consolProceduresSectionTemplateId",
              "templateId.root", "2.16.840.1.113883.10.20.22.2.7.1",
              "constraints.validation.info", "Mu2consolProceduresSectionProcedureActivityProcedure"
-           });            
+           });          
         addAnnotation
           (procedureActivityProcedureEClass, 
            source, 
-           new String[] {
+           new String[] 
+           {
              "constraints.validation.error", "Mu2consolProcedureActivityProcedureTemplateId Mu2consolProcedureActivityProcedureCodeValue Mu2consolProcedureActivityProcedureCode",
              "templateId.root", "2.16.840.1.113883.10.20.22.4.14"
-           });              
+           });            
         addAnnotation
           (clinicalOfficeVisitSummaryEClass, 
            source, 
-           new String[] {
+           new String[] 
+           {
              "constraints.validation.error", "ClinicalOfficeVisitSummaryReasonforVisit ClinicalOfficeVisitSummaryCarePlanning ClinicalOfficeVisitSummaryDateOfvisit ClinicalOfficeVisitSummaryVisitLocation ClinicalOfficeVisitSummaryProviderNameAndContactInfo ClinicalOfficeVisitSummaryVitalSigns ClinicalOfficeVisitSummaryProblemSection ClinicalOfficeVisitSummaryMedicationsSection ClinicalOfficeVisitSummaryAllergiesSection ClinicalOfficeVisitSummaryResultsSection ClinicalOfficeVisitSummaryProceduresSection ClinicalOfficeVisitSummaryImmunizationsSection ClinicalOfficeVisitSummaryInstructionsSection ClinicalOfficeVisitSummarySocialHistorySection ClinicalOfficeVisitSummaryMedicationsAdministeredSection"
-           });                                                                                       
+           });                                                             
         addAnnotation
           (medicationsAdministeredSectionEClass, 
            source, 
-           new String[] {
+           new String[] 
+           {
              "constraints.validation.error", "Mu2consolMedicationsAdministeredSectionTemplateId Mu2consolMedicationsAdministeredSectionMedicationActivity",
              "templateId.root", "2.16.840.1.113883.10.20.22.2.38"
-           });            
+           });          
         addAnnotation
           (transitionOfCareAmbulatorySummaryEClass, 
            source, 
-           new String[] {
+           new String[] 
+           {
              "constraints.validation.error", "TransitionOfCareAmbulatorySummaryProviderNameAndContactInfo TransitionOfCareAmbulatorySummaryReasonForReferral TransitionOfCareAmbulatorySummaryEncounterDiagnoses TransitionOfCareAmbulatorySummaryMedicationsSection"
-           });                       
+           });                  
         addAnnotation
           (transitionOfCareInpatientSummaryEClass, 
            source, 
-           new String[] {
+           new String[] 
+           {
              "constraints.validation.error", "TransitionOfCareInpatientSummaryMedications TransitionOfCareInpatientSummaryEncounterDiagnoses TransitionOfCareInpatientSummaryHospitalDischargeInstructionsSection"
-           });                   
+           });               
         addAnnotation
           (viewDownloadTransmitSummaryEClass, 
            source, 
-           new String[] {
+           new String[] 
+           {
              "constraints.validation.error", "ViewDownloadTransmitSummaryCarePlanning ViewDownloadTransmitSummaryVitalSigns ViewDownloadTransmitSummaryAllergiesSection ViewDownloadTransmitSummaryProblemSection ViewDownloadTransmitSummaryProceduresSection ViewDownloadTransmitSummaryResultsSection ViewDownloadTransmitSummarySocialHistorySection"
-           });                                             
+           });                                
         addAnnotation
           (vdtInpatientSummaryEClass, 
            source, 
-           new String[] {
+           new String[] 
+           {
              "constraints.validation.error", "VDTInpatientSummaryAdmissionDate VDTInpatientSummaryDischargeDate VDTInpatientSummaryAdmissionDischargeLocation VDTInpatientSummaryMedications VDTInpatientSummaryReasonforHospitalization VDTInpatientSummaryHospitalDischargeInstructionsSection"
-           });                               
+           });                        
         addAnnotation
           (vdtAmbulatorySummaryEClass, 
            source, 
-           new String[] {
+           new String[] 
+           {
              "constraints.validation.error", "VDTAmbulatorySummaryProviderNameAndContactInfo VDTAmbulatorySummaryMedicationsSection"
-           });               
+           });            
         addAnnotation
           (functionalStatusSectionEClass, 
            source, 
-           new String[] {
+           new String[] 
+           {
              "constraints.validation.error", "Mu2consolFunctionalStatusSectionTemplateId",
              "templateId.root", "2.16.840.1.113883.10.20.22.2.14"
-           });              
+           });          
         addAnnotation
           (cognitiveStatusResultObservationEClass, 
            source, 
-           new String[] {
+           new String[] 
+           {
              "constraints.validation.error", "Mu2consolCognitiveStatusResultObservationTemplateId",
              "templateId.root", "2.16.840.1.113883.10.20.22.4.74"
            });      
         addAnnotation
           (cognitiveStatusResultOrganizerEClass, 
            source, 
-           new String[] {
+           new String[] 
+           {
              "constraints.validation.error", "Mu2consolCognitiveStatusResultOrganizerTemplateId",
              "templateId.root", "2.16.840.1.113883.10.20.22.4.75"
-           });        
+           });       
         addAnnotation
           (functionalStatusResultObservationEClass, 
            source, 
-           new String[] {
+           new String[] 
+           {
              "constraints.validation.error", "Mu2consolFunctionalStatusResultObservationTemplateId",
              "templateId.root", "2.16.840.1.113883.10.20.22.4.67"
            });      
         addAnnotation
           (functionalStatusResultOrganizerEClass, 
            source, 
-           new String[] {
+           new String[] 
+           {
              "constraints.validation.error", "Mu2consolFunctionalStatusResultOrganizerTemplateId",
              "templateId.root", "2.16.840.1.113883.10.20.22.4.66"
-           });   
+           });  
     }
 
 	/**
@@ -1430,12 +1454,13 @@ public class Mu2consolPackageImpl extends EPackageImpl implements
         addAnnotation
           (generalHeaderConstraintsEClass, 
            source, 
-           new String[] {
+           new String[] 
+           {
              "constraints.validation.error", "RecordTargetPatientRole GeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationLanguageCodeP GeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationLanguageCode GeneralHeaderConstraintsRecordTargetPatientRolePatientEthnicGroupCode GeneralHeaderConstraintsRecordTargetPatientRolePatientEthnicGroupCodeP GeneralHeaderConstraintsRecordTargetPatientRolePatientRaceCode GeneralHeaderConstraintsRecordTargetPatientRolePatientRaceCodeP GeneralHeaderConstraintsRecordTargetPatientRolePatient",
              "constraints.validation.query", "GeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationLanguageCodeP GeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationLanguageCode GeneralHeaderConstraintsRecordTargetPatientRolePatientEthnicGroupCode GeneralHeaderConstraintsRecordTargetPatientRolePatientEthnicGroupCodeP GeneralHeaderConstraintsRecordTargetPatientRolePatientRaceCode GeneralHeaderConstraintsRecordTargetPatientRolePatientRaceCodeP GeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunication GeneralHeaderConstraintsRecordTargetPatientRolePatient",
              "constraints.validation.dependOn.GeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationLanguageCode", "RecordTargetPatientRolePatientLanguageCommunicationLanguageCodeP",
              "constraints.validation.warning", "GeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunication"
-           });                                                                                                                                                                                                                                                                                                                                                                         
+           });                                                                                                                                                                                                                                                                  
     }
 
 	/**
@@ -1451,12 +1476,13 @@ public class Mu2consolPackageImpl extends EPackageImpl implements
         addAnnotation
           (generalHeaderConstraintsEClass, 
            source, 
-           new String[] {
+           new String[] 
+           {
              "constraints.validation.error", "PatientRolePatient GeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationLanguageCodeP GeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationLanguageCode GeneralHeaderConstraintsRecordTargetPatientRolePatientEthnicGroupCode GeneralHeaderConstraintsRecordTargetPatientRolePatientEthnicGroupCodeP GeneralHeaderConstraintsRecordTargetPatientRolePatientRaceCode GeneralHeaderConstraintsRecordTargetPatientRolePatientRaceCodeP",
              "constraints.validation.query", "GeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationLanguageCodeP GeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationLanguageCode GeneralHeaderConstraintsRecordTargetPatientRolePatientEthnicGroupCode GeneralHeaderConstraintsRecordTargetPatientRolePatientEthnicGroupCodeP GeneralHeaderConstraintsRecordTargetPatientRolePatientRaceCode GeneralHeaderConstraintsRecordTargetPatientRolePatientRaceCodeP GeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunication",
              "constraints.validation.dependOn.GeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationLanguageCode", "PatientRolePatientLanguageCommunicationLanguageCodeP",
              "constraints.validation.warning", "GeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunication"
-           });                                                                                                                                                                                                                                                                                                                                                                        
+           });                                                                                                                                                                                                                                                                 
     }
 
 	/**
@@ -1472,7 +1498,8 @@ public class Mu2consolPackageImpl extends EPackageImpl implements
         addAnnotation
           (generalHeaderConstraintsEClass, 
            source, 
-           new String[] {
+           new String[] 
+           {
              "ethnicGroupCode.codeSystem", "2.16.840.1.113883.6.238",
              "ethnicGroupCode.codeSystemName", "Race and Ethnicity - CDC",
              "constraints.validation.error", "PatientEthnicGroupCode PatientEthnicGroupCodeP PatientRaceCode PatientRaceCodeP GeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationLanguageCodeP GeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationLanguageCode",
@@ -1481,7 +1508,7 @@ public class Mu2consolPackageImpl extends EPackageImpl implements
              "constraints.validation.warning", "PatientLanguageCommunication",
              "constraints.validation.query", "GeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationLanguageCodeP GeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationLanguageCode",
              "constraints.validation.dependOn.GeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationLanguageCode", "PatientLanguageCommunicationLanguageCodeP"
-           });                                                                                                                                                                                                                                                                                                                                                                       
+           });                                                                                                                                                                                                                                                                
     }
 
 	/**
@@ -1494,10 +1521,11 @@ public class Mu2consolPackageImpl extends EPackageImpl implements
         addAnnotation
           (generalHeaderConstraintsEClass, 
            source, 
-           new String[] {
+           new String[] 
+           {
              "constraints.validation.error", "LanguageCommunicationLanguageCode LanguageCommunicationLanguageCodeP",
              "constraints.validation.dependOn.LanguageCommunicationLanguageCode", "LanguageCommunicationLanguageCodeP"
-           });                                                                                                                                                                                                                                                                                                                                                                      
+           });                                                                                                                                                                                                                                                               
     }
 
 	/**
@@ -1511,73 +1539,87 @@ public class Mu2consolPackageImpl extends EPackageImpl implements
         addAnnotation
           (generalHeaderConstraintsEClass, 
            source, 
-           new String[] {
-           });                                                                           
+           new String[] 
+           {
+           });                                                    
         addAnnotation
           (socialHistorySectionEClass, 
            source, 
-           new String[] {
-           });            
+           new String[] 
+           {
+           });          
         addAnnotation
           (smokingStatusObservationEClass, 
            source, 
-           new String[] {
-           });              
+           new String[] 
+           {
+           });            
         addAnnotation
           (resultsSectionEClass, 
            source, 
-           new String[] {
-           });            
+           new String[] 
+           {
+           });          
         addAnnotation
           (resultOrganizerEClass, 
            source, 
-           new String[] {
-           });            
+           new String[] 
+           {
+           });          
         addAnnotation
           (resultObservationEClass, 
            source, 
-           new String[] {
-           });              
+           new String[] 
+           {
+           });            
         addAnnotation
           (proceduresSectionEClass, 
            source, 
-           new String[] {
-           });            
+           new String[] 
+           {
+           });          
         addAnnotation
           (procedureActivityProcedureEClass, 
            source, 
-           new String[] {
-           });                                                                                                 
+           new String[] 
+           {
+           });                                                                     
         addAnnotation
           (medicationsAdministeredSectionEClass, 
            source, 
-           new String[] {
-           });                                                                                                                             
+           new String[] 
+           {
+           });                                                                                           
         addAnnotation
           (functionalStatusSectionEClass, 
            source, 
-           new String[] {
-           });              
+           new String[] 
+           {
+           });          
         addAnnotation
           (cognitiveStatusResultObservationEClass, 
            source, 
-           new String[] {
+           new String[] 
+           {
            });      
         addAnnotation
           (cognitiveStatusResultOrganizerEClass, 
            source, 
-           new String[] {
-           });        
+           new String[] 
+           {
+           });       
         addAnnotation
           (functionalStatusResultObservationEClass, 
            source, 
-           new String[] {
+           new String[] 
+           {
            });      
         addAnnotation
           (functionalStatusResultOrganizerEClass, 
            source, 
-           new String[] {
-           });  
+           new String[] 
+           {
+           }); 
     }
 
 } // Mu2consolPackageImpl
