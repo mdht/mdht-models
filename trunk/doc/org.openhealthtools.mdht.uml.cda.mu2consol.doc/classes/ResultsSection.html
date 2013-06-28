@@ -39,7 +39,11 @@
 
 
 <ol class="ol">
-<li class="li"><strong class="ph b">SHALL</strong> conform to <a class="xref" href="generated/PLUGINS_ROOT/org.openhealthtools.mdht.uml.cda.consol.doc/classes/ResultsSection.html">Consol Results Section</a> template (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.22.2.3.1</tt>)</li>
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] templateId (  ) such that it <ol class="ol" type="a"><li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <strong class="ph b">@root</strong>="2.16.840.1.113883.10.20.22.2.3.1"</li>
+</ol>
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> conform to <a class="xref" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.consol.doc/classes/ResultsSection.html">Consol Results Section</a> template (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.22.2.3.1</tt>)</li>
 
 <li class="li"><strong class="ph b">SHALL</strong> contain at least one [1..*] <tt class="ph tt"><strong class="ph b">entry</strong></tt> (CONF:7112, CONF:7113)
 <ol class="ol" type="a">
@@ -56,36 +60,28 @@
 
 
 
-<pre class="pre codeblock">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
-&lt;section xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd"&gt;
-  &lt;templateId root="2.16.840.1.113883.10.20.22.2.3.1"/&gt;
-  &lt;templateId root="2.16.840.1.113883.10.20.22.2.3"/&gt;
-  &lt;templateId root="2.16.840.1.113883.10.20.22.2.3.1"/&gt;
-  &lt;id root="MDHT" extension="2134747120"/&gt;
-  &lt;code code="30954-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Relevant diagnostic tests and/or laboratory data"/&gt;
+<pre class="pre codeblock">&lt;section xmlns="urn:hl7-org:v3"&gt;
+  &lt;id root="MDHT" extension="675851414"/&gt;
+  &lt;code code="1349311575"/&gt;
   &lt;title&gt;TEXT FOR TITLE&lt;/title&gt;
   &lt;text/&gt;
   &lt;entry&gt;
-    &lt;organizer moodCode="EVN"&gt;
-      &lt;templateId root="2.16.840.1.113883.10.20.22.4.1"/&gt;
-      &lt;templateId root="2.16.840.1.113883.10.20.22.4.1"/&gt;
-      &lt;id root="MDHT" extension="1099634379"/&gt;
-      &lt;code code="2009959523"/&gt;
+    &lt;organizer&gt;
+      &lt;id root="MDHT" extension="801173931"/&gt;
+      &lt;code code="428115733"/&gt;
       &lt;statusCode code="completed"/&gt;
       &lt;effectiveTime&gt;
-        &lt;low value="2012"/&gt;
-        &lt;high value="2012"/&gt;
+        &lt;low value="2013"/&gt;
+        &lt;high value="2013"/&gt;
       &lt;/effectiveTime&gt;
       &lt;component&gt;
-        &lt;observation classCode="OBS" moodCode="EVN"&gt;
-          &lt;templateId root="2.16.840.1.113883.10.20.22.4.2"/&gt;
-          &lt;templateId root="2.16.840.1.113883.10.20.22.4.2"/&gt;
-          &lt;id root="MDHT" extension="130637717"/&gt;
-          &lt;code code="2025716044"/&gt;
+        &lt;observation&gt;
+          &lt;id root="MDHT" extension="268353559"/&gt;
+          &lt;code code="1523233584"/&gt;
           &lt;text&gt;Text Value&lt;/text&gt;
           &lt;effectiveTime&gt;
-            &lt;low value="2012"/&gt;
-            &lt;high value="2012"/&gt;
+            &lt;low value="2013"/&gt;
+            &lt;high value="2013"/&gt;
           &lt;/effectiveTime&gt;
         &lt;/observation&gt;
       &lt;/component&gt;

@@ -42,9 +42,32 @@
 
 
 <ol class="ol">
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] templateId (  ) such that it <ol class="ol" type="a"><li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <strong class="ph b">@root</strong>="2.16.840.1.113883.10.20.22.1.1"</li>
+</ol>
+</li>
+
 <li class="li"><strong class="ph b">SHALL</strong> conform to <a class="xref" href="ViewDownloadTransmitSummary.html" title="[ClinicalDocument: templateId 2.16.840.1.113883.10.20.22.1.1]">View Download Transmit Summary</a> template (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.22.1.1</tt>)</li>
 
-<li class="li"><strong class="ph b">SHALL</strong> satisfy: Provider Name and Office Contact Information</li>
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">component</strong></tt>
+<ol class="ol" type="a">
+<li class="li">Contains exactly one [1..1] <a class="xref" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.consol.doc/classes/MedicationsSection.html">Consol Medications Section</a> (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.22.2.1.1</tt>)</li>
+</ol>
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> have at least one documentationOf/serviceEvent/performer/assignedEntity including
+a documentationOf/serviceEvent/performer/assignedEntity/assignedPerson/name
+and documentationOf/serviceEvent/performer/assignedEntity/telecom
+and documentationOf/serviceEvent/performer/assignedEntity/addr
+
+OR at least one componentOf/encompassingEncounter/responsibleParty including
+a componentOf/encompassingEncounter/responsibleParty/assignedEntity/assignedPerson/name
+and componentOf/encompassingEncounter/responsibleParty/assignedEntity/telecom
+and componentOf/encompassingEncounter/responsibleParty/assignedEntity/addr
+
+OR at least one componentOf/encompassingEncounter/encounterParticipant including
+a componentOf/encompassingEncounter/encounterParticipant/assignedEntity/assignedPerson/name
+and componentOf/encompassingEncounter/encounterParticipant/assignedEntity/telecom
+and componentOf/encompassingEncounter/encounterParticipant/assignedEntity/addr</li>
 
 </ol>
 
@@ -57,16 +80,13 @@
 
 <pre class="pre codeblock">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
 &lt;ClinicalDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd"&gt;
-  &lt;realmCode code="US"/&gt;
   &lt;typeId root="2.16.840.1.113883.1.3"/&gt;
-  &lt;templateId root="2.16.840.1.113883.10.20.22.1.1"/&gt;
-  &lt;templateId root="2.16.840.1.113883.10.20.22.1.1"/&gt;
-  &lt;id root="MDHT" extension="1286444760"/&gt;
-  &lt;code code="1010129707"/&gt;
+  &lt;id root="MDHT" extension="1163856673"/&gt;
+  &lt;code code="847988233"/&gt;
   &lt;title&gt;TEXT FOR TITLE&lt;/title&gt;
   &lt;effectiveTime/&gt;
-  &lt;confidentialityCode codeSystem="2.16.840.1.113883.5.25" codeSystemName="ConfidentialityCode"/&gt;
-  &lt;setId root="MDHT" extension="08d2eac2-20c8-44b6-bdbf-2a2914607811"/&gt;
+  &lt;confidentialityCode code="1780917930"/&gt;
+  &lt;setId root="MDHT" extension="fef496d5-79bc-403f-9e3a-1d8ab2596f84"/&gt;
   &lt;versionNumber value="1"/&gt;
   &lt;recordTarget&gt;
     &lt;typeId root="2.16.840.1.113883.1.3"/&gt;
@@ -78,7 +98,13 @@
     &lt;assignedAuthor/&gt;
   &lt;/author&gt;
   &lt;custodian/&gt;
-  &lt;component/&gt;
+  &lt;component&gt;
+    &lt;structuredBody&gt;
+      &lt;component&gt;
+        &lt;section/&gt;
+      &lt;/component&gt;
+    &lt;/structuredBody&gt;
+  &lt;/component&gt;
 &lt;/ClinicalDocument&gt;</pre>
 
 </div>

@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
 <map title="Package: mu2consol">
-<topicref href="AssessmentAndPlanSection.dita" type="topic" />
-<topicref href="AssessmentSection.dita" type="topic" />
 <topicref href="ClinicalOfficeVisitSummary.dita" type="topic" />
-<topicref href="EncounterActivities.dita" type="topic" />
-<topicref href="EncountersSection.dita" type="topic" />
+<topicref href="CognitiveStatusResultObservation.dita" type="topic" />
+<topicref href="CognitiveStatusResultOrganizer.dita" type="topic" />
+<topicref href="FunctionalStatusResultObservation.dita" type="topic" />
+<topicref href="FunctionalStatusResultOrganizer.dita" type="topic" />
+<topicref href="FunctionalStatusSection.dita" type="topic" />
 <topicref href="GeneralHeaderConstraints.dita" type="topic" />
-<topicref href="PlanOfCareSection.dita" type="topic" />
+<topicref href="MedicationsAdministeredSection.dita" type="topic" />
 <topicref href="ProcedureActivityProcedure.dita" type="topic" />
 <topicref href="ProceduresSection.dita" type="topic" />
 <topicref href="ResultObservation.dita" type="topic" />
