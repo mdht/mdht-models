@@ -28,7 +28,7 @@ import org.openhealthtools.mdht.uml.cda.Patient;
 import org.openhealthtools.mdht.uml.cda.PatientRole;
 import org.openhealthtools.mdht.uml.cda.Person;
 import org.openhealthtools.mdht.uml.cda.RecordTarget;
-import org.openhealthtools.mdht.uml.cda.emspcr.EMSBillingSection;
+import org.openhealthtools.mdht.uml.cda.emspcr.BillingSection;
 import org.openhealthtools.mdht.uml.cda.emspcr.EmspcrFactory;
 import org.openhealthtools.mdht.uml.cda.emspcr.EmspcrPackage;
 import org.openhealthtools.mdht.uml.cda.emspcr.PatientCareReport;
@@ -171,9 +171,9 @@ public class Examples {
 	private static Observation createBillingConditionObservation()
 	{
 		Observation billingConditionObservation = CDAFactory.eINSTANCE.createObservation();
-		EClassifier eet = EmspcrPackage.eINSTANCE.getEMSBillingSection();
+		EClassifier eet = EmspcrPackage.eINSTANCE.getBillingSection();
 	
-		EAnnotation annotation = eet.getEAnnotation("http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSBillingSectionEntryBillingCondition");
+		EAnnotation annotation = eet.getEAnnotation("http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrBillingSectionEntryBillingCondition");
 		if (annotation != null) {
 			CDAUtil.init(billingConditionObservation , annotation.getDetails().map());
 		}	
@@ -192,7 +192,7 @@ public class Examples {
 
 		initializeRecordTarget(patientCareReport);
 		
-		EMSBillingSection billingSection = EmspcrFactory.eINSTANCE.createEMSBillingSection().init();
+		BillingSection billingSection = EmspcrFactory.eINSTANCE.createBillingSection().init();
 
 		Observation billingConditionObservation = createBillingConditionObservation();
 		
