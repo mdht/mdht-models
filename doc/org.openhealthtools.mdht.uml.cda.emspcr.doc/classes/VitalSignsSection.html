@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="en-us" lang="en-us">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="copyright" content="(C) Copyright 2005"/>
+<meta name="DC.rights.owner" content="(C) Copyright 2005"/>
+<meta name="DC.Type" content="topic"/>
+<meta name="DC.Title" content="Vital Signs Section"/>
+<meta name="abstract" content="[Section: templateId 2.16.840.1.113883.17.3.10.1.23]"/>
+<meta name="description" content="[Section: templateId 2.16.840.1.113883.17.3.10.1.23]"/>
+<meta name="DC.Coverage" content="Section"/>
+<meta name="DC.Relation" scheme="URI" content="../content/SectionTemplates.html"/>
+<meta name="DC.Format" content="XHTML"/>
+<meta name="DC.Identifier" content="classId"/>
+<meta name="DC.Language" content="en-us"/>
+<link rel="stylesheet" type="text/css" href="../css/commonltr.css"/>
+<title>Vital Signs Section</title>
+</head>
+<body id="classId">
+<div>
+	<p><b>For Discussion and Demonstration Only</b> The Normative content for these specifications
+	may be found on the HL7, IHE, and HITSP web sites.</p>
+</div>
+
+<h1 class="title topictitle1">Vital Signs Section</h1>
+
+
+
+<div class="body"><p class="shortdesc">[Section: templateId <tt class="ph tt">2.16.840.1.113883.17.3.10.1.23</tt>]</p>
+
+<div class="section">
+</div>
+
+
+<div class="section">
+</div>
+
+
+
+<ol class="ol">
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] templateId (  ) such that it <ol class="ol" type="a"><li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <strong class="ph b">@root</strong>="2.16.840.1.113883.17.3.10.1.23"</li>
+</ol>
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> conform to <a class="xref" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.consol.doc/classes/VitalSignsSection.html">Consol Vital Signs Section</a> template (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.22.2.4.1</tt>)</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt><tt class="ph tt"><strong class="ph b">/@code</strong>="8716-3" </tt><em class="ph i">Vital Signs</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10252)
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">title</strong></tt> and <strong class="ph b">SHOULD</strong> equal "EMS Vital Signs" (CONF:10254)
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">text</strong></tt>
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">entry</strong></tt>
+<ol class="ol" type="a">
+<li class="li">Contains exactly one [1..1] <a class="xref" href="VitalSignsOrganizer.html" title="[Organizer: templateId 2.16.840.1.1133883.17.3.10.1.28]">Vital Signs Organizer</a> (templateId: <tt class="ph tt">2.16.840.1.1133883.17.3.10.1.28</tt>)</li>
+</ol>
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">entry</strong></tt>
+<ol class="ol" type="a">
+<li class="li">Contains exactly one [1..1] <a class="xref" href="PriorAidVitals.html" title="[Observation: templateId 2.16.840.1.1133883.17.3.10.1.29]">Prior Aid Vitals</a> (templateId: <tt class="ph tt">2.16.840.1.1133883.17.3.10.1.29</tt>)</li>
+</ol>
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">entry</strong></tt>
+<ol class="ol" type="a">
+<li class="li">Contains exactly one [1..1] <a class="xref" href="AdditionalVitalSignsOrganizer.html" title="[Organizer: templateId 2.16.840.1.1133883.17.3.10.1.30]">Additional Vital Signs Organizer</a> (templateId: <tt class="ph tt">2.16.840.1.1133883.17.3.10.1.30</tt>)</li>
+</ol>
+</li>
+
+</ol>
+
+
+<p class="p"> </p>
+
+<p class="p"><strong class="ph b">Vital Signs Section example</strong></p>
+
+
+
+<pre class="pre codeblock">&lt;section xmlns="urn:hl7-org:v3"&gt;
+  &lt;templateId root="2.16.840.1.113883.17.3.10.1.23"/&gt;
+  &lt;templateId root="2.16.840.1.113883.10.20.22.2.4"/&gt;
+  &lt;templateId root="2.16.840.1.113883.10.20.22.2.4.1"/&gt;
+  &lt;id root="MDHT" extension="905127911"/&gt;
+  &lt;code code="8716-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Vital Signs"/&gt;
+  &lt;title&gt;EMS Vital Signs&lt;/title&gt;
+  &lt;text/&gt;
+  &lt;entry&gt;
+    &lt;organizer classCode="CLUSTER" moodCode="EVN"&gt;
+      &lt;templateId root="2.16.840.1.1133883.17.3.10.1.28"/&gt;
+      &lt;templateId root="2.16.840.1.113883.10.20.22.4.26"/&gt;
+      &lt;id root="MDHT" extension="1684116596"/&gt;
+      &lt;code code="46680005" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT" displayName="Vital signs"/&gt;
+      &lt;statusCode code="completed"/&gt;
+      &lt;effectiveTime&gt;
+        &lt;low value="2013"/&gt;
+        &lt;high value="2013"/&gt;
+      &lt;/effectiveTime&gt;
+      &lt;component&gt;
+        &lt;observation/&gt;
+      &lt;/component&gt;
+      &lt;component&gt;
+        &lt;observation/&gt;
+      &lt;/component&gt;
+      &lt;component&gt;
+        &lt;observation/&gt;
+      &lt;/component&gt;
+      &lt;component&gt;
+        &lt;observation/&gt;
+      &lt;/component&gt;
+      &lt;component&gt;
+        &lt;observation/&gt;
+      &lt;/component&gt;
+      &lt;component&gt;
+        &lt;observation/&gt;
+      &lt;/component&gt;
+    &lt;/organizer&gt;
+  &lt;/entry&gt;
+  &lt;entry&gt;
+    &lt;observation moodCode="EVN"&gt;
+      &lt;templateId root="2.16.840.1.1133883.17.3.10.1.29"/&gt;
+      &lt;id root="MDHT" extension="1076501204"/&gt;
+      &lt;code code="67518-1" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Obtained prior to units EMS care"/&gt;
+      &lt;text&gt;Text Value&lt;/text&gt;
+      &lt;effectiveTime&gt;
+        &lt;low value="2013"/&gt;
+        &lt;high value="2013"/&gt;
+      &lt;/effectiveTime&gt;
+    &lt;/observation&gt;
+  &lt;/entry&gt;
+  &lt;entry&gt;
+    &lt;organizer moodCode="EVN"&gt;
+      &lt;templateId root="2.16.840.1.1133883.17.3.10.1.30"/&gt;
+      &lt;id root="MDHT" extension="484832683"/&gt;
+      &lt;code code="1573531089"/&gt;
+      &lt;statusCode code="completed"/&gt;
+      &lt;effectiveTime&gt;
+        &lt;low value="2013"/&gt;
+        &lt;high value="2013"/&gt;
+      &lt;/effectiveTime&gt;
+      &lt;component&gt;
+        &lt;observation moodCode="EVN"&gt;
+          &lt;templateId root="2.16.840.1.1133883.17.3.10.1.163"/&gt;
+          &lt;id root="MDHT" extension="2069942001"/&gt;
+          &lt;code code="67520-7" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Stroke scale overall interpretation"/&gt;
+          &lt;text&gt;Text Value&lt;/text&gt;
+          &lt;effectiveTime&gt;
+            &lt;low value="2013"/&gt;
+            &lt;high value="2013"/&gt;
+          &lt;/effectiveTime&gt;
+          &lt;methodCode codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/&gt;
+        &lt;/observation&gt;
+      &lt;/component&gt;
+      &lt;component&gt;
+        &lt;observation moodCode="EVN"&gt;
+          &lt;templateId root="2.16.840.1.1133883.17.3.10.1.164"/&gt;
+          &lt;id root="MDHT" extension="486615434"/&gt;
+          &lt;code code="56840-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Pain severity verbal numeric scale"/&gt;
+          &lt;text&gt;Text Value&lt;/text&gt;
+          &lt;effectiveTime&gt;
+            &lt;low value="2013"/&gt;
+            &lt;high value="2013"/&gt;
+          &lt;/effectiveTime&gt;
+        &lt;/observation&gt;
+      &lt;/component&gt;
+      &lt;component&gt;
+        &lt;observation moodCode="EVN"&gt;
+          &lt;templateId root="2.16.840.1.1133883.17.3.10.1.165"/&gt;
+          &lt;id root="MDHT" extension="1241695279"/&gt;
+          &lt;code code="67775-7" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Level of responsiveness"/&gt;
+          &lt;text&gt;Text Value&lt;/text&gt;
+          &lt;effectiveTime&gt;
+            &lt;low value="2013"/&gt;
+            &lt;high value="2013"/&gt;
+          &lt;/effectiveTime&gt;
+        &lt;/observation&gt;
+      &lt;/component&gt;
+      &lt;component&gt;
+        &lt;observation moodCode="EVN"&gt;
+          &lt;templateId root="2.16.840.1.1133883.17.3.10.1.166"/&gt;
+          &lt;id root="MDHT" extension="282467762"/&gt;
+          &lt;code code="2339-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Glucose"/&gt;
+          &lt;text&gt;Text Value&lt;/text&gt;
+          &lt;effectiveTime&gt;
+            &lt;low value="2013"/&gt;
+            &lt;high value="2013"/&gt;
+          &lt;/effectiveTime&gt;
+        &lt;/observation&gt;
+      &lt;/component&gt;
+      &lt;component&gt;
+        &lt;observation moodCode="EVN"&gt;
+          &lt;templateId root="2.16.840.1.1133883.17.3.10.1.167"/&gt;
+          &lt;id root="MDHT" extension="1996610699"/&gt;
+          &lt;code code="19911-7" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Diffusion capacity.carbon monoxide"/&gt;
+          &lt;text&gt;Text Value&lt;/text&gt;
+          &lt;effectiveTime&gt;
+            &lt;low value="2013"/&gt;
+            &lt;high value="2013"/&gt;
+          &lt;/effectiveTime&gt;
+        &lt;/observation&gt;
+      &lt;/component&gt;
+      &lt;component&gt;
+        &lt;observation moodCode="EVN"&gt;
+          &lt;templateId root="2.16.840.1.1133883.17.3.10.1.168"/&gt;
+          &lt;id root="MDHT" extension="1192605923"/&gt;
+          &lt;code code="19889-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Carbon dioxide/Gas.total.at end expiration"/&gt;
+          &lt;text&gt;Text Value&lt;/text&gt;
+          &lt;effectiveTime&gt;
+            &lt;low value="2013"/&gt;
+            &lt;high value="2013"/&gt;
+          &lt;/effectiveTime&gt;
+        &lt;/observation&gt;
+      &lt;/component&gt;
+      &lt;component&gt;
+        &lt;observation moodCode="EVN"&gt;
+          &lt;templateId root="2.16.840.1.1133883.17.3.10.1.169"/&gt;
+          &lt;id root="MDHT" extension="1636088772"/&gt;
+          &lt;code code="67519-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Cardiac rhythm"/&gt;
+          &lt;text&gt;Text Value&lt;/text&gt;
+          &lt;effectiveTime&gt;
+            &lt;low value="2013"/&gt;
+            &lt;high value="2013"/&gt;
+          &lt;/effectiveTime&gt;
+          &lt;methodCode codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/&gt;
+          &lt;participant/&gt;
+        &lt;/observation&gt;
+      &lt;/component&gt;
+      &lt;component&gt;
+        &lt;organizer&gt;
+          &lt;templateId root="2.16.840.1.1133883.17.3.10.1.170"/&gt;
+          &lt;id root="MDHT" extension="550524962"/&gt;
+          &lt;code code="442734055"/&gt;
+          &lt;statusCode code="completed"/&gt;
+          &lt;effectiveTime&gt;
+            &lt;low value="2013"/&gt;
+            &lt;high value="2013"/&gt;
+          &lt;/effectiveTime&gt;
+          &lt;component&gt;
+            &lt;observation moodCode="EVN"&gt;
+              &lt;templateId root="2.16.840.1.1133883.17.3.10.1.160"/&gt;
+              &lt;code code="9267-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Glasgow coma score.eye opening"/&gt;
+            &lt;/observation&gt;
+          &lt;/component&gt;
+          &lt;component&gt;
+            &lt;observation moodCode="EVN"&gt;
+              &lt;templateId root="2.16.840.1.1133883.17.3.10.1.176"/&gt;
+              &lt;code code="9268-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Glasgow coma score.motor"/&gt;
+            &lt;/observation&gt;
+          &lt;/component&gt;
+          &lt;component&gt;
+            &lt;observation moodCode="EVN"&gt;
+              &lt;templateId root="2.16.840.1.1133883.17.3.10.1.159"/&gt;
+              &lt;code code="55285-1" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Glasgow coma score special circumstances"/&gt;
+            &lt;/observation&gt;
+          &lt;/component&gt;
+          &lt;component&gt;
+            &lt;observation moodCode="EVN"&gt;
+              &lt;templateId root="2.16.840.1.1133883.17.3.10.1.158"/&gt;
+              &lt;code code="9269-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Glasgow coma score.total"/&gt;
+            &lt;/observation&gt;
+          &lt;/component&gt;
+          &lt;component&gt;
+            &lt;observation moodCode="EVN"&gt;
+              &lt;templateId root="2.16.840.1.1133883.17.3.10.1.162"/&gt;
+              &lt;code code="9270-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Glasgow coma score.verbal"/&gt;
+            &lt;/observation&gt;
+          &lt;/component&gt;
+        &lt;/organizer&gt;
+      &lt;/component&gt;
+    &lt;/organizer&gt;
+  &lt;/entry&gt;
+&lt;/section&gt;</pre>
+
+</div>
+
+<div class="related-links">
+<div class="familylinks">
+<div class="parentlink"><strong>Parent topic:</strong> <a class="link" href="../content/SectionTemplates.html">SECTION TEMPLATES</a></div>
+</div>
+</div>
+
+</body>
+</html>
