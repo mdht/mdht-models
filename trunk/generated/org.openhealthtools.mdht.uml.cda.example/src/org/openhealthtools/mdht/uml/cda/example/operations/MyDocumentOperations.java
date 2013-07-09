@@ -198,7 +198,7 @@ public class MyDocumentOperations extends GeneralHeaderConstraintsOperations {
 		if (GET_MY_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
-				ExamplePackage.Literals.MY_DOCUMENT, ExamplePackage.Literals.MY_DOCUMENT.getEAllOperations().get(293));
+				ExamplePackage.Literals.MY_DOCUMENT, ExamplePackage.Literals.MY_DOCUMENT.getEAllOperations().get(292));
 			try {
 				GET_MY_SECTION__EOCL_QRY = helper.createQuery(GET_MY_SECTION__EOCL_EXP);
 			} catch (ParserException pe) {
