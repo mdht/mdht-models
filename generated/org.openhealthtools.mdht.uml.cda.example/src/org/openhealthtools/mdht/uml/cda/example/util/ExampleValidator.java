@@ -324,6 +324,10 @@ public class ExampleValidator extends EObjectValidator {
 				myDocument, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsConfidentialityCodeP(
+				myDocument, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
 			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsConfidentialityCode(
 				myDocument, diagnostics, context);
 		}
@@ -768,7 +772,7 @@ public class ExampleValidator extends EObjectValidator {
 				myDocument, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthorAssignedAuthorHasAssignedPersonOrAssignedAuthoringDevice(
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthorAssignedAuthorHasOneAssignedPersonOrOneAssignedAuthoringDevice(
 				myDocument, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -793,14 +797,6 @@ public class ExampleValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthorAssignedAuthorTelecom(
-				myDocument, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthorAssignedAuthorAssignedAuthoringDevice(
-				myDocument, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthorAssignedAuthorAssignedPerson(
 				myDocument, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
