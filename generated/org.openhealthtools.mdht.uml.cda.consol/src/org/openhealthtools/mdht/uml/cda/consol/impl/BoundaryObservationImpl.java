@@ -33,74 +33,74 @@ import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
  */
 public class BoundaryObservationImpl extends ObservationImpl implements BoundaryObservation {
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	protected BoundaryObservationImpl() {
 		super();
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
 		return ConsolPackage.Literals.BOUNDARY_OBSERVATION;
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateBoundaryObservationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return BoundaryObservationOperations.validateBoundaryObservationTemplateId(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateBoundaryObservationClassCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return BoundaryObservationOperations.validateBoundaryObservationClassCode(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateBoundaryObservationCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return BoundaryObservationOperations.validateBoundaryObservationCode(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateBoundaryObservationMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return BoundaryObservationOperations.validateBoundaryObservationMoodCode(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateBoundaryObservationValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return BoundaryObservationOperations.validateBoundaryObservationValue(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public BoundaryObservation init() {
 		return Initializer.Util.init(this);
 	}

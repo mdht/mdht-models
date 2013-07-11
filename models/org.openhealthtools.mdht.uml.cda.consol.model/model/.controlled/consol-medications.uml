@@ -60,7 +60,7 @@ Medication timing is complex. This template requires that there be a substanceAd
         <language>Analysis</language>
         <language>OCL</language>
         <body>Medication Activity SHOULD include doseQuantity OR rateQuantity</body>
-        <body>self.doseQuantity->size() = 1 xor self.rateQuantity->size() = 1</body>
+        <body>self.doseQuantity->size() = 1 or self.rateQuantity->size() = 1</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_nSTKYEFiEeG2TLeVPbv7pg" name="textReference" constrainedElement="_2GHbgBSVEeGGzu7fmW9pXw">
@@ -1146,7 +1146,9 @@ The UDI should be sent in the participantRole/id.</body>
   <CDA:PropertyValidation xmi:id="_8mgKkB-yEeGKirKJsFylGA" severity="INFO" base_Property="_0gGEIB-yEeGKirKJsFylGA">
     <ruleId>CONF:7555</ruleId>
   </CDA:PropertyValidation>
-  <CDA:ConstraintValidation xmi:id="_VmSo8B-zEeGKirKJsFylGA" severity="WARNING" base_Constraint="_K_ZiwB-zEeGKirKJsFylGA"/>
+  <CDA:ConstraintValidation xmi:id="_VmSo8B-zEeGKirKJsFylGA" severity="WARNING" base_Constraint="_K_ZiwB-zEeGKirKJsFylGA">
+    <ruleId>CONF:7529</ruleId>
+  </CDA:ConstraintValidation>
   <CDA:EntryRelationship xmi:id="_XLpnwB-0EeGKirKJsFylGA" severity="INFO" base_Association="_2GjgZRSVEeGGzu7fmW9pXw">
     <ruleId>CONF:7552</ruleId>
     <ruleId>CONF:7544</ruleId>
