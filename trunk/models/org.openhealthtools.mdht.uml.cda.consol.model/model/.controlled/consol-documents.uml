@@ -1127,7 +1127,7 @@ In a CCD the encompassingEncounter may be used when documenting a specific encou
           <language>Analysis</language>
           <language>OCL</language>
           <body>Such participants, if present, SHALL have an associatedPerson or scopingOrganization element under participant/associatedEntity.</body>
-          <body>self.associatedEntity.associatedPerson.oclIsUndefined() xor self.associatedEntity.scopingOrganization.oclIsUndefined()</body>
+          <body>(not self.associatedEntity.associatedPerson.oclIsUndefined()) or (not self.associatedEntity.scopingOrganization.oclIsUndefined())</body>
         </specification>
       </ownedRule>
       <ownedRule xmi:id="_PAeEwDVaEeGIw7CntkyPQw" name="useINDRoleclassCodes" constrainedElement="_Zi4mACzHEeGMXrZ0DiQwGg">
@@ -1941,8 +1941,8 @@ The CCD is a core data set of the most relevant administrative, demographic, and
           <specification xmi:type="uml:OpaqueExpression" xmi:id="_be6oYEIREeGfG6GbxF_VQQ">
             <language>Analysis</language>
             <language>OCL</language>
-            <body>SHALL contain exactly one [1..1] assignedPerson or exactly one one [1..1]  representedOrganization.</body>
-            <body>(not self.assignedPerson.oclIsUndefined()) xor (not self.representedOrganization.oclIsUndefined())</body>
+            <body>SHALL contain exactly one [1..1] assignedPerson or exactly one [1..1] representedOrganization.</body>
+            <body>(not self.assignedPerson.oclIsUndefined()) or (not self.representedOrganization.oclIsUndefined())</body>
           </specification>
         </ownedRule>
         <ownedRule xmi:id="_iAmMsEIREeGfG6GbxF_VQQ" name="hasRepresentOrganization" constrainedElement="_Q-uAEEIREeGfG6GbxF_VQQ">
@@ -4433,7 +4433,9 @@ The Progress Note recommends use of a single document type code, 11506-3 &quot;S
   <CDA:TextValue xmi:id="_h1hgEECbEeGELr7uj3LK_Q" base_Property="_bPEr8EBYEeGXKr6TcG1UOQ">
     <ruleId>CONF:7622</ruleId>
   </CDA:TextValue>
-  <CDA:ConstraintValidation xmi:id="_5HI7EEEMEeGdmoWy_aLP0Q" base_Constraint="_hmeS4EBYEeGXKr6TcG1UOQ"/>
+  <CDA:ConstraintValidation xmi:id="_5HI7EEEMEeGdmoWy_aLP0Q" base_Constraint="_hmeS4EBYEeGXKr6TcG1UOQ">
+    <ruleId>CONF:7623</ruleId>
+  </CDA:ConstraintValidation>
   <CDA:ConstraintValidation xmi:id="_5i3NwEEMEeGdmoWy_aLP0Q" base_Constraint="_q28YsEBYEeGXKr6TcG1UOQ"/>
   <uml:Association xmi:id="_CR-nkj_cEeGnev0fONNFyw" memberEnd="_CR-nkD_cEeGnev0fONNFyw _CR-nkz_cEeGnev0fONNFyw">
     <ownedEnd xmi:id="_CR-nkz_cEeGnev0fONNFyw" type="_aemW4D_MEeGXieeKs7NJjA" association="_CR-nkj_cEeGnev0fONNFyw"/>
@@ -4950,7 +4952,9 @@ OIDs SHALL be no more than 64 characters in length..</body>
   <CDA:ConstraintValidation xmi:id="_DbxyYGjHEeGNoZ3kEkcY2A" base_Constraint="_90KpoGjGEeGNoZ3kEkcY2A">
     <ruleId>CONF:10028</ruleId>
   </CDA:ConstraintValidation>
-  <CDA:ConstraintValidation xmi:id="_EJAEwGjHEeGNoZ3kEkcY2A" base_Constraint="_AUOyoGjHEeGNoZ3kEkcY2A"/>
+  <CDA:ConstraintValidation xmi:id="_EJAEwGjHEeGNoZ3kEkcY2A" base_Constraint="_AUOyoGjHEeGNoZ3kEkcY2A">
+    <ruleId>CONF:10055</ruleId>
+  </CDA:ConstraintValidation>
   <CDA:ConstraintValidation xmi:id="_5k4JQGjHEeGNoZ3kEkcY2A" base_Constraint="_43rsEGjHEeGNoZ3kEkcY2A">
     <ruleId>CONF:10055</ruleId>
   </CDA:ConstraintValidation>
@@ -5046,7 +5050,9 @@ OIDs SHALL be no more than 64 characters in length..</body>
   <CDA:ConstraintValidation xmi:id="_z9MAEMUhEeGigaKyc-jgFA" severity="WARNING" base_Constraint="__ERYsDVXEeGIw7CntkyPQw"/>
   <CDA:ConstraintValidation xmi:id="_25YrcMUhEeGigaKyc-jgFA" severity="WARNING" base_Constraint="_UfqGwDVZEeGIw7CntkyPQw"/>
   <CDA:ConstraintValidation xmi:id="_5CaNcMUhEeGigaKyc-jgFA" severity="WARNING" base_Constraint="_JKUtkDVWEeGIw7CntkyPQw"/>
-  <CDA:ConstraintValidation xmi:id="__LnnYMUhEeGigaKyc-jgFA" base_Constraint="_CAPIoDVaEeGIw7CntkyPQw"/>
+  <CDA:ConstraintValidation xmi:id="__LnnYMUhEeGigaKyc-jgFA" base_Constraint="_CAPIoDVaEeGIw7CntkyPQw">
+    <ruleId>CONF:10006</ruleId>
+  </CDA:ConstraintValidation>
   <CDA:ConstraintValidation xmi:id="_AcjDwMUiEeGigaKyc-jgFA" base_Constraint="_PAeEwDVaEeGIw7CntkyPQw"/>
   <CDA:ConstraintValidation xmi:id="_sR3YYMa8EeGp28IjMvW3Ag" base_Constraint="_jXOYoMa8EeGp28IjMvW3Ag">
     <ruleId>CONF:5250</ruleId>
