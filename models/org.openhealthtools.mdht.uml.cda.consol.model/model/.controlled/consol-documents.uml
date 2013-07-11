@@ -1057,7 +1057,7 @@ In a CCD the encompassingEncounter may be used when documenting a specific encou
           <specification xmi:type="uml:OpaqueExpression" xmi:id="_JKUtkTVWEeGIw7CntkyPQw">
             <language>Analysis</language>
             <language>OCL</language>
-            <body>The id SHOULD include zero or one [0..1] id where id/@root =&quot;2.16.840.1.113883.4.6&quot; National Provider Identifier (CONF:9996)</body>
+            <body>The id SHOULD include zero or one [0..1] id where id/@root =&quot;2.16.840.1.113883.4.6&quot; National Provider Identifier</body>
             <body>self.id->exists( root='2.16.840.1.113883.4.6' )</body>
           </specification>
         </ownedRule>
