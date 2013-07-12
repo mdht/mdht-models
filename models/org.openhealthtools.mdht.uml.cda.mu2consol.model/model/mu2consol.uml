@@ -741,21 +741,9 @@ and componentOf/encompassingEncounter/encounterParticipant/assignedEntity/addr</
       </ownedAttribute>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_tAOdEAJuEeKIhvHOhwsFvA" name="ResultObservation">
-      <ownedRule xmi:id="_wYmuIAJuEeKIhvHOhwsFvA" name="resultObservationCodeValue" constrainedElement="_tAOdEAJuEeKIhvHOhwsFvA">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_zUi60AJuEeKIhvHOhwsFvA">
-          <language>Analysis</language>
-          <language>OCL</language>
-          <body>The value for 'code' in a result observation SHALL be selected from LOINC (codeSystem 2.16.840.1.113883.6.1)</body>
-          <body>(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies self.code.codeSystem = '2.16.840.1.113883.6.1'</body>
-        </specification>
-      </ownedRule>
       <generalization xmi:id="_tAPEIAJuEeKIhvHOhwsFvA">
         <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-results.uml#_2J1d4BSVEeGGzu7fmW9pXw"/>
       </generalization>
-      <ownedAttribute xmi:id="_ub5J0AJuEeKIhvHOhwsFvA" name="code" visibility="private">
-        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
-        <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-results.uml#_2J1d6hSVEeGGzu7fmW9pXw"/>
-      </ownedAttribute>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_--CGcAJuEeKIhvHOhwsFvA" name="ResultOrganizer">
       <generalization xmi:id="_--CGcQJuEeKIhvHOhwsFvA">
@@ -986,9 +974,6 @@ and componentOf/encompassingEncounter/encounterParticipant/assignedEntity/addr</
   <CDA:PropertyValidation xmi:id="__5bnwPwYEeGx4ophOjh2tw" base_Property="__5ZLgPwYEeGx4ophOjh2tw"/>
   <CDA:CDATemplate xmi:id="_JW-gQPwZEeGx4ophOjh2tw" base_Class="_xbrkwPwYEeGx4ophOjh2tw" templateId="2.16.840.1.113883.10.20.22.4.78"/>
   <CDA:CDATemplate xmi:id="_Mm36EP3iEeGmWJiRRvMaXA" base_Class="_v-6qsNkMEeGsqcJR8eqiMw" templateId="2.16.840.1.113883.10.20.22.1.1"/>
-  <CDA:PropertyValidation xmi:id="_ub5J0QJuEeKIhvHOhwsFvA" base_Property="_ub5J0AJuEeKIhvHOhwsFvA">
-    <ruleId>CONF:7133</ruleId>
-  </CDA:PropertyValidation>
   <CDA:CDATemplate xmi:id="_65PbUAJuEeKIhvHOhwsFvA" base_Class="_tAOdEAJuEeKIhvHOhwsFvA" templateId="2.16.840.1.113883.10.20.22.4.2"/>
   <CDA:AssociationValidation xmi:id="_AUBpAgJvEeKIhvHOhwsFvA" base_Association="_AUBpAAJvEeKIhvHOhwsFvA">
     <ruleId>CONF:7124</ruleId>
@@ -1000,7 +985,6 @@ and componentOf/encompassingEncounter/encounterParticipant/assignedEntity/addr</
     <ruleId>CONF:7113</ruleId>
   </CDA:AssociationValidation>
   <CDA:CDATemplate xmi:id="_Yt5W4AJvEeKIhvHOhwsFvA" base_Class="_R5ZkQAJvEeKIhvHOhwsFvA" templateId="2.16.840.1.113883.10.20.22.2.3.1"/>
-  <CDA:ConstraintValidation xmi:id="_twd_gAJ0EeKIhvHOhwsFvA" base_Constraint="_wYmuIAJuEeKIhvHOhwsFvA"/>
   <CDA:PropertyValidation xmi:id="_Myj9wAKlEeKIhvHOhwsFvA" base_Property="_MyjWsAKlEeKIhvHOhwsFvA">
     <ruleId>CONF:7656</ruleId>
   </CDA:PropertyValidation>
