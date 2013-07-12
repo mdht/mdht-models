@@ -33,92 +33,92 @@ import org.openhealthtools.mdht.uml.cda.mu2consol.operations.VDTInpatientSummary
 public class VDTInpatientSummaryImpl extends ViewDownloadTransmitSummaryImpl
 		implements VDTInpatientSummary {
 	/**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * @generated
-   */
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * @generated
+	 */
 	protected VDTInpatientSummaryImpl() {
-    super();
-  }
+		super();
+	}
 
 	/**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * @generated
-   */
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
-    return Mu2consolPackage.Literals.VDT_INPATIENT_SUMMARY;
-  }
+		return Mu2consolPackage.Literals.VDT_INPATIENT_SUMMARY;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validateVDTInpatientSummaryAdmissionDate(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return VDTInpatientSummaryOperations.validateVDTInpatientSummaryAdmissionDate(this, diagnostics, context);
-  }
+		return VDTInpatientSummaryOperations.validateVDTInpatientSummaryAdmissionDate(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validateVDTInpatientSummaryDischargeDate(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return VDTInpatientSummaryOperations.validateVDTInpatientSummaryDischargeDate(this, diagnostics, context);
-  }
+		return VDTInpatientSummaryOperations.validateVDTInpatientSummaryDischargeDate(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validateVDTInpatientSummaryAdmissionDischargeLocation(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return VDTInpatientSummaryOperations.validateVDTInpatientSummaryAdmissionDischargeLocation(this, diagnostics, context);
-  }
+		return VDTInpatientSummaryOperations.validateVDTInpatientSummaryAdmissionDischargeLocation(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validateVDTInpatientSummaryMedications(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return VDTInpatientSummaryOperations.validateVDTInpatientSummaryMedications(this, diagnostics, context);
-  }
+		return VDTInpatientSummaryOperations.validateVDTInpatientSummaryMedications(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validateVDTInpatientSummaryReasonforHospitalization(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return VDTInpatientSummaryOperations.validateVDTInpatientSummaryReasonforHospitalization(this, diagnostics, context);
-  }
+		return VDTInpatientSummaryOperations.validateVDTInpatientSummaryReasonforHospitalization(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * @generated
-   */
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * @generated
+	 */
 	public boolean validateVDTInpatientSummaryHospitalDischargeInstructionsSection(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return VDTInpatientSummaryOperations.validateVDTInpatientSummaryHospitalDischargeInstructionsSection(this, diagnostics, context);
-  }
+		return VDTInpatientSummaryOperations.validateVDTInpatientSummaryHospitalDischargeInstructionsSection(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * @generated
-   */
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * @generated
+	 */
 	public HospitalDischargeInstructionsSection getHospitalDischargeInstructionsSection() {
-    return VDTInpatientSummaryOperations.getHospitalDischargeInstructionsSection(this);
-  }
+		return VDTInpatientSummaryOperations.getHospitalDischargeInstructionsSection(this);
+	}
 
 	/**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * @generated
-   */
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public VDTInpatientSummary init() {
-      return Initializer.Util.init(this);
-  }
+	    return Initializer.Util.init(this);
+	}
 
 	/**
      * <!-- begin-user-doc --> <!-- end-user-doc -->

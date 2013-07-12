@@ -21,7 +21,6 @@ import org.openhealthtools.mdht.uml.cda.mu2consol.FunctionalStatusResultObservat
 import org.openhealthtools.mdht.uml.cda.mu2consol.Mu2consolPackage;
 
 import org.openhealthtools.mdht.uml.cda.mu2consol.operations.FunctionalStatusResultObservationOperations;
-import org.openhealthtools.mdht.uml.cda.mu2consol.operations.ResultObservationOperations;
 
 /**
  * <!-- begin-user-doc -->
@@ -34,61 +33,43 @@ import org.openhealthtools.mdht.uml.cda.mu2consol.operations.ResultObservationOp
  */
 public class FunctionalStatusResultObservationImpl extends org.openhealthtools.mdht.uml.cda.consol.impl.FunctionalStatusResultObservationImpl implements FunctionalStatusResultObservation {
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	protected FunctionalStatusResultObservationImpl() {
-    super();
-  }
+		super();
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
-    return Mu2consolPackage.Literals.FUNCTIONAL_STATUS_RESULT_OBSERVATION;
-  }
+		return Mu2consolPackage.Literals.FUNCTIONAL_STATUS_RESULT_OBSERVATION;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
-	public boolean validateMu2consolResultObservationResultObservationCodeValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return ResultObservationOperations.validateMu2consolResultObservationResultObservationCodeValue(this, diagnostics, context);
-  }
-
-	/**
-   * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-   * @generated
-   */
-	public boolean validateMu2consolResultObservationCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return ResultObservationOperations.validateMu2consolResultObservationCode(this, diagnostics, context);
-  }
-
-	/**
-   * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	public boolean validateResultObservationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return FunctionalStatusResultObservationOperations.validateResultObservationTemplateId(this, diagnostics, context);
-  }
+		return FunctionalStatusResultObservationOperations.validateResultObservationTemplateId(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	public FunctionalStatusResultObservation init() {
-      return Initializer.Util.init(this);
-  }
+	    return Initializer.Util.init(this);
+	}
     /**
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->

@@ -21,7 +21,6 @@ import org.openhealthtools.mdht.uml.cda.mu2consol.CognitiveStatusResultObservati
 import org.openhealthtools.mdht.uml.cda.mu2consol.Mu2consolPackage;
 
 import org.openhealthtools.mdht.uml.cda.mu2consol.operations.CognitiveStatusResultObservationOperations;
-import org.openhealthtools.mdht.uml.cda.mu2consol.operations.ResultObservationOperations;
 
 /**
  * <!-- begin-user-doc -->
@@ -34,61 +33,43 @@ import org.openhealthtools.mdht.uml.cda.mu2consol.operations.ResultObservationOp
  */
 public class CognitiveStatusResultObservationImpl extends org.openhealthtools.mdht.uml.cda.consol.impl.CognitiveStatusResultObservationImpl implements CognitiveStatusResultObservation {
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	protected CognitiveStatusResultObservationImpl() {
-    super();
-  }
+		super();
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
-    return Mu2consolPackage.Literals.COGNITIVE_STATUS_RESULT_OBSERVATION;
-  }
+		return Mu2consolPackage.Literals.COGNITIVE_STATUS_RESULT_OBSERVATION;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
-	public boolean validateMu2consolResultObservationResultObservationCodeValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return ResultObservationOperations.validateMu2consolResultObservationResultObservationCodeValue(this, diagnostics, context);
-  }
-
-	/**
-   * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-   * @generated
-   */
-	public boolean validateMu2consolResultObservationCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return ResultObservationOperations.validateMu2consolResultObservationCode(this, diagnostics, context);
-  }
-
-	/**
-   * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	public boolean validateResultObservationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return CognitiveStatusResultObservationOperations.validateResultObservationTemplateId(this, diagnostics, context);
-  }
+		return CognitiveStatusResultObservationOperations.validateResultObservationTemplateId(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	public CognitiveStatusResultObservation init() {
-      return Initializer.Util.init(this);
-  }
+	    return Initializer.Util.init(this);
+	}
     /**
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
