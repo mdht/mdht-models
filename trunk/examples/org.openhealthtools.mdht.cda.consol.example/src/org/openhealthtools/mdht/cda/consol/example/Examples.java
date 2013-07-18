@@ -11,6 +11,7 @@
 package org.openhealthtools.mdht.cda.consol.example;
 
 import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
 
 import org.eclipse.emf.common.util.Diagnostic;
 import org.openhealthtools.mdht.uml.cda.AssignedAuthor;
@@ -88,7 +89,7 @@ public class Examples {
 
 		PatientRole patientRole = CDAFactory.eINSTANCE.createPatientRole();
 
-		patientRole.getIds().add(DatatypesFactory.eINSTANCE.createII("123456789"));
+		patientRole.getIds().add(DatatypesFactory.eINSTANCE.createII("2.16.840.1.113883.4.1"));
 		AD ad = DatatypesFactory.eINSTANCE.createAD();
 		ad.addStreetAddressLine("101 Second Street");
 		ad.addCity("Somewhere");
@@ -274,6 +275,7 @@ public class Examples {
 
 		try {
 			CDAUtil.save(ccdDocument, System.out);
+			CDAUtil.save(ccdDocument, new FileOutputStream("output/" + "TestExample.xml"));
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
 		} catch (Exception e) {
