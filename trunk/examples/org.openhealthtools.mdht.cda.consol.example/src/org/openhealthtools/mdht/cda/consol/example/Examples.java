@@ -10,6 +10,8 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.cda.consol.example;
 
+import java.io.FileNotFoundException;
+
 import org.eclipse.emf.common.util.Diagnostic;
 import org.openhealthtools.mdht.uml.cda.AssignedAuthor;
 import org.openhealthtools.mdht.uml.cda.AssignedCustodian;
@@ -18,33 +20,37 @@ import org.openhealthtools.mdht.uml.cda.CDAFactory;
 import org.openhealthtools.mdht.uml.cda.Custodian;
 import org.openhealthtools.mdht.uml.cda.CustodianOrganization;
 import org.openhealthtools.mdht.uml.cda.DocumentationOf;
+import org.openhealthtools.mdht.uml.cda.EntryRelationship;
 import org.openhealthtools.mdht.uml.cda.InfrastructureRootTypeId;
 import org.openhealthtools.mdht.uml.cda.Organization;
 import org.openhealthtools.mdht.uml.cda.Patient;
 import org.openhealthtools.mdht.uml.cda.PatientRole;
 import org.openhealthtools.mdht.uml.cda.Person;
 import org.openhealthtools.mdht.uml.cda.RecordTarget;
-import org.openhealthtools.mdht.uml.cda.StrucDocText;
 import org.openhealthtools.mdht.uml.cda.consol.AllergiesSection;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolFactory;
 import org.openhealthtools.mdht.uml.cda.consol.ContinuityOfCareDocument;
-import org.openhealthtools.mdht.uml.cda.consol.MedicationsSection;
+import org.openhealthtools.mdht.uml.cda.consol.HealthStatusObservation;
+import org.openhealthtools.mdht.uml.cda.consol.ProblemConcernAct;
+import org.openhealthtools.mdht.uml.cda.consol.ProblemObservation;
 import org.openhealthtools.mdht.uml.cda.consol.ProblemSection;
-import org.openhealthtools.mdht.uml.cda.consol.ProceduresSection;
-import org.openhealthtools.mdht.uml.cda.consol.ResultsSection;
 import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 import org.openhealthtools.mdht.uml.cda.util.ValidationResult;
 import org.openhealthtools.mdht.uml.hl7.datatypes.AD;
 import org.openhealthtools.mdht.uml.hl7.datatypes.CE;
 import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
 import org.openhealthtools.mdht.uml.hl7.datatypes.II;
+import org.openhealthtools.mdht.uml.hl7.datatypes.IVL_TS;
+import org.openhealthtools.mdht.uml.hl7.datatypes.IVXB_TS;
 import org.openhealthtools.mdht.uml.hl7.datatypes.ON;
 import org.openhealthtools.mdht.uml.hl7.datatypes.PN;
 import org.openhealthtools.mdht.uml.hl7.datatypes.ST;
 import org.openhealthtools.mdht.uml.hl7.datatypes.TEL;
 import org.openhealthtools.mdht.uml.hl7.datatypes.TS;
+import org.openhealthtools.mdht.uml.hl7.vocab.x_ActRelationshipEntryRelationship;
 
 public class Examples {
+	public static final IVXB_TS TS_UNK = DatatypesFactory.eINSTANCE.createIVXB_TS();
 
 	private static void initializeRecordTarget(ContinuityOfCareDocument ccdDocument) {
 
@@ -167,12 +173,52 @@ public class Examples {
 
 	}
 
-	private static void inializeAllergiesSection(AllergiesSection allergiesSection) {
+	private static void fillAllergiesSection(AllergiesSection allergiesSection) {
 		allergiesSection.setTitle(DatatypesFactory.eINSTANCE.createST("Allergies Section"));
-		StrucDocText text = CDAFactory.eINSTANCE.createStrucDocText();
-		text.addText("Allergies Section Narrative");
-		allergiesSection.setText(text);
 
+		String narrative = "Allergies Section Narrative";
+		allergiesSection.createStrucDocText(narrative);
+
+	}
+
+	private static void fillProblemList(ProblemSection problemSection) {
+		problemSection.setTitle(DatatypesFactory.eINSTANCE.createST("Problem Section"));
+
+		String narrative = "<table border=\"1\" width=\"100%\">"
+				+ "<thead><tr><th>Problem</th><th>Date</th></tr></thead>"
+				+ "<tbody><tr><td><content ID=\"Problem1\">Pneumonia</content></td><td>1997</td>"
+				+ "</tr></tbody></table>";
+		problemSection.createStrucDocText(narrative);
+
+		ProblemConcernAct problemConcernAct = ConsolFactory.eINSTANCE.createProblemConcernAct().init();
+		problemSection.addAct(problemConcernAct);
+		problemConcernAct.getIds().add(DatatypesFactory.eINSTANCE.createII("ec8a6ff8-ed4b-4f7e-82c3-e98e58b45de7"));
+
+		IVL_TS effectiveTime = DatatypesFactory.eINSTANCE.createIVL_TS();
+		effectiveTime.setLow(TS_UNK);
+		problemConcernAct.setEffectiveTime(effectiveTime);
+
+		ProblemObservation problemObservation = ConsolFactory.eINSTANCE.createProblemObservation().init();
+		EntryRelationship entryRelationship = CDAFactory.eINSTANCE.createEntryRelationship();
+		entryRelationship.setTypeCode(x_ActRelationshipEntryRelationship.SUBJ);
+		entryRelationship.setObservation(problemObservation);
+		problemConcernAct.getEntryRelationships().add(entryRelationship);
+
+		problemObservation.getIds().add(DatatypesFactory.eINSTANCE.createII("ab1791b0-5c71-11db-b0de-0800200c9a66"));
+		problemObservation.setCode(DatatypesFactory.eINSTANCE.createCD(
+			"64572001", "2.16.840.1.113883.6.96", "SNOMED-CT", "Condition"));
+		problemObservation.getValues().add(
+			DatatypesFactory.eINSTANCE.createCD("233604007", "2.16.840.1.113883.6.96", "SNOMED-CT", "Pneumonia"));
+		effectiveTime = DatatypesFactory.eINSTANCE.createIVL_TS("199701", null);
+		effectiveTime.setHigh(TS_UNK);
+		problemObservation.setEffectiveTime(effectiveTime);
+
+		HealthStatusObservation healthStatus = ConsolFactory.eINSTANCE.createHealthStatusObservation().init();
+		problemObservation.addObservation(healthStatus);
+		CE healthStatusValue = DatatypesFactory.eINSTANCE.createCE(
+			"xyz", "2.16.840.1.113883.1.11.20.12", "ProblemHealthStatusCode", null);
+		healthStatusValue.setCodeSystemVersion("20061017");
+		healthStatus.getValues().add(healthStatusValue);
 	}
 
 	public static void createCCD() {
@@ -187,23 +233,21 @@ public class Examples {
 		initializeRecordTarget(ccdDocument);
 
 		AllergiesSection allergiesSection = ConsolFactory.eINSTANCE.createAllergiesSection().init();
-
-		inializeAllergiesSection(allergiesSection);
-
+		fillAllergiesSection(allergiesSection);
 		ccdDocument.addSection(allergiesSection);
 
-		MedicationsSection medicationsSection = ConsolFactory.eINSTANCE.createMedicationsSection().init();
+		// MedicationsSection medicationsSection = ConsolFactory.eINSTANCE.createMedicationsSection().init();
+		// ccdDocument.addSection(medicationsSection);
 
-		ccdDocument.addSection(medicationsSection);
 		ProblemSection problemSection = ConsolFactory.eINSTANCE.createProblemSection().init();
-
+		fillProblemList(problemSection);
 		ccdDocument.addSection(problemSection);
-		ProceduresSection proceduresSection = ConsolFactory.eINSTANCE.createProceduresSection().init();
 
-		ccdDocument.addSection(proceduresSection);
-		ResultsSection ResultsSection = ConsolFactory.eINSTANCE.createResultsSection().init();
+		// ProceduresSection proceduresSection = ConsolFactory.eINSTANCE.createProceduresSection().init();
+		// ccdDocument.addSection(proceduresSection);
 
-		ccdDocument.addSection(ResultsSection);
+		// ResultsSection ResultsSection = ConsolFactory.eINSTANCE.createResultsSection().init();
+		// ccdDocument.addSection(ResultsSection);
 
 		// create a validation result object to collect diagnostics produced during validation
 		ValidationResult result = new ValidationResult();
@@ -226,6 +270,14 @@ public class Examples {
 			System.out.println("Document is valid");
 		} else {
 			System.out.println("Document is invalid");
+		}
+
+		try {
+			CDAUtil.save(ccdDocument, System.out);
+		} catch (FileNotFoundException e) {
+			e.printStackTrace();
+		} catch (Exception e) {
+			e.printStackTrace();
 		}
 	}
 
