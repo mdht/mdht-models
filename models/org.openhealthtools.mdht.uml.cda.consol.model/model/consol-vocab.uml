@@ -1267,7 +1267,7 @@ http://www.fda.gov/ForIndustry/DataStandards/StructuredProductLabeling/ucm162523
   <term:ValueSetVersion xmi:id="_2MRG0BSVEeGGzu7fmW9pXw" identifier="2.16.840.1.114222.4.11.934" version="7" fullName="Vaccines administered (CVX)" definition="Vaccine Name Keyword: Clinical Vaccines, Vaccine Names" revisionDate="10/22/2008" base_Enumeration="_2MQfxBSVEeGGzu7fmW9pXw">
     <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_dk7ugKDqEd-dVeaMP0XXQw"/>
   </term:ValueSetVersion>
-  <term:ValueSetVersion xmi:id="_2O3u9BSVEeGGzu7fmW9pXw" identifier="2.16.840.1.113883.3.88.12.80.62" version="1" fullName="Vital Sign Result Value Set" source="HITSP" definition="This identifies the vital sign result type" effectiveDate="20081218" releaseDate="20081218" revisionDate="07/23/2009" base_Enumeration="_2O3u6RSVEeGGzu7fmW9pXw">
+  <term:ValueSetVersion xmi:id="_2O3u9BSVEeGGzu7fmW9pXw" identifier="2.16.840.1.113883.3.88.12.80.62" version="1" fullName="Vital Sign Result Value Set" source="HITSP" definition="This identifies the vital sign result type" effectiveDate="20081218" releaseDate="20081218" revisionDate="07/23/2009" binding="Dynamic" base_Enumeration="_2O3u6RSVEeGGzu7fmW9pXw">
     <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
   </term:ValueSetVersion>
   <term:ValueSetCode xmi:id="_2O3u9RSVEeGGzu7fmW9pXw" conceptName="Body temperature" usageNote="LOINC" base_EnumerationLiteral="_2O3u6hSVEeGGzu7fmW9pXw"/>
@@ -1520,7 +1520,7 @@ http://www.fda.gov/ForIndustry/DataStandards/StructuredProductLabeling/ucm162523
   <term:ValueSetCode xmi:id="_zx-Q8GiPEeGYO5jeo5rr2w" conceptName="step sibling" usageNote="RoleCode" base_EnumerationLiteral="_Mrd-YWiJEeGjoNbQEEZQtw"/>
   <term:ValueSetCode xmi:id="_0q-VgGiPEeGYO5jeo5rr2w" conceptName="uncle" usageNote="RoleCode" base_EnumerationLiteral="_Mrd-YmiJEeGjoNbQEEZQtw"/>
   <term:ValueSetCode xmi:id="_1u9iEGiPEeGYO5jeo5rr2w" conceptName="unrelated friend" usageNote="RoleCode" base_EnumerationLiteral="_Mrd-Y2iJEeGjoNbQEEZQtw"/>
-  <term:ValueSetVersion xmi:id="_7bYRUGiaEeGYO5jeo5rr2w" identifier="2.16.840.1.113883.1.11.19717" version="1" fullName="No Immunization Reason Value Set" source="" definition="This identifies the reason why the immunization did not occur" revisionDate="07/23/2009" base_Enumeration="_4WPsYGiaEeGYO5jeo5rr2w">
+  <term:ValueSetVersion xmi:id="_7bYRUGiaEeGYO5jeo5rr2w" identifier="2.16.840.1.113883.1.11.19717" version="1" fullName="No Immunization Reason Value Set" source="" definition="This identifies the reason why the immunization did not occur" revisionDate="07/23/2009" binding="Dynamic" base_Enumeration="_4WPsYGiaEeGYO5jeo5rr2w">
     <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_dWuTYaDqEd-dVeaMP0XXQw"/>
   </term:ValueSetVersion>
   <term:ValueSetCode xmi:id="_94NgIGiaEeGYO5jeo5rr2w" conceptName="Immunity" base_EnumerationLiteral="_4WPsYWiaEeGYO5jeo5rr2w"/>

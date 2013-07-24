@@ -158,7 +158,6 @@ public class HistoryAndPhysicalNoteOperations extends GeneralHeaderConstraintsOp
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * (self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::PlanOfCareSection)) and  self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::AssessmentSection))) xor self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::AssessmentAndPlanSection))
 	 * @param historyAndPhysicalNote The receiving '<em><b>History And Physical Note</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -220,7 +219,6 @@ public class HistoryAndPhysicalNoteOperations extends GeneralHeaderConstraintsOp
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * (self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::PlanOfCareSection)) or  self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::AssessmentSection))) xor self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::AssessmentAndPlanSection))
 	 * @param historyAndPhysicalNote The receiving '<em><b>History And Physical Note</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -282,7 +280,6 @@ public class HistoryAndPhysicalNoteOperations extends GeneralHeaderConstraintsOp
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * (self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ChiefComplaintSection)) and  self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ReasonForVisitSection))) xor self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ChiefComplaintAndReasonForVisitSection))
 	 * @param historyAndPhysicalNote The receiving '<em><b>History And Physical Note</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -344,7 +341,6 @@ public class HistoryAndPhysicalNoteOperations extends GeneralHeaderConstraintsOp
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * (self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ChiefComplaintSection)) or  self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ReasonForVisitSection))) xor self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ChiefComplaintAndReasonForVisitSection))
 	 * @param historyAndPhysicalNote The receiving '<em><b>History And Physical Note</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -406,7 +402,6 @@ public class HistoryAndPhysicalNoteOperations extends GeneralHeaderConstraintsOp
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.1.3')
 	 * @param historyAndPhysicalNote The receiving '<em><b>History And Physical Note</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -466,7 +461,6 @@ public class HistoryAndPhysicalNoteOperations extends GeneralHeaderConstraintsOp
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * (self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined())
 	 * @param historyAndPhysicalNote The receiving '<em><b>History And Physical Note</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -540,9 +534,6 @@ public class HistoryAndPhysicalNoteOperations extends GeneralHeaderConstraintsOp
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * (self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and 
-	 * let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in 
-	 * value.codeSystem = '2.16.840.1.113883.6.1' and (value.code = '34117-2' or value.code = '11492-6' or value.code = '28626-0' or value.code = '34774-0' or value.code = '34115-6' or value.code = '34116-4' or value.code = '34095-0' or value.code = '34096-8' or value.code = '51849-8' or value.code = '47039-3' or value.code = '34763-3' or value.code = '34094-3' or value.code = '34138-8'))
 	 * @param historyAndPhysicalNote The receiving '<em><b>History And Physical Note</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -593,7 +584,7 @@ public class HistoryAndPhysicalNoteOperations extends GeneralHeaderConstraintsOp
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_HISTORY_AND_PHYSICAL_NOTE_IN_FULFILLMENT_OF__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.inFulfillmentOf->exists(inFulfillmentOf : cda::InFulfillmentOf | not inFulfillmentOf.oclIsUndefined() and inFulfillmentOf.oclIsKindOf(rim::ActRelationship))";
+	protected static final String VALIDATE_HISTORY_AND_PHYSICAL_NOTE_IN_FULFILLMENT_OF__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.inFulfillmentOf->one(inFulfillmentOf : cda::InFulfillmentOf | not inFulfillmentOf.oclIsUndefined() and inFulfillmentOf.oclIsKindOf(rim::ActRelationship))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateHistoryAndPhysicalNoteInFulfillmentOf(HistoryAndPhysicalNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate History And Physical Note In Fulfillment Of</em>}' invariant operation.
@@ -610,7 +601,6 @@ public class HistoryAndPhysicalNoteOperations extends GeneralHeaderConstraintsOp
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.inFulfillmentOf->exists(inFulfillmentOf : cda::InFulfillmentOf | not inFulfillmentOf.oclIsUndefined() and inFulfillmentOf.oclIsKindOf(rim::ActRelationship))
 	 * @param historyAndPhysicalNote The receiving '<em><b>History And Physical Note</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -670,7 +660,6 @@ public class HistoryAndPhysicalNoteOperations extends GeneralHeaderConstraintsOp
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.componentOf->one(componentOf : cda::Component1 | not componentOf.oclIsUndefined() and componentOf.oclIsKindOf(cda::Component1))
 	 * @param historyAndPhysicalNote The receiving '<em><b>History And Physical Note</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -730,7 +719,6 @@ public class HistoryAndPhysicalNoteOperations extends GeneralHeaderConstraintsOp
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::AllergiesSectionEntriesOptional))
 	 * @param historyAndPhysicalNote The receiving '<em><b>History And Physical Note</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -792,7 +780,6 @@ public class HistoryAndPhysicalNoteOperations extends GeneralHeaderConstraintsOp
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::AssessmentSection))
 	 * @param historyAndPhysicalNote The receiving '<em><b>History And Physical Note</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -852,7 +839,6 @@ public class HistoryAndPhysicalNoteOperations extends GeneralHeaderConstraintsOp
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::PlanOfCareSection))
 	 * @param historyAndPhysicalNote The receiving '<em><b>History And Physical Note</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -913,7 +899,6 @@ public class HistoryAndPhysicalNoteOperations extends GeneralHeaderConstraintsOp
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::AssessmentAndPlanSection))
 	 * @param historyAndPhysicalNote The receiving '<em><b>History And Physical Note</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -974,7 +959,6 @@ public class HistoryAndPhysicalNoteOperations extends GeneralHeaderConstraintsOp
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ChiefComplaintSection))
 	 * @param historyAndPhysicalNote The receiving '<em><b>History And Physical Note</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -1035,7 +1019,6 @@ public class HistoryAndPhysicalNoteOperations extends GeneralHeaderConstraintsOp
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ChiefComplaintAndReasonForVisitSection))
 	 * @param historyAndPhysicalNote The receiving '<em><b>History And Physical Note</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -1097,7 +1080,6 @@ public class HistoryAndPhysicalNoteOperations extends GeneralHeaderConstraintsOp
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::FamilyHistorySection))
 	 * @param historyAndPhysicalNote The receiving '<em><b>History And Physical Note</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -1158,7 +1140,6 @@ public class HistoryAndPhysicalNoteOperations extends GeneralHeaderConstraintsOp
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::GeneralStatusSection))
 	 * @param historyAndPhysicalNote The receiving '<em><b>History And Physical Note</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -1219,7 +1200,6 @@ public class HistoryAndPhysicalNoteOperations extends GeneralHeaderConstraintsOp
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::HistoryOfPastIllnessSection))
 	 * @param historyAndPhysicalNote The receiving '<em><b>History And Physical Note</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -1281,7 +1261,6 @@ public class HistoryAndPhysicalNoteOperations extends GeneralHeaderConstraintsOp
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::MedicationsSectionEntriesOptional))
 	 * @param historyAndPhysicalNote The receiving '<em><b>History And Physical Note</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -1343,7 +1322,6 @@ public class HistoryAndPhysicalNoteOperations extends GeneralHeaderConstraintsOp
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::PhysicalExamSection))
 	 * @param historyAndPhysicalNote The receiving '<em><b>History And Physical Note</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -1404,7 +1382,6 @@ public class HistoryAndPhysicalNoteOperations extends GeneralHeaderConstraintsOp
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ReasonForVisitSection))
 	 * @param historyAndPhysicalNote The receiving '<em><b>History And Physical Note</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -1465,7 +1442,6 @@ public class HistoryAndPhysicalNoteOperations extends GeneralHeaderConstraintsOp
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ResultsSectionEntriesOptional))
 	 * @param historyAndPhysicalNote The receiving '<em><b>History And Physical Note</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -1527,7 +1503,6 @@ public class HistoryAndPhysicalNoteOperations extends GeneralHeaderConstraintsOp
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ReviewOfSystemsSection))
 	 * @param historyAndPhysicalNote The receiving '<em><b>History And Physical Note</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -1588,7 +1563,6 @@ public class HistoryAndPhysicalNoteOperations extends GeneralHeaderConstraintsOp
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::SocialHistorySection))
 	 * @param historyAndPhysicalNote The receiving '<em><b>History And Physical Note</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -1649,7 +1623,6 @@ public class HistoryAndPhysicalNoteOperations extends GeneralHeaderConstraintsOp
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::HistoryOfPresentIllnessSection))
 	 * @param historyAndPhysicalNote The receiving '<em><b>History And Physical Note</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -1711,7 +1684,6 @@ public class HistoryAndPhysicalNoteOperations extends GeneralHeaderConstraintsOp
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ImmunizationsSectionEntriesOptional))
 	 * @param historyAndPhysicalNote The receiving '<em><b>History And Physical Note</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -1773,7 +1745,6 @@ public class HistoryAndPhysicalNoteOperations extends GeneralHeaderConstraintsOp
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ProblemSectionEntriesOptional))
 	 * @param historyAndPhysicalNote The receiving '<em><b>History And Physical Note</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -1835,7 +1806,6 @@ public class HistoryAndPhysicalNoteOperations extends GeneralHeaderConstraintsOp
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ProceduresSectionEntriesOptional))
 	 * @param historyAndPhysicalNote The receiving '<em><b>History And Physical Note</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -1897,7 +1867,6 @@ public class HistoryAndPhysicalNoteOperations extends GeneralHeaderConstraintsOp
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::VitalSignsSectionEntriesOptional))
 	 * @param historyAndPhysicalNote The receiving '<em><b>History And Physical Note</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -1959,7 +1928,6 @@ public class HistoryAndPhysicalNoteOperations extends GeneralHeaderConstraintsOp
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::InstructionsSection))
 	 * @param historyAndPhysicalNote The receiving '<em><b>History And Physical Note</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -2020,7 +1988,6 @@ public class HistoryAndPhysicalNoteOperations extends GeneralHeaderConstraintsOp
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.componentOf->excluding(null).encompassingEncounter->excluding(null).responsibleParty->excluding(null)->reject(not assignedEntity.assignedPerson.oclIsUndefined() or not assignedEntity.representedOrganization->isEmpty())
 	 * @param historyAndPhysicalNote The receiving '<em><b>History And Physical Note</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -2086,7 +2053,6 @@ public class HistoryAndPhysicalNoteOperations extends GeneralHeaderConstraintsOp
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.componentOf->excluding(null).encompassingEncounter->excluding(null).responsibleParty->excluding(null)->reject(assignedEntity->one(assignedEntity : cda::AssignedEntity | not assignedEntity.oclIsUndefined() and assignedEntity.oclIsKindOf(rim::Role)))
 	 * @param historyAndPhysicalNote The receiving '<em><b>History And Physical Note</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -2152,7 +2118,6 @@ public class HistoryAndPhysicalNoteOperations extends GeneralHeaderConstraintsOp
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.componentOf->excluding(null).encompassingEncounter->excluding(null).encounterParticipant->excluding(null)->reject(not assignedEntity.assignedPerson.oclIsUndefined() or not assignedEntity.representedOrganization->isEmpty())
 	 * @param historyAndPhysicalNote The receiving '<em><b>History And Physical Note</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -2218,7 +2183,6 @@ public class HistoryAndPhysicalNoteOperations extends GeneralHeaderConstraintsOp
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.componentOf->excluding(null).encompassingEncounter->excluding(null).encounterParticipant->excluding(null)->reject(assignedEntity->one(assignedEntity : cda::AssignedEntity | not assignedEntity.oclIsUndefined() and assignedEntity.oclIsKindOf(rim::Role)))
 	 * @param historyAndPhysicalNote The receiving '<em><b>History And Physical Note</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -2284,7 +2248,6 @@ public class HistoryAndPhysicalNoteOperations extends GeneralHeaderConstraintsOp
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.componentOf->excluding(null).encompassingEncounter->excluding(null)->reject((effectiveTime.oclIsUndefined() or effectiveTime.isNullFlavorUndefined()) implies (not effectiveTime.oclIsUndefined()))
 	 * @param historyAndPhysicalNote The receiving '<em><b>History And Physical Note</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -2350,7 +2313,6 @@ public class HistoryAndPhysicalNoteOperations extends GeneralHeaderConstraintsOp
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.componentOf->excluding(null).encompassingEncounter->excluding(null)->reject((id->isEmpty() or id->exists(element | element.isNullFlavorUndefined())) implies (id->size() = 1))
 	 * @param historyAndPhysicalNote The receiving '<em><b>History And Physical Note</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -2416,7 +2378,6 @@ public class HistoryAndPhysicalNoteOperations extends GeneralHeaderConstraintsOp
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.componentOf->excluding(null).encompassingEncounter->excluding(null)->reject(location->one(location : cda::Location | not location.oclIsUndefined() and location.oclIsKindOf(rim::Participation)))
 	 * @param historyAndPhysicalNote The receiving '<em><b>History And Physical Note</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -2482,7 +2443,6 @@ public class HistoryAndPhysicalNoteOperations extends GeneralHeaderConstraintsOp
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.componentOf->excluding(null).encompassingEncounter->excluding(null)->reject(responsibleParty->one(responsibleParty : cda::ResponsibleParty | not responsibleParty.oclIsUndefined() and responsibleParty.oclIsKindOf(cda::ResponsibleParty)))
 	 * @param historyAndPhysicalNote The receiving '<em><b>History And Physical Note</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -2548,7 +2508,6 @@ public class HistoryAndPhysicalNoteOperations extends GeneralHeaderConstraintsOp
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.componentOf->excluding(null).encompassingEncounter->excluding(null)->reject(encounterParticipant->one(encounterParticipant : cda::EncounterParticipant | not encounterParticipant.oclIsUndefined() and encounterParticipant.oclIsKindOf(cda::EncounterParticipant)))
 	 * @param historyAndPhysicalNote The receiving '<em><b>History And Physical Note</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -2614,7 +2573,6 @@ public class HistoryAndPhysicalNoteOperations extends GeneralHeaderConstraintsOp
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.componentOf->excluding(null)->reject(encompassingEncounter->one(encompassingEncounter : cda::EncompassingEncounter | not encompassingEncounter.oclIsUndefined() and encompassingEncounter.oclIsKindOf(cda::EncompassingEncounter)))
 	 * @param historyAndPhysicalNote The receiving '<em><b>History And Physical Note</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -2678,10 +2636,6 @@ public class HistoryAndPhysicalNoteOperations extends GeneralHeaderConstraintsOp
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::AllergiesSectionEntriesOptional))->asSequence()->any(true).oclAsType(consol::AllergiesSectionEntriesOptional)
-	 * @param historyAndPhysicalNote The receiving '<em><b>History And Physical Note</b></em>' model object.
-	 * <!-- end-model-doc -->
 	 * @generated
 	 */
 
@@ -2725,10 +2679,6 @@ public class HistoryAndPhysicalNoteOperations extends GeneralHeaderConstraintsOp
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::AssessmentSection))->asSequence()->any(true).oclAsType(consol::AssessmentSection)
-	 * @param historyAndPhysicalNote The receiving '<em><b>History And Physical Note</b></em>' model object.
-	 * <!-- end-model-doc -->
 	 * @generated
 	 */
 
@@ -2771,10 +2721,6 @@ public class HistoryAndPhysicalNoteOperations extends GeneralHeaderConstraintsOp
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::PlanOfCareSection))->asSequence()->any(true).oclAsType(consol::PlanOfCareSection)
-	 * @param historyAndPhysicalNote The receiving '<em><b>History And Physical Note</b></em>' model object.
-	 * <!-- end-model-doc -->
 	 * @generated
 	 */
 
@@ -2817,10 +2763,6 @@ public class HistoryAndPhysicalNoteOperations extends GeneralHeaderConstraintsOp
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::AssessmentAndPlanSection))->asSequence()->any(true).oclAsType(consol::AssessmentAndPlanSection)
-	 * @param historyAndPhysicalNote The receiving '<em><b>History And Physical Note</b></em>' model object.
-	 * <!-- end-model-doc -->
 	 * @generated
 	 */
 
@@ -2863,10 +2805,6 @@ public class HistoryAndPhysicalNoteOperations extends GeneralHeaderConstraintsOp
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ChiefComplaintSection))->asSequence()->any(true).oclAsType(consol::ChiefComplaintSection)
-	 * @param historyAndPhysicalNote The receiving '<em><b>History And Physical Note</b></em>' model object.
-	 * <!-- end-model-doc -->
 	 * @generated
 	 */
 
@@ -2909,10 +2847,6 @@ public class HistoryAndPhysicalNoteOperations extends GeneralHeaderConstraintsOp
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ChiefComplaintAndReasonForVisitSection))->asSequence()->any(true).oclAsType(consol::ChiefComplaintAndReasonForVisitSection)
-	 * @param historyAndPhysicalNote The receiving '<em><b>History And Physical Note</b></em>' model object.
-	 * <!-- end-model-doc -->
 	 * @generated
 	 */
 
@@ -2956,10 +2890,6 @@ public class HistoryAndPhysicalNoteOperations extends GeneralHeaderConstraintsOp
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::FamilyHistorySection))->asSequence()->any(true).oclAsType(consol::FamilyHistorySection)
-	 * @param historyAndPhysicalNote The receiving '<em><b>History And Physical Note</b></em>' model object.
-	 * <!-- end-model-doc -->
 	 * @generated
 	 */
 
@@ -3002,10 +2932,6 @@ public class HistoryAndPhysicalNoteOperations extends GeneralHeaderConstraintsOp
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::GeneralStatusSection))->asSequence()->any(true).oclAsType(consol::GeneralStatusSection)
-	 * @param historyAndPhysicalNote The receiving '<em><b>History And Physical Note</b></em>' model object.
-	 * <!-- end-model-doc -->
 	 * @generated
 	 */
 
@@ -3048,10 +2974,6 @@ public class HistoryAndPhysicalNoteOperations extends GeneralHeaderConstraintsOp
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::HistoryOfPastIllnessSection))->asSequence()->any(true).oclAsType(consol::HistoryOfPastIllnessSection)
-	 * @param historyAndPhysicalNote The receiving '<em><b>History And Physical Note</b></em>' model object.
-	 * <!-- end-model-doc -->
 	 * @generated
 	 */
 
@@ -3095,10 +3017,6 @@ public class HistoryAndPhysicalNoteOperations extends GeneralHeaderConstraintsOp
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::MedicationsSectionEntriesOptional))->asSequence()->any(true).oclAsType(consol::MedicationsSectionEntriesOptional)
-	 * @param historyAndPhysicalNote The receiving '<em><b>History And Physical Note</b></em>' model object.
-	 * <!-- end-model-doc -->
 	 * @generated
 	 */
 
@@ -3142,10 +3060,6 @@ public class HistoryAndPhysicalNoteOperations extends GeneralHeaderConstraintsOp
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::PhysicalExamSection))->asSequence()->any(true).oclAsType(consol::PhysicalExamSection)
-	 * @param historyAndPhysicalNote The receiving '<em><b>History And Physical Note</b></em>' model object.
-	 * <!-- end-model-doc -->
 	 * @generated
 	 */
 
@@ -3188,10 +3102,6 @@ public class HistoryAndPhysicalNoteOperations extends GeneralHeaderConstraintsOp
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ReasonForVisitSection))->asSequence()->any(true).oclAsType(consol::ReasonForVisitSection)
-	 * @param historyAndPhysicalNote The receiving '<em><b>History And Physical Note</b></em>' model object.
-	 * <!-- end-model-doc -->
 	 * @generated
 	 */
 
@@ -3234,10 +3144,6 @@ public class HistoryAndPhysicalNoteOperations extends GeneralHeaderConstraintsOp
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ResultsSectionEntriesOptional))->asSequence()->any(true).oclAsType(consol::ResultsSectionEntriesOptional)
-	 * @param historyAndPhysicalNote The receiving '<em><b>History And Physical Note</b></em>' model object.
-	 * <!-- end-model-doc -->
 	 * @generated
 	 */
 
@@ -3281,10 +3187,6 @@ public class HistoryAndPhysicalNoteOperations extends GeneralHeaderConstraintsOp
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ReviewOfSystemsSection))->asSequence()->any(true).oclAsType(consol::ReviewOfSystemsSection)
-	 * @param historyAndPhysicalNote The receiving '<em><b>History And Physical Note</b></em>' model object.
-	 * <!-- end-model-doc -->
 	 * @generated
 	 */
 
@@ -3327,10 +3229,6 @@ public class HistoryAndPhysicalNoteOperations extends GeneralHeaderConstraintsOp
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::SocialHistorySection))->asSequence()->any(true).oclAsType(consol::SocialHistorySection)
-	 * @param historyAndPhysicalNote The receiving '<em><b>History And Physical Note</b></em>' model object.
-	 * <!-- end-model-doc -->
 	 * @generated
 	 */
 
@@ -3373,10 +3271,6 @@ public class HistoryAndPhysicalNoteOperations extends GeneralHeaderConstraintsOp
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::HistoryOfPresentIllnessSection))->asSequence()->any(true).oclAsType(consol::HistoryOfPresentIllnessSection)
-	 * @param historyAndPhysicalNote The receiving '<em><b>History And Physical Note</b></em>' model object.
-	 * <!-- end-model-doc -->
 	 * @generated
 	 */
 
@@ -3420,10 +3314,6 @@ public class HistoryAndPhysicalNoteOperations extends GeneralHeaderConstraintsOp
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ImmunizationsSectionEntriesOptional))->asSequence()->any(true).oclAsType(consol::ImmunizationsSectionEntriesOptional)
-	 * @param historyAndPhysicalNote The receiving '<em><b>History And Physical Note</b></em>' model object.
-	 * <!-- end-model-doc -->
 	 * @generated
 	 */
 
@@ -3467,10 +3357,6 @@ public class HistoryAndPhysicalNoteOperations extends GeneralHeaderConstraintsOp
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ProblemSectionEntriesOptional))->asSequence()->any(true).oclAsType(consol::ProblemSectionEntriesOptional)
-	 * @param historyAndPhysicalNote The receiving '<em><b>History And Physical Note</b></em>' model object.
-	 * <!-- end-model-doc -->
 	 * @generated
 	 */
 
@@ -3514,10 +3400,6 @@ public class HistoryAndPhysicalNoteOperations extends GeneralHeaderConstraintsOp
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ProceduresSectionEntriesOptional))->asSequence()->any(true).oclAsType(consol::ProceduresSectionEntriesOptional)
-	 * @param historyAndPhysicalNote The receiving '<em><b>History And Physical Note</b></em>' model object.
-	 * <!-- end-model-doc -->
 	 * @generated
 	 */
 
@@ -3561,10 +3443,6 @@ public class HistoryAndPhysicalNoteOperations extends GeneralHeaderConstraintsOp
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::VitalSignsSectionEntriesOptional))->asSequence()->any(true).oclAsType(consol::VitalSignsSectionEntriesOptional)
-	 * @param historyAndPhysicalNote The receiving '<em><b>History And Physical Note</b></em>' model object.
-	 * <!-- end-model-doc -->
 	 * @generated
 	 */
 
@@ -3608,10 +3486,6 @@ public class HistoryAndPhysicalNoteOperations extends GeneralHeaderConstraintsOp
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::InstructionsSection))->asSequence()->any(true).oclAsType(consol::InstructionsSection)
-	 * @param historyAndPhysicalNote The receiving '<em><b>History And Physical Note</b></em>' model object.
-	 * <!-- end-model-doc -->
 	 * @generated
 	 */
 

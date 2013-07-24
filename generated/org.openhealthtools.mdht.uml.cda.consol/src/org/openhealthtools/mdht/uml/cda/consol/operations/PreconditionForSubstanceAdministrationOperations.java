@@ -77,7 +77,6 @@ public class PreconditionForSubstanceAdministrationOperations extends Preconditi
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * not self.criterion.oclIsUndefined() implies (not self.criterion.code.oclIsUndefined() or self.criterion.code.isNullFlavorDefined())
 	 * @param preconditionForSubstanceAdministration The receiving '<em><b>Precondition For Substance Administration</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -140,7 +139,6 @@ public class PreconditionForSubstanceAdministrationOperations extends Preconditi
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * not self.criterion.oclIsUndefined() implies not self.criterion.text.oclIsUndefined()
 	 * @param preconditionForSubstanceAdministration The receiving '<em><b>Precondition For Substance Administration</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -203,7 +201,6 @@ public class PreconditionForSubstanceAdministrationOperations extends Preconditi
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * (self.criterion.value.oclIsUndefined() or self.criterion.value.isNullFlavorUndefined()) implies (self.criterion.value.oclIsTypeOf(datatypes::CD))
 	 * @param preconditionForSubstanceAdministration The receiving '<em><b>Precondition For Substance Administration</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -266,7 +263,6 @@ public class PreconditionForSubstanceAdministrationOperations extends Preconditi
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.4.25')
 	 * @param preconditionForSubstanceAdministration The receiving '<em><b>Precondition For Substance Administration</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -329,7 +325,6 @@ public class PreconditionForSubstanceAdministrationOperations extends Preconditi
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.criterion->one(criterion : cda::Criterion | not criterion.oclIsUndefined() and criterion.oclIsKindOf(rim::Act))
 	 * @param preconditionForSubstanceAdministration The receiving '<em><b>Precondition For Substance Administration</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.

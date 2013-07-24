@@ -33,7 +33,6 @@ public interface PlanOfCareActivityEncounter extends Encounter {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.4.40')
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
@@ -46,7 +45,6 @@ public interface PlanOfCareActivityEncounter extends Encounter {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.classCode=vocab::ActClass::ENC
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
@@ -59,13 +57,10 @@ public interface PlanOfCareActivityEncounter extends Encounter {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * not self.moodCode.oclIsUndefined() and self.moodCode.oclIsKindOf(vocab::x_DocumentEncounterMood) and 
-	 * let value : vocab::x_DocumentEncounterMood = self.moodCode.oclAsType(vocab::x_DocumentEncounterMood) in 
-	 * value = vocab::x_DocumentEncounterMood::INT or value = vocab::x_DocumentEncounterMood::ARQ or value = vocab::x_DocumentEncounterMood::PRMS or value = vocab::x_DocumentEncounterMood::PRP or value = vocab::x_DocumentEncounterMood::RQO
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='not self.moodCode.oclIsUndefined() and self.moodCode.oclIsKindOf(vocab::x_DocumentEncounterMood) and \r\nlet value : vocab::x_DocumentEncounterMood = self.moodCode.oclAsType(vocab::x_DocumentEncounterMood) in \r\nvalue = vocab::x_DocumentEncounterMood::INT or value = vocab::x_DocumentEncounterMood::ARQ or value = vocab::x_DocumentEncounterMood::PRMS or value = vocab::x_DocumentEncounterMood::PRP or value = vocab::x_DocumentEncounterMood::RQO'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='not self.moodCode.oclIsUndefined() and self.moodCode.oclIsKindOf(vocab::x_DocumentEncounterMood) and \nlet value : vocab::x_DocumentEncounterMood = self.moodCode.oclAsType(vocab::x_DocumentEncounterMood) in \nvalue = vocab::x_DocumentEncounterMood::INT or value = vocab::x_DocumentEncounterMood::ARQ or value = vocab::x_DocumentEncounterMood::PRMS or value = vocab::x_DocumentEncounterMood::PRP or value = vocab::x_DocumentEncounterMood::RQO'"
 	 * @generated
 	 */
 	boolean validatePlanOfCareActivityEncounterMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -74,7 +69,6 @@ public interface PlanOfCareActivityEncounter extends Encounter {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * (self.id->isEmpty() or self.id->exists(element | element.isNullFlavorUndefined())) implies (not self.id->isEmpty())
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->

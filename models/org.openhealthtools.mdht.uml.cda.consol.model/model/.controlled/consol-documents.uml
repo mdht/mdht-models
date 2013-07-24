@@ -255,8 +255,8 @@ element.</body>
             <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_9DbJwEreEd6FXKclYGEDCw"/>
           </ownedAttribute>
           <ownedAttribute xmi:id="_7OuG8SylEeGMXrZ0DiQwGg" name="name" visibility="private" type="_aSeEwPIYEeGu1M-cCXg0Dg" aggregation="composite">
-            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_mZLwoE4REeGug8Lotu3QeQ" value="1"/>
-            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_mZLwoU4REeGug8Lotu3QeQ" value="1"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_WxU6MPC5EeKYpKTSzJdlwg" value="*"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_WxU6MfC5EeKYpKTSzJdlwg" value="1"/>
             <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_QcivsEAMEd6wZe6nFLrjsw"/>
           </ownedAttribute>
           <ownedAttribute xmi:id="_7OuuACylEeGMXrZ0DiQwGg" name="raceCode" visibility="private" aggregation="composite">
@@ -2547,8 +2547,8 @@ The Consultation Note recommends use of a single document type code, 11488-4 &qu
         <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_Li14oEcZEd6besF9iFIJkQ"/>
       </generalization>
       <ownedAttribute xmi:id="_9_jXkPKtEeGFUPBL8qS7yQ" name="order" visibility="private" type="_AIbvoPKuEeGFUPBL8qS7yQ" aggregation="composite">
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xXpb8CefEeKFA9nMp1YYPg" value="1"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xXpb8SefEeKFA9nMp1YYPg" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_nrmdUOsDEeKDusM4GJHmkQ" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_nrmdUesDEeKDusM4GJHmkQ"/>
         <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_eMcycUoWEd6c3qsAxlFHaQ"/>
         <association href="../consol.uml#_9_jXk_KtEeGFUPBL8qS7yQ"/>
       </ownedAttribute>
@@ -2861,8 +2861,8 @@ A History and Physical Examination is required upon hospital admission as well a
     </ownedAttribute>
     <ownedAttribute xmi:id="_s2RisD1kEeG3tde5scYNWA" name="inFulfillmentOf" association="_s2SJwD1kEeG3tde5scYNWA">
       <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_Li14oEcZEd6besF9iFIJkQ"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_uyh0AD1kEeG3tde5scYNWA" value="*"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_uyh0AT1kEeG3tde5scYNWA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xzynkO1vEeKkuJKWtxkWhw" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xzynke1vEeKkuJKWtxkWhw"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_qCNNsD1mEeG3tde5scYNWA" name="componentOf" type="_A4JVkD1lEeG3tde5scYNWA" association="_qCN0wD1mEeG3tde5scYNWA">
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_sIbTUD1mEeG3tde5scYNWA" value="1"/>

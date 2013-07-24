@@ -190,7 +190,6 @@ public class ProcedureNoteOperations extends GeneralHeaderConstraintsOperations 
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * (self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::PlanOfCareSection)) and  self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::AssessmentSection))) xor self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::AssessmentAndPlanSection))
 	 * @param procedureNote The receiving '<em><b>Procedure Note</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -252,7 +251,6 @@ public class ProcedureNoteOperations extends GeneralHeaderConstraintsOperations 
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * (self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::PlanOfCareSection)) or  self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::AssessmentSection))) xor self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::AssessmentAndPlanSection))
 	 * @param procedureNote The receiving '<em><b>Procedure Note</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -314,7 +312,6 @@ public class ProcedureNoteOperations extends GeneralHeaderConstraintsOperations 
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * (self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ChiefComplaintSection)) or  self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ReasonForVisitSection))) xor self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ChiefComplaintAndReasonForVisitSection))
 	 * @param procedureNote The receiving '<em><b>Procedure Note</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -376,7 +373,6 @@ public class ProcedureNoteOperations extends GeneralHeaderConstraintsOperations 
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->forAll(section : cda::Section | not section.title.oclIsUndefined())
 	 * @param procedureNote The receiving '<em><b>Procedure Note</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -435,7 +431,6 @@ public class ProcedureNoteOperations extends GeneralHeaderConstraintsOperations 
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.1.6')
 	 * @param procedureNote The receiving '<em><b>Procedure Note</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -494,7 +489,6 @@ public class ProcedureNoteOperations extends GeneralHeaderConstraintsOperations 
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * (self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined())
 	 * @param procedureNote The receiving '<em><b>Procedure Note</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -566,9 +560,6 @@ public class ProcedureNoteOperations extends GeneralHeaderConstraintsOperations 
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * (self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and 
-	 * let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in 
-	 * value.codeSystem = '2.16.840.1.113883.6.1' and (value.code = '28570-0' or value.code = '11505-5' or value.code = '18744-3' or value.code = '18745-0' or value.code = '18746-8' or value.code = '18751-8' or value.code = '18753-4' or value.code = '18836-7' or value.code = '28577-5' or value.code = '28625-2' or value.code = '29757-2' or value.code = '33721-2' or value.code = '34121-4' or value.code = '34896-1' or value.code = '34899-5' or value.code = '47048-4' or value.code = '48807-2'))
 	 * @param procedureNote The receiving '<em><b>Procedure Note</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -634,7 +625,6 @@ public class ProcedureNoteOperations extends GeneralHeaderConstraintsOperations 
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.componentOf->one(componentOf : cda::Component1 | not componentOf.oclIsUndefined() and componentOf.oclIsKindOf(cda::Component1))
 	 * @param procedureNote The receiving '<em><b>Procedure Note</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -693,7 +683,6 @@ public class ProcedureNoteOperations extends GeneralHeaderConstraintsOperations 
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::AssessmentSection))
 	 * @param procedureNote The receiving '<em><b>Procedure Note</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -752,7 +741,6 @@ public class ProcedureNoteOperations extends GeneralHeaderConstraintsOperations 
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::PlanOfCareSection))
 	 * @param procedureNote The receiving '<em><b>Procedure Note</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -811,7 +799,6 @@ public class ProcedureNoteOperations extends GeneralHeaderConstraintsOperations 
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::AssessmentAndPlanSection))
 	 * @param procedureNote The receiving '<em><b>Procedure Note</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -871,7 +858,6 @@ public class ProcedureNoteOperations extends GeneralHeaderConstraintsOperations 
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ComplicationsSection))
 	 * @param procedureNote The receiving '<em><b>Procedure Note</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -931,7 +917,6 @@ public class ProcedureNoteOperations extends GeneralHeaderConstraintsOperations 
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::PostprocedureDiagnosisSection))
 	 * @param procedureNote The receiving '<em><b>Procedure Note</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -992,7 +977,6 @@ public class ProcedureNoteOperations extends GeneralHeaderConstraintsOperations 
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ProcedureDescriptionSection))
 	 * @param procedureNote The receiving '<em><b>Procedure Note</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -1052,7 +1036,6 @@ public class ProcedureNoteOperations extends GeneralHeaderConstraintsOperations 
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ProcedureIndicationsSection))
 	 * @param procedureNote The receiving '<em><b>Procedure Note</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -1112,7 +1095,6 @@ public class ProcedureNoteOperations extends GeneralHeaderConstraintsOperations 
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::AllergiesSectionEntriesOptional))
 	 * @param procedureNote The receiving '<em><b>Procedure Note</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -1173,7 +1155,6 @@ public class ProcedureNoteOperations extends GeneralHeaderConstraintsOperations 
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::AnesthesiaSection))
 	 * @param procedureNote The receiving '<em><b>Procedure Note</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -1232,7 +1213,6 @@ public class ProcedureNoteOperations extends GeneralHeaderConstraintsOperations 
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ChiefComplaintSection))
 	 * @param procedureNote The receiving '<em><b>Procedure Note</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -1292,7 +1272,6 @@ public class ProcedureNoteOperations extends GeneralHeaderConstraintsOperations 
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ChiefComplaintAndReasonForVisitSection))
 	 * @param procedureNote The receiving '<em><b>Procedure Note</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -1353,7 +1332,6 @@ public class ProcedureNoteOperations extends GeneralHeaderConstraintsOperations 
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::FamilyHistorySection))
 	 * @param procedureNote The receiving '<em><b>Procedure Note</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -1413,7 +1391,6 @@ public class ProcedureNoteOperations extends GeneralHeaderConstraintsOperations 
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::HistoryOfPastIllnessSection))
 	 * @param procedureNote The receiving '<em><b>Procedure Note</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -1474,7 +1451,6 @@ public class ProcedureNoteOperations extends GeneralHeaderConstraintsOperations 
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::HistoryOfPresentIllnessSection))
 	 * @param procedureNote The receiving '<em><b>Procedure Note</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -1535,7 +1511,6 @@ public class ProcedureNoteOperations extends GeneralHeaderConstraintsOperations 
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::MedicalHistorySection))
 	 * @param procedureNote The receiving '<em><b>Procedure Note</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -1595,7 +1570,6 @@ public class ProcedureNoteOperations extends GeneralHeaderConstraintsOperations 
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::MedicationsSectionEntriesOptional))
 	 * @param procedureNote The receiving '<em><b>Procedure Note</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -1656,7 +1630,6 @@ public class ProcedureNoteOperations extends GeneralHeaderConstraintsOperations 
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::MedicationsAdministeredSection))
 	 * @param procedureNote The receiving '<em><b>Procedure Note</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -1717,7 +1690,6 @@ public class ProcedureNoteOperations extends GeneralHeaderConstraintsOperations 
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::PhysicalExamSection))
 	 * @param procedureNote The receiving '<em><b>Procedure Note</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -1776,7 +1748,6 @@ public class ProcedureNoteOperations extends GeneralHeaderConstraintsOperations 
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::PlannedProcedureSection))
 	 * @param procedureNote The receiving '<em><b>Procedure Note</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -1836,7 +1807,6 @@ public class ProcedureNoteOperations extends GeneralHeaderConstraintsOperations 
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ProcedureDispositionSection))
 	 * @param procedureNote The receiving '<em><b>Procedure Note</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -1896,7 +1866,6 @@ public class ProcedureNoteOperations extends GeneralHeaderConstraintsOperations 
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ProcedureEstimatedBloodLossSection))
 	 * @param procedureNote The receiving '<em><b>Procedure Note</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -1957,7 +1926,6 @@ public class ProcedureNoteOperations extends GeneralHeaderConstraintsOperations 
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ProcedureFindingsSection))
 	 * @param procedureNote The receiving '<em><b>Procedure Note</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -2017,7 +1985,6 @@ public class ProcedureNoteOperations extends GeneralHeaderConstraintsOperations 
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ProcedureImplantsSection))
 	 * @param procedureNote The receiving '<em><b>Procedure Note</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -2077,7 +2044,6 @@ public class ProcedureNoteOperations extends GeneralHeaderConstraintsOperations 
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ProcedureSpecimensTakenSection))
 	 * @param procedureNote The receiving '<em><b>Procedure Note</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -2138,7 +2104,6 @@ public class ProcedureNoteOperations extends GeneralHeaderConstraintsOperations 
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ProceduresSectionEntriesOptional))
 	 * @param procedureNote The receiving '<em><b>Procedure Note</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -2199,7 +2164,6 @@ public class ProcedureNoteOperations extends GeneralHeaderConstraintsOperations 
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ReasonForVisitSection))
 	 * @param procedureNote The receiving '<em><b>Procedure Note</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -2259,7 +2223,6 @@ public class ProcedureNoteOperations extends GeneralHeaderConstraintsOperations 
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ReviewOfSystemsSection))
 	 * @param procedureNote The receiving '<em><b>Procedure Note</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -2319,7 +2282,6 @@ public class ProcedureNoteOperations extends GeneralHeaderConstraintsOperations 
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::SocialHistorySection))
 	 * @param procedureNote The receiving '<em><b>Procedure Note</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -2379,7 +2341,6 @@ public class ProcedureNoteOperations extends GeneralHeaderConstraintsOperations 
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.participant->exists(participant : cda::Participant1 | not participant.oclIsUndefined() and participant.oclIsKindOf(rim::Participation))
 	 * @param procedureNote The receiving '<em><b>Procedure Note</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -2438,7 +2399,6 @@ public class ProcedureNoteOperations extends GeneralHeaderConstraintsOperations 
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.documentationOf->exists(documentationOf : cda::DocumentationOf | not documentationOf.oclIsUndefined() and documentationOf.oclIsKindOf(cda::DocumentationOf))
 	 * @param procedureNote The receiving '<em><b>Procedure Note</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -2497,7 +2457,6 @@ public class ProcedureNoteOperations extends GeneralHeaderConstraintsOperations 
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.componentOf->excluding(null).encompassingEncounter->excluding(null).location->excluding(null).healthCareFacility->excluding(null)->reject((id->isEmpty() or id->exists(element | element.isNullFlavorUndefined())) implies (not id->isEmpty()))
 	 * @param procedureNote The receiving '<em><b>Procedure Note</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -2563,7 +2522,6 @@ public class ProcedureNoteOperations extends GeneralHeaderConstraintsOperations 
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.componentOf->excluding(null).encompassingEncounter->excluding(null).location->excluding(null)->reject(healthCareFacility->exists(healthCareFacility : cda::HealthCareFacility | not healthCareFacility.oclIsUndefined() and healthCareFacility.oclIsKindOf(cda::HealthCareFacility)))
 	 * @param procedureNote The receiving '<em><b>Procedure Note</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -2629,7 +2587,6 @@ public class ProcedureNoteOperations extends GeneralHeaderConstraintsOperations 
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.componentOf->excluding(null).encompassingEncounter->excluding(null).encounterParticipant->excluding(null)->select(typeCode = vocab::x_EncounterParticipant::REF)->select(typeCode = vocab::x_EncounterParticipant::REF)->reject(typeCode=vocab::x_EncounterParticipant::REF)
 	 * @param procedureNote The receiving '<em><b>Procedure Note</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -2695,7 +2652,6 @@ public class ProcedureNoteOperations extends GeneralHeaderConstraintsOperations 
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.componentOf->excluding(null).encompassingEncounter->excluding(null)->reject((code.oclIsUndefined() or code.isNullFlavorUndefined()) implies (not code.oclIsUndefined()))
 	 * @param procedureNote The receiving '<em><b>Procedure Note</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -2760,7 +2716,6 @@ public class ProcedureNoteOperations extends GeneralHeaderConstraintsOperations 
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.componentOf->excluding(null).encompassingEncounter->excluding(null)->reject(location->exists(location : cda::Location | not location.oclIsUndefined() and location.oclIsKindOf(cda::Location)))
 	 * @param procedureNote The receiving '<em><b>Procedure Note</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -2825,7 +2780,6 @@ public class ProcedureNoteOperations extends GeneralHeaderConstraintsOperations 
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.componentOf->excluding(null).encompassingEncounter->excluding(null)->reject(encounterParticipant->select(encounterParticipant : cda::EncounterParticipant | not encounterParticipant.oclIsUndefined() and encounterParticipant.oclIsKindOf(cda::EncounterParticipant))->select(typeCode = vocab::x_EncounterParticipant::REF)->size() = 1)
 	 * @param procedureNote The receiving '<em><b>Procedure Note</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -2891,7 +2845,6 @@ public class ProcedureNoteOperations extends GeneralHeaderConstraintsOperations 
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.componentOf->excluding(null)->reject(encompassingEncounter->one(encompassingEncounter : cda::EncompassingEncounter | not encompassingEncounter.oclIsUndefined() and encompassingEncounter.oclIsKindOf(cda::EncompassingEncounter)))
 	 * @param procedureNote The receiving '<em><b>Procedure Note</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -2956,7 +2909,6 @@ public class ProcedureNoteOperations extends GeneralHeaderConstraintsOperations 
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.documentationOf->excluding(null).serviceEvent->excluding(null).performer->excluding(null)->select(typeCode = vocab::x_ServiceEventPerformer::PPRF).assignedEntity->excluding(null)->reject((code.oclIsUndefined() or code.isNullFlavorUndefined()) implies (not code.oclIsUndefined()))
 	 * @param procedureNote The receiving '<em><b>Procedure Note</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -3037,9 +2989,6 @@ public class ProcedureNoteOperations extends GeneralHeaderConstraintsOperations 
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.documentationOf->excluding(null).serviceEvent->excluding(null).performer->excluding(null)->select(typeCode = vocab::x_ServiceEventPerformer::PPRF).assignedEntity->excluding(null)->reject((code.oclIsUndefined() or code.isNullFlavorUndefined()) implies (not code.oclIsUndefined() and code.oclIsKindOf(datatypes::CE) and 
-	 * let value : datatypes::CE = code.oclAsType(datatypes::CE) in 
-	 * value.codeSystem = '2.16.840.1.113883.6.101' and not value.code.oclIsUndefined()))
 	 * @param procedureNote The receiving '<em><b>Procedure Note</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -3114,7 +3063,6 @@ public class ProcedureNoteOperations extends GeneralHeaderConstraintsOperations 
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.documentationOf->excluding(null).serviceEvent->excluding(null).performer->excluding(null)->select(typeCode = vocab::x_ServiceEventPerformer::PPRF)->select(typeCode = vocab::x_ServiceEventPerformer::PPRF)->reject(typeCode=vocab::x_ServiceEventPerformer::PPRF)
 	 * @param procedureNote The receiving '<em><b>Procedure Note</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -3180,7 +3128,6 @@ public class ProcedureNoteOperations extends GeneralHeaderConstraintsOperations 
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.documentationOf->excluding(null).serviceEvent->excluding(null).performer->excluding(null)->select(typeCode = vocab::x_ServiceEventPerformer::PPRF)->select(typeCode = vocab::x_ServiceEventPerformer::PPRF)->reject(assignedEntity->one(assignedEntity : cda::AssignedEntity | not assignedEntity.oclIsUndefined() and assignedEntity.oclIsKindOf(cda::AssignedEntity)))
 	 * @param procedureNote The receiving '<em><b>Procedure Note</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -3246,7 +3193,6 @@ public class ProcedureNoteOperations extends GeneralHeaderConstraintsOperations 
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.documentationOf->excluding(null).serviceEvent->excluding(null)->reject(code.codeSystem = '2.16.840.1.113883.6.104' or code.codeSystem = '2.16.840.1.113883.6.12' or code.codeSystem = '2.16.840.1.113883.6.96')
 	 * @param procedureNote The receiving '<em><b>Procedure Note</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -3311,7 +3257,6 @@ public class ProcedureNoteOperations extends GeneralHeaderConstraintsOperations 
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.documentationOf->excluding(null).serviceEvent->excluding(null)->reject(not effectiveTime.low.oclIsUndefined())
 	 * @param procedureNote The receiving '<em><b>Procedure Note</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -3377,7 +3322,6 @@ public class ProcedureNoteOperations extends GeneralHeaderConstraintsOperations 
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.documentationOf->excluding(null).serviceEvent->excluding(null)->reject(not effectiveTime.width.oclIsUndefined() xor not effectiveTime.high.oclIsUndefined())
 	 * @param procedureNote The receiving '<em><b>Procedure Note</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -3443,7 +3387,6 @@ public class ProcedureNoteOperations extends GeneralHeaderConstraintsOperations 
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.documentationOf->excluding(null).serviceEvent->excluding(null)->reject(not effectiveTime.width.oclIsUndefined() xor not effectiveTime.high.oclIsUndefined())
 	 * @param procedureNote The receiving '<em><b>Procedure Note</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -3509,7 +3452,6 @@ public class ProcedureNoteOperations extends GeneralHeaderConstraintsOperations 
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.documentationOf->excluding(null).serviceEvent->excluding(null)->reject((code.oclIsUndefined() or code.isNullFlavorUndefined()) implies (not code.oclIsUndefined()))
 	 * @param procedureNote The receiving '<em><b>Procedure Note</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -3574,7 +3516,6 @@ public class ProcedureNoteOperations extends GeneralHeaderConstraintsOperations 
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.documentationOf->excluding(null).serviceEvent->excluding(null)->reject((effectiveTime.oclIsUndefined() or effectiveTime.isNullFlavorUndefined()) implies (not effectiveTime.oclIsUndefined()))
 	 * @param procedureNote The receiving '<em><b>Procedure Note</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -3639,7 +3580,6 @@ public class ProcedureNoteOperations extends GeneralHeaderConstraintsOperations 
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.documentationOf->excluding(null).serviceEvent->excluding(null)->reject(performer->select(performer : cda::Performer1 | not performer.oclIsUndefined() and performer.oclIsKindOf(cda::Performer1))->select(typeCode = vocab::x_ServiceEventPerformer::PPRF)->size() = 1)
 	 * @param procedureNote The receiving '<em><b>Procedure Note</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -3705,7 +3645,6 @@ public class ProcedureNoteOperations extends GeneralHeaderConstraintsOperations 
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.documentationOf->excluding(null)->reject(serviceEvent->one(serviceEvent : cda::ServiceEvent | not serviceEvent.oclIsUndefined() and serviceEvent.oclIsKindOf(cda::ServiceEvent)))
 	 * @param procedureNote The receiving '<em><b>Procedure Note</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -3768,10 +3707,6 @@ public class ProcedureNoteOperations extends GeneralHeaderConstraintsOperations 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::AssessmentSection))->asSequence()->any(true).oclAsType(consol::AssessmentSection)
-	 * @param procedureNote The receiving '<em><b>Procedure Note</b></em>' model object.
-	 * <!-- end-model-doc -->
 	 * @generated
 	 */
 
@@ -3814,10 +3749,6 @@ public class ProcedureNoteOperations extends GeneralHeaderConstraintsOperations 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::PlanOfCareSection))->asSequence()->any(true).oclAsType(consol::PlanOfCareSection)
-	 * @param procedureNote The receiving '<em><b>Procedure Note</b></em>' model object.
-	 * <!-- end-model-doc -->
 	 * @generated
 	 */
 
@@ -3860,10 +3791,6 @@ public class ProcedureNoteOperations extends GeneralHeaderConstraintsOperations 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::AssessmentAndPlanSection))->asSequence()->any(true).oclAsType(consol::AssessmentAndPlanSection)
-	 * @param procedureNote The receiving '<em><b>Procedure Note</b></em>' model object.
-	 * <!-- end-model-doc -->
 	 * @generated
 	 */
 
@@ -3906,10 +3833,6 @@ public class ProcedureNoteOperations extends GeneralHeaderConstraintsOperations 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ComplicationsSection))->asSequence()->any(true).oclAsType(consol::ComplicationsSection)
-	 * @param procedureNote The receiving '<em><b>Procedure Note</b></em>' model object.
-	 * <!-- end-model-doc -->
 	 * @generated
 	 */
 
@@ -3952,10 +3875,6 @@ public class ProcedureNoteOperations extends GeneralHeaderConstraintsOperations 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::PostprocedureDiagnosisSection))->asSequence()->any(true).oclAsType(consol::PostprocedureDiagnosisSection)
-	 * @param procedureNote The receiving '<em><b>Procedure Note</b></em>' model object.
-	 * <!-- end-model-doc -->
 	 * @generated
 	 */
 
@@ -3998,10 +3917,6 @@ public class ProcedureNoteOperations extends GeneralHeaderConstraintsOperations 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ProcedureDescriptionSection))->asSequence()->any(true).oclAsType(consol::ProcedureDescriptionSection)
-	 * @param procedureNote The receiving '<em><b>Procedure Note</b></em>' model object.
-	 * <!-- end-model-doc -->
 	 * @generated
 	 */
 
@@ -4044,10 +3959,6 @@ public class ProcedureNoteOperations extends GeneralHeaderConstraintsOperations 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ProcedureIndicationsSection))->asSequence()->any(true).oclAsType(consol::ProcedureIndicationsSection)
-	 * @param procedureNote The receiving '<em><b>Procedure Note</b></em>' model object.
-	 * <!-- end-model-doc -->
 	 * @generated
 	 */
 
@@ -4090,10 +4001,6 @@ public class ProcedureNoteOperations extends GeneralHeaderConstraintsOperations 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::AllergiesSectionEntriesOptional))->asSequence()->any(true).oclAsType(consol::AllergiesSectionEntriesOptional)
-	 * @param procedureNote The receiving '<em><b>Procedure Note</b></em>' model object.
-	 * <!-- end-model-doc -->
 	 * @generated
 	 */
 
@@ -4136,10 +4043,6 @@ public class ProcedureNoteOperations extends GeneralHeaderConstraintsOperations 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::AnesthesiaSection))->asSequence()->any(true).oclAsType(consol::AnesthesiaSection)
-	 * @param procedureNote The receiving '<em><b>Procedure Note</b></em>' model object.
-	 * <!-- end-model-doc -->
 	 * @generated
 	 */
 
@@ -4182,10 +4085,6 @@ public class ProcedureNoteOperations extends GeneralHeaderConstraintsOperations 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ChiefComplaintSection))->asSequence()->any(true).oclAsType(consol::ChiefComplaintSection)
-	 * @param procedureNote The receiving '<em><b>Procedure Note</b></em>' model object.
-	 * <!-- end-model-doc -->
 	 * @generated
 	 */
 
@@ -4228,10 +4127,6 @@ public class ProcedureNoteOperations extends GeneralHeaderConstraintsOperations 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ChiefComplaintAndReasonForVisitSection))->asSequence()->any(true).oclAsType(consol::ChiefComplaintAndReasonForVisitSection)
-	 * @param procedureNote The receiving '<em><b>Procedure Note</b></em>' model object.
-	 * <!-- end-model-doc -->
 	 * @generated
 	 */
 
@@ -4275,10 +4170,6 @@ public class ProcedureNoteOperations extends GeneralHeaderConstraintsOperations 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::FamilyHistorySection))->asSequence()->any(true).oclAsType(consol::FamilyHistorySection)
-	 * @param procedureNote The receiving '<em><b>Procedure Note</b></em>' model object.
-	 * <!-- end-model-doc -->
 	 * @generated
 	 */
 
@@ -4321,10 +4212,6 @@ public class ProcedureNoteOperations extends GeneralHeaderConstraintsOperations 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::HistoryOfPastIllnessSection))->asSequence()->any(true).oclAsType(consol::HistoryOfPastIllnessSection)
-	 * @param procedureNote The receiving '<em><b>Procedure Note</b></em>' model object.
-	 * <!-- end-model-doc -->
 	 * @generated
 	 */
 
@@ -4367,10 +4254,6 @@ public class ProcedureNoteOperations extends GeneralHeaderConstraintsOperations 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::HistoryOfPresentIllnessSection))->asSequence()->any(true).oclAsType(consol::HistoryOfPresentIllnessSection)
-	 * @param procedureNote The receiving '<em><b>Procedure Note</b></em>' model object.
-	 * <!-- end-model-doc -->
 	 * @generated
 	 */
 
@@ -4413,10 +4296,6 @@ public class ProcedureNoteOperations extends GeneralHeaderConstraintsOperations 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::MedicalHistorySection))->asSequence()->any(true).oclAsType(consol::MedicalHistorySection)
-	 * @param procedureNote The receiving '<em><b>Procedure Note</b></em>' model object.
-	 * <!-- end-model-doc -->
 	 * @generated
 	 */
 
@@ -4459,10 +4338,6 @@ public class ProcedureNoteOperations extends GeneralHeaderConstraintsOperations 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::MedicationsSectionEntriesOptional))->asSequence()->any(true).oclAsType(consol::MedicationsSectionEntriesOptional)
-	 * @param procedureNote The receiving '<em><b>Procedure Note</b></em>' model object.
-	 * <!-- end-model-doc -->
 	 * @generated
 	 */
 
@@ -4505,10 +4380,6 @@ public class ProcedureNoteOperations extends GeneralHeaderConstraintsOperations 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::MedicationsAdministeredSection))->asSequence()->any(true).oclAsType(consol::MedicationsAdministeredSection)
-	 * @param procedureNote The receiving '<em><b>Procedure Note</b></em>' model object.
-	 * <!-- end-model-doc -->
 	 * @generated
 	 */
 
@@ -4551,10 +4422,6 @@ public class ProcedureNoteOperations extends GeneralHeaderConstraintsOperations 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::PhysicalExamSection))->asSequence()->any(true).oclAsType(consol::PhysicalExamSection)
-	 * @param procedureNote The receiving '<em><b>Procedure Note</b></em>' model object.
-	 * <!-- end-model-doc -->
 	 * @generated
 	 */
 
@@ -4597,10 +4464,6 @@ public class ProcedureNoteOperations extends GeneralHeaderConstraintsOperations 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::PlannedProcedureSection))->asSequence()->any(true).oclAsType(consol::PlannedProcedureSection)
-	 * @param procedureNote The receiving '<em><b>Procedure Note</b></em>' model object.
-	 * <!-- end-model-doc -->
 	 * @generated
 	 */
 
@@ -4643,10 +4506,6 @@ public class ProcedureNoteOperations extends GeneralHeaderConstraintsOperations 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ProcedureDispositionSection))->asSequence()->any(true).oclAsType(consol::ProcedureDispositionSection)
-	 * @param procedureNote The receiving '<em><b>Procedure Note</b></em>' model object.
-	 * <!-- end-model-doc -->
 	 * @generated
 	 */
 
@@ -4689,10 +4548,6 @@ public class ProcedureNoteOperations extends GeneralHeaderConstraintsOperations 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ProcedureEstimatedBloodLossSection))->asSequence()->any(true).oclAsType(consol::ProcedureEstimatedBloodLossSection)
-	 * @param procedureNote The receiving '<em><b>Procedure Note</b></em>' model object.
-	 * <!-- end-model-doc -->
 	 * @generated
 	 */
 
@@ -4735,10 +4590,6 @@ public class ProcedureNoteOperations extends GeneralHeaderConstraintsOperations 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ProcedureFindingsSection))->asSequence()->any(true).oclAsType(consol::ProcedureFindingsSection)
-	 * @param procedureNote The receiving '<em><b>Procedure Note</b></em>' model object.
-	 * <!-- end-model-doc -->
 	 * @generated
 	 */
 
@@ -4781,10 +4632,6 @@ public class ProcedureNoteOperations extends GeneralHeaderConstraintsOperations 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ProcedureImplantsSection))->asSequence()->any(true).oclAsType(consol::ProcedureImplantsSection)
-	 * @param procedureNote The receiving '<em><b>Procedure Note</b></em>' model object.
-	 * <!-- end-model-doc -->
 	 * @generated
 	 */
 
@@ -4827,10 +4674,6 @@ public class ProcedureNoteOperations extends GeneralHeaderConstraintsOperations 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ProcedureSpecimensTakenSection))->asSequence()->any(true).oclAsType(consol::ProcedureSpecimensTakenSection)
-	 * @param procedureNote The receiving '<em><b>Procedure Note</b></em>' model object.
-	 * <!-- end-model-doc -->
 	 * @generated
 	 */
 
@@ -4873,10 +4716,6 @@ public class ProcedureNoteOperations extends GeneralHeaderConstraintsOperations 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ProceduresSectionEntriesOptional))->asSequence()->any(true).oclAsType(consol::ProceduresSectionEntriesOptional)
-	 * @param procedureNote The receiving '<em><b>Procedure Note</b></em>' model object.
-	 * <!-- end-model-doc -->
 	 * @generated
 	 */
 
@@ -4919,10 +4758,6 @@ public class ProcedureNoteOperations extends GeneralHeaderConstraintsOperations 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ReasonForVisitSection))->asSequence()->any(true).oclAsType(consol::ReasonForVisitSection)
-	 * @param procedureNote The receiving '<em><b>Procedure Note</b></em>' model object.
-	 * <!-- end-model-doc -->
 	 * @generated
 	 */
 
@@ -4965,10 +4800,6 @@ public class ProcedureNoteOperations extends GeneralHeaderConstraintsOperations 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ReviewOfSystemsSection))->asSequence()->any(true).oclAsType(consol::ReviewOfSystemsSection)
-	 * @param procedureNote The receiving '<em><b>Procedure Note</b></em>' model object.
-	 * <!-- end-model-doc -->
 	 * @generated
 	 */
 
@@ -5011,10 +4842,6 @@ public class ProcedureNoteOperations extends GeneralHeaderConstraintsOperations 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::SocialHistorySection))->asSequence()->any(true).oclAsType(consol::SocialHistorySection)
-	 * @param procedureNote The receiving '<em><b>Procedure Note</b></em>' model object.
-	 * <!-- end-model-doc -->
 	 * @generated
 	 */
 

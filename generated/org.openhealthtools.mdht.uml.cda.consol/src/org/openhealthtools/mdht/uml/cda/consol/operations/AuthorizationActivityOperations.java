@@ -85,7 +85,6 @@ public class AuthorizationActivityOperations extends ClinicalStatementOperations
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.1.19')
 	 * @param authorizationActivity The receiving '<em><b>Authorization Activity</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -145,7 +144,6 @@ public class AuthorizationActivityOperations extends ClinicalStatementOperations
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.classCode=vocab::x_ActClassDocumentEntryAct::ACT
 	 * @param authorizationActivity The receiving '<em><b>Authorization Activity</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -205,7 +203,6 @@ public class AuthorizationActivityOperations extends ClinicalStatementOperations
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * (self.id->isEmpty() or self.id->exists(element | element.isNullFlavorUndefined())) implies (self.id->size() = 1)
 	 * @param authorizationActivity The receiving '<em><b>Authorization Activity</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -264,7 +261,6 @@ public class AuthorizationActivityOperations extends ClinicalStatementOperations
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.moodCode=vocab::x_DocumentActMood::EVN
 	 * @param authorizationActivity The receiving '<em><b>Authorization Activity</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -324,7 +320,6 @@ public class AuthorizationActivityOperations extends ClinicalStatementOperations
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.entryRelationship->select(entryRelationship : cda::EntryRelationship | not entryRelationship.oclIsUndefined() and entryRelationship.oclIsKindOf(cda::EntryRelationship))->select(typeCode=vocab::x_ActRelationshipEntryRelationship::SUBJ)->size() = 1
 	 * @param authorizationActivity The receiving '<em><b>Authorization Activity</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -384,7 +379,6 @@ public class AuthorizationActivityOperations extends ClinicalStatementOperations
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.entryRelationship->excluding(null)->select(typeCode=vocab::x_ActRelationshipEntryRelationship::SUBJ)->select(typeCode=vocab::x_ActRelationshipEntryRelationship::SUBJ)->reject(act->exists(moodCode = vocab::x_DocumentActMood::PRMS) or  encounter->exists(moodCode = vocab::x_DocumentEncounterMood::PRMS) or observation->exists(moodCode = vocab::x_ActMoodDocumentObservation::PRMS) or  observationMedia->exists(moodCode = vocab::ActMood::PRMS) or organizer->exists(moodCode = vocab::ActMood::PRMS) or procedure->exists(moodCode = vocab::x_DocumentProcedureMood::PRMS) or  regionOfInterest->exists(moodCode = vocab::ActMood::PRMS) or substanceAdministration->exists(moodCode = vocab::x_DocumentSubstanceMood::PRMS) or  supply->exists(moodCode = vocab::x_DocumentSubstanceMood::PRMS))
 	 * @param authorizationActivity The receiving '<em><b>Authorization Activity</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -458,15 +452,6 @@ public class AuthorizationActivityOperations extends ClinicalStatementOperations
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.entryRelationship->excluding(null)->select(typeCode=vocab::x_ActRelationshipEntryRelationship::SUBJ)->select(typeCode=vocab::x_ActRelationshipEntryRelationship::SUBJ)->reject(act->forAll( (moodCode = vocab::x_DocumentActMood::PRMS and performer->size() > 0) or moodCode <> vocab::x_DocumentActMood::PRMS ) and 
-	 * encounter->forAll((moodCode = vocab::x_DocumentEncounterMood::PRMS and performer->size() > 0) or moodCode <>  vocab::x_DocumentEncounterMood::PRMS) and 
-	 * observation->forAll((moodCode = vocab::x_ActMoodDocumentObservation::PRMS and performer->size() > 0)  or moodCode <>  vocab::x_ActMoodDocumentObservation::PRMS) and 
-	 * observationMedia->forAll((moodCode = vocab::ActMood::PRMS and performer->size() > 0) or moodCode <>  vocab::ActMood::PRMS) and 
-	 * organizer->forAll((moodCode = vocab::ActMood::PRMS and performer->size() > 0)  or moodCode <>  vocab::ActMood::PRMS) and 
-	 * procedure->forAll((moodCode = vocab::x_DocumentProcedureMood::PRMS and performer->size() > 0)  or moodCode <>  vocab::x_DocumentProcedureMood::PRMS) and 
-	 * regionOfInterest->forAll((moodCode = vocab::ActMood::PRMS and performer->size() > 0) or moodCode <>  vocab::ActMood::PRMS) and 
-	 * substanceAdministration->forAll((moodCode = vocab::x_DocumentSubstanceMood::PRMS and performer->size() > 0)  or moodCode <>  vocab::x_DocumentSubstanceMood::PRMS) and 
-	 * supply->forAll((moodCode = vocab::x_DocumentSubstanceMood::PRMS and performer->size() > 0) or moodCode <>  vocab::x_DocumentSubstanceMood::PRMS))
 	 * @param authorizationActivity The receiving '<em><b>Authorization Activity</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -532,7 +517,6 @@ public class AuthorizationActivityOperations extends ClinicalStatementOperations
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.entryRelationship->excluding(null)->select(typeCode=vocab::x_ActRelationshipEntryRelationship::SUBJ)->select(typeCode=vocab::x_ActRelationshipEntryRelationship::SUBJ)->reject(typeCode=vocab::x_ActRelationshipEntryRelationship::SUBJ)
 	 * @param authorizationActivity The receiving '<em><b>Authorization Activity</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.

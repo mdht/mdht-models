@@ -78,7 +78,6 @@ public class DrugVehicleOperations extends ParticipantRoleOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * not self.playingEntity.oclIsUndefined() implies (self.playingEntity.code.isNullFlavorDefined() or self.playingEntity.code->size() =1)
 	 * @param drugVehicle The receiving '<em><b>Drug Vehicle</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -137,7 +136,6 @@ public class DrugVehicleOperations extends ParticipantRoleOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * not self.playingEntity.oclIsUndefined() implies self.playingEntity.name->size() =1
 	 * @param drugVehicle The receiving '<em><b>Drug Vehicle</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -196,7 +194,6 @@ public class DrugVehicleOperations extends ParticipantRoleOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.4.24')
 	 * @param drugVehicle The receiving '<em><b>Drug Vehicle</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -254,7 +251,6 @@ public class DrugVehicleOperations extends ParticipantRoleOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * isDefined('classCode') and self.classCode=vocab::RoleClassRoot::MANU
 	 * @param drugVehicle The receiving '<em><b>Drug Vehicle</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -314,9 +310,6 @@ public class DrugVehicleOperations extends ParticipantRoleOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * (self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and 
-	 * let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in 
-	 * value.code = '412307009' and value.codeSystem = '2.16.840.1.113883.6.96')
 	 * @param drugVehicle The receiving '<em><b>Drug Vehicle</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -374,7 +367,6 @@ public class DrugVehicleOperations extends ParticipantRoleOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.playingEntity->one(playingEntity : cda::PlayingEntity | not playingEntity.oclIsUndefined() and playingEntity.oclIsKindOf(rim::Entity))
 	 * @param drugVehicle The receiving '<em><b>Drug Vehicle</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
