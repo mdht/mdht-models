@@ -57,16 +57,16 @@ ii. If the Advance Directive does not have a specified ending time, the &lt;high
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2KlE4RSVEeGGzu7fmW9pXw" value="1"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_jmBiACseEeGQ5rkpDKAt8A" name="verifier" type="_9HiC0CsdEeGQ5rkpDKAt8A" association="_jmCJECseEeGQ5rkpDKAt8A">
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_d9hL8CsfEeGQ5rkpDKAt8A" value="*"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_d9hL8SsfEeGQ5rkpDKAt8A" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_-zdskOsKEeKDusM4GJHmkQ" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_-zdskesKEeKDusM4GJHmkQ"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_PGnCECsfEeGQ5rkpDKAt8A" name="custodian" type="_xSLI8CseEeGQ5rkpDKAt8A" association="_PGnpICsfEeGQ5rkpDKAt8A">
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_fOEN0CsfEeGQ5rkpDKAt8A" value="1"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_fOEN0SsfEeGQ5rkpDKAt8A" value="1"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_GTt-MCshEeGQ5rkpDKAt8A" name="reference" type="_N9j54CsgEeGQ5rkpDKAt8A" association="_GTulQCshEeGQ5rkpDKAt8A">
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_JfUXgCshEeGQ5rkpDKAt8A" value="*"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_JfUXgSshEeGQ5rkpDKAt8A" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_YzOIQOsNEeKDusM4GJHmkQ" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_YzOvUOsNEeKDusM4GJHmkQ"/>
     </ownedAttribute>
     <nestedClassifier xmi:type="uml:Class" xmi:id="_N9j54CsgEeGQ5rkpDKAt8A" name="Reference">
       <ownedComment xmi:id="_EPFBMDJZEeGpkfTDauvIVQ">
@@ -247,7 +247,7 @@ b. If a URL is referenced, then it SHOULD have a corresponding linkHTML element 
   <CDA:PropertyValidation xmi:id="_2KtnphSVEeGGzu7fmW9pXw" base_Property="_2KtnoxSVEeGGzu7fmW9pXw">
     <ruleId>CONF:8654</ruleId>
   </CDA:PropertyValidation>
-  <CDA:ValueSetConstraint xmi:id="_2KmS4BSVEeGGzu7fmW9pXw" base_Property="_2KlE3hSVEeGGzu7fmW9pXw">
+  <CDA:ValueSetConstraint xmi:id="_2KmS4BSVEeGGzu7fmW9pXw" base_Property="_2KlE3hSVEeGGzu7fmW9pXw" severity="WARNING">
     <reference href="../consol-vocab.uml#_2LHQRxSVEeGGzu7fmW9pXw"/>
     <ruleId>CONF:8651</ruleId>
   </CDA:ValueSetConstraint>
@@ -368,4 +368,5 @@ NOTE: The descriptions in this section differentiate between &quot;advance direc
   <CDA:PropertyValidation xmi:id="_MlCDAOMzEeGfv4R-kzpM0g" base_Property="_1RZdJxVdEeGQCvUGzi1kDQ">
     <ruleId>CONF:15340</ruleId>
   </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_cliqgO_HEeKbmOFfkMDo7w" base_Property="_2KlE3hSVEeGGzu7fmW9pXw"/>
 </xmi:XMI>

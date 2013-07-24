@@ -837,7 +837,7 @@ UNK.  If the code is something other than SNOMED, @nullFlavor SHOULD be OTH and 
         <specification xmi:type="uml:OpaqueExpression" xmi:id="_A5Q0kOcGEeGINOJ_SD9_dA">
           <language>Analysis</language>
           <language>OCL</language>
-          <body>targetSiteCodes MAY contain exactly one [1..1] qualifier</body>
+          <body>targetSiteCodes SHOULD contain zero or one [0..1] qualifier</body>
           <body>self.targetSiteCode->forAll(qualifier->size() = 1)</body>
         </specification>
       </ownedRule>
@@ -853,7 +853,7 @@ UNK.  If the code is something other than SNOMED, @nullFlavor SHOULD be OTH and 
         <specification xmi:type="uml:OpaqueExpression" xmi:id="_HEHNQOcGEeGINOJ_SD9_dA">
           <language>Analysis</language>
           <language>OCL</language>
-          <body>name MAY contain exactly one [1..1] @code=&quot;272741003&quot; laterality (CodeSystem: SNOMED-CT 2.16.840.1.113883.6.96)</body>
+          <body>name SHOULD contain zero or one [0..1] @code=&quot;272741003&quot; laterality (CodeSystem: SNOMED-CT 2.16.840.1.113883.6.96)</body>
           <body>self.targetSiteCode.qualifier->forAll(name->size() = 1 and name.code='272741003' and name.codeSystem = '2.16.840.1.113883.6.96')</body>
         </specification>
       </ownedRule>
@@ -869,7 +869,7 @@ UNK.  If the code is something other than SNOMED, @nullFlavor SHOULD be OTH and 
         <specification xmi:type="uml:OpaqueExpression" xmi:id="_Mgjn0OcGEeGINOJ_SD9_dA">
           <language>Analysis</language>
           <language>OCL</language>
-          <body>value SHOULD contain exactly one [1..1] @code, which SHOULD be selected from ValueSet TargetSite Qualifiers  2.16.840.1.113883.11.20.9.37</body>
+          <body>value SHOULD contain zero or one [0..1] @code, which SHOULD be selected from ValueSet TargetSite Qualifiers  2.16.840.1.113883.11.20.9.37</body>
           <body>self.targetSiteCode.qualifier->forAll((value.isNullFlavorDefined()) or (value->size() = 1 and not value.code.oclIsUndefined() and value.codeSystem = '2.16.840.1.113883.6.96'))</body>
         </specification>
       </ownedRule>
@@ -931,8 +931,8 @@ UNK.  If the code is something other than SNOMED, @nullFlavor SHOULD be OTH and 
       </ownedAttribute>
       <ownedAttribute xmi:id="_z63Wb-cDEeGINOJ_SD9_dA" name="targetSiteCode" visibility="private" aggregation="composite">
         <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_SP0tMOcFEeGINOJ_SD9_dA" value="*"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_SP-eMOcFEeGINOJ_SD9_dA" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_a4PFcOs4EeKDusM4GJHmkQ" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_a4PFces4EeKDusM4GJHmkQ"/>
         <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_339AIEo-Ed6c3qsAxlFHaQ"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_MUHDEOcNEeGINOJ_SD9_dA" name="entryRelationship" type="_RNbicOcNEeGINOJ_SD9_dA" association="_MUQ0EecNEeGINOJ_SD9_dA">
@@ -1852,6 +1852,7 @@ UNK.  If the code is something other than SNOMED, @nullFlavor SHOULD be OTH and 
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_J8keoCyqEeGMXrZ0DiQwGg">
     <ruleId>CONF:5284</ruleId>
+    <ruleId>CONF:10411</ruleId>
     <base_Property href=".controlled/consol-documents.uml#_7OuG8SylEeGMXrZ0DiQwGg"/>
   </CDA:PropertyValidation>
   <CDA:AssociationValidation xmi:id="_6HJMICyrEeGMXrZ0DiQwGg" severity="INFO">
@@ -2638,20 +2639,20 @@ UNK.  If the code is something other than SNOMED, @nullFlavor SHOULD be OTH and 
   <CDA:PropertyValidation xmi:id="_KsmMUOcFEeGINOJ_SD9_dA" base_Property="_z7BHYOcDEeGINOJ_SD9_dA">
     <ruleId>CONF:14396</ruleId>
   </CDA:PropertyValidation>
-  <CDA:PropertyValidation xmi:id="_OJ-5MOcFEeGINOJ_SD9_dA" base_Property="_z63Wb-cDEeGINOJ_SD9_dA">
+  <CDA:PropertyValidation xmi:id="_OJ-5MOcFEeGINOJ_SD9_dA" severity="WARNING" base_Property="_z63Wb-cDEeGINOJ_SD9_dA">
     <ruleId>CONF:14797</ruleId>
   </CDA:PropertyValidation>
   <CDA:ValueSetConstraint xmi:id="_RVNfEOcFEeGINOJ_SD9_dA" base_Property="_z63Wb-cDEeGINOJ_SD9_dA" severity="WARNING">
     <reference href="consol-vocab.uml#_VwxrcecFEeGINOJ_SD9_dA"/>
     <ruleId>CONF:14798</ruleId>
   </CDA:ValueSetConstraint>
-  <CDA:ConstraintValidation xmi:id="_Bn1KwOcGEeGINOJ_SD9_dA" severity="INFO" base_Constraint="_1uHKwOcFEeGINOJ_SD9_dA">
+  <CDA:ConstraintValidation xmi:id="_Bn1KwOcGEeGINOJ_SD9_dA" severity="WARNING" base_Constraint="_1uHKwOcFEeGINOJ_SD9_dA">
     <ruleId>CONF:14799</ruleId>
   </CDA:ConstraintValidation>
   <CDA:ConstraintValidation xmi:id="_E0i-YOcGEeGINOJ_SD9_dA" base_Constraint="_5vyQcOcFEeGINOJ_SD9_dA">
     <ruleId>CONF:14800</ruleId>
   </CDA:ConstraintValidation>
-  <CDA:ConstraintValidation xmi:id="_HTu9oOcGEeGINOJ_SD9_dA" severity="INFO" base_Constraint="_7RhwAOcFEeGINOJ_SD9_dA">
+  <CDA:ConstraintValidation xmi:id="_HTu9oOcGEeGINOJ_SD9_dA" severity="WARNING" base_Constraint="_7RhwAOcFEeGINOJ_SD9_dA">
     <ruleId>CONF:14801</ruleId>
   </CDA:ConstraintValidation>
   <CDA:ConstraintValidation xmi:id="_K_GcIOcGEeGINOJ_SD9_dA" base_Constraint="_9MavYOcFEeGINOJ_SD9_dA">
@@ -2763,7 +2764,7 @@ UNK.  If the code is something other than SNOMED, @nullFlavor SHOULD be OTH and 
   <CDA:AssociationValidation xmi:id="_As7u0PI1EeGu1M-cCXg0Dg" base_Association="__ZAo0PI0EeGu1M-cCXg0Dg">
     <ruleId>CONF:16793</ruleId>
   </CDA:AssociationValidation>
-  <CDA:AssociationValidation xmi:id="_BWuHsPKuEeGFUPBL8qS7yQ" base_Association="_9_jXk_KtEeGFUPBL8qS7yQ">
+  <CDA:AssociationValidation xmi:id="_BWuHsPKuEeGFUPBL8qS7yQ" severity="WARNING" base_Association="_9_jXk_KtEeGFUPBL8qS7yQ">
     <ruleId>CONF:8385</ruleId>
   </CDA:AssociationValidation>
   <CDA:CDATemplate xmi:id="_alEUkPKwEeGFUPBL8qS7yQ" base_Class="_TkyvwPKwEeGFUPBL8qS7yQ" templateId="2.16.840.1.113883.10.20.6.2.3">

@@ -8757,14 +8757,16 @@
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="AdvanceDirectiveObservation" eSuperTypes="urn:hl7-org:v3#//Observation">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
-      <details key="constraints.validation.error" value="AdvanceDirectiveObservationTemplateId AdvanceDirectiveObservationHasStartingTime AdvanceDirectiveObservationHasEndingTime AdvanceDirectiveObservationClassCode AdvanceDirectiveObservationMoodCode AdvanceDirectiveObservationId AdvanceDirectiveObservationCode AdvanceDirectiveObservationStatusCode AdvanceDirectiveObservationEffectiveTime AdvanceDirectiveObservationVerifierTime AdvanceDirectiveObservationVerifierTypeCode AdvanceDirectiveObservationVerifierParticipantRole AdvanceDirectiveObservationCustodianCustodianRoleCustodianEntityName AdvanceDirectiveObservationCustodianCustodianRoleClassCode AdvanceDirectiveObservationCustodianCustodianRolePlayingEntity AdvanceDirectiveObservationCustodianTypeCode AdvanceDirectiveObservationCustodianAdvanceDirectiveObservationCustodianRole AdvanceDirectiveObservationReferenceExternalDocumentId AdvanceDirectiveObservationReferenceTypeCode AdvanceDirectiveObservationReferenceExternalDocument"/>
+      <details key="constraints.validation.error" value="AdvanceDirectiveObservationTemplateId AdvanceDirectiveObservationHasStartingTime AdvanceDirectiveObservationHasEndingTime AdvanceDirectiveObservationClassCode AdvanceDirectiveObservationMoodCode AdvanceDirectiveObservationId AdvanceDirectiveObservationCodeP AdvanceDirectiveObservationStatusCode AdvanceDirectiveObservationEffectiveTime AdvanceDirectiveObservationVerifierTime AdvanceDirectiveObservationVerifierTypeCode AdvanceDirectiveObservationVerifierParticipantRole AdvanceDirectiveObservationCustodianCustodianRoleCustodianEntityName AdvanceDirectiveObservationCustodianCustodianRoleClassCode AdvanceDirectiveObservationCustodianCustodianRolePlayingEntity AdvanceDirectiveObservationCustodianTypeCode AdvanceDirectiveObservationCustodianAdvanceDirectiveObservationCustodianRole AdvanceDirectiveObservationReferenceExternalDocumentId AdvanceDirectiveObservationReferenceTypeCode AdvanceDirectiveObservationReferenceExternalDocument"/>
       <details key="templateId.root" value="2.16.840.1.113883.10.20.22.4.48"/>
       <details key="classCode" value="OBS"/>
       <details key="moodCode" value="EVN"/>
       <details key="code.codeSystem" value="2.16.840.1.113883.6.96"/>
       <details key="code.codeSystemName" value="SNOMEDCT"/>
+      <details key="constraints.validation.warning" value="AdvanceDirectiveObservationCode AdvanceDirectiveObservationVerifier AdvanceDirectiveObservationCustodian AdvanceDirectiveObservationReference AdvanceDirectiveObservationCustodianCustodianRoleAddr AdvanceDirectiveObservationCustodianCustodianRoleTelecom"/>
+      <details key="constraints.validation.dependOn.AdvanceDirectiveObservationCode"
+          value="AdvanceDirectiveObservationCodeP"/>
       <details key="statusCode.code" value="completed"/>
-      <details key="constraints.validation.warning" value="AdvanceDirectiveObservationVerifier AdvanceDirectiveObservationCustodian AdvanceDirectiveObservationReference AdvanceDirectiveObservationCustodianCustodianRoleAddr AdvanceDirectiveObservationCustodianCustodianRoleTelecom"/>
       <details key="constraints.validation.query" value="AdvanceDirectiveObservationVerifierTime AdvanceDirectiveObservationVerifierTypeCode AdvanceDirectiveObservationVerifierParticipantRole AdvanceDirectiveObservationCustodianCustodianRoleCustodianEntityName AdvanceDirectiveObservationCustodianCustodianRoleAddr AdvanceDirectiveObservationCustodianCustodianRoleClassCode AdvanceDirectiveObservationCustodianCustodianRoleTelecom AdvanceDirectiveObservationCustodianCustodianRolePlayingEntity AdvanceDirectiveObservationCustodianTypeCode AdvanceDirectiveObservationCustodianAdvanceDirectiveObservationCustodianRole AdvanceDirectiveObservationReferenceExternalDocumentTextMediaType AdvanceDirectiveObservationReferenceExternalDocumentTextReference AdvanceDirectiveObservationReferenceExternalDocumentId AdvanceDirectiveObservationReferenceExternalDocumentText AdvanceDirectiveObservationReferenceTypeCode AdvanceDirectiveObservationReferenceExternalDocument"/>
       <details key="constraints.validation.info" value="AdvanceDirectiveObservationReferenceExternalDocumentTextMediaType AdvanceDirectiveObservationReferenceExternalDocumentTextReference AdvanceDirectiveObservationReferenceExternalDocumentText"/>
     </eAnnotations>
@@ -8838,6 +8840,15 @@
       </eParameters>
     </eOperations>
     <eOperations name="AdvanceDirectiveObservationId" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
+      <eParameters name="context">
+        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations name="AdvanceDirectiveObservationCodeP" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
       <eParameters name="context">
         <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
@@ -11711,10 +11722,10 @@
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="PressureUlcerObservation" eSuperTypes="urn:hl7-org:v3#//Observation">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
-      <details key="constraints.validation.error" value="PressureUlcerObservationTemplateId PressureUlcerObservationTextReferenceValue PressureUlcerObservationHasTextReferenceValue PressureUlcerObservationTargetSiteQualifierName PressureUlcerObservationTargetSiteQualifierValue PressureUlcerObservationClassCode PressureUlcerObservationMoodCode PressureUlcerObservationId PressureUlcerObservationCodeP PressureUlcerObservationValueP PressureUlcerObservationTargetSiteCodeP PressureUlcerObservationEntryRelationship1Observation1ClassCode PressureUlcerObservationEntryRelationship1Observation1MoodCode PressureUlcerObservationEntryRelationship1Observation1CodeP PressureUlcerObservationEntryRelationship1Observation1Code PressureUlcerObservationEntryRelationship1Observation1Value PressureUlcerObservationEntryRelationship1TypeCode PressureUlcerObservationEntryRelationship1Observation1 PressureUlcerObservationEntryRelationship2Observation2ClassCode PressureUlcerObservationEntryRelationship2Observation2MoodCode PressureUlcerObservationEntryRelationship2Observation2CodeP PressureUlcerObservationEntryRelationship2Observation2Code PressureUlcerObservationEntryRelationship2Observation2Value PressureUlcerObservationEntryRelationship2TypeCode PressureUlcerObservationEntryRelationship2Observation2 PressureUlcerObservationEntryRelationship3Observation3ClassCode PressureUlcerObservationEntryRelationship3Observation3MoodCode PressureUlcerObservationEntryRelationship3Observation3CodeP PressureUlcerObservationEntryRelationship3Observation3Code PressureUlcerObservationEntryRelationship3Observation3Value PressureUlcerObservationEntryRelationship3TypeCode PressureUlcerObservationEntryRelationship3Observation3"/>
+      <details key="constraints.validation.error" value="PressureUlcerObservationTemplateId PressureUlcerObservationTextReferenceValue PressureUlcerObservationHasTextReferenceValue PressureUlcerObservationTargetSiteQualifierName PressureUlcerObservationTargetSiteQualifierValue PressureUlcerObservationClassCode PressureUlcerObservationMoodCode PressureUlcerObservationId PressureUlcerObservationCodeP PressureUlcerObservationValueP PressureUlcerObservationEntryRelationship1Observation1ClassCode PressureUlcerObservationEntryRelationship1Observation1MoodCode PressureUlcerObservationEntryRelationship1Observation1CodeP PressureUlcerObservationEntryRelationship1Observation1Code PressureUlcerObservationEntryRelationship1Observation1Value PressureUlcerObservationEntryRelationship1TypeCode PressureUlcerObservationEntryRelationship1Observation1 PressureUlcerObservationEntryRelationship2Observation2ClassCode PressureUlcerObservationEntryRelationship2Observation2MoodCode PressureUlcerObservationEntryRelationship2Observation2CodeP PressureUlcerObservationEntryRelationship2Observation2Code PressureUlcerObservationEntryRelationship2Observation2Value PressureUlcerObservationEntryRelationship2TypeCode PressureUlcerObservationEntryRelationship2Observation2 PressureUlcerObservationEntryRelationship3Observation3ClassCode PressureUlcerObservationEntryRelationship3Observation3MoodCode PressureUlcerObservationEntryRelationship3Observation3CodeP PressureUlcerObservationEntryRelationship3Observation3Code PressureUlcerObservationEntryRelationship3Observation3Value PressureUlcerObservationEntryRelationship3TypeCode PressureUlcerObservationEntryRelationship3Observation3"/>
       <details key="templateId.root" value="2.16.840.1.113883.10.20.22.4.70"/>
-      <details key="constraints.validation.warning" value="PressureUlcerObservationHasTextReference PressureUlcerObservationTargetSiteQualifierValueCode PressureUlcerObservationCode PressureUlcerObservationText PressureUlcerObservationValue PressureUlcerObservationTargetSiteCode PressureUlcerObservationEntryRelationship PressureUlcerObservationEntryRelationship2 PressureUlcerObservationEntryRelationship3"/>
-      <details key="constraints.validation.info" value="PressureUlcerObservationValueNullFlavor PressureUlcerObservationTargetSiteQualifier PressureUlcerObservationTargetSiteQualifierNameCode PressureUlcerObservationNegationInd"/>
+      <details key="constraints.validation.warning" value="PressureUlcerObservationHasTextReference PressureUlcerObservationTargetSiteQualifier PressureUlcerObservationTargetSiteQualifierNameCode PressureUlcerObservationTargetSiteQualifierValueCode PressureUlcerObservationCode PressureUlcerObservationText PressureUlcerObservationValue PressureUlcerObservationTargetSiteCode PressureUlcerObservationTargetSiteCodeP PressureUlcerObservationEntryRelationship PressureUlcerObservationEntryRelationship2 PressureUlcerObservationEntryRelationship3"/>
+      <details key="constraints.validation.info" value="PressureUlcerObservationValueNullFlavor PressureUlcerObservationNegationInd"/>
       <details key="classCode" value="OBS"/>
       <details key="moodCode" value="EVN"/>
       <details key="code.code" value="ASSERTION"/>
@@ -11727,6 +11738,8 @@
       <details key="value.codeSystemName" value="SNOMEDCT"/>
       <details key="targetSiteCode.codeSystem" value="2.16.840.1.113883.6.96"/>
       <details key="targetSiteCode.codeSystemName" value="SNOMEDCT"/>
+      <details key="constraints.validation.dependOn.PressureUlcerObservationTargetSiteCode"
+          value="PressureUlcerObservationTargetSiteCodeP"/>
       <details key="constraints.validation.query" value="PressureUlcerObservationEntryRelationship1Observation1ClassCode PressureUlcerObservationEntryRelationship1Observation1MoodCode PressureUlcerObservationEntryRelationship1Observation1CodeP PressureUlcerObservationEntryRelationship1Observation1Code PressureUlcerObservationEntryRelationship1Observation1Value PressureUlcerObservationEntryRelationship1TypeCode PressureUlcerObservationEntryRelationship1Observation1 PressureUlcerObservationEntryRelationship2Observation2ClassCode PressureUlcerObservationEntryRelationship2Observation2MoodCode PressureUlcerObservationEntryRelationship2Observation2CodeP PressureUlcerObservationEntryRelationship2Observation2Code PressureUlcerObservationEntryRelationship2Observation2Value PressureUlcerObservationEntryRelationship2TypeCode PressureUlcerObservationEntryRelationship2Observation2 PressureUlcerObservationEntryRelationship3Observation3ClassCode PressureUlcerObservationEntryRelationship3Observation3MoodCode PressureUlcerObservationEntryRelationship3Observation3CodeP PressureUlcerObservationEntryRelationship3Observation3Code PressureUlcerObservationEntryRelationship3Observation3Value PressureUlcerObservationEntryRelationship3TypeCode PressureUlcerObservationEntryRelationship3Observation3"/>
       <details key="constraints.validation.dependOn.PressureUlcerObservationEntryRelationship1Observation1Code"
           value="PressureUlcerObservationEntryRelationship1Observation1CodeP"/>
@@ -11948,7 +11961,7 @@
         </eGenericType>
       </eParameters>
     </eOperations>
-    <eOperations name="PressureUlcerObservationTargetSiteCode" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+    <eOperations name="PressureUlcerObservationTargetSiteCodeP" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
       <eParameters name="context">
         <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
@@ -11957,7 +11970,7 @@
         </eGenericType>
       </eParameters>
     </eOperations>
-    <eOperations name="PressureUlcerObservationTargetSiteCodeP" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+    <eOperations name="PressureUlcerObservationTargetSiteCode" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
       <eParameters name="context">
         <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
@@ -20149,13 +20162,13 @@
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="ConsultationNote" eSuperTypes="#//GeneralHeaderConstraints">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
-      <details key="constraints.validation.error" value="ConsultationNoteTemplateId ConsultationNoteHasAnAssementAndPlanSectionOrIndividualAssementAndPlanSections ConsultationNoteDoesNotHaveIndividualAssementAndPlanSectionsWhenAssementAndPlanSectionPresent ConsultationNoteDoesNotHaveChiefComplaintAndReasonForVisitWithChiefComplaintSectionOrReasonSection ConsultationNoteHasReasonForReferralOrReasonForVisit ConsultationNoteCode ConsultationNoteCodeP ConsultationNoteComponentOf ConsultationNoteHistoryOfPresentIllness ConsultationNoteInFulfillmentOf ConsultationNoteComponentOfEncompassingEncounter2ResponsiblePartyAssignedEntityHasPersonOrganizationOrBoth ConsultationNoteComponentOfEncompassingEncounter2ResponsiblePartyAssignedEntity ConsultationNoteComponentOfEncompassingEncounter2EncounterParticipantAssignedEntityHasPersonOrganizationOrBoth ConsultationNoteComponentOfEncompassingEncounter2EncounterParticipantAssignedEntity ConsultationNoteComponentOfEncompassingEncounter2EffectiveTime ConsultationNoteComponentOfEncompassingEncounter2Id ConsultationNoteComponentOfEncompassingEncounter ConsultationNoteInFulfillmentOfOrderId ConsultationNoteInFulfillmentOfOrder"/>
+      <details key="constraints.validation.error" value="ConsultationNoteTemplateId ConsultationNoteHasAnAssementAndPlanSectionOrIndividualAssementAndPlanSections ConsultationNoteDoesNotHaveIndividualAssementAndPlanSectionsWhenAssementAndPlanSectionPresent ConsultationNoteDoesNotHaveChiefComplaintAndReasonForVisitWithChiefComplaintSectionOrReasonSection ConsultationNoteHasReasonForReferralOrReasonForVisit ConsultationNoteCode ConsultationNoteCodeP ConsultationNoteComponentOf ConsultationNoteHistoryOfPresentIllness ConsultationNoteInFulfillmentOf ConsultationNoteComponentOfEncompassingEncounter2ResponsiblePartyAssignedEntityHasPersonOrganizationOrBoth ConsultationNoteComponentOfEncompassingEncounter2ResponsiblePartyAssignedEntity ConsultationNoteComponentOfEncompassingEncounter2EncounterParticipantAssignedEntityHasPersonOrganizationOrBoth ConsultationNoteComponentOfEncompassingEncounter2EncounterParticipantAssignedEntity ConsultationNoteComponentOfEncompassingEncounter2EffectiveTime ConsultationNoteComponentOfEncompassingEncounter2Id ConsultationNoteComponentOfEncompassingEncounter ConsultationNoteInFulfillmentOfOrderId"/>
       <details key="templateId.root" value="2.16.840.1.113883.10.20.22.1.4"/>
       <details key="code.codeSystem" value="2.16.840.1.113883.6.1"/>
       <details key="code.codeSystemName" value="LOINC"/>
       <details key="constraints.validation.dependOn.ConsultationNoteCode" value="ConsultationNoteCodeP"/>
       <details key="constraints.validation.info" value="ConsultationNoteAssessmentSection ConsultationNoteAssessmentAndPlanSection ConsultationNotePlanOfCareSection ConsultationNoteReasonForReferralSection ConsultationNoteReasonForVisitSection ConsultationNoteAllergiesSection ConsultationNoteChiefComplaintSection ConsultationNoteChiefComplaintAndReasonForVisitSection ConsultationNoteFamilyHistorySection ConsultationNoteGeneralStatusSection ConsultationNoteHistoryOfPastIllnessSection ConsultationNoteImmunizationsSection ConsultationNoteMedicationsSectionEntriesOptional ConsultationNoteProblemSectionEntriesOptional ConsultationNoteProceduresSectionEntriesOptional ConsultationNoteResultsSectionEntriesOptional ConsultationNoteReviewOfSystemsSection ConsultationNoteSocialHistorySection ConsultationNoteVitalSignsSectionEntriesOptional ConsultationNoteComponentOfEncompassingEncounter2ResponsibleParty ConsultationNoteComponentOfEncompassingEncounter2EncounterParticipant"/>
-      <details key="constraints.validation.warning" value="ConsultationNotePhysicalExamSection"/>
+      <details key="constraints.validation.warning" value="ConsultationNotePhysicalExamSection ConsultationNoteInFulfillmentOfOrder"/>
       <details key="constraints.validation.query" value="ConsultationNoteComponentOfEncompassingEncounter2ResponsiblePartyAssignedEntityHasPersonOrganizationOrBoth ConsultationNoteComponentOfEncompassingEncounter2ResponsiblePartyAssignedEntity ConsultationNoteComponentOfEncompassingEncounter2EncounterParticipantAssignedEntityHasPersonOrganizationOrBoth ConsultationNoteComponentOfEncompassingEncounter2EncounterParticipantAssignedEntity ConsultationNoteComponentOfEncompassingEncounter2EffectiveTime ConsultationNoteComponentOfEncompassingEncounter2Id ConsultationNoteComponentOfEncompassingEncounter2ResponsibleParty ConsultationNoteComponentOfEncompassingEncounter2EncounterParticipant ConsultationNoteComponentOfEncompassingEncounter ConsultationNoteInFulfillmentOfOrderId ConsultationNoteInFulfillmentOfOrder"/>
     </eAnnotations>
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolConsultationNoteComponentOf">
@@ -20172,7 +20185,7 @@
       <details key="constraints.validation.error" value="EncounterParticipantAssignedEntityHasPersonOrganizationOrBoth EncounterParticipantAssignedEntity"/>
     </eAnnotations>
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolConsultationNoteInFulfillmentOf">
-      <details key="constraints.validation.error" value="InFulfillmentOfOrder"/>
+      <details key="constraints.validation.warning" value="InFulfillmentOfOrder"/>
     </eAnnotations>
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolConsultationNoteInFulfillmentOfOrder">
       <details key="constraints.validation.error" value="OrderId"/>

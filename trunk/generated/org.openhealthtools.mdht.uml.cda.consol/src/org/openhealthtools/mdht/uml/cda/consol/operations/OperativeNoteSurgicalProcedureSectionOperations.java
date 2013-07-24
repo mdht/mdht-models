@@ -77,7 +77,6 @@ public class OperativeNoteSurgicalProcedureSectionOperations extends SectionOper
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.7.14')
 	 * @param operativeNoteSurgicalProcedureSection The receiving '<em><b>Operative Note Surgical Procedure Section</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -142,9 +141,6 @@ public class OperativeNoteSurgicalProcedureSectionOperations extends SectionOper
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * (self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and 
-	 * let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in 
-	 * value.code = '10223-6' and value.codeSystem = '2.16.840.1.113883.6.1')
 	 * @param operativeNoteSurgicalProcedureSection The receiving '<em><b>Operative Note Surgical Procedure Section</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -207,7 +203,6 @@ public class OperativeNoteSurgicalProcedureSectionOperations extends SectionOper
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * (self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined())
 	 * @param operativeNoteSurgicalProcedureSection The receiving '<em><b>Operative Note Surgical Procedure Section</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -270,7 +265,6 @@ public class OperativeNoteSurgicalProcedureSectionOperations extends SectionOper
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * not self.text.oclIsUndefined()
 	 * @param operativeNoteSurgicalProcedureSection The receiving '<em><b>Operative Note Surgical Procedure Section</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -333,7 +327,6 @@ public class OperativeNoteSurgicalProcedureSectionOperations extends SectionOper
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * (self.title.oclIsUndefined() or self.title.isNullFlavorUndefined()) implies (not self.title.oclIsUndefined())
 	 * @param operativeNoteSurgicalProcedureSection The receiving '<em><b>Operative Note Surgical Procedure Section</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
