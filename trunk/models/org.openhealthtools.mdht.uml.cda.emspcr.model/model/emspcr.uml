@@ -796,12 +796,8 @@ DPersonnel.03 Middle: @ENXP=&quot;GIV&quot;</body>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_IoAwGdICEeKRzPZKi7WbBQ" value="1"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_IoG2sdICEeKRzPZKi7WbBQ" name="historyOfCondition" type="_5XgZ4IzdEeGnhceUMXltng" aggregation="composite" association="_IoG2sNICEeKRzPZKi7WbBQ">
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_IoG2s9ICEeKRzPZKi7WbBQ" value="1"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_IoG2stICEeKRzPZKi7WbBQ" value="1"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:id="_IoG2uNICEeKRzPZKi7WbBQ" name="historyOfProceduresOrganizer" type="_HLO9kIzgEeGnhceUMXltng" aggregation="composite" association="_IoG2t9ICEeKRzPZKi7WbBQ">
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_IoG2utICEeKRzPZKi7WbBQ" value="1"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_IoG2udICEeKRzPZKi7WbBQ" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_EkECgPeeEeK_n7ZHGRzt1Q" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_EkECgfeeEeK_n7ZHGRzt1Q"/>
       </ownedAttribute>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_tvaNUmlaEeG4boS-IbG8Zw" memberEnd="_tvaNUGlaEeG4boS-IbG8Zw _tva0YGlaEeG4boS-IbG8Zw">
@@ -1018,8 +1014,8 @@ DPersonnel.03 Middle: @ENXP=&quot;GIV&quot;</body>
         <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_vJtnoEAMEd6wZe6nFLrjsw"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_InP7EdICEeKRzPZKi7WbBQ" name="advancedDirectiveObservation" type="_xCcE0Iy7EeGnhceUMXltng" aggregation="composite" association="_InP7ENICEeKRzPZKi7WbBQ">
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_InP7E9ICEeKRzPZKi7WbBQ" value="1"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_InP7EtICEeKRzPZKi7WbBQ" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_S4Kz8PfjEeK_n7ZHGRzt1Q" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_S4Kz8ffjEeK_n7ZHGRzt1Q" value="1"/>
       </ownedAttribute>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_nSjIgH9cEeGht55Sz1eBOw" name="AllergiesAndAdverseReactionsSection">
@@ -3464,12 +3460,6 @@ ICD-10 code (D66, D67, D68) and negationIndicator should be TRUE.</body>
         <defaultValue xmi:type="uml:LiteralString" xmi:id="_GEDk88OxEeKN86BM1f2PZA" value="EVN"/>
       </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_IoG2t9ICEeKRzPZKi7WbBQ" memberEnd="_IoG2uNICEeKRzPZKi7WbBQ _IoG2u9ICEeKRzPZKi7WbBQ">
-      <ownedEnd xmi:id="_IoG2u9ICEeKRzPZKi7WbBQ" type="_VtMvAIzcEeGnhceUMXltng" aggregation="composite" association="_IoG2t9ICEeKRzPZKi7WbBQ">
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_IoG2vdICEeKRzPZKi7WbBQ" value="1"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_IoG2vNICEeKRzPZKi7WbBQ" value="1"/>
-      </ownedEnd>
-    </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_HLO9kIzgEeGnhceUMXltng" name="HistoryOfProceduresOrganizer">
       <generalization xmi:id="_Hx2RoIzgEeGnhceUMXltng">
         <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_B6aX4EbvEd6besF9iFIJkQ"/>
@@ -3856,7 +3846,7 @@ Complaint site is required if complaint is type &quot;Chief complaint&quot;</bod
 If a substance is recorded as not given, it shall be recorded with a negationInd =True, and with an entryRelationship such that it&#xD;
 SHALL contain exactly one [1..1] @typeCode=&quot;RSON&quot; Has reason (CodeSystem: HL7ActRelationshipType 2.16.840.1.113883.5.1002)&#xD;
 SHALL contain exactly one [1..1] @inversionInd=&quot;true&quot; True&#xD;
-SHALL contain exactly one /Observation with code drawn from  2.16.840.1.113883.17.3.5.42 Medication omission reason and value = &quot;Assertion.&quot;</body>
+SHALL contain exactly one /Observation with code = &quot;Assertion&quot; and value drawn from  2.16.840.1.113883.17.3.5.42 Medication omission reason</body>
         </ownedComment>
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EBooleanObject"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_E6D5mZowEeG_FLcaRgAa7g" value="1"/>
@@ -6328,6 +6318,9 @@ This is a superset of both value sets: the question is the same, even if the .90
         <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_P1-iQFhWEeK-i8RB1gvLUA" name="value" visibility="private" aggregation="composite">
+        <ownedComment xmi:id="_b_fH8PeaEeK_n7ZHGRzt1Q">
+          <body>Note: CPR procedures have appropriate values &quot;Not Attempted-Considered Futile,&quot; &quot;Not Attempted-DNR Orders.&quot; &quot;Not Attempted-Signs of Circulation&quot;; other procedures have values &quot;Contraindication Noted,&quot; &quot;Denied By Order,&quot; &quot;Refused,&quot; &quot;Unable to Complete&quot;</body>
+        </ownedComment>
         <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_T6FQ4FhWEeK-i8RB1gvLUA" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_T6FQ4VhWEeK-i8RB1gvLUA" value="1"/>
@@ -7436,10 +7429,6 @@ UCUM units SHOULD be &quot;[mi_i]&quot;</body>
   <CDA:PropertyValidation xmi:id="_AQcmcIfiEeGgT-SDukOzlw" base_Property="_iJRQUHSBEeGa4IXs2ghZEw">
     <ruleId>CONF:10031</ruleId>
   </CDA:PropertyValidation>
-  <CDA:CodeSystemConstraint xmi:id="_BISvcIqKEeGg0rC5c-AN-g" base_Property="_ppT5kHtAEeGs2I-Db78R9w">
-    <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_VXEOQCF_Ed-M3adQxwHq4g"/>
-    <ruleId>CONF:10036</ruleId>
-  </CDA:CodeSystemConstraint>
   <CDA:AssociationValidation xmi:id="_C0HooIy6EeGnhceUMXltng" base_Association="_jO5UkmldEeG4boS-IbG8Zw">
     <ruleId>CONF:10006</ruleId>
   </CDA:AssociationValidation>
@@ -8396,7 +8385,7 @@ UCUM units SHOULD be &quot;[mi_i]&quot;</body>
     <ruleId>CONF:10106</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:CodeSystemConstraint xmi:id="_FOEfwHSWEeGa4IXs2ghZEw" base_Property="_Q2yEwXSVEeGa4IXs2ghZEw">
-    <reference href="emspcr-vocab.uml#_M5tLoMcdEeGjDJAyT0XW9Q"/>
+    <reference href="emspcr-vocab.uml#_t_IUYMcdEeGjDJAyT0XW9Q"/>
     <ruleId>CONF:10108</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:CodeSystemConstraint xmi:id="_h140wHSWEeGa4IXs2ghZEw" code="67494-5" displayName="Injury Mechanism" base_Property="_e-JLkHSWEeGa4IXs2ghZEw">
@@ -9160,6 +9149,7 @@ UCUM units SHOULD be &quot;[mi_i]&quot;</body>
     <ruleId>CONF:10034</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:ValueSetConstraint xmi:id="_qGYPQMcfEeGjDJAyT0XW9Q" base_Property="_skFz8HSCEeGa4IXs2ghZEw">
+    <reference href="emspcr-vocab.uml#_gyJxQLM0EeKq7sXu8zXehQ"/>
     <ruleId>CONF:10032</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:AssociationValidation xmi:id="_nKgawMdxEeGtwJlNcukY2g" base_Association="_jJW5gMdxEeGtwJlNcukY2g">
@@ -10072,8 +10062,6 @@ UCUM units SHOULD be &quot;[mi_i]&quot;</body>
   <CDA:AssociationValidation xmi:id="_IqZWFtICEeKRzPZKi7WbBQ" base_Association="_IoG2sNICEeKRzPZKi7WbBQ"/>
   <CDA:Entry xmi:id="_IqZWF9ICEeKRzPZKi7WbBQ" base_Association="_IoG2sNICEeKRzPZKi7WbBQ" typeCode="DRIV"/>
   <CDA:CDATemplate xmi:id="_IqZWGNICEeKRzPZKi7WbBQ" base_Class="_5XgZ4IzdEeGnhceUMXltng" templateId="2.16.840.1.1133883.17.3.10.1.61" assigningAuthorityName="NEMSIS"/>
-  <CDA:AssociationValidation xmi:id="_IqZWGdICEeKRzPZKi7WbBQ" base_Association="_IoG2t9ICEeKRzPZKi7WbBQ"/>
-  <CDA:Entry xmi:id="_IqZWGtICEeKRzPZKi7WbBQ" base_Association="_IoG2t9ICEeKRzPZKi7WbBQ" typeCode="DRIV"/>
   <CDA:CDATemplate xmi:id="_IqZWG9ICEeKRzPZKi7WbBQ" base_Class="_HLO9kIzgEeGnhceUMXltng" templateId="2.16.840.1.1133883.17.3.10.1.62" assigningAuthorityName="NEMSIS"/>
   <CDA:AssociationValidation xmi:id="_IqZWHNICEeKRzPZKi7WbBQ" base_Association="_IoM9UNICEeKRzPZKi7WbBQ"/>
   <CDA:Entry xmi:id="_IqZWHdICEeKRzPZKi7WbBQ" base_Association="_IoM9UNICEeKRzPZKi7WbBQ" typeCode="DRIV"/>
@@ -10635,4 +10623,7 @@ UCUM units SHOULD be &quot;[mi_i]&quot;</body>
   <CDA:PropertyValidation xmi:id="_1M-yQNOXEeKU4pFWxuU9dw" base_Property="_1M-LMNOXEeKU4pFWxuU9dw">
     <ruleId>CONF:7304</ruleId>
   </CDA:PropertyValidation>
+  <CDA:ValueSetConstraint xmi:id="_6IOWIPfnEeK_n7ZHGRzt1Q" base_Property="_ppT5kHtAEeGs2I-Db78R9w">
+    <reference href="../../org.openhealthtools.mdht.uml.cda.consol.model/model/consol-vocab.uml#_LGTEUDVREeGIw7CntkyPQw"/>
+  </CDA:ValueSetConstraint>
 </xmi:XMI>
