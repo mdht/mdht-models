@@ -63,76 +63,40 @@
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_GRPDYHSKEeGa4IXs2ghZEw" name="CardiacRhythmReading">
       <ownedLiteral xmi:id="_cMFT8MFTEeGyGv5RKvEgDA" name="LA12904-1"/>
-      <ownedLiteral xmi:id="_cMMBoMFTEeGyGv5RKvEgDA" name="LA12904-1"/>
       <ownedLiteral xmi:id="_cMSvUMFTEeGyGv5RKvEgDA" name="LA17059-9"/>
-      <ownedLiteral xmi:id="_cMY18MFTEeGyGv5RKvEgDA" name="LA17059-9"/>
       <ownedLiteral xmi:id="_cMfjoMFTEeGyGv5RKvEgDA" name="LA17068-0"/>
-      <ownedLiteral xmi:id="_cMlqQMFTEeGyGv5RKvEgDA" name="LA17068-0"/>
-      <ownedLiteral xmi:id="_cMsX8MFTEeGyGv5RKvEgDA" name="LA17070-6"/>
       <ownedLiteral xmi:id="_cMyekMFTEeGyGv5RKvEgDA" name="LA17070-6"/>
       <ownedLiteral xmi:id="_cM5MQMFTEeGyGv5RKvEgDA" name="LA17071-4"/>
-      <ownedLiteral xmi:id="_cM_58MFTEeGyGv5RKvEgDA" name="LA17071-4"/>
-      <ownedLiteral xmi:id="_cNGnoMFTEeGyGv5RKvEgDA" name="LA17072-2"/>
       <ownedLiteral xmi:id="_cNNVUMFTEeGyGv5RKvEgDA" name="LA17072-2"/>
-      <ownedLiteral xmi:id="_cNTb8MFTEeGyGv5RKvEgDA" name="LA17073-0"/>
       <ownedLiteral xmi:id="_cNaJoMFTEeGyGv5RKvEgDA" name="LA17073-0"/>
-      <ownedLiteral xmi:id="_cNg3UMFTEeGyGv5RKvEgDA" name="LA17074-8"/>
       <ownedLiteral xmi:id="_cNm98MFTEeGyGv5RKvEgDA" name="LA17074-8"/>
-      <ownedLiteral xmi:id="_cNtroMFTEeGyGv5RKvEgDA" name="LA17083-9"/>
       <ownedLiteral xmi:id="_cOBNoMFTEeGyGv5RKvEgDA" name="LA17083-9"/>
-      <ownedLiteral xmi:id="_cOH7UMFTEeGyGv5RKvEgDA" name="LA17084-7"/>
       <ownedLiteral xmi:id="_cOOB8MFTEeGyGv5RKvEgDA" name="LA17084-7"/>
-      <ownedLiteral xmi:id="_cOUvoMFTEeGyGv5RKvEgDA" name="LA17085-4"/>
       <ownedLiteral xmi:id="_cOa2QMFTEeGyGv5RKvEgDA" name="LA17085-4"/>
-      <ownedLiteral xmi:id="_cOhj8MFTEeGyGv5RKvEgDA" name="LA17086-2"/>
       <ownedLiteral xmi:id="_cOnqkMFTEeGyGv5RKvEgDA" name="LA17086-2"/>
-      <ownedLiteral xmi:id="_cOtxMMFTEeGyGv5RKvEgDA" name="LA17087-0"/>
       <ownedLiteral xmi:id="_cO0e4MFTEeGyGv5RKvEgDA" name="LA17087-0"/>
-      <ownedLiteral xmi:id="_cO6lgMFTEeGyGv5RKvEgDA" name="LA17088-8"/>
       <ownedLiteral xmi:id="_cPBTMMFTEeGyGv5RKvEgDA" name="LA17088-8"/>
-      <ownedLiteral xmi:id="_cPHZ0MFTEeGyGv5RKvEgDA" name="LA17089-6"/>
       <ownedLiteral xmi:id="_cPOHgMFTEeGyGv5RKvEgDA" name="LA17089-6"/>
-      <ownedLiteral xmi:id="_cPUOIMFTEeGyGv5RKvEgDA" name="LA17090-4"/>
       <ownedLiteral xmi:id="_cPaUwMFTEeGyGv5RKvEgDA" name="LA17090-4"/>
-      <ownedLiteral xmi:id="_cPhCcMFTEeGyGv5RKvEgDA" name="LA17091-2"/>
       <ownedLiteral xmi:id="_cPnJEMFTEeGyGv5RKvEgDA" name="LA17091-2"/>
-      <ownedLiteral xmi:id="_cPt2wMFTEeGyGv5RKvEgDA" name="LA17093-8"/>
       <ownedLiteral xmi:id="_cPz9YMFTEeGyGv5RKvEgDA" name="LA17093-8"/>
-      <ownedLiteral xmi:id="_cP6rEMFTEeGyGv5RKvEgDA" name="LA17094-6"/>
       <ownedLiteral xmi:id="_cQAxsMFTEeGyGv5RKvEgDA" name="LA17094-6"/>
-      <ownedLiteral xmi:id="_cQHfYMFTEeGyGv5RKvEgDA" name="LA17095-3"/>
       <ownedLiteral xmi:id="_cQNmAMFTEeGyGv5RKvEgDA" name="LA17095-3"/>
-      <ownedLiteral xmi:id="_cQTsoMFTEeGyGv5RKvEgDA" name="LA17096-1"/>
       <ownedLiteral xmi:id="_cQaaUMFTEeGyGv5RKvEgDA" name="LA17096-1"/>
-      <ownedLiteral xmi:id="_cQhIAMFTEeGyGv5RKvEgDA" name="LA17097-9"/>
       <ownedLiteral xmi:id="_cQnOoMFTEeGyGv5RKvEgDA" name="LA17097-9"/>
-      <ownedLiteral xmi:id="_cQt8UMFTEeGyGv5RKvEgDA" name="LA17098-7"/>
-      <ownedLiteral xmi:id="_cQ0C8MFTEeGyGv5RKvEgDA" name="LA17098-7"/>
-      <ownedLiteral xmi:id="_cQ6woMFTEeGyGv5RKvEgDA" name="LA17099-5"/>
+      <ownedLiteral xmi:id="_cQ0C8MFTEeGyGv5RKvEgDA" name="LA17394-0"/>
       <ownedLiteral xmi:id="_cRA3QMFTEeGyGv5RKvEgDA" name="LA17099-5"/>
-      <ownedLiteral xmi:id="_cRG94MFTEeGyGv5RKvEgDA" name="LA17100-1"/>
       <ownedLiteral xmi:id="_cRNrkMFTEeGyGv5RKvEgDA" name="LA17100-1"/>
-      <ownedLiteral xmi:id="_cRUZQMFTEeGyGv5RKvEgDA" name="LA17101-9"/>
       <ownedLiteral xmi:id="_cRaf4MFTEeGyGv5RKvEgDA" name="LA17101-9"/>
-      <ownedLiteral xmi:id="_cRgmgMFTEeGyGv5RKvEgDA" name="LA17703-2"/>
       <ownedLiteral xmi:id="_cRmtIMFTEeGyGv5RKvEgDA" name="LA17703-2"/>
-      <ownedLiteral xmi:id="_cRta0MFTEeGyGv5RKvEgDA" name="LA17704-0"/>
       <ownedLiteral xmi:id="_cRzhcMFTEeGyGv5RKvEgDA" name="LA17704-0"/>
-      <ownedLiteral xmi:id="_cR5oEMFTEeGyGv5RKvEgDA" name="LA17705-7"/>
       <ownedLiteral xmi:id="_cR_usMFTEeGyGv5RKvEgDA" name="LA17705-7"/>
-      <ownedLiteral xmi:id="_cSGcYMFTEeGyGv5RKvEgDA" name="LA17706-5"/>
       <ownedLiteral xmi:id="_cSMjAMFTEeGyGv5RKvEgDA" name="LA17706-5"/>
-      <ownedLiteral xmi:id="_cSSpoMFTEeGyGv5RKvEgDA" name="LA17708-1"/>
       <ownedLiteral xmi:id="_cSYwQMFTEeGyGv5RKvEgDA" name="LA17708-1"/>
-      <ownedLiteral xmi:id="_cSe24MFTEeGyGv5RKvEgDA" name="LA17718-0"/>
       <ownedLiteral xmi:id="_cSlkkMFTEeGyGv5RKvEgDA" name="LA17718-0"/>
-      <ownedLiteral xmi:id="_cSrrMMFTEeGyGv5RKvEgDA" name="LA18205-7"/>
       <ownedLiteral xmi:id="_cSxx0MFTEeGyGv5RKvEgDA" name="LA18205-7"/>
-      <ownedLiteral xmi:id="_cS34cMFTEeGyGv5RKvEgDA" name="LA18206-5"/>
       <ownedLiteral xmi:id="_cS9_EMFTEeGyGv5RKvEgDA" name="LA18206-5"/>
-      <ownedLiteral xmi:id="_cTEswMFTEeGyGv5RKvEgDA" name="LA18207-3"/>
       <ownedLiteral xmi:id="_cTKzYMFTEeGyGv5RKvEgDA" name="LA18207-3"/>
-      <ownedLiteral xmi:id="_cTQ6AMFTEeGyGv5RKvEgDA" name="LA18208-1"/>
       <ownedLiteral xmi:id="_cTXAoMFTEeGyGv5RKvEgDA" name="LA18208-1"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_YvxbQHSKEeGa4IXs2ghZEw" name="AlcoholDrugUseIndicator">
@@ -661,7 +625,7 @@
       <ownedLiteral xmi:id="_dAKcQMFTEeGyGv5RKvEgDA" name="LA17393-2"/>
       <ownedLiteral xmi:id="_dARJ8MFTEeGyGv5RKvEgDA" name="LA17394-0"/>
       <ownedLiteral xmi:id="_dAXQkMFTEeGyGv5RKvEgDA" name="LA17396-5"/>
-      <ownedLiteral xmi:id="_dAd-QMFTEeGyGv5RKvEgDA" name="LA17397-3"/>
+      <ownedLiteral xmi:id="_dAd-QMFTEeGyGv5RKvEgDA" name="TMP-LA17397-3a"/>
       <ownedLiteral xmi:id="_dAkE4MFTEeGyGv5RKvEgDA" name="LA17713-1"/>
       <ownedLiteral xmi:id="_dAqykMFTEeGyGv5RKvEgDA" name="LA17714-9"/>
       <ownedLiteral xmi:id="_dAw5MMFTEeGyGv5RKvEgDA" name="LA18266-9"/>
@@ -673,6 +637,7 @@
       <ownedLiteral xmi:id="_dBXWIMFTEeGyGv5RKvEgDA" name="LA9540-1"/>
       <ownedLiteral xmi:id="_dBeD0MFTEeGyGv5RKvEgDA" name="LA9541-9"/>
       <ownedLiteral xmi:id="_dBkKcMFTEeGyGv5RKvEgDA" name="LA9548-4"/>
+      <ownedLiteral xmi:id="_hwt7kPfuEeK_n7ZHGRzt1Q" name="TMP-LA17397-3b"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_Z-TuIHSOEeGa4IXs2ghZEw" name="ProviderRole">
       <ownedLiteral xmi:id="_dBq4IMFTEeGyGv5RKvEgDA" name="LA15276-1"/>
@@ -913,7 +878,7 @@
       <ownedLiteral xmi:id="_dWHeIMFTEeGyGv5RKvEgDA" name="LA17393-2"/>
       <ownedLiteral xmi:id="_dWNkwMFTEeGyGv5RKvEgDA" name="LA17394-0"/>
       <ownedLiteral xmi:id="_dWUScMFTEeGyGv5RKvEgDA" name="LA17396-5"/>
-      <ownedLiteral xmi:id="_dWaZEMFTEeGyGv5RKvEgDA" name="LA17397-3"/>
+      <ownedLiteral xmi:id="_dWaZEMFTEeGyGv5RKvEgDA" name="TMP-LA17397-3a"/>
       <ownedLiteral xmi:id="_dWhGwMFTEeGyGv5RKvEgDA" name="LA17489-8"/>
       <ownedLiteral xmi:id="_dWn0cMFTEeGyGv5RKvEgDA" name="LA17490-6"/>
       <ownedLiteral xmi:id="_dWt7EMFTEeGyGv5RKvEgDA" name="LA17713-1"/>
@@ -927,6 +892,7 @@
       <ownedLiteral xmi:id="_dXhzYMFTEeGyGv5RKvEgDA" name="LA9540-1"/>
       <ownedLiteral xmi:id="_dXohEMFTEeGyGv5RKvEgDA" name="LA9541-9"/>
       <ownedLiteral xmi:id="_dXunsMFTEeGyGv5RKvEgDA" name="LA9548-4"/>
+      <ownedLiteral xmi:id="_TSTKMPfuEeK_n7ZHGRzt1Q" name="TMP-LA17397-3b"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_wrYGgHSPEeGa4IXs2ghZEw" name="VehiclePassengerLocation">
       <ownedLiteral xmi:id="_dX1VYMFTEeGyGv5RKvEgDA" name="LA17361-9"/>
@@ -1592,76 +1558,40 @@
   <term:ValueSetCode xmi:id="_cL34kcFTEeGyGv5RKvEgDA" conceptName="Yes, sustained for 20 consecutive minutes" base_EnumerationLiteral="_cL34kMFTEeGyGv5RKvEgDA" xxxxx="LA17077-1"/>
   <term:ValueSetCode xmi:id="_cL-mQcFTEeGyGv5RKvEgDA" conceptName="No" base_EnumerationLiteral="_cL-mQMFTEeGyGv5RKvEgDA" xxxxx="LA32-8"/>
   <term:ValueSetCode xmi:id="_cMF7AMFTEeGyGv5RKvEgDA" conceptName="Artifact" base_EnumerationLiteral="_cMFT8MFTEeGyGv5RKvEgDA" xxxxx="LA12904-1"/>
-  <term:ValueSetCode xmi:id="_cMMBocFTEeGyGv5RKvEgDA" conceptName="Artifact" base_EnumerationLiteral="_cMMBoMFTEeGyGv5RKvEgDA" xxxxx="LA12904-1"/>
   <term:ValueSetCode xmi:id="_cMSvUcFTEeGyGv5RKvEgDA" conceptName="Other (not listed)" base_EnumerationLiteral="_cMSvUMFTEeGyGv5RKvEgDA" xxxxx="LA17059-9"/>
-  <term:ValueSetCode xmi:id="_cMY18cFTEeGyGv5RKvEgDA" conceptName="Other (not listed)" base_EnumerationLiteral="_cMY18MFTEeGyGv5RKvEgDA" xxxxx="LA17059-9"/>
   <term:ValueSetCode xmi:id="_cMfjocFTEeGyGv5RKvEgDA" conceptName="Asystole" base_EnumerationLiteral="_cMfjoMFTEeGyGv5RKvEgDA" xxxxx="LA17068-0"/>
-  <term:ValueSetCode xmi:id="_cMlqQcFTEeGyGv5RKvEgDA" conceptName="Asystole" base_EnumerationLiteral="_cMlqQMFTEeGyGv5RKvEgDA" xxxxx="LA17068-0"/>
-  <term:ValueSetCode xmi:id="_cMsX8cFTEeGyGv5RKvEgDA" conceptName="PEA" base_EnumerationLiteral="_cMsX8MFTEeGyGv5RKvEgDA" xxxxx="LA17070-6"/>
   <term:ValueSetCode xmi:id="_cMyekcFTEeGyGv5RKvEgDA" conceptName="PEA" base_EnumerationLiteral="_cMyekMFTEeGyGv5RKvEgDA" xxxxx="LA17070-6"/>
   <term:ValueSetCode xmi:id="_cM5MQcFTEeGyGv5RKvEgDA" conceptName="Unknown AED non-shockable rhythm" base_EnumerationLiteral="_cM5MQMFTEeGyGv5RKvEgDA" xxxxx="LA17071-4"/>
-  <term:ValueSetCode xmi:id="_cM_58cFTEeGyGv5RKvEgDA" conceptName="Unknown AED non-shockable rhythm" base_EnumerationLiteral="_cM_58MFTEeGyGv5RKvEgDA" xxxxx="LA17071-4"/>
-  <term:ValueSetCode xmi:id="_cNHOsMFTEeGyGv5RKvEgDA" conceptName="Unknown AED shockable rhythm" base_EnumerationLiteral="_cNGnoMFTEeGyGv5RKvEgDA" xxxxx="LA17072-2"/>
   <term:ValueSetCode xmi:id="_cNNVUcFTEeGyGv5RKvEgDA" conceptName="Unknown AED shockable rhythm" base_EnumerationLiteral="_cNNVUMFTEeGyGv5RKvEgDA" xxxxx="LA17072-2"/>
-  <term:ValueSetCode xmi:id="_cNUDAMFTEeGyGv5RKvEgDA" conceptName="Ventricular fibrillation" base_EnumerationLiteral="_cNTb8MFTEeGyGv5RKvEgDA" xxxxx="LA17073-0"/>
   <term:ValueSetCode xmi:id="_cNaJocFTEeGyGv5RKvEgDA" conceptName="Ventricular fibrillation" base_EnumerationLiteral="_cNaJoMFTEeGyGv5RKvEgDA" xxxxx="LA17073-0"/>
-  <term:ValueSetCode xmi:id="_cNg3UcFTEeGyGv5RKvEgDA" conceptName="Ventricular tachycardia-pulseless" base_EnumerationLiteral="_cNg3UMFTEeGyGv5RKvEgDA" xxxxx="LA17074-8"/>
   <term:ValueSetCode xmi:id="_cNm98cFTEeGyGv5RKvEgDA" conceptName="Ventricular tachycardia-pulseless" base_EnumerationLiteral="_cNm98MFTEeGyGv5RKvEgDA" xxxxx="LA17074-8"/>
-  <term:ValueSetCode xmi:id="_cNtrocFTEeGyGv5RKvEgDA" conceptName="Agonal/idioventricular" base_EnumerationLiteral="_cNtroMFTEeGyGv5RKvEgDA" xxxxx="LA17083-9"/>
   <term:ValueSetCode xmi:id="_cOBNocFTEeGyGv5RKvEgDA" conceptName="Agonal/idioventricular" base_EnumerationLiteral="_cOBNoMFTEeGyGv5RKvEgDA" xxxxx="LA17083-9"/>
-  <term:ValueSetCode xmi:id="_cOH7UcFTEeGyGv5RKvEgDA" conceptName="Atrial fibrillation" base_EnumerationLiteral="_cOH7UMFTEeGyGv5RKvEgDA" xxxxx="LA17084-7"/>
   <term:ValueSetCode xmi:id="_cOOB8cFTEeGyGv5RKvEgDA" conceptName="Atrial fibrillation" base_EnumerationLiteral="_cOOB8MFTEeGyGv5RKvEgDA" xxxxx="LA17084-7"/>
-  <term:ValueSetCode xmi:id="_cOUvocFTEeGyGv5RKvEgDA" conceptName="Atrial flutter" base_EnumerationLiteral="_cOUvoMFTEeGyGv5RKvEgDA" xxxxx="LA17085-4"/>
   <term:ValueSetCode xmi:id="_cOa2QcFTEeGyGv5RKvEgDA" conceptName="Atrial flutter" base_EnumerationLiteral="_cOa2QMFTEeGyGv5RKvEgDA" xxxxx="LA17085-4"/>
-  <term:ValueSetCode xmi:id="_cOhj8cFTEeGyGv5RKvEgDA" conceptName="AV block-1st degree" base_EnumerationLiteral="_cOhj8MFTEeGyGv5RKvEgDA" xxxxx="LA17086-2"/>
   <term:ValueSetCode xmi:id="_cOnqkcFTEeGyGv5RKvEgDA" conceptName="AV block-1st degree" base_EnumerationLiteral="_cOnqkMFTEeGyGv5RKvEgDA" xxxxx="LA17086-2"/>
-  <term:ValueSetCode xmi:id="_cOuYQMFTEeGyGv5RKvEgDA" conceptName="AV block-2nd degree-type 1" base_EnumerationLiteral="_cOtxMMFTEeGyGv5RKvEgDA" xxxxx="LA17087-0"/>
   <term:ValueSetCode xmi:id="_cO0e4cFTEeGyGv5RKvEgDA" conceptName="AV block-2nd degree-type 1" base_EnumerationLiteral="_cO0e4MFTEeGyGv5RKvEgDA" xxxxx="LA17087-0"/>
-  <term:ValueSetCode xmi:id="_cO7MkMFTEeGyGv5RKvEgDA" conceptName="AV block-2nd degree-type 2" base_EnumerationLiteral="_cO6lgMFTEeGyGv5RKvEgDA" xxxxx="LA17088-8"/>
   <term:ValueSetCode xmi:id="_cPBTMcFTEeGyGv5RKvEgDA" conceptName="AV block-2nd degree-type 2" base_EnumerationLiteral="_cPBTMMFTEeGyGv5RKvEgDA" xxxxx="LA17088-8"/>
-  <term:ValueSetCode xmi:id="_cPHZ0cFTEeGyGv5RKvEgDA" conceptName="AV block-3rd degree" base_EnumerationLiteral="_cPHZ0MFTEeGyGv5RKvEgDA" xxxxx="LA17089-6"/>
   <term:ValueSetCode xmi:id="_cPOHgcFTEeGyGv5RKvEgDA" conceptName="AV block-3rd degree" base_EnumerationLiteral="_cPOHgMFTEeGyGv5RKvEgDA" xxxxx="LA17089-6"/>
-  <term:ValueSetCode xmi:id="_cPUOIcFTEeGyGv5RKvEgDA" conceptName="Junctional" base_EnumerationLiteral="_cPUOIMFTEeGyGv5RKvEgDA" xxxxx="LA17090-4"/>
   <term:ValueSetCode xmi:id="_cPa70MFTEeGyGv5RKvEgDA" conceptName="Junctional" base_EnumerationLiteral="_cPaUwMFTEeGyGv5RKvEgDA" xxxxx="LA17090-4"/>
-  <term:ValueSetCode xmi:id="_cPhCccFTEeGyGv5RKvEgDA" conceptName="Left bundle branch block" base_EnumerationLiteral="_cPhCcMFTEeGyGv5RKvEgDA" xxxxx="LA17091-2"/>
   <term:ValueSetCode xmi:id="_cPnJEcFTEeGyGv5RKvEgDA" conceptName="Left bundle branch block" base_EnumerationLiteral="_cPnJEMFTEeGyGv5RKvEgDA" xxxxx="LA17091-2"/>
-  <term:ValueSetCode xmi:id="_cPt2wcFTEeGyGv5RKvEgDA" conceptName="Paced rhythm" base_EnumerationLiteral="_cPt2wMFTEeGyGv5RKvEgDA" xxxxx="LA17093-8"/>
   <term:ValueSetCode xmi:id="_cP0kcMFTEeGyGv5RKvEgDA" conceptName="Paced rhythm" base_EnumerationLiteral="_cPz9YMFTEeGyGv5RKvEgDA" xxxxx="LA17093-8"/>
-  <term:ValueSetCode xmi:id="_cP6rEcFTEeGyGv5RKvEgDA" conceptName="Premature atrial contractions" base_EnumerationLiteral="_cP6rEMFTEeGyGv5RKvEgDA" xxxxx="LA17094-6"/>
   <term:ValueSetCode xmi:id="_cQAxscFTEeGyGv5RKvEgDA" conceptName="Premature atrial contractions" base_EnumerationLiteral="_cQAxsMFTEeGyGv5RKvEgDA" xxxxx="LA17094-6"/>
-  <term:ValueSetCode xmi:id="_cQHfYcFTEeGyGv5RKvEgDA" conceptName="Premature ventricular contractions" base_EnumerationLiteral="_cQHfYMFTEeGyGv5RKvEgDA" xxxxx="LA17095-3"/>
   <term:ValueSetCode xmi:id="_cQNmAcFTEeGyGv5RKvEgDA" conceptName="Premature ventricular contractions" base_EnumerationLiteral="_cQNmAMFTEeGyGv5RKvEgDA" xxxxx="LA17095-3"/>
-  <term:ValueSetCode xmi:id="_cQUTsMFTEeGyGv5RKvEgDA" conceptName="Right bundle branch block" base_EnumerationLiteral="_cQTsoMFTEeGyGv5RKvEgDA" xxxxx="LA17096-1"/>
   <term:ValueSetCode xmi:id="_cQaaUcFTEeGyGv5RKvEgDA" conceptName="Right bundle branch block" base_EnumerationLiteral="_cQaaUMFTEeGyGv5RKvEgDA" xxxxx="LA17096-1"/>
-  <term:ValueSetCode xmi:id="_cQhIAcFTEeGyGv5RKvEgDA" conceptName="Sinus arrhythmia" base_EnumerationLiteral="_cQhIAMFTEeGyGv5RKvEgDA" xxxxx="LA17097-9"/>
   <term:ValueSetCode xmi:id="_cQnOocFTEeGyGv5RKvEgDA" conceptName="Sinus arrhythmia" base_EnumerationLiteral="_cQnOoMFTEeGyGv5RKvEgDA" xxxxx="LA17097-9"/>
-  <term:ValueSetCode xmi:id="_cQt8UcFTEeGyGv5RKvEgDA" conceptName="Sinus bradycardia" base_EnumerationLiteral="_cQt8UMFTEeGyGv5RKvEgDA" xxxxx="LA17098-7"/>
-  <term:ValueSetCode xmi:id="_cQ0C8cFTEeGyGv5RKvEgDA" conceptName="Sinus bradycardia" base_EnumerationLiteral="_cQ0C8MFTEeGyGv5RKvEgDA" xxxxx="LA17098-7"/>
-  <term:ValueSetCode xmi:id="_cQ6wocFTEeGyGv5RKvEgDA" conceptName="Sinus tachycardia" base_EnumerationLiteral="_cQ6woMFTEeGyGv5RKvEgDA" xxxxx="LA17099-5"/>
+  <term:ValueSetCode xmi:id="_cQ0C8cFTEeGyGv5RKvEgDA" conceptName="Bradycardia" base_EnumerationLiteral="_cQ0C8MFTEeGyGv5RKvEgDA" xxxxx="LA17098-7"/>
   <term:ValueSetCode xmi:id="_cRA3QcFTEeGyGv5RKvEgDA" conceptName="Sinus tachycardia" base_EnumerationLiteral="_cRA3QMFTEeGyGv5RKvEgDA" xxxxx="LA17099-5"/>
-  <term:ValueSetCode xmi:id="_cRG94cFTEeGyGv5RKvEgDA" conceptName="Supraventricular tachycardia" base_EnumerationLiteral="_cRG94MFTEeGyGv5RKvEgDA" xxxxx="LA17100-1"/>
   <term:ValueSetCode xmi:id="_cRNrkcFTEeGyGv5RKvEgDA" conceptName="Supraventricular tachycardia" base_EnumerationLiteral="_cRNrkMFTEeGyGv5RKvEgDA" xxxxx="LA17100-1"/>
-  <term:ValueSetCode xmi:id="_cRUZQcFTEeGyGv5RKvEgDA" conceptName="Torsades de points" base_EnumerationLiteral="_cRUZQMFTEeGyGv5RKvEgDA" xxxxx="LA17101-9"/>
   <term:ValueSetCode xmi:id="_cRaf4cFTEeGyGv5RKvEgDA" conceptName="Torsades de points" base_EnumerationLiteral="_cRaf4MFTEeGyGv5RKvEgDA" xxxxx="LA17101-9"/>
-  <term:ValueSetCode xmi:id="_cRgmgcFTEeGyGv5RKvEgDA" conceptName="STEMI-anterior ischemia" base_EnumerationLiteral="_cRgmgMFTEeGyGv5RKvEgDA" xxxxx="LA17703-2"/>
   <term:ValueSetCode xmi:id="_cRnUMMFTEeGyGv5RKvEgDA" conceptName="STEMI-anterior ischemia" base_EnumerationLiteral="_cRmtIMFTEeGyGv5RKvEgDA" xxxxx="LA17703-2"/>
-  <term:ValueSetCode xmi:id="_cRta0cFTEeGyGv5RKvEgDA" conceptName="STEMI-inferior ischemia" base_EnumerationLiteral="_cRta0MFTEeGyGv5RKvEgDA" xxxxx="LA17704-0"/>
   <term:ValueSetCode xmi:id="_cRzhccFTEeGyGv5RKvEgDA" conceptName="STEMI-inferior ischemia" base_EnumerationLiteral="_cRzhcMFTEeGyGv5RKvEgDA" xxxxx="LA17704-0"/>
-  <term:ValueSetCode xmi:id="_cR5oEcFTEeGyGv5RKvEgDA" conceptName="STEMI-lateral ischemia" base_EnumerationLiteral="_cR5oEMFTEeGyGv5RKvEgDA" xxxxx="LA17705-7"/>
   <term:ValueSetCode xmi:id="_cR_uscFTEeGyGv5RKvEgDA" conceptName="STEMI-lateral ischemia" base_EnumerationLiteral="_cR_usMFTEeGyGv5RKvEgDA" xxxxx="LA17705-7"/>
-  <term:ValueSetCode xmi:id="_cSGcYcFTEeGyGv5RKvEgDA" conceptName="STEMI-posterior ischemia" base_EnumerationLiteral="_cSGcYMFTEeGyGv5RKvEgDA" xxxxx="LA17706-5"/>
   <term:ValueSetCode xmi:id="_cSMjAcFTEeGyGv5RKvEgDA" conceptName="STEMI-posterior ischemia" base_EnumerationLiteral="_cSMjAMFTEeGyGv5RKvEgDA" xxxxx="LA17706-5"/>
-  <term:ValueSetCode xmi:id="_cSSpocFTEeGyGv5RKvEgDA" conceptName="Ventricular tachycardia with pulse" base_EnumerationLiteral="_cSSpoMFTEeGyGv5RKvEgDA" xxxxx="LA17708-1"/>
   <term:ValueSetCode xmi:id="_cSYwQcFTEeGyGv5RKvEgDA" conceptName="Ventricular tachycardia with pulse" base_EnumerationLiteral="_cSYwQMFTEeGyGv5RKvEgDA" xxxxx="LA17708-1"/>
-  <term:ValueSetCode xmi:id="_cSfd8MFTEeGyGv5RKvEgDA" conceptName="Sinus rhythm" base_EnumerationLiteral="_cSe24MFTEeGyGv5RKvEgDA" xxxxx="LA17718-0"/>
   <term:ValueSetCode xmi:id="_cSlkkcFTEeGyGv5RKvEgDA" conceptName="Sinus rhythm" base_EnumerationLiteral="_cSlkkMFTEeGyGv5RKvEgDA" xxxxx="LA17718-0"/>
-  <term:ValueSetCode xmi:id="_cSrrMcFTEeGyGv5RKvEgDA" conceptName="Non-STEMI anterior ischemia" base_EnumerationLiteral="_cSrrMMFTEeGyGv5RKvEgDA" xxxxx="LA18205-7"/>
   <term:ValueSetCode xmi:id="_cSxx0cFTEeGyGv5RKvEgDA" conceptName="Non-STEMI anterior ischemia" base_EnumerationLiteral="_cSxx0MFTEeGyGv5RKvEgDA" xxxxx="LA18205-7"/>
-  <term:ValueSetCode xmi:id="_cS34ccFTEeGyGv5RKvEgDA" conceptName="Non-STEMI inferior ischemia" base_EnumerationLiteral="_cS34cMFTEeGyGv5RKvEgDA" xxxxx="LA18206-5"/>
   <term:ValueSetCode xmi:id="_cS-mIMFTEeGyGv5RKvEgDA" conceptName="Non-STEMI inferior ischemia" base_EnumerationLiteral="_cS9_EMFTEeGyGv5RKvEgDA" xxxxx="LA18206-5"/>
-  <term:ValueSetCode xmi:id="_cTEswcFTEeGyGv5RKvEgDA" conceptName="Non-STEMI lateral ischemia" base_EnumerationLiteral="_cTEswMFTEeGyGv5RKvEgDA" xxxxx="LA18207-3"/>
   <term:ValueSetCode xmi:id="_cTKzYcFTEeGyGv5RKvEgDA" conceptName="Non-STEMI lateral ischemia" base_EnumerationLiteral="_cTKzYMFTEeGyGv5RKvEgDA" xxxxx="LA18207-3"/>
-  <term:ValueSetCode xmi:id="_cTQ6AcFTEeGyGv5RKvEgDA" conceptName="Non-STEMI posterior ischemia" base_EnumerationLiteral="_cTQ6AMFTEeGyGv5RKvEgDA" xxxxx="LA18208-1"/>
   <term:ValueSetCode xmi:id="_cTXAocFTEeGyGv5RKvEgDA" conceptName="Non-STEMI posterior ischemia" base_EnumerationLiteral="_cTXAoMFTEeGyGv5RKvEgDA" xxxxx="LA18208-1"/>
   <term:ValueSetCode xmi:id="_cTduUMFTEeGyGv5RKvEgDA" conceptName="Alcohol containers/paraphernalia at scene" base_EnumerationLiteral="_cTdHQMFTEeGyGv5RKvEgDA" xxxxx="LA17323-9"/>
   <term:ValueSetCode xmi:id="_cTj08cFTEeGyGv5RKvEgDA" conceptName="Drug paraphernalia at scene" base_EnumerationLiteral="_cTj08MFTEeGyGv5RKvEgDA" xxxxx="LA17324-7"/>
@@ -2110,7 +2040,7 @@
   <term:ValueSetCode xmi:id="_dAKcQcFTEeGyGv5RKvEgDA" conceptName="Apnea" base_EnumerationLiteral="_dAKcQMFTEeGyGv5RKvEgDA" xxxxx="LA17393-2"/>
   <term:ValueSetCode xmi:id="_dARJ8cFTEeGyGv5RKvEgDA" conceptName="Bradycardia" base_EnumerationLiteral="_dARJ8MFTEeGyGv5RKvEgDA" xxxxx="LA17394-0"/>
   <term:ValueSetCode xmi:id="_dAXQkcFTEeGyGv5RKvEgDA" conceptName="Hypoxia" base_EnumerationLiteral="_dAXQkMFTEeGyGv5RKvEgDA" xxxxx="LA17396-5"/>
-  <term:ValueSetCode xmi:id="_dAd-QcFTEeGyGv5RKvEgDA" conceptName="Itching/urticaria" base_EnumerationLiteral="_dAd-QMFTEeGyGv5RKvEgDA" xxxxx="LA17397-3"/>
+  <term:ValueSetCode xmi:id="_dAd-QcFTEeGyGv5RKvEgDA" conceptName="Itching" base_EnumerationLiteral="_dAd-QMFTEeGyGv5RKvEgDA" xxxxx="LA17397-3"/>
   <term:ValueSetCode xmi:id="_dAkr8MFTEeGyGv5RKvEgDA" conceptName="Injury" base_EnumerationLiteral="_dAkE4MFTEeGyGv5RKvEgDA" xxxxx="LA17713-1"/>
   <term:ValueSetCode xmi:id="_dAqykcFTEeGyGv5RKvEgDA" conceptName="Tachycardia" base_EnumerationLiteral="_dAqykMFTEeGyGv5RKvEgDA" xxxxx="LA17714-9"/>
   <term:ValueSetCode xmi:id="_dAxgQMFTEeGyGv5RKvEgDA" conceptName="Bradypnea" base_EnumerationLiteral="_dAw5MMFTEeGyGv5RKvEgDA" xxxxx="LA18266-9"/>
@@ -2325,7 +2255,7 @@
   <term:ValueSetCode xmi:id="_dWHeIcFTEeGyGv5RKvEgDA" conceptName="Apnea" base_EnumerationLiteral="_dWHeIMFTEeGyGv5RKvEgDA" xxxxx="LA17393-2"/>
   <term:ValueSetCode xmi:id="_dWOL0MFTEeGyGv5RKvEgDA" conceptName="Bradycardia" base_EnumerationLiteral="_dWNkwMFTEeGyGv5RKvEgDA" xxxxx="LA17394-0"/>
   <term:ValueSetCode xmi:id="_dWUSccFTEeGyGv5RKvEgDA" conceptName="Hypoxia" base_EnumerationLiteral="_dWUScMFTEeGyGv5RKvEgDA" xxxxx="LA17396-5"/>
-  <term:ValueSetCode xmi:id="_dWbAIMFTEeGyGv5RKvEgDA" conceptName="Itching/urticaria" base_EnumerationLiteral="_dWaZEMFTEeGyGv5RKvEgDA" xxxxx="LA17397-3"/>
+  <term:ValueSetCode xmi:id="_dWbAIMFTEeGyGv5RKvEgDA" conceptName="Itching" base_EnumerationLiteral="_dWaZEMFTEeGyGv5RKvEgDA" xxxxx="LA17397-3"/>
   <term:ValueSetCode xmi:id="_dWhGwcFTEeGyGv5RKvEgDA" conceptName="Esophageal intubation-immediately" base_EnumerationLiteral="_dWhGwMFTEeGyGv5RKvEgDA" xxxxx="LA17489-8"/>
   <term:ValueSetCode xmi:id="_dWn0ccFTEeGyGv5RKvEgDA" conceptName="Esophageal intubation-other" base_EnumerationLiteral="_dWn0cMFTEeGyGv5RKvEgDA" xxxxx="LA17490-6"/>
   <term:ValueSetCode xmi:id="_dWt7EcFTEeGyGv5RKvEgDA" conceptName="Injury" base_EnumerationLiteral="_dWt7EMFTEeGyGv5RKvEgDA" xxxxx="LA17713-1"/>
@@ -2829,4 +2759,6 @@
   <term:ValueSetCode xmi:id="_jKN00LM0EeKq7sXu8zXehQ" conceptName="Hispanic or Latino" base_EnumerationLiteral="_jKNNwLM0EeKq7sXu8zXehQ"/>
   <term:ValueSetCode xmi:id="_nLeDwLM0EeKq7sXu8zXehQ" conceptName="Not Hispanic or Latino" base_EnumerationLiteral="_nLdcsLM0EeKq7sXu8zXehQ"/>
   <term:CodeSystemVersion xmi:id="_vgktgLM0EeKq7sXu8zXehQ" identifier="2.16.840.1.113883.6.238" url="https://phinvads.cdc.gov/vads/ViewCodeSystem.action?id=2.16.840.1.113883.6.238" base_Enumeration="_vgkGcLM0EeKq7sXu8zXehQ"/>
+  <term:ValueSetCode xmi:id="_TSTxQPfuEeK_n7ZHGRzt1Q" conceptName="Urticaria" base_EnumerationLiteral="_TSTKMPfuEeK_n7ZHGRzt1Q"/>
+  <term:ValueSetCode xmi:id="_hwuioPfuEeK_n7ZHGRzt1Q" conceptName="Urticaria" base_EnumerationLiteral="_hwt7kPfuEeK_n7ZHGRzt1Q"/>
 </xmi:XMI>
