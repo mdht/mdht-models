@@ -115,7 +115,6 @@ public class PatientSummaryOperations extends ContinuityOfCareDocumentOperations
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.documentationOf.serviceEvent.performer->size() > 0
 	 * @param patientSummary The receiving '<em><b>Patient Summary</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -172,7 +171,6 @@ public class PatientSummaryOperations extends ContinuityOfCareDocumentOperations
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.3.88.11.32.1')
 	 * @param patientSummary The receiving '<em><b>Patient Summary</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -229,7 +227,6 @@ public class PatientSummaryOperations extends ContinuityOfCareDocumentOperations
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::AdvanceDirectivesSection))
 	 * @param patientSummary The receiving '<em><b>Patient Summary</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -287,7 +284,6 @@ public class PatientSummaryOperations extends ContinuityOfCareDocumentOperations
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::AllergiesReactionsSection))
 	 * @param patientSummary The receiving '<em><b>Patient Summary</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -345,7 +341,6 @@ public class PatientSummaryOperations extends ContinuityOfCareDocumentOperations
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::ProblemListSection))
 	 * @param patientSummary The receiving '<em><b>Patient Summary</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -402,7 +397,6 @@ public class PatientSummaryOperations extends ContinuityOfCareDocumentOperations
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::EncountersSection))
 	 * @param patientSummary The receiving '<em><b>Patient Summary</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -459,7 +453,6 @@ public class PatientSummaryOperations extends ContinuityOfCareDocumentOperations
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::ImmunizationsSection))
 	 * @param patientSummary The receiving '<em><b>Patient Summary</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -517,7 +510,6 @@ public class PatientSummaryOperations extends ContinuityOfCareDocumentOperations
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::PayersSection))
 	 * @param patientSummary The receiving '<em><b>Patient Summary</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -574,7 +566,6 @@ public class PatientSummaryOperations extends ContinuityOfCareDocumentOperations
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::MedicationsSection))
 	 * @param patientSummary The receiving '<em><b>Patient Summary</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -631,7 +622,6 @@ public class PatientSummaryOperations extends ContinuityOfCareDocumentOperations
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::SurgeriesSection))
 	 * @param patientSummary The receiving '<em><b>Patient Summary</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -688,7 +678,6 @@ public class PatientSummaryOperations extends ContinuityOfCareDocumentOperations
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::PlanOfCareSection))
 	 * @param patientSummary The receiving '<em><b>Patient Summary</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -745,7 +734,6 @@ public class PatientSummaryOperations extends ContinuityOfCareDocumentOperations
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ihe::PregnancyHistorySection))
 	 * @param patientSummary The receiving '<em><b>Patient Summary</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -803,7 +791,6 @@ public class PatientSummaryOperations extends ContinuityOfCareDocumentOperations
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::VitalSignsSection))
 	 * @param patientSummary The receiving '<em><b>Patient Summary</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -860,7 +847,6 @@ public class PatientSummaryOperations extends ContinuityOfCareDocumentOperations
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::DiagnosticResultsSection))
 	 * @param patientSummary The receiving '<em><b>Patient Summary</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -943,10 +929,6 @@ public class PatientSummaryOperations extends ContinuityOfCareDocumentOperations
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::AdvanceDirectivesSection))->asSequence()->any(true).oclAsType(hitsp::AdvanceDirectivesSection)
-	 * @param patientSummary The receiving '<em><b>Patient Summary</b></em>' model object.
-	 * <!-- end-model-doc -->
 	 * @generated
 	 */
 	public static AdvanceDirectivesSection getHITSPAdvanceDirectivesSection(PatientSummary patientSummary) {
@@ -988,10 +970,6 @@ public class PatientSummaryOperations extends ContinuityOfCareDocumentOperations
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::AllergiesReactionsSection))->asSequence()->any(true).oclAsType(hitsp::AllergiesReactionsSection)
-	 * @param patientSummary The receiving '<em><b>Patient Summary</b></em>' model object.
-	 * <!-- end-model-doc -->
 	 * @generated
 	 */
 	public static AllergiesReactionsSection getAllergiesReactionsSection(PatientSummary patientSummary) {
@@ -1033,10 +1011,6 @@ public class PatientSummaryOperations extends ContinuityOfCareDocumentOperations
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::ProblemListSection))->asSequence()->any(true).oclAsType(hitsp::ProblemListSection)
-	 * @param patientSummary The receiving '<em><b>Patient Summary</b></em>' model object.
-	 * <!-- end-model-doc -->
 	 * @generated
 	 */
 	public static ProblemListSection getProblemListSection(PatientSummary patientSummary) {
@@ -1078,10 +1052,6 @@ public class PatientSummaryOperations extends ContinuityOfCareDocumentOperations
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::EncountersSection))->asSequence()->any(true).oclAsType(hitsp::EncountersSection)
-	 * @param patientSummary The receiving '<em><b>Patient Summary</b></em>' model object.
-	 * <!-- end-model-doc -->
 	 * @generated
 	 */
 	public static EncountersSection getHITSPEncountersSection(PatientSummary patientSummary) {
@@ -1123,10 +1093,6 @@ public class PatientSummaryOperations extends ContinuityOfCareDocumentOperations
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::ImmunizationsSection))->asSequence()->any(true).oclAsType(hitsp::ImmunizationsSection)
-	 * @param patientSummary The receiving '<em><b>Patient Summary</b></em>' model object.
-	 * <!-- end-model-doc -->
 	 * @generated
 	 */
 	public static ImmunizationsSection getHITSPImmunizationsSection(PatientSummary patientSummary) {
@@ -1168,10 +1134,6 @@ public class PatientSummaryOperations extends ContinuityOfCareDocumentOperations
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::PayersSection))->asSequence()->any(true).oclAsType(hitsp::PayersSection)
-	 * @param patientSummary The receiving '<em><b>Patient Summary</b></em>' model object.
-	 * <!-- end-model-doc -->
 	 * @generated
 	 */
 	public static PayersSection getHITSPPayersSection(PatientSummary patientSummary) {
@@ -1213,10 +1175,6 @@ public class PatientSummaryOperations extends ContinuityOfCareDocumentOperations
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::MedicationsSection))->asSequence()->any(true).oclAsType(hitsp::MedicationsSection)
-	 * @param patientSummary The receiving '<em><b>Patient Summary</b></em>' model object.
-	 * <!-- end-model-doc -->
 	 * @generated
 	 */
 	public static MedicationsSection getHITSPMedicationsSection(PatientSummary patientSummary) {
@@ -1258,10 +1216,6 @@ public class PatientSummaryOperations extends ContinuityOfCareDocumentOperations
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::SurgeriesSection))->asSequence()->any(true).oclAsType(hitsp::SurgeriesSection)
-	 * @param patientSummary The receiving '<em><b>Patient Summary</b></em>' model object.
-	 * <!-- end-model-doc -->
 	 * @generated
 	 */
 	public static SurgeriesSection getSurgeriesSection(PatientSummary patientSummary) {
@@ -1303,10 +1257,6 @@ public class PatientSummaryOperations extends ContinuityOfCareDocumentOperations
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::PlanOfCareSection))->asSequence()->any(true).oclAsType(hitsp::PlanOfCareSection)
-	 * @param patientSummary The receiving '<em><b>Patient Summary</b></em>' model object.
-	 * <!-- end-model-doc -->
 	 * @generated
 	 */
 	public static PlanOfCareSection getHITSPPlanOfCareSection(PatientSummary patientSummary) {
@@ -1348,10 +1298,6 @@ public class PatientSummaryOperations extends ContinuityOfCareDocumentOperations
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ihe::PregnancyHistorySection))->asSequence()->any(true).oclAsType(ihe::PregnancyHistorySection)
-	 * @param patientSummary The receiving '<em><b>Patient Summary</b></em>' model object.
-	 * <!-- end-model-doc -->
 	 * @generated
 	 */
 	public static PregnancyHistorySection getPregnancyHistorySection(PatientSummary patientSummary) {
@@ -1393,10 +1339,6 @@ public class PatientSummaryOperations extends ContinuityOfCareDocumentOperations
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::VitalSignsSection))->asSequence()->any(true).oclAsType(hitsp::VitalSignsSection)
-	 * @param patientSummary The receiving '<em><b>Patient Summary</b></em>' model object.
-	 * <!-- end-model-doc -->
 	 * @generated
 	 */
 	public static VitalSignsSection getHITSPVitalSignsSection(PatientSummary patientSummary) {
@@ -1438,10 +1380,6 @@ public class PatientSummaryOperations extends ContinuityOfCareDocumentOperations
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(hitsp::DiagnosticResultsSection))->asSequence()->any(true).oclAsType(hitsp::DiagnosticResultsSection)
-	 * @param patientSummary The receiving '<em><b>Patient Summary</b></em>' model object.
-	 * <!-- end-model-doc -->
 	 * @generated
 	 */
 	public static DiagnosticResultsSection getDiagnosticResultsSection(PatientSummary patientSummary) {

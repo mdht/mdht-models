@@ -73,19 +73,20 @@ public class PayersSectionOperations extends org.openhealthtools.mdht.uml.cda.ih
 	 * @generated
 	 * @ordered
 	 */
+
 	protected static Constraint VALIDATE_HITSP_PAYERS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.3.88.11.83.101')
 	 * @param payersSection The receiving '<em><b>Payers Section</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
+
 	public static boolean validateHITSPPayersSectionTemplateId(PayersSection payersSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -130,19 +131,20 @@ public class PayersSectionOperations extends org.openhealthtools.mdht.uml.cda.ih
 	 * @generated
 	 * @ordered
 	 */
+
 	protected static Constraint VALIDATE_HITSP_PAYERS_SECTION_INSURANCE_PROVIDER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.entry->exists(entry : cda::Entry | not entry.act.oclIsUndefined() and entry.act.oclIsKindOf(hitsp::InsuranceProvider))
 	 * @param payersSection The receiving '<em><b>Payers Section</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
+
 	public static boolean validateHITSPPayersSectionInsuranceProvider(PayersSection payersSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -193,10 +195,6 @@ public class PayersSectionOperations extends org.openhealthtools.mdht.uml.cda.ih
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(hitsp::InsuranceProvider)).oclAsType(hitsp::InsuranceProvider)
-	 * @param payersSection The receiving '<em><b>Payers Section</b></em>' model object.
-	 * <!-- end-model-doc -->
 	 * @generated
 	 */
 	public static EList<InsuranceProvider> getInsuranceProviders(PayersSection payersSection) {

@@ -237,7 +237,7 @@ public class MedicationCombinationMedicationImpl extends CombinationMedicationIm
 
 	/**
 	 * <!-- begin-user-doc -->
-	* <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	public boolean validateHITSPMedicationRouteCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
@@ -274,7 +274,7 @@ public class MedicationCombinationMedicationImpl extends CombinationMedicationIm
 
 	/**
 	 * <!-- begin-user-doc -->
-	* <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	public boolean validateHITSPMedicationApproachSiteCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {

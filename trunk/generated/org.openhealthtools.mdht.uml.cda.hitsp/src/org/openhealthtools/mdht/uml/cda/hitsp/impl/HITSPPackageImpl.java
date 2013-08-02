@@ -2246,7 +2246,7 @@ public class HITSPPackageImpl extends EPackageImpl implements HITSPPackage {
 		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
 		op = addEOperation(
-			conditionEClass, ecorePackage.getEBoolean(), "validateConditionConditionEntry", 0, 1, IS_UNIQUE, IS_ORDERED);
+			conditionEClass, ecorePackage.getEBoolean(), "validateConditionEntry", 0, 1, IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
 		g1 = createEGenericType(ecorePackage.getEMap());
 		g2 = createEGenericType(ecorePackage.getEJavaObject());
@@ -4805,7 +4805,7 @@ public class HITSPPackageImpl extends EPackageImpl implements HITSPPackage {
 					"MedicationOrderInformationStatusCodeP" });
 		addAnnotation(conditionEClass, source, new String[] {
 				"constraints.validation.error",
-				"ConditionTemplateId ConditionHasTreatingProvider ConditionHasProviderId ConditionConditionEntry",
+				"ConditionTemplateId ConditionHasTreatingProvider ConditionHasProviderId ConditionEntry",
 				"templateId.root", "2.16.840.1.113883.3.88.11.83.7", "constraints.validation.info",
 				"ConditionHasProviderTreatmentTime" });
 		addAnnotation(
