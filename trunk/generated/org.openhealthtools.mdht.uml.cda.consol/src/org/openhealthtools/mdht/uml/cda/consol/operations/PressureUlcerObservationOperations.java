@@ -1760,19 +1760,6 @@ public class PressureUlcerObservationOperations extends ClinicalStatementOperati
 						new Object[] { eObject }));
 				}
 
-				if (context != null) {
-					// generate a pass token for my dependent constraints to short-circuit or filter results
-					Collection<Object> passToken = (Collection<Object>) context.get("org.openhealthtools.mdht.uml.cda.consol.PressureUlcerObservationEntryRelationship1Observation1CodeP");
-					if (passToken == null) {
-						// anticipate a reasonably healthy model
-						passToken = new java.util.ArrayList<Object>(3);
-						context.put(
-							"org.openhealthtools.mdht.uml.cda.consol.PressureUlcerObservationEntryRelationship1Observation1CodeP",
-							passToken);
-					}
-					passToken.addAll(oclResultSet);
-				}
-
 			}
 			return oclResultSet.isEmpty();
 		}
@@ -1832,7 +1819,7 @@ public class PressureUlcerObservationOperations extends ClinicalStatementOperati
 
 			Object passFilter = (context == null)
 					? null
-					: context.get("org.openhealthtools.mdht.uml.cda.consol.PressureUlcerObservationEntryRelationship1Observation1CodeP");
+					: context.get("org.openhealthtools.mdht.uml.cda.consol.PressureUlcerObservationEntryRelationship1PressureUlcerObservationEntryRelationship1Observation1CodeP");
 			if (passFilter instanceof Collection<?>) {
 				// filter my query results
 				oclResultSet = new ArrayList<EObject>(oclResultSet);
@@ -2239,19 +2226,6 @@ public class PressureUlcerObservationOperations extends ClinicalStatementOperati
 						new Object[] { eObject }));
 				}
 
-				if (context != null) {
-					// generate a pass token for my dependent constraints to short-circuit or filter results
-					Collection<Object> passToken = (Collection<Object>) context.get("org.openhealthtools.mdht.uml.cda.consol.PressureUlcerObservationEntryRelationship2Observation2CodeP");
-					if (passToken == null) {
-						// anticipate a reasonably healthy model
-						passToken = new java.util.ArrayList<Object>(3);
-						context.put(
-							"org.openhealthtools.mdht.uml.cda.consol.PressureUlcerObservationEntryRelationship2Observation2CodeP",
-							passToken);
-					}
-					passToken.addAll(oclResultSet);
-				}
-
 			}
 			return oclResultSet.isEmpty();
 		}
@@ -2311,7 +2285,7 @@ public class PressureUlcerObservationOperations extends ClinicalStatementOperati
 
 			Object passFilter = (context == null)
 					? null
-					: context.get("org.openhealthtools.mdht.uml.cda.consol.PressureUlcerObservationEntryRelationship2Observation2CodeP");
+					: context.get("org.openhealthtools.mdht.uml.cda.consol.PressureUlcerObservationEntryRelationship2PressureUlcerObservationEntryRelationship2Observation2CodeP");
 			if (passFilter instanceof Collection<?>) {
 				// filter my query results
 				oclResultSet = new ArrayList<EObject>(oclResultSet);
@@ -2718,19 +2692,6 @@ public class PressureUlcerObservationOperations extends ClinicalStatementOperati
 						new Object[] { eObject }));
 				}
 
-				if (context != null) {
-					// generate a pass token for my dependent constraints to short-circuit or filter results
-					Collection<Object> passToken = (Collection<Object>) context.get("org.openhealthtools.mdht.uml.cda.consol.PressureUlcerObservationEntryRelationship3Observation3CodeP");
-					if (passToken == null) {
-						// anticipate a reasonably healthy model
-						passToken = new java.util.ArrayList<Object>(3);
-						context.put(
-							"org.openhealthtools.mdht.uml.cda.consol.PressureUlcerObservationEntryRelationship3Observation3CodeP",
-							passToken);
-					}
-					passToken.addAll(oclResultSet);
-				}
-
 			}
 			return oclResultSet.isEmpty();
 		}
@@ -2790,7 +2751,7 @@ public class PressureUlcerObservationOperations extends ClinicalStatementOperati
 
 			Object passFilter = (context == null)
 					? null
-					: context.get("org.openhealthtools.mdht.uml.cda.consol.PressureUlcerObservationEntryRelationship3Observation3CodeP");
+					: context.get("org.openhealthtools.mdht.uml.cda.consol.PressureUlcerObservationEntryRelationship3PressureUlcerObservationEntryRelationship3Observation3CodeP");
 			if (passFilter instanceof Collection<?>) {
 				// filter my query results
 				oclResultSet = new ArrayList<EObject>(oclResultSet);

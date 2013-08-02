@@ -26,8 +26,8 @@ import org.openhealthtools.mdht.uml.cda.EncounterParticipant;
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getPhysicianofRecordParticipant()
  * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='PhysicianofRecordParticipantTemplateId PhysicianofRecordParticipantTypeCode PhysicianofRecordParticipantAssignedEntity PhysicianofRecordParticipantAssignedEntityHasDICOMOrNUCCCode PhysicianofRecordParticipantAssignedEntityCode PhysicianofRecordParticipantAssignedEntityId' templateId.root='2.16.840.1.113883.10.20.6.2.2' typeCode='ATND' constraints.validation.warning='PhysicianofRecordParticipantAssignedEntityAssignedPersonName PhysicianofRecordParticipantAssignedEntityHasNationalProviderId PhysicianofRecordParticipantAssignedEntityAssignedPerson' constraints.validation.query='PhysicianofRecordParticipantAssignedEntityAssignedPersonName PhysicianofRecordParticipantAssignedEntityHasDICOMOrNUCCCode PhysicianofRecordParticipantAssignedEntityHasNationalProviderId PhysicianofRecordParticipantAssignedEntityCode PhysicianofRecordParticipantAssignedEntityId PhysicianofRecordParticipantAssignedEntityAssignedPerson'"
- *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolPhysicianofRecordParticipantAssignedEntity constraints.validation.error='AssignedEntityHasDICOMOrNUCCCode AssignedEntityCode AssignedEntityId' constraints.validation.warning='AssignedEntityHasNationalProviderId AssignedEntityAssignedPerson'"
- *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolPhysicianofRecordParticipantAssignedEntityAssignedPerson constraints.validation.warning='AssignedPersonName'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolPhysicianofRecordParticipantAssignedEntity constraints.validation.error='PhysicianofRecordParticipantAssignedEntityHasDICOMOrNUCCCode PhysicianofRecordParticipantAssignedEntityCode PhysicianofRecordParticipantAssignedEntityId' constraints.validation.warning='PhysicianofRecordParticipantAssignedEntityHasNationalProviderId PhysicianofRecordParticipantAssignedEntityAssignedPerson'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolPhysicianofRecordParticipantAssignedEntityAssignedPerson constraints.validation.warning='PhysicianofRecordParticipantAssignedEntityAssignedPersonName'"
  * @generated
  */
 public interface PhysicianofRecordParticipant extends EncounterParticipant {
@@ -69,7 +69,7 @@ public interface PhysicianofRecordParticipant extends EncounterParticipant {
 
 	/**
 	 * <!-- begin-user-doc -->
-	* <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.

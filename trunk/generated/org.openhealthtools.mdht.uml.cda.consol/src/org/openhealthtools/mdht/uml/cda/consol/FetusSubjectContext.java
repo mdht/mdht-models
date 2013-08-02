@@ -22,7 +22,7 @@ import org.openhealthtools.mdht.uml.cda.RelatedSubject;
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getFetusSubjectContext()
  * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='FetusSubjectContextTemplateId FetusSubjectContextCode FetusSubjectContextSubject' templateId.root='2.16.840.1.113883.10.20.6.2.3' code.code='121026' code.codeSystem='1.2.840.10008.2.16.4' code.codeSystemName='DCM'"
- *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolFetusSubjectContextSubjectPerson constraints.validation.error='SubjectPersonName'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolFetusSubjectContextSubjectPerson constraints.validation.error='FetusSubjectContextSubjectPersonName'"
  * @generated
  */
 public interface FetusSubjectContext extends RelatedSubject {

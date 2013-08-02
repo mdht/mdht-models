@@ -1041,7 +1041,7 @@ public class AssessmentScaleObservationOperations extends ClinicalStatementOpera
 	/**
 	 * The cached OCL expression body for the '{@link #validateAssessmentScaleObservationReferenceRangeObservationRangeTextReference(AssessmentScaleObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Assessment Scale Observation Reference Range Observation Range Text Reference</em>}' operation.
 	 * <!-- begin-user-doc -->
-	* <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @see #validateAssessmentScaleObservationReferenceRangeObservationRangeTextReference(AssessmentScaleObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered

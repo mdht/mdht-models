@@ -21,8 +21,8 @@ import org.openhealthtools.mdht.emf.runtime.util.Initializer;
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getFunctionalStatusResultObservation()
  * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='FunctionalStatusResultObservationTemplateId FunctionalStatusResultObservationTextReferenceValue FunctionalStatusResultObservationClassCode FunctionalStatusResultObservationMoodCode FunctionalStatusResultObservationId FunctionalStatusResultObservationCodeP FunctionalStatusResultObservationStatusCode FunctionalStatusResultObservationStatusCodeP FunctionalStatusResultObservationEffectiveTime FunctionalStatusResultObservationValue FunctionalStatusResultObservationReferenceRangeObservationRangeNoCode FunctionalStatusResultObservationReferenceRangeObservationRange' templateId.root='2.16.840.1.113883.10.20.22.4.67' constraints.validation.warning='FunctionalStatusResultObservationTextReference FunctionalStatusResultObservationValueDatatype FunctionalStatusResultObservationCode FunctionalStatusResultObservationText FunctionalStatusResultObservationInterpretationCode FunctionalStatusResultObservationReferenceRange' classCode='OBS' moodCode='EVN' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' constraints.validation.dependOn.FunctionalStatusResultObservationCode='FunctionalStatusResultObservationCodeP' statusCode.code='completed' constraints.validation.dependOn.FunctionalStatusResultObservationStatusCode='FunctionalStatusResultObservationStatusCodeP' constraints.validation.info='FunctionalStatusResultObservationMethodCode FunctionalStatusResultObservationTargetSiteCode FunctionalStatusResultObservationAuthor FunctionalStatusResultObservationNonMedicinalSupplyActivity FunctionalStatusResultObservationCaregiverCharacteristics FunctionalStatusResultObservationAssessmentScaleObservation' constraints.validation.query='FunctionalStatusResultObservationReferenceRangeObservationRangeNoCode FunctionalStatusResultObservationReferenceRangeObservationRange'"
- *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolFunctionalStatusResultObservationReferenceRange constraints.validation.error='ReferenceRangeObservationRange'"
- *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolFunctionalStatusResultObservationReferenceRangeObservationRange constraints.validation.error='ObservationRangeNoCode'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolFunctionalStatusResultObservationReferenceRange constraints.validation.error='FunctionalStatusResultObservationReferenceRangeObservationRange'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolFunctionalStatusResultObservationReferenceRangeObservationRange constraints.validation.error='FunctionalStatusResultObservationReferenceRangeObservationRangeNoCode'"
  * @generated
  */
 public interface FunctionalStatusResultObservation extends ResultObservation {
@@ -291,7 +291,7 @@ public interface FunctionalStatusResultObservation extends ResultObservation {
 
 	/**
 	 * <!-- begin-user-doc -->
-	* <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.

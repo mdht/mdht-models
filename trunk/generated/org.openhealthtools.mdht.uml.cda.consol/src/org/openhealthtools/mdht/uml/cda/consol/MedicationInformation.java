@@ -25,8 +25,8 @@ import org.openhealthtools.mdht.uml.cda.ManufacturedProduct;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getMedicationInformation()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='MedicationInformationTemplateId MedicationInformationClassCode MedicationInformationManufacturedMaterial MedicationInformationManufacturedMaterialCode' templateId.root='2.16.840.1.113883.10.20.22.4.23' constraints.validation.info='MedicationInformationId MedicationInformationManufacturerOrganization MedicationInformationManufacturedMaterialCodeTranslation' classCode='MANU' constraints.validation.warning='MedicationInformationManufacturedMaterialCodeOriginalText MedicationInformationManufacturedMaterialReference MedicationInformationManufacturedMaterialOriginalTextReferenceValue' constraints.validation.query='MedicationInformationManufacturedMaterialCodeOriginalText MedicationInformationManufacturedMaterialReference MedicationInformationManufacturedMaterialOriginalTextReferenceValue MedicationInformationManufacturedMaterialCodeTranslation MedicationInformationManufacturedMaterialCode'"
- *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolMedicationInformationMedicationInformationManufacturedMaterial constraints.validation.warning='MedicationInformationManufacturedMaterialCodeOriginalText MedicationInformationManufacturedMaterialReference MedicationInformationManufacturedMaterialOriginalTextReferenceValue' constraints.validation.info='MedicationInformationManufacturedMaterialCodeTranslation' code.codeSystem='2.16.840.1.113883.6.88' code.codeSystemName='RxNorm' constraints.validation.error='MedicationInformationManufacturedMaterialCode'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='MedicationInformationTemplateId MedicationInformationClassCode MedicationInformationManufacturedMaterial MedicationInformationMedicationInformationManufacturedMaterialCode' templateId.root='2.16.840.1.113883.10.20.22.4.23' constraints.validation.info='MedicationInformationId MedicationInformationManufacturerOrganization MedicationInformationMedicationInformationManufacturedMaterialCodeTranslation' classCode='MANU' constraints.validation.warning='MedicationInformationMedicationInformationManufacturedMaterialCodeOriginalText MedicationInformationMedicationInformationManufacturedMaterialReference MedicationInformationMedicationInformationManufacturedMaterialOriginalTextReferenceValue' constraints.validation.query='MedicationInformationMedicationInformationManufacturedMaterialCodeOriginalText MedicationInformationMedicationInformationManufacturedMaterialReference MedicationInformationMedicationInformationManufacturedMaterialOriginalTextReferenceValue MedicationInformationMedicationInformationManufacturedMaterialCodeTranslation MedicationInformationMedicationInformationManufacturedMaterialCode'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolMedicationInformationMedicationInformationManufacturedMaterial constraints.validation.warning='MedicationInformationMedicationInformationManufacturedMaterialCodeOriginalText MedicationInformationMedicationInformationManufacturedMaterialReference MedicationInformationMedicationInformationManufacturedMaterialOriginalTextReferenceValue' constraints.validation.info='MedicationInformationMedicationInformationManufacturedMaterialCodeTranslation' code.codeSystem='2.16.840.1.113883.6.88' code.codeSystemName='RxNorm' constraints.validation.error='MedicationInformationMedicationInformationManufacturedMaterialCode'"
  * @generated
  */
 public interface MedicationInformation extends ManufacturedProduct {
@@ -88,8 +88,8 @@ public interface MedicationInformation extends ManufacturedProduct {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.manufacturedMaterial->excluding(null)->reject(code.originalText->size() = 1)'"
 	 * @generated
 	 */
-	boolean validateMedicationInformationManufacturedMaterialCodeOriginalText(DiagnosticChain diagnostics,
-			Map<Object, Object> context);
+	boolean validateMedicationInformationMedicationInformationManufacturedMaterialCodeOriginalText(
+			DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -101,8 +101,8 @@ public interface MedicationInformation extends ManufacturedProduct {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.manufacturedMaterial->excluding(null)->reject(code.originalText->size() = 1 implies code.originalText->one(reference->size() = 1))'"
 	 * @generated
 	 */
-	boolean validateMedicationInformationManufacturedMaterialReference(DiagnosticChain diagnostics,
-			Map<Object, Object> context);
+	boolean validateMedicationInformationMedicationInformationManufacturedMaterialReference(
+			DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -114,8 +114,8 @@ public interface MedicationInformation extends ManufacturedProduct {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.manufacturedMaterial->excluding(null)->reject(code.originalText.reference->size() = 1 implies code.originalText.reference.value->size() = 1)'"
 	 * @generated
 	 */
-	boolean validateMedicationInformationManufacturedMaterialOriginalTextReferenceValue(DiagnosticChain diagnostics,
-			Map<Object, Object> context);
+	boolean validateMedicationInformationMedicationInformationManufacturedMaterialOriginalTextReferenceValue(
+			DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -127,8 +127,8 @@ public interface MedicationInformation extends ManufacturedProduct {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.manufacturedMaterial->excluding(null)->reject(code->size() = 1 implies code.translation->size() > 0)'"
 	 * @generated
 	 */
-	boolean validateMedicationInformationManufacturedMaterialCodeTranslation(DiagnosticChain diagnostics,
-			Map<Object, Object> context);
+	boolean validateMedicationInformationMedicationInformationManufacturedMaterialCodeTranslation(
+			DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -140,7 +140,7 @@ public interface MedicationInformation extends ManufacturedProduct {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.manufacturedMaterial->excluding(null)->reject((code.oclIsUndefined() or code.isNullFlavorUndefined()) implies (not code.oclIsUndefined() and code.oclIsKindOf(datatypes::CE) and \nlet value : datatypes::CE = code.oclAsType(datatypes::CE) in \nvalue.codeSystem = \'2.16.840.1.113883.6.88\' and not value.code.oclIsUndefined()))'"
 	 * @generated
 	 */
-	boolean validateMedicationInformationManufacturedMaterialCode(DiagnosticChain diagnostics,
+	boolean validateMedicationInformationMedicationInformationManufacturedMaterialCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context);
 
 	/**

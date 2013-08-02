@@ -215,7 +215,7 @@ public class AssessmentScaleObservationImpl extends ObservationImpl implements A
 
 	/**
 	 * <!-- begin-user-doc -->
-	* <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	public boolean validateAssessmentScaleObservationReferenceRangeObservationRangeTextReference(

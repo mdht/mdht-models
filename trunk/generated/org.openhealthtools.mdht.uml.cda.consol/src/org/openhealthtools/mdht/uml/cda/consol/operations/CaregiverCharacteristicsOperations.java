@@ -657,7 +657,7 @@ public class CaregiverCharacteristicsOperations extends ClinicalStatementOperati
 	/**
 	 * The cached OCL expression body for the '{@link #validateCaregiverCharacteristicsParticipantParticipantRoleClassCode(CaregiverCharacteristics, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Caregiver Characteristics Participant Participant Role Class Code</em>}' operation.
 	 * <!-- begin-user-doc -->
-	* <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @see #validateCaregiverCharacteristicsParticipantParticipantRoleClassCode(CaregiverCharacteristics, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered

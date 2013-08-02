@@ -357,7 +357,7 @@ public class AuthorizationActivityOperations extends ClinicalStatementOperations
 	/**
 	 * The cached OCL expression body for the '{@link #validateAuthorizationActivityEntryRelationshipHasClinicalStatement(AuthorizationActivity, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Authorization Activity Entry Relationship Has Clinical Statement</em>}' operation.
 	 * <!-- begin-user-doc -->
-	* <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @see #validateAuthorizationActivityEntryRelationshipHasClinicalStatement(AuthorizationActivity, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered

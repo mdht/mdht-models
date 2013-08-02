@@ -23,8 +23,8 @@ import org.openhealthtools.mdht.uml.cda.Observation;
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getAssessmentScaleObservation()
  * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='AssessmentScaleObservationTemplateId AssessmentScaleObservationClassCode AssessmentScaleObservationMoodCode AssessmentScaleObservationCode AssessmentScaleObservationEffectiveTime AssessmentScaleObservationId AssessmentScaleObservationStatusCode AssessmentScaleObservationStatusCodeP AssessmentScaleObservationValue AssessmentScaleObservationReferenceRangeObservationRangeReferenceValue AssessmentScaleObservationReferenceRangeObservationRange' templateId.root='2.16.840.1.113883.10.20.22.4.69' constraints.validation.warning='AssessmentScaleObservationCodeCodeSystem AssessmentScaleObservationAssessmentScaleSupportingObservation AssessmentScaleObservationReferenceRangeObservationRangeTextReference AssessmentScaleObservationReferenceRangeObservationRangeText' constraints.validation.info='AssessmentScaleObservationInterpretationCodeTranslation AssessmentScaleObservationDerivationExpr AssessmentScaleObservationInterpretationCode AssessmentScaleObservationAuthor AssessmentScaleObservationReferenceRange AssessmentScaleObservationReferenceRangeObservationRangeTextReferenceValue' classCode='OBS' moodCode='EVN' statusCode.code='completed' constraints.validation.query='AssessmentScaleObservationReferenceRangeObservationRangeTextReference AssessmentScaleObservationReferenceRangeObservationRangeTextReferenceValue AssessmentScaleObservationReferenceRangeObservationRangeReferenceValue AssessmentScaleObservationReferenceRangeObservationRangeText AssessmentScaleObservationReferenceRangeObservationRange'"
- *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolAssessmentScaleObservationReferenceRange constraints.validation.error='ReferenceRangeObservationRange'"
- *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolAssessmentScaleObservationReferenceRangeObservationRange constraints.validation.warning='ObservationRangeTextReference ObservationRangeText' constraints.validation.info='ObservationRangeTextReferenceValue' constraints.validation.error='ObservationRangeReferenceValue'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolAssessmentScaleObservationReferenceRange constraints.validation.error='AssessmentScaleObservationReferenceRangeObservationRange'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolAssessmentScaleObservationReferenceRangeObservationRange constraints.validation.warning='AssessmentScaleObservationReferenceRangeObservationRangeTextReference AssessmentScaleObservationReferenceRangeObservationRangeText' constraints.validation.info='AssessmentScaleObservationReferenceRangeObservationRangeTextReferenceValue' constraints.validation.error='AssessmentScaleObservationReferenceRangeObservationRangeReferenceValue'"
  * @generated
  */
 public interface AssessmentScaleObservation extends Observation {
@@ -225,7 +225,7 @@ public interface AssessmentScaleObservation extends Observation {
 
 	/**
 	 * <!-- begin-user-doc -->
-	* <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.

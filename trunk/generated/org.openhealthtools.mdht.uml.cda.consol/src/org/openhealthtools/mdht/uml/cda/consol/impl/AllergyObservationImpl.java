@@ -360,12 +360,13 @@ public class AllergyObservationImpl extends ObservationImpl implements AllergyOb
 
 	/**
 	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	* <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateAllergyObservationParticipantTypeCode(DiagnosticChain diagnostics,
+	public boolean validateAllergyObservationAllergyObservationParticipantTypeCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return AllergyObservationOperations.validateAllergyObservationParticipantTypeCode(this, diagnostics, context);
+		return AllergyObservationOperations.validateAllergyObservationAllergyObservationParticipantTypeCode(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -373,9 +374,9 @@ public class AllergyObservationImpl extends ObservationImpl implements AllergyOb
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateAllergyObservationParticipantParticipantRole(DiagnosticChain diagnostics,
+	public boolean validateAllergyObservationAllergyObservationParticipantParticipantRole(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return AllergyObservationOperations.validateAllergyObservationParticipantParticipantRole(
+		return AllergyObservationOperations.validateAllergyObservationAllergyObservationParticipantParticipantRole(
 			this, diagnostics, context);
 	}
 

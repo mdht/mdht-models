@@ -193,12 +193,11 @@ public class OperativeNoteImpl extends GeneralHeaderConstraintsImpl implements O
 
 	/**
 	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	* <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateOperativeNoteOperativeNoteFluidSection(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return OperativeNoteOperations.validateOperativeNoteOperativeNoteFluidSection(this, diagnostics, context);
+	public boolean validateOperativeNoteFluidSection(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return OperativeNoteOperations.validateOperativeNoteFluidSection(this, diagnostics, context);
 	}
 
 	/**
@@ -206,10 +205,9 @@ public class OperativeNoteImpl extends GeneralHeaderConstraintsImpl implements O
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateOperativeNoteOperativeNoteSurgicalProcedureSection(DiagnosticChain diagnostics,
+	public boolean validateOperativeNoteSurgicalProcedureSection(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return OperativeNoteOperations.validateOperativeNoteOperativeNoteSurgicalProcedureSection(
-			this, diagnostics, context);
+		return OperativeNoteOperations.validateOperativeNoteSurgicalProcedureSection(this, diagnostics, context);
 	}
 
 	/**
@@ -261,7 +259,7 @@ public class OperativeNoteImpl extends GeneralHeaderConstraintsImpl implements O
 
 	/**
 	 * <!-- begin-user-doc -->
-	* <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	public boolean validateOperativeNoteDocumentationOfServiceEventPrimaryPerformerAssignedEntityCode(

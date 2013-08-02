@@ -180,7 +180,7 @@ public class NumberOfPressureUlcersObservationImpl extends ObservationImpl imple
 
 	/**
 	 * <!-- begin-user-doc -->
-	* <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	public boolean validateNumberOfPressureUlcersObservationEntryRelationshipObservationClassCode(
