@@ -45,7 +45,7 @@
     <p>A detailed list of changes from the October ballot follows, also noting minor changes applied
       in the subsequent process of publishing in MDHT. </p>
     <table id="table_bnh_zkz_sg">
-      <tgroup cols="4">
+      <tgroup cols="5">
         <colspec colnum="1" colname="col1" colwidth="1*"/>
         <colspec colnum="2" colname="col2" colwidth="24*"/>
         <colspec colnum="3" colname="col3" colwidth="4*"/>
@@ -336,7 +336,6 @@
             <entry>Removed "EN" recommendation from language code constraint</entry>
             <entry>JLyle</entry>
             <entry>Jun-12</entry>
-            <entry/>
           </row>
           <row>
             <entry>45</entry>
@@ -344,157 +343,157 @@
               avoid mixed content</entry>
             <entry>JLyle</entry>
             <entry>Jun-12</entry>
-            <entry/>
           </row>
           <row> 
             <entry>46</entry><entry> GForge #  2366 Procedure may have multiple performers</entry> <entry>JLyle</entry>
             <entry>Jul 29</entry>
-            <entry/>
+            
           </row>
           <row> 
             <entry>47</entry><entry> GForge #  2369 Stipulate EVN mood for all observations</entry> <entry>JLyle</entry>
             <entry>Jul 29</entry>
-            <entry/>
+            
           </row>
           <row> 
             <entry>48</entry><entry> GForge #  2370 correct Routes of adm system</entry> <entry>JLyle</entry>
             <entry>Jul 29</entry>
-            <entry/>
+            
           </row>
           <row> 
             <entry>49</entry><entry> GForge #  2374 Informant requires code</entry> <entry>JLyle</entry>
             <entry>Jul 29</entry>
-            <entry/>
+            
           </row>
           <row> 
             <entry>50</entry><entry> GForge #  2376 need rxnorm OID</entry> <entry>JLyle</entry>
             <entry>Jul 29</entry>
-            <entry/>
+            
           </row>
           <row> 
             <entry>51</entry><entry> GForge #  2379 missing observation at 10202</entry> <entry>JLyle</entry>
             <entry>Jul 29</entry>
-            <entry/>
+            
           </row>
           <row> 
             <entry>52</entry><entry> GForge #  2380 update negatives map in appendix; remove redundancies</entry> <entry>JLyle</entry>
             <entry>Jul 29</entry>
-            <entry/>
+            
           </row>
           <row> 
             <entry>53</entry><entry> GForge #  2381 correct author cardinality</entry> <entry>JLyle</entry>
             <entry>Jul 29</entry>
-            <entry/>
+            
           </row>
           <row> 
             <entry>54</entry><entry> GForge #  2382 select best concatenation pattern for software name</entry> <entry>JLyle</entry>
             <entry>Jul 29</entry>
-            <entry/>
+            
           </row>
           <row> 
             <entry>55</entry><entry> GForge #  2385 add icd-10 cm</entry> <entry>JLyle</entry>
             <entry>Jul 29</entry>
-            <entry/>
+            
           </row>
           <row> 
             <entry>56</entry><entry> GForge #  2392 add missing traces</entry> <entry>JLyle</entry>
             <entry>Jul 29</entry>
-            <entry/>
+            
           </row>
           <row> 
             <entry>57</entry><entry> GForge #  2408 Replace trace 'professional' w 'personnel'</entry> <entry>JLyle</entry>
             <entry>Jul 29</entry>
-            <entry/>
+            
           </row>
           <row> 
             <entry>58</entry><entry> GForge #  2424 Deduplicate pt status and condition change</entry> <entry>JLyle</entry>
             <entry>Jul 29</entry>
-            <entry/>
+            
           </row>
           <row> 
             <entry>59</entry><entry> GForge #  2425 Deduplicate provider role level and role</entry> <entry>JLyle</entry>
             <entry>Jul 29</entry>
-            <entry/>
+            
           </row>
           <row> 
             <entry>60</entry><entry> GForge #  2426 Harmonize 2 resuscitation sets</entry> <entry>JLyle</entry>
             <entry>Jul 29</entry>
-            <entry/>
+            
           </row>
           <row> 
             <entry>61</entry><entry> GForge #  2427 make value set for medication administration devices</entry> <entry>JLyle</entry>
             <entry>Jul 29</entry>
-            <entry/>
+            
           </row>
           <row> 
             <entry>62</entry><entry> GForge #  2430 Fix vitals entry cardinality</entry> <entry>JLyle</entry>
             <entry>Jul 29</entry>
-            <entry/>
+            
           </row>
           <row> 
             <entry>63</entry><entry> GForge #  2431 add times to vitals obs</entry> <entry>JLyle</entry>
             <entry>Jul 29</entry>
-            <entry/>
+            
           </row>
           <row> 
             <entry>64</entry><entry> GForge #  2438 harmonize Glasgow values; change to quantities</entry> <entry>JLyle</entry>
             <entry>Jul 29</entry>
-            <entry/>
+            
           </row>
           <row> 
             <entry>65</entry><entry> GForge #  2447 Correct History of conditions cardinality </entry> <entry>JLyle</entry>
             <entry>Jul 29</entry>
-            <entry/>
+            
           </row>
           <row> 
             <entry>66</entry><entry> GForge #  2448 remove Procedure History </entry> <entry>JLyle</entry>
             <entry>Jul 29</entry>
-            <entry/>
+            
           </row>
           <row> 
             <entry>67</entry><entry> GForge #  2451 repeated code for first unit on scene</entry> <entry>JLyle</entry>
             <entry>Jul 29</entry>
-            <entry/>
+            
           </row>
           <row> 
             <entry>68</entry><entry> GForge #  2516 Advance Directives Section should allow multiple observations</entry> <entry>JLyle</entry>
             <entry>Jul 29</entry>
-            <entry/>
+            
           </row>
           <row> 
             <entry>69</entry><entry> GForge #  2580 correct loinc for O2 sat</entry> <entry>JLyle</entry>
             <entry>Jul 29</entry>
-            <entry/>
+            
           </row>
           <row> 
             <entry>70</entry><entry> GForge #  2586 align demographic value sets with CCDA (subsets)</entry> <entry>JLyle</entry>
             <entry>Jul 29</entry>
-            <entry/>
+            
           </row>
           <row> 
             <entry>71</entry><entry> GForge #  2636 Merge bradycardia, sinus bradycardia</entry> <entry>JLyle</entry>
             <entry>Jul 29</entry>
-            <entry/>
+            
           </row>
           <row> 
             <entry>72</entry><entry> GForge #  2643 add text to intro re vocabulary sources</entry> <entry>JLyle</entry>
             <entry>Jul 29</entry>
-            <entry/>
+            
           </row>
           <row> 
             <entry>73</entry><entry> GForge #  2646 split ""itching/urticaria"" into two answers</entry> <entry>JLyle</entry>
             <entry>Jul 29</entry>
-            <entry/>
+            
           </row>
           <row> 
             <entry>74</entry><entry> GForge #  2661 Update new value set OIDs using ext. 5, not 11</entry> <entry>JLyle</entry>
             <entry>Jul 29</entry>
-            <entry/>
+            
           </row>
           <row> 
-            <entry>75</entry><entry> GForge #  2667 injury cause code system is ICD-10 CM, not ICD-10</entry> <entry>JLyle</entry>
+            <entry>75</entry>
+            <entry> GForge #  2667 injury cause code system is ICD-10 CM, not ICD-10</entry> <entry>JLyle</entry>
             <entry>Jul 29</entry>
-            <entry/>
+    
           </row>          
         </tbody>
       </tgroup>

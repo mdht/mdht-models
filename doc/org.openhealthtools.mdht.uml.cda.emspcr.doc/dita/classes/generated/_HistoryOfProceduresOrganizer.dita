@@ -14,9 +14,9 @@
 </section>
 <ol id="conformance">
 <li><b>SHALL</b> contain exactly one [1..1] templateId (  ) such that it <ol><li><b>SHALL</b> contain exactly one [1..1] <b>@root</b>="2.16.840.1.1133883.17.3.10.1.62"</li></ol></li>
-<li><b>SHALL</b> contain zero or one [0..1] <tt><b>component</b></tt> (CONF:10073) <ol><li> This component <b>SHALL</b> contain exactly one [1..1] <tt><b>procedure</b></tt> (CONF:10077) <ol><li> This procedure <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt>, where the @code <b>SHALL</b> be selected from (CodeSystem:<tt> 2.16.840.1.113883.6.4 ICD-10 PCS</tt>) (CONF:10076)<p><lines><i>NEMSIS Trace: EHistory. 08</i></lines></p></li></ol> </li></ol>
+<li><b>SHALL</b> contain zero or one [0..1] <tt><b>component</b></tt> (CONF:10073) <ol><li> This component <b>SHALL</b> contain exactly one [1..1] <tt><b>procedure</b></tt> (CONF:10077) <ol><li> This procedure <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt>, which <b>SHALL</b> be selected from (CodeSystem:<tt> 2.16.840.1.113883.6.4 ICD-10 PCS</tt>) (CONF:10076)<p><lines><i>NEMSIS Trace: EHistory. 08</i></lines></p></li></ol> </li></ol>
 </li>
-<li><b>MAY</b> contain zero or more [0..*] <tt><b>component</b></tt> <ol><li> Such components <b>SHALL</b> contain zero or one [0..1] <tt><b>procedure</b></tt> <ol><li> This procedure <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt>, where the @code <b>SHALL</b> be selected from (CodeSystem:<tt> 2.16.840.1.113883.6.4 ICD-10 PCS</tt>) (CONF:10076)<p><lines><i>NEMSIS Trace: EHistory. 08</i></lines></p></li></ol> </li></ol>
+<li><b>MAY</b> contain zero or more [0..*] <tt><b>component</b></tt> <ol><li> Such components <b>SHALL</b> contain zero or one [0..1] <tt><b>procedure</b></tt> <ol><li> This procedure <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt>, which <b>SHALL</b> be selected from (CodeSystem:<tt> 2.16.840.1.113883.6.4 ICD-10 PCS</tt>) (CONF:10076)<p><lines><i>NEMSIS Trace: EHistory. 08</i></lines></p></li></ol> </li></ol>
 </li>
 </ol>
 <ol id="aggregate">
@@ -26,12 +26,33 @@
 </li>
 <li>Contains exactly one [1..1] <tt><b>statusCode</b></tt> with data type CS
 </li>
-<li><b>SHALL</b> contain zero or one [0..1] <tt><b>component</b></tt> (CONF:10073) <ol><li> This component <b>SHALL</b> contain exactly one [1..1] <tt><b>procedure</b></tt> (CONF:10077) <ol><li> This procedure <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt>, where the @code <b>SHALL</b> be selected from (CodeSystem:<tt> 2.16.840.1.113883.6.4 ICD-10 PCS</tt>) (CONF:10076)<p><lines><i>NEMSIS Trace: EHistory. 08</i></lines></p></li></ol> </li></ol>
+<li><b>SHALL</b> contain zero or one [0..1] <tt><b>component</b></tt> (CONF:10073) <ol><li> This component <b>SHALL</b> contain exactly one [1..1] <tt><b>procedure</b></tt> (CONF:10077) <ol><li> This procedure <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt>, which <b>SHALL</b> be selected from (CodeSystem:<tt> 2.16.840.1.113883.6.4 ICD-10 PCS</tt>) (CONF:10076)<p><lines><i>NEMSIS Trace: EHistory. 08</i></lines></p></li></ol> </li></ol>
 </li>
-<li><b>MAY</b> contain zero or more [0..*] <tt><b>component</b></tt> <ol><li> Such components <b>SHALL</b> contain zero or one [0..1] <tt><b>procedure</b></tt> <ol><li> This procedure <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt>, where the @code <b>SHALL</b> be selected from (CodeSystem:<tt> 2.16.840.1.113883.6.4 ICD-10 PCS</tt>) (CONF:10076)<p><lines><i>NEMSIS Trace: EHistory. 08</i></lines></p></li></ol> </li></ol>
+<li><b>MAY</b> contain zero or more [0..*] <tt><b>component</b></tt> <ol><li> Such components <b>SHALL</b> contain zero or one [0..1] <tt><b>procedure</b></tt> <ol><li> This procedure <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt>, which <b>SHALL</b> be selected from (CodeSystem:<tt> 2.16.840.1.113883.6.4 ICD-10 PCS</tt>) (CONF:10076)<p><lines><i>NEMSIS Trace: EHistory. 08</i></lines></p></li></ol> </li></ol>
 </li>
 </ol>
-<codeblock id="example"><![CDATA[Error: Missing Runtime Class]]></codeblock>
+<section id="tableconformance"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="8" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><colspec colname="col2" colnum="2" /><colspec colname="col3" colnum="3" /><colspec colname="col4" colnum="4" /><colspec colname="col5" colnum="5" /><colspec colname="col6" colnum="6" /><colspec colname="col7" colnum="7" /><thead> <row><entry namest="col0" nameend="col7" >emspcr::HistoryOfProceduresOrganizer</entry>  </row>  <row><entry namest="col0" nameend="col7" >cda::organizer[cda:templateId/@root = 2.16.840.1.1133883.17.3.10.1.62]/</entry>  </row>  <row><entry>Name</entry><entry>XPath</entry><entry>Cardinality</entry><entry>Severity</entry><entry>Nullable</entry><entry>Data Type</entry><entry>Conformance</entry><entry>Value(s)</entry></row></thead><tbody><row><entry>ExistenceOfHistoryOfProcedureComponent</entry><entry>ExistenceOfHistoryOfProcedureComponent</entry><entry>0..1</entry><entry>SHALL</entry><entry>YES</entry><entry>ExistenceOfHistoryOfProcedureComponent</entry><entry>CONF:10073</entry><entry> </entry></row> 
+<row><entry>HistoryOfProceduresComponent</entry><entry>HistoryOfProceduresComponent</entry><entry>0..*</entry><entry>MAY</entry><entry>YES</entry><entry>HistoryOfProceduresComponent</entry><entry></entry><entry> </entry></row> 
+</tbody></tgroup></table></p></section>
+<codeblock id="example"><![CDATA[<organizer xmlns="urn:hl7-org:v3">
+  <templateId root="2.16.840.1.1133883.17.3.10.1.62"/>
+  <id root="MDHT" extension="758123482"/>
+  <statusCode code="completed"/>
+  <effectiveTime>
+    <low value="2013"/>
+    <high value="2013"/>
+  </effectiveTime>
+  <component>
+    <procedure>
+      <code codeSystem="2.16.840.1.113883.6.4" codeSystemName="ICD-10 PCS"/>
+    </procedure>
+  </component>
+  <component>
+    <procedure>
+      <code codeSystem="2.16.840.1.113883.6.4" codeSystemName="ICD-10 PCS"/>
+    </procedure>
+  </component>
+</organizer>]]></codeblock>
 <section id="changes">
 </section>
 <p><ph id="classformalname">History Of Procedures Organizer</ph></p>

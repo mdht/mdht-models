@@ -89,7 +89,148 @@
 <ol>
 <li>Contains exactly one [1..1] <xref href="../DisasterType.dita">Disaster Type</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.59</tt>)</li></ol></li>
 </ol>
-<codeblock id="example"><![CDATA[Error: Missing Runtime Class]]></codeblock>
+<section id="tableconformance"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="8" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><colspec colname="col2" colnum="2" /><colspec colname="col3" colnum="3" /><colspec colname="col4" colnum="4" /><colspec colname="col5" colnum="5" /><colspec colname="col6" colnum="6" /><colspec colname="col7" colnum="7" /><thead> <row><entry namest="col0" nameend="col7" >emspcr::InjuryIncidentDescriptionSection</entry>  </row>  <row><entry namest="col0" nameend="col7" >/cda:ClinicalDocument/cda:component/cda:structuredBody/cda:component/cda:section[cda:templateId/@root = 2.16.840.1.113883.17.3.10.1.17]/</entry>  </row>  <row><entry>Name</entry><entry>XPath</entry><entry>Cardinality</entry><entry>Severity</entry><entry>Nullable</entry><entry>Data Type</entry><entry>Conformance</entry><entry>Value(s)</entry></row></thead><tbody><row><entry>code</entry><entry>code</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>CE</entry><entry>CONF:10094</entry><entry>LOINC 2.16.840.1.113883.6.1 11374-6</entry></row> 
+<row><entry>title</entry><entry>title</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>ST</entry><entry></entry><entry> MISSINGTYPE</entry></row> 
+<row><entry>airbagDeploymentStatus</entry><entry>cda:entry/cda:observation[cda:templateId/@root = 2.16.840.1.1133883.17.3.10.1.57]</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>AirbagDeploymentStatus</entry><entry></entry><entry> </entry></row> 
+<row><entry>disasterType</entry><entry>cda:entry/cda:observation[cda:templateId/@root = 2.16.840.1.1133883.17.3.10.1.59]</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>DisasterType</entry><entry></entry><entry> </entry></row> 
+<row><entry>heightOfFall</entry><entry>cda:entry/cda:observation[cda:templateId/@root = 2.16.840.1.1133883.17.3.10.1.58]</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>HeightOfFall</entry><entry></entry><entry> </entry></row> 
+<row><entry>injuryCauseCategory</entry><entry>cda:entry/cda:observation[cda:templateId/@root = 2.16.840.1.1133883.17.3.10.1.50]</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>InjuryCauseCategory</entry><entry></entry><entry> </entry></row> 
+<row><entry>injuryIncidentDescriptionSection</entry><entry>injuryIncidentDescriptionSection</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>InjuryIncidentDescriptionSection</entry><entry></entry><entry> </entry></row> 
+<row><entry>injuryMechanism</entry><entry>cda:entry/cda:observation[cda:templateId/@root = 2.16.840.1.1133883.17.3.10.1.51]</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>InjuryMechanism</entry><entry></entry><entry> </entry></row> 
+<row><entry>injuryRiskFactor</entry><entry>cda:entry/cda:observation[cda:templateId/@root = 2.16.840.1.1133883.17.3.10.1.53]</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>InjuryRiskFactor</entry><entry></entry><entry> </entry></row> 
+<row><entry>patientLocationInVehicle</entry><entry>cda:entry/cda:observation[cda:templateId/@root = 2.16.840.1.1133883.17.3.10.1.55]</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>PatientLocationInVehicle</entry><entry></entry><entry> </entry></row> 
+<row><entry>text</entry><entry>text</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>StrucDocText</entry><entry></entry><entry> </entry></row> 
+<row><entry>traumaCenterCriteria</entry><entry>cda:entry/cda:observation[cda:templateId/@root = 2.16.840.1.1133883.17.3.10.1.52]</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>TraumaCenterCriteria</entry><entry></entry><entry> </entry></row> 
+<row><entry>vehicleImpactArea</entry><entry>cda:entry/cda:observation[cda:templateId/@root = 2.16.840.1.1133883.17.3.10.1.54]</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>VehicleImpactArea</entry><entry></entry><entry> </entry></row> 
+<row><entry>vehicleOccupantSafetyEquipment</entry><entry>cda:entry/cda:observation[cda:templateId/@root = 2.16.840.1.1133883.17.3.10.1.56]</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>VehicleOccupantSafetyEquipment</entry><entry></entry><entry> </entry></row> 
+</tbody></tgroup></table></p></section>
+<codeblock id="example"><![CDATA[<section xmlns="urn:hl7-org:v3">
+  <templateId root="2.16.840.1.113883.17.3.10.1.17"/>
+  <id root="MDHT" extension="1263263431"/>
+  <code code="11374-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Injury Incident Description Section"/>
+  <title>Injury Incident Description Section</title>
+  <text/>
+  <entry>
+    <observation moodCode="EVN">
+      <templateId root="2.16.840.1.1133883.17.3.10.1.50"/>
+      <id root="MDHT" extension="374573169"/>
+      <code code="69543-7" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Injury Cause"/>
+      <text>Text Value</text>
+      <effectiveTime>
+        <low value="2013"/>
+        <high value="2013"/>
+      </effectiveTime>
+    </observation>
+  </entry>
+  <entry>
+    <observation moodCode="EVN">
+      <templateId root="2.16.840.1.1133883.17.3.10.1.51"/>
+      <id root="MDHT" extension="504157737"/>
+      <code code="67494-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Injury Mechanism"/>
+      <text>Text Value</text>
+      <effectiveTime>
+        <low value="2013"/>
+        <high value="2013"/>
+      </effectiveTime>
+    </observation>
+  </entry>
+  <entry>
+    <observation moodCode="EVN">
+      <templateId root="2.16.840.1.1133883.17.3.10.1.52"/>
+      <id root="MDHT" extension="663677244"/>
+      <code code="67495-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Trauma Center Critieria"/>
+      <text>Text Value</text>
+      <effectiveTime>
+        <low value="2013"/>
+        <high value="2013"/>
+      </effectiveTime>
+    </observation>
+  </entry>
+  <entry>
+    <observation moodCode="EVN">
+      <templateId root="2.16.840.1.1133883.17.3.10.1.53"/>
+      <id root="MDHT" extension="1137233621"/>
+      <code code="67496-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Other injury risk factors"/>
+      <text>Text Value</text>
+      <effectiveTime>
+        <low value="2013"/>
+        <high value="2013"/>
+      </effectiveTime>
+    </observation>
+  </entry>
+  <entry>
+    <observation moodCode="EVN">
+      <templateId root="2.16.840.1.1133883.17.3.10.1.54"/>
+      <id root="MDHT" extension="182865570"/>
+      <code code="67497-8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Location of impact on the vehicle"/>
+      <text>Text Value</text>
+      <effectiveTime>
+        <low value="2013"/>
+        <high value="2013"/>
+      </effectiveTime>
+    </observation>
+  </entry>
+  <entry>
+    <observation moodCode="EVN">
+      <templateId root="2.16.840.1.1133883.17.3.10.1.55"/>
+      <id root="MDHT" extension="2120689773"/>
+      <code code="67498-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Location of patient in vehicle"/>
+      <text>Text Value</text>
+      <effectiveTime>
+        <low value="2013"/>
+        <high value="2013"/>
+      </effectiveTime>
+    </observation>
+  </entry>
+  <entry>
+    <observation moodCode="EVN">
+      <templateId root="2.16.840.1.1133883.17.3.10.1.56"/>
+      <id root="MDHT" extension="2058598536"/>
+      <code code="67499-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Safety equipment"/>
+      <text>Text Value</text>
+      <effectiveTime>
+        <low value="2013"/>
+        <high value="2013"/>
+      </effectiveTime>
+    </observation>
+  </entry>
+  <entry>
+    <observation moodCode="EVN">
+      <templateId root="2.16.840.1.1133883.17.3.10.1.57"/>
+      <id root="MDHT" extension="367967925"/>
+      <code code="67500-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Airbag deployment"/>
+      <text>Text Value</text>
+      <effectiveTime>
+        <low value="2013"/>
+        <high value="2013"/>
+      </effectiveTime>
+    </observation>
+  </entry>
+  <entry>
+    <observation moodCode="EVN">
+      <templateId root="2.16.840.1.1133883.17.3.10.1.58"/>
+      <id root="MDHT" extension="971410731"/>
+      <code code="67501-7" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Height of fall"/>
+      <text>Text Value</text>
+      <effectiveTime>
+        <low value="2013"/>
+        <high value="2013"/>
+      </effectiveTime>
+    </observation>
+  </entry>
+  <entry>
+    <observation moodCode="EVN">
+      <templateId root="2.16.840.1.1133883.17.3.10.1.59"/>
+      <id root="MDHT" extension="760074811"/>
+      <code code="69463-8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Suspected intentional or unintentional disaster"/>
+      <text>Text Value</text>
+      <effectiveTime>
+        <low value="2013"/>
+        <high value="2013"/>
+      </effectiveTime>
+    </observation>
+  </entry>
+</section>]]></codeblock>
 <section id="changes">
 </section>
 <p><ph id="classformalname">Injury Incident Description Section</ph></p>

@@ -53,8 +53,30 @@ UCUM units SHOULD be "mm[Hg]".</i></lines></p></li></ul></li>
 <li><b>MAY</b> contain zero or one [0..1] <tt><b>author</b></tt> (CONF:7310)
 <ol>
 <li>Contains exactly one [1..1] CDA Author</li></ol></li>
+<li>text, if present, <b>SHOULD</b> contain zero or one [0..1] reference (CONF:15943)</li>
+<li>reference, if present, <b>SHOULD</b> contain zero or one [0..1] @value (CONF:15944)</li>
+<li>reference/@value <b>SHALL</b> begin with a '#' and <b>SHALL</b> point to its corresponding narrative (using the approach defined in CDA Release 2, section 4.3.5.1) (CONF:15945)</li>
 </ol>
-<codeblock id="example"><![CDATA[Error: Missing Runtime Class]]></codeblock>
+<section id="tableconformance"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="8" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><colspec colname="col2" colnum="2" /><colspec colname="col3" colnum="3" /><colspec colname="col4" colnum="4" /><colspec colname="col5" colnum="5" /><colspec colname="col6" colnum="6" /><colspec colname="col7" colnum="7" /><thead> <row><entry namest="col0" nameend="col7" >emspcr::DiastolicBloodPressure</entry>  </row>  <row><entry namest="col0" nameend="col7" >cda::observation[cda:templateId/@root = 2.16.840.1.1133883.17.3.10.1.144]/</entry>  </row>  <row><entry>Name</entry><entry>XPath</entry><entry>Cardinality</entry><entry>Severity</entry><entry>Nullable</entry><entry>Data Type</entry><entry>Conformance</entry><entry>Value(s)</entry></row></thead><tbody><row><entry>moodCode</entry><entry>@moodCode</entry><entry>1..1</entry><entry>SHALL</entry><entry>NO</entry><entry>x_ActMoodDocumentObservation</entry><entry></entry><entry> DEF</entry></row> 
+<row><entry>code</entry><entry>code</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>CD</entry><entry>CONF:10282</entry><entry>LOINC 2.16.840.1.113883.6.1 8462-4</entry></row> 
+<row><entry>effectiveTime</entry><entry>effectiveTime</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>IVL_TS</entry><entry></entry><entry> </entry></row> 
+<row><entry>value</entry><entry>value</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>PQ</entry><entry>CONF:10283</entry><entry> </entry></row> 
+<row><entry>DiastolicBloodPressure</entry><entry>DiastolicBloodPressure</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>DiastolicBloodPressure</entry><entry></entry><entry> </entry></row> 
+</tbody></tgroup></table></p></section>
+<codeblock id="example"><![CDATA[<observation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" moodCode="EVN">
+  <templateId root="2.16.840.1.1133883.17.3.10.1.144"/>
+  <id root="MDHT" extension="1626967503"/>
+  <code code="8462-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Intravascular diastolic"/>
+  <text>Text Value</text>
+  <effectiveTime>
+    <low value="2013"/>
+    <high value="2013"/>
+  </effectiveTime>
+  <value xsi:type="PQ"/>
+  <interpretationCode code="1487758591"/>
+  <methodCode code="1873128076"/>
+  <targetSiteCode code="1891620154"/>
+</observation>]]></codeblock>
 <section id="changes">
 </section>
 <p><ph id="classformalname">Diastolic Blood Pressure</ph></p>

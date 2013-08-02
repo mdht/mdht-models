@@ -18,7 +18,7 @@
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="67519-9" </tt><i>Cardiac rhythm</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10189)
 </li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type CD, where the @code <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/CardiacRhythmReading.dita">CardiacRhythmReading</xref> 2.16.840.1.113883.17.3.11.16</tt><b> STATIC</b> (CONF:10190)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type CD, which <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/CardiacRhythmReading.dita">CardiacRhythmReading</xref> 2.16.840.1.113883.17.3.11.16</tt><b> STATIC</b> (CONF:10190)
 <ul><li><p><lines><i>NEMSIS Trace: EArrest.17</i></lines></p></li></ul></li>
 </ol>
 <ol id="aggregate">
@@ -28,10 +28,23 @@
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="67519-9" </tt><i>Cardiac rhythm</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10189)
 </li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type CD, where the @code <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/CardiacRhythmReading.dita">CardiacRhythmReading</xref> 2.16.840.1.113883.17.3.11.16</tt><b> STATIC</b> (CONF:10190)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type CD, which <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/CardiacRhythmReading.dita">CardiacRhythmReading</xref> 2.16.840.1.113883.17.3.11.16</tt><b> STATIC</b> (CONF:10190)
 <ul><li><p><lines><i>NEMSIS Trace: EArrest.17</i></lines></p></li></ul></li>
 </ol>
-<codeblock id="example"><![CDATA[Error: Missing Runtime Class]]></codeblock>
+<section id="tableconformance"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="8" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><colspec colname="col2" colnum="2" /><colspec colname="col3" colnum="3" /><colspec colname="col4" colnum="4" /><colspec colname="col5" colnum="5" /><colspec colname="col6" colnum="6" /><colspec colname="col7" colnum="7" /><thead> <row><entry namest="col0" nameend="col7" >emspcr::DestinationRhythm</entry>  </row>  <row><entry namest="col0" nameend="col7" >cda::observation[cda:templateId/@root = 2.16.840.1.1133883.17.3.10.1.129]/</entry>  </row>  <row><entry>Name</entry><entry>XPath</entry><entry>Cardinality</entry><entry>Severity</entry><entry>Nullable</entry><entry>Data Type</entry><entry>Conformance</entry><entry>Value(s)</entry></row></thead><tbody><row><entry>moodCode</entry><entry>@moodCode</entry><entry>1..1</entry><entry>SHALL</entry><entry>NO</entry><entry>x_ActMoodDocumentObservation</entry><entry></entry><entry> DEF</entry></row> 
+<row><entry>code</entry><entry>code</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>CD</entry><entry>CONF:10189</entry><entry>LOINC 2.16.840.1.113883.6.1 67519-9</entry></row> 
+<row><entry>value</entry><entry>value</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>CD</entry><entry>CONF:10190</entry><entry> </entry></row> 
+<row><entry>destinationRhythm</entry><entry>destinationRhythm</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>DestinationRhythm</entry><entry>CONF:10188</entry><entry> </entry></row> 
+</tbody></tgroup></table></p></section>
+<codeblock id="example"><![CDATA[<observation xmlns="urn:hl7-org:v3" moodCode="EVN">
+  <templateId root="2.16.840.1.1133883.17.3.10.1.129"/>
+  <id root="MDHT" extension="1839758129"/>
+  <code code="67519-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Cardiac rhythm"/>
+  <effectiveTime>
+    <low value="2013"/>
+    <high value="2013"/>
+  </effectiveTime>
+</observation>]]></codeblock>
 <section id="changes">
 </section>
 <p><ph id="classformalname">Destination Rhythm</ph></p>

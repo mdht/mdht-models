@@ -37,7 +37,58 @@
 <ol>
 <li>Contains exactly one [1..1] <xref href="../MedicationAdministered.dita">Medication Administered</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.72</tt>)</li></ol></li>
 </ol>
-<codeblock id="example"><![CDATA[Error: Missing Runtime Class]]></codeblock>
+<section id="tableconformance"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="8" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><colspec colname="col2" colnum="2" /><colspec colname="col3" colnum="3" /><colspec colname="col4" colnum="4" /><colspec colname="col5" colnum="5" /><colspec colname="col6" colnum="6" /><colspec colname="col7" colnum="7" /><thead> <row><entry namest="col0" nameend="col7" >emspcr::MedicationsAdministeredSection</entry>  </row>  <row><entry namest="col0" nameend="col7" >/cda:ClinicalDocument/cda:component/cda:structuredBody/cda:component/cda:section[cda:templateId/@root = 2.16.840.1.113883.17.3.10.1.18]/</entry>  </row>  <row><entry>Name</entry><entry>XPath</entry><entry>Cardinality</entry><entry>Severity</entry><entry>Nullable</entry><entry>Data Type</entry><entry>Conformance</entry><entry>Value(s)</entry></row></thead><tbody><row><entry>code</entry><entry>code</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>CE</entry><entry>CONF:10439</entry><entry>LOINC 2.16.840.1.113883.6.1 </entry></row> 
+<row><entry>title</entry><entry>title</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>ST</entry><entry>CONF:10442</entry><entry> MISSINGTYPE</entry></row> 
+<row><entry>medicationAdministered</entry><entry>cda:entry/cda:substanceAdministration[cda:templateId/@root = 2.16.840.1.1133883.17.3.10.1.72]</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>MedicationAdministered</entry><entry></entry><entry> </entry></row> 
+<row><entry>MedicationsAdministeredSection</entry><entry>MedicationsAdministeredSection</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>MedicationsAdministeredSection</entry><entry>CONF:10015</entry><entry> </entry></row> 
+<row><entry>text</entry><entry>text</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>StrucDocText</entry><entry>CONF:10441</entry><entry> </entry></row> 
+</tbody></tgroup></table></p></section>
+<codeblock id="example"><![CDATA[<section xmlns="urn:hl7-org:v3">
+  <templateId root="2.16.840.1.113883.17.3.10.1.18"/>
+  <id root="MDHT" extension="652413706"/>
+  <code code="352446472"/>
+  <title>Medications Administered Section</title>
+  <text/>
+  <entry>
+    <substanceAdministration classCode="SBADM">
+      <templateId root="2.16.840.1.1133883.17.3.10.1.72"/>
+      <id root="MDHT" extension="903794300"/>
+      <code code="735824958"/>
+      <text>Text Value</text>
+      <effectiveTime value="20130802"/>
+      <routeCode codeSystem="2.16.840.1.113883.3.26.1.1.1" codeSystemName="FDA Route of Administration"/>
+      <approachSiteCode code="15562006" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT" displayName="structure of respiratory region of nose"/>
+      <consumable>
+        <manufacturedProduct/>
+      </consumable>
+      <performer>
+        <assignedEntity>
+          <code codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+        </assignedEntity>
+      </performer>
+      <participant typeCode="DEV">
+        <participantRole classCode="MANU"/>
+      </participant>
+      <entryRelationship typeCode="RSON" inversionInd="true">
+        <observation/>
+      </entryRelationship>
+      <entryRelationship>
+        <observation/>
+      </entryRelationship>
+      <entryRelationship>
+        <observation/>
+      </entryRelationship>
+      <entryRelationship>
+        <observation/>
+      </entryRelationship>
+      <entryRelationship>
+        <act classCode="INFRM">
+          <code codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+        </act>
+      </entryRelationship>
+    </substanceAdministration>
+  </entry>
+</section>]]></codeblock>
 <section id="changes">
 </section>
 <p><ph id="classformalname">Medications Administered Section</ph></p>
