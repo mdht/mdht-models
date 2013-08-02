@@ -361,8 +361,11 @@ NEMSIS Trace: DPersonnel.09</body>
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_g56dUYysEeKEkL1RWP3smw"/>
           </ownedAttribute>
           <ownedAttribute xmi:id="_hVg6QETZEeKEm6ZghGGtvw" name="AuthoringDevice" type="_BGI68HtCEeGs2I-Db78R9w" association="_hVjWgETZEeKEm6ZghGGtvw">
-            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_fG9R8IysEeKEkL1RWP3smw" value="1"/>
-            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_fG95AIysEeKEkL1RWP3smw" value="1"/>
+            <ownedComment xmi:id="_6R5owPsXEeKCRNC-sxBJsQ">
+              <body>One authoring device is required for the document.</body>
+            </ownedComment>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2g5cUPsXEeKCRNC-sxBJsQ" value="1"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2g6DYPsXEeKCRNC-sxBJsQ"/>
           </ownedAttribute>
           <nestedClassifier xmi:type="uml:Class" xmi:id="_1xAj0HtDEeGs2I-Db78R9w" name="HumanAuthor">
             <generalization xmi:id="_7du2EHtDEeGs2I-Db78R9w">
@@ -9448,7 +9451,7 @@ UCUM units SHOULD be &quot;[mi_i]&quot;</body>
   </CDA:CodeSystemConstraint>
   <CDA:CDATemplate xmi:id="_DkbvYIjuEeKx3P4dlW9OSw" base_Class="_01XGkIzsEeGnhceUMXltng" templateId="2.16.840.1.1133883.17.3.10.1.177"/>
   <CDA:ConformsTo xmi:id="_Hwu7QIjvEeKx3P4dlW9OSw" severity="INFO" base_Generalization="_1HuB4IzsEeGnhceUMXltng"/>
-  <CDA:CodeSystemConstraint xmi:id="_5X754IzsEeGnhceUMXltng" code="2710-2" displayName="Oxygen saturation" base_Property="_10ZhsIzsEeGnhceUMXltng">
+  <CDA:CodeSystemConstraint xmi:id="_5X754IzsEeGnhceUMXltng" code="2708-6" displayName="Oxygen saturation" base_Property="_10ZhsIzsEeGnhceUMXltng">
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
     <ruleId>CONF:10291</ruleId>
   </CDA:CodeSystemConstraint>
@@ -10624,6 +10627,6 @@ UCUM units SHOULD be &quot;[mi_i]&quot;</body>
     <ruleId>CONF:7304</ruleId>
   </CDA:PropertyValidation>
   <CDA:ValueSetConstraint xmi:id="_6IOWIPfnEeK_n7ZHGRzt1Q" base_Property="_ppT5kHtAEeGs2I-Db78R9w">
-    <reference href="../../org.openhealthtools.mdht.uml.cda.consol.model/model/consol-vocab.uml#_LGTEUDVREeGIw7CntkyPQw"/>
+    <reference href="emspcr-vocab.uml#_mK-6oPsTEeKCRNC-sxBJsQ"/>
   </CDA:ValueSetConstraint>
 </xmi:XMI>
