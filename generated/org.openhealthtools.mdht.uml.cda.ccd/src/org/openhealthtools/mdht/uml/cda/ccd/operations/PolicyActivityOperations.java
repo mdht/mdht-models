@@ -93,7 +93,6 @@ public class PolicyActivityOperations extends ClinicalStatementOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.performer->one(perf : cda::Performer2 | perf.typeCode = vocab::ParticipationPhysicalPerformer::PRF)
 	 * @param policyActivity The receiving '<em><b>Policy Activity</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -151,7 +150,6 @@ public class PolicyActivityOperations extends ClinicalStatementOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.participant->one(part : cda::Participant2 | part.typeCode = vocab::ParticipationType::COV)
 	 * @param policyActivity The receiving '<em><b>Policy Activity</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -210,8 +208,6 @@ public class PolicyActivityOperations extends ClinicalStatementOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.participant->one(part : cda::Participant2 | part.typeCode = vocab::ParticipationType::COV
-	 *   implies not part.time.oclIsUndefined())
 	 * @param policyActivity The receiving '<em><b>Policy Activity</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -268,7 +264,6 @@ public class PolicyActivityOperations extends ClinicalStatementOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.participant->one(part : cda::Participant2 | part.typeCode = vocab::ParticipationType::HLD)
 	 * @param policyActivity The receiving '<em><b>Policy Activity</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -326,8 +321,6 @@ public class PolicyActivityOperations extends ClinicalStatementOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.participant->one(part : cda::Participant2 | part.typeCode = vocab::ParticipationType::HLD
-	 *   implies not part.time.oclIsUndefined())
 	 * @param policyActivity The receiving '<em><b>Policy Activity</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -384,7 +377,6 @@ public class PolicyActivityOperations extends ClinicalStatementOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.entryRelationship->forAll(rel : cda::EntryRelationship | rel.typeCode = vocab::x_ActRelationshipEntryRelationship::REFR)
 	 * @param policyActivity The receiving '<em><b>Policy Activity</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -443,8 +435,6 @@ public class PolicyActivityOperations extends ClinicalStatementOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.entryRelationship->forAll(rel : cda::EntryRelationship | rel.act.oclIsKindOf(ccd::AuthorizationActivity)
-	 *   or rel.act.oclIsKindOf(ccd::CoveragePlanDescription))
 	 * @param policyActivity The receiving '<em><b>Policy Activity</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -502,7 +492,6 @@ public class PolicyActivityOperations extends ClinicalStatementOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.1.26')
 	 * @param policyActivity The receiving '<em><b>Policy Activity</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -559,7 +548,6 @@ public class PolicyActivityOperations extends ClinicalStatementOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.classCode=vocab::x_ActClassDocumentEntryAct::ACT
 	 * @param policyActivity The receiving '<em><b>Policy Activity</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -616,7 +604,6 @@ public class PolicyActivityOperations extends ClinicalStatementOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.moodCode=vocab::x_DocumentActMood::EVN
 	 * @param policyActivity The receiving '<em><b>Policy Activity</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -673,7 +660,6 @@ public class PolicyActivityOperations extends ClinicalStatementOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * (self.id->isEmpty() or self.id->exists(element | element.isNullFlavorUndefined())) implies (not self.id->isEmpty())
 	 * @param policyActivity The receiving '<em><b>Policy Activity</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -729,9 +715,6 @@ public class PolicyActivityOperations extends ClinicalStatementOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * (self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and 
-	 * let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in 
-	 * value.code = 'completed')
 	 * @param policyActivity The receiving '<em><b>Policy Activity</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -788,7 +771,6 @@ public class PolicyActivityOperations extends ClinicalStatementOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.performer->one(performer : cda::Performer2 | not performer.assignedEntity.oclIsUndefined() and performer.assignedEntity.oclIsKindOf(cda::AssignedEntity))
 	 * @param policyActivity The receiving '<em><b>Policy Activity</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -845,7 +827,6 @@ public class PolicyActivityOperations extends ClinicalStatementOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.participant->one(participant : cda::Participant2 | not participant.participantRole.oclIsUndefined() and participant.participantRole.oclIsKindOf(cda::ParticipantRole))
 	 * @param policyActivity The receiving '<em><b>Policy Activity</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -902,7 +883,6 @@ public class PolicyActivityOperations extends ClinicalStatementOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.participant->one(participant : cda::Participant2 | not participant.participantRole.oclIsUndefined() and participant.participantRole.oclIsKindOf(cda::ParticipantRole))
 	 * @param policyActivity The receiving '<em><b>Policy Activity</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -958,10 +938,6 @@ public class PolicyActivityOperations extends ClinicalStatementOperations {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getAssignedEntities()->select(assignedEntity : cda::AssignedEntity | not assignedEntity.oclIsUndefined() and assignedEntity.oclIsKindOf(cda::AssignedEntity))->asSequence()->any(true).oclAsType(cda::AssignedEntity)
-	 * @param policyActivity The receiving '<em><b>Policy Activity</b></em>' model object.
-	 * <!-- end-model-doc -->
 	 * @generated
 	 */
 	public static AssignedEntity getPayerEntity(PolicyActivity policyActivity) {
@@ -1002,10 +978,6 @@ public class PolicyActivityOperations extends ClinicalStatementOperations {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getParticipantRoles()->select(participantRole : cda::ParticipantRole | not participantRole.oclIsUndefined() and participantRole.oclIsKindOf(cda::ParticipantRole))->asSequence()->any(true).oclAsType(cda::ParticipantRole)
-	 * @param policyActivity The receiving '<em><b>Policy Activity</b></em>' model object.
-	 * <!-- end-model-doc -->
 	 * @generated
 	 */
 	public static ParticipantRole getCoveredParty(PolicyActivity policyActivity) {
@@ -1046,10 +1018,6 @@ public class PolicyActivityOperations extends ClinicalStatementOperations {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getParticipantRoles()->select(participantRole : cda::ParticipantRole | not participantRole.oclIsUndefined() and participantRole.oclIsKindOf(cda::ParticipantRole))->asSequence()->any(true).oclAsType(cda::ParticipantRole)
-	 * @param policyActivity The receiving '<em><b>Policy Activity</b></em>' model object.
-	 * <!-- end-model-doc -->
 	 * @generated
 	 */
 	public static ParticipantRole getSubscriber(PolicyActivity policyActivity) {

@@ -77,9 +77,6 @@ public class PlanOfCareActivityObservationOperations extends ClinicalStatementOp
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.moodCode = vocab::x_ActMoodDocumentObservation::INT or self.moodCode = vocab::x_ActMoodDocumentObservation::GOL
-	 *   or self.moodCode = vocab::x_ActMoodDocumentObservation::PRMS or self.moodCode = vocab::x_ActMoodDocumentObservation::PRP
-	 *   or self.moodCode = vocab::x_ActMoodDocumentObservation::RQO
 	 * @param planOfCareActivityObservation The receiving '<em><b>Plan Of Care Activity Observation</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -139,7 +136,6 @@ public class PlanOfCareActivityObservationOperations extends ClinicalStatementOp
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.1.25')
 	 * @param planOfCareActivityObservation The receiving '<em><b>Plan Of Care Activity Observation</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -199,7 +195,6 @@ public class PlanOfCareActivityObservationOperations extends ClinicalStatementOp
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * (self.id->isEmpty() or self.id->exists(element | element.isNullFlavorUndefined())) implies (not self.id->isEmpty())
 	 * @param planOfCareActivityObservation The receiving '<em><b>Plan Of Care Activity Observation</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -258,7 +253,6 @@ public class PlanOfCareActivityObservationOperations extends ClinicalStatementOp
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * isDefined('moodCode')
 	 * @param planOfCareActivityObservation The receiving '<em><b>Plan Of Care Activity Observation</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.

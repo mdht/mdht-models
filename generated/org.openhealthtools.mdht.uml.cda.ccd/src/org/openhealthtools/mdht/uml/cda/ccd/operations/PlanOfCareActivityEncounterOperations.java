@@ -77,9 +77,6 @@ public class PlanOfCareActivityEncounterOperations extends ClinicalStatementOper
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.moodCode = vocab::x_DocumentEncounterMood::INT or self.moodCode = vocab::x_DocumentEncounterMood::ARQ
-	 *   or self.moodCode = vocab::x_DocumentEncounterMood::PRMS or self.moodCode = vocab::x_DocumentEncounterMood::PRP
-	 *   or self.moodCode = vocab::x_DocumentEncounterMood::RQO
 	 * @param planOfCareActivityEncounter The receiving '<em><b>Plan Of Care Activity Encounter</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -139,7 +136,6 @@ public class PlanOfCareActivityEncounterOperations extends ClinicalStatementOper
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.1.25')
 	 * @param planOfCareActivityEncounter The receiving '<em><b>Plan Of Care Activity Encounter</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -198,7 +194,6 @@ public class PlanOfCareActivityEncounterOperations extends ClinicalStatementOper
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * (self.id->isEmpty() or self.id->exists(element | element.isNullFlavorUndefined())) implies (not self.id->isEmpty())
 	 * @param planOfCareActivityEncounter The receiving '<em><b>Plan Of Care Activity Encounter</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -257,7 +252,6 @@ public class PlanOfCareActivityEncounterOperations extends ClinicalStatementOper
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * isDefined('moodCode')
 	 * @param planOfCareActivityEncounter The receiving '<em><b>Plan Of Care Activity Encounter</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.

@@ -83,8 +83,6 @@ public class FunctionalStatusSectionOperations extends SectionOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getEntryTargets(ccd::ProblemAct)->size() > 0
-	 *   or self.getEntryTargets(ccd::ResultOrganizer)->size() > 0
 	 * @param functionalStatusSection The receiving '<em><b>Functional Status Section</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -143,7 +141,6 @@ public class FunctionalStatusSectionOperations extends SectionOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getObservations()->select(obs : cda::Observation | obs.oclIsKindOf(ccd::ProblemObservation) or obs.oclIsKindOf(ccd::ResultObservation))->forAll(ob : cda::Observation| ob.code->size() = 1)
 	 * @param functionalStatusSection The receiving '<em><b>Functional Status Section</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -201,7 +198,6 @@ public class FunctionalStatusSectionOperations extends SectionOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getObservations()->select(obs : cda::Observation | obs.oclIsKindOf(ccd::ProblemObservation) or obs.oclIsKindOf(ccd::ResultObservation))->forAll(ob : cda::Observation| ob.code.codeSystem = '2.16.840.1.113883.6.96')
 	 * @param functionalStatusSection The receiving '<em><b>Functional Status Section</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -260,7 +256,6 @@ public class FunctionalStatusSectionOperations extends SectionOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getObservations()->select(o | o.value->select(v | v.oclIsKindOf(datatypes::CD)  or  v.oclIsKindOf(datatypes::CE) ) ->isEmpty())->isEmpty()
 	 * @param functionalStatusSection The receiving '<em><b>Functional Status Section</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -318,7 +313,6 @@ public class FunctionalStatusSectionOperations extends SectionOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getObservations()->select(o|o.code.codeSystem <> '2.16.840.1.113883.6.254')->isEmpty()
 	 * @param functionalStatusSection The receiving '<em><b>Functional Status Section</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -376,7 +370,6 @@ public class FunctionalStatusSectionOperations extends SectionOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getObservations()->select(obs : cda::Observation | (obs.oclIsKindOf(ccd::ResultObservation) or obs.oclIsKindOf(ccd::ProblemObservation)))->forAll(ob : cda::Observation | ob.getObservations()->select(o: cda::Observation | o.oclIsKindOf(ccd::FunctionalStatusObservation))->size() = 1)
 	 * @param functionalStatusSection The receiving '<em><b>Functional Status Section</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -436,8 +429,6 @@ public class FunctionalStatusSectionOperations extends SectionOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getObservations()->select(obs : cda::Observation | (obs.oclIsKindOf(ccd::ResultObservation) or obs.oclIsKindOf(ccd::ProblemObservation)))->
-	 * forAll(ob : cda::Observation | ob.getObservations()->select(o: cda::Observation | o.oclIsKindOf(ccd::FunctionalStatusObservation))->size() = 1)
 	 * @param functionalStatusSection The receiving '<em><b>Functional Status Section</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -496,7 +487,6 @@ public class FunctionalStatusSectionOperations extends SectionOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.1.5')
 	 * @param functionalStatusSection The receiving '<em><b>Functional Status Section</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -556,9 +546,6 @@ public class FunctionalStatusSectionOperations extends SectionOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * (self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and 
-	 * let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in 
-	 * value.code = '47420-5' and value.codeSystem = '2.16.840.1.113883.6.1')
 	 * @param functionalStatusSection The receiving '<em><b>Functional Status Section</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -616,7 +603,6 @@ public class FunctionalStatusSectionOperations extends SectionOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * (self.title.oclIsUndefined() or self.title.isNullFlavorUndefined()) implies (not self.title.oclIsUndefined())
 	 * @param functionalStatusSection The receiving '<em><b>Functional Status Section</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -674,7 +660,6 @@ public class FunctionalStatusSectionOperations extends SectionOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * not self.text.oclIsUndefined()
 	 * @param functionalStatusSection The receiving '<em><b>Functional Status Section</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.

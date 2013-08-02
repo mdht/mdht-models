@@ -108,7 +108,6 @@ public class MedicationActivityOperations extends SubstanceAdministrationOperati
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.moodCode=vocab::x_DocumentSubstanceMood::EVN or self.moodCode=vocab::x_DocumentSubstanceMood::INT 
 	 * @param medicationActivity The receiving '<em><b>Medication Activity</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -165,7 +164,6 @@ public class MedicationActivityOperations extends SubstanceAdministrationOperati
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * not self.doseQuantity.oclIsUndefined() or not self.rateQuantity.oclIsUndefined()
 	 * @param medicationActivity The receiving '<em><b>Medication Activity</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -227,7 +225,6 @@ public class MedicationActivityOperations extends SubstanceAdministrationOperati
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getClinicalDocument().authorization->size() > 0 and self.getClinicalDocument().authorization.consent->size() > 0
 	 * @param medicationActivity The receiving '<em><b>Medication Activity</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -290,13 +287,6 @@ public class MedicationActivityOperations extends SubstanceAdministrationOperati
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * not self.informant->isEmpty() 
-	 * or not self.getSection().informant->isEmpty()
-	 * or not self.getClinicalDocument().informant->isEmpty()
-	 * or self.reference->exists(ref : cda::Reference | ref.typeCode = vocab::x_ActRelationshipExternalReference::XCRPT)
-	 * or (self.entryRelationship->exists(rel : cda::EntryRelationship | 
-	 *    rel.typeCode = vocab::x_ActRelationshipEntryRelationship::REFR
-	 *    and rel.observation.code.code = '48766-0'))
 	 * @param medicationActivity The receiving '<em><b>Medication Activity</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -354,7 +344,6 @@ public class MedicationActivityOperations extends SubstanceAdministrationOperati
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.precondition->exists(precondition : cda::Precondition | not precondition.criterion.oclIsUndefined())
 	 * @param medicationActivity The receiving '<em><b>Medication Activity</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -413,7 +402,6 @@ public class MedicationActivityOperations extends SubstanceAdministrationOperati
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.entryRelationship->exists(entryRel : cda::EntryRelationship | entryRel.typeCode = vocab::x_ActRelationshipEntryRelationship::RSON)
 	 * @param medicationActivity The receiving '<em><b>Medication Activity</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -472,10 +460,6 @@ public class MedicationActivityOperations extends SubstanceAdministrationOperati
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getEntryRelationshipTargets(vocab::x_ActRelationshipEntryRelationship::RSON, cda::ClinicalStatement)->forAll(target : 
-	 * 
-	 * cda::ClinicalStatement | not target.oclIsUndefined() and 
-	 *   (target.oclIsKindOf(ccd::ProblemAct) or target.oclIsKindOf(ccd::ProblemObservation)))
 	 * @param medicationActivity The receiving '<em><b>Medication Activity</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -533,7 +517,6 @@ public class MedicationActivityOperations extends SubstanceAdministrationOperati
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.consumable.manufacturedProduct.oclIsKindOf(ccd::Product)
 	 * @param medicationActivity The receiving '<em><b>Medication Activity</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -590,7 +573,6 @@ public class MedicationActivityOperations extends SubstanceAdministrationOperati
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.1.24')
 	 * @param medicationActivity The receiving '<em><b>Medication Activity</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -647,7 +629,6 @@ public class MedicationActivityOperations extends SubstanceAdministrationOperati
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * (self.id->isEmpty() or self.id->exists(element | element.isNullFlavorUndefined())) implies (not self.id->isEmpty())
 	 * @param medicationActivity The receiving '<em><b>Medication Activity</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -704,7 +685,6 @@ public class MedicationActivityOperations extends SubstanceAdministrationOperati
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * (self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined())
 	 * @param medicationActivity The receiving '<em><b>Medication Activity</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -761,7 +741,6 @@ public class MedicationActivityOperations extends SubstanceAdministrationOperati
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * (self.effectiveTime->isEmpty() or self.effectiveTime->exists(element | element.isNullFlavorUndefined())) implies (not self.effectiveTime->isEmpty())
 	 * @param medicationActivity The receiving '<em><b>Medication Activity</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -819,7 +798,6 @@ public class MedicationActivityOperations extends SubstanceAdministrationOperati
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * (self.maxDoseQuantity.oclIsUndefined() or self.maxDoseQuantity.isNullFlavorUndefined()) implies (not self.maxDoseQuantity.oclIsUndefined())
 	 * @param medicationActivity The receiving '<em><b>Medication Activity</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -879,9 +857,6 @@ public class MedicationActivityOperations extends SubstanceAdministrationOperati
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * (self.routeCode.oclIsUndefined() or self.routeCode.isNullFlavorUndefined()) implies (not self.routeCode.oclIsUndefined() and self.routeCode.oclIsKindOf(datatypes::CE) and 
-	 * let value : datatypes::CE = self.routeCode.oclAsType(datatypes::CE) in 
-	 * value.codeSystem = '2.16.840.1.113883.5.112')
 	 * @param medicationActivity The receiving '<em><b>Medication Activity</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -938,7 +913,6 @@ public class MedicationActivityOperations extends SubstanceAdministrationOperati
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * (self.doseQuantity.oclIsUndefined() or self.doseQuantity.isNullFlavorUndefined()) implies (not self.doseQuantity.oclIsUndefined())
 	 * @param medicationActivity The receiving '<em><b>Medication Activity</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -995,7 +969,6 @@ public class MedicationActivityOperations extends SubstanceAdministrationOperati
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * (self.rateQuantity.oclIsUndefined() or self.rateQuantity.isNullFlavorUndefined()) implies (not self.rateQuantity.oclIsUndefined())
 	 * @param medicationActivity The receiving '<em><b>Medication Activity</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -1052,7 +1025,6 @@ public class MedicationActivityOperations extends SubstanceAdministrationOperati
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(ccd::MedicationSeriesNumberObservation) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::SUBJ)
 	 * @param medicationActivity The receiving '<em><b>Medication Activity</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -1111,7 +1083,6 @@ public class MedicationActivityOperations extends SubstanceAdministrationOperati
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(ccd::MedicationStatusObservation))
 	 * @param medicationActivity The receiving '<em><b>Medication Activity</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -1170,7 +1141,6 @@ public class MedicationActivityOperations extends SubstanceAdministrationOperati
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.entryRelationship->exists(entryRelationship : cda::EntryRelationship | not entryRelationship.act.oclIsUndefined() and entryRelationship.act.oclIsKindOf(ccd::PatientInstruction) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::SUBJ)
 	 * @param medicationActivity The receiving '<em><b>Medication Activity</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -1229,7 +1199,6 @@ public class MedicationActivityOperations extends SubstanceAdministrationOperati
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.performer->exists(performer : cda::Performer2 | not performer.oclIsUndefined() and performer.oclIsKindOf(rim::Participation))
 	 * @param medicationActivity The receiving '<em><b>Medication Activity</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -1287,7 +1256,6 @@ public class MedicationActivityOperations extends SubstanceAdministrationOperati
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.entryRelationship->exists(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(ccd::ReactionObservation) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::CAUS)
 	 * @param medicationActivity The receiving '<em><b>Medication Activity</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -1345,7 +1313,6 @@ public class MedicationActivityOperations extends SubstanceAdministrationOperati
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.participant->exists(participant : cda::Participant2 | not participant.participantRole.oclIsUndefined() and participant.participantRole.oclIsKindOf(ccd::ProductInstance))
 	 * @param medicationActivity The receiving '<em><b>Medication Activity</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -1402,10 +1369,6 @@ public class MedicationActivityOperations extends SubstanceAdministrationOperati
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(ccd::MedicationSeriesNumberObservation))->asSequence()->any(true).oclAsType(ccd::MedicationSeriesNumberObservation)
-	 * @param medicationActivity The receiving '<em><b>Medication Activity</b></em>' model object.
-	 * <!-- end-model-doc -->
 	 * @generated
 	 */
 	public static MedicationSeriesNumberObservation getMedicationSeriesNumberObservation(
@@ -1448,10 +1411,6 @@ public class MedicationActivityOperations extends SubstanceAdministrationOperati
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(ccd::MedicationStatusObservation))->asSequence()->any(true).oclAsType(ccd::MedicationStatusObservation)
-	 * @param medicationActivity The receiving '<em><b>Medication Activity</b></em>' model object.
-	 * <!-- end-model-doc -->
 	 * @generated
 	 */
 	public static MedicationStatusObservation getMedicationStatusObservation(MedicationActivity medicationActivity) {
@@ -1493,10 +1452,6 @@ public class MedicationActivityOperations extends SubstanceAdministrationOperati
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(ccd::PatientInstruction)).oclAsType(ccd::PatientInstruction)
-	 * @param medicationActivity The receiving '<em><b>Medication Activity</b></em>' model object.
-	 * <!-- end-model-doc -->
 	 * @generated
 	 */
 	public static EList<PatientInstruction> getPatientInstructions(MedicationActivity medicationActivity) {
@@ -1540,10 +1495,6 @@ public class MedicationActivityOperations extends SubstanceAdministrationOperati
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(ccd::ReactionObservation)).oclAsType(ccd::ReactionObservation)
-	 * @param medicationActivity The receiving '<em><b>Medication Activity</b></em>' model object.
-	 * <!-- end-model-doc -->
 	 * @generated
 	 */
 	public static EList<ReactionObservation> getReactionObservations(MedicationActivity medicationActivity) {
@@ -1587,10 +1538,6 @@ public class MedicationActivityOperations extends SubstanceAdministrationOperati
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getParticipantRoles()->select(participantRole : cda::ParticipantRole | not participantRole.oclIsUndefined() and participantRole.oclIsKindOf(ccd::ProductInstance)).oclAsType(ccd::ProductInstance)
-	 * @param medicationActivity The receiving '<em><b>Medication Activity</b></em>' model object.
-	 * <!-- end-model-doc -->
 	 * @generated
 	 */
 	public static EList<ProductInstance> getProductInstances(MedicationActivity medicationActivity) {

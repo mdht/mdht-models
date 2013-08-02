@@ -79,8 +79,6 @@ public class PurposeActivityOperations extends ClinicalStatementOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.entryRelationship->one(entryRelationship : cda::EntryRelationship | 
-	 *   entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::RSON)
 	 * @param purposeActivity The receiving '<em><b>Purpose Activity</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -141,11 +139,6 @@ public class PurposeActivityOperations extends ClinicalStatementOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.entryRelationship->forAll(entryRelationship : cda::EntryRelationship |
-	 *   entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::RSON implies( 
-	 *   not (entryRelationship.act.oclIsUndefined() and entryRelationship.encounter.oclIsUndefined()
-	 *        and entryRelationship.observation.oclIsUndefined() and entryRelationship.procedure.oclIsUndefined()
-	 *        and entryRelationship.substanceAdministration.oclIsUndefined() and entryRelationship.supply.oclIsUndefined())))
 	 * @param purposeActivity The receiving '<em><b>Purpose Activity</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -202,7 +195,6 @@ public class PurposeActivityOperations extends ClinicalStatementOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.1.30')
 	 * @param purposeActivity The receiving '<em><b>Purpose Activity</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -259,7 +251,6 @@ public class PurposeActivityOperations extends ClinicalStatementOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.classCode=vocab::x_ActClassDocumentEntryAct::ACT
 	 * @param purposeActivity The receiving '<em><b>Purpose Activity</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -316,7 +307,6 @@ public class PurposeActivityOperations extends ClinicalStatementOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.moodCode=vocab::x_DocumentActMood::EVN
 	 * @param purposeActivity The receiving '<em><b>Purpose Activity</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -375,9 +365,6 @@ public class PurposeActivityOperations extends ClinicalStatementOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * (self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and 
-	 * let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in 
-	 * value.code = '23745001' and value.codeSystem = '2.16.840.1.113883.6.96')
 	 * @param purposeActivity The receiving '<em><b>Purpose Activity</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -434,9 +421,6 @@ public class PurposeActivityOperations extends ClinicalStatementOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * (self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and 
-	 * let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in 
-	 * value.code = 'completed')
 	 * @param purposeActivity The receiving '<em><b>Purpose Activity</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.

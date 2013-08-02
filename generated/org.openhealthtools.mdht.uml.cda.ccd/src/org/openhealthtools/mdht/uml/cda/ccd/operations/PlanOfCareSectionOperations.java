@@ -98,7 +98,6 @@ public class PlanOfCareSectionOperations extends SectionOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.1.10')
 	 * @param planOfCareSection The receiving '<em><b>Plan Of Care Section</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -157,9 +156,6 @@ public class PlanOfCareSectionOperations extends SectionOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * (self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and 
-	 * let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in 
-	 * value.code = '18776-5' and value.codeSystem = '2.16.840.1.113883.6.1')
 	 * @param planOfCareSection The receiving '<em><b>Plan Of Care Section</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -216,7 +212,6 @@ public class PlanOfCareSectionOperations extends SectionOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * (self.title.oclIsUndefined() or self.title.isNullFlavorUndefined()) implies (not self.title.oclIsUndefined())
 	 * @param planOfCareSection The receiving '<em><b>Plan Of Care Section</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -273,7 +268,6 @@ public class PlanOfCareSectionOperations extends SectionOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * not self.text.oclIsUndefined()
 	 * @param planOfCareSection The receiving '<em><b>Plan Of Care Section</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -330,7 +324,6 @@ public class PlanOfCareSectionOperations extends SectionOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.entry->one(entry : cda::Entry | not entry.act.oclIsUndefined() and entry.act.oclIsKindOf(ccd::PlanOfCareActivityAct))
 	 * @param planOfCareSection The receiving '<em><b>Plan Of Care Section</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -389,7 +382,6 @@ public class PlanOfCareSectionOperations extends SectionOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.entry->one(entry : cda::Entry | not entry.encounter.oclIsUndefined() and entry.encounter.oclIsKindOf(ccd::PlanOfCareActivityEncounter))
 	 * @param planOfCareSection The receiving '<em><b>Plan Of Care Section</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -448,7 +440,6 @@ public class PlanOfCareSectionOperations extends SectionOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.entry->one(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(ccd::PlanOfCareActivityObservation))
 	 * @param planOfCareSection The receiving '<em><b>Plan Of Care Section</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -507,7 +498,6 @@ public class PlanOfCareSectionOperations extends SectionOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.entry->one(entry : cda::Entry | not entry.procedure.oclIsUndefined() and entry.procedure.oclIsKindOf(ccd::PlanOfCareActivityProcedure))
 	 * @param planOfCareSection The receiving '<em><b>Plan Of Care Section</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -566,7 +556,6 @@ public class PlanOfCareSectionOperations extends SectionOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.entry->one(entry : cda::Entry | not entry.substanceAdministration.oclIsUndefined() and entry.substanceAdministration.oclIsKindOf(ccd::PlanOfCareActivitySubstanceAdministration))
 	 * @param planOfCareSection The receiving '<em><b>Plan Of Care Section</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -626,7 +615,6 @@ public class PlanOfCareSectionOperations extends SectionOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.entry->one(entry : cda::Entry | not entry.supply.oclIsUndefined() and entry.supply.oclIsKindOf(ccd::PlanOfCareActivitySupply))
 	 * @param planOfCareSection The receiving '<em><b>Plan Of Care Section</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -695,10 +683,6 @@ public class PlanOfCareSectionOperations extends SectionOperations {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(ccd::PlanOfCareActivityAct))->asSequence()->any(true).oclAsType(ccd::PlanOfCareActivityAct)
-	 * @param planOfCareSection The receiving '<em><b>Plan Of Care Section</b></em>' model object.
-	 * <!-- end-model-doc -->
 	 * @generated
 	 */
 	public static PlanOfCareActivityAct getPlanOfCareActivityAct(PlanOfCareSection planOfCareSection) {
@@ -740,10 +724,6 @@ public class PlanOfCareSectionOperations extends SectionOperations {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getEncounters()->select(encounter : cda::Encounter | not encounter.oclIsUndefined() and encounter.oclIsKindOf(ccd::PlanOfCareActivityEncounter))->asSequence()->any(true).oclAsType(ccd::PlanOfCareActivityEncounter)
-	 * @param planOfCareSection The receiving '<em><b>Plan Of Care Section</b></em>' model object.
-	 * <!-- end-model-doc -->
 	 * @generated
 	 */
 	public static PlanOfCareActivityEncounter getPlanOfCareActivityEncounter(PlanOfCareSection planOfCareSection) {
@@ -785,10 +765,6 @@ public class PlanOfCareSectionOperations extends SectionOperations {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(ccd::PlanOfCareActivityObservation))->asSequence()->any(true).oclAsType(ccd::PlanOfCareActivityObservation)
-	 * @param planOfCareSection The receiving '<em><b>Plan Of Care Section</b></em>' model object.
-	 * <!-- end-model-doc -->
 	 * @generated
 	 */
 	public static PlanOfCareActivityObservation getPlanOfCareActivityObservation(PlanOfCareSection planOfCareSection) {
@@ -830,10 +806,6 @@ public class PlanOfCareSectionOperations extends SectionOperations {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getProcedures()->select(procedure : cda::Procedure | not procedure.oclIsUndefined() and procedure.oclIsKindOf(ccd::PlanOfCareActivityProcedure))->asSequence()->any(true).oclAsType(ccd::PlanOfCareActivityProcedure)
-	 * @param planOfCareSection The receiving '<em><b>Plan Of Care Section</b></em>' model object.
-	 * <!-- end-model-doc -->
 	 * @generated
 	 */
 	public static PlanOfCareActivityProcedure getPlanOfCareActivityProcedure(PlanOfCareSection planOfCareSection) {
@@ -875,10 +847,6 @@ public class PlanOfCareSectionOperations extends SectionOperations {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getSubstanceAdministrations()->select(substanceAdministration : cda::SubstanceAdministration | not substanceAdministration.oclIsUndefined() and substanceAdministration.oclIsKindOf(ccd::PlanOfCareActivitySubstanceAdministration))->asSequence()->any(true).oclAsType(ccd::PlanOfCareActivitySubstanceAdministration)
-	 * @param planOfCareSection The receiving '<em><b>Plan Of Care Section</b></em>' model object.
-	 * <!-- end-model-doc -->
 	 * @generated
 	 */
 	public static PlanOfCareActivitySubstanceAdministration getPlanOfCareActivitySubstanceAdministration(
@@ -921,10 +889,6 @@ public class PlanOfCareSectionOperations extends SectionOperations {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getSupplies()->select(supply : cda::Supply | not supply.oclIsUndefined() and supply.oclIsKindOf(ccd::PlanOfCareActivitySupply))->asSequence()->any(true).oclAsType(ccd::PlanOfCareActivitySupply)
-	 * @param planOfCareSection The receiving '<em><b>Plan Of Care Section</b></em>' model object.
-	 * <!-- end-model-doc -->
 	 * @generated
 	 */
 	public static PlanOfCareActivitySupply getPlanOfCareActivitySupply(PlanOfCareSection planOfCareSection) {

@@ -85,7 +85,6 @@ public class SocialHistoryObservationOperations extends ClinicalStatementOperati
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.code.codeSystem = '2.16.840.1.113883.6.1' or self.code.codeSystem = '2.16.840.1.113883.6.96' or self.code.codeSystem = '2.16.840.1.113883.1.11.20.18'
 	 * @param socialHistoryObservation The receiving '<em><b>Social History Observation</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -143,7 +142,6 @@ public class SocialHistoryObservationOperations extends ClinicalStatementOperati
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.1.33')
 	 * @param socialHistoryObservation The receiving '<em><b>Social History Observation</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -201,7 +199,6 @@ public class SocialHistoryObservationOperations extends ClinicalStatementOperati
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.classCode=vocab::ActClassObservation::OBS
 	 * @param socialHistoryObservation The receiving '<em><b>Social History Observation</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -259,7 +256,6 @@ public class SocialHistoryObservationOperations extends ClinicalStatementOperati
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * (self.id->isEmpty() or self.id->exists(element | element.isNullFlavorUndefined())) implies (not self.id->isEmpty())
 	 * @param socialHistoryObservation The receiving '<em><b>Social History Observation</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -317,7 +313,6 @@ public class SocialHistoryObservationOperations extends ClinicalStatementOperati
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.moodCode=vocab::x_ActMoodDocumentObservation::EVN
 	 * @param socialHistoryObservation The receiving '<em><b>Social History Observation</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -376,9 +371,6 @@ public class SocialHistoryObservationOperations extends ClinicalStatementOperati
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * (self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and 
-	 * let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in 
-	 * value.code = 'completed')
 	 * @param socialHistoryObservation The receiving '<em><b>Social History Observation</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -436,7 +428,6 @@ public class SocialHistoryObservationOperations extends ClinicalStatementOperati
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(ccd::SocialHistoryStatusObservation))
 	 * @param socialHistoryObservation The receiving '<em><b>Social History Observation</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -496,7 +487,6 @@ public class SocialHistoryObservationOperations extends ClinicalStatementOperati
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(ccd::EpisodeObservation))
 	 * @param socialHistoryObservation The receiving '<em><b>Social History Observation</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -554,10 +544,6 @@ public class SocialHistoryObservationOperations extends ClinicalStatementOperati
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(ccd::SocialHistoryStatusObservation))->asSequence()->any(true).oclAsType(ccd::SocialHistoryStatusObservation)
-	 * @param socialHistoryObservation The receiving '<em><b>Social History Observation</b></em>' model object.
-	 * <!-- end-model-doc -->
 	 * @generated
 	 */
 	public static SocialHistoryStatusObservation getSocialHistoryStatusObservation(
@@ -600,10 +586,6 @@ public class SocialHistoryObservationOperations extends ClinicalStatementOperati
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(ccd::EpisodeObservation))->asSequence()->any(true).oclAsType(ccd::EpisodeObservation)
-	 * @param socialHistoryObservation The receiving '<em><b>Social History Observation</b></em>' model object.
-	 * <!-- end-model-doc -->
 	 * @generated
 	 */
 	public static EpisodeObservation getEpisodeObservation(SocialHistoryObservation socialHistoryObservation) {

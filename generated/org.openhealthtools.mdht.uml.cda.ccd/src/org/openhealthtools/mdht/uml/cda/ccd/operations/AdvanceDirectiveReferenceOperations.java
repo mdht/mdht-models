@@ -77,7 +77,6 @@ public class AdvanceDirectiveReferenceOperations extends ReferenceOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.externalDocument.text.reference.hasContent()
 	 * @param advanceDirectiveReference The receiving '<em><b>Advance Directive Reference</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -135,7 +134,6 @@ public class AdvanceDirectiveReferenceOperations extends ReferenceOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.externalDocument.text.isDefined('mediaType')
 	 * @param advanceDirectiveReference The receiving '<em><b>Advance Directive Reference</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -194,7 +192,6 @@ public class AdvanceDirectiveReferenceOperations extends ReferenceOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * not self.externalDocument.id->isEmpty()
 	 * @param advanceDirectiveReference The receiving '<em><b>Advance Directive Reference</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -254,7 +251,6 @@ public class AdvanceDirectiveReferenceOperations extends ReferenceOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.1.36')
 	 * @param advanceDirectiveReference The receiving '<em><b>Advance Directive Reference</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -313,7 +309,6 @@ public class AdvanceDirectiveReferenceOperations extends ReferenceOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * isDefined('typeCode')
 	 * @param advanceDirectiveReference The receiving '<em><b>Advance Directive Reference</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -373,7 +368,6 @@ public class AdvanceDirectiveReferenceOperations extends ReferenceOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.externalDocument->one(externalDocument : cda::ExternalDocument | not externalDocument.oclIsUndefined() and externalDocument.oclIsKindOf(rim::Act))
 	 * @param advanceDirectiveReference The receiving '<em><b>Advance Directive Reference</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.

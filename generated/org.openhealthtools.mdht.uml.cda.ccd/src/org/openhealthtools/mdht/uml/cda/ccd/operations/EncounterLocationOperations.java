@@ -79,7 +79,6 @@ public class EncounterLocationOperations extends Participant2Operations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.participantRole->size() = 1
 	 * @param encounterLocation The receiving '<em><b>Encounter Location</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -137,7 +136,6 @@ public class EncounterLocationOperations extends Participant2Operations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.participantRole.classCode =  vocab::RoleClassRoot::SDLOC
 	 * @param encounterLocation The receiving '<em><b>Encounter Location</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -196,7 +194,6 @@ public class EncounterLocationOperations extends Participant2Operations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.participantRole.code->size() = 1
 	 * @param encounterLocation The receiving '<em><b>Encounter Location</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -254,7 +251,6 @@ public class EncounterLocationOperations extends Participant2Operations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.participantRole.code.codeSystem = '2.16.840.1.113883.5.111'
 	 * @param encounterLocation The receiving '<em><b>Encounter Location</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -313,7 +309,6 @@ public class EncounterLocationOperations extends Participant2Operations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.participantRole.playingEntity->size()>0
 	 * @param encounterLocation The receiving '<em><b>Encounter Location</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -371,7 +366,6 @@ public class EncounterLocationOperations extends Participant2Operations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.participantRole.playingEntity.classCode = vocab::EntityClassRoot::PLC
 	 * @param encounterLocation The receiving '<em><b>Encounter Location</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -429,7 +423,6 @@ public class EncounterLocationOperations extends Participant2Operations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.1.45')
 	 * @param encounterLocation The receiving '<em><b>Encounter Location</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -486,7 +479,6 @@ public class EncounterLocationOperations extends Participant2Operations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.typeCode=vocab::ParticipationType::LOC
 	 * @param encounterLocation The receiving '<em><b>Encounter Location</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.

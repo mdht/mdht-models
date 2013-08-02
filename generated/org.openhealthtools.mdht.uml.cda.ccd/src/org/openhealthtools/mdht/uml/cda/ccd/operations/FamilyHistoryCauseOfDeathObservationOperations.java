@@ -73,7 +73,6 @@ public class FamilyHistoryCauseOfDeathObservationOperations extends FamilyHistor
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.entryRelationship->exists(er : cda::EntryRelationship | er.typeCode = vocab::x_ActRelationshipEntryRelationship::CAUS)
 	 * @param familyHistoryCauseOfDeathObservation The receiving '<em><b>Family History Cause Of Death Observation</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -135,7 +134,6 @@ public class FamilyHistoryCauseOfDeathObservationOperations extends FamilyHistor
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.1.42')
 	 * @param familyHistoryCauseOfDeathObservation The receiving '<em><b>Family History Cause Of Death Observation</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.

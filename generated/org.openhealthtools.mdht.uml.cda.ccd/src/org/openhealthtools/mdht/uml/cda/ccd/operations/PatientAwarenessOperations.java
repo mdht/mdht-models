@@ -76,9 +76,6 @@ public class PatientAwarenessOperations extends Participant2Operations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.participantRole.id->one(id : datatypes::II |
-	 *   not id.root.oclIsUndefined())
-	 * -- TODO compare with ClinicalDocument/recordTarget/patientRole/id
 	 * @param patientAwareness The receiving '<em><b>Patient Awareness</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -136,7 +133,6 @@ public class PatientAwarenessOperations extends Participant2Operations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.1.48')
 	 * @param patientAwareness The receiving '<em><b>Patient Awareness</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -193,7 +189,6 @@ public class PatientAwarenessOperations extends Participant2Operations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.typeCode=vocab::ParticipationType::SBJ
 	 * @param patientAwareness The receiving '<em><b>Patient Awareness</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -250,7 +245,6 @@ public class PatientAwarenessOperations extends Participant2Operations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * (self.awarenessCode.oclIsUndefined() or self.awarenessCode.isNullFlavorUndefined()) implies (not self.awarenessCode.oclIsUndefined())
 	 * @param patientAwareness The receiving '<em><b>Patient Awareness</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
