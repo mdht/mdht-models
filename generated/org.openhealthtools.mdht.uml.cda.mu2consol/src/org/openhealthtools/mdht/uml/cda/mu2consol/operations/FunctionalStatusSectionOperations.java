@@ -84,10 +84,6 @@ public class FunctionalStatusSectionOperations extends org.openhealthtools.mdht.
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(mu2consol::CognitiveStatusResultObservation)).oclAsType(mu2consol::CognitiveStatusResultObservation)
-	 * @param functionalStatusSection The receiving '<em><b>Functional Status Section</b></em>' model object.
-	 * <!-- end-model-doc -->
 	 * @generated
 	 */
 	
@@ -131,10 +127,6 @@ public class FunctionalStatusSectionOperations extends org.openhealthtools.mdht.
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getOrganizers()->select(organizer : cda::Organizer | not organizer.oclIsUndefined() and organizer.oclIsKindOf(mu2consol::CognitiveStatusResultOrganizer)).oclAsType(mu2consol::CognitiveStatusResultOrganizer)
-	 * @param functionalStatusSection The receiving '<em><b>Functional Status Section</b></em>' model object.
-	 * <!-- end-model-doc -->
 	 * @generated
 	 */
 	
@@ -178,10 +170,6 @@ public class FunctionalStatusSectionOperations extends org.openhealthtools.mdht.
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(mu2consol::FunctionalStatusResultObservation)).oclAsType(mu2consol::FunctionalStatusResultObservation)
-	 * @param functionalStatusSection The receiving '<em><b>Functional Status Section</b></em>' model object.
-	 * <!-- end-model-doc -->
 	 * @generated
 	 */
 	
@@ -225,10 +213,6 @@ public class FunctionalStatusSectionOperations extends org.openhealthtools.mdht.
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getOrganizers()->select(organizer : cda::Organizer | not organizer.oclIsUndefined() and organizer.oclIsKindOf(mu2consol::FunctionalStatusResultOrganizer)).oclAsType(mu2consol::FunctionalStatusResultOrganizer)
-	 * @param functionalStatusSection The receiving '<em><b>Functional Status Section</b></em>' model object.
-	 * <!-- end-model-doc -->
 	 * @generated
 	 */
 	
@@ -275,7 +259,6 @@ public class FunctionalStatusSectionOperations extends org.openhealthtools.mdht.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.2.14')
 	 * @param functionalStatusSection The receiving '<em><b>Functional Status Section</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.

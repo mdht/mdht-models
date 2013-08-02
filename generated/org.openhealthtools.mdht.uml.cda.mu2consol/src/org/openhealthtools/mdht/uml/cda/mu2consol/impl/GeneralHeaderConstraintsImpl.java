@@ -56,17 +56,26 @@ public class GeneralHeaderConstraintsImpl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateMu2consolGeneralHeaderConstraintsCareTeamMembers(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return GeneralHeaderConstraintsOperations.validateMu2consolGeneralHeaderConstraintsCareTeamMembers(this, diagnostics, context);
+	public boolean validateMU2CONSOLGeneralHeaderConstraintsCareTeamMembers(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return GeneralHeaderConstraintsOperations.validateMU2CONSOLGeneralHeaderConstraintsCareTeamMembers(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateMu2consolGeneralHeaderConstraintsRecordTarget(
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return GeneralHeaderConstraintsOperations.validateMu2consolGeneralHeaderConstraintsRecordTarget(this, diagnostics, context);
+	public boolean validateMU2CONSOLGeneralHeaderConstraintsRecordTarget(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return GeneralHeaderConstraintsOperations.validateMU2CONSOLGeneralHeaderConstraintsRecordTarget(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateMU2CONSOLGeneralHeaderConstraintsGeneralHeaderConstraintsRecordTargetPatientRole(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return GeneralHeaderConstraintsOperations.validateMU2CONSOLGeneralHeaderConstraintsGeneralHeaderConstraintsRecordTargetPatientRole(this, diagnostics, context);
 	}
 
 	/**
@@ -165,16 +174,6 @@ public class GeneralHeaderConstraintsImpl
 	public boolean validateGeneralHeaderConstraintsRecordTargetPatientRolePatient(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsRecordTargetPatientRolePatient(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validateGeneralHeaderConstraintsRecordTargetPatientRole(
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsRecordTargetPatientRole(this, diagnostics, context);
 	}
 
 	/**

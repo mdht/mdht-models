@@ -51,21 +51,21 @@ public class ProcedureActivityProcedureImpl
 	}
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateMu2consolProcedureActivityProcedureCodeValue(
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProcedureActivityProcedureOperations.validateMu2consolProcedureActivityProcedureCodeValue(this, diagnostics, context);
+	public boolean validateMU2CONSOLProcedureActivityProcedureCodeValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ProcedureActivityProcedureOperations.validateMU2CONSOLProcedureActivityProcedureCodeValue(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateMu2consolProcedureActivityProcedureCode(
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProcedureActivityProcedureOperations.validateMu2consolProcedureActivityProcedureCode(this, diagnostics, context);
+	public boolean validateMU2CONSOLProcedureActivityProcedureCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ProcedureActivityProcedureOperations.validateMU2CONSOLProcedureActivityProcedureCode(this, diagnostics, context);
 	}
 
 	/**

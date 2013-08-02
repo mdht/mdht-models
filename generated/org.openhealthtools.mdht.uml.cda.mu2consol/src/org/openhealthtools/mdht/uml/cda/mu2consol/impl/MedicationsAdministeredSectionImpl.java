@@ -53,8 +53,8 @@ public class MedicationsAdministeredSectionImpl extends org.openhealthtools.mdht
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateMu2consolMedicationsAdministeredSectionMedicationActivity(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return MedicationsAdministeredSectionOperations.validateMu2consolMedicationsAdministeredSectionMedicationActivity(this, diagnostics, context);
+	public boolean validateMU2CONSOLMedicationsAdministeredSectionMedicationActivity(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return MedicationsAdministeredSectionOperations.validateMU2CONSOLMedicationsAdministeredSectionMedicationActivity(this, diagnostics, context);
 	}
 
 	/**

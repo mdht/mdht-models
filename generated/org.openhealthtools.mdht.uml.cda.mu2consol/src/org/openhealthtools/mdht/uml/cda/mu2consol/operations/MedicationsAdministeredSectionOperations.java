@@ -33,7 +33,7 @@ import org.openhealthtools.mdht.uml.cda.mu2consol.util.Mu2consolValidator;
  * <p>
  * The following operations are supported:
  * <ul>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.mu2consol.MedicationsAdministeredSection#validateMu2consolMedicationsAdministeredSectionMedicationActivity(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Mu2consol Medications Administered Section Medication Activity</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.mu2consol.MedicationsAdministeredSection#validateMU2CONSOLMedicationsAdministeredSectionMedicationActivity(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate MU2CONSOL Medications Administered Section Medication Activity</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.mu2consol.MedicationsAdministeredSection#getMu2consolMedicationActivities() <em>Get Mu2consol Medication Activities</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.mu2consol.MedicationsAdministeredSection#validateMedicationsAdministeredSectionTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medications Administered Section Template Id</em>}</li>
  * </ul>
@@ -52,20 +52,20 @@ public class MedicationsAdministeredSectionOperations extends org.openhealthtool
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateMu2consolMedicationsAdministeredSectionMedicationActivity(MedicationsAdministeredSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Mu2consol Medications Administered Section Medication Activity</em>}' operation.
+	 * The cached OCL expression body for the '{@link #validateMU2CONSOLMedicationsAdministeredSectionMedicationActivity(MedicationsAdministeredSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate MU2CONSOL Medications Administered Section Medication Activity</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateMu2consolMedicationsAdministeredSectionMedicationActivity(MedicationsAdministeredSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @see #validateMU2CONSOLMedicationsAdministeredSectionMedicationActivity(MedicationsAdministeredSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
 	protected static final String VALIDATE_MU2CONSOL_MEDICATIONS_ADMINISTERED_SECTION_MEDICATION_ACTIVITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->exists(entry : cda::Entry | not entry.substanceAdministration.oclIsUndefined() and entry.substanceAdministration.oclIsKindOf(consol::MedicationActivity))";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validateMu2consolMedicationsAdministeredSectionMedicationActivity(MedicationsAdministeredSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Mu2consol Medications Administered Section Medication Activity</em>}' invariant operation.
+	 * The cached OCL invariant for the '{@link #validateMU2CONSOLMedicationsAdministeredSectionMedicationActivity(MedicationsAdministeredSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate MU2CONSOL Medications Administered Section Medication Activity</em>}' invariant operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateMu2consolMedicationsAdministeredSectionMedicationActivity(MedicationsAdministeredSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @see #validateMU2CONSOLMedicationsAdministeredSectionMedicationActivity(MedicationsAdministeredSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
@@ -77,7 +77,6 @@ public class MedicationsAdministeredSectionOperations extends org.openhealthtool
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.entry->exists(entry : cda::Entry | not entry.substanceAdministration.oclIsUndefined() and entry.substanceAdministration.oclIsKindOf(consol::MedicationActivity))
 	 * @param medicationsAdministeredSection The receiving '<em><b>Medications Administered Section</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -85,7 +84,7 @@ public class MedicationsAdministeredSectionOperations extends org.openhealthtool
 	 * @generated
 	 */
 	
-	public static  boolean validateMu2consolMedicationsAdministeredSectionMedicationActivity(MedicationsAdministeredSection medicationsAdministeredSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static  boolean validateMU2CONSOLMedicationsAdministeredSectionMedicationActivity(MedicationsAdministeredSection medicationsAdministeredSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
   	  
 		if (VALIDATE_MU2CONSOL_MEDICATIONS_ADMINISTERED_SECTION_MEDICATION_ACTIVITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
@@ -104,7 +103,7 @@ public class MedicationsAdministeredSectionOperations extends org.openhealthtool
 						(Diagnostic.ERROR,
 						 Mu2consolValidator.DIAGNOSTIC_SOURCE,
 						 Mu2consolValidator.MEDICATIONS_ADMINISTERED_SECTION__MU2CONSOL_MEDICATIONS_ADMINISTERED_SECTION_MEDICATION_ACTIVITY,
-						 Mu2consolPlugin.INSTANCE.getString("Mu2consolMedicationsAdministeredSectionMedicationActivity"),
+						 Mu2consolPlugin.INSTANCE.getString("MU2CONSOLMedicationsAdministeredSectionMedicationActivity"),
 						 new Object [] { medicationsAdministeredSection }));
 			}
 			 
@@ -112,6 +111,7 @@ public class MedicationsAdministeredSectionOperations extends org.openhealthtool
 		}
 		return true;
 	}
+
 
 	/**
 	 * The cached OCL expression body for the '{@link #getMu2consolMedicationActivities(MedicationsAdministeredSection) <em>Get Mu2consol Medication Activities</em>}' operation.
@@ -136,10 +136,6 @@ public class MedicationsAdministeredSectionOperations extends org.openhealthtool
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getSubstanceAdministrations()->select(substanceAdministration : cda::SubstanceAdministration | not substanceAdministration.oclIsUndefined() and substanceAdministration.oclIsKindOf(consol::MedicationActivity)).oclAsType(consol::MedicationActivity)
-	 * @param medicationsAdministeredSection The receiving '<em><b>Medications Administered Section</b></em>' model object.
-	 * <!-- end-model-doc -->
 	 * @generated
 	 */
 	
@@ -186,7 +182,6 @@ public class MedicationsAdministeredSectionOperations extends org.openhealthtool
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.2.38')
 	 * @param medicationsAdministeredSection The receiving '<em><b>Medications Administered Section</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.

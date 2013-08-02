@@ -93,8 +93,6 @@ public class ViewDownloadTransmitSummaryOperations extends
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * (self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(consol::PlanOfCareSection)) or 
-	 * self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(consol::AssessmentAndPlanSection)))
 	 * @param viewDownloadTransmitSummary The receiving '<em><b>View Download Transmit Summary</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -156,8 +154,6 @@ public class ViewDownloadTransmitSummaryOperations extends
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * (self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(consol::VitalSignsSection)) or 
-	 * self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(consol::VitalSignsSectionEntriesOptional)))
 	 * @param viewDownloadTransmitSummary The receiving '<em><b>View Download Transmit Summary</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -564,7 +560,7 @@ public class ViewDownloadTransmitSummaryOperations extends
 			ViewDownloadTransmitSummary viewDownloadTransmitSummary) {
 		if (RETRIEVE_PREOPERATIVE_DIAGNOSIS_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(Mu2consolPackage.Literals.VIEW_DOWNLOAD_TRANSMIT_SUMMARY, Mu2consolPackage.Literals.VIEW_DOWNLOAD_TRANSMIT_SUMMARY.getEAllOperations().get(300));
+			helper.setOperationContext(Mu2consolPackage.Literals.VIEW_DOWNLOAD_TRANSMIT_SUMMARY, Mu2consolPackage.Literals.VIEW_DOWNLOAD_TRANSMIT_SUMMARY.getEAllOperations().get(301));
 			try {
 				RETRIEVE_PREOPERATIVE_DIAGNOSIS_SECTION__EOCL_QRY = helper.createQuery(RETRIEVE_PREOPERATIVE_DIAGNOSIS_SECTION__EOCL_EXP);
 			}
@@ -613,7 +609,7 @@ public class ViewDownloadTransmitSummaryOperations extends
 			ViewDownloadTransmitSummary viewDownloadTransmitSummary) {
 		if (GET_ALLERGIES_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(Mu2consolPackage.Literals.VIEW_DOWNLOAD_TRANSMIT_SUMMARY, Mu2consolPackage.Literals.VIEW_DOWNLOAD_TRANSMIT_SUMMARY.getEAllOperations().get(301));
+			helper.setOperationContext(Mu2consolPackage.Literals.VIEW_DOWNLOAD_TRANSMIT_SUMMARY, Mu2consolPackage.Literals.VIEW_DOWNLOAD_TRANSMIT_SUMMARY.getEAllOperations().get(302));
 			try {
 				GET_ALLERGIES_SECTION__EOCL_QRY = helper.createQuery(GET_ALLERGIES_SECTION__EOCL_EXP);
 			}
@@ -662,7 +658,7 @@ public class ViewDownloadTransmitSummaryOperations extends
 			ViewDownloadTransmitSummary viewDownloadTransmitSummary) {
 		if (GET_PROBLEM_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(Mu2consolPackage.Literals.VIEW_DOWNLOAD_TRANSMIT_SUMMARY, Mu2consolPackage.Literals.VIEW_DOWNLOAD_TRANSMIT_SUMMARY.getEAllOperations().get(302));
+			helper.setOperationContext(Mu2consolPackage.Literals.VIEW_DOWNLOAD_TRANSMIT_SUMMARY, Mu2consolPackage.Literals.VIEW_DOWNLOAD_TRANSMIT_SUMMARY.getEAllOperations().get(303));
 			try {
 				GET_PROBLEM_SECTION__EOCL_QRY = helper.createQuery(GET_PROBLEM_SECTION__EOCL_EXP);
 			}
@@ -711,7 +707,7 @@ public class ViewDownloadTransmitSummaryOperations extends
 			ViewDownloadTransmitSummary viewDownloadTransmitSummary) {
 		if (GET_PROCEDURES_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(Mu2consolPackage.Literals.VIEW_DOWNLOAD_TRANSMIT_SUMMARY, Mu2consolPackage.Literals.VIEW_DOWNLOAD_TRANSMIT_SUMMARY.getEAllOperations().get(303));
+			helper.setOperationContext(Mu2consolPackage.Literals.VIEW_DOWNLOAD_TRANSMIT_SUMMARY, Mu2consolPackage.Literals.VIEW_DOWNLOAD_TRANSMIT_SUMMARY.getEAllOperations().get(304));
 			try {
 				GET_PROCEDURES_SECTION__EOCL_QRY = helper.createQuery(GET_PROCEDURES_SECTION__EOCL_EXP);
 			}
@@ -760,7 +756,7 @@ public class ViewDownloadTransmitSummaryOperations extends
 			ViewDownloadTransmitSummary viewDownloadTransmitSummary) {
 		if (GET_RESULTS_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(Mu2consolPackage.Literals.VIEW_DOWNLOAD_TRANSMIT_SUMMARY, Mu2consolPackage.Literals.VIEW_DOWNLOAD_TRANSMIT_SUMMARY.getEAllOperations().get(304));
+			helper.setOperationContext(Mu2consolPackage.Literals.VIEW_DOWNLOAD_TRANSMIT_SUMMARY, Mu2consolPackage.Literals.VIEW_DOWNLOAD_TRANSMIT_SUMMARY.getEAllOperations().get(305));
 			try {
 				GET_RESULTS_SECTION__EOCL_QRY = helper.createQuery(GET_RESULTS_SECTION__EOCL_EXP);
 			}
@@ -811,7 +807,7 @@ public class ViewDownloadTransmitSummaryOperations extends
 			ViewDownloadTransmitSummary viewDownloadTransmitSummary) {
 		if (GET_SOCIAL_HISTORY_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(Mu2consolPackage.Literals.VIEW_DOWNLOAD_TRANSMIT_SUMMARY, Mu2consolPackage.Literals.VIEW_DOWNLOAD_TRANSMIT_SUMMARY.getEAllOperations().get(305));
+			helper.setOperationContext(Mu2consolPackage.Literals.VIEW_DOWNLOAD_TRANSMIT_SUMMARY, Mu2consolPackage.Literals.VIEW_DOWNLOAD_TRANSMIT_SUMMARY.getEAllOperations().get(306));
 			try {
 				GET_SOCIAL_HISTORY_SECTION__EOCL_QRY = helper.createQuery(GET_SOCIAL_HISTORY_SECTION__EOCL_EXP);
 			}
