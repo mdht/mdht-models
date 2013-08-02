@@ -1411,7 +1411,7 @@
       <ownedLiteral xmi:id="_jKNNwLM0EeKq7sXu8zXehQ" name="2135-2"/>
       <ownedLiteral xmi:id="_nLdcsLM0EeKq7sXu8zXehQ" name="2186-5"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Enumeration" xmi:id="_vgkGcLM0EeKq7sXu8zXehQ" name="Race &amp; Ethnicity - CDC"/>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_vgkGcLM0EeKq7sXu8zXehQ" name="Race and Ethnicity - CDC"/>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_mK9sgPsTEeKCRNC-sxBJsQ" name="Administrative Gender Excluding Nulls">
       <ownedLiteral xmi:id="_vFn6YPsTEeKCRNC-sxBJsQ" name="M"/>
       <ownedLiteral xmi:id="_71uv0PsTEeKCRNC-sxBJsQ" name="F"/>
