@@ -74,7 +74,6 @@ public class CoveragePlanDescriptionOperations extends ClinicalStatementOperatio
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.classCode=vocab::x_ActClassDocumentEntryAct::ACT
 	 * @param coveragePlanDescription The receiving '<em><b>Coverage Plan Description</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -132,7 +131,6 @@ public class CoveragePlanDescriptionOperations extends ClinicalStatementOperatio
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * (self.id->isEmpty() or self.id->exists(element | element.isNullFlavorUndefined())) implies (not self.id->isEmpty())
 	 * @param coveragePlanDescription The receiving '<em><b>Coverage Plan Description</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -189,7 +187,6 @@ public class CoveragePlanDescriptionOperations extends ClinicalStatementOperatio
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.moodCode=vocab::x_DocumentActMood::DEF
 	 * @param coveragePlanDescription The receiving '<em><b>Coverage Plan Description</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.

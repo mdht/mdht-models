@@ -74,7 +74,6 @@ public class AdvanceDirectiveVerificationOperations extends Participant2Operatio
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.1.58')
 	 * @param advanceDirectiveVerification The receiving '<em><b>Advance Directive Verification</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -133,7 +132,6 @@ public class AdvanceDirectiveVerificationOperations extends Participant2Operatio
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.typeCode=vocab::ParticipationType::VRF
 	 * @param advanceDirectiveVerification The receiving '<em><b>Advance Directive Verification</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -192,7 +190,6 @@ public class AdvanceDirectiveVerificationOperations extends Participant2Operatio
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * (self.time.oclIsUndefined() or self.time.isNullFlavorUndefined()) implies (not self.time.oclIsUndefined())
 	 * @param advanceDirectiveVerification The receiving '<em><b>Advance Directive Verification</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.

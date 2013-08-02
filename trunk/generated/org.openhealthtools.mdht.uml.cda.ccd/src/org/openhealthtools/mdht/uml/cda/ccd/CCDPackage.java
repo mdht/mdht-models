@@ -7576,6 +7576,15 @@ public interface CCDPackage extends EPackage {
 	int ENCOUNTERS_ACTIVITY__MOOD_CODE = CDAPackage.ENCOUNTER__MOOD_CODE;
 
 	/**
+	 * The feature id for the '<em><b>SDTC Discharge Disposition Code</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ENCOUNTERS_ACTIVITY__SDTC_DISCHARGE_DISPOSITION_CODE = CDAPackage.ENCOUNTER__SDTC_DISCHARGE_DISPOSITION_CODE;
+
+	/**
 	 * The number of structural features of the '<em>Encounters Activity</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -8168,6 +8177,15 @@ public interface CCDPackage extends EPackage {
 	 * @ordered
 	 */
 	int PLAN_OF_CARE_ACTIVITY_ENCOUNTER__MOOD_CODE = CDAPackage.ENCOUNTER__MOOD_CODE;
+
+	/**
+	 * The feature id for the '<em><b>SDTC Discharge Disposition Code</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PLAN_OF_CARE_ACTIVITY_ENCOUNTER__SDTC_DISCHARGE_DISPOSITION_CODE = CDAPackage.ENCOUNTER__SDTC_DISCHARGE_DISPOSITION_CODE;
 
 	/**
 	 * The number of structural features of the '<em>Plan Of Care Activity Encounter</em>' class.
