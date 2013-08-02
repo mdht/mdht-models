@@ -5329,187 +5329,7 @@ public interface EmspcrPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.emspcr.impl.EmspcrPackageImpl#getHistoryOfProceduresOrganizer()
 	 * @generated
 	 */
-	int HISTORY_OF_PROCEDURES_ORGANIZER = 21;
-
-	/**
-	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int HISTORY_OF_PROCEDURES_ORGANIZER__REALM_CODE = CDAPackage.ORGANIZER__REALM_CODE;
-
-	/**
-	 * The feature id for the '<em><b>Type Id</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int HISTORY_OF_PROCEDURES_ORGANIZER__TYPE_ID = CDAPackage.ORGANIZER__TYPE_ID;
-
-	/**
-	 * The feature id for the '<em><b>Template Id</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int HISTORY_OF_PROCEDURES_ORGANIZER__TEMPLATE_ID = CDAPackage.ORGANIZER__TEMPLATE_ID;
-
-	/**
-	 * The feature id for the '<em><b>Id</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int HISTORY_OF_PROCEDURES_ORGANIZER__ID = CDAPackage.ORGANIZER__ID;
-
-	/**
-	 * The feature id for the '<em><b>Code</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int HISTORY_OF_PROCEDURES_ORGANIZER__CODE = CDAPackage.ORGANIZER__CODE;
-
-	/**
-	 * The feature id for the '<em><b>Status Code</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int HISTORY_OF_PROCEDURES_ORGANIZER__STATUS_CODE = CDAPackage.ORGANIZER__STATUS_CODE;
-
-	/**
-	 * The feature id for the '<em><b>Effective Time</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int HISTORY_OF_PROCEDURES_ORGANIZER__EFFECTIVE_TIME = CDAPackage.ORGANIZER__EFFECTIVE_TIME;
-
-	/**
-	 * The feature id for the '<em><b>Subject</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int HISTORY_OF_PROCEDURES_ORGANIZER__SUBJECT = CDAPackage.ORGANIZER__SUBJECT;
-
-	/**
-	 * The feature id for the '<em><b>Specimen</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int HISTORY_OF_PROCEDURES_ORGANIZER__SPECIMEN = CDAPackage.ORGANIZER__SPECIMEN;
-
-	/**
-	 * The feature id for the '<em><b>Performer</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int HISTORY_OF_PROCEDURES_ORGANIZER__PERFORMER = CDAPackage.ORGANIZER__PERFORMER;
-
-	/**
-	 * The feature id for the '<em><b>Author</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int HISTORY_OF_PROCEDURES_ORGANIZER__AUTHOR = CDAPackage.ORGANIZER__AUTHOR;
-
-	/**
-	 * The feature id for the '<em><b>Informant</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int HISTORY_OF_PROCEDURES_ORGANIZER__INFORMANT = CDAPackage.ORGANIZER__INFORMANT;
-
-	/**
-	 * The feature id for the '<em><b>Participant</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int HISTORY_OF_PROCEDURES_ORGANIZER__PARTICIPANT = CDAPackage.ORGANIZER__PARTICIPANT;
-
-	/**
-	 * The feature id for the '<em><b>Reference</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int HISTORY_OF_PROCEDURES_ORGANIZER__REFERENCE = CDAPackage.ORGANIZER__REFERENCE;
-
-	/**
-	 * The feature id for the '<em><b>Precondition</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int HISTORY_OF_PROCEDURES_ORGANIZER__PRECONDITION = CDAPackage.ORGANIZER__PRECONDITION;
-
-	/**
-	 * The feature id for the '<em><b>Component</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int HISTORY_OF_PROCEDURES_ORGANIZER__COMPONENT = CDAPackage.ORGANIZER__COMPONENT;
-
-	/**
-	 * The feature id for the '<em><b>Null Flavor</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int HISTORY_OF_PROCEDURES_ORGANIZER__NULL_FLAVOR = CDAPackage.ORGANIZER__NULL_FLAVOR;
-
-	/**
-	 * The feature id for the '<em><b>Class Code</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int HISTORY_OF_PROCEDURES_ORGANIZER__CLASS_CODE = CDAPackage.ORGANIZER__CLASS_CODE;
-
-	/**
-	 * The feature id for the '<em><b>Mood Code</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int HISTORY_OF_PROCEDURES_ORGANIZER__MOOD_CODE = CDAPackage.ORGANIZER__MOOD_CODE;
-
-	/**
-	 * The number of structural features of the '<em>History Of Procedures Organizer</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int HISTORY_OF_PROCEDURES_ORGANIZER_FEATURE_COUNT = CDAPackage.ORGANIZER_FEATURE_COUNT + 0;
+	int HISTORY_OF_PROCEDURES_ORGANIZER = 111;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.emspcr.impl.SocialHistorySectionImpl <em>Social History Section</em>}' class.
@@ -5519,7 +5339,7 @@ public interface EmspcrPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.emspcr.impl.EmspcrPackageImpl#getSocialHistorySection()
 	 * @generated
 	 */
-	int SOCIAL_HISTORY_SECTION = 22;
+	int SOCIAL_HISTORY_SECTION = 21;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -5700,7 +5520,7 @@ public interface EmspcrPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.emspcr.impl.EmspcrPackageImpl#getExistenceOfDrugUseIndication()
 	 * @generated
 	 */
-	int EXISTENCE_OF_DRUG_USE_INDICATION = 23;
+	int EXISTENCE_OF_DRUG_USE_INDICATION = 22;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -5989,7 +5809,7 @@ public interface EmspcrPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.emspcr.impl.EmspcrPackageImpl#getDrugUseIndication()
 	 * @generated
 	 */
-	int DRUG_USE_INDICATION = 24;
+	int DRUG_USE_INDICATION = 23;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -6278,7 +6098,7 @@ public interface EmspcrPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.emspcr.impl.EmspcrPackageImpl#getPhysicalAssessmentSection()
 	 * @generated
 	 */
-	int PHYSICAL_ASSESSMENT_SECTION = 25;
+	int PHYSICAL_ASSESSMENT_SECTION = 24;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -6459,7 +6279,7 @@ public interface EmspcrPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.emspcr.impl.EmspcrPackageImpl#getPhysicalAssessmentOrganizer()
 	 * @generated
 	 */
-	int PHYSICAL_ASSESSMENT_ORGANIZER = 26;
+	int PHYSICAL_ASSESSMENT_ORGANIZER = 25;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -6649,7 +6469,7 @@ public interface EmspcrPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.emspcr.impl.EmspcrPackageImpl#getSkinAssessment()
 	 * @generated
 	 */
-	int SKIN_ASSESSMENT = 27;
+	int SKIN_ASSESSMENT = 26;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -6938,7 +6758,7 @@ public interface EmspcrPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.emspcr.impl.EmspcrPackageImpl#getPatientPregnancy()
 	 * @generated
 	 */
-	int PATIENT_PREGNANCY = 28;
+	int PATIENT_PREGNANCY = 27;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -7227,7 +7047,7 @@ public interface EmspcrPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.emspcr.impl.EmspcrPackageImpl#getLastOralIntake()
 	 * @generated
 	 */
-	int LAST_ORAL_INTAKE = 29;
+	int LAST_ORAL_INTAKE = 28;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -7516,7 +7336,7 @@ public interface EmspcrPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.emspcr.impl.EmspcrPackageImpl#getPatientAge()
 	 * @generated
 	 */
-	int PATIENT_AGE = 30;
+	int PATIENT_AGE = 29;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -7805,7 +7625,7 @@ public interface EmspcrPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.emspcr.impl.EmspcrPackageImpl#getThrombolyticContraindications()
 	 * @generated
 	 */
-	int THROMBOLYTIC_CONTRAINDICATIONS = 31;
+	int THROMBOLYTIC_CONTRAINDICATIONS = 30;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -8094,7 +7914,7 @@ public interface EmspcrPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.emspcr.impl.EmspcrPackageImpl#getBarriersToPatientCare()
 	 * @generated
 	 */
-	int BARRIERS_TO_PATIENT_CARE = 32;
+	int BARRIERS_TO_PATIENT_CARE = 31;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -8383,7 +8203,7 @@ public interface EmspcrPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.emspcr.impl.EmspcrPackageImpl#getMedicationsAdministeredSection()
 	 * @generated
 	 */
-	int MEDICATIONS_ADMINISTERED_SECTION = 33;
+	int MEDICATIONS_ADMINISTERED_SECTION = 32;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -8564,7 +8384,7 @@ public interface EmspcrPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.emspcr.impl.EmspcrPackageImpl#getMedicationAdministered()
 	 * @generated
 	 */
-	int MEDICATION_ADMINISTERED = 34;
+	int MEDICATION_ADMINISTERED = 33;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -8853,7 +8673,7 @@ public interface EmspcrPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.emspcr.impl.EmspcrPackageImpl#getProceduresPerformedSection()
 	 * @generated
 	 */
-	int PROCEDURES_PERFORMED_SECTION = 35;
+	int PROCEDURES_PERFORMED_SECTION = 34;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -9034,7 +8854,7 @@ public interface EmspcrPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.emspcr.impl.EmspcrPackageImpl#getProcedure()
 	 * @generated
 	 */
-	int PROCEDURE = 36;
+	int PROCEDURE = 35;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -9287,7 +9107,7 @@ public interface EmspcrPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.emspcr.impl.EmspcrPackageImpl#getPatientCareNarrativeSection()
 	 * @generated
 	 */
-	int PATIENT_CARE_NARRATIVE_SECTION = 37;
+	int PATIENT_CARE_NARRATIVE_SECTION = 36;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -9468,7 +9288,7 @@ public interface EmspcrPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.emspcr.impl.EmspcrPackageImpl#getSceneSection()
 	 * @generated
 	 */
-	int SCENE_SECTION = 38;
+	int SCENE_SECTION = 37;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -9649,7 +9469,7 @@ public interface EmspcrPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.emspcr.impl.EmspcrPackageImpl#getFirstUnitIndicator()
 	 * @generated
 	 */
-	int FIRST_UNIT_INDICATOR = 39;
+	int FIRST_UNIT_INDICATOR = 38;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -9938,7 +9758,7 @@ public interface EmspcrPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.emspcr.impl.EmspcrPackageImpl#getFirstUnitOnScene()
 	 * @generated
 	 */
-	int FIRST_UNIT_ON_SCENE = 40;
+	int FIRST_UNIT_ON_SCENE = 39;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -10227,7 +10047,7 @@ public interface EmspcrPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.emspcr.impl.EmspcrPackageImpl#getScenePatientCount()
 	 * @generated
 	 */
-	int SCENE_PATIENT_COUNT = 41;
+	int SCENE_PATIENT_COUNT = 40;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -10516,7 +10336,7 @@ public interface EmspcrPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.emspcr.impl.EmspcrPackageImpl#getMassCasualtyIndicator()
 	 * @generated
 	 */
-	int MASS_CASUALTY_INDICATOR = 42;
+	int MASS_CASUALTY_INDICATOR = 41;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -10805,7 +10625,7 @@ public interface EmspcrPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.emspcr.impl.EmspcrPackageImpl#getLocationTypeObservation()
 	 * @generated
 	 */
-	int LOCATION_TYPE_OBSERVATION = 43;
+	int LOCATION_TYPE_OBSERVATION = 42;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -11094,7 +10914,7 @@ public interface EmspcrPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.emspcr.impl.EmspcrPackageImpl#getDispatchSection()
 	 * @generated
 	 */
-	int DISPATCH_SECTION = 44;
+	int DISPATCH_SECTION = 43;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -11275,7 +11095,7 @@ public interface EmspcrPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.emspcr.impl.EmspcrPackageImpl#getEmergencyMedicalDispatchObservation()
 	 * @generated
 	 */
-	int EMERGENCY_MEDICAL_DISPATCH_OBSERVATION = 45;
+	int EMERGENCY_MEDICAL_DISPATCH_OBSERVATION = 44;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -11564,7 +11384,7 @@ public interface EmspcrPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.emspcr.impl.EmspcrPackageImpl#getComplaintReportedByDispatch()
 	 * @generated
 	 */
-	int COMPLAINT_REPORTED_BY_DISPATCH = 46;
+	int COMPLAINT_REPORTED_BY_DISPATCH = 45;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -11853,7 +11673,7 @@ public interface EmspcrPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.emspcr.impl.EmspcrPackageImpl#getDispositionSection()
 	 * @generated
 	 */
-	int DISPOSITION_SECTION = 47;
+	int DISPOSITION_SECTION = 46;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -12034,7 +11854,7 @@ public interface EmspcrPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.emspcr.impl.EmspcrPackageImpl#getTransportMethodObservation()
 	 * @generated
 	 */
-	int TRANSPORT_METHOD_OBSERVATION = 48;
+	int TRANSPORT_METHOD_OBSERVATION = 47;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -12323,7 +12143,7 @@ public interface EmspcrPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.emspcr.impl.EmspcrPackageImpl#getNumberOfPatientsObservation()
 	 * @generated
 	 */
-	int NUMBER_OF_PATIENTS_OBSERVATION = 49;
+	int NUMBER_OF_PATIENTS_OBSERVATION = 48;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -12612,7 +12432,7 @@ public interface EmspcrPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.emspcr.impl.EmspcrPackageImpl#getIncidentDispositionObservation()
 	 * @generated
 	 */
-	int INCIDENT_DISPOSITION_OBSERVATION = 50;
+	int INCIDENT_DISPOSITION_OBSERVATION = 49;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -12901,7 +12721,7 @@ public interface EmspcrPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.emspcr.impl.EmspcrPackageImpl#getTransportModeObservation()
 	 * @generated
 	 */
-	int TRANSPORT_MODE_OBSERVATION = 51;
+	int TRANSPORT_MODE_OBSERVATION = 50;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -13190,7 +13010,7 @@ public interface EmspcrPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.emspcr.impl.EmspcrPackageImpl#getReasonForChoosingDestinationObservation()
 	 * @generated
 	 */
-	int REASON_FOR_CHOOSING_DESTINATION_OBSERVATION = 52;
+	int REASON_FOR_CHOOSING_DESTINATION_OBSERVATION = 51;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -13479,7 +13299,7 @@ public interface EmspcrPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.emspcr.impl.EmspcrPackageImpl#getPrearrivalActivationObservation()
 	 * @generated
 	 */
-	int PREARRIVAL_ACTIVATION_OBSERVATION = 53;
+	int PREARRIVAL_ACTIVATION_OBSERVATION = 52;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -13768,7 +13588,7 @@ public interface EmspcrPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.emspcr.impl.EmspcrPackageImpl#getPatientConditionChangeAtDestinationObservation()
 	 * @generated
 	 */
-	int PATIENT_CONDITION_CHANGE_AT_DESTINATION_OBSERVATION = 54;
+	int PATIENT_CONDITION_CHANGE_AT_DESTINATION_OBSERVATION = 53;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -14057,7 +13877,7 @@ public interface EmspcrPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.emspcr.impl.EmspcrPackageImpl#getPersonnelAdverseEventSection()
 	 * @generated
 	 */
-	int PERSONNEL_ADVERSE_EVENT_SECTION = 55;
+	int PERSONNEL_ADVERSE_EVENT_SECTION = 54;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -14238,7 +14058,7 @@ public interface EmspcrPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.emspcr.impl.EmspcrPackageImpl#getAdverseEventIndicator()
 	 * @generated
 	 */
-	int ADVERSE_EVENT_INDICATOR = 56;
+	int ADVERSE_EVENT_INDICATOR = 55;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -14527,7 +14347,7 @@ public interface EmspcrPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.emspcr.impl.EmspcrPackageImpl#getAdverseEventTypeObservation()
 	 * @generated
 	 */
-	int ADVERSE_EVENT_TYPE_OBSERVATION = 57;
+	int ADVERSE_EVENT_TYPE_OBSERVATION = 56;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -14816,7 +14636,7 @@ public interface EmspcrPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.emspcr.impl.EmspcrPackageImpl#getProtocolSection()
 	 * @generated
 	 */
-	int PROTOCOL_SECTION = 58;
+	int PROTOCOL_SECTION = 57;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -14997,7 +14817,7 @@ public interface EmspcrPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.emspcr.impl.EmspcrPackageImpl#getProtocolObservation()
 	 * @generated
 	 */
-	int PROTOCOL_OBSERVATION = 59;
+	int PROTOCOL_OBSERVATION = 58;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -15286,7 +15106,7 @@ public interface EmspcrPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.emspcr.impl.EmspcrPackageImpl#getCandidatePatientRegistryType()
 	 * @generated
 	 */
-	int CANDIDATE_PATIENT_REGISTRY_TYPE = 60;
+	int CANDIDATE_PATIENT_REGISTRY_TYPE = 59;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -15575,7 +15395,7 @@ public interface EmspcrPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.emspcr.impl.EmspcrPackageImpl#getResponseSection()
 	 * @generated
 	 */
-	int RESPONSE_SECTION = 61;
+	int RESPONSE_SECTION = 60;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -15756,7 +15576,7 @@ public interface EmspcrPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.emspcr.impl.EmspcrPackageImpl#getDelayOrganizer()
 	 * @generated
 	 */
-	int DELAY_ORGANIZER = 62;
+	int DELAY_ORGANIZER = 61;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -15946,7 +15766,7 @@ public interface EmspcrPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.emspcr.impl.EmspcrPackageImpl#getDispatchLocationOrganizer()
 	 * @generated
 	 */
-	int DISPATCH_LOCATION_ORGANIZER = 63;
+	int DISPATCH_LOCATION_ORGANIZER = 62;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -16136,7 +15956,7 @@ public interface EmspcrPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.emspcr.impl.EmspcrPackageImpl#getResponseOdometerReadingOrganizer()
 	 * @generated
 	 */
-	int RESPONSE_ODOMETER_READING_ORGANIZER = 64;
+	int RESPONSE_ODOMETER_READING_ORGANIZER = 63;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -16326,7 +16146,7 @@ public interface EmspcrPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.emspcr.impl.EmspcrPackageImpl#getResponseModeToScene()
 	 * @generated
 	 */
-	int RESPONSE_MODE_TO_SCENE = 65;
+	int RESPONSE_MODE_TO_SCENE = 64;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -16615,7 +16435,7 @@ public interface EmspcrPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.emspcr.impl.EmspcrPackageImpl#getSituationSection()
 	 * @generated
 	 */
-	int SITUATION_SECTION = 66;
+	int SITUATION_SECTION = 65;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -16796,7 +16616,7 @@ public interface EmspcrPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.emspcr.impl.EmspcrPackageImpl#getComplaint()
 	 * @generated
 	 */
-	int COMPLAINT = 67;
+	int COMPLAINT = 66;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -17085,7 +16905,7 @@ public interface EmspcrPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.emspcr.impl.EmspcrPackageImpl#getPossibleInjury()
 	 * @generated
 	 */
-	int POSSIBLE_INJURY = 68;
+	int POSSIBLE_INJURY = 67;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -17374,7 +17194,7 @@ public interface EmspcrPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.emspcr.impl.EmspcrPackageImpl#getProviderPrimaryImpression()
 	 * @generated
 	 */
-	int PROVIDER_PRIMARY_IMPRESSION = 69;
+	int PROVIDER_PRIMARY_IMPRESSION = 68;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -17663,7 +17483,7 @@ public interface EmspcrPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.emspcr.impl.EmspcrPackageImpl#getPrimarySymptom()
 	 * @generated
 	 */
-	int PRIMARY_SYMPTOM = 70;
+	int PRIMARY_SYMPTOM = 69;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -17952,7 +17772,7 @@ public interface EmspcrPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.emspcr.impl.EmspcrPackageImpl#getOtherSymptoms()
 	 * @generated
 	 */
-	int OTHER_SYMPTOMS = 71;
+	int OTHER_SYMPTOMS = 70;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -18241,7 +18061,7 @@ public interface EmspcrPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.emspcr.impl.EmspcrPackageImpl#getProviderSecondaryImpressions()
 	 * @generated
 	 */
-	int PROVIDER_SECONDARY_IMPRESSIONS = 72;
+	int PROVIDER_SECONDARY_IMPRESSIONS = 71;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -18530,7 +18350,7 @@ public interface EmspcrPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.emspcr.impl.EmspcrPackageImpl#getInitialPatientAcuity()
 	 * @generated
 	 */
-	int INITIAL_PATIENT_ACUITY = 73;
+	int INITIAL_PATIENT_ACUITY = 72;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -18819,7 +18639,7 @@ public interface EmspcrPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.emspcr.impl.EmspcrPackageImpl#getTimesSection()
 	 * @generated
 	 */
-	int TIMES_SECTION = 74;
+	int TIMES_SECTION = 73;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -19000,7 +18820,7 @@ public interface EmspcrPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.emspcr.impl.EmspcrPackageImpl#getCallTime()
 	 * @generated
 	 */
-	int CALL_TIME = 75;
+	int CALL_TIME = 74;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -19289,7 +19109,7 @@ public interface EmspcrPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.emspcr.impl.EmspcrPackageImpl#getUnitNotifiedTime()
 	 * @generated
 	 */
-	int UNIT_NOTIFIED_TIME = 76;
+	int UNIT_NOTIFIED_TIME = 75;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -19578,7 +19398,7 @@ public interface EmspcrPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.emspcr.impl.EmspcrPackageImpl#getUnitEnRouteTime()
 	 * @generated
 	 */
-	int UNIT_EN_ROUTE_TIME = 77;
+	int UNIT_EN_ROUTE_TIME = 76;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -19867,7 +19687,7 @@ public interface EmspcrPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.emspcr.impl.EmspcrPackageImpl#getUnitOnSceneTime()
 	 * @generated
 	 */
-	int UNIT_ON_SCENE_TIME = 78;
+	int UNIT_ON_SCENE_TIME = 77;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -20156,7 +19976,7 @@ public interface EmspcrPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.emspcr.impl.EmspcrPackageImpl#getUnitAtPatienttTime()
 	 * @generated
 	 */
-	int UNIT_AT_PATIENTT_TIME = 79;
+	int UNIT_AT_PATIENTT_TIME = 78;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -20445,7 +20265,7 @@ public interface EmspcrPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.emspcr.impl.EmspcrPackageImpl#getUnitLeftSceneTime()
 	 * @generated
 	 */
-	int UNIT_LEFT_SCENE_TIME = 80;
+	int UNIT_LEFT_SCENE_TIME = 79;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -20734,7 +20554,7 @@ public interface EmspcrPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.emspcr.impl.EmspcrPackageImpl#getPatientArrivedAtDestinationTime()
 	 * @generated
 	 */
-	int PATIENT_ARRIVED_AT_DESTINATION_TIME = 81;
+	int PATIENT_ARRIVED_AT_DESTINATION_TIME = 80;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -21023,7 +20843,7 @@ public interface EmspcrPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.emspcr.impl.EmspcrPackageImpl#getUnitBackInServiceTime()
 	 * @generated
 	 */
-	int UNIT_BACK_IN_SERVICE_TIME = 82;
+	int UNIT_BACK_IN_SERVICE_TIME = 81;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -21312,7 +21132,7 @@ public interface EmspcrPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.emspcr.impl.EmspcrPackageImpl#getDispatchNotifiedTime()
 	 * @generated
 	 */
-	int DISPATCH_NOTIFIED_TIME = 83;
+	int DISPATCH_NOTIFIED_TIME = 82;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -21601,7 +21421,7 @@ public interface EmspcrPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.emspcr.impl.EmspcrPackageImpl#getVitalSignsSection()
 	 * @generated
 	 */
-	int VITAL_SIGNS_SECTION = 84;
+	int VITAL_SIGNS_SECTION = 83;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -21782,7 +21602,7 @@ public interface EmspcrPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.emspcr.impl.EmspcrPackageImpl#getVitalSignsOrganizer()
 	 * @generated
 	 */
-	int VITAL_SIGNS_ORGANIZER = 85;
+	int VITAL_SIGNS_ORGANIZER = 84;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -21972,7 +21792,7 @@ public interface EmspcrPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.emspcr.impl.EmspcrPackageImpl#getPriorAidVitals()
 	 * @generated
 	 */
-	int PRIOR_AID_VITALS = 86;
+	int PRIOR_AID_VITALS = 85;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -22261,7 +22081,7 @@ public interface EmspcrPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.emspcr.impl.EmspcrPackageImpl#getAdditionalVitalSignsOrganizer()
 	 * @generated
 	 */
-	int ADDITIONAL_VITAL_SIGNS_ORGANIZER = 87;
+	int ADDITIONAL_VITAL_SIGNS_ORGANIZER = 86;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -22451,7 +22271,7 @@ public interface EmspcrPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.emspcr.impl.EmspcrPackageImpl#getStrokeScore()
 	 * @generated
 	 */
-	int STROKE_SCORE = 88;
+	int STROKE_SCORE = 87;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -22740,7 +22560,7 @@ public interface EmspcrPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.emspcr.impl.EmspcrPackageImpl#getPainScore()
 	 * @generated
 	 */
-	int PAIN_SCORE = 89;
+	int PAIN_SCORE = 88;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -23029,7 +22849,7 @@ public interface EmspcrPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.emspcr.impl.EmspcrPackageImpl#getLevelOfResponsiveness()
 	 * @generated
 	 */
-	int LEVEL_OF_RESPONSIVENESS = 90;
+	int LEVEL_OF_RESPONSIVENESS = 89;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -23318,7 +23138,7 @@ public interface EmspcrPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.emspcr.impl.EmspcrPackageImpl#getBloodGlucose()
 	 * @generated
 	 */
-	int BLOOD_GLUCOSE = 91;
+	int BLOOD_GLUCOSE = 90;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -23607,7 +23427,7 @@ public interface EmspcrPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.emspcr.impl.EmspcrPackageImpl#getCarbonMonoxide()
 	 * @generated
 	 */
-	int CARBON_MONOXIDE = 92;
+	int CARBON_MONOXIDE = 91;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -23896,7 +23716,7 @@ public interface EmspcrPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.emspcr.impl.EmspcrPackageImpl#getCarbonDioxide()
 	 * @generated
 	 */
-	int CARBON_DIOXIDE = 93;
+	int CARBON_DIOXIDE = 92;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -24185,7 +24005,7 @@ public interface EmspcrPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.emspcr.impl.EmspcrPackageImpl#getCardiacRhythm()
 	 * @generated
 	 */
-	int CARDIAC_RHYTHM = 94;
+	int CARDIAC_RHYTHM = 93;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -24474,7 +24294,7 @@ public interface EmspcrPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.emspcr.impl.EmspcrPackageImpl#getGlasgowComaScoreOrganizer()
 	 * @generated
 	 */
-	int GLASGOW_COMA_SCORE_ORGANIZER = 95;
+	int GLASGOW_COMA_SCORE_ORGANIZER = 94;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -24664,7 +24484,7 @@ public interface EmspcrPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.emspcr.impl.EmspcrPackageImpl#getGlasgowEye()
 	 * @generated
 	 */
-	int GLASGOW_EYE = 96;
+	int GLASGOW_EYE = 95;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -24953,7 +24773,7 @@ public interface EmspcrPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.emspcr.impl.EmspcrPackageImpl#getGlasgowMotor()
 	 * @generated
 	 */
-	int GLASGOW_MOTOR = 97;
+	int GLASGOW_MOTOR = 96;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -25242,7 +25062,7 @@ public interface EmspcrPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.emspcr.impl.EmspcrPackageImpl#getGlasgowQualifier()
 	 * @generated
 	 */
-	int GLASGOW_QUALIFIER = 98;
+	int GLASGOW_QUALIFIER = 97;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -25531,7 +25351,7 @@ public interface EmspcrPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.emspcr.impl.EmspcrPackageImpl#getGlasgowTotal()
 	 * @generated
 	 */
-	int GLASGOW_TOTAL = 99;
+	int GLASGOW_TOTAL = 98;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -25820,7 +25640,7 @@ public interface EmspcrPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.emspcr.impl.EmspcrPackageImpl#getGlasgowVerbal()
 	 * @generated
 	 */
-	int GLASGOW_VERBAL = 100;
+	int GLASGOW_VERBAL = 99;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -26109,7 +25929,7 @@ public interface EmspcrPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.emspcr.impl.EmspcrPackageImpl#getInjuryIncidentDescriptionSection()
 	 * @generated
 	 */
-	int INJURY_INCIDENT_DESCRIPTION_SECTION = 101;
+	int INJURY_INCIDENT_DESCRIPTION_SECTION = 100;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -26290,7 +26110,7 @@ public interface EmspcrPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.emspcr.impl.EmspcrPackageImpl#getInjuryCauseCategory()
 	 * @generated
 	 */
-	int INJURY_CAUSE_CATEGORY = 102;
+	int INJURY_CAUSE_CATEGORY = 101;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -26579,7 +26399,7 @@ public interface EmspcrPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.emspcr.impl.EmspcrPackageImpl#getInjuryMechanism()
 	 * @generated
 	 */
-	int INJURY_MECHANISM = 103;
+	int INJURY_MECHANISM = 102;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -26868,7 +26688,7 @@ public interface EmspcrPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.emspcr.impl.EmspcrPackageImpl#getTraumaCenterCriteria()
 	 * @generated
 	 */
-	int TRAUMA_CENTER_CRITERIA = 104;
+	int TRAUMA_CENTER_CRITERIA = 103;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -27157,7 +26977,7 @@ public interface EmspcrPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.emspcr.impl.EmspcrPackageImpl#getInjuryRiskFactor()
 	 * @generated
 	 */
-	int INJURY_RISK_FACTOR = 105;
+	int INJURY_RISK_FACTOR = 104;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -27446,7 +27266,7 @@ public interface EmspcrPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.emspcr.impl.EmspcrPackageImpl#getVehicleImpactArea()
 	 * @generated
 	 */
-	int VEHICLE_IMPACT_AREA = 106;
+	int VEHICLE_IMPACT_AREA = 105;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -27735,7 +27555,7 @@ public interface EmspcrPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.emspcr.impl.EmspcrPackageImpl#getPatientLocationInVehicle()
 	 * @generated
 	 */
-	int PATIENT_LOCATION_IN_VEHICLE = 107;
+	int PATIENT_LOCATION_IN_VEHICLE = 106;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -28024,7 +27844,7 @@ public interface EmspcrPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.emspcr.impl.EmspcrPackageImpl#getVehicleOccupantSafetyEquipment()
 	 * @generated
 	 */
-	int VEHICLE_OCCUPANT_SAFETY_EQUIPMENT = 108;
+	int VEHICLE_OCCUPANT_SAFETY_EQUIPMENT = 107;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -28313,7 +28133,7 @@ public interface EmspcrPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.emspcr.impl.EmspcrPackageImpl#getAirbagDeploymentStatus()
 	 * @generated
 	 */
-	int AIRBAG_DEPLOYMENT_STATUS = 109;
+	int AIRBAG_DEPLOYMENT_STATUS = 108;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -28602,7 +28422,7 @@ public interface EmspcrPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.emspcr.impl.EmspcrPackageImpl#getHeightOfFall()
 	 * @generated
 	 */
-	int HEIGHT_OF_FALL = 110;
+	int HEIGHT_OF_FALL = 109;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -28891,7 +28711,7 @@ public interface EmspcrPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.emspcr.impl.EmspcrPackageImpl#getDisasterType()
 	 * @generated
 	 */
-	int DISASTER_TYPE = 111;
+	int DISASTER_TYPE = 110;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -29171,6 +28991,186 @@ public interface EmspcrPackage extends EPackage {
 	 * @ordered
 	 */
 	int DISASTER_TYPE_FEATURE_COUNT = CDAPackage.OBSERVATION_FEATURE_COUNT + 0;
+
+	/**
+	   * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
+	   * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	   * @generated
+	   * @ordered
+	   */
+	int HISTORY_OF_PROCEDURES_ORGANIZER__REALM_CODE = CDAPackage.ORGANIZER__REALM_CODE;
+
+	/**
+	   * The feature id for the '<em><b>Type Id</b></em>' containment reference.
+	   * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	   * @generated
+	   * @ordered
+	   */
+	int HISTORY_OF_PROCEDURES_ORGANIZER__TYPE_ID = CDAPackage.ORGANIZER__TYPE_ID;
+
+	/**
+	   * The feature id for the '<em><b>Template Id</b></em>' containment reference list.
+	   * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	   * @generated
+	   * @ordered
+	   */
+	int HISTORY_OF_PROCEDURES_ORGANIZER__TEMPLATE_ID = CDAPackage.ORGANIZER__TEMPLATE_ID;
+
+	/**
+	   * The feature id for the '<em><b>Id</b></em>' containment reference list.
+	   * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	   * @generated
+	   * @ordered
+	   */
+	int HISTORY_OF_PROCEDURES_ORGANIZER__ID = CDAPackage.ORGANIZER__ID;
+
+	/**
+	   * The feature id for the '<em><b>Code</b></em>' containment reference.
+	   * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	   * @generated
+	   * @ordered
+	   */
+	int HISTORY_OF_PROCEDURES_ORGANIZER__CODE = CDAPackage.ORGANIZER__CODE;
+
+	/**
+	   * The feature id for the '<em><b>Status Code</b></em>' containment reference.
+	   * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	   * @generated
+	   * @ordered
+	   */
+	int HISTORY_OF_PROCEDURES_ORGANIZER__STATUS_CODE = CDAPackage.ORGANIZER__STATUS_CODE;
+
+	/**
+	   * The feature id for the '<em><b>Effective Time</b></em>' containment reference.
+	   * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	   * @generated
+	   * @ordered
+	   */
+	int HISTORY_OF_PROCEDURES_ORGANIZER__EFFECTIVE_TIME = CDAPackage.ORGANIZER__EFFECTIVE_TIME;
+
+	/**
+	   * The feature id for the '<em><b>Subject</b></em>' containment reference.
+	   * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	   * @generated
+	   * @ordered
+	   */
+	int HISTORY_OF_PROCEDURES_ORGANIZER__SUBJECT = CDAPackage.ORGANIZER__SUBJECT;
+
+	/**
+	   * The feature id for the '<em><b>Specimen</b></em>' containment reference list.
+	   * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	   * @generated
+	   * @ordered
+	   */
+	int HISTORY_OF_PROCEDURES_ORGANIZER__SPECIMEN = CDAPackage.ORGANIZER__SPECIMEN;
+
+	/**
+	   * The feature id for the '<em><b>Performer</b></em>' containment reference list.
+	   * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	   * @generated
+	   * @ordered
+	   */
+	int HISTORY_OF_PROCEDURES_ORGANIZER__PERFORMER = CDAPackage.ORGANIZER__PERFORMER;
+
+	/**
+	   * The feature id for the '<em><b>Author</b></em>' containment reference list.
+	   * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	   * @generated
+	   * @ordered
+	   */
+	int HISTORY_OF_PROCEDURES_ORGANIZER__AUTHOR = CDAPackage.ORGANIZER__AUTHOR;
+
+	/**
+	   * The feature id for the '<em><b>Informant</b></em>' containment reference list.
+	   * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	   * @generated
+	   * @ordered
+	   */
+	int HISTORY_OF_PROCEDURES_ORGANIZER__INFORMANT = CDAPackage.ORGANIZER__INFORMANT;
+
+	/**
+	   * The feature id for the '<em><b>Participant</b></em>' containment reference list.
+	   * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	   * @generated
+	   * @ordered
+	   */
+	int HISTORY_OF_PROCEDURES_ORGANIZER__PARTICIPANT = CDAPackage.ORGANIZER__PARTICIPANT;
+
+	/**
+	   * The feature id for the '<em><b>Reference</b></em>' containment reference list.
+	   * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	   * @generated
+	   * @ordered
+	   */
+	int HISTORY_OF_PROCEDURES_ORGANIZER__REFERENCE = CDAPackage.ORGANIZER__REFERENCE;
+
+	/**
+	   * The feature id for the '<em><b>Precondition</b></em>' containment reference list.
+	   * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	   * @generated
+	   * @ordered
+	   */
+	int HISTORY_OF_PROCEDURES_ORGANIZER__PRECONDITION = CDAPackage.ORGANIZER__PRECONDITION;
+
+	/**
+	   * The feature id for the '<em><b>Component</b></em>' containment reference list.
+	   * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	   * @generated
+	   * @ordered
+	   */
+	int HISTORY_OF_PROCEDURES_ORGANIZER__COMPONENT = CDAPackage.ORGANIZER__COMPONENT;
+
+	/**
+	   * The feature id for the '<em><b>Null Flavor</b></em>' attribute.
+	   * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	   * @generated
+	   * @ordered
+	   */
+	int HISTORY_OF_PROCEDURES_ORGANIZER__NULL_FLAVOR = CDAPackage.ORGANIZER__NULL_FLAVOR;
+
+	/**
+	   * The feature id for the '<em><b>Class Code</b></em>' attribute.
+	   * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	   * @generated
+	   * @ordered
+	   */
+	int HISTORY_OF_PROCEDURES_ORGANIZER__CLASS_CODE = CDAPackage.ORGANIZER__CLASS_CODE;
+
+	/**
+	   * The feature id for the '<em><b>Mood Code</b></em>' attribute.
+	   * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	   * @generated
+	   * @ordered
+	   */
+	int HISTORY_OF_PROCEDURES_ORGANIZER__MOOD_CODE = CDAPackage.ORGANIZER__MOOD_CODE;
+
+	/**
+	   * The number of structural features of the '<em>History Of Procedures Organizer</em>' class.
+	   * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	   * @generated
+	   * @ordered
+	   */
+	int HISTORY_OF_PROCEDURES_ORGANIZER_FEATURE_COUNT = CDAPackage.ORGANIZER_FEATURE_COUNT + 0;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.emspcr.impl.MedicationNotAdministeredReasonObservationImpl <em>Medication Not Administered Reason Observation</em>}' class.

@@ -101,8 +101,6 @@ public class EmspcrFactoryImpl extends EFactoryImpl implements EmspcrFactory {
 				return createExistenceOfHistoryOfCondition();
 			case EmspcrPackage.HISTORY_OF_CONDITION:
 				return createHistoryOfCondition();
-			case EmspcrPackage.HISTORY_OF_PROCEDURES_ORGANIZER:
-				return createHistoryOfProceduresOrganizer();
 			case EmspcrPackage.SOCIAL_HISTORY_SECTION:
 				return createSocialHistorySection();
 			case EmspcrPackage.EXISTENCE_OF_DRUG_USE_INDICATION:
@@ -283,6 +281,8 @@ public class EmspcrFactoryImpl extends EFactoryImpl implements EmspcrFactory {
 				return createHeightOfFall();
 			case EmspcrPackage.DISASTER_TYPE:
 				return createDisasterType();
+			case EmspcrPackage.HISTORY_OF_PROCEDURES_ORGANIZER:
+				return createHistoryOfProceduresOrganizer();
 			case EmspcrPackage.MEDICATION_NOT_ADMINISTERED_REASON_OBSERVATION:
 				return createMedicationNotAdministeredReasonObservation();
 			case EmspcrPackage.MEDICATION_RESPONSE_OBSERVATION:

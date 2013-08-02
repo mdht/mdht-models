@@ -12,6 +12,7 @@ import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 
+import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
 
@@ -20,7 +21,6 @@ import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.emspcr.EmspcrPackage;
 import org.openhealthtools.mdht.uml.cda.emspcr.ExistenceOfHistoryOfCondition;
 import org.openhealthtools.mdht.uml.cda.emspcr.HistoryOfCondition;
-import org.openhealthtools.mdht.uml.cda.emspcr.HistoryOfProceduresOrganizer;
 import org.openhealthtools.mdht.uml.cda.emspcr.PastMedicalHistorySection;
 
 import org.openhealthtools.mdht.uml.cda.emspcr.operations.PastMedicalHistorySectionOperations;
@@ -129,44 +129,24 @@ public class PastMedicalHistorySectionImpl extends SectionImpl implements PastMe
 	 * <!-- end-user-doc -->
 	* @generated
 	*/
-	public boolean validatePastMedicalHistorySectionHistoryOfProceduresOrganizer(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return PastMedicalHistorySectionOperations.validatePastMedicalHistorySectionHistoryOfProceduresOrganizer(
-			this, diagnostics, context);
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
 	public ExistenceOfHistoryOfCondition getExistenceOfHistoryOfCondition() {
 		return PastMedicalHistorySectionOperations.getExistenceOfHistoryOfCondition(this);
 	}
 
 	/**
 	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	* <!-- end-user-doc -->
 	* @generated
 	*/
-	public HistoryOfCondition getHistoryOfCondition() {
-		return PastMedicalHistorySectionOperations.getHistoryOfCondition(this);
+	public EList<HistoryOfCondition> getHistoryOfConditions() {
+		return PastMedicalHistorySectionOperations.getHistoryOfConditions(this);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	public HistoryOfProceduresOrganizer getHistoryOfProceduresOrganizer() {
-		return PastMedicalHistorySectionOperations.getHistoryOfProceduresOrganizer(this);
-	}
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public PastMedicalHistorySection init() {
 		return Initializer.Util.init(this);
 	}

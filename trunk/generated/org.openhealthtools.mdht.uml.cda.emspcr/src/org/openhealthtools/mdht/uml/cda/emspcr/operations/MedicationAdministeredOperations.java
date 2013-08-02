@@ -36,7 +36,7 @@ import org.openhealthtools.mdht.uml.cda.emspcr.util.EmspcrValidator;
  * <ul>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.emspcr.MedicationAdministered#validateMedicationAdministeredMedicationNotAdministeredEntryRelationship(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Administered Medication Not Administered Entry Relationship</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.emspcr.MedicationAdministered#validateMedicationAdministeredMedicationConsumable(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Administered Medication Consumable</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.emspcr.MedicationAdministered#validateMedicationAdministeredMedicationAdministeredResponseRelationship(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Administered Medication Administered Response Relationship</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.emspcr.MedicationAdministered#validateMedicationAdministeredResponseRelationship(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Administered Response Relationship</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.emspcr.MedicationAdministered#validateMedicationAdministeredMedicationComplicationRelationship(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Administered Medication Complication Relationship</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.emspcr.MedicationAdministered#validateMedicationAdministeredMedicationPriorAdministrationRelationship(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Administered Medication Prior Administration Relationship</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.emspcr.MedicationAdministered#validateMedicationAdministeredMedicationPerformerParticipation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Administered Medication Performer Participation</em>}</li>
@@ -188,58 +188,57 @@ public class MedicationAdministeredOperations extends MedicationActivityOperatio
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateMedicationAdministeredMedicationAdministeredResponseRelationship(MedicationAdministered, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Administered Medication Administered Response Relationship</em>}' operation.
+	* The cached OCL expression body for the '{@link #validateMedicationAdministeredResponseRelationship(MedicationAdministered, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Administered Response Relationship</em>}' operation.
 	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @see #validateMedicationAdministeredMedicationAdministeredResponseRelationship(MedicationAdministered, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* <!-- end-user-doc -->
+	* @see #validateMedicationAdministeredResponseRelationship(MedicationAdministered, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	* @generated
 	* @ordered
 	*/
-	protected static final String VALIDATE_MEDICATION_ADMINISTERED_MEDICATION_ADMINISTERED_RESPONSE_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.oclIsUndefined() and entryRelationship.oclIsKindOf(cda::EntryRelationship))";
+	protected static final String VALIDATE_MEDICATION_ADMINISTERED_RESPONSE_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.oclIsUndefined() and entryRelationship.oclIsKindOf(cda::EntryRelationship))";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateMedicationAdministeredMedicationAdministeredResponseRelationship(MedicationAdministered, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Administered Medication Administered Response Relationship</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateMedicationAdministeredResponseRelationship(MedicationAdministered, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Administered Response Relationship</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateMedicationAdministeredMedicationAdministeredResponseRelationship(MedicationAdministered, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateMedicationAdministeredResponseRelationship(MedicationAdministered, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 
-	protected static Constraint VALIDATE_MEDICATION_ADMINISTERED_MEDICATION_ADMINISTERED_RESPONSE_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static Constraint VALIDATE_MEDICATION_ADMINISTERED_RESPONSE_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param medicationAdministered The receiving '<em><b>Medication Administered</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param medicationAdministered The receiving '<em><b>Medication Administered</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 
-	public static boolean validateMedicationAdministeredMedicationAdministeredResponseRelationship(
+	public static boolean validateMedicationAdministeredResponseRelationship(
 			MedicationAdministered medicationAdministered, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
-		if (VALIDATE_MEDICATION_ADMINISTERED_MEDICATION_ADMINISTERED_RESPONSE_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+		if (VALIDATE_MEDICATION_ADMINISTERED_RESPONSE_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.MEDICATION_ADMINISTERED);
 			try {
-				VALIDATE_MEDICATION_ADMINISTERED_MEDICATION_ADMINISTERED_RESPONSE_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MEDICATION_ADMINISTERED_MEDICATION_ADMINISTERED_RESPONSE_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_MEDICATION_ADMINISTERED_RESPONSE_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MEDICATION_ADMINISTERED_RESPONSE_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(
-			VALIDATE_MEDICATION_ADMINISTERED_MEDICATION_ADMINISTERED_RESPONSE_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			VALIDATE_MEDICATION_ADMINISTERED_RESPONSE_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
 			medicationAdministered)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.MEDICATION_ADMINISTERED__MEDICATION_ADMINISTERED_MEDICATION_ADMINISTERED_RESPONSE_RELATIONSHIP,
-					EmspcrPlugin.INSTANCE.getString("MedicationAdministeredMedicationAdministeredResponseRelationship"),
+					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.MEDICATION_ADMINISTERED__MEDICATION_ADMINISTERED_RESPONSE_RELATIONSHIP,
+					EmspcrPlugin.INSTANCE.getString("MedicationAdministeredResponseRelationship"),
 					new Object[] { medicationAdministered }));
 			}
 
@@ -249,13 +248,13 @@ public class MedicationAdministeredOperations extends MedicationActivityOperatio
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateMedicationAdministeredMedicationComplicationRelationship(MedicationAdministered, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Administered Medication Complication Relationship</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateMedicationAdministeredMedicationComplicationRelationship(MedicationAdministered, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Administered Medication Complication Relationship</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateMedicationAdministeredMedicationComplicationRelationship(MedicationAdministered, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateMedicationAdministeredMedicationComplicationRelationship(MedicationAdministered, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_MEDICATION_ADMINISTERED_MEDICATION_COMPLICATION_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->exists(entryRelationship : cda::EntryRelationship | not entryRelationship.oclIsUndefined() and entryRelationship.oclIsKindOf(cda::EntryRelationship))";
 
 	/**

@@ -55,20 +55,18 @@ public class CurrentMedicationImpl extends MedicationActivityImpl implements Cur
 
 	/**
 	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	* <!-- end-user-doc -->
 	* @generated
 	*/
-	public boolean validateCurrentMedicationCurrentMedicationConsumable(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return CurrentMedicationOperations.validateCurrentMedicationCurrentMedicationConsumable(
-			this, diagnostics, context);
+	public boolean validateCurrentMedicationConsumable(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return CurrentMedicationOperations.validateCurrentMedicationConsumable(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateCurrentMedicationDoseQuantity(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return CurrentMedicationOperations.validateCurrentMedicationDoseQuantity(this, diagnostics, context);
 	}

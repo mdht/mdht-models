@@ -23,6 +23,7 @@ import org.eclipse.ocl.expressions.OCLExpression;
 
 import org.openhealthtools.mdht.uml.cda.emspcr.AdditionalVitalSignsOrganizer;
 import org.openhealthtools.mdht.uml.cda.emspcr.EmspcrPackage;
+import org.openhealthtools.mdht.uml.cda.emspcr.EmspcrPlugin;
 import org.openhealthtools.mdht.uml.cda.emspcr.PriorAidVitals;
 import org.openhealthtools.mdht.uml.cda.emspcr.VitalSignsOrganizer;
 import org.openhealthtools.mdht.uml.cda.emspcr.VitalSignsSection;
@@ -37,12 +38,12 @@ import org.openhealthtools.mdht.uml.cda.emspcr.util.EmspcrValidator;
  * <p>
  * The following operations are supported:
  * <ul>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.emspcr.VitalSignsSection#validateEmspcrVitalSignsSectionCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Emspcr Vital Signs Section Code</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.emspcr.VitalSignsSection#validateEmspcrVitalSignsSectionTitle(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Emspcr Vital Signs Section Title</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.emspcr.VitalSignsSection#validateEmspcrVitalSignsSectionText(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Emspcr Vital Signs Section Text</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.emspcr.VitalSignsSection#validateEmspcrVitalSignsSectionVitalSignsOrganizer(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Emspcr Vital Signs Section Vital Signs Organizer</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.emspcr.VitalSignsSection#validateEmspcrVitalSignsSectionPriorAidVitals(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Emspcr Vital Signs Section Prior Aid Vitals</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.emspcr.VitalSignsSection#validateEmspcrVitalSignsSectionAdditionalVitalSignsOrganizer(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Emspcr Vital Signs Section Additional Vital Signs Organizer</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.emspcr.VitalSignsSection#validateEMSPCRVitalSignsSectionCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate EMSPCR Vital Signs Section Code</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.emspcr.VitalSignsSection#validateEMSPCRVitalSignsSectionTitle(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate EMSPCR Vital Signs Section Title</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.emspcr.VitalSignsSection#validateEMSPCRVitalSignsSectionText(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate EMSPCR Vital Signs Section Text</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.emspcr.VitalSignsSection#validateEMSPCRVitalSignsSectionVitalSignsOrganizer(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate EMSPCR Vital Signs Section Vital Signs Organizer</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.emspcr.VitalSignsSection#validateEMSPCRVitalSignsSectionPriorAidVitals(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate EMSPCR Vital Signs Section Prior Aid Vitals</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.emspcr.VitalSignsSection#validateEMSPCRVitalSignsSectionAdditionalVitalSignsOrganizer(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate EMSPCR Vital Signs Section Additional Vital Signs Organizer</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.emspcr.VitalSignsSection#getemspcrVitalSignsOrganizer() <em>Getemspcr Vital Signs Organizer</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.emspcr.VitalSignsSection#getPriorAidVitals() <em>Get Prior Aid Vitals</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.emspcr.VitalSignsSection#getAdditionalVitalSignsOrganizer() <em>Get Additional Vital Signs Organizer</em>}</li>
@@ -64,10 +65,10 @@ public class VitalSignsSectionOperations extends
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateEmspcrVitalSignsSectionCode(VitalSignsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Emspcr Vital Signs Section Code</em>}' operation.
+	* The cached OCL expression body for the '{@link #validateEMSPCRVitalSignsSectionCode(VitalSignsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate EMSPCR Vital Signs Section Code</em>}' operation.
 	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateEmspcrVitalSignsSectionCode(VitalSignsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @see #validateEMSPCRVitalSignsSectionCode(VitalSignsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	* @generated
 	* @ordered
 	*/
@@ -76,10 +77,10 @@ public class VitalSignsSectionOperations extends
 			+ "value.code = '8716-3' and value.codeSystem = '2.16.840.1.113883.6.1')";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateEmspcrVitalSignsSectionCode(VitalSignsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Emspcr Vital Signs Section Code</em>}' invariant operation.
+	* The cached OCL invariant for the '{@link #validateEMSPCRVitalSignsSectionCode(VitalSignsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate EMSPCR Vital Signs Section Code</em>}' invariant operation.
 	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateEmspcrVitalSignsSectionCode(VitalSignsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @see #validateEMSPCRVitalSignsSectionCode(VitalSignsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	* @generated
 	* @ordered
 	*/
@@ -88,7 +89,7 @@ public class VitalSignsSectionOperations extends
 
 	/**
 	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	* <!-- end-user-doc -->
 	* <!-- begin-model-doc -->
 	* @param vitalSignsSection The receiving '<em><b>Vital Signs Section</b></em>' model object.
 	* @param diagnostics The chain of diagnostics to which problems are to be appended.
@@ -97,7 +98,7 @@ public class VitalSignsSectionOperations extends
 	* @generated
 	*/
 
-	public static boolean validateEmspcrVitalSignsSectionCode(VitalSignsSection vitalSignsSection,
+	public static boolean validateEMSPCRVitalSignsSectionCode(VitalSignsSection vitalSignsSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
 		if (VALIDATE_EMSPCR_VITAL_SIGNS_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
@@ -113,15 +114,9 @@ public class VitalSignsSectionOperations extends
 			vitalSignsSection)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					EmspcrValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
 					EmspcrValidator.VITAL_SIGNS_SECTION__EMSPCR_VITAL_SIGNS_SECTION_CODE,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"EmspcrVitalSignsSectionCode",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(vitalSignsSection, context) }),
-					new Object[] { vitalSignsSection }));
+					EmspcrPlugin.INSTANCE.getString("EMSPCRVitalSignsSectionCode"), new Object[] { vitalSignsSection }));
 			}
 
 			return false;
@@ -130,20 +125,20 @@ public class VitalSignsSectionOperations extends
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateEmspcrVitalSignsSectionTitle(VitalSignsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Emspcr Vital Signs Section Title</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateEMSPCRVitalSignsSectionTitle(VitalSignsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate EMSPCR Vital Signs Section Title</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateEmspcrVitalSignsSectionTitle(VitalSignsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateEMSPCRVitalSignsSectionTitle(VitalSignsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_EMSPCR_VITAL_SIGNS_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.title.oclIsUndefined() or self.title.isNullFlavorUndefined()) implies (self.title.getText() = 'EMS Vital Signs')";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateEmspcrVitalSignsSectionTitle(VitalSignsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Emspcr Vital Signs Section Title</em>}' invariant operation.
+	* The cached OCL invariant for the '{@link #validateEMSPCRVitalSignsSectionTitle(VitalSignsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate EMSPCR Vital Signs Section Title</em>}' invariant operation.
 	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateEmspcrVitalSignsSectionTitle(VitalSignsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @see #validateEMSPCRVitalSignsSectionTitle(VitalSignsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	* @generated
 	* @ordered
 	*/
@@ -152,7 +147,7 @@ public class VitalSignsSectionOperations extends
 
 	/**
 	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	* <!-- end-user-doc -->
 	* <!-- begin-model-doc -->
 	* @param vitalSignsSection The receiving '<em><b>Vital Signs Section</b></em>' model object.
 	* @param diagnostics The chain of diagnostics to which problems are to be appended.
@@ -161,7 +156,7 @@ public class VitalSignsSectionOperations extends
 	* @generated
 	*/
 
-	public static boolean validateEmspcrVitalSignsSectionTitle(VitalSignsSection vitalSignsSection,
+	public static boolean validateEMSPCRVitalSignsSectionTitle(VitalSignsSection vitalSignsSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
 		if (VALIDATE_EMSPCR_VITAL_SIGNS_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
@@ -177,15 +172,9 @@ public class VitalSignsSectionOperations extends
 			vitalSignsSection)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					EmspcrValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
 					EmspcrValidator.VITAL_SIGNS_SECTION__EMSPCR_VITAL_SIGNS_SECTION_TITLE,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"EmspcrVitalSignsSectionTitle",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(vitalSignsSection, context) }),
-					new Object[] { vitalSignsSection }));
+					EmspcrPlugin.INSTANCE.getString("EMSPCRVitalSignsSectionTitle"), new Object[] { vitalSignsSection }));
 			}
 
 			return false;
@@ -194,20 +183,20 @@ public class VitalSignsSectionOperations extends
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateEmspcrVitalSignsSectionText(VitalSignsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Emspcr Vital Signs Section Text</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateEMSPCRVitalSignsSectionText(VitalSignsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate EMSPCR Vital Signs Section Text</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateEmspcrVitalSignsSectionText(VitalSignsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateEMSPCRVitalSignsSectionText(VitalSignsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_EMSPCR_VITAL_SIGNS_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "not self.text.oclIsUndefined()";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateEmspcrVitalSignsSectionText(VitalSignsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Emspcr Vital Signs Section Text</em>}' invariant operation.
+	* The cached OCL invariant for the '{@link #validateEMSPCRVitalSignsSectionText(VitalSignsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate EMSPCR Vital Signs Section Text</em>}' invariant operation.
 	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateEmspcrVitalSignsSectionText(VitalSignsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @see #validateEMSPCRVitalSignsSectionText(VitalSignsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	* @generated
 	* @ordered
 	*/
@@ -216,7 +205,7 @@ public class VitalSignsSectionOperations extends
 
 	/**
 	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	* <!-- end-user-doc -->
 	* <!-- begin-model-doc -->
 	* @param vitalSignsSection The receiving '<em><b>Vital Signs Section</b></em>' model object.
 	* @param diagnostics The chain of diagnostics to which problems are to be appended.
@@ -225,7 +214,7 @@ public class VitalSignsSectionOperations extends
 	* @generated
 	*/
 
-	public static boolean validateEmspcrVitalSignsSectionText(VitalSignsSection vitalSignsSection,
+	public static boolean validateEMSPCRVitalSignsSectionText(VitalSignsSection vitalSignsSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
 		if (VALIDATE_EMSPCR_VITAL_SIGNS_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
@@ -241,15 +230,9 @@ public class VitalSignsSectionOperations extends
 			vitalSignsSection)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					EmspcrValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
 					EmspcrValidator.VITAL_SIGNS_SECTION__EMSPCR_VITAL_SIGNS_SECTION_TEXT,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"EmspcrVitalSignsSectionText",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(vitalSignsSection, context) }),
-					new Object[] { vitalSignsSection }));
+					EmspcrPlugin.INSTANCE.getString("EMSPCRVitalSignsSectionText"), new Object[] { vitalSignsSection }));
 			}
 
 			return false;
@@ -258,20 +241,20 @@ public class VitalSignsSectionOperations extends
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateEmspcrVitalSignsSectionVitalSignsOrganizer(VitalSignsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Emspcr Vital Signs Section Vital Signs Organizer</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateEMSPCRVitalSignsSectionVitalSignsOrganizer(VitalSignsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate EMSPCR Vital Signs Section Vital Signs Organizer</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateEmspcrVitalSignsSectionVitalSignsOrganizer(VitalSignsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateEMSPCRVitalSignsSectionVitalSignsOrganizer(VitalSignsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_EMSPCR_VITAL_SIGNS_SECTION_VITAL_SIGNS_ORGANIZER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->one(entry : cda::Entry | not entry.organizer.oclIsUndefined() and entry.organizer.oclIsKindOf(emspcr::VitalSignsOrganizer) and entry.typeCode = vocab::x_ActRelationshipEntry::DRIV)";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateEmspcrVitalSignsSectionVitalSignsOrganizer(VitalSignsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Emspcr Vital Signs Section Vital Signs Organizer</em>}' invariant operation.
+	* The cached OCL invariant for the '{@link #validateEMSPCRVitalSignsSectionVitalSignsOrganizer(VitalSignsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate EMSPCR Vital Signs Section Vital Signs Organizer</em>}' invariant operation.
 	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateEmspcrVitalSignsSectionVitalSignsOrganizer(VitalSignsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @see #validateEMSPCRVitalSignsSectionVitalSignsOrganizer(VitalSignsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	* @generated
 	* @ordered
 	*/
@@ -280,7 +263,7 @@ public class VitalSignsSectionOperations extends
 
 	/**
 	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	* <!-- end-user-doc -->
 	* <!-- begin-model-doc -->
 	* @param vitalSignsSection The receiving '<em><b>Vital Signs Section</b></em>' model object.
 	* @param diagnostics The chain of diagnostics to which problems are to be appended.
@@ -289,7 +272,7 @@ public class VitalSignsSectionOperations extends
 	* @generated
 	*/
 
-	public static boolean validateEmspcrVitalSignsSectionVitalSignsOrganizer(VitalSignsSection vitalSignsSection,
+	public static boolean validateEMSPCRVitalSignsSectionVitalSignsOrganizer(VitalSignsSection vitalSignsSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
 		if (VALIDATE_EMSPCR_VITAL_SIGNS_SECTION_VITAL_SIGNS_ORGANIZER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
@@ -306,14 +289,9 @@ public class VitalSignsSectionOperations extends
 			vitalSignsSection)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					EmspcrValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
 					EmspcrValidator.VITAL_SIGNS_SECTION__EMSPCR_VITAL_SIGNS_SECTION_VITAL_SIGNS_ORGANIZER,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"EmspcrVitalSignsSectionVitalSignsOrganizer",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(vitalSignsSection, context) }),
+					EmspcrPlugin.INSTANCE.getString("EMSPCRVitalSignsSectionVitalSignsOrganizer"),
 					new Object[] { vitalSignsSection }));
 			}
 
@@ -323,20 +301,20 @@ public class VitalSignsSectionOperations extends
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateEmspcrVitalSignsSectionPriorAidVitals(VitalSignsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Emspcr Vital Signs Section Prior Aid Vitals</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateEMSPCRVitalSignsSectionPriorAidVitals(VitalSignsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate EMSPCR Vital Signs Section Prior Aid Vitals</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateEmspcrVitalSignsSectionPriorAidVitals(VitalSignsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateEMSPCRVitalSignsSectionPriorAidVitals(VitalSignsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_EMSPCR_VITAL_SIGNS_SECTION_PRIOR_AID_VITALS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->one(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(emspcr::PriorAidVitals) and entry.typeCode = vocab::x_ActRelationshipEntry::DRIV)";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateEmspcrVitalSignsSectionPriorAidVitals(VitalSignsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Emspcr Vital Signs Section Prior Aid Vitals</em>}' invariant operation.
+	* The cached OCL invariant for the '{@link #validateEMSPCRVitalSignsSectionPriorAidVitals(VitalSignsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate EMSPCR Vital Signs Section Prior Aid Vitals</em>}' invariant operation.
 	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateEmspcrVitalSignsSectionPriorAidVitals(VitalSignsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @see #validateEMSPCRVitalSignsSectionPriorAidVitals(VitalSignsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	* @generated
 	* @ordered
 	*/
@@ -345,7 +323,7 @@ public class VitalSignsSectionOperations extends
 
 	/**
 	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	* <!-- end-user-doc -->
 	* <!-- begin-model-doc -->
 	* @param vitalSignsSection The receiving '<em><b>Vital Signs Section</b></em>' model object.
 	* @param diagnostics The chain of diagnostics to which problems are to be appended.
@@ -354,7 +332,7 @@ public class VitalSignsSectionOperations extends
 	* @generated
 	*/
 
-	public static boolean validateEmspcrVitalSignsSectionPriorAidVitals(VitalSignsSection vitalSignsSection,
+	public static boolean validateEMSPCRVitalSignsSectionPriorAidVitals(VitalSignsSection vitalSignsSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
 		if (VALIDATE_EMSPCR_VITAL_SIGNS_SECTION_PRIOR_AID_VITALS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
@@ -370,14 +348,9 @@ public class VitalSignsSectionOperations extends
 			vitalSignsSection)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					EmspcrValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
 					EmspcrValidator.VITAL_SIGNS_SECTION__EMSPCR_VITAL_SIGNS_SECTION_PRIOR_AID_VITALS,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"EmspcrVitalSignsSectionPriorAidVitals",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(vitalSignsSection, context) }),
+					EmspcrPlugin.INSTANCE.getString("EMSPCRVitalSignsSectionPriorAidVitals"),
 					new Object[] { vitalSignsSection }));
 			}
 
@@ -387,20 +360,20 @@ public class VitalSignsSectionOperations extends
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateEmspcrVitalSignsSectionAdditionalVitalSignsOrganizer(VitalSignsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Emspcr Vital Signs Section Additional Vital Signs Organizer</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateEMSPCRVitalSignsSectionAdditionalVitalSignsOrganizer(VitalSignsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate EMSPCR Vital Signs Section Additional Vital Signs Organizer</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateEmspcrVitalSignsSectionAdditionalVitalSignsOrganizer(VitalSignsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateEMSPCRVitalSignsSectionAdditionalVitalSignsOrganizer(VitalSignsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_EMSPCR_VITAL_SIGNS_SECTION_ADDITIONAL_VITAL_SIGNS_ORGANIZER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->one(entry : cda::Entry | not entry.organizer.oclIsUndefined() and entry.organizer.oclIsKindOf(emspcr::AdditionalVitalSignsOrganizer) and entry.typeCode = vocab::x_ActRelationshipEntry::DRIV)";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateEmspcrVitalSignsSectionAdditionalVitalSignsOrganizer(VitalSignsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Emspcr Vital Signs Section Additional Vital Signs Organizer</em>}' invariant operation.
+	* The cached OCL invariant for the '{@link #validateEMSPCRVitalSignsSectionAdditionalVitalSignsOrganizer(VitalSignsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate EMSPCR Vital Signs Section Additional Vital Signs Organizer</em>}' invariant operation.
 	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateEmspcrVitalSignsSectionAdditionalVitalSignsOrganizer(VitalSignsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @see #validateEMSPCRVitalSignsSectionAdditionalVitalSignsOrganizer(VitalSignsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	* @generated
 	* @ordered
 	*/
@@ -409,7 +382,7 @@ public class VitalSignsSectionOperations extends
 
 	/**
 	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	* <!-- end-user-doc -->
 	* <!-- begin-model-doc -->
 	* @param vitalSignsSection The receiving '<em><b>Vital Signs Section</b></em>' model object.
 	* @param diagnostics The chain of diagnostics to which problems are to be appended.
@@ -418,7 +391,7 @@ public class VitalSignsSectionOperations extends
 	* @generated
 	*/
 
-	public static boolean validateEmspcrVitalSignsSectionAdditionalVitalSignsOrganizer(
+	public static boolean validateEMSPCRVitalSignsSectionAdditionalVitalSignsOrganizer(
 			VitalSignsSection vitalSignsSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
 		if (VALIDATE_EMSPCR_VITAL_SIGNS_SECTION_ADDITIONAL_VITAL_SIGNS_ORGANIZER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
@@ -435,14 +408,9 @@ public class VitalSignsSectionOperations extends
 			vitalSignsSection)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					EmspcrValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
 					EmspcrValidator.VITAL_SIGNS_SECTION__EMSPCR_VITAL_SIGNS_SECTION_ADDITIONAL_VITAL_SIGNS_ORGANIZER,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"EmspcrVitalSignsSectionAdditionalVitalSignsOrganizer",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(vitalSignsSection, context) }),
+					EmspcrPlugin.INSTANCE.getString("EMSPCRVitalSignsSectionAdditionalVitalSignsOrganizer"),
 					new Object[] { vitalSignsSection }));
 			}
 
@@ -452,13 +420,13 @@ public class VitalSignsSectionOperations extends
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #getemspcrVitalSignsOrganizer(VitalSignsSection) <em>Getemspcr Vital Signs Organizer</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #getemspcrVitalSignsOrganizer(VitalSignsSection) <em>Getemspcr Vital Signs Organizer</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #getemspcrVitalSignsOrganizer(VitalSignsSection)
-	* @generated
-	* @ordered
-	*/
+	 * @see #getemspcrVitalSignsOrganizer(VitalSignsSection)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String GETEMSPCR_VITAL_SIGNS_ORGANIZER__EOCL_EXP = "self.getOrganizers()->select(organizer : cda::Organizer | not organizer.oclIsUndefined() and organizer.oclIsKindOf(emspcr::VitalSignsOrganizer))->asSequence()->any(true).oclAsType(emspcr::VitalSignsOrganizer)";
 
 	/**

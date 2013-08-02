@@ -12,6 +12,7 @@ import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 
+import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EObject;
 
 import org.openhealthtools.mdht.emf.runtime.util.Initializer;
@@ -25,7 +26,7 @@ import org.openhealthtools.mdht.uml.cda.Section;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.emspcr.EmspcrPackage#getPastMedicalHistorySection()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='PastMedicalHistorySectionTemplateId PastMedicalHistorySectionCode PastMedicalHistorySectionCodeP PastMedicalHistorySectionTitle PastMedicalHistorySectionText PastMedicalHistorySectionExistenceOfHistoryOfCondition PastMedicalHistorySectionHistoryOfCondition PastMedicalHistorySectionHistoryOfProceduresOrganizer' templateId.root='2.16.840.1.113883.17.3.10.1.19' code.code='67842-5' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='EMS Past Medical History Section' title.mixed='EMS Past Medical History'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='PastMedicalHistorySectionTemplateId PastMedicalHistorySectionCode PastMedicalHistorySectionCodeP PastMedicalHistorySectionTitle PastMedicalHistorySectionText PastMedicalHistorySectionExistenceOfHistoryOfCondition PastMedicalHistorySectionHistoryOfCondition' templateId.root='2.16.840.1.113883.17.3.10.1.19' code.code='67842-5' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='EMS Past Medical History Section' title.mixed='EMS Past Medical History'"
  * @generated
  */
 public interface PastMedicalHistorySection extends Section {
@@ -109,23 +110,10 @@ public interface PastMedicalHistorySection extends Section {
 	* @param diagnostics The chain of diagnostics to which problems are to be appended.
 	* @param context The cache of context-specific information.
 	* <!-- end-model-doc -->
-	* @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entry->one(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(emspcr::HistoryOfCondition) and entry.typeCode = vocab::x_ActRelationshipEntry::DRIV)'"
+	* @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entry->exists(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(emspcr::HistoryOfCondition) and entry.typeCode = vocab::x_ActRelationshipEntry::DRIV)'"
 	* @generated
 	*/
 	boolean validatePastMedicalHistorySectionHistoryOfCondition(DiagnosticChain diagnostics, Map<Object, Object> context);
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entry->one(entry : cda::Entry | not entry.organizer.oclIsUndefined() and entry.organizer.oclIsKindOf(emspcr::HistoryOfProceduresOrganizer) and entry.typeCode = vocab::x_ActRelationshipEntry::DRIV)'"
-	* @generated
-	*/
-	boolean validatePastMedicalHistorySectionHistoryOfProceduresOrganizer(DiagnosticChain diagnostics,
-			Map<Object, Object> context);
 
 	/**
 	* <!-- begin-user-doc -->
@@ -138,27 +126,18 @@ public interface PastMedicalHistorySection extends Section {
 
 	/**
 	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	* <!-- end-user-doc -->
 	* @model kind="operation" required="true" ordered="false"
-	*        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(emspcr::HistoryOfCondition))->asSequence()->any(true).oclAsType(emspcr::HistoryOfCondition)'"
+	*        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(emspcr::HistoryOfCondition)).oclAsType(emspcr::HistoryOfCondition)'"
 	* @generated
 	*/
-	HistoryOfCondition getHistoryOfCondition();
+	EList<HistoryOfCondition> getHistoryOfConditions();
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @model kind="operation" required="true" ordered="false"
-	*        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getOrganizers()->select(organizer : cda::Organizer | not organizer.oclIsUndefined() and organizer.oclIsKindOf(emspcr::HistoryOfProceduresOrganizer))->asSequence()->any(true).oclAsType(emspcr::HistoryOfProceduresOrganizer)'"
-	* @generated
-	*/
-	HistoryOfProceduresOrganizer getHistoryOfProceduresOrganizer();
-
-	/**
-	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public PastMedicalHistorySection init();
 
 	/**

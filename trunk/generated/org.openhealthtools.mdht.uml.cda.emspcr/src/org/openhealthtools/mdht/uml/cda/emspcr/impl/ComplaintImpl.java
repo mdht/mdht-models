@@ -55,38 +55,36 @@ public class ComplaintImpl extends ObservationImpl implements Complaint {
 
 	/**
 	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	* <!-- end-user-doc -->
 	* @generated
 	*/
-	public boolean validateComplaintComplaintDurationRelationship(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return ComplaintOperations.validateComplaintComplaintDurationRelationship(this, diagnostics, context);
+	public boolean validateComplaintDurationRelationship(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ComplaintOperations.validateComplaintDurationRelationship(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	public boolean validateComplaintComplaintTypeRelationship(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ComplaintOperations.validateComplaintComplaintTypeRelationship(this, diagnostics, context);
+	 * @generated
+	 */
+	public boolean validateComplaintTypeRelationship(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ComplaintOperations.validateComplaintTypeRelationship(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	public boolean validateComplaintComplaintOrganSystemRelationship(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return ComplaintOperations.validateComplaintComplaintOrganSystemRelationship(this, diagnostics, context);
+	 * @generated
+	 */
+	public boolean validateComplaintOrganSystemRelationship(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ComplaintOperations.validateComplaintOrganSystemRelationship(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateComplaintTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ComplaintOperations.validateComplaintTemplateId(this, diagnostics, context);
 	}

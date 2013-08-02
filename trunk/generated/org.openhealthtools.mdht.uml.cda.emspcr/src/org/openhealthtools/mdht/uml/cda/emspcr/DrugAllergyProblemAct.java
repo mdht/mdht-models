@@ -26,8 +26,8 @@ import org.openhealthtools.mdht.uml.cda.consol.AllergyProblemAct;
  *
  * @see org.openhealthtools.mdht.uml.cda.emspcr.EmspcrPackage#getDrugAllergyProblemAct()
  * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='DrugAllergyProblemActParticipant1 DrugAllergyProblemActTemplateId' templateId.root='2.16.840.1.1133883.17.3.10.1.48'"
- *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrDrugAllergyProblemActDrugAllergyParticipation constraints.validation.error='DrugAllergyParticipationDrugAllergyParticipantRole'"
- *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrDrugAllergyProblemActDrugAllergyParticipationDrugAllergyParticipantRole constraints.validation.error='DrugAllergyParticipantRoleDrugAllergyEntity'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrDrugAllergyProblemActDrugAllergyParticipation constraints.validation.error='DrugAllergyProblemActDrugAllergyParticipationDrugAllergyParticipantRole'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrDrugAllergyProblemActDrugAllergyParticipationDrugAllergyParticipantRole constraints.validation.error='DrugAllergyProblemActDrugAllergyParticipationDrugAllergyParticipantRoleDrugAllergyEntity'"
  * @generated
  */
 public interface DrugAllergyProblemAct extends AllergyProblemAct {

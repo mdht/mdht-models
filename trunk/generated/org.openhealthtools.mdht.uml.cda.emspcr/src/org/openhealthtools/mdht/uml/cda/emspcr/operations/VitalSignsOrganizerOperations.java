@@ -18,6 +18,7 @@ import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
 
 import org.openhealthtools.mdht.uml.cda.emspcr.EmspcrPackage;
+import org.openhealthtools.mdht.uml.cda.emspcr.EmspcrPlugin;
 import org.openhealthtools.mdht.uml.cda.emspcr.VitalSignsOrganizer;
 
 import org.openhealthtools.mdht.uml.cda.emspcr.util.EmspcrValidator;
@@ -30,13 +31,13 @@ import org.openhealthtools.mdht.uml.cda.emspcr.util.EmspcrValidator;
  * <p>
  * The following operations are supported:
  * <ul>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.emspcr.VitalSignsOrganizer#validateEmspcrVitalSignsOrganizerEmspcrVitalSignsOrganizerSystolicBloodPressureComponent(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Emspcr Vital Signs Organizer Emspcr Vital Signs Organizer Systolic Blood Pressure Component</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.emspcr.VitalSignsOrganizer#validateEmspcrVitalSignsOrganizerEmspcrVitalSignsOrganizerDiastolicBloodPressureComponent(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Emspcr Vital Signs Organizer Emspcr Vital Signs Organizer Diastolic Blood Pressure Component</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.emspcr.VitalSignsOrganizer#validateEmspcrVitalSignsOrganizerEmspcrVitalSignsOrganizerHeartRateComponent(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Emspcr Vital Signs Organizer Emspcr Vital Signs Organizer Heart Rate Component</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.emspcr.VitalSignsOrganizer#validateEmspcrVitalSignsOrganizerEmspcrVitalSignsOrganizerRespiratoryRateComponent(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Emspcr Vital Signs Organizer Emspcr Vital Signs Organizer Respiratory Rate Component</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.emspcr.VitalSignsOrganizer#validateEmspcrVitalSignsOrganizerEmspcrVitalSignsOrganizerBodyTemperatureComponent(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Emspcr Vital Signs Organizer Emspcr Vital Signs Organizer Body Temperature Component</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.emspcr.VitalSignsOrganizer#validateEmspcrVitalSignsOrganizerEmspcrVitalSignsOrganizerOxygenSaturationComponent(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Emspcr Vital Signs Organizer Emspcr Vital Signs Organizer Oxygen Saturation Component</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.emspcr.VitalSignsOrganizer#validateEmspcrVitalSignsOrganizerEffectiveTime(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Emspcr Vital Signs Organizer Effective Time</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.emspcr.VitalSignsOrganizer#validateEMSPCRVitalSignsOrganizerSystolicBloodPressureComponent(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate EMSPCR Vital Signs Organizer Systolic Blood Pressure Component</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.emspcr.VitalSignsOrganizer#validateEMSPCRVitalSignsOrganizerDiastolicBloodPressureComponent(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate EMSPCR Vital Signs Organizer Diastolic Blood Pressure Component</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.emspcr.VitalSignsOrganizer#validateEMSPCRVitalSignsOrganizerHeartRateComponent(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate EMSPCR Vital Signs Organizer Heart Rate Component</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.emspcr.VitalSignsOrganizer#validateEMSPCRVitalSignsOrganizerRespiratoryRateComponent(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate EMSPCR Vital Signs Organizer Respiratory Rate Component</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.emspcr.VitalSignsOrganizer#validateEMSPCRVitalSignsOrganizerBodyTemperatureComponent(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate EMSPCR Vital Signs Organizer Body Temperature Component</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.emspcr.VitalSignsOrganizer#validateEMSPCRVitalSignsOrganizerOxygenSaturationComponent(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate EMSPCR Vital Signs Organizer Oxygen Saturation Component</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.emspcr.VitalSignsOrganizer#validateEMSPCRVitalSignsOrganizerEffectiveTime(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate EMSPCR Vital Signs Organizer Effective Time</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.emspcr.VitalSignsOrganizer#validateVitalSignsOrganizerTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Vital Signs Organizer Template Id</em>}</li>
  * </ul>
  * </p>
@@ -55,62 +56,58 @@ public class VitalSignsOrganizerOperations extends
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateEmspcrVitalSignsOrganizerEmspcrVitalSignsOrganizerSystolicBloodPressureComponent(VitalSignsOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Emspcr Vital Signs Organizer Emspcr Vital Signs Organizer Systolic Blood Pressure Component</em>}' operation.
+	* The cached OCL expression body for the '{@link #validateEMSPCRVitalSignsOrganizerSystolicBloodPressureComponent(VitalSignsOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate EMSPCR Vital Signs Organizer Systolic Blood Pressure Component</em>}' operation.
 	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @see #validateEmspcrVitalSignsOrganizerEmspcrVitalSignsOrganizerSystolicBloodPressureComponent(VitalSignsOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* <!-- end-user-doc -->
+	* @see #validateEMSPCRVitalSignsOrganizerSystolicBloodPressureComponent(VitalSignsOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	* @generated
 	* @ordered
 	*/
-	protected static final String VALIDATE_EMSPCR_VITAL_SIGNS_ORGANIZER_EMSPCR_VITAL_SIGNS_ORGANIZER_SYSTOLIC_BLOOD_PRESSURE_COMPONENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.component->one(component : cda::Component4 | not component.oclIsUndefined() and component.oclIsKindOf(cda::Component4))";
+	protected static final String VALIDATE_EMSPCR_VITAL_SIGNS_ORGANIZER_SYSTOLIC_BLOOD_PRESSURE_COMPONENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.component->one(component : cda::Component4 | not component.oclIsUndefined() and component.oclIsKindOf(cda::Component4))";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateEmspcrVitalSignsOrganizerEmspcrVitalSignsOrganizerSystolicBloodPressureComponent(VitalSignsOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Emspcr Vital Signs Organizer Emspcr Vital Signs Organizer Systolic Blood Pressure Component</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateEMSPCRVitalSignsOrganizerSystolicBloodPressureComponent(VitalSignsOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate EMSPCR Vital Signs Organizer Systolic Blood Pressure Component</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateEmspcrVitalSignsOrganizerEmspcrVitalSignsOrganizerSystolicBloodPressureComponent(VitalSignsOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateEMSPCRVitalSignsOrganizerSystolicBloodPressureComponent(VitalSignsOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 
-	protected static Constraint VALIDATE_EMSPCR_VITAL_SIGNS_ORGANIZER_EMSPCR_VITAL_SIGNS_ORGANIZER_SYSTOLIC_BLOOD_PRESSURE_COMPONENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static Constraint VALIDATE_EMSPCR_VITAL_SIGNS_ORGANIZER_SYSTOLIC_BLOOD_PRESSURE_COMPONENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param vitalSignsOrganizer The receiving '<em><b>Vital Signs Organizer</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param vitalSignsOrganizer The receiving '<em><b>Vital Signs Organizer</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 
-	public static boolean validateEmspcrVitalSignsOrganizerEmspcrVitalSignsOrganizerSystolicBloodPressureComponent(
+	public static boolean validateEMSPCRVitalSignsOrganizerSystolicBloodPressureComponent(
 			VitalSignsOrganizer vitalSignsOrganizer, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
-		if (VALIDATE_EMSPCR_VITAL_SIGNS_ORGANIZER_EMSPCR_VITAL_SIGNS_ORGANIZER_SYSTOLIC_BLOOD_PRESSURE_COMPONENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+		if (VALIDATE_EMSPCR_VITAL_SIGNS_ORGANIZER_SYSTOLIC_BLOOD_PRESSURE_COMPONENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.VITAL_SIGNS_ORGANIZER);
 			try {
-				VALIDATE_EMSPCR_VITAL_SIGNS_ORGANIZER_EMSPCR_VITAL_SIGNS_ORGANIZER_SYSTOLIC_BLOOD_PRESSURE_COMPONENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_EMSPCR_VITAL_SIGNS_ORGANIZER_EMSPCR_VITAL_SIGNS_ORGANIZER_SYSTOLIC_BLOOD_PRESSURE_COMPONENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_EMSPCR_VITAL_SIGNS_ORGANIZER_SYSTOLIC_BLOOD_PRESSURE_COMPONENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_EMSPCR_VITAL_SIGNS_ORGANIZER_SYSTOLIC_BLOOD_PRESSURE_COMPONENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(
-			VALIDATE_EMSPCR_VITAL_SIGNS_ORGANIZER_EMSPCR_VITAL_SIGNS_ORGANIZER_SYSTOLIC_BLOOD_PRESSURE_COMPONENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			VALIDATE_EMSPCR_VITAL_SIGNS_ORGANIZER_SYSTOLIC_BLOOD_PRESSURE_COMPONENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
 			vitalSignsOrganizer)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
+					Diagnostic.WARNING,
 					EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.VITAL_SIGNS_ORGANIZER__EMSPCR_VITAL_SIGNS_ORGANIZER_EMSPCR_VITAL_SIGNS_ORGANIZER_SYSTOLIC_BLOOD_PRESSURE_COMPONENT,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"EmspcrVitalSignsOrganizerEmspcrVitalSignsOrganizerSystolicBloodPressureComponent",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(vitalSignsOrganizer, context) }),
+					EmspcrValidator.VITAL_SIGNS_ORGANIZER__EMSPCR_VITAL_SIGNS_ORGANIZER_SYSTOLIC_BLOOD_PRESSURE_COMPONENT,
+					EmspcrPlugin.INSTANCE.getString("EMSPCRVitalSignsOrganizerSystolicBloodPressureComponent"),
 					new Object[] { vitalSignsOrganizer }));
 			}
 
@@ -120,62 +117,58 @@ public class VitalSignsOrganizerOperations extends
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateEmspcrVitalSignsOrganizerEmspcrVitalSignsOrganizerDiastolicBloodPressureComponent(VitalSignsOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Emspcr Vital Signs Organizer Emspcr Vital Signs Organizer Diastolic Blood Pressure Component</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateEMSPCRVitalSignsOrganizerDiastolicBloodPressureComponent(VitalSignsOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate EMSPCR Vital Signs Organizer Diastolic Blood Pressure Component</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateEmspcrVitalSignsOrganizerEmspcrVitalSignsOrganizerDiastolicBloodPressureComponent(VitalSignsOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
-	protected static final String VALIDATE_EMSPCR_VITAL_SIGNS_ORGANIZER_EMSPCR_VITAL_SIGNS_ORGANIZER_DIASTOLIC_BLOOD_PRESSURE_COMPONENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.component->one(component : cda::Component4 | not component.oclIsUndefined() and component.oclIsKindOf(cda::Component4))";
+	 * @see #validateEMSPCRVitalSignsOrganizerDiastolicBloodPressureComponent(VitalSignsOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String VALIDATE_EMSPCR_VITAL_SIGNS_ORGANIZER_DIASTOLIC_BLOOD_PRESSURE_COMPONENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.component->one(component : cda::Component4 | not component.oclIsUndefined() and component.oclIsKindOf(cda::Component4))";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateEmspcrVitalSignsOrganizerEmspcrVitalSignsOrganizerDiastolicBloodPressureComponent(VitalSignsOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Emspcr Vital Signs Organizer Emspcr Vital Signs Organizer Diastolic Blood Pressure Component</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateEMSPCRVitalSignsOrganizerDiastolicBloodPressureComponent(VitalSignsOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate EMSPCR Vital Signs Organizer Diastolic Blood Pressure Component</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateEmspcrVitalSignsOrganizerEmspcrVitalSignsOrganizerDiastolicBloodPressureComponent(VitalSignsOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateEMSPCRVitalSignsOrganizerDiastolicBloodPressureComponent(VitalSignsOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 
-	protected static Constraint VALIDATE_EMSPCR_VITAL_SIGNS_ORGANIZER_EMSPCR_VITAL_SIGNS_ORGANIZER_DIASTOLIC_BLOOD_PRESSURE_COMPONENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static Constraint VALIDATE_EMSPCR_VITAL_SIGNS_ORGANIZER_DIASTOLIC_BLOOD_PRESSURE_COMPONENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param vitalSignsOrganizer The receiving '<em><b>Vital Signs Organizer</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param vitalSignsOrganizer The receiving '<em><b>Vital Signs Organizer</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 
-	public static boolean validateEmspcrVitalSignsOrganizerEmspcrVitalSignsOrganizerDiastolicBloodPressureComponent(
+	public static boolean validateEMSPCRVitalSignsOrganizerDiastolicBloodPressureComponent(
 			VitalSignsOrganizer vitalSignsOrganizer, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
-		if (VALIDATE_EMSPCR_VITAL_SIGNS_ORGANIZER_EMSPCR_VITAL_SIGNS_ORGANIZER_DIASTOLIC_BLOOD_PRESSURE_COMPONENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+		if (VALIDATE_EMSPCR_VITAL_SIGNS_ORGANIZER_DIASTOLIC_BLOOD_PRESSURE_COMPONENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.VITAL_SIGNS_ORGANIZER);
 			try {
-				VALIDATE_EMSPCR_VITAL_SIGNS_ORGANIZER_EMSPCR_VITAL_SIGNS_ORGANIZER_DIASTOLIC_BLOOD_PRESSURE_COMPONENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_EMSPCR_VITAL_SIGNS_ORGANIZER_EMSPCR_VITAL_SIGNS_ORGANIZER_DIASTOLIC_BLOOD_PRESSURE_COMPONENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_EMSPCR_VITAL_SIGNS_ORGANIZER_DIASTOLIC_BLOOD_PRESSURE_COMPONENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_EMSPCR_VITAL_SIGNS_ORGANIZER_DIASTOLIC_BLOOD_PRESSURE_COMPONENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(
-			VALIDATE_EMSPCR_VITAL_SIGNS_ORGANIZER_EMSPCR_VITAL_SIGNS_ORGANIZER_DIASTOLIC_BLOOD_PRESSURE_COMPONENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			VALIDATE_EMSPCR_VITAL_SIGNS_ORGANIZER_DIASTOLIC_BLOOD_PRESSURE_COMPONENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
 			vitalSignsOrganizer)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
+					Diagnostic.WARNING,
 					EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.VITAL_SIGNS_ORGANIZER__EMSPCR_VITAL_SIGNS_ORGANIZER_EMSPCR_VITAL_SIGNS_ORGANIZER_DIASTOLIC_BLOOD_PRESSURE_COMPONENT,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"EmspcrVitalSignsOrganizerEmspcrVitalSignsOrganizerDiastolicBloodPressureComponent",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(vitalSignsOrganizer, context) }),
+					EmspcrValidator.VITAL_SIGNS_ORGANIZER__EMSPCR_VITAL_SIGNS_ORGANIZER_DIASTOLIC_BLOOD_PRESSURE_COMPONENT,
+					EmspcrPlugin.INSTANCE.getString("EMSPCRVitalSignsOrganizerDiastolicBloodPressureComponent"),
 					new Object[] { vitalSignsOrganizer }));
 			}
 
@@ -185,62 +178,57 @@ public class VitalSignsOrganizerOperations extends
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateEmspcrVitalSignsOrganizerEmspcrVitalSignsOrganizerHeartRateComponent(VitalSignsOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Emspcr Vital Signs Organizer Emspcr Vital Signs Organizer Heart Rate Component</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateEMSPCRVitalSignsOrganizerHeartRateComponent(VitalSignsOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate EMSPCR Vital Signs Organizer Heart Rate Component</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateEmspcrVitalSignsOrganizerEmspcrVitalSignsOrganizerHeartRateComponent(VitalSignsOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
-	protected static final String VALIDATE_EMSPCR_VITAL_SIGNS_ORGANIZER_EMSPCR_VITAL_SIGNS_ORGANIZER_HEART_RATE_COMPONENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.component->one(component : cda::Component4 | not component.oclIsUndefined() and component.oclIsKindOf(cda::Component4))";
+	 * @see #validateEMSPCRVitalSignsOrganizerHeartRateComponent(VitalSignsOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String VALIDATE_EMSPCR_VITAL_SIGNS_ORGANIZER_HEART_RATE_COMPONENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.component->one(component : cda::Component4 | not component.oclIsUndefined() and component.oclIsKindOf(cda::Component4))";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateEmspcrVitalSignsOrganizerEmspcrVitalSignsOrganizerHeartRateComponent(VitalSignsOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Emspcr Vital Signs Organizer Emspcr Vital Signs Organizer Heart Rate Component</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateEMSPCRVitalSignsOrganizerHeartRateComponent(VitalSignsOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate EMSPCR Vital Signs Organizer Heart Rate Component</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateEmspcrVitalSignsOrganizerEmspcrVitalSignsOrganizerHeartRateComponent(VitalSignsOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateEMSPCRVitalSignsOrganizerHeartRateComponent(VitalSignsOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 
-	protected static Constraint VALIDATE_EMSPCR_VITAL_SIGNS_ORGANIZER_EMSPCR_VITAL_SIGNS_ORGANIZER_HEART_RATE_COMPONENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static Constraint VALIDATE_EMSPCR_VITAL_SIGNS_ORGANIZER_HEART_RATE_COMPONENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param vitalSignsOrganizer The receiving '<em><b>Vital Signs Organizer</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param vitalSignsOrganizer The receiving '<em><b>Vital Signs Organizer</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 
-	public static boolean validateEmspcrVitalSignsOrganizerEmspcrVitalSignsOrganizerHeartRateComponent(
-			VitalSignsOrganizer vitalSignsOrganizer, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateEMSPCRVitalSignsOrganizerHeartRateComponent(VitalSignsOrganizer vitalSignsOrganizer,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
-		if (VALIDATE_EMSPCR_VITAL_SIGNS_ORGANIZER_EMSPCR_VITAL_SIGNS_ORGANIZER_HEART_RATE_COMPONENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+		if (VALIDATE_EMSPCR_VITAL_SIGNS_ORGANIZER_HEART_RATE_COMPONENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.VITAL_SIGNS_ORGANIZER);
 			try {
-				VALIDATE_EMSPCR_VITAL_SIGNS_ORGANIZER_EMSPCR_VITAL_SIGNS_ORGANIZER_HEART_RATE_COMPONENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_EMSPCR_VITAL_SIGNS_ORGANIZER_EMSPCR_VITAL_SIGNS_ORGANIZER_HEART_RATE_COMPONENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_EMSPCR_VITAL_SIGNS_ORGANIZER_HEART_RATE_COMPONENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_EMSPCR_VITAL_SIGNS_ORGANIZER_HEART_RATE_COMPONENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(
-			VALIDATE_EMSPCR_VITAL_SIGNS_ORGANIZER_EMSPCR_VITAL_SIGNS_ORGANIZER_HEART_RATE_COMPONENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			VALIDATE_EMSPCR_VITAL_SIGNS_ORGANIZER_HEART_RATE_COMPONENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
 			vitalSignsOrganizer)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.VITAL_SIGNS_ORGANIZER__EMSPCR_VITAL_SIGNS_ORGANIZER_EMSPCR_VITAL_SIGNS_ORGANIZER_HEART_RATE_COMPONENT,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"EmspcrVitalSignsOrganizerEmspcrVitalSignsOrganizerHeartRateComponent",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(vitalSignsOrganizer, context) }),
+					Diagnostic.WARNING, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.VITAL_SIGNS_ORGANIZER__EMSPCR_VITAL_SIGNS_ORGANIZER_HEART_RATE_COMPONENT,
+					EmspcrPlugin.INSTANCE.getString("EMSPCRVitalSignsOrganizerHeartRateComponent"),
 					new Object[] { vitalSignsOrganizer }));
 			}
 
@@ -250,62 +238,57 @@ public class VitalSignsOrganizerOperations extends
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateEmspcrVitalSignsOrganizerEmspcrVitalSignsOrganizerRespiratoryRateComponent(VitalSignsOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Emspcr Vital Signs Organizer Emspcr Vital Signs Organizer Respiratory Rate Component</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateEMSPCRVitalSignsOrganizerRespiratoryRateComponent(VitalSignsOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate EMSPCR Vital Signs Organizer Respiratory Rate Component</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateEmspcrVitalSignsOrganizerEmspcrVitalSignsOrganizerRespiratoryRateComponent(VitalSignsOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
-	protected static final String VALIDATE_EMSPCR_VITAL_SIGNS_ORGANIZER_EMSPCR_VITAL_SIGNS_ORGANIZER_RESPIRATORY_RATE_COMPONENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.component->one(component : cda::Component4 | not component.oclIsUndefined() and component.oclIsKindOf(cda::Component4))";
+	 * @see #validateEMSPCRVitalSignsOrganizerRespiratoryRateComponent(VitalSignsOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String VALIDATE_EMSPCR_VITAL_SIGNS_ORGANIZER_RESPIRATORY_RATE_COMPONENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.component->one(component : cda::Component4 | not component.oclIsUndefined() and component.oclIsKindOf(cda::Component4))";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateEmspcrVitalSignsOrganizerEmspcrVitalSignsOrganizerRespiratoryRateComponent(VitalSignsOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Emspcr Vital Signs Organizer Emspcr Vital Signs Organizer Respiratory Rate Component</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateEMSPCRVitalSignsOrganizerRespiratoryRateComponent(VitalSignsOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate EMSPCR Vital Signs Organizer Respiratory Rate Component</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateEmspcrVitalSignsOrganizerEmspcrVitalSignsOrganizerRespiratoryRateComponent(VitalSignsOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateEMSPCRVitalSignsOrganizerRespiratoryRateComponent(VitalSignsOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 
-	protected static Constraint VALIDATE_EMSPCR_VITAL_SIGNS_ORGANIZER_EMSPCR_VITAL_SIGNS_ORGANIZER_RESPIRATORY_RATE_COMPONENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static Constraint VALIDATE_EMSPCR_VITAL_SIGNS_ORGANIZER_RESPIRATORY_RATE_COMPONENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param vitalSignsOrganizer The receiving '<em><b>Vital Signs Organizer</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param vitalSignsOrganizer The receiving '<em><b>Vital Signs Organizer</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 
-	public static boolean validateEmspcrVitalSignsOrganizerEmspcrVitalSignsOrganizerRespiratoryRateComponent(
+	public static boolean validateEMSPCRVitalSignsOrganizerRespiratoryRateComponent(
 			VitalSignsOrganizer vitalSignsOrganizer, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
-		if (VALIDATE_EMSPCR_VITAL_SIGNS_ORGANIZER_EMSPCR_VITAL_SIGNS_ORGANIZER_RESPIRATORY_RATE_COMPONENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+		if (VALIDATE_EMSPCR_VITAL_SIGNS_ORGANIZER_RESPIRATORY_RATE_COMPONENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.VITAL_SIGNS_ORGANIZER);
 			try {
-				VALIDATE_EMSPCR_VITAL_SIGNS_ORGANIZER_EMSPCR_VITAL_SIGNS_ORGANIZER_RESPIRATORY_RATE_COMPONENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_EMSPCR_VITAL_SIGNS_ORGANIZER_EMSPCR_VITAL_SIGNS_ORGANIZER_RESPIRATORY_RATE_COMPONENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_EMSPCR_VITAL_SIGNS_ORGANIZER_RESPIRATORY_RATE_COMPONENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_EMSPCR_VITAL_SIGNS_ORGANIZER_RESPIRATORY_RATE_COMPONENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(
-			VALIDATE_EMSPCR_VITAL_SIGNS_ORGANIZER_EMSPCR_VITAL_SIGNS_ORGANIZER_RESPIRATORY_RATE_COMPONENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			VALIDATE_EMSPCR_VITAL_SIGNS_ORGANIZER_RESPIRATORY_RATE_COMPONENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
 			vitalSignsOrganizer)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.VITAL_SIGNS_ORGANIZER__EMSPCR_VITAL_SIGNS_ORGANIZER_EMSPCR_VITAL_SIGNS_ORGANIZER_RESPIRATORY_RATE_COMPONENT,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"EmspcrVitalSignsOrganizerEmspcrVitalSignsOrganizerRespiratoryRateComponent",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(vitalSignsOrganizer, context) }),
+					Diagnostic.WARNING, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.VITAL_SIGNS_ORGANIZER__EMSPCR_VITAL_SIGNS_ORGANIZER_RESPIRATORY_RATE_COMPONENT,
+					EmspcrPlugin.INSTANCE.getString("EMSPCRVitalSignsOrganizerRespiratoryRateComponent"),
 					new Object[] { vitalSignsOrganizer }));
 			}
 
@@ -315,62 +298,57 @@ public class VitalSignsOrganizerOperations extends
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateEmspcrVitalSignsOrganizerEmspcrVitalSignsOrganizerBodyTemperatureComponent(VitalSignsOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Emspcr Vital Signs Organizer Emspcr Vital Signs Organizer Body Temperature Component</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateEMSPCRVitalSignsOrganizerBodyTemperatureComponent(VitalSignsOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate EMSPCR Vital Signs Organizer Body Temperature Component</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateEmspcrVitalSignsOrganizerEmspcrVitalSignsOrganizerBodyTemperatureComponent(VitalSignsOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
-	protected static final String VALIDATE_EMSPCR_VITAL_SIGNS_ORGANIZER_EMSPCR_VITAL_SIGNS_ORGANIZER_BODY_TEMPERATURE_COMPONENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.component->one(component : cda::Component4 | not component.oclIsUndefined() and component.oclIsKindOf(cda::Component4))";
+	 * @see #validateEMSPCRVitalSignsOrganizerBodyTemperatureComponent(VitalSignsOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String VALIDATE_EMSPCR_VITAL_SIGNS_ORGANIZER_BODY_TEMPERATURE_COMPONENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.component->one(component : cda::Component4 | not component.oclIsUndefined() and component.oclIsKindOf(cda::Component4))";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateEmspcrVitalSignsOrganizerEmspcrVitalSignsOrganizerBodyTemperatureComponent(VitalSignsOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Emspcr Vital Signs Organizer Emspcr Vital Signs Organizer Body Temperature Component</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateEMSPCRVitalSignsOrganizerBodyTemperatureComponent(VitalSignsOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate EMSPCR Vital Signs Organizer Body Temperature Component</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateEmspcrVitalSignsOrganizerEmspcrVitalSignsOrganizerBodyTemperatureComponent(VitalSignsOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateEMSPCRVitalSignsOrganizerBodyTemperatureComponent(VitalSignsOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 
-	protected static Constraint VALIDATE_EMSPCR_VITAL_SIGNS_ORGANIZER_EMSPCR_VITAL_SIGNS_ORGANIZER_BODY_TEMPERATURE_COMPONENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static Constraint VALIDATE_EMSPCR_VITAL_SIGNS_ORGANIZER_BODY_TEMPERATURE_COMPONENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param vitalSignsOrganizer The receiving '<em><b>Vital Signs Organizer</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param vitalSignsOrganizer The receiving '<em><b>Vital Signs Organizer</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 
-	public static boolean validateEmspcrVitalSignsOrganizerEmspcrVitalSignsOrganizerBodyTemperatureComponent(
+	public static boolean validateEMSPCRVitalSignsOrganizerBodyTemperatureComponent(
 			VitalSignsOrganizer vitalSignsOrganizer, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
-		if (VALIDATE_EMSPCR_VITAL_SIGNS_ORGANIZER_EMSPCR_VITAL_SIGNS_ORGANIZER_BODY_TEMPERATURE_COMPONENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+		if (VALIDATE_EMSPCR_VITAL_SIGNS_ORGANIZER_BODY_TEMPERATURE_COMPONENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.VITAL_SIGNS_ORGANIZER);
 			try {
-				VALIDATE_EMSPCR_VITAL_SIGNS_ORGANIZER_EMSPCR_VITAL_SIGNS_ORGANIZER_BODY_TEMPERATURE_COMPONENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_EMSPCR_VITAL_SIGNS_ORGANIZER_EMSPCR_VITAL_SIGNS_ORGANIZER_BODY_TEMPERATURE_COMPONENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_EMSPCR_VITAL_SIGNS_ORGANIZER_BODY_TEMPERATURE_COMPONENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_EMSPCR_VITAL_SIGNS_ORGANIZER_BODY_TEMPERATURE_COMPONENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(
-			VALIDATE_EMSPCR_VITAL_SIGNS_ORGANIZER_EMSPCR_VITAL_SIGNS_ORGANIZER_BODY_TEMPERATURE_COMPONENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			VALIDATE_EMSPCR_VITAL_SIGNS_ORGANIZER_BODY_TEMPERATURE_COMPONENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
 			vitalSignsOrganizer)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.VITAL_SIGNS_ORGANIZER__EMSPCR_VITAL_SIGNS_ORGANIZER_EMSPCR_VITAL_SIGNS_ORGANIZER_BODY_TEMPERATURE_COMPONENT,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"EmspcrVitalSignsOrganizerEmspcrVitalSignsOrganizerBodyTemperatureComponent",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(vitalSignsOrganizer, context) }),
+					Diagnostic.WARNING, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.VITAL_SIGNS_ORGANIZER__EMSPCR_VITAL_SIGNS_ORGANIZER_BODY_TEMPERATURE_COMPONENT,
+					EmspcrPlugin.INSTANCE.getString("EMSPCRVitalSignsOrganizerBodyTemperatureComponent"),
 					new Object[] { vitalSignsOrganizer }));
 			}
 
@@ -380,62 +358,57 @@ public class VitalSignsOrganizerOperations extends
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateEmspcrVitalSignsOrganizerEmspcrVitalSignsOrganizerOxygenSaturationComponent(VitalSignsOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Emspcr Vital Signs Organizer Emspcr Vital Signs Organizer Oxygen Saturation Component</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateEMSPCRVitalSignsOrganizerOxygenSaturationComponent(VitalSignsOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate EMSPCR Vital Signs Organizer Oxygen Saturation Component</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateEmspcrVitalSignsOrganizerEmspcrVitalSignsOrganizerOxygenSaturationComponent(VitalSignsOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
-	protected static final String VALIDATE_EMSPCR_VITAL_SIGNS_ORGANIZER_EMSPCR_VITAL_SIGNS_ORGANIZER_OXYGEN_SATURATION_COMPONENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.component->one(component : cda::Component4 | not component.oclIsUndefined() and component.oclIsKindOf(cda::Component4))";
+	 * @see #validateEMSPCRVitalSignsOrganizerOxygenSaturationComponent(VitalSignsOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String VALIDATE_EMSPCR_VITAL_SIGNS_ORGANIZER_OXYGEN_SATURATION_COMPONENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.component->one(component : cda::Component4 | not component.oclIsUndefined() and component.oclIsKindOf(cda::Component4))";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateEmspcrVitalSignsOrganizerEmspcrVitalSignsOrganizerOxygenSaturationComponent(VitalSignsOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Emspcr Vital Signs Organizer Emspcr Vital Signs Organizer Oxygen Saturation Component</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateEMSPCRVitalSignsOrganizerOxygenSaturationComponent(VitalSignsOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate EMSPCR Vital Signs Organizer Oxygen Saturation Component</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateEmspcrVitalSignsOrganizerEmspcrVitalSignsOrganizerOxygenSaturationComponent(VitalSignsOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateEMSPCRVitalSignsOrganizerOxygenSaturationComponent(VitalSignsOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 
-	protected static Constraint VALIDATE_EMSPCR_VITAL_SIGNS_ORGANIZER_EMSPCR_VITAL_SIGNS_ORGANIZER_OXYGEN_SATURATION_COMPONENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static Constraint VALIDATE_EMSPCR_VITAL_SIGNS_ORGANIZER_OXYGEN_SATURATION_COMPONENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param vitalSignsOrganizer The receiving '<em><b>Vital Signs Organizer</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param vitalSignsOrganizer The receiving '<em><b>Vital Signs Organizer</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 
-	public static boolean validateEmspcrVitalSignsOrganizerEmspcrVitalSignsOrganizerOxygenSaturationComponent(
+	public static boolean validateEMSPCRVitalSignsOrganizerOxygenSaturationComponent(
 			VitalSignsOrganizer vitalSignsOrganizer, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
-		if (VALIDATE_EMSPCR_VITAL_SIGNS_ORGANIZER_EMSPCR_VITAL_SIGNS_ORGANIZER_OXYGEN_SATURATION_COMPONENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+		if (VALIDATE_EMSPCR_VITAL_SIGNS_ORGANIZER_OXYGEN_SATURATION_COMPONENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.VITAL_SIGNS_ORGANIZER);
 			try {
-				VALIDATE_EMSPCR_VITAL_SIGNS_ORGANIZER_EMSPCR_VITAL_SIGNS_ORGANIZER_OXYGEN_SATURATION_COMPONENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_EMSPCR_VITAL_SIGNS_ORGANIZER_EMSPCR_VITAL_SIGNS_ORGANIZER_OXYGEN_SATURATION_COMPONENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_EMSPCR_VITAL_SIGNS_ORGANIZER_OXYGEN_SATURATION_COMPONENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_EMSPCR_VITAL_SIGNS_ORGANIZER_OXYGEN_SATURATION_COMPONENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(
-			VALIDATE_EMSPCR_VITAL_SIGNS_ORGANIZER_EMSPCR_VITAL_SIGNS_ORGANIZER_OXYGEN_SATURATION_COMPONENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			VALIDATE_EMSPCR_VITAL_SIGNS_ORGANIZER_OXYGEN_SATURATION_COMPONENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
 			vitalSignsOrganizer)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.VITAL_SIGNS_ORGANIZER__EMSPCR_VITAL_SIGNS_ORGANIZER_EMSPCR_VITAL_SIGNS_ORGANIZER_OXYGEN_SATURATION_COMPONENT,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"EmspcrVitalSignsOrganizerEmspcrVitalSignsOrganizerOxygenSaturationComponent",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(vitalSignsOrganizer, context) }),
+					Diagnostic.WARNING, EmspcrValidator.DIAGNOSTIC_SOURCE,
+					EmspcrValidator.VITAL_SIGNS_ORGANIZER__EMSPCR_VITAL_SIGNS_ORGANIZER_OXYGEN_SATURATION_COMPONENT,
+					EmspcrPlugin.INSTANCE.getString("EMSPCRVitalSignsOrganizerOxygenSaturationComponent"),
 					new Object[] { vitalSignsOrganizer }));
 			}
 
@@ -445,20 +418,20 @@ public class VitalSignsOrganizerOperations extends
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateEmspcrVitalSignsOrganizerEffectiveTime(VitalSignsOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Emspcr Vital Signs Organizer Effective Time</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateEMSPCRVitalSignsOrganizerEffectiveTime(VitalSignsOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate EMSPCR Vital Signs Organizer Effective Time</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateEmspcrVitalSignsOrganizerEffectiveTime(VitalSignsOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateEMSPCRVitalSignsOrganizerEffectiveTime(VitalSignsOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_EMSPCR_VITAL_SIGNS_ORGANIZER_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.effectiveTime.oclIsUndefined() or self.effectiveTime.isNullFlavorUndefined()) implies (not self.effectiveTime.oclIsUndefined())";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateEmspcrVitalSignsOrganizerEffectiveTime(VitalSignsOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Emspcr Vital Signs Organizer Effective Time</em>}' invariant operation.
+	* The cached OCL invariant for the '{@link #validateEMSPCRVitalSignsOrganizerEffectiveTime(VitalSignsOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate EMSPCR Vital Signs Organizer Effective Time</em>}' invariant operation.
 	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateEmspcrVitalSignsOrganizerEffectiveTime(VitalSignsOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @see #validateEMSPCRVitalSignsOrganizerEffectiveTime(VitalSignsOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	* @generated
 	* @ordered
 	*/
@@ -467,7 +440,7 @@ public class VitalSignsOrganizerOperations extends
 
 	/**
 	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	* <!-- end-user-doc -->
 	* <!-- begin-model-doc -->
 	* @param vitalSignsOrganizer The receiving '<em><b>Vital Signs Organizer</b></em>' model object.
 	* @param diagnostics The chain of diagnostics to which problems are to be appended.
@@ -476,7 +449,7 @@ public class VitalSignsOrganizerOperations extends
 	* @generated
 	*/
 
-	public static boolean validateEmspcrVitalSignsOrganizerEffectiveTime(VitalSignsOrganizer vitalSignsOrganizer,
+	public static boolean validateEMSPCRVitalSignsOrganizerEffectiveTime(VitalSignsOrganizer vitalSignsOrganizer,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
 		if (VALIDATE_EMSPCR_VITAL_SIGNS_ORGANIZER_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
@@ -492,14 +465,9 @@ public class VitalSignsOrganizerOperations extends
 			vitalSignsOrganizer)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					EmspcrValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
 					EmspcrValidator.VITAL_SIGNS_ORGANIZER__EMSPCR_VITAL_SIGNS_ORGANIZER_EFFECTIVE_TIME,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"EmspcrVitalSignsOrganizerEffectiveTime",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(vitalSignsOrganizer, context) }),
+					EmspcrPlugin.INSTANCE.getString("EMSPCRVitalSignsOrganizerEffectiveTime"),
 					new Object[] { vitalSignsOrganizer }));
 			}
 
@@ -509,13 +477,13 @@ public class VitalSignsOrganizerOperations extends
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateVitalSignsOrganizerTemplateId(VitalSignsOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Vital Signs Organizer Template Id</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateVitalSignsOrganizerTemplateId(VitalSignsOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Vital Signs Organizer Template Id</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateVitalSignsOrganizerTemplateId(VitalSignsOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateVitalSignsOrganizerTemplateId(VitalSignsOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_VITAL_SIGNS_ORGANIZER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.1133883.17.3.10.1.28')";
 
 	/**

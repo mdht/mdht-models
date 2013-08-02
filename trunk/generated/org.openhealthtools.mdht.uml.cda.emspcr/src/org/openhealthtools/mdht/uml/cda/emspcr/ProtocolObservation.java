@@ -26,7 +26,7 @@ import org.openhealthtools.mdht.uml.cda.Observation;
  *
  * @see org.openhealthtools.mdht.uml.cda.emspcr.EmspcrPackage#getProtocolObservation()
  * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='ProtocolObservationTemplateId ProtocolObservationCode ProtocolObservationCodeP ProtocolObservationValue ProtocolObservationValueP ProtocolObservationMoodCode' templateId.root='2.16.840.1.1133883.17.3.10.1.93' code.code='67537-1' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='EMS protocol' constraints.validation.dependOn.ProtocolObservationCode='ProtocolObservationCodeP' value.codeSystem='2.16.840.1.113883.6.1' value.codeSystemName='LOINC' moodCode='EVN'"
- *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrProtocolObservationProtocolAgeCategoryRelationship constraints.validation.error='ProtocolAgeCategoryRelationshipProtocolAgeCategory'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrProtocolObservationProtocolAgeCategoryRelationship constraints.validation.error='ProtocolObservationProtocolAgeCategoryRelationshipProtocolAgeCategory'"
  * @generated
  */
 public interface ProtocolObservation extends Observation {

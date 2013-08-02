@@ -197,11 +197,6 @@ public class EmspcrAdapterFactory extends AdapterFactoryImpl {
 		}
 
 		@Override
-		public Adapter caseHistoryOfProceduresOrganizer(HistoryOfProceduresOrganizer object) {
-			return createHistoryOfProceduresOrganizerAdapter();
-		}
-
-		@Override
 		public Adapter caseSocialHistorySection(SocialHistorySection object) {
 			return createSocialHistorySectionAdapter();
 		}
@@ -650,6 +645,11 @@ public class EmspcrAdapterFactory extends AdapterFactoryImpl {
 		@Override
 		public Adapter caseDisasterType(DisasterType object) {
 			return createDisasterTypeAdapter();
+		}
+
+		@Override
+		public Adapter caseHistoryOfProceduresOrganizer(HistoryOfProceduresOrganizer object) {
+			return createHistoryOfProceduresOrganizerAdapter();
 		}
 
 		@Override

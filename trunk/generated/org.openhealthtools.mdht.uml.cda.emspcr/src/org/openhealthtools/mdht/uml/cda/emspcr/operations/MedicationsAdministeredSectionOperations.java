@@ -22,6 +22,7 @@ import org.eclipse.ocl.ecore.OCL;
 import org.eclipse.ocl.expressions.OCLExpression;
 
 import org.openhealthtools.mdht.uml.cda.emspcr.EmspcrPackage;
+import org.openhealthtools.mdht.uml.cda.emspcr.EmspcrPlugin;
 import org.openhealthtools.mdht.uml.cda.emspcr.MedicationAdministered;
 import org.openhealthtools.mdht.uml.cda.emspcr.MedicationsAdministeredSection;
 
@@ -35,10 +36,10 @@ import org.openhealthtools.mdht.uml.cda.emspcr.util.EmspcrValidator;
  * <p>
  * The following operations are supported:
  * <ul>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.emspcr.MedicationsAdministeredSection#validateEmspcrMedicationsAdministeredSectionCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Emspcr Medications Administered Section Code</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.emspcr.MedicationsAdministeredSection#validateEmspcrMedicationsAdministeredSectionTitle(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Emspcr Medications Administered Section Title</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.emspcr.MedicationsAdministeredSection#validateEmspcrMedicationsAdministeredSectionText(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Emspcr Medications Administered Section Text</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.emspcr.MedicationsAdministeredSection#validateEmspcrMedicationsAdministeredSectionMedicationAdministered(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Emspcr Medications Administered Section Medication Administered</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.emspcr.MedicationsAdministeredSection#validateEMSPCRMedicationsAdministeredSectionCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate EMSPCR Medications Administered Section Code</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.emspcr.MedicationsAdministeredSection#validateEMSPCRMedicationsAdministeredSectionTitle(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate EMSPCR Medications Administered Section Title</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.emspcr.MedicationsAdministeredSection#validateEMSPCRMedicationsAdministeredSectionText(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate EMSPCR Medications Administered Section Text</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.emspcr.MedicationsAdministeredSection#validateEMSPCRMedicationsAdministeredSectionMedicationAdministered(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate EMSPCR Medications Administered Section Medication Administered</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.emspcr.MedicationsAdministeredSection#getMedicationAdministered() <em>Get Medication Administered</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.emspcr.MedicationsAdministeredSection#validateMedicationsAdministeredSectionTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medications Administered Section Template Id</em>}</li>
  * </ul>
@@ -58,20 +59,20 @@ public class MedicationsAdministeredSectionOperations extends
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateEmspcrMedicationsAdministeredSectionCode(MedicationsAdministeredSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Emspcr Medications Administered Section Code</em>}' operation.
+	* The cached OCL expression body for the '{@link #validateEMSPCRMedicationsAdministeredSectionCode(MedicationsAdministeredSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate EMSPCR Medications Administered Section Code</em>}' operation.
 	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateEmspcrMedicationsAdministeredSectionCode(MedicationsAdministeredSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @see #validateEMSPCRMedicationsAdministeredSectionCode(MedicationsAdministeredSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	* @generated
 	* @ordered
 	*/
 	protected static final String VALIDATE_EMSPCR_MEDICATIONS_ADMINISTERED_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined())";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateEmspcrMedicationsAdministeredSectionCode(MedicationsAdministeredSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Emspcr Medications Administered Section Code</em>}' invariant operation.
+	* The cached OCL invariant for the '{@link #validateEMSPCRMedicationsAdministeredSectionCode(MedicationsAdministeredSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate EMSPCR Medications Administered Section Code</em>}' invariant operation.
 	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateEmspcrMedicationsAdministeredSectionCode(MedicationsAdministeredSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @see #validateEMSPCRMedicationsAdministeredSectionCode(MedicationsAdministeredSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	* @generated
 	* @ordered
 	*/
@@ -80,7 +81,7 @@ public class MedicationsAdministeredSectionOperations extends
 
 	/**
 	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	* <!-- end-user-doc -->
 	* <!-- begin-model-doc -->
 	* @param medicationsAdministeredSection The receiving '<em><b>Medications Administered Section</b></em>' model object.
 	* @param diagnostics The chain of diagnostics to which problems are to be appended.
@@ -89,7 +90,7 @@ public class MedicationsAdministeredSectionOperations extends
 	* @generated
 	*/
 
-	public static boolean validateEmspcrMedicationsAdministeredSectionCode(
+	public static boolean validateEMSPCRMedicationsAdministeredSectionCode(
 			MedicationsAdministeredSection medicationsAdministeredSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
@@ -108,12 +109,7 @@ public class MedicationsAdministeredSectionOperations extends
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
 					EmspcrValidator.MEDICATIONS_ADMINISTERED_SECTION__EMSPCR_MEDICATIONS_ADMINISTERED_SECTION_CODE,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"EmspcrMedicationsAdministeredSectionCode",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
-									medicationsAdministeredSection, context) }),
+					EmspcrPlugin.INSTANCE.getString("EMSPCRMedicationsAdministeredSectionCode"),
 					new Object[] { medicationsAdministeredSection }));
 			}
 
@@ -123,20 +119,20 @@ public class MedicationsAdministeredSectionOperations extends
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateEmspcrMedicationsAdministeredSectionTitle(MedicationsAdministeredSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Emspcr Medications Administered Section Title</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateEMSPCRMedicationsAdministeredSectionTitle(MedicationsAdministeredSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate EMSPCR Medications Administered Section Title</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateEmspcrMedicationsAdministeredSectionTitle(MedicationsAdministeredSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateEMSPCRMedicationsAdministeredSectionTitle(MedicationsAdministeredSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_EMSPCR_MEDICATIONS_ADMINISTERED_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.title.oclIsUndefined() or self.title.isNullFlavorUndefined()) implies (self.title.getText() = 'Medications Administered Section')";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateEmspcrMedicationsAdministeredSectionTitle(MedicationsAdministeredSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Emspcr Medications Administered Section Title</em>}' invariant operation.
+	* The cached OCL invariant for the '{@link #validateEMSPCRMedicationsAdministeredSectionTitle(MedicationsAdministeredSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate EMSPCR Medications Administered Section Title</em>}' invariant operation.
 	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateEmspcrMedicationsAdministeredSectionTitle(MedicationsAdministeredSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @see #validateEMSPCRMedicationsAdministeredSectionTitle(MedicationsAdministeredSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	* @generated
 	* @ordered
 	*/
@@ -145,7 +141,7 @@ public class MedicationsAdministeredSectionOperations extends
 
 	/**
 	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	* <!-- end-user-doc -->
 	* <!-- begin-model-doc -->
 	* @param medicationsAdministeredSection The receiving '<em><b>Medications Administered Section</b></em>' model object.
 	* @param diagnostics The chain of diagnostics to which problems are to be appended.
@@ -154,7 +150,7 @@ public class MedicationsAdministeredSectionOperations extends
 	* @generated
 	*/
 
-	public static boolean validateEmspcrMedicationsAdministeredSectionTitle(
+	public static boolean validateEMSPCRMedicationsAdministeredSectionTitle(
 			MedicationsAdministeredSection medicationsAdministeredSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
@@ -174,12 +170,7 @@ public class MedicationsAdministeredSectionOperations extends
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
 					EmspcrValidator.MEDICATIONS_ADMINISTERED_SECTION__EMSPCR_MEDICATIONS_ADMINISTERED_SECTION_TITLE,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"EmspcrMedicationsAdministeredSectionTitle",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
-									medicationsAdministeredSection, context) }),
+					EmspcrPlugin.INSTANCE.getString("EMSPCRMedicationsAdministeredSectionTitle"),
 					new Object[] { medicationsAdministeredSection }));
 			}
 
@@ -189,20 +180,20 @@ public class MedicationsAdministeredSectionOperations extends
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateEmspcrMedicationsAdministeredSectionText(MedicationsAdministeredSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Emspcr Medications Administered Section Text</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateEMSPCRMedicationsAdministeredSectionText(MedicationsAdministeredSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate EMSPCR Medications Administered Section Text</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateEmspcrMedicationsAdministeredSectionText(MedicationsAdministeredSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateEMSPCRMedicationsAdministeredSectionText(MedicationsAdministeredSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_EMSPCR_MEDICATIONS_ADMINISTERED_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "not self.text.oclIsUndefined()";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateEmspcrMedicationsAdministeredSectionText(MedicationsAdministeredSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Emspcr Medications Administered Section Text</em>}' invariant operation.
+	* The cached OCL invariant for the '{@link #validateEMSPCRMedicationsAdministeredSectionText(MedicationsAdministeredSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate EMSPCR Medications Administered Section Text</em>}' invariant operation.
 	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateEmspcrMedicationsAdministeredSectionText(MedicationsAdministeredSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @see #validateEMSPCRMedicationsAdministeredSectionText(MedicationsAdministeredSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	* @generated
 	* @ordered
 	*/
@@ -211,7 +202,7 @@ public class MedicationsAdministeredSectionOperations extends
 
 	/**
 	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	* <!-- end-user-doc -->
 	* <!-- begin-model-doc -->
 	* @param medicationsAdministeredSection The receiving '<em><b>Medications Administered Section</b></em>' model object.
 	* @param diagnostics The chain of diagnostics to which problems are to be appended.
@@ -220,7 +211,7 @@ public class MedicationsAdministeredSectionOperations extends
 	* @generated
 	*/
 
-	public static boolean validateEmspcrMedicationsAdministeredSectionText(
+	public static boolean validateEMSPCRMedicationsAdministeredSectionText(
 			MedicationsAdministeredSection medicationsAdministeredSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
@@ -239,12 +230,7 @@ public class MedicationsAdministeredSectionOperations extends
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
 					EmspcrValidator.MEDICATIONS_ADMINISTERED_SECTION__EMSPCR_MEDICATIONS_ADMINISTERED_SECTION_TEXT,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"EmspcrMedicationsAdministeredSectionText",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
-									medicationsAdministeredSection, context) }),
+					EmspcrPlugin.INSTANCE.getString("EMSPCRMedicationsAdministeredSectionText"),
 					new Object[] { medicationsAdministeredSection }));
 			}
 
@@ -254,20 +240,20 @@ public class MedicationsAdministeredSectionOperations extends
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateEmspcrMedicationsAdministeredSectionMedicationAdministered(MedicationsAdministeredSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Emspcr Medications Administered Section Medication Administered</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateEMSPCRMedicationsAdministeredSectionMedicationAdministered(MedicationsAdministeredSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate EMSPCR Medications Administered Section Medication Administered</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateEmspcrMedicationsAdministeredSectionMedicationAdministered(MedicationsAdministeredSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateEMSPCRMedicationsAdministeredSectionMedicationAdministered(MedicationsAdministeredSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_EMSPCR_MEDICATIONS_ADMINISTERED_SECTION_MEDICATION_ADMINISTERED__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->one(entry : cda::Entry | not entry.substanceAdministration.oclIsUndefined() and entry.substanceAdministration.oclIsKindOf(emspcr::MedicationAdministered) and entry.typeCode = vocab::x_ActRelationshipEntry::DRIV)";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateEmspcrMedicationsAdministeredSectionMedicationAdministered(MedicationsAdministeredSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Emspcr Medications Administered Section Medication Administered</em>}' invariant operation.
+	* The cached OCL invariant for the '{@link #validateEMSPCRMedicationsAdministeredSectionMedicationAdministered(MedicationsAdministeredSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate EMSPCR Medications Administered Section Medication Administered</em>}' invariant operation.
 	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateEmspcrMedicationsAdministeredSectionMedicationAdministered(MedicationsAdministeredSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @see #validateEMSPCRMedicationsAdministeredSectionMedicationAdministered(MedicationsAdministeredSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	* @generated
 	* @ordered
 	*/
@@ -276,7 +262,7 @@ public class MedicationsAdministeredSectionOperations extends
 
 	/**
 	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	* <!-- end-user-doc -->
 	* <!-- begin-model-doc -->
 	* @param medicationsAdministeredSection The receiving '<em><b>Medications Administered Section</b></em>' model object.
 	* @param diagnostics The chain of diagnostics to which problems are to be appended.
@@ -285,7 +271,7 @@ public class MedicationsAdministeredSectionOperations extends
 	* @generated
 	*/
 
-	public static boolean validateEmspcrMedicationsAdministeredSectionMedicationAdministered(
+	public static boolean validateEMSPCRMedicationsAdministeredSectionMedicationAdministered(
 			MedicationsAdministeredSection medicationsAdministeredSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
@@ -306,12 +292,7 @@ public class MedicationsAdministeredSectionOperations extends
 					Diagnostic.ERROR,
 					EmspcrValidator.DIAGNOSTIC_SOURCE,
 					EmspcrValidator.MEDICATIONS_ADMINISTERED_SECTION__EMSPCR_MEDICATIONS_ADMINISTERED_SECTION_MEDICATION_ADMINISTERED,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"EmspcrMedicationsAdministeredSectionMedicationAdministered",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
-									medicationsAdministeredSection, context) }),
+					EmspcrPlugin.INSTANCE.getString("EMSPCRMedicationsAdministeredSectionMedicationAdministered"),
 					new Object[] { medicationsAdministeredSection }));
 			}
 
@@ -321,13 +302,13 @@ public class MedicationsAdministeredSectionOperations extends
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #getMedicationAdministered(MedicationsAdministeredSection) <em>Get Medication Administered</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #getMedicationAdministered(MedicationsAdministeredSection) <em>Get Medication Administered</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #getMedicationAdministered(MedicationsAdministeredSection)
-	* @generated
-	* @ordered
-	*/
+	 * @see #getMedicationAdministered(MedicationsAdministeredSection)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String GET_MEDICATION_ADMINISTERED__EOCL_EXP = "self.getSubstanceAdministrations()->select(substanceAdministration : cda::SubstanceAdministration | not substanceAdministration.oclIsUndefined() and substanceAdministration.oclIsKindOf(emspcr::MedicationAdministered))->asSequence()->any(true).oclAsType(emspcr::MedicationAdministered)";
 
 	/**

@@ -77,20 +77,20 @@ public class MedicationAdministeredImpl extends MedicationActivityImpl implement
 
 	/**
 	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	* <!-- end-user-doc -->
 	* @generated
 	*/
-	public boolean validateMedicationAdministeredMedicationAdministeredResponseRelationship(
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return MedicationAdministeredOperations.validateMedicationAdministeredMedicationAdministeredResponseRelationship(
+	public boolean validateMedicationAdministeredResponseRelationship(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return MedicationAdministeredOperations.validateMedicationAdministeredResponseRelationship(
 			this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateMedicationAdministeredMedicationComplicationRelationship(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return MedicationAdministeredOperations.validateMedicationAdministeredMedicationComplicationRelationship(

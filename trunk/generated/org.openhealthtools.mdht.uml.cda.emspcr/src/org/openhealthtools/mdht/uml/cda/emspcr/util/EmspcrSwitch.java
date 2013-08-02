@@ -520,26 +520,6 @@ public class EmspcrSwitch<T> {
 				}
 				return result;
 			}
-			case EmspcrPackage.HISTORY_OF_PROCEDURES_ORGANIZER: {
-				HistoryOfProceduresOrganizer historyOfProceduresOrganizer = (HistoryOfProceduresOrganizer) theEObject;
-				T result = caseHistoryOfProceduresOrganizer(historyOfProceduresOrganizer);
-				if (result == null) {
-					result = caseOrganizer(historyOfProceduresOrganizer);
-				}
-				if (result == null) {
-					result = caseClinicalStatement(historyOfProceduresOrganizer);
-				}
-				if (result == null) {
-					result = caseAct(historyOfProceduresOrganizer);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(historyOfProceduresOrganizer);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
-				return result;
-			}
 			case EmspcrPackage.SOCIAL_HISTORY_SECTION: {
 				SocialHistorySection socialHistorySection = (SocialHistorySection) theEObject;
 				T result = caseSocialHistorySection(socialHistorySection);
@@ -2313,6 +2293,26 @@ public class EmspcrSwitch<T> {
 				}
 				if (result == null) {
 					result = caseInfrastructureRoot(disasterType);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
+			case EmspcrPackage.HISTORY_OF_PROCEDURES_ORGANIZER: {
+				HistoryOfProceduresOrganizer historyOfProceduresOrganizer = (HistoryOfProceduresOrganizer) theEObject;
+				T result = caseHistoryOfProceduresOrganizer(historyOfProceduresOrganizer);
+				if (result == null) {
+					result = caseOrganizer(historyOfProceduresOrganizer);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(historyOfProceduresOrganizer);
+				}
+				if (result == null) {
+					result = caseAct(historyOfProceduresOrganizer);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(historyOfProceduresOrganizer);
 				}
 				if (result == null) {
 					result = defaultCase(theEObject);

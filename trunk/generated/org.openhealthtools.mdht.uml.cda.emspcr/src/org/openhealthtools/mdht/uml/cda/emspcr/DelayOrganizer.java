@@ -26,11 +26,11 @@ import org.openhealthtools.mdht.uml.cda.Organizer;
  *
  * @see org.openhealthtools.mdht.uml.cda.emspcr.EmspcrPackage#getDelayOrganizer()
  * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='DelayOrganizerDispatchDelayRelationship DelayOrganizerResponseDelayRelationship DelayOrganizerSceneDelayRelationship DelayOrganizerTransportDelayRelationship DelayOrganizerTurnaoundDelayRelationship DelayOrganizerTemplateId' templateId.root='2.16.840.1.1133883.17.3.10.1.95'"
- *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrDelayOrganizerDispatchDelayRelationship constraints.validation.error='DispatchDelayRelationshipDispatchDelay'"
- *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrDelayOrganizerResponseDelayRelationship constraints.validation.error='ResponseDelayRelationshipResponseDelay'"
- *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrDelayOrganizerSceneDelayRelationship constraints.validation.error='SceneDelayRelationshipSceneDelay'"
- *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrDelayOrganizerTransportDelayRelationship constraints.validation.error='TransportDelayRelationshipTransportDelay'"
- *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrDelayOrganizerTurnaoundDelayRelationship constraints.validation.error='TurnaoundDelayRelationshipTurnaroundDelay'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrDelayOrganizerDispatchDelayRelationship constraints.validation.error='DelayOrganizerDispatchDelayRelationshipDispatchDelay'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrDelayOrganizerResponseDelayRelationship constraints.validation.error='DelayOrganizerResponseDelayRelationshipResponseDelay'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrDelayOrganizerSceneDelayRelationship constraints.validation.error='DelayOrganizerSceneDelayRelationshipSceneDelay'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrDelayOrganizerTransportDelayRelationship constraints.validation.error='DelayOrganizerTransportDelayRelationshipTransportDelay'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrDelayOrganizerTurnaoundDelayRelationship constraints.validation.error='DelayOrganizerTurnaoundDelayRelationshipTurnaroundDelay'"
  * @generated
  */
 public interface DelayOrganizer extends Organizer {

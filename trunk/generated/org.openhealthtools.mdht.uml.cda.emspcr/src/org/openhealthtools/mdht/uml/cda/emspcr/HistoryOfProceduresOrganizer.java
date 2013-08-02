@@ -26,9 +26,9 @@ import org.openhealthtools.mdht.uml.cda.Organizer;
  *
  * @see org.openhealthtools.mdht.uml.cda.emspcr.EmspcrPackage#getHistoryOfProceduresOrganizer()
  * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='HistoryOfProceduresOrganizerExistenceOfHistoryOfProcedureComponent HistoryOfProceduresOrganizerTemplateId' constraints.validation.info='HistoryOfProceduresOrganizerHistoryOfProceduresComponent' templateId.root='2.16.840.1.1133883.17.3.10.1.62'"
- *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrHistoryOfProceduresOrganizerExistenceOfHistoryOfProcedureComponent constraints.validation.error='ExistenceOfHistoryOfProcedureComponentProcedure'"
- *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrHistoryOfProceduresOrganizerHistoryOfProceduresComponent constraints.validation.error='HistoryOfProceduresComponentHistoryOfProcedure'"
- *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrHistoryOfProceduresOrganizerHistoryOfProceduresComponentHistoryOfProcedure code.codeSystem='2.16.840.1.113883.6.4' code.codeSystemName='ICD-10 PCS' constraints.validation.error='HistoryOfProcedureCode'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrHistoryOfProceduresOrganizerExistenceOfHistoryOfProcedureComponent constraints.validation.error='HistoryOfProceduresOrganizerExistenceOfHistoryOfProcedureComponentProcedure'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrHistoryOfProceduresOrganizerHistoryOfProceduresComponent constraints.validation.error='HistoryOfProceduresOrganizerHistoryOfProceduresComponentHistoryOfProcedure'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrHistoryOfProceduresOrganizerHistoryOfProceduresComponentHistoryOfProcedure code.codeSystem='2.16.840.1.113883.6.4' code.codeSystemName='ICD-10 PCS' constraints.validation.error='HistoryOfProceduresOrganizerHistoryOfProceduresComponentHistoryOfProcedureCode'"
  * @generated
  */
 public interface HistoryOfProceduresOrganizer extends Organizer {

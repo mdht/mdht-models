@@ -56,53 +56,53 @@ public class MedicationsAdministeredSectionImpl extends
 
 	/**
 	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	* <!-- end-user-doc -->
 	* @generated
 	*/
-	public boolean validateEmspcrMedicationsAdministeredSectionCode(DiagnosticChain diagnostics,
+	public boolean validateEMSPCRMedicationsAdministeredSectionCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return MedicationsAdministeredSectionOperations.validateEmspcrMedicationsAdministeredSectionCode(
+		return MedicationsAdministeredSectionOperations.validateEMSPCRMedicationsAdministeredSectionCode(
 			this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	public boolean validateEmspcrMedicationsAdministeredSectionTitle(DiagnosticChain diagnostics,
+	 * @generated
+	 */
+	public boolean validateEMSPCRMedicationsAdministeredSectionTitle(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return MedicationsAdministeredSectionOperations.validateEmspcrMedicationsAdministeredSectionTitle(
+		return MedicationsAdministeredSectionOperations.validateEMSPCRMedicationsAdministeredSectionTitle(
 			this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	public boolean validateEmspcrMedicationsAdministeredSectionText(DiagnosticChain diagnostics,
+	 * @generated
+	 */
+	public boolean validateEMSPCRMedicationsAdministeredSectionText(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return MedicationsAdministeredSectionOperations.validateEmspcrMedicationsAdministeredSectionText(
+		return MedicationsAdministeredSectionOperations.validateEMSPCRMedicationsAdministeredSectionText(
 			this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	public boolean validateEmspcrMedicationsAdministeredSectionMedicationAdministered(DiagnosticChain diagnostics,
+	 * @generated
+	 */
+	public boolean validateEMSPCRMedicationsAdministeredSectionMedicationAdministered(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return MedicationsAdministeredSectionOperations.validateEmspcrMedicationsAdministeredSectionMedicationAdministered(
+		return MedicationsAdministeredSectionOperations.validateEMSPCRMedicationsAdministeredSectionMedicationAdministered(
 			this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public MedicationAdministered getMedicationAdministered() {
 		return MedicationsAdministeredSectionOperations.getMedicationAdministered(this);
 	}

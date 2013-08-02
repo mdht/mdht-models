@@ -181,7 +181,7 @@ public class InjuryCauseCategoryOperations extends ClinicalStatementOperations {
 	*/
 	protected static final String VALIDATE_INJURY_CAUSE_CATEGORY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and "
 			+ "let value : datatypes::CD = element.oclAsType(datatypes::CD) in "
-			+ "value.codeSystem = '2.16.840.1.113883.6.3.1'))";
+			+ "value.codeSystem = '2.16.840.1.113883.6.90'))";
 
 	/**
 	* The cached OCL invariant for the '{@link #validateInjuryCauseCategoryValue(InjuryCauseCategory, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Injury Cause Category Value</em>}' invariant operation.

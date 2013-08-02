@@ -338,9 +338,9 @@
       </genOperations>
     </genClasses>
     <genClasses xsi:type="genmodel:GenClass" ecoreClass="emspcr.ecore#//CurrentMedication">
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="emspcr.ecore#//CurrentMedication/CurrentMedicationCurrentMedicationConsumable">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emspcr.ecore#//CurrentMedication/CurrentMedicationCurrentMedicationConsumable/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emspcr.ecore#//CurrentMedication/CurrentMedicationCurrentMedicationConsumable/context"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="emspcr.ecore#//CurrentMedication/CurrentMedicationConsumable">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emspcr.ecore#//CurrentMedication/CurrentMedicationConsumable/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emspcr.ecore#//CurrentMedication/CurrentMedicationConsumable/context"/>
       </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="emspcr.ecore#//CurrentMedication/CurrentMedicationDoseQuantity">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emspcr.ecore#//CurrentMedication/CurrentMedicationDoseQuantity/diagnostics"/>
@@ -461,7 +461,7 @@
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emspcr.ecore#//AdvanceDirectivesSection/AdvanceDirectivesSectionAdvancedDirectiveObservation/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emspcr.ecore#//AdvanceDirectivesSection/AdvanceDirectivesSectionAdvancedDirectiveObservation/context"/>
       </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="emspcr.ecore#//AdvanceDirectivesSection/getAdvancedDirectiveObservation"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="emspcr.ecore#//AdvanceDirectivesSection/getAdvancedDirectiveObservations"/>
     </genClasses>
     <genClasses xsi:type="genmodel:GenClass" ecoreClass="emspcr.ecore#//AdvancedDirectiveObservation">
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="emspcr.ecore#//AdvancedDirectiveObservation/AdvancedDirectiveObservationTemplateId">
@@ -623,13 +623,8 @@
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emspcr.ecore#//PastMedicalHistorySection/PastMedicalHistorySectionHistoryOfCondition/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emspcr.ecore#//PastMedicalHistorySection/PastMedicalHistorySectionHistoryOfCondition/context"/>
       </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="emspcr.ecore#//PastMedicalHistorySection/PastMedicalHistorySectionHistoryOfProceduresOrganizer">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emspcr.ecore#//PastMedicalHistorySection/PastMedicalHistorySectionHistoryOfProceduresOrganizer/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emspcr.ecore#//PastMedicalHistorySection/PastMedicalHistorySectionHistoryOfProceduresOrganizer/context"/>
-      </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="emspcr.ecore#//PastMedicalHistorySection/getExistenceOfHistoryOfCondition"/>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="emspcr.ecore#//PastMedicalHistorySection/getHistoryOfCondition"/>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="emspcr.ecore#//PastMedicalHistorySection/getHistoryOfProceduresOrganizer"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="emspcr.ecore#//PastMedicalHistorySection/getHistoryOfConditions"/>
     </genClasses>
     <genClasses xsi:type="genmodel:GenClass" ecoreClass="emspcr.ecore#//ExistenceOfHistoryOfCondition">
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="emspcr.ecore#//ExistenceOfHistoryOfCondition/ExistenceOfHistoryOfConditionTemplateId">
@@ -673,20 +668,6 @@
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="emspcr.ecore#//HistoryOfCondition/HistoryOfConditionMoodCode">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emspcr.ecore#//HistoryOfCondition/HistoryOfConditionMoodCode/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emspcr.ecore#//HistoryOfCondition/HistoryOfConditionMoodCode/context"/>
-      </genOperations>
-    </genClasses>
-    <genClasses xsi:type="genmodel:GenClass" ecoreClass="emspcr.ecore#//HistoryOfProceduresOrganizer">
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="emspcr.ecore#//HistoryOfProceduresOrganizer/HistoryOfProceduresOrganizerExistenceOfHistoryOfProcedureComponent">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emspcr.ecore#//HistoryOfProceduresOrganizer/HistoryOfProceduresOrganizerExistenceOfHistoryOfProcedureComponent/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emspcr.ecore#//HistoryOfProceduresOrganizer/HistoryOfProceduresOrganizerExistenceOfHistoryOfProcedureComponent/context"/>
-      </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="emspcr.ecore#//HistoryOfProceduresOrganizer/HistoryOfProceduresOrganizerHistoryOfProceduresComponent">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emspcr.ecore#//HistoryOfProceduresOrganizer/HistoryOfProceduresOrganizerHistoryOfProceduresComponent/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emspcr.ecore#//HistoryOfProceduresOrganizer/HistoryOfProceduresOrganizerHistoryOfProceduresComponent/context"/>
-      </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="emspcr.ecore#//HistoryOfProceduresOrganizer/HistoryOfProceduresOrganizerTemplateId">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emspcr.ecore#//HistoryOfProceduresOrganizer/HistoryOfProceduresOrganizerTemplateId/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emspcr.ecore#//HistoryOfProceduresOrganizer/HistoryOfProceduresOrganizerTemplateId/context"/>
       </genOperations>
     </genClasses>
     <genClasses xsi:type="genmodel:GenClass" ecoreClass="emspcr.ecore#//SocialHistorySection">
@@ -1017,21 +998,21 @@
       </genOperations>
     </genClasses>
     <genClasses xsi:type="genmodel:GenClass" ecoreClass="emspcr.ecore#//MedicationsAdministeredSection">
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="emspcr.ecore#//MedicationsAdministeredSection/emspcrMedicationsAdministeredSectionCode">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emspcr.ecore#//MedicationsAdministeredSection/emspcrMedicationsAdministeredSectionCode/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emspcr.ecore#//MedicationsAdministeredSection/emspcrMedicationsAdministeredSectionCode/context"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="emspcr.ecore#//MedicationsAdministeredSection/EMSPCRMedicationsAdministeredSectionCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emspcr.ecore#//MedicationsAdministeredSection/EMSPCRMedicationsAdministeredSectionCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emspcr.ecore#//MedicationsAdministeredSection/EMSPCRMedicationsAdministeredSectionCode/context"/>
       </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="emspcr.ecore#//MedicationsAdministeredSection/emspcrMedicationsAdministeredSectionTitle">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emspcr.ecore#//MedicationsAdministeredSection/emspcrMedicationsAdministeredSectionTitle/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emspcr.ecore#//MedicationsAdministeredSection/emspcrMedicationsAdministeredSectionTitle/context"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="emspcr.ecore#//MedicationsAdministeredSection/EMSPCRMedicationsAdministeredSectionTitle">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emspcr.ecore#//MedicationsAdministeredSection/EMSPCRMedicationsAdministeredSectionTitle/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emspcr.ecore#//MedicationsAdministeredSection/EMSPCRMedicationsAdministeredSectionTitle/context"/>
       </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="emspcr.ecore#//MedicationsAdministeredSection/emspcrMedicationsAdministeredSectionText">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emspcr.ecore#//MedicationsAdministeredSection/emspcrMedicationsAdministeredSectionText/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emspcr.ecore#//MedicationsAdministeredSection/emspcrMedicationsAdministeredSectionText/context"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="emspcr.ecore#//MedicationsAdministeredSection/EMSPCRMedicationsAdministeredSectionText">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emspcr.ecore#//MedicationsAdministeredSection/EMSPCRMedicationsAdministeredSectionText/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emspcr.ecore#//MedicationsAdministeredSection/EMSPCRMedicationsAdministeredSectionText/context"/>
       </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="emspcr.ecore#//MedicationsAdministeredSection/emspcrMedicationsAdministeredSectionMedicationAdministered">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emspcr.ecore#//MedicationsAdministeredSection/emspcrMedicationsAdministeredSectionMedicationAdministered/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emspcr.ecore#//MedicationsAdministeredSection/emspcrMedicationsAdministeredSectionMedicationAdministered/context"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="emspcr.ecore#//MedicationsAdministeredSection/EMSPCRMedicationsAdministeredSectionMedicationAdministered">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emspcr.ecore#//MedicationsAdministeredSection/EMSPCRMedicationsAdministeredSectionMedicationAdministered/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emspcr.ecore#//MedicationsAdministeredSection/EMSPCRMedicationsAdministeredSectionMedicationAdministered/context"/>
       </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="emspcr.ecore#//MedicationsAdministeredSection/getMedicationAdministered"/>
     </genClasses>
@@ -1044,9 +1025,9 @@
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emspcr.ecore#//MedicationAdministered/MedicationAdministeredMedicationConsumable/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emspcr.ecore#//MedicationAdministered/MedicationAdministeredMedicationConsumable/context"/>
       </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="emspcr.ecore#//MedicationAdministered/MedicationAdministeredMedicationAdministeredResponseRelationship">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emspcr.ecore#//MedicationAdministered/MedicationAdministeredMedicationAdministeredResponseRelationship/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emspcr.ecore#//MedicationAdministered/MedicationAdministeredMedicationAdministeredResponseRelationship/context"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="emspcr.ecore#//MedicationAdministered/MedicationAdministeredResponseRelationship">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emspcr.ecore#//MedicationAdministered/MedicationAdministeredResponseRelationship/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emspcr.ecore#//MedicationAdministered/MedicationAdministeredResponseRelationship/context"/>
       </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="emspcr.ecore#//MedicationAdministered/MedicationAdministeredMedicationComplicationRelationship">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emspcr.ecore#//MedicationAdministered/MedicationAdministeredMedicationComplicationRelationship/diagnostics"/>
@@ -1125,65 +1106,65 @@
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="emspcr.ecore#//ProceduresPerformedSection/getProcedureActivityProcedure1s"/>
     </genClasses>
     <genClasses xsi:type="genmodel:GenClass" ecoreClass="emspcr.ecore#//Procedure">
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="emspcr.ecore#//Procedure/emspcrProcedureEmspcrProcedureAbandonedProcedureRelationship">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emspcr.ecore#//Procedure/emspcrProcedureEmspcrProcedureAbandonedProcedureRelationship/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emspcr.ecore#//Procedure/emspcrProcedureEmspcrProcedureAbandonedProcedureRelationship/context"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="emspcr.ecore#//Procedure/EMSPCRProcedureAbandonedProcedureRelationship">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emspcr.ecore#//Procedure/EMSPCRProcedureAbandonedProcedureRelationship/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emspcr.ecore#//Procedure/EMSPCRProcedureAbandonedProcedureRelationship/context"/>
       </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="emspcr.ecore#//Procedure/emspcrProcedureEmspcrProcedureProcedurePriorRelationship">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emspcr.ecore#//Procedure/emspcrProcedureEmspcrProcedureProcedurePriorRelationship/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emspcr.ecore#//Procedure/emspcrProcedureEmspcrProcedureProcedurePriorRelationship/context"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="emspcr.ecore#//Procedure/EMSPCRProcedureProcedurePriorRelationship">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emspcr.ecore#//Procedure/EMSPCRProcedureProcedurePriorRelationship/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emspcr.ecore#//Procedure/EMSPCRProcedureProcedurePriorRelationship/context"/>
       </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="emspcr.ecore#//Procedure/emspcrProcedureEmspcrProcedureProcedureNumberOfAttemptsRelationship">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emspcr.ecore#//Procedure/emspcrProcedureEmspcrProcedureProcedureNumberOfAttemptsRelationship/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emspcr.ecore#//Procedure/emspcrProcedureEmspcrProcedureProcedureNumberOfAttemptsRelationship/context"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="emspcr.ecore#//Procedure/EMSPCRProcedureProcedureNumberOfAttemptsRelationship">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emspcr.ecore#//Procedure/EMSPCRProcedureProcedureNumberOfAttemptsRelationship/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emspcr.ecore#//Procedure/EMSPCRProcedureProcedureNumberOfAttemptsRelationship/context"/>
       </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="emspcr.ecore#//Procedure/emspcrProcedureEmspcrProcedureProcedureSuccessfulRelationship">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emspcr.ecore#//Procedure/emspcrProcedureEmspcrProcedureProcedureSuccessfulRelationship/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emspcr.ecore#//Procedure/emspcrProcedureEmspcrProcedureProcedureSuccessfulRelationship/context"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="emspcr.ecore#//Procedure/EMSPCRProcedureProcedureSuccessfulRelationship">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emspcr.ecore#//Procedure/EMSPCRProcedureProcedureSuccessfulRelationship/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emspcr.ecore#//Procedure/EMSPCRProcedureProcedureSuccessfulRelationship/context"/>
       </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="emspcr.ecore#//Procedure/emspcrProcedureEmspcrProcedureProcedureComplicationsRelationship">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emspcr.ecore#//Procedure/emspcrProcedureEmspcrProcedureProcedureComplicationsRelationship/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emspcr.ecore#//Procedure/emspcrProcedureEmspcrProcedureProcedureComplicationsRelationship/context"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="emspcr.ecore#//Procedure/EMSPCRProcedureProcedureComplicationsRelationship">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emspcr.ecore#//Procedure/EMSPCRProcedureProcedureComplicationsRelationship/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emspcr.ecore#//Procedure/EMSPCRProcedureProcedureComplicationsRelationship/context"/>
       </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="emspcr.ecore#//Procedure/emspcrProcedureEmspcrProcedureProcedurePatientResponseRelationship">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emspcr.ecore#//Procedure/emspcrProcedureEmspcrProcedureProcedurePatientResponseRelationship/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emspcr.ecore#//Procedure/emspcrProcedureEmspcrProcedureProcedurePatientResponseRelationship/context"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="emspcr.ecore#//Procedure/EMSPCRProcedureProcedurePatientResponseRelationship">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emspcr.ecore#//Procedure/EMSPCRProcedureProcedurePatientResponseRelationship/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emspcr.ecore#//Procedure/EMSPCRProcedureProcedurePatientResponseRelationship/context"/>
       </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="emspcr.ecore#//Procedure/emspcrProcedureEmspcrProcedureProcedurePerformer">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emspcr.ecore#//Procedure/emspcrProcedureEmspcrProcedureProcedurePerformer/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emspcr.ecore#//Procedure/emspcrProcedureEmspcrProcedureProcedurePerformer/context"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="emspcr.ecore#//Procedure/EMSPCRProcedureProcedurePerformer">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emspcr.ecore#//Procedure/EMSPCRProcedureProcedurePerformer/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emspcr.ecore#//Procedure/EMSPCRProcedureProcedurePerformer/context"/>
       </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="emspcr.ecore#//Procedure/emspcrProcedureEmspcrProcedureAirwayConfirmationRelationship">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emspcr.ecore#//Procedure/emspcrProcedureEmspcrProcedureAirwayConfirmationRelationship/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emspcr.ecore#//Procedure/emspcrProcedureEmspcrProcedureAirwayConfirmationRelationship/context"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="emspcr.ecore#//Procedure/EMSPCRProcedureAirwayConfirmationRelationship">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emspcr.ecore#//Procedure/EMSPCRProcedureAirwayConfirmationRelationship/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emspcr.ecore#//Procedure/EMSPCRProcedureAirwayConfirmationRelationship/context"/>
       </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="emspcr.ecore#//Procedure/emspcrProcedureCode">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emspcr.ecore#//Procedure/emspcrProcedureCode/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emspcr.ecore#//Procedure/emspcrProcedureCode/context"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="emspcr.ecore#//Procedure/EMSPCRProcedureCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emspcr.ecore#//Procedure/EMSPCRProcedureCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emspcr.ecore#//Procedure/EMSPCRProcedureCode/context"/>
       </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="emspcr.ecore#//Procedure/emspcrProcedureEffectiveTime">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emspcr.ecore#//Procedure/emspcrProcedureEffectiveTime/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emspcr.ecore#//Procedure/emspcrProcedureEffectiveTime/context"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="emspcr.ecore#//Procedure/EMSPCRProcedureEffectiveTime">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emspcr.ecore#//Procedure/EMSPCRProcedureEffectiveTime/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emspcr.ecore#//Procedure/EMSPCRProcedureEffectiveTime/context"/>
       </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="emspcr.ecore#//Procedure/emspcrProcedureStatusCodeP">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emspcr.ecore#//Procedure/emspcrProcedureStatusCodeP/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emspcr.ecore#//Procedure/emspcrProcedureStatusCodeP/context"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="emspcr.ecore#//Procedure/EMSPCRProcedureStatusCodeP">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emspcr.ecore#//Procedure/EMSPCRProcedureStatusCodeP/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emspcr.ecore#//Procedure/EMSPCRProcedureStatusCodeP/context"/>
       </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="emspcr.ecore#//Procedure/emspcrProcedureStatusCode">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emspcr.ecore#//Procedure/emspcrProcedureStatusCode/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emspcr.ecore#//Procedure/emspcrProcedureStatusCode/context"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="emspcr.ecore#//Procedure/EMSPCRProcedureStatusCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emspcr.ecore#//Procedure/EMSPCRProcedureStatusCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emspcr.ecore#//Procedure/EMSPCRProcedureStatusCode/context"/>
       </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="emspcr.ecore#//Procedure/emspcrProcedureApproachSiteCodeP">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emspcr.ecore#//Procedure/emspcrProcedureApproachSiteCodeP/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emspcr.ecore#//Procedure/emspcrProcedureApproachSiteCodeP/context"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="emspcr.ecore#//Procedure/EMSPCRProcedureApproachSiteCodeP">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emspcr.ecore#//Procedure/EMSPCRProcedureApproachSiteCodeP/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emspcr.ecore#//Procedure/EMSPCRProcedureApproachSiteCodeP/context"/>
       </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="emspcr.ecore#//Procedure/emspcrProcedureApproachSiteCode">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emspcr.ecore#//Procedure/emspcrProcedureApproachSiteCode/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emspcr.ecore#//Procedure/emspcrProcedureApproachSiteCode/context"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="emspcr.ecore#//Procedure/EMSPCRProcedureApproachSiteCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emspcr.ecore#//Procedure/EMSPCRProcedureApproachSiteCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emspcr.ecore#//Procedure/EMSPCRProcedureApproachSiteCode/context"/>
       </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="emspcr.ecore#//Procedure/emspcrProcedureNegationInd">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emspcr.ecore#//Procedure/emspcrProcedureNegationInd/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emspcr.ecore#//Procedure/emspcrProcedureNegationInd/context"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="emspcr.ecore#//Procedure/EMSPCRProcedureNegationInd">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emspcr.ecore#//Procedure/EMSPCRProcedureNegationInd/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emspcr.ecore#//Procedure/EMSPCRProcedureNegationInd/context"/>
       </genOperations>
     </genClasses>
     <genClasses xsi:type="genmodel:GenClass" ecoreClass="emspcr.ecore#//PatientCareNarrativeSection">
@@ -2017,17 +1998,17 @@
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="emspcr.ecore#//SituationSection/getInitialPatientAcuity"/>
     </genClasses>
     <genClasses xsi:type="genmodel:GenClass" ecoreClass="emspcr.ecore#//Complaint">
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="emspcr.ecore#//Complaint/ComplaintComplaintDurationRelationship">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emspcr.ecore#//Complaint/ComplaintComplaintDurationRelationship/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emspcr.ecore#//Complaint/ComplaintComplaintDurationRelationship/context"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="emspcr.ecore#//Complaint/ComplaintDurationRelationship">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emspcr.ecore#//Complaint/ComplaintDurationRelationship/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emspcr.ecore#//Complaint/ComplaintDurationRelationship/context"/>
       </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="emspcr.ecore#//Complaint/ComplaintComplaintTypeRelationship">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emspcr.ecore#//Complaint/ComplaintComplaintTypeRelationship/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emspcr.ecore#//Complaint/ComplaintComplaintTypeRelationship/context"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="emspcr.ecore#//Complaint/ComplaintTypeRelationship">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emspcr.ecore#//Complaint/ComplaintTypeRelationship/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emspcr.ecore#//Complaint/ComplaintTypeRelationship/context"/>
       </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="emspcr.ecore#//Complaint/ComplaintComplaintOrganSystemRelationship">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emspcr.ecore#//Complaint/ComplaintComplaintOrganSystemRelationship/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emspcr.ecore#//Complaint/ComplaintComplaintOrganSystemRelationship/context"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="emspcr.ecore#//Complaint/ComplaintOrganSystemRelationship">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emspcr.ecore#//Complaint/ComplaintOrganSystemRelationship/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emspcr.ecore#//Complaint/ComplaintOrganSystemRelationship/context"/>
       </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="emspcr.ecore#//Complaint/ComplaintTemplateId">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emspcr.ecore#//Complaint/ComplaintTemplateId/diagnostics"/>
@@ -2476,62 +2457,62 @@
       </genOperations>
     </genClasses>
     <genClasses xsi:type="genmodel:GenClass" ecoreClass="emspcr.ecore#//VitalSignsSection">
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="emspcr.ecore#//VitalSignsSection/emspcrVitalSignsSectionCode">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emspcr.ecore#//VitalSignsSection/emspcrVitalSignsSectionCode/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emspcr.ecore#//VitalSignsSection/emspcrVitalSignsSectionCode/context"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="emspcr.ecore#//VitalSignsSection/EMSPCRVitalSignsSectionCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emspcr.ecore#//VitalSignsSection/EMSPCRVitalSignsSectionCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emspcr.ecore#//VitalSignsSection/EMSPCRVitalSignsSectionCode/context"/>
       </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="emspcr.ecore#//VitalSignsSection/emspcrVitalSignsSectionTitle">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emspcr.ecore#//VitalSignsSection/emspcrVitalSignsSectionTitle/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emspcr.ecore#//VitalSignsSection/emspcrVitalSignsSectionTitle/context"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="emspcr.ecore#//VitalSignsSection/EMSPCRVitalSignsSectionTitle">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emspcr.ecore#//VitalSignsSection/EMSPCRVitalSignsSectionTitle/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emspcr.ecore#//VitalSignsSection/EMSPCRVitalSignsSectionTitle/context"/>
       </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="emspcr.ecore#//VitalSignsSection/emspcrVitalSignsSectionText">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emspcr.ecore#//VitalSignsSection/emspcrVitalSignsSectionText/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emspcr.ecore#//VitalSignsSection/emspcrVitalSignsSectionText/context"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="emspcr.ecore#//VitalSignsSection/EMSPCRVitalSignsSectionText">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emspcr.ecore#//VitalSignsSection/EMSPCRVitalSignsSectionText/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emspcr.ecore#//VitalSignsSection/EMSPCRVitalSignsSectionText/context"/>
       </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="emspcr.ecore#//VitalSignsSection/emspcrVitalSignsSectionVitalSignsOrganizer">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emspcr.ecore#//VitalSignsSection/emspcrVitalSignsSectionVitalSignsOrganizer/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emspcr.ecore#//VitalSignsSection/emspcrVitalSignsSectionVitalSignsOrganizer/context"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="emspcr.ecore#//VitalSignsSection/EMSPCRVitalSignsSectionVitalSignsOrganizer">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emspcr.ecore#//VitalSignsSection/EMSPCRVitalSignsSectionVitalSignsOrganizer/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emspcr.ecore#//VitalSignsSection/EMSPCRVitalSignsSectionVitalSignsOrganizer/context"/>
       </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="emspcr.ecore#//VitalSignsSection/emspcrVitalSignsSectionPriorAidVitals">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emspcr.ecore#//VitalSignsSection/emspcrVitalSignsSectionPriorAidVitals/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emspcr.ecore#//VitalSignsSection/emspcrVitalSignsSectionPriorAidVitals/context"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="emspcr.ecore#//VitalSignsSection/EMSPCRVitalSignsSectionPriorAidVitals">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emspcr.ecore#//VitalSignsSection/EMSPCRVitalSignsSectionPriorAidVitals/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emspcr.ecore#//VitalSignsSection/EMSPCRVitalSignsSectionPriorAidVitals/context"/>
       </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="emspcr.ecore#//VitalSignsSection/emspcrVitalSignsSectionAdditionalVitalSignsOrganizer">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emspcr.ecore#//VitalSignsSection/emspcrVitalSignsSectionAdditionalVitalSignsOrganizer/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emspcr.ecore#//VitalSignsSection/emspcrVitalSignsSectionAdditionalVitalSignsOrganizer/context"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="emspcr.ecore#//VitalSignsSection/EMSPCRVitalSignsSectionAdditionalVitalSignsOrganizer">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emspcr.ecore#//VitalSignsSection/EMSPCRVitalSignsSectionAdditionalVitalSignsOrganizer/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emspcr.ecore#//VitalSignsSection/EMSPCRVitalSignsSectionAdditionalVitalSignsOrganizer/context"/>
       </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="emspcr.ecore#//VitalSignsSection/getemspcrVitalSignsOrganizer"/>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="emspcr.ecore#//VitalSignsSection/getPriorAidVitals"/>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="emspcr.ecore#//VitalSignsSection/getAdditionalVitalSignsOrganizer"/>
     </genClasses>
     <genClasses xsi:type="genmodel:GenClass" ecoreClass="emspcr.ecore#//VitalSignsOrganizer">
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="emspcr.ecore#//VitalSignsOrganizer/emspcrVitalSignsOrganizerEmspcrVitalSignsOrganizerSystolicBloodPressureComponent">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emspcr.ecore#//VitalSignsOrganizer/emspcrVitalSignsOrganizerEmspcrVitalSignsOrganizerSystolicBloodPressureComponent/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emspcr.ecore#//VitalSignsOrganizer/emspcrVitalSignsOrganizerEmspcrVitalSignsOrganizerSystolicBloodPressureComponent/context"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="emspcr.ecore#//VitalSignsOrganizer/EMSPCRVitalSignsOrganizerSystolicBloodPressureComponent">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emspcr.ecore#//VitalSignsOrganizer/EMSPCRVitalSignsOrganizerSystolicBloodPressureComponent/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emspcr.ecore#//VitalSignsOrganizer/EMSPCRVitalSignsOrganizerSystolicBloodPressureComponent/context"/>
       </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="emspcr.ecore#//VitalSignsOrganizer/emspcrVitalSignsOrganizerEmspcrVitalSignsOrganizerDiastolicBloodPressureComponent">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emspcr.ecore#//VitalSignsOrganizer/emspcrVitalSignsOrganizerEmspcrVitalSignsOrganizerDiastolicBloodPressureComponent/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emspcr.ecore#//VitalSignsOrganizer/emspcrVitalSignsOrganizerEmspcrVitalSignsOrganizerDiastolicBloodPressureComponent/context"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="emspcr.ecore#//VitalSignsOrganizer/EMSPCRVitalSignsOrganizerDiastolicBloodPressureComponent">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emspcr.ecore#//VitalSignsOrganizer/EMSPCRVitalSignsOrganizerDiastolicBloodPressureComponent/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emspcr.ecore#//VitalSignsOrganizer/EMSPCRVitalSignsOrganizerDiastolicBloodPressureComponent/context"/>
       </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="emspcr.ecore#//VitalSignsOrganizer/emspcrVitalSignsOrganizerEmspcrVitalSignsOrganizerHeartRateComponent">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emspcr.ecore#//VitalSignsOrganizer/emspcrVitalSignsOrganizerEmspcrVitalSignsOrganizerHeartRateComponent/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emspcr.ecore#//VitalSignsOrganizer/emspcrVitalSignsOrganizerEmspcrVitalSignsOrganizerHeartRateComponent/context"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="emspcr.ecore#//VitalSignsOrganizer/EMSPCRVitalSignsOrganizerHeartRateComponent">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emspcr.ecore#//VitalSignsOrganizer/EMSPCRVitalSignsOrganizerHeartRateComponent/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emspcr.ecore#//VitalSignsOrganizer/EMSPCRVitalSignsOrganizerHeartRateComponent/context"/>
       </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="emspcr.ecore#//VitalSignsOrganizer/emspcrVitalSignsOrganizerEmspcrVitalSignsOrganizerRespiratoryRateComponent">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emspcr.ecore#//VitalSignsOrganizer/emspcrVitalSignsOrganizerEmspcrVitalSignsOrganizerRespiratoryRateComponent/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emspcr.ecore#//VitalSignsOrganizer/emspcrVitalSignsOrganizerEmspcrVitalSignsOrganizerRespiratoryRateComponent/context"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="emspcr.ecore#//VitalSignsOrganizer/EMSPCRVitalSignsOrganizerRespiratoryRateComponent">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emspcr.ecore#//VitalSignsOrganizer/EMSPCRVitalSignsOrganizerRespiratoryRateComponent/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emspcr.ecore#//VitalSignsOrganizer/EMSPCRVitalSignsOrganizerRespiratoryRateComponent/context"/>
       </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="emspcr.ecore#//VitalSignsOrganizer/emspcrVitalSignsOrganizerEmspcrVitalSignsOrganizerBodyTemperatureComponent">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emspcr.ecore#//VitalSignsOrganizer/emspcrVitalSignsOrganizerEmspcrVitalSignsOrganizerBodyTemperatureComponent/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emspcr.ecore#//VitalSignsOrganizer/emspcrVitalSignsOrganizerEmspcrVitalSignsOrganizerBodyTemperatureComponent/context"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="emspcr.ecore#//VitalSignsOrganizer/EMSPCRVitalSignsOrganizerBodyTemperatureComponent">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emspcr.ecore#//VitalSignsOrganizer/EMSPCRVitalSignsOrganizerBodyTemperatureComponent/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emspcr.ecore#//VitalSignsOrganizer/EMSPCRVitalSignsOrganizerBodyTemperatureComponent/context"/>
       </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="emspcr.ecore#//VitalSignsOrganizer/emspcrVitalSignsOrganizerEmspcrVitalSignsOrganizerOxygenSaturationComponent">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emspcr.ecore#//VitalSignsOrganizer/emspcrVitalSignsOrganizerEmspcrVitalSignsOrganizerOxygenSaturationComponent/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emspcr.ecore#//VitalSignsOrganizer/emspcrVitalSignsOrganizerEmspcrVitalSignsOrganizerOxygenSaturationComponent/context"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="emspcr.ecore#//VitalSignsOrganizer/EMSPCRVitalSignsOrganizerOxygenSaturationComponent">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emspcr.ecore#//VitalSignsOrganizer/EMSPCRVitalSignsOrganizerOxygenSaturationComponent/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emspcr.ecore#//VitalSignsOrganizer/EMSPCRVitalSignsOrganizerOxygenSaturationComponent/context"/>
       </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="emspcr.ecore#//VitalSignsOrganizer/emspcrVitalSignsOrganizerEffectiveTime">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emspcr.ecore#//VitalSignsOrganizer/emspcrVitalSignsOrganizerEffectiveTime/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emspcr.ecore#//VitalSignsOrganizer/emspcrVitalSignsOrganizerEffectiveTime/context"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="emspcr.ecore#//VitalSignsOrganizer/EMSPCRVitalSignsOrganizerEffectiveTime">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emspcr.ecore#//VitalSignsOrganizer/EMSPCRVitalSignsOrganizerEffectiveTime/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emspcr.ecore#//VitalSignsOrganizer/EMSPCRVitalSignsOrganizerEffectiveTime/context"/>
       </genOperations>
     </genClasses>
     <genClasses xsi:type="genmodel:GenClass" ecoreClass="emspcr.ecore#//PriorAidVitals">
@@ -3205,6 +3186,20 @@
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emspcr.ecore#//DisasterType/DisasterTypeMoodCode/context"/>
       </genOperations>
     </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="emspcr.ecore#//HistoryOfProceduresOrganizer">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="emspcr.ecore#//HistoryOfProceduresOrganizer/HistoryOfProceduresOrganizerExistenceOfHistoryOfProcedureComponent">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emspcr.ecore#//HistoryOfProceduresOrganizer/HistoryOfProceduresOrganizerExistenceOfHistoryOfProcedureComponent/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emspcr.ecore#//HistoryOfProceduresOrganizer/HistoryOfProceduresOrganizerExistenceOfHistoryOfProcedureComponent/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="emspcr.ecore#//HistoryOfProceduresOrganizer/HistoryOfProceduresOrganizerHistoryOfProceduresComponent">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emspcr.ecore#//HistoryOfProceduresOrganizer/HistoryOfProceduresOrganizerHistoryOfProceduresComponent/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emspcr.ecore#//HistoryOfProceduresOrganizer/HistoryOfProceduresOrganizerHistoryOfProceduresComponent/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="emspcr.ecore#//HistoryOfProceduresOrganizer/HistoryOfProceduresOrganizerTemplateId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emspcr.ecore#//HistoryOfProceduresOrganizer/HistoryOfProceduresOrganizerTemplateId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emspcr.ecore#//HistoryOfProceduresOrganizer/HistoryOfProceduresOrganizerTemplateId/context"/>
+      </genOperations>
+    </genClasses>
     <genClasses xsi:type="genmodel:GenClass" ecoreClass="emspcr.ecore#//MedicationNotAdministeredReasonObservation">
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="emspcr.ecore#//MedicationNotAdministeredReasonObservation/MedicationNotAdministeredReasonObservationTemplateId">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emspcr.ecore#//MedicationNotAdministeredReasonObservation/MedicationNotAdministeredReasonObservationTemplateId/diagnostics"/>
@@ -3692,9 +3687,9 @@
       </genOperations>
     </genClasses>
     <genClasses xsi:type="genmodel:GenClass" ecoreClass="emspcr.ecore#//PriorCPR">
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="emspcr.ecore#//PriorCPR/PriorCPRPriorCPRProviderParticipation">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emspcr.ecore#//PriorCPR/PriorCPRPriorCPRProviderParticipation/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emspcr.ecore#//PriorCPR/PriorCPRPriorCPRProviderParticipation/context"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="emspcr.ecore#//PriorCPR/PriorCPRProviderParticipation">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emspcr.ecore#//PriorCPR/PriorCPRProviderParticipation/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emspcr.ecore#//PriorCPR/PriorCPRProviderParticipation/context"/>
       </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="emspcr.ecore#//PriorCPR/PriorCPRTemplateId">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emspcr.ecore#//PriorCPR/PriorCPRTemplateId/diagnostics"/>
