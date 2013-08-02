@@ -32,7 +32,6 @@ public interface Immunization extends org.openhealthtools.mdht.uml.cda.ihe.Immun
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.entryRelationship->select(er |   er.typeCode = vocab::x_ActRelationshipEntryRelationship::RSON and er.act.code.codeSystem <> '2.16.840.1.113883.1.11.19717' )->isEmpty()
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
@@ -45,7 +44,6 @@ public interface Immunization extends org.openhealthtools.mdht.uml.cda.ihe.Immun
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.consumable.manufacturedProduct.manufacturedMaterial.code.codeSystem='2.16.840.1.113883.6.59'
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
@@ -58,7 +56,6 @@ public interface Immunization extends org.openhealthtools.mdht.uml.cda.ihe.Immun
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.3.88.11.83.13')
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->

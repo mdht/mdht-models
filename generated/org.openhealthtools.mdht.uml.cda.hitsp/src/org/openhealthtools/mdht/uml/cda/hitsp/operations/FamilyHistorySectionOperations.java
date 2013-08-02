@@ -74,19 +74,20 @@ public class FamilyHistorySectionOperations extends FamilyMedicalHistorySectionO
 	 * @generated
 	 * @ordered
 	 */
+
 	protected static Constraint VALIDATE_HITSP_FAMILY_HISTORY_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.3.88.11.83.125')
 	 * @param familyHistorySection The receiving '<em><b>Family History Section</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
+
 	public static boolean validateHITSPFamilyHistorySectionTemplateId(FamilyHistorySection familyHistorySection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -132,19 +133,20 @@ public class FamilyHistorySectionOperations extends FamilyMedicalHistorySectionO
 	 * @generated
 	 * @ordered
 	 */
+
 	protected static Constraint VALIDATE_HITSP_FAMILY_HISTORY_SECTION_FAMILY_HISTORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.entry->exists(entry : cda::Entry | not entry.organizer.oclIsUndefined() and entry.organizer.oclIsKindOf(hitsp::FamilyHistory))
 	 * @param familyHistorySection The receiving '<em><b>Family History Section</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
+
 	public static boolean validateHITSPFamilyHistorySectionFamilyHistory(FamilyHistorySection familyHistorySection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -195,10 +197,6 @@ public class FamilyHistorySectionOperations extends FamilyMedicalHistorySectionO
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getOrganizers()->select(organizer : cda::Organizer | not organizer.oclIsUndefined() and organizer.oclIsKindOf(hitsp::FamilyHistory)).oclAsType(hitsp::FamilyHistory)
-	 * @param familyHistorySection The receiving '<em><b>Family History Section</b></em>' model object.
-	 * <!-- end-model-doc -->
 	 * @generated
 	 */
 	public static EList<FamilyHistory> getFamilyHistories(FamilyHistorySection familyHistorySection) {

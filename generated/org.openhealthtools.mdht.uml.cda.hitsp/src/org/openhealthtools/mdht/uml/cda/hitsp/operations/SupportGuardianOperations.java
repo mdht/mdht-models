@@ -66,19 +66,20 @@ public class SupportGuardianOperations extends PatientContactGuardianOperations 
 	 * @generated
 	 * @ordered
 	 */
+
 	protected static Constraint VALIDATE_HITSP_SUPPORT_GUARDIAN_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.3.88.11.83.3')
 	 * @param supportGuardian The receiving '<em><b>Support Guardian</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
+
 	public static boolean validateHITSPSupportGuardianTemplateId(SupportGuardian supportGuardian,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 

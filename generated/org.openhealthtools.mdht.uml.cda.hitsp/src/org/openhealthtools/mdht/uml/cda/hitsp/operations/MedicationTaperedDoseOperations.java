@@ -64,19 +64,20 @@ public class MedicationTaperedDoseOperations extends MedicationOperations {
 	 * @generated
 	 * @ordered
 	 */
+
 	protected static Constraint VALIDATE_HITSP_MEDICATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.templateId->exists(id : datatypes::II | id.root = 'null')
 	 * @param medicationTaperedDose The receiving '<em><b>Medication Tapered Dose</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
+
 	public static boolean validateHITSPMedicationTemplateId(MedicationTaperedDose medicationTaperedDose,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 

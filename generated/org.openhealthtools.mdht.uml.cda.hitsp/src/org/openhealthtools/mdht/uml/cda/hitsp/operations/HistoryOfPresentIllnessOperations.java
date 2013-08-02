@@ -66,19 +66,20 @@ public class HistoryOfPresentIllnessOperations extends
 	 * @generated
 	 * @ordered
 	 */
+
 	protected static Constraint VALIDATE_HITSP_HISTORY_OF_PRESENT_ILLNESS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.3.88.11.83.107')
 	 * @param historyOfPresentIllness The receiving '<em><b>History Of Present Illness</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
+
 	public static boolean validateHITSPHistoryOfPresentIllnessTemplateId(
 			HistoryOfPresentIllness historyOfPresentIllness, DiagnosticChain diagnostics, Map<Object, Object> context) {
 

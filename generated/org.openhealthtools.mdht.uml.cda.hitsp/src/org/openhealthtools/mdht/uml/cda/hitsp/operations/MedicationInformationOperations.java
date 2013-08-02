@@ -79,7 +79,6 @@ public class MedicationInformationOperations extends ProductEntryOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * not self.manufacturedMaterial.code.code.oclIsUndefined()
 	 * @param medicationInformation The receiving '<em><b>Medication Information</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -137,7 +136,6 @@ public class MedicationInformationOperations extends ProductEntryOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.manufacturedMaterial.code.codeSystem = '2.16.840.1.113883.6.88'
 	 * @param medicationInformation The receiving '<em><b>Medication Information</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -195,7 +193,6 @@ public class MedicationInformationOperations extends ProductEntryOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.manufacturedMaterial.code.codeSystem = '2.16.840.1.113883.4.9'
 	 * @param medicationInformation The receiving '<em><b>Medication Information</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -254,7 +251,6 @@ public class MedicationInformationOperations extends ProductEntryOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.manufacturedMaterial.code.translation->size() > 0
 	 * @param medicationInformation The receiving '<em><b>Medication Information</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -312,7 +308,6 @@ public class MedicationInformationOperations extends ProductEntryOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.manufacturedMaterial.code.codeSystem = '2.16.840.1.113883.6.88' or self.manufacturedMaterial.code.codeSystem = '2.16.840.1.113883.6.69'
 	 * @param medicationInformation The receiving '<em><b>Medication Information</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -371,7 +366,6 @@ public class MedicationInformationOperations extends ProductEntryOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * not self.manufacturedMaterial.code.originalText.oclIsUndefined()
 	 * @param medicationInformation The receiving '<em><b>Medication Information</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -430,7 +424,6 @@ public class MedicationInformationOperations extends ProductEntryOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * not self.manufacturedMaterial.name.oclIsUndefined()
 	 * @param medicationInformation The receiving '<em><b>Medication Information</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -488,7 +481,6 @@ public class MedicationInformationOperations extends ProductEntryOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.3.88.11.83.8.2')
 	 * @param medicationInformation The receiving '<em><b>Medication Information</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.

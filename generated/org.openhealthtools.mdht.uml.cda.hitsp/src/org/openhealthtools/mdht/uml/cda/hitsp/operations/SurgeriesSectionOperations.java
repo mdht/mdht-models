@@ -74,19 +74,20 @@ public class SurgeriesSectionOperations extends CodedSurgeriesSectionOperations 
 	 * @generated
 	 * @ordered
 	 */
+
 	protected static Constraint VALIDATE_HITSP_SURGERIES_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.3.88.11.83.108')
 	 * @param surgeriesSection The receiving '<em><b>Surgeries Section</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
+
 	public static boolean validateHITSPSurgeriesSectionTemplateId(SurgeriesSection surgeriesSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -132,19 +133,20 @@ public class SurgeriesSectionOperations extends CodedSurgeriesSectionOperations 
 	 * @generated
 	 * @ordered
 	 */
+
 	protected static Constraint VALIDATE_HITSP_SURGERIES_SECTION_PROCEDURE_ACTIVITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.entry->exists(entry : cda::Entry | not entry.procedure.oclIsUndefined() and entry.procedure.oclIsKindOf(hitsp::Procedure))
 	 * @param surgeriesSection The receiving '<em><b>Surgeries Section</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
+
 	public static boolean validateHITSPSurgeriesSectionProcedureActivity(SurgeriesSection surgeriesSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -195,10 +197,6 @@ public class SurgeriesSectionOperations extends CodedSurgeriesSectionOperations 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getProcedures()->select(procedure : cda::Procedure | not procedure.oclIsUndefined() and procedure.oclIsKindOf(hitsp::Procedure)).oclAsType(hitsp::Procedure)
-	 * @param surgeriesSection The receiving '<em><b>Surgeries Section</b></em>' model object.
-	 * <!-- end-model-doc -->
 	 * @generated
 	 */
 	public static EList<Procedure> getProcedureActivities(SurgeriesSection surgeriesSection) {

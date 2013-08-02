@@ -95,8 +95,8 @@ public class ConditionImpl extends ProblemConcernEntryImpl implements Condition 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateConditionConditionEntry(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ConditionOperations.validateConditionConditionEntry(this, diagnostics, context);
+	public boolean validateConditionEntry(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ConditionOperations.validateConditionEntry(this, diagnostics, context);
 	}
 
 	/**

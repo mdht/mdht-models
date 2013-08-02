@@ -74,7 +74,6 @@ public class UnstructuredDocumentOperations extends MedicalDocumentOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.3.88.11.62.1')
 	 * @param unstructuredDocument The receiving '<em><b>Unstructured Document</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -136,7 +135,6 @@ public class UnstructuredDocumentOperations extends MedicalDocumentOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.component.structuredBody.oclIsUndefined()
 	 * @param unstructuredDocument The receiving '<em><b>Unstructured Document</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -194,7 +192,6 @@ public class UnstructuredDocumentOperations extends MedicalDocumentOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.recordTarget->one(record : cda::RecordTarget | not record.patientRole.oclIsUndefined() and not record.patientRole.patient.oclIsUndefined())
 	 * @param unstructuredDocument The receiving '<em><b>Unstructured Document</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.

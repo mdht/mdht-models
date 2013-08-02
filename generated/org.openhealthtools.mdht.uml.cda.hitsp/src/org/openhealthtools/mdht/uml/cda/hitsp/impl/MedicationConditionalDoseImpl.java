@@ -236,7 +236,7 @@ public class MedicationConditionalDoseImpl extends ConditionalDoseImpl implement
 
 	/**
 	 * <!-- begin-user-doc -->
-	* <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	public boolean validateHITSPMedicationRouteCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
@@ -273,7 +273,7 @@ public class MedicationConditionalDoseImpl extends ConditionalDoseImpl implement
 
 	/**
 	 * <!-- begin-user-doc -->
-	* <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	public boolean validateHITSPMedicationApproachSiteCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {

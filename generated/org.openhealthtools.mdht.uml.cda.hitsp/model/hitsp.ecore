@@ -1273,7 +1273,7 @@
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Condition" eSuperTypes="../../org.openhealthtools.mdht.uml.cda.ihe/model/ihe.ecore#//ProblemConcernEntry">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
-      <details key="constraints.validation.error" value="ConditionTemplateId ConditionHasTreatingProvider ConditionHasProviderId ConditionConditionEntry"/>
+      <details key="constraints.validation.error" value="ConditionTemplateId ConditionHasTreatingProvider ConditionHasProviderId ConditionEntry"/>
       <details key="templateId.root" value="2.16.840.1.113883.3.88.11.83.7"/>
       <details key="constraints.validation.info" value="ConditionHasProviderTreatmentTime"/>
     </eAnnotations>
@@ -1353,7 +1353,7 @@
         </eGenericType>
       </eParameters>
     </eOperations>
-    <eOperations name="ConditionConditionEntry" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+    <eOperations name="ConditionEntry" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
         <details key="body" value="self.entryRelationship->exists(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(ihe::ProblemEntry) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::SUBJ)"/>
       </eAnnotations>

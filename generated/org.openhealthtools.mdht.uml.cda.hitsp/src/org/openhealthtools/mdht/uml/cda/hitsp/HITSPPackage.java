@@ -3682,6 +3682,15 @@ public interface HITSPPackage extends EPackage {
 	int ENCOUNTER__MOOD_CODE = IHEPackage.ENCOUNTER_ENTRY__MOOD_CODE;
 
 	/**
+	 * The feature id for the '<em><b>SDTC Discharge Disposition Code</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ENCOUNTER__SDTC_DISCHARGE_DISPOSITION_CODE = IHEPackage.ENCOUNTER_ENTRY__SDTC_DISCHARGE_DISPOSITION_CODE;
+
+	/**
 	 * The number of structural features of the '<em>Encounter</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

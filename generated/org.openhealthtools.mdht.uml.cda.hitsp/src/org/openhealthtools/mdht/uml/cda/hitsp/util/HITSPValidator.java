@@ -436,7 +436,7 @@ public class HITSPValidator extends EObjectValidator {
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate HITSP Medication Route Code P' of 'Medication'.
 	 * <!-- begin-user-doc -->
-	* <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	public static final int MEDICATION__HITSP_MEDICATION_ROUTE_CODE_P = 41;
@@ -468,7 +468,7 @@ public class HITSPValidator extends EObjectValidator {
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate HITSP Medication Approach Site Code P' of 'Medication'.
 	 * <!-- begin-user-doc -->
-	* <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	public static final int MEDICATION__HITSP_MEDICATION_APPROACH_SITE_CODE_P = 45;
@@ -650,12 +650,12 @@ public class HITSPValidator extends EObjectValidator {
 	public static final int CONDITION__CONDITION_TEMPLATE_ID = 67;
 
 	/**
-	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Condition Condition Entry' of 'Condition'.
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Condition Entry' of 'Condition'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int CONDITION__CONDITION_CONDITION_ENTRY = 68;
+	public static final int CONDITION__CONDITION_ENTRY = 68;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Condition Entry Has Onset Date' of 'Condition Entry'.
@@ -3299,7 +3299,7 @@ public class HITSPValidator extends EObjectValidator {
 	/**
 	 * Validates the validateHITSPMedicationRouteCodeP constraint of '<em>Medication</em>'.
 	 * <!-- begin-user-doc -->
-	* <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	public boolean validateMedication_validateHITSPMedicationRouteCodeP(Medication medication,
@@ -3343,7 +3343,7 @@ public class HITSPValidator extends EObjectValidator {
 	/**
 	 * Validates the validateHITSPMedicationApproachSiteCodeP constraint of '<em>Medication</em>'.
 	 * <!-- begin-user-doc -->
-	* <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	public boolean validateMedication_validateHITSPMedicationApproachSiteCodeP(Medication medication,
@@ -3926,7 +3926,7 @@ public class HITSPValidator extends EObjectValidator {
 			result &= validateCondition_validateConditionTemplateId(condition, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= validateCondition_validateConditionConditionEntry(condition, diagnostics, context);
+			result &= validateCondition_validateConditionEntry(condition, diagnostics, context);
 		}
 		return result;
 	}
@@ -3976,14 +3976,14 @@ public class HITSPValidator extends EObjectValidator {
 	}
 
 	/**
-	 * Validates the validateConditionConditionEntry constraint of '<em>Condition</em>'.
+	 * Validates the validateConditionEntry constraint of '<em>Condition</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateCondition_validateConditionConditionEntry(Condition condition, DiagnosticChain diagnostics,
+	public boolean validateCondition_validateConditionEntry(Condition condition, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return condition.validateConditionConditionEntry(diagnostics, context);
+		return condition.validateConditionEntry(diagnostics, context);
 	}
 
 	/**

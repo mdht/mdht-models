@@ -74,19 +74,20 @@ public class SocialHistorySectionOperations extends
 	 * @generated
 	 * @ordered
 	 */
+
 	protected static Constraint VALIDATE_HITSP_SOCIAL_HISTORY_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.3.88.11.83.126')
 	 * @param socialHistorySection The receiving '<em><b>Social History Section</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
+
 	public static boolean validateHITSPSocialHistorySectionTemplateId(SocialHistorySection socialHistorySection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -132,19 +133,20 @@ public class SocialHistorySectionOperations extends
 	 * @generated
 	 * @ordered
 	 */
+
 	protected static Constraint VALIDATE_HITSP_SOCIAL_HISTORY_SECTION_SOCIAL_HISTORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.entry->exists(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(hitsp::SocialHistory))
 	 * @param socialHistorySection The receiving '<em><b>Social History Section</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
+
 	public static boolean validateHITSPSocialHistorySectionSocialHistory(SocialHistorySection socialHistorySection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -195,10 +197,6 @@ public class SocialHistorySectionOperations extends
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(hitsp::SocialHistory)).oclAsType(hitsp::SocialHistory)
-	 * @param socialHistorySection The receiving '<em><b>Social History Section</b></em>' model object.
-	 * <!-- end-model-doc -->
 	 * @generated
 	 */
 	public static EList<SocialHistory> getSocialHistories(SocialHistorySection socialHistorySection) {

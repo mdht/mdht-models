@@ -82,7 +82,6 @@ public class AdvanceDirectiveOperations extends AdvanceDirectiveObservationOpera
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.effectiveTime.low.hasContent()  or self.effectiveTime.low.isNullFlavorDefined()
 	 * @param advanceDirective The receiving '<em><b>Advance Directive</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -140,7 +139,6 @@ public class AdvanceDirectiveOperations extends AdvanceDirectiveObservationOpera
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.effectiveTime.high.hasContent() or self.effectiveTime.high.isNullFlavorDefined()
 	 * @param advanceDirective The receiving '<em><b>Advance Directive</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -197,7 +195,6 @@ public class AdvanceDirectiveOperations extends AdvanceDirectiveObservationOpera
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.participant.participantRole->size() > 0
 	 * @param advanceDirective The receiving '<em><b>Advance Directive</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -254,7 +251,6 @@ public class AdvanceDirectiveOperations extends AdvanceDirectiveObservationOpera
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.participant->one(par : cda::Participant2 | par.typeCode = vocab::ParticipationType::CST)
 	 * @param advanceDirective The receiving '<em><b>Advance Directive</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -312,7 +308,6 @@ public class AdvanceDirectiveOperations extends AdvanceDirectiveObservationOpera
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.participant.participantRole->one(pr : cda::ParticipantRole | pr.classCode = vocab::RoleClassRoot::AGNT)
 	 * @param advanceDirective The receiving '<em><b>Advance Directive</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -371,7 +366,6 @@ public class AdvanceDirectiveOperations extends AdvanceDirectiveObservationOpera
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.participant.participantRole.addr->size() = 1
 	 * @param advanceDirective The receiving '<em><b>Advance Directive</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -428,7 +422,6 @@ public class AdvanceDirectiveOperations extends AdvanceDirectiveObservationOpera
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.participant.participantRole.telecom->size() > 0
 	 * @param advanceDirective The receiving '<em><b>Advance Directive</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -485,7 +478,6 @@ public class AdvanceDirectiveOperations extends AdvanceDirectiveObservationOpera
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.participant.participantRole.playingEntity.name->size() = 1
 	 * @param advanceDirective The receiving '<em><b>Advance Directive</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -542,7 +534,6 @@ public class AdvanceDirectiveOperations extends AdvanceDirectiveObservationOpera
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.3.88.11.83.12')
 	 * @param advanceDirective The receiving '<em><b>Advance Directive</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -602,9 +593,6 @@ public class AdvanceDirectiveOperations extends AdvanceDirectiveObservationOpera
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * (self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and 
-	 * let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in 
-	 * value.codeSystem = '2.16.840.1.113883.6.96' and (value.code = '281789004' or value.code = '89666000' or value.code = '225204009' or value.code = '52765003' or value.code = '78823007' or value.code = '304251008'))
 	 * @param advanceDirective The receiving '<em><b>Advance Directive</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -662,7 +650,6 @@ public class AdvanceDirectiveOperations extends AdvanceDirectiveObservationOpera
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * (self.effectiveTime.oclIsUndefined() or self.effectiveTime.isNullFlavorUndefined()) implies (not self.effectiveTime.oclIsUndefined())
 	 * @param advanceDirective The receiving '<em><b>Advance Directive</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
