@@ -52,60 +52,7 @@
 <li>If medication use is unknown, the appropriate nullFlavor <b>MAY</b> be present (see unknown information in Section 1)</li>
 <li>If medication use is unknown, the appropriate nullFlavor <b>MAY</b> be present (see unknown information in Section 1)</li>
 </ol>
-<section id="tableconformance"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="8" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><colspec colname="col2" colnum="2" /><colspec colname="col3" colnum="3" /><colspec colname="col4" colnum="4" /><colspec colname="col5" colnum="5" /><colspec colname="col6" colnum="6" /><colspec colname="col7" colnum="7" /><thead> <row><entry namest="col0" nameend="col7" >emspcr::CurrentMedicationSection</entry>  </row>  <row><entry namest="col0" nameend="col7" >/cda:ClinicalDocument/cda:component/cda:structuredBody/cda:component/cda:section[cda:templateId/@root = 2.16.840.1.113883.10.20.22.2.1.1]/</entry>  </row>  <row><entry>Name</entry><entry>XPath</entry><entry>Cardinality</entry><entry>Severity</entry><entry>Nullable</entry><entry>Data Type</entry><entry>Conformance</entry><entry>Value(s)</entry></row></thead><tbody><row><entry>title</entry><entry>title</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>ST</entry><entry>CONF:10219</entry><entry> MISSINGTYPE</entry></row> 
-<row><entry>currentlyOnMedication</entry><entry>cda:entry/cda:observation[cda:templateId/@root = 2.16.840.1.1133883.17.3.10.1.75]</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>CurrentlyOnMedication</entry><entry></entry><entry> </entry></row> 
-<row><entry>CurrentMedication</entry><entry>CurrentMedication</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>CurrentMedicationSection</entry><entry>CONF:10008</entry><entry> </entry></row> 
-<row><entry>currentMedication</entry><entry>cda:entry/cda:substanceAdministration[cda:templateId/@root = 2.16.840.1.113883.10.20.22.4.16]</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>CurrentMedication</entry><entry></entry><entry> </entry></row> 
-<row><entry>patientOnAnticoagulants</entry><entry>cda:entry/cda:observation[cda:templateId/@root = 2.16.840.1.1133883.17.3.10.1.76]</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>PatientOnAnticoagulants</entry><entry></entry><entry> </entry></row> 
-<row><entry>text</entry><entry>text</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>StrucDocText</entry><entry></entry><entry> </entry></row> 
-</tbody></tgroup></table></p></section>
-<codeblock id="example"><![CDATA[<section xmlns="urn:hl7-org:v3">
-  <templateId root="2.16.840.1.113883.17.3.10.1.15"/>
-  <templateId root="2.16.840.1.113883.10.20.22.2.1"/>
-  <templateId root="2.16.840.1.113883.10.20.22.2.1.1"/>
-  <id root="MDHT" extension="1943661518"/>
-  <code code="10160-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="History of medication use"/>
-  <title>EMS Current Medications Section</title>
-  <text/>
-  <entry>
-    <observation moodCode="EVN">
-      <templateId root="2.16.840.1.1133883.17.3.10.1.75"/>
-      <id root="MDHT" extension="1131416748"/>
-      <code code="67791-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Currently on medication"/>
-      <text>Text Value</text>
-      <effectiveTime>
-        <low value="2013"/>
-        <high value="2013"/>
-      </effectiveTime>
-    </observation>
-  </entry>
-  <entry>
-    <observation moodCode="EVN">
-      <templateId root="2.16.840.1.1133883.17.3.10.1.76"/>
-      <id root="MDHT" extension="403831237"/>
-      <code code="69749-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Patient on anticoagulants"/>
-      <text>Text Value</text>
-      <effectiveTime>
-        <low value="2013"/>
-        <high value="2013"/>
-      </effectiveTime>
-    </observation>
-  </entry>
-  <entry>
-    <substanceAdministration classCode="SBADM">
-      <templateId root="2.16.840.1.1133883.17.3.10.1.77"/>
-      <templateId root="2.16.840.1.113883.10.20.22.4.16"/>
-      <id root="MDHT" extension="473118929"/>
-      <text>Text Value</text>
-      <effectiveTime value="20130612"/>
-      <routeCode codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus"/>
-      <approachSiteCode codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
-      <consumable>
-        <manufacturedProduct/>
-      </consumable>
-    </substanceAdministration>
-  </entry>
-</section>]]></codeblock>
+<codeblock id="example"><![CDATA[Error: Missing Runtime Class]]></codeblock>
 <section id="changes">
 </section>
 <p><ph id="classformalname">Current Medication Section</ph></p>

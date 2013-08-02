@@ -8,6 +8,7 @@
 			documents that support a common set of information in the emergency medical services
 			(EMS) domain. </p>
 		<p>This release covers the provision of information from an EMS crew to a receiving hospital
-			or emergency department.</p>
+			or emergency department. A future release will cover the entire EMS dataset; this document will be
+			a template within that specification.</p>
 	</body>
 </topic>
