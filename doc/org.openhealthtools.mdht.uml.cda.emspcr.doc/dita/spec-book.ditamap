@@ -48,6 +48,7 @@
         <preface>
             <topicref href="preface/IP.dita" navtitle="Intellectual Property Notes" type="topic"/> 
            <topicref href="preface/Acknowledgments.dita" navtitle="Acknowledgments" type="topic"/>
+           <topicref href="preface/RevisionHistory.dita" navtitle="Revision History" type="topic"/>
         </preface>
         <booklists>
             <toc/>

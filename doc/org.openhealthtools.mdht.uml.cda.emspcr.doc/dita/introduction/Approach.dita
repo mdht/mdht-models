@@ -40,5 +40,11 @@
 			into computational models expressed in UML. These models are used by automated tooling
 			to generate this publication, plus validation tools and Java libraries for
 			implementers.</p>
+			<p>Regarding terminologies, short value sets, including all those defined in this guide,
+			can be reviewed in the appendix. Longer sets and systems should be retrieved from a standard
+			terminology source, such as the CDC's PHIN VADS (phinvads.cdc.gov), the NLM's VSAC 
+			(vsac.nlm.nih.gov), or AHRQ's USHIK (ushik.ahrq.gov). We anticipate publishing EMS-specific 
+			value sets in one or more of these sites.  
+			</p>
 		</body>
 </topic>

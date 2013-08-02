@@ -18,7 +18,7 @@
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:10719)<tt><b>/@code</b>="67537-1" </tt><i>EMS protocol</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10718)
 </li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type CD (CONF:10720), where the @code <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/Protocol.dita">Protocol</xref> 2.16.840.1.113883.17.3.5.73</tt><b> STATIC</b> (CONF:10721)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type CD (CONF:10720), where the @code <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/Protocol.dita">Protocol</xref> 2.16.840.1.113883.17.3.11.73</tt><b> STATIC</b> (CONF:10721)
 <ul><li><p><lines><i>NEMSIS Trace: EProtocols.01</i></lines></p></li></ul></li>
 <li>Contains zero or one [0..1] <tt><b>entryRelationship</b></tt> <ol><li> This entryRelationship <b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref href="../ProtocolAgeCategory.dita">Protocol Age Category</xref><ol>
 <li>Contains exactly one [1..1] <xref href="../ProtocolAgeCategory.dita">Protocol Age Category</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.149</tt>)</li></ol></li></ol>
@@ -31,34 +31,13 @@
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:10719)<tt><b>/@code</b>="67537-1" </tt><i>EMS protocol</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10718)
 </li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type CD (CONF:10720), where the @code <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/Protocol.dita">Protocol</xref> 2.16.840.1.113883.17.3.5.73</tt><b> STATIC</b> (CONF:10721)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type CD (CONF:10720), where the @code <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/Protocol.dita">Protocol</xref> 2.16.840.1.113883.17.3.11.73</tt><b> STATIC</b> (CONF:10721)
 <ul><li><p><lines><i>NEMSIS Trace: EProtocols.01</i></lines></p></li></ul></li>
 <li>Contains zero or one [0..1] <tt><b>entryRelationship</b></tt> <ol><li> This entryRelationship <b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref href="../ProtocolAgeCategory.dita">Protocol Age Category</xref><ol>
 <li>Contains exactly one [1..1] <xref href="../ProtocolAgeCategory.dita">Protocol Age Category</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.149</tt>)</li></ol></li></ol>
 </li>
 </ol>
-<section id="tableconformance"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="8" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><colspec colname="col2" colnum="2" /><colspec colname="col3" colnum="3" /><colspec colname="col4" colnum="4" /><colspec colname="col5" colnum="5" /><colspec colname="col6" colnum="6" /><colspec colname="col7" colnum="7" /><thead> <row><entry namest="col0" nameend="col7" >emspcr::ProtocolObservation</entry>  </row>  <row><entry namest="col0" nameend="col7" >cda::observation[cda:templateId/@root = 2.16.840.1.1133883.17.3.10.1.93]/</entry>  </row>  <row><entry>Name</entry><entry>XPath</entry><entry>Cardinality</entry><entry>Severity</entry><entry>Nullable</entry><entry>Data Type</entry><entry>Conformance</entry><entry>Value(s)</entry></row></thead><tbody><row><entry>moodCode</entry><entry>@moodCode</entry><entry>1..1</entry><entry>SHALL</entry><entry>NO</entry><entry>x_ActMoodDocumentObservation</entry><entry></entry><entry> DEF</entry></row> 
-<row><entry>code</entry><entry>code</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>CD</entry><entry>CONF:10718</entry><entry>LOINC 2.16.840.1.113883.6.1 67537-1</entry></row> 
-<row><entry>value</entry><entry>value</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>CD</entry><entry>CONF:10720</entry><entry> </entry></row> 
-<row><entry>ProtocolAgeCategoryRelationship</entry><entry>ProtocolAgeCategoryRelationship</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>ProtocolAgeCategoryRelationship</entry><entry></entry><entry> </entry></row> 
-<row><entry>protocolObservation</entry><entry>protocolObservation</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>ProtocolObservation</entry><entry></entry><entry> </entry></row> 
-</tbody></tgroup></table></p></section>
-<codeblock id="example"><![CDATA[<observation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" moodCode="EVN">
-  <templateId root="2.16.840.1.1133883.17.3.10.1.93"/>
-  <id root="MDHT" extension="840678755"/>
-  <code code="67537-1" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="EMS protocol"/>
-  <effectiveTime>
-    <low value="2013"/>
-    <high value="2013"/>
-  </effectiveTime>
-  <value xsi:type="CD" code="293234997"/>
-  <entryRelationship>
-    <observation>
-      <code code="23402688"/>
-      <value xsi:type="CD" code="1163598507"/>
-    </observation>
-  </entryRelationship>
-</observation>]]></codeblock>
+<codeblock id="example"><![CDATA[Error: Missing Runtime Class]]></codeblock>
 <section id="changes">
 </section>
 <p><ph id="classformalname">Protocol Observation</ph></p>

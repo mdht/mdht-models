@@ -3,7 +3,7 @@
 <topic id="classId" xml:lang="en-us">
 <title>Method Of ECG Interpretation</title>
 <prolog id="prolog">
-<resourceid id="2.16.840.1.113883.17.3.5.20"/>
+<resourceid id="2.16.840.1.113883.17.3.11.20"/>
 </prolog>
 <body>
 <!-- THIS IS GENERATED CONTENT, DO NOT EDIT -->
@@ -12,7 +12,7 @@
 <colspec colname="col1" colwidth="1*"/>
 <colspec colname="col2" colwidth="4*"/>
 <tbody>
-<row><entry>Value Set</entry><entry>MethodOfECGInterpretation - 2.16.840.1.113883.17.3.5.20</entry></row>
+<row><entry>Value Set</entry><entry>MethodOfECGInterpretation - 2.16.840.1.113883.17.3.11.20</entry></row>
 <row><entry>Code System</entry><entry>LOINC - 2.16.840.1.113883.6.1</entry></row>
 <row><entry>Definition</entry><entry>Method for transforming ECG data into a clinical finding</entry></row>
 </tbody></tgroup></table>

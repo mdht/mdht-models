@@ -3,7 +3,7 @@
 <topic id="topic_id" xml:lang="en-us">
   <title>UCUM Unit Mapping</title>
   <body>
-    <p>This appendix provides UCUM codes for units provided by NEMSIS specifications.</p>
+    <p>This appendix provides UCUM codes for units provided by NEMSIS specifications. Note that "liters" is always uppercase "L": the  character "1" signifies the numeral "one."</p>
     <p>
       <table id="table_yyy_q3z_sg">
         <tgroup cols="6">

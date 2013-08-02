@@ -49,8 +49,7 @@
               <entry> null </entry>
               <entry> NI </entry>
               <entry> medication </entry>
-              <entry> Add Boolean observation; put null value in observation.text = "unable to
-                complete" </entry>
+              <entry> SBADM.value = null (NI); SBADM.text = "unable to complete" </entry>
             </row>
             <row>
               <entry> 3 </entry>
@@ -58,33 +57,15 @@
               <entry> null </entry>
               <entry> NI </entry>
               <entry> procedure </entry>
-              <entry> Add Boolean observation; put null value in observation.text = "unable to
-                complete" </entry>
+              <entry> PROC.value = null (NI); PROC.text = "unable to complete" </entry>
             </row>
             <row>
               <entry> 4 </entry>
               <entry> Refused </entry>
               <entry> null </entry>
               <entry> ASKU (NT) </entry>
-              <entry> observation </entry>
+              <entry> observation (including history)</entry>
               <entry> Observation.value = null (ASKU) </entry>
-            </row>
-            <row>
-              <entry> 5 </entry>
-              <entry> Refused </entry>
-              <entry> neg </entry>
-              <entry>   </entry>
-              <entry> observation </entry>
-              <entry> Observation.value = null (ASKU); with a relationship to an act with this code
-              </entry>
-            </row>
-            <row>
-              <entry> 6 </entry>
-              <entry> Refused </entry>
-              <entry> null </entry>
-              <entry> ASKU (NT) </entry>
-              <entry> medication history </entry>
-              <entry> Add Boolean observation; Observation.value = null (ASKU) </entry>
             </row>
             <row>
               <entry> 7 </entry>
@@ -92,16 +73,7 @@
               <entry> neg </entry>
               <entry>   </entry>
               <entry> medication given </entry>
-              <entry> negate specific medication with a relationship to an act with this code
-                (refused) </entry>
-            </row>
-            <row>
-              <entry> 8 </entry>
-              <entry> Refused </entry>
-              <entry> null </entry>
-              <entry> ASKU (NT) </entry>
-              <entry> procedure history </entry>
-              <entry> Add Boolean observation; Observation.value = null (ASKU) </entry>
+              <entry> negate specific medication; put "refused" value in MedicationNotAdministeredReason observation</entry>
             </row>
             <row>
               <entry> 9 </entry>
@@ -109,8 +81,7 @@
               <entry> neg </entry>
               <entry>   </entry>
               <entry> procedure performed </entry>
-              <entry> negate specific procedure with a relationship to an act with this code
-              </entry>
+              <entry> negate specific procedure; put "refused" value in ReasonProcedureNotAttempted observation </entry>
             </row>
             <row>
               <entry> 10 </entry>
@@ -126,7 +97,7 @@
               <entry> none </entry>
               <entry>   </entry>
               <entry> observation: negation value </entry>
-              <entry> q= allergy; negate; a="no known drug allergies" </entry>
+              <entry> Use Boolean observation ExistenceOfDrugAllergy </entry>
             </row>
             <row>
               <entry> 12 </entry>
@@ -134,31 +105,7 @@
               <entry> none </entry>
               <entry>   </entry>
               <entry> observation: alcohol </entry>
-              <entry> q= alcohol/drug ind; a="none" </entry>
-            </row>
-            <row>
-              <entry> 13 </entry>
-              <entry> None reported </entry>
-              <entry> none </entry>
-              <entry>   </entry>
-              <entry> observation: history (condition) </entry>
-              <entry> Add Boolean observation; observation.value = "none" </entry>
-            </row>
-            <row>
-              <entry> 14 </entry>
-              <entry> None reported </entry>
-              <entry> none </entry>
-              <entry>   </entry>
-              <entry> medication </entry>
-              <entry> Add Boolean observation; observation.value = "none" </entry>
-            </row>
-            <row>
-              <entry> 15 </entry>
-              <entry> None reported </entry>
-              <entry> none </entry>
-              <entry>   </entry>
-              <entry> procedure </entry>
-              <entry> Add Boolean observation; observation.value = "none" </entry>
+              <entry> Use Boolean observation ExistenceOfDrugUseIndication </entry>
             </row>
             <row>
               <entry> 16 </entry>
@@ -166,17 +113,7 @@
               <entry> none </entry>
               <entry>   </entry>
               <entry> medication </entry>
-              <entry> Negate med code = 372862008 anticoagulant (Type:= substance) or 81839001
-                anticoagulant (Type:= pharmaceutical / biologic product) </entry>
-            </row>
-            <row>
-              <entry> 17 </entry>
-              <entry> No anticoagulants or bleeding disorder </entry>
-              <entry> none </entry>
-              <entry>   </entry>
-              <entry> observation </entry>
-              <entry> Negate observation value = 64779008 bleeding disorder (Type:= clinical
-                finding). There is no single coherent IDC-10 code for bleeding disorder </entry>
+              <entry> Use Boolean observation PatientOnAnticoagulants; negate HistoryOfCondition observation for D66, D67, D68 </entry>
             </row>
             <row>
               <entry> 18 </entry>
@@ -184,8 +121,7 @@
               <entry> neg </entry>
               <entry>   </entry>
               <entry> medication, procedure </entry>
-              <entry> negate specific procedure or medication with a relationship to an act with
-                this code </entry>
+              <entry> negate specific procedure or medication; use related reason observation to record reason</entry>
             </row>
             <row>
               <entry> 19 </entry>
@@ -193,8 +129,7 @@
               <entry> neg </entry>
               <entry>   </entry>
               <entry> medication, procedure </entry>
-              <entry> negate specific procedure or medication with a relationship to an act with
-                this code </entry>
+              <entry> negate specific procedure or medication; use related reason observation to record reason </entry>
             </row>
             <row>
               <entry> 20 </entry>
@@ -202,8 +137,7 @@
               <entry> neg </entry>
               <entry>   </entry>
               <entry> medication </entry>
-              <entry> negate specific medication with a relationship to an act with this code
-              </entry>
+              <entry> negate specific procedure or medication; use related reason observation to record reason </entry>
             </row>
             <row>
               <entry> 21 </entry>
@@ -211,8 +145,7 @@
               <entry> neg </entry>
               <entry>   </entry>
               <entry> medication </entry>
-              <entry> negate specific medication with a relationship to an act with this code
-              </entry>
+              <entry> negate specific procedure or medication; use related reason observation to record reason </entry>
             </row>
             <row>
               <entry>
