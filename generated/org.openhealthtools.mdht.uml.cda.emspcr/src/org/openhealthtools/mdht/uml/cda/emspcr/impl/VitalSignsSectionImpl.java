@@ -57,68 +57,68 @@ public class VitalSignsSectionImpl extends org.openhealthtools.mdht.uml.cda.cons
 
 	/**
 	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	* <!-- end-user-doc -->
 	* @generated
 	*/
-	public boolean validateEmspcrVitalSignsSectionCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return VitalSignsSectionOperations.validateEmspcrVitalSignsSectionCode(this, diagnostics, context);
+	public boolean validateEMSPCRVitalSignsSectionCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return VitalSignsSectionOperations.validateEMSPCRVitalSignsSectionCode(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	public boolean validateEmspcrVitalSignsSectionTitle(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return VitalSignsSectionOperations.validateEmspcrVitalSignsSectionTitle(this, diagnostics, context);
+	 * @generated
+	 */
+	public boolean validateEMSPCRVitalSignsSectionTitle(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return VitalSignsSectionOperations.validateEMSPCRVitalSignsSectionTitle(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	public boolean validateEmspcrVitalSignsSectionText(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return VitalSignsSectionOperations.validateEmspcrVitalSignsSectionText(this, diagnostics, context);
+	 * @generated
+	 */
+	public boolean validateEMSPCRVitalSignsSectionText(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return VitalSignsSectionOperations.validateEMSPCRVitalSignsSectionText(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	public boolean validateEmspcrVitalSignsSectionVitalSignsOrganizer(DiagnosticChain diagnostics,
+	 * @generated
+	 */
+	public boolean validateEMSPCRVitalSignsSectionVitalSignsOrganizer(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return VitalSignsSectionOperations.validateEmspcrVitalSignsSectionVitalSignsOrganizer(
+		return VitalSignsSectionOperations.validateEMSPCRVitalSignsSectionVitalSignsOrganizer(
 			this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	public boolean validateEmspcrVitalSignsSectionPriorAidVitals(DiagnosticChain diagnostics,
+	 * @generated
+	 */
+	public boolean validateEMSPCRVitalSignsSectionPriorAidVitals(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return VitalSignsSectionOperations.validateEmspcrVitalSignsSectionPriorAidVitals(this, diagnostics, context);
+		return VitalSignsSectionOperations.validateEMSPCRVitalSignsSectionPriorAidVitals(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	public boolean validateEmspcrVitalSignsSectionAdditionalVitalSignsOrganizer(DiagnosticChain diagnostics,
+	 * @generated
+	 */
+	public boolean validateEMSPCRVitalSignsSectionAdditionalVitalSignsOrganizer(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return VitalSignsSectionOperations.validateEmspcrVitalSignsSectionAdditionalVitalSignsOrganizer(
+		return VitalSignsSectionOperations.validateEMSPCRVitalSignsSectionAdditionalVitalSignsOrganizer(
 			this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public VitalSignsOrganizer getemspcrVitalSignsOrganizer() {
 		return VitalSignsSectionOperations.getemspcrVitalSignsOrganizer(this);
 	}

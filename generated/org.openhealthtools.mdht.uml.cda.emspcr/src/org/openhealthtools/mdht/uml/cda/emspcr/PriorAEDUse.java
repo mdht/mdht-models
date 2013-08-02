@@ -26,8 +26,8 @@ import org.openhealthtools.mdht.uml.cda.Observation;
  *
  * @see org.openhealthtools.mdht.uml.cda.emspcr.EmspcrPackage#getPriorAEDUse()
  * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='PriorAEDUsePriorAEDProviderParticipation PriorAEDUseTemplateId PriorAEDUseCode PriorAEDUseValue PriorAEDUseMoodCode' templateId.root='2.16.840.1.1133883.17.3.10.1.126' code.code='67508-2' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='AED use prior to EMS arrival' value.codeSystem='2.16.840.1.113883.6.1' value.codeSystemName='LOINC' moodCode='EVN'"
- *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrPriorAEDUsePriorAEDProviderParticipation constraints.validation.error='PriorAEDProviderParticipationPriorAEDProvider PriorAEDProviderParticipationTypeCode' typeCode='RESP'"
- *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrPriorAEDUsePriorAEDProviderParticipationPriorAEDProvider code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' constraints.validation.error='PriorAEDProviderCode'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrPriorAEDUsePriorAEDProviderParticipation constraints.validation.error='PriorAEDUsePriorAEDProviderParticipationPriorAEDProvider PriorAEDUsePriorAEDProviderParticipationTypeCode' typeCode='RESP'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrPriorAEDUsePriorAEDProviderParticipationPriorAEDProvider code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' constraints.validation.error='PriorAEDUsePriorAEDProviderParticipationPriorAEDProviderCode'"
  * @generated
  */
 public interface PriorAEDUse extends Observation {

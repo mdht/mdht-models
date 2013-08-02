@@ -12,6 +12,7 @@ import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 
+import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EObject;
 
 import org.openhealthtools.mdht.emf.runtime.util.Initializer;
@@ -84,7 +85,7 @@ public interface AdvanceDirectivesSection extends Section {
 	* @param diagnostics The chain of diagnostics to which problems are to be appended.
 	* @param context The cache of context-specific information.
 	* <!-- end-model-doc -->
-	* @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entry->one(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(emspcr::AdvancedDirectiveObservation) and entry.typeCode = vocab::x_ActRelationshipEntry::DRIV)'"
+	* @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entry->exists(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(emspcr::AdvancedDirectiveObservation) and entry.typeCode = vocab::x_ActRelationshipEntry::DRIV)'"
 	* @generated
 	*/
 	boolean validateAdvanceDirectivesSectionAdvancedDirectiveObservation(DiagnosticChain diagnostics,
@@ -92,18 +93,18 @@ public interface AdvanceDirectivesSection extends Section {
 
 	/**
 	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	* <!-- end-user-doc -->
 	* @model kind="operation" required="true" ordered="false"
-	*        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(emspcr::AdvancedDirectiveObservation))->asSequence()->any(true).oclAsType(emspcr::AdvancedDirectiveObservation)'"
+	*        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(emspcr::AdvancedDirectiveObservation)).oclAsType(emspcr::AdvancedDirectiveObservation)'"
 	* @generated
 	*/
-	AdvancedDirectiveObservation getAdvancedDirectiveObservation();
+	EList<AdvancedDirectiveObservation> getAdvancedDirectiveObservations();
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public AdvanceDirectivesSection init();
 
 	/**

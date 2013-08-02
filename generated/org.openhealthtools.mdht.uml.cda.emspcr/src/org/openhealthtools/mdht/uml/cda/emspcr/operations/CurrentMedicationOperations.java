@@ -34,7 +34,7 @@ import org.openhealthtools.mdht.uml.cda.emspcr.util.EmspcrValidator;
  * <p>
  * The following operations are supported:
  * <ul>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.emspcr.CurrentMedication#validateCurrentMedicationCurrentMedicationConsumable(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Current Medication Current Medication Consumable</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.emspcr.CurrentMedication#validateCurrentMedicationConsumable(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Current Medication Consumable</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.emspcr.CurrentMedication#validateCurrentMedicationDoseQuantity(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Current Medication Dose Quantity</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.emspcr.CurrentMedication#validateCurrentMedicationRouteCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Current Medication Route Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.emspcr.CurrentMedication#validateCurrentMedicationRouteCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Current Medication Route Code</em>}</li>
@@ -57,58 +57,56 @@ public class CurrentMedicationOperations extends MedicationActivityOperations {
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateCurrentMedicationCurrentMedicationConsumable(CurrentMedication, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Current Medication Current Medication Consumable</em>}' operation.
+	* The cached OCL expression body for the '{@link #validateCurrentMedicationConsumable(CurrentMedication, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Current Medication Consumable</em>}' operation.
 	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	* @see #validateCurrentMedicationCurrentMedicationConsumable(CurrentMedication, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* <!-- end-user-doc -->
+	* @see #validateCurrentMedicationConsumable(CurrentMedication, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	* @generated
 	* @ordered
 	*/
-	protected static final String VALIDATE_CURRENT_MEDICATION_CURRENT_MEDICATION_CONSUMABLE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.consumable->one(consumable : cda::Consumable | not consumable.oclIsUndefined() and consumable.oclIsKindOf(cda::Consumable))";
+	protected static final String VALIDATE_CURRENT_MEDICATION_CONSUMABLE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.consumable->one(consumable : cda::Consumable | not consumable.oclIsUndefined() and consumable.oclIsKindOf(cda::Consumable))";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateCurrentMedicationCurrentMedicationConsumable(CurrentMedication, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Current Medication Current Medication Consumable</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateCurrentMedicationConsumable(CurrentMedication, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Current Medication Consumable</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateCurrentMedicationCurrentMedicationConsumable(CurrentMedication, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateCurrentMedicationConsumable(CurrentMedication, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 
-	protected static Constraint VALIDATE_CURRENT_MEDICATION_CURRENT_MEDICATION_CONSUMABLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static Constraint VALIDATE_CURRENT_MEDICATION_CONSUMABLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param currentMedication The receiving '<em><b>Current Medication</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param currentMedication The receiving '<em><b>Current Medication</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 
-	public static boolean validateCurrentMedicationCurrentMedicationConsumable(CurrentMedication currentMedication,
+	public static boolean validateCurrentMedicationConsumable(CurrentMedication currentMedication,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
-		if (VALIDATE_CURRENT_MEDICATION_CURRENT_MEDICATION_CONSUMABLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+		if (VALIDATE_CURRENT_MEDICATION_CONSUMABLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.CURRENT_MEDICATION);
 			try {
-				VALIDATE_CURRENT_MEDICATION_CURRENT_MEDICATION_CONSUMABLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CURRENT_MEDICATION_CURRENT_MEDICATION_CONSUMABLE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_CURRENT_MEDICATION_CONSUMABLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CURRENT_MEDICATION_CONSUMABLE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_CURRENT_MEDICATION_CURRENT_MEDICATION_CONSUMABLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+		if (!EOCL_ENV.createQuery(VALIDATE_CURRENT_MEDICATION_CONSUMABLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
 			currentMedication)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.CURRENT_MEDICATION__CURRENT_MEDICATION_CURRENT_MEDICATION_CONSUMABLE,
-					EmspcrPlugin.INSTANCE.getString("CurrentMedicationCurrentMedicationConsumable"),
-					new Object[] { currentMedication }));
+					EmspcrValidator.CURRENT_MEDICATION__CURRENT_MEDICATION_CONSUMABLE,
+					EmspcrPlugin.INSTANCE.getString("CurrentMedicationConsumable"), new Object[] { currentMedication }));
 			}
 
 			return false;
@@ -117,13 +115,13 @@ public class CurrentMedicationOperations extends MedicationActivityOperations {
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateCurrentMedicationDoseQuantity(CurrentMedication, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Current Medication Dose Quantity</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateCurrentMedicationDoseQuantity(CurrentMedication, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Current Medication Dose Quantity</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateCurrentMedicationDoseQuantity(CurrentMedication, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateCurrentMedicationDoseQuantity(CurrentMedication, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_CURRENT_MEDICATION_DOSE_QUANTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.doseQuantity.oclIsUndefined() or self.doseQuantity.isNullFlavorUndefined()) implies (not self.doseQuantity.oclIsUndefined())";
 
 	/**

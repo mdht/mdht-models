@@ -1583,7 +1583,7 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	public EClass getHistoryOfProceduresOrganizer() {
 		if (historyOfProceduresOrganizerEClass == null) {
 			historyOfProceduresOrganizerEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(EmspcrPackage.eNS_URI).getEClassifiers().get(
-				21);
+				111);
 		}
 		return historyOfProceduresOrganizerEClass;
 	}
@@ -1596,7 +1596,7 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	public EClass getSocialHistorySection() {
 		if (socialHistorySectionEClass == null) {
 			socialHistorySectionEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(EmspcrPackage.eNS_URI).getEClassifiers().get(
-				22);
+				21);
 		}
 		return socialHistorySectionEClass;
 	}
@@ -1609,7 +1609,7 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	public EClass getExistenceOfDrugUseIndication() {
 		if (existenceOfDrugUseIndicationEClass == null) {
 			existenceOfDrugUseIndicationEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(EmspcrPackage.eNS_URI).getEClassifiers().get(
-				23);
+				22);
 		}
 		return existenceOfDrugUseIndicationEClass;
 	}
@@ -1622,7 +1622,7 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	public EClass getDrugUseIndication() {
 		if (drugUseIndicationEClass == null) {
 			drugUseIndicationEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(EmspcrPackage.eNS_URI).getEClassifiers().get(
-				24);
+				23);
 		}
 		return drugUseIndicationEClass;
 	}
@@ -1635,7 +1635,7 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	public EClass getPhysicalAssessmentSection() {
 		if (physicalAssessmentSectionEClass == null) {
 			physicalAssessmentSectionEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(EmspcrPackage.eNS_URI).getEClassifiers().get(
-				25);
+				24);
 		}
 		return physicalAssessmentSectionEClass;
 	}
@@ -1648,7 +1648,7 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	public EClass getPhysicalAssessmentOrganizer() {
 		if (physicalAssessmentOrganizerEClass == null) {
 			physicalAssessmentOrganizerEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(EmspcrPackage.eNS_URI).getEClassifiers().get(
-				26);
+				25);
 		}
 		return physicalAssessmentOrganizerEClass;
 	}
@@ -1661,7 +1661,7 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	public EClass getSkinAssessment() {
 		if (skinAssessmentEClass == null) {
 			skinAssessmentEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(EmspcrPackage.eNS_URI).getEClassifiers().get(
-				27);
+				26);
 		}
 		return skinAssessmentEClass;
 	}
@@ -1674,7 +1674,7 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	public EClass getPatientPregnancy() {
 		if (patientPregnancyEClass == null) {
 			patientPregnancyEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(EmspcrPackage.eNS_URI).getEClassifiers().get(
-				28);
+				27);
 		}
 		return patientPregnancyEClass;
 	}
@@ -1687,7 +1687,7 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	public EClass getLastOralIntake() {
 		if (lastOralIntakeEClass == null) {
 			lastOralIntakeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(EmspcrPackage.eNS_URI).getEClassifiers().get(
-				29);
+				28);
 		}
 		return lastOralIntakeEClass;
 	}
@@ -1700,7 +1700,7 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	public EClass getPatientAge() {
 		if (patientAgeEClass == null) {
 			patientAgeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(EmspcrPackage.eNS_URI).getEClassifiers().get(
-				30);
+				29);
 		}
 		return patientAgeEClass;
 	}
@@ -1713,7 +1713,7 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	public EClass getThrombolyticContraindications() {
 		if (thrombolyticContraindicationsEClass == null) {
 			thrombolyticContraindicationsEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(EmspcrPackage.eNS_URI).getEClassifiers().get(
-				31);
+				30);
 		}
 		return thrombolyticContraindicationsEClass;
 	}
@@ -1726,7 +1726,7 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	public EClass getBarriersToPatientCare() {
 		if (barriersToPatientCareEClass == null) {
 			barriersToPatientCareEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(EmspcrPackage.eNS_URI).getEClassifiers().get(
-				32);
+				31);
 		}
 		return barriersToPatientCareEClass;
 	}
@@ -1739,7 +1739,7 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	public EClass getMedicationsAdministeredSection() {
 		if (medicationsAdministeredSectionEClass == null) {
 			medicationsAdministeredSectionEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(
-				EmspcrPackage.eNS_URI).getEClassifiers().get(33);
+				EmspcrPackage.eNS_URI).getEClassifiers().get(32);
 		}
 		return medicationsAdministeredSectionEClass;
 	}
@@ -1752,7 +1752,7 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	public EClass getMedicationAdministered() {
 		if (medicationAdministeredEClass == null) {
 			medicationAdministeredEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(EmspcrPackage.eNS_URI).getEClassifiers().get(
-				34);
+				33);
 		}
 		return medicationAdministeredEClass;
 	}
@@ -1765,7 +1765,7 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	public EClass getProceduresPerformedSection() {
 		if (proceduresPerformedSectionEClass == null) {
 			proceduresPerformedSectionEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(EmspcrPackage.eNS_URI).getEClassifiers().get(
-				35);
+				34);
 		}
 		return proceduresPerformedSectionEClass;
 	}
@@ -1778,7 +1778,7 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	public EClass getProcedure() {
 		if (procedureEClass == null) {
 			procedureEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(EmspcrPackage.eNS_URI).getEClassifiers().get(
-				36);
+				35);
 		}
 		return procedureEClass;
 	}
@@ -1791,7 +1791,7 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	public EClass getPatientCareNarrativeSection() {
 		if (patientCareNarrativeSectionEClass == null) {
 			patientCareNarrativeSectionEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(EmspcrPackage.eNS_URI).getEClassifiers().get(
-				37);
+				36);
 		}
 		return patientCareNarrativeSectionEClass;
 	}
@@ -1804,7 +1804,7 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	public EClass getSceneSection() {
 		if (sceneSectionEClass == null) {
 			sceneSectionEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(EmspcrPackage.eNS_URI).getEClassifiers().get(
-				38);
+				37);
 		}
 		return sceneSectionEClass;
 	}
@@ -1817,7 +1817,7 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	public EClass getFirstUnitIndicator() {
 		if (firstUnitIndicatorEClass == null) {
 			firstUnitIndicatorEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(EmspcrPackage.eNS_URI).getEClassifiers().get(
-				39);
+				38);
 		}
 		return firstUnitIndicatorEClass;
 	}
@@ -1830,7 +1830,7 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	public EClass getFirstUnitOnScene() {
 		if (firstUnitOnSceneEClass == null) {
 			firstUnitOnSceneEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(EmspcrPackage.eNS_URI).getEClassifiers().get(
-				40);
+				39);
 		}
 		return firstUnitOnSceneEClass;
 	}
@@ -1843,7 +1843,7 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	public EClass getScenePatientCount() {
 		if (scenePatientCountEClass == null) {
 			scenePatientCountEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(EmspcrPackage.eNS_URI).getEClassifiers().get(
-				41);
+				40);
 		}
 		return scenePatientCountEClass;
 	}
@@ -1856,7 +1856,7 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	public EClass getMassCasualtyIndicator() {
 		if (massCasualtyIndicatorEClass == null) {
 			massCasualtyIndicatorEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(EmspcrPackage.eNS_URI).getEClassifiers().get(
-				42);
+				41);
 		}
 		return massCasualtyIndicatorEClass;
 	}
@@ -1869,7 +1869,7 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	public EClass getLocationTypeObservation() {
 		if (locationTypeObservationEClass == null) {
 			locationTypeObservationEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(EmspcrPackage.eNS_URI).getEClassifiers().get(
-				43);
+				42);
 		}
 		return locationTypeObservationEClass;
 	}
@@ -1882,7 +1882,7 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	public EClass getDispatchSection() {
 		if (dispatchSectionEClass == null) {
 			dispatchSectionEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(EmspcrPackage.eNS_URI).getEClassifiers().get(
-				44);
+				43);
 		}
 		return dispatchSectionEClass;
 	}
@@ -1895,7 +1895,7 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	public EClass getEmergencyMedicalDispatchObservation() {
 		if (emergencyMedicalDispatchObservationEClass == null) {
 			emergencyMedicalDispatchObservationEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(
-				EmspcrPackage.eNS_URI).getEClassifiers().get(45);
+				EmspcrPackage.eNS_URI).getEClassifiers().get(44);
 		}
 		return emergencyMedicalDispatchObservationEClass;
 	}
@@ -1908,7 +1908,7 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	public EClass getComplaintReportedByDispatch() {
 		if (complaintReportedByDispatchEClass == null) {
 			complaintReportedByDispatchEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(EmspcrPackage.eNS_URI).getEClassifiers().get(
-				46);
+				45);
 		}
 		return complaintReportedByDispatchEClass;
 	}
@@ -1921,7 +1921,7 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	public EClass getDispositionSection() {
 		if (dispositionSectionEClass == null) {
 			dispositionSectionEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(EmspcrPackage.eNS_URI).getEClassifiers().get(
-				47);
+				46);
 		}
 		return dispositionSectionEClass;
 	}
@@ -1934,7 +1934,7 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	public EClass getTransportMethodObservation() {
 		if (transportMethodObservationEClass == null) {
 			transportMethodObservationEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(EmspcrPackage.eNS_URI).getEClassifiers().get(
-				48);
+				47);
 		}
 		return transportMethodObservationEClass;
 	}
@@ -1947,7 +1947,7 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	public EClass getNumberOfPatientsObservation() {
 		if (numberOfPatientsObservationEClass == null) {
 			numberOfPatientsObservationEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(EmspcrPackage.eNS_URI).getEClassifiers().get(
-				49);
+				48);
 		}
 		return numberOfPatientsObservationEClass;
 	}
@@ -1960,7 +1960,7 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	public EClass getIncidentDispositionObservation() {
 		if (incidentDispositionObservationEClass == null) {
 			incidentDispositionObservationEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(
-				EmspcrPackage.eNS_URI).getEClassifiers().get(50);
+				EmspcrPackage.eNS_URI).getEClassifiers().get(49);
 		}
 		return incidentDispositionObservationEClass;
 	}
@@ -1973,7 +1973,7 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	public EClass getTransportModeObservation() {
 		if (transportModeObservationEClass == null) {
 			transportModeObservationEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(EmspcrPackage.eNS_URI).getEClassifiers().get(
-				51);
+				50);
 		}
 		return transportModeObservationEClass;
 	}
@@ -1986,7 +1986,7 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	public EClass getReasonForChoosingDestinationObservation() {
 		if (reasonForChoosingDestinationObservationEClass == null) {
 			reasonForChoosingDestinationObservationEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(
-				EmspcrPackage.eNS_URI).getEClassifiers().get(52);
+				EmspcrPackage.eNS_URI).getEClassifiers().get(51);
 		}
 		return reasonForChoosingDestinationObservationEClass;
 	}
@@ -1999,7 +1999,7 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	public EClass getPrearrivalActivationObservation() {
 		if (prearrivalActivationObservationEClass == null) {
 			prearrivalActivationObservationEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(
-				EmspcrPackage.eNS_URI).getEClassifiers().get(53);
+				EmspcrPackage.eNS_URI).getEClassifiers().get(52);
 		}
 		return prearrivalActivationObservationEClass;
 	}
@@ -2012,7 +2012,7 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	public EClass getPatientConditionChangeAtDestinationObservation() {
 		if (patientConditionChangeAtDestinationObservationEClass == null) {
 			patientConditionChangeAtDestinationObservationEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(
-				EmspcrPackage.eNS_URI).getEClassifiers().get(54);
+				EmspcrPackage.eNS_URI).getEClassifiers().get(53);
 		}
 		return patientConditionChangeAtDestinationObservationEClass;
 	}
@@ -2025,7 +2025,7 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	public EClass getPersonnelAdverseEventSection() {
 		if (personnelAdverseEventSectionEClass == null) {
 			personnelAdverseEventSectionEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(EmspcrPackage.eNS_URI).getEClassifiers().get(
-				55);
+				54);
 		}
 		return personnelAdverseEventSectionEClass;
 	}
@@ -2038,7 +2038,7 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	public EClass getAdverseEventIndicator() {
 		if (adverseEventIndicatorEClass == null) {
 			adverseEventIndicatorEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(EmspcrPackage.eNS_URI).getEClassifiers().get(
-				56);
+				55);
 		}
 		return adverseEventIndicatorEClass;
 	}
@@ -2051,7 +2051,7 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	public EClass getAdverseEventTypeObservation() {
 		if (adverseEventTypeObservationEClass == null) {
 			adverseEventTypeObservationEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(EmspcrPackage.eNS_URI).getEClassifiers().get(
-				57);
+				56);
 		}
 		return adverseEventTypeObservationEClass;
 	}
@@ -2064,7 +2064,7 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	public EClass getProtocolSection() {
 		if (protocolSectionEClass == null) {
 			protocolSectionEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(EmspcrPackage.eNS_URI).getEClassifiers().get(
-				58);
+				57);
 		}
 		return protocolSectionEClass;
 	}
@@ -2077,7 +2077,7 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	public EClass getProtocolObservation() {
 		if (protocolObservationEClass == null) {
 			protocolObservationEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(EmspcrPackage.eNS_URI).getEClassifiers().get(
-				59);
+				58);
 		}
 		return protocolObservationEClass;
 	}
@@ -2090,7 +2090,7 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	public EClass getCandidatePatientRegistryType() {
 		if (candidatePatientRegistryTypeEClass == null) {
 			candidatePatientRegistryTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(EmspcrPackage.eNS_URI).getEClassifiers().get(
-				60);
+				59);
 		}
 		return candidatePatientRegistryTypeEClass;
 	}
@@ -2103,7 +2103,7 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	public EClass getResponseSection() {
 		if (responseSectionEClass == null) {
 			responseSectionEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(EmspcrPackage.eNS_URI).getEClassifiers().get(
-				61);
+				60);
 		}
 		return responseSectionEClass;
 	}
@@ -2116,7 +2116,7 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	public EClass getDelayOrganizer() {
 		if (delayOrganizerEClass == null) {
 			delayOrganizerEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(EmspcrPackage.eNS_URI).getEClassifiers().get(
-				62);
+				61);
 		}
 		return delayOrganizerEClass;
 	}
@@ -2129,7 +2129,7 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	public EClass getDispatchLocationOrganizer() {
 		if (dispatchLocationOrganizerEClass == null) {
 			dispatchLocationOrganizerEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(EmspcrPackage.eNS_URI).getEClassifiers().get(
-				63);
+				62);
 		}
 		return dispatchLocationOrganizerEClass;
 	}
@@ -2142,7 +2142,7 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	public EClass getResponseOdometerReadingOrganizer() {
 		if (responseOdometerReadingOrganizerEClass == null) {
 			responseOdometerReadingOrganizerEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(
-				EmspcrPackage.eNS_URI).getEClassifiers().get(64);
+				EmspcrPackage.eNS_URI).getEClassifiers().get(63);
 		}
 		return responseOdometerReadingOrganizerEClass;
 	}
@@ -2155,7 +2155,7 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	public EClass getResponseModeToScene() {
 		if (responseModeToSceneEClass == null) {
 			responseModeToSceneEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(EmspcrPackage.eNS_URI).getEClassifiers().get(
-				65);
+				64);
 		}
 		return responseModeToSceneEClass;
 	}
@@ -2168,7 +2168,7 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	public EClass getSituationSection() {
 		if (situationSectionEClass == null) {
 			situationSectionEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(EmspcrPackage.eNS_URI).getEClassifiers().get(
-				66);
+				65);
 		}
 		return situationSectionEClass;
 	}
@@ -2181,7 +2181,7 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	public EClass getComplaint() {
 		if (complaintEClass == null) {
 			complaintEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(EmspcrPackage.eNS_URI).getEClassifiers().get(
-				67);
+				66);
 		}
 		return complaintEClass;
 	}
@@ -2194,7 +2194,7 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	public EClass getPossibleInjury() {
 		if (possibleInjuryEClass == null) {
 			possibleInjuryEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(EmspcrPackage.eNS_URI).getEClassifiers().get(
-				68);
+				67);
 		}
 		return possibleInjuryEClass;
 	}
@@ -2207,7 +2207,7 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	public EClass getProviderPrimaryImpression() {
 		if (providerPrimaryImpressionEClass == null) {
 			providerPrimaryImpressionEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(EmspcrPackage.eNS_URI).getEClassifiers().get(
-				69);
+				68);
 		}
 		return providerPrimaryImpressionEClass;
 	}
@@ -2220,7 +2220,7 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	public EClass getPrimarySymptom() {
 		if (primarySymptomEClass == null) {
 			primarySymptomEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(EmspcrPackage.eNS_URI).getEClassifiers().get(
-				70);
+				69);
 		}
 		return primarySymptomEClass;
 	}
@@ -2233,7 +2233,7 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	public EClass getOtherSymptoms() {
 		if (otherSymptomsEClass == null) {
 			otherSymptomsEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(EmspcrPackage.eNS_URI).getEClassifiers().get(
-				71);
+				70);
 		}
 		return otherSymptomsEClass;
 	}
@@ -2246,7 +2246,7 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	public EClass getProviderSecondaryImpressions() {
 		if (providerSecondaryImpressionsEClass == null) {
 			providerSecondaryImpressionsEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(EmspcrPackage.eNS_URI).getEClassifiers().get(
-				72);
+				71);
 		}
 		return providerSecondaryImpressionsEClass;
 	}
@@ -2259,7 +2259,7 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	public EClass getInitialPatientAcuity() {
 		if (initialPatientAcuityEClass == null) {
 			initialPatientAcuityEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(EmspcrPackage.eNS_URI).getEClassifiers().get(
-				73);
+				72);
 		}
 		return initialPatientAcuityEClass;
 	}
@@ -2272,7 +2272,7 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	public EClass getTimesSection() {
 		if (timesSectionEClass == null) {
 			timesSectionEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(EmspcrPackage.eNS_URI).getEClassifiers().get(
-				74);
+				73);
 		}
 		return timesSectionEClass;
 	}
@@ -2285,7 +2285,7 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	public EClass getCallTime() {
 		if (callTimeEClass == null) {
 			callTimeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(EmspcrPackage.eNS_URI).getEClassifiers().get(
-				75);
+				74);
 		}
 		return callTimeEClass;
 	}
@@ -2298,7 +2298,7 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	public EClass getUnitNotifiedTime() {
 		if (unitNotifiedTimeEClass == null) {
 			unitNotifiedTimeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(EmspcrPackage.eNS_URI).getEClassifiers().get(
-				76);
+				75);
 		}
 		return unitNotifiedTimeEClass;
 	}
@@ -2311,7 +2311,7 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	public EClass getUnitEnRouteTime() {
 		if (unitEnRouteTimeEClass == null) {
 			unitEnRouteTimeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(EmspcrPackage.eNS_URI).getEClassifiers().get(
-				77);
+				76);
 		}
 		return unitEnRouteTimeEClass;
 	}
@@ -2324,7 +2324,7 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	public EClass getUnitOnSceneTime() {
 		if (unitOnSceneTimeEClass == null) {
 			unitOnSceneTimeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(EmspcrPackage.eNS_URI).getEClassifiers().get(
-				78);
+				77);
 		}
 		return unitOnSceneTimeEClass;
 	}
@@ -2337,7 +2337,7 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	public EClass getUnitAtPatienttTime() {
 		if (unitAtPatienttTimeEClass == null) {
 			unitAtPatienttTimeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(EmspcrPackage.eNS_URI).getEClassifiers().get(
-				79);
+				78);
 		}
 		return unitAtPatienttTimeEClass;
 	}
@@ -2350,7 +2350,7 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	public EClass getUnitLeftSceneTime() {
 		if (unitLeftSceneTimeEClass == null) {
 			unitLeftSceneTimeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(EmspcrPackage.eNS_URI).getEClassifiers().get(
-				80);
+				79);
 		}
 		return unitLeftSceneTimeEClass;
 	}
@@ -2363,7 +2363,7 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	public EClass getPatientArrivedAtDestinationTime() {
 		if (patientArrivedAtDestinationTimeEClass == null) {
 			patientArrivedAtDestinationTimeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(
-				EmspcrPackage.eNS_URI).getEClassifiers().get(81);
+				EmspcrPackage.eNS_URI).getEClassifiers().get(80);
 		}
 		return patientArrivedAtDestinationTimeEClass;
 	}
@@ -2376,7 +2376,7 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	public EClass getUnitBackInServiceTime() {
 		if (unitBackInServiceTimeEClass == null) {
 			unitBackInServiceTimeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(EmspcrPackage.eNS_URI).getEClassifiers().get(
-				82);
+				81);
 		}
 		return unitBackInServiceTimeEClass;
 	}
@@ -2389,7 +2389,7 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	public EClass getDispatchNotifiedTime() {
 		if (dispatchNotifiedTimeEClass == null) {
 			dispatchNotifiedTimeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(EmspcrPackage.eNS_URI).getEClassifiers().get(
-				83);
+				82);
 		}
 		return dispatchNotifiedTimeEClass;
 	}
@@ -2402,7 +2402,7 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	public EClass getVitalSignsSection() {
 		if (vitalSignsSectionEClass == null) {
 			vitalSignsSectionEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(EmspcrPackage.eNS_URI).getEClassifiers().get(
-				84);
+				83);
 		}
 		return vitalSignsSectionEClass;
 	}
@@ -2415,7 +2415,7 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	public EClass getVitalSignsOrganizer() {
 		if (vitalSignsOrganizerEClass == null) {
 			vitalSignsOrganizerEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(EmspcrPackage.eNS_URI).getEClassifiers().get(
-				85);
+				84);
 		}
 		return vitalSignsOrganizerEClass;
 	}
@@ -2428,7 +2428,7 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	public EClass getPriorAidVitals() {
 		if (priorAidVitalsEClass == null) {
 			priorAidVitalsEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(EmspcrPackage.eNS_URI).getEClassifiers().get(
-				86);
+				85);
 		}
 		return priorAidVitalsEClass;
 	}
@@ -2441,7 +2441,7 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	public EClass getAdditionalVitalSignsOrganizer() {
 		if (additionalVitalSignsOrganizerEClass == null) {
 			additionalVitalSignsOrganizerEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(EmspcrPackage.eNS_URI).getEClassifiers().get(
-				87);
+				86);
 		}
 		return additionalVitalSignsOrganizerEClass;
 	}
@@ -2454,7 +2454,7 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	public EClass getStrokeScore() {
 		if (strokeScoreEClass == null) {
 			strokeScoreEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(EmspcrPackage.eNS_URI).getEClassifiers().get(
-				88);
+				87);
 		}
 		return strokeScoreEClass;
 	}
@@ -2467,7 +2467,7 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	public EClass getPainScore() {
 		if (painScoreEClass == null) {
 			painScoreEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(EmspcrPackage.eNS_URI).getEClassifiers().get(
-				89);
+				88);
 		}
 		return painScoreEClass;
 	}
@@ -2480,7 +2480,7 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	public EClass getLevelOfResponsiveness() {
 		if (levelOfResponsivenessEClass == null) {
 			levelOfResponsivenessEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(EmspcrPackage.eNS_URI).getEClassifiers().get(
-				90);
+				89);
 		}
 		return levelOfResponsivenessEClass;
 	}
@@ -2493,7 +2493,7 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	public EClass getBloodGlucose() {
 		if (bloodGlucoseEClass == null) {
 			bloodGlucoseEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(EmspcrPackage.eNS_URI).getEClassifiers().get(
-				91);
+				90);
 		}
 		return bloodGlucoseEClass;
 	}
@@ -2506,7 +2506,7 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	public EClass getCarbonMonoxide() {
 		if (carbonMonoxideEClass == null) {
 			carbonMonoxideEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(EmspcrPackage.eNS_URI).getEClassifiers().get(
-				92);
+				91);
 		}
 		return carbonMonoxideEClass;
 	}
@@ -2519,7 +2519,7 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	public EClass getCarbonDioxide() {
 		if (carbonDioxideEClass == null) {
 			carbonDioxideEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(EmspcrPackage.eNS_URI).getEClassifiers().get(
-				93);
+				92);
 		}
 		return carbonDioxideEClass;
 	}
@@ -2532,7 +2532,7 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	public EClass getCardiacRhythm() {
 		if (cardiacRhythmEClass == null) {
 			cardiacRhythmEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(EmspcrPackage.eNS_URI).getEClassifiers().get(
-				94);
+				93);
 		}
 		return cardiacRhythmEClass;
 	}
@@ -2545,7 +2545,7 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	public EClass getGlasgowComaScoreOrganizer() {
 		if (glasgowComaScoreOrganizerEClass == null) {
 			glasgowComaScoreOrganizerEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(EmspcrPackage.eNS_URI).getEClassifiers().get(
-				95);
+				94);
 		}
 		return glasgowComaScoreOrganizerEClass;
 	}
@@ -2558,7 +2558,7 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	public EClass getGlasgowEye() {
 		if (glasgowEyeEClass == null) {
 			glasgowEyeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(EmspcrPackage.eNS_URI).getEClassifiers().get(
-				96);
+				95);
 		}
 		return glasgowEyeEClass;
 	}
@@ -2571,7 +2571,7 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	public EClass getGlasgowMotor() {
 		if (glasgowMotorEClass == null) {
 			glasgowMotorEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(EmspcrPackage.eNS_URI).getEClassifiers().get(
-				97);
+				96);
 		}
 		return glasgowMotorEClass;
 	}
@@ -2584,7 +2584,7 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	public EClass getGlasgowQualifier() {
 		if (glasgowQualifierEClass == null) {
 			glasgowQualifierEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(EmspcrPackage.eNS_URI).getEClassifiers().get(
-				98);
+				97);
 		}
 		return glasgowQualifierEClass;
 	}
@@ -2597,7 +2597,7 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	public EClass getGlasgowTotal() {
 		if (glasgowTotalEClass == null) {
 			glasgowTotalEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(EmspcrPackage.eNS_URI).getEClassifiers().get(
-				99);
+				98);
 		}
 		return glasgowTotalEClass;
 	}
@@ -2610,7 +2610,7 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	public EClass getGlasgowVerbal() {
 		if (glasgowVerbalEClass == null) {
 			glasgowVerbalEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(EmspcrPackage.eNS_URI).getEClassifiers().get(
-				100);
+				99);
 		}
 		return glasgowVerbalEClass;
 	}
@@ -2623,7 +2623,7 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	public EClass getInjuryIncidentDescriptionSection() {
 		if (injuryIncidentDescriptionSectionEClass == null) {
 			injuryIncidentDescriptionSectionEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(
-				EmspcrPackage.eNS_URI).getEClassifiers().get(101);
+				EmspcrPackage.eNS_URI).getEClassifiers().get(100);
 		}
 		return injuryIncidentDescriptionSectionEClass;
 	}
@@ -2636,7 +2636,7 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	public EClass getInjuryCauseCategory() {
 		if (injuryCauseCategoryEClass == null) {
 			injuryCauseCategoryEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(EmspcrPackage.eNS_URI).getEClassifiers().get(
-				102);
+				101);
 		}
 		return injuryCauseCategoryEClass;
 	}
@@ -2649,7 +2649,7 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	public EClass getInjuryMechanism() {
 		if (injuryMechanismEClass == null) {
 			injuryMechanismEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(EmspcrPackage.eNS_URI).getEClassifiers().get(
-				103);
+				102);
 		}
 		return injuryMechanismEClass;
 	}
@@ -2662,7 +2662,7 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	public EClass getTraumaCenterCriteria() {
 		if (traumaCenterCriteriaEClass == null) {
 			traumaCenterCriteriaEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(EmspcrPackage.eNS_URI).getEClassifiers().get(
-				104);
+				103);
 		}
 		return traumaCenterCriteriaEClass;
 	}
@@ -2675,7 +2675,7 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	public EClass getInjuryRiskFactor() {
 		if (injuryRiskFactorEClass == null) {
 			injuryRiskFactorEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(EmspcrPackage.eNS_URI).getEClassifiers().get(
-				105);
+				104);
 		}
 		return injuryRiskFactorEClass;
 	}
@@ -2688,7 +2688,7 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	public EClass getVehicleImpactArea() {
 		if (vehicleImpactAreaEClass == null) {
 			vehicleImpactAreaEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(EmspcrPackage.eNS_URI).getEClassifiers().get(
-				106);
+				105);
 		}
 		return vehicleImpactAreaEClass;
 	}
@@ -2701,7 +2701,7 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	public EClass getPatientLocationInVehicle() {
 		if (patientLocationInVehicleEClass == null) {
 			patientLocationInVehicleEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(EmspcrPackage.eNS_URI).getEClassifiers().get(
-				107);
+				106);
 		}
 		return patientLocationInVehicleEClass;
 	}
@@ -2714,7 +2714,7 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	public EClass getVehicleOccupantSafetyEquipment() {
 		if (vehicleOccupantSafetyEquipmentEClass == null) {
 			vehicleOccupantSafetyEquipmentEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(
-				EmspcrPackage.eNS_URI).getEClassifiers().get(108);
+				EmspcrPackage.eNS_URI).getEClassifiers().get(107);
 		}
 		return vehicleOccupantSafetyEquipmentEClass;
 	}
@@ -2727,7 +2727,7 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	public EClass getAirbagDeploymentStatus() {
 		if (airbagDeploymentStatusEClass == null) {
 			airbagDeploymentStatusEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(EmspcrPackage.eNS_URI).getEClassifiers().get(
-				109);
+				108);
 		}
 		return airbagDeploymentStatusEClass;
 	}
@@ -2740,7 +2740,7 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	public EClass getHeightOfFall() {
 		if (heightOfFallEClass == null) {
 			heightOfFallEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(EmspcrPackage.eNS_URI).getEClassifiers().get(
-				110);
+				109);
 		}
 		return heightOfFallEClass;
 	}
@@ -2753,7 +2753,7 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	public EClass getDisasterType() {
 		if (disasterTypeEClass == null) {
 			disasterTypeEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(EmspcrPackage.eNS_URI).getEClassifiers().get(
-				111);
+				110);
 		}
 		return disasterTypeEClass;
 	}

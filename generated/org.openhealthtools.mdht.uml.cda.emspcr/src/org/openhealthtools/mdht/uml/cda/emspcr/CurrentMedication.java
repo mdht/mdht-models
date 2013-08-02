@@ -25,16 +25,16 @@ import org.openhealthtools.mdht.uml.cda.consol.MedicationActivity;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.emspcr.EmspcrPackage#getCurrentMedication()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='CurrentMedicationCurrentMedicationConsumable CurrentMedicationTemplateId CurrentMedicationRouteCode' templateId.root='2.16.840.1.1133883.17.3.10.1.77' constraints.validation.warning='CurrentMedicationDoseQuantity CurrentMedicationRouteCodeP' routeCode.codeSystem='2.16.840.1.113883.3.26.1.1.1' routeCode.codeSystemName='FDA Route of Administration' constraints.validation.dependOn.CurrentMedicationRouteCode='CurrentMedicationRouteCodeP' constraints.validation.info='CurrentMedicationNegationInd CurrentMedicationNullFlavor'"
- *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrCurrentMedicationCurrentMedicationConsumable constraints.validation.error='CurrentMedicationConsumableManufacturedProduct'"
- *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrCurrentMedicationCurrentMedicationConsumableCurrentMedicationProduct constraints.validation.error='CurrentMedicationProductManufacturedLabeledDrug'"
- *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrCurrentMedicationCurrentMedicationConsumableCurrentMedicationProductCurrentMedicationDrug code.codeSystem='2.16.840.1.113883.6.88' code.codeSystemName='RxNorm' constraints.validation.error='CurrentMedicationDrugCode CurrentMedicationDrugCodeP' constraints.validation.dependOn.CurrentMedicationDrugCode='CurrentMedicationDrugCodeP'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='CurrentMedicationConsumable CurrentMedicationTemplateId CurrentMedicationRouteCode' templateId.root='2.16.840.1.1133883.17.3.10.1.77' constraints.validation.warning='CurrentMedicationDoseQuantity CurrentMedicationRouteCodeP' routeCode.codeSystem='2.16.840.1.113883.3.26.1.1.1' routeCode.codeSystemName='FDA Route of Administration' constraints.validation.dependOn.CurrentMedicationRouteCode='CurrentMedicationRouteCodeP' constraints.validation.info='CurrentMedicationNegationInd CurrentMedicationNullFlavor'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrCurrentMedicationCurrentMedicationConsumable constraints.validation.error='CurrentMedicationCurrentMedicationConsumableManufacturedProduct'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrCurrentMedicationCurrentMedicationConsumableCurrentMedicationProduct constraints.validation.error='CurrentMedicationCurrentMedicationConsumableCurrentMedicationProductManufacturedLabeledDrug'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrCurrentMedicationCurrentMedicationConsumableCurrentMedicationProductCurrentMedicationDrug code.codeSystem='2.16.840.1.113883.6.88' code.codeSystemName='RxNorm' constraints.validation.error='CurrentMedicationCurrentMedicationConsumableCurrentMedicationProductCurrentMedicationDrugCode CurrentMedicationCurrentMedicationConsumableCurrentMedicationProductCurrentMedicationDrugCodeP' constraints.validation.dependOn.CurrentMedicationCurrentMedicationConsumableCurrentMedicationProductCurrentMedicationDrugCode='CurrentMedicationCurrentMedicationConsumableCurrentMedicationProductCurrentMedicationDrugCodeP'"
  * @generated
  */
 public interface CurrentMedication extends MedicationActivity {
 	/**
 	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	* <!-- end-user-doc -->
 	* <!-- begin-model-doc -->
 	* @param diagnostics The chain of diagnostics to which problems are to be appended.
 	* @param context The cache of context-specific information.
@@ -42,19 +42,18 @@ public interface CurrentMedication extends MedicationActivity {
 	* @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.consumable->one(consumable : cda::Consumable | not consumable.oclIsUndefined() and consumable.oclIsKindOf(cda::Consumable))'"
 	* @generated
 	*/
-	boolean validateCurrentMedicationCurrentMedicationConsumable(DiagnosticChain diagnostics,
-			Map<Object, Object> context);
+	boolean validateCurrentMedicationConsumable(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.doseQuantity.oclIsUndefined() or self.doseQuantity.isNullFlavorUndefined()) implies (not self.doseQuantity.oclIsUndefined())'"
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.doseQuantity.oclIsUndefined() or self.doseQuantity.isNullFlavorUndefined()) implies (not self.doseQuantity.oclIsUndefined())'"
+	 * @generated
+	 */
 	boolean validateCurrentMedicationDoseQuantity(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**

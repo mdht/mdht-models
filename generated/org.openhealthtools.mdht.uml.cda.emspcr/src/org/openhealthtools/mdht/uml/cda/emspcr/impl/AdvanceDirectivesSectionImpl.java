@@ -12,6 +12,7 @@ import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 
+import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
 
@@ -103,18 +104,18 @@ public class AdvanceDirectivesSectionImpl extends SectionImpl implements Advance
 
 	/**
 	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	* <!-- end-user-doc -->
 	* @generated
 	*/
-	public AdvancedDirectiveObservation getAdvancedDirectiveObservation() {
-		return AdvanceDirectivesSectionOperations.getAdvancedDirectiveObservation(this);
+	public EList<AdvancedDirectiveObservation> getAdvancedDirectiveObservations() {
+		return AdvanceDirectivesSectionOperations.getAdvancedDirectiveObservations(this);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public AdvanceDirectivesSection init() {
 		return Initializer.Util.init(this);
 	}

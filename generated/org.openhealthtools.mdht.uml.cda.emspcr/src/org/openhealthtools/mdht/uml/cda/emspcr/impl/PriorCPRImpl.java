@@ -55,19 +55,18 @@ public class PriorCPRImpl extends ObservationImpl implements PriorCPR {
 
 	/**
 	* <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	* <!-- end-user-doc -->
 	* @generated
 	*/
-	public boolean validatePriorCPRPriorCPRProviderParticipation(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return PriorCPROperations.validatePriorCPRPriorCPRProviderParticipation(this, diagnostics, context);
+	public boolean validatePriorCPRProviderParticipation(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return PriorCPROperations.validatePriorCPRProviderParticipation(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validatePriorCPRTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PriorCPROperations.validatePriorCPRTemplateId(this, diagnostics, context);
 	}
