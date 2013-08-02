@@ -104,7 +104,7 @@ public class AdvanceDirectiveObservationImpl extends
 
 	/**
 	 * <!-- begin-user-doc -->
-	* <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	public boolean validateIHEAdvanceDirectiveObservationCode(DiagnosticChain diagnostics, Map<Object, Object> context) {

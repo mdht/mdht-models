@@ -84,7 +84,7 @@ public class VitalSignsOrganizerImpl extends org.openhealthtools.mdht.uml.cda.cc
 
 	/**
 	 * <!-- begin-user-doc -->
-	* <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	public boolean validateIHEVitalSignsOrganizerCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
@@ -102,7 +102,7 @@ public class VitalSignsOrganizerImpl extends org.openhealthtools.mdht.uml.cda.cc
 
 	/**
 	 * <!-- begin-user-doc -->
-	* <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	public boolean validateIHEVitalSignsOrganizerStatusCode(DiagnosticChain diagnostics, Map<Object, Object> context) {

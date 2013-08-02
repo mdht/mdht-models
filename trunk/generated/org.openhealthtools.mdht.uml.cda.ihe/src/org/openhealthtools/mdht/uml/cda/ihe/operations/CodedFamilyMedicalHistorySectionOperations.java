@@ -76,7 +76,6 @@ public class CodedFamilyMedicalHistorySectionOperations extends FamilyMedicalHis
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.templateId->exists(id : datatypes::II | id.root = '1.3.6.1.4.1.19376.1.5.3.1.3.15')
 	 * @param codedFamilyMedicalHistorySection The receiving '<em><b>Coded Family Medical History Section</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -137,7 +136,6 @@ public class CodedFamilyMedicalHistorySectionOperations extends FamilyMedicalHis
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.entry->one(entry : cda::Entry | not entry.organizer.oclIsUndefined() and entry.organizer.oclIsKindOf(ihe::FamilyHistoryOrganizer))
 	 * @param codedFamilyMedicalHistorySection The receiving '<em><b>Coded Family Medical History Section</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -197,10 +195,6 @@ public class CodedFamilyMedicalHistorySectionOperations extends FamilyMedicalHis
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getOrganizers()->select(organizer : cda::Organizer | not organizer.oclIsUndefined() and organizer.oclIsKindOf(ihe::FamilyHistoryOrganizer))->asSequence()->any(true).oclAsType(ihe::FamilyHistoryOrganizer)
-	 * @param codedFamilyMedicalHistorySection The receiving '<em><b>Coded Family Medical History Section</b></em>' model object.
-	 * <!-- end-model-doc -->
 	 * @generated
 	 */
 	public static FamilyHistoryOrganizer getIHEFamilyHistoryOrganizer(

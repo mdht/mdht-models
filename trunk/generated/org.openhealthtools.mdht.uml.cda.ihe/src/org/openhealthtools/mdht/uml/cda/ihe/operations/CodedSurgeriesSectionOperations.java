@@ -82,7 +82,6 @@ public class CodedSurgeriesSectionOperations extends SurgeriesSectionOperations 
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.templateId->exists(id : datatypes::II | id.root = '1.3.6.1.4.1.19376.1.5.3.1.3.12')
 	 * @param codedSurgeriesSection The receiving '<em><b>Coded Surgeries Section</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -140,7 +139,6 @@ public class CodedSurgeriesSectionOperations extends SurgeriesSectionOperations 
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.entry->one(entry : cda::Entry | not entry.act.oclIsUndefined() and entry.act.oclIsKindOf(ihe::ExternalReference))
 	 * @param codedSurgeriesSection The receiving '<em><b>Coded Surgeries Section</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -198,7 +196,6 @@ public class CodedSurgeriesSectionOperations extends SurgeriesSectionOperations 
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.entry->exists(entry : cda::Entry | not entry.procedure.oclIsUndefined() and entry.procedure.oclIsKindOf(ihe::ProcedureEntryProcedureActivityProcedure))
 	 * @param codedSurgeriesSection The receiving '<em><b>Coded Surgeries Section</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -257,10 +254,6 @@ public class CodedSurgeriesSectionOperations extends SurgeriesSectionOperations 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(ihe::ExternalReference))->asSequence()->any(true).oclAsType(ihe::ExternalReference)
-	 * @param codedSurgeriesSection The receiving '<em><b>Coded Surgeries Section</b></em>' model object.
-	 * <!-- end-model-doc -->
 	 * @generated
 	 */
 	public static ExternalReference getExternalReference(CodedSurgeriesSection codedSurgeriesSection) {
@@ -302,10 +295,6 @@ public class CodedSurgeriesSectionOperations extends SurgeriesSectionOperations 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getProcedures()->select(procedure : cda::Procedure | not procedure.oclIsUndefined() and procedure.oclIsKindOf(ihe::ProcedureEntryProcedureActivityProcedure)).oclAsType(ihe::ProcedureEntryProcedureActivityProcedure)
-	 * @param codedSurgeriesSection The receiving '<em><b>Coded Surgeries Section</b></em>' model object.
-	 * <!-- end-model-doc -->
 	 * @generated
 	 */
 	public static EList<ProcedureEntryProcedureActivityProcedure> getProcedureEntryProcedureActivityProcedures(

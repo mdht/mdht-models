@@ -74,19 +74,20 @@ public class LanguageCommunicationOperations {
 	 * @generated
 	 * @ordered
 	 */
+
 	protected static Constraint VALIDATE_IHE_LANGUAGE_COMMUNICATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.templateId->exists(id : datatypes::II | id.root = '1.3.6.1.4.1.19376.1.5.3.1.2.1')
 	 * @param languageCommunication The receiving '<em><b>Language Communication</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
+
 	public static boolean validateIHELanguageCommunicationTemplateId(LanguageCommunication languageCommunication,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 

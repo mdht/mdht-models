@@ -84,7 +84,7 @@ public class ProblemStatusObservationImpl extends
 
 	/**
 	 * <!-- begin-user-doc -->
-	* <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	public boolean validateIHEProblemStatusObservationValue(DiagnosticChain diagnostics, Map<Object, Object> context) {

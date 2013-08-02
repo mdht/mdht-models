@@ -82,7 +82,6 @@ public class CodedReasonForReferralSectionOperations extends ReasonForReferralSe
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.templateId->exists(id : datatypes::II | id.root = '1.3.6.1.4.1.19376.1.5.3.1.3.2')
 	 * @param codedReasonForReferralSection The receiving '<em><b>Coded Reason For Referral Section</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -142,7 +141,6 @@ public class CodedReasonForReferralSectionOperations extends ReasonForReferralSe
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.entry->exists(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(ihe::SimpleObservation))
 	 * @param codedReasonForReferralSection The receiving '<em><b>Coded Reason For Referral Section</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -203,7 +201,6 @@ public class CodedReasonForReferralSectionOperations extends ReasonForReferralSe
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.entry->exists(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(ihe::ProblemEntry))
 	 * @param codedReasonForReferralSection The receiving '<em><b>Coded Reason For Referral Section</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -262,10 +259,6 @@ public class CodedReasonForReferralSectionOperations extends ReasonForReferralSe
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(ihe::SimpleObservation)).oclAsType(ihe::SimpleObservation)
-	 * @param codedReasonForReferralSection The receiving '<em><b>Coded Reason For Referral Section</b></em>' model object.
-	 * <!-- end-model-doc -->
 	 * @generated
 	 */
 	public static EList<SimpleObservation> getSimpleObservations(
@@ -310,10 +303,6 @@ public class CodedReasonForReferralSectionOperations extends ReasonForReferralSe
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(ihe::ProblemEntry)).oclAsType(ihe::ProblemEntry)
-	 * @param codedReasonForReferralSection The receiving '<em><b>Coded Reason For Referral Section</b></em>' model object.
-	 * <!-- end-model-doc -->
 	 * @generated
 	 */
 	public static EList<ProblemEntry> getProblemEntries(CodedReasonForReferralSection codedReasonForReferralSection) {
