@@ -281,7 +281,7 @@ public class CognitiveStatusResultObservationImpl extends ResultObservationImpl 
 
 	/**
 	 * <!-- begin-user-doc -->
-	* <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	public boolean validateCognitiveStatusResultObservationReferenceRangeObservationRangeNoCode(

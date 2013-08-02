@@ -22,8 +22,8 @@ import org.openhealthtools.mdht.emf.runtime.util.Initializer;
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getCognitiveStatusResultObservation()
  * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='CognitiveStatusResultObservationTemplateId CognitiveStatusResultObservationTextReferenceValue CognitiveStatusResultObservationClassCode CognitiveStatusResultObservationMoodCode CognitiveStatusResultObservationId CognitiveStatusResultObservationCodeP CognitiveStatusResultObservationStatusCode CognitiveStatusResultObservationStatusCodeP CognitiveStatusResultObservationEffectiveTime CognitiveStatusResultObservationValue CognitiveStatusResultObservationReferenceRangeObservationRangeNoCode CognitiveStatusResultObservationReferenceRangeObservationRange' templateId.root='2.16.840.1.113883.10.20.22.4.74' constraints.validation.warning='CognitiveStatusResultObservationTextReference CognitiveStatusResultObservationValueDatatype CognitiveStatusResultObservationCode CognitiveStatusResultObservationText CognitiveStatusResultObservationInterpretationCode CognitiveStatusResultObservationReferenceRange' classCode='OBS' moodCode='EVN' code.code='373930000' code.codeSystem='2.16.840.1.113883.6.96' code.codeSystemName='SNOMEDCT' code.displayName='Cognitive function finding' constraints.validation.dependOn.CognitiveStatusResultObservationCode='CognitiveStatusResultObservationCodeP' statusCode.code='completed' constraints.validation.dependOn.CognitiveStatusResultObservationStatusCode='CognitiveStatusResultObservationStatusCodeP' constraints.validation.info='CognitiveStatusResultObservationMethodCode CognitiveStatusResultObservationTargetSiteCode CognitiveStatusResultObservationAuthor CognitiveStatusResultObservationNonMedicinalSupplyActivity CognitiveStatusResultObservationCaregiverCharacteristics CognitiveStatusResultObservationAssessmentScaleObservation' constraints.validation.query='CognitiveStatusResultObservationReferenceRangeObservationRangeNoCode CognitiveStatusResultObservationReferenceRangeObservationRange'"
- *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolCognitiveStatusResultObservationReferenceRange constraints.validation.error='ReferenceRangeObservationRange'"
- *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolCognitiveStatusResultObservationReferenceRangeObservationRange constraints.validation.error='ObservationRangeNoCode'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolCognitiveStatusResultObservationReferenceRange constraints.validation.error='CognitiveStatusResultObservationReferenceRangeObservationRange'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolCognitiveStatusResultObservationReferenceRangeObservationRange constraints.validation.error='CognitiveStatusResultObservationReferenceRangeObservationRangeNoCode'"
  * @generated
  */
 public interface CognitiveStatusResultObservation extends ResultObservation {
@@ -291,7 +291,7 @@ public interface CognitiveStatusResultObservation extends ResultObservation {
 
 	/**
 	 * <!-- begin-user-doc -->
-	* <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.

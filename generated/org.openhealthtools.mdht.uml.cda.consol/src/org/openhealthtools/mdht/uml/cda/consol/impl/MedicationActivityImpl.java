@@ -360,7 +360,7 @@ public class MedicationActivityImpl extends SubstanceAdministrationImpl implemen
 
 	/**
 	 * <!-- begin-user-doc -->
-	* <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	public boolean validateMedicationActivityConsumableMedicationInformation(DiagnosticChain diagnostics,

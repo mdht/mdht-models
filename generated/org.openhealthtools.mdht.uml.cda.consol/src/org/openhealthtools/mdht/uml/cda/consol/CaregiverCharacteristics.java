@@ -22,8 +22,8 @@ import org.openhealthtools.mdht.uml.cda.Observation;
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getCaregiverCharacteristics()
  * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='CaregiverCharacteristicsTemplateId CaregiverCharacteristicsValueCodeSystem CaregiverCharacteristicsClassCode CaregiverCharacteristicsMoodCode CaregiverCharacteristicsId CaregiverCharacteristicsCode CaregiverCharacteristicsStatusCode CaregiverCharacteristicsStatusCodeP CaregiverCharacteristicsValue CaregiverCharacteristicsParticipant CaregiverCharacteristicsParticipantParticipantRoleClassCode CaregiverCharacteristicsParticipantTimeLow CaregiverCharacteristicsParticipantParticipantRole' templateId.root='2.16.840.1.113883.10.20.22.4.72' classCode='OBS' moodCode='EVN' statusCode.code='completed' constraints.validation.query='CaregiverCharacteristicsParticipantParticipantRoleClassCode CaregiverCharacteristicsParticipantTimeLow CaregiverCharacteristicsParticipantTimeHigh CaregiverCharacteristicsParticipantTime CaregiverCharacteristicsParticipantParticipantRole' constraints.validation.info='CaregiverCharacteristicsParticipantTimeHigh CaregiverCharacteristicsParticipantTime'"
- *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolCaregiverCharacteristicsParticipant constraints.validation.error='ParticipantTimeLow ParticipantParticipantRole' constraints.validation.info='ParticipantTimeHigh ParticipantTime'"
- *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolCaregiverCharacteristicsParticipantParticipantRole constraints.validation.error='ParticipantRoleClassCode'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolCaregiverCharacteristicsParticipant constraints.validation.error='CaregiverCharacteristicsParticipantTimeLow CaregiverCharacteristicsParticipantParticipantRole' constraints.validation.info='CaregiverCharacteristicsParticipantTimeHigh CaregiverCharacteristicsParticipantTime'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolCaregiverCharacteristicsParticipantParticipantRole constraints.validation.error='CaregiverCharacteristicsParticipantParticipantRoleClassCode'"
  * @generated
  */
 public interface CaregiverCharacteristics extends Observation {
@@ -149,7 +149,7 @@ public interface CaregiverCharacteristics extends Observation {
 
 	/**
 	 * <!-- begin-user-doc -->
-	* <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.

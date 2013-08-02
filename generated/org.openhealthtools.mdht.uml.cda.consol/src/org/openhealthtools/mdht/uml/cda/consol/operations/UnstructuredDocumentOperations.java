@@ -365,7 +365,7 @@ public class UnstructuredDocumentOperations extends GeneralHeaderConstraintsOper
 	/**
 	 * The cached OCL expression body for the '{@link #validateUnstructuredDocumentRecordTargetPatientRole2Id(UnstructuredDocument, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Unstructured Document Record Target Patient Role2 Id</em>}' operation.
 	 * <!-- begin-user-doc -->
-	* <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @see #validateUnstructuredDocumentRecordTargetPatientRole2Id(UnstructuredDocument, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered

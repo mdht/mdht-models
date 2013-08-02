@@ -447,7 +447,7 @@ public class ProcedureNoteImpl extends GeneralHeaderConstraintsImpl implements P
 
 	/**
 	 * <!-- begin-user-doc -->
-	* <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	public boolean validateProcedureNoteComponentOfEncompassingEncounter5LocationHealthCareFacilityId(

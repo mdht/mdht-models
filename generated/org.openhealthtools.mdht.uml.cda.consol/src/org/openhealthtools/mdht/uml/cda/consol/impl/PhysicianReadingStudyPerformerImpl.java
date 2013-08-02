@@ -96,7 +96,7 @@ public class PhysicianReadingStudyPerformerImpl extends Performer1Impl implement
 
 	/**
 	 * <!-- begin-user-doc -->
-	* <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	public boolean validatePhysicianReadingStudyPerformerAssignedEntityHasNationalProviderId(

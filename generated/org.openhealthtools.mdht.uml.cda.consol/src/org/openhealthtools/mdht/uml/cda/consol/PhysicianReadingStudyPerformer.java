@@ -26,7 +26,7 @@ import org.openhealthtools.mdht.uml.cda.Performer1;
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getPhysicianReadingStudyPerformer()
  * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='PhysicianReadingStudyPerformerTemplateId PhysicianReadingStudyPerformerTypeCode PhysicianReadingStudyPerformerAssignedEntity PhysicianReadingStudyPerformerAssignedEntityHasDICOM PhysicianReadingStudyPerformerAssignedEntityHasAssignedPersonOrRepresentedOrganization PhysicianReadingStudyPerformerAssignedEntityCode PhysicianReadingStudyPerformerAssignedEntityId' templateId.root='2.16.840.1.113883.10.20.6.2.1' constraints.validation.info='PhysicianReadingStudyPerformerTime' constraints.validation.warning='PhysicianReadingStudyPerformerAssignedEntityHasNationalProviderId' constraints.validation.query='PhysicianReadingStudyPerformerAssignedEntityHasNationalProviderId PhysicianReadingStudyPerformerAssignedEntityHasDICOM PhysicianReadingStudyPerformerAssignedEntityHasAssignedPersonOrRepresentedOrganization PhysicianReadingStudyPerformerAssignedEntityCode PhysicianReadingStudyPerformerAssignedEntityId'"
- *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolPhysicianReadingStudyPerformerAssignedEntity constraints.validation.warning='AssignedEntityHasNationalProviderId' constraints.validation.error='AssignedEntityHasDICOM AssignedEntityHasAssignedPersonOrRepresentedOrganization AssignedEntityCode AssignedEntityId'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolPhysicianReadingStudyPerformerAssignedEntity constraints.validation.warning='PhysicianReadingStudyPerformerAssignedEntityHasNationalProviderId' constraints.validation.error='PhysicianReadingStudyPerformerAssignedEntityHasDICOM PhysicianReadingStudyPerformerAssignedEntityHasAssignedPersonOrRepresentedOrganization PhysicianReadingStudyPerformerAssignedEntityCode PhysicianReadingStudyPerformerAssignedEntityId'"
  * @generated
  */
 public interface PhysicianReadingStudyPerformer extends Performer1 {
@@ -81,7 +81,7 @@ public interface PhysicianReadingStudyPerformer extends Performer1 {
 
 	/**
 	 * <!-- begin-user-doc -->
-	* <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.

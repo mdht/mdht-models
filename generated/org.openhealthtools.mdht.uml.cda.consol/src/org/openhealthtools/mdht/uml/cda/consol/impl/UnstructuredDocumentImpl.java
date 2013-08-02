@@ -97,7 +97,7 @@ public class UnstructuredDocumentImpl extends GeneralHeaderConstraintsImpl imple
 
 	/**
 	 * <!-- begin-user-doc -->
-	* <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	public boolean validateUnstructuredDocumentRecordTargetPatientRole2Id(DiagnosticChain diagnostics,

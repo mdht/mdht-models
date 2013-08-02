@@ -22,7 +22,7 @@ import org.openhealthtools.mdht.uml.cda.Author;
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getObserverContext()
  * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='ObserverContextTemplateId ObserverContextAssignedAuthor' templateId.root='2.16.840.1.113883.10.20.6.2.4'"
- *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolObserverContextAssignedAuthor constraints.validation.error='AssignedAuthorHasAssignedPersonorAuthoringDevice AssignedAuthorId'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolObserverContextAssignedAuthor constraints.validation.error='ObserverContextAssignedAuthorHasAssignedPersonorAuthoringDevice ObserverContextAssignedAuthorId'"
  * @generated
  */
 public interface ObserverContext extends Author {
