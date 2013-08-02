@@ -52,12 +52,12 @@ public class ResultOrganizerImpl extends
 	}
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateMu2consolResultOrganizerResultObservation(
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ResultOrganizerOperations.validateMu2consolResultOrganizerResultObservation(this, diagnostics, context);
+	public boolean validateMU2CONSOLResultOrganizerResultObservation(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ResultOrganizerOperations.validateMU2CONSOLResultOrganizerResultObservation(this, diagnostics, context);
 	}
 
 	/**

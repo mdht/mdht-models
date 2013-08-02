@@ -52,12 +52,12 @@ public class ResultsSectionImpl extends
 	}
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateMu2consolResultsSectionResultOrganizer(
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ResultsSectionOperations.validateMu2consolResultsSectionResultOrganizer(this, diagnostics, context);
+	public boolean validateMU2CONSOLResultsSectionResultOrganizer(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ResultsSectionOperations.validateMU2CONSOLResultsSectionResultOrganizer(this, diagnostics, context);
 	}
 
 	/**

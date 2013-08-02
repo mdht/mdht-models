@@ -21,16 +21,13 @@ import org.openhealthtools.mdht.emf.runtime.util.Initializer;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.mu2consol.Mu2consolPackage#getCognitiveStatusResultOrganizer()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='Mu2consolCognitiveStatusResultOrganizerTemplateId' templateId.root='2.16.840.1.113883.10.20.22.4.75'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='MU2CONSOLCognitiveStatusResultOrganizerTemplateId' templateId.root='2.16.840.1.113883.10.20.22.4.75'"
  * @generated
  */
 public interface CognitiveStatusResultOrganizer extends org.openhealthtools.mdht.uml.cda.consol.CognitiveStatusResultOrganizer, ResultOrganizer {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(mu2consol::CognitiveStatusResultObservation)).oclAsType(mu2consol::CognitiveStatusResultObservation)
-	 * <!-- end-model-doc -->
 	 * @model kind="operation" required="true" ordered="false"
 	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(mu2consol::CognitiveStatusResultObservation)).oclAsType(mu2consol::CognitiveStatusResultObservation)'"
 	 * @generated

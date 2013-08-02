@@ -52,12 +52,12 @@ public class ProceduresSectionImpl extends
 	}
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateMu2consolProceduresSectionProcedureActivityProcedure(
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProceduresSectionOperations.validateMu2consolProceduresSectionProcedureActivityProcedure(this, diagnostics, context);
+	public boolean validateMU2CONSOLProceduresSectionProcedureActivityProcedure(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ProceduresSectionOperations.validateMU2CONSOLProceduresSectionProcedureActivityProcedure(this, diagnostics, context);
 	}
 
 	/**

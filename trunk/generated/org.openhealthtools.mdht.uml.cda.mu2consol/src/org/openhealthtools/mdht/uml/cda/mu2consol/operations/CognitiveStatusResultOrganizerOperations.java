@@ -81,7 +81,6 @@ public class CognitiveStatusResultOrganizerOperations extends org.openhealthtool
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.4.75')
 	 * @param cognitiveStatusResultOrganizer The receiving '<em><b>Cognitive Status Result Organizer</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -140,10 +139,6 @@ public class CognitiveStatusResultOrganizerOperations extends org.openhealthtool
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(mu2consol::CognitiveStatusResultObservation)).oclAsType(mu2consol::CognitiveStatusResultObservation)
-	 * @param cognitiveStatusResultOrganizer The receiving '<em><b>Cognitive Status Result Organizer</b></em>' model object.
-	 * <!-- end-model-doc -->
 	 * @generated
 	 */
 	

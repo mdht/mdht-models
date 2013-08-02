@@ -52,12 +52,12 @@ public class SocialHistorySectionImpl extends
 	}
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateMu2consolSocialHistorySectionSmokingStatusObservation(
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return SocialHistorySectionOperations.validateMu2consolSocialHistorySectionSmokingStatusObservation(this, diagnostics, context);
+	public boolean validateMU2CONSOLSocialHistorySectionSmokingStatusObservation(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return SocialHistorySectionOperations.validateMU2CONSOLSocialHistorySectionSmokingStatusObservation(this, diagnostics, context);
 	}
 
 	/**

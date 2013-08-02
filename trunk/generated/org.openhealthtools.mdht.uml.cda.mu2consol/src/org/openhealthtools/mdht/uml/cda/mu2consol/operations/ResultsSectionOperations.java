@@ -63,18 +63,18 @@ public class ResultsSectionOperations
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateMu2consolResultsSectionResultOrganizer(ResultsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Mu2consol Results Section Result Organizer</em>}' operation.
+	 * The cached OCL expression body for the '{@link #validateMU2CONSOLResultsSectionResultOrganizer(ResultsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate MU2CONSOL Results Section Result Organizer</em>}' operation.
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @see #validateMu2consolResultsSectionResultOrganizer(ResultsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @see #validateMU2CONSOLResultsSectionResultOrganizer(ResultsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
 	protected static final String VALIDATE_MU2CONSOL_RESULTS_SECTION_RESULT_ORGANIZER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->exists(entry : cda::Entry | not entry.organizer.oclIsUndefined() and entry.organizer.oclIsKindOf(mu2consol::ResultOrganizer))";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validateMu2consolResultsSectionResultOrganizer(ResultsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Mu2consol Results Section Result Organizer</em>}' invariant operation.
+	 * The cached OCL invariant for the '{@link #validateMU2CONSOLResultsSectionResultOrganizer(ResultsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate MU2CONSOL Results Section Result Organizer</em>}' invariant operation.
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @see #validateMu2consolResultsSectionResultOrganizer(ResultsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @see #validateMU2CONSOLResultsSectionResultOrganizer(ResultsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
@@ -82,24 +82,17 @@ public class ResultsSectionOperations
 	protected static Constraint VALIDATE_MU2CONSOL_RESULTS_SECTION_RESULT_ORGANIZER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc --> <!-- begin-model-doc -->
-	 * self.entry->exists(entry : cda::Entry | not
-	 * entry.organizer.oclIsUndefined() and
-	 * entry.organizer.oclIsKindOf(mu2consol::ResultOrganizer))
-	 * 
-	 * @param resultsSection
-	 *            The receiving '<em><b>Results Section</b></em>' model object.
-	 * @param diagnostics
-	 *            The chain of diagnostics to which problems are to be appended.
-	 * @param context
-	 *            The cache of context-specific information. <!-- end-model-doc
-	 *            -->
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param resultsSection The receiving '<em><b>Results Section</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static boolean validateMu2consolResultsSectionResultOrganizer(
-			ResultsSection resultsSection, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
+	
+	public static  boolean validateMU2CONSOLResultsSectionResultOrganizer(ResultsSection resultsSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
   	  
 		if (VALIDATE_MU2CONSOL_RESULTS_SECTION_RESULT_ORGANIZER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
@@ -118,7 +111,7 @@ public class ResultsSectionOperations
 						(Diagnostic.ERROR,
 						 Mu2consolValidator.DIAGNOSTIC_SOURCE,
 						 Mu2consolValidator.RESULTS_SECTION__MU2CONSOL_RESULTS_SECTION_RESULT_ORGANIZER,
-						 Mu2consolPlugin.INSTANCE.getString("Mu2consolResultsSectionResultOrganizer"),
+						 Mu2consolPlugin.INSTANCE.getString("MU2CONSOLResultsSectionResultOrganizer"),
 						 new Object [] { resultsSection }));
 			}
 			 
