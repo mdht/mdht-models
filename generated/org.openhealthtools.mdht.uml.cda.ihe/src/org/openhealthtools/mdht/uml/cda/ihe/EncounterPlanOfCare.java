@@ -33,8 +33,6 @@ public interface EncounterPlanOfCare extends EncounterEntry, PlanOfCareActivityE
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.moodCode = vocab::x_DocumentEncounterMood::ARQ
-	 *   or self.moodCode = vocab::x_DocumentEncounterMood::PRMS
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->

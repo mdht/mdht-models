@@ -72,19 +72,20 @@ public class CommentOperations extends org.openhealthtools.mdht.uml.cda.ccd.oper
 	 * @generated
 	 * @ordered
 	 */
+
 	protected static Constraint VALIDATE_IHE_COMMENT_HAS_TEXT_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * not self.text.reference.oclIsUndefined()
 	 * @param comment The receiving '<em><b>Comment</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
+
 	public static boolean validateIHECommentHasTextReference(Comment comment, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
@@ -129,19 +130,20 @@ public class CommentOperations extends org.openhealthtools.mdht.uml.cda.ccd.oper
 	 * @generated
 	 * @ordered
 	 */
+
 	protected static Constraint VALIDATE_IHE_COMMENT_EFFECTIVE_TIME_WHEN_AUTHOR_PRESENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * not self.author->isEmpty() implies not self.effectiveTime.oclIsUndefined()
 	 * @param comment The receiving '<em><b>Comment</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
+
 	public static boolean validateIHECommentEffectiveTimeWhenAuthorPresent(Comment comment,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -193,13 +195,13 @@ public class CommentOperations extends org.openhealthtools.mdht.uml.cda.ccd.oper
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * not self.author->isEmpty() implies (  self.author.assignedAuthor.id ->size() > 0 and self.author.assignedAuthor.addr ->size() > 0 and self.author.assignedAuthor.telecom ->size() > 0)
 	 * @param comment The receiving '<em><b>Comment</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
+
 	public static boolean validateIHECommentHasAuthorId(Comment comment, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
@@ -234,11 +236,6 @@ public class CommentOperations extends org.openhealthtools.mdht.uml.cda.ccd.oper
 	 */
 	protected static final String VALIDATE_IHE_COMMENT_HAS_AUTHOR_ORGANIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "not self.author->isEmpty() implies ( self.author->exists( a : cda::Author | ( (not a.assignedAuthor.assignedPerson.oclIsUndefined()) and not a.assignedAuthor.assignedPerson.name->isEmpty()) or (not a.assignedAuthor.representedOrganization.name->isEmpty())  ) )";
 
-	// ( ((not self.author->isEmpty()) implies ( self.author.assignedAuthor.assignedPerson.name ->size() > 0 )) or ((not self.author->isEmpty())
-	// implies ( self.author.assignedAuthor.representedOrganization.name ->size() > 0)) )";
-	// not self.author->isEmpty() implies (( (not self.author.assignedAuthor.representedOrganization.name->isEmpty()) or (not
-	// self.author.assignedAuthor.assignedPerson.name->isEmpty()) ))";
-
 	/**
 	 * The cached OCL invariant for the '{@link #validateIHECommentHasAuthorOrganization(Comment, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate IHE Comment Has Author Organization</em>}' invariant operation.
 	 * <!-- begin-user-doc -->
@@ -254,13 +251,13 @@ public class CommentOperations extends org.openhealthtools.mdht.uml.cda.ccd.oper
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * not self.author->isEmpty() implies ( self.author->exists( a : cda::Author | ( (not a.assignedAuthor.assignedPerson.oclIsUndefined()) and not a.assignedAuthor.assignedPerson.name->isEmpty()) or (not a.assignedAuthor.representedOrganization.name->isEmpty())  ) )
 	 * @param comment The receiving '<em><b>Comment</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
+
 	public static boolean validateIHECommentHasAuthorOrganization(Comment comment, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
@@ -306,21 +303,20 @@ public class CommentOperations extends org.openhealthtools.mdht.uml.cda.ccd.oper
 	 * @generated
 	 * @ordered
 	 */
+
 	protected static Constraint VALIDATE_IHE_COMMENT_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * (self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and 
-	 * let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in 
-	 * value.code = 'completed')
 	 * @param comment The receiving '<em><b>Comment</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
+
 	public static boolean validateIHECommentStatusCode(Comment comment, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
@@ -363,19 +359,20 @@ public class CommentOperations extends org.openhealthtools.mdht.uml.cda.ccd.oper
 	 * @generated
 	 * @ordered
 	 */
+
 	protected static Constraint VALIDATE_IHE_COMMENT_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * (self.text.oclIsUndefined() or self.text.isNullFlavorUndefined()) implies (not self.text.oclIsUndefined())
 	 * @param comment The receiving '<em><b>Comment</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
+
 	public static boolean validateIHECommentText(Comment comment, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
@@ -425,7 +422,6 @@ public class CommentOperations extends org.openhealthtools.mdht.uml.cda.ccd.oper
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.author->one(author : cda::Author | not author.oclIsUndefined() and author.oclIsKindOf(rim::Participation))
 	 * @param comment The receiving '<em><b>Comment</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -457,6 +453,11 @@ public class CommentOperations extends org.openhealthtools.mdht.uml.cda.ccd.oper
 		return true;
 	}
 
+	// ( ((not self.author->isEmpty()) implies ( self.author.assignedAuthor.assignedPerson.name ->size() > 0 )) or ((not self.author->isEmpty())
+	// implies ( self.author.assignedAuthor.representedOrganization.name ->size() > 0)) )";
+	// not self.author->isEmpty() implies (( (not self.author.assignedAuthor.representedOrganization.name->isEmpty()) or (not
+	// self.author.assignedAuthor.assignedPerson.name->isEmpty()) ))";
+
 	/**
 	 * The cached OCL expression body for the '{@link #validateCommentTemplateId(Comment, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Comment Template Id</em>}' operation.
 	 * <!-- begin-user-doc -->
@@ -481,7 +482,6 @@ public class CommentOperations extends org.openhealthtools.mdht.uml.cda.ccd.oper
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.templateId->exists(id : datatypes::II | id.root = '1.3.6.1.4.1.19376.1.5.3.1.4.2')
 	 * @param comment The receiving '<em><b>Comment</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.

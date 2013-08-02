@@ -18292,6 +18292,15 @@ public interface IHEPackage extends EPackage {
 	int ENCOUNTER_ENTRY__MOOD_CODE = CDAPackage.ENCOUNTER__MOOD_CODE;
 
 	/**
+	 * The feature id for the '<em><b>SDTC Discharge Disposition Code</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ENCOUNTER_ENTRY__SDTC_DISCHARGE_DISPOSITION_CODE = CDAPackage.ENCOUNTER__SDTC_DISCHARGE_DISPOSITION_CODE;
+
+	/**
 	 * The number of structural features of the '<em>Encounter Entry</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -20551,6 +20560,15 @@ public interface IHEPackage extends EPackage {
 	int ENCOUNTER_ACTIVITY__MOOD_CODE = ENCOUNTER_ENTRY__MOOD_CODE;
 
 	/**
+	 * The feature id for the '<em><b>SDTC Discharge Disposition Code</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ENCOUNTER_ACTIVITY__SDTC_DISCHARGE_DISPOSITION_CODE = ENCOUNTER_ENTRY__SDTC_DISCHARGE_DISPOSITION_CODE;
+
+	/**
 	 * The number of structural features of the '<em>Encounter Activity</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -20747,6 +20765,15 @@ public interface IHEPackage extends EPackage {
 	 * @ordered
 	 */
 	int ENCOUNTER_PLAN_OF_CARE__MOOD_CODE = ENCOUNTER_ENTRY__MOOD_CODE;
+
+	/**
+	 * The feature id for the '<em><b>SDTC Discharge Disposition Code</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ENCOUNTER_PLAN_OF_CARE__SDTC_DISCHARGE_DISPOSITION_CODE = ENCOUNTER_ENTRY__SDTC_DISCHARGE_DISPOSITION_CODE;
 
 	/**
 	 * The number of structural features of the '<em>Encounter Plan Of Care</em>' class.

@@ -378,7 +378,7 @@ public class IHEValidator extends EObjectValidator {
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate IHE Problem Status Observation Value' of 'Problem Status Observation'.
 	 * <!-- begin-user-doc -->
-	* <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	public static final int PROBLEM_STATUS_OBSERVATION__IHE_PROBLEM_STATUS_OBSERVATION_VALUE = 42;
@@ -1162,7 +1162,7 @@ public class IHEValidator extends EObjectValidator {
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate IHE Vital Signs Organizer Code' of 'Vital Signs Organizer'.
 	 * <!-- begin-user-doc -->
-	* <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	public static final int VITAL_SIGNS_ORGANIZER__IHE_VITAL_SIGNS_ORGANIZER_CODE = 140;
@@ -1178,7 +1178,7 @@ public class IHEValidator extends EObjectValidator {
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate IHE Vital Signs Organizer Status Code' of 'Vital Signs Organizer'.
 	 * <!-- begin-user-doc -->
-	* <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	public static final int VITAL_SIGNS_ORGANIZER__IHE_VITAL_SIGNS_ORGANIZER_STATUS_CODE = 142;
@@ -1706,7 +1706,7 @@ public class IHEValidator extends EObjectValidator {
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate IHE Advance Directive Observation Code' of 'Advance Directive Observation'.
 	 * <!-- begin-user-doc -->
-	* <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	public static final int ADVANCE_DIRECTIVE_OBSERVATION__IHE_ADVANCE_DIRECTIVE_OBSERVATION_CODE = 208;
@@ -5386,7 +5386,7 @@ public class IHEValidator extends EObjectValidator {
 	/**
 	 * Validates the validateIHEProblemStatusObservationValue constraint of '<em>Problem Status Observation</em>'.
 	 * <!-- begin-user-doc -->
-	* <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	public boolean validateProblemStatusObservation_validateIHEProblemStatusObservationValue(
@@ -8845,7 +8845,7 @@ public class IHEValidator extends EObjectValidator {
 	/**
 	 * Validates the validateIHEVitalSignsOrganizerCode constraint of '<em>Vital Signs Organizer</em>'.
 	 * <!-- begin-user-doc -->
-	* <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	public boolean validateVitalSignsOrganizer_validateIHEVitalSignsOrganizerCode(
@@ -8867,7 +8867,7 @@ public class IHEValidator extends EObjectValidator {
 	/**
 	 * Validates the validateIHEVitalSignsOrganizerStatusCode constraint of '<em>Vital Signs Organizer</em>'.
 	 * <!-- begin-user-doc -->
-	* <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	public boolean validateVitalSignsOrganizer_validateIHEVitalSignsOrganizerStatusCode(
@@ -11041,7 +11041,7 @@ public class IHEValidator extends EObjectValidator {
 	/**
 	 * Validates the validateIHEAdvanceDirectiveObservationCode constraint of '<em>Advance Directive Observation</em>'.
 	 * <!-- begin-user-doc -->
-	* <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	public boolean validateAdvanceDirectiveObservation_validateIHEAdvanceDirectiveObservationCode(
