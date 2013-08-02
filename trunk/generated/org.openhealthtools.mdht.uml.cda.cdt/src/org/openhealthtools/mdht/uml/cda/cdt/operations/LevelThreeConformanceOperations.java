@@ -70,7 +70,6 @@ public class LevelThreeConformanceOperations extends LevelTwoConformanceOperatio
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.30')
 	 * @param levelThreeConformance The receiving '<em><b>Level Three Conformance</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
