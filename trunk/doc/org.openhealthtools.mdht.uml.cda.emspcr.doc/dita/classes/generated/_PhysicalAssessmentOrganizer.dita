@@ -107,7 +107,161 @@
 <li>Contains exactly one [1..1] <xref href="../MentalStatusAssessment.dita">Mental Status Assessment</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.122</tt>)</li></ol></li></ol>
 </li>
 </ol>
-<codeblock id="example"><![CDATA[Error: Missing Runtime Class]]></codeblock>
+<section id="tableconformance"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="8" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><colspec colname="col2" colnum="2" /><colspec colname="col3" colnum="3" /><colspec colname="col4" colnum="4" /><colspec colname="col5" colnum="5" /><colspec colname="col6" colnum="6" /><colspec colname="col7" colnum="7" /><thead> <row><entry namest="col0" nameend="col7" >emspcr::PhysicalAssessmentOrganizer</entry>  </row>  <row><entry namest="col0" nameend="col7" >cda::organizer[cda:templateId/@root = 2.16.840.1.1133883.17.3.10.1.78]/</entry>  </row>  <row><entry>Name</entry><entry>XPath</entry><entry>Cardinality</entry><entry>Severity</entry><entry>Nullable</entry><entry>Data Type</entry><entry>Conformance</entry><entry>Value(s)</entry></row></thead><tbody><row><entry>component1</entry><entry>component1</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>BodyWeightComponent</entry><entry></entry><entry> </entry></row> 
+<row><entry>component10</entry><entry>component10</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>PelvicAndGenitourinaryAssessmentComponent</entry><entry></entry><entry> </entry></row> 
+<row><entry>component11</entry><entry>component11</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>BackAndSpineAssessmentComponent</entry><entry></entry><entry> </entry></row> 
+<row><entry>component12</entry><entry>component12</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>ExtremitiesAssessmentComponent</entry><entry></entry><entry> </entry></row> 
+<row><entry>component13</entry><entry>component13</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>EyeAssessmentComponent</entry><entry></entry><entry> </entry></row> 
+<row><entry>component14</entry><entry>component14</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>MentalStatusAssessmentComponent</entry><entry></entry><entry> </entry></row> 
+<row><entry>component2</entry><entry>component2</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>LengthBasedPatientBodyWeightClassComponent</entry><entry></entry><entry> </entry></row> 
+<row><entry>component3</entry><entry>component3</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>SkinAssessment</entry><entry></entry><entry> </entry></row> 
+<row><entry>component4</entry><entry>component4</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>HeadAssessmentComponent</entry><entry></entry><entry> </entry></row> 
+<row><entry>component5</entry><entry>component5</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>FaceAssessmentComponent</entry><entry></entry><entry> </entry></row> 
+<row><entry>component6</entry><entry>component6</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>NeckAssessmentComponent</entry><entry></entry><entry> </entry></row> 
+<row><entry>component7</entry><entry>component7</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>ChestAndLungsAssessmentComponent</entry><entry></entry><entry> </entry></row> 
+<row><entry>component8</entry><entry>component8</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>HeartAssessmentComponent</entry><entry></entry><entry> </entry></row> 
+<row><entry>component9</entry><entry>component9</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>AbdomenAssessmentComponent</entry><entry></entry><entry> </entry></row> 
+<row><entry>physicalAssessmentOrganizer</entry><entry>physicalAssessmentOrganizer</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>PhysicalAssessmentOrganizer</entry><entry></entry><entry> </entry></row> 
+</tbody></tgroup></table></p></section>
+<codeblock id="example"><![CDATA[<organizer xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3">
+  <templateId root="2.16.840.1.1133883.17.3.10.1.78"/>
+  <id root="MDHT" extension="802067426"/>
+  <statusCode code="completed"/>
+  <effectiveTime>
+    <low value="2013"/>
+    <high value="2013"/>
+  </effectiveTime>
+  <component>
+    <observation>
+      <code code="1574703171"/>
+      <value xsi:type="PQ"/>
+    </observation>
+  </component>
+  <component>
+    <observation>
+      <code code="2050273069"/>
+      <effectiveTime>
+        <low value="2013"/>
+        <high value="2013"/>
+      </effectiveTime>
+    </observation>
+  </component>
+  <component>
+    <templateId root="null"/>
+    <observation>
+      <code code="2021335871"/>
+      <effectiveTime>
+        <low value="2013"/>
+        <high value="2013"/>
+      </effectiveTime>
+    </observation>
+  </component>
+  <component>
+    <observation>
+      <code code="1967583751"/>
+      <effectiveTime>
+        <low value="2013"/>
+        <high value="2013"/>
+      </effectiveTime>
+      <value xsi:type="CD" code="1853973918"/>
+    </observation>
+  </component>
+  <component>
+    <observation>
+      <code code="444337141"/>
+      <effectiveTime>
+        <low value="2013"/>
+        <high value="2013"/>
+      </effectiveTime>
+    </observation>
+  </component>
+  <component>
+    <observation>
+      <code code="1024626017"/>
+      <effectiveTime>
+        <low value="2013"/>
+        <high value="2013"/>
+      </effectiveTime>
+    </observation>
+  </component>
+  <component>
+    <observation>
+      <code code="781008800"/>
+      <effectiveTime>
+        <low value="2013"/>
+        <high value="2013"/>
+      </effectiveTime>
+      <value xsi:type="CD" code="10618357"/>
+    </observation>
+  </component>
+  <component>
+    <observation>
+      <code code="1905025608"/>
+      <effectiveTime>
+        <low value="2013"/>
+        <high value="2013"/>
+      </effectiveTime>
+    </observation>
+  </component>
+  <component>
+    <observation>
+      <code code="889931904"/>
+      <effectiveTime>
+        <low value="2013"/>
+        <high value="2013"/>
+      </effectiveTime>
+      <value xsi:type="CD" code="502887084"/>
+    </observation>
+  </component>
+  <component>
+    <observation>
+      <code code="134646790"/>
+      <effectiveTime>
+        <low value="2013"/>
+        <high value="2013"/>
+      </effectiveTime>
+      <value xsi:type="CD" code="365913925"/>
+      <targetSiteCode code="420790124"/>
+    </observation>
+  </component>
+  <component>
+    <observation>
+      <code code="1000538131"/>
+      <effectiveTime>
+        <low value="2013"/>
+        <high value="2013"/>
+      </effectiveTime>
+      <targetSiteCode code="723879001"/>
+    </observation>
+  </component>
+  <component>
+    <observation>
+      <code code="268302966"/>
+      <effectiveTime>
+        <low value="2013"/>
+        <high value="2013"/>
+      </effectiveTime>
+      <value xsi:type="CD" code="441948410"/>
+      <targetSiteCode code="760937922"/>
+    </observation>
+  </component>
+  <component>
+    <observation>
+      <code code="1530901072"/>
+    </observation>
+  </component>
+  <component>
+    <observation moodCode="EVN">
+      <templateId root="2.16.840.1.1133883.17.3.10.1.180"/>
+      <id root="MDHT" extension="1888205797"/>
+      <code code="67524-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+      <effectiveTime>
+        <low value="2013"/>
+        <high value="2013"/>
+      </effectiveTime>
+    </observation>
+  </component>
+</organizer>]]></codeblock>
 <section id="changes">
 </section>
 <p><ph id="classformalname">Physical Assessment Organizer</ph></p>

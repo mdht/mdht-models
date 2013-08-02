@@ -57,7 +57,78 @@
 <ol>
 <li>Contains exactly one [1..1] <xref href="../GlasgowVerbal.dita">Glasgow Verbal</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.162</tt>)</li></ol></li>
 </ol>
-<codeblock id="example"><![CDATA[Error: Missing Runtime Class]]></codeblock>
+<section id="tableconformance"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="8" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><colspec colname="col2" colnum="2" /><colspec colname="col3" colnum="3" /><colspec colname="col4" colnum="4" /><colspec colname="col5" colnum="5" /><colspec colname="col6" colnum="6" /><colspec colname="col7" colnum="7" /><thead> <row><entry namest="col0" nameend="col7" >emspcr::GlasgowComaScoreOrganizer</entry>  </row>  <row><entry namest="col0" nameend="col7" >cda::organizer[cda:templateId/@root = 2.16.840.1.1133883.17.3.10.1.170]/</entry>  </row>  <row><entry>Name</entry><entry>XPath</entry><entry>Cardinality</entry><entry>Severity</entry><entry>Nullable</entry><entry>Data Type</entry><entry>Conformance</entry><entry>Value(s)</entry></row></thead><tbody><row><entry>effectiveTime</entry><entry>effectiveTime</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>IVL_TS</entry><entry></entry><entry> </entry></row> 
+<row><entry>glasgowComaScoreOrganizer</entry><entry>glasgowComaScoreOrganizer</entry><entry>0..*</entry><entry>SHALL</entry><entry>YES</entry><entry>GlasgowComaScoreOrganizer</entry><entry></entry><entry> </entry></row> 
+<row><entry>GlasgowEye</entry><entry>GlasgowEye</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>GlasgowEye</entry><entry>CONF:10313</entry><entry> </entry></row> 
+<row><entry>GlasgowMotor</entry><entry>GlasgowMotor</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>GlasgowMotor</entry><entry>CONF:10314</entry><entry> </entry></row> 
+<row><entry>GlasgowQualifier</entry><entry>GlasgowQualifier</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>GlasgowQualifier</entry><entry>CONF:10315</entry><entry> </entry></row> 
+<row><entry>GlasgowTotal</entry><entry>GlasgowTotal</entry><entry>0..1</entry><entry>SHOULD</entry><entry>YES</entry><entry>GlasgowTotal</entry><entry>CONF:10316</entry><entry> </entry></row> 
+<row><entry>GlasgowVerbal</entry><entry>GlasgowVerbal</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>GlasgowVerbal</entry><entry>CONF:10317</entry><entry> </entry></row> 
+</tbody></tgroup></table></p></section>
+<codeblock id="example"><![CDATA[<organizer xmlns="urn:hl7-org:v3">
+  <templateId root="2.16.840.1.1133883.17.3.10.1.170"/>
+  <id root="MDHT" extension="963947760"/>
+  <statusCode code="completed"/>
+  <effectiveTime>
+    <low value="2013"/>
+    <high value="2013"/>
+  </effectiveTime>
+  <component>
+    <observation moodCode="EVN">
+      <templateId root="2.16.840.1.1133883.17.3.10.1.160"/>
+      <id root="MDHT" extension="1593407613"/>
+      <code code="9267-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Glasgow coma score.eye opening"/>
+      <effectiveTime>
+        <low value="2013"/>
+        <high value="2013"/>
+      </effectiveTime>
+    </observation>
+  </component>
+  <component>
+    <observation moodCode="EVN">
+      <templateId root="2.16.840.1.1133883.17.3.10.1.176"/>
+      <id root="MDHT" extension="682158585"/>
+      <code code="9268-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Glasgow coma score.motor"/>
+      <effectiveTime>
+        <low value="2013"/>
+        <high value="2013"/>
+      </effectiveTime>
+    </observation>
+  </component>
+  <component>
+    <observation moodCode="EVN">
+      <templateId root="2.16.840.1.1133883.17.3.10.1.159"/>
+      <id root="MDHT" extension="1519755820"/>
+      <code code="55285-1" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Glasgow coma score special circumstances"/>
+      <effectiveTime>
+        <low value="2013"/>
+        <high value="2013"/>
+      </effectiveTime>
+    </observation>
+  </component>
+  <component>
+    <observation moodCode="EVN">
+      <templateId root="2.16.840.1.1133883.17.3.10.1.158"/>
+      <id root="MDHT" extension="1676018068"/>
+      <code code="9269-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Glasgow coma score.total"/>
+      <effectiveTime>
+        <low value="2013"/>
+        <high value="2013"/>
+      </effectiveTime>
+    </observation>
+  </component>
+  <component>
+    <observation moodCode="EVN">
+      <templateId root="2.16.840.1.1133883.17.3.10.1.162"/>
+      <id root="MDHT" extension="1105579683"/>
+      <code code="9270-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Glasgow coma score.verbal"/>
+      <effectiveTime>
+        <low value="2013"/>
+        <high value="2013"/>
+      </effectiveTime>
+    </observation>
+  </component>
+</organizer>]]></codeblock>
 <section id="changes">
 </section>
 <p><ph id="classformalname">Glasgow Coma Score Organizer</ph></p>

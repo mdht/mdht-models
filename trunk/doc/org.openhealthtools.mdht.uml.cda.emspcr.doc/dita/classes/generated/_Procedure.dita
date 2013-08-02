@@ -36,7 +36,7 @@ If an abandoned time is recorded, EArrest.15 goes in effectiveTime.high</i></lin
 </li>
 <li><b>MAY</b> contain zero or one [0..1] <tt><b>statusCode</b></tt> (CONF:10499)<tt><b>/@code</b>="Aborted" </tt><i>Aborted</i> (CodeSystem:<tt> 2.16.840.1.113883.5.14 ActStatus</tt>) (CONF:10500)
 <ul><li><p><lines><i>NEMSIS Trace: EArrest.15</i></lines></p></li></ul></li>
-<li><b>MAY</b> contain zero or one [0..1] <tt><b>approachSiteCode</b></tt> (CONF:10502), where the @code <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/IVSite.dita">IVSite</xref> 2.16.840.1.113883.17.3.11.56</tt><b> STATIC</b> (CONF:10501)
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>approachSiteCode</b></tt> (CONF:10502), which <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/IVSite.dita">IVSite</xref> 2.16.840.1.113883.17.3.11.56</tt><b> STATIC</b> (CONF:10501)
 <ul><li><p><lines><i>NEMSIS Trace: EProcedures.13
 Required conditionally if procedure code is intravenous catheterization (E303)</i></lines></p></li></ul></li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>entryRelationship</b></tt> (CONF:10503) <ol><li> This entryRelationship <b>SHALL</b> contain zero or one [0..1] <tt><b>observation</b></tt>, where its type is <xref href="../ProcedurePriorIndicator.dita">Procedure Prior Indicator</xref> (CONF:10515)<ol>
@@ -54,7 +54,7 @@ Required conditionally if procedure code is intravenous catheterization (E303)</
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>entryRelationship</b></tt> (CONF:10507) <ol><li> This entryRelationship <b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref href="../ProcedurePatientResponseObservation.dita">Procedure Patient Response Observation</xref> (CONF:10531)<ol>
 <li>Contains exactly one [1..1] <xref href="../ProcedurePatientResponseObservation.dita">Procedure Patient Response Observation</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.135</tt>)</li></ol></li></ol>
 </li>
-<li><b>SHALL</b> contain at least one [1..*] <tt><b>performer</b></tt> (CONF:10508) <ol><li> Such performers <b>SHALL</b> contain exactly one [1..1] <tt><b>assignedEntity</b></tt> (CONF:10536) <ol><li> This assignedEntity <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:10537), where the @code <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/ProviderRole.dita">ProviderRole</xref> 2.16.840.1.113883.17.3.11.46</tt><b> STATIC</b> (CONF:10538)<p><lines><i>NEMSIS Trace: EProcedures.10</i></lines></p></li><li> This assignedEntity <b>SHALL</b> contain exactly one [1..1] <tt><b>id</b></tt> (CONF:10539)<p><lines><i>NEMSIS Trace: EProcedures.09, ID equal to the EMS professional's agency ID number</i></lines></p></li></ol> </li></ol>
+<li><b>SHALL</b> contain at least one [1..*] <tt><b>performer</b></tt> (CONF:10508) <ol><li> Such performers <b>SHALL</b> contain exactly one [1..1] <tt><b>assignedEntity</b></tt> (CONF:10536) <ol><li> This assignedEntity <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:10537), which <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/ProviderRole.dita">ProviderRole</xref> 2.16.840.1.113883.17.3.11.46</tt><b> STATIC</b> (CONF:10538)<p><lines><i>NEMSIS Trace: EProcedures.10</i></lines></p></li><li> This assignedEntity <b>SHALL</b> contain exactly one [1..1] <tt><b>id</b></tt> (CONF:10539)<p><lines><i>NEMSIS Trace: EProcedures.09, ID equal to the EMS professional's agency ID number</i></lines></p></li></ol> </li></ol>
 </li>
 <li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> (CONF:10509) <p><lines><i>NEMSIS Trace: EAirway.04; required if procedure code is airway placement, i.e., 0CHY7BZ</i></lines></p><ol><li> This entryRelationship <b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref href="../AirwayConfirmationObservation.dita">Airway Confirmation Observation</xref> (CONF:10540)<ol>
 <li>Contains exactly one [1..1] <xref href="../AirwayConfirmationObservation.dita">Airway Confirmation Observation</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.175</tt>)</li></ol></li></ol>
@@ -67,7 +67,7 @@ Required conditionally if procedure code is intravenous catheterization (E303)</
 <li><b>SHALL</b> conform to <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.consol.doc/classes/ProcedureActivityProcedure.html">Consol Procedure Activity Procedure</xref> template (templateId: <tt>2.16.840.1.113883.10.20.22.4.14</tt>)</li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="PROC" </tt> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>) (CONF:7652)
 </li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b></tt>, where the @code <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/MoodCodeEvnInt.dita">MoodCodeEvnInt</xref> 2.16.840.1.113883.11.20.9.18</tt><b> STATIC</b> 2011-04-03 (CONF:7653)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b></tt>, which <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/MoodCodeEvnInt.dita">MoodCodeEvnInt</xref> 2.16.840.1.113883.11.20.9.18</tt><b> STATIC</b> 2011-04-03 (CONF:7653)
 </li>
 <li><b>MAY</b> contain zero or one [0..1] <tt><b>@negationInd</b></tt>
 <ul><li><p><lines><i>Required to document a procedure not performed, with required "reason not performed" observation</i></lines></p></li></ul></li>
@@ -89,43 +89,39 @@ and EArrest.03:
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>effectiveTime</b></tt> (CONF:10497)
 <ul><li><p><lines><i>NEMSIS Trace: EProcedures.01 goes in effectiveTime.low
 If an abandoned time is recorded, EArrest.15 goes in effectiveTime.high</i></lines></p></li></ul></li>
-<li><b>MAY</b> contain zero or one [0..1] <tt><b>priorityCode</b></tt>, where the @code <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/ActPriority.dita">ActPriority</xref> 2.16.840.1.113883.1.11.16866</tt><b> STATIC</b> (CONF:7668)
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>priorityCode</b></tt>, which <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/ActPriority.dita">ActPriority</xref> 2.16.840.1.113883.1.11.16866</tt><b> STATIC</b> (CONF:7668)
 </li>
 <li><b>MAY</b> contain zero or one [0..1] <tt><b>methodCode</b></tt> (CONF:7670)
 </li>
-<li><b>MAY</b> contain zero or one [0..1] <tt><b>approachSiteCode</b></tt> (CONF:10502), where the @code <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/IVSite.dita">IVSite</xref> 2.16.840.1.113883.17.3.11.56</tt><b> STATIC</b> (CONF:10501)
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>approachSiteCode</b></tt> (CONF:10502), which <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/IVSite.dita">IVSite</xref> 2.16.840.1.113883.17.3.11.56</tt><b> STATIC</b> (CONF:10501)
 <ul><li><p><lines><i>NEMSIS Trace: EProcedures.13
 Required conditionally if procedure code is intravenous catheterization (E303)</i></lines></p></li></ul></li>
-<li><b>SHOULD</b> contain zero or more [0..*] <tt><b>targetSiteCode</b></tt> (CONF:7683), where the @code <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/BodySiteValueSet.dita">Body Site Value Set</xref> 2.16.840.1.113883.3.88.12.3221.8.9</tt><b> STATIC</b> 2 (CONF:10122)
+<li><b>SHOULD</b> contain zero or more [0..*] <tt><b>targetSiteCode</b></tt> (CONF:7683), which <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/BodySiteValueSet.dita">Body Site Value Set</xref> 2.16.840.1.113883.3.88.12.3221.8.9</tt><b> STATIC</b> 2 (CONF:16082)
 </li>
-<li><b>MAY</b> contain zero or more [0..*] <tt><b>specimen</b></tt> (CONF:7697)
-<ol>
-<li>Contains exactly one [1..1] <xref href="../ProcedureSpecimen.dita">Procedure Specimen</xref></li></ol><ul><li><p><lines><i>This specimen is for representing specimens obtained from a procedure.</i></lines></p></li></ul></li>
-<li><b>MAY</b> contain zero or more [0..*] <tt><b>participant</b></tt> (CONF:7767)
+<li><b>MAY</b> contain zero or more [0..*] <tt><b>specimen</b></tt> (CONF:7697) <p><lines><i>This specimen is for representing specimens obtained from a procedure.</i></lines></p><ol><li> Such specimens <b>SHALL</b> contain exactly one [1..1] specimenRole (CONF:7704)</li><li> Such specimens specimenRole <b>SHOULD</b> contain zero or more [0..*] id (CONF:7716)</li><li> Such specimens To indicate that the Procedure and the Results are referring to the same specimen, the Procedure/specimen/specimenRole/id <b>SHOULD</b> be set to equal an Organizer/specimen/ specimenRole/id. (CONF:7717)</li></ol>
+</li>
+<li><b>MAY</b> contain zero or more [0..*] <tt><b>participant</b></tt> (CONF:7765, CONF:7752, CONF:15912)
 <ol>
 <li>Contains exactly one [1..1] <xref href="../ServiceDeliveryLocation.dita">Service Delivery Location</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.32</tt>)</li></ol></li>
-<li><b>SHOULD</b> contain zero or more [0..*] <tt><b>performer</b></tt> (CONF:7718)
-<ol>
-<li>Contains exactly one [1..1] <xref href="../ProcedurePerformer.dita">Procedure Performer</xref></li></ol></li>
-<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> (CONF:7888)
+<li><b>SHOULD</b> contain zero or more [0..*] <tt><b>performer</b></tt> (CONF:7718) <ol><li> Such performers <b>SHALL</b> contain exactly one [1..1] <tt><b>assignedEntity</b></tt> (CONF:7720) <ol><li> This assignedEntity <b>SHALL</b> contain at least one [1..*] <tt><b>id</b></tt> (CONF:7722)</li><li> This assignedEntity <b>SHALL</b> contain exactly one [1..1] <tt><b>addr</b></tt> (CONF:7731)</li><li> This assignedEntity <b>SHALL</b> contain exactly one [1..1] <tt><b>telecom</b></tt> (CONF:7732)</li><li> This assignedEntity <b>SHOULD</b> contain zero or one [0..1] <tt><b>representedOrganization</b></tt> (CONF:7733) <ol><li> This representedOrganization <b>SHOULD</b> contain zero or more [0..*] <tt><b>id</b></tt> (CONF:7734)</li><li> This representedOrganization <b>MAY</b> contain zero or more [0..*] <tt><b>name</b></tt> (CONF:7735)</li><li> This representedOrganization <b>SHALL</b> contain exactly one [1..1] <tt><b>telecom</b></tt> (CONF:7737)</li><li> This representedOrganization <b>SHALL</b> contain exactly one [1..1] <tt><b>addr</b></tt> (CONF:7736)</li></ol> </li></ol> </li></ol>
+</li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> (CONF:7886, CONF:7887, CONF:15915)
 <ol>
 <li>Contains <tt><b>@typeCode="</b>COMP" </tt><i>COMP</i></li>
 <li>Contains exactly one [1..1] <xref href="../MedicationActivity.dita">Medication Activity</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.16</tt>)</li></ol></li>
-<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> (CONF:7778)
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> (CONF:7775, CONF:7776, CONF:15913)
 <ol>
 <li>Contains <tt><b>@typeCode="</b>SUBJ" </tt><i>SUBJ</i></li>
 <li>Contains exactly one [1..1] <xref href="../Instructions.dita">Instructions</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.20</tt>)</li></ol></li>
-<li><b>MAY</b> contain zero or more [0..*] <tt><b>entryRelationship</b></tt> (CONF:7781)
+<li><b>MAY</b> contain zero or more [0..*] <tt><b>entryRelationship</b></tt> (CONF:7779, CONF:7780, CONF:15914)
 <ol>
 <li>Contains <tt><b>@typeCode="</b>RSON" </tt><i>RSON</i></li>
 <li>Contains exactly one [1..1] <xref href="../Indication.dita">Indication</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.19</tt>)</li></ol></li>
-<li><b>MAY</b> contain zero or more [0..*] <tt><b>entryRelationship</b></tt> (CONF:7770)
-<ol>
-<li>Contains <tt><b>@typeCode="</b>COMP" </tt><i>COMP</i></li>
-<li>Contains exactly one [1..1] <xref href="../ProcedureEncounter.dita">Procedure Encounter</xref></li></ol></li>
-<li><b>MAY</b> contain zero or more [0..*] <tt><b>participant</b></tt> (CONF:7754)
+<li><b>MAY</b> contain zero or more [0..*] <tt><b>participant</b></tt> (CONF:7751, CONF:7752, CONF:15911)
 <ol>
 <li>Contains exactly one [1..1] <xref href="../ProductInstance.dita">Product Instance</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.37</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or more [0..*] <tt><b>entryRelationship</b></tt> (CONF:7768) <ol><li> Such entryRelationships <b>SHALL</b> contain exactly one [1..1] <tt><b>@inversionInd</b>="true" </tt> (CONF:8009)</li><li> Such entryRelationships <b>SHALL</b> contain exactly one [1..1] <tt><b>@typeCode</b>="COMP" </tt> (CONF:7769)</li><li> Such entryRelationships <b>SHALL</b> contain exactly one [1..1] <tt><b>encounter</b></tt> (CONF:7770) <ol><li> This encounter <b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="ENC" </tt> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>) (CONF:7771)</li><li> This encounter <b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF:7772)</li><li> This encounter <b>SHALL</b> contain exactly one [1..1] <tt><b>id</b></tt> (CONF:7773)</li><li> This encounter <b>MAY</b> satisfy: Set the encounter ID to the ID of an encounter in another section to signify they are the same encounter. (CONF:16843)</li></ol> </li></ol>
+</li>
 <li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> (CONF:10498) <ol><li> This entryRelationship <b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref href="../AbandonedProcedureReasonObservation.dita">Abandoned Procedure Reason Observation</xref> (CONF:10510)<ol>
 <li>Contains exactly one [1..1] <xref href="../AbandonedProcedureReasonObservation.dita">Abandoned Procedure Reason Observation</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.130</tt>)</li></ol></li></ol>
 </li>
@@ -144,7 +140,7 @@ Required conditionally if procedure code is intravenous catheterization (E303)</
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>entryRelationship</b></tt> (CONF:10507) <ol><li> This entryRelationship <b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref href="../ProcedurePatientResponseObservation.dita">Procedure Patient Response Observation</xref> (CONF:10531)<ol>
 <li>Contains exactly one [1..1] <xref href="../ProcedurePatientResponseObservation.dita">Procedure Patient Response Observation</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.135</tt>)</li></ol></li></ol>
 </li>
-<li><b>SHALL</b> contain at least one [1..*] <tt><b>performer</b></tt> (CONF:10508) <ol><li> Such performers <b>SHALL</b> contain exactly one [1..1] <tt><b>assignedEntity</b></tt> (CONF:10536) <ol><li> This assignedEntity <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:10537), where the @code <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/ProviderRole.dita">ProviderRole</xref> 2.16.840.1.113883.17.3.11.46</tt><b> STATIC</b> (CONF:10538)<p><lines><i>NEMSIS Trace: EProcedures.10</i></lines></p></li><li> This assignedEntity <b>SHALL</b> contain exactly one [1..1] <tt><b>id</b></tt> (CONF:10539)<p><lines><i>NEMSIS Trace: EProcedures.09, ID equal to the EMS professional's agency ID number</i></lines></p></li></ol> </li></ol>
+<li><b>SHALL</b> contain at least one [1..*] <tt><b>performer</b></tt> (CONF:10508) <ol><li> Such performers <b>SHALL</b> contain exactly one [1..1] <tt><b>assignedEntity</b></tt> (CONF:10536) <ol><li> This assignedEntity <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:10537), which <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/ProviderRole.dita">ProviderRole</xref> 2.16.840.1.113883.17.3.11.46</tt><b> STATIC</b> (CONF:10538)<p><lines><i>NEMSIS Trace: EProcedures.10</i></lines></p></li><li> This assignedEntity <b>SHALL</b> contain exactly one [1..1] <tt><b>id</b></tt> (CONF:10539)<p><lines><i>NEMSIS Trace: EProcedures.09, ID equal to the EMS professional's agency ID number</i></lines></p></li></ol> </li></ol>
 </li>
 <li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> (CONF:10509) <p><lines><i>NEMSIS Trace: EAirway.04; required if procedure code is airway placement, i.e., 0CHY7BZ</i></lines></p><ol><li> This entryRelationship <b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref href="../AirwayConfirmationObservation.dita">Airway Confirmation Observation</xref> (CONF:10540)<ol>
 <li>Contains exactly one [1..1] <xref href="../AirwayConfirmationObservation.dita">Airway Confirmation Observation</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.175</tt>)</li></ol></li></ol>
@@ -154,15 +150,97 @@ Required conditionally if procedure code is intravenous catheterization (E303)</
 </li>
 <li>code in a procedure activity <b>SHOULD</b> be selected from LOINC (codeSystem 2.16.840.1.113883.6.1) or SNOMED CT (codeSystem 2.16.840.1.113883.6.96), and <b>MAY</b> be selected from CPT-4 (codeSystem 2.16.840.1.113883.6.12), ICD9 Procedures (codeSystem 2.16.840.1.113883.6.104), ICD10 Procedure Coding System (codeSystem 2.16.840.1.113883.6.4) (CONF:7657)</li>
 <li>code <b>SHOULD</b> contain zero or one [0..1] originalText (CONF:7658)</li>
-<li>originalText, if present, <b>SHOULD</b> contain zero or one [0..1] reference/@value (CONF:7659)</li>
-<li>reference/@value <b>SHALL</b> begin with a '#' and <b>SHALL</b> point to its corresponding narrative (using the approach defined in CDA Release 2, section 4.3.5.1) (CONF:7660)</li>
+<li>originalText, if present, <b>SHOULD</b> contain zero or one [0..1] reference (CONF:15908)</li>
+<li>reference, if present, <b>SHOULD</b> contain zero or one [0..1] @value (CONF:15909)</li>
+<li>reference/@value <b>SHALL</b> begin with a '#' and <b>SHALL</b> point to its corresponding narrative (using the approach defined in CDA Release 2, section 4.3.5.1) (CONF:15910)</li>
 <li>methodCode <b>SHALL NOT</b> conflict with the method inherent in Procedure / code (CONF:7890)</li>
 <li>entryRelationship with target entry encounter <b>SHALL</b> contain exactly one [1..1] @inversionInd="true" (CONF:8009)</li>
 <li>participant with target entry Product Instance <b>SHALL</b> contain exactly one [1..1] @typeCode="DEV" Device (CodeSystem: 2.16.840.1.113883.5.1002 HL7ActRelationshipType) STATIC (CONF:7752)</li>
 <li>participant with target entry Service Delivery Location <b>SHALL</b> contain exactly one [1..1] @typeCode="LOC" Location (CodeSystem: 2.16.840.1.113883.5.1002 HL7ActRelationshipType) STATIC (CONF:7766)</li>
 <li>entryRelationship with target entry Instructions <b>SHALL</b> contain exactly one [1..1] @inversionInd="true" (CONF:7777)</li>
 </ol>
-<codeblock id="example"><![CDATA[Error: Missing Runtime Class]]></codeblock>
+<section id="tableconformance"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="8" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><colspec colname="col2" colnum="2" /><colspec colname="col3" colnum="3" /><colspec colname="col4" colnum="4" /><colspec colname="col5" colnum="5" /><colspec colname="col6" colnum="6" /><colspec colname="col7" colnum="7" /><thead> <row><entry namest="col0" nameend="col7" >emspcr::Procedure</entry>  </row>  <row><entry namest="col0" nameend="col7" >cda::procedure[cda:templateId/@root = 2.16.840.1.1133883.17.3.10.1.98]/</entry>  </row>  <row><entry>Name</entry><entry>XPath</entry><entry>Cardinality</entry><entry>Severity</entry><entry>Nullable</entry><entry>Data Type</entry><entry>Conformance</entry><entry>Value(s)</entry></row></thead><tbody><row><entry>negationInd</entry><entry>@negationInd</entry><entry>0..1</entry><entry>MAY</entry><entry>NO</entry><entry>Boolean</entry><entry></entry><entry> </entry></row> 
+<row><entry>approachSiteCode</entry><entry>approachSiteCode</entry><entry>0..1</entry><entry>SHALL</entry><entry>YES</entry><entry>CD</entry><entry>CONF:10501</entry><entry> null</entry></row> 
+<row><entry>code</entry><entry>code</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>CD</entry><entry>CONF:10496</entry><entry> </entry></row> 
+<row><entry>effectiveTime</entry><entry>effectiveTime</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>IVL_TS</entry><entry>CONF:10497</entry><entry> </entry></row> 
+<row><entry>statusCode</entry><entry>statusCode</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>CS</entry><entry>CONF:10499</entry><entry>ActStatus 2.16.840.1.113883.5.14 Aborted</entry></row> 
+<row><entry>AbandonedProcedureRelationship</entry><entry>AbandonedProcedureRelationship</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>AbandonedProcedureRelationship</entry><entry>CONF:10498</entry><entry> </entry></row> 
+<row><entry>AirwayConfirmationRelationship</entry><entry>AirwayConfirmationRelationship</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>AirwayConfirmationRelationship</entry><entry>CONF:10509</entry><entry> </entry></row> 
+<row><entry>procedureActivityProcedure1</entry><entry>procedureActivityProcedure1</entry><entry>0..*</entry><entry>MAY</entry><entry>YES</entry><entry>Procedure</entry><entry>CONF:6277CONF:8534</entry><entry> </entry></row> 
+<row><entry>ProcedureComplicationsRelationship</entry><entry>ProcedureComplicationsRelationship</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>ProcedureComplicationsRelationship</entry><entry>CONF:10506</entry><entry> </entry></row> 
+<row><entry>ProcedureNumberOfAttemptsRelationship</entry><entry>ProcedureNumberOfAttemptsRelationship</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>ProcedureNumberOfAttemptsRelationship</entry><entry>CONF:10504</entry><entry> </entry></row> 
+<row><entry>ProcedurePatientResponseRelationship</entry><entry>ProcedurePatientResponseRelationship</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>ProcedurePatientResponseRelationship</entry><entry>CONF:10507</entry><entry> </entry></row> 
+<row><entry>ProcedurePerformer</entry><entry>ProcedurePerformer</entry><entry>1..*</entry><entry>SHALL</entry><entry>YES</entry><entry>ProcedurePerformer</entry><entry>CONF:10508</entry><entry> </entry></row> 
+<row><entry>ProcedurePriorRelationship</entry><entry>ProcedurePriorRelationship</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>ProcedurePriorRelationship</entry><entry>CONF:10503</entry><entry> </entry></row> 
+<row><entry>ProcedureSuccessfulRelationship</entry><entry>ProcedureSuccessfulRelationship</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>ProcedureSuccessfulRelationship</entry><entry>CONF:10505</entry><entry> </entry></row> 
+<row><entry>ReasonProcedureNotAttemptedRelationship</entry><entry>ReasonProcedureNotAttemptedRelationship</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>ReasonProcedureNotAttemptedRelationship</entry><entry></entry><entry> </entry></row> 
+</tbody></tgroup></table></p></section>
+<codeblock id="example"><![CDATA[<procedure xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3">
+  <templateId root="2.16.840.1.1133883.17.3.10.1.98"/>
+  <id root="MDHT" extension="959476621"/>
+  <code code="884017739"/>
+  <statusCode code="Aborted"/>
+  <effectiveTime>
+    <low value="2013"/>
+    <high value="2013"/>
+  </effectiveTime>
+  <priorityCode code="436160474"/>
+  <methodCode code="1063146926"/>
+  <approachSiteCode codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+  <targetSiteCode code="1041769652"/>
+  <performer>
+    <assignedEntity>
+      <id root="MDHT" extension="2001242537"/>
+      <code codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+    </assignedEntity>
+  </performer>
+  <entryRelationship>
+    <observation>
+      <code code="1340155594"/>
+      <value xsi:type="CD" code="396602744"/>
+    </observation>
+  </entryRelationship>
+  <entryRelationship>
+    <observation>
+      <code code="812507924"/>
+      <value xsi:type="BL"/>
+    </observation>
+  </entryRelationship>
+  <entryRelationship>
+    <observation>
+      <code code="1192860431"/>
+      <value xsi:type="INT" value="1"/>
+    </observation>
+  </entryRelationship>
+  <entryRelationship>
+    <observation>
+      <code code="350217455"/>
+      <value xsi:type="BL"/>
+    </observation>
+  </entryRelationship>
+  <entryRelationship>
+    <observation>
+      <code code="1014630068"/>
+    </observation>
+  </entryRelationship>
+  <entryRelationship>
+    <observation>
+      <code code="746619904"/>
+      <value xsi:type="CD" code="1083575069"/>
+    </observation>
+  </entryRelationship>
+  <entryRelationship>
+    <observation>
+      <code code="984505806"/>
+      <effectiveTime>
+        <low value="2013"/>
+        <high value="2013"/>
+      </effectiveTime>
+      <value xsi:type="BL"/>
+      <methodCode code="794468540"/>
+    </observation>
+  </entryRelationship>
+</procedure>]]></codeblock>
 <section id="changes">
 </section>
 <p><ph id="classformalname">Procedure</ph></p>

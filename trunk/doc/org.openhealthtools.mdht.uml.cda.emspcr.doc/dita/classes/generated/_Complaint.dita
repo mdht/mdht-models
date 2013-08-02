@@ -26,7 +26,7 @@
 <li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> (CONF:10772) <ol><li> This entryRelationship Contains at least one [1..*] <tt><b>observation</b></tt>, where its type is <xref href="../ComplaintType.dita">Complaint Type</xref><ol>
 <li>Contains exactly one [1..1] <xref href="../ComplaintType.dita">Complaint Type</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.138</tt>)</li></ol></li></ol>
 </li>
-<li><b>SHOULD</b> contain exactly one [1..1] <tt><b>targetSiteCode</b></tt> (CONF:10773), where the @code <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/AnatomicLocation.dita">AnatomicLocation</xref> 2.16.840.1.113883.17.3.11.76</tt><b> STATIC</b> (CONF:10774)
+<li><b>SHOULD</b> contain exactly one [1..1] <tt><b>targetSiteCode</b></tt> (CONF:10773), which <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/AnatomicLocation.dita">AnatomicLocation</xref> 2.16.840.1.113883.17.3.11.76</tt><b> STATIC</b> (CONF:10774)
 <ul><li><p><lines><i>NEMSIS Trace: ESituation.07
 Complaint site is required if complaint is type "Chief complaint"</i></lines></p></li></ul></li>
 <li><b>SHOULD</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> (CONF:10775) <p><lines><i>The organ system is required if the complaint is of type "Chief complaint"</i></lines></p><ol><li> This entryRelationship <b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref href="../ComplaintOrganSystem.dita">Complaint Organ System</xref> (CONF:10782)<ol>
@@ -46,7 +46,7 @@ Complaint site is required if complaint is type "Chief complaint"</i></lines></p
 <ul><li><p><lines><i>effectiveTime.low = NEMSIS Trace: ESituation.01</i></lines></p></li></ul></li>
 <li><b>MAY</b> contain zero or one [0..1] <tt><b>value</b></tt> with data type ST (CONF:10770)
 <ul><li><p><lines><i>NEMSIS Trace: ESituation.04</i></lines></p></li></ul></li>
-<li><b>SHOULD</b> contain exactly one [1..1] <tt><b>targetSiteCode</b></tt> (CONF:10773), where the @code <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/AnatomicLocation.dita">AnatomicLocation</xref> 2.16.840.1.113883.17.3.11.76</tt><b> STATIC</b> (CONF:10774)
+<li><b>SHOULD</b> contain exactly one [1..1] <tt><b>targetSiteCode</b></tt> (CONF:10773), which <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/AnatomicLocation.dita">AnatomicLocation</xref> 2.16.840.1.113883.17.3.11.76</tt><b> STATIC</b> (CONF:10774)
 <ul><li><p><lines><i>NEMSIS Trace: ESituation.07
 Complaint site is required if complaint is type "Chief complaint"</i></lines></p></li></ul></li>
 <li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> (CONF:10771) <ol><li> This entryRelationship Contains exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref href="../ComplaintDuration.dita">Complaint Duration</xref><ol>
@@ -59,7 +59,45 @@ Complaint site is required if complaint is type "Chief complaint"</i></lines></p
 <li>Contains exactly one [1..1] <xref href="../ComplaintOrganSystem.dita">Complaint Organ System</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.140</tt>)</li></ol></li></ol>
 </li>
 </ol>
-<codeblock id="example"><![CDATA[Error: Missing Runtime Class]]></codeblock>
+<section id="tableconformance"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="8" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><colspec colname="col2" colnum="2" /><colspec colname="col3" colnum="3" /><colspec colname="col4" colnum="4" /><colspec colname="col5" colnum="5" /><colspec colname="col6" colnum="6" /><colspec colname="col7" colnum="7" /><thead> <row><entry namest="col0" nameend="col7" >emspcr::Complaint</entry>  </row>  <row><entry namest="col0" nameend="col7" >cda::observation[cda:templateId/@root = 2.16.840.1.1133883.17.3.10.1.63]/</entry>  </row>  <row><entry>Name</entry><entry>XPath</entry><entry>Cardinality</entry><entry>Severity</entry><entry>Nullable</entry><entry>Data Type</entry><entry>Conformance</entry><entry>Value(s)</entry></row></thead><tbody><row><entry>moodCode</entry><entry>@moodCode</entry><entry>1..1</entry><entry>SHALL</entry><entry>NO</entry><entry>x_ActMoodDocumentObservation</entry><entry></entry><entry> DEF</entry></row> 
+<row><entry>code</entry><entry>code</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>CD</entry><entry>CONF:10768</entry><entry>LOINC 2.16.840.1.113883.6.1 10154-3</entry></row> 
+<row><entry>effectiveTime</entry><entry>effectiveTime</entry><entry>0..1</entry><entry>SHALL</entry><entry>YES</entry><entry>IVL_TS</entry><entry></entry><entry> </entry></row> 
+<row><entry>targetSiteCode</entry><entry>targetSiteCode</entry><entry>1..1</entry><entry>SHOULD</entry><entry>YES</entry><entry>CD</entry><entry>CONF:10773</entry><entry> null</entry></row> 
+<row><entry>value</entry><entry>value</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>ST</entry><entry>CONF:10770</entry><entry> </entry></row> 
+<row><entry>complaint</entry><entry>complaint</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>Complaint</entry><entry></entry><entry> </entry></row> 
+<row><entry>ComplaintDurationRelationship</entry><entry>ComplaintDurationRelationship</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>ComplaintDurationRelationship</entry><entry>CONF:10771</entry><entry> </entry></row> 
+<row><entry>ComplaintOrganSystemRelationship</entry><entry>ComplaintOrganSystemRelationship</entry><entry>0..1</entry><entry>SHOULD</entry><entry>YES</entry><entry>ComplaintOrganSystemRelationship</entry><entry>CONF:10775</entry><entry> </entry></row> 
+<row><entry>ComplaintTypeRelationship</entry><entry>ComplaintTypeRelationship</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>ComplaintTypeRelationship</entry><entry>CONF:10772</entry><entry> </entry></row> 
+</tbody></tgroup></table></p></section>
+<codeblock id="example"><![CDATA[<observation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" moodCode="EVN">
+  <templateId root="2.16.840.1.1133883.17.3.10.1.63"/>
+  <id root="MDHT" extension="1382529318"/>
+  <code code="10154-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="EMS complaint"/>
+  <effectiveTime>
+    <low value="2013"/>
+    <high value="2013"/>
+  </effectiveTime>
+  <value xsi:type="ST">TEXT FOR VALUE</value>
+  <targetSiteCode codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+  <entryRelationship>
+    <observation>
+      <code code="2095139075"/>
+      <value xsi:type="PQ"/>
+    </observation>
+  </entryRelationship>
+  <entryRelationship>
+    <observation>
+      <code code="369197594"/>
+      <value xsi:type="CD" code="899549988"/>
+    </observation>
+  </entryRelationship>
+  <entryRelationship>
+    <observation>
+      <code code="377742872"/>
+      <value xsi:type="CD" code="658790259"/>
+    </observation>
+  </entryRelationship>
+</observation>]]></codeblock>
 <section id="changes">
 </section>
 <p><ph id="classformalname">Complaint</ph></p>
