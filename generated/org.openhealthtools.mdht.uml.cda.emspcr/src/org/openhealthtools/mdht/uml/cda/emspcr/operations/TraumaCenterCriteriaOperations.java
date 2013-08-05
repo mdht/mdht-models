@@ -44,45 +44,45 @@ import org.openhealthtools.mdht.uml.cda.operations.ClinicalStatementOperations;
  */
 public class TraumaCenterCriteriaOperations extends ClinicalStatementOperations {
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	protected TraumaCenterCriteriaOperations() {
 		super();
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateTraumaCenterCriteriaTemplateId(TraumaCenterCriteria, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Trauma Center Criteria Template Id</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateTraumaCenterCriteriaTemplateId(TraumaCenterCriteria, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Trauma Center Criteria Template Id</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateTraumaCenterCriteriaTemplateId(TraumaCenterCriteria, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateTraumaCenterCriteriaTemplateId(TraumaCenterCriteria, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_TRAUMA_CENTER_CRITERIA_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.1133883.17.3.10.1.52')";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateTraumaCenterCriteriaTemplateId(TraumaCenterCriteria, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Trauma Center Criteria Template Id</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateTraumaCenterCriteriaTemplateId(TraumaCenterCriteria, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Trauma Center Criteria Template Id</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateTraumaCenterCriteriaTemplateId(TraumaCenterCriteria, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateTraumaCenterCriteriaTemplateId(TraumaCenterCriteria, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 
 	protected static Constraint VALIDATE_TRAUMA_CENTER_CRITERIA_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param traumaCenterCriteria The receiving '<em><b>Trauma Center Criteria</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param traumaCenterCriteria The receiving '<em><b>Trauma Center Criteria</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 
 	public static boolean validateTraumaCenterCriteriaTemplateId(TraumaCenterCriteria traumaCenterCriteria,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
@@ -112,38 +112,38 @@ public class TraumaCenterCriteriaOperations extends ClinicalStatementOperations 
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateTraumaCenterCriteriaCode(TraumaCenterCriteria, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Trauma Center Criteria Code</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateTraumaCenterCriteriaCode(TraumaCenterCriteria, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Trauma Center Criteria Code</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateTraumaCenterCriteriaCode(TraumaCenterCriteria, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateTraumaCenterCriteriaCode(TraumaCenterCriteria, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_TRAUMA_CENTER_CRITERIA_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "
 			+ "let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "
 			+ "value.code = '67495-2' and value.codeSystem = '2.16.840.1.113883.6.1')";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateTraumaCenterCriteriaCode(TraumaCenterCriteria, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Trauma Center Criteria Code</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateTraumaCenterCriteriaCode(TraumaCenterCriteria, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Trauma Center Criteria Code</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateTraumaCenterCriteriaCode(TraumaCenterCriteria, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateTraumaCenterCriteriaCode(TraumaCenterCriteria, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 
 	protected static Constraint VALIDATE_TRAUMA_CENTER_CRITERIA_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param traumaCenterCriteria The receiving '<em><b>Trauma Center Criteria</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param traumaCenterCriteria The receiving '<em><b>Trauma Center Criteria</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 
 	public static boolean validateTraumaCenterCriteriaCode(TraumaCenterCriteria traumaCenterCriteria,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
@@ -172,38 +172,38 @@ public class TraumaCenterCriteriaOperations extends ClinicalStatementOperations 
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateTraumaCenterCriteriaValue(TraumaCenterCriteria, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Trauma Center Criteria Value</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateTraumaCenterCriteriaValue(TraumaCenterCriteria, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Trauma Center Criteria Value</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateTraumaCenterCriteriaValue(TraumaCenterCriteria, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateTraumaCenterCriteriaValue(TraumaCenterCriteria, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_TRAUMA_CENTER_CRITERIA_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (not self.value->isEmpty() and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and "
 			+ "let value : datatypes::CD = element.oclAsType(datatypes::CD) in "
 			+ "value.codeSystem = '2.16.840.1.113883.6.1' and (value.code = 'LA17337-9' or value.code = 'LA17338-7' or value.code = 'LA17339-5' or value.code = 'LA17340-3' or value.code = 'LA17341-1' or value.code = 'LA17342-9' or value.code = 'LA17343-7' or value.code = 'LA17344-5' or value.code = 'LA17345-2' or value.code = 'LA17346-0' or value.code = 'LA17347-8')))";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateTraumaCenterCriteriaValue(TraumaCenterCriteria, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Trauma Center Criteria Value</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateTraumaCenterCriteriaValue(TraumaCenterCriteria, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Trauma Center Criteria Value</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateTraumaCenterCriteriaValue(TraumaCenterCriteria, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateTraumaCenterCriteriaValue(TraumaCenterCriteria, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 
 	protected static Constraint VALIDATE_TRAUMA_CENTER_CRITERIA_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param traumaCenterCriteria The receiving '<em><b>Trauma Center Criteria</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param traumaCenterCriteria The receiving '<em><b>Trauma Center Criteria</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 
 	public static boolean validateTraumaCenterCriteriaValue(TraumaCenterCriteria traumaCenterCriteria,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
@@ -232,36 +232,36 @@ public class TraumaCenterCriteriaOperations extends ClinicalStatementOperations 
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateTraumaCenterCriteriaMoodCode(TraumaCenterCriteria, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Trauma Center Criteria Mood Code</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateTraumaCenterCriteriaMoodCode(TraumaCenterCriteria, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Trauma Center Criteria Mood Code</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateTraumaCenterCriteriaMoodCode(TraumaCenterCriteria, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateTraumaCenterCriteriaMoodCode(TraumaCenterCriteria, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_TRAUMA_CENTER_CRITERIA_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "isDefined('moodCode')";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateTraumaCenterCriteriaMoodCode(TraumaCenterCriteria, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Trauma Center Criteria Mood Code</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateTraumaCenterCriteriaMoodCode(TraumaCenterCriteria, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Trauma Center Criteria Mood Code</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateTraumaCenterCriteriaMoodCode(TraumaCenterCriteria, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateTraumaCenterCriteriaMoodCode(TraumaCenterCriteria, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 
 	protected static Constraint VALIDATE_TRAUMA_CENTER_CRITERIA_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param traumaCenterCriteria The receiving '<em><b>Trauma Center Criteria</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param traumaCenterCriteria The receiving '<em><b>Trauma Center Criteria</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 
 	public static boolean validateTraumaCenterCriteriaMoodCode(TraumaCenterCriteria traumaCenterCriteria,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {

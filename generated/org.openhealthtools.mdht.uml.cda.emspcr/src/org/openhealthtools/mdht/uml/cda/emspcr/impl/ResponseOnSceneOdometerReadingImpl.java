@@ -35,29 +35,29 @@ import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
  */
 public class ResponseOnSceneOdometerReadingImpl extends ObservationImpl implements ResponseOnSceneOdometerReading {
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	protected ResponseOnSceneOdometerReadingImpl() {
 		super();
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
 		return EmspcrPackage.Literals.RESPONSE_ON_SCENE_ODOMETER_READING;
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateResponseOnSceneOdometerReadingTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ResponseOnSceneOdometerReadingOperations.validateResponseOnSceneOdometerReadingTemplateId(
@@ -65,40 +65,40 @@ public class ResponseOnSceneOdometerReadingImpl extends ObservationImpl implemen
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateResponseOnSceneOdometerReadingCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ResponseOnSceneOdometerReadingOperations.validateResponseOnSceneOdometerReadingCodeP(
 			this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateResponseOnSceneOdometerReadingCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ResponseOnSceneOdometerReadingOperations.validateResponseOnSceneOdometerReadingCode(
 			this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateResponseOnSceneOdometerReadingValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ResponseOnSceneOdometerReadingOperations.validateResponseOnSceneOdometerReadingValue(
 			this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateResponseOnSceneOdometerReadingMoodCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ResponseOnSceneOdometerReadingOperations.validateResponseOnSceneOdometerReadingMoodCode(
@@ -106,10 +106,10 @@ public class ResponseOnSceneOdometerReadingImpl extends ObservationImpl implemen
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public ResponseOnSceneOdometerReading init() {
 		return Initializer.Util.init(this);
 	}

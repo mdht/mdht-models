@@ -35,29 +35,29 @@ import org.openhealthtools.mdht.uml.cda.impl.OrganizerImpl;
  */
 public class DispatchLocationOrganizerImpl extends OrganizerImpl implements DispatchLocationOrganizer {
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	protected DispatchLocationOrganizerImpl() {
 		super();
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
 		return EmspcrPackage.Literals.DISPATCH_LOCATION_ORGANIZER;
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateDispatchLocationOrganizerDispatchLocationNameRelationship(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return DispatchLocationOrganizerOperations.validateDispatchLocationOrganizerDispatchLocationNameRelationship(
@@ -65,10 +65,10 @@ public class DispatchLocationOrganizerImpl extends OrganizerImpl implements Disp
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateDispatchLocationOrganizerDispatchLocationLatitudeRelationship(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return DispatchLocationOrganizerOperations.validateDispatchLocationOrganizerDispatchLocationLatitudeRelationship(
@@ -76,10 +76,10 @@ public class DispatchLocationOrganizerImpl extends OrganizerImpl implements Disp
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateDispatchLocationOrganizerDispatchLocationLongtudeRelationship(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return DispatchLocationOrganizerOperations.validateDispatchLocationOrganizerDispatchLocationLongtudeRelationship(
@@ -87,20 +87,20 @@ public class DispatchLocationOrganizerImpl extends OrganizerImpl implements Disp
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateDispatchLocationOrganizerTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return DispatchLocationOrganizerOperations.validateDispatchLocationOrganizerTemplateId(
 			this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public DispatchLocationOrganizer init() {
 		return Initializer.Util.init(this);
 	}

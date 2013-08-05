@@ -61,45 +61,45 @@ import org.openhealthtools.mdht.uml.cda.operations.OrganizerOperations;
  */
 public class GlasgowComaScoreOrganizerOperations extends OrganizerOperations {
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	protected GlasgowComaScoreOrganizerOperations() {
 		super();
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateGlasgowComaScoreOrganizerGlasgowEye(GlasgowComaScoreOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Glasgow Coma Score Organizer Glasgow Eye</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateGlasgowComaScoreOrganizerGlasgowEye(GlasgowComaScoreOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Glasgow Coma Score Organizer Glasgow Eye</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateGlasgowComaScoreOrganizerGlasgowEye(GlasgowComaScoreOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateGlasgowComaScoreOrganizerGlasgowEye(GlasgowComaScoreOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_GLASGOW_COMA_SCORE_ORGANIZER_GLASGOW_EYE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.component->one(component : cda::Component4 | not component.observation.oclIsUndefined() and component.observation.oclIsKindOf(emspcr::GlasgowEye))";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateGlasgowComaScoreOrganizerGlasgowEye(GlasgowComaScoreOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Glasgow Coma Score Organizer Glasgow Eye</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateGlasgowComaScoreOrganizerGlasgowEye(GlasgowComaScoreOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Glasgow Coma Score Organizer Glasgow Eye</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateGlasgowComaScoreOrganizerGlasgowEye(GlasgowComaScoreOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateGlasgowComaScoreOrganizerGlasgowEye(GlasgowComaScoreOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 
 	protected static Constraint VALIDATE_GLASGOW_COMA_SCORE_ORGANIZER_GLASGOW_EYE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param glasgowComaScoreOrganizer The receiving '<em><b>Glasgow Coma Score Organizer</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param glasgowComaScoreOrganizer The receiving '<em><b>Glasgow Coma Score Organizer</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 
 	public static boolean validateGlasgowComaScoreOrganizerGlasgowEye(
 			GlasgowComaScoreOrganizer glasgowComaScoreOrganizer, DiagnosticChain diagnostics,
@@ -130,36 +130,36 @@ public class GlasgowComaScoreOrganizerOperations extends OrganizerOperations {
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateGlasgowComaScoreOrganizerGlasgowMotor(GlasgowComaScoreOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Glasgow Coma Score Organizer Glasgow Motor</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateGlasgowComaScoreOrganizerGlasgowMotor(GlasgowComaScoreOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Glasgow Coma Score Organizer Glasgow Motor</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateGlasgowComaScoreOrganizerGlasgowMotor(GlasgowComaScoreOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateGlasgowComaScoreOrganizerGlasgowMotor(GlasgowComaScoreOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_GLASGOW_COMA_SCORE_ORGANIZER_GLASGOW_MOTOR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.component->one(component : cda::Component4 | not component.observation.oclIsUndefined() and component.observation.oclIsKindOf(emspcr::GlasgowMotor))";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateGlasgowComaScoreOrganizerGlasgowMotor(GlasgowComaScoreOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Glasgow Coma Score Organizer Glasgow Motor</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateGlasgowComaScoreOrganizerGlasgowMotor(GlasgowComaScoreOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Glasgow Coma Score Organizer Glasgow Motor</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateGlasgowComaScoreOrganizerGlasgowMotor(GlasgowComaScoreOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateGlasgowComaScoreOrganizerGlasgowMotor(GlasgowComaScoreOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 
 	protected static Constraint VALIDATE_GLASGOW_COMA_SCORE_ORGANIZER_GLASGOW_MOTOR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param glasgowComaScoreOrganizer The receiving '<em><b>Glasgow Coma Score Organizer</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param glasgowComaScoreOrganizer The receiving '<em><b>Glasgow Coma Score Organizer</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 
 	public static boolean validateGlasgowComaScoreOrganizerGlasgowMotor(
 			GlasgowComaScoreOrganizer glasgowComaScoreOrganizer, DiagnosticChain diagnostics,
@@ -190,36 +190,36 @@ public class GlasgowComaScoreOrganizerOperations extends OrganizerOperations {
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateGlasgowComaScoreOrganizerGlasgowQualifier(GlasgowComaScoreOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Glasgow Coma Score Organizer Glasgow Qualifier</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateGlasgowComaScoreOrganizerGlasgowQualifier(GlasgowComaScoreOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Glasgow Coma Score Organizer Glasgow Qualifier</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateGlasgowComaScoreOrganizerGlasgowQualifier(GlasgowComaScoreOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateGlasgowComaScoreOrganizerGlasgowQualifier(GlasgowComaScoreOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_GLASGOW_COMA_SCORE_ORGANIZER_GLASGOW_QUALIFIER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.component->one(component : cda::Component4 | not component.observation.oclIsUndefined() and component.observation.oclIsKindOf(emspcr::GlasgowQualifier))";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateGlasgowComaScoreOrganizerGlasgowQualifier(GlasgowComaScoreOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Glasgow Coma Score Organizer Glasgow Qualifier</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateGlasgowComaScoreOrganizerGlasgowQualifier(GlasgowComaScoreOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Glasgow Coma Score Organizer Glasgow Qualifier</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateGlasgowComaScoreOrganizerGlasgowQualifier(GlasgowComaScoreOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateGlasgowComaScoreOrganizerGlasgowQualifier(GlasgowComaScoreOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 
 	protected static Constraint VALIDATE_GLASGOW_COMA_SCORE_ORGANIZER_GLASGOW_QUALIFIER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param glasgowComaScoreOrganizer The receiving '<em><b>Glasgow Coma Score Organizer</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param glasgowComaScoreOrganizer The receiving '<em><b>Glasgow Coma Score Organizer</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 
 	public static boolean validateGlasgowComaScoreOrganizerGlasgowQualifier(
 			GlasgowComaScoreOrganizer glasgowComaScoreOrganizer, DiagnosticChain diagnostics,
@@ -251,36 +251,36 @@ public class GlasgowComaScoreOrganizerOperations extends OrganizerOperations {
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateGlasgowComaScoreOrganizerGlasgowTotal(GlasgowComaScoreOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Glasgow Coma Score Organizer Glasgow Total</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateGlasgowComaScoreOrganizerGlasgowTotal(GlasgowComaScoreOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Glasgow Coma Score Organizer Glasgow Total</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateGlasgowComaScoreOrganizerGlasgowTotal(GlasgowComaScoreOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateGlasgowComaScoreOrganizerGlasgowTotal(GlasgowComaScoreOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_GLASGOW_COMA_SCORE_ORGANIZER_GLASGOW_TOTAL__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.component->one(component : cda::Component4 | not component.observation.oclIsUndefined() and component.observation.oclIsKindOf(emspcr::GlasgowTotal))";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateGlasgowComaScoreOrganizerGlasgowTotal(GlasgowComaScoreOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Glasgow Coma Score Organizer Glasgow Total</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateGlasgowComaScoreOrganizerGlasgowTotal(GlasgowComaScoreOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Glasgow Coma Score Organizer Glasgow Total</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateGlasgowComaScoreOrganizerGlasgowTotal(GlasgowComaScoreOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateGlasgowComaScoreOrganizerGlasgowTotal(GlasgowComaScoreOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 
 	protected static Constraint VALIDATE_GLASGOW_COMA_SCORE_ORGANIZER_GLASGOW_TOTAL__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param glasgowComaScoreOrganizer The receiving '<em><b>Glasgow Coma Score Organizer</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param glasgowComaScoreOrganizer The receiving '<em><b>Glasgow Coma Score Organizer</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 
 	public static boolean validateGlasgowComaScoreOrganizerGlasgowTotal(
 			GlasgowComaScoreOrganizer glasgowComaScoreOrganizer, DiagnosticChain diagnostics,
@@ -311,36 +311,36 @@ public class GlasgowComaScoreOrganizerOperations extends OrganizerOperations {
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateGlasgowComaScoreOrganizerGlasgowVerbal(GlasgowComaScoreOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Glasgow Coma Score Organizer Glasgow Verbal</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateGlasgowComaScoreOrganizerGlasgowVerbal(GlasgowComaScoreOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Glasgow Coma Score Organizer Glasgow Verbal</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateGlasgowComaScoreOrganizerGlasgowVerbal(GlasgowComaScoreOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateGlasgowComaScoreOrganizerGlasgowVerbal(GlasgowComaScoreOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_GLASGOW_COMA_SCORE_ORGANIZER_GLASGOW_VERBAL__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.component->one(component : cda::Component4 | not component.observation.oclIsUndefined() and component.observation.oclIsKindOf(emspcr::GlasgowVerbal))";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateGlasgowComaScoreOrganizerGlasgowVerbal(GlasgowComaScoreOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Glasgow Coma Score Organizer Glasgow Verbal</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateGlasgowComaScoreOrganizerGlasgowVerbal(GlasgowComaScoreOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Glasgow Coma Score Organizer Glasgow Verbal</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateGlasgowComaScoreOrganizerGlasgowVerbal(GlasgowComaScoreOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateGlasgowComaScoreOrganizerGlasgowVerbal(GlasgowComaScoreOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 
 	protected static Constraint VALIDATE_GLASGOW_COMA_SCORE_ORGANIZER_GLASGOW_VERBAL__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param glasgowComaScoreOrganizer The receiving '<em><b>Glasgow Coma Score Organizer</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param glasgowComaScoreOrganizer The receiving '<em><b>Glasgow Coma Score Organizer</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 
 	public static boolean validateGlasgowComaScoreOrganizerGlasgowVerbal(
 			GlasgowComaScoreOrganizer glasgowComaScoreOrganizer, DiagnosticChain diagnostics,
@@ -371,36 +371,36 @@ public class GlasgowComaScoreOrganizerOperations extends OrganizerOperations {
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateGlasgowComaScoreOrganizerTemplateId(GlasgowComaScoreOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Glasgow Coma Score Organizer Template Id</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateGlasgowComaScoreOrganizerTemplateId(GlasgowComaScoreOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Glasgow Coma Score Organizer Template Id</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateGlasgowComaScoreOrganizerTemplateId(GlasgowComaScoreOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateGlasgowComaScoreOrganizerTemplateId(GlasgowComaScoreOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_GLASGOW_COMA_SCORE_ORGANIZER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.1133883.17.3.10.1.170')";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateGlasgowComaScoreOrganizerTemplateId(GlasgowComaScoreOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Glasgow Coma Score Organizer Template Id</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateGlasgowComaScoreOrganizerTemplateId(GlasgowComaScoreOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Glasgow Coma Score Organizer Template Id</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateGlasgowComaScoreOrganizerTemplateId(GlasgowComaScoreOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateGlasgowComaScoreOrganizerTemplateId(GlasgowComaScoreOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 
 	protected static Constraint VALIDATE_GLASGOW_COMA_SCORE_ORGANIZER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param glasgowComaScoreOrganizer The receiving '<em><b>Glasgow Coma Score Organizer</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param glasgowComaScoreOrganizer The receiving '<em><b>Glasgow Coma Score Organizer</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 
 	public static boolean validateGlasgowComaScoreOrganizerTemplateId(
 			GlasgowComaScoreOrganizer glasgowComaScoreOrganizer, DiagnosticChain diagnostics,
@@ -431,36 +431,36 @@ public class GlasgowComaScoreOrganizerOperations extends OrganizerOperations {
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateGlasgowComaScoreOrganizerEffectiveTime(GlasgowComaScoreOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Glasgow Coma Score Organizer Effective Time</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateGlasgowComaScoreOrganizerEffectiveTime(GlasgowComaScoreOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Glasgow Coma Score Organizer Effective Time</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateGlasgowComaScoreOrganizerEffectiveTime(GlasgowComaScoreOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateGlasgowComaScoreOrganizerEffectiveTime(GlasgowComaScoreOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_GLASGOW_COMA_SCORE_ORGANIZER_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.effectiveTime.oclIsUndefined() or self.effectiveTime.isNullFlavorUndefined()) implies (not self.effectiveTime.oclIsUndefined())";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateGlasgowComaScoreOrganizerEffectiveTime(GlasgowComaScoreOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Glasgow Coma Score Organizer Effective Time</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateGlasgowComaScoreOrganizerEffectiveTime(GlasgowComaScoreOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Glasgow Coma Score Organizer Effective Time</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateGlasgowComaScoreOrganizerEffectiveTime(GlasgowComaScoreOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateGlasgowComaScoreOrganizerEffectiveTime(GlasgowComaScoreOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 
 	protected static Constraint VALIDATE_GLASGOW_COMA_SCORE_ORGANIZER_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param glasgowComaScoreOrganizer The receiving '<em><b>Glasgow Coma Score Organizer</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param glasgowComaScoreOrganizer The receiving '<em><b>Glasgow Coma Score Organizer</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 
 	public static boolean validateGlasgowComaScoreOrganizerEffectiveTime(
 			GlasgowComaScoreOrganizer glasgowComaScoreOrganizer, DiagnosticChain diagnostics,
@@ -491,30 +491,30 @@ public class GlasgowComaScoreOrganizerOperations extends OrganizerOperations {
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #getGlasgowEye(GlasgowComaScoreOrganizer) <em>Get Glasgow Eye</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #getGlasgowEye(GlasgowComaScoreOrganizer) <em>Get Glasgow Eye</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #getGlasgowEye(GlasgowComaScoreOrganizer)
-	* @generated
-	* @ordered
-	*/
+	 * @see #getGlasgowEye(GlasgowComaScoreOrganizer)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String GET_GLASGOW_EYE__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(emspcr::GlasgowEye))->asSequence()->any(true).oclAsType(emspcr::GlasgowEye)";
 
 	/**
-	* The cached OCL query for the '{@link #getGlasgowEye(GlasgowComaScoreOrganizer) <em>Get Glasgow Eye</em>}' query operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL query for the '{@link #getGlasgowEye(GlasgowComaScoreOrganizer) <em>Get Glasgow Eye</em>}' query operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #getGlasgowEye(GlasgowComaScoreOrganizer)
-	* @generated
-	* @ordered
-	*/
+	 * @see #getGlasgowEye(GlasgowComaScoreOrganizer)
+	 * @generated
+	 * @ordered
+	 */
 	protected static OCLExpression<EClassifier> GET_GLASGOW_EYE__EOCL_QRY;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 
 	public static GlasgowEye getGlasgowEye(GlasgowComaScoreOrganizer glasgowComaScoreOrganizer) {
 		if (GET_GLASGOW_EYE__EOCL_QRY == null) {
@@ -533,30 +533,30 @@ public class GlasgowComaScoreOrganizerOperations extends OrganizerOperations {
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #getGlasgowMotor(GlasgowComaScoreOrganizer) <em>Get Glasgow Motor</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #getGlasgowMotor(GlasgowComaScoreOrganizer) <em>Get Glasgow Motor</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #getGlasgowMotor(GlasgowComaScoreOrganizer)
-	* @generated
-	* @ordered
-	*/
+	 * @see #getGlasgowMotor(GlasgowComaScoreOrganizer)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String GET_GLASGOW_MOTOR__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(emspcr::GlasgowMotor))->asSequence()->any(true).oclAsType(emspcr::GlasgowMotor)";
 
 	/**
-	* The cached OCL query for the '{@link #getGlasgowMotor(GlasgowComaScoreOrganizer) <em>Get Glasgow Motor</em>}' query operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL query for the '{@link #getGlasgowMotor(GlasgowComaScoreOrganizer) <em>Get Glasgow Motor</em>}' query operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #getGlasgowMotor(GlasgowComaScoreOrganizer)
-	* @generated
-	* @ordered
-	*/
+	 * @see #getGlasgowMotor(GlasgowComaScoreOrganizer)
+	 * @generated
+	 * @ordered
+	 */
 	protected static OCLExpression<EClassifier> GET_GLASGOW_MOTOR__EOCL_QRY;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 
 	public static GlasgowMotor getGlasgowMotor(GlasgowComaScoreOrganizer glasgowComaScoreOrganizer) {
 		if (GET_GLASGOW_MOTOR__EOCL_QRY == null) {
@@ -575,30 +575,30 @@ public class GlasgowComaScoreOrganizerOperations extends OrganizerOperations {
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #getGlasgowQualifier(GlasgowComaScoreOrganizer) <em>Get Glasgow Qualifier</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #getGlasgowQualifier(GlasgowComaScoreOrganizer) <em>Get Glasgow Qualifier</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #getGlasgowQualifier(GlasgowComaScoreOrganizer)
-	* @generated
-	* @ordered
-	*/
+	 * @see #getGlasgowQualifier(GlasgowComaScoreOrganizer)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String GET_GLASGOW_QUALIFIER__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(emspcr::GlasgowQualifier))->asSequence()->any(true).oclAsType(emspcr::GlasgowQualifier)";
 
 	/**
-	* The cached OCL query for the '{@link #getGlasgowQualifier(GlasgowComaScoreOrganizer) <em>Get Glasgow Qualifier</em>}' query operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL query for the '{@link #getGlasgowQualifier(GlasgowComaScoreOrganizer) <em>Get Glasgow Qualifier</em>}' query operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #getGlasgowQualifier(GlasgowComaScoreOrganizer)
-	* @generated
-	* @ordered
-	*/
+	 * @see #getGlasgowQualifier(GlasgowComaScoreOrganizer)
+	 * @generated
+	 * @ordered
+	 */
 	protected static OCLExpression<EClassifier> GET_GLASGOW_QUALIFIER__EOCL_QRY;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 
 	public static GlasgowQualifier getGlasgowQualifier(GlasgowComaScoreOrganizer glasgowComaScoreOrganizer) {
 		if (GET_GLASGOW_QUALIFIER__EOCL_QRY == null) {
@@ -617,30 +617,30 @@ public class GlasgowComaScoreOrganizerOperations extends OrganizerOperations {
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #getGlasgowTotal(GlasgowComaScoreOrganizer) <em>Get Glasgow Total</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #getGlasgowTotal(GlasgowComaScoreOrganizer) <em>Get Glasgow Total</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #getGlasgowTotal(GlasgowComaScoreOrganizer)
-	* @generated
-	* @ordered
-	*/
+	 * @see #getGlasgowTotal(GlasgowComaScoreOrganizer)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String GET_GLASGOW_TOTAL__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(emspcr::GlasgowTotal))->asSequence()->any(true).oclAsType(emspcr::GlasgowTotal)";
 
 	/**
-	* The cached OCL query for the '{@link #getGlasgowTotal(GlasgowComaScoreOrganizer) <em>Get Glasgow Total</em>}' query operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL query for the '{@link #getGlasgowTotal(GlasgowComaScoreOrganizer) <em>Get Glasgow Total</em>}' query operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #getGlasgowTotal(GlasgowComaScoreOrganizer)
-	* @generated
-	* @ordered
-	*/
+	 * @see #getGlasgowTotal(GlasgowComaScoreOrganizer)
+	 * @generated
+	 * @ordered
+	 */
 	protected static OCLExpression<EClassifier> GET_GLASGOW_TOTAL__EOCL_QRY;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 
 	public static GlasgowTotal getGlasgowTotal(GlasgowComaScoreOrganizer glasgowComaScoreOrganizer) {
 		if (GET_GLASGOW_TOTAL__EOCL_QRY == null) {
@@ -659,30 +659,30 @@ public class GlasgowComaScoreOrganizerOperations extends OrganizerOperations {
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #getGlasgowVerbal(GlasgowComaScoreOrganizer) <em>Get Glasgow Verbal</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #getGlasgowVerbal(GlasgowComaScoreOrganizer) <em>Get Glasgow Verbal</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #getGlasgowVerbal(GlasgowComaScoreOrganizer)
-	* @generated
-	* @ordered
-	*/
+	 * @see #getGlasgowVerbal(GlasgowComaScoreOrganizer)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String GET_GLASGOW_VERBAL__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(emspcr::GlasgowVerbal))->asSequence()->any(true).oclAsType(emspcr::GlasgowVerbal)";
 
 	/**
-	* The cached OCL query for the '{@link #getGlasgowVerbal(GlasgowComaScoreOrganizer) <em>Get Glasgow Verbal</em>}' query operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL query for the '{@link #getGlasgowVerbal(GlasgowComaScoreOrganizer) <em>Get Glasgow Verbal</em>}' query operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #getGlasgowVerbal(GlasgowComaScoreOrganizer)
-	* @generated
-	* @ordered
-	*/
+	 * @see #getGlasgowVerbal(GlasgowComaScoreOrganizer)
+	 * @generated
+	 * @ordered
+	 */
 	protected static OCLExpression<EClassifier> GET_GLASGOW_VERBAL__EOCL_QRY;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 
 	public static GlasgowVerbal getGlasgowVerbal(GlasgowComaScoreOrganizer glasgowComaScoreOrganizer) {
 		if (GET_GLASGOW_VERBAL__EOCL_QRY == null) {

@@ -38,47 +38,47 @@ import org.openhealthtools.mdht.uml.cda.emspcr.operations.CurrentMedicationSecti
  */
 public class CurrentMedicationSectionImpl extends MedicationsSectionImpl implements CurrentMedicationSection {
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	protected CurrentMedicationSectionImpl() {
 		super();
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
 		return EmspcrPackage.Literals.CURRENT_MEDICATION_SECTION;
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateCurrentMedicationSectionTitle(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return CurrentMedicationSectionOperations.validateCurrentMedicationSectionTitle(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateCurrentMedicationSectionText(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return CurrentMedicationSectionOperations.validateCurrentMedicationSectionText(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateCurrentMedicationSectionCurrentlyOnMedication(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return CurrentMedicationSectionOperations.validateCurrentMedicationSectionCurrentlyOnMedication(
@@ -86,10 +86,10 @@ public class CurrentMedicationSectionImpl extends MedicationsSectionImpl impleme
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateCurrentMedicationSectionPatientOnAnticoagulants(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return CurrentMedicationSectionOperations.validateCurrentMedicationSectionPatientOnAnticoagulants(
@@ -97,10 +97,10 @@ public class CurrentMedicationSectionImpl extends MedicationsSectionImpl impleme
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateCurrentMedicationSectionCurrentMedication(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return CurrentMedicationSectionOperations.validateCurrentMedicationSectionCurrentMedication(
@@ -108,37 +108,37 @@ public class CurrentMedicationSectionImpl extends MedicationsSectionImpl impleme
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public CurrentlyOnMedication getCurrentlyOnMedication() {
 		return CurrentMedicationSectionOperations.getCurrentlyOnMedication(this);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public PatientOnAnticoagulants getPatientOnAnticoagulants() {
 		return CurrentMedicationSectionOperations.getPatientOnAnticoagulants(this);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public CurrentMedication getCurrentMedication() {
 		return CurrentMedicationSectionOperations.getCurrentMedication(this);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	@Override
 	public boolean validateMedicationsSectionEntriesOptionalTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
@@ -147,10 +147,10 @@ public class CurrentMedicationSectionImpl extends MedicationsSectionImpl impleme
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	@Override
 	public CurrentMedicationSection init() {
 		return Initializer.Util.init(this);

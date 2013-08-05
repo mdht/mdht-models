@@ -35,83 +35,83 @@ import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
  */
 public class InitialPatientAcuityImpl extends ObservationImpl implements InitialPatientAcuity {
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	protected InitialPatientAcuityImpl() {
 		super();
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
 		return EmspcrPackage.Literals.INITIAL_PATIENT_ACUITY;
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateInitialPatientAcuityTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return InitialPatientAcuityOperations.validateInitialPatientAcuityTemplateId(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateInitialPatientAcuityCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return InitialPatientAcuityOperations.validateInitialPatientAcuityCodeP(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateInitialPatientAcuityCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return InitialPatientAcuityOperations.validateInitialPatientAcuityCode(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateInitialPatientAcuityValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return InitialPatientAcuityOperations.validateInitialPatientAcuityValue(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateInitialPatientAcuityValueP(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return InitialPatientAcuityOperations.validateInitialPatientAcuityValueP(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateInitialPatientAcuityMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return InitialPatientAcuityOperations.validateInitialPatientAcuityMoodCode(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public InitialPatientAcuity init() {
 		return Initializer.Util.init(this);
 	}

@@ -44,45 +44,45 @@ import org.openhealthtools.mdht.uml.cda.operations.ClinicalStatementOperations;
  */
 public class DispatchLocationNameOperations extends ClinicalStatementOperations {
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	protected DispatchLocationNameOperations() {
 		super();
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateDispatchLocationNameTemplateId(DispatchLocationName, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Dispatch Location Name Template Id</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateDispatchLocationNameTemplateId(DispatchLocationName, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Dispatch Location Name Template Id</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateDispatchLocationNameTemplateId(DispatchLocationName, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateDispatchLocationNameTemplateId(DispatchLocationName, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_DISPATCH_LOCATION_NAME_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.1133883.17.3.10.1.150')";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateDispatchLocationNameTemplateId(DispatchLocationName, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Dispatch Location Name Template Id</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateDispatchLocationNameTemplateId(DispatchLocationName, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Dispatch Location Name Template Id</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateDispatchLocationNameTemplateId(DispatchLocationName, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateDispatchLocationNameTemplateId(DispatchLocationName, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 
 	protected static Constraint VALIDATE_DISPATCH_LOCATION_NAME_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param dispatchLocationName The receiving '<em><b>Dispatch Location Name</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param dispatchLocationName The receiving '<em><b>Dispatch Location Name</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 
 	public static boolean validateDispatchLocationNameTemplateId(DispatchLocationName dispatchLocationName,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
@@ -112,38 +112,38 @@ public class DispatchLocationNameOperations extends ClinicalStatementOperations 
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateDispatchLocationNameCode(DispatchLocationName, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Dispatch Location Name Code</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateDispatchLocationNameCode(DispatchLocationName, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Dispatch Location Name Code</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateDispatchLocationNameCode(DispatchLocationName, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateDispatchLocationNameCode(DispatchLocationName, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_DISPATCH_LOCATION_NAME_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "
 			+ "let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "
 			+ "value.code = '69466-1' and value.codeSystem = '2.16.840.1.113883.6.1')";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateDispatchLocationNameCode(DispatchLocationName, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Dispatch Location Name Code</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateDispatchLocationNameCode(DispatchLocationName, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Dispatch Location Name Code</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateDispatchLocationNameCode(DispatchLocationName, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateDispatchLocationNameCode(DispatchLocationName, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 
 	protected static Constraint VALIDATE_DISPATCH_LOCATION_NAME_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param dispatchLocationName The receiving '<em><b>Dispatch Location Name</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param dispatchLocationName The receiving '<em><b>Dispatch Location Name</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 
 	public static boolean validateDispatchLocationNameCode(DispatchLocationName dispatchLocationName,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
@@ -172,36 +172,36 @@ public class DispatchLocationNameOperations extends ClinicalStatementOperations 
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateDispatchLocationNameValue(DispatchLocationName, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Dispatch Location Name Value</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateDispatchLocationNameValue(DispatchLocationName, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Dispatch Location Name Value</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateDispatchLocationNameValue(DispatchLocationName, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateDispatchLocationNameValue(DispatchLocationName, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_DISPATCH_LOCATION_NAME_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | element.oclIsTypeOf(datatypes::ST)))";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateDispatchLocationNameValue(DispatchLocationName, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Dispatch Location Name Value</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateDispatchLocationNameValue(DispatchLocationName, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Dispatch Location Name Value</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateDispatchLocationNameValue(DispatchLocationName, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateDispatchLocationNameValue(DispatchLocationName, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 
 	protected static Constraint VALIDATE_DISPATCH_LOCATION_NAME_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param dispatchLocationName The receiving '<em><b>Dispatch Location Name</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param dispatchLocationName The receiving '<em><b>Dispatch Location Name</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 
 	public static boolean validateDispatchLocationNameValue(DispatchLocationName dispatchLocationName,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
@@ -230,36 +230,36 @@ public class DispatchLocationNameOperations extends ClinicalStatementOperations 
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateDispatchLocationNameMoodCode(DispatchLocationName, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Dispatch Location Name Mood Code</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateDispatchLocationNameMoodCode(DispatchLocationName, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Dispatch Location Name Mood Code</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateDispatchLocationNameMoodCode(DispatchLocationName, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateDispatchLocationNameMoodCode(DispatchLocationName, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_DISPATCH_LOCATION_NAME_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "isDefined('moodCode')";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateDispatchLocationNameMoodCode(DispatchLocationName, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Dispatch Location Name Mood Code</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateDispatchLocationNameMoodCode(DispatchLocationName, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Dispatch Location Name Mood Code</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateDispatchLocationNameMoodCode(DispatchLocationName, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateDispatchLocationNameMoodCode(DispatchLocationName, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 
 	protected static Constraint VALIDATE_DISPATCH_LOCATION_NAME_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param dispatchLocationName The receiving '<em><b>Dispatch Location Name</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param dispatchLocationName The receiving '<em><b>Dispatch Location Name</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 
 	public static boolean validateDispatchLocationNameMoodCode(DispatchLocationName dispatchLocationName,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {

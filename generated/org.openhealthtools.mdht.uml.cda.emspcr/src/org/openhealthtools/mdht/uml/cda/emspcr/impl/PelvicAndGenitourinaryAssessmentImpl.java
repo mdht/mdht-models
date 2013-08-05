@@ -35,29 +35,29 @@ import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
  */
 public class PelvicAndGenitourinaryAssessmentImpl extends ObservationImpl implements PelvicAndGenitourinaryAssessment {
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	protected PelvicAndGenitourinaryAssessmentImpl() {
 		super();
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
 		return EmspcrPackage.Literals.PELVIC_AND_GENITOURINARY_ASSESSMENT;
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validatePelvicAndGenitourinaryAssessmentTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return PelvicAndGenitourinaryAssessmentOperations.validatePelvicAndGenitourinaryAssessmentTemplateId(
@@ -65,20 +65,20 @@ public class PelvicAndGenitourinaryAssessmentImpl extends ObservationImpl implem
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validatePelvicAndGenitourinaryAssessmentCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PelvicAndGenitourinaryAssessmentOperations.validatePelvicAndGenitourinaryAssessmentCode(
 			this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validatePelvicAndGenitourinaryAssessmentValue(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return PelvicAndGenitourinaryAssessmentOperations.validatePelvicAndGenitourinaryAssessmentValue(
@@ -86,10 +86,10 @@ public class PelvicAndGenitourinaryAssessmentImpl extends ObservationImpl implem
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validatePelvicAndGenitourinaryAssessmentValueP(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return PelvicAndGenitourinaryAssessmentOperations.validatePelvicAndGenitourinaryAssessmentValueP(
@@ -97,10 +97,10 @@ public class PelvicAndGenitourinaryAssessmentImpl extends ObservationImpl implem
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validatePelvicAndGenitourinaryAssessmentEffectiveTime(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return PelvicAndGenitourinaryAssessmentOperations.validatePelvicAndGenitourinaryAssessmentEffectiveTime(
@@ -108,10 +108,10 @@ public class PelvicAndGenitourinaryAssessmentImpl extends ObservationImpl implem
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validatePelvicAndGenitourinaryAssessmentMoodCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return PelvicAndGenitourinaryAssessmentOperations.validatePelvicAndGenitourinaryAssessmentMoodCode(
@@ -119,10 +119,10 @@ public class PelvicAndGenitourinaryAssessmentImpl extends ObservationImpl implem
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public PelvicAndGenitourinaryAssessment init() {
 		return Initializer.Util.init(this);
 	}

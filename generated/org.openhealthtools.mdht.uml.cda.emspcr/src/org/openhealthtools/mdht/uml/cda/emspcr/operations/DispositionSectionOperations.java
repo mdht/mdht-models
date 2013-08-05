@@ -72,45 +72,45 @@ import org.openhealthtools.mdht.uml.cda.operations.SectionOperations;
  */
 public class DispositionSectionOperations extends SectionOperations {
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	protected DispositionSectionOperations() {
 		super();
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateDispositionSectionTemplateId(DispositionSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Disposition Section Template Id</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateDispositionSectionTemplateId(DispositionSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Disposition Section Template Id</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateDispositionSectionTemplateId(DispositionSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateDispositionSectionTemplateId(DispositionSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_DISPOSITION_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.17.3.10.1.4')";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateDispositionSectionTemplateId(DispositionSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Disposition Section Template Id</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateDispositionSectionTemplateId(DispositionSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Disposition Section Template Id</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateDispositionSectionTemplateId(DispositionSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateDispositionSectionTemplateId(DispositionSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 
 	protected static Constraint VALIDATE_DISPOSITION_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param dispositionSection The receiving '<em><b>Disposition Section</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param dispositionSection The receiving '<em><b>Disposition Section</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 
 	public static boolean validateDispositionSectionTemplateId(DispositionSection dispositionSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
@@ -140,38 +140,38 @@ public class DispositionSectionOperations extends SectionOperations {
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateDispositionSectionCode(DispositionSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Disposition Section Code</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateDispositionSectionCode(DispositionSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Disposition Section Code</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateDispositionSectionCode(DispositionSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateDispositionSectionCode(DispositionSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_DISPOSITION_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and "
 			+ "let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in "
 			+ "value.code = '67796-3' and value.codeSystem = '2.16.840.1.113883.6.1')";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateDispositionSectionCode(DispositionSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Disposition Section Code</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateDispositionSectionCode(DispositionSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Disposition Section Code</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateDispositionSectionCode(DispositionSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateDispositionSectionCode(DispositionSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 
 	protected static Constraint VALIDATE_DISPOSITION_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param dispositionSection The receiving '<em><b>Disposition Section</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param dispositionSection The receiving '<em><b>Disposition Section</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 
 	public static boolean validateDispositionSectionCode(DispositionSection dispositionSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
@@ -200,36 +200,36 @@ public class DispositionSectionOperations extends SectionOperations {
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateDispositionSectionCodeP(DispositionSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Disposition Section Code P</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateDispositionSectionCodeP(DispositionSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Disposition Section Code P</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateDispositionSectionCodeP(DispositionSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateDispositionSectionCodeP(DispositionSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_DISPOSITION_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined())";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateDispositionSectionCodeP(DispositionSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Disposition Section Code P</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateDispositionSectionCodeP(DispositionSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Disposition Section Code P</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateDispositionSectionCodeP(DispositionSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateDispositionSectionCodeP(DispositionSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 
 	protected static Constraint VALIDATE_DISPOSITION_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param dispositionSection The receiving '<em><b>Disposition Section</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param dispositionSection The receiving '<em><b>Disposition Section</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 
 	public static boolean validateDispositionSectionCodeP(DispositionSection dispositionSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
@@ -258,36 +258,36 @@ public class DispositionSectionOperations extends SectionOperations {
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateDispositionSectionTitle(DispositionSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Disposition Section Title</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateDispositionSectionTitle(DispositionSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Disposition Section Title</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateDispositionSectionTitle(DispositionSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateDispositionSectionTitle(DispositionSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_DISPOSITION_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.title.oclIsUndefined() or self.title.isNullFlavorUndefined()) implies (not self.title.oclIsUndefined() and self.title.getText() = 'EMS Disposition')";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateDispositionSectionTitle(DispositionSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Disposition Section Title</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateDispositionSectionTitle(DispositionSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Disposition Section Title</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateDispositionSectionTitle(DispositionSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateDispositionSectionTitle(DispositionSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 
 	protected static Constraint VALIDATE_DISPOSITION_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param dispositionSection The receiving '<em><b>Disposition Section</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param dispositionSection The receiving '<em><b>Disposition Section</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 
 	public static boolean validateDispositionSectionTitle(DispositionSection dispositionSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
@@ -316,36 +316,36 @@ public class DispositionSectionOperations extends SectionOperations {
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateDispositionSectionText(DispositionSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Disposition Section Text</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateDispositionSectionText(DispositionSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Disposition Section Text</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateDispositionSectionText(DispositionSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateDispositionSectionText(DispositionSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_DISPOSITION_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "not self.text.oclIsUndefined()";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateDispositionSectionText(DispositionSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Disposition Section Text</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateDispositionSectionText(DispositionSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Disposition Section Text</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateDispositionSectionText(DispositionSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateDispositionSectionText(DispositionSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 
 	protected static Constraint VALIDATE_DISPOSITION_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param dispositionSection The receiving '<em><b>Disposition Section</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param dispositionSection The receiving '<em><b>Disposition Section</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 
 	public static boolean validateDispositionSectionText(DispositionSection dispositionSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
@@ -374,36 +374,36 @@ public class DispositionSectionOperations extends SectionOperations {
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateDispositionSectionEntry4(DispositionSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Disposition Section Entry4</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateDispositionSectionEntry4(DispositionSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Disposition Section Entry4</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateDispositionSectionEntry4(DispositionSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateDispositionSectionEntry4(DispositionSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_DISPOSITION_SECTION_ENTRY4__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->one(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(emspcr::TransportMethodObservation))";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateDispositionSectionEntry4(DispositionSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Disposition Section Entry4</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateDispositionSectionEntry4(DispositionSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Disposition Section Entry4</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateDispositionSectionEntry4(DispositionSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateDispositionSectionEntry4(DispositionSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 
 	protected static Constraint VALIDATE_DISPOSITION_SECTION_ENTRY4__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param dispositionSection The receiving '<em><b>Disposition Section</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param dispositionSection The receiving '<em><b>Disposition Section</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 
 	public static boolean validateDispositionSectionEntry4(DispositionSection dispositionSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
@@ -432,36 +432,36 @@ public class DispositionSectionOperations extends SectionOperations {
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateDispositionSectionNumberOfPatientsObservation(DispositionSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Disposition Section Number Of Patients Observation</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateDispositionSectionNumberOfPatientsObservation(DispositionSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Disposition Section Number Of Patients Observation</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateDispositionSectionNumberOfPatientsObservation(DispositionSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateDispositionSectionNumberOfPatientsObservation(DispositionSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_DISPOSITION_SECTION_NUMBER_OF_PATIENTS_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->one(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(emspcr::NumberOfPatientsObservation) and entry.typeCode = vocab::x_ActRelationshipEntry::DRIV)";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateDispositionSectionNumberOfPatientsObservation(DispositionSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Disposition Section Number Of Patients Observation</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateDispositionSectionNumberOfPatientsObservation(DispositionSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Disposition Section Number Of Patients Observation</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateDispositionSectionNumberOfPatientsObservation(DispositionSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateDispositionSectionNumberOfPatientsObservation(DispositionSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 
 	protected static Constraint VALIDATE_DISPOSITION_SECTION_NUMBER_OF_PATIENTS_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param dispositionSection The receiving '<em><b>Disposition Section</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param dispositionSection The receiving '<em><b>Disposition Section</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 
 	public static boolean validateDispositionSectionNumberOfPatientsObservation(DispositionSection dispositionSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
@@ -492,36 +492,36 @@ public class DispositionSectionOperations extends SectionOperations {
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateDispositionSectionIncidentDispositionObservation(DispositionSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Disposition Section Incident Disposition Observation</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateDispositionSectionIncidentDispositionObservation(DispositionSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Disposition Section Incident Disposition Observation</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateDispositionSectionIncidentDispositionObservation(DispositionSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateDispositionSectionIncidentDispositionObservation(DispositionSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_DISPOSITION_SECTION_INCIDENT_DISPOSITION_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->one(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(emspcr::IncidentDispositionObservation) and entry.typeCode = vocab::x_ActRelationshipEntry::DRIV)";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateDispositionSectionIncidentDispositionObservation(DispositionSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Disposition Section Incident Disposition Observation</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateDispositionSectionIncidentDispositionObservation(DispositionSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Disposition Section Incident Disposition Observation</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateDispositionSectionIncidentDispositionObservation(DispositionSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateDispositionSectionIncidentDispositionObservation(DispositionSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 
 	protected static Constraint VALIDATE_DISPOSITION_SECTION_INCIDENT_DISPOSITION_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param dispositionSection The receiving '<em><b>Disposition Section</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param dispositionSection The receiving '<em><b>Disposition Section</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 
 	public static boolean validateDispositionSectionIncidentDispositionObservation(
 			DispositionSection dispositionSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
@@ -552,36 +552,36 @@ public class DispositionSectionOperations extends SectionOperations {
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateDispositionSectionTransportModeObservation(DispositionSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Disposition Section Transport Mode Observation</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateDispositionSectionTransportModeObservation(DispositionSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Disposition Section Transport Mode Observation</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateDispositionSectionTransportModeObservation(DispositionSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateDispositionSectionTransportModeObservation(DispositionSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_DISPOSITION_SECTION_TRANSPORT_MODE_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->one(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(emspcr::TransportModeObservation) and entry.typeCode = vocab::x_ActRelationshipEntry::DRIV)";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateDispositionSectionTransportModeObservation(DispositionSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Disposition Section Transport Mode Observation</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateDispositionSectionTransportModeObservation(DispositionSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Disposition Section Transport Mode Observation</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateDispositionSectionTransportModeObservation(DispositionSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateDispositionSectionTransportModeObservation(DispositionSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 
 	protected static Constraint VALIDATE_DISPOSITION_SECTION_TRANSPORT_MODE_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param dispositionSection The receiving '<em><b>Disposition Section</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param dispositionSection The receiving '<em><b>Disposition Section</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 
 	public static boolean validateDispositionSectionTransportModeObservation(DispositionSection dispositionSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
@@ -612,36 +612,36 @@ public class DispositionSectionOperations extends SectionOperations {
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateDispositionSectionTransportMethodObservation(DispositionSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Disposition Section Transport Method Observation</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateDispositionSectionTransportMethodObservation(DispositionSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Disposition Section Transport Method Observation</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateDispositionSectionTransportMethodObservation(DispositionSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateDispositionSectionTransportMethodObservation(DispositionSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_DISPOSITION_SECTION_TRANSPORT_METHOD_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->one(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(emspcr::TransportMethodObservation) and entry.typeCode = vocab::x_ActRelationshipEntry::DRIV)";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateDispositionSectionTransportMethodObservation(DispositionSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Disposition Section Transport Method Observation</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateDispositionSectionTransportMethodObservation(DispositionSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Disposition Section Transport Method Observation</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateDispositionSectionTransportMethodObservation(DispositionSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateDispositionSectionTransportMethodObservation(DispositionSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 
 	protected static Constraint VALIDATE_DISPOSITION_SECTION_TRANSPORT_METHOD_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param dispositionSection The receiving '<em><b>Disposition Section</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param dispositionSection The receiving '<em><b>Disposition Section</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 
 	public static boolean validateDispositionSectionTransportMethodObservation(DispositionSection dispositionSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
@@ -672,36 +672,36 @@ public class DispositionSectionOperations extends SectionOperations {
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateDispositionSectionReasonForChoosingDestinationObservation(DispositionSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Disposition Section Reason For Choosing Destination Observation</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateDispositionSectionReasonForChoosingDestinationObservation(DispositionSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Disposition Section Reason For Choosing Destination Observation</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateDispositionSectionReasonForChoosingDestinationObservation(DispositionSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateDispositionSectionReasonForChoosingDestinationObservation(DispositionSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_DISPOSITION_SECTION_REASON_FOR_CHOOSING_DESTINATION_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->one(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(emspcr::ReasonForChoosingDestinationObservation) and entry.typeCode = vocab::x_ActRelationshipEntry::DRIV)";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateDispositionSectionReasonForChoosingDestinationObservation(DispositionSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Disposition Section Reason For Choosing Destination Observation</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateDispositionSectionReasonForChoosingDestinationObservation(DispositionSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Disposition Section Reason For Choosing Destination Observation</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateDispositionSectionReasonForChoosingDestinationObservation(DispositionSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateDispositionSectionReasonForChoosingDestinationObservation(DispositionSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 
 	protected static Constraint VALIDATE_DISPOSITION_SECTION_REASON_FOR_CHOOSING_DESTINATION_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param dispositionSection The receiving '<em><b>Disposition Section</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param dispositionSection The receiving '<em><b>Disposition Section</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 
 	public static boolean validateDispositionSectionReasonForChoosingDestinationObservation(
 			DispositionSection dispositionSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
@@ -733,36 +733,36 @@ public class DispositionSectionOperations extends SectionOperations {
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateDispositionSectionPrearrivalActivationObservation(DispositionSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Disposition Section Prearrival Activation Observation</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateDispositionSectionPrearrivalActivationObservation(DispositionSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Disposition Section Prearrival Activation Observation</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateDispositionSectionPrearrivalActivationObservation(DispositionSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateDispositionSectionPrearrivalActivationObservation(DispositionSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_DISPOSITION_SECTION_PREARRIVAL_ACTIVATION_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->one(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(emspcr::PrearrivalActivationObservation) and entry.typeCode = vocab::x_ActRelationshipEntry::DRIV)";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateDispositionSectionPrearrivalActivationObservation(DispositionSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Disposition Section Prearrival Activation Observation</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateDispositionSectionPrearrivalActivationObservation(DispositionSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Disposition Section Prearrival Activation Observation</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateDispositionSectionPrearrivalActivationObservation(DispositionSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateDispositionSectionPrearrivalActivationObservation(DispositionSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 
 	protected static Constraint VALIDATE_DISPOSITION_SECTION_PREARRIVAL_ACTIVATION_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param dispositionSection The receiving '<em><b>Disposition Section</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param dispositionSection The receiving '<em><b>Disposition Section</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 
 	public static boolean validateDispositionSectionPrearrivalActivationObservation(
 			DispositionSection dispositionSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
@@ -793,36 +793,36 @@ public class DispositionSectionOperations extends SectionOperations {
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateDispositionSectionPatientConditionChangeAtDestinationObservation(DispositionSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Disposition Section Patient Condition Change At Destination Observation</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateDispositionSectionPatientConditionChangeAtDestinationObservation(DispositionSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Disposition Section Patient Condition Change At Destination Observation</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateDispositionSectionPatientConditionChangeAtDestinationObservation(DispositionSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateDispositionSectionPatientConditionChangeAtDestinationObservation(DispositionSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_DISPOSITION_SECTION_PATIENT_CONDITION_CHANGE_AT_DESTINATION_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->one(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(emspcr::PatientConditionChangeAtDestinationObservation) and entry.typeCode = vocab::x_ActRelationshipEntry::DRIV)";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateDispositionSectionPatientConditionChangeAtDestinationObservation(DispositionSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Disposition Section Patient Condition Change At Destination Observation</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateDispositionSectionPatientConditionChangeAtDestinationObservation(DispositionSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Disposition Section Patient Condition Change At Destination Observation</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateDispositionSectionPatientConditionChangeAtDestinationObservation(DispositionSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateDispositionSectionPatientConditionChangeAtDestinationObservation(DispositionSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 
 	protected static Constraint VALIDATE_DISPOSITION_SECTION_PATIENT_CONDITION_CHANGE_AT_DESTINATION_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param dispositionSection The receiving '<em><b>Disposition Section</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param dispositionSection The receiving '<em><b>Disposition Section</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 
 	public static boolean validateDispositionSectionPatientConditionChangeAtDestinationObservation(
 			DispositionSection dispositionSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
@@ -854,30 +854,30 @@ public class DispositionSectionOperations extends SectionOperations {
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #getemspcrEntry4(DispositionSection) <em>Getemspcr Entry4</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #getemspcrEntry4(DispositionSection) <em>Getemspcr Entry4</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #getemspcrEntry4(DispositionSection)
-	* @generated
-	* @ordered
-	*/
+	 * @see #getemspcrEntry4(DispositionSection)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String GETEMSPCR_ENTRY4__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(emspcr::TransportMethodObservation))->asSequence()->any(true).oclAsType(emspcr::TransportMethodObservation)";
 
 	/**
-	* The cached OCL query for the '{@link #getemspcrEntry4(DispositionSection) <em>Getemspcr Entry4</em>}' query operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL query for the '{@link #getemspcrEntry4(DispositionSection) <em>Getemspcr Entry4</em>}' query operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #getemspcrEntry4(DispositionSection)
-	* @generated
-	* @ordered
-	*/
+	 * @see #getemspcrEntry4(DispositionSection)
+	 * @generated
+	 * @ordered
+	 */
 	protected static OCLExpression<EClassifier> GETEMSPCR_ENTRY4__EOCL_QRY;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 
 	public static TransportMethodObservation getemspcrEntry4(DispositionSection dispositionSection) {
 		if (GETEMSPCR_ENTRY4__EOCL_QRY == null) {
@@ -896,30 +896,30 @@ public class DispositionSectionOperations extends SectionOperations {
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #getNumberOfPatientsObservation(DispositionSection) <em>Get Number Of Patients Observation</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #getNumberOfPatientsObservation(DispositionSection) <em>Get Number Of Patients Observation</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #getNumberOfPatientsObservation(DispositionSection)
-	* @generated
-	* @ordered
-	*/
+	 * @see #getNumberOfPatientsObservation(DispositionSection)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String GET_NUMBER_OF_PATIENTS_OBSERVATION__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(emspcr::NumberOfPatientsObservation))->asSequence()->any(true).oclAsType(emspcr::NumberOfPatientsObservation)";
 
 	/**
-	* The cached OCL query for the '{@link #getNumberOfPatientsObservation(DispositionSection) <em>Get Number Of Patients Observation</em>}' query operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL query for the '{@link #getNumberOfPatientsObservation(DispositionSection) <em>Get Number Of Patients Observation</em>}' query operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #getNumberOfPatientsObservation(DispositionSection)
-	* @generated
-	* @ordered
-	*/
+	 * @see #getNumberOfPatientsObservation(DispositionSection)
+	 * @generated
+	 * @ordered
+	 */
 	protected static OCLExpression<EClassifier> GET_NUMBER_OF_PATIENTS_OBSERVATION__EOCL_QRY;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 
 	public static NumberOfPatientsObservation getNumberOfPatientsObservation(DispositionSection dispositionSection) {
 		if (GET_NUMBER_OF_PATIENTS_OBSERVATION__EOCL_QRY == null) {
@@ -938,30 +938,30 @@ public class DispositionSectionOperations extends SectionOperations {
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #getIncidentDispositionObservation(DispositionSection) <em>Get Incident Disposition Observation</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #getIncidentDispositionObservation(DispositionSection) <em>Get Incident Disposition Observation</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #getIncidentDispositionObservation(DispositionSection)
-	* @generated
-	* @ordered
-	*/
+	 * @see #getIncidentDispositionObservation(DispositionSection)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String GET_INCIDENT_DISPOSITION_OBSERVATION__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(emspcr::IncidentDispositionObservation))->asSequence()->any(true).oclAsType(emspcr::IncidentDispositionObservation)";
 
 	/**
-	* The cached OCL query for the '{@link #getIncidentDispositionObservation(DispositionSection) <em>Get Incident Disposition Observation</em>}' query operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL query for the '{@link #getIncidentDispositionObservation(DispositionSection) <em>Get Incident Disposition Observation</em>}' query operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #getIncidentDispositionObservation(DispositionSection)
-	* @generated
-	* @ordered
-	*/
+	 * @see #getIncidentDispositionObservation(DispositionSection)
+	 * @generated
+	 * @ordered
+	 */
 	protected static OCLExpression<EClassifier> GET_INCIDENT_DISPOSITION_OBSERVATION__EOCL_QRY;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 
 	public static IncidentDispositionObservation getIncidentDispositionObservation(DispositionSection dispositionSection) {
 		if (GET_INCIDENT_DISPOSITION_OBSERVATION__EOCL_QRY == null) {
@@ -980,30 +980,30 @@ public class DispositionSectionOperations extends SectionOperations {
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #getTransportModeObservation(DispositionSection) <em>Get Transport Mode Observation</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #getTransportModeObservation(DispositionSection) <em>Get Transport Mode Observation</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #getTransportModeObservation(DispositionSection)
-	* @generated
-	* @ordered
-	*/
+	 * @see #getTransportModeObservation(DispositionSection)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String GET_TRANSPORT_MODE_OBSERVATION__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(emspcr::TransportModeObservation))->asSequence()->any(true).oclAsType(emspcr::TransportModeObservation)";
 
 	/**
-	* The cached OCL query for the '{@link #getTransportModeObservation(DispositionSection) <em>Get Transport Mode Observation</em>}' query operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL query for the '{@link #getTransportModeObservation(DispositionSection) <em>Get Transport Mode Observation</em>}' query operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #getTransportModeObservation(DispositionSection)
-	* @generated
-	* @ordered
-	*/
+	 * @see #getTransportModeObservation(DispositionSection)
+	 * @generated
+	 * @ordered
+	 */
 	protected static OCLExpression<EClassifier> GET_TRANSPORT_MODE_OBSERVATION__EOCL_QRY;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 
 	public static TransportModeObservation getTransportModeObservation(DispositionSection dispositionSection) {
 		if (GET_TRANSPORT_MODE_OBSERVATION__EOCL_QRY == null) {
@@ -1022,30 +1022,30 @@ public class DispositionSectionOperations extends SectionOperations {
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #getTransportMethodObservation(DispositionSection) <em>Get Transport Method Observation</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #getTransportMethodObservation(DispositionSection) <em>Get Transport Method Observation</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #getTransportMethodObservation(DispositionSection)
-	* @generated
-	* @ordered
-	*/
+	 * @see #getTransportMethodObservation(DispositionSection)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String GET_TRANSPORT_METHOD_OBSERVATION__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(emspcr::TransportMethodObservation))->asSequence()->any(true).oclAsType(emspcr::TransportMethodObservation)";
 
 	/**
-	* The cached OCL query for the '{@link #getTransportMethodObservation(DispositionSection) <em>Get Transport Method Observation</em>}' query operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL query for the '{@link #getTransportMethodObservation(DispositionSection) <em>Get Transport Method Observation</em>}' query operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #getTransportMethodObservation(DispositionSection)
-	* @generated
-	* @ordered
-	*/
+	 * @see #getTransportMethodObservation(DispositionSection)
+	 * @generated
+	 * @ordered
+	 */
 	protected static OCLExpression<EClassifier> GET_TRANSPORT_METHOD_OBSERVATION__EOCL_QRY;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 
 	public static TransportMethodObservation getTransportMethodObservation(DispositionSection dispositionSection) {
 		if (GET_TRANSPORT_METHOD_OBSERVATION__EOCL_QRY == null) {
@@ -1064,30 +1064,30 @@ public class DispositionSectionOperations extends SectionOperations {
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #getReasonForChoosingDestinationObservation(DispositionSection) <em>Get Reason For Choosing Destination Observation</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #getReasonForChoosingDestinationObservation(DispositionSection) <em>Get Reason For Choosing Destination Observation</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #getReasonForChoosingDestinationObservation(DispositionSection)
-	* @generated
-	* @ordered
-	*/
+	 * @see #getReasonForChoosingDestinationObservation(DispositionSection)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String GET_REASON_FOR_CHOOSING_DESTINATION_OBSERVATION__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(emspcr::ReasonForChoosingDestinationObservation))->asSequence()->any(true).oclAsType(emspcr::ReasonForChoosingDestinationObservation)";
 
 	/**
-	* The cached OCL query for the '{@link #getReasonForChoosingDestinationObservation(DispositionSection) <em>Get Reason For Choosing Destination Observation</em>}' query operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL query for the '{@link #getReasonForChoosingDestinationObservation(DispositionSection) <em>Get Reason For Choosing Destination Observation</em>}' query operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #getReasonForChoosingDestinationObservation(DispositionSection)
-	* @generated
-	* @ordered
-	*/
+	 * @see #getReasonForChoosingDestinationObservation(DispositionSection)
+	 * @generated
+	 * @ordered
+	 */
 	protected static OCLExpression<EClassifier> GET_REASON_FOR_CHOOSING_DESTINATION_OBSERVATION__EOCL_QRY;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 
 	public static ReasonForChoosingDestinationObservation getReasonForChoosingDestinationObservation(
 			DispositionSection dispositionSection) {
@@ -1107,30 +1107,30 @@ public class DispositionSectionOperations extends SectionOperations {
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #getPrearrivalActivationObservation(DispositionSection) <em>Get Prearrival Activation Observation</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #getPrearrivalActivationObservation(DispositionSection) <em>Get Prearrival Activation Observation</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #getPrearrivalActivationObservation(DispositionSection)
-	* @generated
-	* @ordered
-	*/
+	 * @see #getPrearrivalActivationObservation(DispositionSection)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String GET_PREARRIVAL_ACTIVATION_OBSERVATION__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(emspcr::PrearrivalActivationObservation))->asSequence()->any(true).oclAsType(emspcr::PrearrivalActivationObservation)";
 
 	/**
-	* The cached OCL query for the '{@link #getPrearrivalActivationObservation(DispositionSection) <em>Get Prearrival Activation Observation</em>}' query operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL query for the '{@link #getPrearrivalActivationObservation(DispositionSection) <em>Get Prearrival Activation Observation</em>}' query operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #getPrearrivalActivationObservation(DispositionSection)
-	* @generated
-	* @ordered
-	*/
+	 * @see #getPrearrivalActivationObservation(DispositionSection)
+	 * @generated
+	 * @ordered
+	 */
 	protected static OCLExpression<EClassifier> GET_PREARRIVAL_ACTIVATION_OBSERVATION__EOCL_QRY;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 
 	public static PrearrivalActivationObservation getPrearrivalActivationObservation(
 			DispositionSection dispositionSection) {
@@ -1150,30 +1150,30 @@ public class DispositionSectionOperations extends SectionOperations {
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #getPatientConditionChangeAtDestinationObservation(DispositionSection) <em>Get Patient Condition Change At Destination Observation</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #getPatientConditionChangeAtDestinationObservation(DispositionSection) <em>Get Patient Condition Change At Destination Observation</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #getPatientConditionChangeAtDestinationObservation(DispositionSection)
-	* @generated
-	* @ordered
-	*/
+	 * @see #getPatientConditionChangeAtDestinationObservation(DispositionSection)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String GET_PATIENT_CONDITION_CHANGE_AT_DESTINATION_OBSERVATION__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(emspcr::PatientConditionChangeAtDestinationObservation))->asSequence()->any(true).oclAsType(emspcr::PatientConditionChangeAtDestinationObservation)";
 
 	/**
-	* The cached OCL query for the '{@link #getPatientConditionChangeAtDestinationObservation(DispositionSection) <em>Get Patient Condition Change At Destination Observation</em>}' query operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL query for the '{@link #getPatientConditionChangeAtDestinationObservation(DispositionSection) <em>Get Patient Condition Change At Destination Observation</em>}' query operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #getPatientConditionChangeAtDestinationObservation(DispositionSection)
-	* @generated
-	* @ordered
-	*/
+	 * @see #getPatientConditionChangeAtDestinationObservation(DispositionSection)
+	 * @generated
+	 * @ordered
+	 */
 	protected static OCLExpression<EClassifier> GET_PATIENT_CONDITION_CHANGE_AT_DESTINATION_OBSERVATION__EOCL_QRY;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 
 	public static PatientConditionChangeAtDestinationObservation getPatientConditionChangeAtDestinationObservation(
 			DispositionSection dispositionSection) {

@@ -48,45 +48,45 @@ import org.openhealthtools.mdht.uml.cda.operations.ClinicalStatementOperations;
  */
 public class LevelOfResponsivenessOperations extends ClinicalStatementOperations {
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	protected LevelOfResponsivenessOperations() {
 		super();
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateLevelOfResponsivenessTemplateId(LevelOfResponsiveness, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Level Of Responsiveness Template Id</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateLevelOfResponsivenessTemplateId(LevelOfResponsiveness, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Level Of Responsiveness Template Id</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateLevelOfResponsivenessTemplateId(LevelOfResponsiveness, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateLevelOfResponsivenessTemplateId(LevelOfResponsiveness, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_LEVEL_OF_RESPONSIVENESS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.1133883.17.3.10.1.165')";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateLevelOfResponsivenessTemplateId(LevelOfResponsiveness, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Level Of Responsiveness Template Id</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateLevelOfResponsivenessTemplateId(LevelOfResponsiveness, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Level Of Responsiveness Template Id</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateLevelOfResponsivenessTemplateId(LevelOfResponsiveness, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateLevelOfResponsivenessTemplateId(LevelOfResponsiveness, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 
 	protected static Constraint VALIDATE_LEVEL_OF_RESPONSIVENESS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param levelOfResponsiveness The receiving '<em><b>Level Of Responsiveness</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param levelOfResponsiveness The receiving '<em><b>Level Of Responsiveness</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 
 	public static boolean validateLevelOfResponsivenessTemplateId(LevelOfResponsiveness levelOfResponsiveness,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
@@ -116,36 +116,36 @@ public class LevelOfResponsivenessOperations extends ClinicalStatementOperations
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateLevelOfResponsivenessCodeP(LevelOfResponsiveness, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Level Of Responsiveness Code P</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateLevelOfResponsivenessCodeP(LevelOfResponsiveness, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Level Of Responsiveness Code P</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateLevelOfResponsivenessCodeP(LevelOfResponsiveness, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateLevelOfResponsivenessCodeP(LevelOfResponsiveness, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_LEVEL_OF_RESPONSIVENESS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined())";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateLevelOfResponsivenessCodeP(LevelOfResponsiveness, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Level Of Responsiveness Code P</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateLevelOfResponsivenessCodeP(LevelOfResponsiveness, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Level Of Responsiveness Code P</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateLevelOfResponsivenessCodeP(LevelOfResponsiveness, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateLevelOfResponsivenessCodeP(LevelOfResponsiveness, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 
 	protected static Constraint VALIDATE_LEVEL_OF_RESPONSIVENESS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param levelOfResponsiveness The receiving '<em><b>Level Of Responsiveness</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param levelOfResponsiveness The receiving '<em><b>Level Of Responsiveness</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 
 	public static boolean validateLevelOfResponsivenessCodeP(LevelOfResponsiveness levelOfResponsiveness,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
@@ -187,38 +187,38 @@ public class LevelOfResponsivenessOperations extends ClinicalStatementOperations
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateLevelOfResponsivenessCode(LevelOfResponsiveness, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Level Of Responsiveness Code</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateLevelOfResponsivenessCode(LevelOfResponsiveness, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Level Of Responsiveness Code</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateLevelOfResponsivenessCode(LevelOfResponsiveness, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateLevelOfResponsivenessCode(LevelOfResponsiveness, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_LEVEL_OF_RESPONSIVENESS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "
 			+ "let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "
 			+ "value.code = '67775-7' and value.codeSystem = '2.16.840.1.113883.6.1')";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateLevelOfResponsivenessCode(LevelOfResponsiveness, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Level Of Responsiveness Code</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateLevelOfResponsivenessCode(LevelOfResponsiveness, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Level Of Responsiveness Code</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateLevelOfResponsivenessCode(LevelOfResponsiveness, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateLevelOfResponsivenessCode(LevelOfResponsiveness, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 
 	protected static Constraint VALIDATE_LEVEL_OF_RESPONSIVENESS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param levelOfResponsiveness The receiving '<em><b>Level Of Responsiveness</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param levelOfResponsiveness The receiving '<em><b>Level Of Responsiveness</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 
 	public static boolean validateLevelOfResponsivenessCode(LevelOfResponsiveness levelOfResponsiveness,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
@@ -256,38 +256,38 @@ public class LevelOfResponsivenessOperations extends ClinicalStatementOperations
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateLevelOfResponsivenessValue(LevelOfResponsiveness, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Level Of Responsiveness Value</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateLevelOfResponsivenessValue(LevelOfResponsiveness, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Level Of Responsiveness Value</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateLevelOfResponsivenessValue(LevelOfResponsiveness, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateLevelOfResponsivenessValue(LevelOfResponsiveness, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_LEVEL_OF_RESPONSIVENESS_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and "
 			+ "let value : datatypes::CD = element.oclAsType(datatypes::CD) in "
 			+ "value.codeSystem = '2.16.840.1.113883.6.1' and (value.code = 'LA17107-6' or value.code = 'LA17108-4' or value.code = 'LA9340-6' or value.code = 'LA9343-0')))";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateLevelOfResponsivenessValue(LevelOfResponsiveness, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Level Of Responsiveness Value</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateLevelOfResponsivenessValue(LevelOfResponsiveness, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Level Of Responsiveness Value</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateLevelOfResponsivenessValue(LevelOfResponsiveness, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateLevelOfResponsivenessValue(LevelOfResponsiveness, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 
 	protected static Constraint VALIDATE_LEVEL_OF_RESPONSIVENESS_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param levelOfResponsiveness The receiving '<em><b>Level Of Responsiveness</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param levelOfResponsiveness The receiving '<em><b>Level Of Responsiveness</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 
 	public static boolean validateLevelOfResponsivenessValue(LevelOfResponsiveness levelOfResponsiveness,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
@@ -317,36 +317,36 @@ public class LevelOfResponsivenessOperations extends ClinicalStatementOperations
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateLevelOfResponsivenessValueP(LevelOfResponsiveness, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Level Of Responsiveness Value P</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateLevelOfResponsivenessValueP(LevelOfResponsiveness, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Level Of Responsiveness Value P</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateLevelOfResponsivenessValueP(LevelOfResponsiveness, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateLevelOfResponsivenessValueP(LevelOfResponsiveness, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_LEVEL_OF_RESPONSIVENESS_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | element.oclIsTypeOf(datatypes::CD)))";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateLevelOfResponsivenessValueP(LevelOfResponsiveness, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Level Of Responsiveness Value P</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateLevelOfResponsivenessValueP(LevelOfResponsiveness, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Level Of Responsiveness Value P</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateLevelOfResponsivenessValueP(LevelOfResponsiveness, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateLevelOfResponsivenessValueP(LevelOfResponsiveness, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 
 	protected static Constraint VALIDATE_LEVEL_OF_RESPONSIVENESS_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param levelOfResponsiveness The receiving '<em><b>Level Of Responsiveness</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param levelOfResponsiveness The receiving '<em><b>Level Of Responsiveness</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 
 	public static boolean validateLevelOfResponsivenessValueP(LevelOfResponsiveness levelOfResponsiveness,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
@@ -376,36 +376,36 @@ public class LevelOfResponsivenessOperations extends ClinicalStatementOperations
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateLevelOfResponsivenessEffectiveTime(LevelOfResponsiveness, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Level Of Responsiveness Effective Time</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateLevelOfResponsivenessEffectiveTime(LevelOfResponsiveness, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Level Of Responsiveness Effective Time</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateLevelOfResponsivenessEffectiveTime(LevelOfResponsiveness, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateLevelOfResponsivenessEffectiveTime(LevelOfResponsiveness, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_LEVEL_OF_RESPONSIVENESS_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.effectiveTime.oclIsUndefined() or self.effectiveTime.isNullFlavorUndefined()) implies (not self.effectiveTime.oclIsUndefined())";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateLevelOfResponsivenessEffectiveTime(LevelOfResponsiveness, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Level Of Responsiveness Effective Time</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateLevelOfResponsivenessEffectiveTime(LevelOfResponsiveness, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Level Of Responsiveness Effective Time</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateLevelOfResponsivenessEffectiveTime(LevelOfResponsiveness, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateLevelOfResponsivenessEffectiveTime(LevelOfResponsiveness, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 
 	protected static Constraint VALIDATE_LEVEL_OF_RESPONSIVENESS_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param levelOfResponsiveness The receiving '<em><b>Level Of Responsiveness</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param levelOfResponsiveness The receiving '<em><b>Level Of Responsiveness</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 
 	public static boolean validateLevelOfResponsivenessEffectiveTime(LevelOfResponsiveness levelOfResponsiveness,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
@@ -435,36 +435,36 @@ public class LevelOfResponsivenessOperations extends ClinicalStatementOperations
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateLevelOfResponsivenessMoodCode(LevelOfResponsiveness, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Level Of Responsiveness Mood Code</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateLevelOfResponsivenessMoodCode(LevelOfResponsiveness, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Level Of Responsiveness Mood Code</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateLevelOfResponsivenessMoodCode(LevelOfResponsiveness, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateLevelOfResponsivenessMoodCode(LevelOfResponsiveness, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_LEVEL_OF_RESPONSIVENESS_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "isDefined('moodCode')";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateLevelOfResponsivenessMoodCode(LevelOfResponsiveness, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Level Of Responsiveness Mood Code</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateLevelOfResponsivenessMoodCode(LevelOfResponsiveness, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Level Of Responsiveness Mood Code</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateLevelOfResponsivenessMoodCode(LevelOfResponsiveness, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateLevelOfResponsivenessMoodCode(LevelOfResponsiveness, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 
 	protected static Constraint VALIDATE_LEVEL_OF_RESPONSIVENESS_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param levelOfResponsiveness The receiving '<em><b>Level Of Responsiveness</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param levelOfResponsiveness The receiving '<em><b>Level Of Responsiveness</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 
 	public static boolean validateLevelOfResponsivenessMoodCode(LevelOfResponsiveness levelOfResponsiveness,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {

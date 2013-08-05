@@ -50,45 +50,45 @@ import org.openhealthtools.mdht.uml.cda.emspcr.util.EmspcrValidator;
 public class MedicationsAdministeredSectionOperations extends
 		org.openhealthtools.mdht.uml.cda.consol.operations.MedicationsAdministeredSectionOperations {
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	protected MedicationsAdministeredSectionOperations() {
 		super();
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateEMSPCRMedicationsAdministeredSectionCode(MedicationsAdministeredSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate EMSPCR Medications Administered Section Code</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateEMSPCRMedicationsAdministeredSectionCode(MedicationsAdministeredSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate EMSPCR Medications Administered Section Code</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateEMSPCRMedicationsAdministeredSectionCode(MedicationsAdministeredSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateEMSPCRMedicationsAdministeredSectionCode(MedicationsAdministeredSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_EMSPCR_MEDICATIONS_ADMINISTERED_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined())";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateEMSPCRMedicationsAdministeredSectionCode(MedicationsAdministeredSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate EMSPCR Medications Administered Section Code</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateEMSPCRMedicationsAdministeredSectionCode(MedicationsAdministeredSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate EMSPCR Medications Administered Section Code</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateEMSPCRMedicationsAdministeredSectionCode(MedicationsAdministeredSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateEMSPCRMedicationsAdministeredSectionCode(MedicationsAdministeredSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 
 	protected static Constraint VALIDATE_EMSPCR_MEDICATIONS_ADMINISTERED_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	* <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param medicationsAdministeredSection The receiving '<em><b>Medications Administered Section</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param medicationsAdministeredSection The receiving '<em><b>Medications Administered Section</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 
 	public static boolean validateEMSPCRMedicationsAdministeredSectionCode(
 			MedicationsAdministeredSection medicationsAdministeredSection, DiagnosticChain diagnostics,
@@ -129,26 +129,26 @@ public class MedicationsAdministeredSectionOperations extends
 	protected static final String VALIDATE_EMSPCR_MEDICATIONS_ADMINISTERED_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.title.oclIsUndefined() or self.title.isNullFlavorUndefined()) implies (self.title.getText() = 'Medications Administered Section')";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateEMSPCRMedicationsAdministeredSectionTitle(MedicationsAdministeredSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate EMSPCR Medications Administered Section Title</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateEMSPCRMedicationsAdministeredSectionTitle(MedicationsAdministeredSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate EMSPCR Medications Administered Section Title</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateEMSPCRMedicationsAdministeredSectionTitle(MedicationsAdministeredSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateEMSPCRMedicationsAdministeredSectionTitle(MedicationsAdministeredSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 
 	protected static Constraint VALIDATE_EMSPCR_MEDICATIONS_ADMINISTERED_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	* <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param medicationsAdministeredSection The receiving '<em><b>Medications Administered Section</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param medicationsAdministeredSection The receiving '<em><b>Medications Administered Section</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 
 	public static boolean validateEMSPCRMedicationsAdministeredSectionTitle(
 			MedicationsAdministeredSection medicationsAdministeredSection, DiagnosticChain diagnostics,
@@ -190,26 +190,26 @@ public class MedicationsAdministeredSectionOperations extends
 	protected static final String VALIDATE_EMSPCR_MEDICATIONS_ADMINISTERED_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "not self.text.oclIsUndefined()";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateEMSPCRMedicationsAdministeredSectionText(MedicationsAdministeredSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate EMSPCR Medications Administered Section Text</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateEMSPCRMedicationsAdministeredSectionText(MedicationsAdministeredSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate EMSPCR Medications Administered Section Text</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateEMSPCRMedicationsAdministeredSectionText(MedicationsAdministeredSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateEMSPCRMedicationsAdministeredSectionText(MedicationsAdministeredSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 
 	protected static Constraint VALIDATE_EMSPCR_MEDICATIONS_ADMINISTERED_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	* <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param medicationsAdministeredSection The receiving '<em><b>Medications Administered Section</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param medicationsAdministeredSection The receiving '<em><b>Medications Administered Section</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 
 	public static boolean validateEMSPCRMedicationsAdministeredSectionText(
 			MedicationsAdministeredSection medicationsAdministeredSection, DiagnosticChain diagnostics,
@@ -250,26 +250,26 @@ public class MedicationsAdministeredSectionOperations extends
 	protected static final String VALIDATE_EMSPCR_MEDICATIONS_ADMINISTERED_SECTION_MEDICATION_ADMINISTERED__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->one(entry : cda::Entry | not entry.substanceAdministration.oclIsUndefined() and entry.substanceAdministration.oclIsKindOf(emspcr::MedicationAdministered) and entry.typeCode = vocab::x_ActRelationshipEntry::DRIV)";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateEMSPCRMedicationsAdministeredSectionMedicationAdministered(MedicationsAdministeredSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate EMSPCR Medications Administered Section Medication Administered</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateEMSPCRMedicationsAdministeredSectionMedicationAdministered(MedicationsAdministeredSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate EMSPCR Medications Administered Section Medication Administered</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateEMSPCRMedicationsAdministeredSectionMedicationAdministered(MedicationsAdministeredSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateEMSPCRMedicationsAdministeredSectionMedicationAdministered(MedicationsAdministeredSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 
 	protected static Constraint VALIDATE_EMSPCR_MEDICATIONS_ADMINISTERED_SECTION_MEDICATION_ADMINISTERED__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	* <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param medicationsAdministeredSection The receiving '<em><b>Medications Administered Section</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param medicationsAdministeredSection The receiving '<em><b>Medications Administered Section</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 
 	public static boolean validateEMSPCRMedicationsAdministeredSectionMedicationAdministered(
 			MedicationsAdministeredSection medicationsAdministeredSection, DiagnosticChain diagnostics,
@@ -312,20 +312,20 @@ public class MedicationsAdministeredSectionOperations extends
 	protected static final String GET_MEDICATION_ADMINISTERED__EOCL_EXP = "self.getSubstanceAdministrations()->select(substanceAdministration : cda::SubstanceAdministration | not substanceAdministration.oclIsUndefined() and substanceAdministration.oclIsKindOf(emspcr::MedicationAdministered))->asSequence()->any(true).oclAsType(emspcr::MedicationAdministered)";
 
 	/**
-	* The cached OCL query for the '{@link #getMedicationAdministered(MedicationsAdministeredSection) <em>Get Medication Administered</em>}' query operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL query for the '{@link #getMedicationAdministered(MedicationsAdministeredSection) <em>Get Medication Administered</em>}' query operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #getMedicationAdministered(MedicationsAdministeredSection)
-	* @generated
-	* @ordered
-	*/
+	 * @see #getMedicationAdministered(MedicationsAdministeredSection)
+	 * @generated
+	 * @ordered
+	 */
 	protected static OCLExpression<EClassifier> GET_MEDICATION_ADMINISTERED__EOCL_QRY;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 
 	public static MedicationAdministered getMedicationAdministered(
 			MedicationsAdministeredSection medicationsAdministeredSection) {
@@ -345,36 +345,36 @@ public class MedicationsAdministeredSectionOperations extends
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateMedicationsAdministeredSectionTemplateId(MedicationsAdministeredSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medications Administered Section Template Id</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateMedicationsAdministeredSectionTemplateId(MedicationsAdministeredSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medications Administered Section Template Id</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateMedicationsAdministeredSectionTemplateId(MedicationsAdministeredSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateMedicationsAdministeredSectionTemplateId(MedicationsAdministeredSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_MEDICATIONS_ADMINISTERED_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.17.3.10.1.18')";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateMedicationsAdministeredSectionTemplateId(MedicationsAdministeredSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medications Administered Section Template Id</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateMedicationsAdministeredSectionTemplateId(MedicationsAdministeredSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medications Administered Section Template Id</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateMedicationsAdministeredSectionTemplateId(MedicationsAdministeredSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateMedicationsAdministeredSectionTemplateId(MedicationsAdministeredSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 
 	protected static Constraint VALIDATE_MEDICATIONS_ADMINISTERED_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param medicationsAdministeredSection The receiving '<em><b>Medications Administered Section</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param medicationsAdministeredSection The receiving '<em><b>Medications Administered Section</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 
 	public static boolean validateMedicationsAdministeredSectionTemplateId(
 			MedicationsAdministeredSection medicationsAdministeredSection, DiagnosticChain diagnostics,

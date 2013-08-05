@@ -35,83 +35,83 @@ import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
  */
 public class ComplaintTypeImpl extends ObservationImpl implements ComplaintType {
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	protected ComplaintTypeImpl() {
 		super();
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
 		return EmspcrPackage.Literals.COMPLAINT_TYPE;
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateComplaintTypeTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ComplaintTypeOperations.validateComplaintTypeTemplateId(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateComplaintTypeCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ComplaintTypeOperations.validateComplaintTypeCodeP(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateComplaintTypeCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ComplaintTypeOperations.validateComplaintTypeCode(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateComplaintTypeValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ComplaintTypeOperations.validateComplaintTypeValue(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateComplaintTypeValueP(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ComplaintTypeOperations.validateComplaintTypeValueP(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateComplaintTypeMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ComplaintTypeOperations.validateComplaintTypeMoodCode(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public ComplaintType init() {
 		return Initializer.Util.init(this);
 	}

@@ -38,29 +38,29 @@ import org.openhealthtools.mdht.uml.cda.impl.OrganizerImpl;
  */
 public class EnvironmentalAllergiesImpl extends OrganizerImpl implements EnvironmentalAllergies {
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	protected EnvironmentalAllergiesImpl() {
 		super();
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
 		return EmspcrPackage.Literals.ENVIRONMENTAL_ALLERGIES;
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateEnvironmentalAllergiesExistenceOfEnvironmentalAllergy(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return EnvironmentalAllergiesOperations.validateEnvironmentalAllergiesExistenceOfEnvironmentalAllergy(
@@ -68,10 +68,10 @@ public class EnvironmentalAllergiesImpl extends OrganizerImpl implements Environ
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateEnvironmentalAllergiesEnvironmentalAllergy(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return EnvironmentalAllergiesOperations.validateEnvironmentalAllergiesEnvironmentalAllergy(
@@ -79,37 +79,37 @@ public class EnvironmentalAllergiesImpl extends OrganizerImpl implements Environ
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateEnvironmentalAllergiesTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return EnvironmentalAllergiesOperations.validateEnvironmentalAllergiesTemplateId(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public ExistenceOfEnvironmentalAllergy getExistenceOfEnvironmentalAllergy() {
 		return EnvironmentalAllergiesOperations.getExistenceOfEnvironmentalAllergy(this);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public EList<EnvironmentalAllergy> getEnvironmentalAllergies() {
 		return EnvironmentalAllergiesOperations.getEnvironmentalAllergies(this);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public EnvironmentalAllergies init() {
 		return Initializer.Util.init(this);
 	}

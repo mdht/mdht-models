@@ -35,83 +35,83 @@ import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
  */
 public class NeurologicalAssessmentImpl extends ObservationImpl implements NeurologicalAssessment {
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	protected NeurologicalAssessmentImpl() {
 		super();
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
 		return EmspcrPackage.Literals.NEUROLOGICAL_ASSESSMENT;
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateNeurologicalAssessmentTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return NeurologicalAssessmentOperations.validateNeurologicalAssessmentTemplateId(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateNeurologicalAssessmentCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return NeurologicalAssessmentOperations.validateNeurologicalAssessmentCodeP(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateNeurologicalAssessmentCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return NeurologicalAssessmentOperations.validateNeurologicalAssessmentCode(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateNeurologicalAssessmentValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return NeurologicalAssessmentOperations.validateNeurologicalAssessmentValue(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateNeurologicalAssessmentValueP(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return NeurologicalAssessmentOperations.validateNeurologicalAssessmentValueP(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateNeurologicalAssessmentMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return NeurologicalAssessmentOperations.validateNeurologicalAssessmentMoodCode(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public NeurologicalAssessment init() {
 		return Initializer.Util.init(this);
 	}

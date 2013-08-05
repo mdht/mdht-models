@@ -35,83 +35,83 @@ import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
  */
 public class TransportDelayImpl extends ObservationImpl implements TransportDelay {
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	protected TransportDelayImpl() {
 		super();
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
 		return EmspcrPackage.Literals.TRANSPORT_DELAY;
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateTransportDelayTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return TransportDelayOperations.validateTransportDelayTemplateId(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateTransportDelayCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return TransportDelayOperations.validateTransportDelayCodeP(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateTransportDelayCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return TransportDelayOperations.validateTransportDelayCode(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateTransportDelayValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return TransportDelayOperations.validateTransportDelayValue(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateTransportDelayValueP(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return TransportDelayOperations.validateTransportDelayValueP(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateTransportDelayMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return TransportDelayOperations.validateTransportDelayMoodCode(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public TransportDelay init() {
 		return Initializer.Util.init(this);
 	}

@@ -35,74 +35,74 @@ import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
  */
 public class CallTimeImpl extends ObservationImpl implements CallTime {
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	protected CallTimeImpl() {
 		super();
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
 		return EmspcrPackage.Literals.CALL_TIME;
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateCallTimeTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return CallTimeOperations.validateCallTimeTemplateId(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateCallTimeCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return CallTimeOperations.validateCallTimeCodeP(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateCallTimeCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return CallTimeOperations.validateCallTimeCode(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateCallTimeValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return CallTimeOperations.validateCallTimeValue(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateCallTimeMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return CallTimeOperations.validateCallTimeMoodCode(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public CallTime init() {
 		return Initializer.Util.init(this);
 	}

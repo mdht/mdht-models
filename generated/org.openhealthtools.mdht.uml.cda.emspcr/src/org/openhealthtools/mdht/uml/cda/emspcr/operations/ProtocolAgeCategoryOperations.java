@@ -47,45 +47,45 @@ import org.openhealthtools.mdht.uml.cda.operations.ClinicalStatementOperations;
  */
 public class ProtocolAgeCategoryOperations extends ClinicalStatementOperations {
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	protected ProtocolAgeCategoryOperations() {
 		super();
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateProtocolAgeCategoryTemplateId(ProtocolAgeCategory, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Protocol Age Category Template Id</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateProtocolAgeCategoryTemplateId(ProtocolAgeCategory, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Protocol Age Category Template Id</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateProtocolAgeCategoryTemplateId(ProtocolAgeCategory, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateProtocolAgeCategoryTemplateId(ProtocolAgeCategory, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_PROTOCOL_AGE_CATEGORY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.1133883.17.3.10.1.149')";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateProtocolAgeCategoryTemplateId(ProtocolAgeCategory, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Protocol Age Category Template Id</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateProtocolAgeCategoryTemplateId(ProtocolAgeCategory, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Protocol Age Category Template Id</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateProtocolAgeCategoryTemplateId(ProtocolAgeCategory, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateProtocolAgeCategoryTemplateId(ProtocolAgeCategory, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 
 	protected static Constraint VALIDATE_PROTOCOL_AGE_CATEGORY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param protocolAgeCategory The receiving '<em><b>Protocol Age Category</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param protocolAgeCategory The receiving '<em><b>Protocol Age Category</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 
 	public static boolean validateProtocolAgeCategoryTemplateId(ProtocolAgeCategory protocolAgeCategory,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
@@ -115,36 +115,36 @@ public class ProtocolAgeCategoryOperations extends ClinicalStatementOperations {
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateProtocolAgeCategoryCodeP(ProtocolAgeCategory, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Protocol Age Category Code P</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateProtocolAgeCategoryCodeP(ProtocolAgeCategory, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Protocol Age Category Code P</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateProtocolAgeCategoryCodeP(ProtocolAgeCategory, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateProtocolAgeCategoryCodeP(ProtocolAgeCategory, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_PROTOCOL_AGE_CATEGORY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined())";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateProtocolAgeCategoryCodeP(ProtocolAgeCategory, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Protocol Age Category Code P</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateProtocolAgeCategoryCodeP(ProtocolAgeCategory, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Protocol Age Category Code P</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateProtocolAgeCategoryCodeP(ProtocolAgeCategory, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateProtocolAgeCategoryCodeP(ProtocolAgeCategory, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 
 	protected static Constraint VALIDATE_PROTOCOL_AGE_CATEGORY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param protocolAgeCategory The receiving '<em><b>Protocol Age Category</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param protocolAgeCategory The receiving '<em><b>Protocol Age Category</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 
 	public static boolean validateProtocolAgeCategoryCodeP(ProtocolAgeCategory protocolAgeCategory,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
@@ -185,38 +185,38 @@ public class ProtocolAgeCategoryOperations extends ClinicalStatementOperations {
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateProtocolAgeCategoryCode(ProtocolAgeCategory, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Protocol Age Category Code</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateProtocolAgeCategoryCode(ProtocolAgeCategory, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Protocol Age Category Code</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateProtocolAgeCategoryCode(ProtocolAgeCategory, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateProtocolAgeCategoryCode(ProtocolAgeCategory, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_PROTOCOL_AGE_CATEGORY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "
 			+ "let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "
 			+ "value.code = '67538-9' and value.codeSystem = '2.16.840.1.113883.6.1')";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateProtocolAgeCategoryCode(ProtocolAgeCategory, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Protocol Age Category Code</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateProtocolAgeCategoryCode(ProtocolAgeCategory, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Protocol Age Category Code</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateProtocolAgeCategoryCode(ProtocolAgeCategory, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateProtocolAgeCategoryCode(ProtocolAgeCategory, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 
 	protected static Constraint VALIDATE_PROTOCOL_AGE_CATEGORY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param protocolAgeCategory The receiving '<em><b>Protocol Age Category</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param protocolAgeCategory The receiving '<em><b>Protocol Age Category</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 
 	public static boolean validateProtocolAgeCategoryCode(ProtocolAgeCategory protocolAgeCategory,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
@@ -253,38 +253,38 @@ public class ProtocolAgeCategoryOperations extends ClinicalStatementOperations {
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateProtocolAgeCategoryValue(ProtocolAgeCategory, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Protocol Age Category Value</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateProtocolAgeCategoryValue(ProtocolAgeCategory, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Protocol Age Category Value</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateProtocolAgeCategoryValue(ProtocolAgeCategory, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateProtocolAgeCategoryValue(ProtocolAgeCategory, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_PROTOCOL_AGE_CATEGORY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and "
 			+ "let value : datatypes::CD = element.oclAsType(datatypes::CD) in "
 			+ "value.codeSystem = '2.16.840.1.113883.6.1' and (value.code = 'LA17571-3' or value.code = 'LA17572-1' or value.code = 'LA17573-9')))";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateProtocolAgeCategoryValue(ProtocolAgeCategory, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Protocol Age Category Value</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateProtocolAgeCategoryValue(ProtocolAgeCategory, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Protocol Age Category Value</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateProtocolAgeCategoryValue(ProtocolAgeCategory, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateProtocolAgeCategoryValue(ProtocolAgeCategory, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 
 	protected static Constraint VALIDATE_PROTOCOL_AGE_CATEGORY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param protocolAgeCategory The receiving '<em><b>Protocol Age Category</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param protocolAgeCategory The receiving '<em><b>Protocol Age Category</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 
 	public static boolean validateProtocolAgeCategoryValue(ProtocolAgeCategory protocolAgeCategory,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
@@ -313,36 +313,36 @@ public class ProtocolAgeCategoryOperations extends ClinicalStatementOperations {
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateProtocolAgeCategoryValueP(ProtocolAgeCategory, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Protocol Age Category Value P</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateProtocolAgeCategoryValueP(ProtocolAgeCategory, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Protocol Age Category Value P</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateProtocolAgeCategoryValueP(ProtocolAgeCategory, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateProtocolAgeCategoryValueP(ProtocolAgeCategory, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_PROTOCOL_AGE_CATEGORY_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | element.oclIsTypeOf(datatypes::CD)))";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateProtocolAgeCategoryValueP(ProtocolAgeCategory, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Protocol Age Category Value P</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateProtocolAgeCategoryValueP(ProtocolAgeCategory, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Protocol Age Category Value P</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateProtocolAgeCategoryValueP(ProtocolAgeCategory, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateProtocolAgeCategoryValueP(ProtocolAgeCategory, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 
 	protected static Constraint VALIDATE_PROTOCOL_AGE_CATEGORY_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param protocolAgeCategory The receiving '<em><b>Protocol Age Category</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param protocolAgeCategory The receiving '<em><b>Protocol Age Category</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 
 	public static boolean validateProtocolAgeCategoryValueP(ProtocolAgeCategory protocolAgeCategory,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
@@ -371,36 +371,36 @@ public class ProtocolAgeCategoryOperations extends ClinicalStatementOperations {
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateProtocolAgeCategoryMoodCode(ProtocolAgeCategory, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Protocol Age Category Mood Code</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateProtocolAgeCategoryMoodCode(ProtocolAgeCategory, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Protocol Age Category Mood Code</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateProtocolAgeCategoryMoodCode(ProtocolAgeCategory, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateProtocolAgeCategoryMoodCode(ProtocolAgeCategory, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_PROTOCOL_AGE_CATEGORY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "isDefined('moodCode')";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateProtocolAgeCategoryMoodCode(ProtocolAgeCategory, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Protocol Age Category Mood Code</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateProtocolAgeCategoryMoodCode(ProtocolAgeCategory, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Protocol Age Category Mood Code</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateProtocolAgeCategoryMoodCode(ProtocolAgeCategory, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateProtocolAgeCategoryMoodCode(ProtocolAgeCategory, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 
 	protected static Constraint VALIDATE_PROTOCOL_AGE_CATEGORY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param protocolAgeCategory The receiving '<em><b>Protocol Age Category</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param protocolAgeCategory The receiving '<em><b>Protocol Age Category</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 
 	public static boolean validateProtocolAgeCategoryMoodCode(ProtocolAgeCategory protocolAgeCategory,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {

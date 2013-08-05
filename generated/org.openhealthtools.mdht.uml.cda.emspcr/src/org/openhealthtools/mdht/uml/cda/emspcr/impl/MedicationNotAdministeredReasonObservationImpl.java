@@ -36,29 +36,29 @@ import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
 public class MedicationNotAdministeredReasonObservationImpl extends ObservationImpl implements
 		MedicationNotAdministeredReasonObservation {
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	protected MedicationNotAdministeredReasonObservationImpl() {
 		super();
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
 		return EmspcrPackage.Literals.MEDICATION_NOT_ADMINISTERED_REASON_OBSERVATION;
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateMedicationNotAdministeredReasonObservationTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return MedicationNotAdministeredReasonObservationOperations.validateMedicationNotAdministeredReasonObservationTemplateId(
@@ -66,10 +66,10 @@ public class MedicationNotAdministeredReasonObservationImpl extends ObservationI
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateMedicationNotAdministeredReasonObservationCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return MedicationNotAdministeredReasonObservationOperations.validateMedicationNotAdministeredReasonObservationCode(
@@ -77,10 +77,10 @@ public class MedicationNotAdministeredReasonObservationImpl extends ObservationI
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateMedicationNotAdministeredReasonObservationValue(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return MedicationNotAdministeredReasonObservationOperations.validateMedicationNotAdministeredReasonObservationValue(
@@ -88,10 +88,10 @@ public class MedicationNotAdministeredReasonObservationImpl extends ObservationI
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateMedicationNotAdministeredReasonObservationValueP(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return MedicationNotAdministeredReasonObservationOperations.validateMedicationNotAdministeredReasonObservationValueP(
@@ -99,10 +99,10 @@ public class MedicationNotAdministeredReasonObservationImpl extends ObservationI
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateMedicationNotAdministeredReasonObservationMoodCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return MedicationNotAdministeredReasonObservationOperations.validateMedicationNotAdministeredReasonObservationMoodCode(
@@ -110,10 +110,10 @@ public class MedicationNotAdministeredReasonObservationImpl extends ObservationI
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public MedicationNotAdministeredReasonObservation init() {
 		return Initializer.Util.init(this);
 	}

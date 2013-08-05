@@ -35,29 +35,29 @@ import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
  */
 public class MedicationComplicationObservationImpl extends ObservationImpl implements MedicationComplicationObservation {
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	protected MedicationComplicationObservationImpl() {
 		super();
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
 		return EmspcrPackage.Literals.MEDICATION_COMPLICATION_OBSERVATION;
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateMedicationComplicationObservationTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return MedicationComplicationObservationOperations.validateMedicationComplicationObservationTemplateId(
@@ -65,10 +65,10 @@ public class MedicationComplicationObservationImpl extends ObservationImpl imple
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateMedicationComplicationObservationCodeP(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return MedicationComplicationObservationOperations.validateMedicationComplicationObservationCodeP(
@@ -76,10 +76,10 @@ public class MedicationComplicationObservationImpl extends ObservationImpl imple
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateMedicationComplicationObservationCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return MedicationComplicationObservationOperations.validateMedicationComplicationObservationCode(
@@ -87,10 +87,10 @@ public class MedicationComplicationObservationImpl extends ObservationImpl imple
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateMedicationComplicationObservationValue(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return MedicationComplicationObservationOperations.validateMedicationComplicationObservationValue(
@@ -98,10 +98,10 @@ public class MedicationComplicationObservationImpl extends ObservationImpl imple
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateMedicationComplicationObservationValueP(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return MedicationComplicationObservationOperations.validateMedicationComplicationObservationValueP(
@@ -109,10 +109,10 @@ public class MedicationComplicationObservationImpl extends ObservationImpl imple
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateMedicationComplicationObservationMoodCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return MedicationComplicationObservationOperations.validateMedicationComplicationObservationMoodCode(
@@ -120,10 +120,10 @@ public class MedicationComplicationObservationImpl extends ObservationImpl imple
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public MedicationComplicationObservation init() {
 		return Initializer.Util.init(this);
 	}

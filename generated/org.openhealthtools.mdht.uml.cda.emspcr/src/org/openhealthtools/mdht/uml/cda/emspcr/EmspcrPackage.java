@@ -28993,183 +28993,183 @@ public interface EmspcrPackage extends EPackage {
 	int DISASTER_TYPE_FEATURE_COUNT = CDAPackage.OBSERVATION_FEATURE_COUNT + 0;
 
 	/**
-	   * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
-	   * <!-- begin-user-doc -->
+	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   * @ordered
-	   */
+	 * @generated
+	 * @ordered
+	 */
 	int HISTORY_OF_PROCEDURES_ORGANIZER__REALM_CODE = CDAPackage.ORGANIZER__REALM_CODE;
 
 	/**
-	   * The feature id for the '<em><b>Type Id</b></em>' containment reference.
-	   * <!-- begin-user-doc -->
+	 * The feature id for the '<em><b>Type Id</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   * @ordered
-	   */
+	 * @generated
+	 * @ordered
+	 */
 	int HISTORY_OF_PROCEDURES_ORGANIZER__TYPE_ID = CDAPackage.ORGANIZER__TYPE_ID;
 
 	/**
-	   * The feature id for the '<em><b>Template Id</b></em>' containment reference list.
-	   * <!-- begin-user-doc -->
+	 * The feature id for the '<em><b>Template Id</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   * @ordered
-	   */
+	 * @generated
+	 * @ordered
+	 */
 	int HISTORY_OF_PROCEDURES_ORGANIZER__TEMPLATE_ID = CDAPackage.ORGANIZER__TEMPLATE_ID;
 
 	/**
-	   * The feature id for the '<em><b>Id</b></em>' containment reference list.
-	   * <!-- begin-user-doc -->
+	 * The feature id for the '<em><b>Id</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   * @ordered
-	   */
+	 * @generated
+	 * @ordered
+	 */
 	int HISTORY_OF_PROCEDURES_ORGANIZER__ID = CDAPackage.ORGANIZER__ID;
 
 	/**
-	   * The feature id for the '<em><b>Code</b></em>' containment reference.
-	   * <!-- begin-user-doc -->
+	 * The feature id for the '<em><b>Code</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   * @ordered
-	   */
+	 * @generated
+	 * @ordered
+	 */
 	int HISTORY_OF_PROCEDURES_ORGANIZER__CODE = CDAPackage.ORGANIZER__CODE;
 
 	/**
-	   * The feature id for the '<em><b>Status Code</b></em>' containment reference.
-	   * <!-- begin-user-doc -->
+	 * The feature id for the '<em><b>Status Code</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   * @ordered
-	   */
+	 * @generated
+	 * @ordered
+	 */
 	int HISTORY_OF_PROCEDURES_ORGANIZER__STATUS_CODE = CDAPackage.ORGANIZER__STATUS_CODE;
 
 	/**
-	   * The feature id for the '<em><b>Effective Time</b></em>' containment reference.
-	   * <!-- begin-user-doc -->
+	 * The feature id for the '<em><b>Effective Time</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   * @ordered
-	   */
+	 * @generated
+	 * @ordered
+	 */
 	int HISTORY_OF_PROCEDURES_ORGANIZER__EFFECTIVE_TIME = CDAPackage.ORGANIZER__EFFECTIVE_TIME;
 
 	/**
-	   * The feature id for the '<em><b>Subject</b></em>' containment reference.
-	   * <!-- begin-user-doc -->
+	 * The feature id for the '<em><b>Subject</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   * @ordered
-	   */
+	 * @generated
+	 * @ordered
+	 */
 	int HISTORY_OF_PROCEDURES_ORGANIZER__SUBJECT = CDAPackage.ORGANIZER__SUBJECT;
 
 	/**
-	   * The feature id for the '<em><b>Specimen</b></em>' containment reference list.
-	   * <!-- begin-user-doc -->
+	 * The feature id for the '<em><b>Specimen</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   * @ordered
-	   */
+	 * @generated
+	 * @ordered
+	 */
 	int HISTORY_OF_PROCEDURES_ORGANIZER__SPECIMEN = CDAPackage.ORGANIZER__SPECIMEN;
 
 	/**
-	   * The feature id for the '<em><b>Performer</b></em>' containment reference list.
-	   * <!-- begin-user-doc -->
+	 * The feature id for the '<em><b>Performer</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   * @ordered
-	   */
+	 * @generated
+	 * @ordered
+	 */
 	int HISTORY_OF_PROCEDURES_ORGANIZER__PERFORMER = CDAPackage.ORGANIZER__PERFORMER;
 
 	/**
-	   * The feature id for the '<em><b>Author</b></em>' containment reference list.
-	   * <!-- begin-user-doc -->
+	 * The feature id for the '<em><b>Author</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   * @ordered
-	   */
+	 * @generated
+	 * @ordered
+	 */
 	int HISTORY_OF_PROCEDURES_ORGANIZER__AUTHOR = CDAPackage.ORGANIZER__AUTHOR;
 
 	/**
-	   * The feature id for the '<em><b>Informant</b></em>' containment reference list.
-	   * <!-- begin-user-doc -->
+	 * The feature id for the '<em><b>Informant</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   * @ordered
-	   */
+	 * @generated
+	 * @ordered
+	 */
 	int HISTORY_OF_PROCEDURES_ORGANIZER__INFORMANT = CDAPackage.ORGANIZER__INFORMANT;
 
 	/**
-	   * The feature id for the '<em><b>Participant</b></em>' containment reference list.
-	   * <!-- begin-user-doc -->
+	 * The feature id for the '<em><b>Participant</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   * @ordered
-	   */
+	 * @generated
+	 * @ordered
+	 */
 	int HISTORY_OF_PROCEDURES_ORGANIZER__PARTICIPANT = CDAPackage.ORGANIZER__PARTICIPANT;
 
 	/**
-	   * The feature id for the '<em><b>Reference</b></em>' containment reference list.
-	   * <!-- begin-user-doc -->
+	 * The feature id for the '<em><b>Reference</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   * @ordered
-	   */
+	 * @generated
+	 * @ordered
+	 */
 	int HISTORY_OF_PROCEDURES_ORGANIZER__REFERENCE = CDAPackage.ORGANIZER__REFERENCE;
 
 	/**
-	   * The feature id for the '<em><b>Precondition</b></em>' containment reference list.
-	   * <!-- begin-user-doc -->
+	 * The feature id for the '<em><b>Precondition</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   * @ordered
-	   */
+	 * @generated
+	 * @ordered
+	 */
 	int HISTORY_OF_PROCEDURES_ORGANIZER__PRECONDITION = CDAPackage.ORGANIZER__PRECONDITION;
 
 	/**
-	   * The feature id for the '<em><b>Component</b></em>' containment reference list.
-	   * <!-- begin-user-doc -->
+	 * The feature id for the '<em><b>Component</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   * @ordered
-	   */
+	 * @generated
+	 * @ordered
+	 */
 	int HISTORY_OF_PROCEDURES_ORGANIZER__COMPONENT = CDAPackage.ORGANIZER__COMPONENT;
 
 	/**
-	   * The feature id for the '<em><b>Null Flavor</b></em>' attribute.
-	   * <!-- begin-user-doc -->
+	 * The feature id for the '<em><b>Null Flavor</b></em>' attribute.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   * @ordered
-	   */
+	 * @generated
+	 * @ordered
+	 */
 	int HISTORY_OF_PROCEDURES_ORGANIZER__NULL_FLAVOR = CDAPackage.ORGANIZER__NULL_FLAVOR;
 
 	/**
-	   * The feature id for the '<em><b>Class Code</b></em>' attribute.
-	   * <!-- begin-user-doc -->
+	 * The feature id for the '<em><b>Class Code</b></em>' attribute.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   * @ordered
-	   */
+	 * @generated
+	 * @ordered
+	 */
 	int HISTORY_OF_PROCEDURES_ORGANIZER__CLASS_CODE = CDAPackage.ORGANIZER__CLASS_CODE;
 
 	/**
-	   * The feature id for the '<em><b>Mood Code</b></em>' attribute.
-	   * <!-- begin-user-doc -->
+	 * The feature id for the '<em><b>Mood Code</b></em>' attribute.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   * @ordered
-	   */
+	 * @generated
+	 * @ordered
+	 */
 	int HISTORY_OF_PROCEDURES_ORGANIZER__MOOD_CODE = CDAPackage.ORGANIZER__MOOD_CODE;
 
 	/**
-	   * The number of structural features of the '<em>History Of Procedures Organizer</em>' class.
-	   * <!-- begin-user-doc -->
+	 * The number of structural features of the '<em>History Of Procedures Organizer</em>' class.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   * @ordered
-	   */
+	 * @generated
+	 * @ordered
+	 */
 	int HISTORY_OF_PROCEDURES_ORGANIZER_FEATURE_COUNT = CDAPackage.ORGANIZER_FEATURE_COUNT + 0;
 
 	/**

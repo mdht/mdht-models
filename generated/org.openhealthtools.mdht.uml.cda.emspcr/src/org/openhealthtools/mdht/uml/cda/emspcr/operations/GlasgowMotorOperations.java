@@ -46,45 +46,45 @@ import org.openhealthtools.mdht.uml.cda.operations.ClinicalStatementOperations;
  */
 public class GlasgowMotorOperations extends ClinicalStatementOperations {
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	protected GlasgowMotorOperations() {
 		super();
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateGlasgowMotorTemplateId(GlasgowMotor, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Glasgow Motor Template Id</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateGlasgowMotorTemplateId(GlasgowMotor, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Glasgow Motor Template Id</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateGlasgowMotorTemplateId(GlasgowMotor, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateGlasgowMotorTemplateId(GlasgowMotor, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_GLASGOW_MOTOR_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.1133883.17.3.10.1.176')";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateGlasgowMotorTemplateId(GlasgowMotor, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Glasgow Motor Template Id</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateGlasgowMotorTemplateId(GlasgowMotor, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Glasgow Motor Template Id</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateGlasgowMotorTemplateId(GlasgowMotor, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateGlasgowMotorTemplateId(GlasgowMotor, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 
 	protected static Constraint VALIDATE_GLASGOW_MOTOR_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param glasgowMotor The receiving '<em><b>Glasgow Motor</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param glasgowMotor The receiving '<em><b>Glasgow Motor</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 
 	public static boolean validateGlasgowMotorTemplateId(GlasgowMotor glasgowMotor, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
@@ -113,36 +113,36 @@ public class GlasgowMotorOperations extends ClinicalStatementOperations {
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateGlasgowMotorCodeP(GlasgowMotor, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Glasgow Motor Code P</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateGlasgowMotorCodeP(GlasgowMotor, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Glasgow Motor Code P</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateGlasgowMotorCodeP(GlasgowMotor, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateGlasgowMotorCodeP(GlasgowMotor, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_GLASGOW_MOTOR_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined())";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateGlasgowMotorCodeP(GlasgowMotor, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Glasgow Motor Code P</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateGlasgowMotorCodeP(GlasgowMotor, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Glasgow Motor Code P</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateGlasgowMotorCodeP(GlasgowMotor, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateGlasgowMotorCodeP(GlasgowMotor, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 
 	protected static Constraint VALIDATE_GLASGOW_MOTOR_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param glasgowMotor The receiving '<em><b>Glasgow Motor</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param glasgowMotor The receiving '<em><b>Glasgow Motor</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 
 	public static boolean validateGlasgowMotorCodeP(GlasgowMotor glasgowMotor, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
@@ -182,38 +182,38 @@ public class GlasgowMotorOperations extends ClinicalStatementOperations {
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateGlasgowMotorCode(GlasgowMotor, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Glasgow Motor Code</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateGlasgowMotorCode(GlasgowMotor, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Glasgow Motor Code</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateGlasgowMotorCode(GlasgowMotor, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateGlasgowMotorCode(GlasgowMotor, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_GLASGOW_MOTOR_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "
 			+ "let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "
 			+ "value.code = '9268-4' and value.codeSystem = '2.16.840.1.113883.6.1')";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateGlasgowMotorCode(GlasgowMotor, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Glasgow Motor Code</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateGlasgowMotorCode(GlasgowMotor, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Glasgow Motor Code</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateGlasgowMotorCode(GlasgowMotor, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateGlasgowMotorCode(GlasgowMotor, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 
 	protected static Constraint VALIDATE_GLASGOW_MOTOR_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param glasgowMotor The receiving '<em><b>Glasgow Motor</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param glasgowMotor The receiving '<em><b>Glasgow Motor</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 
 	public static boolean validateGlasgowMotorCode(GlasgowMotor glasgowMotor, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
@@ -249,36 +249,36 @@ public class GlasgowMotorOperations extends ClinicalStatementOperations {
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateGlasgowMotorValue(GlasgowMotor, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Glasgow Motor Value</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateGlasgowMotorValue(GlasgowMotor, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Glasgow Motor Value</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateGlasgowMotorValue(GlasgowMotor, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateGlasgowMotorValue(GlasgowMotor, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_GLASGOW_MOTOR_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | element.oclIsTypeOf(datatypes::INT)))";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateGlasgowMotorValue(GlasgowMotor, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Glasgow Motor Value</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateGlasgowMotorValue(GlasgowMotor, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Glasgow Motor Value</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateGlasgowMotorValue(GlasgowMotor, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateGlasgowMotorValue(GlasgowMotor, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 
 	protected static Constraint VALIDATE_GLASGOW_MOTOR_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param glasgowMotor The receiving '<em><b>Glasgow Motor</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param glasgowMotor The receiving '<em><b>Glasgow Motor</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 
 	public static boolean validateGlasgowMotorValue(GlasgowMotor glasgowMotor, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
@@ -306,36 +306,36 @@ public class GlasgowMotorOperations extends ClinicalStatementOperations {
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateGlasgowMotorMoodCode(GlasgowMotor, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Glasgow Motor Mood Code</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateGlasgowMotorMoodCode(GlasgowMotor, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Glasgow Motor Mood Code</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateGlasgowMotorMoodCode(GlasgowMotor, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateGlasgowMotorMoodCode(GlasgowMotor, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_GLASGOW_MOTOR_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "isDefined('moodCode')";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateGlasgowMotorMoodCode(GlasgowMotor, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Glasgow Motor Mood Code</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateGlasgowMotorMoodCode(GlasgowMotor, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Glasgow Motor Mood Code</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateGlasgowMotorMoodCode(GlasgowMotor, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateGlasgowMotorMoodCode(GlasgowMotor, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 
 	protected static Constraint VALIDATE_GLASGOW_MOTOR_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param glasgowMotor The receiving '<em><b>Glasgow Motor</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param glasgowMotor The receiving '<em><b>Glasgow Motor</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 
 	public static boolean validateGlasgowMotorMoodCode(GlasgowMotor glasgowMotor, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {

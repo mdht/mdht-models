@@ -47,45 +47,45 @@ import org.openhealthtools.mdht.uml.cda.operations.ClinicalStatementOperations;
  */
 public class PatientPregnancyOperations extends ClinicalStatementOperations {
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	protected PatientPregnancyOperations() {
 		super();
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validatePatientPregnancyTemplateId(PatientPregnancy, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Pregnancy Template Id</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validatePatientPregnancyTemplateId(PatientPregnancy, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Pregnancy Template Id</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validatePatientPregnancyTemplateId(PatientPregnancy, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validatePatientPregnancyTemplateId(PatientPregnancy, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_PATIENT_PREGNANCY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.1133883.17.3.10.1.79')";
 
 	/**
-	* The cached OCL invariant for the '{@link #validatePatientPregnancyTemplateId(PatientPregnancy, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Pregnancy Template Id</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validatePatientPregnancyTemplateId(PatientPregnancy, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Pregnancy Template Id</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validatePatientPregnancyTemplateId(PatientPregnancy, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validatePatientPregnancyTemplateId(PatientPregnancy, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 
 	protected static Constraint VALIDATE_PATIENT_PREGNANCY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param patientPregnancy The receiving '<em><b>Patient Pregnancy</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param patientPregnancy The receiving '<em><b>Patient Pregnancy</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 
 	public static boolean validatePatientPregnancyTemplateId(PatientPregnancy patientPregnancy,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
@@ -114,36 +114,36 @@ public class PatientPregnancyOperations extends ClinicalStatementOperations {
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validatePatientPregnancyCodeP(PatientPregnancy, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Pregnancy Code P</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validatePatientPregnancyCodeP(PatientPregnancy, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Pregnancy Code P</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validatePatientPregnancyCodeP(PatientPregnancy, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validatePatientPregnancyCodeP(PatientPregnancy, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_PATIENT_PREGNANCY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined())";
 
 	/**
-	* The cached OCL invariant for the '{@link #validatePatientPregnancyCodeP(PatientPregnancy, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Pregnancy Code P</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validatePatientPregnancyCodeP(PatientPregnancy, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Pregnancy Code P</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validatePatientPregnancyCodeP(PatientPregnancy, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validatePatientPregnancyCodeP(PatientPregnancy, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 
 	protected static Constraint VALIDATE_PATIENT_PREGNANCY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param patientPregnancy The receiving '<em><b>Patient Pregnancy</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param patientPregnancy The receiving '<em><b>Patient Pregnancy</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 
 	public static boolean validatePatientPregnancyCodeP(PatientPregnancy patientPregnancy, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
@@ -184,38 +184,38 @@ public class PatientPregnancyOperations extends ClinicalStatementOperations {
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validatePatientPregnancyCode(PatientPregnancy, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Pregnancy Code</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validatePatientPregnancyCode(PatientPregnancy, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Pregnancy Code</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validatePatientPregnancyCode(PatientPregnancy, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validatePatientPregnancyCode(PatientPregnancy, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_PATIENT_PREGNANCY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "
 			+ "let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "
 			+ "value.code = '67471-3' and value.codeSystem = '2.16.840.1.113883.6.1')";
 
 	/**
-	* The cached OCL invariant for the '{@link #validatePatientPregnancyCode(PatientPregnancy, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Pregnancy Code</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validatePatientPregnancyCode(PatientPregnancy, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Pregnancy Code</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validatePatientPregnancyCode(PatientPregnancy, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validatePatientPregnancyCode(PatientPregnancy, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 
 	protected static Constraint VALIDATE_PATIENT_PREGNANCY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param patientPregnancy The receiving '<em><b>Patient Pregnancy</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param patientPregnancy The receiving '<em><b>Patient Pregnancy</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 
 	public static boolean validatePatientPregnancyCode(PatientPregnancy patientPregnancy, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
@@ -252,38 +252,38 @@ public class PatientPregnancyOperations extends ClinicalStatementOperations {
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validatePatientPregnancyValue(PatientPregnancy, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Pregnancy Value</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validatePatientPregnancyValue(PatientPregnancy, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Pregnancy Value</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validatePatientPregnancyValue(PatientPregnancy, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validatePatientPregnancyValue(PatientPregnancy, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_PATIENT_PREGNANCY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and "
 			+ "let value : datatypes::CD = element.oclAsType(datatypes::CD) in "
 			+ "value.codeSystem = '2.16.840.1.113883.6.1' and (value.code = 'LA17329-6' or value.code = 'LA17330-4' or value.code = 'LA17331-2' or value.code = 'LA17332-0' or value.code = 'LA32-8')))";
 
 	/**
-	* The cached OCL invariant for the '{@link #validatePatientPregnancyValue(PatientPregnancy, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Pregnancy Value</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validatePatientPregnancyValue(PatientPregnancy, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Pregnancy Value</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validatePatientPregnancyValue(PatientPregnancy, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validatePatientPregnancyValue(PatientPregnancy, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 
 	protected static Constraint VALIDATE_PATIENT_PREGNANCY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param patientPregnancy The receiving '<em><b>Patient Pregnancy</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param patientPregnancy The receiving '<em><b>Patient Pregnancy</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 
 	public static boolean validatePatientPregnancyValue(PatientPregnancy patientPregnancy, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
@@ -312,36 +312,36 @@ public class PatientPregnancyOperations extends ClinicalStatementOperations {
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validatePatientPregnancyValueP(PatientPregnancy, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Pregnancy Value P</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validatePatientPregnancyValueP(PatientPregnancy, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Pregnancy Value P</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validatePatientPregnancyValueP(PatientPregnancy, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validatePatientPregnancyValueP(PatientPregnancy, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_PATIENT_PREGNANCY_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | element.oclIsTypeOf(datatypes::CD)))";
 
 	/**
-	* The cached OCL invariant for the '{@link #validatePatientPregnancyValueP(PatientPregnancy, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Pregnancy Value P</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validatePatientPregnancyValueP(PatientPregnancy, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Pregnancy Value P</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validatePatientPregnancyValueP(PatientPregnancy, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validatePatientPregnancyValueP(PatientPregnancy, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 
 	protected static Constraint VALIDATE_PATIENT_PREGNANCY_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param patientPregnancy The receiving '<em><b>Patient Pregnancy</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param patientPregnancy The receiving '<em><b>Patient Pregnancy</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 
 	public static boolean validatePatientPregnancyValueP(PatientPregnancy patientPregnancy,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
@@ -370,36 +370,36 @@ public class PatientPregnancyOperations extends ClinicalStatementOperations {
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validatePatientPregnancyMoodCode(PatientPregnancy, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Pregnancy Mood Code</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validatePatientPregnancyMoodCode(PatientPregnancy, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Pregnancy Mood Code</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validatePatientPregnancyMoodCode(PatientPregnancy, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validatePatientPregnancyMoodCode(PatientPregnancy, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_PATIENT_PREGNANCY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "isDefined('moodCode')";
 
 	/**
-	* The cached OCL invariant for the '{@link #validatePatientPregnancyMoodCode(PatientPregnancy, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Pregnancy Mood Code</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validatePatientPregnancyMoodCode(PatientPregnancy, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Pregnancy Mood Code</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validatePatientPregnancyMoodCode(PatientPregnancy, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validatePatientPregnancyMoodCode(PatientPregnancy, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 
 	protected static Constraint VALIDATE_PATIENT_PREGNANCY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param patientPregnancy The receiving '<em><b>Patient Pregnancy</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param patientPregnancy The receiving '<em><b>Patient Pregnancy</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 
 	public static boolean validatePatientPregnancyMoodCode(PatientPregnancy patientPregnancy,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {

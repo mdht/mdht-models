@@ -35,74 +35,74 @@ import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
  */
 public class LastOralIntakeImpl extends ObservationImpl implements LastOralIntake {
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	protected LastOralIntakeImpl() {
 		super();
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
 		return EmspcrPackage.Literals.LAST_ORAL_INTAKE;
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateLastOralIntakeTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return LastOralIntakeOperations.validateLastOralIntakeTemplateId(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateLastOralIntakeCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return LastOralIntakeOperations.validateLastOralIntakeCodeP(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateLastOralIntakeCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return LastOralIntakeOperations.validateLastOralIntakeCode(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateLastOralIntakeValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return LastOralIntakeOperations.validateLastOralIntakeValue(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateLastOralIntakeMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return LastOralIntakeOperations.validateLastOralIntakeMoodCode(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public LastOralIntake init() {
 		return Initializer.Util.init(this);
 	}

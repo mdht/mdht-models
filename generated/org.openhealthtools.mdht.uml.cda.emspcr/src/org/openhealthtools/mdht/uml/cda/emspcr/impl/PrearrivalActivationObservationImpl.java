@@ -35,29 +35,29 @@ import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
  */
 public class PrearrivalActivationObservationImpl extends ObservationImpl implements PrearrivalActivationObservation {
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	protected PrearrivalActivationObservationImpl() {
 		super();
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
 		return EmspcrPackage.Literals.PREARRIVAL_ACTIVATION_OBSERVATION;
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validatePrearrivalActivationObservationTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return PrearrivalActivationObservationOperations.validatePrearrivalActivationObservationTemplateId(
@@ -65,40 +65,40 @@ public class PrearrivalActivationObservationImpl extends ObservationImpl impleme
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validatePrearrivalActivationObservationCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PrearrivalActivationObservationOperations.validatePrearrivalActivationObservationCodeP(
 			this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validatePrearrivalActivationObservationCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PrearrivalActivationObservationOperations.validatePrearrivalActivationObservationCode(
 			this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validatePrearrivalActivationObservationValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PrearrivalActivationObservationOperations.validatePrearrivalActivationObservationValue(
 			this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validatePrearrivalActivationObservationEffectiveTime(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return PrearrivalActivationObservationOperations.validatePrearrivalActivationObservationEffectiveTime(
@@ -106,10 +106,10 @@ public class PrearrivalActivationObservationImpl extends ObservationImpl impleme
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validatePrearrivalActivationObservationMoodCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return PrearrivalActivationObservationOperations.validatePrearrivalActivationObservationMoodCode(
@@ -117,10 +117,10 @@ public class PrearrivalActivationObservationImpl extends ObservationImpl impleme
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public PrearrivalActivationObservation init() {
 		return Initializer.Util.init(this);
 	}

@@ -35,29 +35,29 @@ import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
  */
 public class VehicleOccupantSafetyEquipmentImpl extends ObservationImpl implements VehicleOccupantSafetyEquipment {
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	protected VehicleOccupantSafetyEquipmentImpl() {
 		super();
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
 		return EmspcrPackage.Literals.VEHICLE_OCCUPANT_SAFETY_EQUIPMENT;
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateVehicleOccupantSafetyEquipmentTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return VehicleOccupantSafetyEquipmentOperations.validateVehicleOccupantSafetyEquipmentTemplateId(
@@ -65,30 +65,30 @@ public class VehicleOccupantSafetyEquipmentImpl extends ObservationImpl implemen
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateVehicleOccupantSafetyEquipmentCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return VehicleOccupantSafetyEquipmentOperations.validateVehicleOccupantSafetyEquipmentCode(
 			this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateVehicleOccupantSafetyEquipmentValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return VehicleOccupantSafetyEquipmentOperations.validateVehicleOccupantSafetyEquipmentValue(
 			this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateVehicleOccupantSafetyEquipmentMoodCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return VehicleOccupantSafetyEquipmentOperations.validateVehicleOccupantSafetyEquipmentMoodCode(
@@ -96,10 +96,10 @@ public class VehicleOccupantSafetyEquipmentImpl extends ObservationImpl implemen
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public VehicleOccupantSafetyEquipment init() {
 		return Initializer.Util.init(this);
 	}

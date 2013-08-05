@@ -47,45 +47,45 @@ import org.openhealthtools.mdht.uml.cda.operations.ClinicalStatementOperations;
  */
 public class OtherSymptomsOperations extends ClinicalStatementOperations {
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	protected OtherSymptomsOperations() {
 		super();
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateOtherSymptomsTemplateId(OtherSymptoms, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Other Symptoms Template Id</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateOtherSymptomsTemplateId(OtherSymptoms, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Other Symptoms Template Id</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateOtherSymptomsTemplateId(OtherSymptoms, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateOtherSymptomsTemplateId(OtherSymptoms, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_OTHER_SYMPTOMS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.1133883.17.3.10.1.67')";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateOtherSymptomsTemplateId(OtherSymptoms, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Other Symptoms Template Id</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateOtherSymptomsTemplateId(OtherSymptoms, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Other Symptoms Template Id</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateOtherSymptomsTemplateId(OtherSymptoms, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateOtherSymptomsTemplateId(OtherSymptoms, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 
 	protected static Constraint VALIDATE_OTHER_SYMPTOMS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param otherSymptoms The receiving '<em><b>Other Symptoms</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param otherSymptoms The receiving '<em><b>Other Symptoms</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 
 	public static boolean validateOtherSymptomsTemplateId(OtherSymptoms otherSymptoms, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
@@ -114,36 +114,36 @@ public class OtherSymptomsOperations extends ClinicalStatementOperations {
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateOtherSymptomsCodeP(OtherSymptoms, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Other Symptoms Code P</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateOtherSymptomsCodeP(OtherSymptoms, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Other Symptoms Code P</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateOtherSymptomsCodeP(OtherSymptoms, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateOtherSymptomsCodeP(OtherSymptoms, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_OTHER_SYMPTOMS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined())";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateOtherSymptomsCodeP(OtherSymptoms, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Other Symptoms Code P</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateOtherSymptomsCodeP(OtherSymptoms, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Other Symptoms Code P</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateOtherSymptomsCodeP(OtherSymptoms, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateOtherSymptomsCodeP(OtherSymptoms, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 
 	protected static Constraint VALIDATE_OTHER_SYMPTOMS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param otherSymptoms The receiving '<em><b>Other Symptoms</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param otherSymptoms The receiving '<em><b>Other Symptoms</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 
 	public static boolean validateOtherSymptomsCodeP(OtherSymptoms otherSymptoms, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
@@ -183,38 +183,38 @@ public class OtherSymptomsOperations extends ClinicalStatementOperations {
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateOtherSymptomsCode(OtherSymptoms, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Other Symptoms Code</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateOtherSymptomsCode(OtherSymptoms, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Other Symptoms Code</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateOtherSymptomsCode(OtherSymptoms, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateOtherSymptomsCode(OtherSymptoms, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_OTHER_SYMPTOMS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "
 			+ "let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "
 			+ "value.code = '67776-5' and value.codeSystem = '2.16.840.1.113883.6.1')";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateOtherSymptomsCode(OtherSymptoms, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Other Symptoms Code</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateOtherSymptomsCode(OtherSymptoms, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Other Symptoms Code</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateOtherSymptomsCode(OtherSymptoms, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateOtherSymptomsCode(OtherSymptoms, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 
 	protected static Constraint VALIDATE_OTHER_SYMPTOMS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param otherSymptoms The receiving '<em><b>Other Symptoms</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param otherSymptoms The receiving '<em><b>Other Symptoms</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 
 	public static boolean validateOtherSymptomsCode(OtherSymptoms otherSymptoms, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
@@ -250,38 +250,38 @@ public class OtherSymptomsOperations extends ClinicalStatementOperations {
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateOtherSymptomsValue(OtherSymptoms, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Other Symptoms Value</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateOtherSymptomsValue(OtherSymptoms, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Other Symptoms Value</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateOtherSymptomsValue(OtherSymptoms, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateOtherSymptomsValue(OtherSymptoms, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_OTHER_SYMPTOMS_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and "
 			+ "let value : datatypes::CD = element.oclAsType(datatypes::CD) in "
 			+ "value.codeSystem = '2.16.840.1.113883.6.90'))";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateOtherSymptomsValue(OtherSymptoms, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Other Symptoms Value</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateOtherSymptomsValue(OtherSymptoms, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Other Symptoms Value</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateOtherSymptomsValue(OtherSymptoms, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateOtherSymptomsValue(OtherSymptoms, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 
 	protected static Constraint VALIDATE_OTHER_SYMPTOMS_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param otherSymptoms The receiving '<em><b>Other Symptoms</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param otherSymptoms The receiving '<em><b>Other Symptoms</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 
 	public static boolean validateOtherSymptomsValue(OtherSymptoms otherSymptoms, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
@@ -309,36 +309,36 @@ public class OtherSymptomsOperations extends ClinicalStatementOperations {
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateOtherSymptomsValueP(OtherSymptoms, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Other Symptoms Value P</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateOtherSymptomsValueP(OtherSymptoms, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Other Symptoms Value P</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateOtherSymptomsValueP(OtherSymptoms, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateOtherSymptomsValueP(OtherSymptoms, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_OTHER_SYMPTOMS_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->forAll(element | element.oclIsTypeOf(datatypes::CD)))";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateOtherSymptomsValueP(OtherSymptoms, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Other Symptoms Value P</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateOtherSymptomsValueP(OtherSymptoms, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Other Symptoms Value P</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateOtherSymptomsValueP(OtherSymptoms, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateOtherSymptomsValueP(OtherSymptoms, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 
 	protected static Constraint VALIDATE_OTHER_SYMPTOMS_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param otherSymptoms The receiving '<em><b>Other Symptoms</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param otherSymptoms The receiving '<em><b>Other Symptoms</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 
 	public static boolean validateOtherSymptomsValueP(OtherSymptoms otherSymptoms, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
@@ -366,36 +366,36 @@ public class OtherSymptomsOperations extends ClinicalStatementOperations {
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateOtherSymptomsMoodCode(OtherSymptoms, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Other Symptoms Mood Code</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateOtherSymptomsMoodCode(OtherSymptoms, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Other Symptoms Mood Code</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateOtherSymptomsMoodCode(OtherSymptoms, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateOtherSymptomsMoodCode(OtherSymptoms, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_OTHER_SYMPTOMS_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "isDefined('moodCode')";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateOtherSymptomsMoodCode(OtherSymptoms, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Other Symptoms Mood Code</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateOtherSymptomsMoodCode(OtherSymptoms, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Other Symptoms Mood Code</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateOtherSymptomsMoodCode(OtherSymptoms, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateOtherSymptomsMoodCode(OtherSymptoms, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 
 	protected static Constraint VALIDATE_OTHER_SYMPTOMS_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param otherSymptoms The receiving '<em><b>Other Symptoms</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param otherSymptoms The receiving '<em><b>Other Symptoms</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 
 	public static boolean validateOtherSymptomsMoodCode(OtherSymptoms otherSymptoms, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {

@@ -35,83 +35,83 @@ import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
  */
 public class ResponseDelayImpl extends ObservationImpl implements ResponseDelay {
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	protected ResponseDelayImpl() {
 		super();
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
 		return EmspcrPackage.Literals.RESPONSE_DELAY;
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateResponseDelayTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ResponseDelayOperations.validateResponseDelayTemplateId(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateResponseDelayCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ResponseDelayOperations.validateResponseDelayCodeP(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateResponseDelayCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ResponseDelayOperations.validateResponseDelayCode(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateResponseDelayValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ResponseDelayOperations.validateResponseDelayValue(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateResponseDelayValueP(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ResponseDelayOperations.validateResponseDelayValueP(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateResponseDelayMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ResponseDelayOperations.validateResponseDelayMoodCode(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public ResponseDelay init() {
 		return Initializer.Util.init(this);
 	}

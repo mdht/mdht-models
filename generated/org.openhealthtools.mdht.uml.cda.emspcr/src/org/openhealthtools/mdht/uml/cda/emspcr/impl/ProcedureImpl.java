@@ -35,29 +35,29 @@ import org.openhealthtools.mdht.uml.cda.emspcr.operations.ProcedureOperations;
  */
 public class ProcedureImpl extends ProcedureActivityProcedureImpl implements Procedure {
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	protected ProcedureImpl() {
 		super();
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
 		return EmspcrPackage.Literals.PROCEDURE;
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	* <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateEMSPCRProcedureAbandonedProcedureRelationship(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ProcedureOperations.validateEMSPCRProcedureAbandonedProcedureRelationship(this, diagnostics, context);
@@ -208,10 +208,10 @@ public class ProcedureImpl extends ProcedureActivityProcedureImpl implements Pro
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	@Override
 	public Procedure init() {
 		return Initializer.Util.init(this);

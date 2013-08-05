@@ -35,101 +35,101 @@ import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
  */
 public class ExtremitiesAssessmentImpl extends ObservationImpl implements ExtremitiesAssessment {
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	protected ExtremitiesAssessmentImpl() {
 		super();
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
 		return EmspcrPackage.Literals.EXTREMITIES_ASSESSMENT;
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateExtremitiesAssessmentTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ExtremitiesAssessmentOperations.validateExtremitiesAssessmentTemplateId(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateExtremitiesAssessmentCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ExtremitiesAssessmentOperations.validateExtremitiesAssessmentCodeP(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateExtremitiesAssessmentCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ExtremitiesAssessmentOperations.validateExtremitiesAssessmentCode(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateExtremitiesAssessmentTargetSiteCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ExtremitiesAssessmentOperations.validateExtremitiesAssessmentTargetSiteCode(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateExtremitiesAssessmentTargetSiteCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ExtremitiesAssessmentOperations.validateExtremitiesAssessmentTargetSiteCodeP(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateExtremitiesAssessmentValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ExtremitiesAssessmentOperations.validateExtremitiesAssessmentValue(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateExtremitiesAssessmentEffectiveTime(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ExtremitiesAssessmentOperations.validateExtremitiesAssessmentEffectiveTime(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateExtremitiesAssessmentMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ExtremitiesAssessmentOperations.validateExtremitiesAssessmentMoodCode(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public ExtremitiesAssessment init() {
 		return Initializer.Util.init(this);
 	}

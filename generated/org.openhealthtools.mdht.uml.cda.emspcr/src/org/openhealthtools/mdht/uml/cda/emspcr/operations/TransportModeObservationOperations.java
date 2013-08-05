@@ -46,45 +46,45 @@ import org.openhealthtools.mdht.uml.cda.operations.ClinicalStatementOperations;
  */
 public class TransportModeObservationOperations extends ClinicalStatementOperations {
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	protected TransportModeObservationOperations() {
 		super();
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateTransportModeObservationTemplateId(TransportModeObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transport Mode Observation Template Id</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateTransportModeObservationTemplateId(TransportModeObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transport Mode Observation Template Id</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateTransportModeObservationTemplateId(TransportModeObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateTransportModeObservationTemplateId(TransportModeObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_TRANSPORT_MODE_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.1133883.17.3.10.1.33')";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateTransportModeObservationTemplateId(TransportModeObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transport Mode Observation Template Id</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateTransportModeObservationTemplateId(TransportModeObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transport Mode Observation Template Id</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateTransportModeObservationTemplateId(TransportModeObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateTransportModeObservationTemplateId(TransportModeObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 
 	protected static Constraint VALIDATE_TRANSPORT_MODE_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param transportModeObservation The receiving '<em><b>Transport Mode Observation</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param transportModeObservation The receiving '<em><b>Transport Mode Observation</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 
 	public static boolean validateTransportModeObservationTemplateId(TransportModeObservation transportModeObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
@@ -114,36 +114,36 @@ public class TransportModeObservationOperations extends ClinicalStatementOperati
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateTransportModeObservationCodeP(TransportModeObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transport Mode Observation Code P</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateTransportModeObservationCodeP(TransportModeObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transport Mode Observation Code P</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateTransportModeObservationCodeP(TransportModeObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateTransportModeObservationCodeP(TransportModeObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_TRANSPORT_MODE_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined())";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateTransportModeObservationCodeP(TransportModeObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transport Mode Observation Code P</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateTransportModeObservationCodeP(TransportModeObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transport Mode Observation Code P</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateTransportModeObservationCodeP(TransportModeObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateTransportModeObservationCodeP(TransportModeObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 
 	protected static Constraint VALIDATE_TRANSPORT_MODE_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param transportModeObservation The receiving '<em><b>Transport Mode Observation</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param transportModeObservation The receiving '<em><b>Transport Mode Observation</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 
 	public static boolean validateTransportModeObservationCodeP(TransportModeObservation transportModeObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
@@ -185,38 +185,38 @@ public class TransportModeObservationOperations extends ClinicalStatementOperati
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateTransportModeObservationCode(TransportModeObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transport Mode Observation Code</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateTransportModeObservationCode(TransportModeObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transport Mode Observation Code</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateTransportModeObservationCode(TransportModeObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateTransportModeObservationCode(TransportModeObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_TRANSPORT_MODE_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "
 			+ "let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "
 			+ "value.code = '67550-4' and value.codeSystem = '2.16.840.1.113883.6.1')";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateTransportModeObservationCode(TransportModeObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transport Mode Observation Code</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateTransportModeObservationCode(TransportModeObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transport Mode Observation Code</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateTransportModeObservationCode(TransportModeObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateTransportModeObservationCode(TransportModeObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 
 	protected static Constraint VALIDATE_TRANSPORT_MODE_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param transportModeObservation The receiving '<em><b>Transport Mode Observation</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param transportModeObservation The receiving '<em><b>Transport Mode Observation</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 
 	public static boolean validateTransportModeObservationCode(TransportModeObservation transportModeObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
@@ -254,36 +254,36 @@ public class TransportModeObservationOperations extends ClinicalStatementOperati
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateTransportModeObservationValue(TransportModeObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transport Mode Observation Value</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateTransportModeObservationValue(TransportModeObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transport Mode Observation Value</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateTransportModeObservationValue(TransportModeObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateTransportModeObservationValue(TransportModeObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_TRANSPORT_MODE_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | element.oclIsTypeOf(datatypes::CD)))";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateTransportModeObservationValue(TransportModeObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transport Mode Observation Value</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateTransportModeObservationValue(TransportModeObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transport Mode Observation Value</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateTransportModeObservationValue(TransportModeObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateTransportModeObservationValue(TransportModeObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 
 	protected static Constraint VALIDATE_TRANSPORT_MODE_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param transportModeObservation The receiving '<em><b>Transport Mode Observation</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param transportModeObservation The receiving '<em><b>Transport Mode Observation</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 
 	public static boolean validateTransportModeObservationValue(TransportModeObservation transportModeObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
@@ -313,36 +313,36 @@ public class TransportModeObservationOperations extends ClinicalStatementOperati
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateTransportModeObservationMoodCode(TransportModeObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transport Mode Observation Mood Code</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateTransportModeObservationMoodCode(TransportModeObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transport Mode Observation Mood Code</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateTransportModeObservationMoodCode(TransportModeObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateTransportModeObservationMoodCode(TransportModeObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_TRANSPORT_MODE_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "isDefined('moodCode')";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateTransportModeObservationMoodCode(TransportModeObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transport Mode Observation Mood Code</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateTransportModeObservationMoodCode(TransportModeObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transport Mode Observation Mood Code</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateTransportModeObservationMoodCode(TransportModeObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateTransportModeObservationMoodCode(TransportModeObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 
 	protected static Constraint VALIDATE_TRANSPORT_MODE_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param transportModeObservation The receiving '<em><b>Transport Mode Observation</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param transportModeObservation The receiving '<em><b>Transport Mode Observation</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 
 	public static boolean validateTransportModeObservationMoodCode(TransportModeObservation transportModeObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {

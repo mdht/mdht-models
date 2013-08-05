@@ -35,29 +35,29 @@ import org.openhealthtools.mdht.uml.cda.emspcr.operations.MedicationAdministered
  */
 public class MedicationAdministeredImpl extends MedicationActivityImpl implements MedicationAdministered {
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	protected MedicationAdministeredImpl() {
 		super();
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
 		return EmspcrPackage.Literals.MEDICATION_ADMINISTERED;
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateMedicationAdministeredMedicationNotAdministeredEntryRelationship(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return MedicationAdministeredOperations.validateMedicationAdministeredMedicationNotAdministeredEntryRelationship(
@@ -65,10 +65,10 @@ public class MedicationAdministeredImpl extends MedicationActivityImpl implement
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateMedicationAdministeredMedicationConsumable(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return MedicationAdministeredOperations.validateMedicationAdministeredMedicationConsumable(
@@ -76,10 +76,10 @@ public class MedicationAdministeredImpl extends MedicationActivityImpl implement
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	* <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateMedicationAdministeredResponseRelationship(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return MedicationAdministeredOperations.validateMedicationAdministeredResponseRelationship(
@@ -98,10 +98,10 @@ public class MedicationAdministeredImpl extends MedicationActivityImpl implement
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateMedicationAdministeredMedicationPriorAdministrationRelationship(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return MedicationAdministeredOperations.validateMedicationAdministeredMedicationPriorAdministrationRelationship(
@@ -109,10 +109,10 @@ public class MedicationAdministeredImpl extends MedicationActivityImpl implement
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateMedicationAdministeredMedicationPerformerParticipation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return MedicationAdministeredOperations.validateMedicationAdministeredMedicationPerformerParticipation(
@@ -120,10 +120,10 @@ public class MedicationAdministeredImpl extends MedicationActivityImpl implement
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateMedicationAdministeredMedicationAuthorizationRelationship(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return MedicationAdministeredOperations.validateMedicationAdministeredMedicationAuthorizationRelationship(
@@ -131,10 +131,10 @@ public class MedicationAdministeredImpl extends MedicationActivityImpl implement
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateMedicationAdministeredMedicationAdministrationDeviceParticipant(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return MedicationAdministeredOperations.validateMedicationAdministeredMedicationAdministrationDeviceParticipant(
@@ -142,64 +142,64 @@ public class MedicationAdministeredImpl extends MedicationActivityImpl implement
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateMedicationAdministeredClassCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return MedicationAdministeredOperations.validateMedicationAdministeredClassCode(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateMedicationAdministeredDoseQuantity(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return MedicationAdministeredOperations.validateMedicationAdministeredDoseQuantity(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateMedicationAdministeredEffectiveTime(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return MedicationAdministeredOperations.validateMedicationAdministeredEffectiveTime(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateMedicationAdministeredNegationInd(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return MedicationAdministeredOperations.validateMedicationAdministeredNegationInd(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateMedicationAdministeredRouteCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return MedicationAdministeredOperations.validateMedicationAdministeredRouteCodeP(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateMedicationAdministeredRouteCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return MedicationAdministeredOperations.validateMedicationAdministeredRouteCode(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateMedicationAdministeredApproachSiteCodeP(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return MedicationAdministeredOperations.validateMedicationAdministeredApproachSiteCodeP(
@@ -207,10 +207,10 @@ public class MedicationAdministeredImpl extends MedicationActivityImpl implement
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateMedicationAdministeredApproachSiteCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return MedicationAdministeredOperations.validateMedicationAdministeredApproachSiteCode(
@@ -218,20 +218,20 @@ public class MedicationAdministeredImpl extends MedicationActivityImpl implement
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	@Override
 	public boolean validateMedicationActivityTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return MedicationAdministeredOperations.validateMedicationActivityTemplateId(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	@Override
 	public MedicationAdministered init() {
 		return Initializer.Util.init(this);

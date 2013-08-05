@@ -36,29 +36,29 @@ import org.openhealthtools.mdht.uml.cda.impl.OrganizerImpl;
  */
 public class PhysicalAssessmentOrganizerImpl extends OrganizerImpl implements PhysicalAssessmentOrganizer {
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	protected PhysicalAssessmentOrganizerImpl() {
 		super();
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
 		return EmspcrPackage.Literals.PHYSICAL_ASSESSMENT_ORGANIZER;
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validatePhysicalAssessmentOrganizerComponent1(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return PhysicalAssessmentOrganizerOperations.validatePhysicalAssessmentOrganizerComponent1(
@@ -66,10 +66,10 @@ public class PhysicalAssessmentOrganizerImpl extends OrganizerImpl implements Ph
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validatePhysicalAssessmentOrganizerComponent2(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return PhysicalAssessmentOrganizerOperations.validatePhysicalAssessmentOrganizerComponent2(
@@ -77,10 +77,10 @@ public class PhysicalAssessmentOrganizerImpl extends OrganizerImpl implements Ph
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validatePhysicalAssessmentOrganizerComponent3(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return PhysicalAssessmentOrganizerOperations.validatePhysicalAssessmentOrganizerComponent3(
@@ -88,10 +88,10 @@ public class PhysicalAssessmentOrganizerImpl extends OrganizerImpl implements Ph
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validatePhysicalAssessmentOrganizerComponent4(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return PhysicalAssessmentOrganizerOperations.validatePhysicalAssessmentOrganizerComponent4(
@@ -99,10 +99,10 @@ public class PhysicalAssessmentOrganizerImpl extends OrganizerImpl implements Ph
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validatePhysicalAssessmentOrganizerComponent5(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return PhysicalAssessmentOrganizerOperations.validatePhysicalAssessmentOrganizerComponent5(
@@ -110,10 +110,10 @@ public class PhysicalAssessmentOrganizerImpl extends OrganizerImpl implements Ph
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validatePhysicalAssessmentOrganizerComponent6(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return PhysicalAssessmentOrganizerOperations.validatePhysicalAssessmentOrganizerComponent6(
@@ -121,10 +121,10 @@ public class PhysicalAssessmentOrganizerImpl extends OrganizerImpl implements Ph
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validatePhysicalAssessmentOrganizerComponent7(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return PhysicalAssessmentOrganizerOperations.validatePhysicalAssessmentOrganizerComponent7(
@@ -132,10 +132,10 @@ public class PhysicalAssessmentOrganizerImpl extends OrganizerImpl implements Ph
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validatePhysicalAssessmentOrganizerComponent8(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return PhysicalAssessmentOrganizerOperations.validatePhysicalAssessmentOrganizerComponent8(
@@ -143,10 +143,10 @@ public class PhysicalAssessmentOrganizerImpl extends OrganizerImpl implements Ph
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validatePhysicalAssessmentOrganizerComponent9(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return PhysicalAssessmentOrganizerOperations.validatePhysicalAssessmentOrganizerComponent9(
@@ -154,10 +154,10 @@ public class PhysicalAssessmentOrganizerImpl extends OrganizerImpl implements Ph
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validatePhysicalAssessmentOrganizerComponent10(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return PhysicalAssessmentOrganizerOperations.validatePhysicalAssessmentOrganizerComponent10(
@@ -165,10 +165,10 @@ public class PhysicalAssessmentOrganizerImpl extends OrganizerImpl implements Ph
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validatePhysicalAssessmentOrganizerComponent11(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return PhysicalAssessmentOrganizerOperations.validatePhysicalAssessmentOrganizerComponent11(
@@ -176,10 +176,10 @@ public class PhysicalAssessmentOrganizerImpl extends OrganizerImpl implements Ph
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validatePhysicalAssessmentOrganizerComponent12(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return PhysicalAssessmentOrganizerOperations.validatePhysicalAssessmentOrganizerComponent12(
@@ -187,10 +187,10 @@ public class PhysicalAssessmentOrganizerImpl extends OrganizerImpl implements Ph
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validatePhysicalAssessmentOrganizerComponent13(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return PhysicalAssessmentOrganizerOperations.validatePhysicalAssessmentOrganizerComponent13(
@@ -198,10 +198,10 @@ public class PhysicalAssessmentOrganizerImpl extends OrganizerImpl implements Ph
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validatePhysicalAssessmentOrganizerComponent14(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return PhysicalAssessmentOrganizerOperations.validatePhysicalAssessmentOrganizerComponent14(
@@ -209,10 +209,10 @@ public class PhysicalAssessmentOrganizerImpl extends OrganizerImpl implements Ph
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validatePhysicalAssessmentOrganizerTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return PhysicalAssessmentOrganizerOperations.validatePhysicalAssessmentOrganizerTemplateId(
@@ -220,19 +220,19 @@ public class PhysicalAssessmentOrganizerImpl extends OrganizerImpl implements Ph
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public SkinAssessment getComponent3() {
 		return PhysicalAssessmentOrganizerOperations.getComponent3(this);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public PhysicalAssessmentOrganizer init() {
 		return Initializer.Util.init(this);
 	}

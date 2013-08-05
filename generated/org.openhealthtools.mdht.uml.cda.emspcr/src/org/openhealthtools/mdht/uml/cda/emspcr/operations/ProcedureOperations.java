@@ -57,22 +57,22 @@ import org.openhealthtools.mdht.uml.cda.emspcr.util.EmspcrValidator;
  */
 public class ProcedureOperations extends ProcedureActivityProcedureOperations {
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	protected ProcedureOperations() {
 		super();
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateEMSPCRProcedureAbandonedProcedureRelationship(Procedure, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate EMSPCR Procedure Abandoned Procedure Relationship</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateEMSPCRProcedureAbandonedProcedureRelationship(Procedure, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate EMSPCR Procedure Abandoned Procedure Relationship</em>}' operation.
+	 * <!-- begin-user-doc -->
 	* <!-- end-user-doc -->
-	* @see #validateEMSPCRProcedureAbandonedProcedureRelationship(Procedure, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateEMSPCRProcedureAbandonedProcedureRelationship(Procedure, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_EMSPCR_PROCEDURE_ABANDONED_PROCEDURE_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.oclIsUndefined() and entryRelationship.oclIsKindOf(cda::EntryRelationship))";
 
 	/**
@@ -551,26 +551,26 @@ public class ProcedureOperations extends ProcedureActivityProcedureOperations {
 	protected static final String VALIDATE_EMSPCR_PROCEDURE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined())";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateEMSPCRProcedureCode(Procedure, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate EMSPCR Procedure Code</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateEMSPCRProcedureCode(Procedure, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate EMSPCR Procedure Code</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateEMSPCRProcedureCode(Procedure, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateEMSPCRProcedureCode(Procedure, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 
 	protected static Constraint VALIDATE_EMSPCR_PROCEDURE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	* <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param procedure The receiving '<em><b>Procedure</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param procedure The receiving '<em><b>Procedure</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 
 	public static boolean validateEMSPCRProcedureCode(Procedure procedure, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
@@ -608,26 +608,26 @@ public class ProcedureOperations extends ProcedureActivityProcedureOperations {
 	protected static final String VALIDATE_EMSPCR_PROCEDURE_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.effectiveTime.oclIsUndefined() or self.effectiveTime.isNullFlavorUndefined()) implies (not self.effectiveTime.oclIsUndefined())";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateEMSPCRProcedureEffectiveTime(Procedure, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate EMSPCR Procedure Effective Time</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateEMSPCRProcedureEffectiveTime(Procedure, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate EMSPCR Procedure Effective Time</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateEMSPCRProcedureEffectiveTime(Procedure, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateEMSPCRProcedureEffectiveTime(Procedure, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 
 	protected static Constraint VALIDATE_EMSPCR_PROCEDURE_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	* <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param procedure The receiving '<em><b>Procedure</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param procedure The receiving '<em><b>Procedure</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 
 	public static boolean validateEMSPCRProcedureEffectiveTime(Procedure procedure, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
@@ -666,26 +666,26 @@ public class ProcedureOperations extends ProcedureActivityProcedureOperations {
 	protected static final String VALIDATE_EMSPCR_PROCEDURE_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined())";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateEMSPCRProcedureStatusCodeP(Procedure, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate EMSPCR Procedure Status Code P</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateEMSPCRProcedureStatusCodeP(Procedure, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate EMSPCR Procedure Status Code P</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateEMSPCRProcedureStatusCodeP(Procedure, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateEMSPCRProcedureStatusCodeP(Procedure, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 
 	protected static Constraint VALIDATE_EMSPCR_PROCEDURE_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	* <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param procedure The receiving '<em><b>Procedure</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param procedure The receiving '<em><b>Procedure</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 
 	public static boolean validateEMSPCRProcedureStatusCodeP(Procedure procedure, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
@@ -737,26 +737,26 @@ public class ProcedureOperations extends ProcedureActivityProcedureOperations {
 			+ "let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in " + "value.code = 'Aborted')";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateEMSPCRProcedureStatusCode(Procedure, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate EMSPCR Procedure Status Code</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateEMSPCRProcedureStatusCode(Procedure, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate EMSPCR Procedure Status Code</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateEMSPCRProcedureStatusCode(Procedure, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateEMSPCRProcedureStatusCode(Procedure, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 
 	protected static Constraint VALIDATE_EMSPCR_PROCEDURE_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	* <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param procedure The receiving '<em><b>Procedure</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param procedure The receiving '<em><b>Procedure</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 
 	public static boolean validateEMSPCRProcedureStatusCode(Procedure procedure, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
@@ -803,26 +803,26 @@ public class ProcedureOperations extends ProcedureActivityProcedureOperations {
 	protected static final String VALIDATE_EMSPCR_PROCEDURE_APPROACH_SITE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.approachSiteCode->isEmpty() or self.approachSiteCode->exists(element | element.isNullFlavorUndefined())) implies (not self.approachSiteCode->isEmpty())";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateEMSPCRProcedureApproachSiteCodeP(Procedure, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate EMSPCR Procedure Approach Site Code P</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateEMSPCRProcedureApproachSiteCodeP(Procedure, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate EMSPCR Procedure Approach Site Code P</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateEMSPCRProcedureApproachSiteCodeP(Procedure, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateEMSPCRProcedureApproachSiteCodeP(Procedure, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 
 	protected static Constraint VALIDATE_EMSPCR_PROCEDURE_APPROACH_SITE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	* <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param procedure The receiving '<em><b>Procedure</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param procedure The receiving '<em><b>Procedure</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 
 	public static boolean validateEMSPCRProcedureApproachSiteCodeP(Procedure procedure, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
@@ -875,26 +875,26 @@ public class ProcedureOperations extends ProcedureActivityProcedureOperations {
 			+ "value.codeSystem = '2.16.840.1.113883.6.1' and (value.code = 'LA18112-5' or value.code = 'LA18113-3' or value.code = 'LA18757-7' or value.code = 'LA18758-5' or value.code = 'LA18790-8' or value.code = 'LA18791-6' or value.code = 'LA18792-4' or value.code = 'LA18793-2' or value.code = 'LA18794-0' or value.code = 'LA18795-7' or value.code = 'LA18796-5' or value.code = 'LA18797-3' or value.code = 'LA18798-1' or value.code = 'LA18799-9' or value.code = 'LA18800-5' or value.code = 'LA18801-3' or value.code = 'LA18802-1' or value.code = 'LA18803-9' or value.code = 'LA18804-7' or value.code = 'LA18805-4' or value.code = 'LA18806-2' or value.code = 'LA18807-0' or value.code = 'LA18808-8' or value.code = 'LA18809-6' or value.code = 'LA18810-4' or value.code = 'LA18811-2' or value.code = 'LA18812-0' or value.code = 'LA18813-8' or value.code = 'LA18814-6' or value.code = 'LA18815-3' or value.code = 'LA18816-1' or value.code = 'LA18817-9' or value.code = 'LA18818-7')))";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateEMSPCRProcedureApproachSiteCode(Procedure, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate EMSPCR Procedure Approach Site Code</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateEMSPCRProcedureApproachSiteCode(Procedure, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate EMSPCR Procedure Approach Site Code</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateEMSPCRProcedureApproachSiteCode(Procedure, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateEMSPCRProcedureApproachSiteCode(Procedure, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 
 	protected static Constraint VALIDATE_EMSPCR_PROCEDURE_APPROACH_SITE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	* <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param procedure The receiving '<em><b>Procedure</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param procedure The receiving '<em><b>Procedure</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 
 	public static boolean validateEMSPCRProcedureApproachSiteCode(Procedure procedure, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
@@ -941,26 +941,26 @@ public class ProcedureOperations extends ProcedureActivityProcedureOperations {
 	protected static final String VALIDATE_EMSPCR_PROCEDURE_NEGATION_IND__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "not self.negationInd.oclIsUndefined()";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateEMSPCRProcedureNegationInd(Procedure, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate EMSPCR Procedure Negation Ind</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateEMSPCRProcedureNegationInd(Procedure, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate EMSPCR Procedure Negation Ind</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateEMSPCRProcedureNegationInd(Procedure, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateEMSPCRProcedureNegationInd(Procedure, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 
 	protected static Constraint VALIDATE_EMSPCR_PROCEDURE_NEGATION_IND__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	* <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param procedure The receiving '<em><b>Procedure</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param procedure The receiving '<em><b>Procedure</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 
 	public static boolean validateEMSPCRProcedureNegationInd(Procedure procedure, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
@@ -999,26 +999,26 @@ public class ProcedureOperations extends ProcedureActivityProcedureOperations {
 	protected static final String VALIDATE_PROCEDURE_ACTIVITY_PROCEDURE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.1133883.17.3.10.1.98')";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateProcedureActivityProcedureTemplateId(Procedure, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Activity Procedure Template Id</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateProcedureActivityProcedureTemplateId(Procedure, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Activity Procedure Template Id</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateProcedureActivityProcedureTemplateId(Procedure, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateProcedureActivityProcedureTemplateId(Procedure, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 
 	protected static Constraint VALIDATE_PROCEDURE_ACTIVITY_PROCEDURE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param procedure The receiving '<em><b>Procedure</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param procedure The receiving '<em><b>Procedure</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 
 	public static boolean validateProcedureActivityProcedureTemplateId(Procedure procedure,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {

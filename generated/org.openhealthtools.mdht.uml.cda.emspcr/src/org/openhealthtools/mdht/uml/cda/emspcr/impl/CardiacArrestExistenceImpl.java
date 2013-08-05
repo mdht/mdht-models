@@ -35,29 +35,29 @@ import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
  */
 public class CardiacArrestExistenceImpl extends ObservationImpl implements CardiacArrestExistence {
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	protected CardiacArrestExistenceImpl() {
 		super();
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
 		return EmspcrPackage.Literals.CARDIAC_ARREST_EXISTENCE;
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateCardiacArrestExistenceCardiacArrestCauseRelationship(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return CardiacArrestExistenceOperations.validateCardiacArrestExistenceCardiacArrestCauseRelationship(
@@ -65,10 +65,10 @@ public class CardiacArrestExistenceImpl extends ObservationImpl implements Cardi
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateCardiacArrestExistenceCardiacArrestInformantParticipation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return CardiacArrestExistenceOperations.validateCardiacArrestExistenceCardiacArrestInformantParticipation(
@@ -76,10 +76,10 @@ public class CardiacArrestExistenceImpl extends ObservationImpl implements Cardi
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateCardiacArrestExistencePriorCPRRelationship(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return CardiacArrestExistenceOperations.validateCardiacArrestExistencePriorCPRRelationship(
@@ -87,10 +87,10 @@ public class CardiacArrestExistenceImpl extends ObservationImpl implements Cardi
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateCardiacArrestExistencePriorAEDRelationship(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return CardiacArrestExistenceOperations.validateCardiacArrestExistencePriorAEDRelationship(
@@ -98,10 +98,10 @@ public class CardiacArrestExistenceImpl extends ObservationImpl implements Cardi
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateCardiacArrestExistenceSpontaneousCirculationRelationship(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return CardiacArrestExistenceOperations.validateCardiacArrestExistenceSpontaneousCirculationRelationship(
@@ -109,10 +109,10 @@ public class CardiacArrestExistenceImpl extends ObservationImpl implements Cardi
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateCardiacArrestExistenceDestinationRhythmRelationship(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return CardiacArrestExistenceOperations.validateCardiacArrestExistenceDestinationRhythmRelationship(
@@ -120,10 +120,10 @@ public class CardiacArrestExistenceImpl extends ObservationImpl implements Cardi
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateCardiacArrestExistenceArrestRhythmRelationship(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return CardiacArrestExistenceOperations.validateCardiacArrestExistenceArrestRhythmRelationship(
@@ -131,64 +131,64 @@ public class CardiacArrestExistenceImpl extends ObservationImpl implements Cardi
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateCardiacArrestExistenceTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return CardiacArrestExistenceOperations.validateCardiacArrestExistenceTemplateId(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateCardiacArrestExistenceCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return CardiacArrestExistenceOperations.validateCardiacArrestExistenceCode(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateCardiacArrestExistenceEffectiveTime(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return CardiacArrestExistenceOperations.validateCardiacArrestExistenceEffectiveTime(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateCardiacArrestExistenceValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return CardiacArrestExistenceOperations.validateCardiacArrestExistenceValue(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateCardiacArrestExistenceNegationInd(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return CardiacArrestExistenceOperations.validateCardiacArrestExistenceNegationInd(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateCardiacArrestExistenceMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return CardiacArrestExistenceOperations.validateCardiacArrestExistenceMoodCode(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public CardiacArrestExistence init() {
 		return Initializer.Util.init(this);
 	}

@@ -36,29 +36,29 @@ import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
 public class ReasonForChoosingDestinationObservationImpl extends ObservationImpl implements
 		ReasonForChoosingDestinationObservation {
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	protected ReasonForChoosingDestinationObservationImpl() {
 		super();
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
 		return EmspcrPackage.Literals.REASON_FOR_CHOOSING_DESTINATION_OBSERVATION;
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateReasonForChoosingDestinationObservationTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ReasonForChoosingDestinationObservationOperations.validateReasonForChoosingDestinationObservationTemplateId(
@@ -66,10 +66,10 @@ public class ReasonForChoosingDestinationObservationImpl extends ObservationImpl
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateReasonForChoosingDestinationObservationCodeP(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ReasonForChoosingDestinationObservationOperations.validateReasonForChoosingDestinationObservationCodeP(
@@ -77,10 +77,10 @@ public class ReasonForChoosingDestinationObservationImpl extends ObservationImpl
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateReasonForChoosingDestinationObservationCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ReasonForChoosingDestinationObservationOperations.validateReasonForChoosingDestinationObservationCode(
@@ -88,10 +88,10 @@ public class ReasonForChoosingDestinationObservationImpl extends ObservationImpl
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateReasonForChoosingDestinationObservationValue(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ReasonForChoosingDestinationObservationOperations.validateReasonForChoosingDestinationObservationValue(
@@ -99,10 +99,10 @@ public class ReasonForChoosingDestinationObservationImpl extends ObservationImpl
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateReasonForChoosingDestinationObservationValueP(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ReasonForChoosingDestinationObservationOperations.validateReasonForChoosingDestinationObservationValueP(
@@ -110,10 +110,10 @@ public class ReasonForChoosingDestinationObservationImpl extends ObservationImpl
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateReasonForChoosingDestinationObservationMoodCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ReasonForChoosingDestinationObservationOperations.validateReasonForChoosingDestinationObservationMoodCode(
@@ -121,10 +121,10 @@ public class ReasonForChoosingDestinationObservationImpl extends ObservationImpl
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public ReasonForChoosingDestinationObservation init() {
 		return Initializer.Util.init(this);
 	}
