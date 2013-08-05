@@ -38,75 +38,75 @@ import org.openhealthtools.mdht.uml.cda.impl.SectionImpl;
  */
 public class PastMedicalHistorySectionImpl extends SectionImpl implements PastMedicalHistorySection {
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	protected PastMedicalHistorySectionImpl() {
 		super();
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
 		return EmspcrPackage.Literals.PAST_MEDICAL_HISTORY_SECTION;
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validatePastMedicalHistorySectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PastMedicalHistorySectionOperations.validatePastMedicalHistorySectionTemplateId(
 			this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validatePastMedicalHistorySectionCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PastMedicalHistorySectionOperations.validatePastMedicalHistorySectionCode(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validatePastMedicalHistorySectionCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PastMedicalHistorySectionOperations.validatePastMedicalHistorySectionCodeP(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validatePastMedicalHistorySectionTitle(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PastMedicalHistorySectionOperations.validatePastMedicalHistorySectionTitle(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validatePastMedicalHistorySectionText(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PastMedicalHistorySectionOperations.validatePastMedicalHistorySectionText(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validatePastMedicalHistorySectionExistenceOfHistoryOfCondition(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return PastMedicalHistorySectionOperations.validatePastMedicalHistorySectionExistenceOfHistoryOfCondition(
@@ -114,10 +114,10 @@ public class PastMedicalHistorySectionImpl extends SectionImpl implements PastMe
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validatePastMedicalHistorySectionHistoryOfCondition(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return PastMedicalHistorySectionOperations.validatePastMedicalHistorySectionHistoryOfCondition(
@@ -125,19 +125,19 @@ public class PastMedicalHistorySectionImpl extends SectionImpl implements PastMe
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public ExistenceOfHistoryOfCondition getExistenceOfHistoryOfCondition() {
 		return PastMedicalHistorySectionOperations.getExistenceOfHistoryOfCondition(this);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	* <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public EList<HistoryOfCondition> getHistoryOfConditions() {
 		return PastMedicalHistorySectionOperations.getHistoryOfConditions(this);
 	}

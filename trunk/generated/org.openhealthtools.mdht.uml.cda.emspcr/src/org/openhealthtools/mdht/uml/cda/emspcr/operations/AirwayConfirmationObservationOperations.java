@@ -49,45 +49,45 @@ import org.openhealthtools.mdht.uml.cda.operations.ClinicalStatementOperations;
  */
 public class AirwayConfirmationObservationOperations extends ClinicalStatementOperations {
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	protected AirwayConfirmationObservationOperations() {
 		super();
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateAirwayConfirmationObservationTemplateId(AirwayConfirmationObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Airway Confirmation Observation Template Id</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateAirwayConfirmationObservationTemplateId(AirwayConfirmationObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Airway Confirmation Observation Template Id</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateAirwayConfirmationObservationTemplateId(AirwayConfirmationObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateAirwayConfirmationObservationTemplateId(AirwayConfirmationObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_AIRWAY_CONFIRMATION_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.1133883.17.3.10.1.175')";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateAirwayConfirmationObservationTemplateId(AirwayConfirmationObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Airway Confirmation Observation Template Id</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateAirwayConfirmationObservationTemplateId(AirwayConfirmationObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Airway Confirmation Observation Template Id</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateAirwayConfirmationObservationTemplateId(AirwayConfirmationObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateAirwayConfirmationObservationTemplateId(AirwayConfirmationObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 
 	protected static Constraint VALIDATE_AIRWAY_CONFIRMATION_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param airwayConfirmationObservation The receiving '<em><b>Airway Confirmation Observation</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param airwayConfirmationObservation The receiving '<em><b>Airway Confirmation Observation</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 
 	public static boolean validateAirwayConfirmationObservationTemplateId(
 			AirwayConfirmationObservation airwayConfirmationObservation, DiagnosticChain diagnostics,
@@ -118,36 +118,36 @@ public class AirwayConfirmationObservationOperations extends ClinicalStatementOp
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateAirwayConfirmationObservationCodeP(AirwayConfirmationObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Airway Confirmation Observation Code P</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateAirwayConfirmationObservationCodeP(AirwayConfirmationObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Airway Confirmation Observation Code P</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateAirwayConfirmationObservationCodeP(AirwayConfirmationObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateAirwayConfirmationObservationCodeP(AirwayConfirmationObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_AIRWAY_CONFIRMATION_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined())";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateAirwayConfirmationObservationCodeP(AirwayConfirmationObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Airway Confirmation Observation Code P</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateAirwayConfirmationObservationCodeP(AirwayConfirmationObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Airway Confirmation Observation Code P</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateAirwayConfirmationObservationCodeP(AirwayConfirmationObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateAirwayConfirmationObservationCodeP(AirwayConfirmationObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 
 	protected static Constraint VALIDATE_AIRWAY_CONFIRMATION_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param airwayConfirmationObservation The receiving '<em><b>Airway Confirmation Observation</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param airwayConfirmationObservation The receiving '<em><b>Airway Confirmation Observation</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 
 	public static boolean validateAirwayConfirmationObservationCodeP(
 			AirwayConfirmationObservation airwayConfirmationObservation, DiagnosticChain diagnostics,
@@ -190,38 +190,38 @@ public class AirwayConfirmationObservationOperations extends ClinicalStatementOp
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateAirwayConfirmationObservationCode(AirwayConfirmationObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Airway Confirmation Observation Code</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateAirwayConfirmationObservationCode(AirwayConfirmationObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Airway Confirmation Observation Code</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateAirwayConfirmationObservationCode(AirwayConfirmationObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateAirwayConfirmationObservationCode(AirwayConfirmationObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_AIRWAY_CONFIRMATION_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "
 			+ "let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "
 			+ "value.code = '71576-3' and value.codeSystem = '2.16.840.1.113883.6.1')";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateAirwayConfirmationObservationCode(AirwayConfirmationObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Airway Confirmation Observation Code</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateAirwayConfirmationObservationCode(AirwayConfirmationObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Airway Confirmation Observation Code</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateAirwayConfirmationObservationCode(AirwayConfirmationObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateAirwayConfirmationObservationCode(AirwayConfirmationObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 
 	protected static Constraint VALIDATE_AIRWAY_CONFIRMATION_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param airwayConfirmationObservation The receiving '<em><b>Airway Confirmation Observation</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param airwayConfirmationObservation The receiving '<em><b>Airway Confirmation Observation</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 
 	public static boolean validateAirwayConfirmationObservationCode(
 			AirwayConfirmationObservation airwayConfirmationObservation, DiagnosticChain diagnostics,
@@ -260,38 +260,38 @@ public class AirwayConfirmationObservationOperations extends ClinicalStatementOp
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateAirwayConfirmationObservationMethodCode(AirwayConfirmationObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Airway Confirmation Observation Method Code</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateAirwayConfirmationObservationMethodCode(AirwayConfirmationObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Airway Confirmation Observation Method Code</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateAirwayConfirmationObservationMethodCode(AirwayConfirmationObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateAirwayConfirmationObservationMethodCode(AirwayConfirmationObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_AIRWAY_CONFIRMATION_OBSERVATION_METHOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.methodCode->isEmpty() or self.methodCode->exists(element | element.isNullFlavorUndefined())) implies (self.methodCode->size() = 1 and self.methodCode->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CE) and "
 			+ "let value : datatypes::CE = element.oclAsType(datatypes::CE) in "
 			+ "value.codeSystem = '2.16.840.1.113883.6.1' and (value.code = 'LA18672-8' or value.code = 'LA18673-6' or value.code = 'LA18674-4' or value.code = 'LA18675-1' or value.code = 'LA18676-9' or value.code = 'LA18677-7' or value.code = 'LA18678-5' or value.code = 'LA18679-3' or value.code = 'LA18680-1' or value.code = 'LA18681-9')))";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateAirwayConfirmationObservationMethodCode(AirwayConfirmationObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Airway Confirmation Observation Method Code</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateAirwayConfirmationObservationMethodCode(AirwayConfirmationObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Airway Confirmation Observation Method Code</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateAirwayConfirmationObservationMethodCode(AirwayConfirmationObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateAirwayConfirmationObservationMethodCode(AirwayConfirmationObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 
 	protected static Constraint VALIDATE_AIRWAY_CONFIRMATION_OBSERVATION_METHOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param airwayConfirmationObservation The receiving '<em><b>Airway Confirmation Observation</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param airwayConfirmationObservation The receiving '<em><b>Airway Confirmation Observation</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 
 	public static boolean validateAirwayConfirmationObservationMethodCode(
 			AirwayConfirmationObservation airwayConfirmationObservation, DiagnosticChain diagnostics,
@@ -322,36 +322,36 @@ public class AirwayConfirmationObservationOperations extends ClinicalStatementOp
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateAirwayConfirmationObservationMethodCodeP(AirwayConfirmationObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Airway Confirmation Observation Method Code P</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateAirwayConfirmationObservationMethodCodeP(AirwayConfirmationObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Airway Confirmation Observation Method Code P</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateAirwayConfirmationObservationMethodCodeP(AirwayConfirmationObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateAirwayConfirmationObservationMethodCodeP(AirwayConfirmationObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_AIRWAY_CONFIRMATION_OBSERVATION_METHOD_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.methodCode->isEmpty() or self.methodCode->exists(element | element.isNullFlavorUndefined())) implies (self.methodCode->size() = 1)";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateAirwayConfirmationObservationMethodCodeP(AirwayConfirmationObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Airway Confirmation Observation Method Code P</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateAirwayConfirmationObservationMethodCodeP(AirwayConfirmationObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Airway Confirmation Observation Method Code P</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateAirwayConfirmationObservationMethodCodeP(AirwayConfirmationObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateAirwayConfirmationObservationMethodCodeP(AirwayConfirmationObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 
 	protected static Constraint VALIDATE_AIRWAY_CONFIRMATION_OBSERVATION_METHOD_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param airwayConfirmationObservation The receiving '<em><b>Airway Confirmation Observation</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param airwayConfirmationObservation The receiving '<em><b>Airway Confirmation Observation</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 
 	public static boolean validateAirwayConfirmationObservationMethodCodeP(
 			AirwayConfirmationObservation airwayConfirmationObservation, DiagnosticChain diagnostics,
@@ -383,36 +383,36 @@ public class AirwayConfirmationObservationOperations extends ClinicalStatementOp
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateAirwayConfirmationObservationValue(AirwayConfirmationObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Airway Confirmation Observation Value</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateAirwayConfirmationObservationValue(AirwayConfirmationObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Airway Confirmation Observation Value</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateAirwayConfirmationObservationValue(AirwayConfirmationObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateAirwayConfirmationObservationValue(AirwayConfirmationObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_AIRWAY_CONFIRMATION_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | element.oclIsTypeOf(datatypes::BL)))";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateAirwayConfirmationObservationValue(AirwayConfirmationObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Airway Confirmation Observation Value</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateAirwayConfirmationObservationValue(AirwayConfirmationObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Airway Confirmation Observation Value</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateAirwayConfirmationObservationValue(AirwayConfirmationObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateAirwayConfirmationObservationValue(AirwayConfirmationObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 
 	protected static Constraint VALIDATE_AIRWAY_CONFIRMATION_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param airwayConfirmationObservation The receiving '<em><b>Airway Confirmation Observation</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param airwayConfirmationObservation The receiving '<em><b>Airway Confirmation Observation</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 
 	public static boolean validateAirwayConfirmationObservationValue(
 			AirwayConfirmationObservation airwayConfirmationObservation, DiagnosticChain diagnostics,
@@ -443,36 +443,36 @@ public class AirwayConfirmationObservationOperations extends ClinicalStatementOp
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateAirwayConfirmationObservationEffectiveTime(AirwayConfirmationObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Airway Confirmation Observation Effective Time</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateAirwayConfirmationObservationEffectiveTime(AirwayConfirmationObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Airway Confirmation Observation Effective Time</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateAirwayConfirmationObservationEffectiveTime(AirwayConfirmationObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateAirwayConfirmationObservationEffectiveTime(AirwayConfirmationObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_AIRWAY_CONFIRMATION_OBSERVATION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.effectiveTime.oclIsUndefined() or self.effectiveTime.isNullFlavorUndefined()) implies (not self.effectiveTime.oclIsUndefined())";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateAirwayConfirmationObservationEffectiveTime(AirwayConfirmationObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Airway Confirmation Observation Effective Time</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateAirwayConfirmationObservationEffectiveTime(AirwayConfirmationObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Airway Confirmation Observation Effective Time</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateAirwayConfirmationObservationEffectiveTime(AirwayConfirmationObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateAirwayConfirmationObservationEffectiveTime(AirwayConfirmationObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 
 	protected static Constraint VALIDATE_AIRWAY_CONFIRMATION_OBSERVATION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param airwayConfirmationObservation The receiving '<em><b>Airway Confirmation Observation</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param airwayConfirmationObservation The receiving '<em><b>Airway Confirmation Observation</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 
 	public static boolean validateAirwayConfirmationObservationEffectiveTime(
 			AirwayConfirmationObservation airwayConfirmationObservation, DiagnosticChain diagnostics,
@@ -504,36 +504,36 @@ public class AirwayConfirmationObservationOperations extends ClinicalStatementOp
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateAirwayConfirmationObservationMoodCode(AirwayConfirmationObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Airway Confirmation Observation Mood Code</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateAirwayConfirmationObservationMoodCode(AirwayConfirmationObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Airway Confirmation Observation Mood Code</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateAirwayConfirmationObservationMoodCode(AirwayConfirmationObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateAirwayConfirmationObservationMoodCode(AirwayConfirmationObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_AIRWAY_CONFIRMATION_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "isDefined('moodCode')";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateAirwayConfirmationObservationMoodCode(AirwayConfirmationObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Airway Confirmation Observation Mood Code</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateAirwayConfirmationObservationMoodCode(AirwayConfirmationObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Airway Confirmation Observation Mood Code</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateAirwayConfirmationObservationMoodCode(AirwayConfirmationObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateAirwayConfirmationObservationMoodCode(AirwayConfirmationObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 
 	protected static Constraint VALIDATE_AIRWAY_CONFIRMATION_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param airwayConfirmationObservation The receiving '<em><b>Airway Confirmation Observation</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param airwayConfirmationObservation The receiving '<em><b>Airway Confirmation Observation</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 
 	public static boolean validateAirwayConfirmationObservationMoodCode(
 			AirwayConfirmationObservation airwayConfirmationObservation, DiagnosticChain diagnostics,

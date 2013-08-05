@@ -35,83 +35,83 @@ import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
  */
 public class ResponseModeToSceneImpl extends ObservationImpl implements ResponseModeToScene {
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	protected ResponseModeToSceneImpl() {
 		super();
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
 		return EmspcrPackage.Literals.RESPONSE_MODE_TO_SCENE;
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateResponseModeToSceneTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ResponseModeToSceneOperations.validateResponseModeToSceneTemplateId(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateResponseModeToSceneCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ResponseModeToSceneOperations.validateResponseModeToSceneCodeP(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateResponseModeToSceneCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ResponseModeToSceneOperations.validateResponseModeToSceneCode(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateResponseModeToSceneValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ResponseModeToSceneOperations.validateResponseModeToSceneValue(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateResponseModeToSceneValueP(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ResponseModeToSceneOperations.validateResponseModeToSceneValueP(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateResponseModeToSceneMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ResponseModeToSceneOperations.validateResponseModeToSceneMoodCode(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public ResponseModeToScene init() {
 		return Initializer.Util.init(this);
 	}

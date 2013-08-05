@@ -47,45 +47,45 @@ import org.openhealthtools.mdht.uml.cda.operations.ClinicalStatementOperations;
  */
 public class IncidentDispositionObservationOperations extends ClinicalStatementOperations {
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	protected IncidentDispositionObservationOperations() {
 		super();
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateIncidentDispositionObservationTemplateId(IncidentDispositionObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Incident Disposition Observation Template Id</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateIncidentDispositionObservationTemplateId(IncidentDispositionObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Incident Disposition Observation Template Id</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateIncidentDispositionObservationTemplateId(IncidentDispositionObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateIncidentDispositionObservationTemplateId(IncidentDispositionObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_INCIDENT_DISPOSITION_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.1133883.17.3.10.1.32')";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateIncidentDispositionObservationTemplateId(IncidentDispositionObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Incident Disposition Observation Template Id</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateIncidentDispositionObservationTemplateId(IncidentDispositionObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Incident Disposition Observation Template Id</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateIncidentDispositionObservationTemplateId(IncidentDispositionObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateIncidentDispositionObservationTemplateId(IncidentDispositionObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 
 	protected static Constraint VALIDATE_INCIDENT_DISPOSITION_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param incidentDispositionObservation The receiving '<em><b>Incident Disposition Observation</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param incidentDispositionObservation The receiving '<em><b>Incident Disposition Observation</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 
 	public static boolean validateIncidentDispositionObservationTemplateId(
 			IncidentDispositionObservation incidentDispositionObservation, DiagnosticChain diagnostics,
@@ -116,36 +116,36 @@ public class IncidentDispositionObservationOperations extends ClinicalStatementO
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateIncidentDispositionObservationCodeP(IncidentDispositionObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Incident Disposition Observation Code P</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateIncidentDispositionObservationCodeP(IncidentDispositionObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Incident Disposition Observation Code P</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateIncidentDispositionObservationCodeP(IncidentDispositionObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateIncidentDispositionObservationCodeP(IncidentDispositionObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_INCIDENT_DISPOSITION_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined())";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateIncidentDispositionObservationCodeP(IncidentDispositionObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Incident Disposition Observation Code P</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateIncidentDispositionObservationCodeP(IncidentDispositionObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Incident Disposition Observation Code P</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateIncidentDispositionObservationCodeP(IncidentDispositionObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateIncidentDispositionObservationCodeP(IncidentDispositionObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 
 	protected static Constraint VALIDATE_INCIDENT_DISPOSITION_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param incidentDispositionObservation The receiving '<em><b>Incident Disposition Observation</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param incidentDispositionObservation The receiving '<em><b>Incident Disposition Observation</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 
 	public static boolean validateIncidentDispositionObservationCodeP(
 			IncidentDispositionObservation incidentDispositionObservation, DiagnosticChain diagnostics,
@@ -189,38 +189,38 @@ public class IncidentDispositionObservationOperations extends ClinicalStatementO
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateIncidentDispositionObservationCode(IncidentDispositionObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Incident Disposition Observation Code</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateIncidentDispositionObservationCode(IncidentDispositionObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Incident Disposition Observation Code</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateIncidentDispositionObservationCode(IncidentDispositionObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateIncidentDispositionObservationCode(IncidentDispositionObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_INCIDENT_DISPOSITION_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "
 			+ "let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "
 			+ "value.code = '67548-8' and value.codeSystem = '2.16.840.1.113883.6.1')";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateIncidentDispositionObservationCode(IncidentDispositionObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Incident Disposition Observation Code</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateIncidentDispositionObservationCode(IncidentDispositionObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Incident Disposition Observation Code</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateIncidentDispositionObservationCode(IncidentDispositionObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateIncidentDispositionObservationCode(IncidentDispositionObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 
 	protected static Constraint VALIDATE_INCIDENT_DISPOSITION_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param incidentDispositionObservation The receiving '<em><b>Incident Disposition Observation</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param incidentDispositionObservation The receiving '<em><b>Incident Disposition Observation</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 
 	public static boolean validateIncidentDispositionObservationCode(
 			IncidentDispositionObservation incidentDispositionObservation, DiagnosticChain diagnostics,
@@ -260,38 +260,38 @@ public class IncidentDispositionObservationOperations extends ClinicalStatementO
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateIncidentDispositionObservationValue(IncidentDispositionObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Incident Disposition Observation Value</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateIncidentDispositionObservationValue(IncidentDispositionObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Incident Disposition Observation Value</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateIncidentDispositionObservationValue(IncidentDispositionObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateIncidentDispositionObservationValue(IncidentDispositionObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_INCIDENT_DISPOSITION_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and "
 			+ "let value : datatypes::CD = element.oclAsType(datatypes::CD) in "
 			+ "value.codeSystem = '2.16.840.1.113883.6.1' and (value.code = 'LA17154-8' or value.code = 'LA17155-5' or value.code = 'LA17156-3' or value.code = 'LA17157-1' or value.code = 'LA17158-9' or value.code = 'LA17159-7' or value.code = 'LA17160-5' or value.code = 'LA17161-3' or value.code = 'LA17162-1' or value.code = 'LA17163-9' or value.code = 'LA17164-7' or value.code = 'LA17165-4' or value.code = 'LA17166-2' or value.code = 'LA17167-0' or value.code = 'LA18080-4' or value.code = 'LA18212-3' or value.code = 'LA18213-1' or value.code = 'LA18214-9' or value.code = 'LA18215-6' or value.code = 'LA18216-4')))";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateIncidentDispositionObservationValue(IncidentDispositionObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Incident Disposition Observation Value</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateIncidentDispositionObservationValue(IncidentDispositionObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Incident Disposition Observation Value</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateIncidentDispositionObservationValue(IncidentDispositionObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateIncidentDispositionObservationValue(IncidentDispositionObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 
 	protected static Constraint VALIDATE_INCIDENT_DISPOSITION_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param incidentDispositionObservation The receiving '<em><b>Incident Disposition Observation</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param incidentDispositionObservation The receiving '<em><b>Incident Disposition Observation</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 
 	public static boolean validateIncidentDispositionObservationValue(
 			IncidentDispositionObservation incidentDispositionObservation, DiagnosticChain diagnostics,
@@ -322,36 +322,36 @@ public class IncidentDispositionObservationOperations extends ClinicalStatementO
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateIncidentDispositionObservationValueP(IncidentDispositionObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Incident Disposition Observation Value P</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateIncidentDispositionObservationValueP(IncidentDispositionObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Incident Disposition Observation Value P</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateIncidentDispositionObservationValueP(IncidentDispositionObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateIncidentDispositionObservationValueP(IncidentDispositionObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_INCIDENT_DISPOSITION_OBSERVATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | element.oclIsTypeOf(datatypes::CD)))";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateIncidentDispositionObservationValueP(IncidentDispositionObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Incident Disposition Observation Value P</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateIncidentDispositionObservationValueP(IncidentDispositionObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Incident Disposition Observation Value P</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateIncidentDispositionObservationValueP(IncidentDispositionObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateIncidentDispositionObservationValueP(IncidentDispositionObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 
 	protected static Constraint VALIDATE_INCIDENT_DISPOSITION_OBSERVATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param incidentDispositionObservation The receiving '<em><b>Incident Disposition Observation</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param incidentDispositionObservation The receiving '<em><b>Incident Disposition Observation</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 
 	public static boolean validateIncidentDispositionObservationValueP(
 			IncidentDispositionObservation incidentDispositionObservation, DiagnosticChain diagnostics,
@@ -382,36 +382,36 @@ public class IncidentDispositionObservationOperations extends ClinicalStatementO
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateIncidentDispositionObservationMoodCode(IncidentDispositionObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Incident Disposition Observation Mood Code</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateIncidentDispositionObservationMoodCode(IncidentDispositionObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Incident Disposition Observation Mood Code</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateIncidentDispositionObservationMoodCode(IncidentDispositionObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateIncidentDispositionObservationMoodCode(IncidentDispositionObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_INCIDENT_DISPOSITION_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "isDefined('moodCode')";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateIncidentDispositionObservationMoodCode(IncidentDispositionObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Incident Disposition Observation Mood Code</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateIncidentDispositionObservationMoodCode(IncidentDispositionObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Incident Disposition Observation Mood Code</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateIncidentDispositionObservationMoodCode(IncidentDispositionObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateIncidentDispositionObservationMoodCode(IncidentDispositionObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 
 	protected static Constraint VALIDATE_INCIDENT_DISPOSITION_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param incidentDispositionObservation The receiving '<em><b>Incident Disposition Observation</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param incidentDispositionObservation The receiving '<em><b>Incident Disposition Observation</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 
 	public static boolean validateIncidentDispositionObservationMoodCode(
 			IncidentDispositionObservation incidentDispositionObservation, DiagnosticChain diagnostics,

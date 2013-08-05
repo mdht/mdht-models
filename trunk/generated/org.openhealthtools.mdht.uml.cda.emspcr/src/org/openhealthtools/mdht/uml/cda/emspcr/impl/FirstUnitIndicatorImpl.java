@@ -35,74 +35,74 @@ import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
  */
 public class FirstUnitIndicatorImpl extends ObservationImpl implements FirstUnitIndicator {
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	protected FirstUnitIndicatorImpl() {
 		super();
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
 		return EmspcrPackage.Literals.FIRST_UNIT_INDICATOR;
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateFirstUnitIndicatorTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return FirstUnitIndicatorOperations.validateFirstUnitIndicatorTemplateId(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateFirstUnitIndicatorCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return FirstUnitIndicatorOperations.validateFirstUnitIndicatorCodeP(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateFirstUnitIndicatorCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return FirstUnitIndicatorOperations.validateFirstUnitIndicatorCode(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateFirstUnitIndicatorValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return FirstUnitIndicatorOperations.validateFirstUnitIndicatorValue(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateFirstUnitIndicatorMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return FirstUnitIndicatorOperations.validateFirstUnitIndicatorMoodCode(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public FirstUnitIndicator init() {
 		return Initializer.Util.init(this);
 	}

@@ -47,45 +47,45 @@ import org.openhealthtools.mdht.uml.cda.operations.ClinicalStatementOperations;
  */
 public class ProviderSecondaryImpressionsOperations extends ClinicalStatementOperations {
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	protected ProviderSecondaryImpressionsOperations() {
 		super();
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateProviderSecondaryImpressionsTemplateId(ProviderSecondaryImpressions, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Provider Secondary Impressions Template Id</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateProviderSecondaryImpressionsTemplateId(ProviderSecondaryImpressions, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Provider Secondary Impressions Template Id</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateProviderSecondaryImpressionsTemplateId(ProviderSecondaryImpressions, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateProviderSecondaryImpressionsTemplateId(ProviderSecondaryImpressions, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_PROVIDER_SECONDARY_IMPRESSIONS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.1133883.17.3.10.1.68')";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateProviderSecondaryImpressionsTemplateId(ProviderSecondaryImpressions, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Provider Secondary Impressions Template Id</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateProviderSecondaryImpressionsTemplateId(ProviderSecondaryImpressions, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Provider Secondary Impressions Template Id</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateProviderSecondaryImpressionsTemplateId(ProviderSecondaryImpressions, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateProviderSecondaryImpressionsTemplateId(ProviderSecondaryImpressions, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 
 	protected static Constraint VALIDATE_PROVIDER_SECONDARY_IMPRESSIONS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param providerSecondaryImpressions The receiving '<em><b>Provider Secondary Impressions</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param providerSecondaryImpressions The receiving '<em><b>Provider Secondary Impressions</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 
 	public static boolean validateProviderSecondaryImpressionsTemplateId(
 			ProviderSecondaryImpressions providerSecondaryImpressions, DiagnosticChain diagnostics,
@@ -116,36 +116,36 @@ public class ProviderSecondaryImpressionsOperations extends ClinicalStatementOpe
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateProviderSecondaryImpressionsCodeP(ProviderSecondaryImpressions, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Provider Secondary Impressions Code P</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateProviderSecondaryImpressionsCodeP(ProviderSecondaryImpressions, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Provider Secondary Impressions Code P</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateProviderSecondaryImpressionsCodeP(ProviderSecondaryImpressions, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateProviderSecondaryImpressionsCodeP(ProviderSecondaryImpressions, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_PROVIDER_SECONDARY_IMPRESSIONS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined())";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateProviderSecondaryImpressionsCodeP(ProviderSecondaryImpressions, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Provider Secondary Impressions Code P</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateProviderSecondaryImpressionsCodeP(ProviderSecondaryImpressions, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Provider Secondary Impressions Code P</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateProviderSecondaryImpressionsCodeP(ProviderSecondaryImpressions, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateProviderSecondaryImpressionsCodeP(ProviderSecondaryImpressions, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 
 	protected static Constraint VALIDATE_PROVIDER_SECONDARY_IMPRESSIONS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param providerSecondaryImpressions The receiving '<em><b>Provider Secondary Impressions</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param providerSecondaryImpressions The receiving '<em><b>Provider Secondary Impressions</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 
 	public static boolean validateProviderSecondaryImpressionsCodeP(
 			ProviderSecondaryImpressions providerSecondaryImpressions, DiagnosticChain diagnostics,
@@ -188,38 +188,38 @@ public class ProviderSecondaryImpressionsOperations extends ClinicalStatementOpe
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateProviderSecondaryImpressionsCode(ProviderSecondaryImpressions, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Provider Secondary Impressions Code</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateProviderSecondaryImpressionsCode(ProviderSecondaryImpressions, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Provider Secondary Impressions Code</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateProviderSecondaryImpressionsCode(ProviderSecondaryImpressions, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateProviderSecondaryImpressionsCode(ProviderSecondaryImpressions, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_PROVIDER_SECONDARY_IMPRESSIONS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "
 			+ "let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "
 			+ "value.code = '69542-9' and value.codeSystem = '2.16.840.1.113883.6.1')";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateProviderSecondaryImpressionsCode(ProviderSecondaryImpressions, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Provider Secondary Impressions Code</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateProviderSecondaryImpressionsCode(ProviderSecondaryImpressions, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Provider Secondary Impressions Code</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateProviderSecondaryImpressionsCode(ProviderSecondaryImpressions, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateProviderSecondaryImpressionsCode(ProviderSecondaryImpressions, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 
 	protected static Constraint VALIDATE_PROVIDER_SECONDARY_IMPRESSIONS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param providerSecondaryImpressions The receiving '<em><b>Provider Secondary Impressions</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param providerSecondaryImpressions The receiving '<em><b>Provider Secondary Impressions</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 
 	public static boolean validateProviderSecondaryImpressionsCode(
 			ProviderSecondaryImpressions providerSecondaryImpressions, DiagnosticChain diagnostics,
@@ -258,38 +258,38 @@ public class ProviderSecondaryImpressionsOperations extends ClinicalStatementOpe
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateProviderSecondaryImpressionsValue(ProviderSecondaryImpressions, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Provider Secondary Impressions Value</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateProviderSecondaryImpressionsValue(ProviderSecondaryImpressions, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Provider Secondary Impressions Value</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateProviderSecondaryImpressionsValue(ProviderSecondaryImpressions, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateProviderSecondaryImpressionsValue(ProviderSecondaryImpressions, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_PROVIDER_SECONDARY_IMPRESSIONS_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (not self.value->isEmpty() and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and "
 			+ "let value : datatypes::CD = element.oclAsType(datatypes::CD) in "
 			+ "value.codeSystem = '2.16.840.1.113883.6.90'))";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateProviderSecondaryImpressionsValue(ProviderSecondaryImpressions, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Provider Secondary Impressions Value</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateProviderSecondaryImpressionsValue(ProviderSecondaryImpressions, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Provider Secondary Impressions Value</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateProviderSecondaryImpressionsValue(ProviderSecondaryImpressions, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateProviderSecondaryImpressionsValue(ProviderSecondaryImpressions, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 
 	protected static Constraint VALIDATE_PROVIDER_SECONDARY_IMPRESSIONS_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param providerSecondaryImpressions The receiving '<em><b>Provider Secondary Impressions</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param providerSecondaryImpressions The receiving '<em><b>Provider Secondary Impressions</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 
 	public static boolean validateProviderSecondaryImpressionsValue(
 			ProviderSecondaryImpressions providerSecondaryImpressions, DiagnosticChain diagnostics,
@@ -320,36 +320,36 @@ public class ProviderSecondaryImpressionsOperations extends ClinicalStatementOpe
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateProviderSecondaryImpressionsValueP(ProviderSecondaryImpressions, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Provider Secondary Impressions Value P</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateProviderSecondaryImpressionsValueP(ProviderSecondaryImpressions, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Provider Secondary Impressions Value P</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateProviderSecondaryImpressionsValueP(ProviderSecondaryImpressions, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateProviderSecondaryImpressionsValueP(ProviderSecondaryImpressions, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_PROVIDER_SECONDARY_IMPRESSIONS_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (not self.value->isEmpty() and self.value->forAll(element | element.oclIsTypeOf(datatypes::CD)))";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateProviderSecondaryImpressionsValueP(ProviderSecondaryImpressions, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Provider Secondary Impressions Value P</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateProviderSecondaryImpressionsValueP(ProviderSecondaryImpressions, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Provider Secondary Impressions Value P</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateProviderSecondaryImpressionsValueP(ProviderSecondaryImpressions, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateProviderSecondaryImpressionsValueP(ProviderSecondaryImpressions, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 
 	protected static Constraint VALIDATE_PROVIDER_SECONDARY_IMPRESSIONS_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param providerSecondaryImpressions The receiving '<em><b>Provider Secondary Impressions</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param providerSecondaryImpressions The receiving '<em><b>Provider Secondary Impressions</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 
 	public static boolean validateProviderSecondaryImpressionsValueP(
 			ProviderSecondaryImpressions providerSecondaryImpressions, DiagnosticChain diagnostics,
@@ -380,36 +380,36 @@ public class ProviderSecondaryImpressionsOperations extends ClinicalStatementOpe
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateProviderSecondaryImpressionsMoodCode(ProviderSecondaryImpressions, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Provider Secondary Impressions Mood Code</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateProviderSecondaryImpressionsMoodCode(ProviderSecondaryImpressions, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Provider Secondary Impressions Mood Code</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateProviderSecondaryImpressionsMoodCode(ProviderSecondaryImpressions, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateProviderSecondaryImpressionsMoodCode(ProviderSecondaryImpressions, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_PROVIDER_SECONDARY_IMPRESSIONS_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "isDefined('moodCode')";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateProviderSecondaryImpressionsMoodCode(ProviderSecondaryImpressions, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Provider Secondary Impressions Mood Code</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateProviderSecondaryImpressionsMoodCode(ProviderSecondaryImpressions, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Provider Secondary Impressions Mood Code</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateProviderSecondaryImpressionsMoodCode(ProviderSecondaryImpressions, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateProviderSecondaryImpressionsMoodCode(ProviderSecondaryImpressions, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 
 	protected static Constraint VALIDATE_PROVIDER_SECONDARY_IMPRESSIONS_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param providerSecondaryImpressions The receiving '<em><b>Provider Secondary Impressions</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param providerSecondaryImpressions The receiving '<em><b>Provider Secondary Impressions</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 
 	public static boolean validateProviderSecondaryImpressionsMoodCode(
 			ProviderSecondaryImpressions providerSecondaryImpressions, DiagnosticChain diagnostics,

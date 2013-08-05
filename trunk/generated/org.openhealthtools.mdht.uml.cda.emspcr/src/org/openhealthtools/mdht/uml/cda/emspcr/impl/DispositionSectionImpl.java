@@ -42,83 +42,83 @@ import org.openhealthtools.mdht.uml.cda.impl.SectionImpl;
  */
 public class DispositionSectionImpl extends SectionImpl implements DispositionSection {
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	protected DispositionSectionImpl() {
 		super();
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
 		return EmspcrPackage.Literals.DISPOSITION_SECTION;
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateDispositionSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return DispositionSectionOperations.validateDispositionSectionTemplateId(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateDispositionSectionCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return DispositionSectionOperations.validateDispositionSectionCode(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateDispositionSectionCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return DispositionSectionOperations.validateDispositionSectionCodeP(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateDispositionSectionTitle(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return DispositionSectionOperations.validateDispositionSectionTitle(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateDispositionSectionText(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return DispositionSectionOperations.validateDispositionSectionText(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateDispositionSectionEntry4(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return DispositionSectionOperations.validateDispositionSectionEntry4(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateDispositionSectionNumberOfPatientsObservation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return DispositionSectionOperations.validateDispositionSectionNumberOfPatientsObservation(
@@ -126,10 +126,10 @@ public class DispositionSectionImpl extends SectionImpl implements DispositionSe
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateDispositionSectionIncidentDispositionObservation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return DispositionSectionOperations.validateDispositionSectionIncidentDispositionObservation(
@@ -137,10 +137,10 @@ public class DispositionSectionImpl extends SectionImpl implements DispositionSe
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateDispositionSectionTransportModeObservation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return DispositionSectionOperations.validateDispositionSectionTransportModeObservation(
@@ -148,10 +148,10 @@ public class DispositionSectionImpl extends SectionImpl implements DispositionSe
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateDispositionSectionTransportMethodObservation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return DispositionSectionOperations.validateDispositionSectionTransportMethodObservation(
@@ -159,10 +159,10 @@ public class DispositionSectionImpl extends SectionImpl implements DispositionSe
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateDispositionSectionReasonForChoosingDestinationObservation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return DispositionSectionOperations.validateDispositionSectionReasonForChoosingDestinationObservation(
@@ -170,10 +170,10 @@ public class DispositionSectionImpl extends SectionImpl implements DispositionSe
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateDispositionSectionPrearrivalActivationObservation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return DispositionSectionOperations.validateDispositionSectionPrearrivalActivationObservation(
@@ -181,10 +181,10 @@ public class DispositionSectionImpl extends SectionImpl implements DispositionSe
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateDispositionSectionPatientConditionChangeAtDestinationObservation(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return DispositionSectionOperations.validateDispositionSectionPatientConditionChangeAtDestinationObservation(
@@ -192,82 +192,82 @@ public class DispositionSectionImpl extends SectionImpl implements DispositionSe
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public TransportMethodObservation getemspcrEntry4() {
 		return DispositionSectionOperations.getemspcrEntry4(this);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public NumberOfPatientsObservation getNumberOfPatientsObservation() {
 		return DispositionSectionOperations.getNumberOfPatientsObservation(this);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public IncidentDispositionObservation getIncidentDispositionObservation() {
 		return DispositionSectionOperations.getIncidentDispositionObservation(this);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public TransportModeObservation getTransportModeObservation() {
 		return DispositionSectionOperations.getTransportModeObservation(this);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public TransportMethodObservation getTransportMethodObservation() {
 		return DispositionSectionOperations.getTransportMethodObservation(this);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public ReasonForChoosingDestinationObservation getReasonForChoosingDestinationObservation() {
 		return DispositionSectionOperations.getReasonForChoosingDestinationObservation(this);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public PrearrivalActivationObservation getPrearrivalActivationObservation() {
 		return DispositionSectionOperations.getPrearrivalActivationObservation(this);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public PatientConditionChangeAtDestinationObservation getPatientConditionChangeAtDestinationObservation() {
 		return DispositionSectionOperations.getPatientConditionChangeAtDestinationObservation(this);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public DispositionSection init() {
 		return Initializer.Util.init(this);
 	}

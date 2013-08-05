@@ -35,92 +35,92 @@ import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
  */
 public class HeartAssessmentImpl extends ObservationImpl implements HeartAssessment {
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	protected HeartAssessmentImpl() {
 		super();
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
 		return EmspcrPackage.Literals.HEART_ASSESSMENT;
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateHeartAssessmentTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return HeartAssessmentOperations.validateHeartAssessmentTemplateId(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateHeartAssessmentCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return HeartAssessmentOperations.validateHeartAssessmentCodeP(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateHeartAssessmentCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return HeartAssessmentOperations.validateHeartAssessmentCode(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateHeartAssessmentValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return HeartAssessmentOperations.validateHeartAssessmentValue(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateHeartAssessmentValueP(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return HeartAssessmentOperations.validateHeartAssessmentValueP(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateHeartAssessmentEffectiveTime(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return HeartAssessmentOperations.validateHeartAssessmentEffectiveTime(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateHeartAssessmentMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return HeartAssessmentOperations.validateHeartAssessmentMoodCode(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public HeartAssessment init() {
 		return Initializer.Util.init(this);
 	}

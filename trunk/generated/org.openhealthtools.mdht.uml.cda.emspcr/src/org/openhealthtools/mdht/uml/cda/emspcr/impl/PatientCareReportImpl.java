@@ -56,146 +56,146 @@ import org.openhealthtools.mdht.uml.cda.emspcr.operations.PatientCareReportOpera
  */
 public class PatientCareReportImpl extends GeneralHeaderConstraintsImpl implements PatientCareReport {
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	protected PatientCareReportImpl() {
 		super();
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
 		return EmspcrPackage.Literals.PATIENT_CARE_REPORT;
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validatePatientCareReportClassCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PatientCareReportOperations.validatePatientCareReportClassCode(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validatePatientCareReportMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PatientCareReportOperations.validatePatientCareReportMoodCode(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validatePatientCareReportCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PatientCareReportOperations.validatePatientCareReportCodeP(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validatePatientCareReportCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PatientCareReportOperations.validatePatientCareReportCode(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validatePatientCareReportTitle(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PatientCareReportOperations.validatePatientCareReportTitle(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validatePatientCareReportVersionNumber(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PatientCareReportOperations.validatePatientCareReportVersionNumber(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validatePatientCareReportId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PatientCareReportOperations.validatePatientCareReportId(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validatePatientCareReportConfidentialityCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PatientCareReportOperations.validatePatientCareReportConfidentialityCode(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validatePatientCareReportRecordTarget(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PatientCareReportOperations.validatePatientCareReportRecordTarget(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validatePatientCareReportBilling(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PatientCareReportOperations.validatePatientCareReportBilling(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validatePatientCareReportCurrentMedication(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PatientCareReportOperations.validatePatientCareReportCurrentMedication(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validatePatientCareReportCardiacArrestEvent(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PatientCareReportOperations.validatePatientCareReportCardiacArrestEvent(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validatePatientCareReportAdvanceDirectives(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PatientCareReportOperations.validatePatientCareReportAdvanceDirectives(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validatePatientCareReportAllergiesAndAdverseReactionsSection(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return PatientCareReportOperations.validatePatientCareReportAllergiesAndAdverseReactionsSection(
@@ -203,28 +203,28 @@ public class PatientCareReportImpl extends GeneralHeaderConstraintsImpl implemen
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validatePatientCareReportPastMedicalHistory(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PatientCareReportOperations.validatePatientCareReportPastMedicalHistory(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validatePatientCareReportSocialHistory(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PatientCareReportOperations.validatePatientCareReportSocialHistory(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validatePatientCareReportPhysicalAssessmentSection(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return PatientCareReportOperations.validatePatientCareReportPhysicalAssessmentSection(
@@ -232,10 +232,10 @@ public class PatientCareReportImpl extends GeneralHeaderConstraintsImpl implemen
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validatePatientCareReportMedicationsAdministeredSection(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return PatientCareReportOperations.validatePatientCareReportMedicationsAdministeredSection(
@@ -243,10 +243,10 @@ public class PatientCareReportImpl extends GeneralHeaderConstraintsImpl implemen
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validatePatientCareReportProceduresPerformedSection(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return PatientCareReportOperations.validatePatientCareReportProceduresPerformedSection(
@@ -254,56 +254,56 @@ public class PatientCareReportImpl extends GeneralHeaderConstraintsImpl implemen
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validatePatientCareReportPatientCareNarrative(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return PatientCareReportOperations.validatePatientCareReportPatientCareNarrative(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validatePatientCareReportSceneSection(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PatientCareReportOperations.validatePatientCareReportSceneSection(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validatePatientCareReportComponentOf(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PatientCareReportOperations.validatePatientCareReportComponentOf(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validatePatientCareReportDispatchSection(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PatientCareReportOperations.validatePatientCareReportDispatchSection(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validatePatientCareReportDispositionSection(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PatientCareReportOperations.validatePatientCareReportDispositionSection(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validatePatientCareReportPersonnelAdverseEventSection(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return PatientCareReportOperations.validatePatientCareReportPersonnelAdverseEventSection(
@@ -311,100 +311,100 @@ public class PatientCareReportImpl extends GeneralHeaderConstraintsImpl implemen
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validatePatientCareReportProtocolSection(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PatientCareReportOperations.validatePatientCareReportProtocolSection(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validatePatientCareReportResponseSection(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PatientCareReportOperations.validatePatientCareReportResponseSection(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validatePatientCareReportSituationSection(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PatientCareReportOperations.validatePatientCareReportSituationSection(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validatePatientCareReportTimesSection(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PatientCareReportOperations.validatePatientCareReportTimesSection(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validatePatientCareReportVitalSignsSection(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PatientCareReportOperations.validatePatientCareReportVitalSignsSection(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validatePatientCareReportAuthorParticipation(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PatientCareReportOperations.validatePatientCareReportAuthorParticipation(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validatePatientCareReportCustodian(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PatientCareReportOperations.validatePatientCareReportCustodian(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validatePatientCareReportDocumentationOf(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PatientCareReportOperations.validatePatientCareReportDocumentationOf(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validatePatientCareReportRelatedDocument(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PatientCareReportOperations.validatePatientCareReportRelatedDocument(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validatePatientCareReportParticipant(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PatientCareReportOperations.validatePatientCareReportParticipant(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validatePatientCareReportInjuryIncidentDescriptionSection(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return PatientCareReportOperations.validatePatientCareReportInjuryIncidentDescriptionSection(
@@ -412,209 +412,209 @@ public class PatientCareReportImpl extends GeneralHeaderConstraintsImpl implemen
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public BillingSection getBilling() {
 		return PatientCareReportOperations.getBilling(this);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public CurrentMedicationSection getCurrentMedication() {
 		return PatientCareReportOperations.getCurrentMedication(this);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public CardiacArrestEventSection getCardiacArrestEvent() {
 		return PatientCareReportOperations.getCardiacArrestEvent(this);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public AdvanceDirectivesSection getAdvanceDirectives() {
 		return PatientCareReportOperations.getAdvanceDirectives(this);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public AllergiesAndAdverseReactionsSection getAllergiesAndAdverseReactionsSection() {
 		return PatientCareReportOperations.getAllergiesAndAdverseReactionsSection(this);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public PastMedicalHistorySection getPastMedicalHistory() {
 		return PatientCareReportOperations.getPastMedicalHistory(this);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public SocialHistorySection getSocialHistory() {
 		return PatientCareReportOperations.getSocialHistory(this);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public PhysicalAssessmentSection getPhysicalAssessmentSection() {
 		return PatientCareReportOperations.getPhysicalAssessmentSection(this);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public MedicationsAdministeredSection getMedicationsAdministeredSection() {
 		return PatientCareReportOperations.getMedicationsAdministeredSection(this);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public ProceduresPerformedSection getProceduresPerformedSection() {
 		return PatientCareReportOperations.getProceduresPerformedSection(this);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public PatientCareNarrativeSection getPatientCareNarrative() {
 		return PatientCareReportOperations.getPatientCareNarrative(this);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public SceneSection getSceneSection() {
 		return PatientCareReportOperations.getSceneSection(this);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public DispatchSection getDispatchSection() {
 		return PatientCareReportOperations.getDispatchSection(this);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public DispositionSection getDispositionSection() {
 		return PatientCareReportOperations.getDispositionSection(this);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public PersonnelAdverseEventSection getPersonnelAdverseEventSection() {
 		return PatientCareReportOperations.getPersonnelAdverseEventSection(this);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public ProtocolSection getProtocolSection() {
 		return PatientCareReportOperations.getProtocolSection(this);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public ResponseSection getResponseSection() {
 		return PatientCareReportOperations.getResponseSection(this);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public SituationSection getSituationSection() {
 		return PatientCareReportOperations.getSituationSection(this);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public TimesSection getTimesSection() {
 		return PatientCareReportOperations.getTimesSection(this);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public VitalSignsSection getVitalSignsSection() {
 		return PatientCareReportOperations.getVitalSignsSection(this);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public InjuryIncidentDescriptionSection getInjuryIncidentDescriptionSection() {
 		return PatientCareReportOperations.getInjuryIncidentDescriptionSection(this);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	@Override
 	public boolean validateGeneralHeaderConstraintsTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PatientCareReportOperations.validateGeneralHeaderConstraintsTemplateId(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	@Override
 	public PatientCareReport init() {
 		return Initializer.Util.init(this);

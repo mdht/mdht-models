@@ -35,84 +35,84 @@ import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
  */
 public class LevelOfServiceObservationImpl extends ObservationImpl implements LevelOfServiceObservation {
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	protected LevelOfServiceObservationImpl() {
 		super();
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
 		return EmspcrPackage.Literals.LEVEL_OF_SERVICE_OBSERVATION;
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateLevelOfServiceObservationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return LevelOfServiceObservationOperations.validateLevelOfServiceObservationTemplateId(
 			this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateLevelOfServiceObservationCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return LevelOfServiceObservationOperations.validateLevelOfServiceObservationCodeP(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateLevelOfServiceObservationCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return LevelOfServiceObservationOperations.validateLevelOfServiceObservationCode(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateLevelOfServiceObservationValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return LevelOfServiceObservationOperations.validateLevelOfServiceObservationValue(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateLevelOfServiceObservationValueP(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return LevelOfServiceObservationOperations.validateLevelOfServiceObservationValueP(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateLevelOfServiceObservationMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return LevelOfServiceObservationOperations.validateLevelOfServiceObservationMoodCode(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public LevelOfServiceObservation init() {
 		return Initializer.Util.init(this);
 	}

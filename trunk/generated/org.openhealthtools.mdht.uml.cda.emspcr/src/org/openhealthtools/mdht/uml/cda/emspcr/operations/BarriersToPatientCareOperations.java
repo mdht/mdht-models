@@ -47,45 +47,45 @@ import org.openhealthtools.mdht.uml.cda.operations.ClinicalStatementOperations;
  */
 public class BarriersToPatientCareOperations extends ClinicalStatementOperations {
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	protected BarriersToPatientCareOperations() {
 		super();
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateBarriersToPatientCareTemplateId(BarriersToPatientCare, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Barriers To Patient Care Template Id</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateBarriersToPatientCareTemplateId(BarriersToPatientCare, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Barriers To Patient Care Template Id</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateBarriersToPatientCareTemplateId(BarriersToPatientCare, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateBarriersToPatientCareTemplateId(BarriersToPatientCare, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_BARRIERS_TO_PATIENT_CARE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.1133883.17.3.10.1.83')";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateBarriersToPatientCareTemplateId(BarriersToPatientCare, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Barriers To Patient Care Template Id</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateBarriersToPatientCareTemplateId(BarriersToPatientCare, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Barriers To Patient Care Template Id</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateBarriersToPatientCareTemplateId(BarriersToPatientCare, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateBarriersToPatientCareTemplateId(BarriersToPatientCare, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 
 	protected static Constraint VALIDATE_BARRIERS_TO_PATIENT_CARE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param barriersToPatientCare The receiving '<em><b>Barriers To Patient Care</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param barriersToPatientCare The receiving '<em><b>Barriers To Patient Care</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 
 	public static boolean validateBarriersToPatientCareTemplateId(BarriersToPatientCare barriersToPatientCare,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
@@ -115,36 +115,36 @@ public class BarriersToPatientCareOperations extends ClinicalStatementOperations
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateBarriersToPatientCareCodeP(BarriersToPatientCare, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Barriers To Patient Care Code P</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateBarriersToPatientCareCodeP(BarriersToPatientCare, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Barriers To Patient Care Code P</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateBarriersToPatientCareCodeP(BarriersToPatientCare, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateBarriersToPatientCareCodeP(BarriersToPatientCare, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_BARRIERS_TO_PATIENT_CARE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined())";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateBarriersToPatientCareCodeP(BarriersToPatientCare, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Barriers To Patient Care Code P</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateBarriersToPatientCareCodeP(BarriersToPatientCare, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Barriers To Patient Care Code P</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateBarriersToPatientCareCodeP(BarriersToPatientCare, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateBarriersToPatientCareCodeP(BarriersToPatientCare, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 
 	protected static Constraint VALIDATE_BARRIERS_TO_PATIENT_CARE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param barriersToPatientCare The receiving '<em><b>Barriers To Patient Care</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param barriersToPatientCare The receiving '<em><b>Barriers To Patient Care</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 
 	public static boolean validateBarriersToPatientCareCodeP(BarriersToPatientCare barriersToPatientCare,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
@@ -186,38 +186,38 @@ public class BarriersToPatientCareOperations extends ClinicalStatementOperations
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateBarriersToPatientCareCode(BarriersToPatientCare, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Barriers To Patient Care Code</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateBarriersToPatientCareCode(BarriersToPatientCare, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Barriers To Patient Care Code</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateBarriersToPatientCareCode(BarriersToPatientCare, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateBarriersToPatientCareCode(BarriersToPatientCare, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_BARRIERS_TO_PATIENT_CARE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "
 			+ "let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "
 			+ "value.code = '67523-1' and value.codeSystem = '2.16.840.1.113883.6.1')";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateBarriersToPatientCareCode(BarriersToPatientCare, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Barriers To Patient Care Code</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateBarriersToPatientCareCode(BarriersToPatientCare, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Barriers To Patient Care Code</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateBarriersToPatientCareCode(BarriersToPatientCare, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateBarriersToPatientCareCode(BarriersToPatientCare, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 
 	protected static Constraint VALIDATE_BARRIERS_TO_PATIENT_CARE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param barriersToPatientCare The receiving '<em><b>Barriers To Patient Care</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param barriersToPatientCare The receiving '<em><b>Barriers To Patient Care</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 
 	public static boolean validateBarriersToPatientCareCode(BarriersToPatientCare barriersToPatientCare,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
@@ -255,38 +255,38 @@ public class BarriersToPatientCareOperations extends ClinicalStatementOperations
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateBarriersToPatientCareValue(BarriersToPatientCare, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Barriers To Patient Care Value</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateBarriersToPatientCareValue(BarriersToPatientCare, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Barriers To Patient Care Value</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateBarriersToPatientCareValue(BarriersToPatientCare, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateBarriersToPatientCareValue(BarriersToPatientCare, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_BARRIERS_TO_PATIENT_CARE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and "
 			+ "let value : datatypes::CD = element.oclAsType(datatypes::CD) in "
 			+ "value.codeSystem = '2.16.840.1.113883.6.1' and (value.code = 'LA17306-4' or value.code = 'LA17307-2' or value.code = 'LA17308-0' or value.code = 'LA17309-8' or value.code = 'LA17310-6' or value.code = 'LA17311-4' or value.code = 'LA17312-2' or value.code = 'LA17313-0' or value.code = 'LA17314-8' or value.code = 'LA17315-5' or value.code = 'LA17316-3' or value.code = 'LA17317-1' or value.code = 'LA17318-9' or value.code = 'LA17711-5' or value.code = 'LA6301-1')))";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateBarriersToPatientCareValue(BarriersToPatientCare, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Barriers To Patient Care Value</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateBarriersToPatientCareValue(BarriersToPatientCare, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Barriers To Patient Care Value</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateBarriersToPatientCareValue(BarriersToPatientCare, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateBarriersToPatientCareValue(BarriersToPatientCare, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 
 	protected static Constraint VALIDATE_BARRIERS_TO_PATIENT_CARE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param barriersToPatientCare The receiving '<em><b>Barriers To Patient Care</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param barriersToPatientCare The receiving '<em><b>Barriers To Patient Care</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 
 	public static boolean validateBarriersToPatientCareValue(BarriersToPatientCare barriersToPatientCare,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
@@ -316,36 +316,36 @@ public class BarriersToPatientCareOperations extends ClinicalStatementOperations
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateBarriersToPatientCareValueP(BarriersToPatientCare, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Barriers To Patient Care Value P</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateBarriersToPatientCareValueP(BarriersToPatientCare, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Barriers To Patient Care Value P</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateBarriersToPatientCareValueP(BarriersToPatientCare, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateBarriersToPatientCareValueP(BarriersToPatientCare, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_BARRIERS_TO_PATIENT_CARE_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->forAll(element | element.oclIsTypeOf(datatypes::CD)))";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateBarriersToPatientCareValueP(BarriersToPatientCare, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Barriers To Patient Care Value P</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateBarriersToPatientCareValueP(BarriersToPatientCare, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Barriers To Patient Care Value P</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateBarriersToPatientCareValueP(BarriersToPatientCare, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateBarriersToPatientCareValueP(BarriersToPatientCare, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 
 	protected static Constraint VALIDATE_BARRIERS_TO_PATIENT_CARE_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param barriersToPatientCare The receiving '<em><b>Barriers To Patient Care</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param barriersToPatientCare The receiving '<em><b>Barriers To Patient Care</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 
 	public static boolean validateBarriersToPatientCareValueP(BarriersToPatientCare barriersToPatientCare,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
@@ -375,36 +375,36 @@ public class BarriersToPatientCareOperations extends ClinicalStatementOperations
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateBarriersToPatientCareMoodCode(BarriersToPatientCare, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Barriers To Patient Care Mood Code</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateBarriersToPatientCareMoodCode(BarriersToPatientCare, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Barriers To Patient Care Mood Code</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateBarriersToPatientCareMoodCode(BarriersToPatientCare, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateBarriersToPatientCareMoodCode(BarriersToPatientCare, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_BARRIERS_TO_PATIENT_CARE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "isDefined('moodCode')";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateBarriersToPatientCareMoodCode(BarriersToPatientCare, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Barriers To Patient Care Mood Code</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateBarriersToPatientCareMoodCode(BarriersToPatientCare, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Barriers To Patient Care Mood Code</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateBarriersToPatientCareMoodCode(BarriersToPatientCare, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateBarriersToPatientCareMoodCode(BarriersToPatientCare, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 
 	protected static Constraint VALIDATE_BARRIERS_TO_PATIENT_CARE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param barriersToPatientCare The receiving '<em><b>Barriers To Patient Care</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param barriersToPatientCare The receiving '<em><b>Barriers To Patient Care</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 
 	public static boolean validateBarriersToPatientCareMoodCode(BarriersToPatientCare barriersToPatientCare,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {

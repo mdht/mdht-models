@@ -46,45 +46,45 @@ import org.openhealthtools.mdht.uml.cda.operations.ClinicalStatementOperations;
  */
 public class UnitBackInServiceTimeOperations extends ClinicalStatementOperations {
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	protected UnitBackInServiceTimeOperations() {
 		super();
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateUnitBackInServiceTimeTemplateId(UnitBackInServiceTime, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Unit Back In Service Time Template Id</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateUnitBackInServiceTimeTemplateId(UnitBackInServiceTime, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Unit Back In Service Time Template Id</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateUnitBackInServiceTimeTemplateId(UnitBackInServiceTime, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateUnitBackInServiceTimeTemplateId(UnitBackInServiceTime, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_UNIT_BACK_IN_SERVICE_TIME_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.1133883.17.3.10.1.45')";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateUnitBackInServiceTimeTemplateId(UnitBackInServiceTime, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Unit Back In Service Time Template Id</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateUnitBackInServiceTimeTemplateId(UnitBackInServiceTime, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Unit Back In Service Time Template Id</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateUnitBackInServiceTimeTemplateId(UnitBackInServiceTime, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateUnitBackInServiceTimeTemplateId(UnitBackInServiceTime, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 
 	protected static Constraint VALIDATE_UNIT_BACK_IN_SERVICE_TIME_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param unitBackInServiceTime The receiving '<em><b>Unit Back In Service Time</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param unitBackInServiceTime The receiving '<em><b>Unit Back In Service Time</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 
 	public static boolean validateUnitBackInServiceTimeTemplateId(UnitBackInServiceTime unitBackInServiceTime,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
@@ -114,36 +114,36 @@ public class UnitBackInServiceTimeOperations extends ClinicalStatementOperations
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateUnitBackInServiceTimeCodeP(UnitBackInServiceTime, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Unit Back In Service Time Code P</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateUnitBackInServiceTimeCodeP(UnitBackInServiceTime, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Unit Back In Service Time Code P</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateUnitBackInServiceTimeCodeP(UnitBackInServiceTime, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateUnitBackInServiceTimeCodeP(UnitBackInServiceTime, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_UNIT_BACK_IN_SERVICE_TIME_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined())";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateUnitBackInServiceTimeCodeP(UnitBackInServiceTime, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Unit Back In Service Time Code P</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateUnitBackInServiceTimeCodeP(UnitBackInServiceTime, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Unit Back In Service Time Code P</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateUnitBackInServiceTimeCodeP(UnitBackInServiceTime, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateUnitBackInServiceTimeCodeP(UnitBackInServiceTime, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 
 	protected static Constraint VALIDATE_UNIT_BACK_IN_SERVICE_TIME_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param unitBackInServiceTime The receiving '<em><b>Unit Back In Service Time</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param unitBackInServiceTime The receiving '<em><b>Unit Back In Service Time</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 
 	public static boolean validateUnitBackInServiceTimeCodeP(UnitBackInServiceTime unitBackInServiceTime,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
@@ -185,38 +185,38 @@ public class UnitBackInServiceTimeOperations extends ClinicalStatementOperations
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateUnitBackInServiceTimeCode(UnitBackInServiceTime, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Unit Back In Service Time Code</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateUnitBackInServiceTimeCode(UnitBackInServiceTime, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Unit Back In Service Time Code</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateUnitBackInServiceTimeCode(UnitBackInServiceTime, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateUnitBackInServiceTimeCode(UnitBackInServiceTime, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_UNIT_BACK_IN_SERVICE_TIME_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "
 			+ "let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "
 			+ "value.code = '69477-8' and value.codeSystem = '2.16.840.1.113883.6.1')";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateUnitBackInServiceTimeCode(UnitBackInServiceTime, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Unit Back In Service Time Code</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateUnitBackInServiceTimeCode(UnitBackInServiceTime, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Unit Back In Service Time Code</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateUnitBackInServiceTimeCode(UnitBackInServiceTime, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateUnitBackInServiceTimeCode(UnitBackInServiceTime, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 
 	protected static Constraint VALIDATE_UNIT_BACK_IN_SERVICE_TIME_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param unitBackInServiceTime The receiving '<em><b>Unit Back In Service Time</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param unitBackInServiceTime The receiving '<em><b>Unit Back In Service Time</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 
 	public static boolean validateUnitBackInServiceTimeCode(UnitBackInServiceTime unitBackInServiceTime,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
@@ -254,36 +254,36 @@ public class UnitBackInServiceTimeOperations extends ClinicalStatementOperations
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateUnitBackInServiceTimeValue(UnitBackInServiceTime, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Unit Back In Service Time Value</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateUnitBackInServiceTimeValue(UnitBackInServiceTime, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Unit Back In Service Time Value</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateUnitBackInServiceTimeValue(UnitBackInServiceTime, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateUnitBackInServiceTimeValue(UnitBackInServiceTime, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_UNIT_BACK_IN_SERVICE_TIME_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | element.oclIsTypeOf(datatypes::TS)))";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateUnitBackInServiceTimeValue(UnitBackInServiceTime, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Unit Back In Service Time Value</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateUnitBackInServiceTimeValue(UnitBackInServiceTime, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Unit Back In Service Time Value</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateUnitBackInServiceTimeValue(UnitBackInServiceTime, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateUnitBackInServiceTimeValue(UnitBackInServiceTime, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 
 	protected static Constraint VALIDATE_UNIT_BACK_IN_SERVICE_TIME_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param unitBackInServiceTime The receiving '<em><b>Unit Back In Service Time</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param unitBackInServiceTime The receiving '<em><b>Unit Back In Service Time</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 
 	public static boolean validateUnitBackInServiceTimeValue(UnitBackInServiceTime unitBackInServiceTime,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
@@ -313,36 +313,36 @@ public class UnitBackInServiceTimeOperations extends ClinicalStatementOperations
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateUnitBackInServiceTimeMoodCode(UnitBackInServiceTime, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Unit Back In Service Time Mood Code</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateUnitBackInServiceTimeMoodCode(UnitBackInServiceTime, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Unit Back In Service Time Mood Code</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateUnitBackInServiceTimeMoodCode(UnitBackInServiceTime, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateUnitBackInServiceTimeMoodCode(UnitBackInServiceTime, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_UNIT_BACK_IN_SERVICE_TIME_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "isDefined('moodCode')";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateUnitBackInServiceTimeMoodCode(UnitBackInServiceTime, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Unit Back In Service Time Mood Code</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateUnitBackInServiceTimeMoodCode(UnitBackInServiceTime, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Unit Back In Service Time Mood Code</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateUnitBackInServiceTimeMoodCode(UnitBackInServiceTime, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateUnitBackInServiceTimeMoodCode(UnitBackInServiceTime, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 
 	protected static Constraint VALIDATE_UNIT_BACK_IN_SERVICE_TIME_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param unitBackInServiceTime The receiving '<em><b>Unit Back In Service Time</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param unitBackInServiceTime The receiving '<em><b>Unit Back In Service Time</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 
 	public static boolean validateUnitBackInServiceTimeMoodCode(UnitBackInServiceTime unitBackInServiceTime,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {

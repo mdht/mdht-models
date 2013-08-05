@@ -35,83 +35,83 @@ import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
  */
 public class PrimarySymptomImpl extends ObservationImpl implements PrimarySymptom {
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	protected PrimarySymptomImpl() {
 		super();
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
 		return EmspcrPackage.Literals.PRIMARY_SYMPTOM;
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validatePrimarySymptomTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PrimarySymptomOperations.validatePrimarySymptomTemplateId(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validatePrimarySymptomCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PrimarySymptomOperations.validatePrimarySymptomCodeP(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validatePrimarySymptomCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PrimarySymptomOperations.validatePrimarySymptomCode(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validatePrimarySymptomValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PrimarySymptomOperations.validatePrimarySymptomValue(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validatePrimarySymptomValueP(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PrimarySymptomOperations.validatePrimarySymptomValueP(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validatePrimarySymptomMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PrimarySymptomOperations.validatePrimarySymptomMoodCode(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public PrimarySymptom init() {
 		return Initializer.Util.init(this);
 	}

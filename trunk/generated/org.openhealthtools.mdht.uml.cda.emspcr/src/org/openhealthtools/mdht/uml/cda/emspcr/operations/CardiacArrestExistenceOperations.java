@@ -53,45 +53,45 @@ import org.openhealthtools.mdht.uml.cda.operations.ClinicalStatementOperations;
  */
 public class CardiacArrestExistenceOperations extends ClinicalStatementOperations {
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	protected CardiacArrestExistenceOperations() {
 		super();
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateCardiacArrestExistenceCardiacArrestCauseRelationship(CardiacArrestExistence, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Cardiac Arrest Existence Cardiac Arrest Cause Relationship</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateCardiacArrestExistenceCardiacArrestCauseRelationship(CardiacArrestExistence, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Cardiac Arrest Existence Cardiac Arrest Cause Relationship</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateCardiacArrestExistenceCardiacArrestCauseRelationship(CardiacArrestExistence, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateCardiacArrestExistenceCardiacArrestCauseRelationship(CardiacArrestExistence, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_CARDIAC_ARREST_EXISTENCE_CARDIAC_ARREST_CAUSE_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.oclIsUndefined() and entryRelationship.oclIsKindOf(cda::EntryRelationship))";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateCardiacArrestExistenceCardiacArrestCauseRelationship(CardiacArrestExistence, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Cardiac Arrest Existence Cardiac Arrest Cause Relationship</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateCardiacArrestExistenceCardiacArrestCauseRelationship(CardiacArrestExistence, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Cardiac Arrest Existence Cardiac Arrest Cause Relationship</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateCardiacArrestExistenceCardiacArrestCauseRelationship(CardiacArrestExistence, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateCardiacArrestExistenceCardiacArrestCauseRelationship(CardiacArrestExistence, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 
 	protected static Constraint VALIDATE_CARDIAC_ARREST_EXISTENCE_CARDIAC_ARREST_CAUSE_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param cardiacArrestExistence The receiving '<em><b>Cardiac Arrest Existence</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param cardiacArrestExistence The receiving '<em><b>Cardiac Arrest Existence</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 
 	public static boolean validateCardiacArrestExistenceCardiacArrestCauseRelationship(
 			CardiacArrestExistence cardiacArrestExistence, DiagnosticChain diagnostics, Map<Object, Object> context) {
@@ -123,36 +123,36 @@ public class CardiacArrestExistenceOperations extends ClinicalStatementOperation
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateCardiacArrestExistenceCardiacArrestInformantParticipation(CardiacArrestExistence, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Cardiac Arrest Existence Cardiac Arrest Informant Participation</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateCardiacArrestExistenceCardiacArrestInformantParticipation(CardiacArrestExistence, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Cardiac Arrest Existence Cardiac Arrest Informant Participation</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateCardiacArrestExistenceCardiacArrestInformantParticipation(CardiacArrestExistence, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateCardiacArrestExistenceCardiacArrestInformantParticipation(CardiacArrestExistence, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_CARDIAC_ARREST_EXISTENCE_CARDIAC_ARREST_INFORMANT_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.informant->one(informant : cda::Informant12 | not informant.oclIsUndefined() and informant.oclIsKindOf(cda::Informant12))";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateCardiacArrestExistenceCardiacArrestInformantParticipation(CardiacArrestExistence, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Cardiac Arrest Existence Cardiac Arrest Informant Participation</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateCardiacArrestExistenceCardiacArrestInformantParticipation(CardiacArrestExistence, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Cardiac Arrest Existence Cardiac Arrest Informant Participation</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateCardiacArrestExistenceCardiacArrestInformantParticipation(CardiacArrestExistence, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateCardiacArrestExistenceCardiacArrestInformantParticipation(CardiacArrestExistence, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 
 	protected static Constraint VALIDATE_CARDIAC_ARREST_EXISTENCE_CARDIAC_ARREST_INFORMANT_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param cardiacArrestExistence The receiving '<em><b>Cardiac Arrest Existence</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param cardiacArrestExistence The receiving '<em><b>Cardiac Arrest Existence</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 
 	public static boolean validateCardiacArrestExistenceCardiacArrestInformantParticipation(
 			CardiacArrestExistence cardiacArrestExistence, DiagnosticChain diagnostics, Map<Object, Object> context) {
@@ -184,36 +184,36 @@ public class CardiacArrestExistenceOperations extends ClinicalStatementOperation
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateCardiacArrestExistencePriorCPRRelationship(CardiacArrestExistence, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Cardiac Arrest Existence Prior CPR Relationship</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateCardiacArrestExistencePriorCPRRelationship(CardiacArrestExistence, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Cardiac Arrest Existence Prior CPR Relationship</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateCardiacArrestExistencePriorCPRRelationship(CardiacArrestExistence, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateCardiacArrestExistencePriorCPRRelationship(CardiacArrestExistence, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_CARDIAC_ARREST_EXISTENCE_PRIOR_CPR_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.oclIsUndefined() and entryRelationship.oclIsKindOf(cda::EntryRelationship))";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateCardiacArrestExistencePriorCPRRelationship(CardiacArrestExistence, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Cardiac Arrest Existence Prior CPR Relationship</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateCardiacArrestExistencePriorCPRRelationship(CardiacArrestExistence, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Cardiac Arrest Existence Prior CPR Relationship</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateCardiacArrestExistencePriorCPRRelationship(CardiacArrestExistence, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateCardiacArrestExistencePriorCPRRelationship(CardiacArrestExistence, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 
 	protected static Constraint VALIDATE_CARDIAC_ARREST_EXISTENCE_PRIOR_CPR_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param cardiacArrestExistence The receiving '<em><b>Cardiac Arrest Existence</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param cardiacArrestExistence The receiving '<em><b>Cardiac Arrest Existence</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 
 	public static boolean validateCardiacArrestExistencePriorCPRRelationship(
 			CardiacArrestExistence cardiacArrestExistence, DiagnosticChain diagnostics, Map<Object, Object> context) {
@@ -244,36 +244,36 @@ public class CardiacArrestExistenceOperations extends ClinicalStatementOperation
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateCardiacArrestExistencePriorAEDRelationship(CardiacArrestExistence, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Cardiac Arrest Existence Prior AED Relationship</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateCardiacArrestExistencePriorAEDRelationship(CardiacArrestExistence, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Cardiac Arrest Existence Prior AED Relationship</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateCardiacArrestExistencePriorAEDRelationship(CardiacArrestExistence, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateCardiacArrestExistencePriorAEDRelationship(CardiacArrestExistence, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_CARDIAC_ARREST_EXISTENCE_PRIOR_AED_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.oclIsUndefined() and entryRelationship.oclIsKindOf(cda::EntryRelationship))";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateCardiacArrestExistencePriorAEDRelationship(CardiacArrestExistence, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Cardiac Arrest Existence Prior AED Relationship</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateCardiacArrestExistencePriorAEDRelationship(CardiacArrestExistence, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Cardiac Arrest Existence Prior AED Relationship</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateCardiacArrestExistencePriorAEDRelationship(CardiacArrestExistence, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateCardiacArrestExistencePriorAEDRelationship(CardiacArrestExistence, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 
 	protected static Constraint VALIDATE_CARDIAC_ARREST_EXISTENCE_PRIOR_AED_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param cardiacArrestExistence The receiving '<em><b>Cardiac Arrest Existence</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param cardiacArrestExistence The receiving '<em><b>Cardiac Arrest Existence</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 
 	public static boolean validateCardiacArrestExistencePriorAEDRelationship(
 			CardiacArrestExistence cardiacArrestExistence, DiagnosticChain diagnostics, Map<Object, Object> context) {
@@ -304,36 +304,36 @@ public class CardiacArrestExistenceOperations extends ClinicalStatementOperation
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateCardiacArrestExistenceSpontaneousCirculationRelationship(CardiacArrestExistence, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Cardiac Arrest Existence Spontaneous Circulation Relationship</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateCardiacArrestExistenceSpontaneousCirculationRelationship(CardiacArrestExistence, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Cardiac Arrest Existence Spontaneous Circulation Relationship</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateCardiacArrestExistenceSpontaneousCirculationRelationship(CardiacArrestExistence, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateCardiacArrestExistenceSpontaneousCirculationRelationship(CardiacArrestExistence, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_CARDIAC_ARREST_EXISTENCE_SPONTANEOUS_CIRCULATION_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.oclIsUndefined() and entryRelationship.oclIsKindOf(cda::EntryRelationship))";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateCardiacArrestExistenceSpontaneousCirculationRelationship(CardiacArrestExistence, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Cardiac Arrest Existence Spontaneous Circulation Relationship</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateCardiacArrestExistenceSpontaneousCirculationRelationship(CardiacArrestExistence, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Cardiac Arrest Existence Spontaneous Circulation Relationship</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateCardiacArrestExistenceSpontaneousCirculationRelationship(CardiacArrestExistence, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateCardiacArrestExistenceSpontaneousCirculationRelationship(CardiacArrestExistence, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 
 	protected static Constraint VALIDATE_CARDIAC_ARREST_EXISTENCE_SPONTANEOUS_CIRCULATION_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param cardiacArrestExistence The receiving '<em><b>Cardiac Arrest Existence</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param cardiacArrestExistence The receiving '<em><b>Cardiac Arrest Existence</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 
 	public static boolean validateCardiacArrestExistenceSpontaneousCirculationRelationship(
 			CardiacArrestExistence cardiacArrestExistence, DiagnosticChain diagnostics, Map<Object, Object> context) {
@@ -365,36 +365,36 @@ public class CardiacArrestExistenceOperations extends ClinicalStatementOperation
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateCardiacArrestExistenceDestinationRhythmRelationship(CardiacArrestExistence, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Cardiac Arrest Existence Destination Rhythm Relationship</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateCardiacArrestExistenceDestinationRhythmRelationship(CardiacArrestExistence, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Cardiac Arrest Existence Destination Rhythm Relationship</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateCardiacArrestExistenceDestinationRhythmRelationship(CardiacArrestExistence, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateCardiacArrestExistenceDestinationRhythmRelationship(CardiacArrestExistence, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_CARDIAC_ARREST_EXISTENCE_DESTINATION_RHYTHM_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->exists(entryRelationship : cda::EntryRelationship | not entryRelationship.oclIsUndefined() and entryRelationship.oclIsKindOf(cda::EntryRelationship))";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateCardiacArrestExistenceDestinationRhythmRelationship(CardiacArrestExistence, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Cardiac Arrest Existence Destination Rhythm Relationship</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateCardiacArrestExistenceDestinationRhythmRelationship(CardiacArrestExistence, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Cardiac Arrest Existence Destination Rhythm Relationship</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateCardiacArrestExistenceDestinationRhythmRelationship(CardiacArrestExistence, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateCardiacArrestExistenceDestinationRhythmRelationship(CardiacArrestExistence, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 
 	protected static Constraint VALIDATE_CARDIAC_ARREST_EXISTENCE_DESTINATION_RHYTHM_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param cardiacArrestExistence The receiving '<em><b>Cardiac Arrest Existence</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param cardiacArrestExistence The receiving '<em><b>Cardiac Arrest Existence</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 
 	public static boolean validateCardiacArrestExistenceDestinationRhythmRelationship(
 			CardiacArrestExistence cardiacArrestExistence, DiagnosticChain diagnostics, Map<Object, Object> context) {
@@ -425,36 +425,36 @@ public class CardiacArrestExistenceOperations extends ClinicalStatementOperation
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateCardiacArrestExistenceArrestRhythmRelationship(CardiacArrestExistence, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Cardiac Arrest Existence Arrest Rhythm Relationship</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateCardiacArrestExistenceArrestRhythmRelationship(CardiacArrestExistence, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Cardiac Arrest Existence Arrest Rhythm Relationship</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateCardiacArrestExistenceArrestRhythmRelationship(CardiacArrestExistence, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateCardiacArrestExistenceArrestRhythmRelationship(CardiacArrestExistence, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_CARDIAC_ARREST_EXISTENCE_ARREST_RHYTHM_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.oclIsUndefined() and entryRelationship.oclIsKindOf(cda::EntryRelationship))";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateCardiacArrestExistenceArrestRhythmRelationship(CardiacArrestExistence, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Cardiac Arrest Existence Arrest Rhythm Relationship</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateCardiacArrestExistenceArrestRhythmRelationship(CardiacArrestExistence, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Cardiac Arrest Existence Arrest Rhythm Relationship</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateCardiacArrestExistenceArrestRhythmRelationship(CardiacArrestExistence, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateCardiacArrestExistenceArrestRhythmRelationship(CardiacArrestExistence, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 
 	protected static Constraint VALIDATE_CARDIAC_ARREST_EXISTENCE_ARREST_RHYTHM_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param cardiacArrestExistence The receiving '<em><b>Cardiac Arrest Existence</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param cardiacArrestExistence The receiving '<em><b>Cardiac Arrest Existence</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 
 	public static boolean validateCardiacArrestExistenceArrestRhythmRelationship(
 			CardiacArrestExistence cardiacArrestExistence, DiagnosticChain diagnostics, Map<Object, Object> context) {
@@ -485,36 +485,36 @@ public class CardiacArrestExistenceOperations extends ClinicalStatementOperation
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateCardiacArrestExistenceTemplateId(CardiacArrestExistence, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Cardiac Arrest Existence Template Id</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateCardiacArrestExistenceTemplateId(CardiacArrestExistence, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Cardiac Arrest Existence Template Id</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateCardiacArrestExistenceTemplateId(CardiacArrestExistence, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateCardiacArrestExistenceTemplateId(CardiacArrestExistence, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_CARDIAC_ARREST_EXISTENCE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.1133883.17.3.10.1.27')";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateCardiacArrestExistenceTemplateId(CardiacArrestExistence, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Cardiac Arrest Existence Template Id</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateCardiacArrestExistenceTemplateId(CardiacArrestExistence, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Cardiac Arrest Existence Template Id</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateCardiacArrestExistenceTemplateId(CardiacArrestExistence, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateCardiacArrestExistenceTemplateId(CardiacArrestExistence, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 
 	protected static Constraint VALIDATE_CARDIAC_ARREST_EXISTENCE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param cardiacArrestExistence The receiving '<em><b>Cardiac Arrest Existence</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param cardiacArrestExistence The receiving '<em><b>Cardiac Arrest Existence</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 
 	public static boolean validateCardiacArrestExistenceTemplateId(CardiacArrestExistence cardiacArrestExistence,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
@@ -544,38 +544,38 @@ public class CardiacArrestExistenceOperations extends ClinicalStatementOperation
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateCardiacArrestExistenceCode(CardiacArrestExistence, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Cardiac Arrest Existence Code</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateCardiacArrestExistenceCode(CardiacArrestExistence, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Cardiac Arrest Existence Code</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateCardiacArrestExistenceCode(CardiacArrestExistence, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateCardiacArrestExistenceCode(CardiacArrestExistence, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_CARDIAC_ARREST_EXISTENCE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "
 			+ "let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "
 			+ "value.code = 'ASSERTION' and value.codeSystem = '2.16.840.1.113883.5.4')";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateCardiacArrestExistenceCode(CardiacArrestExistence, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Cardiac Arrest Existence Code</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateCardiacArrestExistenceCode(CardiacArrestExistence, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Cardiac Arrest Existence Code</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateCardiacArrestExistenceCode(CardiacArrestExistence, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateCardiacArrestExistenceCode(CardiacArrestExistence, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 
 	protected static Constraint VALIDATE_CARDIAC_ARREST_EXISTENCE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param cardiacArrestExistence The receiving '<em><b>Cardiac Arrest Existence</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param cardiacArrestExistence The receiving '<em><b>Cardiac Arrest Existence</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 
 	public static boolean validateCardiacArrestExistenceCode(CardiacArrestExistence cardiacArrestExistence,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
@@ -605,36 +605,36 @@ public class CardiacArrestExistenceOperations extends ClinicalStatementOperation
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateCardiacArrestExistenceEffectiveTime(CardiacArrestExistence, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Cardiac Arrest Existence Effective Time</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateCardiacArrestExistenceEffectiveTime(CardiacArrestExistence, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Cardiac Arrest Existence Effective Time</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateCardiacArrestExistenceEffectiveTime(CardiacArrestExistence, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateCardiacArrestExistenceEffectiveTime(CardiacArrestExistence, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_CARDIAC_ARREST_EXISTENCE_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.effectiveTime.oclIsUndefined() or self.effectiveTime.isNullFlavorUndefined()) implies (not self.effectiveTime.oclIsUndefined())";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateCardiacArrestExistenceEffectiveTime(CardiacArrestExistence, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Cardiac Arrest Existence Effective Time</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateCardiacArrestExistenceEffectiveTime(CardiacArrestExistence, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Cardiac Arrest Existence Effective Time</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateCardiacArrestExistenceEffectiveTime(CardiacArrestExistence, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateCardiacArrestExistenceEffectiveTime(CardiacArrestExistence, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 
 	protected static Constraint VALIDATE_CARDIAC_ARREST_EXISTENCE_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param cardiacArrestExistence The receiving '<em><b>Cardiac Arrest Existence</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param cardiacArrestExistence The receiving '<em><b>Cardiac Arrest Existence</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 
 	public static boolean validateCardiacArrestExistenceEffectiveTime(CardiacArrestExistence cardiacArrestExistence,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
@@ -664,38 +664,38 @@ public class CardiacArrestExistenceOperations extends ClinicalStatementOperation
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateCardiacArrestExistenceValue(CardiacArrestExistence, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Cardiac Arrest Existence Value</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateCardiacArrestExistenceValue(CardiacArrestExistence, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Cardiac Arrest Existence Value</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateCardiacArrestExistenceValue(CardiacArrestExistence, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateCardiacArrestExistenceValue(CardiacArrestExistence, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_CARDIAC_ARREST_EXISTENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and "
 			+ "let value : datatypes::CD = element.oclAsType(datatypes::CD) in "
 			+ "value.code = '410429000' and value.codeSystem = '2.16.840.1.113883.6.96'))";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateCardiacArrestExistenceValue(CardiacArrestExistence, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Cardiac Arrest Existence Value</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateCardiacArrestExistenceValue(CardiacArrestExistence, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Cardiac Arrest Existence Value</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateCardiacArrestExistenceValue(CardiacArrestExistence, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateCardiacArrestExistenceValue(CardiacArrestExistence, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 
 	protected static Constraint VALIDATE_CARDIAC_ARREST_EXISTENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param cardiacArrestExistence The receiving '<em><b>Cardiac Arrest Existence</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param cardiacArrestExistence The receiving '<em><b>Cardiac Arrest Existence</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 
 	public static boolean validateCardiacArrestExistenceValue(CardiacArrestExistence cardiacArrestExistence,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
@@ -725,36 +725,36 @@ public class CardiacArrestExistenceOperations extends ClinicalStatementOperation
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateCardiacArrestExistenceNegationInd(CardiacArrestExistence, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Cardiac Arrest Existence Negation Ind</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateCardiacArrestExistenceNegationInd(CardiacArrestExistence, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Cardiac Arrest Existence Negation Ind</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateCardiacArrestExistenceNegationInd(CardiacArrestExistence, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateCardiacArrestExistenceNegationInd(CardiacArrestExistence, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_CARDIAC_ARREST_EXISTENCE_NEGATION_IND__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "not self.negationInd.oclIsUndefined()";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateCardiacArrestExistenceNegationInd(CardiacArrestExistence, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Cardiac Arrest Existence Negation Ind</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateCardiacArrestExistenceNegationInd(CardiacArrestExistence, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Cardiac Arrest Existence Negation Ind</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateCardiacArrestExistenceNegationInd(CardiacArrestExistence, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateCardiacArrestExistenceNegationInd(CardiacArrestExistence, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 
 	protected static Constraint VALIDATE_CARDIAC_ARREST_EXISTENCE_NEGATION_IND__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param cardiacArrestExistence The receiving '<em><b>Cardiac Arrest Existence</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param cardiacArrestExistence The receiving '<em><b>Cardiac Arrest Existence</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 
 	public static boolean validateCardiacArrestExistenceNegationInd(CardiacArrestExistence cardiacArrestExistence,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
@@ -784,36 +784,36 @@ public class CardiacArrestExistenceOperations extends ClinicalStatementOperation
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateCardiacArrestExistenceMoodCode(CardiacArrestExistence, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Cardiac Arrest Existence Mood Code</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateCardiacArrestExistenceMoodCode(CardiacArrestExistence, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Cardiac Arrest Existence Mood Code</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateCardiacArrestExistenceMoodCode(CardiacArrestExistence, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateCardiacArrestExistenceMoodCode(CardiacArrestExistence, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_CARDIAC_ARREST_EXISTENCE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "isDefined('moodCode')";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateCardiacArrestExistenceMoodCode(CardiacArrestExistence, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Cardiac Arrest Existence Mood Code</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateCardiacArrestExistenceMoodCode(CardiacArrestExistence, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Cardiac Arrest Existence Mood Code</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateCardiacArrestExistenceMoodCode(CardiacArrestExistence, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateCardiacArrestExistenceMoodCode(CardiacArrestExistence, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 
 	protected static Constraint VALIDATE_CARDIAC_ARREST_EXISTENCE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param cardiacArrestExistence The receiving '<em><b>Cardiac Arrest Existence</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param cardiacArrestExistence The receiving '<em><b>Cardiac Arrest Existence</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 
 	public static boolean validateCardiacArrestExistenceMoodCode(CardiacArrestExistence cardiacArrestExistence,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {

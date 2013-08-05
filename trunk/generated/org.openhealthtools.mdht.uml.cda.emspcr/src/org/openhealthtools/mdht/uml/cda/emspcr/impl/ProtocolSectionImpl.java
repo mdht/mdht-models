@@ -37,102 +37,102 @@ import org.openhealthtools.mdht.uml.cda.impl.SectionImpl;
  */
 public class ProtocolSectionImpl extends SectionImpl implements ProtocolSection {
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	protected ProtocolSectionImpl() {
 		super();
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
 		return EmspcrPackage.Literals.PROTOCOL_SECTION;
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateProtocolSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProtocolSectionOperations.validateProtocolSectionTemplateId(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateProtocolSectionCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProtocolSectionOperations.validateProtocolSectionCode(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateProtocolSectionTitle(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProtocolSectionOperations.validateProtocolSectionTitle(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateProtocolSectionText(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProtocolSectionOperations.validateProtocolSectionText(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateProtocolSectionProtocolObservation(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProtocolSectionOperations.validateProtocolSectionProtocolObservation(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateProtocolSectionCandidatePatientRegistryType(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ProtocolSectionOperations.validateProtocolSectionCandidatePatientRegistryType(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public ProtocolObservation getProtocolObservation() {
 		return ProtocolSectionOperations.getProtocolObservation(this);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public CandidatePatientRegistryType getCandidatePatientRegistryType() {
 		return ProtocolSectionOperations.getCandidatePatientRegistryType(this);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public ProtocolSection init() {
 		return Initializer.Util.init(this);
 	}

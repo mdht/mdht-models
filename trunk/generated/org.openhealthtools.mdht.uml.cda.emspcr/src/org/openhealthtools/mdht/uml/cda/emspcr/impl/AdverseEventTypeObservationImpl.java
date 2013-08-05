@@ -35,29 +35,29 @@ import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
  */
 public class AdverseEventTypeObservationImpl extends ObservationImpl implements AdverseEventTypeObservation {
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	protected AdverseEventTypeObservationImpl() {
 		super();
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
 		return EmspcrPackage.Literals.ADVERSE_EVENT_TYPE_OBSERVATION;
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateAdverseEventTypeObservationTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return AdverseEventTypeObservationOperations.validateAdverseEventTypeObservationTemplateId(
@@ -65,59 +65,59 @@ public class AdverseEventTypeObservationImpl extends ObservationImpl implements 
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateAdverseEventTypeObservationCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return AdverseEventTypeObservationOperations.validateAdverseEventTypeObservationCodeP(
 			this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateAdverseEventTypeObservationCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return AdverseEventTypeObservationOperations.validateAdverseEventTypeObservationCode(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateAdverseEventTypeObservationValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return AdverseEventTypeObservationOperations.validateAdverseEventTypeObservationValue(
 			this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateAdverseEventTypeObservationValueP(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return AdverseEventTypeObservationOperations.validateAdverseEventTypeObservationValueP(
 			this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateAdverseEventTypeObservationMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return AdverseEventTypeObservationOperations.validateAdverseEventTypeObservationMoodCode(
 			this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public AdverseEventTypeObservation init() {
 		return Initializer.Util.init(this);
 	}

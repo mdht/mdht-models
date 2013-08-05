@@ -42,120 +42,120 @@ import org.openhealthtools.mdht.uml.cda.impl.SectionImpl;
  */
 public class SituationSectionImpl extends SectionImpl implements SituationSection {
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	protected SituationSectionImpl() {
 		super();
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
 		return EmspcrPackage.Literals.SITUATION_SECTION;
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateSituationSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return SituationSectionOperations.validateSituationSectionTemplateId(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateSituationSectionCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return SituationSectionOperations.validateSituationSectionCode(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateSituationSectionCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return SituationSectionOperations.validateSituationSectionCodeP(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateSituationSectionTitle(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return SituationSectionOperations.validateSituationSectionTitle(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateSituationSectionText(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return SituationSectionOperations.validateSituationSectionText(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateSituationSectionComplaint(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return SituationSectionOperations.validateSituationSectionComplaint(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateSituationSectionPossibleInjury(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return SituationSectionOperations.validateSituationSectionPossibleInjury(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateSituationSectionProviderPrimaryImpression(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return SituationSectionOperations.validateSituationSectionProviderPrimaryImpression(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateSituationSectionPrimarySymptom(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return SituationSectionOperations.validateSituationSectionPrimarySymptom(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateSituationSectionOtherSymptoms(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return SituationSectionOperations.validateSituationSectionOtherSymptoms(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateSituationSectionProviderSecondaryImpressions(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return SituationSectionOperations.validateSituationSectionProviderSecondaryImpressions(
@@ -163,82 +163,82 @@ public class SituationSectionImpl extends SectionImpl implements SituationSectio
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateSituationSectionInitialPatientAcuity(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return SituationSectionOperations.validateSituationSectionInitialPatientAcuity(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public Complaint getComplaint() {
 		return SituationSectionOperations.getComplaint(this);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public PossibleInjury getPossibleInjury() {
 		return SituationSectionOperations.getPossibleInjury(this);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public ProviderPrimaryImpression getProviderPrimaryImpression() {
 		return SituationSectionOperations.getProviderPrimaryImpression(this);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public PrimarySymptom getPrimarySymptom() {
 		return SituationSectionOperations.getPrimarySymptom(this);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public OtherSymptoms getOtherSymptoms() {
 		return SituationSectionOperations.getOtherSymptoms(this);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public ProviderSecondaryImpressions getProviderSecondaryImpressions() {
 		return SituationSectionOperations.getProviderSecondaryImpressions(this);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public InitialPatientAcuity getInitialPatientAcuity() {
 		return SituationSectionOperations.getInitialPatientAcuity(this);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public SituationSection init() {
 		return Initializer.Util.init(this);
 	}

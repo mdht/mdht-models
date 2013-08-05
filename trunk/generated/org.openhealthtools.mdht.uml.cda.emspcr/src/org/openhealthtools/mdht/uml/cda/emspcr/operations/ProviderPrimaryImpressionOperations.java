@@ -47,45 +47,45 @@ import org.openhealthtools.mdht.uml.cda.operations.ClinicalStatementOperations;
  */
 public class ProviderPrimaryImpressionOperations extends ClinicalStatementOperations {
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	protected ProviderPrimaryImpressionOperations() {
 		super();
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateProviderPrimaryImpressionTemplateId(ProviderPrimaryImpression, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Provider Primary Impression Template Id</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateProviderPrimaryImpressionTemplateId(ProviderPrimaryImpression, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Provider Primary Impression Template Id</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateProviderPrimaryImpressionTemplateId(ProviderPrimaryImpression, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateProviderPrimaryImpressionTemplateId(ProviderPrimaryImpression, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_PROVIDER_PRIMARY_IMPRESSION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.1133883.17.3.10.1.65')";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateProviderPrimaryImpressionTemplateId(ProviderPrimaryImpression, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Provider Primary Impression Template Id</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateProviderPrimaryImpressionTemplateId(ProviderPrimaryImpression, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Provider Primary Impression Template Id</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateProviderPrimaryImpressionTemplateId(ProviderPrimaryImpression, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateProviderPrimaryImpressionTemplateId(ProviderPrimaryImpression, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 
 	protected static Constraint VALIDATE_PROVIDER_PRIMARY_IMPRESSION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param providerPrimaryImpression The receiving '<em><b>Provider Primary Impression</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param providerPrimaryImpression The receiving '<em><b>Provider Primary Impression</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 
 	public static boolean validateProviderPrimaryImpressionTemplateId(
 			ProviderPrimaryImpression providerPrimaryImpression, DiagnosticChain diagnostics,
@@ -116,36 +116,36 @@ public class ProviderPrimaryImpressionOperations extends ClinicalStatementOperat
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateProviderPrimaryImpressionCodeP(ProviderPrimaryImpression, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Provider Primary Impression Code P</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateProviderPrimaryImpressionCodeP(ProviderPrimaryImpression, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Provider Primary Impression Code P</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateProviderPrimaryImpressionCodeP(ProviderPrimaryImpression, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateProviderPrimaryImpressionCodeP(ProviderPrimaryImpression, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_PROVIDER_PRIMARY_IMPRESSION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined())";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateProviderPrimaryImpressionCodeP(ProviderPrimaryImpression, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Provider Primary Impression Code P</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateProviderPrimaryImpressionCodeP(ProviderPrimaryImpression, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Provider Primary Impression Code P</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateProviderPrimaryImpressionCodeP(ProviderPrimaryImpression, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateProviderPrimaryImpressionCodeP(ProviderPrimaryImpression, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 
 	protected static Constraint VALIDATE_PROVIDER_PRIMARY_IMPRESSION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param providerPrimaryImpression The receiving '<em><b>Provider Primary Impression</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param providerPrimaryImpression The receiving '<em><b>Provider Primary Impression</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 
 	public static boolean validateProviderPrimaryImpressionCodeP(ProviderPrimaryImpression providerPrimaryImpression,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
@@ -187,38 +187,38 @@ public class ProviderPrimaryImpressionOperations extends ClinicalStatementOperat
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateProviderPrimaryImpressionCode(ProviderPrimaryImpression, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Provider Primary Impression Code</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateProviderPrimaryImpressionCode(ProviderPrimaryImpression, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Provider Primary Impression Code</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateProviderPrimaryImpressionCode(ProviderPrimaryImpression, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateProviderPrimaryImpressionCode(ProviderPrimaryImpression, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_PROVIDER_PRIMARY_IMPRESSION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "
 			+ "let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "
 			+ "value.code = '67492-9' and value.codeSystem = '2.16.840.1.113883.6.1')";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateProviderPrimaryImpressionCode(ProviderPrimaryImpression, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Provider Primary Impression Code</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateProviderPrimaryImpressionCode(ProviderPrimaryImpression, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Provider Primary Impression Code</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateProviderPrimaryImpressionCode(ProviderPrimaryImpression, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateProviderPrimaryImpressionCode(ProviderPrimaryImpression, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 
 	protected static Constraint VALIDATE_PROVIDER_PRIMARY_IMPRESSION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param providerPrimaryImpression The receiving '<em><b>Provider Primary Impression</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param providerPrimaryImpression The receiving '<em><b>Provider Primary Impression</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 
 	public static boolean validateProviderPrimaryImpressionCode(ProviderPrimaryImpression providerPrimaryImpression,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
@@ -256,38 +256,38 @@ public class ProviderPrimaryImpressionOperations extends ClinicalStatementOperat
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateProviderPrimaryImpressionValue(ProviderPrimaryImpression, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Provider Primary Impression Value</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateProviderPrimaryImpressionValue(ProviderPrimaryImpression, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Provider Primary Impression Value</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateProviderPrimaryImpressionValue(ProviderPrimaryImpression, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateProviderPrimaryImpressionValue(ProviderPrimaryImpression, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_PROVIDER_PRIMARY_IMPRESSION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and "
 			+ "let value : datatypes::CD = element.oclAsType(datatypes::CD) in "
 			+ "value.codeSystem = '2.16.840.1.113883.6.90'))";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateProviderPrimaryImpressionValue(ProviderPrimaryImpression, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Provider Primary Impression Value</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateProviderPrimaryImpressionValue(ProviderPrimaryImpression, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Provider Primary Impression Value</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateProviderPrimaryImpressionValue(ProviderPrimaryImpression, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateProviderPrimaryImpressionValue(ProviderPrimaryImpression, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 
 	protected static Constraint VALIDATE_PROVIDER_PRIMARY_IMPRESSION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param providerPrimaryImpression The receiving '<em><b>Provider Primary Impression</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param providerPrimaryImpression The receiving '<em><b>Provider Primary Impression</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 
 	public static boolean validateProviderPrimaryImpressionValue(ProviderPrimaryImpression providerPrimaryImpression,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
@@ -317,36 +317,36 @@ public class ProviderPrimaryImpressionOperations extends ClinicalStatementOperat
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateProviderPrimaryImpressionValueP(ProviderPrimaryImpression, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Provider Primary Impression Value P</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateProviderPrimaryImpressionValueP(ProviderPrimaryImpression, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Provider Primary Impression Value P</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateProviderPrimaryImpressionValueP(ProviderPrimaryImpression, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateProviderPrimaryImpressionValueP(ProviderPrimaryImpression, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_PROVIDER_PRIMARY_IMPRESSION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | element.oclIsTypeOf(datatypes::CD)))";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateProviderPrimaryImpressionValueP(ProviderPrimaryImpression, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Provider Primary Impression Value P</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateProviderPrimaryImpressionValueP(ProviderPrimaryImpression, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Provider Primary Impression Value P</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateProviderPrimaryImpressionValueP(ProviderPrimaryImpression, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateProviderPrimaryImpressionValueP(ProviderPrimaryImpression, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 
 	protected static Constraint VALIDATE_PROVIDER_PRIMARY_IMPRESSION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param providerPrimaryImpression The receiving '<em><b>Provider Primary Impression</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param providerPrimaryImpression The receiving '<em><b>Provider Primary Impression</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 
 	public static boolean validateProviderPrimaryImpressionValueP(ProviderPrimaryImpression providerPrimaryImpression,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
@@ -376,36 +376,36 @@ public class ProviderPrimaryImpressionOperations extends ClinicalStatementOperat
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateProviderPrimaryImpressionMoodCode(ProviderPrimaryImpression, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Provider Primary Impression Mood Code</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateProviderPrimaryImpressionMoodCode(ProviderPrimaryImpression, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Provider Primary Impression Mood Code</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateProviderPrimaryImpressionMoodCode(ProviderPrimaryImpression, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateProviderPrimaryImpressionMoodCode(ProviderPrimaryImpression, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_PROVIDER_PRIMARY_IMPRESSION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "isDefined('moodCode')";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateProviderPrimaryImpressionMoodCode(ProviderPrimaryImpression, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Provider Primary Impression Mood Code</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateProviderPrimaryImpressionMoodCode(ProviderPrimaryImpression, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Provider Primary Impression Mood Code</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateProviderPrimaryImpressionMoodCode(ProviderPrimaryImpression, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateProviderPrimaryImpressionMoodCode(ProviderPrimaryImpression, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 
 	protected static Constraint VALIDATE_PROVIDER_PRIMARY_IMPRESSION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param providerPrimaryImpression The receiving '<em><b>Provider Primary Impression</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param providerPrimaryImpression The receiving '<em><b>Provider Primary Impression</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 
 	public static boolean validateProviderPrimaryImpressionMoodCode(
 			ProviderPrimaryImpression providerPrimaryImpression, DiagnosticChain diagnostics,

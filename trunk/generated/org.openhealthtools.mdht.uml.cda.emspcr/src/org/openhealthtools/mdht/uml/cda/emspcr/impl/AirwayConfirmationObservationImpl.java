@@ -35,29 +35,29 @@ import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
  */
 public class AirwayConfirmationObservationImpl extends ObservationImpl implements AirwayConfirmationObservation {
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	protected AirwayConfirmationObservationImpl() {
 		super();
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
 		return EmspcrPackage.Literals.AIRWAY_CONFIRMATION_OBSERVATION;
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateAirwayConfirmationObservationTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return AirwayConfirmationObservationOperations.validateAirwayConfirmationObservationTemplateId(
@@ -65,30 +65,30 @@ public class AirwayConfirmationObservationImpl extends ObservationImpl implement
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateAirwayConfirmationObservationCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return AirwayConfirmationObservationOperations.validateAirwayConfirmationObservationCodeP(
 			this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateAirwayConfirmationObservationCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return AirwayConfirmationObservationOperations.validateAirwayConfirmationObservationCode(
 			this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateAirwayConfirmationObservationMethodCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return AirwayConfirmationObservationOperations.validateAirwayConfirmationObservationMethodCode(
@@ -96,10 +96,10 @@ public class AirwayConfirmationObservationImpl extends ObservationImpl implement
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateAirwayConfirmationObservationMethodCodeP(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return AirwayConfirmationObservationOperations.validateAirwayConfirmationObservationMethodCodeP(
@@ -107,20 +107,20 @@ public class AirwayConfirmationObservationImpl extends ObservationImpl implement
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateAirwayConfirmationObservationValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return AirwayConfirmationObservationOperations.validateAirwayConfirmationObservationValue(
 			this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateAirwayConfirmationObservationEffectiveTime(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return AirwayConfirmationObservationOperations.validateAirwayConfirmationObservationEffectiveTime(
@@ -128,10 +128,10 @@ public class AirwayConfirmationObservationImpl extends ObservationImpl implement
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateAirwayConfirmationObservationMoodCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return AirwayConfirmationObservationOperations.validateAirwayConfirmationObservationMoodCode(
@@ -139,10 +139,10 @@ public class AirwayConfirmationObservationImpl extends ObservationImpl implement
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public AirwayConfirmationObservation init() {
 		return Initializer.Util.init(this);
 	}

@@ -46,45 +46,45 @@ import org.openhealthtools.mdht.uml.cda.operations.ClinicalStatementOperations;
  */
 public class DispatchNotifiedTimeOperations extends ClinicalStatementOperations {
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	protected DispatchNotifiedTimeOperations() {
 		super();
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateDispatchNotifiedTimeTemplateId(DispatchNotifiedTime, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Dispatch Notified Time Template Id</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateDispatchNotifiedTimeTemplateId(DispatchNotifiedTime, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Dispatch Notified Time Template Id</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateDispatchNotifiedTimeTemplateId(DispatchNotifiedTime, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateDispatchNotifiedTimeTemplateId(DispatchNotifiedTime, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_DISPATCH_NOTIFIED_TIME_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.1133883.17.3.10.1.46')";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateDispatchNotifiedTimeTemplateId(DispatchNotifiedTime, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Dispatch Notified Time Template Id</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateDispatchNotifiedTimeTemplateId(DispatchNotifiedTime, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Dispatch Notified Time Template Id</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateDispatchNotifiedTimeTemplateId(DispatchNotifiedTime, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateDispatchNotifiedTimeTemplateId(DispatchNotifiedTime, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 
 	protected static Constraint VALIDATE_DISPATCH_NOTIFIED_TIME_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param dispatchNotifiedTime The receiving '<em><b>Dispatch Notified Time</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param dispatchNotifiedTime The receiving '<em><b>Dispatch Notified Time</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 
 	public static boolean validateDispatchNotifiedTimeTemplateId(DispatchNotifiedTime dispatchNotifiedTime,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
@@ -114,36 +114,36 @@ public class DispatchNotifiedTimeOperations extends ClinicalStatementOperations 
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateDispatchNotifiedTimeCodeP(DispatchNotifiedTime, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Dispatch Notified Time Code P</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateDispatchNotifiedTimeCodeP(DispatchNotifiedTime, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Dispatch Notified Time Code P</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateDispatchNotifiedTimeCodeP(DispatchNotifiedTime, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateDispatchNotifiedTimeCodeP(DispatchNotifiedTime, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_DISPATCH_NOTIFIED_TIME_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined())";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateDispatchNotifiedTimeCodeP(DispatchNotifiedTime, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Dispatch Notified Time Code P</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateDispatchNotifiedTimeCodeP(DispatchNotifiedTime, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Dispatch Notified Time Code P</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateDispatchNotifiedTimeCodeP(DispatchNotifiedTime, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateDispatchNotifiedTimeCodeP(DispatchNotifiedTime, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 
 	protected static Constraint VALIDATE_DISPATCH_NOTIFIED_TIME_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param dispatchNotifiedTime The receiving '<em><b>Dispatch Notified Time</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param dispatchNotifiedTime The receiving '<em><b>Dispatch Notified Time</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 
 	public static boolean validateDispatchNotifiedTimeCodeP(DispatchNotifiedTime dispatchNotifiedTime,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
@@ -184,38 +184,38 @@ public class DispatchNotifiedTimeOperations extends ClinicalStatementOperations 
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateDispatchNotifiedTimeCode(DispatchNotifiedTime, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Dispatch Notified Time Code</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateDispatchNotifiedTimeCode(DispatchNotifiedTime, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Dispatch Notified Time Code</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateDispatchNotifiedTimeCode(DispatchNotifiedTime, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateDispatchNotifiedTimeCode(DispatchNotifiedTime, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_DISPATCH_NOTIFIED_TIME_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "
 			+ "let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "
 			+ "value.code = '69470-3' and value.codeSystem = '2.16.840.1.113883.6.1')";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateDispatchNotifiedTimeCode(DispatchNotifiedTime, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Dispatch Notified Time Code</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateDispatchNotifiedTimeCode(DispatchNotifiedTime, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Dispatch Notified Time Code</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateDispatchNotifiedTimeCode(DispatchNotifiedTime, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateDispatchNotifiedTimeCode(DispatchNotifiedTime, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 
 	protected static Constraint VALIDATE_DISPATCH_NOTIFIED_TIME_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param dispatchNotifiedTime The receiving '<em><b>Dispatch Notified Time</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param dispatchNotifiedTime The receiving '<em><b>Dispatch Notified Time</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 
 	public static boolean validateDispatchNotifiedTimeCode(DispatchNotifiedTime dispatchNotifiedTime,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
@@ -252,36 +252,36 @@ public class DispatchNotifiedTimeOperations extends ClinicalStatementOperations 
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateDispatchNotifiedTimeValue(DispatchNotifiedTime, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Dispatch Notified Time Value</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateDispatchNotifiedTimeValue(DispatchNotifiedTime, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Dispatch Notified Time Value</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateDispatchNotifiedTimeValue(DispatchNotifiedTime, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateDispatchNotifiedTimeValue(DispatchNotifiedTime, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_DISPATCH_NOTIFIED_TIME_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | element.oclIsTypeOf(datatypes::TS)))";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateDispatchNotifiedTimeValue(DispatchNotifiedTime, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Dispatch Notified Time Value</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateDispatchNotifiedTimeValue(DispatchNotifiedTime, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Dispatch Notified Time Value</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateDispatchNotifiedTimeValue(DispatchNotifiedTime, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateDispatchNotifiedTimeValue(DispatchNotifiedTime, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 
 	protected static Constraint VALIDATE_DISPATCH_NOTIFIED_TIME_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param dispatchNotifiedTime The receiving '<em><b>Dispatch Notified Time</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param dispatchNotifiedTime The receiving '<em><b>Dispatch Notified Time</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 
 	public static boolean validateDispatchNotifiedTimeValue(DispatchNotifiedTime dispatchNotifiedTime,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
@@ -310,36 +310,36 @@ public class DispatchNotifiedTimeOperations extends ClinicalStatementOperations 
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateDispatchNotifiedTimeMoodCode(DispatchNotifiedTime, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Dispatch Notified Time Mood Code</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateDispatchNotifiedTimeMoodCode(DispatchNotifiedTime, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Dispatch Notified Time Mood Code</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateDispatchNotifiedTimeMoodCode(DispatchNotifiedTime, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateDispatchNotifiedTimeMoodCode(DispatchNotifiedTime, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_DISPATCH_NOTIFIED_TIME_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "isDefined('moodCode')";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateDispatchNotifiedTimeMoodCode(DispatchNotifiedTime, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Dispatch Notified Time Mood Code</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateDispatchNotifiedTimeMoodCode(DispatchNotifiedTime, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Dispatch Notified Time Mood Code</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateDispatchNotifiedTimeMoodCode(DispatchNotifiedTime, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateDispatchNotifiedTimeMoodCode(DispatchNotifiedTime, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 
 	protected static Constraint VALIDATE_DISPATCH_NOTIFIED_TIME_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param dispatchNotifiedTime The receiving '<em><b>Dispatch Notified Time</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param dispatchNotifiedTime The receiving '<em><b>Dispatch Notified Time</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 
 	public static boolean validateDispatchNotifiedTimeMoodCode(DispatchNotifiedTime dispatchNotifiedTime,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {

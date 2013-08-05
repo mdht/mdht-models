@@ -35,87 +35,87 @@ import org.openhealthtools.mdht.uml.cda.impl.OrganizerImpl;
  */
 public class DelayOrganizerImpl extends OrganizerImpl implements DelayOrganizer {
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	protected DelayOrganizerImpl() {
 		super();
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
 		return EmspcrPackage.Literals.DELAY_ORGANIZER;
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateDelayOrganizerDispatchDelayRelationship(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return DelayOrganizerOperations.validateDelayOrganizerDispatchDelayRelationship(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateDelayOrganizerResponseDelayRelationship(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return DelayOrganizerOperations.validateDelayOrganizerResponseDelayRelationship(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateDelayOrganizerSceneDelayRelationship(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return DelayOrganizerOperations.validateDelayOrganizerSceneDelayRelationship(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateDelayOrganizerTransportDelayRelationship(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return DelayOrganizerOperations.validateDelayOrganizerTransportDelayRelationship(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateDelayOrganizerTurnaoundDelayRelationship(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return DelayOrganizerOperations.validateDelayOrganizerTurnaoundDelayRelationship(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateDelayOrganizerTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return DelayOrganizerOperations.validateDelayOrganizerTemplateId(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public DelayOrganizer init() {
 		return Initializer.Util.init(this);
 	}

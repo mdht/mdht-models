@@ -35,92 +35,92 @@ import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
  */
 public class LevelOfResponsivenessImpl extends ObservationImpl implements LevelOfResponsiveness {
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	protected LevelOfResponsivenessImpl() {
 		super();
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
 		return EmspcrPackage.Literals.LEVEL_OF_RESPONSIVENESS;
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateLevelOfResponsivenessTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return LevelOfResponsivenessOperations.validateLevelOfResponsivenessTemplateId(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateLevelOfResponsivenessCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return LevelOfResponsivenessOperations.validateLevelOfResponsivenessCodeP(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateLevelOfResponsivenessCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return LevelOfResponsivenessOperations.validateLevelOfResponsivenessCode(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateLevelOfResponsivenessValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return LevelOfResponsivenessOperations.validateLevelOfResponsivenessValue(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateLevelOfResponsivenessValueP(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return LevelOfResponsivenessOperations.validateLevelOfResponsivenessValueP(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateLevelOfResponsivenessEffectiveTime(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return LevelOfResponsivenessOperations.validateLevelOfResponsivenessEffectiveTime(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateLevelOfResponsivenessMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return LevelOfResponsivenessOperations.validateLevelOfResponsivenessMoodCode(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public LevelOfResponsiveness init() {
 		return Initializer.Util.init(this);
 	}

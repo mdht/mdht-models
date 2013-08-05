@@ -37,29 +37,29 @@ import org.openhealthtools.mdht.uml.cda.impl.SectionImpl;
  */
 public class PersonnelAdverseEventSectionImpl extends SectionImpl implements PersonnelAdverseEventSection {
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	protected PersonnelAdverseEventSectionImpl() {
 		super();
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
 		return EmspcrPackage.Literals.PERSONNEL_ADVERSE_EVENT_SECTION;
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validatePersonnelAdverseEventSectionTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return PersonnelAdverseEventSectionOperations.validatePersonnelAdverseEventSectionTemplateId(
@@ -67,50 +67,50 @@ public class PersonnelAdverseEventSectionImpl extends SectionImpl implements Per
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validatePersonnelAdverseEventSectionCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PersonnelAdverseEventSectionOperations.validatePersonnelAdverseEventSectionCode(
 			this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validatePersonnelAdverseEventSectionCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PersonnelAdverseEventSectionOperations.validatePersonnelAdverseEventSectionCodeP(
 			this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validatePersonnelAdverseEventSectionTitle(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PersonnelAdverseEventSectionOperations.validatePersonnelAdverseEventSectionTitle(
 			this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validatePersonnelAdverseEventSectionText(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PersonnelAdverseEventSectionOperations.validatePersonnelAdverseEventSectionText(
 			this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validatePersonnelAdverseEventSectionAdverseEventIndicator(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return PersonnelAdverseEventSectionOperations.validatePersonnelAdverseEventSectionAdverseEventIndicator(
@@ -118,10 +118,10 @@ public class PersonnelAdverseEventSectionImpl extends SectionImpl implements Per
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validatePersonnelAdverseEventSectionAdverseEventTypeObservation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return PersonnelAdverseEventSectionOperations.validatePersonnelAdverseEventSectionAdverseEventTypeObservation(
@@ -129,28 +129,28 @@ public class PersonnelAdverseEventSectionImpl extends SectionImpl implements Per
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public AdverseEventIndicator getAdverseEventIndicator() {
 		return PersonnelAdverseEventSectionOperations.getAdverseEventIndicator(this);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public AdverseEventTypeObservation getAdverseEventTypeObservation() {
 		return PersonnelAdverseEventSectionOperations.getAdverseEventTypeObservation(this);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public PersonnelAdverseEventSection init() {
 		return Initializer.Util.init(this);
 	}

@@ -45,45 +45,45 @@ import org.openhealthtools.mdht.uml.cda.operations.ClinicalStatementOperations;
  */
 public class PriorAEDUseOperations extends ClinicalStatementOperations {
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	protected PriorAEDUseOperations() {
 		super();
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validatePriorAEDUsePriorAEDProviderParticipation(PriorAEDUse, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Prior AED Use Prior AED Provider Participation</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validatePriorAEDUsePriorAEDProviderParticipation(PriorAEDUse, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Prior AED Use Prior AED Provider Participation</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validatePriorAEDUsePriorAEDProviderParticipation(PriorAEDUse, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validatePriorAEDUsePriorAEDProviderParticipation(PriorAEDUse, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_PRIOR_AED_USE_PRIOR_AED_PROVIDER_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.participant->one(participant : cda::Participant2 | not participant.oclIsUndefined() and participant.oclIsKindOf(cda::Participant2))";
 
 	/**
-	* The cached OCL invariant for the '{@link #validatePriorAEDUsePriorAEDProviderParticipation(PriorAEDUse, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Prior AED Use Prior AED Provider Participation</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validatePriorAEDUsePriorAEDProviderParticipation(PriorAEDUse, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Prior AED Use Prior AED Provider Participation</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validatePriorAEDUsePriorAEDProviderParticipation(PriorAEDUse, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validatePriorAEDUsePriorAEDProviderParticipation(PriorAEDUse, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 
 	protected static Constraint VALIDATE_PRIOR_AED_USE_PRIOR_AED_PROVIDER_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param priorAEDUse The receiving '<em><b>Prior AED Use</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param priorAEDUse The receiving '<em><b>Prior AED Use</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 
 	public static boolean validatePriorAEDUsePriorAEDProviderParticipation(PriorAEDUse priorAEDUse,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
@@ -113,36 +113,36 @@ public class PriorAEDUseOperations extends ClinicalStatementOperations {
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validatePriorAEDUseTemplateId(PriorAEDUse, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Prior AED Use Template Id</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validatePriorAEDUseTemplateId(PriorAEDUse, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Prior AED Use Template Id</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validatePriorAEDUseTemplateId(PriorAEDUse, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validatePriorAEDUseTemplateId(PriorAEDUse, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_PRIOR_AED_USE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.1133883.17.3.10.1.126')";
 
 	/**
-	* The cached OCL invariant for the '{@link #validatePriorAEDUseTemplateId(PriorAEDUse, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Prior AED Use Template Id</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validatePriorAEDUseTemplateId(PriorAEDUse, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Prior AED Use Template Id</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validatePriorAEDUseTemplateId(PriorAEDUse, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validatePriorAEDUseTemplateId(PriorAEDUse, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 
 	protected static Constraint VALIDATE_PRIOR_AED_USE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param priorAEDUse The receiving '<em><b>Prior AED Use</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param priorAEDUse The receiving '<em><b>Prior AED Use</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 
 	public static boolean validatePriorAEDUseTemplateId(PriorAEDUse priorAEDUse, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
@@ -170,38 +170,38 @@ public class PriorAEDUseOperations extends ClinicalStatementOperations {
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validatePriorAEDUseCode(PriorAEDUse, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Prior AED Use Code</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validatePriorAEDUseCode(PriorAEDUse, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Prior AED Use Code</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validatePriorAEDUseCode(PriorAEDUse, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validatePriorAEDUseCode(PriorAEDUse, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_PRIOR_AED_USE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "
 			+ "let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "
 			+ "value.code = '67508-2' and value.codeSystem = '2.16.840.1.113883.6.1')";
 
 	/**
-	* The cached OCL invariant for the '{@link #validatePriorAEDUseCode(PriorAEDUse, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Prior AED Use Code</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validatePriorAEDUseCode(PriorAEDUse, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Prior AED Use Code</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validatePriorAEDUseCode(PriorAEDUse, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validatePriorAEDUseCode(PriorAEDUse, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 
 	protected static Constraint VALIDATE_PRIOR_AED_USE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param priorAEDUse The receiving '<em><b>Prior AED Use</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param priorAEDUse The receiving '<em><b>Prior AED Use</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 
 	public static boolean validatePriorAEDUseCode(PriorAEDUse priorAEDUse, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
@@ -229,38 +229,38 @@ public class PriorAEDUseOperations extends ClinicalStatementOperations {
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validatePriorAEDUseValue(PriorAEDUse, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Prior AED Use Value</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validatePriorAEDUseValue(PriorAEDUse, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Prior AED Use Value</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validatePriorAEDUseValue(PriorAEDUse, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validatePriorAEDUseValue(PriorAEDUse, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_PRIOR_AED_USE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and "
 			+ "let value : datatypes::CD = element.oclAsType(datatypes::CD) in "
 			+ "value.codeSystem = '2.16.840.1.113883.6.1' and (value.code = 'LA17066-4' or value.code = 'LA17067-2' or value.code = 'LA32-8')))";
 
 	/**
-	* The cached OCL invariant for the '{@link #validatePriorAEDUseValue(PriorAEDUse, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Prior AED Use Value</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validatePriorAEDUseValue(PriorAEDUse, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Prior AED Use Value</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validatePriorAEDUseValue(PriorAEDUse, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validatePriorAEDUseValue(PriorAEDUse, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 
 	protected static Constraint VALIDATE_PRIOR_AED_USE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param priorAEDUse The receiving '<em><b>Prior AED Use</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param priorAEDUse The receiving '<em><b>Prior AED Use</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 
 	public static boolean validatePriorAEDUseValue(PriorAEDUse priorAEDUse, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
@@ -288,36 +288,36 @@ public class PriorAEDUseOperations extends ClinicalStatementOperations {
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validatePriorAEDUseMoodCode(PriorAEDUse, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Prior AED Use Mood Code</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validatePriorAEDUseMoodCode(PriorAEDUse, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Prior AED Use Mood Code</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validatePriorAEDUseMoodCode(PriorAEDUse, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validatePriorAEDUseMoodCode(PriorAEDUse, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_PRIOR_AED_USE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "isDefined('moodCode')";
 
 	/**
-	* The cached OCL invariant for the '{@link #validatePriorAEDUseMoodCode(PriorAEDUse, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Prior AED Use Mood Code</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validatePriorAEDUseMoodCode(PriorAEDUse, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Prior AED Use Mood Code</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validatePriorAEDUseMoodCode(PriorAEDUse, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validatePriorAEDUseMoodCode(PriorAEDUse, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 
 	protected static Constraint VALIDATE_PRIOR_AED_USE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param priorAEDUse The receiving '<em><b>Prior AED Use</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param priorAEDUse The receiving '<em><b>Prior AED Use</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 
 	public static boolean validatePriorAEDUseMoodCode(PriorAEDUse priorAEDUse, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {

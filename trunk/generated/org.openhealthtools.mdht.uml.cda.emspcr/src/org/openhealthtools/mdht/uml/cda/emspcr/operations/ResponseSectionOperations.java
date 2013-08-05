@@ -61,45 +61,45 @@ import org.openhealthtools.mdht.uml.cda.operations.SectionOperations;
  */
 public class ResponseSectionOperations extends SectionOperations {
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	protected ResponseSectionOperations() {
 		super();
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateResponseSectionTemplateId(ResponseSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Response Section Template Id</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateResponseSectionTemplateId(ResponseSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Response Section Template Id</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateResponseSectionTemplateId(ResponseSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateResponseSectionTemplateId(ResponseSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_RESPONSE_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.17.3.10.1.3')";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateResponseSectionTemplateId(ResponseSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Response Section Template Id</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateResponseSectionTemplateId(ResponseSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Response Section Template Id</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateResponseSectionTemplateId(ResponseSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateResponseSectionTemplateId(ResponseSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 
 	protected static Constraint VALIDATE_RESPONSE_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param responseSection The receiving '<em><b>Response Section</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param responseSection The receiving '<em><b>Response Section</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 
 	public static boolean validateResponseSectionTemplateId(ResponseSection responseSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
@@ -128,38 +128,38 @@ public class ResponseSectionOperations extends SectionOperations {
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateResponseSectionCode(ResponseSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Response Section Code</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateResponseSectionCode(ResponseSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Response Section Code</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateResponseSectionCode(ResponseSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateResponseSectionCode(ResponseSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_RESPONSE_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and "
 			+ "let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in "
 			+ "value.code = '67664-3' and value.codeSystem = '2.16.840.1.113883.6.1')";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateResponseSectionCode(ResponseSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Response Section Code</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateResponseSectionCode(ResponseSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Response Section Code</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateResponseSectionCode(ResponseSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateResponseSectionCode(ResponseSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 
 	protected static Constraint VALIDATE_RESPONSE_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param responseSection The receiving '<em><b>Response Section</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param responseSection The receiving '<em><b>Response Section</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 
 	public static boolean validateResponseSectionCode(ResponseSection responseSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
@@ -187,36 +187,36 @@ public class ResponseSectionOperations extends SectionOperations {
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateResponseSectionCodeP(ResponseSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Response Section Code P</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateResponseSectionCodeP(ResponseSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Response Section Code P</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateResponseSectionCodeP(ResponseSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateResponseSectionCodeP(ResponseSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_RESPONSE_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined())";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateResponseSectionCodeP(ResponseSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Response Section Code P</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateResponseSectionCodeP(ResponseSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Response Section Code P</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateResponseSectionCodeP(ResponseSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateResponseSectionCodeP(ResponseSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 
 	protected static Constraint VALIDATE_RESPONSE_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param responseSection The receiving '<em><b>Response Section</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param responseSection The receiving '<em><b>Response Section</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 
 	public static boolean validateResponseSectionCodeP(ResponseSection responseSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
@@ -245,36 +245,36 @@ public class ResponseSectionOperations extends SectionOperations {
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateResponseSectionTitle(ResponseSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Response Section Title</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateResponseSectionTitle(ResponseSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Response Section Title</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateResponseSectionTitle(ResponseSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateResponseSectionTitle(ResponseSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_RESPONSE_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.title.oclIsUndefined() or self.title.isNullFlavorUndefined()) implies (not self.title.oclIsUndefined() and self.title.getText() = 'EMS Response')";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateResponseSectionTitle(ResponseSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Response Section Title</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateResponseSectionTitle(ResponseSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Response Section Title</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateResponseSectionTitle(ResponseSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateResponseSectionTitle(ResponseSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 
 	protected static Constraint VALIDATE_RESPONSE_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param responseSection The receiving '<em><b>Response Section</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param responseSection The receiving '<em><b>Response Section</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 
 	public static boolean validateResponseSectionTitle(ResponseSection responseSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
@@ -303,36 +303,36 @@ public class ResponseSectionOperations extends SectionOperations {
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateResponseSectionText(ResponseSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Response Section Text</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateResponseSectionText(ResponseSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Response Section Text</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateResponseSectionText(ResponseSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateResponseSectionText(ResponseSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_RESPONSE_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "not self.text.oclIsUndefined()";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateResponseSectionText(ResponseSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Response Section Text</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateResponseSectionText(ResponseSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Response Section Text</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateResponseSectionText(ResponseSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateResponseSectionText(ResponseSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 
 	protected static Constraint VALIDATE_RESPONSE_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param responseSection The receiving '<em><b>Response Section</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param responseSection The receiving '<em><b>Response Section</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 
 	public static boolean validateResponseSectionText(ResponseSection responseSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
@@ -360,36 +360,36 @@ public class ResponseSectionOperations extends SectionOperations {
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateResponseSectionDelayOrganizer(ResponseSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Response Section Delay Organizer</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateResponseSectionDelayOrganizer(ResponseSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Response Section Delay Organizer</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateResponseSectionDelayOrganizer(ResponseSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateResponseSectionDelayOrganizer(ResponseSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_RESPONSE_SECTION_DELAY_ORGANIZER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->one(entry : cda::Entry | not entry.organizer.oclIsUndefined() and entry.organizer.oclIsKindOf(emspcr::DelayOrganizer) and entry.typeCode = vocab::x_ActRelationshipEntry::DRIV)";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateResponseSectionDelayOrganizer(ResponseSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Response Section Delay Organizer</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateResponseSectionDelayOrganizer(ResponseSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Response Section Delay Organizer</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateResponseSectionDelayOrganizer(ResponseSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateResponseSectionDelayOrganizer(ResponseSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 
 	protected static Constraint VALIDATE_RESPONSE_SECTION_DELAY_ORGANIZER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param responseSection The receiving '<em><b>Response Section</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param responseSection The receiving '<em><b>Response Section</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 
 	public static boolean validateResponseSectionDelayOrganizer(ResponseSection responseSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
@@ -418,36 +418,36 @@ public class ResponseSectionOperations extends SectionOperations {
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateResponseSectionDispatchLocationOrganizer(ResponseSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Response Section Dispatch Location Organizer</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateResponseSectionDispatchLocationOrganizer(ResponseSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Response Section Dispatch Location Organizer</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateResponseSectionDispatchLocationOrganizer(ResponseSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateResponseSectionDispatchLocationOrganizer(ResponseSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_RESPONSE_SECTION_DISPATCH_LOCATION_ORGANIZER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->one(entry : cda::Entry | not entry.organizer.oclIsUndefined() and entry.organizer.oclIsKindOf(emspcr::DispatchLocationOrganizer) and entry.typeCode = vocab::x_ActRelationshipEntry::DRIV)";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateResponseSectionDispatchLocationOrganizer(ResponseSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Response Section Dispatch Location Organizer</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateResponseSectionDispatchLocationOrganizer(ResponseSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Response Section Dispatch Location Organizer</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateResponseSectionDispatchLocationOrganizer(ResponseSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateResponseSectionDispatchLocationOrganizer(ResponseSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 
 	protected static Constraint VALIDATE_RESPONSE_SECTION_DISPATCH_LOCATION_ORGANIZER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param responseSection The receiving '<em><b>Response Section</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param responseSection The receiving '<em><b>Response Section</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 
 	public static boolean validateResponseSectionDispatchLocationOrganizer(ResponseSection responseSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
@@ -477,36 +477,36 @@ public class ResponseSectionOperations extends SectionOperations {
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateResponseSectionResponseOdometerReadingOrganizer(ResponseSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Response Section Response Odometer Reading Organizer</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateResponseSectionResponseOdometerReadingOrganizer(ResponseSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Response Section Response Odometer Reading Organizer</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateResponseSectionResponseOdometerReadingOrganizer(ResponseSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateResponseSectionResponseOdometerReadingOrganizer(ResponseSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_RESPONSE_SECTION_RESPONSE_ODOMETER_READING_ORGANIZER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->one(entry : cda::Entry | not entry.organizer.oclIsUndefined() and entry.organizer.oclIsKindOf(emspcr::ResponseOdometerReadingOrganizer) and entry.typeCode = vocab::x_ActRelationshipEntry::DRIV)";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateResponseSectionResponseOdometerReadingOrganizer(ResponseSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Response Section Response Odometer Reading Organizer</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateResponseSectionResponseOdometerReadingOrganizer(ResponseSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Response Section Response Odometer Reading Organizer</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateResponseSectionResponseOdometerReadingOrganizer(ResponseSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateResponseSectionResponseOdometerReadingOrganizer(ResponseSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 
 	protected static Constraint VALIDATE_RESPONSE_SECTION_RESPONSE_ODOMETER_READING_ORGANIZER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param responseSection The receiving '<em><b>Response Section</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param responseSection The receiving '<em><b>Response Section</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 
 	public static boolean validateResponseSectionResponseOdometerReadingOrganizer(ResponseSection responseSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
@@ -537,36 +537,36 @@ public class ResponseSectionOperations extends SectionOperations {
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateResponseSectionResponseModeToScene(ResponseSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Response Section Response Mode To Scene</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateResponseSectionResponseModeToScene(ResponseSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Response Section Response Mode To Scene</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateResponseSectionResponseModeToScene(ResponseSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateResponseSectionResponseModeToScene(ResponseSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_RESPONSE_SECTION_RESPONSE_MODE_TO_SCENE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->one(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(emspcr::ResponseModeToScene) and entry.typeCode = vocab::x_ActRelationshipEntry::DRIV)";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateResponseSectionResponseModeToScene(ResponseSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Response Section Response Mode To Scene</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateResponseSectionResponseModeToScene(ResponseSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Response Section Response Mode To Scene</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateResponseSectionResponseModeToScene(ResponseSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateResponseSectionResponseModeToScene(ResponseSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 
 	protected static Constraint VALIDATE_RESPONSE_SECTION_RESPONSE_MODE_TO_SCENE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param responseSection The receiving '<em><b>Response Section</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param responseSection The receiving '<em><b>Response Section</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 
 	public static boolean validateResponseSectionResponseModeToScene(ResponseSection responseSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
@@ -596,30 +596,30 @@ public class ResponseSectionOperations extends SectionOperations {
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #getDelayOrganizer(ResponseSection) <em>Get Delay Organizer</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #getDelayOrganizer(ResponseSection) <em>Get Delay Organizer</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #getDelayOrganizer(ResponseSection)
-	* @generated
-	* @ordered
-	*/
+	 * @see #getDelayOrganizer(ResponseSection)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String GET_DELAY_ORGANIZER__EOCL_EXP = "self.getOrganizers()->select(organizer : cda::Organizer | not organizer.oclIsUndefined() and organizer.oclIsKindOf(emspcr::DelayOrganizer))->asSequence()->any(true).oclAsType(emspcr::DelayOrganizer)";
 
 	/**
-	* The cached OCL query for the '{@link #getDelayOrganizer(ResponseSection) <em>Get Delay Organizer</em>}' query operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL query for the '{@link #getDelayOrganizer(ResponseSection) <em>Get Delay Organizer</em>}' query operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #getDelayOrganizer(ResponseSection)
-	* @generated
-	* @ordered
-	*/
+	 * @see #getDelayOrganizer(ResponseSection)
+	 * @generated
+	 * @ordered
+	 */
 	protected static OCLExpression<EClassifier> GET_DELAY_ORGANIZER__EOCL_QRY;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 
 	public static DelayOrganizer getDelayOrganizer(ResponseSection responseSection) {
 		if (GET_DELAY_ORGANIZER__EOCL_QRY == null) {
@@ -638,30 +638,30 @@ public class ResponseSectionOperations extends SectionOperations {
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #getDispatchLocationOrganizer(ResponseSection) <em>Get Dispatch Location Organizer</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #getDispatchLocationOrganizer(ResponseSection) <em>Get Dispatch Location Organizer</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #getDispatchLocationOrganizer(ResponseSection)
-	* @generated
-	* @ordered
-	*/
+	 * @see #getDispatchLocationOrganizer(ResponseSection)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String GET_DISPATCH_LOCATION_ORGANIZER__EOCL_EXP = "self.getOrganizers()->select(organizer : cda::Organizer | not organizer.oclIsUndefined() and organizer.oclIsKindOf(emspcr::DispatchLocationOrganizer))->asSequence()->any(true).oclAsType(emspcr::DispatchLocationOrganizer)";
 
 	/**
-	* The cached OCL query for the '{@link #getDispatchLocationOrganizer(ResponseSection) <em>Get Dispatch Location Organizer</em>}' query operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL query for the '{@link #getDispatchLocationOrganizer(ResponseSection) <em>Get Dispatch Location Organizer</em>}' query operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #getDispatchLocationOrganizer(ResponseSection)
-	* @generated
-	* @ordered
-	*/
+	 * @see #getDispatchLocationOrganizer(ResponseSection)
+	 * @generated
+	 * @ordered
+	 */
 	protected static OCLExpression<EClassifier> GET_DISPATCH_LOCATION_ORGANIZER__EOCL_QRY;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 
 	public static DispatchLocationOrganizer getDispatchLocationOrganizer(ResponseSection responseSection) {
 		if (GET_DISPATCH_LOCATION_ORGANIZER__EOCL_QRY == null) {
@@ -680,30 +680,30 @@ public class ResponseSectionOperations extends SectionOperations {
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #getResponseOdometerReadingOrganizer(ResponseSection) <em>Get Response Odometer Reading Organizer</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #getResponseOdometerReadingOrganizer(ResponseSection) <em>Get Response Odometer Reading Organizer</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #getResponseOdometerReadingOrganizer(ResponseSection)
-	* @generated
-	* @ordered
-	*/
+	 * @see #getResponseOdometerReadingOrganizer(ResponseSection)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String GET_RESPONSE_ODOMETER_READING_ORGANIZER__EOCL_EXP = "self.getOrganizers()->select(organizer : cda::Organizer | not organizer.oclIsUndefined() and organizer.oclIsKindOf(emspcr::ResponseOdometerReadingOrganizer))->asSequence()->any(true).oclAsType(emspcr::ResponseOdometerReadingOrganizer)";
 
 	/**
-	* The cached OCL query for the '{@link #getResponseOdometerReadingOrganizer(ResponseSection) <em>Get Response Odometer Reading Organizer</em>}' query operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL query for the '{@link #getResponseOdometerReadingOrganizer(ResponseSection) <em>Get Response Odometer Reading Organizer</em>}' query operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #getResponseOdometerReadingOrganizer(ResponseSection)
-	* @generated
-	* @ordered
-	*/
+	 * @see #getResponseOdometerReadingOrganizer(ResponseSection)
+	 * @generated
+	 * @ordered
+	 */
 	protected static OCLExpression<EClassifier> GET_RESPONSE_ODOMETER_READING_ORGANIZER__EOCL_QRY;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 
 	public static ResponseOdometerReadingOrganizer getResponseOdometerReadingOrganizer(ResponseSection responseSection) {
 		if (GET_RESPONSE_ODOMETER_READING_ORGANIZER__EOCL_QRY == null) {
@@ -722,30 +722,30 @@ public class ResponseSectionOperations extends SectionOperations {
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #getResponseModeToScene(ResponseSection) <em>Get Response Mode To Scene</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #getResponseModeToScene(ResponseSection) <em>Get Response Mode To Scene</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #getResponseModeToScene(ResponseSection)
-	* @generated
-	* @ordered
-	*/
+	 * @see #getResponseModeToScene(ResponseSection)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String GET_RESPONSE_MODE_TO_SCENE__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(emspcr::ResponseModeToScene))->asSequence()->any(true).oclAsType(emspcr::ResponseModeToScene)";
 
 	/**
-	* The cached OCL query for the '{@link #getResponseModeToScene(ResponseSection) <em>Get Response Mode To Scene</em>}' query operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL query for the '{@link #getResponseModeToScene(ResponseSection) <em>Get Response Mode To Scene</em>}' query operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #getResponseModeToScene(ResponseSection)
-	* @generated
-	* @ordered
-	*/
+	 * @see #getResponseModeToScene(ResponseSection)
+	 * @generated
+	 * @ordered
+	 */
 	protected static OCLExpression<EClassifier> GET_RESPONSE_MODE_TO_SCENE__EOCL_QRY;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 
 	public static ResponseModeToScene getResponseModeToScene(ResponseSection responseSection) {
 		if (GET_RESPONSE_MODE_TO_SCENE__EOCL_QRY == null) {

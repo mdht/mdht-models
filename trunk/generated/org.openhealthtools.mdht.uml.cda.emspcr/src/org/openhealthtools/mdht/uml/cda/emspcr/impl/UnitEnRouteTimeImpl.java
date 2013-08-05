@@ -35,74 +35,74 @@ import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
  */
 public class UnitEnRouteTimeImpl extends ObservationImpl implements UnitEnRouteTime {
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	protected UnitEnRouteTimeImpl() {
 		super();
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
 		return EmspcrPackage.Literals.UNIT_EN_ROUTE_TIME;
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateUnitEnRouteTimeTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return UnitEnRouteTimeOperations.validateUnitEnRouteTimeTemplateId(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateUnitEnRouteTimeCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return UnitEnRouteTimeOperations.validateUnitEnRouteTimeCodeP(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateUnitEnRouteTimeCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return UnitEnRouteTimeOperations.validateUnitEnRouteTimeCode(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateUnitEnRouteTimeValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return UnitEnRouteTimeOperations.validateUnitEnRouteTimeValue(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateUnitEnRouteTimeMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return UnitEnRouteTimeOperations.validateUnitEnRouteTimeMoodCode(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public UnitEnRouteTime init() {
 		return Initializer.Util.init(this);
 	}

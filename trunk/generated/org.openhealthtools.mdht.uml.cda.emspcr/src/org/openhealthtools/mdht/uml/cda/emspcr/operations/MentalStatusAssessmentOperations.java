@@ -46,45 +46,45 @@ import org.openhealthtools.mdht.uml.cda.operations.ClinicalStatementOperations;
  */
 public class MentalStatusAssessmentOperations extends ClinicalStatementOperations {
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	protected MentalStatusAssessmentOperations() {
 		super();
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateMentalStatusAssessmentTemplateId(MentalStatusAssessment, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Mental Status Assessment Template Id</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateMentalStatusAssessmentTemplateId(MentalStatusAssessment, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Mental Status Assessment Template Id</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateMentalStatusAssessmentTemplateId(MentalStatusAssessment, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateMentalStatusAssessmentTemplateId(MentalStatusAssessment, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_MENTAL_STATUS_ASSESSMENT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.1133883.17.3.10.1.122')";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateMentalStatusAssessmentTemplateId(MentalStatusAssessment, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Mental Status Assessment Template Id</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateMentalStatusAssessmentTemplateId(MentalStatusAssessment, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Mental Status Assessment Template Id</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateMentalStatusAssessmentTemplateId(MentalStatusAssessment, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateMentalStatusAssessmentTemplateId(MentalStatusAssessment, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 
 	protected static Constraint VALIDATE_MENTAL_STATUS_ASSESSMENT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param mentalStatusAssessment The receiving '<em><b>Mental Status Assessment</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param mentalStatusAssessment The receiving '<em><b>Mental Status Assessment</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 
 	public static boolean validateMentalStatusAssessmentTemplateId(MentalStatusAssessment mentalStatusAssessment,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
@@ -114,36 +114,36 @@ public class MentalStatusAssessmentOperations extends ClinicalStatementOperation
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateMentalStatusAssessmentCodeP(MentalStatusAssessment, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Mental Status Assessment Code P</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateMentalStatusAssessmentCodeP(MentalStatusAssessment, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Mental Status Assessment Code P</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateMentalStatusAssessmentCodeP(MentalStatusAssessment, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateMentalStatusAssessmentCodeP(MentalStatusAssessment, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_MENTAL_STATUS_ASSESSMENT_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined())";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateMentalStatusAssessmentCodeP(MentalStatusAssessment, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Mental Status Assessment Code P</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateMentalStatusAssessmentCodeP(MentalStatusAssessment, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Mental Status Assessment Code P</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateMentalStatusAssessmentCodeP(MentalStatusAssessment, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateMentalStatusAssessmentCodeP(MentalStatusAssessment, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 
 	protected static Constraint VALIDATE_MENTAL_STATUS_ASSESSMENT_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param mentalStatusAssessment The receiving '<em><b>Mental Status Assessment</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param mentalStatusAssessment The receiving '<em><b>Mental Status Assessment</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 
 	public static boolean validateMentalStatusAssessmentCodeP(MentalStatusAssessment mentalStatusAssessment,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
@@ -185,38 +185,38 @@ public class MentalStatusAssessmentOperations extends ClinicalStatementOperation
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateMentalStatusAssessmentCode(MentalStatusAssessment, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Mental Status Assessment Code</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateMentalStatusAssessmentCode(MentalStatusAssessment, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Mental Status Assessment Code</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateMentalStatusAssessmentCode(MentalStatusAssessment, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateMentalStatusAssessmentCode(MentalStatusAssessment, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_MENTAL_STATUS_ASSESSMENT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "
 			+ "let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "
 			+ "value.code = '67535-5' and value.codeSystem = '2.16.840.1.113883.6.1')";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateMentalStatusAssessmentCode(MentalStatusAssessment, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Mental Status Assessment Code</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateMentalStatusAssessmentCode(MentalStatusAssessment, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Mental Status Assessment Code</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateMentalStatusAssessmentCode(MentalStatusAssessment, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateMentalStatusAssessmentCode(MentalStatusAssessment, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 
 	protected static Constraint VALIDATE_MENTAL_STATUS_ASSESSMENT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param mentalStatusAssessment The receiving '<em><b>Mental Status Assessment</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param mentalStatusAssessment The receiving '<em><b>Mental Status Assessment</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 
 	public static boolean validateMentalStatusAssessmentCode(MentalStatusAssessment mentalStatusAssessment,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
@@ -254,38 +254,38 @@ public class MentalStatusAssessmentOperations extends ClinicalStatementOperation
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateMentalStatusAssessmentValue(MentalStatusAssessment, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Mental Status Assessment Value</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateMentalStatusAssessmentValue(MentalStatusAssessment, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Mental Status Assessment Value</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateMentalStatusAssessmentValue(MentalStatusAssessment, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateMentalStatusAssessmentValue(MentalStatusAssessment, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_MENTAL_STATUS_ASSESSMENT_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (not self.value->isEmpty() and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and "
 			+ "let value : datatypes::CD = element.oclAsType(datatypes::CD) in "
 			+ "value.codeSystem = '2.16.840.1.113883.6.1' and (value.code = 'LA17286-8' or value.code = 'LA17287-6' or value.code = 'LA17288-4' or value.code = 'LA17289-2' or value.code = 'LA17290-0' or value.code = 'LA18259-4' or value.code = 'LA18260-2' or value.code = 'LA6560-2' or value.code = 'LA6630-3' or value.code = 'LA7438-0' or value.code = 'LA9343-0')))";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateMentalStatusAssessmentValue(MentalStatusAssessment, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Mental Status Assessment Value</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateMentalStatusAssessmentValue(MentalStatusAssessment, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Mental Status Assessment Value</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateMentalStatusAssessmentValue(MentalStatusAssessment, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateMentalStatusAssessmentValue(MentalStatusAssessment, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 
 	protected static Constraint VALIDATE_MENTAL_STATUS_ASSESSMENT_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param mentalStatusAssessment The receiving '<em><b>Mental Status Assessment</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param mentalStatusAssessment The receiving '<em><b>Mental Status Assessment</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 
 	public static boolean validateMentalStatusAssessmentValue(MentalStatusAssessment mentalStatusAssessment,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
@@ -315,36 +315,36 @@ public class MentalStatusAssessmentOperations extends ClinicalStatementOperation
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateMentalStatusAssessmentMoodCode(MentalStatusAssessment, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Mental Status Assessment Mood Code</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateMentalStatusAssessmentMoodCode(MentalStatusAssessment, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Mental Status Assessment Mood Code</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateMentalStatusAssessmentMoodCode(MentalStatusAssessment, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateMentalStatusAssessmentMoodCode(MentalStatusAssessment, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_MENTAL_STATUS_ASSESSMENT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "isDefined('moodCode')";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateMentalStatusAssessmentMoodCode(MentalStatusAssessment, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Mental Status Assessment Mood Code</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateMentalStatusAssessmentMoodCode(MentalStatusAssessment, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Mental Status Assessment Mood Code</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateMentalStatusAssessmentMoodCode(MentalStatusAssessment, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateMentalStatusAssessmentMoodCode(MentalStatusAssessment, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 
 	protected static Constraint VALIDATE_MENTAL_STATUS_ASSESSMENT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param mentalStatusAssessment The receiving '<em><b>Mental Status Assessment</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param mentalStatusAssessment The receiving '<em><b>Mental Status Assessment</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 
 	public static boolean validateMentalStatusAssessmentMoodCode(MentalStatusAssessment mentalStatusAssessment,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {

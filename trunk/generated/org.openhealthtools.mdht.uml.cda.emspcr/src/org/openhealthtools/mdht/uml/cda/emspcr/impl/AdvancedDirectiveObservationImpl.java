@@ -35,29 +35,29 @@ import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
  */
 public class AdvancedDirectiveObservationImpl extends ObservationImpl implements AdvancedDirectiveObservation {
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	protected AdvancedDirectiveObservationImpl() {
 		super();
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
 		return EmspcrPackage.Literals.ADVANCED_DIRECTIVE_OBSERVATION;
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateAdvancedDirectiveObservationTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return AdvancedDirectiveObservationOperations.validateAdvancedDirectiveObservationTemplateId(
@@ -65,50 +65,50 @@ public class AdvancedDirectiveObservationImpl extends ObservationImpl implements
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateAdvancedDirectiveObservationCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return AdvancedDirectiveObservationOperations.validateAdvancedDirectiveObservationCode(
 			this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateAdvancedDirectiveObservationValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return AdvancedDirectiveObservationOperations.validateAdvancedDirectiveObservationValue(
 			this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateAdvancedDirectiveObservationValueP(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return AdvancedDirectiveObservationOperations.validateAdvancedDirectiveObservationValueP(
 			this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateAdvancedDirectiveObservationMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return AdvancedDirectiveObservationOperations.validateAdvancedDirectiveObservationMoodCode(
 			this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public AdvancedDirectiveObservation init() {
 		return Initializer.Util.init(this);
 	}

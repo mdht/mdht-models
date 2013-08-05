@@ -35,92 +35,92 @@ import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
  */
 public class FaceAssessmentImpl extends ObservationImpl implements FaceAssessment {
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	protected FaceAssessmentImpl() {
 		super();
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
 		return EmspcrPackage.Literals.FACE_ASSESSMENT;
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateFaceAssessmentTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return FaceAssessmentOperations.validateFaceAssessmentTemplateId(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateFaceAssessmentCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return FaceAssessmentOperations.validateFaceAssessmentCodeP(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateFaceAssessmentCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return FaceAssessmentOperations.validateFaceAssessmentCode(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateFaceAssessmentValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return FaceAssessmentOperations.validateFaceAssessmentValue(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateFaceAssessmentValueP(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return FaceAssessmentOperations.validateFaceAssessmentValueP(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateFaceAssessmentEffectiveTime(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return FaceAssessmentOperations.validateFaceAssessmentEffectiveTime(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateFaceAssessmentMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return FaceAssessmentOperations.validateFaceAssessmentMoodCode(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public FaceAssessment init() {
 		return Initializer.Util.init(this);
 	}

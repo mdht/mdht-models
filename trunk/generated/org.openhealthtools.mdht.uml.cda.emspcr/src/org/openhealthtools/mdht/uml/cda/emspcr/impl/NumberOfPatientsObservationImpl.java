@@ -35,29 +35,29 @@ import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
  */
 public class NumberOfPatientsObservationImpl extends ObservationImpl implements NumberOfPatientsObservation {
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	protected NumberOfPatientsObservationImpl() {
 		super();
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
 		return EmspcrPackage.Literals.NUMBER_OF_PATIENTS_OBSERVATION;
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateNumberOfPatientsObservationTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return NumberOfPatientsObservationOperations.validateNumberOfPatientsObservationTemplateId(
@@ -65,49 +65,49 @@ public class NumberOfPatientsObservationImpl extends ObservationImpl implements 
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateNumberOfPatientsObservationCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return NumberOfPatientsObservationOperations.validateNumberOfPatientsObservationCodeP(
 			this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateNumberOfPatientsObservationCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return NumberOfPatientsObservationOperations.validateNumberOfPatientsObservationCode(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateNumberOfPatientsObservationValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return NumberOfPatientsObservationOperations.validateNumberOfPatientsObservationValue(
 			this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateNumberOfPatientsObservationMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return NumberOfPatientsObservationOperations.validateNumberOfPatientsObservationMoodCode(
 			this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public NumberOfPatientsObservation init() {
 		return Initializer.Util.init(this);
 	}

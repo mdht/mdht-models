@@ -47,45 +47,45 @@ import org.openhealthtools.mdht.uml.cda.operations.ClinicalStatementOperations;
  */
 public class TransportDelayOperations extends ClinicalStatementOperations {
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	protected TransportDelayOperations() {
 		super();
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateTransportDelayTemplateId(TransportDelay, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transport Delay Template Id</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateTransportDelayTemplateId(TransportDelay, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transport Delay Template Id</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateTransportDelayTemplateId(TransportDelay, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateTransportDelayTemplateId(TransportDelay, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_TRANSPORT_DELAY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.1133883.17.3.10.1.156')";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateTransportDelayTemplateId(TransportDelay, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transport Delay Template Id</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateTransportDelayTemplateId(TransportDelay, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transport Delay Template Id</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateTransportDelayTemplateId(TransportDelay, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateTransportDelayTemplateId(TransportDelay, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 
 	protected static Constraint VALIDATE_TRANSPORT_DELAY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param transportDelay The receiving '<em><b>Transport Delay</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param transportDelay The receiving '<em><b>Transport Delay</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 
 	public static boolean validateTransportDelayTemplateId(TransportDelay transportDelay, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
@@ -114,36 +114,36 @@ public class TransportDelayOperations extends ClinicalStatementOperations {
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateTransportDelayCodeP(TransportDelay, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transport Delay Code P</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateTransportDelayCodeP(TransportDelay, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transport Delay Code P</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateTransportDelayCodeP(TransportDelay, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateTransportDelayCodeP(TransportDelay, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_TRANSPORT_DELAY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined())";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateTransportDelayCodeP(TransportDelay, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transport Delay Code P</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateTransportDelayCodeP(TransportDelay, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transport Delay Code P</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateTransportDelayCodeP(TransportDelay, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateTransportDelayCodeP(TransportDelay, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 
 	protected static Constraint VALIDATE_TRANSPORT_DELAY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param transportDelay The receiving '<em><b>Transport Delay</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param transportDelay The receiving '<em><b>Transport Delay</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 
 	public static boolean validateTransportDelayCodeP(TransportDelay transportDelay, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
@@ -183,38 +183,38 @@ public class TransportDelayOperations extends ClinicalStatementOperations {
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateTransportDelayCode(TransportDelay, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transport Delay Code</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateTransportDelayCode(TransportDelay, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transport Delay Code</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateTransportDelayCode(TransportDelay, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateTransportDelayCode(TransportDelay, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_TRANSPORT_DELAY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "
 			+ "let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "
 			+ "value.code = '67559-5' and value.codeSystem = '2.16.840.1.113883.6.1')";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateTransportDelayCode(TransportDelay, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transport Delay Code</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateTransportDelayCode(TransportDelay, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transport Delay Code</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateTransportDelayCode(TransportDelay, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateTransportDelayCode(TransportDelay, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 
 	protected static Constraint VALIDATE_TRANSPORT_DELAY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param transportDelay The receiving '<em><b>Transport Delay</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param transportDelay The receiving '<em><b>Transport Delay</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 
 	public static boolean validateTransportDelayCode(TransportDelay transportDelay, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
@@ -250,38 +250,38 @@ public class TransportDelayOperations extends ClinicalStatementOperations {
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateTransportDelayValue(TransportDelay, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transport Delay Value</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateTransportDelayValue(TransportDelay, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transport Delay Value</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateTransportDelayValue(TransportDelay, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateTransportDelayValue(TransportDelay, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_TRANSPORT_DELAY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (not self.value->isEmpty() and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and "
 			+ "let value : datatypes::CD = element.oclAsType(datatypes::CD) in "
 			+ "value.codeSystem = '2.16.840.1.113883.6.1' and (value.code = 'LA17059-9' or value.code = 'LA17585-3' or value.code = 'LA17586-1' or value.code = 'LA17587-9' or value.code = 'LA17588-7' or value.code = 'LA17589-5' or value.code = 'LA17590-3' or value.code = 'LA17591-1' or value.code = 'LA17592-9' or value.code = 'LA17593-7' or value.code = 'LA17594-5' or value.code = 'LA18081-2' or value.code = 'LA18270-1' or value.code = 'LA18271-9' or value.code = 'LA18301-4')))";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateTransportDelayValue(TransportDelay, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transport Delay Value</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateTransportDelayValue(TransportDelay, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transport Delay Value</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateTransportDelayValue(TransportDelay, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateTransportDelayValue(TransportDelay, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 
 	protected static Constraint VALIDATE_TRANSPORT_DELAY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param transportDelay The receiving '<em><b>Transport Delay</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param transportDelay The receiving '<em><b>Transport Delay</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 
 	public static boolean validateTransportDelayValue(TransportDelay transportDelay, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
@@ -309,36 +309,36 @@ public class TransportDelayOperations extends ClinicalStatementOperations {
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateTransportDelayValueP(TransportDelay, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transport Delay Value P</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateTransportDelayValueP(TransportDelay, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transport Delay Value P</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateTransportDelayValueP(TransportDelay, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateTransportDelayValueP(TransportDelay, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_TRANSPORT_DELAY_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (not self.value->isEmpty() and self.value->forAll(element | element.oclIsTypeOf(datatypes::CD)))";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateTransportDelayValueP(TransportDelay, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transport Delay Value P</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateTransportDelayValueP(TransportDelay, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transport Delay Value P</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateTransportDelayValueP(TransportDelay, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateTransportDelayValueP(TransportDelay, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 
 	protected static Constraint VALIDATE_TRANSPORT_DELAY_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param transportDelay The receiving '<em><b>Transport Delay</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param transportDelay The receiving '<em><b>Transport Delay</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 
 	public static boolean validateTransportDelayValueP(TransportDelay transportDelay, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
@@ -367,36 +367,36 @@ public class TransportDelayOperations extends ClinicalStatementOperations {
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateTransportDelayMoodCode(TransportDelay, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transport Delay Mood Code</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateTransportDelayMoodCode(TransportDelay, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transport Delay Mood Code</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateTransportDelayMoodCode(TransportDelay, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateTransportDelayMoodCode(TransportDelay, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_TRANSPORT_DELAY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "isDefined('moodCode')";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateTransportDelayMoodCode(TransportDelay, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transport Delay Mood Code</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateTransportDelayMoodCode(TransportDelay, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transport Delay Mood Code</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateTransportDelayMoodCode(TransportDelay, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateTransportDelayMoodCode(TransportDelay, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 
 	protected static Constraint VALIDATE_TRANSPORT_DELAY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param transportDelay The receiving '<em><b>Transport Delay</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param transportDelay The receiving '<em><b>Transport Delay</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 
 	public static boolean validateTransportDelayMoodCode(TransportDelay transportDelay, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {

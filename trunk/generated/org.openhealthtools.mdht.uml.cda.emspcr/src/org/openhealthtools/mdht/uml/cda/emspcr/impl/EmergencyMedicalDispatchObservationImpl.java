@@ -36,29 +36,29 @@ import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
 public class EmergencyMedicalDispatchObservationImpl extends ObservationImpl implements
 		EmergencyMedicalDispatchObservation {
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	protected EmergencyMedicalDispatchObservationImpl() {
 		super();
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
 		return EmspcrPackage.Literals.EMERGENCY_MEDICAL_DISPATCH_OBSERVATION;
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateEmergencyMedicalDispatchObservationTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return EmergencyMedicalDispatchObservationOperations.validateEmergencyMedicalDispatchObservationTemplateId(
@@ -66,10 +66,10 @@ public class EmergencyMedicalDispatchObservationImpl extends ObservationImpl imp
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateEmergencyMedicalDispatchObservationCodeP(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return EmergencyMedicalDispatchObservationOperations.validateEmergencyMedicalDispatchObservationCodeP(
@@ -77,10 +77,10 @@ public class EmergencyMedicalDispatchObservationImpl extends ObservationImpl imp
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateEmergencyMedicalDispatchObservationCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return EmergencyMedicalDispatchObservationOperations.validateEmergencyMedicalDispatchObservationCode(
@@ -88,10 +88,10 @@ public class EmergencyMedicalDispatchObservationImpl extends ObservationImpl imp
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateEmergencyMedicalDispatchObservationValue(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return EmergencyMedicalDispatchObservationOperations.validateEmergencyMedicalDispatchObservationValue(
@@ -99,10 +99,10 @@ public class EmergencyMedicalDispatchObservationImpl extends ObservationImpl imp
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateEmergencyMedicalDispatchObservationValueP(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return EmergencyMedicalDispatchObservationOperations.validateEmergencyMedicalDispatchObservationValueP(
@@ -110,10 +110,10 @@ public class EmergencyMedicalDispatchObservationImpl extends ObservationImpl imp
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateEmergencyMedicalDispatchObservationMoodCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return EmergencyMedicalDispatchObservationOperations.validateEmergencyMedicalDispatchObservationMoodCode(
@@ -121,10 +121,10 @@ public class EmergencyMedicalDispatchObservationImpl extends ObservationImpl imp
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public EmergencyMedicalDispatchObservation init() {
 		return Initializer.Util.init(this);
 	}
