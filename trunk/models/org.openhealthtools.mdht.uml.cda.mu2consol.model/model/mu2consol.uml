@@ -324,6 +324,14 @@ or one Vital Signs Section with entries required (TemplateID = 2.16.840.1.113883
 self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(consol::VitalSignsSectionEntriesOptional)))</body>
         </specification>
       </ownedRule>
+      <ownedRule xmi:id="_noil0Pn3EeKlfuzSvG33rA" name="medicationsAdministeredSectionOrMedicationsSectionER" constrainedElement="_7D0CQOzmEeGT-eFu7Ghgjw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_O0ckoPn4EeKlfuzSvG33rA">
+          <language>OCL</language>
+          <language>Analysis</language>
+          <body>self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(mu2consol::MedicationsAdministeredSection)) or self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::MedicationsSection))</body>
+          <body>SHALL contain one Medications Administered Section (Template ID = 2.16.840.1.113883.10.20.22.2.38) or Medications Section with entries required (Template ID = 2.16.840.1.113883.10.20.22.2.1.1)</body>
+        </specification>
+      </ownedRule>
       <generalization xmi:id="_7D0pUOzmEeGT-eFu7Ghgjw" general="_v-6qsNkMEeGsqcJR8eqiMw"/>
       <ownedAttribute xmi:id="_jg8YYOznEeGT-eFu7Ghgjw" name="problemSection" association="_jg8_ceznEeGT-eFu7Ghgjw">
         <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-problems.uml#_2LSPYBSVEeGGzu7fmW9pXw"/>
@@ -729,8 +737,8 @@ and componentOf/encompassingEncounter/encounterParticipant/assignedEntity/addr</
       <ownedEnd xmi:id="_Ba_pAPhnEeGPm7sA61ixGw" type="_7D0CQOzmEeGT-eFu7Ghgjw" association="_Ba_B8PhnEeGPm7sA61ixGw"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_xbrkwPwYEeGx4ophOjh2tw" name="SmokingStatusObservation">
-      <generalization xmi:id="_yhogMPwYEeGx4ophOjh2tw">
-        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-socialhistory.uml#_gIH_QOWQEeGKmvzED_He2w"/>
+      <generalization xmi:id="_MhKTkN9CEeKBHM4EHx-uwA">
+        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-socialhistory.uml#_RYJj0OWQEeGKmvzED_He2w"/>
       </generalization>
       <ownedAttribute xmi:id="__5ZLgPwYEeGx4ophOjh2tw" name="value" visibility="private" aggregation="composite">
         <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
@@ -952,7 +960,6 @@ and componentOf/encompassingEncounter/encounterParticipant/assignedEntity/addr</
   <CDA:ConstraintValidation xmi:id="_fRfpkPhlEeGPm7sA61ixGw" base_Constraint="_fRfCgPhlEeGPm7sA61ixGw"/>
   <CDA:ConstraintValidation xmi:id="_AgV0EPhmEeGPm7sA61ixGw" base_Constraint="_8kY74PhlEeGPm7sA61ixGw"/>
   <CDA:AssociationValidation xmi:id="_LQeV0PhmEeGPm7sA61ixGw" base_Association="_WZ50wO1XEeGT-eFu7Ghgjw"/>
-  <CDA:AssociationValidation xmi:id="_UzarsPhmEeGPm7sA61ixGw" base_Association="_JU1b8O1XEeGT-eFu7Ghgjw"/>
   <CDA:AssociationValidation xmi:id="_xHY3oPhmEeGPm7sA61ixGw" base_Association="_TUZm8e1YEeGT-eFu7Ghgjw"/>
   <CDA:AssociationValidation xmi:id="_COQR8PhnEeGPm7sA61ixGw" base_Association="_Ba_B8PhnEeGPm7sA61ixGw"/>
   <CDA:AssociationValidation xmi:id="_6mfdEPhrEeGPm7sA61ixGw" base_Association="_d0vf0dk5EeGsqcJR8eqiMw"/>
@@ -1005,7 +1012,6 @@ and componentOf/encompassingEncounter/encounterParticipant/assignedEntity/addr</
     <ruleId>CONF:8156</ruleId>
   </CDA:AssociationValidation>
   <CDA:CDATemplate xmi:id="_Yo060F6fEeKM3cA2Ii750w" base_Class="_SGU3IF6fEeKM3cA2Ii750w" templateId="2.16.840.1.113883.10.20.22.2.38"/>
-  <CDA:AssociationValidation xmi:id="_siLq4F6fEeKM3cA2Ii750w" base_Association="_rWmokl6fEeKM3cA2Ii750w"/>
   <CDA:ConstraintValidation xmi:id="_AQZ3EF6iEeKM3cA2Ii750w" base_Constraint="_EXB0kFw5EeKCbK7xq-QAsQ"/>
   <CDA:ConstraintValidation xmi:id="_QZ6RQF6iEeKM3cA2Ii750w" base_Constraint="_-3duMF6hEeKM3cA2Ii750w"/>
   <CDA:ConstraintValidation xmi:id="_72C7oF9REeKMx7P90fbQ6Q" base_Constraint="_72CUkF9REeKMx7P90fbQ6Q"/>
@@ -1029,4 +1035,5 @@ and componentOf/encompassingEncounter/encounterParticipant/assignedEntity/addr</
   <CDA:CDATemplate xmi:id="_Cs6a8LQDEeKvseWyjms7Qw" base_Class="_-d8LALQAEeKvseWyjms7Qw" templateId="2.16.840.1.113883.10.20.22.4.67"/>
   <CDA:ConstraintValidation xmi:id="_NqTpML8SEeKsUcWPoYARmw" base_Constraint="_GRpocL2EEeK9zeMCqcZC8w"/>
   <CDA:ConstraintValidation xmi:id="_lxpcoL8SEeKsUcWPoYARmw" base_Constraint="_lxo1kL8SEeKsUcWPoYARmw"/>
+  <CDA:ConstraintValidation xmi:id="_kOg5gPn4EeKlfuzSvG33rA" base_Constraint="_noil0Pn3EeKlfuzSvG33rA"/>
 </xmi:XMI>

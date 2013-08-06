@@ -17,7 +17,6 @@ import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
 import org.openhealthtools.mdht.emf.runtime.util.Initializer;
-import org.openhealthtools.mdht.uml.cda.consol.impl.TobaccoUseImpl;
 import org.openhealthtools.mdht.uml.cda.mu2consol.Mu2consolPackage;
 import org.openhealthtools.mdht.uml.cda.mu2consol.SmokingStatusObservation;
 import org.openhealthtools.mdht.uml.cda.mu2consol.operations.SmokingStatusObservationOperations;
@@ -30,7 +29,7 @@ import org.openhealthtools.mdht.uml.cda.mu2consol.operations.SmokingStatusObserv
  *
  * @generated
  */
-public class SmokingStatusObservationImpl extends TobaccoUseImpl implements
+public class SmokingStatusObservationImpl extends org.openhealthtools.mdht.uml.cda.consol.impl.SmokingStatusObservationImpl implements
 		SmokingStatusObservation {
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
@@ -50,21 +49,21 @@ public class SmokingStatusObservationImpl extends TobaccoUseImpl implements
 	}
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateSmokingStatusObservationValueP(
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return SmokingStatusObservationOperations.validateSmokingStatusObservationValueP(this, diagnostics, context);
+	public boolean validateMU2CONSOLSmokingStatusObservationValueP(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return SmokingStatusObservationOperations.validateMU2CONSOLSmokingStatusObservationValueP(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateSmokingStatusObservationValue(
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return SmokingStatusObservationOperations.validateSmokingStatusObservationValue(this, diagnostics, context);
+	public boolean validateMU2CONSOLSmokingStatusObservationValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return SmokingStatusObservationOperations.validateMU2CONSOLSmokingStatusObservationValue(this, diagnostics, context);
 	}
 
 	/**
