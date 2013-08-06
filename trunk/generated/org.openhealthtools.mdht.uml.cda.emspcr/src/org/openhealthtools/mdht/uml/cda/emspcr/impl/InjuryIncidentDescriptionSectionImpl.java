@@ -45,29 +45,29 @@ import org.openhealthtools.mdht.uml.cda.impl.SectionImpl;
  */
 public class InjuryIncidentDescriptionSectionImpl extends SectionImpl implements InjuryIncidentDescriptionSection {
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	protected InjuryIncidentDescriptionSectionImpl() {
 		super();
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	@Override
 	protected EClass eStaticClass() {
 		return EmspcrPackage.Literals.INJURY_INCIDENT_DESCRIPTION_SECTION;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateInjuryIncidentDescriptionSectionTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return InjuryIncidentDescriptionSectionOperations.validateInjuryIncidentDescriptionSectionTemplateId(
@@ -75,20 +75,20 @@ public class InjuryIncidentDescriptionSectionImpl extends SectionImpl implements
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateInjuryIncidentDescriptionSectionCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return InjuryIncidentDescriptionSectionOperations.validateInjuryIncidentDescriptionSectionCode(
 			this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateInjuryIncidentDescriptionSectionTitle(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return InjuryIncidentDescriptionSectionOperations.validateInjuryIncidentDescriptionSectionTitle(
@@ -96,20 +96,20 @@ public class InjuryIncidentDescriptionSectionImpl extends SectionImpl implements
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateInjuryIncidentDescriptionSectionText(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return InjuryIncidentDescriptionSectionOperations.validateInjuryIncidentDescriptionSectionText(
 			this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateInjuryIncidentDescriptionSectionInjuryCauseCategory(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return InjuryIncidentDescriptionSectionOperations.validateInjuryIncidentDescriptionSectionInjuryCauseCategory(
@@ -117,10 +117,10 @@ public class InjuryIncidentDescriptionSectionImpl extends SectionImpl implements
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateInjuryIncidentDescriptionSectionInjuryMechanism(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return InjuryIncidentDescriptionSectionOperations.validateInjuryIncidentDescriptionSectionInjuryMechanism(
@@ -128,10 +128,10 @@ public class InjuryIncidentDescriptionSectionImpl extends SectionImpl implements
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateInjuryIncidentDescriptionSectionTraumaCenterCriteria(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return InjuryIncidentDescriptionSectionOperations.validateInjuryIncidentDescriptionSectionTraumaCenterCriteria(
@@ -139,10 +139,10 @@ public class InjuryIncidentDescriptionSectionImpl extends SectionImpl implements
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateInjuryIncidentDescriptionSectionInjuryRiskFactor(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return InjuryIncidentDescriptionSectionOperations.validateInjuryIncidentDescriptionSectionInjuryRiskFactor(
@@ -150,10 +150,10 @@ public class InjuryIncidentDescriptionSectionImpl extends SectionImpl implements
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateInjuryIncidentDescriptionSectionVehicleImpactArea(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return InjuryIncidentDescriptionSectionOperations.validateInjuryIncidentDescriptionSectionVehicleImpactArea(
@@ -161,10 +161,10 @@ public class InjuryIncidentDescriptionSectionImpl extends SectionImpl implements
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateInjuryIncidentDescriptionSectionPatientLocationInVehicle(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return InjuryIncidentDescriptionSectionOperations.validateInjuryIncidentDescriptionSectionPatientLocationInVehicle(
@@ -172,10 +172,10 @@ public class InjuryIncidentDescriptionSectionImpl extends SectionImpl implements
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateInjuryIncidentDescriptionSectionVehicleOccupantSafetyEquipment(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return InjuryIncidentDescriptionSectionOperations.validateInjuryIncidentDescriptionSectionVehicleOccupantSafetyEquipment(
@@ -183,10 +183,10 @@ public class InjuryIncidentDescriptionSectionImpl extends SectionImpl implements
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateInjuryIncidentDescriptionSectionAirbagDeploymentStatus(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return InjuryIncidentDescriptionSectionOperations.validateInjuryIncidentDescriptionSectionAirbagDeploymentStatus(
@@ -194,10 +194,10 @@ public class InjuryIncidentDescriptionSectionImpl extends SectionImpl implements
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateInjuryIncidentDescriptionSectionHeightOfFall(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return InjuryIncidentDescriptionSectionOperations.validateInjuryIncidentDescriptionSectionHeightOfFall(
@@ -205,10 +205,10 @@ public class InjuryIncidentDescriptionSectionImpl extends SectionImpl implements
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateInjuryIncidentDescriptionSectionDisasterType(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return InjuryIncidentDescriptionSectionOperations.validateInjuryIncidentDescriptionSectionDisasterType(
@@ -216,100 +216,100 @@ public class InjuryIncidentDescriptionSectionImpl extends SectionImpl implements
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public InjuryCauseCategory getInjuryCauseCategory() {
 		return InjuryIncidentDescriptionSectionOperations.getInjuryCauseCategory(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public InjuryMechanism getInjuryMechanism() {
 		return InjuryIncidentDescriptionSectionOperations.getInjuryMechanism(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public TraumaCenterCriteria getTraumaCenterCriteria() {
 		return InjuryIncidentDescriptionSectionOperations.getTraumaCenterCriteria(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public InjuryRiskFactor getInjuryRiskFactor() {
 		return InjuryIncidentDescriptionSectionOperations.getInjuryRiskFactor(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public VehicleImpactArea getVehicleImpactArea() {
 		return InjuryIncidentDescriptionSectionOperations.getVehicleImpactArea(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public PatientLocationInVehicle getPatientLocationInVehicle() {
 		return InjuryIncidentDescriptionSectionOperations.getPatientLocationInVehicle(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public VehicleOccupantSafetyEquipment getVehicleOccupantSafetyEquipment() {
 		return InjuryIncidentDescriptionSectionOperations.getVehicleOccupantSafetyEquipment(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public AirbagDeploymentStatus getAirbagDeploymentStatus() {
 		return InjuryIncidentDescriptionSectionOperations.getAirbagDeploymentStatus(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public HeightOfFall getHeightOfFall() {
 		return InjuryIncidentDescriptionSectionOperations.getHeightOfFall(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public DisasterType getDisasterType() {
 		return InjuryIncidentDescriptionSectionOperations.getDisasterType(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public InjuryIncidentDescriptionSection init() {
 		return Initializer.Util.init(this);
 	}

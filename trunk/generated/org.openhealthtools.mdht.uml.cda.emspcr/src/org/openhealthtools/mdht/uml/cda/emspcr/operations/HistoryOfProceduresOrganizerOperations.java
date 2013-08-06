@@ -43,45 +43,45 @@ import org.openhealthtools.mdht.uml.cda.operations.OrganizerOperations;
  */
 public class HistoryOfProceduresOrganizerOperations extends OrganizerOperations {
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	protected HistoryOfProceduresOrganizerOperations() {
 		super();
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateHistoryOfProceduresOrganizerExistenceOfHistoryOfProcedureComponent(HistoryOfProceduresOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate History Of Procedures Organizer Existence Of History Of Procedure Component</em>}' operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL expression body for the '{@link #validateHistoryOfProceduresOrganizerExistenceOfHistoryOfProcedureComponent(HistoryOfProceduresOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate History Of Procedures Organizer Existence Of History Of Procedure Component</em>}' operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateHistoryOfProceduresOrganizerExistenceOfHistoryOfProcedureComponent(HistoryOfProceduresOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validateHistoryOfProceduresOrganizerExistenceOfHistoryOfProcedureComponent(HistoryOfProceduresOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 	protected static final String VALIDATE_HISTORY_OF_PROCEDURES_ORGANIZER_EXISTENCE_OF_HISTORY_OF_PROCEDURE_COMPONENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.component->one(component : cda::Component4 | not component.oclIsUndefined() and component.oclIsKindOf(cda::Component4))";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validateHistoryOfProceduresOrganizerExistenceOfHistoryOfProcedureComponent(HistoryOfProceduresOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate History Of Procedures Organizer Existence Of History Of Procedure Component</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL invariant for the '{@link #validateHistoryOfProceduresOrganizerExistenceOfHistoryOfProcedureComponent(HistoryOfProceduresOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate History Of Procedures Organizer Existence Of History Of Procedure Component</em>}' invariant operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateHistoryOfProceduresOrganizerExistenceOfHistoryOfProcedureComponent(HistoryOfProceduresOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validateHistoryOfProceduresOrganizerExistenceOfHistoryOfProcedureComponent(HistoryOfProceduresOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 
 	protected static Constraint VALIDATE_HISTORY_OF_PROCEDURES_ORGANIZER_EXISTENCE_OF_HISTORY_OF_PROCEDURE_COMPONENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param historyOfProceduresOrganizer The receiving '<em><b>History Of Procedures Organizer</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
+	* <!-- begin-model-doc -->
+	* @param historyOfProceduresOrganizer The receiving '<em><b>History Of Procedures Organizer</b></em>' model object.
+	* @param diagnostics The chain of diagnostics to which problems are to be appended.
+	* @param context The cache of context-specific information.
+	* <!-- end-model-doc -->
+	* @generated
+	*/
 
 	public static boolean validateHistoryOfProceduresOrganizerExistenceOfHistoryOfProcedureComponent(
 			HistoryOfProceduresOrganizer historyOfProceduresOrganizer, DiagnosticChain diagnostics,
@@ -114,36 +114,36 @@ public class HistoryOfProceduresOrganizerOperations extends OrganizerOperations 
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateHistoryOfProceduresOrganizerHistoryOfProceduresComponent(HistoryOfProceduresOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate History Of Procedures Organizer History Of Procedures Component</em>}' operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL expression body for the '{@link #validateHistoryOfProceduresOrganizerHistoryOfProceduresComponent(HistoryOfProceduresOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate History Of Procedures Organizer History Of Procedures Component</em>}' operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateHistoryOfProceduresOrganizerHistoryOfProceduresComponent(HistoryOfProceduresOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validateHistoryOfProceduresOrganizerHistoryOfProceduresComponent(HistoryOfProceduresOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 	protected static final String VALIDATE_HISTORY_OF_PROCEDURES_ORGANIZER_HISTORY_OF_PROCEDURES_COMPONENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.component->exists(component : cda::Component4 | not component.oclIsUndefined() and component.oclIsKindOf(cda::Component4))";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validateHistoryOfProceduresOrganizerHistoryOfProceduresComponent(HistoryOfProceduresOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate History Of Procedures Organizer History Of Procedures Component</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL invariant for the '{@link #validateHistoryOfProceduresOrganizerHistoryOfProceduresComponent(HistoryOfProceduresOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate History Of Procedures Organizer History Of Procedures Component</em>}' invariant operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateHistoryOfProceduresOrganizerHistoryOfProceduresComponent(HistoryOfProceduresOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validateHistoryOfProceduresOrganizerHistoryOfProceduresComponent(HistoryOfProceduresOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 
 	protected static Constraint VALIDATE_HISTORY_OF_PROCEDURES_ORGANIZER_HISTORY_OF_PROCEDURES_COMPONENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param historyOfProceduresOrganizer The receiving '<em><b>History Of Procedures Organizer</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
+	* <!-- begin-model-doc -->
+	* @param historyOfProceduresOrganizer The receiving '<em><b>History Of Procedures Organizer</b></em>' model object.
+	* @param diagnostics The chain of diagnostics to which problems are to be appended.
+	* @param context The cache of context-specific information.
+	* <!-- end-model-doc -->
+	* @generated
+	*/
 
 	public static boolean validateHistoryOfProceduresOrganizerHistoryOfProceduresComponent(
 			HistoryOfProceduresOrganizer historyOfProceduresOrganizer, DiagnosticChain diagnostics,
@@ -176,36 +176,36 @@ public class HistoryOfProceduresOrganizerOperations extends OrganizerOperations 
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateHistoryOfProceduresOrganizerTemplateId(HistoryOfProceduresOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate History Of Procedures Organizer Template Id</em>}' operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL expression body for the '{@link #validateHistoryOfProceduresOrganizerTemplateId(HistoryOfProceduresOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate History Of Procedures Organizer Template Id</em>}' operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateHistoryOfProceduresOrganizerTemplateId(HistoryOfProceduresOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validateHistoryOfProceduresOrganizerTemplateId(HistoryOfProceduresOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 	protected static final String VALIDATE_HISTORY_OF_PROCEDURES_ORGANIZER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.1133883.17.3.10.1.62')";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validateHistoryOfProceduresOrganizerTemplateId(HistoryOfProceduresOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate History Of Procedures Organizer Template Id</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL invariant for the '{@link #validateHistoryOfProceduresOrganizerTemplateId(HistoryOfProceduresOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate History Of Procedures Organizer Template Id</em>}' invariant operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateHistoryOfProceduresOrganizerTemplateId(HistoryOfProceduresOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validateHistoryOfProceduresOrganizerTemplateId(HistoryOfProceduresOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 
 	protected static Constraint VALIDATE_HISTORY_OF_PROCEDURES_ORGANIZER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param historyOfProceduresOrganizer The receiving '<em><b>History Of Procedures Organizer</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
+	* <!-- begin-model-doc -->
+	* @param historyOfProceduresOrganizer The receiving '<em><b>History Of Procedures Organizer</b></em>' model object.
+	* @param diagnostics The chain of diagnostics to which problems are to be appended.
+	* @param context The cache of context-specific information.
+	* <!-- end-model-doc -->
+	* @generated
+	*/
 
 	public static boolean validateHistoryOfProceduresOrganizerTemplateId(
 			HistoryOfProceduresOrganizer historyOfProceduresOrganizer, DiagnosticChain diagnostics,

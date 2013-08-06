@@ -38,29 +38,29 @@ import org.openhealthtools.mdht.uml.cda.impl.SectionImpl;
  */
 public class AllergiesAndAdverseReactionsSectionImpl extends SectionImpl implements AllergiesAndAdverseReactionsSection {
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	protected AllergiesAndAdverseReactionsSectionImpl() {
 		super();
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	@Override
 	protected EClass eStaticClass() {
 		return EmspcrPackage.Literals.ALLERGIES_AND_ADVERSE_REACTIONS_SECTION;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateAllergiesAndAdverseReactionsSectionTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return AllergiesAndAdverseReactionsSectionOperations.validateAllergiesAndAdverseReactionsSectionTemplateId(
@@ -68,10 +68,10 @@ public class AllergiesAndAdverseReactionsSectionImpl extends SectionImpl impleme
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateAllergiesAndAdverseReactionsSectionCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return AllergiesAndAdverseReactionsSectionOperations.validateAllergiesAndAdverseReactionsSectionCode(
@@ -79,10 +79,10 @@ public class AllergiesAndAdverseReactionsSectionImpl extends SectionImpl impleme
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateAllergiesAndAdverseReactionsSectionTitle(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return AllergiesAndAdverseReactionsSectionOperations.validateAllergiesAndAdverseReactionsSectionTitle(
@@ -90,10 +90,10 @@ public class AllergiesAndAdverseReactionsSectionImpl extends SectionImpl impleme
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateAllergiesAndAdverseReactionsSectionText(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return AllergiesAndAdverseReactionsSectionOperations.validateAllergiesAndAdverseReactionsSectionText(
@@ -101,10 +101,10 @@ public class AllergiesAndAdverseReactionsSectionImpl extends SectionImpl impleme
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateAllergiesAndAdverseReactionsSectionObservation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return AllergiesAndAdverseReactionsSectionOperations.validateAllergiesAndAdverseReactionsSectionObservation(
@@ -112,10 +112,10 @@ public class AllergiesAndAdverseReactionsSectionImpl extends SectionImpl impleme
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateAllergiesAndAdverseReactionsSectionDrugAllergyProblemAct(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return AllergiesAndAdverseReactionsSectionOperations.validateAllergiesAndAdverseReactionsSectionDrugAllergyProblemAct(
@@ -123,10 +123,10 @@ public class AllergiesAndAdverseReactionsSectionImpl extends SectionImpl impleme
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateAllergiesAndAdverseReactionsSectionEnvironmentalAllergies(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return AllergiesAndAdverseReactionsSectionOperations.validateAllergiesAndAdverseReactionsSectionEnvironmentalAllergies(
@@ -134,37 +134,37 @@ public class AllergiesAndAdverseReactionsSectionImpl extends SectionImpl impleme
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public ExistenceOfDrugAllergyObservation getObservation() {
 		return AllergiesAndAdverseReactionsSectionOperations.getObservation(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public DrugAllergyProblemAct getDrugAllergyProblemAct() {
 		return AllergiesAndAdverseReactionsSectionOperations.getDrugAllergyProblemAct(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public EnvironmentalAllergies getEnvironmentalAllergies() {
 		return AllergiesAndAdverseReactionsSectionOperations.getEnvironmentalAllergies(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public AllergiesAndAdverseReactionsSection init() {
 		return Initializer.Util.init(this);
 	}

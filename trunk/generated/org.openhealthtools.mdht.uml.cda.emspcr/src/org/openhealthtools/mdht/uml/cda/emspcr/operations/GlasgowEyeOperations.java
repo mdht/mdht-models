@@ -46,45 +46,45 @@ import org.openhealthtools.mdht.uml.cda.operations.ClinicalStatementOperations;
  */
 public class GlasgowEyeOperations extends ClinicalStatementOperations {
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	protected GlasgowEyeOperations() {
 		super();
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateGlasgowEyeTemplateId(GlasgowEye, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Glasgow Eye Template Id</em>}' operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL expression body for the '{@link #validateGlasgowEyeTemplateId(GlasgowEye, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Glasgow Eye Template Id</em>}' operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateGlasgowEyeTemplateId(GlasgowEye, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validateGlasgowEyeTemplateId(GlasgowEye, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 	protected static final String VALIDATE_GLASGOW_EYE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.1133883.17.3.10.1.160')";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validateGlasgowEyeTemplateId(GlasgowEye, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Glasgow Eye Template Id</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL invariant for the '{@link #validateGlasgowEyeTemplateId(GlasgowEye, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Glasgow Eye Template Id</em>}' invariant operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateGlasgowEyeTemplateId(GlasgowEye, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validateGlasgowEyeTemplateId(GlasgowEye, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 
 	protected static Constraint VALIDATE_GLASGOW_EYE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param glasgowEye The receiving '<em><b>Glasgow Eye</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
+	* <!-- begin-model-doc -->
+	* @param glasgowEye The receiving '<em><b>Glasgow Eye</b></em>' model object.
+	* @param diagnostics The chain of diagnostics to which problems are to be appended.
+	* @param context The cache of context-specific information.
+	* <!-- end-model-doc -->
+	* @generated
+	*/
 
 	public static boolean validateGlasgowEyeTemplateId(GlasgowEye glasgowEye, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
@@ -112,36 +112,36 @@ public class GlasgowEyeOperations extends ClinicalStatementOperations {
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateGlasgowEyeCodeP(GlasgowEye, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Glasgow Eye Code P</em>}' operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL expression body for the '{@link #validateGlasgowEyeCodeP(GlasgowEye, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Glasgow Eye Code P</em>}' operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateGlasgowEyeCodeP(GlasgowEye, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validateGlasgowEyeCodeP(GlasgowEye, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 	protected static final String VALIDATE_GLASGOW_EYE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined())";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validateGlasgowEyeCodeP(GlasgowEye, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Glasgow Eye Code P</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL invariant for the '{@link #validateGlasgowEyeCodeP(GlasgowEye, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Glasgow Eye Code P</em>}' invariant operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateGlasgowEyeCodeP(GlasgowEye, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validateGlasgowEyeCodeP(GlasgowEye, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 
 	protected static Constraint VALIDATE_GLASGOW_EYE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param glasgowEye The receiving '<em><b>Glasgow Eye</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
+	* <!-- begin-model-doc -->
+	* @param glasgowEye The receiving '<em><b>Glasgow Eye</b></em>' model object.
+	* @param diagnostics The chain of diagnostics to which problems are to be appended.
+	* @param context The cache of context-specific information.
+	* <!-- end-model-doc -->
+	* @generated
+	*/
 
 	public static boolean validateGlasgowEyeCodeP(GlasgowEye glasgowEye, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
@@ -181,38 +181,38 @@ public class GlasgowEyeOperations extends ClinicalStatementOperations {
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateGlasgowEyeCode(GlasgowEye, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Glasgow Eye Code</em>}' operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL expression body for the '{@link #validateGlasgowEyeCode(GlasgowEye, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Glasgow Eye Code</em>}' operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateGlasgowEyeCode(GlasgowEye, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validateGlasgowEyeCode(GlasgowEye, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 	protected static final String VALIDATE_GLASGOW_EYE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "
 			+ "let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "
 			+ "value.code = '9267-6' and value.codeSystem = '2.16.840.1.113883.6.1')";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validateGlasgowEyeCode(GlasgowEye, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Glasgow Eye Code</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL invariant for the '{@link #validateGlasgowEyeCode(GlasgowEye, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Glasgow Eye Code</em>}' invariant operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateGlasgowEyeCode(GlasgowEye, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validateGlasgowEyeCode(GlasgowEye, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 
 	protected static Constraint VALIDATE_GLASGOW_EYE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param glasgowEye The receiving '<em><b>Glasgow Eye</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
+	* <!-- begin-model-doc -->
+	* @param glasgowEye The receiving '<em><b>Glasgow Eye</b></em>' model object.
+	* @param diagnostics The chain of diagnostics to which problems are to be appended.
+	* @param context The cache of context-specific information.
+	* <!-- end-model-doc -->
+	* @generated
+	*/
 
 	public static boolean validateGlasgowEyeCode(GlasgowEye glasgowEye, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
@@ -247,36 +247,36 @@ public class GlasgowEyeOperations extends ClinicalStatementOperations {
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateGlasgowEyeValue(GlasgowEye, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Glasgow Eye Value</em>}' operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL expression body for the '{@link #validateGlasgowEyeValue(GlasgowEye, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Glasgow Eye Value</em>}' operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateGlasgowEyeValue(GlasgowEye, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validateGlasgowEyeValue(GlasgowEye, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 	protected static final String VALIDATE_GLASGOW_EYE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | element.oclIsTypeOf(datatypes::INT)))";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validateGlasgowEyeValue(GlasgowEye, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Glasgow Eye Value</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL invariant for the '{@link #validateGlasgowEyeValue(GlasgowEye, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Glasgow Eye Value</em>}' invariant operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateGlasgowEyeValue(GlasgowEye, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validateGlasgowEyeValue(GlasgowEye, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 
 	protected static Constraint VALIDATE_GLASGOW_EYE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param glasgowEye The receiving '<em><b>Glasgow Eye</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
+	* <!-- begin-model-doc -->
+	* @param glasgowEye The receiving '<em><b>Glasgow Eye</b></em>' model object.
+	* @param diagnostics The chain of diagnostics to which problems are to be appended.
+	* @param context The cache of context-specific information.
+	* <!-- end-model-doc -->
+	* @generated
+	*/
 
 	public static boolean validateGlasgowEyeValue(GlasgowEye glasgowEye, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
@@ -304,36 +304,36 @@ public class GlasgowEyeOperations extends ClinicalStatementOperations {
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateGlasgowEyeMoodCode(GlasgowEye, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Glasgow Eye Mood Code</em>}' operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL expression body for the '{@link #validateGlasgowEyeMoodCode(GlasgowEye, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Glasgow Eye Mood Code</em>}' operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateGlasgowEyeMoodCode(GlasgowEye, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validateGlasgowEyeMoodCode(GlasgowEye, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 	protected static final String VALIDATE_GLASGOW_EYE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "isDefined('moodCode')";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validateGlasgowEyeMoodCode(GlasgowEye, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Glasgow Eye Mood Code</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL invariant for the '{@link #validateGlasgowEyeMoodCode(GlasgowEye, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Glasgow Eye Mood Code</em>}' invariant operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateGlasgowEyeMoodCode(GlasgowEye, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validateGlasgowEyeMoodCode(GlasgowEye, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 
 	protected static Constraint VALIDATE_GLASGOW_EYE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param glasgowEye The receiving '<em><b>Glasgow Eye</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
+	* <!-- begin-model-doc -->
+	* @param glasgowEye The receiving '<em><b>Glasgow Eye</b></em>' model object.
+	* @param diagnostics The chain of diagnostics to which problems are to be appended.
+	* @param context The cache of context-specific information.
+	* <!-- end-model-doc -->
+	* @generated
+	*/
 
 	public static boolean validateGlasgowEyeMoodCode(GlasgowEye glasgowEye, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {

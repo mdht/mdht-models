@@ -35,29 +35,29 @@ import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
  */
 public class ResponseBeginningOdometerReadingImpl extends ObservationImpl implements ResponseBeginningOdometerReading {
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	protected ResponseBeginningOdometerReadingImpl() {
 		super();
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	@Override
 	protected EClass eStaticClass() {
 		return EmspcrPackage.Literals.RESPONSE_BEGINNING_ODOMETER_READING;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateResponseBeginningOdometerReadingTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ResponseBeginningOdometerReadingOperations.validateResponseBeginningOdometerReadingTemplateId(
@@ -65,10 +65,10 @@ public class ResponseBeginningOdometerReadingImpl extends ObservationImpl implem
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateResponseBeginningOdometerReadingCodeP(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ResponseBeginningOdometerReadingOperations.validateResponseBeginningOdometerReadingCodeP(
@@ -76,20 +76,20 @@ public class ResponseBeginningOdometerReadingImpl extends ObservationImpl implem
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateResponseBeginningOdometerReadingCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ResponseBeginningOdometerReadingOperations.validateResponseBeginningOdometerReadingCode(
 			this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateResponseBeginningOdometerReadingValue(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ResponseBeginningOdometerReadingOperations.validateResponseBeginningOdometerReadingValue(
@@ -97,10 +97,10 @@ public class ResponseBeginningOdometerReadingImpl extends ObservationImpl implem
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateResponseBeginningOdometerReadingMoodCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ResponseBeginningOdometerReadingOperations.validateResponseBeginningOdometerReadingMoodCode(
@@ -108,10 +108,10 @@ public class ResponseBeginningOdometerReadingImpl extends ObservationImpl implem
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public ResponseBeginningOdometerReading init() {
 		return Initializer.Util.init(this);
 	}

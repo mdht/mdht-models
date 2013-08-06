@@ -35,74 +35,74 @@ import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
  */
 public class GlasgowVerbalImpl extends ObservationImpl implements GlasgowVerbal {
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	protected GlasgowVerbalImpl() {
 		super();
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	@Override
 	protected EClass eStaticClass() {
 		return EmspcrPackage.Literals.GLASGOW_VERBAL;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateGlasgowVerbalTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return GlasgowVerbalOperations.validateGlasgowVerbalTemplateId(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateGlasgowVerbalCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return GlasgowVerbalOperations.validateGlasgowVerbalCodeP(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateGlasgowVerbalCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return GlasgowVerbalOperations.validateGlasgowVerbalCode(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateGlasgowVerbalValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return GlasgowVerbalOperations.validateGlasgowVerbalValue(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateGlasgowVerbalMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return GlasgowVerbalOperations.validateGlasgowVerbalMoodCode(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public GlasgowVerbal init() {
 		return Initializer.Util.init(this);
 	}

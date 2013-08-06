@@ -35,58 +35,67 @@ import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
  */
 public class TransportModeObservationImpl extends ObservationImpl implements TransportModeObservation {
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	protected TransportModeObservationImpl() {
 		super();
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	@Override
 	protected EClass eStaticClass() {
 		return EmspcrPackage.Literals.TRANSPORT_MODE_OBSERVATION;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateTransportModeObservationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return TransportModeObservationOperations.validateTransportModeObservationTemplateId(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateTransportModeObservationCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return TransportModeObservationOperations.validateTransportModeObservationCodeP(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateTransportModeObservationCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return TransportModeObservationOperations.validateTransportModeObservationCode(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateTransportModeObservationValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return TransportModeObservationOperations.validateTransportModeObservationValue(this, diagnostics, context);
+	}
+
+	/**
+	* <!-- begin-user-doc -->
+	* <!-- end-user-doc -->
+	* @generated
+	*/
+	public boolean validateTransportModeObservationValueP(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return TransportModeObservationOperations.validateTransportModeObservationValueP(this, diagnostics, context);
 	}
 
 	/**
@@ -99,10 +108,10 @@ public class TransportModeObservationImpl extends ObservationImpl implements Tra
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public TransportModeObservation init() {
 		return Initializer.Util.init(this);
 	}

@@ -36,66 +36,66 @@ import org.openhealthtools.mdht.uml.cda.impl.SectionImpl;
  */
 public class CardiacArrestEventSectionImpl extends SectionImpl implements CardiacArrestEventSection {
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	protected CardiacArrestEventSectionImpl() {
 		super();
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	@Override
 	protected EClass eStaticClass() {
 		return EmspcrPackage.Literals.CARDIAC_ARREST_EVENT_SECTION;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateCardiacArrestEventSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return CardiacArrestEventSectionOperations.validateCardiacArrestEventSectionTemplateId(
 			this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateCardiacArrestEventSectionCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return CardiacArrestEventSectionOperations.validateCardiacArrestEventSectionCode(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateCardiacArrestEventSectionTitle(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return CardiacArrestEventSectionOperations.validateCardiacArrestEventSectionTitle(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateCardiacArrestEventSectionText(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return CardiacArrestEventSectionOperations.validateCardiacArrestEventSectionText(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateCardiacArrestEventSectionCardiacArrestExistence(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return CardiacArrestEventSectionOperations.validateCardiacArrestEventSectionCardiacArrestExistence(
@@ -103,19 +103,19 @@ public class CardiacArrestEventSectionImpl extends SectionImpl implements Cardia
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public CardiacArrestExistence getCardiacArrestExistence() {
 		return CardiacArrestEventSectionOperations.getCardiacArrestExistence(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public CardiacArrestEventSection init() {
 		return Initializer.Util.init(this);
 	}

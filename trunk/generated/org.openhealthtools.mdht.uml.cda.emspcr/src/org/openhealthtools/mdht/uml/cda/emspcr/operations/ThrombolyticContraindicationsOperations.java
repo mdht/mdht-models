@@ -46,45 +46,45 @@ import org.openhealthtools.mdht.uml.cda.operations.ClinicalStatementOperations;
  */
 public class ThrombolyticContraindicationsOperations extends ClinicalStatementOperations {
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	protected ThrombolyticContraindicationsOperations() {
 		super();
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateThrombolyticContraindicationsTemplateId(ThrombolyticContraindications, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Thrombolytic Contraindications Template Id</em>}' operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL expression body for the '{@link #validateThrombolyticContraindicationsTemplateId(ThrombolyticContraindications, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Thrombolytic Contraindications Template Id</em>}' operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateThrombolyticContraindicationsTemplateId(ThrombolyticContraindications, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validateThrombolyticContraindicationsTemplateId(ThrombolyticContraindications, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 	protected static final String VALIDATE_THROMBOLYTIC_CONTRAINDICATIONS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.1133883.17.3.10.1.82')";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validateThrombolyticContraindicationsTemplateId(ThrombolyticContraindications, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Thrombolytic Contraindications Template Id</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL invariant for the '{@link #validateThrombolyticContraindicationsTemplateId(ThrombolyticContraindications, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Thrombolytic Contraindications Template Id</em>}' invariant operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateThrombolyticContraindicationsTemplateId(ThrombolyticContraindications, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validateThrombolyticContraindicationsTemplateId(ThrombolyticContraindications, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 
 	protected static Constraint VALIDATE_THROMBOLYTIC_CONTRAINDICATIONS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param thrombolyticContraindications The receiving '<em><b>Thrombolytic Contraindications</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
+	* <!-- begin-model-doc -->
+	* @param thrombolyticContraindications The receiving '<em><b>Thrombolytic Contraindications</b></em>' model object.
+	* @param diagnostics The chain of diagnostics to which problems are to be appended.
+	* @param context The cache of context-specific information.
+	* <!-- end-model-doc -->
+	* @generated
+	*/
 
 	public static boolean validateThrombolyticContraindicationsTemplateId(
 			ThrombolyticContraindications thrombolyticContraindications, DiagnosticChain diagnostics,
@@ -115,36 +115,36 @@ public class ThrombolyticContraindicationsOperations extends ClinicalStatementOp
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateThrombolyticContraindicationsCodeP(ThrombolyticContraindications, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Thrombolytic Contraindications Code P</em>}' operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL expression body for the '{@link #validateThrombolyticContraindicationsCodeP(ThrombolyticContraindications, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Thrombolytic Contraindications Code P</em>}' operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateThrombolyticContraindicationsCodeP(ThrombolyticContraindications, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validateThrombolyticContraindicationsCodeP(ThrombolyticContraindications, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 	protected static final String VALIDATE_THROMBOLYTIC_CONTRAINDICATIONS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined())";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validateThrombolyticContraindicationsCodeP(ThrombolyticContraindications, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Thrombolytic Contraindications Code P</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL invariant for the '{@link #validateThrombolyticContraindicationsCodeP(ThrombolyticContraindications, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Thrombolytic Contraindications Code P</em>}' invariant operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateThrombolyticContraindicationsCodeP(ThrombolyticContraindications, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validateThrombolyticContraindicationsCodeP(ThrombolyticContraindications, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 
 	protected static Constraint VALIDATE_THROMBOLYTIC_CONTRAINDICATIONS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param thrombolyticContraindications The receiving '<em><b>Thrombolytic Contraindications</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
+	* <!-- begin-model-doc -->
+	* @param thrombolyticContraindications The receiving '<em><b>Thrombolytic Contraindications</b></em>' model object.
+	* @param diagnostics The chain of diagnostics to which problems are to be appended.
+	* @param context The cache of context-specific information.
+	* <!-- end-model-doc -->
+	* @generated
+	*/
 
 	public static boolean validateThrombolyticContraindicationsCodeP(
 			ThrombolyticContraindications thrombolyticContraindications, DiagnosticChain diagnostics,
@@ -187,38 +187,38 @@ public class ThrombolyticContraindicationsOperations extends ClinicalStatementOp
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateThrombolyticContraindicationsCode(ThrombolyticContraindications, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Thrombolytic Contraindications Code</em>}' operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL expression body for the '{@link #validateThrombolyticContraindicationsCode(ThrombolyticContraindications, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Thrombolytic Contraindications Code</em>}' operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateThrombolyticContraindicationsCode(ThrombolyticContraindications, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validateThrombolyticContraindicationsCode(ThrombolyticContraindications, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 	protected static final String VALIDATE_THROMBOLYTIC_CONTRAINDICATIONS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "
 			+ "let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "
 			+ "value.code = '67523-1' and value.codeSystem = '2.16.840.1.113883.6.1')";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validateThrombolyticContraindicationsCode(ThrombolyticContraindications, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Thrombolytic Contraindications Code</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL invariant for the '{@link #validateThrombolyticContraindicationsCode(ThrombolyticContraindications, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Thrombolytic Contraindications Code</em>}' invariant operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateThrombolyticContraindicationsCode(ThrombolyticContraindications, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validateThrombolyticContraindicationsCode(ThrombolyticContraindications, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 
 	protected static Constraint VALIDATE_THROMBOLYTIC_CONTRAINDICATIONS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param thrombolyticContraindications The receiving '<em><b>Thrombolytic Contraindications</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
+	* <!-- begin-model-doc -->
+	* @param thrombolyticContraindications The receiving '<em><b>Thrombolytic Contraindications</b></em>' model object.
+	* @param diagnostics The chain of diagnostics to which problems are to be appended.
+	* @param context The cache of context-specific information.
+	* <!-- end-model-doc -->
+	* @generated
+	*/
 
 	public static boolean validateThrombolyticContraindicationsCode(
 			ThrombolyticContraindications thrombolyticContraindications, DiagnosticChain diagnostics,
@@ -257,38 +257,38 @@ public class ThrombolyticContraindicationsOperations extends ClinicalStatementOp
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateThrombolyticContraindicationsValue(ThrombolyticContraindications, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Thrombolytic Contraindications Value</em>}' operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL expression body for the '{@link #validateThrombolyticContraindicationsValue(ThrombolyticContraindications, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Thrombolytic Contraindications Value</em>}' operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateThrombolyticContraindicationsValue(ThrombolyticContraindications, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validateThrombolyticContraindicationsValue(ThrombolyticContraindications, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 	protected static final String VALIDATE_THROMBOLYTIC_CONTRAINDICATIONS_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (not self.value->isEmpty() and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and "
 			+ "let value : datatypes::CD = element.oclAsType(datatypes::CD) in "
 			+ "value.codeSystem = '2.16.840.1.113883.6.1' and (value.code = 'LA17114-2' or value.code = 'LA17115-9' or value.code = 'LA17116-7')))";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validateThrombolyticContraindicationsValue(ThrombolyticContraindications, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Thrombolytic Contraindications Value</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL invariant for the '{@link #validateThrombolyticContraindicationsValue(ThrombolyticContraindications, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Thrombolytic Contraindications Value</em>}' invariant operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateThrombolyticContraindicationsValue(ThrombolyticContraindications, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validateThrombolyticContraindicationsValue(ThrombolyticContraindications, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 
 	protected static Constraint VALIDATE_THROMBOLYTIC_CONTRAINDICATIONS_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param thrombolyticContraindications The receiving '<em><b>Thrombolytic Contraindications</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
+	* <!-- begin-model-doc -->
+	* @param thrombolyticContraindications The receiving '<em><b>Thrombolytic Contraindications</b></em>' model object.
+	* @param diagnostics The chain of diagnostics to which problems are to be appended.
+	* @param context The cache of context-specific information.
+	* <!-- end-model-doc -->
+	* @generated
+	*/
 
 	public static boolean validateThrombolyticContraindicationsValue(
 			ThrombolyticContraindications thrombolyticContraindications, DiagnosticChain diagnostics,
@@ -319,36 +319,36 @@ public class ThrombolyticContraindicationsOperations extends ClinicalStatementOp
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateThrombolyticContraindicationsMoodCode(ThrombolyticContraindications, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Thrombolytic Contraindications Mood Code</em>}' operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL expression body for the '{@link #validateThrombolyticContraindicationsMoodCode(ThrombolyticContraindications, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Thrombolytic Contraindications Mood Code</em>}' operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateThrombolyticContraindicationsMoodCode(ThrombolyticContraindications, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validateThrombolyticContraindicationsMoodCode(ThrombolyticContraindications, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 	protected static final String VALIDATE_THROMBOLYTIC_CONTRAINDICATIONS_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "isDefined('moodCode')";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validateThrombolyticContraindicationsMoodCode(ThrombolyticContraindications, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Thrombolytic Contraindications Mood Code</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL invariant for the '{@link #validateThrombolyticContraindicationsMoodCode(ThrombolyticContraindications, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Thrombolytic Contraindications Mood Code</em>}' invariant operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateThrombolyticContraindicationsMoodCode(ThrombolyticContraindications, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validateThrombolyticContraindicationsMoodCode(ThrombolyticContraindications, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 
 	protected static Constraint VALIDATE_THROMBOLYTIC_CONTRAINDICATIONS_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param thrombolyticContraindications The receiving '<em><b>Thrombolytic Contraindications</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
+	* <!-- begin-model-doc -->
+	* @param thrombolyticContraindications The receiving '<em><b>Thrombolytic Contraindications</b></em>' model object.
+	* @param diagnostics The chain of diagnostics to which problems are to be appended.
+	* @param context The cache of context-specific information.
+	* <!-- end-model-doc -->
+	* @generated
+	*/
 
 	public static boolean validateThrombolyticContraindicationsMoodCode(
 			ThrombolyticContraindications thrombolyticContraindications, DiagnosticChain diagnostics,

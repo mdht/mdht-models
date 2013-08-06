@@ -35,29 +35,29 @@ import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
  */
 public class ExistenceOfHistoryOfProceduresImpl extends ObservationImpl implements ExistenceOfHistoryOfProcedures {
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	protected ExistenceOfHistoryOfProceduresImpl() {
 		super();
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	@Override
 	protected EClass eStaticClass() {
 		return EmspcrPackage.Literals.EXISTENCE_OF_HISTORY_OF_PROCEDURES;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateExistenceOfHistoryOfProceduresTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ExistenceOfHistoryOfProceduresOperations.validateExistenceOfHistoryOfProceduresTemplateId(
@@ -65,30 +65,30 @@ public class ExistenceOfHistoryOfProceduresImpl extends ObservationImpl implemen
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateExistenceOfHistoryOfProceduresCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ExistenceOfHistoryOfProceduresOperations.validateExistenceOfHistoryOfProceduresCode(
 			this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateExistenceOfHistoryOfProceduresValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ExistenceOfHistoryOfProceduresOperations.validateExistenceOfHistoryOfProceduresValue(
 			this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateExistenceOfHistoryOfProceduresMoodCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ExistenceOfHistoryOfProceduresOperations.validateExistenceOfHistoryOfProceduresMoodCode(
@@ -96,10 +96,10 @@ public class ExistenceOfHistoryOfProceduresImpl extends ObservationImpl implemen
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public ExistenceOfHistoryOfProcedures init() {
 		return Initializer.Util.init(this);
 	}

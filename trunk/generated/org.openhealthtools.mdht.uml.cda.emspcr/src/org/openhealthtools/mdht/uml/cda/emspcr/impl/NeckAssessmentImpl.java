@@ -35,74 +35,74 @@ import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
  */
 public class NeckAssessmentImpl extends ObservationImpl implements NeckAssessment {
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	protected NeckAssessmentImpl() {
 		super();
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	@Override
 	protected EClass eStaticClass() {
 		return EmspcrPackage.Literals.NECK_ASSESSMENT;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateNeckAssessmentTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return NeckAssessmentOperations.validateNeckAssessmentTemplateId(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateNeckAssessmentCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return NeckAssessmentOperations.validateNeckAssessmentCode(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateNeckAssessmentValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return NeckAssessmentOperations.validateNeckAssessmentValue(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateNeckAssessmentEffectiveTime(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return NeckAssessmentOperations.validateNeckAssessmentEffectiveTime(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateNeckAssessmentMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return NeckAssessmentOperations.validateNeckAssessmentMoodCode(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public NeckAssessment init() {
 		return Initializer.Util.init(this);
 	}

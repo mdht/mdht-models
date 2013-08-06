@@ -35,65 +35,65 @@ import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
  */
 public class InjuryCauseCategoryImpl extends ObservationImpl implements InjuryCauseCategory {
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	protected InjuryCauseCategoryImpl() {
 		super();
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	@Override
 	protected EClass eStaticClass() {
 		return EmspcrPackage.Literals.INJURY_CAUSE_CATEGORY;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateInjuryCauseCategoryTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return InjuryCauseCategoryOperations.validateInjuryCauseCategoryTemplateId(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateInjuryCauseCategoryCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return InjuryCauseCategoryOperations.validateInjuryCauseCategoryCode(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateInjuryCauseCategoryValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return InjuryCauseCategoryOperations.validateInjuryCauseCategoryValue(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateInjuryCauseCategoryMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return InjuryCauseCategoryOperations.validateInjuryCauseCategoryMoodCode(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public InjuryCauseCategory init() {
 		return Initializer.Util.init(this);
 	}

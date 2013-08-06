@@ -35,65 +35,65 @@ import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
  */
 public class DispatchLocationNameImpl extends ObservationImpl implements DispatchLocationName {
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	protected DispatchLocationNameImpl() {
 		super();
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	@Override
 	protected EClass eStaticClass() {
 		return EmspcrPackage.Literals.DISPATCH_LOCATION_NAME;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateDispatchLocationNameTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return DispatchLocationNameOperations.validateDispatchLocationNameTemplateId(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateDispatchLocationNameCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return DispatchLocationNameOperations.validateDispatchLocationNameCode(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateDispatchLocationNameValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return DispatchLocationNameOperations.validateDispatchLocationNameValue(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateDispatchLocationNameMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return DispatchLocationNameOperations.validateDispatchLocationNameMoodCode(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public DispatchLocationName init() {
 		return Initializer.Util.init(this);
 	}

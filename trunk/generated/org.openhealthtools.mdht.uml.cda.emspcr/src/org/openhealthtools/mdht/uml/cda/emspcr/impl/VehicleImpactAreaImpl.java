@@ -35,65 +35,65 @@ import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
  */
 public class VehicleImpactAreaImpl extends ObservationImpl implements VehicleImpactArea {
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	protected VehicleImpactAreaImpl() {
 		super();
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	@Override
 	protected EClass eStaticClass() {
 		return EmspcrPackage.Literals.VEHICLE_IMPACT_AREA;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateVehicleImpactAreaTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return VehicleImpactAreaOperations.validateVehicleImpactAreaTemplateId(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateVehicleImpactAreaCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return VehicleImpactAreaOperations.validateVehicleImpactAreaCode(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateVehicleImpactAreaValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return VehicleImpactAreaOperations.validateVehicleImpactAreaValue(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateVehicleImpactAreaMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return VehicleImpactAreaOperations.validateVehicleImpactAreaMoodCode(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public VehicleImpactArea init() {
 		return Initializer.Util.init(this);
 	}

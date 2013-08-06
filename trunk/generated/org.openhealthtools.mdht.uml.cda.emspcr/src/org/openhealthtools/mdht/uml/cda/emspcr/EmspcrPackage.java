@@ -11854,286 +11854,7 @@ public interface EmspcrPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.emspcr.impl.EmspcrPackageImpl#getTransportMethodObservation()
 	 * @generated
 	 */
-	int TRANSPORT_METHOD_OBSERVATION = 47;
-
-	/**
-	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int TRANSPORT_METHOD_OBSERVATION__REALM_CODE = CDAPackage.OBSERVATION__REALM_CODE;
-
-	/**
-	 * The feature id for the '<em><b>Type Id</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int TRANSPORT_METHOD_OBSERVATION__TYPE_ID = CDAPackage.OBSERVATION__TYPE_ID;
-
-	/**
-	 * The feature id for the '<em><b>Template Id</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int TRANSPORT_METHOD_OBSERVATION__TEMPLATE_ID = CDAPackage.OBSERVATION__TEMPLATE_ID;
-
-	/**
-	 * The feature id for the '<em><b>Id</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int TRANSPORT_METHOD_OBSERVATION__ID = CDAPackage.OBSERVATION__ID;
-
-	/**
-	 * The feature id for the '<em><b>Code</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int TRANSPORT_METHOD_OBSERVATION__CODE = CDAPackage.OBSERVATION__CODE;
-
-	/**
-	 * The feature id for the '<em><b>Derivation Expr</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int TRANSPORT_METHOD_OBSERVATION__DERIVATION_EXPR = CDAPackage.OBSERVATION__DERIVATION_EXPR;
-
-	/**
-	 * The feature id for the '<em><b>Text</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int TRANSPORT_METHOD_OBSERVATION__TEXT = CDAPackage.OBSERVATION__TEXT;
-
-	/**
-	 * The feature id for the '<em><b>Status Code</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int TRANSPORT_METHOD_OBSERVATION__STATUS_CODE = CDAPackage.OBSERVATION__STATUS_CODE;
-
-	/**
-	 * The feature id for the '<em><b>Effective Time</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int TRANSPORT_METHOD_OBSERVATION__EFFECTIVE_TIME = CDAPackage.OBSERVATION__EFFECTIVE_TIME;
-
-	/**
-	 * The feature id for the '<em><b>Priority Code</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int TRANSPORT_METHOD_OBSERVATION__PRIORITY_CODE = CDAPackage.OBSERVATION__PRIORITY_CODE;
-
-	/**
-	 * The feature id for the '<em><b>Repeat Number</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int TRANSPORT_METHOD_OBSERVATION__REPEAT_NUMBER = CDAPackage.OBSERVATION__REPEAT_NUMBER;
-
-	/**
-	 * The feature id for the '<em><b>Language Code</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int TRANSPORT_METHOD_OBSERVATION__LANGUAGE_CODE = CDAPackage.OBSERVATION__LANGUAGE_CODE;
-
-	/**
-	 * The feature id for the '<em><b>Value</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int TRANSPORT_METHOD_OBSERVATION__VALUE = CDAPackage.OBSERVATION__VALUE;
-
-	/**
-	 * The feature id for the '<em><b>Interpretation Code</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int TRANSPORT_METHOD_OBSERVATION__INTERPRETATION_CODE = CDAPackage.OBSERVATION__INTERPRETATION_CODE;
-
-	/**
-	 * The feature id for the '<em><b>Method Code</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int TRANSPORT_METHOD_OBSERVATION__METHOD_CODE = CDAPackage.OBSERVATION__METHOD_CODE;
-
-	/**
-	 * The feature id for the '<em><b>Target Site Code</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int TRANSPORT_METHOD_OBSERVATION__TARGET_SITE_CODE = CDAPackage.OBSERVATION__TARGET_SITE_CODE;
-
-	/**
-	 * The feature id for the '<em><b>Subject</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int TRANSPORT_METHOD_OBSERVATION__SUBJECT = CDAPackage.OBSERVATION__SUBJECT;
-
-	/**
-	 * The feature id for the '<em><b>Specimen</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int TRANSPORT_METHOD_OBSERVATION__SPECIMEN = CDAPackage.OBSERVATION__SPECIMEN;
-
-	/**
-	 * The feature id for the '<em><b>Performer</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int TRANSPORT_METHOD_OBSERVATION__PERFORMER = CDAPackage.OBSERVATION__PERFORMER;
-
-	/**
-	 * The feature id for the '<em><b>Author</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int TRANSPORT_METHOD_OBSERVATION__AUTHOR = CDAPackage.OBSERVATION__AUTHOR;
-
-	/**
-	 * The feature id for the '<em><b>Informant</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int TRANSPORT_METHOD_OBSERVATION__INFORMANT = CDAPackage.OBSERVATION__INFORMANT;
-
-	/**
-	 * The feature id for the '<em><b>Participant</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int TRANSPORT_METHOD_OBSERVATION__PARTICIPANT = CDAPackage.OBSERVATION__PARTICIPANT;
-
-	/**
-	 * The feature id for the '<em><b>Entry Relationship</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int TRANSPORT_METHOD_OBSERVATION__ENTRY_RELATIONSHIP = CDAPackage.OBSERVATION__ENTRY_RELATIONSHIP;
-
-	/**
-	 * The feature id for the '<em><b>Reference</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int TRANSPORT_METHOD_OBSERVATION__REFERENCE = CDAPackage.OBSERVATION__REFERENCE;
-
-	/**
-	 * The feature id for the '<em><b>Precondition</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int TRANSPORT_METHOD_OBSERVATION__PRECONDITION = CDAPackage.OBSERVATION__PRECONDITION;
-
-	/**
-	 * The feature id for the '<em><b>Reference Range</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int TRANSPORT_METHOD_OBSERVATION__REFERENCE_RANGE = CDAPackage.OBSERVATION__REFERENCE_RANGE;
-
-	/**
-	 * The feature id for the '<em><b>Null Flavor</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int TRANSPORT_METHOD_OBSERVATION__NULL_FLAVOR = CDAPackage.OBSERVATION__NULL_FLAVOR;
-
-	/**
-	 * The feature id for the '<em><b>Class Code</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int TRANSPORT_METHOD_OBSERVATION__CLASS_CODE = CDAPackage.OBSERVATION__CLASS_CODE;
-
-	/**
-	 * The feature id for the '<em><b>Mood Code</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int TRANSPORT_METHOD_OBSERVATION__MOOD_CODE = CDAPackage.OBSERVATION__MOOD_CODE;
-
-	/**
-	 * The feature id for the '<em><b>Negation Ind</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int TRANSPORT_METHOD_OBSERVATION__NEGATION_IND = CDAPackage.OBSERVATION__NEGATION_IND;
-
-	/**
-	 * The number of structural features of the '<em>Transport Method Observation</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int TRANSPORT_METHOD_OBSERVATION_FEATURE_COUNT = CDAPackage.OBSERVATION_FEATURE_COUNT + 0;
+	int TRANSPORT_METHOD_OBSERVATION = 50;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.emspcr.impl.NumberOfPatientsObservationImpl <em>Number Of Patients Observation</em>}' class.
@@ -12143,7 +11864,7 @@ public interface EmspcrPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.emspcr.impl.EmspcrPackageImpl#getNumberOfPatientsObservation()
 	 * @generated
 	 */
-	int NUMBER_OF_PATIENTS_OBSERVATION = 48;
+	int NUMBER_OF_PATIENTS_OBSERVATION = 47;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -12432,7 +12153,7 @@ public interface EmspcrPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.emspcr.impl.EmspcrPackageImpl#getIncidentDispositionObservation()
 	 * @generated
 	 */
-	int INCIDENT_DISPOSITION_OBSERVATION = 49;
+	int INCIDENT_DISPOSITION_OBSERVATION = 48;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -12721,7 +12442,7 @@ public interface EmspcrPackage extends EPackage {
 	 * @see org.openhealthtools.mdht.uml.cda.emspcr.impl.EmspcrPackageImpl#getTransportModeObservation()
 	 * @generated
 	 */
-	int TRANSPORT_MODE_OBSERVATION = 50;
+	int TRANSPORT_MODE_OBSERVATION = 49;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -13001,6 +12722,285 @@ public interface EmspcrPackage extends EPackage {
 	 * @ordered
 	 */
 	int TRANSPORT_MODE_OBSERVATION_FEATURE_COUNT = CDAPackage.OBSERVATION_FEATURE_COUNT + 0;
+
+	/**
+	   * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
+	   * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	   * @generated
+	   * @ordered
+	   */
+	int TRANSPORT_METHOD_OBSERVATION__REALM_CODE = CDAPackage.OBSERVATION__REALM_CODE;
+
+	/**
+	   * The feature id for the '<em><b>Type Id</b></em>' containment reference.
+	   * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	   * @generated
+	   * @ordered
+	   */
+	int TRANSPORT_METHOD_OBSERVATION__TYPE_ID = CDAPackage.OBSERVATION__TYPE_ID;
+
+	/**
+	   * The feature id for the '<em><b>Template Id</b></em>' containment reference list.
+	   * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	   * @generated
+	   * @ordered
+	   */
+	int TRANSPORT_METHOD_OBSERVATION__TEMPLATE_ID = CDAPackage.OBSERVATION__TEMPLATE_ID;
+
+	/**
+	   * The feature id for the '<em><b>Id</b></em>' containment reference list.
+	   * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	   * @generated
+	   * @ordered
+	   */
+	int TRANSPORT_METHOD_OBSERVATION__ID = CDAPackage.OBSERVATION__ID;
+
+	/**
+	   * The feature id for the '<em><b>Code</b></em>' containment reference.
+	   * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	   * @generated
+	   * @ordered
+	   */
+	int TRANSPORT_METHOD_OBSERVATION__CODE = CDAPackage.OBSERVATION__CODE;
+
+	/**
+	   * The feature id for the '<em><b>Derivation Expr</b></em>' containment reference.
+	   * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	   * @generated
+	   * @ordered
+	   */
+	int TRANSPORT_METHOD_OBSERVATION__DERIVATION_EXPR = CDAPackage.OBSERVATION__DERIVATION_EXPR;
+
+	/**
+	   * The feature id for the '<em><b>Text</b></em>' containment reference.
+	   * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	   * @generated
+	   * @ordered
+	   */
+	int TRANSPORT_METHOD_OBSERVATION__TEXT = CDAPackage.OBSERVATION__TEXT;
+
+	/**
+	   * The feature id for the '<em><b>Status Code</b></em>' containment reference.
+	   * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	   * @generated
+	   * @ordered
+	   */
+	int TRANSPORT_METHOD_OBSERVATION__STATUS_CODE = CDAPackage.OBSERVATION__STATUS_CODE;
+
+	/**
+	   * The feature id for the '<em><b>Effective Time</b></em>' containment reference.
+	   * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	   * @generated
+	   * @ordered
+	   */
+	int TRANSPORT_METHOD_OBSERVATION__EFFECTIVE_TIME = CDAPackage.OBSERVATION__EFFECTIVE_TIME;
+
+	/**
+	   * The feature id for the '<em><b>Priority Code</b></em>' containment reference.
+	   * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	   * @generated
+	   * @ordered
+	   */
+	int TRANSPORT_METHOD_OBSERVATION__PRIORITY_CODE = CDAPackage.OBSERVATION__PRIORITY_CODE;
+
+	/**
+	   * The feature id for the '<em><b>Repeat Number</b></em>' containment reference.
+	   * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	   * @generated
+	   * @ordered
+	   */
+	int TRANSPORT_METHOD_OBSERVATION__REPEAT_NUMBER = CDAPackage.OBSERVATION__REPEAT_NUMBER;
+
+	/**
+	   * The feature id for the '<em><b>Language Code</b></em>' containment reference.
+	   * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	   * @generated
+	   * @ordered
+	   */
+	int TRANSPORT_METHOD_OBSERVATION__LANGUAGE_CODE = CDAPackage.OBSERVATION__LANGUAGE_CODE;
+
+	/**
+	   * The feature id for the '<em><b>Value</b></em>' containment reference list.
+	   * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	   * @generated
+	   * @ordered
+	   */
+	int TRANSPORT_METHOD_OBSERVATION__VALUE = CDAPackage.OBSERVATION__VALUE;
+
+	/**
+	   * The feature id for the '<em><b>Interpretation Code</b></em>' containment reference list.
+	   * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	   * @generated
+	   * @ordered
+	   */
+	int TRANSPORT_METHOD_OBSERVATION__INTERPRETATION_CODE = CDAPackage.OBSERVATION__INTERPRETATION_CODE;
+
+	/**
+	   * The feature id for the '<em><b>Method Code</b></em>' containment reference list.
+	   * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	   * @generated
+	   * @ordered
+	   */
+	int TRANSPORT_METHOD_OBSERVATION__METHOD_CODE = CDAPackage.OBSERVATION__METHOD_CODE;
+
+	/**
+	   * The feature id for the '<em><b>Target Site Code</b></em>' containment reference list.
+	   * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	   * @generated
+	   * @ordered
+	   */
+	int TRANSPORT_METHOD_OBSERVATION__TARGET_SITE_CODE = CDAPackage.OBSERVATION__TARGET_SITE_CODE;
+
+	/**
+	   * The feature id for the '<em><b>Subject</b></em>' containment reference.
+	   * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	   * @generated
+	   * @ordered
+	   */
+	int TRANSPORT_METHOD_OBSERVATION__SUBJECT = CDAPackage.OBSERVATION__SUBJECT;
+
+	/**
+	   * The feature id for the '<em><b>Specimen</b></em>' containment reference list.
+	   * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	   * @generated
+	   * @ordered
+	   */
+	int TRANSPORT_METHOD_OBSERVATION__SPECIMEN = CDAPackage.OBSERVATION__SPECIMEN;
+
+	/**
+	   * The feature id for the '<em><b>Performer</b></em>' containment reference list.
+	   * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	   * @generated
+	   * @ordered
+	   */
+	int TRANSPORT_METHOD_OBSERVATION__PERFORMER = CDAPackage.OBSERVATION__PERFORMER;
+
+	/**
+	   * The feature id for the '<em><b>Author</b></em>' containment reference list.
+	   * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	   * @generated
+	   * @ordered
+	   */
+	int TRANSPORT_METHOD_OBSERVATION__AUTHOR = CDAPackage.OBSERVATION__AUTHOR;
+
+	/**
+	   * The feature id for the '<em><b>Informant</b></em>' containment reference list.
+	   * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	   * @generated
+	   * @ordered
+	   */
+	int TRANSPORT_METHOD_OBSERVATION__INFORMANT = CDAPackage.OBSERVATION__INFORMANT;
+
+	/**
+	   * The feature id for the '<em><b>Participant</b></em>' containment reference list.
+	   * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	   * @generated
+	   * @ordered
+	   */
+	int TRANSPORT_METHOD_OBSERVATION__PARTICIPANT = CDAPackage.OBSERVATION__PARTICIPANT;
+
+	/**
+	   * The feature id for the '<em><b>Entry Relationship</b></em>' containment reference list.
+	   * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	   * @generated
+	   * @ordered
+	   */
+	int TRANSPORT_METHOD_OBSERVATION__ENTRY_RELATIONSHIP = CDAPackage.OBSERVATION__ENTRY_RELATIONSHIP;
+
+	/**
+	   * The feature id for the '<em><b>Reference</b></em>' containment reference list.
+	   * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	   * @generated
+	   * @ordered
+	   */
+	int TRANSPORT_METHOD_OBSERVATION__REFERENCE = CDAPackage.OBSERVATION__REFERENCE;
+
+	/**
+	   * The feature id for the '<em><b>Precondition</b></em>' containment reference list.
+	   * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	   * @generated
+	   * @ordered
+	   */
+	int TRANSPORT_METHOD_OBSERVATION__PRECONDITION = CDAPackage.OBSERVATION__PRECONDITION;
+
+	/**
+	   * The feature id for the '<em><b>Reference Range</b></em>' containment reference list.
+	   * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	   * @generated
+	   * @ordered
+	   */
+	int TRANSPORT_METHOD_OBSERVATION__REFERENCE_RANGE = CDAPackage.OBSERVATION__REFERENCE_RANGE;
+
+	/**
+	   * The feature id for the '<em><b>Null Flavor</b></em>' attribute.
+	   * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	   * @generated
+	   * @ordered
+	   */
+	int TRANSPORT_METHOD_OBSERVATION__NULL_FLAVOR = CDAPackage.OBSERVATION__NULL_FLAVOR;
+
+	/**
+	   * The feature id for the '<em><b>Class Code</b></em>' attribute.
+	   * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	   * @generated
+	   * @ordered
+	   */
+	int TRANSPORT_METHOD_OBSERVATION__CLASS_CODE = CDAPackage.OBSERVATION__CLASS_CODE;
+
+	/**
+	   * The feature id for the '<em><b>Mood Code</b></em>' attribute.
+	   * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	   * @generated
+	   * @ordered
+	   */
+	int TRANSPORT_METHOD_OBSERVATION__MOOD_CODE = CDAPackage.OBSERVATION__MOOD_CODE;
+
+	/**
+	   * The feature id for the '<em><b>Negation Ind</b></em>' attribute.
+	   * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	   * @generated
+	   * @ordered
+	   */
+	int TRANSPORT_METHOD_OBSERVATION__NEGATION_IND = CDAPackage.OBSERVATION__NEGATION_IND;
+
+	/**
+	   * The number of structural features of the '<em>Transport Method Observation</em>' class.
+	   * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	   * @generated
+	   * @ordered
+	   */
+	int TRANSPORT_METHOD_OBSERVATION_FEATURE_COUNT = CDAPackage.OBSERVATION_FEATURE_COUNT + 0;
 
 	/**
 	 * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.emspcr.impl.ReasonForChoosingDestinationObservationImpl <em>Reason For Choosing Destination Observation</em>}' class.

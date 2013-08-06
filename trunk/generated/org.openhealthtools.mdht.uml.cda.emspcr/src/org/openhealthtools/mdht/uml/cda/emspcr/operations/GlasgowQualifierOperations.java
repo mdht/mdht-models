@@ -46,45 +46,45 @@ import org.openhealthtools.mdht.uml.cda.operations.ClinicalStatementOperations;
  */
 public class GlasgowQualifierOperations extends ClinicalStatementOperations {
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	protected GlasgowQualifierOperations() {
 		super();
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateGlasgowQualifierTemplateId(GlasgowQualifier, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Glasgow Qualifier Template Id</em>}' operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL expression body for the '{@link #validateGlasgowQualifierTemplateId(GlasgowQualifier, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Glasgow Qualifier Template Id</em>}' operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateGlasgowQualifierTemplateId(GlasgowQualifier, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validateGlasgowQualifierTemplateId(GlasgowQualifier, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 	protected static final String VALIDATE_GLASGOW_QUALIFIER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.1133883.17.3.10.1.159')";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validateGlasgowQualifierTemplateId(GlasgowQualifier, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Glasgow Qualifier Template Id</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL invariant for the '{@link #validateGlasgowQualifierTemplateId(GlasgowQualifier, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Glasgow Qualifier Template Id</em>}' invariant operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateGlasgowQualifierTemplateId(GlasgowQualifier, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validateGlasgowQualifierTemplateId(GlasgowQualifier, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 
 	protected static Constraint VALIDATE_GLASGOW_QUALIFIER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param glasgowQualifier The receiving '<em><b>Glasgow Qualifier</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
+	* <!-- begin-model-doc -->
+	* @param glasgowQualifier The receiving '<em><b>Glasgow Qualifier</b></em>' model object.
+	* @param diagnostics The chain of diagnostics to which problems are to be appended.
+	* @param context The cache of context-specific information.
+	* <!-- end-model-doc -->
+	* @generated
+	*/
 
 	public static boolean validateGlasgowQualifierTemplateId(GlasgowQualifier glasgowQualifier,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
@@ -113,36 +113,36 @@ public class GlasgowQualifierOperations extends ClinicalStatementOperations {
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateGlasgowQualifierCodeP(GlasgowQualifier, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Glasgow Qualifier Code P</em>}' operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL expression body for the '{@link #validateGlasgowQualifierCodeP(GlasgowQualifier, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Glasgow Qualifier Code P</em>}' operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateGlasgowQualifierCodeP(GlasgowQualifier, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validateGlasgowQualifierCodeP(GlasgowQualifier, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 	protected static final String VALIDATE_GLASGOW_QUALIFIER_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined())";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validateGlasgowQualifierCodeP(GlasgowQualifier, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Glasgow Qualifier Code P</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL invariant for the '{@link #validateGlasgowQualifierCodeP(GlasgowQualifier, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Glasgow Qualifier Code P</em>}' invariant operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateGlasgowQualifierCodeP(GlasgowQualifier, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validateGlasgowQualifierCodeP(GlasgowQualifier, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 
 	protected static Constraint VALIDATE_GLASGOW_QUALIFIER_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param glasgowQualifier The receiving '<em><b>Glasgow Qualifier</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
+	* <!-- begin-model-doc -->
+	* @param glasgowQualifier The receiving '<em><b>Glasgow Qualifier</b></em>' model object.
+	* @param diagnostics The chain of diagnostics to which problems are to be appended.
+	* @param context The cache of context-specific information.
+	* <!-- end-model-doc -->
+	* @generated
+	*/
 
 	public static boolean validateGlasgowQualifierCodeP(GlasgowQualifier glasgowQualifier, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
@@ -183,38 +183,38 @@ public class GlasgowQualifierOperations extends ClinicalStatementOperations {
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateGlasgowQualifierCode(GlasgowQualifier, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Glasgow Qualifier Code</em>}' operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL expression body for the '{@link #validateGlasgowQualifierCode(GlasgowQualifier, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Glasgow Qualifier Code</em>}' operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateGlasgowQualifierCode(GlasgowQualifier, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validateGlasgowQualifierCode(GlasgowQualifier, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 	protected static final String VALIDATE_GLASGOW_QUALIFIER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "
 			+ "let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "
 			+ "value.code = '55285-1' and value.codeSystem = '2.16.840.1.113883.6.1')";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validateGlasgowQualifierCode(GlasgowQualifier, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Glasgow Qualifier Code</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL invariant for the '{@link #validateGlasgowQualifierCode(GlasgowQualifier, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Glasgow Qualifier Code</em>}' invariant operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateGlasgowQualifierCode(GlasgowQualifier, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validateGlasgowQualifierCode(GlasgowQualifier, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 
 	protected static Constraint VALIDATE_GLASGOW_QUALIFIER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param glasgowQualifier The receiving '<em><b>Glasgow Qualifier</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
+	* <!-- begin-model-doc -->
+	* @param glasgowQualifier The receiving '<em><b>Glasgow Qualifier</b></em>' model object.
+	* @param diagnostics The chain of diagnostics to which problems are to be appended.
+	* @param context The cache of context-specific information.
+	* <!-- end-model-doc -->
+	* @generated
+	*/
 
 	public static boolean validateGlasgowQualifierCode(GlasgowQualifier glasgowQualifier, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
@@ -251,36 +251,36 @@ public class GlasgowQualifierOperations extends ClinicalStatementOperations {
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateGlasgowQualifierValue(GlasgowQualifier, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Glasgow Qualifier Value</em>}' operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL expression body for the '{@link #validateGlasgowQualifierValue(GlasgowQualifier, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Glasgow Qualifier Value</em>}' operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateGlasgowQualifierValue(GlasgowQualifier, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validateGlasgowQualifierValue(GlasgowQualifier, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 	protected static final String VALIDATE_GLASGOW_QUALIFIER_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->forAll(element | element.oclIsTypeOf(datatypes::CD)))";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validateGlasgowQualifierValue(GlasgowQualifier, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Glasgow Qualifier Value</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL invariant for the '{@link #validateGlasgowQualifierValue(GlasgowQualifier, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Glasgow Qualifier Value</em>}' invariant operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateGlasgowQualifierValue(GlasgowQualifier, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validateGlasgowQualifierValue(GlasgowQualifier, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 
 	protected static Constraint VALIDATE_GLASGOW_QUALIFIER_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param glasgowQualifier The receiving '<em><b>Glasgow Qualifier</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
+	* <!-- begin-model-doc -->
+	* @param glasgowQualifier The receiving '<em><b>Glasgow Qualifier</b></em>' model object.
+	* @param diagnostics The chain of diagnostics to which problems are to be appended.
+	* @param context The cache of context-specific information.
+	* <!-- end-model-doc -->
+	* @generated
+	*/
 
 	public static boolean validateGlasgowQualifierValue(GlasgowQualifier glasgowQualifier, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
@@ -309,36 +309,36 @@ public class GlasgowQualifierOperations extends ClinicalStatementOperations {
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateGlasgowQualifierMoodCode(GlasgowQualifier, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Glasgow Qualifier Mood Code</em>}' operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL expression body for the '{@link #validateGlasgowQualifierMoodCode(GlasgowQualifier, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Glasgow Qualifier Mood Code</em>}' operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateGlasgowQualifierMoodCode(GlasgowQualifier, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validateGlasgowQualifierMoodCode(GlasgowQualifier, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 	protected static final String VALIDATE_GLASGOW_QUALIFIER_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "isDefined('moodCode')";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validateGlasgowQualifierMoodCode(GlasgowQualifier, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Glasgow Qualifier Mood Code</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL invariant for the '{@link #validateGlasgowQualifierMoodCode(GlasgowQualifier, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Glasgow Qualifier Mood Code</em>}' invariant operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateGlasgowQualifierMoodCode(GlasgowQualifier, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validateGlasgowQualifierMoodCode(GlasgowQualifier, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 
 	protected static Constraint VALIDATE_GLASGOW_QUALIFIER_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param glasgowQualifier The receiving '<em><b>Glasgow Qualifier</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
+	* <!-- begin-model-doc -->
+	* @param glasgowQualifier The receiving '<em><b>Glasgow Qualifier</b></em>' model object.
+	* @param diagnostics The chain of diagnostics to which problems are to be appended.
+	* @param context The cache of context-specific information.
+	* <!-- end-model-doc -->
+	* @generated
+	*/
 
 	public static boolean validateGlasgowQualifierMoodCode(GlasgowQualifier glasgowQualifier,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {

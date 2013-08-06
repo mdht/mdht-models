@@ -35,65 +35,65 @@ import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
  */
 public class PatientLocationInVehicleImpl extends ObservationImpl implements PatientLocationInVehicle {
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	protected PatientLocationInVehicleImpl() {
 		super();
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	@Override
 	protected EClass eStaticClass() {
 		return EmspcrPackage.Literals.PATIENT_LOCATION_IN_VEHICLE;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validatePatientLocationInVehicleTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PatientLocationInVehicleOperations.validatePatientLocationInVehicleTemplateId(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validatePatientLocationInVehicleCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PatientLocationInVehicleOperations.validatePatientLocationInVehicleCode(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validatePatientLocationInVehicleValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PatientLocationInVehicleOperations.validatePatientLocationInVehicleValue(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validatePatientLocationInVehicleMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PatientLocationInVehicleOperations.validatePatientLocationInVehicleMoodCode(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public PatientLocationInVehicle init() {
 		return Initializer.Util.init(this);
 	}

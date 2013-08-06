@@ -36,29 +36,29 @@ import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
 public class ReasonProcedureNotAttemptedObservationImpl extends ObservationImpl implements
 		ReasonProcedureNotAttemptedObservation {
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	protected ReasonProcedureNotAttemptedObservationImpl() {
 		super();
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	@Override
 	protected EClass eStaticClass() {
 		return EmspcrPackage.Literals.REASON_PROCEDURE_NOT_ATTEMPTED_OBSERVATION;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateReasonProcedureNotAttemptedObservationTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ReasonProcedureNotAttemptedObservationOperations.validateReasonProcedureNotAttemptedObservationTemplateId(
@@ -66,10 +66,10 @@ public class ReasonProcedureNotAttemptedObservationImpl extends ObservationImpl 
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateReasonProcedureNotAttemptedObservationCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ReasonProcedureNotAttemptedObservationOperations.validateReasonProcedureNotAttemptedObservationCode(
@@ -77,10 +77,10 @@ public class ReasonProcedureNotAttemptedObservationImpl extends ObservationImpl 
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateReasonProcedureNotAttemptedObservationValue(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ReasonProcedureNotAttemptedObservationOperations.validateReasonProcedureNotAttemptedObservationValue(
@@ -88,10 +88,10 @@ public class ReasonProcedureNotAttemptedObservationImpl extends ObservationImpl 
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateReasonProcedureNotAttemptedObservationValueP(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ReasonProcedureNotAttemptedObservationOperations.validateReasonProcedureNotAttemptedObservationValueP(
@@ -99,10 +99,10 @@ public class ReasonProcedureNotAttemptedObservationImpl extends ObservationImpl 
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateReasonProcedureNotAttemptedObservationMoodCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ReasonProcedureNotAttemptedObservationOperations.validateReasonProcedureNotAttemptedObservationMoodCode(
@@ -110,10 +110,10 @@ public class ReasonProcedureNotAttemptedObservationImpl extends ObservationImpl 
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public ReasonProcedureNotAttemptedObservation init() {
 		return Initializer.Util.init(this);
 	}

@@ -35,29 +35,29 @@ import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
  */
 public class ReturnOfSpontaneousCirculationImpl extends ObservationImpl implements ReturnOfSpontaneousCirculation {
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	protected ReturnOfSpontaneousCirculationImpl() {
 		super();
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	@Override
 	protected EClass eStaticClass() {
 		return EmspcrPackage.Literals.RETURN_OF_SPONTANEOUS_CIRCULATION;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateReturnOfSpontaneousCirculationTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ReturnOfSpontaneousCirculationOperations.validateReturnOfSpontaneousCirculationTemplateId(
@@ -65,30 +65,30 @@ public class ReturnOfSpontaneousCirculationImpl extends ObservationImpl implemen
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateReturnOfSpontaneousCirculationCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ReturnOfSpontaneousCirculationOperations.validateReturnOfSpontaneousCirculationCode(
 			this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateReturnOfSpontaneousCirculationValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ReturnOfSpontaneousCirculationOperations.validateReturnOfSpontaneousCirculationValue(
 			this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateReturnOfSpontaneousCirculationMoodCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ReturnOfSpontaneousCirculationOperations.validateReturnOfSpontaneousCirculationMoodCode(
@@ -96,10 +96,10 @@ public class ReturnOfSpontaneousCirculationImpl extends ObservationImpl implemen
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public ReturnOfSpontaneousCirculation init() {
 		return Initializer.Util.init(this);
 	}

@@ -54,45 +54,45 @@ import org.openhealthtools.mdht.uml.cda.operations.OrganizerOperations;
  */
 public class EnvironmentalAllergiesOperations extends OrganizerOperations {
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	protected EnvironmentalAllergiesOperations() {
 		super();
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateEnvironmentalAllergiesExistenceOfEnvironmentalAllergy(EnvironmentalAllergies, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Environmental Allergies Existence Of Environmental Allergy</em>}' operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL expression body for the '{@link #validateEnvironmentalAllergiesExistenceOfEnvironmentalAllergy(EnvironmentalAllergies, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Environmental Allergies Existence Of Environmental Allergy</em>}' operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateEnvironmentalAllergiesExistenceOfEnvironmentalAllergy(EnvironmentalAllergies, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validateEnvironmentalAllergiesExistenceOfEnvironmentalAllergy(EnvironmentalAllergies, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 	protected static final String VALIDATE_ENVIRONMENTAL_ALLERGIES_EXISTENCE_OF_ENVIRONMENTAL_ALLERGY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.component->one(component : cda::Component4 | not component.observation.oclIsUndefined() and component.observation.oclIsKindOf(emspcr::ExistenceOfEnvironmentalAllergy))";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validateEnvironmentalAllergiesExistenceOfEnvironmentalAllergy(EnvironmentalAllergies, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Environmental Allergies Existence Of Environmental Allergy</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL invariant for the '{@link #validateEnvironmentalAllergiesExistenceOfEnvironmentalAllergy(EnvironmentalAllergies, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Environmental Allergies Existence Of Environmental Allergy</em>}' invariant operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateEnvironmentalAllergiesExistenceOfEnvironmentalAllergy(EnvironmentalAllergies, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validateEnvironmentalAllergiesExistenceOfEnvironmentalAllergy(EnvironmentalAllergies, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 
 	protected static Constraint VALIDATE_ENVIRONMENTAL_ALLERGIES_EXISTENCE_OF_ENVIRONMENTAL_ALLERGY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param environmentalAllergies The receiving '<em><b>Environmental Allergies</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
+	* <!-- begin-model-doc -->
+	* @param environmentalAllergies The receiving '<em><b>Environmental Allergies</b></em>' model object.
+	* @param diagnostics The chain of diagnostics to which problems are to be appended.
+	* @param context The cache of context-specific information.
+	* <!-- end-model-doc -->
+	* @generated
+	*/
 
 	public static boolean validateEnvironmentalAllergiesExistenceOfEnvironmentalAllergy(
 			EnvironmentalAllergies environmentalAllergies, DiagnosticChain diagnostics, Map<Object, Object> context) {
@@ -124,36 +124,36 @@ public class EnvironmentalAllergiesOperations extends OrganizerOperations {
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateEnvironmentalAllergiesEnvironmentalAllergy(EnvironmentalAllergies, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Environmental Allergies Environmental Allergy</em>}' operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL expression body for the '{@link #validateEnvironmentalAllergiesEnvironmentalAllergy(EnvironmentalAllergies, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Environmental Allergies Environmental Allergy</em>}' operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateEnvironmentalAllergiesEnvironmentalAllergy(EnvironmentalAllergies, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validateEnvironmentalAllergiesEnvironmentalAllergy(EnvironmentalAllergies, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 	protected static final String VALIDATE_ENVIRONMENTAL_ALLERGIES_ENVIRONMENTAL_ALLERGY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.component->exists(component : cda::Component4 | not component.observation.oclIsUndefined() and component.observation.oclIsKindOf(emspcr::EnvironmentalAllergy))";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validateEnvironmentalAllergiesEnvironmentalAllergy(EnvironmentalAllergies, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Environmental Allergies Environmental Allergy</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL invariant for the '{@link #validateEnvironmentalAllergiesEnvironmentalAllergy(EnvironmentalAllergies, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Environmental Allergies Environmental Allergy</em>}' invariant operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateEnvironmentalAllergiesEnvironmentalAllergy(EnvironmentalAllergies, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validateEnvironmentalAllergiesEnvironmentalAllergy(EnvironmentalAllergies, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 
 	protected static Constraint VALIDATE_ENVIRONMENTAL_ALLERGIES_ENVIRONMENTAL_ALLERGY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param environmentalAllergies The receiving '<em><b>Environmental Allergies</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
+	* <!-- begin-model-doc -->
+	* @param environmentalAllergies The receiving '<em><b>Environmental Allergies</b></em>' model object.
+	* @param diagnostics The chain of diagnostics to which problems are to be appended.
+	* @param context The cache of context-specific information.
+	* <!-- end-model-doc -->
+	* @generated
+	*/
 
 	public static boolean validateEnvironmentalAllergiesEnvironmentalAllergy(
 			EnvironmentalAllergies environmentalAllergies, DiagnosticChain diagnostics, Map<Object, Object> context) {
@@ -184,36 +184,36 @@ public class EnvironmentalAllergiesOperations extends OrganizerOperations {
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateEnvironmentalAllergiesTemplateId(EnvironmentalAllergies, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Environmental Allergies Template Id</em>}' operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL expression body for the '{@link #validateEnvironmentalAllergiesTemplateId(EnvironmentalAllergies, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Environmental Allergies Template Id</em>}' operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateEnvironmentalAllergiesTemplateId(EnvironmentalAllergies, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validateEnvironmentalAllergiesTemplateId(EnvironmentalAllergies, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 	protected static final String VALIDATE_ENVIRONMENTAL_ALLERGIES_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.1133883.17.3.10.1.49')";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validateEnvironmentalAllergiesTemplateId(EnvironmentalAllergies, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Environmental Allergies Template Id</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL invariant for the '{@link #validateEnvironmentalAllergiesTemplateId(EnvironmentalAllergies, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Environmental Allergies Template Id</em>}' invariant operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateEnvironmentalAllergiesTemplateId(EnvironmentalAllergies, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validateEnvironmentalAllergiesTemplateId(EnvironmentalAllergies, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 
 	protected static Constraint VALIDATE_ENVIRONMENTAL_ALLERGIES_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param environmentalAllergies The receiving '<em><b>Environmental Allergies</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
+	* <!-- begin-model-doc -->
+	* @param environmentalAllergies The receiving '<em><b>Environmental Allergies</b></em>' model object.
+	* @param diagnostics The chain of diagnostics to which problems are to be appended.
+	* @param context The cache of context-specific information.
+	* <!-- end-model-doc -->
+	* @generated
+	*/
 
 	public static boolean validateEnvironmentalAllergiesTemplateId(EnvironmentalAllergies environmentalAllergies,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
@@ -243,30 +243,30 @@ public class EnvironmentalAllergiesOperations extends OrganizerOperations {
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #getExistenceOfEnvironmentalAllergy(EnvironmentalAllergies) <em>Get Existence Of Environmental Allergy</em>}' operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL expression body for the '{@link #getExistenceOfEnvironmentalAllergy(EnvironmentalAllergies) <em>Get Existence Of Environmental Allergy</em>}' operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getExistenceOfEnvironmentalAllergy(EnvironmentalAllergies)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #getExistenceOfEnvironmentalAllergy(EnvironmentalAllergies)
+	* @generated
+	* @ordered
+	*/
 	protected static final String GET_EXISTENCE_OF_ENVIRONMENTAL_ALLERGY__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(emspcr::ExistenceOfEnvironmentalAllergy))->asSequence()->any(true).oclAsType(emspcr::ExistenceOfEnvironmentalAllergy)";
 
 	/**
-	 * The cached OCL query for the '{@link #getExistenceOfEnvironmentalAllergy(EnvironmentalAllergies) <em>Get Existence Of Environmental Allergy</em>}' query operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL query for the '{@link #getExistenceOfEnvironmentalAllergy(EnvironmentalAllergies) <em>Get Existence Of Environmental Allergy</em>}' query operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getExistenceOfEnvironmentalAllergy(EnvironmentalAllergies)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #getExistenceOfEnvironmentalAllergy(EnvironmentalAllergies)
+	* @generated
+	* @ordered
+	*/
 	protected static OCLExpression<EClassifier> GET_EXISTENCE_OF_ENVIRONMENTAL_ALLERGY__EOCL_QRY;
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 
 	public static ExistenceOfEnvironmentalAllergy getExistenceOfEnvironmentalAllergy(
 			EnvironmentalAllergies environmentalAllergies) {
@@ -286,30 +286,30 @@ public class EnvironmentalAllergiesOperations extends OrganizerOperations {
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #getEnvironmentalAllergies(EnvironmentalAllergies) <em>Get Environmental Allergies</em>}' operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL expression body for the '{@link #getEnvironmentalAllergies(EnvironmentalAllergies) <em>Get Environmental Allergies</em>}' operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getEnvironmentalAllergies(EnvironmentalAllergies)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #getEnvironmentalAllergies(EnvironmentalAllergies)
+	* @generated
+	* @ordered
+	*/
 	protected static final String GET_ENVIRONMENTAL_ALLERGIES__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(emspcr::EnvironmentalAllergy)).oclAsType(emspcr::EnvironmentalAllergy)";
 
 	/**
-	 * The cached OCL query for the '{@link #getEnvironmentalAllergies(EnvironmentalAllergies) <em>Get Environmental Allergies</em>}' query operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL query for the '{@link #getEnvironmentalAllergies(EnvironmentalAllergies) <em>Get Environmental Allergies</em>}' query operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getEnvironmentalAllergies(EnvironmentalAllergies)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #getEnvironmentalAllergies(EnvironmentalAllergies)
+	* @generated
+	* @ordered
+	*/
 	protected static OCLExpression<EClassifier> GET_ENVIRONMENTAL_ALLERGIES__EOCL_QRY;
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 
 	public static EList<EnvironmentalAllergy> getEnvironmentalAllergies(EnvironmentalAllergies environmentalAllergies) {
 		if (GET_ENVIRONMENTAL_ALLERGIES__EOCL_QRY == null) {

@@ -12,6 +12,7 @@ import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 
+import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
 
@@ -19,7 +20,6 @@ import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 
 import org.openhealthtools.mdht.uml.cda.emspcr.AdditionalVitalSignsOrganizer;
 import org.openhealthtools.mdht.uml.cda.emspcr.EmspcrPackage;
-import org.openhealthtools.mdht.uml.cda.emspcr.PriorAidVitals;
 import org.openhealthtools.mdht.uml.cda.emspcr.VitalSignsOrganizer;
 import org.openhealthtools.mdht.uml.cda.emspcr.VitalSignsSection;
 
@@ -37,56 +37,56 @@ import org.openhealthtools.mdht.uml.cda.emspcr.operations.VitalSignsSectionOpera
 public class VitalSignsSectionImpl extends org.openhealthtools.mdht.uml.cda.consol.impl.VitalSignsSectionImpl implements
 		VitalSignsSection {
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	protected VitalSignsSectionImpl() {
 		super();
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	@Override
 	protected EClass eStaticClass() {
 		return EmspcrPackage.Literals.VITAL_SIGNS_SECTION;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	* <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateEMSPCRVitalSignsSectionCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return VitalSignsSectionOperations.validateEMSPCRVitalSignsSectionCode(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateEMSPCRVitalSignsSectionTitle(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return VitalSignsSectionOperations.validateEMSPCRVitalSignsSectionTitle(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateEMSPCRVitalSignsSectionText(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return VitalSignsSectionOperations.validateEMSPCRVitalSignsSectionText(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateEMSPCRVitalSignsSectionVitalSignsOrganizer(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return VitalSignsSectionOperations.validateEMSPCRVitalSignsSectionVitalSignsOrganizer(
@@ -94,20 +94,10 @@ public class VitalSignsSectionImpl extends org.openhealthtools.mdht.uml.cda.cons
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateEMSPCRVitalSignsSectionPriorAidVitals(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return VitalSignsSectionOperations.validateEMSPCRVitalSignsSectionPriorAidVitals(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateEMSPCRVitalSignsSectionAdditionalVitalSignsOrganizer(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return VitalSignsSectionOperations.validateEMSPCRVitalSignsSectionAdditionalVitalSignsOrganizer(
@@ -115,12 +105,12 @@ public class VitalSignsSectionImpl extends org.openhealthtools.mdht.uml.cda.cons
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public VitalSignsOrganizer getemspcrVitalSignsOrganizer() {
-		return VitalSignsSectionOperations.getemspcrVitalSignsOrganizer(this);
+	* <!-- begin-user-doc -->
+	* <!-- end-user-doc -->
+	* @generated
+	*/
+	public EList<VitalSignsOrganizer> getemspcrVitalSignsOrganizers() {
+		return VitalSignsSectionOperations.getemspcrVitalSignsOrganizers(this);
 	}
 
 	/**
@@ -128,17 +118,8 @@ public class VitalSignsSectionImpl extends org.openhealthtools.mdht.uml.cda.cons
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public PriorAidVitals getPriorAidVitals() {
-		return VitalSignsSectionOperations.getPriorAidVitals(this);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public AdditionalVitalSignsOrganizer getAdditionalVitalSignsOrganizer() {
-		return VitalSignsSectionOperations.getAdditionalVitalSignsOrganizer(this);
+	public EList<AdditionalVitalSignsOrganizer> getAdditionalVitalSignsOrganizers() {
+		return VitalSignsSectionOperations.getAdditionalVitalSignsOrganizers(this);
 	}
 
 	/**
@@ -154,10 +135,10 @@ public class VitalSignsSectionImpl extends org.openhealthtools.mdht.uml.cda.cons
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	@Override
 	public VitalSignsSection init() {
 		return Initializer.Util.init(this);

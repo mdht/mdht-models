@@ -35,49 +35,49 @@ import org.openhealthtools.mdht.uml.cda.emspcr.operations.ProcedureOperations;
  */
 public class ProcedureImpl extends ProcedureActivityProcedureImpl implements Procedure {
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	protected ProcedureImpl() {
 		super();
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	@Override
 	protected EClass eStaticClass() {
 		return EmspcrPackage.Literals.PROCEDURE;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	* <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateEMSPCRProcedureAbandonedProcedureRelationship(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ProcedureOperations.validateEMSPCRProcedureAbandonedProcedureRelationship(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateEMSPCRProcedureProcedurePriorRelationship(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ProcedureOperations.validateEMSPCRProcedureProcedurePriorRelationship(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateEMSPCRProcedureProcedureNumberOfAttemptsRelationship(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ProcedureOperations.validateEMSPCRProcedureProcedureNumberOfAttemptsRelationship(
@@ -85,30 +85,30 @@ public class ProcedureImpl extends ProcedureActivityProcedureImpl implements Pro
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateEMSPCRProcedureProcedureSuccessfulRelationship(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ProcedureOperations.validateEMSPCRProcedureProcedureSuccessfulRelationship(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateEMSPCRProcedureProcedureComplicationsRelationship(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ProcedureOperations.validateEMSPCRProcedureProcedureComplicationsRelationship(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateEMSPCRProcedureProcedurePatientResponseRelationship(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ProcedureOperations.validateEMSPCRProcedureProcedurePatientResponseRelationship(
@@ -116,102 +116,102 @@ public class ProcedureImpl extends ProcedureActivityProcedureImpl implements Pro
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateEMSPCRProcedureProcedurePerformer(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProcedureOperations.validateEMSPCRProcedureProcedurePerformer(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateEMSPCRProcedureAirwayConfirmationRelationship(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ProcedureOperations.validateEMSPCRProcedureAirwayConfirmationRelationship(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateEMSPCRProcedureCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProcedureOperations.validateEMSPCRProcedureCode(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateEMSPCRProcedureEffectiveTime(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProcedureOperations.validateEMSPCRProcedureEffectiveTime(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateEMSPCRProcedureStatusCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProcedureOperations.validateEMSPCRProcedureStatusCodeP(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateEMSPCRProcedureStatusCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProcedureOperations.validateEMSPCRProcedureStatusCode(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateEMSPCRProcedureApproachSiteCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProcedureOperations.validateEMSPCRProcedureApproachSiteCodeP(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateEMSPCRProcedureApproachSiteCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProcedureOperations.validateEMSPCRProcedureApproachSiteCode(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateEMSPCRProcedureNegationInd(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProcedureOperations.validateEMSPCRProcedureNegationInd(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	@Override
 	public boolean validateProcedureActivityProcedureTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProcedureOperations.validateProcedureActivityProcedureTemplateId(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	@Override
 	public Procedure init() {
 		return Initializer.Util.init(this);

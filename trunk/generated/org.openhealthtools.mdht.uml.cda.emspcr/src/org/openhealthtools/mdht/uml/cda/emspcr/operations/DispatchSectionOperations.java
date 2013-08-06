@@ -54,45 +54,45 @@ import org.openhealthtools.mdht.uml.cda.operations.SectionOperations;
  */
 public class DispatchSectionOperations extends SectionOperations {
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	protected DispatchSectionOperations() {
 		super();
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateDispatchSectionTemplateId(DispatchSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Dispatch Section Template Id</em>}' operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL expression body for the '{@link #validateDispatchSectionTemplateId(DispatchSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Dispatch Section Template Id</em>}' operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateDispatchSectionTemplateId(DispatchSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validateDispatchSectionTemplateId(DispatchSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 	protected static final String VALIDATE_DISPATCH_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.17.3.10.1.2')";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validateDispatchSectionTemplateId(DispatchSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Dispatch Section Template Id</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL invariant for the '{@link #validateDispatchSectionTemplateId(DispatchSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Dispatch Section Template Id</em>}' invariant operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateDispatchSectionTemplateId(DispatchSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validateDispatchSectionTemplateId(DispatchSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 
 	protected static Constraint VALIDATE_DISPATCH_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param dispatchSection The receiving '<em><b>Dispatch Section</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
+	* <!-- begin-model-doc -->
+	* @param dispatchSection The receiving '<em><b>Dispatch Section</b></em>' model object.
+	* @param diagnostics The chain of diagnostics to which problems are to be appended.
+	* @param context The cache of context-specific information.
+	* <!-- end-model-doc -->
+	* @generated
+	*/
 
 	public static boolean validateDispatchSectionTemplateId(DispatchSection dispatchSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
@@ -121,38 +121,38 @@ public class DispatchSectionOperations extends SectionOperations {
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateDispatchSectionCode(DispatchSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Dispatch Section Code</em>}' operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL expression body for the '{@link #validateDispatchSectionCode(DispatchSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Dispatch Section Code</em>}' operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateDispatchSectionCode(DispatchSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validateDispatchSectionCode(DispatchSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 	protected static final String VALIDATE_DISPATCH_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and "
 			+ "let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in "
 			+ "value.code = '67660-1' and value.codeSystem = '2.16.840.1.113883.6.1')";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validateDispatchSectionCode(DispatchSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Dispatch Section Code</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL invariant for the '{@link #validateDispatchSectionCode(DispatchSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Dispatch Section Code</em>}' invariant operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateDispatchSectionCode(DispatchSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validateDispatchSectionCode(DispatchSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 
 	protected static Constraint VALIDATE_DISPATCH_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param dispatchSection The receiving '<em><b>Dispatch Section</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
+	* <!-- begin-model-doc -->
+	* @param dispatchSection The receiving '<em><b>Dispatch Section</b></em>' model object.
+	* @param diagnostics The chain of diagnostics to which problems are to be appended.
+	* @param context The cache of context-specific information.
+	* <!-- end-model-doc -->
+	* @generated
+	*/
 
 	public static boolean validateDispatchSectionCode(DispatchSection dispatchSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
@@ -180,36 +180,36 @@ public class DispatchSectionOperations extends SectionOperations {
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateDispatchSectionTitle(DispatchSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Dispatch Section Title</em>}' operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL expression body for the '{@link #validateDispatchSectionTitle(DispatchSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Dispatch Section Title</em>}' operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateDispatchSectionTitle(DispatchSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validateDispatchSectionTitle(DispatchSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 	protected static final String VALIDATE_DISPATCH_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.title.oclIsUndefined() or self.title.isNullFlavorUndefined()) implies (not self.title.oclIsUndefined() and self.title.getText() = 'EMS Dispatch')";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validateDispatchSectionTitle(DispatchSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Dispatch Section Title</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL invariant for the '{@link #validateDispatchSectionTitle(DispatchSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Dispatch Section Title</em>}' invariant operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateDispatchSectionTitle(DispatchSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validateDispatchSectionTitle(DispatchSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 
 	protected static Constraint VALIDATE_DISPATCH_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param dispatchSection The receiving '<em><b>Dispatch Section</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
+	* <!-- begin-model-doc -->
+	* @param dispatchSection The receiving '<em><b>Dispatch Section</b></em>' model object.
+	* @param diagnostics The chain of diagnostics to which problems are to be appended.
+	* @param context The cache of context-specific information.
+	* <!-- end-model-doc -->
+	* @generated
+	*/
 
 	public static boolean validateDispatchSectionTitle(DispatchSection dispatchSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
@@ -238,36 +238,36 @@ public class DispatchSectionOperations extends SectionOperations {
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateDispatchSectionText(DispatchSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Dispatch Section Text</em>}' operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL expression body for the '{@link #validateDispatchSectionText(DispatchSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Dispatch Section Text</em>}' operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateDispatchSectionText(DispatchSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validateDispatchSectionText(DispatchSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 	protected static final String VALIDATE_DISPATCH_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "not self.text.oclIsUndefined()";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validateDispatchSectionText(DispatchSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Dispatch Section Text</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL invariant for the '{@link #validateDispatchSectionText(DispatchSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Dispatch Section Text</em>}' invariant operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateDispatchSectionText(DispatchSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validateDispatchSectionText(DispatchSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 
 	protected static Constraint VALIDATE_DISPATCH_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param dispatchSection The receiving '<em><b>Dispatch Section</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
+	* <!-- begin-model-doc -->
+	* @param dispatchSection The receiving '<em><b>Dispatch Section</b></em>' model object.
+	* @param diagnostics The chain of diagnostics to which problems are to be appended.
+	* @param context The cache of context-specific information.
+	* <!-- end-model-doc -->
+	* @generated
+	*/
 
 	public static boolean validateDispatchSectionText(DispatchSection dispatchSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
@@ -295,36 +295,36 @@ public class DispatchSectionOperations extends SectionOperations {
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateDispatchSectionEmergencyMedicalDispatchObservation(DispatchSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Dispatch Section Emergency Medical Dispatch Observation</em>}' operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL expression body for the '{@link #validateDispatchSectionEmergencyMedicalDispatchObservation(DispatchSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Dispatch Section Emergency Medical Dispatch Observation</em>}' operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateDispatchSectionEmergencyMedicalDispatchObservation(DispatchSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validateDispatchSectionEmergencyMedicalDispatchObservation(DispatchSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 	protected static final String VALIDATE_DISPATCH_SECTION_EMERGENCY_MEDICAL_DISPATCH_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->one(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(emspcr::EmergencyMedicalDispatchObservation) and entry.typeCode = vocab::x_ActRelationshipEntry::DRIV)";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validateDispatchSectionEmergencyMedicalDispatchObservation(DispatchSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Dispatch Section Emergency Medical Dispatch Observation</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL invariant for the '{@link #validateDispatchSectionEmergencyMedicalDispatchObservation(DispatchSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Dispatch Section Emergency Medical Dispatch Observation</em>}' invariant operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateDispatchSectionEmergencyMedicalDispatchObservation(DispatchSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validateDispatchSectionEmergencyMedicalDispatchObservation(DispatchSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 
 	protected static Constraint VALIDATE_DISPATCH_SECTION_EMERGENCY_MEDICAL_DISPATCH_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param dispatchSection The receiving '<em><b>Dispatch Section</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
+	* <!-- begin-model-doc -->
+	* @param dispatchSection The receiving '<em><b>Dispatch Section</b></em>' model object.
+	* @param diagnostics The chain of diagnostics to which problems are to be appended.
+	* @param context The cache of context-specific information.
+	* <!-- end-model-doc -->
+	* @generated
+	*/
 
 	public static boolean validateDispatchSectionEmergencyMedicalDispatchObservation(DispatchSection dispatchSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
@@ -355,36 +355,36 @@ public class DispatchSectionOperations extends SectionOperations {
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateDispatchSectionComplaintReportedByDispatch(DispatchSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Dispatch Section Complaint Reported By Dispatch</em>}' operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL expression body for the '{@link #validateDispatchSectionComplaintReportedByDispatch(DispatchSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Dispatch Section Complaint Reported By Dispatch</em>}' operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateDispatchSectionComplaintReportedByDispatch(DispatchSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validateDispatchSectionComplaintReportedByDispatch(DispatchSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 	protected static final String VALIDATE_DISPATCH_SECTION_COMPLAINT_REPORTED_BY_DISPATCH__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->one(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(emspcr::ComplaintReportedByDispatch) and entry.typeCode = vocab::x_ActRelationshipEntry::DRIV)";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validateDispatchSectionComplaintReportedByDispatch(DispatchSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Dispatch Section Complaint Reported By Dispatch</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL invariant for the '{@link #validateDispatchSectionComplaintReportedByDispatch(DispatchSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Dispatch Section Complaint Reported By Dispatch</em>}' invariant operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateDispatchSectionComplaintReportedByDispatch(DispatchSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validateDispatchSectionComplaintReportedByDispatch(DispatchSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 
 	protected static Constraint VALIDATE_DISPATCH_SECTION_COMPLAINT_REPORTED_BY_DISPATCH__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param dispatchSection The receiving '<em><b>Dispatch Section</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
+	* <!-- begin-model-doc -->
+	* @param dispatchSection The receiving '<em><b>Dispatch Section</b></em>' model object.
+	* @param diagnostics The chain of diagnostics to which problems are to be appended.
+	* @param context The cache of context-specific information.
+	* <!-- end-model-doc -->
+	* @generated
+	*/
 
 	public static boolean validateDispatchSectionComplaintReportedByDispatch(DispatchSection dispatchSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
@@ -415,30 +415,30 @@ public class DispatchSectionOperations extends SectionOperations {
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #getEmergencyMedicalDispatchObservation(DispatchSection) <em>Get Emergency Medical Dispatch Observation</em>}' operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL expression body for the '{@link #getEmergencyMedicalDispatchObservation(DispatchSection) <em>Get Emergency Medical Dispatch Observation</em>}' operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getEmergencyMedicalDispatchObservation(DispatchSection)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #getEmergencyMedicalDispatchObservation(DispatchSection)
+	* @generated
+	* @ordered
+	*/
 	protected static final String GET_EMERGENCY_MEDICAL_DISPATCH_OBSERVATION__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(emspcr::EmergencyMedicalDispatchObservation))->asSequence()->any(true).oclAsType(emspcr::EmergencyMedicalDispatchObservation)";
 
 	/**
-	 * The cached OCL query for the '{@link #getEmergencyMedicalDispatchObservation(DispatchSection) <em>Get Emergency Medical Dispatch Observation</em>}' query operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL query for the '{@link #getEmergencyMedicalDispatchObservation(DispatchSection) <em>Get Emergency Medical Dispatch Observation</em>}' query operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getEmergencyMedicalDispatchObservation(DispatchSection)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #getEmergencyMedicalDispatchObservation(DispatchSection)
+	* @generated
+	* @ordered
+	*/
 	protected static OCLExpression<EClassifier> GET_EMERGENCY_MEDICAL_DISPATCH_OBSERVATION__EOCL_QRY;
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 
 	public static EmergencyMedicalDispatchObservation getEmergencyMedicalDispatchObservation(
 			DispatchSection dispatchSection) {
@@ -458,30 +458,30 @@ public class DispatchSectionOperations extends SectionOperations {
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #getComplaintReportedByDispatch(DispatchSection) <em>Get Complaint Reported By Dispatch</em>}' operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL expression body for the '{@link #getComplaintReportedByDispatch(DispatchSection) <em>Get Complaint Reported By Dispatch</em>}' operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getComplaintReportedByDispatch(DispatchSection)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #getComplaintReportedByDispatch(DispatchSection)
+	* @generated
+	* @ordered
+	*/
 	protected static final String GET_COMPLAINT_REPORTED_BY_DISPATCH__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(emspcr::ComplaintReportedByDispatch))->asSequence()->any(true).oclAsType(emspcr::ComplaintReportedByDispatch)";
 
 	/**
-	 * The cached OCL query for the '{@link #getComplaintReportedByDispatch(DispatchSection) <em>Get Complaint Reported By Dispatch</em>}' query operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL query for the '{@link #getComplaintReportedByDispatch(DispatchSection) <em>Get Complaint Reported By Dispatch</em>}' query operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getComplaintReportedByDispatch(DispatchSection)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #getComplaintReportedByDispatch(DispatchSection)
+	* @generated
+	* @ordered
+	*/
 	protected static OCLExpression<EClassifier> GET_COMPLAINT_REPORTED_BY_DISPATCH__EOCL_QRY;
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 
 	public static ComplaintReportedByDispatch getComplaintReportedByDispatch(DispatchSection dispatchSection) {
 		if (GET_COMPLAINT_REPORTED_BY_DISPATCH__EOCL_QRY == null) {

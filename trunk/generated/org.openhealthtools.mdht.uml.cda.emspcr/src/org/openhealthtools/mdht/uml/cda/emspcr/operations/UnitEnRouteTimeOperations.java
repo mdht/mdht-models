@@ -46,45 +46,45 @@ import org.openhealthtools.mdht.uml.cda.operations.ClinicalStatementOperations;
  */
 public class UnitEnRouteTimeOperations extends ClinicalStatementOperations {
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	protected UnitEnRouteTimeOperations() {
 		super();
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateUnitEnRouteTimeTemplateId(UnitEnRouteTime, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Unit En Route Time Template Id</em>}' operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL expression body for the '{@link #validateUnitEnRouteTimeTemplateId(UnitEnRouteTime, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Unit En Route Time Template Id</em>}' operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateUnitEnRouteTimeTemplateId(UnitEnRouteTime, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validateUnitEnRouteTimeTemplateId(UnitEnRouteTime, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 	protected static final String VALIDATE_UNIT_EN_ROUTE_TIME_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.1133883.17.3.10.1.40')";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validateUnitEnRouteTimeTemplateId(UnitEnRouteTime, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Unit En Route Time Template Id</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL invariant for the '{@link #validateUnitEnRouteTimeTemplateId(UnitEnRouteTime, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Unit En Route Time Template Id</em>}' invariant operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateUnitEnRouteTimeTemplateId(UnitEnRouteTime, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validateUnitEnRouteTimeTemplateId(UnitEnRouteTime, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 
 	protected static Constraint VALIDATE_UNIT_EN_ROUTE_TIME_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param unitEnRouteTime The receiving '<em><b>Unit En Route Time</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
+	* <!-- begin-model-doc -->
+	* @param unitEnRouteTime The receiving '<em><b>Unit En Route Time</b></em>' model object.
+	* @param diagnostics The chain of diagnostics to which problems are to be appended.
+	* @param context The cache of context-specific information.
+	* <!-- end-model-doc -->
+	* @generated
+	*/
 
 	public static boolean validateUnitEnRouteTimeTemplateId(UnitEnRouteTime unitEnRouteTime,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
@@ -113,36 +113,36 @@ public class UnitEnRouteTimeOperations extends ClinicalStatementOperations {
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateUnitEnRouteTimeCodeP(UnitEnRouteTime, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Unit En Route Time Code P</em>}' operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL expression body for the '{@link #validateUnitEnRouteTimeCodeP(UnitEnRouteTime, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Unit En Route Time Code P</em>}' operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateUnitEnRouteTimeCodeP(UnitEnRouteTime, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validateUnitEnRouteTimeCodeP(UnitEnRouteTime, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 	protected static final String VALIDATE_UNIT_EN_ROUTE_TIME_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined())";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validateUnitEnRouteTimeCodeP(UnitEnRouteTime, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Unit En Route Time Code P</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL invariant for the '{@link #validateUnitEnRouteTimeCodeP(UnitEnRouteTime, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Unit En Route Time Code P</em>}' invariant operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateUnitEnRouteTimeCodeP(UnitEnRouteTime, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validateUnitEnRouteTimeCodeP(UnitEnRouteTime, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 
 	protected static Constraint VALIDATE_UNIT_EN_ROUTE_TIME_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param unitEnRouteTime The receiving '<em><b>Unit En Route Time</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
+	* <!-- begin-model-doc -->
+	* @param unitEnRouteTime The receiving '<em><b>Unit En Route Time</b></em>' model object.
+	* @param diagnostics The chain of diagnostics to which problems are to be appended.
+	* @param context The cache of context-specific information.
+	* <!-- end-model-doc -->
+	* @generated
+	*/
 
 	public static boolean validateUnitEnRouteTimeCodeP(UnitEnRouteTime unitEnRouteTime, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
@@ -183,38 +183,38 @@ public class UnitEnRouteTimeOperations extends ClinicalStatementOperations {
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateUnitEnRouteTimeCode(UnitEnRouteTime, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Unit En Route Time Code</em>}' operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL expression body for the '{@link #validateUnitEnRouteTimeCode(UnitEnRouteTime, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Unit En Route Time Code</em>}' operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateUnitEnRouteTimeCode(UnitEnRouteTime, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validateUnitEnRouteTimeCode(UnitEnRouteTime, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 	protected static final String VALIDATE_UNIT_EN_ROUTE_TIME_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "
 			+ "let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "
 			+ "value.code = '69472-9' and value.codeSystem = '2.16.840.1.113883.6.1')";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validateUnitEnRouteTimeCode(UnitEnRouteTime, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Unit En Route Time Code</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL invariant for the '{@link #validateUnitEnRouteTimeCode(UnitEnRouteTime, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Unit En Route Time Code</em>}' invariant operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateUnitEnRouteTimeCode(UnitEnRouteTime, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validateUnitEnRouteTimeCode(UnitEnRouteTime, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 
 	protected static Constraint VALIDATE_UNIT_EN_ROUTE_TIME_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param unitEnRouteTime The receiving '<em><b>Unit En Route Time</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
+	* <!-- begin-model-doc -->
+	* @param unitEnRouteTime The receiving '<em><b>Unit En Route Time</b></em>' model object.
+	* @param diagnostics The chain of diagnostics to which problems are to be appended.
+	* @param context The cache of context-specific information.
+	* <!-- end-model-doc -->
+	* @generated
+	*/
 
 	public static boolean validateUnitEnRouteTimeCode(UnitEnRouteTime unitEnRouteTime, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
@@ -251,36 +251,36 @@ public class UnitEnRouteTimeOperations extends ClinicalStatementOperations {
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateUnitEnRouteTimeValue(UnitEnRouteTime, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Unit En Route Time Value</em>}' operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL expression body for the '{@link #validateUnitEnRouteTimeValue(UnitEnRouteTime, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Unit En Route Time Value</em>}' operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateUnitEnRouteTimeValue(UnitEnRouteTime, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validateUnitEnRouteTimeValue(UnitEnRouteTime, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 	protected static final String VALIDATE_UNIT_EN_ROUTE_TIME_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | element.oclIsTypeOf(datatypes::TS)))";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validateUnitEnRouteTimeValue(UnitEnRouteTime, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Unit En Route Time Value</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL invariant for the '{@link #validateUnitEnRouteTimeValue(UnitEnRouteTime, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Unit En Route Time Value</em>}' invariant operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateUnitEnRouteTimeValue(UnitEnRouteTime, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validateUnitEnRouteTimeValue(UnitEnRouteTime, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 
 	protected static Constraint VALIDATE_UNIT_EN_ROUTE_TIME_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param unitEnRouteTime The receiving '<em><b>Unit En Route Time</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
+	* <!-- begin-model-doc -->
+	* @param unitEnRouteTime The receiving '<em><b>Unit En Route Time</b></em>' model object.
+	* @param diagnostics The chain of diagnostics to which problems are to be appended.
+	* @param context The cache of context-specific information.
+	* <!-- end-model-doc -->
+	* @generated
+	*/
 
 	public static boolean validateUnitEnRouteTimeValue(UnitEnRouteTime unitEnRouteTime, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
@@ -309,36 +309,36 @@ public class UnitEnRouteTimeOperations extends ClinicalStatementOperations {
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateUnitEnRouteTimeMoodCode(UnitEnRouteTime, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Unit En Route Time Mood Code</em>}' operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL expression body for the '{@link #validateUnitEnRouteTimeMoodCode(UnitEnRouteTime, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Unit En Route Time Mood Code</em>}' operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateUnitEnRouteTimeMoodCode(UnitEnRouteTime, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validateUnitEnRouteTimeMoodCode(UnitEnRouteTime, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 	protected static final String VALIDATE_UNIT_EN_ROUTE_TIME_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "isDefined('moodCode')";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validateUnitEnRouteTimeMoodCode(UnitEnRouteTime, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Unit En Route Time Mood Code</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL invariant for the '{@link #validateUnitEnRouteTimeMoodCode(UnitEnRouteTime, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Unit En Route Time Mood Code</em>}' invariant operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateUnitEnRouteTimeMoodCode(UnitEnRouteTime, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validateUnitEnRouteTimeMoodCode(UnitEnRouteTime, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 
 	protected static Constraint VALIDATE_UNIT_EN_ROUTE_TIME_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param unitEnRouteTime The receiving '<em><b>Unit En Route Time</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
+	* <!-- begin-model-doc -->
+	* @param unitEnRouteTime The receiving '<em><b>Unit En Route Time</b></em>' model object.
+	* @param diagnostics The chain of diagnostics to which problems are to be appended.
+	* @param context The cache of context-specific information.
+	* <!-- end-model-doc -->
+	* @generated
+	*/
 
 	public static boolean validateUnitEnRouteTimeMoodCode(UnitEnRouteTime unitEnRouteTime, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {

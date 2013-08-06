@@ -35,74 +35,74 @@ import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
  */
 public class UnitOnSceneTimeImpl extends ObservationImpl implements UnitOnSceneTime {
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	protected UnitOnSceneTimeImpl() {
 		super();
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	@Override
 	protected EClass eStaticClass() {
 		return EmspcrPackage.Literals.UNIT_ON_SCENE_TIME;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateUnitOnSceneTimeTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return UnitOnSceneTimeOperations.validateUnitOnSceneTimeTemplateId(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateUnitOnSceneTimeCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return UnitOnSceneTimeOperations.validateUnitOnSceneTimeCodeP(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateUnitOnSceneTimeCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return UnitOnSceneTimeOperations.validateUnitOnSceneTimeCode(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateUnitOnSceneTimeValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return UnitOnSceneTimeOperations.validateUnitOnSceneTimeValue(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateUnitOnSceneTimeMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return UnitOnSceneTimeOperations.validateUnitOnSceneTimeMoodCode(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public UnitOnSceneTime init() {
 		return Initializer.Util.init(this);
 	}

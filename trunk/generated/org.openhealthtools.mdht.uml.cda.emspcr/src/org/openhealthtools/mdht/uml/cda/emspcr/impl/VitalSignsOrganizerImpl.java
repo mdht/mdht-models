@@ -18,6 +18,7 @@ import org.eclipse.emf.ecore.EObject;
 import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 
 import org.openhealthtools.mdht.uml.cda.emspcr.EmspcrPackage;
+import org.openhealthtools.mdht.uml.cda.emspcr.PriorAidVitals;
 import org.openhealthtools.mdht.uml.cda.emspcr.VitalSignsOrganizer;
 
 import org.openhealthtools.mdht.uml.cda.emspcr.operations.VitalSignsOrganizerOperations;
@@ -34,29 +35,29 @@ import org.openhealthtools.mdht.uml.cda.emspcr.operations.VitalSignsOrganizerOpe
 public class VitalSignsOrganizerImpl extends org.openhealthtools.mdht.uml.cda.consol.impl.VitalSignsOrganizerImpl
 		implements VitalSignsOrganizer {
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	protected VitalSignsOrganizerImpl() {
 		super();
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	@Override
 	protected EClass eStaticClass() {
 		return EmspcrPackage.Literals.VITAL_SIGNS_ORGANIZER;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	* <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateEMSPCRVitalSignsOrganizerSystolicBloodPressureComponent(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return VitalSignsOrganizerOperations.validateEMSPCRVitalSignsOrganizerSystolicBloodPressureComponent(
@@ -64,10 +65,10 @@ public class VitalSignsOrganizerImpl extends org.openhealthtools.mdht.uml.cda.co
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateEMSPCRVitalSignsOrganizerDiastolicBloodPressureComponent(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return VitalSignsOrganizerOperations.validateEMSPCRVitalSignsOrganizerDiastolicBloodPressureComponent(
@@ -75,10 +76,10 @@ public class VitalSignsOrganizerImpl extends org.openhealthtools.mdht.uml.cda.co
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateEMSPCRVitalSignsOrganizerHeartRateComponent(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return VitalSignsOrganizerOperations.validateEMSPCRVitalSignsOrganizerHeartRateComponent(
@@ -86,10 +87,10 @@ public class VitalSignsOrganizerImpl extends org.openhealthtools.mdht.uml.cda.co
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateEMSPCRVitalSignsOrganizerRespiratoryRateComponent(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return VitalSignsOrganizerOperations.validateEMSPCRVitalSignsOrganizerRespiratoryRateComponent(
@@ -97,10 +98,10 @@ public class VitalSignsOrganizerImpl extends org.openhealthtools.mdht.uml.cda.co
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateEMSPCRVitalSignsOrganizerBodyTemperatureComponent(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return VitalSignsOrganizerOperations.validateEMSPCRVitalSignsOrganizerBodyTemperatureComponent(
@@ -108,10 +109,10 @@ public class VitalSignsOrganizerImpl extends org.openhealthtools.mdht.uml.cda.co
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateEMSPCRVitalSignsOrganizerOxygenSaturationComponent(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return VitalSignsOrganizerOperations.validateEMSPCRVitalSignsOrganizerOxygenSaturationComponent(
@@ -119,13 +120,22 @@ public class VitalSignsOrganizerImpl extends org.openhealthtools.mdht.uml.cda.co
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateEMSPCRVitalSignsOrganizerEffectiveTime(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return VitalSignsOrganizerOperations.validateEMSPCRVitalSignsOrganizerEffectiveTime(this, diagnostics, context);
+	}
+
+	/**
+	* <!-- begin-user-doc -->
+	* <!-- end-user-doc -->
+	* @generated
+	*/
+	public PriorAidVitals getPriorAidVitals() {
+		return VitalSignsOrganizerOperations.getPriorAidVitals(this);
 	}
 
 	/**
@@ -139,10 +149,10 @@ public class VitalSignsOrganizerImpl extends org.openhealthtools.mdht.uml.cda.co
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	@Override
 	public VitalSignsOrganizer init() {
 		return Initializer.Util.init(this);

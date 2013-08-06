@@ -35,83 +35,83 @@ import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
  */
 public class OtherSymptomsImpl extends ObservationImpl implements OtherSymptoms {
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	protected OtherSymptomsImpl() {
 		super();
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	@Override
 	protected EClass eStaticClass() {
 		return EmspcrPackage.Literals.OTHER_SYMPTOMS;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateOtherSymptomsTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return OtherSymptomsOperations.validateOtherSymptomsTemplateId(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateOtherSymptomsCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return OtherSymptomsOperations.validateOtherSymptomsCodeP(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateOtherSymptomsCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return OtherSymptomsOperations.validateOtherSymptomsCode(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateOtherSymptomsValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return OtherSymptomsOperations.validateOtherSymptomsValue(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateOtherSymptomsValueP(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return OtherSymptomsOperations.validateOtherSymptomsValueP(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateOtherSymptomsMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return OtherSymptomsOperations.validateOtherSymptomsMoodCode(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public OtherSymptoms init() {
 		return Initializer.Util.init(this);
 	}

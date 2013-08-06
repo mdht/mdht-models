@@ -35,65 +35,65 @@ import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
  */
 public class PainScoreImpl extends ObservationImpl implements PainScore {
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	protected PainScoreImpl() {
 		super();
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	@Override
 	protected EClass eStaticClass() {
 		return EmspcrPackage.Literals.PAIN_SCORE;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validatePainScoreTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PainScoreOperations.validatePainScoreTemplateId(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validatePainScoreCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PainScoreOperations.validatePainScoreCode(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validatePainScoreEffectiveTime(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PainScoreOperations.validatePainScoreEffectiveTime(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validatePainScoreMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PainScoreOperations.validatePainScoreMoodCode(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public PainScore init() {
 		return Initializer.Util.init(this);
 	}
