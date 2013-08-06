@@ -27,7 +27,7 @@
 <li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> (CONF:10142) <ol><li> This entryRelationship <b>SHALL</b> contain exactly one [1..1] <tt><b>@inversionInd</b>="TRUE" </tt> (CONF:10154)</li><li> This entryRelationship <b>SHALL</b> contain exactly one [1..1] <tt><b>@typeCode</b>="SUBJ" </tt> (CONF:10155)</li><li> This entryRelationship <b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref href="../CardiacArrestCause.dita">Cardiac Arrest Cause</xref><ol>
 <li>Contains exactly one [1..1] <xref href="../CardiacArrestCause.dita">Cardiac Arrest Cause</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.124</tt>)</li></ol></li></ol>
 </li>
-<li><b>MAY</b> contain zero or one [0..1] <tt><b>informant</b></tt> (CONF:10144) <ol><li> This informant <b>SHALL</b> contain exactly one [1..1] <tt><b>@typeCode</b>="INF" </tt> (CONF:10158)</li><li> This informant <b>SHALL</b> contain zero or one [0..1] <tt><b>relatedEntity</b></tt> <ol><li> This relatedEntity <b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="AGNT" </tt> (CONF:10159)</li><li> This relatedEntity <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt>, which <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/CardiacArrestWitnessRole.dita">CardiacArrestWitnessRole</xref> 2.16.840.1.113883.17.3.11.11</tt><b> STATIC</b> (CONF:10160)<p><lines><i>NEMSIS Trace: EArrest.04</i></lines></p></li></ol> </li></ol>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>informant</b></tt> (CONF:10144) <ol><li> This informant <b>SHALL</b> contain exactly one [1..1] <tt><b>@typeCode</b>="INF" </tt> (CONF:10158)</li><li> This informant <b>SHALL</b> contain zero or one [0..1] <tt><b>relatedEntity</b></tt> <ol><li> This relatedEntity <b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="AGNT" </tt> (CONF:10159)</li><li> This relatedEntity <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt>, where the @code <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/CardiacArrestWitnessRole.dita">CardiacArrestWitnessRole</xref> 2.16.840.1.113883.17.3.11.11</tt><b> STATIC</b> (CONF:10160)<p><lines><i>NEMSIS Trace: EArrest.04</i></lines></p></li></ol> </li></ol>
 </li>
 <li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> (CONF:10145) <ol><li> This entryRelationship <b>SHALL</b> contain exactly one [1..1] <tt><b>@inversionInd</b>="TRUE" </tt> (CONF:10161)</li><li> This entryRelationship <b>SHALL</b> contain exactly one [1..1] <tt><b>@typeCode</b>="SUBJ" </tt> (CONF:10162)</li><li> This entryRelationship <b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref href="../PriorCPR.dita">Prior CPR</xref><ol>
 <li>Contains exactly one [1..1] <xref href="../PriorCPR.dita">Prior CPR</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.125</tt>)</li></ol></li></ol>
@@ -64,7 +64,7 @@
 <li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> (CONF:10142) <ol><li> This entryRelationship <b>SHALL</b> contain exactly one [1..1] <tt><b>@inversionInd</b>="TRUE" </tt> (CONF:10154)</li><li> This entryRelationship <b>SHALL</b> contain exactly one [1..1] <tt><b>@typeCode</b>="SUBJ" </tt> (CONF:10155)</li><li> This entryRelationship <b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref href="../CardiacArrestCause.dita">Cardiac Arrest Cause</xref><ol>
 <li>Contains exactly one [1..1] <xref href="../CardiacArrestCause.dita">Cardiac Arrest Cause</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.124</tt>)</li></ol></li></ol>
 </li>
-<li><b>MAY</b> contain zero or one [0..1] <tt><b>informant</b></tt> (CONF:10144) <ol><li> This informant <b>SHALL</b> contain exactly one [1..1] <tt><b>@typeCode</b>="INF" </tt> (CONF:10158)</li><li> This informant <b>SHALL</b> contain zero or one [0..1] <tt><b>relatedEntity</b></tt> <ol><li> This relatedEntity <b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="AGNT" </tt> (CONF:10159)</li><li> This relatedEntity <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt>, which <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/CardiacArrestWitnessRole.dita">CardiacArrestWitnessRole</xref> 2.16.840.1.113883.17.3.11.11</tt><b> STATIC</b> (CONF:10160)<p><lines><i>NEMSIS Trace: EArrest.04</i></lines></p></li></ol> </li></ol>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>informant</b></tt> (CONF:10144) <ol><li> This informant <b>SHALL</b> contain exactly one [1..1] <tt><b>@typeCode</b>="INF" </tt> (CONF:10158)</li><li> This informant <b>SHALL</b> contain zero or one [0..1] <tt><b>relatedEntity</b></tt> <ol><li> This relatedEntity <b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="AGNT" </tt> (CONF:10159)</li><li> This relatedEntity <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt>, where the @code <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/CardiacArrestWitnessRole.dita">CardiacArrestWitnessRole</xref> 2.16.840.1.113883.17.3.11.11</tt><b> STATIC</b> (CONF:10160)<p><lines><i>NEMSIS Trace: EArrest.04</i></lines></p></li></ol> </li></ol>
 </li>
 <li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> (CONF:10145) <ol><li> This entryRelationship <b>SHALL</b> contain exactly one [1..1] <tt><b>@inversionInd</b>="TRUE" </tt> (CONF:10161)</li><li> This entryRelationship <b>SHALL</b> contain exactly one [1..1] <tt><b>@typeCode</b>="SUBJ" </tt> (CONF:10162)</li><li> This entryRelationship <b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref href="../PriorCPR.dita">Prior CPR</xref><ol>
 <li>Contains exactly one [1..1] <xref href="../PriorCPR.dita">Prior CPR</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.125</tt>)</li></ol></li></ol>
@@ -85,73 +85,7 @@
 <li>Contains exactly one [1..1] <xref href="../CardiacArrestTiming.dita">Cardiac Arrest Timing</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.123</tt>)</li></ol></li></ol>
 </li>
 </ol>
-<section id="tableconformance"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="8" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><colspec colname="col2" colnum="2" /><colspec colname="col3" colnum="3" /><colspec colname="col4" colnum="4" /><colspec colname="col5" colnum="5" /><colspec colname="col6" colnum="6" /><colspec colname="col7" colnum="7" /><thead> <row><entry namest="col0" nameend="col7" >emspcr::CardiacArrestExistence</entry>  </row>  <row><entry namest="col0" nameend="col7" >cda::observation[cda:templateId/@root = 2.16.840.1.1133883.17.3.10.1.27]/</entry>  </row>  <row><entry>Name</entry><entry>XPath</entry><entry>Cardinality</entry><entry>Severity</entry><entry>Nullable</entry><entry>Data Type</entry><entry>Conformance</entry><entry>Value(s)</entry></row></thead><tbody><row><entry>moodCode</entry><entry>@moodCode</entry><entry>1..1</entry><entry>SHALL</entry><entry>NO</entry><entry>x_ActMoodDocumentObservation</entry><entry></entry><entry> DEF</entry></row> 
-<row><entry>negationInd</entry><entry>@negationInd</entry><entry>0..1</entry><entry>SHOULD</entry><entry>NO</entry><entry>Boolean</entry><entry>CONF:10141</entry><entry> </entry></row> 
-<row><entry>code</entry><entry>code</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>CD</entry><entry>CONF:10138</entry><entry>HL7ActCode 2.16.840.1.113883.5.4 ASSERTION</entry></row> 
-<row><entry>effectiveTime</entry><entry>effectiveTime</entry><entry>0..1</entry><entry>SHOULD</entry><entry>YES</entry><entry>IVL_TS</entry><entry>CONF:10139</entry><entry> </entry></row> 
-<row><entry>value</entry><entry>value</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>CD</entry><entry>CONF:10140</entry><entry>SNOMEDCT 2.16.840.1.113883.6.96 </entry></row> 
-<row><entry>arrestRhythmRelationship</entry><entry>arrestRhythmRelationship</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>ArrestRhythmRelationship</entry><entry></entry><entry> </entry></row> 
-<row><entry>cardiacArrestCauseRelationship</entry><entry>cardiacArrestCauseRelationship</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>CardiacArrestCauseRelationship</entry><entry>CONF:10142</entry><entry> </entry></row> 
-<row><entry>cardiacArrestExistence</entry><entry>cardiacArrestExistence</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>CardiacArrestExistence</entry><entry></entry><entry> </entry></row> 
-<row><entry>cardiacArrestInformantParticipation</entry><entry>cardiacArrestInformantParticipation</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>CardiacArrestInformantParticipation</entry><entry>CONF:10144</entry><entry> </entry></row> 
-<row><entry>cardiacArrestTimingRelationship</entry><entry>cardiacArrestTimingRelationship</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>CardiacArrestTimingRelationship</entry><entry></entry><entry> </entry></row> 
-<row><entry>destinationRhythmRelationship</entry><entry>destinationRhythmRelationship</entry><entry>0..*</entry><entry>MAY</entry><entry>YES</entry><entry>DestinationRhythmRelationship</entry><entry>CONF:10148</entry><entry> </entry></row> 
-<row><entry>priorAEDRelationship</entry><entry>priorAEDRelationship</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>PriorAEDRelationship</entry><entry>CONF:10146</entry><entry> </entry></row> 
-<row><entry>priorCPRRelationship</entry><entry>priorCPRRelationship</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>PriorCPRRelationship</entry><entry>CONF:10145</entry><entry> </entry></row> 
-<row><entry>spontaneousCirculationRelationship</entry><entry>spontaneousCirculationRelationship</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>SpontaneousCirculationRelationship</entry><entry>CONF:10147</entry><entry> </entry></row> 
-</tbody></tgroup></table></p></section>
-<codeblock id="example"><![CDATA[<observation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" moodCode="EVN">
-  <templateId root="2.16.840.1.1133883.17.3.10.1.27"/>
-  <id root="MDHT" extension="537410295"/>
-  <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4" codeSystemName="HL7ActCode" displayName="ASSERTION"/>
-  <effectiveTime>
-    <low value="2013"/>
-    <high value="2013"/>
-  </effectiveTime>
-  <informant typeCode="INF">
-    <relatedEntity classCode="AGNT">
-      <code codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
-    </relatedEntity>
-  </informant>
-  <entryRelationship typeCode="SUBJ" inversionInd="true">
-    <observation>
-      <code code="177698406"/>
-    </observation>
-  </entryRelationship>
-  <entryRelationship typeCode="SUBJ" inversionInd="true">
-    <observation>
-      <code code="265328687"/>
-      <value xsi:type="BL"/>
-      <participant typeCode="RESP"/>
-    </observation>
-  </entryRelationship>
-  <entryRelationship typeCode="SUBJ" inversionInd="true">
-    <observation>
-      <code code="1859774699"/>
-      <participant typeCode="RESP"/>
-    </observation>
-  </entryRelationship>
-  <entryRelationship typeCode="SUBJ" inversionInd="true">
-    <observation>
-      <code code="1597198637"/>
-    </observation>
-  </entryRelationship>
-  <entryRelationship typeCode="SUBJ" inversionInd="true">
-    <observation>
-      <code code="1876654854"/>
-    </observation>
-  </entryRelationship>
-  <entryRelationship typeCode="SUBJ" inversionInd="true">
-    <observation>
-      <code code="1387498319"/>
-    </observation>
-  </entryRelationship>
-  <entryRelationship typeCode="SUBJ" inversionInd="true">
-    <observation>
-      <code code="1361512314"/>
-    </observation>
-  </entryRelationship>
-</observation>]]></codeblock>
+<codeblock id="example"><![CDATA[Error: Missing Runtime Class]]></codeblock>
 <section id="changes">
 </section>
 <p><ph id="classformalname">Cardiac Arrest Existence</ph></p>

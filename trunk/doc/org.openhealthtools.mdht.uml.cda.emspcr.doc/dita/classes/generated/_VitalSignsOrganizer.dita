@@ -36,13 +36,14 @@
 <li><b>SHOULD</b> contain zero or one [0..1] <tt><b>component</b></tt> <ol><li> This component <b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref href="../OxygenSaturation.dita">Oxygen Saturation</xref><ol>
 <li>Contains exactly one [1..1] <xref href="../OxygenSaturation.dita">Oxygen Saturation</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.177</tt>)</li></ol></li></ol>
 </li>
+<li>Contains zero or one [0..1] <tt><b>component</b></tt>
+<ol>
+<li>Contains exactly one [1..1] <xref href="../PriorAidVitals.dita">Prior Aid Vitals</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.29</tt>)</li></ol></li>
 </ol>
 <ol id="aggregate">
 <li><b>SHALL</b> conform to <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.consol.doc/classes/VitalSignsOrganizer.html">Consol Vital Signs Organizer</xref> template (templateId: <tt>2.16.840.1.113883.10.20.22.4.26</tt>)</li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="CLUSTER" </tt> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>) (CONF:7279)
-<ul><li><p><lines><i><p>
-The vital signs organizer is a cluster of vital signs observations.
-</p></i></lines></p></li></ul></li>
+<ul><li><p><lines><i>The vital signs organizer is a cluster of vital signs observations.</i></lines></p></li></ul></li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF:7280)
 </li>
 <li><b>SHALL</b> contain at least one [1..*] <tt><b>id</b></tt> (CONF:7282)
@@ -53,7 +54,7 @@ The vital signs organizer is a cluster of vital signs observations.
 <ul><li><p><lines><i>The observations have all been completed.</i></lines></p></li></ul></li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>effectiveTime</b></tt> (CONF:10257)
 <ul><li><p><lines><i>NEMSIS Trace: EVitals.01</i></lines></p></li></ul></li>
-<li><b>SHALL</b> contain at least one [1..*] <tt><b>component</b></tt> (CONF:7285, CONF:15946)
+<li><b>SHALL</b> contain at least one [1..*] <tt><b>component</b></tt> (CONF:7285, CONF:7286)
 <ol>
 <li>Contains exactly one [1..1] <xref href="../VitalSignObservation.dita">Vital Sign Observation</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.27</tt>)</li></ol></li>
 <li><b>SHOULD</b> contain zero or one [0..1] <tt><b>component</b></tt> <ol><li> This component <b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref href="../SystolicBloodPressure.dita">Systolic Blood Pressure</xref><ol>
@@ -74,105 +75,11 @@ The vital signs organizer is a cluster of vital signs observations.
 <li><b>SHOULD</b> contain zero or one [0..1] <tt><b>component</b></tt> <ol><li> This component <b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref href="../OxygenSaturation.dita">Oxygen Saturation</xref><ol>
 <li>Contains exactly one [1..1] <xref href="../OxygenSaturation.dita">Oxygen Saturation</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.177</tt>)</li></ol></li></ol>
 </li>
+<li>Contains zero or one [0..1] <tt><b>component</b></tt>
+<ol>
+<li>Contains exactly one [1..1] <xref href="../PriorAidVitals.dita">Prior Aid Vitals</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.29</tt>)</li></ol></li>
 </ol>
-<section id="tableconformance"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="8" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><colspec colname="col2" colnum="2" /><colspec colname="col3" colnum="3" /><colspec colname="col4" colnum="4" /><colspec colname="col5" colnum="5" /><colspec colname="col6" colnum="6" /><colspec colname="col7" colnum="7" /><thead> <row><entry namest="col0" nameend="col7" >emspcr::VitalSignsOrganizer</entry>  </row>  <row><entry namest="col0" nameend="col7" >cda::organizer[cda:templateId/@root = 2.16.840.1.1133883.17.3.10.1.28]/</entry>  </row>  <row><entry>Name</entry><entry>XPath</entry><entry>Cardinality</entry><entry>Severity</entry><entry>Nullable</entry><entry>Data Type</entry><entry>Conformance</entry><entry>Value(s)</entry></row></thead><tbody><row><entry>effectiveTime</entry><entry>effectiveTime</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>IVL_TS</entry><entry>CONF:10257</entry><entry> </entry></row> 
-<row><entry>BodyTemperatureComponent</entry><entry>BodyTemperatureComponent</entry><entry>0..1</entry><entry>SHOULD</entry><entry>YES</entry><entry>BodyTemperatureComponent</entry><entry></entry><entry> </entry></row> 
-<row><entry>DiastolicBloodPressureComponent</entry><entry>DiastolicBloodPressureComponent</entry><entry>0..1</entry><entry>SHOULD</entry><entry>YES</entry><entry>DiastolicBloodPressureComponent</entry><entry></entry><entry> </entry></row> 
-<row><entry>HeartRateComponent</entry><entry>HeartRateComponent</entry><entry>0..1</entry><entry>SHOULD</entry><entry>YES</entry><entry>HeartRateComponent</entry><entry></entry><entry> </entry></row> 
-<row><entry>OxygenSaturationComponent</entry><entry>OxygenSaturationComponent</entry><entry>0..1</entry><entry>SHOULD</entry><entry>YES</entry><entry>OxygenSaturationComponent</entry><entry></entry><entry> </entry></row> 
-<row><entry>RespiratoryRateComponent</entry><entry>RespiratoryRateComponent</entry><entry>0..1</entry><entry>SHOULD</entry><entry>YES</entry><entry>RespiratoryRateComponent</entry><entry></entry><entry> </entry></row> 
-<row><entry>SystolicBloodPressureComponent</entry><entry>SystolicBloodPressureComponent</entry><entry>0..1</entry><entry>SHOULD</entry><entry>YES</entry><entry>SystolicBloodPressureComponent</entry><entry></entry><entry> </entry></row> 
-<row><entry>vitalSignsOrganizer</entry><entry>vitalSignsOrganizer</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>VitalSignsOrganizer</entry><entry></entry><entry> </entry></row> 
-</tbody></tgroup></table></p></section>
-<codeblock id="example"><![CDATA[<organizer xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3">
-  <templateId root="2.16.840.1.1133883.17.3.10.1.28"/>
-  <id root="MDHT" extension="75279567"/>
-  <statusCode code="completed"/>
-  <effectiveTime>
-    <low value="2013"/>
-    <high value="2013"/>
-  </effectiveTime>
-  <component>
-    <observation>
-      <id root="MDHT" extension="1080421506"/>
-      <code code="1147054869"/>
-      <text>Text Value</text>
-      <effectiveTime>
-        <low value="2013"/>
-        <high value="2013"/>
-      </effectiveTime>
-      <value xsi:type="PQ"/>
-      <interpretationCode code="2002544014"/>
-      <methodCode code="375682381"/>
-      <targetSiteCode code="1423143704"/>
-    </observation>
-  </component>
-  <component>
-    <observation>
-      <id root="MDHT" extension="617743003"/>
-      <code code="329750698"/>
-      <text>Text Value</text>
-      <effectiveTime>
-        <low value="2013"/>
-        <high value="2013"/>
-      </effectiveTime>
-      <value xsi:type="PQ"/>
-      <interpretationCode code="1837064116"/>
-      <methodCode code="762675842"/>
-      <targetSiteCode code="1270452509"/>
-    </observation>
-  </component>
-  <component>
-    <observation>
-      <id root="MDHT" extension="1076349415"/>
-      <code code="1185791407"/>
-      <text>Text Value</text>
-      <effectiveTime>
-        <low value="2013"/>
-        <high value="2013"/>
-      </effectiveTime>
-      <value xsi:type="PQ"/>
-      <interpretationCode code="645364153"/>
-      <methodCode code="960987388"/>
-      <targetSiteCode code="183250473"/>
-    </observation>
-  </component>
-  <component>
-    <observation>
-      <id root="MDHT" extension="1612391415"/>
-      <code code="1200444535"/>
-      <text>Text Value</text>
-      <effectiveTime>
-        <low value="2013"/>
-        <high value="2013"/>
-      </effectiveTime>
-      <value xsi:type="PQ"/>
-      <interpretationCode code="933445222"/>
-      <methodCode code="2141054469"/>
-      <targetSiteCode code="923510937"/>
-    </observation>
-  </component>
-  <component>
-    <observation>
-      <id root="MDHT" extension="606949473"/>
-      <code code="85551215"/>
-      <text>Text Value</text>
-      <effectiveTime>
-        <low value="2013"/>
-        <high value="2013"/>
-      </effectiveTime>
-      <value xsi:type="PQ"/>
-      <interpretationCode code="705581125"/>
-      <methodCode code="1624617765"/>
-      <targetSiteCode code="229909085"/>
-    </observation>
-  </component>
-  <component>
-    <observation>
-      <code code="727122748"/>
-    </observation>
-  </component>
-</organizer>]]></codeblock>
+<codeblock id="example"><![CDATA[Error: Missing Runtime Class]]></codeblock>
 <section id="changes">
 </section>
 <p><ph id="classformalname">Vital Signs Organizer</ph></p>

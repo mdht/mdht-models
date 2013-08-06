@@ -47,45 +47,7 @@
 <li>Contains exactly one [1..1] <xref href="../ResponseEndingOdometerReading.dita">Response Ending Odometer Reading</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.174</tt>)</li></ol></li></ol>
 </li>
 </ol>
-<section id="tableconformance"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="8" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><colspec colname="col2" colnum="2" /><colspec colname="col3" colnum="3" /><colspec colname="col4" colnum="4" /><colspec colname="col5" colnum="5" /><colspec colname="col6" colnum="6" /><colspec colname="col7" colnum="7" /><thead> <row><entry namest="col0" nameend="col7" >emspcr::ResponseOdometerReadingOrganizer</entry>  </row>  <row><entry namest="col0" nameend="col7" >cda::organizer[cda:templateId/@root = 2.16.840.1.1133883.17.3.10.1.97]/</entry>  </row>  <row><entry>Name</entry><entry>XPath</entry><entry>Cardinality</entry><entry>Severity</entry><entry>Nullable</entry><entry>Data Type</entry><entry>Conformance</entry><entry>Value(s)</entry></row></thead><tbody><row><entry>ResponseBeginningOdometerReadingRelationship</entry><entry>ResponseBeginningOdometerReadingRelationship</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>ResponseBeginningOdometerReadingRelationship</entry><entry>CONF:10626</entry><entry> </entry></row> 
-<row><entry>ResponseDestinationOdometerReadingRelationship</entry><entry>ResponseDestinationOdometerReadingRelationship</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>ResponseDestinationOdometerReadingRelationship</entry><entry>CONF:10628</entry><entry> </entry></row> 
-<row><entry>ResponseEndingOdometerReadingRelationship</entry><entry>ResponseEndingOdometerReadingRelationship</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>ResponseEndingOdometerReadingRelationship</entry><entry>CONF:10629</entry><entry> </entry></row> 
-<row><entry>responseOdometerReadingOrganizer</entry><entry>responseOdometerReadingOrganizer</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>ResponseOdometerReadingOrganizer</entry><entry></entry><entry> </entry></row> 
-<row><entry>ResponseOnSceneOdometerReadingRelationship</entry><entry>ResponseOnSceneOdometerReadingRelationship</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>ResponseOnSceneOdometerReadingRelationship</entry><entry>CONF:10627</entry><entry> </entry></row> 
-</tbody></tgroup></table></p></section>
-<codeblock id="example"><![CDATA[<organizer xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3">
-  <templateId root="2.16.840.1.1133883.17.3.10.1.97"/>
-  <id root="MDHT" extension="271960544"/>
-  <statusCode code="completed"/>
-  <effectiveTime>
-    <low value="2013"/>
-    <high value="2013"/>
-  </effectiveTime>
-  <component>
-    <observation>
-      <code code="1858836045"/>
-      <value xsi:type="PQ"/>
-    </observation>
-  </component>
-  <component>
-    <observation>
-      <code code="43321184"/>
-      <value xsi:type="PQ"/>
-    </observation>
-  </component>
-  <component>
-    <observation>
-      <code code="1964151325"/>
-      <value xsi:type="PQ"/>
-    </observation>
-  </component>
-  <component>
-    <observation>
-      <code code="1275634151"/>
-      <value xsi:type="PQ"/>
-    </observation>
-  </component>
-</organizer>]]></codeblock>
+<codeblock id="example"><![CDATA[Error: Missing Runtime Class]]></codeblock>
 <section id="changes">
 </section>
 <p><ph id="classformalname">Response Odometer Reading Organizer</ph></p>
