@@ -18,9 +18,9 @@
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:10394)<tt><b>/@code</b>="67532-2" </tt><i>Back and spine assessment</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10393)
 </li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>targetSiteCode</b></tt> (CONF:10396), which <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/BackSpineFindingLocation.dita">BackSpineFindingLocation</xref> 2.16.840.1.113883.17.3.11.35</tt><b> STATIC</b> (CONF:10395)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>targetSiteCode</b></tt> (CONF:10396), where the @code <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/BackSpineFindingLocation.dita">BackSpineFindingLocation</xref> 2.16.840.1.113883.17.3.11.35</tt><b> STATIC</b> (CONF:10395)
 <ul><li><p><lines><i>NEMSIS Trace: EExam.13</i></lines></p></li></ul></li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type CD (CONF:10397), which <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/BackSpineAssessmentFinding.dita">BackSpineAssessmentFinding</xref> 2.16.840.1.113883.17.3.11.34</tt><b> STATIC</b> (CONF:10398)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type CD (CONF:10397), where the @code <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/BackSpineAssessmentFinding.dita">BackSpineAssessmentFinding</xref> 2.16.840.1.113883.17.3.11.34</tt><b> STATIC</b> (CONF:10398)
 <ul><li><p><lines><i>NEMSIS Trace: EExam.14</i></lines></p></li></ul></li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>effectiveTime</b></tt>
 <ul><li><p><lines><i>NEMSIS Trace: EExam.03</i></lines></p></li></ul></li>
@@ -34,29 +34,12 @@
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>effectiveTime</b></tt>
 <ul><li><p><lines><i>NEMSIS Trace: EExam.03</i></lines></p></li></ul></li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type CD (CONF:10397), which <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/BackSpineAssessmentFinding.dita">BackSpineAssessmentFinding</xref> 2.16.840.1.113883.17.3.11.34</tt><b> STATIC</b> (CONF:10398)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type CD (CONF:10397), where the @code <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/BackSpineAssessmentFinding.dita">BackSpineAssessmentFinding</xref> 2.16.840.1.113883.17.3.11.34</tt><b> STATIC</b> (CONF:10398)
 <ul><li><p><lines><i>NEMSIS Trace: EExam.14</i></lines></p></li></ul></li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>targetSiteCode</b></tt> (CONF:10396), which <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/BackSpineFindingLocation.dita">BackSpineFindingLocation</xref> 2.16.840.1.113883.17.3.11.35</tt><b> STATIC</b> (CONF:10395)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>targetSiteCode</b></tt> (CONF:10396), where the @code <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/BackSpineFindingLocation.dita">BackSpineFindingLocation</xref> 2.16.840.1.113883.17.3.11.35</tt><b> STATIC</b> (CONF:10395)
 <ul><li><p><lines><i>NEMSIS Trace: EExam.13</i></lines></p></li></ul></li>
 </ol>
-<section id="tableconformance"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="8" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><colspec colname="col2" colnum="2" /><colspec colname="col3" colnum="3" /><colspec colname="col4" colnum="4" /><colspec colname="col5" colnum="5" /><colspec colname="col6" colnum="6" /><colspec colname="col7" colnum="7" /><thead> <row><entry namest="col0" nameend="col7" >emspcr::BackAndSpineAssessment</entry>  </row>  <row><entry namest="col0" nameend="col7" >cda::observation[cda:templateId/@root = 2.16.840.1.1133883.17.3.10.1.119]/</entry>  </row>  <row><entry>Name</entry><entry>XPath</entry><entry>Cardinality</entry><entry>Severity</entry><entry>Nullable</entry><entry>Data Type</entry><entry>Conformance</entry><entry>Value(s)</entry></row></thead><tbody><row><entry>moodCode</entry><entry>@moodCode</entry><entry>1..1</entry><entry>SHALL</entry><entry>NO</entry><entry>x_ActMoodDocumentObservation</entry><entry></entry><entry> DEF</entry></row> 
-<row><entry>code</entry><entry>code</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>CD</entry><entry>CONF:10393</entry><entry>LOINC 2.16.840.1.113883.6.1 67532-2</entry></row> 
-<row><entry>effectiveTime</entry><entry>effectiveTime</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>IVL_TS</entry><entry></entry><entry> </entry></row> 
-<row><entry>targetSiteCode</entry><entry>targetSiteCode</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>CD</entry><entry>CONF:10395</entry><entry> null</entry></row> 
-<row><entry>value</entry><entry>value</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>CD</entry><entry>CONF:10397</entry><entry> </entry></row> 
-<row><entry>observation</entry><entry>observation</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>BackAndSpineAssessment</entry><entry></entry><entry> </entry></row> 
-</tbody></tgroup></table></p></section>
-<codeblock id="example"><![CDATA[<observation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" moodCode="EVN">
-  <templateId root="2.16.840.1.1133883.17.3.10.1.119"/>
-  <id root="MDHT" extension="1385163896"/>
-  <code code="67532-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Back and spine assessment"/>
-  <effectiveTime>
-    <low value="2013"/>
-    <high value="2013"/>
-  </effectiveTime>
-  <value xsi:type="CD" code="325664072"/>
-  <targetSiteCode codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
-</observation>]]></codeblock>
+<codeblock id="example"><![CDATA[Error: Missing Runtime Class]]></codeblock>
 <section id="changes">
 </section>
 <p><ph id="classformalname">Back And Spine Assessment</ph></p>
