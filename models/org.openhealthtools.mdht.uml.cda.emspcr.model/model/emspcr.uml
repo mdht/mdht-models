@@ -744,6 +744,11 @@ DPersonnel.03 Middle: @ENXP=&quot;GIV&quot;</body>
           <ownedAttribute xmi:id="_4qT7UHuHEeGs2I-Db78R9w" name="destinationOrganization" type="_r108MHuHEeGs2I-Db78R9w" association="_4qUiYHuHEeGs2I-Db78R9w">
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4qT7UXuHEeGs2I-Db78R9w"/>
           </ownedAttribute>
+          <ownedAttribute xmi:id="_79oXcP5cEeKTSf39dn5WeA" name="classCode" visibility="private">
+            <type xmi:type="uml:Enumeration" href="../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__zE3C0DcEd6xYZuu1VKCVw"/>
+            <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_AkaAcEofEd6c3qsAxlFHaQ"/>
+            <defaultValue xmi:type="uml:LiteralString" xmi:id="_HcXEkP5dEeKTSf39dn5WeA" value="SDLOC"/>
+          </ownedAttribute>
           <nestedClassifier xmi:type="uml:Class" xmi:id="_r108MHuHEeGs2I-Db78R9w" name="DestinationOrganization">
             <generalization xmi:id="_uuGw4HuHEeGs2I-Db78R9w">
               <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_zjKW8EcZEd6besF9iFIJkQ"/>
@@ -870,36 +875,36 @@ DPersonnel.03 Middle: @ENXP=&quot;GIV&quot;</body>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_IncIWdICEeKRzPZKi7WbBQ" value="1"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_IniO8dICEeKRzPZKi7WbBQ" name="traumaCenterCriteria" type="_lTHsIIcXEeGqF6qfYwLiQw" aggregation="composite" association="_IniO8NICEeKRzPZKi7WbBQ">
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_IniO89ICEeKRzPZKi7WbBQ" value="1"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_IniO8tICEeKRzPZKi7WbBQ" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_PaEXcP5cEeKTSf39dn5WeA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_PaEXcf5cEeKTSf39dn5WeA"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_InoVkdICEeKRzPZKi7WbBQ" name="injuryRiskFactor" type="_vuraIIcZEeGqF6qfYwLiQw" aggregation="composite" association="_InoVkNICEeKRzPZKi7WbBQ">
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_InoVk9ICEeKRzPZKi7WbBQ" value="1"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_InoVktICEeKRzPZKi7WbBQ" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_SByAkP5cEeKTSf39dn5WeA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_SByAkf5cEeKTSf39dn5WeA"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_InoVmNICEeKRzPZKi7WbBQ" name="vehicleImpactArea" type="_nvhVwIcaEeGqF6qfYwLiQw" aggregation="composite" association="_InoVl9ICEeKRzPZKi7WbBQ">
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_InoVmtICEeKRzPZKi7WbBQ" value="1"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_InoVmdICEeKRzPZKi7WbBQ" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Uq1GcP5cEeKTSf39dn5WeA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Uq1tgP5cEeKTSf39dn5WeA"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_InucMdICEeKRzPZKi7WbBQ" name="patientLocationInVehicle" type="_zMwjMIccEeGqF6qfYwLiQw" aggregation="composite" association="_InucMNICEeKRzPZKi7WbBQ">
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_InucM9ICEeKRzPZKi7WbBQ" value="1"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_InucMtICEeKRzPZKi7WbBQ" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_WF4vMv5cEeKTSf39dn5WeA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_WF5WQP5cEeKTSf39dn5WeA"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_In0i0dICEeKRzPZKi7WbBQ" name="vehicleOccupantSafetyEquipment" type="_bsVJUIcdEeGqF6qfYwLiQw" aggregation="composite" association="_In0i0NICEeKRzPZKi7WbBQ">
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_In0i09ICEeKRzPZKi7WbBQ" value="1"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_In0i0tICEeKRzPZKi7WbBQ" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_YW69sP5cEeKTSf39dn5WeA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_YW69sf5cEeKTSf39dn5WeA"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_In0i2NICEeKRzPZKi7WbBQ" name="airbagDeploymentStatus" type="_2lRhsIcdEeGqF6qfYwLiQw" aggregation="composite" association="_In0i19ICEeKRzPZKi7WbBQ">
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_In0i2tICEeKRzPZKi7WbBQ" value="1"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_In0i2dICEeKRzPZKi7WbBQ" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ZF2gQP5cEeKTSf39dn5WeA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ZF3HUP5cEeKTSf39dn5WeA"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_In6pcdICEeKRzPZKi7WbBQ" name="heightOfFall" type="_auKbcIceEeGqF6qfYwLiQw" aggregation="composite" association="_In6pcNICEeKRzPZKi7WbBQ">
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_In6pc9ICEeKRzPZKi7WbBQ" value="1"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_In6pctICEeKRzPZKi7WbBQ" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Z_Ue4P5cEeKTSf39dn5WeA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Z_VF8P5cEeKTSf39dn5WeA"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_IoAwEdICEeKRzPZKi7WbBQ" name="disasterType" type="_wKL4IIceEeGqF6qfYwLiQw" aggregation="composite" association="_IoAwENICEeKRzPZKi7WbBQ">
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_IoAwE9ICEeKRzPZKi7WbBQ" value="1"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_IoAwEtICEeKRzPZKi7WbBQ" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_cA4G8P5cEeKTSf39dn5WeA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_cA4G8f5cEeKTSf39dn5WeA"/>
       </ownedAttribute>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_HVE8EHuHEeGs2I-Db78R9w" memberEnd="_HVEVAHuHEeGs2I-Db78R9w _HVFjIHuHEeGs2I-Db78R9w">
@@ -1176,16 +1181,12 @@ DPersonnel.03 Middle: @ENXP=&quot;GIV&quot;</body>
         <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_vJtnoEAMEd6wZe6nFLrjsw"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_Ij6TMdICEeKRzPZKi7WbBQ" name="vitalSignsOrganizer" type="_JnfD8IzoEeGnhceUMXltng" aggregation="composite" association="_Ij6TMNICEeKRzPZKi7WbBQ">
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Ij6TM9ICEeKRzPZKi7WbBQ" value="1"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Ij6TMtICEeKRzPZKi7WbBQ" value="1"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:id="_IkAZ1NICEeKRzPZKi7WbBQ" name="priorAidVitals" type="_Dq57UIzpEeGnhceUMXltng" aggregation="composite" association="_IkAZ09ICEeKRzPZKi7WbBQ">
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_IkAZ1tICEeKRzPZKi7WbBQ" value="1"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_IkAZ1dICEeKRzPZKi7WbBQ" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_seVNUP5bEeKTSf39dn5WeA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_seVNUf5bEeKTSf39dn5WeA" value="1"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_IkAZ29ICEeKRzPZKi7WbBQ" name="additionalVitalSignsOrganizer" type="_F-GKoLMNEeKNbt70lHd2Eg" aggregation="composite" association="_IkAZ2tICEeKRzPZKi7WbBQ">
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_IkAZ3dICEeKRzPZKi7WbBQ" value="1"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_IkAZ3NICEeKRzPZKi7WbBQ" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_tadeYP5bEeKTSf39dn5WeA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_tadeYf5bEeKTSf39dn5WeA"/>
       </ownedAttribute>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_kADuoYzyEeGnhceUMXltng" memberEnd="_kACggIzyEeGnhceUMXltng _kAEVsIzyEeGnhceUMXltng">
@@ -1596,11 +1597,6 @@ DPersonnel.03 Middle: @ENXP=&quot;GIV&quot;</body>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ziiHcJ-dEeGorI3CPDW2ww" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ziiHcZ-dEeGorI3CPDW2ww" value="1"/>
       </ownedAttribute>
-      <ownedAttribute xmi:id="_6EfhgMcOEeGjDJAyT0XW9Q" name="entry4" visibility="private" type="_EagUtZ-fEeGorI3CPDW2ww" aggregation="composite" association="_6EhWsMcOEeGjDJAyT0XW9Q">
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="__Qvj8McOEeGjDJAyT0XW9Q" value="1"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="__Qvj8ccOEeGjDJAyT0XW9Q" value="1"/>
-        <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_SvZ88DxYEd6JwqSGecoePg"/>
-      </ownedAttribute>
       <ownedAttribute xmi:id="_ImY_cdICEeKRzPZKi7WbBQ" name="numberOfPatientsObservation" type="_Dfaa4J-eEeGorI3CPDW2ww" aggregation="composite" association="_ImY_cNICEeKRzPZKi7WbBQ">
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ImY_c9ICEeKRzPZKi7WbBQ" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ImY_ctICEeKRzPZKi7WbBQ" value="1"/>
@@ -1749,8 +1745,8 @@ DPersonnel.03 Middle: @ENXP=&quot;GIV&quot;</body>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_s2ehEaK8EeGOxth0BgV-QA" value="1"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_IoM9UdICEeKRzPZKi7WbBQ" name="complaint" type="_KEZzkKg-EeG79fAvHk6H4g" aggregation="composite" association="_IoM9UNICEeKRzPZKi7WbBQ">
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_IoM9U9ICEeKRzPZKi7WbBQ" value="1"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_IoM9UtICEeKRzPZKi7WbBQ" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_monXIP5bEeKTSf39dn5WeA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_monXIf5bEeKTSf39dn5WeA" value="1"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_IoTD8dICEeKRzPZKi7WbBQ" name="possibleInjury" type="_7nP0MKhCEeG79fAvHk6H4g" aggregation="composite" association="_IoTD8NICEeKRzPZKi7WbBQ">
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_IoTD89ICEeKRzPZKi7WbBQ" value="1"/>
@@ -1865,9 +1861,6 @@ DPersonnel.03 Middle: @ENXP=&quot;GIV&quot;</body>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_Dfw0AMcNEeGjDJAyT0XW9Q" memberEnd="_Dfu-0McNEeGjDJAyT0XW9Q _DfxbEMcNEeGjDJAyT0XW9Q">
       <ownedEnd xmi:id="_DfxbEMcNEeGjDJAyT0XW9Q" type="_eDSjMIcpEeGqF6qfYwLiQw" association="_Dfw0AMcNEeGjDJAyT0XW9Q"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_6EhWsMcOEeGjDJAyT0XW9Q" memberEnd="_6EfhgMcOEeGjDJAyT0XW9Q _6EhWsccOEeGjDJAyT0XW9Q">
-      <ownedEnd xmi:id="_6EhWsccOEeGjDJAyT0XW9Q" type="_i-lM8J-dEeGorI3CPDW2ww" association="_6EhWsMcOEeGjDJAyT0XW9Q"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_x30wIMcQEeGjDJAyT0XW9Q" memberEnd="_x3y68McQEeGjDJAyT0XW9Q _x31XMMcQEeGjDJAyT0XW9Q">
       <ownedEnd xmi:id="_x31XMMcQEeGjDJAyT0XW9Q" type="_HLO9kIzgEeGnhceUMXltng" association="_x30wIMcQEeGjDJAyT0XW9Q"/>
@@ -2405,12 +2398,6 @@ DPersonnel.03 Middle: @ENXP=&quot;GIV&quot;</body>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_IkAZ0dICEeKRzPZKi7WbBQ" value="1"/>
       </ownedEnd>
     </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_IkAZ09ICEeKRzPZKi7WbBQ" memberEnd="_IkAZ1NICEeKRzPZKi7WbBQ _IkAZ19ICEeKRzPZKi7WbBQ">
-      <ownedEnd xmi:id="_IkAZ19ICEeKRzPZKi7WbBQ" type="_jCzkkIzkEeGnhceUMXltng" aggregation="composite" association="_IkAZ09ICEeKRzPZKi7WbBQ">
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_IkAZ2dICEeKRzPZKi7WbBQ" value="1"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_IkAZ2NICEeKRzPZKi7WbBQ" value="1"/>
-      </ownedEnd>
-    </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_IkAZ2tICEeKRzPZKi7WbBQ" memberEnd="_IkAZ29ICEeKRzPZKi7WbBQ _IkAZ3tICEeKRzPZKi7WbBQ">
       <ownedEnd xmi:id="_IkAZ3tICEeKRzPZKi7WbBQ" type="_jCzkkIzkEeGnhceUMXltng" aggregation="composite" association="_IkAZ2tICEeKRzPZKi7WbBQ">
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_IkAZ4NICEeKRzPZKi7WbBQ" value="1"/>
@@ -2454,6 +2441,10 @@ DPersonnel.03 Middle: @ENXP=&quot;GIV&quot;</body>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_o0JHALMOEeKNbt70lHd2Eg" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_o0JHAbMOEeKNbt70lHd2Eg"/>
         <subsettedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_WtEdwUcLEd6besF9iFIJkQ"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_6vOgEP5bEeKTSf39dn5WeA" name="priorAidVitals" type="_Dq57UIzpEeGnhceUMXltng" association="_6vQ8UP5bEeKTSf39dn5WeA">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_86Mi0P5bEeKTSf39dn5WeA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_86NJ4P5bEeKTSf39dn5WeA"/>
       </ownedAttribute>
       <nestedClassifier xmi:type="uml:Class" xmi:id="_AptIMETVEeKEm6ZghGGtvw" name="SystolicBloodPressureComponent">
         <generalization xmi:id="_BT7J4ETVEeKEm6ZghGGtvw">
@@ -2551,13 +2542,13 @@ DPersonnel.03 Middle: @ENXP=&quot;GIV&quot;</body>
         <defaultValue xmi:type="uml:LiteralString" xmi:id="_R01AsLMQEeKNbt70lHd2Eg" value="EVN"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_VJedwLMPEeKNbt70lHd2Eg" name="StrokeScoreComponent" visibility="private" type="_9koR4IzuEeGnhceUMXltng" aggregation="composite" association="_VJiIILMPEeKNbt70lHd2Eg">
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4iwYMNILEeKJfJPtALxQTw" value="1"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4iwYMdILEeKJfJPtALxQTw" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_EVqO0P5cEeKTSf39dn5WeA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_EVq14P5cEeKTSf39dn5WeA"/>
         <subsettedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_WtEdwUcLEd6besF9iFIJkQ"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_eR8eILMPEeKNbt70lHd2Eg" name="PainScoreComponent" visibility="private" type="_lnVLQIzuEeGnhceUMXltng" aggregation="composite" association="_eSAIgLMPEeKNbt70lHd2Eg">
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_5RxaUNILEeKJfJPtALxQTw" value="1"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_5RxaUdILEeKJfJPtALxQTw" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_G9z80P5cEeKTSf39dn5WeA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_G9z80f5cEeKTSf39dn5WeA"/>
         <subsettedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_WtEdwUcLEd6besF9iFIJkQ"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_m68UQLMPEeKNbt70lHd2Eg" name="LevelOfResponsivenessComponent" visibility="private" type="_xgaHgIztEeGnhceUMXltng" aggregation="composite" association="_m6_-oLMPEeKNbt70lHd2Eg">
@@ -5197,16 +5188,19 @@ Required conditionally if procedure code is intravenous catheterization (E303)</
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_WXwZ4Z0tEeGmCMENP40rhA" value="1"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_46FlgJ0tEeGmCMENP40rhA" name="ProcedureNumberOfAttemptsRelationship" type="_exbakJ0tEeGmCMENP40rhA" association="_46Flgp0tEeGmCMENP40rhA">
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_6BpDcJ0tEeGmCMENP40rhA" value="1"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_6BpDcZ0tEeGmCMENP40rhA" value="1"/>
+        <ownedComment xmi:id="_xM0noP5ZEeKTSf39dn5WeA">
+          <body>Important for airway insertion</body>
+        </ownedComment>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_sCAIkP5ZEeKTSf39dn5WeA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_sCAvoP5ZEeKTSf39dn5WeA"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_V2wwMJ0uEeGmCMENP40rhA" name="ProcedureSuccessfulRelationship" type="_A3CN8J0uEeGmCMENP40rhA" association="_V256IJ0uEeGmCMENP40rhA">
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_YhQnkJ0uEeGmCMENP40rhA" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_YhQnkZ0uEeGmCMENP40rhA" value="1"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_IFMoUJ0vEeGmCMENP40rhA" name="ProcedureComplicationsRelationship" type="_iYzUcJ0uEeGmCMENP40rhA" association="_IFMoUp0vEeGmCMENP40rhA">
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_JkROYJ0vEeGmCMENP40rhA" value="1"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_JkROYZ0vEeGmCMENP40rhA" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_1E0-gP5aEeKTSf39dn5WeA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_1E0-gf5aEeKTSf39dn5WeA"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_-YQMcJ0vEeGmCMENP40rhA" name="ProcedurePatientResponseRelationship" type="_XBN7sJ0vEeGmCMENP40rhA" association="_-YQMcp0vEeGmCMENP40rhA">
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Ay-icJ0wEeGmCMENP40rhA" value="1"/>
@@ -7290,6 +7284,9 @@ UCUM units SHOULD be &quot;[mi_i]&quot;</body>
     <packagedElement xmi:type="uml:Association" xmi:id="_HOIx8NOVEeKU4pFWxuU9dw" memberEnd="_HOHj0NOVEeKU4pFWxuU9dw _HOIx8dOVEeKU4pFWxuU9dw">
       <ownedEnd xmi:id="_HOIx8dOVEeKU4pFWxuU9dw" type="_xs1LQWeQEeGtXKebdWh3hg" association="_HOIx8NOVEeKU4pFWxuU9dw"/>
     </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_6vQ8UP5bEeKTSf39dn5WeA" memberEnd="_6vOgEP5bEeKTSf39dn5WeA _6vRjYP5bEeKTSf39dn5WeA">
+      <ownedEnd xmi:id="_6vRjYP5bEeKTSf39dn5WeA" type="_JnfD8IzoEeGnhceUMXltng" association="_6vQ8UP5bEeKTSf39dn5WeA"/>
+    </packagedElement>
     <profileApplication xmi:id="_xpUkQWeQEeGtXKebdWh3hg">
       <eAnnotations xmi:id="_xpUkQmeQEeGtXKebdWh3hg" source="http://www.eclipse.org/uml2/2.0.0/UML">
         <references xmi:type="ecore:EPackage" href="pathmap://UML_PROFILES/Standard.profile.uml#_yzU58YinEdqtvbnfB2L_5w"/>
@@ -7630,7 +7627,7 @@ UCUM units SHOULD be &quot;[mi_i]&quot;</body>
   <CDA:AssociationValidation xmi:id="_ywbfoJ0tEeGmCMENP40rhA" base_Association="_wvvaQp0tEeGmCMENP40rhA">
     <ruleId>CONF:10519</ruleId>
   </CDA:AssociationValidation>
-  <CDA:AssociationValidation xmi:id="_6dnNwJ0tEeGmCMENP40rhA" base_Association="_46Flgp0tEeGmCMENP40rhA">
+  <CDA:AssociationValidation xmi:id="_6dnNwJ0tEeGmCMENP40rhA" severity="INFO" base_Association="_46Flgp0tEeGmCMENP40rhA">
     <ruleId>CONF:10504</ruleId>
   </CDA:AssociationValidation>
   <CDA:AssociationValidation xmi:id="_TrgZkJ0uEeGmCMENP40rhA" base_Association="_RhcVwp0uEeGmCMENP40rhA">
@@ -8305,6 +8302,7 @@ UCUM units SHOULD be &quot;[mi_i]&quot;</body>
     <ruleId>CONF:10675</ruleId>
   </CDA:PropertyValidation>
   <CDA:ValueSetConstraint xmi:id="_nv_bk5-fEeGorI3CPDW2ww" base_Property="_nv-0hp-fEeGorI3CPDW2ww">
+    <reference href="emspcr-vocab.uml#_NwXfsHSQEeGa4IXs2ghZEw"/>
     <ruleId>CONF:10676</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:CodeSystemConstraint xmi:id="_Eahi0J-fEeGorI3CPDW2ww" code="67549-6" displayName="EMS transport method" base_Property="_EagUuJ-fEeGorI3CPDW2ww">
@@ -9038,9 +9036,6 @@ UCUM units SHOULD be &quot;[mi_i]&quot;</body>
   </CDA:AssociationValidation>
   <CDA:AssociationValidation xmi:id="_QQ9OkMcNEeGjDJAyT0XW9Q" base_Association="_Dfw0AMcNEeGjDJAyT0XW9Q">
     <ruleId>CONF:10237</ruleId>
-  </CDA:AssociationValidation>
-  <CDA:AssociationValidation xmi:id="__j5JcMcOEeGjDJAyT0XW9Q" severity="INFO" base_Association="_6EhWsMcOEeGjDJAyT0XW9Q">
-    <ruleId>CONF:10662</ruleId>
   </CDA:AssociationValidation>
   <CDA:AssociationValidation xmi:id="_oGU2UMcPEeGjDJAyT0XW9Q">
     <ruleId>CONF:10105</ruleId>
@@ -9966,8 +9961,6 @@ UCUM units SHOULD be &quot;[mi_i]&quot;</body>
   <CDA:AssociationValidation xmi:id="_IqZVs9ICEeKRzPZKi7WbBQ" base_Association="_Ij6TMNICEeKRzPZKi7WbBQ"/>
   <CDA:Entry xmi:id="_IqZVtNICEeKRzPZKi7WbBQ" base_Association="_Ij6TMNICEeKRzPZKi7WbBQ" typeCode="DRIV"/>
   <CDA:CDATemplate xmi:id="_IqZVtdICEeKRzPZKi7WbBQ" base_Class="_JnfD8IzoEeGnhceUMXltng" templateId="2.16.840.1.1133883.17.3.10.1.28" assigningAuthorityName="NEMSIS"/>
-  <CDA:AssociationValidation xmi:id="_IqZVttICEeKRzPZKi7WbBQ" base_Association="_IkAZ09ICEeKRzPZKi7WbBQ"/>
-  <CDA:Entry xmi:id="_IqZVt9ICEeKRzPZKi7WbBQ" base_Association="_IkAZ09ICEeKRzPZKi7WbBQ" typeCode="DRIV"/>
   <CDA:CDATemplate xmi:id="_IqZVuNICEeKRzPZKi7WbBQ" base_Class="_Dq57UIzpEeGnhceUMXltng" templateId="2.16.840.1.1133883.17.3.10.1.29" assigningAuthorityName="NEMSIS"/>
   <CDA:AssociationValidation xmi:id="_IqZVudICEeKRzPZKi7WbBQ" base_Association="_IkAZ2tICEeKRzPZKi7WbBQ"/>
   <CDA:Entry xmi:id="_IqZVutICEeKRzPZKi7WbBQ" base_Association="_IkAZ2tICEeKRzPZKi7WbBQ" typeCode="DRIV"/>
@@ -10629,4 +10622,5 @@ UCUM units SHOULD be &quot;[mi_i]&quot;</body>
   <CDA:ValueSetConstraint xmi:id="_6IOWIPfnEeK_n7ZHGRzt1Q" base_Property="_ppT5kHtAEeGs2I-Db78R9w">
     <reference href="emspcr-vocab.uml#_mK-6oPsTEeKCRNC-sxBJsQ"/>
   </CDA:ValueSetConstraint>
+  <CDA:ValueSetConstraint xmi:id="_AUr3QP5dEeKTSf39dn5WeA" base_Property="_79oXcP5cEeKTSf39dn5WeA"/>
 </xmi:XMI>
