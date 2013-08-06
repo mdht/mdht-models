@@ -713,7 +713,7 @@ Any deviation from normal function displayed by the patient and recorded in the 
   </CDA:PropertyValidation>
   <CDA:ValueSetConstraint xmi:id="_U4xacBq3EeGo461UQq-B1g" base_Property="_2MmWNRUSEeG6PvUxSTZnaw" severity="WARNING">
     <reference href="../consol-vocab.uml#_2SVSkRSVEeGGzu7fmW9pXw"/>
-    <ruleId>CONF:CONF:15985</ruleId>
+    <ruleId>CONF:15985</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:ValueSetConstraint xmi:id="_hBSO8Bq4EeGo461UQq-B1g" base_Property="_2G8h-hSVEeGGzu7fmW9pXw" severity="WARNING">
     <reference href="../consol-vocab.uml#_DhjiABueEeGnMahsPjlwOw"/>
@@ -1714,8 +1714,8 @@ An appropriate nullFlavor can be used when the organizer/code or organizer/id is
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_4AP2MebpEeGINOJ_SD9_dA">
         <language>Analysis</language>
         <language>OCL</language>
-        <body>The text, if present, SHOULD contain zero or more [0..*] reference</body>
-        <body>not self.text.oclIsUndefined() implies not self.text.reference.oclIsUndefined()</body>
+        <body>The text, if present, SHOULD contain zero or one [0..1] reference</body>
+        <body>not self.text.oclIsUndefined() implies self.text->forAll(reference->size() = 1)</body>
         <body>The problem name SHALL be recorded in the entry by recording a &amp;lt;reference> where the value attribute points to the narrative text containing the name of the problem.</body>
         <body>not self.text.reference.oclIsUndefined()</body>
       </specification>

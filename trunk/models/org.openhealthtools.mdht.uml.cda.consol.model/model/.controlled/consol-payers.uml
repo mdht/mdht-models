@@ -164,8 +164,8 @@ with respect to the payer, so that the identifiers can be recorded.&#xD;
         </ownedAttribute>
         <ownedAttribute xmi:id="_HqHhAF0UEeGt2doqSDULjA" name="code">
           <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_t6eT0OWbEeGKmvzED_He2w" value="1"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_t6hXIOWbEeGKmvzED_He2w" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_z53aIPuPEeKOSuDaDSRIMA" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_z53aIfuPEeKOSuDaDSRIMA"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_s4EMEF0ZEeGt2doqSDULjA" name="addr">
           <type xmi:type="uml:Class" href="consol-documents.uml#_i4zXgPIPEeGu1M-cCXg0Dg"/>
@@ -604,7 +604,7 @@ self.supply->forAll((moodCode = vocab::x_DocumentSubstanceMood::PRMS and perform
   </CDA:CodeSystemConstraint>
   <CDA:ValueSetConstraint xmi:id="_NF9QgFzFEeGt2doqSDULjA" base_Property="_UdHpMBUlEeGvPruliC3crg" severity="WARNING">
     <reference href="../consol-vocab.uml#_F4z3QDrtEeG-aJb2h_4S8w"/>
-    <ruleId>CONF:15993</ruleId>
+    <ruleId>CONF:19185</ruleId>
   </CDA:ValueSetConstraint>
   <uml:Association xmi:id="_sLvNAlzWEeGt2doqSDULjA" memberEnd="_sLvNAFzWEeGt2doqSDULjA _sLvNA1zWEeGt2doqSDULjA">
     <ownedEnd xmi:id="_sLvNA1zWEeGt2doqSDULjA" type="_PZBdMBUlEeGvPruliC3crg" association="_sLvNAlzWEeGt2doqSDULjA"/>
@@ -621,7 +621,7 @@ self.supply->forAll((moodCode = vocab::x_DocumentSubstanceMood::PRMS and perform
   <CDA:PropertyValidation xmi:id="__Hv3UF0TEeGt2doqSDULjA" base_Property="_3KQcUF0TEeGt2doqSDULjA">
     <ruleId>CONF:8909</ruleId>
   </CDA:PropertyValidation>
-  <CDA:ValueSetConstraint xmi:id="_ZEdQ8F0UEeGt2doqSDULjA" base_Property="_HqHhAF0UEeGt2doqSDULjA">
+  <CDA:ValueSetConstraint xmi:id="_ZEdQ8F0UEeGt2doqSDULjA" base_Property="_HqHhAF0UEeGt2doqSDULjA" severity="WARNING">
     <reference href="../consol-vocab.uml#_tP6g0V0YEeGt2doqSDULjA"/>
     <ruleId>CONF:15992</ruleId>
   </CDA:ValueSetConstraint>
@@ -697,10 +697,9 @@ self.supply->forAll((moodCode = vocab::x_DocumentSubstanceMood::PRMS and perform
   <CDA:PropertyValidation xmi:id="_pMTFIF-vEeGt2doqSDULjA" base_Property="_k5hBUF-vEeGt2doqSDULjA">
     <ruleId>CONF:8922</ruleId>
   </CDA:PropertyValidation>
-  <CDA:ValueSetConstraint xmi:id="_JH8n8F_oEeGt2doqSDULjA" base_Property="_nb9TcF-wEeGt2doqSDULjA">
+  <CDA:ValueSetConstraint xmi:id="_JH8n8F_oEeGt2doqSDULjA" base_Property="_nb9TcF-wEeGt2doqSDULjA" severity="WARNING">
     <reference href="../consol-vocab.uml#_pWlaAF_lEeGt2doqSDULjA"/>
     <ruleId>CONF:16078</ruleId>
-    <ruleId>CONF:8924</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:PropertyValidation xmi:id="_rcA4oF_pEeGt2doqSDULjA" severity="WARNING" base_Property="_YqD1gF_pEeGt2doqSDULjA">
     <ruleId>CONF:8956</ruleId>
@@ -769,7 +768,7 @@ self.supply->forAll((moodCode = vocab::x_DocumentSubstanceMood::PRMS and perform
   <CDA:PropertyValidation xmi:id="_LhM9kOWbEeGKmvzED_He2w" base_Property="_JGNh0OWbEeGKmvzED_He2w">
     <ruleId>CONF:8907</ruleId>
   </CDA:PropertyValidation>
-  <CDA:PropertyValidation xmi:id="_xOUDIOWbEeGKmvzED_He2w" base_Property="_HqHhAF0UEeGt2doqSDULjA">
+  <CDA:PropertyValidation xmi:id="_xOUDIOWbEeGKmvzED_He2w" severity="WARNING" base_Property="_HqHhAF0UEeGt2doqSDULjA">
     <ruleId>CONF:8914</ruleId>
   </CDA:PropertyValidation>
   <CDA:CDATemplate xmi:id="_cAuZIOWdEeGKmvzED_He2w" base_Class="_GX8lgF13EeGt2doqSDULjA" templateId="2.16.840.1.113883.10.20.22.4.88">

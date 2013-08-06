@@ -32,7 +32,7 @@ public interface FunctionalStatusProblemObservation extends ProblemObservation {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='not self.text.oclIsUndefined() implies not self.text.reference.oclIsUndefined()'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='not self.text.oclIsUndefined() implies self.text->forAll(reference->size() = 1)'"
 	 * @generated
 	 */
 	boolean validateFunctionalStatusProblemObservationHasTextReference(DiagnosticChain diagnostics,
