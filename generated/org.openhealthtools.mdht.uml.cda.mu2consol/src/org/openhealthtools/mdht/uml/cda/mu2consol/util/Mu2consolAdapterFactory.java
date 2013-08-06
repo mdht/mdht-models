@@ -218,6 +218,10 @@ public class Mu2consolAdapterFactory extends AdapterFactoryImpl {
 				return createTobaccoUseAdapter();
 			}
 			@Override
+			public Adapter caseConsol_SmokingStatusObservation(org.openhealthtools.mdht.uml.cda.consol.SmokingStatusObservation object) {
+				return createConsol_SmokingStatusObservationAdapter();
+			}
+			@Override
 			public Adapter caseResultsSectionEntriesOptional(ResultsSectionEntriesOptional object) {
 				return createResultsSectionEntriesOptionalAdapter();
 			}
@@ -922,6 +926,20 @@ public class Mu2consolAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createTobaccoUseAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.consol.SmokingStatusObservation <em>Smoking Status Observation</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.openhealthtools.mdht.uml.cda.consol.SmokingStatusObservation
+	 * @generated
+	 */
+	public Adapter createConsol_SmokingStatusObservationAdapter() {
 		return null;
 	}
 

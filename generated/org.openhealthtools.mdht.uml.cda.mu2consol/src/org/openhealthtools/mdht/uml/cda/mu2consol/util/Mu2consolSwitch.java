@@ -148,6 +148,7 @@ public class Mu2consolSwitch<T> {
 			case Mu2consolPackage.SMOKING_STATUS_OBSERVATION: {
 				SmokingStatusObservation smokingStatusObservation = (SmokingStatusObservation)theEObject;
 				T result = caseSmokingStatusObservation(smokingStatusObservation);
+				if (result == null) result = caseConsol_SmokingStatusObservation(smokingStatusObservation);
 				if (result == null) result = caseTobaccoUse(smokingStatusObservation);
 				if (result == null) result = caseObservation(smokingStatusObservation);
 				if (result == null) result = caseClinicalStatement(smokingStatusObservation);
@@ -1010,6 +1011,21 @@ public class Mu2consolSwitch<T> {
 	 * @generated
 	 */
 	public T caseTobaccoUse(TobaccoUse object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Smoking Status Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Smoking Status Observation</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseConsol_SmokingStatusObservation(org.openhealthtools.mdht.uml.cda.consol.SmokingStatusObservation object) {
 		return null;
 	}
 

@@ -112,6 +112,15 @@ public class ClinicalOfficeVisitSummaryImpl extends
 	}
 
 	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateClinicalOfficeVisitSummaryMedicationsAdministeredSectionOrMedicationsSectionER(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ClinicalOfficeVisitSummaryOperations.validateClinicalOfficeVisitSummaryMedicationsAdministeredSectionOrMedicationsSectionER(this, diagnostics, context);
+	}
+
+	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
@@ -127,15 +136,6 @@ public class ClinicalOfficeVisitSummaryImpl extends
 	public boolean validateClinicalOfficeVisitSummaryProblemSection(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ClinicalOfficeVisitSummaryOperations.validateClinicalOfficeVisitSummaryProblemSection(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateClinicalOfficeVisitSummaryMedicationsSection(
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ClinicalOfficeVisitSummaryOperations.validateClinicalOfficeVisitSummaryMedicationsSection(this, diagnostics, context);
 	}
 
 	/**
@@ -172,15 +172,6 @@ public class ClinicalOfficeVisitSummaryImpl extends
 	public boolean validateClinicalOfficeVisitSummaryImmunizationsSection(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ClinicalOfficeVisitSummaryOperations.validateClinicalOfficeVisitSummaryImmunizationsSection(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateClinicalOfficeVisitSummaryMedicationsAdministeredSection(
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ClinicalOfficeVisitSummaryOperations.validateClinicalOfficeVisitSummaryMedicationsAdministeredSection(this, diagnostics, context);
 	}
 
 	/**
