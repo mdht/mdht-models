@@ -54,45 +54,45 @@ import org.openhealthtools.mdht.uml.cda.operations.SectionOperations;
  */
 public class BillingSectionOperations extends SectionOperations {
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	protected BillingSectionOperations() {
 		super();
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateBillingSectionTemplateId(BillingSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Billing Section Template Id</em>}' operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL expression body for the '{@link #validateBillingSectionTemplateId(BillingSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Billing Section Template Id</em>}' operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateBillingSectionTemplateId(BillingSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validateBillingSectionTemplateId(BillingSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 	protected static final String VALIDATE_BILLING_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.17.3.10.1.5')";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validateBillingSectionTemplateId(BillingSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Billing Section Template Id</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL invariant for the '{@link #validateBillingSectionTemplateId(BillingSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Billing Section Template Id</em>}' invariant operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateBillingSectionTemplateId(BillingSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validateBillingSectionTemplateId(BillingSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 
 	protected static Constraint VALIDATE_BILLING_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param billingSection The receiving '<em><b>Billing Section</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
+	* <!-- begin-model-doc -->
+	* @param billingSection The receiving '<em><b>Billing Section</b></em>' model object.
+	* @param diagnostics The chain of diagnostics to which problems are to be appended.
+	* @param context The cache of context-specific information.
+	* <!-- end-model-doc -->
+	* @generated
+	*/
 
 	public static boolean validateBillingSectionTemplateId(BillingSection billingSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
@@ -121,38 +121,38 @@ public class BillingSectionOperations extends SectionOperations {
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateBillingSectionCode(BillingSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Billing Section Code</em>}' operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL expression body for the '{@link #validateBillingSectionCode(BillingSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Billing Section Code</em>}' operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateBillingSectionCode(BillingSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validateBillingSectionCode(BillingSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 	protected static final String VALIDATE_BILLING_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and "
 			+ "let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in "
 			+ "value.code = '67659-3' and value.codeSystem = '2.16.840.1.113883.6.1')";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validateBillingSectionCode(BillingSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Billing Section Code</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL invariant for the '{@link #validateBillingSectionCode(BillingSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Billing Section Code</em>}' invariant operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateBillingSectionCode(BillingSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validateBillingSectionCode(BillingSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 
 	protected static Constraint VALIDATE_BILLING_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param billingSection The receiving '<em><b>Billing Section</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
+	* <!-- begin-model-doc -->
+	* @param billingSection The receiving '<em><b>Billing Section</b></em>' model object.
+	* @param diagnostics The chain of diagnostics to which problems are to be appended.
+	* @param context The cache of context-specific information.
+	* <!-- end-model-doc -->
+	* @generated
+	*/
 
 	public static boolean validateBillingSectionCode(BillingSection billingSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
@@ -180,36 +180,36 @@ public class BillingSectionOperations extends SectionOperations {
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateBillingSectionTitle(BillingSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Billing Section Title</em>}' operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL expression body for the '{@link #validateBillingSectionTitle(BillingSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Billing Section Title</em>}' operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateBillingSectionTitle(BillingSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validateBillingSectionTitle(BillingSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 	protected static final String VALIDATE_BILLING_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.title.oclIsUndefined() or self.title.isNullFlavorUndefined()) implies (not self.title.oclIsUndefined() and self.title.getText() = 'EMS Billing Section')";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validateBillingSectionTitle(BillingSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Billing Section Title</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL invariant for the '{@link #validateBillingSectionTitle(BillingSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Billing Section Title</em>}' invariant operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateBillingSectionTitle(BillingSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validateBillingSectionTitle(BillingSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 
 	protected static Constraint VALIDATE_BILLING_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param billingSection The receiving '<em><b>Billing Section</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
+	* <!-- begin-model-doc -->
+	* @param billingSection The receiving '<em><b>Billing Section</b></em>' model object.
+	* @param diagnostics The chain of diagnostics to which problems are to be appended.
+	* @param context The cache of context-specific information.
+	* <!-- end-model-doc -->
+	* @generated
+	*/
 
 	public static boolean validateBillingSectionTitle(BillingSection billingSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
@@ -237,36 +237,36 @@ public class BillingSectionOperations extends SectionOperations {
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateBillingSectionText(BillingSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Billing Section Text</em>}' operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL expression body for the '{@link #validateBillingSectionText(BillingSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Billing Section Text</em>}' operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateBillingSectionText(BillingSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validateBillingSectionText(BillingSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 	protected static final String VALIDATE_BILLING_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "not self.text.oclIsUndefined()";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validateBillingSectionText(BillingSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Billing Section Text</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL invariant for the '{@link #validateBillingSectionText(BillingSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Billing Section Text</em>}' invariant operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateBillingSectionText(BillingSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validateBillingSectionText(BillingSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 
 	protected static Constraint VALIDATE_BILLING_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param billingSection The receiving '<em><b>Billing Section</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
+	* <!-- begin-model-doc -->
+	* @param billingSection The receiving '<em><b>Billing Section</b></em>' model object.
+	* @param diagnostics The chain of diagnostics to which problems are to be appended.
+	* @param context The cache of context-specific information.
+	* <!-- end-model-doc -->
+	* @generated
+	*/
 
 	public static boolean validateBillingSectionText(BillingSection billingSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
@@ -294,36 +294,36 @@ public class BillingSectionOperations extends SectionOperations {
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateBillingSectionBillingCondition(BillingSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Billing Section Billing Condition</em>}' operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL expression body for the '{@link #validateBillingSectionBillingCondition(BillingSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Billing Section Billing Condition</em>}' operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateBillingSectionBillingCondition(BillingSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validateBillingSectionBillingCondition(BillingSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 	protected static final String VALIDATE_BILLING_SECTION_BILLING_CONDITION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->one(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(emspcr::BillingCondition) and entry.typeCode = vocab::x_ActRelationshipEntry::DRIV)";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validateBillingSectionBillingCondition(BillingSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Billing Section Billing Condition</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL invariant for the '{@link #validateBillingSectionBillingCondition(BillingSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Billing Section Billing Condition</em>}' invariant operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateBillingSectionBillingCondition(BillingSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validateBillingSectionBillingCondition(BillingSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 
 	protected static Constraint VALIDATE_BILLING_SECTION_BILLING_CONDITION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param billingSection The receiving '<em><b>Billing Section</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
+	* <!-- begin-model-doc -->
+	* @param billingSection The receiving '<em><b>Billing Section</b></em>' model object.
+	* @param diagnostics The chain of diagnostics to which problems are to be appended.
+	* @param context The cache of context-specific information.
+	* <!-- end-model-doc -->
+	* @generated
+	*/
 
 	public static boolean validateBillingSectionBillingCondition(BillingSection billingSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
@@ -352,36 +352,36 @@ public class BillingSectionOperations extends SectionOperations {
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateBillingSectionLevelOfServiceObservation(BillingSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Billing Section Level Of Service Observation</em>}' operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL expression body for the '{@link #validateBillingSectionLevelOfServiceObservation(BillingSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Billing Section Level Of Service Observation</em>}' operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateBillingSectionLevelOfServiceObservation(BillingSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validateBillingSectionLevelOfServiceObservation(BillingSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 	protected static final String VALIDATE_BILLING_SECTION_LEVEL_OF_SERVICE_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->one(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(emspcr::LevelOfServiceObservation) and entry.typeCode = vocab::x_ActRelationshipEntry::DRIV)";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validateBillingSectionLevelOfServiceObservation(BillingSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Billing Section Level Of Service Observation</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL invariant for the '{@link #validateBillingSectionLevelOfServiceObservation(BillingSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Billing Section Level Of Service Observation</em>}' invariant operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateBillingSectionLevelOfServiceObservation(BillingSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validateBillingSectionLevelOfServiceObservation(BillingSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 
 	protected static Constraint VALIDATE_BILLING_SECTION_LEVEL_OF_SERVICE_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param billingSection The receiving '<em><b>Billing Section</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
+	* <!-- begin-model-doc -->
+	* @param billingSection The receiving '<em><b>Billing Section</b></em>' model object.
+	* @param diagnostics The chain of diagnostics to which problems are to be appended.
+	* @param context The cache of context-specific information.
+	* <!-- end-model-doc -->
+	* @generated
+	*/
 
 	public static boolean validateBillingSectionLevelOfServiceObservation(BillingSection billingSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
@@ -411,30 +411,30 @@ public class BillingSectionOperations extends SectionOperations {
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #getBillingCondition(BillingSection) <em>Get Billing Condition</em>}' operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL expression body for the '{@link #getBillingCondition(BillingSection) <em>Get Billing Condition</em>}' operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getBillingCondition(BillingSection)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #getBillingCondition(BillingSection)
+	* @generated
+	* @ordered
+	*/
 	protected static final String GET_BILLING_CONDITION__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(emspcr::BillingCondition))->asSequence()->any(true).oclAsType(emspcr::BillingCondition)";
 
 	/**
-	 * The cached OCL query for the '{@link #getBillingCondition(BillingSection) <em>Get Billing Condition</em>}' query operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL query for the '{@link #getBillingCondition(BillingSection) <em>Get Billing Condition</em>}' query operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getBillingCondition(BillingSection)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #getBillingCondition(BillingSection)
+	* @generated
+	* @ordered
+	*/
 	protected static OCLExpression<EClassifier> GET_BILLING_CONDITION__EOCL_QRY;
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 
 	public static BillingCondition getBillingCondition(BillingSection billingSection) {
 		if (GET_BILLING_CONDITION__EOCL_QRY == null) {
@@ -453,30 +453,30 @@ public class BillingSectionOperations extends SectionOperations {
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #getLevelOfServiceObservation(BillingSection) <em>Get Level Of Service Observation</em>}' operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL expression body for the '{@link #getLevelOfServiceObservation(BillingSection) <em>Get Level Of Service Observation</em>}' operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getLevelOfServiceObservation(BillingSection)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #getLevelOfServiceObservation(BillingSection)
+	* @generated
+	* @ordered
+	*/
 	protected static final String GET_LEVEL_OF_SERVICE_OBSERVATION__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(emspcr::LevelOfServiceObservation))->asSequence()->any(true).oclAsType(emspcr::LevelOfServiceObservation)";
 
 	/**
-	 * The cached OCL query for the '{@link #getLevelOfServiceObservation(BillingSection) <em>Get Level Of Service Observation</em>}' query operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL query for the '{@link #getLevelOfServiceObservation(BillingSection) <em>Get Level Of Service Observation</em>}' query operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getLevelOfServiceObservation(BillingSection)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #getLevelOfServiceObservation(BillingSection)
+	* @generated
+	* @ordered
+	*/
 	protected static OCLExpression<EClassifier> GET_LEVEL_OF_SERVICE_OBSERVATION__EOCL_QRY;
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 
 	public static LevelOfServiceObservation getLevelOfServiceObservation(BillingSection billingSection) {
 		if (GET_LEVEL_OF_SERVICE_OBSERVATION__EOCL_QRY == null) {

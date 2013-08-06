@@ -35,29 +35,29 @@ import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
  */
 public class ExistenceOfEnvironmentalAllergyImpl extends ObservationImpl implements ExistenceOfEnvironmentalAllergy {
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	protected ExistenceOfEnvironmentalAllergyImpl() {
 		super();
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	@Override
 	protected EClass eStaticClass() {
 		return EmspcrPackage.Literals.EXISTENCE_OF_ENVIRONMENTAL_ALLERGY;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateExistenceOfEnvironmentalAllergyTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ExistenceOfEnvironmentalAllergyOperations.validateExistenceOfEnvironmentalAllergyTemplateId(
@@ -65,30 +65,30 @@ public class ExistenceOfEnvironmentalAllergyImpl extends ObservationImpl impleme
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateExistenceOfEnvironmentalAllergyCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ExistenceOfEnvironmentalAllergyOperations.validateExistenceOfEnvironmentalAllergyCode(
 			this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateExistenceOfEnvironmentalAllergyValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ExistenceOfEnvironmentalAllergyOperations.validateExistenceOfEnvironmentalAllergyValue(
 			this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateExistenceOfEnvironmentalAllergyMoodCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ExistenceOfEnvironmentalAllergyOperations.validateExistenceOfEnvironmentalAllergyMoodCode(
@@ -96,10 +96,10 @@ public class ExistenceOfEnvironmentalAllergyImpl extends ObservationImpl impleme
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public ExistenceOfEnvironmentalAllergy init() {
 		return Initializer.Util.init(this);
 	}

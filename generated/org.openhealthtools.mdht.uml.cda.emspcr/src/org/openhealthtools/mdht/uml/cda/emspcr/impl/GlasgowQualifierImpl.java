@@ -35,74 +35,74 @@ import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
  */
 public class GlasgowQualifierImpl extends ObservationImpl implements GlasgowQualifier {
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	protected GlasgowQualifierImpl() {
 		super();
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	@Override
 	protected EClass eStaticClass() {
 		return EmspcrPackage.Literals.GLASGOW_QUALIFIER;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateGlasgowQualifierTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return GlasgowQualifierOperations.validateGlasgowQualifierTemplateId(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateGlasgowQualifierCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return GlasgowQualifierOperations.validateGlasgowQualifierCodeP(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateGlasgowQualifierCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return GlasgowQualifierOperations.validateGlasgowQualifierCode(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateGlasgowQualifierValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return GlasgowQualifierOperations.validateGlasgowQualifierValue(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateGlasgowQualifierMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return GlasgowQualifierOperations.validateGlasgowQualifierMoodCode(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public GlasgowQualifier init() {
 		return Initializer.Util.init(this);
 	}

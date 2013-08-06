@@ -35,65 +35,65 @@ import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
  */
 public class EnvironmentalAllergyImpl extends ObservationImpl implements EnvironmentalAllergy {
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	protected EnvironmentalAllergyImpl() {
 		super();
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	@Override
 	protected EClass eStaticClass() {
 		return EmspcrPackage.Literals.ENVIRONMENTAL_ALLERGY;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateEnvironmentalAllergyTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return EnvironmentalAllergyOperations.validateEnvironmentalAllergyTemplateId(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateEnvironmentalAllergyCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return EnvironmentalAllergyOperations.validateEnvironmentalAllergyCode(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateEnvironmentalAllergyValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return EnvironmentalAllergyOperations.validateEnvironmentalAllergyValue(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateEnvironmentalAllergyMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return EnvironmentalAllergyOperations.validateEnvironmentalAllergyMoodCode(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public EnvironmentalAllergy init() {
 		return Initializer.Util.init(this);
 	}

@@ -35,83 +35,83 @@ import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
  */
 public class BloodGlucoseImpl extends ObservationImpl implements BloodGlucose {
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	protected BloodGlucoseImpl() {
 		super();
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	@Override
 	protected EClass eStaticClass() {
 		return EmspcrPackage.Literals.BLOOD_GLUCOSE;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateBloodGlucoseTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return BloodGlucoseOperations.validateBloodGlucoseTemplateId(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateBloodGlucoseCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return BloodGlucoseOperations.validateBloodGlucoseCodeP(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateBloodGlucoseCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return BloodGlucoseOperations.validateBloodGlucoseCode(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateBloodGlucoseValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return BloodGlucoseOperations.validateBloodGlucoseValue(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateBloodGlucoseEffectiveTime(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return BloodGlucoseOperations.validateBloodGlucoseEffectiveTime(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateBloodGlucoseMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return BloodGlucoseOperations.validateBloodGlucoseMoodCode(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public BloodGlucose init() {
 		return Initializer.Util.init(this);
 	}

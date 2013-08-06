@@ -46,45 +46,45 @@ import org.openhealthtools.mdht.uml.cda.operations.ClinicalStatementOperations;
  */
 public class ResponseDestinationOdometerReadingOperations extends ClinicalStatementOperations {
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	protected ResponseDestinationOdometerReadingOperations() {
 		super();
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateResponseDestinationOdometerReadingTemplateId(ResponseDestinationOdometerReading, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Response Destination Odometer Reading Template Id</em>}' operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL expression body for the '{@link #validateResponseDestinationOdometerReadingTemplateId(ResponseDestinationOdometerReading, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Response Destination Odometer Reading Template Id</em>}' operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateResponseDestinationOdometerReadingTemplateId(ResponseDestinationOdometerReading, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validateResponseDestinationOdometerReadingTemplateId(ResponseDestinationOdometerReading, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 	protected static final String VALIDATE_RESPONSE_DESTINATION_ODOMETER_READING_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.1133883.17.3.10.1.173')";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validateResponseDestinationOdometerReadingTemplateId(ResponseDestinationOdometerReading, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Response Destination Odometer Reading Template Id</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL invariant for the '{@link #validateResponseDestinationOdometerReadingTemplateId(ResponseDestinationOdometerReading, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Response Destination Odometer Reading Template Id</em>}' invariant operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateResponseDestinationOdometerReadingTemplateId(ResponseDestinationOdometerReading, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validateResponseDestinationOdometerReadingTemplateId(ResponseDestinationOdometerReading, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 
 	protected static Constraint VALIDATE_RESPONSE_DESTINATION_ODOMETER_READING_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param responseDestinationOdometerReading The receiving '<em><b>Response Destination Odometer Reading</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
+	* <!-- begin-model-doc -->
+	* @param responseDestinationOdometerReading The receiving '<em><b>Response Destination Odometer Reading</b></em>' model object.
+	* @param diagnostics The chain of diagnostics to which problems are to be appended.
+	* @param context The cache of context-specific information.
+	* <!-- end-model-doc -->
+	* @generated
+	*/
 
 	public static boolean validateResponseDestinationOdometerReadingTemplateId(
 			ResponseDestinationOdometerReading responseDestinationOdometerReading, DiagnosticChain diagnostics,
@@ -117,36 +117,36 @@ public class ResponseDestinationOdometerReadingOperations extends ClinicalStatem
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateResponseDestinationOdometerReadingCodeP(ResponseDestinationOdometerReading, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Response Destination Odometer Reading Code P</em>}' operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL expression body for the '{@link #validateResponseDestinationOdometerReadingCodeP(ResponseDestinationOdometerReading, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Response Destination Odometer Reading Code P</em>}' operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateResponseDestinationOdometerReadingCodeP(ResponseDestinationOdometerReading, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validateResponseDestinationOdometerReadingCodeP(ResponseDestinationOdometerReading, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 	protected static final String VALIDATE_RESPONSE_DESTINATION_ODOMETER_READING_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined())";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validateResponseDestinationOdometerReadingCodeP(ResponseDestinationOdometerReading, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Response Destination Odometer Reading Code P</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL invariant for the '{@link #validateResponseDestinationOdometerReadingCodeP(ResponseDestinationOdometerReading, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Response Destination Odometer Reading Code P</em>}' invariant operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateResponseDestinationOdometerReadingCodeP(ResponseDestinationOdometerReading, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validateResponseDestinationOdometerReadingCodeP(ResponseDestinationOdometerReading, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 
 	protected static Constraint VALIDATE_RESPONSE_DESTINATION_ODOMETER_READING_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param responseDestinationOdometerReading The receiving '<em><b>Response Destination Odometer Reading</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
+	* <!-- begin-model-doc -->
+	* @param responseDestinationOdometerReading The receiving '<em><b>Response Destination Odometer Reading</b></em>' model object.
+	* @param diagnostics The chain of diagnostics to which problems are to be appended.
+	* @param context The cache of context-specific information.
+	* <!-- end-model-doc -->
+	* @generated
+	*/
 
 	public static boolean validateResponseDestinationOdometerReadingCodeP(
 			ResponseDestinationOdometerReading responseDestinationOdometerReading, DiagnosticChain diagnostics,
@@ -191,38 +191,38 @@ public class ResponseDestinationOdometerReadingOperations extends ClinicalStatem
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateResponseDestinationOdometerReadingCode(ResponseDestinationOdometerReading, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Response Destination Odometer Reading Code</em>}' operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL expression body for the '{@link #validateResponseDestinationOdometerReadingCode(ResponseDestinationOdometerReading, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Response Destination Odometer Reading Code</em>}' operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateResponseDestinationOdometerReadingCode(ResponseDestinationOdometerReading, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validateResponseDestinationOdometerReadingCode(ResponseDestinationOdometerReading, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 	protected static final String VALIDATE_RESPONSE_DESTINATION_ODOMETER_READING_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "
 			+ "let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "
 			+ "value.code = '67486-1' and value.codeSystem = '2.16.840.1.113883.6.1')";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validateResponseDestinationOdometerReadingCode(ResponseDestinationOdometerReading, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Response Destination Odometer Reading Code</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL invariant for the '{@link #validateResponseDestinationOdometerReadingCode(ResponseDestinationOdometerReading, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Response Destination Odometer Reading Code</em>}' invariant operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateResponseDestinationOdometerReadingCode(ResponseDestinationOdometerReading, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validateResponseDestinationOdometerReadingCode(ResponseDestinationOdometerReading, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 
 	protected static Constraint VALIDATE_RESPONSE_DESTINATION_ODOMETER_READING_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param responseDestinationOdometerReading The receiving '<em><b>Response Destination Odometer Reading</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
+	* <!-- begin-model-doc -->
+	* @param responseDestinationOdometerReading The receiving '<em><b>Response Destination Odometer Reading</b></em>' model object.
+	* @param diagnostics The chain of diagnostics to which problems are to be appended.
+	* @param context The cache of context-specific information.
+	* <!-- end-model-doc -->
+	* @generated
+	*/
 
 	public static boolean validateResponseDestinationOdometerReadingCode(
 			ResponseDestinationOdometerReading responseDestinationOdometerReading, DiagnosticChain diagnostics,
@@ -262,36 +262,36 @@ public class ResponseDestinationOdometerReadingOperations extends ClinicalStatem
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateResponseDestinationOdometerReadingValue(ResponseDestinationOdometerReading, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Response Destination Odometer Reading Value</em>}' operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL expression body for the '{@link #validateResponseDestinationOdometerReadingValue(ResponseDestinationOdometerReading, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Response Destination Odometer Reading Value</em>}' operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateResponseDestinationOdometerReadingValue(ResponseDestinationOdometerReading, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validateResponseDestinationOdometerReadingValue(ResponseDestinationOdometerReading, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 	protected static final String VALIDATE_RESPONSE_DESTINATION_ODOMETER_READING_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | element.oclIsTypeOf(datatypes::PQ)))";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validateResponseDestinationOdometerReadingValue(ResponseDestinationOdometerReading, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Response Destination Odometer Reading Value</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL invariant for the '{@link #validateResponseDestinationOdometerReadingValue(ResponseDestinationOdometerReading, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Response Destination Odometer Reading Value</em>}' invariant operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateResponseDestinationOdometerReadingValue(ResponseDestinationOdometerReading, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validateResponseDestinationOdometerReadingValue(ResponseDestinationOdometerReading, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 
 	protected static Constraint VALIDATE_RESPONSE_DESTINATION_ODOMETER_READING_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param responseDestinationOdometerReading The receiving '<em><b>Response Destination Odometer Reading</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
+	* <!-- begin-model-doc -->
+	* @param responseDestinationOdometerReading The receiving '<em><b>Response Destination Odometer Reading</b></em>' model object.
+	* @param diagnostics The chain of diagnostics to which problems are to be appended.
+	* @param context The cache of context-specific information.
+	* <!-- end-model-doc -->
+	* @generated
+	*/
 
 	public static boolean validateResponseDestinationOdometerReadingValue(
 			ResponseDestinationOdometerReading responseDestinationOdometerReading, DiagnosticChain diagnostics,
@@ -322,36 +322,36 @@ public class ResponseDestinationOdometerReadingOperations extends ClinicalStatem
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateResponseDestinationOdometerReadingMoodCode(ResponseDestinationOdometerReading, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Response Destination Odometer Reading Mood Code</em>}' operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL expression body for the '{@link #validateResponseDestinationOdometerReadingMoodCode(ResponseDestinationOdometerReading, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Response Destination Odometer Reading Mood Code</em>}' operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateResponseDestinationOdometerReadingMoodCode(ResponseDestinationOdometerReading, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validateResponseDestinationOdometerReadingMoodCode(ResponseDestinationOdometerReading, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 	protected static final String VALIDATE_RESPONSE_DESTINATION_ODOMETER_READING_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "isDefined('moodCode')";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validateResponseDestinationOdometerReadingMoodCode(ResponseDestinationOdometerReading, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Response Destination Odometer Reading Mood Code</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL invariant for the '{@link #validateResponseDestinationOdometerReadingMoodCode(ResponseDestinationOdometerReading, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Response Destination Odometer Reading Mood Code</em>}' invariant operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateResponseDestinationOdometerReadingMoodCode(ResponseDestinationOdometerReading, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validateResponseDestinationOdometerReadingMoodCode(ResponseDestinationOdometerReading, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 
 	protected static Constraint VALIDATE_RESPONSE_DESTINATION_ODOMETER_READING_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param responseDestinationOdometerReading The receiving '<em><b>Response Destination Odometer Reading</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
+	* <!-- begin-model-doc -->
+	* @param responseDestinationOdometerReading The receiving '<em><b>Response Destination Odometer Reading</b></em>' model object.
+	* @param diagnostics The chain of diagnostics to which problems are to be appended.
+	* @param context The cache of context-specific information.
+	* <!-- end-model-doc -->
+	* @generated
+	*/
 
 	public static boolean validateResponseDestinationOdometerReadingMoodCode(
 			ResponseDestinationOdometerReading responseDestinationOdometerReading, DiagnosticChain diagnostics,

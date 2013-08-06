@@ -35,29 +35,29 @@ import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
  */
 public class ExistenceOfDrugAllergyObservationImpl extends ObservationImpl implements ExistenceOfDrugAllergyObservation {
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	protected ExistenceOfDrugAllergyObservationImpl() {
 		super();
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	@Override
 	protected EClass eStaticClass() {
 		return EmspcrPackage.Literals.EXISTENCE_OF_DRUG_ALLERGY_OBSERVATION;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateExistenceOfDrugAllergyObservationTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ExistenceOfDrugAllergyObservationOperations.validateExistenceOfDrugAllergyObservationTemplateId(
@@ -65,10 +65,10 @@ public class ExistenceOfDrugAllergyObservationImpl extends ObservationImpl imple
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateExistenceOfDrugAllergyObservationCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ExistenceOfDrugAllergyObservationOperations.validateExistenceOfDrugAllergyObservationCode(
@@ -76,10 +76,10 @@ public class ExistenceOfDrugAllergyObservationImpl extends ObservationImpl imple
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateExistenceOfDrugAllergyObservationValue(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ExistenceOfDrugAllergyObservationOperations.validateExistenceOfDrugAllergyObservationValue(
@@ -87,10 +87,10 @@ public class ExistenceOfDrugAllergyObservationImpl extends ObservationImpl imple
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateExistenceOfDrugAllergyObservationMoodCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ExistenceOfDrugAllergyObservationOperations.validateExistenceOfDrugAllergyObservationMoodCode(
@@ -98,10 +98,10 @@ public class ExistenceOfDrugAllergyObservationImpl extends ObservationImpl imple
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public ExistenceOfDrugAllergyObservation init() {
 		return Initializer.Util.init(this);
 	}

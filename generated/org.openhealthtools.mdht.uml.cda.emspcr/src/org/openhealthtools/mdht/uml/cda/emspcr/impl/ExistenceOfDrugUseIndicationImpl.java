@@ -35,29 +35,29 @@ import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
  */
 public class ExistenceOfDrugUseIndicationImpl extends ObservationImpl implements ExistenceOfDrugUseIndication {
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	protected ExistenceOfDrugUseIndicationImpl() {
 		super();
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	@Override
 	protected EClass eStaticClass() {
 		return EmspcrPackage.Literals.EXISTENCE_OF_DRUG_USE_INDICATION;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateExistenceOfDrugUseIndicationTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ExistenceOfDrugUseIndicationOperations.validateExistenceOfDrugUseIndicationTemplateId(
@@ -65,50 +65,50 @@ public class ExistenceOfDrugUseIndicationImpl extends ObservationImpl implements
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateExistenceOfDrugUseIndicationCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ExistenceOfDrugUseIndicationOperations.validateExistenceOfDrugUseIndicationCodeP(
 			this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateExistenceOfDrugUseIndicationCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ExistenceOfDrugUseIndicationOperations.validateExistenceOfDrugUseIndicationCode(
 			this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateExistenceOfDrugUseIndicationValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ExistenceOfDrugUseIndicationOperations.validateExistenceOfDrugUseIndicationValue(
 			this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateExistenceOfDrugUseIndicationMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ExistenceOfDrugUseIndicationOperations.validateExistenceOfDrugUseIndicationMoodCode(
 			this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public ExistenceOfDrugUseIndication init() {
 		return Initializer.Util.init(this);
 	}

@@ -35,83 +35,83 @@ import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
  */
 public class HeadAssessmentImpl extends ObservationImpl implements HeadAssessment {
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	protected HeadAssessmentImpl() {
 		super();
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	@Override
 	protected EClass eStaticClass() {
 		return EmspcrPackage.Literals.HEAD_ASSESSMENT;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateHeadAssessmentTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return HeadAssessmentOperations.validateHeadAssessmentTemplateId(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateHeadAssessmentCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return HeadAssessmentOperations.validateHeadAssessmentCodeP(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateHeadAssessmentCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return HeadAssessmentOperations.validateHeadAssessmentCode(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateHeadAssessmentValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return HeadAssessmentOperations.validateHeadAssessmentValue(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateHeadAssessmentEffectiveTime(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return HeadAssessmentOperations.validateHeadAssessmentEffectiveTime(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateHeadAssessmentMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return HeadAssessmentOperations.validateHeadAssessmentMoodCode(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public HeadAssessment init() {
 		return Initializer.Util.init(this);
 	}

@@ -35,84 +35,84 @@ import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
  */
 public class ProviderPrimaryImpressionImpl extends ObservationImpl implements ProviderPrimaryImpression {
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	protected ProviderPrimaryImpressionImpl() {
 		super();
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	@Override
 	protected EClass eStaticClass() {
 		return EmspcrPackage.Literals.PROVIDER_PRIMARY_IMPRESSION;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateProviderPrimaryImpressionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProviderPrimaryImpressionOperations.validateProviderPrimaryImpressionTemplateId(
 			this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateProviderPrimaryImpressionCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProviderPrimaryImpressionOperations.validateProviderPrimaryImpressionCodeP(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateProviderPrimaryImpressionCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProviderPrimaryImpressionOperations.validateProviderPrimaryImpressionCode(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateProviderPrimaryImpressionValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProviderPrimaryImpressionOperations.validateProviderPrimaryImpressionValue(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateProviderPrimaryImpressionValueP(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProviderPrimaryImpressionOperations.validateProviderPrimaryImpressionValueP(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateProviderPrimaryImpressionMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProviderPrimaryImpressionOperations.validateProviderPrimaryImpressionMoodCode(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public ProviderPrimaryImpression init() {
 		return Initializer.Util.init(this);
 	}

@@ -35,29 +35,29 @@ import org.openhealthtools.mdht.uml.cda.impl.OrganizerImpl;
  */
 public class HistoryOfProceduresOrganizerImpl extends OrganizerImpl implements HistoryOfProceduresOrganizer {
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	protected HistoryOfProceduresOrganizerImpl() {
 		super();
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	@Override
 	protected EClass eStaticClass() {
 		return EmspcrPackage.Literals.HISTORY_OF_PROCEDURES_ORGANIZER;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateHistoryOfProceduresOrganizerExistenceOfHistoryOfProcedureComponent(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return HistoryOfProceduresOrganizerOperations.validateHistoryOfProceduresOrganizerExistenceOfHistoryOfProcedureComponent(
@@ -65,10 +65,10 @@ public class HistoryOfProceduresOrganizerImpl extends OrganizerImpl implements H
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateHistoryOfProceduresOrganizerHistoryOfProceduresComponent(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return HistoryOfProceduresOrganizerOperations.validateHistoryOfProceduresOrganizerHistoryOfProceduresComponent(
@@ -76,10 +76,10 @@ public class HistoryOfProceduresOrganizerImpl extends OrganizerImpl implements H
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateHistoryOfProceduresOrganizerTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return HistoryOfProceduresOrganizerOperations.validateHistoryOfProceduresOrganizerTemplateId(
@@ -87,10 +87,10 @@ public class HistoryOfProceduresOrganizerImpl extends OrganizerImpl implements H
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public HistoryOfProceduresOrganizer init() {
 		return Initializer.Util.init(this);
 	}

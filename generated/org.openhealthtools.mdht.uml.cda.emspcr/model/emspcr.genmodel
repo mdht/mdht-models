@@ -1431,10 +1431,6 @@
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emspcr.ecore#//DispositionSection/DispositionSectionText/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emspcr.ecore#//DispositionSection/DispositionSectionText/context"/>
       </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="emspcr.ecore#//DispositionSection/DispositionSectionEntry4">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emspcr.ecore#//DispositionSection/DispositionSectionEntry4/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emspcr.ecore#//DispositionSection/DispositionSectionEntry4/context"/>
-      </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="emspcr.ecore#//DispositionSection/DispositionSectionNumberOfPatientsObservation">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emspcr.ecore#//DispositionSection/DispositionSectionNumberOfPatientsObservation/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emspcr.ecore#//DispositionSection/DispositionSectionNumberOfPatientsObservation/context"/>
@@ -1463,7 +1459,6 @@
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emspcr.ecore#//DispositionSection/DispositionSectionPatientConditionChangeAtDestinationObservation/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emspcr.ecore#//DispositionSection/DispositionSectionPatientConditionChangeAtDestinationObservation/context"/>
       </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="emspcr.ecore#//DispositionSection/getemspcrEntry4"/>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="emspcr.ecore#//DispositionSection/getNumberOfPatientsObservation"/>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="emspcr.ecore#//DispositionSection/getIncidentDispositionObservation"/>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="emspcr.ecore#//DispositionSection/getTransportModeObservation"/>
@@ -1471,32 +1466,6 @@
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="emspcr.ecore#//DispositionSection/getReasonForChoosingDestinationObservation"/>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="emspcr.ecore#//DispositionSection/getPrearrivalActivationObservation"/>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="emspcr.ecore#//DispositionSection/getPatientConditionChangeAtDestinationObservation"/>
-    </genClasses>
-    <genClasses xsi:type="genmodel:GenClass" ecoreClass="emspcr.ecore#//TransportMethodObservation">
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="emspcr.ecore#//TransportMethodObservation/TransportMethodObservationTemplateId">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emspcr.ecore#//TransportMethodObservation/TransportMethodObservationTemplateId/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emspcr.ecore#//TransportMethodObservation/TransportMethodObservationTemplateId/context"/>
-      </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="emspcr.ecore#//TransportMethodObservation/TransportMethodObservationCodeP">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emspcr.ecore#//TransportMethodObservation/TransportMethodObservationCodeP/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emspcr.ecore#//TransportMethodObservation/TransportMethodObservationCodeP/context"/>
-      </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="emspcr.ecore#//TransportMethodObservation/TransportMethodObservationCode">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emspcr.ecore#//TransportMethodObservation/TransportMethodObservationCode/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emspcr.ecore#//TransportMethodObservation/TransportMethodObservationCode/context"/>
-      </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="emspcr.ecore#//TransportMethodObservation/TransportMethodObservationValue">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emspcr.ecore#//TransportMethodObservation/TransportMethodObservationValue/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emspcr.ecore#//TransportMethodObservation/TransportMethodObservationValue/context"/>
-      </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="emspcr.ecore#//TransportMethodObservation/TransportMethodObservationValueP">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emspcr.ecore#//TransportMethodObservation/TransportMethodObservationValueP/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emspcr.ecore#//TransportMethodObservation/TransportMethodObservationValueP/context"/>
-      </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="emspcr.ecore#//TransportMethodObservation/TransportMethodObservationMoodCode">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emspcr.ecore#//TransportMethodObservation/TransportMethodObservationMoodCode/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emspcr.ecore#//TransportMethodObservation/TransportMethodObservationMoodCode/context"/>
-      </genOperations>
     </genClasses>
     <genClasses xsi:type="genmodel:GenClass" ecoreClass="emspcr.ecore#//NumberOfPatientsObservation">
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="emspcr.ecore#//NumberOfPatientsObservation/NumberOfPatientsObservationTemplateId">
@@ -1563,9 +1532,39 @@
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emspcr.ecore#//TransportModeObservation/TransportModeObservationValue/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emspcr.ecore#//TransportModeObservation/TransportModeObservationValue/context"/>
       </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="emspcr.ecore#//TransportModeObservation/TransportModeObservationValueP">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emspcr.ecore#//TransportModeObservation/TransportModeObservationValueP/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emspcr.ecore#//TransportModeObservation/TransportModeObservationValueP/context"/>
+      </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="emspcr.ecore#//TransportModeObservation/TransportModeObservationMoodCode">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emspcr.ecore#//TransportModeObservation/TransportModeObservationMoodCode/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emspcr.ecore#//TransportModeObservation/TransportModeObservationMoodCode/context"/>
+      </genOperations>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="emspcr.ecore#//TransportMethodObservation">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="emspcr.ecore#//TransportMethodObservation/TransportMethodObservationTemplateId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emspcr.ecore#//TransportMethodObservation/TransportMethodObservationTemplateId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emspcr.ecore#//TransportMethodObservation/TransportMethodObservationTemplateId/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="emspcr.ecore#//TransportMethodObservation/TransportMethodObservationCodeP">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emspcr.ecore#//TransportMethodObservation/TransportMethodObservationCodeP/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emspcr.ecore#//TransportMethodObservation/TransportMethodObservationCodeP/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="emspcr.ecore#//TransportMethodObservation/TransportMethodObservationCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emspcr.ecore#//TransportMethodObservation/TransportMethodObservationCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emspcr.ecore#//TransportMethodObservation/TransportMethodObservationCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="emspcr.ecore#//TransportMethodObservation/TransportMethodObservationValue">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emspcr.ecore#//TransportMethodObservation/TransportMethodObservationValue/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emspcr.ecore#//TransportMethodObservation/TransportMethodObservationValue/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="emspcr.ecore#//TransportMethodObservation/TransportMethodObservationValueP">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emspcr.ecore#//TransportMethodObservation/TransportMethodObservationValueP/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emspcr.ecore#//TransportMethodObservation/TransportMethodObservationValueP/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="emspcr.ecore#//TransportMethodObservation/TransportMethodObservationMoodCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emspcr.ecore#//TransportMethodObservation/TransportMethodObservationMoodCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emspcr.ecore#//TransportMethodObservation/TransportMethodObservationMoodCode/context"/>
       </genOperations>
     </genClasses>
     <genClasses xsi:type="genmodel:GenClass" ecoreClass="emspcr.ecore#//ReasonForChoosingDestinationObservation">
@@ -1989,7 +1988,7 @@
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emspcr.ecore#//SituationSection/SituationSectionInitialPatientAcuity/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emspcr.ecore#//SituationSection/SituationSectionInitialPatientAcuity/context"/>
       </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="emspcr.ecore#//SituationSection/getComplaint"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="emspcr.ecore#//SituationSection/getComplaints"/>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="emspcr.ecore#//SituationSection/getPossibleInjury"/>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="emspcr.ecore#//SituationSection/getProviderPrimaryImpression"/>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="emspcr.ecore#//SituationSection/getPrimarySymptom"/>
@@ -2473,17 +2472,12 @@
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emspcr.ecore#//VitalSignsSection/EMSPCRVitalSignsSectionVitalSignsOrganizer/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emspcr.ecore#//VitalSignsSection/EMSPCRVitalSignsSectionVitalSignsOrganizer/context"/>
       </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="emspcr.ecore#//VitalSignsSection/EMSPCRVitalSignsSectionPriorAidVitals">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emspcr.ecore#//VitalSignsSection/EMSPCRVitalSignsSectionPriorAidVitals/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emspcr.ecore#//VitalSignsSection/EMSPCRVitalSignsSectionPriorAidVitals/context"/>
-      </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="emspcr.ecore#//VitalSignsSection/EMSPCRVitalSignsSectionAdditionalVitalSignsOrganizer">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emspcr.ecore#//VitalSignsSection/EMSPCRVitalSignsSectionAdditionalVitalSignsOrganizer/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emspcr.ecore#//VitalSignsSection/EMSPCRVitalSignsSectionAdditionalVitalSignsOrganizer/context"/>
       </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="emspcr.ecore#//VitalSignsSection/getemspcrVitalSignsOrganizer"/>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="emspcr.ecore#//VitalSignsSection/getPriorAidVitals"/>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="emspcr.ecore#//VitalSignsSection/getAdditionalVitalSignsOrganizer"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="emspcr.ecore#//VitalSignsSection/getemspcrVitalSignsOrganizers"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="emspcr.ecore#//VitalSignsSection/getAdditionalVitalSignsOrganizers"/>
     </genClasses>
     <genClasses xsi:type="genmodel:GenClass" ecoreClass="emspcr.ecore#//VitalSignsOrganizer">
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="emspcr.ecore#//VitalSignsOrganizer/EMSPCRVitalSignsOrganizerSystolicBloodPressureComponent">
@@ -2514,6 +2508,7 @@
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emspcr.ecore#//VitalSignsOrganizer/EMSPCRVitalSignsOrganizerEffectiveTime/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emspcr.ecore#//VitalSignsOrganizer/EMSPCRVitalSignsOrganizerEffectiveTime/context"/>
       </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="emspcr.ecore#//VitalSignsOrganizer/getPriorAidVitals"/>
     </genClasses>
     <genClasses xsi:type="genmodel:GenClass" ecoreClass="emspcr.ecore#//PriorAidVitals">
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="emspcr.ecore#//PriorAidVitals/PriorAidVitalsTemplateId">

@@ -1934,7 +1934,7 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	public EClass getTransportMethodObservation() {
 		if (transportMethodObservationEClass == null) {
 			transportMethodObservationEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(EmspcrPackage.eNS_URI).getEClassifiers().get(
-				47);
+				50);
 		}
 		return transportMethodObservationEClass;
 	}
@@ -1947,7 +1947,7 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	public EClass getNumberOfPatientsObservation() {
 		if (numberOfPatientsObservationEClass == null) {
 			numberOfPatientsObservationEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(EmspcrPackage.eNS_URI).getEClassifiers().get(
-				48);
+				47);
 		}
 		return numberOfPatientsObservationEClass;
 	}
@@ -1960,7 +1960,7 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	public EClass getIncidentDispositionObservation() {
 		if (incidentDispositionObservationEClass == null) {
 			incidentDispositionObservationEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(
-				EmspcrPackage.eNS_URI).getEClassifiers().get(49);
+				EmspcrPackage.eNS_URI).getEClassifiers().get(48);
 		}
 		return incidentDispositionObservationEClass;
 	}
@@ -1973,7 +1973,7 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage {
 	public EClass getTransportModeObservation() {
 		if (transportModeObservationEClass == null) {
 			transportModeObservationEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(EmspcrPackage.eNS_URI).getEClassifiers().get(
-				50);
+				49);
 		}
 		return transportModeObservationEClass;
 	}

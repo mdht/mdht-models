@@ -35,83 +35,83 @@ import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
  */
 public class CarbonMonoxideImpl extends ObservationImpl implements CarbonMonoxide {
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	protected CarbonMonoxideImpl() {
 		super();
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	@Override
 	protected EClass eStaticClass() {
 		return EmspcrPackage.Literals.CARBON_MONOXIDE;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateCarbonMonoxideTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return CarbonMonoxideOperations.validateCarbonMonoxideTemplateId(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateCarbonMonoxideCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return CarbonMonoxideOperations.validateCarbonMonoxideCodeP(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateCarbonMonoxideCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return CarbonMonoxideOperations.validateCarbonMonoxideCode(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateCarbonMonoxideValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return CarbonMonoxideOperations.validateCarbonMonoxideValue(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateCarbonMonoxideEffectiveTime(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return CarbonMonoxideOperations.validateCarbonMonoxideEffectiveTime(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateCarbonMonoxideMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return CarbonMonoxideOperations.validateCarbonMonoxideMoodCode(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public CarbonMonoxide init() {
 		return Initializer.Util.init(this);
 	}

@@ -45,45 +45,45 @@ import org.openhealthtools.mdht.uml.cda.operations.ClinicalStatementOperations;
  */
 public class MedicationNotAdministeredReasonObservationOperations extends ClinicalStatementOperations {
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	protected MedicationNotAdministeredReasonObservationOperations() {
 		super();
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateMedicationNotAdministeredReasonObservationTemplateId(MedicationNotAdministeredReasonObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Not Administered Reason Observation Template Id</em>}' operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL expression body for the '{@link #validateMedicationNotAdministeredReasonObservationTemplateId(MedicationNotAdministeredReasonObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Not Administered Reason Observation Template Id</em>}' operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateMedicationNotAdministeredReasonObservationTemplateId(MedicationNotAdministeredReasonObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validateMedicationNotAdministeredReasonObservationTemplateId(MedicationNotAdministeredReasonObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 	protected static final String VALIDATE_MEDICATION_NOT_ADMINISTERED_REASON_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.1133883.17.3.10.1.105')";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validateMedicationNotAdministeredReasonObservationTemplateId(MedicationNotAdministeredReasonObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Not Administered Reason Observation Template Id</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL invariant for the '{@link #validateMedicationNotAdministeredReasonObservationTemplateId(MedicationNotAdministeredReasonObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Not Administered Reason Observation Template Id</em>}' invariant operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateMedicationNotAdministeredReasonObservationTemplateId(MedicationNotAdministeredReasonObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validateMedicationNotAdministeredReasonObservationTemplateId(MedicationNotAdministeredReasonObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 
 	protected static Constraint VALIDATE_MEDICATION_NOT_ADMINISTERED_REASON_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param medicationNotAdministeredReasonObservation The receiving '<em><b>Medication Not Administered Reason Observation</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
+	* <!-- begin-model-doc -->
+	* @param medicationNotAdministeredReasonObservation The receiving '<em><b>Medication Not Administered Reason Observation</b></em>' model object.
+	* @param diagnostics The chain of diagnostics to which problems are to be appended.
+	* @param context The cache of context-specific information.
+	* <!-- end-model-doc -->
+	* @generated
+	*/
 
 	public static boolean validateMedicationNotAdministeredReasonObservationTemplateId(
 			MedicationNotAdministeredReasonObservation medicationNotAdministeredReasonObservation,
@@ -116,38 +116,38 @@ public class MedicationNotAdministeredReasonObservationOperations extends Clinic
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateMedicationNotAdministeredReasonObservationCode(MedicationNotAdministeredReasonObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Not Administered Reason Observation Code</em>}' operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL expression body for the '{@link #validateMedicationNotAdministeredReasonObservationCode(MedicationNotAdministeredReasonObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Not Administered Reason Observation Code</em>}' operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateMedicationNotAdministeredReasonObservationCode(MedicationNotAdministeredReasonObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validateMedicationNotAdministeredReasonObservationCode(MedicationNotAdministeredReasonObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 	protected static final String VALIDATE_MEDICATION_NOT_ADMINISTERED_REASON_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "
 			+ "let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "
 			+ "value.code = 'ASSERTION' and value.codeSystem = '2.16.840.1.113883.5.4')";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validateMedicationNotAdministeredReasonObservationCode(MedicationNotAdministeredReasonObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Not Administered Reason Observation Code</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL invariant for the '{@link #validateMedicationNotAdministeredReasonObservationCode(MedicationNotAdministeredReasonObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Not Administered Reason Observation Code</em>}' invariant operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateMedicationNotAdministeredReasonObservationCode(MedicationNotAdministeredReasonObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validateMedicationNotAdministeredReasonObservationCode(MedicationNotAdministeredReasonObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 
 	protected static Constraint VALIDATE_MEDICATION_NOT_ADMINISTERED_REASON_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param medicationNotAdministeredReasonObservation The receiving '<em><b>Medication Not Administered Reason Observation</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
+	* <!-- begin-model-doc -->
+	* @param medicationNotAdministeredReasonObservation The receiving '<em><b>Medication Not Administered Reason Observation</b></em>' model object.
+	* @param diagnostics The chain of diagnostics to which problems are to be appended.
+	* @param context The cache of context-specific information.
+	* <!-- end-model-doc -->
+	* @generated
+	*/
 
 	public static boolean validateMedicationNotAdministeredReasonObservationCode(
 			MedicationNotAdministeredReasonObservation medicationNotAdministeredReasonObservation,
@@ -180,38 +180,38 @@ public class MedicationNotAdministeredReasonObservationOperations extends Clinic
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateMedicationNotAdministeredReasonObservationValue(MedicationNotAdministeredReasonObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Not Administered Reason Observation Value</em>}' operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL expression body for the '{@link #validateMedicationNotAdministeredReasonObservationValue(MedicationNotAdministeredReasonObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Not Administered Reason Observation Value</em>}' operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateMedicationNotAdministeredReasonObservationValue(MedicationNotAdministeredReasonObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validateMedicationNotAdministeredReasonObservationValue(MedicationNotAdministeredReasonObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 	protected static final String VALIDATE_MEDICATION_NOT_ADMINISTERED_REASON_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and "
 			+ "let value : datatypes::CD = element.oclAsType(datatypes::CD) in "
 			+ "value.codeSystem = '2.16.840.1.113883.6.1' and (value.code = 'LA15185-4' or value.code = 'LA18921-9' or value.code = 'LA18922-7' or value.code = 'LA18925-0' or value.code = 'LA4216-3' or value.code = 'LA4389-8')))";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validateMedicationNotAdministeredReasonObservationValue(MedicationNotAdministeredReasonObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Not Administered Reason Observation Value</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL invariant for the '{@link #validateMedicationNotAdministeredReasonObservationValue(MedicationNotAdministeredReasonObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Not Administered Reason Observation Value</em>}' invariant operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateMedicationNotAdministeredReasonObservationValue(MedicationNotAdministeredReasonObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validateMedicationNotAdministeredReasonObservationValue(MedicationNotAdministeredReasonObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 
 	protected static Constraint VALIDATE_MEDICATION_NOT_ADMINISTERED_REASON_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param medicationNotAdministeredReasonObservation The receiving '<em><b>Medication Not Administered Reason Observation</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
+	* <!-- begin-model-doc -->
+	* @param medicationNotAdministeredReasonObservation The receiving '<em><b>Medication Not Administered Reason Observation</b></em>' model object.
+	* @param diagnostics The chain of diagnostics to which problems are to be appended.
+	* @param context The cache of context-specific information.
+	* <!-- end-model-doc -->
+	* @generated
+	*/
 
 	public static boolean validateMedicationNotAdministeredReasonObservationValue(
 			MedicationNotAdministeredReasonObservation medicationNotAdministeredReasonObservation,
@@ -244,36 +244,36 @@ public class MedicationNotAdministeredReasonObservationOperations extends Clinic
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateMedicationNotAdministeredReasonObservationValueP(MedicationNotAdministeredReasonObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Not Administered Reason Observation Value P</em>}' operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL expression body for the '{@link #validateMedicationNotAdministeredReasonObservationValueP(MedicationNotAdministeredReasonObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Not Administered Reason Observation Value P</em>}' operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateMedicationNotAdministeredReasonObservationValueP(MedicationNotAdministeredReasonObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validateMedicationNotAdministeredReasonObservationValueP(MedicationNotAdministeredReasonObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 	protected static final String VALIDATE_MEDICATION_NOT_ADMINISTERED_REASON_OBSERVATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | element.oclIsTypeOf(datatypes::CD)))";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validateMedicationNotAdministeredReasonObservationValueP(MedicationNotAdministeredReasonObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Not Administered Reason Observation Value P</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL invariant for the '{@link #validateMedicationNotAdministeredReasonObservationValueP(MedicationNotAdministeredReasonObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Not Administered Reason Observation Value P</em>}' invariant operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateMedicationNotAdministeredReasonObservationValueP(MedicationNotAdministeredReasonObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validateMedicationNotAdministeredReasonObservationValueP(MedicationNotAdministeredReasonObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 
 	protected static Constraint VALIDATE_MEDICATION_NOT_ADMINISTERED_REASON_OBSERVATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param medicationNotAdministeredReasonObservation The receiving '<em><b>Medication Not Administered Reason Observation</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
+	* <!-- begin-model-doc -->
+	* @param medicationNotAdministeredReasonObservation The receiving '<em><b>Medication Not Administered Reason Observation</b></em>' model object.
+	* @param diagnostics The chain of diagnostics to which problems are to be appended.
+	* @param context The cache of context-specific information.
+	* <!-- end-model-doc -->
+	* @generated
+	*/
 
 	public static boolean validateMedicationNotAdministeredReasonObservationValueP(
 			MedicationNotAdministeredReasonObservation medicationNotAdministeredReasonObservation,
@@ -306,36 +306,36 @@ public class MedicationNotAdministeredReasonObservationOperations extends Clinic
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateMedicationNotAdministeredReasonObservationMoodCode(MedicationNotAdministeredReasonObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Not Administered Reason Observation Mood Code</em>}' operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL expression body for the '{@link #validateMedicationNotAdministeredReasonObservationMoodCode(MedicationNotAdministeredReasonObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Not Administered Reason Observation Mood Code</em>}' operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateMedicationNotAdministeredReasonObservationMoodCode(MedicationNotAdministeredReasonObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validateMedicationNotAdministeredReasonObservationMoodCode(MedicationNotAdministeredReasonObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 	protected static final String VALIDATE_MEDICATION_NOT_ADMINISTERED_REASON_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "isDefined('moodCode')";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validateMedicationNotAdministeredReasonObservationMoodCode(MedicationNotAdministeredReasonObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Not Administered Reason Observation Mood Code</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL invariant for the '{@link #validateMedicationNotAdministeredReasonObservationMoodCode(MedicationNotAdministeredReasonObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Not Administered Reason Observation Mood Code</em>}' invariant operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateMedicationNotAdministeredReasonObservationMoodCode(MedicationNotAdministeredReasonObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validateMedicationNotAdministeredReasonObservationMoodCode(MedicationNotAdministeredReasonObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 
 	protected static Constraint VALIDATE_MEDICATION_NOT_ADMINISTERED_REASON_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param medicationNotAdministeredReasonObservation The receiving '<em><b>Medication Not Administered Reason Observation</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
+	* <!-- begin-model-doc -->
+	* @param medicationNotAdministeredReasonObservation The receiving '<em><b>Medication Not Administered Reason Observation</b></em>' model object.
+	* @param diagnostics The chain of diagnostics to which problems are to be appended.
+	* @param context The cache of context-specific information.
+	* <!-- end-model-doc -->
+	* @generated
+	*/
 
 	public static boolean validateMedicationNotAdministeredReasonObservationMoodCode(
 			MedicationNotAdministeredReasonObservation medicationNotAdministeredReasonObservation,

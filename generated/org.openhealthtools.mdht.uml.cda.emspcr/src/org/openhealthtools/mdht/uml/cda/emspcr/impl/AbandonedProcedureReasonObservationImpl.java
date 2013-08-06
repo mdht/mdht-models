@@ -36,29 +36,29 @@ import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
 public class AbandonedProcedureReasonObservationImpl extends ObservationImpl implements
 		AbandonedProcedureReasonObservation {
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	protected AbandonedProcedureReasonObservationImpl() {
 		super();
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	@Override
 	protected EClass eStaticClass() {
 		return EmspcrPackage.Literals.ABANDONED_PROCEDURE_REASON_OBSERVATION;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateAbandonedProcedureReasonObservationTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return AbandonedProcedureReasonObservationOperations.validateAbandonedProcedureReasonObservationTemplateId(
@@ -66,10 +66,10 @@ public class AbandonedProcedureReasonObservationImpl extends ObservationImpl imp
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateAbandonedProcedureReasonObservationCodeP(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return AbandonedProcedureReasonObservationOperations.validateAbandonedProcedureReasonObservationCodeP(
@@ -77,10 +77,10 @@ public class AbandonedProcedureReasonObservationImpl extends ObservationImpl imp
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateAbandonedProcedureReasonObservationCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return AbandonedProcedureReasonObservationOperations.validateAbandonedProcedureReasonObservationCode(
@@ -88,10 +88,10 @@ public class AbandonedProcedureReasonObservationImpl extends ObservationImpl imp
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateAbandonedProcedureReasonObservationValue(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return AbandonedProcedureReasonObservationOperations.validateAbandonedProcedureReasonObservationValue(
@@ -99,10 +99,10 @@ public class AbandonedProcedureReasonObservationImpl extends ObservationImpl imp
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateAbandonedProcedureReasonObservationValueP(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return AbandonedProcedureReasonObservationOperations.validateAbandonedProcedureReasonObservationValueP(
@@ -110,10 +110,10 @@ public class AbandonedProcedureReasonObservationImpl extends ObservationImpl imp
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateAbandonedProcedureReasonObservationMoodCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return AbandonedProcedureReasonObservationOperations.validateAbandonedProcedureReasonObservationMoodCode(
@@ -121,10 +121,10 @@ public class AbandonedProcedureReasonObservationImpl extends ObservationImpl imp
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public AbandonedProcedureReasonObservation init() {
 		return Initializer.Util.init(this);
 	}

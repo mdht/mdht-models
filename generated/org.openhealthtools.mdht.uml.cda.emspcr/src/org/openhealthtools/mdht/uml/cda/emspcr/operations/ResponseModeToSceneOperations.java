@@ -47,45 +47,45 @@ import org.openhealthtools.mdht.uml.cda.operations.ClinicalStatementOperations;
  */
 public class ResponseModeToSceneOperations extends ClinicalStatementOperations {
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	protected ResponseModeToSceneOperations() {
 		super();
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateResponseModeToSceneTemplateId(ResponseModeToScene, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Response Mode To Scene Template Id</em>}' operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL expression body for the '{@link #validateResponseModeToSceneTemplateId(ResponseModeToScene, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Response Mode To Scene Template Id</em>}' operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateResponseModeToSceneTemplateId(ResponseModeToScene, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validateResponseModeToSceneTemplateId(ResponseModeToScene, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 	protected static final String VALIDATE_RESPONSE_MODE_TO_SCENE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.1133883.17.3.10.1.98')";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validateResponseModeToSceneTemplateId(ResponseModeToScene, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Response Mode To Scene Template Id</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL invariant for the '{@link #validateResponseModeToSceneTemplateId(ResponseModeToScene, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Response Mode To Scene Template Id</em>}' invariant operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateResponseModeToSceneTemplateId(ResponseModeToScene, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validateResponseModeToSceneTemplateId(ResponseModeToScene, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 
 	protected static Constraint VALIDATE_RESPONSE_MODE_TO_SCENE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param responseModeToScene The receiving '<em><b>Response Mode To Scene</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
+	* <!-- begin-model-doc -->
+	* @param responseModeToScene The receiving '<em><b>Response Mode To Scene</b></em>' model object.
+	* @param diagnostics The chain of diagnostics to which problems are to be appended.
+	* @param context The cache of context-specific information.
+	* <!-- end-model-doc -->
+	* @generated
+	*/
 
 	public static boolean validateResponseModeToSceneTemplateId(ResponseModeToScene responseModeToScene,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
@@ -115,36 +115,36 @@ public class ResponseModeToSceneOperations extends ClinicalStatementOperations {
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateResponseModeToSceneCodeP(ResponseModeToScene, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Response Mode To Scene Code P</em>}' operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL expression body for the '{@link #validateResponseModeToSceneCodeP(ResponseModeToScene, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Response Mode To Scene Code P</em>}' operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateResponseModeToSceneCodeP(ResponseModeToScene, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validateResponseModeToSceneCodeP(ResponseModeToScene, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 	protected static final String VALIDATE_RESPONSE_MODE_TO_SCENE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined())";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validateResponseModeToSceneCodeP(ResponseModeToScene, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Response Mode To Scene Code P</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL invariant for the '{@link #validateResponseModeToSceneCodeP(ResponseModeToScene, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Response Mode To Scene Code P</em>}' invariant operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateResponseModeToSceneCodeP(ResponseModeToScene, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validateResponseModeToSceneCodeP(ResponseModeToScene, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 
 	protected static Constraint VALIDATE_RESPONSE_MODE_TO_SCENE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param responseModeToScene The receiving '<em><b>Response Mode To Scene</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
+	* <!-- begin-model-doc -->
+	* @param responseModeToScene The receiving '<em><b>Response Mode To Scene</b></em>' model object.
+	* @param diagnostics The chain of diagnostics to which problems are to be appended.
+	* @param context The cache of context-specific information.
+	* <!-- end-model-doc -->
+	* @generated
+	*/
 
 	public static boolean validateResponseModeToSceneCodeP(ResponseModeToScene responseModeToScene,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
@@ -185,38 +185,38 @@ public class ResponseModeToSceneOperations extends ClinicalStatementOperations {
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateResponseModeToSceneCode(ResponseModeToScene, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Response Mode To Scene Code</em>}' operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL expression body for the '{@link #validateResponseModeToSceneCode(ResponseModeToScene, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Response Mode To Scene Code</em>}' operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateResponseModeToSceneCode(ResponseModeToScene, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validateResponseModeToSceneCode(ResponseModeToScene, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 	protected static final String VALIDATE_RESPONSE_MODE_TO_SCENE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "
 			+ "let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "
 			+ "value.code = '67482-0' and value.codeSystem = '2.16.840.1.113883.6.1')";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validateResponseModeToSceneCode(ResponseModeToScene, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Response Mode To Scene Code</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL invariant for the '{@link #validateResponseModeToSceneCode(ResponseModeToScene, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Response Mode To Scene Code</em>}' invariant operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateResponseModeToSceneCode(ResponseModeToScene, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validateResponseModeToSceneCode(ResponseModeToScene, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 
 	protected static Constraint VALIDATE_RESPONSE_MODE_TO_SCENE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param responseModeToScene The receiving '<em><b>Response Mode To Scene</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
+	* <!-- begin-model-doc -->
+	* @param responseModeToScene The receiving '<em><b>Response Mode To Scene</b></em>' model object.
+	* @param diagnostics The chain of diagnostics to which problems are to be appended.
+	* @param context The cache of context-specific information.
+	* <!-- end-model-doc -->
+	* @generated
+	*/
 
 	public static boolean validateResponseModeToSceneCode(ResponseModeToScene responseModeToScene,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
@@ -253,38 +253,38 @@ public class ResponseModeToSceneOperations extends ClinicalStatementOperations {
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateResponseModeToSceneValue(ResponseModeToScene, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Response Mode To Scene Value</em>}' operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL expression body for the '{@link #validateResponseModeToSceneValue(ResponseModeToScene, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Response Mode To Scene Value</em>}' operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateResponseModeToSceneValue(ResponseModeToScene, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validateResponseModeToSceneValue(ResponseModeToScene, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 	protected static final String VALIDATE_RESPONSE_MODE_TO_SCENE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and "
 			+ "let value : datatypes::CD = element.oclAsType(datatypes::CD) in "
 			+ "value.codeSystem = '2.16.840.1.113883.6.1' and (value.code = 'LA17177-9' or value.code = 'LA17178-7' or value.code = 'LA17179-5' or value.code = 'LA17180-3')))";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validateResponseModeToSceneValue(ResponseModeToScene, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Response Mode To Scene Value</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL invariant for the '{@link #validateResponseModeToSceneValue(ResponseModeToScene, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Response Mode To Scene Value</em>}' invariant operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateResponseModeToSceneValue(ResponseModeToScene, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validateResponseModeToSceneValue(ResponseModeToScene, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 
 	protected static Constraint VALIDATE_RESPONSE_MODE_TO_SCENE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param responseModeToScene The receiving '<em><b>Response Mode To Scene</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
+	* <!-- begin-model-doc -->
+	* @param responseModeToScene The receiving '<em><b>Response Mode To Scene</b></em>' model object.
+	* @param diagnostics The chain of diagnostics to which problems are to be appended.
+	* @param context The cache of context-specific information.
+	* <!-- end-model-doc -->
+	* @generated
+	*/
 
 	public static boolean validateResponseModeToSceneValue(ResponseModeToScene responseModeToScene,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
@@ -313,36 +313,36 @@ public class ResponseModeToSceneOperations extends ClinicalStatementOperations {
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateResponseModeToSceneValueP(ResponseModeToScene, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Response Mode To Scene Value P</em>}' operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL expression body for the '{@link #validateResponseModeToSceneValueP(ResponseModeToScene, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Response Mode To Scene Value P</em>}' operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateResponseModeToSceneValueP(ResponseModeToScene, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validateResponseModeToSceneValueP(ResponseModeToScene, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 	protected static final String VALIDATE_RESPONSE_MODE_TO_SCENE_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | element.oclIsTypeOf(datatypes::CD)))";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validateResponseModeToSceneValueP(ResponseModeToScene, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Response Mode To Scene Value P</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL invariant for the '{@link #validateResponseModeToSceneValueP(ResponseModeToScene, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Response Mode To Scene Value P</em>}' invariant operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateResponseModeToSceneValueP(ResponseModeToScene, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validateResponseModeToSceneValueP(ResponseModeToScene, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 
 	protected static Constraint VALIDATE_RESPONSE_MODE_TO_SCENE_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param responseModeToScene The receiving '<em><b>Response Mode To Scene</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
+	* <!-- begin-model-doc -->
+	* @param responseModeToScene The receiving '<em><b>Response Mode To Scene</b></em>' model object.
+	* @param diagnostics The chain of diagnostics to which problems are to be appended.
+	* @param context The cache of context-specific information.
+	* <!-- end-model-doc -->
+	* @generated
+	*/
 
 	public static boolean validateResponseModeToSceneValueP(ResponseModeToScene responseModeToScene,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
@@ -371,36 +371,36 @@ public class ResponseModeToSceneOperations extends ClinicalStatementOperations {
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateResponseModeToSceneMoodCode(ResponseModeToScene, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Response Mode To Scene Mood Code</em>}' operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL expression body for the '{@link #validateResponseModeToSceneMoodCode(ResponseModeToScene, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Response Mode To Scene Mood Code</em>}' operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateResponseModeToSceneMoodCode(ResponseModeToScene, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validateResponseModeToSceneMoodCode(ResponseModeToScene, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 	protected static final String VALIDATE_RESPONSE_MODE_TO_SCENE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "isDefined('moodCode')";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validateResponseModeToSceneMoodCode(ResponseModeToScene, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Response Mode To Scene Mood Code</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL invariant for the '{@link #validateResponseModeToSceneMoodCode(ResponseModeToScene, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Response Mode To Scene Mood Code</em>}' invariant operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateResponseModeToSceneMoodCode(ResponseModeToScene, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validateResponseModeToSceneMoodCode(ResponseModeToScene, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 
 	protected static Constraint VALIDATE_RESPONSE_MODE_TO_SCENE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param responseModeToScene The receiving '<em><b>Response Mode To Scene</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
+	* <!-- begin-model-doc -->
+	* @param responseModeToScene The receiving '<em><b>Response Mode To Scene</b></em>' model object.
+	* @param diagnostics The chain of diagnostics to which problems are to be appended.
+	* @param context The cache of context-specific information.
+	* <!-- end-model-doc -->
+	* @generated
+	*/
 
 	public static boolean validateResponseModeToSceneMoodCode(ResponseModeToScene responseModeToScene,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {

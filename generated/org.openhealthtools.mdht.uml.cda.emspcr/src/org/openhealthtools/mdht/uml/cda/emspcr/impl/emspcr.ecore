@@ -113,6 +113,7 @@
       <details key="code.codeSystem" value="2.16.840.1.113883.6.1"/>
       <details key="code.codeSystemName" value="LOINC"/>
       <details key="constraints.validation.error" value="PatientCareReportDestinationParticipantParticipationDestinationRoleCode"/>
+      <details key="classCode" value="SDLOC"/>
     </eAnnotations>
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrPatientCareReportDestinationParticipantParticipationDestinationRoleDestinationOrganization">
       <details key="constraints.validation.error" value="PatientCareReportDestinationParticipantParticipationDestinationRoleDestinationOrganizationName"/>
@@ -3019,8 +3020,8 @@
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Procedure" eSuperTypes="http://www.openhealthtools.org/mdht/uml/cda/consol#//ProcedureActivityProcedure">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
-      <details key="constraints.validation.info" value="EMSPCRProcedureAbandonedProcedureRelationship EMSPCRProcedureAirwayConfirmationRelationship EMSPCRProcedureStatusCodeP EMSPCRProcedureApproachSiteCodeP EMSPCRProcedureNegationInd"/>
-      <details key="constraints.validation.error" value="EMSPCRProcedureProcedurePriorRelationship EMSPCRProcedureProcedureNumberOfAttemptsRelationship EMSPCRProcedureProcedureSuccessfulRelationship EMSPCRProcedureProcedureComplicationsRelationship EMSPCRProcedureProcedurePatientResponseRelationship EMSPCRProcedureProcedurePerformer EMSPCRProcedureTemplateId EMSPCRProcedureCode EMSPCRProcedureEffectiveTime EMSPCRProcedureStatusCode EMSPCRProcedureApproachSiteCode"/>
+      <details key="constraints.validation.info" value="EMSPCRProcedureAbandonedProcedureRelationship EMSPCRProcedureProcedureNumberOfAttemptsRelationship EMSPCRProcedureAirwayConfirmationRelationship EMSPCRProcedureStatusCodeP EMSPCRProcedureApproachSiteCodeP EMSPCRProcedureNegationInd"/>
+      <details key="constraints.validation.error" value="EMSPCRProcedureProcedurePriorRelationship EMSPCRProcedureProcedureSuccessfulRelationship EMSPCRProcedureProcedureComplicationsRelationship EMSPCRProcedureProcedurePatientResponseRelationship EMSPCRProcedureProcedurePerformer EMSPCRProcedureTemplateId EMSPCRProcedureCode EMSPCRProcedureEffectiveTime EMSPCRProcedureStatusCode EMSPCRProcedureApproachSiteCode"/>
       <details key="templateId.root" value="2.16.840.1.1133883.17.3.10.1.98"/>
       <details key="statusCode.code" value="Aborted"/>
       <details key="constraints.validation.dependOn.EMSPCRProcedureStatusCode" value="EMSPCRProcedureStatusCodeP"/>
@@ -3849,7 +3850,6 @@
       <details key="code.codeSystemName" value="LOINC"/>
       <details key="code.displayName" value="EMS Disposition Section"/>
       <details key="title.mixed" value="EMS Disposition"/>
-      <details key="constraints.validation.info" value="DispositionSectionEntry4"/>
     </eAnnotations>
     <eOperations name="DispositionSectionTemplateId" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
@@ -3888,15 +3888,6 @@
       </eParameters>
     </eOperations>
     <eOperations name="DispositionSectionText" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
-      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
-      <eParameters name="context">
-        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
-          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
-          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
-        </eGenericType>
-      </eParameters>
-    </eOperations>
-    <eOperations name="DispositionSectionEntry4" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
       <eParameters name="context">
         <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
@@ -3970,7 +3961,6 @@
         </eGenericType>
       </eParameters>
     </eOperations>
-    <eOperations name="getemspcrEntry4" ordered="false" lowerBound="1" eType="#//TransportMethodObservation"/>
     <eOperations name="getNumberOfPatientsObservation" ordered="false" lowerBound="1"
         eType="#//NumberOfPatientsObservation"/>
     <eOperations name="getIncidentDispositionObservation" ordered="false" lowerBound="1"
@@ -3985,75 +3975,6 @@
         eType="#//PrearrivalActivationObservation"/>
     <eOperations name="getPatientConditionChangeAtDestinationObservation" ordered="false"
         lowerBound="1" eType="#//PatientConditionChangeAtDestinationObservation"/>
-  </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="TransportMethodObservation" eSuperTypes="urn:hl7-org:v3#//Observation">
-    <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
-      <details key="constraints.validation.error" value="TransportMethodObservationTemplateId TransportMethodObservationCode TransportMethodObservationCodeP TransportMethodObservationValue TransportMethodObservationValueP TransportMethodObservationMoodCode"/>
-      <details key="templateId.root" value="2.16.840.1.1133883.17.3.10.1.34"/>
-      <details key="code.code" value="67549-6"/>
-      <details key="code.codeSystem" value="2.16.840.1.113883.6.1"/>
-      <details key="code.codeSystemName" value="LOINC"/>
-      <details key="code.displayName" value="EMS transport method"/>
-      <details key="constraints.validation.dependOn.TransportMethodObservationCode"
-          value="TransportMethodObservationCodeP"/>
-      <details key="value.codeSystem" value="2.16.840.1.113883.6.1"/>
-      <details key="value.codeSystemName" value="LOINC"/>
-      <details key="moodCode" value="EVN"/>
-    </eAnnotations>
-    <eOperations name="TransportMethodObservationTemplateId" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
-      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
-      <eParameters name="context">
-        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
-          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
-          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
-        </eGenericType>
-      </eParameters>
-    </eOperations>
-    <eOperations name="TransportMethodObservationCodeP" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
-      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
-      <eParameters name="context">
-        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
-          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
-          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
-        </eGenericType>
-      </eParameters>
-    </eOperations>
-    <eOperations name="TransportMethodObservationCode" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
-      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
-      <eParameters name="context">
-        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
-          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
-          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
-        </eGenericType>
-      </eParameters>
-    </eOperations>
-    <eOperations name="TransportMethodObservationValue" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
-      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
-      <eParameters name="context">
-        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
-          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
-          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
-        </eGenericType>
-      </eParameters>
-    </eOperations>
-    <eOperations name="TransportMethodObservationValueP" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
-      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
-      <eParameters name="context">
-        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
-          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
-          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
-        </eGenericType>
-      </eParameters>
-    </eOperations>
-    <eOperations name="TransportMethodObservationMoodCode" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
-      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
-      <eParameters name="context">
-        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
-          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
-          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
-        </eGenericType>
-      </eParameters>
-    </eOperations>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="NumberOfPatientsObservation" eSuperTypes="urn:hl7-org:v3#//Observation">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
@@ -4184,7 +4105,7 @@
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="TransportModeObservation" eSuperTypes="urn:hl7-org:v3#//Observation">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
-      <details key="constraints.validation.error" value="TransportModeObservationTemplateId TransportModeObservationCode TransportModeObservationCodeP TransportModeObservationValue TransportModeObservationMoodCode"/>
+      <details key="constraints.validation.error" value="TransportModeObservationTemplateId TransportModeObservationCode TransportModeObservationCodeP TransportModeObservationValue TransportModeObservationValueP TransportModeObservationMoodCode"/>
       <details key="templateId.root" value="2.16.840.1.1133883.17.3.10.1.33"/>
       <details key="code.code" value="67550-4"/>
       <details key="code.codeSystem" value="2.16.840.1.113883.6.1"/>
@@ -4192,6 +4113,8 @@
       <details key="code.displayName" value="EMS transport mode"/>
       <details key="constraints.validation.dependOn.TransportModeObservationCode"
           value="TransportModeObservationCodeP"/>
+      <details key="value.codeSystem" value="2.16.840.1.113883.6.1"/>
+      <details key="value.codeSystemName" value="LOINC"/>
       <details key="moodCode" value="EVN"/>
     </eAnnotations>
     <eOperations name="TransportModeObservationTemplateId" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
@@ -4230,7 +4153,85 @@
         </eGenericType>
       </eParameters>
     </eOperations>
+    <eOperations name="TransportModeObservationValueP" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
+      <eParameters name="context">
+        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
     <eOperations name="TransportModeObservationMoodCode" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
+      <eParameters name="context">
+        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="TransportMethodObservation" eSuperTypes="urn:hl7-org:v3#//Observation">
+    <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
+      <details key="constraints.validation.error" value="TransportMethodObservationTemplateId TransportMethodObservationCode TransportMethodObservationCodeP TransportMethodObservationValue TransportMethodObservationValueP TransportMethodObservationMoodCode"/>
+      <details key="templateId.root" value="2.16.840.1.1133883.17.3.10.1.34"/>
+      <details key="code.code" value="67549-6"/>
+      <details key="code.codeSystem" value="2.16.840.1.113883.6.1"/>
+      <details key="code.codeSystemName" value="LOINC"/>
+      <details key="code.displayName" value="EMS transport method"/>
+      <details key="constraints.validation.dependOn.TransportMethodObservationCode"
+          value="TransportMethodObservationCodeP"/>
+      <details key="value.codeSystem" value="2.16.840.1.113883.6.1"/>
+      <details key="value.codeSystemName" value="LOINC"/>
+      <details key="moodCode" value="EVN"/>
+    </eAnnotations>
+    <eOperations name="TransportMethodObservationTemplateId" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
+      <eParameters name="context">
+        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations name="TransportMethodObservationCodeP" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
+      <eParameters name="context">
+        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations name="TransportMethodObservationCode" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
+      <eParameters name="context">
+        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations name="TransportMethodObservationValue" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
+      <eParameters name="context">
+        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations name="TransportMethodObservationValueP" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
+      <eParameters name="context">
+        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations name="TransportMethodObservationMoodCode" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
       <eParameters name="context">
         <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
@@ -5343,7 +5344,8 @@
         </eGenericType>
       </eParameters>
     </eOperations>
-    <eOperations name="getComplaint" ordered="false" lowerBound="1" eType="#//Complaint"/>
+    <eOperations name="getComplaints" ordered="false" lowerBound="1" upperBound="-1"
+        eType="#//Complaint"/>
     <eOperations name="getPossibleInjury" ordered="false" lowerBound="1" eType="#//PossibleInjury"/>
     <eOperations name="getProviderPrimaryImpression" ordered="false" lowerBound="1"
         eType="#//ProviderPrimaryImpression"/>
@@ -6524,7 +6526,7 @@
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="VitalSignsSection" eSuperTypes="http://www.openhealthtools.org/mdht/uml/cda/consol#//VitalSignsSection">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
-      <details key="constraints.validation.error" value="EMSPCRVitalSignsSectionTemplateId EMSPCRVitalSignsSectionCode EMSPCRVitalSignsSectionTitle EMSPCRVitalSignsSectionText EMSPCRVitalSignsSectionVitalSignsOrganizer EMSPCRVitalSignsSectionPriorAidVitals EMSPCRVitalSignsSectionAdditionalVitalSignsOrganizer"/>
+      <details key="constraints.validation.error" value="EMSPCRVitalSignsSectionTemplateId EMSPCRVitalSignsSectionCode EMSPCRVitalSignsSectionTitle EMSPCRVitalSignsSectionText EMSPCRVitalSignsSectionVitalSignsOrganizer EMSPCRVitalSignsSectionAdditionalVitalSignsOrganizer"/>
       <details key="templateId.root" value="2.16.840.1.113883.17.3.10.1.23"/>
       <details key="code.code" value="8716-3"/>
       <details key="code.codeSystem" value="2.16.840.1.113883.6.1"/>
@@ -6581,15 +6583,6 @@
         </eGenericType>
       </eParameters>
     </eOperations>
-    <eOperations name="EMSPCRVitalSignsSectionPriorAidVitals" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
-      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
-      <eParameters name="context">
-        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
-          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
-          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
-        </eGenericType>
-      </eParameters>
-    </eOperations>
     <eOperations name="EMSPCRVitalSignsSectionAdditionalVitalSignsOrganizer" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
       <eParameters name="context">
@@ -6599,11 +6592,10 @@
         </eGenericType>
       </eParameters>
     </eOperations>
-    <eOperations name="getemspcrVitalSignsOrganizer" ordered="false" lowerBound="1"
-        eType="#//VitalSignsOrganizer"/>
-    <eOperations name="getPriorAidVitals" ordered="false" lowerBound="1" eType="#//PriorAidVitals"/>
-    <eOperations name="getAdditionalVitalSignsOrganizer" ordered="false" lowerBound="1"
-        eType="#//AdditionalVitalSignsOrganizer"/>
+    <eOperations name="getemspcrVitalSignsOrganizers" ordered="false" lowerBound="1"
+        upperBound="-1" eType="#//VitalSignsOrganizer"/>
+    <eOperations name="getAdditionalVitalSignsOrganizers" ordered="false" lowerBound="1"
+        upperBound="-1" eType="#//AdditionalVitalSignsOrganizer"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="VitalSignsOrganizer" eSuperTypes="http://www.openhealthtools.org/mdht/uml/cda/consol#//VitalSignsOrganizer">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
@@ -6704,6 +6696,7 @@
         </eGenericType>
       </eParameters>
     </eOperations>
+    <eOperations name="getPriorAidVitals" ordered="false" lowerBound="1" eType="#//PriorAidVitals"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="PriorAidVitals" eSuperTypes="urn:hl7-org:v3#//Observation">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">

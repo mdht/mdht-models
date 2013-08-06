@@ -35,29 +35,29 @@ import org.openhealthtools.mdht.uml.cda.impl.SectionImpl;
  */
 public class PatientCareNarrativeSectionImpl extends SectionImpl implements PatientCareNarrativeSection {
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	protected PatientCareNarrativeSectionImpl() {
 		super();
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	@Override
 	protected EClass eStaticClass() {
 		return EmspcrPackage.Literals.PATIENT_CARE_NARRATIVE_SECTION;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validatePatientCareNarrativeSectionTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return PatientCareNarrativeSectionOperations.validatePatientCareNarrativeSectionTemplateId(
@@ -65,48 +65,48 @@ public class PatientCareNarrativeSectionImpl extends SectionImpl implements Pati
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validatePatientCareNarrativeSectionCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PatientCareNarrativeSectionOperations.validatePatientCareNarrativeSectionCode(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validatePatientCareNarrativeSectionCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PatientCareNarrativeSectionOperations.validatePatientCareNarrativeSectionCodeP(
 			this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validatePatientCareNarrativeSectionTitle(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PatientCareNarrativeSectionOperations.validatePatientCareNarrativeSectionTitle(
 			this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validatePatientCareNarrativeSectionText(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PatientCareNarrativeSectionOperations.validatePatientCareNarrativeSectionText(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public PatientCareNarrativeSection init() {
 		return Initializer.Util.init(this);
 	}

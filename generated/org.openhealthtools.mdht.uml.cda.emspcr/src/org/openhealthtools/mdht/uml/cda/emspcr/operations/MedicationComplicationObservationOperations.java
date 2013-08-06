@@ -47,45 +47,45 @@ import org.openhealthtools.mdht.uml.cda.operations.ClinicalStatementOperations;
  */
 public class MedicationComplicationObservationOperations extends ClinicalStatementOperations {
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	protected MedicationComplicationObservationOperations() {
 		super();
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateMedicationComplicationObservationTemplateId(MedicationComplicationObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Complication Observation Template Id</em>}' operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL expression body for the '{@link #validateMedicationComplicationObservationTemplateId(MedicationComplicationObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Complication Observation Template Id</em>}' operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateMedicationComplicationObservationTemplateId(MedicationComplicationObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validateMedicationComplicationObservationTemplateId(MedicationComplicationObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 	protected static final String VALIDATE_MEDICATION_COMPLICATION_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.1133883.17.3.10.1.107')";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validateMedicationComplicationObservationTemplateId(MedicationComplicationObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Complication Observation Template Id</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL invariant for the '{@link #validateMedicationComplicationObservationTemplateId(MedicationComplicationObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Complication Observation Template Id</em>}' invariant operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateMedicationComplicationObservationTemplateId(MedicationComplicationObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validateMedicationComplicationObservationTemplateId(MedicationComplicationObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 
 	protected static Constraint VALIDATE_MEDICATION_COMPLICATION_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param medicationComplicationObservation The receiving '<em><b>Medication Complication Observation</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
+	* <!-- begin-model-doc -->
+	* @param medicationComplicationObservation The receiving '<em><b>Medication Complication Observation</b></em>' model object.
+	* @param diagnostics The chain of diagnostics to which problems are to be appended.
+	* @param context The cache of context-specific information.
+	* <!-- end-model-doc -->
+	* @generated
+	*/
 
 	public static boolean validateMedicationComplicationObservationTemplateId(
 			MedicationComplicationObservation medicationComplicationObservation, DiagnosticChain diagnostics,
@@ -118,36 +118,36 @@ public class MedicationComplicationObservationOperations extends ClinicalStateme
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateMedicationComplicationObservationCodeP(MedicationComplicationObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Complication Observation Code P</em>}' operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL expression body for the '{@link #validateMedicationComplicationObservationCodeP(MedicationComplicationObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Complication Observation Code P</em>}' operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateMedicationComplicationObservationCodeP(MedicationComplicationObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validateMedicationComplicationObservationCodeP(MedicationComplicationObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 	protected static final String VALIDATE_MEDICATION_COMPLICATION_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined())";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validateMedicationComplicationObservationCodeP(MedicationComplicationObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Complication Observation Code P</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL invariant for the '{@link #validateMedicationComplicationObservationCodeP(MedicationComplicationObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Complication Observation Code P</em>}' invariant operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateMedicationComplicationObservationCodeP(MedicationComplicationObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validateMedicationComplicationObservationCodeP(MedicationComplicationObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 
 	protected static Constraint VALIDATE_MEDICATION_COMPLICATION_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param medicationComplicationObservation The receiving '<em><b>Medication Complication Observation</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
+	* <!-- begin-model-doc -->
+	* @param medicationComplicationObservation The receiving '<em><b>Medication Complication Observation</b></em>' model object.
+	* @param diagnostics The chain of diagnostics to which problems are to be appended.
+	* @param context The cache of context-specific information.
+	* <!-- end-model-doc -->
+	* @generated
+	*/
 
 	public static boolean validateMedicationComplicationObservationCodeP(
 			MedicationComplicationObservation medicationComplicationObservation, DiagnosticChain diagnostics,
@@ -191,38 +191,38 @@ public class MedicationComplicationObservationOperations extends ClinicalStateme
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateMedicationComplicationObservationCode(MedicationComplicationObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Complication Observation Code</em>}' operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL expression body for the '{@link #validateMedicationComplicationObservationCode(MedicationComplicationObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Complication Observation Code</em>}' operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateMedicationComplicationObservationCode(MedicationComplicationObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validateMedicationComplicationObservationCode(MedicationComplicationObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 	protected static final String VALIDATE_MEDICATION_COMPLICATION_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "
 			+ "let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "
 			+ "value.code = '67541-3' and value.codeSystem = '2.16.840.1.113883.6.1')";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validateMedicationComplicationObservationCode(MedicationComplicationObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Complication Observation Code</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL invariant for the '{@link #validateMedicationComplicationObservationCode(MedicationComplicationObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Complication Observation Code</em>}' invariant operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateMedicationComplicationObservationCode(MedicationComplicationObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validateMedicationComplicationObservationCode(MedicationComplicationObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 
 	protected static Constraint VALIDATE_MEDICATION_COMPLICATION_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param medicationComplicationObservation The receiving '<em><b>Medication Complication Observation</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
+	* <!-- begin-model-doc -->
+	* @param medicationComplicationObservation The receiving '<em><b>Medication Complication Observation</b></em>' model object.
+	* @param diagnostics The chain of diagnostics to which problems are to be appended.
+	* @param context The cache of context-specific information.
+	* <!-- end-model-doc -->
+	* @generated
+	*/
 
 	public static boolean validateMedicationComplicationObservationCode(
 			MedicationComplicationObservation medicationComplicationObservation, DiagnosticChain diagnostics,
@@ -262,38 +262,38 @@ public class MedicationComplicationObservationOperations extends ClinicalStateme
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateMedicationComplicationObservationValue(MedicationComplicationObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Complication Observation Value</em>}' operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL expression body for the '{@link #validateMedicationComplicationObservationValue(MedicationComplicationObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Complication Observation Value</em>}' operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateMedicationComplicationObservationValue(MedicationComplicationObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validateMedicationComplicationObservationValue(MedicationComplicationObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 	protected static final String VALIDATE_MEDICATION_COMPLICATION_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and "
 			+ "let value : datatypes::CD = element.oclAsType(datatypes::CD) in "
 			+ "value.codeSystem = '2.16.840.1.113883.6.1' and (value.code = 'LA137-2' or value.code = 'LA15098-9' or value.code = 'LA15099-7' or value.code = 'LA15424-7' or value.code = 'LA17059-9' or value.code = 'LA17392-4' or value.code = 'LA17393-2' or value.code = 'LA17394-0' or value.code = 'LA17396-5' or value.code = 'TMP-LA17397-3a' or value.code = 'LA17713-1' or value.code = 'LA17714-9' or value.code = 'LA18266-9' or value.code = 'LA18267-7' or value.code = 'LA7418-2' or value.code = 'LA7434-9' or value.code = 'LA7443-0' or value.code = 'LA7444-8' or value.code = 'LA9540-1' or value.code = 'LA9541-9' or value.code = 'LA9548-4' or value.code = 'TMP-LA17397-3b')))";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validateMedicationComplicationObservationValue(MedicationComplicationObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Complication Observation Value</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL invariant for the '{@link #validateMedicationComplicationObservationValue(MedicationComplicationObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Complication Observation Value</em>}' invariant operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateMedicationComplicationObservationValue(MedicationComplicationObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validateMedicationComplicationObservationValue(MedicationComplicationObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 
 	protected static Constraint VALIDATE_MEDICATION_COMPLICATION_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param medicationComplicationObservation The receiving '<em><b>Medication Complication Observation</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
+	* <!-- begin-model-doc -->
+	* @param medicationComplicationObservation The receiving '<em><b>Medication Complication Observation</b></em>' model object.
+	* @param diagnostics The chain of diagnostics to which problems are to be appended.
+	* @param context The cache of context-specific information.
+	* <!-- end-model-doc -->
+	* @generated
+	*/
 
 	public static boolean validateMedicationComplicationObservationValue(
 			MedicationComplicationObservation medicationComplicationObservation, DiagnosticChain diagnostics,
@@ -324,36 +324,36 @@ public class MedicationComplicationObservationOperations extends ClinicalStateme
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateMedicationComplicationObservationValueP(MedicationComplicationObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Complication Observation Value P</em>}' operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL expression body for the '{@link #validateMedicationComplicationObservationValueP(MedicationComplicationObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Complication Observation Value P</em>}' operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateMedicationComplicationObservationValueP(MedicationComplicationObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validateMedicationComplicationObservationValueP(MedicationComplicationObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 	protected static final String VALIDATE_MEDICATION_COMPLICATION_OBSERVATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->forAll(element | element.oclIsTypeOf(datatypes::CD)))";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validateMedicationComplicationObservationValueP(MedicationComplicationObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Complication Observation Value P</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL invariant for the '{@link #validateMedicationComplicationObservationValueP(MedicationComplicationObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Complication Observation Value P</em>}' invariant operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateMedicationComplicationObservationValueP(MedicationComplicationObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validateMedicationComplicationObservationValueP(MedicationComplicationObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 
 	protected static Constraint VALIDATE_MEDICATION_COMPLICATION_OBSERVATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param medicationComplicationObservation The receiving '<em><b>Medication Complication Observation</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
+	* <!-- begin-model-doc -->
+	* @param medicationComplicationObservation The receiving '<em><b>Medication Complication Observation</b></em>' model object.
+	* @param diagnostics The chain of diagnostics to which problems are to be appended.
+	* @param context The cache of context-specific information.
+	* <!-- end-model-doc -->
+	* @generated
+	*/
 
 	public static boolean validateMedicationComplicationObservationValueP(
 			MedicationComplicationObservation medicationComplicationObservation, DiagnosticChain diagnostics,
@@ -384,36 +384,36 @@ public class MedicationComplicationObservationOperations extends ClinicalStateme
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateMedicationComplicationObservationMoodCode(MedicationComplicationObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Complication Observation Mood Code</em>}' operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL expression body for the '{@link #validateMedicationComplicationObservationMoodCode(MedicationComplicationObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Complication Observation Mood Code</em>}' operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateMedicationComplicationObservationMoodCode(MedicationComplicationObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validateMedicationComplicationObservationMoodCode(MedicationComplicationObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 	protected static final String VALIDATE_MEDICATION_COMPLICATION_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "isDefined('moodCode')";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validateMedicationComplicationObservationMoodCode(MedicationComplicationObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Complication Observation Mood Code</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL invariant for the '{@link #validateMedicationComplicationObservationMoodCode(MedicationComplicationObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Complication Observation Mood Code</em>}' invariant operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateMedicationComplicationObservationMoodCode(MedicationComplicationObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validateMedicationComplicationObservationMoodCode(MedicationComplicationObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 
 	protected static Constraint VALIDATE_MEDICATION_COMPLICATION_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param medicationComplicationObservation The receiving '<em><b>Medication Complication Observation</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
+	* <!-- begin-model-doc -->
+	* @param medicationComplicationObservation The receiving '<em><b>Medication Complication Observation</b></em>' model object.
+	* @param diagnostics The chain of diagnostics to which problems are to be appended.
+	* @param context The cache of context-specific information.
+	* <!-- end-model-doc -->
+	* @generated
+	*/
 
 	public static boolean validateMedicationComplicationObservationMoodCode(
 			MedicationComplicationObservation medicationComplicationObservation, DiagnosticChain diagnostics,

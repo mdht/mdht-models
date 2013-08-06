@@ -36,29 +36,29 @@ import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
 public class ProcedurePatientResponseObservationImpl extends ObservationImpl implements
 		ProcedurePatientResponseObservation {
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	protected ProcedurePatientResponseObservationImpl() {
 		super();
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	@Override
 	protected EClass eStaticClass() {
 		return EmspcrPackage.Literals.PROCEDURE_PATIENT_RESPONSE_OBSERVATION;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateProcedurePatientResponseObservationTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ProcedurePatientResponseObservationOperations.validateProcedurePatientResponseObservationTemplateId(
@@ -66,10 +66,10 @@ public class ProcedurePatientResponseObservationImpl extends ObservationImpl imp
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateProcedurePatientResponseObservationCodeP(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ProcedurePatientResponseObservationOperations.validateProcedurePatientResponseObservationCodeP(
@@ -77,10 +77,10 @@ public class ProcedurePatientResponseObservationImpl extends ObservationImpl imp
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateProcedurePatientResponseObservationCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ProcedurePatientResponseObservationOperations.validateProcedurePatientResponseObservationCode(
@@ -88,10 +88,10 @@ public class ProcedurePatientResponseObservationImpl extends ObservationImpl imp
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateProcedurePatientResponseObservationValue(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ProcedurePatientResponseObservationOperations.validateProcedurePatientResponseObservationValue(
@@ -99,10 +99,10 @@ public class ProcedurePatientResponseObservationImpl extends ObservationImpl imp
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateProcedurePatientResponseObservationValueP(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ProcedurePatientResponseObservationOperations.validateProcedurePatientResponseObservationValueP(
@@ -110,10 +110,10 @@ public class ProcedurePatientResponseObservationImpl extends ObservationImpl imp
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateProcedurePatientResponseObservationMoodCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ProcedurePatientResponseObservationOperations.validateProcedurePatientResponseObservationMoodCode(
@@ -121,10 +121,10 @@ public class ProcedurePatientResponseObservationImpl extends ObservationImpl imp
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public ProcedurePatientResponseObservation init() {
 		return Initializer.Util.init(this);
 	}

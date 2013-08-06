@@ -35,48 +35,48 @@ import org.openhealthtools.mdht.uml.cda.emspcr.operations.DrugAllergyProblemActO
  */
 public class DrugAllergyProblemActImpl extends AllergyProblemActImpl implements DrugAllergyProblemAct {
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	protected DrugAllergyProblemActImpl() {
 		super();
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	@Override
 	protected EClass eStaticClass() {
 		return EmspcrPackage.Literals.DRUG_ALLERGY_PROBLEM_ACT;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateDrugAllergyProblemActParticipant1(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return DrugAllergyProblemActOperations.validateDrugAllergyProblemActParticipant1(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	@Override
 	public boolean validateAllergyProblemActTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return DrugAllergyProblemActOperations.validateAllergyProblemActTemplateId(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	@Override
 	public DrugAllergyProblemAct init() {
 		return Initializer.Util.init(this);

@@ -48,45 +48,45 @@ import org.openhealthtools.mdht.uml.cda.operations.ClinicalStatementOperations;
  */
 public class HeartAssessmentOperations extends ClinicalStatementOperations {
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	protected HeartAssessmentOperations() {
 		super();
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateHeartAssessmentTemplateId(HeartAssessment, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Heart Assessment Template Id</em>}' operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL expression body for the '{@link #validateHeartAssessmentTemplateId(HeartAssessment, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Heart Assessment Template Id</em>}' operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateHeartAssessmentTemplateId(HeartAssessment, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validateHeartAssessmentTemplateId(HeartAssessment, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 	protected static final String VALIDATE_HEART_ASSESSMENT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.1133883.17.3.10.1.116')";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validateHeartAssessmentTemplateId(HeartAssessment, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Heart Assessment Template Id</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL invariant for the '{@link #validateHeartAssessmentTemplateId(HeartAssessment, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Heart Assessment Template Id</em>}' invariant operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateHeartAssessmentTemplateId(HeartAssessment, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validateHeartAssessmentTemplateId(HeartAssessment, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 
 	protected static Constraint VALIDATE_HEART_ASSESSMENT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param heartAssessment The receiving '<em><b>Heart Assessment</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
+	* <!-- begin-model-doc -->
+	* @param heartAssessment The receiving '<em><b>Heart Assessment</b></em>' model object.
+	* @param diagnostics The chain of diagnostics to which problems are to be appended.
+	* @param context The cache of context-specific information.
+	* <!-- end-model-doc -->
+	* @generated
+	*/
 
 	public static boolean validateHeartAssessmentTemplateId(HeartAssessment heartAssessment,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
@@ -115,36 +115,36 @@ public class HeartAssessmentOperations extends ClinicalStatementOperations {
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateHeartAssessmentCodeP(HeartAssessment, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Heart Assessment Code P</em>}' operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL expression body for the '{@link #validateHeartAssessmentCodeP(HeartAssessment, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Heart Assessment Code P</em>}' operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateHeartAssessmentCodeP(HeartAssessment, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validateHeartAssessmentCodeP(HeartAssessment, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 	protected static final String VALIDATE_HEART_ASSESSMENT_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined())";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validateHeartAssessmentCodeP(HeartAssessment, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Heart Assessment Code P</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL invariant for the '{@link #validateHeartAssessmentCodeP(HeartAssessment, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Heart Assessment Code P</em>}' invariant operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateHeartAssessmentCodeP(HeartAssessment, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validateHeartAssessmentCodeP(HeartAssessment, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 
 	protected static Constraint VALIDATE_HEART_ASSESSMENT_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param heartAssessment The receiving '<em><b>Heart Assessment</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
+	* <!-- begin-model-doc -->
+	* @param heartAssessment The receiving '<em><b>Heart Assessment</b></em>' model object.
+	* @param diagnostics The chain of diagnostics to which problems are to be appended.
+	* @param context The cache of context-specific information.
+	* <!-- end-model-doc -->
+	* @generated
+	*/
 
 	public static boolean validateHeartAssessmentCodeP(HeartAssessment heartAssessment, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
@@ -185,38 +185,38 @@ public class HeartAssessmentOperations extends ClinicalStatementOperations {
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateHeartAssessmentCode(HeartAssessment, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Heart Assessment Code</em>}' operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL expression body for the '{@link #validateHeartAssessmentCode(HeartAssessment, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Heart Assessment Code</em>}' operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateHeartAssessmentCode(HeartAssessment, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validateHeartAssessmentCode(HeartAssessment, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 	protected static final String VALIDATE_HEART_ASSESSMENT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "
 			+ "let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "
 			+ "value.code = '67529-8' and value.codeSystem = '2.16.840.1.113883.6.1')";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validateHeartAssessmentCode(HeartAssessment, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Heart Assessment Code</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL invariant for the '{@link #validateHeartAssessmentCode(HeartAssessment, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Heart Assessment Code</em>}' invariant operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateHeartAssessmentCode(HeartAssessment, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validateHeartAssessmentCode(HeartAssessment, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 
 	protected static Constraint VALIDATE_HEART_ASSESSMENT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param heartAssessment The receiving '<em><b>Heart Assessment</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
+	* <!-- begin-model-doc -->
+	* @param heartAssessment The receiving '<em><b>Heart Assessment</b></em>' model object.
+	* @param diagnostics The chain of diagnostics to which problems are to be appended.
+	* @param context The cache of context-specific information.
+	* <!-- end-model-doc -->
+	* @generated
+	*/
 
 	public static boolean validateHeartAssessmentCode(HeartAssessment heartAssessment, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
@@ -252,38 +252,38 @@ public class HeartAssessmentOperations extends ClinicalStatementOperations {
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateHeartAssessmentValue(HeartAssessment, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Heart Assessment Value</em>}' operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL expression body for the '{@link #validateHeartAssessmentValue(HeartAssessment, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Heart Assessment Value</em>}' operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateHeartAssessmentValue(HeartAssessment, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validateHeartAssessmentValue(HeartAssessment, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 	protected static final String VALIDATE_HEART_ASSESSMENT_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (not self.value->isEmpty() and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and "
 			+ "let value : datatypes::CD = element.oclAsType(datatypes::CD) in "
 			+ "value.codeSystem = '2.16.840.1.113883.6.1' and (value.code = 'LA17239-7' or value.code = 'LA17240-5' or value.code = 'LA17241-3' or value.code = 'LA18241-2' or value.code = 'LA18242-0' or value.code = 'LA18243-8' or value.code = 'LA18244-6' or value.code = 'LA18245-3' or value.code = 'LA18246-1' or value.code = 'LA6626-1' or value.code = 'LA6630-3')))";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validateHeartAssessmentValue(HeartAssessment, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Heart Assessment Value</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL invariant for the '{@link #validateHeartAssessmentValue(HeartAssessment, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Heart Assessment Value</em>}' invariant operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateHeartAssessmentValue(HeartAssessment, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validateHeartAssessmentValue(HeartAssessment, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 
 	protected static Constraint VALIDATE_HEART_ASSESSMENT_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param heartAssessment The receiving '<em><b>Heart Assessment</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
+	* <!-- begin-model-doc -->
+	* @param heartAssessment The receiving '<em><b>Heart Assessment</b></em>' model object.
+	* @param diagnostics The chain of diagnostics to which problems are to be appended.
+	* @param context The cache of context-specific information.
+	* <!-- end-model-doc -->
+	* @generated
+	*/
 
 	public static boolean validateHeartAssessmentValue(HeartAssessment heartAssessment, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
@@ -312,36 +312,36 @@ public class HeartAssessmentOperations extends ClinicalStatementOperations {
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateHeartAssessmentValueP(HeartAssessment, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Heart Assessment Value P</em>}' operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL expression body for the '{@link #validateHeartAssessmentValueP(HeartAssessment, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Heart Assessment Value P</em>}' operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateHeartAssessmentValueP(HeartAssessment, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validateHeartAssessmentValueP(HeartAssessment, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 	protected static final String VALIDATE_HEART_ASSESSMENT_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (not self.value->isEmpty() and self.value->forAll(element | element.oclIsTypeOf(datatypes::CD)))";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validateHeartAssessmentValueP(HeartAssessment, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Heart Assessment Value P</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL invariant for the '{@link #validateHeartAssessmentValueP(HeartAssessment, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Heart Assessment Value P</em>}' invariant operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateHeartAssessmentValueP(HeartAssessment, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validateHeartAssessmentValueP(HeartAssessment, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 
 	protected static Constraint VALIDATE_HEART_ASSESSMENT_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param heartAssessment The receiving '<em><b>Heart Assessment</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
+	* <!-- begin-model-doc -->
+	* @param heartAssessment The receiving '<em><b>Heart Assessment</b></em>' model object.
+	* @param diagnostics The chain of diagnostics to which problems are to be appended.
+	* @param context The cache of context-specific information.
+	* <!-- end-model-doc -->
+	* @generated
+	*/
 
 	public static boolean validateHeartAssessmentValueP(HeartAssessment heartAssessment, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
@@ -370,36 +370,36 @@ public class HeartAssessmentOperations extends ClinicalStatementOperations {
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateHeartAssessmentEffectiveTime(HeartAssessment, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Heart Assessment Effective Time</em>}' operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL expression body for the '{@link #validateHeartAssessmentEffectiveTime(HeartAssessment, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Heart Assessment Effective Time</em>}' operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateHeartAssessmentEffectiveTime(HeartAssessment, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validateHeartAssessmentEffectiveTime(HeartAssessment, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 	protected static final String VALIDATE_HEART_ASSESSMENT_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.effectiveTime.oclIsUndefined() or self.effectiveTime.isNullFlavorUndefined()) implies (not self.effectiveTime.oclIsUndefined())";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validateHeartAssessmentEffectiveTime(HeartAssessment, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Heart Assessment Effective Time</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL invariant for the '{@link #validateHeartAssessmentEffectiveTime(HeartAssessment, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Heart Assessment Effective Time</em>}' invariant operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateHeartAssessmentEffectiveTime(HeartAssessment, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validateHeartAssessmentEffectiveTime(HeartAssessment, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 
 	protected static Constraint VALIDATE_HEART_ASSESSMENT_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param heartAssessment The receiving '<em><b>Heart Assessment</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
+	* <!-- begin-model-doc -->
+	* @param heartAssessment The receiving '<em><b>Heart Assessment</b></em>' model object.
+	* @param diagnostics The chain of diagnostics to which problems are to be appended.
+	* @param context The cache of context-specific information.
+	* <!-- end-model-doc -->
+	* @generated
+	*/
 
 	public static boolean validateHeartAssessmentEffectiveTime(HeartAssessment heartAssessment,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
@@ -428,36 +428,36 @@ public class HeartAssessmentOperations extends ClinicalStatementOperations {
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateHeartAssessmentMoodCode(HeartAssessment, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Heart Assessment Mood Code</em>}' operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL expression body for the '{@link #validateHeartAssessmentMoodCode(HeartAssessment, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Heart Assessment Mood Code</em>}' operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateHeartAssessmentMoodCode(HeartAssessment, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validateHeartAssessmentMoodCode(HeartAssessment, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 	protected static final String VALIDATE_HEART_ASSESSMENT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "isDefined('moodCode')";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validateHeartAssessmentMoodCode(HeartAssessment, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Heart Assessment Mood Code</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL invariant for the '{@link #validateHeartAssessmentMoodCode(HeartAssessment, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Heart Assessment Mood Code</em>}' invariant operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateHeartAssessmentMoodCode(HeartAssessment, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validateHeartAssessmentMoodCode(HeartAssessment, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 
 	protected static Constraint VALIDATE_HEART_ASSESSMENT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param heartAssessment The receiving '<em><b>Heart Assessment</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
+	* <!-- begin-model-doc -->
+	* @param heartAssessment The receiving '<em><b>Heart Assessment</b></em>' model object.
+	* @param diagnostics The chain of diagnostics to which problems are to be appended.
+	* @param context The cache of context-specific information.
+	* <!-- end-model-doc -->
+	* @generated
+	*/
 
 	public static boolean validateHeartAssessmentMoodCode(HeartAssessment heartAssessment, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {

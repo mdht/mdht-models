@@ -35,75 +35,75 @@ import org.openhealthtools.mdht.uml.cda.emspcr.operations.BodyTemperatureOperati
  */
 public class BodyTemperatureImpl extends VitalSignObservationImpl implements BodyTemperature {
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	protected BodyTemperatureImpl() {
 		super();
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	@Override
 	protected EClass eStaticClass() {
 		return EmspcrPackage.Literals.BODY_TEMPERATURE;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateBodyTemperatureCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return BodyTemperatureOperations.validateBodyTemperatureCode(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateBodyTemperatureValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return BodyTemperatureOperations.validateBodyTemperatureValue(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateBodyTemperatureEffectiveTime(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return BodyTemperatureOperations.validateBodyTemperatureEffectiveTime(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateBodyTemperatureMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return BodyTemperatureOperations.validateBodyTemperatureMoodCode(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	@Override
 	public boolean validateVitalSignObservationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return BodyTemperatureOperations.validateVitalSignObservationTemplateId(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	@Override
 	public BodyTemperature init() {
 		return Initializer.Util.init(this);

@@ -35,65 +35,65 @@ import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
  */
 public class CurrentlyOnMedicationImpl extends ObservationImpl implements CurrentlyOnMedication {
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	protected CurrentlyOnMedicationImpl() {
 		super();
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	@Override
 	protected EClass eStaticClass() {
 		return EmspcrPackage.Literals.CURRENTLY_ON_MEDICATION;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateCurrentlyOnMedicationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return CurrentlyOnMedicationOperations.validateCurrentlyOnMedicationTemplateId(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateCurrentlyOnMedicationCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return CurrentlyOnMedicationOperations.validateCurrentlyOnMedicationCode(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateCurrentlyOnMedicationValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return CurrentlyOnMedicationOperations.validateCurrentlyOnMedicationValue(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateCurrentlyOnMedicationMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return CurrentlyOnMedicationOperations.validateCurrentlyOnMedicationMoodCode(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public CurrentlyOnMedication init() {
 		return Initializer.Util.init(this);
 	}

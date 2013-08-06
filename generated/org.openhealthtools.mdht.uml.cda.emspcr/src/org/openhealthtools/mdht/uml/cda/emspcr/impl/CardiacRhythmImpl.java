@@ -35,119 +35,119 @@ import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
  */
 public class CardiacRhythmImpl extends ObservationImpl implements CardiacRhythm {
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	protected CardiacRhythmImpl() {
 		super();
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	@Override
 	protected EClass eStaticClass() {
 		return EmspcrPackage.Literals.CARDIAC_RHYTHM;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateCardiacRhythmParticipant1(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return CardiacRhythmOperations.validateCardiacRhythmParticipant1(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateCardiacRhythmTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return CardiacRhythmOperations.validateCardiacRhythmTemplateId(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateCardiacRhythmCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return CardiacRhythmOperations.validateCardiacRhythmCodeP(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateCardiacRhythmCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return CardiacRhythmOperations.validateCardiacRhythmCode(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateCardiacRhythmMethodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return CardiacRhythmOperations.validateCardiacRhythmMethodCode(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateCardiacRhythmMethodCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return CardiacRhythmOperations.validateCardiacRhythmMethodCodeP(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateCardiacRhythmValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return CardiacRhythmOperations.validateCardiacRhythmValue(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateCardiacRhythmValueP(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return CardiacRhythmOperations.validateCardiacRhythmValueP(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateCardiacRhythmEffectiveTime(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return CardiacRhythmOperations.validateCardiacRhythmEffectiveTime(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateCardiacRhythmMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return CardiacRhythmOperations.validateCardiacRhythmMoodCode(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public CardiacRhythm init() {
 		return Initializer.Util.init(this);
 	}

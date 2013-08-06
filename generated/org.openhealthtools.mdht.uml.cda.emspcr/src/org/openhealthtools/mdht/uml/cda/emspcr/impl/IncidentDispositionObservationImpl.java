@@ -35,29 +35,29 @@ import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
  */
 public class IncidentDispositionObservationImpl extends ObservationImpl implements IncidentDispositionObservation {
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	protected IncidentDispositionObservationImpl() {
 		super();
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	@Override
 	protected EClass eStaticClass() {
 		return EmspcrPackage.Literals.INCIDENT_DISPOSITION_OBSERVATION;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateIncidentDispositionObservationTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return IncidentDispositionObservationOperations.validateIncidentDispositionObservationTemplateId(
@@ -65,50 +65,50 @@ public class IncidentDispositionObservationImpl extends ObservationImpl implemen
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateIncidentDispositionObservationCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return IncidentDispositionObservationOperations.validateIncidentDispositionObservationCodeP(
 			this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateIncidentDispositionObservationCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return IncidentDispositionObservationOperations.validateIncidentDispositionObservationCode(
 			this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateIncidentDispositionObservationValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return IncidentDispositionObservationOperations.validateIncidentDispositionObservationValue(
 			this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateIncidentDispositionObservationValueP(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return IncidentDispositionObservationOperations.validateIncidentDispositionObservationValueP(
 			this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateIncidentDispositionObservationMoodCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return IncidentDispositionObservationOperations.validateIncidentDispositionObservationMoodCode(
@@ -116,10 +116,10 @@ public class IncidentDispositionObservationImpl extends ObservationImpl implemen
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public IncidentDispositionObservation init() {
 		return Initializer.Util.init(this);
 	}

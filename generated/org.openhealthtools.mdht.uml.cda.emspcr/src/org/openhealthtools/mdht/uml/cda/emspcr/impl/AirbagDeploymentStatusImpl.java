@@ -35,65 +35,65 @@ import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
  */
 public class AirbagDeploymentStatusImpl extends ObservationImpl implements AirbagDeploymentStatus {
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	protected AirbagDeploymentStatusImpl() {
 		super();
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	@Override
 	protected EClass eStaticClass() {
 		return EmspcrPackage.Literals.AIRBAG_DEPLOYMENT_STATUS;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateAirbagDeploymentStatusTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return AirbagDeploymentStatusOperations.validateAirbagDeploymentStatusTemplateId(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateAirbagDeploymentStatusCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return AirbagDeploymentStatusOperations.validateAirbagDeploymentStatusCode(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateAirbagDeploymentStatusValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return AirbagDeploymentStatusOperations.validateAirbagDeploymentStatusValue(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateAirbagDeploymentStatusMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return AirbagDeploymentStatusOperations.validateAirbagDeploymentStatusMoodCode(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public AirbagDeploymentStatus init() {
 		return Initializer.Util.init(this);
 	}
