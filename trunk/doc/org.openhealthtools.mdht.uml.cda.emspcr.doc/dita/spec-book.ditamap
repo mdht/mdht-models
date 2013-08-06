@@ -2,25 +2,22 @@
 <!DOCTYPE bookmap PUBLIC "-//OASIS//DTD DITA BookMap//EN" "bookmap.dtd">
 <bookmap id="cdabook">
     <booktitle>
-		<booklibrary>HL7 Implementation Guide for CDA &#174; Release 2:</booklibrary>
-		<mainbooktitle>Emergency Medical Services; Patient Care Report</mainbooktitle>
-		<!--  <booktitlealt>
-			<image height="2cm" href="images/HL7_International_logo.jpg" />
-		</booktitlealt>  -->
-		<booktitlealt>(Universal Realm)</booktitlealt>
-		<booktitlealt>HL7 Draft Standard For Trial Use</booktitlealt>
-		<booktitlealt>February 2013</booktitlealt>
-		<booktitlealt><image href="images/hl7logo.gif"/></booktitlealt>
-        <booktitlealt audience="developer">(Developer Documentation)</booktitlealt>
+		<mainbooktitle>Emergency Medical Services Patient Care Report</mainbooktitle>
+		<booktitlealt id="ballot">September 2013</booktitlealt>
+		<booktitlealt id="image"><image href="images/hl7logo.gif"/></booktitlealt>	
     </booktitle>
     <bookmeta>
+    	<author>Clinical Interoperative Council</author>
+    	<author>Emergency Care Work Group</author>
+    	<author>Patient Care Work Group</author>
+    	<author>Public Health and Emergency Response Work Group</author>
     	<prodinfo>
 			<prodname>CDAR2L3_IG_EMSRUNRPT</prodname>
 			<vrmlist>
-				<vrm release="DSTUR2" version="2013JUL" ></vrm>
+				<vrm release="R1_N1" version="2013JUL" ></vrm>
 			</vrmlist>
 			<brand>HL7 IG for CDA R2</brand>
-			<series>Draft Standard for Trial Use</series>
+			<series>Normative</series>
 			<platform>US Realm</platform>
 		</prodinfo>
         <bookid>
@@ -30,8 +27,6 @@
                 <person/>
             </maintainer>
         </bookid>
-        
-        
         <bookrights>
             <copyrfirst>
                 <year>2009</year>
@@ -57,8 +52,8 @@
         </booklists>
     </frontmatter>
     <chapter format="ditamap" href="introduction/introduction.ditamap"/>
-    <chapter format="ditamap" href="content/content.ditamap"/>
-    <chapter href="appendices/appendices.ditamap" format="ditamap"/>
+  <!--   <chapter format="ditamap" href="content/content.ditamap"/>
+    <chapter href="appendices/appendices.ditamap" format="ditamap"/> -->
     <backmatter>
         <topicref href="References.dita" navtitle="REFERENCES" type="topic"/>
     </backmatter>
