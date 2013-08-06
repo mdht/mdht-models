@@ -1369,7 +1369,7 @@ http://www.fda.gov/ForIndustry/DataStandards/StructuredProductLabeling/ucm162523
   <term:ValueSetVersion xmi:id="_SLh6QTVUEeGIw7CntkyPQw" identifier="2.16.840.1.113883.1.11.12199" fullName="Language Ability Proficiency" base_Enumeration="_SLh6QDVUEeGIw7CntkyPQw">
     <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_PaapkGdREeGkeaezs0FtvA"/>
   </term:ValueSetVersion>
-  <term:ValueSetVersion xmi:id="_F4z3QDrtEeG-aJb2h_4S8w" identifier="2.16.840.1.113883.3.88.12.3221.5.2" version="20081218" fullName="Health Insurance Type Value Set" source="HITSP" definition="This value set uses the ACS X12 vocabulary for Insurance Type Code (ASC X12 Data Element 1336) and has been limited by HITSP to the value set reproduced below in Table 2-52 Health Insurance Type Value Set Definition&#xD;&#xA;The type of health plan covering the individual, e.g., an HMO, PPO, POS, etc." effectiveDate="20081218" releaseDate="20081218" base_Enumeration="_F4ypIDrtEeG-aJb2h_4S8w">
+  <term:ValueSetVersion xmi:id="_F4z3QDrtEeG-aJb2h_4S8w" identifier="2.16.840.1.113883.3.88.12.3221.5.2" version="20081218" fullName="Health Insurance Type Value Set" source="HITSP" definition="This value set uses the ACS X12 vocabulary for Insurance Type Code (ASC X12 Data Element 1336) and has been limited by HITSP to the value set reproduced below in Table 2-52 Health Insurance Type Value Set Definition&#xD;&#xA;The type of health plan covering the individual, e.g., an HMO, PPO, POS, etc." effectiveDate="20081218" releaseDate="20081218" binding="Dynamic" base_Enumeration="_F4ypIDrtEeG-aJb2h_4S8w">
     <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_yJCGQBJOEeKjxqZmTX2rRQ"/>
   </term:ValueSetVersion>
   <term:ValueSetCode xmi:id="_oBcwgDrtEeG-aJb2h_4S8w" conceptName="Medicare Secondary Working Aged Beneficiary or Spouse with Employer Group Health Plan" base_EnumerationLiteral="_oBbiYDrtEeG-aJb2h_4S8w"/>
@@ -1463,7 +1463,7 @@ http://www.fda.gov/ForIndustry/DataStandards/StructuredProductLabeling/ucm162523
   <term:ValueSetCode xmi:id="_mLUEoVoCEeGKdMKWzrgL_Q" conceptName="Fair" base_EnumerationLiteral="_mLUEoFoCEeGKdMKWzrgL_Q"/>
   <term:ValueSetCode xmi:id="_qlnFsVoCEeGKdMKWzrgL_Q" conceptName="Good" base_EnumerationLiteral="_qlnFsFoCEeGKdMKWzrgL_Q"/>
   <term:ValueSetCode xmi:id="_vRMEAVoCEeGKdMKWzrgL_Q" conceptName="Poor" base_EnumerationLiteral="_vRMEAFoCEeGKdMKWzrgL_Q"/>
-  <term:ValueSetVersion xmi:id="_tP6g0V0YEeGt2doqSDULjA" identifier="2.16.840.1.113883.1.11.10416" version="1" fullName="Financially Responsible Party Type Value Set" definition="A relationship between two entities that is formally recognized, frequently by a contract or similar agreement. This identifies the party that has responsibility for all or a portion of the patient s healthcare." revisionDate="07/23/2009" base_Enumeration="_tP6g0F0YEeGt2doqSDULjA">
+  <term:ValueSetVersion xmi:id="_tP6g0V0YEeGt2doqSDULjA" identifier="2.16.840.1.113883.1.11.10416" version="1" fullName="Financially Responsible Party Type Value Set" definition="A relationship between two entities that is formally recognized, frequently by a contract or similar agreement. This identifies the party that has responsibility for all or a portion of the patient s healthcare." revisionDate="07/23/2009" binding="Dynamic" base_Enumeration="_tP6g0F0YEeGt2doqSDULjA">
     <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_dHx4caDqEd-dVeaMP0XXQw"/>
   </term:ValueSetVersion>
   <term:ValueSetVersion xmi:id="_pWlaAF_lEeGt2doqSDULjA" identifier="2.16.840.1.113883.1.11.18877" version="1.0" fullName="Coverage Type Value Set" binding="Dynamic" base_Enumeration="_pWcQEF_lEeGt2doqSDULjA">
@@ -1549,7 +1549,7 @@ http://www.fda.gov/ForIndustry/DataStandards/StructuredProductLabeling/ucm162523
   <term:ValueSetVersion xmi:id="_WCFaEG1EEeGCevFpokwODw" identifier="2.16.840.1.113883.11.20.9.26" base_Enumeration="_WCEzAG1EEeGCevFpokwODw">
     <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_u8E4IWShEeGWUMIQLWW7Kg"/>
   </term:ValueSetVersion>
-  <term:ValueSetVersion xmi:id="_bkwYcW1EEeGCevFpokwODw" identifier="2.16.840.1.113883.1.11.19579" version="1" definition="Family Relationships record the familial relationship of a person to another person. This value set is to be used when it is necessary to record family relationships (e.g., next of kin, or blood relations). This is a subset of the value set used for personal relationships" revisionDate="07/23/2009" base_Enumeration="_bkwYcG1EEeGCevFpokwODw">
+  <term:ValueSetVersion xmi:id="_bkwYcW1EEeGCevFpokwODw" identifier="2.16.840.1.113883.1.11.19579" version="1" definition="Family Relationships record the familial relationship of a person to another person. This value set is to be used when it is necessary to record family relationships (e.g., next of kin, or blood relations). This is a subset of the value set used for personal relationships" revisionDate="07/23/2009" binding="Dynamic" base_Enumeration="_bkwYcG1EEeGCevFpokwODw">
     <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_ywdZ4Gg7Ed-ilOLYnIx0jA"/>
   </term:ValueSetVersion>
   <term:ValueSetVersion xmi:id="_fgCQUG1GEeGCevFpokwODw" identifier="2.16.840.1.114222.4.11.837" base_Enumeration="_fgBpQG1GEeGCevFpokwODw">
@@ -1567,7 +1567,7 @@ http://www.fda.gov/ForIndustry/DataStandards/StructuredProductLabeling/ucm162523
   <term:ValueSetVersion xmi:id="_x6zGAG1HEeGCevFpokwODw" identifier="2.16.840.1.113883.1.11.10637" base_Enumeration="_x6ye8G1HEeGCevFpokwODw">
     <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_lC2TwGSiEeGWUMIQLWW7Kg"/>
   </term:ValueSetVersion>
-  <term:ValueSetVersion xmi:id="_2QgiAG1HEeGCevFpokwODw" identifier="2.16.840.1.113883.3.88.12.80.2" base_Enumeration="_2Qf68G1HEeGCevFpokwODw">
+  <term:ValueSetVersion xmi:id="_2QgiAG1HEeGCevFpokwODw" identifier="2.16.840.1.113883.3.88.12.80.2" binding="Dynamic" base_Enumeration="_2Qf68G1HEeGCevFpokwODw">
     <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_WdSYkGSiEeGWUMIQLWW7Kg"/>
   </term:ValueSetVersion>
   <term:ValueSetVersion xmi:id="_9dAk8G1HEeGCevFpokwODw" identifier="2.16.840.1.113883.3.88.12.80.1" base_Enumeration="_9c_94G1HEeGCevFpokwODw">

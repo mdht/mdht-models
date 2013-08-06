@@ -83,7 +83,7 @@ public class FunctionalStatusProblemObservationOperations extends ProblemObserva
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_FUNCTIONAL_STATUS_PROBLEM_OBSERVATION_HAS_TEXT_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "not self.text.oclIsUndefined() implies not self.text.reference.oclIsUndefined()";
+	protected static final String VALIDATE_FUNCTIONAL_STATUS_PROBLEM_OBSERVATION_HAS_TEXT_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "not self.text.oclIsUndefined() implies self.text->forAll(reference->size() = 1)";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateFunctionalStatusProblemObservationHasTextReference(FunctionalStatusProblemObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Functional Status Problem Observation Has Text Reference</em>}' invariant operation.

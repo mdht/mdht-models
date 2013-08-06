@@ -2637,7 +2637,7 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
 					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.CONSULTATION_NOTE__CONSULTATION_NOTE_IN_FULFILLMENT_OF_ORDER,
 						ConsolPlugin.INSTANCE.getString("ConsultationNoteInFulfillmentOfOrder"),
 						new Object[] { eObject }));
