@@ -132,10 +132,10 @@ public interface VitalSignsOrganizer extends org.openhealthtools.mdht.uml.cda.co
 	PriorAidVitals getPriorAidVitals();
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public VitalSignsOrganizer init();
 
 	/**

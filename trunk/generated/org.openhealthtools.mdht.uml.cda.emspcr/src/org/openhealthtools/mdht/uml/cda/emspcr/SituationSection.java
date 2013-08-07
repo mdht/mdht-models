@@ -185,12 +185,12 @@ public interface SituationSection extends Section {
 	EList<Complaint> getComplaints();
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(emspcr::PossibleInjury))->asSequence()->any(true).oclAsType(emspcr::PossibleInjury)'"
-	 * @generated
-	 */
+	* @model kind="operation" required="true" ordered="false"
+	*        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(emspcr::PossibleInjury))->asSequence()->any(true).oclAsType(emspcr::PossibleInjury)'"
+	* @generated
+	*/
 	PossibleInjury getPossibleInjury();
 
 	/**

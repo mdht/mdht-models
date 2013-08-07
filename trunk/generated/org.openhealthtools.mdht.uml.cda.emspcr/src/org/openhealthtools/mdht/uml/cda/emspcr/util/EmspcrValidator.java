@@ -2888,11 +2888,11 @@ public class EmspcrValidator extends EObjectValidator {
 	public static final int TRANSPORT_MODE_OBSERVATION__TRANSPORT_MODE_OBSERVATION_VALUE_P = 346;
 
 	/**
-	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Transport Mode Observation Mood Code' of 'Transport Mode Observation'.
-	 * <!-- begin-user-doc -->
+	* The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Transport Mode Observation Mood Code' of 'Transport Mode Observation'.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public static final int TRANSPORT_MODE_OBSERVATION__TRANSPORT_MODE_OBSERVATION_MOOD_CODE = 347;
 
 	/**
@@ -17519,11 +17519,11 @@ public class EmspcrValidator extends EObjectValidator {
 	}
 
 	/**
-	 * Validates the validateTransportModeObservationMoodCode constraint of '<em>Transport Mode Observation</em>'.
-	 * <!-- begin-user-doc -->
+	* Validates the validateTransportModeObservationMoodCode constraint of '<em>Transport Mode Observation</em>'.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateTransportModeObservation_validateTransportModeObservationMoodCode(
 			TransportModeObservation transportModeObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return transportModeObservation.validateTransportModeObservationMoodCode(diagnostics, context);
