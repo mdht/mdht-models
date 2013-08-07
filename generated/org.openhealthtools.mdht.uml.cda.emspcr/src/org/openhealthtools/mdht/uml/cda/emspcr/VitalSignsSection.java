@@ -99,19 +99,19 @@ public interface VitalSignsSection extends org.openhealthtools.mdht.uml.cda.cons
 	EList<VitalSignsOrganizer> getemspcrVitalSignsOrganizers();
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getOrganizers()->select(organizer : cda::Organizer | not organizer.oclIsUndefined() and organizer.oclIsKindOf(emspcr::AdditionalVitalSignsOrganizer)).oclAsType(emspcr::AdditionalVitalSignsOrganizer)'"
-	 * @generated
-	 */
+	* @model kind="operation" required="true" ordered="false"
+	*        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getOrganizers()->select(organizer : cda::Organizer | not organizer.oclIsUndefined() and organizer.oclIsKindOf(emspcr::AdditionalVitalSignsOrganizer)).oclAsType(emspcr::AdditionalVitalSignsOrganizer)'"
+	* @generated
+	*/
 	EList<AdditionalVitalSignsOrganizer> getAdditionalVitalSignsOrganizers();
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public VitalSignsSection init();
 
 	/**

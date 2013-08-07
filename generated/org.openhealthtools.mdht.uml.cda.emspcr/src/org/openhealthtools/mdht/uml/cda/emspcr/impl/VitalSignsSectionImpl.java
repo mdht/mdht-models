@@ -114,19 +114,19 @@ public class VitalSignsSectionImpl extends org.openhealthtools.mdht.uml.cda.cons
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public EList<AdditionalVitalSignsOrganizer> getAdditionalVitalSignsOrganizers() {
 		return VitalSignsSectionOperations.getAdditionalVitalSignsOrganizers(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	@Override
 	public boolean validateVitalSignsSectionEntriesOptionalTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {

@@ -491,20 +491,20 @@ public class VitalSignsOrganizerOperations extends
 	protected static final String GET_PRIOR_AID_VITALS__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(emspcr::PriorAidVitals))->asSequence()->any(true).oclAsType(emspcr::PriorAidVitals)";
 
 	/**
-	 * The cached OCL query for the '{@link #getPriorAidVitals(VitalSignsOrganizer) <em>Get Prior Aid Vitals</em>}' query operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL query for the '{@link #getPriorAidVitals(VitalSignsOrganizer) <em>Get Prior Aid Vitals</em>}' query operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getPriorAidVitals(VitalSignsOrganizer)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #getPriorAidVitals(VitalSignsOrganizer)
+	* @generated
+	* @ordered
+	*/
 	protected static OCLExpression<EClassifier> GET_PRIOR_AID_VITALS__EOCL_QRY;
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 
 	public static PriorAidVitals getPriorAidVitals(VitalSignsOrganizer vitalSignsOrganizer) {
 		if (GET_PRIOR_AID_VITALS__EOCL_QRY == null) {
@@ -523,13 +523,13 @@ public class VitalSignsOrganizerOperations extends
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateVitalSignsOrganizerTemplateId(VitalSignsOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Vital Signs Organizer Template Id</em>}' operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL expression body for the '{@link #validateVitalSignsOrganizerTemplateId(VitalSignsOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Vital Signs Organizer Template Id</em>}' operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateVitalSignsOrganizerTemplateId(VitalSignsOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validateVitalSignsOrganizerTemplateId(VitalSignsOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 	protected static final String VALIDATE_VITAL_SIGNS_ORGANIZER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.1133883.17.3.10.1.28')";
 
 	/**

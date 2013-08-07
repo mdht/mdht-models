@@ -371,20 +371,20 @@ public class VitalSignsSectionOperations extends
 	protected static final String GETEMSPCR_VITAL_SIGNS_ORGANIZERS__EOCL_EXP = "self.getOrganizers()->select(organizer : cda::Organizer | not organizer.oclIsUndefined() and organizer.oclIsKindOf(emspcr::VitalSignsOrganizer)).oclAsType(emspcr::VitalSignsOrganizer)";
 
 	/**
-	 * The cached OCL query for the '{@link #getemspcrVitalSignsOrganizers(VitalSignsSection) <em>Getemspcr Vital Signs Organizers</em>}' query operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL query for the '{@link #getemspcrVitalSignsOrganizers(VitalSignsSection) <em>Getemspcr Vital Signs Organizers</em>}' query operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getemspcrVitalSignsOrganizers(VitalSignsSection)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #getemspcrVitalSignsOrganizers(VitalSignsSection)
+	* @generated
+	* @ordered
+	*/
 	protected static OCLExpression<EClassifier> GETEMSPCR_VITAL_SIGNS_ORGANIZERS__EOCL_QRY;
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 
 	public static EList<VitalSignsOrganizer> getemspcrVitalSignsOrganizers(VitalSignsSection vitalSignsSection) {
 		if (GETEMSPCR_VITAL_SIGNS_ORGANIZERS__EOCL_QRY == null) {
@@ -405,30 +405,30 @@ public class VitalSignsSectionOperations extends
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #getAdditionalVitalSignsOrganizers(VitalSignsSection) <em>Get Additional Vital Signs Organizers</em>}' operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL expression body for the '{@link #getAdditionalVitalSignsOrganizers(VitalSignsSection) <em>Get Additional Vital Signs Organizers</em>}' operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getAdditionalVitalSignsOrganizers(VitalSignsSection)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #getAdditionalVitalSignsOrganizers(VitalSignsSection)
+	* @generated
+	* @ordered
+	*/
 	protected static final String GET_ADDITIONAL_VITAL_SIGNS_ORGANIZERS__EOCL_EXP = "self.getOrganizers()->select(organizer : cda::Organizer | not organizer.oclIsUndefined() and organizer.oclIsKindOf(emspcr::AdditionalVitalSignsOrganizer)).oclAsType(emspcr::AdditionalVitalSignsOrganizer)";
 
 	/**
-	 * The cached OCL query for the '{@link #getAdditionalVitalSignsOrganizers(VitalSignsSection) <em>Get Additional Vital Signs Organizers</em>}' query operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL query for the '{@link #getAdditionalVitalSignsOrganizers(VitalSignsSection) <em>Get Additional Vital Signs Organizers</em>}' query operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getAdditionalVitalSignsOrganizers(VitalSignsSection)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #getAdditionalVitalSignsOrganizers(VitalSignsSection)
+	* @generated
+	* @ordered
+	*/
 	protected static OCLExpression<EClassifier> GET_ADDITIONAL_VITAL_SIGNS_ORGANIZERS__EOCL_QRY;
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 
 	public static EList<AdditionalVitalSignsOrganizer> getAdditionalVitalSignsOrganizers(
 			VitalSignsSection vitalSignsSection) {
@@ -450,13 +450,13 @@ public class VitalSignsSectionOperations extends
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateVitalSignsSectionEntriesOptionalTemplateId(VitalSignsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Vital Signs Section Entries Optional Template Id</em>}' operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL expression body for the '{@link #validateVitalSignsSectionEntriesOptionalTemplateId(VitalSignsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Vital Signs Section Entries Optional Template Id</em>}' operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateVitalSignsSectionEntriesOptionalTemplateId(VitalSignsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validateVitalSignsSectionEntriesOptionalTemplateId(VitalSignsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 	protected static final String VALIDATE_VITAL_SIGNS_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.17.3.10.1.23')";
 
 	/**

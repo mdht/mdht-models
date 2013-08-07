@@ -797,20 +797,20 @@ public class SituationSectionOperations extends SectionOperations {
 	protected static final String GET_COMPLAINTS__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(emspcr::Complaint)).oclAsType(emspcr::Complaint)";
 
 	/**
-	 * The cached OCL query for the '{@link #getComplaints(SituationSection) <em>Get Complaints</em>}' query operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL query for the '{@link #getComplaints(SituationSection) <em>Get Complaints</em>}' query operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getComplaints(SituationSection)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #getComplaints(SituationSection)
+	* @generated
+	* @ordered
+	*/
 	protected static OCLExpression<EClassifier> GET_COMPLAINTS__EOCL_QRY;
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 
 	public static EList<Complaint> getComplaints(SituationSection situationSection) {
 		if (GET_COMPLAINTS__EOCL_QRY == null) {
@@ -831,13 +831,13 @@ public class SituationSectionOperations extends SectionOperations {
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #getPossibleInjury(SituationSection) <em>Get Possible Injury</em>}' operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL expression body for the '{@link #getPossibleInjury(SituationSection) <em>Get Possible Injury</em>}' operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getPossibleInjury(SituationSection)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #getPossibleInjury(SituationSection)
+	* @generated
+	* @ordered
+	*/
 	protected static final String GET_POSSIBLE_INJURY__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(emspcr::PossibleInjury))->asSequence()->any(true).oclAsType(emspcr::PossibleInjury)";
 
 	/**

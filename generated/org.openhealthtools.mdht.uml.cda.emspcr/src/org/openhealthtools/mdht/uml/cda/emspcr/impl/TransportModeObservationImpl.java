@@ -99,10 +99,10 @@ public class TransportModeObservationImpl extends ObservationImpl implements Tra
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateTransportModeObservationMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return TransportModeObservationOperations.validateTransportModeObservationMoodCode(this, diagnostics, context);
 	}

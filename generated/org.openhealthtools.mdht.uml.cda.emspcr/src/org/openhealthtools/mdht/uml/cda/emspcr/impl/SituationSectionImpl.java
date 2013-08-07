@@ -182,10 +182,10 @@ public class SituationSectionImpl extends SectionImpl implements SituationSectio
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public PossibleInjury getPossibleInjury() {
 		return SituationSectionOperations.getPossibleInjury(this);
 	}
