@@ -189,6 +189,15 @@ public class MedicationActivityImpl extends SubstanceAdministrationImpl implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateMedicationActivityRateQuantityUnit(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return MedicationActivityOperations.validateMedicationActivityRateQuantityUnit(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public boolean validateMedicationActivityTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return MedicationActivityOperations.validateMedicationActivityTemplateId(this, diagnostics, context);
 	}

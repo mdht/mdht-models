@@ -159,6 +159,14 @@ Medication timing is complex. This template requires that there be a substanceAd
         <body>self.precondition->select(par : cda::Precondition | par.oclIsKindOf(consol::PreconditionForSubstanceAdministration))->forAll(p : cda::Precondition | p.typeCode=vocab::ActRelationshipType::PRCN)</body>
       </specification>
     </ownedRule>
+    <ownedRule xmi:id="_0EuxoAXoEeOc4J5a9hlM-Q" name="rateQuantityUnit" constrainedElement="_Ldxa0EIjEeG4bZAl2IGXmQ">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_6TqZEAXoEeOc4J5a9hlM-Q">
+        <language>Analysis</language>
+        <language>OCL</language>
+        <body>rateQuantity, if present, SHALL contain exactly one [1..1] @unit, which SHALL be selected from ValueSet UnitsOfMeasureCaseSensitive 2.16.840.1.113883.1.11.12839 DYNAMIC</body>
+        <body>not self.rateQuantity.oclIsUndefined() implies self.rateQuantity.oclAsType(datatypes::PQ).unit->size() = 1</body>
+      </specification>
+    </ownedRule>
     <generalization xmi:id="_2H1SwhSVEeGGzu7fmW9pXw">
       <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_nazskEbuEd6besF9iFIJkQ"/>
     </generalization>
@@ -1405,5 +1413,8 @@ The UDI should be sent in the participantRole/id.</body>
     <ruleId>CONF:16093</ruleId>
     <ruleId>CONF:16094</ruleId>
     <ruleId>CONF:16870</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_-UVZMAXoEeOc4J5a9hlM-Q" base_Constraint="_0EuxoAXoEeOc4J5a9hlM-Q">
+    <ruleId>CONF:7525</ruleId>
   </CDA:ConstraintValidation>
 </xmi:XMI>
