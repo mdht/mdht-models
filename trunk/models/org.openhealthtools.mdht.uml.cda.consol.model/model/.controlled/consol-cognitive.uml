@@ -403,8 +403,8 @@ A cognitive problem observation is a finding or medical condition. This is diffe
     </ownedAttribute>
     <ownedAttribute xmi:id="_aFueSuZcEeGINOJ_SD9_dA" name="id" visibility="private" aggregation="composite">
       <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_culQ8DxaEd6JwqSGecoePg"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wrETcOZcEeGINOJ_SD9_dA" value="1"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wrETceZcEeGINOJ_SD9_dA" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_kfHL4AUdEeOAnLCjMscTnA" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_kfHL4QUdEeOAnLCjMscTnA" value="1"/>
       <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_UGBfwEo8Ed6c3qsAxlFHaQ"/>
       <redefinedProperty href="consol-problems.uml#_6-ejQBUyEeGbmN_W114JUw"/>
     </ownedAttribute>

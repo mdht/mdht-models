@@ -1417,7 +1417,7 @@ http://www.fda.gov/ForIndustry/DataStandards/StructuredProductLabeling/ucm162523
   <term:ValueSetCode xmi:id="_fW6dwTr3EeG-aJb2h_4S8w" conceptName="Tax Equity Fiscal Responsibility Act (TEFRA)" base_EnumerationLiteral="_fW6dwDr3EeG-aJb2h_4S8w"/>
   <term:ValueSetCode xmi:id="_kUB4ADr3EeG-aJb2h_4S8w" conceptName="Workers Compensation" base_EnumerationLiteral="_kUBQ8Dr3EeG-aJb2h_4S8w"/>
   <term:ValueSetCode xmi:id="_mP2rgDr3EeG-aJb2h_4S8w" conceptName="Wrap Up Policy" base_EnumerationLiteral="_mP2EcDr3EeG-aJb2h_4S8w"/>
-  <term:ValueSetVersion xmi:id="_Z8iQMTstEeGvzMYhXuqAEA" identifier="2.16.840.1.113883.11.20.9.31" fullName="Consultation Note LOINC Document Codes" base_Enumeration="_Z8iQMDstEeGvzMYhXuqAEA">
+  <term:ValueSetVersion xmi:id="_Z8iQMTstEeGvzMYhXuqAEA" identifier="2.16.840.1.113883.11.20.9.31" fullName="Consultation Note LOINC Document Codes" binding="Dynamic" base_Enumeration="_Z8iQMDstEeGvzMYhXuqAEA">
     <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
   </term:ValueSetVersion>
   <term:ValueSetVersion xmi:id="_R_D60TzDEeGMk58Mp9-wVA" identifier="2.16.840.1.113883.11.20.4.1" fullName="Discharge Summary LOINC Document Codes" binding="Dynamic" base_Enumeration="_R_D60DzDEeGMk58Mp9-wVA">

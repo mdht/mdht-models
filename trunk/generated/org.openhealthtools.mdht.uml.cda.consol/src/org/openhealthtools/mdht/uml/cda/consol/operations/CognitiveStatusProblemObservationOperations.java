@@ -515,7 +515,7 @@ public class CognitiveStatusProblemObservationOperations extends ProblemObservat
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_COGNITIVE_STATUS_PROBLEM_OBSERVATION_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.id->isEmpty() or self.id->exists(element | element.isNullFlavorUndefined())) implies (self.id->size() = 1)";
+	protected static final String VALIDATE_COGNITIVE_STATUS_PROBLEM_OBSERVATION_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.id->isEmpty() or self.id->exists(element | element.isNullFlavorUndefined())) implies (not self.id->isEmpty())";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateCognitiveStatusProblemObservationId(CognitiveStatusProblemObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Cognitive Status Problem Observation Id</em>}' invariant operation.

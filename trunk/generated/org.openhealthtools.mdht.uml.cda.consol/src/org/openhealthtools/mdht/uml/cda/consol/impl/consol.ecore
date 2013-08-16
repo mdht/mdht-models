@@ -4352,7 +4352,7 @@
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="MedicationActivity" eSuperTypes="urn:hl7-org:v3#//SubstanceAdministration">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
-      <details key="constraints.validation.error" value="MedicationActivityTemplateId MedicationActivityTextReferenceValue MedicationActivityEffectiveTimeIVLTS MedicationActivityEffectiveTimeLow MedicationActivityEffectiveTimeHigh MedicationActivityEffectiveTimeOperator MedicationActivityDrugVehicleTypeCode MedicationActivityInstructionsInversionInd MedicationActivityPreconditionSubstanceAdmTypeCode MedicationActivityClassCode MedicationActivityMoodCode MedicationActivityId MedicationActivityStatusCode MedicationActivityRouteCode MedicationActivityApproachSiteCode MedicationActivityConsumable MedicationActivityConsumableMedicationInformation"/>
+      <details key="constraints.validation.error" value="MedicationActivityTemplateId MedicationActivityTextReferenceValue MedicationActivityEffectiveTimeIVLTS MedicationActivityEffectiveTimeLow MedicationActivityEffectiveTimeHigh MedicationActivityEffectiveTimeOperator MedicationActivityDrugVehicleTypeCode MedicationActivityInstructionsInversionInd MedicationActivityPreconditionSubstanceAdmTypeCode MedicationActivityRateQuantityUnit MedicationActivityClassCode MedicationActivityMoodCode MedicationActivityId MedicationActivityStatusCode MedicationActivityRouteCode MedicationActivityApproachSiteCode MedicationActivityConsumable MedicationActivityConsumableMedicationInformation"/>
       <details key="templateId.root" value="2.16.840.1.113883.10.20.22.4.16"/>
       <details key="constraints.validation.warning" value="MedicationActivityDoseQuantityorrateQuantity MedicationActivityTextReference MedicationActivityReferenceValue MedicationActivityEffectiveTimePIVLTS MedicationActivityDoseQuantityUnit MedicationActivityDoseQuantity MedicationActivityText"/>
       <details key="classCode" value="SBADM"/>
@@ -4478,6 +4478,15 @@
       </eParameters>
     </eOperations>
     <eOperations name="MedicationActivityPreconditionSubstanceAdmTypeCode" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
+      <eParameters name="context">
+        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations name="MedicationActivityRateQuantityUnit" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
       <eParameters name="context">
         <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">

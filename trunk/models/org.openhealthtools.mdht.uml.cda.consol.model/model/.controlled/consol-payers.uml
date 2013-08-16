@@ -582,7 +582,6 @@ self.supply->forAll((moodCode = vocab::x_DocumentSubstanceMood::PRMS and perform
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_bVBvUDZaEeGUovy31cP2ng" base_Property="_UdHpMhUlEeGvPruliC3crg">
     <ruleId>CONF:8901</ruleId>
-    <ruleId>CONF:10119</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_s5Fb8DZaEeGUovy31cP2ng" base_Property="_UdHpMBUlEeGvPruliC3crg">
     <ruleId>CONF:8903</ruleId>

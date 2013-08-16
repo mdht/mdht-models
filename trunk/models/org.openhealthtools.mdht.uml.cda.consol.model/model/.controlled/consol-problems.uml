@@ -516,7 +516,7 @@ UNK.  If the code is something other than SNOMED, @nullFlavor SHOULD be OTH and 
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_yRGakCBCEeG938evaWkvcA">
         <language>Analysis</language>
         <language>OCL</language>
-        <body>This value SHALL contain exactly one [1..1] @unit=&quot;1&quot;, which SHALL be selected from ValueSet AgePQ_UCUM 2.16.840.1.113883.11.20.9.21 DYNAMIC</body>
+        <body>This value SHALL contain exactly one [1..1] @unit, which SHALL be selected from ValueSet AgePQ_UCUM 2.16.840.1.113883.11.20.9.21 DYNAMIC</body>
         <body>self.value.oclAsType(datatypes::PQ).unit->size() = 1</body>
       </specification>
     </ownedRule>
