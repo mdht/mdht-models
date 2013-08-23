@@ -37,70 +37,70 @@ import org.openhealthtools.mdht.uml.cda.mu2consol.operations.ResultOrganizerOper
  */
 public class CognitiveStatusResultOrganizerImpl extends org.openhealthtools.mdht.uml.cda.consol.impl.CognitiveStatusResultOrganizerImpl implements CognitiveStatusResultOrganizer {
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	protected CognitiveStatusResultOrganizerImpl() {
-		super();
-	}
+    super();
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	@Override
 	protected EClass eStaticClass() {
-		return Mu2consolPackage.Literals.COGNITIVE_STATUS_RESULT_ORGANIZER;
-	}
+    return Mu2consolPackage.Literals.COGNITIVE_STATUS_RESULT_ORGANIZER;
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateMU2CONSOLResultOrganizerResultObservation(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ResultOrganizerOperations.validateMU2CONSOLResultOrganizerResultObservation(this, diagnostics, context);
-	}
+    return ResultOrganizerOperations.validateMU2CONSOLResultOrganizerResultObservation(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public EList<ResultObservation> getMu2consolResultObservations() {
-		return ResultOrganizerOperations.getMu2consolResultObservations(this);
-	}
+    return ResultOrganizerOperations.getMu2consolResultObservations(this);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	@Override
 	public boolean validateResultOrganizerTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return CognitiveStatusResultOrganizerOperations.validateResultOrganizerTemplateId(this, diagnostics, context);
-	}
+    return CognitiveStatusResultOrganizerOperations.validateResultOrganizerTemplateId(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public EList<CognitiveStatusResultObservation> getMu2consolCognitiveStatusResultObservations() {
-		return CognitiveStatusResultOrganizerOperations.getMu2consolCognitiveStatusResultObservations(this);
-	}
+    return CognitiveStatusResultOrganizerOperations.getMu2consolCognitiveStatusResultObservations(this);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	@Override
 	public CognitiveStatusResultOrganizer init() {
-	    return Initializer.Util.init(this);
-	}
+      return Initializer.Util.init(this);
+  }
     /**
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->

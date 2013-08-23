@@ -35,57 +35,57 @@ public class ResultsSectionImpl extends
 		org.openhealthtools.mdht.uml.cda.consol.impl.ResultsSectionImpl
 		implements ResultsSection {
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
 	protected ResultsSectionImpl() {
-		super();
-	}
+    super();
+  }
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
 	@Override
 	protected EClass eStaticClass() {
-		return Mu2consolPackage.Literals.RESULTS_SECTION;
-	}
+    return Mu2consolPackage.Literals.RESULTS_SECTION;
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateMU2CONSOLResultsSectionResultOrganizer(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ResultsSectionOperations.validateMU2CONSOLResultsSectionResultOrganizer(this, diagnostics, context);
-	}
+    return ResultsSectionOperations.validateMU2CONSOLResultsSectionResultOrganizer(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
 	public EList<ResultOrganizer> getMu2consolResultOrganizers() {
-		return ResultsSectionOperations.getMu2consolResultOrganizers(this);
-	}
+    return ResultsSectionOperations.getMu2consolResultOrganizers(this);
+  }
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
 	@Override
 	public boolean validateResultsSectionEntriesOptionalTemplateId(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ResultsSectionOperations.validateResultsSectionEntriesOptionalTemplateId(this, diagnostics, context);
-	}
+    return ResultsSectionOperations.validateResultsSectionEntriesOptionalTemplateId(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
 	@Override
 	public ResultsSection init() {
-	    return Initializer.Util.init(this);
-	}
+      return Initializer.Util.init(this);
+  }
 
 	/**
      * <!-- begin-user-doc --> <!-- end-user-doc -->

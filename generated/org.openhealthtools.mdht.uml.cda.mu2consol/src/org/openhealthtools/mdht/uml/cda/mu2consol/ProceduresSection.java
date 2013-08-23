@@ -30,15 +30,15 @@ import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 public interface ProceduresSection extends
 		org.openhealthtools.mdht.uml.cda.consol.ProceduresSection {
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entry->exists(entry : cda::Entry | not entry.procedure.oclIsUndefined() and entry.procedure.oclIsKindOf(mu2consol::ProcedureActivityProcedure))'"
-	 * @generated
-	 */
+   * <!-- begin-model-doc -->
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entry->exists(entry : cda::Entry | not entry.procedure.oclIsUndefined() and entry.procedure.oclIsKindOf(mu2consol::ProcedureActivityProcedure))'"
+   * @generated
+   */
 	boolean validateMU2CONSOLProceduresSectionProcedureActivityProcedure(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
@@ -56,9 +56,9 @@ public interface ProceduresSection extends
 	EList<ProcedureActivityProcedure> getMu2consolProcedureActivityProcedures();
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @generated
+   */
 	public ProceduresSection init();
 
 	/**
