@@ -35,29 +35,29 @@ import org.openhealthtools.mdht.uml.cda.impl.SectionImpl;
  */
 public class ProcedureIndicationsSectionImpl extends SectionImpl implements ProcedureIndicationsSection {
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	protected ProcedureIndicationsSectionImpl() {
 		super();
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	@Override
 	protected EClass eStaticClass() {
 		return ConsolPackage.Literals.PROCEDURE_INDICATIONS_SECTION;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateProcedureIndicationsSectionTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ProcedureIndicationsSectionOperations.validateProcedureIndicationsSectionTemplateId(
@@ -65,48 +65,48 @@ public class ProcedureIndicationsSectionImpl extends SectionImpl implements Proc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateProcedureIndicationsSectionCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProcedureIndicationsSectionOperations.validateProcedureIndicationsSectionCode(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	* <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateProcedureIndicationsSectionCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProcedureIndicationsSectionOperations.validateProcedureIndicationsSectionCodeP(
 			this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateProcedureIndicationsSectionText(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProcedureIndicationsSectionOperations.validateProcedureIndicationsSectionText(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateProcedureIndicationsSectionTitle(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProcedureIndicationsSectionOperations.validateProcedureIndicationsSectionTitle(
 			this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateProcedureIndicationsSectionIndication(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ProcedureIndicationsSectionOperations.validateProcedureIndicationsSectionIndication(
@@ -114,19 +114,19 @@ public class ProcedureIndicationsSectionImpl extends SectionImpl implements Proc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public EList<Indication> getIndications() {
 		return ProcedureIndicationsSectionOperations.getIndications(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public ProcedureIndicationsSection init() {
 		return Initializer.Util.init(this);
 	}
