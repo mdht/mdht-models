@@ -1562,6 +1562,8 @@ UNK.  If the code is something other than SNOMED, @nullFlavor SHOULD be OTH and 
   </CDA:EntryRelationship>
   <CDA:EntryRelationship xmi:id="_d8iyABxtEeGXP8PxDYviDg" severity="INFO" typeCode="COMP">
     <ruleId>CONF:8329</ruleId>
+    <ruleId>CONF:8330</ruleId>
+    <ruleId>CONF:15602</ruleId>
     <base_Association href=".controlled/consol-procedures.uml#_cERBwBxtEeGXP8PxDYviDg"/>
   </CDA:EntryRelationship>
   <CDA:AssociationValidation xmi:id="_04jTYBxwEeGXP8PxDYviDg" severity="WARNING">
