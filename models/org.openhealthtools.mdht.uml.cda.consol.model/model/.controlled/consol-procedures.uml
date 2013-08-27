@@ -253,7 +253,8 @@ This clinical statement represents procedures that result in new information abo
     </ownedAttribute>
     <ownedAttribute xmi:id="_odtt4BxxEeGXP8PxDYviDg" name="medicationActivity" association="_odu8ABxxEeGXP8PxDYviDg">
       <type xmi:type="uml:Class" href="consol-medications.uml#_2GHbgBSVEeGGzu7fmW9pXw"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_odtt4RxxEeGXP8PxDYviDg"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_cuRLsAzyEeOzhrpyZH51Qg" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_cuRLsQzyEeOzhrpyZH51Qg"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_K3B8QOAWEeGlGcipF_0y2A" name="entryRelationship" type="_sjOmkOAVEeGlGcipF_0y2A" association="_K3DxcOAWEeGlGcipF_0y2A">
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_LsoHgOAWEeGlGcipF_0y2A" value="*"/>
@@ -400,7 +401,7 @@ This clinical statement represents any procedure that cannot be classified as an
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_ilhFERxpEeGXP8PxDYviDg">
         <language>Analysis</language>
         <language>OCL</language>
-        <body>code in a procedure activity observation SHOULD be selected from LOINC (CodeSystem: 2.16.840.1.113883.6.1) or SNOMED CT (CodeSystem: 2.16.840.1.113883.6.96)</body>
+        <body>code in a procedure activity act SHOULD be selected from LOINC (CodeSystem: 2.16.840.1.113883.6.1) or SNOMED CT (CodeSystem: 2.16.840.1.113883.6.96)</body>
         <body>self.code.isNullFlavorDefined() or self.code.codeSystem = '2.16.840.1.113883.6.1' xor self.code.codeSystem = '2.16.840.1.113883.6.96'</body>
       </specification>
     </ownedRule>
@@ -520,7 +521,8 @@ This clinical statement represents any procedure that cannot be classified as an
     </ownedAttribute>
     <ownedAttribute xmi:id="_cEQasBxtEeGXP8PxDYviDg" name="medicationActivity" association="_cERBwBxtEeGXP8PxDYviDg">
       <type xmi:type="uml:Class" href="consol-medications.uml#_2GHbgBSVEeGGzu7fmW9pXw"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_cEQasRxtEeGXP8PxDYviDg"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_TlBvQAzyEeOzhrpyZH51Qg" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_TlBvQQzyEeOzhrpyZH51Qg"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_GZ2mUOAWEeGlGcipF_0y2A" name="entryRelationship" type="_qaIokOAUEeGlGcipF_0y2A" association="_GZ4bgOAWEeGlGcipF_0y2A">
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_HT3-kOAWEeGlGcipF_0y2A" value="*"/>
@@ -797,8 +799,8 @@ This clinical statement represents procedures whose immediate and primary outcom
     </ownedAttribute>
     <ownedAttribute xmi:id="_2OZNyhSVEeGGzu7fmW9pXw" name="medicationActivity" association="_2OZNzRSVEeGGzu7fmW9pXw">
       <type xmi:type="uml:Class" href="consol-medications.uml#_2GHbgBSVEeGGzu7fmW9pXw"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_gf_x4BrbEeGrncRpaMCqdA" value="1"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_gf_x4RrbEeGrncRpaMCqdA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_jzW_EAzyEeOzhrpyZH51Qg" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_jzW_EQzyEeOzhrpyZH51Qg"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_2OZN0BSVEeGGzu7fmW9pXw" name="patientInstruction" association="_2OZN0xSVEeGGzu7fmW9pXw">
       <type xmi:type="uml:Class" href="consol-other.uml#_2G8h9RSVEeGGzu7fmW9pXw"/>
@@ -1164,7 +1166,7 @@ This clinical statement represents procedures whose immediate and primary outcom
     <ruleId>CONF:8293</ruleId>
   </CDA:PropertyValidation>
   <CDA:ConstraintValidation xmi:id="_skkvMBxpEeGXP8PxDYviDg" severity="WARNING" base_Constraint="_ilhFEBxpEeGXP8PxDYviDg">
-    <ruleId>CONF:8294</ruleId>
+    <ruleId>CONF:19190</ruleId>
   </CDA:ConstraintValidation>
   <CDA:ConstraintValidation xmi:id="_vD-w4BxpEeGXP8PxDYviDg" severity="WARNING" base_Constraint="_oGW3cBxpEeGXP8PxDYviDg">
     <ruleId>CONF:15596</ruleId>

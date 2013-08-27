@@ -4147,7 +4147,8 @@
         eType="#//Indication"/>
     <eOperations name="getServiceDeliveryLocations" ordered="false" lowerBound="1"
         upperBound="-1" eType="#//ServiceDeliveryLocation"/>
-    <eOperations name="getMedicationActivity" ordered="false" lowerBound="1" eType="#//MedicationActivity"/>
+    <eOperations name="getMedicationActivities" ordered="false" lowerBound="1" upperBound="-1"
+        eType="#//MedicationActivity"/>
     <eOperations name="getPatientInstruction" ordered="false" lowerBound="1" eType="#//Instructions"/>
     <eOperations name="getProductInstances" ordered="false" lowerBound="1" upperBound="-1"
         eType="#//ProductInstance"/>
@@ -7835,7 +7836,8 @@
     <eOperations name="getInstructions" ordered="false" lowerBound="1" eType="#//Instructions"/>
     <eOperations name="getIndications" ordered="false" lowerBound="1" upperBound="-1"
         eType="#//Indication"/>
-    <eOperations name="getMedicationActivity" ordered="false" lowerBound="1" eType="#//MedicationActivity"/>
+    <eOperations name="getMedicationActivities" ordered="false" lowerBound="1" upperBound="-1"
+        eType="#//MedicationActivity"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="ProcedureActivityAct" eSuperTypes="urn:hl7-org:v3#//Act">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
@@ -8224,7 +8226,8 @@
     <eOperations name="getInstructions" ordered="false" lowerBound="1" eType="#//Instructions"/>
     <eOperations name="getIndications" ordered="false" lowerBound="1" upperBound="-1"
         eType="#//Indication"/>
-    <eOperations name="getMedicationActivity" ordered="false" lowerBound="1" eType="#//MedicationActivity"/>
+    <eOperations name="getMedicationActivities" ordered="false" lowerBound="1" upperBound="-1"
+        eType="#//MedicationActivity"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="ResultsSection" eSuperTypes="#//ResultsSectionEntriesOptional">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
