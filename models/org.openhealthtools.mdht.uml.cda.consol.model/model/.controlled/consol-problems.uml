@@ -425,7 +425,7 @@ UNK.  If the code is something other than SNOMED, @nullFlavor SHOULD be OTH and 
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_v91IMOJlEeG3cO7ebC3QuA">
         <language>Analysis</language>
         <language>OCL</language>
-        <body>translation, if present, MAY contain zero or one [0..1] @code (CodeSystem: ICD10 2.16.840.1.113883.6.3)</body>
+        <body>translation, if present, MAY contain zero or one [0..1] @code (CodeSystem: ICD10CM 2.16.840.1.113883.6.90 STATIC)</body>
         <body>self.value.oclAsType(datatypes::CD).translation->size()>0 implies self.value.oclAsType(datatypes::CD).translation->forAll(code->size() = 1)</body>
       </specification>
     </ownedRule>

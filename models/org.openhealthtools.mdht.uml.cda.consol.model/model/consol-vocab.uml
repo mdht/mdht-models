@@ -349,7 +349,7 @@
         <body>A code indicating the priority of the admission (e.g., Emergency, Urgent, Elective, et cetera).</body>
       </ownedComment>
     </packagedElement>
-    <packagedElement xmi:type="uml:Enumeration" xmi:id="_2MQfxBSVEeGGzu7fmW9pXw" name="Vaccines administered (CVX)">
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_2MQfxBSVEeGGzu7fmW9pXw" name="Vaccine Administered Value Set">
       <ownedLiteral xmi:id="_m6KbMRMsEeK4go_VqYg1Bw" name="143"/>
       <ownedLiteral xmi:id="_m6LCQBMsEeK4go_VqYg1Bw" name="54"/>
       <ownedLiteral xmi:id="_m6LCQhMsEeK4go_VqYg1Bw" name="55"/>
@@ -1264,7 +1264,7 @@ http://www.fda.gov/ForIndustry/DataStandards/StructuredProductLabeling/ucm162523
   <term:ValueSetVersion xmi:id="_2L5TYhSVEeGGzu7fmW9pXw" identifier="2.16.840.1.113883.6.301.5" fullName="Admission Type" source="National Uniform Billing Committee (NUBC)" url="www.nubc.org" definition="See (UB-04/NUBC CURRENT UB DATA SPECIFICATIONS MANUAL) UB-04 FL14." base_Enumeration="_2L5TYBSVEeGGzu7fmW9pXw">
     <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_JR-NQJpCEeKCjtM-Tjpk1g"/>
   </term:ValueSetVersion>
-  <term:ValueSetVersion xmi:id="_2MRG0BSVEeGGzu7fmW9pXw" identifier="2.16.840.1.114222.4.11.934" version="7" fullName="Vaccines administered (CVX)" definition="Vaccine Name Keyword: Clinical Vaccines, Vaccine Names" revisionDate="10/22/2008" base_Enumeration="_2MQfxBSVEeGGzu7fmW9pXw">
+  <term:ValueSetVersion xmi:id="_2MRG0BSVEeGGzu7fmW9pXw" identifier="2.16.840.1.113883.3.88.12.80.22" version="7" fullName="Vaccine Administered Value Set" definition="Vaccine Name Keyword: Clinical Vaccines, Vaccine Names" revisionDate="10/22/2008" binding="Dynamic" base_Enumeration="_2MQfxBSVEeGGzu7fmW9pXw">
     <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_dk7ugKDqEd-dVeaMP0XXQw"/>
   </term:ValueSetVersion>
   <term:ValueSetVersion xmi:id="_2O3u9BSVEeGGzu7fmW9pXw" identifier="2.16.840.1.113883.3.88.12.80.62" version="1" fullName="Vital Sign Result Value Set" source="HITSP" definition="This identifies the vital sign result type" effectiveDate="20081218" releaseDate="20081218" revisionDate="07/23/2009" binding="Dynamic" base_Enumeration="_2O3u6RSVEeGGzu7fmW9pXw">
