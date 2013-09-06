@@ -194,10 +194,6 @@
       <ownedLiteral xmi:id="_HXQlJVqpEeKUiPQlmqLrLg" name="75271001"/>
       <ownedLiteral xmi:id="_HXQlJlqpEeKUiPQlmqLrLg" name="394841004"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Enumeration" xmi:id="_PcQ_8OsNEeKC84mwBUHUdQ" name="Related Person Type">
-      <ownedLiteral xmi:id="_SeHnYOsNEeKC84mwBUHUdQ" name="133933007"/>
-      <ownedLiteral xmi:id="_fm1xIOsNEeKC84mwBUHUdQ" name="83418008"/>
-    </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_jRPEUAnPEeOSQLMpSugQSQ" name="Source of Payment Typology"/>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_p8E5wAnREeOSQLMpSugQSQ" name="Maternal Vital Signs">
       <ownedLiteral xmi:id="_0c07sAnREeOSQLMpSugQSQ" name="69461-2"/>
@@ -459,11 +455,6 @@
   <term:ValueSetCode xmi:id="_peFLIFtGEeKuluv3od9aUg" conceptName="Hypertensive disorder, systemic arterial" base_EnumerationLiteral="_pdzeUFtGEeKuluv3od9aUg">
     <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
   </term:ValueSetCode>
-  <term:ValueSetVersion xmi:id="_PeplkOsNEeKC84mwBUHUdQ" base_Enumeration="_PcQ_8OsNEeKC84mwBUHUdQ">
-    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
-  </term:ValueSetVersion>
-  <term:ValueSetCode xmi:id="_SeHnYesNEeKC84mwBUHUdQ" conceptName="Newborn" usageNote="SNOMED concept code" base_EnumerationLiteral="_SeHnYOsNEeKC84mwBUHUdQ"/>
-  <term:ValueSetCode xmi:id="_fm1xIesNEeKC84mwBUHUdQ" conceptName="Fetus" usageNote="SNOMED concept code" base_EnumerationLiteral="_fm1xIOsNEeKC84mwBUHUdQ"/>
   <term:ValueSetCode xmi:id="_BA5PUAnJEeOSQLMpSugQSQ" conceptName="Unknown" base_EnumerationLiteral="_BAwFYAnJEeOSQLMpSugQSQ"/>
   <term:ValueSetCode xmi:id="_7jhY8QnOEeOSQLMpSugQSQ" conceptName="Unknown" base_EnumerationLiteral="_7jhY8AnOEeOSQLMpSugQSQ"/>
   <term:ValueSetCode xmi:id="_-rxjUQnOEeOSQLMpSugQSQ" conceptName="Indian Health Service" base_EnumerationLiteral="_-rxjUAnOEeOSQLMpSugQSQ"/>

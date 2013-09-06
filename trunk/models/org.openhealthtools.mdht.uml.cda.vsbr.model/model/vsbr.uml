@@ -573,10 +573,6 @@ steward that is entrusted with the care of the document. Every CDA document has 
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ma4K0bvPEeGkEvM80TFRNQ" value="1"/>
           </ownedAttribute>
           <ownedAttribute xmi:id="_PbaO4OsOEeKC84mwBUHUdQ" name="code" visibility="private" isReadOnly="true" aggregation="composite">
-            <ownedComment xmi:id="_e4mVoOsOEeKC84mwBUHUdQ">
-              <body>The related person type value indicates that the section subject is a newborn.</body>
-            </ownedComment>
-            <type xmi:type="uml:Enumeration" href="vsbr-vocab.uml#_PcQ_8OsNEeKC84mwBUHUdQ"/>
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_GAwHsAasEeOqoNGu32QpaQ" value="1"/>
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_GAwHsQasEeOqoNGu32QpaQ" value="1"/>
             <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_aKlpAErmEd6FXKclYGEDCw"/>
@@ -740,15 +736,6 @@ The reader should note that the subject of this section - the delivered fetus - 
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_jHcvjRAMEeO6h_Vgn8UHWQ" value="1"/>
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_jHcvjhAMEeO6h_Vgn8UHWQ" value="1"/>
             <defaultValue xmi:type="uml:LiteralString" xmi:id="_jHcvjxAMEeO6h_Vgn8UHWQ" value="PRS"/>
-          </ownedAttribute>
-          <ownedAttribute xmi:id="_jHcvkxAMEeO6h_Vgn8UHWQ" name="code" visibility="private" isReadOnly="true" aggregation="composite">
-            <ownedComment xmi:id="_jHcvlBAMEeO6h_Vgn8UHWQ">
-              <body>The related person type value indicates that the section subject is a newborn.</body>
-            </ownedComment>
-            <type xmi:type="uml:Enumeration" href="vsbr-vocab.uml#_PcQ_8OsNEeKC84mwBUHUdQ"/>
-            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_jHcvlRAMEeO6h_Vgn8UHWQ" value="1"/>
-            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_jHcvlhAMEeO6h_Vgn8UHWQ" value="1"/>
-            <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_aKlpAErmEd6FXKclYGEDCw"/>
           </ownedAttribute>
           <ownedAttribute xmi:id="_0nXtkBANEeO6h_Vgn8UHWQ" name="fetus" type="_jHcvlxAMEeO6h_Vgn8UHWQ" association="_0nYUoRANEeO6h_Vgn8UHWQ">
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_1fDjgBANEeO6h_Vgn8UHWQ" value="1"/>
@@ -1088,7 +1075,7 @@ If the birth occurred in international air space or waters, enter &quot;plane&qu
           </nestedClassifier>
         </nestedClassifier>
       </nestedClassifier>
-      <nestedClassifier xmi:type="uml:Class" xmi:id="_WnqXoFqqEeKUiPQlmqLrLg" name="CertifierParticipation">
+      <nestedClassifier xmi:type="uml:Class" xmi:id="_WnqXoFqqEeKUiPQlmqLrLg" name="certifierParticipation">
         <generalization xmi:id="_YTJCAFqqEeKUiPQlmqLrLg">
           <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_4_GbMEcZEd6besF9iFIJkQ"/>
         </generalization>
@@ -1538,7 +1525,7 @@ information.  Within the II data type, use the root to record the identifying OI
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_BOedQM9lEeGEP4RKA70UUQ" name="Newborn's Vital Signs Section">
       <ownedComment xmi:id="_I6bB8NA5EeGEz9ISu-MpwA">
-        <body>The vital signs - newborn section contains measurement results of the newborn's vital signs, including the temperature.  The reader should note that the subject of this section - the newborn infant - is different from the overall subject of the clinical document - which is the mother.</body>
+        <body>The vital signs - newborn section contains measurement results of the newborn's vital signs.  The reader should note that the subject of this section - the newborn infant - is different from the overall subject of the clinical document - which is the mother.</body>
       </ownedComment>
       <generalization xmi:id="_BOxYMM9lEeGEP4RKA70UUQ">
         <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_qIf_wDxXEd6JwqSGecoePg"/>
@@ -2551,7 +2538,7 @@ information.  Within the II data type, use the root to record the identifying OI
       </ownedAttribute>
       <ownedAttribute xmi:id="_H3pZOcCJEeGP5fduNvI1Qw" name="value" visibility="private" aggregation="composite">
         <ownedComment xmi:id="_H3pZOsCJEeGP5fduNvI1Qw">
-          <body>The final estimate of gestation.  The value expected to be provided as a number of completed weeks.</body>
+          <body>The final estimate of gestation.  The value is to be provided as a number of completed weeks.</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_3mPzYD59Ed6cla2oXsPtlA"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_H3pZO8CJEeGP5fduNvI1Qw" value="1"/>
@@ -3032,7 +3019,7 @@ The consolidated CDA Vital Signs Observation template has been used.  The list o
     <packagedElement xmi:type="uml:Association" xmi:id="_Y4BQotBFEeGjwMhvOnViSg" memberEnd="_Y4BQoNBFEeGjwMhvOnViSg _Y4BQo9BFEeGjwMhvOnViSg">
       <ownedEnd xmi:id="_Y4BQo9BFEeGjwMhvOnViSg" type="_jqH7YNAQEeGEP4RKA70UUQ" association="_Y4BQotBFEeGjwMhvOnViSg"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Class" xmi:id="_sJSq0LyuEeGUNfs_q_VvNQ" name="Home Birth Plan">
+    <packagedElement xmi:type="uml:Class" xmi:id="_sJSq0LyuEeGUNfs_q_VvNQ" name="Planned Home Birth">
       <ownedComment xmi:id="_-nzPsNBFEeGjwMhvOnViSg">
         <body>Information on whether a home birth was planned for the infant.</body>
       </ownedComment>
@@ -3049,13 +3036,13 @@ The consolidated CDA Vital Signs Observation template has been used.  The list o
       </ownedAttribute>
       <ownedAttribute xmi:id="_sJSq1LyuEeGUNfs_q_VvNQ" name="code" visibility="private" aggregation="composite">
         <ownedComment xmi:id="_KYDbQMCbEeGP5fduNvI1Qw">
-          <body>A code value that indicates the nature of the observation - it supports the recording of the parents' home birth planning.</body>
+          <body>A code value that indicates the nature of the observation - it records whether the parents planned to deliver at home.</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_sJSq17yuEeGUNfs_q_VvNQ" name="value" visibility="private" aggregation="composite">
         <ownedComment xmi:id="_sJSq2LyuEeGUNfs_q_VvNQ">
-          <body>A Boolean value to indicate whether or not the mother planned to delivery at home.</body>
+          <body>A Boolean value to indicate whether the mother planned to deliver at home.</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_r1WssDxjEd6JwqSGecoePg"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_sJSq2byuEeGUNfs_q_VvNQ" value="1"/>
@@ -3171,7 +3158,7 @@ The consolidated CDA Vital Signs Observation template has been used.  The list o
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_QKJyQNXPEeGb1t7PnGJ-bA" name="Maternal Transfer">
       <ownedComment xmi:id="_XAIyoNXPEeGb1t7PnGJ-bA">
-        <body>Information on whether or not the mother had been transferred to the delivery facility based on maternal medical or fetal indications.</body>
+        <body>Information on whether or not the mother had been transferred to the delivery facility from another facility based on maternal medical or fetal indications.</body>
       </ownedComment>
       <generalization xmi:id="_QKJyQdXPEeGb1t7PnGJ-bA">
         <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
@@ -3186,7 +3173,7 @@ The consolidated CDA Vital Signs Observation template has been used.  The list o
       </ownedAttribute>
       <ownedAttribute xmi:id="_QKJyRNXPEeGb1t7PnGJ-bA" name="code" visibility="private" aggregation="composite">
         <ownedComment xmi:id="_QKJyRdXPEeGb1t7PnGJ-bA">
-          <body>A code value that indicates the nature of the observation - it refers to the transfer of the mother prior to delivery.</body>
+          <body>A code value that indicates the nature of the observation - it refers to the transfer of the mother to the facility prior to delivery.</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
       </ownedAttribute>
@@ -4197,7 +4184,7 @@ The consolidated CDA Vital Signs Observation template has been used.  The list o
     <ruleId>CONF:60</ruleId>
   </CDA:Entry>
   <CDA:CDATemplate xmi:id="_nSgzcMEfEeGP5fduNvI1Qw" base_Class="_P1wnwL7zEeGdruZFgBKbQw" templateId="2.16.840.1.113883.10.20.26.13"/>
-  <CDA:CDATemplate xmi:id="_t1L2QMEfEeGP5fduNvI1Qw" base_Class="_JLjREMCJEeGP5fduNvI1Qw" templateId="2.16.840.1.113883.10.20.22.4.27"/>
+  <CDA:CDATemplate xmi:id="_t1L2QMEfEeGP5fduNvI1Qw" base_Class="_JLjREMCJEeGP5fduNvI1Qw" templateId="2.16.840.1.113883.10.20.26.46"/>
   <CDA:CDATemplate xmi:id="_FpXdIMEgEeGP5fduNvI1Qw" base_Class="_Vf53QMCMEeGP5fduNvI1Qw" templateId="2.16.840.1.113883.10.20.26.16"/>
   <CDA:CDATemplate xmi:id="_NH3PAMEgEeGP5fduNvI1Qw" base_Class="_73zEgL7yEeGdruZFgBKbQw" templateId="2.16.840.1.113883.10.20.26.18"/>
   <CDA:CDATemplate xmi:id="_WS2-8MEgEeGP5fduNvI1Qw" base_Class="_U6FdQL7zEeGdruZFgBKbQw" templateId="2.16.840.1.113883.10.20.26.19"/>
@@ -4837,9 +4824,7 @@ The consolidated CDA Vital Signs Observation template has been used.  The list o
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
     <ruleId>CONF:400</ruleId>
   </CDA:CodeSystemConstraint>
-  <CDA:ValueSetConstraint xmi:id="_QjtTsOsOEeKC84mwBUHUdQ" base_Property="_PbaO4OsOEeKC84mwBUHUdQ">
-    <reference href="vsbr-vocab.uml#_PeplkOsNEeKC84mwBUHUdQ"/>
-  </CDA:ValueSetConstraint>
+  <CDA:ValueSetConstraint xmi:id="_QjtTsOsOEeKC84mwBUHUdQ" base_Property="_PbaO4OsOEeKC84mwBUHUdQ"/>
   <CDA:PropertyValidation xmi:id="_3P1mQOsOEeKC84mwBUHUdQ" mandatory="true" base_Property="_PbaO4OsOEeKC84mwBUHUdQ"/>
   <CDA:CodeSystemConstraint xmi:id="_OgEPsAXjEeO_frVhN2419A" code="68493-6" displayName="Prenatal visits for this pregnancy" base_Property="_yMaAQb7REeGdruZFgBKbQw">
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
@@ -4994,10 +4979,6 @@ The consolidated CDA Vital Signs Observation template has been used.  The list o
   <CDA:PropertyValidation xmi:id="_jHvDYRAMEeO6h_Vgn8UHWQ" base_Property="_jHcvjBAMEeO6h_Vgn8UHWQ">
     <ruleId>CONF:67</ruleId>
   </CDA:PropertyValidation>
-  <CDA:ValueSetConstraint xmi:id="_jHvDYhAMEeO6h_Vgn8UHWQ" base_Property="_jHcvkxAMEeO6h_Vgn8UHWQ">
-    <reference href="vsbr-vocab.uml#_PeplkOsNEeKC84mwBUHUdQ"/>
-  </CDA:ValueSetConstraint>
-  <CDA:PropertyValidation xmi:id="_jHvDYxAMEeO6h_Vgn8UHWQ" mandatory="true" base_Property="_jHcvkxAMEeO6h_Vgn8UHWQ"/>
   <CDA:PropertyValidation xmi:id="_jHvDZBAMEeO6h_Vgn8UHWQ" base_Property="_jHcvmRAMEeO6h_Vgn8UHWQ">
     <ruleId>CONF:69</ruleId>
   </CDA:PropertyValidation>
@@ -5019,5 +5000,8 @@ The consolidated CDA Vital Signs Observation template has been used.  The list o
   <CDA:AssociationValidation xmi:id="_2S40MBANEeO6h_Vgn8UHWQ" base_Association="_0nYUoRANEeO6h_Vgn8UHWQ"/>
   <CDA:CodeSystemConstraint xmi:id="_7pd6gBAREeO6h_Vgn8UHWQ" code="73763-5" displayName="Mother was transferred for maternal medical or fetal indications for delivery" base_Property="_QKJyRNXPEeGb1t7PnGJ-bA">
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+  </CDA:CodeSystemConstraint>
+  <CDA:CodeSystemConstraint xmi:id="_jyWn8BcCEeOf1pNcMpC12w" code="CHILD" base_Property="_PbaO4OsOEeKC84mwBUHUdQ">
+    <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_ywdZ4Gg7Ed-ilOLYnIx0jA"/>
   </CDA:CodeSystemConstraint>
 </xmi:XMI>
