@@ -4,24 +4,42 @@
 	<booktitle>
 		<booklibrary>Implementation Guide for CDA Release 2:</booklibrary>
 		<mainbooktitle>Reporting Birth and Fetal Death Information from the EHR to Vital Records, Release 1</mainbooktitle>
-		<booktitlealt>US Realm</booktitlealt>
-		<booktitlealt>CDAR2_BAFDRPT_R1_2012SEP</booktitlealt>
-		<booktitlealt><image href="images/CDAToolsLogo.png"/></booktitlealt>
-		<booktitlealt>HL7 DSTU Ballot, September 2012</booktitlealt>
-		<booktitlealt audience="developer">(Consolidated Developer Documentation)</booktitlealt>
+		<booktitlealt id="image"><image href="images/hl7logo.gif"/></booktitlealt>	
 	</booktitle>
-	<bookmeta>
-		<bookid><booknumber></booknumber>
-			<maintainer><organization>Copyright Health Level Seven International  ALL RIGHTS RESERVED</organization><person></person></maintainer>
-		</bookid>
-		<bookrights>
-			<copyrfirst><year>2012</year></copyrfirst>
-			<copyrlast><year>2012</year></copyrlast>
-			<bookowner>
-				<organization></organization>
-			</bookowner>
-		</bookrights>
-	</bookmeta>
+	
+	
+	    <bookmeta>
+    	<author>Public Health and Emergency Response Work Group</author>
+    	<prodinfo>
+			<prodname>CDAR2_BAFDRPT</prodname>
+			<vrmlist>
+				<vrm release="R1" version="2013AUG" ></vrm>
+			</vrmlist>
+			<brand>HL7 IG for CDA R2</brand>
+			<series>DSTU</series>
+			<platform>US Realm</platform>
+		</prodinfo>
+        <bookid>
+            <booknumber/>
+            <maintainer>
+                <organization>Open Health Tools, Model Driven Health Tools (MDHT)</organization>
+                <person/>
+            </maintainer>
+        </bookid>
+        <bookrights>
+            <copyrfirst>
+                <year>2012</year>
+            </copyrfirst>
+            <copyrlast>
+                <year>2013</year>
+            </copyrlast>
+            <bookowner>
+                <organization/>
+            </bookowner>
+        </bookrights>
+    </bookmeta>
+    
+	
 	<frontmatter>
 		<preface>
 			<topicref href="preface/Acknowledgments.dita" navtitle="Acknowledgments" type="topic"/>
