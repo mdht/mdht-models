@@ -33,124 +33,114 @@ import org.openhealthtools.mdht.uml.cda.vsbr.operations.MaternalMorbidityOperati
  *
  * @generated
  */
-public class MaternalMorbidityImpl extends ObservationImpl implements MaternalMorbidity
-{
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  protected MaternalMorbidityImpl()
-  {
-    super();
-  }
+public class MaternalMorbidityImpl extends ObservationImpl implements MaternalMorbidity {
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected MaternalMorbidityImpl() {
+		super();
+	}
 
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  @Override
-  protected EClass eStaticClass()
-  {
-    return VsbrPackage.Literals.MATERNAL_MORBIDITY;
-  }
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	protected EClass eStaticClass() {
+		return VsbrPackage.Literals.MATERNAL_MORBIDITY;
+	}
 
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateMaternalMorbidityTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return MaternalMorbidityOperations.validateMaternalMorbidityTemplateId(this, diagnostics, context);
-  }
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateMaternalMorbidityTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return MaternalMorbidityOperations.validateMaternalMorbidityTemplateId(this, diagnostics, context);
+	}
 
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateMaternalMorbidityClassCode(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return MaternalMorbidityOperations.validateMaternalMorbidityClassCode(this, diagnostics, context);
-  }
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateMaternalMorbidityClassCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return MaternalMorbidityOperations.validateMaternalMorbidityClassCode(this, diagnostics, context);
+	}
 
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateMaternalMorbidityMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return MaternalMorbidityOperations.validateMaternalMorbidityMoodCode(this, diagnostics, context);
-  }
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateMaternalMorbidityMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return MaternalMorbidityOperations.validateMaternalMorbidityMoodCode(this, diagnostics, context);
+	}
 
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateMaternalMorbidityCodeP(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return MaternalMorbidityOperations.validateMaternalMorbidityCodeP(this, diagnostics, context);
-  }
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateMaternalMorbidityCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return MaternalMorbidityOperations.validateMaternalMorbidityCodeP(this, diagnostics, context);
+	}
 
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateMaternalMorbidityCode(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return MaternalMorbidityOperations.validateMaternalMorbidityCode(this, diagnostics, context);
-  }
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateMaternalMorbidityCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return MaternalMorbidityOperations.validateMaternalMorbidityCode(this, diagnostics, context);
+	}
 
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateMaternalMorbidityCodeVS(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return MaternalMorbidityOperations.validateMaternalMorbidityCodeVS(this, diagnostics, context);
-  }
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateMaternalMorbidityCodeVS(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return MaternalMorbidityOperations.validateMaternalMorbidityCodeVS(this, diagnostics, context);
+	}
 
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateMaternalMorbidityValue(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return MaternalMorbidityOperations.validateMaternalMorbidityValue(this, diagnostics, context);
-  }
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateMaternalMorbidityValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return MaternalMorbidityOperations.validateMaternalMorbidityValue(this, diagnostics, context);
+	}
 
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateMaternalMorbidityValueP(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return MaternalMorbidityOperations.validateMaternalMorbidityValueP(this, diagnostics, context);
-  }
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateMaternalMorbidityValueP(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return MaternalMorbidityOperations.validateMaternalMorbidityValueP(this, diagnostics, context);
+	}
 
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public MaternalMorbidity init() {
-      return Initializer.Util.init(this);
-  }
-    /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public MaternalMorbidity init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
-} //MaternalMorbidityImpl
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public MaternalMorbidity init() {
+		return Initializer.Util.init(this);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public MaternalMorbidity init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+		Initializer.Util.init(this, initializers);
+		return this;
+	}
+} // MaternalMorbidityImpl

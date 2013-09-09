@@ -43,413 +43,385 @@ import org.openhealthtools.mdht.uml.cda.vsbr.util.VsbrValidator;
  *
  * @generated
  */
-public class BirthOrderOperations extends ClinicalStatementOperations
-{
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  protected BirthOrderOperations() {
-    super();
-  }
+public class BirthOrderOperations extends ClinicalStatementOperations {
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected BirthOrderOperations() {
+		super();
+	}
 
-  /**
-   * The cached OCL expression body for the '{@link #validateBirthOrderTemplateId(BirthOrder, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Birth Order Template Id</em>}' operation.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #validateBirthOrderTemplateId(BirthOrder, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-   * @generated
-   * @ordered
-   */
-  protected static final String VALIDATE_BIRTH_ORDER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.26.16')";
+	/**
+	 * The cached OCL expression body for the '{@link #validateBirthOrderTemplateId(BirthOrder, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Birth Order Template Id</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateBirthOrderTemplateId(BirthOrder, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String VALIDATE_BIRTH_ORDER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.26.16')";
 
-  /**
-   * The cached OCL invariant for the '{@link #validateBirthOrderTemplateId(BirthOrder, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Birth Order Template Id</em>}' invariant operation.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #validateBirthOrderTemplateId(BirthOrder, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-   * @generated
-   * @ordered
-   */
-  
-  protected static Constraint VALIDATE_BIRTH_ORDER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-  
+	/**
+	 * The cached OCL invariant for the '{@link #validateBirthOrderTemplateId(BirthOrder, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Birth Order Template Id</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateBirthOrderTemplateId(BirthOrder, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * <!-- begin-model-doc -->
-   * @param birthOrder The receiving '<em><b>Birth Order</b></em>' model object.
-   * @param diagnostics The chain of diagnostics to which problems are to be appended.
-   * @param context The cache of context-specific information.
-   * <!-- end-model-doc -->
-   * @generated
-   */
-  
-  public static  boolean validateBirthOrderTemplateId(BirthOrder birthOrder, DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-  	  
-    if (VALIDATE_BIRTH_ORDER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-      OCL.Helper helper = EOCL_ENV.createOCLHelper();
-      helper.setContext(VsbrPackage.Literals.BIRTH_ORDER);
-      try
-      {
-        VALIDATE_BIRTH_ORDER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_BIRTH_ORDER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-      }
-      catch (ParserException pe)
-      {
-        throw new UnsupportedOperationException(pe.getLocalizedMessage());
-      }
-    }
-    if (!EOCL_ENV.createQuery(VALIDATE_BIRTH_ORDER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(birthOrder))
-    {
-      if (diagnostics != null)
-      {
-        diagnostics.add
-          (new BasicDiagnostic
-            (Diagnostic.ERROR,
-             VsbrValidator.DIAGNOSTIC_SOURCE,
-             VsbrValidator.BIRTH_ORDER__BIRTH_ORDER_TEMPLATE_ID,
-             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "BirthOrderTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(birthOrder, context) }),
-             new Object [] { birthOrder }));
-      }
-       
-      return false;
-    }
-    return true;
-  }
+	protected static Constraint VALIDATE_BIRTH_ORDER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
-  /**
-   * The cached OCL expression body for the '{@link #validateBirthOrderClassCode(BirthOrder, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Birth Order Class Code</em>}' operation.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #validateBirthOrderClassCode(BirthOrder, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-   * @generated
-   * @ordered
-   */
-  protected static final String VALIDATE_BIRTH_ORDER_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.classCode=vocab::ActClassObservation::OBS";
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param birthOrder The receiving '<em><b>Birth Order</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 
-  /**
-   * The cached OCL invariant for the '{@link #validateBirthOrderClassCode(BirthOrder, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Birth Order Class Code</em>}' invariant operation.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #validateBirthOrderClassCode(BirthOrder, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-   * @generated
-   * @ordered
-   */
-  
-  protected static Constraint VALIDATE_BIRTH_ORDER_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-  
+	public static boolean validateBirthOrderTemplateId(BirthOrder birthOrder, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * <!-- begin-model-doc -->
-   * @param birthOrder The receiving '<em><b>Birth Order</b></em>' model object.
-   * @param diagnostics The chain of diagnostics to which problems are to be appended.
-   * @param context The cache of context-specific information.
-   * <!-- end-model-doc -->
-   * @generated
-   */
-  
-  public static  boolean validateBirthOrderClassCode(BirthOrder birthOrder, DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-  	  
-    if (VALIDATE_BIRTH_ORDER_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-      OCL.Helper helper = EOCL_ENV.createOCLHelper();
-      helper.setContext(VsbrPackage.Literals.BIRTH_ORDER);
-      try
-      {
-        VALIDATE_BIRTH_ORDER_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_BIRTH_ORDER_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-      }
-      catch (ParserException pe)
-      {
-        throw new UnsupportedOperationException(pe.getLocalizedMessage());
-      }
-    }
-    if (!EOCL_ENV.createQuery(VALIDATE_BIRTH_ORDER_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(birthOrder))
-    {
-      if (diagnostics != null)
-      {
-        diagnostics.add
-          (new BasicDiagnostic
-            (Diagnostic.ERROR,
-             VsbrValidator.DIAGNOSTIC_SOURCE,
-             VsbrValidator.BIRTH_ORDER__BIRTH_ORDER_CLASS_CODE,
-             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "BirthOrderClassCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(birthOrder, context) }),
-             new Object [] { birthOrder }));
-      }
-       
-      return false;
-    }
-    return true;
-  }
+		if (VALIDATE_BIRTH_ORDER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setContext(VsbrPackage.Literals.BIRTH_ORDER);
+			try {
+				VALIDATE_BIRTH_ORDER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_BIRTH_ORDER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+			} catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		if (!EOCL_ENV.createQuery(VALIDATE_BIRTH_ORDER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(birthOrder)) {
+			if (diagnostics != null) {
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
+					VsbrValidator.BIRTH_ORDER__BIRTH_ORDER_TEMPLATE_ID,
+					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
+						"_UI_GenericInvariant_diagnostic",
+						new Object[] {
+								"BirthOrderTemplateId",
+								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(birthOrder, context) }),
+					new Object[] { birthOrder }));
+			}
 
-  /**
-   * The cached OCL expression body for the '{@link #validateBirthOrderMoodCode(BirthOrder, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Birth Order Mood Code</em>}' operation.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #validateBirthOrderMoodCode(BirthOrder, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-   * @generated
-   * @ordered
-   */
-  protected static final String VALIDATE_BIRTH_ORDER_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.moodCode=vocab::x_ActMoodDocumentObservation::EVN";
+			return false;
+		}
+		return true;
+	}
 
-  /**
-   * The cached OCL invariant for the '{@link #validateBirthOrderMoodCode(BirthOrder, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Birth Order Mood Code</em>}' invariant operation.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #validateBirthOrderMoodCode(BirthOrder, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-   * @generated
-   * @ordered
-   */
-  
-  protected static Constraint VALIDATE_BIRTH_ORDER_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-  
+	/**
+	 * The cached OCL expression body for the '{@link #validateBirthOrderClassCode(BirthOrder, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Birth Order Class Code</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateBirthOrderClassCode(BirthOrder, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String VALIDATE_BIRTH_ORDER_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.classCode=vocab::ActClassObservation::OBS";
 
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * <!-- begin-model-doc -->
-   * @param birthOrder The receiving '<em><b>Birth Order</b></em>' model object.
-   * @param diagnostics The chain of diagnostics to which problems are to be appended.
-   * @param context The cache of context-specific information.
-   * <!-- end-model-doc -->
-   * @generated
-   */
-  
-  public static  boolean validateBirthOrderMoodCode(BirthOrder birthOrder, DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-  	  
-    if (VALIDATE_BIRTH_ORDER_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-      OCL.Helper helper = EOCL_ENV.createOCLHelper();
-      helper.setContext(VsbrPackage.Literals.BIRTH_ORDER);
-      try
-      {
-        VALIDATE_BIRTH_ORDER_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_BIRTH_ORDER_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-      }
-      catch (ParserException pe)
-      {
-        throw new UnsupportedOperationException(pe.getLocalizedMessage());
-      }
-    }
-    if (!EOCL_ENV.createQuery(VALIDATE_BIRTH_ORDER_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(birthOrder))
-    {
-      if (diagnostics != null)
-      {
-        diagnostics.add
-          (new BasicDiagnostic
-            (Diagnostic.ERROR,
-             VsbrValidator.DIAGNOSTIC_SOURCE,
-             VsbrValidator.BIRTH_ORDER__BIRTH_ORDER_MOOD_CODE,
-             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "BirthOrderMoodCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(birthOrder, context) }),
-             new Object [] { birthOrder }));
-      }
-       
-      return false;
-    }
-    return true;
-  }
+	/**
+	 * The cached OCL invariant for the '{@link #validateBirthOrderClassCode(BirthOrder, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Birth Order Class Code</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateBirthOrderClassCode(BirthOrder, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 
-  /**
-   * The cached OCL expression body for the '{@link #validateBirthOrderCodeP(BirthOrder, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Birth Order Code P</em>}' operation.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #validateBirthOrderCodeP(BirthOrder, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-   * @generated
-   * @ordered
-   */
-  protected static final String VALIDATE_BIRTH_ORDER_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined())";
+	protected static Constraint VALIDATE_BIRTH_ORDER_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
-  /**
-   * The cached OCL invariant for the '{@link #validateBirthOrderCodeP(BirthOrder, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Birth Order Code P</em>}' invariant operation.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #validateBirthOrderCodeP(BirthOrder, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-   * @generated
-   * @ordered
-   */
-  
-  protected static Constraint VALIDATE_BIRTH_ORDER_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-  
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param birthOrder The receiving '<em><b>Birth Order</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * <!-- begin-model-doc -->
-   * @param birthOrder The receiving '<em><b>Birth Order</b></em>' model object.
-   * @param diagnostics The chain of diagnostics to which problems are to be appended.
-   * @param context The cache of context-specific information.
-   * <!-- end-model-doc -->
-   * @generated
-   */
-  
-  public static  boolean validateBirthOrderCodeP(BirthOrder birthOrder, DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-  	  
-    if (VALIDATE_BIRTH_ORDER_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-      OCL.Helper helper = EOCL_ENV.createOCLHelper();
-      helper.setContext(VsbrPackage.Literals.BIRTH_ORDER);
-      try
-      {
-        VALIDATE_BIRTH_ORDER_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_BIRTH_ORDER_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-      }
-      catch (ParserException pe)
-      {
-        throw new UnsupportedOperationException(pe.getLocalizedMessage());
-      }
-    }
-    if (!EOCL_ENV.createQuery(VALIDATE_BIRTH_ORDER_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(birthOrder))
-    {
-      if (diagnostics != null)
-      {
-        diagnostics.add
-          (new BasicDiagnostic
-            (Diagnostic.ERROR,
-             VsbrValidator.DIAGNOSTIC_SOURCE,
-             VsbrValidator.BIRTH_ORDER__BIRTH_ORDER_CODE_P,
-             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "BirthOrderCodeP", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(birthOrder, context) }),
-             new Object [] { birthOrder }));
-      }
-       
-      return false;
-    }
-    return true;
-  }
+	public static boolean validateBirthOrderClassCode(BirthOrder birthOrder, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 
-  /**
-   * The cached OCL expression body for the '{@link #validateBirthOrderCode(BirthOrder, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Birth Order Code</em>}' operation.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #validateBirthOrderCode(BirthOrder, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-   * @generated
-   * @ordered
-   */
-  protected static final String VALIDATE_BIRTH_ORDER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "+
-"let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "+
-"value.code = '73771-8' and value.codeSystem = '2.16.840.1.113883.6.1')";
+		if (VALIDATE_BIRTH_ORDER_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setContext(VsbrPackage.Literals.BIRTH_ORDER);
+			try {
+				VALIDATE_BIRTH_ORDER_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_BIRTH_ORDER_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+			} catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		if (!EOCL_ENV.createQuery(VALIDATE_BIRTH_ORDER_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(birthOrder)) {
+			if (diagnostics != null) {
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
+					VsbrValidator.BIRTH_ORDER__BIRTH_ORDER_CLASS_CODE,
+					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
+						"_UI_GenericInvariant_diagnostic",
+						new Object[] {
+								"BirthOrderClassCode",
+								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(birthOrder, context) }),
+					new Object[] { birthOrder }));
+			}
 
-  /**
-   * The cached OCL invariant for the '{@link #validateBirthOrderCode(BirthOrder, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Birth Order Code</em>}' invariant operation.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #validateBirthOrderCode(BirthOrder, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-   * @generated
-   * @ordered
-   */
-  
-  protected static Constraint VALIDATE_BIRTH_ORDER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-  
+			return false;
+		}
+		return true;
+	}
 
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * <!-- begin-model-doc -->
-   * @param birthOrder The receiving '<em><b>Birth Order</b></em>' model object.
-   * @param diagnostics The chain of diagnostics to which problems are to be appended.
-   * @param context The cache of context-specific information.
-   * <!-- end-model-doc -->
-   * @generated
-   */
-  
-  public static  boolean validateBirthOrderCode(BirthOrder birthOrder, DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-  	  
-    if (VALIDATE_BIRTH_ORDER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-      OCL.Helper helper = EOCL_ENV.createOCLHelper();
-      helper.setContext(VsbrPackage.Literals.BIRTH_ORDER);
-      try
-      {
-        VALIDATE_BIRTH_ORDER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_BIRTH_ORDER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-      }
-      catch (ParserException pe)
-      {
-        throw new UnsupportedOperationException(pe.getLocalizedMessage());
-      }
-    }
-    if (!EOCL_ENV.createQuery(VALIDATE_BIRTH_ORDER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(birthOrder))
-    {
-      if (diagnostics != null)
-      {
-        diagnostics.add
-          (new BasicDiagnostic
-            (Diagnostic.ERROR,
-             VsbrValidator.DIAGNOSTIC_SOURCE,
-             VsbrValidator.BIRTH_ORDER__BIRTH_ORDER_CODE,
-             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "BirthOrderCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(birthOrder, context) }),
-             new Object [] { birthOrder }));
-      }
-       
-      return false;
-    }
-    return true;
-  }
+	/**
+	 * The cached OCL expression body for the '{@link #validateBirthOrderMoodCode(BirthOrder, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Birth Order Mood Code</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateBirthOrderMoodCode(BirthOrder, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String VALIDATE_BIRTH_ORDER_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.moodCode=vocab::x_ActMoodDocumentObservation::EVN";
 
-  /**
-   * The cached OCL expression body for the '{@link #validateBirthOrderValue(BirthOrder, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Birth Order Value</em>}' operation.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #validateBirthOrderValue(BirthOrder, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-   * @generated
-   * @ordered
-   */
-  protected static final String VALIDATE_BIRTH_ORDER_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | element.oclIsTypeOf(datatypes::INT)))";
+	/**
+	 * The cached OCL invariant for the '{@link #validateBirthOrderMoodCode(BirthOrder, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Birth Order Mood Code</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateBirthOrderMoodCode(BirthOrder, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 
-  /**
-   * The cached OCL invariant for the '{@link #validateBirthOrderValue(BirthOrder, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Birth Order Value</em>}' invariant operation.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #validateBirthOrderValue(BirthOrder, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-   * @generated
-   * @ordered
-   */
-  
-  protected static Constraint VALIDATE_BIRTH_ORDER_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-  
+	protected static Constraint VALIDATE_BIRTH_ORDER_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * <!-- begin-model-doc -->
-   * @param birthOrder The receiving '<em><b>Birth Order</b></em>' model object.
-   * @param diagnostics The chain of diagnostics to which problems are to be appended.
-   * @param context The cache of context-specific information.
-   * <!-- end-model-doc -->
-   * @generated
-   */
-  
-  public static  boolean validateBirthOrderValue(BirthOrder birthOrder, DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-  	  
-    if (VALIDATE_BIRTH_ORDER_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-      OCL.Helper helper = EOCL_ENV.createOCLHelper();
-      helper.setContext(VsbrPackage.Literals.BIRTH_ORDER);
-      try
-      {
-        VALIDATE_BIRTH_ORDER_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_BIRTH_ORDER_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-      }
-      catch (ParserException pe)
-      {
-        throw new UnsupportedOperationException(pe.getLocalizedMessage());
-      }
-    }
-    if (!EOCL_ENV.createQuery(VALIDATE_BIRTH_ORDER_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(birthOrder))
-    {
-      if (diagnostics != null)
-      {
-        diagnostics.add
-          (new BasicDiagnostic
-            (Diagnostic.ERROR,
-             VsbrValidator.DIAGNOSTIC_SOURCE,
-             VsbrValidator.BIRTH_ORDER__BIRTH_ORDER_VALUE,
-             org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "BirthOrderValue", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(birthOrder, context) }),
-             new Object [] { birthOrder }));
-      }
-       
-      return false;
-    }
-    return true;
-  }
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param birthOrder The receiving '<em><b>Birth Order</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+
+	public static boolean validateBirthOrderMoodCode(BirthOrder birthOrder, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+
+		if (VALIDATE_BIRTH_ORDER_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setContext(VsbrPackage.Literals.BIRTH_ORDER);
+			try {
+				VALIDATE_BIRTH_ORDER_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_BIRTH_ORDER_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+			} catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		if (!EOCL_ENV.createQuery(VALIDATE_BIRTH_ORDER_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(birthOrder)) {
+			if (diagnostics != null) {
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
+					VsbrValidator.BIRTH_ORDER__BIRTH_ORDER_MOOD_CODE,
+					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
+						"_UI_GenericInvariant_diagnostic",
+						new Object[] {
+								"BirthOrderMoodCode",
+								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(birthOrder, context) }),
+					new Object[] { birthOrder }));
+			}
+
+			return false;
+		}
+		return true;
+	}
+
+	/**
+	 * The cached OCL expression body for the '{@link #validateBirthOrderCodeP(BirthOrder, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Birth Order Code P</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateBirthOrderCodeP(BirthOrder, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String VALIDATE_BIRTH_ORDER_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined())";
+
+	/**
+	 * The cached OCL invariant for the '{@link #validateBirthOrderCodeP(BirthOrder, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Birth Order Code P</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateBirthOrderCodeP(BirthOrder, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+
+	protected static Constraint VALIDATE_BIRTH_ORDER_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param birthOrder The receiving '<em><b>Birth Order</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+
+	public static boolean validateBirthOrderCodeP(BirthOrder birthOrder, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+
+		if (VALIDATE_BIRTH_ORDER_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setContext(VsbrPackage.Literals.BIRTH_ORDER);
+			try {
+				VALIDATE_BIRTH_ORDER_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_BIRTH_ORDER_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+			} catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		if (!EOCL_ENV.createQuery(VALIDATE_BIRTH_ORDER_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(birthOrder)) {
+			if (diagnostics != null) {
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE, VsbrValidator.BIRTH_ORDER__BIRTH_ORDER_CODE_P,
+					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
+						"_UI_GenericInvariant_diagnostic",
+						new Object[] {
+								"BirthOrderCodeP",
+								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(birthOrder, context) }),
+					new Object[] { birthOrder }));
+			}
+
+			return false;
+		}
+		return true;
+	}
+
+	/**
+	 * The cached OCL expression body for the '{@link #validateBirthOrderCode(BirthOrder, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Birth Order Code</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateBirthOrderCode(BirthOrder, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String VALIDATE_BIRTH_ORDER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "
+			+ "let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "
+			+ "value.code = '73771-8' and value.codeSystem = '2.16.840.1.113883.6.1')";
+
+	/**
+	 * The cached OCL invariant for the '{@link #validateBirthOrderCode(BirthOrder, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Birth Order Code</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateBirthOrderCode(BirthOrder, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+
+	protected static Constraint VALIDATE_BIRTH_ORDER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param birthOrder The receiving '<em><b>Birth Order</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+
+	public static boolean validateBirthOrderCode(BirthOrder birthOrder, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+
+		if (VALIDATE_BIRTH_ORDER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setContext(VsbrPackage.Literals.BIRTH_ORDER);
+			try {
+				VALIDATE_BIRTH_ORDER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_BIRTH_ORDER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+			} catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		if (!EOCL_ENV.createQuery(VALIDATE_BIRTH_ORDER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(birthOrder)) {
+			if (diagnostics != null) {
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE, VsbrValidator.BIRTH_ORDER__BIRTH_ORDER_CODE,
+					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
+						"_UI_GenericInvariant_diagnostic",
+						new Object[] {
+								"BirthOrderCode",
+								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(birthOrder, context) }),
+					new Object[] { birthOrder }));
+			}
+
+			return false;
+		}
+		return true;
+	}
+
+	/**
+	 * The cached OCL expression body for the '{@link #validateBirthOrderValue(BirthOrder, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Birth Order Value</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateBirthOrderValue(BirthOrder, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String VALIDATE_BIRTH_ORDER_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | element.oclIsTypeOf(datatypes::INT)))";
+
+	/**
+	 * The cached OCL invariant for the '{@link #validateBirthOrderValue(BirthOrder, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Birth Order Value</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateBirthOrderValue(BirthOrder, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+
+	protected static Constraint VALIDATE_BIRTH_ORDER_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param birthOrder The receiving '<em><b>Birth Order</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+
+	public static boolean validateBirthOrderValue(BirthOrder birthOrder, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+
+		if (VALIDATE_BIRTH_ORDER_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setContext(VsbrPackage.Literals.BIRTH_ORDER);
+			try {
+				VALIDATE_BIRTH_ORDER_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_BIRTH_ORDER_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+			} catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		if (!EOCL_ENV.createQuery(VALIDATE_BIRTH_ORDER_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(birthOrder)) {
+			if (diagnostics != null) {
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE, VsbrValidator.BIRTH_ORDER__BIRTH_ORDER_VALUE,
+					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
+						"_UI_GenericInvariant_diagnostic",
+						new Object[] {
+								"BirthOrderValue",
+								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(birthOrder, context) }),
+					new Object[] { birthOrder }));
+			}
+
+			return false;
+		}
+		return true;
+	}
 
 } // BirthOrderOperations

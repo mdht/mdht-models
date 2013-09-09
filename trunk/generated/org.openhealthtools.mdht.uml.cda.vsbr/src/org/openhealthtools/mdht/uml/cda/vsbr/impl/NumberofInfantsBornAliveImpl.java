@@ -33,104 +33,96 @@ import org.openhealthtools.mdht.uml.cda.vsbr.operations.NumberofInfantsBornAlive
  *
  * @generated
  */
-public class NumberofInfantsBornAliveImpl extends ObservationImpl implements NumberofInfantsBornAlive
-{
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  protected NumberofInfantsBornAliveImpl()
-  {
-    super();
-  }
+public class NumberofInfantsBornAliveImpl extends ObservationImpl implements NumberofInfantsBornAlive {
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected NumberofInfantsBornAliveImpl() {
+		super();
+	}
 
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  @Override
-  protected EClass eStaticClass()
-  {
-    return VsbrPackage.Literals.NUMBEROF_INFANTS_BORN_ALIVE;
-  }
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	protected EClass eStaticClass() {
+		return VsbrPackage.Literals.NUMBEROF_INFANTS_BORN_ALIVE;
+	}
 
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateNumberofInfantsBornAliveTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return NumberofInfantsBornAliveOperations.validateNumberofInfantsBornAliveTemplateId(this, diagnostics, context);
-  }
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateNumberofInfantsBornAliveTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return NumberofInfantsBornAliveOperations.validateNumberofInfantsBornAliveTemplateId(this, diagnostics, context);
+	}
 
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateNumberofInfantsBornAliveClassCode(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return NumberofInfantsBornAliveOperations.validateNumberofInfantsBornAliveClassCode(this, diagnostics, context);
-  }
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateNumberofInfantsBornAliveClassCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return NumberofInfantsBornAliveOperations.validateNumberofInfantsBornAliveClassCode(this, diagnostics, context);
+	}
 
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateNumberofInfantsBornAliveMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return NumberofInfantsBornAliveOperations.validateNumberofInfantsBornAliveMoodCode(this, diagnostics, context);
-  }
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateNumberofInfantsBornAliveMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return NumberofInfantsBornAliveOperations.validateNumberofInfantsBornAliveMoodCode(this, diagnostics, context);
+	}
 
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateNumberofInfantsBornAliveCodeP(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return NumberofInfantsBornAliveOperations.validateNumberofInfantsBornAliveCodeP(this, diagnostics, context);
-  }
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateNumberofInfantsBornAliveCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return NumberofInfantsBornAliveOperations.validateNumberofInfantsBornAliveCodeP(this, diagnostics, context);
+	}
 
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateNumberofInfantsBornAliveCode(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return NumberofInfantsBornAliveOperations.validateNumberofInfantsBornAliveCode(this, diagnostics, context);
-  }
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateNumberofInfantsBornAliveCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return NumberofInfantsBornAliveOperations.validateNumberofInfantsBornAliveCode(this, diagnostics, context);
+	}
 
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateNumberofInfantsBornAliveValue(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return NumberofInfantsBornAliveOperations.validateNumberofInfantsBornAliveValue(this, diagnostics, context);
-  }
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateNumberofInfantsBornAliveValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return NumberofInfantsBornAliveOperations.validateNumberofInfantsBornAliveValue(this, diagnostics, context);
+	}
 
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public NumberofInfantsBornAlive init() {
-      return Initializer.Util.init(this);
-  }
-    /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public NumberofInfantsBornAlive init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
-} //NumberofInfantsBornAliveImpl
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public NumberofInfantsBornAlive init() {
+		return Initializer.Util.init(this);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public NumberofInfantsBornAlive init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+		Initializer.Util.init(this, initializers);
+		return this;
+	}
+} // NumberofInfantsBornAliveImpl

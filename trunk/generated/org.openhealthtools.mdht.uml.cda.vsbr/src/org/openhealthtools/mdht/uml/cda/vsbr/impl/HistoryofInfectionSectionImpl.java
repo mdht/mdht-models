@@ -35,84 +35,81 @@ import org.openhealthtools.mdht.uml.cda.vsbr.operations.HistoryofInfectionSectio
  *
  * @generated
  */
-public class HistoryofInfectionSectionImpl extends SectionImpl implements HistoryofInfectionSection
-{
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  protected HistoryofInfectionSectionImpl()
-  {
-    super();
-  }
+public class HistoryofInfectionSectionImpl extends SectionImpl implements HistoryofInfectionSection {
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected HistoryofInfectionSectionImpl() {
+		super();
+	}
 
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  @Override
-  protected EClass eStaticClass()
-  {
-    return VsbrPackage.Literals.HISTORYOF_INFECTION_SECTION;
-  }
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	protected EClass eStaticClass() {
+		return VsbrPackage.Literals.HISTORYOF_INFECTION_SECTION;
+	}
 
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateHistoryofInfectionSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return HistoryofInfectionSectionOperations.validateHistoryofInfectionSectionTemplateId(this, diagnostics, context);
-  }
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateHistoryofInfectionSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return HistoryofInfectionSectionOperations.validateHistoryofInfectionSectionTemplateId(
+			this, diagnostics, context);
+	}
 
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateHistoryofInfectionSectionText(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return HistoryofInfectionSectionOperations.validateHistoryofInfectionSectionText(this, diagnostics, context);
-  }
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateHistoryofInfectionSectionText(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return HistoryofInfectionSectionOperations.validateHistoryofInfectionSectionText(this, diagnostics, context);
+	}
 
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateHistoryofInfectionSectionInfectionsPresent(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return HistoryofInfectionSectionOperations.validateHistoryofInfectionSectionInfectionsPresent(this, diagnostics, context);
-  }
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateHistoryofInfectionSectionInfectionsPresent(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return HistoryofInfectionSectionOperations.validateHistoryofInfectionSectionInfectionsPresent(
+			this, diagnostics, context);
+	}
 
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public EList<InfectionPresent> getInfectionsPresents()
-  {
-    return HistoryofInfectionSectionOperations.getInfectionsPresents(this);
-  }
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EList<InfectionPresent> getInfectionsPresents() {
+		return HistoryofInfectionSectionOperations.getInfectionsPresents(this);
+	}
 
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public HistoryofInfectionSection init() {
-      return Initializer.Util.init(this);
-  }
-    /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public HistoryofInfectionSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
-} //HistoryofInfectionSectionImpl
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public HistoryofInfectionSection init() {
+		return Initializer.Util.init(this);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public HistoryofInfectionSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+		Initializer.Util.init(this, initializers);
+		return this;
+	}
+} // HistoryofInfectionSectionImpl
