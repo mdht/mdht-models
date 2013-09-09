@@ -108,15 +108,6 @@ public interface VsbrFactory extends EFactory
   OtherPregnancyOutcome createOtherPregnancyOutcome();
 
   /**
-   * Returns a new object of class '<em>Numberof Infants Born Alive</em>'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @return a new object of class '<em>Numberof Infants Born Alive</em>'.
-   * @generated
-   */
-  NumberofInfantsBornAlive createNumberofInfantsBornAlive();
-
-  /**
    * Returns a new object of class '<em>Estimateof Gestation</em>'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
@@ -162,6 +153,15 @@ public interface VsbrFactory extends EFactory
   BirthOrder createBirthOrder();
 
   /**
+   * Returns a new object of class '<em>Numberof Infants Born Alive</em>'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return a new object of class '<em>Numberof Infants Born Alive</em>'.
+   * @generated
+   */
+  NumberofInfantsBornAlive createNumberofInfantsBornAlive();
+
+  /**
    * Returns a new object of class '<em>Congenital Anomaly</em>'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
@@ -180,22 +180,13 @@ public interface VsbrFactory extends EFactory
   NewbornsVitalSignsSection createNewbornsVitalSignsSection();
 
   /**
-   * Returns a new object of class '<em>Apgar Score</em>'.
+   * Returns a new object of class '<em>Vital Signs Observation</em>'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @return a new object of class '<em>Apgar Score</em>'.
+   * @return a new object of class '<em>Vital Signs Observation</em>'.
    * @generated
    */
-  ApgarScore createApgarScore();
-
-  /**
-   * Returns a new object of class '<em>Weight</em>'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @return a new object of class '<em>Weight</em>'.
-   * @generated
-   */
-  Weight createWeight();
+  VitalSignsObservation createVitalSignsObservation();
 
   /**
    * Returns a new object of class '<em>Abnormal Conditionofthe Newborn</em>'.
@@ -225,13 +216,13 @@ public interface VsbrFactory extends EFactory
   InfantBreastfed createInfantBreastfed();
 
   /**
-   * Returns a new object of class '<em>infant Transfer</em>'.
+   * Returns a new object of class '<em>Infant Transfer</em>'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @return a new object of class '<em>infant Transfer</em>'.
+   * @return a new object of class '<em>Infant Transfer</em>'.
    * @generated
    */
-  infantTransfer createinfantTransfer();
+  InfantTransfer createInfantTransfer();
 
   /**
    * Returns a new object of class '<em>Plurality</em>'.
@@ -270,13 +261,13 @@ public interface VsbrFactory extends EFactory
   CharacteristicofLaborandDelivery createCharacteristicofLaborandDelivery();
 
   /**
-   * Returns a new object of class '<em>home Birth Plan</em>'.
+   * Returns a new object of class '<em>Planned Home Birth</em>'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @return a new object of class '<em>home Birth Plan</em>'.
+   * @return a new object of class '<em>Planned Home Birth</em>'.
    * @generated
    */
-  homeBirthPlan createhomeBirthPlan();
+  PlannedHomeBirth createPlannedHomeBirth();
 
   /**
    * Returns a new object of class '<em>Maternal Transfer</em>'.
@@ -313,33 +304,6 @@ public interface VsbrFactory extends EFactory
    * @generated
    */
   MothersVitalSignsSection createMothersVitalSignsSection();
-
-  /**
-   * Returns a new object of class '<em>Body Weightat Delivery</em>'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @return a new object of class '<em>Body Weightat Delivery</em>'.
-   * @generated
-   */
-  BodyWeightatDelivery createBodyWeightatDelivery();
-
-  /**
-   * Returns a new object of class '<em>Height</em>'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @return a new object of class '<em>Height</em>'.
-   * @generated
-   */
-  Height createHeight();
-
-  /**
-   * Returns a new object of class '<em>Prepregnancy Body Weight</em>'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @return a new object of class '<em>Prepregnancy Body Weight</em>'.
-   * @generated
-   */
-  PrepregnancyBodyWeight createPrepregnancyBodyWeight();
 
   /**
    * Returns a new object of class '<em>Laborand Delivery Procedure Section</em>'.
