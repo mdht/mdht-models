@@ -35,124 +35,118 @@ import org.openhealthtools.mdht.uml.cda.vsbr.operations.NewbornsVitalSignsSectio
  *
  * @generated
  */
-public class NewbornsVitalSignsSectionImpl extends SectionImpl implements NewbornsVitalSignsSection
-{
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  protected NewbornsVitalSignsSectionImpl()
-  {
-    super();
-  }
+public class NewbornsVitalSignsSectionImpl extends SectionImpl implements NewbornsVitalSignsSection {
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected NewbornsVitalSignsSectionImpl() {
+		super();
+	}
 
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  @Override
-  protected EClass eStaticClass()
-  {
-    return VsbrPackage.Literals.NEWBORNS_VITAL_SIGNS_SECTION;
-  }
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	protected EClass eStaticClass() {
+		return VsbrPackage.Literals.NEWBORNS_VITAL_SIGNS_SECTION;
+	}
 
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateNewbornsVitalSignsSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return NewbornsVitalSignsSectionOperations.validateNewbornsVitalSignsSectionTemplateId(this, diagnostics, context);
-  }
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateNewbornsVitalSignsSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return NewbornsVitalSignsSectionOperations.validateNewbornsVitalSignsSectionTemplateId(
+			this, diagnostics, context);
+	}
 
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateNewbornsVitalSignsSectionClassCode(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return NewbornsVitalSignsSectionOperations.validateNewbornsVitalSignsSectionClassCode(this, diagnostics, context);
-  }
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateNewbornsVitalSignsSectionClassCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return NewbornsVitalSignsSectionOperations.validateNewbornsVitalSignsSectionClassCode(
+			this, diagnostics, context);
+	}
 
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateNewbornsVitalSignsSectionMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return NewbornsVitalSignsSectionOperations.validateNewbornsVitalSignsSectionMoodCode(this, diagnostics, context);
-  }
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateNewbornsVitalSignsSectionMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return NewbornsVitalSignsSectionOperations.validateNewbornsVitalSignsSectionMoodCode(this, diagnostics, context);
+	}
 
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateNewbornsVitalSignsSectionCode(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return NewbornsVitalSignsSectionOperations.validateNewbornsVitalSignsSectionCode(this, diagnostics, context);
-  }
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateNewbornsVitalSignsSectionCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return NewbornsVitalSignsSectionOperations.validateNewbornsVitalSignsSectionCode(this, diagnostics, context);
+	}
 
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateNewbornsVitalSignsSectionCodeP(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return NewbornsVitalSignsSectionOperations.validateNewbornsVitalSignsSectionCodeP(this, diagnostics, context);
-  }
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateNewbornsVitalSignsSectionCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return NewbornsVitalSignsSectionOperations.validateNewbornsVitalSignsSectionCodeP(this, diagnostics, context);
+	}
 
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateNewbornsVitalSignsSectionText(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return NewbornsVitalSignsSectionOperations.validateNewbornsVitalSignsSectionText(this, diagnostics, context);
-  }
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateNewbornsVitalSignsSectionText(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return NewbornsVitalSignsSectionOperations.validateNewbornsVitalSignsSectionText(this, diagnostics, context);
+	}
 
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateNewbornsVitalSignsSectionVitalSignsObservation(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return NewbornsVitalSignsSectionOperations.validateNewbornsVitalSignsSectionVitalSignsObservation(this, diagnostics, context);
-  }
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateNewbornsVitalSignsSectionVitalSignsObservation(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return NewbornsVitalSignsSectionOperations.validateNewbornsVitalSignsSectionVitalSignsObservation(
+			this, diagnostics, context);
+	}
 
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public EList<VitalSignsObservation> getVitalSignsObservations()
-  {
-    return NewbornsVitalSignsSectionOperations.getVitalSignsObservations(this);
-  }
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EList<VitalSignsObservation> getVitalSignsObservations() {
+		return NewbornsVitalSignsSectionOperations.getVitalSignsObservations(this);
+	}
 
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public NewbornsVitalSignsSection init() {
-      return Initializer.Util.init(this);
-  }
-    /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public NewbornsVitalSignsSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
-} //NewbornsVitalSignsSectionImpl
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public NewbornsVitalSignsSection init() {
+		return Initializer.Util.init(this);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public NewbornsVitalSignsSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+		Initializer.Util.init(this, initializers);
+		return this;
+	}
+} // NewbornsVitalSignsSectionImpl

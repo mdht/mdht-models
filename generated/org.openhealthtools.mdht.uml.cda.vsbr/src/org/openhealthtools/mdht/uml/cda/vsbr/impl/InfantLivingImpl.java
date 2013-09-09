@@ -33,104 +33,96 @@ import org.openhealthtools.mdht.uml.cda.vsbr.operations.InfantLivingOperations;
  *
  * @generated
  */
-public class InfantLivingImpl extends ObservationImpl implements InfantLiving
-{
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  protected InfantLivingImpl()
-  {
-    super();
-  }
+public class InfantLivingImpl extends ObservationImpl implements InfantLiving {
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected InfantLivingImpl() {
+		super();
+	}
 
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  @Override
-  protected EClass eStaticClass()
-  {
-    return VsbrPackage.Literals.INFANT_LIVING;
-  }
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	protected EClass eStaticClass() {
+		return VsbrPackage.Literals.INFANT_LIVING;
+	}
 
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateInfantLivingTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return InfantLivingOperations.validateInfantLivingTemplateId(this, diagnostics, context);
-  }
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateInfantLivingTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return InfantLivingOperations.validateInfantLivingTemplateId(this, diagnostics, context);
+	}
 
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateInfantLivingClassCode(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return InfantLivingOperations.validateInfantLivingClassCode(this, diagnostics, context);
-  }
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateInfantLivingClassCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return InfantLivingOperations.validateInfantLivingClassCode(this, diagnostics, context);
+	}
 
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateInfantLivingMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return InfantLivingOperations.validateInfantLivingMoodCode(this, diagnostics, context);
-  }
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateInfantLivingMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return InfantLivingOperations.validateInfantLivingMoodCode(this, diagnostics, context);
+	}
 
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateInfantLivingCodeP(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return InfantLivingOperations.validateInfantLivingCodeP(this, diagnostics, context);
-  }
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateInfantLivingCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return InfantLivingOperations.validateInfantLivingCodeP(this, diagnostics, context);
+	}
 
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateInfantLivingCode(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return InfantLivingOperations.validateInfantLivingCode(this, diagnostics, context);
-  }
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateInfantLivingCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return InfantLivingOperations.validateInfantLivingCode(this, diagnostics, context);
+	}
 
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateInfantLivingValue(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return InfantLivingOperations.validateInfantLivingValue(this, diagnostics, context);
-  }
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateInfantLivingValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return InfantLivingOperations.validateInfantLivingValue(this, diagnostics, context);
+	}
 
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public InfantLiving init() {
-      return Initializer.Util.init(this);
-  }
-    /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public InfantLiving init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
-} //InfantLivingImpl
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public InfantLiving init() {
+		return Initializer.Util.init(this);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public InfantLiving init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+		Initializer.Util.init(this, initializers);
+		return this;
+	}
+} // InfantLivingImpl

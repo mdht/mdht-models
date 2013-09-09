@@ -33,104 +33,96 @@ import org.openhealthtools.mdht.uml.cda.vsbr.operations.InfantBreastfedOperation
  *
  * @generated
  */
-public class InfantBreastfedImpl extends ObservationImpl implements InfantBreastfed
-{
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  protected InfantBreastfedImpl()
-  {
-    super();
-  }
+public class InfantBreastfedImpl extends ObservationImpl implements InfantBreastfed {
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected InfantBreastfedImpl() {
+		super();
+	}
 
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  @Override
-  protected EClass eStaticClass()
-  {
-    return VsbrPackage.Literals.INFANT_BREASTFED;
-  }
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	protected EClass eStaticClass() {
+		return VsbrPackage.Literals.INFANT_BREASTFED;
+	}
 
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateInfantBreastfedTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return InfantBreastfedOperations.validateInfantBreastfedTemplateId(this, diagnostics, context);
-  }
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateInfantBreastfedTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return InfantBreastfedOperations.validateInfantBreastfedTemplateId(this, diagnostics, context);
+	}
 
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateInfantBreastfedClassCode(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return InfantBreastfedOperations.validateInfantBreastfedClassCode(this, diagnostics, context);
-  }
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateInfantBreastfedClassCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return InfantBreastfedOperations.validateInfantBreastfedClassCode(this, diagnostics, context);
+	}
 
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateInfantBreastfedMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return InfantBreastfedOperations.validateInfantBreastfedMoodCode(this, diagnostics, context);
-  }
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateInfantBreastfedMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return InfantBreastfedOperations.validateInfantBreastfedMoodCode(this, diagnostics, context);
+	}
 
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateInfantBreastfedCodeP(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return InfantBreastfedOperations.validateInfantBreastfedCodeP(this, diagnostics, context);
-  }
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateInfantBreastfedCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return InfantBreastfedOperations.validateInfantBreastfedCodeP(this, diagnostics, context);
+	}
 
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateInfantBreastfedCode(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return InfantBreastfedOperations.validateInfantBreastfedCode(this, diagnostics, context);
-  }
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateInfantBreastfedCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return InfantBreastfedOperations.validateInfantBreastfedCode(this, diagnostics, context);
+	}
 
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateInfantBreastfedValue(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return InfantBreastfedOperations.validateInfantBreastfedValue(this, diagnostics, context);
-  }
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateInfantBreastfedValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return InfantBreastfedOperations.validateInfantBreastfedValue(this, diagnostics, context);
+	}
 
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public InfantBreastfed init() {
-      return Initializer.Util.init(this);
-  }
-    /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public InfantBreastfed init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
-} //InfantBreastfedImpl
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public InfantBreastfed init() {
+		return Initializer.Util.init(this);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public InfantBreastfed init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+		Initializer.Util.init(this, initializers);
+		return this;
+	}
+} // InfantBreastfedImpl

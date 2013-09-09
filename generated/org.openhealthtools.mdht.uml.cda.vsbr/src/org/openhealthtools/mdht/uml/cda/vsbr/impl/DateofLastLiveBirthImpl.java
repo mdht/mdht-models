@@ -33,94 +33,87 @@ import org.openhealthtools.mdht.uml.cda.vsbr.operations.DateofLastLiveBirthOpera
  *
  * @generated
  */
-public class DateofLastLiveBirthImpl extends ObservationImpl implements DateofLastLiveBirth
-{
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  protected DateofLastLiveBirthImpl()
-  {
-    super();
-  }
+public class DateofLastLiveBirthImpl extends ObservationImpl implements DateofLastLiveBirth {
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected DateofLastLiveBirthImpl() {
+		super();
+	}
 
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  @Override
-  protected EClass eStaticClass()
-  {
-    return VsbrPackage.Literals.DATEOF_LAST_LIVE_BIRTH;
-  }
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	protected EClass eStaticClass() {
+		return VsbrPackage.Literals.DATEOF_LAST_LIVE_BIRTH;
+	}
 
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateDateofLastLiveBirthTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return DateofLastLiveBirthOperations.validateDateofLastLiveBirthTemplateId(this, diagnostics, context);
-  }
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateDateofLastLiveBirthTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return DateofLastLiveBirthOperations.validateDateofLastLiveBirthTemplateId(this, diagnostics, context);
+	}
 
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateDateofLastLiveBirthMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return DateofLastLiveBirthOperations.validateDateofLastLiveBirthMoodCode(this, diagnostics, context);
-  }
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateDateofLastLiveBirthMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return DateofLastLiveBirthOperations.validateDateofLastLiveBirthMoodCode(this, diagnostics, context);
+	}
 
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateDateofLastLiveBirthCodeP(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return DateofLastLiveBirthOperations.validateDateofLastLiveBirthCodeP(this, diagnostics, context);
-  }
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateDateofLastLiveBirthCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return DateofLastLiveBirthOperations.validateDateofLastLiveBirthCodeP(this, diagnostics, context);
+	}
 
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateDateofLastLiveBirthCode(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return DateofLastLiveBirthOperations.validateDateofLastLiveBirthCode(this, diagnostics, context);
-  }
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateDateofLastLiveBirthCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return DateofLastLiveBirthOperations.validateDateofLastLiveBirthCode(this, diagnostics, context);
+	}
 
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateDateofLastLiveBirthValue(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return DateofLastLiveBirthOperations.validateDateofLastLiveBirthValue(this, diagnostics, context);
-  }
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateDateofLastLiveBirthValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return DateofLastLiveBirthOperations.validateDateofLastLiveBirthValue(this, diagnostics, context);
+	}
 
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public DateofLastLiveBirth init() {
-      return Initializer.Util.init(this);
-  }
-    /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public DateofLastLiveBirth init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
-} //DateofLastLiveBirthImpl
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public DateofLastLiveBirth init() {
+		return Initializer.Util.init(this);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public DateofLastLiveBirth init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+		Initializer.Util.init(this, initializers);
+		return this;
+	}
+} // DateofLastLiveBirthImpl

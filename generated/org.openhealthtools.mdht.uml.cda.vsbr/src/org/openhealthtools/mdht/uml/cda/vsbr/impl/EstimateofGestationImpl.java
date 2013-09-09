@@ -33,104 +33,96 @@ import org.openhealthtools.mdht.uml.cda.vsbr.operations.EstimateofGestationOpera
  *
  * @generated
  */
-public class EstimateofGestationImpl extends ObservationImpl implements EstimateofGestation
-{
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  protected EstimateofGestationImpl()
-  {
-    super();
-  }
+public class EstimateofGestationImpl extends ObservationImpl implements EstimateofGestation {
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected EstimateofGestationImpl() {
+		super();
+	}
 
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  @Override
-  protected EClass eStaticClass()
-  {
-    return VsbrPackage.Literals.ESTIMATEOF_GESTATION;
-  }
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	protected EClass eStaticClass() {
+		return VsbrPackage.Literals.ESTIMATEOF_GESTATION;
+	}
 
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateEstimateofGestationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return EstimateofGestationOperations.validateEstimateofGestationTemplateId(this, diagnostics, context);
-  }
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateEstimateofGestationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return EstimateofGestationOperations.validateEstimateofGestationTemplateId(this, diagnostics, context);
+	}
 
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateEstimateofGestationClassCode(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return EstimateofGestationOperations.validateEstimateofGestationClassCode(this, diagnostics, context);
-  }
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateEstimateofGestationClassCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return EstimateofGestationOperations.validateEstimateofGestationClassCode(this, diagnostics, context);
+	}
 
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateEstimateofGestationMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return EstimateofGestationOperations.validateEstimateofGestationMoodCode(this, diagnostics, context);
-  }
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateEstimateofGestationMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return EstimateofGestationOperations.validateEstimateofGestationMoodCode(this, diagnostics, context);
+	}
 
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateEstimateofGestationCodeP(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return EstimateofGestationOperations.validateEstimateofGestationCodeP(this, diagnostics, context);
-  }
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateEstimateofGestationCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return EstimateofGestationOperations.validateEstimateofGestationCodeP(this, diagnostics, context);
+	}
 
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateEstimateofGestationCode(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return EstimateofGestationOperations.validateEstimateofGestationCode(this, diagnostics, context);
-  }
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateEstimateofGestationCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return EstimateofGestationOperations.validateEstimateofGestationCode(this, diagnostics, context);
+	}
 
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateEstimateofGestationValue(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return EstimateofGestationOperations.validateEstimateofGestationValue(this, diagnostics, context);
-  }
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateEstimateofGestationValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return EstimateofGestationOperations.validateEstimateofGestationValue(this, diagnostics, context);
+	}
 
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public EstimateofGestation init() {
-      return Initializer.Util.init(this);
-  }
-    /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public EstimateofGestation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
-} //EstimateofGestationImpl
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EstimateofGestation init() {
+		return Initializer.Util.init(this);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EstimateofGestation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+		Initializer.Util.init(this, initializers);
+		return this;
+	}
+} // EstimateofGestationImpl

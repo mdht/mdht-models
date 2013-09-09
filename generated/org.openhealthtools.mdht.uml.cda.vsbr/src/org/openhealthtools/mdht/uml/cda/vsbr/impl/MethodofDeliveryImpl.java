@@ -33,144 +33,136 @@ import org.openhealthtools.mdht.uml.cda.vsbr.operations.MethodofDeliveryOperatio
  *
  * @generated
  */
-public class MethodofDeliveryImpl extends ProcedureImpl implements MethodofDelivery
-{
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  protected MethodofDeliveryImpl()
-  {
-    super();
-  }
+public class MethodofDeliveryImpl extends ProcedureImpl implements MethodofDelivery {
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected MethodofDeliveryImpl() {
+		super();
+	}
 
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  @Override
-  protected EClass eStaticClass()
-  {
-    return VsbrPackage.Literals.METHODOF_DELIVERY;
-  }
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	protected EClass eStaticClass() {
+		return VsbrPackage.Literals.METHODOF_DELIVERY;
+	}
 
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateMethodofDeliveryTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return MethodofDeliveryOperations.validateMethodofDeliveryTemplateId(this, diagnostics, context);
-  }
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateMethodofDeliveryTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return MethodofDeliveryOperations.validateMethodofDeliveryTemplateId(this, diagnostics, context);
+	}
 
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateMethodofDeliveryClassCode(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return MethodofDeliveryOperations.validateMethodofDeliveryClassCode(this, diagnostics, context);
-  }
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateMethodofDeliveryClassCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return MethodofDeliveryOperations.validateMethodofDeliveryClassCode(this, diagnostics, context);
+	}
 
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateMethodofDeliveryMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return MethodofDeliveryOperations.validateMethodofDeliveryMoodCode(this, diagnostics, context);
-  }
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateMethodofDeliveryMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return MethodofDeliveryOperations.validateMethodofDeliveryMoodCode(this, diagnostics, context);
+	}
 
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateMethodofDeliveryCode(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return MethodofDeliveryOperations.validateMethodofDeliveryCode(this, diagnostics, context);
-  }
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateMethodofDeliveryCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return MethodofDeliveryOperations.validateMethodofDeliveryCode(this, diagnostics, context);
+	}
 
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateMethodofDeliveryCodeP(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return MethodofDeliveryOperations.validateMethodofDeliveryCodeP(this, diagnostics, context);
-  }
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateMethodofDeliveryCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return MethodofDeliveryOperations.validateMethodofDeliveryCodeP(this, diagnostics, context);
+	}
 
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateMethodofDeliveryFinalRouteandMethod(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return MethodofDeliveryOperations.validateMethodofDeliveryFinalRouteandMethod(this, diagnostics, context);
-  }
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateMethodofDeliveryFinalRouteandMethod(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return MethodofDeliveryOperations.validateMethodofDeliveryFinalRouteandMethod(this, diagnostics, context);
+	}
 
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateMethodofDeliveryForcepsAssociation(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return MethodofDeliveryOperations.validateMethodofDeliveryForcepsAssociation(this, diagnostics, context);
-  }
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateMethodofDeliveryForcepsAssociation(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return MethodofDeliveryOperations.validateMethodofDeliveryForcepsAssociation(this, diagnostics, context);
+	}
 
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateMethodofDeliveryVacuumExtractionAssociation(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return MethodofDeliveryOperations.validateMethodofDeliveryVacuumExtractionAssociation(this, diagnostics, context);
-  }
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateMethodofDeliveryVacuumExtractionAssociation(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return MethodofDeliveryOperations.validateMethodofDeliveryVacuumExtractionAssociation(
+			this, diagnostics, context);
+	}
 
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateMethodofDeliveryHysterotomyHysterectomyAssociation(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return MethodofDeliveryOperations.validateMethodofDeliveryHysterotomyHysterectomyAssociation(this, diagnostics, context);
-  }
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateMethodofDeliveryHysterotomyHysterectomyAssociation(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return MethodofDeliveryOperations.validateMethodofDeliveryHysterotomyHysterectomyAssociation(
+			this, diagnostics, context);
+	}
 
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateMethodofDeliveryFetalPresentation(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return MethodofDeliveryOperations.validateMethodofDeliveryFetalPresentation(this, diagnostics, context);
-  }
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateMethodofDeliveryFetalPresentation(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return MethodofDeliveryOperations.validateMethodofDeliveryFetalPresentation(this, diagnostics, context);
+	}
 
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public MethodofDelivery init() {
-      return Initializer.Util.init(this);
-  }
-    /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public MethodofDelivery init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
-} //MethodofDeliveryImpl
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public MethodofDelivery init() {
+		return Initializer.Util.init(this);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public MethodofDelivery init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+		Initializer.Util.init(this, initializers);
+		return this;
+	}
+} // MethodofDeliveryImpl

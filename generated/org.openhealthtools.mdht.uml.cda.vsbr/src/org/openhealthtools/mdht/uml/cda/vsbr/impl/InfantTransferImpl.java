@@ -33,114 +33,105 @@ import org.openhealthtools.mdht.uml.cda.vsbr.operations.InfantTransferOperations
  *
  * @generated
  */
-public class InfantTransferImpl extends ObservationImpl implements InfantTransfer
-{
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  protected InfantTransferImpl()
-  {
-    super();
-  }
+public class InfantTransferImpl extends ObservationImpl implements InfantTransfer {
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected InfantTransferImpl() {
+		super();
+	}
 
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  @Override
-  protected EClass eStaticClass()
-  {
-    return VsbrPackage.Literals.INFANT_TRANSFER;
-  }
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	protected EClass eStaticClass() {
+		return VsbrPackage.Literals.INFANT_TRANSFER;
+	}
 
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateInfantTransferTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return InfantTransferOperations.validateInfantTransferTemplateId(this, diagnostics, context);
-  }
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateInfantTransferTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return InfantTransferOperations.validateInfantTransferTemplateId(this, diagnostics, context);
+	}
 
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateInfantTransferClassCode(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return InfantTransferOperations.validateInfantTransferClassCode(this, diagnostics, context);
-  }
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateInfantTransferClassCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return InfantTransferOperations.validateInfantTransferClassCode(this, diagnostics, context);
+	}
 
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateInfantTransferMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return InfantTransferOperations.validateInfantTransferMoodCode(this, diagnostics, context);
-  }
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateInfantTransferMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return InfantTransferOperations.validateInfantTransferMoodCode(this, diagnostics, context);
+	}
 
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateInfantTransferCodeP(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return InfantTransferOperations.validateInfantTransferCodeP(this, diagnostics, context);
-  }
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateInfantTransferCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return InfantTransferOperations.validateInfantTransferCodeP(this, diagnostics, context);
+	}
 
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateInfantTransferCode(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return InfantTransferOperations.validateInfantTransferCode(this, diagnostics, context);
-  }
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateInfantTransferCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return InfantTransferOperations.validateInfantTransferCode(this, diagnostics, context);
+	}
 
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateInfantTransferValue(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return InfantTransferOperations.validateInfantTransferValue(this, diagnostics, context);
-  }
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateInfantTransferValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return InfantTransferOperations.validateInfantTransferValue(this, diagnostics, context);
+	}
 
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateInfantTransferParticipant(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return InfantTransferOperations.validateInfantTransferParticipant(this, diagnostics, context);
-  }
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateInfantTransferParticipant(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return InfantTransferOperations.validateInfantTransferParticipant(this, diagnostics, context);
+	}
 
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public InfantTransfer init() {
-      return Initializer.Util.init(this);
-  }
-    /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public InfantTransfer init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
-} //InfantTransferImpl
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public InfantTransfer init() {
+		return Initializer.Util.init(this);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public InfantTransfer init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+		Initializer.Util.init(this, initializers);
+		return this;
+	}
+} // InfantTransferImpl

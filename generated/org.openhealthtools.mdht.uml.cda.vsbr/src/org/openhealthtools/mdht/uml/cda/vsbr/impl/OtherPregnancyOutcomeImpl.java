@@ -33,114 +33,105 @@ import org.openhealthtools.mdht.uml.cda.vsbr.operations.OtherPregnancyOutcomeOpe
  *
  * @generated
  */
-public class OtherPregnancyOutcomeImpl extends ObservationImpl implements OtherPregnancyOutcome
-{
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  protected OtherPregnancyOutcomeImpl()
-  {
-    super();
-  }
+public class OtherPregnancyOutcomeImpl extends ObservationImpl implements OtherPregnancyOutcome {
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected OtherPregnancyOutcomeImpl() {
+		super();
+	}
 
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  @Override
-  protected EClass eStaticClass()
-  {
-    return VsbrPackage.Literals.OTHER_PREGNANCY_OUTCOME;
-  }
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	protected EClass eStaticClass() {
+		return VsbrPackage.Literals.OTHER_PREGNANCY_OUTCOME;
+	}
 
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateOtherPregnancyOutcomeTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return OtherPregnancyOutcomeOperations.validateOtherPregnancyOutcomeTemplateId(this, diagnostics, context);
-  }
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateOtherPregnancyOutcomeTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return OtherPregnancyOutcomeOperations.validateOtherPregnancyOutcomeTemplateId(this, diagnostics, context);
+	}
 
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateOtherPregnancyOutcomeClassCode(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return OtherPregnancyOutcomeOperations.validateOtherPregnancyOutcomeClassCode(this, diagnostics, context);
-  }
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateOtherPregnancyOutcomeClassCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return OtherPregnancyOutcomeOperations.validateOtherPregnancyOutcomeClassCode(this, diagnostics, context);
+	}
 
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateOtherPregnancyOutcomeMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return OtherPregnancyOutcomeOperations.validateOtherPregnancyOutcomeMoodCode(this, diagnostics, context);
-  }
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateOtherPregnancyOutcomeMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return OtherPregnancyOutcomeOperations.validateOtherPregnancyOutcomeMoodCode(this, diagnostics, context);
+	}
 
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateOtherPregnancyOutcomeCodeP(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return OtherPregnancyOutcomeOperations.validateOtherPregnancyOutcomeCodeP(this, diagnostics, context);
-  }
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateOtherPregnancyOutcomeCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return OtherPregnancyOutcomeOperations.validateOtherPregnancyOutcomeCodeP(this, diagnostics, context);
+	}
 
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateOtherPregnancyOutcomeCode(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return OtherPregnancyOutcomeOperations.validateOtherPregnancyOutcomeCode(this, diagnostics, context);
-  }
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateOtherPregnancyOutcomeCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return OtherPregnancyOutcomeOperations.validateOtherPregnancyOutcomeCode(this, diagnostics, context);
+	}
 
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateOtherPregnancyOutcomeValue(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return OtherPregnancyOutcomeOperations.validateOtherPregnancyOutcomeValue(this, diagnostics, context);
-  }
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateOtherPregnancyOutcomeValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return OtherPregnancyOutcomeOperations.validateOtherPregnancyOutcomeValue(this, diagnostics, context);
+	}
 
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateOtherPregnancyOutcomeEffectiveTime(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return OtherPregnancyOutcomeOperations.validateOtherPregnancyOutcomeEffectiveTime(this, diagnostics, context);
-  }
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateOtherPregnancyOutcomeEffectiveTime(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return OtherPregnancyOutcomeOperations.validateOtherPregnancyOutcomeEffectiveTime(this, diagnostics, context);
+	}
 
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public OtherPregnancyOutcome init() {
-      return Initializer.Util.init(this);
-  }
-    /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public OtherPregnancyOutcome init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
-} //OtherPregnancyOutcomeImpl
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public OtherPregnancyOutcome init() {
+		return Initializer.Util.init(this);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public OtherPregnancyOutcome init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+		Initializer.Util.init(this, initializers);
+		return this;
+	}
+} // OtherPregnancyOutcomeImpl
