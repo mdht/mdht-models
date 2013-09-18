@@ -20,11 +20,11 @@ import org.eclipse.emf.ecore.EFactory;
  */
 public interface Mu2consolFactory extends EFactory {
 	/**
-	 * The singleton instance of the factory.
-	 * <!-- begin-user-doc --> <!--
+   * The singleton instance of the factory.
+   * <!-- begin-user-doc --> <!--
 	 * end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	Mu2consolFactory eINSTANCE = org.openhealthtools.mdht.uml.cda.mu2consol.impl.Mu2consolFactoryImpl.init();
 
 	/**
@@ -100,54 +100,54 @@ public interface Mu2consolFactory extends EFactory {
 	ProceduresSection createProceduresSection();
 
 	/**
-	 * Returns a new object of class '<em>Procedure Activity Procedure</em>'.
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @return a new object of class '<em>Procedure Activity Procedure</em>'.
-	 * @generated
-	 */
+   * Returns a new object of class '<em>Procedure Activity Procedure</em>'.
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @return a new object of class '<em>Procedure Activity Procedure</em>'.
+   * @generated
+   */
 	ProcedureActivityProcedure createProcedureActivityProcedure();
 
 	/**
-	 * Returns a new object of class '<em>Clinical Office Visit Summary</em>'.
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @return a new object of class '<em>Clinical Office Visit Summary</em>'.
-	 * @generated
-	 */
+   * Returns a new object of class '<em>Clinical Office Visit Summary</em>'.
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @return a new object of class '<em>Clinical Office Visit Summary</em>'.
+   * @generated
+   */
 	ClinicalOfficeVisitSummary createClinicalOfficeVisitSummary();
 
 	/**
-	 * Returns a new object of class '<em>Medications Administered Section</em>'.
-	 * <!-- begin-user-doc -->
+   * Returns a new object of class '<em>Medications Administered Section</em>'.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Medications Administered Section</em>'.
-	 * @generated
-	 */
+   * @return a new object of class '<em>Medications Administered Section</em>'.
+   * @generated
+   */
 	MedicationsAdministeredSection createMedicationsAdministeredSection();
 
 	/**
-	 * Returns a new object of class '<em>Transition Of Care Ambulatory Summary</em>'.
-	 * <!-- begin-user-doc -->
+   * Returns a new object of class '<em>Transition Of Care Ambulatory Summary</em>'.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Transition Of Care Ambulatory Summary</em>'.
-	 * @generated
-	 */
+   * @return a new object of class '<em>Transition Of Care Ambulatory Summary</em>'.
+   * @generated
+   */
 	TransitionOfCareAmbulatorySummary createTransitionOfCareAmbulatorySummary();
 
 	/**
-	 * Returns a new object of class '<em>Transition Of Care Inpatient Summary</em>'.
-	 * <!-- begin-user-doc -->
+   * Returns a new object of class '<em>Transition Of Care Inpatient Summary</em>'.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Transition Of Care Inpatient Summary</em>'.
-	 * @generated
-	 */
+   * @return a new object of class '<em>Transition Of Care Inpatient Summary</em>'.
+   * @generated
+   */
 	TransitionOfCareInpatientSummary createTransitionOfCareInpatientSummary();
 
 	/**
-	 * Returns a new object of class '<em>View Download Transmit Summary</em>'.
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @return a new object of class '<em>View Download Transmit Summary</em>'.
-	 * @generated
-	 */
+   * Returns a new object of class '<em>View Download Transmit Summary</em>'.
+   * <!-- begin-user-doc --> <!-- end-user-doc -->
+   * @return a new object of class '<em>View Download Transmit Summary</em>'.
+   * @generated
+   */
 	ViewDownloadTransmitSummary createViewDownloadTransmitSummary();
 
 	/**
@@ -169,57 +169,57 @@ public interface Mu2consolFactory extends EFactory {
 	VDTAmbulatorySummary createVDTAmbulatorySummary();
 
 	/**
-	 * Returns a new object of class '<em>Functional Status Section</em>'.
-	 * <!-- begin-user-doc -->
+   * Returns a new object of class '<em>Functional Status Section</em>'.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Functional Status Section</em>'.
-	 * @generated
-	 */
+   * @return a new object of class '<em>Functional Status Section</em>'.
+   * @generated
+   */
 	FunctionalStatusSection createFunctionalStatusSection();
 
 	/**
-	 * Returns a new object of class '<em>Cognitive Status Result Observation</em>'.
-	 * <!-- begin-user-doc -->
+   * Returns a new object of class '<em>Cognitive Status Result Observation</em>'.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Cognitive Status Result Observation</em>'.
-	 * @generated
-	 */
+   * @return a new object of class '<em>Cognitive Status Result Observation</em>'.
+   * @generated
+   */
 	CognitiveStatusResultObservation createCognitiveStatusResultObservation();
 
 	/**
-	 * Returns a new object of class '<em>Cognitive Status Result Organizer</em>'.
-	 * <!-- begin-user-doc -->
+   * Returns a new object of class '<em>Cognitive Status Result Organizer</em>'.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Cognitive Status Result Organizer</em>'.
-	 * @generated
-	 */
+   * @return a new object of class '<em>Cognitive Status Result Organizer</em>'.
+   * @generated
+   */
 	CognitiveStatusResultOrganizer createCognitiveStatusResultOrganizer();
 
 	/**
-	 * Returns a new object of class '<em>Functional Status Result Observation</em>'.
-	 * <!-- begin-user-doc -->
+   * Returns a new object of class '<em>Functional Status Result Observation</em>'.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Functional Status Result Observation</em>'.
-	 * @generated
-	 */
+   * @return a new object of class '<em>Functional Status Result Observation</em>'.
+   * @generated
+   */
 	FunctionalStatusResultObservation createFunctionalStatusResultObservation();
 
 	/**
-	 * Returns a new object of class '<em>Functional Status Result Organizer</em>'.
-	 * <!-- begin-user-doc -->
+   * Returns a new object of class '<em>Functional Status Result Organizer</em>'.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Functional Status Result Organizer</em>'.
-	 * @generated
-	 */
+   * @return a new object of class '<em>Functional Status Result Organizer</em>'.
+   * @generated
+   */
 	FunctionalStatusResultOrganizer createFunctionalStatusResultOrganizer();
 
 	/**
-	 * Returns the package supported by this factory.
-	 * <!-- begin-user-doc -->
+   * Returns the package supported by this factory.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the package supported by this factory.
-	 * @generated
-	 */
+   * @return the package supported by this factory.
+   * @generated
+   */
 	Mu2consolPackage getMu2consolPackage();
 
 } // Mu2consolFactory
