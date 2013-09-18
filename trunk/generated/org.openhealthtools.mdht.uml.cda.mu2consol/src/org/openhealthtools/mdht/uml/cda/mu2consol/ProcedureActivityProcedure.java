@@ -23,39 +23,27 @@ import org.openhealthtools.mdht.emf.runtime.util.Initializer;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.mu2consol.Mu2consolPackage#getProcedureActivityProcedure()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='MU2CONSOLProcedureActivityProcedureTemplateId MU2CONSOLProcedureActivityProcedureCodeValue MU2CONSOLProcedureActivityProcedureCode' templateId.root='2.16.840.1.113883.10.20.22.4.14'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='MU2CONSOLProcedureActivityProcedureTemplateId MU2CONSOLProcedureActivityProcedureCodeValue ProcedureActivityProcedureCode' templateId.root='2.16.840.1.113883.10.20.22.4.14'"
  * @generated
  */
 public interface ProcedureActivityProcedure extends
 		org.openhealthtools.mdht.uml.cda.consol.ProcedureActivityProcedure {
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * <!-- begin-model-doc -->
-   * @param diagnostics The chain of diagnostics to which problems are to be appended.
-   * @param context The cache of context-specific information.
-   * <!-- end-model-doc -->
-   * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.code.isNullFlavorDefined() or self.code.codeSystem = \'2.16.840.1.113883.6.96\' xor self.code.codeSystem = \'2.16.840.1.113883.6.12\''"
-   * @generated
-   */
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.code.isNullFlavorDefined() or self.code.codeSystem = \'2.16.840.1.113883.6.96\' xor self.code.codeSystem = \'2.16.840.1.113883.6.12\''"
+	 * @generated
+	 */
 	boolean validateMU2CONSOLProcedureActivityProcedureCodeValue(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
-   * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-   * <!-- begin-model-doc -->
-   * @param diagnostics The chain of diagnostics to which problems are to be appended.
-   * @param context The cache of context-specific information.
-   * <!-- end-model-doc -->
-   * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined())'"
-   * @generated
-   */
-	boolean validateMU2CONSOLProcedureActivityProcedureCode(DiagnosticChain diagnostics, Map<Object, Object> context);
-
-	/**
-   * <!-- begin-user-doc --> <!-- end-user-doc -->
-   * @generated
-   */
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * @generated
+	 */
 	public ProcedureActivityProcedure init();
 
 	/**

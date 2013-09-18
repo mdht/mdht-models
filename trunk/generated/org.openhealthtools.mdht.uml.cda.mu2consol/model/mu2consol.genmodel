@@ -110,35 +110,19 @@
       </genOperations>
     </genClasses>
     <genClasses xsi:type="genmodel:GenClass" ecoreClass="mu2consol.ecore#//ResultsSection">
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="mu2consol.ecore#//ResultsSection/MU2CONSOLResultsSectionResultOrganizer">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="mu2consol.ecore#//ResultsSection/MU2CONSOLResultsSectionResultOrganizer/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="mu2consol.ecore#//ResultsSection/MU2CONSOLResultsSectionResultOrganizer/context"/>
-      </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="mu2consol.ecore#//ResultsSection/getMu2consolResultOrganizers"/>
     </genClasses>
     <genClasses xsi:type="genmodel:GenClass" ecoreClass="mu2consol.ecore#//ResultOrganizer">
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="mu2consol.ecore#//ResultOrganizer/MU2CONSOLResultOrganizerResultObservation">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="mu2consol.ecore#//ResultOrganizer/MU2CONSOLResultOrganizerResultObservation/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="mu2consol.ecore#//ResultOrganizer/MU2CONSOLResultOrganizerResultObservation/context"/>
-      </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="mu2consol.ecore#//ResultOrganizer/getMu2consolResultObservations"/>
     </genClasses>
     <genClasses xsi:type="genmodel:GenClass" ecoreClass="mu2consol.ecore#//ResultObservation"/>
     <genClasses xsi:type="genmodel:GenClass" ecoreClass="mu2consol.ecore#//ProceduresSection">
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="mu2consol.ecore#//ProceduresSection/MU2CONSOLProceduresSectionProcedureActivityProcedure">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="mu2consol.ecore#//ProceduresSection/MU2CONSOLProceduresSectionProcedureActivityProcedure/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="mu2consol.ecore#//ProceduresSection/MU2CONSOLProceduresSectionProcedureActivityProcedure/context"/>
-      </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="mu2consol.ecore#//ProceduresSection/getMu2consolProcedureActivityProcedures"/>
     </genClasses>
     <genClasses xsi:type="genmodel:GenClass" ecoreClass="mu2consol.ecore#//ProcedureActivityProcedure">
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="mu2consol.ecore#//ProcedureActivityProcedure/MU2CONSOLProcedureActivityProcedureCodeValue">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="mu2consol.ecore#//ProcedureActivityProcedure/MU2CONSOLProcedureActivityProcedureCodeValue/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="mu2consol.ecore#//ProcedureActivityProcedure/MU2CONSOLProcedureActivityProcedureCodeValue/context"/>
-      </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="mu2consol.ecore#//ProcedureActivityProcedure/MU2CONSOLProcedureActivityProcedureCode">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="mu2consol.ecore#//ProcedureActivityProcedure/MU2CONSOLProcedureActivityProcedureCode/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="mu2consol.ecore#//ProcedureActivityProcedure/MU2CONSOLProcedureActivityProcedureCode/context"/>
       </genOperations>
     </genClasses>
     <genClasses xsi:type="genmodel:GenClass" ecoreClass="mu2consol.ecore#//ClinicalOfficeVisitSummary">
@@ -211,10 +195,6 @@
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="mu2consol.ecore#//ClinicalOfficeVisitSummary/getMedicationsAdministeredSection"/>
     </genClasses>
     <genClasses xsi:type="genmodel:GenClass" ecoreClass="mu2consol.ecore#//MedicationsAdministeredSection">
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="mu2consol.ecore#//MedicationsAdministeredSection/MU2CONSOLMedicationsAdministeredSectionMedicationActivity">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="mu2consol.ecore#//MedicationsAdministeredSection/MU2CONSOLMedicationsAdministeredSectionMedicationActivity/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="mu2consol.ecore#//MedicationsAdministeredSection/MU2CONSOLMedicationsAdministeredSectionMedicationActivity/context"/>
-      </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="mu2consol.ecore#//MedicationsAdministeredSection/getMu2consolMedicationActivities"/>
     </genClasses>
     <genClasses xsi:type="genmodel:GenClass" ecoreClass="mu2consol.ecore#//TransitionOfCareAmbulatorySummary">
