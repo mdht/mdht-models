@@ -762,12 +762,8 @@ public class SmokingStatusObservationOperations extends TobaccoUseOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.SMOKING_STATUS_OBSERVATION__TOBACCO_USE_TEMPLATE_ID,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"SmokingStatusObservationTobaccoUseTemplateId",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
-									smokingStatusObservation, context) }), new Object[] { smokingStatusObservation }));
+					ConsolPlugin.INSTANCE.getString("SmokingStatusObservationTobaccoUseTemplateId"),
+					new Object[] { smokingStatusObservation }));
 			}
 
 			return false;

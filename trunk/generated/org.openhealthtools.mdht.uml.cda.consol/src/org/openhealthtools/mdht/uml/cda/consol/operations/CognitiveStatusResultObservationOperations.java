@@ -964,12 +964,7 @@ public class CognitiveStatusResultObservationOperations extends ResultObservatio
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.COGNITIVE_STATUS_RESULT_OBSERVATION__RESULT_OBSERVATION_TEMPLATE_ID,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"CognitiveStatusResultObservationResultObservationTemplateId",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
-									cognitiveStatusResultObservation, context) }),
+					ConsolPlugin.INSTANCE.getString("CognitiveStatusResultObservationResultObservationTemplateId"),
 					new Object[] { cognitiveStatusResultObservation }));
 			}
 

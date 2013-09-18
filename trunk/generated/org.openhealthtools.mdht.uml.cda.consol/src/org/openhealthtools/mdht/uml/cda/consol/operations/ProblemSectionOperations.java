@@ -153,10 +153,7 @@ public class ProblemSectionOperations extends ProblemSectionEntriesOptionalOpera
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROBLEM_SECTION__PROBLEM_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic", new Object[] {
-								"ProblemSectionProblemSectionEntriesOptionalTemplateId",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(problemSection, context) }),
+					ConsolPlugin.INSTANCE.getString("ProblemSectionProblemSectionEntriesOptionalTemplateId"),
 					new Object[] { problemSection }));
 			}
 

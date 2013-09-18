@@ -956,12 +956,7 @@ public class FunctionalStatusResultObservationOperations extends ResultObservati
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.FUNCTIONAL_STATUS_RESULT_OBSERVATION__RESULT_OBSERVATION_TEMPLATE_ID,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"FunctionalStatusResultObservationResultObservationTemplateId",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
-									functionalStatusResultObservation, context) }),
+					ConsolPlugin.INSTANCE.getString("FunctionalStatusResultObservationResultObservationTemplateId"),
 					new Object[] { functionalStatusResultObservation }));
 			}
 

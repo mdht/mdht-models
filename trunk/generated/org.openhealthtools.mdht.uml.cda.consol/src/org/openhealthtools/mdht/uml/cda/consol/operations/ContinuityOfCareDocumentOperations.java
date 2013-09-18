@@ -2936,12 +2936,8 @@ public class ContinuityOfCareDocumentOperations extends GeneralHeaderConstraints
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.CONTINUITY_OF_CARE_DOCUMENT__GENERAL_HEADER_CONSTRAINTS_TEMPLATE_ID,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"ContinuityOfCareDocumentGeneralHeaderConstraintsTemplateId",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
-									continuityOfCareDocument, context) }), new Object[] { continuityOfCareDocument }));
+					ConsolPlugin.INSTANCE.getString("ContinuityOfCareDocumentGeneralHeaderConstraintsTemplateId"),
+					new Object[] { continuityOfCareDocument }));
 			}
 
 			return false;

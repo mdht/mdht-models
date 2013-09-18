@@ -475,12 +475,8 @@ public class AdvanceDirectivesSectionOperations extends AdvanceDirectivesSection
 					Diagnostic.ERROR,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.ADVANCE_DIRECTIVES_SECTION__ADVANCE_DIRECTIVES_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"AdvanceDirectivesSectionAdvanceDirectivesSectionEntriesOptionalTemplateId",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
-									advanceDirectivesSection, context) }), new Object[] { advanceDirectivesSection }));
+					ConsolPlugin.INSTANCE.getString("AdvanceDirectivesSectionAdvanceDirectivesSectionEntriesOptionalTemplateId"),
+					new Object[] { advanceDirectivesSection }));
 			}
 
 			return false;

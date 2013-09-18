@@ -755,12 +755,7 @@ public class CognitiveStatusProblemObservationOperations extends ProblemObservat
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.COGNITIVE_STATUS_PROBLEM_OBSERVATION__PROBLEM_OBSERVATION_TEMPLATE_ID,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"CognitiveStatusProblemObservationProblemObservationTemplateId",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
-									cognitiveStatusProblemObservation, context) }),
+					ConsolPlugin.INSTANCE.getString("CognitiveStatusProblemObservationProblemObservationTemplateId"),
 					new Object[] { cognitiveStatusProblemObservation }));
 			}
 

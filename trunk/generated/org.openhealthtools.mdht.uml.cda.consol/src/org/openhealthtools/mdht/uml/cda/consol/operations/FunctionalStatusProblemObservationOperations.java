@@ -881,12 +881,7 @@ public class FunctionalStatusProblemObservationOperations extends ProblemObserva
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.FUNCTIONAL_STATUS_PROBLEM_OBSERVATION__PROBLEM_OBSERVATION_TEMPLATE_ID,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"FunctionalStatusProblemObservationProblemObservationTemplateId",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
-									functionalStatusProblemObservation, context) }),
+					ConsolPlugin.INSTANCE.getString("FunctionalStatusProblemObservationProblemObservationTemplateId"),
 					new Object[] { functionalStatusProblemObservation }));
 			}
 

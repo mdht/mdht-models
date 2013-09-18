@@ -21,7 +21,7 @@ import org.openhealthtools.mdht.emf.runtime.util.Initializer;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getCognitiveStatusResultOrganizer()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='CognitiveStatusResultOrganizerTemplateId ResultOrganizerClassCode ResultOrganizerMoodCode ResultOrganizerId ResultOrganizerCode ResultOrganizerStatusCode ResultOrganizerStatusCodeP CognitiveStatusResultOrganizerCognitiveStatusResultObservation' templateId.root='2.16.840.1.113883.10.20.22.4.75' constraints.validation.warning='CognitiveStatusResultOrganizerCodeCodeSystem' classCode='CLUSTER' moodCode='EVN' statusCode.code='completed' constraints.validation.dependOn.ResultOrganizerStatusCode='ResultOrganizerStatusCodeP'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='ResultOrganizerTemplateId ResultOrganizerClassCode ResultOrganizerMoodCode ResultOrganizerId ResultOrganizerCode ResultOrganizerStatusCode ResultOrganizerStatusCodeP CognitiveStatusResultOrganizerCognitiveStatusResultObservation' templateId.root='2.16.840.1.113883.10.20.22.4.75' constraints.validation.warning='CognitiveStatusResultOrganizerCodeCodeSystem' classCode='CLUSTER' moodCode='EVN' statusCode.code='completed' constraints.validation.dependOn.ResultOrganizerStatusCode='ResultOrganizerStatusCodeP'"
  * @generated
  */
 public interface CognitiveStatusResultOrganizer extends ResultOrganizer {

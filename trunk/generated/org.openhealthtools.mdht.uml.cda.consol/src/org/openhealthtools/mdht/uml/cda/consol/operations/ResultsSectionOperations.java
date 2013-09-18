@@ -270,10 +270,7 @@ public class ResultsSectionOperations extends ResultsSectionEntriesOptionalOpera
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.RESULTS_SECTION__RESULTS_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic", new Object[] {
-								"ResultsSectionResultsSectionEntriesOptionalTemplateId",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(resultsSection, context) }),
+					ConsolPlugin.INSTANCE.getString("ResultsSectionResultsSectionEntriesOptionalTemplateId"),
 					new Object[] { resultsSection }));
 			}
 

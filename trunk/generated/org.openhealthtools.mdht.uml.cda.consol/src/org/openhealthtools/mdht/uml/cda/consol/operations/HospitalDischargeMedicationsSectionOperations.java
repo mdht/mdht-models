@@ -158,12 +158,7 @@ public class HospitalDischargeMedicationsSectionOperations extends
 					Diagnostic.ERROR,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.HOSPITAL_DISCHARGE_MEDICATIONS_SECTION__HOSPITAL_DISCHARGE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"HospitalDischargeMedicationsSectionHospitalDischargeMedicationsSectionEntriesOptionalTemplateId",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
-									hospitalDischargeMedicationsSection, context) }),
+					ConsolPlugin.INSTANCE.getString("HospitalDischargeMedicationsSectionHospitalDischargeMedicationsSectionEntriesOptionalTemplateId"),
 					new Object[] { hospitalDischargeMedicationsSection }));
 			}
 

@@ -278,12 +278,7 @@ public class FunctionalStatusResultOrganizerOperations extends ResultOrganizerOp
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.FUNCTIONAL_STATUS_RESULT_ORGANIZER__RESULT_ORGANIZER_TEMPLATE_ID,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"FunctionalStatusResultOrganizerResultOrganizerTemplateId",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
-									functionalStatusResultOrganizer, context) }),
+					ConsolPlugin.INSTANCE.getString("FunctionalStatusResultOrganizerResultOrganizerTemplateId"),
 					new Object[] { functionalStatusResultOrganizer }));
 			}
 

@@ -469,14 +469,11 @@ public class ImmunizationsSectionOperations extends ImmunizationsSectionEntriesO
 			immunizationsSection)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.ERROR,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.IMMUNIZATIONS_SECTION__IMMUNIZATIONS_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"ImmunizationsSectionImmunizationsSectionEntriesOptionalTemplateId",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
-									immunizationsSection, context) }), new Object[] { immunizationsSection }));
+					ConsolPlugin.INSTANCE.getString("ImmunizationsSectionImmunizationsSectionEntriesOptionalTemplateId"),
+					new Object[] { immunizationsSection }));
 			}
 
 			return false;
